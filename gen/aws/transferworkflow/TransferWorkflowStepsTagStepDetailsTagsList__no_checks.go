@@ -4,6 +4,10 @@ package transferworkflow
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (t *jsiiProxy_TransferWorkflowStepsTagStepDetailsTagsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TransferWorkflowStepsTagStepDetailsTagsList) validateGetParameters(index *float64) error {
 	return nil
 }

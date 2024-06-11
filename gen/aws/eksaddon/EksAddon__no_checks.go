@@ -4,6 +4,10 @@ package eksaddon
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EksAddon) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EksAddon) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (e *jsiiProxy_EksAddon) validateGetStringMapAttributeParameters(terraformAt
 	return nil
 }
 
+func (e *jsiiProxy_EksAddon) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EksAddon) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EksAddon) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EksAddon) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EksAddon) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (e *jsiiProxy_EksAddon) validateOverrideLogicalIdParameters(newLogicalId *s
 }
 
 func (e *jsiiProxy_EksAddon) validatePutTimeoutsParameters(value *EksAddonTimeouts) error {
+	return nil
+}
+
+func validateEksAddon_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

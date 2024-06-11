@@ -70,7 +70,11 @@ type ComputeRouterNatConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/compute_router_nat#enable_endpoint_independent_mapping ComputeRouterNat#enable_endpoint_independent_mapping}
 	EnableEndpointIndependentMapping interface{} `field:"optional" json:"enableEndpointIndependentMapping" yaml:"enableEndpointIndependentMapping"`
-	// Specifies the endpoint Types supported by the NAT Gateway. Supported values include:   'ENDPOINT_TYPE_VM', 'ENDPOINT_TYPE_SWG',   'ENDPOINT_TYPE_MANAGED_PROXY_LB'.
+	// Specifies the endpoint Types supported by the NAT Gateway.
+	//
+	// Supported values include:
+	//       'ENDPOINT_TYPE_VM', 'ENDPOINT_TYPE_SWG',
+	//       'ENDPOINT_TYPE_MANAGED_PROXY_LB'.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/compute_router_nat#endpoint_types ComputeRouterNat#endpoint_types}
 	EndpointTypes *[]*string `field:"optional" json:"endpointTypes" yaml:"endpointTypes"`

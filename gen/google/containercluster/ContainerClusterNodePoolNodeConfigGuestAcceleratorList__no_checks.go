@@ -4,6 +4,10 @@ package containercluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigGuestAcceleratorList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigGuestAcceleratorList) validateGetParameters(index *float64) error {
 	return nil
 }

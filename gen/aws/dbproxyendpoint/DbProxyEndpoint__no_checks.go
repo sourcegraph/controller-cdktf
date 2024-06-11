@@ -4,6 +4,10 @@ package dbproxyendpoint
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DbProxyEndpoint) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DbProxyEndpoint) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (d *jsiiProxy_DbProxyEndpoint) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (d *jsiiProxy_DbProxyEndpoint) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DbProxyEndpoint) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DbProxyEndpoint) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DbProxyEndpoint) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DbProxyEndpoint) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (d *jsiiProxy_DbProxyEndpoint) validateOverrideLogicalIdParameters(newLogic
 }
 
 func (d *jsiiProxy_DbProxyEndpoint) validatePutTimeoutsParameters(value *DbProxyEndpointTimeouts) error {
+	return nil
+}
+
+func validateDbProxyEndpoint_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

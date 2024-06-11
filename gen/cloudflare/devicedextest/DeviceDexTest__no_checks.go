@@ -4,6 +4,10 @@ package devicedextest
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DeviceDexTest) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DeviceDexTest) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (d *jsiiProxy_DeviceDexTest) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (d *jsiiProxy_DeviceDexTest) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DeviceDexTest) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DeviceDexTest) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DeviceDexTest) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DeviceDexTest) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (d *jsiiProxy_DeviceDexTest) validateOverrideLogicalIdParameters(newLogical
 }
 
 func (d *jsiiProxy_DeviceDexTest) validatePutDataParameters(value *DeviceDexTestData) error {
+	return nil
+}
+
+func validateDeviceDexTest_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

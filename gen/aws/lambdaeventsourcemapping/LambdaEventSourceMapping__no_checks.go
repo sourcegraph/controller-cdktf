@@ -4,6 +4,10 @@ package lambdaeventsourcemapping
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LambdaEventSourceMapping) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LambdaEventSourceMapping) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (l *jsiiProxy_LambdaEventSourceMapping) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (l *jsiiProxy_LambdaEventSourceMapping) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LambdaEventSourceMapping) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LambdaEventSourceMapping) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LambdaEventSourceMapping) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LambdaEventSourceMapping) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -77,6 +97,10 @@ func (l *jsiiProxy_LambdaEventSourceMapping) validatePutSelfManagedKafkaEventSou
 }
 
 func (l *jsiiProxy_LambdaEventSourceMapping) validatePutSourceAccessConfigurationParameters(value interface{}) error {
+	return nil
+}
+
+func validateLambdaEventSourceMapping_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

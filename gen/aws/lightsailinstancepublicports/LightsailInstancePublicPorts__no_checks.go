@@ -4,6 +4,10 @@ package lightsailinstancepublicports
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LightsailInstancePublicPorts) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LightsailInstancePublicPorts) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (l *jsiiProxy_LightsailInstancePublicPorts) validateGetStringMapAttributePa
 	return nil
 }
 
+func (l *jsiiProxy_LightsailInstancePublicPorts) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LightsailInstancePublicPorts) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LightsailInstancePublicPorts) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LightsailInstancePublicPorts) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LightsailInstancePublicPorts) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (l *jsiiProxy_LightsailInstancePublicPorts) validateOverrideLogicalIdParame
 }
 
 func (l *jsiiProxy_LightsailInstancePublicPorts) validatePutPortInfoParameters(value interface{}) error {
+	return nil
+}
+
+func validateLightsailInstancePublicPorts_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

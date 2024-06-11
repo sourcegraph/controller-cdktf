@@ -67,6 +67,9 @@ type DynamodbKinesisStreamingDestination interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -88,7 +91,22 @@ type DynamodbKinesisStreamingDestination interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -97,6 +115,9 @@ type DynamodbKinesisStreamingDestination interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -462,6 +483,25 @@ func (j *jsiiProxy_DynamodbKinesisStreamingDestination)SetTableName(val *string)
 	)
 }
 
+// Generates CDKTF code for importing a DynamodbKinesisStreamingDestination resource upon running "cdktf plan <stack-name>".
+func DynamodbKinesisStreamingDestination_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDynamodbKinesisStreamingDestination_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.dynamodbKinesisStreamingDestination.DynamodbKinesisStreamingDestination",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -544,6 +584,17 @@ func DynamodbKinesisStreamingDestination_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (d *jsiiProxy_DynamodbKinesisStreamingDestination) AddMoveTarget(moveTarget *string) {
+	if err := d.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (d *jsiiProxy_DynamodbKinesisStreamingDestination) AddOverride(path *string, value interface{}) {
@@ -701,6 +752,30 @@ func (d *jsiiProxy_DynamodbKinesisStreamingDestination) GetStringMapAttribute(te
 	return returns
 }
 
+func (d *jsiiProxy_DynamodbKinesisStreamingDestination) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DynamodbKinesisStreamingDestination) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := d.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (d *jsiiProxy_DynamodbKinesisStreamingDestination) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -715,6 +790,39 @@ func (d *jsiiProxy_DynamodbKinesisStreamingDestination) InterpolationForAttribut
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DynamodbKinesisStreamingDestination) MoveFromId(id *string) {
+	if err := d.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
+func (d *jsiiProxy_DynamodbKinesisStreamingDestination) MoveTo(moveTarget *string, index interface{}) {
+	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
+}
+
+func (d *jsiiProxy_DynamodbKinesisStreamingDestination) MoveToId(id *string) {
+	if err := d.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveToId",
+		[]interface{}{id},
+	)
 }
 
 func (d *jsiiProxy_DynamodbKinesisStreamingDestination) OverrideLogicalId(newLogicalId *string) {
@@ -750,6 +858,32 @@ func (d *jsiiProxy_DynamodbKinesisStreamingDestination) SynthesizeAttributes() *
 	_jsii_.Invoke(
 		d,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DynamodbKinesisStreamingDestination) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		d,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DynamodbKinesisStreamingDestination) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleVertexAiFeaturestoreIamPolicy) validateOverrideLogi
 	return nil
 }
 
+func validateDataGoogleVertexAiFeaturestoreIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleVertexAiFeaturestoreIamPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }

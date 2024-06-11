@@ -70,6 +70,9 @@ type GoogleFirebaseHostingVersion interface {
 	Timeouts() GoogleFirebaseHostingVersionTimeoutsOutputReference
 	TimeoutsInput() interface{}
 	VersionId() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -91,7 +94,22 @@ type GoogleFirebaseHostingVersion interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -104,6 +122,9 @@ type GoogleFirebaseHostingVersion interface {
 	ResetOverrideLogicalId()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -498,6 +519,25 @@ func (j *jsiiProxy_GoogleFirebaseHostingVersion)SetSiteId(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a GoogleFirebaseHostingVersion resource upon running "cdktf plan <stack-name>".
+func GoogleFirebaseHostingVersion_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateGoogleFirebaseHostingVersion_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google-beta.googleFirebaseHostingVersion.GoogleFirebaseHostingVersion",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -580,6 +620,17 @@ func GoogleFirebaseHostingVersion_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (g *jsiiProxy_GoogleFirebaseHostingVersion) AddMoveTarget(moveTarget *string) {
+	if err := g.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (g *jsiiProxy_GoogleFirebaseHostingVersion) AddOverride(path *string, value interface{}) {
@@ -737,6 +788,30 @@ func (g *jsiiProxy_GoogleFirebaseHostingVersion) GetStringMapAttribute(terraform
 	return returns
 }
 
+func (g *jsiiProxy_GoogleFirebaseHostingVersion) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		g,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleFirebaseHostingVersion) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := g.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (g *jsiiProxy_GoogleFirebaseHostingVersion) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -751,6 +826,39 @@ func (g *jsiiProxy_GoogleFirebaseHostingVersion) InterpolationForAttribute(terra
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleFirebaseHostingVersion) MoveFromId(id *string) {
+	if err := g.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
+func (g *jsiiProxy_GoogleFirebaseHostingVersion) MoveTo(moveTarget *string, index interface{}) {
+	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
+}
+
+func (g *jsiiProxy_GoogleFirebaseHostingVersion) MoveToId(id *string) {
+	if err := g.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"moveToId",
+		[]interface{}{id},
+	)
 }
 
 func (g *jsiiProxy_GoogleFirebaseHostingVersion) OverrideLogicalId(newLogicalId *string) {
@@ -824,6 +932,32 @@ func (g *jsiiProxy_GoogleFirebaseHostingVersion) SynthesizeAttributes() *map[str
 	_jsii_.Invoke(
 		g,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleFirebaseHostingVersion) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		g,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleFirebaseHostingVersion) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		g,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

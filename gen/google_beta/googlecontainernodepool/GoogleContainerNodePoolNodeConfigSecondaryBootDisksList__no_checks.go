@@ -4,6 +4,10 @@ package googlecontainernodepool
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigSecondaryBootDisksList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigSecondaryBootDisksList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -25,8 +25,8 @@ type DataLossPreventionDiscoveryConfigConfig struct {
 	Location *string `field:"required" json:"location" yaml:"location"`
 	// The parent of the discovery config in any of the following formats:.
 	//
-	// 'projects/{{project}}/locations/{{location}}'
-	// 'organizations/{{organization_id}}/locations/{{location}}'
+	// * 'projects/{{project}}/locations/{{location}}'
+	// * 'organizations/{{organization_id}}/locations/{{location}}'
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/data_loss_prevention_discovery_config#parent DataLossPreventionDiscoveryConfig#parent}
 	Parent *string `field:"required" json:"parent" yaml:"parent"`

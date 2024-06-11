@@ -4,6 +4,10 @@ package cloudwatchcompositealarm
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CloudwatchCompositeAlarm) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudwatchCompositeAlarm) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (c *jsiiProxy_CloudwatchCompositeAlarm) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (c *jsiiProxy_CloudwatchCompositeAlarm) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudwatchCompositeAlarm) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (c *jsiiProxy_CloudwatchCompositeAlarm) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudwatchCompositeAlarm) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudwatchCompositeAlarm) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudwatchCompositeAlarm) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateCloudwatchCompositeAlarm_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

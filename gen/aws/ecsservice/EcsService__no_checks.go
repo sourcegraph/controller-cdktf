@@ -4,6 +4,10 @@ package ecsservice
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EcsService) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EcsService) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (e *jsiiProxy_EcsService) validateGetStringMapAttributeParameters(terraform
 	return nil
 }
 
+func (e *jsiiProxy_EcsService) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EcsService) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EcsService) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EcsService) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EcsService) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -93,6 +113,10 @@ func (e *jsiiProxy_EcsService) validatePutServiceRegistriesParameters(value *Ecs
 }
 
 func (e *jsiiProxy_EcsService) validatePutTimeoutsParameters(value *EcsServiceTimeouts) error {
+	return nil
+}
+
+func validateEcsService_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

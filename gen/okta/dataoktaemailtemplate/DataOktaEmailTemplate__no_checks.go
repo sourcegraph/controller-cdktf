@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataOktaEmailTemplate) validateOverrideLogicalIdParameters(ne
 	return nil
 }
 
+func validateDataOktaEmailTemplate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataOktaEmailTemplate_IsConstructParameters(x interface{}) error {
 	return nil
 }

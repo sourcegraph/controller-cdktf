@@ -31,9 +31,11 @@ type ApigeeEndpointAttachmentConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/apigee_endpoint_attachment#org_id ApigeeEndpointAttachment#org_id}
 	OrgId *string `field:"required" json:"orgId" yaml:"orgId"`
-	// Format: projects/*\/regions/*\/serviceAttachments/*.
+	// Format: projects/* /regions/* /serviceAttachments/*.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/apigee_endpoint_attachment#service_attachment ApigeeEndpointAttachment#service_attachment}
+	//
+	// Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 	ServiceAttachment *string `field:"required" json:"serviceAttachment" yaml:"serviceAttachment"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/apigee_endpoint_attachment#id ApigeeEndpointAttachment#id}.
 	//

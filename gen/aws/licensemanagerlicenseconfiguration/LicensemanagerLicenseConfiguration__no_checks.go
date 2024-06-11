@@ -4,6 +4,10 @@ package licensemanagerlicenseconfiguration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LicensemanagerLicenseConfiguration) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LicensemanagerLicenseConfiguration) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (l *jsiiProxy_LicensemanagerLicenseConfiguration) validateGetStringMapAttri
 	return nil
 }
 
+func (l *jsiiProxy_LicensemanagerLicenseConfiguration) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LicensemanagerLicenseConfiguration) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (l *jsiiProxy_LicensemanagerLicenseConfiguration) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LicensemanagerLicenseConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LicensemanagerLicenseConfiguration) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LicensemanagerLicenseConfiguration) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateLicensemanagerLicenseConfiguration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

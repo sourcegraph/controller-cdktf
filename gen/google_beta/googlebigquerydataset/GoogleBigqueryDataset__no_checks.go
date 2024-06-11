@@ -4,6 +4,10 @@ package googlebigquerydataset
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleBigqueryDataset) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigqueryDataset) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleBigqueryDataset) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBigqueryDataset) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigqueryDataset) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBigqueryDataset) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBigqueryDataset) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBigqueryDataset) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -65,6 +85,10 @@ func (g *jsiiProxy_GoogleBigqueryDataset) validatePutExternalDatasetReferencePar
 }
 
 func (g *jsiiProxy_GoogleBigqueryDataset) validatePutTimeoutsParameters(value *GoogleBigqueryDatasetTimeouts) error {
+	return nil
+}
+
+func validateGoogleBigqueryDataset_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

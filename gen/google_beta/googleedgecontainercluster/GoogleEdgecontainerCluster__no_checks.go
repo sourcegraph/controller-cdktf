@@ -4,6 +4,10 @@ package googleedgecontainercluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleEdgecontainerCluster) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleEdgecontainerCluster) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleEdgecontainerCluster) validateGetStringMapAttributePara
 	return nil
 }
 
+func (g *jsiiProxy_GoogleEdgecontainerCluster) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleEdgecontainerCluster) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleEdgecontainerCluster) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleEdgecontainerCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleEdgecontainerCluster) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -81,6 +101,10 @@ func (g *jsiiProxy_GoogleEdgecontainerCluster) validatePutSystemAddonsConfigPara
 }
 
 func (g *jsiiProxy_GoogleEdgecontainerCluster) validatePutTimeoutsParameters(value *GoogleEdgecontainerClusterTimeouts) error {
+	return nil
+}
+
+func validateGoogleEdgecontainerCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

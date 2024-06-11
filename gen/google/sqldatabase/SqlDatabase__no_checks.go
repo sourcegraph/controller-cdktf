@@ -4,6 +4,10 @@ package sqldatabase
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SqlDatabase) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SqlDatabase) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (s *jsiiProxy_SqlDatabase) validateGetStringMapAttributeParameters(terrafor
 	return nil
 }
 
+func (s *jsiiProxy_SqlDatabase) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SqlDatabase) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SqlDatabase) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SqlDatabase) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SqlDatabase) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (s *jsiiProxy_SqlDatabase) validateOverrideLogicalIdParameters(newLogicalId
 }
 
 func (s *jsiiProxy_SqlDatabase) validatePutTimeoutsParameters(value *SqlDatabaseTimeouts) error {
+	return nil
+}
+
+func validateSqlDatabase_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

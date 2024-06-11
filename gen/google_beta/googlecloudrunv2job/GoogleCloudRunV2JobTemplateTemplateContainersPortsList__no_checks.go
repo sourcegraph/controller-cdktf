@@ -4,6 +4,10 @@ package googlecloudrunv2job
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersPortsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersPortsList) validateGetParameters(index *float64) error {
 	return nil
 }

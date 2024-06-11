@@ -4,6 +4,10 @@ package googlecomputedisk
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComputeDisk) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeDisk) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleComputeDisk) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeDisk) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeDisk) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeDisk) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeDisk) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeDisk) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -73,6 +93,10 @@ func (g *jsiiProxy_GoogleComputeDisk) validatePutSourceSnapshotEncryptionKeyPara
 }
 
 func (g *jsiiProxy_GoogleComputeDisk) validatePutTimeoutsParameters(value *GoogleComputeDiskTimeouts) error {
+	return nil
+}
+
+func validateGoogleComputeDisk_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

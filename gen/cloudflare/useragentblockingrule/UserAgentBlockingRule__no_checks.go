@@ -4,6 +4,10 @@ package useragentblockingrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (u *jsiiProxy_UserAgentBlockingRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (u *jsiiProxy_UserAgentBlockingRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (u *jsiiProxy_UserAgentBlockingRule) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (u *jsiiProxy_UserAgentBlockingRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (u *jsiiProxy_UserAgentBlockingRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (u *jsiiProxy_UserAgentBlockingRule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (u *jsiiProxy_UserAgentBlockingRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (u *jsiiProxy_UserAgentBlockingRule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (u *jsiiProxy_UserAgentBlockingRule) validateOverrideLogicalIdParameters(ne
 }
 
 func (u *jsiiProxy_UserAgentBlockingRule) validatePutConfigurationParameters(value *UserAgentBlockingRuleConfiguration) error {
+	return nil
+}
+
+func validateUserAgentBlockingRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

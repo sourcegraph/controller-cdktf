@@ -4,6 +4,10 @@ package googlenetworksecurityfirewallendpoint
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleNetworkSecurityFirewallEndpoint) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkSecurityFirewallEndpoint) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleNetworkSecurityFirewallEndpoint) validateGetStringMapAt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetworkSecurityFirewallEndpoint) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkSecurityFirewallEndpoint) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetworkSecurityFirewallEndpoint) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetworkSecurityFirewallEndpoint) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetworkSecurityFirewallEndpoint) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleNetworkSecurityFirewallEndpoint) validateOverrideLogica
 }
 
 func (g *jsiiProxy_GoogleNetworkSecurityFirewallEndpoint) validatePutTimeoutsParameters(value *GoogleNetworkSecurityFirewallEndpointTimeouts) error {
+	return nil
+}
+
+func validateGoogleNetworkSecurityFirewallEndpoint_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

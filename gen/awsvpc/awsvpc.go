@@ -9,6 +9,9 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/awsvpc/internal"
 )
 
+// Defines an Awsvpc based on a Terraform module.
+//
+// Docs at Terraform Registry: {@link https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/3.19.0 terraform-aws-modules/vpc/aws}
 type Awsvpc interface {
 	cdktf.TerraformModule
 	AmazonSideAsn() *string
@@ -533,6 +536,9 @@ type Awsvpc interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -5263,6 +5269,32 @@ func (a *jsiiProxy_Awsvpc) SynthesizeAttributes() *map[string]interface{} {
 	_jsii_.Invoke(
 		a,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_Awsvpc) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		a,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_Awsvpc) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		a,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

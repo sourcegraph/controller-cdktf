@@ -18,9 +18,11 @@ type Cloudbuildv2ConnectionGithubEnterpriseConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/cloudbuildv2_connection#app_slug Cloudbuildv2Connection#app_slug}
 	AppSlug *string `field:"optional" json:"appSlug" yaml:"appSlug"`
-	// SecretManager resource containing the private key of the GitHub App, formatted as 'projects/*\/secrets/*\/versions/*'.
+	// SecretManager resource containing the private key of the GitHub App, formatted as 'projects/* /secrets/* /versions/*'.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/cloudbuildv2_connection#private_key_secret_version Cloudbuildv2Connection#private_key_secret_version}
+	//
+	// Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 	PrivateKeySecretVersion *string `field:"optional" json:"privateKeySecretVersion" yaml:"privateKeySecretVersion"`
 	// service_directory_config block.
 	//
@@ -30,9 +32,11 @@ type Cloudbuildv2ConnectionGithubEnterpriseConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/cloudbuildv2_connection#ssl_ca Cloudbuildv2Connection#ssl_ca}
 	SslCa *string `field:"optional" json:"sslCa" yaml:"sslCa"`
-	// SecretManager resource containing the webhook secret of the GitHub App, formatted as 'projects/*\/secrets/*\/versions/*'.
+	// SecretManager resource containing the webhook secret of the GitHub App, formatted as 'projects/* /secrets/* /versions/*'.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/cloudbuildv2_connection#webhook_secret_secret_version Cloudbuildv2Connection#webhook_secret_secret_version}
+	//
+	// Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 	WebhookSecretSecretVersion *string `field:"optional" json:"webhookSecretSecretVersion" yaml:"webhookSecretSecretVersion"`
 }
 

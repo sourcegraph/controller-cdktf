@@ -25,7 +25,7 @@ type GoogleFirebaseAppCheckRecaptchaEnterpriseConfigConfig struct {
 	AppId *string `field:"required" json:"appId" yaml:"appId"`
 	// The score-based site key created in reCAPTCHA Enterprise used to invoke reCAPTCHA and generate the reCAPTCHA tokens for your application.
 	//
-	// *Important**: This is not the siteSecret (as it is in reCAPTCHA v3), but rather your score-based reCAPTCHA Enterprise site key.
+	// **Important**: This is not the siteSecret (as it is in reCAPTCHA v3), but rather your score-based reCAPTCHA Enterprise site key.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_firebase_app_check_recaptcha_enterprise_config#site_key GoogleFirebaseAppCheckRecaptchaEnterpriseConfig#site_key}
 	SiteKey *string `field:"required" json:"siteKey" yaml:"siteKey"`

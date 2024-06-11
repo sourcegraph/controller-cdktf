@@ -4,6 +4,10 @@ package googlecloudfunctionsfunction
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleCloudfunctionsFunctionSecretVolumesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudfunctionsFunctionSecretVolumesList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -4,6 +4,10 @@ package billingaccountiampolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BillingAccountIamPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BillingAccountIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (b *jsiiProxy_BillingAccountIamPolicy) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (b *jsiiProxy_BillingAccountIamPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BillingAccountIamPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (b *jsiiProxy_BillingAccountIamPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BillingAccountIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (b *jsiiProxy_BillingAccountIamPolicy) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BillingAccountIamPolicy) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateBillingAccountIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

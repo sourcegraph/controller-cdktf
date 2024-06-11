@@ -28,6 +28,11 @@ type PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsList interfa
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
+	// Creating an iterator for this complex list.
+	//
+	// The list will be converted into a map with the mapKeyAttributeName as the key.
+	// Experimental.
+	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsOutputReference
@@ -176,6 +181,22 @@ func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensio
 		"wrapsSet",
 		val,
 	)
+}
+
+func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+	if err := p.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
+		panic(err)
+	}
+	var returns cdktf.DynamicListTerraformIterator
+
+	_jsii_.Invoke(
+		p,
+		"allWithMapKey",
+		[]interface{}{mapKeyAttributeName},
+		&returns,
+	)
+
+	return returns
 }
 
 func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsList) ComputeFqn() *string {

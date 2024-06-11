@@ -4,6 +4,10 @@ package googlevertexaifeaturestoreentitytype
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytype) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytype) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytype) validateGetStringMapAtt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytype) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytype) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytype) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytype) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytype) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytype) validatePutMonitoringCo
 }
 
 func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytype) validatePutTimeoutsParameters(value *GoogleVertexAiFeaturestoreEntitytypeTimeouts) error {
+	return nil
+}
+
+func validateGoogleVertexAiFeaturestoreEntitytype_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

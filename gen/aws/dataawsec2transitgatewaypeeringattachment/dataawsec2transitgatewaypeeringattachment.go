@@ -99,6 +99,10 @@ type DataAwsEc2TransitGatewayPeeringAttachment interface {
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -471,6 +475,25 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayPeeringAttachment)SetTags(val *map[st
 	)
 }
 
+// Generates CDKTF code for importing a DataAwsEc2TransitGatewayPeeringAttachment resource upon running "cdktf plan <stack-name>".
+func DataAwsEc2TransitGatewayPeeringAttachment_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataAwsEc2TransitGatewayPeeringAttachment_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.dataAwsEc2TransitGatewayPeeringAttachment.DataAwsEc2TransitGatewayPeeringAttachment",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -805,6 +828,32 @@ func (d *jsiiProxy_DataAwsEc2TransitGatewayPeeringAttachment) SynthesizeAttribut
 	_jsii_.Invoke(
 		d,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataAwsEc2TransitGatewayPeeringAttachment) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		d,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataAwsEc2TransitGatewayPeeringAttachment) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

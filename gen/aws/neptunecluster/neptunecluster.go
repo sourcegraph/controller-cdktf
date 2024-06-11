@@ -155,6 +155,9 @@ type NeptuneCluster interface {
 	VpcSecurityGroupIds() *[]*string
 	SetVpcSecurityGroupIds(val *[]*string)
 	VpcSecurityGroupIdsInput() *[]*string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -176,7 +179,22 @@ type NeptuneCluster interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -217,6 +235,9 @@ type NeptuneCluster interface {
 	ResetTimeouts()
 	ResetVpcSecurityGroupIds()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -1488,6 +1509,25 @@ func (j *jsiiProxy_NeptuneCluster)SetVpcSecurityGroupIds(val *[]*string) {
 	)
 }
 
+// Generates CDKTF code for importing a NeptuneCluster resource upon running "cdktf plan <stack-name>".
+func NeptuneCluster_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateNeptuneCluster_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.neptuneCluster.NeptuneCluster",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -1570,6 +1610,17 @@ func NeptuneCluster_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (n *jsiiProxy_NeptuneCluster) AddMoveTarget(moveTarget *string) {
+	if err := n.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (n *jsiiProxy_NeptuneCluster) AddOverride(path *string, value interface{}) {
@@ -1727,6 +1778,30 @@ func (n *jsiiProxy_NeptuneCluster) GetStringMapAttribute(terraformAttribute *str
 	return returns
 }
 
+func (n *jsiiProxy_NeptuneCluster) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		n,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NeptuneCluster) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := n.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (n *jsiiProxy_NeptuneCluster) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := n.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -1741,6 +1816,39 @@ func (n *jsiiProxy_NeptuneCluster) InterpolationForAttribute(terraformAttribute 
 	)
 
 	return returns
+}
+
+func (n *jsiiProxy_NeptuneCluster) MoveFromId(id *string) {
+	if err := n.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
+func (n *jsiiProxy_NeptuneCluster) MoveTo(moveTarget *string, index interface{}) {
+	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
+}
+
+func (n *jsiiProxy_NeptuneCluster) MoveToId(id *string) {
+	if err := n.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"moveToId",
+		[]interface{}{id},
+	)
 }
 
 func (n *jsiiProxy_NeptuneCluster) OverrideLogicalId(newLogicalId *string) {
@@ -2038,6 +2146,32 @@ func (n *jsiiProxy_NeptuneCluster) SynthesizeAttributes() *map[string]interface{
 	_jsii_.Invoke(
 		n,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NeptuneCluster) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		n,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NeptuneCluster) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		n,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

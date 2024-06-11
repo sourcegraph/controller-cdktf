@@ -4,6 +4,10 @@ package mediapackagechannel
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MediaPackageChannelHlsIngestList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MediaPackageChannelHlsIngestList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -4,6 +4,10 @@ package bigtabletable
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BigtableTable) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigtableTable) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (b *jsiiProxy_BigtableTable) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (b *jsiiProxy_BigtableTable) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigtableTable) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigtableTable) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigtableTable) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigtableTable) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (b *jsiiProxy_BigtableTable) validatePutColumnFamilyParameters(value interf
 }
 
 func (b *jsiiProxy_BigtableTable) validatePutTimeoutsParameters(value *BigtableTableTimeouts) error {
+	return nil
+}
+
+func validateBigtableTable_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

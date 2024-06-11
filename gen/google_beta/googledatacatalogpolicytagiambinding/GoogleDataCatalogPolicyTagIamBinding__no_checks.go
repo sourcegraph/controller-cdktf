@@ -4,6 +4,10 @@ package googledatacatalogpolicytagiambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleDataCatalogPolicyTagIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataCatalogPolicyTagIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleDataCatalogPolicyTagIamBinding) validateGetStringMapAtt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataCatalogPolicyTagIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataCatalogPolicyTagIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataCatalogPolicyTagIamBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataCatalogPolicyTagIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataCatalogPolicyTagIamBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleDataCatalogPolicyTagIamBinding) validateOverrideLogical
 }
 
 func (g *jsiiProxy_GoogleDataCatalogPolicyTagIamBinding) validatePutConditionParameters(value *GoogleDataCatalogPolicyTagIamBindingCondition) error {
+	return nil
+}
+
+func validateGoogleDataCatalogPolicyTagIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

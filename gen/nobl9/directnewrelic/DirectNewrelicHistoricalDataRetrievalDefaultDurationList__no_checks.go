@@ -4,6 +4,10 @@ package directnewrelic
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DirectNewrelicHistoricalDataRetrievalDefaultDurationList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DirectNewrelicHistoricalDataRetrievalDefaultDurationList) validateGetParameters(index *float64) error {
 	return nil
 }

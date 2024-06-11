@@ -4,6 +4,10 @@ package pubsublitereservation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PubsubLiteReservation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PubsubLiteReservation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (p *jsiiProxy_PubsubLiteReservation) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (p *jsiiProxy_PubsubLiteReservation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PubsubLiteReservation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PubsubLiteReservation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PubsubLiteReservation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PubsubLiteReservation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (p *jsiiProxy_PubsubLiteReservation) validateOverrideLogicalIdParameters(ne
 }
 
 func (p *jsiiProxy_PubsubLiteReservation) validatePutTimeoutsParameters(value *PubsubLiteReservationTimeouts) error {
+	return nil
+}
+
+func validatePubsubLiteReservation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

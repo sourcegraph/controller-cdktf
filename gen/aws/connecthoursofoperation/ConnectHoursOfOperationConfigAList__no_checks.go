@@ -4,6 +4,10 @@ package connecthoursofoperation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ConnectHoursOfOperationConfigAList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConnectHoursOfOperationConfigAList) validateGetParameters(index *float64) error {
 	return nil
 }

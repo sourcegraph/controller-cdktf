@@ -4,6 +4,10 @@ package computeimageiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeImageIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeImageIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_ComputeImageIamMember) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (c *jsiiProxy_ComputeImageIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeImageIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeImageIamMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeImageIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeImageIamMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (c *jsiiProxy_ComputeImageIamMember) validateOverrideLogicalIdParameters(ne
 }
 
 func (c *jsiiProxy_ComputeImageIamMember) validatePutConditionParameters(value *ComputeImageIamMemberCondition) error {
+	return nil
+}
+
+func validateComputeImageIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

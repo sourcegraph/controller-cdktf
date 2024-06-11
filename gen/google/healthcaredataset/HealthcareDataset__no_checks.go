@@ -4,6 +4,10 @@ package healthcaredataset
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (h *jsiiProxy_HealthcareDataset) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HealthcareDataset) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (h *jsiiProxy_HealthcareDataset) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (h *jsiiProxy_HealthcareDataset) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HealthcareDataset) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (h *jsiiProxy_HealthcareDataset) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (h *jsiiProxy_HealthcareDataset) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (h *jsiiProxy_HealthcareDataset) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (h *jsiiProxy_HealthcareDataset) validateOverrideLogicalIdParameters(newLog
 }
 
 func (h *jsiiProxy_HealthcareDataset) validatePutTimeoutsParameters(value *HealthcareDatasetTimeouts) error {
+	return nil
+}
+
+func validateHealthcareDataset_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

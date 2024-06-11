@@ -4,6 +4,10 @@ package accesscontextmanageraccesspolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AccessContextManagerAccessPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccessContextManagerAccessPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (a *jsiiProxy_AccessContextManagerAccessPolicy) validateGetStringMapAttribu
 	return nil
 }
 
+func (a *jsiiProxy_AccessContextManagerAccessPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccessContextManagerAccessPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccessContextManagerAccessPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccessContextManagerAccessPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccessContextManagerAccessPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (a *jsiiProxy_AccessContextManagerAccessPolicy) validateOverrideLogicalIdPa
 }
 
 func (a *jsiiProxy_AccessContextManagerAccessPolicy) validatePutTimeoutsParameters(value *AccessContextManagerAccessPolicyTimeouts) error {
+	return nil
+}
+
+func validateAccessContextManagerAccessPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

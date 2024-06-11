@@ -4,6 +4,10 @@ package googlesccsourceiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleSccSourceIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSccSourceIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleSccSourceIamMember) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (g *jsiiProxy_GoogleSccSourceIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSccSourceIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleSccSourceIamMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleSccSourceIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleSccSourceIamMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleSccSourceIamMember) validateOverrideLogicalIdParameters
 }
 
 func (g *jsiiProxy_GoogleSccSourceIamMember) validatePutConditionParameters(value *GoogleSccSourceIamMemberCondition) error {
+	return nil
+}
+
+func validateGoogleSccSourceIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

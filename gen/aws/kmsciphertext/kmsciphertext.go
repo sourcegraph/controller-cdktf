@@ -71,6 +71,9 @@ type KmsCiphertext interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -92,7 +95,22 @@ type KmsCiphertext interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -102,6 +120,9 @@ type KmsCiphertext interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -508,6 +529,25 @@ func (j *jsiiProxy_KmsCiphertext)SetProvisioners(val *[]interface{}) {
 	)
 }
 
+// Generates CDKTF code for importing a KmsCiphertext resource upon running "cdktf plan <stack-name>".
+func KmsCiphertext_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateKmsCiphertext_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.kmsCiphertext.KmsCiphertext",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -590,6 +630,17 @@ func KmsCiphertext_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (k *jsiiProxy_KmsCiphertext) AddMoveTarget(moveTarget *string) {
+	if err := k.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (k *jsiiProxy_KmsCiphertext) AddOverride(path *string, value interface{}) {
@@ -747,6 +798,30 @@ func (k *jsiiProxy_KmsCiphertext) GetStringMapAttribute(terraformAttribute *stri
 	return returns
 }
 
+func (k *jsiiProxy_KmsCiphertext) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		k,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (k *jsiiProxy_KmsCiphertext) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := k.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (k *jsiiProxy_KmsCiphertext) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := k.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -761,6 +836,39 @@ func (k *jsiiProxy_KmsCiphertext) InterpolationForAttribute(terraformAttribute *
 	)
 
 	return returns
+}
+
+func (k *jsiiProxy_KmsCiphertext) MoveFromId(id *string) {
+	if err := k.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
+func (k *jsiiProxy_KmsCiphertext) MoveTo(moveTarget *string, index interface{}) {
+	if err := k.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
+}
+
+func (k *jsiiProxy_KmsCiphertext) MoveToId(id *string) {
+	if err := k.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"moveToId",
+		[]interface{}{id},
+	)
 }
 
 func (k *jsiiProxy_KmsCiphertext) OverrideLogicalId(newLogicalId *string) {
@@ -804,6 +912,32 @@ func (k *jsiiProxy_KmsCiphertext) SynthesizeAttributes() *map[string]interface{}
 	_jsii_.Invoke(
 		k,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (k *jsiiProxy_KmsCiphertext) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		k,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (k *jsiiProxy_KmsCiphertext) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		k,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

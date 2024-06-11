@@ -4,6 +4,10 @@ package apphubservice
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ApphubService) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApphubService) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (a *jsiiProxy_ApphubService) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (a *jsiiProxy_ApphubService) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApphubService) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApphubService) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApphubService) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApphubService) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (a *jsiiProxy_ApphubService) validatePutAttributesParameters(value *ApphubS
 }
 
 func (a *jsiiProxy_ApphubService) validatePutTimeoutsParameters(value *ApphubServiceTimeouts) error {
+	return nil
+}
+
+func validateApphubService_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

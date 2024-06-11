@@ -4,6 +4,10 @@ package googlenetworksecurityaddressgroupiampolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleNetworkSecurityAddressGroupIamPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkSecurityAddressGroupIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (g *jsiiProxy_GoogleNetworkSecurityAddressGroupIamPolicy) validateGetString
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetworkSecurityAddressGroupIamPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkSecurityAddressGroupIamPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetworkSecurityAddressGroupIamPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetworkSecurityAddressGroupIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetworkSecurityAddressGroupIamPolicy) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkSecurityAddressGroupIamPolicy) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateGoogleNetworkSecurityAddressGroupIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

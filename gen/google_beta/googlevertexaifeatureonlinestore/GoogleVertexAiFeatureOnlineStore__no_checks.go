@@ -4,6 +4,10 @@ package googlevertexaifeatureonlinestore
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStore) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStore) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStore) validateGetStringMapAttribu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStore) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStore) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStore) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStore) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStore) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -69,6 +89,10 @@ func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStore) validatePutOptimizedParamet
 }
 
 func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStore) validatePutTimeoutsParameters(value *GoogleVertexAiFeatureOnlineStoreTimeouts) error {
+	return nil
+}
+
+func validateGoogleVertexAiFeatureOnlineStore_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

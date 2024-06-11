@@ -4,6 +4,10 @@ package workerskv
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (w *jsiiProxy_WorkersKv) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorkersKv) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (w *jsiiProxy_WorkersKv) validateGetStringMapAttributeParameters(terraformA
 	return nil
 }
 
+func (w *jsiiProxy_WorkersKv) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorkersKv) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (w *jsiiProxy_WorkersKv) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkersKv) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkersKv) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorkersKv) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateWorkersKv_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package googleappenginestandardappversion
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleAppEngineStandardAppVersionHandlersList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleAppEngineStandardAppVersionHandlersList) validateGetParameters(index *float64) error {
 	return nil
 }

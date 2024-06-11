@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleCloudRunV2Job) validateOverrideLogicalIdParameters(
 	return nil
 }
 
+func validateDataGoogleCloudRunV2Job_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleCloudRunV2Job_IsConstructParameters(x interface{}) error {
 	return nil
 }

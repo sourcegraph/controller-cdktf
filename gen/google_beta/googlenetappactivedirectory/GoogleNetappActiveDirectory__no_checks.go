@@ -4,6 +4,10 @@ package googlenetappactivedirectory
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleNetappActiveDirectory) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetappActiveDirectory) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleNetappActiveDirectory) validateGetStringMapAttributePar
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetappActiveDirectory) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetappActiveDirectory) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetappActiveDirectory) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetappActiveDirectory) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetappActiveDirectory) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleNetappActiveDirectory) validateOverrideLogicalIdParamet
 }
 
 func (g *jsiiProxy_GoogleNetappActiveDirectory) validatePutTimeoutsParameters(value *GoogleNetappActiveDirectoryTimeouts) error {
+	return nil
+}
+
+func validateGoogleNetappActiveDirectory_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

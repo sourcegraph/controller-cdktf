@@ -4,6 +4,10 @@ package googlecomputesubnetwork
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeList) validateGetParameters(index *float64) error {
 	return nil
 }

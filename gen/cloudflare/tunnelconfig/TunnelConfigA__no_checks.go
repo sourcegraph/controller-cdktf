@@ -4,6 +4,10 @@ package tunnelconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (t *jsiiProxy_TunnelConfigA) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TunnelConfigA) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (t *jsiiProxy_TunnelConfigA) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (t *jsiiProxy_TunnelConfigA) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TunnelConfigA) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (t *jsiiProxy_TunnelConfigA) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (t *jsiiProxy_TunnelConfigA) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (t *jsiiProxy_TunnelConfigA) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (t *jsiiProxy_TunnelConfigA) validateOverrideLogicalIdParameters(newLogical
 }
 
 func (t *jsiiProxy_TunnelConfigA) validatePutConfigParameters(value *TunnelConfigConfig) error {
+	return nil
+}
+
+func validateTunnelConfigA_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

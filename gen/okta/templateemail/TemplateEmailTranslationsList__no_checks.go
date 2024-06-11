@@ -4,6 +4,10 @@ package templateemail
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (t *jsiiProxy_TemplateEmailTranslationsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TemplateEmailTranslationsList) validateGetParameters(index *float64) error {
 	return nil
 }

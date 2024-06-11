@@ -4,6 +4,10 @@ package defaultsecuritygroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DefaultSecurityGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DefaultSecurityGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (d *jsiiProxy_DefaultSecurityGroup) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (d *jsiiProxy_DefaultSecurityGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DefaultSecurityGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DefaultSecurityGroup) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DefaultSecurityGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DefaultSecurityGroup) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (d *jsiiProxy_DefaultSecurityGroup) validatePutEgressParameters(value inter
 }
 
 func (d *jsiiProxy_DefaultSecurityGroup) validatePutIngressParameters(value interface{}) error {
+	return nil
+}
+
+func validateDefaultSecurityGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

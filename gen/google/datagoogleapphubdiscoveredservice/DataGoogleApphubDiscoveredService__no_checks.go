@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleApphubDiscoveredService) validateOverrideLogicalIdP
 	return nil
 }
 
+func validateDataGoogleApphubDiscoveredService_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleApphubDiscoveredService_IsConstructParameters(x interface{}) error {
 	return nil
 }

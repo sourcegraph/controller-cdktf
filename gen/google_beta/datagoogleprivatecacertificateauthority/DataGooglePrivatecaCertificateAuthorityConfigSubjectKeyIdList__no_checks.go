@@ -4,6 +4,10 @@ package datagoogleprivatecacertificateauthority
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataGooglePrivatecaCertificateAuthorityConfigSubjectKeyIdList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataGooglePrivatecaCertificateAuthorityConfigSubjectKeyIdList) validateGetParameters(index *float64) error {
 	return nil
 }

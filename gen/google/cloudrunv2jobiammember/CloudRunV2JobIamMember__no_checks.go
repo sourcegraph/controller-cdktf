@@ -4,6 +4,10 @@ package cloudrunv2jobiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CloudRunV2JobIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudRunV2JobIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_CloudRunV2JobIamMember) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (c *jsiiProxy_CloudRunV2JobIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudRunV2JobIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudRunV2JobIamMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudRunV2JobIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudRunV2JobIamMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (c *jsiiProxy_CloudRunV2JobIamMember) validateOverrideLogicalIdParameters(n
 }
 
 func (c *jsiiProxy_CloudRunV2JobIamMember) validatePutConditionParameters(value *CloudRunV2JobIamMemberCondition) error {
+	return nil
+}
+
+func validateCloudRunV2JobIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

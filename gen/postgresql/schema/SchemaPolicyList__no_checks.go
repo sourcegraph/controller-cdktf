@@ -4,6 +4,10 @@ package schema
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SchemaPolicyList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SchemaPolicyList) validateGetParameters(index *float64) error {
 	return nil
 }

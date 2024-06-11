@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleLoggingProjectSettings) validateOverrideLogicalIdPa
 	return nil
 }
 
+func validateDataGoogleLoggingProjectSettings_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleLoggingProjectSettings_IsConstructParameters(x interface{}) error {
 	return nil
 }

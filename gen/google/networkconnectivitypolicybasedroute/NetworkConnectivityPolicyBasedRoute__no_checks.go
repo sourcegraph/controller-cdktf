@@ -4,6 +4,10 @@ package networkconnectivitypolicybasedroute
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetworkConnectivityPolicyBasedRoute) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkConnectivityPolicyBasedRoute) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (n *jsiiProxy_NetworkConnectivityPolicyBasedRoute) validateGetStringMapAttr
 	return nil
 }
 
+func (n *jsiiProxy_NetworkConnectivityPolicyBasedRoute) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkConnectivityPolicyBasedRoute) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkConnectivityPolicyBasedRoute) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkConnectivityPolicyBasedRoute) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkConnectivityPolicyBasedRoute) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -65,6 +85,10 @@ func (n *jsiiProxy_NetworkConnectivityPolicyBasedRoute) validatePutTimeoutsParam
 }
 
 func (n *jsiiProxy_NetworkConnectivityPolicyBasedRoute) validatePutVirtualMachineParameters(value *NetworkConnectivityPolicyBasedRouteVirtualMachine) error {
+	return nil
+}
+
+func validateNetworkConnectivityPolicyBasedRoute_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

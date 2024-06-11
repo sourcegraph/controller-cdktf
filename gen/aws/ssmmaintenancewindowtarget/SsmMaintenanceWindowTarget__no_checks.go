@@ -4,6 +4,10 @@ package ssmmaintenancewindowtarget
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SsmMaintenanceWindowTarget) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SsmMaintenanceWindowTarget) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (s *jsiiProxy_SsmMaintenanceWindowTarget) validateGetStringMapAttributePara
 	return nil
 }
 
+func (s *jsiiProxy_SsmMaintenanceWindowTarget) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SsmMaintenanceWindowTarget) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SsmMaintenanceWindowTarget) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SsmMaintenanceWindowTarget) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SsmMaintenanceWindowTarget) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (s *jsiiProxy_SsmMaintenanceWindowTarget) validateOverrideLogicalIdParamete
 }
 
 func (s *jsiiProxy_SsmMaintenanceWindowTarget) validatePutTargetsParameters(value interface{}) error {
+	return nil
+}
+
+func validateSsmMaintenanceWindowTarget_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

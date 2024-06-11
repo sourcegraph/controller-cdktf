@@ -4,6 +4,10 @@ package schemasregistrypolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SchemasRegistryPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SchemasRegistryPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (s *jsiiProxy_SchemasRegistryPolicy) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (s *jsiiProxy_SchemasRegistryPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SchemasRegistryPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (s *jsiiProxy_SchemasRegistryPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SchemasRegistryPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SchemasRegistryPolicy) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SchemasRegistryPolicy) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateSchemasRegistryPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

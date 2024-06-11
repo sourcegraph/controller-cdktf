@@ -67,6 +67,9 @@ type IotPolicyAttachment interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -88,7 +91,22 @@ type IotPolicyAttachment interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -97,6 +115,9 @@ type IotPolicyAttachment interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -462,6 +483,25 @@ func (j *jsiiProxy_IotPolicyAttachment)SetTarget(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a IotPolicyAttachment resource upon running "cdktf plan <stack-name>".
+func IotPolicyAttachment_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateIotPolicyAttachment_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.iotPolicyAttachment.IotPolicyAttachment",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -544,6 +584,17 @@ func IotPolicyAttachment_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (i *jsiiProxy_IotPolicyAttachment) AddMoveTarget(moveTarget *string) {
+	if err := i.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (i *jsiiProxy_IotPolicyAttachment) AddOverride(path *string, value interface{}) {
@@ -701,6 +752,30 @@ func (i *jsiiProxy_IotPolicyAttachment) GetStringMapAttribute(terraformAttribute
 	return returns
 }
 
+func (i *jsiiProxy_IotPolicyAttachment) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		i,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (i *jsiiProxy_IotPolicyAttachment) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := i.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (i *jsiiProxy_IotPolicyAttachment) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -715,6 +790,39 @@ func (i *jsiiProxy_IotPolicyAttachment) InterpolationForAttribute(terraformAttri
 	)
 
 	return returns
+}
+
+func (i *jsiiProxy_IotPolicyAttachment) MoveFromId(id *string) {
+	if err := i.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
+func (i *jsiiProxy_IotPolicyAttachment) MoveTo(moveTarget *string, index interface{}) {
+	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
+}
+
+func (i *jsiiProxy_IotPolicyAttachment) MoveToId(id *string) {
+	if err := i.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"moveToId",
+		[]interface{}{id},
+	)
 }
 
 func (i *jsiiProxy_IotPolicyAttachment) OverrideLogicalId(newLogicalId *string) {
@@ -750,6 +858,32 @@ func (i *jsiiProxy_IotPolicyAttachment) SynthesizeAttributes() *map[string]inter
 	_jsii_.Invoke(
 		i,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (i *jsiiProxy_IotPolicyAttachment) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		i,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (i *jsiiProxy_IotPolicyAttachment) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		i,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

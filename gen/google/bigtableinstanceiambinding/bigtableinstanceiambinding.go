@@ -76,6 +76,9 @@ type BigtableInstanceIamBinding interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -97,7 +100,22 @@ type BigtableInstanceIamBinding interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -109,6 +127,9 @@ type BigtableInstanceIamBinding interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -566,6 +587,25 @@ func (j *jsiiProxy_BigtableInstanceIamBinding)SetRole(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a BigtableInstanceIamBinding resource upon running "cdktf plan <stack-name>".
+func BigtableInstanceIamBinding_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateBigtableInstanceIamBinding_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.bigtableInstanceIamBinding.BigtableInstanceIamBinding",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -648,6 +688,17 @@ func BigtableInstanceIamBinding_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (b *jsiiProxy_BigtableInstanceIamBinding) AddMoveTarget(moveTarget *string) {
+	if err := b.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (b *jsiiProxy_BigtableInstanceIamBinding) AddOverride(path *string, value interface{}) {
@@ -805,6 +856,30 @@ func (b *jsiiProxy_BigtableInstanceIamBinding) GetStringMapAttribute(terraformAt
 	return returns
 }
 
+func (b *jsiiProxy_BigtableInstanceIamBinding) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		b,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BigtableInstanceIamBinding) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := b.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (b *jsiiProxy_BigtableInstanceIamBinding) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := b.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -819,6 +894,39 @@ func (b *jsiiProxy_BigtableInstanceIamBinding) InterpolationForAttribute(terrafo
 	)
 
 	return returns
+}
+
+func (b *jsiiProxy_BigtableInstanceIamBinding) MoveFromId(id *string) {
+	if err := b.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
+func (b *jsiiProxy_BigtableInstanceIamBinding) MoveTo(moveTarget *string, index interface{}) {
+	if err := b.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
+}
+
+func (b *jsiiProxy_BigtableInstanceIamBinding) MoveToId(id *string) {
+	if err := b.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"moveToId",
+		[]interface{}{id},
+	)
 }
 
 func (b *jsiiProxy_BigtableInstanceIamBinding) OverrideLogicalId(newLogicalId *string) {
@@ -881,6 +989,32 @@ func (b *jsiiProxy_BigtableInstanceIamBinding) SynthesizeAttributes() *map[strin
 	_jsii_.Invoke(
 		b,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BigtableInstanceIamBinding) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		b,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BigtableInstanceIamBinding) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		b,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

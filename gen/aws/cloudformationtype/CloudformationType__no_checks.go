@@ -4,6 +4,10 @@ package cloudformationtype
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CloudformationType) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudformationType) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_CloudformationType) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (c *jsiiProxy_CloudformationType) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudformationType) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudformationType) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudformationType) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudformationType) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (c *jsiiProxy_CloudformationType) validateOverrideLogicalIdParameters(newLo
 }
 
 func (c *jsiiProxy_CloudformationType) validatePutLoggingConfigParameters(value *CloudformationTypeLoggingConfig) error {
+	return nil
+}
+
+func validateCloudformationType_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

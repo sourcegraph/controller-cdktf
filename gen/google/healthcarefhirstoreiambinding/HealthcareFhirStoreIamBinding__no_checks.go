@@ -4,6 +4,10 @@ package healthcarefhirstoreiambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (h *jsiiProxy_HealthcareFhirStoreIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HealthcareFhirStoreIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (h *jsiiProxy_HealthcareFhirStoreIamBinding) validateGetStringMapAttributeP
 	return nil
 }
 
+func (h *jsiiProxy_HealthcareFhirStoreIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HealthcareFhirStoreIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (h *jsiiProxy_HealthcareFhirStoreIamBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (h *jsiiProxy_HealthcareFhirStoreIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (h *jsiiProxy_HealthcareFhirStoreIamBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (h *jsiiProxy_HealthcareFhirStoreIamBinding) validateOverrideLogicalIdParam
 }
 
 func (h *jsiiProxy_HealthcareFhirStoreIamBinding) validatePutConditionParameters(value *HealthcareFhirStoreIamBindingCondition) error {
+	return nil
+}
+
+func validateHealthcareFhirStoreIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

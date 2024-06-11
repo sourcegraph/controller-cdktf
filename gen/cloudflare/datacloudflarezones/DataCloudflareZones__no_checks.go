@@ -56,6 +56,10 @@ func (d *jsiiProxy_DataCloudflareZones) validatePutFilterParameters(value *DataC
 	return nil
 }
 
+func validateDataCloudflareZones_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataCloudflareZones_IsConstructParameters(x interface{}) error {
 	return nil
 }

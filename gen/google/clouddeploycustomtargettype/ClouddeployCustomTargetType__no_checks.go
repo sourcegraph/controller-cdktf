@@ -4,6 +4,10 @@ package clouddeploycustomtargettype
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ClouddeployCustomTargetType) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ClouddeployCustomTargetType) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_ClouddeployCustomTargetType) validateGetStringMapAttributePar
 	return nil
 }
 
+func (c *jsiiProxy_ClouddeployCustomTargetType) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ClouddeployCustomTargetType) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ClouddeployCustomTargetType) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ClouddeployCustomTargetType) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ClouddeployCustomTargetType) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (c *jsiiProxy_ClouddeployCustomTargetType) validatePutCustomActionsParamete
 }
 
 func (c *jsiiProxy_ClouddeployCustomTargetType) validatePutTimeoutsParameters(value *ClouddeployCustomTargetTypeTimeouts) error {
+	return nil
+}
+
+func validateClouddeployCustomTargetType_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

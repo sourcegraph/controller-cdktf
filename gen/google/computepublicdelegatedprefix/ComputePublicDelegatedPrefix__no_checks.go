@@ -4,6 +4,10 @@ package computepublicdelegatedprefix
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputePublicDelegatedPrefix) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputePublicDelegatedPrefix) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_ComputePublicDelegatedPrefix) validateGetStringMapAttributePa
 	return nil
 }
 
+func (c *jsiiProxy_ComputePublicDelegatedPrefix) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputePublicDelegatedPrefix) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputePublicDelegatedPrefix) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputePublicDelegatedPrefix) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputePublicDelegatedPrefix) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (c *jsiiProxy_ComputePublicDelegatedPrefix) validateOverrideLogicalIdParame
 }
 
 func (c *jsiiProxy_ComputePublicDelegatedPrefix) validatePutTimeoutsParameters(value *ComputePublicDelegatedPrefixTimeouts) error {
+	return nil
+}
+
+func validateComputePublicDelegatedPrefix_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

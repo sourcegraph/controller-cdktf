@@ -77,6 +77,9 @@ type HealthcareDicomStore interface {
 	TerraformResourceType() *string
 	Timeouts() HealthcareDicomStoreTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -98,7 +101,22 @@ type HealthcareDicomStore interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -112,6 +130,9 @@ type HealthcareDicomStore interface {
 	ResetOverrideLogicalId()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -578,6 +599,25 @@ func (j *jsiiProxy_HealthcareDicomStore)SetProvisioners(val *[]interface{}) {
 	)
 }
 
+// Generates CDKTF code for importing a HealthcareDicomStore resource upon running "cdktf plan <stack-name>".
+func HealthcareDicomStore_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateHealthcareDicomStore_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.healthcareDicomStore.HealthcareDicomStore",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -660,6 +700,17 @@ func HealthcareDicomStore_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (h *jsiiProxy_HealthcareDicomStore) AddMoveTarget(moveTarget *string) {
+	if err := h.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		h,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (h *jsiiProxy_HealthcareDicomStore) AddOverride(path *string, value interface{}) {
@@ -817,6 +868,30 @@ func (h *jsiiProxy_HealthcareDicomStore) GetStringMapAttribute(terraformAttribut
 	return returns
 }
 
+func (h *jsiiProxy_HealthcareDicomStore) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		h,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (h *jsiiProxy_HealthcareDicomStore) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := h.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		h,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (h *jsiiProxy_HealthcareDicomStore) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := h.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -831,6 +906,39 @@ func (h *jsiiProxy_HealthcareDicomStore) InterpolationForAttribute(terraformAttr
 	)
 
 	return returns
+}
+
+func (h *jsiiProxy_HealthcareDicomStore) MoveFromId(id *string) {
+	if err := h.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		h,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
+func (h *jsiiProxy_HealthcareDicomStore) MoveTo(moveTarget *string, index interface{}) {
+	if err := h.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		h,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
+}
+
+func (h *jsiiProxy_HealthcareDicomStore) MoveToId(id *string) {
+	if err := h.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		h,
+		"moveToId",
+		[]interface{}{id},
+	)
 }
 
 func (h *jsiiProxy_HealthcareDicomStore) OverrideLogicalId(newLogicalId *string) {
@@ -912,6 +1020,32 @@ func (h *jsiiProxy_HealthcareDicomStore) SynthesizeAttributes() *map[string]inte
 	_jsii_.Invoke(
 		h,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (h *jsiiProxy_HealthcareDicomStore) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		h,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (h *jsiiProxy_HealthcareDicomStore) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		h,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

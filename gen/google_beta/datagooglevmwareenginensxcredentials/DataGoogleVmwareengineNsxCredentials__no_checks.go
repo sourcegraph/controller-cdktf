@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleVmwareengineNsxCredentials) validateOverrideLogical
 	return nil
 }
 
+func validateDataGoogleVmwareengineNsxCredentials_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleVmwareengineNsxCredentials_IsConstructParameters(x interface{}) error {
 	return nil
 }

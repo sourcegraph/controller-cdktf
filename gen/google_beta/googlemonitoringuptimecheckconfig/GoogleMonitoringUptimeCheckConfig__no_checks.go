@@ -4,6 +4,10 @@ package googlemonitoringuptimecheckconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfig) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfig) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfig) validateGetStringMapAttrib
 	return nil
 }
 
+func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfig) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfig) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfig) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfig) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -77,6 +97,10 @@ func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfig) validatePutTcpCheckParamet
 }
 
 func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfig) validatePutTimeoutsParameters(value *GoogleMonitoringUptimeCheckConfigTimeouts) error {
+	return nil
+}
+
+func validateGoogleMonitoringUptimeCheckConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

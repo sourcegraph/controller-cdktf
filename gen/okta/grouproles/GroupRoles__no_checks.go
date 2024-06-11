@@ -4,6 +4,10 @@ package grouproles
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GroupRoles) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GroupRoles) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (g *jsiiProxy_GroupRoles) validateGetStringMapAttributeParameters(terraform
 	return nil
 }
 
+func (g *jsiiProxy_GroupRoles) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GroupRoles) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (g *jsiiProxy_GroupRoles) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GroupRoles) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GroupRoles) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GroupRoles) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateGroupRoles_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

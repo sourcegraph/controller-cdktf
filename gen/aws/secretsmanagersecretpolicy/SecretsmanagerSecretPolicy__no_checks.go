@@ -4,6 +4,10 @@ package secretsmanagersecretpolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SecretsmanagerSecretPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecretsmanagerSecretPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (s *jsiiProxy_SecretsmanagerSecretPolicy) validateGetStringMapAttributePara
 	return nil
 }
 
+func (s *jsiiProxy_SecretsmanagerSecretPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecretsmanagerSecretPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (s *jsiiProxy_SecretsmanagerSecretPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecretsmanagerSecretPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecretsmanagerSecretPolicy) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecretsmanagerSecretPolicy) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateSecretsmanagerSecretPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package cloudidentitygroupmembership
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CloudIdentityGroupMembership) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudIdentityGroupMembership) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_CloudIdentityGroupMembership) validateGetStringMapAttributePa
 	return nil
 }
 
+func (c *jsiiProxy_CloudIdentityGroupMembership) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudIdentityGroupMembership) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudIdentityGroupMembership) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudIdentityGroupMembership) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudIdentityGroupMembership) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (c *jsiiProxy_CloudIdentityGroupMembership) validatePutRolesParameters(valu
 }
 
 func (c *jsiiProxy_CloudIdentityGroupMembership) validatePutTimeoutsParameters(value *CloudIdentityGroupMembershipTimeouts) error {
+	return nil
+}
+
+func validateCloudIdentityGroupMembership_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package integrationsclient
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IntegrationsClient) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IntegrationsClient) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (i *jsiiProxy_IntegrationsClient) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (i *jsiiProxy_IntegrationsClient) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IntegrationsClient) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IntegrationsClient) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IntegrationsClient) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IntegrationsClient) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (i *jsiiProxy_IntegrationsClient) validatePutCloudKmsConfigParameters(value
 }
 
 func (i *jsiiProxy_IntegrationsClient) validatePutTimeoutsParameters(value *IntegrationsClientTimeouts) error {
+	return nil
+}
+
+func validateIntegrationsClient_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

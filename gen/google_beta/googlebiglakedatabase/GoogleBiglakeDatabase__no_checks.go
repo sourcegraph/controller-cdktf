@@ -4,6 +4,10 @@ package googlebiglakedatabase
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleBiglakeDatabase) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBiglakeDatabase) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleBiglakeDatabase) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBiglakeDatabase) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBiglakeDatabase) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBiglakeDatabase) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBiglakeDatabase) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBiglakeDatabase) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (g *jsiiProxy_GoogleBiglakeDatabase) validatePutHiveOptionsParameters(value
 }
 
 func (g *jsiiProxy_GoogleBiglakeDatabase) validatePutTimeoutsParameters(value *GoogleBiglakeDatabaseTimeouts) error {
+	return nil
+}
+
+func validateGoogleBiglakeDatabase_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

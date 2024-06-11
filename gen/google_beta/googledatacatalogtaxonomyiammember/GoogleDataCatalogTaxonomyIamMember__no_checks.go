@@ -4,6 +4,10 @@ package googledatacatalogtaxonomyiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleDataCatalogTaxonomyIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataCatalogTaxonomyIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleDataCatalogTaxonomyIamMember) validateGetStringMapAttri
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataCatalogTaxonomyIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataCatalogTaxonomyIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataCatalogTaxonomyIamMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataCatalogTaxonomyIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataCatalogTaxonomyIamMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleDataCatalogTaxonomyIamMember) validateOverrideLogicalId
 }
 
 func (g *jsiiProxy_GoogleDataCatalogTaxonomyIamMember) validatePutConditionParameters(value *GoogleDataCatalogTaxonomyIamMemberCondition) error {
+	return nil
+}
+
+func validateGoogleDataCatalogTaxonomyIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

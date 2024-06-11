@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleFirebaseHostingChannel) validateOverrideLogicalIdPa
 	return nil
 }
 
+func validateDataGoogleFirebaseHostingChannel_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleFirebaseHostingChannel_IsConstructParameters(x interface{}) error {
 	return nil
 }

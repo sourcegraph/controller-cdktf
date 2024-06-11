@@ -41,8 +41,9 @@ type Wafv2WebAclRuleOutputReference interface {
 	PriorityInput() *float64
 	RuleLabel() Wafv2WebAclRuleRuleLabelList
 	RuleLabelInput() interface{}
-	Statement() Wafv2WebAclRuleStatementOutputReference
-	StatementInput() *Wafv2WebAclRuleStatement
+	Statement() interface{}
+	SetStatement(val interface{})
+	StatementInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -80,11 +81,11 @@ type Wafv2WebAclRuleOutputReference interface {
 	PutAction(value *Wafv2WebAclRuleAction)
 	PutOverrideAction(value *Wafv2WebAclRuleOverrideAction)
 	PutRuleLabel(value interface{})
-	PutStatement(value *Wafv2WebAclRuleStatement)
 	PutVisibilityConfig(value *Wafv2WebAclRuleVisibilityConfig)
 	ResetAction()
 	ResetOverrideAction()
 	ResetRuleLabel()
+	ResetStatement()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -250,8 +251,8 @@ func (j *jsiiProxy_Wafv2WebAclRuleOutputReference) RuleLabelInput() interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_Wafv2WebAclRuleOutputReference) Statement() Wafv2WebAclRuleStatementOutputReference {
-	var returns Wafv2WebAclRuleStatementOutputReference
+func (j *jsiiProxy_Wafv2WebAclRuleOutputReference) Statement() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"statement",
@@ -260,8 +261,8 @@ func (j *jsiiProxy_Wafv2WebAclRuleOutputReference) Statement() Wafv2WebAclRuleSt
 	return returns
 }
 
-func (j *jsiiProxy_Wafv2WebAclRuleOutputReference) StatementInput() *Wafv2WebAclRuleStatement {
-	var returns *Wafv2WebAclRuleStatement
+func (j *jsiiProxy_Wafv2WebAclRuleOutputReference) StatementInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"statementInput",
@@ -389,6 +390,17 @@ func (j *jsiiProxy_Wafv2WebAclRuleOutputReference)SetPriority(val *float64) {
 	_jsii_.Set(
 		j,
 		"priority",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Wafv2WebAclRuleOutputReference)SetStatement(val interface{}) {
+	if err := j.validateSetStatementParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"statement",
 		val,
 	)
 }
@@ -634,17 +646,6 @@ func (w *jsiiProxy_Wafv2WebAclRuleOutputReference) PutRuleLabel(value interface{
 	)
 }
 
-func (w *jsiiProxy_Wafv2WebAclRuleOutputReference) PutStatement(value *Wafv2WebAclRuleStatement) {
-	if err := w.validatePutStatementParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		w,
-		"putStatement",
-		[]interface{}{value},
-	)
-}
-
 func (w *jsiiProxy_Wafv2WebAclRuleOutputReference) PutVisibilityConfig(value *Wafv2WebAclRuleVisibilityConfig) {
 	if err := w.validatePutVisibilityConfigParameters(value); err != nil {
 		panic(err)
@@ -676,6 +677,14 @@ func (w *jsiiProxy_Wafv2WebAclRuleOutputReference) ResetRuleLabel() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetRuleLabel",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_Wafv2WebAclRuleOutputReference) ResetStatement() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetStatement",
 		nil, // no parameters
 	)
 }

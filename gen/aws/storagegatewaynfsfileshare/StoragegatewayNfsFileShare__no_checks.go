@@ -4,6 +4,10 @@ package storagegatewaynfsfileshare
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_StoragegatewayNfsFileShare) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StoragegatewayNfsFileShare) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (s *jsiiProxy_StoragegatewayNfsFileShare) validateGetStringMapAttributePara
 	return nil
 }
 
+func (s *jsiiProxy_StoragegatewayNfsFileShare) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StoragegatewayNfsFileShare) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_StoragegatewayNfsFileShare) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_StoragegatewayNfsFileShare) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_StoragegatewayNfsFileShare) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (s *jsiiProxy_StoragegatewayNfsFileShare) validatePutNfsFileShareDefaultsPa
 }
 
 func (s *jsiiProxy_StoragegatewayNfsFileShare) validatePutTimeoutsParameters(value *StoragegatewayNfsFileShareTimeouts) error {
+	return nil
+}
+
+func validateStoragegatewayNfsFileShare_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

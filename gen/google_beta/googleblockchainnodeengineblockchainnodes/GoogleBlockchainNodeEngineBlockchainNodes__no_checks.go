@@ -4,6 +4,10 @@ package googleblockchainnodeengineblockchainnodes
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleBlockchainNodeEngineBlockchainNodes) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBlockchainNodeEngineBlockchainNodes) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleBlockchainNodeEngineBlockchainNodes) validateGetStringM
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBlockchainNodeEngineBlockchainNodes) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBlockchainNodeEngineBlockchainNodes) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBlockchainNodeEngineBlockchainNodes) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBlockchainNodeEngineBlockchainNodes) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBlockchainNodeEngineBlockchainNodes) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (g *jsiiProxy_GoogleBlockchainNodeEngineBlockchainNodes) validatePutEthereu
 }
 
 func (g *jsiiProxy_GoogleBlockchainNodeEngineBlockchainNodes) validatePutTimeoutsParameters(value *GoogleBlockchainNodeEngineBlockchainNodesTimeouts) error {
+	return nil
+}
+
+func validateGoogleBlockchainNodeEngineBlockchainNodes_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

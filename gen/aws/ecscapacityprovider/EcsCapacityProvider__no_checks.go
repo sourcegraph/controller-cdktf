@@ -4,6 +4,10 @@ package ecscapacityprovider
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EcsCapacityProvider) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EcsCapacityProvider) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (e *jsiiProxy_EcsCapacityProvider) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (e *jsiiProxy_EcsCapacityProvider) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EcsCapacityProvider) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EcsCapacityProvider) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EcsCapacityProvider) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EcsCapacityProvider) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (e *jsiiProxy_EcsCapacityProvider) validateOverrideLogicalIdParameters(newL
 }
 
 func (e *jsiiProxy_EcsCapacityProvider) validatePutAutoScalingGroupProviderParameters(value *EcsCapacityProviderAutoScalingGroupProvider) error {
+	return nil
+}
+
+func validateEcsCapacityProvider_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

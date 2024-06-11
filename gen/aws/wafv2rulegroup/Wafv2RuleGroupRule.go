@@ -10,10 +10,6 @@ type Wafv2RuleGroupRule struct {
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/wafv2_rule_group#priority Wafv2RuleGroup#priority}.
 	Priority *float64 `field:"required" json:"priority" yaml:"priority"`
-	// statement block.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/wafv2_rule_group#statement Wafv2RuleGroup#statement}
-	Statement *Wafv2RuleGroupRuleStatement `field:"required" json:"statement" yaml:"statement"`
 	// visibility_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/wafv2_rule_group#visibility_config Wafv2RuleGroup#visibility_config}
@@ -22,5 +18,9 @@ type Wafv2RuleGroupRule struct {
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/wafv2_rule_group#rule_label Wafv2RuleGroup#rule_label}
 	RuleLabel interface{} `field:"optional" json:"ruleLabel" yaml:"ruleLabel"`
+	// statement block.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/wafv2_rule_group#statement Wafv2RuleGroup#statement}
+	Statement interface{} `field:"optional" json:"statement" yaml:"statement"`
 }
 

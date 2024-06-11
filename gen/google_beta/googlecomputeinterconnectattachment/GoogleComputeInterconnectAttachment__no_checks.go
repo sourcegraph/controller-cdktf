@@ -4,6 +4,10 @@ package googlecomputeinterconnectattachment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComputeInterconnectAttachment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeInterconnectAttachment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleComputeInterconnectAttachment) validateGetStringMapAttr
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeInterconnectAttachment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeInterconnectAttachment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeInterconnectAttachment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeInterconnectAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeInterconnectAttachment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleComputeInterconnectAttachment) validateOverrideLogicalI
 }
 
 func (g *jsiiProxy_GoogleComputeInterconnectAttachment) validatePutTimeoutsParameters(value *GoogleComputeInterconnectAttachmentTimeouts) error {
+	return nil
+}
+
+func validateGoogleComputeInterconnectAttachment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

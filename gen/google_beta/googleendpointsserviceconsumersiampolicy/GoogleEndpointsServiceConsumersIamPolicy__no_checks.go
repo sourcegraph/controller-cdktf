@@ -4,6 +4,10 @@ package googleendpointsserviceconsumersiampolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleEndpointsServiceConsumersIamPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleEndpointsServiceConsumersIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (g *jsiiProxy_GoogleEndpointsServiceConsumersIamPolicy) validateGetStringMa
 	return nil
 }
 
+func (g *jsiiProxy_GoogleEndpointsServiceConsumersIamPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleEndpointsServiceConsumersIamPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (g *jsiiProxy_GoogleEndpointsServiceConsumersIamPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleEndpointsServiceConsumersIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleEndpointsServiceConsumersIamPolicy) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleEndpointsServiceConsumersIamPolicy) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateGoogleEndpointsServiceConsumersIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package cloudformationstacksetinstance
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CloudformationStackSetInstance) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudformationStackSetInstance) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_CloudformationStackSetInstance) validateGetStringMapAttribute
 	return nil
 }
 
+func (c *jsiiProxy_CloudformationStackSetInstance) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudformationStackSetInstance) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudformationStackSetInstance) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudformationStackSetInstance) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudformationStackSetInstance) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (c *jsiiProxy_CloudformationStackSetInstance) validatePutOperationPreferenc
 }
 
 func (c *jsiiProxy_CloudformationStackSetInstance) validatePutTimeoutsParameters(value *CloudformationStackSetInstanceTimeouts) error {
+	return nil
+}
+
+func validateCloudformationStackSetInstance_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

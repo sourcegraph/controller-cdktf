@@ -4,6 +4,10 @@ package iamsigningcertificate
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IamSigningCertificate) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamSigningCertificate) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (i *jsiiProxy_IamSigningCertificate) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (i *jsiiProxy_IamSigningCertificate) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamSigningCertificate) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (i *jsiiProxy_IamSigningCertificate) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IamSigningCertificate) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IamSigningCertificate) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamSigningCertificate) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateIamSigningCertificate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

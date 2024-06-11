@@ -4,6 +4,10 @@ package migrationcenterpreferenceset
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MigrationCenterPreferenceSet) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MigrationCenterPreferenceSet) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (m *jsiiProxy_MigrationCenterPreferenceSet) validateGetStringMapAttributePa
 	return nil
 }
 
+func (m *jsiiProxy_MigrationCenterPreferenceSet) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MigrationCenterPreferenceSet) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MigrationCenterPreferenceSet) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MigrationCenterPreferenceSet) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MigrationCenterPreferenceSet) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (m *jsiiProxy_MigrationCenterPreferenceSet) validatePutTimeoutsParameters(v
 }
 
 func (m *jsiiProxy_MigrationCenterPreferenceSet) validatePutVirtualMachinePreferencesParameters(value *MigrationCenterPreferenceSetVirtualMachinePreferences) error {
+	return nil
+}
+
+func validateMigrationCenterPreferenceSet_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

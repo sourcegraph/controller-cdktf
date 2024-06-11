@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataOktaPolicy) validateOverrideLogicalIdParameters(newLogica
 	return nil
 }
 
+func validateDataOktaPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataOktaPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }

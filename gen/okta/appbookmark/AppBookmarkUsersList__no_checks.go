@@ -4,6 +4,10 @@ package appbookmark
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AppBookmarkUsersList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppBookmarkUsersList) validateGetParameters(index *float64) error {
 	return nil
 }

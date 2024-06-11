@@ -86,6 +86,9 @@ type Route53ResolverRule interface {
 	TerraformResourceType() *string
 	Timeouts() Route53ResolverRuleTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -107,7 +110,22 @@ type Route53ResolverRule interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -124,6 +142,9 @@ type Route53ResolverRule interface {
 	ResetTargetIp()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -683,6 +704,25 @@ func (j *jsiiProxy_Route53ResolverRule)SetTagsAll(val *map[string]*string) {
 	)
 }
 
+// Generates CDKTF code for importing a Route53ResolverRule resource upon running "cdktf plan <stack-name>".
+func Route53ResolverRule_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateRoute53ResolverRule_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.route53ResolverRule.Route53ResolverRule",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -765,6 +805,17 @@ func Route53ResolverRule_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (r *jsiiProxy_Route53ResolverRule) AddMoveTarget(moveTarget *string) {
+	if err := r.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (r *jsiiProxy_Route53ResolverRule) AddOverride(path *string, value interface{}) {
@@ -922,6 +973,30 @@ func (r *jsiiProxy_Route53ResolverRule) GetStringMapAttribute(terraformAttribute
 	return returns
 }
 
+func (r *jsiiProxy_Route53ResolverRule) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		r,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_Route53ResolverRule) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := r.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (r *jsiiProxy_Route53ResolverRule) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -936,6 +1011,39 @@ func (r *jsiiProxy_Route53ResolverRule) InterpolationForAttribute(terraformAttri
 	)
 
 	return returns
+}
+
+func (r *jsiiProxy_Route53ResolverRule) MoveFromId(id *string) {
+	if err := r.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
+func (r *jsiiProxy_Route53ResolverRule) MoveTo(moveTarget *string, index interface{}) {
+	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
+}
+
+func (r *jsiiProxy_Route53ResolverRule) MoveToId(id *string) {
+	if err := r.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"moveToId",
+		[]interface{}{id},
+	)
 }
 
 func (r *jsiiProxy_Route53ResolverRule) OverrideLogicalId(newLogicalId *string) {
@@ -1041,6 +1149,32 @@ func (r *jsiiProxy_Route53ResolverRule) SynthesizeAttributes() *map[string]inter
 	_jsii_.Invoke(
 		r,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_Route53ResolverRule) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		r,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_Route53ResolverRule) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		r,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

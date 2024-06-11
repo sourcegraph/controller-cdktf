@@ -81,6 +81,9 @@ type AppstreamUser interface {
 	UserName() *string
 	SetUserName(val *string)
 	UserNameInput() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -102,7 +105,22 @@ type AppstreamUser interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -115,6 +133,9 @@ type AppstreamUser interface {
 	ResetOverrideLogicalId()
 	ResetSendEmailNotification()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -624,6 +645,25 @@ func (j *jsiiProxy_AppstreamUser)SetUserName(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a AppstreamUser resource upon running "cdktf plan <stack-name>".
+func AppstreamUser_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateAppstreamUser_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.appstreamUser.AppstreamUser",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -706,6 +746,17 @@ func AppstreamUser_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (a *jsiiProxy_AppstreamUser) AddMoveTarget(moveTarget *string) {
+	if err := a.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (a *jsiiProxy_AppstreamUser) AddOverride(path *string, value interface{}) {
@@ -863,6 +914,30 @@ func (a *jsiiProxy_AppstreamUser) GetStringMapAttribute(terraformAttribute *stri
 	return returns
 }
 
+func (a *jsiiProxy_AppstreamUser) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		a,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AppstreamUser) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := a.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (a *jsiiProxy_AppstreamUser) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -877,6 +952,39 @@ func (a *jsiiProxy_AppstreamUser) InterpolationForAttribute(terraformAttribute *
 	)
 
 	return returns
+}
+
+func (a *jsiiProxy_AppstreamUser) MoveFromId(id *string) {
+	if err := a.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
+func (a *jsiiProxy_AppstreamUser) MoveTo(moveTarget *string, index interface{}) {
+	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
+}
+
+func (a *jsiiProxy_AppstreamUser) MoveToId(id *string) {
+	if err := a.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"moveToId",
+		[]interface{}{id},
+	)
 }
 
 func (a *jsiiProxy_AppstreamUser) OverrideLogicalId(newLogicalId *string) {
@@ -944,6 +1052,32 @@ func (a *jsiiProxy_AppstreamUser) SynthesizeAttributes() *map[string]interface{}
 	_jsii_.Invoke(
 		a,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AppstreamUser) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		a,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AppstreamUser) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		a,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

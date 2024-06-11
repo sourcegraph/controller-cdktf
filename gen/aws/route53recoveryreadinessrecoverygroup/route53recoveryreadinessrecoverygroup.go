@@ -76,6 +76,9 @@ type Route53RecoveryreadinessRecoveryGroup interface {
 	TerraformResourceType() *string
 	Timeouts() Route53RecoveryreadinessRecoveryGroupTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -97,7 +100,22 @@ type Route53RecoveryreadinessRecoveryGroup interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -111,6 +129,9 @@ type Route53RecoveryreadinessRecoveryGroup interface {
 	ResetTagsAll()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -568,6 +589,25 @@ func (j *jsiiProxy_Route53RecoveryreadinessRecoveryGroup)SetTagsAll(val *map[str
 	)
 }
 
+// Generates CDKTF code for importing a Route53RecoveryreadinessRecoveryGroup resource upon running "cdktf plan <stack-name>".
+func Route53RecoveryreadinessRecoveryGroup_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateRoute53RecoveryreadinessRecoveryGroup_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.route53RecoveryreadinessRecoveryGroup.Route53RecoveryreadinessRecoveryGroup",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -650,6 +690,17 @@ func Route53RecoveryreadinessRecoveryGroup_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (r *jsiiProxy_Route53RecoveryreadinessRecoveryGroup) AddMoveTarget(moveTarget *string) {
+	if err := r.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (r *jsiiProxy_Route53RecoveryreadinessRecoveryGroup) AddOverride(path *string, value interface{}) {
@@ -807,6 +858,30 @@ func (r *jsiiProxy_Route53RecoveryreadinessRecoveryGroup) GetStringMapAttribute(
 	return returns
 }
 
+func (r *jsiiProxy_Route53RecoveryreadinessRecoveryGroup) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		r,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_Route53RecoveryreadinessRecoveryGroup) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := r.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (r *jsiiProxy_Route53RecoveryreadinessRecoveryGroup) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -821,6 +896,39 @@ func (r *jsiiProxy_Route53RecoveryreadinessRecoveryGroup) InterpolationForAttrib
 	)
 
 	return returns
+}
+
+func (r *jsiiProxy_Route53RecoveryreadinessRecoveryGroup) MoveFromId(id *string) {
+	if err := r.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
+func (r *jsiiProxy_Route53RecoveryreadinessRecoveryGroup) MoveTo(moveTarget *string, index interface{}) {
+	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
+}
+
+func (r *jsiiProxy_Route53RecoveryreadinessRecoveryGroup) MoveToId(id *string) {
+	if err := r.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"moveToId",
+		[]interface{}{id},
+	)
 }
 
 func (r *jsiiProxy_Route53RecoveryreadinessRecoveryGroup) OverrideLogicalId(newLogicalId *string) {
@@ -899,6 +1007,32 @@ func (r *jsiiProxy_Route53RecoveryreadinessRecoveryGroup) SynthesizeAttributes()
 	_jsii_.Invoke(
 		r,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_Route53RecoveryreadinessRecoveryGroup) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		r,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_Route53RecoveryreadinessRecoveryGroup) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		r,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

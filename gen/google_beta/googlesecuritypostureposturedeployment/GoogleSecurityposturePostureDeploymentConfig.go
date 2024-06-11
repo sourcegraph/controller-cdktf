@@ -31,7 +31,7 @@ type GoogleSecurityposturePostureDeploymentConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_securityposture_posture_deployment#posture_deployment_id GoogleSecurityposturePostureDeployment#posture_deployment_id}
 	PostureDeploymentId *string `field:"required" json:"postureDeploymentId" yaml:"postureDeploymentId"`
-	// Relative name of the posture which needs to be deployed. It should be in the format: organizations/{organization_id}/locations/{location}/postures/{posture_id}.
+	// Relative name of the posture which needs to be deployed. It should be in the format:   organizations/{organization_id}/locations/{location}/postures/{posture_id}.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_securityposture_posture_deployment#posture_id GoogleSecurityposturePostureDeployment#posture_id}
 	PostureId *string `field:"required" json:"postureId" yaml:"postureId"`

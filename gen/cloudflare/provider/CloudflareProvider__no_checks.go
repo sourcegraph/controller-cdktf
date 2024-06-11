@@ -12,6 +12,10 @@ func (c *jsiiProxy_CloudflareProvider) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
+func validateCloudflareProvider_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateCloudflareProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }

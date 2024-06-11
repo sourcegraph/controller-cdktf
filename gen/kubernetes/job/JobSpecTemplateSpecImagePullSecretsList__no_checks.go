@@ -4,6 +4,10 @@ package job
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (j *jsiiProxy_JobSpecTemplateSpecImagePullSecretsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobSpecTemplateSpecImagePullSecretsList) validateGetParameters(index *float64) error {
 	return nil
 }

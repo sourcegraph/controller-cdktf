@@ -4,6 +4,10 @@ package googleloggingbillingaccountsink
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleLoggingBillingAccountSink) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleLoggingBillingAccountSink) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleLoggingBillingAccountSink) validateGetStringMapAttribut
 	return nil
 }
 
+func (g *jsiiProxy_GoogleLoggingBillingAccountSink) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleLoggingBillingAccountSink) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleLoggingBillingAccountSink) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleLoggingBillingAccountSink) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleLoggingBillingAccountSink) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (g *jsiiProxy_GoogleLoggingBillingAccountSink) validatePutBigqueryOptionsPa
 }
 
 func (g *jsiiProxy_GoogleLoggingBillingAccountSink) validatePutExclusionsParameters(value interface{}) error {
+	return nil
+}
+
+func validateGoogleLoggingBillingAccountSink_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

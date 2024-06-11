@@ -60,8 +60,8 @@ type ComputeInstanceTemplateConfig struct {
 	InstanceDescription *string `field:"optional" json:"instanceDescription" yaml:"instanceDescription"`
 	// A set of key/value label pairs to assign to instances created from this template.
 	//
-	// *Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
-	// Please refer to the field 'effective_labels' for all of the labels present on the resource.
+	// **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+	// 				Please refer to the field 'effective_labels' for all of the labels present on the resource.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/compute_instance_template#labels ComputeInstanceTemplate#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
@@ -116,8 +116,8 @@ type ComputeInstanceTemplateConfig struct {
 	// A map of resource manager tags.
 	//
 	// Resource manager tag keys and values have the same definition as resource manager tags.
-	// Keys must be in the format tagKeys/{tag_key_id}, and values are in the format tagValues/456.
-	// The field is ignored (both PUT & PATCH) when empty.
+	// 				Keys must be in the format tagKeys/{tag_key_id}, and values are in the format tagValues/456.
+	// 				The field is ignored (both PUT & PATCH) when empty.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/compute_instance_template#resource_manager_tags ComputeInstanceTemplate#resource_manager_tags}
 	ResourceManagerTags *map[string]*string `field:"optional" json:"resourceManagerTags" yaml:"resourceManagerTags"`

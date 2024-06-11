@@ -78,6 +78,9 @@ type GoogleSccOrganizationCustomModule interface {
 	Timeouts() GoogleSccOrganizationCustomModuleTimeoutsOutputReference
 	TimeoutsInput() interface{}
 	UpdateTime() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -99,7 +102,22 @@ type GoogleSccOrganizationCustomModule interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -111,6 +129,9 @@ type GoogleSccOrganizationCustomModule interface {
 	ResetOverrideLogicalId()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -587,6 +608,25 @@ func (j *jsiiProxy_GoogleSccOrganizationCustomModule)SetProvisioners(val *[]inte
 	)
 }
 
+// Generates CDKTF code for importing a GoogleSccOrganizationCustomModule resource upon running "cdktf plan <stack-name>".
+func GoogleSccOrganizationCustomModule_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateGoogleSccOrganizationCustomModule_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google-beta.googleSccOrganizationCustomModule.GoogleSccOrganizationCustomModule",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -669,6 +709,17 @@ func GoogleSccOrganizationCustomModule_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (g *jsiiProxy_GoogleSccOrganizationCustomModule) AddMoveTarget(moveTarget *string) {
+	if err := g.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (g *jsiiProxy_GoogleSccOrganizationCustomModule) AddOverride(path *string, value interface{}) {
@@ -826,6 +877,30 @@ func (g *jsiiProxy_GoogleSccOrganizationCustomModule) GetStringMapAttribute(terr
 	return returns
 }
 
+func (g *jsiiProxy_GoogleSccOrganizationCustomModule) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		g,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleSccOrganizationCustomModule) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := g.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (g *jsiiProxy_GoogleSccOrganizationCustomModule) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -840,6 +915,39 @@ func (g *jsiiProxy_GoogleSccOrganizationCustomModule) InterpolationForAttribute(
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleSccOrganizationCustomModule) MoveFromId(id *string) {
+	if err := g.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
+func (g *jsiiProxy_GoogleSccOrganizationCustomModule) MoveTo(moveTarget *string, index interface{}) {
+	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
+}
+
+func (g *jsiiProxy_GoogleSccOrganizationCustomModule) MoveToId(id *string) {
+	if err := g.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"moveToId",
+		[]interface{}{id},
+	)
 }
 
 func (g *jsiiProxy_GoogleSccOrganizationCustomModule) OverrideLogicalId(newLogicalId *string) {
@@ -905,6 +1013,32 @@ func (g *jsiiProxy_GoogleSccOrganizationCustomModule) SynthesizeAttributes() *ma
 	_jsii_.Invoke(
 		g,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleSccOrganizationCustomModule) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		g,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleSccOrganizationCustomModule) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		g,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

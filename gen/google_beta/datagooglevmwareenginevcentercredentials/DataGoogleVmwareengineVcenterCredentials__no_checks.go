@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleVmwareengineVcenterCredentials) validateOverrideLog
 	return nil
 }
 
+func validateDataGoogleVmwareengineVcenterCredentials_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleVmwareengineVcenterCredentials_IsConstructParameters(x interface{}) error {
 	return nil
 }

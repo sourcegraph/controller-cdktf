@@ -4,6 +4,10 @@ package spectrumapplication
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SpectrumApplication) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpectrumApplication) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (s *jsiiProxy_SpectrumApplication) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (s *jsiiProxy_SpectrumApplication) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpectrumApplication) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SpectrumApplication) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SpectrumApplication) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SpectrumApplication) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -65,6 +85,10 @@ func (s *jsiiProxy_SpectrumApplication) validatePutOriginDnsParameters(value *Sp
 }
 
 func (s *jsiiProxy_SpectrumApplication) validatePutOriginPortRangeParameters(value *SpectrumApplicationOriginPortRange) error {
+	return nil
+}
+
+func validateSpectrumApplication_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

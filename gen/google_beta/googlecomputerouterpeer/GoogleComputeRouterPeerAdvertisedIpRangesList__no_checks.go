@@ -4,6 +4,10 @@ package googlecomputerouterpeer
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComputeRouterPeerAdvertisedIpRangesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRouterPeerAdvertisedIpRangesList) validateGetParameters(index *float64) error {
 	return nil
 }

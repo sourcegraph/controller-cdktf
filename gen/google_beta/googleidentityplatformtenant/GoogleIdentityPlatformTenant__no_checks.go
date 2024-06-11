@@ -4,6 +4,10 @@ package googleidentityplatformtenant
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleIdentityPlatformTenant) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIdentityPlatformTenant) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleIdentityPlatformTenant) validateGetStringMapAttributePa
 	return nil
 }
 
+func (g *jsiiProxy_GoogleIdentityPlatformTenant) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIdentityPlatformTenant) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIdentityPlatformTenant) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIdentityPlatformTenant) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIdentityPlatformTenant) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleIdentityPlatformTenant) validateOverrideLogicalIdParame
 }
 
 func (g *jsiiProxy_GoogleIdentityPlatformTenant) validatePutTimeoutsParameters(value *GoogleIdentityPlatformTenantTimeouts) error {
+	return nil
+}
+
+func validateGoogleIdentityPlatformTenant_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

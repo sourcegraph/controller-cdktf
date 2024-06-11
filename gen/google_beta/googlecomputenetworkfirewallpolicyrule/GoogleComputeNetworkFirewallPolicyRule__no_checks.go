@@ -4,6 +4,10 @@ package googlecomputenetworkfirewallpolicyrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComputeNetworkFirewallPolicyRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeNetworkFirewallPolicyRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleComputeNetworkFirewallPolicyRule) validateGetStringMapA
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeNetworkFirewallPolicyRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeNetworkFirewallPolicyRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeNetworkFirewallPolicyRule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeNetworkFirewallPolicyRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeNetworkFirewallPolicyRule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (g *jsiiProxy_GoogleComputeNetworkFirewallPolicyRule) validatePutTargetSecu
 }
 
 func (g *jsiiProxy_GoogleComputeNetworkFirewallPolicyRule) validatePutTimeoutsParameters(value *GoogleComputeNetworkFirewallPolicyRuleTimeouts) error {
+	return nil
+}
+
+func validateGoogleComputeNetworkFirewallPolicyRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

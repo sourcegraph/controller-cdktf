@@ -4,6 +4,10 @@ package datagooglecomputeregionnetworkendpointgroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataGoogleComputeRegionNetworkEndpointGroupAppEngineList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataGoogleComputeRegionNetworkEndpointGroupAppEngineList) validateGetParameters(index *float64) error {
 	return nil
 }

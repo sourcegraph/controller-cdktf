@@ -4,6 +4,10 @@ package securesourcemanagerinstance
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SecureSourceManagerInstance) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecureSourceManagerInstance) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (s *jsiiProxy_SecureSourceManagerInstance) validateGetStringMapAttributePar
 	return nil
 }
 
+func (s *jsiiProxy_SecureSourceManagerInstance) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecureSourceManagerInstance) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecureSourceManagerInstance) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecureSourceManagerInstance) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecureSourceManagerInstance) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (s *jsiiProxy_SecureSourceManagerInstance) validatePutPrivateConfigParamete
 }
 
 func (s *jsiiProxy_SecureSourceManagerInstance) validatePutTimeoutsParameters(value *SecureSourceManagerInstanceTimeouts) error {
+	return nil
+}
+
+func validateSecureSourceManagerInstance_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

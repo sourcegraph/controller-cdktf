@@ -4,6 +4,10 @@ package dataoktauser
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataOktaUserSearchList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataOktaUserSearchList) validateGetParameters(index *float64) error {
 	return nil
 }

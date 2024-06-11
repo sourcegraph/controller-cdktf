@@ -32,9 +32,9 @@ type GoogleSecretManagerSecretVersionConfig struct {
 	// Setting 'ABANDON' allows the resource
 	// to be abandoned rather than deleted. Setting 'DISABLE' allows the resource to be
 	// disabled rather than deleted. Default is 'DELETE'. Possible values are:
-	// DELETE
-	// DISABLE
-	// ABANDON
+	//   * DELETE
+	//   * DISABLE
+	//   * ABANDON
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_secret_manager_secret_version#deletion_policy GoogleSecretManagerSecretVersion#deletion_policy}
 	DeletionPolicy *string `field:"optional" json:"deletionPolicy" yaml:"deletionPolicy"`

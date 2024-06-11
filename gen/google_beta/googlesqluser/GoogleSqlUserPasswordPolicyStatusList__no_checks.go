@@ -4,6 +4,10 @@ package googlesqluser
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleSqlUserPasswordPolicyStatusList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSqlUserPasswordPolicyStatusList) validateGetParameters(index *float64) error {
 	return nil
 }

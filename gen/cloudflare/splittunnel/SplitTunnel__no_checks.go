@@ -4,6 +4,10 @@ package splittunnel
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SplitTunnel) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SplitTunnel) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (s *jsiiProxy_SplitTunnel) validateGetStringMapAttributeParameters(terrafor
 	return nil
 }
 
+func (s *jsiiProxy_SplitTunnel) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SplitTunnel) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SplitTunnel) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SplitTunnel) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SplitTunnel) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (s *jsiiProxy_SplitTunnel) validateOverrideLogicalIdParameters(newLogicalId
 }
 
 func (s *jsiiProxy_SplitTunnel) validatePutTunnelsParameters(value interface{}) error {
+	return nil
+}
+
+func validateSplitTunnel_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

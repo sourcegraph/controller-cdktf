@@ -4,6 +4,10 @@ package googlefolderiampolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleFolderIamPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFolderIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (g *jsiiProxy_GoogleFolderIamPolicy) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (g *jsiiProxy_GoogleFolderIamPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFolderIamPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (g *jsiiProxy_GoogleFolderIamPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleFolderIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleFolderIamPolicy) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFolderIamPolicy) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateGoogleFolderIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

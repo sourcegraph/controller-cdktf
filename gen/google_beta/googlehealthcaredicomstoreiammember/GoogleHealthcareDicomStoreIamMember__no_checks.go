@@ -4,6 +4,10 @@ package googlehealthcaredicomstoreiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleHealthcareDicomStoreIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleHealthcareDicomStoreIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleHealthcareDicomStoreIamMember) validateGetStringMapAttr
 	return nil
 }
 
+func (g *jsiiProxy_GoogleHealthcareDicomStoreIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleHealthcareDicomStoreIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleHealthcareDicomStoreIamMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleHealthcareDicomStoreIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleHealthcareDicomStoreIamMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleHealthcareDicomStoreIamMember) validateOverrideLogicalI
 }
 
 func (g *jsiiProxy_GoogleHealthcareDicomStoreIamMember) validatePutConditionParameters(value *GoogleHealthcareDicomStoreIamMemberCondition) error {
+	return nil
+}
+
+func validateGoogleHealthcareDicomStoreIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

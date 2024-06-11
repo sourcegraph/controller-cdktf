@@ -4,6 +4,10 @@ package googleosconfigguestpolicies
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleOsConfigGuestPoliciesPackageRepositoriesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleOsConfigGuestPoliciesPackageRepositoriesList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -4,6 +4,10 @@ package googlefirebaseappcheckplayintegrityconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleFirebaseAppCheckPlayIntegrityConfig) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFirebaseAppCheckPlayIntegrityConfig) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleFirebaseAppCheckPlayIntegrityConfig) validateGetStringM
 	return nil
 }
 
+func (g *jsiiProxy_GoogleFirebaseAppCheckPlayIntegrityConfig) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFirebaseAppCheckPlayIntegrityConfig) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleFirebaseAppCheckPlayIntegrityConfig) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleFirebaseAppCheckPlayIntegrityConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleFirebaseAppCheckPlayIntegrityConfig) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleFirebaseAppCheckPlayIntegrityConfig) validateOverrideLo
 }
 
 func (g *jsiiProxy_GoogleFirebaseAppCheckPlayIntegrityConfig) validatePutTimeoutsParameters(value *GoogleFirebaseAppCheckPlayIntegrityConfigTimeouts) error {
+	return nil
+}
+
+func validateGoogleFirebaseAppCheckPlayIntegrityConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package endpointsserviceconsumersiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EndpointsServiceConsumersIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EndpointsServiceConsumersIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (e *jsiiProxy_EndpointsServiceConsumersIamMember) validateGetStringMapAttri
 	return nil
 }
 
+func (e *jsiiProxy_EndpointsServiceConsumersIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EndpointsServiceConsumersIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EndpointsServiceConsumersIamMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EndpointsServiceConsumersIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EndpointsServiceConsumersIamMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (e *jsiiProxy_EndpointsServiceConsumersIamMember) validateOverrideLogicalId
 }
 
 func (e *jsiiProxy_EndpointsServiceConsumersIamMember) validatePutConditionParameters(value *EndpointsServiceConsumersIamMemberCondition) error {
+	return nil
+}
+
+func validateEndpointsServiceConsumersIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

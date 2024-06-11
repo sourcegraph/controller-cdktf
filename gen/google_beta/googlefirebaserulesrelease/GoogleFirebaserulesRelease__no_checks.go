@@ -4,6 +4,10 @@ package googlefirebaserulesrelease
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleFirebaserulesRelease) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFirebaserulesRelease) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleFirebaserulesRelease) validateGetStringMapAttributePara
 	return nil
 }
 
+func (g *jsiiProxy_GoogleFirebaserulesRelease) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFirebaserulesRelease) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleFirebaserulesRelease) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleFirebaserulesRelease) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleFirebaserulesRelease) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleFirebaserulesRelease) validateOverrideLogicalIdParamete
 }
 
 func (g *jsiiProxy_GoogleFirebaserulesRelease) validatePutTimeoutsParameters(value *GoogleFirebaserulesReleaseTimeouts) error {
+	return nil
+}
+
+func validateGoogleFirebaserulesRelease_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

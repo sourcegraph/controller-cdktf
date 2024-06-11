@@ -4,6 +4,10 @@ package cloudwatchmetricstream
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CloudwatchMetricStream) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudwatchMetricStream) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_CloudwatchMetricStream) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (c *jsiiProxy_CloudwatchMetricStream) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudwatchMetricStream) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudwatchMetricStream) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudwatchMetricStream) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudwatchMetricStream) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -65,6 +85,10 @@ func (c *jsiiProxy_CloudwatchMetricStream) validatePutStatisticsConfigurationPar
 }
 
 func (c *jsiiProxy_CloudwatchMetricStream) validatePutTimeoutsParameters(value *CloudwatchMetricStreamTimeouts) error {
+	return nil
+}
+
+func validateCloudwatchMetricStream_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

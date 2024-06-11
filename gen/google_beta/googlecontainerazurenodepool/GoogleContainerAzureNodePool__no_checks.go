@@ -4,6 +4,10 @@ package googlecontainerazurenodepool
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleContainerAzureNodePool) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerAzureNodePool) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleContainerAzureNodePool) validateGetStringMapAttributePa
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerAzureNodePool) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerAzureNodePool) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleContainerAzureNodePool) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleContainerAzureNodePool) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleContainerAzureNodePool) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -69,6 +89,10 @@ func (g *jsiiProxy_GoogleContainerAzureNodePool) validatePutMaxPodsConstraintPar
 }
 
 func (g *jsiiProxy_GoogleContainerAzureNodePool) validatePutTimeoutsParameters(value *GoogleContainerAzureNodePoolTimeouts) error {
+	return nil
+}
+
+func validateGoogleContainerAzureNodePool_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

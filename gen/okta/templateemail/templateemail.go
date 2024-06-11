@@ -69,6 +69,9 @@ type TemplateEmail interface {
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -90,7 +93,22 @@ type TemplateEmail interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -101,6 +119,9 @@ type TemplateEmail interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -486,6 +507,25 @@ func (j *jsiiProxy_TemplateEmail)SetType(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a TemplateEmail resource upon running "cdktf plan <stack-name>".
+func TemplateEmail_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateTemplateEmail_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-okta.templateEmail.TemplateEmail",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -568,6 +608,17 @@ func TemplateEmail_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (t *jsiiProxy_TemplateEmail) AddMoveTarget(moveTarget *string) {
+	if err := t.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (t *jsiiProxy_TemplateEmail) AddOverride(path *string, value interface{}) {
@@ -725,6 +776,30 @@ func (t *jsiiProxy_TemplateEmail) GetStringMapAttribute(terraformAttribute *stri
 	return returns
 }
 
+func (t *jsiiProxy_TemplateEmail) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		t,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (t *jsiiProxy_TemplateEmail) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := t.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (t *jsiiProxy_TemplateEmail) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := t.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -739,6 +814,39 @@ func (t *jsiiProxy_TemplateEmail) InterpolationForAttribute(terraformAttribute *
 	)
 
 	return returns
+}
+
+func (t *jsiiProxy_TemplateEmail) MoveFromId(id *string) {
+	if err := t.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
+func (t *jsiiProxy_TemplateEmail) MoveTo(moveTarget *string, index interface{}) {
+	if err := t.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
+}
+
+func (t *jsiiProxy_TemplateEmail) MoveToId(id *string) {
+	if err := t.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"moveToId",
+		[]interface{}{id},
+	)
 }
 
 func (t *jsiiProxy_TemplateEmail) OverrideLogicalId(newLogicalId *string) {
@@ -793,6 +901,32 @@ func (t *jsiiProxy_TemplateEmail) SynthesizeAttributes() *map[string]interface{}
 	_jsii_.Invoke(
 		t,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (t *jsiiProxy_TemplateEmail) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		t,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (t *jsiiProxy_TemplateEmail) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		t,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

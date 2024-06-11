@@ -4,6 +4,10 @@ package datatlscertificate
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataTlsCertificateCertificatesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataTlsCertificateCertificatesList) validateGetParameters(index *float64) error {
 	return nil
 }

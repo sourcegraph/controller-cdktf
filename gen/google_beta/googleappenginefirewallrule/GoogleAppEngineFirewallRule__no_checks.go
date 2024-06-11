@@ -4,6 +4,10 @@ package googleappenginefirewallrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleAppEngineFirewallRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleAppEngineFirewallRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleAppEngineFirewallRule) validateGetStringMapAttributePar
 	return nil
 }
 
+func (g *jsiiProxy_GoogleAppEngineFirewallRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleAppEngineFirewallRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleAppEngineFirewallRule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleAppEngineFirewallRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleAppEngineFirewallRule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleAppEngineFirewallRule) validateOverrideLogicalIdParamet
 }
 
 func (g *jsiiProxy_GoogleAppEngineFirewallRule) validatePutTimeoutsParameters(value *GoogleAppEngineFirewallRuleTimeouts) error {
+	return nil
+}
+
+func validateGoogleAppEngineFirewallRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

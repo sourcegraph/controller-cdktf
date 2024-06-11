@@ -80,6 +80,9 @@ type VpcIpamScope interface {
 	TerraformResourceType() *string
 	Timeouts() VpcIpamScopeTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -101,7 +104,22 @@ type VpcIpamScope interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -115,6 +133,9 @@ type VpcIpamScope interface {
 	ResetTagsAll()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -612,6 +633,25 @@ func (j *jsiiProxy_VpcIpamScope)SetTagsAll(val *map[string]*string) {
 	)
 }
 
+// Generates CDKTF code for importing a VpcIpamScope resource upon running "cdktf plan <stack-name>".
+func VpcIpamScope_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateVpcIpamScope_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.vpcIpamScope.VpcIpamScope",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -694,6 +734,17 @@ func VpcIpamScope_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (v *jsiiProxy_VpcIpamScope) AddMoveTarget(moveTarget *string) {
+	if err := v.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (v *jsiiProxy_VpcIpamScope) AddOverride(path *string, value interface{}) {
@@ -851,6 +902,30 @@ func (v *jsiiProxy_VpcIpamScope) GetStringMapAttribute(terraformAttribute *strin
 	return returns
 }
 
+func (v *jsiiProxy_VpcIpamScope) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		v,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (v *jsiiProxy_VpcIpamScope) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := v.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (v *jsiiProxy_VpcIpamScope) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := v.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -865,6 +940,39 @@ func (v *jsiiProxy_VpcIpamScope) InterpolationForAttribute(terraformAttribute *s
 	)
 
 	return returns
+}
+
+func (v *jsiiProxy_VpcIpamScope) MoveFromId(id *string) {
+	if err := v.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
+func (v *jsiiProxy_VpcIpamScope) MoveTo(moveTarget *string, index interface{}) {
+	if err := v.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
+}
+
+func (v *jsiiProxy_VpcIpamScope) MoveToId(id *string) {
+	if err := v.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"moveToId",
+		[]interface{}{id},
+	)
 }
 
 func (v *jsiiProxy_VpcIpamScope) OverrideLogicalId(newLogicalId *string) {
@@ -943,6 +1051,32 @@ func (v *jsiiProxy_VpcIpamScope) SynthesizeAttributes() *map[string]interface{} 
 	_jsii_.Invoke(
 		v,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (v *jsiiProxy_VpcIpamScope) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		v,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (v *jsiiProxy_VpcIpamScope) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		v,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

@@ -4,6 +4,10 @@ package googlesecretmanagersecretiambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleSecretManagerSecretIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSecretManagerSecretIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleSecretManagerSecretIamBinding) validateGetStringMapAttr
 	return nil
 }
 
+func (g *jsiiProxy_GoogleSecretManagerSecretIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSecretManagerSecretIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleSecretManagerSecretIamBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleSecretManagerSecretIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleSecretManagerSecretIamBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleSecretManagerSecretIamBinding) validateOverrideLogicalI
 }
 
 func (g *jsiiProxy_GoogleSecretManagerSecretIamBinding) validatePutConditionParameters(value *GoogleSecretManagerSecretIamBindingCondition) error {
+	return nil
+}
+
+func validateGoogleSecretManagerSecretIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

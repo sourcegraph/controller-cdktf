@@ -4,6 +4,10 @@ package firebaseappcheckappattestconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (f *jsiiProxy_FirebaseAppCheckAppAttestConfig) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FirebaseAppCheckAppAttestConfig) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (f *jsiiProxy_FirebaseAppCheckAppAttestConfig) validateGetStringMapAttribut
 	return nil
 }
 
+func (f *jsiiProxy_FirebaseAppCheckAppAttestConfig) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FirebaseAppCheckAppAttestConfig) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (f *jsiiProxy_FirebaseAppCheckAppAttestConfig) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (f *jsiiProxy_FirebaseAppCheckAppAttestConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (f *jsiiProxy_FirebaseAppCheckAppAttestConfig) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (f *jsiiProxy_FirebaseAppCheckAppAttestConfig) validateOverrideLogicalIdPar
 }
 
 func (f *jsiiProxy_FirebaseAppCheckAppAttestConfig) validatePutTimeoutsParameters(value *FirebaseAppCheckAppAttestConfigTimeouts) error {
+	return nil
+}
+
+func validateFirebaseAppCheckAppAttestConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

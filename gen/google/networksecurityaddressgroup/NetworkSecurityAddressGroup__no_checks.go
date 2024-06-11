@@ -4,6 +4,10 @@ package networksecurityaddressgroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetworkSecurityAddressGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkSecurityAddressGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (n *jsiiProxy_NetworkSecurityAddressGroup) validateGetStringMapAttributePar
 	return nil
 }
 
+func (n *jsiiProxy_NetworkSecurityAddressGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkSecurityAddressGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkSecurityAddressGroup) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkSecurityAddressGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkSecurityAddressGroup) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (n *jsiiProxy_NetworkSecurityAddressGroup) validateOverrideLogicalIdParamet
 }
 
 func (n *jsiiProxy_NetworkSecurityAddressGroup) validatePutTimeoutsParameters(value *NetworkSecurityAddressGroupTimeouts) error {
+	return nil
+}
+
+func validateNetworkSecurityAddressGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

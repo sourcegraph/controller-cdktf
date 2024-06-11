@@ -10,9 +10,13 @@ type KmsEkmConnectionServiceResolvers struct {
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/kms_ekm_connection#server_certificates KmsEkmConnection#server_certificates}
 	ServerCertificates interface{} `field:"required" json:"serverCertificates" yaml:"serverCertificates"`
-	// Required. The resource name of the Service Directory service pointing to an EKM replica, in the format projects/*\/locations/*\/namespaces/*\/services/*.
+	// Required.
+	//
+	// The resource name of the Service Directory service pointing to an EKM replica, in the format projects/* /locations/* /namespaces/* /services/*
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/kms_ekm_connection#service_directory_service KmsEkmConnection#service_directory_service}
+	//
+	// Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 	ServiceDirectoryService *string `field:"required" json:"serviceDirectoryService" yaml:"serviceDirectoryService"`
 	// Optional.
 	//

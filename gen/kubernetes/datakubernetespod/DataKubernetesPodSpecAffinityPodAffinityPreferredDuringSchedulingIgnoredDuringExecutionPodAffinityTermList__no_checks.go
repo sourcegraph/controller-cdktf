@@ -4,6 +4,10 @@ package datakubernetespod
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataKubernetesPodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataKubernetesPodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermList) validateGetParameters(index *float64) error {
 	return nil
 }

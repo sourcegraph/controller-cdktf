@@ -4,6 +4,10 @@ package googleidentityplatformtenantdefaultsupportedidpconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleIdentityPlatformTenantDefaultSupportedIdpConfig) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIdentityPlatformTenantDefaultSupportedIdpConfig) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleIdentityPlatformTenantDefaultSupportedIdpConfig) valida
 	return nil
 }
 
+func (g *jsiiProxy_GoogleIdentityPlatformTenantDefaultSupportedIdpConfig) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIdentityPlatformTenantDefaultSupportedIdpConfig) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIdentityPlatformTenantDefaultSupportedIdpConfig) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIdentityPlatformTenantDefaultSupportedIdpConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIdentityPlatformTenantDefaultSupportedIdpConfig) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleIdentityPlatformTenantDefaultSupportedIdpConfig) valida
 }
 
 func (g *jsiiProxy_GoogleIdentityPlatformTenantDefaultSupportedIdpConfig) validatePutTimeoutsParameters(value *GoogleIdentityPlatformTenantDefaultSupportedIdpConfigTimeouts) error {
+	return nil
+}
+
+func validateGoogleIdentityPlatformTenantDefaultSupportedIdpConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

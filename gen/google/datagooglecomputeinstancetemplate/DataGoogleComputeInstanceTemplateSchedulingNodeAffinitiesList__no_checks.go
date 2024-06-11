@@ -4,6 +4,10 @@ package datagooglecomputeinstancetemplate
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataGoogleComputeInstanceTemplateSchedulingNodeAffinitiesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataGoogleComputeInstanceTemplateSchedulingNodeAffinitiesList) validateGetParameters(index *float64) error {
 	return nil
 }

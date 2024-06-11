@@ -4,6 +4,10 @@ package googlenetworkconnectivityinternalrange
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) validateGetStringMapA
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) validateOverrideLogic
 }
 
 func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) validatePutTimeoutsParameters(value *GoogleNetworkConnectivityInternalRangeTimeouts) error {
+	return nil
+}
+
+func validateGoogleNetworkConnectivityInternalRange_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

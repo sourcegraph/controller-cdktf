@@ -4,6 +4,10 @@ package dataprocmetastorefederation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataprocMetastoreFederation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataprocMetastoreFederation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (d *jsiiProxy_DataprocMetastoreFederation) validateGetStringMapAttributePar
 	return nil
 }
 
+func (d *jsiiProxy_DataprocMetastoreFederation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataprocMetastoreFederation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataprocMetastoreFederation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataprocMetastoreFederation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataprocMetastoreFederation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (d *jsiiProxy_DataprocMetastoreFederation) validatePutBackendMetastoresPara
 }
 
 func (d *jsiiProxy_DataprocMetastoreFederation) validatePutTimeoutsParameters(value *DataprocMetastoreFederationTimeouts) error {
+	return nil
+}
+
+func validateDataprocMetastoreFederation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

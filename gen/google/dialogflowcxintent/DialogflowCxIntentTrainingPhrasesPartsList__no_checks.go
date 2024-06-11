@@ -4,6 +4,10 @@ package dialogflowcxintent
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DialogflowCxIntentTrainingPhrasesPartsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DialogflowCxIntentTrainingPhrasesPartsList) validateGetParameters(index *float64) error {
 	return nil
 }

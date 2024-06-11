@@ -4,6 +4,10 @@ package dataprocmetastorefederationiambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataprocMetastoreFederationIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataprocMetastoreFederationIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (d *jsiiProxy_DataprocMetastoreFederationIamBinding) validateGetStringMapAt
 	return nil
 }
 
+func (d *jsiiProxy_DataprocMetastoreFederationIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataprocMetastoreFederationIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataprocMetastoreFederationIamBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataprocMetastoreFederationIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataprocMetastoreFederationIamBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (d *jsiiProxy_DataprocMetastoreFederationIamBinding) validateOverrideLogica
 }
 
 func (d *jsiiProxy_DataprocMetastoreFederationIamBinding) validatePutConditionParameters(value *DataprocMetastoreFederationIamBindingCondition) error {
+	return nil
+}
+
+func validateDataprocMetastoreFederationIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package datagooglebigquerydataset
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataGoogleBigqueryDatasetAccessRoutineList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataGoogleBigqueryDatasetAccessRoutineList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -4,6 +4,10 @@ package albtargetgroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AlbTargetGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AlbTargetGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (a *jsiiProxy_AlbTargetGroup) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (a *jsiiProxy_AlbTargetGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AlbTargetGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AlbTargetGroup) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AlbTargetGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AlbTargetGroup) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (a *jsiiProxy_AlbTargetGroup) validatePutStickinessParameters(value *AlbTar
 }
 
 func (a *jsiiProxy_AlbTargetGroup) validatePutTargetFailoverParameters(value interface{}) error {
+	return nil
+}
+
+func validateAlbTargetGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

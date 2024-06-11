@@ -4,6 +4,10 @@ package vertexaifeaturestoreentitytypefeature
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) validateGetStringMapAt
 	return nil
 }
 
+func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) validateOverrideLogica
 }
 
 func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) validatePutTimeoutsParameters(value *VertexAiFeaturestoreEntitytypeFeatureTimeouts) error {
+	return nil
+}
+
+func validateVertexAiFeaturestoreEntitytypeFeature_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

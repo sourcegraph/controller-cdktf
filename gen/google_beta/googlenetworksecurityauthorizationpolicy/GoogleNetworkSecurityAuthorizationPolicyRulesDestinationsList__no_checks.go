@@ -4,6 +4,10 @@ package googlenetworksecurityauthorizationpolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleNetworkSecurityAuthorizationPolicyRulesDestinationsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkSecurityAuthorizationPolicyRulesDestinationsList) validateGetParameters(index *float64) error {
 	return nil
 }

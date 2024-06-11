@@ -4,6 +4,10 @@ package sesv2dedicatedipassignment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_Sesv2DedicatedIpAssignment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_Sesv2DedicatedIpAssignment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (s *jsiiProxy_Sesv2DedicatedIpAssignment) validateGetStringMapAttributePara
 	return nil
 }
 
+func (s *jsiiProxy_Sesv2DedicatedIpAssignment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_Sesv2DedicatedIpAssignment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_Sesv2DedicatedIpAssignment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_Sesv2DedicatedIpAssignment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_Sesv2DedicatedIpAssignment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (s *jsiiProxy_Sesv2DedicatedIpAssignment) validateOverrideLogicalIdParamete
 }
 
 func (s *jsiiProxy_Sesv2DedicatedIpAssignment) validatePutTimeoutsParameters(value *Sesv2DedicatedIpAssignmentTimeouts) error {
+	return nil
+}
+
+func validateSesv2DedicatedIpAssignment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

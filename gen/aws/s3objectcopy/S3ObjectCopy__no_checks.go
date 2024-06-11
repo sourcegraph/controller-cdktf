@@ -4,6 +4,10 @@ package s3objectcopy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_S3ObjectCopy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3ObjectCopy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (s *jsiiProxy_S3ObjectCopy) validateGetStringMapAttributeParameters(terrafo
 	return nil
 }
 
+func (s *jsiiProxy_S3ObjectCopy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3ObjectCopy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_S3ObjectCopy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_S3ObjectCopy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_S3ObjectCopy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (s *jsiiProxy_S3ObjectCopy) validateOverrideLogicalIdParameters(newLogicalI
 }
 
 func (s *jsiiProxy_S3ObjectCopy) validatePutGrantParameters(value interface{}) error {
+	return nil
+}
+
+func validateS3ObjectCopy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

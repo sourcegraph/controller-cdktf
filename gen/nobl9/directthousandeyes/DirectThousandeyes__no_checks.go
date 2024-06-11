@@ -4,6 +4,10 @@ package directthousandeyes
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DirectThousandeyes) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DirectThousandeyes) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (d *jsiiProxy_DirectThousandeyes) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (d *jsiiProxy_DirectThousandeyes) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DirectThousandeyes) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DirectThousandeyes) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DirectThousandeyes) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DirectThousandeyes) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (d *jsiiProxy_DirectThousandeyes) validateOverrideLogicalIdParameters(newLo
 }
 
 func (d *jsiiProxy_DirectThousandeyes) validatePutQueryDelayParameters(value *DirectThousandeyesQueryDelay) error {
+	return nil
+}
+
+func validateDirectThousandeyes_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

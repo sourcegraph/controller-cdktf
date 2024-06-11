@@ -19,9 +19,14 @@ type CertificateManagerCertificateMapConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// A user-defined name of the Certificate Map. Certificate Map names must be unique globally and match the pattern 'projects/*\/locations/*\/certificateMaps/*'.
+	// A user-defined name of the Certificate Map.
+	//
+	// Certificate Map names must be unique
+	// globally and match the pattern 'projects/* /locations/* /certificateMaps/*'.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/certificate_manager_certificate_map#name CertificateManagerCertificateMap#name}
+	//
+	// Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// A human-readable description of the resource.
 	//
@@ -34,7 +39,7 @@ type CertificateManagerCertificateMapConfig struct {
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Set of labels associated with a Certificate Map resource.
 	//
-	// *Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+	// **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 	// Please refer to the field 'effective_labels' for all of the labels present on the resource.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/certificate_manager_certificate_map#labels CertificateManagerCertificateMap#labels}

@@ -4,6 +4,10 @@ package googleappengineservicesplittraffic
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleAppEngineServiceSplitTraffic) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleAppEngineServiceSplitTraffic) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleAppEngineServiceSplitTraffic) validateGetStringMapAttri
 	return nil
 }
 
+func (g *jsiiProxy_GoogleAppEngineServiceSplitTraffic) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleAppEngineServiceSplitTraffic) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleAppEngineServiceSplitTraffic) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleAppEngineServiceSplitTraffic) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleAppEngineServiceSplitTraffic) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (g *jsiiProxy_GoogleAppEngineServiceSplitTraffic) validatePutSplitParameter
 }
 
 func (g *jsiiProxy_GoogleAppEngineServiceSplitTraffic) validatePutTimeoutsParameters(value *GoogleAppEngineServiceSplitTrafficTimeouts) error {
+	return nil
+}
+
+func validateGoogleAppEngineServiceSplitTraffic_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

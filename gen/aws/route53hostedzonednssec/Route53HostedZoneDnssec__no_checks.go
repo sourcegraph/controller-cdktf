@@ -4,6 +4,10 @@ package route53hostedzonednssec
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_Route53HostedZoneDnssec) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_Route53HostedZoneDnssec) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (r *jsiiProxy_Route53HostedZoneDnssec) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (r *jsiiProxy_Route53HostedZoneDnssec) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_Route53HostedZoneDnssec) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (r *jsiiProxy_Route53HostedZoneDnssec) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_Route53HostedZoneDnssec) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_Route53HostedZoneDnssec) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_Route53HostedZoneDnssec) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateRoute53HostedZoneDnssec_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

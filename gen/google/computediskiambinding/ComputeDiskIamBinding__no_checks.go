@@ -4,6 +4,10 @@ package computediskiambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeDiskIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeDiskIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_ComputeDiskIamBinding) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (c *jsiiProxy_ComputeDiskIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeDiskIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeDiskIamBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeDiskIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeDiskIamBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (c *jsiiProxy_ComputeDiskIamBinding) validateOverrideLogicalIdParameters(ne
 }
 
 func (c *jsiiProxy_ComputeDiskIamBinding) validatePutConditionParameters(value *ComputeDiskIamBindingCondition) error {
+	return nil
+}
+
+func validateComputeDiskIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

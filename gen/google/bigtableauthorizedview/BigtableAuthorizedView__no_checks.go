@@ -4,6 +4,10 @@ package bigtableauthorizedview
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BigtableAuthorizedView) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigtableAuthorizedView) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (b *jsiiProxy_BigtableAuthorizedView) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (b *jsiiProxy_BigtableAuthorizedView) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigtableAuthorizedView) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigtableAuthorizedView) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigtableAuthorizedView) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigtableAuthorizedView) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (b *jsiiProxy_BigtableAuthorizedView) validatePutSubsetViewParameters(value
 }
 
 func (b *jsiiProxy_BigtableAuthorizedView) validatePutTimeoutsParameters(value *BigtableAuthorizedViewTimeouts) error {
+	return nil
+}
+
+func validateBigtableAuthorizedView_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

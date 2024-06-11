@@ -4,6 +4,10 @@ package lightsaildisk
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LightsailDisk) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LightsailDisk) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (l *jsiiProxy_LightsailDisk) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (l *jsiiProxy_LightsailDisk) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LightsailDisk) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (l *jsiiProxy_LightsailDisk) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LightsailDisk) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LightsailDisk) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LightsailDisk) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateLightsailDisk_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

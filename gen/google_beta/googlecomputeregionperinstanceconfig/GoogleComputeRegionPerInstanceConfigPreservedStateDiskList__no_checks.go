@@ -4,6 +4,10 @@ package googlecomputeregionperinstanceconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComputeRegionPerInstanceConfigPreservedStateDiskList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRegionPerInstanceConfigPreservedStateDiskList) validateGetParameters(index *float64) error {
 	return nil
 }

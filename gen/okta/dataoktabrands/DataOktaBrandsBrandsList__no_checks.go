@@ -4,6 +4,10 @@ package dataoktabrands
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataOktaBrandsBrandsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataOktaBrandsBrandsList) validateGetParameters(index *float64) error {
 	return nil
 }

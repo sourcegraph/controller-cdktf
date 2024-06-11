@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleVertexAiFeaturestoreEntitytypeIamPolicy) validateOv
 	return nil
 }
 
+func validateDataGoogleVertexAiFeaturestoreEntitytypeIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleVertexAiFeaturestoreEntitytypeIamPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -4,6 +4,10 @@ package directazuremonitor
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DirectAzureMonitor) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DirectAzureMonitor) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (d *jsiiProxy_DirectAzureMonitor) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (d *jsiiProxy_DirectAzureMonitor) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DirectAzureMonitor) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DirectAzureMonitor) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DirectAzureMonitor) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DirectAzureMonitor) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (d *jsiiProxy_DirectAzureMonitor) validatePutHistoricalDataRetrievalParamet
 }
 
 func (d *jsiiProxy_DirectAzureMonitor) validatePutQueryDelayParameters(value *DirectAzureMonitorQueryDelay) error {
+	return nil
+}
+
+func validateDirectAzureMonitor_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

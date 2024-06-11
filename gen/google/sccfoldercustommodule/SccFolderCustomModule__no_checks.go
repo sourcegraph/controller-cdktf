@@ -4,6 +4,10 @@ package sccfoldercustommodule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SccFolderCustomModule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SccFolderCustomModule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (s *jsiiProxy_SccFolderCustomModule) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (s *jsiiProxy_SccFolderCustomModule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SccFolderCustomModule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SccFolderCustomModule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SccFolderCustomModule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SccFolderCustomModule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (s *jsiiProxy_SccFolderCustomModule) validatePutCustomConfigParameters(valu
 }
 
 func (s *jsiiProxy_SccFolderCustomModule) validatePutTimeoutsParameters(value *SccFolderCustomModuleTimeouts) error {
+	return nil
+}
+
+func validateSccFolderCustomModule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package googledataprocjobiambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleDataprocJobIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataprocJobIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleDataprocJobIamBinding) validateGetStringMapAttributePar
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataprocJobIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataprocJobIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataprocJobIamBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataprocJobIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataprocJobIamBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleDataprocJobIamBinding) validateOverrideLogicalIdParamet
 }
 
 func (g *jsiiProxy_GoogleDataprocJobIamBinding) validatePutConditionParameters(value *GoogleDataprocJobIamBindingCondition) error {
+	return nil
+}
+
+func validateGoogleDataprocJobIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

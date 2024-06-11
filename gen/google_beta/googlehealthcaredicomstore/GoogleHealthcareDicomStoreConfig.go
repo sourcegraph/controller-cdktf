@@ -25,7 +25,7 @@ type GoogleHealthcareDicomStoreConfig struct {
 	Dataset *string `field:"required" json:"dataset" yaml:"dataset"`
 	// The resource name for the DicomStore.
 	//
-	// * Changing this property may recreate the Dicom store (removing all data) **
+	// ** Changing this property may recreate the Dicom store (removing all data) **
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_healthcare_dicom_store#name GoogleHealthcareDicomStore#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
@@ -48,7 +48,7 @@ type GoogleHealthcareDicomStoreConfig struct {
 	// Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
 	//
 	//
-	// *Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+	// **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 	// Please refer to the field 'effective_labels' for all of the labels present on the resource.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_healthcare_dicom_store#labels GoogleHealthcareDicomStore#labels}

@@ -4,6 +4,10 @@ package googlecontaineranalysisoccurrence
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleContainerAnalysisOccurrence) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerAnalysisOccurrence) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleContainerAnalysisOccurrence) validateGetStringMapAttrib
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerAnalysisOccurrence) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerAnalysisOccurrence) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleContainerAnalysisOccurrence) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleContainerAnalysisOccurrence) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleContainerAnalysisOccurrence) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (g *jsiiProxy_GoogleContainerAnalysisOccurrence) validatePutAttestationPara
 }
 
 func (g *jsiiProxy_GoogleContainerAnalysisOccurrence) validatePutTimeoutsParameters(value *GoogleContainerAnalysisOccurrenceTimeouts) error {
+	return nil
+}
+
+func validateGoogleContainerAnalysisOccurrence_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

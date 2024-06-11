@@ -4,6 +4,10 @@ package computeregionbackendservice
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeRegionBackendService) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionBackendService) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_ComputeRegionBackendService) validateGetStringMapAttributePar
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRegionBackendService) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionBackendService) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRegionBackendService) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRegionBackendService) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRegionBackendService) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -85,6 +105,10 @@ func (c *jsiiProxy_ComputeRegionBackendService) validatePutOutlierDetectionParam
 }
 
 func (c *jsiiProxy_ComputeRegionBackendService) validatePutTimeoutsParameters(value *ComputeRegionBackendServiceTimeouts) error {
+	return nil
+}
+
+func validateComputeRegionBackendService_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

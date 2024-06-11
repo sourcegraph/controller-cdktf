@@ -4,6 +4,10 @@ package cloudwatchlogresourcepolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CloudwatchLogResourcePolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudwatchLogResourcePolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (c *jsiiProxy_CloudwatchLogResourcePolicy) validateGetStringMapAttributePar
 	return nil
 }
 
+func (c *jsiiProxy_CloudwatchLogResourcePolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudwatchLogResourcePolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (c *jsiiProxy_CloudwatchLogResourcePolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudwatchLogResourcePolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudwatchLogResourcePolicy) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudwatchLogResourcePolicy) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateCloudwatchLogResourcePolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

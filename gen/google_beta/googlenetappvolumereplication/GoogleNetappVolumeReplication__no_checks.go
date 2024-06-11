@@ -4,6 +4,10 @@ package googlenetappvolumereplication
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleNetappVolumeReplication) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetappVolumeReplication) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleNetappVolumeReplication) validateGetStringMapAttributeP
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetappVolumeReplication) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetappVolumeReplication) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetappVolumeReplication) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetappVolumeReplication) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetappVolumeReplication) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (g *jsiiProxy_GoogleNetappVolumeReplication) validatePutDestinationVolumePa
 }
 
 func (g *jsiiProxy_GoogleNetappVolumeReplication) validatePutTimeoutsParameters(value *GoogleNetappVolumeReplicationTimeouts) error {
+	return nil
+}
+
+func validateGoogleNetappVolumeReplication_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

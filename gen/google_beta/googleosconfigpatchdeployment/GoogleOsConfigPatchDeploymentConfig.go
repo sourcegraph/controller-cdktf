@@ -26,11 +26,11 @@ type GoogleOsConfigPatchDeploymentConfig struct {
 	// A name for the patch deployment in the project.
 	//
 	// When creating a name the following rules apply:
-	// Must contain only lowercase letters, numbers, and hyphens.
-	// Must start with a letter.
-	// Must be between 1-63 characters.
-	// Must end with a number or a letter.
-	// Must be unique within the project.
+	// * Must contain only lowercase letters, numbers, and hyphens.
+	// * Must start with a letter.
+	// * Must be between 1-63 characters.
+	// * Must end with a number or a letter.
+	// * Must be unique within the project.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_os_config_patch_deployment#patch_deployment_id GoogleOsConfigPatchDeployment#patch_deployment_id}
 	PatchDeploymentId *string `field:"required" json:"patchDeploymentId" yaml:"patchDeploymentId"`

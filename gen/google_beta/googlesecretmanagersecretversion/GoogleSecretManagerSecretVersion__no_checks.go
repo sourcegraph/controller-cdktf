@@ -4,6 +4,10 @@ package googlesecretmanagersecretversion
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleSecretManagerSecretVersion) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSecretManagerSecretVersion) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleSecretManagerSecretVersion) validateGetStringMapAttribu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleSecretManagerSecretVersion) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSecretManagerSecretVersion) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleSecretManagerSecretVersion) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleSecretManagerSecretVersion) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleSecretManagerSecretVersion) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleSecretManagerSecretVersion) validateOverrideLogicalIdPa
 }
 
 func (g *jsiiProxy_GoogleSecretManagerSecretVersion) validatePutTimeoutsParameters(value *GoogleSecretManagerSecretVersionTimeouts) error {
+	return nil
+}
+
+func validateGoogleSecretManagerSecretVersion_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package organizationsorganization
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OrganizationsOrganizationNonMasterAccountsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OrganizationsOrganizationNonMasterAccountsList) validateGetParameters(index *float64) error {
 	return nil
 }

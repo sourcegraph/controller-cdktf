@@ -4,6 +4,10 @@ package vmwareengineprivatecloud
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VmwareenginePrivateCloud) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VmwareenginePrivateCloud) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (v *jsiiProxy_VmwareenginePrivateCloud) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (v *jsiiProxy_VmwareenginePrivateCloud) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VmwareenginePrivateCloud) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VmwareenginePrivateCloud) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VmwareenginePrivateCloud) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VmwareenginePrivateCloud) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (v *jsiiProxy_VmwareenginePrivateCloud) validatePutNetworkConfigParameters(
 }
 
 func (v *jsiiProxy_VmwareenginePrivateCloud) validatePutTimeoutsParameters(value *VmwareenginePrivateCloudTimeouts) error {
+	return nil
+}
+
+func validateVmwareenginePrivateCloud_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

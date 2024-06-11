@@ -4,6 +4,10 @@ package database
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_Database) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_Database) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (d *jsiiProxy_Database) validateGetStringMapAttributeParameters(terraformAt
 	return nil
 }
 
+func (d *jsiiProxy_Database) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_Database) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (d *jsiiProxy_Database) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_Database) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_Database) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_Database) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateDatabase_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

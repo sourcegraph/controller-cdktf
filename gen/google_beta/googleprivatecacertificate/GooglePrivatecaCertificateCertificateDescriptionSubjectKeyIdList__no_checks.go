@@ -4,6 +4,10 @@ package googleprivatecacertificate
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GooglePrivatecaCertificateCertificateDescriptionSubjectKeyIdList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GooglePrivatecaCertificateCertificateDescriptionSubjectKeyIdList) validateGetParameters(index *float64) error {
 	return nil
 }

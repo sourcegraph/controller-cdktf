@@ -4,6 +4,10 @@ package networksecurityaddressgroupiampolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetworkSecurityAddressGroupIamPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkSecurityAddressGroupIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (n *jsiiProxy_NetworkSecurityAddressGroupIamPolicy) validateGetStringMapAtt
 	return nil
 }
 
+func (n *jsiiProxy_NetworkSecurityAddressGroupIamPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkSecurityAddressGroupIamPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (n *jsiiProxy_NetworkSecurityAddressGroupIamPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkSecurityAddressGroupIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkSecurityAddressGroupIamPolicy) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkSecurityAddressGroupIamPolicy) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateNetworkSecurityAddressGroupIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

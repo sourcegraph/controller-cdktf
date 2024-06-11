@@ -4,6 +4,10 @@ package googlecomputesnapshotiambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComputeSnapshotIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeSnapshotIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleComputeSnapshotIamBinding) validateGetStringMapAttribut
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeSnapshotIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeSnapshotIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeSnapshotIamBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeSnapshotIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeSnapshotIamBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleComputeSnapshotIamBinding) validateOverrideLogicalIdPar
 }
 
 func (g *jsiiProxy_GoogleComputeSnapshotIamBinding) validatePutConditionParameters(value *GoogleComputeSnapshotIamBindingCondition) error {
+	return nil
+}
+
+func validateGoogleComputeSnapshotIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

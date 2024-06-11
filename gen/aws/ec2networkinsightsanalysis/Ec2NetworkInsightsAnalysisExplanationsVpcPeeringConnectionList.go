@@ -26,6 +26,11 @@ type Ec2NetworkInsightsAnalysisExplanationsVpcPeeringConnectionList interface {
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
+	// Creating an iterator for this complex list.
+	//
+	// The list will be converted into a map with the mapKeyAttributeName as the key.
+	// Experimental.
+	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) Ec2NetworkInsightsAnalysisExplanationsVpcPeeringConnectionOutputReference
@@ -153,6 +158,22 @@ func (j *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsVpcPeeringConnectionLis
 		"wrapsSet",
 		val,
 	)
+}
+
+func (e *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsVpcPeeringConnectionList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+	if err := e.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
+		panic(err)
+	}
+	var returns cdktf.DynamicListTerraformIterator
+
+	_jsii_.Invoke(
+		e,
+		"allWithMapKey",
+		[]interface{}{mapKeyAttributeName},
+		&returns,
+	)
+
+	return returns
 }
 
 func (e *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsVpcPeeringConnectionList) ComputeFqn() *string {

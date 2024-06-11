@@ -4,6 +4,10 @@ package googlenetworkserviceshttproute
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleNetworkServicesHttpRoute) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkServicesHttpRoute) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleNetworkServicesHttpRoute) validateGetStringMapAttribute
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetworkServicesHttpRoute) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkServicesHttpRoute) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetworkServicesHttpRoute) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetworkServicesHttpRoute) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetworkServicesHttpRoute) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (g *jsiiProxy_GoogleNetworkServicesHttpRoute) validatePutRulesParameters(va
 }
 
 func (g *jsiiProxy_GoogleNetworkServicesHttpRoute) validatePutTimeoutsParameters(value *GoogleNetworkServicesHttpRouteTimeouts) error {
+	return nil
+}
+
+func validateGoogleNetworkServicesHttpRoute_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

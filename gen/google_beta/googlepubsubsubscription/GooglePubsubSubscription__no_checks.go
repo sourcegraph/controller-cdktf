@@ -4,6 +4,10 @@ package googlepubsubsubscription
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GooglePubsubSubscription) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GooglePubsubSubscription) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GooglePubsubSubscription) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (g *jsiiProxy_GooglePubsubSubscription) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GooglePubsubSubscription) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GooglePubsubSubscription) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GooglePubsubSubscription) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GooglePubsubSubscription) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -77,6 +97,10 @@ func (g *jsiiProxy_GooglePubsubSubscription) validatePutRetryPolicyParameters(va
 }
 
 func (g *jsiiProxy_GooglePubsubSubscription) validatePutTimeoutsParameters(value *GooglePubsubSubscriptionTimeouts) error {
+	return nil
+}
+
+func validateGooglePubsubSubscription_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

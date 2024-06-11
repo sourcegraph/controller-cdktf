@@ -4,6 +4,10 @@ package directpingdom
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DirectPingdom) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DirectPingdom) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (d *jsiiProxy_DirectPingdom) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (d *jsiiProxy_DirectPingdom) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DirectPingdom) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DirectPingdom) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DirectPingdom) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DirectPingdom) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (d *jsiiProxy_DirectPingdom) validateOverrideLogicalIdParameters(newLogical
 }
 
 func (d *jsiiProxy_DirectPingdom) validatePutQueryDelayParameters(value *DirectPingdomQueryDelay) error {
+	return nil
+}
+
+func validateDirectPingdom_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

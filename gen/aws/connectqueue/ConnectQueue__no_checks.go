@@ -4,6 +4,10 @@ package connectqueue
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ConnectQueue) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConnectQueue) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_ConnectQueue) validateGetStringMapAttributeParameters(terrafo
 	return nil
 }
 
+func (c *jsiiProxy_ConnectQueue) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConnectQueue) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ConnectQueue) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ConnectQueue) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ConnectQueue) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (c *jsiiProxy_ConnectQueue) validateOverrideLogicalIdParameters(newLogicalI
 }
 
 func (c *jsiiProxy_ConnectQueue) validatePutOutboundCallerConfigParameters(value *ConnectQueueOutboundCallerConfig) error {
+	return nil
+}
+
+func validateConnectQueue_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

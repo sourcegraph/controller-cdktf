@@ -4,6 +4,10 @@ package computebackendbucket
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeBackendBucket) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeBackendBucket) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_ComputeBackendBucket) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (c *jsiiProxy_ComputeBackendBucket) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeBackendBucket) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeBackendBucket) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeBackendBucket) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeBackendBucket) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (c *jsiiProxy_ComputeBackendBucket) validatePutCdnPolicyParameters(value *C
 }
 
 func (c *jsiiProxy_ComputeBackendBucket) validatePutTimeoutsParameters(value *ComputeBackendBucketTimeouts) error {
+	return nil
+}
+
+func validateComputeBackendBucket_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

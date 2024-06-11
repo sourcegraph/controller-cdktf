@@ -4,6 +4,10 @@ package datastreamstream
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -4,6 +4,10 @@ package bigtableinstanceiambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BigtableInstanceIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigtableInstanceIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (b *jsiiProxy_BigtableInstanceIamBinding) validateGetStringMapAttributePara
 	return nil
 }
 
+func (b *jsiiProxy_BigtableInstanceIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigtableInstanceIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigtableInstanceIamBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigtableInstanceIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigtableInstanceIamBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (b *jsiiProxy_BigtableInstanceIamBinding) validateOverrideLogicalIdParamete
 }
 
 func (b *jsiiProxy_BigtableInstanceIamBinding) validatePutConditionParameters(value *BigtableInstanceIamBindingCondition) error {
+	return nil
+}
+
+func validateBigtableInstanceIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

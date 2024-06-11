@@ -4,6 +4,10 @@ package googlevertexaideploymentresourcepool
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleVertexAiDeploymentResourcePool) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleVertexAiDeploymentResourcePool) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleVertexAiDeploymentResourcePool) validateGetStringMapAtt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleVertexAiDeploymentResourcePool) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleVertexAiDeploymentResourcePool) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleVertexAiDeploymentResourcePool) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleVertexAiDeploymentResourcePool) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleVertexAiDeploymentResourcePool) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (g *jsiiProxy_GoogleVertexAiDeploymentResourcePool) validatePutDedicatedRes
 }
 
 func (g *jsiiProxy_GoogleVertexAiDeploymentResourcePool) validatePutTimeoutsParameters(value *GoogleVertexAiDeploymentResourcePoolTimeouts) error {
+	return nil
+}
+
+func validateGoogleVertexAiDeploymentResourcePool_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -43,8 +43,8 @@ type GoogleComputeRegionSslPolicyConfig struct {
 	//
 	// See the [official documentation](https://cloud.google.com/compute/docs/load-balancing/ssl-policies#profilefeaturesupport)
 	// for which ciphers are available to use. **Note**: this argument
-	// must* be present when using the 'CUSTOM' profile. This argument
-	// must not* be present when using any other profile.
+	// *must* be present when using the 'CUSTOM' profile. This argument
+	// *must not* be present when using any other profile.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_region_ssl_policy#custom_features GoogleComputeRegionSslPolicy#custom_features}
 	CustomFeatures *[]*string `field:"optional" json:"customFeatures" yaml:"customFeatures"`

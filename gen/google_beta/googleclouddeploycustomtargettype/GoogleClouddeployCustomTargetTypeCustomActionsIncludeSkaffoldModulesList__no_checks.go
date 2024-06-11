@@ -4,6 +4,10 @@ package googleclouddeploycustomtargettype
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -4,6 +4,10 @@ package googlecomputeglobaladdress
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComputeGlobalAddress) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeGlobalAddress) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleComputeGlobalAddress) validateGetStringMapAttributePara
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeGlobalAddress) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeGlobalAddress) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeGlobalAddress) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeGlobalAddress) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeGlobalAddress) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleComputeGlobalAddress) validateOverrideLogicalIdParamete
 }
 
 func (g *jsiiProxy_GoogleComputeGlobalAddress) validatePutTimeoutsParameters(value *GoogleComputeGlobalAddressTimeouts) error {
+	return nil
+}
+
+func validateGoogleComputeGlobalAddress_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

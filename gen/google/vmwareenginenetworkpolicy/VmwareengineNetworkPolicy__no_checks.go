@@ -4,6 +4,10 @@ package vmwareenginenetworkpolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VmwareengineNetworkPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VmwareengineNetworkPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (v *jsiiProxy_VmwareengineNetworkPolicy) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (v *jsiiProxy_VmwareengineNetworkPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VmwareengineNetworkPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VmwareengineNetworkPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VmwareengineNetworkPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VmwareengineNetworkPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (v *jsiiProxy_VmwareengineNetworkPolicy) validatePutInternetAccessParameter
 }
 
 func (v *jsiiProxy_VmwareengineNetworkPolicy) validatePutTimeoutsParameters(value *VmwareengineNetworkPolicyTimeouts) error {
+	return nil
+}
+
+func validateVmwareengineNetworkPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

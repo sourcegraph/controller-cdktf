@@ -4,6 +4,10 @@ package googlevertexaiindex
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleVertexAiIndexDeployedIndexesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleVertexAiIndexDeployedIndexesList) validateGetParameters(index *float64) error {
 	return nil
 }

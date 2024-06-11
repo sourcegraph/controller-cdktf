@@ -5,7 +5,7 @@ type BigqueryJobQuery struct {
 	// SQL query text to execute.
 	//
 	// The useLegacySql field can be used to indicate whether the query uses legacy SQL or standard SQL.
-	// NOTE*: queries containing [DML language](https://cloud.google.com/bigquery/docs/reference/standard-sql/data-manipulation-language)
+	// *NOTE*: queries containing [DML language](https://cloud.google.com/bigquery/docs/reference/standard-sql/data-manipulation-language)
 	// ('DELETE', 'UPDATE', 'MERGE', 'INSERT') must specify 'create_disposition = ""' and 'write_disposition = ""'.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/bigquery_job#query BigqueryJob#query}

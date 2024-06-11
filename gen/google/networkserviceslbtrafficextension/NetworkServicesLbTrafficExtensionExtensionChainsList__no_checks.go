@@ -4,6 +4,10 @@ package networkserviceslbtrafficextension
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetworkServicesLbTrafficExtensionExtensionChainsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkServicesLbTrafficExtensionExtensionChainsList) validateGetParameters(index *float64) error {
 	return nil
 }

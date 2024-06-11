@@ -25,7 +25,7 @@ type HealthcareFhirStoreConfig struct {
 	Dataset *string `field:"required" json:"dataset" yaml:"dataset"`
 	// The resource name for the FhirStore.
 	//
-	// * Changing this property may recreate the FHIR store (removing all data) **
+	// ** Changing this property may recreate the FHIR store (removing all data) **
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/healthcare_fhir_store#name HealthcareFhirStore#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
@@ -54,7 +54,7 @@ type HealthcareFhirStoreConfig struct {
 	// will skip referential integrity check. Consequently, operations that rely on references, such as
 	// Patient.get$everything, will not return all the results if broken references exist.
 	//
-	// * Changing this property may recreate the FHIR store (removing all data) **
+	// ** Changing this property may recreate the FHIR store (removing all data) **
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/healthcare_fhir_store#disable_referential_integrity HealthcareFhirStore#disable_referential_integrity}
 	DisableReferentialIntegrity interface{} `field:"optional" json:"disableReferentialIntegrity" yaml:"disableReferentialIntegrity"`
@@ -66,7 +66,7 @@ type HealthcareFhirStoreConfig struct {
 	// cannot be updated. If set to true, no historical versions will be kept. The server will send back errors for
 	// attempts to read the historical versions.
 	//
-	// * Changing this property may recreate the FHIR store (removing all data) **
+	// ** Changing this property may recreate the FHIR store (removing all data) **
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/healthcare_fhir_store#disable_resource_versioning HealthcareFhirStore#disable_resource_versioning}
 	DisableResourceVersioning interface{} `field:"optional" json:"disableResourceVersioning" yaml:"disableResourceVersioning"`
@@ -76,9 +76,9 @@ type HealthcareFhirStoreConfig struct {
 	// occurred in the past, which clients may not want to allow. If set to false, history bundles within an import
 	// will fail with an error.
 	//
-	// * Changing this property may recreate the FHIR store (removing all data) **
+	// ** Changing this property may recreate the FHIR store (removing all data) **
 	//
-	// * This property can be changed manually in the Google Cloud Healthcare admin console without recreating the FHIR store **
+	// ** This property can be changed manually in the Google Cloud Healthcare admin console without recreating the FHIR store **
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/healthcare_fhir_store#enable_history_import HealthcareFhirStore#enable_history_import}
 	EnableHistoryImport interface{} `field:"optional" json:"enableHistoryImport" yaml:"enableHistoryImport"`
@@ -112,7 +112,7 @@ type HealthcareFhirStoreConfig struct {
 	// Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
 	//
 	//
-	// *Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+	// **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 	// Please refer to the field 'effective_labels' for all of the labels present on the resource.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/healthcare_fhir_store#labels HealthcareFhirStore#labels}

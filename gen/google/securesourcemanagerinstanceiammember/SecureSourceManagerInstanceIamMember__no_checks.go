@@ -4,6 +4,10 @@ package securesourcemanagerinstanceiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SecureSourceManagerInstanceIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecureSourceManagerInstanceIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (s *jsiiProxy_SecureSourceManagerInstanceIamMember) validateGetStringMapAtt
 	return nil
 }
 
+func (s *jsiiProxy_SecureSourceManagerInstanceIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecureSourceManagerInstanceIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecureSourceManagerInstanceIamMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecureSourceManagerInstanceIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecureSourceManagerInstanceIamMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (s *jsiiProxy_SecureSourceManagerInstanceIamMember) validateOverrideLogical
 }
 
 func (s *jsiiProxy_SecureSourceManagerInstanceIamMember) validatePutConditionParameters(value *SecureSourceManagerInstanceIamMemberCondition) error {
+	return nil
+}
+
+func validateSecureSourceManagerInstanceIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

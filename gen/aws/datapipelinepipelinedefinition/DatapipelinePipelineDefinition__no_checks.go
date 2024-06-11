@@ -4,6 +4,10 @@ package datapipelinepipelinedefinition
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DatapipelinePipelineDefinition) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatapipelinePipelineDefinition) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (d *jsiiProxy_DatapipelinePipelineDefinition) validateGetStringMapAttribute
 	return nil
 }
 
+func (d *jsiiProxy_DatapipelinePipelineDefinition) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatapipelinePipelineDefinition) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatapipelinePipelineDefinition) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatapipelinePipelineDefinition) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatapipelinePipelineDefinition) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (d *jsiiProxy_DatapipelinePipelineDefinition) validatePutParameterValuePara
 }
 
 func (d *jsiiProxy_DatapipelinePipelineDefinition) validatePutPipelineObjectParameters(value interface{}) error {
+	return nil
+}
+
+func validateDatapipelinePipelineDefinition_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package dataoktatrustedorigins
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataOktaTrustedOriginsTrustedOriginsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataOktaTrustedOriginsTrustedOriginsList) validateGetParameters(index *float64) error {
 	return nil
 }

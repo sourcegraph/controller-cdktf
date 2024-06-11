@@ -4,6 +4,10 @@ package googlepubsubschemaiampolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GooglePubsubSchemaIamPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GooglePubsubSchemaIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (g *jsiiProxy_GooglePubsubSchemaIamPolicy) validateGetStringMapAttributePar
 	return nil
 }
 
+func (g *jsiiProxy_GooglePubsubSchemaIamPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GooglePubsubSchemaIamPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (g *jsiiProxy_GooglePubsubSchemaIamPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GooglePubsubSchemaIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GooglePubsubSchemaIamPolicy) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GooglePubsubSchemaIamPolicy) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateGooglePubsubSchemaIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

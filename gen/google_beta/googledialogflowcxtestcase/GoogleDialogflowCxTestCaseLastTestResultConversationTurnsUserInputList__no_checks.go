@@ -4,6 +4,10 @@ package googledialogflowcxtestcase
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleDialogflowCxTestCaseLastTestResultConversationTurnsUserInputList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDialogflowCxTestCaseLastTestResultConversationTurnsUserInputList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -4,6 +4,10 @@ package googleloggingprojectbucketconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) validateGetStringMapAttribu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) validatePutCmekSettingsPara
 }
 
 func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) validatePutIndexConfigsParameters(value interface{}) error {
+	return nil
+}
+
+func validateGoogleLoggingProjectBucketConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

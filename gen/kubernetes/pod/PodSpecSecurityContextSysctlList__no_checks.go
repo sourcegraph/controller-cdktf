@@ -4,6 +4,10 @@ package pod
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PodSpecSecurityContextSysctlList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PodSpecSecurityContextSysctlList) validateGetParameters(index *float64) error {
 	return nil
 }

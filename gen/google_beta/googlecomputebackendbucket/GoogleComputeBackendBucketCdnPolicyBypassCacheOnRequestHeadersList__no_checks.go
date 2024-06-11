@@ -4,6 +4,10 @@ package googlecomputebackendbucket
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComputeBackendBucketCdnPolicyBypassCacheOnRequestHeadersList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeBackendBucketCdnPolicyBypassCacheOnRequestHeadersList) validateGetParameters(index *float64) error {
 	return nil
 }

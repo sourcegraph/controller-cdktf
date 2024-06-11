@@ -4,6 +4,10 @@ package datagooglecomputereservation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataGoogleComputeReservationSpecificReservationInstancePropertiesGuestAcceleratorsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataGoogleComputeReservationSpecificReservationInstancePropertiesGuestAcceleratorsList) validateGetParameters(index *float64) error {
 	return nil
 }

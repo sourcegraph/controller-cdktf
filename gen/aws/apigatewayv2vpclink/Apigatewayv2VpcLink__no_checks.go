@@ -4,6 +4,10 @@ package apigatewayv2vpclink
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_Apigatewayv2VpcLink) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_Apigatewayv2VpcLink) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (a *jsiiProxy_Apigatewayv2VpcLink) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (a *jsiiProxy_Apigatewayv2VpcLink) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_Apigatewayv2VpcLink) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (a *jsiiProxy_Apigatewayv2VpcLink) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_Apigatewayv2VpcLink) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_Apigatewayv2VpcLink) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_Apigatewayv2VpcLink) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateApigatewayv2VpcLink_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

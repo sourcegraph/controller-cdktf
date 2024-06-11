@@ -92,6 +92,9 @@ type OsConfigOsPolicyAssignment interface {
 	Timeouts() OsConfigOsPolicyAssignmentTimeoutsOutputReference
 	TimeoutsInput() interface{}
 	Uid() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -113,7 +116,22 @@ type OsConfigOsPolicyAssignment interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -130,6 +148,9 @@ type OsConfigOsPolicyAssignment interface {
 	ResetSkipAwaitRollout()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -748,6 +769,25 @@ func (j *jsiiProxy_OsConfigOsPolicyAssignment)SetSkipAwaitRollout(val interface{
 	)
 }
 
+// Generates CDKTF code for importing a OsConfigOsPolicyAssignment resource upon running "cdktf plan <stack-name>".
+func OsConfigOsPolicyAssignment_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateOsConfigOsPolicyAssignment_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.osConfigOsPolicyAssignment.OsConfigOsPolicyAssignment",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -830,6 +870,17 @@ func OsConfigOsPolicyAssignment_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (o *jsiiProxy_OsConfigOsPolicyAssignment) AddMoveTarget(moveTarget *string) {
+	if err := o.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (o *jsiiProxy_OsConfigOsPolicyAssignment) AddOverride(path *string, value interface{}) {
@@ -987,6 +1038,30 @@ func (o *jsiiProxy_OsConfigOsPolicyAssignment) GetStringMapAttribute(terraformAt
 	return returns
 }
 
+func (o *jsiiProxy_OsConfigOsPolicyAssignment) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		o,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OsConfigOsPolicyAssignment) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := o.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (o *jsiiProxy_OsConfigOsPolicyAssignment) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := o.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -1001,6 +1076,39 @@ func (o *jsiiProxy_OsConfigOsPolicyAssignment) InterpolationForAttribute(terrafo
 	)
 
 	return returns
+}
+
+func (o *jsiiProxy_OsConfigOsPolicyAssignment) MoveFromId(id *string) {
+	if err := o.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
+func (o *jsiiProxy_OsConfigOsPolicyAssignment) MoveTo(moveTarget *string, index interface{}) {
+	if err := o.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
+}
+
+func (o *jsiiProxy_OsConfigOsPolicyAssignment) MoveToId(id *string) {
+	if err := o.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"moveToId",
+		[]interface{}{id},
+	)
 }
 
 func (o *jsiiProxy_OsConfigOsPolicyAssignment) OverrideLogicalId(newLogicalId *string) {
@@ -1112,6 +1220,32 @@ func (o *jsiiProxy_OsConfigOsPolicyAssignment) SynthesizeAttributes() *map[strin
 	_jsii_.Invoke(
 		o,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OsConfigOsPolicyAssignment) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		o,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OsConfigOsPolicyAssignment) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		o,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

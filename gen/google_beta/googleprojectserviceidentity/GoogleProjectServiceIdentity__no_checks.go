@@ -4,6 +4,10 @@ package googleprojectserviceidentity
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleProjectServiceIdentity) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleProjectServiceIdentity) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleProjectServiceIdentity) validateGetStringMapAttributePa
 	return nil
 }
 
+func (g *jsiiProxy_GoogleProjectServiceIdentity) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleProjectServiceIdentity) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleProjectServiceIdentity) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleProjectServiceIdentity) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleProjectServiceIdentity) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleProjectServiceIdentity) validateOverrideLogicalIdParame
 }
 
 func (g *jsiiProxy_GoogleProjectServiceIdentity) validatePutTimeoutsParameters(value *GoogleProjectServiceIdentityTimeouts) error {
+	return nil
+}
+
+func validateGoogleProjectServiceIdentity_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

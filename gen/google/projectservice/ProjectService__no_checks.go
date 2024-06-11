@@ -4,6 +4,10 @@ package projectservice
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_ProjectService) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_ProjectService) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (p *jsiiProxy_ProjectService) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (p *jsiiProxy_ProjectService) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_ProjectService) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_ProjectService) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_ProjectService) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_ProjectService) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (p *jsiiProxy_ProjectService) validateOverrideLogicalIdParameters(newLogica
 }
 
 func (p *jsiiProxy_ProjectService) validatePutTimeoutsParameters(value *ProjectServiceTimeouts) error {
+	return nil
+}
+
+func validateProjectService_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

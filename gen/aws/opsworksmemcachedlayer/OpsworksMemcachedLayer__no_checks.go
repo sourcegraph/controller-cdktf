@@ -4,6 +4,10 @@ package opsworksmemcachedlayer
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OpsworksMemcachedLayer) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OpsworksMemcachedLayer) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (o *jsiiProxy_OpsworksMemcachedLayer) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (o *jsiiProxy_OpsworksMemcachedLayer) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OpsworksMemcachedLayer) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OpsworksMemcachedLayer) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OpsworksMemcachedLayer) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_OpsworksMemcachedLayer) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (o *jsiiProxy_OpsworksMemcachedLayer) validatePutEbsVolumeParameters(value 
 }
 
 func (o *jsiiProxy_OpsworksMemcachedLayer) validatePutLoadBasedAutoScalingParameters(value *OpsworksMemcachedLayerLoadBasedAutoScaling) error {
+	return nil
+}
+
+func validateOpsworksMemcachedLayer_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

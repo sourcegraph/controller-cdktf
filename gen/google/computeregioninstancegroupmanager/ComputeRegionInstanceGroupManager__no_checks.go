@@ -4,6 +4,10 @@ package computeregioninstancegroupmanager
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeRegionInstanceGroupManager) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionInstanceGroupManager) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_ComputeRegionInstanceGroupManager) validateGetStringMapAttrib
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRegionInstanceGroupManager) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionInstanceGroupManager) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRegionInstanceGroupManager) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRegionInstanceGroupManager) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRegionInstanceGroupManager) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -89,6 +109,10 @@ func (c *jsiiProxy_ComputeRegionInstanceGroupManager) validatePutUpdatePolicyPar
 }
 
 func (c *jsiiProxy_ComputeRegionInstanceGroupManager) validatePutVersionParameters(value interface{}) error {
+	return nil
+}
+
+func validateComputeRegionInstanceGroupManager_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

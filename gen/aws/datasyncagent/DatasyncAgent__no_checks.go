@@ -4,6 +4,10 @@ package datasyncagent
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DatasyncAgent) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatasyncAgent) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (d *jsiiProxy_DatasyncAgent) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (d *jsiiProxy_DatasyncAgent) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatasyncAgent) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatasyncAgent) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatasyncAgent) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatasyncAgent) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (d *jsiiProxy_DatasyncAgent) validateOverrideLogicalIdParameters(newLogical
 }
 
 func (d *jsiiProxy_DatasyncAgent) validatePutTimeoutsParameters(value *DatasyncAgentTimeouts) error {
+	return nil
+}
+
+func validateDatasyncAgent_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package redshiftserverlessworkgroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RedshiftserverlessWorkgroupConfigParameterList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RedshiftserverlessWorkgroupConfigParameterList) validateGetParameters(index *float64) error {
 	return nil
 }

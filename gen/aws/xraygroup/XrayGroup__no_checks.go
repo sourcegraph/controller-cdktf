@@ -4,6 +4,10 @@ package xraygroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (x *jsiiProxy_XrayGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (x *jsiiProxy_XrayGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (x *jsiiProxy_XrayGroup) validateGetStringMapAttributeParameters(terraformA
 	return nil
 }
 
+func (x *jsiiProxy_XrayGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (x *jsiiProxy_XrayGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (x *jsiiProxy_XrayGroup) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (x *jsiiProxy_XrayGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (x *jsiiProxy_XrayGroup) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (x *jsiiProxy_XrayGroup) validateOverrideLogicalIdParameters(newLogicalId *
 }
 
 func (x *jsiiProxy_XrayGroup) validatePutInsightsConfigurationParameters(value *XrayGroupInsightsConfiguration) error {
+	return nil
+}
+
+func validateXrayGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

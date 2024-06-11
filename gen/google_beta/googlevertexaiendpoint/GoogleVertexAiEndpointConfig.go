@@ -52,7 +52,7 @@ type GoogleVertexAiEndpointConfig struct {
 	//
 	// Label keys and values can be no longer than 64 characters (Unicode codepoints), can only contain lowercase letters, numeric characters, underscores and dashes. International characters are allowed. See https://goo.gl/xmQnxf for more information and examples of labels.
 	//
-	// *Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+	// **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 	// Please refer to the field 'effective_labels' for all of the labels present on the resource.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_vertex_ai_endpoint#labels GoogleVertexAiEndpoint#labels}

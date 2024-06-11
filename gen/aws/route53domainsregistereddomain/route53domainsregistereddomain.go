@@ -105,6 +105,9 @@ type Route53DomainsRegisteredDomain interface {
 	TransferLockInput() interface{}
 	UpdatedDate() *string
 	WhoisServer() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -126,7 +129,22 @@ type Route53DomainsRegisteredDomain interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -152,6 +170,9 @@ type Route53DomainsRegisteredDomain interface {
 	ResetTimeouts()
 	ResetTransferLock()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -903,6 +924,25 @@ func (j *jsiiProxy_Route53DomainsRegisteredDomain)SetTransferLock(val interface{
 	)
 }
 
+// Generates CDKTF code for importing a Route53DomainsRegisteredDomain resource upon running "cdktf plan <stack-name>".
+func Route53DomainsRegisteredDomain_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateRoute53DomainsRegisteredDomain_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomain",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -985,6 +1025,17 @@ func Route53DomainsRegisteredDomain_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (r *jsiiProxy_Route53DomainsRegisteredDomain) AddMoveTarget(moveTarget *string) {
+	if err := r.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (r *jsiiProxy_Route53DomainsRegisteredDomain) AddOverride(path *string, value interface{}) {
@@ -1142,6 +1193,30 @@ func (r *jsiiProxy_Route53DomainsRegisteredDomain) GetStringMapAttribute(terrafo
 	return returns
 }
 
+func (r *jsiiProxy_Route53DomainsRegisteredDomain) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		r,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_Route53DomainsRegisteredDomain) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := r.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (r *jsiiProxy_Route53DomainsRegisteredDomain) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -1156,6 +1231,39 @@ func (r *jsiiProxy_Route53DomainsRegisteredDomain) InterpolationForAttribute(ter
 	)
 
 	return returns
+}
+
+func (r *jsiiProxy_Route53DomainsRegisteredDomain) MoveFromId(id *string) {
+	if err := r.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
+func (r *jsiiProxy_Route53DomainsRegisteredDomain) MoveTo(moveTarget *string, index interface{}) {
+	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
+}
+
+func (r *jsiiProxy_Route53DomainsRegisteredDomain) MoveToId(id *string) {
+	if err := r.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"moveToId",
+		[]interface{}{id},
+	)
 }
 
 func (r *jsiiProxy_Route53DomainsRegisteredDomain) OverrideLogicalId(newLogicalId *string) {
@@ -1342,6 +1450,32 @@ func (r *jsiiProxy_Route53DomainsRegisteredDomain) SynthesizeAttributes() *map[s
 	_jsii_.Invoke(
 		r,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_Route53DomainsRegisteredDomain) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		r,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_Route53DomainsRegisteredDomain) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		r,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

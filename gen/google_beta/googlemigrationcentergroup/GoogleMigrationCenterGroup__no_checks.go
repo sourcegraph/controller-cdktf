@@ -4,6 +4,10 @@ package googlemigrationcentergroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleMigrationCenterGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleMigrationCenterGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleMigrationCenterGroup) validateGetStringMapAttributePara
 	return nil
 }
 
+func (g *jsiiProxy_GoogleMigrationCenterGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleMigrationCenterGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleMigrationCenterGroup) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleMigrationCenterGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleMigrationCenterGroup) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleMigrationCenterGroup) validateOverrideLogicalIdParamete
 }
 
 func (g *jsiiProxy_GoogleMigrationCenterGroup) validatePutTimeoutsParameters(value *GoogleMigrationCenterGroupTimeouts) error {
+	return nil
+}
+
+func validateGoogleMigrationCenterGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

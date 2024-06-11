@@ -4,6 +4,10 @@ package accesscontextmanagergcpuseraccessbinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AccessContextManagerGcpUserAccessBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccessContextManagerGcpUserAccessBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (a *jsiiProxy_AccessContextManagerGcpUserAccessBinding) validateGetStringMa
 	return nil
 }
 
+func (a *jsiiProxy_AccessContextManagerGcpUserAccessBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccessContextManagerGcpUserAccessBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccessContextManagerGcpUserAccessBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccessContextManagerGcpUserAccessBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccessContextManagerGcpUserAccessBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (a *jsiiProxy_AccessContextManagerGcpUserAccessBinding) validateOverrideLog
 }
 
 func (a *jsiiProxy_AccessContextManagerGcpUserAccessBinding) validatePutTimeoutsParameters(value *AccessContextManagerGcpUserAccessBindingTimeouts) error {
+	return nil
+}
+
+func validateAccessContextManagerGcpUserAccessBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

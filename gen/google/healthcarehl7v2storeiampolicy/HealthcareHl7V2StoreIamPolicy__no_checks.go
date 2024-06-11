@@ -4,6 +4,10 @@ package healthcarehl7v2storeiampolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (h *jsiiProxy_HealthcareHl7V2StoreIamPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HealthcareHl7V2StoreIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (h *jsiiProxy_HealthcareHl7V2StoreIamPolicy) validateGetStringMapAttributeP
 	return nil
 }
 
+func (h *jsiiProxy_HealthcareHl7V2StoreIamPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HealthcareHl7V2StoreIamPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (h *jsiiProxy_HealthcareHl7V2StoreIamPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (h *jsiiProxy_HealthcareHl7V2StoreIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (h *jsiiProxy_HealthcareHl7V2StoreIamPolicy) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HealthcareHl7V2StoreIamPolicy) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateHealthcareHl7V2StoreIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

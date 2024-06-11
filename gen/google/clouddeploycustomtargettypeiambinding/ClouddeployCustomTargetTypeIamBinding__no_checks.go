@@ -4,6 +4,10 @@ package clouddeploycustomtargettypeiambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ClouddeployCustomTargetTypeIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ClouddeployCustomTargetTypeIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeIamBinding) validateGetStringMapAt
 	return nil
 }
 
+func (c *jsiiProxy_ClouddeployCustomTargetTypeIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ClouddeployCustomTargetTypeIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ClouddeployCustomTargetTypeIamBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ClouddeployCustomTargetTypeIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ClouddeployCustomTargetTypeIamBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeIamBinding) validateOverrideLogica
 }
 
 func (c *jsiiProxy_ClouddeployCustomTargetTypeIamBinding) validatePutConditionParameters(value *ClouddeployCustomTargetTypeIamBindingCondition) error {
+	return nil
+}
+
+func validateClouddeployCustomTargetTypeIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

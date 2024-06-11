@@ -4,6 +4,10 @@ package googlebigtableinstance
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleBigtableInstance) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigtableInstance) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleBigtableInstance) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBigtableInstance) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigtableInstance) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBigtableInstance) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBigtableInstance) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBigtableInstance) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (g *jsiiProxy_GoogleBigtableInstance) validatePutClusterParameters(value in
 }
 
 func (g *jsiiProxy_GoogleBigtableInstance) validatePutTimeoutsParameters(value *GoogleBigtableInstanceTimeouts) error {
+	return nil
+}
+
+func validateGoogleBigtableInstance_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

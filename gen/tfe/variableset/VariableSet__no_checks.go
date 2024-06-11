@@ -4,6 +4,10 @@ package variableset
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VariableSet) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VariableSet) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (v *jsiiProxy_VariableSet) validateGetStringMapAttributeParameters(terrafor
 	return nil
 }
 
+func (v *jsiiProxy_VariableSet) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VariableSet) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (v *jsiiProxy_VariableSet) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VariableSet) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VariableSet) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VariableSet) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateVariableSet_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

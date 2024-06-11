@@ -6,10 +6,6 @@ type Wafv2WebAclRule struct {
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/wafv2_web_acl#priority Wafv2WebAcl#priority}.
 	Priority *float64 `field:"required" json:"priority" yaml:"priority"`
-	// statement block.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/wafv2_web_acl#statement Wafv2WebAcl#statement}
-	Statement *Wafv2WebAclRuleStatement `field:"required" json:"statement" yaml:"statement"`
 	// visibility_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/wafv2_web_acl#visibility_config Wafv2WebAcl#visibility_config}
@@ -26,5 +22,9 @@ type Wafv2WebAclRule struct {
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/wafv2_web_acl#rule_label Wafv2WebAcl#rule_label}
 	RuleLabel interface{} `field:"optional" json:"ruleLabel" yaml:"ruleLabel"`
+	// statement block.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/wafv2_web_acl#statement Wafv2WebAcl#statement}
+	Statement interface{} `field:"optional" json:"statement" yaml:"statement"`
 }
 

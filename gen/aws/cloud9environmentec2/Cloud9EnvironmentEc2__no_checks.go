@@ -4,6 +4,10 @@ package cloud9environmentec2
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_Cloud9EnvironmentEc2) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_Cloud9EnvironmentEc2) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (c *jsiiProxy_Cloud9EnvironmentEc2) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (c *jsiiProxy_Cloud9EnvironmentEc2) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_Cloud9EnvironmentEc2) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (c *jsiiProxy_Cloud9EnvironmentEc2) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_Cloud9EnvironmentEc2) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_Cloud9EnvironmentEc2) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_Cloud9EnvironmentEc2) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateCloud9EnvironmentEc2_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

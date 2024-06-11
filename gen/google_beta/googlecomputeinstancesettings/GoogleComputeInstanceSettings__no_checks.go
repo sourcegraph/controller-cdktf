@@ -4,6 +4,10 @@ package googlecomputeinstancesettings
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComputeInstanceSettings) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceSettings) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleComputeInstanceSettings) validateGetStringMapAttributeP
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeInstanceSettings) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceSettings) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceSettings) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceSettings) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceSettings) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (g *jsiiProxy_GoogleComputeInstanceSettings) validatePutMetadataParameters(
 }
 
 func (g *jsiiProxy_GoogleComputeInstanceSettings) validatePutTimeoutsParameters(value *GoogleComputeInstanceSettingsTimeouts) error {
+	return nil
+}
+
+func validateGoogleComputeInstanceSettings_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

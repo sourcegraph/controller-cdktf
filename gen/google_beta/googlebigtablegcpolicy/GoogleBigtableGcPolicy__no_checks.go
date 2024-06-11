@@ -4,6 +4,10 @@ package googlebigtablegcpolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleBigtableGcPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigtableGcPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleBigtableGcPolicy) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBigtableGcPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigtableGcPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBigtableGcPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBigtableGcPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBigtableGcPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (g *jsiiProxy_GoogleBigtableGcPolicy) validatePutMaxVersionParameters(value
 }
 
 func (g *jsiiProxy_GoogleBigtableGcPolicy) validatePutTimeoutsParameters(value *GoogleBigtableGcPolicyTimeouts) error {
+	return nil
+}
+
+func validateGoogleBigtableGcPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

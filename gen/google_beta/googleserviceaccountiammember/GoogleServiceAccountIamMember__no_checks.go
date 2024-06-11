@@ -4,6 +4,10 @@ package googleserviceaccountiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleServiceAccountIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleServiceAccountIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleServiceAccountIamMember) validateGetStringMapAttributeP
 	return nil
 }
 
+func (g *jsiiProxy_GoogleServiceAccountIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleServiceAccountIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleServiceAccountIamMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleServiceAccountIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleServiceAccountIamMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleServiceAccountIamMember) validateOverrideLogicalIdParam
 }
 
 func (g *jsiiProxy_GoogleServiceAccountIamMember) validatePutConditionParameters(value *GoogleServiceAccountIamMemberCondition) error {
+	return nil
+}
+
+func validateGoogleServiceAccountIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package lambdapermission
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LambdaPermission) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LambdaPermission) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (l *jsiiProxy_LambdaPermission) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (l *jsiiProxy_LambdaPermission) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LambdaPermission) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (l *jsiiProxy_LambdaPermission) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LambdaPermission) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LambdaPermission) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LambdaPermission) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateLambdaPermission_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

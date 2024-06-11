@@ -4,6 +4,10 @@ package discoveryenginesearchengine
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DiscoveryEngineSearchEngine) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DiscoveryEngineSearchEngine) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (d *jsiiProxy_DiscoveryEngineSearchEngine) validateGetStringMapAttributePar
 	return nil
 }
 
+func (d *jsiiProxy_DiscoveryEngineSearchEngine) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DiscoveryEngineSearchEngine) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DiscoveryEngineSearchEngine) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DiscoveryEngineSearchEngine) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DiscoveryEngineSearchEngine) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (d *jsiiProxy_DiscoveryEngineSearchEngine) validatePutSearchEngineConfigPar
 }
 
 func (d *jsiiProxy_DiscoveryEngineSearchEngine) validatePutTimeoutsParameters(value *DiscoveryEngineSearchEngineTimeouts) error {
+	return nil
+}
+
+func validateDiscoveryEngineSearchEngine_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

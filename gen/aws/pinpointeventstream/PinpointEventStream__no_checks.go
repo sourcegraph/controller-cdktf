@@ -4,6 +4,10 @@ package pinpointeventstream
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PinpointEventStream) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PinpointEventStream) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (p *jsiiProxy_PinpointEventStream) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (p *jsiiProxy_PinpointEventStream) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PinpointEventStream) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (p *jsiiProxy_PinpointEventStream) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PinpointEventStream) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PinpointEventStream) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PinpointEventStream) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validatePinpointEventStream_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

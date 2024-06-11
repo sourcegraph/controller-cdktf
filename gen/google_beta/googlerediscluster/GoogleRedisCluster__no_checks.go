@@ -4,6 +4,10 @@ package googlerediscluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleRedisCluster) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleRedisCluster) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleRedisCluster) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (g *jsiiProxy_GoogleRedisCluster) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleRedisCluster) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleRedisCluster) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleRedisCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleRedisCluster) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (g *jsiiProxy_GoogleRedisCluster) validatePutPscConfigsParameters(value int
 }
 
 func (g *jsiiProxy_GoogleRedisCluster) validatePutTimeoutsParameters(value *GoogleRedisClusterTimeouts) error {
+	return nil
+}
+
+func validateGoogleRedisCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

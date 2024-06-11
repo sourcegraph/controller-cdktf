@@ -4,6 +4,10 @@ package accessidentityprovider
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AccessIdentityProvider) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccessIdentityProvider) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (a *jsiiProxy_AccessIdentityProvider) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (a *jsiiProxy_AccessIdentityProvider) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccessIdentityProvider) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccessIdentityProvider) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccessIdentityProvider) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccessIdentityProvider) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (a *jsiiProxy_AccessIdentityProvider) validatePutConfigParameters(value int
 }
 
 func (a *jsiiProxy_AccessIdentityProvider) validatePutScimConfigParameters(value interface{}) error {
+	return nil
+}
+
+func validateAccessIdentityProvider_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

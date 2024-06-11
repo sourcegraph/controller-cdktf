@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleTagsTagKeys) validateOverrideLogicalIdParameters(ne
 	return nil
 }
 
+func validateDataGoogleTagsTagKeys_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleTagsTagKeys_IsConstructParameters(x interface{}) error {
 	return nil
 }

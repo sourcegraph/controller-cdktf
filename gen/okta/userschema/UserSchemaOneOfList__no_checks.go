@@ -4,6 +4,10 @@ package userschema
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (u *jsiiProxy_UserSchemaOneOfList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (u *jsiiProxy_UserSchemaOneOfList) validateGetParameters(index *float64) error {
 	return nil
 }

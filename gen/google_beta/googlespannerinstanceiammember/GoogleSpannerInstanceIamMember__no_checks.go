@@ -4,6 +4,10 @@ package googlespannerinstanceiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleSpannerInstanceIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSpannerInstanceIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleSpannerInstanceIamMember) validateGetStringMapAttribute
 	return nil
 }
 
+func (g *jsiiProxy_GoogleSpannerInstanceIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSpannerInstanceIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleSpannerInstanceIamMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleSpannerInstanceIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleSpannerInstanceIamMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleSpannerInstanceIamMember) validateOverrideLogicalIdPara
 }
 
 func (g *jsiiProxy_GoogleSpannerInstanceIamMember) validatePutConditionParameters(value *GoogleSpannerInstanceIamMemberCondition) error {
+	return nil
+}
+
+func validateGoogleSpannerInstanceIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

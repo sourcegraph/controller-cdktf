@@ -4,6 +4,10 @@ package wafregionalwebacl
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (w *jsiiProxy_WafregionalWebAclRuleList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WafregionalWebAclRuleList) validateGetParameters(index *float64) error {
 	return nil
 }

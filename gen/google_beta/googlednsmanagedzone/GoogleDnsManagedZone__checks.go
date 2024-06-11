@@ -11,6 +11,14 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
+func (g *jsiiProxy_GoogleDnsManagedZone) validateAddMoveTargetParameters(moveTarget *string) error {
+	if moveTarget == nil {
+		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDnsManagedZone) validateAddOverrideParameters(path *string, value interface{}) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
@@ -95,9 +103,94 @@ func (g *jsiiProxy_GoogleDnsManagedZone) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDnsManagedZone) validateImportFromParameters(id *string) error {
+	if id == nil {
+		return fmt.Errorf("parameter id is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDnsManagedZone) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDnsManagedZone) validateMoveFromIdParameters(id *string) error {
+	if id == nil {
+		return fmt.Errorf("parameter id is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDnsManagedZone) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	if moveTarget == nil {
+		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
+	}
+
+	switch index.(type) {
+	case *string:
+		// ok
+	case string:
+		// ok
+	case *float64:
+		// ok
+	case float64:
+		// ok
+	case *int:
+		// ok
+	case int:
+		// ok
+	case *uint:
+		// ok
+	case uint:
+		// ok
+	case *int8:
+		// ok
+	case int8:
+		// ok
+	case *int16:
+		// ok
+	case int16:
+		// ok
+	case *int32:
+		// ok
+	case int32:
+		// ok
+	case *int64:
+		// ok
+	case int64:
+		// ok
+	case *uint8:
+		// ok
+	case uint8:
+		// ok
+	case *uint16:
+		// ok
+	case uint16:
+		// ok
+	case *uint32:
+		// ok
+	case uint32:
+		// ok
+	case *uint64:
+		// ok
+	case uint64:
+		// ok
+	default:
+		return fmt.Errorf("parameter index must be one of the allowed types: *string, *float64; received %#v (a %T)", index, index)
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDnsManagedZone) validateMoveToIdParameters(id *string) error {
+	if id == nil {
+		return fmt.Errorf("parameter id is required, but nil was provided")
 	}
 
 	return nil
@@ -183,6 +276,22 @@ func (g *jsiiProxy_GoogleDnsManagedZone) validatePutTimeoutsParameters(value *Go
 	}
 	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
 		return err
+	}
+
+	return nil
+}
+
+func validateGoogleDnsManagedZone_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	if scope == nil {
+		return fmt.Errorf("parameter scope is required, but nil was provided")
+	}
+
+	if importToId == nil {
+		return fmt.Errorf("parameter importToId is required, but nil was provided")
+	}
+
+	if importFromId == nil {
+		return fmt.Errorf("parameter importFromId is required, but nil was provided")
 	}
 
 	return nil

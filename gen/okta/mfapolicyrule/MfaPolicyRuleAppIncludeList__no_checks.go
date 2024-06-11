@@ -4,6 +4,10 @@ package mfapolicyrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MfaPolicyRuleAppIncludeList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MfaPolicyRuleAppIncludeList) validateGetParameters(index *float64) error {
 	return nil
 }

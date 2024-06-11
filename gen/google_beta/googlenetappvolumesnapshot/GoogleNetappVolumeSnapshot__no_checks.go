@@ -4,6 +4,10 @@ package googlenetappvolumesnapshot
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleNetappVolumeSnapshot) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetappVolumeSnapshot) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleNetappVolumeSnapshot) validateGetStringMapAttributePara
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetappVolumeSnapshot) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetappVolumeSnapshot) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetappVolumeSnapshot) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetappVolumeSnapshot) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetappVolumeSnapshot) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleNetappVolumeSnapshot) validateOverrideLogicalIdParamete
 }
 
 func (g *jsiiProxy_GoogleNetappVolumeSnapshot) validatePutTimeoutsParameters(value *GoogleNetappVolumeSnapshotTimeouts) error {
+	return nil
+}
+
+func validateGoogleNetappVolumeSnapshot_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

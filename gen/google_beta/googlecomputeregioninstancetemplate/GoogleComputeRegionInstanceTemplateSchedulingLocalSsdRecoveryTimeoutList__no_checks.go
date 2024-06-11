@@ -4,6 +4,10 @@ package googlecomputeregioninstancetemplate
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComputeRegionInstanceTemplateSchedulingLocalSsdRecoveryTimeoutList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRegionInstanceTemplateSchedulingLocalSsdRecoveryTimeoutList) validateGetParameters(index *float64) error {
 	return nil
 }

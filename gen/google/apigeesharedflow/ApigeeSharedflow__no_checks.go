@@ -4,6 +4,10 @@ package apigeesharedflow
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ApigeeSharedflow) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApigeeSharedflow) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (a *jsiiProxy_ApigeeSharedflow) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (a *jsiiProxy_ApigeeSharedflow) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApigeeSharedflow) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApigeeSharedflow) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApigeeSharedflow) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApigeeSharedflow) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (a *jsiiProxy_ApigeeSharedflow) validateOverrideLogicalIdParameters(newLogi
 }
 
 func (a *jsiiProxy_ApigeeSharedflow) validatePutTimeoutsParameters(value *ApigeeSharedflowTimeouts) error {
+	return nil
+}
+
+func validateApigeeSharedflow_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

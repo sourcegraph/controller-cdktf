@@ -4,6 +4,10 @@ package userfactorquestion
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (u *jsiiProxy_UserFactorQuestion) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (u *jsiiProxy_UserFactorQuestion) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (u *jsiiProxy_UserFactorQuestion) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (u *jsiiProxy_UserFactorQuestion) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (u *jsiiProxy_UserFactorQuestion) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (u *jsiiProxy_UserFactorQuestion) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (u *jsiiProxy_UserFactorQuestion) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (u *jsiiProxy_UserFactorQuestion) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (u *jsiiProxy_UserFactorQuestion) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateUserFactorQuestion_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

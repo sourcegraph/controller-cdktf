@@ -4,6 +4,10 @@ package googlefirebaseappcheckrecaptchaenterpriseconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleFirebaseAppCheckRecaptchaEnterpriseConfig) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFirebaseAppCheckRecaptchaEnterpriseConfig) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleFirebaseAppCheckRecaptchaEnterpriseConfig) validateGetS
 	return nil
 }
 
+func (g *jsiiProxy_GoogleFirebaseAppCheckRecaptchaEnterpriseConfig) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFirebaseAppCheckRecaptchaEnterpriseConfig) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleFirebaseAppCheckRecaptchaEnterpriseConfig) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleFirebaseAppCheckRecaptchaEnterpriseConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleFirebaseAppCheckRecaptchaEnterpriseConfig) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleFirebaseAppCheckRecaptchaEnterpriseConfig) validateOver
 }
 
 func (g *jsiiProxy_GoogleFirebaseAppCheckRecaptchaEnterpriseConfig) validatePutTimeoutsParameters(value *GoogleFirebaseAppCheckRecaptchaEnterpriseConfigTimeouts) error {
+	return nil
+}
+
+func validateGoogleFirebaseAppCheckRecaptchaEnterpriseConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

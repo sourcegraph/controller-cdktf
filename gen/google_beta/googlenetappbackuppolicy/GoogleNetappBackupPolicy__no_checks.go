@@ -4,6 +4,10 @@ package googlenetappbackuppolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleNetappBackupPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetappBackupPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleNetappBackupPolicy) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetappBackupPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetappBackupPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetappBackupPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetappBackupPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetappBackupPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleNetappBackupPolicy) validateOverrideLogicalIdParameters
 }
 
 func (g *jsiiProxy_GoogleNetappBackupPolicy) validatePutTimeoutsParameters(value *GoogleNetappBackupPolicyTimeouts) error {
+	return nil
+}
+
+func validateGoogleNetappBackupPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleCloudAssetSearchAllResources) validateOverrideLogic
 	return nil
 }
 
+func validateDataGoogleCloudAssetSearchAllResources_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleCloudAssetSearchAllResources_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -4,6 +4,10 @@ package guarddutyorganizationconfiguration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GuarddutyOrganizationConfiguration) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GuarddutyOrganizationConfiguration) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GuarddutyOrganizationConfiguration) validateGetStringMapAttri
 	return nil
 }
 
+func (g *jsiiProxy_GuarddutyOrganizationConfiguration) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GuarddutyOrganizationConfiguration) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GuarddutyOrganizationConfiguration) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GuarddutyOrganizationConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GuarddutyOrganizationConfiguration) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GuarddutyOrganizationConfiguration) validateOverrideLogicalId
 }
 
 func (g *jsiiProxy_GuarddutyOrganizationConfiguration) validatePutDatasourcesParameters(value *GuarddutyOrganizationConfigurationDatasources) error {
+	return nil
+}
+
+func validateGuarddutyOrganizationConfiguration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

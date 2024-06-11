@@ -4,6 +4,10 @@ package clouddeploycustomtargettypeiampolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) validateGetStringMapAtt
 	return nil
 }
 
+func (c *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (c *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateClouddeployCustomTargetTypeIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

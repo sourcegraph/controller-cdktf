@@ -4,6 +4,10 @@ package computeregionautoscaler
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeRegionAutoscaler) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionAutoscaler) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_ComputeRegionAutoscaler) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRegionAutoscaler) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionAutoscaler) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRegionAutoscaler) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRegionAutoscaler) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRegionAutoscaler) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (c *jsiiProxy_ComputeRegionAutoscaler) validatePutAutoscalingPolicyParamete
 }
 
 func (c *jsiiProxy_ComputeRegionAutoscaler) validatePutTimeoutsParameters(value *ComputeRegionAutoscalerTimeouts) error {
+	return nil
+}
+
+func validateComputeRegionAutoscaler_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

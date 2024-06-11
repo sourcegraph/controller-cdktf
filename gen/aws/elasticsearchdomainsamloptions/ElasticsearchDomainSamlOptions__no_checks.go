@@ -4,6 +4,10 @@ package elasticsearchdomainsamloptions
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_ElasticsearchDomainSamlOptions) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElasticsearchDomainSamlOptions) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (e *jsiiProxy_ElasticsearchDomainSamlOptions) validateGetStringMapAttribute
 	return nil
 }
 
+func (e *jsiiProxy_ElasticsearchDomainSamlOptions) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElasticsearchDomainSamlOptions) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_ElasticsearchDomainSamlOptions) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_ElasticsearchDomainSamlOptions) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_ElasticsearchDomainSamlOptions) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (e *jsiiProxy_ElasticsearchDomainSamlOptions) validatePutSamlOptionsParamet
 }
 
 func (e *jsiiProxy_ElasticsearchDomainSamlOptions) validatePutTimeoutsParameters(value *ElasticsearchDomainSamlOptionsTimeouts) error {
+	return nil
+}
+
+func validateElasticsearchDomainSamlOptions_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

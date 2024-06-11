@@ -4,6 +4,10 @@ package datagooglecomputehealthcheck
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataGoogleComputeHealthCheckLogConfigList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataGoogleComputeHealthCheckLogConfigList) validateGetParameters(index *float64) error {
 	return nil
 }

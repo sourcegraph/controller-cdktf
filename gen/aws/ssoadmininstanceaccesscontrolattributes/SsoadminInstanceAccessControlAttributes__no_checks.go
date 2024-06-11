@@ -4,6 +4,10 @@ package ssoadmininstanceaccesscontrolattributes
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SsoadminInstanceAccessControlAttributes) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SsoadminInstanceAccessControlAttributes) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (s *jsiiProxy_SsoadminInstanceAccessControlAttributes) validateGetStringMap
 	return nil
 }
 
+func (s *jsiiProxy_SsoadminInstanceAccessControlAttributes) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SsoadminInstanceAccessControlAttributes) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SsoadminInstanceAccessControlAttributes) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SsoadminInstanceAccessControlAttributes) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SsoadminInstanceAccessControlAttributes) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (s *jsiiProxy_SsoadminInstanceAccessControlAttributes) validateOverrideLogi
 }
 
 func (s *jsiiProxy_SsoadminInstanceAccessControlAttributes) validatePutAttributeParameters(value interface{}) error {
+	return nil
+}
+
+func validateSsoadminInstanceAccessControlAttributes_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

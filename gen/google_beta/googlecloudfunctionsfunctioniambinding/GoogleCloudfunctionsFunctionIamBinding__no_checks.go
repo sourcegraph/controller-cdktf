@@ -4,6 +4,10 @@ package googlecloudfunctionsfunctioniambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleCloudfunctionsFunctionIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudfunctionsFunctionIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleCloudfunctionsFunctionIamBinding) validateGetStringMapA
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCloudfunctionsFunctionIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudfunctionsFunctionIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudfunctionsFunctionIamBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudfunctionsFunctionIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudfunctionsFunctionIamBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleCloudfunctionsFunctionIamBinding) validateOverrideLogic
 }
 
 func (g *jsiiProxy_GoogleCloudfunctionsFunctionIamBinding) validatePutConditionParameters(value *GoogleCloudfunctionsFunctionIamBindingCondition) error {
+	return nil
+}
+
+func validateGoogleCloudfunctionsFunctionIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

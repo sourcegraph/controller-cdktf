@@ -4,6 +4,10 @@ package kmsekmconnection
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (k *jsiiProxy_KmsEkmConnectionServiceResolversList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KmsEkmConnectionServiceResolversList) validateGetParameters(index *float64) error {
 	return nil
 }

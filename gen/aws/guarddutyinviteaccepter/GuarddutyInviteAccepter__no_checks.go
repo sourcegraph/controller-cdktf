@@ -4,6 +4,10 @@ package guarddutyinviteaccepter
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GuarddutyInviteAccepter) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GuarddutyInviteAccepter) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GuarddutyInviteAccepter) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (g *jsiiProxy_GuarddutyInviteAccepter) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GuarddutyInviteAccepter) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GuarddutyInviteAccepter) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GuarddutyInviteAccepter) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GuarddutyInviteAccepter) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GuarddutyInviteAccepter) validateOverrideLogicalIdParameters(
 }
 
 func (g *jsiiProxy_GuarddutyInviteAccepter) validatePutTimeoutsParameters(value *GuarddutyInviteAccepterTimeouts) error {
+	return nil
+}
+
+func validateGuarddutyInviteAccepter_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

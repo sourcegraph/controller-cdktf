@@ -76,6 +76,9 @@ type Sesv2DedicatedIpPool interface {
 	TerraformResourceType() *string
 	Timeouts() Sesv2DedicatedIpPoolTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -97,7 +100,22 @@ type Sesv2DedicatedIpPool interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -111,6 +129,9 @@ type Sesv2DedicatedIpPool interface {
 	ResetTagsAll()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -568,6 +589,25 @@ func (j *jsiiProxy_Sesv2DedicatedIpPool)SetTagsAll(val *map[string]*string) {
 	)
 }
 
+// Generates CDKTF code for importing a Sesv2DedicatedIpPool resource upon running "cdktf plan <stack-name>".
+func Sesv2DedicatedIpPool_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateSesv2DedicatedIpPool_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.sesv2DedicatedIpPool.Sesv2DedicatedIpPool",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -650,6 +690,17 @@ func Sesv2DedicatedIpPool_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (s *jsiiProxy_Sesv2DedicatedIpPool) AddMoveTarget(moveTarget *string) {
+	if err := s.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (s *jsiiProxy_Sesv2DedicatedIpPool) AddOverride(path *string, value interface{}) {
@@ -807,6 +858,30 @@ func (s *jsiiProxy_Sesv2DedicatedIpPool) GetStringMapAttribute(terraformAttribut
 	return returns
 }
 
+func (s *jsiiProxy_Sesv2DedicatedIpPool) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		s,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_Sesv2DedicatedIpPool) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := s.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (s *jsiiProxy_Sesv2DedicatedIpPool) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -821,6 +896,39 @@ func (s *jsiiProxy_Sesv2DedicatedIpPool) InterpolationForAttribute(terraformAttr
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_Sesv2DedicatedIpPool) MoveFromId(id *string) {
+	if err := s.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
+func (s *jsiiProxy_Sesv2DedicatedIpPool) MoveTo(moveTarget *string, index interface{}) {
+	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
+}
+
+func (s *jsiiProxy_Sesv2DedicatedIpPool) MoveToId(id *string) {
+	if err := s.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveToId",
+		[]interface{}{id},
+	)
 }
 
 func (s *jsiiProxy_Sesv2DedicatedIpPool) OverrideLogicalId(newLogicalId *string) {
@@ -899,6 +1007,32 @@ func (s *jsiiProxy_Sesv2DedicatedIpPool) SynthesizeAttributes() *map[string]inte
 	_jsii_.Invoke(
 		s,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_Sesv2DedicatedIpPool) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		s,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_Sesv2DedicatedIpPool) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		s,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

@@ -4,6 +4,10 @@ package autoscalingschedule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AutoscalingSchedule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AutoscalingSchedule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (a *jsiiProxy_AutoscalingSchedule) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (a *jsiiProxy_AutoscalingSchedule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AutoscalingSchedule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (a *jsiiProxy_AutoscalingSchedule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AutoscalingSchedule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AutoscalingSchedule) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AutoscalingSchedule) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateAutoscalingSchedule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

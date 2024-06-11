@@ -4,6 +4,10 @@ package gameliftscript
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GameliftScript) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GameliftScript) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GameliftScript) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (g *jsiiProxy_GameliftScript) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GameliftScript) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GameliftScript) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GameliftScript) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GameliftScript) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GameliftScript) validateOverrideLogicalIdParameters(newLogica
 }
 
 func (g *jsiiProxy_GameliftScript) validatePutStorageLocationParameters(value *GameliftScriptStorageLocation) error {
+	return nil
+}
+
+func validateGameliftScript_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

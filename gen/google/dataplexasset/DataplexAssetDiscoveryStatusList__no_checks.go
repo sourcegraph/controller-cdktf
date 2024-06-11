@@ -4,6 +4,10 @@ package dataplexasset
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataplexAssetDiscoveryStatusList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataplexAssetDiscoveryStatusList) validateGetParameters(index *float64) error {
 	return nil
 }

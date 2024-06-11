@@ -4,6 +4,10 @@ package redshifthsmconfiguration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RedshiftHsmConfiguration) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RedshiftHsmConfiguration) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (r *jsiiProxy_RedshiftHsmConfiguration) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (r *jsiiProxy_RedshiftHsmConfiguration) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RedshiftHsmConfiguration) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (r *jsiiProxy_RedshiftHsmConfiguration) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_RedshiftHsmConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_RedshiftHsmConfiguration) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RedshiftHsmConfiguration) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateRedshiftHsmConfiguration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

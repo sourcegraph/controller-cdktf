@@ -4,6 +4,10 @@ package scceventthreatdetectioncustommodule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SccEventThreatDetectionCustomModule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SccEventThreatDetectionCustomModule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (s *jsiiProxy_SccEventThreatDetectionCustomModule) validateGetStringMapAttr
 	return nil
 }
 
+func (s *jsiiProxy_SccEventThreatDetectionCustomModule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SccEventThreatDetectionCustomModule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SccEventThreatDetectionCustomModule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SccEventThreatDetectionCustomModule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SccEventThreatDetectionCustomModule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (s *jsiiProxy_SccEventThreatDetectionCustomModule) validateOverrideLogicalI
 }
 
 func (s *jsiiProxy_SccEventThreatDetectionCustomModule) validatePutTimeoutsParameters(value *SccEventThreatDetectionCustomModuleTimeouts) error {
+	return nil
+}
+
+func validateSccEventThreatDetectionCustomModule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

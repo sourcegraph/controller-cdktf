@@ -4,6 +4,10 @@ package pubsubtopic
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PubsubTopic) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PubsubTopic) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (p *jsiiProxy_PubsubTopic) validateGetStringMapAttributeParameters(terrafor
 	return nil
 }
 
+func (p *jsiiProxy_PubsubTopic) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PubsubTopic) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PubsubTopic) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PubsubTopic) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PubsubTopic) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -65,6 +85,10 @@ func (p *jsiiProxy_PubsubTopic) validatePutSchemaSettingsParameters(value *Pubsu
 }
 
 func (p *jsiiProxy_PubsubTopic) validatePutTimeoutsParameters(value *PubsubTopicTimeouts) error {
+	return nil
+}
+
+func validatePubsubTopic_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

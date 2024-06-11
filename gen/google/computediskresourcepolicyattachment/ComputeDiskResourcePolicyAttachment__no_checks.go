@@ -4,6 +4,10 @@ package computediskresourcepolicyattachment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeDiskResourcePolicyAttachment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeDiskResourcePolicyAttachment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_ComputeDiskResourcePolicyAttachment) validateGetStringMapAttr
 	return nil
 }
 
+func (c *jsiiProxy_ComputeDiskResourcePolicyAttachment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeDiskResourcePolicyAttachment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeDiskResourcePolicyAttachment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeDiskResourcePolicyAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeDiskResourcePolicyAttachment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (c *jsiiProxy_ComputeDiskResourcePolicyAttachment) validateOverrideLogicalI
 }
 
 func (c *jsiiProxy_ComputeDiskResourcePolicyAttachment) validatePutTimeoutsParameters(value *ComputeDiskResourcePolicyAttachmentTimeouts) error {
+	return nil
+}
+
+func validateComputeDiskResourcePolicyAttachment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

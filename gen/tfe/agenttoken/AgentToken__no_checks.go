@@ -4,6 +4,10 @@ package agenttoken
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AgentToken) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AgentToken) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (a *jsiiProxy_AgentToken) validateGetStringMapAttributeParameters(terraform
 	return nil
 }
 
+func (a *jsiiProxy_AgentToken) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AgentToken) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (a *jsiiProxy_AgentToken) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AgentToken) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AgentToken) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AgentToken) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateAgentToken_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

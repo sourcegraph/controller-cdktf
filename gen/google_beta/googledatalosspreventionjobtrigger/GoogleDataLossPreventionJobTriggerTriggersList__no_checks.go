@@ -4,6 +4,10 @@ package googledatalosspreventionjobtrigger
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerTriggersList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerTriggersList) validateGetParameters(index *float64) error {
 	return nil
 }

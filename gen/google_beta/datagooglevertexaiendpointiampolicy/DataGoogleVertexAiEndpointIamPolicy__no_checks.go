@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleVertexAiEndpointIamPolicy) validateOverrideLogicalI
 	return nil
 }
 
+func validateDataGoogleVertexAiEndpointIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleVertexAiEndpointIamPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }

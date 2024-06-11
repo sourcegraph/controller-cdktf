@@ -4,6 +4,10 @@ package workbenchinstanceiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (w *jsiiProxy_WorkbenchInstanceIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorkbenchInstanceIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (w *jsiiProxy_WorkbenchInstanceIamMember) validateGetStringMapAttributePara
 	return nil
 }
 
+func (w *jsiiProxy_WorkbenchInstanceIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorkbenchInstanceIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkbenchInstanceIamMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkbenchInstanceIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkbenchInstanceIamMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (w *jsiiProxy_WorkbenchInstanceIamMember) validateOverrideLogicalIdParamete
 }
 
 func (w *jsiiProxy_WorkbenchInstanceIamMember) validatePutConditionParameters(value *WorkbenchInstanceIamMemberCondition) error {
+	return nil
+}
+
+func validateWorkbenchInstanceIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

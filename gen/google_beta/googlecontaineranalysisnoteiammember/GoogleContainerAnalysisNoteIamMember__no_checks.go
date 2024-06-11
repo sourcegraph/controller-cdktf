@@ -4,6 +4,10 @@ package googlecontaineranalysisnoteiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleContainerAnalysisNoteIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerAnalysisNoteIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleContainerAnalysisNoteIamMember) validateGetStringMapAtt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerAnalysisNoteIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerAnalysisNoteIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleContainerAnalysisNoteIamMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleContainerAnalysisNoteIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleContainerAnalysisNoteIamMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleContainerAnalysisNoteIamMember) validateOverrideLogical
 }
 
 func (g *jsiiProxy_GoogleContainerAnalysisNoteIamMember) validatePutConditionParameters(value *GoogleContainerAnalysisNoteIamMemberCondition) error {
+	return nil
+}
+
+func validateGoogleContainerAnalysisNoteIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

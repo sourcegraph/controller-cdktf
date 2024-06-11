@@ -4,6 +4,10 @@ package googlegkehubmembershipbinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleGkeHubMembershipBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleGkeHubMembershipBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleGkeHubMembershipBinding) validateGetStringMapAttributeP
 	return nil
 }
 
+func (g *jsiiProxy_GoogleGkeHubMembershipBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleGkeHubMembershipBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleGkeHubMembershipBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleGkeHubMembershipBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleGkeHubMembershipBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleGkeHubMembershipBinding) validateOverrideLogicalIdParam
 }
 
 func (g *jsiiProxy_GoogleGkeHubMembershipBinding) validatePutTimeoutsParameters(value *GoogleGkeHubMembershipBindingTimeouts) error {
+	return nil
+}
+
+func validateGoogleGkeHubMembershipBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

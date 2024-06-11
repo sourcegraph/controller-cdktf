@@ -4,6 +4,10 @@ package dataawsssmpatchbaseline
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsSsmPatchBaselineApprovalRulePatchFilterList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsSsmPatchBaselineApprovalRulePatchFilterList) validateGetParameters(index *float64) error {
 	return nil
 }

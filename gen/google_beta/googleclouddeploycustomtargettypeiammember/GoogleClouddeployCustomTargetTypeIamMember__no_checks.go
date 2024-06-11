@@ -4,6 +4,10 @@ package googleclouddeploycustomtargettypeiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleClouddeployCustomTargetTypeIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleClouddeployCustomTargetTypeIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleClouddeployCustomTargetTypeIamMember) validateGetString
 	return nil
 }
 
+func (g *jsiiProxy_GoogleClouddeployCustomTargetTypeIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleClouddeployCustomTargetTypeIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleClouddeployCustomTargetTypeIamMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleClouddeployCustomTargetTypeIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleClouddeployCustomTargetTypeIamMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleClouddeployCustomTargetTypeIamMember) validateOverrideL
 }
 
 func (g *jsiiProxy_GoogleClouddeployCustomTargetTypeIamMember) validatePutConditionParameters(value *GoogleClouddeployCustomTargetTypeIamMemberCondition) error {
+	return nil
+}
+
+func validateGoogleClouddeployCustomTargetTypeIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

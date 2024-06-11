@@ -4,6 +4,10 @@ package netappkmsconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetappKmsconfig) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetappKmsconfig) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (n *jsiiProxy_NetappKmsconfig) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (n *jsiiProxy_NetappKmsconfig) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetappKmsconfig) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetappKmsconfig) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetappKmsconfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetappKmsconfig) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (n *jsiiProxy_NetappKmsconfig) validateOverrideLogicalIdParameters(newLogic
 }
 
 func (n *jsiiProxy_NetappKmsconfig) validatePutTimeoutsParameters(value *NetappKmsconfigTimeouts) error {
+	return nil
+}
+
+func validateNetappKmsconfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

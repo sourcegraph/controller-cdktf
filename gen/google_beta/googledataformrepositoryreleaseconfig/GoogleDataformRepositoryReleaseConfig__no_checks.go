@@ -4,6 +4,10 @@ package googledataformrepositoryreleaseconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleDataformRepositoryReleaseConfig) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataformRepositoryReleaseConfig) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleDataformRepositoryReleaseConfig) validateGetStringMapAt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataformRepositoryReleaseConfig) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataformRepositoryReleaseConfig) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataformRepositoryReleaseConfig) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataformRepositoryReleaseConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataformRepositoryReleaseConfig) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (g *jsiiProxy_GoogleDataformRepositoryReleaseConfig) validatePutCodeCompila
 }
 
 func (g *jsiiProxy_GoogleDataformRepositoryReleaseConfig) validatePutTimeoutsParameters(value *GoogleDataformRepositoryReleaseConfigTimeouts) error {
+	return nil
+}
+
+func validateGoogleDataformRepositoryReleaseConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package googleosconfigospolicyassignment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleOsConfigOsPolicyAssignment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleOsConfigOsPolicyAssignment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleOsConfigOsPolicyAssignment) validateGetStringMapAttribu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleOsConfigOsPolicyAssignment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleOsConfigOsPolicyAssignment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleOsConfigOsPolicyAssignment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleOsConfigOsPolicyAssignment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleOsConfigOsPolicyAssignment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -65,6 +85,10 @@ func (g *jsiiProxy_GoogleOsConfigOsPolicyAssignment) validatePutRolloutParameter
 }
 
 func (g *jsiiProxy_GoogleOsConfigOsPolicyAssignment) validatePutTimeoutsParameters(value *GoogleOsConfigOsPolicyAssignmentTimeouts) error {
+	return nil
+}
+
+func validateGoogleOsConfigOsPolicyAssignment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

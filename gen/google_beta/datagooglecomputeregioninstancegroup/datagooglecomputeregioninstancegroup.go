@@ -101,6 +101,10 @@ type DataGoogleComputeRegionInstanceGroup interface {
 	ResetRegion()
 	ResetSelfLink()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -506,6 +510,25 @@ func (j *jsiiProxy_DataGoogleComputeRegionInstanceGroup)SetSelfLink(val *string)
 	)
 }
 
+// Generates CDKTF code for importing a DataGoogleComputeRegionInstanceGroup resource upon running "cdktf plan <stack-name>".
+func DataGoogleComputeRegionInstanceGroup_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataGoogleComputeRegionInstanceGroup_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google-beta.dataGoogleComputeRegionInstanceGroup.DataGoogleComputeRegionInstanceGroup",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -826,6 +849,32 @@ func (d *jsiiProxy_DataGoogleComputeRegionInstanceGroup) SynthesizeAttributes() 
 	_jsii_.Invoke(
 		d,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGoogleComputeRegionInstanceGroup) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		d,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGoogleComputeRegionInstanceGroup) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

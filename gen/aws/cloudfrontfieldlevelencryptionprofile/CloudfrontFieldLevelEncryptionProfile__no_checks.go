@@ -4,6 +4,10 @@ package cloudfrontfieldlevelencryptionprofile
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) validateGetStringMapAt
 	return nil
 }
 
+func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) validateOverrideLogica
 }
 
 func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) validatePutEncryptionEntitiesParameters(value *CloudfrontFieldLevelEncryptionProfileEncryptionEntities) error {
+	return nil
+}
+
+func validateCloudfrontFieldLevelEncryptionProfile_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

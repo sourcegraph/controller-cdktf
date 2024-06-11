@@ -1,4 +1,4 @@
 terraform 1.2.6
 golang 1.20
-nodejs 16.17.1
+nodejs 20.13.1
 

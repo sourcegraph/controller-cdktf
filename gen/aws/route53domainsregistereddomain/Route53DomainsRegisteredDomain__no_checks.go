@@ -4,6 +4,10 @@ package route53domainsregistereddomain
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_Route53DomainsRegisteredDomain) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_Route53DomainsRegisteredDomain) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (r *jsiiProxy_Route53DomainsRegisteredDomain) validateGetStringMapAttribute
 	return nil
 }
 
+func (r *jsiiProxy_Route53DomainsRegisteredDomain) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_Route53DomainsRegisteredDomain) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_Route53DomainsRegisteredDomain) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_Route53DomainsRegisteredDomain) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_Route53DomainsRegisteredDomain) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -69,6 +89,10 @@ func (r *jsiiProxy_Route53DomainsRegisteredDomain) validatePutTechContactParamet
 }
 
 func (r *jsiiProxy_Route53DomainsRegisteredDomain) validatePutTimeoutsParameters(value *Route53DomainsRegisteredDomainTimeouts) error {
+	return nil
+}
+
+func validateRoute53DomainsRegisteredDomain_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

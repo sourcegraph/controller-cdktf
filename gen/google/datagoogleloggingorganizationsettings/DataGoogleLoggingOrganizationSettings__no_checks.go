@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleLoggingOrganizationSettings) validateOverrideLogica
 	return nil
 }
 
+func validateDataGoogleLoggingOrganizationSettings_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleLoggingOrganizationSettings_IsConstructParameters(x interface{}) error {
 	return nil
 }

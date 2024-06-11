@@ -4,6 +4,10 @@ package eventhook
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EventHookHeadersList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EventHookHeadersList) validateGetParameters(index *float64) error {
 	return nil
 }

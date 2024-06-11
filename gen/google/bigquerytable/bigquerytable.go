@@ -124,6 +124,9 @@ type BigqueryTable interface {
 	Type() *string
 	View() BigqueryTableViewOutputReference
 	ViewInput() *BigqueryTableView
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -145,7 +148,22 @@ type BigqueryTable interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -180,6 +198,9 @@ type BigqueryTable interface {
 	ResetTimePartitioning()
 	ResetView()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -1125,6 +1146,25 @@ func (j *jsiiProxy_BigqueryTable)SetTableId(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a BigqueryTable resource upon running "cdktf plan <stack-name>".
+func BigqueryTable_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateBigqueryTable_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.bigqueryTable.BigqueryTable",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -1207,6 +1247,17 @@ func BigqueryTable_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (b *jsiiProxy_BigqueryTable) AddMoveTarget(moveTarget *string) {
+	if err := b.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (b *jsiiProxy_BigqueryTable) AddOverride(path *string, value interface{}) {
@@ -1364,6 +1415,30 @@ func (b *jsiiProxy_BigqueryTable) GetStringMapAttribute(terraformAttribute *stri
 	return returns
 }
 
+func (b *jsiiProxy_BigqueryTable) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		b,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BigqueryTable) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := b.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (b *jsiiProxy_BigqueryTable) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := b.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -1378,6 +1453,39 @@ func (b *jsiiProxy_BigqueryTable) InterpolationForAttribute(terraformAttribute *
 	)
 
 	return returns
+}
+
+func (b *jsiiProxy_BigqueryTable) MoveFromId(id *string) {
+	if err := b.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
+func (b *jsiiProxy_BigqueryTable) MoveTo(moveTarget *string, index interface{}) {
+	if err := b.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
+}
+
+func (b *jsiiProxy_BigqueryTable) MoveToId(id *string) {
+	if err := b.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"moveToId",
+		[]interface{}{id},
+	)
 }
 
 func (b *jsiiProxy_BigqueryTable) OverrideLogicalId(newLogicalId *string) {
@@ -1645,6 +1753,32 @@ func (b *jsiiProxy_BigqueryTable) SynthesizeAttributes() *map[string]interface{}
 	_jsii_.Invoke(
 		b,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BigqueryTable) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		b,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BigqueryTable) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		b,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

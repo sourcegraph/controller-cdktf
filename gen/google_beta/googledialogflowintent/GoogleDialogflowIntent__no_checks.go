@@ -4,6 +4,10 @@ package googledialogflowintent
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleDialogflowIntent) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDialogflowIntent) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleDialogflowIntent) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDialogflowIntent) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDialogflowIntent) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDialogflowIntent) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDialogflowIntent) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDialogflowIntent) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleDialogflowIntent) validateOverrideLogicalIdParameters(n
 }
 
 func (g *jsiiProxy_GoogleDialogflowIntent) validatePutTimeoutsParameters(value *GoogleDialogflowIntentTimeouts) error {
+	return nil
+}
+
+func validateGoogleDialogflowIntent_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

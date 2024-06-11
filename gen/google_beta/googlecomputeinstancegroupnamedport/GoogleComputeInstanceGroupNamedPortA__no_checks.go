@@ -4,6 +4,10 @@ package googlecomputeinstancegroupnamedport
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComputeInstanceGroupNamedPortA) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceGroupNamedPortA) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupNamedPortA) validateGetStringMapAtt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeInstanceGroupNamedPortA) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceGroupNamedPortA) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceGroupNamedPortA) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceGroupNamedPortA) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceGroupNamedPortA) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupNamedPortA) validateOverrideLogical
 }
 
 func (g *jsiiProxy_GoogleComputeInstanceGroupNamedPortA) validatePutTimeoutsParameters(value *GoogleComputeInstanceGroupNamedPortTimeouts) error {
+	return nil
+}
+
+func validateGoogleComputeInstanceGroupNamedPortA_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

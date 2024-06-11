@@ -4,6 +4,10 @@ package biglaketable
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BiglakeTable) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BiglakeTable) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (b *jsiiProxy_BiglakeTable) validateGetStringMapAttributeParameters(terrafo
 	return nil
 }
 
+func (b *jsiiProxy_BiglakeTable) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BiglakeTable) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BiglakeTable) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BiglakeTable) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (b *jsiiProxy_BiglakeTable) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (b *jsiiProxy_BiglakeTable) validatePutHiveOptionsParameters(value *Biglake
 }
 
 func (b *jsiiProxy_BiglakeTable) validatePutTimeoutsParameters(value *BiglakeTableTimeouts) error {
+	return nil
+}
+
+func validateBiglakeTable_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

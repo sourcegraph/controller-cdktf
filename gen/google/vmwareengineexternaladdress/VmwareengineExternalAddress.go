@@ -80,6 +80,9 @@ type VmwareengineExternalAddress interface {
 	TimeoutsInput() interface{}
 	Uid() *string
 	UpdateTime() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -101,7 +104,22 @@ type VmwareengineExternalAddress interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -113,6 +131,9 @@ type VmwareengineExternalAddress interface {
 	ResetOverrideLogicalId()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -610,6 +631,25 @@ func (j *jsiiProxy_VmwareengineExternalAddress)SetProvisioners(val *[]interface{
 	)
 }
 
+// Generates CDKTF code for importing a VmwareengineExternalAddress resource upon running "cdktf plan <stack-name>".
+func VmwareengineExternalAddress_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateVmwareengineExternalAddress_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.vmwareengineExternalAddress.VmwareengineExternalAddress",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -692,6 +732,17 @@ func VmwareengineExternalAddress_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (v *jsiiProxy_VmwareengineExternalAddress) AddMoveTarget(moveTarget *string) {
+	if err := v.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (v *jsiiProxy_VmwareengineExternalAddress) AddOverride(path *string, value interface{}) {
@@ -849,6 +900,30 @@ func (v *jsiiProxy_VmwareengineExternalAddress) GetStringMapAttribute(terraformA
 	return returns
 }
 
+func (v *jsiiProxy_VmwareengineExternalAddress) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		v,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (v *jsiiProxy_VmwareengineExternalAddress) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := v.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (v *jsiiProxy_VmwareengineExternalAddress) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := v.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -863,6 +938,39 @@ func (v *jsiiProxy_VmwareengineExternalAddress) InterpolationForAttribute(terraf
 	)
 
 	return returns
+}
+
+func (v *jsiiProxy_VmwareengineExternalAddress) MoveFromId(id *string) {
+	if err := v.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
+func (v *jsiiProxy_VmwareengineExternalAddress) MoveTo(moveTarget *string, index interface{}) {
+	if err := v.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
+}
+
+func (v *jsiiProxy_VmwareengineExternalAddress) MoveToId(id *string) {
+	if err := v.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"moveToId",
+		[]interface{}{id},
+	)
 }
 
 func (v *jsiiProxy_VmwareengineExternalAddress) OverrideLogicalId(newLogicalId *string) {
@@ -925,6 +1033,32 @@ func (v *jsiiProxy_VmwareengineExternalAddress) SynthesizeAttributes() *map[stri
 	_jsii_.Invoke(
 		v,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (v *jsiiProxy_VmwareengineExternalAddress) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		v,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (v *jsiiProxy_VmwareengineExternalAddress) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		v,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

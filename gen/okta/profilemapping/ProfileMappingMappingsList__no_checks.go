@@ -4,6 +4,10 @@ package profilemapping
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_ProfileMappingMappingsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_ProfileMappingMappingsList) validateGetParameters(index *float64) error {
 	return nil
 }

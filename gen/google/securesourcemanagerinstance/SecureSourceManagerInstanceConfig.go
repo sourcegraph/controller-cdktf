@@ -32,13 +32,15 @@ type SecureSourceManagerInstanceConfig struct {
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Customer-managed encryption key name, in the format projects/*\/locations/*\/keyRings/*\/cryptoKeys/*.
+	// Customer-managed encryption key name, in the format projects/* /locations/* /keyRings/* /cryptoKeys/*.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/secure_source_manager_instance#kms_key SecureSourceManagerInstance#kms_key}
+	//
+	// Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 	KmsKey *string `field:"optional" json:"kmsKey" yaml:"kmsKey"`
 	// Labels as key value pairs.
 	//
-	// *Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+	// **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 	// Please refer to the field 'effective_labels' for all of the labels present on the resource.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/secure_source_manager_instance#labels SecureSourceManagerInstance#labels}

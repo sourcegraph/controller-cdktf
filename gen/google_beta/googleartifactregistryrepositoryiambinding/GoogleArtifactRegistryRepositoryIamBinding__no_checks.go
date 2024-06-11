@@ -4,6 +4,10 @@ package googleartifactregistryrepositoryiambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleArtifactRegistryRepositoryIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleArtifactRegistryRepositoryIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleArtifactRegistryRepositoryIamBinding) validateGetString
 	return nil
 }
 
+func (g *jsiiProxy_GoogleArtifactRegistryRepositoryIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleArtifactRegistryRepositoryIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleArtifactRegistryRepositoryIamBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleArtifactRegistryRepositoryIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleArtifactRegistryRepositoryIamBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleArtifactRegistryRepositoryIamBinding) validateOverrideL
 }
 
 func (g *jsiiProxy_GoogleArtifactRegistryRepositoryIamBinding) validatePutConditionParameters(value *GoogleArtifactRegistryRepositoryIamBindingCondition) error {
+	return nil
+}
+
+func validateGoogleArtifactRegistryRepositoryIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

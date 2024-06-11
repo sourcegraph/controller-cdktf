@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleApphubApplication) validateOverrideLogicalIdParamet
 	return nil
 }
 
+func validateDataGoogleApphubApplication_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleApphubApplication_IsConstructParameters(x interface{}) error {
 	return nil
 }

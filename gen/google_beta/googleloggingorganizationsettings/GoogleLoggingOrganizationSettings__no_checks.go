@@ -4,6 +4,10 @@ package googleloggingorganizationsettings
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleLoggingOrganizationSettings) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleLoggingOrganizationSettings) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleLoggingOrganizationSettings) validateGetStringMapAttrib
 	return nil
 }
 
+func (g *jsiiProxy_GoogleLoggingOrganizationSettings) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleLoggingOrganizationSettings) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleLoggingOrganizationSettings) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleLoggingOrganizationSettings) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleLoggingOrganizationSettings) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleLoggingOrganizationSettings) validateOverrideLogicalIdP
 }
 
 func (g *jsiiProxy_GoogleLoggingOrganizationSettings) validatePutTimeoutsParameters(value *GoogleLoggingOrganizationSettingsTimeouts) error {
+	return nil
+}
+
+func validateGoogleLoggingOrganizationSettings_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

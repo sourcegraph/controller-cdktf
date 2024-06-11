@@ -4,6 +4,10 @@ package computerouterpeer
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeRouterPeer) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRouterPeer) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_ComputeRouterPeer) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRouterPeer) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRouterPeer) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRouterPeer) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRouterPeer) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRouterPeer) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -65,6 +85,10 @@ func (c *jsiiProxy_ComputeRouterPeer) validatePutMd5AuthenticationKeyParameters(
 }
 
 func (c *jsiiProxy_ComputeRouterPeer) validatePutTimeoutsParameters(value *ComputeRouterPeerTimeouts) error {
+	return nil
+}
+
+func validateComputeRouterPeer_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

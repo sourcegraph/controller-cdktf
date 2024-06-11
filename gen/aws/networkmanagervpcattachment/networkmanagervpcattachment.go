@@ -89,6 +89,9 @@ type NetworkmanagerVpcAttachment interface {
 	VpcArn() *string
 	SetVpcArn(val *string)
 	VpcArnInput() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -110,7 +113,22 @@ type NetworkmanagerVpcAttachment interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -125,6 +143,9 @@ type NetworkmanagerVpcAttachment interface {
 	ResetTagsAll()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -713,6 +734,25 @@ func (j *jsiiProxy_NetworkmanagerVpcAttachment)SetVpcArn(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a NetworkmanagerVpcAttachment resource upon running "cdktf plan <stack-name>".
+func NetworkmanagerVpcAttachment_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateNetworkmanagerVpcAttachment_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.networkmanagerVpcAttachment.NetworkmanagerVpcAttachment",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -795,6 +835,17 @@ func NetworkmanagerVpcAttachment_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachment) AddMoveTarget(moveTarget *string) {
+	if err := n.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (n *jsiiProxy_NetworkmanagerVpcAttachment) AddOverride(path *string, value interface{}) {
@@ -952,6 +1003,30 @@ func (n *jsiiProxy_NetworkmanagerVpcAttachment) GetStringMapAttribute(terraformA
 	return returns
 }
 
+func (n *jsiiProxy_NetworkmanagerVpcAttachment) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		n,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachment) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := n.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (n *jsiiProxy_NetworkmanagerVpcAttachment) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := n.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -966,6 +1041,39 @@ func (n *jsiiProxy_NetworkmanagerVpcAttachment) InterpolationForAttribute(terraf
 	)
 
 	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachment) MoveFromId(id *string) {
+	if err := n.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachment) MoveTo(moveTarget *string, index interface{}) {
+	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachment) MoveToId(id *string) {
+	if err := n.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"moveToId",
+		[]interface{}{id},
+	)
 }
 
 func (n *jsiiProxy_NetworkmanagerVpcAttachment) OverrideLogicalId(newLogicalId *string) {
@@ -1055,6 +1163,32 @@ func (n *jsiiProxy_NetworkmanagerVpcAttachment) SynthesizeAttributes() *map[stri
 	_jsii_.Invoke(
 		n,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachment) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		n,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachment) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		n,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

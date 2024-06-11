@@ -4,6 +4,10 @@ package googleapigatewayapiconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleApiGatewayApiConfigA) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleApiGatewayApiConfigA) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleApiGatewayApiConfigA) validateGetStringMapAttributePara
 	return nil
 }
 
+func (g *jsiiProxy_GoogleApiGatewayApiConfigA) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleApiGatewayApiConfigA) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleApiGatewayApiConfigA) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleApiGatewayApiConfigA) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleApiGatewayApiConfigA) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -69,6 +89,10 @@ func (g *jsiiProxy_GoogleApiGatewayApiConfigA) validatePutOpenapiDocumentsParame
 }
 
 func (g *jsiiProxy_GoogleApiGatewayApiConfigA) validatePutTimeoutsParameters(value *GoogleApiGatewayApiConfigTimeouts) error {
+	return nil
+}
+
+func validateGoogleApiGatewayApiConfigA_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

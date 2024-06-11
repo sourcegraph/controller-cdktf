@@ -4,6 +4,10 @@ package wafregionalregexpatternset
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (w *jsiiProxy_WafregionalRegexPatternSet) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WafregionalRegexPatternSet) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (w *jsiiProxy_WafregionalRegexPatternSet) validateGetStringMapAttributePara
 	return nil
 }
 
+func (w *jsiiProxy_WafregionalRegexPatternSet) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WafregionalRegexPatternSet) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (w *jsiiProxy_WafregionalRegexPatternSet) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WafregionalRegexPatternSet) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (w *jsiiProxy_WafregionalRegexPatternSet) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WafregionalRegexPatternSet) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateWafregionalRegexPatternSet_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

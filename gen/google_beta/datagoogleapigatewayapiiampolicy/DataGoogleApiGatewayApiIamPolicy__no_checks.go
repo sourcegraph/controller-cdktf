@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleApiGatewayApiIamPolicy) validateOverrideLogicalIdPa
 	return nil
 }
 
+func validateDataGoogleApiGatewayApiIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleApiGatewayApiIamPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }

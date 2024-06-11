@@ -4,6 +4,10 @@ package clouddomainsregistration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ClouddomainsRegistrationDnsSettingsGlueRecordsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ClouddomainsRegistrationDnsSettingsGlueRecordsList) validateGetParameters(index *float64) error {
 	return nil
 }

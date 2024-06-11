@@ -4,6 +4,10 @@ package discoveryenginedatastore
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DiscoveryEngineDataStore) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DiscoveryEngineDataStore) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (d *jsiiProxy_DiscoveryEngineDataStore) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (d *jsiiProxy_DiscoveryEngineDataStore) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DiscoveryEngineDataStore) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DiscoveryEngineDataStore) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DiscoveryEngineDataStore) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DiscoveryEngineDataStore) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (d *jsiiProxy_DiscoveryEngineDataStore) validateOverrideLogicalIdParameters
 }
 
 func (d *jsiiProxy_DiscoveryEngineDataStore) validatePutTimeoutsParameters(value *DiscoveryEngineDataStoreTimeouts) error {
+	return nil
+}
+
+func validateDiscoveryEngineDataStore_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

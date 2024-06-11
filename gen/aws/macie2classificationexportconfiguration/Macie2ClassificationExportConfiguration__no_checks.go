@@ -4,6 +4,10 @@ package macie2classificationexportconfiguration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_Macie2ClassificationExportConfiguration) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_Macie2ClassificationExportConfiguration) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (m *jsiiProxy_Macie2ClassificationExportConfiguration) validateGetStringMap
 	return nil
 }
 
+func (m *jsiiProxy_Macie2ClassificationExportConfiguration) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_Macie2ClassificationExportConfiguration) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_Macie2ClassificationExportConfiguration) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_Macie2ClassificationExportConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_Macie2ClassificationExportConfiguration) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (m *jsiiProxy_Macie2ClassificationExportConfiguration) validateOverrideLogi
 }
 
 func (m *jsiiProxy_Macie2ClassificationExportConfiguration) validatePutS3DestinationParameters(value *Macie2ClassificationExportConfigurationS3Destination) error {
+	return nil
+}
+
+func validateMacie2ClassificationExportConfiguration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

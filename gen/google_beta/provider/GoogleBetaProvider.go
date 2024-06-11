@@ -713,6 +713,9 @@ type GoogleBetaProvider interface {
 	ResetWorkstationsCustomEndpoint()
 	ResetZone()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -5570,6 +5573,25 @@ func (j *jsiiProxy_GoogleBetaProvider)SetZone(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a GoogleBetaProvider resource upon running "cdktf plan <stack-name>".
+func GoogleBetaProvider_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateGoogleBetaProvider_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google-beta.provider.GoogleBetaProvider",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -7034,6 +7056,32 @@ func (g *jsiiProxy_GoogleBetaProvider) SynthesizeAttributes() *map[string]interf
 	_jsii_.Invoke(
 		g,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleBetaProvider) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		g,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleBetaProvider) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		g,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

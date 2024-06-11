@@ -4,6 +4,10 @@ package googlecomputeinstancefromtemplate
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComputeInstanceFromTemplateNetworkInterfaceAliasIpRangeList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceFromTemplateNetworkInterfaceAliasIpRangeList) validateGetParameters(index *float64) error {
 	return nil
 }

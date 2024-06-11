@@ -4,6 +4,10 @@ package detectivegraph
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DetectiveGraph) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DetectiveGraph) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (d *jsiiProxy_DetectiveGraph) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (d *jsiiProxy_DetectiveGraph) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DetectiveGraph) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (d *jsiiProxy_DetectiveGraph) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DetectiveGraph) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DetectiveGraph) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DetectiveGraph) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateDetectiveGraph_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

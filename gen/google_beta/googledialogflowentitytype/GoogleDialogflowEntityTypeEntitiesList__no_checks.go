@@ -4,6 +4,10 @@ package googledialogflowentitytype
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleDialogflowEntityTypeEntitiesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDialogflowEntityTypeEntitiesList) validateGetParameters(index *float64) error {
 	return nil
 }

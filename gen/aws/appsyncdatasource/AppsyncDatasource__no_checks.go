@@ -4,6 +4,10 @@ package appsyncdatasource
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AppsyncDatasource) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppsyncDatasource) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (a *jsiiProxy_AppsyncDatasource) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (a *jsiiProxy_AppsyncDatasource) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppsyncDatasource) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppsyncDatasource) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppsyncDatasource) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppsyncDatasource) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -69,6 +89,10 @@ func (a *jsiiProxy_AppsyncDatasource) validatePutLambdaConfigParameters(value *A
 }
 
 func (a *jsiiProxy_AppsyncDatasource) validatePutRelationalDatabaseConfigParameters(value *AppsyncDatasourceRelationalDatabaseConfig) error {
+	return nil
+}
+
+func validateAppsyncDatasource_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

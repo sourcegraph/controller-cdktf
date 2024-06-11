@@ -4,6 +4,10 @@ package vpcipampool
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VpcIpamPool) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcIpamPool) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (v *jsiiProxy_VpcIpamPool) validateGetStringMapAttributeParameters(terrafor
 	return nil
 }
 
+func (v *jsiiProxy_VpcIpamPool) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcIpamPool) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VpcIpamPool) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VpcIpamPool) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VpcIpamPool) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (v *jsiiProxy_VpcIpamPool) validateOverrideLogicalIdParameters(newLogicalId
 }
 
 func (v *jsiiProxy_VpcIpamPool) validatePutTimeoutsParameters(value *VpcIpamPoolTimeouts) error {
+	return nil
+}
+
+func validateVpcIpamPool_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

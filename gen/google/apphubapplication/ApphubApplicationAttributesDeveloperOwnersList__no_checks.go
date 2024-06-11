@@ -4,6 +4,10 @@ package apphubapplication
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ApphubApplicationAttributesDeveloperOwnersList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApphubApplicationAttributesDeveloperOwnersList) validateGetParameters(index *float64) error {
 	return nil
 }

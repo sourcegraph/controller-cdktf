@@ -4,6 +4,10 @@ package googlebiglakecatalog
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleBiglakeCatalog) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBiglakeCatalog) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleBiglakeCatalog) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBiglakeCatalog) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBiglakeCatalog) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBiglakeCatalog) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBiglakeCatalog) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBiglakeCatalog) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleBiglakeCatalog) validateOverrideLogicalIdParameters(new
 }
 
 func (g *jsiiProxy_GoogleBiglakeCatalog) validatePutTimeoutsParameters(value *GoogleBiglakeCatalogTimeouts) error {
+	return nil
+}
+
+func validateGoogleBiglakeCatalog_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

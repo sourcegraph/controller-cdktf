@@ -4,6 +4,10 @@ package macie2account
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_Macie2Account) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_Macie2Account) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (m *jsiiProxy_Macie2Account) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (m *jsiiProxy_Macie2Account) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_Macie2Account) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (m *jsiiProxy_Macie2Account) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_Macie2Account) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_Macie2Account) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_Macie2Account) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateMacie2Account_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

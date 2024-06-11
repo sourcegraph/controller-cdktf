@@ -4,6 +4,10 @@ package gkehubfeature
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GkeHubFeatureResourceStateList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GkeHubFeatureResourceStateList) validateGetParameters(index *float64) error {
 	return nil
 }

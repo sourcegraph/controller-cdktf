@@ -4,6 +4,10 @@ package dataawslocationplaceindex
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsLocationPlaceIndexDataSourceConfigurationList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsLocationPlaceIndexDataSourceConfigurationList) validateGetParameters(index *float64) error {
 	return nil
 }

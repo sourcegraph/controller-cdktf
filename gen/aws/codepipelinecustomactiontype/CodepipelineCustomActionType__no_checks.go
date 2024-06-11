@@ -4,6 +4,10 @@ package codepipelinecustomactiontype
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CodepipelineCustomActionType) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CodepipelineCustomActionType) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_CodepipelineCustomActionType) validateGetStringMapAttributePa
 	return nil
 }
 
+func (c *jsiiProxy_CodepipelineCustomActionType) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CodepipelineCustomActionType) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CodepipelineCustomActionType) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CodepipelineCustomActionType) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CodepipelineCustomActionType) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -65,6 +85,10 @@ func (c *jsiiProxy_CodepipelineCustomActionType) validatePutOutputArtifactDetail
 }
 
 func (c *jsiiProxy_CodepipelineCustomActionType) validatePutSettingsParameters(value *CodepipelineCustomActionTypeSettings) error {
+	return nil
+}
+
+func validateCodepipelineCustomActionType_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

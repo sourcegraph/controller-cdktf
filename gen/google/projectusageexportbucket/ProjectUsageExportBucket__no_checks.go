@@ -4,6 +4,10 @@ package projectusageexportbucket
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_ProjectUsageExportBucket) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_ProjectUsageExportBucket) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (p *jsiiProxy_ProjectUsageExportBucket) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (p *jsiiProxy_ProjectUsageExportBucket) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_ProjectUsageExportBucket) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_ProjectUsageExportBucket) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_ProjectUsageExportBucket) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_ProjectUsageExportBucket) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (p *jsiiProxy_ProjectUsageExportBucket) validateOverrideLogicalIdParameters
 }
 
 func (p *jsiiProxy_ProjectUsageExportBucket) validatePutTimeoutsParameters(value *ProjectUsageExportBucketTimeouts) error {
+	return nil
+}
+
+func validateProjectUsageExportBucket_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

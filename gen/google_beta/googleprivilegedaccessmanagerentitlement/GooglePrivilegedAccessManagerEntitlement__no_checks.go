@@ -4,6 +4,10 @@ package googleprivilegedaccessmanagerentitlement
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) validateGetStringMa
 	return nil
 }
 
+func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -73,6 +93,10 @@ func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) validatePutRequeste
 }
 
 func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) validatePutTimeoutsParameters(value *GooglePrivilegedAccessManagerEntitlementTimeouts) error {
+	return nil
+}
+
+func validateGooglePrivilegedAccessManagerEntitlement_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

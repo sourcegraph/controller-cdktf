@@ -75,6 +75,9 @@ type Manifest interface {
 	WaitFor() ManifestWaitForOutputReference
 	WaitForInput() interface{}
 	WaitInput() *ManifestWait
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -96,7 +99,22 @@ type Manifest interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -114,6 +132,9 @@ type Manifest interface {
 	ResetWait()
 	ResetWaitFor()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -559,6 +580,25 @@ func (j *jsiiProxy_Manifest)SetProvisioners(val *[]interface{}) {
 	)
 }
 
+// Generates CDKTF code for importing a Manifest resource upon running "cdktf plan <stack-name>".
+func Manifest_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateManifest_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-kubernetes.manifest.Manifest",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -641,6 +681,17 @@ func Manifest_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (m *jsiiProxy_Manifest) AddMoveTarget(moveTarget *string) {
+	if err := m.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (m *jsiiProxy_Manifest) AddOverride(path *string, value interface{}) {
@@ -798,6 +849,30 @@ func (m *jsiiProxy_Manifest) GetStringMapAttribute(terraformAttribute *string) *
 	return returns
 }
 
+func (m *jsiiProxy_Manifest) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		m,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_Manifest) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := m.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (m *jsiiProxy_Manifest) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -812,6 +887,39 @@ func (m *jsiiProxy_Manifest) InterpolationForAttribute(terraformAttribute *strin
 	)
 
 	return returns
+}
+
+func (m *jsiiProxy_Manifest) MoveFromId(id *string) {
+	if err := m.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
+func (m *jsiiProxy_Manifest) MoveTo(moveTarget *string, index interface{}) {
+	if err := m.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
+}
+
+func (m *jsiiProxy_Manifest) MoveToId(id *string) {
+	if err := m.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"moveToId",
+		[]interface{}{id},
+	)
 }
 
 func (m *jsiiProxy_Manifest) OverrideLogicalId(newLogicalId *string) {
@@ -931,6 +1039,32 @@ func (m *jsiiProxy_Manifest) SynthesizeAttributes() *map[string]interface{} {
 	_jsii_.Invoke(
 		m,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_Manifest) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		m,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_Manifest) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		m,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

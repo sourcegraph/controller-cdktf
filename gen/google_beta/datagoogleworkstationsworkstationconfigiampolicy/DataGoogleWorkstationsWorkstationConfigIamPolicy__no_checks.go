@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleWorkstationsWorkstationConfigIamPolicy) validateOve
 	return nil
 }
 
+func validateDataGoogleWorkstationsWorkstationConfigIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleWorkstationsWorkstationConfigIamPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }

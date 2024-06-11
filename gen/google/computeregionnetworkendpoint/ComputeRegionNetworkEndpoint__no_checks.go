@@ -4,6 +4,10 @@ package computeregionnetworkendpoint
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeRegionNetworkEndpoint) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionNetworkEndpoint) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_ComputeRegionNetworkEndpoint) validateGetStringMapAttributePa
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRegionNetworkEndpoint) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionNetworkEndpoint) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRegionNetworkEndpoint) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRegionNetworkEndpoint) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRegionNetworkEndpoint) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (c *jsiiProxy_ComputeRegionNetworkEndpoint) validateOverrideLogicalIdParame
 }
 
 func (c *jsiiProxy_ComputeRegionNetworkEndpoint) validatePutTimeoutsParameters(value *ComputeRegionNetworkEndpointTimeouts) error {
+	return nil
+}
+
+func validateComputeRegionNetworkEndpoint_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

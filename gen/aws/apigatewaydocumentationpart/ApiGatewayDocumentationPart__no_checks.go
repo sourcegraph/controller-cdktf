@@ -4,6 +4,10 @@ package apigatewaydocumentationpart
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ApiGatewayDocumentationPart) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApiGatewayDocumentationPart) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (a *jsiiProxy_ApiGatewayDocumentationPart) validateGetStringMapAttributePar
 	return nil
 }
 
+func (a *jsiiProxy_ApiGatewayDocumentationPart) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApiGatewayDocumentationPart) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApiGatewayDocumentationPart) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApiGatewayDocumentationPart) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApiGatewayDocumentationPart) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (a *jsiiProxy_ApiGatewayDocumentationPart) validateOverrideLogicalIdParamet
 }
 
 func (a *jsiiProxy_ApiGatewayDocumentationPart) validatePutLocationParameters(value *ApiGatewayDocumentationPartLocation) error {
+	return nil
+}
+
+func validateApiGatewayDocumentationPart_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package googlecomputeinterconnect
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComputeInterconnect) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeInterconnect) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleComputeInterconnect) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeInterconnect) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeInterconnect) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeInterconnect) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeInterconnect) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeInterconnect) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (g *jsiiProxy_GoogleComputeInterconnect) validatePutMacsecParameters(value 
 }
 
 func (g *jsiiProxy_GoogleComputeInterconnect) validatePutTimeoutsParameters(value *GoogleComputeInterconnectTimeouts) error {
+	return nil
+}
+
+func validateGoogleComputeInterconnect_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

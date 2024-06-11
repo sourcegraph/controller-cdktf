@@ -4,6 +4,10 @@ package kendraquerysuggestionsblocklist
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (k *jsiiProxy_KendraQuerySuggestionsBlockList) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KendraQuerySuggestionsBlockList) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (k *jsiiProxy_KendraQuerySuggestionsBlockList) validateGetStringMapAttribut
 	return nil
 }
 
+func (k *jsiiProxy_KendraQuerySuggestionsBlockList) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KendraQuerySuggestionsBlockList) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_KendraQuerySuggestionsBlockList) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_KendraQuerySuggestionsBlockList) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (k *jsiiProxy_KendraQuerySuggestionsBlockList) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (k *jsiiProxy_KendraQuerySuggestionsBlockList) validatePutSourceS3PathParam
 }
 
 func (k *jsiiProxy_KendraQuerySuggestionsBlockList) validatePutTimeoutsParameters(value *KendraQuerySuggestionsBlockListTimeouts) error {
+	return nil
+}
+
+func validateKendraQuerySuggestionsBlockList_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

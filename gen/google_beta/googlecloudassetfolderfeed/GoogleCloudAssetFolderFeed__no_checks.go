@@ -4,6 +4,10 @@ package googlecloudassetfolderfeed
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleCloudAssetFolderFeed) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudAssetFolderFeed) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleCloudAssetFolderFeed) validateGetStringMapAttributePara
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCloudAssetFolderFeed) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudAssetFolderFeed) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudAssetFolderFeed) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudAssetFolderFeed) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudAssetFolderFeed) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (g *jsiiProxy_GoogleCloudAssetFolderFeed) validatePutFeedOutputConfigParame
 }
 
 func (g *jsiiProxy_GoogleCloudAssetFolderFeed) validatePutTimeoutsParameters(value *GoogleCloudAssetFolderFeedTimeouts) error {
+	return nil
+}
+
+func validateGoogleCloudAssetFolderFeed_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

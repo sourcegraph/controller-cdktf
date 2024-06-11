@@ -4,6 +4,10 @@ package googlevmwareenginenetworkpolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleVmwareengineNetworkPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleVmwareengineNetworkPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleVmwareengineNetworkPolicy) validateGetStringMapAttribut
 	return nil
 }
 
+func (g *jsiiProxy_GoogleVmwareengineNetworkPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleVmwareengineNetworkPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleVmwareengineNetworkPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleVmwareengineNetworkPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleVmwareengineNetworkPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (g *jsiiProxy_GoogleVmwareengineNetworkPolicy) validatePutInternetAccessPar
 }
 
 func (g *jsiiProxy_GoogleVmwareengineNetworkPolicy) validatePutTimeoutsParameters(value *GoogleVmwareengineNetworkPolicyTimeouts) error {
+	return nil
+}
+
+func validateGoogleVmwareengineNetworkPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

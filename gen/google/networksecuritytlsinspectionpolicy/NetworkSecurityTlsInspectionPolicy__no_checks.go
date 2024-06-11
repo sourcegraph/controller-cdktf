@@ -4,6 +4,10 @@ package networksecuritytlsinspectionpolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetworkSecurityTlsInspectionPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkSecurityTlsInspectionPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (n *jsiiProxy_NetworkSecurityTlsInspectionPolicy) validateGetStringMapAttri
 	return nil
 }
 
+func (n *jsiiProxy_NetworkSecurityTlsInspectionPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkSecurityTlsInspectionPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkSecurityTlsInspectionPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkSecurityTlsInspectionPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkSecurityTlsInspectionPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (n *jsiiProxy_NetworkSecurityTlsInspectionPolicy) validateOverrideLogicalId
 }
 
 func (n *jsiiProxy_NetworkSecurityTlsInspectionPolicy) validatePutTimeoutsParameters(value *NetworkSecurityTlsInspectionPolicyTimeouts) error {
+	return nil
+}
+
+func validateNetworkSecurityTlsInspectionPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

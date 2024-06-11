@@ -4,6 +4,10 @@ package emailroutingaddress
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EmailRoutingAddress) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EmailRoutingAddress) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (e *jsiiProxy_EmailRoutingAddress) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (e *jsiiProxy_EmailRoutingAddress) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EmailRoutingAddress) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (e *jsiiProxy_EmailRoutingAddress) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EmailRoutingAddress) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EmailRoutingAddress) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EmailRoutingAddress) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateEmailRoutingAddress_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

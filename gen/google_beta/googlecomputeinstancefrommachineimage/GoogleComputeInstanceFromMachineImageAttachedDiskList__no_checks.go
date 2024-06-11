@@ -4,6 +4,10 @@ package googlecomputeinstancefrommachineimage
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComputeInstanceFromMachineImageAttachedDiskList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceFromMachineImageAttachedDiskList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -4,6 +4,10 @@ package dataprocmetastorefederationiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataprocMetastoreFederationIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataprocMetastoreFederationIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (d *jsiiProxy_DataprocMetastoreFederationIamMember) validateGetStringMapAtt
 	return nil
 }
 
+func (d *jsiiProxy_DataprocMetastoreFederationIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataprocMetastoreFederationIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataprocMetastoreFederationIamMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataprocMetastoreFederationIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataprocMetastoreFederationIamMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (d *jsiiProxy_DataprocMetastoreFederationIamMember) validateOverrideLogical
 }
 
 func (d *jsiiProxy_DataprocMetastoreFederationIamMember) validatePutConditionParameters(value *DataprocMetastoreFederationIamMemberCondition) error {
+	return nil
+}
+
+func validateDataprocMetastoreFederationIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -44,7 +44,7 @@ type ComputeRouterPeerConfig struct {
 	Router *string `field:"required" json:"router" yaml:"router"`
 	// User-specified list of prefix groups to advertise in custom mode, which currently supports the following option:.
 	//
-	// 'ALL_SUBNETS': Advertises all of the router's own VPC subnets.
+	// * 'ALL_SUBNETS': Advertises all of the router's own VPC subnets.
 	// This excludes any routes learned for subnets that use VPC Network
 	// Peering.
 	//

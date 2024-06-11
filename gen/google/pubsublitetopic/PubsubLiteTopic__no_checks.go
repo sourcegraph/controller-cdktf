@@ -4,6 +4,10 @@ package pubsublitetopic
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PubsubLiteTopic) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PubsubLiteTopic) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (p *jsiiProxy_PubsubLiteTopic) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (p *jsiiProxy_PubsubLiteTopic) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PubsubLiteTopic) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PubsubLiteTopic) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PubsubLiteTopic) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PubsubLiteTopic) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -65,6 +85,10 @@ func (p *jsiiProxy_PubsubLiteTopic) validatePutRetentionConfigParameters(value *
 }
 
 func (p *jsiiProxy_PubsubLiteTopic) validatePutTimeoutsParameters(value *PubsubLiteTopicTimeouts) error {
+	return nil
+}
+
+func validatePubsubLiteTopic_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

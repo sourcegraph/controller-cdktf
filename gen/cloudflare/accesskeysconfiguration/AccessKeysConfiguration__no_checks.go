@@ -4,6 +4,10 @@ package accesskeysconfiguration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AccessKeysConfiguration) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccessKeysConfiguration) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (a *jsiiProxy_AccessKeysConfiguration) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (a *jsiiProxy_AccessKeysConfiguration) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccessKeysConfiguration) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (a *jsiiProxy_AccessKeysConfiguration) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccessKeysConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccessKeysConfiguration) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccessKeysConfiguration) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateAccessKeysConfiguration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

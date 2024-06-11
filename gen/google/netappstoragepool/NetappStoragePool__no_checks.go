@@ -4,6 +4,10 @@ package netappstoragepool
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetappStoragePool) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetappStoragePool) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (n *jsiiProxy_NetappStoragePool) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (n *jsiiProxy_NetappStoragePool) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetappStoragePool) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetappStoragePool) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetappStoragePool) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetappStoragePool) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (n *jsiiProxy_NetappStoragePool) validateOverrideLogicalIdParameters(newLog
 }
 
 func (n *jsiiProxy_NetappStoragePool) validatePutTimeoutsParameters(value *NetappStoragePoolTimeouts) error {
+	return nil
+}
+
+func validateNetappStoragePool_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

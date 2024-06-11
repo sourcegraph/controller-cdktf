@@ -4,6 +4,10 @@ package ivschatloggingconfiguration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IvschatLoggingConfiguration) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IvschatLoggingConfiguration) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (i *jsiiProxy_IvschatLoggingConfiguration) validateGetStringMapAttributePar
 	return nil
 }
 
+func (i *jsiiProxy_IvschatLoggingConfiguration) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IvschatLoggingConfiguration) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IvschatLoggingConfiguration) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IvschatLoggingConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IvschatLoggingConfiguration) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (i *jsiiProxy_IvschatLoggingConfiguration) validatePutDestinationConfigurat
 }
 
 func (i *jsiiProxy_IvschatLoggingConfiguration) validatePutTimeoutsParameters(value *IvschatLoggingConfigurationTimeouts) error {
+	return nil
+}
+
+func validateIvschatLoggingConfiguration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

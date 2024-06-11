@@ -4,6 +4,10 @@ package directcloudwatch
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DirectCloudwatchHistoricalDataRetrievalDefaultDurationList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DirectCloudwatchHistoricalDataRetrievalDefaultDurationList) validateGetParameters(index *float64) error {
 	return nil
 }

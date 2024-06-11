@@ -4,6 +4,10 @@ package googleworkbenchinstance
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleWorkbenchInstance) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleWorkbenchInstance) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleWorkbenchInstance) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (g *jsiiProxy_GoogleWorkbenchInstance) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleWorkbenchInstance) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleWorkbenchInstance) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleWorkbenchInstance) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleWorkbenchInstance) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (g *jsiiProxy_GoogleWorkbenchInstance) validatePutGceSetupParameters(value 
 }
 
 func (g *jsiiProxy_GoogleWorkbenchInstance) validatePutTimeoutsParameters(value *GoogleWorkbenchInstanceTimeouts) error {
+	return nil
+}
+
+func validateGoogleWorkbenchInstance_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

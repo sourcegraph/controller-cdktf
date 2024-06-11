@@ -4,6 +4,10 @@ package googleserviceusageconsumerquotaoverride
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) validateGetStringMap
 	return nil
 }
 
+func (g *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) validateOverrideLogi
 }
 
 func (g *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) validatePutTimeoutsParameters(value *GoogleServiceUsageConsumerQuotaOverrideTimeouts) error {
+	return nil
+}
+
+func validateGoogleServiceUsageConsumerQuotaOverride_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

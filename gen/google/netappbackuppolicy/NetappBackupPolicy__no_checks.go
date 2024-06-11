@@ -4,6 +4,10 @@ package netappbackuppolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetappBackupPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetappBackupPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (n *jsiiProxy_NetappBackupPolicy) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (n *jsiiProxy_NetappBackupPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetappBackupPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetappBackupPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetappBackupPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetappBackupPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (n *jsiiProxy_NetappBackupPolicy) validateOverrideLogicalIdParameters(newLo
 }
 
 func (n *jsiiProxy_NetappBackupPolicy) validatePutTimeoutsParameters(value *NetappBackupPolicyTimeouts) error {
+	return nil
+}
+
+func validateNetappBackupPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

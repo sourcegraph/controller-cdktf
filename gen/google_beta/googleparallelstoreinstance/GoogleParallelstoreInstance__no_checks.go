@@ -4,6 +4,10 @@ package googleparallelstoreinstance
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleParallelstoreInstance) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleParallelstoreInstance) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleParallelstoreInstance) validateGetStringMapAttributePar
 	return nil
 }
 
+func (g *jsiiProxy_GoogleParallelstoreInstance) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleParallelstoreInstance) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleParallelstoreInstance) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleParallelstoreInstance) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleParallelstoreInstance) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleParallelstoreInstance) validateOverrideLogicalIdParamet
 }
 
 func (g *jsiiProxy_GoogleParallelstoreInstance) validatePutTimeoutsParameters(value *GoogleParallelstoreInstanceTimeouts) error {
+	return nil
+}
+
+func validateGoogleParallelstoreInstance_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

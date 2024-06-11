@@ -4,6 +4,10 @@ package healthcheck
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (h *jsiiProxy_Healthcheck) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_Healthcheck) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (h *jsiiProxy_Healthcheck) validateGetStringMapAttributeParameters(terrafor
 	return nil
 }
 
+func (h *jsiiProxy_Healthcheck) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_Healthcheck) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (h *jsiiProxy_Healthcheck) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (h *jsiiProxy_Healthcheck) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (h *jsiiProxy_Healthcheck) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (h *jsiiProxy_Healthcheck) validatePutHeaderParameters(value interface{}) e
 }
 
 func (h *jsiiProxy_Healthcheck) validatePutTimeoutsParameters(value *HealthcheckTimeouts) error {
+	return nil
+}
+
+func validateHealthcheck_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

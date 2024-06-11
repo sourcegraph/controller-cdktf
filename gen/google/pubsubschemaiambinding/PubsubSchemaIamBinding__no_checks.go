@@ -4,6 +4,10 @@ package pubsubschemaiambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PubsubSchemaIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PubsubSchemaIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (p *jsiiProxy_PubsubSchemaIamBinding) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (p *jsiiProxy_PubsubSchemaIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PubsubSchemaIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PubsubSchemaIamBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PubsubSchemaIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PubsubSchemaIamBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (p *jsiiProxy_PubsubSchemaIamBinding) validateOverrideLogicalIdParameters(n
 }
 
 func (p *jsiiProxy_PubsubSchemaIamBinding) validatePutConditionParameters(value *PubsubSchemaIamBindingCondition) error {
+	return nil
+}
+
+func validatePubsubSchemaIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package googlesccprojectcustommodule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleSccProjectCustomModule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSccProjectCustomModule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleSccProjectCustomModule) validateGetStringMapAttributePa
 	return nil
 }
 
+func (g *jsiiProxy_GoogleSccProjectCustomModule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSccProjectCustomModule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleSccProjectCustomModule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleSccProjectCustomModule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleSccProjectCustomModule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (g *jsiiProxy_GoogleSccProjectCustomModule) validatePutCustomConfigParamete
 }
 
 func (g *jsiiProxy_GoogleSccProjectCustomModule) validatePutTimeoutsParameters(value *GoogleSccProjectCustomModuleTimeouts) error {
+	return nil
+}
+
+func validateGoogleSccProjectCustomModule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

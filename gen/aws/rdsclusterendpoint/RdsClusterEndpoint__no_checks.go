@@ -4,6 +4,10 @@ package rdsclusterendpoint
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RdsClusterEndpoint) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RdsClusterEndpoint) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (r *jsiiProxy_RdsClusterEndpoint) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (r *jsiiProxy_RdsClusterEndpoint) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RdsClusterEndpoint) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (r *jsiiProxy_RdsClusterEndpoint) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_RdsClusterEndpoint) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_RdsClusterEndpoint) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RdsClusterEndpoint) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateRdsClusterEndpoint_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

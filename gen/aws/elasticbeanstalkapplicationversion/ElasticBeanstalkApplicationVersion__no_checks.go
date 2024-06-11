@@ -4,6 +4,10 @@ package elasticbeanstalkapplicationversion
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_ElasticBeanstalkApplicationVersion) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElasticBeanstalkApplicationVersion) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (e *jsiiProxy_ElasticBeanstalkApplicationVersion) validateGetStringMapAttri
 	return nil
 }
 
+func (e *jsiiProxy_ElasticBeanstalkApplicationVersion) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElasticBeanstalkApplicationVersion) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (e *jsiiProxy_ElasticBeanstalkApplicationVersion) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_ElasticBeanstalkApplicationVersion) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_ElasticBeanstalkApplicationVersion) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElasticBeanstalkApplicationVersion) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateElasticBeanstalkApplicationVersion_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

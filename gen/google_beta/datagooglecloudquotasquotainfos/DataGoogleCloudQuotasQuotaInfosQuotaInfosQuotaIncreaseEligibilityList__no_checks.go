@@ -4,6 +4,10 @@ package datagooglecloudquotasquotainfos
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataGoogleCloudQuotasQuotaInfosQuotaInfosQuotaIncreaseEligibilityList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataGoogleCloudQuotasQuotaInfosQuotaInfosQuotaIncreaseEligibilityList) validateGetParameters(index *float64) error {
 	return nil
 }

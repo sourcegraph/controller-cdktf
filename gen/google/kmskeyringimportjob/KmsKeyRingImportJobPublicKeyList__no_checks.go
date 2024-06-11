@@ -4,6 +4,10 @@ package kmskeyringimportjob
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (k *jsiiProxy_KmsKeyRingImportJobPublicKeyList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KmsKeyRingImportJobPublicKeyList) validateGetParameters(index *float64) error {
 	return nil
 }

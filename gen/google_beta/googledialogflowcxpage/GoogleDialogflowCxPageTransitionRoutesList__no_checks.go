@@ -4,6 +4,10 @@ package googledialogflowcxpage
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleDialogflowCxPageTransitionRoutesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDialogflowCxPageTransitionRoutesList) validateGetParameters(index *float64) error {
 	return nil
 }

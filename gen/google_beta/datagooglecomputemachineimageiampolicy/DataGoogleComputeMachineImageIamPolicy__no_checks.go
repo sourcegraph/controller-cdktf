@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleComputeMachineImageIamPolicy) validateOverrideLogic
 	return nil
 }
 
+func validateDataGoogleComputeMachineImageIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleComputeMachineImageIamPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }

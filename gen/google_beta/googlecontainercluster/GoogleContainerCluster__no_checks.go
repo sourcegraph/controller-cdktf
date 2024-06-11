@@ -4,6 +4,10 @@ package googlecontainercluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleContainerCluster) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleContainerCluster) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -205,6 +225,10 @@ func (g *jsiiProxy_GoogleContainerCluster) validatePutWorkloadAltsConfigParamete
 }
 
 func (g *jsiiProxy_GoogleContainerCluster) validatePutWorkloadIdentityConfigParameters(value *GoogleContainerClusterWorkloadIdentityConfig) error {
+	return nil
+}
+
+func validateGoogleContainerCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

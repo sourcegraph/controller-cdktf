@@ -4,6 +4,10 @@ package alloydbinstance
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AlloydbInstanceNetworkConfigAuthorizedExternalNetworksList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AlloydbInstanceNetworkConfigAuthorizedExternalNetworksList) validateGetParameters(index *float64) error {
 	return nil
 }

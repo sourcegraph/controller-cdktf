@@ -4,6 +4,10 @@ package sqluser
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SqlUser) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SqlUser) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (s *jsiiProxy_SqlUser) validateGetStringMapAttributeParameters(terraformAtt
 	return nil
 }
 
+func (s *jsiiProxy_SqlUser) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SqlUser) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SqlUser) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SqlUser) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SqlUser) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (s *jsiiProxy_SqlUser) validatePutPasswordPolicyParameters(value *SqlUserPa
 }
 
 func (s *jsiiProxy_SqlUser) validatePutTimeoutsParameters(value *SqlUserTimeouts) error {
+	return nil
+}
+
+func validateSqlUser_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

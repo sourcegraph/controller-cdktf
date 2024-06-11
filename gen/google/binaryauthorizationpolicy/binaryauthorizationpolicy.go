@@ -78,6 +78,9 @@ type BinaryAuthorizationPolicy interface {
 	TerraformResourceType() *string
 	Timeouts() BinaryAuthorizationPolicyTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -99,7 +102,22 @@ type BinaryAuthorizationPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -118,6 +136,9 @@ type BinaryAuthorizationPolicy interface {
 	ResetProject()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -594,6 +615,25 @@ func (j *jsiiProxy_BinaryAuthorizationPolicy)SetProvisioners(val *[]interface{})
 	)
 }
 
+// Generates CDKTF code for importing a BinaryAuthorizationPolicy resource upon running "cdktf plan <stack-name>".
+func BinaryAuthorizationPolicy_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateBinaryAuthorizationPolicy_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicy",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -676,6 +716,17 @@ func BinaryAuthorizationPolicy_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (b *jsiiProxy_BinaryAuthorizationPolicy) AddMoveTarget(moveTarget *string) {
+	if err := b.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (b *jsiiProxy_BinaryAuthorizationPolicy) AddOverride(path *string, value interface{}) {
@@ -833,6 +884,30 @@ func (b *jsiiProxy_BinaryAuthorizationPolicy) GetStringMapAttribute(terraformAtt
 	return returns
 }
 
+func (b *jsiiProxy_BinaryAuthorizationPolicy) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		b,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BinaryAuthorizationPolicy) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := b.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (b *jsiiProxy_BinaryAuthorizationPolicy) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := b.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -847,6 +922,39 @@ func (b *jsiiProxy_BinaryAuthorizationPolicy) InterpolationForAttribute(terrafor
 	)
 
 	return returns
+}
+
+func (b *jsiiProxy_BinaryAuthorizationPolicy) MoveFromId(id *string) {
+	if err := b.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
+func (b *jsiiProxy_BinaryAuthorizationPolicy) MoveTo(moveTarget *string, index interface{}) {
+	if err := b.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
+}
+
+func (b *jsiiProxy_BinaryAuthorizationPolicy) MoveToId(id *string) {
+	if err := b.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"moveToId",
+		[]interface{}{id},
+	)
 }
 
 func (b *jsiiProxy_BinaryAuthorizationPolicy) OverrideLogicalId(newLogicalId *string) {
@@ -974,6 +1082,32 @@ func (b *jsiiProxy_BinaryAuthorizationPolicy) SynthesizeAttributes() *map[string
 	_jsii_.Invoke(
 		b,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BinaryAuthorizationPolicy) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		b,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BinaryAuthorizationPolicy) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		b,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

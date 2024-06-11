@@ -4,6 +4,10 @@ package googlepubsubsubscriptioniambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GooglePubsubSubscriptionIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GooglePubsubSubscriptionIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GooglePubsubSubscriptionIamBinding) validateGetStringMapAttri
 	return nil
 }
 
+func (g *jsiiProxy_GooglePubsubSubscriptionIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GooglePubsubSubscriptionIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GooglePubsubSubscriptionIamBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GooglePubsubSubscriptionIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GooglePubsubSubscriptionIamBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GooglePubsubSubscriptionIamBinding) validateOverrideLogicalId
 }
 
 func (g *jsiiProxy_GooglePubsubSubscriptionIamBinding) validatePutConditionParameters(value *GooglePubsubSubscriptionIamBindingCondition) error {
+	return nil
+}
+
+func validateGooglePubsubSubscriptionIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

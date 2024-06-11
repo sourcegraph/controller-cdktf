@@ -4,6 +4,10 @@ package blockchainnodeengineblockchainnodes
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BlockchainNodeEngineBlockchainNodesConnectionInfoList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BlockchainNodeEngineBlockchainNodesConnectionInfoList) validateGetParameters(index *float64) error {
 	return nil
 }

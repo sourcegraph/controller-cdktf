@@ -4,6 +4,10 @@ package googledataplexasset
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleDataplexAssetResourceStatusList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataplexAssetResourceStatusList) validateGetParameters(index *float64) error {
 	return nil
 }

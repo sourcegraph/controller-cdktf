@@ -4,6 +4,10 @@ package googledatafusioninstance
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleDataFusionInstanceAcceleratorsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataFusionInstanceAcceleratorsList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -4,6 +4,10 @@ package apishield
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ApiShield) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApiShield) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (a *jsiiProxy_ApiShield) validateGetStringMapAttributeParameters(terraformA
 	return nil
 }
 
+func (a *jsiiProxy_ApiShield) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApiShield) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApiShield) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApiShield) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApiShield) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (a *jsiiProxy_ApiShield) validateOverrideLogicalIdParameters(newLogicalId *
 }
 
 func (a *jsiiProxy_ApiShield) validatePutAuthIdCharacteristicsParameters(value interface{}) error {
+	return nil
+}
+
+func validateApiShield_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

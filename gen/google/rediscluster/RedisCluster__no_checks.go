@@ -4,6 +4,10 @@ package rediscluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RedisCluster) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RedisCluster) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (r *jsiiProxy_RedisCluster) validateGetStringMapAttributeParameters(terrafo
 	return nil
 }
 
+func (r *jsiiProxy_RedisCluster) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RedisCluster) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_RedisCluster) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_RedisCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_RedisCluster) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (r *jsiiProxy_RedisCluster) validatePutPscConfigsParameters(value interface
 }
 
 func (r *jsiiProxy_RedisCluster) validatePutTimeoutsParameters(value *RedisClusterTimeouts) error {
+	return nil
+}
+
+func validateRedisCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

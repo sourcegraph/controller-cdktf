@@ -4,6 +4,10 @@ package googleapigeetargetserver
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleApigeeTargetServer) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleApigeeTargetServer) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleApigeeTargetServer) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (g *jsiiProxy_GoogleApigeeTargetServer) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleApigeeTargetServer) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleApigeeTargetServer) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleApigeeTargetServer) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleApigeeTargetServer) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (g *jsiiProxy_GoogleApigeeTargetServer) validatePutSSlInfoParameters(value 
 }
 
 func (g *jsiiProxy_GoogleApigeeTargetServer) validatePutTimeoutsParameters(value *GoogleApigeeTargetServerTimeouts) error {
+	return nil
+}
+
+func validateGoogleApigeeTargetServer_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

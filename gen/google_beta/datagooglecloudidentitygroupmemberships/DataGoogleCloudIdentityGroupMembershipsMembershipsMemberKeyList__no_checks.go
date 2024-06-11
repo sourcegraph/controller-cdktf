@@ -4,6 +4,10 @@ package datagooglecloudidentitygroupmemberships
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataGoogleCloudIdentityGroupMembershipsMembershipsMemberKeyList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataGoogleCloudIdentityGroupMembershipsMembershipsMemberKeyList) validateGetParameters(index *float64) error {
 	return nil
 }

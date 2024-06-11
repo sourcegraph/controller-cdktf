@@ -4,6 +4,10 @@ package googlegkeonprembaremetalcluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleGkeonpremBareMetalCluster) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleGkeonpremBareMetalCluster) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleGkeonpremBareMetalCluster) validateGetStringMapAttribut
 	return nil
 }
 
+func (g *jsiiProxy_GoogleGkeonpremBareMetalCluster) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleGkeonpremBareMetalCluster) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleGkeonpremBareMetalCluster) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleGkeonpremBareMetalCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleGkeonpremBareMetalCluster) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -105,6 +125,10 @@ func (g *jsiiProxy_GoogleGkeonpremBareMetalCluster) validatePutTimeoutsParameter
 }
 
 func (g *jsiiProxy_GoogleGkeonpremBareMetalCluster) validatePutUpgradePolicyParameters(value *GoogleGkeonpremBareMetalClusterUpgradePolicy) error {
+	return nil
+}
+
+func validateGoogleGkeonpremBareMetalCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

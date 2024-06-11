@@ -4,6 +4,10 @@ package googlenetappvolume
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleNetappVolumeExportPolicyRulesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetappVolumeExportPolicyRulesList) validateGetParameters(index *float64) error {
 	return nil
 }

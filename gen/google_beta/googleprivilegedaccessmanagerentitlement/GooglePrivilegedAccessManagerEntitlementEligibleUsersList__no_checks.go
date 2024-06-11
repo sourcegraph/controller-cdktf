@@ -4,6 +4,10 @@ package googleprivilegedaccessmanagerentitlement
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlementEligibleUsersList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlementEligibleUsersList) validateGetParameters(index *float64) error {
 	return nil
 }

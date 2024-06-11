@@ -4,6 +4,10 @@ package googlecomputeorganizationsecuritypolicyrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRuleMatchConfigLayer4ConfigList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRuleMatchConfigLayer4ConfigList) validateGetParameters(index *float64) error {
 	return nil
 }

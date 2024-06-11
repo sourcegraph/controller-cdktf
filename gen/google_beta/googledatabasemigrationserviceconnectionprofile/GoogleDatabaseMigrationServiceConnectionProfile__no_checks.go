@@ -4,6 +4,10 @@ package googledatabasemigrationserviceconnectionprofile
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) validateGetS
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -73,6 +93,10 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) validatePutP
 }
 
 func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) validatePutTimeoutsParameters(value *GoogleDatabaseMigrationServiceConnectionProfileTimeouts) error {
+	return nil
+}
+
+func validateGoogleDatabaseMigrationServiceConnectionProfile_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

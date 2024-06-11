@@ -4,6 +4,10 @@ package googlevertexaifeaturegroupfeature
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleVertexAiFeatureGroupFeature) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleVertexAiFeatureGroupFeature) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleVertexAiFeatureGroupFeature) validateGetStringMapAttrib
 	return nil
 }
 
+func (g *jsiiProxy_GoogleVertexAiFeatureGroupFeature) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleVertexAiFeatureGroupFeature) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleVertexAiFeatureGroupFeature) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleVertexAiFeatureGroupFeature) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleVertexAiFeatureGroupFeature) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleVertexAiFeatureGroupFeature) validateOverrideLogicalIdP
 }
 
 func (g *jsiiProxy_GoogleVertexAiFeatureGroupFeature) validatePutTimeoutsParameters(value *GoogleVertexAiFeatureGroupFeatureTimeouts) error {
+	return nil
+}
+
+func validateGoogleVertexAiFeatureGroupFeature_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

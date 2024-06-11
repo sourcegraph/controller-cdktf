@@ -4,6 +4,10 @@ package certificatemanagerdnsauthorization
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CertificateManagerDnsAuthorization) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CertificateManagerDnsAuthorization) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_CertificateManagerDnsAuthorization) validateGetStringMapAttri
 	return nil
 }
 
+func (c *jsiiProxy_CertificateManagerDnsAuthorization) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CertificateManagerDnsAuthorization) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CertificateManagerDnsAuthorization) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CertificateManagerDnsAuthorization) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CertificateManagerDnsAuthorization) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (c *jsiiProxy_CertificateManagerDnsAuthorization) validateOverrideLogicalId
 }
 
 func (c *jsiiProxy_CertificateManagerDnsAuthorization) validatePutTimeoutsParameters(value *CertificateManagerDnsAuthorizationTimeouts) error {
+	return nil
+}
+
+func validateCertificateManagerDnsAuthorization_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

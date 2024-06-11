@@ -4,6 +4,10 @@ package notebooksruntimeiambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NotebooksRuntimeIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NotebooksRuntimeIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (n *jsiiProxy_NotebooksRuntimeIamBinding) validateGetStringMapAttributePara
 	return nil
 }
 
+func (n *jsiiProxy_NotebooksRuntimeIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NotebooksRuntimeIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NotebooksRuntimeIamBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NotebooksRuntimeIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NotebooksRuntimeIamBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (n *jsiiProxy_NotebooksRuntimeIamBinding) validateOverrideLogicalIdParamete
 }
 
 func (n *jsiiProxy_NotebooksRuntimeIamBinding) validatePutConditionParameters(value *NotebooksRuntimeIamBindingCondition) error {
+	return nil
+}
+
+func validateNotebooksRuntimeIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

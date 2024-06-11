@@ -4,6 +4,10 @@ package dataprocmetastoreservice
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataprocMetastoreService) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataprocMetastoreService) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (d *jsiiProxy_DataprocMetastoreService) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (d *jsiiProxy_DataprocMetastoreService) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataprocMetastoreService) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataprocMetastoreService) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataprocMetastoreService) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataprocMetastoreService) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -85,6 +105,10 @@ func (d *jsiiProxy_DataprocMetastoreService) validatePutTelemetryConfigParameter
 }
 
 func (d *jsiiProxy_DataprocMetastoreService) validatePutTimeoutsParameters(value *DataprocMetastoreServiceTimeouts) error {
+	return nil
+}
+
+func validateDataprocMetastoreService_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

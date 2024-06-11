@@ -4,6 +4,10 @@ package datagooglecomputeregioninstancegroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataGoogleComputeRegionInstanceGroupInstancesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataGoogleComputeRegionInstanceGroupInstancesList) validateGetParameters(index *float64) error {
 	return nil
 }

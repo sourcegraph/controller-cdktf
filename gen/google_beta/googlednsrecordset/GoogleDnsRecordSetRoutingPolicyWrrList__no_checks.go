@@ -4,6 +4,10 @@ package googlednsrecordset
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleDnsRecordSetRoutingPolicyWrrList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDnsRecordSetRoutingPolicyWrrList) validateGetParameters(index *float64) error {
 	return nil
 }

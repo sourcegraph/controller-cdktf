@@ -4,6 +4,10 @@ package dialogflowcxsecuritysettings
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DialogflowCxSecuritySettings) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DialogflowCxSecuritySettings) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (d *jsiiProxy_DialogflowCxSecuritySettings) validateGetStringMapAttributePa
 	return nil
 }
 
+func (d *jsiiProxy_DialogflowCxSecuritySettings) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DialogflowCxSecuritySettings) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DialogflowCxSecuritySettings) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DialogflowCxSecuritySettings) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DialogflowCxSecuritySettings) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (d *jsiiProxy_DialogflowCxSecuritySettings) validatePutInsightsExportSettin
 }
 
 func (d *jsiiProxy_DialogflowCxSecuritySettings) validatePutTimeoutsParameters(value *DialogflowCxSecuritySettingsTimeouts) error {
+	return nil
+}
+
+func validateDialogflowCxSecuritySettings_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

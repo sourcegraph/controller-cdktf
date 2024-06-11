@@ -4,6 +4,10 @@ package googlegkebackuprestoreplaniammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleGkeBackupRestorePlanIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleGkeBackupRestorePlanIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleGkeBackupRestorePlanIamMember) validateGetStringMapAttr
 	return nil
 }
 
+func (g *jsiiProxy_GoogleGkeBackupRestorePlanIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleGkeBackupRestorePlanIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleGkeBackupRestorePlanIamMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleGkeBackupRestorePlanIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleGkeBackupRestorePlanIamMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleGkeBackupRestorePlanIamMember) validateOverrideLogicalI
 }
 
 func (g *jsiiProxy_GoogleGkeBackupRestorePlanIamMember) validatePutConditionParameters(value *GoogleGkeBackupRestorePlanIamMemberCondition) error {
+	return nil
+}
+
+func validateGoogleGkeBackupRestorePlanIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

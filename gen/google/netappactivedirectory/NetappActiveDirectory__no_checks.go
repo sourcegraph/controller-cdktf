@@ -4,6 +4,10 @@ package netappactivedirectory
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetappActiveDirectory) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetappActiveDirectory) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (n *jsiiProxy_NetappActiveDirectory) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (n *jsiiProxy_NetappActiveDirectory) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetappActiveDirectory) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetappActiveDirectory) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetappActiveDirectory) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetappActiveDirectory) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (n *jsiiProxy_NetappActiveDirectory) validateOverrideLogicalIdParameters(ne
 }
 
 func (n *jsiiProxy_NetappActiveDirectory) validatePutTimeoutsParameters(value *NetappActiveDirectoryTimeouts) error {
+	return nil
+}
+
+func validateNetappActiveDirectory_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

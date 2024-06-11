@@ -64,7 +64,7 @@ type GoogleGkeonpremBareMetalClusterConfig struct {
 	// with dashes (-), underscores (_), dots (.), and alphanumerics between.
 	//
 	//
-	// *Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
+	// **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
 	// Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_gkeonprem_bare_metal_cluster#annotations GoogleGkeonpremBareMetalCluster#annotations}

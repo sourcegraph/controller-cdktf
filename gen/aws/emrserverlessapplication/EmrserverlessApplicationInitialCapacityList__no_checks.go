@@ -4,6 +4,10 @@ package emrserverlessapplication
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EmrserverlessApplicationInitialCapacityList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EmrserverlessApplicationInitialCapacityList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -4,6 +4,10 @@ package dynamodbtablereplica
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DynamodbTableReplicaA) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DynamodbTableReplicaA) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (d *jsiiProxy_DynamodbTableReplicaA) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (d *jsiiProxy_DynamodbTableReplicaA) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DynamodbTableReplicaA) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DynamodbTableReplicaA) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DynamodbTableReplicaA) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DynamodbTableReplicaA) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (d *jsiiProxy_DynamodbTableReplicaA) validateOverrideLogicalIdParameters(ne
 }
 
 func (d *jsiiProxy_DynamodbTableReplicaA) validatePutTimeoutsParameters(value *DynamodbTableReplicaTimeouts) error {
+	return nil
+}
+
+func validateDynamodbTableReplicaA_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

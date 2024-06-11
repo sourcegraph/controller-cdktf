@@ -4,6 +4,10 @@ package googlekmskeyringimportjob
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleKmsKeyRingImportJobAttestationList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleKmsKeyRingImportJobAttestationList) validateGetParameters(index *float64) error {
 	return nil
 }

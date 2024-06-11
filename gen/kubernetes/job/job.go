@@ -70,6 +70,9 @@ type Job interface {
 	WaitForCompletion() interface{}
 	SetWaitForCompletion(val interface{})
 	WaitForCompletionInput() interface{}
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -91,7 +94,22 @@ type Job interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -105,6 +123,9 @@ type Job interface {
 	ResetTimeouts()
 	ResetWaitForCompletion()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -499,6 +520,25 @@ func (j *jsiiProxy_Job)SetWaitForCompletion(val interface{}) {
 	)
 }
 
+// Generates CDKTF code for importing a Job resource upon running "cdktf plan <stack-name>".
+func Job_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateJob_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-kubernetes.job.Job",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -581,6 +621,17 @@ func Job_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (j *jsiiProxy_Job) AddMoveTarget(moveTarget *string) {
+	if err := j.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (j *jsiiProxy_Job) AddOverride(path *string, value interface{}) {
@@ -738,6 +789,30 @@ func (j *jsiiProxy_Job) GetStringMapAttribute(terraformAttribute *string) *map[s
 	return returns
 }
 
+func (j *jsiiProxy_Job) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		j,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (j *jsiiProxy_Job) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := j.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (j *jsiiProxy_Job) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := j.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -752,6 +827,39 @@ func (j *jsiiProxy_Job) InterpolationForAttribute(terraformAttribute *string) cd
 	)
 
 	return returns
+}
+
+func (j *jsiiProxy_Job) MoveFromId(id *string) {
+	if err := j.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
+func (j *jsiiProxy_Job) MoveTo(moveTarget *string, index interface{}) {
+	if err := j.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
+}
+
+func (j *jsiiProxy_Job) MoveToId(id *string) {
+	if err := j.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"moveToId",
+		[]interface{}{id},
+	)
 }
 
 func (j *jsiiProxy_Job) OverrideLogicalId(newLogicalId *string) {
@@ -836,6 +944,32 @@ func (j *jsiiProxy_Job) SynthesizeAttributes() *map[string]interface{} {
 	_jsii_.Invoke(
 		j,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (j *jsiiProxy_Job) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		j,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (j *jsiiProxy_Job) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		j,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

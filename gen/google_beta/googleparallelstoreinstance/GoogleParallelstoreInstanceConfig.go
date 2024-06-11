@@ -25,11 +25,11 @@ type GoogleParallelstoreInstanceConfig struct {
 	CapacityGib *string `field:"required" json:"capacityGib" yaml:"capacityGib"`
 	// The logical name of the Parallelstore instance in the user project with the following restrictions:.
 	//
-	// Must contain only lowercase letters, numbers, and hyphens.
-	// Must start with a letter.
-	// Must be between 1-63 characters.
-	// Must end with a number or a letter.
-	// Must be unique within the customer project/ location
+	// * Must contain only lowercase letters, numbers, and hyphens.
+	// * Must start with a letter.
+	// * Must be between 1-63 characters.
+	// * Must end with a number or a letter.
+	// * Must be unique within the customer project/ location
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_parallelstore_instance#instance_id GoogleParallelstoreInstance#instance_id}
 	InstanceId *string `field:"required" json:"instanceId" yaml:"instanceId"`
@@ -53,11 +53,11 @@ type GoogleParallelstoreInstanceConfig struct {
 	// And they can be used as arguments to policy management rules (e.g. route,
 	// firewall, load balancing, etc.).
 	//
-	// Label keys must be between 1 and 63 characters long and must conform to
-	// the following regular expression: 'a-z{0,62}'.
-	// Label values must be between 0 and 63 characters long and must conform
-	// to the regular expression '[a-z0-9_-]{0,63}'.
-	// No more than 64 labels can be associated with a given resource.
+	//  * Label keys must be between 1 and 63 characters long and must conform to
+	//    the following regular expression: 'a-z{0,62}'.
+	//  * Label values must be between 0 and 63 characters long and must conform
+	//    to the regular expression '[a-z0-9_-]{0,63}'.
+	//  * No more than 64 labels can be associated with a given resource.
 	//
 	// See https://goo.gl/xmQnxf for more information on and examples of labels.
 	//
@@ -68,7 +68,7 @@ type GoogleParallelstoreInstanceConfig struct {
 	// as the string:  name + "_" + value  would prove problematic if we were to
 	// allow "_" in a future release.
 	//
-	// *Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+	// **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 	// Please refer to the field 'effective_labels' for all of the labels present on the resource.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_parallelstore_instance#labels GoogleParallelstoreInstance#labels}

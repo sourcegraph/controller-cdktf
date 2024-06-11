@@ -19,12 +19,12 @@ type HealthcareHl7V2StoreNotificationConfigs struct {
 	//
 	// Fields/functions available for filtering are:
 	//
-	// messageType, from the MSH-9.1 field. For example, NOT messageType = "ADT".
-	// send_date or sendDate, the YYYY-MM-DD date the message was sent in the dataset's timeZone, from the MSH-7 segment. For example, send_date < "2017-01-02".
-	// sendTime, the timestamp when the message was sent, using the RFC3339 time format for comparisons, from the MSH-7 segment. For example, sendTime < "2017-01-02T00:00:00-05:00".
-	// sendFacility, the care center that the message came from, from the MSH-4 segment. For example, sendFacility = "ABC".
-	// PatientId(value, type), which matches if the message lists a patient having an ID of the given value and type in the PID-2, PID-3, or PID-4 segments. For example, PatientId("123456", "MRN").
-	// labels.x, a string value of the label with key x as set using the Message.labels map. For example, labels."priority"="high". The operator :* can be used to assert the existence of a label. For example, labels."priority":*.
+	// * messageType, from the MSH-9.1 field. For example, NOT messageType = "ADT".
+	// * send_date or sendDate, the YYYY-MM-DD date the message was sent in the dataset's timeZone, from the MSH-7 segment. For example, send_date < "2017-01-02".
+	// * sendTime, the timestamp when the message was sent, using the RFC3339 time format for comparisons, from the MSH-7 segment. For example, sendTime < "2017-01-02T00:00:00-05:00".
+	// * sendFacility, the care center that the message came from, from the MSH-4 segment. For example, sendFacility = "ABC".
+	// * PatientId(value, type), which matches if the message lists a patient having an ID of the given value and type in the PID-2, PID-3, or PID-4 segments. For example, PatientId("123456", "MRN").
+	// * labels.x, a string value of the label with key x as set using the Message.labels map. For example, labels."priority"="high". The operator :* can be used to assert the existence of a label. For example, labels."priority":*.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/healthcare_hl7_v2_store#filter HealthcareHl7V2Store#filter}
 	Filter *string `field:"optional" json:"filter" yaml:"filter"`
