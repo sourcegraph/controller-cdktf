@@ -82,9 +82,11 @@ type NetworkServicesLbTrafficExtensionExtensionChainsExtensionsOutputReference i
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAuthority()
 	ResetFailOpen()
 	ResetForwardHeaders()
 	ResetSupportedEvents()
+	ResetTimeout()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -656,6 +658,14 @@ func (n *jsiiProxy_NetworkServicesLbTrafficExtensionExtensionChainsExtensionsOut
 	return returns
 }
 
+func (n *jsiiProxy_NetworkServicesLbTrafficExtensionExtensionChainsExtensionsOutputReference) ResetAuthority() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetAuthority",
+		nil, // no parameters
+	)
+}
+
 func (n *jsiiProxy_NetworkServicesLbTrafficExtensionExtensionChainsExtensionsOutputReference) ResetFailOpen() {
 	_jsii_.InvokeVoid(
 		n,
@@ -676,6 +686,14 @@ func (n *jsiiProxy_NetworkServicesLbTrafficExtensionExtensionChainsExtensionsOut
 	_jsii_.InvokeVoid(
 		n,
 		"resetSupportedEvents",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkServicesLbTrafficExtensionExtensionChainsExtensionsOutputReference) ResetTimeout() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetTimeout",
 		nil, // no parameters
 	)
 }

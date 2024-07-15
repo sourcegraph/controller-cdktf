@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlehealthcareconsentstoreiampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_healthcare_consent_store_iam_policy google_healthcare_consent_store_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_healthcare_consent_store_iam_policy google_healthcare_consent_store_iam_policy}.
 type GoogleHealthcareConsentStoreIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -387,7 +387,7 @@ func (j *jsiiProxy_GoogleHealthcareConsentStoreIamPolicy) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_healthcare_consent_store_iam_policy google_healthcare_consent_store_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_healthcare_consent_store_iam_policy google_healthcare_consent_store_iam_policy} Resource.
 func NewGoogleHealthcareConsentStoreIamPolicy(scope constructs.Construct, id *string, config *GoogleHealthcareConsentStoreIamPolicyConfig) GoogleHealthcareConsentStoreIamPolicy {
 	_init_.Initialize()
 
@@ -405,7 +405,7 @@ func NewGoogleHealthcareConsentStoreIamPolicy(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_healthcare_consent_store_iam_policy google_healthcare_consent_store_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_healthcare_consent_store_iam_policy google_healthcare_consent_store_iam_policy} Resource.
 func NewGoogleHealthcareConsentStoreIamPolicy_Override(g GoogleHealthcareConsentStoreIamPolicy, scope constructs.Construct, id *string, config *GoogleHealthcareConsentStoreIamPolicyConfig) {
 	_init_.Initialize()
 

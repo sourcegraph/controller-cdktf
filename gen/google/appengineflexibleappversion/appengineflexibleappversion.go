@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/appengineflexibleappversion/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/app_engine_flexible_app_version google_app_engine_flexible_app_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/app_engine_flexible_app_version google_app_engine_flexible_app_version}.
 type AppEngineFlexibleAppVersion interface {
 	cdktf.TerraformResource
 	ApiConfig() AppEngineFlexibleAppVersionApiConfigOutputReference
@@ -50,6 +50,8 @@ type AppEngineFlexibleAppVersion interface {
 	EnvVariables() *map[string]*string
 	SetEnvVariables(val *map[string]*string)
 	EnvVariablesInput() *map[string]*string
+	FlexibleRuntimeSettings() AppEngineFlexibleAppVersionFlexibleRuntimeSettingsOutputReference
+	FlexibleRuntimeSettingsInput() *AppEngineFlexibleAppVersionFlexibleRuntimeSettings
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -187,6 +189,7 @@ type AppEngineFlexibleAppVersion interface {
 	PutDeployment(value *AppEngineFlexibleAppVersionDeployment)
 	PutEndpointsApiService(value *AppEngineFlexibleAppVersionEndpointsApiService)
 	PutEntrypoint(value *AppEngineFlexibleAppVersionEntrypoint)
+	PutFlexibleRuntimeSettings(value *AppEngineFlexibleAppVersionFlexibleRuntimeSettings)
 	PutHandlers(value interface{})
 	PutLivenessCheck(value *AppEngineFlexibleAppVersionLivenessCheck)
 	PutManualScaling(value *AppEngineFlexibleAppVersionManualScaling)
@@ -204,6 +207,7 @@ type AppEngineFlexibleAppVersion interface {
 	ResetEndpointsApiService()
 	ResetEntrypoint()
 	ResetEnvVariables()
+	ResetFlexibleRuntimeSettings()
 	ResetHandlers()
 	ResetId()
 	ResetInboundServices()
@@ -468,6 +472,26 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersion) EnvVariablesInput() *map[string]
 	_jsii_.Get(
 		j,
 		"envVariablesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppEngineFlexibleAppVersion) FlexibleRuntimeSettings() AppEngineFlexibleAppVersionFlexibleRuntimeSettingsOutputReference {
+	var returns AppEngineFlexibleAppVersionFlexibleRuntimeSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"flexibleRuntimeSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppEngineFlexibleAppVersion) FlexibleRuntimeSettingsInput() *AppEngineFlexibleAppVersionFlexibleRuntimeSettings {
+	var returns *AppEngineFlexibleAppVersionFlexibleRuntimeSettings
+	_jsii_.Get(
+		j,
+		"flexibleRuntimeSettingsInput",
 		&returns,
 	)
 	return returns
@@ -1034,7 +1058,7 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersion) VpcAccessConnectorInput() *AppEn
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/app_engine_flexible_app_version google_app_engine_flexible_app_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/app_engine_flexible_app_version google_app_engine_flexible_app_version} Resource.
 func NewAppEngineFlexibleAppVersion(scope constructs.Construct, id *string, config *AppEngineFlexibleAppVersionConfig) AppEngineFlexibleAppVersion {
 	_init_.Initialize()
 
@@ -1052,7 +1076,7 @@ func NewAppEngineFlexibleAppVersion(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/app_engine_flexible_app_version google_app_engine_flexible_app_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/app_engine_flexible_app_version google_app_engine_flexible_app_version} Resource.
 func NewAppEngineFlexibleAppVersion_Override(a AppEngineFlexibleAppVersion, scope constructs.Construct, id *string, config *AppEngineFlexibleAppVersionConfig) {
 	_init_.Initialize()
 
@@ -1737,6 +1761,17 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersion) PutEntrypoint(value *AppEngineFl
 	)
 }
 
+func (a *jsiiProxy_AppEngineFlexibleAppVersion) PutFlexibleRuntimeSettings(value *AppEngineFlexibleAppVersionFlexibleRuntimeSettings) {
+	if err := a.validatePutFlexibleRuntimeSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putFlexibleRuntimeSettings",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AppEngineFlexibleAppVersion) PutHandlers(value interface{}) {
 	if err := a.validatePutHandlersParameters(value); err != nil {
 		panic(err)
@@ -1893,6 +1928,14 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersion) ResetEnvVariables() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetEnvVariables",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppEngineFlexibleAppVersion) ResetFlexibleRuntimeSettings() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetFlexibleRuntimeSettings",
 		nil, // no parameters
 	)
 }

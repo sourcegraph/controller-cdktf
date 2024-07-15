@@ -160,6 +160,10 @@ func (j *jsiiProxy_GoogleComputeHealthCheck) validateSetProvisionersParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeHealthCheck) validateSetSourceRegionsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeHealthCheck) validateSetTimeoutSecParameters(val *float64) error {
 	return nil
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/alloydbcluster/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/alloydb_cluster google_alloydb_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/alloydb_cluster google_alloydb_cluster}.
 type AlloydbCluster interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -105,6 +105,8 @@ type AlloydbCluster interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	PscConfig() AlloydbClusterPscConfigOutputReference
+	PscConfigInput() *AlloydbClusterPscConfig
 	// Experimental.
 	RawOverrides() interface{}
 	Reconciling() cdktf.IResolvable
@@ -174,6 +176,7 @@ type AlloydbCluster interface {
 	PutInitialUser(value *AlloydbClusterInitialUser)
 	PutMaintenanceUpdatePolicy(value *AlloydbClusterMaintenanceUpdatePolicy)
 	PutNetworkConfig(value *AlloydbClusterNetworkConfig)
+	PutPscConfig(value *AlloydbClusterPscConfig)
 	PutRestoreBackupSource(value *AlloydbClusterRestoreBackupSource)
 	PutRestoreContinuousBackupSource(value *AlloydbClusterRestoreContinuousBackupSource)
 	PutSecondaryConfig(value *AlloydbClusterSecondaryConfig)
@@ -197,6 +200,7 @@ type AlloydbCluster interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetPscConfig()
 	ResetRestoreBackupSource()
 	ResetRestoreContinuousBackupSource()
 	ResetSecondaryConfig()
@@ -769,6 +773,26 @@ func (j *jsiiProxy_AlloydbCluster) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AlloydbCluster) PscConfig() AlloydbClusterPscConfigOutputReference {
+	var returns AlloydbClusterPscConfigOutputReference
+	_jsii_.Get(
+		j,
+		"pscConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbCluster) PscConfigInput() *AlloydbClusterPscConfig {
+	var returns *AlloydbClusterPscConfig
+	_jsii_.Get(
+		j,
+		"pscConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AlloydbCluster) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -930,7 +954,7 @@ func (j *jsiiProxy_AlloydbCluster) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/alloydb_cluster google_alloydb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/alloydb_cluster google_alloydb_cluster} Resource.
 func NewAlloydbCluster(scope constructs.Construct, id *string, config *AlloydbClusterConfig) AlloydbCluster {
 	_init_.Initialize()
 
@@ -948,7 +972,7 @@ func NewAlloydbCluster(scope constructs.Construct, id *string, config *AlloydbCl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/alloydb_cluster google_alloydb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/alloydb_cluster google_alloydb_cluster} Resource.
 func NewAlloydbCluster_Override(a AlloydbCluster, scope constructs.Construct, id *string, config *AlloydbClusterConfig) {
 	_init_.Initialize()
 
@@ -1578,6 +1602,17 @@ func (a *jsiiProxy_AlloydbCluster) PutNetworkConfig(value *AlloydbClusterNetwork
 	)
 }
 
+func (a *jsiiProxy_AlloydbCluster) PutPscConfig(value *AlloydbClusterPscConfig) {
+	if err := a.validatePutPscConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putPscConfig",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AlloydbCluster) PutRestoreBackupSource(value *AlloydbClusterRestoreBackupSource) {
 	if err := a.validatePutRestoreBackupSourceParameters(value); err != nil {
 		panic(err)
@@ -1754,6 +1789,14 @@ func (a *jsiiProxy_AlloydbCluster) ResetProject() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlloydbCluster) ResetPscConfig() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetPscConfig",
 		nil, // no parameters
 	)
 }

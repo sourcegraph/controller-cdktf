@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/datalosspreventionjobtrigger/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/data_loss_prevention_job_trigger google_data_loss_prevention_job_trigger}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/data_loss_prevention_job_trigger google_data_loss_prevention_job_trigger}.
 type DataLossPreventionJobTrigger interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -541,7 +541,7 @@ func (j *jsiiProxy_DataLossPreventionJobTrigger) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/data_loss_prevention_job_trigger google_data_loss_prevention_job_trigger} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/data_loss_prevention_job_trigger google_data_loss_prevention_job_trigger} Resource.
 func NewDataLossPreventionJobTrigger(scope constructs.Construct, id *string, config *DataLossPreventionJobTriggerConfig) DataLossPreventionJobTrigger {
 	_init_.Initialize()
 
@@ -559,7 +559,7 @@ func NewDataLossPreventionJobTrigger(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/data_loss_prevention_job_trigger google_data_loss_prevention_job_trigger} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/data_loss_prevention_job_trigger google_data_loss_prevention_job_trigger} Resource.
 func NewDataLossPreventionJobTrigger_Override(d DataLossPreventionJobTrigger, scope constructs.Construct, id *string, config *DataLossPreventionJobTriggerConfig) {
 	_init_.Initialize()
 

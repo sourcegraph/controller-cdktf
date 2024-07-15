@@ -493,6 +493,22 @@ func (j *jsiiProxy_GoogleCloudRunV2Job) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_GoogleCloudRunV2Job) validateSetRunExecutionTokenParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2Job) validateSetStartExecutionTokenParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewGoogleCloudRunV2JobParameters(scope constructs.Construct, id *string, config *GoogleCloudRunV2JobConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

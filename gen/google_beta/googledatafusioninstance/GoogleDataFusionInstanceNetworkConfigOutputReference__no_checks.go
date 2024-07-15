@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleDataFusionInstanceNetworkConfigOutputReference) validat
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataFusionInstanceNetworkConfigOutputReference) validatePutPrivateServiceConnectConfigParameters(value *GoogleDataFusionInstanceNetworkConfigPrivateServiceConnectConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataFusionInstanceNetworkConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -53,6 +57,10 @@ func (j *jsiiProxy_GoogleDataFusionInstanceNetworkConfigOutputReference) validat
 }
 
 func (j *jsiiProxy_GoogleDataFusionInstanceNetworkConfigOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDataFusionInstanceNetworkConfigOutputReference) validateSetConnectionTypeParameters(val *string) error {
 	return nil
 }
 

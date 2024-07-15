@@ -37,6 +37,7 @@ type DataGoogleComputeInstanceTemplateSchedulingOutputReference interface {
 	MinNodeCpus() *float64
 	NodeAffinities() DataGoogleComputeInstanceTemplateSchedulingNodeAffinitiesList
 	OnHostMaintenance() *string
+	OnInstanceStopAction() DataGoogleComputeInstanceTemplateSchedulingOnInstanceStopActionList
 	Preemptible() cdktf.IResolvable
 	ProvisioningModel() *string
 	// Experimental.
@@ -211,6 +212,16 @@ func (j *jsiiProxy_DataGoogleComputeInstanceTemplateSchedulingOutputReference) O
 	_jsii_.Get(
 		j,
 		"onHostMaintenance",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeInstanceTemplateSchedulingOutputReference) OnInstanceStopAction() DataGoogleComputeInstanceTemplateSchedulingOnInstanceStopActionList {
+	var returns DataGoogleComputeInstanceTemplateSchedulingOnInstanceStopActionList
+	_jsii_.Get(
+		j,
+		"onInstanceStopAction",
 		&returns,
 	)
 	return returns

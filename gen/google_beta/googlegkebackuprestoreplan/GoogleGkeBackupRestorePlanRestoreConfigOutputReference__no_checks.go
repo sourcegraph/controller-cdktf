@@ -52,6 +52,10 @@ func (g *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigOutputReference) valid
 	return nil
 }
 
+func (g *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigOutputReference) validatePutRestoreOrderParameters(value *GoogleGkeBackupRestorePlanRestoreConfigRestoreOrder) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigOutputReference) validatePutSelectedApplicationsParameters(value *GoogleGkeBackupRestorePlanRestoreConfigSelectedApplications) error {
 	return nil
 }
@@ -61,6 +65,10 @@ func (g *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigOutputReference) valid
 }
 
 func (g *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigOutputReference) validatePutTransformationRulesParameters(value interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigOutputReference) validatePutVolumeDataRestorePolicyBindingsParameters(value interface{}) error {
 	return nil
 }
 

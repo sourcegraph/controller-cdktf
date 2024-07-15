@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlenotebooksruntimeiambinding/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_notebooks_runtime_iam_binding google_notebooks_runtime_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_notebooks_runtime_iam_binding google_notebooks_runtime_iam_binding}.
 type GoogleNotebooksRuntimeIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -459,7 +459,7 @@ func (j *jsiiProxy_GoogleNotebooksRuntimeIamBinding) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_notebooks_runtime_iam_binding google_notebooks_runtime_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_notebooks_runtime_iam_binding google_notebooks_runtime_iam_binding} Resource.
 func NewGoogleNotebooksRuntimeIamBinding(scope constructs.Construct, id *string, config *GoogleNotebooksRuntimeIamBindingConfig) GoogleNotebooksRuntimeIamBinding {
 	_init_.Initialize()
 
@@ -477,7 +477,7 @@ func NewGoogleNotebooksRuntimeIamBinding(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_notebooks_runtime_iam_binding google_notebooks_runtime_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_notebooks_runtime_iam_binding google_notebooks_runtime_iam_binding} Resource.
 func NewGoogleNotebooksRuntimeIamBinding_Override(g GoogleNotebooksRuntimeIamBinding, scope constructs.Construct, id *string, config *GoogleNotebooksRuntimeIamBindingConfig) {
 	_init_.Initialize()
 

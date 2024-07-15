@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlenetappstoragepool/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_netapp_storage_pool google_netapp_storage_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_netapp_storage_pool google_netapp_storage_pool}.
 type GoogleNetappStoragePool interface {
 	cdktf.TerraformResource
 	ActiveDirectory() *string
@@ -87,6 +87,9 @@ type GoogleNetappStoragePool interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ReplicaZone() *string
+	SetReplicaZone(val *string)
+	ReplicaZoneInput() *string
 	ServiceLevel() *string
 	SetServiceLevel(val *string)
 	ServiceLevelInput() *string
@@ -101,6 +104,9 @@ type GoogleNetappStoragePool interface {
 	TimeoutsInput() interface{}
 	VolumeCapacityGib() *string
 	VolumeCount() *float64
+	Zone() *string
+	SetZone(val *string)
+	ZoneInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -155,7 +161,9 @@ type GoogleNetappStoragePool interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetReplicaZone()
 	ResetTimeouts()
+	ResetZone()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -544,6 +552,26 @@ func (j *jsiiProxy_GoogleNetappStoragePool) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleNetappStoragePool) ReplicaZone() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"replicaZone",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetappStoragePool) ReplicaZoneInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"replicaZoneInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleNetappStoragePool) ServiceLevel() *string {
 	var returns *string
 	_jsii_.Get(
@@ -644,8 +672,28 @@ func (j *jsiiProxy_GoogleNetappStoragePool) VolumeCount() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleNetappStoragePool) Zone() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zone",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_netapp_storage_pool google_netapp_storage_pool} Resource.
+func (j *jsiiProxy_GoogleNetappStoragePool) ZoneInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zoneInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_netapp_storage_pool google_netapp_storage_pool} Resource.
 func NewGoogleNetappStoragePool(scope constructs.Construct, id *string, config *GoogleNetappStoragePoolConfig) GoogleNetappStoragePool {
 	_init_.Initialize()
 
@@ -663,7 +711,7 @@ func NewGoogleNetappStoragePool(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_netapp_storage_pool google_netapp_storage_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_netapp_storage_pool google_netapp_storage_pool} Resource.
 func NewGoogleNetappStoragePool_Override(g GoogleNetappStoragePool, scope constructs.Construct, id *string, config *GoogleNetappStoragePoolConfig) {
 	_init_.Initialize()
 
@@ -863,6 +911,17 @@ func (j *jsiiProxy_GoogleNetappStoragePool)SetProvisioners(val *[]interface{}) {
 	)
 }
 
+func (j *jsiiProxy_GoogleNetappStoragePool)SetReplicaZone(val *string) {
+	if err := j.validateSetReplicaZoneParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"replicaZone",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleNetappStoragePool)SetServiceLevel(val *string) {
 	if err := j.validateSetServiceLevelParameters(val); err != nil {
 		panic(err)
@@ -870,6 +929,17 @@ func (j *jsiiProxy_GoogleNetappStoragePool)SetServiceLevel(val *string) {
 	_jsii_.Set(
 		j,
 		"serviceLevel",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleNetappStoragePool)SetZone(val *string) {
+	if err := j.validateSetZoneParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"zone",
 		val,
 	)
 }
@@ -1302,10 +1372,26 @@ func (g *jsiiProxy_GoogleNetappStoragePool) ResetProject() {
 	)
 }
 
+func (g *jsiiProxy_GoogleNetappStoragePool) ResetReplicaZone() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetReplicaZone",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleNetappStoragePool) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleNetappStoragePool) ResetZone() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetZone",
 		nil, // no parameters
 	)
 }

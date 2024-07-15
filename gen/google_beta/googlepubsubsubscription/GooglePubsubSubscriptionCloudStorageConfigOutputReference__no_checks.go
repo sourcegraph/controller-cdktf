@@ -64,6 +64,10 @@ func (j *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigOutputReference) validateSetFilenameDatetimeFormatParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigOutputReference) validateSetFilenamePrefixParameters(val *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (j *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigOutputReference) va
 }
 
 func (j *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigOutputReference) validateSetMaxDurationParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigOutputReference) validateSetServiceAccountEmailParameters(val *string) error {
 	return nil
 }
 

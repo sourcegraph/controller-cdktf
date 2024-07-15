@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicyDocumentationOutputReference) vali
 	return nil
 }
 
+func (g *jsiiProxy_GoogleMonitoringAlertPolicyDocumentationOutputReference) validatePutLinksParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleMonitoringAlertPolicyDocumentationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

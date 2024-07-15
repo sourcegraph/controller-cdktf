@@ -67,6 +67,7 @@ type DataLossPreventionInspectTemplateInspectConfigLimitsMaxFindingsPerInfoTypeO
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutInfoType(value *DataLossPreventionInspectTemplateInspectConfigLimitsMaxFindingsPerInfoTypeInfoType)
+	ResetInfoType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -480,6 +481,14 @@ func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigLimitsMaxFindin
 		d,
 		"putInfoType",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigLimitsMaxFindingsPerInfoTypeOutputReference) ResetInfoType() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetInfoType",
+		nil, // no parameters
 	)
 }
 

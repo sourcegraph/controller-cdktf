@@ -76,6 +76,14 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStore) validatePutBigtableParameters(val
 	return nil
 }
 
+func (v *jsiiProxy_VertexAiFeatureOnlineStore) validatePutDedicatedServingEndpointParameters(value *VertexAiFeatureOnlineStoreDedicatedServingEndpoint) error {
+	return nil
+}
+
+func (v *jsiiProxy_VertexAiFeatureOnlineStore) validatePutOptimizedParameters(value *VertexAiFeatureOnlineStoreOptimized) error {
+	return nil
+}
+
 func (v *jsiiProxy_VertexAiFeatureOnlineStore) validatePutTimeoutsParameters(value *VertexAiFeatureOnlineStoreTimeouts) error {
 	return nil
 }

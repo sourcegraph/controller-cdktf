@@ -90,6 +90,28 @@ func (g *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) vali
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) validatePutAutomaticUpdatePolicyParameters(value *GoogleCloudfunctions2FunctionBuildConfigAutomaticUpdatePolicy) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) validatePutOnDeployUpdatePolicyParameters(value *GoogleCloudfunctions2FunctionBuildConfigOnDeployUpdatePolicy) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) validatePutSourceParameters(value *GoogleCloudfunctions2FunctionBuildConfigSource) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

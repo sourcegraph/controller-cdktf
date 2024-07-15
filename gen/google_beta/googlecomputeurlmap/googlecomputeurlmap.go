@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeurlmap/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_url_map google_compute_url_map}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_url_map google_compute_url_map}.
 type GoogleComputeUrlMap interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -25,6 +25,8 @@ type GoogleComputeUrlMap interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreationTimestamp() *string
+	DefaultCustomErrorResponsePolicy() GoogleComputeUrlMapDefaultCustomErrorResponsePolicyOutputReference
+	DefaultCustomErrorResponsePolicyInput() *GoogleComputeUrlMapDefaultCustomErrorResponsePolicy
 	DefaultRouteAction() GoogleComputeUrlMapDefaultRouteActionOutputReference
 	DefaultRouteActionInput() *GoogleComputeUrlMapDefaultRouteAction
 	DefaultService() *string
@@ -134,6 +136,7 @@ type GoogleComputeUrlMap interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutDefaultCustomErrorResponsePolicy(value *GoogleComputeUrlMapDefaultCustomErrorResponsePolicy)
 	PutDefaultRouteAction(value *GoogleComputeUrlMapDefaultRouteAction)
 	PutDefaultUrlRedirect(value *GoogleComputeUrlMapDefaultUrlRedirect)
 	PutHeaderAction(value *GoogleComputeUrlMapHeaderAction)
@@ -141,6 +144,7 @@ type GoogleComputeUrlMap interface {
 	PutPathMatcher(value interface{})
 	PutTest(value interface{})
 	PutTimeouts(value *GoogleComputeUrlMapTimeouts)
+	ResetDefaultCustomErrorResponsePolicy()
 	ResetDefaultRouteAction()
 	ResetDefaultService()
 	ResetDefaultUrlRedirect()
@@ -218,6 +222,26 @@ func (j *jsiiProxy_GoogleComputeUrlMap) CreationTimestamp() *string {
 	_jsii_.Get(
 		j,
 		"creationTimestamp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeUrlMap) DefaultCustomErrorResponsePolicy() GoogleComputeUrlMapDefaultCustomErrorResponsePolicyOutputReference {
+	var returns GoogleComputeUrlMapDefaultCustomErrorResponsePolicyOutputReference
+	_jsii_.Get(
+		j,
+		"defaultCustomErrorResponsePolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeUrlMap) DefaultCustomErrorResponsePolicyInput() *GoogleComputeUrlMapDefaultCustomErrorResponsePolicy {
+	var returns *GoogleComputeUrlMapDefaultCustomErrorResponsePolicy
+	_jsii_.Get(
+		j,
+		"defaultCustomErrorResponsePolicyInput",
 		&returns,
 	)
 	return returns
@@ -614,7 +638,7 @@ func (j *jsiiProxy_GoogleComputeUrlMap) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_url_map google_compute_url_map} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_url_map google_compute_url_map} Resource.
 func NewGoogleComputeUrlMap(scope constructs.Construct, id *string, config *GoogleComputeUrlMapConfig) GoogleComputeUrlMap {
 	_init_.Initialize()
 
@@ -632,7 +656,7 @@ func NewGoogleComputeUrlMap(scope constructs.Construct, id *string, config *Goog
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_url_map google_compute_url_map} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_url_map google_compute_url_map} Resource.
 func NewGoogleComputeUrlMap_Override(g GoogleComputeUrlMap, scope constructs.Construct, id *string, config *GoogleComputeUrlMapConfig) {
 	_init_.Initialize()
 
@@ -1119,6 +1143,17 @@ func (g *jsiiProxy_GoogleComputeUrlMap) OverrideLogicalId(newLogicalId *string) 
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeUrlMap) PutDefaultCustomErrorResponsePolicy(value *GoogleComputeUrlMapDefaultCustomErrorResponsePolicy) {
+	if err := g.validatePutDefaultCustomErrorResponsePolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putDefaultCustomErrorResponsePolicy",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeUrlMap) PutDefaultRouteAction(value *GoogleComputeUrlMapDefaultRouteAction) {
 	if err := g.validatePutDefaultRouteActionParameters(value); err != nil {
 		panic(err)
@@ -1193,6 +1228,14 @@ func (g *jsiiProxy_GoogleComputeUrlMap) PutTimeouts(value *GoogleComputeUrlMapTi
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeUrlMap) ResetDefaultCustomErrorResponsePolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDefaultCustomErrorResponsePolicy",
+		nil, // no parameters
 	)
 }
 

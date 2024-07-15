@@ -44,6 +44,10 @@ func (m *jsiiProxy_MonitoringAlertPolicyDocumentationOutputReference) validateIn
 	return nil
 }
 
+func (m *jsiiProxy_MonitoringAlertPolicyDocumentationOutputReference) validatePutLinksParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitoringAlertPolicyDocumentationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

@@ -54,6 +54,8 @@ type GoogleDataplexDatascanDataQualitySpecRulesOutputReference interface {
 	RowConditionExpectationInput() *GoogleDataplexDatascanDataQualitySpecRulesRowConditionExpectation
 	SetExpectation() GoogleDataplexDatascanDataQualitySpecRulesSetExpectationOutputReference
 	SetExpectationInput() *GoogleDataplexDatascanDataQualitySpecRulesSetExpectation
+	SqlAssertion() GoogleDataplexDatascanDataQualitySpecRulesSqlAssertionOutputReference
+	SqlAssertionInput() *GoogleDataplexDatascanDataQualitySpecRulesSqlAssertion
 	StatisticRangeExpectation() GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputReference
 	StatisticRangeExpectationInput() *GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectation
 	TableConditionExpectation() GoogleDataplexDatascanDataQualitySpecRulesTableConditionExpectationOutputReference
@@ -100,6 +102,7 @@ type GoogleDataplexDatascanDataQualitySpecRulesOutputReference interface {
 	PutRegexExpectation(value *GoogleDataplexDatascanDataQualitySpecRulesRegexExpectation)
 	PutRowConditionExpectation(value *GoogleDataplexDatascanDataQualitySpecRulesRowConditionExpectation)
 	PutSetExpectation(value *GoogleDataplexDatascanDataQualitySpecRulesSetExpectation)
+	PutSqlAssertion(value *GoogleDataplexDatascanDataQualitySpecRulesSqlAssertion)
 	PutStatisticRangeExpectation(value *GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectation)
 	PutTableConditionExpectation(value *GoogleDataplexDatascanDataQualitySpecRulesTableConditionExpectation)
 	PutUniquenessExpectation(value *GoogleDataplexDatascanDataQualitySpecRulesUniquenessExpectation)
@@ -112,6 +115,7 @@ type GoogleDataplexDatascanDataQualitySpecRulesOutputReference interface {
 	ResetRegexExpectation()
 	ResetRowConditionExpectation()
 	ResetSetExpectation()
+	ResetSqlAssertion()
 	ResetStatisticRangeExpectation()
 	ResetTableConditionExpectation()
 	ResetThreshold()
@@ -376,6 +380,26 @@ func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) Se
 	_jsii_.Get(
 		j,
 		"setExpectationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) SqlAssertion() GoogleDataplexDatascanDataQualitySpecRulesSqlAssertionOutputReference {
+	var returns GoogleDataplexDatascanDataQualitySpecRulesSqlAssertionOutputReference
+	_jsii_.Get(
+		j,
+		"sqlAssertion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) SqlAssertionInput() *GoogleDataplexDatascanDataQualitySpecRulesSqlAssertion {
+	var returns *GoogleDataplexDatascanDataQualitySpecRulesSqlAssertion
+	_jsii_.Get(
+		j,
+		"sqlAssertionInput",
 		&returns,
 	)
 	return returns
@@ -871,6 +895,17 @@ func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) Pu
 	)
 }
 
+func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) PutSqlAssertion(value *GoogleDataplexDatascanDataQualitySpecRulesSqlAssertion) {
+	if err := g.validatePutSqlAssertionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSqlAssertion",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) PutStatisticRangeExpectation(value *GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectation) {
 	if err := g.validatePutStatisticRangeExpectationParameters(value); err != nil {
 		panic(err)
@@ -972,6 +1007,14 @@ func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) Re
 	_jsii_.InvokeVoid(
 		g,
 		"resetSetExpectation",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) ResetSqlAssertion() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSqlAssertion",
 		nil, // no parameters
 	)
 }

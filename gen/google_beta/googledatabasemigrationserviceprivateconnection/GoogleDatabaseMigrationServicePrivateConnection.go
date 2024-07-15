@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledatabasemigrationserviceprivateconnection/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_database_migration_service_private_connection google_database_migration_service_private_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_database_migration_service_private_connection google_database_migration_service_private_connection}.
 type GoogleDatabaseMigrationServicePrivateConnection interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -527,7 +527,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServicePrivateConnection) VpcPeeringCo
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_database_migration_service_private_connection google_database_migration_service_private_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_database_migration_service_private_connection google_database_migration_service_private_connection} Resource.
 func NewGoogleDatabaseMigrationServicePrivateConnection(scope constructs.Construct, id *string, config *GoogleDatabaseMigrationServicePrivateConnectionConfig) GoogleDatabaseMigrationServicePrivateConnection {
 	_init_.Initialize()
 
@@ -545,7 +545,7 @@ func NewGoogleDatabaseMigrationServicePrivateConnection(scope constructs.Constru
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_database_migration_service_private_connection google_database_migration_service_private_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_database_migration_service_private_connection google_database_migration_service_private_connection} Resource.
 func NewGoogleDatabaseMigrationServicePrivateConnection_Override(g GoogleDatabaseMigrationServicePrivateConnection, scope constructs.Construct, id *string, config *GoogleDatabaseMigrationServicePrivateConnectionConfig) {
 	_init_.Initialize()
 

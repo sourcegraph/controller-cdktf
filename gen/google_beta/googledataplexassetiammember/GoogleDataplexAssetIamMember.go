@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledataplexassetiammember/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_dataplex_asset_iam_member google_dataplex_asset_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_dataplex_asset_iam_member google_dataplex_asset_iam_member}.
 type GoogleDataplexAssetIamMember interface {
 	cdktf.TerraformResource
 	Asset() *string
@@ -505,7 +505,7 @@ func (j *jsiiProxy_GoogleDataplexAssetIamMember) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_dataplex_asset_iam_member google_dataplex_asset_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_dataplex_asset_iam_member google_dataplex_asset_iam_member} Resource.
 func NewGoogleDataplexAssetIamMember(scope constructs.Construct, id *string, config *GoogleDataplexAssetIamMemberConfig) GoogleDataplexAssetIamMember {
 	_init_.Initialize()
 
@@ -523,7 +523,7 @@ func NewGoogleDataplexAssetIamMember(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_dataplex_asset_iam_member google_dataplex_asset_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_dataplex_asset_iam_member google_dataplex_asset_iam_member} Resource.
 func NewGoogleDataplexAssetIamMember_Override(g GoogleDataplexAssetIamMember, scope constructs.Construct, id *string, config *GoogleDataplexAssetIamMemberConfig) {
 	_init_.Initialize()
 

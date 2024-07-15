@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/computeregionsslpolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/compute_region_ssl_policy google_compute_region_ssl_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_region_ssl_policy google_compute_region_ssl_policy}.
 type ComputeRegionSslPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -141,6 +141,7 @@ type ComputeRegionSslPolicy interface {
 	ResetOverrideLogicalId()
 	ResetProfile()
 	ResetProject()
+	ResetRegion()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -541,7 +542,7 @@ func (j *jsiiProxy_ComputeRegionSslPolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/compute_region_ssl_policy google_compute_region_ssl_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_region_ssl_policy google_compute_region_ssl_policy} Resource.
 func NewComputeRegionSslPolicy(scope constructs.Construct, id *string, config *ComputeRegionSslPolicyConfig) ComputeRegionSslPolicy {
 	_init_.Initialize()
 
@@ -559,7 +560,7 @@ func NewComputeRegionSslPolicy(scope constructs.Construct, id *string, config *C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/compute_region_ssl_policy google_compute_region_ssl_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_region_ssl_policy google_compute_region_ssl_policy} Resource.
 func NewComputeRegionSslPolicy_Override(c ComputeRegionSslPolicy, scope constructs.Construct, id *string, config *ComputeRegionSslPolicyConfig) {
 	_init_.Initialize()
 
@@ -1142,6 +1143,14 @@ func (c *jsiiProxy_ComputeRegionSslPolicy) ResetProject() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRegionSslPolicy) ResetRegion() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

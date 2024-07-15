@@ -76,6 +76,10 @@ func (h *jsiiProxy_HealthcareFhirStore) validatePutNotificationConfigParameters(
 	return nil
 }
 
+func (h *jsiiProxy_HealthcareFhirStore) validatePutNotificationConfigsParameters(value interface{}) error {
+	return nil
+}
+
 func (h *jsiiProxy_HealthcareFhirStore) validatePutStreamConfigsParameters(value interface{}) error {
 	return nil
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/certificatemanagercertificate/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/certificate_manager_certificate google_certificate_manager_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/certificate_manager_certificate google_certificate_manager_certificate}.
 type CertificateManagerCertificate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -544,7 +544,7 @@ func (j *jsiiProxy_CertificateManagerCertificate) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/certificate_manager_certificate google_certificate_manager_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/certificate_manager_certificate google_certificate_manager_certificate} Resource.
 func NewCertificateManagerCertificate(scope constructs.Construct, id *string, config *CertificateManagerCertificateConfig) CertificateManagerCertificate {
 	_init_.Initialize()
 
@@ -562,7 +562,7 @@ func NewCertificateManagerCertificate(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/certificate_manager_certificate google_certificate_manager_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/certificate_manager_certificate google_certificate_manager_certificate} Resource.
 func NewCertificateManagerCertificate_Override(c CertificateManagerCertificate, scope constructs.Construct, id *string, config *CertificateManagerCertificateConfig) {
 	_init_.Initialize()
 

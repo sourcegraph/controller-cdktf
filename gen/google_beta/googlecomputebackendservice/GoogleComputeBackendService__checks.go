@@ -686,6 +686,14 @@ func (j *jsiiProxy_GoogleComputeBackendService) validateSetSecurityPolicyParamet
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeBackendService) validateSetServiceLbPolicyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeBackendService) validateSetSessionAffinityParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

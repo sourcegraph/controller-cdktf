@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/dataprocmetastorefederation/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/dataproc_metastore_federation google_dataproc_metastore_federation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/dataproc_metastore_federation google_dataproc_metastore_federation}.
 type DataprocMetastoreFederation interface {
 	cdktf.TerraformResource
 	BackendMetastores() DataprocMetastoreFederationBackendMetastoresList
@@ -549,7 +549,7 @@ func (j *jsiiProxy_DataprocMetastoreFederation) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/dataproc_metastore_federation google_dataproc_metastore_federation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/dataproc_metastore_federation google_dataproc_metastore_federation} Resource.
 func NewDataprocMetastoreFederation(scope constructs.Construct, id *string, config *DataprocMetastoreFederationConfig) DataprocMetastoreFederation {
 	_init_.Initialize()
 
@@ -567,7 +567,7 @@ func NewDataprocMetastoreFederation(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/dataproc_metastore_federation google_dataproc_metastore_federation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/dataproc_metastore_federation google_dataproc_metastore_federation} Resource.
 func NewDataprocMetastoreFederation_Override(d DataprocMetastoreFederation, scope constructs.Construct, id *string, config *DataprocMetastoreFederationConfig) {
 	_init_.Initialize()
 

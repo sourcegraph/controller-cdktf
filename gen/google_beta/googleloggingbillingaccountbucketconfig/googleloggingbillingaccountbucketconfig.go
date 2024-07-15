@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleloggingbillingaccountbucketconfig/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_logging_billing_account_bucket_config google_logging_billing_account_bucket_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_logging_billing_account_bucket_config google_logging_billing_account_bucket_config}.
 type GoogleLoggingBillingAccountBucketConfig interface {
 	cdktf.TerraformResource
 	BillingAccount() *string
@@ -494,7 +494,7 @@ func (j *jsiiProxy_GoogleLoggingBillingAccountBucketConfig) TerraformResourceTyp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_logging_billing_account_bucket_config google_logging_billing_account_bucket_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_logging_billing_account_bucket_config google_logging_billing_account_bucket_config} Resource.
 func NewGoogleLoggingBillingAccountBucketConfig(scope constructs.Construct, id *string, config *GoogleLoggingBillingAccountBucketConfigConfig) GoogleLoggingBillingAccountBucketConfig {
 	_init_.Initialize()
 
@@ -512,7 +512,7 @@ func NewGoogleLoggingBillingAccountBucketConfig(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_logging_billing_account_bucket_config google_logging_billing_account_bucket_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_logging_billing_account_bucket_config google_logging_billing_account_bucket_config} Resource.
 func NewGoogleLoggingBillingAccountBucketConfig_Override(g GoogleLoggingBillingAccountBucketConfig, scope constructs.Construct, id *string, config *GoogleLoggingBillingAccountBucketConfigConfig) {
 	_init_.Initialize()
 

@@ -84,6 +84,10 @@ func (j *jsiiProxy_GoogleClouddeployTargetExecutionConfigsOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_GoogleClouddeployTargetExecutionConfigsOutputReference) validateSetVerboseParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleClouddeployTargetExecutionConfigsOutputReference) validateSetWorkerPoolParameters(val *string) error {
 	return nil
 }

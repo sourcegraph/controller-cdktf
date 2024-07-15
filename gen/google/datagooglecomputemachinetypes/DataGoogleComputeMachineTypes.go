@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagooglecomputemachinetypes/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/data-sources/compute_machine_types google_compute_machine_types}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/compute_machine_types google_compute_machine_types}.
 type DataGoogleComputeMachineTypes interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -345,7 +345,7 @@ func (j *jsiiProxy_DataGoogleComputeMachineTypes) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/data-sources/compute_machine_types google_compute_machine_types} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/compute_machine_types google_compute_machine_types} Data Source.
 func NewDataGoogleComputeMachineTypes(scope constructs.Construct, id *string, config *DataGoogleComputeMachineTypesConfig) DataGoogleComputeMachineTypes {
 	_init_.Initialize()
 
@@ -363,7 +363,7 @@ func NewDataGoogleComputeMachineTypes(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/data-sources/compute_machine_types google_compute_machine_types} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/compute_machine_types google_compute_machine_types} Data Source.
 func NewDataGoogleComputeMachineTypes_Override(d DataGoogleComputeMachineTypes, scope constructs.Construct, id *string, config *DataGoogleComputeMachineTypesConfig) {
 	_init_.Initialize()
 

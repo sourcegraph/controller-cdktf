@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlevertexaifeaturestoreiammember/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_vertex_ai_featurestore_iam_member google_vertex_ai_featurestore_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_vertex_ai_featurestore_iam_member google_vertex_ai_featurestore_iam_member}.
 type GoogleVertexAiFeaturestoreIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -459,7 +459,7 @@ func (j *jsiiProxy_GoogleVertexAiFeaturestoreIamMember) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_vertex_ai_featurestore_iam_member google_vertex_ai_featurestore_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_vertex_ai_featurestore_iam_member google_vertex_ai_featurestore_iam_member} Resource.
 func NewGoogleVertexAiFeaturestoreIamMember(scope constructs.Construct, id *string, config *GoogleVertexAiFeaturestoreIamMemberConfig) GoogleVertexAiFeaturestoreIamMember {
 	_init_.Initialize()
 
@@ -477,7 +477,7 @@ func NewGoogleVertexAiFeaturestoreIamMember(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_vertex_ai_featurestore_iam_member google_vertex_ai_featurestore_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_vertex_ai_featurestore_iam_member google_vertex_ai_featurestore_iam_member} Resource.
 func NewGoogleVertexAiFeaturestoreIamMember_Override(g GoogleVertexAiFeaturestoreIamMember, scope constructs.Construct, id *string, config *GoogleVertexAiFeaturestoreIamMemberConfig) {
 	_init_.Initialize()
 

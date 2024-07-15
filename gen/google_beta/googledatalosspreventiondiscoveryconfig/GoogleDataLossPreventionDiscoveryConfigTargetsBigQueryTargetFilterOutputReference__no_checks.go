@@ -48,6 +48,10 @@ func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetF
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterOutputReference) validatePutTableReferenceParameters(value *GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTableReference) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterOutputReference) validatePutTablesParameters(value *GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTables) error {
 	return nil
 }

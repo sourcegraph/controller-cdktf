@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/computetargethttpsproxy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/compute_target_https_proxy google_compute_target_https_proxy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_target_https_proxy google_compute_target_https_proxy}.
 type ComputeTargetHttpsProxy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -99,6 +99,9 @@ type ComputeTargetHttpsProxy interface {
 	TerraformResourceType() *string
 	Timeouts() ComputeTargetHttpsProxyTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	TlsEarlyData() *string
+	SetTlsEarlyData(val *string)
+	TlsEarlyDataInput() *string
 	UrlMap() *string
 	SetUrlMap(val *string)
 	UrlMapInput() *string
@@ -161,6 +164,7 @@ type ComputeTargetHttpsProxy interface {
 	ResetSslCertificates()
 	ResetSslPolicy()
 	ResetTimeouts()
+	ResetTlsEarlyData()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -629,6 +633,26 @@ func (j *jsiiProxy_ComputeTargetHttpsProxy) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeTargetHttpsProxy) TlsEarlyData() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tlsEarlyData",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeTargetHttpsProxy) TlsEarlyDataInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tlsEarlyDataInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeTargetHttpsProxy) UrlMap() *string {
 	var returns *string
 	_jsii_.Get(
@@ -650,7 +674,7 @@ func (j *jsiiProxy_ComputeTargetHttpsProxy) UrlMapInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/compute_target_https_proxy google_compute_target_https_proxy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_target_https_proxy google_compute_target_https_proxy} Resource.
 func NewComputeTargetHttpsProxy(scope constructs.Construct, id *string, config *ComputeTargetHttpsProxyConfig) ComputeTargetHttpsProxy {
 	_init_.Initialize()
 
@@ -668,7 +692,7 @@ func NewComputeTargetHttpsProxy(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/compute_target_https_proxy google_compute_target_https_proxy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_target_https_proxy google_compute_target_https_proxy} Resource.
 func NewComputeTargetHttpsProxy_Override(c ComputeTargetHttpsProxy, scope constructs.Construct, id *string, config *ComputeTargetHttpsProxyConfig) {
 	_init_.Initialize()
 
@@ -875,6 +899,17 @@ func (j *jsiiProxy_ComputeTargetHttpsProxy)SetSslPolicy(val *string) {
 	_jsii_.Set(
 		j,
 		"sslPolicy",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeTargetHttpsProxy)SetTlsEarlyData(val *string) {
+	if err := j.validateSetTlsEarlyDataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tlsEarlyData",
 		val,
 	)
 }
@@ -1354,6 +1389,14 @@ func (c *jsiiProxy_ComputeTargetHttpsProxy) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeTargetHttpsProxy) ResetTlsEarlyData() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetTlsEarlyData",
 		nil, // no parameters
 	)
 }

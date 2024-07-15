@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) valid
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) validatePutOnInstanceStopActionParameters(value *GoogleComputeInstanceTemplateSchedulingOnInstanceStopAction) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglecloudfunctions2function/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/data-sources/google_cloudfunctions2_function google_cloudfunctions2_function}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_cloudfunctions2_function google_cloudfunctions2_function}.
 type DataGoogleCloudfunctions2Function interface {
 	cdktf.TerraformDataSource
 	BuildConfig() DataGoogleCloudfunctions2FunctionBuildConfigList
@@ -464,7 +464,7 @@ func (j *jsiiProxy_DataGoogleCloudfunctions2Function) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/data-sources/google_cloudfunctions2_function google_cloudfunctions2_function} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_cloudfunctions2_function google_cloudfunctions2_function} Data Source.
 func NewDataGoogleCloudfunctions2Function(scope constructs.Construct, id *string, config *DataGoogleCloudfunctions2FunctionConfig) DataGoogleCloudfunctions2Function {
 	_init_.Initialize()
 
@@ -482,7 +482,7 @@ func NewDataGoogleCloudfunctions2Function(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/data-sources/google_cloudfunctions2_function google_cloudfunctions2_function} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_cloudfunctions2_function google_cloudfunctions2_function} Data Source.
 func NewDataGoogleCloudfunctions2Function_Override(d DataGoogleCloudfunctions2Function, scope constructs.Construct, id *string, config *DataGoogleCloudfunctions2FunctionConfig) {
 	_init_.Initialize()
 

@@ -152,6 +152,14 @@ func (j *jsiiProxy_GoogleCloudRunV2Job) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_GoogleCloudRunV2Job) validateSetRunExecutionTokenParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2Job) validateSetStartExecutionTokenParameters(val *string) error {
+	return nil
+}
+
 func validateNewGoogleCloudRunV2JobParameters(scope constructs.Construct, id *string, config *GoogleCloudRunV2JobConfig) error {
 	return nil
 }

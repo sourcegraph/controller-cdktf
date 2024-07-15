@@ -19,19 +19,19 @@ type GoogleComputeUrlMapPathMatcherRouteRules struct {
 	// you could add rules numbered from 6 to 8, 10 to 11, and 13 to 15 in the
 	// future without any impact on existing rules.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_url_map#priority GoogleComputeUrlMap#priority}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_url_map#priority GoogleComputeUrlMap#priority}
 	Priority *float64 `field:"required" json:"priority" yaml:"priority"`
 	// header_action block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_url_map#header_action GoogleComputeUrlMap#header_action}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_url_map#header_action GoogleComputeUrlMap#header_action}
 	HeaderAction *GoogleComputeUrlMapPathMatcherRouteRulesHeaderAction `field:"optional" json:"headerAction" yaml:"headerAction"`
 	// match_rules block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_url_map#match_rules GoogleComputeUrlMap#match_rules}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_url_map#match_rules GoogleComputeUrlMap#match_rules}
 	MatchRules interface{} `field:"optional" json:"matchRules" yaml:"matchRules"`
 	// route_action block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_url_map#route_action GoogleComputeUrlMap#route_action}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_url_map#route_action GoogleComputeUrlMap#route_action}
 	RouteAction *GoogleComputeUrlMapPathMatcherRouteRulesRouteAction `field:"optional" json:"routeAction" yaml:"routeAction"`
 	// The backend service resource to which traffic is directed if this rule is matched.
 	//
@@ -42,11 +42,11 @@ type GoogleComputeUrlMapPathMatcherRouteRules struct {
 	// weightedBackendServices, service must not be specified. Only one of urlRedirect,
 	// service or routeAction.weightedBackendService must be set.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_url_map#service GoogleComputeUrlMap#service}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_url_map#service GoogleComputeUrlMap#service}
 	Service *string `field:"optional" json:"service" yaml:"service"`
 	// url_redirect block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_url_map#url_redirect GoogleComputeUrlMap#url_redirect}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_url_map#url_redirect GoogleComputeUrlMap#url_redirect}
 	UrlRedirect *GoogleComputeUrlMapPathMatcherRouteRulesUrlRedirect `field:"optional" json:"urlRedirect" yaml:"urlRedirect"`
 }
 

@@ -148,6 +148,10 @@ func (j *jsiiProxy_GoogleRedisInstance) validateSetLocationIdParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_GoogleRedisInstance) validateSetMaintenanceVersionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleRedisInstance) validateSetMemorySizeGbParameters(val *float64) error {
 	return nil
 }

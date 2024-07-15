@@ -72,6 +72,10 @@ func (g *jsiiProxy_GoogleDiscoveryEngineDataStore) validateOverrideLogicalIdPara
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDiscoveryEngineDataStore) validatePutDocumentProcessingConfigParameters(value *GoogleDiscoveryEngineDataStoreDocumentProcessingConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDiscoveryEngineDataStore) validatePutTimeoutsParameters(value *GoogleDiscoveryEngineDataStoreTimeouts) error {
 	return nil
 }

@@ -255,6 +255,14 @@ func validateGoogleNetappActiveDirectory_IsTerraformResourceParameters(x interfa
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetappActiveDirectory) validateSetAdministratorsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetappActiveDirectory) validateSetAesEncryptionParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

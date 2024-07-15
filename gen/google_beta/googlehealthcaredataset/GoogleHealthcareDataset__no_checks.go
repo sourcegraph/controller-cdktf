@@ -72,6 +72,10 @@ func (g *jsiiProxy_GoogleHealthcareDataset) validateOverrideLogicalIdParameters(
 	return nil
 }
 
+func (g *jsiiProxy_GoogleHealthcareDataset) validatePutEncryptionSpecParameters(value *GoogleHealthcareDatasetEncryptionSpec) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleHealthcareDataset) validatePutTimeoutsParameters(value *GoogleHealthcareDatasetTimeouts) error {
 	return nil
 }

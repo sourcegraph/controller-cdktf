@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeinstancegroupmanager/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_instance_group_manager google_compute_instance_group_manager}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_instance_group_manager google_compute_instance_group_manager}.
 type GoogleComputeInstanceGroupManager interface {
 	cdktf.TerraformResource
 	AllInstancesConfig() GoogleComputeInstanceGroupManagerAllInstancesConfigOutputReference
@@ -85,6 +85,8 @@ type GoogleComputeInstanceGroupManager interface {
 	// Experimental.
 	RawOverrides() interface{}
 	SelfLink() *string
+	StandbyPolicy() GoogleComputeInstanceGroupManagerStandbyPolicyOutputReference
+	StandbyPolicyInput() *GoogleComputeInstanceGroupManagerStandbyPolicy
 	StatefulDisk() GoogleComputeInstanceGroupManagerStatefulDiskList
 	StatefulDiskInput() interface{}
 	StatefulExternalIp() GoogleComputeInstanceGroupManagerStatefulExternalIpList
@@ -98,6 +100,12 @@ type GoogleComputeInstanceGroupManager interface {
 	TargetSize() *float64
 	SetTargetSize(val *float64)
 	TargetSizeInput() *float64
+	TargetStoppedSize() *float64
+	SetTargetStoppedSize(val *float64)
+	TargetStoppedSizeInput() *float64
+	TargetSuspendedSize() *float64
+	SetTargetSuspendedSize(val *float64)
+	TargetSuspendedSizeInput() *float64
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -167,6 +175,7 @@ type GoogleComputeInstanceGroupManager interface {
 	PutInstanceLifecyclePolicy(value *GoogleComputeInstanceGroupManagerInstanceLifecyclePolicy)
 	PutNamedPort(value interface{})
 	PutParams(value *GoogleComputeInstanceGroupManagerParams)
+	PutStandbyPolicy(value *GoogleComputeInstanceGroupManagerStandbyPolicy)
 	PutStatefulDisk(value interface{})
 	PutStatefulExternalIp(value interface{})
 	PutStatefulInternalIp(value interface{})
@@ -185,11 +194,14 @@ type GoogleComputeInstanceGroupManager interface {
 	ResetOverrideLogicalId()
 	ResetParams()
 	ResetProject()
+	ResetStandbyPolicy()
 	ResetStatefulDisk()
 	ResetStatefulExternalIp()
 	ResetStatefulInternalIp()
 	ResetTargetPools()
 	ResetTargetSize()
+	ResetTargetStoppedSize()
+	ResetTargetSuspendedSize()
 	ResetTimeouts()
 	ResetUpdatePolicy()
 	ResetWaitForInstances()
@@ -613,6 +625,26 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupManager) SelfLink() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceGroupManager) StandbyPolicy() GoogleComputeInstanceGroupManagerStandbyPolicyOutputReference {
+	var returns GoogleComputeInstanceGroupManagerStandbyPolicyOutputReference
+	_jsii_.Get(
+		j,
+		"standbyPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceGroupManager) StandbyPolicyInput() *GoogleComputeInstanceGroupManagerStandbyPolicy {
+	var returns *GoogleComputeInstanceGroupManagerStandbyPolicy
+	_jsii_.Get(
+		j,
+		"standbyPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceGroupManager) StatefulDisk() GoogleComputeInstanceGroupManagerStatefulDiskList {
 	var returns GoogleComputeInstanceGroupManagerStatefulDiskList
 	_jsii_.Get(
@@ -718,6 +750,46 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupManager) TargetSizeInput() *float64
 	_jsii_.Get(
 		j,
 		"targetSizeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceGroupManager) TargetStoppedSize() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"targetStoppedSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceGroupManager) TargetStoppedSizeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"targetStoppedSizeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceGroupManager) TargetSuspendedSize() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"targetSuspendedSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceGroupManager) TargetSuspendedSizeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"targetSuspendedSizeInput",
 		&returns,
 	)
 	return returns
@@ -874,7 +946,7 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupManager) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_instance_group_manager google_compute_instance_group_manager} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_instance_group_manager google_compute_instance_group_manager} Resource.
 func NewGoogleComputeInstanceGroupManager(scope constructs.Construct, id *string, config *GoogleComputeInstanceGroupManagerConfig) GoogleComputeInstanceGroupManager {
 	_init_.Initialize()
 
@@ -892,7 +964,7 @@ func NewGoogleComputeInstanceGroupManager(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_instance_group_manager google_compute_instance_group_manager} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_instance_group_manager google_compute_instance_group_manager} Resource.
 func NewGoogleComputeInstanceGroupManager_Override(g GoogleComputeInstanceGroupManager, scope constructs.Construct, id *string, config *GoogleComputeInstanceGroupManagerConfig) {
 	_init_.Initialize()
 
@@ -1055,6 +1127,28 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupManager)SetTargetSize(val *float64)
 	_jsii_.Set(
 		j,
 		"targetSize",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceGroupManager)SetTargetStoppedSize(val *float64) {
+	if err := j.validateSetTargetStoppedSizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"targetStoppedSize",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceGroupManager)SetTargetSuspendedSize(val *float64) {
+	if err := j.validateSetTargetSuspendedSizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"targetSuspendedSize",
 		val,
 	)
 }
@@ -1500,6 +1594,17 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManager) PutParams(value *GoogleCom
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeInstanceGroupManager) PutStandbyPolicy(value *GoogleComputeInstanceGroupManagerStandbyPolicy) {
+	if err := g.validatePutStandbyPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putStandbyPolicy",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceGroupManager) PutStatefulDisk(value interface{}) {
 	if err := g.validatePutStatefulDiskParameters(value); err != nil {
 		panic(err)
@@ -1646,6 +1751,14 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManager) ResetProject() {
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeInstanceGroupManager) ResetStandbyPolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetStandbyPolicy",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceGroupManager) ResetStatefulDisk() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1682,6 +1795,22 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManager) ResetTargetSize() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetTargetSize",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceGroupManager) ResetTargetStoppedSize() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTargetStoppedSize",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceGroupManager) ResetTargetSuspendedSize() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTargetSuspendedSize",
 		nil, // no parameters
 	)
 }

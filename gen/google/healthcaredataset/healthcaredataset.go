@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/healthcaredataset/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/healthcare_dataset google_healthcare_dataset}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/healthcare_dataset google_healthcare_dataset}.
 type HealthcareDataset interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -28,6 +28,8 @@ type HealthcareDataset interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EncryptionSpec() HealthcareDatasetEncryptionSpecOutputReference
+	EncryptionSpecInput() *HealthcareDatasetEncryptionSpec
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -119,7 +121,9 @@ type HealthcareDataset interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutEncryptionSpec(value *HealthcareDatasetEncryptionSpec)
 	PutTimeouts(value *HealthcareDatasetTimeouts)
+	ResetEncryptionSpec()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -190,6 +194,26 @@ func (j *jsiiProxy_HealthcareDataset) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HealthcareDataset) EncryptionSpec() HealthcareDatasetEncryptionSpecOutputReference {
+	var returns HealthcareDatasetEncryptionSpecOutputReference
+	_jsii_.Get(
+		j,
+		"encryptionSpec",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HealthcareDataset) EncryptionSpecInput() *HealthcareDatasetEncryptionSpec {
+	var returns *HealthcareDatasetEncryptionSpec
+	_jsii_.Get(
+		j,
+		"encryptionSpecInput",
 		&returns,
 	)
 	return returns
@@ -436,7 +460,7 @@ func (j *jsiiProxy_HealthcareDataset) TimeZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/healthcare_dataset google_healthcare_dataset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/healthcare_dataset google_healthcare_dataset} Resource.
 func NewHealthcareDataset(scope constructs.Construct, id *string, config *HealthcareDatasetConfig) HealthcareDataset {
 	_init_.Initialize()
 
@@ -454,7 +478,7 @@ func NewHealthcareDataset(scope constructs.Construct, id *string, config *Health
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/healthcare_dataset google_healthcare_dataset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/healthcare_dataset google_healthcare_dataset} Resource.
 func NewHealthcareDataset_Override(h HealthcareDataset, scope constructs.Construct, id *string, config *HealthcareDatasetConfig) {
 	_init_.Initialize()
 
@@ -941,6 +965,17 @@ func (h *jsiiProxy_HealthcareDataset) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (h *jsiiProxy_HealthcareDataset) PutEncryptionSpec(value *HealthcareDatasetEncryptionSpec) {
+	if err := h.validatePutEncryptionSpecParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		h,
+		"putEncryptionSpec",
+		[]interface{}{value},
+	)
+}
+
 func (h *jsiiProxy_HealthcareDataset) PutTimeouts(value *HealthcareDatasetTimeouts) {
 	if err := h.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -949,6 +984,14 @@ func (h *jsiiProxy_HealthcareDataset) PutTimeouts(value *HealthcareDatasetTimeou
 		h,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (h *jsiiProxy_HealthcareDataset) ResetEncryptionSpec() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetEncryptionSpec",
+		nil, // no parameters
 	)
 }
 

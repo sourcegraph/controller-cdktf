@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecloudrunv2job/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_cloud_run_v2_job google_cloud_run_v2_job}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_cloud_run_v2_job google_cloud_run_v2_job}.
 type GoogleCloudRunV2Job interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -95,6 +95,12 @@ type GoogleCloudRunV2Job interface {
 	// Experimental.
 	RawOverrides() interface{}
 	Reconciling() cdktf.IResolvable
+	RunExecutionToken() *string
+	SetRunExecutionToken(val *string)
+	RunExecutionTokenInput() *string
+	StartExecutionToken() *string
+	SetStartExecutionToken(val *string)
+	StartExecutionTokenInput() *string
 	Template() GoogleCloudRunV2JobTemplateOutputReference
 	TemplateInput() *GoogleCloudRunV2JobTemplate
 	TerminalCondition() GoogleCloudRunV2JobTerminalConditionList
@@ -166,6 +172,8 @@ type GoogleCloudRunV2Job interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetRunExecutionToken()
+	ResetStartExecutionToken()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -655,6 +663,46 @@ func (j *jsiiProxy_GoogleCloudRunV2Job) Reconciling() cdktf.IResolvable {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleCloudRunV2Job) RunExecutionToken() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"runExecutionToken",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2Job) RunExecutionTokenInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"runExecutionTokenInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2Job) StartExecutionToken() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"startExecutionToken",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2Job) StartExecutionTokenInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"startExecutionTokenInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleCloudRunV2Job) Template() GoogleCloudRunV2JobTemplateOutputReference {
 	var returns GoogleCloudRunV2JobTemplateOutputReference
 	_jsii_.Get(
@@ -766,7 +814,7 @@ func (j *jsiiProxy_GoogleCloudRunV2Job) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_cloud_run_v2_job google_cloud_run_v2_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_cloud_run_v2_job google_cloud_run_v2_job} Resource.
 func NewGoogleCloudRunV2Job(scope constructs.Construct, id *string, config *GoogleCloudRunV2JobConfig) GoogleCloudRunV2Job {
 	_init_.Initialize()
 
@@ -784,7 +832,7 @@ func NewGoogleCloudRunV2Job(scope constructs.Construct, id *string, config *Goog
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_cloud_run_v2_job google_cloud_run_v2_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_cloud_run_v2_job google_cloud_run_v2_job} Resource.
 func NewGoogleCloudRunV2Job_Override(g GoogleCloudRunV2Job, scope constructs.Construct, id *string, config *GoogleCloudRunV2JobConfig) {
 	_init_.Initialize()
 
@@ -958,6 +1006,28 @@ func (j *jsiiProxy_GoogleCloudRunV2Job)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2Job)SetRunExecutionToken(val *string) {
+	if err := j.validateSetRunExecutionTokenParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"runExecutionToken",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2Job)SetStartExecutionToken(val *string) {
+	if err := j.validateSetStartExecutionTokenParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"startExecutionToken",
 		val,
 	)
 }
@@ -1416,6 +1486,22 @@ func (g *jsiiProxy_GoogleCloudRunV2Job) ResetProject() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudRunV2Job) ResetRunExecutionToken() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRunExecutionToken",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudRunV2Job) ResetStartExecutionToken() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetStartExecutionToken",
 		nil, // no parameters
 	)
 }

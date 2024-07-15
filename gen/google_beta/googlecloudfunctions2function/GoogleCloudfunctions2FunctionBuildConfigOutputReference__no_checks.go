@@ -44,6 +44,14 @@ func (g *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) vali
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) validatePutAutomaticUpdatePolicyParameters(value *GoogleCloudfunctions2FunctionBuildConfigAutomaticUpdatePolicy) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) validatePutOnDeployUpdatePolicyParameters(value *GoogleCloudfunctions2FunctionBuildConfigOnDeployUpdatePolicy) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) validatePutSourceParameters(value *GoogleCloudfunctions2FunctionBuildConfigSource) error {
 	return nil
 }

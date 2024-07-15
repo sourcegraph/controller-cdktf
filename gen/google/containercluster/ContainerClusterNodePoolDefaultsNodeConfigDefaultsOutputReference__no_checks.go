@@ -44,6 +44,10 @@ func (c *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputRefer
 	return nil
 }
 
+func (c *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) validatePutContainerdConfigParameters(value *ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

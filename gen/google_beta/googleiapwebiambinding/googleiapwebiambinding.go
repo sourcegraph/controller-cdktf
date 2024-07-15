@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleiapwebiambinding/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_iap_web_iam_binding google_iap_web_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_iap_web_iam_binding google_iap_web_iam_binding}.
 type GoogleIapWebIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -412,7 +412,7 @@ func (j *jsiiProxy_GoogleIapWebIamBinding) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_iap_web_iam_binding google_iap_web_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_iap_web_iam_binding google_iap_web_iam_binding} Resource.
 func NewGoogleIapWebIamBinding(scope constructs.Construct, id *string, config *GoogleIapWebIamBindingConfig) GoogleIapWebIamBinding {
 	_init_.Initialize()
 
@@ -430,7 +430,7 @@ func NewGoogleIapWebIamBinding(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_iap_web_iam_binding google_iap_web_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_iap_web_iam_binding google_iap_web_iam_binding} Resource.
 func NewGoogleIapWebIamBinding_Override(g GoogleIapWebIamBinding, scope constructs.Construct, id *string, config *GoogleIapWebIamBindingConfig) {
 	_init_.Initialize()
 

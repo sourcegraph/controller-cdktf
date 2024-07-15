@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglecontainerattachedversions/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/data-sources/google_container_attached_versions google_container_attached_versions}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_container_attached_versions google_container_attached_versions}.
 type DataGoogleContainerAttachedVersions interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -319,7 +319,7 @@ func (j *jsiiProxy_DataGoogleContainerAttachedVersions) ValidVersions() *[]*stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/data-sources/google_container_attached_versions google_container_attached_versions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_container_attached_versions google_container_attached_versions} Data Source.
 func NewDataGoogleContainerAttachedVersions(scope constructs.Construct, id *string, config *DataGoogleContainerAttachedVersionsConfig) DataGoogleContainerAttachedVersions {
 	_init_.Initialize()
 
@@ -337,7 +337,7 @@ func NewDataGoogleContainerAttachedVersions(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/data-sources/google_container_attached_versions google_container_attached_versions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_container_attached_versions google_container_attached_versions} Data Source.
 func NewDataGoogleContainerAttachedVersions_Override(d DataGoogleContainerAttachedVersions, scope constructs.Construct, id *string, config *DataGoogleContainerAttachedVersionsConfig) {
 	_init_.Initialize()
 

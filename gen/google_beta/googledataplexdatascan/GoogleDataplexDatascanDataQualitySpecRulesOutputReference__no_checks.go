@@ -64,6 +64,10 @@ func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) va
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) validatePutSqlAssertionParameters(value *GoogleDataplexDatascanDataQualitySpecRulesSqlAssertion) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) validatePutStatisticRangeExpectationParameters(value *GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectation) error {
 	return nil
 }

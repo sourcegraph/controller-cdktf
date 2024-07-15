@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlefirebaseappleapp/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_firebase_apple_app google_firebase_apple_app}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_firebase_apple_app google_firebase_apple_app}.
 type GoogleFirebaseAppleApp interface {
 	cdktf.TerraformResource
 	ApiKeyId() *string
@@ -519,7 +519,7 @@ func (j *jsiiProxy_GoogleFirebaseAppleApp) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_firebase_apple_app google_firebase_apple_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_firebase_apple_app google_firebase_apple_app} Resource.
 func NewGoogleFirebaseAppleApp(scope constructs.Construct, id *string, config *GoogleFirebaseAppleAppConfig) GoogleFirebaseAppleApp {
 	_init_.Initialize()
 
@@ -537,7 +537,7 @@ func NewGoogleFirebaseAppleApp(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_firebase_apple_app google_firebase_apple_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_firebase_apple_app google_firebase_apple_app} Resource.
 func NewGoogleFirebaseAppleApp_Override(g GoogleFirebaseAppleApp, scope constructs.Construct, id *string, config *GoogleFirebaseAppleAppConfig) {
 	_init_.Initialize()
 

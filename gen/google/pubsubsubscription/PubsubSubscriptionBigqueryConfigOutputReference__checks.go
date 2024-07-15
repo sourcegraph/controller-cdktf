@@ -191,6 +191,14 @@ func (j *jsiiProxy_PubsubSubscriptionBigqueryConfigOutputReference) validateSetI
 	return nil
 }
 
+func (j *jsiiProxy_PubsubSubscriptionBigqueryConfigOutputReference) validateSetServiceAccountEmailParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_PubsubSubscriptionBigqueryConfigOutputReference) validateSetTableParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

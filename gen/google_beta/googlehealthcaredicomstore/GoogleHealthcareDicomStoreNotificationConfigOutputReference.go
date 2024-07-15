@@ -32,6 +32,9 @@ type GoogleHealthcareDicomStoreNotificationConfigOutputReference interface {
 	PubsubTopic() *string
 	SetPubsubTopic(val *string)
 	PubsubTopicInput() *string
+	SendForBulkImport() interface{}
+	SetSendForBulkImport(val interface{})
+	SendForBulkImportInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -64,6 +67,7 @@ type GoogleHealthcareDicomStoreNotificationConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetSendForBulkImport()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -144,6 +148,26 @@ func (j *jsiiProxy_GoogleHealthcareDicomStoreNotificationConfigOutputReference) 
 	_jsii_.Get(
 		j,
 		"pubsubTopicInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleHealthcareDicomStoreNotificationConfigOutputReference) SendForBulkImport() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sendForBulkImport",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleHealthcareDicomStoreNotificationConfigOutputReference) SendForBulkImportInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sendForBulkImportInput",
 		&returns,
 	)
 	return returns
@@ -237,6 +261,17 @@ func (j *jsiiProxy_GoogleHealthcareDicomStoreNotificationConfigOutputReference)S
 	_jsii_.Set(
 		j,
 		"pubsubTopic",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleHealthcareDicomStoreNotificationConfigOutputReference)SetSendForBulkImport(val interface{}) {
+	if err := j.validateSetSendForBulkImportParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sendForBulkImport",
 		val,
 	)
 }
@@ -447,6 +482,14 @@ func (g *jsiiProxy_GoogleHealthcareDicomStoreNotificationConfigOutputReference) 
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleHealthcareDicomStoreNotificationConfigOutputReference) ResetSendForBulkImport() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSendForBulkImport",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleHealthcareDicomStoreNotificationConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

@@ -10,7 +10,7 @@ type GoogleComputeOrganizationSecurityPolicyRuleMatchConfigLayer4Config struct {
 	// known protocol strings (tcp, udp, icmp, esp, ah, ipip, sctp),
 	// or the IP protocol number.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_organization_security_policy_rule#ip_protocol GoogleComputeOrganizationSecurityPolicyRule#ip_protocol}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_organization_security_policy_rule#ip_protocol GoogleComputeOrganizationSecurityPolicyRule#ip_protocol}
 	IpProtocol *string `field:"required" json:"ipProtocol" yaml:"ipProtocol"`
 	// An optional list of ports to which this rule applies.
 	//
@@ -22,7 +22,7 @@ type GoogleComputeOrganizationSecurityPolicyRuleMatchConfigLayer4Config struct {
 	// Example inputs include: ["22"], ["80","443"], and
 	// ["12345-12349"].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_organization_security_policy_rule#ports GoogleComputeOrganizationSecurityPolicyRule#ports}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_organization_security_policy_rule#ports GoogleComputeOrganizationSecurityPolicyRule#ports}
 	Ports *[]*string `field:"optional" json:"ports" yaml:"ports"`
 }
 

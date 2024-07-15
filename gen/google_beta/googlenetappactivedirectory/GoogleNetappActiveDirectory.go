@@ -9,9 +9,12 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlenetappactivedirectory/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_netapp_active_directory google_netapp_active_directory}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_netapp_active_directory google_netapp_active_directory}.
 type GoogleNetappActiveDirectory interface {
 	cdktf.TerraformResource
+	Administrators() *[]*string
+	SetAdministrators(val *[]*string)
+	AdministratorsInput() *[]*string
 	AesEncryption() interface{}
 	SetAesEncryption(val interface{})
 	AesEncryptionInput() interface{}
@@ -172,6 +175,7 @@ type GoogleNetappActiveDirectory interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *GoogleNetappActiveDirectoryTimeouts)
+	ResetAdministrators()
 	ResetAesEncryption()
 	ResetBackupOperators()
 	ResetDescription()
@@ -206,6 +210,26 @@ type GoogleNetappActiveDirectory interface {
 // The jsii proxy struct for GoogleNetappActiveDirectory
 type jsiiProxy_GoogleNetappActiveDirectory struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GoogleNetappActiveDirectory) Administrators() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"administrators",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetappActiveDirectory) AdministratorsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"administratorsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleNetappActiveDirectory) AesEncryption() interface{} {
@@ -859,7 +883,7 @@ func (j *jsiiProxy_GoogleNetappActiveDirectory) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_netapp_active_directory google_netapp_active_directory} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_netapp_active_directory google_netapp_active_directory} Resource.
 func NewGoogleNetappActiveDirectory(scope constructs.Construct, id *string, config *GoogleNetappActiveDirectoryConfig) GoogleNetappActiveDirectory {
 	_init_.Initialize()
 
@@ -877,7 +901,7 @@ func NewGoogleNetappActiveDirectory(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_netapp_active_directory google_netapp_active_directory} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_netapp_active_directory google_netapp_active_directory} Resource.
 func NewGoogleNetappActiveDirectory_Override(g GoogleNetappActiveDirectory, scope constructs.Construct, id *string, config *GoogleNetappActiveDirectoryConfig) {
 	_init_.Initialize()
 
@@ -885,6 +909,17 @@ func NewGoogleNetappActiveDirectory_Override(g GoogleNetappActiveDirectory, scop
 		"@cdktf/provider-google-beta.googleNetappActiveDirectory.GoogleNetappActiveDirectory",
 		[]interface{}{scope, id, config},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GoogleNetappActiveDirectory)SetAdministrators(val *[]*string) {
+	if err := j.validateSetAdministratorsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"administrators",
+		val,
 	)
 }
 
@@ -1548,6 +1583,14 @@ func (g *jsiiProxy_GoogleNetappActiveDirectory) PutTimeouts(value *GoogleNetappA
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleNetappActiveDirectory) ResetAdministrators() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAdministrators",
+		nil, // no parameters
 	)
 }
 

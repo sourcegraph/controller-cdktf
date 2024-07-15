@@ -92,6 +92,10 @@ func validateGoogleNetappActiveDirectory_IsTerraformResourceParameters(x interfa
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetappActiveDirectory) validateSetAdministratorsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetappActiveDirectory) validateSetAesEncryptionParameters(val interface{}) error {
 	return nil
 }

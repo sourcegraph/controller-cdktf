@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputebackendbucketsignedurlkey/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_backend_bucket_signed_url_key google_compute_backend_bucket_signed_url_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_backend_bucket_signed_url_key google_compute_backend_bucket_signed_url_key}.
 type GoogleComputeBackendBucketSignedUrlKey interface {
 	cdktf.TerraformResource
 	BackendBucket() *string
@@ -424,7 +424,7 @@ func (j *jsiiProxy_GoogleComputeBackendBucketSignedUrlKey) TimeoutsInput() inter
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_backend_bucket_signed_url_key google_compute_backend_bucket_signed_url_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_backend_bucket_signed_url_key google_compute_backend_bucket_signed_url_key} Resource.
 func NewGoogleComputeBackendBucketSignedUrlKey(scope constructs.Construct, id *string, config *GoogleComputeBackendBucketSignedUrlKeyConfig) GoogleComputeBackendBucketSignedUrlKey {
 	_init_.Initialize()
 
@@ -442,7 +442,7 @@ func NewGoogleComputeBackendBucketSignedUrlKey(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_backend_bucket_signed_url_key google_compute_backend_bucket_signed_url_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_backend_bucket_signed_url_key google_compute_backend_bucket_signed_url_key} Resource.
 func NewGoogleComputeBackendBucketSignedUrlKey_Override(g GoogleComputeBackendBucketSignedUrlKey, scope constructs.Construct, id *string, config *GoogleComputeBackendBucketSignedUrlKeyConfig) {
 	_init_.Initialize()
 

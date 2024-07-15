@@ -168,6 +168,10 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachment) validateSetStackTypePara
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) validateSetSubnetLengthParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeInterconnectAttachment) validateSetTypeParameters(val *string) error {
 	return nil
 }

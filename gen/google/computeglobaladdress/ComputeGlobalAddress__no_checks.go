@@ -120,6 +120,10 @@ func (j *jsiiProxy_ComputeGlobalAddress) validateSetIpVersionParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_ComputeGlobalAddress) validateSetLabelsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeGlobalAddress) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleworkstationsworkstationconfigiambinding/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_workstations_workstation_config_iam_binding google_workstations_workstation_config_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_workstations_workstation_config_iam_binding google_workstations_workstation_config_iam_binding}.
 type GoogleWorkstationsWorkstationConfigIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -482,7 +482,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigIamBinding) WorkstationCon
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_workstations_workstation_config_iam_binding google_workstations_workstation_config_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_workstations_workstation_config_iam_binding google_workstations_workstation_config_iam_binding} Resource.
 func NewGoogleWorkstationsWorkstationConfigIamBinding(scope constructs.Construct, id *string, config *GoogleWorkstationsWorkstationConfigIamBindingConfig) GoogleWorkstationsWorkstationConfigIamBinding {
 	_init_.Initialize()
 
@@ -500,7 +500,7 @@ func NewGoogleWorkstationsWorkstationConfigIamBinding(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_workstations_workstation_config_iam_binding google_workstations_workstation_config_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_workstations_workstation_config_iam_binding google_workstations_workstation_config_iam_binding} Resource.
 func NewGoogleWorkstationsWorkstationConfigIamBinding_Override(g GoogleWorkstationsWorkstationConfigIamBinding, scope constructs.Construct, id *string, config *GoogleWorkstationsWorkstationConfigIamBindingConfig) {
 	_init_.Initialize()
 

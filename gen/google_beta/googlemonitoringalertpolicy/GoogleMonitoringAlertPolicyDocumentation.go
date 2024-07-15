@@ -8,11 +8,15 @@ type GoogleMonitoringAlertPolicyDocumentation struct {
 	// exceed more than 10,240 bytes when encoded in UTF-8 format,
 	// whichever is smaller.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_monitoring_alert_policy#content GoogleMonitoringAlertPolicy#content}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_monitoring_alert_policy#content GoogleMonitoringAlertPolicy#content}
 	Content *string `field:"optional" json:"content" yaml:"content"`
+	// links block.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_monitoring_alert_policy#links GoogleMonitoringAlertPolicy#links}
+	Links interface{} `field:"optional" json:"links" yaml:"links"`
 	// The format of the content field. Presently, only the value "text/markdown" is supported.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_monitoring_alert_policy#mime_type GoogleMonitoringAlertPolicy#mime_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_monitoring_alert_policy#mime_type GoogleMonitoringAlertPolicy#mime_type}
 	MimeType *string `field:"optional" json:"mimeType" yaml:"mimeType"`
 	// The subject line of the notification.
 	//
@@ -21,7 +25,7 @@ type GoogleMonitoringAlertPolicyDocumentation struct {
 	// of the subject line after variable expansion will be truncated to 255 bytes
 	// or shorter at the latest UTF-8 character boundary.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_monitoring_alert_policy#subject GoogleMonitoringAlertPolicy#subject}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_monitoring_alert_policy#subject GoogleMonitoringAlertPolicy#subject}
 	Subject *string `field:"optional" json:"subject" yaml:"subject"`
 }
 

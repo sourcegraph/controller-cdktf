@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/workbenchinstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/workbench_instance google_workbench_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/workbench_instance google_workbench_instance}.
 type WorkbenchInstance interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -655,7 +655,7 @@ func (j *jsiiProxy_WorkbenchInstance) UpgradeHistory() WorkbenchInstanceUpgradeH
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/workbench_instance google_workbench_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/workbench_instance google_workbench_instance} Resource.
 func NewWorkbenchInstance(scope constructs.Construct, id *string, config *WorkbenchInstanceConfig) WorkbenchInstance {
 	_init_.Initialize()
 
@@ -673,7 +673,7 @@ func NewWorkbenchInstance(scope constructs.Construct, id *string, config *Workbe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/workbench_instance google_workbench_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/workbench_instance google_workbench_instance} Resource.
 func NewWorkbenchInstance_Override(w WorkbenchInstance, scope constructs.Construct, id *string, config *WorkbenchInstanceConfig) {
 	_init_.Initialize()
 

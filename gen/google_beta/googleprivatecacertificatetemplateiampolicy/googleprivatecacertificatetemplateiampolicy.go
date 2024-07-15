@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleprivatecacertificatetemplateiampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_privateca_certificate_template_iam_policy google_privateca_certificate_template_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_privateca_certificate_template_iam_policy google_privateca_certificate_template_iam_policy}.
 type GooglePrivatecaCertificateTemplateIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -412,7 +412,7 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamPolicy) TerraformResourc
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_privateca_certificate_template_iam_policy google_privateca_certificate_template_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_privateca_certificate_template_iam_policy google_privateca_certificate_template_iam_policy} Resource.
 func NewGooglePrivatecaCertificateTemplateIamPolicy(scope constructs.Construct, id *string, config *GooglePrivatecaCertificateTemplateIamPolicyConfig) GooglePrivatecaCertificateTemplateIamPolicy {
 	_init_.Initialize()
 
@@ -430,7 +430,7 @@ func NewGooglePrivatecaCertificateTemplateIamPolicy(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_privateca_certificate_template_iam_policy google_privateca_certificate_template_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_privateca_certificate_template_iam_policy google_privateca_certificate_template_iam_policy} Resource.
 func NewGooglePrivatecaCertificateTemplateIamPolicy_Override(g GooglePrivatecaCertificateTemplateIamPolicy, scope constructs.Construct, id *string, config *GooglePrivatecaCertificateTemplateIamPolicyConfig) {
 	_init_.Initialize()
 

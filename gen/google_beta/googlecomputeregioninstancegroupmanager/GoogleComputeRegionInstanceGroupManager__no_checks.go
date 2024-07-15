@@ -92,6 +92,10 @@ func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) validatePutParamsPar
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) validatePutStandbyPolicyParameters(value *GoogleComputeRegionInstanceGroupManagerStandbyPolicy) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) validatePutStatefulDiskParameters(value interface{}) error {
 	return nil
 }
@@ -189,6 +193,14 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) validateSetTargetPoo
 }
 
 func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) validateSetTargetSizeParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) validateSetTargetStoppedSizeParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) validateSetTargetSuspendedSizeParameters(val *float64) error {
 	return nil
 }
 

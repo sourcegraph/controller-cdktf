@@ -31,6 +31,8 @@ type GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterOutputRef
 	SetInternalValue(val *GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilter)
 	OtherTables() GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterOtherTablesOutputReference
 	OtherTablesInput() *GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterOtherTables
+	TableReference() GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTableReferenceOutputReference
+	TableReferenceInput() *GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTableReference
 	Tables() GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTablesOutputReference
 	TablesInput() *GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTables
 	// Experimental.
@@ -66,8 +68,10 @@ type GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterOutputRef
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutOtherTables(value *GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterOtherTables)
+	PutTableReference(value *GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTableReference)
 	PutTables(value *GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTables)
 	ResetOtherTables()
+	ResetTableReference()
 	ResetTables()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -149,6 +153,26 @@ func (j *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetF
 	_jsii_.Get(
 		j,
 		"otherTablesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterOutputReference) TableReference() GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTableReferenceOutputReference {
+	var returns GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTableReferenceOutputReference
+	_jsii_.Get(
+		j,
+		"tableReference",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterOutputReference) TableReferenceInput() *GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTableReference {
+	var returns *GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTableReference
+	_jsii_.Get(
+		j,
+		"tableReferenceInput",
 		&returns,
 	)
 	return returns
@@ -474,6 +498,17 @@ func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetF
 	)
 }
 
+func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterOutputReference) PutTableReference(value *GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTableReference) {
+	if err := g.validatePutTableReferenceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putTableReference",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterOutputReference) PutTables(value *GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTables) {
 	if err := g.validatePutTablesParameters(value); err != nil {
 		panic(err)
@@ -489,6 +524,14 @@ func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetF
 	_jsii_.InvokeVoid(
 		g,
 		"resetOtherTables",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterOutputReference) ResetTableReference() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTableReference",
 		nil, // no parameters
 	)
 }

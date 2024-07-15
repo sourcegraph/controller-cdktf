@@ -112,6 +112,10 @@ func (j *jsiiProxy_GoogleBigtableInstance) validateSetDisplayNameParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_GoogleBigtableInstance) validateSetForceDestroyParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBigtableInstance) validateSetIdParameters(val *string) error {
 	return nil
 }

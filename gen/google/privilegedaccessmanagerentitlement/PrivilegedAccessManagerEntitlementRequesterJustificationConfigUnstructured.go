@@ -1,0 +1,6 @@
+package privilegedaccessmanagerentitlement
+
+
+type PrivilegedAccessManagerEntitlementRequesterJustificationConfigUnstructured struct {
+}
+

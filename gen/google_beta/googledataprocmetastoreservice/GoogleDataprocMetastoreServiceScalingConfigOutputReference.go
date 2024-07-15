@@ -10,6 +10,8 @@ import (
 
 type GoogleDataprocMetastoreServiceScalingConfigOutputReference interface {
 	cdktf.ComplexObject
+	AutoscalingConfig() GoogleDataprocMetastoreServiceScalingConfigAutoscalingConfigOutputReference
+	AutoscalingConfigInput() *GoogleDataprocMetastoreServiceScalingConfigAutoscalingConfig
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -67,6 +69,8 @@ type GoogleDataprocMetastoreServiceScalingConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAutoscalingConfig(value *GoogleDataprocMetastoreServiceScalingConfigAutoscalingConfig)
+	ResetAutoscalingConfig()
 	ResetInstanceSize()
 	ResetScalingFactor()
 	// Produce the Token's value at resolution time.
@@ -82,6 +86,26 @@ type GoogleDataprocMetastoreServiceScalingConfigOutputReference interface {
 // The jsii proxy struct for GoogleDataprocMetastoreServiceScalingConfigOutputReference
 type jsiiProxy_GoogleDataprocMetastoreServiceScalingConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GoogleDataprocMetastoreServiceScalingConfigOutputReference) AutoscalingConfig() GoogleDataprocMetastoreServiceScalingConfigAutoscalingConfigOutputReference {
+	var returns GoogleDataprocMetastoreServiceScalingConfigAutoscalingConfigOutputReference
+	_jsii_.Get(
+		j,
+		"autoscalingConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataprocMetastoreServiceScalingConfigOutputReference) AutoscalingConfigInput() *GoogleDataprocMetastoreServiceScalingConfigAutoscalingConfig {
+	var returns *GoogleDataprocMetastoreServiceScalingConfigAutoscalingConfig
+	_jsii_.Get(
+		j,
+		"autoscalingConfigInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleDataprocMetastoreServiceScalingConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -483,6 +507,25 @@ func (g *jsiiProxy_GoogleDataprocMetastoreServiceScalingConfigOutputReference) I
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleDataprocMetastoreServiceScalingConfigOutputReference) PutAutoscalingConfig(value *GoogleDataprocMetastoreServiceScalingConfigAutoscalingConfig) {
+	if err := g.validatePutAutoscalingConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAutoscalingConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDataprocMetastoreServiceScalingConfigOutputReference) ResetAutoscalingConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAutoscalingConfig",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleDataprocMetastoreServiceScalingConfigOutputReference) ResetInstanceSize() {

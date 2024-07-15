@@ -120,6 +120,10 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputRefer
 	return nil
 }
 
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) validateSetVmTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func validateNewGoogleWorkstationsWorkstationConfigHostGceInstanceOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

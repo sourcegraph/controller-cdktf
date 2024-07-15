@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledataprocmetastoreserviceiampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_dataproc_metastore_service_iam_policy google_dataproc_metastore_service_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_dataproc_metastore_service_iam_policy google_dataproc_metastore_service_iam_policy}.
 type GoogleDataprocMetastoreServiceIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -412,7 +412,7 @@ func (j *jsiiProxy_GoogleDataprocMetastoreServiceIamPolicy) TerraformResourceTyp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_dataproc_metastore_service_iam_policy google_dataproc_metastore_service_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_dataproc_metastore_service_iam_policy google_dataproc_metastore_service_iam_policy} Resource.
 func NewGoogleDataprocMetastoreServiceIamPolicy(scope constructs.Construct, id *string, config *GoogleDataprocMetastoreServiceIamPolicyConfig) GoogleDataprocMetastoreServiceIamPolicy {
 	_init_.Initialize()
 
@@ -430,7 +430,7 @@ func NewGoogleDataprocMetastoreServiceIamPolicy(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_dataproc_metastore_service_iam_policy google_dataproc_metastore_service_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_dataproc_metastore_service_iam_policy google_dataproc_metastore_service_iam_policy} Resource.
 func NewGoogleDataprocMetastoreServiceIamPolicy_Override(g GoogleDataprocMetastoreServiceIamPolicy, scope constructs.Construct, id *string, config *GoogleDataprocMetastoreServiceIamPolicyConfig) {
 	_init_.Initialize()
 

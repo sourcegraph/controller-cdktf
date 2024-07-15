@@ -116,6 +116,10 @@ func (j *jsiiProxy_DatastreamStream) validateSetCountParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_DatastreamStream) validateSetCreateWithoutValidationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatastreamStream) validateSetCustomerManagedEncryptionKeyParameters(val *string) error {
 	return nil
 }

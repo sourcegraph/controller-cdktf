@@ -40,6 +40,9 @@ type GoogleGkeBackupBackupPlanBackupConfigOutputReference interface {
 	IncludeVolumeDataInput() interface{}
 	InternalValue() *GoogleGkeBackupBackupPlanBackupConfig
 	SetInternalValue(val *GoogleGkeBackupBackupPlanBackupConfig)
+	PermissiveMode() interface{}
+	SetPermissiveMode(val interface{})
+	PermissiveModeInput() interface{}
 	SelectedApplications() GoogleGkeBackupBackupPlanBackupConfigSelectedApplicationsOutputReference
 	SelectedApplicationsInput() *GoogleGkeBackupBackupPlanBackupConfigSelectedApplications
 	SelectedNamespaces() GoogleGkeBackupBackupPlanBackupConfigSelectedNamespacesOutputReference
@@ -83,6 +86,7 @@ type GoogleGkeBackupBackupPlanBackupConfigOutputReference interface {
 	ResetEncryptionKey()
 	ResetIncludeSecrets()
 	ResetIncludeVolumeData()
+	ResetPermissiveMode()
 	ResetSelectedApplications()
 	ResetSelectedNamespaces()
 	// Produce the Token's value at resolution time.
@@ -225,6 +229,26 @@ func (j *jsiiProxy_GoogleGkeBackupBackupPlanBackupConfigOutputReference) Interna
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeBackupBackupPlanBackupConfigOutputReference) PermissiveMode() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"permissiveMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeBackupBackupPlanBackupConfigOutputReference) PermissiveModeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"permissiveModeInput",
 		&returns,
 	)
 	return returns
@@ -380,6 +404,17 @@ func (j *jsiiProxy_GoogleGkeBackupBackupPlanBackupConfigOutputReference)SetInter
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleGkeBackupBackupPlanBackupConfigOutputReference)SetPermissiveMode(val interface{}) {
+	if err := j.validateSetPermissiveModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"permissiveMode",
 		val,
 	)
 }
@@ -653,6 +688,14 @@ func (g *jsiiProxy_GoogleGkeBackupBackupPlanBackupConfigOutputReference) ResetIn
 	_jsii_.InvokeVoid(
 		g,
 		"resetIncludeVolumeData",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleGkeBackupBackupPlanBackupConfigOutputReference) ResetPermissiveMode() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPermissiveMode",
 		nil, // no parameters
 	)
 }

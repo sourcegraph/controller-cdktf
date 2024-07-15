@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputehealthcheck/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_health_check google_compute_health_check}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_health_check google_compute_health_check}.
 type GoogleComputeHealthCheck interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -82,6 +82,9 @@ type GoogleComputeHealthCheck interface {
 	// Experimental.
 	RawOverrides() interface{}
 	SelfLink() *string
+	SourceRegions() *[]*string
+	SetSourceRegions(val *[]*string)
+	SourceRegionsInput() *[]*string
 	SslHealthCheck() GoogleComputeHealthCheckSslHealthCheckOutputReference
 	SslHealthCheckInput() *GoogleComputeHealthCheckSslHealthCheck
 	TcpHealthCheck() GoogleComputeHealthCheckTcpHealthCheckOutputReference
@@ -165,6 +168,7 @@ type GoogleComputeHealthCheck interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetSourceRegions()
 	ResetSslHealthCheck()
 	ResetTcpHealthCheck()
 	ResetTimeouts()
@@ -558,6 +562,26 @@ func (j *jsiiProxy_GoogleComputeHealthCheck) SelfLink() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeHealthCheck) SourceRegions() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"sourceRegions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck) SourceRegionsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"sourceRegionsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeHealthCheck) SslHealthCheck() GoogleComputeHealthCheckSslHealthCheckOutputReference {
 	var returns GoogleComputeHealthCheckSslHealthCheckOutputReference
 	_jsii_.Get(
@@ -699,7 +723,7 @@ func (j *jsiiProxy_GoogleComputeHealthCheck) UnhealthyThresholdInput() *float64 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_health_check google_compute_health_check} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_health_check google_compute_health_check} Resource.
 func NewGoogleComputeHealthCheck(scope constructs.Construct, id *string, config *GoogleComputeHealthCheckConfig) GoogleComputeHealthCheck {
 	_init_.Initialize()
 
@@ -717,7 +741,7 @@ func NewGoogleComputeHealthCheck(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_health_check google_compute_health_check} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_health_check google_compute_health_check} Resource.
 func NewGoogleComputeHealthCheck_Override(g GoogleComputeHealthCheck, scope constructs.Construct, id *string, config *GoogleComputeHealthCheckConfig) {
 	_init_.Initialize()
 
@@ -858,6 +882,17 @@ func (j *jsiiProxy_GoogleComputeHealthCheck)SetProvisioners(val *[]interface{}) 
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck)SetSourceRegions(val *[]*string) {
+	if err := j.validateSetSourceRegionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sourceRegions",
 		val,
 	)
 }
@@ -1409,6 +1444,14 @@ func (g *jsiiProxy_GoogleComputeHealthCheck) ResetProject() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeHealthCheck) ResetSourceRegions() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSourceRegions",
 		nil, // no parameters
 	)
 }

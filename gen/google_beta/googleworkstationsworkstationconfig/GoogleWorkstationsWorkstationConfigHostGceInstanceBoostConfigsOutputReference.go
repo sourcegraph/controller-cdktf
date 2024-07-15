@@ -12,6 +12,9 @@ type GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfigsOutputReferen
 	cdktf.ComplexObject
 	Accelerators() GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfigsAcceleratorsList
 	AcceleratorsInput() interface{}
+	BootDiskSizeGb() *float64
+	SetBootDiskSizeGb(val *float64)
+	BootDiskSizeGbInput() *float64
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -27,6 +30,9 @@ type GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfigsOutputReferen
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EnableNestedVirtualization() interface{}
+	SetEnableNestedVirtualization(val interface{})
+	EnableNestedVirtualizationInput() interface{}
 	// Experimental.
 	Fqn() *string
 	Id() *string
@@ -37,6 +43,9 @@ type GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfigsOutputReferen
 	MachineType() *string
 	SetMachineType(val *string)
 	MachineTypeInput() *string
+	PoolSize() *float64
+	SetPoolSize(val *float64)
+	PoolSizeInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -71,7 +80,10 @@ type GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfigsOutputReferen
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAccelerators(value interface{})
 	ResetAccelerators()
+	ResetBootDiskSizeGb()
+	ResetEnableNestedVirtualization()
 	ResetMachineType()
+	ResetPoolSize()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -107,6 +119,26 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfig
 	return returns
 }
 
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfigsOutputReference) BootDiskSizeGb() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"bootDiskSizeGb",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfigsOutputReference) BootDiskSizeGbInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"bootDiskSizeGbInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfigsOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -132,6 +164,26 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfig
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfigsOutputReference) EnableNestedVirtualization() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableNestedVirtualization",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfigsOutputReference) EnableNestedVirtualizationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableNestedVirtualizationInput",
 		&returns,
 	)
 	return returns
@@ -197,6 +249,26 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfig
 	return returns
 }
 
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfigsOutputReference) PoolSize() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"poolSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfigsOutputReference) PoolSizeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"poolSizeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfigsOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -245,6 +317,17 @@ func NewGoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfigsOutputRefe
 	)
 }
 
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfigsOutputReference)SetBootDiskSizeGb(val *float64) {
+	if err := j.validateSetBootDiskSizeGbParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"bootDiskSizeGb",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfigsOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -263,6 +346,17 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfig
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfigsOutputReference)SetEnableNestedVirtualization(val interface{}) {
+	if err := j.validateSetEnableNestedVirtualizationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableNestedVirtualization",
 		val,
 	)
 }
@@ -296,6 +390,17 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfig
 	_jsii_.Set(
 		j,
 		"machineType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfigsOutputReference)SetPoolSize(val *float64) {
+	if err := j.validateSetPoolSizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"poolSize",
 		val,
 	)
 }
@@ -527,10 +632,34 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfig
 	)
 }
 
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfigsOutputReference) ResetBootDiskSizeGb() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetBootDiskSizeGb",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfigsOutputReference) ResetEnableNestedVirtualization() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnableNestedVirtualization",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfigsOutputReference) ResetMachineType() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetMachineType",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfigsOutputReference) ResetPoolSize() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPoolSize",
 		nil, // no parameters
 	)
 }

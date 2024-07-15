@@ -29,29 +29,29 @@ type GoogleComputeRegionDiskConfig struct {
 	// characters must be a dash, lowercase letter, or digit, except the last
 	// character, which cannot be a dash.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_region_disk#name GoogleComputeRegionDisk#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_region_disk#name GoogleComputeRegionDisk#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// URLs of the zones where the disk should be replicated to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_region_disk#replica_zones GoogleComputeRegionDisk#replica_zones}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_region_disk#replica_zones GoogleComputeRegionDisk#replica_zones}
 	ReplicaZones *[]*string `field:"required" json:"replicaZones" yaml:"replicaZones"`
 	// async_primary_disk block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_region_disk#async_primary_disk GoogleComputeRegionDisk#async_primary_disk}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_region_disk#async_primary_disk GoogleComputeRegionDisk#async_primary_disk}
 	AsyncPrimaryDisk *GoogleComputeRegionDiskAsyncPrimaryDisk `field:"optional" json:"asyncPrimaryDisk" yaml:"asyncPrimaryDisk"`
 	// An optional description of this resource. Provide this property when you create the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_region_disk#description GoogleComputeRegionDisk#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_region_disk#description GoogleComputeRegionDisk#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// disk_encryption_key block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_region_disk#disk_encryption_key GoogleComputeRegionDisk#disk_encryption_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_region_disk#disk_encryption_key GoogleComputeRegionDisk#disk_encryption_key}
 	DiskEncryptionKey *GoogleComputeRegionDiskDiskEncryptionKey `field:"optional" json:"diskEncryptionKey" yaml:"diskEncryptionKey"`
 	// guest_os_features block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_region_disk#guest_os_features GoogleComputeRegionDisk#guest_os_features}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_region_disk#guest_os_features GoogleComputeRegionDisk#guest_os_features}
 	GuestOsFeatures interface{} `field:"optional" json:"guestOsFeatures" yaml:"guestOsFeatures"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_region_disk#id GoogleComputeRegionDisk#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_region_disk#id GoogleComputeRegionDisk#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -60,18 +60,18 @@ type GoogleComputeRegionDiskConfig struct {
 	//
 	// The default is SCSI.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_region_disk#interface GoogleComputeRegionDisk#interface}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_region_disk#interface GoogleComputeRegionDisk#interface}
 	Interface *string `field:"optional" json:"interface" yaml:"interface"`
 	// Labels to apply to this disk.  A list of key->value pairs.
 	//
 	// **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 	// Please refer to the field 'effective_labels' for all of the labels present on the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_region_disk#labels GoogleComputeRegionDisk#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_region_disk#labels GoogleComputeRegionDisk#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
 	// Any applicable license URI.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_region_disk#licenses GoogleComputeRegionDisk#licenses}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_region_disk#licenses GoogleComputeRegionDisk#licenses}
 	Licenses *[]*string `field:"optional" json:"licenses" yaml:"licenses"`
 	// Physical block size of the persistent disk, in bytes.
 	//
@@ -81,13 +81,13 @@ type GoogleComputeRegionDiskConfig struct {
 	// If an unsupported value is requested, the error message will list
 	// the supported values for the caller's project.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_region_disk#physical_block_size_bytes GoogleComputeRegionDisk#physical_block_size_bytes}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_region_disk#physical_block_size_bytes GoogleComputeRegionDisk#physical_block_size_bytes}
 	PhysicalBlockSizeBytes *float64 `field:"optional" json:"physicalBlockSizeBytes" yaml:"physicalBlockSizeBytes"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_region_disk#project GoogleComputeRegionDisk#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_region_disk#project GoogleComputeRegionDisk#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// A reference to the region where the disk resides.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_region_disk#region GoogleComputeRegionDisk#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_region_disk#region GoogleComputeRegionDisk#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 	// Size of the persistent disk, specified in GB.
 	//
@@ -100,7 +100,7 @@ type GoogleComputeRegionDiskConfig struct {
 	// the value of sizeGb must not be less than the size of the sourceImage
 	// or the size of the snapshot.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_region_disk#size GoogleComputeRegionDisk#size}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_region_disk#size GoogleComputeRegionDisk#size}
 	Size *float64 `field:"optional" json:"size" yaml:"size"`
 	// The source snapshot used to create this disk.
 	//
@@ -113,7 +113,7 @@ type GoogleComputeRegionDiskConfig struct {
 	// * 'global/snapshots/snapshot'
 	// * 'snapshot'
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_region_disk#snapshot GoogleComputeRegionDisk#snapshot}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_region_disk#snapshot GoogleComputeRegionDisk#snapshot}
 	Snapshot *string `field:"optional" json:"snapshot" yaml:"snapshot"`
 	// The source disk used to create this disk.
 	//
@@ -127,21 +127,21 @@ type GoogleComputeRegionDiskConfig struct {
 	// * zones/{zone}/disks/{disk}
 	// * regions/{region}/disks/{disk}
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_region_disk#source_disk GoogleComputeRegionDisk#source_disk}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_region_disk#source_disk GoogleComputeRegionDisk#source_disk}
 	SourceDisk *string `field:"optional" json:"sourceDisk" yaml:"sourceDisk"`
 	// source_snapshot_encryption_key block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_region_disk#source_snapshot_encryption_key GoogleComputeRegionDisk#source_snapshot_encryption_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_region_disk#source_snapshot_encryption_key GoogleComputeRegionDisk#source_snapshot_encryption_key}
 	SourceSnapshotEncryptionKey *GoogleComputeRegionDiskSourceSnapshotEncryptionKey `field:"optional" json:"sourceSnapshotEncryptionKey" yaml:"sourceSnapshotEncryptionKey"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_region_disk#timeouts GoogleComputeRegionDisk#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_region_disk#timeouts GoogleComputeRegionDisk#timeouts}
 	Timeouts *GoogleComputeRegionDiskTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 	// URL of the disk type resource describing which disk type to use to create the disk.
 	//
 	// Provide this when creating the disk.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_region_disk#type GoogleComputeRegionDisk#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_region_disk#type GoogleComputeRegionDisk#type}
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
 

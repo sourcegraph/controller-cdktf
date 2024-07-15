@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeinstancefrommachineimage/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_instance_from_machine_image google_compute_instance_from_machine_image}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_instance_from_machine_image google_compute_instance_from_machine_image}.
 type GoogleComputeInstanceFromMachineImage interface {
 	cdktf.TerraformResource
 	AdvancedMachineFeatures() GoogleComputeInstanceFromMachineImageAdvancedMachineFeaturesOutputReference
@@ -104,6 +104,9 @@ type GoogleComputeInstanceFromMachineImage interface {
 	Node() constructs.Node
 	Params() GoogleComputeInstanceFromMachineImageParamsOutputReference
 	ParamsInput() *GoogleComputeInstanceFromMachineImageParams
+	PartnerMetadata() *map[string]*string
+	SetPartnerMetadata(val *map[string]*string)
+	PartnerMetadataInput() *map[string]*string
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -225,6 +228,7 @@ type GoogleComputeInstanceFromMachineImage interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetParams()
+	ResetPartnerMetadata()
 	ResetProject()
 	ResetReservationAffinity()
 	ResetResourcePolicies()
@@ -832,6 +836,26 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) ParamsInput() *GoogleC
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) PartnerMetadata() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"partnerMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) PartnerMetadataInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"partnerMetadataInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) Project() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1133,7 +1157,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_instance_from_machine_image google_compute_instance_from_machine_image} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_instance_from_machine_image google_compute_instance_from_machine_image} Resource.
 func NewGoogleComputeInstanceFromMachineImage(scope constructs.Construct, id *string, config *GoogleComputeInstanceFromMachineImageConfig) GoogleComputeInstanceFromMachineImage {
 	_init_.Initialize()
 
@@ -1151,7 +1175,7 @@ func NewGoogleComputeInstanceFromMachineImage(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_instance_from_machine_image google_compute_instance_from_machine_image} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_instance_from_machine_image google_compute_instance_from_machine_image} Resource.
 func NewGoogleComputeInstanceFromMachineImage_Override(g GoogleComputeInstanceFromMachineImage, scope constructs.Construct, id *string, config *GoogleComputeInstanceFromMachineImageConfig) {
 	_init_.Initialize()
 
@@ -1361,6 +1385,17 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage)SetPartnerMetadata(val *map[string]*string) {
+	if err := j.validateSetPartnerMetadataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"partnerMetadata",
 		val,
 	)
 }
@@ -2069,6 +2104,14 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) ResetParams() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetParams",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) ResetPartnerMetadata() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPartnerMetadata",
 		nil, // no parameters
 	)
 }

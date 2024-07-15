@@ -72,6 +72,10 @@ func (d *jsiiProxy_DiscoveryEngineDataStore) validateOverrideLogicalIdParameters
 	return nil
 }
 
+func (d *jsiiProxy_DiscoveryEngineDataStore) validatePutDocumentProcessingConfigParameters(value *DiscoveryEngineDataStoreDocumentProcessingConfig) error {
+	return nil
+}
+
 func (d *jsiiProxy_DiscoveryEngineDataStore) validatePutTimeoutsParameters(value *DiscoveryEngineDataStoreTimeouts) error {
 	return nil
 }

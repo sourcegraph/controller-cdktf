@@ -6,25 +6,25 @@ type GoogleComputeInstanceNetworkInterfaceIpv6AccessConfig struct {
 	//
 	// Only PREMIUM tier is valid for IPv6
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_instance#network_tier GoogleComputeInstance#network_tier}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_instance#network_tier GoogleComputeInstance#network_tier}
 	NetworkTier *string `field:"required" json:"networkTier" yaml:"networkTier"`
 	// The first IPv6 address of the external IPv6 range associated with this instance, prefix length is stored in externalIpv6PrefixLength in ipv6AccessConfig.
 	//
 	// To use a static external IP address, it must be unused and in the same region as the instance's zone. If not specified, Google Cloud will automatically assign an external IPv6 address from the instance's subnetwork.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_instance#external_ipv6 GoogleComputeInstance#external_ipv6}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_instance#external_ipv6 GoogleComputeInstance#external_ipv6}
 	ExternalIpv6 *string `field:"optional" json:"externalIpv6" yaml:"externalIpv6"`
 	// The prefix length of the external IPv6 range.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_instance#external_ipv6_prefix_length GoogleComputeInstance#external_ipv6_prefix_length}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_instance#external_ipv6_prefix_length GoogleComputeInstance#external_ipv6_prefix_length}
 	ExternalIpv6PrefixLength *string `field:"optional" json:"externalIpv6PrefixLength" yaml:"externalIpv6PrefixLength"`
 	// The name of this access configuration. In ipv6AccessConfigs, the recommended name is External IPv6.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_instance#name GoogleComputeInstance#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_instance#name GoogleComputeInstance#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// The domain name to be used when creating DNSv6 records for the external IPv6 ranges.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_instance#public_ptr_domain_name GoogleComputeInstance#public_ptr_domain_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_instance#public_ptr_domain_name GoogleComputeInstance#public_ptr_domain_name}
 	PublicPtrDomainName *string `field:"optional" json:"publicPtrDomainName" yaml:"publicPtrDomainName"`
 }
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlenetworksecurityaddressgroup/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_network_security_address_group google_network_security_address_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_network_security_address_group google_network_security_address_group}.
 type GoogleNetworkSecurityAddressGroup interface {
 	cdktf.TerraformResource
 	Capacity() *float64
@@ -76,6 +76,9 @@ type GoogleNetworkSecurityAddressGroup interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	Purpose() *[]*string
+	SetPurpose(val *[]*string)
+	PurposeInput() *[]*string
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
@@ -143,6 +146,7 @@ type GoogleNetworkSecurityAddressGroup interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetParent()
+	ResetPurpose()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -462,6 +466,26 @@ func (j *jsiiProxy_GoogleNetworkSecurityAddressGroup) Provisioners() *[]interfac
 	return returns
 }
 
+func (j *jsiiProxy_GoogleNetworkSecurityAddressGroup) Purpose() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"purpose",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkSecurityAddressGroup) PurposeInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"purposeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleNetworkSecurityAddressGroup) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -563,7 +587,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityAddressGroup) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_network_security_address_group google_network_security_address_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_network_security_address_group google_network_security_address_group} Resource.
 func NewGoogleNetworkSecurityAddressGroup(scope constructs.Construct, id *string, config *GoogleNetworkSecurityAddressGroupConfig) GoogleNetworkSecurityAddressGroup {
 	_init_.Initialize()
 
@@ -581,7 +605,7 @@ func NewGoogleNetworkSecurityAddressGroup(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_network_security_address_group google_network_security_address_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_network_security_address_group google_network_security_address_group} Resource.
 func NewGoogleNetworkSecurityAddressGroup_Override(g GoogleNetworkSecurityAddressGroup, scope constructs.Construct, id *string, config *GoogleNetworkSecurityAddressGroupConfig) {
 	_init_.Initialize()
 
@@ -744,6 +768,17 @@ func (j *jsiiProxy_GoogleNetworkSecurityAddressGroup)SetProvisioners(val *[]inte
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleNetworkSecurityAddressGroup)SetPurpose(val *[]*string) {
+	if err := j.validateSetPurposeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"purpose",
 		val,
 	)
 }
@@ -1167,6 +1202,14 @@ func (g *jsiiProxy_GoogleNetworkSecurityAddressGroup) ResetParent() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetParent",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleNetworkSecurityAddressGroup) ResetPurpose() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPurpose",
 		nil, // no parameters
 	)
 }

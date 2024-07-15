@@ -31,6 +31,9 @@ type VertexAiFeatureOnlineStoreFeatureviewFeatureRegistrySourceOutputReference i
 	Fqn() *string
 	InternalValue() *VertexAiFeatureOnlineStoreFeatureviewFeatureRegistrySource
 	SetInternalValue(val *VertexAiFeatureOnlineStoreFeatureviewFeatureRegistrySource)
+	ProjectNumber() *string
+	SetProjectNumber(val *string)
+	ProjectNumberInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -64,6 +67,7 @@ type VertexAiFeatureOnlineStoreFeatureviewFeatureRegistrySourceOutputReference i
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutFeatureGroups(value interface{})
+	ResetProjectNumber()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -149,6 +153,26 @@ func (j *jsiiProxy_VertexAiFeatureOnlineStoreFeatureviewFeatureRegistrySourceOut
 	return returns
 }
 
+func (j *jsiiProxy_VertexAiFeatureOnlineStoreFeatureviewFeatureRegistrySourceOutputReference) ProjectNumber() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectNumber",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VertexAiFeatureOnlineStoreFeatureviewFeatureRegistrySourceOutputReference) ProjectNumberInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectNumberInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VertexAiFeatureOnlineStoreFeatureviewFeatureRegistrySourceOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -226,6 +250,17 @@ func (j *jsiiProxy_VertexAiFeatureOnlineStoreFeatureviewFeatureRegistrySourceOut
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VertexAiFeatureOnlineStoreFeatureviewFeatureRegistrySourceOutputReference)SetProjectNumber(val *string) {
+	if err := j.validateSetProjectNumberParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"projectNumber",
 		val,
 	)
 }
@@ -446,6 +481,14 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStoreFeatureviewFeatureRegistrySourceOut
 		v,
 		"putFeatureGroups",
 		[]interface{}{value},
+	)
+}
+
+func (v *jsiiProxy_VertexAiFeatureOnlineStoreFeatureviewFeatureRegistrySourceOutputReference) ResetProjectNumber() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetProjectNumber",
+		nil, // no parameters
 	)
 }
 
