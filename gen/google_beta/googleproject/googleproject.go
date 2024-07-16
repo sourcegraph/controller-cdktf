@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleproject/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_project google_project}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_project google_project}.
 type GoogleProject interface {
 	cdktf.TerraformResource
 	AutoCreateNetwork() interface{}
@@ -554,7 +554,7 @@ func (j *jsiiProxy_GoogleProject) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_project google_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_project google_project} Resource.
 func NewGoogleProject(scope constructs.Construct, id *string, config *GoogleProjectConfig) GoogleProject {
 	_init_.Initialize()
 
@@ -572,7 +572,7 @@ func NewGoogleProject(scope constructs.Construct, id *string, config *GoogleProj
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_project google_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_project google_project} Resource.
 func NewGoogleProject_Override(g GoogleProject, scope constructs.Construct, id *string, config *GoogleProjectConfig) {
 	_init_.Initialize()
 

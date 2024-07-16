@@ -77,6 +77,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "networkPerformanceConfigInput", GoGetter: "NetworkPerformanceConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
+			_jsii_.MemberProperty{JsiiProperty: "partnerMetadata", GoGetter: "PartnerMetadata"},
+			_jsii_.MemberProperty{JsiiProperty: "partnerMetadataInput", GoGetter: "PartnerMetadataInput"},
 			_jsii_.MemberProperty{JsiiProperty: "project", GoGetter: "Project"},
 			_jsii_.MemberProperty{JsiiProperty: "projectInput", GoGetter: "ProjectInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
@@ -114,6 +116,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetNetworkInterface", GoMethod: "ResetNetworkInterface"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNetworkPerformanceConfig", GoMethod: "ResetNetworkPerformanceConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPartnerMetadata", GoMethod: "ResetPartnerMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProject", GoMethod: "ResetProject"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRegion", GoMethod: "ResetRegion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetReservationAffinity", GoMethod: "ResetReservationAffinity"},
@@ -1135,6 +1138,45 @@ func init() {
 			return &j
 		},
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google-beta.googleComputeInstanceTemplate.GoogleComputeInstanceTemplateSchedulingOnInstanceStopAction",
+		reflect.TypeOf((*GoogleComputeInstanceTemplateSchedulingOnInstanceStopAction)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google-beta.googleComputeInstanceTemplate.GoogleComputeInstanceTemplateSchedulingOnInstanceStopActionOutputReference",
+		reflect.TypeOf((*GoogleComputeInstanceTemplateSchedulingOnInstanceStopActionOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "discardLocalSsd", GoGetter: "DiscardLocalSsd"},
+			_jsii_.MemberProperty{JsiiProperty: "discardLocalSsdInput", GoGetter: "DiscardLocalSsdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDiscardLocalSsd", GoMethod: "ResetDiscardLocalSsd"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleComputeInstanceTemplateSchedulingOnInstanceStopActionOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google-beta.googleComputeInstanceTemplate.GoogleComputeInstanceTemplateSchedulingOutputReference",
 		reflect.TypeOf((*GoogleComputeInstanceTemplateSchedulingOutputReference)(nil)).Elem(),
@@ -1172,6 +1214,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "nodeAffinitiesInput", GoGetter: "NodeAffinitiesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "onHostMaintenance", GoGetter: "OnHostMaintenance"},
 			_jsii_.MemberProperty{JsiiProperty: "onHostMaintenanceInput", GoGetter: "OnHostMaintenanceInput"},
+			_jsii_.MemberProperty{JsiiProperty: "onInstanceStopAction", GoGetter: "OnInstanceStopAction"},
+			_jsii_.MemberProperty{JsiiProperty: "onInstanceStopActionInput", GoGetter: "OnInstanceStopActionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "preemptible", GoGetter: "Preemptible"},
 			_jsii_.MemberProperty{JsiiProperty: "preemptibleInput", GoGetter: "PreemptibleInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioningModel", GoGetter: "ProvisioningModel"},
@@ -1179,6 +1223,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putLocalSsdRecoveryTimeout", GoMethod: "PutLocalSsdRecoveryTimeout"},
 			_jsii_.MemberMethod{JsiiMethod: "putMaxRunDuration", GoMethod: "PutMaxRunDuration"},
 			_jsii_.MemberMethod{JsiiMethod: "putNodeAffinities", GoMethod: "PutNodeAffinities"},
+			_jsii_.MemberMethod{JsiiMethod: "putOnInstanceStopAction", GoMethod: "PutOnInstanceStopAction"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutomaticRestart", GoMethod: "ResetAutomaticRestart"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInstanceTerminationAction", GoMethod: "ResetInstanceTerminationAction"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLocalSsdRecoveryTimeout", GoMethod: "ResetLocalSsdRecoveryTimeout"},
@@ -1187,6 +1232,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetMinNodeCpus", GoMethod: "ResetMinNodeCpus"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNodeAffinities", GoMethod: "ResetNodeAffinities"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOnHostMaintenance", GoMethod: "ResetOnHostMaintenance"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOnInstanceStopAction", GoMethod: "ResetOnInstanceStopAction"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPreemptible", GoMethod: "ResetPreemptible"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProvisioningModel", GoMethod: "ResetProvisioningModel"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},

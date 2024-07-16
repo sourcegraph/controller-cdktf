@@ -25,6 +25,9 @@ type GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOutput
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Enabled() interface{}
+	SetEnabled(val interface{})
+	EnabledInput() interface{}
 	// Experimental.
 	Fqn() *string
 	Git() GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncGitOutputReference
@@ -33,6 +36,9 @@ type GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOutput
 	SetInternalValue(val *GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSync)
 	Oci() GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOciOutputReference
 	OciInput() *GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOci
+	PreventDrift() interface{}
+	SetPreventDrift(val interface{})
+	PreventDriftInput() interface{}
 	SourceFormat() *string
 	SetSourceFormat(val *string)
 	SourceFormatInput() *string
@@ -70,8 +76,10 @@ type GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOutput
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutGit(value *GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncGit)
 	PutOci(value *GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOci)
+	ResetEnabled()
 	ResetGit()
 	ResetOci()
+	ResetPreventDrift()
 	ResetSourceFormat()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -113,6 +121,26 @@ func (j *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementCo
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOutputReference) Enabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOutputReference) EnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enabledInput",
 		&returns,
 	)
 	return returns
@@ -173,6 +201,26 @@ func (j *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementCo
 	_jsii_.Get(
 		j,
 		"ociInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOutputReference) PreventDrift() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"preventDrift",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOutputReference) PreventDriftInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"preventDriftInput",
 		&returns,
 	)
 	return returns
@@ -268,6 +316,17 @@ func (j *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementCo
 	)
 }
 
+func (j *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOutputReference)SetEnabled(val interface{}) {
+	if err := j.validateSetEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enabled",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOutputReference)SetInternalValue(val *GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSync) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -275,6 +334,17 @@ func (j *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementCo
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOutputReference)SetPreventDrift(val interface{}) {
+	if err := j.validateSetPreventDriftParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"preventDrift",
 		val,
 	)
 }
@@ -520,6 +590,14 @@ func (g *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementCo
 	)
 }
 
+func (g *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOutputReference) ResetEnabled() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnabled",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOutputReference) ResetGit() {
 	_jsii_.InvokeVoid(
 		g,
@@ -532,6 +610,14 @@ func (g *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementCo
 	_jsii_.InvokeVoid(
 		g,
 		"resetOci",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOutputReference) ResetPreventDrift() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPreventDrift",
 		nil, // no parameters
 	)
 }

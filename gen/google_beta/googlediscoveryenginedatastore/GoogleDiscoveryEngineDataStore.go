@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlediscoveryenginedatastore/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_discovery_engine_data_store google_discovery_engine_data_store}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_discovery_engine_data_store google_discovery_engine_data_store}.
 type GoogleDiscoveryEngineDataStore interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -42,6 +42,8 @@ type GoogleDiscoveryEngineDataStore interface {
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
+	DocumentProcessingConfig() GoogleDiscoveryEngineDataStoreDocumentProcessingConfigOutputReference
+	DocumentProcessingConfigInput() *GoogleDiscoveryEngineDataStoreDocumentProcessingConfig
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -133,8 +135,10 @@ type GoogleDiscoveryEngineDataStore interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutDocumentProcessingConfig(value *GoogleDiscoveryEngineDataStoreDocumentProcessingConfig)
 	PutTimeouts(value *GoogleDiscoveryEngineDataStoreTimeouts)
 	ResetCreateAdvancedSiteSearch()
+	ResetDocumentProcessingConfig()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -305,6 +309,26 @@ func (j *jsiiProxy_GoogleDiscoveryEngineDataStore) DisplayNameInput() *string {
 	_jsii_.Get(
 		j,
 		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDiscoveryEngineDataStore) DocumentProcessingConfig() GoogleDiscoveryEngineDataStoreDocumentProcessingConfigOutputReference {
+	var returns GoogleDiscoveryEngineDataStoreDocumentProcessingConfigOutputReference
+	_jsii_.Get(
+		j,
+		"documentProcessingConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDiscoveryEngineDataStore) DocumentProcessingConfigInput() *GoogleDiscoveryEngineDataStoreDocumentProcessingConfig {
+	var returns *GoogleDiscoveryEngineDataStoreDocumentProcessingConfig
+	_jsii_.Get(
+		j,
+		"documentProcessingConfigInput",
 		&returns,
 	)
 	return returns
@@ -551,7 +575,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineDataStore) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_discovery_engine_data_store google_discovery_engine_data_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_discovery_engine_data_store google_discovery_engine_data_store} Resource.
 func NewGoogleDiscoveryEngineDataStore(scope constructs.Construct, id *string, config *GoogleDiscoveryEngineDataStoreConfig) GoogleDiscoveryEngineDataStore {
 	_init_.Initialize()
 
@@ -569,7 +593,7 @@ func NewGoogleDiscoveryEngineDataStore(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_discovery_engine_data_store google_discovery_engine_data_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_discovery_engine_data_store google_discovery_engine_data_store} Resource.
 func NewGoogleDiscoveryEngineDataStore_Override(g GoogleDiscoveryEngineDataStore, scope constructs.Construct, id *string, config *GoogleDiscoveryEngineDataStoreConfig) {
 	_init_.Initialize()
 
@@ -1100,6 +1124,17 @@ func (g *jsiiProxy_GoogleDiscoveryEngineDataStore) OverrideLogicalId(newLogicalI
 	)
 }
 
+func (g *jsiiProxy_GoogleDiscoveryEngineDataStore) PutDocumentProcessingConfig(value *GoogleDiscoveryEngineDataStoreDocumentProcessingConfig) {
+	if err := g.validatePutDocumentProcessingConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putDocumentProcessingConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDiscoveryEngineDataStore) PutTimeouts(value *GoogleDiscoveryEngineDataStoreTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1115,6 +1150,14 @@ func (g *jsiiProxy_GoogleDiscoveryEngineDataStore) ResetCreateAdvancedSiteSearch
 	_jsii_.InvokeVoid(
 		g,
 		"resetCreateAdvancedSiteSearch",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDiscoveryEngineDataStore) ResetDocumentProcessingConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDocumentProcessingConfig",
 		nil, // no parameters
 	)
 }

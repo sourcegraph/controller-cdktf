@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/dataprocjobiammember/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/dataproc_job_iam_member google_dataproc_job_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/dataproc_job_iam_member google_dataproc_job_iam_member}.
 type DataprocJobIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -459,7 +459,7 @@ func (j *jsiiProxy_DataprocJobIamMember) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/dataproc_job_iam_member google_dataproc_job_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/dataproc_job_iam_member google_dataproc_job_iam_member} Resource.
 func NewDataprocJobIamMember(scope constructs.Construct, id *string, config *DataprocJobIamMemberConfig) DataprocJobIamMember {
 	_init_.Initialize()
 
@@ -477,7 +477,7 @@ func NewDataprocJobIamMember(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/dataproc_job_iam_member google_dataproc_job_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/dataproc_job_iam_member google_dataproc_job_iam_member} Resource.
 func NewDataprocJobIamMember_Override(d DataprocJobIamMember, scope constructs.Construct, id *string, config *DataprocJobIamMemberConfig) {
 	_init_.Initialize()
 

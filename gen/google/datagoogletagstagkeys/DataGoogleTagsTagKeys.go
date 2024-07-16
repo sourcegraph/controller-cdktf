@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagoogletagstagkeys/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/data-sources/tags_tag_keys google_tags_tag_keys}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/tags_tag_keys google_tags_tag_keys}.
 type DataGoogleTagsTagKeys interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -296,7 +296,7 @@ func (j *jsiiProxy_DataGoogleTagsTagKeys) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/data-sources/tags_tag_keys google_tags_tag_keys} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/tags_tag_keys google_tags_tag_keys} Data Source.
 func NewDataGoogleTagsTagKeys(scope constructs.Construct, id *string, config *DataGoogleTagsTagKeysConfig) DataGoogleTagsTagKeys {
 	_init_.Initialize()
 
@@ -314,7 +314,7 @@ func NewDataGoogleTagsTagKeys(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/data-sources/tags_tag_keys google_tags_tag_keys} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/tags_tag_keys google_tags_tag_keys} Data Source.
 func NewDataGoogleTagsTagKeys_Override(d DataGoogleTagsTagKeys, scope constructs.Construct, id *string, config *DataGoogleTagsTagKeysConfig) {
 	_init_.Initialize()
 

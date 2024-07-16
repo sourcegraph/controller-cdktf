@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlenetworksecurityservertlspolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_network_security_server_tls_policy google_network_security_server_tls_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_network_security_server_tls_policy google_network_security_server_tls_policy}.
 type GoogleNetworkSecurityServerTlsPolicy interface {
 	cdktf.TerraformResource
 	AllowOpen() interface{}
@@ -566,7 +566,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityServerTlsPolicy) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_network_security_server_tls_policy google_network_security_server_tls_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_network_security_server_tls_policy google_network_security_server_tls_policy} Resource.
 func NewGoogleNetworkSecurityServerTlsPolicy(scope constructs.Construct, id *string, config *GoogleNetworkSecurityServerTlsPolicyConfig) GoogleNetworkSecurityServerTlsPolicy {
 	_init_.Initialize()
 
@@ -584,7 +584,7 @@ func NewGoogleNetworkSecurityServerTlsPolicy(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_network_security_server_tls_policy google_network_security_server_tls_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_network_security_server_tls_policy google_network_security_server_tls_policy} Resource.
 func NewGoogleNetworkSecurityServerTlsPolicy_Override(g GoogleNetworkSecurityServerTlsPolicy, scope constructs.Construct, id *string, config *GoogleNetworkSecurityServerTlsPolicyConfig) {
 	_init_.Initialize()
 

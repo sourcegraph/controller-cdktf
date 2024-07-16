@@ -32,6 +32,9 @@ type GooglePubsubSubscriptionBigqueryConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *GooglePubsubSubscriptionBigqueryConfig
 	SetInternalValue(val *GooglePubsubSubscriptionBigqueryConfig)
+	ServiceAccountEmail() *string
+	SetServiceAccountEmail(val *string)
+	ServiceAccountEmailInput() *string
 	Table() *string
 	SetTable(val *string)
 	TableInput() *string
@@ -77,6 +80,7 @@ type GooglePubsubSubscriptionBigqueryConfigOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetDropUnknownFields()
+	ResetServiceAccountEmail()
 	ResetUseTableSchema()
 	ResetUseTopicSchema()
 	ResetWriteMetadata()
@@ -160,6 +164,26 @@ func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) Intern
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) ServiceAccountEmail() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccountEmail",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) ServiceAccountEmailInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccountEmailInput",
 		&returns,
 	)
 	return returns
@@ -333,6 +357,17 @@ func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference)SetInte
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference)SetServiceAccountEmail(val *string) {
+	if err := j.validateSetServiceAccountEmailParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serviceAccountEmail",
 		val,
 	)
 }
@@ -593,6 +628,14 @@ func (g *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) ResetD
 	_jsii_.InvokeVoid(
 		g,
 		"resetDropUnknownFields",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) ResetServiceAccountEmail() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetServiceAccountEmail",
 		nil, // no parameters
 	)
 }

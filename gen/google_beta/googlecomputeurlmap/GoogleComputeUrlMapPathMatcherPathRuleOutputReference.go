@@ -25,6 +25,8 @@ type GoogleComputeUrlMapPathMatcherPathRuleOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomErrorResponsePolicy() GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyOutputReference
+	CustomErrorResponsePolicyInput() *GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicy
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -71,8 +73,10 @@ type GoogleComputeUrlMapPathMatcherPathRuleOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutCustomErrorResponsePolicy(value *GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicy)
 	PutRouteAction(value *GoogleComputeUrlMapPathMatcherPathRuleRouteAction)
 	PutUrlRedirect(value *GoogleComputeUrlMapPathMatcherPathRuleUrlRedirect)
+	ResetCustomErrorResponsePolicy()
 	ResetRouteAction()
 	ResetService()
 	ResetUrlRedirect()
@@ -116,6 +120,26 @@ func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherPathRuleOutputReference) Creati
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherPathRuleOutputReference) CustomErrorResponsePolicy() GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyOutputReference {
+	var returns GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyOutputReference
+	_jsii_.Get(
+		j,
+		"customErrorResponsePolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherPathRuleOutputReference) CustomErrorResponsePolicyInput() *GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicy {
+	var returns *GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicy
+	_jsii_.Get(
+		j,
+		"customErrorResponsePolicyInput",
 		&returns,
 	)
 	return returns
@@ -532,6 +556,17 @@ func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherPathRuleOutputReference) Interp
 	return returns
 }
 
+func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherPathRuleOutputReference) PutCustomErrorResponsePolicy(value *GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicy) {
+	if err := g.validatePutCustomErrorResponsePolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putCustomErrorResponsePolicy",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherPathRuleOutputReference) PutRouteAction(value *GoogleComputeUrlMapPathMatcherPathRuleRouteAction) {
 	if err := g.validatePutRouteActionParameters(value); err != nil {
 		panic(err)
@@ -551,6 +586,14 @@ func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherPathRuleOutputReference) PutUrl
 		g,
 		"putUrlRedirect",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherPathRuleOutputReference) ResetCustomErrorResponsePolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCustomErrorResponsePolicy",
+		nil, // no parameters
 	)
 }
 

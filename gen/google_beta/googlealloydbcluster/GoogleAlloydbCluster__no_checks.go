@@ -96,6 +96,10 @@ func (g *jsiiProxy_GoogleAlloydbCluster) validatePutNetworkConfigParameters(valu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleAlloydbCluster) validatePutPscConfigParameters(value *GoogleAlloydbClusterPscConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleAlloydbCluster) validatePutRestoreBackupSourceParameters(value *GoogleAlloydbClusterRestoreBackupSource) error {
 	return nil
 }

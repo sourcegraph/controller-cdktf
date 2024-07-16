@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleDataprocMetastoreServiceScalingConfigOutputReference) v
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataprocMetastoreServiceScalingConfigOutputReference) validatePutAutoscalingConfigParameters(value *GoogleDataprocMetastoreServiceScalingConfigAutoscalingConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataprocMetastoreServiceScalingConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

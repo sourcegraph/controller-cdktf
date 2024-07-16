@@ -499,7 +499,23 @@ func (j *jsiiProxy_GoogleNetappStoragePool) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetappStoragePool) validateSetReplicaZoneParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetappStoragePool) validateSetServiceLevelParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleNetappStoragePool) validateSetZoneParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

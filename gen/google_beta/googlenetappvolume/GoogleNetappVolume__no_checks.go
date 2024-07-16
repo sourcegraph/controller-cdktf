@@ -72,6 +72,10 @@ func (g *jsiiProxy_GoogleNetappVolume) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetappVolume) validatePutBackupConfigParameters(value *GoogleNetappVolumeBackupConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetappVolume) validatePutExportPolicyParameters(value *GoogleNetappVolumeExportPolicy) error {
 	return nil
 }

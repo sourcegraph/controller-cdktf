@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleiaptunneldestgroup/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_iap_tunnel_dest_group google_iap_tunnel_dest_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_iap_tunnel_dest_group google_iap_tunnel_dest_group}.
 type GoogleIapTunnelDestGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -461,7 +461,7 @@ func (j *jsiiProxy_GoogleIapTunnelDestGroup) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_iap_tunnel_dest_group google_iap_tunnel_dest_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_iap_tunnel_dest_group google_iap_tunnel_dest_group} Resource.
 func NewGoogleIapTunnelDestGroup(scope constructs.Construct, id *string, config *GoogleIapTunnelDestGroupConfig) GoogleIapTunnelDestGroup {
 	_init_.Initialize()
 
@@ -479,7 +479,7 @@ func NewGoogleIapTunnelDestGroup(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_iap_tunnel_dest_group google_iap_tunnel_dest_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_iap_tunnel_dest_group google_iap_tunnel_dest_group} Resource.
 func NewGoogleIapTunnelDestGroup_Override(g GoogleIapTunnelDestGroup, scope constructs.Construct, id *string, config *GoogleIapTunnelDestGroupConfig) {
 	_init_.Initialize()
 

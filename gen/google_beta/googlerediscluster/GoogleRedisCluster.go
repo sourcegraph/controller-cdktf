@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlerediscluster/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_redis_cluster google_redis_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_redis_cluster google_redis_cluster}.
 type GoogleRedisCluster interface {
 	cdktf.TerraformResource
 	AuthorizationMode() *string
@@ -100,6 +100,8 @@ type GoogleRedisCluster interface {
 	SetTransitEncryptionMode(val *string)
 	TransitEncryptionModeInput() *string
 	Uid() *string
+	ZoneDistributionConfig() GoogleRedisClusterZoneDistributionConfigOutputReference
+	ZoneDistributionConfigInput() *GoogleRedisClusterZoneDistributionConfig
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -145,6 +147,7 @@ type GoogleRedisCluster interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutPscConfigs(value interface{})
 	PutTimeouts(value *GoogleRedisClusterTimeouts)
+	PutZoneDistributionConfig(value *GoogleRedisClusterZoneDistributionConfig)
 	ResetAuthorizationMode()
 	ResetId()
 	ResetName()
@@ -158,6 +161,7 @@ type GoogleRedisCluster interface {
 	ResetReplicaCount()
 	ResetTimeouts()
 	ResetTransitEncryptionMode()
+	ResetZoneDistributionConfig()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -656,8 +660,28 @@ func (j *jsiiProxy_GoogleRedisCluster) Uid() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleRedisCluster) ZoneDistributionConfig() GoogleRedisClusterZoneDistributionConfigOutputReference {
+	var returns GoogleRedisClusterZoneDistributionConfigOutputReference
+	_jsii_.Get(
+		j,
+		"zoneDistributionConfig",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_redis_cluster google_redis_cluster} Resource.
+func (j *jsiiProxy_GoogleRedisCluster) ZoneDistributionConfigInput() *GoogleRedisClusterZoneDistributionConfig {
+	var returns *GoogleRedisClusterZoneDistributionConfig
+	_jsii_.Get(
+		j,
+		"zoneDistributionConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_redis_cluster google_redis_cluster} Resource.
 func NewGoogleRedisCluster(scope constructs.Construct, id *string, config *GoogleRedisClusterConfig) GoogleRedisCluster {
 	_init_.Initialize()
 
@@ -675,7 +699,7 @@ func NewGoogleRedisCluster(scope constructs.Construct, id *string, config *Googl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_redis_cluster google_redis_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_redis_cluster google_redis_cluster} Resource.
 func NewGoogleRedisCluster_Override(g GoogleRedisCluster, scope constructs.Construct, id *string, config *GoogleRedisClusterConfig) {
 	_init_.Initialize()
 
@@ -1239,6 +1263,17 @@ func (g *jsiiProxy_GoogleRedisCluster) PutTimeouts(value *GoogleRedisClusterTime
 	)
 }
 
+func (g *jsiiProxy_GoogleRedisCluster) PutZoneDistributionConfig(value *GoogleRedisClusterZoneDistributionConfig) {
+	if err := g.validatePutZoneDistributionConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putZoneDistributionConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleRedisCluster) ResetAuthorizationMode() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1323,6 +1358,14 @@ func (g *jsiiProxy_GoogleRedisCluster) ResetTransitEncryptionMode() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetTransitEncryptionMode",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleRedisCluster) ResetZoneDistributionConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetZoneDistributionConfig",
 		nil, // no parameters
 	)
 }

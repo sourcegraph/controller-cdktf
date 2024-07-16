@@ -1,0 +1,6 @@
+package datagooglecontainercluster
+
+
+type DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfig struct {
+}
+

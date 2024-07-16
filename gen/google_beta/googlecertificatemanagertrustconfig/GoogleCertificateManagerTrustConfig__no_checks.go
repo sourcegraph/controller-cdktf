@@ -72,6 +72,10 @@ func (g *jsiiProxy_GoogleCertificateManagerTrustConfig) validateOverrideLogicalI
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCertificateManagerTrustConfig) validatePutAllowlistedCertificatesParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCertificateManagerTrustConfig) validatePutTimeoutsParameters(value *GoogleCertificateManagerTrustConfigTimeouts) error {
 	return nil
 }

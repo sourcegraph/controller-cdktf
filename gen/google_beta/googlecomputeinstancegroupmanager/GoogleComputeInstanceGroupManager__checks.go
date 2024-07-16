@@ -279,6 +279,17 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validatePutParamsParameter
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validatePutStandbyPolicyParameters(value *GoogleComputeInstanceGroupManagerStandbyPolicy) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validatePutStatefulDiskParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -666,6 +677,22 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupManager) validateSetTargetPoolsPara
 }
 
 func (j *jsiiProxy_GoogleComputeInstanceGroupManager) validateSetTargetSizeParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceGroupManager) validateSetTargetStoppedSizeParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceGroupManager) validateSetTargetSuspendedSizeParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

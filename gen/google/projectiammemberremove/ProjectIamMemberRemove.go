@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/projectiammemberremove/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/project_iam_member_remove google_project_iam_member_remove}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/project_iam_member_remove google_project_iam_member_remove}.
 type ProjectIamMemberRemove interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -376,7 +376,7 @@ func (j *jsiiProxy_ProjectIamMemberRemove) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/project_iam_member_remove google_project_iam_member_remove} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/project_iam_member_remove google_project_iam_member_remove} Resource.
 func NewProjectIamMemberRemove(scope constructs.Construct, id *string, config *ProjectIamMemberRemoveConfig) ProjectIamMemberRemove {
 	_init_.Initialize()
 
@@ -394,7 +394,7 @@ func NewProjectIamMemberRemove(scope constructs.Construct, id *string, config *P
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/project_iam_member_remove google_project_iam_member_remove} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/project_iam_member_remove google_project_iam_member_remove} Resource.
 func NewProjectIamMemberRemove_Override(p ProjectIamMemberRemove, scope constructs.Construct, id *string, config *ProjectIamMemberRemoveConfig) {
 	_init_.Initialize()
 

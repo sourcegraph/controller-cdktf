@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeregioninstancetemplate/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_region_instance_template google_compute_region_instance_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_region_instance_template google_compute_region_instance_template}.
 type GoogleComputeRegionInstanceTemplate interface {
 	cdktf.TerraformResource
 	AdvancedMachineFeatures() GoogleComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputReference
@@ -92,6 +92,9 @@ type GoogleComputeRegionInstanceTemplate interface {
 	NetworkPerformanceConfigInput() *GoogleComputeRegionInstanceTemplateNetworkPerformanceConfig
 	// The tree node.
 	Node() constructs.Node
+	PartnerMetadata() *map[string]*string
+	SetPartnerMetadata(val *map[string]*string)
+	PartnerMetadataInput() *map[string]*string
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -209,6 +212,7 @@ type GoogleComputeRegionInstanceTemplate interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPartnerMetadata()
 	ResetProject()
 	ResetRegion()
 	ResetReservationAffinity()
@@ -717,6 +721,26 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceTemplate) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeRegionInstanceTemplate) PartnerMetadata() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"partnerMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceTemplate) PartnerMetadataInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"partnerMetadataInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeRegionInstanceTemplate) Project() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1008,7 +1032,7 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceTemplate) TimeoutsInput() interfac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_region_instance_template google_compute_region_instance_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_region_instance_template google_compute_region_instance_template} Resource.
 func NewGoogleComputeRegionInstanceTemplate(scope constructs.Construct, id *string, config *GoogleComputeRegionInstanceTemplateConfig) GoogleComputeRegionInstanceTemplate {
 	_init_.Initialize()
 
@@ -1026,7 +1050,7 @@ func NewGoogleComputeRegionInstanceTemplate(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_region_instance_template google_compute_region_instance_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_region_instance_template google_compute_region_instance_template} Resource.
 func NewGoogleComputeRegionInstanceTemplate_Override(g GoogleComputeRegionInstanceTemplate, scope constructs.Construct, id *string, config *GoogleComputeRegionInstanceTemplateConfig) {
 	_init_.Initialize()
 
@@ -1214,6 +1238,17 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceTemplate)SetNamePrefix(val *string
 	_jsii_.Set(
 		j,
 		"namePrefix",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceTemplate)SetPartnerMetadata(val *map[string]*string) {
+	if err := j.validateSetPartnerMetadataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"partnerMetadata",
 		val,
 	)
 }
@@ -1898,6 +1933,14 @@ func (g *jsiiProxy_GoogleComputeRegionInstanceTemplate) ResetOverrideLogicalId()
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceTemplate) ResetPartnerMetadata() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPartnerMetadata",
 		nil, // no parameters
 	)
 }

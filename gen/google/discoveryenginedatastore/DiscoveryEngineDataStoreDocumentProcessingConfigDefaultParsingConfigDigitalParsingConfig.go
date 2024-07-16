@@ -1,0 +1,6 @@
+package discoveryenginedatastore
+
+
+type DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigDigitalParsingConfig struct {
+}
+

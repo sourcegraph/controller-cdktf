@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagooglebeyondcorpappconnection/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/data-sources/beyondcorp_app_connection google_beyondcorp_app_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/beyondcorp_app_connection google_beyondcorp_app_connection}.
 type DataGoogleBeyondcorpAppConnection interface {
 	cdktf.TerraformDataSource
 	ApplicationEndpoint() DataGoogleBeyondcorpAppConnectionApplicationEndpointList
@@ -421,7 +421,7 @@ func (j *jsiiProxy_DataGoogleBeyondcorpAppConnection) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/data-sources/beyondcorp_app_connection google_beyondcorp_app_connection} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/beyondcorp_app_connection google_beyondcorp_app_connection} Data Source.
 func NewDataGoogleBeyondcorpAppConnection(scope constructs.Construct, id *string, config *DataGoogleBeyondcorpAppConnectionConfig) DataGoogleBeyondcorpAppConnection {
 	_init_.Initialize()
 
@@ -439,7 +439,7 @@ func NewDataGoogleBeyondcorpAppConnection(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/data-sources/beyondcorp_app_connection google_beyondcorp_app_connection} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/beyondcorp_app_connection google_beyondcorp_app_connection} Data Source.
 func NewDataGoogleBeyondcorpAppConnection_Override(d DataGoogleBeyondcorpAppConnection, scope constructs.Construct, id *string, config *DataGoogleBeyondcorpAppConnectionConfig) {
 	_init_.Initialize()
 

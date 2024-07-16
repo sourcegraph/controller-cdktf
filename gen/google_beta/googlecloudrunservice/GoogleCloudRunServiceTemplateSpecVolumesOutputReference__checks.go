@@ -112,6 +112,17 @@ func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecVolumesOutputReference) vali
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecVolumesOutputReference) validatePutNfsParameters(value *GoogleCloudRunServiceTemplateSpecVolumesNfs) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecVolumesOutputReference) validatePutSecretParameters(value *GoogleCloudRunServiceTemplateSpecVolumesSecret) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

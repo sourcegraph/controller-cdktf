@@ -20,6 +20,9 @@ type DataFusionInstanceNetworkConfigOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ConnectionType() *string
+	SetConnectionType(val *string)
+	ConnectionTypeInput() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -35,6 +38,8 @@ type DataFusionInstanceNetworkConfigOutputReference interface {
 	Network() *string
 	SetNetwork(val *string)
 	NetworkInput() *string
+	PrivateServiceConnectConfig() DataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference
+	PrivateServiceConnectConfigInput() *DataFusionInstanceNetworkConfigPrivateServiceConnectConfig
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,6 +72,11 @@ type DataFusionInstanceNetworkConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutPrivateServiceConnectConfig(value *DataFusionInstanceNetworkConfigPrivateServiceConnectConfig)
+	ResetConnectionType()
+	ResetIpAllocation()
+	ResetNetwork()
+	ResetPrivateServiceConnectConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -97,6 +107,26 @@ func (j *jsiiProxy_DataFusionInstanceNetworkConfigOutputReference) ComplexObject
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataFusionInstanceNetworkConfigOutputReference) ConnectionType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"connectionType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataFusionInstanceNetworkConfigOutputReference) ConnectionTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"connectionTypeInput",
 		&returns,
 	)
 	return returns
@@ -172,6 +202,26 @@ func (j *jsiiProxy_DataFusionInstanceNetworkConfigOutputReference) NetworkInput(
 	return returns
 }
 
+func (j *jsiiProxy_DataFusionInstanceNetworkConfigOutputReference) PrivateServiceConnectConfig() DataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference {
+	var returns DataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference
+	_jsii_.Get(
+		j,
+		"privateServiceConnectConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataFusionInstanceNetworkConfigOutputReference) PrivateServiceConnectConfigInput() *DataFusionInstanceNetworkConfigPrivateServiceConnectConfig {
+	var returns *DataFusionInstanceNetworkConfigPrivateServiceConnectConfig
+	_jsii_.Get(
+		j,
+		"privateServiceConnectConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataFusionInstanceNetworkConfigOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -238,6 +288,17 @@ func (j *jsiiProxy_DataFusionInstanceNetworkConfigOutputReference)SetComplexObje
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataFusionInstanceNetworkConfigOutputReference)SetConnectionType(val *string) {
+	if err := j.validateSetConnectionTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connectionType",
 		val,
 	)
 }
@@ -481,6 +542,49 @@ func (d *jsiiProxy_DataFusionInstanceNetworkConfigOutputReference) Interpolation
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DataFusionInstanceNetworkConfigOutputReference) PutPrivateServiceConnectConfig(value *DataFusionInstanceNetworkConfigPrivateServiceConnectConfig) {
+	if err := d.validatePutPrivateServiceConnectConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putPrivateServiceConnectConfig",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataFusionInstanceNetworkConfigOutputReference) ResetConnectionType() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetConnectionType",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataFusionInstanceNetworkConfigOutputReference) ResetIpAllocation() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIpAllocation",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataFusionInstanceNetworkConfigOutputReference) ResetNetwork() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetNetwork",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataFusionInstanceNetworkConfigOutputReference) ResetPrivateServiceConnectConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPrivateServiceConnectConfig",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DataFusionInstanceNetworkConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

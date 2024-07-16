@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglecontainerattachedinstallmanifest/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/data-sources/google_container_attached_install_manifest google_container_attached_install_manifest}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_container_attached_install_manifest google_container_attached_install_manifest}.
 type DataGoogleContainerAttachedInstallManifest interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -365,7 +365,7 @@ func (j *jsiiProxy_DataGoogleContainerAttachedInstallManifest) TerraformResource
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/data-sources/google_container_attached_install_manifest google_container_attached_install_manifest} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_container_attached_install_manifest google_container_attached_install_manifest} Data Source.
 func NewDataGoogleContainerAttachedInstallManifest(scope constructs.Construct, id *string, config *DataGoogleContainerAttachedInstallManifestConfig) DataGoogleContainerAttachedInstallManifest {
 	_init_.Initialize()
 
@@ -383,7 +383,7 @@ func NewDataGoogleContainerAttachedInstallManifest(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/data-sources/google_container_attached_install_manifest google_container_attached_install_manifest} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_container_attached_install_manifest google_container_attached_install_manifest} Data Source.
 func NewDataGoogleContainerAttachedInstallManifest_Override(d DataGoogleContainerAttachedInstallManifest, scope constructs.Construct, id *string, config *DataGoogleContainerAttachedInstallManifestConfig) {
 	_init_.Initialize()
 

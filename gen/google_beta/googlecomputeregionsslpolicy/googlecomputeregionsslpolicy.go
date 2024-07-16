@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeregionsslpolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_region_ssl_policy google_compute_region_ssl_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_region_ssl_policy google_compute_region_ssl_policy}.
 type GoogleComputeRegionSslPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -141,6 +141,7 @@ type GoogleComputeRegionSslPolicy interface {
 	ResetOverrideLogicalId()
 	ResetProfile()
 	ResetProject()
+	ResetRegion()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -541,7 +542,7 @@ func (j *jsiiProxy_GoogleComputeRegionSslPolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_region_ssl_policy google_compute_region_ssl_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_region_ssl_policy google_compute_region_ssl_policy} Resource.
 func NewGoogleComputeRegionSslPolicy(scope constructs.Construct, id *string, config *GoogleComputeRegionSslPolicyConfig) GoogleComputeRegionSslPolicy {
 	_init_.Initialize()
 
@@ -559,7 +560,7 @@ func NewGoogleComputeRegionSslPolicy(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_region_ssl_policy google_compute_region_ssl_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_region_ssl_policy google_compute_region_ssl_policy} Resource.
 func NewGoogleComputeRegionSslPolicy_Override(g GoogleComputeRegionSslPolicy, scope constructs.Construct, id *string, config *GoogleComputeRegionSslPolicyConfig) {
 	_init_.Initialize()
 
@@ -1142,6 +1143,14 @@ func (g *jsiiProxy_GoogleComputeRegionSslPolicy) ResetProject() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionSslPolicy) ResetRegion() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

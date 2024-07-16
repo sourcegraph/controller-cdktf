@@ -156,6 +156,10 @@ func (j *jsiiProxy_ComputeTargetHttpsProxy) validateSetSslPolicyParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_ComputeTargetHttpsProxy) validateSetTlsEarlyDataParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeTargetHttpsProxy) validateSetUrlMapParameters(val *string) error {
 	return nil
 }

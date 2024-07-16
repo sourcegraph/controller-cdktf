@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeregiontargettcpproxy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_region_target_tcp_proxy google_compute_region_target_tcp_proxy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_region_target_tcp_proxy google_compute_region_target_tcp_proxy}.
 type GoogleComputeRegionTargetTcpProxy interface {
 	cdktf.TerraformResource
 	BackendService() *string
@@ -530,7 +530,7 @@ func (j *jsiiProxy_GoogleComputeRegionTargetTcpProxy) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_region_target_tcp_proxy google_compute_region_target_tcp_proxy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_region_target_tcp_proxy google_compute_region_target_tcp_proxy} Resource.
 func NewGoogleComputeRegionTargetTcpProxy(scope constructs.Construct, id *string, config *GoogleComputeRegionTargetTcpProxyConfig) GoogleComputeRegionTargetTcpProxy {
 	_init_.Initialize()
 
@@ -548,7 +548,7 @@ func NewGoogleComputeRegionTargetTcpProxy(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_region_target_tcp_proxy google_compute_region_target_tcp_proxy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_region_target_tcp_proxy google_compute_region_target_tcp_proxy} Resource.
 func NewGoogleComputeRegionTargetTcpProxy_Override(g GoogleComputeRegionTargetTcpProxy, scope constructs.Construct, id *string, config *GoogleComputeRegionTargetTcpProxyConfig) {
 	_init_.Initialize()
 

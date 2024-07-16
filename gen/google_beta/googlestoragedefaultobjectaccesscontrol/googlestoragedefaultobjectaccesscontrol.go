@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlestoragedefaultobjectaccesscontrol/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_storage_default_object_access_control google_storage_default_object_access_control}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_storage_default_object_access_control google_storage_default_object_access_control}.
 type GoogleStorageDefaultObjectAccessControl interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -479,7 +479,7 @@ func (j *jsiiProxy_GoogleStorageDefaultObjectAccessControl) TimeoutsInput() inte
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_storage_default_object_access_control google_storage_default_object_access_control} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_storage_default_object_access_control google_storage_default_object_access_control} Resource.
 func NewGoogleStorageDefaultObjectAccessControl(scope constructs.Construct, id *string, config *GoogleStorageDefaultObjectAccessControlConfig) GoogleStorageDefaultObjectAccessControl {
 	_init_.Initialize()
 
@@ -497,7 +497,7 @@ func NewGoogleStorageDefaultObjectAccessControl(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_storage_default_object_access_control google_storage_default_object_access_control} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_storage_default_object_access_control google_storage_default_object_access_control} Resource.
 func NewGoogleStorageDefaultObjectAccessControl_Override(g GoogleStorageDefaultObjectAccessControl, scope constructs.Construct, id *string, config *GoogleStorageDefaultObjectAccessControlConfig) {
 	_init_.Initialize()
 

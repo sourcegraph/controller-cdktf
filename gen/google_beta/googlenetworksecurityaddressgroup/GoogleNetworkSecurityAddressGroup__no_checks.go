@@ -140,6 +140,10 @@ func (j *jsiiProxy_GoogleNetworkSecurityAddressGroup) validateSetProvisionersPar
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetworkSecurityAddressGroup) validateSetPurposeParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetworkSecurityAddressGroup) validateSetTypeParameters(val *string) error {
 	return nil
 }

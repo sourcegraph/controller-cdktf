@@ -72,6 +72,10 @@ func (c *jsiiProxy_CertificateManagerTrustConfig) validateOverrideLogicalIdParam
 	return nil
 }
 
+func (c *jsiiProxy_CertificateManagerTrustConfig) validatePutAllowlistedCertificatesParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CertificateManagerTrustConfig) validatePutTimeoutsParameters(value *CertificateManagerTrustConfigTimeouts) error {
 	return nil
 }

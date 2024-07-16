@@ -72,6 +72,10 @@ func (g *jsiiProxy_GoogleKmsCryptoKey) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
+func (g *jsiiProxy_GoogleKmsCryptoKey) validatePutKeyAccessJustificationsPolicyParameters(value *GoogleKmsCryptoKeyKeyAccessJustificationsPolicy) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleKmsCryptoKey) validatePutTimeoutsParameters(value *GoogleKmsCryptoKeyTimeouts) error {
 	return nil
 }

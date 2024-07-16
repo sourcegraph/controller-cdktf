@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleEdgecontainerClusterMaintenancePolicyOutputReference) v
 	return nil
 }
 
+func (g *jsiiProxy_GoogleEdgecontainerClusterMaintenancePolicyOutputReference) validatePutMaintenanceExclusionsParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleEdgecontainerClusterMaintenancePolicyOutputReference) validatePutWindowParameters(value *GoogleEdgecontainerClusterMaintenancePolicyWindow) error {
 	return nil
 }

@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference) validateInterp
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference) validatePutDefaultCustomErrorResponsePolicyParameters(value *GoogleComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicy) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference) validatePutDefaultRouteActionParameters(value *GoogleComputeUrlMapPathMatcherDefaultRouteAction) error {
 	return nil
 }

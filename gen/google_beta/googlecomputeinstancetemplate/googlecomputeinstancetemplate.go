@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeinstancetemplate/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_instance_template google_compute_instance_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_instance_template google_compute_instance_template}.
 type GoogleComputeInstanceTemplate interface {
 	cdktf.TerraformResource
 	AdvancedMachineFeatures() GoogleComputeInstanceTemplateAdvancedMachineFeaturesOutputReference
@@ -92,6 +92,9 @@ type GoogleComputeInstanceTemplate interface {
 	NetworkPerformanceConfigInput() *GoogleComputeInstanceTemplateNetworkPerformanceConfig
 	// The tree node.
 	Node() constructs.Node
+	PartnerMetadata() *map[string]*string
+	SetPartnerMetadata(val *map[string]*string)
+	PartnerMetadataInput() *map[string]*string
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -210,6 +213,7 @@ type GoogleComputeInstanceTemplate interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPartnerMetadata()
 	ResetProject()
 	ResetRegion()
 	ResetReservationAffinity()
@@ -718,6 +722,26 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplate) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceTemplate) PartnerMetadata() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"partnerMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceTemplate) PartnerMetadataInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"partnerMetadataInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceTemplate) Project() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1019,7 +1043,7 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplate) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_instance_template google_compute_instance_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_instance_template google_compute_instance_template} Resource.
 func NewGoogleComputeInstanceTemplate(scope constructs.Construct, id *string, config *GoogleComputeInstanceTemplateConfig) GoogleComputeInstanceTemplate {
 	_init_.Initialize()
 
@@ -1037,7 +1061,7 @@ func NewGoogleComputeInstanceTemplate(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_instance_template google_compute_instance_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_instance_template google_compute_instance_template} Resource.
 func NewGoogleComputeInstanceTemplate_Override(g GoogleComputeInstanceTemplate, scope constructs.Construct, id *string, config *GoogleComputeInstanceTemplateConfig) {
 	_init_.Initialize()
 
@@ -1225,6 +1249,17 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplate)SetNamePrefix(val *string) {
 	_jsii_.Set(
 		j,
 		"namePrefix",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceTemplate)SetPartnerMetadata(val *map[string]*string) {
+	if err := j.validateSetPartnerMetadataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"partnerMetadata",
 		val,
 	)
 }
@@ -1909,6 +1944,14 @@ func (g *jsiiProxy_GoogleComputeInstanceTemplate) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceTemplate) ResetPartnerMetadata() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPartnerMetadata",
 		nil, // no parameters
 	)
 }

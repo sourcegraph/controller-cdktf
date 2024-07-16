@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/networkmanagementconnectivitytest/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/network_management_connectivity_test google_network_management_connectivity_test}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/network_management_connectivity_test google_network_management_connectivity_test}.
 type NetworkManagementConnectivityTest interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -542,7 +542,7 @@ func (j *jsiiProxy_NetworkManagementConnectivityTest) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/network_management_connectivity_test google_network_management_connectivity_test} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/network_management_connectivity_test google_network_management_connectivity_test} Resource.
 func NewNetworkManagementConnectivityTest(scope constructs.Construct, id *string, config *NetworkManagementConnectivityTestConfig) NetworkManagementConnectivityTest {
 	_init_.Initialize()
 
@@ -560,7 +560,7 @@ func NewNetworkManagementConnectivityTest(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/network_management_connectivity_test google_network_management_connectivity_test} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/network_management_connectivity_test google_network_management_connectivity_test} Resource.
 func NewNetworkManagementConnectivityTest_Override(n NetworkManagementConnectivityTest, scope constructs.Construct, id *string, config *NetworkManagementConnectivityTestConfig) {
 	_init_.Initialize()
 

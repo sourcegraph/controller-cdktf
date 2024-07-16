@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglemonitoringmeshistioservice/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/data-sources/google_monitoring_mesh_istio_service google_monitoring_mesh_istio_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_monitoring_mesh_istio_service google_monitoring_mesh_istio_service}.
 type DataGoogleMonitoringMeshIstioService interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -410,7 +410,7 @@ func (j *jsiiProxy_DataGoogleMonitoringMeshIstioService) UserLabels() cdktf.Stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/data-sources/google_monitoring_mesh_istio_service google_monitoring_mesh_istio_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_monitoring_mesh_istio_service google_monitoring_mesh_istio_service} Data Source.
 func NewDataGoogleMonitoringMeshIstioService(scope constructs.Construct, id *string, config *DataGoogleMonitoringMeshIstioServiceConfig) DataGoogleMonitoringMeshIstioService {
 	_init_.Initialize()
 
@@ -428,7 +428,7 @@ func NewDataGoogleMonitoringMeshIstioService(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/data-sources/google_monitoring_mesh_istio_service google_monitoring_mesh_istio_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_monitoring_mesh_istio_service google_monitoring_mesh_istio_service} Data Source.
 func NewDataGoogleMonitoringMeshIstioService_Override(d DataGoogleMonitoringMeshIstioService, scope constructs.Construct, id *string, config *DataGoogleMonitoringMeshIstioServiceConfig) {
 	_init_.Initialize()
 

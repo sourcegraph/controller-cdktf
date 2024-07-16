@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlebigtablegcpolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_bigtable_gc_policy google_bigtable_gc_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_bigtable_gc_policy google_bigtable_gc_policy}.
 type GoogleBigtableGcPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -48,6 +48,9 @@ type GoogleBigtableGcPolicy interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IgnoreWarnings() interface{}
+	SetIgnoreWarnings(val interface{})
+	IgnoreWarningsInput() interface{}
 	InstanceName() *string
 	SetInstanceName(val *string)
 	InstanceNameInput() *string
@@ -137,6 +140,7 @@ type GoogleBigtableGcPolicy interface {
 	ResetDeletionPolicy()
 	ResetGcRules()
 	ResetId()
+	ResetIgnoreWarnings()
 	ResetMaxAge()
 	ResetMaxVersion()
 	ResetMode()
@@ -318,6 +322,26 @@ func (j *jsiiProxy_GoogleBigtableGcPolicy) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigtableGcPolicy) IgnoreWarnings() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ignoreWarnings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigtableGcPolicy) IgnoreWarningsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ignoreWarningsInput",
 		&returns,
 	)
 	return returns
@@ -544,7 +568,7 @@ func (j *jsiiProxy_GoogleBigtableGcPolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_bigtable_gc_policy google_bigtable_gc_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_bigtable_gc_policy google_bigtable_gc_policy} Resource.
 func NewGoogleBigtableGcPolicy(scope constructs.Construct, id *string, config *GoogleBigtableGcPolicyConfig) GoogleBigtableGcPolicy {
 	_init_.Initialize()
 
@@ -562,7 +586,7 @@ func NewGoogleBigtableGcPolicy(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_bigtable_gc_policy google_bigtable_gc_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_bigtable_gc_policy google_bigtable_gc_policy} Resource.
 func NewGoogleBigtableGcPolicy_Override(g GoogleBigtableGcPolicy, scope constructs.Construct, id *string, config *GoogleBigtableGcPolicyConfig) {
 	_init_.Initialize()
 
@@ -651,6 +675,17 @@ func (j *jsiiProxy_GoogleBigtableGcPolicy)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBigtableGcPolicy)SetIgnoreWarnings(val interface{}) {
+	if err := j.validateSetIgnoreWarningsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ignoreWarnings",
 		val,
 	)
 }
@@ -1135,6 +1170,14 @@ func (g *jsiiProxy_GoogleBigtableGcPolicy) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBigtableGcPolicy) ResetIgnoreWarnings() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIgnoreWarnings",
 		nil, // no parameters
 	)
 }

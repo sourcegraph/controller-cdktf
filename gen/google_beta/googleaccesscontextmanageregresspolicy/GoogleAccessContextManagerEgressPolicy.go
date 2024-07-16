@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleaccesscontextmanageregresspolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_access_context_manager_egress_policy google_access_context_manager_egress_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_access_context_manager_egress_policy google_access_context_manager_egress_policy}.
 type GoogleAccessContextManagerEgressPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -377,7 +377,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerEgressPolicy) TimeoutsInput() inter
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_access_context_manager_egress_policy google_access_context_manager_egress_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_access_context_manager_egress_policy google_access_context_manager_egress_policy} Resource.
 func NewGoogleAccessContextManagerEgressPolicy(scope constructs.Construct, id *string, config *GoogleAccessContextManagerEgressPolicyConfig) GoogleAccessContextManagerEgressPolicy {
 	_init_.Initialize()
 
@@ -395,7 +395,7 @@ func NewGoogleAccessContextManagerEgressPolicy(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_access_context_manager_egress_policy google_access_context_manager_egress_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_access_context_manager_egress_policy google_access_context_manager_egress_policy} Resource.
 func NewGoogleAccessContextManagerEgressPolicy_Override(g GoogleAccessContextManagerEgressPolicy, scope constructs.Construct, id *string, config *GoogleAccessContextManagerEgressPolicyConfig) {
 	_init_.Initialize()
 

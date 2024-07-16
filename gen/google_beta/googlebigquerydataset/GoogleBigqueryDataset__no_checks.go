@@ -172,6 +172,10 @@ func (j *jsiiProxy_GoogleBigqueryDataset) validateSetProvisionersParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_GoogleBigqueryDataset) validateSetResourceTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBigqueryDataset) validateSetStorageBillingModelParameters(val *string) error {
 	return nil
 }

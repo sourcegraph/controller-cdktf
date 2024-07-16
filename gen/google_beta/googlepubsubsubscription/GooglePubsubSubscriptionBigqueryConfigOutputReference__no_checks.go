@@ -64,6 +64,10 @@ func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) valida
 	return nil
 }
 
+func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) validateSetServiceAccountEmailParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) validateSetTableParameters(val *string) error {
 	return nil
 }

@@ -192,6 +192,10 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceTemplate) validateSetNamePrefixPar
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRegionInstanceTemplate) validateSetPartnerMetadataParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRegionInstanceTemplate) validateSetProjectParameters(val *string) error {
 	return nil
 }

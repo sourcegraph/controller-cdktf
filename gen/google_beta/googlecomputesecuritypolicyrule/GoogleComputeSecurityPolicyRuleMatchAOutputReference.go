@@ -29,6 +29,8 @@ type GoogleComputeSecurityPolicyRuleMatchAOutputReference interface {
 	CreationStack() *[]*string
 	Expr() GoogleComputeSecurityPolicyRuleMatchExprAOutputReference
 	ExprInput() *GoogleComputeSecurityPolicyRuleMatchExprA
+	ExprOptions() GoogleComputeSecurityPolicyRuleMatchExprOptionsAOutputReference
+	ExprOptionsInput() *GoogleComputeSecurityPolicyRuleMatchExprOptionsA
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleComputeSecurityPolicyRuleMatchA
@@ -70,8 +72,10 @@ type GoogleComputeSecurityPolicyRuleMatchAOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutConfig(value *GoogleComputeSecurityPolicyRuleMatchConfigA)
 	PutExpr(value *GoogleComputeSecurityPolicyRuleMatchExprA)
+	PutExprOptions(value *GoogleComputeSecurityPolicyRuleMatchExprOptionsA)
 	ResetConfig()
 	ResetExpr()
+	ResetExprOptions()
 	ResetVersionedExpr()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -153,6 +157,26 @@ func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleMatchAOutputReference) ExprInp
 	_jsii_.Get(
 		j,
 		"exprInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleMatchAOutputReference) ExprOptions() GoogleComputeSecurityPolicyRuleMatchExprOptionsAOutputReference {
+	var returns GoogleComputeSecurityPolicyRuleMatchExprOptionsAOutputReference
+	_jsii_.Get(
+		j,
+		"exprOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleMatchAOutputReference) ExprOptionsInput() *GoogleComputeSecurityPolicyRuleMatchExprOptionsA {
+	var returns *GoogleComputeSecurityPolicyRuleMatchExprOptionsA
+	_jsii_.Get(
+		j,
+		"exprOptionsInput",
 		&returns,
 	)
 	return returns
@@ -520,6 +544,17 @@ func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleMatchAOutputReference) PutExpr
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleMatchAOutputReference) PutExprOptions(value *GoogleComputeSecurityPolicyRuleMatchExprOptionsA) {
+	if err := g.validatePutExprOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putExprOptions",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleMatchAOutputReference) ResetConfig() {
 	_jsii_.InvokeVoid(
 		g,
@@ -532,6 +567,14 @@ func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleMatchAOutputReference) ResetEx
 	_jsii_.InvokeVoid(
 		g,
 		"resetExpr",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleMatchAOutputReference) ResetExprOptions() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetExprOptions",
 		nil, // no parameters
 	)
 }

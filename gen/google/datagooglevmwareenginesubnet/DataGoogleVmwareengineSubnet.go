@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagooglevmwareenginesubnet/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/data-sources/vmwareengine_subnet google_vmwareengine_subnet}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/vmwareengine_subnet google_vmwareengine_subnet}.
 type DataGoogleVmwareengineSubnet interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -429,7 +429,7 @@ func (j *jsiiProxy_DataGoogleVmwareengineSubnet) VlanId() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/data-sources/vmwareengine_subnet google_vmwareengine_subnet} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/vmwareengine_subnet google_vmwareengine_subnet} Data Source.
 func NewDataGoogleVmwareengineSubnet(scope constructs.Construct, id *string, config *DataGoogleVmwareengineSubnetConfig) DataGoogleVmwareengineSubnet {
 	_init_.Initialize()
 
@@ -447,7 +447,7 @@ func NewDataGoogleVmwareengineSubnet(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/data-sources/vmwareengine_subnet google_vmwareengine_subnet} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/vmwareengine_subnet google_vmwareengine_subnet} Data Source.
 func NewDataGoogleVmwareengineSubnet_Override(d DataGoogleVmwareengineSubnet, scope constructs.Construct, id *string, config *DataGoogleVmwareengineSubnetConfig) {
 	_init_.Initialize()
 

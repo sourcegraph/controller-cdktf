@@ -48,6 +48,10 @@ func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterO
 	return nil
 }
 
+func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterOutputReference) validatePutDatabaseResourceReferenceParameters(value *DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterDatabaseResourceReference) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterOutputReference) validatePutOthersParameters(value *DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterOthers) error {
 	return nil
 }

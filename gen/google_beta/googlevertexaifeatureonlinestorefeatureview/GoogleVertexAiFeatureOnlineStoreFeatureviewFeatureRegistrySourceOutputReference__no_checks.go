@@ -64,6 +64,10 @@ func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureviewFeatureRegistrySou
 	return nil
 }
 
+func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureviewFeatureRegistrySourceOutputReference) validateSetProjectNumberParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureviewFeatureRegistrySourceOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

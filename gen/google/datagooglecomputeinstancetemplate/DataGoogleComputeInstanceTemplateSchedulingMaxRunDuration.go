@@ -1,0 +1,6 @@
+package datagooglecomputeinstancetemplate
+
+
+type DataGoogleComputeInstanceTemplateSchedulingMaxRunDuration struct {
+}
+

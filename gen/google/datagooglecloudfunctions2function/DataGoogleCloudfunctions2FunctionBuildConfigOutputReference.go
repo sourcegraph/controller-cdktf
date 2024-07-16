@@ -10,6 +10,7 @@ import (
 
 type DataGoogleCloudfunctions2FunctionBuildConfigOutputReference interface {
 	cdktf.ComplexObject
+	AutomaticUpdatePolicy() DataGoogleCloudfunctions2FunctionBuildConfigAutomaticUpdatePolicyList
 	BuildAttribute() *string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -33,6 +34,7 @@ type DataGoogleCloudfunctions2FunctionBuildConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataGoogleCloudfunctions2FunctionBuildConfig
 	SetInternalValue(val *DataGoogleCloudfunctions2FunctionBuildConfig)
+	OnDeployUpdatePolicy() DataGoogleCloudfunctions2FunctionBuildConfigOnDeployUpdatePolicyList
 	Runtime() *string
 	ServiceAccount() *string
 	Source() DataGoogleCloudfunctions2FunctionBuildConfigSourceList
@@ -82,6 +84,16 @@ type DataGoogleCloudfunctions2FunctionBuildConfigOutputReference interface {
 // The jsii proxy struct for DataGoogleCloudfunctions2FunctionBuildConfigOutputReference
 type jsiiProxy_DataGoogleCloudfunctions2FunctionBuildConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataGoogleCloudfunctions2FunctionBuildConfigOutputReference) AutomaticUpdatePolicy() DataGoogleCloudfunctions2FunctionBuildConfigAutomaticUpdatePolicyList {
+	var returns DataGoogleCloudfunctions2FunctionBuildConfigAutomaticUpdatePolicyList
+	_jsii_.Get(
+		j,
+		"automaticUpdatePolicy",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataGoogleCloudfunctions2FunctionBuildConfigOutputReference) BuildAttribute() *string {
@@ -169,6 +181,16 @@ func (j *jsiiProxy_DataGoogleCloudfunctions2FunctionBuildConfigOutputReference) 
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleCloudfunctions2FunctionBuildConfigOutputReference) OnDeployUpdatePolicy() DataGoogleCloudfunctions2FunctionBuildConfigOnDeployUpdatePolicyList {
+	var returns DataGoogleCloudfunctions2FunctionBuildConfigOnDeployUpdatePolicyList
+	_jsii_.Get(
+		j,
+		"onDeployUpdatePolicy",
 		&returns,
 	)
 	return returns

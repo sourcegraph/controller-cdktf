@@ -52,6 +52,10 @@ func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsOutputReference
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsOutputReference) validatePutSecretsTargetParameters(value *GoogleDataLossPreventionDiscoveryConfigTargetsSecretsTarget) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

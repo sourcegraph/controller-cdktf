@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/provider/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs google}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs google}.
 type GoogleProvider interface {
 	cdktf.TerraformProvider
 	AccessApprovalCustomEndpoint() *string
@@ -369,6 +369,9 @@ type GoogleProvider interface {
 	PrivatecaCustomEndpoint() *string
 	SetPrivatecaCustomEndpoint(val *string)
 	PrivatecaCustomEndpointInput() *string
+	PrivilegedAccessManagerCustomEndpoint() *string
+	SetPrivilegedAccessManagerCustomEndpoint(val *string)
+	PrivilegedAccessManagerCustomEndpointInput() *string
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -416,6 +419,12 @@ type GoogleProvider interface {
 	SecurityCenterCustomEndpoint() *string
 	SetSecurityCenterCustomEndpoint(val *string)
 	SecurityCenterCustomEndpointInput() *string
+	SecurityCenterManagementCustomEndpoint() *string
+	SetSecurityCenterManagementCustomEndpoint(val *string)
+	SecurityCenterManagementCustomEndpointInput() *string
+	SecurityCenterV2CustomEndpoint() *string
+	SetSecurityCenterV2CustomEndpoint(val *string)
+	SecurityCenterV2CustomEndpointInput() *string
 	SecuritypostureCustomEndpoint() *string
 	SetSecuritypostureCustomEndpoint(val *string)
 	SecuritypostureCustomEndpointInput() *string
@@ -428,6 +437,9 @@ type GoogleProvider interface {
 	ServiceUsageCustomEndpoint() *string
 	SetServiceUsageCustomEndpoint(val *string)
 	ServiceUsageCustomEndpointInput() *string
+	SiteVerificationCustomEndpoint() *string
+	SetSiteVerificationCustomEndpoint(val *string)
+	SiteVerificationCustomEndpointInput() *string
 	SourceRepoCustomEndpoint() *string
 	SetSourceRepoCustomEndpoint(val *string)
 	SourceRepoCustomEndpointInput() *string
@@ -611,6 +623,7 @@ type GoogleProvider interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPrivatecaCustomEndpoint()
+	ResetPrivilegedAccessManagerCustomEndpoint()
 	ResetProject()
 	ResetPublicCaCustomEndpoint()
 	ResetPubsubCustomEndpoint()
@@ -626,10 +639,13 @@ type GoogleProvider interface {
 	ResetSecretManagerCustomEndpoint()
 	ResetSecureSourceManagerCustomEndpoint()
 	ResetSecurityCenterCustomEndpoint()
+	ResetSecurityCenterManagementCustomEndpoint()
+	ResetSecurityCenterV2CustomEndpoint()
 	ResetSecuritypostureCustomEndpoint()
 	ResetServiceManagementCustomEndpoint()
 	ResetServiceNetworkingCustomEndpoint()
 	ResetServiceUsageCustomEndpoint()
+	ResetSiteVerificationCustomEndpoint()
 	ResetSourceRepoCustomEndpoint()
 	ResetSpannerCustomEndpoint()
 	ResetSqlCustomEndpoint()
@@ -3026,6 +3042,26 @@ func (j *jsiiProxy_GoogleProvider) PrivatecaCustomEndpointInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleProvider) PrivilegedAccessManagerCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privilegedAccessManagerCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) PrivilegedAccessManagerCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privilegedAccessManagerCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleProvider) Project() *string {
 	var returns *string
 	_jsii_.Get(
@@ -3336,6 +3372,46 @@ func (j *jsiiProxy_GoogleProvider) SecurityCenterCustomEndpointInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleProvider) SecurityCenterManagementCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securityCenterManagementCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) SecurityCenterManagementCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securityCenterManagementCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) SecurityCenterV2CustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securityCenterV2CustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) SecurityCenterV2CustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securityCenterV2CustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleProvider) SecuritypostureCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -3411,6 +3487,26 @@ func (j *jsiiProxy_GoogleProvider) ServiceUsageCustomEndpointInput() *string {
 	_jsii_.Get(
 		j,
 		"serviceUsageCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) SiteVerificationCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"siteVerificationCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) SiteVerificationCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"siteVerificationCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -3807,7 +3903,7 @@ func (j *jsiiProxy_GoogleProvider) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs google} Resource.
 func NewGoogleProvider(scope constructs.Construct, id *string, config *GoogleProviderConfig) GoogleProvider {
 	_init_.Initialize()
 
@@ -3825,7 +3921,7 @@ func NewGoogleProvider(scope constructs.Construct, id *string, config *GooglePro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs google} Resource.
 func NewGoogleProvider_Override(g GoogleProvider, scope constructs.Construct, id *string, config *GoogleProviderConfig) {
 	_init_.Initialize()
 
@@ -4762,6 +4858,14 @@ func (j *jsiiProxy_GoogleProvider)SetPrivatecaCustomEndpoint(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleProvider)SetPrivilegedAccessManagerCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"privilegedAccessManagerCustomEndpoint",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleProvider)SetProject(val *string) {
 	_jsii_.Set(
 		j,
@@ -4882,6 +4986,22 @@ func (j *jsiiProxy_GoogleProvider)SetSecurityCenterCustomEndpoint(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleProvider)SetSecurityCenterManagementCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"securityCenterManagementCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleProvider)SetSecurityCenterV2CustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"securityCenterV2CustomEndpoint",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleProvider)SetSecuritypostureCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -4910,6 +5030,14 @@ func (j *jsiiProxy_GoogleProvider)SetServiceUsageCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"serviceUsageCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleProvider)SetSiteVerificationCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"siteVerificationCustomEndpoint",
 		val,
 	)
 }
@@ -6114,6 +6242,14 @@ func (g *jsiiProxy_GoogleProvider) ResetPrivatecaCustomEndpoint() {
 	)
 }
 
+func (g *jsiiProxy_GoogleProvider) ResetPrivilegedAccessManagerCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPrivilegedAccessManagerCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleProvider) ResetProject() {
 	_jsii_.InvokeVoid(
 		g,
@@ -6234,6 +6370,22 @@ func (g *jsiiProxy_GoogleProvider) ResetSecurityCenterCustomEndpoint() {
 	)
 }
 
+func (g *jsiiProxy_GoogleProvider) ResetSecurityCenterManagementCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSecurityCenterManagementCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleProvider) ResetSecurityCenterV2CustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSecurityCenterV2CustomEndpoint",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleProvider) ResetSecuritypostureCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
@@ -6262,6 +6414,14 @@ func (g *jsiiProxy_GoogleProvider) ResetServiceUsageCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetServiceUsageCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleProvider) ResetSiteVerificationCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSiteVerificationCustomEndpoint",
 		nil, // no parameters
 	)
 }

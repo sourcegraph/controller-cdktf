@@ -92,6 +92,10 @@ func validateGoogleComputeRegionNetworkEndpoint_IsTerraformResourceParameters(x 
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRegionNetworkEndpoint) validateSetClientDestinationPortParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRegionNetworkEndpoint) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -105,6 +109,10 @@ func (j *jsiiProxy_GoogleComputeRegionNetworkEndpoint) validateSetFqdnParameters
 }
 
 func (j *jsiiProxy_GoogleComputeRegionNetworkEndpoint) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeRegionNetworkEndpoint) validateSetInstanceParameters(val *string) error {
 	return nil
 }
 

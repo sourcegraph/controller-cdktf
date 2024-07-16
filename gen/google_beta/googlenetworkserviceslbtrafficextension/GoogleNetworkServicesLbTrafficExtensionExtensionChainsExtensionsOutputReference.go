@@ -82,9 +82,11 @@ type GoogleNetworkServicesLbTrafficExtensionExtensionChainsExtensionsOutputRefer
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAuthority()
 	ResetFailOpen()
 	ResetForwardHeaders()
 	ResetSupportedEvents()
+	ResetTimeout()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -656,6 +658,14 @@ func (g *jsiiProxy_GoogleNetworkServicesLbTrafficExtensionExtensionChainsExtensi
 	return returns
 }
 
+func (g *jsiiProxy_GoogleNetworkServicesLbTrafficExtensionExtensionChainsExtensionsOutputReference) ResetAuthority() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAuthority",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleNetworkServicesLbTrafficExtensionExtensionChainsExtensionsOutputReference) ResetFailOpen() {
 	_jsii_.InvokeVoid(
 		g,
@@ -676,6 +686,14 @@ func (g *jsiiProxy_GoogleNetworkServicesLbTrafficExtensionExtensionChainsExtensi
 	_jsii_.InvokeVoid(
 		g,
 		"resetSupportedEvents",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleNetworkServicesLbTrafficExtensionExtensionChainsExtensionsOutputReference) ResetTimeout() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTimeout",
 		nil, // no parameters
 	)
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglecloudquotasquotainfo/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/data-sources/google_cloud_quotas_quota_info google_cloud_quotas_quota_info}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_cloud_quotas_quota_info google_cloud_quotas_quota_info}.
 type DataGoogleCloudQuotasQuotaInfo interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -485,7 +485,7 @@ func (j *jsiiProxy_DataGoogleCloudQuotasQuotaInfo) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/data-sources/google_cloud_quotas_quota_info google_cloud_quotas_quota_info} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_cloud_quotas_quota_info google_cloud_quotas_quota_info} Data Source.
 func NewDataGoogleCloudQuotasQuotaInfo(scope constructs.Construct, id *string, config *DataGoogleCloudQuotasQuotaInfoConfig) DataGoogleCloudQuotasQuotaInfo {
 	_init_.Initialize()
 
@@ -503,7 +503,7 @@ func NewDataGoogleCloudQuotasQuotaInfo(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/data-sources/google_cloud_quotas_quota_info google_cloud_quotas_quota_info} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_cloud_quotas_quota_info google_cloud_quotas_quota_info} Data Source.
 func NewDataGoogleCloudQuotasQuotaInfo_Override(d DataGoogleCloudQuotasQuotaInfo, scope constructs.Construct, id *string, config *DataGoogleCloudQuotasQuotaInfoConfig) {
 	_init_.Initialize()
 

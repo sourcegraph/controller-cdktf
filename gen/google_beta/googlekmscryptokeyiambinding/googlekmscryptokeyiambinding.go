@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlekmscryptokeyiambinding/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_kms_crypto_key_iam_binding google_kms_crypto_key_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_kms_crypto_key_iam_binding google_kms_crypto_key_iam_binding}.
 type GoogleKmsCryptoKeyIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -411,7 +411,7 @@ func (j *jsiiProxy_GoogleKmsCryptoKeyIamBinding) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_kms_crypto_key_iam_binding google_kms_crypto_key_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_kms_crypto_key_iam_binding google_kms_crypto_key_iam_binding} Resource.
 func NewGoogleKmsCryptoKeyIamBinding(scope constructs.Construct, id *string, config *GoogleKmsCryptoKeyIamBindingConfig) GoogleKmsCryptoKeyIamBinding {
 	_init_.Initialize()
 
@@ -429,7 +429,7 @@ func NewGoogleKmsCryptoKeyIamBinding(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_kms_crypto_key_iam_binding google_kms_crypto_key_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_kms_crypto_key_iam_binding google_kms_crypto_key_iam_binding} Resource.
 func NewGoogleKmsCryptoKeyIamBinding_Override(g GoogleKmsCryptoKeyIamBinding, scope constructs.Construct, id *string, config *GoogleKmsCryptoKeyIamBindingConfig) {
 	_init_.Initialize()
 

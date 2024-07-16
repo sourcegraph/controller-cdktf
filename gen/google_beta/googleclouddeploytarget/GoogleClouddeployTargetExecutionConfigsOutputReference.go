@@ -49,6 +49,9 @@ type GoogleClouddeployTargetExecutionConfigsOutputReference interface {
 	Usages() *[]*string
 	SetUsages(val *[]*string)
 	UsagesInput() *[]*string
+	Verbose() interface{}
+	SetVerbose(val interface{})
+	VerboseInput() interface{}
 	WorkerPool() *string
 	SetWorkerPool(val *string)
 	WorkerPoolInput() *string
@@ -79,6 +82,7 @@ type GoogleClouddeployTargetExecutionConfigsOutputReference interface {
 	ResetArtifactStorage()
 	ResetExecutionTimeout()
 	ResetServiceAccount()
+	ResetVerbose()
 	ResetWorkerPool()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -245,6 +249,26 @@ func (j *jsiiProxy_GoogleClouddeployTargetExecutionConfigsOutputReference) Usage
 	return returns
 }
 
+func (j *jsiiProxy_GoogleClouddeployTargetExecutionConfigsOutputReference) Verbose() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"verbose",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleClouddeployTargetExecutionConfigsOutputReference) VerboseInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"verboseInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleClouddeployTargetExecutionConfigsOutputReference) WorkerPool() *string {
 	var returns *string
 	_jsii_.Get(
@@ -388,6 +412,17 @@ func (j *jsiiProxy_GoogleClouddeployTargetExecutionConfigsOutputReference)SetUsa
 	_jsii_.Set(
 		j,
 		"usages",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleClouddeployTargetExecutionConfigsOutputReference)SetVerbose(val interface{}) {
+	if err := j.validateSetVerboseParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"verbose",
 		val,
 	)
 }
@@ -609,6 +644,14 @@ func (g *jsiiProxy_GoogleClouddeployTargetExecutionConfigsOutputReference) Reset
 	_jsii_.InvokeVoid(
 		g,
 		"resetServiceAccount",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleClouddeployTargetExecutionConfigsOutputReference) ResetVerbose() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetVerbose",
 		nil, // no parameters
 	)
 }

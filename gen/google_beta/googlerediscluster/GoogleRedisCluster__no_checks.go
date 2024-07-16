@@ -80,6 +80,10 @@ func (g *jsiiProxy_GoogleRedisCluster) validatePutTimeoutsParameters(value *Goog
 	return nil
 }
 
+func (g *jsiiProxy_GoogleRedisCluster) validatePutZoneDistributionConfigParameters(value *GoogleRedisClusterZoneDistributionConfig) error {
+	return nil
+}
+
 func validateGoogleRedisCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

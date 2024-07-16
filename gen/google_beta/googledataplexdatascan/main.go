@@ -591,6 +591,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putRegexExpectation", GoMethod: "PutRegexExpectation"},
 			_jsii_.MemberMethod{JsiiMethod: "putRowConditionExpectation", GoMethod: "PutRowConditionExpectation"},
 			_jsii_.MemberMethod{JsiiMethod: "putSetExpectation", GoMethod: "PutSetExpectation"},
+			_jsii_.MemberMethod{JsiiMethod: "putSqlAssertion", GoMethod: "PutSqlAssertion"},
 			_jsii_.MemberMethod{JsiiMethod: "putStatisticRangeExpectation", GoMethod: "PutStatisticRangeExpectation"},
 			_jsii_.MemberMethod{JsiiMethod: "putTableConditionExpectation", GoMethod: "PutTableConditionExpectation"},
 			_jsii_.MemberMethod{JsiiMethod: "putUniquenessExpectation", GoMethod: "PutUniquenessExpectation"},
@@ -607,6 +608,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetRegexExpectation", GoMethod: "ResetRegexExpectation"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRowConditionExpectation", GoMethod: "ResetRowConditionExpectation"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSetExpectation", GoMethod: "ResetSetExpectation"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSqlAssertion", GoMethod: "ResetSqlAssertion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStatisticRangeExpectation", GoMethod: "ResetStatisticRangeExpectation"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTableConditionExpectation", GoMethod: "ResetTableConditionExpectation"},
 			_jsii_.MemberMethod{JsiiMethod: "resetThreshold", GoMethod: "ResetThreshold"},
@@ -616,6 +618,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rowConditionExpectationInput", GoGetter: "RowConditionExpectationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "setExpectation", GoGetter: "SetExpectation"},
 			_jsii_.MemberProperty{JsiiProperty: "setExpectationInput", GoGetter: "SetExpectationInput"},
+			_jsii_.MemberProperty{JsiiProperty: "sqlAssertion", GoGetter: "SqlAssertion"},
+			_jsii_.MemberProperty{JsiiProperty: "sqlAssertionInput", GoGetter: "SqlAssertionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "statisticRangeExpectation", GoGetter: "StatisticRangeExpectation"},
 			_jsii_.MemberProperty{JsiiProperty: "statisticRangeExpectationInput", GoGetter: "StatisticRangeExpectationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "tableConditionExpectation", GoGetter: "TableConditionExpectation"},
@@ -792,6 +796,44 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesSetExpectationOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataQualitySpecRulesSqlAssertion",
+		reflect.TypeOf((*GoogleDataplexDatascanDataQualitySpecRulesSqlAssertion)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataQualitySpecRulesSqlAssertionOutputReference",
+		reflect.TypeOf((*GoogleDataplexDatascanDataQualitySpecRulesSqlAssertionOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "sqlStatement", GoGetter: "SqlStatement"},
+			_jsii_.MemberProperty{JsiiProperty: "sqlStatementInput", GoGetter: "SqlStatementInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesSqlAssertionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

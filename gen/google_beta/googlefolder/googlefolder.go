@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlefolder/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_folder google_folder}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_folder google_folder}.
 type GoogleFolder interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -421,7 +421,7 @@ func (j *jsiiProxy_GoogleFolder) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_folder google_folder} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_folder google_folder} Resource.
 func NewGoogleFolder(scope constructs.Construct, id *string, config *GoogleFolderConfig) GoogleFolder {
 	_init_.Initialize()
 
@@ -439,7 +439,7 @@ func NewGoogleFolder(scope constructs.Construct, id *string, config *GoogleFolde
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_folder google_folder} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_folder google_folder} Resource.
 func NewGoogleFolder_Override(g GoogleFolder, scope constructs.Construct, id *string, config *GoogleFolderConfig) {
 	_init_.Initialize()
 

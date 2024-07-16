@@ -80,6 +80,10 @@ func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleA) validatePutPreconfiguredWaf
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleA) validatePutRateLimitOptionsParameters(value *GoogleComputeSecurityPolicyRuleRateLimitOptionsA) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleA) validatePutTimeoutsParameters(value *GoogleComputeSecurityPolicyRuleTimeouts) error {
 	return nil
 }

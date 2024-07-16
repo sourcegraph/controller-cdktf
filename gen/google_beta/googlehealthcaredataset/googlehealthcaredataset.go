@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlehealthcaredataset/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_healthcare_dataset google_healthcare_dataset}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_healthcare_dataset google_healthcare_dataset}.
 type GoogleHealthcareDataset interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -28,6 +28,8 @@ type GoogleHealthcareDataset interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EncryptionSpec() GoogleHealthcareDatasetEncryptionSpecOutputReference
+	EncryptionSpecInput() *GoogleHealthcareDatasetEncryptionSpec
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -119,7 +121,9 @@ type GoogleHealthcareDataset interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutEncryptionSpec(value *GoogleHealthcareDatasetEncryptionSpec)
 	PutTimeouts(value *GoogleHealthcareDatasetTimeouts)
+	ResetEncryptionSpec()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -190,6 +194,26 @@ func (j *jsiiProxy_GoogleHealthcareDataset) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleHealthcareDataset) EncryptionSpec() GoogleHealthcareDatasetEncryptionSpecOutputReference {
+	var returns GoogleHealthcareDatasetEncryptionSpecOutputReference
+	_jsii_.Get(
+		j,
+		"encryptionSpec",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleHealthcareDataset) EncryptionSpecInput() *GoogleHealthcareDatasetEncryptionSpec {
+	var returns *GoogleHealthcareDatasetEncryptionSpec
+	_jsii_.Get(
+		j,
+		"encryptionSpecInput",
 		&returns,
 	)
 	return returns
@@ -436,7 +460,7 @@ func (j *jsiiProxy_GoogleHealthcareDataset) TimeZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_healthcare_dataset google_healthcare_dataset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_healthcare_dataset google_healthcare_dataset} Resource.
 func NewGoogleHealthcareDataset(scope constructs.Construct, id *string, config *GoogleHealthcareDatasetConfig) GoogleHealthcareDataset {
 	_init_.Initialize()
 
@@ -454,7 +478,7 @@ func NewGoogleHealthcareDataset(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_healthcare_dataset google_healthcare_dataset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_healthcare_dataset google_healthcare_dataset} Resource.
 func NewGoogleHealthcareDataset_Override(g GoogleHealthcareDataset, scope constructs.Construct, id *string, config *GoogleHealthcareDatasetConfig) {
 	_init_.Initialize()
 
@@ -941,6 +965,17 @@ func (g *jsiiProxy_GoogleHealthcareDataset) OverrideLogicalId(newLogicalId *stri
 	)
 }
 
+func (g *jsiiProxy_GoogleHealthcareDataset) PutEncryptionSpec(value *GoogleHealthcareDatasetEncryptionSpec) {
+	if err := g.validatePutEncryptionSpecParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putEncryptionSpec",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleHealthcareDataset) PutTimeouts(value *GoogleHealthcareDatasetTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -949,6 +984,14 @@ func (g *jsiiProxy_GoogleHealthcareDataset) PutTimeouts(value *GoogleHealthcareD
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleHealthcareDataset) ResetEncryptionSpec() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEncryptionSpec",
+		nil, // no parameters
 	)
 }
 

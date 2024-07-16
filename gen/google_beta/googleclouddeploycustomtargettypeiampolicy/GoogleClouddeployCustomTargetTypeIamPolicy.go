@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleclouddeploycustomtargettypeiampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_clouddeploy_custom_target_type_iam_policy google_clouddeploy_custom_target_type_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_clouddeploy_custom_target_type_iam_policy google_clouddeploy_custom_target_type_iam_policy}.
 type GoogleClouddeployCustomTargetTypeIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -412,7 +412,7 @@ func (j *jsiiProxy_GoogleClouddeployCustomTargetTypeIamPolicy) TerraformResource
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_clouddeploy_custom_target_type_iam_policy google_clouddeploy_custom_target_type_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_clouddeploy_custom_target_type_iam_policy google_clouddeploy_custom_target_type_iam_policy} Resource.
 func NewGoogleClouddeployCustomTargetTypeIamPolicy(scope constructs.Construct, id *string, config *GoogleClouddeployCustomTargetTypeIamPolicyConfig) GoogleClouddeployCustomTargetTypeIamPolicy {
 	_init_.Initialize()
 
@@ -430,7 +430,7 @@ func NewGoogleClouddeployCustomTargetTypeIamPolicy(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_clouddeploy_custom_target_type_iam_policy google_clouddeploy_custom_target_type_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_clouddeploy_custom_target_type_iam_policy google_clouddeploy_custom_target_type_iam_policy} Resource.
 func NewGoogleClouddeployCustomTargetTypeIamPolicy_Override(g GoogleClouddeployCustomTargetTypeIamPolicy, scope constructs.Construct, id *string, config *GoogleClouddeployCustomTargetTypeIamPolicyConfig) {
 	_init_.Initialize()
 

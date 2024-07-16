@@ -156,6 +156,10 @@ func (j *jsiiProxy_GoogleComputeTargetHttpsProxy) validateSetSslPolicyParameters
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeTargetHttpsProxy) validateSetTlsEarlyDataParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeTargetHttpsProxy) validateSetUrlMapParameters(val *string) error {
 	return nil
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputemachineimageiammember/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_machine_image_iam_member google_compute_machine_image_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_machine_image_iam_member google_compute_machine_image_iam_member}.
 type GoogleComputeMachineImageIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -435,7 +435,7 @@ func (j *jsiiProxy_GoogleComputeMachineImageIamMember) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_machine_image_iam_member google_compute_machine_image_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_machine_image_iam_member google_compute_machine_image_iam_member} Resource.
 func NewGoogleComputeMachineImageIamMember(scope constructs.Construct, id *string, config *GoogleComputeMachineImageIamMemberConfig) GoogleComputeMachineImageIamMember {
 	_init_.Initialize()
 
@@ -453,7 +453,7 @@ func NewGoogleComputeMachineImageIamMember(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_machine_image_iam_member google_compute_machine_image_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_machine_image_iam_member google_compute_machine_image_iam_member} Resource.
 func NewGoogleComputeMachineImageIamMember_Override(g GoogleComputeMachineImageIamMember, scope constructs.Construct, id *string, config *GoogleComputeMachineImageIamMemberConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/datastoreindex/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/datastore_index google_datastore_index}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/datastore_index google_datastore_index}.
 type DatastoreIndex interface {
 	cdktf.TerraformResource
 	Ancestor() *string
@@ -437,7 +437,7 @@ func (j *jsiiProxy_DatastoreIndex) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/datastore_index google_datastore_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/datastore_index google_datastore_index} Resource.
 func NewDatastoreIndex(scope constructs.Construct, id *string, config *DatastoreIndexConfig) DatastoreIndex {
 	_init_.Initialize()
 
@@ -455,7 +455,7 @@ func NewDatastoreIndex(scope constructs.Construct, id *string, config *Datastore
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/datastore_index google_datastore_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/datastore_index google_datastore_index} Resource.
 func NewDatastoreIndex_Override(d DatastoreIndex, scope constructs.Construct, id *string, config *DatastoreIndexConfig) {
 	_init_.Initialize()
 

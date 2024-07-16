@@ -60,6 +60,10 @@ func (j *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference) validateSetEnableProjectLevelRecipientsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference) validateSetInternalValueParameters(val *GoogleBillingBudgetAllUpdatesRule) error {
 	return nil
 }

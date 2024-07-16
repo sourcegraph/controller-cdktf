@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglegkehubscopeiampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/data-sources/google_gke_hub_scope_iam_policy google_gke_hub_scope_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_gke_hub_scope_iam_policy google_gke_hub_scope_iam_policy}.
 type DataGoogleGkeHubScopeIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -331,7 +331,7 @@ func (j *jsiiProxy_DataGoogleGkeHubScopeIamPolicy) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/data-sources/google_gke_hub_scope_iam_policy google_gke_hub_scope_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_gke_hub_scope_iam_policy google_gke_hub_scope_iam_policy} Data Source.
 func NewDataGoogleGkeHubScopeIamPolicy(scope constructs.Construct, id *string, config *DataGoogleGkeHubScopeIamPolicyConfig) DataGoogleGkeHubScopeIamPolicy {
 	_init_.Initialize()
 
@@ -349,7 +349,7 @@ func NewDataGoogleGkeHubScopeIamPolicy(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/data-sources/google_gke_hub_scope_iam_policy google_gke_hub_scope_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_gke_hub_scope_iam_policy google_gke_hub_scope_iam_policy} Data Source.
 func NewDataGoogleGkeHubScopeIamPolicy_Override(d DataGoogleGkeHubScopeIamPolicy, scope constructs.Construct, id *string, config *DataGoogleGkeHubScopeIamPolicyConfig) {
 	_init_.Initialize()
 

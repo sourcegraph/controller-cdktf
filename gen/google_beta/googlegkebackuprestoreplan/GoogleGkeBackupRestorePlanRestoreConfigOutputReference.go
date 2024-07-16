@@ -45,6 +45,8 @@ type GoogleGkeBackupRestorePlanRestoreConfigOutputReference interface {
 	NoNamespaces() interface{}
 	SetNoNamespaces(val interface{})
 	NoNamespacesInput() interface{}
+	RestoreOrder() GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderOutputReference
+	RestoreOrderInput() *GoogleGkeBackupRestorePlanRestoreConfigRestoreOrder
 	SelectedApplications() GoogleGkeBackupRestorePlanRestoreConfigSelectedApplicationsOutputReference
 	SelectedApplicationsInput() *GoogleGkeBackupRestorePlanRestoreConfigSelectedApplications
 	SelectedNamespaces() GoogleGkeBackupRestorePlanRestoreConfigSelectedNamespacesOutputReference
@@ -61,6 +63,8 @@ type GoogleGkeBackupRestorePlanRestoreConfigOutputReference interface {
 	TransformationRulesInput() interface{}
 	VolumeDataRestorePolicy() *string
 	SetVolumeDataRestorePolicy(val *string)
+	VolumeDataRestorePolicyBindings() GoogleGkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindingsList
+	VolumeDataRestorePolicyBindingsInput() interface{}
 	VolumeDataRestorePolicyInput() *string
 	// Experimental.
 	ComputeFqn() *string
@@ -88,19 +92,23 @@ type GoogleGkeBackupRestorePlanRestoreConfigOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutClusterResourceRestoreScope(value *GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScope)
 	PutExcludedNamespaces(value *GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespaces)
+	PutRestoreOrder(value *GoogleGkeBackupRestorePlanRestoreConfigRestoreOrder)
 	PutSelectedApplications(value *GoogleGkeBackupRestorePlanRestoreConfigSelectedApplications)
 	PutSelectedNamespaces(value *GoogleGkeBackupRestorePlanRestoreConfigSelectedNamespaces)
 	PutTransformationRules(value interface{})
+	PutVolumeDataRestorePolicyBindings(value interface{})
 	ResetAllNamespaces()
 	ResetClusterResourceConflictPolicy()
 	ResetClusterResourceRestoreScope()
 	ResetExcludedNamespaces()
 	ResetNamespacedResourceRestoreMode()
 	ResetNoNamespaces()
+	ResetRestoreOrder()
 	ResetSelectedApplications()
 	ResetSelectedNamespaces()
 	ResetTransformationRules()
 	ResetVolumeDataRestorePolicy()
+	ResetVolumeDataRestorePolicyBindings()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -286,6 +294,26 @@ func (j *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigOutputReference) NoNam
 	return returns
 }
 
+func (j *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigOutputReference) RestoreOrder() GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderOutputReference {
+	var returns GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderOutputReference
+	_jsii_.Get(
+		j,
+		"restoreOrder",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigOutputReference) RestoreOrderInput() *GoogleGkeBackupRestorePlanRestoreConfigRestoreOrder {
+	var returns *GoogleGkeBackupRestorePlanRestoreConfigRestoreOrder
+	_jsii_.Get(
+		j,
+		"restoreOrderInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigOutputReference) SelectedApplications() GoogleGkeBackupRestorePlanRestoreConfigSelectedApplicationsOutputReference {
 	var returns GoogleGkeBackupRestorePlanRestoreConfigSelectedApplicationsOutputReference
 	_jsii_.Get(
@@ -371,6 +399,26 @@ func (j *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigOutputReference) Volum
 	_jsii_.Get(
 		j,
 		"volumeDataRestorePolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigOutputReference) VolumeDataRestorePolicyBindings() GoogleGkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindingsList {
+	var returns GoogleGkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindingsList
+	_jsii_.Get(
+		j,
+		"volumeDataRestorePolicyBindings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigOutputReference) VolumeDataRestorePolicyBindingsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"volumeDataRestorePolicyBindingsInput",
 		&returns,
 	)
 	return returns
@@ -732,6 +780,17 @@ func (g *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigOutputReference) PutEx
 	)
 }
 
+func (g *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigOutputReference) PutRestoreOrder(value *GoogleGkeBackupRestorePlanRestoreConfigRestoreOrder) {
+	if err := g.validatePutRestoreOrderParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putRestoreOrder",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigOutputReference) PutSelectedApplications(value *GoogleGkeBackupRestorePlanRestoreConfigSelectedApplications) {
 	if err := g.validatePutSelectedApplicationsParameters(value); err != nil {
 		panic(err)
@@ -761,6 +820,17 @@ func (g *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigOutputReference) PutTr
 	_jsii_.InvokeVoid(
 		g,
 		"putTransformationRules",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigOutputReference) PutVolumeDataRestorePolicyBindings(value interface{}) {
+	if err := g.validatePutVolumeDataRestorePolicyBindingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putVolumeDataRestorePolicyBindings",
 		[]interface{}{value},
 	)
 }
@@ -813,6 +883,14 @@ func (g *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigOutputReference) Reset
 	)
 }
 
+func (g *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigOutputReference) ResetRestoreOrder() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRestoreOrder",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigOutputReference) ResetSelectedApplications() {
 	_jsii_.InvokeVoid(
 		g,
@@ -841,6 +919,14 @@ func (g *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigOutputReference) Reset
 	_jsii_.InvokeVoid(
 		g,
 		"resetVolumeDataRestorePolicy",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigOutputReference) ResetVolumeDataRestorePolicyBindings() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetVolumeDataRestorePolicyBindings",
 		nil, // no parameters
 	)
 }

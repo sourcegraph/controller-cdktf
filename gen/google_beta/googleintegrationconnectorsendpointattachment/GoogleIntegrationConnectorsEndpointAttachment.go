@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleintegrationconnectorsendpointattachment/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_integration_connectors_endpoint_attachment google_integration_connectors_endpoint_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_integration_connectors_endpoint_attachment google_integration_connectors_endpoint_attachment}.
 type GoogleIntegrationConnectorsEndpointAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -33,6 +33,9 @@ type GoogleIntegrationConnectorsEndpointAttachment interface {
 	SetDescription(val *string)
 	DescriptionInput() *string
 	EffectiveLabels() cdktf.StringMap
+	EndpointGlobalAccess() interface{}
+	SetEndpointGlobalAccess(val interface{})
+	EndpointGlobalAccessInput() interface{}
 	EndpointIp() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -131,6 +134,7 @@ type GoogleIntegrationConnectorsEndpointAttachment interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *GoogleIntegrationConnectorsEndpointAttachmentTimeouts)
 	ResetDescription()
+	ResetEndpointGlobalAccess()
 	ResetId()
 	ResetLabels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -241,6 +245,26 @@ func (j *jsiiProxy_GoogleIntegrationConnectorsEndpointAttachment) EffectiveLabel
 	_jsii_.Get(
 		j,
 		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleIntegrationConnectorsEndpointAttachment) EndpointGlobalAccess() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"endpointGlobalAccess",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleIntegrationConnectorsEndpointAttachment) EndpointGlobalAccessInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"endpointGlobalAccessInput",
 		&returns,
 	)
 	return returns
@@ -527,7 +551,7 @@ func (j *jsiiProxy_GoogleIntegrationConnectorsEndpointAttachment) UpdateTime() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_integration_connectors_endpoint_attachment google_integration_connectors_endpoint_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_integration_connectors_endpoint_attachment google_integration_connectors_endpoint_attachment} Resource.
 func NewGoogleIntegrationConnectorsEndpointAttachment(scope constructs.Construct, id *string, config *GoogleIntegrationConnectorsEndpointAttachmentConfig) GoogleIntegrationConnectorsEndpointAttachment {
 	_init_.Initialize()
 
@@ -545,7 +569,7 @@ func NewGoogleIntegrationConnectorsEndpointAttachment(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_integration_connectors_endpoint_attachment google_integration_connectors_endpoint_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_integration_connectors_endpoint_attachment google_integration_connectors_endpoint_attachment} Resource.
 func NewGoogleIntegrationConnectorsEndpointAttachment_Override(g GoogleIntegrationConnectorsEndpointAttachment, scope constructs.Construct, id *string, config *GoogleIntegrationConnectorsEndpointAttachmentConfig) {
 	_init_.Initialize()
 
@@ -593,6 +617,17 @@ func (j *jsiiProxy_GoogleIntegrationConnectorsEndpointAttachment)SetDescription(
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleIntegrationConnectorsEndpointAttachment)SetEndpointGlobalAccess(val interface{}) {
+	if err := j.validateSetEndpointGlobalAccessParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"endpointGlobalAccess",
 		val,
 	)
 }
@@ -1069,6 +1104,14 @@ func (g *jsiiProxy_GoogleIntegrationConnectorsEndpointAttachment) ResetDescripti
 	_jsii_.InvokeVoid(
 		g,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleIntegrationConnectorsEndpointAttachment) ResetEndpointGlobalAccess() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEndpointGlobalAccess",
 		nil, // no parameters
 	)
 }

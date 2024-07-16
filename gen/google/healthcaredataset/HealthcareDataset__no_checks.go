@@ -72,6 +72,10 @@ func (h *jsiiProxy_HealthcareDataset) validateOverrideLogicalIdParameters(newLog
 	return nil
 }
 
+func (h *jsiiProxy_HealthcareDataset) validatePutEncryptionSpecParameters(value *HealthcareDatasetEncryptionSpec) error {
+	return nil
+}
+
 func (h *jsiiProxy_HealthcareDataset) validatePutTimeoutsParameters(value *HealthcareDatasetTimeouts) error {
 	return nil
 }

@@ -20,6 +20,8 @@ type GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference int
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ContainerdConfig() GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigOutputReference
+	ContainerdConfigInput() *GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfig
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -66,7 +68,9 @@ type GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference int
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutContainerdConfig(value *GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfig)
 	PutGcfsConfig(value *GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfig)
+	ResetContainerdConfig()
 	ResetGcfsConfig()
 	ResetLoggingVariant()
 	// Produce the Token's value at resolution time.
@@ -99,6 +103,26 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutpu
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) ContainerdConfig() GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigOutputReference {
+	var returns GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigOutputReference
+	_jsii_.Get(
+		j,
+		"containerdConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) ContainerdConfigInput() *GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfig {
+	var returns *GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfig
+	_jsii_.Get(
+		j,
+		"containerdConfigInput",
 		&returns,
 	)
 	return returns
@@ -474,6 +498,17 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutpu
 	return returns
 }
 
+func (g *jsiiProxy_GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) PutContainerdConfig(value *GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfig) {
+	if err := g.validatePutContainerdConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putContainerdConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) PutGcfsConfig(value *GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfig) {
 	if err := g.validatePutGcfsConfigParameters(value); err != nil {
 		panic(err)
@@ -482,6 +517,14 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutpu
 		g,
 		"putGcfsConfig",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) ResetContainerdConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetContainerdConfig",
+		nil, // no parameters
 	)
 }
 

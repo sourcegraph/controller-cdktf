@@ -27,6 +27,8 @@ type GoogleContainerClusterNodeConfigOutputReference interface {
 	SetComplexObjectIsFromSet(val *bool)
 	ConfidentialNodes() GoogleContainerClusterNodeConfigConfidentialNodesOutputReference
 	ConfidentialNodesInput() *GoogleContainerClusterNodeConfigConfidentialNodes
+	ContainerdConfig() GoogleContainerClusterNodeConfigContainerdConfigOutputReference
+	ContainerdConfigInput() *GoogleContainerClusterNodeConfigContainerdConfig
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -159,6 +161,7 @@ type GoogleContainerClusterNodeConfigOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAdvancedMachineFeatures(value *GoogleContainerClusterNodeConfigAdvancedMachineFeatures)
 	PutConfidentialNodes(value *GoogleContainerClusterNodeConfigConfidentialNodes)
+	PutContainerdConfig(value *GoogleContainerClusterNodeConfigContainerdConfig)
 	PutEphemeralStorageConfig(value *GoogleContainerClusterNodeConfigEphemeralStorageConfig)
 	PutEphemeralStorageLocalSsdConfig(value *GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfig)
 	PutFastSocket(value *GoogleContainerClusterNodeConfigFastSocket)
@@ -179,6 +182,7 @@ type GoogleContainerClusterNodeConfigOutputReference interface {
 	ResetAdvancedMachineFeatures()
 	ResetBootDiskKmsKey()
 	ResetConfidentialNodes()
+	ResetContainerdConfig()
 	ResetDiskSizeGb()
 	ResetDiskType()
 	ResetEnableConfidentialStorage()
@@ -304,6 +308,26 @@ func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) Confidential
 	_jsii_.Get(
 		j,
 		"confidentialNodesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) ContainerdConfig() GoogleContainerClusterNodeConfigContainerdConfigOutputReference {
+	var returns GoogleContainerClusterNodeConfigContainerdConfigOutputReference
+	_jsii_.Get(
+		j,
+		"containerdConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) ContainerdConfigInput() *GoogleContainerClusterNodeConfigContainerdConfig {
+	var returns *GoogleContainerClusterNodeConfigContainerdConfig
+	_jsii_.Get(
+		j,
+		"containerdConfigInput",
 		&returns,
 	)
 	return returns
@@ -1569,6 +1593,17 @@ func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) PutConfident
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) PutContainerdConfig(value *GoogleContainerClusterNodeConfigContainerdConfig) {
+	if err := g.validatePutContainerdConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putContainerdConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) PutEphemeralStorageConfig(value *GoogleContainerClusterNodeConfigEphemeralStorageConfig) {
 	if err := g.validatePutEphemeralStorageConfigParameters(value); err != nil {
 		panic(err)
@@ -1776,6 +1811,14 @@ func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) ResetConfide
 	_jsii_.InvokeVoid(
 		g,
 		"resetConfidentialNodes",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) ResetContainerdConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetContainerdConfig",
 		nil, // no parameters
 	)
 }

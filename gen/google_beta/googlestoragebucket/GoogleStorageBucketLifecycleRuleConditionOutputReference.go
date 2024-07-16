@@ -62,6 +62,15 @@ type GoogleStorageBucketLifecycleRuleConditionOutputReference interface {
 	NumNewerVersions() *float64
 	SetNumNewerVersions(val *float64)
 	NumNewerVersionsInput() *float64
+	SendDaysSinceCustomTimeIfZero() interface{}
+	SetSendDaysSinceCustomTimeIfZero(val interface{})
+	SendDaysSinceCustomTimeIfZeroInput() interface{}
+	SendDaysSinceNoncurrentTimeIfZero() interface{}
+	SetSendDaysSinceNoncurrentTimeIfZero(val interface{})
+	SendDaysSinceNoncurrentTimeIfZeroInput() interface{}
+	SendNumNewerVersionsIfZero() interface{}
+	SetSendNumNewerVersionsIfZero(val interface{})
+	SendNumNewerVersionsIfZeroInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -108,6 +117,9 @@ type GoogleStorageBucketLifecycleRuleConditionOutputReference interface {
 	ResetNoAge()
 	ResetNoncurrentTimeBefore()
 	ResetNumNewerVersions()
+	ResetSendDaysSinceCustomTimeIfZero()
+	ResetSendDaysSinceNoncurrentTimeIfZero()
+	ResetSendNumNewerVersionsIfZero()
 	ResetWithState()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -394,6 +406,66 @@ func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) Num
 	return returns
 }
 
+func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) SendDaysSinceCustomTimeIfZero() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sendDaysSinceCustomTimeIfZero",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) SendDaysSinceCustomTimeIfZeroInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sendDaysSinceCustomTimeIfZeroInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) SendDaysSinceNoncurrentTimeIfZero() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sendDaysSinceNoncurrentTimeIfZero",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) SendDaysSinceNoncurrentTimeIfZeroInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sendDaysSinceNoncurrentTimeIfZeroInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) SendNumNewerVersionsIfZero() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sendNumNewerVersionsIfZero",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) SendNumNewerVersionsIfZeroInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sendNumNewerVersionsIfZeroInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -612,6 +684,39 @@ func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference)SetN
 	_jsii_.Set(
 		j,
 		"numNewerVersions",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference)SetSendDaysSinceCustomTimeIfZero(val interface{}) {
+	if err := j.validateSetSendDaysSinceCustomTimeIfZeroParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sendDaysSinceCustomTimeIfZero",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference)SetSendDaysSinceNoncurrentTimeIfZero(val interface{}) {
+	if err := j.validateSetSendDaysSinceNoncurrentTimeIfZeroParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sendDaysSinceNoncurrentTimeIfZero",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference)SetSendNumNewerVersionsIfZero(val interface{}) {
+	if err := j.validateSetSendNumNewerVersionsIfZeroParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sendNumNewerVersionsIfZero",
 		val,
 	)
 }
@@ -919,6 +1024,30 @@ func (g *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) Res
 	_jsii_.InvokeVoid(
 		g,
 		"resetNumNewerVersions",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) ResetSendDaysSinceCustomTimeIfZero() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSendDaysSinceCustomTimeIfZero",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) ResetSendDaysSinceNoncurrentTimeIfZero() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSendDaysSinceNoncurrentTimeIfZero",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) ResetSendNumNewerVersionsIfZero() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSendNumNewerVersionsIfZero",
 		nil, // no parameters
 	)
 }

@@ -54,6 +54,8 @@ type DataplexDatascanDataQualitySpecRulesOutputReference interface {
 	RowConditionExpectationInput() *DataplexDatascanDataQualitySpecRulesRowConditionExpectation
 	SetExpectation() DataplexDatascanDataQualitySpecRulesSetExpectationOutputReference
 	SetExpectationInput() *DataplexDatascanDataQualitySpecRulesSetExpectation
+	SqlAssertion() DataplexDatascanDataQualitySpecRulesSqlAssertionOutputReference
+	SqlAssertionInput() *DataplexDatascanDataQualitySpecRulesSqlAssertion
 	StatisticRangeExpectation() DataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputReference
 	StatisticRangeExpectationInput() *DataplexDatascanDataQualitySpecRulesStatisticRangeExpectation
 	TableConditionExpectation() DataplexDatascanDataQualitySpecRulesTableConditionExpectationOutputReference
@@ -100,6 +102,7 @@ type DataplexDatascanDataQualitySpecRulesOutputReference interface {
 	PutRegexExpectation(value *DataplexDatascanDataQualitySpecRulesRegexExpectation)
 	PutRowConditionExpectation(value *DataplexDatascanDataQualitySpecRulesRowConditionExpectation)
 	PutSetExpectation(value *DataplexDatascanDataQualitySpecRulesSetExpectation)
+	PutSqlAssertion(value *DataplexDatascanDataQualitySpecRulesSqlAssertion)
 	PutStatisticRangeExpectation(value *DataplexDatascanDataQualitySpecRulesStatisticRangeExpectation)
 	PutTableConditionExpectation(value *DataplexDatascanDataQualitySpecRulesTableConditionExpectation)
 	PutUniquenessExpectation(value *DataplexDatascanDataQualitySpecRulesUniquenessExpectation)
@@ -112,6 +115,7 @@ type DataplexDatascanDataQualitySpecRulesOutputReference interface {
 	ResetRegexExpectation()
 	ResetRowConditionExpectation()
 	ResetSetExpectation()
+	ResetSqlAssertion()
 	ResetStatisticRangeExpectation()
 	ResetTableConditionExpectation()
 	ResetThreshold()
@@ -376,6 +380,26 @@ func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) SetExpec
 	_jsii_.Get(
 		j,
 		"setExpectationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) SqlAssertion() DataplexDatascanDataQualitySpecRulesSqlAssertionOutputReference {
+	var returns DataplexDatascanDataQualitySpecRulesSqlAssertionOutputReference
+	_jsii_.Get(
+		j,
+		"sqlAssertion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) SqlAssertionInput() *DataplexDatascanDataQualitySpecRulesSqlAssertion {
+	var returns *DataplexDatascanDataQualitySpecRulesSqlAssertion
+	_jsii_.Get(
+		j,
+		"sqlAssertionInput",
 		&returns,
 	)
 	return returns
@@ -871,6 +895,17 @@ func (d *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) PutSetEx
 	)
 }
 
+func (d *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) PutSqlAssertion(value *DataplexDatascanDataQualitySpecRulesSqlAssertion) {
+	if err := d.validatePutSqlAssertionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putSqlAssertion",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) PutStatisticRangeExpectation(value *DataplexDatascanDataQualitySpecRulesStatisticRangeExpectation) {
 	if err := d.validatePutStatisticRangeExpectationParameters(value); err != nil {
 		panic(err)
@@ -972,6 +1007,14 @@ func (d *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) ResetSet
 	_jsii_.InvokeVoid(
 		d,
 		"resetSetExpectation",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) ResetSqlAssertion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSqlAssertion",
 		nil, // no parameters
 	)
 }

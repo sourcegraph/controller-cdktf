@@ -80,6 +80,10 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleA) validatePutPreconfiguredWafConfig
 	return nil
 }
 
+func (c *jsiiProxy_ComputeSecurityPolicyRuleA) validatePutRateLimitOptionsParameters(value *ComputeSecurityPolicyRuleRateLimitOptionsA) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeSecurityPolicyRuleA) validatePutTimeoutsParameters(value *ComputeSecurityPolicyRuleTimeouts) error {
 	return nil
 }

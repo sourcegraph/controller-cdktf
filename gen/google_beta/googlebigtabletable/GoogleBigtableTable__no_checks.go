@@ -72,6 +72,10 @@ func (g *jsiiProxy_GoogleBigtableTable) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBigtableTable) validatePutAutomatedBackupPolicyParameters(value *GoogleBigtableTableAutomatedBackupPolicy) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigtableTable) validatePutColumnFamilyParameters(value interface{}) error {
 	return nil
 }

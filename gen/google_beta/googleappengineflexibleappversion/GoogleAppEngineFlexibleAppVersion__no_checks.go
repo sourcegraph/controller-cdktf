@@ -92,6 +92,10 @@ func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) validatePutEntrypointParam
 	return nil
 }
 
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) validatePutFlexibleRuntimeSettingsParameters(value *GoogleAppEngineFlexibleAppVersionFlexibleRuntimeSettings) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) validatePutHandlersParameters(value interface{}) error {
 	return nil
 }

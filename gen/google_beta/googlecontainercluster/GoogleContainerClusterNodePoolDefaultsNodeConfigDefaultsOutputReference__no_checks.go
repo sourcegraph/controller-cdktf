@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutpu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) validatePutContainerdConfigParameters(value *GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) validatePutGcfsConfigParameters(value *GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfig) error {
 	return nil
 }

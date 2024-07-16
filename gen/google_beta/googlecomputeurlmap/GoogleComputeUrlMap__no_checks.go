@@ -72,6 +72,10 @@ func (g *jsiiProxy_GoogleComputeUrlMap) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeUrlMap) validatePutDefaultCustomErrorResponsePolicyParameters(value *GoogleComputeUrlMapDefaultCustomErrorResponsePolicy) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeUrlMap) validatePutDefaultRouteActionParameters(value *GoogleComputeUrlMapDefaultRouteAction) error {
 	return nil
 }

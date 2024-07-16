@@ -32,6 +32,8 @@ type GoogleMonitoringAlertPolicyDocumentationOutputReference interface {
 	Fqn() *string
 	InternalValue() *GoogleMonitoringAlertPolicyDocumentation
 	SetInternalValue(val *GoogleMonitoringAlertPolicyDocumentation)
+	Links() GoogleMonitoringAlertPolicyDocumentationLinksList
+	LinksInput() interface{}
 	MimeType() *string
 	SetMimeType(val *string)
 	MimeTypeInput() *string
@@ -70,7 +72,9 @@ type GoogleMonitoringAlertPolicyDocumentationOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutLinks(value interface{})
 	ResetContent()
+	ResetLinks()
 	ResetMimeType()
 	ResetSubject()
 	// Produce the Token's value at resolution time.
@@ -153,6 +157,26 @@ func (j *jsiiProxy_GoogleMonitoringAlertPolicyDocumentationOutputReference) Inte
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicyDocumentationOutputReference) Links() GoogleMonitoringAlertPolicyDocumentationLinksList {
+	var returns GoogleMonitoringAlertPolicyDocumentationLinksList
+	_jsii_.Get(
+		j,
+		"links",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicyDocumentationOutputReference) LinksInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"linksInput",
 		&returns,
 	)
 	return returns
@@ -520,10 +544,29 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicyDocumentationOutputReference) Inte
 	return returns
 }
 
+func (g *jsiiProxy_GoogleMonitoringAlertPolicyDocumentationOutputReference) PutLinks(value interface{}) {
+	if err := g.validatePutLinksParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putLinks",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleMonitoringAlertPolicyDocumentationOutputReference) ResetContent() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetContent",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleMonitoringAlertPolicyDocumentationOutputReference) ResetLinks() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLinks",
 		nil, // no parameters
 	)
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/vertexaifeatureonlinestore/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/vertex_ai_feature_online_store google_vertex_ai_feature_online_store}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/vertex_ai_feature_online_store google_vertex_ai_feature_online_store}.
 type VertexAiFeatureOnlineStore interface {
 	cdktf.TerraformResource
 	Bigtable() VertexAiFeatureOnlineStoreBigtableOutputReference
@@ -27,6 +27,8 @@ type VertexAiFeatureOnlineStore interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreateTime() *string
+	DedicatedServingEndpoint() VertexAiFeatureOnlineStoreDedicatedServingEndpointOutputReference
+	DedicatedServingEndpointInput() *VertexAiFeatureOnlineStoreDedicatedServingEndpoint
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -59,6 +61,8 @@ type VertexAiFeatureOnlineStore interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Optimized() VertexAiFeatureOnlineStoreOptimizedOutputReference
+	OptimizedInput() *VertexAiFeatureOnlineStoreOptimized
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -130,11 +134,15 @@ type VertexAiFeatureOnlineStore interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutBigtable(value *VertexAiFeatureOnlineStoreBigtable)
+	PutDedicatedServingEndpoint(value *VertexAiFeatureOnlineStoreDedicatedServingEndpoint)
+	PutOptimized(value *VertexAiFeatureOnlineStoreOptimized)
 	PutTimeouts(value *VertexAiFeatureOnlineStoreTimeouts)
 	ResetBigtable()
+	ResetDedicatedServingEndpoint()
 	ResetForceDestroy()
 	ResetId()
 	ResetLabels()
+	ResetOptimized()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -224,6 +232,26 @@ func (j *jsiiProxy_VertexAiFeatureOnlineStore) CreateTime() *string {
 	_jsii_.Get(
 		j,
 		"createTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VertexAiFeatureOnlineStore) DedicatedServingEndpoint() VertexAiFeatureOnlineStoreDedicatedServingEndpointOutputReference {
+	var returns VertexAiFeatureOnlineStoreDedicatedServingEndpointOutputReference
+	_jsii_.Get(
+		j,
+		"dedicatedServingEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VertexAiFeatureOnlineStore) DedicatedServingEndpointInput() *VertexAiFeatureOnlineStoreDedicatedServingEndpoint {
+	var returns *VertexAiFeatureOnlineStoreDedicatedServingEndpoint
+	_jsii_.Get(
+		j,
+		"dedicatedServingEndpointInput",
 		&returns,
 	)
 	return returns
@@ -389,6 +417,26 @@ func (j *jsiiProxy_VertexAiFeatureOnlineStore) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_VertexAiFeatureOnlineStore) Optimized() VertexAiFeatureOnlineStoreOptimizedOutputReference {
+	var returns VertexAiFeatureOnlineStoreOptimizedOutputReference
+	_jsii_.Get(
+		j,
+		"optimized",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VertexAiFeatureOnlineStore) OptimizedInput() *VertexAiFeatureOnlineStoreOptimized {
+	var returns *VertexAiFeatureOnlineStoreOptimized
+	_jsii_.Get(
+		j,
+		"optimizedInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VertexAiFeatureOnlineStore) Project() *string {
 	var returns *string
 	_jsii_.Get(
@@ -540,7 +588,7 @@ func (j *jsiiProxy_VertexAiFeatureOnlineStore) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/vertex_ai_feature_online_store google_vertex_ai_feature_online_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/vertex_ai_feature_online_store google_vertex_ai_feature_online_store} Resource.
 func NewVertexAiFeatureOnlineStore(scope constructs.Construct, id *string, config *VertexAiFeatureOnlineStoreConfig) VertexAiFeatureOnlineStore {
 	_init_.Initialize()
 
@@ -558,7 +606,7 @@ func NewVertexAiFeatureOnlineStore(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/vertex_ai_feature_online_store google_vertex_ai_feature_online_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/vertex_ai_feature_online_store google_vertex_ai_feature_online_store} Resource.
 func NewVertexAiFeatureOnlineStore_Override(v VertexAiFeatureOnlineStore, scope constructs.Construct, id *string, config *VertexAiFeatureOnlineStoreConfig) {
 	_init_.Initialize()
 
@@ -1067,6 +1115,28 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStore) PutBigtable(value *VertexAiFeatur
 	)
 }
 
+func (v *jsiiProxy_VertexAiFeatureOnlineStore) PutDedicatedServingEndpoint(value *VertexAiFeatureOnlineStoreDedicatedServingEndpoint) {
+	if err := v.validatePutDedicatedServingEndpointParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"putDedicatedServingEndpoint",
+		[]interface{}{value},
+	)
+}
+
+func (v *jsiiProxy_VertexAiFeatureOnlineStore) PutOptimized(value *VertexAiFeatureOnlineStoreOptimized) {
+	if err := v.validatePutOptimizedParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"putOptimized",
+		[]interface{}{value},
+	)
+}
+
 func (v *jsiiProxy_VertexAiFeatureOnlineStore) PutTimeouts(value *VertexAiFeatureOnlineStoreTimeouts) {
 	if err := v.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1082,6 +1152,14 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStore) ResetBigtable() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetBigtable",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VertexAiFeatureOnlineStore) ResetDedicatedServingEndpoint() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetDedicatedServingEndpoint",
 		nil, // no parameters
 	)
 }
@@ -1106,6 +1184,14 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStore) ResetLabels() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetLabels",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VertexAiFeatureOnlineStore) ResetOptimized() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetOptimized",
 		nil, // no parameters
 	)
 }

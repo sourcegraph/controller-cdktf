@@ -72,6 +72,14 @@ func (g *jsiiProxy_GoogleCloudbuildv2Connection) validateOverrideLogicalIdParame
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCloudbuildv2Connection) validatePutBitbucketCloudConfigParameters(value *GoogleCloudbuildv2ConnectionBitbucketCloudConfig) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudbuildv2Connection) validatePutBitbucketDataCenterConfigParameters(value *GoogleCloudbuildv2ConnectionBitbucketDataCenterConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudbuildv2Connection) validatePutGithubConfigParameters(value *GoogleCloudbuildv2ConnectionGithubConfig) error {
 	return nil
 }

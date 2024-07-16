@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleartifactregistryrepositoryiambinding/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_artifact_registry_repository_iam_binding google_artifact_registry_repository_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_artifact_registry_repository_iam_binding google_artifact_registry_repository_iam_binding}.
 type GoogleArtifactRegistryRepositoryIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -459,7 +459,7 @@ func (j *jsiiProxy_GoogleArtifactRegistryRepositoryIamBinding) TerraformResource
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_artifact_registry_repository_iam_binding google_artifact_registry_repository_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_artifact_registry_repository_iam_binding google_artifact_registry_repository_iam_binding} Resource.
 func NewGoogleArtifactRegistryRepositoryIamBinding(scope constructs.Construct, id *string, config *GoogleArtifactRegistryRepositoryIamBindingConfig) GoogleArtifactRegistryRepositoryIamBinding {
 	_init_.Initialize()
 
@@ -477,7 +477,7 @@ func NewGoogleArtifactRegistryRepositoryIamBinding(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_artifact_registry_repository_iam_binding google_artifact_registry_repository_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_artifact_registry_repository_iam_binding google_artifact_registry_repository_iam_binding} Resource.
 func NewGoogleArtifactRegistryRepositoryIamBinding_Override(g GoogleArtifactRegistryRepositoryIamBinding, scope constructs.Construct, id *string, config *GoogleArtifactRegistryRepositoryIamBindingConfig) {
 	_init_.Initialize()
 

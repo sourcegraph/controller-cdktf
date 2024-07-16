@@ -14,6 +14,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "activeDirectory", GoGetter: "ActiveDirectory"},
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "backupConfig", GoGetter: "BackupConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "backupConfigInput", GoGetter: "BackupConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "capacityGib", GoGetter: "CapacityGib"},
 			_jsii_.MemberProperty{JsiiProperty: "capacityGibInput", GoGetter: "CapacityGibInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -73,11 +75,14 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberProperty{JsiiProperty: "psaRange", GoGetter: "PsaRange"},
+			_jsii_.MemberMethod{JsiiMethod: "putBackupConfig", GoMethod: "PutBackupConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putExportPolicy", GoMethod: "PutExportPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "putRestoreParameters", GoMethod: "PutRestoreParameters"},
 			_jsii_.MemberMethod{JsiiMethod: "putSnapshotPolicy", GoMethod: "PutSnapshotPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberProperty{JsiiProperty: "replicaZone", GoGetter: "ReplicaZone"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBackupConfig", GoMethod: "ResetBackupConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDeletionPolicy", GoMethod: "ResetDeletionPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExportPolicy", GoMethod: "ResetExportPolicy"},
@@ -128,10 +133,56 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "unixPermissions", GoGetter: "UnixPermissions"},
 			_jsii_.MemberProperty{JsiiProperty: "unixPermissionsInput", GoGetter: "UnixPermissionsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "usedGib", GoGetter: "UsedGib"},
+			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleNetappVolume{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google-beta.googleNetappVolume.GoogleNetappVolumeBackupConfig",
+		reflect.TypeOf((*GoogleNetappVolumeBackupConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google-beta.googleNetappVolume.GoogleNetappVolumeBackupConfigOutputReference",
+		reflect.TypeOf((*GoogleNetappVolumeBackupConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "backupPolicies", GoGetter: "BackupPolicies"},
+			_jsii_.MemberProperty{JsiiProperty: "backupPoliciesInput", GoGetter: "BackupPoliciesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "backupVault", GoGetter: "BackupVault"},
+			_jsii_.MemberProperty{JsiiProperty: "backupVaultInput", GoGetter: "BackupVaultInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBackupPolicies", GoMethod: "ResetBackupPolicies"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBackupVault", GoMethod: "ResetBackupVault"},
+			_jsii_.MemberMethod{JsiiMethod: "resetScheduledBackupEnabled", GoMethod: "ResetScheduledBackupEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "scheduledBackupEnabled", GoGetter: "ScheduledBackupEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "scheduledBackupEnabledInput", GoGetter: "ScheduledBackupEnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleNetappVolumeBackupConfigOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
 	)

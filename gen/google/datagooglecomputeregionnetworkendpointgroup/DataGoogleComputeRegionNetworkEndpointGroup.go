@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagooglecomputeregionnetworkendpointgroup/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/data-sources/compute_region_network_endpoint_group google_compute_region_network_endpoint_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/compute_region_network_endpoint_group google_compute_region_network_endpoint_group}.
 type DataGoogleComputeRegionNetworkEndpointGroup interface {
 	cdktf.TerraformDataSource
 	AppEngine() DataGoogleComputeRegionNetworkEndpointGroupAppEngineList
@@ -446,7 +446,7 @@ func (j *jsiiProxy_DataGoogleComputeRegionNetworkEndpointGroup) TerraformResourc
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/data-sources/compute_region_network_endpoint_group google_compute_region_network_endpoint_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/compute_region_network_endpoint_group google_compute_region_network_endpoint_group} Data Source.
 func NewDataGoogleComputeRegionNetworkEndpointGroup(scope constructs.Construct, id *string, config *DataGoogleComputeRegionNetworkEndpointGroupConfig) DataGoogleComputeRegionNetworkEndpointGroup {
 	_init_.Initialize()
 
@@ -464,7 +464,7 @@ func NewDataGoogleComputeRegionNetworkEndpointGroup(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/data-sources/compute_region_network_endpoint_group google_compute_region_network_endpoint_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/compute_region_network_endpoint_group google_compute_region_network_endpoint_group} Data Source.
 func NewDataGoogleComputeRegionNetworkEndpointGroup_Override(d DataGoogleComputeRegionNetworkEndpointGroup, scope constructs.Construct, id *string, config *DataGoogleComputeRegionNetworkEndpointGroupConfig) {
 	_init_.Initialize()
 
