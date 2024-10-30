@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/okta/groupmemberships/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/group_memberships okta_group_memberships}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_memberships okta_group_memberships}.
 type GroupMemberships interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -377,7 +377,7 @@ func (j *jsiiProxy_GroupMemberships) UsersInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/group_memberships okta_group_memberships} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_memberships okta_group_memberships} Resource.
 func NewGroupMemberships(scope constructs.Construct, id *string, config *GroupMembershipsConfig) GroupMemberships {
 	_init_.Initialize()
 
@@ -395,7 +395,7 @@ func NewGroupMemberships(scope constructs.Construct, id *string, config *GroupMe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/group_memberships okta_group_memberships} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_memberships okta_group_memberships} Resource.
 func NewGroupMemberships_Override(g GroupMemberships, scope constructs.Construct, id *string, config *GroupMembershipsConfig) {
 	_init_.Initialize()
 

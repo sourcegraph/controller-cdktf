@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/okta/authserver/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/auth_server okta_auth_server}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/auth_server okta_auth_server}.
 type AuthServer interface {
 	cdktf.TerraformResource
 	Audiences() *[]*string
@@ -493,7 +493,7 @@ func (j *jsiiProxy_AuthServer) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/auth_server okta_auth_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/auth_server okta_auth_server} Resource.
 func NewAuthServer(scope constructs.Construct, id *string, config *AuthServerConfig) AuthServer {
 	_init_.Initialize()
 
@@ -511,7 +511,7 @@ func NewAuthServer(scope constructs.Construct, id *string, config *AuthServerCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/auth_server okta_auth_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/auth_server okta_auth_server} Resource.
 func NewAuthServer_Override(a AuthServer, scope constructs.Construct, id *string, config *AuthServerConfig) {
 	_init_.Initialize()
 

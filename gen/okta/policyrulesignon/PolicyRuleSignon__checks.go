@@ -509,14 +509,6 @@ func (j *jsiiProxy_PolicyRuleSignon) validateSetNetworkIncludesParameters(val *[
 	return nil
 }
 
-func (j *jsiiProxy_PolicyRuleSignon) validateSetPolicyidParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_PolicyRuleSignon) validateSetPolicyIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -588,6 +580,14 @@ func (j *jsiiProxy_PolicyRuleSignon) validateSetProvisionersParameters(val *[]in
 }
 
 func (j *jsiiProxy_PolicyRuleSignon) validateSetRiscLevelParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_PolicyRuleSignon) validateSetRiskLevelParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

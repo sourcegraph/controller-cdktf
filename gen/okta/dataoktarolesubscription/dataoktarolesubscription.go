@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/okta/dataoktarolesubscription/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/data-sources/role_subscription okta_role_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/role_subscription okta_role_subscription}.
 type DataOktaRoleSubscription interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -319,7 +319,7 @@ func (j *jsiiProxy_DataOktaRoleSubscription) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/data-sources/role_subscription okta_role_subscription} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/role_subscription okta_role_subscription} Data Source.
 func NewDataOktaRoleSubscription(scope constructs.Construct, id *string, config *DataOktaRoleSubscriptionConfig) DataOktaRoleSubscription {
 	_init_.Initialize()
 
@@ -337,7 +337,7 @@ func NewDataOktaRoleSubscription(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/data-sources/role_subscription okta_role_subscription} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/role_subscription okta_role_subscription} Data Source.
 func NewDataOktaRoleSubscription_Override(d DataOktaRoleSubscription, scope constructs.Construct, id *string, config *DataOktaRoleSubscriptionConfig) {
 	_init_.Initialize()
 

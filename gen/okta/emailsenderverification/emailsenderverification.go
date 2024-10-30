@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/okta/emailsenderverification/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/email_sender_verification okta_email_sender_verification}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/email_sender_verification okta_email_sender_verification}.
 type EmailSenderVerification interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -330,7 +330,7 @@ func (j *jsiiProxy_EmailSenderVerification) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/email_sender_verification okta_email_sender_verification} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/email_sender_verification okta_email_sender_verification} Resource.
 func NewEmailSenderVerification(scope constructs.Construct, id *string, config *EmailSenderVerificationConfig) EmailSenderVerification {
 	_init_.Initialize()
 
@@ -348,7 +348,7 @@ func NewEmailSenderVerification(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/email_sender_verification okta_email_sender_verification} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/email_sender_verification okta_email_sender_verification} Resource.
 func NewEmailSenderVerification_Override(e EmailSenderVerification, scope constructs.Construct, id *string, config *EmailSenderVerificationConfig) {
 	_init_.Initialize()
 

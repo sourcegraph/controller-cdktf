@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/okta/policyrulesignon/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/policy_rule_signon okta_policy_rule_signon}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_rule_signon okta_policy_rule_signon}.
 type PolicyRuleSignon interface {
 	cdktf.TerraformResource
 	Access() *string
@@ -86,11 +86,8 @@ type PolicyRuleSignon interface {
 	NetworkIncludesInput() *[]*string
 	// The tree node.
 	Node() constructs.Node
-	Policyid() *string
-	SetPolicyid(val *string)
 	PolicyId() *string
 	SetPolicyId(val *string)
-	PolicyidInput() *string
 	PolicyIdInput() *string
 	PrimaryFactor() *string
 	SetPrimaryFactor(val *string)
@@ -111,6 +108,9 @@ type PolicyRuleSignon interface {
 	RiscLevel() *string
 	SetRiscLevel(val *string)
 	RiscLevelInput() *string
+	RiskLevel() *string
+	SetRiskLevel(val *string)
+	RiskLevelInput() *string
 	SessionIdle() *float64
 	SetSessionIdle(val *float64)
 	SessionIdleInput() *float64
@@ -193,11 +193,11 @@ type PolicyRuleSignon interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetPolicyid()
 	ResetPolicyId()
 	ResetPrimaryFactor()
 	ResetPriority()
 	ResetRiscLevel()
+	ResetRiskLevel()
 	ResetSessionIdle()
 	ResetSessionLifetime()
 	ResetSessionPersistent()
@@ -621,31 +621,11 @@ func (j *jsiiProxy_PolicyRuleSignon) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_PolicyRuleSignon) Policyid() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"policyid",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_PolicyRuleSignon) PolicyId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"policyId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_PolicyRuleSignon) PolicyidInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"policyidInput",
 		&returns,
 	)
 	return returns
@@ -746,6 +726,26 @@ func (j *jsiiProxy_PolicyRuleSignon) RiscLevelInput() *string {
 	_jsii_.Get(
 		j,
 		"riscLevelInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PolicyRuleSignon) RiskLevel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"riskLevel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PolicyRuleSignon) RiskLevelInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"riskLevelInput",
 		&returns,
 	)
 	return returns
@@ -882,7 +882,7 @@ func (j *jsiiProxy_PolicyRuleSignon) UsersExcludedInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/policy_rule_signon okta_policy_rule_signon} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_rule_signon okta_policy_rule_signon} Resource.
 func NewPolicyRuleSignon(scope constructs.Construct, id *string, config *PolicyRuleSignonConfig) PolicyRuleSignon {
 	_init_.Initialize()
 
@@ -900,7 +900,7 @@ func NewPolicyRuleSignon(scope constructs.Construct, id *string, config *PolicyR
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/policy_rule_signon okta_policy_rule_signon} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_rule_signon okta_policy_rule_signon} Resource.
 func NewPolicyRuleSignon_Override(p PolicyRuleSignon, scope constructs.Construct, id *string, config *PolicyRuleSignonConfig) {
 	_init_.Initialize()
 
@@ -1114,17 +1114,6 @@ func (j *jsiiProxy_PolicyRuleSignon)SetNetworkIncludes(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleSignon)SetPolicyid(val *string) {
-	if err := j.validateSetPolicyidParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"policyid",
-		val,
-	)
-}
-
 func (j *jsiiProxy_PolicyRuleSignon)SetPolicyId(val *string) {
 	if err := j.validateSetPolicyIdParameters(val); err != nil {
 		panic(err)
@@ -1184,6 +1173,17 @@ func (j *jsiiProxy_PolicyRuleSignon)SetRiscLevel(val *string) {
 	_jsii_.Set(
 		j,
 		"riscLevel",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PolicyRuleSignon)SetRiskLevel(val *string) {
+	if err := j.validateSetRiskLevelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"riskLevel",
 		val,
 	)
 }
@@ -1727,14 +1727,6 @@ func (p *jsiiProxy_PolicyRuleSignon) ResetOverrideLogicalId() {
 	)
 }
 
-func (p *jsiiProxy_PolicyRuleSignon) ResetPolicyid() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetPolicyid",
-		nil, // no parameters
-	)
-}
-
 func (p *jsiiProxy_PolicyRuleSignon) ResetPolicyId() {
 	_jsii_.InvokeVoid(
 		p,
@@ -1763,6 +1755,14 @@ func (p *jsiiProxy_PolicyRuleSignon) ResetRiscLevel() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetRiscLevel",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PolicyRuleSignon) ResetRiskLevel() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetRiskLevel",
 		nil, // no parameters
 	)
 }

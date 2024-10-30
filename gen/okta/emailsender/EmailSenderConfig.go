@@ -21,17 +21,17 @@ type EmailSenderConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Email address to send from.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/email_sender#from_address EmailSender#from_address}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/email_sender#from_address EmailSender#from_address}
 	FromAddress *string `field:"required" json:"fromAddress" yaml:"fromAddress"`
 	// Name of sender.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/email_sender#from_name EmailSender#from_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/email_sender#from_name EmailSender#from_name}
 	FromName *string `field:"required" json:"fromName" yaml:"fromName"`
 	// Mail domain to send from.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/email_sender#subdomain EmailSender#subdomain}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/email_sender#subdomain EmailSender#subdomain}
 	Subdomain *string `field:"required" json:"subdomain" yaml:"subdomain"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/email_sender#id EmailSender#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/email_sender#id EmailSender#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

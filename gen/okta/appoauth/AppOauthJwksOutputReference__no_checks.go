@@ -84,6 +84,14 @@ func (j *jsiiProxy_AppOauthJwksOutputReference) validateSetTerraformResourcePara
 	return nil
 }
 
+func (j *jsiiProxy_AppOauthJwksOutputReference) validateSetXParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AppOauthJwksOutputReference) validateSetYParameters(val *string) error {
+	return nil
+}
+
 func validateNewAppOauthJwksOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }

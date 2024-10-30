@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/okta/appgroupassignments/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_group_assignments okta_app_group_assignments}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_group_assignments okta_app_group_assignments}.
 type AppGroupAssignments interface {
 	cdktf.TerraformResource
 	AppId() *string
@@ -353,7 +353,7 @@ func (j *jsiiProxy_AppGroupAssignments) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_group_assignments okta_app_group_assignments} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_group_assignments okta_app_group_assignments} Resource.
 func NewAppGroupAssignments(scope constructs.Construct, id *string, config *AppGroupAssignmentsConfig) AppGroupAssignments {
 	_init_.Initialize()
 
@@ -371,7 +371,7 @@ func NewAppGroupAssignments(scope constructs.Construct, id *string, config *AppG
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_group_assignments okta_app_group_assignments} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_group_assignments okta_app_group_assignments} Resource.
 func NewAppGroupAssignments_Override(a AppGroupAssignments, scope constructs.Construct, id *string, config *AppGroupAssignmentsConfig) {
 	_init_.Initialize()
 

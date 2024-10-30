@@ -255,14 +255,6 @@ func validateUser_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_User) validateSetAdminRolesParameters(val *[]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_User) validateSetCityParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -385,6 +377,14 @@ func (j *jsiiProxy_User) validateSetCustomProfileAttributesParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_User) validateSetCustomProfileAttributesToIgnoreParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_User) validateSetDepartmentParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -446,14 +446,6 @@ func (j *jsiiProxy_User) validateSetExpirePasswordOnCreateParameters(val interfa
 }
 
 func (j *jsiiProxy_User) validateSetFirstNameParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_User) validateSetGroupMembershipsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

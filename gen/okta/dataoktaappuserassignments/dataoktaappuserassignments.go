@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/okta/dataoktaappuserassignments/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/data-sources/app_user_assignments okta_app_user_assignments}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/app_user_assignments okta_app_user_assignments}.
 type DataOktaAppUserAssignments interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -272,7 +272,7 @@ func (j *jsiiProxy_DataOktaAppUserAssignments) Users() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/data-sources/app_user_assignments okta_app_user_assignments} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/app_user_assignments okta_app_user_assignments} Data Source.
 func NewDataOktaAppUserAssignments(scope constructs.Construct, id *string, config *DataOktaAppUserAssignmentsConfig) DataOktaAppUserAssignments {
 	_init_.Initialize()
 
@@ -290,7 +290,7 @@ func NewDataOktaAppUserAssignments(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/data-sources/app_user_assignments okta_app_user_assignments} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/app_user_assignments okta_app_user_assignments} Data Source.
 func NewDataOktaAppUserAssignments_Override(d DataOktaAppUserAssignments, scope constructs.Construct, id *string, config *DataOktaAppUserAssignmentsConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/okta/policyprofileenrollment/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/policy_profile_enrollment okta_policy_profile_enrollment}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_profile_enrollment okta_policy_profile_enrollment}.
 type PolicyProfileEnrollment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -354,7 +354,7 @@ func (j *jsiiProxy_PolicyProfileEnrollment) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/policy_profile_enrollment okta_policy_profile_enrollment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_profile_enrollment okta_policy_profile_enrollment} Resource.
 func NewPolicyProfileEnrollment(scope constructs.Construct, id *string, config *PolicyProfileEnrollmentConfig) PolicyProfileEnrollment {
 	_init_.Initialize()
 
@@ -372,7 +372,7 @@ func NewPolicyProfileEnrollment(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/policy_profile_enrollment okta_policy_profile_enrollment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_profile_enrollment okta_policy_profile_enrollment} Resource.
 func NewPolicyProfileEnrollment_Override(p PolicyProfileEnrollment, scope constructs.Construct, id *string, config *PolicyProfileEnrollmentConfig) {
 	_init_.Initialize()
 

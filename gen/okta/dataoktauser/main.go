@@ -76,6 +76,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetSkipGroups", GoMethod: "ResetSkipGroups"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSkipRoles", GoMethod: "ResetSkipRoles"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUserId", GoMethod: "ResetUserId"},
+			_jsii_.MemberProperty{JsiiProperty: "roles", GoGetter: "Roles"},
 			_jsii_.MemberProperty{JsiiProperty: "search", GoGetter: "Search"},
 			_jsii_.MemberProperty{JsiiProperty: "searchInput", GoGetter: "SearchInput"},
 			_jsii_.MemberProperty{JsiiProperty: "secondEmail", GoGetter: "SecondEmail"},

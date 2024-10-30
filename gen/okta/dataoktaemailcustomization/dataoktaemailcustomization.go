@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/okta/dataoktaemailcustomization/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/data-sources/email_customization okta_email_customization}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/email_customization okta_email_customization}.
 type DataOktaEmailCustomization interface {
 	cdktf.TerraformDataSource
 	Body() *string
@@ -373,7 +373,7 @@ func (j *jsiiProxy_DataOktaEmailCustomization) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/data-sources/email_customization okta_email_customization} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/email_customization okta_email_customization} Data Source.
 func NewDataOktaEmailCustomization(scope constructs.Construct, id *string, config *DataOktaEmailCustomizationConfig) DataOktaEmailCustomization {
 	_init_.Initialize()
 
@@ -391,7 +391,7 @@ func NewDataOktaEmailCustomization(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/data-sources/email_customization okta_email_customization} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/email_customization okta_email_customization} Data Source.
 func NewDataOktaEmailCustomization_Override(d DataOktaEmailCustomization, scope constructs.Construct, id *string, config *DataOktaEmailCustomizationConfig) {
 	_init_.Initialize()
 

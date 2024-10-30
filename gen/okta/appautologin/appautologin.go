@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/okta/appautologin/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_auto_login okta_app_auto_login}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_auto_login okta_app_auto_login}.
 type AppAutoLogin interface {
 	cdktf.TerraformResource
 	AccessibilityErrorRedirectUrl() *string
@@ -63,9 +63,6 @@ type AppAutoLogin interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	Groups() *[]*string
-	SetGroups(val *[]*string)
-	GroupsInput() *[]*string
 	HideIos() interface{}
 	SetHideIos(val interface{})
 	HideIosInput() interface{}
@@ -118,12 +115,6 @@ type AppAutoLogin interface {
 	SignOnUrl() *string
 	SetSignOnUrl(val *string)
 	SignOnUrlInput() *string
-	SkipGroups() interface{}
-	SetSkipGroups(val interface{})
-	SkipGroupsInput() interface{}
-	SkipUsers() interface{}
-	SetSkipUsers(val interface{})
-	SkipUsersInput() interface{}
 	Status() *string
 	SetStatus(val *string)
 	StatusInput() *string
@@ -147,8 +138,6 @@ type AppAutoLogin interface {
 	UserNameTemplateType() *string
 	SetUserNameTemplateType(val *string)
 	UserNameTemplateTypeInput() *string
-	Users() AppAutoLoginUsersList
-	UsersInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -193,7 +182,6 @@ type AppAutoLogin interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *AppAutoLoginTimeouts)
-	PutUsers(value interface{})
 	ResetAccessibilityErrorRedirectUrl()
 	ResetAccessibilityLoginRedirectUrl()
 	ResetAccessibilitySelfService()
@@ -203,7 +191,6 @@ type AppAutoLogin interface {
 	ResetAutoSubmitToolbar()
 	ResetCredentialsScheme()
 	ResetEnduserNote()
-	ResetGroups()
 	ResetHideIos()
 	ResetHideWeb()
 	ResetId()
@@ -217,15 +204,12 @@ type AppAutoLogin interface {
 	ResetSharedUsername()
 	ResetSignOnRedirectUrl()
 	ResetSignOnUrl()
-	ResetSkipGroups()
-	ResetSkipUsers()
 	ResetStatus()
 	ResetTimeouts()
 	ResetUserNameTemplate()
 	ResetUserNameTemplatePushStatus()
 	ResetUserNameTemplateSuffix()
 	ResetUserNameTemplateType()
-	ResetUsers()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -499,26 +483,6 @@ func (j *jsiiProxy_AppAutoLogin) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AppAutoLogin) Groups() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"groups",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AppAutoLogin) GroupsInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"groupsInput",
 		&returns,
 	)
 	return returns
@@ -824,46 +788,6 @@ func (j *jsiiProxy_AppAutoLogin) SignOnUrlInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AppAutoLogin) SkipGroups() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"skipGroups",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AppAutoLogin) SkipGroupsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"skipGroupsInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AppAutoLogin) SkipUsers() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"skipUsers",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AppAutoLogin) SkipUsersInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"skipUsersInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_AppAutoLogin) Status() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1014,28 +938,8 @@ func (j *jsiiProxy_AppAutoLogin) UserNameTemplateTypeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AppAutoLogin) Users() AppAutoLoginUsersList {
-	var returns AppAutoLoginUsersList
-	_jsii_.Get(
-		j,
-		"users",
-		&returns,
-	)
-	return returns
-}
 
-func (j *jsiiProxy_AppAutoLogin) UsersInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"usersInput",
-		&returns,
-	)
-	return returns
-}
-
-
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_auto_login okta_app_auto_login} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_auto_login okta_app_auto_login} Resource.
 func NewAppAutoLogin(scope constructs.Construct, id *string, config *AppAutoLoginConfig) AppAutoLogin {
 	_init_.Initialize()
 
@@ -1053,7 +957,7 @@ func NewAppAutoLogin(scope constructs.Construct, id *string, config *AppAutoLogi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_auto_login okta_app_auto_login} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_auto_login okta_app_auto_login} Resource.
 func NewAppAutoLogin_Override(a AppAutoLogin, scope constructs.Construct, id *string, config *AppAutoLoginConfig) {
 	_init_.Initialize()
 
@@ -1197,17 +1101,6 @@ func (j *jsiiProxy_AppAutoLogin)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AppAutoLogin)SetGroups(val *[]*string) {
-	if err := j.validateSetGroupsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"groups",
 		val,
 	)
 }
@@ -1359,28 +1252,6 @@ func (j *jsiiProxy_AppAutoLogin)SetSignOnUrl(val *string) {
 	_jsii_.Set(
 		j,
 		"signOnUrl",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AppAutoLogin)SetSkipGroups(val interface{}) {
-	if err := j.validateSetSkipGroupsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"skipGroups",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AppAutoLogin)SetSkipUsers(val interface{}) {
-	if err := j.validateSetSkipUsersParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"skipUsers",
 		val,
 	)
 }
@@ -1804,17 +1675,6 @@ func (a *jsiiProxy_AppAutoLogin) PutTimeouts(value *AppAutoLoginTimeouts) {
 	)
 }
 
-func (a *jsiiProxy_AppAutoLogin) PutUsers(value interface{}) {
-	if err := a.validatePutUsersParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		a,
-		"putUsers",
-		[]interface{}{value},
-	)
-}
-
 func (a *jsiiProxy_AppAutoLogin) ResetAccessibilityErrorRedirectUrl() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1883,14 +1743,6 @@ func (a *jsiiProxy_AppAutoLogin) ResetEnduserNote() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetEnduserNote",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AppAutoLogin) ResetGroups() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetGroups",
 		nil, // no parameters
 	)
 }
@@ -1983,22 +1835,6 @@ func (a *jsiiProxy_AppAutoLogin) ResetSignOnUrl() {
 	)
 }
 
-func (a *jsiiProxy_AppAutoLogin) ResetSkipGroups() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetSkipGroups",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AppAutoLogin) ResetSkipUsers() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetSkipUsers",
-		nil, // no parameters
-	)
-}
-
 func (a *jsiiProxy_AppAutoLogin) ResetStatus() {
 	_jsii_.InvokeVoid(
 		a,
@@ -2043,14 +1879,6 @@ func (a *jsiiProxy_AppAutoLogin) ResetUserNameTemplateType() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetUserNameTemplateType",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AppAutoLogin) ResetUsers() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetUsers",
 		nil, // no parameters
 	)
 }

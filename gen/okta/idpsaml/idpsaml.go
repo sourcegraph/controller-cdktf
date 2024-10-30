@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/okta/idpsaml/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/idp_saml okta_idp_saml}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/idp_saml okta_idp_saml}.
 type IdpSaml interface {
 	cdktf.TerraformResource
 	AccountLinkAction() *string
@@ -19,8 +19,6 @@ type IdpSaml interface {
 	SetAccountLinkGroupInclude(val *[]*string)
 	AccountLinkGroupIncludeInput() *[]*string
 	AcsBinding() *string
-	SetAcsBinding(val *string)
-	AcsBindingInput() *string
 	AcsType() *string
 	SetAcsType(val *string)
 	AcsTypeInput() *string
@@ -202,7 +200,6 @@ type IdpSaml interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetAccountLinkAction()
 	ResetAccountLinkGroupInclude()
-	ResetAcsBinding()
 	ResetAcsType()
 	ResetDeprovisionedAction()
 	ResetGroupsAction()
@@ -294,16 +291,6 @@ func (j *jsiiProxy_IdpSaml) AcsBinding() *string {
 	_jsii_.Get(
 		j,
 		"acsBinding",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_IdpSaml) AcsBindingInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"acsBindingInput",
 		&returns,
 	)
 	return returns
@@ -1080,7 +1067,7 @@ func (j *jsiiProxy_IdpSaml) UserTypeId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/idp_saml okta_idp_saml} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/idp_saml okta_idp_saml} Resource.
 func NewIdpSaml(scope constructs.Construct, id *string, config *IdpSamlConfig) IdpSaml {
 	_init_.Initialize()
 
@@ -1098,7 +1085,7 @@ func NewIdpSaml(scope constructs.Construct, id *string, config *IdpSamlConfig) I
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/idp_saml okta_idp_saml} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/idp_saml okta_idp_saml} Resource.
 func NewIdpSaml_Override(i IdpSaml, scope constructs.Construct, id *string, config *IdpSamlConfig) {
 	_init_.Initialize()
 
@@ -1127,17 +1114,6 @@ func (j *jsiiProxy_IdpSaml)SetAccountLinkGroupInclude(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"accountLinkGroupInclude",
-		val,
-	)
-}
-
-func (j *jsiiProxy_IdpSaml)SetAcsBinding(val *string) {
-	if err := j.validateSetAcsBindingParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"acsBinding",
 		val,
 	)
 }
@@ -1894,14 +1870,6 @@ func (i *jsiiProxy_IdpSaml) ResetAccountLinkGroupInclude() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetAccountLinkGroupInclude",
-		nil, // no parameters
-	)
-}
-
-func (i *jsiiProxy_IdpSaml) ResetAcsBinding() {
-	_jsii_.InvokeVoid(
-		i,
-		"resetAcsBinding",
 		nil, // no parameters
 	)
 }

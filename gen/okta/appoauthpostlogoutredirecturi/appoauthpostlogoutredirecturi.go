@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/okta/appoauthpostlogoutredirecturi/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_oauth_post_logout_redirect_uri okta_app_oauth_post_logout_redirect_uri}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_oauth_post_logout_redirect_uri okta_app_oauth_post_logout_redirect_uri}.
 type AppOauthPostLogoutRedirectUri interface {
 	cdktf.TerraformResource
 	AppId() *string
@@ -353,7 +353,7 @@ func (j *jsiiProxy_AppOauthPostLogoutRedirectUri) UriInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_oauth_post_logout_redirect_uri okta_app_oauth_post_logout_redirect_uri} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_oauth_post_logout_redirect_uri okta_app_oauth_post_logout_redirect_uri} Resource.
 func NewAppOauthPostLogoutRedirectUri(scope constructs.Construct, id *string, config *AppOauthPostLogoutRedirectUriConfig) AppOauthPostLogoutRedirectUri {
 	_init_.Initialize()
 
@@ -371,7 +371,7 @@ func NewAppOauthPostLogoutRedirectUri(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_oauth_post_logout_redirect_uri okta_app_oauth_post_logout_redirect_uri} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_oauth_post_logout_redirect_uri okta_app_oauth_post_logout_redirect_uri} Resource.
 func NewAppOauthPostLogoutRedirectUri_Override(a AppOauthPostLogoutRedirectUri, scope constructs.Construct, id *string, config *AppOauthPostLogoutRedirectUriConfig) {
 	_init_.Initialize()
 

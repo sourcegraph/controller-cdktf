@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/okta/inlinehook/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/inline_hook okta_inline_hook}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/inline_hook okta_inline_hook}.
 type InlineHook interface {
 	cdktf.TerraformResource
 	Auth() *map[string]*string
@@ -471,7 +471,7 @@ func (j *jsiiProxy_InlineHook) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/inline_hook okta_inline_hook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/inline_hook okta_inline_hook} Resource.
 func NewInlineHook(scope constructs.Construct, id *string, config *InlineHookConfig) InlineHook {
 	_init_.Initialize()
 
@@ -489,7 +489,7 @@ func NewInlineHook(scope constructs.Construct, id *string, config *InlineHookCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/inline_hook okta_inline_hook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/inline_hook okta_inline_hook} Resource.
 func NewInlineHook_Override(i InlineHook, scope constructs.Construct, id *string, config *InlineHookConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/okta/ratelimiting/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/rate_limiting okta_rate_limiting}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/rate_limiting okta_rate_limiting}.
 type RateLimiting interface {
 	cdktf.TerraformResource
 	Authorize() *string
@@ -377,7 +377,7 @@ func (j *jsiiProxy_RateLimiting) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/rate_limiting okta_rate_limiting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/rate_limiting okta_rate_limiting} Resource.
 func NewRateLimiting(scope constructs.Construct, id *string, config *RateLimitingConfig) RateLimiting {
 	_init_.Initialize()
 
@@ -395,7 +395,7 @@ func NewRateLimiting(scope constructs.Construct, id *string, config *RateLimitin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/rate_limiting okta_rate_limiting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/rate_limiting okta_rate_limiting} Resource.
 func NewRateLimiting_Override(r RateLimiting, scope constructs.Construct, id *string, config *RateLimitingConfig) {
 	_init_.Initialize()
 

@@ -92,10 +92,6 @@ func validateUser_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_User) validateSetAdminRolesParameters(val *[]*string) error {
-	return nil
-}
-
 func (j *jsiiProxy_User) validateSetCityParameters(val *string) error {
 	return nil
 }
@@ -117,6 +113,10 @@ func (j *jsiiProxy_User) validateSetCountryCodeParameters(val *string) error {
 }
 
 func (j *jsiiProxy_User) validateSetCustomProfileAttributesParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_User) validateSetCustomProfileAttributesToIgnoreParameters(val *[]*string) error {
 	return nil
 }
 
@@ -145,10 +145,6 @@ func (j *jsiiProxy_User) validateSetExpirePasswordOnCreateParameters(val interfa
 }
 
 func (j *jsiiProxy_User) validateSetFirstNameParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_User) validateSetGroupMembershipsParameters(val *[]*string) error {
 	return nil
 }
 

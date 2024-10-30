@@ -21,17 +21,21 @@ type RateLimitingConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Called during authentication.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/rate_limiting#authorize RateLimiting#authorize}
+	// Valid values: `ENFORCE` _(Enforce limit and log per client (recommended))_, `DISABLE` _(Do nothing (not recommended))_, `PREVIEW` _(Log per client)_.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/rate_limiting#authorize RateLimiting#authorize}
 	Authorize *string `field:"required" json:"authorize" yaml:"authorize"`
 	// Called when accessing the Okta hosted login page.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/rate_limiting#login RateLimiting#login}
-	Login *string `field:"required" json:"login" yaml:"login"`
-	// Enables rate limit warning, violation, notification emails and banners when this org meets rate limits.
+	// Valid values: `ENFORCE` _(Enforce limit and log per client (recommended))_, `DISABLE` _(Do nothing (not recommended))_, `PREVIEW` _(Log per client)_.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/rate_limiting#communications_enabled RateLimiting#communications_enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/rate_limiting#login RateLimiting#login}
+	Login *string `field:"required" json:"login" yaml:"login"`
+	// Enable or disable rate limiting communications. By default, it is `true`.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/rate_limiting#communications_enabled RateLimiting#communications_enabled}
 	CommunicationsEnabled interface{} `field:"optional" json:"communicationsEnabled" yaml:"communicationsEnabled"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/rate_limiting#id RateLimiting#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/rate_limiting#id RateLimiting#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

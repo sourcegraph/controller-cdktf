@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/okta/linkvalue/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/link_value okta_link_value}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/link_value okta_link_value}.
 type LinkValue interface {
 	cdktf.TerraformResource
 	AssociatedUserIds() *[]*string
@@ -377,7 +377,7 @@ func (j *jsiiProxy_LinkValue) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/link_value okta_link_value} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/link_value okta_link_value} Resource.
 func NewLinkValue(scope constructs.Construct, id *string, config *LinkValueConfig) LinkValue {
 	_init_.Initialize()
 
@@ -395,7 +395,7 @@ func NewLinkValue(scope constructs.Construct, id *string, config *LinkValueConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/link_value okta_link_value} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/link_value okta_link_value} Resource.
 func NewLinkValue_Override(l LinkValue, scope constructs.Construct, id *string, config *LinkValueConfig) {
 	_init_.Initialize()
 

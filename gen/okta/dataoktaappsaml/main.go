@@ -77,6 +77,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetSkipGroups", GoMethod: "ResetSkipGroups"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSkipUsers", GoMethod: "ResetSkipUsers"},
 			_jsii_.MemberProperty{JsiiProperty: "responseSigned", GoGetter: "ResponseSigned"},
+			_jsii_.MemberProperty{JsiiProperty: "samlSignedRequestEnabled", GoGetter: "SamlSignedRequestEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "signatureAlgorithm", GoGetter: "SignatureAlgorithm"},
 			_jsii_.MemberProperty{JsiiProperty: "singleLogoutCertificate", GoGetter: "SingleLogoutCertificate"},
 			_jsii_.MemberProperty{JsiiProperty: "singleLogoutIssuer", GoGetter: "SingleLogoutIssuer"},

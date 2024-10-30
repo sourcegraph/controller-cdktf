@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/okta/policymfa/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/policy_mfa okta_policy_mfa}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_mfa okta_policy_mfa}.
 type PolicyMfa interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -37,6 +37,9 @@ type PolicyMfa interface {
 	ExternalIdp() *map[string]*string
 	SetExternalIdp(val *map[string]*string)
 	ExternalIdpInput() *map[string]*string
+	ExternalIdps() interface{}
+	SetExternalIdps(val interface{})
+	ExternalIdpsInput() interface{}
 	FidoU2F() *map[string]*string
 	SetFidoU2F(val *map[string]*string)
 	FidoU2FInput() *map[string]*string
@@ -188,6 +191,7 @@ type PolicyMfa interface {
 	ResetDescription()
 	ResetDuo()
 	ResetExternalIdp()
+	ResetExternalIdps()
 	ResetFidoU2F()
 	ResetFidoWebauthn()
 	ResetGoogleOtp()
@@ -338,6 +342,26 @@ func (j *jsiiProxy_PolicyMfa) ExternalIdpInput() *map[string]*string {
 	_jsii_.Get(
 		j,
 		"externalIdpInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PolicyMfa) ExternalIdps() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"externalIdps",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PolicyMfa) ExternalIdpsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"externalIdpsInput",
 		&returns,
 	)
 	return returns
@@ -954,7 +978,7 @@ func (j *jsiiProxy_PolicyMfa) YubikeyTokenInput() *map[string]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/policy_mfa okta_policy_mfa} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_mfa okta_policy_mfa} Resource.
 func NewPolicyMfa(scope constructs.Construct, id *string, config *PolicyMfaConfig) PolicyMfa {
 	_init_.Initialize()
 
@@ -972,7 +996,7 @@ func NewPolicyMfa(scope constructs.Construct, id *string, config *PolicyMfaConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/policy_mfa okta_policy_mfa} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_mfa okta_policy_mfa} Resource.
 func NewPolicyMfa_Override(p PolicyMfa, scope constructs.Construct, id *string, config *PolicyMfaConfig) {
 	_init_.Initialize()
 
@@ -1042,6 +1066,17 @@ func (j *jsiiProxy_PolicyMfa)SetExternalIdp(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"externalIdp",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PolicyMfa)SetExternalIdps(val interface{}) {
+	if err := j.validateSetExternalIdpsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"externalIdps",
 		val,
 	)
 }
@@ -1732,6 +1767,14 @@ func (p *jsiiProxy_PolicyMfa) ResetExternalIdp() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetExternalIdp",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PolicyMfa) ResetExternalIdps() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetExternalIdps",
 		nil, // no parameters
 	)
 }

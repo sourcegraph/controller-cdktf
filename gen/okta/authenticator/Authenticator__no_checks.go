@@ -104,6 +104,10 @@ func (j *jsiiProxy_Authenticator) validateSetKeyParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Authenticator) validateSetLegacyIgnoreNameParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Authenticator) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

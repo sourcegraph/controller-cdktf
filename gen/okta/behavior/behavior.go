@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/okta/behavior/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/behavior okta_behavior}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/behavior okta_behavior}.
 type Behavior interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -473,7 +473,7 @@ func (j *jsiiProxy_Behavior) VelocityInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/behavior okta_behavior} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/behavior okta_behavior} Resource.
 func NewBehavior(scope constructs.Construct, id *string, config *BehaviorConfig) Behavior {
 	_init_.Initialize()
 
@@ -491,7 +491,7 @@ func NewBehavior(scope constructs.Construct, id *string, config *BehaviorConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/behavior okta_behavior} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/behavior okta_behavior} Resource.
 func NewBehavior_Override(b Behavior, scope constructs.Construct, id *string, config *BehaviorConfig) {
 	_init_.Initialize()
 

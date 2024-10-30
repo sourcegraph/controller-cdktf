@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/okta/groupschemaproperty/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/group_schema_property okta_group_schema_property}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_schema_property okta_group_schema_property}.
 type GroupSchemaProperty interface {
 	cdktf.TerraformResource
 	ArrayEnum() *[]*string
@@ -760,7 +760,7 @@ func (j *jsiiProxy_GroupSchemaProperty) UniqueInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/group_schema_property okta_group_schema_property} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_schema_property okta_group_schema_property} Resource.
 func NewGroupSchemaProperty(scope constructs.Construct, id *string, config *GroupSchemaPropertyConfig) GroupSchemaProperty {
 	_init_.Initialize()
 
@@ -778,7 +778,7 @@ func NewGroupSchemaProperty(scope constructs.Construct, id *string, config *Grou
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/group_schema_property okta_group_schema_property} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_schema_property okta_group_schema_property} Resource.
 func NewGroupSchemaProperty_Override(g GroupSchemaProperty, scope constructs.Construct, id *string, config *GroupSchemaPropertyConfig) {
 	_init_.Initialize()
 

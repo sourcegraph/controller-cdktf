@@ -223,6 +223,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "primaryPhone", GoGetter: "PrimaryPhone"},
 			_jsii_.MemberProperty{JsiiProperty: "profileUrl", GoGetter: "ProfileUrl"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "roles", GoGetter: "Roles"},
 			_jsii_.MemberProperty{JsiiProperty: "secondEmail", GoGetter: "SecondEmail"},
 			_jsii_.MemberProperty{JsiiProperty: "state", GoGetter: "State"},
 			_jsii_.MemberProperty{JsiiProperty: "status", GoGetter: "Status"},

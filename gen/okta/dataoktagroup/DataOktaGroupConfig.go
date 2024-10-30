@@ -23,24 +23,28 @@ type DataOktaGroupConfig struct {
 	//
 	// Useful when eventual consistency of group information needs to be allowed for; for instance, when group rules are known to have been applied.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/data-sources/group#delay_read_seconds DataOktaGroup#delay_read_seconds}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/group#delay_read_seconds DataOktaGroup#delay_read_seconds}
 	DelayReadSeconds *string `field:"optional" json:"delayReadSeconds" yaml:"delayReadSeconds"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/data-sources/group#id DataOktaGroup#id}.
+	// ID of group.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/group#id DataOktaGroup#id}
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Fetch group users, having default off cuts down on API calls.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/data-sources/group#include_users DataOktaGroup#include_users}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/group#include_users DataOktaGroup#include_users}
 	IncludeUsers interface{} `field:"optional" json:"includeUsers" yaml:"includeUsers"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/data-sources/group#name DataOktaGroup#name}.
+	// Name of group.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/group#name DataOktaGroup#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// Type of the group.
 	//
 	// When specified in the terraform resource, will act as a filter when searching for the group
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/data-sources/group#type DataOktaGroup#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/group#type DataOktaGroup#type}
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
 

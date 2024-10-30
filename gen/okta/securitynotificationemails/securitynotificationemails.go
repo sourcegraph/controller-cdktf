@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/okta/securitynotificationemails/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/security_notification_emails okta_security_notification_emails}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/security_notification_emails okta_security_notification_emails}.
 type SecurityNotificationEmails interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -427,7 +427,7 @@ func (j *jsiiProxy_SecurityNotificationEmails) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/security_notification_emails okta_security_notification_emails} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/security_notification_emails okta_security_notification_emails} Resource.
 func NewSecurityNotificationEmails(scope constructs.Construct, id *string, config *SecurityNotificationEmailsConfig) SecurityNotificationEmails {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewSecurityNotificationEmails(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/security_notification_emails okta_security_notification_emails} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/security_notification_emails okta_security_notification_emails} Resource.
 func NewSecurityNotificationEmails_Override(s SecurityNotificationEmails, scope constructs.Construct, id *string, config *SecurityNotificationEmailsConfig) {
 	_init_.Initialize()
 

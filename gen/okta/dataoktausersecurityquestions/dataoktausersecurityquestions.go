@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/okta/dataoktausersecurityquestions/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/data-sources/user_security_questions okta_user_security_questions}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/user_security_questions okta_user_security_questions}.
 type DataOktaUserSecurityQuestions interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -296,7 +296,7 @@ func (j *jsiiProxy_DataOktaUserSecurityQuestions) UserIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/data-sources/user_security_questions okta_user_security_questions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/user_security_questions okta_user_security_questions} Data Source.
 func NewDataOktaUserSecurityQuestions(scope constructs.Construct, id *string, config *DataOktaUserSecurityQuestionsConfig) DataOktaUserSecurityQuestions {
 	_init_.Initialize()
 
@@ -314,7 +314,7 @@ func NewDataOktaUserSecurityQuestions(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/data-sources/user_security_questions okta_user_security_questions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/user_security_questions okta_user_security_questions} Data Source.
 func NewDataOktaUserSecurityQuestions_Override(d DataOktaUserSecurityQuestions, scope constructs.Construct, id *string, config *DataOktaUserSecurityQuestionsConfig) {
 	_init_.Initialize()
 

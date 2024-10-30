@@ -72,7 +72,19 @@ func (j *jsiiProxy_DataOktaNetworkZone) validateSetCountParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_DataOktaNetworkZone) validateSetDynamicLocationsExcludeParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOktaNetworkZone) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataOktaNetworkZone) validateSetIpServiceCategoriesExcludeParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataOktaNetworkZone) validateSetIpServiceCategoriesIncludeParameters(val *[]*string) error {
 	return nil
 }
 

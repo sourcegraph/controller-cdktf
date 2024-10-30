@@ -406,14 +406,6 @@ func (j *jsiiProxy_PolicyRulePassword) validateSetPasswordUnlockParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_PolicyRulePassword) validateSetPolicyidParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_PolicyRulePassword) validateSetPolicyIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

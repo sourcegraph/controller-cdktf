@@ -80,10 +80,6 @@ func (a *jsiiProxy_AppSaml) validatePutTimeoutsParameters(value *AppSamlTimeouts
 	return nil
 }
 
-func (a *jsiiProxy_AppSaml) validatePutUsersParameters(value interface{}) error {
-	return nil
-}
-
 func validateAppSaml_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -172,10 +168,6 @@ func (j *jsiiProxy_AppSaml) validateSetEnduserNoteParameters(val *string) error 
 	return nil
 }
 
-func (j *jsiiProxy_AppSaml) validateSetGroupsParameters(val *[]*string) error {
-	return nil
-}
-
 func (j *jsiiProxy_AppSaml) validateSetHideIosParameters(val interface{}) error {
 	return nil
 }
@@ -244,6 +236,10 @@ func (j *jsiiProxy_AppSaml) validateSetResponseSignedParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_AppSaml) validateSetSamlSignedRequestEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppSaml) validateSetSamlVersionParameters(val *string) error {
 	return nil
 }
@@ -261,14 +257,6 @@ func (j *jsiiProxy_AppSaml) validateSetSingleLogoutIssuerParameters(val *string)
 }
 
 func (j *jsiiProxy_AppSaml) validateSetSingleLogoutUrlParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_AppSaml) validateSetSkipGroupsParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_AppSaml) validateSetSkipUsersParameters(val interface{}) error {
 	return nil
 }
 

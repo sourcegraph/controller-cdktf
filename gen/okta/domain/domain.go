@@ -9,9 +9,12 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/okta/domain/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/domain okta_domain}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/domain okta_domain}.
 type Domain interface {
 	cdktf.TerraformResource
+	BrandId() *string
+	SetBrandId(val *string)
+	BrandIdInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	CertificateSourceType() *string
@@ -69,9 +72,6 @@ type Domain interface {
 	// Experimental.
 	TerraformResourceType() *string
 	ValidationStatus() *string
-	Verify() interface{}
-	SetVerify(val interface{})
-	VerifyInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -115,12 +115,12 @@ type Domain interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetBrandId()
 	ResetCertificateSourceType()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetVerify()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -137,6 +137,26 @@ type Domain interface {
 // The jsii proxy struct for Domain
 type jsiiProxy_Domain struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_Domain) BrandId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"brandId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Domain) BrandIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"brandIdInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_Domain) CdktfStack() cdktf.TerraformStack {
@@ -379,28 +399,8 @@ func (j *jsiiProxy_Domain) ValidationStatus() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Domain) Verify() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"verify",
-		&returns,
-	)
-	return returns
-}
 
-func (j *jsiiProxy_Domain) VerifyInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"verifyInput",
-		&returns,
-	)
-	return returns
-}
-
-
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/domain okta_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/domain okta_domain} Resource.
 func NewDomain(scope constructs.Construct, id *string, config *DomainConfig) Domain {
 	_init_.Initialize()
 
@@ -418,7 +418,7 @@ func NewDomain(scope constructs.Construct, id *string, config *DomainConfig) Dom
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/domain okta_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/domain okta_domain} Resource.
 func NewDomain_Override(d Domain, scope constructs.Construct, id *string, config *DomainConfig) {
 	_init_.Initialize()
 
@@ -426,6 +426,17 @@ func NewDomain_Override(d Domain, scope constructs.Construct, id *string, config
 		"@cdktf/provider-okta.domain.Domain",
 		[]interface{}{scope, id, config},
 		d,
+	)
+}
+
+func (j *jsiiProxy_Domain)SetBrandId(val *string) {
+	if err := j.validateSetBrandIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"brandId",
+		val,
 	)
 }
 
@@ -526,17 +537,6 @@ func (j *jsiiProxy_Domain)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Domain)SetVerify(val interface{}) {
-	if err := j.validateSetVerifyParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"verify",
 		val,
 	)
 }
@@ -894,6 +894,14 @@ func (d *jsiiProxy_Domain) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (d *jsiiProxy_Domain) ResetBrandId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetBrandId",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_Domain) ResetCertificateSourceType() {
 	_jsii_.InvokeVoid(
 		d,
@@ -914,14 +922,6 @@ func (d *jsiiProxy_Domain) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_Domain) ResetVerify() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetVerify",
 		nil, // no parameters
 	)
 }

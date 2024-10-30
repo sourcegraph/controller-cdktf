@@ -21,21 +21,21 @@ type TrustedOriginConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Unique name for this trusted origin.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/trusted_origin#name TrustedOrigin#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/trusted_origin#name TrustedOrigin#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Unique origin URL for this trusted origin.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/trusted_origin#origin TrustedOrigin#origin}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/trusted_origin#origin TrustedOrigin#origin}
 	Origin *string `field:"required" json:"origin" yaml:"origin"`
-	// Scopes of the Trusted Origin - can either be CORS or REDIRECT only.
+	// Scopes of the Trusted Origin - can either be `CORS` and/or `REDIRECT`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/trusted_origin#scopes TrustedOrigin#scopes}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/trusted_origin#scopes TrustedOrigin#scopes}
 	Scopes *[]*string `field:"required" json:"scopes" yaml:"scopes"`
-	// Whether the Trusted Origin is active or not - can only be issued post-creation.
+	// Whether the Trusted Origin is active or not - can only be issued post-creation. By default, it is `true`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/trusted_origin#active TrustedOrigin#active}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/trusted_origin#active TrustedOrigin#active}
 	Active interface{} `field:"optional" json:"active" yaml:"active"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/trusted_origin#id TrustedOrigin#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/trusted_origin#id TrustedOrigin#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -124,6 +124,10 @@ func (j *jsiiProxy_PolicyRuleProfileEnrollment) validateSetPolicyIdParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_PolicyRuleProfileEnrollment) validateSetProgressiveProfilingActionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PolicyRuleProfileEnrollment) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

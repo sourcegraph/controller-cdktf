@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/okta/dataoktaappoauth/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/data-sources/app_oauth okta_app_oauth}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/app_oauth okta_app_oauth}.
 type DataOktaAppOauth interface {
 	cdktf.TerraformDataSource
 	ActiveOnly() interface{}
@@ -40,7 +40,6 @@ type DataOktaAppOauth interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	GrantTypes() *[]*string
-	Groups() *[]*string
 	HideIos() cdktf.IResolvable
 	HideWeb() cdktf.IResolvable
 	Id() *string
@@ -88,7 +87,6 @@ type DataOktaAppOauth interface {
 	// Experimental.
 	TerraformResourceType() *string
 	Type() *string
-	Users() *[]*string
 	WildcardRedirect() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
@@ -278,16 +276,6 @@ func (j *jsiiProxy_DataOktaAppOauth) GrantTypes() *[]*string {
 	_jsii_.Get(
 		j,
 		"grantTypes",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataOktaAppOauth) Groups() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"groups",
 		&returns,
 	)
 	return returns
@@ -603,16 +591,6 @@ func (j *jsiiProxy_DataOktaAppOauth) Type() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataOktaAppOauth) Users() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"users",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataOktaAppOauth) WildcardRedirect() *string {
 	var returns *string
 	_jsii_.Get(
@@ -624,7 +602,7 @@ func (j *jsiiProxy_DataOktaAppOauth) WildcardRedirect() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/data-sources/app_oauth okta_app_oauth} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/app_oauth okta_app_oauth} Data Source.
 func NewDataOktaAppOauth(scope constructs.Construct, id *string, config *DataOktaAppOauthConfig) DataOktaAppOauth {
 	_init_.Initialize()
 
@@ -642,7 +620,7 @@ func NewDataOktaAppOauth(scope constructs.Construct, id *string, config *DataOkt
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/data-sources/app_oauth okta_app_oauth} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/app_oauth okta_app_oauth} Data Source.
 func NewDataOktaAppOauth_Override(d DataOktaAppOauth, scope constructs.Construct, id *string, config *DataOktaAppOauthConfig) {
 	_init_.Initialize()
 

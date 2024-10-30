@@ -260,14 +260,6 @@ func (j *jsiiProxy_IdpSaml) validateSetAccountLinkGroupIncludeParameters(val *[]
 	return nil
 }
 
-func (j *jsiiProxy_IdpSaml) validateSetAcsBindingParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_IdpSaml) validateSetAcsTypeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

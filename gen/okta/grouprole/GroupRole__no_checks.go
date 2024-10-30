@@ -116,6 +116,14 @@ func (j *jsiiProxy_GroupRole) validateSetProvisionersParameters(val *[]interface
 	return nil
 }
 
+func (j *jsiiProxy_GroupRole) validateSetResourceSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GroupRole) validateSetRoleIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GroupRole) validateSetRoleTypeParameters(val *string) error {
 	return nil
 }

@@ -21,28 +21,28 @@ type DomainCertificateConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Certificate content.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/domain_certificate#certificate DomainCertificate#certificate}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/domain_certificate#certificate DomainCertificate#certificate}
 	Certificate *string `field:"required" json:"certificate" yaml:"certificate"`
 	// Certificate chain.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/domain_certificate#certificate_chain DomainCertificate#certificate_chain}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/domain_certificate#certificate_chain DomainCertificate#certificate_chain}
 	CertificateChain *string `field:"required" json:"certificateChain" yaml:"certificateChain"`
 	// Domain's ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/domain_certificate#domain_id DomainCertificate#domain_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/domain_certificate#domain_id DomainCertificate#domain_id}
 	DomainId *string `field:"required" json:"domainId" yaml:"domainId"`
 	// Certificate private key.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/domain_certificate#private_key DomainCertificate#private_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/domain_certificate#private_key DomainCertificate#private_key}
 	PrivateKey *string `field:"required" json:"privateKey" yaml:"privateKey"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/domain_certificate#id DomainCertificate#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/domain_certificate#id DomainCertificate#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Certificate type.
+	// Certificate type. Valid value is `PEM`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/domain_certificate#type DomainCertificate#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/domain_certificate#type DomainCertificate#type}
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
 

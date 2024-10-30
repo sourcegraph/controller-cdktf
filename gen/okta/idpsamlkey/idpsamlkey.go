@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/okta/idpsamlkey/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/idp_saml_key okta_idp_saml_key}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/idp_saml_key okta_idp_saml_key}.
 type IdpSamlKey interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -396,7 +396,7 @@ func (j *jsiiProxy_IdpSamlKey) X5TS256() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/idp_saml_key okta_idp_saml_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/idp_saml_key okta_idp_saml_key} Resource.
 func NewIdpSamlKey(scope constructs.Construct, id *string, config *IdpSamlKeyConfig) IdpSamlKey {
 	_init_.Initialize()
 
@@ -414,7 +414,7 @@ func NewIdpSamlKey(scope constructs.Construct, id *string, config *IdpSamlKeyCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/idp_saml_key okta_idp_saml_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/idp_saml_key okta_idp_saml_key} Resource.
 func NewIdpSamlKey_Override(i IdpSamlKey, scope constructs.Construct, id *string, config *IdpSamlKeyConfig) {
 	_init_.Initialize()
 

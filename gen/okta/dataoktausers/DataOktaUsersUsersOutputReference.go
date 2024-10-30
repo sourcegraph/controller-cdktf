@@ -57,6 +57,7 @@ type DataOktaUsersUsersOutputReference interface {
 	PreferredLanguage() *string
 	PrimaryPhone() *string
 	ProfileUrl() *string
+	Roles() *[]*string
 	SecondEmail() *string
 	State() *string
 	Status() *string
@@ -437,6 +438,16 @@ func (j *jsiiProxy_DataOktaUsersUsersOutputReference) ProfileUrl() *string {
 	_jsii_.Get(
 		j,
 		"profileUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataOktaUsersUsersOutputReference) Roles() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"roles",
 		&returns,
 	)
 	return returns

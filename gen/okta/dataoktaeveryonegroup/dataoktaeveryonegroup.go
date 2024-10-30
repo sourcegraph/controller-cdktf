@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/okta/dataoktaeveryonegroup/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/data-sources/everyone_group okta_everyone_group}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/everyone_group okta_everyone_group}.
 type DataOktaEveryoneGroup interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -297,7 +297,7 @@ func (j *jsiiProxy_DataOktaEveryoneGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/data-sources/everyone_group okta_everyone_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/everyone_group okta_everyone_group} Data Source.
 func NewDataOktaEveryoneGroup(scope constructs.Construct, id *string, config *DataOktaEveryoneGroupConfig) DataOktaEveryoneGroup {
 	_init_.Initialize()
 
@@ -315,7 +315,7 @@ func NewDataOktaEveryoneGroup(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/data-sources/everyone_group okta_everyone_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/everyone_group okta_everyone_group} Data Source.
 func NewDataOktaEveryoneGroup_Override(d DataOktaEveryoneGroup, scope constructs.Construct, id *string, config *DataOktaEveryoneGroupConfig) {
 	_init_.Initialize()
 
