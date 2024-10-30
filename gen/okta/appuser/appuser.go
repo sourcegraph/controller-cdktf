@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/okta/appuser/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_user okta_app_user}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user okta_app_user}.
 type AppUser interface {
 	cdktf.TerraformResource
 	AppId() *string
@@ -460,7 +460,7 @@ func (j *jsiiProxy_AppUser) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_user okta_app_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user okta_app_user} Resource.
 func NewAppUser(scope constructs.Construct, id *string, config *AppUserConfig) AppUser {
 	_init_.Initialize()
 
@@ -478,7 +478,7 @@ func NewAppUser(scope constructs.Construct, id *string, config *AppUserConfig) A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_user okta_app_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user okta_app_user} Resource.
 func NewAppUser_Override(a AppUser, scope constructs.Construct, id *string, config *AppUserConfig) {
 	_init_.Initialize()
 

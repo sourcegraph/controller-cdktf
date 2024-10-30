@@ -35,7 +35,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "grantTypes", GoGetter: "GrantTypes"},
-			_jsii_.MemberProperty{JsiiProperty: "groups", GoGetter: "Groups"},
 			_jsii_.MemberProperty{JsiiProperty: "hideIos", GoGetter: "HideIos"},
 			_jsii_.MemberProperty{JsiiProperty: "hideWeb", GoGetter: "HideWeb"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
@@ -82,7 +81,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
-			_jsii_.MemberProperty{JsiiProperty: "users", GoGetter: "Users"},
 			_jsii_.MemberProperty{JsiiProperty: "wildcardRedirect", GoGetter: "WildcardRedirect"},
 		},
 		func() interface{} {

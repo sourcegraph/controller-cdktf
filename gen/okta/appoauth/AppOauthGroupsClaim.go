@@ -4,21 +4,21 @@ package appoauth
 type AppOauthGroupsClaim struct {
 	// Name of the claim that will be used in the token.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_oauth#name AppOauth#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_oauth#name AppOauth#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Groups claim type.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_oauth#type AppOauth#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_oauth#type AppOauth#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
 	// Value of the claim.
 	//
 	// Can be an Okta Expression Language statement that evaluates at the time the token is minted.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_oauth#value AppOauth#value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_oauth#value AppOauth#value}
 	Value *string `field:"required" json:"value" yaml:"value"`
 	// Groups claim filter. Can only be set if type is FILTER.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_oauth#filter_type AppOauth#filter_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_oauth#filter_type AppOauth#filter_type}
 	FilterType *string `field:"optional" json:"filterType" yaml:"filterType"`
 }
 

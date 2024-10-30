@@ -96,10 +96,6 @@ func (j *jsiiProxy_IdpSaml) validateSetAccountLinkGroupIncludeParameters(val *[]
 	return nil
 }
 
-func (j *jsiiProxy_IdpSaml) validateSetAcsBindingParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_IdpSaml) validateSetAcsTypeParameters(val *string) error {
 	return nil
 }

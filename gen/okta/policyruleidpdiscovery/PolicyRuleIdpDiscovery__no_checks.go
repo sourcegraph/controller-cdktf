@@ -144,10 +144,6 @@ func (j *jsiiProxy_PolicyRuleIdpDiscovery) validateSetNetworkIncludesParameters(
 	return nil
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscovery) validateSetPolicyidParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_PolicyRuleIdpDiscovery) validateSetPolicyIdParameters(val *string) error {
 	return nil
 }

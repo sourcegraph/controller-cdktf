@@ -32,6 +32,7 @@ type DataOktaBrandsBrandsOutputReference interface {
 	InternalValue() *DataOktaBrandsBrands
 	SetInternalValue(val *DataOktaBrandsBrands)
 	Links() *string
+	Name() *string
 	RemovePoweredByOkta() cdktf.IResolvable
 	// Experimental.
 	TerraformAttribute() *string
@@ -155,6 +156,16 @@ func (j *jsiiProxy_DataOktaBrandsBrandsOutputReference) Links() *string {
 	_jsii_.Get(
 		j,
 		"links",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataOktaBrandsBrandsOutputReference) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
 		&returns,
 	)
 	return returns

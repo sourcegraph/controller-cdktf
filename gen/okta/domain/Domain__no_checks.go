@@ -88,6 +88,10 @@ func validateDomain_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_Domain) validateSetBrandIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Domain) validateSetCertificateSourceTypeParameters(val *string) error {
 	return nil
 }
@@ -113,10 +117,6 @@ func (j *jsiiProxy_Domain) validateSetNameParameters(val *string) error {
 }
 
 func (j *jsiiProxy_Domain) validateSetProvisionersParameters(val *[]interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_Domain) validateSetVerifyParameters(val interface{}) error {
 	return nil
 }
 

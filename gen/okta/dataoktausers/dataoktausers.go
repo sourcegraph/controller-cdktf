@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/okta/dataoktausers/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/data-sources/users okta_users}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/users okta_users}.
 type DataOktaUsers interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -417,7 +417,7 @@ func (j *jsiiProxy_DataOktaUsers) Users() DataOktaUsersUsersList {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/data-sources/users okta_users} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/users okta_users} Data Source.
 func NewDataOktaUsers(scope constructs.Construct, id *string, config *DataOktaUsersConfig) DataOktaUsers {
 	_init_.Initialize()
 
@@ -435,7 +435,7 @@ func NewDataOktaUsers(scope constructs.Construct, id *string, config *DataOktaUs
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/data-sources/users okta_users} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/users okta_users} Data Source.
 func NewDataOktaUsers_Override(d DataOktaUsers, scope constructs.Construct, id *string, config *DataOktaUsersConfig) {
 	_init_.Initialize()
 

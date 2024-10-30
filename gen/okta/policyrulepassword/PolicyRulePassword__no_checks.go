@@ -132,10 +132,6 @@ func (j *jsiiProxy_PolicyRulePassword) validateSetPasswordUnlockParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_PolicyRulePassword) validateSetPolicyidParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_PolicyRulePassword) validateSetPolicyIdParameters(val *string) error {
 	return nil
 }

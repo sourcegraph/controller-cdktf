@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/okta/appsaml/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_saml okta_app_saml}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_saml okta_app_saml}.
 type AppSaml interface {
 	cdktf.TerraformResource
 	AccessibilityErrorRedirectUrl() *string
@@ -91,9 +91,6 @@ type AppSaml interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	Groups() *[]*string
-	SetGroups(val *[]*string)
-	GroupsInput() *[]*string
 	HideIos() interface{}
 	SetHideIos(val interface{})
 	HideIosInput() interface{}
@@ -163,6 +160,9 @@ type AppSaml interface {
 	ResponseSigned() interface{}
 	SetResponseSigned(val interface{})
 	ResponseSignedInput() interface{}
+	SamlSignedRequestEnabled() interface{}
+	SetSamlSignedRequestEnabled(val interface{})
+	SamlSignedRequestEnabledInput() interface{}
 	SamlVersion() *string
 	SetSamlVersion(val *string)
 	SamlVersionInput() *string
@@ -179,12 +179,6 @@ type AppSaml interface {
 	SingleLogoutUrl() *string
 	SetSingleLogoutUrl(val *string)
 	SingleLogoutUrlInput() *string
-	SkipGroups() interface{}
-	SetSkipGroups(val interface{})
-	SkipGroupsInput() interface{}
-	SkipUsers() interface{}
-	SetSkipUsers(val interface{})
-	SkipUsersInput() interface{}
 	SpIssuer() *string
 	SetSpIssuer(val *string)
 	SpIssuerInput() *string
@@ -220,8 +214,6 @@ type AppSaml interface {
 	UserNameTemplateType() *string
 	SetUserNameTemplateType(val *string)
 	UserNameTemplateTypeInput() *string
-	Users() AppSamlUsersList
-	UsersInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -267,7 +259,6 @@ type AppSaml interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAttributeStatements(value interface{})
 	PutTimeouts(value *AppSamlTimeouts)
-	PutUsers(value interface{})
 	ResetAccessibilityErrorRedirectUrl()
 	ResetAccessibilityLoginRedirectUrl()
 	ResetAccessibilitySelfService()
@@ -285,7 +276,6 @@ type AppSaml interface {
 	ResetDestination()
 	ResetDigestAlgorithm()
 	ResetEnduserNote()
-	ResetGroups()
 	ResetHideIos()
 	ResetHideWeb()
 	ResetHonorForceAuthn()
@@ -303,13 +293,12 @@ type AppSaml interface {
 	ResetRecipient()
 	ResetRequestCompressed()
 	ResetResponseSigned()
+	ResetSamlSignedRequestEnabled()
 	ResetSamlVersion()
 	ResetSignatureAlgorithm()
 	ResetSingleLogoutCertificate()
 	ResetSingleLogoutIssuer()
 	ResetSingleLogoutUrl()
-	ResetSkipGroups()
-	ResetSkipUsers()
 	ResetSpIssuer()
 	ResetSsoUrl()
 	ResetStatus()
@@ -320,7 +309,6 @@ type AppSaml interface {
 	ResetUserNameTemplatePushStatus()
 	ResetUserNameTemplateSuffix()
 	ResetUserNameTemplateType()
-	ResetUsers()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -809,26 +797,6 @@ func (j *jsiiProxy_AppSaml) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AppSaml) Groups() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"groups",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AppSaml) GroupsInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"groupsInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_AppSaml) HideIos() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -1259,6 +1227,26 @@ func (j *jsiiProxy_AppSaml) ResponseSignedInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AppSaml) SamlSignedRequestEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"samlSignedRequestEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSaml) SamlSignedRequestEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"samlSignedRequestEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AppSaml) SamlVersion() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1364,46 +1352,6 @@ func (j *jsiiProxy_AppSaml) SingleLogoutUrlInput() *string {
 	_jsii_.Get(
 		j,
 		"singleLogoutUrlInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AppSaml) SkipGroups() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"skipGroups",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AppSaml) SkipGroupsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"skipGroupsInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AppSaml) SkipUsers() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"skipUsers",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AppSaml) SkipUsersInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"skipUsersInput",
 		&returns,
 	)
 	return returns
@@ -1639,28 +1587,8 @@ func (j *jsiiProxy_AppSaml) UserNameTemplateTypeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AppSaml) Users() AppSamlUsersList {
-	var returns AppSamlUsersList
-	_jsii_.Get(
-		j,
-		"users",
-		&returns,
-	)
-	return returns
-}
 
-func (j *jsiiProxy_AppSaml) UsersInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"usersInput",
-		&returns,
-	)
-	return returns
-}
-
-
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_saml okta_app_saml} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_saml okta_app_saml} Resource.
 func NewAppSaml(scope constructs.Construct, id *string, config *AppSamlConfig) AppSaml {
 	_init_.Initialize()
 
@@ -1678,7 +1606,7 @@ func NewAppSaml(scope constructs.Construct, id *string, config *AppSamlConfig) A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_saml okta_app_saml} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_saml okta_app_saml} Resource.
 func NewAppSaml_Override(a AppSaml, scope constructs.Construct, id *string, config *AppSamlConfig) {
 	_init_.Initialize()
 
@@ -1903,17 +1831,6 @@ func (j *jsiiProxy_AppSaml)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_AppSaml)SetGroups(val *[]*string) {
-	if err := j.validateSetGroupsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"groups",
-		val,
-	)
-}
-
 func (j *jsiiProxy_AppSaml)SetHideIos(val interface{}) {
 	if err := j.validateSetHideIosParameters(val); err != nil {
 		panic(err)
@@ -2109,6 +2026,17 @@ func (j *jsiiProxy_AppSaml)SetResponseSigned(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_AppSaml)SetSamlSignedRequestEnabled(val interface{}) {
+	if err := j.validateSetSamlSignedRequestEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"samlSignedRequestEnabled",
+		val,
+	)
+}
+
 func (j *jsiiProxy_AppSaml)SetSamlVersion(val *string) {
 	if err := j.validateSetSamlVersionParameters(val); err != nil {
 		panic(err)
@@ -2160,28 +2088,6 @@ func (j *jsiiProxy_AppSaml)SetSingleLogoutUrl(val *string) {
 	_jsii_.Set(
 		j,
 		"singleLogoutUrl",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AppSaml)SetSkipGroups(val interface{}) {
-	if err := j.validateSetSkipGroupsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"skipGroups",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AppSaml)SetSkipUsers(val interface{}) {
-	if err := j.validateSetSkipUsersParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"skipUsers",
 		val,
 	)
 }
@@ -2660,17 +2566,6 @@ func (a *jsiiProxy_AppSaml) PutTimeouts(value *AppSamlTimeouts) {
 	)
 }
 
-func (a *jsiiProxy_AppSaml) PutUsers(value interface{}) {
-	if err := a.validatePutUsersParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		a,
-		"putUsers",
-		[]interface{}{value},
-	)
-}
-
 func (a *jsiiProxy_AppSaml) ResetAccessibilityErrorRedirectUrl() {
 	_jsii_.InvokeVoid(
 		a,
@@ -2807,14 +2702,6 @@ func (a *jsiiProxy_AppSaml) ResetEnduserNote() {
 	)
 }
 
-func (a *jsiiProxy_AppSaml) ResetGroups() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetGroups",
-		nil, // no parameters
-	)
-}
-
 func (a *jsiiProxy_AppSaml) ResetHideIos() {
 	_jsii_.InvokeVoid(
 		a,
@@ -2935,6 +2822,14 @@ func (a *jsiiProxy_AppSaml) ResetResponseSigned() {
 	)
 }
 
+func (a *jsiiProxy_AppSaml) ResetSamlSignedRequestEnabled() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetSamlSignedRequestEnabled",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AppSaml) ResetSamlVersion() {
 	_jsii_.InvokeVoid(
 		a,
@@ -2971,22 +2866,6 @@ func (a *jsiiProxy_AppSaml) ResetSingleLogoutUrl() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetSingleLogoutUrl",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AppSaml) ResetSkipGroups() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetSkipGroups",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AppSaml) ResetSkipUsers() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetSkipUsers",
 		nil, // no parameters
 	)
 }
@@ -3067,14 +2946,6 @@ func (a *jsiiProxy_AppSaml) ResetUserNameTemplateType() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetUserNameTemplateType",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AppSaml) ResetUsers() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetUsers",
 		nil, // no parameters
 	)
 }

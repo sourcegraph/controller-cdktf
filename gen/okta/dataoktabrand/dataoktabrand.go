@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/okta/dataoktabrand/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/data-sources/brand okta_brand}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/brand okta_brand}.
 type DataOktaBrand interface {
 	cdktf.TerraformDataSource
 	BrandId() *string
@@ -42,6 +42,7 @@ type DataOktaBrand interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	Links() *string
+	Name() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -234,6 +235,16 @@ func (j *jsiiProxy_DataOktaBrand) Links() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataOktaBrand) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataOktaBrand) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -305,7 +316,7 @@ func (j *jsiiProxy_DataOktaBrand) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/data-sources/brand okta_brand} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/brand okta_brand} Data Source.
 func NewDataOktaBrand(scope constructs.Construct, id *string, config *DataOktaBrandConfig) DataOktaBrand {
 	_init_.Initialize()
 
@@ -323,7 +334,7 @@ func NewDataOktaBrand(scope constructs.Construct, id *string, config *DataOktaBr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/data-sources/brand okta_brand} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/brand okta_brand} Data Source.
 func NewDataOktaBrand_Override(d DataOktaBrand, scope constructs.Construct, id *string, config *DataOktaBrandConfig) {
 	_init_.Initialize()
 

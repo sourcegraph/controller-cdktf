@@ -19,90 +19,98 @@ type AppUserSchemaPropertyConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_user_schema_property#app_id AppUserSchemaProperty#app_id}.
+	// The Application's ID the user custom schema property should be assigned to.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#app_id AppUserSchemaProperty#app_id}
 	AppId *string `field:"required" json:"appId" yaml:"appId"`
 	// Subschema unique string identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_user_schema_property#index AppUserSchemaProperty#index}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#index AppUserSchemaProperty#index}
 	Index *string `field:"required" json:"index" yaml:"index"`
 	// Subschema title (display name).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_user_schema_property#title AppUserSchemaProperty#title}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#title AppUserSchemaProperty#title}
 	Title *string `field:"required" json:"title" yaml:"title"`
-	// Subschema type: string, boolean, number, integer, array, or object.
+	// The type of the schema property. It can be `string`, `boolean`, `number`, `integer`, `array`, or `object`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_user_schema_property#type AppUserSchemaProperty#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#type AppUserSchemaProperty#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
-	// Custom Subschema enumerated value of a property of type array.
+	// Array of values that an array property's items can be set to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_user_schema_property#array_enum AppUserSchemaProperty#array_enum}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#array_enum AppUserSchemaProperty#array_enum}
 	ArrayEnum *[]*string `field:"optional" json:"arrayEnum" yaml:"arrayEnum"`
 	// array_one_of block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_user_schema_property#array_one_of AppUserSchemaProperty#array_one_of}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#array_one_of AppUserSchemaProperty#array_one_of}
 	ArrayOneOf interface{} `field:"optional" json:"arrayOneOf" yaml:"arrayOneOf"`
-	// Subschema array type: string, number, integer, reference. Type field must be an array.
+	// The type of the array elements if `type` is set to `array`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_user_schema_property#array_type AppUserSchemaProperty#array_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#array_type AppUserSchemaProperty#array_type}
 	ArrayType *string `field:"optional" json:"arrayType" yaml:"arrayType"`
-	// Custom Subschema description.
+	// The description of the user schema property.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_user_schema_property#description AppUserSchemaProperty#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#description AppUserSchemaProperty#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Custom Subschema enumerated value of the property. see: developer.okta.com/docs/api/resources/schemas#user-profile-schema-property-object.
+	// Array of values a primitive property can be set to. See `array_enum` for arrays.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_user_schema_property#enum AppUserSchemaProperty#enum}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#enum AppUserSchemaProperty#enum}
 	Enum *[]*string `field:"optional" json:"enum" yaml:"enum"`
-	// Subschema external name.
+	// External name of the user schema property.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_user_schema_property#external_name AppUserSchemaProperty#external_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#external_name AppUserSchemaProperty#external_name}
 	ExternalName *string `field:"optional" json:"externalName" yaml:"externalName"`
-	// Subschema external namespace.
+	// External namespace of the user schema property.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_user_schema_property#external_namespace AppUserSchemaProperty#external_namespace}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#external_namespace AppUserSchemaProperty#external_namespace}
 	ExternalNamespace *string `field:"optional" json:"externalNamespace" yaml:"externalNamespace"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_user_schema_property#id AppUserSchemaProperty#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#id AppUserSchemaProperty#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// SubSchema profile manager, if not set it will inherit its setting.
+	// Master priority for the user schema property. It can be set to `PROFILE_MASTER` or `OKTA`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_user_schema_property#master AppUserSchemaProperty#master}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#master AppUserSchemaProperty#master}
 	Master *string `field:"optional" json:"master" yaml:"master"`
-	// Subschema of type string maximum length.
+	// The maximum length of the user property value. Only applies to type `string`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_user_schema_property#max_length AppUserSchemaProperty#max_length}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#max_length AppUserSchemaProperty#max_length}
 	MaxLength *float64 `field:"optional" json:"maxLength" yaml:"maxLength"`
-	// Subschema of type string minimum length.
+	// The minimum length of the user property value. Only applies to type `string`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_user_schema_property#min_length AppUserSchemaProperty#min_length}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#min_length AppUserSchemaProperty#min_length}
 	MinLength *float64 `field:"optional" json:"minLength" yaml:"minLength"`
 	// one_of block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_user_schema_property#one_of AppUserSchemaProperty#one_of}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#one_of AppUserSchemaProperty#one_of}
 	OneOf interface{} `field:"optional" json:"oneOf" yaml:"oneOf"`
-	// SubSchema permissions: HIDE, READ_ONLY, or READ_WRITE.
+	// Access control permissions for the property. It can be set to `READ_WRITE`, `READ_ONLY`, `HIDE`. Default: `READ_ONLY`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_user_schema_property#permissions AppUserSchemaProperty#permissions}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#permissions AppUserSchemaProperty#permissions}
 	Permissions *string `field:"optional" json:"permissions" yaml:"permissions"`
 	// Whether the subschema is required.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_user_schema_property#required AppUserSchemaProperty#required}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#required AppUserSchemaProperty#required}
 	Required interface{} `field:"optional" json:"required" yaml:"required"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_user_schema_property#scope AppUserSchemaProperty#scope}.
+	// determines whether an app user attribute can be set at the Personal `SELF` or Group `NONE` level.
+	//
+	// Default value is `NONE`.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#scope AppUserSchemaProperty#scope}
 	Scope *string `field:"optional" json:"scope" yaml:"scope"`
-	// Allows to assign attribute's group priority.
+	// If `type` is set to `array`, used to set whether attribute value is determined by group priority `false`, or combine values across groups `true`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_user_schema_property#union AppUserSchemaProperty#union}
+	// Can not be set to `true` if `scope` is set to `SELF`.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#union AppUserSchemaProperty#union}
 	Union interface{} `field:"optional" json:"union" yaml:"union"`
-	// Subschema unique restriction.
+	// Whether the property should be unique. It can be set to `UNIQUE_VALIDATED` or `NOT_UNIQUE`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_user_schema_property#unique AppUserSchemaProperty#unique}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#unique AppUserSchemaProperty#unique}
 	Unique *string `field:"optional" json:"unique" yaml:"unique"`
-	// Custom subschema user type.
+	// User type ID. By default, it is `default`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_user_schema_property#user_type AppUserSchemaProperty#user_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#user_type AppUserSchemaProperty#user_type}
 	UserType *string `field:"optional" json:"userType" yaml:"userType"`
 }
 

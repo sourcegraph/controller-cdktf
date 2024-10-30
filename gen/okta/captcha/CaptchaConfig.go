@@ -21,21 +21,21 @@ type CaptchaConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the CAPTCHA.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/captcha#name Captcha#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/captcha#name Captcha#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Secret key issued from the CAPTCHA vendor to perform server-side validation for a CAPTCHA token.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/captcha#secret_key Captcha#secret_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/captcha#secret_key Captcha#secret_key}
 	SecretKey *string `field:"required" json:"secretKey" yaml:"secretKey"`
 	// Site key issued from the CAPTCHA vendor to render a CAPTCHA on a page.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/captcha#site_key Captcha#site_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/captcha#site_key Captcha#site_key}
 	SiteKey *string `field:"required" json:"siteKey" yaml:"siteKey"`
-	// Captcha type.
+	// Type of the captcha. Valid values: `HCAPTCHA`, `RECAPTCHA_V2`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/captcha#type Captcha#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/captcha#type Captcha#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/captcha#id Captcha#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/captcha#id Captcha#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

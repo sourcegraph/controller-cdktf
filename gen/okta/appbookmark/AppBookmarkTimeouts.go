@@ -2,11 +2,11 @@ package appbookmark
 
 
 type AppBookmarkTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_bookmark#create AppBookmark#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_bookmark#create AppBookmark#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_bookmark#read AppBookmark#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_bookmark#read AppBookmark#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_bookmark#update AppBookmark#update}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_bookmark#update AppBookmark#update}.
 	Update *string `field:"optional" json:"update" yaml:"update"`
 }
 

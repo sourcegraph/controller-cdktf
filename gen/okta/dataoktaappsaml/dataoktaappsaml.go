@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/okta/dataoktaappsaml/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/data-sources/app_saml okta_app_saml}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/app_saml okta_app_saml}.
 type DataOktaAppSaml interface {
 	cdktf.TerraformDataSource
 	AccessibilityErrorRedirectUrl() *string
@@ -84,6 +84,7 @@ type DataOktaAppSaml interface {
 	SetRequestCompressed(val interface{})
 	RequestCompressedInput() interface{}
 	ResponseSigned() cdktf.IResolvable
+	SamlSignedRequestEnabled() cdktf.IResolvable
 	SignatureAlgorithm() *string
 	SingleLogoutCertificate() *string
 	SingleLogoutIssuer() *string
@@ -624,6 +625,16 @@ func (j *jsiiProxy_DataOktaAppSaml) ResponseSigned() cdktf.IResolvable {
 	return returns
 }
 
+func (j *jsiiProxy_DataOktaAppSaml) SamlSignedRequestEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"samlSignedRequestEnabled",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataOktaAppSaml) SignatureAlgorithm() *string {
 	var returns *string
 	_jsii_.Get(
@@ -835,7 +846,7 @@ func (j *jsiiProxy_DataOktaAppSaml) Users() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/data-sources/app_saml okta_app_saml} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/app_saml okta_app_saml} Data Source.
 func NewDataOktaAppSaml(scope constructs.Construct, id *string, config *DataOktaAppSamlConfig) DataOktaAppSaml {
 	_init_.Initialize()
 
@@ -853,7 +864,7 @@ func NewDataOktaAppSaml(scope constructs.Construct, id *string, config *DataOkta
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/data-sources/app_saml okta_app_saml} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/app_saml okta_app_saml} Data Source.
 func NewDataOktaAppSaml_Override(d DataOktaAppSaml, scope constructs.Construct, id *string, config *DataOktaAppSamlConfig) {
 	_init_.Initialize()
 

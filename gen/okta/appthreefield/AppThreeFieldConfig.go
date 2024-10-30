@@ -21,136 +21,122 @@ type AppThreeFieldConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Login button field CSS selector.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_three_field#button_selector AppThreeField#button_selector}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_three_field#button_selector AppThreeField#button_selector}
 	ButtonSelector *string `field:"required" json:"buttonSelector" yaml:"buttonSelector"`
 	// Extra field CSS selector.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_three_field#extra_field_selector AppThreeField#extra_field_selector}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_three_field#extra_field_selector AppThreeField#extra_field_selector}
 	ExtraFieldSelector *string `field:"required" json:"extraFieldSelector" yaml:"extraFieldSelector"`
 	// Value for extra form field.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_three_field#extra_field_value AppThreeField#extra_field_value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_three_field#extra_field_value AppThreeField#extra_field_value}
 	ExtraFieldValue *string `field:"required" json:"extraFieldValue" yaml:"extraFieldValue"`
-	// Pretty name of app.
+	// The Application's display name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_three_field#label AppThreeField#label}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_three_field#label AppThreeField#label}
 	Label *string `field:"required" json:"label" yaml:"label"`
 	// Login password field CSS selector.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_three_field#password_selector AppThreeField#password_selector}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_three_field#password_selector AppThreeField#password_selector}
 	PasswordSelector *string `field:"required" json:"passwordSelector" yaml:"passwordSelector"`
 	// Login URL.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_three_field#url AppThreeField#url}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_three_field#url AppThreeField#url}
 	Url *string `field:"required" json:"url" yaml:"url"`
 	// Login username field CSS selector.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_three_field#username_selector AppThreeField#username_selector}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_three_field#username_selector AppThreeField#username_selector}
 	UsernameSelector *string `field:"required" json:"usernameSelector" yaml:"usernameSelector"`
 	// Custom error page URL.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_three_field#accessibility_error_redirect_url AppThreeField#accessibility_error_redirect_url}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_three_field#accessibility_error_redirect_url AppThreeField#accessibility_error_redirect_url}
 	AccessibilityErrorRedirectUrl *string `field:"optional" json:"accessibilityErrorRedirectUrl" yaml:"accessibilityErrorRedirectUrl"`
 	// Custom login page URL.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_three_field#accessibility_login_redirect_url AppThreeField#accessibility_login_redirect_url}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_three_field#accessibility_login_redirect_url AppThreeField#accessibility_login_redirect_url}
 	AccessibilityLoginRedirectUrl *string `field:"optional" json:"accessibilityLoginRedirectUrl" yaml:"accessibilityLoginRedirectUrl"`
-	// Enable self service.
+	// Enable self service. Default is `false`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_three_field#accessibility_self_service AppThreeField#accessibility_self_service}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_three_field#accessibility_self_service AppThreeField#accessibility_self_service}
 	AccessibilitySelfService interface{} `field:"optional" json:"accessibilitySelfService" yaml:"accessibilitySelfService"`
 	// Application notes for admins.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_three_field#admin_note AppThreeField#admin_note}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_three_field#admin_note AppThreeField#admin_note}
 	AdminNote *string `field:"optional" json:"adminNote" yaml:"adminNote"`
-	// Displays specific appLinks for the app.
+	// Displays specific appLinks for the app. The value for each application link should be boolean.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_three_field#app_links_json AppThreeField#app_links_json}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_three_field#app_links_json AppThreeField#app_links_json}
 	AppLinksJson *string `field:"optional" json:"appLinksJson" yaml:"appLinksJson"`
 	// Display auto submit toolbar.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_three_field#auto_submit_toolbar AppThreeField#auto_submit_toolbar}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_three_field#auto_submit_toolbar AppThreeField#auto_submit_toolbar}
 	AutoSubmitToolbar interface{} `field:"optional" json:"autoSubmitToolbar" yaml:"autoSubmitToolbar"`
-	// Application credentials scheme.
+	// Application credentials scheme. One of: `EDIT_USERNAME_AND_PASSWORD`, `ADMIN_SETS_CREDENTIALS`, `EDIT_PASSWORD_ONLY`, `EXTERNAL_PASSWORD_SYNC`, or `SHARED_USERNAME_AND_PASSWORD`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_three_field#credentials_scheme AppThreeField#credentials_scheme}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_three_field#credentials_scheme AppThreeField#credentials_scheme}
 	CredentialsScheme *string `field:"optional" json:"credentialsScheme" yaml:"credentialsScheme"`
 	// Application notes for end users.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_three_field#enduser_note AppThreeField#enduser_note}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_three_field#enduser_note AppThreeField#enduser_note}
 	EnduserNote *string `field:"optional" json:"enduserNote" yaml:"enduserNote"`
-	// Groups associated with the application.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_three_field#groups AppThreeField#groups}
-	Groups *[]*string `field:"optional" json:"groups" yaml:"groups"`
 	// Do not display application icon on mobile app.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_three_field#hide_ios AppThreeField#hide_ios}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_three_field#hide_ios AppThreeField#hide_ios}
 	HideIos interface{} `field:"optional" json:"hideIos" yaml:"hideIos"`
 	// Do not display application icon to users.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_three_field#hide_web AppThreeField#hide_web}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_three_field#hide_web AppThreeField#hide_web}
 	HideWeb interface{} `field:"optional" json:"hideWeb" yaml:"hideWeb"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_three_field#id AppThreeField#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_three_field#id AppThreeField#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Local path to logo of the application.
+	// Local file path to the logo.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_three_field#logo AppThreeField#logo}
+	// The file must be in PNG, JPG, or GIF format, and less than 1 MB in size.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_three_field#logo AppThreeField#logo}
 	Logo *string `field:"optional" json:"logo" yaml:"logo"`
-	// Allow user to reveal password.
+	// Allow user to reveal password. It can not be set to `true` if `credentials_scheme` is `ADMIN_SETS_CREDENTIALS`, `SHARED_USERNAME_AND_PASSWORD` or `EXTERNAL_PASSWORD_SYNC`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_three_field#reveal_password AppThreeField#reveal_password}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_three_field#reveal_password AppThreeField#reveal_password}
 	RevealPassword interface{} `field:"optional" json:"revealPassword" yaml:"revealPassword"`
 	// Shared password, required for certain schemes.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_three_field#shared_password AppThreeField#shared_password}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_three_field#shared_password AppThreeField#shared_password}
 	SharedPassword *string `field:"optional" json:"sharedPassword" yaml:"sharedPassword"`
 	// Shared username, required for certain schemes.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_three_field#shared_username AppThreeField#shared_username}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_three_field#shared_username AppThreeField#shared_username}
 	SharedUsername *string `field:"optional" json:"sharedUsername" yaml:"sharedUsername"`
-	// Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources.
+	// Status of application. By default, it is `ACTIVE`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_three_field#skip_groups AppThreeField#skip_groups}
-	SkipGroups interface{} `field:"optional" json:"skipGroups" yaml:"skipGroups"`
-	// Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_three_field#skip_users AppThreeField#skip_users}
-	SkipUsers interface{} `field:"optional" json:"skipUsers" yaml:"skipUsers"`
-	// Status of application.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_three_field#status AppThreeField#status}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_three_field#status AppThreeField#status}
 	Status *string `field:"optional" json:"status" yaml:"status"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_three_field#timeouts AppThreeField#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_three_field#timeouts AppThreeField#timeouts}
 	Timeouts *AppThreeFieldTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 	// A regex that further restricts URL to the specified regex.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_three_field#url_regex AppThreeField#url_regex}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_three_field#url_regex AppThreeField#url_regex}
 	UrlRegex *string `field:"optional" json:"urlRegex" yaml:"urlRegex"`
-	// Username template.
+	// Username template. Default: `${source.login}`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_three_field#user_name_template AppThreeField#user_name_template}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_three_field#user_name_template AppThreeField#user_name_template}
 	UserNameTemplate *string `field:"optional" json:"userNameTemplate" yaml:"userNameTemplate"`
-	// Push username on update.
+	// Push username on update. Valid values: `PUSH` and `DONT_PUSH`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_three_field#user_name_template_push_status AppThreeField#user_name_template_push_status}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_three_field#user_name_template_push_status AppThreeField#user_name_template_push_status}
 	UserNameTemplatePushStatus *string `field:"optional" json:"userNameTemplatePushStatus" yaml:"userNameTemplatePushStatus"`
 	// Username template suffix.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_three_field#user_name_template_suffix AppThreeField#user_name_template_suffix}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_three_field#user_name_template_suffix AppThreeField#user_name_template_suffix}
 	UserNameTemplateSuffix *string `field:"optional" json:"userNameTemplateSuffix" yaml:"userNameTemplateSuffix"`
-	// Username template type.
+	// Username template type. Default: `BUILT_IN`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_three_field#user_name_template_type AppThreeField#user_name_template_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_three_field#user_name_template_type AppThreeField#user_name_template_type}
 	UserNameTemplateType *string `field:"optional" json:"userNameTemplateType" yaml:"userNameTemplateType"`
-	// users block.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_three_field#users AppThreeField#users}
-	Users interface{} `field:"optional" json:"users" yaml:"users"`
 }
 

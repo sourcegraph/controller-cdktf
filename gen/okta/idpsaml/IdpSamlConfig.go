@@ -19,84 +19,136 @@ type IdpSamlConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/idp_saml#issuer IdpSaml#issuer}.
+	// URI that identifies the issuer.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/idp_saml#issuer IdpSaml#issuer}
 	Issuer *string `field:"required" json:"issuer" yaml:"issuer"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/idp_saml#kid IdpSaml#kid}.
+	// The ID of the signing key.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/idp_saml#kid IdpSaml#kid}
 	Kid *string `field:"required" json:"kid" yaml:"kid"`
 	// Name of the IdP.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/idp_saml#name IdpSaml#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/idp_saml#name IdpSaml#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/idp_saml#sso_url IdpSaml#sso_url}.
+	// URL of binding-specific endpoint to send an AuthnRequest message to IdP.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/idp_saml#sso_url IdpSaml#sso_url}
 	SsoUrl *string `field:"required" json:"ssoUrl" yaml:"ssoUrl"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/idp_saml#account_link_action IdpSaml#account_link_action}.
+	// Specifies the account linking action for an IdP user. Default: `AUTO`.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/idp_saml#account_link_action IdpSaml#account_link_action}
 	AccountLinkAction *string `field:"optional" json:"accountLinkAction" yaml:"accountLinkAction"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/idp_saml#account_link_group_include IdpSaml#account_link_group_include}.
+	// Group memberships to determine link candidates.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/idp_saml#account_link_group_include IdpSaml#account_link_group_include}
 	AccountLinkGroupInclude *[]*string `field:"optional" json:"accountLinkGroupInclude" yaml:"accountLinkGroupInclude"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/idp_saml#acs_binding IdpSaml#acs_binding}.
-	AcsBinding *string `field:"optional" json:"acsBinding" yaml:"acsBinding"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/idp_saml#acs_type IdpSaml#acs_type}.
+	// The type of ACS. It can be `INSTANCE` or `ORG`. Default: `INSTANCE`.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/idp_saml#acs_type IdpSaml#acs_type}
 	AcsType *string `field:"optional" json:"acsType" yaml:"acsType"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/idp_saml#deprovisioned_action IdpSaml#deprovisioned_action}.
+	// Action for a previously deprovisioned IdP user during authentication. Can be `NONE` or `REACTIVATE`. Default: `NONE`.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/idp_saml#deprovisioned_action IdpSaml#deprovisioned_action}
 	DeprovisionedAction *string `field:"optional" json:"deprovisionedAction" yaml:"deprovisionedAction"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/idp_saml#groups_action IdpSaml#groups_action}.
+	// Provisioning action for IdP user's group memberships. It can be `NONE`, `SYNC`, `APPEND`, or `ASSIGN`. Default: `NONE`.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/idp_saml#groups_action IdpSaml#groups_action}
 	GroupsAction *string `field:"optional" json:"groupsAction" yaml:"groupsAction"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/idp_saml#groups_assignment IdpSaml#groups_assignment}.
+	// List of Okta Group IDs to add an IdP user as a member with the `ASSIGN` `groups_action`.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/idp_saml#groups_assignment IdpSaml#groups_assignment}
 	GroupsAssignment *[]*string `field:"optional" json:"groupsAssignment" yaml:"groupsAssignment"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/idp_saml#groups_attribute IdpSaml#groups_attribute}.
+	// IdP user profile attribute name (case-insensitive) for an array value that contains group memberships.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/idp_saml#groups_attribute IdpSaml#groups_attribute}
 	GroupsAttribute *string `field:"optional" json:"groupsAttribute" yaml:"groupsAttribute"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/idp_saml#groups_filter IdpSaml#groups_filter}.
+	// Whitelist of Okta Group identifiers that are allowed for the `APPEND` or `SYNC` `groups_action`.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/idp_saml#groups_filter IdpSaml#groups_filter}
 	GroupsFilter *[]*string `field:"optional" json:"groupsFilter" yaml:"groupsFilter"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/idp_saml#id IdpSaml#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/idp_saml#id IdpSaml#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Indicates whether Okta uses the original Okta org domain URL, or a custom domain URL.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/idp_saml#issuer_mode IdpSaml#issuer_mode}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/idp_saml#issuer_mode IdpSaml#issuer_mode}
 	IssuerMode *string `field:"optional" json:"issuerMode" yaml:"issuerMode"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/idp_saml#max_clock_skew IdpSaml#max_clock_skew}.
+	// Maximum allowable clock-skew when processing messages from the IdP.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/idp_saml#max_clock_skew IdpSaml#max_clock_skew}
 	MaxClockSkew *float64 `field:"optional" json:"maxClockSkew" yaml:"maxClockSkew"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/idp_saml#name_format IdpSaml#name_format}.
+	// The name identifier format to use. By default `urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified`.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/idp_saml#name_format IdpSaml#name_format}
 	NameFormat *string `field:"optional" json:"nameFormat" yaml:"nameFormat"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/idp_saml#profile_master IdpSaml#profile_master}.
+	// Determines if the IdP should act as a source of truth for user profile attributes.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/idp_saml#profile_master IdpSaml#profile_master}
 	ProfileMaster interface{} `field:"optional" json:"profileMaster" yaml:"profileMaster"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/idp_saml#provisioning_action IdpSaml#provisioning_action}.
+	// Provisioning action for an IdP user during authentication. Default: `AUTO`.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/idp_saml#provisioning_action IdpSaml#provisioning_action}
 	ProvisioningAction *string `field:"optional" json:"provisioningAction" yaml:"provisioningAction"`
-	// The XML digital Signature Algorithm used when signing an <AuthnRequest> message.
+	// The XML digital Signature Algorithm used when signing an `AuthnRequest` message. It can be `SHA-256` or `SHA-1`. Default: `SHA-256`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/idp_saml#request_signature_algorithm IdpSaml#request_signature_algorithm}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/idp_saml#request_signature_algorithm IdpSaml#request_signature_algorithm}
 	RequestSignatureAlgorithm *string `field:"optional" json:"requestSignatureAlgorithm" yaml:"requestSignatureAlgorithm"`
-	// Specifies whether to digitally sign <AuthnRequest> messages to the IdP.
+	// Specifies whether to digitally sign an AuthnRequest messages to the IdP. It can be `REQUEST` or `NONE`. Default: `REQUEST`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/idp_saml#request_signature_scope IdpSaml#request_signature_scope}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/idp_saml#request_signature_scope IdpSaml#request_signature_scope}
 	RequestSignatureScope *string `field:"optional" json:"requestSignatureScope" yaml:"requestSignatureScope"`
-	// The minimum XML digital Signature Algorithm allowed when verifying a <SAMLResponse> message or <Assertion> element.
+	// The minimum XML digital signature algorithm allowed when verifying a `SAMLResponse` message or Assertion element.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/idp_saml#response_signature_algorithm IdpSaml#response_signature_algorithm}
+	// It can be `SHA-256` or `SHA-1`. Default: `SHA-256`
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/idp_saml#response_signature_algorithm IdpSaml#response_signature_algorithm}
 	ResponseSignatureAlgorithm *string `field:"optional" json:"responseSignatureAlgorithm" yaml:"responseSignatureAlgorithm"`
-	// Specifies whether to verify a <SAMLResponse> message or <Assertion> element XML digital signature.
+	// Specifies whether to verify a `SAMLResponse` message or Assertion element XML digital signature.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/idp_saml#response_signature_scope IdpSaml#response_signature_scope}
+	// It can be `RESPONSE`, `ASSERTION`, or `ANY`. Default: `ANY`
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/idp_saml#response_signature_scope IdpSaml#response_signature_scope}
 	ResponseSignatureScope *string `field:"optional" json:"responseSignatureScope" yaml:"responseSignatureScope"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/idp_saml#sso_binding IdpSaml#sso_binding}.
+	// The method of making an SSO request. It can be set to `HTTP-POST` or `HTTP-REDIRECT`. Default: `HTTP-POST`.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/idp_saml#sso_binding IdpSaml#sso_binding}
 	SsoBinding *string `field:"optional" json:"ssoBinding" yaml:"ssoBinding"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/idp_saml#sso_destination IdpSaml#sso_destination}.
+	// URI reference indicating the address to which the AuthnRequest message is sent.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/idp_saml#sso_destination IdpSaml#sso_destination}
 	SsoDestination *string `field:"optional" json:"ssoDestination" yaml:"ssoDestination"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/idp_saml#status IdpSaml#status}.
+	// Default to `ACTIVE`.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/idp_saml#status IdpSaml#status}
 	Status *string `field:"optional" json:"status" yaml:"status"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/idp_saml#subject_filter IdpSaml#subject_filter}.
+	// Optional regular expression pattern used to filter untrusted IdP usernames.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/idp_saml#subject_filter IdpSaml#subject_filter}
 	SubjectFilter *string `field:"optional" json:"subjectFilter" yaml:"subjectFilter"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/idp_saml#subject_format IdpSaml#subject_format}.
+	// The name format.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/idp_saml#subject_format IdpSaml#subject_format}
 	SubjectFormat *[]*string `field:"optional" json:"subjectFormat" yaml:"subjectFormat"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/idp_saml#subject_match_attribute IdpSaml#subject_match_attribute}.
+	// Okta user profile attribute for matching transformed IdP username. Only for matchType `CUSTOM_ATTRIBUTE`.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/idp_saml#subject_match_attribute IdpSaml#subject_match_attribute}
 	SubjectMatchAttribute *string `field:"optional" json:"subjectMatchAttribute" yaml:"subjectMatchAttribute"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/idp_saml#subject_match_type IdpSaml#subject_match_type}.
+	// Determines the Okta user profile attribute match conditions for account linking and authentication of the transformed IdP username.
+	//
+	// By default, it is set to `USERNAME`. It can be set to `USERNAME`, `EMAIL`, `USERNAME_OR_EMAIL` or `CUSTOM_ATTRIBUTE`.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/idp_saml#subject_match_type IdpSaml#subject_match_type}
 	SubjectMatchType *string `field:"optional" json:"subjectMatchType" yaml:"subjectMatchType"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/idp_saml#suspended_action IdpSaml#suspended_action}.
+	// Action for a previously suspended IdP user during authentication. Can be `NONE` or `REACTIVATE`. Default: `NONE`.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/idp_saml#suspended_action IdpSaml#suspended_action}
 	SuspendedAction *string `field:"optional" json:"suspendedAction" yaml:"suspendedAction"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/idp_saml#username_template IdpSaml#username_template}.
+	// Okta EL Expression to generate or transform a unique username for the IdP user. Default: `idpuser.email`.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/idp_saml#username_template IdpSaml#username_template}
 	UsernameTemplate *string `field:"optional" json:"usernameTemplate" yaml:"usernameTemplate"`
 }
 

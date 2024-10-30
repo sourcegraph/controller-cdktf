@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/okta/dataoktadefaultpolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/data-sources/default_policy okta_default_policy}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/default_policy okta_default_policy}.
 type DataOktaDefaultPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -285,7 +285,7 @@ func (j *jsiiProxy_DataOktaDefaultPolicy) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/data-sources/default_policy okta_default_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/default_policy okta_default_policy} Data Source.
 func NewDataOktaDefaultPolicy(scope constructs.Construct, id *string, config *DataOktaDefaultPolicyConfig) DataOktaDefaultPolicy {
 	_init_.Initialize()
 
@@ -303,7 +303,7 @@ func NewDataOktaDefaultPolicy(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/data-sources/default_policy okta_default_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/default_policy okta_default_policy} Data Source.
 func NewDataOktaDefaultPolicy_Override(d DataOktaDefaultPolicy, scope constructs.Construct, id *string, config *DataOktaDefaultPolicyConfig) {
 	_init_.Initialize()
 

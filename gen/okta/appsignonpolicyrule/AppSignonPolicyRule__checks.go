@@ -389,6 +389,14 @@ func (j *jsiiProxy_AppSignonPolicyRule) validateSetCustomExpressionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_AppSignonPolicyRule) validateSetDeviceAssurancesIncludedParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AppSignonPolicyRule) validateSetDeviceIsManagedParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -572,6 +580,14 @@ func (j *jsiiProxy_AppSignonPolicyRule) validateSetProvisionersParameters(val *[
 }
 
 func (j *jsiiProxy_AppSignonPolicyRule) validateSetReAuthenticationFrequencyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AppSignonPolicyRule) validateSetRiskScoreParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

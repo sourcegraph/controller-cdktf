@@ -76,10 +76,6 @@ func (a *jsiiProxy_AppSecurePasswordStore) validatePutTimeoutsParameters(value *
 	return nil
 }
 
-func (a *jsiiProxy_AppSecurePasswordStore) validatePutUsersParameters(value interface{}) error {
-	return nil
-}
-
 func validateAppSecurePasswordStore_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -133,10 +129,6 @@ func (j *jsiiProxy_AppSecurePasswordStore) validateSetCredentialsSchemeParameter
 }
 
 func (j *jsiiProxy_AppSecurePasswordStore) validateSetEnduserNoteParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_AppSecurePasswordStore) validateSetGroupsParameters(val *[]*string) error {
 	return nil
 }
 
@@ -205,14 +197,6 @@ func (j *jsiiProxy_AppSecurePasswordStore) validateSetSharedPasswordParameters(v
 }
 
 func (j *jsiiProxy_AppSecurePasswordStore) validateSetSharedUsernameParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_AppSecurePasswordStore) validateSetSkipGroupsParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_AppSecurePasswordStore) validateSetSkipUsersParameters(val interface{}) error {
 	return nil
 }
 

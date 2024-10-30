@@ -21,7 +21,7 @@ type DataOktaBrandConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Brand ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/data-sources/brand#brand_id DataOktaBrand#brand_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/brand#brand_id DataOktaBrand#brand_id}
 	BrandId *string `field:"required" json:"brandId" yaml:"brandId"`
 }
 

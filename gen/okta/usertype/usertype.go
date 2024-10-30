@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/okta/usertype/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/user_type okta_user_type}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/user_type okta_user_type}.
 type UserType interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -376,7 +376,7 @@ func (j *jsiiProxy_UserType) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/user_type okta_user_type} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/user_type okta_user_type} Resource.
 func NewUserType(scope constructs.Construct, id *string, config *UserTypeConfig) UserType {
 	_init_.Initialize()
 
@@ -394,7 +394,7 @@ func NewUserType(scope constructs.Construct, id *string, config *UserTypeConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/user_type okta_user_type} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/user_type okta_user_type} Resource.
 func NewUserType_Override(u UserType, scope constructs.Construct, id *string, config *UserTypeConfig) {
 	_init_.Initialize()
 

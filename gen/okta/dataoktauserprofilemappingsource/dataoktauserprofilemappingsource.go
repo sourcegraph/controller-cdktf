@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/okta/dataoktauserprofilemappingsource/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/data-sources/user_profile_mapping_source okta_user_profile_mapping_source}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/user_profile_mapping_source okta_user_profile_mapping_source}.
 type DataOktaUserProfileMappingSource interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -271,7 +271,7 @@ func (j *jsiiProxy_DataOktaUserProfileMappingSource) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/data-sources/user_profile_mapping_source okta_user_profile_mapping_source} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/user_profile_mapping_source okta_user_profile_mapping_source} Data Source.
 func NewDataOktaUserProfileMappingSource(scope constructs.Construct, id *string, config *DataOktaUserProfileMappingSourceConfig) DataOktaUserProfileMappingSource {
 	_init_.Initialize()
 
@@ -289,7 +289,7 @@ func NewDataOktaUserProfileMappingSource(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/data-sources/user_profile_mapping_source okta_user_profile_mapping_source} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/user_profile_mapping_source okta_user_profile_mapping_source} Data Source.
 func NewDataOktaUserProfileMappingSource_Override(d DataOktaUserProfileMappingSource, scope constructs.Construct, id *string, config *DataOktaUserProfileMappingSourceConfig) {
 	_init_.Initialize()
 

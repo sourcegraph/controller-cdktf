@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/okta/authserverclaim/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/auth_server_claim okta_auth_server_claim}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/auth_server_claim okta_auth_server_claim}.
 type AuthServerClaim interface {
 	cdktf.TerraformResource
 	AlwaysIncludeInToken() interface{}
@@ -519,7 +519,7 @@ func (j *jsiiProxy_AuthServerClaim) ValueTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/auth_server_claim okta_auth_server_claim} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/auth_server_claim okta_auth_server_claim} Resource.
 func NewAuthServerClaim(scope constructs.Construct, id *string, config *AuthServerClaimConfig) AuthServerClaim {
 	_init_.Initialize()
 
@@ -537,7 +537,7 @@ func NewAuthServerClaim(scope constructs.Construct, id *string, config *AuthServ
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/auth_server_claim okta_auth_server_claim} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/auth_server_claim okta_auth_server_claim} Resource.
 func NewAuthServerClaim_Override(a AuthServerClaim, scope constructs.Construct, id *string, config *AuthServerClaimConfig) {
 	_init_.Initialize()
 

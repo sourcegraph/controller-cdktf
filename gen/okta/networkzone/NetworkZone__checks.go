@@ -350,6 +350,14 @@ func (j *jsiiProxy_NetworkZone) validateSetDynamicLocationsParameters(val *[]*st
 	return nil
 }
 
+func (j *jsiiProxy_NetworkZone) validateSetDynamicLocationsExcludeParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_NetworkZone) validateSetDynamicProxyTypeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -367,6 +375,22 @@ func (j *jsiiProxy_NetworkZone) validateSetGatewaysParameters(val *[]*string) er
 }
 
 func (j *jsiiProxy_NetworkZone) validateSetIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_NetworkZone) validateSetIpServiceCategoriesExcludeParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_NetworkZone) validateSetIpServiceCategoriesIncludeParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -437,6 +461,14 @@ func (j *jsiiProxy_NetworkZone) validateSetProvisionersParameters(val *[]interfa
 }
 
 func (j *jsiiProxy_NetworkZone) validateSetProxiesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_NetworkZone) validateSetStatusParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

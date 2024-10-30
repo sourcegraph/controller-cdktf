@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/okta/brand/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/brand okta_brand}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/brand okta_brand}.
 type Brand interface {
 	cdktf.TerraformResource
 	AgreeToCustomPrivacyPolicy() interface{}
@@ -33,10 +33,20 @@ type Brand interface {
 	CustomPrivacyPolicyUrl() *string
 	SetCustomPrivacyPolicyUrl(val *string)
 	CustomPrivacyPolicyUrlInput() *string
+	DefaultAppAppInstanceId() *string
+	SetDefaultAppAppInstanceId(val *string)
+	DefaultAppAppInstanceIdInput() *string
+	DefaultAppAppLinkName() *string
+	SetDefaultAppAppLinkName(val *string)
+	DefaultAppAppLinkNameInput() *string
+	DefaultAppClassicApplicationUri() *string
+	SetDefaultAppClassicApplicationUri(val *string)
+	DefaultAppClassicApplicationUriInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EmailDomainId() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -46,11 +56,18 @@ type Brand interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
+	IsDefault() cdktf.IResolvable
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	Links() *string
+	Locale() *string
+	SetLocale(val *string)
+	LocaleInput() *string
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -118,6 +135,10 @@ type Brand interface {
 	ResetAgreeToCustomPrivacyPolicy()
 	ResetBrandId()
 	ResetCustomPrivacyPolicyUrl()
+	ResetDefaultAppAppInstanceId()
+	ResetDefaultAppAppLinkName()
+	ResetDefaultAppClassicApplicationUri()
+	ResetLocale()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -240,11 +261,81 @@ func (j *jsiiProxy_Brand) CustomPrivacyPolicyUrlInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Brand) DefaultAppAppInstanceId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultAppAppInstanceId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Brand) DefaultAppAppInstanceIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultAppAppInstanceIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Brand) DefaultAppAppLinkName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultAppAppLinkName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Brand) DefaultAppAppLinkNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultAppAppLinkNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Brand) DefaultAppClassicApplicationUri() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultAppClassicApplicationUri",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Brand) DefaultAppClassicApplicationUriInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultAppClassicApplicationUriInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Brand) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Brand) EmailDomainId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"emailDomainId",
 		&returns,
 	)
 	return returns
@@ -290,6 +381,16 @@ func (j *jsiiProxy_Brand) Id() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Brand) IsDefault() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"isDefault",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Brand) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -305,6 +406,46 @@ func (j *jsiiProxy_Brand) Links() *string {
 	_jsii_.Get(
 		j,
 		"links",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Brand) Locale() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"locale",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Brand) LocaleInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"localeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Brand) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Brand) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
 		&returns,
 	)
 	return returns
@@ -401,7 +542,7 @@ func (j *jsiiProxy_Brand) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/brand okta_brand} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/brand okta_brand} Resource.
 func NewBrand(scope constructs.Construct, id *string, config *BrandConfig) Brand {
 	_init_.Initialize()
 
@@ -419,7 +560,7 @@ func NewBrand(scope constructs.Construct, id *string, config *BrandConfig) Brand
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/brand okta_brand} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/brand okta_brand} Resource.
 func NewBrand_Override(b Brand, scope constructs.Construct, id *string, config *BrandConfig) {
 	_init_.Initialize()
 
@@ -485,6 +626,39 @@ func (j *jsiiProxy_Brand)SetCustomPrivacyPolicyUrl(val *string) {
 	)
 }
 
+func (j *jsiiProxy_Brand)SetDefaultAppAppInstanceId(val *string) {
+	if err := j.validateSetDefaultAppAppInstanceIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultAppAppInstanceId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Brand)SetDefaultAppAppLinkName(val *string) {
+	if err := j.validateSetDefaultAppAppLinkNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultAppAppLinkName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Brand)SetDefaultAppClassicApplicationUri(val *string) {
+	if err := j.validateSetDefaultAppClassicApplicationUriParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultAppClassicApplicationUri",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Brand)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
@@ -508,6 +682,28 @@ func (j *jsiiProxy_Brand)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Brand)SetLocale(val *string) {
+	if err := j.validateSetLocaleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"locale",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Brand)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
 		val,
 	)
 }
@@ -915,6 +1111,38 @@ func (b *jsiiProxy_Brand) ResetCustomPrivacyPolicyUrl() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetCustomPrivacyPolicyUrl",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_Brand) ResetDefaultAppAppInstanceId() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetDefaultAppAppInstanceId",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_Brand) ResetDefaultAppAppLinkName() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetDefaultAppAppLinkName",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_Brand) ResetDefaultAppClassicApplicationUri() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetDefaultAppClassicApplicationUri",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_Brand) ResetLocale() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetLocale",
 		nil, // no parameters
 	)
 }

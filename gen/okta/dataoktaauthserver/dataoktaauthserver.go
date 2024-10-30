@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/okta/dataoktaauthserver/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/data-sources/auth_server okta_auth_server}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/auth_server okta_auth_server}.
 type DataOktaAuthServer interface {
 	cdktf.TerraformDataSource
 	Audiences() *[]*string
@@ -384,7 +384,7 @@ func (j *jsiiProxy_DataOktaAuthServer) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/data-sources/auth_server okta_auth_server} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/auth_server okta_auth_server} Data Source.
 func NewDataOktaAuthServer(scope constructs.Construct, id *string, config *DataOktaAuthServerConfig) DataOktaAuthServer {
 	_init_.Initialize()
 
@@ -402,7 +402,7 @@ func NewDataOktaAuthServer(scope constructs.Construct, id *string, config *DataO
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/data-sources/auth_server okta_auth_server} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/auth_server okta_auth_server} Data Source.
 func NewDataOktaAuthServer_Override(d DataOktaAuthServer, scope constructs.Construct, id *string, config *DataOktaAuthServerConfig) {
 	_init_.Initialize()
 

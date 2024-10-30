@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/okta/eventhookverification/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/event_hook_verification okta_event_hook_verification}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/event_hook_verification okta_event_hook_verification}.
 type EventHookVerification interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -330,7 +330,7 @@ func (j *jsiiProxy_EventHookVerification) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/event_hook_verification okta_event_hook_verification} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/event_hook_verification okta_event_hook_verification} Resource.
 func NewEventHookVerification(scope constructs.Construct, id *string, config *EventHookVerificationConfig) EventHookVerification {
 	_init_.Initialize()
 
@@ -348,7 +348,7 @@ func NewEventHookVerification(scope constructs.Construct, id *string, config *Ev
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/event_hook_verification okta_event_hook_verification} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/event_hook_verification okta_event_hook_verification} Resource.
 func NewEventHookVerification_Override(e EventHookVerification, scope constructs.Construct, id *string, config *EventHookVerificationConfig) {
 	_init_.Initialize()
 

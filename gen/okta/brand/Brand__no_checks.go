@@ -108,7 +108,27 @@ func (j *jsiiProxy_Brand) validateSetCustomPrivacyPolicyUrlParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_Brand) validateSetDefaultAppAppInstanceIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Brand) validateSetDefaultAppAppLinkNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Brand) validateSetDefaultAppClassicApplicationUriParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Brand) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_Brand) validateSetLocaleParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Brand) validateSetNameParameters(val *string) error {
 	return nil
 }
 

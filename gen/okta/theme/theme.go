@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/okta/theme/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/theme okta_theme}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/theme okta_theme}.
 type Theme interface {
 	cdktf.TerraformResource
 	BackgroundImage() *string
@@ -649,7 +649,7 @@ func (j *jsiiProxy_Theme) ThemeIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/theme okta_theme} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/theme okta_theme} Resource.
 func NewTheme(scope constructs.Construct, id *string, config *ThemeConfig) Theme {
 	_init_.Initialize()
 
@@ -667,7 +667,7 @@ func NewTheme(scope constructs.Construct, id *string, config *ThemeConfig) Theme
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/theme okta_theme} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/theme okta_theme} Resource.
 func NewTheme_Override(t Theme, scope constructs.Construct, id *string, config *ThemeConfig) {
 	_init_.Initialize()
 

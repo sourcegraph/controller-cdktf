@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/okta/appbookmark/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_bookmark okta_app_bookmark}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_bookmark okta_app_bookmark}.
 type AppBookmark interface {
 	cdktf.TerraformResource
 	AccessibilityErrorRedirectUrl() *string
@@ -60,9 +60,6 @@ type AppBookmark interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	Groups() *[]*string
-	SetGroups(val *[]*string)
-	GroupsInput() *[]*string
 	HideIos() interface{}
 	SetHideIos(val interface{})
 	HideIosInput() interface{}
@@ -100,12 +97,6 @@ type AppBookmark interface {
 	SetRequestIntegration(val interface{})
 	RequestIntegrationInput() interface{}
 	SignOnMode() *string
-	SkipGroups() interface{}
-	SetSkipGroups(val interface{})
-	SkipGroupsInput() interface{}
-	SkipUsers() interface{}
-	SetSkipUsers(val interface{})
-	SkipUsersInput() interface{}
 	Status() *string
 	SetStatus(val *string)
 	StatusInput() *string
@@ -120,8 +111,6 @@ type AppBookmark interface {
 	Url() *string
 	SetUrl(val *string)
 	UrlInput() *string
-	Users() AppBookmarkUsersList
-	UsersInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -166,7 +155,6 @@ type AppBookmark interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *AppBookmarkTimeouts)
-	PutUsers(value interface{})
 	ResetAccessibilityErrorRedirectUrl()
 	ResetAccessibilityLoginRedirectUrl()
 	ResetAccessibilitySelfService()
@@ -175,7 +163,6 @@ type AppBookmark interface {
 	ResetAuthenticationPolicy()
 	ResetAutoSubmitToolbar()
 	ResetEnduserNote()
-	ResetGroups()
 	ResetHideIos()
 	ResetHideWeb()
 	ResetId()
@@ -184,11 +171,8 @@ type AppBookmark interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRequestIntegration()
-	ResetSkipGroups()
-	ResetSkipUsers()
 	ResetStatus()
 	ResetTimeouts()
-	ResetUsers()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -447,26 +431,6 @@ func (j *jsiiProxy_AppBookmark) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AppBookmark) Groups() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"groups",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AppBookmark) GroupsInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"groupsInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_AppBookmark) HideIos() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -667,46 +631,6 @@ func (j *jsiiProxy_AppBookmark) SignOnMode() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AppBookmark) SkipGroups() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"skipGroups",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AppBookmark) SkipGroupsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"skipGroupsInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AppBookmark) SkipUsers() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"skipUsers",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AppBookmark) SkipUsersInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"skipUsersInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_AppBookmark) Status() *string {
 	var returns *string
 	_jsii_.Get(
@@ -797,28 +721,8 @@ func (j *jsiiProxy_AppBookmark) UrlInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AppBookmark) Users() AppBookmarkUsersList {
-	var returns AppBookmarkUsersList
-	_jsii_.Get(
-		j,
-		"users",
-		&returns,
-	)
-	return returns
-}
 
-func (j *jsiiProxy_AppBookmark) UsersInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"usersInput",
-		&returns,
-	)
-	return returns
-}
-
-
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_bookmark okta_app_bookmark} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_bookmark okta_app_bookmark} Resource.
 func NewAppBookmark(scope constructs.Construct, id *string, config *AppBookmarkConfig) AppBookmark {
 	_init_.Initialize()
 
@@ -836,7 +740,7 @@ func NewAppBookmark(scope constructs.Construct, id *string, config *AppBookmarkC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_bookmark okta_app_bookmark} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_bookmark okta_app_bookmark} Resource.
 func NewAppBookmark_Override(a AppBookmark, scope constructs.Construct, id *string, config *AppBookmarkConfig) {
 	_init_.Initialize()
 
@@ -973,17 +877,6 @@ func (j *jsiiProxy_AppBookmark)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_AppBookmark)SetGroups(val *[]*string) {
-	if err := j.validateSetGroupsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"groups",
-		val,
-	)
-}
-
 func (j *jsiiProxy_AppBookmark)SetHideIos(val interface{}) {
 	if err := j.validateSetHideIosParameters(val); err != nil {
 		panic(err)
@@ -1076,28 +969,6 @@ func (j *jsiiProxy_AppBookmark)SetRequestIntegration(val interface{}) {
 	_jsii_.Set(
 		j,
 		"requestIntegration",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AppBookmark)SetSkipGroups(val interface{}) {
-	if err := j.validateSetSkipGroupsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"skipGroups",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AppBookmark)SetSkipUsers(val interface{}) {
-	if err := j.validateSetSkipUsersParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"skipUsers",
 		val,
 	)
 }
@@ -1488,17 +1359,6 @@ func (a *jsiiProxy_AppBookmark) PutTimeouts(value *AppBookmarkTimeouts) {
 	)
 }
 
-func (a *jsiiProxy_AppBookmark) PutUsers(value interface{}) {
-	if err := a.validatePutUsersParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		a,
-		"putUsers",
-		[]interface{}{value},
-	)
-}
-
 func (a *jsiiProxy_AppBookmark) ResetAccessibilityErrorRedirectUrl() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1563,14 +1423,6 @@ func (a *jsiiProxy_AppBookmark) ResetEnduserNote() {
 	)
 }
 
-func (a *jsiiProxy_AppBookmark) ResetGroups() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetGroups",
-		nil, // no parameters
-	)
-}
-
 func (a *jsiiProxy_AppBookmark) ResetHideIos() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1619,22 +1471,6 @@ func (a *jsiiProxy_AppBookmark) ResetRequestIntegration() {
 	)
 }
 
-func (a *jsiiProxy_AppBookmark) ResetSkipGroups() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetSkipGroups",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AppBookmark) ResetSkipUsers() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetSkipUsers",
-		nil, // no parameters
-	)
-}
-
 func (a *jsiiProxy_AppBookmark) ResetStatus() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1647,14 +1483,6 @@ func (a *jsiiProxy_AppBookmark) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetTimeouts",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AppBookmark) ResetUsers() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetUsers",
 		nil, // no parameters
 	)
 }

@@ -104,6 +104,10 @@ func (j *jsiiProxy_PolicyMfaDefault) validateSetExternalIdpParameters(val *map[s
 	return nil
 }
 
+func (j *jsiiProxy_PolicyMfaDefault) validateSetExternalIdpsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PolicyMfaDefault) validateSetFidoU2FParameters(val *map[string]*string) error {
 	return nil
 }

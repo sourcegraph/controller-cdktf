@@ -452,14 +452,6 @@ func (j *jsiiProxy_PolicyRuleMfa) validateSetNetworkIncludesParameters(val *[]*s
 	return nil
 }
 
-func (j *jsiiProxy_PolicyRuleMfa) validateSetPolicyidParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_PolicyRuleMfa) validateSetPolicyIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

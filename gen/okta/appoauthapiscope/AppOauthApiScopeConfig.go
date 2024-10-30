@@ -21,17 +21,17 @@ type AppOauthApiScopeConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// ID of the application.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_oauth_api_scope#app_id AppOauthApiScope#app_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_oauth_api_scope#app_id AppOauthApiScope#app_id}
 	AppId *string `field:"required" json:"appId" yaml:"appId"`
 	// The issuer of your Org Authorization Server, your Org URL.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_oauth_api_scope#issuer AppOauthApiScope#issuer}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_oauth_api_scope#issuer AppOauthApiScope#issuer}
 	Issuer *string `field:"required" json:"issuer" yaml:"issuer"`
 	// Scopes of the application for which consent is granted.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_oauth_api_scope#scopes AppOauthApiScope#scopes}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_oauth_api_scope#scopes AppOauthApiScope#scopes}
 	Scopes *[]*string `field:"required" json:"scopes" yaml:"scopes"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_oauth_api_scope#id AppOauthApiScope#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_oauth_api_scope#id AppOauthApiScope#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

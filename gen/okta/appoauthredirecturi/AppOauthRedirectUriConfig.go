@@ -19,13 +19,15 @@ type AppOauthRedirectUriConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_oauth_redirect_uri#app_id AppOauthRedirectUri#app_id}.
+	// OAuth application ID.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_oauth_redirect_uri#app_id AppOauthRedirectUri#app_id}
 	AppId *string `field:"required" json:"appId" yaml:"appId"`
 	// Redirect URI to append to Okta OIDC application.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_oauth_redirect_uri#uri AppOauthRedirectUri#uri}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_oauth_redirect_uri#uri AppOauthRedirectUri#uri}
 	Uri *string `field:"required" json:"uri" yaml:"uri"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_oauth_redirect_uri#id AppOauthRedirectUri#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_oauth_redirect_uri#id AppOauthRedirectUri#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

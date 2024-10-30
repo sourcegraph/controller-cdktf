@@ -112,6 +112,10 @@ func (j *jsiiProxy_AppSignonPolicyRule) validateSetCustomExpressionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_AppSignonPolicyRule) validateSetDeviceAssurancesIncludedParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppSignonPolicyRule) validateSetDeviceIsManagedParameters(val interface{}) error {
 	return nil
 }
@@ -173,6 +177,10 @@ func (j *jsiiProxy_AppSignonPolicyRule) validateSetProvisionersParameters(val *[
 }
 
 func (j *jsiiProxy_AppSignonPolicyRule) validateSetReAuthenticationFrequencyParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AppSignonPolicyRule) validateSetRiskScoreParameters(val *string) error {
 	return nil
 }
 

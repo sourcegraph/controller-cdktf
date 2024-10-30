@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/okta/group/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/group okta_group}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group okta_group}.
 type Group interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -73,9 +73,6 @@ type Group interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	Users() *[]*string
-	SetUsers(val *[]*string)
-	UsersInput() *[]*string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -126,7 +123,6 @@ type Group interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetSkipUsers()
-	ResetUsers()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -405,28 +401,8 @@ func (j *jsiiProxy_Group) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Group) Users() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"users",
-		&returns,
-	)
-	return returns
-}
 
-func (j *jsiiProxy_Group) UsersInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"usersInput",
-		&returns,
-	)
-	return returns
-}
-
-
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/group okta_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group okta_group} Resource.
 func NewGroup(scope constructs.Construct, id *string, config *GroupConfig) Group {
 	_init_.Initialize()
 
@@ -444,7 +420,7 @@ func NewGroup(scope constructs.Construct, id *string, config *GroupConfig) Group
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/group okta_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group okta_group} Resource.
 func NewGroup_Override(g Group, scope constructs.Construct, id *string, config *GroupConfig) {
 	_init_.Initialize()
 
@@ -574,17 +550,6 @@ func (j *jsiiProxy_Group)SetSkipUsers(val interface{}) {
 	_jsii_.Set(
 		j,
 		"skipUsers",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Group)SetUsers(val *[]*string) {
-	if err := j.validateSetUsersParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"users",
 		val,
 	)
 }
@@ -978,14 +943,6 @@ func (g *jsiiProxy_Group) ResetSkipUsers() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetSkipUsers",
-		nil, // no parameters
-	)
-}
-
-func (g *jsiiProxy_Group) ResetUsers() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetUsers",
 		nil, // no parameters
 	)
 }

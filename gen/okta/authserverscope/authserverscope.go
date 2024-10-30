@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/okta/authserverscope/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/auth_server_scope okta_auth_server_scope}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/auth_server_scope okta_auth_server_scope}.
 type AuthServerScope interface {
 	cdktf.TerraformResource
 	AuthServerId() *string
@@ -66,6 +66,9 @@ type AuthServerScope interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Optional() interface{}
+	SetOptional(val interface{})
+	OptionalInput() interface{}
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -132,6 +135,7 @@ type AuthServerScope interface {
 	ResetDisplayName()
 	ResetId()
 	ResetMetadataPublish()
+	ResetOptional()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -413,6 +417,26 @@ func (j *jsiiProxy_AuthServerScope) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_AuthServerScope) Optional() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"optional",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AuthServerScope) OptionalInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"optionalInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AuthServerScope) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -484,7 +508,7 @@ func (j *jsiiProxy_AuthServerScope) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/auth_server_scope okta_auth_server_scope} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/auth_server_scope okta_auth_server_scope} Resource.
 func NewAuthServerScope(scope constructs.Construct, id *string, config *AuthServerScopeConfig) AuthServerScope {
 	_init_.Initialize()
 
@@ -502,7 +526,7 @@ func NewAuthServerScope(scope constructs.Construct, id *string, config *AuthServ
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/auth_server_scope okta_auth_server_scope} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/auth_server_scope okta_auth_server_scope} Resource.
 func NewAuthServerScope_Override(a AuthServerScope, scope constructs.Construct, id *string, config *AuthServerScopeConfig) {
 	_init_.Initialize()
 
@@ -646,6 +670,17 @@ func (j *jsiiProxy_AuthServerScope)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AuthServerScope)SetOptional(val interface{}) {
+	if err := j.validateSetOptionalParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"optional",
 		val,
 	)
 }
@@ -1066,6 +1101,14 @@ func (a *jsiiProxy_AuthServerScope) ResetMetadataPublish() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetMetadataPublish",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AuthServerScope) ResetOptional() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetOptional",
 		nil, // no parameters
 	)
 }

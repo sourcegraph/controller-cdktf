@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/okta/dataoktabehavior/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/data-sources/behavior okta_behavior}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/behavior okta_behavior}.
 type DataOktaBehavior interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -319,7 +319,7 @@ func (j *jsiiProxy_DataOktaBehavior) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/data-sources/behavior okta_behavior} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/behavior okta_behavior} Data Source.
 func NewDataOktaBehavior(scope constructs.Construct, id *string, config *DataOktaBehaviorConfig) DataOktaBehavior {
 	_init_.Initialize()
 
@@ -337,7 +337,7 @@ func NewDataOktaBehavior(scope constructs.Construct, id *string, config *DataOkt
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/data-sources/behavior okta_behavior} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/behavior okta_behavior} Data Source.
 func NewDataOktaBehavior_Override(d DataOktaBehavior, scope constructs.Construct, id *string, config *DataOktaBehaviorConfig) {
 	_init_.Initialize()
 

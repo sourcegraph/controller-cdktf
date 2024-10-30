@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/okta/appsecurepasswordstore/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_secure_password_store okta_app_secure_password_store}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_secure_password_store okta_app_secure_password_store}.
 type AppSecurePasswordStore interface {
 	cdktf.TerraformResource
 	AccessibilityErrorRedirectUrl() *string
@@ -60,9 +60,6 @@ type AppSecurePasswordStore interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	Groups() *[]*string
-	SetGroups(val *[]*string)
-	GroupsInput() *[]*string
 	HideIos() interface{}
 	SetHideIos(val interface{})
 	HideIosInput() interface{}
@@ -127,12 +124,6 @@ type AppSecurePasswordStore interface {
 	SetSharedUsername(val *string)
 	SharedUsernameInput() *string
 	SignOnMode() *string
-	SkipGroups() interface{}
-	SetSkipGroups(val interface{})
-	SkipGroupsInput() interface{}
-	SkipUsers() interface{}
-	SetSkipUsers(val interface{})
-	SkipUsersInput() interface{}
 	Status() *string
 	SetStatus(val *string)
 	StatusInput() *string
@@ -162,8 +153,6 @@ type AppSecurePasswordStore interface {
 	UserNameTemplateType() *string
 	SetUserNameTemplateType(val *string)
 	UserNameTemplateTypeInput() *string
-	Users() AppSecurePasswordStoreUsersList
-	UsersInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -208,7 +197,6 @@ type AppSecurePasswordStore interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *AppSecurePasswordStoreTimeouts)
-	PutUsers(value interface{})
 	ResetAccessibilityErrorRedirectUrl()
 	ResetAccessibilityLoginRedirectUrl()
 	ResetAccessibilitySelfService()
@@ -217,7 +205,6 @@ type AppSecurePasswordStore interface {
 	ResetAutoSubmitToolbar()
 	ResetCredentialsScheme()
 	ResetEnduserNote()
-	ResetGroups()
 	ResetHideIos()
 	ResetHideWeb()
 	ResetId()
@@ -234,15 +221,12 @@ type AppSecurePasswordStore interface {
 	ResetRevealPassword()
 	ResetSharedPassword()
 	ResetSharedUsername()
-	ResetSkipGroups()
-	ResetSkipUsers()
 	ResetStatus()
 	ResetTimeouts()
 	ResetUserNameTemplate()
 	ResetUserNameTemplatePushStatus()
 	ResetUserNameTemplateSuffix()
 	ResetUserNameTemplateType()
-	ResetUsers()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -496,26 +480,6 @@ func (j *jsiiProxy_AppSecurePasswordStore) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AppSecurePasswordStore) Groups() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"groups",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AppSecurePasswordStore) GroupsInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"groupsInput",
 		&returns,
 	)
 	return returns
@@ -901,46 +865,6 @@ func (j *jsiiProxy_AppSecurePasswordStore) SignOnMode() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore) SkipGroups() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"skipGroups",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AppSecurePasswordStore) SkipGroupsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"skipGroupsInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AppSecurePasswordStore) SkipUsers() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"skipUsers",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AppSecurePasswordStore) SkipUsersInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"skipUsersInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_AppSecurePasswordStore) Status() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1131,28 +1055,8 @@ func (j *jsiiProxy_AppSecurePasswordStore) UserNameTemplateTypeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore) Users() AppSecurePasswordStoreUsersList {
-	var returns AppSecurePasswordStoreUsersList
-	_jsii_.Get(
-		j,
-		"users",
-		&returns,
-	)
-	return returns
-}
 
-func (j *jsiiProxy_AppSecurePasswordStore) UsersInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"usersInput",
-		&returns,
-	)
-	return returns
-}
-
-
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_secure_password_store okta_app_secure_password_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_secure_password_store okta_app_secure_password_store} Resource.
 func NewAppSecurePasswordStore(scope constructs.Construct, id *string, config *AppSecurePasswordStoreConfig) AppSecurePasswordStore {
 	_init_.Initialize()
 
@@ -1170,7 +1074,7 @@ func NewAppSecurePasswordStore(scope constructs.Construct, id *string, config *A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_secure_password_store okta_app_secure_password_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_secure_password_store okta_app_secure_password_store} Resource.
 func NewAppSecurePasswordStore_Override(a AppSecurePasswordStore, scope constructs.Construct, id *string, config *AppSecurePasswordStoreConfig) {
 	_init_.Initialize()
 
@@ -1303,17 +1207,6 @@ func (j *jsiiProxy_AppSecurePasswordStore)SetForEach(val cdktf.ITerraformIterato
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AppSecurePasswordStore)SetGroups(val *[]*string) {
-	if err := j.validateSetGroupsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"groups",
 		val,
 	)
 }
@@ -1509,28 +1402,6 @@ func (j *jsiiProxy_AppSecurePasswordStore)SetSharedUsername(val *string) {
 	_jsii_.Set(
 		j,
 		"sharedUsername",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AppSecurePasswordStore)SetSkipGroups(val interface{}) {
-	if err := j.validateSetSkipGroupsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"skipGroups",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AppSecurePasswordStore)SetSkipUsers(val interface{}) {
-	if err := j.validateSetSkipUsersParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"skipUsers",
 		val,
 	)
 }
@@ -1976,17 +1847,6 @@ func (a *jsiiProxy_AppSecurePasswordStore) PutTimeouts(value *AppSecurePasswordS
 	)
 }
 
-func (a *jsiiProxy_AppSecurePasswordStore) PutUsers(value interface{}) {
-	if err := a.validatePutUsersParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		a,
-		"putUsers",
-		[]interface{}{value},
-	)
-}
-
 func (a *jsiiProxy_AppSecurePasswordStore) ResetAccessibilityErrorRedirectUrl() {
 	_jsii_.InvokeVoid(
 		a,
@@ -2047,14 +1907,6 @@ func (a *jsiiProxy_AppSecurePasswordStore) ResetEnduserNote() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetEnduserNote",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AppSecurePasswordStore) ResetGroups() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetGroups",
 		nil, // no parameters
 	)
 }
@@ -2171,22 +2023,6 @@ func (a *jsiiProxy_AppSecurePasswordStore) ResetSharedUsername() {
 	)
 }
 
-func (a *jsiiProxy_AppSecurePasswordStore) ResetSkipGroups() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetSkipGroups",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AppSecurePasswordStore) ResetSkipUsers() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetSkipUsers",
-		nil, // no parameters
-	)
-}
-
 func (a *jsiiProxy_AppSecurePasswordStore) ResetStatus() {
 	_jsii_.InvokeVoid(
 		a,
@@ -2231,14 +2067,6 @@ func (a *jsiiProxy_AppSecurePasswordStore) ResetUserNameTemplateType() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetUserNameTemplateType",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AppSecurePasswordStore) ResetUsers() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetUsers",
 		nil, // no parameters
 	)
 }

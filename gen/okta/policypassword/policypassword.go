@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/okta/policypassword/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/policy_password okta_policy_password}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_password okta_policy_password}.
 type PolicyPassword interface {
 	cdktf.TerraformResource
 	AuthProvider() *string
@@ -1026,7 +1026,7 @@ func (j *jsiiProxy_PolicyPassword) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/policy_password okta_policy_password} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_password okta_policy_password} Resource.
 func NewPolicyPassword(scope constructs.Construct, id *string, config *PolicyPasswordConfig) PolicyPassword {
 	_init_.Initialize()
 
@@ -1044,7 +1044,7 @@ func NewPolicyPassword(scope constructs.Construct, id *string, config *PolicyPas
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/policy_password okta_policy_password} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_password okta_policy_password} Resource.
 func NewPolicyPassword_Override(p PolicyPassword, scope constructs.Construct, id *string, config *PolicyPasswordConfig) {
 	_init_.Initialize()
 

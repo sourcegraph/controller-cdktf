@@ -19,19 +19,19 @@ type UserFactorQuestionConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// User password security answer.
+	// Security question answer. Note here that answer won't be set during the resource import.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/user_factor_question#answer UserFactorQuestion#answer}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/user_factor_question#answer UserFactorQuestion#answer}
 	Answer *string `field:"required" json:"answer" yaml:"answer"`
-	// Unique key for question.
+	// Security question unique key.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/user_factor_question#key UserFactorQuestion#key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/user_factor_question#key UserFactorQuestion#key}
 	Key *string `field:"required" json:"key" yaml:"key"`
-	// ID of a Okta User.
+	// ID of the user. Resource will be recreated when `user_id` changes.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/user_factor_question#user_id UserFactorQuestion#user_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/user_factor_question#user_id UserFactorQuestion#user_id}
 	UserId *string `field:"required" json:"userId" yaml:"userId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/user_factor_question#id UserFactorQuestion#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/user_factor_question#id UserFactorQuestion#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/okta/adminrolecustom/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/admin_role_custom okta_admin_role_custom}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/admin_role_custom okta_admin_role_custom}.
 type AdminRoleCustom interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -377,7 +377,7 @@ func (j *jsiiProxy_AdminRoleCustom) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/admin_role_custom okta_admin_role_custom} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/admin_role_custom okta_admin_role_custom} Resource.
 func NewAdminRoleCustom(scope constructs.Construct, id *string, config *AdminRoleCustomConfig) AdminRoleCustom {
 	_init_.Initialize()
 
@@ -395,7 +395,7 @@ func NewAdminRoleCustom(scope constructs.Construct, id *string, config *AdminRol
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/admin_role_custom okta_admin_role_custom} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/admin_role_custom okta_admin_role_custom} Resource.
 func NewAdminRoleCustom_Override(a AdminRoleCustom, scope constructs.Construct, id *string, config *AdminRoleCustomConfig) {
 	_init_.Initialize()
 

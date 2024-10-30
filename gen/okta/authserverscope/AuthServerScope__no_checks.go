@@ -132,6 +132,10 @@ func (j *jsiiProxy_AuthServerScope) validateSetNameParameters(val *string) error
 	return nil
 }
 
+func (j *jsiiProxy_AuthServerScope) validateSetOptionalParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AuthServerScope) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

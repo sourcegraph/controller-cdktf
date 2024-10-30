@@ -21,15 +21,15 @@ type DataOktaEmailCustomizationConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Brand ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/data-sources/email_customization#brand_id DataOktaEmailCustomization#brand_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/email_customization#brand_id DataOktaEmailCustomization#brand_id}
 	BrandId *string `field:"required" json:"brandId" yaml:"brandId"`
 	// The ID of the customization.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/data-sources/email_customization#customization_id DataOktaEmailCustomization#customization_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/email_customization#customization_id DataOktaEmailCustomization#customization_id}
 	CustomizationId *string `field:"required" json:"customizationId" yaml:"customizationId"`
 	// Template Name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/data-sources/email_customization#template_name DataOktaEmailCustomization#template_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/email_customization#template_name DataOktaEmailCustomization#template_name}
 	TemplateName *string `field:"required" json:"templateName" yaml:"templateName"`
 }
 

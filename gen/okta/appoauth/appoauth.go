@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/okta/appoauth/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_oauth okta_app_oauth}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_oauth okta_app_oauth}.
 type AppOauth interface {
 	cdktf.TerraformResource
 	AccessibilityErrorRedirectUrl() *string
@@ -64,9 +64,6 @@ type AppOauth interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
-	CustomClientId() *string
-	SetCustomClientId(val *string)
-	CustomClientIdInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -85,11 +82,8 @@ type AppOauth interface {
 	GrantTypes() *[]*string
 	SetGrantTypes(val *[]*string)
 	GrantTypesInput() *[]*string
-	Groups() *[]*string
-	SetGroups(val *[]*string)
 	GroupsClaim() AppOauthGroupsClaimOutputReference
 	GroupsClaimInput() *AppOauthGroupsClaim
-	GroupsInput() *[]*string
 	HideIos() interface{}
 	SetHideIos(val interface{})
 	HideIosInput() interface{}
@@ -107,6 +101,9 @@ type AppOauth interface {
 	IssuerModeInput() *string
 	Jwks() AppOauthJwksList
 	JwksInput() interface{}
+	JwksUri() *string
+	SetJwksUri(val *string)
+	JwksUriInput() *string
 	Label() *string
 	SetLabel(val *string)
 	LabelInput() *string
@@ -171,12 +168,6 @@ type AppOauth interface {
 	SetResponseTypes(val *[]*string)
 	ResponseTypesInput() *[]*string
 	SignOnMode() *string
-	SkipGroups() interface{}
-	SetSkipGroups(val interface{})
-	SkipGroupsInput() interface{}
-	SkipUsers() interface{}
-	SetSkipUsers(val interface{})
-	SkipUsersInput() interface{}
 	Status() *string
 	SetStatus(val *string)
 	StatusInput() *string
@@ -209,8 +200,6 @@ type AppOauth interface {
 	UserNameTemplateType() *string
 	SetUserNameTemplateType(val *string)
 	UserNameTemplateTypeInput() *string
-	Users() AppOauthUsersList
-	UsersInput() interface{}
 	WildcardRedirect() *string
 	SetWildcardRedirect(val *string)
 	WildcardRedirectInput() *string
@@ -260,7 +249,6 @@ type AppOauth interface {
 	PutGroupsClaim(value *AppOauthGroupsClaim)
 	PutJwks(value interface{})
 	PutTimeouts(value *AppOauthTimeouts)
-	PutUsers(value interface{})
 	ResetAccessibilityErrorRedirectUrl()
 	ResetAccessibilityLoginRedirectUrl()
 	ResetAccessibilitySelfService()
@@ -274,10 +262,8 @@ type AppOauth interface {
 	ResetClientId()
 	ResetClientUri()
 	ResetConsentMethod()
-	ResetCustomClientId()
 	ResetEnduserNote()
 	ResetGrantTypes()
-	ResetGroups()
 	ResetGroupsClaim()
 	ResetHideIos()
 	ResetHideWeb()
@@ -285,6 +271,7 @@ type AppOauth interface {
 	ResetImplicitAssignment()
 	ResetIssuerMode()
 	ResetJwks()
+	ResetJwksUri()
 	ResetLoginMode()
 	ResetLoginScopes()
 	ResetLoginUri()
@@ -302,8 +289,6 @@ type AppOauth interface {
 	ResetRefreshTokenLeeway()
 	ResetRefreshTokenRotation()
 	ResetResponseTypes()
-	ResetSkipGroups()
-	ResetSkipUsers()
 	ResetStatus()
 	ResetTimeouts()
 	ResetTokenEndpointAuthMethod()
@@ -312,7 +297,6 @@ type AppOauth interface {
 	ResetUserNameTemplatePushStatus()
 	ResetUserNameTemplateSuffix()
 	ResetUserNameTemplateType()
-	ResetUsers()
 	ResetWildcardRedirect()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -642,26 +626,6 @@ func (j *jsiiProxy_AppOauth) Count() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AppOauth) CustomClientId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"customClientId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AppOauth) CustomClientIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"customClientIdInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_AppOauth) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -742,16 +706,6 @@ func (j *jsiiProxy_AppOauth) GrantTypesInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_AppOauth) Groups() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"groups",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_AppOauth) GroupsClaim() AppOauthGroupsClaimOutputReference {
 	var returns AppOauthGroupsClaimOutputReference
 	_jsii_.Get(
@@ -767,16 +721,6 @@ func (j *jsiiProxy_AppOauth) GroupsClaimInput() *AppOauthGroupsClaim {
 	_jsii_.Get(
 		j,
 		"groupsClaimInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AppOauth) GroupsInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"groupsInput",
 		&returns,
 	)
 	return returns
@@ -897,6 +841,26 @@ func (j *jsiiProxy_AppOauth) JwksInput() interface{} {
 	_jsii_.Get(
 		j,
 		"jwksInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppOauth) JwksUri() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jwksUri",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppOauth) JwksUriInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jwksUriInput",
 		&returns,
 	)
 	return returns
@@ -1282,46 +1246,6 @@ func (j *jsiiProxy_AppOauth) SignOnMode() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AppOauth) SkipGroups() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"skipGroups",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AppOauth) SkipGroupsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"skipGroupsInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AppOauth) SkipUsers() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"skipUsers",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AppOauth) SkipUsersInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"skipUsersInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_AppOauth) Status() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1532,26 +1456,6 @@ func (j *jsiiProxy_AppOauth) UserNameTemplateTypeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AppOauth) Users() AppOauthUsersList {
-	var returns AppOauthUsersList
-	_jsii_.Get(
-		j,
-		"users",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AppOauth) UsersInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"usersInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_AppOauth) WildcardRedirect() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1573,7 +1477,7 @@ func (j *jsiiProxy_AppOauth) WildcardRedirectInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_oauth okta_app_oauth} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_oauth okta_app_oauth} Resource.
 func NewAppOauth(scope constructs.Construct, id *string, config *AppOauthConfig) AppOauth {
 	_init_.Initialize()
 
@@ -1591,7 +1495,7 @@ func NewAppOauth(scope constructs.Construct, id *string, config *AppOauthConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_oauth okta_app_oauth} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_oauth okta_app_oauth} Resource.
 func NewAppOauth_Override(a AppOauth, scope constructs.Construct, id *string, config *AppOauthConfig) {
 	_init_.Initialize()
 
@@ -1767,17 +1671,6 @@ func (j *jsiiProxy_AppOauth)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppOauth)SetCustomClientId(val *string) {
-	if err := j.validateSetCustomClientIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"customClientId",
-		val,
-	)
-}
-
 func (j *jsiiProxy_AppOauth)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
@@ -1812,17 +1705,6 @@ func (j *jsiiProxy_AppOauth)SetGrantTypes(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"grantTypes",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AppOauth)SetGroups(val *[]*string) {
-	if err := j.validateSetGroupsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"groups",
 		val,
 	)
 }
@@ -1878,6 +1760,17 @@ func (j *jsiiProxy_AppOauth)SetIssuerMode(val *string) {
 	_jsii_.Set(
 		j,
 		"issuerMode",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppOauth)SetJwksUri(val *string) {
+	if err := j.validateSetJwksUriParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"jwksUri",
 		val,
 	)
 }
@@ -2073,28 +1966,6 @@ func (j *jsiiProxy_AppOauth)SetResponseTypes(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"responseTypes",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AppOauth)SetSkipGroups(val interface{}) {
-	if err := j.validateSetSkipGroupsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"skipGroups",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AppOauth)SetSkipUsers(val interface{}) {
-	if err := j.validateSetSkipUsersParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"skipUsers",
 		val,
 	)
 }
@@ -2584,17 +2455,6 @@ func (a *jsiiProxy_AppOauth) PutTimeouts(value *AppOauthTimeouts) {
 	)
 }
 
-func (a *jsiiProxy_AppOauth) PutUsers(value interface{}) {
-	if err := a.validatePutUsersParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		a,
-		"putUsers",
-		[]interface{}{value},
-	)
-}
-
 func (a *jsiiProxy_AppOauth) ResetAccessibilityErrorRedirectUrl() {
 	_jsii_.InvokeVoid(
 		a,
@@ -2699,14 +2559,6 @@ func (a *jsiiProxy_AppOauth) ResetConsentMethod() {
 	)
 }
 
-func (a *jsiiProxy_AppOauth) ResetCustomClientId() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetCustomClientId",
-		nil, // no parameters
-	)
-}
-
 func (a *jsiiProxy_AppOauth) ResetEnduserNote() {
 	_jsii_.InvokeVoid(
 		a,
@@ -2719,14 +2571,6 @@ func (a *jsiiProxy_AppOauth) ResetGrantTypes() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetGrantTypes",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AppOauth) ResetGroups() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetGroups",
 		nil, // no parameters
 	)
 }
@@ -2783,6 +2627,14 @@ func (a *jsiiProxy_AppOauth) ResetJwks() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetJwks",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppOauth) ResetJwksUri() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetJwksUri",
 		nil, // no parameters
 	)
 }
@@ -2907,22 +2759,6 @@ func (a *jsiiProxy_AppOauth) ResetResponseTypes() {
 	)
 }
 
-func (a *jsiiProxy_AppOauth) ResetSkipGroups() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetSkipGroups",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AppOauth) ResetSkipUsers() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetSkipUsers",
-		nil, // no parameters
-	)
-}
-
 func (a *jsiiProxy_AppOauth) ResetStatus() {
 	_jsii_.InvokeVoid(
 		a,
@@ -2983,14 +2819,6 @@ func (a *jsiiProxy_AppOauth) ResetUserNameTemplateType() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetUserNameTemplateType",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AppOauth) ResetUsers() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetUsers",
 		nil, // no parameters
 	)
 }

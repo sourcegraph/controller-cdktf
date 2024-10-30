@@ -156,14 +156,6 @@ func (j *jsiiProxy_IdpSocial) validateSetLifecycleParameters(val *cdktf.Terrafor
 	return nil
 }
 
-func (j *jsiiProxy_IdpSocial) validateSetMatchAttributeParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_IdpSocial) validateSetMatchTypeParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_IdpSocial) validateSetMaxClockSkewParameters(val *float64) error {
 	return nil
 }

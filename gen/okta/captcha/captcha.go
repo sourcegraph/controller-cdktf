@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/okta/captcha/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/captcha okta_captcha}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/captcha okta_captcha}.
 type Captcha interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -399,7 +399,7 @@ func (j *jsiiProxy_Captcha) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/captcha okta_captcha} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/captcha okta_captcha} Resource.
 func NewCaptcha(scope constructs.Construct, id *string, config *CaptchaConfig) Captcha {
 	_init_.Initialize()
 
@@ -417,7 +417,7 @@ func NewCaptcha(scope constructs.Construct, id *string, config *CaptchaConfig) C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/captcha okta_captcha} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/captcha okta_captcha} Resource.
 func NewCaptcha_Override(c Captcha, scope constructs.Construct, id *string, config *CaptchaConfig) {
 	_init_.Initialize()
 

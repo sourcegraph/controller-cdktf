@@ -76,10 +76,6 @@ func (a *jsiiProxy_AppBookmark) validatePutTimeoutsParameters(value *AppBookmark
 	return nil
 }
 
-func (a *jsiiProxy_AppBookmark) validatePutUsersParameters(value interface{}) error {
-	return nil
-}
-
 func validateAppBookmark_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -136,10 +132,6 @@ func (j *jsiiProxy_AppBookmark) validateSetEnduserNoteParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_AppBookmark) validateSetGroupsParameters(val *[]*string) error {
-	return nil
-}
-
 func (j *jsiiProxy_AppBookmark) validateSetHideIosParameters(val interface{}) error {
 	return nil
 }
@@ -169,14 +161,6 @@ func (j *jsiiProxy_AppBookmark) validateSetProvisionersParameters(val *[]interfa
 }
 
 func (j *jsiiProxy_AppBookmark) validateSetRequestIntegrationParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_AppBookmark) validateSetSkipGroupsParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_AppBookmark) validateSetSkipUsersParameters(val interface{}) error {
 	return nil
 }
 

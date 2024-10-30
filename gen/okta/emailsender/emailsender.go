@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/okta/emailsender/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/email_sender okta_email_sender}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/email_sender okta_email_sender}.
 type EmailSender interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -398,7 +398,7 @@ func (j *jsiiProxy_EmailSender) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/email_sender okta_email_sender} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/email_sender okta_email_sender} Resource.
 func NewEmailSender(scope constructs.Construct, id *string, config *EmailSenderConfig) EmailSender {
 	_init_.Initialize()
 
@@ -416,7 +416,7 @@ func NewEmailSender(scope constructs.Construct, id *string, config *EmailSenderC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/email_sender okta_email_sender} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/email_sender okta_email_sender} Resource.
 func NewEmailSender_Override(e EmailSender, scope constructs.Construct, id *string, config *EmailSenderConfig) {
 	_init_.Initialize()
 

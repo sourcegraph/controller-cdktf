@@ -76,10 +76,6 @@ func (a *jsiiProxy_AppThreeField) validatePutTimeoutsParameters(value *AppThreeF
 	return nil
 }
 
-func (a *jsiiProxy_AppThreeField) validatePutUsersParameters(value interface{}) error {
-	return nil
-}
-
 func validateAppThreeField_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -148,10 +144,6 @@ func (j *jsiiProxy_AppThreeField) validateSetExtraFieldValueParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_AppThreeField) validateSetGroupsParameters(val *[]*string) error {
-	return nil
-}
-
 func (j *jsiiProxy_AppThreeField) validateSetHideIosParameters(val interface{}) error {
 	return nil
 }
@@ -193,14 +185,6 @@ func (j *jsiiProxy_AppThreeField) validateSetSharedPasswordParameters(val *strin
 }
 
 func (j *jsiiProxy_AppThreeField) validateSetSharedUsernameParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_AppThreeField) validateSetSkipGroupsParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_AppThreeField) validateSetSkipUsersParameters(val interface{}) error {
 	return nil
 }
 

@@ -76,10 +76,6 @@ func (a *jsiiProxy_AppSwa) validatePutTimeoutsParameters(value *AppSwaTimeouts) 
 	return nil
 }
 
-func (a *jsiiProxy_AppSwa) validatePutUsersParameters(value interface{}) error {
-	return nil
-}
-
 func validateAppSwa_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -140,10 +136,6 @@ func (j *jsiiProxy_AppSwa) validateSetEnduserNoteParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_AppSwa) validateSetGroupsParameters(val *[]*string) error {
-	return nil
-}
-
 func (j *jsiiProxy_AppSwa) validateSetHideIosParameters(val interface{}) error {
 	return nil
 }
@@ -181,14 +173,6 @@ func (j *jsiiProxy_AppSwa) validateSetProvisionersParameters(val *[]interface{})
 }
 
 func (j *jsiiProxy_AppSwa) validateSetRedirectUrlParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_AppSwa) validateSetSkipGroupsParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_AppSwa) validateSetSkipUsersParameters(val interface{}) error {
 	return nil
 }
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/okta/trustedorigin/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/trusted_origin okta_trusted_origin}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/trusted_origin okta_trusted_origin}.
 type TrustedOrigin interface {
 	cdktf.TerraformResource
 	Active() interface{}
@@ -400,7 +400,7 @@ func (j *jsiiProxy_TrustedOrigin) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/trusted_origin okta_trusted_origin} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/trusted_origin okta_trusted_origin} Resource.
 func NewTrustedOrigin(scope constructs.Construct, id *string, config *TrustedOriginConfig) TrustedOrigin {
 	_init_.Initialize()
 
@@ -418,7 +418,7 @@ func NewTrustedOrigin(scope constructs.Construct, id *string, config *TrustedOri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/trusted_origin okta_trusted_origin} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/trusted_origin okta_trusted_origin} Resource.
 func NewTrustedOrigin_Override(t TrustedOrigin, scope constructs.Construct, id *string, config *TrustedOriginConfig) {
 	_init_.Initialize()
 

@@ -132,10 +132,6 @@ func (j *jsiiProxy_PolicyRuleMfa) validateSetNetworkIncludesParameters(val *[]*s
 	return nil
 }
 
-func (j *jsiiProxy_PolicyRuleMfa) validateSetPolicyidParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_PolicyRuleMfa) validateSetPolicyIdParameters(val *string) error {
 	return nil
 }

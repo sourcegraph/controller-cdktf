@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/okta/authserverdefault/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/auth_server_default okta_auth_server_default}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/auth_server_default okta_auth_server_default}.
 type AuthServerDefault interface {
 	cdktf.TerraformResource
 	Audiences() *[]*string
@@ -131,6 +131,7 @@ type AuthServerDefault interface {
 	ResetDescription()
 	ResetId()
 	ResetIssuerMode()
+	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -494,7 +495,7 @@ func (j *jsiiProxy_AuthServerDefault) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/auth_server_default okta_auth_server_default} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/auth_server_default okta_auth_server_default} Resource.
 func NewAuthServerDefault(scope constructs.Construct, id *string, config *AuthServerDefaultConfig) AuthServerDefault {
 	_init_.Initialize()
 
@@ -512,7 +513,7 @@ func NewAuthServerDefault(scope constructs.Construct, id *string, config *AuthSe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/auth_server_default okta_auth_server_default} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/auth_server_default okta_auth_server_default} Resource.
 func NewAuthServerDefault_Override(a AuthServerDefault, scope constructs.Construct, id *string, config *AuthServerDefaultConfig) {
 	_init_.Initialize()
 
@@ -1057,6 +1058,14 @@ func (a *jsiiProxy_AuthServerDefault) ResetIssuerMode() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetIssuerMode",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AuthServerDefault) ResetName() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetName",
 		nil, // no parameters
 	)
 }
