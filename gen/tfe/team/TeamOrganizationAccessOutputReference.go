@@ -53,6 +53,12 @@ type TeamOrganizationAccessOutputReference interface {
 	ManageWorkspaces() interface{}
 	SetManageWorkspaces(val interface{})
 	ManageWorkspacesInput() interface{}
+	ReadProjects() interface{}
+	SetReadProjects(val interface{})
+	ReadProjectsInput() interface{}
+	ReadWorkspaces() interface{}
+	SetReadWorkspaces(val interface{})
+	ReadWorkspacesInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -93,6 +99,8 @@ type TeamOrganizationAccessOutputReference interface {
 	ResetManageRunTasks()
 	ResetManageVcsSettings()
 	ResetManageWorkspaces()
+	ResetReadProjects()
+	ResetReadWorkspaces()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -318,6 +326,46 @@ func (j *jsiiProxy_TeamOrganizationAccessOutputReference) ManageWorkspacesInput(
 	return returns
 }
 
+func (j *jsiiProxy_TeamOrganizationAccessOutputReference) ReadProjects() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"readProjects",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamOrganizationAccessOutputReference) ReadProjectsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"readProjectsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamOrganizationAccessOutputReference) ReadWorkspaces() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"readWorkspaces",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamOrganizationAccessOutputReference) ReadWorkspacesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"readWorkspacesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_TeamOrganizationAccessOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -483,6 +531,28 @@ func (j *jsiiProxy_TeamOrganizationAccessOutputReference)SetManageWorkspaces(val
 	_jsii_.Set(
 		j,
 		"manageWorkspaces",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TeamOrganizationAccessOutputReference)SetReadProjects(val interface{}) {
+	if err := j.validateSetReadProjectsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"readProjects",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TeamOrganizationAccessOutputReference)SetReadWorkspaces(val interface{}) {
+	if err := j.validateSetReadWorkspacesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"readWorkspaces",
 		val,
 	)
 }
@@ -755,6 +825,22 @@ func (t *jsiiProxy_TeamOrganizationAccessOutputReference) ResetManageWorkspaces(
 	_jsii_.InvokeVoid(
 		t,
 		"resetManageWorkspaces",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TeamOrganizationAccessOutputReference) ResetReadProjects() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetReadProjects",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TeamOrganizationAccessOutputReference) ResetReadWorkspaces() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetReadWorkspaces",
 		nil, // no parameters
 	)
 }

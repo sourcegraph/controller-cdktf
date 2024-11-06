@@ -28,6 +28,7 @@ type DataTfePolicySetVcsRepoOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	GithubAppInstallationId() *string
 	Identifier() *string
 	IngressSubmodules() cdktf.IResolvable
 	InternalValue() *DataTfePolicySetVcsRepo
@@ -125,6 +126,16 @@ func (j *jsiiProxy_DataTfePolicySetVcsRepoOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataTfePolicySetVcsRepoOutputReference) GithubAppInstallationId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"githubAppInstallationId",
 		&returns,
 	)
 	return returns

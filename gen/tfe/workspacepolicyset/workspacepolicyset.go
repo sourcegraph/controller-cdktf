@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/tfe/workspacepolicyset/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.42.0/docs/resources/workspace_policy_set tfe_workspace_policy_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/workspace_policy_set tfe_workspace_policy_set}.
 type WorkspacePolicySet interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -353,7 +353,7 @@ func (j *jsiiProxy_WorkspacePolicySet) WorkspaceIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.42.0/docs/resources/workspace_policy_set tfe_workspace_policy_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/workspace_policy_set tfe_workspace_policy_set} Resource.
 func NewWorkspacePolicySet(scope constructs.Construct, id *string, config *WorkspacePolicySetConfig) WorkspacePolicySet {
 	_init_.Initialize()
 
@@ -371,7 +371,7 @@ func NewWorkspacePolicySet(scope constructs.Construct, id *string, config *Works
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.42.0/docs/resources/workspace_policy_set tfe_workspace_policy_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/workspace_policy_set tfe_workspace_policy_set} Resource.
 func NewWorkspacePolicySet_Override(w WorkspacePolicySet, scope constructs.Construct, id *string, config *WorkspacePolicySetConfig) {
 	_init_.Initialize()
 

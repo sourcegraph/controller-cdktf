@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/tfe/datatfeworkspaceruntask/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.42.0/docs/data-sources/workspace_run_task tfe_workspace_run_task}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/workspace_run_task tfe_workspace_run_task}.
 type DataTfeWorkspaceRunTask interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -330,7 +330,7 @@ func (j *jsiiProxy_DataTfeWorkspaceRunTask) WorkspaceIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.42.0/docs/data-sources/workspace_run_task tfe_workspace_run_task} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/workspace_run_task tfe_workspace_run_task} Data Source.
 func NewDataTfeWorkspaceRunTask(scope constructs.Construct, id *string, config *DataTfeWorkspaceRunTaskConfig) DataTfeWorkspaceRunTask {
 	_init_.Initialize()
 
@@ -348,7 +348,7 @@ func NewDataTfeWorkspaceRunTask(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.42.0/docs/data-sources/workspace_run_task tfe_workspace_run_task} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/workspace_run_task tfe_workspace_run_task} Data Source.
 func NewDataTfeWorkspaceRunTask_Override(d DataTfeWorkspaceRunTask, scope constructs.Construct, id *string, config *DataTfeWorkspaceRunTaskConfig) {
 	_init_.Initialize()
 

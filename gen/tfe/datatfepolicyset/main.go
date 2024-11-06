@@ -119,6 +119,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "githubAppInstallationId", GoGetter: "GithubAppInstallationId"},
 			_jsii_.MemberProperty{JsiiProperty: "identifier", GoGetter: "Identifier"},
 			_jsii_.MemberProperty{JsiiProperty: "ingressSubmodules", GoGetter: "IngressSubmodules"},
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},

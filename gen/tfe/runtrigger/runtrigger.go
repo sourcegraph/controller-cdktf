@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/tfe/runtrigger/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.42.0/docs/resources/run_trigger tfe_run_trigger}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/run_trigger tfe_run_trigger}.
 type RunTrigger interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -353,7 +353,7 @@ func (j *jsiiProxy_RunTrigger) WorkspaceIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.42.0/docs/resources/run_trigger tfe_run_trigger} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/run_trigger tfe_run_trigger} Resource.
 func NewRunTrigger(scope constructs.Construct, id *string, config *RunTriggerConfig) RunTrigger {
 	_init_.Initialize()
 
@@ -371,7 +371,7 @@ func NewRunTrigger(scope constructs.Construct, id *string, config *RunTriggerCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.42.0/docs/resources/run_trigger tfe_run_trigger} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/run_trigger tfe_run_trigger} Resource.
 func NewRunTrigger_Override(r RunTrigger, scope constructs.Construct, id *string, config *RunTriggerConfig) {
 	_init_.Initialize()
 

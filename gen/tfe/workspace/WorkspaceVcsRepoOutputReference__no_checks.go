@@ -60,6 +60,10 @@ func (j *jsiiProxy_WorkspaceVcsRepoOutputReference) validateSetComplexObjectIsFr
 	return nil
 }
 
+func (j *jsiiProxy_WorkspaceVcsRepoOutputReference) validateSetGithubAppInstallationIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorkspaceVcsRepoOutputReference) validateSetIdentifierParameters(val *string) error {
 	return nil
 }

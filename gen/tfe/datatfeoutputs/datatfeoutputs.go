@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/tfe/datatfeoutputs/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.42.0/docs/data-sources/outputs tfe_outputs}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/outputs tfe_outputs}.
 type DataTfeOutputs interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -331,7 +331,7 @@ func (j *jsiiProxy_DataTfeOutputs) WorkspaceInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.42.0/docs/data-sources/outputs tfe_outputs} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/outputs tfe_outputs} Data Source.
 func NewDataTfeOutputs(scope constructs.Construct, id *string, config *DataTfeOutputsConfig) DataTfeOutputs {
 	_init_.Initialize()
 
@@ -349,7 +349,7 @@ func NewDataTfeOutputs(scope constructs.Construct, id *string, config *DataTfeOu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.42.0/docs/data-sources/outputs tfe_outputs} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/outputs tfe_outputs} Data Source.
 func NewDataTfeOutputs_Override(d DataTfeOutputs, scope constructs.Construct, id *string, config *DataTfeOutputsConfig) {
 	_init_.Initialize()
 

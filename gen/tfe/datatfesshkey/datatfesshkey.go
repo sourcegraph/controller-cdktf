@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/tfe/datatfesshkey/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.42.0/docs/data-sources/ssh_key tfe_ssh_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/ssh_key tfe_ssh_key}.
 type DataTfeSshKey interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -309,7 +309,7 @@ func (j *jsiiProxy_DataTfeSshKey) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.42.0/docs/data-sources/ssh_key tfe_ssh_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/ssh_key tfe_ssh_key} Data Source.
 func NewDataTfeSshKey(scope constructs.Construct, id *string, config *DataTfeSshKeyConfig) DataTfeSshKey {
 	_init_.Initialize()
 
@@ -327,7 +327,7 @@ func NewDataTfeSshKey(scope constructs.Construct, id *string, config *DataTfeSsh
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.42.0/docs/data-sources/ssh_key tfe_ssh_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/ssh_key tfe_ssh_key} Data Source.
 func NewDataTfeSshKey_Override(d DataTfeSshKey, scope constructs.Construct, id *string, config *DataTfeSshKeyConfig) {
 	_init_.Initialize()
 

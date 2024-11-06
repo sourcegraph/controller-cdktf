@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/tfe/datatfeteamaccess/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.42.0/docs/data-sources/team_access tfe_team_access}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/team_access tfe_team_access}.
 type DataTfeTeamAccess interface {
 	cdktf.TerraformDataSource
 	Access() *string
@@ -330,7 +330,7 @@ func (j *jsiiProxy_DataTfeTeamAccess) WorkspaceIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.42.0/docs/data-sources/team_access tfe_team_access} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/team_access tfe_team_access} Data Source.
 func NewDataTfeTeamAccess(scope constructs.Construct, id *string, config *DataTfeTeamAccessConfig) DataTfeTeamAccess {
 	_init_.Initialize()
 
@@ -348,7 +348,7 @@ func NewDataTfeTeamAccess(scope constructs.Construct, id *string, config *DataTf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.42.0/docs/data-sources/team_access tfe_team_access} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/team_access tfe_team_access} Data Source.
 func NewDataTfeTeamAccess_Override(d DataTfeTeamAccess, scope constructs.Construct, id *string, config *DataTfeTeamAccessConfig) {
 	_init_.Initialize()
 
