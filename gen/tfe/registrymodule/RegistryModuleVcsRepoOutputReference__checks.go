@@ -171,6 +171,14 @@ func (j *jsiiProxy_RegistryModuleVcsRepoOutputReference) validateSetDisplayIdent
 	return nil
 }
 
+func (j *jsiiProxy_RegistryModuleVcsRepoOutputReference) validateSetGithubAppInstallationIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_RegistryModuleVcsRepoOutputReference) validateSetIdentifierParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

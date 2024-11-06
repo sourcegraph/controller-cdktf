@@ -30,6 +30,9 @@ type WorkspaceVcsRepoOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	GithubAppInstallationId() *string
+	SetGithubAppInstallationId(val *string)
+	GithubAppInstallationIdInput() *string
 	Identifier() *string
 	SetIdentifier(val *string)
 	IdentifierInput() *string
@@ -77,7 +80,9 @@ type WorkspaceVcsRepoOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetBranch()
+	ResetGithubAppInstallationId()
 	ResetIngressSubmodules()
+	ResetOauthTokenId()
 	ResetTagsRegex()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -149,6 +154,26 @@ func (j *jsiiProxy_WorkspaceVcsRepoOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkspaceVcsRepoOutputReference) GithubAppInstallationId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"githubAppInstallationId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkspaceVcsRepoOutputReference) GithubAppInstallationIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"githubAppInstallationIdInput",
 		&returns,
 	)
 	return returns
@@ -321,6 +346,17 @@ func (j *jsiiProxy_WorkspaceVcsRepoOutputReference)SetComplexObjectIsFromSet(val
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkspaceVcsRepoOutputReference)SetGithubAppInstallationId(val *string) {
+	if err := j.validateSetGithubAppInstallationIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"githubAppInstallationId",
 		val,
 	)
 }
@@ -596,10 +632,26 @@ func (w *jsiiProxy_WorkspaceVcsRepoOutputReference) ResetBranch() {
 	)
 }
 
+func (w *jsiiProxy_WorkspaceVcsRepoOutputReference) ResetGithubAppInstallationId() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetGithubAppInstallationId",
+		nil, // no parameters
+	)
+}
+
 func (w *jsiiProxy_WorkspaceVcsRepoOutputReference) ResetIngressSubmodules() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetIngressSubmodules",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkspaceVcsRepoOutputReference) ResetOauthTokenId() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetOauthTokenId",
 		nil, // no parameters
 	)
 }

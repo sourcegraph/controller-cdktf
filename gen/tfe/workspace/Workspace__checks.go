@@ -623,6 +623,22 @@ func (j *jsiiProxy_Workspace) validateSetRemoteStateConsumerIdsParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_Workspace) validateSetSourceNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_Workspace) validateSetSourceUrlParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Workspace) validateSetSpeculativeEnabledParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

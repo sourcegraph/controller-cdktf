@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/tfe/organization/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.42.0/docs/resources/organization tfe_organization}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/organization tfe_organization}.
 type Organization interface {
 	cdktf.TerraformResource
 	AllowForceDeleteWorkspaces() interface{}
@@ -556,7 +556,7 @@ func (j *jsiiProxy_Organization) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.42.0/docs/resources/organization tfe_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/organization tfe_organization} Resource.
 func NewOrganization(scope constructs.Construct, id *string, config *OrganizationConfig) Organization {
 	_init_.Initialize()
 
@@ -574,7 +574,7 @@ func NewOrganization(scope constructs.Construct, id *string, config *Organizatio
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.42.0/docs/resources/organization tfe_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/organization tfe_organization} Resource.
 func NewOrganization_Override(o Organization, scope constructs.Construct, id *string, config *OrganizationConfig) {
 	_init_.Initialize()
 

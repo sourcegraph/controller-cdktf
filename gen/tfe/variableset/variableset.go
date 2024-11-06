@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/tfe/variableset/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.42.0/docs/resources/variable_set tfe_variable_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/variable_set tfe_variable_set}.
 type VariableSet interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -426,7 +426,7 @@ func (j *jsiiProxy_VariableSet) WorkspaceIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.42.0/docs/resources/variable_set tfe_variable_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/variable_set tfe_variable_set} Resource.
 func NewVariableSet(scope constructs.Construct, id *string, config *VariableSetConfig) VariableSet {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewVariableSet(scope constructs.Construct, id *string, config *VariableSetC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.42.0/docs/resources/variable_set tfe_variable_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/variable_set tfe_variable_set} Resource.
 func NewVariableSet_Override(v VariableSet, scope constructs.Construct, id *string, config *VariableSetConfig) {
 	_init_.Initialize()
 

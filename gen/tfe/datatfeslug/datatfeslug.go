@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/tfe/datatfeslug/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.42.0/docs/data-sources/slug tfe_slug}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/slug tfe_slug}.
 type DataTfeSlug interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -285,7 +285,7 @@ func (j *jsiiProxy_DataTfeSlug) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.42.0/docs/data-sources/slug tfe_slug} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/slug tfe_slug} Data Source.
 func NewDataTfeSlug(scope constructs.Construct, id *string, config *DataTfeSlugConfig) DataTfeSlug {
 	_init_.Initialize()
 
@@ -303,7 +303,7 @@ func NewDataTfeSlug(scope constructs.Construct, id *string, config *DataTfeSlugC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.42.0/docs/data-sources/slug tfe_slug} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/slug tfe_slug} Data Source.
 func NewDataTfeSlug_Override(d DataTfeSlug, scope constructs.Construct, id *string, config *DataTfeSlugConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/tfe/datatfevariables/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.42.0/docs/data-sources/variables tfe_variables}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/variables tfe_variables}.
 type DataTfeVariables interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -343,7 +343,7 @@ func (j *jsiiProxy_DataTfeVariables) WorkspaceIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.42.0/docs/data-sources/variables tfe_variables} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/variables tfe_variables} Data Source.
 func NewDataTfeVariables(scope constructs.Construct, id *string, config *DataTfeVariablesConfig) DataTfeVariables {
 	_init_.Initialize()
 
@@ -361,7 +361,7 @@ func NewDataTfeVariables(scope constructs.Construct, id *string, config *DataTfe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.42.0/docs/data-sources/variables tfe_variables} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/variables tfe_variables} Data Source.
 func NewDataTfeVariables_Override(d DataTfeVariables, scope constructs.Construct, id *string, config *DataTfeVariablesConfig) {
 	_init_.Initialize()
 

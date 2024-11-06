@@ -30,6 +30,9 @@ type PolicySetVcsRepoOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	GithubAppInstallationId() *string
+	SetGithubAppInstallationId(val *string)
+	GithubAppInstallationIdInput() *string
 	Identifier() *string
 	SetIdentifier(val *string)
 	IdentifierInput() *string
@@ -74,7 +77,9 @@ type PolicySetVcsRepoOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetBranch()
+	ResetGithubAppInstallationId()
 	ResetIngressSubmodules()
+	ResetOauthTokenId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -145,6 +150,26 @@ func (j *jsiiProxy_PolicySetVcsRepoOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PolicySetVcsRepoOutputReference) GithubAppInstallationId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"githubAppInstallationId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PolicySetVcsRepoOutputReference) GithubAppInstallationIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"githubAppInstallationIdInput",
 		&returns,
 	)
 	return returns
@@ -297,6 +322,17 @@ func (j *jsiiProxy_PolicySetVcsRepoOutputReference)SetComplexObjectIsFromSet(val
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PolicySetVcsRepoOutputReference)SetGithubAppInstallationId(val *string) {
+	if err := j.validateSetGithubAppInstallationIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"githubAppInstallationId",
 		val,
 	)
 }
@@ -561,10 +597,26 @@ func (p *jsiiProxy_PolicySetVcsRepoOutputReference) ResetBranch() {
 	)
 }
 
+func (p *jsiiProxy_PolicySetVcsRepoOutputReference) ResetGithubAppInstallationId() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetGithubAppInstallationId",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PolicySetVcsRepoOutputReference) ResetIngressSubmodules() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetIngressSubmodules",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PolicySetVcsRepoOutputReference) ResetOauthTokenId() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetOauthTokenId",
 		nil, // no parameters
 	)
 }

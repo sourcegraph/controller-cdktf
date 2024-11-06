@@ -172,6 +172,14 @@ func (j *jsiiProxy_Workspace) validateSetRemoteStateConsumerIdsParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_Workspace) validateSetSourceNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Workspace) validateSetSourceUrlParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Workspace) validateSetSpeculativeEnabledParameters(val interface{}) error {
 	return nil
 }

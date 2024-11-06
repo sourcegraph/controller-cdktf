@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/tfe/teamorganizationmember/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.42.0/docs/resources/team_organization_member tfe_team_organization_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/team_organization_member tfe_team_organization_member}.
 type TeamOrganizationMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -353,7 +353,7 @@ func (j *jsiiProxy_TeamOrganizationMember) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.42.0/docs/resources/team_organization_member tfe_team_organization_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/team_organization_member tfe_team_organization_member} Resource.
 func NewTeamOrganizationMember(scope constructs.Construct, id *string, config *TeamOrganizationMemberConfig) TeamOrganizationMember {
 	_init_.Initialize()
 
@@ -371,7 +371,7 @@ func NewTeamOrganizationMember(scope constructs.Construct, id *string, config *T
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.42.0/docs/resources/team_organization_member tfe_team_organization_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/team_organization_member tfe_team_organization_member} Resource.
 func NewTeamOrganizationMember_Override(t TeamOrganizationMember, scope constructs.Construct, id *string, config *TeamOrganizationMemberConfig) {
 	_init_.Initialize()
 

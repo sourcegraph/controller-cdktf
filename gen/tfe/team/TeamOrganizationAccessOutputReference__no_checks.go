@@ -92,6 +92,14 @@ func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetManageWorks
 	return nil
 }
 
+func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetReadProjectsParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetReadWorkspacesParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

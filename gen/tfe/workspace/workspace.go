@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/tfe/workspace/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.42.0/docs/resources/workspace tfe_workspace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/workspace tfe_workspace}.
 type Workspace interface {
 	cdktf.TerraformResource
 	AgentPoolId() *string
@@ -63,6 +63,7 @@ type Workspace interface {
 	GlobalRemoteState() interface{}
 	SetGlobalRemoteState(val interface{})
 	GlobalRemoteStateInput() interface{}
+	HtmlUrl() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -101,6 +102,12 @@ type Workspace interface {
 	SetRemoteStateConsumerIds(val *[]*string)
 	RemoteStateConsumerIdsInput() *[]*string
 	ResourceCount() *float64
+	SourceName() *string
+	SetSourceName(val *string)
+	SourceNameInput() *string
+	SourceUrl() *string
+	SetSourceUrl(val *string)
+	SourceUrlInput() *string
 	SpeculativeEnabled() interface{}
 	SetSpeculativeEnabled(val interface{})
 	SpeculativeEnabledInput() interface{}
@@ -195,6 +202,8 @@ type Workspace interface {
 	ResetProjectId()
 	ResetQueueAllRuns()
 	ResetRemoteStateConsumerIds()
+	ResetSourceName()
+	ResetSourceUrl()
 	ResetSpeculativeEnabled()
 	ResetSshKeyId()
 	ResetStructuredRunOutputEnabled()
@@ -482,6 +491,16 @@ func (j *jsiiProxy_Workspace) GlobalRemoteStateInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Workspace) HtmlUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"htmlUrl",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Workspace) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -677,6 +696,46 @@ func (j *jsiiProxy_Workspace) ResourceCount() *float64 {
 	_jsii_.Get(
 		j,
 		"resourceCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Workspace) SourceName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Workspace) SourceNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Workspace) SourceUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Workspace) SourceUrlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceUrlInput",
 		&returns,
 	)
 	return returns
@@ -893,7 +952,7 @@ func (j *jsiiProxy_Workspace) WorkingDirectoryInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.42.0/docs/resources/workspace tfe_workspace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/workspace tfe_workspace} Resource.
 func NewWorkspace(scope constructs.Construct, id *string, config *WorkspaceConfig) Workspace {
 	_init_.Initialize()
 
@@ -911,7 +970,7 @@ func NewWorkspace(scope constructs.Construct, id *string, config *WorkspaceConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.42.0/docs/resources/workspace tfe_workspace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/workspace tfe_workspace} Resource.
 func NewWorkspace_Override(w Workspace, scope constructs.Construct, id *string, config *WorkspaceConfig) {
 	_init_.Initialize()
 
@@ -1162,6 +1221,28 @@ func (j *jsiiProxy_Workspace)SetRemoteStateConsumerIds(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"remoteStateConsumerIds",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Workspace)SetSourceName(val *string) {
+	if err := j.validateSetSourceNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sourceName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Workspace)SetSourceUrl(val *string) {
+	if err := j.validateSetSourceUrlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sourceUrl",
 		val,
 	)
 }
@@ -1742,6 +1823,22 @@ func (w *jsiiProxy_Workspace) ResetRemoteStateConsumerIds() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetRemoteStateConsumerIds",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_Workspace) ResetSourceName() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetSourceName",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_Workspace) ResetSourceUrl() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetSourceUrl",
 		nil, // no parameters
 	)
 }

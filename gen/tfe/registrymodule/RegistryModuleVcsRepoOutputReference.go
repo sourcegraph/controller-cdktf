@@ -30,6 +30,9 @@ type RegistryModuleVcsRepoOutputReference interface {
 	DisplayIdentifierInput() *string
 	// Experimental.
 	Fqn() *string
+	GithubAppInstallationId() *string
+	SetGithubAppInstallationId(val *string)
+	GithubAppInstallationIdInput() *string
 	Identifier() *string
 	SetIdentifier(val *string)
 	IdentifierInput() *string
@@ -70,6 +73,8 @@ type RegistryModuleVcsRepoOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetGithubAppInstallationId()
+	ResetOauthTokenId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -140,6 +145,26 @@ func (j *jsiiProxy_RegistryModuleVcsRepoOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RegistryModuleVcsRepoOutputReference) GithubAppInstallationId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"githubAppInstallationId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RegistryModuleVcsRepoOutputReference) GithubAppInstallationIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"githubAppInstallationIdInput",
 		&returns,
 	)
 	return returns
@@ -272,6 +297,17 @@ func (j *jsiiProxy_RegistryModuleVcsRepoOutputReference)SetDisplayIdentifier(val
 	_jsii_.Set(
 		j,
 		"displayIdentifier",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RegistryModuleVcsRepoOutputReference)SetGithubAppInstallationId(val *string) {
+	if err := j.validateSetGithubAppInstallationIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"githubAppInstallationId",
 		val,
 	)
 }
@@ -515,6 +551,22 @@ func (r *jsiiProxy_RegistryModuleVcsRepoOutputReference) InterpolationForAttribu
 	)
 
 	return returns
+}
+
+func (r *jsiiProxy_RegistryModuleVcsRepoOutputReference) ResetGithubAppInstallationId() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetGithubAppInstallationId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RegistryModuleVcsRepoOutputReference) ResetOauthTokenId() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetOauthTokenId",
+		nil, // no parameters
+	)
 }
 
 func (r *jsiiProxy_RegistryModuleVcsRepoOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

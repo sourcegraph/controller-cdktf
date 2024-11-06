@@ -60,6 +60,10 @@ func (j *jsiiProxy_RegistryModuleVcsRepoOutputReference) validateSetDisplayIdent
 	return nil
 }
 
+func (j *jsiiProxy_RegistryModuleVcsRepoOutputReference) validateSetGithubAppInstallationIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RegistryModuleVcsRepoOutputReference) validateSetIdentifierParameters(val *string) error {
 	return nil
 }
