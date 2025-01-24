@@ -29,6 +29,9 @@ type ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference interface
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	InsecureKubeletReadonlyPortEnabled() *string
+	SetInsecureKubeletReadonlyPortEnabled(val *string)
+	InsecureKubeletReadonlyPortEnabledInput() *string
 	InternalValue() *ContainerClusterNodePoolDefaultsNodeConfigDefaults
 	SetInternalValue(val *ContainerClusterNodePoolDefaultsNodeConfigDefaults)
 	LoggingVariant() *string
@@ -68,6 +71,7 @@ type ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference interface
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutContainerdConfig(value *ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfig)
 	ResetContainerdConfig()
+	ResetInsecureKubeletReadonlyPortEnabled()
 	ResetLoggingVariant()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -139,6 +143,26 @@ func (j *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputRefer
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) InsecureKubeletReadonlyPortEnabled() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"insecureKubeletReadonlyPortEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) InsecureKubeletReadonlyPortEnabledInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"insecureKubeletReadonlyPortEnabledInput",
 		&returns,
 	)
 	return returns
@@ -240,6 +264,17 @@ func (j *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputRefer
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference)SetInsecureKubeletReadonlyPortEnabled(val *string) {
+	if err := j.validateSetInsecureKubeletReadonlyPortEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"insecureKubeletReadonlyPortEnabled",
 		val,
 	)
 }
@@ -489,6 +524,14 @@ func (c *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputRefer
 	_jsii_.InvokeVoid(
 		c,
 		"resetContainerdConfig",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) ResetInsecureKubeletReadonlyPortEnabled() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetInsecureKubeletReadonlyPortEnabled",
 		nil, // no parameters
 	)
 }

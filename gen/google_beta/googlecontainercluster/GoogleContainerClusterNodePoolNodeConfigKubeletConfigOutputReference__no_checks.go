@@ -68,6 +68,10 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigKubeletConfigOutputRe
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) validateSetInsecureKubeletReadonlyPortEnabledParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) validateSetInternalValueParameters(val *GoogleContainerClusterNodePoolNodeConfigKubeletConfig) error {
 	return nil
 }

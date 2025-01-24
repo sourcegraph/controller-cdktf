@@ -30,6 +30,7 @@ type DataGoogleContainerClusterNodeConfigKubeletConfigOutputReference interface 
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	InsecureKubeletReadonlyPortEnabled() *string
 	InternalValue() *DataGoogleContainerClusterNodeConfigKubeletConfig
 	SetInternalValue(val *DataGoogleContainerClusterNodeConfigKubeletConfig)
 	PodPidsLimit() *float64
@@ -145,6 +146,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigKubeletConfigOutputRefere
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigKubeletConfigOutputReference) InsecureKubeletReadonlyPortEnabled() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"insecureKubeletReadonlyPortEnabled",
 		&returns,
 	)
 	return returns

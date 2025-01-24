@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagooglekmssecretciphertext/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/kms_secret_ciphertext google_kms_secret_ciphertext}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/data-sources/kms_secret_ciphertext google_kms_secret_ciphertext}.
 type DataGoogleKmsSecretCiphertext interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -319,7 +319,7 @@ func (j *jsiiProxy_DataGoogleKmsSecretCiphertext) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/kms_secret_ciphertext google_kms_secret_ciphertext} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/data-sources/kms_secret_ciphertext google_kms_secret_ciphertext} Data Source.
 func NewDataGoogleKmsSecretCiphertext(scope constructs.Construct, id *string, config *DataGoogleKmsSecretCiphertextConfig) DataGoogleKmsSecretCiphertext {
 	_init_.Initialize()
 
@@ -337,7 +337,7 @@ func NewDataGoogleKmsSecretCiphertext(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/kms_secret_ciphertext google_kms_secret_ciphertext} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/data-sources/kms_secret_ciphertext google_kms_secret_ciphertext} Data Source.
 func NewDataGoogleKmsSecretCiphertext_Override(d DataGoogleKmsSecretCiphertext, scope constructs.Construct, id *string, config *DataGoogleKmsSecretCiphertextConfig) {
 	_init_.Initialize()
 

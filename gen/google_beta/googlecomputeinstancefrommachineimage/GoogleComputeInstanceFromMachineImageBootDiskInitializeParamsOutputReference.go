@@ -36,6 +36,7 @@ type GoogleComputeInstanceFromMachineImageBootDiskInitializeParamsOutputReferenc
 	ProvisionedThroughput() *float64
 	ResourceManagerTags() cdktf.StringMap
 	Size() *float64
+	StoragePool() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -199,6 +200,16 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageBootDiskInitializeParams
 	_jsii_.Get(
 		j,
 		"size",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageBootDiskInitializeParamsOutputReference) StoragePool() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storagePool",
 		&returns,
 	)
 	return returns

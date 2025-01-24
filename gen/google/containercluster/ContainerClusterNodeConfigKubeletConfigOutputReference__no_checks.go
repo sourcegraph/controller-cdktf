@@ -68,6 +68,10 @@ func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) validateSetInsecureKubeletReadonlyPortEnabledParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) validateSetInternalValueParameters(val *ContainerClusterNodeConfigKubeletConfig) error {
 	return nil
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglegkehubfeatureiampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_gke_hub_feature_iam_policy google_gke_hub_feature_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/data-sources/google_gke_hub_feature_iam_policy google_gke_hub_feature_iam_policy}.
 type DataGoogleGkeHubFeatureIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -355,7 +355,7 @@ func (j *jsiiProxy_DataGoogleGkeHubFeatureIamPolicy) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_gke_hub_feature_iam_policy google_gke_hub_feature_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/data-sources/google_gke_hub_feature_iam_policy google_gke_hub_feature_iam_policy} Data Source.
 func NewDataGoogleGkeHubFeatureIamPolicy(scope constructs.Construct, id *string, config *DataGoogleGkeHubFeatureIamPolicyConfig) DataGoogleGkeHubFeatureIamPolicy {
 	_init_.Initialize()
 
@@ -373,7 +373,7 @@ func NewDataGoogleGkeHubFeatureIamPolicy(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_gke_hub_feature_iam_policy google_gke_hub_feature_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/data-sources/google_gke_hub_feature_iam_policy google_gke_hub_feature_iam_policy} Data Source.
 func NewDataGoogleGkeHubFeatureIamPolicy_Override(d DataGoogleGkeHubFeatureIamPolicy, scope constructs.Construct, id *string, config *DataGoogleGkeHubFeatureIamPolicyConfig) {
 	_init_.Initialize()
 

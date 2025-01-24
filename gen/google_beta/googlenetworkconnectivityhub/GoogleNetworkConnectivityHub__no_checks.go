@@ -104,6 +104,10 @@ func (j *jsiiProxy_GoogleNetworkConnectivityHub) validateSetDescriptionParameter
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetworkConnectivityHub) validateSetExportPscParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetworkConnectivityHub) validateSetIdParameters(val *string) error {
 	return nil
 }

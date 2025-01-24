@@ -104,6 +104,10 @@ func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) val
 	return nil
 }
 
+func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) validateSetSendAgeIfZeroParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) validateSetSendDaysSinceCustomTimeIfZeroParameters(val interface{}) error {
 	return nil
 }

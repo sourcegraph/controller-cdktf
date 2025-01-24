@@ -68,6 +68,10 @@ func (j *jsiiProxy_GoogleClouddeployTargetGkeOutputReference) validateSetInterna
 	return nil
 }
 
+func (j *jsiiProxy_GoogleClouddeployTargetGkeOutputReference) validateSetProxyUrlParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleClouddeployTargetGkeOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

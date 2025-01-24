@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleStorageManagedFolderTimeoutsOutputReference) validateSe
 	return nil
 }
 
+func (j *jsiiProxy_GoogleStorageManagedFolderTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
+	return nil
+}
+
 func validateNewGoogleStorageManagedFolderTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

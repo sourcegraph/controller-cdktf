@@ -9,9 +9,12 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/bigquerytable/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/bigquery_table google_bigquery_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/bigquery_table google_bigquery_table}.
 type BigqueryTable interface {
 	cdktf.TerraformResource
+	AllowResourceTagsOnDeletion() interface{}
+	SetAllowResourceTagsOnDeletion(val interface{})
+	AllowResourceTagsOnDeletionInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Clustering() *[]*string
@@ -101,6 +104,9 @@ type BigqueryTable interface {
 	RequirePartitionFilter() interface{}
 	SetRequirePartitionFilter(val interface{})
 	RequirePartitionFilterInput() interface{}
+	ResourceTags() *map[string]*string
+	SetResourceTags(val *map[string]*string)
+	ResourceTagsInput() *map[string]*string
 	Schema() *string
 	SetSchema(val *string)
 	SchemaInput() *string
@@ -175,6 +181,7 @@ type BigqueryTable interface {
 	PutTableReplicationInfo(value *BigqueryTableTableReplicationInfo)
 	PutTimePartitioning(value *BigqueryTableTimePartitioning)
 	PutView(value *BigqueryTableView)
+	ResetAllowResourceTagsOnDeletion()
 	ResetClustering()
 	ResetDeletionProtection()
 	ResetDescription()
@@ -192,6 +199,7 @@ type BigqueryTable interface {
 	ResetProject()
 	ResetRangePartitioning()
 	ResetRequirePartitionFilter()
+	ResetResourceTags()
 	ResetSchema()
 	ResetTableConstraints()
 	ResetTableReplicationInfo()
@@ -213,6 +221,26 @@ type BigqueryTable interface {
 // The jsii proxy struct for BigqueryTable
 type jsiiProxy_BigqueryTable struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_BigqueryTable) AllowResourceTagsOnDeletion() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowResourceTagsOnDeletion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) AllowResourceTagsOnDeletionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowResourceTagsOnDeletionInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_BigqueryTable) CdktfStack() cdktf.TerraformStack {
@@ -725,6 +753,26 @@ func (j *jsiiProxy_BigqueryTable) RequirePartitionFilterInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_BigqueryTable) ResourceTags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"resourceTags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) ResourceTagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"resourceTagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BigqueryTable) Schema() *string {
 	var returns *string
 	_jsii_.Get(
@@ -906,7 +954,7 @@ func (j *jsiiProxy_BigqueryTable) ViewInput() *BigqueryTableView {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/bigquery_table google_bigquery_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/bigquery_table google_bigquery_table} Resource.
 func NewBigqueryTable(scope constructs.Construct, id *string, config *BigqueryTableConfig) BigqueryTable {
 	_init_.Initialize()
 
@@ -924,7 +972,7 @@ func NewBigqueryTable(scope constructs.Construct, id *string, config *BigqueryTa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/bigquery_table google_bigquery_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/bigquery_table google_bigquery_table} Resource.
 func NewBigqueryTable_Override(b BigqueryTable, scope constructs.Construct, id *string, config *BigqueryTableConfig) {
 	_init_.Initialize()
 
@@ -932,6 +980,17 @@ func NewBigqueryTable_Override(b BigqueryTable, scope constructs.Construct, id *
 		"@cdktf/provider-google.bigqueryTable.BigqueryTable",
 		[]interface{}{scope, id, config},
 		b,
+	)
+}
+
+func (j *jsiiProxy_BigqueryTable)SetAllowResourceTagsOnDeletion(val interface{}) {
+	if err := j.validateSetAllowResourceTagsOnDeletionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowResourceTagsOnDeletion",
+		val,
 	)
 }
 
@@ -1120,6 +1179,17 @@ func (j *jsiiProxy_BigqueryTable)SetRequirePartitionFilter(val interface{}) {
 	_jsii_.Set(
 		j,
 		"requirePartitionFilter",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigqueryTable)SetResourceTags(val *map[string]*string) {
+	if err := j.validateSetResourceTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"resourceTags",
 		val,
 	)
 }
@@ -1587,6 +1657,14 @@ func (b *jsiiProxy_BigqueryTable) PutView(value *BigqueryTableView) {
 	)
 }
 
+func (b *jsiiProxy_BigqueryTable) ResetAllowResourceTagsOnDeletion() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetAllowResourceTagsOnDeletion",
+		nil, // no parameters
+	)
+}
+
 func (b *jsiiProxy_BigqueryTable) ResetClustering() {
 	_jsii_.InvokeVoid(
 		b,
@@ -1703,6 +1781,14 @@ func (b *jsiiProxy_BigqueryTable) ResetRequirePartitionFilter() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetRequirePartitionFilter",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryTable) ResetResourceTags() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetResourceTags",
 		nil, // no parameters
 	)
 }

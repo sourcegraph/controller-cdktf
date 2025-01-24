@@ -92,6 +92,10 @@ func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) validatePu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) validatePutRayOperatorConfigParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) validatePutStatefulHaConfigParameters(value *GoogleContainerClusterAddonsConfigStatefulHaConfig) error {
 	return nil
 }

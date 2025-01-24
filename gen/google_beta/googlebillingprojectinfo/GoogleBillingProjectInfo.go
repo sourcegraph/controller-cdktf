@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlebillingprojectinfo/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_billing_project_info google_billing_project_info}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_billing_project_info google_billing_project_info}.
 type GoogleBillingProjectInfo interface {
 	cdktf.TerraformResource
 	BillingAccount() *string
@@ -378,7 +378,7 @@ func (j *jsiiProxy_GoogleBillingProjectInfo) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_billing_project_info google_billing_project_info} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_billing_project_info google_billing_project_info} Resource.
 func NewGoogleBillingProjectInfo(scope constructs.Construct, id *string, config *GoogleBillingProjectInfoConfig) GoogleBillingProjectInfo {
 	_init_.Initialize()
 
@@ -396,7 +396,7 @@ func NewGoogleBillingProjectInfo(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_billing_project_info google_billing_project_info} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_billing_project_info google_billing_project_info} Resource.
 func NewGoogleBillingProjectInfo_Override(g GoogleBillingProjectInfo, scope constructs.Construct, id *string, config *GoogleBillingProjectInfoConfig) {
 	_init_.Initialize()
 

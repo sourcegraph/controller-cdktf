@@ -4,11 +4,11 @@ package googlegkebackuprestoreplan
 type GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilter struct {
 	// group_kinds block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_gke_backup_restore_plan#group_kinds GoogleGkeBackupRestorePlan#group_kinds}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_gke_backup_restore_plan#group_kinds GoogleGkeBackupRestorePlan#group_kinds}
 	GroupKinds interface{} `field:"optional" json:"groupKinds" yaml:"groupKinds"`
 	// This is a JSONPath expression that matches specific fields of candidate resources and it operates as a filtering parameter (resources that are not matched with this expression will not be candidates for transformation).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_gke_backup_restore_plan#json_path GoogleGkeBackupRestorePlan#json_path}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_gke_backup_restore_plan#json_path GoogleGkeBackupRestorePlan#json_path}
 	JsonPath *string `field:"optional" json:"jsonPath" yaml:"jsonPath"`
 	// (Filtering parameter) Any resource subject to transformation must be contained within one of the listed Kubernetes Namespace in the Backup.
 	//
@@ -18,7 +18,7 @@ type GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilter st
 	// To mix cluster-scoped and namespaced resources in the same rule,
 	// use an empty string ("") as one of the target namespaces.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_gke_backup_restore_plan#namespaces GoogleGkeBackupRestorePlan#namespaces}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_gke_backup_restore_plan#namespaces GoogleGkeBackupRestorePlan#namespaces}
 	Namespaces *[]*string `field:"optional" json:"namespaces" yaml:"namespaces"`
 }
 

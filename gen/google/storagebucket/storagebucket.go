@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/storagebucket/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/storage_bucket google_storage_bucket}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/storage_bucket google_storage_bucket}.
 type StorageBucket interface {
 	cdktf.TerraformResource
 	Autoclass() StorageBucketAutoclassOutputReference
@@ -912,7 +912,7 @@ func (j *jsiiProxy_StorageBucket) WebsiteInput() *StorageBucketWebsite {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/storage_bucket google_storage_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/storage_bucket google_storage_bucket} Resource.
 func NewStorageBucket(scope constructs.Construct, id *string, config *StorageBucketConfig) StorageBucket {
 	_init_.Initialize()
 
@@ -930,7 +930,7 @@ func NewStorageBucket(scope constructs.Construct, id *string, config *StorageBuc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/storage_bucket google_storage_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/storage_bucket google_storage_bucket} Resource.
 func NewStorageBucket_Override(s StorageBucket, scope constructs.Construct, id *string, config *StorageBucketConfig) {
 	_init_.Initialize()
 

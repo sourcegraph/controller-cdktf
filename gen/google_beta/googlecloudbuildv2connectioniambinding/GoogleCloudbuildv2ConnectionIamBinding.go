@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecloudbuildv2connectioniambinding/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_cloudbuildv2_connection_iam_binding google_cloudbuildv2_connection_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_cloudbuildv2_connection_iam_binding google_cloudbuildv2_connection_iam_binding}.
 type GoogleCloudbuildv2ConnectionIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -459,7 +459,7 @@ func (j *jsiiProxy_GoogleCloudbuildv2ConnectionIamBinding) TerraformResourceType
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_cloudbuildv2_connection_iam_binding google_cloudbuildv2_connection_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_cloudbuildv2_connection_iam_binding google_cloudbuildv2_connection_iam_binding} Resource.
 func NewGoogleCloudbuildv2ConnectionIamBinding(scope constructs.Construct, id *string, config *GoogleCloudbuildv2ConnectionIamBindingConfig) GoogleCloudbuildv2ConnectionIamBinding {
 	_init_.Initialize()
 
@@ -477,7 +477,7 @@ func NewGoogleCloudbuildv2ConnectionIamBinding(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_cloudbuildv2_connection_iam_binding google_cloudbuildv2_connection_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_cloudbuildv2_connection_iam_binding google_cloudbuildv2_connection_iam_binding} Resource.
 func NewGoogleCloudbuildv2ConnectionIamBinding_Override(g GoogleCloudbuildv2ConnectionIamBinding, scope constructs.Construct, id *string, config *GoogleCloudbuildv2ConnectionIamBindingConfig) {
 	_init_.Initialize()
 

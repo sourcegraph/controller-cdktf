@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/cloudrunv2service/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/cloud_run_v2_service google_cloud_run_v2_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/cloud_run_v2_service google_cloud_run_v2_service}.
 type CloudRunV2Service interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -884,7 +884,7 @@ func (j *jsiiProxy_CloudRunV2Service) Uri() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/cloud_run_v2_service google_cloud_run_v2_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/cloud_run_v2_service google_cloud_run_v2_service} Resource.
 func NewCloudRunV2Service(scope constructs.Construct, id *string, config *CloudRunV2ServiceConfig) CloudRunV2Service {
 	_init_.Initialize()
 
@@ -902,7 +902,7 @@ func NewCloudRunV2Service(scope constructs.Construct, id *string, config *CloudR
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/cloud_run_v2_service google_cloud_run_v2_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/cloud_run_v2_service google_cloud_run_v2_service} Resource.
 func NewCloudRunV2Service_Override(c CloudRunV2Service, scope constructs.Construct, id *string, config *CloudRunV2ServiceConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlegkehubscoperbacrolebinding/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_gke_hub_scope_rbac_role_binding google_gke_hub_scope_rbac_role_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_gke_hub_scope_rbac_role_binding google_gke_hub_scope_rbac_role_binding}.
 type GoogleGkeHubScopeRbacRoleBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -584,7 +584,7 @@ func (j *jsiiProxy_GoogleGkeHubScopeRbacRoleBinding) UserInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_gke_hub_scope_rbac_role_binding google_gke_hub_scope_rbac_role_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_gke_hub_scope_rbac_role_binding google_gke_hub_scope_rbac_role_binding} Resource.
 func NewGoogleGkeHubScopeRbacRoleBinding(scope constructs.Construct, id *string, config *GoogleGkeHubScopeRbacRoleBindingConfig) GoogleGkeHubScopeRbacRoleBinding {
 	_init_.Initialize()
 
@@ -602,7 +602,7 @@ func NewGoogleGkeHubScopeRbacRoleBinding(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_gke_hub_scope_rbac_role_binding google_gke_hub_scope_rbac_role_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_gke_hub_scope_rbac_role_binding google_gke_hub_scope_rbac_role_binding} Resource.
 func NewGoogleGkeHubScopeRbacRoleBinding_Override(g GoogleGkeHubScopeRbacRoleBinding, scope constructs.Construct, id *string, config *GoogleGkeHubScopeRbacRoleBindingConfig) {
 	_init_.Initialize()
 

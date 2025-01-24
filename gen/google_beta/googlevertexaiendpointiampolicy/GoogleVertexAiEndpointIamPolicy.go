@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlevertexaiendpointiampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_vertex_ai_endpoint_iam_policy google_vertex_ai_endpoint_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_vertex_ai_endpoint_iam_policy google_vertex_ai_endpoint_iam_policy}.
 type GoogleVertexAiEndpointIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -412,7 +412,7 @@ func (j *jsiiProxy_GoogleVertexAiEndpointIamPolicy) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_vertex_ai_endpoint_iam_policy google_vertex_ai_endpoint_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_vertex_ai_endpoint_iam_policy google_vertex_ai_endpoint_iam_policy} Resource.
 func NewGoogleVertexAiEndpointIamPolicy(scope constructs.Construct, id *string, config *GoogleVertexAiEndpointIamPolicyConfig) GoogleVertexAiEndpointIamPolicy {
 	_init_.Initialize()
 
@@ -430,7 +430,7 @@ func NewGoogleVertexAiEndpointIamPolicy(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_vertex_ai_endpoint_iam_policy google_vertex_ai_endpoint_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_vertex_ai_endpoint_iam_policy google_vertex_ai_endpoint_iam_policy} Resource.
 func NewGoogleVertexAiEndpointIamPolicy_Override(g GoogleVertexAiEndpointIamPolicy, scope constructs.Construct, id *string, config *GoogleVertexAiEndpointIamPolicyConfig) {
 	_init_.Initialize()
 

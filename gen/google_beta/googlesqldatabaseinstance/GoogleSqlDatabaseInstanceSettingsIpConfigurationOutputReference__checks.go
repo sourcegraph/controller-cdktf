@@ -309,6 +309,14 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReferen
 	return nil
 }
 
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) validateSetServerCaModeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) validateSetSslModeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

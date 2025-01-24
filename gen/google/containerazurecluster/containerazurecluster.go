@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/containerazurecluster/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/container_azure_cluster google_container_azure_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/container_azure_cluster google_container_azure_cluster}.
 type ContainerAzureCluster interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -734,7 +734,7 @@ func (j *jsiiProxy_ContainerAzureCluster) WorkloadIdentityConfig() ContainerAzur
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/container_azure_cluster google_container_azure_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/container_azure_cluster google_container_azure_cluster} Resource.
 func NewContainerAzureCluster(scope constructs.Construct, id *string, config *ContainerAzureClusterConfig) ContainerAzureCluster {
 	_init_.Initialize()
 
@@ -752,7 +752,7 @@ func NewContainerAzureCluster(scope constructs.Construct, id *string, config *Co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/container_azure_cluster google_container_azure_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/container_azure_cluster google_container_azure_cluster} Resource.
 func NewContainerAzureCluster_Override(c ContainerAzureCluster, scope constructs.Construct, id *string, config *ContainerAzureClusterConfig) {
 	_init_.Initialize()
 

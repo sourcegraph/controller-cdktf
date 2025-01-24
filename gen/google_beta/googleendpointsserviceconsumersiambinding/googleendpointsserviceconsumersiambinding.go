@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleendpointsserviceconsumersiambinding/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_endpoints_service_consumers_iam_binding google_endpoints_service_consumers_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_endpoints_service_consumers_iam_binding google_endpoints_service_consumers_iam_binding}.
 type GoogleEndpointsServiceConsumersIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -434,7 +434,7 @@ func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamBinding) TerraformResourceT
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_endpoints_service_consumers_iam_binding google_endpoints_service_consumers_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_endpoints_service_consumers_iam_binding google_endpoints_service_consumers_iam_binding} Resource.
 func NewGoogleEndpointsServiceConsumersIamBinding(scope constructs.Construct, id *string, config *GoogleEndpointsServiceConsumersIamBindingConfig) GoogleEndpointsServiceConsumersIamBinding {
 	_init_.Initialize()
 
@@ -452,7 +452,7 @@ func NewGoogleEndpointsServiceConsumersIamBinding(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_endpoints_service_consumers_iam_binding google_endpoints_service_consumers_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_endpoints_service_consumers_iam_binding google_endpoints_service_consumers_iam_binding} Resource.
 func NewGoogleEndpointsServiceConsumersIamBinding_Override(g GoogleEndpointsServiceConsumersIamBinding, scope constructs.Construct, id *string, config *GoogleEndpointsServiceConsumersIamBindingConfig) {
 	_init_.Initialize()
 

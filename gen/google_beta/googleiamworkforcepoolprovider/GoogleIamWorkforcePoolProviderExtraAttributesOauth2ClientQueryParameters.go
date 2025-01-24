@@ -8,7 +8,7 @@ type GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientQueryParameters st
 	// filter used to request specific groups for users from IdP. By default, all of the groups associated with the user are fetched. The
 	// groups should be mail enabled and security enabled. See https://learn.microsoft.com/en-us/graph/search-query-parameter for more details.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_iam_workforce_pool_provider#filter GoogleIamWorkforcePoolProvider#filter}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_iam_workforce_pool_provider#filter GoogleIamWorkforcePoolProvider#filter}
 	Filter *string `field:"optional" json:"filter" yaml:"filter"`
 }
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlefirestoreindex/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_firestore_index google_firestore_index}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_firestore_index google_firestore_index}.
 type GoogleFirestoreIndex interface {
 	cdktf.TerraformResource
 	ApiScope() *string
@@ -484,7 +484,7 @@ func (j *jsiiProxy_GoogleFirestoreIndex) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_firestore_index google_firestore_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_firestore_index google_firestore_index} Resource.
 func NewGoogleFirestoreIndex(scope constructs.Construct, id *string, config *GoogleFirestoreIndexConfig) GoogleFirestoreIndex {
 	_init_.Initialize()
 
@@ -502,7 +502,7 @@ func NewGoogleFirestoreIndex(scope constructs.Construct, id *string, config *Goo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_firestore_index google_firestore_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_firestore_index google_firestore_index} Resource.
 func NewGoogleFirestoreIndex_Override(g GoogleFirestoreIndex, scope constructs.Construct, id *string, config *GoogleFirestoreIndexConfig) {
 	_init_.Initialize()
 

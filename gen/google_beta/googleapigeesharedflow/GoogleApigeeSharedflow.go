@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleapigeesharedflow/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_apigee_sharedflow google_apigee_sharedflow}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_apigee_sharedflow google_apigee_sharedflow}.
 type GoogleApigeeSharedflow interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -468,7 +468,7 @@ func (j *jsiiProxy_GoogleApigeeSharedflow) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_apigee_sharedflow google_apigee_sharedflow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_apigee_sharedflow google_apigee_sharedflow} Resource.
 func NewGoogleApigeeSharedflow(scope constructs.Construct, id *string, config *GoogleApigeeSharedflowConfig) GoogleApigeeSharedflow {
 	_init_.Initialize()
 
@@ -486,7 +486,7 @@ func NewGoogleApigeeSharedflow(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_apigee_sharedflow google_apigee_sharedflow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_apigee_sharedflow google_apigee_sharedflow} Resource.
 func NewGoogleApigeeSharedflow_Override(g GoogleApigeeSharedflow, scope constructs.Construct, id *string, config *GoogleApigeeSharedflowConfig) {
 	_init_.Initialize()
 

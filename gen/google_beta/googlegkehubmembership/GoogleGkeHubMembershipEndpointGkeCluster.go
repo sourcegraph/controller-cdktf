@@ -9,7 +9,7 @@ type GoogleGkeHubMembershipEndpointGkeCluster struct {
 	// this can be '"//container.googleapis.com/${google_container_cluster.my-cluster.id}"' or
 	// 'google_container_cluster.my-cluster.id'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_gke_hub_membership#resource_link GoogleGkeHubMembership#resource_link}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_gke_hub_membership#resource_link GoogleGkeHubMembership#resource_link}
 	ResourceLink *string `field:"required" json:"resourceLink" yaml:"resourceLink"`
 }
 

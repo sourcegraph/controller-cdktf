@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleapigeetargetserver/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_apigee_target_server google_apigee_target_server}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_apigee_target_server google_apigee_target_server}.
 type GoogleApigeeTargetServer interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -519,7 +519,7 @@ func (j *jsiiProxy_GoogleApigeeTargetServer) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_apigee_target_server google_apigee_target_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_apigee_target_server google_apigee_target_server} Resource.
 func NewGoogleApigeeTargetServer(scope constructs.Construct, id *string, config *GoogleApigeeTargetServerConfig) GoogleApigeeTargetServer {
 	_init_.Initialize()
 
@@ -537,7 +537,7 @@ func NewGoogleApigeeTargetServer(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_apigee_target_server google_apigee_target_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_apigee_target_server google_apigee_target_server} Resource.
 func NewGoogleApigeeTargetServer_Override(g GoogleApigeeTargetServer, scope constructs.Construct, id *string, config *GoogleApigeeTargetServerConfig) {
 	_init_.Initialize()
 

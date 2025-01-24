@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglecomputesubnetwork/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_compute_subnetwork google_compute_subnetwork}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/data-sources/google_compute_subnetwork google_compute_subnetwork}.
 type DataGoogleComputeSubnetwork interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -435,7 +435,7 @@ func (j *jsiiProxy_DataGoogleComputeSubnetwork) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_compute_subnetwork google_compute_subnetwork} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/data-sources/google_compute_subnetwork google_compute_subnetwork} Data Source.
 func NewDataGoogleComputeSubnetwork(scope constructs.Construct, id *string, config *DataGoogleComputeSubnetworkConfig) DataGoogleComputeSubnetwork {
 	_init_.Initialize()
 
@@ -453,7 +453,7 @@ func NewDataGoogleComputeSubnetwork(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_compute_subnetwork google_compute_subnetwork} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/data-sources/google_compute_subnetwork google_compute_subnetwork} Data Source.
 func NewDataGoogleComputeSubnetwork_Override(d DataGoogleComputeSubnetwork, scope constructs.Construct, id *string, config *DataGoogleComputeSubnetworkConfig) {
 	_init_.Initialize()
 

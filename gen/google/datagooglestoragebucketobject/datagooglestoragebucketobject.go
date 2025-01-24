@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagooglestoragebucketobject/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/storage_bucket_object google_storage_bucket_object}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/data-sources/storage_bucket_object google_storage_bucket_object}.
 type DataGoogleStorageBucketObject interface {
 	cdktf.TerraformDataSource
 	Bucket() *string
@@ -45,6 +45,7 @@ type DataGoogleStorageBucketObject interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Generation() *float64
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -319,6 +320,16 @@ func (j *jsiiProxy_DataGoogleStorageBucketObject) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleStorageBucketObject) Generation() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"generation",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleStorageBucketObject) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -530,7 +541,7 @@ func (j *jsiiProxy_DataGoogleStorageBucketObject) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/storage_bucket_object google_storage_bucket_object} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/data-sources/storage_bucket_object google_storage_bucket_object} Data Source.
 func NewDataGoogleStorageBucketObject(scope constructs.Construct, id *string, config *DataGoogleStorageBucketObjectConfig) DataGoogleStorageBucketObject {
 	_init_.Initialize()
 
@@ -548,7 +559,7 @@ func NewDataGoogleStorageBucketObject(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/storage_bucket_object google_storage_bucket_object} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/data-sources/storage_bucket_object google_storage_bucket_object} Data Source.
 func NewDataGoogleStorageBucketObject_Override(d DataGoogleStorageBucketObject, scope constructs.Construct, id *string, config *DataGoogleStorageBucketObjectConfig) {
 	_init_.Initialize()
 

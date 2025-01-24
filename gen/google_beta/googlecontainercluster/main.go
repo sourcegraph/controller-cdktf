@@ -844,7 +844,10 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putIstioConfig", GoMethod: "PutIstioConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putKalmConfig", GoMethod: "PutKalmConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putNetworkPolicyConfig", GoMethod: "PutNetworkPolicyConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "putRayOperatorConfig", GoMethod: "PutRayOperatorConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putStatefulHaConfig", GoMethod: "PutStatefulHaConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "rayOperatorConfig", GoGetter: "RayOperatorConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "rayOperatorConfigInput", GoGetter: "RayOperatorConfigInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCloudrunConfig", GoMethod: "ResetCloudrunConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConfigConnectorConfig", GoMethod: "ResetConfigConnectorConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDnsCacheConfig", GoMethod: "ResetDnsCacheConfig"},
@@ -857,6 +860,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetIstioConfig", GoMethod: "ResetIstioConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetKalmConfig", GoMethod: "ResetKalmConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNetworkPolicyConfig", GoMethod: "ResetNetworkPolicyConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRayOperatorConfig", GoMethod: "ResetRayOperatorConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStatefulHaConfig", GoMethod: "ResetStatefulHaConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "statefulHaConfig", GoGetter: "StatefulHaConfig"},
@@ -867,6 +871,150 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterAddonsConfigRayOperatorConfig",
+		reflect.TypeOf((*GoogleContainerClusterAddonsConfigRayOperatorConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterAddonsConfigRayOperatorConfigList",
+		reflect.TypeOf((*GoogleContainerClusterAddonsConfigRayOperatorConfigList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleContainerClusterAddonsConfigRayOperatorConfigList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterAddonsConfigRayOperatorConfigOutputReference",
+		reflect.TypeOf((*GoogleContainerClusterAddonsConfigRayOperatorConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "enabled", GoGetter: "Enabled"},
+			_jsii_.MemberProperty{JsiiProperty: "enabledInput", GoGetter: "EnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "putRayClusterLoggingConfig", GoMethod: "PutRayClusterLoggingConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "putRayClusterMonitoringConfig", GoMethod: "PutRayClusterMonitoringConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "rayClusterLoggingConfig", GoGetter: "RayClusterLoggingConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "rayClusterLoggingConfigInput", GoGetter: "RayClusterLoggingConfigInput"},
+			_jsii_.MemberProperty{JsiiProperty: "rayClusterMonitoringConfig", GoGetter: "RayClusterMonitoringConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "rayClusterMonitoringConfigInput", GoGetter: "RayClusterMonitoringConfigInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRayClusterLoggingConfig", GoMethod: "ResetRayClusterLoggingConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRayClusterMonitoringConfig", GoMethod: "ResetRayClusterMonitoringConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleContainerClusterAddonsConfigRayOperatorConfigOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfig",
+		reflect.TypeOf((*GoogleContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfigOutputReference",
+		reflect.TypeOf((*GoogleContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "enabled", GoGetter: "Enabled"},
+			_jsii_.MemberProperty{JsiiProperty: "enabledInput", GoGetter: "EnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfigOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfig",
+		reflect.TypeOf((*GoogleContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfigOutputReference",
+		reflect.TypeOf((*GoogleContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "enabled", GoGetter: "Enabled"},
+			_jsii_.MemberProperty{JsiiProperty: "enabledInput", GoGetter: "EnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -1349,6 +1497,8 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autoProvisioningDefaults", GoGetter: "AutoProvisioningDefaults"},
 			_jsii_.MemberProperty{JsiiProperty: "autoProvisioningDefaultsInput", GoGetter: "AutoProvisioningDefaultsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "autoProvisioningLocations", GoGetter: "AutoProvisioningLocations"},
+			_jsii_.MemberProperty{JsiiProperty: "autoProvisioningLocationsInput", GoGetter: "AutoProvisioningLocationsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "autoscalingProfile", GoGetter: "AutoscalingProfile"},
 			_jsii_.MemberProperty{JsiiProperty: "autoscalingProfileInput", GoGetter: "AutoscalingProfileInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1373,6 +1523,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putAutoProvisioningDefaults", GoMethod: "PutAutoProvisioningDefaults"},
 			_jsii_.MemberMethod{JsiiMethod: "putResourceLimits", GoMethod: "PutResourceLimits"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutoProvisioningDefaults", GoMethod: "ResetAutoProvisioningDefaults"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAutoProvisioningLocations", GoMethod: "ResetAutoProvisioningLocations"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutoscalingProfile", GoMethod: "ResetAutoscalingProfile"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnabled", GoMethod: "ResetEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetResourceLimits", GoMethod: "ResetResourceLimits"},
@@ -3442,6 +3593,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "insecureKubeletReadonlyPortEnabled", GoGetter: "InsecureKubeletReadonlyPortEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "insecureKubeletReadonlyPortEnabledInput", GoGetter: "InsecureKubeletReadonlyPortEnabledInput"},
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -3449,6 +3602,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "podPidsLimitInput", GoGetter: "PodPidsLimitInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCpuCfsQuota", GoMethod: "ResetCpuCfsQuota"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCpuCfsQuotaPeriod", GoMethod: "ResetCpuCfsQuotaPeriod"},
+			_jsii_.MemberMethod{JsiiMethod: "resetInsecureKubeletReadonlyPortEnabled", GoMethod: "ResetInsecureKubeletReadonlyPortEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPodPidsLimit", GoMethod: "ResetPodPidsLimit"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
@@ -4150,6 +4304,45 @@ func init() {
 			return &j
 		},
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolAutoConfigNodeKubeletConfig",
+		reflect.TypeOf((*GoogleContainerClusterNodePoolAutoConfigNodeKubeletConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolAutoConfigNodeKubeletConfigOutputReference",
+		reflect.TypeOf((*GoogleContainerClusterNodePoolAutoConfigNodeKubeletConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "insecureKubeletReadonlyPortEnabled", GoGetter: "InsecureKubeletReadonlyPortEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "insecureKubeletReadonlyPortEnabledInput", GoGetter: "InsecureKubeletReadonlyPortEnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetInsecureKubeletReadonlyPortEnabled", GoMethod: "ResetInsecureKubeletReadonlyPortEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleContainerClusterNodePoolAutoConfigNodeKubeletConfigOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolAutoConfigOutputReference",
 		reflect.TypeOf((*GoogleContainerClusterNodePoolAutoConfigOutputReference)(nil)).Elem(),
@@ -4173,8 +4366,12 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "networkTags", GoGetter: "NetworkTags"},
 			_jsii_.MemberProperty{JsiiProperty: "networkTagsInput", GoGetter: "NetworkTagsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "nodeKubeletConfig", GoGetter: "NodeKubeletConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "nodeKubeletConfigInput", GoGetter: "NodeKubeletConfigInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putNetworkTags", GoMethod: "PutNetworkTags"},
+			_jsii_.MemberMethod{JsiiMethod: "putNodeKubeletConfig", GoMethod: "PutNodeKubeletConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNetworkTags", GoMethod: "ResetNetworkTags"},
+			_jsii_.MemberMethod{JsiiMethod: "resetNodeKubeletConfig", GoMethod: "ResetNodeKubeletConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetResourceManagerTags", GoMethod: "ResetResourceManagerTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "resourceManagerTags", GoGetter: "ResourceManagerTags"},
@@ -4491,6 +4688,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "insecureKubeletReadonlyPortEnabled", GoGetter: "InsecureKubeletReadonlyPortEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "insecureKubeletReadonlyPortEnabledInput", GoGetter: "InsecureKubeletReadonlyPortEnabledInput"},
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -4500,6 +4699,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putGcfsConfig", GoMethod: "PutGcfsConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetContainerdConfig", GoMethod: "ResetContainerdConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGcfsConfig", GoMethod: "ResetGcfsConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "resetInsecureKubeletReadonlyPortEnabled", GoMethod: "ResetInsecureKubeletReadonlyPortEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLoggingVariant", GoMethod: "ResetLoggingVariant"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
@@ -5665,6 +5865,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "insecureKubeletReadonlyPortEnabled", GoGetter: "InsecureKubeletReadonlyPortEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "insecureKubeletReadonlyPortEnabledInput", GoGetter: "InsecureKubeletReadonlyPortEnabledInput"},
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -5672,6 +5874,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "podPidsLimitInput", GoGetter: "PodPidsLimitInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCpuCfsQuota", GoMethod: "ResetCpuCfsQuota"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCpuCfsQuotaPeriod", GoMethod: "ResetCpuCfsQuotaPeriod"},
+			_jsii_.MemberMethod{JsiiMethod: "resetInsecureKubeletReadonlyPortEnabled", GoMethod: "ResetInsecureKubeletReadonlyPortEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPodPidsLimit", GoMethod: "ResetPodPidsLimit"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},

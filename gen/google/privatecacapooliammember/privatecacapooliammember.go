@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/privatecacapooliammember/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/privateca_ca_pool_iam_member google_privateca_ca_pool_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/privateca_ca_pool_iam_member google_privateca_ca_pool_iam_member}.
 type PrivatecaCaPoolIamMember interface {
 	cdktf.TerraformResource
 	CaPool() *string
@@ -459,7 +459,7 @@ func (j *jsiiProxy_PrivatecaCaPoolIamMember) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/privateca_ca_pool_iam_member google_privateca_ca_pool_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/privateca_ca_pool_iam_member google_privateca_ca_pool_iam_member} Resource.
 func NewPrivatecaCaPoolIamMember(scope constructs.Construct, id *string, config *PrivatecaCaPoolIamMemberConfig) PrivatecaCaPoolIamMember {
 	_init_.Initialize()
 
@@ -477,7 +477,7 @@ func NewPrivatecaCaPoolIamMember(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/privateca_ca_pool_iam_member google_privateca_ca_pool_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/privateca_ca_pool_iam_member google_privateca_ca_pool_iam_member} Resource.
 func NewPrivatecaCaPoolIamMember_Override(p PrivatecaCaPoolIamMember, scope constructs.Construct, id *string, config *PrivatecaCaPoolIamMemberConfig) {
 	_init_.Initialize()
 

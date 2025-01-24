@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlehealthcarehl7v2storeiampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_healthcare_hl7_v2_store_iam_policy google_healthcare_hl7_v2_store_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_healthcare_hl7_v2_store_iam_policy google_healthcare_hl7_v2_store_iam_policy}.
 type GoogleHealthcareHl7V2StoreIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -364,7 +364,7 @@ func (j *jsiiProxy_GoogleHealthcareHl7V2StoreIamPolicy) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_healthcare_hl7_v2_store_iam_policy google_healthcare_hl7_v2_store_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_healthcare_hl7_v2_store_iam_policy google_healthcare_hl7_v2_store_iam_policy} Resource.
 func NewGoogleHealthcareHl7V2StoreIamPolicy(scope constructs.Construct, id *string, config *GoogleHealthcareHl7V2StoreIamPolicyConfig) GoogleHealthcareHl7V2StoreIamPolicy {
 	_init_.Initialize()
 
@@ -382,7 +382,7 @@ func NewGoogleHealthcareHl7V2StoreIamPolicy(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_healthcare_hl7_v2_store_iam_policy google_healthcare_hl7_v2_store_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_healthcare_hl7_v2_store_iam_policy google_healthcare_hl7_v2_store_iam_policy} Resource.
 func NewGoogleHealthcareHl7V2StoreIamPolicy_Override(g GoogleHealthcareHl7V2StoreIamPolicy, scope constructs.Construct, id *string, config *GoogleHealthcareHl7V2StoreIamPolicyConfig) {
 	_init_.Initialize()
 

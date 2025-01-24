@@ -116,6 +116,10 @@ func (j *jsiiProxy_GoogleDataformRepository) validateSetIdParameters(val *string
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataformRepository) validateSetKmsKeyNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataformRepository) validateSetLabelsParameters(val *map[string]*string) error {
 	return nil
 }

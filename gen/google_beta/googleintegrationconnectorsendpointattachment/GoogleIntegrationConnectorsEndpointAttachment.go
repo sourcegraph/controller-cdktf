@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleintegrationconnectorsendpointattachment/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_integration_connectors_endpoint_attachment google_integration_connectors_endpoint_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_integration_connectors_endpoint_attachment google_integration_connectors_endpoint_attachment}.
 type GoogleIntegrationConnectorsEndpointAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -551,7 +551,7 @@ func (j *jsiiProxy_GoogleIntegrationConnectorsEndpointAttachment) UpdateTime() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_integration_connectors_endpoint_attachment google_integration_connectors_endpoint_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_integration_connectors_endpoint_attachment google_integration_connectors_endpoint_attachment} Resource.
 func NewGoogleIntegrationConnectorsEndpointAttachment(scope constructs.Construct, id *string, config *GoogleIntegrationConnectorsEndpointAttachmentConfig) GoogleIntegrationConnectorsEndpointAttachment {
 	_init_.Initialize()
 
@@ -569,7 +569,7 @@ func NewGoogleIntegrationConnectorsEndpointAttachment(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_integration_connectors_endpoint_attachment google_integration_connectors_endpoint_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_integration_connectors_endpoint_attachment google_integration_connectors_endpoint_attachment} Resource.
 func NewGoogleIntegrationConnectorsEndpointAttachment_Override(g GoogleIntegrationConnectorsEndpointAttachment, scope constructs.Construct, id *string, config *GoogleIntegrationConnectorsEndpointAttachmentConfig) {
 	_init_.Initialize()
 

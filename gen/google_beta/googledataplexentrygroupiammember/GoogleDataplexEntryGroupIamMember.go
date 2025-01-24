@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledataplexentrygroupiammember/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_dataplex_entry_group_iam_member google_dataplex_entry_group_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_dataplex_entry_group_iam_member google_dataplex_entry_group_iam_member}.
 type GoogleDataplexEntryGroupIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -459,7 +459,7 @@ func (j *jsiiProxy_GoogleDataplexEntryGroupIamMember) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_dataplex_entry_group_iam_member google_dataplex_entry_group_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_dataplex_entry_group_iam_member google_dataplex_entry_group_iam_member} Resource.
 func NewGoogleDataplexEntryGroupIamMember(scope constructs.Construct, id *string, config *GoogleDataplexEntryGroupIamMemberConfig) GoogleDataplexEntryGroupIamMember {
 	_init_.Initialize()
 
@@ -477,7 +477,7 @@ func NewGoogleDataplexEntryGroupIamMember(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_dataplex_entry_group_iam_member google_dataplex_entry_group_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_dataplex_entry_group_iam_member google_dataplex_entry_group_iam_member} Resource.
 func NewGoogleDataplexEntryGroupIamMember_Override(g GoogleDataplexEntryGroupIamMember, scope constructs.Construct, id *string, config *GoogleDataplexEntryGroupIamMemberConfig) {
 	_init_.Initialize()
 

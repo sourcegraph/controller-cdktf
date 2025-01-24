@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputenetworkedgesecurityservice/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_network_edge_security_service google_compute_network_edge_security_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_compute_network_edge_security_service google_compute_network_edge_security_service}.
 type GoogleComputeNetworkEdgeSecurityService interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -505,7 +505,7 @@ func (j *jsiiProxy_GoogleComputeNetworkEdgeSecurityService) TimeoutsInput() inte
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_network_edge_security_service google_compute_network_edge_security_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_compute_network_edge_security_service google_compute_network_edge_security_service} Resource.
 func NewGoogleComputeNetworkEdgeSecurityService(scope constructs.Construct, id *string, config *GoogleComputeNetworkEdgeSecurityServiceConfig) GoogleComputeNetworkEdgeSecurityService {
 	_init_.Initialize()
 
@@ -523,7 +523,7 @@ func NewGoogleComputeNetworkEdgeSecurityService(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_network_edge_security_service google_compute_network_edge_security_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_compute_network_edge_security_service google_compute_network_edge_security_service} Resource.
 func NewGoogleComputeNetworkEdgeSecurityService_Override(g GoogleComputeNetworkEdgeSecurityService, scope constructs.Construct, id *string, config *GoogleComputeNetworkEdgeSecurityServiceConfig) {
 	_init_.Initialize()
 

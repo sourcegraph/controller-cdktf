@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglecomputezones/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_compute_zones google_compute_zones}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/data-sources/google_compute_zones google_compute_zones}.
 type DataGoogleComputeZones interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -345,7 +345,7 @@ func (j *jsiiProxy_DataGoogleComputeZones) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_compute_zones google_compute_zones} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/data-sources/google_compute_zones google_compute_zones} Data Source.
 func NewDataGoogleComputeZones(scope constructs.Construct, id *string, config *DataGoogleComputeZonesConfig) DataGoogleComputeZones {
 	_init_.Initialize()
 
@@ -363,7 +363,7 @@ func NewDataGoogleComputeZones(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_compute_zones google_compute_zones} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/data-sources/google_compute_zones google_compute_zones} Data Source.
 func NewDataGoogleComputeZones_Override(d DataGoogleComputeZones, scope constructs.Construct, id *string, config *DataGoogleComputeZonesConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputepublicadvertisedprefix/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_public_advertised_prefix google_compute_public_advertised_prefix}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_compute_public_advertised_prefix google_compute_public_advertised_prefix}.
 type GoogleComputePublicAdvertisedPrefix interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -71,6 +71,7 @@ type GoogleComputePublicAdvertisedPrefix interface {
 	// Experimental.
 	RawOverrides() interface{}
 	SelfLink() *string
+	SharedSecret() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -408,6 +409,16 @@ func (j *jsiiProxy_GoogleComputePublicAdvertisedPrefix) SelfLink() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputePublicAdvertisedPrefix) SharedSecret() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sharedSecret",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputePublicAdvertisedPrefix) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -459,7 +470,7 @@ func (j *jsiiProxy_GoogleComputePublicAdvertisedPrefix) TimeoutsInput() interfac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_public_advertised_prefix google_compute_public_advertised_prefix} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_compute_public_advertised_prefix google_compute_public_advertised_prefix} Resource.
 func NewGoogleComputePublicAdvertisedPrefix(scope constructs.Construct, id *string, config *GoogleComputePublicAdvertisedPrefixConfig) GoogleComputePublicAdvertisedPrefix {
 	_init_.Initialize()
 
@@ -477,7 +488,7 @@ func NewGoogleComputePublicAdvertisedPrefix(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_public_advertised_prefix google_compute_public_advertised_prefix} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_compute_public_advertised_prefix google_compute_public_advertised_prefix} Resource.
 func NewGoogleComputePublicAdvertisedPrefix_Override(g GoogleComputePublicAdvertisedPrefix, scope constructs.Construct, id *string, config *GoogleComputePublicAdvertisedPrefixConfig) {
 	_init_.Initialize()
 

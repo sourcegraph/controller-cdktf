@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/securesourcemanagerinstanceiambinding/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/secure_source_manager_instance_iam_binding google_secure_source_manager_instance_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/secure_source_manager_instance_iam_binding google_secure_source_manager_instance_iam_binding}.
 type SecureSourceManagerInstanceIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -459,7 +459,7 @@ func (j *jsiiProxy_SecureSourceManagerInstanceIamBinding) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/secure_source_manager_instance_iam_binding google_secure_source_manager_instance_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/secure_source_manager_instance_iam_binding google_secure_source_manager_instance_iam_binding} Resource.
 func NewSecureSourceManagerInstanceIamBinding(scope constructs.Construct, id *string, config *SecureSourceManagerInstanceIamBindingConfig) SecureSourceManagerInstanceIamBinding {
 	_init_.Initialize()
 
@@ -477,7 +477,7 @@ func NewSecureSourceManagerInstanceIamBinding(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/secure_source_manager_instance_iam_binding google_secure_source_manager_instance_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/secure_source_manager_instance_iam_binding google_secure_source_manager_instance_iam_binding} Resource.
 func NewSecureSourceManagerInstanceIamBinding_Override(s SecureSourceManagerInstanceIamBinding, scope constructs.Construct, id *string, config *SecureSourceManagerInstanceIamBindingConfig) {
 	_init_.Initialize()
 

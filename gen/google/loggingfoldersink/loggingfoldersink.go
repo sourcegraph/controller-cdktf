@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/loggingfoldersink/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/logging_folder_sink google_logging_folder_sink}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/logging_folder_sink google_logging_folder_sink}.
 type LoggingFolderSink interface {
 	cdktf.TerraformResource
 	BigqueryOptions() LoggingFolderSinkBigqueryOptionsOutputReference
@@ -555,7 +555,7 @@ func (j *jsiiProxy_LoggingFolderSink) WriterIdentity() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/logging_folder_sink google_logging_folder_sink} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/logging_folder_sink google_logging_folder_sink} Resource.
 func NewLoggingFolderSink(scope constructs.Construct, id *string, config *LoggingFolderSinkConfig) LoggingFolderSink {
 	_init_.Initialize()
 
@@ -573,7 +573,7 @@ func NewLoggingFolderSink(scope constructs.Construct, id *string, config *Loggin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/logging_folder_sink google_logging_folder_sink} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/logging_folder_sink google_logging_folder_sink} Resource.
 func NewLoggingFolderSink_Override(l LoggingFolderSink, scope constructs.Construct, id *string, config *LoggingFolderSinkConfig) {
 	_init_.Initialize()
 

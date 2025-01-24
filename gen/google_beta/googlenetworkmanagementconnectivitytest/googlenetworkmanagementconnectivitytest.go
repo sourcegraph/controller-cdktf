@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlenetworkmanagementconnectivitytest/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_network_management_connectivity_test google_network_management_connectivity_test}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_network_management_connectivity_test google_network_management_connectivity_test}.
 type GoogleNetworkManagementConnectivityTest interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -542,7 +542,7 @@ func (j *jsiiProxy_GoogleNetworkManagementConnectivityTest) TimeoutsInput() inte
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_network_management_connectivity_test google_network_management_connectivity_test} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_network_management_connectivity_test google_network_management_connectivity_test} Resource.
 func NewGoogleNetworkManagementConnectivityTest(scope constructs.Construct, id *string, config *GoogleNetworkManagementConnectivityTestConfig) GoogleNetworkManagementConnectivityTest {
 	_init_.Initialize()
 
@@ -560,7 +560,7 @@ func NewGoogleNetworkManagementConnectivityTest(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_network_management_connectivity_test google_network_management_connectivity_test} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_network_management_connectivity_test google_network_management_connectivity_test} Resource.
 func NewGoogleNetworkManagementConnectivityTest_Override(g GoogleNetworkManagementConnectivityTest, scope constructs.Construct, id *string, config *GoogleNetworkManagementConnectivityTestConfig) {
 	_init_.Initialize()
 

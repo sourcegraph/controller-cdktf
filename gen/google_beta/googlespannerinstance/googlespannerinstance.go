@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlespannerinstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_spanner_instance google_spanner_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_spanner_instance google_spanner_instance}.
 type GoogleSpannerInstance interface {
 	cdktf.TerraformResource
 	AutoscalingConfig() GoogleSpannerInstanceAutoscalingConfigOutputReference
@@ -29,6 +29,9 @@ type GoogleSpannerInstance interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DefaultBackupScheduleType() *string
+	SetDefaultBackupScheduleType(val *string)
+	DefaultBackupScheduleTypeInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -138,6 +141,7 @@ type GoogleSpannerInstance interface {
 	PutAutoscalingConfig(value *GoogleSpannerInstanceAutoscalingConfig)
 	PutTimeouts(value *GoogleSpannerInstanceTimeouts)
 	ResetAutoscalingConfig()
+	ResetDefaultBackupScheduleType()
 	ResetForceDestroy()
 	ResetId()
 	ResetLabels()
@@ -242,6 +246,26 @@ func (j *jsiiProxy_GoogleSpannerInstance) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSpannerInstance) DefaultBackupScheduleType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultBackupScheduleType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSpannerInstance) DefaultBackupScheduleTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultBackupScheduleTypeInput",
 		&returns,
 	)
 	return returns
@@ -578,7 +602,7 @@ func (j *jsiiProxy_GoogleSpannerInstance) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_spanner_instance google_spanner_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_spanner_instance google_spanner_instance} Resource.
 func NewGoogleSpannerInstance(scope constructs.Construct, id *string, config *GoogleSpannerInstanceConfig) GoogleSpannerInstance {
 	_init_.Initialize()
 
@@ -596,7 +620,7 @@ func NewGoogleSpannerInstance(scope constructs.Construct, id *string, config *Go
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_spanner_instance google_spanner_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_spanner_instance google_spanner_instance} Resource.
 func NewGoogleSpannerInstance_Override(g GoogleSpannerInstance, scope constructs.Construct, id *string, config *GoogleSpannerInstanceConfig) {
 	_init_.Initialize()
 
@@ -636,6 +660,17 @@ func (j *jsiiProxy_GoogleSpannerInstance)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleSpannerInstance)SetDefaultBackupScheduleType(val *string) {
+	if err := j.validateSetDefaultBackupScheduleTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultBackupScheduleType",
 		val,
 	)
 }
@@ -1153,6 +1188,14 @@ func (g *jsiiProxy_GoogleSpannerInstance) ResetAutoscalingConfig() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetAutoscalingConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleSpannerInstance) ResetDefaultBackupScheduleType() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDefaultBackupScheduleType",
 		nil, // no parameters
 	)
 }

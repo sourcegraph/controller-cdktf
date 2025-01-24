@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/workbenchinstanceiampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/workbench_instance_iam_policy google_workbench_instance_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/workbench_instance_iam_policy google_workbench_instance_iam_policy}.
 type WorkbenchInstanceIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -412,7 +412,7 @@ func (j *jsiiProxy_WorkbenchInstanceIamPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/workbench_instance_iam_policy google_workbench_instance_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/workbench_instance_iam_policy google_workbench_instance_iam_policy} Resource.
 func NewWorkbenchInstanceIamPolicy(scope constructs.Construct, id *string, config *WorkbenchInstanceIamPolicyConfig) WorkbenchInstanceIamPolicy {
 	_init_.Initialize()
 
@@ -430,7 +430,7 @@ func NewWorkbenchInstanceIamPolicy(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/workbench_instance_iam_policy google_workbench_instance_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/workbench_instance_iam_policy google_workbench_instance_iam_policy} Resource.
 func NewWorkbenchInstanceIamPolicy_Override(w WorkbenchInstanceIamPolicy, scope constructs.Construct, id *string, config *WorkbenchInstanceIamPolicyConfig) {
 	_init_.Initialize()
 

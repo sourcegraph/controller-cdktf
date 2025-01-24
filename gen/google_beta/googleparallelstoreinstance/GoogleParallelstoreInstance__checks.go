@@ -361,6 +361,22 @@ func (j *jsiiProxy_GoogleParallelstoreInstance) validateSetDescriptionParameters
 	return nil
 }
 
+func (j *jsiiProxy_GoogleParallelstoreInstance) validateSetDirectoryStripeLevelParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleParallelstoreInstance) validateSetFileStripeLevelParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleParallelstoreInstance) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

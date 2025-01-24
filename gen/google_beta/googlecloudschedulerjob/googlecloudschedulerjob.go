@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecloudschedulerjob/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_cloud_scheduler_job google_cloud_scheduler_job}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_cloud_scheduler_job google_cloud_scheduler_job}.
 type GoogleCloudSchedulerJob interface {
 	cdktf.TerraformResource
 	AppEngineHttpTarget() GoogleCloudSchedulerJobAppEngineHttpTargetOutputReference
@@ -629,7 +629,7 @@ func (j *jsiiProxy_GoogleCloudSchedulerJob) TimeZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_cloud_scheduler_job google_cloud_scheduler_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_cloud_scheduler_job google_cloud_scheduler_job} Resource.
 func NewGoogleCloudSchedulerJob(scope constructs.Construct, id *string, config *GoogleCloudSchedulerJobConfig) GoogleCloudSchedulerJob {
 	_init_.Initialize()
 
@@ -647,7 +647,7 @@ func NewGoogleCloudSchedulerJob(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_cloud_scheduler_job google_cloud_scheduler_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_cloud_scheduler_job google_cloud_scheduler_job} Resource.
 func NewGoogleCloudSchedulerJob_Override(g GoogleCloudSchedulerJob, scope constructs.Construct, id *string, config *GoogleCloudSchedulerJobConfig) {
 	_init_.Initialize()
 

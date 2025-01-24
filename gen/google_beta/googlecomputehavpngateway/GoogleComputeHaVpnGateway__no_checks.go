@@ -108,6 +108,10 @@ func (j *jsiiProxy_GoogleComputeHaVpnGateway) validateSetDescriptionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeHaVpnGateway) validateSetGatewayIpVersionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeHaVpnGateway) validateSetIdParameters(val *string) error {
 	return nil
 }

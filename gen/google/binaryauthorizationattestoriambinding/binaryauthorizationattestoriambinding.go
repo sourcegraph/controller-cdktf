@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/binaryauthorizationattestoriambinding/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/binary_authorization_attestor_iam_binding google_binary_authorization_attestor_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/binary_authorization_attestor_iam_binding google_binary_authorization_attestor_iam_binding}.
 type BinaryAuthorizationAttestorIamBinding interface {
 	cdktf.TerraformResource
 	Attestor() *string
@@ -435,7 +435,7 @@ func (j *jsiiProxy_BinaryAuthorizationAttestorIamBinding) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/binary_authorization_attestor_iam_binding google_binary_authorization_attestor_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/binary_authorization_attestor_iam_binding google_binary_authorization_attestor_iam_binding} Resource.
 func NewBinaryAuthorizationAttestorIamBinding(scope constructs.Construct, id *string, config *BinaryAuthorizationAttestorIamBindingConfig) BinaryAuthorizationAttestorIamBinding {
 	_init_.Initialize()
 
@@ -453,7 +453,7 @@ func NewBinaryAuthorizationAttestorIamBinding(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/binary_authorization_attestor_iam_binding google_binary_authorization_attestor_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/binary_authorization_attestor_iam_binding google_binary_authorization_attestor_iam_binding} Resource.
 func NewBinaryAuthorizationAttestorIamBinding_Override(b BinaryAuthorizationAttestorIamBinding, scope constructs.Construct, id *string, config *BinaryAuthorizationAttestorIamBindingConfig) {
 	_init_.Initialize()
 

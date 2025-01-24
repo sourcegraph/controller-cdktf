@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlestoragemanagedfolderiampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_storage_managed_folder_iam_policy google_storage_managed_folder_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_storage_managed_folder_iam_policy google_storage_managed_folder_iam_policy}.
 type GoogleStorageManagedFolderIamPolicy interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -387,7 +387,7 @@ func (j *jsiiProxy_GoogleStorageManagedFolderIamPolicy) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_storage_managed_folder_iam_policy google_storage_managed_folder_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_storage_managed_folder_iam_policy google_storage_managed_folder_iam_policy} Resource.
 func NewGoogleStorageManagedFolderIamPolicy(scope constructs.Construct, id *string, config *GoogleStorageManagedFolderIamPolicyConfig) GoogleStorageManagedFolderIamPolicy {
 	_init_.Initialize()
 
@@ -405,7 +405,7 @@ func NewGoogleStorageManagedFolderIamPolicy(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_storage_managed_folder_iam_policy google_storage_managed_folder_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_storage_managed_folder_iam_policy google_storage_managed_folder_iam_policy} Resource.
 func NewGoogleStorageManagedFolderIamPolicy_Override(g GoogleStorageManagedFolderIamPolicy, scope constructs.Construct, id *string, config *GoogleStorageManagedFolderIamPolicyConfig) {
 	_init_.Initialize()
 

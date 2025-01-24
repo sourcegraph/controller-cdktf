@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/dataplexaspecttypeiambinding/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/dataplex_aspect_type_iam_binding google_dataplex_aspect_type_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/dataplex_aspect_type_iam_binding google_dataplex_aspect_type_iam_binding}.
 type DataplexAspectTypeIamBinding interface {
 	cdktf.TerraformResource
 	AspectTypeId() *string
@@ -459,7 +459,7 @@ func (j *jsiiProxy_DataplexAspectTypeIamBinding) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/dataplex_aspect_type_iam_binding google_dataplex_aspect_type_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/dataplex_aspect_type_iam_binding google_dataplex_aspect_type_iam_binding} Resource.
 func NewDataplexAspectTypeIamBinding(scope constructs.Construct, id *string, config *DataplexAspectTypeIamBindingConfig) DataplexAspectTypeIamBinding {
 	_init_.Initialize()
 
@@ -477,7 +477,7 @@ func NewDataplexAspectTypeIamBinding(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/dataplex_aspect_type_iam_binding google_dataplex_aspect_type_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/dataplex_aspect_type_iam_binding google_dataplex_aspect_type_iam_binding} Resource.
 func NewDataplexAspectTypeIamBinding_Override(d DataplexAspectTypeIamBinding, scope constructs.Construct, id *string, config *DataplexAspectTypeIamBindingConfig) {
 	_init_.Initialize()
 

@@ -6,7 +6,7 @@ type GoogleOsConfigOsPolicyAssignmentInstanceFilterExclusionLabels struct {
 	//
 	// A VM should contain all the key/value pairs specified in this map to be selected.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_os_config_os_policy_assignment#labels GoogleOsConfigOsPolicyAssignment#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_os_config_os_policy_assignment#labels GoogleOsConfigOsPolicyAssignment#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
 }
 

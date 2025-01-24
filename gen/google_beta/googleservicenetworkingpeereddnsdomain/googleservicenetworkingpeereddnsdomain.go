@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleservicenetworkingpeereddnsdomain/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_service_networking_peered_dns_domain google_service_networking_peered_dns_domain}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_service_networking_peered_dns_domain google_service_networking_peered_dns_domain}.
 type GoogleServiceNetworkingPeeredDnsDomain interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -459,7 +459,7 @@ func (j *jsiiProxy_GoogleServiceNetworkingPeeredDnsDomain) TimeoutsInput() inter
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_service_networking_peered_dns_domain google_service_networking_peered_dns_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_service_networking_peered_dns_domain google_service_networking_peered_dns_domain} Resource.
 func NewGoogleServiceNetworkingPeeredDnsDomain(scope constructs.Construct, id *string, config *GoogleServiceNetworkingPeeredDnsDomainConfig) GoogleServiceNetworkingPeeredDnsDomain {
 	_init_.Initialize()
 
@@ -477,7 +477,7 @@ func NewGoogleServiceNetworkingPeeredDnsDomain(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_service_networking_peered_dns_domain google_service_networking_peered_dns_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_service_networking_peered_dns_domain google_service_networking_peered_dns_domain} Resource.
 func NewGoogleServiceNetworkingPeeredDnsDomain_Override(g GoogleServiceNetworkingPeeredDnsDomain, scope constructs.Construct, id *string, config *GoogleServiceNetworkingPeeredDnsDomainConfig) {
 	_init_.Initialize()
 

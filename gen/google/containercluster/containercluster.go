@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/containercluster/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/container_cluster google_container_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/container_cluster google_container_cluster}.
 type ContainerCluster interface {
 	cdktf.TerraformResource
 	AddonsConfig() ContainerClusterAddonsConfigOutputReference
@@ -84,6 +84,9 @@ type ContainerCluster interface {
 	EnableLegacyAbac() interface{}
 	SetEnableLegacyAbac(val interface{})
 	EnableLegacyAbacInput() interface{}
+	EnableMultiNetworking() interface{}
+	SetEnableMultiNetworking(val interface{})
+	EnableMultiNetworkingInput() interface{}
 	EnableShieldedNodes() interface{}
 	SetEnableShieldedNodes(val interface{})
 	EnableShieldedNodesInput() interface{}
@@ -322,6 +325,7 @@ type ContainerCluster interface {
 	ResetEnableKubernetesAlpha()
 	ResetEnableL4IlbSubsetting()
 	ResetEnableLegacyAbac()
+	ResetEnableMultiNetworking()
 	ResetEnableShieldedNodes()
 	ResetEnableTpu()
 	ResetFleet()
@@ -869,6 +873,26 @@ func (j *jsiiProxy_ContainerCluster) EnableLegacyAbacInput() interface{} {
 	_jsii_.Get(
 		j,
 		"enableLegacyAbacInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerCluster) EnableMultiNetworking() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableMultiNetworking",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerCluster) EnableMultiNetworkingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableMultiNetworkingInput",
 		&returns,
 	)
 	return returns
@@ -1895,7 +1919,7 @@ func (j *jsiiProxy_ContainerCluster) WorkloadIdentityConfigInput() *ContainerClu
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/container_cluster google_container_cluster} Resource.
 func NewContainerCluster(scope constructs.Construct, id *string, config *ContainerClusterConfig) ContainerCluster {
 	_init_.Initialize()
 
@@ -1913,7 +1937,7 @@ func NewContainerCluster(scope constructs.Construct, id *string, config *Contain
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/container_cluster google_container_cluster} Resource.
 func NewContainerCluster_Override(c ContainerCluster, scope constructs.Construct, id *string, config *ContainerClusterConfig) {
 	_init_.Initialize()
 
@@ -2082,6 +2106,17 @@ func (j *jsiiProxy_ContainerCluster)SetEnableLegacyAbac(val interface{}) {
 	_jsii_.Set(
 		j,
 		"enableLegacyAbac",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerCluster)SetEnableMultiNetworking(val interface{}) {
+	if err := j.validateSetEnableMultiNetworkingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableMultiNetworking",
 		val,
 	)
 }
@@ -3221,6 +3256,14 @@ func (c *jsiiProxy_ContainerCluster) ResetEnableLegacyAbac() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetEnableLegacyAbac",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerCluster) ResetEnableMultiNetworking() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEnableMultiNetworking",
 		nil, // no parameters
 	)
 }

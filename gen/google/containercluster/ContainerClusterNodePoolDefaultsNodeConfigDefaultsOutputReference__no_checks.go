@@ -60,6 +60,10 @@ func (j *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputRefer
 	return nil
 }
 
+func (j *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) validateSetInsecureKubeletReadonlyPortEnabledParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) validateSetInternalValueParameters(val *ContainerClusterNodePoolDefaultsNodeConfigDefaults) error {
 	return nil
 }

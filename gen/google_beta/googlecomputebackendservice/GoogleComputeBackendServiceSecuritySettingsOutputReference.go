@@ -10,6 +10,8 @@ import (
 
 type GoogleComputeBackendServiceSecuritySettingsOutputReference interface {
 	cdktf.ComplexObject
+	AwsV4Authentication() GoogleComputeBackendServiceSecuritySettingsAwsV4AuthenticationOutputReference
+	AwsV4AuthenticationInput() *GoogleComputeBackendServiceSecuritySettingsAwsV4Authentication
 	ClientTlsPolicy() *string
 	SetClientTlsPolicy(val *string)
 	ClientTlsPolicyInput() *string
@@ -67,6 +69,10 @@ type GoogleComputeBackendServiceSecuritySettingsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAwsV4Authentication(value *GoogleComputeBackendServiceSecuritySettingsAwsV4Authentication)
+	ResetAwsV4Authentication()
+	ResetClientTlsPolicy()
+	ResetSubjectAltNames()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -80,6 +86,26 @@ type GoogleComputeBackendServiceSecuritySettingsOutputReference interface {
 // The jsii proxy struct for GoogleComputeBackendServiceSecuritySettingsOutputReference
 type jsiiProxy_GoogleComputeBackendServiceSecuritySettingsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GoogleComputeBackendServiceSecuritySettingsOutputReference) AwsV4Authentication() GoogleComputeBackendServiceSecuritySettingsAwsV4AuthenticationOutputReference {
+	var returns GoogleComputeBackendServiceSecuritySettingsAwsV4AuthenticationOutputReference
+	_jsii_.Get(
+		j,
+		"awsV4Authentication",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeBackendServiceSecuritySettingsOutputReference) AwsV4AuthenticationInput() *GoogleComputeBackendServiceSecuritySettingsAwsV4Authentication {
+	var returns *GoogleComputeBackendServiceSecuritySettingsAwsV4Authentication
+	_jsii_.Get(
+		j,
+		"awsV4AuthenticationInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleComputeBackendServiceSecuritySettingsOutputReference) ClientTlsPolicy() *string {
@@ -481,6 +507,41 @@ func (g *jsiiProxy_GoogleComputeBackendServiceSecuritySettingsOutputReference) I
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeBackendServiceSecuritySettingsOutputReference) PutAwsV4Authentication(value *GoogleComputeBackendServiceSecuritySettingsAwsV4Authentication) {
+	if err := g.validatePutAwsV4AuthenticationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAwsV4Authentication",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeBackendServiceSecuritySettingsOutputReference) ResetAwsV4Authentication() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAwsV4Authentication",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeBackendServiceSecuritySettingsOutputReference) ResetClientTlsPolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetClientTlsPolicy",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeBackendServiceSecuritySettingsOutputReference) ResetSubjectAltNames() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSubjectAltNames",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleComputeBackendServiceSecuritySettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

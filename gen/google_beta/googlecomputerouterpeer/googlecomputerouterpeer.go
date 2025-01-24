@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputerouterpeer/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_router_peer google_compute_router_peer}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_compute_router_peer google_compute_router_peer}.
 type GoogleComputeRouterPeer interface {
 	cdktf.TerraformResource
 	AdvertisedGroups() *[]*string
@@ -37,6 +37,11 @@ type GoogleComputeRouterPeer interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CustomLearnedIpRanges() GoogleComputeRouterPeerCustomLearnedIpRangesList
+	CustomLearnedIpRangesInput() interface{}
+	CustomLearnedRoutePriority() *float64
+	SetCustomLearnedRoutePriority(val *float64)
+	CustomLearnedRoutePriorityInput() *float64
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -50,6 +55,9 @@ type GoogleComputeRouterPeer interface {
 	EnableIpv6() interface{}
 	SetEnableIpv6(val interface{})
 	EnableIpv6Input() interface{}
+	ExportPolicies() *[]*string
+	SetExportPolicies(val *[]*string)
+	ExportPoliciesInput() *[]*string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -61,6 +69,9 @@ type GoogleComputeRouterPeer interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	ImportPolicies() *[]*string
+	SetImportPolicies(val *[]*string)
+	ImportPoliciesInput() *[]*string
 	Interface() *string
 	SetInterface(val *string)
 	InterfaceInput() *string
@@ -172,6 +183,7 @@ type GoogleComputeRouterPeer interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAdvertisedIpRanges(value interface{})
 	PutBfd(value *GoogleComputeRouterPeerBfd)
+	PutCustomLearnedIpRanges(value interface{})
 	PutMd5AuthenticationKey(value *GoogleComputeRouterPeerMd5AuthenticationKey)
 	PutTimeouts(value *GoogleComputeRouterPeerTimeouts)
 	ResetAdvertisedGroups()
@@ -179,10 +191,14 @@ type GoogleComputeRouterPeer interface {
 	ResetAdvertisedRoutePriority()
 	ResetAdvertiseMode()
 	ResetBfd()
+	ResetCustomLearnedIpRanges()
+	ResetCustomLearnedRoutePriority()
 	ResetEnable()
 	ResetEnableIpv4()
 	ResetEnableIpv6()
+	ResetExportPolicies()
 	ResetId()
+	ResetImportPolicies()
 	ResetIpAddress()
 	ResetIpv4NexthopAddress()
 	ResetIpv6NexthopAddress()
@@ -355,6 +371,46 @@ func (j *jsiiProxy_GoogleComputeRouterPeer) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeRouterPeer) CustomLearnedIpRanges() GoogleComputeRouterPeerCustomLearnedIpRangesList {
+	var returns GoogleComputeRouterPeerCustomLearnedIpRangesList
+	_jsii_.Get(
+		j,
+		"customLearnedIpRanges",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRouterPeer) CustomLearnedIpRangesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"customLearnedIpRangesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRouterPeer) CustomLearnedRoutePriority() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"customLearnedRoutePriority",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRouterPeer) CustomLearnedRoutePriorityInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"customLearnedRoutePriorityInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeRouterPeer) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -425,6 +481,26 @@ func (j *jsiiProxy_GoogleComputeRouterPeer) EnableIpv6Input() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeRouterPeer) ExportPolicies() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"exportPolicies",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRouterPeer) ExportPoliciesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"exportPoliciesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeRouterPeer) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -470,6 +546,26 @@ func (j *jsiiProxy_GoogleComputeRouterPeer) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRouterPeer) ImportPolicies() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"importPolicies",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRouterPeer) ImportPoliciesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"importPoliciesInput",
 		&returns,
 	)
 	return returns
@@ -866,7 +962,7 @@ func (j *jsiiProxy_GoogleComputeRouterPeer) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_router_peer google_compute_router_peer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_compute_router_peer google_compute_router_peer} Resource.
 func NewGoogleComputeRouterPeer(scope constructs.Construct, id *string, config *GoogleComputeRouterPeerConfig) GoogleComputeRouterPeer {
 	_init_.Initialize()
 
@@ -884,7 +980,7 @@ func NewGoogleComputeRouterPeer(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_router_peer google_compute_router_peer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_compute_router_peer google_compute_router_peer} Resource.
 func NewGoogleComputeRouterPeer_Override(g GoogleComputeRouterPeer, scope constructs.Construct, id *string, config *GoogleComputeRouterPeerConfig) {
 	_init_.Initialize()
 
@@ -950,6 +1046,17 @@ func (j *jsiiProxy_GoogleComputeRouterPeer)SetCount(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_GoogleComputeRouterPeer)SetCustomLearnedRoutePriority(val *float64) {
+	if err := j.validateSetCustomLearnedRoutePriorityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customLearnedRoutePriority",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleComputeRouterPeer)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
@@ -991,6 +1098,17 @@ func (j *jsiiProxy_GoogleComputeRouterPeer)SetEnableIpv6(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_GoogleComputeRouterPeer)SetExportPolicies(val *[]*string) {
+	if err := j.validateSetExportPoliciesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"exportPolicies",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleComputeRouterPeer)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -1006,6 +1124,17 @@ func (j *jsiiProxy_GoogleComputeRouterPeer)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRouterPeer)SetImportPolicies(val *[]*string) {
+	if err := j.validateSetImportPoliciesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"importPolicies",
 		val,
 	)
 }
@@ -1558,6 +1687,17 @@ func (g *jsiiProxy_GoogleComputeRouterPeer) PutBfd(value *GoogleComputeRouterPee
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeRouterPeer) PutCustomLearnedIpRanges(value interface{}) {
+	if err := g.validatePutCustomLearnedIpRangesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putCustomLearnedIpRanges",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeRouterPeer) PutMd5AuthenticationKey(value *GoogleComputeRouterPeerMd5AuthenticationKey) {
 	if err := g.validatePutMd5AuthenticationKeyParameters(value); err != nil {
 		panic(err)
@@ -1620,6 +1760,22 @@ func (g *jsiiProxy_GoogleComputeRouterPeer) ResetBfd() {
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeRouterPeer) ResetCustomLearnedIpRanges() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCustomLearnedIpRanges",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRouterPeer) ResetCustomLearnedRoutePriority() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCustomLearnedRoutePriority",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeRouterPeer) ResetEnable() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1644,10 +1800,26 @@ func (g *jsiiProxy_GoogleComputeRouterPeer) ResetEnableIpv6() {
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeRouterPeer) ResetExportPolicies() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetExportPolicies",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeRouterPeer) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRouterPeer) ResetImportPolicies() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetImportPolicies",
 		nil, // no parameters
 	)
 }

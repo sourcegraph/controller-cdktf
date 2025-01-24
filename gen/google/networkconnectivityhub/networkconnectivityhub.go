@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/networkconnectivityhub/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/network_connectivity_hub google_network_connectivity_hub}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/network_connectivity_hub google_network_connectivity_hub}.
 type NetworkConnectivityHub interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -33,6 +33,9 @@ type NetworkConnectivityHub interface {
 	SetDescription(val *string)
 	DescriptionInput() *string
 	EffectiveLabels() cdktf.StringMap
+	ExportPsc() interface{}
+	SetExportPsc(val interface{})
+	ExportPscInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -127,8 +130,10 @@ type NetworkConnectivityHub interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *NetworkConnectivityHubTimeouts)
 	ResetDescription()
+	ResetExportPsc()
 	ResetId()
 	ResetLabels()
+	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -237,6 +242,26 @@ func (j *jsiiProxy_NetworkConnectivityHub) EffectiveLabels() cdktf.StringMap {
 	_jsii_.Get(
 		j,
 		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkConnectivityHub) ExportPsc() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"exportPsc",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkConnectivityHub) ExportPscInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"exportPscInput",
 		&returns,
 	)
 	return returns
@@ -503,7 +528,7 @@ func (j *jsiiProxy_NetworkConnectivityHub) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/network_connectivity_hub google_network_connectivity_hub} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/network_connectivity_hub google_network_connectivity_hub} Resource.
 func NewNetworkConnectivityHub(scope constructs.Construct, id *string, config *NetworkConnectivityHubConfig) NetworkConnectivityHub {
 	_init_.Initialize()
 
@@ -521,7 +546,7 @@ func NewNetworkConnectivityHub(scope constructs.Construct, id *string, config *N
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/network_connectivity_hub google_network_connectivity_hub} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/network_connectivity_hub google_network_connectivity_hub} Resource.
 func NewNetworkConnectivityHub_Override(n NetworkConnectivityHub, scope constructs.Construct, id *string, config *NetworkConnectivityHubConfig) {
 	_init_.Initialize()
 
@@ -569,6 +594,17 @@ func (j *jsiiProxy_NetworkConnectivityHub)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkConnectivityHub)SetExportPsc(val interface{}) {
+	if err := j.validateSetExportPscParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"exportPsc",
 		val,
 	)
 }
@@ -1027,6 +1063,14 @@ func (n *jsiiProxy_NetworkConnectivityHub) ResetDescription() {
 	)
 }
 
+func (n *jsiiProxy_NetworkConnectivityHub) ResetExportPsc() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetExportPsc",
+		nil, // no parameters
+	)
+}
+
 func (n *jsiiProxy_NetworkConnectivityHub) ResetId() {
 	_jsii_.InvokeVoid(
 		n,
@@ -1039,6 +1083,14 @@ func (n *jsiiProxy_NetworkConnectivityHub) ResetLabels() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetLabels",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkConnectivityHub) ResetName() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetName",
 		nil, // no parameters
 	)
 }

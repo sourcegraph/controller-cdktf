@@ -19,18 +19,18 @@ type GoogleDataCatalogEntryGroupIamPolicyConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_data_catalog_entry_group_iam_policy#entry_group GoogleDataCatalogEntryGroupIamPolicy#entry_group}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_data_catalog_entry_group_iam_policy#entry_group GoogleDataCatalogEntryGroupIamPolicy#entry_group}.
 	EntryGroup *string `field:"required" json:"entryGroup" yaml:"entryGroup"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_data_catalog_entry_group_iam_policy#policy_data GoogleDataCatalogEntryGroupIamPolicy#policy_data}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_data_catalog_entry_group_iam_policy#policy_data GoogleDataCatalogEntryGroupIamPolicy#policy_data}.
 	PolicyData *string `field:"required" json:"policyData" yaml:"policyData"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_data_catalog_entry_group_iam_policy#id GoogleDataCatalogEntryGroupIamPolicy#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_data_catalog_entry_group_iam_policy#id GoogleDataCatalogEntryGroupIamPolicy#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_data_catalog_entry_group_iam_policy#project GoogleDataCatalogEntryGroupIamPolicy#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_data_catalog_entry_group_iam_policy#project GoogleDataCatalogEntryGroupIamPolicy#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_data_catalog_entry_group_iam_policy#region GoogleDataCatalogEntryGroupIamPolicy#region}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_data_catalog_entry_group_iam_policy#region GoogleDataCatalogEntryGroupIamPolicy#region}.
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 
