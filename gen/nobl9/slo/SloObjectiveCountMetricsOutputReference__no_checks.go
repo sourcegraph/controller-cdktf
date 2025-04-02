@@ -52,6 +52,10 @@ func (s *jsiiProxy_SloObjectiveCountMetricsOutputReference) validatePutGoodParam
 	return nil
 }
 
+func (s *jsiiProxy_SloObjectiveCountMetricsOutputReference) validatePutGoodTotalParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SloObjectiveCountMetricsOutputReference) validatePutTotalParameters(value interface{}) error {
 	return nil
 }

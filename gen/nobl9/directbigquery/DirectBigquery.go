@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/nobl9/directbigquery/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_bigquery nobl9_direct_bigquery}.
+// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_bigquery nobl9_direct_bigquery}.
 type DirectBigquery interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -142,6 +142,7 @@ type DirectBigquery interface {
 	ResetQueryDelay()
 	ResetReleaseChannel()
 	ResetServiceAccountKey()
+	ResetSourceOf()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -531,7 +532,7 @@ func (j *jsiiProxy_DirectBigquery) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_bigquery nobl9_direct_bigquery} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_bigquery nobl9_direct_bigquery} Resource.
 func NewDirectBigquery(scope constructs.Construct, id *string, config *DirectBigqueryConfig) DirectBigquery {
 	_init_.Initialize()
 
@@ -549,7 +550,7 @@ func NewDirectBigquery(scope constructs.Construct, id *string, config *DirectBig
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_bigquery nobl9_direct_bigquery} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_bigquery nobl9_direct_bigquery} Resource.
 func NewDirectBigquery_Override(d DirectBigquery, scope constructs.Construct, id *string, config *DirectBigqueryConfig) {
 	_init_.Initialize()
 
@@ -1151,6 +1152,14 @@ func (d *jsiiProxy_DirectBigquery) ResetServiceAccountKey() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetServiceAccountKey",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DirectBigquery) ResetSourceOf() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSourceOf",
 		nil, // no parameters
 	)
 }

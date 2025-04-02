@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/nobl9/directdatadog/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_datadog nobl9_direct_datadog}.
+// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_datadog nobl9_direct_datadog}.
 type DirectDatadog interface {
 	cdktf.TerraformResource
 	ApiKey() *string
@@ -153,6 +153,7 @@ type DirectDatadog interface {
 	ResetOverrideLogicalId()
 	ResetQueryDelay()
 	ResetReleaseChannel()
+	ResetSourceOf()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -602,7 +603,7 @@ func (j *jsiiProxy_DirectDatadog) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_datadog nobl9_direct_datadog} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_datadog nobl9_direct_datadog} Resource.
 func NewDirectDatadog(scope constructs.Construct, id *string, config *DirectDatadogConfig) DirectDatadog {
 	_init_.Initialize()
 
@@ -620,7 +621,7 @@ func NewDirectDatadog(scope constructs.Construct, id *string, config *DirectData
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_datadog nobl9_direct_datadog} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_datadog nobl9_direct_datadog} Resource.
 func NewDirectDatadog_Override(d DirectDatadog, scope constructs.Construct, id *string, config *DirectDatadogConfig) {
 	_init_.Initialize()
 
@@ -1271,6 +1272,14 @@ func (d *jsiiProxy_DirectDatadog) ResetReleaseChannel() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetReleaseChannel",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DirectDatadog) ResetSourceOf() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSourceOf",
 		nil, // no parameters
 	)
 }

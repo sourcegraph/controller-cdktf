@@ -76,6 +76,10 @@ func (s *jsiiProxy_Service) validatePutLabelParameters(value interface{}) error 
 	return nil
 }
 
+func (s *jsiiProxy_Service) validatePutStatusParameters(value *ServiceStatus) error {
+	return nil
+}
+
 func validateService_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -92,6 +96,10 @@ func validateService_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_Service) validateSetAnnotationsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Service) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -105,10 +113,6 @@ func (j *jsiiProxy_Service) validateSetDescriptionParameters(val *string) error 
 }
 
 func (j *jsiiProxy_Service) validateSetDisplayNameParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_Service) validateSetIdParameters(val *string) error {
 	return nil
 }
 

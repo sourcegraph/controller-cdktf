@@ -431,6 +431,37 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutGraphi
 	return nil
 }
 
+func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutHoneycombParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*SloObjectiveCountMetricsBadHoneycomb:
+		value := value.(*[]*SloObjectiveCountMetricsBadHoneycomb)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*SloObjectiveCountMetricsBadHoneycomb:
+		value_ := value.([]*SloObjectiveCountMetricsBadHoneycomb)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*SloObjectiveCountMetricsBadHoneycomb; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutInfluxdbParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -518,6 +549,37 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutLights
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
 			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*SloObjectiveCountMetricsBadLightstep; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutLogicMonitorParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*SloObjectiveCountMetricsBadLogicMonitor:
+		value := value.(*[]*SloObjectiveCountMetricsBadLogicMonitor)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*SloObjectiveCountMetricsBadLogicMonitor:
+		value_ := value.([]*SloObjectiveCountMetricsBadLogicMonitor)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*SloObjectiveCountMetricsBadLogicMonitor; received %#v (a %T)", value, value)
 		}
 	}
 

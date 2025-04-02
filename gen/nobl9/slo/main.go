@@ -15,6 +15,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "alertPolicies", GoGetter: "AlertPolicies"},
 			_jsii_.MemberProperty{JsiiProperty: "alertPoliciesInput", GoGetter: "AlertPoliciesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
+			_jsii_.MemberProperty{JsiiProperty: "annotationsInput", GoGetter: "AnnotationsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "anomalyConfig", GoGetter: "AnomalyConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "anomalyConfigInput", GoGetter: "AnomalyConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "attachment", GoGetter: "Attachment"},
@@ -79,6 +81,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putTimeWindow", GoMethod: "PutTimeWindow"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAlertPolicies", GoMethod: "ResetAlertPolicies"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAnnotations", GoMethod: "ResetAnnotations"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAnomalyConfig", GoMethod: "ResetAnomalyConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAttachment", GoMethod: "ResetAttachment"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAttachments", GoMethod: "ResetAttachments"},
@@ -86,8 +89,13 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDisplayName", GoMethod: "ResetDisplayName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetIndicator", GoMethod: "ResetIndicator"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLabel", GoMethod: "ResetLabel"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRetrieveHistoricalDataFrom", GoMethod: "ResetRetrieveHistoricalDataFrom"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTier", GoMethod: "ResetTier"},
+			_jsii_.MemberProperty{JsiiProperty: "retrieveHistoricalDataFrom", GoGetter: "RetrieveHistoricalDataFrom"},
+			_jsii_.MemberProperty{JsiiProperty: "retrieveHistoricalDataFromInput", GoGetter: "RetrieveHistoricalDataFromInput"},
 			_jsii_.MemberProperty{JsiiProperty: "service", GoGetter: "Service"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceInput", GoGetter: "ServiceInput"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
@@ -95,6 +103,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
+			_jsii_.MemberProperty{JsiiProperty: "tier", GoGetter: "Tier"},
+			_jsii_.MemberProperty{JsiiProperty: "tierInput", GoGetter: "TierInput"},
 			_jsii_.MemberProperty{JsiiProperty: "timeWindow", GoGetter: "TimeWindow"},
 			_jsii_.MemberProperty{JsiiProperty: "timeWindowInput", GoGetter: "TimeWindowInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toHclTerraform", GoMethod: "ToHclTerraform"},
@@ -593,6 +603,196 @@ func init() {
 		reflect.TypeOf((*SloObjective)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-nobl9.slo.SloObjectiveComposite",
+		reflect.TypeOf((*SloObjectiveComposite)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCompositeComponents",
+		reflect.TypeOf((*SloObjectiveCompositeComponents)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCompositeComponentsObjectives",
+		reflect.TypeOf((*SloObjectiveCompositeComponentsObjectives)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCompositeComponentsObjectivesCompositeObjective",
+		reflect.TypeOf((*SloObjectiveCompositeComponentsObjectivesCompositeObjective)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCompositeComponentsObjectivesCompositeObjectiveList",
+		reflect.TypeOf((*SloObjectiveCompositeComponentsObjectivesCompositeObjectiveList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCompositeComponentsObjectivesCompositeObjectiveList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCompositeComponentsObjectivesCompositeObjectiveOutputReference",
+		reflect.TypeOf((*SloObjectiveCompositeComponentsObjectivesCompositeObjectiveOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "objective", GoGetter: "Objective"},
+			_jsii_.MemberProperty{JsiiProperty: "objectiveInput", GoGetter: "ObjectiveInput"},
+			_jsii_.MemberProperty{JsiiProperty: "project", GoGetter: "Project"},
+			_jsii_.MemberProperty{JsiiProperty: "projectInput", GoGetter: "ProjectInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "slo", GoGetter: "Slo"},
+			_jsii_.MemberProperty{JsiiProperty: "sloInput", GoGetter: "SloInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "weight", GoGetter: "Weight"},
+			_jsii_.MemberProperty{JsiiProperty: "weightInput", GoGetter: "WeightInput"},
+			_jsii_.MemberProperty{JsiiProperty: "whenDelayed", GoGetter: "WhenDelayed"},
+			_jsii_.MemberProperty{JsiiProperty: "whenDelayedInput", GoGetter: "WhenDelayedInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCompositeComponentsObjectivesCompositeObjectiveOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCompositeComponentsObjectivesOutputReference",
+		reflect.TypeOf((*SloObjectiveCompositeComponentsObjectivesOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberProperty{JsiiProperty: "compositeObjective", GoGetter: "CompositeObjective"},
+			_jsii_.MemberProperty{JsiiProperty: "compositeObjectiveInput", GoGetter: "CompositeObjectiveInput"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "putCompositeObjective", GoMethod: "PutCompositeObjective"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCompositeObjective", GoMethod: "ResetCompositeObjective"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCompositeComponentsObjectivesOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCompositeComponentsOutputReference",
+		reflect.TypeOf((*SloObjectiveCompositeComponentsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "objectives", GoGetter: "Objectives"},
+			_jsii_.MemberProperty{JsiiProperty: "objectivesInput", GoGetter: "ObjectivesInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putObjectives", GoMethod: "PutObjectives"},
+			_jsii_.MemberMethod{JsiiMethod: "resetObjectives", GoMethod: "ResetObjectives"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCompositeComponentsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCompositeOutputReference",
+		reflect.TypeOf((*SloObjectiveCompositeOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberProperty{JsiiProperty: "components", GoGetter: "Components"},
+			_jsii_.MemberProperty{JsiiProperty: "componentsInput", GoGetter: "ComponentsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "maxDelay", GoGetter: "MaxDelay"},
+			_jsii_.MemberProperty{JsiiProperty: "maxDelayInput", GoGetter: "MaxDelayInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putComponents", GoMethod: "PutComponents"},
+			_jsii_.MemberMethod{JsiiMethod: "resetComponents", GoMethod: "ResetComponents"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCompositeOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetrics",
 		reflect.TypeOf((*SloObjectiveCountMetrics)(nil)).Elem(),
 	)
@@ -820,6 +1020,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "dataType", GoGetter: "DataType"},
+			_jsii_.MemberProperty{JsiiProperty: "dataTypeInput", GoGetter: "DataTypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "dimensions", GoGetter: "Dimensions"},
 			_jsii_.MemberProperty{JsiiProperty: "dimensionsInput", GoGetter: "DimensionsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -835,22 +1037,96 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "kqlQuery", GoGetter: "KqlQuery"},
+			_jsii_.MemberProperty{JsiiProperty: "kqlQueryInput", GoGetter: "KqlQueryInput"},
 			_jsii_.MemberProperty{JsiiProperty: "metricName", GoGetter: "MetricName"},
 			_jsii_.MemberProperty{JsiiProperty: "metricNameInput", GoGetter: "MetricNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "metricNamespace", GoGetter: "MetricNamespace"},
 			_jsii_.MemberProperty{JsiiProperty: "metricNamespaceInput", GoGetter: "MetricNamespaceInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putDimensions", GoMethod: "PutDimensions"},
+			_jsii_.MemberMethod{JsiiMethod: "putWorkspace", GoMethod: "PutWorkspace"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAggregation", GoMethod: "ResetAggregation"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDimensions", GoMethod: "ResetDimensions"},
+			_jsii_.MemberMethod{JsiiMethod: "resetKqlQuery", GoMethod: "ResetKqlQuery"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMetricName", GoMethod: "ResetMetricName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMetricNamespace", GoMethod: "ResetMetricNamespace"},
+			_jsii_.MemberMethod{JsiiMethod: "resetResourceId", GoMethod: "ResetResourceId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWorkspace", GoMethod: "ResetWorkspace"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "resourceId", GoGetter: "ResourceId"},
 			_jsii_.MemberProperty{JsiiProperty: "resourceIdInput", GoGetter: "ResourceIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "workspace", GoGetter: "Workspace"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceInput", GoGetter: "WorkspaceInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_SloObjectiveCountMetricsBadAzureMonitorOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadAzureMonitorWorkspace",
+		reflect.TypeOf((*SloObjectiveCountMetricsBadAzureMonitorWorkspace)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadAzureMonitorWorkspaceList",
+		reflect.TypeOf((*SloObjectiveCountMetricsBadAzureMonitorWorkspaceList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsBadAzureMonitorWorkspaceList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadAzureMonitorWorkspaceOutputReference",
+		reflect.TypeOf((*SloObjectiveCountMetricsBadAzureMonitorWorkspaceOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "resourceGroup", GoGetter: "ResourceGroup"},
+			_jsii_.MemberProperty{JsiiProperty: "resourceGroupInput", GoGetter: "ResourceGroupInput"},
+			_jsii_.MemberProperty{JsiiProperty: "subscriptionId", GoGetter: "SubscriptionId"},
+			_jsii_.MemberProperty{JsiiProperty: "subscriptionIdInput", GoGetter: "SubscriptionIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceId", GoGetter: "WorkspaceId"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceIdInput", GoGetter: "WorkspaceIdInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsBadAzureMonitorWorkspaceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -1294,8 +1570,12 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "projectId", GoGetter: "ProjectId"},
 			_jsii_.MemberProperty{JsiiProperty: "projectIdInput", GoGetter: "ProjectIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "promql", GoGetter: "Promql"},
+			_jsii_.MemberProperty{JsiiProperty: "promqlInput", GoGetter: "PromqlInput"},
 			_jsii_.MemberProperty{JsiiProperty: "query", GoGetter: "Query"},
 			_jsii_.MemberProperty{JsiiProperty: "queryInput", GoGetter: "QueryInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPromql", GoMethod: "ResetPromql"},
+			_jsii_.MemberMethod{JsiiMethod: "resetQuery", GoMethod: "ResetQuery"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
@@ -1423,6 +1703,69 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SloObjectiveCountMetricsBadGraphiteOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadHoneycomb",
+		reflect.TypeOf((*SloObjectiveCountMetricsBadHoneycomb)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadHoneycombList",
+		reflect.TypeOf((*SloObjectiveCountMetricsBadHoneycombList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsBadHoneycombList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadHoneycombOutputReference",
+		reflect.TypeOf((*SloObjectiveCountMetricsBadHoneycombOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "attribute", GoGetter: "Attribute"},
+			_jsii_.MemberProperty{JsiiProperty: "attributeInput", GoGetter: "AttributeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "calculation", GoGetter: "Calculation"},
+			_jsii_.MemberProperty{JsiiProperty: "calculationInput", GoGetter: "CalculationInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAttribute", GoMethod: "ResetAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsBadHoneycombOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -1855,6 +2198,83 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadLogicMonitor",
+		reflect.TypeOf((*SloObjectiveCountMetricsBadLogicMonitor)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadLogicMonitorList",
+		reflect.TypeOf((*SloObjectiveCountMetricsBadLogicMonitorList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsBadLogicMonitorList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadLogicMonitorOutputReference",
+		reflect.TypeOf((*SloObjectiveCountMetricsBadLogicMonitorOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "checkpointId", GoGetter: "CheckpointId"},
+			_jsii_.MemberProperty{JsiiProperty: "checkpointIdInput", GoGetter: "CheckpointIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "deviceDataSourceInstanceId", GoGetter: "DeviceDataSourceInstanceId"},
+			_jsii_.MemberProperty{JsiiProperty: "deviceDataSourceInstanceIdInput", GoGetter: "DeviceDataSourceInstanceIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "graphId", GoGetter: "GraphId"},
+			_jsii_.MemberProperty{JsiiProperty: "graphIdInput", GoGetter: "GraphIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "graphName", GoGetter: "GraphName"},
+			_jsii_.MemberProperty{JsiiProperty: "graphNameInput", GoGetter: "GraphNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "line", GoGetter: "Line"},
+			_jsii_.MemberProperty{JsiiProperty: "lineInput", GoGetter: "LineInput"},
+			_jsii_.MemberProperty{JsiiProperty: "queryType", GoGetter: "QueryType"},
+			_jsii_.MemberProperty{JsiiProperty: "queryTypeInput", GoGetter: "QueryTypeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCheckpointId", GoMethod: "ResetCheckpointId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDeviceDataSourceInstanceId", GoMethod: "ResetDeviceDataSourceInstanceId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetGraphId", GoMethod: "ResetGraphId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetGraphName", GoMethod: "ResetGraphName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWebsiteId", GoMethod: "ResetWebsiteId"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "websiteId", GoGetter: "WebsiteId"},
+			_jsii_.MemberProperty{JsiiProperty: "websiteIdInput", GoGetter: "WebsiteIdInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsBadLogicMonitorOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadNewrelic",
 		reflect.TypeOf((*SloObjectiveCountMetricsBadNewrelic)(nil)).Elem(),
 	)
@@ -2014,6 +2434,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "grafanaLokiInput", GoGetter: "GrafanaLokiInput"},
 			_jsii_.MemberProperty{JsiiProperty: "graphite", GoGetter: "Graphite"},
 			_jsii_.MemberProperty{JsiiProperty: "graphiteInput", GoGetter: "GraphiteInput"},
+			_jsii_.MemberProperty{JsiiProperty: "honeycomb", GoGetter: "Honeycomb"},
+			_jsii_.MemberProperty{JsiiProperty: "honeycombInput", GoGetter: "HoneycombInput"},
 			_jsii_.MemberProperty{JsiiProperty: "influxdb", GoGetter: "Influxdb"},
 			_jsii_.MemberProperty{JsiiProperty: "influxdbInput", GoGetter: "InfluxdbInput"},
 			_jsii_.MemberProperty{JsiiProperty: "instana", GoGetter: "Instana"},
@@ -2023,6 +2445,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lightstep", GoGetter: "Lightstep"},
 			_jsii_.MemberProperty{JsiiProperty: "lightstepInput", GoGetter: "LightstepInput"},
+			_jsii_.MemberProperty{JsiiProperty: "logicMonitor", GoGetter: "LogicMonitor"},
+			_jsii_.MemberProperty{JsiiProperty: "logicMonitorInput", GoGetter: "LogicMonitorInput"},
 			_jsii_.MemberProperty{JsiiProperty: "newrelic", GoGetter: "Newrelic"},
 			_jsii_.MemberProperty{JsiiProperty: "newrelicInput", GoGetter: "NewrelicInput"},
 			_jsii_.MemberProperty{JsiiProperty: "opentsdb", GoGetter: "Opentsdb"},
@@ -2042,9 +2466,11 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putGcm", GoMethod: "PutGcm"},
 			_jsii_.MemberMethod{JsiiMethod: "putGrafanaLoki", GoMethod: "PutGrafanaLoki"},
 			_jsii_.MemberMethod{JsiiMethod: "putGraphite", GoMethod: "PutGraphite"},
+			_jsii_.MemberMethod{JsiiMethod: "putHoneycomb", GoMethod: "PutHoneycomb"},
 			_jsii_.MemberMethod{JsiiMethod: "putInfluxdb", GoMethod: "PutInfluxdb"},
 			_jsii_.MemberMethod{JsiiMethod: "putInstana", GoMethod: "PutInstana"},
 			_jsii_.MemberMethod{JsiiMethod: "putLightstep", GoMethod: "PutLightstep"},
+			_jsii_.MemberMethod{JsiiMethod: "putLogicMonitor", GoMethod: "PutLogicMonitor"},
 			_jsii_.MemberMethod{JsiiMethod: "putNewrelic", GoMethod: "PutNewrelic"},
 			_jsii_.MemberMethod{JsiiMethod: "putOpentsdb", GoMethod: "PutOpentsdb"},
 			_jsii_.MemberMethod{JsiiMethod: "putPingdom", GoMethod: "PutPingdom"},
@@ -2067,9 +2493,11 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetGcm", GoMethod: "ResetGcm"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGrafanaLoki", GoMethod: "ResetGrafanaLoki"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGraphite", GoMethod: "ResetGraphite"},
+			_jsii_.MemberMethod{JsiiMethod: "resetHoneycomb", GoMethod: "ResetHoneycomb"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInfluxdb", GoMethod: "ResetInfluxdb"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInstana", GoMethod: "ResetInstana"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLightstep", GoMethod: "ResetLightstep"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLogicMonitor", GoMethod: "ResetLogicMonitor"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNewrelic", GoMethod: "ResetNewrelic"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOpentsdb", GoMethod: "ResetOpentsdb"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPingdom", GoMethod: "ResetPingdom"},
@@ -2525,11 +2953,14 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTestType", GoMethod: "ResetTestType"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberProperty{JsiiProperty: "testId", GoGetter: "TestId"},
 			_jsii_.MemberProperty{JsiiProperty: "testIdInput", GoGetter: "TestIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "testType", GoGetter: "TestType"},
+			_jsii_.MemberProperty{JsiiProperty: "testTypeInput", GoGetter: "TestTypeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
@@ -2762,6 +3193,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "dataType", GoGetter: "DataType"},
+			_jsii_.MemberProperty{JsiiProperty: "dataTypeInput", GoGetter: "DataTypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "dimensions", GoGetter: "Dimensions"},
 			_jsii_.MemberProperty{JsiiProperty: "dimensionsInput", GoGetter: "DimensionsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -2777,22 +3210,96 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "kqlQuery", GoGetter: "KqlQuery"},
+			_jsii_.MemberProperty{JsiiProperty: "kqlQueryInput", GoGetter: "KqlQueryInput"},
 			_jsii_.MemberProperty{JsiiProperty: "metricName", GoGetter: "MetricName"},
 			_jsii_.MemberProperty{JsiiProperty: "metricNameInput", GoGetter: "MetricNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "metricNamespace", GoGetter: "MetricNamespace"},
 			_jsii_.MemberProperty{JsiiProperty: "metricNamespaceInput", GoGetter: "MetricNamespaceInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putDimensions", GoMethod: "PutDimensions"},
+			_jsii_.MemberMethod{JsiiMethod: "putWorkspace", GoMethod: "PutWorkspace"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAggregation", GoMethod: "ResetAggregation"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDimensions", GoMethod: "ResetDimensions"},
+			_jsii_.MemberMethod{JsiiMethod: "resetKqlQuery", GoMethod: "ResetKqlQuery"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMetricName", GoMethod: "ResetMetricName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMetricNamespace", GoMethod: "ResetMetricNamespace"},
+			_jsii_.MemberMethod{JsiiMethod: "resetResourceId", GoMethod: "ResetResourceId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWorkspace", GoMethod: "ResetWorkspace"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "resourceId", GoGetter: "ResourceId"},
 			_jsii_.MemberProperty{JsiiProperty: "resourceIdInput", GoGetter: "ResourceIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "workspace", GoGetter: "Workspace"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceInput", GoGetter: "WorkspaceInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodAzureMonitorOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodAzureMonitorWorkspace",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodAzureMonitorWorkspace)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodAzureMonitorWorkspaceList",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodAzureMonitorWorkspaceList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodAzureMonitorWorkspaceList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodAzureMonitorWorkspaceOutputReference",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodAzureMonitorWorkspaceOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "resourceGroup", GoGetter: "ResourceGroup"},
+			_jsii_.MemberProperty{JsiiProperty: "resourceGroupInput", GoGetter: "ResourceGroupInput"},
+			_jsii_.MemberProperty{JsiiProperty: "subscriptionId", GoGetter: "SubscriptionId"},
+			_jsii_.MemberProperty{JsiiProperty: "subscriptionIdInput", GoGetter: "SubscriptionIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceId", GoGetter: "WorkspaceId"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceIdInput", GoGetter: "WorkspaceIdInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodAzureMonitorWorkspaceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -3236,8 +3743,12 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "projectId", GoGetter: "ProjectId"},
 			_jsii_.MemberProperty{JsiiProperty: "projectIdInput", GoGetter: "ProjectIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "promql", GoGetter: "Promql"},
+			_jsii_.MemberProperty{JsiiProperty: "promqlInput", GoGetter: "PromqlInput"},
 			_jsii_.MemberProperty{JsiiProperty: "query", GoGetter: "Query"},
 			_jsii_.MemberProperty{JsiiProperty: "queryInput", GoGetter: "QueryInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPromql", GoMethod: "ResetPromql"},
+			_jsii_.MemberMethod{JsiiMethod: "resetQuery", GoMethod: "ResetQuery"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
@@ -3365,6 +3876,69 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodGraphiteOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodHoneycomb",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodHoneycomb)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodHoneycombList",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodHoneycombList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodHoneycombList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodHoneycombOutputReference",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodHoneycombOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "attribute", GoGetter: "Attribute"},
+			_jsii_.MemberProperty{JsiiProperty: "attributeInput", GoGetter: "AttributeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "calculation", GoGetter: "Calculation"},
+			_jsii_.MemberProperty{JsiiProperty: "calculationInput", GoGetter: "CalculationInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAttribute", GoMethod: "ResetAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodHoneycombOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -3797,6 +4371,83 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodLogicMonitor",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodLogicMonitor)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodLogicMonitorList",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodLogicMonitorList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodLogicMonitorList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodLogicMonitorOutputReference",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodLogicMonitorOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "checkpointId", GoGetter: "CheckpointId"},
+			_jsii_.MemberProperty{JsiiProperty: "checkpointIdInput", GoGetter: "CheckpointIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "deviceDataSourceInstanceId", GoGetter: "DeviceDataSourceInstanceId"},
+			_jsii_.MemberProperty{JsiiProperty: "deviceDataSourceInstanceIdInput", GoGetter: "DeviceDataSourceInstanceIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "graphId", GoGetter: "GraphId"},
+			_jsii_.MemberProperty{JsiiProperty: "graphIdInput", GoGetter: "GraphIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "graphName", GoGetter: "GraphName"},
+			_jsii_.MemberProperty{JsiiProperty: "graphNameInput", GoGetter: "GraphNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "line", GoGetter: "Line"},
+			_jsii_.MemberProperty{JsiiProperty: "lineInput", GoGetter: "LineInput"},
+			_jsii_.MemberProperty{JsiiProperty: "queryType", GoGetter: "QueryType"},
+			_jsii_.MemberProperty{JsiiProperty: "queryTypeInput", GoGetter: "QueryTypeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCheckpointId", GoMethod: "ResetCheckpointId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDeviceDataSourceInstanceId", GoMethod: "ResetDeviceDataSourceInstanceId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetGraphId", GoMethod: "ResetGraphId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetGraphName", GoMethod: "ResetGraphName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWebsiteId", GoMethod: "ResetWebsiteId"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "websiteId", GoGetter: "WebsiteId"},
+			_jsii_.MemberProperty{JsiiProperty: "websiteIdInput", GoGetter: "WebsiteIdInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodLogicMonitorOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodNewrelic",
 		reflect.TypeOf((*SloObjectiveCountMetricsGoodNewrelic)(nil)).Elem(),
 	)
@@ -3956,6 +4607,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "grafanaLokiInput", GoGetter: "GrafanaLokiInput"},
 			_jsii_.MemberProperty{JsiiProperty: "graphite", GoGetter: "Graphite"},
 			_jsii_.MemberProperty{JsiiProperty: "graphiteInput", GoGetter: "GraphiteInput"},
+			_jsii_.MemberProperty{JsiiProperty: "honeycomb", GoGetter: "Honeycomb"},
+			_jsii_.MemberProperty{JsiiProperty: "honeycombInput", GoGetter: "HoneycombInput"},
 			_jsii_.MemberProperty{JsiiProperty: "influxdb", GoGetter: "Influxdb"},
 			_jsii_.MemberProperty{JsiiProperty: "influxdbInput", GoGetter: "InfluxdbInput"},
 			_jsii_.MemberProperty{JsiiProperty: "instana", GoGetter: "Instana"},
@@ -3965,6 +4618,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lightstep", GoGetter: "Lightstep"},
 			_jsii_.MemberProperty{JsiiProperty: "lightstepInput", GoGetter: "LightstepInput"},
+			_jsii_.MemberProperty{JsiiProperty: "logicMonitor", GoGetter: "LogicMonitor"},
+			_jsii_.MemberProperty{JsiiProperty: "logicMonitorInput", GoGetter: "LogicMonitorInput"},
 			_jsii_.MemberProperty{JsiiProperty: "newrelic", GoGetter: "Newrelic"},
 			_jsii_.MemberProperty{JsiiProperty: "newrelicInput", GoGetter: "NewrelicInput"},
 			_jsii_.MemberProperty{JsiiProperty: "opentsdb", GoGetter: "Opentsdb"},
@@ -3984,9 +4639,11 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putGcm", GoMethod: "PutGcm"},
 			_jsii_.MemberMethod{JsiiMethod: "putGrafanaLoki", GoMethod: "PutGrafanaLoki"},
 			_jsii_.MemberMethod{JsiiMethod: "putGraphite", GoMethod: "PutGraphite"},
+			_jsii_.MemberMethod{JsiiMethod: "putHoneycomb", GoMethod: "PutHoneycomb"},
 			_jsii_.MemberMethod{JsiiMethod: "putInfluxdb", GoMethod: "PutInfluxdb"},
 			_jsii_.MemberMethod{JsiiMethod: "putInstana", GoMethod: "PutInstana"},
 			_jsii_.MemberMethod{JsiiMethod: "putLightstep", GoMethod: "PutLightstep"},
+			_jsii_.MemberMethod{JsiiMethod: "putLogicMonitor", GoMethod: "PutLogicMonitor"},
 			_jsii_.MemberMethod{JsiiMethod: "putNewrelic", GoMethod: "PutNewrelic"},
 			_jsii_.MemberMethod{JsiiMethod: "putOpentsdb", GoMethod: "PutOpentsdb"},
 			_jsii_.MemberMethod{JsiiMethod: "putPingdom", GoMethod: "PutPingdom"},
@@ -4009,9 +4666,11 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetGcm", GoMethod: "ResetGcm"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGrafanaLoki", GoMethod: "ResetGrafanaLoki"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGraphite", GoMethod: "ResetGraphite"},
+			_jsii_.MemberMethod{JsiiMethod: "resetHoneycomb", GoMethod: "ResetHoneycomb"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInfluxdb", GoMethod: "ResetInfluxdb"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInstana", GoMethod: "ResetInstana"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLightstep", GoMethod: "ResetLightstep"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLogicMonitor", GoMethod: "ResetLogicMonitor"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNewrelic", GoMethod: "ResetNewrelic"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOpentsdb", GoMethod: "ResetOpentsdb"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPingdom", GoMethod: "ResetPingdom"},
@@ -4467,15 +5126,2191 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTestType", GoMethod: "ResetTestType"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberProperty{JsiiProperty: "testId", GoGetter: "TestId"},
 			_jsii_.MemberProperty{JsiiProperty: "testIdInput", GoGetter: "TestIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "testType", GoGetter: "TestType"},
+			_jsii_.MemberProperty{JsiiProperty: "testTypeInput", GoGetter: "TestTypeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodThousandeyesOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotal",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotal)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalAmazonPrometheus",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalAmazonPrometheus)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalAmazonPrometheusList",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalAmazonPrometheusList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalAmazonPrometheusList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalAmazonPrometheusOutputReference",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalAmazonPrometheusOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "promql", GoGetter: "Promql"},
+			_jsii_.MemberProperty{JsiiProperty: "promqlInput", GoGetter: "PromqlInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalAmazonPrometheusOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalAppdynamics",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalAppdynamics)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalAppdynamicsList",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalAppdynamicsList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalAppdynamicsList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalAppdynamicsOutputReference",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalAppdynamicsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "applicationName", GoGetter: "ApplicationName"},
+			_jsii_.MemberProperty{JsiiProperty: "applicationNameInput", GoGetter: "ApplicationNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "metricPath", GoGetter: "MetricPath"},
+			_jsii_.MemberProperty{JsiiProperty: "metricPathInput", GoGetter: "MetricPathInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalAppdynamicsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalAzureMonitor",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalAzureMonitor)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalAzureMonitorDimensions",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalAzureMonitorDimensions)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalAzureMonitorDimensionsList",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalAzureMonitorDimensionsList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalAzureMonitorDimensionsList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalAzureMonitorDimensionsOutputReference",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalAzureMonitorDimensionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
+			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
+			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalAzureMonitorDimensionsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalAzureMonitorList",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalAzureMonitorList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalAzureMonitorList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalAzureMonitorOutputReference",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalAzureMonitorOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
+			_jsii_.MemberProperty{JsiiProperty: "aggregationInput", GoGetter: "AggregationInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "dataType", GoGetter: "DataType"},
+			_jsii_.MemberProperty{JsiiProperty: "dataTypeInput", GoGetter: "DataTypeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "dimensions", GoGetter: "Dimensions"},
+			_jsii_.MemberProperty{JsiiProperty: "dimensionsInput", GoGetter: "DimensionsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "kqlQuery", GoGetter: "KqlQuery"},
+			_jsii_.MemberProperty{JsiiProperty: "kqlQueryInput", GoGetter: "KqlQueryInput"},
+			_jsii_.MemberProperty{JsiiProperty: "metricName", GoGetter: "MetricName"},
+			_jsii_.MemberProperty{JsiiProperty: "metricNameInput", GoGetter: "MetricNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "metricNamespace", GoGetter: "MetricNamespace"},
+			_jsii_.MemberProperty{JsiiProperty: "metricNamespaceInput", GoGetter: "MetricNamespaceInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putDimensions", GoMethod: "PutDimensions"},
+			_jsii_.MemberMethod{JsiiMethod: "putWorkspace", GoMethod: "PutWorkspace"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAggregation", GoMethod: "ResetAggregation"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDimensions", GoMethod: "ResetDimensions"},
+			_jsii_.MemberMethod{JsiiMethod: "resetKqlQuery", GoMethod: "ResetKqlQuery"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMetricName", GoMethod: "ResetMetricName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMetricNamespace", GoMethod: "ResetMetricNamespace"},
+			_jsii_.MemberMethod{JsiiMethod: "resetResourceId", GoMethod: "ResetResourceId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWorkspace", GoMethod: "ResetWorkspace"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "resourceId", GoGetter: "ResourceId"},
+			_jsii_.MemberProperty{JsiiProperty: "resourceIdInput", GoGetter: "ResourceIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "workspace", GoGetter: "Workspace"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceInput", GoGetter: "WorkspaceInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalAzureMonitorOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalAzureMonitorWorkspace",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalAzureMonitorWorkspace)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalAzureMonitorWorkspaceList",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalAzureMonitorWorkspaceList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalAzureMonitorWorkspaceList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalAzureMonitorWorkspaceOutputReference",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalAzureMonitorWorkspaceOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "resourceGroup", GoGetter: "ResourceGroup"},
+			_jsii_.MemberProperty{JsiiProperty: "resourceGroupInput", GoGetter: "ResourceGroupInput"},
+			_jsii_.MemberProperty{JsiiProperty: "subscriptionId", GoGetter: "SubscriptionId"},
+			_jsii_.MemberProperty{JsiiProperty: "subscriptionIdInput", GoGetter: "SubscriptionIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceId", GoGetter: "WorkspaceId"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceIdInput", GoGetter: "WorkspaceIdInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalAzureMonitorWorkspaceOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalBigquery",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalBigquery)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalBigqueryList",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalBigqueryList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalBigqueryList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalBigqueryOutputReference",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalBigqueryOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
+			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
+			_jsii_.MemberProperty{JsiiProperty: "projectId", GoGetter: "ProjectId"},
+			_jsii_.MemberProperty{JsiiProperty: "projectIdInput", GoGetter: "ProjectIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "query", GoGetter: "Query"},
+			_jsii_.MemberProperty{JsiiProperty: "queryInput", GoGetter: "QueryInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalBigqueryOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalCloudwatch",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalCloudwatch)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalCloudwatchDimensions",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalCloudwatchDimensions)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalCloudwatchDimensionsList",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalCloudwatchDimensionsList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalCloudwatchDimensionsList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalCloudwatchDimensionsOutputReference",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalCloudwatchDimensionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
+			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
+			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalCloudwatchDimensionsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalCloudwatchList",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalCloudwatchList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalCloudwatchList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalCloudwatchOutputReference",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalCloudwatchOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
+			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "dimensions", GoGetter: "Dimensions"},
+			_jsii_.MemberProperty{JsiiProperty: "dimensionsInput", GoGetter: "DimensionsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "json", GoGetter: "Json"},
+			_jsii_.MemberProperty{JsiiProperty: "jsonInput", GoGetter: "JsonInput"},
+			_jsii_.MemberProperty{JsiiProperty: "metricName", GoGetter: "MetricName"},
+			_jsii_.MemberProperty{JsiiProperty: "metricNameInput", GoGetter: "MetricNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "namespace", GoGetter: "Namespace"},
+			_jsii_.MemberProperty{JsiiProperty: "namespaceInput", GoGetter: "NamespaceInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putDimensions", GoMethod: "PutDimensions"},
+			_jsii_.MemberProperty{JsiiProperty: "region", GoGetter: "Region"},
+			_jsii_.MemberProperty{JsiiProperty: "regionInput", GoGetter: "RegionInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAccountId", GoMethod: "ResetAccountId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDimensions", GoMethod: "ResetDimensions"},
+			_jsii_.MemberMethod{JsiiMethod: "resetJson", GoMethod: "ResetJson"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMetricName", GoMethod: "ResetMetricName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetNamespace", GoMethod: "ResetNamespace"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSql", GoMethod: "ResetSql"},
+			_jsii_.MemberMethod{JsiiMethod: "resetStat", GoMethod: "ResetStat"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "sql", GoGetter: "Sql"},
+			_jsii_.MemberProperty{JsiiProperty: "sqlInput", GoGetter: "SqlInput"},
+			_jsii_.MemberProperty{JsiiProperty: "stat", GoGetter: "Stat"},
+			_jsii_.MemberProperty{JsiiProperty: "statInput", GoGetter: "StatInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalCloudwatchOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalDatadog",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalDatadog)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalDatadogList",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalDatadogList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalDatadogList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalDatadogOutputReference",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalDatadogOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "query", GoGetter: "Query"},
+			_jsii_.MemberProperty{JsiiProperty: "queryInput", GoGetter: "QueryInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalDatadogOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalDynatrace",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalDynatrace)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalDynatraceList",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalDynatraceList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalDynatraceList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalDynatraceOutputReference",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalDynatraceOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "metricSelector", GoGetter: "MetricSelector"},
+			_jsii_.MemberProperty{JsiiProperty: "metricSelectorInput", GoGetter: "MetricSelectorInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalDynatraceOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalElasticsearch",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalElasticsearch)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalElasticsearchList",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalElasticsearchList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalElasticsearchList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalElasticsearchOutputReference",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalElasticsearchOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "index", GoGetter: "Index"},
+			_jsii_.MemberProperty{JsiiProperty: "indexInput", GoGetter: "IndexInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "query", GoGetter: "Query"},
+			_jsii_.MemberProperty{JsiiProperty: "queryInput", GoGetter: "QueryInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalElasticsearchOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalGcm",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalGcm)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalGcmList",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalGcmList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalGcmList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalGcmOutputReference",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalGcmOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "projectId", GoGetter: "ProjectId"},
+			_jsii_.MemberProperty{JsiiProperty: "projectIdInput", GoGetter: "ProjectIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "promql", GoGetter: "Promql"},
+			_jsii_.MemberProperty{JsiiProperty: "promqlInput", GoGetter: "PromqlInput"},
+			_jsii_.MemberProperty{JsiiProperty: "query", GoGetter: "Query"},
+			_jsii_.MemberProperty{JsiiProperty: "queryInput", GoGetter: "QueryInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPromql", GoMethod: "ResetPromql"},
+			_jsii_.MemberMethod{JsiiMethod: "resetQuery", GoMethod: "ResetQuery"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalGcmOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalGrafanaLoki",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalGrafanaLoki)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalGrafanaLokiList",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalGrafanaLokiList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalGrafanaLokiList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalGrafanaLokiOutputReference",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalGrafanaLokiOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "logql", GoGetter: "Logql"},
+			_jsii_.MemberProperty{JsiiProperty: "logqlInput", GoGetter: "LogqlInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalGrafanaLokiOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalGraphite",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalGraphite)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalGraphiteList",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalGraphiteList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalGraphiteList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalGraphiteOutputReference",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalGraphiteOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "metricPath", GoGetter: "MetricPath"},
+			_jsii_.MemberProperty{JsiiProperty: "metricPathInput", GoGetter: "MetricPathInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalGraphiteOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalHoneycomb",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalHoneycomb)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalHoneycombList",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalHoneycombList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalHoneycombList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalHoneycombOutputReference",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalHoneycombOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "attribute", GoGetter: "Attribute"},
+			_jsii_.MemberProperty{JsiiProperty: "attributeInput", GoGetter: "AttributeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "calculation", GoGetter: "Calculation"},
+			_jsii_.MemberProperty{JsiiProperty: "calculationInput", GoGetter: "CalculationInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAttribute", GoMethod: "ResetAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalHoneycombOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalInfluxdb",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalInfluxdb)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalInfluxdbList",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalInfluxdbList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalInfluxdbList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalInfluxdbOutputReference",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalInfluxdbOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "query", GoGetter: "Query"},
+			_jsii_.MemberProperty{JsiiProperty: "queryInput", GoGetter: "QueryInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalInfluxdbOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalInstana",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalInstana)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalInstanaApplication",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalInstanaApplication)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalInstanaApplicationGroupBy",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalInstanaApplicationGroupBy)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalInstanaApplicationGroupByList",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalInstanaApplicationGroupByList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalInstanaApplicationGroupByList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalInstanaApplicationGroupByOutputReference",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalInstanaApplicationGroupByOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTagSecondLevelKey", GoMethod: "ResetTagSecondLevelKey"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "tag", GoGetter: "Tag"},
+			_jsii_.MemberProperty{JsiiProperty: "tagEntity", GoGetter: "TagEntity"},
+			_jsii_.MemberProperty{JsiiProperty: "tagEntityInput", GoGetter: "TagEntityInput"},
+			_jsii_.MemberProperty{JsiiProperty: "tagInput", GoGetter: "TagInput"},
+			_jsii_.MemberProperty{JsiiProperty: "tagSecondLevelKey", GoGetter: "TagSecondLevelKey"},
+			_jsii_.MemberProperty{JsiiProperty: "tagSecondLevelKeyInput", GoGetter: "TagSecondLevelKeyInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalInstanaApplicationGroupByOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalInstanaApplicationList",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalInstanaApplicationList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalInstanaApplicationList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalInstanaApplicationOutputReference",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalInstanaApplicationOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
+			_jsii_.MemberProperty{JsiiProperty: "aggregationInput", GoGetter: "AggregationInput"},
+			_jsii_.MemberProperty{JsiiProperty: "apiQuery", GoGetter: "ApiQuery"},
+			_jsii_.MemberProperty{JsiiProperty: "apiQueryInput", GoGetter: "ApiQueryInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "groupBy", GoGetter: "GroupBy"},
+			_jsii_.MemberProperty{JsiiProperty: "groupByInput", GoGetter: "GroupByInput"},
+			_jsii_.MemberProperty{JsiiProperty: "includeInternal", GoGetter: "IncludeInternal"},
+			_jsii_.MemberProperty{JsiiProperty: "includeInternalInput", GoGetter: "IncludeInternalInput"},
+			_jsii_.MemberProperty{JsiiProperty: "includeSynthetic", GoGetter: "IncludeSynthetic"},
+			_jsii_.MemberProperty{JsiiProperty: "includeSyntheticInput", GoGetter: "IncludeSyntheticInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "metricId", GoGetter: "MetricId"},
+			_jsii_.MemberProperty{JsiiProperty: "metricIdInput", GoGetter: "MetricIdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putGroupBy", GoMethod: "PutGroupBy"},
+			_jsii_.MemberMethod{JsiiMethod: "resetIncludeInternal", GoMethod: "ResetIncludeInternal"},
+			_jsii_.MemberMethod{JsiiMethod: "resetIncludeSynthetic", GoMethod: "ResetIncludeSynthetic"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalInstanaApplicationOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalInstanaInfrastructure",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalInstanaInfrastructure)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalInstanaInfrastructureList",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalInstanaInfrastructureList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalInstanaInfrastructureList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalInstanaInfrastructureOutputReference",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalInstanaInfrastructureOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "metricId", GoGetter: "MetricId"},
+			_jsii_.MemberProperty{JsiiProperty: "metricIdInput", GoGetter: "MetricIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "metricRetrievalMethod", GoGetter: "MetricRetrievalMethod"},
+			_jsii_.MemberProperty{JsiiProperty: "metricRetrievalMethodInput", GoGetter: "MetricRetrievalMethodInput"},
+			_jsii_.MemberProperty{JsiiProperty: "pluginId", GoGetter: "PluginId"},
+			_jsii_.MemberProperty{JsiiProperty: "pluginIdInput", GoGetter: "PluginIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "query", GoGetter: "Query"},
+			_jsii_.MemberProperty{JsiiProperty: "queryInput", GoGetter: "QueryInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetQuery", GoMethod: "ResetQuery"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSnapshotId", GoMethod: "ResetSnapshotId"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "snapshotId", GoGetter: "SnapshotId"},
+			_jsii_.MemberProperty{JsiiProperty: "snapshotIdInput", GoGetter: "SnapshotIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalInstanaInfrastructureOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalInstanaList",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalInstanaList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalInstanaList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalInstanaOutputReference",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalInstanaOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "application", GoGetter: "Application"},
+			_jsii_.MemberProperty{JsiiProperty: "applicationInput", GoGetter: "ApplicationInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "infrastructure", GoGetter: "Infrastructure"},
+			_jsii_.MemberProperty{JsiiProperty: "infrastructureInput", GoGetter: "InfrastructureInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "metricType", GoGetter: "MetricType"},
+			_jsii_.MemberProperty{JsiiProperty: "metricTypeInput", GoGetter: "MetricTypeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putApplication", GoMethod: "PutApplication"},
+			_jsii_.MemberMethod{JsiiMethod: "putInfrastructure", GoMethod: "PutInfrastructure"},
+			_jsii_.MemberMethod{JsiiMethod: "resetApplication", GoMethod: "ResetApplication"},
+			_jsii_.MemberMethod{JsiiMethod: "resetInfrastructure", GoMethod: "ResetInfrastructure"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalInstanaOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalLightstep",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalLightstep)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalLightstepList",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalLightstepList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalLightstepList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalLightstepOutputReference",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalLightstepOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "percentile", GoGetter: "Percentile"},
+			_jsii_.MemberProperty{JsiiProperty: "percentileInput", GoGetter: "PercentileInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPercentile", GoMethod: "ResetPercentile"},
+			_jsii_.MemberMethod{JsiiMethod: "resetStreamId", GoMethod: "ResetStreamId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUql", GoMethod: "ResetUql"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "streamId", GoGetter: "StreamId"},
+			_jsii_.MemberProperty{JsiiProperty: "streamIdInput", GoGetter: "StreamIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "typeOfData", GoGetter: "TypeOfData"},
+			_jsii_.MemberProperty{JsiiProperty: "typeOfDataInput", GoGetter: "TypeOfDataInput"},
+			_jsii_.MemberProperty{JsiiProperty: "uql", GoGetter: "Uql"},
+			_jsii_.MemberProperty{JsiiProperty: "uqlInput", GoGetter: "UqlInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalLightstepOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalList",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalLogicMonitor",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalLogicMonitor)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalLogicMonitorList",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalLogicMonitorList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalLogicMonitorList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalLogicMonitorOutputReference",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalLogicMonitorOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "checkpointId", GoGetter: "CheckpointId"},
+			_jsii_.MemberProperty{JsiiProperty: "checkpointIdInput", GoGetter: "CheckpointIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "deviceDataSourceInstanceId", GoGetter: "DeviceDataSourceInstanceId"},
+			_jsii_.MemberProperty{JsiiProperty: "deviceDataSourceInstanceIdInput", GoGetter: "DeviceDataSourceInstanceIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "graphId", GoGetter: "GraphId"},
+			_jsii_.MemberProperty{JsiiProperty: "graphIdInput", GoGetter: "GraphIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "graphName", GoGetter: "GraphName"},
+			_jsii_.MemberProperty{JsiiProperty: "graphNameInput", GoGetter: "GraphNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "line", GoGetter: "Line"},
+			_jsii_.MemberProperty{JsiiProperty: "lineInput", GoGetter: "LineInput"},
+			_jsii_.MemberProperty{JsiiProperty: "queryType", GoGetter: "QueryType"},
+			_jsii_.MemberProperty{JsiiProperty: "queryTypeInput", GoGetter: "QueryTypeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCheckpointId", GoMethod: "ResetCheckpointId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDeviceDataSourceInstanceId", GoMethod: "ResetDeviceDataSourceInstanceId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetGraphId", GoMethod: "ResetGraphId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetGraphName", GoMethod: "ResetGraphName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWebsiteId", GoMethod: "ResetWebsiteId"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "websiteId", GoGetter: "WebsiteId"},
+			_jsii_.MemberProperty{JsiiProperty: "websiteIdInput", GoGetter: "WebsiteIdInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalLogicMonitorOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalNewrelic",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalNewrelic)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalNewrelicList",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalNewrelicList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalNewrelicList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalNewrelicOutputReference",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalNewrelicOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "nrql", GoGetter: "Nrql"},
+			_jsii_.MemberProperty{JsiiProperty: "nrqlInput", GoGetter: "NrqlInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalNewrelicOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalOpentsdb",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalOpentsdb)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalOpentsdbList",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalOpentsdbList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalOpentsdbList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalOpentsdbOutputReference",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalOpentsdbOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "query", GoGetter: "Query"},
+			_jsii_.MemberProperty{JsiiProperty: "queryInput", GoGetter: "QueryInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalOpentsdbOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalOutputReference",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "amazonPrometheus", GoGetter: "AmazonPrometheus"},
+			_jsii_.MemberProperty{JsiiProperty: "amazonPrometheusInput", GoGetter: "AmazonPrometheusInput"},
+			_jsii_.MemberProperty{JsiiProperty: "appdynamics", GoGetter: "Appdynamics"},
+			_jsii_.MemberProperty{JsiiProperty: "appdynamicsInput", GoGetter: "AppdynamicsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "azureMonitor", GoGetter: "AzureMonitor"},
+			_jsii_.MemberProperty{JsiiProperty: "azureMonitorInput", GoGetter: "AzureMonitorInput"},
+			_jsii_.MemberProperty{JsiiProperty: "bigquery", GoGetter: "Bigquery"},
+			_jsii_.MemberProperty{JsiiProperty: "bigqueryInput", GoGetter: "BigqueryInput"},
+			_jsii_.MemberProperty{JsiiProperty: "cloudwatch", GoGetter: "Cloudwatch"},
+			_jsii_.MemberProperty{JsiiProperty: "cloudwatchInput", GoGetter: "CloudwatchInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "datadog", GoGetter: "Datadog"},
+			_jsii_.MemberProperty{JsiiProperty: "datadogInput", GoGetter: "DatadogInput"},
+			_jsii_.MemberProperty{JsiiProperty: "dynatrace", GoGetter: "Dynatrace"},
+			_jsii_.MemberProperty{JsiiProperty: "dynatraceInput", GoGetter: "DynatraceInput"},
+			_jsii_.MemberProperty{JsiiProperty: "elasticsearch", GoGetter: "Elasticsearch"},
+			_jsii_.MemberProperty{JsiiProperty: "elasticsearchInput", GoGetter: "ElasticsearchInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberProperty{JsiiProperty: "gcm", GoGetter: "Gcm"},
+			_jsii_.MemberProperty{JsiiProperty: "gcmInput", GoGetter: "GcmInput"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "grafanaLoki", GoGetter: "GrafanaLoki"},
+			_jsii_.MemberProperty{JsiiProperty: "grafanaLokiInput", GoGetter: "GrafanaLokiInput"},
+			_jsii_.MemberProperty{JsiiProperty: "graphite", GoGetter: "Graphite"},
+			_jsii_.MemberProperty{JsiiProperty: "graphiteInput", GoGetter: "GraphiteInput"},
+			_jsii_.MemberProperty{JsiiProperty: "honeycomb", GoGetter: "Honeycomb"},
+			_jsii_.MemberProperty{JsiiProperty: "honeycombInput", GoGetter: "HoneycombInput"},
+			_jsii_.MemberProperty{JsiiProperty: "influxdb", GoGetter: "Influxdb"},
+			_jsii_.MemberProperty{JsiiProperty: "influxdbInput", GoGetter: "InfluxdbInput"},
+			_jsii_.MemberProperty{JsiiProperty: "instana", GoGetter: "Instana"},
+			_jsii_.MemberProperty{JsiiProperty: "instanaInput", GoGetter: "InstanaInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "lightstep", GoGetter: "Lightstep"},
+			_jsii_.MemberProperty{JsiiProperty: "lightstepInput", GoGetter: "LightstepInput"},
+			_jsii_.MemberProperty{JsiiProperty: "logicMonitor", GoGetter: "LogicMonitor"},
+			_jsii_.MemberProperty{JsiiProperty: "logicMonitorInput", GoGetter: "LogicMonitorInput"},
+			_jsii_.MemberProperty{JsiiProperty: "newrelic", GoGetter: "Newrelic"},
+			_jsii_.MemberProperty{JsiiProperty: "newrelicInput", GoGetter: "NewrelicInput"},
+			_jsii_.MemberProperty{JsiiProperty: "opentsdb", GoGetter: "Opentsdb"},
+			_jsii_.MemberProperty{JsiiProperty: "opentsdbInput", GoGetter: "OpentsdbInput"},
+			_jsii_.MemberProperty{JsiiProperty: "pingdom", GoGetter: "Pingdom"},
+			_jsii_.MemberProperty{JsiiProperty: "pingdomInput", GoGetter: "PingdomInput"},
+			_jsii_.MemberProperty{JsiiProperty: "prometheus", GoGetter: "Prometheus"},
+			_jsii_.MemberProperty{JsiiProperty: "prometheusInput", GoGetter: "PrometheusInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putAmazonPrometheus", GoMethod: "PutAmazonPrometheus"},
+			_jsii_.MemberMethod{JsiiMethod: "putAppdynamics", GoMethod: "PutAppdynamics"},
+			_jsii_.MemberMethod{JsiiMethod: "putAzureMonitor", GoMethod: "PutAzureMonitor"},
+			_jsii_.MemberMethod{JsiiMethod: "putBigquery", GoMethod: "PutBigquery"},
+			_jsii_.MemberMethod{JsiiMethod: "putCloudwatch", GoMethod: "PutCloudwatch"},
+			_jsii_.MemberMethod{JsiiMethod: "putDatadog", GoMethod: "PutDatadog"},
+			_jsii_.MemberMethod{JsiiMethod: "putDynatrace", GoMethod: "PutDynatrace"},
+			_jsii_.MemberMethod{JsiiMethod: "putElasticsearch", GoMethod: "PutElasticsearch"},
+			_jsii_.MemberMethod{JsiiMethod: "putGcm", GoMethod: "PutGcm"},
+			_jsii_.MemberMethod{JsiiMethod: "putGrafanaLoki", GoMethod: "PutGrafanaLoki"},
+			_jsii_.MemberMethod{JsiiMethod: "putGraphite", GoMethod: "PutGraphite"},
+			_jsii_.MemberMethod{JsiiMethod: "putHoneycomb", GoMethod: "PutHoneycomb"},
+			_jsii_.MemberMethod{JsiiMethod: "putInfluxdb", GoMethod: "PutInfluxdb"},
+			_jsii_.MemberMethod{JsiiMethod: "putInstana", GoMethod: "PutInstana"},
+			_jsii_.MemberMethod{JsiiMethod: "putLightstep", GoMethod: "PutLightstep"},
+			_jsii_.MemberMethod{JsiiMethod: "putLogicMonitor", GoMethod: "PutLogicMonitor"},
+			_jsii_.MemberMethod{JsiiMethod: "putNewrelic", GoMethod: "PutNewrelic"},
+			_jsii_.MemberMethod{JsiiMethod: "putOpentsdb", GoMethod: "PutOpentsdb"},
+			_jsii_.MemberMethod{JsiiMethod: "putPingdom", GoMethod: "PutPingdom"},
+			_jsii_.MemberMethod{JsiiMethod: "putPrometheus", GoMethod: "PutPrometheus"},
+			_jsii_.MemberMethod{JsiiMethod: "putRedshift", GoMethod: "PutRedshift"},
+			_jsii_.MemberMethod{JsiiMethod: "putSplunk", GoMethod: "PutSplunk"},
+			_jsii_.MemberMethod{JsiiMethod: "putSplunkObservability", GoMethod: "PutSplunkObservability"},
+			_jsii_.MemberMethod{JsiiMethod: "putSumologic", GoMethod: "PutSumologic"},
+			_jsii_.MemberMethod{JsiiMethod: "putThousandeyes", GoMethod: "PutThousandeyes"},
+			_jsii_.MemberProperty{JsiiProperty: "redshift", GoGetter: "Redshift"},
+			_jsii_.MemberProperty{JsiiProperty: "redshiftInput", GoGetter: "RedshiftInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAmazonPrometheus", GoMethod: "ResetAmazonPrometheus"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAppdynamics", GoMethod: "ResetAppdynamics"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAzureMonitor", GoMethod: "ResetAzureMonitor"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBigquery", GoMethod: "ResetBigquery"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCloudwatch", GoMethod: "ResetCloudwatch"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDatadog", GoMethod: "ResetDatadog"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDynatrace", GoMethod: "ResetDynatrace"},
+			_jsii_.MemberMethod{JsiiMethod: "resetElasticsearch", GoMethod: "ResetElasticsearch"},
+			_jsii_.MemberMethod{JsiiMethod: "resetGcm", GoMethod: "ResetGcm"},
+			_jsii_.MemberMethod{JsiiMethod: "resetGrafanaLoki", GoMethod: "ResetGrafanaLoki"},
+			_jsii_.MemberMethod{JsiiMethod: "resetGraphite", GoMethod: "ResetGraphite"},
+			_jsii_.MemberMethod{JsiiMethod: "resetHoneycomb", GoMethod: "ResetHoneycomb"},
+			_jsii_.MemberMethod{JsiiMethod: "resetInfluxdb", GoMethod: "ResetInfluxdb"},
+			_jsii_.MemberMethod{JsiiMethod: "resetInstana", GoMethod: "ResetInstana"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLightstep", GoMethod: "ResetLightstep"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLogicMonitor", GoMethod: "ResetLogicMonitor"},
+			_jsii_.MemberMethod{JsiiMethod: "resetNewrelic", GoMethod: "ResetNewrelic"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOpentsdb", GoMethod: "ResetOpentsdb"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPingdom", GoMethod: "ResetPingdom"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPrometheus", GoMethod: "ResetPrometheus"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRedshift", GoMethod: "ResetRedshift"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSplunk", GoMethod: "ResetSplunk"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSplunkObservability", GoMethod: "ResetSplunkObservability"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSumologic", GoMethod: "ResetSumologic"},
+			_jsii_.MemberMethod{JsiiMethod: "resetThousandeyes", GoMethod: "ResetThousandeyes"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "splunk", GoGetter: "Splunk"},
+			_jsii_.MemberProperty{JsiiProperty: "splunkInput", GoGetter: "SplunkInput"},
+			_jsii_.MemberProperty{JsiiProperty: "splunkObservability", GoGetter: "SplunkObservability"},
+			_jsii_.MemberProperty{JsiiProperty: "splunkObservabilityInput", GoGetter: "SplunkObservabilityInput"},
+			_jsii_.MemberProperty{JsiiProperty: "sumologic", GoGetter: "Sumologic"},
+			_jsii_.MemberProperty{JsiiProperty: "sumologicInput", GoGetter: "SumologicInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberProperty{JsiiProperty: "thousandeyes", GoGetter: "Thousandeyes"},
+			_jsii_.MemberProperty{JsiiProperty: "thousandeyesInput", GoGetter: "ThousandeyesInput"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalPingdom",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalPingdom)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalPingdomList",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalPingdomList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalPingdomList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalPingdomOutputReference",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalPingdomOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "checkId", GoGetter: "CheckId"},
+			_jsii_.MemberProperty{JsiiProperty: "checkIdInput", GoGetter: "CheckIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "checkType", GoGetter: "CheckType"},
+			_jsii_.MemberProperty{JsiiProperty: "checkTypeInput", GoGetter: "CheckTypeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCheckType", GoMethod: "ResetCheckType"},
+			_jsii_.MemberMethod{JsiiMethod: "resetStatus", GoMethod: "ResetStatus"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "status", GoGetter: "Status"},
+			_jsii_.MemberProperty{JsiiProperty: "statusInput", GoGetter: "StatusInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalPingdomOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalPrometheus",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalPrometheus)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalPrometheusList",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalPrometheusList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalPrometheusList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalPrometheusOutputReference",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalPrometheusOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "promql", GoGetter: "Promql"},
+			_jsii_.MemberProperty{JsiiProperty: "promqlInput", GoGetter: "PromqlInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalPrometheusOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalRedshift",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalRedshift)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalRedshiftList",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalRedshiftList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalRedshiftList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalRedshiftOutputReference",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalRedshiftOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "clusterId", GoGetter: "ClusterId"},
+			_jsii_.MemberProperty{JsiiProperty: "clusterIdInput", GoGetter: "ClusterIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "databaseName", GoGetter: "DatabaseName"},
+			_jsii_.MemberProperty{JsiiProperty: "databaseNameInput", GoGetter: "DatabaseNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "query", GoGetter: "Query"},
+			_jsii_.MemberProperty{JsiiProperty: "queryInput", GoGetter: "QueryInput"},
+			_jsii_.MemberProperty{JsiiProperty: "region", GoGetter: "Region"},
+			_jsii_.MemberProperty{JsiiProperty: "regionInput", GoGetter: "RegionInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalRedshiftOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalSplunk",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalSplunk)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalSplunkList",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalSplunkList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalSplunkList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalSplunkObservability",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalSplunkObservability)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalSplunkObservabilityList",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalSplunkObservabilityList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalSplunkObservabilityList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalSplunkObservabilityOutputReference",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalSplunkObservabilityOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "program", GoGetter: "Program"},
+			_jsii_.MemberProperty{JsiiProperty: "programInput", GoGetter: "ProgramInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalSplunkObservabilityOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalSplunkOutputReference",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalSplunkOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "query", GoGetter: "Query"},
+			_jsii_.MemberProperty{JsiiProperty: "queryInput", GoGetter: "QueryInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalSplunkOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalSumologic",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalSumologic)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalSumologicList",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalSumologicList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalSumologicList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalSumologicOutputReference",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalSumologicOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "quantization", GoGetter: "Quantization"},
+			_jsii_.MemberProperty{JsiiProperty: "quantizationInput", GoGetter: "QuantizationInput"},
+			_jsii_.MemberProperty{JsiiProperty: "query", GoGetter: "Query"},
+			_jsii_.MemberProperty{JsiiProperty: "queryInput", GoGetter: "QueryInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetQuantization", GoMethod: "ResetQuantization"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRollup", GoMethod: "ResetRollup"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "rollup", GoGetter: "Rollup"},
+			_jsii_.MemberProperty{JsiiProperty: "rollupInput", GoGetter: "RollupInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
+			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalSumologicOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalThousandeyes",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalThousandeyes)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalThousandeyesList",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalThousandeyesList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalThousandeyesList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalThousandeyesOutputReference",
+		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalThousandeyesOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTestType", GoMethod: "ResetTestType"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberProperty{JsiiProperty: "testId", GoGetter: "TestId"},
+			_jsii_.MemberProperty{JsiiProperty: "testIdInput", GoGetter: "TestIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "testType", GoGetter: "TestType"},
+			_jsii_.MemberProperty{JsiiProperty: "testTypeInput", GoGetter: "TestTypeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalThousandeyesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -4524,6 +7359,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "good", GoGetter: "Good"},
 			_jsii_.MemberProperty{JsiiProperty: "goodInput", GoGetter: "GoodInput"},
+			_jsii_.MemberProperty{JsiiProperty: "goodTotal", GoGetter: "GoodTotal"},
+			_jsii_.MemberProperty{JsiiProperty: "goodTotalInput", GoGetter: "GoodTotalInput"},
 			_jsii_.MemberProperty{JsiiProperty: "incremental", GoGetter: "Incremental"},
 			_jsii_.MemberProperty{JsiiProperty: "incrementalInput", GoGetter: "IncrementalInput"},
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
@@ -4531,9 +7368,12 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "putBad", GoMethod: "PutBad"},
 			_jsii_.MemberMethod{JsiiMethod: "putGood", GoMethod: "PutGood"},
+			_jsii_.MemberMethod{JsiiMethod: "putGoodTotal", GoMethod: "PutGoodTotal"},
 			_jsii_.MemberMethod{JsiiMethod: "putTotal", GoMethod: "PutTotal"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBad", GoMethod: "ResetBad"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGood", GoMethod: "ResetGood"},
+			_jsii_.MemberMethod{JsiiMethod: "resetGoodTotal", GoMethod: "ResetGoodTotal"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTotal", GoMethod: "ResetTotal"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
@@ -4771,6 +7611,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "dataType", GoGetter: "DataType"},
+			_jsii_.MemberProperty{JsiiProperty: "dataTypeInput", GoGetter: "DataTypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "dimensions", GoGetter: "Dimensions"},
 			_jsii_.MemberProperty{JsiiProperty: "dimensionsInput", GoGetter: "DimensionsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -4786,22 +7628,96 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "kqlQuery", GoGetter: "KqlQuery"},
+			_jsii_.MemberProperty{JsiiProperty: "kqlQueryInput", GoGetter: "KqlQueryInput"},
 			_jsii_.MemberProperty{JsiiProperty: "metricName", GoGetter: "MetricName"},
 			_jsii_.MemberProperty{JsiiProperty: "metricNameInput", GoGetter: "MetricNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "metricNamespace", GoGetter: "MetricNamespace"},
 			_jsii_.MemberProperty{JsiiProperty: "metricNamespaceInput", GoGetter: "MetricNamespaceInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putDimensions", GoMethod: "PutDimensions"},
+			_jsii_.MemberMethod{JsiiMethod: "putWorkspace", GoMethod: "PutWorkspace"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAggregation", GoMethod: "ResetAggregation"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDimensions", GoMethod: "ResetDimensions"},
+			_jsii_.MemberMethod{JsiiMethod: "resetKqlQuery", GoMethod: "ResetKqlQuery"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMetricName", GoMethod: "ResetMetricName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMetricNamespace", GoMethod: "ResetMetricNamespace"},
+			_jsii_.MemberMethod{JsiiMethod: "resetResourceId", GoMethod: "ResetResourceId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWorkspace", GoMethod: "ResetWorkspace"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "resourceId", GoGetter: "ResourceId"},
 			_jsii_.MemberProperty{JsiiProperty: "resourceIdInput", GoGetter: "ResourceIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "workspace", GoGetter: "Workspace"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceInput", GoGetter: "WorkspaceInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalAzureMonitorOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalAzureMonitorWorkspace",
+		reflect.TypeOf((*SloObjectiveCountMetricsTotalAzureMonitorWorkspace)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalAzureMonitorWorkspaceList",
+		reflect.TypeOf((*SloObjectiveCountMetricsTotalAzureMonitorWorkspaceList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsTotalAzureMonitorWorkspaceList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalAzureMonitorWorkspaceOutputReference",
+		reflect.TypeOf((*SloObjectiveCountMetricsTotalAzureMonitorWorkspaceOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "resourceGroup", GoGetter: "ResourceGroup"},
+			_jsii_.MemberProperty{JsiiProperty: "resourceGroupInput", GoGetter: "ResourceGroupInput"},
+			_jsii_.MemberProperty{JsiiProperty: "subscriptionId", GoGetter: "SubscriptionId"},
+			_jsii_.MemberProperty{JsiiProperty: "subscriptionIdInput", GoGetter: "SubscriptionIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceId", GoGetter: "WorkspaceId"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceIdInput", GoGetter: "WorkspaceIdInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsTotalAzureMonitorWorkspaceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -5245,8 +8161,12 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "projectId", GoGetter: "ProjectId"},
 			_jsii_.MemberProperty{JsiiProperty: "projectIdInput", GoGetter: "ProjectIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "promql", GoGetter: "Promql"},
+			_jsii_.MemberProperty{JsiiProperty: "promqlInput", GoGetter: "PromqlInput"},
 			_jsii_.MemberProperty{JsiiProperty: "query", GoGetter: "Query"},
 			_jsii_.MemberProperty{JsiiProperty: "queryInput", GoGetter: "QueryInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPromql", GoMethod: "ResetPromql"},
+			_jsii_.MemberMethod{JsiiMethod: "resetQuery", GoMethod: "ResetQuery"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
@@ -5374,6 +8294,69 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalGraphiteOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalHoneycomb",
+		reflect.TypeOf((*SloObjectiveCountMetricsTotalHoneycomb)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalHoneycombList",
+		reflect.TypeOf((*SloObjectiveCountMetricsTotalHoneycombList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsTotalHoneycombList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalHoneycombOutputReference",
+		reflect.TypeOf((*SloObjectiveCountMetricsTotalHoneycombOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "attribute", GoGetter: "Attribute"},
+			_jsii_.MemberProperty{JsiiProperty: "attributeInput", GoGetter: "AttributeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "calculation", GoGetter: "Calculation"},
+			_jsii_.MemberProperty{JsiiProperty: "calculationInput", GoGetter: "CalculationInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAttribute", GoMethod: "ResetAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsTotalHoneycombOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -5806,6 +8789,83 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalLogicMonitor",
+		reflect.TypeOf((*SloObjectiveCountMetricsTotalLogicMonitor)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalLogicMonitorList",
+		reflect.TypeOf((*SloObjectiveCountMetricsTotalLogicMonitorList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsTotalLogicMonitorList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalLogicMonitorOutputReference",
+		reflect.TypeOf((*SloObjectiveCountMetricsTotalLogicMonitorOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "checkpointId", GoGetter: "CheckpointId"},
+			_jsii_.MemberProperty{JsiiProperty: "checkpointIdInput", GoGetter: "CheckpointIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "deviceDataSourceInstanceId", GoGetter: "DeviceDataSourceInstanceId"},
+			_jsii_.MemberProperty{JsiiProperty: "deviceDataSourceInstanceIdInput", GoGetter: "DeviceDataSourceInstanceIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "graphId", GoGetter: "GraphId"},
+			_jsii_.MemberProperty{JsiiProperty: "graphIdInput", GoGetter: "GraphIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "graphName", GoGetter: "GraphName"},
+			_jsii_.MemberProperty{JsiiProperty: "graphNameInput", GoGetter: "GraphNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "line", GoGetter: "Line"},
+			_jsii_.MemberProperty{JsiiProperty: "lineInput", GoGetter: "LineInput"},
+			_jsii_.MemberProperty{JsiiProperty: "queryType", GoGetter: "QueryType"},
+			_jsii_.MemberProperty{JsiiProperty: "queryTypeInput", GoGetter: "QueryTypeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCheckpointId", GoMethod: "ResetCheckpointId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDeviceDataSourceInstanceId", GoMethod: "ResetDeviceDataSourceInstanceId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetGraphId", GoMethod: "ResetGraphId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetGraphName", GoMethod: "ResetGraphName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWebsiteId", GoMethod: "ResetWebsiteId"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "websiteId", GoGetter: "WebsiteId"},
+			_jsii_.MemberProperty{JsiiProperty: "websiteIdInput", GoGetter: "WebsiteIdInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveCountMetricsTotalLogicMonitorOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalNewrelic",
 		reflect.TypeOf((*SloObjectiveCountMetricsTotalNewrelic)(nil)).Elem(),
 	)
@@ -5965,6 +9025,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "grafanaLokiInput", GoGetter: "GrafanaLokiInput"},
 			_jsii_.MemberProperty{JsiiProperty: "graphite", GoGetter: "Graphite"},
 			_jsii_.MemberProperty{JsiiProperty: "graphiteInput", GoGetter: "GraphiteInput"},
+			_jsii_.MemberProperty{JsiiProperty: "honeycomb", GoGetter: "Honeycomb"},
+			_jsii_.MemberProperty{JsiiProperty: "honeycombInput", GoGetter: "HoneycombInput"},
 			_jsii_.MemberProperty{JsiiProperty: "influxdb", GoGetter: "Influxdb"},
 			_jsii_.MemberProperty{JsiiProperty: "influxdbInput", GoGetter: "InfluxdbInput"},
 			_jsii_.MemberProperty{JsiiProperty: "instana", GoGetter: "Instana"},
@@ -5974,6 +9036,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lightstep", GoGetter: "Lightstep"},
 			_jsii_.MemberProperty{JsiiProperty: "lightstepInput", GoGetter: "LightstepInput"},
+			_jsii_.MemberProperty{JsiiProperty: "logicMonitor", GoGetter: "LogicMonitor"},
+			_jsii_.MemberProperty{JsiiProperty: "logicMonitorInput", GoGetter: "LogicMonitorInput"},
 			_jsii_.MemberProperty{JsiiProperty: "newrelic", GoGetter: "Newrelic"},
 			_jsii_.MemberProperty{JsiiProperty: "newrelicInput", GoGetter: "NewrelicInput"},
 			_jsii_.MemberProperty{JsiiProperty: "opentsdb", GoGetter: "Opentsdb"},
@@ -5993,9 +9057,11 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putGcm", GoMethod: "PutGcm"},
 			_jsii_.MemberMethod{JsiiMethod: "putGrafanaLoki", GoMethod: "PutGrafanaLoki"},
 			_jsii_.MemberMethod{JsiiMethod: "putGraphite", GoMethod: "PutGraphite"},
+			_jsii_.MemberMethod{JsiiMethod: "putHoneycomb", GoMethod: "PutHoneycomb"},
 			_jsii_.MemberMethod{JsiiMethod: "putInfluxdb", GoMethod: "PutInfluxdb"},
 			_jsii_.MemberMethod{JsiiMethod: "putInstana", GoMethod: "PutInstana"},
 			_jsii_.MemberMethod{JsiiMethod: "putLightstep", GoMethod: "PutLightstep"},
+			_jsii_.MemberMethod{JsiiMethod: "putLogicMonitor", GoMethod: "PutLogicMonitor"},
 			_jsii_.MemberMethod{JsiiMethod: "putNewrelic", GoMethod: "PutNewrelic"},
 			_jsii_.MemberMethod{JsiiMethod: "putOpentsdb", GoMethod: "PutOpentsdb"},
 			_jsii_.MemberMethod{JsiiMethod: "putPingdom", GoMethod: "PutPingdom"},
@@ -6018,9 +9084,11 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetGcm", GoMethod: "ResetGcm"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGrafanaLoki", GoMethod: "ResetGrafanaLoki"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGraphite", GoMethod: "ResetGraphite"},
+			_jsii_.MemberMethod{JsiiMethod: "resetHoneycomb", GoMethod: "ResetHoneycomb"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInfluxdb", GoMethod: "ResetInfluxdb"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInstana", GoMethod: "ResetInstana"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLightstep", GoMethod: "ResetLightstep"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLogicMonitor", GoMethod: "ResetLogicMonitor"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNewrelic", GoMethod: "ResetNewrelic"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOpentsdb", GoMethod: "ResetOpentsdb"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPingdom", GoMethod: "ResetPingdom"},
@@ -6476,11 +9544,14 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTestType", GoMethod: "ResetTestType"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberProperty{JsiiProperty: "testId", GoGetter: "TestId"},
 			_jsii_.MemberProperty{JsiiProperty: "testIdInput", GoGetter: "TestIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "testType", GoGetter: "TestType"},
+			_jsii_.MemberProperty{JsiiProperty: "testTypeInput", GoGetter: "TestTypeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
@@ -6517,6 +9588,8 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberProperty{JsiiProperty: "composite", GoGetter: "Composite"},
+			_jsii_.MemberProperty{JsiiProperty: "compositeInput", GoGetter: "CompositeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "countMetrics", GoGetter: "CountMetrics"},
 			_jsii_.MemberProperty{JsiiProperty: "countMetricsInput", GoGetter: "CountMetricsInput"},
@@ -6540,15 +9613,22 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "op", GoGetter: "Op"},
 			_jsii_.MemberProperty{JsiiProperty: "opInput", GoGetter: "OpInput"},
+			_jsii_.MemberProperty{JsiiProperty: "primary", GoGetter: "Primary"},
+			_jsii_.MemberProperty{JsiiProperty: "primaryInput", GoGetter: "PrimaryInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putComposite", GoMethod: "PutComposite"},
 			_jsii_.MemberMethod{JsiiMethod: "putCountMetrics", GoMethod: "PutCountMetrics"},
 			_jsii_.MemberMethod{JsiiMethod: "putRawMetric", GoMethod: "PutRawMetric"},
 			_jsii_.MemberProperty{JsiiProperty: "rawMetric", GoGetter: "RawMetric"},
 			_jsii_.MemberProperty{JsiiProperty: "rawMetricInput", GoGetter: "RawMetricInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetComposite", GoMethod: "ResetComposite"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCountMetrics", GoMethod: "ResetCountMetrics"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDisplayName", GoMethod: "ResetDisplayName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetName", GoMethod: "ResetName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOp", GoMethod: "ResetOp"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPrimary", GoMethod: "ResetPrimary"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRawMetric", GoMethod: "ResetRawMetric"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeSliceTarget", GoMethod: "ResetTimeSliceTarget"},
+			_jsii_.MemberMethod{JsiiMethod: "resetValue", GoMethod: "ResetValue"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "target", GoGetter: "Target"},
 			_jsii_.MemberProperty{JsiiProperty: "targetInput", GoGetter: "TargetInput"},
@@ -6851,6 +9931,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "dataType", GoGetter: "DataType"},
+			_jsii_.MemberProperty{JsiiProperty: "dataTypeInput", GoGetter: "DataTypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "dimensions", GoGetter: "Dimensions"},
 			_jsii_.MemberProperty{JsiiProperty: "dimensionsInput", GoGetter: "DimensionsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -6866,22 +9948,96 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "kqlQuery", GoGetter: "KqlQuery"},
+			_jsii_.MemberProperty{JsiiProperty: "kqlQueryInput", GoGetter: "KqlQueryInput"},
 			_jsii_.MemberProperty{JsiiProperty: "metricName", GoGetter: "MetricName"},
 			_jsii_.MemberProperty{JsiiProperty: "metricNameInput", GoGetter: "MetricNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "metricNamespace", GoGetter: "MetricNamespace"},
 			_jsii_.MemberProperty{JsiiProperty: "metricNamespaceInput", GoGetter: "MetricNamespaceInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putDimensions", GoMethod: "PutDimensions"},
+			_jsii_.MemberMethod{JsiiMethod: "putWorkspace", GoMethod: "PutWorkspace"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAggregation", GoMethod: "ResetAggregation"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDimensions", GoMethod: "ResetDimensions"},
+			_jsii_.MemberMethod{JsiiMethod: "resetKqlQuery", GoMethod: "ResetKqlQuery"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMetricName", GoMethod: "ResetMetricName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMetricNamespace", GoMethod: "ResetMetricNamespace"},
+			_jsii_.MemberMethod{JsiiMethod: "resetResourceId", GoMethod: "ResetResourceId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWorkspace", GoMethod: "ResetWorkspace"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "resourceId", GoGetter: "ResourceId"},
 			_jsii_.MemberProperty{JsiiProperty: "resourceIdInput", GoGetter: "ResourceIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "workspace", GoGetter: "Workspace"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceInput", GoGetter: "WorkspaceInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_SloObjectiveRawMetricQueryAzureMonitorOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryAzureMonitorWorkspace",
+		reflect.TypeOf((*SloObjectiveRawMetricQueryAzureMonitorWorkspace)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryAzureMonitorWorkspaceList",
+		reflect.TypeOf((*SloObjectiveRawMetricQueryAzureMonitorWorkspaceList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveRawMetricQueryAzureMonitorWorkspaceList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryAzureMonitorWorkspaceOutputReference",
+		reflect.TypeOf((*SloObjectiveRawMetricQueryAzureMonitorWorkspaceOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "resourceGroup", GoGetter: "ResourceGroup"},
+			_jsii_.MemberProperty{JsiiProperty: "resourceGroupInput", GoGetter: "ResourceGroupInput"},
+			_jsii_.MemberProperty{JsiiProperty: "subscriptionId", GoGetter: "SubscriptionId"},
+			_jsii_.MemberProperty{JsiiProperty: "subscriptionIdInput", GoGetter: "SubscriptionIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceId", GoGetter: "WorkspaceId"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceIdInput", GoGetter: "WorkspaceIdInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveRawMetricQueryAzureMonitorWorkspaceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -7325,8 +10481,12 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "projectId", GoGetter: "ProjectId"},
 			_jsii_.MemberProperty{JsiiProperty: "projectIdInput", GoGetter: "ProjectIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "promql", GoGetter: "Promql"},
+			_jsii_.MemberProperty{JsiiProperty: "promqlInput", GoGetter: "PromqlInput"},
 			_jsii_.MemberProperty{JsiiProperty: "query", GoGetter: "Query"},
 			_jsii_.MemberProperty{JsiiProperty: "queryInput", GoGetter: "QueryInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPromql", GoMethod: "ResetPromql"},
+			_jsii_.MemberMethod{JsiiMethod: "resetQuery", GoMethod: "ResetQuery"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
@@ -7454,6 +10614,69 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SloObjectiveRawMetricQueryGraphiteOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryHoneycomb",
+		reflect.TypeOf((*SloObjectiveRawMetricQueryHoneycomb)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryHoneycombList",
+		reflect.TypeOf((*SloObjectiveRawMetricQueryHoneycombList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveRawMetricQueryHoneycombList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryHoneycombOutputReference",
+		reflect.TypeOf((*SloObjectiveRawMetricQueryHoneycombOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "attribute", GoGetter: "Attribute"},
+			_jsii_.MemberProperty{JsiiProperty: "attributeInput", GoGetter: "AttributeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "calculation", GoGetter: "Calculation"},
+			_jsii_.MemberProperty{JsiiProperty: "calculationInput", GoGetter: "CalculationInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAttribute", GoMethod: "ResetAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveRawMetricQueryHoneycombOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -7886,6 +11109,83 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryLogicMonitor",
+		reflect.TypeOf((*SloObjectiveRawMetricQueryLogicMonitor)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryLogicMonitorList",
+		reflect.TypeOf((*SloObjectiveRawMetricQueryLogicMonitorList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveRawMetricQueryLogicMonitorList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryLogicMonitorOutputReference",
+		reflect.TypeOf((*SloObjectiveRawMetricQueryLogicMonitorOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "checkpointId", GoGetter: "CheckpointId"},
+			_jsii_.MemberProperty{JsiiProperty: "checkpointIdInput", GoGetter: "CheckpointIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "deviceDataSourceInstanceId", GoGetter: "DeviceDataSourceInstanceId"},
+			_jsii_.MemberProperty{JsiiProperty: "deviceDataSourceInstanceIdInput", GoGetter: "DeviceDataSourceInstanceIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "graphId", GoGetter: "GraphId"},
+			_jsii_.MemberProperty{JsiiProperty: "graphIdInput", GoGetter: "GraphIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "graphName", GoGetter: "GraphName"},
+			_jsii_.MemberProperty{JsiiProperty: "graphNameInput", GoGetter: "GraphNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "line", GoGetter: "Line"},
+			_jsii_.MemberProperty{JsiiProperty: "lineInput", GoGetter: "LineInput"},
+			_jsii_.MemberProperty{JsiiProperty: "queryType", GoGetter: "QueryType"},
+			_jsii_.MemberProperty{JsiiProperty: "queryTypeInput", GoGetter: "QueryTypeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCheckpointId", GoMethod: "ResetCheckpointId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDeviceDataSourceInstanceId", GoMethod: "ResetDeviceDataSourceInstanceId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetGraphId", GoMethod: "ResetGraphId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetGraphName", GoMethod: "ResetGraphName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWebsiteId", GoMethod: "ResetWebsiteId"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "websiteId", GoGetter: "WebsiteId"},
+			_jsii_.MemberProperty{JsiiProperty: "websiteIdInput", GoGetter: "WebsiteIdInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SloObjectiveRawMetricQueryLogicMonitorOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryNewrelic",
 		reflect.TypeOf((*SloObjectiveRawMetricQueryNewrelic)(nil)).Elem(),
 	)
@@ -8045,6 +11345,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "grafanaLokiInput", GoGetter: "GrafanaLokiInput"},
 			_jsii_.MemberProperty{JsiiProperty: "graphite", GoGetter: "Graphite"},
 			_jsii_.MemberProperty{JsiiProperty: "graphiteInput", GoGetter: "GraphiteInput"},
+			_jsii_.MemberProperty{JsiiProperty: "honeycomb", GoGetter: "Honeycomb"},
+			_jsii_.MemberProperty{JsiiProperty: "honeycombInput", GoGetter: "HoneycombInput"},
 			_jsii_.MemberProperty{JsiiProperty: "influxdb", GoGetter: "Influxdb"},
 			_jsii_.MemberProperty{JsiiProperty: "influxdbInput", GoGetter: "InfluxdbInput"},
 			_jsii_.MemberProperty{JsiiProperty: "instana", GoGetter: "Instana"},
@@ -8054,6 +11356,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lightstep", GoGetter: "Lightstep"},
 			_jsii_.MemberProperty{JsiiProperty: "lightstepInput", GoGetter: "LightstepInput"},
+			_jsii_.MemberProperty{JsiiProperty: "logicMonitor", GoGetter: "LogicMonitor"},
+			_jsii_.MemberProperty{JsiiProperty: "logicMonitorInput", GoGetter: "LogicMonitorInput"},
 			_jsii_.MemberProperty{JsiiProperty: "newrelic", GoGetter: "Newrelic"},
 			_jsii_.MemberProperty{JsiiProperty: "newrelicInput", GoGetter: "NewrelicInput"},
 			_jsii_.MemberProperty{JsiiProperty: "opentsdb", GoGetter: "Opentsdb"},
@@ -8073,9 +11377,11 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putGcm", GoMethod: "PutGcm"},
 			_jsii_.MemberMethod{JsiiMethod: "putGrafanaLoki", GoMethod: "PutGrafanaLoki"},
 			_jsii_.MemberMethod{JsiiMethod: "putGraphite", GoMethod: "PutGraphite"},
+			_jsii_.MemberMethod{JsiiMethod: "putHoneycomb", GoMethod: "PutHoneycomb"},
 			_jsii_.MemberMethod{JsiiMethod: "putInfluxdb", GoMethod: "PutInfluxdb"},
 			_jsii_.MemberMethod{JsiiMethod: "putInstana", GoMethod: "PutInstana"},
 			_jsii_.MemberMethod{JsiiMethod: "putLightstep", GoMethod: "PutLightstep"},
+			_jsii_.MemberMethod{JsiiMethod: "putLogicMonitor", GoMethod: "PutLogicMonitor"},
 			_jsii_.MemberMethod{JsiiMethod: "putNewrelic", GoMethod: "PutNewrelic"},
 			_jsii_.MemberMethod{JsiiMethod: "putOpentsdb", GoMethod: "PutOpentsdb"},
 			_jsii_.MemberMethod{JsiiMethod: "putPingdom", GoMethod: "PutPingdom"},
@@ -8098,9 +11404,11 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetGcm", GoMethod: "ResetGcm"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGrafanaLoki", GoMethod: "ResetGrafanaLoki"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGraphite", GoMethod: "ResetGraphite"},
+			_jsii_.MemberMethod{JsiiMethod: "resetHoneycomb", GoMethod: "ResetHoneycomb"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInfluxdb", GoMethod: "ResetInfluxdb"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInstana", GoMethod: "ResetInstana"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLightstep", GoMethod: "ResetLightstep"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLogicMonitor", GoMethod: "ResetLogicMonitor"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNewrelic", GoMethod: "ResetNewrelic"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOpentsdb", GoMethod: "ResetOpentsdb"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPingdom", GoMethod: "ResetPingdom"},
@@ -8556,11 +11864,14 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTestType", GoMethod: "ResetTestType"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberProperty{JsiiProperty: "testId", GoGetter: "TestId"},
 			_jsii_.MemberProperty{JsiiProperty: "testIdInput", GoGetter: "TestIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "testType", GoGetter: "TestType"},
+			_jsii_.MemberProperty{JsiiProperty: "testTypeInput", GoGetter: "TestTypeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {

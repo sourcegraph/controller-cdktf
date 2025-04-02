@@ -28,12 +28,18 @@ type SloObjectiveRawMetricQueryAzureMonitorOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DataType() *string
+	SetDataType(val *string)
+	DataTypeInput() *string
 	Dimensions() SloObjectiveRawMetricQueryAzureMonitorDimensionsList
 	DimensionsInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	KqlQuery() *string
+	SetKqlQuery(val *string)
+	KqlQueryInput() *string
 	MetricName() *string
 	SetMetricName(val *string)
 	MetricNameInput() *string
@@ -51,6 +57,8 @@ type SloObjectiveRawMetricQueryAzureMonitorOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Workspace() SloObjectiveRawMetricQueryAzureMonitorWorkspaceList
+	WorkspaceInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -76,8 +84,14 @@ type SloObjectiveRawMetricQueryAzureMonitorOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutDimensions(value interface{})
+	PutWorkspace(value interface{})
+	ResetAggregation()
 	ResetDimensions()
+	ResetKqlQuery()
+	ResetMetricName()
 	ResetMetricNamespace()
+	ResetResourceId()
+	ResetWorkspace()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -143,6 +157,26 @@ func (j *jsiiProxy_SloObjectiveRawMetricQueryAzureMonitorOutputReference) Creati
 	return returns
 }
 
+func (j *jsiiProxy_SloObjectiveRawMetricQueryAzureMonitorOutputReference) DataType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SloObjectiveRawMetricQueryAzureMonitorOutputReference) DataTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SloObjectiveRawMetricQueryAzureMonitorOutputReference) Dimensions() SloObjectiveRawMetricQueryAzureMonitorDimensionsList {
 	var returns SloObjectiveRawMetricQueryAzureMonitorDimensionsList
 	_jsii_.Get(
@@ -178,6 +212,26 @@ func (j *jsiiProxy_SloObjectiveRawMetricQueryAzureMonitorOutputReference) Intern
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SloObjectiveRawMetricQueryAzureMonitorOutputReference) KqlQuery() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kqlQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SloObjectiveRawMetricQueryAzureMonitorOutputReference) KqlQueryInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kqlQueryInput",
 		&returns,
 	)
 	return returns
@@ -263,6 +317,26 @@ func (j *jsiiProxy_SloObjectiveRawMetricQueryAzureMonitorOutputReference) Terraf
 	return returns
 }
 
+func (j *jsiiProxy_SloObjectiveRawMetricQueryAzureMonitorOutputReference) Workspace() SloObjectiveRawMetricQueryAzureMonitorWorkspaceList {
+	var returns SloObjectiveRawMetricQueryAzureMonitorWorkspaceList
+	_jsii_.Get(
+		j,
+		"workspace",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SloObjectiveRawMetricQueryAzureMonitorOutputReference) WorkspaceInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"workspaceInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewSloObjectiveRawMetricQueryAzureMonitorOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SloObjectiveRawMetricQueryAzureMonitorOutputReference {
 	_init_.Initialize()
@@ -324,6 +398,17 @@ func (j *jsiiProxy_SloObjectiveRawMetricQueryAzureMonitorOutputReference)SetComp
 	)
 }
 
+func (j *jsiiProxy_SloObjectiveRawMetricQueryAzureMonitorOutputReference)SetDataType(val *string) {
+	if err := j.validateSetDataTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dataType",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SloObjectiveRawMetricQueryAzureMonitorOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -331,6 +416,17 @@ func (j *jsiiProxy_SloObjectiveRawMetricQueryAzureMonitorOutputReference)SetInte
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SloObjectiveRawMetricQueryAzureMonitorOutputReference)SetKqlQuery(val *string) {
+	if err := j.validateSetKqlQueryParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kqlQuery",
 		val,
 	)
 }
@@ -587,6 +683,25 @@ func (s *jsiiProxy_SloObjectiveRawMetricQueryAzureMonitorOutputReference) PutDim
 	)
 }
 
+func (s *jsiiProxy_SloObjectiveRawMetricQueryAzureMonitorOutputReference) PutWorkspace(value interface{}) {
+	if err := s.validatePutWorkspaceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putWorkspace",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SloObjectiveRawMetricQueryAzureMonitorOutputReference) ResetAggregation() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAggregation",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SloObjectiveRawMetricQueryAzureMonitorOutputReference) ResetDimensions() {
 	_jsii_.InvokeVoid(
 		s,
@@ -595,10 +710,42 @@ func (s *jsiiProxy_SloObjectiveRawMetricQueryAzureMonitorOutputReference) ResetD
 	)
 }
 
+func (s *jsiiProxy_SloObjectiveRawMetricQueryAzureMonitorOutputReference) ResetKqlQuery() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetKqlQuery",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SloObjectiveRawMetricQueryAzureMonitorOutputReference) ResetMetricName() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetMetricName",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SloObjectiveRawMetricQueryAzureMonitorOutputReference) ResetMetricNamespace() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetMetricNamespace",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SloObjectiveRawMetricQueryAzureMonitorOutputReference) ResetResourceId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetResourceId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SloObjectiveRawMetricQueryAzureMonitorOutputReference) ResetWorkspace() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetWorkspace",
 		nil, // no parameters
 	)
 }

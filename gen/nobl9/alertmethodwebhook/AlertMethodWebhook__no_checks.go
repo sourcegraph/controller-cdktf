@@ -104,6 +104,10 @@ func (j *jsiiProxy_AlertMethodWebhook) validateSetDisplayNameParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_AlertMethodWebhook) validateSetHeadersParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AlertMethodWebhook) validateSetIdParameters(val *string) error {
 	return nil
 }
@@ -121,6 +125,10 @@ func (j *jsiiProxy_AlertMethodWebhook) validateSetProjectParameters(val *string)
 }
 
 func (j *jsiiProxy_AlertMethodWebhook) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_AlertMethodWebhook) validateSetSensitiveHeadersParameters(val *map[string]*string) error {
 	return nil
 }
 

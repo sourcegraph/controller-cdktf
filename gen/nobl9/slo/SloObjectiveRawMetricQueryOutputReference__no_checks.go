@@ -88,6 +88,10 @@ func (s *jsiiProxy_SloObjectiveRawMetricQueryOutputReference) validatePutGraphit
 	return nil
 }
 
+func (s *jsiiProxy_SloObjectiveRawMetricQueryOutputReference) validatePutHoneycombParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SloObjectiveRawMetricQueryOutputReference) validatePutInfluxdbParameters(value interface{}) error {
 	return nil
 }
@@ -97,6 +101,10 @@ func (s *jsiiProxy_SloObjectiveRawMetricQueryOutputReference) validatePutInstana
 }
 
 func (s *jsiiProxy_SloObjectiveRawMetricQueryOutputReference) validatePutLightstepParameters(value interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SloObjectiveRawMetricQueryOutputReference) validatePutLogicMonitorParameters(value interface{}) error {
 	return nil
 }
 

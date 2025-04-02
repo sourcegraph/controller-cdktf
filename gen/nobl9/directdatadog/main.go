@@ -76,6 +76,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetQueryDelay", GoMethod: "ResetQueryDelay"},
 			_jsii_.MemberMethod{JsiiMethod: "resetReleaseChannel", GoMethod: "ResetReleaseChannel"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSourceOf", GoMethod: "ResetSourceOf"},
 			_jsii_.MemberProperty{JsiiProperty: "site", GoGetter: "Site"},
 			_jsii_.MemberProperty{JsiiProperty: "siteInput", GoGetter: "SiteInput"},
 			_jsii_.MemberProperty{JsiiProperty: "sourceOf", GoGetter: "SourceOf"},

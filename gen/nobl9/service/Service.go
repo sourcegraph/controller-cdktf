@@ -9,9 +9,12 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/nobl9/service/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/service nobl9_service}.
+// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/service nobl9_service}.
 type Service interface {
 	cdktf.TerraformResource
+	Annotations() *map[string]*string
+	SetAnnotations(val *map[string]*string)
+	AnnotationsInput() *map[string]*string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -42,9 +45,6 @@ type Service interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	Label() ServiceLabelList
 	LabelInput() interface{}
 	// Experimental.
@@ -69,7 +69,8 @@ type Service interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
-	Status() cdktf.NumberMap
+	Status() ServiceStatusOutputReference
+	StatusInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -120,13 +121,15 @@ type Service interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutLabel(value interface{})
+	PutStatus(value *ServiceStatus)
+	ResetAnnotations()
 	ResetDescription()
 	ResetDisplayName()
-	ResetId()
 	ResetLabel()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetStatus()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -143,6 +146,26 @@ type Service interface {
 // The jsii proxy struct for Service
 type jsiiProxy_Service struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_Service) Annotations() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"annotations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Service) AnnotationsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"annotationsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_Service) CdktfStack() cdktf.TerraformStack {
@@ -265,26 +288,6 @@ func (j *jsiiProxy_Service) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Service) Id() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Service) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_Service) Label() ServiceLabelList {
 	var returns ServiceLabelList
 	_jsii_.Get(
@@ -395,11 +398,21 @@ func (j *jsiiProxy_Service) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Service) Status() cdktf.NumberMap {
-	var returns cdktf.NumberMap
+func (j *jsiiProxy_Service) Status() ServiceStatusOutputReference {
+	var returns ServiceStatusOutputReference
 	_jsii_.Get(
 		j,
 		"status",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Service) StatusInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"statusInput",
 		&returns,
 	)
 	return returns
@@ -436,7 +449,7 @@ func (j *jsiiProxy_Service) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/service nobl9_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/service nobl9_service} Resource.
 func NewService(scope constructs.Construct, id *string, config *ServiceConfig) Service {
 	_init_.Initialize()
 
@@ -454,7 +467,7 @@ func NewService(scope constructs.Construct, id *string, config *ServiceConfig) S
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/service nobl9_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/service nobl9_service} Resource.
 func NewService_Override(s Service, scope constructs.Construct, id *string, config *ServiceConfig) {
 	_init_.Initialize()
 
@@ -462,6 +475,17 @@ func NewService_Override(s Service, scope constructs.Construct, id *string, conf
 		"@cdktf/provider-nobl9.service.Service",
 		[]interface{}{scope, id, config},
 		s,
+	)
+}
+
+func (j *jsiiProxy_Service)SetAnnotations(val *map[string]*string) {
+	if err := j.validateSetAnnotationsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"annotations",
+		val,
 	)
 }
 
@@ -521,17 +545,6 @@ func (j *jsiiProxy_Service)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Service)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -952,6 +965,25 @@ func (s *jsiiProxy_Service) PutLabel(value interface{}) {
 	)
 }
 
+func (s *jsiiProxy_Service) PutStatus(value *ServiceStatus) {
+	if err := s.validatePutStatusParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putStatus",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_Service) ResetAnnotations() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAnnotations",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_Service) ResetDescription() {
 	_jsii_.InvokeVoid(
 		s,
@@ -968,14 +1000,6 @@ func (s *jsiiProxy_Service) ResetDisplayName() {
 	)
 }
 
-func (s *jsiiProxy_Service) ResetId() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetId",
-		nil, // no parameters
-	)
-}
-
 func (s *jsiiProxy_Service) ResetLabel() {
 	_jsii_.InvokeVoid(
 		s,
@@ -988,6 +1012,14 @@ func (s *jsiiProxy_Service) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_Service) ResetStatus() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetStatus",
 		nil, // no parameters
 	)
 }

@@ -21,58 +21,64 @@ type DirectLightstepConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Organization name registered in Lightstep.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_lightstep#lightstep_organization DirectLightstep#lightstep_organization}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_lightstep#lightstep_organization DirectLightstep#lightstep_organization}
 	LightstepOrganization *string `field:"required" json:"lightstepOrganization" yaml:"lightstepOrganization"`
 	// Name of the Lightstep project.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_lightstep#lightstep_project DirectLightstep#lightstep_project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_lightstep#lightstep_project DirectLightstep#lightstep_project}
 	LightstepProject *string `field:"required" json:"lightstepProject" yaml:"lightstepProject"`
 	// Unique name of the resource, must conform to the naming convention from [DNS RFC1123](https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_lightstep#name DirectLightstep#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_lightstep#name DirectLightstep#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Name of the Nobl9 project the resource sits in, must conform to the naming convention from [DNS RFC1123](https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_lightstep#project DirectLightstep#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_lightstep#project DirectLightstep#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
-	// Source of Metrics and/or Services.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_lightstep#source_of DirectLightstep#source_of}
-	SourceOf *[]*string `field:"required" json:"sourceOf" yaml:"sourceOf"`
 	// [required] | Lightstep App Token.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_lightstep#app_token DirectLightstep#app_token}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_lightstep#app_token DirectLightstep#app_token}
 	AppToken *string `field:"optional" json:"appToken" yaml:"appToken"`
 	// Optional description of the resource.
 	//
 	// Here, you can add details about who is responsible for the integration (team/owner) or the purpose of creating it.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_lightstep#description DirectLightstep#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_lightstep#description DirectLightstep#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// User-friendly display name of the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_lightstep#display_name DirectLightstep#display_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_lightstep#display_name DirectLightstep#display_name}
 	DisplayName *string `field:"optional" json:"displayName" yaml:"displayName"`
 	// historical_data_retrieval block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_lightstep#historical_data_retrieval DirectLightstep#historical_data_retrieval}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_lightstep#historical_data_retrieval DirectLightstep#historical_data_retrieval}
 	HistoricalDataRetrieval *DirectLightstepHistoricalDataRetrieval `field:"optional" json:"historicalDataRetrieval" yaml:"historicalDataRetrieval"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_lightstep#id DirectLightstep#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_lightstep#id DirectLightstep#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// [Logs documentation](https://docs.nobl9.com/Features/SLO_troubleshooting/event-logs).
+	// [Logs documentation](https://docs.nobl9.com/features/slo-troubleshooting/event-logs).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_lightstep#log_collection_enabled DirectLightstep#log_collection_enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_lightstep#log_collection_enabled DirectLightstep#log_collection_enabled}
 	LogCollectionEnabled interface{} `field:"optional" json:"logCollectionEnabled" yaml:"logCollectionEnabled"`
 	// query_delay block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_lightstep#query_delay DirectLightstep#query_delay}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_lightstep#query_delay DirectLightstep#query_delay}
 	QueryDelay *DirectLightstepQueryDelay `field:"optional" json:"queryDelay" yaml:"queryDelay"`
-	// Release channel of the created datasource [stable/beta].
+	// Release channel of the created data source [stable/beta].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_lightstep#release_channel DirectLightstep#release_channel}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_lightstep#release_channel DirectLightstep#release_channel}
 	ReleaseChannel *string `field:"optional" json:"releaseChannel" yaml:"releaseChannel"`
+	// This value indicated whether the field was a source of metrics and/or services.
+	//
+	// 'source_of' is deprecated and not used anywhere; however, it's kept for backward compatibility.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_lightstep#source_of DirectLightstep#source_of}
+	SourceOf *[]*string `field:"optional" json:"sourceOf" yaml:"sourceOf"`
+	// Lightstep API URL. Nobl9 will use https://api.lightstep.com if empty.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_lightstep#url DirectLightstep#url}
+	Url *string `field:"optional" json:"url" yaml:"url"`
 }
 

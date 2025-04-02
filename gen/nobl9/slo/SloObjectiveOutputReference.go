@@ -20,6 +20,8 @@ type SloObjectiveOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	Composite() SloObjectiveCompositeOutputReference
+	CompositeInput() *SloObjectiveComposite
 	CountMetrics() SloObjectiveCountMetricsList
 	CountMetricsInput() interface{}
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
@@ -40,6 +42,9 @@ type SloObjectiveOutputReference interface {
 	Op() *string
 	SetOp(val *string)
 	OpInput() *string
+	Primary() interface{}
+	SetPrimary(val interface{})
+	PrimaryInput() interface{}
 	RawMetric() SloObjectiveRawMetricList
 	RawMetricInput() interface{}
 	Target() *float64
@@ -83,13 +88,18 @@ type SloObjectiveOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutComposite(value *SloObjectiveComposite)
 	PutCountMetrics(value interface{})
 	PutRawMetric(value interface{})
+	ResetComposite()
 	ResetCountMetrics()
+	ResetDisplayName()
 	ResetName()
 	ResetOp()
+	ResetPrimary()
 	ResetRawMetric()
 	ResetTimeSliceTarget()
+	ResetValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -120,6 +130,26 @@ func (j *jsiiProxy_SloObjectiveOutputReference) ComplexObjectIsFromSet() *bool {
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SloObjectiveOutputReference) Composite() SloObjectiveCompositeOutputReference {
+	var returns SloObjectiveCompositeOutputReference
+	_jsii_.Get(
+		j,
+		"composite",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SloObjectiveOutputReference) CompositeInput() *SloObjectiveComposite {
+	var returns *SloObjectiveComposite
+	_jsii_.Get(
+		j,
+		"compositeInput",
 		&returns,
 	)
 	return returns
@@ -230,6 +260,26 @@ func (j *jsiiProxy_SloObjectiveOutputReference) OpInput() *string {
 	_jsii_.Get(
 		j,
 		"opInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SloObjectiveOutputReference) Primary() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"primary",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SloObjectiveOutputReference) PrimaryInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"primaryInput",
 		&returns,
 	)
 	return returns
@@ -425,6 +475,17 @@ func (j *jsiiProxy_SloObjectiveOutputReference)SetOp(val *string) {
 	_jsii_.Set(
 		j,
 		"op",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SloObjectiveOutputReference)SetPrimary(val interface{}) {
+	if err := j.validateSetPrimaryParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"primary",
 		val,
 	)
 }
@@ -670,6 +731,17 @@ func (s *jsiiProxy_SloObjectiveOutputReference) InterpolationForAttribute(proper
 	return returns
 }
 
+func (s *jsiiProxy_SloObjectiveOutputReference) PutComposite(value *SloObjectiveComposite) {
+	if err := s.validatePutCompositeParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putComposite",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SloObjectiveOutputReference) PutCountMetrics(value interface{}) {
 	if err := s.validatePutCountMetricsParameters(value); err != nil {
 		panic(err)
@@ -692,10 +764,26 @@ func (s *jsiiProxy_SloObjectiveOutputReference) PutRawMetric(value interface{}) 
 	)
 }
 
+func (s *jsiiProxy_SloObjectiveOutputReference) ResetComposite() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetComposite",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SloObjectiveOutputReference) ResetCountMetrics() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetCountMetrics",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SloObjectiveOutputReference) ResetDisplayName() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDisplayName",
 		nil, // no parameters
 	)
 }
@@ -716,6 +804,14 @@ func (s *jsiiProxy_SloObjectiveOutputReference) ResetOp() {
 	)
 }
 
+func (s *jsiiProxy_SloObjectiveOutputReference) ResetPrimary() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetPrimary",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SloObjectiveOutputReference) ResetRawMetric() {
 	_jsii_.InvokeVoid(
 		s,
@@ -728,6 +824,14 @@ func (s *jsiiProxy_SloObjectiveOutputReference) ResetTimeSliceTarget() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetTimeSliceTarget",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SloObjectiveOutputReference) ResetValue() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetValue",
 		nil, // no parameters
 	)
 }

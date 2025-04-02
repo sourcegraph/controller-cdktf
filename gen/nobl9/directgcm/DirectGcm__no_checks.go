@@ -72,6 +72,10 @@ func (d *jsiiProxy_DirectGcm) validateOverrideLogicalIdParameters(newLogicalId *
 	return nil
 }
 
+func (d *jsiiProxy_DirectGcm) validatePutHistoricalDataRetrievalParameters(value *DirectGcmHistoricalDataRetrieval) error {
+	return nil
+}
+
 func (d *jsiiProxy_DirectGcm) validatePutQueryDelayParameters(value *DirectGcmQueryDelay) error {
 	return nil
 }

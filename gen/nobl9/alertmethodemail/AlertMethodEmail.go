@@ -9,15 +9,12 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/nobl9/alertmethodemail/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/alert_method_email nobl9_alert_method_email}.
+// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/alert_method_email nobl9_alert_method_email}.
 type AlertMethodEmail interface {
 	cdktf.TerraformResource
 	Bcc() *[]*string
 	SetBcc(val *[]*string)
 	BccInput() *[]*string
-	Body() *string
-	SetBody(val *string)
-	BodyInput() *string
 	Cc() *[]*string
 	SetCc(val *[]*string)
 	CcInput() *[]*string
@@ -76,9 +73,6 @@ type AlertMethodEmail interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
-	Subject() *string
-	SetSubject(val *string)
-	SubjectInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -132,7 +126,6 @@ type AlertMethodEmail interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetBcc()
-	ResetBody()
 	ResetCc()
 	ResetDescription()
 	ResetDisplayName()
@@ -140,7 +133,6 @@ type AlertMethodEmail interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetSubject()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -174,26 +166,6 @@ func (j *jsiiProxy_AlertMethodEmail) BccInput() *[]*string {
 	_jsii_.Get(
 		j,
 		"bccInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AlertMethodEmail) Body() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"body",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AlertMethodEmail) BodyInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"bodyInput",
 		&returns,
 	)
 	return returns
@@ -449,26 +421,6 @@ func (j *jsiiProxy_AlertMethodEmail) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AlertMethodEmail) Subject() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"subject",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AlertMethodEmail) SubjectInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"subjectInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_AlertMethodEmail) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -520,7 +472,7 @@ func (j *jsiiProxy_AlertMethodEmail) ToInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/alert_method_email nobl9_alert_method_email} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/alert_method_email nobl9_alert_method_email} Resource.
 func NewAlertMethodEmail(scope constructs.Construct, id *string, config *AlertMethodEmailConfig) AlertMethodEmail {
 	_init_.Initialize()
 
@@ -538,7 +490,7 @@ func NewAlertMethodEmail(scope constructs.Construct, id *string, config *AlertMe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/alert_method_email nobl9_alert_method_email} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/alert_method_email nobl9_alert_method_email} Resource.
 func NewAlertMethodEmail_Override(a AlertMethodEmail, scope constructs.Construct, id *string, config *AlertMethodEmailConfig) {
 	_init_.Initialize()
 
@@ -556,17 +508,6 @@ func (j *jsiiProxy_AlertMethodEmail)SetBcc(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"bcc",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AlertMethodEmail)SetBody(val *string) {
-	if err := j.validateSetBodyParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"body",
 		val,
 	)
 }
@@ -701,17 +642,6 @@ func (j *jsiiProxy_AlertMethodEmail)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AlertMethodEmail)SetSubject(val *string) {
-	if err := j.validateSetSubjectParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"subject",
 		val,
 	)
 }
@@ -1088,14 +1018,6 @@ func (a *jsiiProxy_AlertMethodEmail) ResetBcc() {
 	)
 }
 
-func (a *jsiiProxy_AlertMethodEmail) ResetBody() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetBody",
-		nil, // no parameters
-	)
-}
-
 func (a *jsiiProxy_AlertMethodEmail) ResetCc() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1132,14 +1054,6 @@ func (a *jsiiProxy_AlertMethodEmail) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AlertMethodEmail) ResetSubject() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetSubject",
 		nil, // no parameters
 	)
 }

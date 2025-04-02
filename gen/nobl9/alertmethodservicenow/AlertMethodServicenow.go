@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/nobl9/alertmethodservicenow/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/alert_method_servicenow nobl9_alert_method_servicenow}.
+// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/alert_method_servicenow nobl9_alert_method_servicenow}.
 type AlertMethodServicenow interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -471,7 +471,7 @@ func (j *jsiiProxy_AlertMethodServicenow) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/alert_method_servicenow nobl9_alert_method_servicenow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/alert_method_servicenow nobl9_alert_method_servicenow} Resource.
 func NewAlertMethodServicenow(scope constructs.Construct, id *string, config *AlertMethodServicenowConfig) AlertMethodServicenow {
 	_init_.Initialize()
 
@@ -489,7 +489,7 @@ func NewAlertMethodServicenow(scope constructs.Construct, id *string, config *Al
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/alert_method_servicenow nobl9_alert_method_servicenow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/alert_method_servicenow nobl9_alert_method_servicenow} Resource.
 func NewAlertMethodServicenow_Override(a AlertMethodServicenow, scope constructs.Construct, id *string, config *AlertMethodServicenowConfig) {
 	_init_.Initialize()
 

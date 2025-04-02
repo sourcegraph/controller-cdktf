@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/nobl9/directthousandeyes/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_thousandeyes nobl9_direct_thousandeyes}.
+// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_thousandeyes nobl9_direct_thousandeyes}.
 type DirectThousandeyes interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -142,6 +142,7 @@ type DirectThousandeyes interface {
 	ResetOverrideLogicalId()
 	ResetQueryDelay()
 	ResetReleaseChannel()
+	ResetSourceOf()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -531,7 +532,7 @@ func (j *jsiiProxy_DirectThousandeyes) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_thousandeyes nobl9_direct_thousandeyes} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_thousandeyes nobl9_direct_thousandeyes} Resource.
 func NewDirectThousandeyes(scope constructs.Construct, id *string, config *DirectThousandeyesConfig) DirectThousandeyes {
 	_init_.Initialize()
 
@@ -549,7 +550,7 @@ func NewDirectThousandeyes(scope constructs.Construct, id *string, config *Direc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_thousandeyes nobl9_direct_thousandeyes} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_thousandeyes nobl9_direct_thousandeyes} Resource.
 func NewDirectThousandeyes_Override(d DirectThousandeyes, scope constructs.Construct, id *string, config *DirectThousandeyesConfig) {
 	_init_.Initialize()
 
@@ -1151,6 +1152,14 @@ func (d *jsiiProxy_DirectThousandeyes) ResetReleaseChannel() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetReleaseChannel",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DirectThousandeyes) ResetSourceOf() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSourceOf",
 		nil, // no parameters
 	)
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/nobl9/directappdynamics/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_appdynamics nobl9_direct_appdynamics}.
+// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_appdynamics nobl9_direct_appdynamics}.
 type DirectAppdynamics interface {
 	cdktf.TerraformResource
 	AccountName() *string
@@ -156,6 +156,7 @@ type DirectAppdynamics interface {
 	ResetOverrideLogicalId()
 	ResetQueryDelay()
 	ResetReleaseChannel()
+	ResetSourceOf()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -635,7 +636,7 @@ func (j *jsiiProxy_DirectAppdynamics) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_appdynamics nobl9_direct_appdynamics} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_appdynamics nobl9_direct_appdynamics} Resource.
 func NewDirectAppdynamics(scope constructs.Construct, id *string, config *DirectAppdynamicsConfig) DirectAppdynamics {
 	_init_.Initialize()
 
@@ -653,7 +654,7 @@ func NewDirectAppdynamics(scope constructs.Construct, id *string, config *Direct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_appdynamics nobl9_direct_appdynamics} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_appdynamics nobl9_direct_appdynamics} Resource.
 func NewDirectAppdynamics_Override(d DirectAppdynamics, scope constructs.Construct, id *string, config *DirectAppdynamicsConfig) {
 	_init_.Initialize()
 
@@ -1307,6 +1308,14 @@ func (d *jsiiProxy_DirectAppdynamics) ResetReleaseChannel() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetReleaseChannel",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DirectAppdynamics) ResetSourceOf() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSourceOf",
 		nil, // no parameters
 	)
 }

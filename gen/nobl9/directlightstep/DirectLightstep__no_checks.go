@@ -156,6 +156,10 @@ func (j *jsiiProxy_DirectLightstep) validateSetSourceOfParameters(val *[]*string
 	return nil
 }
 
+func (j *jsiiProxy_DirectLightstep) validateSetUrlParameters(val *string) error {
+	return nil
+}
+
 func validateNewDirectLightstepParameters(scope constructs.Construct, id *string, config *DirectLightstepConfig) error {
 	return nil
 }

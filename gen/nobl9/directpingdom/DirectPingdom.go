@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/nobl9/directpingdom/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_pingdom nobl9_direct_pingdom}.
+// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_pingdom nobl9_direct_pingdom}.
 type DirectPingdom interface {
 	cdktf.TerraformResource
 	ApiToken() *string
@@ -142,6 +142,7 @@ type DirectPingdom interface {
 	ResetOverrideLogicalId()
 	ResetQueryDelay()
 	ResetReleaseChannel()
+	ResetSourceOf()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -531,7 +532,7 @@ func (j *jsiiProxy_DirectPingdom) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_pingdom nobl9_direct_pingdom} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_pingdom nobl9_direct_pingdom} Resource.
 func NewDirectPingdom(scope constructs.Construct, id *string, config *DirectPingdomConfig) DirectPingdom {
 	_init_.Initialize()
 
@@ -549,7 +550,7 @@ func NewDirectPingdom(scope constructs.Construct, id *string, config *DirectPing
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_pingdom nobl9_direct_pingdom} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_pingdom nobl9_direct_pingdom} Resource.
 func NewDirectPingdom_Override(d DirectPingdom, scope constructs.Construct, id *string, config *DirectPingdomConfig) {
 	_init_.Initialize()
 
@@ -1151,6 +1152,14 @@ func (d *jsiiProxy_DirectPingdom) ResetReleaseChannel() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetReleaseChannel",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DirectPingdom) ResetSourceOf() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSourceOf",
 		nil, // no parameters
 	)
 }

@@ -420,6 +420,14 @@ func (j *jsiiProxy_Slo) validateSetAlertPoliciesParameters(val *[]*string) error
 	return nil
 }
 
+func (j *jsiiProxy_Slo) validateSetAnnotationsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Slo) validateSetBudgetingMethodParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -612,7 +620,23 @@ func (j *jsiiProxy_Slo) validateSetProvisionersParameters(val *[]interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_Slo) validateSetRetrieveHistoricalDataFromParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Slo) validateSetServiceParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_Slo) validateSetTierParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

@@ -44,6 +44,10 @@ func (s *jsiiProxy_SloObjectiveOutputReference) validateInterpolationForAttribut
 	return nil
 }
 
+func (s *jsiiProxy_SloObjectiveOutputReference) validatePutCompositeParameters(value *SloObjectiveComposite) error {
+	return nil
+}
+
 func (s *jsiiProxy_SloObjectiveOutputReference) validatePutCountMetricsParameters(value interface{}) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (j *jsiiProxy_SloObjectiveOutputReference) validateSetNameParameters(val *s
 }
 
 func (j *jsiiProxy_SloObjectiveOutputReference) validateSetOpParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SloObjectiveOutputReference) validateSetPrimaryParameters(val interface{}) error {
 	return nil
 }
 

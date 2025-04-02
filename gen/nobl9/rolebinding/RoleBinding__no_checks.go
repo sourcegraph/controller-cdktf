@@ -100,6 +100,10 @@ func (j *jsiiProxy_RoleBinding) validateSetDisplayNameParameters(val *string) er
 	return nil
 }
 
+func (j *jsiiProxy_RoleBinding) validateSetGroupRefParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RoleBinding) validateSetIdParameters(val *string) error {
 	return nil
 }

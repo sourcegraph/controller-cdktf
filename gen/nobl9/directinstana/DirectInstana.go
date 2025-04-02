@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/nobl9/directinstana/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_instana nobl9_direct_instana}.
+// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_instana nobl9_direct_instana}.
 type DirectInstana interface {
 	cdktf.TerraformResource
 	ApiToken() *string
@@ -145,6 +145,7 @@ type DirectInstana interface {
 	ResetOverrideLogicalId()
 	ResetQueryDelay()
 	ResetReleaseChannel()
+	ResetSourceOf()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -554,7 +555,7 @@ func (j *jsiiProxy_DirectInstana) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_instana nobl9_direct_instana} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_instana nobl9_direct_instana} Resource.
 func NewDirectInstana(scope constructs.Construct, id *string, config *DirectInstanaConfig) DirectInstana {
 	_init_.Initialize()
 
@@ -572,7 +573,7 @@ func NewDirectInstana(scope constructs.Construct, id *string, config *DirectInst
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_instana nobl9_direct_instana} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_instana nobl9_direct_instana} Resource.
 func NewDirectInstana_Override(d DirectInstana, scope constructs.Construct, id *string, config *DirectInstanaConfig) {
 	_init_.Initialize()
 
@@ -1185,6 +1186,14 @@ func (d *jsiiProxy_DirectInstana) ResetReleaseChannel() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetReleaseChannel",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DirectInstana) ResetSourceOf() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSourceOf",
 		nil, // no parameters
 	)
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/nobl9/directcloudwatch/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_cloudwatch nobl9_direct_cloudwatch}.
+// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_cloudwatch nobl9_direct_cloudwatch}.
 type DirectCloudwatch interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -146,6 +146,7 @@ type DirectCloudwatch interface {
 	ResetQueryDelay()
 	ResetReleaseChannel()
 	ResetRoleArn()
+	ResetSourceOf()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -555,7 +556,7 @@ func (j *jsiiProxy_DirectCloudwatch) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_cloudwatch nobl9_direct_cloudwatch} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_cloudwatch nobl9_direct_cloudwatch} Resource.
 func NewDirectCloudwatch(scope constructs.Construct, id *string, config *DirectCloudwatchConfig) DirectCloudwatch {
 	_init_.Initialize()
 
@@ -573,7 +574,7 @@ func NewDirectCloudwatch(scope constructs.Construct, id *string, config *DirectC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_cloudwatch nobl9_direct_cloudwatch} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_cloudwatch nobl9_direct_cloudwatch} Resource.
 func NewDirectCloudwatch_Override(d DirectCloudwatch, scope constructs.Construct, id *string, config *DirectCloudwatchConfig) {
 	_init_.Initialize()
 
@@ -1194,6 +1195,14 @@ func (d *jsiiProxy_DirectCloudwatch) ResetRoleArn() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetRoleArn",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DirectCloudwatch) ResetSourceOf() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSourceOf",
 		nil, // no parameters
 	)
 }

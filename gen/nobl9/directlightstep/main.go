@@ -77,6 +77,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetQueryDelay", GoMethod: "ResetQueryDelay"},
 			_jsii_.MemberMethod{JsiiMethod: "resetReleaseChannel", GoMethod: "ResetReleaseChannel"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSourceOf", GoMethod: "ResetSourceOf"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUrl", GoMethod: "ResetUrl"},
 			_jsii_.MemberProperty{JsiiProperty: "sourceOf", GoGetter: "SourceOf"},
 			_jsii_.MemberProperty{JsiiProperty: "sourceOfInput", GoGetter: "SourceOfInput"},
 			_jsii_.MemberProperty{JsiiProperty: "status", GoGetter: "Status"},
@@ -89,6 +91,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
+			_jsii_.MemberProperty{JsiiProperty: "urlInput", GoGetter: "UrlInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DirectLightstep{}

@@ -121,6 +121,37 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodAzureMonitorOutputReference) vali
 	return nil
 }
 
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodAzureMonitorOutputReference) validatePutWorkspaceParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*SloObjectiveCountMetricsGoodAzureMonitorWorkspace:
+		value := value.(*[]*SloObjectiveCountMetricsGoodAzureMonitorWorkspace)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*SloObjectiveCountMetricsGoodAzureMonitorWorkspace:
+		value_ := value.([]*SloObjectiveCountMetricsGoodAzureMonitorWorkspace)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*SloObjectiveCountMetricsGoodAzureMonitorWorkspace; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (s *jsiiProxy_SloObjectiveCountMetricsGoodAzureMonitorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
@@ -202,6 +233,14 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodAzureMonitorOutputReference) vali
 	return nil
 }
 
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodAzureMonitorOutputReference) validateSetDataTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SloObjectiveCountMetricsGoodAzureMonitorOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
@@ -221,6 +260,14 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodAzureMonitorOutputReference) vali
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *SloObjectiveCountMetricsGoodAzureMonitor; received %#v (a %T)", val, val)
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodAzureMonitorOutputReference) validateSetKqlQueryParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

@@ -72,6 +72,10 @@ func (j *jsiiProxy_SloObjectiveCountMetricsBadThousandeyesOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_SloObjectiveCountMetricsBadThousandeyesOutputReference) validateSetTestTypeParameters(val *string) error {
+	return nil
+}
+
 func validateNewSloObjectiveCountMetricsBadThousandeyesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }

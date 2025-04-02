@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/nobl9/rolebinding/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/role_binding nobl9_role_binding}.
+// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/role_binding nobl9_role_binding}.
 type RoleBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -39,6 +39,9 @@ type RoleBinding interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GroupRef() *string
+	SetGroupRef(val *string)
+	GroupRefInput() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -120,12 +123,14 @@ type RoleBinding interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetDisplayName()
+	ResetGroupRef()
 	ResetId()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProjectRef()
+	ResetUser()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -239,6 +244,26 @@ func (j *jsiiProxy_RoleBinding) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RoleBinding) GroupRef() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"groupRef",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RoleBinding) GroupRefInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"groupRefInput",
 		&returns,
 	)
 	return returns
@@ -425,7 +450,7 @@ func (j *jsiiProxy_RoleBinding) UserInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/role_binding nobl9_role_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/role_binding nobl9_role_binding} Resource.
 func NewRoleBinding(scope constructs.Construct, id *string, config *RoleBindingConfig) RoleBinding {
 	_init_.Initialize()
 
@@ -443,7 +468,7 @@ func NewRoleBinding(scope constructs.Construct, id *string, config *RoleBindingC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/role_binding nobl9_role_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/role_binding nobl9_role_binding} Resource.
 func NewRoleBinding_Override(r RoleBinding, scope constructs.Construct, id *string, config *RoleBindingConfig) {
 	_init_.Initialize()
 
@@ -499,6 +524,17 @@ func (j *jsiiProxy_RoleBinding)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RoleBinding)SetGroupRef(val *string) {
+	if err := j.validateSetGroupRefParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"groupRef",
 		val,
 	)
 }
@@ -949,6 +985,14 @@ func (r *jsiiProxy_RoleBinding) ResetDisplayName() {
 	)
 }
 
+func (r *jsiiProxy_RoleBinding) ResetGroupRef() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetGroupRef",
+		nil, // no parameters
+	)
+}
+
 func (r *jsiiProxy_RoleBinding) ResetId() {
 	_jsii_.InvokeVoid(
 		r,
@@ -977,6 +1021,14 @@ func (r *jsiiProxy_RoleBinding) ResetProjectRef() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetProjectRef",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RoleBinding) ResetUser() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetUser",
 		nil, // no parameters
 	)
 }

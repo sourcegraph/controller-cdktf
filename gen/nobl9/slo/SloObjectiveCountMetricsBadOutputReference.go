@@ -49,6 +49,8 @@ type SloObjectiveCountMetricsBadOutputReference interface {
 	GrafanaLokiInput() interface{}
 	Graphite() SloObjectiveCountMetricsBadGraphiteList
 	GraphiteInput() interface{}
+	Honeycomb() SloObjectiveCountMetricsBadHoneycombList
+	HoneycombInput() interface{}
 	Influxdb() SloObjectiveCountMetricsBadInfluxdbList
 	InfluxdbInput() interface{}
 	Instana() SloObjectiveCountMetricsBadInstanaList
@@ -57,6 +59,8 @@ type SloObjectiveCountMetricsBadOutputReference interface {
 	SetInternalValue(val interface{})
 	Lightstep() SloObjectiveCountMetricsBadLightstepList
 	LightstepInput() interface{}
+	LogicMonitor() SloObjectiveCountMetricsBadLogicMonitorList
+	LogicMonitorInput() interface{}
 	Newrelic() SloObjectiveCountMetricsBadNewrelicList
 	NewrelicInput() interface{}
 	Opentsdb() SloObjectiveCountMetricsBadOpentsdbList
@@ -118,9 +122,11 @@ type SloObjectiveCountMetricsBadOutputReference interface {
 	PutGcm(value interface{})
 	PutGrafanaLoki(value interface{})
 	PutGraphite(value interface{})
+	PutHoneycomb(value interface{})
 	PutInfluxdb(value interface{})
 	PutInstana(value interface{})
 	PutLightstep(value interface{})
+	PutLogicMonitor(value interface{})
 	PutNewrelic(value interface{})
 	PutOpentsdb(value interface{})
 	PutPingdom(value interface{})
@@ -141,9 +147,11 @@ type SloObjectiveCountMetricsBadOutputReference interface {
 	ResetGcm()
 	ResetGrafanaLoki()
 	ResetGraphite()
+	ResetHoneycomb()
 	ResetInfluxdb()
 	ResetInstana()
 	ResetLightstep()
+	ResetLogicMonitor()
 	ResetNewrelic()
 	ResetOpentsdb()
 	ResetPingdom()
@@ -428,6 +436,26 @@ func (j *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) GraphiteInput() i
 	return returns
 }
 
+func (j *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) Honeycomb() SloObjectiveCountMetricsBadHoneycombList {
+	var returns SloObjectiveCountMetricsBadHoneycombList
+	_jsii_.Get(
+		j,
+		"honeycomb",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) HoneycombInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"honeycombInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) Influxdb() SloObjectiveCountMetricsBadInfluxdbList {
 	var returns SloObjectiveCountMetricsBadInfluxdbList
 	_jsii_.Get(
@@ -493,6 +521,26 @@ func (j *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) LightstepInput() 
 	_jsii_.Get(
 		j,
 		"lightstepInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) LogicMonitor() SloObjectiveCountMetricsBadLogicMonitorList {
+	var returns SloObjectiveCountMetricsBadLogicMonitorList
+	_jsii_.Get(
+		j,
+		"logicMonitor",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) LogicMonitorInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"logicMonitorInput",
 		&returns,
 	)
 	return returns
@@ -1088,6 +1136,17 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) PutGraphite(value
 	)
 }
 
+func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) PutHoneycomb(value interface{}) {
+	if err := s.validatePutHoneycombParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putHoneycomb",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) PutInfluxdb(value interface{}) {
 	if err := s.validatePutInfluxdbParameters(value); err != nil {
 		panic(err)
@@ -1117,6 +1176,17 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) PutLightstep(valu
 	_jsii_.InvokeVoid(
 		s,
 		"putLightstep",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) PutLogicMonitor(value interface{}) {
+	if err := s.validatePutLogicMonitorParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putLogicMonitor",
 		[]interface{}{value},
 	)
 }
@@ -1308,6 +1378,14 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) ResetGraphite() {
 	)
 }
 
+func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) ResetHoneycomb() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetHoneycomb",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) ResetInfluxdb() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1328,6 +1406,14 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) ResetLightstep() 
 	_jsii_.InvokeVoid(
 		s,
 		"resetLightstep",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) ResetLogicMonitor() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetLogicMonitor",
 		nil, // no parameters
 	)
 }

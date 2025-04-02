@@ -96,7 +96,15 @@ func validateAlertPolicy_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_AlertPolicy) validateSetAnnotationsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AlertPolicy) validateSetConnectionParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_AlertPolicy) validateSetCooldownParameters(val *string) error {
 	return nil
 }
 

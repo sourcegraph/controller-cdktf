@@ -120,6 +120,10 @@ func (a *jsiiProxy_Agent) validatePutHistoricalDataRetrievalParameters(value *Ag
 	return nil
 }
 
+func (a *jsiiProxy_Agent) validatePutHoneycombConfigParameters(value *AgentHoneycombConfig) error {
+	return nil
+}
+
 func (a *jsiiProxy_Agent) validatePutInfluxdbConfigParameters(value *AgentInfluxdbConfig) error {
 	return nil
 }
@@ -129,6 +133,10 @@ func (a *jsiiProxy_Agent) validatePutInstanaConfigParameters(value *AgentInstana
 }
 
 func (a *jsiiProxy_Agent) validatePutLightstepConfigParameters(value *AgentLightstepConfig) error {
+	return nil
+}
+
+func (a *jsiiProxy_Agent) validatePutLogicMonitorConfigParameters(value *AgentLogicMonitorConfig) error {
 	return nil
 }
 

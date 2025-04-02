@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/nobl9/alertmethoddiscord/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/alert_method_discord nobl9_alert_method_discord}.
+// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/alert_method_discord nobl9_alert_method_discord}.
 type AlertMethodDiscord interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -425,7 +425,7 @@ func (j *jsiiProxy_AlertMethodDiscord) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/alert_method_discord nobl9_alert_method_discord} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/alert_method_discord nobl9_alert_method_discord} Resource.
 func NewAlertMethodDiscord(scope constructs.Construct, id *string, config *AlertMethodDiscordConfig) AlertMethodDiscord {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewAlertMethodDiscord(scope constructs.Construct, id *string, config *Alert
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/alert_method_discord nobl9_alert_method_discord} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/alert_method_discord nobl9_alert_method_discord} Resource.
 func NewAlertMethodDiscord_Override(a AlertMethodDiscord, scope constructs.Construct, id *string, config *AlertMethodDiscordConfig) {
 	_init_.Initialize()
 

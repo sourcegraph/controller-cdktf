@@ -63,6 +63,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "hasResourceMove", GoMethod: "HasResourceMove"},
 			_jsii_.MemberProperty{JsiiProperty: "historicalDataRetrieval", GoGetter: "HistoricalDataRetrieval"},
 			_jsii_.MemberProperty{JsiiProperty: "historicalDataRetrievalInput", GoGetter: "HistoricalDataRetrievalInput"},
+			_jsii_.MemberProperty{JsiiProperty: "honeycombConfig", GoGetter: "HoneycombConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "honeycombConfigInput", GoGetter: "HoneycombConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
@@ -74,6 +76,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "lightstepConfig", GoGetter: "LightstepConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "lightstepConfigInput", GoGetter: "LightstepConfigInput"},
+			_jsii_.MemberProperty{JsiiProperty: "logicMonitorConfig", GoGetter: "LogicMonitorConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "logicMonitorConfigInput", GoGetter: "LogicMonitorConfigInput"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -105,9 +109,11 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putGrafanaLokiConfig", GoMethod: "PutGrafanaLokiConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putGraphiteConfig", GoMethod: "PutGraphiteConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putHistoricalDataRetrieval", GoMethod: "PutHistoricalDataRetrieval"},
+			_jsii_.MemberMethod{JsiiMethod: "putHoneycombConfig", GoMethod: "PutHoneycombConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putInfluxdbConfig", GoMethod: "PutInfluxdbConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putInstanaConfig", GoMethod: "PutInstanaConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putLightstepConfig", GoMethod: "PutLightstepConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "putLogicMonitorConfig", GoMethod: "PutLogicMonitorConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putNewrelicConfig", GoMethod: "PutNewrelicConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putOpentsdbConfig", GoMethod: "PutOpentsdbConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putPingdomConfig", GoMethod: "PutPingdomConfig"},
@@ -139,10 +145,12 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetGrafanaLokiConfig", GoMethod: "ResetGrafanaLokiConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGraphiteConfig", GoMethod: "ResetGraphiteConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHistoricalDataRetrieval", GoMethod: "ResetHistoricalDataRetrieval"},
+			_jsii_.MemberMethod{JsiiMethod: "resetHoneycombConfig", GoMethod: "ResetHoneycombConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInfluxdbConfig", GoMethod: "ResetInfluxdbConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInstanaConfig", GoMethod: "ResetInstanaConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLightstepConfig", GoMethod: "ResetLightstepConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLogicMonitorConfig", GoMethod: "ResetLogicMonitorConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNewrelicConfig", GoMethod: "ResetNewrelicConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOpentsdbConfig", GoMethod: "ResetOpentsdbConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
@@ -151,6 +159,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetQueryDelay", GoMethod: "ResetQueryDelay"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRedshiftConfig", GoMethod: "ResetRedshiftConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetReleaseChannel", GoMethod: "ResetReleaseChannel"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSourceOf", GoMethod: "ResetSourceOf"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSplunkConfig", GoMethod: "ResetSplunkConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSplunkObservabilityConfig", GoMethod: "ResetSplunkObservabilityConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSumologicConfig", GoMethod: "ResetSumologicConfig"},
@@ -767,6 +776,42 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-nobl9.agent.AgentHoneycombConfig",
+		reflect.TypeOf((*AgentHoneycombConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.agent.AgentHoneycombConfigOutputReference",
+		reflect.TypeOf((*AgentHoneycombConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_AgentHoneycombConfigOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.agent.AgentInfluxdbConfig",
 		reflect.TypeOf((*AgentInfluxdbConfig)(nil)).Elem(),
 	)
@@ -871,13 +916,54 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "organizationInput", GoGetter: "OrganizationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "project", GoGetter: "Project"},
 			_jsii_.MemberProperty{JsiiProperty: "projectInput", GoGetter: "ProjectInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUrl", GoMethod: "ResetUrl"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
+			_jsii_.MemberProperty{JsiiProperty: "urlInput", GoGetter: "UrlInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_AgentLightstepConfigOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-nobl9.agent.AgentLogicMonitorConfig",
+		reflect.TypeOf((*AgentLogicMonitorConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-nobl9.agent.AgentLogicMonitorConfigOutputReference",
+		reflect.TypeOf((*AgentLogicMonitorConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "account", GoGetter: "Account"},
+			_jsii_.MemberProperty{JsiiProperty: "accountInput", GoGetter: "AccountInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
-			j := jsiiProxy_AgentLightstepConfigOutputReference{}
+			j := jsiiProxy_AgentLogicMonitorConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

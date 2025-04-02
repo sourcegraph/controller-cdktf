@@ -204,6 +204,17 @@ func (d *jsiiProxy_DirectGcm) validateOverrideLogicalIdParameters(newLogicalId *
 	return nil
 }
 
+func (d *jsiiProxy_DirectGcm) validatePutHistoricalDataRetrievalParameters(value *DirectGcmHistoricalDataRetrieval) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DirectGcm) validatePutQueryDelayParameters(value *DirectGcmQueryDelay) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

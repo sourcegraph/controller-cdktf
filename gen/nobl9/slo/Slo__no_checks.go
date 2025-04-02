@@ -124,6 +124,10 @@ func (j *jsiiProxy_Slo) validateSetAlertPoliciesParameters(val *[]*string) error
 	return nil
 }
 
+func (j *jsiiProxy_Slo) validateSetAnnotationsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Slo) validateSetBudgetingMethodParameters(val *string) error {
 	return nil
 }
@@ -164,7 +168,15 @@ func (j *jsiiProxy_Slo) validateSetProvisionersParameters(val *[]interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_Slo) validateSetRetrieveHistoricalDataFromParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Slo) validateSetServiceParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Slo) validateSetTierParameters(val *string) error {
 	return nil
 }
 

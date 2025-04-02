@@ -43,6 +43,9 @@ type AgentLightstepConfigOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Url() *string
+	SetUrl(val *string)
+	UrlInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -67,6 +70,7 @@ type AgentLightstepConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetUrl()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -192,6 +196,26 @@ func (j *jsiiProxy_AgentLightstepConfigOutputReference) TerraformResource() cdkt
 	return returns
 }
 
+func (j *jsiiProxy_AgentLightstepConfigOutputReference) Url() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"url",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AgentLightstepConfigOutputReference) UrlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"urlInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewAgentLightstepConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AgentLightstepConfigOutputReference {
 	_init_.Initialize()
@@ -293,6 +317,17 @@ func (j *jsiiProxy_AgentLightstepConfigOutputReference)SetTerraformResource(val 
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AgentLightstepConfigOutputReference)SetUrl(val *string) {
+	if err := j.validateSetUrlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"url",
 		val,
 	)
 }
@@ -481,6 +516,14 @@ func (a *jsiiProxy_AgentLightstepConfigOutputReference) InterpolationForAttribut
 	)
 
 	return returns
+}
+
+func (a *jsiiProxy_AgentLightstepConfigOutputReference) ResetUrl() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetUrl",
+		nil, // no parameters
+	)
 }
 
 func (a *jsiiProxy_AgentLightstepConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

@@ -48,6 +48,10 @@ func (s *jsiiProxy_SloObjectiveRawMetricQueryAzureMonitorOutputReference) valida
 	return nil
 }
 
+func (s *jsiiProxy_SloObjectiveRawMetricQueryAzureMonitorOutputReference) validatePutWorkspaceParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SloObjectiveRawMetricQueryAzureMonitorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -64,7 +68,15 @@ func (j *jsiiProxy_SloObjectiveRawMetricQueryAzureMonitorOutputReference) valida
 	return nil
 }
 
+func (j *jsiiProxy_SloObjectiveRawMetricQueryAzureMonitorOutputReference) validateSetDataTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SloObjectiveRawMetricQueryAzureMonitorOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_SloObjectiveRawMetricQueryAzureMonitorOutputReference) validateSetKqlQueryParameters(val *string) error {
 	return nil
 }
 

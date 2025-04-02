@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/nobl9/directgcm/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_gcm nobl9_direct_gcm}.
+// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_gcm nobl9_direct_gcm}.
 type DirectGcm interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -42,6 +42,8 @@ type DirectGcm interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	HistoricalDataRetrieval() DirectGcmHistoricalDataRetrievalOutputReference
+	HistoricalDataRetrievalInput() *DirectGcmHistoricalDataRetrieval
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -131,9 +133,11 @@ type DirectGcm interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutHistoricalDataRetrieval(value *DirectGcmHistoricalDataRetrieval)
 	PutQueryDelay(value *DirectGcmQueryDelay)
 	ResetDescription()
 	ResetDisplayName()
+	ResetHistoricalDataRetrieval()
 	ResetId()
 	ResetLogCollectionEnabled()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -142,6 +146,7 @@ type DirectGcm interface {
 	ResetQueryDelay()
 	ResetReleaseChannel()
 	ResetServiceAccountKey()
+	ResetSourceOf()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -275,6 +280,26 @@ func (j *jsiiProxy_DirectGcm) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DirectGcm) HistoricalDataRetrieval() DirectGcmHistoricalDataRetrievalOutputReference {
+	var returns DirectGcmHistoricalDataRetrievalOutputReference
+	_jsii_.Get(
+		j,
+		"historicalDataRetrieval",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DirectGcm) HistoricalDataRetrievalInput() *DirectGcmHistoricalDataRetrieval {
+	var returns *DirectGcmHistoricalDataRetrieval
+	_jsii_.Get(
+		j,
+		"historicalDataRetrievalInput",
 		&returns,
 	)
 	return returns
@@ -531,7 +556,7 @@ func (j *jsiiProxy_DirectGcm) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_gcm nobl9_direct_gcm} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_gcm nobl9_direct_gcm} Resource.
 func NewDirectGcm(scope constructs.Construct, id *string, config *DirectGcmConfig) DirectGcm {
 	_init_.Initialize()
 
@@ -549,7 +574,7 @@ func NewDirectGcm(scope constructs.Construct, id *string, config *DirectGcmConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_gcm nobl9_direct_gcm} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_gcm nobl9_direct_gcm} Resource.
 func NewDirectGcm_Override(d DirectGcm, scope constructs.Construct, id *string, config *DirectGcmConfig) {
 	_init_.Initialize()
 
@@ -1080,6 +1105,17 @@ func (d *jsiiProxy_DirectGcm) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (d *jsiiProxy_DirectGcm) PutHistoricalDataRetrieval(value *DirectGcmHistoricalDataRetrieval) {
+	if err := d.validatePutHistoricalDataRetrievalParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putHistoricalDataRetrieval",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DirectGcm) PutQueryDelay(value *DirectGcmQueryDelay) {
 	if err := d.validatePutQueryDelayParameters(value); err != nil {
 		panic(err)
@@ -1103,6 +1139,14 @@ func (d *jsiiProxy_DirectGcm) ResetDisplayName() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetDisplayName",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DirectGcm) ResetHistoricalDataRetrieval() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetHistoricalDataRetrieval",
 		nil, // no parameters
 	)
 }
@@ -1151,6 +1195,14 @@ func (d *jsiiProxy_DirectGcm) ResetServiceAccountKey() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetServiceAccountKey",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DirectGcm) ResetSourceOf() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSourceOf",
 		nil, // no parameters
 	)
 }

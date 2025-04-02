@@ -98,6 +98,14 @@ func (a *jsiiProxy_AlertPolicyConditionOutputReference) validateResolveParameter
 	return nil
 }
 
+func (j *jsiiProxy_AlertPolicyConditionOutputReference) validateSetAlertingWindowParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AlertPolicyConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
@@ -196,6 +204,14 @@ func (j *jsiiProxy_AlertPolicyConditionOutputReference) validateSetLastsForParam
 }
 
 func (j *jsiiProxy_AlertPolicyConditionOutputReference) validateSetMeasurementParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AlertPolicyConditionOutputReference) validateSetOpParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

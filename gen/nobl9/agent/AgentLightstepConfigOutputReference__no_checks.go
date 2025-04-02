@@ -76,6 +76,10 @@ func (j *jsiiProxy_AgentLightstepConfigOutputReference) validateSetTerraformReso
 	return nil
 }
 
+func (j *jsiiProxy_AgentLightstepConfigOutputReference) validateSetUrlParameters(val *string) error {
+	return nil
+}
+
 func validateNewAgentLightstepConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

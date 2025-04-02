@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/nobl9/alertmethodslack/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/alert_method_slack nobl9_alert_method_slack}.
+// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/alert_method_slack nobl9_alert_method_slack}.
 type AlertMethodSlack interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -425,7 +425,7 @@ func (j *jsiiProxy_AlertMethodSlack) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/alert_method_slack nobl9_alert_method_slack} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/alert_method_slack nobl9_alert_method_slack} Resource.
 func NewAlertMethodSlack(scope constructs.Construct, id *string, config *AlertMethodSlackConfig) AlertMethodSlack {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewAlertMethodSlack(scope constructs.Construct, id *string, config *AlertMe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/alert_method_slack nobl9_alert_method_slack} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/alert_method_slack nobl9_alert_method_slack} Resource.
 func NewAlertMethodSlack_Override(a AlertMethodSlack, scope constructs.Construct, id *string, config *AlertMethodSlackConfig) {
 	_init_.Initialize()
 

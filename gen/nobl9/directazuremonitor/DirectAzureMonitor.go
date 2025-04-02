@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/nobl9/directazuremonitor/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_azure_monitor nobl9_direct_azure_monitor}.
+// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_azure_monitor nobl9_direct_azure_monitor}.
 type DirectAzureMonitor interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -141,6 +141,7 @@ type DirectAzureMonitor interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutHistoricalDataRetrieval(value *DirectAzureMonitorHistoricalDataRetrieval)
 	PutQueryDelay(value *DirectAzureMonitorQueryDelay)
+	ResetClientId()
 	ResetClientSecret()
 	ResetDescription()
 	ResetDisplayName()
@@ -152,6 +153,7 @@ type DirectAzureMonitor interface {
 	ResetOverrideLogicalId()
 	ResetQueryDelay()
 	ResetReleaseChannel()
+	ResetSourceOf()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -601,7 +603,7 @@ func (j *jsiiProxy_DirectAzureMonitor) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_azure_monitor nobl9_direct_azure_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_azure_monitor nobl9_direct_azure_monitor} Resource.
 func NewDirectAzureMonitor(scope constructs.Construct, id *string, config *DirectAzureMonitorConfig) DirectAzureMonitor {
 	_init_.Initialize()
 
@@ -619,7 +621,7 @@ func NewDirectAzureMonitor(scope constructs.Construct, id *string, config *Direc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_azure_monitor nobl9_direct_azure_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_azure_monitor nobl9_direct_azure_monitor} Resource.
 func NewDirectAzureMonitor_Override(d DirectAzureMonitor, scope constructs.Construct, id *string, config *DirectAzureMonitorConfig) {
 	_init_.Initialize()
 
@@ -1194,6 +1196,14 @@ func (d *jsiiProxy_DirectAzureMonitor) PutQueryDelay(value *DirectAzureMonitorQu
 	)
 }
 
+func (d *jsiiProxy_DirectAzureMonitor) ResetClientId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetClientId",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DirectAzureMonitor) ResetClientSecret() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1262,6 +1272,14 @@ func (d *jsiiProxy_DirectAzureMonitor) ResetReleaseChannel() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetReleaseChannel",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DirectAzureMonitor) ResetSourceOf() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSourceOf",
 		nil, // no parameters
 	)
 }

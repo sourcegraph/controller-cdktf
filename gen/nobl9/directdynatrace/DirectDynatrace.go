@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/nobl9/directdynatrace/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_dynatrace nobl9_direct_dynatrace}.
+// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_dynatrace nobl9_direct_dynatrace}.
 type DirectDynatrace interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -149,6 +149,7 @@ type DirectDynatrace interface {
 	ResetOverrideLogicalId()
 	ResetQueryDelay()
 	ResetReleaseChannel()
+	ResetSourceOf()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -578,7 +579,7 @@ func (j *jsiiProxy_DirectDynatrace) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_dynatrace nobl9_direct_dynatrace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_dynatrace nobl9_direct_dynatrace} Resource.
 func NewDirectDynatrace(scope constructs.Construct, id *string, config *DirectDynatraceConfig) DirectDynatrace {
 	_init_.Initialize()
 
@@ -596,7 +597,7 @@ func NewDirectDynatrace(scope constructs.Construct, id *string, config *DirectDy
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_dynatrace nobl9_direct_dynatrace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_dynatrace nobl9_direct_dynatrace} Resource.
 func NewDirectDynatrace_Override(d DirectDynatrace, scope constructs.Construct, id *string, config *DirectDynatraceConfig) {
 	_init_.Initialize()
 
@@ -1228,6 +1229,14 @@ func (d *jsiiProxy_DirectDynatrace) ResetReleaseChannel() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetReleaseChannel",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DirectDynatrace) ResetSourceOf() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSourceOf",
 		nil, // no parameters
 	)
 }

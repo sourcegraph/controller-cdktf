@@ -28,12 +28,18 @@ type SloObjectiveCountMetricsBadAzureMonitorOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DataType() *string
+	SetDataType(val *string)
+	DataTypeInput() *string
 	Dimensions() SloObjectiveCountMetricsBadAzureMonitorDimensionsList
 	DimensionsInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	KqlQuery() *string
+	SetKqlQuery(val *string)
+	KqlQueryInput() *string
 	MetricName() *string
 	SetMetricName(val *string)
 	MetricNameInput() *string
@@ -51,6 +57,8 @@ type SloObjectiveCountMetricsBadAzureMonitorOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Workspace() SloObjectiveCountMetricsBadAzureMonitorWorkspaceList
+	WorkspaceInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -76,8 +84,14 @@ type SloObjectiveCountMetricsBadAzureMonitorOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutDimensions(value interface{})
+	PutWorkspace(value interface{})
+	ResetAggregation()
 	ResetDimensions()
+	ResetKqlQuery()
+	ResetMetricName()
 	ResetMetricNamespace()
+	ResetResourceId()
+	ResetWorkspace()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -143,6 +157,26 @@ func (j *jsiiProxy_SloObjectiveCountMetricsBadAzureMonitorOutputReference) Creat
 	return returns
 }
 
+func (j *jsiiProxy_SloObjectiveCountMetricsBadAzureMonitorOutputReference) DataType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SloObjectiveCountMetricsBadAzureMonitorOutputReference) DataTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SloObjectiveCountMetricsBadAzureMonitorOutputReference) Dimensions() SloObjectiveCountMetricsBadAzureMonitorDimensionsList {
 	var returns SloObjectiveCountMetricsBadAzureMonitorDimensionsList
 	_jsii_.Get(
@@ -178,6 +212,26 @@ func (j *jsiiProxy_SloObjectiveCountMetricsBadAzureMonitorOutputReference) Inter
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SloObjectiveCountMetricsBadAzureMonitorOutputReference) KqlQuery() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kqlQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SloObjectiveCountMetricsBadAzureMonitorOutputReference) KqlQueryInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kqlQueryInput",
 		&returns,
 	)
 	return returns
@@ -263,6 +317,26 @@ func (j *jsiiProxy_SloObjectiveCountMetricsBadAzureMonitorOutputReference) Terra
 	return returns
 }
 
+func (j *jsiiProxy_SloObjectiveCountMetricsBadAzureMonitorOutputReference) Workspace() SloObjectiveCountMetricsBadAzureMonitorWorkspaceList {
+	var returns SloObjectiveCountMetricsBadAzureMonitorWorkspaceList
+	_jsii_.Get(
+		j,
+		"workspace",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SloObjectiveCountMetricsBadAzureMonitorOutputReference) WorkspaceInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"workspaceInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewSloObjectiveCountMetricsBadAzureMonitorOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SloObjectiveCountMetricsBadAzureMonitorOutputReference {
 	_init_.Initialize()
@@ -324,6 +398,17 @@ func (j *jsiiProxy_SloObjectiveCountMetricsBadAzureMonitorOutputReference)SetCom
 	)
 }
 
+func (j *jsiiProxy_SloObjectiveCountMetricsBadAzureMonitorOutputReference)SetDataType(val *string) {
+	if err := j.validateSetDataTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dataType",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SloObjectiveCountMetricsBadAzureMonitorOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -331,6 +416,17 @@ func (j *jsiiProxy_SloObjectiveCountMetricsBadAzureMonitorOutputReference)SetInt
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SloObjectiveCountMetricsBadAzureMonitorOutputReference)SetKqlQuery(val *string) {
+	if err := j.validateSetKqlQueryParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kqlQuery",
 		val,
 	)
 }
@@ -587,6 +683,25 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadAzureMonitorOutputReference) PutDi
 	)
 }
 
+func (s *jsiiProxy_SloObjectiveCountMetricsBadAzureMonitorOutputReference) PutWorkspace(value interface{}) {
+	if err := s.validatePutWorkspaceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putWorkspace",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SloObjectiveCountMetricsBadAzureMonitorOutputReference) ResetAggregation() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAggregation",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SloObjectiveCountMetricsBadAzureMonitorOutputReference) ResetDimensions() {
 	_jsii_.InvokeVoid(
 		s,
@@ -595,10 +710,42 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadAzureMonitorOutputReference) Reset
 	)
 }
 
+func (s *jsiiProxy_SloObjectiveCountMetricsBadAzureMonitorOutputReference) ResetKqlQuery() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetKqlQuery",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SloObjectiveCountMetricsBadAzureMonitorOutputReference) ResetMetricName() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetMetricName",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SloObjectiveCountMetricsBadAzureMonitorOutputReference) ResetMetricNamespace() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetMetricNamespace",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SloObjectiveCountMetricsBadAzureMonitorOutputReference) ResetResourceId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetResourceId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SloObjectiveCountMetricsBadAzureMonitorOutputReference) ResetWorkspace() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetWorkspace",
 		nil, // no parameters
 	)
 }
