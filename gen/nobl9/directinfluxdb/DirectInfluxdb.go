@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/nobl9/directinfluxdb/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_influxdb nobl9_direct_influxdb}.
+// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_influxdb nobl9_direct_influxdb}.
 type DirectInfluxdb interface {
 	cdktf.TerraformResource
 	ApiToken() *string
@@ -149,6 +149,7 @@ type DirectInfluxdb interface {
 	ResetOverrideLogicalId()
 	ResetQueryDelay()
 	ResetReleaseChannel()
+	ResetSourceOf()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -578,7 +579,7 @@ func (j *jsiiProxy_DirectInfluxdb) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_influxdb nobl9_direct_influxdb} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_influxdb nobl9_direct_influxdb} Resource.
 func NewDirectInfluxdb(scope constructs.Construct, id *string, config *DirectInfluxdbConfig) DirectInfluxdb {
 	_init_.Initialize()
 
@@ -596,7 +597,7 @@ func NewDirectInfluxdb(scope constructs.Construct, id *string, config *DirectInf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_influxdb nobl9_direct_influxdb} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_influxdb nobl9_direct_influxdb} Resource.
 func NewDirectInfluxdb_Override(d DirectInfluxdb, scope constructs.Construct, id *string, config *DirectInfluxdbConfig) {
 	_init_.Initialize()
 
@@ -1228,6 +1229,14 @@ func (d *jsiiProxy_DirectInfluxdb) ResetReleaseChannel() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetReleaseChannel",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DirectInfluxdb) ResetSourceOf() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSourceOf",
 		nil, // no parameters
 	)
 }

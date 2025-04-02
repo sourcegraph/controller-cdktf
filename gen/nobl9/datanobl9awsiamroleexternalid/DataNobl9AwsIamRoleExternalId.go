@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/nobl9/datanobl9awsiamroleexternalid/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/data-sources/aws_iam_role_external_id nobl9_aws_iam_role_external_id}.
+// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/data-sources/aws_iam_role_external_id nobl9_aws_iam_role_external_id}.
 type DataNobl9AwsIamRoleExternalId interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -307,7 +307,7 @@ func (j *jsiiProxy_DataNobl9AwsIamRoleExternalId) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/data-sources/aws_iam_role_external_id nobl9_aws_iam_role_external_id} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/data-sources/aws_iam_role_external_id nobl9_aws_iam_role_external_id} Data Source.
 func NewDataNobl9AwsIamRoleExternalId(scope constructs.Construct, id *string, config *DataNobl9AwsIamRoleExternalIdConfig) DataNobl9AwsIamRoleExternalId {
 	_init_.Initialize()
 
@@ -325,7 +325,7 @@ func NewDataNobl9AwsIamRoleExternalId(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/data-sources/aws_iam_role_external_id nobl9_aws_iam_role_external_id} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/data-sources/aws_iam_role_external_id nobl9_aws_iam_role_external_id} Data Source.
 func NewDataNobl9AwsIamRoleExternalId_Override(d DataNobl9AwsIamRoleExternalId, scope constructs.Construct, id *string, config *DataNobl9AwsIamRoleExternalIdConfig) {
 	_init_.Initialize()
 

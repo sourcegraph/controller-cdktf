@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/nobl9/directsplunkobservability/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_splunk_observability nobl9_direct_splunk_observability}.
+// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_splunk_observability nobl9_direct_splunk_observability}.
 type DirectSplunkObservability interface {
 	cdktf.TerraformResource
 	AccessToken() *string
@@ -141,6 +141,7 @@ type DirectSplunkObservability interface {
 	ResetOverrideLogicalId()
 	ResetQueryDelay()
 	ResetReleaseChannel()
+	ResetSourceOf()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -530,7 +531,7 @@ func (j *jsiiProxy_DirectSplunkObservability) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_splunk_observability nobl9_direct_splunk_observability} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_splunk_observability nobl9_direct_splunk_observability} Resource.
 func NewDirectSplunkObservability(scope constructs.Construct, id *string, config *DirectSplunkObservabilityConfig) DirectSplunkObservability {
 	_init_.Initialize()
 
@@ -548,7 +549,7 @@ func NewDirectSplunkObservability(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_splunk_observability nobl9_direct_splunk_observability} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_splunk_observability nobl9_direct_splunk_observability} Resource.
 func NewDirectSplunkObservability_Override(d DirectSplunkObservability, scope constructs.Construct, id *string, config *DirectSplunkObservabilityConfig) {
 	_init_.Initialize()
 
@@ -1142,6 +1143,14 @@ func (d *jsiiProxy_DirectSplunkObservability) ResetReleaseChannel() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetReleaseChannel",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DirectSplunkObservability) ResetSourceOf() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSourceOf",
 		nil, // no parameters
 	)
 }

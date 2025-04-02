@@ -9,12 +9,15 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/nobl9/slo/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/slo nobl9_slo}.
+// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/slo nobl9_slo}.
 type Slo interface {
 	cdktf.TerraformResource
 	AlertPolicies() *[]*string
 	SetAlertPolicies(val *[]*string)
 	AlertPoliciesInput() *[]*string
+	Annotations() *map[string]*string
+	SetAnnotations(val *map[string]*string)
+	AnnotationsInput() *map[string]*string
 	AnomalyConfig() SloAnomalyConfigOutputReference
 	AnomalyConfigInput() *SloAnomalyConfig
 	Attachment() SloAttachmentList
@@ -87,6 +90,9 @@ type Slo interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RetrieveHistoricalDataFrom() *string
+	SetRetrieveHistoricalDataFrom(val *string)
+	RetrieveHistoricalDataFromInput() *string
 	Service() *string
 	SetService(val *string)
 	ServiceInput() *string
@@ -96,6 +102,9 @@ type Slo interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Tier() *string
+	SetTier(val *string)
+	TierInput() *string
 	TimeWindow() SloTimeWindowOutputReference
 	TimeWindowInput() *SloTimeWindow
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
@@ -150,6 +159,7 @@ type Slo interface {
 	PutObjective(value interface{})
 	PutTimeWindow(value *SloTimeWindow)
 	ResetAlertPolicies()
+	ResetAnnotations()
 	ResetAnomalyConfig()
 	ResetAttachment()
 	ResetAttachments()
@@ -157,10 +167,13 @@ type Slo interface {
 	ResetDescription()
 	ResetDisplayName()
 	ResetId()
+	ResetIndicator()
 	ResetLabel()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRetrieveHistoricalDataFrom()
+	ResetTier()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -194,6 +207,26 @@ func (j *jsiiProxy_Slo) AlertPoliciesInput() *[]*string {
 	_jsii_.Get(
 		j,
 		"alertPoliciesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Slo) Annotations() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"annotations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Slo) AnnotationsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"annotationsInput",
 		&returns,
 	)
 	return returns
@@ -589,6 +622,26 @@ func (j *jsiiProxy_Slo) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Slo) RetrieveHistoricalDataFrom() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"retrieveHistoricalDataFrom",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Slo) RetrieveHistoricalDataFromInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"retrieveHistoricalDataFromInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Slo) Service() *string {
 	var returns *string
 	_jsii_.Get(
@@ -639,6 +692,26 @@ func (j *jsiiProxy_Slo) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Slo) Tier() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tier",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Slo) TierInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tierInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Slo) TimeWindow() SloTimeWindowOutputReference {
 	var returns SloTimeWindowOutputReference
 	_jsii_.Get(
@@ -660,7 +733,7 @@ func (j *jsiiProxy_Slo) TimeWindowInput() *SloTimeWindow {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/slo nobl9_slo} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/slo nobl9_slo} Resource.
 func NewSlo(scope constructs.Construct, id *string, config *SloConfig) Slo {
 	_init_.Initialize()
 
@@ -678,7 +751,7 @@ func NewSlo(scope constructs.Construct, id *string, config *SloConfig) Slo {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/slo nobl9_slo} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/slo nobl9_slo} Resource.
 func NewSlo_Override(s Slo, scope constructs.Construct, id *string, config *SloConfig) {
 	_init_.Initialize()
 
@@ -696,6 +769,17 @@ func (j *jsiiProxy_Slo)SetAlertPolicies(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"alertPolicies",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Slo)SetAnnotations(val *map[string]*string) {
+	if err := j.validateSetAnnotationsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"annotations",
 		val,
 	)
 }
@@ -834,6 +918,17 @@ func (j *jsiiProxy_Slo)SetProvisioners(val *[]interface{}) {
 	)
 }
 
+func (j *jsiiProxy_Slo)SetRetrieveHistoricalDataFrom(val *string) {
+	if err := j.validateSetRetrieveHistoricalDataFromParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"retrieveHistoricalDataFrom",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Slo)SetService(val *string) {
 	if err := j.validateSetServiceParameters(val); err != nil {
 		panic(err)
@@ -841,6 +936,17 @@ func (j *jsiiProxy_Slo)SetService(val *string) {
 	_jsii_.Set(
 		j,
 		"service",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Slo)SetTier(val *string) {
+	if err := j.validateSetTierParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tier",
 		val,
 	)
 }
@@ -1294,6 +1400,14 @@ func (s *jsiiProxy_Slo) ResetAlertPolicies() {
 	)
 }
 
+func (s *jsiiProxy_Slo) ResetAnnotations() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAnnotations",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_Slo) ResetAnomalyConfig() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1350,6 +1464,14 @@ func (s *jsiiProxy_Slo) ResetId() {
 	)
 }
 
+func (s *jsiiProxy_Slo) ResetIndicator() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetIndicator",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_Slo) ResetLabel() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1362,6 +1484,22 @@ func (s *jsiiProxy_Slo) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_Slo) ResetRetrieveHistoricalDataFrom() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRetrieveHistoricalDataFrom",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_Slo) ResetTier() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTier",
 		nil, // no parameters
 	)
 }

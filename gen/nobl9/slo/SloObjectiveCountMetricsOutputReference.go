@@ -31,6 +31,8 @@ type SloObjectiveCountMetricsOutputReference interface {
 	Fqn() *string
 	Good() SloObjectiveCountMetricsGoodList
 	GoodInput() interface{}
+	GoodTotal() SloObjectiveCountMetricsGoodTotalList
+	GoodTotalInput() interface{}
 	Incremental() interface{}
 	SetIncremental(val interface{})
 	IncrementalInput() interface{}
@@ -72,9 +74,12 @@ type SloObjectiveCountMetricsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutBad(value interface{})
 	PutGood(value interface{})
+	PutGoodTotal(value interface{})
 	PutTotal(value interface{})
 	ResetBad()
 	ResetGood()
+	ResetGoodTotal()
+	ResetTotal()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -165,6 +170,26 @@ func (j *jsiiProxy_SloObjectiveCountMetricsOutputReference) GoodInput() interfac
 	_jsii_.Get(
 		j,
 		"goodInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SloObjectiveCountMetricsOutputReference) GoodTotal() SloObjectiveCountMetricsGoodTotalList {
+	var returns SloObjectiveCountMetricsGoodTotalList
+	_jsii_.Get(
+		j,
+		"goodTotal",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SloObjectiveCountMetricsOutputReference) GoodTotalInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"goodTotalInput",
 		&returns,
 	)
 	return returns
@@ -542,6 +567,17 @@ func (s *jsiiProxy_SloObjectiveCountMetricsOutputReference) PutGood(value interf
 	)
 }
 
+func (s *jsiiProxy_SloObjectiveCountMetricsOutputReference) PutGoodTotal(value interface{}) {
+	if err := s.validatePutGoodTotalParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putGoodTotal",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SloObjectiveCountMetricsOutputReference) PutTotal(value interface{}) {
 	if err := s.validatePutTotalParameters(value); err != nil {
 		panic(err)
@@ -565,6 +601,22 @@ func (s *jsiiProxy_SloObjectiveCountMetricsOutputReference) ResetGood() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetGood",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SloObjectiveCountMetricsOutputReference) ResetGoodTotal() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetGoodTotal",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SloObjectiveCountMetricsOutputReference) ResetTotal() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTotal",
 		nil, // no parameters
 	)
 }

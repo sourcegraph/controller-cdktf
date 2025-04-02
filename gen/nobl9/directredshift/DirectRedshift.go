@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/nobl9/directredshift/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_redshift nobl9_direct_redshift}.
+// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_redshift nobl9_direct_redshift}.
 type DirectRedshift interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -146,6 +146,7 @@ type DirectRedshift interface {
 	ResetReleaseChannel()
 	ResetRoleArn()
 	ResetSecretArn()
+	ResetSourceOf()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -555,7 +556,7 @@ func (j *jsiiProxy_DirectRedshift) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_redshift nobl9_direct_redshift} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_redshift nobl9_direct_redshift} Resource.
 func NewDirectRedshift(scope constructs.Construct, id *string, config *DirectRedshiftConfig) DirectRedshift {
 	_init_.Initialize()
 
@@ -573,7 +574,7 @@ func NewDirectRedshift(scope constructs.Construct, id *string, config *DirectRed
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_redshift nobl9_direct_redshift} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_redshift nobl9_direct_redshift} Resource.
 func NewDirectRedshift_Override(d DirectRedshift, scope constructs.Construct, id *string, config *DirectRedshiftConfig) {
 	_init_.Initialize()
 
@@ -1194,6 +1195,14 @@ func (d *jsiiProxy_DirectRedshift) ResetSecretArn() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetSecretArn",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DirectRedshift) ResetSourceOf() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSourceOf",
 		nil, // no parameters
 	)
 }

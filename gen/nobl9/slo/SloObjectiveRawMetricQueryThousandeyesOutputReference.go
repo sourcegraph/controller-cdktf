@@ -40,6 +40,9 @@ type SloObjectiveRawMetricQueryThousandeyesOutputReference interface {
 	TestId() *float64
 	SetTestId(val *float64)
 	TestIdInput() *float64
+	TestType() *string
+	SetTestType(val *string)
+	TestTypeInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -64,6 +67,7 @@ type SloObjectiveRawMetricQueryThousandeyesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetTestType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -169,6 +173,26 @@ func (j *jsiiProxy_SloObjectiveRawMetricQueryThousandeyesOutputReference) TestId
 	return returns
 }
 
+func (j *jsiiProxy_SloObjectiveRawMetricQueryThousandeyesOutputReference) TestType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"testType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SloObjectiveRawMetricQueryThousandeyesOutputReference) TestTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"testTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewSloObjectiveRawMetricQueryThousandeyesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SloObjectiveRawMetricQueryThousandeyesOutputReference {
 	_init_.Initialize()
@@ -259,6 +283,17 @@ func (j *jsiiProxy_SloObjectiveRawMetricQueryThousandeyesOutputReference)SetTest
 	_jsii_.Set(
 		j,
 		"testId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SloObjectiveRawMetricQueryThousandeyesOutputReference)SetTestType(val *string) {
+	if err := j.validateSetTestTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"testType",
 		val,
 	)
 }
@@ -447,6 +482,14 @@ func (s *jsiiProxy_SloObjectiveRawMetricQueryThousandeyesOutputReference) Interp
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_SloObjectiveRawMetricQueryThousandeyesOutputReference) ResetTestType() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTestType",
+		nil, // no parameters
+	)
 }
 
 func (s *jsiiProxy_SloObjectiveRawMetricQueryThousandeyesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

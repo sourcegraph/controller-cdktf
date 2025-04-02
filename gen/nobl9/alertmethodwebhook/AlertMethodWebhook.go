@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/nobl9/alertmethodwebhook/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/alert_method_webhook nobl9_alert_method_webhook}.
+// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/alert_method_webhook nobl9_alert_method_webhook}.
 type AlertMethodWebhook interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -42,6 +42,9 @@ type AlertMethodWebhook interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Headers() *map[string]*string
+	SetHeaders(val *map[string]*string)
+	HeadersInput() *map[string]*string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -67,6 +70,9 @@ type AlertMethodWebhook interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	SensitiveHeaders() *map[string]*string
+	SetSensitiveHeaders(val *map[string]*string)
+	SensitiveHeadersInput() *map[string]*string
 	Template() *string
 	SetTemplate(val *string)
 	TemplateFields() *[]*string
@@ -127,10 +133,12 @@ type AlertMethodWebhook interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetDescription()
 	ResetDisplayName()
+	ResetHeaders()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSensitiveHeaders()
 	ResetTemplate()
 	ResetTemplateFields()
 	ResetUrl()
@@ -272,6 +280,26 @@ func (j *jsiiProxy_AlertMethodWebhook) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AlertMethodWebhook) Headers() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"headers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlertMethodWebhook) HeadersInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"headersInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AlertMethodWebhook) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -382,6 +410,26 @@ func (j *jsiiProxy_AlertMethodWebhook) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AlertMethodWebhook) SensitiveHeaders() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"sensitiveHeaders",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlertMethodWebhook) SensitiveHeadersInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"sensitiveHeadersInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AlertMethodWebhook) Template() *string {
 	var returns *string
 	_jsii_.Get(
@@ -473,7 +521,7 @@ func (j *jsiiProxy_AlertMethodWebhook) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/alert_method_webhook nobl9_alert_method_webhook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/alert_method_webhook nobl9_alert_method_webhook} Resource.
 func NewAlertMethodWebhook(scope constructs.Construct, id *string, config *AlertMethodWebhookConfig) AlertMethodWebhook {
 	_init_.Initialize()
 
@@ -491,7 +539,7 @@ func NewAlertMethodWebhook(scope constructs.Construct, id *string, config *Alert
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/alert_method_webhook nobl9_alert_method_webhook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/alert_method_webhook nobl9_alert_method_webhook} Resource.
 func NewAlertMethodWebhook_Override(a AlertMethodWebhook, scope constructs.Construct, id *string, config *AlertMethodWebhookConfig) {
 	_init_.Initialize()
 
@@ -562,6 +610,17 @@ func (j *jsiiProxy_AlertMethodWebhook)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
+func (j *jsiiProxy_AlertMethodWebhook)SetHeaders(val *map[string]*string) {
+	if err := j.validateSetHeadersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"headers",
+		val,
+	)
+}
+
 func (j *jsiiProxy_AlertMethodWebhook)SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
@@ -621,6 +680,17 @@ func (j *jsiiProxy_AlertMethodWebhook)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AlertMethodWebhook)SetSensitiveHeaders(val *map[string]*string) {
+	if err := j.validateSetSensitiveHeadersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sensitiveHeaders",
 		val,
 	)
 }
@@ -1027,6 +1097,14 @@ func (a *jsiiProxy_AlertMethodWebhook) ResetDisplayName() {
 	)
 }
 
+func (a *jsiiProxy_AlertMethodWebhook) ResetHeaders() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetHeaders",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AlertMethodWebhook) ResetId() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1039,6 +1117,14 @@ func (a *jsiiProxy_AlertMethodWebhook) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlertMethodWebhook) ResetSensitiveHeaders() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetSensitiveHeaders",
 		nil, // no parameters
 	)
 }

@@ -21,35 +21,43 @@ type AlertPolicyConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// condition block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/alert_policy#condition AlertPolicy#condition}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/alert_policy#condition AlertPolicy#condition}
 	Condition interface{} `field:"required" json:"condition" yaml:"condition"`
 	// Unique name of the resource, must conform to the naming convention from [DNS RFC1123](https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/alert_policy#name AlertPolicy#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/alert_policy#name AlertPolicy#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Name of the Nobl9 project the resource sits in, must conform to the naming convention from [DNS RFC1123](https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/alert_policy#project AlertPolicy#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/alert_policy#project AlertPolicy#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
 	// Alert severity. One of `Low` | `Medium` | `High`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/alert_policy#severity AlertPolicy#severity}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/alert_policy#severity AlertPolicy#severity}
 	Severity *string `field:"required" json:"severity" yaml:"severity"`
 	// alert_method block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/alert_policy#alert_method AlertPolicy#alert_method}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/alert_policy#alert_method AlertPolicy#alert_method}
 	AlertMethod interface{} `field:"optional" json:"alertMethod" yaml:"alertMethod"`
+	// [Metadata annotations](https://docs.nobl9.com/features/labels/#metadata-annotations) attached to the resource.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/alert_policy#annotations AlertPolicy#annotations}
+	Annotations *map[string]*string `field:"optional" json:"annotations" yaml:"annotations"`
+	// An interval measured from the last time stamp when all alert policy conditions were satisfied before alert is marked as resolved.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/alert_policy#cooldown AlertPolicy#cooldown}
+	Cooldown *string `field:"optional" json:"cooldown" yaml:"cooldown"`
 	// Optional description of the resource.
 	//
 	// Here, you can add details about who is responsible for the integration (team/owner) or the purpose of creating it.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/alert_policy#description AlertPolicy#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/alert_policy#description AlertPolicy#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// User-friendly display name of the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/alert_policy#display_name AlertPolicy#display_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/alert_policy#display_name AlertPolicy#display_name}
 	DisplayName *string `field:"optional" json:"displayName" yaml:"displayName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/alert_policy#id AlertPolicy#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/alert_policy#id AlertPolicy#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

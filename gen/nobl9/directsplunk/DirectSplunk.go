@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/nobl9/directsplunk/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_splunk nobl9_direct_splunk}.
+// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_splunk nobl9_direct_splunk}.
 type DirectSplunk interface {
 	cdktf.TerraformResource
 	AccessToken() *string
@@ -149,6 +149,7 @@ type DirectSplunk interface {
 	ResetOverrideLogicalId()
 	ResetQueryDelay()
 	ResetReleaseChannel()
+	ResetSourceOf()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -578,7 +579,7 @@ func (j *jsiiProxy_DirectSplunk) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_splunk nobl9_direct_splunk} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_splunk nobl9_direct_splunk} Resource.
 func NewDirectSplunk(scope constructs.Construct, id *string, config *DirectSplunkConfig) DirectSplunk {
 	_init_.Initialize()
 
@@ -596,7 +597,7 @@ func NewDirectSplunk(scope constructs.Construct, id *string, config *DirectSplun
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_splunk nobl9_direct_splunk} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_splunk nobl9_direct_splunk} Resource.
 func NewDirectSplunk_Override(d DirectSplunk, scope constructs.Construct, id *string, config *DirectSplunkConfig) {
 	_init_.Initialize()
 
@@ -1228,6 +1229,14 @@ func (d *jsiiProxy_DirectSplunk) ResetReleaseChannel() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetReleaseChannel",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DirectSplunk) ResetSourceOf() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSourceOf",
 		nil, // no parameters
 	)
 }

@@ -92,6 +92,10 @@ func validateProject_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_Project) validateSetAnnotationsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Project) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

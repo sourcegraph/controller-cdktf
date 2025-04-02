@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/nobl9/directsumologic/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_sumologic nobl9_direct_sumologic}.
+// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_sumologic nobl9_direct_sumologic}.
 type DirectSumologic interface {
 	cdktf.TerraformResource
 	AccessId() *string
@@ -149,6 +149,7 @@ type DirectSumologic interface {
 	ResetOverrideLogicalId()
 	ResetQueryDelay()
 	ResetReleaseChannel()
+	ResetSourceOf()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -578,7 +579,7 @@ func (j *jsiiProxy_DirectSumologic) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_sumologic nobl9_direct_sumologic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_sumologic nobl9_direct_sumologic} Resource.
 func NewDirectSumologic(scope constructs.Construct, id *string, config *DirectSumologicConfig) DirectSumologic {
 	_init_.Initialize()
 
@@ -596,7 +597,7 @@ func NewDirectSumologic(scope constructs.Construct, id *string, config *DirectSu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_sumologic nobl9_direct_sumologic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_sumologic nobl9_direct_sumologic} Resource.
 func NewDirectSumologic_Override(d DirectSumologic, scope constructs.Construct, id *string, config *DirectSumologicConfig) {
 	_init_.Initialize()
 
@@ -1228,6 +1229,14 @@ func (d *jsiiProxy_DirectSumologic) ResetReleaseChannel() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetReleaseChannel",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DirectSumologic) ResetSourceOf() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSourceOf",
 		nil, // no parameters
 	)
 }

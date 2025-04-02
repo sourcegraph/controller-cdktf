@@ -37,6 +37,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "projectInput", GoGetter: "ProjectInput"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAlias", GoMethod: "ResetAlias"},
+			_jsii_.MemberMethod{JsiiMethod: "resetClientId", GoMethod: "ResetClientId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetClientSecret", GoMethod: "ResetClientSecret"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIngestUrl", GoMethod: "ResetIngestUrl"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOktaAuthServer", GoMethod: "ResetOktaAuthServer"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOktaOrgUrl", GoMethod: "ResetOktaOrgUrl"},

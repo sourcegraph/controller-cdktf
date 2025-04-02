@@ -64,6 +64,10 @@ func (j *jsiiProxy_SloObjectiveCountMetricsBadGcmOutputReference) validateSetPro
 	return nil
 }
 
+func (j *jsiiProxy_SloObjectiveCountMetricsBadGcmOutputReference) validateSetPromqlParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SloObjectiveCountMetricsBadGcmOutputReference) validateSetQueryParameters(val *string) error {
 	return nil
 }

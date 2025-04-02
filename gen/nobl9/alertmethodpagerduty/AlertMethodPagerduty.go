@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/nobl9/alertmethodpagerduty/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/alert_method_pagerduty nobl9_alert_method_pagerduty}.
+// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/alert_method_pagerduty nobl9_alert_method_pagerduty}.
 type AlertMethodPagerduty interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -449,7 +449,7 @@ func (j *jsiiProxy_AlertMethodPagerduty) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/alert_method_pagerduty nobl9_alert_method_pagerduty} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/alert_method_pagerduty nobl9_alert_method_pagerduty} Resource.
 func NewAlertMethodPagerduty(scope constructs.Construct, id *string, config *AlertMethodPagerdutyConfig) AlertMethodPagerduty {
 	_init_.Initialize()
 
@@ -467,7 +467,7 @@ func NewAlertMethodPagerduty(scope constructs.Construct, id *string, config *Ale
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/alert_method_pagerduty nobl9_alert_method_pagerduty} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/alert_method_pagerduty nobl9_alert_method_pagerduty} Resource.
 func NewAlertMethodPagerduty_Override(a AlertMethodPagerduty, scope constructs.Construct, id *string, config *AlertMethodPagerdutyConfig) {
 	_init_.Initialize()
 

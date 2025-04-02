@@ -10,6 +10,9 @@ import (
 
 type AlertPolicyConditionOutputReference interface {
 	cdktf.ComplexObject
+	AlertingWindow() *string
+	SetAlertingWindow(val *string)
+	AlertingWindowInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -35,6 +38,9 @@ type AlertPolicyConditionOutputReference interface {
 	Measurement() *string
 	SetMeasurement(val *string)
 	MeasurementInput() *string
+	Op() *string
+	SetOp(val *string)
+	OpInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -73,7 +79,9 @@ type AlertPolicyConditionOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAlertingWindow()
 	ResetLastsFor()
+	ResetOp()
 	ResetValue()
 	ResetValueString()
 	// Produce the Token's value at resolution time.
@@ -89,6 +97,26 @@ type AlertPolicyConditionOutputReference interface {
 // The jsii proxy struct for AlertPolicyConditionOutputReference
 type jsiiProxy_AlertPolicyConditionOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_AlertPolicyConditionOutputReference) AlertingWindow() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"alertingWindow",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlertPolicyConditionOutputReference) AlertingWindowInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"alertingWindowInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_AlertPolicyConditionOutputReference) ComplexObjectIndex() interface{} {
@@ -176,6 +204,26 @@ func (j *jsiiProxy_AlertPolicyConditionOutputReference) MeasurementInput() *stri
 	_jsii_.Get(
 		j,
 		"measurementInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlertPolicyConditionOutputReference) Op() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"op",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlertPolicyConditionOutputReference) OpInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"opInput",
 		&returns,
 	)
 	return returns
@@ -269,6 +317,17 @@ func NewAlertPolicyConditionOutputReference_Override(a AlertPolicyConditionOutpu
 	)
 }
 
+func (j *jsiiProxy_AlertPolicyConditionOutputReference)SetAlertingWindow(val *string) {
+	if err := j.validateSetAlertingWindowParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"alertingWindow",
+		val,
+	)
+}
+
 func (j *jsiiProxy_AlertPolicyConditionOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -320,6 +379,17 @@ func (j *jsiiProxy_AlertPolicyConditionOutputReference)SetMeasurement(val *strin
 	_jsii_.Set(
 		j,
 		"measurement",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AlertPolicyConditionOutputReference)SetOp(val *string) {
+	if err := j.validateSetOpParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"op",
 		val,
 	)
 }
@@ -554,10 +624,26 @@ func (a *jsiiProxy_AlertPolicyConditionOutputReference) InterpolationForAttribut
 	return returns
 }
 
+func (a *jsiiProxy_AlertPolicyConditionOutputReference) ResetAlertingWindow() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAlertingWindow",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AlertPolicyConditionOutputReference) ResetLastsFor() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetLastsFor",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlertPolicyConditionOutputReference) ResetOp() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetOp",
 		nil, // no parameters
 	)
 }

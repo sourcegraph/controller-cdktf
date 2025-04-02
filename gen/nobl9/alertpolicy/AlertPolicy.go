@@ -9,11 +9,14 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/nobl9/alertpolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/alert_policy nobl9_alert_policy}.
+// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/alert_policy nobl9_alert_policy}.
 type AlertPolicy interface {
 	cdktf.TerraformResource
 	AlertMethod() AlertPolicyAlertMethodList
 	AlertMethodInput() interface{}
+	Annotations() *map[string]*string
+	SetAnnotations(val *map[string]*string)
+	AnnotationsInput() *map[string]*string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Condition() AlertPolicyConditionList
@@ -24,6 +27,9 @@ type AlertPolicy interface {
 	SetConnection(val interface{})
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	Cooldown() *string
+	SetCooldown(val *string)
+	CooldownInput() *string
 	// Experimental.
 	Count() interface{}
 	// Experimental.
@@ -126,6 +132,8 @@ type AlertPolicy interface {
 	PutAlertMethod(value interface{})
 	PutCondition(value interface{})
 	ResetAlertMethod()
+	ResetAnnotations()
+	ResetCooldown()
 	ResetDescription()
 	ResetDisplayName()
 	ResetId()
@@ -165,6 +173,26 @@ func (j *jsiiProxy_AlertPolicy) AlertMethodInput() interface{} {
 	_jsii_.Get(
 		j,
 		"alertMethodInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlertPolicy) Annotations() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"annotations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlertPolicy) AnnotationsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"annotationsInput",
 		&returns,
 	)
 	return returns
@@ -215,6 +243,26 @@ func (j *jsiiProxy_AlertPolicy) ConstructNodeMetadata() *map[string]interface{} 
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlertPolicy) Cooldown() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cooldown",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlertPolicy) CooldownInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cooldownInput",
 		&returns,
 	)
 	return returns
@@ -471,7 +519,7 @@ func (j *jsiiProxy_AlertPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/alert_policy nobl9_alert_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/alert_policy nobl9_alert_policy} Resource.
 func NewAlertPolicy(scope constructs.Construct, id *string, config *AlertPolicyConfig) AlertPolicy {
 	_init_.Initialize()
 
@@ -489,7 +537,7 @@ func NewAlertPolicy(scope constructs.Construct, id *string, config *AlertPolicyC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/alert_policy nobl9_alert_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/alert_policy nobl9_alert_policy} Resource.
 func NewAlertPolicy_Override(a AlertPolicy, scope constructs.Construct, id *string, config *AlertPolicyConfig) {
 	_init_.Initialize()
 
@@ -500,6 +548,17 @@ func NewAlertPolicy_Override(a AlertPolicy, scope constructs.Construct, id *stri
 	)
 }
 
+func (j *jsiiProxy_AlertPolicy)SetAnnotations(val *map[string]*string) {
+	if err := j.validateSetAnnotationsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"annotations",
+		val,
+	)
+}
+
 func (j *jsiiProxy_AlertPolicy)SetConnection(val interface{}) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
@@ -507,6 +566,17 @@ func (j *jsiiProxy_AlertPolicy)SetConnection(val interface{}) {
 	_jsii_.Set(
 		j,
 		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AlertPolicy)SetCooldown(val *string) {
+	if err := j.validateSetCooldownParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cooldown",
 		val,
 	)
 }
@@ -1013,6 +1083,22 @@ func (a *jsiiProxy_AlertPolicy) ResetAlertMethod() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetAlertMethod",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlertPolicy) ResetAnnotations() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAnnotations",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlertPolicy) ResetCooldown() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetCooldown",
 		nil, // no parameters
 	)
 }

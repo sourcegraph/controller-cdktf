@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/nobl9/directnewrelic/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_newrelic nobl9_direct_newrelic}.
+// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_newrelic nobl9_direct_newrelic}.
 type DirectNewrelic interface {
 	cdktf.TerraformResource
 	AccountId() *float64
@@ -149,6 +149,7 @@ type DirectNewrelic interface {
 	ResetOverrideLogicalId()
 	ResetQueryDelay()
 	ResetReleaseChannel()
+	ResetSourceOf()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -578,7 +579,7 @@ func (j *jsiiProxy_DirectNewrelic) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_newrelic nobl9_direct_newrelic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_newrelic nobl9_direct_newrelic} Resource.
 func NewDirectNewrelic(scope constructs.Construct, id *string, config *DirectNewrelicConfig) DirectNewrelic {
 	_init_.Initialize()
 
@@ -596,7 +597,7 @@ func NewDirectNewrelic(scope constructs.Construct, id *string, config *DirectNew
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_newrelic nobl9_direct_newrelic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_newrelic nobl9_direct_newrelic} Resource.
 func NewDirectNewrelic_Override(d DirectNewrelic, scope constructs.Construct, id *string, config *DirectNewrelicConfig) {
 	_init_.Initialize()
 
@@ -1228,6 +1229,14 @@ func (d *jsiiProxy_DirectNewrelic) ResetReleaseChannel() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetReleaseChannel",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DirectNewrelic) ResetSourceOf() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSourceOf",
 		nil, // no parameters
 	)
 }

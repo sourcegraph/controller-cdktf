@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/nobl9/directlightstep/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_lightstep nobl9_direct_lightstep}.
+// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_lightstep nobl9_direct_lightstep}.
 type DirectLightstep interface {
 	cdktf.TerraformResource
 	AppToken() *string
@@ -96,6 +96,9 @@ type DirectLightstep interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Url() *string
+	SetUrl(val *string)
+	UrlInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -152,6 +155,8 @@ type DirectLightstep interface {
 	ResetOverrideLogicalId()
 	ResetQueryDelay()
 	ResetReleaseChannel()
+	ResetSourceOf()
+	ResetUrl()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -600,8 +605,28 @@ func (j *jsiiProxy_DirectLightstep) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DirectLightstep) Url() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"url",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_lightstep nobl9_direct_lightstep} Resource.
+func (j *jsiiProxy_DirectLightstep) UrlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"urlInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_lightstep nobl9_direct_lightstep} Resource.
 func NewDirectLightstep(scope constructs.Construct, id *string, config *DirectLightstepConfig) DirectLightstep {
 	_init_.Initialize()
 
@@ -619,7 +644,7 @@ func NewDirectLightstep(scope constructs.Construct, id *string, config *DirectLi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/direct_lightstep nobl9_direct_lightstep} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_lightstep nobl9_direct_lightstep} Resource.
 func NewDirectLightstep_Override(d DirectLightstep, scope constructs.Construct, id *string, config *DirectLightstepConfig) {
 	_init_.Initialize()
 
@@ -815,6 +840,17 @@ func (j *jsiiProxy_DirectLightstep)SetSourceOf(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"sourceOf",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DirectLightstep)SetUrl(val *string) {
+	if err := j.validateSetUrlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"url",
 		val,
 	)
 }
@@ -1262,6 +1298,22 @@ func (d *jsiiProxy_DirectLightstep) ResetReleaseChannel() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetReleaseChannel",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DirectLightstep) ResetSourceOf() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSourceOf",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DirectLightstep) ResetUrl() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetUrl",
 		nil, // no parameters
 	)
 }

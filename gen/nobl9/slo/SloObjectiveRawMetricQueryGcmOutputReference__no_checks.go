@@ -64,6 +64,10 @@ func (j *jsiiProxy_SloObjectiveRawMetricQueryGcmOutputReference) validateSetProj
 	return nil
 }
 
+func (j *jsiiProxy_SloObjectiveRawMetricQueryGcmOutputReference) validateSetPromqlParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SloObjectiveRawMetricQueryGcmOutputReference) validateSetQueryParameters(val *string) error {
 	return nil
 }

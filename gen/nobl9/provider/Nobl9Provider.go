@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/nobl9/provider/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs nobl9}.
+// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs nobl9}.
 type Nobl9Provider interface {
 	cdktf.TerraformProvider
 	Alias() *string
@@ -62,6 +62,8 @@ type Nobl9Provider interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetAlias()
+	ResetClientId()
+	ResetClientSecret()
 	ResetIngestUrl()
 	ResetOktaAuthServer()
 	ResetOktaOrgUrl()
@@ -349,7 +351,7 @@ func (j *jsiiProxy_Nobl9Provider) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs nobl9} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs nobl9} Resource.
 func NewNobl9Provider(scope constructs.Construct, id *string, config *Nobl9ProviderConfig) Nobl9Provider {
 	_init_.Initialize()
 
@@ -367,7 +369,7 @@ func NewNobl9Provider(scope constructs.Construct, id *string, config *Nobl9Provi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs nobl9} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs nobl9} Resource.
 func NewNobl9Provider_Override(n Nobl9Provider, scope constructs.Construct, id *string, config *Nobl9ProviderConfig) {
 	_init_.Initialize()
 
@@ -571,6 +573,22 @@ func (n *jsiiProxy_Nobl9Provider) ResetAlias() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetAlias",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_Nobl9Provider) ResetClientId() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetClientId",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_Nobl9Provider) ResetClientSecret() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetClientSecret",
 		nil, // no parameters
 	)
 }

@@ -195,6 +195,14 @@ func (j *jsiiProxy_SloObjectiveCountMetricsTotalGcmOutputReference) validateSetP
 	return nil
 }
 
+func (j *jsiiProxy_SloObjectiveCountMetricsTotalGcmOutputReference) validateSetPromqlParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SloObjectiveCountMetricsTotalGcmOutputReference) validateSetQueryParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

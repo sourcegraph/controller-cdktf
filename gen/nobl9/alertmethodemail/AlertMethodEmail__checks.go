@@ -252,14 +252,6 @@ func (j *jsiiProxy_AlertMethodEmail) validateSetBccParameters(val *[]*string) er
 	return nil
 }
 
-func (j *jsiiProxy_AlertMethodEmail) validateSetBodyParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_AlertMethodEmail) validateSetCcParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -447,14 +439,6 @@ func (j *jsiiProxy_AlertMethodEmail) validateSetProvisionersParameters(val *[]in
 				return fmt.Errorf("parameter val[%#v] must be one of the allowed types: *cdktf.FileProvisioner, *cdktf.LocalExecProvisioner, *cdktf.RemoteExecProvisioner; received %#v (a %T)", idx_97dfc6, v, v)
 			}
 		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_AlertMethodEmail) validateSetSubjectParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

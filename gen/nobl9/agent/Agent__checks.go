@@ -336,6 +336,17 @@ func (a *jsiiProxy_Agent) validatePutHistoricalDataRetrievalParameters(value *Ag
 	return nil
 }
 
+func (a *jsiiProxy_Agent) validatePutHoneycombConfigParameters(value *AgentHoneycombConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (a *jsiiProxy_Agent) validatePutInfluxdbConfigParameters(value *AgentInfluxdbConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -359,6 +370,17 @@ func (a *jsiiProxy_Agent) validatePutInstanaConfigParameters(value *AgentInstana
 }
 
 func (a *jsiiProxy_Agent) validatePutLightstepConfigParameters(value *AgentLightstepConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (a *jsiiProxy_Agent) validatePutLogicMonitorConfigParameters(value *AgentLogicMonitorConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

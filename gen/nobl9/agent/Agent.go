@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/nobl9/agent/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/agent nobl9_agent}.
+// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/agent nobl9_agent}.
 type Agent interface {
 	cdktf.TerraformResource
 	AgentType() *string
@@ -71,6 +71,8 @@ type Agent interface {
 	GraphiteConfigInput() *AgentGraphiteConfig
 	HistoricalDataRetrieval() AgentHistoricalDataRetrievalOutputReference
 	HistoricalDataRetrievalInput() *AgentHistoricalDataRetrieval
+	HoneycombConfig() AgentHoneycombConfigOutputReference
+	HoneycombConfigInput() *AgentHoneycombConfig
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -84,6 +86,8 @@ type Agent interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	LightstepConfig() AgentLightstepConfigOutputReference
 	LightstepConfigInput() *AgentLightstepConfig
+	LogicMonitorConfig() AgentLogicMonitorConfigOutputReference
+	LogicMonitorConfigInput() *AgentLogicMonitorConfig
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -190,9 +194,11 @@ type Agent interface {
 	PutGrafanaLokiConfig(value *AgentGrafanaLokiConfig)
 	PutGraphiteConfig(value *AgentGraphiteConfig)
 	PutHistoricalDataRetrieval(value *AgentHistoricalDataRetrieval)
+	PutHoneycombConfig(value *AgentHoneycombConfig)
 	PutInfluxdbConfig(value *AgentInfluxdbConfig)
 	PutInstanaConfig(value *AgentInstanaConfig)
 	PutLightstepConfig(value *AgentLightstepConfig)
+	PutLogicMonitorConfig(value *AgentLogicMonitorConfig)
 	PutNewrelicConfig(value *AgentNewrelicConfig)
 	PutOpentsdbConfig(value *AgentOpentsdbConfig)
 	PutPingdomConfig(value *AgentPingdomConfig)
@@ -217,10 +223,12 @@ type Agent interface {
 	ResetGrafanaLokiConfig()
 	ResetGraphiteConfig()
 	ResetHistoricalDataRetrieval()
+	ResetHoneycombConfig()
 	ResetId()
 	ResetInfluxdbConfig()
 	ResetInstanaConfig()
 	ResetLightstepConfig()
+	ResetLogicMonitorConfig()
 	ResetNewrelicConfig()
 	ResetOpentsdbConfig()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -231,6 +239,7 @@ type Agent interface {
 	ResetQueryDelay()
 	ResetRedshiftConfig()
 	ResetReleaseChannel()
+	ResetSourceOf()
 	ResetSplunkConfig()
 	ResetSplunkObservabilityConfig()
 	ResetSumologicConfig()
@@ -653,6 +662,26 @@ func (j *jsiiProxy_Agent) HistoricalDataRetrievalInput() *AgentHistoricalDataRet
 	return returns
 }
 
+func (j *jsiiProxy_Agent) HoneycombConfig() AgentHoneycombConfigOutputReference {
+	var returns AgentHoneycombConfigOutputReference
+	_jsii_.Get(
+		j,
+		"honeycombConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Agent) HoneycombConfigInput() *AgentHoneycombConfig {
+	var returns *AgentHoneycombConfig
+	_jsii_.Get(
+		j,
+		"honeycombConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Agent) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -738,6 +767,26 @@ func (j *jsiiProxy_Agent) LightstepConfigInput() *AgentLightstepConfig {
 	_jsii_.Get(
 		j,
 		"lightstepConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Agent) LogicMonitorConfig() AgentLogicMonitorConfigOutputReference {
+	var returns AgentLogicMonitorConfigOutputReference
+	_jsii_.Get(
+		j,
+		"logicMonitorConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Agent) LogicMonitorConfigInput() *AgentLogicMonitorConfig {
+	var returns *AgentLogicMonitorConfig
+	_jsii_.Get(
+		j,
+		"logicMonitorConfigInput",
 		&returns,
 	)
 	return returns
@@ -1104,7 +1153,7 @@ func (j *jsiiProxy_Agent) ThousandeyesConfigInput() *AgentThousandeyesConfig {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/agent nobl9_agent} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/agent nobl9_agent} Resource.
 func NewAgent(scope constructs.Construct, id *string, config *AgentConfig) Agent {
 	_init_.Initialize()
 
@@ -1122,7 +1171,7 @@ func NewAgent(scope constructs.Construct, id *string, config *AgentConfig) Agent
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/agent nobl9_agent} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/agent nobl9_agent} Resource.
 func NewAgent_Override(a Agent, scope constructs.Construct, id *string, config *AgentConfig) {
 	_init_.Initialize()
 
@@ -1774,6 +1823,17 @@ func (a *jsiiProxy_Agent) PutHistoricalDataRetrieval(value *AgentHistoricalDataR
 	)
 }
 
+func (a *jsiiProxy_Agent) PutHoneycombConfig(value *AgentHoneycombConfig) {
+	if err := a.validatePutHoneycombConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putHoneycombConfig",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_Agent) PutInfluxdbConfig(value *AgentInfluxdbConfig) {
 	if err := a.validatePutInfluxdbConfigParameters(value); err != nil {
 		panic(err)
@@ -1803,6 +1863,17 @@ func (a *jsiiProxy_Agent) PutLightstepConfig(value *AgentLightstepConfig) {
 	_jsii_.InvokeVoid(
 		a,
 		"putLightstepConfig",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_Agent) PutLogicMonitorConfig(value *AgentLogicMonitorConfig) {
+	if err := a.validatePutLogicMonitorConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putLogicMonitorConfig",
 		[]interface{}{value},
 	)
 }
@@ -2029,6 +2100,14 @@ func (a *jsiiProxy_Agent) ResetHistoricalDataRetrieval() {
 	)
 }
 
+func (a *jsiiProxy_Agent) ResetHoneycombConfig() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetHoneycombConfig",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_Agent) ResetId() {
 	_jsii_.InvokeVoid(
 		a,
@@ -2057,6 +2136,14 @@ func (a *jsiiProxy_Agent) ResetLightstepConfig() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetLightstepConfig",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_Agent) ResetLogicMonitorConfig() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetLogicMonitorConfig",
 		nil, // no parameters
 	)
 }
@@ -2121,6 +2208,14 @@ func (a *jsiiProxy_Agent) ResetReleaseChannel() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetReleaseChannel",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_Agent) ResetSourceOf() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetSourceOf",
 		nil, // no parameters
 	)
 }

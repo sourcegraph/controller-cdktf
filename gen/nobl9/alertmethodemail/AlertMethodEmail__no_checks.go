@@ -92,10 +92,6 @@ func (j *jsiiProxy_AlertMethodEmail) validateSetBccParameters(val *[]*string) er
 	return nil
 }
 
-func (j *jsiiProxy_AlertMethodEmail) validateSetBodyParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_AlertMethodEmail) validateSetCcParameters(val *[]*string) error {
 	return nil
 }
@@ -133,10 +129,6 @@ func (j *jsiiProxy_AlertMethodEmail) validateSetProjectParameters(val *string) e
 }
 
 func (j *jsiiProxy_AlertMethodEmail) validateSetProvisionersParameters(val *[]interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_AlertMethodEmail) validateSetSubjectParameters(val *string) error {
 	return nil
 }
 

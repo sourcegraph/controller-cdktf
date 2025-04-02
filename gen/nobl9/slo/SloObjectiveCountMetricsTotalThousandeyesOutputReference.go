@@ -40,6 +40,9 @@ type SloObjectiveCountMetricsTotalThousandeyesOutputReference interface {
 	TestId() *float64
 	SetTestId(val *float64)
 	TestIdInput() *float64
+	TestType() *string
+	SetTestType(val *string)
+	TestTypeInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -64,6 +67,7 @@ type SloObjectiveCountMetricsTotalThousandeyesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetTestType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -169,6 +173,26 @@ func (j *jsiiProxy_SloObjectiveCountMetricsTotalThousandeyesOutputReference) Tes
 	return returns
 }
 
+func (j *jsiiProxy_SloObjectiveCountMetricsTotalThousandeyesOutputReference) TestType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"testType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SloObjectiveCountMetricsTotalThousandeyesOutputReference) TestTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"testTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewSloObjectiveCountMetricsTotalThousandeyesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SloObjectiveCountMetricsTotalThousandeyesOutputReference {
 	_init_.Initialize()
@@ -259,6 +283,17 @@ func (j *jsiiProxy_SloObjectiveCountMetricsTotalThousandeyesOutputReference)SetT
 	_jsii_.Set(
 		j,
 		"testId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SloObjectiveCountMetricsTotalThousandeyesOutputReference)SetTestType(val *string) {
+	if err := j.validateSetTestTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"testType",
 		val,
 	)
 }
@@ -447,6 +482,14 @@ func (s *jsiiProxy_SloObjectiveCountMetricsTotalThousandeyesOutputReference) Int
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_SloObjectiveCountMetricsTotalThousandeyesOutputReference) ResetTestType() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTestType",
+		nil, // no parameters
+	)
 }
 
 func (s *jsiiProxy_SloObjectiveCountMetricsTotalThousandeyesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

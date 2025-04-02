@@ -9,9 +9,12 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/nobl9/project/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/project nobl9_project}.
+// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/project nobl9_project}.
 type Project interface {
 	cdktf.TerraformResource
+	Annotations() *map[string]*string
+	SetAnnotations(val *map[string]*string)
+	AnnotationsInput() *map[string]*string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -116,6 +119,7 @@ type Project interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutLabel(value interface{})
+	ResetAnnotations()
 	ResetDescription()
 	ResetDisplayName()
 	ResetId()
@@ -139,6 +143,26 @@ type Project interface {
 // The jsii proxy struct for Project
 type jsiiProxy_Project struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_Project) Annotations() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"annotations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) AnnotationsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"annotationsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_Project) CdktfStack() cdktf.TerraformStack {
@@ -402,7 +426,7 @@ func (j *jsiiProxy_Project) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/project nobl9_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/project nobl9_project} Resource.
 func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) Project {
 	_init_.Initialize()
 
@@ -420,7 +444,7 @@ func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) P
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/project nobl9_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/project nobl9_project} Resource.
 func NewProject_Override(p Project, scope constructs.Construct, id *string, config *ProjectConfig) {
 	_init_.Initialize()
 
@@ -428,6 +452,17 @@ func NewProject_Override(p Project, scope constructs.Construct, id *string, conf
 		"@cdktf/provider-nobl9.project.Project",
 		[]interface{}{scope, id, config},
 		p,
+	)
+}
+
+func (j *jsiiProxy_Project)SetAnnotations(val *map[string]*string) {
+	if err := j.validateSetAnnotationsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"annotations",
+		val,
 	)
 }
 
@@ -904,6 +939,14 @@ func (p *jsiiProxy_Project) PutLabel(value interface{}) {
 		p,
 		"putLabel",
 		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_Project) ResetAnnotations() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAnnotations",
+		nil, // no parameters
 	)
 }
 

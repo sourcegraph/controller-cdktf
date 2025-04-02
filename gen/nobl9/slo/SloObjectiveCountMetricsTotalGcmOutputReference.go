@@ -32,6 +32,9 @@ type SloObjectiveCountMetricsTotalGcmOutputReference interface {
 	ProjectId() *string
 	SetProjectId(val *string)
 	ProjectIdInput() *string
+	Promql() *string
+	SetPromql(val *string)
+	PromqlInput() *string
 	Query() *string
 	SetQuery(val *string)
 	QueryInput() *string
@@ -67,6 +70,8 @@ type SloObjectiveCountMetricsTotalGcmOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetPromql()
+	ResetQuery()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -147,6 +152,26 @@ func (j *jsiiProxy_SloObjectiveCountMetricsTotalGcmOutputReference) ProjectIdInp
 	_jsii_.Get(
 		j,
 		"projectIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SloObjectiveCountMetricsTotalGcmOutputReference) Promql() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"promql",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SloObjectiveCountMetricsTotalGcmOutputReference) PromqlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"promqlInput",
 		&returns,
 	)
 	return returns
@@ -260,6 +285,17 @@ func (j *jsiiProxy_SloObjectiveCountMetricsTotalGcmOutputReference)SetProjectId(
 	_jsii_.Set(
 		j,
 		"projectId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SloObjectiveCountMetricsTotalGcmOutputReference)SetPromql(val *string) {
+	if err := j.validateSetPromqlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"promql",
 		val,
 	)
 }
@@ -481,6 +517,22 @@ func (s *jsiiProxy_SloObjectiveCountMetricsTotalGcmOutputReference) Interpolatio
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_SloObjectiveCountMetricsTotalGcmOutputReference) ResetPromql() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetPromql",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SloObjectiveCountMetricsTotalGcmOutputReference) ResetQuery() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetQuery",
+		nil, // no parameters
+	)
 }
 
 func (s *jsiiProxy_SloObjectiveCountMetricsTotalGcmOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

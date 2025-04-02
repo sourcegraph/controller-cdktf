@@ -235,6 +235,17 @@ func (s *jsiiProxy_Service) validatePutLabelParameters(value interface{}) error 
 	return nil
 }
 
+func (s *jsiiProxy_Service) validatePutStatusParameters(value *ServiceStatus) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func validateService_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
@@ -270,6 +281,14 @@ func validateService_IsTerraformElementParameters(x interface{}) error {
 func validateService_IsTerraformResourceParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_Service) validateSetAnnotationsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil
@@ -374,14 +393,6 @@ func (j *jsiiProxy_Service) validateSetDescriptionParameters(val *string) error 
 }
 
 func (j *jsiiProxy_Service) validateSetDisplayNameParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_Service) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

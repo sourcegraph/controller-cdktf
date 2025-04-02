@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/nobl9/alertmethodjira/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/alert_method_jira nobl9_alert_method_jira}.
+// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/alert_method_jira nobl9_alert_method_jira}.
 type AlertMethodJira interface {
 	cdktf.TerraformResource
 	Apitoken() *string
@@ -494,7 +494,7 @@ func (j *jsiiProxy_AlertMethodJira) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/alert_method_jira nobl9_alert_method_jira} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/alert_method_jira nobl9_alert_method_jira} Resource.
 func NewAlertMethodJira(scope constructs.Construct, id *string, config *AlertMethodJiraConfig) AlertMethodJira {
 	_init_.Initialize()
 
@@ -512,7 +512,7 @@ func NewAlertMethodJira(scope constructs.Construct, id *string, config *AlertMet
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/alert_method_jira nobl9_alert_method_jira} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/alert_method_jira nobl9_alert_method_jira} Resource.
 func NewAlertMethodJira_Override(a AlertMethodJira, scope constructs.Construct, id *string, config *AlertMethodJiraConfig) {
 	_init_.Initialize()
 

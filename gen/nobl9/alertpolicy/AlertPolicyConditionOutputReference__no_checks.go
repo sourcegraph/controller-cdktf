@@ -48,6 +48,10 @@ func (a *jsiiProxy_AlertPolicyConditionOutputReference) validateResolveParameter
 	return nil
 }
 
+func (j *jsiiProxy_AlertPolicyConditionOutputReference) validateSetAlertingWindowParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AlertPolicyConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -65,6 +69,10 @@ func (j *jsiiProxy_AlertPolicyConditionOutputReference) validateSetLastsForParam
 }
 
 func (j *jsiiProxy_AlertPolicyConditionOutputReference) validateSetMeasurementParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AlertPolicyConditionOutputReference) validateSetOpParameters(val *string) error {
 	return nil
 }
 

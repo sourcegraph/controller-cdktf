@@ -88,6 +88,10 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutGraphi
 	return nil
 }
 
+func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutHoneycombParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutInfluxdbParameters(value interface{}) error {
 	return nil
 }
@@ -97,6 +101,10 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutInstan
 }
 
 func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutLightstepParameters(value interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutLogicMonitorParameters(value interface{}) error {
 	return nil
 }
 

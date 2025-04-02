@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/nobl9/alertmethodmsteams/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/alert_method_msteams nobl9_alert_method_msteams}.
+// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/alert_method_msteams nobl9_alert_method_msteams}.
 type AlertMethodMsteams interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -425,7 +425,7 @@ func (j *jsiiProxy_AlertMethodMsteams) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/alert_method_msteams nobl9_alert_method_msteams} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/alert_method_msteams nobl9_alert_method_msteams} Resource.
 func NewAlertMethodMsteams(scope constructs.Construct, id *string, config *AlertMethodMsteamsConfig) AlertMethodMsteams {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewAlertMethodMsteams(scope constructs.Construct, id *string, config *Alert
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/alert_method_msteams nobl9_alert_method_msteams} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/alert_method_msteams nobl9_alert_method_msteams} Resource.
 func NewAlertMethodMsteams_Override(a AlertMethodMsteams, scope constructs.Construct, id *string, config *AlertMethodMsteamsConfig) {
 	_init_.Initialize()
 

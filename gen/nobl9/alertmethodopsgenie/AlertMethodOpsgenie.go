@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/nobl9/alertmethodopsgenie/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/alert_method_opsgenie nobl9_alert_method_opsgenie}.
+// Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/alert_method_opsgenie nobl9_alert_method_opsgenie}.
 type AlertMethodOpsgenie interface {
 	cdktf.TerraformResource
 	Auth() *string
@@ -448,7 +448,7 @@ func (j *jsiiProxy_AlertMethodOpsgenie) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/alert_method_opsgenie nobl9_alert_method_opsgenie} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/alert_method_opsgenie nobl9_alert_method_opsgenie} Resource.
 func NewAlertMethodOpsgenie(scope constructs.Construct, id *string, config *AlertMethodOpsgenieConfig) AlertMethodOpsgenie {
 	_init_.Initialize()
 
@@ -466,7 +466,7 @@ func NewAlertMethodOpsgenie(scope constructs.Construct, id *string, config *Aler
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.22.0/docs/resources/alert_method_opsgenie nobl9_alert_method_opsgenie} Resource.
+// Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/alert_method_opsgenie nobl9_alert_method_opsgenie} Resource.
 func NewAlertMethodOpsgenie_Override(a AlertMethodOpsgenie, scope constructs.Construct, id *string, config *AlertMethodOpsgenieConfig) {
 	_init_.Initialize()
 

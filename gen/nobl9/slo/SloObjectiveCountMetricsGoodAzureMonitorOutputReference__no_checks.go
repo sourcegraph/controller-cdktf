@@ -48,6 +48,10 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodAzureMonitorOutputReference) vali
 	return nil
 }
 
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodAzureMonitorOutputReference) validatePutWorkspaceParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SloObjectiveCountMetricsGoodAzureMonitorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -64,7 +68,15 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodAzureMonitorOutputReference) vali
 	return nil
 }
 
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodAzureMonitorOutputReference) validateSetDataTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SloObjectiveCountMetricsGoodAzureMonitorOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodAzureMonitorOutputReference) validateSetKqlQueryParameters(val *string) error {
 	return nil
 }
 
