@@ -2,7 +2,7 @@ name: nobl9
 
 provider:
   source: registry.terraform.io/nobl9/nobl9
-  version: 0.22.0
+  version: 0.37.0
 
 target:
   language: go
