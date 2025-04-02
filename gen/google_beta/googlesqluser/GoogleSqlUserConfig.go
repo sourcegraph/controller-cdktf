@@ -21,11 +21,11 @@ type GoogleSqlUserConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the Cloud SQL instance. Changing this forces a new resource to be created.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_sql_user#instance GoogleSqlUser#instance}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_sql_user#instance GoogleSqlUser#instance}
 	Instance *string `field:"required" json:"instance" yaml:"instance"`
 	// The name of the user. Changing this forces a new resource to be created.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_sql_user#name GoogleSqlUser#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_sql_user#name GoogleSqlUser#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The deletion policy for the user.
 	//
@@ -33,15 +33,15 @@ type GoogleSqlUserConfig struct {
 	// 				to be abandoned rather than deleted. This is useful for Postgres, where users cannot be deleted from the API if they
 	// 				have been granted SQL roles. Possible values are: "ABANDON".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_sql_user#deletion_policy GoogleSqlUser#deletion_policy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_sql_user#deletion_policy GoogleSqlUser#deletion_policy}
 	DeletionPolicy *string `field:"optional" json:"deletionPolicy" yaml:"deletionPolicy"`
 	// The host the user can connect from.
 	//
 	// This is only supported for MySQL instances. Don't set this field for PostgreSQL instances. Can be an IP address. Changing this forces a new resource to be created.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_sql_user#host GoogleSqlUser#host}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_sql_user#host GoogleSqlUser#host}
 	Host *string `field:"optional" json:"host" yaml:"host"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_sql_user#id GoogleSqlUser#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_sql_user#id GoogleSqlUser#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -51,28 +51,28 @@ type GoogleSqlUserConfig struct {
 	// Can be updated. For Postgres instances this is a Required field, unless type is set to
 	// 				either CLOUD_IAM_USER or CLOUD_IAM_SERVICE_ACCOUNT.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_sql_user#password GoogleSqlUser#password}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_sql_user#password GoogleSqlUser#password}
 	Password *string `field:"optional" json:"password" yaml:"password"`
 	// password_policy block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_sql_user#password_policy GoogleSqlUser#password_policy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_sql_user#password_policy GoogleSqlUser#password_policy}
 	PasswordPolicy *GoogleSqlUserPasswordPolicy `field:"optional" json:"passwordPolicy" yaml:"passwordPolicy"`
 	// The ID of the project in which the resource belongs.
 	//
 	// If it is not provided, the provider project is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_sql_user#project GoogleSqlUser#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_sql_user#project GoogleSqlUser#project}
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_sql_user#timeouts GoogleSqlUser#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_sql_user#timeouts GoogleSqlUser#timeouts}
 	Timeouts *GoogleSqlUserTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 	// The user type.
 	//
 	// It determines the method to authenticate the user during login.
 	// 				The default is the database's built-in user type.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_sql_user#type GoogleSqlUser#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_sql_user#type GoogleSqlUser#type}
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
 

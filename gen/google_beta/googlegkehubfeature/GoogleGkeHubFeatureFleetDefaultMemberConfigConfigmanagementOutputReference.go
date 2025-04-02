@@ -31,6 +31,9 @@ type GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementOutputReference 
 	Fqn() *string
 	InternalValue() *GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagement
 	SetInternalValue(val *GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagement)
+	Management() *string
+	SetManagement(val *string)
+	ManagementInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -68,6 +71,7 @@ type GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementOutputReference 
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutConfigSync(value *GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSync)
 	ResetConfigSync()
+	ResetManagement()
 	ResetVersion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -149,6 +153,26 @@ func (j *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementOu
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementOutputReference) Management() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"management",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementOutputReference) ManagementInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"managementInput",
 		&returns,
 	)
 	return returns
@@ -251,6 +275,17 @@ func (j *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementOu
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementOutputReference)SetManagement(val *string) {
+	if err := j.validateSetManagementParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"management",
 		val,
 	)
 }
@@ -489,6 +524,14 @@ func (g *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementOu
 	_jsii_.InvokeVoid(
 		g,
 		"resetConfigSync",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementOutputReference) ResetManagement() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetManagement",
 		nil, // no parameters
 	)
 }

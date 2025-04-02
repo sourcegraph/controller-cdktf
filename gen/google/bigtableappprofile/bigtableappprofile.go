@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/bigtableappprofile/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/bigtable_app_profile google_bigtable_app_profile}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/bigtable_app_profile google_bigtable_app_profile}.
 type BigtableAppProfile interface {
 	cdktf.TerraformResource
 	AppProfileId() *string
@@ -27,6 +27,8 @@ type BigtableAppProfile interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DataBoostIsolationReadOnly() BigtableAppProfileDataBoostIsolationReadOnlyOutputReference
+	DataBoostIsolationReadOnlyInput() *BigtableAppProfileDataBoostIsolationReadOnly
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -132,9 +134,11 @@ type BigtableAppProfile interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutDataBoostIsolationReadOnly(value *BigtableAppProfileDataBoostIsolationReadOnly)
 	PutSingleClusterRouting(value *BigtableAppProfileSingleClusterRouting)
 	PutStandardIsolation(value *BigtableAppProfileStandardIsolation)
 	PutTimeouts(value *BigtableAppProfileTimeouts)
+	ResetDataBoostIsolationReadOnly()
 	ResetDescription()
 	ResetId()
 	ResetIgnoreWarnings()
@@ -221,6 +225,26 @@ func (j *jsiiProxy_BigtableAppProfile) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigtableAppProfile) DataBoostIsolationReadOnly() BigtableAppProfileDataBoostIsolationReadOnlyOutputReference {
+	var returns BigtableAppProfileDataBoostIsolationReadOnlyOutputReference
+	_jsii_.Get(
+		j,
+		"dataBoostIsolationReadOnly",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigtableAppProfile) DataBoostIsolationReadOnlyInput() *BigtableAppProfileDataBoostIsolationReadOnly {
+	var returns *BigtableAppProfileDataBoostIsolationReadOnly
+	_jsii_.Get(
+		j,
+		"dataBoostIsolationReadOnlyInput",
 		&returns,
 	)
 	return returns
@@ -557,7 +581,7 @@ func (j *jsiiProxy_BigtableAppProfile) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/bigtable_app_profile google_bigtable_app_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/bigtable_app_profile google_bigtable_app_profile} Resource.
 func NewBigtableAppProfile(scope constructs.Construct, id *string, config *BigtableAppProfileConfig) BigtableAppProfile {
 	_init_.Initialize()
 
@@ -575,7 +599,7 @@ func NewBigtableAppProfile(scope constructs.Construct, id *string, config *Bigta
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/bigtable_app_profile google_bigtable_app_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/bigtable_app_profile google_bigtable_app_profile} Resource.
 func NewBigtableAppProfile_Override(b BigtableAppProfile, scope constructs.Construct, id *string, config *BigtableAppProfileConfig) {
 	_init_.Initialize()
 
@@ -1095,6 +1119,17 @@ func (b *jsiiProxy_BigtableAppProfile) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (b *jsiiProxy_BigtableAppProfile) PutDataBoostIsolationReadOnly(value *BigtableAppProfileDataBoostIsolationReadOnly) {
+	if err := b.validatePutDataBoostIsolationReadOnlyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putDataBoostIsolationReadOnly",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BigtableAppProfile) PutSingleClusterRouting(value *BigtableAppProfileSingleClusterRouting) {
 	if err := b.validatePutSingleClusterRoutingParameters(value); err != nil {
 		panic(err)
@@ -1125,6 +1160,14 @@ func (b *jsiiProxy_BigtableAppProfile) PutTimeouts(value *BigtableAppProfileTime
 		b,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (b *jsiiProxy_BigtableAppProfile) ResetDataBoostIsolationReadOnly() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetDataBoostIsolationReadOnly",
+		nil, // no parameters
 	)
 }
 

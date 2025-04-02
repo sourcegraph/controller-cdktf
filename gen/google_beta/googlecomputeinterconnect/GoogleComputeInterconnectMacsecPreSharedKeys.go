@@ -10,7 +10,7 @@ type GoogleComputeInterconnectMacsecPreSharedKeys struct {
 	//  must be a lowercase letter, and all following characters must be a dash, lowercase
 	//  letter, or digit, except the last character, which cannot be a dash.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_interconnect#name GoogleComputeInterconnect#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_compute_interconnect#name GoogleComputeInterconnect#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// If set to true, the Interconnect connection is configured with a should-secure MACsec security policy, that allows the Google router to fallback to cleartext traffic if the MKA session cannot be established.
 	//
@@ -18,7 +18,7 @@ type GoogleComputeInterconnectMacsecPreSharedKeys struct {
 	// connection is configured with a must-secure security policy that drops all traffic
 	// if the MKA session cannot be established with your router.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_interconnect#fail_open GoogleComputeInterconnect#fail_open}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_compute_interconnect#fail_open GoogleComputeInterconnect#fail_open}
 	FailOpen interface{} `field:"optional" json:"failOpen" yaml:"failOpen"`
 	// A RFC3339 timestamp on or after which the key is valid.
 	//
@@ -28,7 +28,7 @@ type GoogleComputeInterconnectMacsecPreSharedKeys struct {
 	// be in increasing order. The start times of two consecutive keys must be at least 6
 	// hours apart.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_interconnect#start_time GoogleComputeInterconnect#start_time}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_compute_interconnect#start_time GoogleComputeInterconnect#start_time}
 	StartTime *string `field:"optional" json:"startTime" yaml:"startTime"`
 }
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlebigquerydatasetaccess/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_bigquery_dataset_access google_bigquery_dataset_access}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_bigquery_dataset_access google_bigquery_dataset_access}.
 type GoogleBigqueryDatasetAccessA interface {
 	cdktf.TerraformResource
 	ApiUpdatedMember() cdktf.IResolvable
@@ -605,7 +605,7 @@ func (j *jsiiProxy_GoogleBigqueryDatasetAccessA) ViewInput() *GoogleBigqueryData
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_bigquery_dataset_access google_bigquery_dataset_access} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_bigquery_dataset_access google_bigquery_dataset_access} Resource.
 func NewGoogleBigqueryDatasetAccessA(scope constructs.Construct, id *string, config *GoogleBigqueryDatasetAccessAConfig) GoogleBigqueryDatasetAccessA {
 	_init_.Initialize()
 
@@ -623,7 +623,7 @@ func NewGoogleBigqueryDatasetAccessA(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_bigquery_dataset_access google_bigquery_dataset_access} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_bigquery_dataset_access google_bigquery_dataset_access} Resource.
 func NewGoogleBigqueryDatasetAccessA_Override(g GoogleBigqueryDatasetAccessA, scope constructs.Construct, id *string, config *GoogleBigqueryDatasetAccessAConfig) {
 	_init_.Initialize()
 

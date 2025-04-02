@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlenetworkserviceslbrouteextension/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_network_services_lb_route_extension google_network_services_lb_route_extension}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_network_services_lb_route_extension google_network_services_lb_route_extension}.
 type GoogleNetworkServicesLbRouteExtension interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -540,7 +540,7 @@ func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension) TimeoutsInput() interf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_network_services_lb_route_extension google_network_services_lb_route_extension} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_network_services_lb_route_extension google_network_services_lb_route_extension} Resource.
 func NewGoogleNetworkServicesLbRouteExtension(scope constructs.Construct, id *string, config *GoogleNetworkServicesLbRouteExtensionConfig) GoogleNetworkServicesLbRouteExtension {
 	_init_.Initialize()
 
@@ -558,7 +558,7 @@ func NewGoogleNetworkServicesLbRouteExtension(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_network_services_lb_route_extension google_network_services_lb_route_extension} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_network_services_lb_route_extension google_network_services_lb_route_extension} Resource.
 func NewGoogleNetworkServicesLbRouteExtension_Override(g GoogleNetworkServicesLbRouteExtension, scope constructs.Construct, id *string, config *GoogleNetworkServicesLbRouteExtensionConfig) {
 	_init_.Initialize()
 

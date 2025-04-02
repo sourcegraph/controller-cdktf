@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlevertexaifeaturestoreentitytypeiampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_vertex_ai_featurestore_entitytype_iam_policy google_vertex_ai_featurestore_entitytype_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_vertex_ai_featurestore_entitytype_iam_policy google_vertex_ai_featurestore_entitytype_iam_policy}.
 type GoogleVertexAiFeaturestoreEntitytypeIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -387,7 +387,7 @@ func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamPolicy) TerraformResou
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_vertex_ai_featurestore_entitytype_iam_policy google_vertex_ai_featurestore_entitytype_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_vertex_ai_featurestore_entitytype_iam_policy google_vertex_ai_featurestore_entitytype_iam_policy} Resource.
 func NewGoogleVertexAiFeaturestoreEntitytypeIamPolicy(scope constructs.Construct, id *string, config *GoogleVertexAiFeaturestoreEntitytypeIamPolicyConfig) GoogleVertexAiFeaturestoreEntitytypeIamPolicy {
 	_init_.Initialize()
 
@@ -405,7 +405,7 @@ func NewGoogleVertexAiFeaturestoreEntitytypeIamPolicy(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_vertex_ai_featurestore_entitytype_iam_policy google_vertex_ai_featurestore_entitytype_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_vertex_ai_featurestore_entitytype_iam_policy google_vertex_ai_featurestore_entitytype_iam_policy} Resource.
 func NewGoogleVertexAiFeaturestoreEntitytypeIamPolicy_Override(g GoogleVertexAiFeaturestoreEntitytypeIamPolicy, scope constructs.Construct, id *string, config *GoogleVertexAiFeaturestoreEntitytypeIamPolicyConfig) {
 	_init_.Initialize()
 

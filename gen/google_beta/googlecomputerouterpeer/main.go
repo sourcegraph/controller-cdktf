@@ -27,6 +27,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
+			_jsii_.MemberProperty{JsiiProperty: "customLearnedIpRanges", GoGetter: "CustomLearnedIpRanges"},
+			_jsii_.MemberProperty{JsiiProperty: "customLearnedIpRangesInput", GoGetter: "CustomLearnedIpRangesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "customLearnedRoutePriority", GoGetter: "CustomLearnedRoutePriority"},
+			_jsii_.MemberProperty{JsiiProperty: "customLearnedRoutePriorityInput", GoGetter: "CustomLearnedRoutePriorityInput"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
 			_jsii_.MemberProperty{JsiiProperty: "enable", GoGetter: "Enable"},
 			_jsii_.MemberProperty{JsiiProperty: "enableInput", GoGetter: "EnableInput"},
@@ -34,6 +38,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "enableIpv4Input", GoGetter: "EnableIpv4Input"},
 			_jsii_.MemberProperty{JsiiProperty: "enableIpv6", GoGetter: "EnableIpv6"},
 			_jsii_.MemberProperty{JsiiProperty: "enableIpv6Input", GoGetter: "EnableIpv6Input"},
+			_jsii_.MemberProperty{JsiiProperty: "exportPolicies", GoGetter: "ExportPolicies"},
+			_jsii_.MemberProperty{JsiiProperty: "exportPoliciesInput", GoGetter: "ExportPoliciesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
@@ -50,6 +56,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
+			_jsii_.MemberProperty{JsiiProperty: "importPolicies", GoGetter: "ImportPolicies"},
+			_jsii_.MemberProperty{JsiiProperty: "importPoliciesInput", GoGetter: "ImportPoliciesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "interface", GoGetter: "Interface"},
 			_jsii_.MemberProperty{JsiiProperty: "interfaceInput", GoGetter: "InterfaceInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -84,6 +92,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putAdvertisedIpRanges", GoMethod: "PutAdvertisedIpRanges"},
 			_jsii_.MemberMethod{JsiiMethod: "putBfd", GoMethod: "PutBfd"},
+			_jsii_.MemberMethod{JsiiMethod: "putCustomLearnedIpRanges", GoMethod: "PutCustomLearnedIpRanges"},
 			_jsii_.MemberMethod{JsiiMethod: "putMd5AuthenticationKey", GoMethod: "PutMd5AuthenticationKey"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
@@ -94,10 +103,14 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetAdvertisedRoutePriority", GoMethod: "ResetAdvertisedRoutePriority"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAdvertiseMode", GoMethod: "ResetAdvertiseMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBfd", GoMethod: "ResetBfd"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCustomLearnedIpRanges", GoMethod: "ResetCustomLearnedIpRanges"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCustomLearnedRoutePriority", GoMethod: "ResetCustomLearnedRoutePriority"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnable", GoMethod: "ResetEnable"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnableIpv4", GoMethod: "ResetEnableIpv4"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnableIpv6", GoMethod: "ResetEnableIpv6"},
+			_jsii_.MemberMethod{JsiiMethod: "resetExportPolicies", GoMethod: "ResetExportPolicies"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetImportPolicies", GoMethod: "ResetImportPolicies"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIpAddress", GoMethod: "ResetIpAddress"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIpv4NexthopAddress", GoMethod: "ResetIpv4NexthopAddress"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIpv6NexthopAddress", GoMethod: "ResetIpv6NexthopAddress"},
@@ -245,6 +258,66 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google-beta.googleComputeRouterPeer.GoogleComputeRouterPeerConfig",
 		reflect.TypeOf((*GoogleComputeRouterPeerConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google-beta.googleComputeRouterPeer.GoogleComputeRouterPeerCustomLearnedIpRanges",
+		reflect.TypeOf((*GoogleComputeRouterPeerCustomLearnedIpRanges)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google-beta.googleComputeRouterPeer.GoogleComputeRouterPeerCustomLearnedIpRangesList",
+		reflect.TypeOf((*GoogleComputeRouterPeerCustomLearnedIpRangesList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleComputeRouterPeerCustomLearnedIpRangesList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google-beta.googleComputeRouterPeer.GoogleComputeRouterPeerCustomLearnedIpRangesOutputReference",
+		reflect.TypeOf((*GoogleComputeRouterPeerCustomLearnedIpRangesOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "range", GoGetter: "Range"},
+			_jsii_.MemberProperty{JsiiProperty: "rangeInput", GoGetter: "RangeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleComputeRouterPeerCustomLearnedIpRangesOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google-beta.googleComputeRouterPeer.GoogleComputeRouterPeerMd5AuthenticationKey",

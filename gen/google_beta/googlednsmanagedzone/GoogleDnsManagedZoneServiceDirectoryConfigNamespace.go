@@ -9,7 +9,7 @@ type GoogleDnsManagedZoneServiceDirectoryConfigNamespace struct {
 	// or simply 'projects/{project}/locations/{location}/namespaces/{namespace_id}'
 	// Ignored for 'public' visibility zones.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_dns_managed_zone#namespace_url GoogleDnsManagedZone#namespace_url}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_dns_managed_zone#namespace_url GoogleDnsManagedZone#namespace_url}
 	NamespaceUrl *string `field:"required" json:"namespaceUrl" yaml:"namespaceUrl"`
 }
 

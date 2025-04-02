@@ -120,6 +120,10 @@ func validateBigqueryTable_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_BigqueryTable) validateSetAllowResourceTagsOnDeletionParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BigqueryTable) validateSetClusteringParameters(val *[]*string) error {
 	return nil
 }
@@ -177,6 +181,10 @@ func (j *jsiiProxy_BigqueryTable) validateSetProvisionersParameters(val *[]inter
 }
 
 func (j *jsiiProxy_BigqueryTable) validateSetRequirePartitionFilterParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_BigqueryTable) validateSetResourceTagsParameters(val *map[string]*string) error {
 	return nil
 }
 

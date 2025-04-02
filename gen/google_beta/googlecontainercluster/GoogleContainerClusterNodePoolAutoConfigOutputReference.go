@@ -31,6 +31,8 @@ type GoogleContainerClusterNodePoolAutoConfigOutputReference interface {
 	SetInternalValue(val *GoogleContainerClusterNodePoolAutoConfig)
 	NetworkTags() GoogleContainerClusterNodePoolAutoConfigNetworkTagsOutputReference
 	NetworkTagsInput() *GoogleContainerClusterNodePoolAutoConfigNetworkTags
+	NodeKubeletConfig() GoogleContainerClusterNodePoolAutoConfigNodeKubeletConfigOutputReference
+	NodeKubeletConfigInput() *GoogleContainerClusterNodePoolAutoConfigNodeKubeletConfig
 	ResourceManagerTags() *map[string]*string
 	SetResourceManagerTags(val *map[string]*string)
 	ResourceManagerTagsInput() *map[string]*string
@@ -67,7 +69,9 @@ type GoogleContainerClusterNodePoolAutoConfigOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutNetworkTags(value *GoogleContainerClusterNodePoolAutoConfigNetworkTags)
+	PutNodeKubeletConfig(value *GoogleContainerClusterNodePoolAutoConfigNodeKubeletConfig)
 	ResetNetworkTags()
+	ResetNodeKubeletConfig()
 	ResetResourceManagerTags()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -149,6 +153,26 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolAutoConfigOutputReference) Netw
 	_jsii_.Get(
 		j,
 		"networkTagsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolAutoConfigOutputReference) NodeKubeletConfig() GoogleContainerClusterNodePoolAutoConfigNodeKubeletConfigOutputReference {
+	var returns GoogleContainerClusterNodePoolAutoConfigNodeKubeletConfigOutputReference
+	_jsii_.Get(
+		j,
+		"nodeKubeletConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolAutoConfigOutputReference) NodeKubeletConfigInput() *GoogleContainerClusterNodePoolAutoConfigNodeKubeletConfig {
+	var returns *GoogleContainerClusterNodePoolAutoConfigNodeKubeletConfig
+	_jsii_.Get(
+		j,
+		"nodeKubeletConfigInput",
 		&returns,
 	)
 	return returns
@@ -485,10 +509,29 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolAutoConfigOutputReference) PutN
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerClusterNodePoolAutoConfigOutputReference) PutNodeKubeletConfig(value *GoogleContainerClusterNodePoolAutoConfigNodeKubeletConfig) {
+	if err := g.validatePutNodeKubeletConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putNodeKubeletConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerClusterNodePoolAutoConfigOutputReference) ResetNetworkTags() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetNetworkTags",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodePoolAutoConfigOutputReference) ResetNodeKubeletConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNodeKubeletConfig",
 		nil, // no parameters
 	)
 }

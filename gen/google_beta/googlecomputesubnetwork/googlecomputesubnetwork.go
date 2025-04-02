@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputesubnetwork/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_subnetwork google_compute_subnetwork}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_compute_subnetwork google_compute_subnetwork}.
 type GoogleComputeSubnetwork interface {
 	cdktf.TerraformResource
 	AllowSubnetCidrRoutesOverlap() interface{}
@@ -104,6 +104,9 @@ type GoogleComputeSubnetwork interface {
 	SecondaryIpRange() GoogleComputeSubnetworkSecondaryIpRangeList
 	SecondaryIpRangeInput() interface{}
 	SelfLink() *string
+	SendSecondaryIpRangeIfEmpty() interface{}
+	SetSendSecondaryIpRangeIfEmpty(val interface{})
+	SendSecondaryIpRangeIfEmptyInput() interface{}
 	StackType() *string
 	SetStackType(val *string)
 	StackTypeInput() *string
@@ -177,6 +180,7 @@ type GoogleComputeSubnetwork interface {
 	ResetRegion()
 	ResetRole()
 	ResetSecondaryIpRange()
+	ResetSendSecondaryIpRangeIfEmpty()
 	ResetStackType()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -707,6 +711,26 @@ func (j *jsiiProxy_GoogleComputeSubnetwork) SelfLink() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeSubnetwork) SendSecondaryIpRangeIfEmpty() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sendSecondaryIpRangeIfEmpty",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeSubnetwork) SendSecondaryIpRangeIfEmptyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sendSecondaryIpRangeIfEmptyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeSubnetwork) StackType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -778,7 +802,7 @@ func (j *jsiiProxy_GoogleComputeSubnetwork) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_subnetwork google_compute_subnetwork} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_compute_subnetwork google_compute_subnetwork} Resource.
 func NewGoogleComputeSubnetwork(scope constructs.Construct, id *string, config *GoogleComputeSubnetworkConfig) GoogleComputeSubnetwork {
 	_init_.Initialize()
 
@@ -796,7 +820,7 @@ func NewGoogleComputeSubnetwork(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_subnetwork google_compute_subnetwork} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_compute_subnetwork google_compute_subnetwork} Resource.
 func NewGoogleComputeSubnetwork_Override(g GoogleComputeSubnetwork, scope constructs.Construct, id *string, config *GoogleComputeSubnetworkConfig) {
 	_init_.Initialize()
 
@@ -1025,6 +1049,17 @@ func (j *jsiiProxy_GoogleComputeSubnetwork)SetRole(val *string) {
 	_jsii_.Set(
 		j,
 		"role",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeSubnetwork)SetSendSecondaryIpRangeIfEmpty(val interface{}) {
+	if err := j.validateSetSendSecondaryIpRangeIfEmptyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sendSecondaryIpRangeIfEmpty",
 		val,
 	)
 }
@@ -1534,6 +1569,14 @@ func (g *jsiiProxy_GoogleComputeSubnetwork) ResetSecondaryIpRange() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetSecondaryIpRange",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeSubnetwork) ResetSendSecondaryIpRangeIfEmpty() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSendSecondaryIpRangeIfEmpty",
 		nil, // no parameters
 	)
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleendpointsserviceiampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_endpoints_service_iam_policy google_endpoints_service_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_endpoints_service_iam_policy google_endpoints_service_iam_policy}.
 type GoogleEndpointsServiceIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -364,7 +364,7 @@ func (j *jsiiProxy_GoogleEndpointsServiceIamPolicy) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_endpoints_service_iam_policy google_endpoints_service_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_endpoints_service_iam_policy google_endpoints_service_iam_policy} Resource.
 func NewGoogleEndpointsServiceIamPolicy(scope constructs.Construct, id *string, config *GoogleEndpointsServiceIamPolicyConfig) GoogleEndpointsServiceIamPolicy {
 	_init_.Initialize()
 
@@ -382,7 +382,7 @@ func NewGoogleEndpointsServiceIamPolicy(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_endpoints_service_iam_policy google_endpoints_service_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_endpoints_service_iam_policy google_endpoints_service_iam_policy} Resource.
 func NewGoogleEndpointsServiceIamPolicy_Override(g GoogleEndpointsServiceIamPolicy, scope constructs.Construct, id *string, config *GoogleEndpointsServiceIamPolicyConfig) {
 	_init_.Initialize()
 

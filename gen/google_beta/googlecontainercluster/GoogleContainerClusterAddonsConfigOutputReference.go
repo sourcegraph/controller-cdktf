@@ -53,6 +53,8 @@ type GoogleContainerClusterAddonsConfigOutputReference interface {
 	KalmConfigInput() *GoogleContainerClusterAddonsConfigKalmConfig
 	NetworkPolicyConfig() GoogleContainerClusterAddonsConfigNetworkPolicyConfigOutputReference
 	NetworkPolicyConfigInput() *GoogleContainerClusterAddonsConfigNetworkPolicyConfig
+	RayOperatorConfig() GoogleContainerClusterAddonsConfigRayOperatorConfigList
+	RayOperatorConfigInput() interface{}
 	StatefulHaConfig() GoogleContainerClusterAddonsConfigStatefulHaConfigOutputReference
 	StatefulHaConfigInput() *GoogleContainerClusterAddonsConfigStatefulHaConfig
 	// Experimental.
@@ -99,6 +101,7 @@ type GoogleContainerClusterAddonsConfigOutputReference interface {
 	PutIstioConfig(value *GoogleContainerClusterAddonsConfigIstioConfig)
 	PutKalmConfig(value *GoogleContainerClusterAddonsConfigKalmConfig)
 	PutNetworkPolicyConfig(value *GoogleContainerClusterAddonsConfigNetworkPolicyConfig)
+	PutRayOperatorConfig(value interface{})
 	PutStatefulHaConfig(value *GoogleContainerClusterAddonsConfigStatefulHaConfig)
 	ResetCloudrunConfig()
 	ResetConfigConnectorConfig()
@@ -112,6 +115,7 @@ type GoogleContainerClusterAddonsConfigOutputReference interface {
 	ResetIstioConfig()
 	ResetKalmConfig()
 	ResetNetworkPolicyConfig()
+	ResetRayOperatorConfig()
 	ResetStatefulHaConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -413,6 +417,26 @@ func (j *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) NetworkPol
 	_jsii_.Get(
 		j,
 		"networkPolicyConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) RayOperatorConfig() GoogleContainerClusterAddonsConfigRayOperatorConfigList {
+	var returns GoogleContainerClusterAddonsConfigRayOperatorConfigList
+	_jsii_.Get(
+		j,
+		"rayOperatorConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) RayOperatorConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rayOperatorConfigInput",
 		&returns,
 	)
 	return returns
@@ -859,6 +883,17 @@ func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) PutNetwork
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) PutRayOperatorConfig(value interface{}) {
+	if err := g.validatePutRayOperatorConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putRayOperatorConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) PutStatefulHaConfig(value *GoogleContainerClusterAddonsConfigStatefulHaConfig) {
 	if err := g.validatePutStatefulHaConfigParameters(value); err != nil {
 		panic(err)
@@ -962,6 +997,14 @@ func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) ResetNetwo
 	_jsii_.InvokeVoid(
 		g,
 		"resetNetworkPolicyConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) ResetRayOperatorConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRayOperatorConfig",
 		nil, // no parameters
 	)
 }

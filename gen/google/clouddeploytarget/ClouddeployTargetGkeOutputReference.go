@@ -35,6 +35,9 @@ type ClouddeployTargetGkeOutputReference interface {
 	InternalIpInput() interface{}
 	InternalValue() *ClouddeployTargetGke
 	SetInternalValue(val *ClouddeployTargetGke)
+	ProxyUrl() *string
+	SetProxyUrl(val *string)
+	ProxyUrlInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -69,6 +72,7 @@ type ClouddeployTargetGkeOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetCluster()
 	ResetInternalIp()
+	ResetProxyUrl()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -174,6 +178,26 @@ func (j *jsiiProxy_ClouddeployTargetGkeOutputReference) InternalValue() *Cloudde
 	return returns
 }
 
+func (j *jsiiProxy_ClouddeployTargetGkeOutputReference) ProxyUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"proxyUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClouddeployTargetGkeOutputReference) ProxyUrlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"proxyUrlInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ClouddeployTargetGkeOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -273,6 +297,17 @@ func (j *jsiiProxy_ClouddeployTargetGkeOutputReference)SetInternalValue(val *Clo
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ClouddeployTargetGkeOutputReference)SetProxyUrl(val *string) {
+	if err := j.validateSetProxyUrlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"proxyUrl",
 		val,
 	)
 }
@@ -497,6 +532,14 @@ func (c *jsiiProxy_ClouddeployTargetGkeOutputReference) ResetInternalIp() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetInternalIp",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ClouddeployTargetGkeOutputReference) ResetProxyUrl() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetProxyUrl",
 		nil, // no parameters
 	)
 }

@@ -67,6 +67,9 @@ type GoogleSqlDatabaseInstanceSettingsOutputReference interface {
 	Edition() *string
 	SetEdition(val *string)
 	EditionInput() *string
+	EnableDataplexIntegration() interface{}
+	SetEnableDataplexIntegration(val interface{})
+	EnableDataplexIntegrationInput() interface{}
 	EnableGoogleMlIntegration() interface{}
 	SetEnableGoogleMlIntegration(val interface{})
 	EnableGoogleMlIntegrationInput() interface{}
@@ -159,6 +162,7 @@ type GoogleSqlDatabaseInstanceSettingsOutputReference interface {
 	ResetDiskSize()
 	ResetDiskType()
 	ResetEdition()
+	ResetEnableDataplexIntegration()
 	ResetEnableGoogleMlIntegration()
 	ResetInsightsConfig()
 	ResetIpConfiguration()
@@ -529,6 +533,26 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) EditionInpu
 	_jsii_.Get(
 		j,
 		"editionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) EnableDataplexIntegration() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableDataplexIntegration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) EnableDataplexIntegrationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableDataplexIntegrationInput",
 		&returns,
 	)
 	return returns
@@ -960,6 +984,17 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetEdition(v
 	_jsii_.Set(
 		j,
 		"edition",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetEnableDataplexIntegration(val interface{}) {
+	if err := j.validateSetEnableDataplexIntegrationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableDataplexIntegration",
 		val,
 	)
 }
@@ -1494,6 +1529,14 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ResetEditio
 	_jsii_.InvokeVoid(
 		g,
 		"resetEdition",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ResetEnableDataplexIntegration() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnableDataplexIntegration",
 		nil, // no parameters
 	)
 }

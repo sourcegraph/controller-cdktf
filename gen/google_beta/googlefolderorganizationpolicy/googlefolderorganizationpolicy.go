@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlefolderorganizationpolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_folder_organization_policy google_folder_organization_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_folder_organization_policy google_folder_organization_policy}.
 type GoogleFolderOrganizationPolicy interface {
 	cdktf.TerraformResource
 	BooleanPolicy() GoogleFolderOrganizationPolicyBooleanPolicyOutputReference
@@ -495,7 +495,7 @@ func (j *jsiiProxy_GoogleFolderOrganizationPolicy) VersionInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_folder_organization_policy google_folder_organization_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_folder_organization_policy google_folder_organization_policy} Resource.
 func NewGoogleFolderOrganizationPolicy(scope constructs.Construct, id *string, config *GoogleFolderOrganizationPolicyConfig) GoogleFolderOrganizationPolicy {
 	_init_.Initialize()
 
@@ -513,7 +513,7 @@ func NewGoogleFolderOrganizationPolicy(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_folder_organization_policy google_folder_organization_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_folder_organization_policy google_folder_organization_policy} Resource.
 func NewGoogleFolderOrganizationPolicy_Override(g GoogleFolderOrganizationPolicy, scope constructs.Construct, id *string, config *GoogleFolderOrganizationPolicyConfig) {
 	_init_.Initialize()
 

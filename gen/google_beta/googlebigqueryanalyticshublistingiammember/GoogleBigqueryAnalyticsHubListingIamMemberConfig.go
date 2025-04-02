@@ -19,26 +19,26 @@ type GoogleBigqueryAnalyticsHubListingIamMemberConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_bigquery_analytics_hub_listing_iam_member#data_exchange_id GoogleBigqueryAnalyticsHubListingIamMember#data_exchange_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_bigquery_analytics_hub_listing_iam_member#data_exchange_id GoogleBigqueryAnalyticsHubListingIamMember#data_exchange_id}.
 	DataExchangeId *string `field:"required" json:"dataExchangeId" yaml:"dataExchangeId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_bigquery_analytics_hub_listing_iam_member#listing_id GoogleBigqueryAnalyticsHubListingIamMember#listing_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_bigquery_analytics_hub_listing_iam_member#listing_id GoogleBigqueryAnalyticsHubListingIamMember#listing_id}.
 	ListingId *string `field:"required" json:"listingId" yaml:"listingId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_bigquery_analytics_hub_listing_iam_member#member GoogleBigqueryAnalyticsHubListingIamMember#member}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_bigquery_analytics_hub_listing_iam_member#member GoogleBigqueryAnalyticsHubListingIamMember#member}.
 	Member *string `field:"required" json:"member" yaml:"member"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_bigquery_analytics_hub_listing_iam_member#role GoogleBigqueryAnalyticsHubListingIamMember#role}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_bigquery_analytics_hub_listing_iam_member#role GoogleBigqueryAnalyticsHubListingIamMember#role}.
 	Role *string `field:"required" json:"role" yaml:"role"`
 	// condition block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_bigquery_analytics_hub_listing_iam_member#condition GoogleBigqueryAnalyticsHubListingIamMember#condition}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_bigquery_analytics_hub_listing_iam_member#condition GoogleBigqueryAnalyticsHubListingIamMember#condition}
 	Condition *GoogleBigqueryAnalyticsHubListingIamMemberCondition `field:"optional" json:"condition" yaml:"condition"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_bigquery_analytics_hub_listing_iam_member#id GoogleBigqueryAnalyticsHubListingIamMember#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_bigquery_analytics_hub_listing_iam_member#id GoogleBigqueryAnalyticsHubListingIamMember#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_bigquery_analytics_hub_listing_iam_member#location GoogleBigqueryAnalyticsHubListingIamMember#location}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_bigquery_analytics_hub_listing_iam_member#location GoogleBigqueryAnalyticsHubListingIamMember#location}.
 	Location *string `field:"optional" json:"location" yaml:"location"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_bigquery_analytics_hub_listing_iam_member#project GoogleBigqueryAnalyticsHubListingIamMember#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_bigquery_analytics_hub_listing_iam_member#project GoogleBigqueryAnalyticsHubListingIamMember#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 }
 

@@ -8,21 +8,21 @@ type GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches struct {
 	// authority, use a headerMatch with the header name ":authority". For matching a
 	// request's method, use the headerName ":method".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_url_map#header_name GoogleComputeUrlMap#header_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_compute_url_map#header_name GoogleComputeUrlMap#header_name}
 	HeaderName *string `field:"required" json:"headerName" yaml:"headerName"`
 	// The value should exactly match contents of exactMatch.
 	//
 	// Only one of exactMatch,
 	// prefixMatch, suffixMatch, regexMatch, presentMatch or rangeMatch must be set.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_url_map#exact_match GoogleComputeUrlMap#exact_match}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_compute_url_map#exact_match GoogleComputeUrlMap#exact_match}
 	ExactMatch *string `field:"optional" json:"exactMatch" yaml:"exactMatch"`
 	// If set to false, the headerMatch is considered a match if the match criteria above are met.
 	//
 	// If set to true, the headerMatch is considered a match if the
 	// match criteria above are NOT met. Defaults to false.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_url_map#invert_match GoogleComputeUrlMap#invert_match}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_compute_url_map#invert_match GoogleComputeUrlMap#invert_match}
 	InvertMatch interface{} `field:"optional" json:"invertMatch" yaml:"invertMatch"`
 	// The value of the header must start with the contents of prefixMatch.
 	//
@@ -30,7 +30,7 @@ type GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches struct {
 	// exactMatch, prefixMatch, suffixMatch, regexMatch, presentMatch or rangeMatch
 	// must be set.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_url_map#prefix_match GoogleComputeUrlMap#prefix_match}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_compute_url_map#prefix_match GoogleComputeUrlMap#prefix_match}
 	PrefixMatch *string `field:"optional" json:"prefixMatch" yaml:"prefixMatch"`
 	// A header with the contents of headerName must exist.
 	//
@@ -38,11 +38,11 @@ type GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches struct {
 	// whether or not the request's header has a value or not. Only one of exactMatch,
 	// prefixMatch, suffixMatch, regexMatch, presentMatch or rangeMatch must be set.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_url_map#present_match GoogleComputeUrlMap#present_match}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_compute_url_map#present_match GoogleComputeUrlMap#present_match}
 	PresentMatch interface{} `field:"optional" json:"presentMatch" yaml:"presentMatch"`
 	// range_match block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_url_map#range_match GoogleComputeUrlMap#range_match}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_compute_url_map#range_match GoogleComputeUrlMap#range_match}
 	RangeMatch *GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatch `field:"optional" json:"rangeMatch" yaml:"rangeMatch"`
 	// The value of the header must match the regular expression specified in regexMatch.
 	//
@@ -53,7 +53,7 @@ type GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches struct {
 	// Only one of exactMatch, prefixMatch, suffixMatch, regexMatch, presentMatch or
 	// rangeMatch must be set.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_url_map#regex_match GoogleComputeUrlMap#regex_match}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_compute_url_map#regex_match GoogleComputeUrlMap#regex_match}
 	RegexMatch *string `field:"optional" json:"regexMatch" yaml:"regexMatch"`
 	// The value of the header must end with the contents of suffixMatch.
 	//
@@ -61,7 +61,7 @@ type GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches struct {
 	// exactMatch, prefixMatch, suffixMatch, regexMatch, presentMatch or rangeMatch
 	// must be set.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_url_map#suffix_match GoogleComputeUrlMap#suffix_match}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_compute_url_map#suffix_match GoogleComputeUrlMap#suffix_match}
 	SuffixMatch *string `field:"optional" json:"suffixMatch" yaml:"suffixMatch"`
 }
 

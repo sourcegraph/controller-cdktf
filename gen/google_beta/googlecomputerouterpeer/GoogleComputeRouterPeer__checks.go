@@ -246,6 +246,37 @@ func (g *jsiiProxy_GoogleComputeRouterPeer) validatePutBfdParameters(value *Goog
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeRouterPeer) validatePutCustomLearnedIpRangesParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*GoogleComputeRouterPeerCustomLearnedIpRanges:
+		value := value.(*[]*GoogleComputeRouterPeerCustomLearnedIpRanges)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*GoogleComputeRouterPeerCustomLearnedIpRanges:
+		value_ := value.([]*GoogleComputeRouterPeerCustomLearnedIpRanges)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*GoogleComputeRouterPeerCustomLearnedIpRanges; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRouterPeer) validatePutMd5AuthenticationKeyParameters(value *GoogleComputeRouterPeerMd5AuthenticationKey) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -422,6 +453,14 @@ func (j *jsiiProxy_GoogleComputeRouterPeer) validateSetCountParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRouterPeer) validateSetCustomLearnedRoutePriorityParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRouterPeer) validateSetEnableParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -482,7 +521,23 @@ func (j *jsiiProxy_GoogleComputeRouterPeer) validateSetEnableIpv6Parameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRouterPeer) validateSetExportPoliciesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRouterPeer) validateSetIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeRouterPeer) validateSetImportPoliciesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

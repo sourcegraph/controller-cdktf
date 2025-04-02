@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledatacatalogtagtemplateiambinding/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_data_catalog_tag_template_iam_binding google_data_catalog_tag_template_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_data_catalog_tag_template_iam_binding google_data_catalog_tag_template_iam_binding}.
 type GoogleDataCatalogTagTemplateIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -459,7 +459,7 @@ func (j *jsiiProxy_GoogleDataCatalogTagTemplateIamBinding) TerraformResourceType
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_data_catalog_tag_template_iam_binding google_data_catalog_tag_template_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_data_catalog_tag_template_iam_binding google_data_catalog_tag_template_iam_binding} Resource.
 func NewGoogleDataCatalogTagTemplateIamBinding(scope constructs.Construct, id *string, config *GoogleDataCatalogTagTemplateIamBindingConfig) GoogleDataCatalogTagTemplateIamBinding {
 	_init_.Initialize()
 
@@ -477,7 +477,7 @@ func NewGoogleDataCatalogTagTemplateIamBinding(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_data_catalog_tag_template_iam_binding google_data_catalog_tag_template_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_data_catalog_tag_template_iam_binding google_data_catalog_tag_template_iam_binding} Resource.
 func NewGoogleDataCatalogTagTemplateIamBinding_Override(g GoogleDataCatalogTagTemplateIamBinding, scope constructs.Construct, id *string, config *GoogleDataCatalogTagTemplateIamBindingConfig) {
 	_init_.Initialize()
 

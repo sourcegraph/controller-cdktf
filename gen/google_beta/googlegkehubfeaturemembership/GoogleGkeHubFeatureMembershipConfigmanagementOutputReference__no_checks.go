@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementOutputReference)
 	return nil
 }
 
+func (j *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementOutputReference) validateSetManagementParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

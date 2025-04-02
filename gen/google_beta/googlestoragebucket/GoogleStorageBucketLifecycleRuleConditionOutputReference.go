@@ -62,6 +62,9 @@ type GoogleStorageBucketLifecycleRuleConditionOutputReference interface {
 	NumNewerVersions() *float64
 	SetNumNewerVersions(val *float64)
 	NumNewerVersionsInput() *float64
+	SendAgeIfZero() interface{}
+	SetSendAgeIfZero(val interface{})
+	SendAgeIfZeroInput() interface{}
 	SendDaysSinceCustomTimeIfZero() interface{}
 	SetSendDaysSinceCustomTimeIfZero(val interface{})
 	SendDaysSinceCustomTimeIfZeroInput() interface{}
@@ -117,6 +120,7 @@ type GoogleStorageBucketLifecycleRuleConditionOutputReference interface {
 	ResetNoAge()
 	ResetNoncurrentTimeBefore()
 	ResetNumNewerVersions()
+	ResetSendAgeIfZero()
 	ResetSendDaysSinceCustomTimeIfZero()
 	ResetSendDaysSinceNoncurrentTimeIfZero()
 	ResetSendNumNewerVersionsIfZero()
@@ -406,6 +410,26 @@ func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) Num
 	return returns
 }
 
+func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) SendAgeIfZero() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sendAgeIfZero",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) SendAgeIfZeroInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sendAgeIfZeroInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) SendDaysSinceCustomTimeIfZero() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -684,6 +708,17 @@ func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference)SetN
 	_jsii_.Set(
 		j,
 		"numNewerVersions",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference)SetSendAgeIfZero(val interface{}) {
+	if err := j.validateSetSendAgeIfZeroParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sendAgeIfZero",
 		val,
 	)
 }
@@ -1024,6 +1059,14 @@ func (g *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) Res
 	_jsii_.InvokeVoid(
 		g,
 		"resetNumNewerVersions",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) ResetSendAgeIfZero() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSendAgeIfZero",
 		nil, // no parameters
 	)
 }

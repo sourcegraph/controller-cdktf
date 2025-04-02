@@ -64,6 +64,10 @@ func (j *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementOu
 	return nil
 }
 
+func (j *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementOutputReference) validateSetManagementParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

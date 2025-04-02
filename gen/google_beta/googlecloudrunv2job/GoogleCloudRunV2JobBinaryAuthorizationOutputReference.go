@@ -32,6 +32,9 @@ type GoogleCloudRunV2JobBinaryAuthorizationOutputReference interface {
 	Fqn() *string
 	InternalValue() *GoogleCloudRunV2JobBinaryAuthorization
 	SetInternalValue(val *GoogleCloudRunV2JobBinaryAuthorization)
+	Policy() *string
+	SetPolicy(val *string)
+	PolicyInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -68,6 +71,7 @@ type GoogleCloudRunV2JobBinaryAuthorizationOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetBreakglassJustification()
+	ResetPolicy()
 	ResetUseDefault()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -149,6 +153,26 @@ func (j *jsiiProxy_GoogleCloudRunV2JobBinaryAuthorizationOutputReference) Intern
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2JobBinaryAuthorizationOutputReference) Policy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"policy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2JobBinaryAuthorizationOutputReference) PolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"policyInput",
 		&returns,
 	)
 	return returns
@@ -262,6 +286,17 @@ func (j *jsiiProxy_GoogleCloudRunV2JobBinaryAuthorizationOutputReference)SetInte
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2JobBinaryAuthorizationOutputReference)SetPolicy(val *string) {
+	if err := j.validateSetPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"policy",
 		val,
 	)
 }
@@ -489,6 +524,14 @@ func (g *jsiiProxy_GoogleCloudRunV2JobBinaryAuthorizationOutputReference) ResetB
 	_jsii_.InvokeVoid(
 		g,
 		"resetBreakglassJustification",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudRunV2JobBinaryAuthorizationOutputReference) ResetPolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPolicy",
 		nil, // no parameters
 	)
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleparallelstoreinstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_parallelstore_instance google_parallelstore_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_parallelstore_instance google_parallelstore_instance}.
 type GoogleParallelstoreInstance interface {
 	cdktf.TerraformResource
 	AccessPoints() *[]*string
@@ -37,8 +37,14 @@ type GoogleParallelstoreInstance interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	DirectoryStripeLevel() *string
+	SetDirectoryStripeLevel(val *string)
+	DirectoryStripeLevelInput() *string
 	EffectiveLabels() cdktf.StringMap
 	EffectiveReservedIpRange() *string
+	FileStripeLevel() *string
+	SetFileStripeLevel(val *string)
+	FileStripeLevelInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -141,6 +147,8 @@ type GoogleParallelstoreInstance interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *GoogleParallelstoreInstanceTimeouts)
 	ResetDescription()
+	ResetDirectoryStripeLevel()
+	ResetFileStripeLevel()
 	ResetId()
 	ResetLabels()
 	ResetNetwork()
@@ -288,6 +296,26 @@ func (j *jsiiProxy_GoogleParallelstoreInstance) DescriptionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleParallelstoreInstance) DirectoryStripeLevel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"directoryStripeLevel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleParallelstoreInstance) DirectoryStripeLevelInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"directoryStripeLevelInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleParallelstoreInstance) EffectiveLabels() cdktf.StringMap {
 	var returns cdktf.StringMap
 	_jsii_.Get(
@@ -303,6 +331,26 @@ func (j *jsiiProxy_GoogleParallelstoreInstance) EffectiveReservedIpRange() *stri
 	_jsii_.Get(
 		j,
 		"effectiveReservedIpRange",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleParallelstoreInstance) FileStripeLevel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fileStripeLevel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleParallelstoreInstance) FileStripeLevelInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fileStripeLevelInput",
 		&returns,
 	)
 	return returns
@@ -619,7 +667,7 @@ func (j *jsiiProxy_GoogleParallelstoreInstance) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_parallelstore_instance google_parallelstore_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_parallelstore_instance google_parallelstore_instance} Resource.
 func NewGoogleParallelstoreInstance(scope constructs.Construct, id *string, config *GoogleParallelstoreInstanceConfig) GoogleParallelstoreInstance {
 	_init_.Initialize()
 
@@ -637,7 +685,7 @@ func NewGoogleParallelstoreInstance(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_parallelstore_instance google_parallelstore_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_parallelstore_instance google_parallelstore_instance} Resource.
 func NewGoogleParallelstoreInstance_Override(g GoogleParallelstoreInstance, scope constructs.Construct, id *string, config *GoogleParallelstoreInstanceConfig) {
 	_init_.Initialize()
 
@@ -696,6 +744,28 @@ func (j *jsiiProxy_GoogleParallelstoreInstance)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleParallelstoreInstance)SetDirectoryStripeLevel(val *string) {
+	if err := j.validateSetDirectoryStripeLevelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"directoryStripeLevel",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleParallelstoreInstance)SetFileStripeLevel(val *string) {
+	if err := j.validateSetFileStripeLevelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"fileStripeLevel",
 		val,
 	)
 }
@@ -1183,6 +1253,22 @@ func (g *jsiiProxy_GoogleParallelstoreInstance) ResetDescription() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleParallelstoreInstance) ResetDirectoryStripeLevel() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDirectoryStripeLevel",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleParallelstoreInstance) ResetFileStripeLevel() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetFileStripeLevel",
 		nil, // no parameters
 	)
 }

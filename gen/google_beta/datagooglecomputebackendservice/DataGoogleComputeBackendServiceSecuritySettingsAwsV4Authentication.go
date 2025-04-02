@@ -1,0 +1,6 @@
+package datagooglecomputebackendservice
+
+
+type DataGoogleComputeBackendServiceSecuritySettingsAwsV4Authentication struct {
+}
+

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlehealthcaredicomstoreiambinding/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_healthcare_dicom_store_iam_binding google_healthcare_dicom_store_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_healthcare_dicom_store_iam_binding google_healthcare_dicom_store_iam_binding}.
 type GoogleHealthcareDicomStoreIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -411,7 +411,7 @@ func (j *jsiiProxy_GoogleHealthcareDicomStoreIamBinding) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_healthcare_dicom_store_iam_binding google_healthcare_dicom_store_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_healthcare_dicom_store_iam_binding google_healthcare_dicom_store_iam_binding} Resource.
 func NewGoogleHealthcareDicomStoreIamBinding(scope constructs.Construct, id *string, config *GoogleHealthcareDicomStoreIamBindingConfig) GoogleHealthcareDicomStoreIamBinding {
 	_init_.Initialize()
 
@@ -429,7 +429,7 @@ func NewGoogleHealthcareDicomStoreIamBinding(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_healthcare_dicom_store_iam_binding google_healthcare_dicom_store_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_healthcare_dicom_store_iam_binding google_healthcare_dicom_store_iam_binding} Resource.
 func NewGoogleHealthcareDicomStoreIamBinding_Override(g GoogleHealthcareDicomStoreIamBinding, scope constructs.Construct, id *string, config *GoogleHealthcareDicomStoreIamBindingConfig) {
 	_init_.Initialize()
 

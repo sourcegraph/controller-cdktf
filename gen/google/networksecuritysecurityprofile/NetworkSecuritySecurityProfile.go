@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/networksecuritysecurityprofile/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/network_security_security_profile google_network_security_security_profile}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/network_security_security_profile google_network_security_security_profile}.
 type NetworkSecuritySecurityProfile interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -563,7 +563,7 @@ func (j *jsiiProxy_NetworkSecuritySecurityProfile) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/network_security_security_profile google_network_security_security_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/network_security_security_profile google_network_security_security_profile} Resource.
 func NewNetworkSecuritySecurityProfile(scope constructs.Construct, id *string, config *NetworkSecuritySecurityProfileConfig) NetworkSecuritySecurityProfile {
 	_init_.Initialize()
 
@@ -581,7 +581,7 @@ func NewNetworkSecuritySecurityProfile(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/network_security_security_profile google_network_security_security_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/network_security_security_profile google_network_security_security_profile} Resource.
 func NewNetworkSecuritySecurityProfile_Override(n NetworkSecuritySecurityProfile, scope constructs.Construct, id *string, config *NetworkSecuritySecurityProfileConfig) {
 	_init_.Initialize()
 

@@ -35,6 +35,9 @@ type GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeC
 	HttpRouteInput() *string
 	InternalValue() *GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesGatewayServiceMesh
 	SetInternalValue(val *GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesGatewayServiceMesh)
+	PodSelectorLabel() *string
+	SetPodSelectorLabel(val *string)
+	PodSelectorLabelInput() *string
 	RouteUpdateWaitTime() *string
 	SetRouteUpdateWaitTime(val *string)
 	RouteUpdateWaitTimeInput() *string
@@ -76,6 +79,7 @@ type GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeC
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetPodSelectorLabel()
 	ResetRouteUpdateWaitTime()
 	ResetStableCutbackDuration()
 	// Produce the Token's value at resolution time.
@@ -178,6 +182,26 @@ func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategy
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesGatewayServiceMeshOutputReference) PodSelectorLabel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"podSelectorLabel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesGatewayServiceMeshOutputReference) PodSelectorLabelInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"podSelectorLabelInput",
 		&returns,
 	)
 	return returns
@@ -342,6 +366,17 @@ func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategy
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesGatewayServiceMeshOutputReference)SetPodSelectorLabel(val *string) {
+	if err := j.validateSetPodSelectorLabelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"podSelectorLabel",
 		val,
 	)
 }
@@ -585,6 +620,14 @@ func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategy
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesGatewayServiceMeshOutputReference) ResetPodSelectorLabel() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPodSelectorLabel",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesGatewayServiceMeshOutputReference) ResetRouteUpdateWaitTime() {

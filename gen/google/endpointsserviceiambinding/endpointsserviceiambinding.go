@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/endpointsserviceiambinding/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/endpoints_service_iam_binding google_endpoints_service_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/endpoints_service_iam_binding google_endpoints_service_iam_binding}.
 type EndpointsServiceIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -411,7 +411,7 @@ func (j *jsiiProxy_EndpointsServiceIamBinding) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/endpoints_service_iam_binding google_endpoints_service_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/endpoints_service_iam_binding google_endpoints_service_iam_binding} Resource.
 func NewEndpointsServiceIamBinding(scope constructs.Construct, id *string, config *EndpointsServiceIamBindingConfig) EndpointsServiceIamBinding {
 	_init_.Initialize()
 
@@ -429,7 +429,7 @@ func NewEndpointsServiceIamBinding(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/endpoints_service_iam_binding google_endpoints_service_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/endpoints_service_iam_binding google_endpoints_service_iam_binding} Resource.
 func NewEndpointsServiceIamBinding_Override(e EndpointsServiceIamBinding, scope constructs.Construct, id *string, config *EndpointsServiceIamBindingConfig) {
 	_init_.Initialize()
 

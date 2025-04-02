@@ -32,6 +32,9 @@ type CloudRunV2JobBinaryAuthorizationOutputReference interface {
 	Fqn() *string
 	InternalValue() *CloudRunV2JobBinaryAuthorization
 	SetInternalValue(val *CloudRunV2JobBinaryAuthorization)
+	Policy() *string
+	SetPolicy(val *string)
+	PolicyInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -68,6 +71,7 @@ type CloudRunV2JobBinaryAuthorizationOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetBreakglassJustification()
+	ResetPolicy()
 	ResetUseDefault()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -149,6 +153,26 @@ func (j *jsiiProxy_CloudRunV2JobBinaryAuthorizationOutputReference) InternalValu
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2JobBinaryAuthorizationOutputReference) Policy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"policy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2JobBinaryAuthorizationOutputReference) PolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"policyInput",
 		&returns,
 	)
 	return returns
@@ -262,6 +286,17 @@ func (j *jsiiProxy_CloudRunV2JobBinaryAuthorizationOutputReference)SetInternalVa
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudRunV2JobBinaryAuthorizationOutputReference)SetPolicy(val *string) {
+	if err := j.validateSetPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"policy",
 		val,
 	)
 }
@@ -489,6 +524,14 @@ func (c *jsiiProxy_CloudRunV2JobBinaryAuthorizationOutputReference) ResetBreakgl
 	_jsii_.InvokeVoid(
 		c,
 		"resetBreakglassJustification",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudRunV2JobBinaryAuthorizationOutputReference) ResetPolicy() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetPolicy",
 		nil, // no parameters
 	)
 }

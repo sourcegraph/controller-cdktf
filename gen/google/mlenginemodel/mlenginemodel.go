@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/mlenginemodel/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/ml_engine_model google_ml_engine_model}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/ml_engine_model google_ml_engine_model}.
 type MlEngineModel interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -544,7 +544,7 @@ func (j *jsiiProxy_MlEngineModel) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/ml_engine_model google_ml_engine_model} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/ml_engine_model google_ml_engine_model} Resource.
 func NewMlEngineModel(scope constructs.Construct, id *string, config *MlEngineModelConfig) MlEngineModel {
 	_init_.Initialize()
 
@@ -562,7 +562,7 @@ func NewMlEngineModel(scope constructs.Construct, id *string, config *MlEngineMo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/ml_engine_model google_ml_engine_model} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/ml_engine_model google_ml_engine_model} Resource.
 func NewMlEngineModel_Override(m MlEngineModel, scope constructs.Construct, id *string, config *MlEngineModelConfig) {
 	_init_.Initialize()
 

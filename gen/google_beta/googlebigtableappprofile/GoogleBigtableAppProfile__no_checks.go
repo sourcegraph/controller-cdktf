@@ -72,6 +72,10 @@ func (g *jsiiProxy_GoogleBigtableAppProfile) validateOverrideLogicalIdParameters
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBigtableAppProfile) validatePutDataBoostIsolationReadOnlyParameters(value *GoogleBigtableAppProfileDataBoostIsolationReadOnly) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigtableAppProfile) validatePutSingleClusterRoutingParameters(value *GoogleBigtableAppProfileSingleClusterRouting) error {
 	return nil
 }

@@ -48,6 +48,9 @@ type GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference interface {
 	RequireSsl() interface{}
 	SetRequireSsl(val interface{})
 	RequireSslInput() interface{}
+	ServerCaMode() *string
+	SetServerCaMode(val *string)
+	ServerCaModeInput() *string
 	SslMode() *string
 	SetSslMode(val *string)
 	SslModeInput() *string
@@ -92,6 +95,7 @@ type GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference interface {
 	ResetPrivateNetwork()
 	ResetPscConfig()
 	ResetRequireSsl()
+	ResetServerCaMode()
 	ResetSslMode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -298,6 +302,26 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReferen
 	return returns
 }
 
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) ServerCaMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serverCaMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) ServerCaModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serverCaModeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) SslMode() *string {
 	var returns *string
 	_jsii_.Get(
@@ -450,6 +474,17 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReferen
 	_jsii_.Set(
 		j,
 		"requireSsl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference)SetServerCaMode(val *string) {
+	if err := j.validateSetServerCaModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serverCaMode",
 		val,
 	)
 }
@@ -747,6 +782,14 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReferen
 	_jsii_.InvokeVoid(
 		g,
 		"resetRequireSsl",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) ResetServerCaMode() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetServerCaMode",
 		nil, // no parameters
 	)
 }

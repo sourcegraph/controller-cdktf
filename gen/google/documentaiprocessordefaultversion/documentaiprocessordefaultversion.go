@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/documentaiprocessordefaultversion/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/document_ai_processor_default_version google_document_ai_processor_default_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/document_ai_processor_default_version google_document_ai_processor_default_version}.
 type DocumentAiProcessorDefaultVersion interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -377,7 +377,7 @@ func (j *jsiiProxy_DocumentAiProcessorDefaultVersion) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/document_ai_processor_default_version google_document_ai_processor_default_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/document_ai_processor_default_version google_document_ai_processor_default_version} Resource.
 func NewDocumentAiProcessorDefaultVersion(scope constructs.Construct, id *string, config *DocumentAiProcessorDefaultVersionConfig) DocumentAiProcessorDefaultVersion {
 	_init_.Initialize()
 
@@ -395,7 +395,7 @@ func NewDocumentAiProcessorDefaultVersion(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/document_ai_processor_default_version google_document_ai_processor_default_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/document_ai_processor_default_version google_document_ai_processor_default_version} Resource.
 func NewDocumentAiProcessorDefaultVersion_Override(d DocumentAiProcessorDefaultVersion, scope constructs.Construct, id *string, config *DocumentAiProcessorDefaultVersionConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledialogflowfulfillment/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_dialogflow_fulfillment google_dialogflow_fulfillment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_dialogflow_fulfillment google_dialogflow_fulfillment}.
 type GoogleDialogflowFulfillment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -461,7 +461,7 @@ func (j *jsiiProxy_GoogleDialogflowFulfillment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_dialogflow_fulfillment google_dialogflow_fulfillment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_dialogflow_fulfillment google_dialogflow_fulfillment} Resource.
 func NewGoogleDialogflowFulfillment(scope constructs.Construct, id *string, config *GoogleDialogflowFulfillmentConfig) GoogleDialogflowFulfillment {
 	_init_.Initialize()
 
@@ -479,7 +479,7 @@ func NewGoogleDialogflowFulfillment(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_dialogflow_fulfillment google_dialogflow_fulfillment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_dialogflow_fulfillment google_dialogflow_fulfillment} Resource.
 func NewGoogleDialogflowFulfillment_Override(g GoogleDialogflowFulfillment, scope constructs.Construct, id *string, config *GoogleDialogflowFulfillmentConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/firebaserulesrelease/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/firebaserules_release google_firebaserules_release}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/firebaserules_release google_firebaserules_release}.
 type FirebaserulesRelease interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -434,7 +434,7 @@ func (j *jsiiProxy_FirebaserulesRelease) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/firebaserules_release google_firebaserules_release} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/firebaserules_release google_firebaserules_release} Resource.
 func NewFirebaserulesRelease(scope constructs.Construct, id *string, config *FirebaserulesReleaseConfig) FirebaserulesRelease {
 	_init_.Initialize()
 
@@ -452,7 +452,7 @@ func NewFirebaserulesRelease(scope constructs.Construct, id *string, config *Fir
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/firebaserules_release google_firebaserules_release} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/firebaserules_release google_firebaserules_release} Resource.
 func NewFirebaserulesRelease_Override(f FirebaserulesRelease, scope constructs.Construct, id *string, config *FirebaserulesReleaseConfig) {
 	_init_.Initialize()
 

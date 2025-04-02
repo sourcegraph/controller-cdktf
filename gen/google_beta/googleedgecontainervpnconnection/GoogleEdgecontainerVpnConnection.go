@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleedgecontainervpnconnection/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_edgecontainer_vpn_connection google_edgecontainer_vpn_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_edgecontainer_vpn_connection google_edgecontainer_vpn_connection}.
 type GoogleEdgecontainerVpnConnection interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -623,7 +623,7 @@ func (j *jsiiProxy_GoogleEdgecontainerVpnConnection) VpcProjectInput() *GoogleEd
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_edgecontainer_vpn_connection google_edgecontainer_vpn_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_edgecontainer_vpn_connection google_edgecontainer_vpn_connection} Resource.
 func NewGoogleEdgecontainerVpnConnection(scope constructs.Construct, id *string, config *GoogleEdgecontainerVpnConnectionConfig) GoogleEdgecontainerVpnConnection {
 	_init_.Initialize()
 
@@ -641,7 +641,7 @@ func NewGoogleEdgecontainerVpnConnection(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_edgecontainer_vpn_connection google_edgecontainer_vpn_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_edgecontainer_vpn_connection google_edgecontainer_vpn_connection} Resource.
 func NewGoogleEdgecontainerVpnConnection_Override(g GoogleEdgecontainerVpnConnection, scope constructs.Construct, id *string, config *GoogleEdgecontainerVpnConnectionConfig) {
 	_init_.Initialize()
 

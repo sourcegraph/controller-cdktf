@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleeventarcchannel/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_eventarc_channel google_eventarc_channel}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_eventarc_channel google_eventarc_channel}.
 type GoogleEventarcChannel interface {
 	cdktf.TerraformResource
 	ActivationToken() *string
@@ -515,7 +515,7 @@ func (j *jsiiProxy_GoogleEventarcChannel) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_eventarc_channel google_eventarc_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_eventarc_channel google_eventarc_channel} Resource.
 func NewGoogleEventarcChannel(scope constructs.Construct, id *string, config *GoogleEventarcChannelConfig) GoogleEventarcChannel {
 	_init_.Initialize()
 
@@ -533,7 +533,7 @@ func NewGoogleEventarcChannel(scope constructs.Construct, id *string, config *Go
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_eventarc_channel google_eventarc_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_eventarc_channel google_eventarc_channel} Resource.
 func NewGoogleEventarcChannel_Override(g GoogleEventarcChannel, scope constructs.Construct, id *string, config *GoogleEventarcChannelConfig) {
 	_init_.Initialize()
 

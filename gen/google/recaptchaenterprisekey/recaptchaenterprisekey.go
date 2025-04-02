@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/recaptchaenterprisekey/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/recaptcha_enterprise_key google_recaptcha_enterprise_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/recaptcha_enterprise_key google_recaptcha_enterprise_key}.
 type RecaptchaEnterpriseKey interface {
 	cdktf.TerraformResource
 	AndroidSettings() RecaptchaEnterpriseKeyAndroidSettingsOutputReference
@@ -566,7 +566,7 @@ func (j *jsiiProxy_RecaptchaEnterpriseKey) WebSettingsInput() *RecaptchaEnterpri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/recaptcha_enterprise_key google_recaptcha_enterprise_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/recaptcha_enterprise_key google_recaptcha_enterprise_key} Resource.
 func NewRecaptchaEnterpriseKey(scope constructs.Construct, id *string, config *RecaptchaEnterpriseKeyConfig) RecaptchaEnterpriseKey {
 	_init_.Initialize()
 
@@ -584,7 +584,7 @@ func NewRecaptchaEnterpriseKey(scope constructs.Construct, id *string, config *R
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/recaptcha_enterprise_key google_recaptcha_enterprise_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/recaptcha_enterprise_key google_recaptcha_enterprise_key} Resource.
 func NewRecaptchaEnterpriseKey_Override(r RecaptchaEnterpriseKey, scope constructs.Construct, id *string, config *RecaptchaEnterpriseKeyConfig) {
 	_init_.Initialize()
 

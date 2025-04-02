@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/sccv2organizationnotificationconfig/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/scc_v2_organization_notification_config google_scc_v2_organization_notification_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/scc_v2_organization_notification_config google_scc_v2_organization_notification_config}.
 type SccV2OrganizationNotificationConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -493,7 +493,7 @@ func (j *jsiiProxy_SccV2OrganizationNotificationConfig) TimeoutsInput() interfac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/scc_v2_organization_notification_config google_scc_v2_organization_notification_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/scc_v2_organization_notification_config google_scc_v2_organization_notification_config} Resource.
 func NewSccV2OrganizationNotificationConfig(scope constructs.Construct, id *string, config *SccV2OrganizationNotificationConfigConfig) SccV2OrganizationNotificationConfig {
 	_init_.Initialize()
 
@@ -511,7 +511,7 @@ func NewSccV2OrganizationNotificationConfig(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/scc_v2_organization_notification_config google_scc_v2_organization_notification_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/scc_v2_organization_notification_config google_scc_v2_organization_notification_config} Resource.
 func NewSccV2OrganizationNotificationConfig_Override(s SccV2OrganizationNotificationConfig, scope constructs.Construct, id *string, config *SccV2OrganizationNotificationConfigConfig) {
 	_init_.Initialize()
 

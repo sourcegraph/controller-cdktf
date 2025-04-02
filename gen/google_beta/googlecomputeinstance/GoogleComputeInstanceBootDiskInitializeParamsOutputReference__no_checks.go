@@ -88,6 +88,10 @@ func (j *jsiiProxy_GoogleComputeInstanceBootDiskInitializeParamsOutputReference)
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceBootDiskInitializeParamsOutputReference) validateSetStoragePoolParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceBootDiskInitializeParamsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

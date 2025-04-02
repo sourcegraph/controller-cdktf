@@ -31,6 +31,9 @@ type GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference int
 	Fqn() *string
 	GcfsConfig() GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfigOutputReference
 	GcfsConfigInput() *GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfig
+	InsecureKubeletReadonlyPortEnabled() *string
+	SetInsecureKubeletReadonlyPortEnabled(val *string)
+	InsecureKubeletReadonlyPortEnabledInput() *string
 	InternalValue() *GoogleContainerClusterNodePoolDefaultsNodeConfigDefaults
 	SetInternalValue(val *GoogleContainerClusterNodePoolDefaultsNodeConfigDefaults)
 	LoggingVariant() *string
@@ -72,6 +75,7 @@ type GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference int
 	PutGcfsConfig(value *GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfig)
 	ResetContainerdConfig()
 	ResetGcfsConfig()
+	ResetInsecureKubeletReadonlyPortEnabled()
 	ResetLoggingVariant()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -163,6 +167,26 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutpu
 	_jsii_.Get(
 		j,
 		"gcfsConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) InsecureKubeletReadonlyPortEnabled() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"insecureKubeletReadonlyPortEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) InsecureKubeletReadonlyPortEnabledInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"insecureKubeletReadonlyPortEnabledInput",
 		&returns,
 	)
 	return returns
@@ -264,6 +288,17 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutpu
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference)SetInsecureKubeletReadonlyPortEnabled(val *string) {
+	if err := j.validateSetInsecureKubeletReadonlyPortEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"insecureKubeletReadonlyPortEnabled",
 		val,
 	)
 }
@@ -532,6 +567,14 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutpu
 	_jsii_.InvokeVoid(
 		g,
 		"resetGcfsConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) ResetInsecureKubeletReadonlyPortEnabled() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetInsecureKubeletReadonlyPortEnabled",
 		nil, // no parameters
 	)
 }

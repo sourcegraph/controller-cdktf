@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/computerouterpeer/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_router_peer google_compute_router_peer}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/compute_router_peer google_compute_router_peer}.
 type ComputeRouterPeer interface {
 	cdktf.TerraformResource
 	AdvertisedGroups() *[]*string
@@ -37,6 +37,11 @@ type ComputeRouterPeer interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CustomLearnedIpRanges() ComputeRouterPeerCustomLearnedIpRangesList
+	CustomLearnedIpRangesInput() interface{}
+	CustomLearnedRoutePriority() *float64
+	SetCustomLearnedRoutePriority(val *float64)
+	CustomLearnedRoutePriorityInput() *float64
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -172,6 +177,7 @@ type ComputeRouterPeer interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAdvertisedIpRanges(value interface{})
 	PutBfd(value *ComputeRouterPeerBfd)
+	PutCustomLearnedIpRanges(value interface{})
 	PutMd5AuthenticationKey(value *ComputeRouterPeerMd5AuthenticationKey)
 	PutTimeouts(value *ComputeRouterPeerTimeouts)
 	ResetAdvertisedGroups()
@@ -179,6 +185,8 @@ type ComputeRouterPeer interface {
 	ResetAdvertisedRoutePriority()
 	ResetAdvertiseMode()
 	ResetBfd()
+	ResetCustomLearnedIpRanges()
+	ResetCustomLearnedRoutePriority()
 	ResetEnable()
 	ResetEnableIpv4()
 	ResetEnableIpv6()
@@ -350,6 +358,46 @@ func (j *jsiiProxy_ComputeRouterPeer) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRouterPeer) CustomLearnedIpRanges() ComputeRouterPeerCustomLearnedIpRangesList {
+	var returns ComputeRouterPeerCustomLearnedIpRangesList
+	_jsii_.Get(
+		j,
+		"customLearnedIpRanges",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRouterPeer) CustomLearnedIpRangesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"customLearnedIpRangesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRouterPeer) CustomLearnedRoutePriority() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"customLearnedRoutePriority",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRouterPeer) CustomLearnedRoutePriorityInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"customLearnedRoutePriorityInput",
 		&returns,
 	)
 	return returns
@@ -866,7 +914,7 @@ func (j *jsiiProxy_ComputeRouterPeer) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_router_peer google_compute_router_peer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/compute_router_peer google_compute_router_peer} Resource.
 func NewComputeRouterPeer(scope constructs.Construct, id *string, config *ComputeRouterPeerConfig) ComputeRouterPeer {
 	_init_.Initialize()
 
@@ -884,7 +932,7 @@ func NewComputeRouterPeer(scope constructs.Construct, id *string, config *Comput
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_router_peer google_compute_router_peer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/compute_router_peer google_compute_router_peer} Resource.
 func NewComputeRouterPeer_Override(c ComputeRouterPeer, scope constructs.Construct, id *string, config *ComputeRouterPeerConfig) {
 	_init_.Initialize()
 
@@ -946,6 +994,17 @@ func (j *jsiiProxy_ComputeRouterPeer)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeRouterPeer)SetCustomLearnedRoutePriority(val *float64) {
+	if err := j.validateSetCustomLearnedRoutePriorityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customLearnedRoutePriority",
 		val,
 	)
 }
@@ -1558,6 +1617,17 @@ func (c *jsiiProxy_ComputeRouterPeer) PutBfd(value *ComputeRouterPeerBfd) {
 	)
 }
 
+func (c *jsiiProxy_ComputeRouterPeer) PutCustomLearnedIpRanges(value interface{}) {
+	if err := c.validatePutCustomLearnedIpRangesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putCustomLearnedIpRanges",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeRouterPeer) PutMd5AuthenticationKey(value *ComputeRouterPeerMd5AuthenticationKey) {
 	if err := c.validatePutMd5AuthenticationKeyParameters(value); err != nil {
 		panic(err)
@@ -1616,6 +1686,22 @@ func (c *jsiiProxy_ComputeRouterPeer) ResetBfd() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetBfd",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRouterPeer) ResetCustomLearnedIpRanges() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCustomLearnedIpRanges",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRouterPeer) ResetCustomLearnedRoutePriority() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCustomLearnedRoutePriority",
 		nil, // no parameters
 	)
 }

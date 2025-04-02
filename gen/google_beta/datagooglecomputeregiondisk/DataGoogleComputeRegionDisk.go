@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglecomputeregiondisk/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_compute_region_disk google_compute_region_disk}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/data-sources/google_compute_region_disk google_compute_region_disk}.
 type DataGoogleComputeRegionDisk interface {
 	cdktf.TerraformDataSource
 	AsyncPrimaryDisk() DataGoogleComputeRegionDiskAsyncPrimaryDiskList
@@ -597,7 +597,7 @@ func (j *jsiiProxy_DataGoogleComputeRegionDisk) Users() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_compute_region_disk google_compute_region_disk} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/data-sources/google_compute_region_disk google_compute_region_disk} Data Source.
 func NewDataGoogleComputeRegionDisk(scope constructs.Construct, id *string, config *DataGoogleComputeRegionDiskConfig) DataGoogleComputeRegionDisk {
 	_init_.Initialize()
 
@@ -615,7 +615,7 @@ func NewDataGoogleComputeRegionDisk(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_compute_region_disk google_compute_region_disk} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/data-sources/google_compute_region_disk google_compute_region_disk} Data Source.
 func NewDataGoogleComputeRegionDisk_Override(d DataGoogleComputeRegionDisk, scope constructs.Construct, id *string, config *DataGoogleComputeRegionDiskConfig) {
 	_init_.Initialize()
 

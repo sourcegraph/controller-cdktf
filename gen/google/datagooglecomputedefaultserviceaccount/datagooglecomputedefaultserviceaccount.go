@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagooglecomputedefaultserviceaccount/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/compute_default_service_account google_compute_default_service_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/data-sources/compute_default_service_account google_compute_default_service_account}.
 type DataGoogleComputeDefaultServiceAccount interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -341,7 +341,7 @@ func (j *jsiiProxy_DataGoogleComputeDefaultServiceAccount) UniqueId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/compute_default_service_account google_compute_default_service_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/data-sources/compute_default_service_account google_compute_default_service_account} Data Source.
 func NewDataGoogleComputeDefaultServiceAccount(scope constructs.Construct, id *string, config *DataGoogleComputeDefaultServiceAccountConfig) DataGoogleComputeDefaultServiceAccount {
 	_init_.Initialize()
 
@@ -359,7 +359,7 @@ func NewDataGoogleComputeDefaultServiceAccount(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/compute_default_service_account google_compute_default_service_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/data-sources/compute_default_service_account google_compute_default_service_account} Data Source.
 func NewDataGoogleComputeDefaultServiceAccount_Override(d DataGoogleComputeDefaultServiceAccount, scope constructs.Construct, id *string, config *DataGoogleComputeDefaultServiceAccountConfig) {
 	_init_.Initialize()
 

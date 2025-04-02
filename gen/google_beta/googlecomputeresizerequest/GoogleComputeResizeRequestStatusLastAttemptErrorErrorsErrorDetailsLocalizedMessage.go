@@ -1,0 +1,6 @@
+package googlecomputeresizerequest
+
+
+type GoogleComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsLocalizedMessage struct {
+}
+

@@ -60,6 +60,10 @@ func (j *jsiiProxy_GoogleNetworkServicesTcpRouteRulesActionOutputReference) vali
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetworkServicesTcpRouteRulesActionOutputReference) validateSetIdleTimeoutParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetworkServicesTcpRouteRulesActionOutputReference) validateSetInternalValueParameters(val *GoogleNetworkServicesTcpRouteRulesAction) error {
 	return nil
 }

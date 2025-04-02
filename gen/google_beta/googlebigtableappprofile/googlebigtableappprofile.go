@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlebigtableappprofile/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_bigtable_app_profile google_bigtable_app_profile}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_bigtable_app_profile google_bigtable_app_profile}.
 type GoogleBigtableAppProfile interface {
 	cdktf.TerraformResource
 	AppProfileId() *string
@@ -27,6 +27,8 @@ type GoogleBigtableAppProfile interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DataBoostIsolationReadOnly() GoogleBigtableAppProfileDataBoostIsolationReadOnlyOutputReference
+	DataBoostIsolationReadOnlyInput() *GoogleBigtableAppProfileDataBoostIsolationReadOnly
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -132,9 +134,11 @@ type GoogleBigtableAppProfile interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutDataBoostIsolationReadOnly(value *GoogleBigtableAppProfileDataBoostIsolationReadOnly)
 	PutSingleClusterRouting(value *GoogleBigtableAppProfileSingleClusterRouting)
 	PutStandardIsolation(value *GoogleBigtableAppProfileStandardIsolation)
 	PutTimeouts(value *GoogleBigtableAppProfileTimeouts)
+	ResetDataBoostIsolationReadOnly()
 	ResetDescription()
 	ResetId()
 	ResetIgnoreWarnings()
@@ -221,6 +225,26 @@ func (j *jsiiProxy_GoogleBigtableAppProfile) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigtableAppProfile) DataBoostIsolationReadOnly() GoogleBigtableAppProfileDataBoostIsolationReadOnlyOutputReference {
+	var returns GoogleBigtableAppProfileDataBoostIsolationReadOnlyOutputReference
+	_jsii_.Get(
+		j,
+		"dataBoostIsolationReadOnly",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigtableAppProfile) DataBoostIsolationReadOnlyInput() *GoogleBigtableAppProfileDataBoostIsolationReadOnly {
+	var returns *GoogleBigtableAppProfileDataBoostIsolationReadOnly
+	_jsii_.Get(
+		j,
+		"dataBoostIsolationReadOnlyInput",
 		&returns,
 	)
 	return returns
@@ -557,7 +581,7 @@ func (j *jsiiProxy_GoogleBigtableAppProfile) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_bigtable_app_profile google_bigtable_app_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_bigtable_app_profile google_bigtable_app_profile} Resource.
 func NewGoogleBigtableAppProfile(scope constructs.Construct, id *string, config *GoogleBigtableAppProfileConfig) GoogleBigtableAppProfile {
 	_init_.Initialize()
 
@@ -575,7 +599,7 @@ func NewGoogleBigtableAppProfile(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_bigtable_app_profile google_bigtable_app_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_bigtable_app_profile google_bigtable_app_profile} Resource.
 func NewGoogleBigtableAppProfile_Override(g GoogleBigtableAppProfile, scope constructs.Construct, id *string, config *GoogleBigtableAppProfileConfig) {
 	_init_.Initialize()
 
@@ -1095,6 +1119,17 @@ func (g *jsiiProxy_GoogleBigtableAppProfile) OverrideLogicalId(newLogicalId *str
 	)
 }
 
+func (g *jsiiProxy_GoogleBigtableAppProfile) PutDataBoostIsolationReadOnly(value *GoogleBigtableAppProfileDataBoostIsolationReadOnly) {
+	if err := g.validatePutDataBoostIsolationReadOnlyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putDataBoostIsolationReadOnly",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleBigtableAppProfile) PutSingleClusterRouting(value *GoogleBigtableAppProfileSingleClusterRouting) {
 	if err := g.validatePutSingleClusterRoutingParameters(value); err != nil {
 		panic(err)
@@ -1125,6 +1160,14 @@ func (g *jsiiProxy_GoogleBigtableAppProfile) PutTimeouts(value *GoogleBigtableAp
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleBigtableAppProfile) ResetDataBoostIsolationReadOnly() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDataBoostIsolationReadOnly",
+		nil, // no parameters
 	)
 }
 

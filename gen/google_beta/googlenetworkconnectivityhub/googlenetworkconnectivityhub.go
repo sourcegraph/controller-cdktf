@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlenetworkconnectivityhub/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_network_connectivity_hub google_network_connectivity_hub}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_network_connectivity_hub google_network_connectivity_hub}.
 type GoogleNetworkConnectivityHub interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -33,6 +33,9 @@ type GoogleNetworkConnectivityHub interface {
 	SetDescription(val *string)
 	DescriptionInput() *string
 	EffectiveLabels() cdktf.StringMap
+	ExportPsc() interface{}
+	SetExportPsc(val interface{})
+	ExportPscInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -127,8 +130,10 @@ type GoogleNetworkConnectivityHub interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *GoogleNetworkConnectivityHubTimeouts)
 	ResetDescription()
+	ResetExportPsc()
 	ResetId()
 	ResetLabels()
+	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -237,6 +242,26 @@ func (j *jsiiProxy_GoogleNetworkConnectivityHub) EffectiveLabels() cdktf.StringM
 	_jsii_.Get(
 		j,
 		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkConnectivityHub) ExportPsc() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"exportPsc",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkConnectivityHub) ExportPscInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"exportPscInput",
 		&returns,
 	)
 	return returns
@@ -503,7 +528,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivityHub) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_network_connectivity_hub google_network_connectivity_hub} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_network_connectivity_hub google_network_connectivity_hub} Resource.
 func NewGoogleNetworkConnectivityHub(scope constructs.Construct, id *string, config *GoogleNetworkConnectivityHubConfig) GoogleNetworkConnectivityHub {
 	_init_.Initialize()
 
@@ -521,7 +546,7 @@ func NewGoogleNetworkConnectivityHub(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_network_connectivity_hub google_network_connectivity_hub} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_network_connectivity_hub google_network_connectivity_hub} Resource.
 func NewGoogleNetworkConnectivityHub_Override(g GoogleNetworkConnectivityHub, scope constructs.Construct, id *string, config *GoogleNetworkConnectivityHubConfig) {
 	_init_.Initialize()
 
@@ -569,6 +594,17 @@ func (j *jsiiProxy_GoogleNetworkConnectivityHub)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleNetworkConnectivityHub)SetExportPsc(val interface{}) {
+	if err := j.validateSetExportPscParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"exportPsc",
 		val,
 	)
 }
@@ -1027,6 +1063,14 @@ func (g *jsiiProxy_GoogleNetworkConnectivityHub) ResetDescription() {
 	)
 }
 
+func (g *jsiiProxy_GoogleNetworkConnectivityHub) ResetExportPsc() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetExportPsc",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleNetworkConnectivityHub) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1039,6 +1083,14 @@ func (g *jsiiProxy_GoogleNetworkConnectivityHub) ResetLabels() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetLabels",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleNetworkConnectivityHub) ResetName() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetName",
 		nil, // no parameters
 	)
 }

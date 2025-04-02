@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlebillingsubaccount/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_billing_subaccount google_billing_subaccount}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_billing_subaccount google_billing_subaccount}.
 type GoogleBillingSubaccount interface {
 	cdktf.TerraformResource
 	BillingAccountId() *string
@@ -410,7 +410,7 @@ func (j *jsiiProxy_GoogleBillingSubaccount) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_billing_subaccount google_billing_subaccount} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_billing_subaccount google_billing_subaccount} Resource.
 func NewGoogleBillingSubaccount(scope constructs.Construct, id *string, config *GoogleBillingSubaccountConfig) GoogleBillingSubaccount {
 	_init_.Initialize()
 
@@ -428,7 +428,7 @@ func NewGoogleBillingSubaccount(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_billing_subaccount google_billing_subaccount} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_billing_subaccount google_billing_subaccount} Resource.
 func NewGoogleBillingSubaccount_Override(g GoogleBillingSubaccount, scope constructs.Construct, id *string, config *GoogleBillingSubaccountConfig) {
 	_init_.Initialize()
 

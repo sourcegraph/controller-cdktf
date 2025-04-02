@@ -1,0 +1,6 @@
+package computeresizerequest
+
+
+type ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsLocalizedMessage struct {
+}
+

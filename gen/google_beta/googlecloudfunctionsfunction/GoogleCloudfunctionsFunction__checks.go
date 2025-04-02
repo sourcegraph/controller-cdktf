@@ -355,6 +355,14 @@ func (j *jsiiProxy_GoogleCloudfunctionsFunction) validateSetBuildEnvironmentVari
 	return nil
 }
 
+func (j *jsiiProxy_GoogleCloudfunctionsFunction) validateSetBuildServiceAccountParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCloudfunctionsFunction) validateSetBuildWorkerPoolParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

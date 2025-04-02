@@ -1,0 +1,6 @@
+package googlevertexaiindexendpointdeployedindex
+
+
+type GoogleVertexAiIndexEndpointDeployedIndexPrivateEndpoints struct {
+}
+

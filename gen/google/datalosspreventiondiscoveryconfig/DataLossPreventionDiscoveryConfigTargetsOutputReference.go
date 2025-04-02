@@ -14,6 +14,8 @@ type DataLossPreventionDiscoveryConfigTargetsOutputReference interface {
 	BigQueryTargetInput() *DataLossPreventionDiscoveryConfigTargetsBigQueryTarget
 	CloudSqlTarget() DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetOutputReference
 	CloudSqlTargetInput() *DataLossPreventionDiscoveryConfigTargetsCloudSqlTarget
+	CloudStorageTarget() DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetOutputReference
+	CloudStorageTargetInput() *DataLossPreventionDiscoveryConfigTargetsCloudStorageTarget
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -69,9 +71,11 @@ type DataLossPreventionDiscoveryConfigTargetsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutBigQueryTarget(value *DataLossPreventionDiscoveryConfigTargetsBigQueryTarget)
 	PutCloudSqlTarget(value *DataLossPreventionDiscoveryConfigTargetsCloudSqlTarget)
+	PutCloudStorageTarget(value *DataLossPreventionDiscoveryConfigTargetsCloudStorageTarget)
 	PutSecretsTarget(value *DataLossPreventionDiscoveryConfigTargetsSecretsTarget)
 	ResetBigQueryTarget()
 	ResetCloudSqlTarget()
+	ResetCloudStorageTarget()
 	ResetSecretsTarget()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -123,6 +127,26 @@ func (j *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsOutputReference) Clou
 	_jsii_.Get(
 		j,
 		"cloudSqlTargetInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsOutputReference) CloudStorageTarget() DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetOutputReference {
+	var returns DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetOutputReference
+	_jsii_.Get(
+		j,
+		"cloudStorageTarget",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsOutputReference) CloudStorageTargetInput() *DataLossPreventionDiscoveryConfigTargetsCloudStorageTarget {
+	var returns *DataLossPreventionDiscoveryConfigTargetsCloudStorageTarget
+	_jsii_.Get(
+		j,
+		"cloudStorageTargetInput",
 		&returns,
 	)
 	return returns
@@ -509,6 +533,17 @@ func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsOutputReference) PutC
 	)
 }
 
+func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsOutputReference) PutCloudStorageTarget(value *DataLossPreventionDiscoveryConfigTargetsCloudStorageTarget) {
+	if err := d.validatePutCloudStorageTargetParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putCloudStorageTarget",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsOutputReference) PutSecretsTarget(value *DataLossPreventionDiscoveryConfigTargetsSecretsTarget) {
 	if err := d.validatePutSecretsTargetParameters(value); err != nil {
 		panic(err)
@@ -532,6 +567,14 @@ func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsOutputReference) Rese
 	_jsii_.InvokeVoid(
 		d,
 		"resetCloudSqlTarget",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsOutputReference) ResetCloudStorageTarget() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCloudStorageTarget",
 		nil, // no parameters
 	)
 }

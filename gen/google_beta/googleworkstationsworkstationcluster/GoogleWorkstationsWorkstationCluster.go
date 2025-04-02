@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleworkstationsworkstationcluster/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_workstations_workstation_cluster google_workstations_workstation_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_workstations_workstation_cluster google_workstations_workstation_cluster}.
 type GoogleWorkstationsWorkstationCluster interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -678,7 +678,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationCluster) WorkstationClusterIdInp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_workstations_workstation_cluster google_workstations_workstation_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_workstations_workstation_cluster google_workstations_workstation_cluster} Resource.
 func NewGoogleWorkstationsWorkstationCluster(scope constructs.Construct, id *string, config *GoogleWorkstationsWorkstationClusterConfig) GoogleWorkstationsWorkstationCluster {
 	_init_.Initialize()
 
@@ -696,7 +696,7 @@ func NewGoogleWorkstationsWorkstationCluster(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_workstations_workstation_cluster google_workstations_workstation_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_workstations_workstation_cluster google_workstations_workstation_cluster} Resource.
 func NewGoogleWorkstationsWorkstationCluster_Override(g GoogleWorkstationsWorkstationCluster, scope constructs.Construct, id *string, config *GoogleWorkstationsWorkstationClusterConfig) {
 	_init_.Initialize()
 

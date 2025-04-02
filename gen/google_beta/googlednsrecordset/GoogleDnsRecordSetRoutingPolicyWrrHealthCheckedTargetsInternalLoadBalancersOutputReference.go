@@ -82,6 +82,7 @@ type GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancers
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetLoadBalancerType()
 	ResetRegion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -652,6 +653,14 @@ func (g *jsiiProxy_GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInterna
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancersOutputReference) ResetLoadBalancerType() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLoadBalancerType",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancersOutputReference) ResetRegion() {

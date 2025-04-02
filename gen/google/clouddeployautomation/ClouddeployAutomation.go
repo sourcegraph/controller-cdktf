@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/clouddeployautomation/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/clouddeploy_automation google_clouddeploy_automation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/clouddeploy_automation google_clouddeploy_automation}.
 type ClouddeployAutomation interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -666,7 +666,7 @@ func (j *jsiiProxy_ClouddeployAutomation) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/clouddeploy_automation google_clouddeploy_automation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/clouddeploy_automation google_clouddeploy_automation} Resource.
 func NewClouddeployAutomation(scope constructs.Construct, id *string, config *ClouddeployAutomationConfig) ClouddeployAutomation {
 	_init_.Initialize()
 
@@ -684,7 +684,7 @@ func NewClouddeployAutomation(scope constructs.Construct, id *string, config *Cl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/clouddeploy_automation google_clouddeploy_automation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/clouddeploy_automation google_clouddeploy_automation} Resource.
 func NewClouddeployAutomation_Override(c ClouddeployAutomation, scope constructs.Construct, id *string, config *ClouddeployAutomationConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlenetworkservicesedgecacheorigin/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_network_services_edge_cache_origin google_network_services_edge_cache_origin}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_network_services_edge_cache_origin google_network_services_edge_cache_origin}.
 type GoogleNetworkServicesEdgeCacheOrigin interface {
 	cdktf.TerraformResource
 	AwsV4Authentication() GoogleNetworkServicesEdgeCacheOriginAwsV4AuthenticationOutputReference
@@ -687,7 +687,7 @@ func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheOrigin) TimeoutsInput() interfa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_network_services_edge_cache_origin google_network_services_edge_cache_origin} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_network_services_edge_cache_origin google_network_services_edge_cache_origin} Resource.
 func NewGoogleNetworkServicesEdgeCacheOrigin(scope constructs.Construct, id *string, config *GoogleNetworkServicesEdgeCacheOriginConfig) GoogleNetworkServicesEdgeCacheOrigin {
 	_init_.Initialize()
 
@@ -705,7 +705,7 @@ func NewGoogleNetworkServicesEdgeCacheOrigin(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_network_services_edge_cache_origin google_network_services_edge_cache_origin} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_network_services_edge_cache_origin google_network_services_edge_cache_origin} Resource.
 func NewGoogleNetworkServicesEdgeCacheOrigin_Override(g GoogleNetworkServicesEdgeCacheOrigin, scope constructs.Construct, id *string, config *GoogleNetworkServicesEdgeCacheOriginConfig) {
 	_init_.Initialize()
 

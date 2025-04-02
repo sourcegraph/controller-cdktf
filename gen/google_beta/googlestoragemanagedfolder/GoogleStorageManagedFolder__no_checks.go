@@ -104,6 +104,10 @@ func (j *jsiiProxy_GoogleStorageManagedFolder) validateSetCountParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_GoogleStorageManagedFolder) validateSetForceDestroyParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleStorageManagedFolder) validateSetIdParameters(val *string) error {
 	return nil
 }

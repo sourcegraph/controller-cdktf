@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputehavpngateway/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_ha_vpn_gateway google_compute_ha_vpn_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_compute_ha_vpn_gateway google_compute_ha_vpn_gateway}.
 type GoogleComputeHaVpnGateway interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -39,6 +39,9 @@ type GoogleComputeHaVpnGateway interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GatewayIpVersion() *string
+	SetGatewayIpVersion(val *string)
+	GatewayIpVersionInput() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -130,6 +133,7 @@ type GoogleComputeHaVpnGateway interface {
 	PutTimeouts(value *GoogleComputeHaVpnGatewayTimeouts)
 	PutVpnInterfaces(value interface{})
 	ResetDescription()
+	ResetGatewayIpVersion()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -252,6 +256,26 @@ func (j *jsiiProxy_GoogleComputeHaVpnGateway) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeHaVpnGateway) GatewayIpVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gatewayIpVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeHaVpnGateway) GatewayIpVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gatewayIpVersionInput",
 		&returns,
 	)
 	return returns
@@ -508,7 +532,7 @@ func (j *jsiiProxy_GoogleComputeHaVpnGateway) VpnInterfacesInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_ha_vpn_gateway google_compute_ha_vpn_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_compute_ha_vpn_gateway google_compute_ha_vpn_gateway} Resource.
 func NewGoogleComputeHaVpnGateway(scope constructs.Construct, id *string, config *GoogleComputeHaVpnGatewayConfig) GoogleComputeHaVpnGateway {
 	_init_.Initialize()
 
@@ -526,7 +550,7 @@ func NewGoogleComputeHaVpnGateway(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_ha_vpn_gateway google_compute_ha_vpn_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_compute_ha_vpn_gateway google_compute_ha_vpn_gateway} Resource.
 func NewGoogleComputeHaVpnGateway_Override(g GoogleComputeHaVpnGateway, scope constructs.Construct, id *string, config *GoogleComputeHaVpnGatewayConfig) {
 	_init_.Initialize()
 
@@ -582,6 +606,17 @@ func (j *jsiiProxy_GoogleComputeHaVpnGateway)SetForEach(val cdktf.ITerraformIter
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeHaVpnGateway)SetGatewayIpVersion(val *string) {
+	if err := j.validateSetGatewayIpVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"gatewayIpVersion",
 		val,
 	)
 }
@@ -1061,6 +1096,14 @@ func (g *jsiiProxy_GoogleComputeHaVpnGateway) ResetDescription() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeHaVpnGateway) ResetGatewayIpVersion() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetGatewayIpVersion",
 		nil, // no parameters
 	)
 }

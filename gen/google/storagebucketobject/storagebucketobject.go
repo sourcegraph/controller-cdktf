@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/storagebucketobject/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/storage_bucket_object google_storage_bucket_object}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/storage_bucket_object google_storage_bucket_object}.
 type StorageBucketObject interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -66,6 +66,7 @@ type StorageBucketObject interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Generation() *float64
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -491,6 +492,16 @@ func (j *jsiiProxy_StorageBucketObject) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_StorageBucketObject) Generation() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"generation",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StorageBucketObject) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -792,7 +803,7 @@ func (j *jsiiProxy_StorageBucketObject) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/storage_bucket_object google_storage_bucket_object} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/storage_bucket_object google_storage_bucket_object} Resource.
 func NewStorageBucketObject(scope constructs.Construct, id *string, config *StorageBucketObjectConfig) StorageBucketObject {
 	_init_.Initialize()
 
@@ -810,7 +821,7 @@ func NewStorageBucketObject(scope constructs.Construct, id *string, config *Stor
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/storage_bucket_object google_storage_bucket_object} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/storage_bucket_object google_storage_bucket_object} Resource.
 func NewStorageBucketObject_Override(s StorageBucketObject, scope constructs.Construct, id *string, config *StorageBucketObjectConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/computeregionurlmap/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_region_url_map google_compute_region_url_map}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/compute_region_url_map google_compute_region_url_map}.
 type ComputeRegionUrlMap interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -614,7 +614,7 @@ func (j *jsiiProxy_ComputeRegionUrlMap) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_region_url_map google_compute_region_url_map} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/compute_region_url_map google_compute_region_url_map} Resource.
 func NewComputeRegionUrlMap(scope constructs.Construct, id *string, config *ComputeRegionUrlMapConfig) ComputeRegionUrlMap {
 	_init_.Initialize()
 
@@ -632,7 +632,7 @@ func NewComputeRegionUrlMap(scope constructs.Construct, id *string, config *Comp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_region_url_map google_compute_region_url_map} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.45.0/docs/resources/compute_region_url_map google_compute_region_url_map} Resource.
 func NewComputeRegionUrlMap_Override(c ComputeRegionUrlMap, scope constructs.Construct, id *string, config *ComputeRegionUrlMapConfig) {
 	_init_.Initialize()
 

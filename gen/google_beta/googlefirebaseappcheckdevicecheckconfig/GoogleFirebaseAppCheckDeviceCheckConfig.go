@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlefirebaseappcheckdevicecheckconfig/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_firebase_app_check_device_check_config google_firebase_app_check_device_check_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_firebase_app_check_device_check_config google_firebase_app_check_device_check_config}.
 type GoogleFirebaseAppCheckDeviceCheckConfig interface {
 	cdktf.TerraformResource
 	AppId() *string
@@ -470,7 +470,7 @@ func (j *jsiiProxy_GoogleFirebaseAppCheckDeviceCheckConfig) TokenTtlInput() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_firebase_app_check_device_check_config google_firebase_app_check_device_check_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_firebase_app_check_device_check_config google_firebase_app_check_device_check_config} Resource.
 func NewGoogleFirebaseAppCheckDeviceCheckConfig(scope constructs.Construct, id *string, config *GoogleFirebaseAppCheckDeviceCheckConfigConfig) GoogleFirebaseAppCheckDeviceCheckConfig {
 	_init_.Initialize()
 
@@ -488,7 +488,7 @@ func NewGoogleFirebaseAppCheckDeviceCheckConfig(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_firebase_app_check_device_check_config google_firebase_app_check_device_check_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.45.0/docs/resources/google_firebase_app_check_device_check_config google_firebase_app_check_device_check_config} Resource.
 func NewGoogleFirebaseAppCheckDeviceCheckConfig_Override(g GoogleFirebaseAppCheckDeviceCheckConfig, scope constructs.Construct, id *string, config *GoogleFirebaseAppCheckDeviceCheckConfigConfig) {
 	_init_.Initialize()
 

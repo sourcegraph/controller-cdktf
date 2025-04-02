@@ -108,6 +108,14 @@ func (j *jsiiProxy_GoogleParallelstoreInstance) validateSetDescriptionParameters
 	return nil
 }
 
+func (j *jsiiProxy_GoogleParallelstoreInstance) validateSetDirectoryStripeLevelParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleParallelstoreInstance) validateSetFileStripeLevelParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleParallelstoreInstance) validateSetIdParameters(val *string) error {
 	return nil
 }
