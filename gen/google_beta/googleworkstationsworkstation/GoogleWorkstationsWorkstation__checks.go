@@ -455,6 +455,14 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstation) validateSetProvisionersParamet
 	return nil
 }
 
+func (j *jsiiProxy_GoogleWorkstationsWorkstation) validateSetSourceWorkstationParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleWorkstationsWorkstation) validateSetWorkstationClusterIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -28,6 +28,9 @@ type GoogleClouddeployTargetGkeOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DnsEndpoint() interface{}
+	SetDnsEndpoint(val interface{})
+	DnsEndpointInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalIp() interface{}
@@ -35,6 +38,9 @@ type GoogleClouddeployTargetGkeOutputReference interface {
 	InternalIpInput() interface{}
 	InternalValue() *GoogleClouddeployTargetGke
 	SetInternalValue(val *GoogleClouddeployTargetGke)
+	ProxyUrl() *string
+	SetProxyUrl(val *string)
+	ProxyUrlInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -68,7 +74,9 @@ type GoogleClouddeployTargetGkeOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetCluster()
+	ResetDnsEndpoint()
 	ResetInternalIp()
+	ResetProxyUrl()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -134,6 +142,26 @@ func (j *jsiiProxy_GoogleClouddeployTargetGkeOutputReference) CreationStack() *[
 	return returns
 }
 
+func (j *jsiiProxy_GoogleClouddeployTargetGkeOutputReference) DnsEndpoint() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dnsEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleClouddeployTargetGkeOutputReference) DnsEndpointInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dnsEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleClouddeployTargetGkeOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -169,6 +197,26 @@ func (j *jsiiProxy_GoogleClouddeployTargetGkeOutputReference) InternalValue() *G
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleClouddeployTargetGkeOutputReference) ProxyUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"proxyUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleClouddeployTargetGkeOutputReference) ProxyUrlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"proxyUrlInput",
 		&returns,
 	)
 	return returns
@@ -255,6 +303,17 @@ func (j *jsiiProxy_GoogleClouddeployTargetGkeOutputReference)SetComplexObjectIsF
 	)
 }
 
+func (j *jsiiProxy_GoogleClouddeployTargetGkeOutputReference)SetDnsEndpoint(val interface{}) {
+	if err := j.validateSetDnsEndpointParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dnsEndpoint",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleClouddeployTargetGkeOutputReference)SetInternalIp(val interface{}) {
 	if err := j.validateSetInternalIpParameters(val); err != nil {
 		panic(err)
@@ -273,6 +332,17 @@ func (j *jsiiProxy_GoogleClouddeployTargetGkeOutputReference)SetInternalValue(va
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleClouddeployTargetGkeOutputReference)SetProxyUrl(val *string) {
+	if err := j.validateSetProxyUrlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"proxyUrl",
 		val,
 	)
 }
@@ -493,10 +563,26 @@ func (g *jsiiProxy_GoogleClouddeployTargetGkeOutputReference) ResetCluster() {
 	)
 }
 
+func (g *jsiiProxy_GoogleClouddeployTargetGkeOutputReference) ResetDnsEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDnsEndpoint",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleClouddeployTargetGkeOutputReference) ResetInternalIp() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetInternalIp",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleClouddeployTargetGkeOutputReference) ResetProxyUrl() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetProxyUrl",
 		nil, // no parameters
 	)
 }

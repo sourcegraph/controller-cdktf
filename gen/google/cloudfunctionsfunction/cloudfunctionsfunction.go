@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/cloudfunctionsfunction/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/cloudfunctions_function google_cloudfunctions_function}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/cloudfunctions_function google_cloudfunctions_function}.
 type CloudfunctionsFunction interface {
 	cdktf.TerraformResource
 	AvailableMemoryMb() *float64
@@ -18,6 +18,9 @@ type CloudfunctionsFunction interface {
 	BuildEnvironmentVariables() *map[string]*string
 	SetBuildEnvironmentVariables(val *map[string]*string)
 	BuildEnvironmentVariablesInput() *map[string]*string
+	BuildServiceAccount() *string
+	SetBuildServiceAccount(val *string)
+	BuildServiceAccountInput() *string
 	BuildWorkerPool() *string
 	SetBuildWorkerPool(val *string)
 	BuildWorkerPoolInput() *string
@@ -203,6 +206,7 @@ type CloudfunctionsFunction interface {
 	PutTimeouts(value *CloudfunctionsFunctionTimeouts)
 	ResetAvailableMemoryMb()
 	ResetBuildEnvironmentVariables()
+	ResetBuildServiceAccount()
 	ResetBuildWorkerPool()
 	ResetDescription()
 	ResetDockerRegistry()
@@ -287,6 +291,26 @@ func (j *jsiiProxy_CloudfunctionsFunction) BuildEnvironmentVariablesInput() *map
 	_jsii_.Get(
 		j,
 		"buildEnvironmentVariablesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudfunctionsFunction) BuildServiceAccount() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"buildServiceAccount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudfunctionsFunction) BuildServiceAccountInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"buildServiceAccountInput",
 		&returns,
 	)
 	return returns
@@ -1093,7 +1117,7 @@ func (j *jsiiProxy_CloudfunctionsFunction) VpcConnectorInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/cloudfunctions_function google_cloudfunctions_function} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/cloudfunctions_function google_cloudfunctions_function} Resource.
 func NewCloudfunctionsFunction(scope constructs.Construct, id *string, config *CloudfunctionsFunctionConfig) CloudfunctionsFunction {
 	_init_.Initialize()
 
@@ -1111,7 +1135,7 @@ func NewCloudfunctionsFunction(scope constructs.Construct, id *string, config *C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/cloudfunctions_function google_cloudfunctions_function} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/cloudfunctions_function google_cloudfunctions_function} Resource.
 func NewCloudfunctionsFunction_Override(c CloudfunctionsFunction, scope constructs.Construct, id *string, config *CloudfunctionsFunctionConfig) {
 	_init_.Initialize()
 
@@ -1140,6 +1164,17 @@ func (j *jsiiProxy_CloudfunctionsFunction)SetBuildEnvironmentVariables(val *map[
 	_jsii_.Set(
 		j,
 		"buildEnvironmentVariables",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudfunctionsFunction)SetBuildServiceAccount(val *string) {
+	if err := j.validateSetBuildServiceAccountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"buildServiceAccount",
 		val,
 	)
 }
@@ -1907,6 +1942,14 @@ func (c *jsiiProxy_CloudfunctionsFunction) ResetBuildEnvironmentVariables() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetBuildEnvironmentVariables",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudfunctionsFunction) ResetBuildServiceAccount() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetBuildServiceAccount",
 		nil, // no parameters
 	)
 }

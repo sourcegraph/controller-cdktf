@@ -108,6 +108,10 @@ func (j *jsiiProxy_GoogleProject) validateSetCountParameters(val interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_GoogleProject) validateSetDeletionPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleProject) validateSetFolderIdParameters(val *string) error {
 	return nil
 }
@@ -140,7 +144,7 @@ func (j *jsiiProxy_GoogleProject) validateSetProvisionersParameters(val *[]inter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleProject) validateSetSkipDeleteParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleProject) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }
 

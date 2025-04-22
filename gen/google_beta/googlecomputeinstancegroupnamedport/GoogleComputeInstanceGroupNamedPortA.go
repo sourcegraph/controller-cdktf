@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeinstancegroupnamedport/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_instance_group_named_port google_compute_instance_group_named_port}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_instance_group_named_port google_compute_instance_group_named_port}.
 type GoogleComputeInstanceGroupNamedPortA interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -448,7 +448,7 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupNamedPortA) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_instance_group_named_port google_compute_instance_group_named_port} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_instance_group_named_port google_compute_instance_group_named_port} Resource.
 func NewGoogleComputeInstanceGroupNamedPortA(scope constructs.Construct, id *string, config *GoogleComputeInstanceGroupNamedPortAConfig) GoogleComputeInstanceGroupNamedPortA {
 	_init_.Initialize()
 
@@ -466,7 +466,7 @@ func NewGoogleComputeInstanceGroupNamedPortA(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_instance_group_named_port google_compute_instance_group_named_port} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_instance_group_named_port google_compute_instance_group_named_port} Resource.
 func NewGoogleComputeInstanceGroupNamedPortA_Override(g GoogleComputeInstanceGroupNamedPortA, scope constructs.Construct, id *string, config *GoogleComputeInstanceGroupNamedPortAConfig) {
 	_init_.Initialize()
 

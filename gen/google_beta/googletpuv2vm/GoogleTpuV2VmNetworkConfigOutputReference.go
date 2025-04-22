@@ -38,6 +38,9 @@ type GoogleTpuV2VmNetworkConfigOutputReference interface {
 	Network() *string
 	SetNetwork(val *string)
 	NetworkInput() *string
+	QueueCount() *float64
+	SetQueueCount(val *float64)
+	QueueCountInput() *float64
 	Subnetwork() *string
 	SetSubnetwork(val *string)
 	SubnetworkInput() *string
@@ -76,6 +79,7 @@ type GoogleTpuV2VmNetworkConfigOutputReference interface {
 	ResetCanIpForward()
 	ResetEnableExternalIps()
 	ResetNetwork()
+	ResetQueueCount()
 	ResetSubnetwork()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -197,6 +201,26 @@ func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigOutputReference) NetworkInput() *st
 	_jsii_.Get(
 		j,
 		"networkInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigOutputReference) QueueCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"queueCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigOutputReference) QueueCountInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"queueCountInput",
 		&returns,
 	)
 	return returns
@@ -332,6 +356,17 @@ func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigOutputReference)SetNetwork(val *str
 	_jsii_.Set(
 		j,
 		"network",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigOutputReference)SetQueueCount(val *float64) {
+	if err := j.validateSetQueueCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"queueCount",
 		val,
 	)
 }
@@ -575,6 +610,14 @@ func (g *jsiiProxy_GoogleTpuV2VmNetworkConfigOutputReference) ResetNetwork() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetNetwork",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleTpuV2VmNetworkConfigOutputReference) ResetQueueCount() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetQueueCount",
 		nil, // no parameters
 	)
 }

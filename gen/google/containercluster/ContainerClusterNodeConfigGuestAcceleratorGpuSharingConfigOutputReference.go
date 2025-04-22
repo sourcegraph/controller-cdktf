@@ -30,8 +30,8 @@ type ContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputReference i
 	GpuSharingStrategy() *string
 	SetGpuSharingStrategy(val *string)
 	GpuSharingStrategyInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *ContainerClusterNodeConfigGuestAcceleratorGpuSharingConfig
+	SetInternalValue(val *ContainerClusterNodeConfigGuestAcceleratorGpuSharingConfig)
 	MaxSharedClientsPerGpu() *float64
 	SetMaxSharedClientsPerGpu(val *float64)
 	MaxSharedClientsPerGpuInput() *float64
@@ -67,8 +67,6 @@ type ContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputReference i
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetGpuSharingStrategy()
-	ResetMaxSharedClientsPerGpu()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -144,8 +142,8 @@ func (j *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOut
 	return returns
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputReference) InternalValue() *ContainerClusterNodeConfigGuestAcceleratorGpuSharingConfig {
+	var returns *ContainerClusterNodeConfigGuestAcceleratorGpuSharingConfig
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -195,29 +193,29 @@ func (j *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOut
 }
 
 
-func NewContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputReference {
+func NewContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerCluster.ContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputReference_Override(c ContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputReference_Override(c ContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerCluster.ContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
 }
@@ -255,7 +253,7 @@ func (j *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOut
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputReference)SetInternalValue(val *ContainerClusterNodeConfigGuestAcceleratorGpuSharingConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -483,22 +481,6 @@ func (c *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOut
 	)
 
 	return returns
-}
-
-func (c *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputReference) ResetGpuSharingStrategy() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetGpuSharingStrategy",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputReference) ResetMaxSharedClientsPerGpu() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetMaxSharedClientsPerGpu",
-		nil, // no parameters
-	)
 }
 
 func (c *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

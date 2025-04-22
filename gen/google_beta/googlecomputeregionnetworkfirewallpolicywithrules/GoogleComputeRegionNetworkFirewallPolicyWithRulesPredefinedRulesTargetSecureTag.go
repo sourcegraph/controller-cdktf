@@ -1,0 +1,6 @@
+package googlecomputeregionnetworkfirewallpolicywithrules
+
+
+type GoogleComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesTargetSecureTag struct {
+}
+

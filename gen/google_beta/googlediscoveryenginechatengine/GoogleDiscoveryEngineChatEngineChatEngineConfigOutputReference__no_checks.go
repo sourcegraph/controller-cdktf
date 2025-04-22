@@ -60,6 +60,10 @@ func (j *jsiiProxy_GoogleDiscoveryEngineChatEngineChatEngineConfigOutputReferenc
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDiscoveryEngineChatEngineChatEngineConfigOutputReference) validateSetDialogflowAgentToLinkParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDiscoveryEngineChatEngineChatEngineConfigOutputReference) validateSetInternalValueParameters(val *GoogleDiscoveryEngineChatEngineChatEngineConfig) error {
 	return nil
 }

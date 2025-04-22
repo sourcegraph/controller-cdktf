@@ -56,6 +56,10 @@ func (j *jsiiProxy_ComputeRegionBackendServiceIapOutputReference) validateSetCom
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRegionBackendServiceIapOutputReference) validateSetEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRegionBackendServiceIapOutputReference) validateSetInternalValueParameters(val *ComputeRegionBackendServiceIap) error {
 	return nil
 }

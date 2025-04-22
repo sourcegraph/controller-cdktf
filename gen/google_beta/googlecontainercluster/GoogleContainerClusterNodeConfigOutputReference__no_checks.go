@@ -120,6 +120,10 @@ func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validatePutT
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validatePutWindowsNodeConfigParameters(value *GoogleContainerClusterNodeConfigWindowsNodeConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validatePutWorkloadMetadataConfigParameters(value *GoogleContainerClusterNodeConfigWorkloadMetadataConfig) error {
 	return nil
 }
@@ -168,11 +172,19 @@ func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validateSetL
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validateSetLocalSsdEncryptionModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validateSetLoggingVariantParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validateSetMachineTypeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validateSetMaxRunDurationParameters(val *string) error {
 	return nil
 }
 
@@ -209,6 +221,10 @@ func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validateSetS
 }
 
 func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validateSetSpotParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validateSetStoragePoolsParameters(val *[]*string) error {
 	return nil
 }
 

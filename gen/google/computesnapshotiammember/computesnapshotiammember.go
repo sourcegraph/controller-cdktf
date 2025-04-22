@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/computesnapshotiammember/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_snapshot_iam_member google_compute_snapshot_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/compute_snapshot_iam_member google_compute_snapshot_iam_member}.
 type ComputeSnapshotIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -435,7 +435,7 @@ func (j *jsiiProxy_ComputeSnapshotIamMember) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_snapshot_iam_member google_compute_snapshot_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/compute_snapshot_iam_member google_compute_snapshot_iam_member} Resource.
 func NewComputeSnapshotIamMember(scope constructs.Construct, id *string, config *ComputeSnapshotIamMemberConfig) ComputeSnapshotIamMember {
 	_init_.Initialize()
 
@@ -453,7 +453,7 @@ func NewComputeSnapshotIamMember(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_snapshot_iam_member google_compute_snapshot_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/compute_snapshot_iam_member google_compute_snapshot_iam_member} Resource.
 func NewComputeSnapshotIamMember_Override(c ComputeSnapshotIamMember, scope constructs.Construct, id *string, config *ComputeSnapshotIamMemberConfig) {
 	_init_.Initialize()
 

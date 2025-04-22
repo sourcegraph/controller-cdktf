@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/computeinterconnect/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_interconnect google_compute_interconnect}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/compute_interconnect google_compute_interconnect}.
 type ComputeInterconnect interface {
 	cdktf.TerraformResource
 	AdminEnabled() interface{}
@@ -168,9 +168,11 @@ type ComputeInterconnect interface {
 	PutMacsec(value *ComputeInterconnectMacsec)
 	PutTimeouts(value *ComputeInterconnectTimeouts)
 	ResetAdminEnabled()
+	ResetCustomerName()
 	ResetDescription()
 	ResetId()
 	ResetLabels()
+	ResetLocation()
 	ResetMacsec()
 	ResetMacsecEnabled()
 	ResetNocContactEmail()
@@ -850,7 +852,7 @@ func (j *jsiiProxy_ComputeInterconnect) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_interconnect google_compute_interconnect} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/compute_interconnect google_compute_interconnect} Resource.
 func NewComputeInterconnect(scope constructs.Construct, id *string, config *ComputeInterconnectConfig) ComputeInterconnect {
 	_init_.Initialize()
 
@@ -868,7 +870,7 @@ func NewComputeInterconnect(scope constructs.Construct, id *string, config *Comp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_interconnect google_compute_interconnect} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/compute_interconnect google_compute_interconnect} Resource.
 func NewComputeInterconnect_Override(c ComputeInterconnect, scope constructs.Construct, id *string, config *ComputeInterconnectConfig) {
 	_init_.Initialize()
 
@@ -1495,6 +1497,14 @@ func (c *jsiiProxy_ComputeInterconnect) ResetAdminEnabled() {
 	)
 }
 
+func (c *jsiiProxy_ComputeInterconnect) ResetCustomerName() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCustomerName",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ComputeInterconnect) ResetDescription() {
 	_jsii_.InvokeVoid(
 		c,
@@ -1515,6 +1525,14 @@ func (c *jsiiProxy_ComputeInterconnect) ResetLabels() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetLabels",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeInterconnect) ResetLocation() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetLocation",
 		nil, // no parameters
 	)
 }

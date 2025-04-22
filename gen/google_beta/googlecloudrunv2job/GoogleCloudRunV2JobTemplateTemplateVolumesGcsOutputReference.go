@@ -32,6 +32,9 @@ type GoogleCloudRunV2JobTemplateTemplateVolumesGcsOutputReference interface {
 	Fqn() *string
 	InternalValue() *GoogleCloudRunV2JobTemplateTemplateVolumesGcs
 	SetInternalValue(val *GoogleCloudRunV2JobTemplateTemplateVolumesGcs)
+	MountOptions() *[]*string
+	SetMountOptions(val *[]*string)
+	MountOptionsInput() *[]*string
 	ReadOnly() interface{}
 	SetReadOnly(val interface{})
 	ReadOnlyInput() interface{}
@@ -67,6 +70,7 @@ type GoogleCloudRunV2JobTemplateTemplateVolumesGcsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetMountOptions()
 	ResetReadOnly()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -148,6 +152,26 @@ func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesGcsOutputReference)
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesGcsOutputReference) MountOptions() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"mountOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesGcsOutputReference) MountOptionsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"mountOptionsInput",
 		&returns,
 	)
 	return returns
@@ -261,6 +285,17 @@ func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesGcsOutputReference)
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesGcsOutputReference)SetMountOptions(val *[]*string) {
+	if err := j.validateSetMountOptionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"mountOptions",
 		val,
 	)
 }
@@ -482,6 +517,14 @@ func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesGcsOutputReference)
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesGcsOutputReference) ResetMountOptions() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMountOptions",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesGcsOutputReference) ResetReadOnly() {

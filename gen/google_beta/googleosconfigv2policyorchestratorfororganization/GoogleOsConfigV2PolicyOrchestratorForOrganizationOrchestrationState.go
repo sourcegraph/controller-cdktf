@@ -1,0 +1,6 @@
+package googleosconfigv2policyorchestratorfororganization
+
+
+type GoogleOsConfigV2PolicyOrchestratorForOrganizationOrchestrationState struct {
+}
+

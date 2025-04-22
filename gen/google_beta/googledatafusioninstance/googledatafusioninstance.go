@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledatafusioninstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_data_fusion_instance google_data_fusion_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_data_fusion_instance google_data_fusion_instance}.
 type GoogleDataFusionInstance interface {
 	cdktf.TerraformResource
 	Accelerators() GoogleDataFusionInstanceAcceleratorsList
@@ -108,6 +108,9 @@ type GoogleDataFusionInstance interface {
 	ServiceEndpoint() *string
 	State() *string
 	StateMessage() *string
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsInput() *map[string]*string
 	TenantProjectId() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -195,6 +198,7 @@ type GoogleDataFusionInstance interface {
 	ResetPrivateInstance()
 	ResetProject()
 	ResetRegion()
+	ResetTags()
 	ResetTimeouts()
 	ResetVersion()
 	ResetZone()
@@ -776,6 +780,26 @@ func (j *jsiiProxy_GoogleDataFusionInstance) StateMessage() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDataFusionInstance) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataFusionInstance) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleDataFusionInstance) TenantProjectId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -917,7 +941,7 @@ func (j *jsiiProxy_GoogleDataFusionInstance) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_data_fusion_instance google_data_fusion_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_data_fusion_instance google_data_fusion_instance} Resource.
 func NewGoogleDataFusionInstance(scope constructs.Construct, id *string, config *GoogleDataFusionInstanceConfig) GoogleDataFusionInstance {
 	_init_.Initialize()
 
@@ -935,7 +959,7 @@ func NewGoogleDataFusionInstance(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_data_fusion_instance google_data_fusion_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_data_fusion_instance google_data_fusion_instance} Resource.
 func NewGoogleDataFusionInstance_Override(g GoogleDataFusionInstance, scope constructs.Construct, id *string, config *GoogleDataFusionInstanceConfig) {
 	_init_.Initialize()
 
@@ -1153,6 +1177,17 @@ func (j *jsiiProxy_GoogleDataFusionInstance)SetRegion(val *string) {
 	_jsii_.Set(
 		j,
 		"region",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataFusionInstance)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
 		val,
 	)
 }
@@ -1730,6 +1765,14 @@ func (g *jsiiProxy_GoogleDataFusionInstance) ResetRegion() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataFusionInstance) ResetTags() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTags",
 		nil, // no parameters
 	)
 }

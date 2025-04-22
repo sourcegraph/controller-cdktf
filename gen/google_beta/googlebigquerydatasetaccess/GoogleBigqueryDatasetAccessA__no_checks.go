@@ -72,6 +72,10 @@ func (g *jsiiProxy_GoogleBigqueryDatasetAccessA) validateOverrideLogicalIdParame
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBigqueryDatasetAccessA) validatePutConditionParameters(value *GoogleBigqueryDatasetAccessConditionA) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigqueryDatasetAccessA) validatePutDatasetParameters(value *GoogleBigqueryDatasetAccessDatasetA) error {
 	return nil
 }

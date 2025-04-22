@@ -32,6 +32,12 @@ type GoogleMonitoringUptimeCheckConfigHttpCheckAuthInfoOutputReference interface
 	Password() *string
 	SetPassword(val *string)
 	PasswordInput() *string
+	PasswordWo() *string
+	SetPasswordWo(val *string)
+	PasswordWoInput() *string
+	PasswordWoVersion() *string
+	SetPasswordWoVersion(val *string)
+	PasswordWoVersionInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,6 +73,9 @@ type GoogleMonitoringUptimeCheckConfigHttpCheckAuthInfoOutputReference interface
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetPassword()
+	ResetPasswordWo()
+	ResetPasswordWoVersion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -147,6 +156,46 @@ func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckAuthInfoOutputRefer
 	_jsii_.Get(
 		j,
 		"passwordInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckAuthInfoOutputReference) PasswordWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckAuthInfoOutputReference) PasswordWoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordWoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckAuthInfoOutputReference) PasswordWoVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordWoVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckAuthInfoOutputReference) PasswordWoVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordWoVersionInput",
 		&returns,
 	)
 	return returns
@@ -260,6 +309,28 @@ func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckAuthInfoOutputRefer
 	_jsii_.Set(
 		j,
 		"password",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckAuthInfoOutputReference)SetPasswordWo(val *string) {
+	if err := j.validateSetPasswordWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"passwordWo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckAuthInfoOutputReference)SetPasswordWoVersion(val *string) {
+	if err := j.validateSetPasswordWoVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"passwordWoVersion",
 		val,
 	)
 }
@@ -481,6 +552,30 @@ func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckAuthInfoOutputRefer
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckAuthInfoOutputReference) ResetPassword() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPassword",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckAuthInfoOutputReference) ResetPasswordWo() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPasswordWo",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckAuthInfoOutputReference) ResetPasswordWoVersion() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPasswordWoVersion",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckAuthInfoOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

@@ -9,9 +9,12 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleapigeenataddress/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_apigee_nat_address google_apigee_nat_address}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_apigee_nat_address google_apigee_nat_address}.
 type GoogleApigeeNatAddress interface {
 	cdktf.TerraformResource
+	Activate() interface{}
+	SetActivate(val interface{})
+	ActivateInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -115,6 +118,7 @@ type GoogleApigeeNatAddress interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *GoogleApigeeNatAddressTimeouts)
+	ResetActivate()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -136,6 +140,26 @@ type GoogleApigeeNatAddress interface {
 // The jsii proxy struct for GoogleApigeeNatAddress
 type jsiiProxy_GoogleApigeeNatAddress struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GoogleApigeeNatAddress) Activate() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"activate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleApigeeNatAddress) ActivateInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"activateInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleApigeeNatAddress) CdktfStack() cdktf.TerraformStack {
@@ -399,7 +423,7 @@ func (j *jsiiProxy_GoogleApigeeNatAddress) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_apigee_nat_address google_apigee_nat_address} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_apigee_nat_address google_apigee_nat_address} Resource.
 func NewGoogleApigeeNatAddress(scope constructs.Construct, id *string, config *GoogleApigeeNatAddressConfig) GoogleApigeeNatAddress {
 	_init_.Initialize()
 
@@ -417,7 +441,7 @@ func NewGoogleApigeeNatAddress(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_apigee_nat_address google_apigee_nat_address} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_apigee_nat_address google_apigee_nat_address} Resource.
 func NewGoogleApigeeNatAddress_Override(g GoogleApigeeNatAddress, scope constructs.Construct, id *string, config *GoogleApigeeNatAddressConfig) {
 	_init_.Initialize()
 
@@ -425,6 +449,17 @@ func NewGoogleApigeeNatAddress_Override(g GoogleApigeeNatAddress, scope construc
 		"@cdktf/provider-google-beta.googleApigeeNatAddress.GoogleApigeeNatAddress",
 		[]interface{}{scope, id, config},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GoogleApigeeNatAddress)SetActivate(val interface{}) {
+	if err := j.validateSetActivateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"activate",
+		val,
 	)
 }
 
@@ -890,6 +925,14 @@ func (g *jsiiProxy_GoogleApigeeNatAddress) PutTimeouts(value *GoogleApigeeNatAdd
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleApigeeNatAddress) ResetActivate() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetActivate",
+		nil, // no parameters
 	)
 }
 

@@ -128,10 +128,6 @@ func (j *jsiiProxy_BigqueryReservation) validateSetLocationParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryReservation) validateSetMultiRegionAuxiliaryParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_BigqueryReservation) validateSetNameParameters(val *string) error {
 	return nil
 }
@@ -141,6 +137,10 @@ func (j *jsiiProxy_BigqueryReservation) validateSetProjectParameters(val *string
 }
 
 func (j *jsiiProxy_BigqueryReservation) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_BigqueryReservation) validateSetSecondaryLocationParameters(val *string) error {
 	return nil
 }
 

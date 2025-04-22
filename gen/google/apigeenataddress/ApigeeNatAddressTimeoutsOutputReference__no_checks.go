@@ -76,6 +76,10 @@ func (j *jsiiProxy_ApigeeNatAddressTimeoutsOutputReference) validateSetTerraform
 	return nil
 }
 
+func (j *jsiiProxy_ApigeeNatAddressTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
+	return nil
+}
+
 func validateNewApigeeNatAddressTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

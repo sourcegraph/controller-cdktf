@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/apigeeenvreferences/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/apigee_env_references google_apigee_env_references}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/apigee_env_references google_apigee_env_references}.
 type ApigeeEnvReferences interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -447,7 +447,7 @@ func (j *jsiiProxy_ApigeeEnvReferences) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/apigee_env_references google_apigee_env_references} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/apigee_env_references google_apigee_env_references} Resource.
 func NewApigeeEnvReferences(scope constructs.Construct, id *string, config *ApigeeEnvReferencesConfig) ApigeeEnvReferences {
 	_init_.Initialize()
 
@@ -465,7 +465,7 @@ func NewApigeeEnvReferences(scope constructs.Construct, id *string, config *Apig
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/apigee_env_references google_apigee_env_references} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/apigee_env_references google_apigee_env_references} Resource.
 func NewApigeeEnvReferences_Override(a ApigeeEnvReferences, scope constructs.Construct, id *string, config *ApigeeEnvReferencesConfig) {
 	_init_.Initialize()
 

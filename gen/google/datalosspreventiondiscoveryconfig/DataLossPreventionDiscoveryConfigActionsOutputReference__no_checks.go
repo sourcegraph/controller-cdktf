@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataLossPreventionDiscoveryConfigActionsOutputReference) vali
 	return nil
 }
 
+func (d *jsiiProxy_DataLossPreventionDiscoveryConfigActionsOutputReference) validatePutTagResourcesParameters(value *DataLossPreventionDiscoveryConfigActionsTagResources) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataLossPreventionDiscoveryConfigActionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

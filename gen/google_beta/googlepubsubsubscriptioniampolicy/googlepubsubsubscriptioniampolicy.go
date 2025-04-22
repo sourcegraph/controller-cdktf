@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlepubsubsubscriptioniampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_pubsub_subscription_iam_policy google_pubsub_subscription_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_pubsub_subscription_iam_policy google_pubsub_subscription_iam_policy}.
 type GooglePubsubSubscriptionIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -388,7 +388,7 @@ func (j *jsiiProxy_GooglePubsubSubscriptionIamPolicy) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_pubsub_subscription_iam_policy google_pubsub_subscription_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_pubsub_subscription_iam_policy google_pubsub_subscription_iam_policy} Resource.
 func NewGooglePubsubSubscriptionIamPolicy(scope constructs.Construct, id *string, config *GooglePubsubSubscriptionIamPolicyConfig) GooglePubsubSubscriptionIamPolicy {
 	_init_.Initialize()
 
@@ -406,7 +406,7 @@ func NewGooglePubsubSubscriptionIamPolicy(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_pubsub_subscription_iam_policy google_pubsub_subscription_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_pubsub_subscription_iam_policy google_pubsub_subscription_iam_policy} Resource.
 func NewGooglePubsubSubscriptionIamPolicy_Override(g GooglePubsubSubscriptionIamPolicy, scope constructs.Construct, id *string, config *GooglePubsubSubscriptionIamPolicyConfig) {
 	_init_.Initialize()
 

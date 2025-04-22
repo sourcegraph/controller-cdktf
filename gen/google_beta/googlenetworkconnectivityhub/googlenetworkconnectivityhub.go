@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlenetworkconnectivityhub/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_network_connectivity_hub google_network_connectivity_hub}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_network_connectivity_hub google_network_connectivity_hub}.
 type GoogleNetworkConnectivityHub interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -33,6 +33,9 @@ type GoogleNetworkConnectivityHub interface {
 	SetDescription(val *string)
 	DescriptionInput() *string
 	EffectiveLabels() cdktf.StringMap
+	ExportPsc() interface{}
+	SetExportPsc(val interface{})
+	ExportPscInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -56,6 +59,12 @@ type GoogleNetworkConnectivityHub interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	PolicyMode() *string
+	SetPolicyMode(val *string)
+	PolicyModeInput() *string
+	PresetTopology() *string
+	SetPresetTopology(val *string)
+	PresetTopologyInput() *string
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -127,11 +136,15 @@ type GoogleNetworkConnectivityHub interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *GoogleNetworkConnectivityHubTimeouts)
 	ResetDescription()
+	ResetExportPsc()
 	ResetId()
 	ResetLabels()
+	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPolicyMode()
+	ResetPresetTopology()
 	ResetProject()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -242,6 +255,26 @@ func (j *jsiiProxy_GoogleNetworkConnectivityHub) EffectiveLabels() cdktf.StringM
 	return returns
 }
 
+func (j *jsiiProxy_GoogleNetworkConnectivityHub) ExportPsc() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"exportPsc",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkConnectivityHub) ExportPscInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"exportPscInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleNetworkConnectivityHub) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -347,6 +380,46 @@ func (j *jsiiProxy_GoogleNetworkConnectivityHub) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkConnectivityHub) PolicyMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"policyMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkConnectivityHub) PolicyModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"policyModeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkConnectivityHub) PresetTopology() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"presetTopology",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkConnectivityHub) PresetTopologyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"presetTopologyInput",
 		&returns,
 	)
 	return returns
@@ -503,7 +576,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivityHub) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_network_connectivity_hub google_network_connectivity_hub} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_network_connectivity_hub google_network_connectivity_hub} Resource.
 func NewGoogleNetworkConnectivityHub(scope constructs.Construct, id *string, config *GoogleNetworkConnectivityHubConfig) GoogleNetworkConnectivityHub {
 	_init_.Initialize()
 
@@ -521,7 +594,7 @@ func NewGoogleNetworkConnectivityHub(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_network_connectivity_hub google_network_connectivity_hub} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_network_connectivity_hub google_network_connectivity_hub} Resource.
 func NewGoogleNetworkConnectivityHub_Override(g GoogleNetworkConnectivityHub, scope constructs.Construct, id *string, config *GoogleNetworkConnectivityHubConfig) {
 	_init_.Initialize()
 
@@ -569,6 +642,17 @@ func (j *jsiiProxy_GoogleNetworkConnectivityHub)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleNetworkConnectivityHub)SetExportPsc(val interface{}) {
+	if err := j.validateSetExportPscParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"exportPsc",
 		val,
 	)
 }
@@ -621,6 +705,28 @@ func (j *jsiiProxy_GoogleNetworkConnectivityHub)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleNetworkConnectivityHub)SetPolicyMode(val *string) {
+	if err := j.validateSetPolicyModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"policyMode",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleNetworkConnectivityHub)SetPresetTopology(val *string) {
+	if err := j.validateSetPresetTopologyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"presetTopology",
 		val,
 	)
 }
@@ -1027,6 +1133,14 @@ func (g *jsiiProxy_GoogleNetworkConnectivityHub) ResetDescription() {
 	)
 }
 
+func (g *jsiiProxy_GoogleNetworkConnectivityHub) ResetExportPsc() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetExportPsc",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleNetworkConnectivityHub) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1043,10 +1157,34 @@ func (g *jsiiProxy_GoogleNetworkConnectivityHub) ResetLabels() {
 	)
 }
 
+func (g *jsiiProxy_GoogleNetworkConnectivityHub) ResetName() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetName",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleNetworkConnectivityHub) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleNetworkConnectivityHub) ResetPolicyMode() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPolicyMode",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleNetworkConnectivityHub) ResetPresetTopology() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPresetTopology",
 		nil, // no parameters
 	)
 }

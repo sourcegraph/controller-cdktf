@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeregiondisk/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_region_disk google_compute_region_disk}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_region_disk google_compute_region_disk}.
 type GoogleComputeRegionDisk interface {
 	cdktf.TerraformResource
 	AsyncPrimaryDisk() GoogleComputeRegionDiskAsyncPrimaryDiskOutputReference
@@ -26,6 +26,12 @@ type GoogleComputeRegionDisk interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreateSnapshotBeforeDestroy() interface{}
+	SetCreateSnapshotBeforeDestroy(val interface{})
+	CreateSnapshotBeforeDestroyInput() interface{}
+	CreateSnapshotBeforeDestroyPrefix() *string
+	SetCreateSnapshotBeforeDestroyPrefix(val *string)
+	CreateSnapshotBeforeDestroyPrefixInput() *string
 	CreationTimestamp() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -169,6 +175,8 @@ type GoogleComputeRegionDisk interface {
 	PutSourceSnapshotEncryptionKey(value *GoogleComputeRegionDiskSourceSnapshotEncryptionKey)
 	PutTimeouts(value *GoogleComputeRegionDiskTimeouts)
 	ResetAsyncPrimaryDisk()
+	ResetCreateSnapshotBeforeDestroy()
+	ResetCreateSnapshotBeforeDestroyPrefix()
 	ResetDescription()
 	ResetDiskEncryptionKey()
 	ResetGuestOsFeatures()
@@ -261,6 +269,46 @@ func (j *jsiiProxy_GoogleComputeRegionDisk) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) CreateSnapshotBeforeDestroy() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"createSnapshotBeforeDestroy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) CreateSnapshotBeforeDestroyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"createSnapshotBeforeDestroyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) CreateSnapshotBeforeDestroyPrefix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createSnapshotBeforeDestroyPrefix",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) CreateSnapshotBeforeDestroyPrefixInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createSnapshotBeforeDestroyPrefixInput",
 		&returns,
 	)
 	return returns
@@ -847,7 +895,7 @@ func (j *jsiiProxy_GoogleComputeRegionDisk) Users() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_region_disk google_compute_region_disk} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_region_disk google_compute_region_disk} Resource.
 func NewGoogleComputeRegionDisk(scope constructs.Construct, id *string, config *GoogleComputeRegionDiskConfig) GoogleComputeRegionDisk {
 	_init_.Initialize()
 
@@ -865,7 +913,7 @@ func NewGoogleComputeRegionDisk(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_region_disk google_compute_region_disk} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_region_disk google_compute_region_disk} Resource.
 func NewGoogleComputeRegionDisk_Override(g GoogleComputeRegionDisk, scope constructs.Construct, id *string, config *GoogleComputeRegionDiskConfig) {
 	_init_.Initialize()
 
@@ -894,6 +942,28 @@ func (j *jsiiProxy_GoogleComputeRegionDisk)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk)SetCreateSnapshotBeforeDestroy(val interface{}) {
+	if err := j.validateSetCreateSnapshotBeforeDestroyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"createSnapshotBeforeDestroy",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk)SetCreateSnapshotBeforeDestroyPrefix(val *string) {
+	if err := j.validateSetCreateSnapshotBeforeDestroyPrefixParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"createSnapshotBeforeDestroyPrefix",
 		val,
 	)
 }
@@ -1510,6 +1580,22 @@ func (g *jsiiProxy_GoogleComputeRegionDisk) ResetAsyncPrimaryDisk() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetAsyncPrimaryDisk",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionDisk) ResetCreateSnapshotBeforeDestroy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCreateSnapshotBeforeDestroy",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionDisk) ResetCreateSnapshotBeforeDestroyPrefix() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCreateSnapshotBeforeDestroyPrefix",
 		nil, // no parameters
 	)
 }

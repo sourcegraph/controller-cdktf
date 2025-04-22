@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglevmwareengineexternaladdress/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_vmwareengine_external_address google_vmwareengine_external_address}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/data-sources/google_vmwareengine_external_address google_vmwareengine_external_address}.
 type DataGoogleVmwareengineExternalAddress interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -385,7 +385,7 @@ func (j *jsiiProxy_DataGoogleVmwareengineExternalAddress) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_vmwareengine_external_address google_vmwareengine_external_address} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/data-sources/google_vmwareengine_external_address google_vmwareengine_external_address} Data Source.
 func NewDataGoogleVmwareengineExternalAddress(scope constructs.Construct, id *string, config *DataGoogleVmwareengineExternalAddressConfig) DataGoogleVmwareengineExternalAddress {
 	_init_.Initialize()
 
@@ -403,7 +403,7 @@ func NewDataGoogleVmwareengineExternalAddress(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_vmwareengine_external_address google_vmwareengine_external_address} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/data-sources/google_vmwareengine_external_address google_vmwareengine_external_address} Data Source.
 func NewDataGoogleVmwareengineExternalAddress_Override(d DataGoogleVmwareengineExternalAddress, scope constructs.Construct, id *string, config *DataGoogleVmwareengineExternalAddressConfig) {
 	_init_.Initialize()
 

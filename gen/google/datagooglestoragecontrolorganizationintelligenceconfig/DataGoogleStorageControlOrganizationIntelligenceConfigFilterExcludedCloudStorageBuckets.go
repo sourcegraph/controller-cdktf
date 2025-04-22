@@ -1,0 +1,6 @@
+package datagooglestoragecontrolorganizationintelligenceconfig
+
+
+type DataGoogleStorageControlOrganizationIntelligenceConfigFilterExcludedCloudStorageBuckets struct {
+}
+

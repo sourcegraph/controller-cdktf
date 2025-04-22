@@ -84,6 +84,10 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) validatePutGuestAccele
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) validatePutInstanceEncryptionKeyParameters(value *GoogleComputeInstanceFromMachineImageInstanceEncryptionKey) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) validatePutNetworkInterfaceParameters(value interface{}) error {
 	return nil
 }
@@ -104,11 +108,15 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) validatePutSchedulingP
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) validatePutServiceAccountParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) validatePutServiceAccountParameters(value *GoogleComputeInstanceFromMachineImageServiceAccount) error {
 	return nil
 }
 
 func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) validatePutShieldedInstanceConfigParameters(value *GoogleComputeInstanceFromMachineImageShieldedInstanceConfig) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) validatePutSourceMachineImageEncryptionKeyParameters(value *GoogleComputeInstanceFromMachineImageSourceMachineImageEncryptionKey) error {
 	return nil
 }
 
@@ -169,6 +177,10 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) validateSetHostnamePar
 }
 
 func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) validateSetKeyRevocationActionTypeParameters(val *string) error {
 	return nil
 }
 

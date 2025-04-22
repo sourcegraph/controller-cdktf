@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesOutputReference) vali
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesOutputReference) validatePutCustomErrorResponsePolicyParameters(value *GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicy) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesOutputReference) validatePutHeaderActionParameters(value *GoogleComputeUrlMapPathMatcherRouteRulesHeaderAction) error {
 	return nil
 }

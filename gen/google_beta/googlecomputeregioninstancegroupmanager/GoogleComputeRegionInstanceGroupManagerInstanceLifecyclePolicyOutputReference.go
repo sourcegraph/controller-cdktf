@@ -35,6 +35,9 @@ type GoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicyOutputReferen
 	Fqn() *string
 	InternalValue() *GoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicy
 	SetInternalValue(val *GoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicy)
+	OnFailedHealthCheck() *string
+	SetOnFailedHealthCheck(val *string)
+	OnFailedHealthCheckInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -69,6 +72,7 @@ type GoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicyOutputReferen
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetDefaultActionOnFailure()
 	ResetForceUpdateOnRepair()
+	ResetOnFailedHealthCheck()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -174,6 +178,26 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolic
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicyOutputReference) OnFailedHealthCheck() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"onFailedHealthCheck",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicyOutputReference) OnFailedHealthCheckInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"onFailedHealthCheckInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicyOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -273,6 +297,17 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolic
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicyOutputReference)SetOnFailedHealthCheck(val *string) {
+	if err := j.validateSetOnFailedHealthCheckParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"onFailedHealthCheck",
 		val,
 	)
 }
@@ -497,6 +532,14 @@ func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolic
 	_jsii_.InvokeVoid(
 		g,
 		"resetForceUpdateOnRepair",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicyOutputReference) ResetOnFailedHealthCheck() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetOnFailedHealthCheck",
 		nil, // no parameters
 	)
 }

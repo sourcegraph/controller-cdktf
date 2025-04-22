@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlesourcereporepositoryiambinding/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_sourcerepo_repository_iam_binding google_sourcerepo_repository_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_sourcerepo_repository_iam_binding google_sourcerepo_repository_iam_binding}.
 type GoogleSourcerepoRepositoryIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -435,7 +435,7 @@ func (j *jsiiProxy_GoogleSourcerepoRepositoryIamBinding) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_sourcerepo_repository_iam_binding google_sourcerepo_repository_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_sourcerepo_repository_iam_binding google_sourcerepo_repository_iam_binding} Resource.
 func NewGoogleSourcerepoRepositoryIamBinding(scope constructs.Construct, id *string, config *GoogleSourcerepoRepositoryIamBindingConfig) GoogleSourcerepoRepositoryIamBinding {
 	_init_.Initialize()
 
@@ -453,7 +453,7 @@ func NewGoogleSourcerepoRepositoryIamBinding(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_sourcerepo_repository_iam_binding google_sourcerepo_repository_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_sourcerepo_repository_iam_binding google_sourcerepo_repository_iam_binding} Resource.
 func NewGoogleSourcerepoRepositoryIamBinding_Override(g GoogleSourcerepoRepositoryIamBinding, scope constructs.Construct, id *string, config *GoogleSourcerepoRepositoryIamBindingConfig) {
 	_init_.Initialize()
 

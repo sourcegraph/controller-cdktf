@@ -52,6 +52,10 @@ func (j *jsiiProxy_SqlDatabaseInstanceReplicaConfigurationOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_SqlDatabaseInstanceReplicaConfigurationOutputReference) validateSetCascadableReplicaParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlDatabaseInstanceReplicaConfigurationOutputReference) validateSetClientCertificateParameters(val *string) error {
 	return nil
 }

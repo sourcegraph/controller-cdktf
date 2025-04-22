@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputediskresourcepolicyattachment/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_disk_resource_policy_attachment google_compute_disk_resource_policy_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_disk_resource_policy_attachment google_compute_disk_resource_policy_attachment}.
 type GoogleComputeDiskResourcePolicyAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -425,7 +425,7 @@ func (j *jsiiProxy_GoogleComputeDiskResourcePolicyAttachment) ZoneInput() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_disk_resource_policy_attachment google_compute_disk_resource_policy_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_disk_resource_policy_attachment google_compute_disk_resource_policy_attachment} Resource.
 func NewGoogleComputeDiskResourcePolicyAttachment(scope constructs.Construct, id *string, config *GoogleComputeDiskResourcePolicyAttachmentConfig) GoogleComputeDiskResourcePolicyAttachment {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewGoogleComputeDiskResourcePolicyAttachment(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_disk_resource_policy_attachment google_compute_disk_resource_policy_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_disk_resource_policy_attachment google_compute_disk_resource_policy_attachment} Resource.
 func NewGoogleComputeDiskResourcePolicyAttachment_Override(g GoogleComputeDiskResourcePolicyAttachment, scope constructs.Construct, id *string, config *GoogleComputeDiskResourcePolicyAttachmentConfig) {
 	_init_.Initialize()
 

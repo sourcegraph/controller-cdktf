@@ -1,0 +1,6 @@
+package datagooglesecretmanagerregionalsecrets
+
+
+type DataGoogleSecretManagerRegionalSecretsSecretsRotation struct {
+}
+

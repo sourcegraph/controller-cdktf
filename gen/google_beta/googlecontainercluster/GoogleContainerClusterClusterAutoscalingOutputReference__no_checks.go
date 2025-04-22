@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleContainerClusterClusterAutoscalingOutputReference) vali
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerClusterClusterAutoscalingOutputReference) validateSetAutoProvisioningLocationsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerClusterClusterAutoscalingOutputReference) validateSetAutoscalingProfileParameters(val *string) error {
 	return nil
 }

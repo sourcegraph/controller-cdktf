@@ -68,6 +68,10 @@ func (j *jsiiProxy_GoogleCloudfunctions2FunctionServiceConfigOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_GoogleCloudfunctions2FunctionServiceConfigOutputReference) validateSetBinaryAuthorizationPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCloudfunctions2FunctionServiceConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleprojectaccessapprovalsettings/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_project_access_approval_settings google_project_access_approval_settings}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_project_access_approval_settings google_project_access_approval_settings}.
 type GoogleProjectAccessApprovalSettings interface {
 	cdktf.TerraformResource
 	ActiveKeyVersion() *string
@@ -493,7 +493,7 @@ func (j *jsiiProxy_GoogleProjectAccessApprovalSettings) TimeoutsInput() interfac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_project_access_approval_settings google_project_access_approval_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_project_access_approval_settings google_project_access_approval_settings} Resource.
 func NewGoogleProjectAccessApprovalSettings(scope constructs.Construct, id *string, config *GoogleProjectAccessApprovalSettingsConfig) GoogleProjectAccessApprovalSettings {
 	_init_.Initialize()
 
@@ -511,7 +511,7 @@ func NewGoogleProjectAccessApprovalSettings(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_project_access_approval_settings google_project_access_approval_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_project_access_approval_settings google_project_access_approval_settings} Resource.
 func NewGoogleProjectAccessApprovalSettings_Override(g GoogleProjectAccessApprovalSettings, scope constructs.Construct, id *string, config *GoogleProjectAccessApprovalSettingsConfig) {
 	_init_.Initialize()
 

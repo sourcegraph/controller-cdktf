@@ -412,6 +412,22 @@ func (j *jsiiProxy_GoogleSqlUser) validateSetPasswordParameters(val *string) err
 	return nil
 }
 
+func (j *jsiiProxy_GoogleSqlUser) validateSetPasswordWoParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleSqlUser) validateSetPasswordWoVersionParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSqlUser) validateSetProjectParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

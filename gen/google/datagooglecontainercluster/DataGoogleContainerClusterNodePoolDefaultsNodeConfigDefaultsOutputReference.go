@@ -28,6 +28,8 @@ type DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	GcfsConfig() DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfigList
+	InsecureKubeletReadonlyPortEnabled() *string
 	InternalValue() *DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaults
 	SetInternalValue(val *DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaults)
 	LoggingVariant() *string
@@ -123,6 +125,26 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsO
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) GcfsConfig() DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfigList {
+	var returns DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfigList
+	_jsii_.Get(
+		j,
+		"gcfsConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) InsecureKubeletReadonlyPortEnabled() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"insecureKubeletReadonlyPortEnabled",
 		&returns,
 	)
 	return returns

@@ -1,0 +1,6 @@
+package datagoogleoracledatabasecloudvmclusters
+
+
+type DataGoogleOracleDatabaseCloudVmClustersCloudVmClustersProperties struct {
+}
+

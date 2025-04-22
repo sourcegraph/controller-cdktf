@@ -1,0 +1,6 @@
+package datagoogleprivilegedaccessmanagerentitlement
+
+
+type DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsApprovers struct {
+}
+

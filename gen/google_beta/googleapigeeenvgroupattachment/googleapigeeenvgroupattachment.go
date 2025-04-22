@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleapigeeenvgroupattachment/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_apigee_envgroup_attachment google_apigee_envgroup_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_apigee_envgroup_attachment google_apigee_envgroup_attachment}.
 type GoogleApigeeEnvgroupAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -388,7 +388,7 @@ func (j *jsiiProxy_GoogleApigeeEnvgroupAttachment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_apigee_envgroup_attachment google_apigee_envgroup_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_apigee_envgroup_attachment google_apigee_envgroup_attachment} Resource.
 func NewGoogleApigeeEnvgroupAttachment(scope constructs.Construct, id *string, config *GoogleApigeeEnvgroupAttachmentConfig) GoogleApigeeEnvgroupAttachment {
 	_init_.Initialize()
 
@@ -406,7 +406,7 @@ func NewGoogleApigeeEnvgroupAttachment(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_apigee_envgroup_attachment google_apigee_envgroup_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_apigee_envgroup_attachment google_apigee_envgroup_attachment} Resource.
 func NewGoogleApigeeEnvgroupAttachment_Override(g GoogleApigeeEnvgroupAttachment, scope constructs.Construct, id *string, config *GoogleApigeeEnvgroupAttachmentConfig) {
 	_init_.Initialize()
 

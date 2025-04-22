@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/bigquerybireservation/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/bigquery_bi_reservation google_bigquery_bi_reservation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/bigquery_bi_reservation google_bigquery_bi_reservation}.
 type BigqueryBiReservation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -448,7 +448,7 @@ func (j *jsiiProxy_BigqueryBiReservation) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/bigquery_bi_reservation google_bigquery_bi_reservation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/bigquery_bi_reservation google_bigquery_bi_reservation} Resource.
 func NewBigqueryBiReservation(scope constructs.Construct, id *string, config *BigqueryBiReservationConfig) BigqueryBiReservation {
 	_init_.Initialize()
 
@@ -466,7 +466,7 @@ func NewBigqueryBiReservation(scope constructs.Construct, id *string, config *Bi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/bigquery_bi_reservation google_bigquery_bi_reservation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/bigquery_bi_reservation google_bigquery_bi_reservation} Resource.
 func NewBigqueryBiReservation_Override(b BigqueryBiReservation, scope constructs.Construct, id *string, config *BigqueryBiReservationConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeregioninstancetemplate/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_region_instance_template google_compute_region_instance_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_region_instance_template google_compute_region_instance_template}.
 type GoogleComputeRegionInstanceTemplate interface {
 	cdktf.TerraformResource
 	AdvancedMachineFeatures() GoogleComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputReference
@@ -31,6 +31,7 @@ type GoogleComputeRegionInstanceTemplate interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreationTimestamp() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -60,6 +61,9 @@ type GoogleComputeRegionInstanceTemplate interface {
 	InstanceDescription() *string
 	SetInstanceDescription(val *string)
 	InstanceDescriptionInput() *string
+	KeyRevocationActionType() *string
+	SetKeyRevocationActionType(val *string)
+	KeyRevocationActionTypeInput() *string
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
 	LabelsInput() *map[string]*string
@@ -201,6 +205,7 @@ type GoogleComputeRegionInstanceTemplate interface {
 	ResetGuestAccelerator()
 	ResetId()
 	ResetInstanceDescription()
+	ResetKeyRevocationActionType()
 	ResetLabels()
 	ResetMetadata()
 	ResetMetadataStartupScript()
@@ -336,6 +341,16 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceTemplate) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceTemplate) CreationTimestamp() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"creationTimestamp",
 		&returns,
 	)
 	return returns
@@ -506,6 +521,26 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceTemplate) InstanceDescriptionInput
 	_jsii_.Get(
 		j,
 		"instanceDescriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceTemplate) KeyRevocationActionType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyRevocationActionType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceTemplate) KeyRevocationActionTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyRevocationActionTypeInput",
 		&returns,
 	)
 	return returns
@@ -1032,7 +1067,7 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceTemplate) TimeoutsInput() interfac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_region_instance_template google_compute_region_instance_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_region_instance_template google_compute_region_instance_template} Resource.
 func NewGoogleComputeRegionInstanceTemplate(scope constructs.Construct, id *string, config *GoogleComputeRegionInstanceTemplateConfig) GoogleComputeRegionInstanceTemplate {
 	_init_.Initialize()
 
@@ -1050,7 +1085,7 @@ func NewGoogleComputeRegionInstanceTemplate(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_region_instance_template google_compute_region_instance_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_region_instance_template google_compute_region_instance_template} Resource.
 func NewGoogleComputeRegionInstanceTemplate_Override(g GoogleComputeRegionInstanceTemplate, scope constructs.Construct, id *string, config *GoogleComputeRegionInstanceTemplateConfig) {
 	_init_.Initialize()
 
@@ -1150,6 +1185,17 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceTemplate)SetInstanceDescription(va
 	_jsii_.Set(
 		j,
 		"instanceDescription",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceTemplate)SetKeyRevocationActionType(val *string) {
+	if err := j.validateSetKeyRevocationActionTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"keyRevocationActionType",
 		val,
 	)
 }
@@ -1861,6 +1907,14 @@ func (g *jsiiProxy_GoogleComputeRegionInstanceTemplate) ResetInstanceDescription
 	_jsii_.InvokeVoid(
 		g,
 		"resetInstanceDescription",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceTemplate) ResetKeyRevocationActionType() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetKeyRevocationActionType",
 		nil, // no parameters
 	)
 }

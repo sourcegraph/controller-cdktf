@@ -60,7 +60,7 @@ func (j *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorGpuDriverInstallati
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference) validateSetInternalValueParameters(val *ContainerClusterNodeConfigGuestAcceleratorGpuDriverInstallationConfig) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorGpuDriverInstallati
 	return nil
 }
 
-func validateNewContainerClusterNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewContainerClusterNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

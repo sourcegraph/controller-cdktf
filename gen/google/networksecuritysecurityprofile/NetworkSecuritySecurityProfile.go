@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/networksecuritysecurityprofile/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/network_security_security_profile google_network_security_security_profile}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/network_security_security_profile google_network_security_security_profile}.
 type NetworkSecuritySecurityProfile interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -25,6 +25,10 @@ type NetworkSecuritySecurityProfile interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreateTime() *string
+	CustomInterceptProfile() NetworkSecuritySecurityProfileCustomInterceptProfileOutputReference
+	CustomInterceptProfileInput() *NetworkSecuritySecurityProfileCustomInterceptProfile
+	CustomMirroringProfile() NetworkSecuritySecurityProfileCustomMirroringProfileOutputReference
+	CustomMirroringProfileInput() *NetworkSecuritySecurityProfileCustomMirroringProfile
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -132,8 +136,12 @@ type NetworkSecuritySecurityProfile interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutCustomInterceptProfile(value *NetworkSecuritySecurityProfileCustomInterceptProfile)
+	PutCustomMirroringProfile(value *NetworkSecuritySecurityProfileCustomMirroringProfile)
 	PutThreatPreventionProfile(value *NetworkSecuritySecurityProfileThreatPreventionProfile)
 	PutTimeouts(value *NetworkSecuritySecurityProfileTimeouts)
+	ResetCustomInterceptProfile()
+	ResetCustomMirroringProfile()
 	ResetDescription()
 	ResetId()
 	ResetLabels()
@@ -207,6 +215,46 @@ func (j *jsiiProxy_NetworkSecuritySecurityProfile) CreateTime() *string {
 	_jsii_.Get(
 		j,
 		"createTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkSecuritySecurityProfile) CustomInterceptProfile() NetworkSecuritySecurityProfileCustomInterceptProfileOutputReference {
+	var returns NetworkSecuritySecurityProfileCustomInterceptProfileOutputReference
+	_jsii_.Get(
+		j,
+		"customInterceptProfile",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkSecuritySecurityProfile) CustomInterceptProfileInput() *NetworkSecuritySecurityProfileCustomInterceptProfile {
+	var returns *NetworkSecuritySecurityProfileCustomInterceptProfile
+	_jsii_.Get(
+		j,
+		"customInterceptProfileInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkSecuritySecurityProfile) CustomMirroringProfile() NetworkSecuritySecurityProfileCustomMirroringProfileOutputReference {
+	var returns NetworkSecuritySecurityProfileCustomMirroringProfileOutputReference
+	_jsii_.Get(
+		j,
+		"customMirroringProfile",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkSecuritySecurityProfile) CustomMirroringProfileInput() *NetworkSecuritySecurityProfileCustomMirroringProfile {
+	var returns *NetworkSecuritySecurityProfileCustomMirroringProfile
+	_jsii_.Get(
+		j,
+		"customMirroringProfileInput",
 		&returns,
 	)
 	return returns
@@ -563,7 +611,7 @@ func (j *jsiiProxy_NetworkSecuritySecurityProfile) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/network_security_security_profile google_network_security_security_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/network_security_security_profile google_network_security_security_profile} Resource.
 func NewNetworkSecuritySecurityProfile(scope constructs.Construct, id *string, config *NetworkSecuritySecurityProfileConfig) NetworkSecuritySecurityProfile {
 	_init_.Initialize()
 
@@ -581,7 +629,7 @@ func NewNetworkSecuritySecurityProfile(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/network_security_security_profile google_network_security_security_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/network_security_security_profile google_network_security_security_profile} Resource.
 func NewNetworkSecuritySecurityProfile_Override(n NetworkSecuritySecurityProfile, scope constructs.Construct, id *string, config *NetworkSecuritySecurityProfileConfig) {
 	_init_.Initialize()
 
@@ -1090,6 +1138,28 @@ func (n *jsiiProxy_NetworkSecuritySecurityProfile) OverrideLogicalId(newLogicalI
 	)
 }
 
+func (n *jsiiProxy_NetworkSecuritySecurityProfile) PutCustomInterceptProfile(value *NetworkSecuritySecurityProfileCustomInterceptProfile) {
+	if err := n.validatePutCustomInterceptProfileParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putCustomInterceptProfile",
+		[]interface{}{value},
+	)
+}
+
+func (n *jsiiProxy_NetworkSecuritySecurityProfile) PutCustomMirroringProfile(value *NetworkSecuritySecurityProfileCustomMirroringProfile) {
+	if err := n.validatePutCustomMirroringProfileParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putCustomMirroringProfile",
+		[]interface{}{value},
+	)
+}
+
 func (n *jsiiProxy_NetworkSecuritySecurityProfile) PutThreatPreventionProfile(value *NetworkSecuritySecurityProfileThreatPreventionProfile) {
 	if err := n.validatePutThreatPreventionProfileParameters(value); err != nil {
 		panic(err)
@@ -1109,6 +1179,22 @@ func (n *jsiiProxy_NetworkSecuritySecurityProfile) PutTimeouts(value *NetworkSec
 		n,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (n *jsiiProxy_NetworkSecuritySecurityProfile) ResetCustomInterceptProfile() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetCustomInterceptProfile",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkSecuritySecurityProfile) ResetCustomMirroringProfile() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetCustomMirroringProfile",
+		nil, // no parameters
 	)
 }
 

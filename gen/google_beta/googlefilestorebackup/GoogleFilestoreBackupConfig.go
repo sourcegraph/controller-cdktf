@@ -21,7 +21,7 @@ type GoogleFilestoreBackupConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the location of the instance. This can be a region for ENTERPRISE tier instances.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_filestore_backup#location GoogleFilestoreBackup#location}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_filestore_backup#location GoogleFilestoreBackup#location}
 	Location *string `field:"required" json:"location" yaml:"location"`
 	// The resource name of the backup. The name must be unique within the specified instance.
 	//
@@ -32,21 +32,21 @@ type GoogleFilestoreBackupConfig struct {
 	// characters must be a dash, lowercase letter, or digit, except the last
 	// character, which cannot be a dash.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_filestore_backup#name GoogleFilestoreBackup#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_filestore_backup#name GoogleFilestoreBackup#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Name of the file share in the source Cloud Filestore instance that the backup is created from.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_filestore_backup#source_file_share GoogleFilestoreBackup#source_file_share}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_filestore_backup#source_file_share GoogleFilestoreBackup#source_file_share}
 	SourceFileShare *string `field:"required" json:"sourceFileShare" yaml:"sourceFileShare"`
 	// The resource name of the source Cloud Filestore instance, in the format projects/{projectId}/locations/{locationId}/instances/{instanceId}, used to create this backup.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_filestore_backup#source_instance GoogleFilestoreBackup#source_instance}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_filestore_backup#source_instance GoogleFilestoreBackup#source_instance}
 	SourceInstance *string `field:"required" json:"sourceInstance" yaml:"sourceInstance"`
 	// A description of the backup with 2048 characters or less. Requests with longer descriptions will be rejected.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_filestore_backup#description GoogleFilestoreBackup#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_filestore_backup#description GoogleFilestoreBackup#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_filestore_backup#id GoogleFilestoreBackup#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_filestore_backup#id GoogleFilestoreBackup#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -56,13 +56,21 @@ type GoogleFilestoreBackupConfig struct {
 	// **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 	// Please refer to the field 'effective_labels' for all of the labels present on the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_filestore_backup#labels GoogleFilestoreBackup#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_filestore_backup#labels GoogleFilestoreBackup#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_filestore_backup#project GoogleFilestoreBackup#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_filestore_backup#project GoogleFilestoreBackup#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
+	// A map of resource manager tags.
+	//
+	// Resource manager tag keys and values have the same definition as resource manager tags.
+	// Keys must be in the format tagKeys/{tag_key_id}, and values are in the format tagValues/{tag_value_id}.
+	// The field is ignored (both PUT & PATCH) when empty.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_filestore_backup#tags GoogleFilestoreBackup#tags}
+	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_filestore_backup#timeouts GoogleFilestoreBackup#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_filestore_backup#timeouts GoogleFilestoreBackup#timeouts}
 	Timeouts *GoogleFilestoreBackupTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

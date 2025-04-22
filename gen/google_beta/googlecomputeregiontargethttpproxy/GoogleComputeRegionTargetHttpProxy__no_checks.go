@@ -104,6 +104,10 @@ func (j *jsiiProxy_GoogleComputeRegionTargetHttpProxy) validateSetDescriptionPar
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRegionTargetHttpProxy) validateSetHttpKeepAliveTimeoutSecParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRegionTargetHttpProxy) validateSetIdParameters(val *string) error {
 	return nil
 }

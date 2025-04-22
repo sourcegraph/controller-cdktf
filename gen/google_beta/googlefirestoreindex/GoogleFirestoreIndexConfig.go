@@ -21,34 +21,44 @@ type GoogleFirestoreIndexConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The collection being indexed.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_firestore_index#collection GoogleFirestoreIndex#collection}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_firestore_index#collection GoogleFirestoreIndex#collection}
 	Collection *string `field:"required" json:"collection" yaml:"collection"`
 	// fields block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_firestore_index#fields GoogleFirestoreIndex#fields}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_firestore_index#fields GoogleFirestoreIndex#fields}
 	Fields interface{} `field:"required" json:"fields" yaml:"fields"`
-	// The API scope at which a query is run. Default value: "ANY_API" Possible values: ["ANY_API", "DATASTORE_MODE_API"].
+	// The API scope at which a query is run. Default value: "ANY_API" Possible values: ["ANY_API", "DATASTORE_MODE_API", "MONGODB_COMPATIBLE_API"].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_firestore_index#api_scope GoogleFirestoreIndex#api_scope}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_firestore_index#api_scope GoogleFirestoreIndex#api_scope}
 	ApiScope *string `field:"optional" json:"apiScope" yaml:"apiScope"`
 	// The Firestore database id. Defaults to '"(default)"'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_firestore_index#database GoogleFirestoreIndex#database}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_firestore_index#database GoogleFirestoreIndex#database}
 	Database *string `field:"optional" json:"database" yaml:"database"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_firestore_index#id GoogleFirestoreIndex#id}.
+	// The density configuration for this index. Possible values: ["SPARSE_ALL", "SPARSE_ANY", "DENSE"].
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_firestore_index#density GoogleFirestoreIndex#density}
+	Density *string `field:"optional" json:"density" yaml:"density"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_firestore_index#id GoogleFirestoreIndex#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_firestore_index#project GoogleFirestoreIndex#project}.
+	// Optional.
+	//
+	// Whether the index is multikey. By default, the index is not multikey. For non-multikey indexes, none of the paths in the index definition reach or traverse an array, except via an explicit array index. For multikey indexes, at most one of the paths in the index definition reach or traverse an array, except via an explicit array index. Violations will result in errors. Note this field only applies to indexes with MONGODB_COMPATIBLE_API ApiScope.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_firestore_index#multikey GoogleFirestoreIndex#multikey}
+	Multikey interface{} `field:"optional" json:"multikey" yaml:"multikey"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_firestore_index#project GoogleFirestoreIndex#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// The scope at which a query is run. Default value: "COLLECTION" Possible values: ["COLLECTION", "COLLECTION_GROUP", "COLLECTION_RECURSIVE"].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_firestore_index#query_scope GoogleFirestoreIndex#query_scope}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_firestore_index#query_scope GoogleFirestoreIndex#query_scope}
 	QueryScope *string `field:"optional" json:"queryScope" yaml:"queryScope"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_firestore_index#timeouts GoogleFirestoreIndex#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_firestore_index#timeouts GoogleFirestoreIndex#timeouts}
 	Timeouts *GoogleFirestoreIndexTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

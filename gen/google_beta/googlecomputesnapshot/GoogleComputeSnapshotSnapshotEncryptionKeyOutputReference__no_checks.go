@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleComputeSnapshotSnapshotEncryptionKeyOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeSnapshotSnapshotEncryptionKeyOutputReference) validateSetRsaEncryptedKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeSnapshotSnapshotEncryptionKeyOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

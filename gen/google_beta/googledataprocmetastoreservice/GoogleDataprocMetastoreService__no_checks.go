@@ -136,6 +136,10 @@ func (j *jsiiProxy_GoogleDataprocMetastoreService) validateSetDatabaseTypeParame
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataprocMetastoreService) validateSetDeletionProtectionParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataprocMetastoreService) validateSetIdParameters(val *string) error {
 	return nil
 }

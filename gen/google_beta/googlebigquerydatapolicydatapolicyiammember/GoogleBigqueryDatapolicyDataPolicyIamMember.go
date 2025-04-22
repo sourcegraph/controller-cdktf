@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlebigquerydatapolicydatapolicyiammember/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_member google_bigquery_datapolicy_data_policy_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_member google_bigquery_datapolicy_data_policy_iam_member}.
 type GoogleBigqueryDatapolicyDataPolicyIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -459,7 +459,7 @@ func (j *jsiiProxy_GoogleBigqueryDatapolicyDataPolicyIamMember) TerraformResourc
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_member google_bigquery_datapolicy_data_policy_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_member google_bigquery_datapolicy_data_policy_iam_member} Resource.
 func NewGoogleBigqueryDatapolicyDataPolicyIamMember(scope constructs.Construct, id *string, config *GoogleBigqueryDatapolicyDataPolicyIamMemberConfig) GoogleBigqueryDatapolicyDataPolicyIamMember {
 	_init_.Initialize()
 
@@ -477,7 +477,7 @@ func NewGoogleBigqueryDatapolicyDataPolicyIamMember(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_member google_bigquery_datapolicy_data_policy_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_member google_bigquery_datapolicy_data_policy_iam_member} Resource.
 func NewGoogleBigqueryDatapolicyDataPolicyIamMember_Override(g GoogleBigqueryDatapolicyDataPolicyIamMember, scope constructs.Construct, id *string, config *GoogleBigqueryDatapolicyDataPolicyIamMemberConfig) {
 	_init_.Initialize()
 

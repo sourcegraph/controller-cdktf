@@ -1,0 +1,6 @@
+package datagooglepubsubtopic
+
+
+type DataGooglePubsubTopicIngestionDataSourceSettingsCloudStorageTextFormat struct {
+}
+

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/storagemanagedfolder/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/storage_managed_folder google_storage_managed_folder}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/storage_managed_folder google_storage_managed_folder}.
 type StorageManagedFolder interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -32,6 +32,9 @@ type StorageManagedFolder interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	ForceDestroy() interface{}
+	SetForceDestroy(val interface{})
+	ForceDestroyInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -117,6 +120,7 @@ type StorageManagedFolder interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *StorageManagedFolderTimeouts)
+	ResetForceDestroy()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -215,6 +219,26 @@ func (j *jsiiProxy_StorageManagedFolder) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageManagedFolder) ForceDestroy() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceDestroy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageManagedFolder) ForceDestroyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceDestroyInput",
 		&returns,
 	)
 	return returns
@@ -421,7 +445,7 @@ func (j *jsiiProxy_StorageManagedFolder) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/storage_managed_folder google_storage_managed_folder} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/storage_managed_folder google_storage_managed_folder} Resource.
 func NewStorageManagedFolder(scope constructs.Construct, id *string, config *StorageManagedFolderConfig) StorageManagedFolder {
 	_init_.Initialize()
 
@@ -439,7 +463,7 @@ func NewStorageManagedFolder(scope constructs.Construct, id *string, config *Sto
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/storage_managed_folder google_storage_managed_folder} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/storage_managed_folder google_storage_managed_folder} Resource.
 func NewStorageManagedFolder_Override(s StorageManagedFolder, scope constructs.Construct, id *string, config *StorageManagedFolderConfig) {
 	_init_.Initialize()
 
@@ -487,6 +511,17 @@ func (j *jsiiProxy_StorageManagedFolder)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageManagedFolder)SetForceDestroy(val interface{}) {
+	if err := j.validateSetForceDestroyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"forceDestroy",
 		val,
 	)
 }
@@ -912,6 +947,14 @@ func (s *jsiiProxy_StorageManagedFolder) PutTimeouts(value *StorageManagedFolder
 		s,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_StorageManagedFolder) ResetForceDestroy() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetForceDestroy",
+		nil, // no parameters
 	)
 }
 

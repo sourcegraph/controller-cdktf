@@ -4,11 +4,11 @@ package googlecomputeregionurlmap
 type GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicy struct {
 	// Specifies the allowed number retries. This number must be > 0.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_region_url_map#num_retries GoogleComputeRegionUrlMap#num_retries}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_region_url_map#num_retries GoogleComputeRegionUrlMap#num_retries}
 	NumRetries *float64 `field:"required" json:"numRetries" yaml:"numRetries"`
 	// per_try_timeout block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_region_url_map#per_try_timeout GoogleComputeRegionUrlMap#per_try_timeout}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_region_url_map#per_try_timeout GoogleComputeRegionUrlMap#per_try_timeout}
 	PerTryTimeout *GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyPerTryTimeout `field:"optional" json:"perTryTimeout" yaml:"perTryTimeout"`
 	// Specifies one or more conditions when this retry rule applies. Valid values are:.
 	//
@@ -33,7 +33,7 @@ type GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicy struct
 	// * unavailable: Loadbalancer will retry if the gRPC status code in
 	//   the response header is set to unavailable
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_region_url_map#retry_conditions GoogleComputeRegionUrlMap#retry_conditions}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_region_url_map#retry_conditions GoogleComputeRegionUrlMap#retry_conditions}
 	RetryConditions *[]*string `field:"optional" json:"retryConditions" yaml:"retryConditions"`
 }
 

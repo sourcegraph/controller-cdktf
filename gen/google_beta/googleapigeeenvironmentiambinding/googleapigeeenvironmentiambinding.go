@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleapigeeenvironmentiambinding/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_apigee_environment_iam_binding google_apigee_environment_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_apigee_environment_iam_binding google_apigee_environment_iam_binding}.
 type GoogleApigeeEnvironmentIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -434,7 +434,7 @@ func (j *jsiiProxy_GoogleApigeeEnvironmentIamBinding) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_apigee_environment_iam_binding google_apigee_environment_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_apigee_environment_iam_binding google_apigee_environment_iam_binding} Resource.
 func NewGoogleApigeeEnvironmentIamBinding(scope constructs.Construct, id *string, config *GoogleApigeeEnvironmentIamBindingConfig) GoogleApigeeEnvironmentIamBinding {
 	_init_.Initialize()
 
@@ -452,7 +452,7 @@ func NewGoogleApigeeEnvironmentIamBinding(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_apigee_environment_iam_binding google_apigee_environment_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_apigee_environment_iam_binding google_apigee_environment_iam_binding} Resource.
 func NewGoogleApigeeEnvironmentIamBinding_Override(g GoogleApigeeEnvironmentIamBinding, scope constructs.Construct, id *string, config *GoogleApigeeEnvironmentIamBindingConfig) {
 	_init_.Initialize()
 

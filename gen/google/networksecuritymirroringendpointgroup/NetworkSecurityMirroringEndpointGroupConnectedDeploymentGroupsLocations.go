@@ -1,0 +1,6 @@
+package networksecuritymirroringendpointgroup
+
+
+type NetworkSecurityMirroringEndpointGroupConnectedDeploymentGroupsLocations struct {
+}
+

@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleBigqueryDatasetAccessOutputReference) validateInterpola
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBigqueryDatasetAccessOutputReference) validatePutConditionParameters(value *GoogleBigqueryDatasetAccessCondition) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigqueryDatasetAccessOutputReference) validatePutDatasetParameters(value *GoogleBigqueryDatasetAccessDataset) error {
 	return nil
 }

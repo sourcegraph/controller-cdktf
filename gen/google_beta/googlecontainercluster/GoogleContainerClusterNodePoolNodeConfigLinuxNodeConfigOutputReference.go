@@ -30,6 +30,8 @@ type GoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputReference inte
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	HugepagesConfig() GoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigHugepagesConfigOutputReference
+	HugepagesConfigInput() *GoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigHugepagesConfig
 	InternalValue() *GoogleContainerClusterNodePoolNodeConfigLinuxNodeConfig
 	SetInternalValue(val *GoogleContainerClusterNodePoolNodeConfigLinuxNodeConfig)
 	Sysctls() *map[string]*string
@@ -67,7 +69,9 @@ type GoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputReference inte
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutHugepagesConfig(value *GoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigHugepagesConfig)
 	ResetCgroupMode()
+	ResetHugepagesConfig()
 	ResetSysctls()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -139,6 +143,26 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigOutput
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputReference) HugepagesConfig() GoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigHugepagesConfigOutputReference {
+	var returns GoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigHugepagesConfigOutputReference
+	_jsii_.Get(
+		j,
+		"hugepagesConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputReference) HugepagesConfigInput() *GoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigHugepagesConfig {
+	var returns *GoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigHugepagesConfig
+	_jsii_.Get(
+		j,
+		"hugepagesConfigInput",
 		&returns,
 	)
 	return returns
@@ -485,10 +509,29 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigOutput
 	return returns
 }
 
+func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputReference) PutHugepagesConfig(value *GoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigHugepagesConfig) {
+	if err := g.validatePutHugepagesConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putHugepagesConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputReference) ResetCgroupMode() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetCgroupMode",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputReference) ResetHugepagesConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetHugepagesConfig",
 		nil, // no parameters
 	)
 }

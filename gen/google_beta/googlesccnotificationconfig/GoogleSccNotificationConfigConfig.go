@@ -21,32 +21,32 @@ type GoogleSccNotificationConfigConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// This must be unique within the organization.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_scc_notification_config#config_id GoogleSccNotificationConfig#config_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_scc_notification_config#config_id GoogleSccNotificationConfig#config_id}
 	ConfigId *string `field:"required" json:"configId" yaml:"configId"`
 	// The organization whose Cloud Security Command Center the Notification Config lives in.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_scc_notification_config#organization GoogleSccNotificationConfig#organization}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_scc_notification_config#organization GoogleSccNotificationConfig#organization}
 	Organization *string `field:"required" json:"organization" yaml:"organization"`
 	// The Pub/Sub topic to send notifications to. Its format is "projects/[project_id]/topics/[topic]".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_scc_notification_config#pubsub_topic GoogleSccNotificationConfig#pubsub_topic}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_scc_notification_config#pubsub_topic GoogleSccNotificationConfig#pubsub_topic}
 	PubsubTopic *string `field:"required" json:"pubsubTopic" yaml:"pubsubTopic"`
 	// streaming_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_scc_notification_config#streaming_config GoogleSccNotificationConfig#streaming_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_scc_notification_config#streaming_config GoogleSccNotificationConfig#streaming_config}
 	StreamingConfig *GoogleSccNotificationConfigStreamingConfig `field:"required" json:"streamingConfig" yaml:"streamingConfig"`
 	// The description of the notification config (max of 1024 characters).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_scc_notification_config#description GoogleSccNotificationConfig#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_scc_notification_config#description GoogleSccNotificationConfig#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_scc_notification_config#id GoogleSccNotificationConfig#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_scc_notification_config#id GoogleSccNotificationConfig#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_scc_notification_config#timeouts GoogleSccNotificationConfig#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_scc_notification_config#timeouts GoogleSccNotificationConfig#timeouts}
 	Timeouts *GoogleSccNotificationConfigTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

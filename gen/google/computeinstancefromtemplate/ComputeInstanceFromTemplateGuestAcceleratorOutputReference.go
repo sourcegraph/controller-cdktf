@@ -67,8 +67,6 @@ type ComputeInstanceFromTemplateGuestAcceleratorOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetCount()
-	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -483,22 +481,6 @@ func (c *jsiiProxy_ComputeInstanceFromTemplateGuestAcceleratorOutputReference) I
 	)
 
 	return returns
-}
-
-func (c *jsiiProxy_ComputeInstanceFromTemplateGuestAcceleratorOutputReference) ResetCount() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetCount",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_ComputeInstanceFromTemplateGuestAcceleratorOutputReference) ResetType() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetType",
-		nil, // no parameters
-	)
 }
 
 func (c *jsiiProxy_ComputeInstanceFromTemplateGuestAcceleratorOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

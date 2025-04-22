@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleapigeekeystoresaliasesselfsignedcert/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_apigee_keystores_aliases_self_signed_cert google_apigee_keystores_aliases_self_signed_cert}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_apigee_keystores_aliases_self_signed_cert google_apigee_keystores_aliases_self_signed_cert}.
 type GoogleApigeeKeystoresAliasesSelfSignedCert interface {
 	cdktf.TerraformResource
 	Alias() *string
@@ -563,7 +563,7 @@ func (j *jsiiProxy_GoogleApigeeKeystoresAliasesSelfSignedCert) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_apigee_keystores_aliases_self_signed_cert google_apigee_keystores_aliases_self_signed_cert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_apigee_keystores_aliases_self_signed_cert google_apigee_keystores_aliases_self_signed_cert} Resource.
 func NewGoogleApigeeKeystoresAliasesSelfSignedCert(scope constructs.Construct, id *string, config *GoogleApigeeKeystoresAliasesSelfSignedCertConfig) GoogleApigeeKeystoresAliasesSelfSignedCert {
 	_init_.Initialize()
 
@@ -581,7 +581,7 @@ func NewGoogleApigeeKeystoresAliasesSelfSignedCert(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_apigee_keystores_aliases_self_signed_cert google_apigee_keystores_aliases_self_signed_cert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_apigee_keystores_aliases_self_signed_cert google_apigee_keystores_aliases_self_signed_cert} Resource.
 func NewGoogleApigeeKeystoresAliasesSelfSignedCert_Override(g GoogleApigeeKeystoresAliasesSelfSignedCert, scope constructs.Construct, id *string, config *GoogleApigeeKeystoresAliasesSelfSignedCertConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglecomputeinstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_compute_instance google_compute_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/data-sources/google_compute_instance google_compute_instance}.
 type DataGoogleComputeInstance interface {
 	cdktf.TerraformDataSource
 	AdvancedMachineFeatures() DataGoogleComputeInstanceAdvancedMachineFeaturesList
@@ -27,6 +27,7 @@ type DataGoogleComputeInstance interface {
 	// Experimental.
 	SetCount(val interface{})
 	CpuPlatform() *string
+	CreationTimestamp() *string
 	CurrentStatus() *string
 	DeletionProtection() cdktf.IResolvable
 	// Experimental.
@@ -50,7 +51,9 @@ type DataGoogleComputeInstance interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	InstanceEncryptionKey() DataGoogleComputeInstanceInstanceEncryptionKeyList
 	InstanceId() *string
+	KeyRevocationActionType() *string
 	LabelFingerprint() *string
 	Labels() cdktf.StringMap
 	// Experimental.
@@ -253,6 +256,16 @@ func (j *jsiiProxy_DataGoogleComputeInstance) CpuPlatform() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeInstance) CreationTimestamp() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"creationTimestamp",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeInstance) CurrentStatus() *string {
 	var returns *string
 	_jsii_.Get(
@@ -393,11 +406,31 @@ func (j *jsiiProxy_DataGoogleComputeInstance) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeInstance) InstanceEncryptionKey() DataGoogleComputeInstanceInstanceEncryptionKeyList {
+	var returns DataGoogleComputeInstanceInstanceEncryptionKeyList
+	_jsii_.Get(
+		j,
+		"instanceEncryptionKey",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeInstance) InstanceId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"instanceId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeInstance) KeyRevocationActionType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyRevocationActionType",
 		&returns,
 	)
 	return returns
@@ -754,7 +787,7 @@ func (j *jsiiProxy_DataGoogleComputeInstance) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_compute_instance google_compute_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/data-sources/google_compute_instance google_compute_instance} Data Source.
 func NewDataGoogleComputeInstance(scope constructs.Construct, id *string, config *DataGoogleComputeInstanceConfig) DataGoogleComputeInstance {
 	_init_.Initialize()
 
@@ -772,7 +805,7 @@ func NewDataGoogleComputeInstance(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_compute_instance google_compute_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/data-sources/google_compute_instance google_compute_instance} Data Source.
 func NewDataGoogleComputeInstance_Override(d DataGoogleComputeInstance, scope constructs.Construct, id *string, config *DataGoogleComputeInstanceConfig) {
 	_init_.Initialize()
 

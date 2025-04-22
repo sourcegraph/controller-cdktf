@@ -64,6 +64,10 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterEgressPolicyEgressF
 	return nil
 }
 
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterEgressPolicyEgressFromSourcesOutputReference) validateSetResourceParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterEgressPolicyEgressFromSourcesOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

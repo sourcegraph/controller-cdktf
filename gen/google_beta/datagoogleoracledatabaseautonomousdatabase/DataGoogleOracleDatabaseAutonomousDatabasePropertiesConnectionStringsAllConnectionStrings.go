@@ -1,0 +1,6 @@
+package datagoogleoracledatabaseautonomousdatabase
+
+
+type DataGoogleOracleDatabaseAutonomousDatabasePropertiesConnectionStringsAllConnectionStrings struct {
+}
+

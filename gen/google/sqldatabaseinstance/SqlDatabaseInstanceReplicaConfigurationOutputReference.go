@@ -13,6 +13,9 @@ type SqlDatabaseInstanceReplicaConfigurationOutputReference interface {
 	CaCertificate() *string
 	SetCaCertificate(val *string)
 	CaCertificateInput() *string
+	CascadableReplica() interface{}
+	SetCascadableReplica(val interface{})
+	CascadableReplicaInput() interface{}
 	ClientCertificate() *string
 	SetClientCertificate(val *string)
 	ClientCertificateInput() *string
@@ -95,6 +98,7 @@ type SqlDatabaseInstanceReplicaConfigurationOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetCaCertificate()
+	ResetCascadableReplica()
 	ResetClientCertificate()
 	ResetClientKey()
 	ResetConnectRetryInterval()
@@ -135,6 +139,26 @@ func (j *jsiiProxy_SqlDatabaseInstanceReplicaConfigurationOutputReference) CaCer
 	_jsii_.Get(
 		j,
 		"caCertificateInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceReplicaConfigurationOutputReference) CascadableReplica() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"cascadableReplica",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceReplicaConfigurationOutputReference) CascadableReplicaInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"cascadableReplicaInput",
 		&returns,
 	)
 	return returns
@@ -445,6 +469,17 @@ func (j *jsiiProxy_SqlDatabaseInstanceReplicaConfigurationOutputReference)SetCaC
 	_jsii_.Set(
 		j,
 		"caCertificate",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceReplicaConfigurationOutputReference)SetCascadableReplica(val interface{}) {
+	if err := j.validateSetCascadableReplicaParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cascadableReplica",
 		val,
 	)
 }
@@ -804,6 +839,14 @@ func (s *jsiiProxy_SqlDatabaseInstanceReplicaConfigurationOutputReference) Reset
 	_jsii_.InvokeVoid(
 		s,
 		"resetCaCertificate",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlDatabaseInstanceReplicaConfigurationOutputReference) ResetCascadableReplica() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetCascadableReplica",
 		nil, // no parameters
 	)
 }

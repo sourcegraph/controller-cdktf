@@ -1,0 +1,6 @@
+package datagooglebackupdrbackupplanassociation
+
+
+type DataGoogleBackupDrBackupPlanAssociationRulesConfigInfoLastBackupError struct {
+}
+

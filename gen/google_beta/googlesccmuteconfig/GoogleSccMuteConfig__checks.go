@@ -353,6 +353,14 @@ func (j *jsiiProxy_GoogleSccMuteConfig) validateSetDescriptionParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_GoogleSccMuteConfig) validateSetExpiryTimeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSccMuteConfig) validateSetFilterParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -434,6 +442,14 @@ func (j *jsiiProxy_GoogleSccMuteConfig) validateSetProvisionersParameters(val *[
 				return fmt.Errorf("parameter val[%#v] must be one of the allowed types: *cdktf.FileProvisioner, *cdktf.LocalExecProvisioner, *cdktf.RemoteExecProvisioner; received %#v (a %T)", idx_97dfc6, v, v)
 			}
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleSccMuteConfig) validateSetTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

@@ -68,6 +68,10 @@ func (j *jsiiProxy_GoogleComputeRegionDiskDiskEncryptionKeyOutputReference) vali
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRegionDiskDiskEncryptionKeyOutputReference) validateSetRsaEncryptedKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRegionDiskDiskEncryptionKeyOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

@@ -8,11 +8,11 @@ type GoogleDataprocAutoscalingPolicySecondaryWorkerConfig struct {
 	// secondary workers. Required for secondary workers if the minimum secondary instances is set.
 	// Bounds: [minInstances, ). Defaults to 0.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_dataproc_autoscaling_policy#max_instances GoogleDataprocAutoscalingPolicy#max_instances}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_dataproc_autoscaling_policy#max_instances GoogleDataprocAutoscalingPolicy#max_instances}
 	MaxInstances *float64 `field:"optional" json:"maxInstances" yaml:"maxInstances"`
 	// Minimum number of instances for this group. Bounds: [0, maxInstances]. Defaults to 0.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_dataproc_autoscaling_policy#min_instances GoogleDataprocAutoscalingPolicy#min_instances}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_dataproc_autoscaling_policy#min_instances GoogleDataprocAutoscalingPolicy#min_instances}
 	MinInstances *float64 `field:"optional" json:"minInstances" yaml:"minInstances"`
 	// Weight for the instance group, which is used to determine the fraction of total workers in the cluster from this instance group.
 	//
@@ -30,7 +30,7 @@ type GoogleDataprocAutoscalingPolicySecondaryWorkerConfig struct {
 	// the cluster will default to zero weight on the unset group. For example if weight is set
 	// only on primary workers, the cluster will use primary workers only and no secondary workers.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_dataproc_autoscaling_policy#weight GoogleDataprocAutoscalingPolicy#weight}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_dataproc_autoscaling_policy#weight GoogleDataprocAutoscalingPolicy#weight}
 	Weight *float64 `field:"optional" json:"weight" yaml:"weight"`
 }
 

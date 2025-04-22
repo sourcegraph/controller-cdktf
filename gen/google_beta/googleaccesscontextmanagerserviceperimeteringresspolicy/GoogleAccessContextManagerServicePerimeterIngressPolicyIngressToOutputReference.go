@@ -34,6 +34,9 @@ type GoogleAccessContextManagerServicePerimeterIngressPolicyIngressToOutputRefer
 	Resources() *[]*string
 	SetResources(val *[]*string)
 	ResourcesInput() *[]*string
+	Roles() *[]*string
+	SetRoles(val *[]*string)
+	RolesInput() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -69,6 +72,7 @@ type GoogleAccessContextManagerServicePerimeterIngressPolicyIngressToOutputRefer
 	PutOperations(value interface{})
 	ResetOperations()
 	ResetResources()
+	ResetRoles()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -174,6 +178,26 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterIngressPolicyIngres
 	return returns
 }
 
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterIngressPolicyIngressToOutputReference) Roles() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"roles",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterIngressPolicyIngressToOutputReference) RolesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"rolesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterIngressPolicyIngressToOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -262,6 +286,17 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterIngressPolicyIngres
 	_jsii_.Set(
 		j,
 		"resources",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterIngressPolicyIngressToOutputReference)SetRoles(val *[]*string) {
+	if err := j.validateSetRolesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"roles",
 		val,
 	)
 }
@@ -497,6 +532,14 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterIngressPolicyIngres
 	_jsii_.InvokeVoid(
 		g,
 		"resetResources",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterIngressPolicyIngressToOutputReference) ResetRoles() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRoles",
 		nil, // no parameters
 	)
 }

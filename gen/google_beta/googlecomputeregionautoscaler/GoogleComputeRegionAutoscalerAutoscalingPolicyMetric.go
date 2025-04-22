@@ -6,7 +6,7 @@ type GoogleComputeRegionAutoscalerAutoscalingPolicyMetric struct {
 	//
 	// The metric must have a value type of INT64 or DOUBLE.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_region_autoscaler#name GoogleComputeRegionAutoscaler#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_region_autoscaler#name GoogleComputeRegionAutoscaler#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// A filter string to be used as the filter string for a Stackdriver Monitoring TimeSeries.list API call. This filter is used to select a specific TimeSeries for the purpose of autoscaling and to determine whether the metric is exporting per-instance or per-group data.
 	//
@@ -37,7 +37,7 @@ type GoogleComputeRegionAutoscalerAutoscalingPolicyMetric struct {
 	// TimeSeries are returned upon the query execution, the autoscaler
 	// will sum their respective values to obtain its scaling value.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_region_autoscaler#filter GoogleComputeRegionAutoscaler#filter}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_region_autoscaler#filter GoogleComputeRegionAutoscaler#filter}
 	Filter *string `field:"optional" json:"filter" yaml:"filter"`
 	// If scaling is based on a per-group metric value that represents the total amount of work to be done or resource usage, set this value to an amount assigned for a single instance of the scaled group.
 	//
@@ -55,7 +55,7 @@ type GoogleComputeRegionAutoscalerAutoscalingPolicyMetric struct {
 	// single instance, it could be better used with utilization_target
 	// instead.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_region_autoscaler#single_instance_assignment GoogleComputeRegionAutoscaler#single_instance_assignment}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_region_autoscaler#single_instance_assignment GoogleComputeRegionAutoscaler#single_instance_assignment}
 	SingleInstanceAssignment *float64 `field:"optional" json:"singleInstanceAssignment" yaml:"singleInstanceAssignment"`
 	// The target value of the metric that autoscaler should maintain.
 	//
@@ -68,11 +68,11 @@ type GoogleComputeRegionAutoscalerAutoscalingPolicyMetric struct {
 	// The autoscaler will work to keep this value constant for each
 	// of the instances.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_region_autoscaler#target GoogleComputeRegionAutoscaler#target}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_region_autoscaler#target GoogleComputeRegionAutoscaler#target}
 	Target *float64 `field:"optional" json:"target" yaml:"target"`
 	// Defines how target utilization value is expressed for a Stackdriver Monitoring metric. Possible values: ["GAUGE", "DELTA_PER_SECOND", "DELTA_PER_MINUTE"].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_region_autoscaler#type GoogleComputeRegionAutoscaler#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_region_autoscaler#type GoogleComputeRegionAutoscaler#type}
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
 

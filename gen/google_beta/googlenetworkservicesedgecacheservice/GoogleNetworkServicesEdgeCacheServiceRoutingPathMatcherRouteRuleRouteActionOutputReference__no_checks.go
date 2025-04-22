@@ -68,6 +68,10 @@ func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteR
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionOutputReference) validateSetCompressionModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionOutputReference) validateSetInternalValueParameters(val *GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteAction) error {
 	return nil
 }

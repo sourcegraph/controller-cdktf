@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/gkehubfeatureiambinding/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/gke_hub_feature_iam_binding google_gke_hub_feature_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/gke_hub_feature_iam_binding google_gke_hub_feature_iam_binding}.
 type GkeHubFeatureIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -459,7 +459,7 @@ func (j *jsiiProxy_GkeHubFeatureIamBinding) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/gke_hub_feature_iam_binding google_gke_hub_feature_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/gke_hub_feature_iam_binding google_gke_hub_feature_iam_binding} Resource.
 func NewGkeHubFeatureIamBinding(scope constructs.Construct, id *string, config *GkeHubFeatureIamBindingConfig) GkeHubFeatureIamBinding {
 	_init_.Initialize()
 
@@ -477,7 +477,7 @@ func NewGkeHubFeatureIamBinding(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/gke_hub_feature_iam_binding google_gke_hub_feature_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/gke_hub_feature_iam_binding google_gke_hub_feature_iam_binding} Resource.
 func NewGkeHubFeatureIamBinding_Override(g GkeHubFeatureIamBinding, scope constructs.Construct, id *string, config *GkeHubFeatureIamBindingConfig) {
 	_init_.Initialize()
 

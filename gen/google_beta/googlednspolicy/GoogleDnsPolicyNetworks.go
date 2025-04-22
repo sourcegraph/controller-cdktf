@@ -7,7 +7,7 @@ type GoogleDnsPolicyNetworks struct {
 	// This should be formatted like 'projects/{project}/global/networks/{network}' or
 	// 'https://www.googleapis.com/compute/v1/projects/{project}/global/networks/{network}'
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_dns_policy#network_url GoogleDnsPolicy#network_url}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_dns_policy#network_url GoogleDnsPolicy#network_url}
 	NetworkUrl *string `field:"required" json:"networkUrl" yaml:"networkUrl"`
 }
 

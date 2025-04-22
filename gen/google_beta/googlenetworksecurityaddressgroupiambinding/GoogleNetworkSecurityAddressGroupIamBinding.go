@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlenetworksecurityaddressgroupiambinding/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_network_security_address_group_iam_binding google_network_security_address_group_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_network_security_address_group_iam_binding google_network_security_address_group_iam_binding}.
 type GoogleNetworkSecurityAddressGroupIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -459,7 +459,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityAddressGroupIamBinding) TerraformResourc
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_network_security_address_group_iam_binding google_network_security_address_group_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_network_security_address_group_iam_binding google_network_security_address_group_iam_binding} Resource.
 func NewGoogleNetworkSecurityAddressGroupIamBinding(scope constructs.Construct, id *string, config *GoogleNetworkSecurityAddressGroupIamBindingConfig) GoogleNetworkSecurityAddressGroupIamBinding {
 	_init_.Initialize()
 
@@ -477,7 +477,7 @@ func NewGoogleNetworkSecurityAddressGroupIamBinding(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_network_security_address_group_iam_binding google_network_security_address_group_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_network_security_address_group_iam_binding google_network_security_address_group_iam_binding} Resource.
 func NewGoogleNetworkSecurityAddressGroupIamBinding_Override(g GoogleNetworkSecurityAddressGroupIamBinding, scope constructs.Construct, id *string, config *GoogleNetworkSecurityAddressGroupIamBindingConfig) {
 	_init_.Initialize()
 

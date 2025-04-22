@@ -31,13 +31,16 @@ type DataGoogleCloudRunV2ServiceTemplateOutputReference interface {
 	ExecutionEnvironment() *string
 	// Experimental.
 	Fqn() *string
+	GpuZonalRedundancyDisabled() cdktf.IResolvable
 	InternalValue() *DataGoogleCloudRunV2ServiceTemplate
 	SetInternalValue(val *DataGoogleCloudRunV2ServiceTemplate)
 	Labels() cdktf.StringMap
 	MaxInstanceRequestConcurrency() *float64
+	NodeSelector() DataGoogleCloudRunV2ServiceTemplateNodeSelectorList
 	Revision() *string
 	Scaling() DataGoogleCloudRunV2ServiceTemplateScalingList
 	ServiceAccount() *string
+	ServiceMesh() DataGoogleCloudRunV2ServiceTemplateServiceMeshList
 	SessionAffinity() cdktf.IResolvable
 	// Experimental.
 	TerraformAttribute() *string
@@ -169,6 +172,16 @@ func (j *jsiiProxy_DataGoogleCloudRunV2ServiceTemplateOutputReference) Fqn() *st
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleCloudRunV2ServiceTemplateOutputReference) GpuZonalRedundancyDisabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"gpuZonalRedundancyDisabled",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleCloudRunV2ServiceTemplateOutputReference) InternalValue() *DataGoogleCloudRunV2ServiceTemplate {
 	var returns *DataGoogleCloudRunV2ServiceTemplate
 	_jsii_.Get(
@@ -199,6 +212,16 @@ func (j *jsiiProxy_DataGoogleCloudRunV2ServiceTemplateOutputReference) MaxInstan
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleCloudRunV2ServiceTemplateOutputReference) NodeSelector() DataGoogleCloudRunV2ServiceTemplateNodeSelectorList {
+	var returns DataGoogleCloudRunV2ServiceTemplateNodeSelectorList
+	_jsii_.Get(
+		j,
+		"nodeSelector",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleCloudRunV2ServiceTemplateOutputReference) Revision() *string {
 	var returns *string
 	_jsii_.Get(
@@ -224,6 +247,16 @@ func (j *jsiiProxy_DataGoogleCloudRunV2ServiceTemplateOutputReference) ServiceAc
 	_jsii_.Get(
 		j,
 		"serviceAccount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleCloudRunV2ServiceTemplateOutputReference) ServiceMesh() DataGoogleCloudRunV2ServiceTemplateServiceMeshList {
+	var returns DataGoogleCloudRunV2ServiceTemplateServiceMeshList
+	_jsii_.Get(
+		j,
+		"serviceMesh",
 		&returns,
 	)
 	return returns

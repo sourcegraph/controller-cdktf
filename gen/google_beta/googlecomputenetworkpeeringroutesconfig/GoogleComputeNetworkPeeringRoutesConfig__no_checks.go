@@ -104,11 +104,19 @@ func (j *jsiiProxy_GoogleComputeNetworkPeeringRoutesConfig) validateSetExportCus
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeNetworkPeeringRoutesConfig) validateSetExportSubnetRoutesWithPublicIpParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeNetworkPeeringRoutesConfig) validateSetIdParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_GoogleComputeNetworkPeeringRoutesConfig) validateSetImportCustomRoutesParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeNetworkPeeringRoutesConfig) validateSetImportSubnetRoutesWithPublicIpParameters(val interface{}) error {
 	return nil
 }
 

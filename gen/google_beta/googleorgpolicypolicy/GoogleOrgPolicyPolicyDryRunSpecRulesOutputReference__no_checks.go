@@ -80,6 +80,10 @@ func (j *jsiiProxy_GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference) validateSetParametersParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

@@ -35,6 +35,12 @@ type GoogleComputeImageImageEncryptionKeyOutputReference interface {
 	KmsKeyServiceAccount() *string
 	SetKmsKeyServiceAccount(val *string)
 	KmsKeyServiceAccountInput() *string
+	RawKey() *string
+	SetRawKey(val *string)
+	RawKeyInput() *string
+	RsaEncryptedKey() *string
+	SetRsaEncryptedKey(val *string)
+	RsaEncryptedKeyInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -69,6 +75,8 @@ type GoogleComputeImageImageEncryptionKeyOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetKmsKeySelfLink()
 	ResetKmsKeyServiceAccount()
+	ResetRawKey()
+	ResetRsaEncryptedKey()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -174,6 +182,46 @@ func (j *jsiiProxy_GoogleComputeImageImageEncryptionKeyOutputReference) KmsKeySe
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeImageImageEncryptionKeyOutputReference) RawKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rawKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeImageImageEncryptionKeyOutputReference) RawKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rawKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeImageImageEncryptionKeyOutputReference) RsaEncryptedKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rsaEncryptedKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeImageImageEncryptionKeyOutputReference) RsaEncryptedKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rsaEncryptedKeyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeImageImageEncryptionKeyOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -273,6 +321,28 @@ func (j *jsiiProxy_GoogleComputeImageImageEncryptionKeyOutputReference)SetKmsKey
 	_jsii_.Set(
 		j,
 		"kmsKeyServiceAccount",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeImageImageEncryptionKeyOutputReference)SetRawKey(val *string) {
+	if err := j.validateSetRawKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rawKey",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeImageImageEncryptionKeyOutputReference)SetRsaEncryptedKey(val *string) {
+	if err := j.validateSetRsaEncryptedKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rsaEncryptedKey",
 		val,
 	)
 }
@@ -497,6 +567,22 @@ func (g *jsiiProxy_GoogleComputeImageImageEncryptionKeyOutputReference) ResetKms
 	_jsii_.InvokeVoid(
 		g,
 		"resetKmsKeyServiceAccount",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeImageImageEncryptionKeyOutputReference) ResetRawKey() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRawKey",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeImageImageEncryptionKeyOutputReference) ResetRsaEncryptedKey() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRsaEncryptedKey",
 		nil, // no parameters
 	)
 }

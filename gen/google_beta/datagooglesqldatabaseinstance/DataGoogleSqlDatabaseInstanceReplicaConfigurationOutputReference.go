@@ -11,6 +11,7 @@ import (
 type DataGoogleSqlDatabaseInstanceReplicaConfigurationOutputReference interface {
 	cdktf.ComplexObject
 	CaCertificate() *string
+	CascadableReplica() cdktf.IResolvable
 	ClientCertificate() *string
 	ClientKey() *string
 	// the index of the complex object in a list.
@@ -92,6 +93,16 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceReplicaConfigurationOutputRefere
 	_jsii_.Get(
 		j,
 		"caCertificate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceReplicaConfigurationOutputReference) CascadableReplica() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"cascadableReplica",
 		&returns,
 	)
 	return returns

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledataplexdatascaniambinding/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_dataplex_datascan_iam_binding google_dataplex_datascan_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_dataplex_datascan_iam_binding google_dataplex_datascan_iam_binding}.
 type GoogleDataplexDatascanIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -459,7 +459,7 @@ func (j *jsiiProxy_GoogleDataplexDatascanIamBinding) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_dataplex_datascan_iam_binding google_dataplex_datascan_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_dataplex_datascan_iam_binding google_dataplex_datascan_iam_binding} Resource.
 func NewGoogleDataplexDatascanIamBinding(scope constructs.Construct, id *string, config *GoogleDataplexDatascanIamBindingConfig) GoogleDataplexDatascanIamBinding {
 	_init_.Initialize()
 
@@ -477,7 +477,7 @@ func NewGoogleDataplexDatascanIamBinding(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_dataplex_datascan_iam_binding google_dataplex_datascan_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_dataplex_datascan_iam_binding google_dataplex_datascan_iam_binding} Resource.
 func NewGoogleDataplexDatascanIamBinding_Override(g GoogleDataplexDatascanIamBinding, scope constructs.Construct, id *string, config *GoogleDataplexDatascanIamBindingConfig) {
 	_init_.Initialize()
 

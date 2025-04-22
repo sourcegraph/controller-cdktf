@@ -4,7 +4,7 @@ package googlebigqueryroutine
 type GoogleBigqueryRoutineArguments struct {
 	// Defaults to FIXED_TYPE. Default value: "FIXED_TYPE" Possible values: ["FIXED_TYPE", "ANY_TYPE"].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_bigquery_routine#argument_kind GoogleBigqueryRoutine#argument_kind}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_bigquery_routine#argument_kind GoogleBigqueryRoutine#argument_kind}
 	ArgumentKind *string `field:"optional" json:"argumentKind" yaml:"argumentKind"`
 	// A JSON schema for the data type.
 	//
@@ -16,15 +16,15 @@ type GoogleBigqueryRoutineArguments struct {
 	// suppress the recurring diff this causes. As a workaround, we recommend using
 	// the schema as returned by the API.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_bigquery_routine#data_type GoogleBigqueryRoutine#data_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_bigquery_routine#data_type GoogleBigqueryRoutine#data_type}
 	DataType *string `field:"optional" json:"dataType" yaml:"dataType"`
 	// Specifies whether the argument is input or output. Can be set for procedures only. Possible values: ["IN", "OUT", "INOUT"].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_bigquery_routine#mode GoogleBigqueryRoutine#mode}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_bigquery_routine#mode GoogleBigqueryRoutine#mode}
 	Mode *string `field:"optional" json:"mode" yaml:"mode"`
 	// The name of this argument. Can be absent for function return argument.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_bigquery_routine#name GoogleBigqueryRoutine#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_bigquery_routine#name GoogleBigqueryRoutine#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
 

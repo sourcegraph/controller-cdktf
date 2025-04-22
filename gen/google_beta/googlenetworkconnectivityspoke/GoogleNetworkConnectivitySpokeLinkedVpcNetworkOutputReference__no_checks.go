@@ -60,6 +60,10 @@ func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedVpcNetworkOutputReference
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedVpcNetworkOutputReference) validateSetIncludeExportRangesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedVpcNetworkOutputReference) validateSetInternalValueParameters(val *GoogleNetworkConnectivitySpokeLinkedVpcNetwork) error {
 	return nil
 }

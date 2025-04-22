@@ -33,11 +33,13 @@ type DataGoogleComputeForwardingRulesRulesOutputReference interface {
 	CreationTimestamp() *string
 	Description() *string
 	EffectiveLabels() cdktf.StringMap
+	ForwardingRuleId() *float64
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataGoogleComputeForwardingRulesRules
 	SetInternalValue(val *DataGoogleComputeForwardingRulesRules)
 	IpAddress() *string
+	IpCollection() *string
 	IpProtocol() *string
 	IpVersion() *string
 	IsMirroringCollector() cdktf.IResolvable
@@ -220,6 +222,16 @@ func (j *jsiiProxy_DataGoogleComputeForwardingRulesRulesOutputReference) Effecti
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeForwardingRulesRulesOutputReference) ForwardingRuleId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"forwardingRuleId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeForwardingRulesRulesOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -245,6 +257,16 @@ func (j *jsiiProxy_DataGoogleComputeForwardingRulesRulesOutputReference) IpAddre
 	_jsii_.Get(
 		j,
 		"ipAddress",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeForwardingRulesRulesOutputReference) IpCollection() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipCollection",
 		&returns,
 	)
 	return returns

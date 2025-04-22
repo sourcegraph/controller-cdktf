@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/computeregiontargethttpproxy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_region_target_http_proxy google_compute_region_target_http_proxy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/compute_region_target_http_proxy google_compute_region_target_http_proxy}.
 type ComputeRegionTargetHttpProxy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -40,6 +40,9 @@ type ComputeRegionTargetHttpProxy interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	HttpKeepAliveTimeoutSec() *float64
+	SetHttpKeepAliveTimeoutSec(val *float64)
+	HttpKeepAliveTimeoutSecInput() *float64
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -126,6 +129,7 @@ type ComputeRegionTargetHttpProxy interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *ComputeRegionTargetHttpProxyTimeouts)
 	ResetDescription()
+	ResetHttpKeepAliveTimeoutSec()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -256,6 +260,26 @@ func (j *jsiiProxy_ComputeRegionTargetHttpProxy) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionTargetHttpProxy) HttpKeepAliveTimeoutSec() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"httpKeepAliveTimeoutSec",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionTargetHttpProxy) HttpKeepAliveTimeoutSecInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"httpKeepAliveTimeoutSecInput",
 		&returns,
 	)
 	return returns
@@ -482,7 +506,7 @@ func (j *jsiiProxy_ComputeRegionTargetHttpProxy) UrlMapInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_region_target_http_proxy google_compute_region_target_http_proxy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/compute_region_target_http_proxy google_compute_region_target_http_proxy} Resource.
 func NewComputeRegionTargetHttpProxy(scope constructs.Construct, id *string, config *ComputeRegionTargetHttpProxyConfig) ComputeRegionTargetHttpProxy {
 	_init_.Initialize()
 
@@ -500,7 +524,7 @@ func NewComputeRegionTargetHttpProxy(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_region_target_http_proxy google_compute_region_target_http_proxy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/compute_region_target_http_proxy google_compute_region_target_http_proxy} Resource.
 func NewComputeRegionTargetHttpProxy_Override(c ComputeRegionTargetHttpProxy, scope constructs.Construct, id *string, config *ComputeRegionTargetHttpProxyConfig) {
 	_init_.Initialize()
 
@@ -556,6 +580,17 @@ func (j *jsiiProxy_ComputeRegionTargetHttpProxy)SetForEach(val cdktf.ITerraformI
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeRegionTargetHttpProxy)SetHttpKeepAliveTimeoutSec(val *float64) {
+	if err := j.validateSetHttpKeepAliveTimeoutSecParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"httpKeepAliveTimeoutSec",
 		val,
 	)
 }
@@ -1013,6 +1048,14 @@ func (c *jsiiProxy_ComputeRegionTargetHttpProxy) ResetDescription() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRegionTargetHttpProxy) ResetHttpKeepAliveTimeoutSec() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetHttpKeepAliveTimeoutSec",
 		nil, // no parameters
 	)
 }

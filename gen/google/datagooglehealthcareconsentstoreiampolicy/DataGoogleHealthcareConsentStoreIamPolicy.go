@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagooglehealthcareconsentstoreiampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/healthcare_consent_store_iam_policy google_healthcare_consent_store_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/data-sources/healthcare_consent_store_iam_policy google_healthcare_consent_store_iam_policy}.
 type DataGoogleHealthcareConsentStoreIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -330,7 +330,7 @@ func (j *jsiiProxy_DataGoogleHealthcareConsentStoreIamPolicy) TerraformResourceT
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/healthcare_consent_store_iam_policy google_healthcare_consent_store_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/data-sources/healthcare_consent_store_iam_policy google_healthcare_consent_store_iam_policy} Data Source.
 func NewDataGoogleHealthcareConsentStoreIamPolicy(scope constructs.Construct, id *string, config *DataGoogleHealthcareConsentStoreIamPolicyConfig) DataGoogleHealthcareConsentStoreIamPolicy {
 	_init_.Initialize()
 
@@ -348,7 +348,7 @@ func NewDataGoogleHealthcareConsentStoreIamPolicy(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/healthcare_consent_store_iam_policy google_healthcare_consent_store_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/data-sources/healthcare_consent_store_iam_policy google_healthcare_consent_store_iam_policy} Data Source.
 func NewDataGoogleHealthcareConsentStoreIamPolicy_Override(d DataGoogleHealthcareConsentStoreIamPolicy, scope constructs.Construct, id *string, config *DataGoogleHealthcareConsentStoreIamPolicyConfig) {
 	_init_.Initialize()
 

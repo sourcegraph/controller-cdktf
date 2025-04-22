@@ -76,6 +76,10 @@ func (g *jsiiProxy_GoogleCloudbuildWorkerPool) validatePutNetworkConfigParameter
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCloudbuildWorkerPool) validatePutPrivateServiceConnectParameters(value *GoogleCloudbuildWorkerPoolPrivateServiceConnect) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudbuildWorkerPool) validatePutTimeoutsParameters(value *GoogleCloudbuildWorkerPoolTimeouts) error {
 	return nil
 }

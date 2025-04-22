@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledataformrepository/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_dataform_repository google_dataform_repository}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_dataform_repository google_dataform_repository}.
 type GoogleDataformRepository interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -24,6 +24,9 @@ type GoogleDataformRepository interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DeletionPolicy() *string
+	SetDeletionPolicy(val *string)
+	DeletionPolicyInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -45,6 +48,9 @@ type GoogleDataformRepository interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	KmsKeyName() *string
+	SetKmsKeyName(val *string)
+	KmsKeyNameInput() *string
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
 	LabelsInput() *map[string]*string
@@ -136,9 +142,11 @@ type GoogleDataformRepository interface {
 	PutGitRemoteSettings(value *GoogleDataformRepositoryGitRemoteSettings)
 	PutTimeouts(value *GoogleDataformRepositoryTimeouts)
 	PutWorkspaceCompilationOverrides(value *GoogleDataformRepositoryWorkspaceCompilationOverrides)
+	ResetDeletionPolicy()
 	ResetDisplayName()
 	ResetGitRemoteSettings()
 	ResetId()
+	ResetKmsKeyName()
 	ResetLabels()
 	ResetNpmrcEnvironmentVariablesSecretVersion()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -202,6 +210,26 @@ func (j *jsiiProxy_GoogleDataformRepository) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataformRepository) DeletionPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deletionPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataformRepository) DeletionPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deletionPolicyInput",
 		&returns,
 	)
 	return returns
@@ -312,6 +340,26 @@ func (j *jsiiProxy_GoogleDataformRepository) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataformRepository) KmsKeyName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKeyName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataformRepository) KmsKeyNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKeyNameInput",
 		&returns,
 	)
 	return returns
@@ -568,7 +616,7 @@ func (j *jsiiProxy_GoogleDataformRepository) WorkspaceCompilationOverridesInput(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_dataform_repository google_dataform_repository} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_dataform_repository google_dataform_repository} Resource.
 func NewGoogleDataformRepository(scope constructs.Construct, id *string, config *GoogleDataformRepositoryConfig) GoogleDataformRepository {
 	_init_.Initialize()
 
@@ -586,7 +634,7 @@ func NewGoogleDataformRepository(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_dataform_repository google_dataform_repository} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_dataform_repository google_dataform_repository} Resource.
 func NewGoogleDataformRepository_Override(g GoogleDataformRepository, scope constructs.Construct, id *string, config *GoogleDataformRepositoryConfig) {
 	_init_.Initialize()
 
@@ -615,6 +663,17 @@ func (j *jsiiProxy_GoogleDataformRepository)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataformRepository)SetDeletionPolicy(val *string) {
+	if err := j.validateSetDeletionPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deletionPolicy",
 		val,
 	)
 }
@@ -653,6 +712,17 @@ func (j *jsiiProxy_GoogleDataformRepository)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataformRepository)SetKmsKeyName(val *string) {
+	if err := j.validateSetKmsKeyNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kmsKeyName",
 		val,
 	)
 }
@@ -1139,6 +1209,14 @@ func (g *jsiiProxy_GoogleDataformRepository) PutWorkspaceCompilationOverrides(va
 	)
 }
 
+func (g *jsiiProxy_GoogleDataformRepository) ResetDeletionPolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDeletionPolicy",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleDataformRepository) ResetDisplayName() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1159,6 +1237,14 @@ func (g *jsiiProxy_GoogleDataformRepository) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataformRepository) ResetKmsKeyName() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetKmsKeyName",
 		nil, // no parameters
 	)
 }

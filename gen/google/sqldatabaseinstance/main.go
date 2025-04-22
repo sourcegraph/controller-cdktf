@@ -71,6 +71,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "publicIpAddress", GoGetter: "PublicIpAddress"},
 			_jsii_.MemberMethod{JsiiMethod: "putClone", GoMethod: "PutClone"},
 			_jsii_.MemberMethod{JsiiMethod: "putReplicaConfiguration", GoMethod: "PutReplicaConfiguration"},
+			_jsii_.MemberMethod{JsiiMethod: "putReplicationCluster", GoMethod: "PutReplicationCluster"},
 			_jsii_.MemberMethod{JsiiMethod: "putRestoreBackupContext", GoMethod: "PutRestoreBackupContext"},
 			_jsii_.MemberMethod{JsiiMethod: "putSettings", GoMethod: "PutSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
@@ -79,6 +80,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "regionInput", GoGetter: "RegionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "replicaConfiguration", GoGetter: "ReplicaConfiguration"},
 			_jsii_.MemberProperty{JsiiProperty: "replicaConfigurationInput", GoGetter: "ReplicaConfigurationInput"},
+			_jsii_.MemberProperty{JsiiProperty: "replicaNames", GoGetter: "ReplicaNames"},
+			_jsii_.MemberProperty{JsiiProperty: "replicaNamesInput", GoGetter: "ReplicaNamesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "replicationCluster", GoGetter: "ReplicationCluster"},
+			_jsii_.MemberProperty{JsiiProperty: "replicationClusterInput", GoGetter: "ReplicationClusterInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClone", GoMethod: "ResetClone"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDeletionProtection", GoMethod: "ResetDeletionProtection"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEncryptionKeyName", GoMethod: "ResetEncryptionKeyName"},
@@ -91,6 +96,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetProject", GoMethod: "ResetProject"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRegion", GoMethod: "ResetRegion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetReplicaConfiguration", GoMethod: "ResetReplicaConfiguration"},
+			_jsii_.MemberMethod{JsiiMethod: "resetReplicaNames", GoMethod: "ResetReplicaNames"},
+			_jsii_.MemberMethod{JsiiMethod: "resetReplicationCluster", GoMethod: "ResetReplicationCluster"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRestoreBackupContext", GoMethod: "ResetRestoreBackupContext"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRootPassword", GoMethod: "ResetRootPassword"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSettings", GoMethod: "ResetSettings"},
@@ -246,6 +253,8 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "caCertificate", GoGetter: "CaCertificate"},
 			_jsii_.MemberProperty{JsiiProperty: "caCertificateInput", GoGetter: "CaCertificateInput"},
+			_jsii_.MemberProperty{JsiiProperty: "cascadableReplica", GoGetter: "CascadableReplica"},
+			_jsii_.MemberProperty{JsiiProperty: "cascadableReplicaInput", GoGetter: "CascadableReplicaInput"},
 			_jsii_.MemberProperty{JsiiProperty: "clientCertificate", GoGetter: "ClientCertificate"},
 			_jsii_.MemberProperty{JsiiProperty: "clientCertificateInput", GoGetter: "ClientCertificateInput"},
 			_jsii_.MemberProperty{JsiiProperty: "clientKey", GoGetter: "ClientKey"},
@@ -278,6 +287,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "password", GoGetter: "Password"},
 			_jsii_.MemberProperty{JsiiProperty: "passwordInput", GoGetter: "PasswordInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCaCertificate", GoMethod: "ResetCaCertificate"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCascadableReplica", GoMethod: "ResetCascadableReplica"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClientCertificate", GoMethod: "ResetClientCertificate"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClientKey", GoMethod: "ResetClientKey"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConnectRetryInterval", GoMethod: "ResetConnectRetryInterval"},
@@ -301,6 +311,46 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SqlDatabaseInstanceReplicaConfigurationOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicationCluster",
+		reflect.TypeOf((*SqlDatabaseInstanceReplicationCluster)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicationClusterOutputReference",
+		reflect.TypeOf((*SqlDatabaseInstanceReplicationClusterOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "drReplica", GoGetter: "DrReplica"},
+			_jsii_.MemberProperty{JsiiProperty: "failoverDrReplicaName", GoGetter: "FailoverDrReplicaName"},
+			_jsii_.MemberProperty{JsiiProperty: "failoverDrReplicaNameInput", GoGetter: "FailoverDrReplicaNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetFailoverDrReplicaName", GoMethod: "ResetFailoverDrReplicaName"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SqlDatabaseInstanceReplicationClusterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -890,17 +940,20 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "pscConfigInput", GoGetter: "PscConfigInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putAuthorizedNetworks", GoMethod: "PutAuthorizedNetworks"},
 			_jsii_.MemberMethod{JsiiMethod: "putPscConfig", GoMethod: "PutPscConfig"},
-			_jsii_.MemberProperty{JsiiProperty: "requireSsl", GoGetter: "RequireSsl"},
-			_jsii_.MemberProperty{JsiiProperty: "requireSslInput", GoGetter: "RequireSslInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAllocatedIpRange", GoMethod: "ResetAllocatedIpRange"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAuthorizedNetworks", GoMethod: "ResetAuthorizedNetworks"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnablePrivatePathForGoogleCloudServices", GoMethod: "ResetEnablePrivatePathForGoogleCloudServices"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIpv4Enabled", GoMethod: "ResetIpv4Enabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPrivateNetwork", GoMethod: "ResetPrivateNetwork"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPscConfig", GoMethod: "ResetPscConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRequireSsl", GoMethod: "ResetRequireSsl"},
+			_jsii_.MemberMethod{JsiiMethod: "resetServerCaMode", GoMethod: "ResetServerCaMode"},
+			_jsii_.MemberMethod{JsiiMethod: "resetServerCaPool", GoMethod: "ResetServerCaPool"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSslMode", GoMethod: "ResetSslMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "serverCaMode", GoGetter: "ServerCaMode"},
+			_jsii_.MemberProperty{JsiiProperty: "serverCaModeInput", GoGetter: "ServerCaModeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "serverCaPool", GoGetter: "ServerCaPool"},
+			_jsii_.MemberProperty{JsiiProperty: "serverCaPoolInput", GoGetter: "ServerCaPoolInput"},
 			_jsii_.MemberProperty{JsiiProperty: "sslMode", GoGetter: "SslMode"},
 			_jsii_.MemberProperty{JsiiProperty: "sslModeInput", GoGetter: "SslModeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
@@ -962,9 +1015,13 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "pscAutoConnections", GoGetter: "PscAutoConnections"},
+			_jsii_.MemberProperty{JsiiProperty: "pscAutoConnectionsInput", GoGetter: "PscAutoConnectionsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "pscEnabled", GoGetter: "PscEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "pscEnabledInput", GoGetter: "PscEnabledInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putPscAutoConnections", GoMethod: "PutPscAutoConnections"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAllowedConsumerProjects", GoMethod: "ResetAllowedConsumerProjects"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPscAutoConnections", GoMethod: "ResetPscAutoConnections"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPscEnabled", GoMethod: "ResetPscEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
@@ -973,6 +1030,69 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnections",
+		reflect.TypeOf((*SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnections)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsList",
+		reflect.TypeOf((*SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference",
+		reflect.TypeOf((*SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "consumerNetwork", GoGetter: "ConsumerNetwork"},
+			_jsii_.MemberProperty{JsiiProperty: "consumerNetworkInput", GoGetter: "ConsumerNetworkInput"},
+			_jsii_.MemberProperty{JsiiProperty: "consumerServiceProjectId", GoGetter: "ConsumerServiceProjectId"},
+			_jsii_.MemberProperty{JsiiProperty: "consumerServiceProjectIdInput", GoGetter: "ConsumerServiceProjectIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetConsumerServiceProjectId", GoMethod: "ResetConsumerServiceProjectId"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -1107,6 +1227,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "diskTypeInput", GoGetter: "DiskTypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "edition", GoGetter: "Edition"},
 			_jsii_.MemberProperty{JsiiProperty: "editionInput", GoGetter: "EditionInput"},
+			_jsii_.MemberProperty{JsiiProperty: "enableDataplexIntegration", GoGetter: "EnableDataplexIntegration"},
+			_jsii_.MemberProperty{JsiiProperty: "enableDataplexIntegrationInput", GoGetter: "EnableDataplexIntegrationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "enableGoogleMlIntegration", GoGetter: "EnableGoogleMlIntegration"},
 			_jsii_.MemberProperty{JsiiProperty: "enableGoogleMlIntegrationInput", GoGetter: "EnableGoogleMlIntegrationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -1162,6 +1284,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetDiskSize", GoMethod: "ResetDiskSize"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDiskType", GoMethod: "ResetDiskType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEdition", GoMethod: "ResetEdition"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEnableDataplexIntegration", GoMethod: "ResetEnableDataplexIntegration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnableGoogleMlIntegration", GoMethod: "ResetEnableGoogleMlIntegration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInsightsConfig", GoMethod: "ResetInsightsConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIpConfiguration", GoMethod: "ResetIpConfiguration"},

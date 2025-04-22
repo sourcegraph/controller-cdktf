@@ -160,6 +160,10 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceTemplate) validateSetInstanceDescr
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRegionInstanceTemplate) validateSetKeyRevocationActionTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRegionInstanceTemplate) validateSetLabelsParameters(val *map[string]*string) error {
 	return nil
 }

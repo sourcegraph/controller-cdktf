@@ -27,6 +27,8 @@ type DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetGenerationCadenceOutp
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	InspectTemplateModifiedCadence() DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetGenerationCadenceInspectTemplateModifiedCadenceOutputReference
+	InspectTemplateModifiedCadenceInput() *DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetGenerationCadenceInspectTemplateModifiedCadence
 	InternalValue() *DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetGenerationCadence
 	SetInternalValue(val *DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetGenerationCadence)
 	RefreshFrequency() *string
@@ -66,7 +68,9 @@ type DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetGenerationCadenceOutp
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutInspectTemplateModifiedCadence(value *DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetGenerationCadenceInspectTemplateModifiedCadence)
 	PutSchemaModifiedCadence(value *DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetGenerationCadenceSchemaModifiedCadence)
+	ResetInspectTemplateModifiedCadence()
 	ResetRefreshFrequency()
 	ResetSchemaModifiedCadence()
 	// Produce the Token's value at resolution time.
@@ -119,6 +123,26 @@ func (j *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetGenerat
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetGenerationCadenceOutputReference) InspectTemplateModifiedCadence() DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetGenerationCadenceInspectTemplateModifiedCadenceOutputReference {
+	var returns DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetGenerationCadenceInspectTemplateModifiedCadenceOutputReference
+	_jsii_.Get(
+		j,
+		"inspectTemplateModifiedCadence",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetGenerationCadenceOutputReference) InspectTemplateModifiedCadenceInput() *DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetGenerationCadenceInspectTemplateModifiedCadence {
+	var returns *DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetGenerationCadenceInspectTemplateModifiedCadence
+	_jsii_.Get(
+		j,
+		"inspectTemplateModifiedCadenceInput",
 		&returns,
 	)
 	return returns
@@ -474,6 +498,17 @@ func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetGenerat
 	return returns
 }
 
+func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetGenerationCadenceOutputReference) PutInspectTemplateModifiedCadence(value *DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetGenerationCadenceInspectTemplateModifiedCadence) {
+	if err := d.validatePutInspectTemplateModifiedCadenceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putInspectTemplateModifiedCadence",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetGenerationCadenceOutputReference) PutSchemaModifiedCadence(value *DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetGenerationCadenceSchemaModifiedCadence) {
 	if err := d.validatePutSchemaModifiedCadenceParameters(value); err != nil {
 		panic(err)
@@ -482,6 +517,14 @@ func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetGenerat
 		d,
 		"putSchemaModifiedCadence",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetGenerationCadenceOutputReference) ResetInspectTemplateModifiedCadence() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetInspectTemplateModifiedCadence",
+		nil, // no parameters
 	)
 }
 

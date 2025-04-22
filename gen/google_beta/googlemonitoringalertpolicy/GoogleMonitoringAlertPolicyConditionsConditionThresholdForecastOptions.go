@@ -9,7 +9,7 @@ type GoogleMonitoringAlertPolicyConditionsConditionThresholdForecastOptions stru
 	// forecasts made for the Configured 'duration',
 	// then the timeseries is considered to be failing.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_monitoring_alert_policy#forecast_horizon GoogleMonitoringAlertPolicy#forecast_horizon}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_monitoring_alert_policy#forecast_horizon GoogleMonitoringAlertPolicy#forecast_horizon}
 	ForecastHorizon *string `field:"required" json:"forecastHorizon" yaml:"forecastHorizon"`
 }
 

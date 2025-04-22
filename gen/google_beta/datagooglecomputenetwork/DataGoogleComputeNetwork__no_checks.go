@@ -84,6 +84,10 @@ func (j *jsiiProxy_DataGoogleComputeNetwork) validateSetNameParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleComputeNetwork) validateSetNetworkProfileParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleComputeNetwork) validateSetProjectParameters(val *string) error {
 	return nil
 }

@@ -25,6 +25,9 @@ type GkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference interface 
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Enabled() interface{}
+	SetEnabled(val interface{})
+	EnabledInput() interface{}
 	// Experimental.
 	Fqn() *string
 	Git() GkeHubFeatureMembershipConfigmanagementConfigSyncGitOutputReference
@@ -42,6 +45,9 @@ type GkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference interface 
 	SourceFormat() *string
 	SetSourceFormat(val *string)
 	SourceFormatInput() *string
+	StopSyncing() interface{}
+	SetStopSyncing(val interface{})
+	StopSyncingInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -76,11 +82,13 @@ type GkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference interface 
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutGit(value *GkeHubFeatureMembershipConfigmanagementConfigSyncGit)
 	PutOci(value *GkeHubFeatureMembershipConfigmanagementConfigSyncOci)
+	ResetEnabled()
 	ResetGit()
 	ResetMetricsGcpServiceAccountEmail()
 	ResetOci()
 	ResetPreventDrift()
 	ResetSourceFormat()
+	ResetStopSyncing()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -121,6 +129,26 @@ func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncOutputRefere
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference) Enabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference) EnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enabledInput",
 		&returns,
 	)
 	return returns
@@ -246,6 +274,26 @@ func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncOutputRefere
 	return returns
 }
 
+func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference) StopSyncing() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"stopSyncing",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference) StopSyncingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"stopSyncingInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -316,6 +364,17 @@ func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncOutputRefere
 	)
 }
 
+func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference)SetEnabled(val interface{}) {
+	if err := j.validateSetEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enabled",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference)SetInternalValue(val *GkeHubFeatureMembershipConfigmanagementConfigSync) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -356,6 +415,17 @@ func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncOutputRefere
 	_jsii_.Set(
 		j,
 		"sourceFormat",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference)SetStopSyncing(val interface{}) {
+	if err := j.validateSetStopSyncingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"stopSyncing",
 		val,
 	)
 }
@@ -590,6 +660,14 @@ func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncOutputRefere
 	)
 }
 
+func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference) ResetEnabled() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnabled",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference) ResetGit() {
 	_jsii_.InvokeVoid(
 		g,
@@ -626,6 +704,14 @@ func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncOutputRefere
 	_jsii_.InvokeVoid(
 		g,
 		"resetSourceFormat",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference) ResetStopSyncing() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetStopSyncing",
 		nil, // no parameters
 	)
 }

@@ -38,6 +38,9 @@ type CloudRunV2ServiceTemplateOutputReference interface {
 	ExecutionEnvironmentInput() *string
 	// Experimental.
 	Fqn() *string
+	GpuZonalRedundancyDisabled() interface{}
+	SetGpuZonalRedundancyDisabled(val interface{})
+	GpuZonalRedundancyDisabledInput() interface{}
 	InternalValue() *CloudRunV2ServiceTemplate
 	SetInternalValue(val *CloudRunV2ServiceTemplate)
 	Labels() *map[string]*string
@@ -46,6 +49,8 @@ type CloudRunV2ServiceTemplateOutputReference interface {
 	MaxInstanceRequestConcurrency() *float64
 	SetMaxInstanceRequestConcurrency(val *float64)
 	MaxInstanceRequestConcurrencyInput() *float64
+	NodeSelector() CloudRunV2ServiceTemplateNodeSelectorOutputReference
+	NodeSelectorInput() *CloudRunV2ServiceTemplateNodeSelector
 	Revision() *string
 	SetRevision(val *string)
 	RevisionInput() *string
@@ -97,6 +102,7 @@ type CloudRunV2ServiceTemplateOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutContainers(value interface{})
+	PutNodeSelector(value *CloudRunV2ServiceTemplateNodeSelector)
 	PutScaling(value *CloudRunV2ServiceTemplateScaling)
 	PutVolumes(value interface{})
 	PutVpcAccess(value *CloudRunV2ServiceTemplateVpcAccess)
@@ -104,8 +110,10 @@ type CloudRunV2ServiceTemplateOutputReference interface {
 	ResetContainers()
 	ResetEncryptionKey()
 	ResetExecutionEnvironment()
+	ResetGpuZonalRedundancyDisabled()
 	ResetLabels()
 	ResetMaxInstanceRequestConcurrency()
+	ResetNodeSelector()
 	ResetRevision()
 	ResetScaling()
 	ResetServiceAccount()
@@ -248,6 +256,26 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) Fqn() *string {
 	return returns
 }
 
+func (j *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) GpuZonalRedundancyDisabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"gpuZonalRedundancyDisabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) GpuZonalRedundancyDisabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"gpuZonalRedundancyDisabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) InternalValue() *CloudRunV2ServiceTemplate {
 	var returns *CloudRunV2ServiceTemplate
 	_jsii_.Get(
@@ -293,6 +321,26 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) MaxInstanceRequestC
 	_jsii_.Get(
 		j,
 		"maxInstanceRequestConcurrencyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) NodeSelector() CloudRunV2ServiceTemplateNodeSelectorOutputReference {
+	var returns CloudRunV2ServiceTemplateNodeSelectorOutputReference
+	_jsii_.Get(
+		j,
+		"nodeSelector",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) NodeSelectorInput() *CloudRunV2ServiceTemplateNodeSelector {
+	var returns *CloudRunV2ServiceTemplateNodeSelector
+	_jsii_.Get(
+		j,
+		"nodeSelectorInput",
 		&returns,
 	)
 	return returns
@@ -537,6 +585,17 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateOutputReference)SetExecutionEnvironm
 	_jsii_.Set(
 		j,
 		"executionEnvironment",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudRunV2ServiceTemplateOutputReference)SetGpuZonalRedundancyDisabled(val interface{}) {
+	if err := j.validateSetGpuZonalRedundancyDisabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"gpuZonalRedundancyDisabled",
 		val,
 	)
 }
@@ -837,6 +896,17 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) PutContainers(value
 	)
 }
 
+func (c *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) PutNodeSelector(value *CloudRunV2ServiceTemplateNodeSelector) {
+	if err := c.validatePutNodeSelectorParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putNodeSelector",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) PutScaling(value *CloudRunV2ServiceTemplateScaling) {
 	if err := c.validatePutScalingParameters(value); err != nil {
 		panic(err)
@@ -902,6 +972,14 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) ResetExecutionEnvir
 	)
 }
 
+func (c *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) ResetGpuZonalRedundancyDisabled() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetGpuZonalRedundancyDisabled",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) ResetLabels() {
 	_jsii_.InvokeVoid(
 		c,
@@ -914,6 +992,14 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) ResetMaxInstanceReq
 	_jsii_.InvokeVoid(
 		c,
 		"resetMaxInstanceRequestConcurrency",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) ResetNodeSelector() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetNodeSelector",
 		nil, // no parameters
 	)
 }

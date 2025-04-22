@@ -112,6 +112,10 @@ func (j *jsiiProxy_GoogleWorkbenchInstance) validateSetDisableProxyAccessParamet
 	return nil
 }
 
+func (j *jsiiProxy_GoogleWorkbenchInstance) validateSetEnableThirdPartyIdentityParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleWorkbenchInstance) validateSetIdParameters(val *string) error {
 	return nil
 }

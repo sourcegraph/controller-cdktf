@@ -1,0 +1,6 @@
+package datalosspreventiondiscoveryconfig
+
+
+type DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetDisabled struct {
+}
+

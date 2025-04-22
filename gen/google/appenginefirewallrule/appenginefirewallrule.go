@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/appenginefirewallrule/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/app_engine_firewall_rule google_app_engine_firewall_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/app_engine_firewall_rule google_app_engine_firewall_rule}.
 type AppEngineFirewallRule interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -449,7 +449,7 @@ func (j *jsiiProxy_AppEngineFirewallRule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/app_engine_firewall_rule google_app_engine_firewall_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/app_engine_firewall_rule google_app_engine_firewall_rule} Resource.
 func NewAppEngineFirewallRule(scope constructs.Construct, id *string, config *AppEngineFirewallRuleConfig) AppEngineFirewallRule {
 	_init_.Initialize()
 
@@ -467,7 +467,7 @@ func NewAppEngineFirewallRule(scope constructs.Construct, id *string, config *Ap
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/app_engine_firewall_rule google_app_engine_firewall_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/app_engine_firewall_rule google_app_engine_firewall_rule} Resource.
 func NewAppEngineFirewallRule_Override(a AppEngineFirewallRule, scope constructs.Construct, id *string, config *AppEngineFirewallRuleConfig) {
 	_init_.Initialize()
 

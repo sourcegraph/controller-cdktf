@@ -108,11 +108,19 @@ func (j *jsiiProxy_GoogleDataformRepository) validateSetCountParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataformRepository) validateSetDeletionPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataformRepository) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_GoogleDataformRepository) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDataformRepository) validateSetKmsKeyNameParameters(val *string) error {
 	return nil
 }
 

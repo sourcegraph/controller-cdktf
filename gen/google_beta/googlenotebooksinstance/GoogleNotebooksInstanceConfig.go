@@ -21,67 +21,67 @@ type GoogleNotebooksInstanceConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// A reference to the zone where the machine resides.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_notebooks_instance#location GoogleNotebooksInstance#location}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_notebooks_instance#location GoogleNotebooksInstance#location}
 	Location *string `field:"required" json:"location" yaml:"location"`
 	// A reference to a machine type which defines VM kind.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_notebooks_instance#machine_type GoogleNotebooksInstance#machine_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_notebooks_instance#machine_type GoogleNotebooksInstance#machine_type}
 	MachineType *string `field:"required" json:"machineType" yaml:"machineType"`
 	// The name specified for the Notebook instance.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_notebooks_instance#name GoogleNotebooksInstance#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_notebooks_instance#name GoogleNotebooksInstance#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// accelerator_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_notebooks_instance#accelerator_config GoogleNotebooksInstance#accelerator_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_notebooks_instance#accelerator_config GoogleNotebooksInstance#accelerator_config}
 	AcceleratorConfig *GoogleNotebooksInstanceAcceleratorConfig `field:"optional" json:"acceleratorConfig" yaml:"acceleratorConfig"`
 	// The size of the boot disk in GB attached to this instance, up to a maximum of 64000 GB (64 TB).
 	//
 	// The minimum recommended value is 100 GB.
 	// If not specified, this defaults to 100.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_notebooks_instance#boot_disk_size_gb GoogleNotebooksInstance#boot_disk_size_gb}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_notebooks_instance#boot_disk_size_gb GoogleNotebooksInstance#boot_disk_size_gb}
 	BootDiskSizeGb *float64 `field:"optional" json:"bootDiskSizeGb" yaml:"bootDiskSizeGb"`
 	// Possible disk types for notebook instances. Possible values: ["DISK_TYPE_UNSPECIFIED", "PD_STANDARD", "PD_SSD", "PD_BALANCED", "PD_EXTREME"].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_notebooks_instance#boot_disk_type GoogleNotebooksInstance#boot_disk_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_notebooks_instance#boot_disk_type GoogleNotebooksInstance#boot_disk_type}
 	BootDiskType *string `field:"optional" json:"bootDiskType" yaml:"bootDiskType"`
 	// container_image block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_notebooks_instance#container_image GoogleNotebooksInstance#container_image}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_notebooks_instance#container_image GoogleNotebooksInstance#container_image}
 	ContainerImage *GoogleNotebooksInstanceContainerImage `field:"optional" json:"containerImage" yaml:"containerImage"`
 	// Instance creation time.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_notebooks_instance#create_time GoogleNotebooksInstance#create_time}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_notebooks_instance#create_time GoogleNotebooksInstance#create_time}
 	CreateTime *string `field:"optional" json:"createTime" yaml:"createTime"`
 	// Specify a custom Cloud Storage path where the GPU driver is stored.
 	//
 	// If not specified, we'll automatically choose from official GPU drivers.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_notebooks_instance#custom_gpu_driver_path GoogleNotebooksInstance#custom_gpu_driver_path}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_notebooks_instance#custom_gpu_driver_path GoogleNotebooksInstance#custom_gpu_driver_path}
 	CustomGpuDriverPath *string `field:"optional" json:"customGpuDriverPath" yaml:"customGpuDriverPath"`
 	// The size of the data disk in GB attached to this instance, up to a maximum of 64000 GB (64 TB).
 	//
 	// You can choose the size of the data disk based on how big your notebooks and data are.
 	// If not specified, this defaults to 100.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_notebooks_instance#data_disk_size_gb GoogleNotebooksInstance#data_disk_size_gb}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_notebooks_instance#data_disk_size_gb GoogleNotebooksInstance#data_disk_size_gb}
 	DataDiskSizeGb *float64 `field:"optional" json:"dataDiskSizeGb" yaml:"dataDiskSizeGb"`
 	// Possible disk types for notebook instances. Possible values: ["DISK_TYPE_UNSPECIFIED", "PD_STANDARD", "PD_SSD", "PD_BALANCED", "PD_EXTREME"].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_notebooks_instance#data_disk_type GoogleNotebooksInstance#data_disk_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_notebooks_instance#data_disk_type GoogleNotebooksInstance#data_disk_type}
 	DataDiskType *string `field:"optional" json:"dataDiskType" yaml:"dataDiskType"`
 	// Desired state of the Notebook Instance.
 	//
 	// Set this field to 'ACTIVE' to start the Instance, and 'STOPPED' to stop the Instance.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_notebooks_instance#desired_state GoogleNotebooksInstance#desired_state}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_notebooks_instance#desired_state GoogleNotebooksInstance#desired_state}
 	DesiredState *string `field:"optional" json:"desiredState" yaml:"desiredState"`
 	// Disk encryption method used on the boot and data disks, defaults to GMEK. Possible values: ["DISK_ENCRYPTION_UNSPECIFIED", "GMEK", "CMEK"].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_notebooks_instance#disk_encryption GoogleNotebooksInstance#disk_encryption}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_notebooks_instance#disk_encryption GoogleNotebooksInstance#disk_encryption}
 	DiskEncryption *string `field:"optional" json:"diskEncryption" yaml:"diskEncryption"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_notebooks_instance#id GoogleNotebooksInstance#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_notebooks_instance#id GoogleNotebooksInstance#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -91,7 +91,7 @@ type GoogleNotebooksInstanceConfig struct {
 	// If this field is empty or set to false, the GPU driver
 	// won't be installed. Only applicable to instances with GPUs.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_notebooks_instance#install_gpu_driver GoogleNotebooksInstance#install_gpu_driver}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_notebooks_instance#install_gpu_driver GoogleNotebooksInstance#install_gpu_driver}
 	InstallGpuDriver interface{} `field:"optional" json:"installGpuDriver" yaml:"installGpuDriver"`
 	// The list of owners of this instance after creation.
 	//
@@ -100,11 +100,11 @@ type GoogleNotebooksInstanceConfig struct {
 	// If not specified, all of the service account users of
 	// your VM instance's service account can use the instance.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_notebooks_instance#instance_owners GoogleNotebooksInstance#instance_owners}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_notebooks_instance#instance_owners GoogleNotebooksInstance#instance_owners}
 	InstanceOwners *[]*string `field:"optional" json:"instanceOwners" yaml:"instanceOwners"`
 	// The KMS key used to encrypt the disks, only applicable if diskEncryption is CMEK. Format: projects/{project_id}/locations/{location}/keyRings/{key_ring_id}/cryptoKeys/{key_id}.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_notebooks_instance#kms_key GoogleNotebooksInstance#kms_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_notebooks_instance#kms_key GoogleNotebooksInstance#kms_key}
 	KmsKey *string `field:"optional" json:"kmsKey" yaml:"kmsKey"`
 	// Labels to apply to this instance.
 	//
@@ -115,46 +115,46 @@ type GoogleNotebooksInstanceConfig struct {
 	// **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 	// Please refer to the field 'effective_labels' for all of the labels present on the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_notebooks_instance#labels GoogleNotebooksInstance#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_notebooks_instance#labels GoogleNotebooksInstance#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
 	// Custom metadata to apply to this instance.
 	//
 	// An object containing a list of "key": value pairs. Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_notebooks_instance#metadata GoogleNotebooksInstance#metadata}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_notebooks_instance#metadata GoogleNotebooksInstance#metadata}
 	Metadata *map[string]*string `field:"optional" json:"metadata" yaml:"metadata"`
 	// The name of the VPC that this instance is in. Format: projects/{project_id}/global/networks/{network_id}.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_notebooks_instance#network GoogleNotebooksInstance#network}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_notebooks_instance#network GoogleNotebooksInstance#network}
 	Network *string `field:"optional" json:"network" yaml:"network"`
 	// The type of vNIC driver. Possible values: ["UNSPECIFIED_NIC_TYPE", "VIRTIO_NET", "GVNIC"].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_notebooks_instance#nic_type GoogleNotebooksInstance#nic_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_notebooks_instance#nic_type GoogleNotebooksInstance#nic_type}
 	NicType *string `field:"optional" json:"nicType" yaml:"nicType"`
 	// The notebook instance will not register with the proxy..
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_notebooks_instance#no_proxy_access GoogleNotebooksInstance#no_proxy_access}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_notebooks_instance#no_proxy_access GoogleNotebooksInstance#no_proxy_access}
 	NoProxyAccess interface{} `field:"optional" json:"noProxyAccess" yaml:"noProxyAccess"`
 	// No public IP will be assigned to this instance.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_notebooks_instance#no_public_ip GoogleNotebooksInstance#no_public_ip}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_notebooks_instance#no_public_ip GoogleNotebooksInstance#no_public_ip}
 	NoPublicIp interface{} `field:"optional" json:"noPublicIp" yaml:"noPublicIp"`
 	// If true, the data disk will not be auto deleted when deleting the instance.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_notebooks_instance#no_remove_data_disk GoogleNotebooksInstance#no_remove_data_disk}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_notebooks_instance#no_remove_data_disk GoogleNotebooksInstance#no_remove_data_disk}
 	NoRemoveDataDisk interface{} `field:"optional" json:"noRemoveDataDisk" yaml:"noRemoveDataDisk"`
 	// Path to a Bash script that automatically runs after a notebook instance fully boots up.
 	//
 	// The path must be a URL
 	// or Cloud Storage path (gs://path-to-file/file-name).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_notebooks_instance#post_startup_script GoogleNotebooksInstance#post_startup_script}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_notebooks_instance#post_startup_script GoogleNotebooksInstance#post_startup_script}
 	PostStartupScript *string `field:"optional" json:"postStartupScript" yaml:"postStartupScript"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_notebooks_instance#project GoogleNotebooksInstance#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_notebooks_instance#project GoogleNotebooksInstance#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// reservation_affinity block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_notebooks_instance#reservation_affinity GoogleNotebooksInstance#reservation_affinity}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_notebooks_instance#reservation_affinity GoogleNotebooksInstance#reservation_affinity}
 	ReservationAffinity *GoogleNotebooksInstanceReservationAffinity `field:"optional" json:"reservationAffinity" yaml:"reservationAffinity"`
 	// The service account on this instance, giving access to other Google Cloud services.
 	//
@@ -163,7 +163,7 @@ type GoogleNotebooksInstanceConfig struct {
 	// permission to use the instance. If not specified,
 	// the Compute Engine default service account is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_notebooks_instance#service_account GoogleNotebooksInstance#service_account}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_notebooks_instance#service_account GoogleNotebooksInstance#service_account}
 	ServiceAccount *string `field:"optional" json:"serviceAccount" yaml:"serviceAccount"`
 	// Optional.
 	//
@@ -172,31 +172,31 @@ type GoogleNotebooksInstanceConfig struct {
 	// - https://www.googleapis.com/auth/cloud-platform
 	// - https://www.googleapis.com/auth/userinfo.email
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_notebooks_instance#service_account_scopes GoogleNotebooksInstance#service_account_scopes}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_notebooks_instance#service_account_scopes GoogleNotebooksInstance#service_account_scopes}
 	ServiceAccountScopes *[]*string `field:"optional" json:"serviceAccountScopes" yaml:"serviceAccountScopes"`
 	// shielded_instance_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_notebooks_instance#shielded_instance_config GoogleNotebooksInstance#shielded_instance_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_notebooks_instance#shielded_instance_config GoogleNotebooksInstance#shielded_instance_config}
 	ShieldedInstanceConfig *GoogleNotebooksInstanceShieldedInstanceConfig `field:"optional" json:"shieldedInstanceConfig" yaml:"shieldedInstanceConfig"`
 	// The name of the subnet that this instance is in. Format: projects/{project_id}/regions/{region}/subnetworks/{subnetwork_id}.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_notebooks_instance#subnet GoogleNotebooksInstance#subnet}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_notebooks_instance#subnet GoogleNotebooksInstance#subnet}
 	Subnet *string `field:"optional" json:"subnet" yaml:"subnet"`
 	// The Compute Engine tags to add to instance.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_notebooks_instance#tags GoogleNotebooksInstance#tags}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_notebooks_instance#tags GoogleNotebooksInstance#tags}
 	Tags *[]*string `field:"optional" json:"tags" yaml:"tags"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_notebooks_instance#timeouts GoogleNotebooksInstance#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_notebooks_instance#timeouts GoogleNotebooksInstance#timeouts}
 	Timeouts *GoogleNotebooksInstanceTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 	// Instance update time.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_notebooks_instance#update_time GoogleNotebooksInstance#update_time}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_notebooks_instance#update_time GoogleNotebooksInstance#update_time}
 	UpdateTime *string `field:"optional" json:"updateTime" yaml:"updateTime"`
 	// vm_image block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_notebooks_instance#vm_image GoogleNotebooksInstance#vm_image}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_notebooks_instance#vm_image GoogleNotebooksInstance#vm_image}
 	VmImage *GoogleNotebooksInstanceVmImage `field:"optional" json:"vmImage" yaml:"vmImage"`
 }
 

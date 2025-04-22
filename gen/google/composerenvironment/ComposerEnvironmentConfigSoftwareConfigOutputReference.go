@@ -13,6 +13,8 @@ type ComposerEnvironmentConfigSoftwareConfigOutputReference interface {
 	AirflowConfigOverrides() *map[string]*string
 	SetAirflowConfigOverrides(val *map[string]*string)
 	AirflowConfigOverridesInput() *map[string]*string
+	CloudDataLineageIntegration() ComposerEnvironmentConfigSoftwareConfigCloudDataLineageIntegrationOutputReference
+	CloudDataLineageIntegrationInput() *ComposerEnvironmentConfigSoftwareConfigCloudDataLineageIntegration
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -55,6 +57,9 @@ type ComposerEnvironmentConfigSoftwareConfigOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	WebServerPluginsMode() *string
+	SetWebServerPluginsMode(val *string)
+	WebServerPluginsModeInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -79,12 +84,15 @@ type ComposerEnvironmentConfigSoftwareConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutCloudDataLineageIntegration(value *ComposerEnvironmentConfigSoftwareConfigCloudDataLineageIntegration)
 	ResetAirflowConfigOverrides()
+	ResetCloudDataLineageIntegration()
 	ResetEnvVariables()
 	ResetImageVersion()
 	ResetPypiPackages()
 	ResetPythonVersion()
 	ResetSchedulerCount()
+	ResetWebServerPluginsMode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -115,6 +123,26 @@ func (j *jsiiProxy_ComposerEnvironmentConfigSoftwareConfigOutputReference) Airfl
 	_jsii_.Get(
 		j,
 		"airflowConfigOverridesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComposerEnvironmentConfigSoftwareConfigOutputReference) CloudDataLineageIntegration() ComposerEnvironmentConfigSoftwareConfigCloudDataLineageIntegrationOutputReference {
+	var returns ComposerEnvironmentConfigSoftwareConfigCloudDataLineageIntegrationOutputReference
+	_jsii_.Get(
+		j,
+		"cloudDataLineageIntegration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComposerEnvironmentConfigSoftwareConfigOutputReference) CloudDataLineageIntegrationInput() *ComposerEnvironmentConfigSoftwareConfigCloudDataLineageIntegration {
+	var returns *ComposerEnvironmentConfigSoftwareConfigCloudDataLineageIntegration
+	_jsii_.Get(
+		j,
+		"cloudDataLineageIntegrationInput",
 		&returns,
 	)
 	return returns
@@ -290,6 +318,26 @@ func (j *jsiiProxy_ComposerEnvironmentConfigSoftwareConfigOutputReference) Terra
 	return returns
 }
 
+func (j *jsiiProxy_ComposerEnvironmentConfigSoftwareConfigOutputReference) WebServerPluginsMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"webServerPluginsMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComposerEnvironmentConfigSoftwareConfigOutputReference) WebServerPluginsModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"webServerPluginsModeInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewComposerEnvironmentConfigSoftwareConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComposerEnvironmentConfigSoftwareConfigOutputReference {
 	_init_.Initialize()
@@ -435,6 +483,17 @@ func (j *jsiiProxy_ComposerEnvironmentConfigSoftwareConfigOutputReference)SetTer
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComposerEnvironmentConfigSoftwareConfigOutputReference)SetWebServerPluginsMode(val *string) {
+	if err := j.validateSetWebServerPluginsModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"webServerPluginsMode",
 		val,
 	)
 }
@@ -625,10 +684,29 @@ func (c *jsiiProxy_ComposerEnvironmentConfigSoftwareConfigOutputReference) Inter
 	return returns
 }
 
+func (c *jsiiProxy_ComposerEnvironmentConfigSoftwareConfigOutputReference) PutCloudDataLineageIntegration(value *ComposerEnvironmentConfigSoftwareConfigCloudDataLineageIntegration) {
+	if err := c.validatePutCloudDataLineageIntegrationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putCloudDataLineageIntegration",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComposerEnvironmentConfigSoftwareConfigOutputReference) ResetAirflowConfigOverrides() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetAirflowConfigOverrides",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComposerEnvironmentConfigSoftwareConfigOutputReference) ResetCloudDataLineageIntegration() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCloudDataLineageIntegration",
 		nil, // no parameters
 	)
 }
@@ -669,6 +747,14 @@ func (c *jsiiProxy_ComposerEnvironmentConfigSoftwareConfigOutputReference) Reset
 	_jsii_.InvokeVoid(
 		c,
 		"resetSchedulerCount",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComposerEnvironmentConfigSoftwareConfigOutputReference) ResetWebServerPluginsMode() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetWebServerPluginsMode",
 		nil, // no parameters
 	)
 }

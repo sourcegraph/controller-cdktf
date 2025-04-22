@@ -10,6 +10,9 @@ import (
 
 type GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference interface {
 	cdktf.ComplexObject
+	Architecture() *string
+	SetArchitecture(val *string)
+	ArchitectureInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -47,9 +50,22 @@ type GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference in
 	ResourceManagerTags() *map[string]*string
 	SetResourceManagerTags(val *map[string]*string)
 	ResourceManagerTagsInput() *map[string]*string
+	ResourcePolicies() *[]*string
+	SetResourcePolicies(val *[]*string)
+	ResourcePoliciesInput() *[]*string
 	Size() *float64
 	SetSize(val *float64)
 	SizeInput() *float64
+	Snapshot() *string
+	SetSnapshot(val *string)
+	SnapshotInput() *string
+	SourceImageEncryptionKey() GoogleComputeInstanceFromTemplateBootDiskInitializeParamsSourceImageEncryptionKeyOutputReference
+	SourceImageEncryptionKeyInput() *GoogleComputeInstanceFromTemplateBootDiskInitializeParamsSourceImageEncryptionKey
+	SourceSnapshotEncryptionKey() GoogleComputeInstanceFromTemplateBootDiskInitializeParamsSourceSnapshotEncryptionKeyOutputReference
+	SourceSnapshotEncryptionKeyInput() *GoogleComputeInstanceFromTemplateBootDiskInitializeParamsSourceSnapshotEncryptionKey
+	StoragePool() *string
+	SetStoragePool(val *string)
+	StoragePoolInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -85,13 +101,21 @@ type GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference in
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutSourceImageEncryptionKey(value *GoogleComputeInstanceFromTemplateBootDiskInitializeParamsSourceImageEncryptionKey)
+	PutSourceSnapshotEncryptionKey(value *GoogleComputeInstanceFromTemplateBootDiskInitializeParamsSourceSnapshotEncryptionKey)
+	ResetArchitecture()
 	ResetEnableConfidentialCompute()
 	ResetImage()
 	ResetLabels()
 	ResetProvisionedIops()
 	ResetProvisionedThroughput()
 	ResetResourceManagerTags()
+	ResetResourcePolicies()
 	ResetSize()
+	ResetSnapshot()
+	ResetSourceImageEncryptionKey()
+	ResetSourceSnapshotEncryptionKey()
+	ResetStoragePool()
 	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -106,6 +130,26 @@ type GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference in
 // The jsii proxy struct for GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference
 type jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) Architecture() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"architecture",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) ArchitectureInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"architectureInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) ComplexObjectIndex() interface{} {
@@ -278,6 +322,26 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutp
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) ResourcePolicies() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"resourcePolicies",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) ResourcePoliciesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"resourcePoliciesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) Size() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -293,6 +357,86 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutp
 	_jsii_.Get(
 		j,
 		"sizeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) Snapshot() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"snapshot",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) SnapshotInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"snapshotInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) SourceImageEncryptionKey() GoogleComputeInstanceFromTemplateBootDiskInitializeParamsSourceImageEncryptionKeyOutputReference {
+	var returns GoogleComputeInstanceFromTemplateBootDiskInitializeParamsSourceImageEncryptionKeyOutputReference
+	_jsii_.Get(
+		j,
+		"sourceImageEncryptionKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) SourceImageEncryptionKeyInput() *GoogleComputeInstanceFromTemplateBootDiskInitializeParamsSourceImageEncryptionKey {
+	var returns *GoogleComputeInstanceFromTemplateBootDiskInitializeParamsSourceImageEncryptionKey
+	_jsii_.Get(
+		j,
+		"sourceImageEncryptionKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) SourceSnapshotEncryptionKey() GoogleComputeInstanceFromTemplateBootDiskInitializeParamsSourceSnapshotEncryptionKeyOutputReference {
+	var returns GoogleComputeInstanceFromTemplateBootDiskInitializeParamsSourceSnapshotEncryptionKeyOutputReference
+	_jsii_.Get(
+		j,
+		"sourceSnapshotEncryptionKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) SourceSnapshotEncryptionKeyInput() *GoogleComputeInstanceFromTemplateBootDiskInitializeParamsSourceSnapshotEncryptionKey {
+	var returns *GoogleComputeInstanceFromTemplateBootDiskInitializeParamsSourceSnapshotEncryptionKey
+	_jsii_.Get(
+		j,
+		"sourceSnapshotEncryptionKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) StoragePool() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storagePool",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) StoragePoolInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storagePoolInput",
 		&returns,
 	)
 	return returns
@@ -363,6 +507,17 @@ func NewGoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference
 		"@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference)SetArchitecture(val *string) {
+	if err := j.validateSetArchitectureParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"architecture",
+		val,
 	)
 }
 
@@ -465,6 +620,17 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutp
 	)
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference)SetResourcePolicies(val *[]*string) {
+	if err := j.validateSetResourcePoliciesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"resourcePolicies",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference)SetSize(val *float64) {
 	if err := j.validateSetSizeParameters(val); err != nil {
 		panic(err)
@@ -472,6 +638,28 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutp
 	_jsii_.Set(
 		j,
 		"size",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference)SetSnapshot(val *string) {
+	if err := j.validateSetSnapshotParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"snapshot",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference)SetStoragePool(val *string) {
+	if err := j.validateSetStoragePoolParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"storagePool",
 		val,
 	)
 }
@@ -695,6 +883,36 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutp
 	return returns
 }
 
+func (g *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) PutSourceImageEncryptionKey(value *GoogleComputeInstanceFromTemplateBootDiskInitializeParamsSourceImageEncryptionKey) {
+	if err := g.validatePutSourceImageEncryptionKeyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSourceImageEncryptionKey",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) PutSourceSnapshotEncryptionKey(value *GoogleComputeInstanceFromTemplateBootDiskInitializeParamsSourceSnapshotEncryptionKey) {
+	if err := g.validatePutSourceSnapshotEncryptionKeyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSourceSnapshotEncryptionKey",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) ResetArchitecture() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetArchitecture",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) ResetEnableConfidentialCompute() {
 	_jsii_.InvokeVoid(
 		g,
@@ -743,10 +961,50 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutp
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) ResetResourcePolicies() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetResourcePolicies",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) ResetSize() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetSize",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) ResetSnapshot() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSnapshot",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) ResetSourceImageEncryptionKey() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSourceImageEncryptionKey",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) ResetSourceSnapshotEncryptionKey() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSourceSnapshotEncryptionKey",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) ResetStoragePool() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetStoragePool",
 		nil, // no parameters
 	)
 }

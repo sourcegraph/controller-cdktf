@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/cloudbuildworkerpool/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/cloudbuild_worker_pool google_cloudbuild_worker_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/cloudbuild_worker_pool google_cloudbuild_worker_pool}.
 type CloudbuildWorkerPool interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -62,6 +62,8 @@ type CloudbuildWorkerPool interface {
 	NetworkConfigInput() *CloudbuildWorkerPoolNetworkConfig
 	// The tree node.
 	Node() constructs.Node
+	PrivateServiceConnect() CloudbuildWorkerPoolPrivateServiceConnectOutputReference
+	PrivateServiceConnectInput() *CloudbuildWorkerPoolPrivateServiceConnect
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -132,6 +134,7 @@ type CloudbuildWorkerPool interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutNetworkConfig(value *CloudbuildWorkerPoolNetworkConfig)
+	PutPrivateServiceConnect(value *CloudbuildWorkerPoolPrivateServiceConnect)
 	PutTimeouts(value *CloudbuildWorkerPoolTimeouts)
 	PutWorkerConfig(value *CloudbuildWorkerPoolWorkerConfig)
 	ResetAnnotations()
@@ -141,6 +144,7 @@ type CloudbuildWorkerPool interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPrivateServiceConnect()
 	ResetProject()
 	ResetTimeouts()
 	ResetWorkerConfig()
@@ -412,6 +416,26 @@ func (j *jsiiProxy_CloudbuildWorkerPool) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_CloudbuildWorkerPool) PrivateServiceConnect() CloudbuildWorkerPoolPrivateServiceConnectOutputReference {
+	var returns CloudbuildWorkerPoolPrivateServiceConnectOutputReference
+	_jsii_.Get(
+		j,
+		"privateServiceConnect",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudbuildWorkerPool) PrivateServiceConnectInput() *CloudbuildWorkerPoolPrivateServiceConnect {
+	var returns *CloudbuildWorkerPoolPrivateServiceConnect
+	_jsii_.Get(
+		j,
+		"privateServiceConnectInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudbuildWorkerPool) Project() *string {
 	var returns *string
 	_jsii_.Get(
@@ -563,7 +587,7 @@ func (j *jsiiProxy_CloudbuildWorkerPool) WorkerConfigInput() *CloudbuildWorkerPo
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/cloudbuild_worker_pool google_cloudbuild_worker_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/cloudbuild_worker_pool google_cloudbuild_worker_pool} Resource.
 func NewCloudbuildWorkerPool(scope constructs.Construct, id *string, config *CloudbuildWorkerPoolConfig) CloudbuildWorkerPool {
 	_init_.Initialize()
 
@@ -581,7 +605,7 @@ func NewCloudbuildWorkerPool(scope constructs.Construct, id *string, config *Clo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/cloudbuild_worker_pool google_cloudbuild_worker_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/cloudbuild_worker_pool google_cloudbuild_worker_pool} Resource.
 func NewCloudbuildWorkerPool_Override(c CloudbuildWorkerPool, scope constructs.Construct, id *string, config *CloudbuildWorkerPoolConfig) {
 	_init_.Initialize()
 
@@ -1090,6 +1114,17 @@ func (c *jsiiProxy_CloudbuildWorkerPool) PutNetworkConfig(value *CloudbuildWorke
 	)
 }
 
+func (c *jsiiProxy_CloudbuildWorkerPool) PutPrivateServiceConnect(value *CloudbuildWorkerPoolPrivateServiceConnect) {
+	if err := c.validatePutPrivateServiceConnectParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putPrivateServiceConnect",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CloudbuildWorkerPool) PutTimeouts(value *CloudbuildWorkerPoolTimeouts) {
 	if err := c.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1148,6 +1183,14 @@ func (c *jsiiProxy_CloudbuildWorkerPool) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudbuildWorkerPool) ResetPrivateServiceConnect() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetPrivateServiceConnect",
 		nil, // no parameters
 	)
 }

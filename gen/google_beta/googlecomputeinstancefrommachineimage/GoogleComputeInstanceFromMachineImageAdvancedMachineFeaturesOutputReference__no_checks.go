@@ -60,7 +60,15 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageAdvancedMachineFeaturesO
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageAdvancedMachineFeaturesOutputReference) validateSetEnableUefiNetworkingParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageAdvancedMachineFeaturesOutputReference) validateSetInternalValueParameters(val *GoogleComputeInstanceFromMachineImageAdvancedMachineFeatures) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageAdvancedMachineFeaturesOutputReference) validateSetPerformanceMonitoringUnitParameters(val *string) error {
 	return nil
 }
 
@@ -73,6 +81,10 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageAdvancedMachineFeaturesO
 }
 
 func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageAdvancedMachineFeaturesOutputReference) validateSetThreadsPerCoreParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageAdvancedMachineFeaturesOutputReference) validateSetTurboModeParameters(val *string) error {
 	return nil
 }
 

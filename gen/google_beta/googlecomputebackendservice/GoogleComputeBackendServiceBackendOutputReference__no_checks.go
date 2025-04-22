@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) validateIn
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) validatePutCustomMetricsParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

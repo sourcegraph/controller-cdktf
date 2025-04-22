@@ -1,0 +1,6 @@
+package googlestoragecontrolprojectintelligenceconfig
+
+
+type GoogleStorageControlProjectIntelligenceConfigTrialConfig struct {
+}
+

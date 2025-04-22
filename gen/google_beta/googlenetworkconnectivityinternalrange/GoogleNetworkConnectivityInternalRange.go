@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlenetworkconnectivityinternalrange/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_network_connectivity_internal_range google_network_connectivity_internal_range}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_network_connectivity_internal_range google_network_connectivity_internal_range}.
 type GoogleNetworkConnectivityInternalRange interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -53,6 +53,8 @@ type GoogleNetworkConnectivityInternalRange interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Migration() GoogleNetworkConnectivityInternalRangeMigrationOutputReference
+	MigrationInput() *GoogleNetworkConnectivityInternalRangeMigration
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -142,11 +144,13 @@ type GoogleNetworkConnectivityInternalRange interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutMigration(value *GoogleNetworkConnectivityInternalRangeMigration)
 	PutTimeouts(value *GoogleNetworkConnectivityInternalRangeTimeouts)
 	ResetDescription()
 	ResetId()
 	ResetIpCidrRange()
 	ResetLabels()
+	ResetMigration()
 	ResetOverlaps()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -348,6 +352,26 @@ func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) Lifecycle() *cdktf.Te
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) Migration() GoogleNetworkConnectivityInternalRangeMigrationOutputReference {
+	var returns GoogleNetworkConnectivityInternalRangeMigrationOutputReference
+	_jsii_.Get(
+		j,
+		"migration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) MigrationInput() *GoogleNetworkConnectivityInternalRangeMigration {
+	var returns *GoogleNetworkConnectivityInternalRangeMigration
+	_jsii_.Get(
+		j,
+		"migrationInput",
 		&returns,
 	)
 	return returns
@@ -624,7 +648,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) Users() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_network_connectivity_internal_range google_network_connectivity_internal_range} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_network_connectivity_internal_range google_network_connectivity_internal_range} Resource.
 func NewGoogleNetworkConnectivityInternalRange(scope constructs.Construct, id *string, config *GoogleNetworkConnectivityInternalRangeConfig) GoogleNetworkConnectivityInternalRange {
 	_init_.Initialize()
 
@@ -642,7 +666,7 @@ func NewGoogleNetworkConnectivityInternalRange(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_network_connectivity_internal_range google_network_connectivity_internal_range} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_network_connectivity_internal_range google_network_connectivity_internal_range} Resource.
 func NewGoogleNetworkConnectivityInternalRange_Override(g GoogleNetworkConnectivityInternalRange, scope constructs.Construct, id *string, config *GoogleNetworkConnectivityInternalRangeConfig) {
 	_init_.Initialize()
 
@@ -1206,6 +1230,17 @@ func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) OverrideLogicalId(new
 	)
 }
 
+func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) PutMigration(value *GoogleNetworkConnectivityInternalRangeMigration) {
+	if err := g.validatePutMigrationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putMigration",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) PutTimeouts(value *GoogleNetworkConnectivityInternalRangeTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1245,6 +1280,14 @@ func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) ResetLabels() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetLabels",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) ResetMigration() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMigration",
 		nil, // no parameters
 	)
 }

@@ -1,0 +1,6 @@
+package datagoogleparametermanagerregionalparameters
+
+
+type DataGoogleParameterManagerRegionalParametersParameters struct {
+}
+

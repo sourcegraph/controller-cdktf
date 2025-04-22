@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/computerouterpeer/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_router_peer google_compute_router_peer}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/compute_router_peer google_compute_router_peer}.
 type ComputeRouterPeer interface {
 	cdktf.TerraformResource
 	AdvertisedGroups() *[]*string
@@ -37,6 +37,11 @@ type ComputeRouterPeer interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CustomLearnedIpRanges() ComputeRouterPeerCustomLearnedIpRangesList
+	CustomLearnedIpRangesInput() interface{}
+	CustomLearnedRoutePriority() *float64
+	SetCustomLearnedRoutePriority(val *float64)
+	CustomLearnedRoutePriorityInput() *float64
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -50,6 +55,9 @@ type ComputeRouterPeer interface {
 	EnableIpv6() interface{}
 	SetEnableIpv6(val interface{})
 	EnableIpv6Input() interface{}
+	ExportPolicies() *[]*string
+	SetExportPolicies(val *[]*string)
+	ExportPoliciesInput() *[]*string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -61,6 +69,9 @@ type ComputeRouterPeer interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	ImportPolicies() *[]*string
+	SetImportPolicies(val *[]*string)
+	ImportPoliciesInput() *[]*string
 	Interface() *string
 	SetInterface(val *string)
 	InterfaceInput() *string
@@ -73,6 +84,8 @@ type ComputeRouterPeer interface {
 	Ipv6NexthopAddress() *string
 	SetIpv6NexthopAddress(val *string)
 	Ipv6NexthopAddressInput() *string
+	IsAdvertisedRoutePrioritySet() cdktf.IResolvable
+	IsCustomLearnedPrioritySet() cdktf.IResolvable
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -127,6 +140,12 @@ type ComputeRouterPeer interface {
 	TerraformResourceType() *string
 	Timeouts() ComputeRouterPeerTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	ZeroAdvertisedRoutePriority() interface{}
+	SetZeroAdvertisedRoutePriority(val interface{})
+	ZeroAdvertisedRoutePriorityInput() interface{}
+	ZeroCustomLearnedRoutePriority() interface{}
+	SetZeroCustomLearnedRoutePriority(val interface{})
+	ZeroCustomLearnedRoutePriorityInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -172,6 +191,7 @@ type ComputeRouterPeer interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAdvertisedIpRanges(value interface{})
 	PutBfd(value *ComputeRouterPeerBfd)
+	PutCustomLearnedIpRanges(value interface{})
 	PutMd5AuthenticationKey(value *ComputeRouterPeerMd5AuthenticationKey)
 	PutTimeouts(value *ComputeRouterPeerTimeouts)
 	ResetAdvertisedGroups()
@@ -179,10 +199,14 @@ type ComputeRouterPeer interface {
 	ResetAdvertisedRoutePriority()
 	ResetAdvertiseMode()
 	ResetBfd()
+	ResetCustomLearnedIpRanges()
+	ResetCustomLearnedRoutePriority()
 	ResetEnable()
 	ResetEnableIpv4()
 	ResetEnableIpv6()
+	ResetExportPolicies()
 	ResetId()
+	ResetImportPolicies()
 	ResetIpAddress()
 	ResetIpv4NexthopAddress()
 	ResetIpv6NexthopAddress()
@@ -197,6 +221,8 @@ type ComputeRouterPeer interface {
 	ResetRegion()
 	ResetRouterApplianceInstance()
 	ResetTimeouts()
+	ResetZeroAdvertisedRoutePriority()
+	ResetZeroCustomLearnedRoutePriority()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -355,6 +381,46 @@ func (j *jsiiProxy_ComputeRouterPeer) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeRouterPeer) CustomLearnedIpRanges() ComputeRouterPeerCustomLearnedIpRangesList {
+	var returns ComputeRouterPeerCustomLearnedIpRangesList
+	_jsii_.Get(
+		j,
+		"customLearnedIpRanges",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRouterPeer) CustomLearnedIpRangesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"customLearnedIpRangesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRouterPeer) CustomLearnedRoutePriority() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"customLearnedRoutePriority",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRouterPeer) CustomLearnedRoutePriorityInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"customLearnedRoutePriorityInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeRouterPeer) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -425,6 +491,26 @@ func (j *jsiiProxy_ComputeRouterPeer) EnableIpv6Input() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeRouterPeer) ExportPolicies() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"exportPolicies",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRouterPeer) ExportPoliciesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"exportPoliciesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeRouterPeer) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -470,6 +556,26 @@ func (j *jsiiProxy_ComputeRouterPeer) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRouterPeer) ImportPolicies() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"importPolicies",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRouterPeer) ImportPoliciesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"importPoliciesInput",
 		&returns,
 	)
 	return returns
@@ -550,6 +656,26 @@ func (j *jsiiProxy_ComputeRouterPeer) Ipv6NexthopAddressInput() *string {
 	_jsii_.Get(
 		j,
 		"ipv6NexthopAddressInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRouterPeer) IsAdvertisedRoutePrioritySet() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"isAdvertisedRoutePrioritySet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRouterPeer) IsCustomLearnedPrioritySet() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"isCustomLearnedPrioritySet",
 		&returns,
 	)
 	return returns
@@ -865,8 +991,48 @@ func (j *jsiiProxy_ComputeRouterPeer) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeRouterPeer) ZeroAdvertisedRoutePriority() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"zeroAdvertisedRoutePriority",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_router_peer google_compute_router_peer} Resource.
+func (j *jsiiProxy_ComputeRouterPeer) ZeroAdvertisedRoutePriorityInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"zeroAdvertisedRoutePriorityInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRouterPeer) ZeroCustomLearnedRoutePriority() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"zeroCustomLearnedRoutePriority",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRouterPeer) ZeroCustomLearnedRoutePriorityInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"zeroCustomLearnedRoutePriorityInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/compute_router_peer google_compute_router_peer} Resource.
 func NewComputeRouterPeer(scope constructs.Construct, id *string, config *ComputeRouterPeerConfig) ComputeRouterPeer {
 	_init_.Initialize()
 
@@ -884,7 +1050,7 @@ func NewComputeRouterPeer(scope constructs.Construct, id *string, config *Comput
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_router_peer google_compute_router_peer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/compute_router_peer google_compute_router_peer} Resource.
 func NewComputeRouterPeer_Override(c ComputeRouterPeer, scope constructs.Construct, id *string, config *ComputeRouterPeerConfig) {
 	_init_.Initialize()
 
@@ -950,6 +1116,17 @@ func (j *jsiiProxy_ComputeRouterPeer)SetCount(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_ComputeRouterPeer)SetCustomLearnedRoutePriority(val *float64) {
+	if err := j.validateSetCustomLearnedRoutePriorityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customLearnedRoutePriority",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ComputeRouterPeer)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
@@ -991,6 +1168,17 @@ func (j *jsiiProxy_ComputeRouterPeer)SetEnableIpv6(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_ComputeRouterPeer)SetExportPolicies(val *[]*string) {
+	if err := j.validateSetExportPoliciesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"exportPolicies",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ComputeRouterPeer)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -1006,6 +1194,17 @@ func (j *jsiiProxy_ComputeRouterPeer)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeRouterPeer)SetImportPolicies(val *[]*string) {
+	if err := j.validateSetImportPoliciesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"importPolicies",
 		val,
 	)
 }
@@ -1179,6 +1378,28 @@ func (j *jsiiProxy_ComputeRouterPeer)SetRouterApplianceInstance(val *string) {
 	_jsii_.Set(
 		j,
 		"routerApplianceInstance",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeRouterPeer)SetZeroAdvertisedRoutePriority(val interface{}) {
+	if err := j.validateSetZeroAdvertisedRoutePriorityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"zeroAdvertisedRoutePriority",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeRouterPeer)SetZeroCustomLearnedRoutePriority(val interface{}) {
+	if err := j.validateSetZeroCustomLearnedRoutePriorityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"zeroCustomLearnedRoutePriority",
 		val,
 	)
 }
@@ -1558,6 +1779,17 @@ func (c *jsiiProxy_ComputeRouterPeer) PutBfd(value *ComputeRouterPeerBfd) {
 	)
 }
 
+func (c *jsiiProxy_ComputeRouterPeer) PutCustomLearnedIpRanges(value interface{}) {
+	if err := c.validatePutCustomLearnedIpRangesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putCustomLearnedIpRanges",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeRouterPeer) PutMd5AuthenticationKey(value *ComputeRouterPeerMd5AuthenticationKey) {
 	if err := c.validatePutMd5AuthenticationKeyParameters(value); err != nil {
 		panic(err)
@@ -1620,6 +1852,22 @@ func (c *jsiiProxy_ComputeRouterPeer) ResetBfd() {
 	)
 }
 
+func (c *jsiiProxy_ComputeRouterPeer) ResetCustomLearnedIpRanges() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCustomLearnedIpRanges",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRouterPeer) ResetCustomLearnedRoutePriority() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCustomLearnedRoutePriority",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ComputeRouterPeer) ResetEnable() {
 	_jsii_.InvokeVoid(
 		c,
@@ -1644,10 +1892,26 @@ func (c *jsiiProxy_ComputeRouterPeer) ResetEnableIpv6() {
 	)
 }
 
+func (c *jsiiProxy_ComputeRouterPeer) ResetExportPolicies() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetExportPolicies",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ComputeRouterPeer) ResetId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRouterPeer) ResetImportPolicies() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetImportPolicies",
 		nil, // no parameters
 	)
 }
@@ -1744,6 +2008,22 @@ func (c *jsiiProxy_ComputeRouterPeer) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRouterPeer) ResetZeroAdvertisedRoutePriority() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetZeroAdvertisedRoutePriority",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRouterPeer) ResetZeroCustomLearnedRoutePriority() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetZeroCustomLearnedRoutePriority",
 		nil, // no parameters
 	)
 }

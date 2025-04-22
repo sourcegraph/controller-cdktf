@@ -92,6 +92,10 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplate) validatePutGuestAccelerato
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeInstanceFromTemplate) validatePutInstanceEncryptionKeyParameters(value *GoogleComputeInstanceFromTemplateInstanceEncryptionKey) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceFromTemplate) validatePutNetworkInterfaceParameters(value interface{}) error {
 	return nil
 }
@@ -116,7 +120,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplate) validatePutScratchDiskPara
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceFromTemplate) validatePutServiceAccountParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeInstanceFromTemplate) validatePutServiceAccountParameters(value *GoogleComputeInstanceFromTemplateServiceAccount) error {
 	return nil
 }
 
@@ -181,6 +185,10 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplate) validateSetHostnameParamet
 }
 
 func (j *jsiiProxy_GoogleComputeInstanceFromTemplate) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplate) validateSetKeyRevocationActionTypeParameters(val *string) error {
 	return nil
 }
 

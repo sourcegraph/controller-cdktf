@@ -1,0 +1,6 @@
+package osconfigv2policyorchestratorfororganization
+
+
+type OsConfigV2PolicyOrchestratorForOrganizationOrchestrationStatePreviousIterationStateErrorDetails struct {
+}
+

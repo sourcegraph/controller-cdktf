@@ -225,6 +225,14 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersS
 	return nil
 }
 
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesOutputReference) validateSetTitleParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewGoogleAccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")

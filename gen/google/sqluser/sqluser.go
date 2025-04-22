@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/sqluser/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/sql_user google_sql_user}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/sql_user google_sql_user}.
 type SqlUser interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -62,6 +62,12 @@ type SqlUser interface {
 	PasswordInput() *string
 	PasswordPolicy() SqlUserPasswordPolicyOutputReference
 	PasswordPolicyInput() *SqlUserPasswordPolicy
+	PasswordWo() *string
+	SetPasswordWo(val *string)
+	PasswordWoInput() *string
+	PasswordWoVersion() *float64
+	SetPasswordWoVersion(val *float64)
+	PasswordWoVersionInput() *float64
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -140,6 +146,8 @@ type SqlUser interface {
 	ResetOverrideLogicalId()
 	ResetPassword()
 	ResetPasswordPolicy()
+	ResetPasswordWo()
+	ResetPasswordWoVersion()
 	ResetProject()
 	ResetTimeouts()
 	ResetType()
@@ -401,6 +409,46 @@ func (j *jsiiProxy_SqlUser) PasswordPolicyInput() *SqlUserPasswordPolicy {
 	return returns
 }
 
+func (j *jsiiProxy_SqlUser) PasswordWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlUser) PasswordWoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordWoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlUser) PasswordWoVersion() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"passwordWoVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlUser) PasswordWoVersionInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"passwordWoVersionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SqlUser) Project() *string {
 	var returns *string
 	_jsii_.Get(
@@ -532,7 +580,7 @@ func (j *jsiiProxy_SqlUser) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/sql_user google_sql_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/sql_user google_sql_user} Resource.
 func NewSqlUser(scope constructs.Construct, id *string, config *SqlUserConfig) SqlUser {
 	_init_.Initialize()
 
@@ -550,7 +598,7 @@ func NewSqlUser(scope constructs.Construct, id *string, config *SqlUserConfig) S
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/sql_user google_sql_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/sql_user google_sql_user} Resource.
 func NewSqlUser_Override(s SqlUser, scope constructs.Construct, id *string, config *SqlUserConfig) {
 	_init_.Initialize()
 
@@ -672,6 +720,28 @@ func (j *jsiiProxy_SqlUser)SetPassword(val *string) {
 	_jsii_.Set(
 		j,
 		"password",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SqlUser)SetPasswordWo(val *string) {
+	if err := j.validateSetPasswordWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"passwordWo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SqlUser)SetPasswordWoVersion(val *float64) {
+	if err := j.validateSetPasswordWoVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"passwordWoVersion",
 		val,
 	)
 }
@@ -1136,6 +1206,22 @@ func (s *jsiiProxy_SqlUser) ResetPasswordPolicy() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetPasswordPolicy",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlUser) ResetPasswordWo() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetPasswordWo",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlUser) ResetPasswordWoVersion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetPasswordWoVersion",
 		nil, // no parameters
 	)
 }

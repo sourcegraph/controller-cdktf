@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/computebackendservice/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_backend_service google_compute_backend_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/compute_backend_service google_compute_backend_service}.
 type ComputeBackendService interface {
 	cdktf.TerraformResource
 	AffinityCookieTtlSec() *float64
@@ -42,6 +42,8 @@ type ComputeBackendService interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreationTimestamp() *string
+	CustomMetrics() ComputeBackendServiceCustomMetricsList
+	CustomMetricsInput() interface{}
 	CustomRequestHeaders() *[]*string
 	SetCustomRequestHeaders(val *[]*string)
 	CustomRequestHeadersInput() *[]*string
@@ -79,6 +81,9 @@ type ComputeBackendService interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IpAddressSelectionPolicy() *string
+	SetIpAddressSelectionPolicy(val *string)
+	IpAddressSelectionPolicyInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -131,6 +136,8 @@ type ComputeBackendService interface {
 	SessionAffinity() *string
 	SetSessionAffinity(val *string)
 	SessionAffinityInput() *string
+	StrongSessionAffinityCookie() ComputeBackendServiceStrongSessionAffinityCookieOutputReference
+	StrongSessionAffinityCookieInput() *ComputeBackendServiceStrongSessionAffinityCookie
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -189,11 +196,13 @@ type ComputeBackendService interface {
 	PutCdnPolicy(value *ComputeBackendServiceCdnPolicy)
 	PutCircuitBreakers(value *ComputeBackendServiceCircuitBreakers)
 	PutConsistentHash(value *ComputeBackendServiceConsistentHash)
+	PutCustomMetrics(value interface{})
 	PutIap(value *ComputeBackendServiceIap)
 	PutLocalityLbPolicies(value interface{})
 	PutLogConfig(value *ComputeBackendServiceLogConfig)
 	PutOutlierDetection(value *ComputeBackendServiceOutlierDetection)
 	PutSecuritySettings(value *ComputeBackendServiceSecuritySettings)
+	PutStrongSessionAffinityCookie(value *ComputeBackendServiceStrongSessionAffinityCookie)
 	PutTimeouts(value *ComputeBackendServiceTimeouts)
 	ResetAffinityCookieTtlSec()
 	ResetBackend()
@@ -202,6 +211,7 @@ type ComputeBackendService interface {
 	ResetCompressionMode()
 	ResetConnectionDrainingTimeoutSec()
 	ResetConsistentHash()
+	ResetCustomMetrics()
 	ResetCustomRequestHeaders()
 	ResetCustomResponseHeaders()
 	ResetDescription()
@@ -210,6 +220,7 @@ type ComputeBackendService interface {
 	ResetHealthChecks()
 	ResetIap()
 	ResetId()
+	ResetIpAddressSelectionPolicy()
 	ResetLoadBalancingScheme()
 	ResetLocalityLbPolicies()
 	ResetLocalityLbPolicy()
@@ -225,6 +236,7 @@ type ComputeBackendService interface {
 	ResetSecuritySettings()
 	ResetServiceLbPolicy()
 	ResetSessionAffinity()
+	ResetStrongSessionAffinityCookie()
 	ResetTimeouts()
 	ResetTimeoutSec()
 	SynthesizeAttributes() *map[string]interface{}
@@ -430,6 +442,26 @@ func (j *jsiiProxy_ComputeBackendService) CreationTimestamp() *string {
 	_jsii_.Get(
 		j,
 		"creationTimestamp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeBackendService) CustomMetrics() ComputeBackendServiceCustomMetricsList {
+	var returns ComputeBackendServiceCustomMetricsList
+	_jsii_.Get(
+		j,
+		"customMetrics",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeBackendService) CustomMetricsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"customMetricsInput",
 		&returns,
 	)
 	return returns
@@ -650,6 +682,26 @@ func (j *jsiiProxy_ComputeBackendService) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeBackendService) IpAddressSelectionPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipAddressSelectionPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeBackendService) IpAddressSelectionPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipAddressSelectionPolicyInput",
 		&returns,
 	)
 	return returns
@@ -975,6 +1027,26 @@ func (j *jsiiProxy_ComputeBackendService) SessionAffinityInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeBackendService) StrongSessionAffinityCookie() ComputeBackendServiceStrongSessionAffinityCookieOutputReference {
+	var returns ComputeBackendServiceStrongSessionAffinityCookieOutputReference
+	_jsii_.Get(
+		j,
+		"strongSessionAffinityCookie",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeBackendService) StrongSessionAffinityCookieInput() *ComputeBackendServiceStrongSessionAffinityCookie {
+	var returns *ComputeBackendServiceStrongSessionAffinityCookie
+	_jsii_.Get(
+		j,
+		"strongSessionAffinityCookieInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeBackendService) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -1046,7 +1118,7 @@ func (j *jsiiProxy_ComputeBackendService) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_backend_service google_compute_backend_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/compute_backend_service google_compute_backend_service} Resource.
 func NewComputeBackendService(scope constructs.Construct, id *string, config *ComputeBackendServiceConfig) ComputeBackendService {
 	_init_.Initialize()
 
@@ -1064,7 +1136,7 @@ func NewComputeBackendService(scope constructs.Construct, id *string, config *Co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_backend_service google_compute_backend_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/compute_backend_service google_compute_backend_service} Resource.
 func NewComputeBackendService_Override(c ComputeBackendService, scope constructs.Construct, id *string, config *ComputeBackendServiceConfig) {
 	_init_.Initialize()
 
@@ -1219,6 +1291,17 @@ func (j *jsiiProxy_ComputeBackendService)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeBackendService)SetIpAddressSelectionPolicy(val *string) {
+	if err := j.validateSetIpAddressSelectionPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipAddressSelectionPolicy",
 		val,
 	)
 }
@@ -1760,6 +1843,17 @@ func (c *jsiiProxy_ComputeBackendService) PutConsistentHash(value *ComputeBacken
 	)
 }
 
+func (c *jsiiProxy_ComputeBackendService) PutCustomMetrics(value interface{}) {
+	if err := c.validatePutCustomMetricsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putCustomMetrics",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeBackendService) PutIap(value *ComputeBackendServiceIap) {
 	if err := c.validatePutIapParameters(value); err != nil {
 		panic(err)
@@ -1811,6 +1905,17 @@ func (c *jsiiProxy_ComputeBackendService) PutSecuritySettings(value *ComputeBack
 	_jsii_.InvokeVoid(
 		c,
 		"putSecuritySettings",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ComputeBackendService) PutStrongSessionAffinityCookie(value *ComputeBackendServiceStrongSessionAffinityCookie) {
+	if err := c.validatePutStrongSessionAffinityCookieParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putStrongSessionAffinityCookie",
 		[]interface{}{value},
 	)
 }
@@ -1882,6 +1987,14 @@ func (c *jsiiProxy_ComputeBackendService) ResetConsistentHash() {
 	)
 }
 
+func (c *jsiiProxy_ComputeBackendService) ResetCustomMetrics() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCustomMetrics",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ComputeBackendService) ResetCustomRequestHeaders() {
 	_jsii_.InvokeVoid(
 		c,
@@ -1942,6 +2055,14 @@ func (c *jsiiProxy_ComputeBackendService) ResetId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeBackendService) ResetIpAddressSelectionPolicy() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetIpAddressSelectionPolicy",
 		nil, // no parameters
 	)
 }
@@ -2046,6 +2167,14 @@ func (c *jsiiProxy_ComputeBackendService) ResetSessionAffinity() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetSessionAffinity",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeBackendService) ResetStrongSessionAffinityCookie() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetStrongSessionAffinityCookie",
 		nil, // no parameters
 	)
 }

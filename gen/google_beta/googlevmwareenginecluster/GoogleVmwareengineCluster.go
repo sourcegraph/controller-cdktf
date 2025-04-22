@@ -9,9 +9,11 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlevmwareenginecluster/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_vmwareengine_cluster google_vmwareengine_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_vmwareengine_cluster google_vmwareengine_cluster}.
 type GoogleVmwareengineCluster interface {
 	cdktf.TerraformResource
+	AutoscalingSettings() GoogleVmwareengineClusterAutoscalingSettingsOutputReference
+	AutoscalingSettingsInput() *GoogleVmwareengineClusterAutoscalingSettings
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -117,8 +119,10 @@ type GoogleVmwareengineCluster interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAutoscalingSettings(value *GoogleVmwareengineClusterAutoscalingSettings)
 	PutNodeTypeConfigs(value interface{})
 	PutTimeouts(value *GoogleVmwareengineClusterTimeouts)
+	ResetAutoscalingSettings()
 	ResetId()
 	ResetNodeTypeConfigs()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -141,6 +145,26 @@ type GoogleVmwareengineCluster interface {
 // The jsii proxy struct for GoogleVmwareengineCluster
 type jsiiProxy_GoogleVmwareengineCluster struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GoogleVmwareengineCluster) AutoscalingSettings() GoogleVmwareengineClusterAutoscalingSettingsOutputReference {
+	var returns GoogleVmwareengineClusterAutoscalingSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"autoscalingSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleVmwareengineCluster) AutoscalingSettingsInput() *GoogleVmwareengineClusterAutoscalingSettings {
+	var returns *GoogleVmwareengineClusterAutoscalingSettings
+	_jsii_.Get(
+		j,
+		"autoscalingSettingsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleVmwareengineCluster) CdktfStack() cdktf.TerraformStack {
@@ -434,7 +458,7 @@ func (j *jsiiProxy_GoogleVmwareengineCluster) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_vmwareengine_cluster google_vmwareengine_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_vmwareengine_cluster google_vmwareengine_cluster} Resource.
 func NewGoogleVmwareengineCluster(scope constructs.Construct, id *string, config *GoogleVmwareengineClusterConfig) GoogleVmwareengineCluster {
 	_init_.Initialize()
 
@@ -452,7 +476,7 @@ func NewGoogleVmwareengineCluster(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_vmwareengine_cluster google_vmwareengine_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_vmwareengine_cluster google_vmwareengine_cluster} Resource.
 func NewGoogleVmwareengineCluster_Override(g GoogleVmwareengineCluster, scope constructs.Construct, id *string, config *GoogleVmwareengineClusterConfig) {
 	_init_.Initialize()
 
@@ -917,6 +941,17 @@ func (g *jsiiProxy_GoogleVmwareengineCluster) OverrideLogicalId(newLogicalId *st
 	)
 }
 
+func (g *jsiiProxy_GoogleVmwareengineCluster) PutAutoscalingSettings(value *GoogleVmwareengineClusterAutoscalingSettings) {
+	if err := g.validatePutAutoscalingSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAutoscalingSettings",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleVmwareengineCluster) PutNodeTypeConfigs(value interface{}) {
 	if err := g.validatePutNodeTypeConfigsParameters(value); err != nil {
 		panic(err)
@@ -936,6 +971,14 @@ func (g *jsiiProxy_GoogleVmwareengineCluster) PutTimeouts(value *GoogleVmwareeng
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleVmwareengineCluster) ResetAutoscalingSettings() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAutoscalingSettings",
+		nil, // no parameters
 	)
 }
 

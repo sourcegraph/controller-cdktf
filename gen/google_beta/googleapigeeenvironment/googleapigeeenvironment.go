@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleapigeeenvironment/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_apigee_environment google_apigee_environment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_apigee_environment google_apigee_environment}.
 type GoogleApigeeEnvironment interface {
 	cdktf.TerraformResource
 	ApiProxyType() *string
@@ -68,6 +68,8 @@ type GoogleApigeeEnvironment interface {
 	OrgId() *string
 	SetOrgId(val *string)
 	OrgIdInput() *string
+	Properties() GoogleApigeeEnvironmentPropertiesOutputReference
+	PropertiesInput() *GoogleApigeeEnvironmentProperties
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -133,6 +135,7 @@ type GoogleApigeeEnvironment interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutNodeConfig(value *GoogleApigeeEnvironmentNodeConfig)
+	PutProperties(value *GoogleApigeeEnvironmentProperties)
 	PutTimeouts(value *GoogleApigeeEnvironmentTimeouts)
 	ResetApiProxyType()
 	ResetDeploymentType()
@@ -144,6 +147,7 @@ type GoogleApigeeEnvironment interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProperties()
 	ResetTimeouts()
 	ResetType()
 	SynthesizeAttributes() *map[string]interface{}
@@ -444,6 +448,26 @@ func (j *jsiiProxy_GoogleApigeeEnvironment) OrgIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleApigeeEnvironment) Properties() GoogleApigeeEnvironmentPropertiesOutputReference {
+	var returns GoogleApigeeEnvironmentPropertiesOutputReference
+	_jsii_.Get(
+		j,
+		"properties",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleApigeeEnvironment) PropertiesInput() *GoogleApigeeEnvironmentProperties {
+	var returns *GoogleApigeeEnvironmentProperties
+	_jsii_.Get(
+		j,
+		"propertiesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleApigeeEnvironment) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -545,7 +569,7 @@ func (j *jsiiProxy_GoogleApigeeEnvironment) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_apigee_environment google_apigee_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_apigee_environment google_apigee_environment} Resource.
 func NewGoogleApigeeEnvironment(scope constructs.Construct, id *string, config *GoogleApigeeEnvironmentConfig) GoogleApigeeEnvironment {
 	_init_.Initialize()
 
@@ -563,7 +587,7 @@ func NewGoogleApigeeEnvironment(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_apigee_environment google_apigee_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_apigee_environment google_apigee_environment} Resource.
 func NewGoogleApigeeEnvironment_Override(g GoogleApigeeEnvironment, scope constructs.Construct, id *string, config *GoogleApigeeEnvironmentConfig) {
 	_init_.Initialize()
 
@@ -1105,6 +1129,17 @@ func (g *jsiiProxy_GoogleApigeeEnvironment) PutNodeConfig(value *GoogleApigeeEnv
 	)
 }
 
+func (g *jsiiProxy_GoogleApigeeEnvironment) PutProperties(value *GoogleApigeeEnvironmentProperties) {
+	if err := g.validatePutPropertiesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putProperties",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleApigeeEnvironment) PutTimeouts(value *GoogleApigeeEnvironmentTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1176,6 +1211,14 @@ func (g *jsiiProxy_GoogleApigeeEnvironment) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleApigeeEnvironment) ResetProperties() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetProperties",
 		nil, // no parameters
 	)
 }

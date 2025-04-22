@@ -27,13 +27,19 @@ type CloudRunV2JobTemplateTemplateVolumesOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EmptyDir() CloudRunV2JobTemplateTemplateVolumesEmptyDirOutputReference
+	EmptyDirInput() *CloudRunV2JobTemplateTemplateVolumesEmptyDir
 	// Experimental.
 	Fqn() *string
+	Gcs() CloudRunV2JobTemplateTemplateVolumesGcsOutputReference
+	GcsInput() *CloudRunV2JobTemplateTemplateVolumesGcs
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	Nfs() CloudRunV2JobTemplateTemplateVolumesNfsOutputReference
+	NfsInput() *CloudRunV2JobTemplateTemplateVolumesNfs
 	Secret() CloudRunV2JobTemplateTemplateVolumesSecretOutputReference
 	SecretInput() *CloudRunV2JobTemplateTemplateVolumesSecret
 	// Experimental.
@@ -69,8 +75,14 @@ type CloudRunV2JobTemplateTemplateVolumesOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCloudSqlInstance(value *CloudRunV2JobTemplateTemplateVolumesCloudSqlInstance)
+	PutEmptyDir(value *CloudRunV2JobTemplateTemplateVolumesEmptyDir)
+	PutGcs(value *CloudRunV2JobTemplateTemplateVolumesGcs)
+	PutNfs(value *CloudRunV2JobTemplateTemplateVolumesNfs)
 	PutSecret(value *CloudRunV2JobTemplateTemplateVolumesSecret)
 	ResetCloudSqlInstance()
+	ResetEmptyDir()
+	ResetGcs()
+	ResetNfs()
 	ResetSecret()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -137,11 +149,51 @@ func (j *jsiiProxy_CloudRunV2JobTemplateTemplateVolumesOutputReference) Creation
 	return returns
 }
 
+func (j *jsiiProxy_CloudRunV2JobTemplateTemplateVolumesOutputReference) EmptyDir() CloudRunV2JobTemplateTemplateVolumesEmptyDirOutputReference {
+	var returns CloudRunV2JobTemplateTemplateVolumesEmptyDirOutputReference
+	_jsii_.Get(
+		j,
+		"emptyDir",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2JobTemplateTemplateVolumesOutputReference) EmptyDirInput() *CloudRunV2JobTemplateTemplateVolumesEmptyDir {
+	var returns *CloudRunV2JobTemplateTemplateVolumesEmptyDir
+	_jsii_.Get(
+		j,
+		"emptyDirInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudRunV2JobTemplateTemplateVolumesOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2JobTemplateTemplateVolumesOutputReference) Gcs() CloudRunV2JobTemplateTemplateVolumesGcsOutputReference {
+	var returns CloudRunV2JobTemplateTemplateVolumesGcsOutputReference
+	_jsii_.Get(
+		j,
+		"gcs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2JobTemplateTemplateVolumesOutputReference) GcsInput() *CloudRunV2JobTemplateTemplateVolumesGcs {
+	var returns *CloudRunV2JobTemplateTemplateVolumesGcs
+	_jsii_.Get(
+		j,
+		"gcsInput",
 		&returns,
 	)
 	return returns
@@ -172,6 +224,26 @@ func (j *jsiiProxy_CloudRunV2JobTemplateTemplateVolumesOutputReference) NameInpu
 	_jsii_.Get(
 		j,
 		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2JobTemplateTemplateVolumesOutputReference) Nfs() CloudRunV2JobTemplateTemplateVolumesNfsOutputReference {
+	var returns CloudRunV2JobTemplateTemplateVolumesNfsOutputReference
+	_jsii_.Get(
+		j,
+		"nfs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2JobTemplateTemplateVolumesOutputReference) NfsInput() *CloudRunV2JobTemplateTemplateVolumesNfs {
+	var returns *CloudRunV2JobTemplateTemplateVolumesNfs
+	_jsii_.Get(
+		j,
+		"nfsInput",
 		&returns,
 	)
 	return returns
@@ -508,6 +580,39 @@ func (c *jsiiProxy_CloudRunV2JobTemplateTemplateVolumesOutputReference) PutCloud
 	)
 }
 
+func (c *jsiiProxy_CloudRunV2JobTemplateTemplateVolumesOutputReference) PutEmptyDir(value *CloudRunV2JobTemplateTemplateVolumesEmptyDir) {
+	if err := c.validatePutEmptyDirParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putEmptyDir",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CloudRunV2JobTemplateTemplateVolumesOutputReference) PutGcs(value *CloudRunV2JobTemplateTemplateVolumesGcs) {
+	if err := c.validatePutGcsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putGcs",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CloudRunV2JobTemplateTemplateVolumesOutputReference) PutNfs(value *CloudRunV2JobTemplateTemplateVolumesNfs) {
+	if err := c.validatePutNfsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putNfs",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CloudRunV2JobTemplateTemplateVolumesOutputReference) PutSecret(value *CloudRunV2JobTemplateTemplateVolumesSecret) {
 	if err := c.validatePutSecretParameters(value); err != nil {
 		panic(err)
@@ -523,6 +628,30 @@ func (c *jsiiProxy_CloudRunV2JobTemplateTemplateVolumesOutputReference) ResetClo
 	_jsii_.InvokeVoid(
 		c,
 		"resetCloudSqlInstance",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudRunV2JobTemplateTemplateVolumesOutputReference) ResetEmptyDir() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEmptyDir",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudRunV2JobTemplateTemplateVolumesOutputReference) ResetGcs() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetGcs",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudRunV2JobTemplateTemplateVolumesOutputReference) ResetNfs() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetNfs",
 		nil, // no parameters
 	)
 }

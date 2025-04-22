@@ -92,6 +92,10 @@ func (g *jsiiProxy_GoogleComputeResourcePolicy) validatePutTimeoutsParameters(va
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeResourcePolicy) validatePutWorkloadPolicyParameters(value *GoogleComputeResourcePolicyWorkloadPolicy) error {
+	return nil
+}
+
 func validateGoogleComputeResourcePolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

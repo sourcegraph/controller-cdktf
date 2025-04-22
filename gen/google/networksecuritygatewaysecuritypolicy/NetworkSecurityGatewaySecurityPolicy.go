@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/networksecuritygatewaysecuritypolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/network_security_gateway_security_policy google_network_security_gateway_security_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/network_security_gateway_security_policy google_network_security_gateway_security_policy}.
 type NetworkSecurityGatewaySecurityPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -77,6 +77,9 @@ type NetworkSecurityGatewaySecurityPolicy interface {
 	TerraformResourceType() *string
 	Timeouts() NetworkSecurityGatewaySecurityPolicyTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	TlsInspectionPolicy() *string
+	SetTlsInspectionPolicy(val *string)
+	TlsInspectionPolicyInput() *string
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
@@ -130,6 +133,7 @@ type NetworkSecurityGatewaySecurityPolicy interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
+	ResetTlsInspectionPolicy()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -448,6 +452,26 @@ func (j *jsiiProxy_NetworkSecurityGatewaySecurityPolicy) TimeoutsInput() interfa
 	return returns
 }
 
+func (j *jsiiProxy_NetworkSecurityGatewaySecurityPolicy) TlsInspectionPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tlsInspectionPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkSecurityGatewaySecurityPolicy) TlsInspectionPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tlsInspectionPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NetworkSecurityGatewaySecurityPolicy) UpdateTime() *string {
 	var returns *string
 	_jsii_.Get(
@@ -459,7 +483,7 @@ func (j *jsiiProxy_NetworkSecurityGatewaySecurityPolicy) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/network_security_gateway_security_policy google_network_security_gateway_security_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/network_security_gateway_security_policy google_network_security_gateway_security_policy} Resource.
 func NewNetworkSecurityGatewaySecurityPolicy(scope constructs.Construct, id *string, config *NetworkSecurityGatewaySecurityPolicyConfig) NetworkSecurityGatewaySecurityPolicy {
 	_init_.Initialize()
 
@@ -477,7 +501,7 @@ func NewNetworkSecurityGatewaySecurityPolicy(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/network_security_gateway_security_policy google_network_security_gateway_security_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/network_security_gateway_security_policy google_network_security_gateway_security_policy} Resource.
 func NewNetworkSecurityGatewaySecurityPolicy_Override(n NetworkSecurityGatewaySecurityPolicy, scope constructs.Construct, id *string, config *NetworkSecurityGatewaySecurityPolicyConfig) {
 	_init_.Initialize()
 
@@ -607,6 +631,17 @@ func (j *jsiiProxy_NetworkSecurityGatewaySecurityPolicy)SetProvisioners(val *[]i
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkSecurityGatewaySecurityPolicy)SetTlsInspectionPolicy(val *string) {
+	if err := j.validateSetTlsInspectionPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tlsInspectionPolicy",
 		val,
 	)
 }
@@ -1019,6 +1054,14 @@ func (n *jsiiProxy_NetworkSecurityGatewaySecurityPolicy) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkSecurityGatewaySecurityPolicy) ResetTlsInspectionPolicy() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetTlsInspectionPolicy",
 		nil, // no parameters
 	)
 }

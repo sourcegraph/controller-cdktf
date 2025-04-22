@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecontainerawsnodepool/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_container_aws_node_pool google_container_aws_node_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_container_aws_node_pool google_container_aws_node_pool}.
 type GoogleContainerAwsNodePool interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -52,6 +52,8 @@ type GoogleContainerAwsNodePool interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	KubeletConfig() GoogleContainerAwsNodePoolKubeletConfigOutputReference
+	KubeletConfigInput() *GoogleContainerAwsNodePoolKubeletConfig
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -146,12 +148,14 @@ type GoogleContainerAwsNodePool interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAutoscaling(value *GoogleContainerAwsNodePoolAutoscaling)
 	PutConfig(value *GoogleContainerAwsNodePoolConfigA)
+	PutKubeletConfig(value *GoogleContainerAwsNodePoolKubeletConfig)
 	PutManagement(value *GoogleContainerAwsNodePoolManagement)
 	PutMaxPodsConstraint(value *GoogleContainerAwsNodePoolMaxPodsConstraint)
 	PutTimeouts(value *GoogleContainerAwsNodePoolTimeouts)
 	PutUpdateSettings(value *GoogleContainerAwsNodePoolUpdateSettings)
 	ResetAnnotations()
 	ResetId()
+	ResetKubeletConfig()
 	ResetManagement()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -382,6 +386,26 @@ func (j *jsiiProxy_GoogleContainerAwsNodePool) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerAwsNodePool) KubeletConfig() GoogleContainerAwsNodePoolKubeletConfigOutputReference {
+	var returns GoogleContainerAwsNodePoolKubeletConfigOutputReference
+	_jsii_.Get(
+		j,
+		"kubeletConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerAwsNodePool) KubeletConfigInput() *GoogleContainerAwsNodePoolKubeletConfig {
+	var returns *GoogleContainerAwsNodePoolKubeletConfig
+	_jsii_.Get(
+		j,
+		"kubeletConfigInput",
 		&returns,
 	)
 	return returns
@@ -688,7 +712,7 @@ func (j *jsiiProxy_GoogleContainerAwsNodePool) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_container_aws_node_pool google_container_aws_node_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_container_aws_node_pool google_container_aws_node_pool} Resource.
 func NewGoogleContainerAwsNodePool(scope constructs.Construct, id *string, config *GoogleContainerAwsNodePoolConfig) GoogleContainerAwsNodePool {
 	_init_.Initialize()
 
@@ -706,7 +730,7 @@ func NewGoogleContainerAwsNodePool(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_container_aws_node_pool google_container_aws_node_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_container_aws_node_pool google_container_aws_node_pool} Resource.
 func NewGoogleContainerAwsNodePool_Override(g GoogleContainerAwsNodePool, scope constructs.Construct, id *string, config *GoogleContainerAwsNodePoolConfig) {
 	_init_.Initialize()
 
@@ -1248,6 +1272,17 @@ func (g *jsiiProxy_GoogleContainerAwsNodePool) PutConfig(value *GoogleContainerA
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerAwsNodePool) PutKubeletConfig(value *GoogleContainerAwsNodePoolKubeletConfig) {
+	if err := g.validatePutKubeletConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putKubeletConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerAwsNodePool) PutManagement(value *GoogleContainerAwsNodePoolManagement) {
 	if err := g.validatePutManagementParameters(value); err != nil {
 		panic(err)
@@ -1304,6 +1339,14 @@ func (g *jsiiProxy_GoogleContainerAwsNodePool) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerAwsNodePool) ResetKubeletConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetKubeletConfig",
 		nil, // no parameters
 	)
 }

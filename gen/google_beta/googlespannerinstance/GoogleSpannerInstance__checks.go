@@ -364,7 +364,23 @@ func (j *jsiiProxy_GoogleSpannerInstance) validateSetCountParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_GoogleSpannerInstance) validateSetDefaultBackupScheduleTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSpannerInstance) validateSetDisplayNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleSpannerInstance) validateSetEditionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

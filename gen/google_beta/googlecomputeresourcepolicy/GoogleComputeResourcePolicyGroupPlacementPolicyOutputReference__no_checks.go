@@ -64,6 +64,10 @@ func (j *jsiiProxy_GoogleComputeResourcePolicyGroupPlacementPolicyOutputReferenc
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference) validateSetGpuTopologyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference) validateSetInternalValueParameters(val *GoogleComputeResourcePolicyGroupPlacementPolicy) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (j *jsiiProxy_GoogleComputeResourcePolicyGroupPlacementPolicyOutputReferenc
 }
 
 func (j *jsiiProxy_GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference) validateSetTpuTopologyParameters(val *string) error {
 	return nil
 }
 

@@ -211,14 +211,6 @@ func (j *jsiiProxy_GoogleContainerClusterMonitoringConfigAdvancedDatapathObserva
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference) validateSetRelayModeParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_GoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

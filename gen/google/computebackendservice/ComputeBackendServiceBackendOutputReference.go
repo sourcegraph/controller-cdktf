@@ -31,6 +31,8 @@ type ComputeBackendServiceBackendOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomMetrics() ComputeBackendServiceBackendCustomMetricsList
+	CustomMetricsInput() interface{}
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
@@ -94,8 +96,10 @@ type ComputeBackendServiceBackendOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutCustomMetrics(value interface{})
 	ResetBalancingMode()
 	ResetCapacityScaler()
+	ResetCustomMetrics()
 	ResetDescription()
 	ResetMaxConnections()
 	ResetMaxConnectionsPerEndpoint()
@@ -184,6 +188,26 @@ func (j *jsiiProxy_ComputeBackendServiceBackendOutputReference) CreationStack() 
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeBackendServiceBackendOutputReference) CustomMetrics() ComputeBackendServiceBackendCustomMetricsList {
+	var returns ComputeBackendServiceBackendCustomMetricsList
+	_jsii_.Get(
+		j,
+		"customMetrics",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeBackendServiceBackendOutputReference) CustomMetricsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"customMetricsInput",
 		&returns,
 	)
 	return returns
@@ -799,6 +823,17 @@ func (c *jsiiProxy_ComputeBackendServiceBackendOutputReference) InterpolationFor
 	return returns
 }
 
+func (c *jsiiProxy_ComputeBackendServiceBackendOutputReference) PutCustomMetrics(value interface{}) {
+	if err := c.validatePutCustomMetricsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putCustomMetrics",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeBackendServiceBackendOutputReference) ResetBalancingMode() {
 	_jsii_.InvokeVoid(
 		c,
@@ -811,6 +846,14 @@ func (c *jsiiProxy_ComputeBackendServiceBackendOutputReference) ResetCapacitySca
 	_jsii_.InvokeVoid(
 		c,
 		"resetCapacityScaler",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeBackendServiceBackendOutputReference) ResetCustomMetrics() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCustomMetrics",
 		nil, // no parameters
 	)
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlefirebaserulesruleset/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_firebaserules_ruleset google_firebaserules_ruleset}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_firebaserules_ruleset google_firebaserules_ruleset}.
 type GoogleFirebaserulesRuleset interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -411,7 +411,7 @@ func (j *jsiiProxy_GoogleFirebaserulesRuleset) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_firebaserules_ruleset google_firebaserules_ruleset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_firebaserules_ruleset google_firebaserules_ruleset} Resource.
 func NewGoogleFirebaserulesRuleset(scope constructs.Construct, id *string, config *GoogleFirebaserulesRulesetConfig) GoogleFirebaserulesRuleset {
 	_init_.Initialize()
 
@@ -429,7 +429,7 @@ func NewGoogleFirebaserulesRuleset(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_firebaserules_ruleset google_firebaserules_ruleset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_firebaserules_ruleset google_firebaserules_ruleset} Resource.
 func NewGoogleFirebaserulesRuleset_Override(g GoogleFirebaserulesRuleset, scope constructs.Construct, id *string, config *GoogleFirebaserulesRulesetConfig) {
 	_init_.Initialize()
 

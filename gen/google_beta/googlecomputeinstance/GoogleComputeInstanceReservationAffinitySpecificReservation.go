@@ -6,11 +6,11 @@ type GoogleComputeInstanceReservationAffinitySpecificReservation struct {
 	//
 	// To target a SPECIFIC_RESERVATION by name, specify compute.googleapis.com/reservation-name as the key and specify the name of your reservation as the only value.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_instance#key GoogleComputeInstance#key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_instance#key GoogleComputeInstance#key}
 	Key *string `field:"required" json:"key" yaml:"key"`
 	// Corresponds to the label values of a reservation resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_instance#values GoogleComputeInstance#values}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_instance#values GoogleComputeInstance#values}
 	Values *[]*string `field:"required" json:"values" yaml:"values"`
 }
 

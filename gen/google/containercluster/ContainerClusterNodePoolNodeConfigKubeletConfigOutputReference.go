@@ -10,6 +10,9 @@ import (
 
 type ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference interface {
 	cdktf.ComplexObject
+	AllowedUnsafeSysctls() *[]*string
+	SetAllowedUnsafeSysctls(val *[]*string)
+	AllowedUnsafeSysctlsInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -20,6 +23,12 @@ type ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ContainerLogMaxFiles() *float64
+	SetContainerLogMaxFiles(val *float64)
+	ContainerLogMaxFilesInput() *float64
+	ContainerLogMaxSize() *string
+	SetContainerLogMaxSize(val *string)
+	ContainerLogMaxSizeInput() *string
 	CpuCfsQuota() interface{}
 	SetCpuCfsQuota(val interface{})
 	CpuCfsQuotaInput() interface{}
@@ -36,6 +45,21 @@ type ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	ImageGcHighThresholdPercent() *float64
+	SetImageGcHighThresholdPercent(val *float64)
+	ImageGcHighThresholdPercentInput() *float64
+	ImageGcLowThresholdPercent() *float64
+	SetImageGcLowThresholdPercent(val *float64)
+	ImageGcLowThresholdPercentInput() *float64
+	ImageMaximumGcAge() *string
+	SetImageMaximumGcAge(val *string)
+	ImageMaximumGcAgeInput() *string
+	ImageMinimumGcAge() *string
+	SetImageMinimumGcAge(val *string)
+	ImageMinimumGcAgeInput() *string
+	InsecureKubeletReadonlyPortEnabled() *string
+	SetInsecureKubeletReadonlyPortEnabled(val *string)
+	InsecureKubeletReadonlyPortEnabledInput() *string
 	InternalValue() *ContainerClusterNodePoolNodeConfigKubeletConfig
 	SetInternalValue(val *ContainerClusterNodePoolNodeConfigKubeletConfig)
 	PodPidsLimit() *float64
@@ -73,8 +97,17 @@ type ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAllowedUnsafeSysctls()
+	ResetContainerLogMaxFiles()
+	ResetContainerLogMaxSize()
 	ResetCpuCfsQuota()
 	ResetCpuCfsQuotaPeriod()
+	ResetCpuManagerPolicy()
+	ResetImageGcHighThresholdPercent()
+	ResetImageGcLowThresholdPercent()
+	ResetImageMaximumGcAge()
+	ResetImageMinimumGcAge()
+	ResetInsecureKubeletReadonlyPortEnabled()
 	ResetPodPidsLimit()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -89,6 +122,26 @@ type ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference interface {
 // The jsii proxy struct for ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference
 type jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) AllowedUnsafeSysctls() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedUnsafeSysctls",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) AllowedUnsafeSysctlsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedUnsafeSysctlsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -106,6 +159,46 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReferenc
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) ContainerLogMaxFiles() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"containerLogMaxFiles",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) ContainerLogMaxFilesInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"containerLogMaxFilesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) ContainerLogMaxSize() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"containerLogMaxSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) ContainerLogMaxSizeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"containerLogMaxSizeInput",
 		&returns,
 	)
 	return returns
@@ -191,6 +284,106 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReferenc
 	return returns
 }
 
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) ImageGcHighThresholdPercent() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"imageGcHighThresholdPercent",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) ImageGcHighThresholdPercentInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"imageGcHighThresholdPercentInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) ImageGcLowThresholdPercent() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"imageGcLowThresholdPercent",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) ImageGcLowThresholdPercentInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"imageGcLowThresholdPercentInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) ImageMaximumGcAge() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"imageMaximumGcAge",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) ImageMaximumGcAgeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"imageMaximumGcAgeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) ImageMinimumGcAge() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"imageMinimumGcAge",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) ImageMinimumGcAgeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"imageMinimumGcAgeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) InsecureKubeletReadonlyPortEnabled() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"insecureKubeletReadonlyPortEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) InsecureKubeletReadonlyPortEnabledInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"insecureKubeletReadonlyPortEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) InternalValue() *ContainerClusterNodePoolNodeConfigKubeletConfig {
 	var returns *ContainerClusterNodePoolNodeConfigKubeletConfig
 	_jsii_.Get(
@@ -269,6 +462,17 @@ func NewContainerClusterNodePoolNodeConfigKubeletConfigOutputReference_Override(
 	)
 }
 
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference)SetAllowedUnsafeSysctls(val *[]*string) {
+	if err := j.validateSetAllowedUnsafeSysctlsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowedUnsafeSysctls",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -287,6 +491,28 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReferenc
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference)SetContainerLogMaxFiles(val *float64) {
+	if err := j.validateSetContainerLogMaxFilesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"containerLogMaxFiles",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference)SetContainerLogMaxSize(val *string) {
+	if err := j.validateSetContainerLogMaxSizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"containerLogMaxSize",
 		val,
 	)
 }
@@ -320,6 +546,61 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReferenc
 	_jsii_.Set(
 		j,
 		"cpuManagerPolicy",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference)SetImageGcHighThresholdPercent(val *float64) {
+	if err := j.validateSetImageGcHighThresholdPercentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"imageGcHighThresholdPercent",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference)SetImageGcLowThresholdPercent(val *float64) {
+	if err := j.validateSetImageGcLowThresholdPercentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"imageGcLowThresholdPercent",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference)SetImageMaximumGcAge(val *string) {
+	if err := j.validateSetImageMaximumGcAgeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"imageMaximumGcAge",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference)SetImageMinimumGcAge(val *string) {
+	if err := j.validateSetImageMinimumGcAgeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"imageMinimumGcAge",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference)SetInsecureKubeletReadonlyPortEnabled(val *string) {
+	if err := j.validateSetInsecureKubeletReadonlyPortEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"insecureKubeletReadonlyPortEnabled",
 		val,
 	)
 }
@@ -554,6 +835,30 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReferenc
 	return returns
 }
 
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) ResetAllowedUnsafeSysctls() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAllowedUnsafeSysctls",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) ResetContainerLogMaxFiles() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetContainerLogMaxFiles",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) ResetContainerLogMaxSize() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetContainerLogMaxSize",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) ResetCpuCfsQuota() {
 	_jsii_.InvokeVoid(
 		c,
@@ -566,6 +871,54 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReferenc
 	_jsii_.InvokeVoid(
 		c,
 		"resetCpuCfsQuotaPeriod",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) ResetCpuManagerPolicy() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCpuManagerPolicy",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) ResetImageGcHighThresholdPercent() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetImageGcHighThresholdPercent",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) ResetImageGcLowThresholdPercent() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetImageGcLowThresholdPercent",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) ResetImageMaximumGcAge() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetImageMaximumGcAge",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) ResetImageMinimumGcAge() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetImageMinimumGcAge",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) ResetInsecureKubeletReadonlyPortEnabled() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetInsecureKubeletReadonlyPortEnabled",
 		nil, // no parameters
 	)
 }

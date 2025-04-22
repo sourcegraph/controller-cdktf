@@ -31,7 +31,6 @@ type DataGoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConf
 	Fqn() *string
 	InternalValue() *DataGoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfig
 	SetInternalValue(val *DataGoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfig)
-	RelayMode() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -144,16 +143,6 @@ func (j *jsiiProxy_DataGoogleContainerClusterMonitoringConfigAdvancedDatapathObs
 	_jsii_.Get(
 		j,
 		"internalValue",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataGoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference) RelayMode() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"relayMode",
 		&returns,
 	)
 	return returns

@@ -1,0 +1,6 @@
+package datagooglealloydbcluster
+
+
+type DataGoogleAlloydbClusterAutomatedBackupPolicyQuantityBasedRetention struct {
+}
+

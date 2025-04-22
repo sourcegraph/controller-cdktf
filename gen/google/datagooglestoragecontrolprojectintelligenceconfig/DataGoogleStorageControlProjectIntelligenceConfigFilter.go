@@ -1,0 +1,6 @@
+package datagooglestoragecontrolprojectintelligenceconfig
+
+
+type DataGoogleStorageControlProjectIntelligenceConfigFilter struct {
+}
+

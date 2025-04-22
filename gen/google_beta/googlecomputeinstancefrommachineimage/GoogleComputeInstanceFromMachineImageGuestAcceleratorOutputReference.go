@@ -67,8 +67,6 @@ type GoogleComputeInstanceFromMachineImageGuestAcceleratorOutputReference interf
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetCount()
-	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -483,22 +481,6 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImageGuestAcceleratorOutputRe
 	)
 
 	return returns
-}
-
-func (g *jsiiProxy_GoogleComputeInstanceFromMachineImageGuestAcceleratorOutputReference) ResetCount() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetCount",
-		nil, // no parameters
-	)
-}
-
-func (g *jsiiProxy_GoogleComputeInstanceFromMachineImageGuestAcceleratorOutputReference) ResetType() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetType",
-		nil, // no parameters
-	)
 }
 
 func (g *jsiiProxy_GoogleComputeInstanceFromMachineImageGuestAcceleratorOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

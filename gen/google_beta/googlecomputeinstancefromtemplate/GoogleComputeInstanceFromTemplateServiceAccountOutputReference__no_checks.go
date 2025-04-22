@@ -60,7 +60,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateServiceAccountOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromTemplateServiceAccountOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateServiceAccountOutputReference) validateSetInternalValueParameters(val *GoogleComputeInstanceFromTemplateServiceAccount) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateServiceAccountOutputReferenc
 	return nil
 }
 
-func validateNewGoogleComputeInstanceFromTemplateServiceAccountOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleComputeInstanceFromTemplateServiceAccountOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

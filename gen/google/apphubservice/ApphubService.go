@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/apphubservice/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/apphub_service google_apphub_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/apphub_service google_apphub_service}.
 type ApphubService interface {
 	cdktf.TerraformResource
 	ApplicationId() *string
@@ -596,7 +596,7 @@ func (j *jsiiProxy_ApphubService) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/apphub_service google_apphub_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/apphub_service google_apphub_service} Resource.
 func NewApphubService(scope constructs.Construct, id *string, config *ApphubServiceConfig) ApphubService {
 	_init_.Initialize()
 
@@ -614,7 +614,7 @@ func NewApphubService(scope constructs.Construct, id *string, config *ApphubServ
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/apphub_service google_apphub_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/apphub_service google_apphub_service} Resource.
 func NewApphubService_Override(a ApphubService, scope constructs.Construct, id *string, config *ApphubServiceConfig) {
 	_init_.Initialize()
 

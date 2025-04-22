@@ -68,6 +68,14 @@ func (j *jsiiProxy_GoogleComputeImageImageEncryptionKeyOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeImageImageEncryptionKeyOutputReference) validateSetRawKeyParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeImageImageEncryptionKeyOutputReference) validateSetRsaEncryptedKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeImageImageEncryptionKeyOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

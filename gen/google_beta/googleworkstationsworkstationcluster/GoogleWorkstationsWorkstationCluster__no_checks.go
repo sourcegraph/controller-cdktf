@@ -148,6 +148,10 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationCluster) validateSetSubnetworkPa
 	return nil
 }
 
+func (j *jsiiProxy_GoogleWorkstationsWorkstationCluster) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleWorkstationsWorkstationCluster) validateSetWorkstationClusterIdParameters(val *string) error {
 	return nil
 }

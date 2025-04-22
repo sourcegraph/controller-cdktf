@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/spannerinstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/spanner_instance google_spanner_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/spanner_instance google_spanner_instance}.
 type SpannerInstance interface {
 	cdktf.TerraformResource
 	AutoscalingConfig() SpannerInstanceAutoscalingConfigOutputReference
@@ -29,6 +29,9 @@ type SpannerInstance interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DefaultBackupScheduleType() *string
+	SetDefaultBackupScheduleType(val *string)
+	DefaultBackupScheduleTypeInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -36,6 +39,9 @@ type SpannerInstance interface {
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
+	Edition() *string
+	SetEdition(val *string)
+	EditionInput() *string
 	EffectiveLabels() cdktf.StringMap
 	ForceDestroy() interface{}
 	SetForceDestroy(val interface{})
@@ -138,6 +144,8 @@ type SpannerInstance interface {
 	PutAutoscalingConfig(value *SpannerInstanceAutoscalingConfig)
 	PutTimeouts(value *SpannerInstanceTimeouts)
 	ResetAutoscalingConfig()
+	ResetDefaultBackupScheduleType()
+	ResetEdition()
 	ResetForceDestroy()
 	ResetId()
 	ResetLabels()
@@ -247,6 +255,26 @@ func (j *jsiiProxy_SpannerInstance) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SpannerInstance) DefaultBackupScheduleType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultBackupScheduleType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpannerInstance) DefaultBackupScheduleTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultBackupScheduleTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SpannerInstance) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -272,6 +300,26 @@ func (j *jsiiProxy_SpannerInstance) DisplayNameInput() *string {
 	_jsii_.Get(
 		j,
 		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpannerInstance) Edition() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"edition",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpannerInstance) EditionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"editionInput",
 		&returns,
 	)
 	return returns
@@ -578,7 +626,7 @@ func (j *jsiiProxy_SpannerInstance) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/spanner_instance google_spanner_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/spanner_instance google_spanner_instance} Resource.
 func NewSpannerInstance(scope constructs.Construct, id *string, config *SpannerInstanceConfig) SpannerInstance {
 	_init_.Initialize()
 
@@ -596,7 +644,7 @@ func NewSpannerInstance(scope constructs.Construct, id *string, config *SpannerI
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/spanner_instance google_spanner_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/spanner_instance google_spanner_instance} Resource.
 func NewSpannerInstance_Override(s SpannerInstance, scope constructs.Construct, id *string, config *SpannerInstanceConfig) {
 	_init_.Initialize()
 
@@ -640,6 +688,17 @@ func (j *jsiiProxy_SpannerInstance)SetCount(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_SpannerInstance)SetDefaultBackupScheduleType(val *string) {
+	if err := j.validateSetDefaultBackupScheduleTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultBackupScheduleType",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SpannerInstance)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
@@ -655,6 +714,17 @@ func (j *jsiiProxy_SpannerInstance)SetDisplayName(val *string) {
 	_jsii_.Set(
 		j,
 		"displayName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SpannerInstance)SetEdition(val *string) {
+	if err := j.validateSetEditionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"edition",
 		val,
 	)
 }
@@ -1153,6 +1223,22 @@ func (s *jsiiProxy_SpannerInstance) ResetAutoscalingConfig() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetAutoscalingConfig",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SpannerInstance) ResetDefaultBackupScheduleType() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDefaultBackupScheduleType",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SpannerInstance) ResetEdition() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetEdition",
 		nil, // no parameters
 	)
 }

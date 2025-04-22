@@ -9,14 +9,12 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputemanagedsslcertificate/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_managed_ssl_certificate google_compute_managed_ssl_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_managed_ssl_certificate google_compute_managed_ssl_certificate}.
 type GoogleComputeManagedSslCertificate interface {
 	cdktf.TerraformResource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	CertificateId() *float64
-	SetCertificateId(val *float64)
-	CertificateIdInput() *float64
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -129,7 +127,6 @@ type GoogleComputeManagedSslCertificate interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutManaged(value *GoogleComputeManagedSslCertificateManaged)
 	PutTimeouts(value *GoogleComputeManagedSslCertificateTimeouts)
-	ResetCertificateId()
 	ResetDescription()
 	ResetId()
 	ResetManaged()
@@ -173,16 +170,6 @@ func (j *jsiiProxy_GoogleComputeManagedSslCertificate) CertificateId() *float64 
 	_jsii_.Get(
 		j,
 		"certificateId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_GoogleComputeManagedSslCertificate) CertificateIdInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"certificateIdInput",
 		&returns,
 	)
 	return returns
@@ -519,7 +506,7 @@ func (j *jsiiProxy_GoogleComputeManagedSslCertificate) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_managed_ssl_certificate google_compute_managed_ssl_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_managed_ssl_certificate google_compute_managed_ssl_certificate} Resource.
 func NewGoogleComputeManagedSslCertificate(scope constructs.Construct, id *string, config *GoogleComputeManagedSslCertificateConfig) GoogleComputeManagedSslCertificate {
 	_init_.Initialize()
 
@@ -537,7 +524,7 @@ func NewGoogleComputeManagedSslCertificate(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_managed_ssl_certificate google_compute_managed_ssl_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_managed_ssl_certificate google_compute_managed_ssl_certificate} Resource.
 func NewGoogleComputeManagedSslCertificate_Override(g GoogleComputeManagedSslCertificate, scope constructs.Construct, id *string, config *GoogleComputeManagedSslCertificateConfig) {
 	_init_.Initialize()
 
@@ -545,17 +532,6 @@ func NewGoogleComputeManagedSslCertificate_Override(g GoogleComputeManagedSslCer
 		"@cdktf/provider-google-beta.googleComputeManagedSslCertificate.GoogleComputeManagedSslCertificate",
 		[]interface{}{scope, id, config},
 		g,
-	)
-}
-
-func (j *jsiiProxy_GoogleComputeManagedSslCertificate)SetCertificateId(val *float64) {
-	if err := j.validateSetCertificateIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"certificateId",
-		val,
 	)
 }
 
@@ -1054,14 +1030,6 @@ func (g *jsiiProxy_GoogleComputeManagedSslCertificate) PutTimeouts(value *Google
 		g,
 		"putTimeouts",
 		[]interface{}{value},
-	)
-}
-
-func (g *jsiiProxy_GoogleComputeManagedSslCertificate) ResetCertificateId() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetCertificateId",
-		nil, // no parameters
 	)
 }
 

@@ -10,6 +10,8 @@ import (
 
 type GoogleVmwareenginePrivateCloudManagementClusterOutputReference interface {
 	cdktf.ComplexObject
+	AutoscalingSettings() GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsOutputReference
+	AutoscalingSettingsInput() *GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettings
 	ClusterId() *string
 	SetClusterId(val *string)
 	ClusterIdInput() *string
@@ -68,8 +70,10 @@ type GoogleVmwareenginePrivateCloudManagementClusterOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAutoscalingSettings(value *GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettings)
 	PutNodeTypeConfigs(value interface{})
 	PutStretchedClusterConfig(value *GoogleVmwareenginePrivateCloudManagementClusterStretchedClusterConfig)
+	ResetAutoscalingSettings()
 	ResetNodeTypeConfigs()
 	ResetStretchedClusterConfig()
 	// Produce the Token's value at resolution time.
@@ -85,6 +89,26 @@ type GoogleVmwareenginePrivateCloudManagementClusterOutputReference interface {
 // The jsii proxy struct for GoogleVmwareenginePrivateCloudManagementClusterOutputReference
 type jsiiProxy_GoogleVmwareenginePrivateCloudManagementClusterOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GoogleVmwareenginePrivateCloudManagementClusterOutputReference) AutoscalingSettings() GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsOutputReference {
+	var returns GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"autoscalingSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleVmwareenginePrivateCloudManagementClusterOutputReference) AutoscalingSettingsInput() *GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettings {
+	var returns *GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettings
+	_jsii_.Get(
+		j,
+		"autoscalingSettingsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleVmwareenginePrivateCloudManagementClusterOutputReference) ClusterId() *string {
@@ -497,6 +521,17 @@ func (g *jsiiProxy_GoogleVmwareenginePrivateCloudManagementClusterOutputReferenc
 	return returns
 }
 
+func (g *jsiiProxy_GoogleVmwareenginePrivateCloudManagementClusterOutputReference) PutAutoscalingSettings(value *GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettings) {
+	if err := g.validatePutAutoscalingSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAutoscalingSettings",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleVmwareenginePrivateCloudManagementClusterOutputReference) PutNodeTypeConfigs(value interface{}) {
 	if err := g.validatePutNodeTypeConfigsParameters(value); err != nil {
 		panic(err)
@@ -516,6 +551,14 @@ func (g *jsiiProxy_GoogleVmwareenginePrivateCloudManagementClusterOutputReferenc
 		g,
 		"putStretchedClusterConfig",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleVmwareenginePrivateCloudManagementClusterOutputReference) ResetAutoscalingSettings() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAutoscalingSettings",
+		nil, // no parameters
 	)
 }
 

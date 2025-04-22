@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/vmwareengineprivatecloud/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/vmwareengine_private_cloud google_vmwareengine_private_cloud}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/vmwareengine_private_cloud google_vmwareengine_private_cloud}.
 type VmwareenginePrivateCloud interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -24,6 +24,9 @@ type VmwareenginePrivateCloud interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DeletionDelayHours() *float64
+	SetDeletionDelayHours(val *float64)
+	DeletionDelayHoursInput() *float64
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -73,6 +76,9 @@ type VmwareenginePrivateCloud interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	SendDeletionDelayHoursIfZero() interface{}
+	SetSendDeletionDelayHoursIfZero(val interface{})
+	SendDeletionDelayHoursIfZeroInput() interface{}
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -133,12 +139,14 @@ type VmwareenginePrivateCloud interface {
 	PutManagementCluster(value *VmwareenginePrivateCloudManagementCluster)
 	PutNetworkConfig(value *VmwareenginePrivateCloudNetworkConfig)
 	PutTimeouts(value *VmwareenginePrivateCloudTimeouts)
+	ResetDeletionDelayHours()
 	ResetDescription()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetSendDeletionDelayHoursIfZero()
 	ResetTimeouts()
 	ResetType()
 	SynthesizeAttributes() *map[string]interface{}
@@ -194,6 +202,26 @@ func (j *jsiiProxy_VmwareenginePrivateCloud) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VmwareenginePrivateCloud) DeletionDelayHours() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"deletionDelayHours",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VmwareenginePrivateCloud) DeletionDelayHoursInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"deletionDelayHoursInput",
 		&returns,
 	)
 	return returns
@@ -449,6 +477,26 @@ func (j *jsiiProxy_VmwareenginePrivateCloud) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_VmwareenginePrivateCloud) SendDeletionDelayHoursIfZero() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sendDeletionDelayHoursIfZero",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VmwareenginePrivateCloud) SendDeletionDelayHoursIfZeroInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sendDeletionDelayHoursIfZeroInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VmwareenginePrivateCloud) State() *string {
 	var returns *string
 	_jsii_.Get(
@@ -550,7 +598,7 @@ func (j *jsiiProxy_VmwareenginePrivateCloud) Vcenter() VmwareenginePrivateCloudV
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/vmwareengine_private_cloud google_vmwareengine_private_cloud} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/vmwareengine_private_cloud google_vmwareengine_private_cloud} Resource.
 func NewVmwareenginePrivateCloud(scope constructs.Construct, id *string, config *VmwareenginePrivateCloudConfig) VmwareenginePrivateCloud {
 	_init_.Initialize()
 
@@ -568,7 +616,7 @@ func NewVmwareenginePrivateCloud(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/vmwareengine_private_cloud google_vmwareengine_private_cloud} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/vmwareengine_private_cloud google_vmwareengine_private_cloud} Resource.
 func NewVmwareenginePrivateCloud_Override(v VmwareenginePrivateCloud, scope constructs.Construct, id *string, config *VmwareenginePrivateCloudConfig) {
 	_init_.Initialize()
 
@@ -597,6 +645,17 @@ func (j *jsiiProxy_VmwareenginePrivateCloud)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VmwareenginePrivateCloud)SetDeletionDelayHours(val *float64) {
+	if err := j.validateSetDeletionDelayHoursParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deletionDelayHours",
 		val,
 	)
 }
@@ -698,6 +757,17 @@ func (j *jsiiProxy_VmwareenginePrivateCloud)SetProvisioners(val *[]interface{}) 
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VmwareenginePrivateCloud)SetSendDeletionDelayHoursIfZero(val interface{}) {
+	if err := j.validateSetSendDeletionDelayHoursIfZeroParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sendDeletionDelayHoursIfZero",
 		val,
 	)
 }
@@ -1099,6 +1169,14 @@ func (v *jsiiProxy_VmwareenginePrivateCloud) PutTimeouts(value *VmwareenginePriv
 	)
 }
 
+func (v *jsiiProxy_VmwareenginePrivateCloud) ResetDeletionDelayHours() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetDeletionDelayHours",
+		nil, // no parameters
+	)
+}
+
 func (v *jsiiProxy_VmwareenginePrivateCloud) ResetDescription() {
 	_jsii_.InvokeVoid(
 		v,
@@ -1127,6 +1205,14 @@ func (v *jsiiProxy_VmwareenginePrivateCloud) ResetProject() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VmwareenginePrivateCloud) ResetSendDeletionDelayHoursIfZero() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetSendDeletionDelayHoursIfZero",
 		nil, // no parameters
 	)
 }

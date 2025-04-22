@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleComputeHaVpnGatewayTimeoutsOutputReference) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeHaVpnGatewayTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
+	return nil
+}
+
 func validateNewGoogleComputeHaVpnGatewayTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

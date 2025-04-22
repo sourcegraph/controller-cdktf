@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlesecuresourcemanagerrepositoryiampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_secure_source_manager_repository_iam_policy google_secure_source_manager_repository_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_secure_source_manager_repository_iam_policy google_secure_source_manager_repository_iam_policy}.
 type GoogleSecureSourceManagerRepositoryIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -412,7 +412,7 @@ func (j *jsiiProxy_GoogleSecureSourceManagerRepositoryIamPolicy) TerraformResour
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_secure_source_manager_repository_iam_policy google_secure_source_manager_repository_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_secure_source_manager_repository_iam_policy google_secure_source_manager_repository_iam_policy} Resource.
 func NewGoogleSecureSourceManagerRepositoryIamPolicy(scope constructs.Construct, id *string, config *GoogleSecureSourceManagerRepositoryIamPolicyConfig) GoogleSecureSourceManagerRepositoryIamPolicy {
 	_init_.Initialize()
 
@@ -430,7 +430,7 @@ func NewGoogleSecureSourceManagerRepositoryIamPolicy(scope constructs.Construct,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_secure_source_manager_repository_iam_policy google_secure_source_manager_repository_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_secure_source_manager_repository_iam_policy google_secure_source_manager_repository_iam_policy} Resource.
 func NewGoogleSecureSourceManagerRepositoryIamPolicy_Override(g GoogleSecureSourceManagerRepositoryIamPolicy, scope constructs.Construct, id *string, config *GoogleSecureSourceManagerRepositoryIamPolicyConfig) {
 	_init_.Initialize()
 

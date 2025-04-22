@@ -35,7 +35,8 @@ type DataGoogleSqlDatabaseInstancesInstancesSettingsIpConfigurationOutputReferen
 	Ipv4Enabled() cdktf.IResolvable
 	PrivateNetwork() *string
 	PscConfig() DataGoogleSqlDatabaseInstancesInstancesSettingsIpConfigurationPscConfigList
-	RequireSsl() cdktf.IResolvable
+	ServerCaMode() *string
+	ServerCaPool() *string
 	SslMode() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -194,11 +195,21 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsIpConfiguratio
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsIpConfigurationOutputReference) RequireSsl() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsIpConfigurationOutputReference) ServerCaMode() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"requireSsl",
+		"serverCaMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsIpConfigurationOutputReference) ServerCaPool() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serverCaPool",
 		&returns,
 	)
 	return returns

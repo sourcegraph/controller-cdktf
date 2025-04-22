@@ -88,6 +88,10 @@ func (j *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigOutputReference) validateSetMaxMessagesParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigOutputReference) validateSetServiceAccountEmailParameters(val *string) error {
 	return nil
 }

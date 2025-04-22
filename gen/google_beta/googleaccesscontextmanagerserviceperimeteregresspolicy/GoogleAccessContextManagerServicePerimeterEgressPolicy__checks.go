@@ -437,6 +437,14 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterEgressPolicy) valid
 	return nil
 }
 
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterEgressPolicy) validateSetTitleParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewGoogleAccessContextManagerServicePerimeterEgressPolicyParameters(scope constructs.Construct, id *string, config *GoogleAccessContextManagerServicePerimeterEgressPolicyConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

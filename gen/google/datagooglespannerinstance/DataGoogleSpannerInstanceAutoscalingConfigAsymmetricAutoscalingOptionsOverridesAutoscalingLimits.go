@@ -1,0 +1,6 @@
+package datagooglespannerinstance
+
+
+type DataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsOverridesAutoscalingLimits struct {
+}
+

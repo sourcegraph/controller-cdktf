@@ -9,9 +9,12 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputepublicdelegatedprefix/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_public_delegated_prefix google_compute_public_delegated_prefix}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_public_delegated_prefix google_compute_public_delegated_prefix}.
 type GoogleComputePublicDelegatedPrefix interface {
 	cdktf.TerraformResource
+	AllocatablePrefixLength() *float64
+	SetAllocatablePrefixLength(val *float64)
+	AllocatablePrefixLengthInput() *float64
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -52,6 +55,9 @@ type GoogleComputePublicDelegatedPrefix interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Mode() *string
+	SetMode(val *string)
+	ModeInput() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -129,9 +135,11 @@ type GoogleComputePublicDelegatedPrefix interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *GoogleComputePublicDelegatedPrefixTimeouts)
+	ResetAllocatablePrefixLength()
 	ResetDescription()
 	ResetId()
 	ResetIsLiveMigration()
+	ResetMode()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -153,6 +161,26 @@ type GoogleComputePublicDelegatedPrefix interface {
 // The jsii proxy struct for GoogleComputePublicDelegatedPrefix
 type jsiiProxy_GoogleComputePublicDelegatedPrefix struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GoogleComputePublicDelegatedPrefix) AllocatablePrefixLength() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"allocatablePrefixLength",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputePublicDelegatedPrefix) AllocatablePrefixLengthInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"allocatablePrefixLengthInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleComputePublicDelegatedPrefix) CdktfStack() cdktf.TerraformStack {
@@ -320,6 +348,26 @@ func (j *jsiiProxy_GoogleComputePublicDelegatedPrefix) Lifecycle() *cdktf.Terraf
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputePublicDelegatedPrefix) Mode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputePublicDelegatedPrefix) ModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modeInput",
 		&returns,
 	)
 	return returns
@@ -506,7 +554,7 @@ func (j *jsiiProxy_GoogleComputePublicDelegatedPrefix) TimeoutsInput() interface
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_public_delegated_prefix google_compute_public_delegated_prefix} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_public_delegated_prefix google_compute_public_delegated_prefix} Resource.
 func NewGoogleComputePublicDelegatedPrefix(scope constructs.Construct, id *string, config *GoogleComputePublicDelegatedPrefixConfig) GoogleComputePublicDelegatedPrefix {
 	_init_.Initialize()
 
@@ -524,7 +572,7 @@ func NewGoogleComputePublicDelegatedPrefix(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_public_delegated_prefix google_compute_public_delegated_prefix} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_public_delegated_prefix google_compute_public_delegated_prefix} Resource.
 func NewGoogleComputePublicDelegatedPrefix_Override(g GoogleComputePublicDelegatedPrefix, scope constructs.Construct, id *string, config *GoogleComputePublicDelegatedPrefixConfig) {
 	_init_.Initialize()
 
@@ -532,6 +580,17 @@ func NewGoogleComputePublicDelegatedPrefix_Override(g GoogleComputePublicDelegat
 		"@cdktf/provider-google-beta.googleComputePublicDelegatedPrefix.GoogleComputePublicDelegatedPrefix",
 		[]interface{}{scope, id, config},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputePublicDelegatedPrefix)SetAllocatablePrefixLength(val *float64) {
+	if err := j.validateSetAllocatablePrefixLengthParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allocatablePrefixLength",
+		val,
 	)
 }
 
@@ -624,6 +683,17 @@ func (j *jsiiProxy_GoogleComputePublicDelegatedPrefix)SetLifecycle(val *cdktf.Te
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputePublicDelegatedPrefix)SetMode(val *string) {
+	if err := j.validateSetModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"mode",
 		val,
 	)
 }
@@ -1055,6 +1125,14 @@ func (g *jsiiProxy_GoogleComputePublicDelegatedPrefix) PutTimeouts(value *Google
 	)
 }
 
+func (g *jsiiProxy_GoogleComputePublicDelegatedPrefix) ResetAllocatablePrefixLength() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAllocatablePrefixLength",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputePublicDelegatedPrefix) ResetDescription() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1075,6 +1153,14 @@ func (g *jsiiProxy_GoogleComputePublicDelegatedPrefix) ResetIsLiveMigration() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetIsLiveMigration",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputePublicDelegatedPrefix) ResetMode() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMode",
 		nil, // no parameters
 	)
 }

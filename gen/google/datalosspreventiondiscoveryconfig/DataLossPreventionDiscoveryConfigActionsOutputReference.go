@@ -33,6 +33,8 @@ type DataLossPreventionDiscoveryConfigActionsOutputReference interface {
 	SetInternalValue(val interface{})
 	PubSubNotification() DataLossPreventionDiscoveryConfigActionsPubSubNotificationOutputReference
 	PubSubNotificationInput() *DataLossPreventionDiscoveryConfigActionsPubSubNotification
+	TagResources() DataLossPreventionDiscoveryConfigActionsTagResourcesOutputReference
+	TagResourcesInput() *DataLossPreventionDiscoveryConfigActionsTagResources
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,8 +69,10 @@ type DataLossPreventionDiscoveryConfigActionsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutExportData(value *DataLossPreventionDiscoveryConfigActionsExportData)
 	PutPubSubNotification(value *DataLossPreventionDiscoveryConfigActionsPubSubNotification)
+	PutTagResources(value *DataLossPreventionDiscoveryConfigActionsTagResources)
 	ResetExportData()
 	ResetPubSubNotification()
+	ResetTagResources()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -169,6 +173,26 @@ func (j *jsiiProxy_DataLossPreventionDiscoveryConfigActionsOutputReference) PubS
 	_jsii_.Get(
 		j,
 		"pubSubNotificationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionDiscoveryConfigActionsOutputReference) TagResources() DataLossPreventionDiscoveryConfigActionsTagResourcesOutputReference {
+	var returns DataLossPreventionDiscoveryConfigActionsTagResourcesOutputReference
+	_jsii_.Get(
+		j,
+		"tagResources",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionDiscoveryConfigActionsOutputReference) TagResourcesInput() *DataLossPreventionDiscoveryConfigActionsTagResources {
+	var returns *DataLossPreventionDiscoveryConfigActionsTagResources
+	_jsii_.Get(
+		j,
+		"tagResourcesInput",
 		&returns,
 	)
 	return returns
@@ -485,6 +509,17 @@ func (d *jsiiProxy_DataLossPreventionDiscoveryConfigActionsOutputReference) PutP
 	)
 }
 
+func (d *jsiiProxy_DataLossPreventionDiscoveryConfigActionsOutputReference) PutTagResources(value *DataLossPreventionDiscoveryConfigActionsTagResources) {
+	if err := d.validatePutTagResourcesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putTagResources",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataLossPreventionDiscoveryConfigActionsOutputReference) ResetExportData() {
 	_jsii_.InvokeVoid(
 		d,
@@ -497,6 +532,14 @@ func (d *jsiiProxy_DataLossPreventionDiscoveryConfigActionsOutputReference) Rese
 	_jsii_.InvokeVoid(
 		d,
 		"resetPubSubNotification",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataLossPreventionDiscoveryConfigActionsOutputReference) ResetTagResources() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTagResources",
 		nil, // no parameters
 	)
 }

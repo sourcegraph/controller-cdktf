@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlegkebackuprestoreplaniampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_gke_backup_restore_plan_iam_policy google_gke_backup_restore_plan_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_gke_backup_restore_plan_iam_policy google_gke_backup_restore_plan_iam_policy}.
 type GoogleGkeBackupRestorePlanIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -412,7 +412,7 @@ func (j *jsiiProxy_GoogleGkeBackupRestorePlanIamPolicy) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_gke_backup_restore_plan_iam_policy google_gke_backup_restore_plan_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_gke_backup_restore_plan_iam_policy google_gke_backup_restore_plan_iam_policy} Resource.
 func NewGoogleGkeBackupRestorePlanIamPolicy(scope constructs.Construct, id *string, config *GoogleGkeBackupRestorePlanIamPolicyConfig) GoogleGkeBackupRestorePlanIamPolicy {
 	_init_.Initialize()
 
@@ -430,7 +430,7 @@ func NewGoogleGkeBackupRestorePlanIamPolicy(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_gke_backup_restore_plan_iam_policy google_gke_backup_restore_plan_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_gke_backup_restore_plan_iam_policy google_gke_backup_restore_plan_iam_policy} Resource.
 func NewGoogleGkeBackupRestorePlanIamPolicy_Override(g GoogleGkeBackupRestorePlanIamPolicy, scope constructs.Construct, id *string, config *GoogleGkeBackupRestorePlanIamPolicyConfig) {
 	_init_.Initialize()
 

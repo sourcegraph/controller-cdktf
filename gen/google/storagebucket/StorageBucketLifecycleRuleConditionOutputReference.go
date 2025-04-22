@@ -53,15 +53,15 @@ type StorageBucketLifecycleRuleConditionOutputReference interface {
 	MatchesSuffix() *[]*string
 	SetMatchesSuffix(val *[]*string)
 	MatchesSuffixInput() *[]*string
-	NoAge() interface{}
-	SetNoAge(val interface{})
-	NoAgeInput() interface{}
 	NoncurrentTimeBefore() *string
 	SetNoncurrentTimeBefore(val *string)
 	NoncurrentTimeBeforeInput() *string
 	NumNewerVersions() *float64
 	SetNumNewerVersions(val *float64)
 	NumNewerVersionsInput() *float64
+	SendAgeIfZero() interface{}
+	SetSendAgeIfZero(val interface{})
+	SendAgeIfZeroInput() interface{}
 	SendDaysSinceCustomTimeIfZero() interface{}
 	SetSendDaysSinceCustomTimeIfZero(val interface{})
 	SendDaysSinceCustomTimeIfZeroInput() interface{}
@@ -114,9 +114,9 @@ type StorageBucketLifecycleRuleConditionOutputReference interface {
 	ResetMatchesPrefix()
 	ResetMatchesStorageClass()
 	ResetMatchesSuffix()
-	ResetNoAge()
 	ResetNoncurrentTimeBefore()
 	ResetNumNewerVersions()
+	ResetSendAgeIfZero()
 	ResetSendDaysSinceCustomTimeIfZero()
 	ResetSendDaysSinceNoncurrentTimeIfZero()
 	ResetSendNumNewerVersionsIfZero()
@@ -346,26 +346,6 @@ func (j *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) MatchesSu
 	return returns
 }
 
-func (j *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) NoAge() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"noAge",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) NoAgeInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"noAgeInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) NoncurrentTimeBefore() *string {
 	var returns *string
 	_jsii_.Get(
@@ -401,6 +381,26 @@ func (j *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) NumNewerV
 	_jsii_.Get(
 		j,
 		"numNewerVersionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) SendAgeIfZero() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sendAgeIfZero",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) SendAgeIfZeroInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sendAgeIfZeroInput",
 		&returns,
 	)
 	return returns
@@ -655,17 +655,6 @@ func (j *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference)SetMatches
 	)
 }
 
-func (j *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference)SetNoAge(val interface{}) {
-	if err := j.validateSetNoAgeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"noAge",
-		val,
-	)
-}
-
 func (j *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference)SetNoncurrentTimeBefore(val *string) {
 	if err := j.validateSetNoncurrentTimeBeforeParameters(val); err != nil {
 		panic(err)
@@ -684,6 +673,17 @@ func (j *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference)SetNumNewe
 	_jsii_.Set(
 		j,
 		"numNewerVersions",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference)SetSendAgeIfZero(val interface{}) {
+	if err := j.validateSetSendAgeIfZeroParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sendAgeIfZero",
 		val,
 	)
 }
@@ -1004,14 +1004,6 @@ func (s *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) ResetMatc
 	)
 }
 
-func (s *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) ResetNoAge() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetNoAge",
-		nil, // no parameters
-	)
-}
-
 func (s *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) ResetNoncurrentTimeBefore() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1024,6 +1016,14 @@ func (s *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) ResetNumN
 	_jsii_.InvokeVoid(
 		s,
 		"resetNumNewerVersions",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) ResetSendAgeIfZero() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSendAgeIfZero",
 		nil, // no parameters
 	)
 }

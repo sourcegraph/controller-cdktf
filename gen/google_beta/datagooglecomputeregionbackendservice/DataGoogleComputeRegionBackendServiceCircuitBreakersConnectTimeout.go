@@ -1,0 +1,6 @@
+package datagooglecomputeregionbackendservice
+
+
+type DataGoogleComputeRegionBackendServiceCircuitBreakersConnectTimeout struct {
+}
+

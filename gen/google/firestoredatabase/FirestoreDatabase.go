@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/firestoredatabase/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/firestore_database google_firestore_database}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/firestore_database google_firestore_database}.
 type FirestoreDatabase interface {
 	cdktf.TerraformResource
 	AppEngineIntegrationMode() *string
@@ -17,6 +17,8 @@ type FirestoreDatabase interface {
 	AppEngineIntegrationModeInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	CmekConfig() FirestoreDatabaseCmekConfigOutputReference
+	CmekConfigInput() *FirestoreDatabaseCmekConfig
 	ConcurrencyMode() *string
 	SetConcurrencyMode(val *string)
 	ConcurrencyModeInput() *string
@@ -31,6 +33,9 @@ type FirestoreDatabase interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreateTime() *string
+	DatabaseEdition() *string
+	SetDatabaseEdition(val *string)
+	DatabaseEditionInput() *string
 	DeleteProtectionState() *string
 	SetDeleteProtectionState(val *string)
 	DeleteProtectionStateInput() *string
@@ -140,9 +145,12 @@ type FirestoreDatabase interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutCmekConfig(value *FirestoreDatabaseCmekConfig)
 	PutTimeouts(value *FirestoreDatabaseTimeouts)
 	ResetAppEngineIntegrationMode()
+	ResetCmekConfig()
 	ResetConcurrencyMode()
+	ResetDatabaseEdition()
 	ResetDeleteProtectionState()
 	ResetDeletionPolicy()
 	ResetId()
@@ -195,6 +203,26 @@ func (j *jsiiProxy_FirestoreDatabase) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FirestoreDatabase) CmekConfig() FirestoreDatabaseCmekConfigOutputReference {
+	var returns FirestoreDatabaseCmekConfigOutputReference
+	_jsii_.Get(
+		j,
+		"cmekConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FirestoreDatabase) CmekConfigInput() *FirestoreDatabaseCmekConfig {
+	var returns *FirestoreDatabaseCmekConfig
+	_jsii_.Get(
+		j,
+		"cmekConfigInput",
 		&returns,
 	)
 	return returns
@@ -255,6 +283,26 @@ func (j *jsiiProxy_FirestoreDatabase) CreateTime() *string {
 	_jsii_.Get(
 		j,
 		"createTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FirestoreDatabase) DatabaseEdition() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"databaseEdition",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FirestoreDatabase) DatabaseEditionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"databaseEditionInput",
 		&returns,
 	)
 	return returns
@@ -621,7 +669,7 @@ func (j *jsiiProxy_FirestoreDatabase) VersionRetentionPeriod() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/firestore_database google_firestore_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/firestore_database google_firestore_database} Resource.
 func NewFirestoreDatabase(scope constructs.Construct, id *string, config *FirestoreDatabaseConfig) FirestoreDatabase {
 	_init_.Initialize()
 
@@ -639,7 +687,7 @@ func NewFirestoreDatabase(scope constructs.Construct, id *string, config *Firest
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/firestore_database google_firestore_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/firestore_database google_firestore_database} Resource.
 func NewFirestoreDatabase_Override(f FirestoreDatabase, scope constructs.Construct, id *string, config *FirestoreDatabaseConfig) {
 	_init_.Initialize()
 
@@ -690,6 +738,17 @@ func (j *jsiiProxy_FirestoreDatabase)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FirestoreDatabase)SetDatabaseEdition(val *string) {
+	if err := j.validateSetDatabaseEditionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"databaseEdition",
 		val,
 	)
 }
@@ -1181,6 +1240,17 @@ func (f *jsiiProxy_FirestoreDatabase) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (f *jsiiProxy_FirestoreDatabase) PutCmekConfig(value *FirestoreDatabaseCmekConfig) {
+	if err := f.validatePutCmekConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"putCmekConfig",
+		[]interface{}{value},
+	)
+}
+
 func (f *jsiiProxy_FirestoreDatabase) PutTimeouts(value *FirestoreDatabaseTimeouts) {
 	if err := f.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1200,10 +1270,26 @@ func (f *jsiiProxy_FirestoreDatabase) ResetAppEngineIntegrationMode() {
 	)
 }
 
+func (f *jsiiProxy_FirestoreDatabase) ResetCmekConfig() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetCmekConfig",
+		nil, // no parameters
+	)
+}
+
 func (f *jsiiProxy_FirestoreDatabase) ResetConcurrencyMode() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetConcurrencyMode",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FirestoreDatabase) ResetDatabaseEdition() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetDatabaseEdition",
 		nil, // no parameters
 	)
 }

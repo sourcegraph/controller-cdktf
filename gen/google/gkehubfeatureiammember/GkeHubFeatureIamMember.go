@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/gkehubfeatureiammember/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/gke_hub_feature_iam_member google_gke_hub_feature_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/gke_hub_feature_iam_member google_gke_hub_feature_iam_member}.
 type GkeHubFeatureIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -459,7 +459,7 @@ func (j *jsiiProxy_GkeHubFeatureIamMember) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/gke_hub_feature_iam_member google_gke_hub_feature_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/gke_hub_feature_iam_member google_gke_hub_feature_iam_member} Resource.
 func NewGkeHubFeatureIamMember(scope constructs.Construct, id *string, config *GkeHubFeatureIamMemberConfig) GkeHubFeatureIamMember {
 	_init_.Initialize()
 
@@ -477,7 +477,7 @@ func NewGkeHubFeatureIamMember(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/gke_hub_feature_iam_member google_gke_hub_feature_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/gke_hub_feature_iam_member google_gke_hub_feature_iam_member} Resource.
 func NewGkeHubFeatureIamMember_Override(g GkeHubFeatureIamMember, scope constructs.Construct, id *string, config *GkeHubFeatureIamMemberConfig) {
 	_init_.Initialize()
 

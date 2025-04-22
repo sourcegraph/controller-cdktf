@@ -60,6 +60,10 @@ func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLangua
 	return nil
 }
 
+func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference) validateSetDisableMetricValidationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference) validateSetDurationParameters(val *string) error {
 	return nil
 }

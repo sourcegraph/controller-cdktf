@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googletpuv2vm/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_tpu_v2_vm google_tpu_v2_vm}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_tpu_v2_vm google_tpu_v2_vm}.
 type GoogleTpuV2Vm interface {
 	cdktf.TerraformResource
 	AcceleratorConfig() GoogleTpuV2VmAcceleratorConfigOutputReference
@@ -72,6 +72,8 @@ type GoogleTpuV2Vm interface {
 	NameInput() *string
 	NetworkConfig() GoogleTpuV2VmNetworkConfigOutputReference
 	NetworkConfigInput() *GoogleTpuV2VmNetworkConfig
+	NetworkConfigs() GoogleTpuV2VmNetworkConfigsList
+	NetworkConfigsInput() interface{}
 	NetworkEndpoints() GoogleTpuV2VmNetworkEndpointsList
 	// The tree node.
 	Node() constructs.Node
@@ -161,6 +163,7 @@ type GoogleTpuV2Vm interface {
 	PutAcceleratorConfig(value *GoogleTpuV2VmAcceleratorConfig)
 	PutDataDisks(value interface{})
 	PutNetworkConfig(value *GoogleTpuV2VmNetworkConfig)
+	PutNetworkConfigs(value interface{})
 	PutSchedulingConfig(value *GoogleTpuV2VmSchedulingConfig)
 	PutServiceAccount(value *GoogleTpuV2VmServiceAccount)
 	PutShieldedInstanceConfig(value *GoogleTpuV2VmShieldedInstanceConfig)
@@ -174,6 +177,7 @@ type GoogleTpuV2Vm interface {
 	ResetLabels()
 	ResetMetadata()
 	ResetNetworkConfig()
+	ResetNetworkConfigs()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -542,6 +546,26 @@ func (j *jsiiProxy_GoogleTpuV2Vm) NetworkConfigInput() *GoogleTpuV2VmNetworkConf
 	return returns
 }
 
+func (j *jsiiProxy_GoogleTpuV2Vm) NetworkConfigs() GoogleTpuV2VmNetworkConfigsList {
+	var returns GoogleTpuV2VmNetworkConfigsList
+	_jsii_.Get(
+		j,
+		"networkConfigs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleTpuV2Vm) NetworkConfigsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"networkConfigsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleTpuV2Vm) NetworkEndpoints() GoogleTpuV2VmNetworkEndpointsList {
 	var returns GoogleTpuV2VmNetworkEndpointsList
 	_jsii_.Get(
@@ -823,7 +847,7 @@ func (j *jsiiProxy_GoogleTpuV2Vm) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_tpu_v2_vm google_tpu_v2_vm} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_tpu_v2_vm google_tpu_v2_vm} Resource.
 func NewGoogleTpuV2Vm(scope constructs.Construct, id *string, config *GoogleTpuV2VmConfig) GoogleTpuV2Vm {
 	_init_.Initialize()
 
@@ -841,7 +865,7 @@ func NewGoogleTpuV2Vm(scope constructs.Construct, id *string, config *GoogleTpuV
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_tpu_v2_vm google_tpu_v2_vm} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_tpu_v2_vm google_tpu_v2_vm} Resource.
 func NewGoogleTpuV2Vm_Override(g GoogleTpuV2Vm, scope constructs.Construct, id *string, config *GoogleTpuV2VmConfig) {
 	_init_.Initialize()
 
@@ -1427,6 +1451,17 @@ func (g *jsiiProxy_GoogleTpuV2Vm) PutNetworkConfig(value *GoogleTpuV2VmNetworkCo
 	)
 }
 
+func (g *jsiiProxy_GoogleTpuV2Vm) PutNetworkConfigs(value interface{}) {
+	if err := g.validatePutNetworkConfigsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putNetworkConfigs",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleTpuV2Vm) PutSchedulingConfig(value *GoogleTpuV2VmSchedulingConfig) {
 	if err := g.validatePutSchedulingConfigParameters(value); err != nil {
 		panic(err)
@@ -1539,6 +1574,14 @@ func (g *jsiiProxy_GoogleTpuV2Vm) ResetNetworkConfig() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetNetworkConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleTpuV2Vm) ResetNetworkConfigs() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNetworkConfigs",
 		nil, // no parameters
 	)
 }

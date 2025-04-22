@@ -9,12 +9,15 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/rediscluster/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/redis_cluster google_redis_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/redis_cluster google_redis_cluster}.
 type RedisCluster interface {
 	cdktf.TerraformResource
 	AuthorizationMode() *string
 	SetAuthorizationMode(val *string)
 	AuthorizationModeInput() *string
+	AutomatedBackupConfig() RedisClusterAutomatedBackupConfigOutputReference
+	AutomatedBackupConfigInput() *RedisClusterAutomatedBackupConfig
+	BackupCollection() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -28,6 +31,11 @@ type RedisCluster interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreateTime() *string
+	CrossClusterReplicationConfig() RedisClusterCrossClusterReplicationConfigOutputReference
+	CrossClusterReplicationConfigInput() *RedisClusterCrossClusterReplicationConfig
+	DeletionProtectionEnabled() interface{}
+	SetDeletionProtectionEnabled(val interface{})
+	DeletionProtectionEnabledInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -41,13 +49,23 @@ type RedisCluster interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GcsSource() RedisClusterGcsSourceOutputReference
+	GcsSourceInput() *RedisClusterGcsSource
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	KmsKey() *string
+	SetKmsKey(val *string)
+	KmsKeyInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MaintenancePolicy() RedisClusterMaintenancePolicyOutputReference
+	MaintenancePolicyInput() *RedisClusterMaintenancePolicy
+	MaintenanceSchedule() RedisClusterMaintenanceScheduleList
+	ManagedBackupSource() RedisClusterManagedBackupSourceOutputReference
+	ManagedBackupSourceInput() *RedisClusterManagedBackupSource
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -56,6 +74,8 @@ type RedisCluster interface {
 	NodeType() *string
 	SetNodeType(val *string)
 	NodeTypeInput() *string
+	PersistenceConfig() RedisClusterPersistenceConfigOutputReference
+	PersistenceConfigInput() *RedisClusterPersistenceConfig
 	PreciseSizeGb() *float64
 	Project() *string
 	SetProject(val *string)
@@ -71,6 +91,7 @@ type RedisCluster interface {
 	PscConfigs() RedisClusterPscConfigsList
 	PscConfigsInput() interface{}
 	PscConnections() RedisClusterPscConnectionsList
+	PscServiceAttachments() RedisClusterPscServiceAttachmentsList
 	// Experimental.
 	RawOverrides() interface{}
 	RedisConfigs() *map[string]*string
@@ -145,17 +166,32 @@ type RedisCluster interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAutomatedBackupConfig(value *RedisClusterAutomatedBackupConfig)
+	PutCrossClusterReplicationConfig(value *RedisClusterCrossClusterReplicationConfig)
+	PutGcsSource(value *RedisClusterGcsSource)
+	PutMaintenancePolicy(value *RedisClusterMaintenancePolicy)
+	PutManagedBackupSource(value *RedisClusterManagedBackupSource)
+	PutPersistenceConfig(value *RedisClusterPersistenceConfig)
 	PutPscConfigs(value interface{})
 	PutTimeouts(value *RedisClusterTimeouts)
 	PutZoneDistributionConfig(value *RedisClusterZoneDistributionConfig)
 	ResetAuthorizationMode()
+	ResetAutomatedBackupConfig()
+	ResetCrossClusterReplicationConfig()
+	ResetDeletionProtectionEnabled()
+	ResetGcsSource()
 	ResetId()
+	ResetKmsKey()
+	ResetMaintenancePolicy()
+	ResetManagedBackupSource()
 	ResetName()
 	ResetNodeType()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPersistenceConfig()
 	ResetProject()
+	ResetPscConfigs()
 	ResetRedisConfigs()
 	ResetRegion()
 	ResetReplicaCount()
@@ -195,6 +231,36 @@ func (j *jsiiProxy_RedisCluster) AuthorizationModeInput() *string {
 	_jsii_.Get(
 		j,
 		"authorizationModeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedisCluster) AutomatedBackupConfig() RedisClusterAutomatedBackupConfigOutputReference {
+	var returns RedisClusterAutomatedBackupConfigOutputReference
+	_jsii_.Get(
+		j,
+		"automatedBackupConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedisCluster) AutomatedBackupConfigInput() *RedisClusterAutomatedBackupConfig {
+	var returns *RedisClusterAutomatedBackupConfig
+	_jsii_.Get(
+		j,
+		"automatedBackupConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedisCluster) BackupCollection() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"backupCollection",
 		&returns,
 	)
 	return returns
@@ -250,6 +316,46 @@ func (j *jsiiProxy_RedisCluster) CreateTime() *string {
 	return returns
 }
 
+func (j *jsiiProxy_RedisCluster) CrossClusterReplicationConfig() RedisClusterCrossClusterReplicationConfigOutputReference {
+	var returns RedisClusterCrossClusterReplicationConfigOutputReference
+	_jsii_.Get(
+		j,
+		"crossClusterReplicationConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedisCluster) CrossClusterReplicationConfigInput() *RedisClusterCrossClusterReplicationConfig {
+	var returns *RedisClusterCrossClusterReplicationConfig
+	_jsii_.Get(
+		j,
+		"crossClusterReplicationConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedisCluster) DeletionProtectionEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtectionEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedisCluster) DeletionProtectionEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtectionEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RedisCluster) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -300,6 +406,26 @@ func (j *jsiiProxy_RedisCluster) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_RedisCluster) GcsSource() RedisClusterGcsSourceOutputReference {
+	var returns RedisClusterGcsSourceOutputReference
+	_jsii_.Get(
+		j,
+		"gcsSource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedisCluster) GcsSourceInput() *RedisClusterGcsSource {
+	var returns *RedisClusterGcsSource
+	_jsii_.Get(
+		j,
+		"gcsSourceInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RedisCluster) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -320,11 +446,81 @@ func (j *jsiiProxy_RedisCluster) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_RedisCluster) KmsKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedisCluster) KmsKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKeyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RedisCluster) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedisCluster) MaintenancePolicy() RedisClusterMaintenancePolicyOutputReference {
+	var returns RedisClusterMaintenancePolicyOutputReference
+	_jsii_.Get(
+		j,
+		"maintenancePolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedisCluster) MaintenancePolicyInput() *RedisClusterMaintenancePolicy {
+	var returns *RedisClusterMaintenancePolicy
+	_jsii_.Get(
+		j,
+		"maintenancePolicyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedisCluster) MaintenanceSchedule() RedisClusterMaintenanceScheduleList {
+	var returns RedisClusterMaintenanceScheduleList
+	_jsii_.Get(
+		j,
+		"maintenanceSchedule",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedisCluster) ManagedBackupSource() RedisClusterManagedBackupSourceOutputReference {
+	var returns RedisClusterManagedBackupSourceOutputReference
+	_jsii_.Get(
+		j,
+		"managedBackupSource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedisCluster) ManagedBackupSourceInput() *RedisClusterManagedBackupSource {
+	var returns *RedisClusterManagedBackupSource
+	_jsii_.Get(
+		j,
+		"managedBackupSourceInput",
 		&returns,
 	)
 	return returns
@@ -375,6 +571,26 @@ func (j *jsiiProxy_RedisCluster) NodeTypeInput() *string {
 	_jsii_.Get(
 		j,
 		"nodeTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedisCluster) PersistenceConfig() RedisClusterPersistenceConfigOutputReference {
+	var returns RedisClusterPersistenceConfigOutputReference
+	_jsii_.Get(
+		j,
+		"persistenceConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedisCluster) PersistenceConfigInput() *RedisClusterPersistenceConfig {
+	var returns *RedisClusterPersistenceConfig
+	_jsii_.Get(
+		j,
+		"persistenceConfigInput",
 		&returns,
 	)
 	return returns
@@ -455,6 +671,16 @@ func (j *jsiiProxy_RedisCluster) PscConnections() RedisClusterPscConnectionsList
 	_jsii_.Get(
 		j,
 		"pscConnections",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedisCluster) PscServiceAttachments() RedisClusterPscServiceAttachmentsList {
+	var returns RedisClusterPscServiceAttachmentsList
+	_jsii_.Get(
+		j,
+		"pscServiceAttachments",
 		&returns,
 	)
 	return returns
@@ -681,7 +907,7 @@ func (j *jsiiProxy_RedisCluster) ZoneDistributionConfigInput() *RedisClusterZone
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/redis_cluster google_redis_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/redis_cluster google_redis_cluster} Resource.
 func NewRedisCluster(scope constructs.Construct, id *string, config *RedisClusterConfig) RedisCluster {
 	_init_.Initialize()
 
@@ -699,7 +925,7 @@ func NewRedisCluster(scope constructs.Construct, id *string, config *RedisCluste
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/redis_cluster google_redis_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/redis_cluster google_redis_cluster} Resource.
 func NewRedisCluster_Override(r RedisCluster, scope constructs.Construct, id *string, config *RedisClusterConfig) {
 	_init_.Initialize()
 
@@ -743,6 +969,17 @@ func (j *jsiiProxy_RedisCluster)SetCount(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_RedisCluster)SetDeletionProtectionEnabled(val interface{}) {
+	if err := j.validateSetDeletionProtectionEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deletionProtectionEnabled",
+		val,
+	)
+}
+
 func (j *jsiiProxy_RedisCluster)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
@@ -766,6 +1003,17 @@ func (j *jsiiProxy_RedisCluster)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedisCluster)SetKmsKey(val *string) {
+	if err := j.validateSetKmsKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kmsKey",
 		val,
 	)
 }
@@ -1241,6 +1489,72 @@ func (r *jsiiProxy_RedisCluster) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (r *jsiiProxy_RedisCluster) PutAutomatedBackupConfig(value *RedisClusterAutomatedBackupConfig) {
+	if err := r.validatePutAutomatedBackupConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putAutomatedBackupConfig",
+		[]interface{}{value},
+	)
+}
+
+func (r *jsiiProxy_RedisCluster) PutCrossClusterReplicationConfig(value *RedisClusterCrossClusterReplicationConfig) {
+	if err := r.validatePutCrossClusterReplicationConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putCrossClusterReplicationConfig",
+		[]interface{}{value},
+	)
+}
+
+func (r *jsiiProxy_RedisCluster) PutGcsSource(value *RedisClusterGcsSource) {
+	if err := r.validatePutGcsSourceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putGcsSource",
+		[]interface{}{value},
+	)
+}
+
+func (r *jsiiProxy_RedisCluster) PutMaintenancePolicy(value *RedisClusterMaintenancePolicy) {
+	if err := r.validatePutMaintenancePolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putMaintenancePolicy",
+		[]interface{}{value},
+	)
+}
+
+func (r *jsiiProxy_RedisCluster) PutManagedBackupSource(value *RedisClusterManagedBackupSource) {
+	if err := r.validatePutManagedBackupSourceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putManagedBackupSource",
+		[]interface{}{value},
+	)
+}
+
+func (r *jsiiProxy_RedisCluster) PutPersistenceConfig(value *RedisClusterPersistenceConfig) {
+	if err := r.validatePutPersistenceConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putPersistenceConfig",
+		[]interface{}{value},
+	)
+}
+
 func (r *jsiiProxy_RedisCluster) PutPscConfigs(value interface{}) {
 	if err := r.validatePutPscConfigsParameters(value); err != nil {
 		panic(err)
@@ -1282,10 +1596,66 @@ func (r *jsiiProxy_RedisCluster) ResetAuthorizationMode() {
 	)
 }
 
+func (r *jsiiProxy_RedisCluster) ResetAutomatedBackupConfig() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetAutomatedBackupConfig",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedisCluster) ResetCrossClusterReplicationConfig() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetCrossClusterReplicationConfig",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedisCluster) ResetDeletionProtectionEnabled() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetDeletionProtectionEnabled",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedisCluster) ResetGcsSource() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetGcsSource",
+		nil, // no parameters
+	)
+}
+
 func (r *jsiiProxy_RedisCluster) ResetId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedisCluster) ResetKmsKey() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetKmsKey",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedisCluster) ResetMaintenancePolicy() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetMaintenancePolicy",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedisCluster) ResetManagedBackupSource() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetManagedBackupSource",
 		nil, // no parameters
 	)
 }
@@ -1314,10 +1684,26 @@ func (r *jsiiProxy_RedisCluster) ResetOverrideLogicalId() {
 	)
 }
 
+func (r *jsiiProxy_RedisCluster) ResetPersistenceConfig() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetPersistenceConfig",
+		nil, // no parameters
+	)
+}
+
 func (r *jsiiProxy_RedisCluster) ResetProject() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedisCluster) ResetPscConfigs() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetPscConfigs",
 		nil, // no parameters
 	)
 }

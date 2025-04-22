@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/healthcaredicomstoreiampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/healthcare_dicom_store_iam_policy google_healthcare_dicom_store_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/healthcare_dicom_store_iam_policy google_healthcare_dicom_store_iam_policy}.
 type HealthcareDicomStoreIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -364,7 +364,7 @@ func (j *jsiiProxy_HealthcareDicomStoreIamPolicy) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/healthcare_dicom_store_iam_policy google_healthcare_dicom_store_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/healthcare_dicom_store_iam_policy google_healthcare_dicom_store_iam_policy} Resource.
 func NewHealthcareDicomStoreIamPolicy(scope constructs.Construct, id *string, config *HealthcareDicomStoreIamPolicyConfig) HealthcareDicomStoreIamPolicy {
 	_init_.Initialize()
 
@@ -382,7 +382,7 @@ func NewHealthcareDicomStoreIamPolicy(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/healthcare_dicom_store_iam_policy google_healthcare_dicom_store_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/healthcare_dicom_store_iam_policy google_healthcare_dicom_store_iam_policy} Resource.
 func NewHealthcareDicomStoreIamPolicy_Override(h HealthcareDicomStoreIamPolicy, scope constructs.Construct, id *string, config *HealthcareDicomStoreIamPolicyConfig) {
 	_init_.Initialize()
 

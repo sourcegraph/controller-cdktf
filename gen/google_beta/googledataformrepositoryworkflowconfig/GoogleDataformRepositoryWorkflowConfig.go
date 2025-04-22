@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledataformrepositoryworkflowconfig/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_dataform_repository_workflow_config google_dataform_repository_workflow_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_dataform_repository_workflow_config google_dataform_repository_workflow_config}.
 type GoogleDataformRepositoryWorkflowConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -532,7 +532,7 @@ func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfig) TimeZoneInput() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_dataform_repository_workflow_config google_dataform_repository_workflow_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_dataform_repository_workflow_config google_dataform_repository_workflow_config} Resource.
 func NewGoogleDataformRepositoryWorkflowConfig(scope constructs.Construct, id *string, config *GoogleDataformRepositoryWorkflowConfigConfig) GoogleDataformRepositoryWorkflowConfig {
 	_init_.Initialize()
 
@@ -550,7 +550,7 @@ func NewGoogleDataformRepositoryWorkflowConfig(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_dataform_repository_workflow_config google_dataform_repository_workflow_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_dataform_repository_workflow_config google_dataform_repository_workflow_config} Resource.
 func NewGoogleDataformRepositoryWorkflowConfig_Override(g GoogleDataformRepositoryWorkflowConfig, scope constructs.Construct, id *string, config *GoogleDataformRepositoryWorkflowConfigConfig) {
 	_init_.Initialize()
 

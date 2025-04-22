@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecloudrunv2serviceiammember/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_cloud_run_v2_service_iam_member google_cloud_run_v2_service_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_cloud_run_v2_service_iam_member google_cloud_run_v2_service_iam_member}.
 type GoogleCloudRunV2ServiceIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -459,7 +459,7 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceIamMember) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_cloud_run_v2_service_iam_member google_cloud_run_v2_service_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_cloud_run_v2_service_iam_member google_cloud_run_v2_service_iam_member} Resource.
 func NewGoogleCloudRunV2ServiceIamMember(scope constructs.Construct, id *string, config *GoogleCloudRunV2ServiceIamMemberConfig) GoogleCloudRunV2ServiceIamMember {
 	_init_.Initialize()
 
@@ -477,7 +477,7 @@ func NewGoogleCloudRunV2ServiceIamMember(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_cloud_run_v2_service_iam_member google_cloud_run_v2_service_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_cloud_run_v2_service_iam_member google_cloud_run_v2_service_iam_member} Resource.
 func NewGoogleCloudRunV2ServiceIamMember_Override(g GoogleCloudRunV2ServiceIamMember, scope constructs.Construct, id *string, config *GoogleCloudRunV2ServiceIamMemberConfig) {
 	_init_.Initialize()
 

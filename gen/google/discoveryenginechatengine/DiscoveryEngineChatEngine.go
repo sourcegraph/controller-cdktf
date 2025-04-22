@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/discoveryenginechatengine/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/discovery_engine_chat_engine google_discovery_engine_chat_engine}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/discovery_engine_chat_engine google_discovery_engine_chat_engine}.
 type DiscoveryEngineChatEngine interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -585,7 +585,7 @@ func (j *jsiiProxy_DiscoveryEngineChatEngine) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/discovery_engine_chat_engine google_discovery_engine_chat_engine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/discovery_engine_chat_engine google_discovery_engine_chat_engine} Resource.
 func NewDiscoveryEngineChatEngine(scope constructs.Construct, id *string, config *DiscoveryEngineChatEngineConfig) DiscoveryEngineChatEngine {
 	_init_.Initialize()
 
@@ -603,7 +603,7 @@ func NewDiscoveryEngineChatEngine(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/discovery_engine_chat_engine google_discovery_engine_chat_engine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/discovery_engine_chat_engine google_discovery_engine_chat_engine} Resource.
 func NewDiscoveryEngineChatEngine_Override(d DiscoveryEngineChatEngine, scope constructs.Construct, id *string, config *DiscoveryEngineChatEngineConfig) {
 	_init_.Initialize()
 

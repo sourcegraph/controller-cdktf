@@ -50,8 +50,10 @@ type DataGoogleContainerClusterNodeConfigOutputReference interface {
 	LinuxNodeConfig() DataGoogleContainerClusterNodeConfigLinuxNodeConfigList
 	LocalNvmeSsdBlockConfig() DataGoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigList
 	LocalSsdCount() *float64
+	LocalSsdEncryptionMode() *string
 	LoggingVariant() *string
 	MachineType() *string
+	MaxRunDuration() *string
 	Metadata() cdktf.StringMap
 	MinCpuPlatform() *string
 	NodeGroup() *string
@@ -66,6 +68,7 @@ type DataGoogleContainerClusterNodeConfigOutputReference interface {
 	ShieldedInstanceConfig() DataGoogleContainerClusterNodeConfigShieldedInstanceConfigList
 	SoleTenantConfig() DataGoogleContainerClusterNodeConfigSoleTenantConfigList
 	Spot() cdktf.IResolvable
+	StoragePools() *[]*string
 	Tags() *[]*string
 	Taint() DataGoogleContainerClusterNodeConfigTaintList
 	// Experimental.
@@ -76,6 +79,7 @@ type DataGoogleContainerClusterNodeConfigOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	WindowsNodeConfig() DataGoogleContainerClusterNodeConfigWindowsNodeConfigList
 	WorkloadMetadataConfig() DataGoogleContainerClusterNodeConfigWorkloadMetadataConfigList
 	// Experimental.
 	ComputeFqn() *string
@@ -376,6 +380,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) LocalSsd
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) LocalSsdEncryptionMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"localSsdEncryptionMode",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) LoggingVariant() *string {
 	var returns *string
 	_jsii_.Get(
@@ -391,6 +405,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) MachineT
 	_jsii_.Get(
 		j,
 		"machineType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) MaxRunDuration() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maxRunDuration",
 		&returns,
 	)
 	return returns
@@ -536,6 +560,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) Spot() c
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) StoragePools() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"storagePools",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) Tags() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -571,6 +605,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) Terrafor
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) WindowsNodeConfig() DataGoogleContainerClusterNodeConfigWindowsNodeConfigList {
+	var returns DataGoogleContainerClusterNodeConfigWindowsNodeConfigList
+	_jsii_.Get(
+		j,
+		"windowsNodeConfig",
 		&returns,
 	)
 	return returns

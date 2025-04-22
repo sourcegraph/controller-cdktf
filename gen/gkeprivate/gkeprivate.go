@@ -11,19 +11,23 @@ import (
 
 // Defines an Gkeprivate based on a Terraform module.
 //
-// Source at git::https://github.com/michaellzc/terraform-google-kubernetes-engine.git//modules/beta-private-cluster?ref=d276cfbb3aee47fb93cd506341d4f10d1d4c34c9
+// Docs at Terraform Registry: {@link https://registry.terraform.io/modules/terraform-google-modules/kubernetes-engine/google/36.3.0/submodules/beta-private-cluster terraform-google-modules/kubernetes-engine/google//modules/beta-private-cluster}
 type Gkeprivate interface {
 	cdktf.TerraformModule
 	AddClusterFirewallRules() *bool
 	SetAddClusterFirewallRules(val *bool)
 	AdditionalIpRangePods() *[]*string
 	SetAdditionalIpRangePods(val *[]*string)
+	AdditiveVpcScopeDnsDomain() *string
+	SetAdditiveVpcScopeDnsDomain(val *string)
 	AddMasterWebhookFirewallRules() *bool
 	SetAddMasterWebhookFirewallRules(val *bool)
 	AddShadowFirewallRules() *bool
 	SetAddShadowFirewallRules(val *bool)
 	AuthenticatorSecurityGroup() *string
 	SetAuthenticatorSecurityGroup(val *string)
+	BootDiskKmsKey() *string
+	SetBootDiskKmsKey(val *string)
 	CaCertificateOutput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -75,15 +79,21 @@ type Gkeprivate interface {
 	SetDisableDefaultSnat(val *bool)
 	DisableLegacyMetadataEndpoints() *bool
 	SetDisableLegacyMetadataEndpoints(val *bool)
+	DnsAllowExternalTraffic() *bool
+	SetDnsAllowExternalTraffic(val *bool)
 	DnsCache() *bool
 	SetDnsCache(val *bool)
 	DnsCacheEnabledOutput() *string
 	EnableBinaryAuthorization() *bool
 	SetEnableBinaryAuthorization(val *bool)
+	EnableCiliumClusterwideNetworkPolicy() *bool
+	SetEnableCiliumClusterwideNetworkPolicy(val *bool)
 	EnableConfidentialNodes() *bool
 	SetEnableConfidentialNodes(val *bool)
 	EnableCostAllocation() *bool
 	SetEnableCostAllocation(val *bool)
+	EnableDefaultNodePoolsMetadata() *bool
+	SetEnableDefaultNodePoolsMetadata(val *bool)
 	EnableFqdnNetworkPolicy() *bool
 	SetEnableFqdnNetworkPolicy(val *bool)
 	EnableGcfs() *bool
@@ -108,13 +118,18 @@ type Gkeprivate interface {
 	SetEnablePrivateNodes(val *bool)
 	EnableResourceConsumptionExport() *bool
 	SetEnableResourceConsumptionExport(val *bool)
+	EnableSecretManagerAddon() *bool
+	SetEnableSecretManagerAddon(val *bool)
 	EnableShieldedNodes() *bool
 	SetEnableShieldedNodes(val *bool)
 	EnableTpu() *bool
 	SetEnableTpu(val *bool)
 	EnableVerticalPodAutoscaling() *bool
 	SetEnableVerticalPodAutoscaling(val *bool)
+	EndpointDnsOutput() *string
 	EndpointOutput() *string
+	EnterpriseConfig() *string
+	SetEnterpriseConfig(val *string)
 	FilestoreCsiDriver() *bool
 	SetFilestoreCsiDriver(val *bool)
 	FirewallInboundPorts() *[]*string
@@ -139,6 +154,8 @@ type Gkeprivate interface {
 	GatewayApiChannelOutput() *string
 	GcePdCsiDriver() *bool
 	SetGcePdCsiDriver(val *bool)
+	GcpPublicCidrsAccessEnabled() *bool
+	SetGcpPublicCidrsAccessEnabled(val *bool)
 	GcsFuseCsiDriver() *bool
 	SetGcsFuseCsiDriver(val *bool)
 	GkeBackupAgentConfig() *bool
@@ -157,6 +174,8 @@ type Gkeprivate interface {
 	IdentityServiceEnabledOutput() *string
 	InitialNodeCount() *float64
 	SetInitialNodeCount(val *float64)
+	InsecureKubeletReadonlyPortEnabled() *bool
+	SetInsecureKubeletReadonlyPortEnabled(val *bool)
 	InstanceGroupUrlsOutput() *string
 	IntranodeVisibilityEnabledOutput() *string
 	IpMasqLinkLocal() *bool
@@ -184,6 +203,8 @@ type Gkeprivate interface {
 	LoggingService() *string
 	SetLoggingService(val *string)
 	LoggingServiceOutput() *string
+	LoggingVariant() *string
+	SetLoggingVariant(val *string)
 	MaintenanceEndTime() *string
 	SetMaintenanceEndTime(val *string)
 	MaintenanceExclusions() *[]interface{}
@@ -209,8 +230,10 @@ type Gkeprivate interface {
 	SetMonitoringEnableManagedPrometheus(val *bool)
 	MonitoringEnableObservabilityMetrics() *bool
 	SetMonitoringEnableObservabilityMetrics(val *bool)
-	MonitoringObservabilityMetricsRelayMode() *string
-	SetMonitoringObservabilityMetricsRelayMode(val *string)
+	MonitoringEnableObservabilityRelay() *bool
+	SetMonitoringEnableObservabilityRelay(val *bool)
+	MonitoringMetricWriterRole() *string
+	SetMonitoringMetricWriterRole(val *string)
 	MonitoringService() *string
 	SetMonitoringService(val *string)
 	MonitoringServiceOutput() *string
@@ -234,6 +257,8 @@ type Gkeprivate interface {
 	SetNodeMetadata(val *string)
 	NodePools() *[]*map[string]interface{}
 	SetNodePools(val *[]*map[string]interface{})
+	NodePoolsCgroupMode() *map[string]*string
+	SetNodePoolsCgroupMode(val *map[string]*string)
 	NodePoolsLabels() *map[string]*map[string]*string
 	SetNodePoolsLabels(val *map[string]*map[string]*string)
 	NodePoolsLinuxNodeConfigsSysctls() *map[string]*map[string]*string
@@ -245,6 +270,8 @@ type Gkeprivate interface {
 	SetNodePoolsOauthScopes(val *map[string]*[]*string)
 	NodePoolsResourceLabels() *map[string]*map[string]*string
 	SetNodePoolsResourceLabels(val *map[string]*map[string]*string)
+	NodePoolsResourceManagerTags() *map[string]*map[string]*string
+	SetNodePoolsResourceManagerTags(val *map[string]*map[string]*string)
 	NodePoolsTags() *map[string]*[]*string
 	SetNodePoolsTags(val *map[string]*[]*string)
 	NodePoolsTaints() *map[string]*[]interface{}
@@ -254,14 +281,22 @@ type Gkeprivate interface {
 	SetNonMasqueradeCidrs(val *[]*string)
 	NotificationConfigTopic() *string
 	SetNotificationConfigTopic(val *string)
+	NotificationFilterEventType() *[]*string
+	SetNotificationFilterEventType(val *[]*string)
+	ParallelstoreCsiDriver() *bool
+	SetParallelstoreCsiDriver(val *bool)
 	PeeringNameOutput() *string
 	PodSecurityPolicyEnabledOutput() *string
+	PrivateEndpointSubnetwork() *string
+	SetPrivateEndpointSubnetwork(val *string)
 	ProjectId() *string
 	SetProjectId(val *string)
 	// Experimental.
 	Providers() *[]interface{}
 	// Experimental.
 	RawOverrides() interface{}
+	RayOperatorConfig() interface{}
+	SetRayOperatorConfig(val interface{})
 	Region() *string
 	SetRegion(val *string)
 	Regional() *bool
@@ -278,6 +313,7 @@ type Gkeprivate interface {
 	SetResourceUsageExportDatasetId(val *string)
 	SandboxEnabled() *bool
 	SetSandboxEnabled(val *bool)
+	SecretManagerAddonEnabledOutput() *string
 	SecurityPostureMode() *string
 	SetSecurityPostureMode(val *string)
 	SecurityPostureVulnerabilityMode() *string
@@ -299,6 +335,8 @@ type Gkeprivate interface {
 	Source() *string
 	StackType() *string
 	SetStackType(val *string)
+	StatefulHa() *bool
+	SetStatefulHa(val *bool)
 	StubDomains() *map[string]*[]*string
 	SetStubDomains(val *map[string]*[]*string)
 	Subnetwork() *string
@@ -372,6 +410,16 @@ func (j *jsiiProxy_Gkeprivate) AdditionalIpRangePods() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_Gkeprivate) AdditiveVpcScopeDnsDomain() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"additiveVpcScopeDnsDomain",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Gkeprivate) AddMasterWebhookFirewallRules() *bool {
 	var returns *bool
 	_jsii_.Get(
@@ -397,6 +445,16 @@ func (j *jsiiProxy_Gkeprivate) AuthenticatorSecurityGroup() *string {
 	_jsii_.Get(
 		j,
 		"authenticatorSecurityGroup",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Gkeprivate) BootDiskKmsKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bootDiskKmsKey",
 		&returns,
 	)
 	return returns
@@ -662,6 +720,16 @@ func (j *jsiiProxy_Gkeprivate) DisableLegacyMetadataEndpoints() *bool {
 	return returns
 }
 
+func (j *jsiiProxy_Gkeprivate) DnsAllowExternalTraffic() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"dnsAllowExternalTraffic",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Gkeprivate) DnsCache() *bool {
 	var returns *bool
 	_jsii_.Get(
@@ -692,6 +760,16 @@ func (j *jsiiProxy_Gkeprivate) EnableBinaryAuthorization() *bool {
 	return returns
 }
 
+func (j *jsiiProxy_Gkeprivate) EnableCiliumClusterwideNetworkPolicy() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"enableCiliumClusterwideNetworkPolicy",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Gkeprivate) EnableConfidentialNodes() *bool {
 	var returns *bool
 	_jsii_.Get(
@@ -707,6 +785,16 @@ func (j *jsiiProxy_Gkeprivate) EnableCostAllocation() *bool {
 	_jsii_.Get(
 		j,
 		"enableCostAllocation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Gkeprivate) EnableDefaultNodePoolsMetadata() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"enableDefaultNodePoolsMetadata",
 		&returns,
 	)
 	return returns
@@ -832,6 +920,16 @@ func (j *jsiiProxy_Gkeprivate) EnableResourceConsumptionExport() *bool {
 	return returns
 }
 
+func (j *jsiiProxy_Gkeprivate) EnableSecretManagerAddon() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"enableSecretManagerAddon",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Gkeprivate) EnableShieldedNodes() *bool {
 	var returns *bool
 	_jsii_.Get(
@@ -862,11 +960,31 @@ func (j *jsiiProxy_Gkeprivate) EnableVerticalPodAutoscaling() *bool {
 	return returns
 }
 
+func (j *jsiiProxy_Gkeprivate) EndpointDnsOutput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"endpointDnsOutput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Gkeprivate) EndpointOutput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"endpointOutput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Gkeprivate) EnterpriseConfig() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"enterpriseConfig",
 		&returns,
 	)
 	return returns
@@ -992,6 +1110,16 @@ func (j *jsiiProxy_Gkeprivate) GcePdCsiDriver() *bool {
 	return returns
 }
 
+func (j *jsiiProxy_Gkeprivate) GcpPublicCidrsAccessEnabled() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"gcpPublicCidrsAccessEnabled",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Gkeprivate) GcsFuseCsiDriver() *bool {
 	var returns *bool
 	_jsii_.Get(
@@ -1097,6 +1225,16 @@ func (j *jsiiProxy_Gkeprivate) InitialNodeCount() *float64 {
 	_jsii_.Get(
 		j,
 		"initialNodeCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Gkeprivate) InsecureKubeletReadonlyPortEnabled() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"insecureKubeletReadonlyPortEnabled",
 		&returns,
 	)
 	return returns
@@ -1262,6 +1400,16 @@ func (j *jsiiProxy_Gkeprivate) LoggingServiceOutput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Gkeprivate) LoggingVariant() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"loggingVariant",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Gkeprivate) MaintenanceEndTime() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1412,11 +1560,21 @@ func (j *jsiiProxy_Gkeprivate) MonitoringEnableObservabilityMetrics() *bool {
 	return returns
 }
 
-func (j *jsiiProxy_Gkeprivate) MonitoringObservabilityMetricsRelayMode() *string {
+func (j *jsiiProxy_Gkeprivate) MonitoringEnableObservabilityRelay() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"monitoringEnableObservabilityRelay",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Gkeprivate) MonitoringMetricWriterRole() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"monitoringObservabilityMetricsRelayMode",
+		"monitoringMetricWriterRole",
 		&returns,
 	)
 	return returns
@@ -1552,6 +1710,16 @@ func (j *jsiiProxy_Gkeprivate) NodePools() *[]*map[string]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Gkeprivate) NodePoolsCgroupMode() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"nodePoolsCgroupMode",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Gkeprivate) NodePoolsLabels() *map[string]*map[string]*string {
 	var returns *map[string]*map[string]*string
 	_jsii_.Get(
@@ -1612,6 +1780,16 @@ func (j *jsiiProxy_Gkeprivate) NodePoolsResourceLabels() *map[string]*map[string
 	return returns
 }
 
+func (j *jsiiProxy_Gkeprivate) NodePoolsResourceManagerTags() *map[string]*map[string]*string {
+	var returns *map[string]*map[string]*string
+	_jsii_.Get(
+		j,
+		"nodePoolsResourceManagerTags",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Gkeprivate) NodePoolsTags() *map[string]*[]*string {
 	var returns *map[string]*[]*string
 	_jsii_.Get(
@@ -1662,6 +1840,26 @@ func (j *jsiiProxy_Gkeprivate) NotificationConfigTopic() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Gkeprivate) NotificationFilterEventType() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"notificationFilterEventType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Gkeprivate) ParallelstoreCsiDriver() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"parallelstoreCsiDriver",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Gkeprivate) PeeringNameOutput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1677,6 +1875,16 @@ func (j *jsiiProxy_Gkeprivate) PodSecurityPolicyEnabledOutput() *string {
 	_jsii_.Get(
 		j,
 		"podSecurityPolicyEnabledOutput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Gkeprivate) PrivateEndpointSubnetwork() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privateEndpointSubnetwork",
 		&returns,
 	)
 	return returns
@@ -1707,6 +1915,16 @@ func (j *jsiiProxy_Gkeprivate) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Gkeprivate) RayOperatorConfig() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rayOperatorConfig",
 		&returns,
 	)
 	return returns
@@ -1797,6 +2015,16 @@ func (j *jsiiProxy_Gkeprivate) SandboxEnabled() *bool {
 	_jsii_.Get(
 		j,
 		"sandboxEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Gkeprivate) SecretManagerAddonEnabledOutput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secretManagerAddonEnabledOutput",
 		&returns,
 	)
 	return returns
@@ -1907,6 +2135,16 @@ func (j *jsiiProxy_Gkeprivate) StackType() *string {
 	_jsii_.Get(
 		j,
 		"stackType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Gkeprivate) StatefulHa() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"statefulHa",
 		&returns,
 	)
 	return returns
@@ -2086,6 +2324,14 @@ func (j *jsiiProxy_Gkeprivate)SetAdditionalIpRangePods(val *[]*string) {
 	)
 }
 
+func (j *jsiiProxy_Gkeprivate)SetAdditiveVpcScopeDnsDomain(val *string) {
+	_jsii_.Set(
+		j,
+		"additiveVpcScopeDnsDomain",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Gkeprivate)SetAddMasterWebhookFirewallRules(val *bool) {
 	_jsii_.Set(
 		j,
@@ -2106,6 +2352,14 @@ func (j *jsiiProxy_Gkeprivate)SetAuthenticatorSecurityGroup(val *string) {
 	_jsii_.Set(
 		j,
 		"authenticatorSecurityGroup",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Gkeprivate)SetBootDiskKmsKey(val *string) {
+	_jsii_.Set(
+		j,
+		"bootDiskKmsKey",
 		val,
 	)
 }
@@ -2281,6 +2535,14 @@ func (j *jsiiProxy_Gkeprivate)SetDisableLegacyMetadataEndpoints(val *bool) {
 	)
 }
 
+func (j *jsiiProxy_Gkeprivate)SetDnsAllowExternalTraffic(val *bool) {
+	_jsii_.Set(
+		j,
+		"dnsAllowExternalTraffic",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Gkeprivate)SetDnsCache(val *bool) {
 	_jsii_.Set(
 		j,
@@ -2297,6 +2559,14 @@ func (j *jsiiProxy_Gkeprivate)SetEnableBinaryAuthorization(val *bool) {
 	)
 }
 
+func (j *jsiiProxy_Gkeprivate)SetEnableCiliumClusterwideNetworkPolicy(val *bool) {
+	_jsii_.Set(
+		j,
+		"enableCiliumClusterwideNetworkPolicy",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Gkeprivate)SetEnableConfidentialNodes(val *bool) {
 	_jsii_.Set(
 		j,
@@ -2309,6 +2579,14 @@ func (j *jsiiProxy_Gkeprivate)SetEnableCostAllocation(val *bool) {
 	_jsii_.Set(
 		j,
 		"enableCostAllocation",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Gkeprivate)SetEnableDefaultNodePoolsMetadata(val *bool) {
+	_jsii_.Set(
+		j,
+		"enableDefaultNodePoolsMetadata",
 		val,
 	)
 }
@@ -2409,6 +2687,14 @@ func (j *jsiiProxy_Gkeprivate)SetEnableResourceConsumptionExport(val *bool) {
 	)
 }
 
+func (j *jsiiProxy_Gkeprivate)SetEnableSecretManagerAddon(val *bool) {
+	_jsii_.Set(
+		j,
+		"enableSecretManagerAddon",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Gkeprivate)SetEnableShieldedNodes(val *bool) {
 	_jsii_.Set(
 		j,
@@ -2429,6 +2715,14 @@ func (j *jsiiProxy_Gkeprivate)SetEnableVerticalPodAutoscaling(val *bool) {
 	_jsii_.Set(
 		j,
 		"enableVerticalPodAutoscaling",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Gkeprivate)SetEnterpriseConfig(val *string) {
+	_jsii_.Set(
+		j,
+		"enterpriseConfig",
 		val,
 	)
 }
@@ -2497,6 +2791,14 @@ func (j *jsiiProxy_Gkeprivate)SetGcePdCsiDriver(val *bool) {
 	)
 }
 
+func (j *jsiiProxy_Gkeprivate)SetGcpPublicCidrsAccessEnabled(val *bool) {
+	_jsii_.Set(
+		j,
+		"gcpPublicCidrsAccessEnabled",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Gkeprivate)SetGcsFuseCsiDriver(val *bool) {
 	_jsii_.Set(
 		j,
@@ -2549,6 +2851,14 @@ func (j *jsiiProxy_Gkeprivate)SetInitialNodeCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"initialNodeCount",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Gkeprivate)SetInsecureKubeletReadonlyPortEnabled(val *bool) {
+	_jsii_.Set(
+		j,
+		"insecureKubeletReadonlyPortEnabled",
 		val,
 	)
 }
@@ -2647,6 +2957,14 @@ func (j *jsiiProxy_Gkeprivate)SetLoggingService(val *string) {
 	)
 }
 
+func (j *jsiiProxy_Gkeprivate)SetLoggingVariant(val *string) {
+	_jsii_.Set(
+		j,
+		"loggingVariant",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Gkeprivate)SetMaintenanceEndTime(val *string) {
 	_jsii_.Set(
 		j,
@@ -2727,10 +3045,18 @@ func (j *jsiiProxy_Gkeprivate)SetMonitoringEnableObservabilityMetrics(val *bool)
 	)
 }
 
-func (j *jsiiProxy_Gkeprivate)SetMonitoringObservabilityMetricsRelayMode(val *string) {
+func (j *jsiiProxy_Gkeprivate)SetMonitoringEnableObservabilityRelay(val *bool) {
 	_jsii_.Set(
 		j,
-		"monitoringObservabilityMetricsRelayMode",
+		"monitoringEnableObservabilityRelay",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Gkeprivate)SetMonitoringMetricWriterRole(val *string) {
+	_jsii_.Set(
+		j,
+		"monitoringMetricWriterRole",
 		val,
 	)
 }
@@ -2813,6 +3139,14 @@ func (j *jsiiProxy_Gkeprivate)SetNodePools(val *[]*map[string]interface{}) {
 	)
 }
 
+func (j *jsiiProxy_Gkeprivate)SetNodePoolsCgroupMode(val *map[string]*string) {
+	_jsii_.Set(
+		j,
+		"nodePoolsCgroupMode",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Gkeprivate)SetNodePoolsLabels(val *map[string]*map[string]*string) {
 	_jsii_.Set(
 		j,
@@ -2853,6 +3187,14 @@ func (j *jsiiProxy_Gkeprivate)SetNodePoolsResourceLabels(val *map[string]*map[st
 	)
 }
 
+func (j *jsiiProxy_Gkeprivate)SetNodePoolsResourceManagerTags(val *map[string]*map[string]*string) {
+	_jsii_.Set(
+		j,
+		"nodePoolsResourceManagerTags",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Gkeprivate)SetNodePoolsTags(val *map[string]*[]*string) {
 	_jsii_.Set(
 		j,
@@ -2885,6 +3227,30 @@ func (j *jsiiProxy_Gkeprivate)SetNotificationConfigTopic(val *string) {
 	)
 }
 
+func (j *jsiiProxy_Gkeprivate)SetNotificationFilterEventType(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"notificationFilterEventType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Gkeprivate)SetParallelstoreCsiDriver(val *bool) {
+	_jsii_.Set(
+		j,
+		"parallelstoreCsiDriver",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Gkeprivate)SetPrivateEndpointSubnetwork(val *string) {
+	_jsii_.Set(
+		j,
+		"privateEndpointSubnetwork",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Gkeprivate)SetProjectId(val *string) {
 	if err := j.validateSetProjectIdParameters(val); err != nil {
 		panic(err)
@@ -2892,6 +3258,17 @@ func (j *jsiiProxy_Gkeprivate)SetProjectId(val *string) {
 	_jsii_.Set(
 		j,
 		"projectId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Gkeprivate)SetRayOperatorConfig(val interface{}) {
+	if err := j.validateSetRayOperatorConfigParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rayOperatorConfig",
 		val,
 	)
 }
@@ -3015,6 +3392,14 @@ func (j *jsiiProxy_Gkeprivate)SetStackType(val *string) {
 	_jsii_.Set(
 		j,
 		"stackType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Gkeprivate)SetStatefulHa(val *bool) {
+	_jsii_.Set(
+		j,
+		"statefulHa",
 		val,
 	)
 }

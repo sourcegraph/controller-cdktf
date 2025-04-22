@@ -9,11 +9,12 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglecloudrunv2service/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_cloud_run_v2_service google_cloud_run_v2_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/data-sources/google_cloud_run_v2_service google_cloud_run_v2_service}.
 type DataGoogleCloudRunV2Service interface {
 	cdktf.TerraformDataSource
 	Annotations() cdktf.StringMap
 	BinaryAuthorization() DataGoogleCloudRunV2ServiceBinaryAuthorizationList
+	BuildConfig() DataGoogleCloudRunV2ServiceBuildConfigList
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Client() *string
@@ -30,6 +31,7 @@ type DataGoogleCloudRunV2Service interface {
 	CustomAudiences() *[]*string
 	DefaultUriDisabled() cdktf.IResolvable
 	DeleteTime() *string
+	DeletionProtection() cdktf.IResolvable
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -48,10 +50,12 @@ type DataGoogleCloudRunV2Service interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Generation() *string
+	IapEnabled() cdktf.IResolvable
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
 	Ingress() *string
+	InvokerIamDisabled() cdktf.IResolvable
 	Labels() cdktf.StringMap
 	LastModifier() *string
 	LatestCreatedRevision() *string
@@ -95,6 +99,7 @@ type DataGoogleCloudRunV2Service interface {
 	Uid() *string
 	UpdateTime() *string
 	Uri() *string
+	Urls() *[]*string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -160,6 +165,16 @@ func (j *jsiiProxy_DataGoogleCloudRunV2Service) BinaryAuthorization() DataGoogle
 	_jsii_.Get(
 		j,
 		"binaryAuthorization",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleCloudRunV2Service) BuildConfig() DataGoogleCloudRunV2ServiceBuildConfigList {
+	var returns DataGoogleCloudRunV2ServiceBuildConfigList
+	_jsii_.Get(
+		j,
+		"buildConfig",
 		&returns,
 	)
 	return returns
@@ -275,6 +290,16 @@ func (j *jsiiProxy_DataGoogleCloudRunV2Service) DeleteTime() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleCloudRunV2Service) DeletionProtection() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"deletionProtection",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleCloudRunV2Service) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -375,6 +400,16 @@ func (j *jsiiProxy_DataGoogleCloudRunV2Service) Generation() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleCloudRunV2Service) IapEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"iapEnabled",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleCloudRunV2Service) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -400,6 +435,16 @@ func (j *jsiiProxy_DataGoogleCloudRunV2Service) Ingress() *string {
 	_jsii_.Get(
 		j,
 		"ingress",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleCloudRunV2Service) InvokerIamDisabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"invokerIamDisabled",
 		&returns,
 	)
 	return returns
@@ -695,8 +740,18 @@ func (j *jsiiProxy_DataGoogleCloudRunV2Service) Uri() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleCloudRunV2Service) Urls() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"urls",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_cloud_run_v2_service google_cloud_run_v2_service} Data Source.
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/data-sources/google_cloud_run_v2_service google_cloud_run_v2_service} Data Source.
 func NewDataGoogleCloudRunV2Service(scope constructs.Construct, id *string, config *DataGoogleCloudRunV2ServiceConfig) DataGoogleCloudRunV2Service {
 	_init_.Initialize()
 
@@ -714,7 +769,7 @@ func NewDataGoogleCloudRunV2Service(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_cloud_run_v2_service google_cloud_run_v2_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/data-sources/google_cloud_run_v2_service google_cloud_run_v2_service} Data Source.
 func NewDataGoogleCloudRunV2Service_Override(d DataGoogleCloudRunV2Service, scope constructs.Construct, id *string, config *DataGoogleCloudRunV2ServiceConfig) {
 	_init_.Initialize()
 

@@ -84,6 +84,10 @@ func (g *jsiiProxy_GoogleTpuV2Vm) validatePutNetworkConfigParameters(value *Goog
 	return nil
 }
 
+func (g *jsiiProxy_GoogleTpuV2Vm) validatePutNetworkConfigsParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleTpuV2Vm) validatePutSchedulingConfigParameters(value *GoogleTpuV2VmSchedulingConfig) error {
 	return nil
 }

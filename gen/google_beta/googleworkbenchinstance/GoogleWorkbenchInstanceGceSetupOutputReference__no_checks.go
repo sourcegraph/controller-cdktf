@@ -52,6 +52,10 @@ func (g *jsiiProxy_GoogleWorkbenchInstanceGceSetupOutputReference) validatePutBo
 	return nil
 }
 
+func (g *jsiiProxy_GoogleWorkbenchInstanceGceSetupOutputReference) validatePutConfidentialInstanceConfigParameters(value *GoogleWorkbenchInstanceGceSetupConfidentialInstanceConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleWorkbenchInstanceGceSetupOutputReference) validatePutContainerImageParameters(value *GoogleWorkbenchInstanceGceSetupContainerImage) error {
 	return nil
 }

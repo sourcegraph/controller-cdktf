@@ -67,7 +67,6 @@ type GoogleComputeInstanceFromTemplateNetworkInterfaceAliasIpRangeOutputReferenc
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetIpCidrRange()
 	ResetSubnetworkRangeName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -483,14 +482,6 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplateNetworkInterfaceAliasIpRange
 	)
 
 	return returns
-}
-
-func (g *jsiiProxy_GoogleComputeInstanceFromTemplateNetworkInterfaceAliasIpRangeOutputReference) ResetIpCidrRange() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetIpCidrRange",
-		nil, // no parameters
-	)
 }
 
 func (g *jsiiProxy_GoogleComputeInstanceFromTemplateNetworkInterfaceAliasIpRangeOutputReference) ResetSubnetworkRangeName() {

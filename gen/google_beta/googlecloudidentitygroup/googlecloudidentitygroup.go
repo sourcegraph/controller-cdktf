@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecloudidentitygroup/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_cloud_identity_group google_cloud_identity_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_cloud_identity_group google_cloud_identity_group}.
 type GoogleCloudIdentityGroup interface {
 	cdktf.TerraformResource
 	AdditionalGroupKeys() GoogleCloudIdentityGroupAdditionalGroupKeysList
@@ -516,7 +516,7 @@ func (j *jsiiProxy_GoogleCloudIdentityGroup) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_cloud_identity_group google_cloud_identity_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_cloud_identity_group google_cloud_identity_group} Resource.
 func NewGoogleCloudIdentityGroup(scope constructs.Construct, id *string, config *GoogleCloudIdentityGroupConfig) GoogleCloudIdentityGroup {
 	_init_.Initialize()
 
@@ -534,7 +534,7 @@ func NewGoogleCloudIdentityGroup(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_cloud_identity_group google_cloud_identity_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_cloud_identity_group google_cloud_identity_group} Resource.
 func NewGoogleCloudIdentityGroup_Override(g GoogleCloudIdentityGroup, scope constructs.Construct, id *string, config *GoogleCloudIdentityGroupConfig) {
 	_init_.Initialize()
 

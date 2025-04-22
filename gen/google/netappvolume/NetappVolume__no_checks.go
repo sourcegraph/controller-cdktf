@@ -88,6 +88,10 @@ func (n *jsiiProxy_NetappVolume) validatePutSnapshotPolicyParameters(value *Neta
 	return nil
 }
 
+func (n *jsiiProxy_NetappVolume) validatePutTieringPolicyParameters(value *NetappVolumeTieringPolicy) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetappVolume) validatePutTimeoutsParameters(value *NetappVolumeTimeouts) error {
 	return nil
 }
@@ -140,11 +144,19 @@ func (j *jsiiProxy_NetappVolume) validateSetLabelsParameters(val *map[string]*st
 	return nil
 }
 
+func (j *jsiiProxy_NetappVolume) validateSetLargeCapacityParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetappVolume) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
 
 func (j *jsiiProxy_NetappVolume) validateSetLocationParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NetappVolume) validateSetMultipleEndpointsParameters(val interface{}) error {
 	return nil
 }
 

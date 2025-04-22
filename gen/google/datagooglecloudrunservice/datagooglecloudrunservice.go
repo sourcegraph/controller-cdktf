@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagooglecloudrunservice/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/cloud_run_service google_cloud_run_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/data-sources/cloud_run_service google_cloud_run_service}.
 type DataGoogleCloudRunService interface {
 	cdktf.TerraformDataSource
 	AutogenerateRevisionName() cdktf.IResolvable
@@ -387,7 +387,7 @@ func (j *jsiiProxy_DataGoogleCloudRunService) Traffic() DataGoogleCloudRunServic
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/cloud_run_service google_cloud_run_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/data-sources/cloud_run_service google_cloud_run_service} Data Source.
 func NewDataGoogleCloudRunService(scope constructs.Construct, id *string, config *DataGoogleCloudRunServiceConfig) DataGoogleCloudRunService {
 	_init_.Initialize()
 
@@ -405,7 +405,7 @@ func NewDataGoogleCloudRunService(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/cloud_run_service google_cloud_run_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/data-sources/cloud_run_service google_cloud_run_service} Data Source.
 func NewDataGoogleCloudRunService_Override(d DataGoogleCloudRunService, scope constructs.Construct, id *string, config *DataGoogleCloudRunServiceConfig) {
 	_init_.Initialize()
 

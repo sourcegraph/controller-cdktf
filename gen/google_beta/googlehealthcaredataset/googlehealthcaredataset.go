@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlehealthcaredataset/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_healthcare_dataset google_healthcare_dataset}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_healthcare_dataset google_healthcare_dataset}.
 type GoogleHealthcareDataset interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -460,7 +460,7 @@ func (j *jsiiProxy_GoogleHealthcareDataset) TimeZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_healthcare_dataset google_healthcare_dataset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_healthcare_dataset google_healthcare_dataset} Resource.
 func NewGoogleHealthcareDataset(scope constructs.Construct, id *string, config *GoogleHealthcareDatasetConfig) GoogleHealthcareDataset {
 	_init_.Initialize()
 
@@ -478,7 +478,7 @@ func NewGoogleHealthcareDataset(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_healthcare_dataset google_healthcare_dataset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_healthcare_dataset google_healthcare_dataset} Resource.
 func NewGoogleHealthcareDataset_Override(g GoogleHealthcareDataset, scope constructs.Construct, id *string, config *GoogleHealthcareDatasetConfig) {
 	_init_.Initialize()
 

@@ -34,6 +34,9 @@ type GoogleMonitoringAlertPolicyAlertStrategyOutputReference interface {
 	SetInternalValue(val *GoogleMonitoringAlertPolicyAlertStrategy)
 	NotificationChannelStrategy() GoogleMonitoringAlertPolicyAlertStrategyNotificationChannelStrategyList
 	NotificationChannelStrategyInput() interface{}
+	NotificationPrompts() *[]*string
+	SetNotificationPrompts(val *[]*string)
+	NotificationPromptsInput() *[]*string
 	NotificationRateLimit() GoogleMonitoringAlertPolicyAlertStrategyNotificationRateLimitOutputReference
 	NotificationRateLimitInput() *GoogleMonitoringAlertPolicyAlertStrategyNotificationRateLimit
 	// Experimental.
@@ -72,6 +75,7 @@ type GoogleMonitoringAlertPolicyAlertStrategyOutputReference interface {
 	PutNotificationRateLimit(value *GoogleMonitoringAlertPolicyAlertStrategyNotificationRateLimit)
 	ResetAutoClose()
 	ResetNotificationChannelStrategy()
+	ResetNotificationPrompts()
 	ResetNotificationRateLimit()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -173,6 +177,26 @@ func (j *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference) Noti
 	_jsii_.Get(
 		j,
 		"notificationChannelStrategyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference) NotificationPrompts() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"notificationPrompts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference) NotificationPromptsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"notificationPromptsInput",
 		&returns,
 	)
 	return returns
@@ -286,6 +310,17 @@ func (j *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference)SetIn
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference)SetNotificationPrompts(val *[]*string) {
+	if err := j.validateSetNotificationPromptsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"notificationPrompts",
 		val,
 	)
 }
@@ -532,6 +567,14 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference) Rese
 	_jsii_.InvokeVoid(
 		g,
 		"resetNotificationChannelStrategy",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference) ResetNotificationPrompts() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNotificationPrompts",
 		nil, // no parameters
 	)
 }

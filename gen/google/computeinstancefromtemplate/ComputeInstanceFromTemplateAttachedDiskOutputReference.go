@@ -31,9 +31,13 @@ type ComputeInstanceFromTemplateAttachedDiskOutputReference interface {
 	DiskEncryptionKeyRaw() *string
 	SetDiskEncryptionKeyRaw(val *string)
 	DiskEncryptionKeyRawInput() *string
+	DiskEncryptionKeyRsa() *string
+	SetDiskEncryptionKeyRsa(val *string)
+	DiskEncryptionKeyRsaInput() *string
 	DiskEncryptionKeySha256() *string
-	SetDiskEncryptionKeySha256(val *string)
-	DiskEncryptionKeySha256Input() *string
+	DiskEncryptionServiceAccount() *string
+	SetDiskEncryptionServiceAccount(val *string)
+	DiskEncryptionServiceAccountInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -81,10 +85,10 @@ type ComputeInstanceFromTemplateAttachedDiskOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetDeviceName()
 	ResetDiskEncryptionKeyRaw()
-	ResetDiskEncryptionKeySha256()
+	ResetDiskEncryptionKeyRsa()
+	ResetDiskEncryptionServiceAccount()
 	ResetKmsKeySelfLink()
 	ResetMode()
-	ResetSource()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -170,6 +174,26 @@ func (j *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskOutputReference) DiskE
 	return returns
 }
 
+func (j *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskOutputReference) DiskEncryptionKeyRsa() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"diskEncryptionKeyRsa",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskOutputReference) DiskEncryptionKeyRsaInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"diskEncryptionKeyRsaInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskOutputReference) DiskEncryptionKeySha256() *string {
 	var returns *string
 	_jsii_.Get(
@@ -180,11 +204,21 @@ func (j *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskOutputReference) DiskE
 	return returns
 }
 
-func (j *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskOutputReference) DiskEncryptionKeySha256Input() *string {
+func (j *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskOutputReference) DiskEncryptionServiceAccount() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"diskEncryptionKeySha256Input",
+		"diskEncryptionServiceAccount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskOutputReference) DiskEncryptionServiceAccountInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"diskEncryptionServiceAccountInput",
 		&returns,
 	)
 	return returns
@@ -362,13 +396,24 @@ func (j *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskOutputReference)SetDis
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskOutputReference)SetDiskEncryptionKeySha256(val *string) {
-	if err := j.validateSetDiskEncryptionKeySha256Parameters(val); err != nil {
+func (j *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskOutputReference)SetDiskEncryptionKeyRsa(val *string) {
+	if err := j.validateSetDiskEncryptionKeyRsaParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"diskEncryptionKeySha256",
+		"diskEncryptionKeyRsa",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskOutputReference)SetDiskEncryptionServiceAccount(val *string) {
+	if err := j.validateSetDiskEncryptionServiceAccountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"diskEncryptionServiceAccount",
 		val,
 	)
 }
@@ -641,10 +686,18 @@ func (c *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskOutputReference) Reset
 	)
 }
 
-func (c *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskOutputReference) ResetDiskEncryptionKeySha256() {
+func (c *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskOutputReference) ResetDiskEncryptionKeyRsa() {
 	_jsii_.InvokeVoid(
 		c,
-		"resetDiskEncryptionKeySha256",
+		"resetDiskEncryptionKeyRsa",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskOutputReference) ResetDiskEncryptionServiceAccount() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDiskEncryptionServiceAccount",
 		nil, // no parameters
 	)
 }
@@ -661,14 +714,6 @@ func (c *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskOutputReference) Reset
 	_jsii_.InvokeVoid(
 		c,
 		"resetMode",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskOutputReference) ResetSource() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetSource",
 		nil, // no parameters
 	)
 }

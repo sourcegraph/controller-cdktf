@@ -215,6 +215,17 @@ func (g *jsiiProxy_GoogleBigqueryDataTransferConfig) validatePutEmailPreferences
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBigqueryDataTransferConfig) validatePutEncryptionConfigurationParameters(value *GoogleBigqueryDataTransferConfigEncryptionConfiguration) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigqueryDataTransferConfig) validatePutScheduleOptionsParameters(value *GoogleBigqueryDataTransferConfigScheduleOptions) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

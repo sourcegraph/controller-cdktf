@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagooglegkebackupbackupplaniampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/gke_backup_backup_plan_iam_policy google_gke_backup_backup_plan_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/data-sources/gke_backup_backup_plan_iam_policy google_gke_backup_backup_plan_iam_policy}.
 type DataGoogleGkeBackupBackupPlanIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -355,7 +355,7 @@ func (j *jsiiProxy_DataGoogleGkeBackupBackupPlanIamPolicy) TerraformResourceType
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/gke_backup_backup_plan_iam_policy google_gke_backup_backup_plan_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/data-sources/gke_backup_backup_plan_iam_policy google_gke_backup_backup_plan_iam_policy} Data Source.
 func NewDataGoogleGkeBackupBackupPlanIamPolicy(scope constructs.Construct, id *string, config *DataGoogleGkeBackupBackupPlanIamPolicyConfig) DataGoogleGkeBackupBackupPlanIamPolicy {
 	_init_.Initialize()
 
@@ -373,7 +373,7 @@ func NewDataGoogleGkeBackupBackupPlanIamPolicy(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/gke_backup_backup_plan_iam_policy google_gke_backup_backup_plan_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/data-sources/gke_backup_backup_plan_iam_policy google_gke_backup_backup_plan_iam_policy} Data Source.
 func NewDataGoogleGkeBackupBackupPlanIamPolicy_Override(d DataGoogleGkeBackupBackupPlanIamPolicy, scope constructs.Construct, id *string, config *DataGoogleGkeBackupBackupPlanIamPolicyConfig) {
 	_init_.Initialize()
 

@@ -100,6 +100,10 @@ func (g *jsiiProxy_GoogleDatastreamConnectionProfile) validatePutPrivateConnecti
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDatastreamConnectionProfile) validatePutSalesforceProfileParameters(value *GoogleDatastreamConnectionProfileSalesforceProfile) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDatastreamConnectionProfile) validatePutSqlServerProfileParameters(value *GoogleDatastreamConnectionProfileSqlServerProfile) error {
 	return nil
 }

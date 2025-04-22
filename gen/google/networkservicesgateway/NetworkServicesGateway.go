@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/networkservicesgateway/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/network_services_gateway google_network_services_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/network_services_gateway google_network_services_gateway}.
 type NetworkServicesGateway interface {
 	cdktf.TerraformResource
 	Addresses() *[]*string
@@ -42,6 +42,9 @@ type NetworkServicesGateway interface {
 	SetDescription(val *string)
 	DescriptionInput() *string
 	EffectiveLabels() cdktf.StringMap
+	EnvoyHeaders() *string
+	SetEnvoyHeaders(val *string)
+	EnvoyHeadersInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -56,6 +59,9 @@ type NetworkServicesGateway interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IpVersion() *string
+	SetIpVersion(val *string)
+	IpVersionInput() *string
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
 	LabelsInput() *map[string]*string
@@ -90,6 +96,9 @@ type NetworkServicesGateway interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RoutingMode() *string
+	SetRoutingMode(val *string)
+	RoutingModeInput() *string
 	Scope() *string
 	SetScope(val *string)
 	ScopeInput() *string
@@ -161,8 +170,10 @@ type NetworkServicesGateway interface {
 	ResetCertificateUrls()
 	ResetDeleteSwgAutogenRouterOnDestroy()
 	ResetDescription()
+	ResetEnvoyHeaders()
 	ResetGatewaySecurityPolicy()
 	ResetId()
+	ResetIpVersion()
 	ResetLabels()
 	ResetLocation()
 	ResetNetwork()
@@ -170,6 +181,7 @@ type NetworkServicesGateway interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetRoutingMode()
 	ResetScope()
 	ResetServerTlsPolicy()
 	ResetSubnetwork()
@@ -342,6 +354,26 @@ func (j *jsiiProxy_NetworkServicesGateway) EffectiveLabels() cdktf.StringMap {
 	return returns
 }
 
+func (j *jsiiProxy_NetworkServicesGateway) EnvoyHeaders() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"envoyHeaders",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesGateway) EnvoyHeadersInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"envoyHeadersInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NetworkServicesGateway) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -407,6 +439,26 @@ func (j *jsiiProxy_NetworkServicesGateway) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesGateway) IpVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesGateway) IpVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipVersionInput",
 		&returns,
 	)
 	return returns
@@ -582,6 +634,26 @@ func (j *jsiiProxy_NetworkServicesGateway) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_NetworkServicesGateway) RoutingMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routingMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesGateway) RoutingModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routingModeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NetworkServicesGateway) Scope() *string {
 	var returns *string
 	_jsii_.Get(
@@ -743,7 +815,7 @@ func (j *jsiiProxy_NetworkServicesGateway) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/network_services_gateway google_network_services_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/network_services_gateway google_network_services_gateway} Resource.
 func NewNetworkServicesGateway(scope constructs.Construct, id *string, config *NetworkServicesGatewayConfig) NetworkServicesGateway {
 	_init_.Initialize()
 
@@ -761,7 +833,7 @@ func NewNetworkServicesGateway(scope constructs.Construct, id *string, config *N
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/network_services_gateway google_network_services_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/network_services_gateway google_network_services_gateway} Resource.
 func NewNetworkServicesGateway_Override(n NetworkServicesGateway, scope constructs.Construct, id *string, config *NetworkServicesGatewayConfig) {
 	_init_.Initialize()
 
@@ -846,6 +918,17 @@ func (j *jsiiProxy_NetworkServicesGateway)SetDescription(val *string) {
 	)
 }
 
+func (j *jsiiProxy_NetworkServicesGateway)SetEnvoyHeaders(val *string) {
+	if err := j.validateSetEnvoyHeadersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"envoyHeaders",
+		val,
+	)
+}
+
 func (j *jsiiProxy_NetworkServicesGateway)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -872,6 +955,17 @@ func (j *jsiiProxy_NetworkServicesGateway)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkServicesGateway)SetIpVersion(val *string) {
+	if err := j.validateSetIpVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipVersion",
 		val,
 	)
 }
@@ -968,6 +1062,17 @@ func (j *jsiiProxy_NetworkServicesGateway)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkServicesGateway)SetRoutingMode(val *string) {
+	if err := j.validateSetRoutingModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"routingMode",
 		val,
 	)
 }
@@ -1412,6 +1517,14 @@ func (n *jsiiProxy_NetworkServicesGateway) ResetDescription() {
 	)
 }
 
+func (n *jsiiProxy_NetworkServicesGateway) ResetEnvoyHeaders() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetEnvoyHeaders",
+		nil, // no parameters
+	)
+}
+
 func (n *jsiiProxy_NetworkServicesGateway) ResetGatewaySecurityPolicy() {
 	_jsii_.InvokeVoid(
 		n,
@@ -1424,6 +1537,14 @@ func (n *jsiiProxy_NetworkServicesGateway) ResetId() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkServicesGateway) ResetIpVersion() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetIpVersion",
 		nil, // no parameters
 	)
 }
@@ -1464,6 +1585,14 @@ func (n *jsiiProxy_NetworkServicesGateway) ResetProject() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkServicesGateway) ResetRoutingMode() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetRoutingMode",
 		nil, // no parameters
 	)
 }

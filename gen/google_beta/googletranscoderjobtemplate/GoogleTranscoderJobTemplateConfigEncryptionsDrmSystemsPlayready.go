@@ -1,0 +1,6 @@
+package googletranscoderjobtemplate
+
+
+type GoogleTranscoderJobTemplateConfigEncryptionsDrmSystemsPlayready struct {
+}
+

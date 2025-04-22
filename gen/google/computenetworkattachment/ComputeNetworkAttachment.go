@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/computenetworkattachment/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_network_attachment google_compute_network_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/compute_network_attachment google_compute_network_attachment}.
 type ComputeNetworkAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -584,7 +584,7 @@ func (j *jsiiProxy_ComputeNetworkAttachment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_network_attachment google_compute_network_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/compute_network_attachment google_compute_network_attachment} Resource.
 func NewComputeNetworkAttachment(scope constructs.Construct, id *string, config *ComputeNetworkAttachmentConfig) ComputeNetworkAttachment {
 	_init_.Initialize()
 
@@ -602,7 +602,7 @@ func NewComputeNetworkAttachment(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_network_attachment google_compute_network_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/compute_network_attachment google_compute_network_attachment} Resource.
 func NewComputeNetworkAttachment_Override(c ComputeNetworkAttachment, scope constructs.Construct, id *string, config *ComputeNetworkAttachmentConfig) {
 	_init_.Initialize()
 

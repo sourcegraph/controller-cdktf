@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlenetworkconnectivityspoke/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_network_connectivity_spoke google_network_connectivity_spoke}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_network_connectivity_spoke google_network_connectivity_spoke}.
 type GoogleNetworkConnectivitySpoke interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -41,6 +41,9 @@ type GoogleNetworkConnectivitySpoke interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Group() *string
+	SetGroup(val *string)
+	GroupInput() *string
 	Hub() *string
 	SetHub(val *string)
 	HubInput() *string
@@ -56,6 +59,8 @@ type GoogleNetworkConnectivitySpoke interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	LinkedInterconnectAttachments() GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference
 	LinkedInterconnectAttachmentsInput() *GoogleNetworkConnectivitySpokeLinkedInterconnectAttachments
+	LinkedProducerVpcNetwork() GoogleNetworkConnectivitySpokeLinkedProducerVpcNetworkOutputReference
+	LinkedProducerVpcNetworkInput() *GoogleNetworkConnectivitySpokeLinkedProducerVpcNetwork
 	LinkedRouterApplianceInstances() GoogleNetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference
 	LinkedRouterApplianceInstancesInput() *GoogleNetworkConnectivitySpokeLinkedRouterApplianceInstances
 	LinkedVpcNetwork() GoogleNetworkConnectivitySpokeLinkedVpcNetworkOutputReference
@@ -139,14 +144,17 @@ type GoogleNetworkConnectivitySpoke interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutLinkedInterconnectAttachments(value *GoogleNetworkConnectivitySpokeLinkedInterconnectAttachments)
+	PutLinkedProducerVpcNetwork(value *GoogleNetworkConnectivitySpokeLinkedProducerVpcNetwork)
 	PutLinkedRouterApplianceInstances(value *GoogleNetworkConnectivitySpokeLinkedRouterApplianceInstances)
 	PutLinkedVpcNetwork(value *GoogleNetworkConnectivitySpokeLinkedVpcNetwork)
 	PutLinkedVpnTunnels(value *GoogleNetworkConnectivitySpokeLinkedVpnTunnels)
 	PutTimeouts(value *GoogleNetworkConnectivitySpokeTimeouts)
 	ResetDescription()
+	ResetGroup()
 	ResetId()
 	ResetLabels()
 	ResetLinkedInterconnectAttachments()
+	ResetLinkedProducerVpcNetwork()
 	ResetLinkedRouterApplianceInstances()
 	ResetLinkedVpcNetwork()
 	ResetLinkedVpnTunnels()
@@ -293,6 +301,26 @@ func (j *jsiiProxy_GoogleNetworkConnectivitySpoke) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleNetworkConnectivitySpoke) Group() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"group",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkConnectivitySpoke) GroupInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"groupInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleNetworkConnectivitySpoke) Hub() *string {
 	var returns *string
 	_jsii_.Get(
@@ -378,6 +406,26 @@ func (j *jsiiProxy_GoogleNetworkConnectivitySpoke) LinkedInterconnectAttachments
 	_jsii_.Get(
 		j,
 		"linkedInterconnectAttachmentsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkConnectivitySpoke) LinkedProducerVpcNetwork() GoogleNetworkConnectivitySpokeLinkedProducerVpcNetworkOutputReference {
+	var returns GoogleNetworkConnectivitySpokeLinkedProducerVpcNetworkOutputReference
+	_jsii_.Get(
+		j,
+		"linkedProducerVpcNetwork",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkConnectivitySpoke) LinkedProducerVpcNetworkInput() *GoogleNetworkConnectivitySpokeLinkedProducerVpcNetwork {
+	var returns *GoogleNetworkConnectivitySpokeLinkedProducerVpcNetwork
+	_jsii_.Get(
+		j,
+		"linkedProducerVpcNetworkInput",
 		&returns,
 	)
 	return returns
@@ -634,7 +682,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivitySpoke) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_network_connectivity_spoke google_network_connectivity_spoke} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_network_connectivity_spoke google_network_connectivity_spoke} Resource.
 func NewGoogleNetworkConnectivitySpoke(scope constructs.Construct, id *string, config *GoogleNetworkConnectivitySpokeConfig) GoogleNetworkConnectivitySpoke {
 	_init_.Initialize()
 
@@ -652,7 +700,7 @@ func NewGoogleNetworkConnectivitySpoke(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_network_connectivity_spoke google_network_connectivity_spoke} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_network_connectivity_spoke google_network_connectivity_spoke} Resource.
 func NewGoogleNetworkConnectivitySpoke_Override(g GoogleNetworkConnectivitySpoke, scope constructs.Construct, id *string, config *GoogleNetworkConnectivitySpokeConfig) {
 	_init_.Initialize()
 
@@ -708,6 +756,17 @@ func (j *jsiiProxy_GoogleNetworkConnectivitySpoke)SetForEach(val cdktf.ITerrafor
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleNetworkConnectivitySpoke)SetGroup(val *string) {
+	if err := j.validateSetGroupParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"group",
 		val,
 	)
 }
@@ -1172,6 +1231,17 @@ func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) PutLinkedInterconnectAttachme
 	)
 }
 
+func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) PutLinkedProducerVpcNetwork(value *GoogleNetworkConnectivitySpokeLinkedProducerVpcNetwork) {
+	if err := g.validatePutLinkedProducerVpcNetworkParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putLinkedProducerVpcNetwork",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) PutLinkedRouterApplianceInstances(value *GoogleNetworkConnectivitySpokeLinkedRouterApplianceInstances) {
 	if err := g.validatePutLinkedRouterApplianceInstancesParameters(value); err != nil {
 		panic(err)
@@ -1224,6 +1294,14 @@ func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) ResetDescription() {
 	)
 }
 
+func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) ResetGroup() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetGroup",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1244,6 +1322,14 @@ func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) ResetLinkedInterconnectAttach
 	_jsii_.InvokeVoid(
 		g,
 		"resetLinkedInterconnectAttachments",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) ResetLinkedProducerVpcNetwork() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLinkedProducerVpcNetwork",
 		nil, // no parameters
 	)
 }

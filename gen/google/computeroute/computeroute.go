@@ -9,9 +9,10 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/computeroute/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_route google_compute_route}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/compute_route google_compute_route}.
 type ComputeRoute interface {
 	cdktf.TerraformResource
+	AsPaths() ComputeRouteAsPathsList
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -24,6 +25,7 @@ type ComputeRoute interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreationTimestamp() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -58,6 +60,7 @@ type ComputeRoute interface {
 	NextHopGateway() *string
 	SetNextHopGateway(val *string)
 	NextHopGatewayInput() *string
+	NextHopHub() *string
 	NextHopIlb() *string
 	SetNextHopIlb(val *string)
 	NextHopIlbInput() *string
@@ -67,10 +70,14 @@ type ComputeRoute interface {
 	NextHopInstanceZone() *string
 	SetNextHopInstanceZone(val *string)
 	NextHopInstanceZoneInput() *string
+	NextHopInterRegionCost() *string
 	NextHopIp() *string
 	SetNextHopIp(val *string)
 	NextHopIpInput() *string
+	NextHopMed() *string
 	NextHopNetwork() *string
+	NextHopOrigin() *string
+	NextHopPeering() *string
 	NextHopVpnTunnel() *string
 	SetNextHopVpnTunnel(val *string)
 	NextHopVpnTunnelInput() *string
@@ -92,6 +99,8 @@ type ComputeRoute interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RouteStatus() *string
+	RouteType() *string
 	SelfLink() *string
 	Tags() *[]*string
 	SetTags(val *[]*string)
@@ -104,6 +113,7 @@ type ComputeRoute interface {
 	TerraformResourceType() *string
 	Timeouts() ComputeRouteTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	Warnings() ComputeRouteWarningsList
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -181,6 +191,16 @@ type jsiiProxy_ComputeRoute struct {
 	internal.Type__cdktfTerraformResource
 }
 
+func (j *jsiiProxy_ComputeRoute) AsPaths() ComputeRouteAsPathsList {
+	var returns ComputeRouteAsPathsList
+	_jsii_.Get(
+		j,
+		"asPaths",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeRoute) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
@@ -216,6 +236,16 @@ func (j *jsiiProxy_ComputeRoute) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRoute) CreationTimestamp() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"creationTimestamp",
 		&returns,
 	)
 	return returns
@@ -391,6 +421,16 @@ func (j *jsiiProxy_ComputeRoute) NextHopGatewayInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeRoute) NextHopHub() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nextHopHub",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeRoute) NextHopIlb() *string {
 	var returns *string
 	_jsii_.Get(
@@ -451,6 +491,16 @@ func (j *jsiiProxy_ComputeRoute) NextHopInstanceZoneInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeRoute) NextHopInterRegionCost() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nextHopInterRegionCost",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeRoute) NextHopIp() *string {
 	var returns *string
 	_jsii_.Get(
@@ -471,11 +521,41 @@ func (j *jsiiProxy_ComputeRoute) NextHopIpInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeRoute) NextHopMed() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nextHopMed",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeRoute) NextHopNetwork() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"nextHopNetwork",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRoute) NextHopOrigin() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nextHopOrigin",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRoute) NextHopPeering() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nextHopPeering",
 		&returns,
 	)
 	return returns
@@ -581,6 +661,26 @@ func (j *jsiiProxy_ComputeRoute) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeRoute) RouteStatus() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routeStatus",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRoute) RouteType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routeType",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeRoute) SelfLink() *string {
 	var returns *string
 	_jsii_.Get(
@@ -661,8 +761,18 @@ func (j *jsiiProxy_ComputeRoute) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeRoute) Warnings() ComputeRouteWarningsList {
+	var returns ComputeRouteWarningsList
+	_jsii_.Get(
+		j,
+		"warnings",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_route google_compute_route} Resource.
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/compute_route google_compute_route} Resource.
 func NewComputeRoute(scope constructs.Construct, id *string, config *ComputeRouteConfig) ComputeRoute {
 	_init_.Initialize()
 
@@ -680,7 +790,7 @@ func NewComputeRoute(scope constructs.Construct, id *string, config *ComputeRout
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_route google_compute_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/compute_route google_compute_route} Resource.
 func NewComputeRoute_Override(c ComputeRoute, scope constructs.Construct, id *string, config *ComputeRouteConfig) {
 	_init_.Initialize()
 

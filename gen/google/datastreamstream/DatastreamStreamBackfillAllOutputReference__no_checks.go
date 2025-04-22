@@ -56,6 +56,14 @@ func (d *jsiiProxy_DatastreamStreamBackfillAllOutputReference) validatePutPostgr
 	return nil
 }
 
+func (d *jsiiProxy_DatastreamStreamBackfillAllOutputReference) validatePutSalesforceExcludedObjectsParameters(value *DatastreamStreamBackfillAllSalesforceExcludedObjects) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatastreamStreamBackfillAllOutputReference) validatePutSqlServerExcludedObjectsParameters(value *DatastreamStreamBackfillAllSqlServerExcludedObjects) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatastreamStreamBackfillAllOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

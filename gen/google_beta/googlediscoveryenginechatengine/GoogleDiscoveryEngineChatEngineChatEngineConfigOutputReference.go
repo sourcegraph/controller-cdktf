@@ -27,6 +27,9 @@ type GoogleDiscoveryEngineChatEngineChatEngineConfigOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DialogflowAgentToLink() *string
+	SetDialogflowAgentToLink(val *string)
+	DialogflowAgentToLinkInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleDiscoveryEngineChatEngineChatEngineConfig
@@ -64,6 +67,8 @@ type GoogleDiscoveryEngineChatEngineChatEngineConfigOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAgentCreationConfig(value *GoogleDiscoveryEngineChatEngineChatEngineConfigAgentCreationConfig)
+	ResetAgentCreationConfig()
+	ResetDialogflowAgentToLink()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -124,6 +129,26 @@ func (j *jsiiProxy_GoogleDiscoveryEngineChatEngineChatEngineConfigOutputReferenc
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDiscoveryEngineChatEngineChatEngineConfigOutputReference) DialogflowAgentToLink() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dialogflowAgentToLink",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDiscoveryEngineChatEngineChatEngineConfigOutputReference) DialogflowAgentToLinkInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dialogflowAgentToLinkInput",
 		&returns,
 	)
 	return returns
@@ -215,6 +240,17 @@ func (j *jsiiProxy_GoogleDiscoveryEngineChatEngineChatEngineConfigOutputReferenc
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDiscoveryEngineChatEngineChatEngineConfigOutputReference)SetDialogflowAgentToLink(val *string) {
+	if err := j.validateSetDialogflowAgentToLinkParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dialogflowAgentToLink",
 		val,
 	)
 }
@@ -446,6 +482,22 @@ func (g *jsiiProxy_GoogleDiscoveryEngineChatEngineChatEngineConfigOutputReferenc
 		g,
 		"putAgentCreationConfig",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDiscoveryEngineChatEngineChatEngineConfigOutputReference) ResetAgentCreationConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAgentCreationConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDiscoveryEngineChatEngineChatEngineConfigOutputReference) ResetDialogflowAgentToLink() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDialogflowAgentToLink",
+		nil, // no parameters
 	)
 }
 

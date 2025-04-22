@@ -1,0 +1,6 @@
+package googlenetworksecurityinterceptendpointgroup
+
+
+type GoogleNetworkSecurityInterceptEndpointGroupConnectedDeploymentGroup struct {
+}
+

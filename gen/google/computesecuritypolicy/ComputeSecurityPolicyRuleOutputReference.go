@@ -39,6 +39,8 @@ type ComputeSecurityPolicyRuleOutputReference interface {
 	SetInternalValue(val interface{})
 	Match() ComputeSecurityPolicyRuleMatchOutputReference
 	MatchInput() *ComputeSecurityPolicyRuleMatch
+	PreconfiguredWafConfig() ComputeSecurityPolicyRulePreconfiguredWafConfigOutputReference
+	PreconfiguredWafConfigInput() *ComputeSecurityPolicyRulePreconfiguredWafConfig
 	Preview() interface{}
 	SetPreview(val interface{})
 	PreviewInput() interface{}
@@ -83,10 +85,12 @@ type ComputeSecurityPolicyRuleOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutHeaderAction(value *ComputeSecurityPolicyRuleHeaderAction)
 	PutMatch(value *ComputeSecurityPolicyRuleMatch)
+	PutPreconfiguredWafConfig(value *ComputeSecurityPolicyRulePreconfiguredWafConfig)
 	PutRateLimitOptions(value *ComputeSecurityPolicyRuleRateLimitOptions)
 	PutRedirectOptions(value *ComputeSecurityPolicyRuleRedirectOptions)
 	ResetDescription()
 	ResetHeaderAction()
+	ResetPreconfiguredWafConfig()
 	ResetPreview()
 	ResetRateLimitOptions()
 	ResetRedirectOptions()
@@ -230,6 +234,26 @@ func (j *jsiiProxy_ComputeSecurityPolicyRuleOutputReference) MatchInput() *Compu
 	_jsii_.Get(
 		j,
 		"matchInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeSecurityPolicyRuleOutputReference) PreconfiguredWafConfig() ComputeSecurityPolicyRulePreconfiguredWafConfigOutputReference {
+	var returns ComputeSecurityPolicyRulePreconfiguredWafConfigOutputReference
+	_jsii_.Get(
+		j,
+		"preconfiguredWafConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeSecurityPolicyRuleOutputReference) PreconfiguredWafConfigInput() *ComputeSecurityPolicyRulePreconfiguredWafConfig {
+	var returns *ComputeSecurityPolicyRulePreconfiguredWafConfig
+	_jsii_.Get(
+		j,
+		"preconfiguredWafConfigInput",
 		&returns,
 	)
 	return returns
@@ -670,6 +694,17 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleOutputReference) PutMatch(value *Com
 	)
 }
 
+func (c *jsiiProxy_ComputeSecurityPolicyRuleOutputReference) PutPreconfiguredWafConfig(value *ComputeSecurityPolicyRulePreconfiguredWafConfig) {
+	if err := c.validatePutPreconfiguredWafConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putPreconfiguredWafConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeSecurityPolicyRuleOutputReference) PutRateLimitOptions(value *ComputeSecurityPolicyRuleRateLimitOptions) {
 	if err := c.validatePutRateLimitOptionsParameters(value); err != nil {
 		panic(err)
@@ -704,6 +739,14 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleOutputReference) ResetHeaderAction()
 	_jsii_.InvokeVoid(
 		c,
 		"resetHeaderAction",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeSecurityPolicyRuleOutputReference) ResetPreconfiguredWafConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetPreconfiguredWafConfig",
 		nil, // no parameters
 	)
 }

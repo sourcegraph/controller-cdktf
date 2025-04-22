@@ -4,11 +4,11 @@ package googlecomputeurlmap
 type GoogleComputeUrlMapPathMatcherRouteRulesRouteActionRetryPolicy struct {
 	// Specifies the allowed number retries. This number must be > 0.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_url_map#num_retries GoogleComputeUrlMap#num_retries}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_url_map#num_retries GoogleComputeUrlMap#num_retries}
 	NumRetries *float64 `field:"required" json:"numRetries" yaml:"numRetries"`
 	// per_try_timeout block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_url_map#per_try_timeout GoogleComputeUrlMap#per_try_timeout}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_url_map#per_try_timeout GoogleComputeUrlMap#per_try_timeout}
 	PerTryTimeout *GoogleComputeUrlMapPathMatcherRouteRulesRouteActionRetryPolicyPerTryTimeout `field:"optional" json:"perTryTimeout" yaml:"perTryTimeout"`
 	// Specfies one or more conditions when this retry rule applies. Valid values are:.
 	//
@@ -33,7 +33,7 @@ type GoogleComputeUrlMapPathMatcherRouteRulesRouteActionRetryPolicy struct {
 	// * unavailable: Loadbalancer will retry if the gRPC status code in
 	//   the response header is set to unavailable
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_url_map#retry_conditions GoogleComputeUrlMap#retry_conditions}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_url_map#retry_conditions GoogleComputeUrlMap#retry_conditions}
 	RetryConditions *[]*string `field:"optional" json:"retryConditions" yaml:"retryConditions"`
 }
 

@@ -215,6 +215,17 @@ func (g *jsiiProxy_GoogleFilestoreInstance) validatePutFileSharesParameters(valu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleFilestoreInstance) validatePutInitialReplicationParameters(value *GoogleFilestoreInstanceInitialReplication) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFilestoreInstance) validatePutNetworksParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -241,6 +252,17 @@ func (g *jsiiProxy_GoogleFilestoreInstance) validatePutNetworksParameters(value 
 		if !_jsii_.IsAnonymousProxy(value) {
 			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*GoogleFilestoreInstanceNetworks; received %#v (a %T)", value, value)
 		}
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleFilestoreInstance) validatePutPerformanceConfigParameters(value *GoogleFilestoreInstancePerformanceConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil
@@ -387,6 +409,34 @@ func (j *jsiiProxy_GoogleFilestoreInstance) validateSetCountParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_GoogleFilestoreInstance) validateSetDeletionProtectionEnabledParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleFilestoreInstance) validateSetDeletionProtectionReasonParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleFilestoreInstance) validateSetDescriptionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -500,6 +550,14 @@ func (j *jsiiProxy_GoogleFilestoreInstance) validateSetProvisionersParameters(va
 				return fmt.Errorf("parameter val[%#v] must be one of the allowed types: *cdktf.FileProvisioner, *cdktf.LocalExecProvisioner, *cdktf.RemoteExecProvisioner; received %#v (a %T)", idx_97dfc6, v, v)
 			}
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleFilestoreInstance) validateSetTagsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

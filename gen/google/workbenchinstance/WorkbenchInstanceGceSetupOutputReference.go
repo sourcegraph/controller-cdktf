@@ -24,6 +24,8 @@ type WorkbenchInstanceGceSetupOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ConfidentialInstanceConfig() WorkbenchInstanceGceSetupConfidentialInstanceConfigOutputReference
+	ConfidentialInstanceConfigInput() *WorkbenchInstanceGceSetupConfidentialInstanceConfig
 	ContainerImage() WorkbenchInstanceGceSetupContainerImageOutputReference
 	ContainerImageInput() *WorkbenchInstanceGceSetupContainerImage
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
@@ -94,6 +96,7 @@ type WorkbenchInstanceGceSetupOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAcceleratorConfigs(value interface{})
 	PutBootDisk(value *WorkbenchInstanceGceSetupBootDisk)
+	PutConfidentialInstanceConfig(value *WorkbenchInstanceGceSetupConfidentialInstanceConfig)
 	PutContainerImage(value *WorkbenchInstanceGceSetupContainerImage)
 	PutDataDisks(value *WorkbenchInstanceGceSetupDataDisks)
 	PutNetworkInterfaces(value interface{})
@@ -102,6 +105,7 @@ type WorkbenchInstanceGceSetupOutputReference interface {
 	PutVmImage(value *WorkbenchInstanceGceSetupVmImage)
 	ResetAcceleratorConfigs()
 	ResetBootDisk()
+	ResetConfidentialInstanceConfig()
 	ResetContainerImage()
 	ResetDataDisks()
 	ResetDisablePublicIp()
@@ -183,6 +187,26 @@ func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) ComplexObjectIsFrom
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) ConfidentialInstanceConfig() WorkbenchInstanceGceSetupConfidentialInstanceConfigOutputReference {
+	var returns WorkbenchInstanceGceSetupConfidentialInstanceConfigOutputReference
+	_jsii_.Get(
+		j,
+		"confidentialInstanceConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) ConfidentialInstanceConfigInput() *WorkbenchInstanceGceSetupConfidentialInstanceConfig {
+	var returns *WorkbenchInstanceGceSetupConfidentialInstanceConfig
+	_jsii_.Get(
+		j,
+		"confidentialInstanceConfigInput",
 		&returns,
 	)
 	return returns
@@ -804,6 +828,17 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) PutBootDisk(value *
 	)
 }
 
+func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) PutConfidentialInstanceConfig(value *WorkbenchInstanceGceSetupConfidentialInstanceConfig) {
+	if err := w.validatePutConfidentialInstanceConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putConfidentialInstanceConfig",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) PutContainerImage(value *WorkbenchInstanceGceSetupContainerImage) {
 	if err := w.validatePutContainerImageParameters(value); err != nil {
 		panic(err)
@@ -882,6 +917,14 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) ResetBootDisk() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetBootDisk",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) ResetConfidentialInstanceConfig() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetConfidentialInstanceConfig",
 		nil, // no parameters
 	)
 }

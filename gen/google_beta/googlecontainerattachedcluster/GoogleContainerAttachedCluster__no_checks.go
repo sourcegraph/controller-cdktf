@@ -100,6 +100,10 @@ func (g *jsiiProxy_GoogleContainerAttachedCluster) validatePutProxyConfigParamet
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerAttachedCluster) validatePutSecurityPostureConfigParameters(value *GoogleContainerAttachedClusterSecurityPostureConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerAttachedCluster) validatePutTimeoutsParameters(value *GoogleContainerAttachedClusterTimeouts) error {
 	return nil
 }

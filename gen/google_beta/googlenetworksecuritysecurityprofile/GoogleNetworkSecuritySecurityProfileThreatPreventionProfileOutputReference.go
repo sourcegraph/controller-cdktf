@@ -10,6 +10,8 @@ import (
 
 type GoogleNetworkSecuritySecurityProfileThreatPreventionProfileOutputReference interface {
 	cdktf.ComplexObject
+	AntivirusOverrides() GoogleNetworkSecuritySecurityProfileThreatPreventionProfileAntivirusOverridesList
+	AntivirusOverridesInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -65,8 +67,10 @@ type GoogleNetworkSecuritySecurityProfileThreatPreventionProfileOutputReference 
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAntivirusOverrides(value interface{})
 	PutSeverityOverrides(value interface{})
 	PutThreatOverrides(value interface{})
+	ResetAntivirusOverrides()
 	ResetSeverityOverrides()
 	ResetThreatOverrides()
 	// Produce the Token's value at resolution time.
@@ -82,6 +86,26 @@ type GoogleNetworkSecuritySecurityProfileThreatPreventionProfileOutputReference 
 // The jsii proxy struct for GoogleNetworkSecuritySecurityProfileThreatPreventionProfileOutputReference
 type jsiiProxy_GoogleNetworkSecuritySecurityProfileThreatPreventionProfileOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GoogleNetworkSecuritySecurityProfileThreatPreventionProfileOutputReference) AntivirusOverrides() GoogleNetworkSecuritySecurityProfileThreatPreventionProfileAntivirusOverridesList {
+	var returns GoogleNetworkSecuritySecurityProfileThreatPreventionProfileAntivirusOverridesList
+	_jsii_.Get(
+		j,
+		"antivirusOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkSecuritySecurityProfileThreatPreventionProfileOutputReference) AntivirusOverridesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"antivirusOverridesInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleNetworkSecuritySecurityProfileThreatPreventionProfileOutputReference) ComplexObjectIndex() interface{} {
@@ -463,6 +487,17 @@ func (g *jsiiProxy_GoogleNetworkSecuritySecurityProfileThreatPreventionProfileOu
 	return returns
 }
 
+func (g *jsiiProxy_GoogleNetworkSecuritySecurityProfileThreatPreventionProfileOutputReference) PutAntivirusOverrides(value interface{}) {
+	if err := g.validatePutAntivirusOverridesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAntivirusOverrides",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleNetworkSecuritySecurityProfileThreatPreventionProfileOutputReference) PutSeverityOverrides(value interface{}) {
 	if err := g.validatePutSeverityOverridesParameters(value); err != nil {
 		panic(err)
@@ -482,6 +517,14 @@ func (g *jsiiProxy_GoogleNetworkSecuritySecurityProfileThreatPreventionProfileOu
 		g,
 		"putThreatOverrides",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleNetworkSecuritySecurityProfileThreatPreventionProfileOutputReference) ResetAntivirusOverrides() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAntivirusOverrides",
+		nil, // no parameters
 	)
 }
 

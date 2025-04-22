@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/dataproccluster/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/dataproc_cluster google_dataproc_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/dataproc_cluster google_dataproc_cluster}.
 type DataprocCluster interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -520,7 +520,7 @@ func (j *jsiiProxy_DataprocCluster) VirtualClusterConfigInput() *DataprocCluster
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/dataproc_cluster google_dataproc_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/dataproc_cluster google_dataproc_cluster} Resource.
 func NewDataprocCluster(scope constructs.Construct, id *string, config *DataprocClusterConfig) DataprocCluster {
 	_init_.Initialize()
 
@@ -538,7 +538,7 @@ func NewDataprocCluster(scope constructs.Construct, id *string, config *Dataproc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/dataproc_cluster google_dataproc_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/dataproc_cluster google_dataproc_cluster} Resource.
 func NewDataprocCluster_Override(d DataprocCluster, scope constructs.Construct, id *string, config *DataprocClusterConfig) {
 	_init_.Initialize()
 

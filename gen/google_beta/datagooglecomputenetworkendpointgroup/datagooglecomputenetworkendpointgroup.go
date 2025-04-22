@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglecomputenetworkendpointgroup/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_compute_network_endpoint_group google_compute_network_endpoint_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/data-sources/google_compute_network_endpoint_group google_compute_network_endpoint_group}.
 type DataGoogleComputeNetworkEndpointGroup interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -424,7 +424,7 @@ func (j *jsiiProxy_DataGoogleComputeNetworkEndpointGroup) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_compute_network_endpoint_group google_compute_network_endpoint_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/data-sources/google_compute_network_endpoint_group google_compute_network_endpoint_group} Data Source.
 func NewDataGoogleComputeNetworkEndpointGroup(scope constructs.Construct, id *string, config *DataGoogleComputeNetworkEndpointGroupConfig) DataGoogleComputeNetworkEndpointGroup {
 	_init_.Initialize()
 
@@ -442,7 +442,7 @@ func NewDataGoogleComputeNetworkEndpointGroup(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_compute_network_endpoint_group google_compute_network_endpoint_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/data-sources/google_compute_network_endpoint_group google_compute_network_endpoint_group} Data Source.
 func NewDataGoogleComputeNetworkEndpointGroup_Override(d DataGoogleComputeNetworkEndpointGroup, scope constructs.Construct, id *string, config *DataGoogleComputeNetworkEndpointGroupConfig) {
 	_init_.Initialize()
 

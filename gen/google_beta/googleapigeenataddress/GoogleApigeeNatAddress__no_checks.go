@@ -92,6 +92,10 @@ func validateGoogleApigeeNatAddress_IsTerraformResourceParameters(x interface{})
 	return nil
 }
 
+func (j *jsiiProxy_GoogleApigeeNatAddress) validateSetActivateParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleApigeeNatAddress) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

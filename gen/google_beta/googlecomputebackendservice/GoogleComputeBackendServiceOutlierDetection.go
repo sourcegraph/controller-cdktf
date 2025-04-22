@@ -4,7 +4,7 @@ package googlecomputebackendservice
 type GoogleComputeBackendServiceOutlierDetection struct {
 	// base_ejection_time block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_backend_service#base_ejection_time GoogleComputeBackendService#base_ejection_time}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_backend_service#base_ejection_time GoogleComputeBackendService#base_ejection_time}
 	BaseEjectionTime *GoogleComputeBackendServiceOutlierDetectionBaseEjectionTime `field:"optional" json:"baseEjectionTime" yaml:"baseEjectionTime"`
 	// Number of errors before a host is ejected from the connection pool.
 	//
@@ -12,42 +12,42 @@ type GoogleComputeBackendServiceOutlierDetection struct {
 	// backend host is accessed over HTTP, a 5xx return code qualifies as an error.
 	// Defaults to 5.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_backend_service#consecutive_errors GoogleComputeBackendService#consecutive_errors}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_backend_service#consecutive_errors GoogleComputeBackendService#consecutive_errors}
 	ConsecutiveErrors *float64 `field:"optional" json:"consecutiveErrors" yaml:"consecutiveErrors"`
 	// The number of consecutive gateway failures (502, 503, 504 status or connection errors that are mapped to one of those status codes) before a consecutive gateway failure ejection occurs.
 	//
 	// Defaults to 5.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_backend_service#consecutive_gateway_failure GoogleComputeBackendService#consecutive_gateway_failure}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_backend_service#consecutive_gateway_failure GoogleComputeBackendService#consecutive_gateway_failure}
 	ConsecutiveGatewayFailure *float64 `field:"optional" json:"consecutiveGatewayFailure" yaml:"consecutiveGatewayFailure"`
 	// The percentage chance that a host will be actually ejected when an outlier status is detected through consecutive 5xx.
 	//
 	// This setting can be used to disable
 	// ejection or to ramp it up slowly. Defaults to 100.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_backend_service#enforcing_consecutive_errors GoogleComputeBackendService#enforcing_consecutive_errors}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_backend_service#enforcing_consecutive_errors GoogleComputeBackendService#enforcing_consecutive_errors}
 	EnforcingConsecutiveErrors *float64 `field:"optional" json:"enforcingConsecutiveErrors" yaml:"enforcingConsecutiveErrors"`
 	// The percentage chance that a host will be actually ejected when an outlier status is detected through consecutive gateway failures.
 	//
 	// This setting can be
 	// used to disable ejection or to ramp it up slowly. Defaults to 0.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_backend_service#enforcing_consecutive_gateway_failure GoogleComputeBackendService#enforcing_consecutive_gateway_failure}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_backend_service#enforcing_consecutive_gateway_failure GoogleComputeBackendService#enforcing_consecutive_gateway_failure}
 	EnforcingConsecutiveGatewayFailure *float64 `field:"optional" json:"enforcingConsecutiveGatewayFailure" yaml:"enforcingConsecutiveGatewayFailure"`
 	// The percentage chance that a host will be actually ejected when an outlier status is detected through success rate statistics.
 	//
 	// This setting can be used to
 	// disable ejection or to ramp it up slowly. Defaults to 100.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_backend_service#enforcing_success_rate GoogleComputeBackendService#enforcing_success_rate}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_backend_service#enforcing_success_rate GoogleComputeBackendService#enforcing_success_rate}
 	EnforcingSuccessRate *float64 `field:"optional" json:"enforcingSuccessRate" yaml:"enforcingSuccessRate"`
 	// interval block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_backend_service#interval GoogleComputeBackendService#interval}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_backend_service#interval GoogleComputeBackendService#interval}
 	Interval *GoogleComputeBackendServiceOutlierDetectionInterval `field:"optional" json:"interval" yaml:"interval"`
 	// Maximum percentage of hosts in the load balancing pool for the backend service that can be ejected. Defaults to 10%.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_backend_service#max_ejection_percent GoogleComputeBackendService#max_ejection_percent}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_backend_service#max_ejection_percent GoogleComputeBackendService#max_ejection_percent}
 	MaxEjectionPercent *float64 `field:"optional" json:"maxEjectionPercent" yaml:"maxEjectionPercent"`
 	// The number of hosts in a cluster that must have enough request volume to detect success rate outliers.
 	//
@@ -55,7 +55,7 @@ type GoogleComputeBackendServiceOutlierDetection struct {
 	// detection via success rate statistics is not performed for any host in the
 	// cluster. Defaults to 5.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_backend_service#success_rate_minimum_hosts GoogleComputeBackendService#success_rate_minimum_hosts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_backend_service#success_rate_minimum_hosts GoogleComputeBackendService#success_rate_minimum_hosts}
 	SuccessRateMinimumHosts *float64 `field:"optional" json:"successRateMinimumHosts" yaml:"successRateMinimumHosts"`
 	// The minimum number of total requests that must be collected in one interval (as defined by the interval duration above) to include this host in success rate based outlier detection.
 	//
@@ -63,7 +63,7 @@ type GoogleComputeBackendServiceOutlierDetection struct {
 	// detection via success rate statistics is not performed for that host. Defaults
 	// to 100.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_backend_service#success_rate_request_volume GoogleComputeBackendService#success_rate_request_volume}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_backend_service#success_rate_request_volume GoogleComputeBackendService#success_rate_request_volume}
 	SuccessRateRequestVolume *float64 `field:"optional" json:"successRateRequestVolume" yaml:"successRateRequestVolume"`
 	// This factor is used to determine the ejection threshold for success rate outlier ejection.
 	//
@@ -73,7 +73,7 @@ type GoogleComputeBackendServiceOutlierDetection struct {
 	// by a thousand to get a double. That is, if the desired factor is 1.9, the
 	// runtime value should be 1900. Defaults to 1900.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_backend_service#success_rate_stdev_factor GoogleComputeBackendService#success_rate_stdev_factor}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_backend_service#success_rate_stdev_factor GoogleComputeBackendService#success_rate_stdev_factor}
 	SuccessRateStdevFactor *float64 `field:"optional" json:"successRateStdevFactor" yaml:"successRateStdevFactor"`
 }
 

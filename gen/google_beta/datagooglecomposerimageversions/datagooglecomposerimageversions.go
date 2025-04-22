@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglecomposerimageversions/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_composer_image_versions google_composer_image_versions}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/data-sources/google_composer_image_versions google_composer_image_versions}.
 type DataGoogleComposerImageVersions interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -321,7 +321,7 @@ func (j *jsiiProxy_DataGoogleComposerImageVersions) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_composer_image_versions google_composer_image_versions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/data-sources/google_composer_image_versions google_composer_image_versions} Data Source.
 func NewDataGoogleComposerImageVersions(scope constructs.Construct, id *string, config *DataGoogleComposerImageVersionsConfig) DataGoogleComposerImageVersions {
 	_init_.Initialize()
 
@@ -339,7 +339,7 @@ func NewDataGoogleComposerImageVersions(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_composer_image_versions google_composer_image_versions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/data-sources/google_composer_image_versions google_composer_image_versions} Data Source.
 func NewDataGoogleComposerImageVersions_Override(d DataGoogleComposerImageVersions, scope constructs.Construct, id *string, config *DataGoogleComposerImageVersionsConfig) {
 	_init_.Initialize()
 

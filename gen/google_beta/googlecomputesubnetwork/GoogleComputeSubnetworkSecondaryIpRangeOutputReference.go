@@ -35,6 +35,9 @@ type GoogleComputeSubnetworkSecondaryIpRangeOutputReference interface {
 	RangeName() *string
 	SetRangeName(val *string)
 	RangeNameInput() *string
+	ReservedInternalRange() *string
+	SetReservedInternalRange(val *string)
+	ReservedInternalRangeInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -68,7 +71,7 @@ type GoogleComputeSubnetworkSecondaryIpRangeOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetIpCidrRange()
-	ResetRangeName()
+	ResetReservedInternalRange()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -174,6 +177,26 @@ func (j *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference) Range
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference) ReservedInternalRange() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"reservedInternalRange",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference) ReservedInternalRangeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"reservedInternalRangeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -273,6 +296,17 @@ func (j *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference)SetRan
 	_jsii_.Set(
 		j,
 		"rangeName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference)SetReservedInternalRange(val *string) {
+	if err := j.validateSetReservedInternalRangeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"reservedInternalRange",
 		val,
 	)
 }
@@ -493,10 +527,10 @@ func (g *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference) Reset
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference) ResetRangeName() {
+func (g *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference) ResetReservedInternalRange() {
 	_jsii_.InvokeVoid(
 		g,
-		"resetRangeName",
+		"resetReservedInternalRange",
 		nil, // no parameters
 	)
 }

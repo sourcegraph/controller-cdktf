@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlesecuresourcemanagerrepositoryiammember/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_secure_source_manager_repository_iam_member google_secure_source_manager_repository_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_secure_source_manager_repository_iam_member google_secure_source_manager_repository_iam_member}.
 type GoogleSecureSourceManagerRepositoryIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -459,7 +459,7 @@ func (j *jsiiProxy_GoogleSecureSourceManagerRepositoryIamMember) TerraformResour
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_secure_source_manager_repository_iam_member google_secure_source_manager_repository_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_secure_source_manager_repository_iam_member google_secure_source_manager_repository_iam_member} Resource.
 func NewGoogleSecureSourceManagerRepositoryIamMember(scope constructs.Construct, id *string, config *GoogleSecureSourceManagerRepositoryIamMemberConfig) GoogleSecureSourceManagerRepositoryIamMember {
 	_init_.Initialize()
 
@@ -477,7 +477,7 @@ func NewGoogleSecureSourceManagerRepositoryIamMember(scope constructs.Construct,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_secure_source_manager_repository_iam_member google_secure_source_manager_repository_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_secure_source_manager_repository_iam_member google_secure_source_manager_repository_iam_member} Resource.
 func NewGoogleSecureSourceManagerRepositoryIamMember_Override(g GoogleSecureSourceManagerRepositoryIamMember, scope constructs.Construct, id *string, config *GoogleSecureSourceManagerRepositoryIamMemberConfig) {
 	_init_.Initialize()
 

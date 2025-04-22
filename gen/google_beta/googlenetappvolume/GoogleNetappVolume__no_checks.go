@@ -88,6 +88,10 @@ func (g *jsiiProxy_GoogleNetappVolume) validatePutSnapshotPolicyParameters(value
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetappVolume) validatePutTieringPolicyParameters(value *GoogleNetappVolumeTieringPolicy) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetappVolume) validatePutTimeoutsParameters(value *GoogleNetappVolumeTimeouts) error {
 	return nil
 }
@@ -140,11 +144,19 @@ func (j *jsiiProxy_GoogleNetappVolume) validateSetLabelsParameters(val *map[stri
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetappVolume) validateSetLargeCapacityParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetappVolume) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
 
 func (j *jsiiProxy_GoogleNetappVolume) validateSetLocationParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleNetappVolume) validateSetMultipleEndpointsParameters(val interface{}) error {
 	return nil
 }
 

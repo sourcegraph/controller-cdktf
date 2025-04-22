@@ -48,11 +48,27 @@ func (g *jsiiProxy_GoogleNetworkManagementConnectivityTestDestinationOutputRefer
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetworkManagementConnectivityTestDestinationOutputReference) validateSetCloudSqlInstanceParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetworkManagementConnectivityTestDestinationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_GoogleNetworkManagementConnectivityTestDestinationOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleNetworkManagementConnectivityTestDestinationOutputReference) validateSetForwardingRuleParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleNetworkManagementConnectivityTestDestinationOutputReference) validateSetFqdnParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleNetworkManagementConnectivityTestDestinationOutputReference) validateSetGkeMasterClusterParameters(val *string) error {
 	return nil
 }
 
@@ -77,6 +93,14 @@ func (j *jsiiProxy_GoogleNetworkManagementConnectivityTestDestinationOutputRefer
 }
 
 func (j *jsiiProxy_GoogleNetworkManagementConnectivityTestDestinationOutputReference) validateSetProjectIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleNetworkManagementConnectivityTestDestinationOutputReference) validateSetRedisClusterParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleNetworkManagementConnectivityTestDestinationOutputReference) validateSetRedisInstanceParameters(val *string) error {
 	return nil
 }
 

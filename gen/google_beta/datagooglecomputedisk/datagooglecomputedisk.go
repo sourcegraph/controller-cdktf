@@ -9,9 +9,11 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglecomputedisk/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_compute_disk google_compute_disk}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/data-sources/google_compute_disk google_compute_disk}.
 type DataGoogleComputeDisk interface {
 	cdktf.TerraformDataSource
+	AccessMode() *string
+	Architecture() *string
 	AsyncPrimaryDisk() DataGoogleComputeDiskAsyncPrimaryDiskList
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -21,6 +23,8 @@ type DataGoogleComputeDisk interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreateSnapshotBeforeDestroy() cdktf.IResolvable
+	CreateSnapshotBeforeDestroyPrefix() *string
 	CreationTimestamp() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -60,6 +64,7 @@ type DataGoogleComputeDisk interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Params() DataGoogleComputeDiskParamsList
 	PhysicalBlockSizeBytes() *float64
 	Project() *string
 	SetProject(val *string)
@@ -80,8 +85,11 @@ type DataGoogleComputeDisk interface {
 	SourceDiskId() *string
 	SourceImageEncryptionKey() DataGoogleComputeDiskSourceImageEncryptionKeyList
 	SourceImageId() *string
+	SourceInstantSnapshot() *string
+	SourceInstantSnapshotId() *string
 	SourceSnapshotEncryptionKey() DataGoogleComputeDiskSourceSnapshotEncryptionKeyList
 	SourceSnapshotId() *string
+	SourceStorageObject() *string
 	StoragePool() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -145,6 +153,26 @@ type jsiiProxy_DataGoogleComputeDisk struct {
 	internal.Type__cdktfTerraformDataSource
 }
 
+func (j *jsiiProxy_DataGoogleComputeDisk) AccessMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeDisk) Architecture() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"architecture",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeDisk) AsyncPrimaryDisk() DataGoogleComputeDiskAsyncPrimaryDiskList {
 	var returns DataGoogleComputeDiskAsyncPrimaryDiskList
 	_jsii_.Get(
@@ -180,6 +208,26 @@ func (j *jsiiProxy_DataGoogleComputeDisk) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeDisk) CreateSnapshotBeforeDestroy() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"createSnapshotBeforeDestroy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeDisk) CreateSnapshotBeforeDestroyPrefix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createSnapshotBeforeDestroyPrefix",
 		&returns,
 	)
 	return returns
@@ -435,6 +483,16 @@ func (j *jsiiProxy_DataGoogleComputeDisk) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeDisk) Params() DataGoogleComputeDiskParamsList {
+	var returns DataGoogleComputeDiskParamsList
+	_jsii_.Get(
+		j,
+		"params",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeDisk) PhysicalBlockSizeBytes() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -585,6 +643,26 @@ func (j *jsiiProxy_DataGoogleComputeDisk) SourceImageId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeDisk) SourceInstantSnapshot() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceInstantSnapshot",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeDisk) SourceInstantSnapshotId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceInstantSnapshotId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeDisk) SourceSnapshotEncryptionKey() DataGoogleComputeDiskSourceSnapshotEncryptionKeyList {
 	var returns DataGoogleComputeDiskSourceSnapshotEncryptionKeyList
 	_jsii_.Get(
@@ -600,6 +678,16 @@ func (j *jsiiProxy_DataGoogleComputeDisk) SourceSnapshotId() *string {
 	_jsii_.Get(
 		j,
 		"sourceSnapshotId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeDisk) SourceStorageObject() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceStorageObject",
 		&returns,
 	)
 	return returns
@@ -696,7 +784,7 @@ func (j *jsiiProxy_DataGoogleComputeDisk) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_compute_disk google_compute_disk} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/data-sources/google_compute_disk google_compute_disk} Data Source.
 func NewDataGoogleComputeDisk(scope constructs.Construct, id *string, config *DataGoogleComputeDiskConfig) DataGoogleComputeDisk {
 	_init_.Initialize()
 
@@ -714,7 +802,7 @@ func NewDataGoogleComputeDisk(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_compute_disk google_compute_disk} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/data-sources/google_compute_disk google_compute_disk} Data Source.
 func NewDataGoogleComputeDisk_Override(d DataGoogleComputeDisk, scope constructs.Construct, id *string, config *DataGoogleComputeDiskConfig) {
 	_init_.Initialize()
 

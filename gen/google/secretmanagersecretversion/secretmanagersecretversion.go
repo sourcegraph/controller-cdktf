@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/secretmanagersecretversion/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/secret_manager_secret_version google_secret_manager_secret_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/secret_manager_secret_version google_secret_manager_secret_version}.
 type SecretManagerSecretVersion interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -72,6 +72,12 @@ type SecretManagerSecretVersion interface {
 	SecretData() *string
 	SetSecretData(val *string)
 	SecretDataInput() *string
+	SecretDataWo() *string
+	SetSecretDataWo(val *string)
+	SecretDataWoInput() *string
+	SecretDataWoVersion() *float64
+	SetSecretDataWoVersion(val *float64)
+	SecretDataWoVersionInput() *float64
 	SecretInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -133,6 +139,9 @@ type SecretManagerSecretVersion interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSecretData()
+	ResetSecretDataWo()
+	ResetSecretDataWoVersion()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -422,6 +431,46 @@ func (j *jsiiProxy_SecretManagerSecretVersion) SecretDataInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SecretManagerSecretVersion) SecretDataWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secretDataWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretManagerSecretVersion) SecretDataWoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secretDataWoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretManagerSecretVersion) SecretDataWoVersion() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"secretDataWoVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretManagerSecretVersion) SecretDataWoVersionInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"secretDataWoVersionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SecretManagerSecretVersion) SecretInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -493,7 +542,7 @@ func (j *jsiiProxy_SecretManagerSecretVersion) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/secret_manager_secret_version google_secret_manager_secret_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/secret_manager_secret_version google_secret_manager_secret_version} Resource.
 func NewSecretManagerSecretVersion(scope constructs.Construct, id *string, config *SecretManagerSecretVersionConfig) SecretManagerSecretVersion {
 	_init_.Initialize()
 
@@ -511,7 +560,7 @@ func NewSecretManagerSecretVersion(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/secret_manager_secret_version google_secret_manager_secret_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/secret_manager_secret_version google_secret_manager_secret_version} Resource.
 func NewSecretManagerSecretVersion_Override(s SecretManagerSecretVersion, scope constructs.Construct, id *string, config *SecretManagerSecretVersionConfig) {
 	_init_.Initialize()
 
@@ -652,6 +701,28 @@ func (j *jsiiProxy_SecretManagerSecretVersion)SetSecretData(val *string) {
 	_jsii_.Set(
 		j,
 		"secretData",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecretManagerSecretVersion)SetSecretDataWo(val *string) {
+	if err := j.validateSetSecretDataWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"secretDataWo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecretManagerSecretVersion)SetSecretDataWoVersion(val *float64) {
+	if err := j.validateSetSecretDataWoVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"secretDataWoVersion",
 		val,
 	)
 }
@@ -1056,6 +1127,30 @@ func (s *jsiiProxy_SecretManagerSecretVersion) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecretManagerSecretVersion) ResetSecretData() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSecretData",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecretManagerSecretVersion) ResetSecretDataWo() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSecretDataWo",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecretManagerSecretVersion) ResetSecretDataWoVersion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSecretDataWoVersion",
 		nil, // no parameters
 	)
 }

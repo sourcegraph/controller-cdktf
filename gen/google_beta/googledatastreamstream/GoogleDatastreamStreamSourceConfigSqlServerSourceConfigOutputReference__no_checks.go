@@ -44,11 +44,19 @@ func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigSqlServerSourceConfigOutput
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigSqlServerSourceConfigOutputReference) validatePutChangeTablesParameters(value *GoogleDatastreamStreamSourceConfigSqlServerSourceConfigChangeTables) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigSqlServerSourceConfigOutputReference) validatePutExcludeObjectsParameters(value *GoogleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjects) error {
 	return nil
 }
 
 func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigSqlServerSourceConfigOutputReference) validatePutIncludeObjectsParameters(value *GoogleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjects) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigSqlServerSourceConfigOutputReference) validatePutTransactionLogsParameters(value *GoogleDatastreamStreamSourceConfigSqlServerSourceConfigTransactionLogs) error {
 	return nil
 }
 

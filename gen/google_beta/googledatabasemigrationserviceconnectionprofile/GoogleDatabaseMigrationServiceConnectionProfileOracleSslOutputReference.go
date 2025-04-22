@@ -71,6 +71,7 @@ type GoogleDatabaseMigrationServiceConnectionProfileOracleSslOutputReference int
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetCaCertificate()
 	ResetClientCertificate()
 	ResetClientKey()
 	// Produce the Token's value at resolution time.
@@ -528,6 +529,14 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileOracleSslOutpu
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileOracleSslOutputReference) ResetCaCertificate() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCaCertificate",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileOracleSslOutputReference) ResetClientCertificate() {

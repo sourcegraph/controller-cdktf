@@ -72,6 +72,10 @@ func (g *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchange) validateOverrideLogic
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchange) validatePutSharingEnvironmentConfigParameters(value *GoogleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchange) validatePutTimeoutsParameters(value *GoogleBigqueryAnalyticsHubDataExchangeTimeouts) error {
 	return nil
 }

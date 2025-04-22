@@ -92,15 +92,15 @@ func (j *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) validateSetNoAgeParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) validateSetNoncurrentTimeBeforeParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) validateSetNumNewerVersionsParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) validateSetSendAgeIfZeroParameters(val interface{}) error {
 	return nil
 }
 

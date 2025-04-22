@@ -1,0 +1,6 @@
+package datagooglecomputeregionnetworkendpointgroup
+
+
+type DataGoogleComputeRegionNetworkEndpointGroupPscData struct {
+}
+

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/bigqueryanalyticshubdataexchange/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/bigquery_analytics_hub_data_exchange google_bigquery_analytics_hub_data_exchange}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/bigquery_analytics_hub_data_exchange google_bigquery_analytics_hub_data_exchange}.
 type BigqueryAnalyticsHubDataExchange interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -81,6 +81,8 @@ type BigqueryAnalyticsHubDataExchange interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	SharingEnvironmentConfig() BigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigOutputReference
+	SharingEnvironmentConfigInput() *BigqueryAnalyticsHubDataExchangeSharingEnvironmentConfig
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -132,6 +134,7 @@ type BigqueryAnalyticsHubDataExchange interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutSharingEnvironmentConfig(value *BigqueryAnalyticsHubDataExchangeSharingEnvironmentConfig)
 	PutTimeouts(value *BigqueryAnalyticsHubDataExchangeTimeouts)
 	ResetDescription()
 	ResetDocumentation()
@@ -142,6 +145,7 @@ type BigqueryAnalyticsHubDataExchange interface {
 	ResetOverrideLogicalId()
 	ResetPrimaryContact()
 	ResetProject()
+	ResetSharingEnvironmentConfig()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -491,6 +495,26 @@ func (j *jsiiProxy_BigqueryAnalyticsHubDataExchange) RawOverrides() interface{} 
 	return returns
 }
 
+func (j *jsiiProxy_BigqueryAnalyticsHubDataExchange) SharingEnvironmentConfig() BigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigOutputReference {
+	var returns BigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigOutputReference
+	_jsii_.Get(
+		j,
+		"sharingEnvironmentConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryAnalyticsHubDataExchange) SharingEnvironmentConfigInput() *BigqueryAnalyticsHubDataExchangeSharingEnvironmentConfig {
+	var returns *BigqueryAnalyticsHubDataExchangeSharingEnvironmentConfig
+	_jsii_.Get(
+		j,
+		"sharingEnvironmentConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BigqueryAnalyticsHubDataExchange) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -542,7 +566,7 @@ func (j *jsiiProxy_BigqueryAnalyticsHubDataExchange) TimeoutsInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/bigquery_analytics_hub_data_exchange google_bigquery_analytics_hub_data_exchange} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/bigquery_analytics_hub_data_exchange google_bigquery_analytics_hub_data_exchange} Resource.
 func NewBigqueryAnalyticsHubDataExchange(scope constructs.Construct, id *string, config *BigqueryAnalyticsHubDataExchangeConfig) BigqueryAnalyticsHubDataExchange {
 	_init_.Initialize()
 
@@ -560,7 +584,7 @@ func NewBigqueryAnalyticsHubDataExchange(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/bigquery_analytics_hub_data_exchange google_bigquery_analytics_hub_data_exchange} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/bigquery_analytics_hub_data_exchange google_bigquery_analytics_hub_data_exchange} Resource.
 func NewBigqueryAnalyticsHubDataExchange_Override(b BigqueryAnalyticsHubDataExchange, scope constructs.Construct, id *string, config *BigqueryAnalyticsHubDataExchangeConfig) {
 	_init_.Initialize()
 
@@ -1091,6 +1115,17 @@ func (b *jsiiProxy_BigqueryAnalyticsHubDataExchange) OverrideLogicalId(newLogica
 	)
 }
 
+func (b *jsiiProxy_BigqueryAnalyticsHubDataExchange) PutSharingEnvironmentConfig(value *BigqueryAnalyticsHubDataExchangeSharingEnvironmentConfig) {
+	if err := b.validatePutSharingEnvironmentConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putSharingEnvironmentConfig",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BigqueryAnalyticsHubDataExchange) PutTimeouts(value *BigqueryAnalyticsHubDataExchangeTimeouts) {
 	if err := b.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1154,6 +1189,14 @@ func (b *jsiiProxy_BigqueryAnalyticsHubDataExchange) ResetProject() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryAnalyticsHubDataExchange) ResetSharingEnvironmentConfig() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetSharingEnvironmentConfig",
 		nil, // no parameters
 	)
 }

@@ -215,6 +215,17 @@ func (n *jsiiProxy_NetworkConnectivitySpoke) validatePutLinkedInterconnectAttach
 	return nil
 }
 
+func (n *jsiiProxy_NetworkConnectivitySpoke) validatePutLinkedProducerVpcNetworkParameters(value *NetworkConnectivitySpokeLinkedProducerVpcNetwork) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (n *jsiiProxy_NetworkConnectivitySpoke) validatePutLinkedRouterApplianceInstancesParameters(value *NetworkConnectivitySpokeLinkedRouterApplianceInstances) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -390,6 +401,14 @@ func (j *jsiiProxy_NetworkConnectivitySpoke) validateSetCountParameters(val inte
 }
 
 func (j *jsiiProxy_NetworkConnectivitySpoke) validateSetDescriptionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_NetworkConnectivitySpoke) validateSetGroupParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

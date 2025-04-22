@@ -34,6 +34,9 @@ type GoogleCloudRunServiceTemplateSpecOutputReference interface {
 	Fqn() *string
 	InternalValue() *GoogleCloudRunServiceTemplateSpec
 	SetInternalValue(val *GoogleCloudRunServiceTemplateSpec)
+	NodeSelector() *map[string]*string
+	SetNodeSelector(val *map[string]*string)
+	NodeSelectorInput() *map[string]*string
 	ServiceAccountName() *string
 	SetServiceAccountName(val *string)
 	ServiceAccountNameInput() *string
@@ -79,6 +82,7 @@ type GoogleCloudRunServiceTemplateSpecOutputReference interface {
 	PutVolumes(value interface{})
 	ResetContainerConcurrency()
 	ResetContainers()
+	ResetNodeSelector()
 	ResetServiceAccountName()
 	ResetTimeoutSeconds()
 	ResetVolumes()
@@ -182,6 +186,26 @@ func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference) InternalVal
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference) NodeSelector() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"nodeSelector",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference) NodeSelectorInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"nodeSelectorInput",
 		&returns,
 	)
 	return returns
@@ -345,6 +369,17 @@ func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference)SetInternalV
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference)SetNodeSelector(val *map[string]*string) {
+	if err := j.validateSetNodeSelectorParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"nodeSelector",
 		val,
 	)
 }
@@ -613,6 +648,14 @@ func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference) ResetContai
 	_jsii_.InvokeVoid(
 		g,
 		"resetContainers",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference) ResetNodeSelector() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNodeSelector",
 		nil, // no parameters
 	)
 }

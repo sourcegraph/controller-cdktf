@@ -27,6 +27,9 @@ type GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference 
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	IncludeImportRanges() *[]*string
+	SetIncludeImportRanges(val *[]*string)
+	IncludeImportRangesInput() *[]*string
 	InternalValue() *GoogleNetworkConnectivitySpokeLinkedInterconnectAttachments
 	SetInternalValue(val *GoogleNetworkConnectivitySpokeLinkedInterconnectAttachments)
 	SiteToSiteDataTransfer() interface{}
@@ -67,6 +70,7 @@ type GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference 
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetIncludeImportRanges()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -117,6 +121,26 @@ func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOu
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference) IncludeImportRanges() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"includeImportRanges",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference) IncludeImportRangesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"includeImportRangesInput",
 		&returns,
 	)
 	return returns
@@ -238,6 +262,17 @@ func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOu
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference)SetIncludeImportRanges(val *[]*string) {
+	if err := j.validateSetIncludeImportRangesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"includeImportRanges",
 		val,
 	)
 }
@@ -481,6 +516,14 @@ func (g *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOu
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference) ResetIncludeImportRanges() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIncludeImportRanges",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

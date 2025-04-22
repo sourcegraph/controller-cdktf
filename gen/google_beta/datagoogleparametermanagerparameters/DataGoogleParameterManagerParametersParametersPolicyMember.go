@@ -1,0 +1,6 @@
+package datagoogleparametermanagerparameters
+
+
+type DataGoogleParameterManagerParametersParametersPolicyMember struct {
+}
+

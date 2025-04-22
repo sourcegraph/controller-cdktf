@@ -1,0 +1,6 @@
+package googlenetworksecuritymirroringendpointgroup
+
+
+type GoogleNetworkSecurityMirroringEndpointGroupAssociations struct {
+}
+

@@ -29,6 +29,7 @@ type DataGoogleComputeSecurityPolicyRuleRateLimitOptionsOutputReference interfac
 	// Experimental.
 	CreationStack() *[]*string
 	EnforceOnKey() *string
+	EnforceOnKeyConfigs() DataGoogleComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsList
 	EnforceOnKeyName() *string
 	ExceedAction() *string
 	ExceedRedirectOptions() DataGoogleComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsList
@@ -149,6 +150,16 @@ func (j *jsiiProxy_DataGoogleComputeSecurityPolicyRuleRateLimitOptionsOutputRefe
 	_jsii_.Get(
 		j,
 		"enforceOnKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeSecurityPolicyRuleRateLimitOptionsOutputReference) EnforceOnKeyConfigs() DataGoogleComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsList {
+	var returns DataGoogleComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsList
+	_jsii_.Get(
+		j,
+		"enforceOnKeyConfigs",
 		&returns,
 	)
 	return returns

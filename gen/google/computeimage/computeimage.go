@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/computeimage/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_image google_compute_image}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/compute_image google_compute_image}.
 type ComputeImage interface {
 	cdktf.TerraformResource
 	ArchiveSizeBytes() *float64
@@ -87,14 +87,22 @@ type ComputeImage interface {
 	// Experimental.
 	RawOverrides() interface{}
 	SelfLink() *string
+	ShieldedInstanceInitialState() ComputeImageShieldedInstanceInitialStateOutputReference
+	ShieldedInstanceInitialStateInput() *ComputeImageShieldedInstanceInitialState
 	SourceDisk() *string
 	SetSourceDisk(val *string)
+	SourceDiskEncryptionKey() ComputeImageSourceDiskEncryptionKeyOutputReference
+	SourceDiskEncryptionKeyInput() *ComputeImageSourceDiskEncryptionKey
 	SourceDiskInput() *string
 	SourceImage() *string
 	SetSourceImage(val *string)
+	SourceImageEncryptionKey() ComputeImageSourceImageEncryptionKeyOutputReference
+	SourceImageEncryptionKeyInput() *ComputeImageSourceImageEncryptionKey
 	SourceImageInput() *string
 	SourceSnapshot() *string
 	SetSourceSnapshot(val *string)
+	SourceSnapshotEncryptionKey() ComputeImageSourceSnapshotEncryptionKeyOutputReference
+	SourceSnapshotEncryptionKeyInput() *ComputeImageSourceSnapshotEncryptionKey
 	SourceSnapshotInput() *string
 	StorageLocations() *[]*string
 	SetStorageLocations(val *[]*string)
@@ -154,6 +162,10 @@ type ComputeImage interface {
 	PutGuestOsFeatures(value interface{})
 	PutImageEncryptionKey(value *ComputeImageImageEncryptionKey)
 	PutRawDisk(value *ComputeImageRawDisk)
+	PutShieldedInstanceInitialState(value *ComputeImageShieldedInstanceInitialState)
+	PutSourceDiskEncryptionKey(value *ComputeImageSourceDiskEncryptionKey)
+	PutSourceImageEncryptionKey(value *ComputeImageSourceImageEncryptionKey)
+	PutSourceSnapshotEncryptionKey(value *ComputeImageSourceSnapshotEncryptionKey)
 	PutTimeouts(value *ComputeImageTimeouts)
 	ResetDescription()
 	ResetDiskSizeGb()
@@ -168,9 +180,13 @@ type ComputeImage interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetRawDisk()
+	ResetShieldedInstanceInitialState()
 	ResetSourceDisk()
+	ResetSourceDiskEncryptionKey()
 	ResetSourceImage()
+	ResetSourceImageEncryptionKey()
 	ResetSourceSnapshot()
+	ResetSourceSnapshotEncryptionKey()
 	ResetStorageLocations()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -591,11 +607,51 @@ func (j *jsiiProxy_ComputeImage) SelfLink() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeImage) ShieldedInstanceInitialState() ComputeImageShieldedInstanceInitialStateOutputReference {
+	var returns ComputeImageShieldedInstanceInitialStateOutputReference
+	_jsii_.Get(
+		j,
+		"shieldedInstanceInitialState",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeImage) ShieldedInstanceInitialStateInput() *ComputeImageShieldedInstanceInitialState {
+	var returns *ComputeImageShieldedInstanceInitialState
+	_jsii_.Get(
+		j,
+		"shieldedInstanceInitialStateInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeImage) SourceDisk() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"sourceDisk",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeImage) SourceDiskEncryptionKey() ComputeImageSourceDiskEncryptionKeyOutputReference {
+	var returns ComputeImageSourceDiskEncryptionKeyOutputReference
+	_jsii_.Get(
+		j,
+		"sourceDiskEncryptionKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeImage) SourceDiskEncryptionKeyInput() *ComputeImageSourceDiskEncryptionKey {
+	var returns *ComputeImageSourceDiskEncryptionKey
+	_jsii_.Get(
+		j,
+		"sourceDiskEncryptionKeyInput",
 		&returns,
 	)
 	return returns
@@ -621,6 +677,26 @@ func (j *jsiiProxy_ComputeImage) SourceImage() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeImage) SourceImageEncryptionKey() ComputeImageSourceImageEncryptionKeyOutputReference {
+	var returns ComputeImageSourceImageEncryptionKeyOutputReference
+	_jsii_.Get(
+		j,
+		"sourceImageEncryptionKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeImage) SourceImageEncryptionKeyInput() *ComputeImageSourceImageEncryptionKey {
+	var returns *ComputeImageSourceImageEncryptionKey
+	_jsii_.Get(
+		j,
+		"sourceImageEncryptionKeyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeImage) SourceImageInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -636,6 +712,26 @@ func (j *jsiiProxy_ComputeImage) SourceSnapshot() *string {
 	_jsii_.Get(
 		j,
 		"sourceSnapshot",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeImage) SourceSnapshotEncryptionKey() ComputeImageSourceSnapshotEncryptionKeyOutputReference {
+	var returns ComputeImageSourceSnapshotEncryptionKeyOutputReference
+	_jsii_.Get(
+		j,
+		"sourceSnapshotEncryptionKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeImage) SourceSnapshotEncryptionKeyInput() *ComputeImageSourceSnapshotEncryptionKey {
+	var returns *ComputeImageSourceSnapshotEncryptionKey
+	_jsii_.Get(
+		j,
+		"sourceSnapshotEncryptionKeyInput",
 		&returns,
 	)
 	return returns
@@ -732,7 +828,7 @@ func (j *jsiiProxy_ComputeImage) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_image google_compute_image} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/compute_image google_compute_image} Resource.
 func NewComputeImage(scope constructs.Construct, id *string, config *ComputeImageConfig) ComputeImage {
 	_init_.Initialize()
 
@@ -750,7 +846,7 @@ func NewComputeImage(scope constructs.Construct, id *string, config *ComputeImag
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_image google_compute_image} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/compute_image google_compute_image} Resource.
 func NewComputeImage_Override(c ComputeImage, scope constructs.Construct, id *string, config *ComputeImageConfig) {
 	_init_.Initialize()
 
@@ -1347,6 +1443,50 @@ func (c *jsiiProxy_ComputeImage) PutRawDisk(value *ComputeImageRawDisk) {
 	)
 }
 
+func (c *jsiiProxy_ComputeImage) PutShieldedInstanceInitialState(value *ComputeImageShieldedInstanceInitialState) {
+	if err := c.validatePutShieldedInstanceInitialStateParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putShieldedInstanceInitialState",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ComputeImage) PutSourceDiskEncryptionKey(value *ComputeImageSourceDiskEncryptionKey) {
+	if err := c.validatePutSourceDiskEncryptionKeyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putSourceDiskEncryptionKey",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ComputeImage) PutSourceImageEncryptionKey(value *ComputeImageSourceImageEncryptionKey) {
+	if err := c.validatePutSourceImageEncryptionKeyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putSourceImageEncryptionKey",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ComputeImage) PutSourceSnapshotEncryptionKey(value *ComputeImageSourceSnapshotEncryptionKey) {
+	if err := c.validatePutSourceSnapshotEncryptionKeyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putSourceSnapshotEncryptionKey",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeImage) PutTimeouts(value *ComputeImageTimeouts) {
 	if err := c.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1446,10 +1586,26 @@ func (c *jsiiProxy_ComputeImage) ResetRawDisk() {
 	)
 }
 
+func (c *jsiiProxy_ComputeImage) ResetShieldedInstanceInitialState() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetShieldedInstanceInitialState",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ComputeImage) ResetSourceDisk() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetSourceDisk",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeImage) ResetSourceDiskEncryptionKey() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSourceDiskEncryptionKey",
 		nil, // no parameters
 	)
 }
@@ -1462,10 +1618,26 @@ func (c *jsiiProxy_ComputeImage) ResetSourceImage() {
 	)
 }
 
+func (c *jsiiProxy_ComputeImage) ResetSourceImageEncryptionKey() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSourceImageEncryptionKey",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ComputeImage) ResetSourceSnapshot() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetSourceSnapshot",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeImage) ResetSourceSnapshotEncryptionKey() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSourceSnapshotEncryptionKey",
 		nil, // no parameters
 	)
 }

@@ -21,7 +21,7 @@ type GoogleComputeRouteConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The destination range of outgoing packets that this route applies to. Only IPv4 is supported.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_route#dest_range GoogleComputeRoute#dest_range}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_route#dest_range GoogleComputeRoute#dest_range}
 	DestRange *string `field:"required" json:"destRange" yaml:"destRange"`
 	// Name of the resource.
 	//
@@ -33,17 +33,17 @@ type GoogleComputeRouteConfig struct {
 	// characters must be a dash, lowercase letter, or digit, except the
 	// last character, which cannot be a dash.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_route#name GoogleComputeRoute#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_route#name GoogleComputeRoute#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The network that this route applies to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_route#network GoogleComputeRoute#network}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_route#network GoogleComputeRoute#network}
 	Network *string `field:"required" json:"network" yaml:"network"`
 	// An optional description of this resource. Provide this property when you create the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_route#description GoogleComputeRoute#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_route#description GoogleComputeRoute#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_route#id GoogleComputeRoute#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_route#id GoogleComputeRoute#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -57,7 +57,7 @@ type GoogleComputeRouteConfig struct {
 	// * 'global/gateways/default-internet-gateway'
 	// * The string 'default-internet-gateway'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_route#next_hop_gateway GoogleComputeRoute#next_hop_gateway}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_route#next_hop_gateway GoogleComputeRoute#next_hop_gateway}
 	NextHopGateway *string `field:"optional" json:"nextHopGateway" yaml:"nextHopGateway"`
 	// The IP address or URL to a forwarding rule of type loadBalancingScheme=INTERNAL that should handle matching packets.
 	//
@@ -74,7 +74,7 @@ type GoogleComputeRouteConfig struct {
 	// Note that this can only be used when the destinationRange is
 	// a public (non-RFC 1918) IP CIDR range.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_route#next_hop_ilb GoogleComputeRoute#next_hop_ilb}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_route#next_hop_ilb GoogleComputeRoute#next_hop_ilb}
 	NextHopIlb *string `field:"optional" json:"nextHopIlb" yaml:"nextHopIlb"`
 	// URL to an instance that should handle matching packets.
 	//
@@ -84,19 +84,19 @@ type GoogleComputeRouteConfig struct {
 	// * 'zones/zone/instances/instance'
 	// * Just the instance name, with the zone in 'next_hop_instance_zone'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_route#next_hop_instance GoogleComputeRoute#next_hop_instance}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_route#next_hop_instance GoogleComputeRoute#next_hop_instance}
 	NextHopInstance *string `field:"optional" json:"nextHopInstance" yaml:"nextHopInstance"`
 	// The zone of the instance specified in next_hop_instance. Omit if next_hop_instance is specified as a URL.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_route#next_hop_instance_zone GoogleComputeRoute#next_hop_instance_zone}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_route#next_hop_instance_zone GoogleComputeRoute#next_hop_instance_zone}
 	NextHopInstanceZone *string `field:"optional" json:"nextHopInstanceZone" yaml:"nextHopInstanceZone"`
 	// Network IP address of an instance that should handle matching packets.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_route#next_hop_ip GoogleComputeRoute#next_hop_ip}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_route#next_hop_ip GoogleComputeRoute#next_hop_ip}
 	NextHopIp *string `field:"optional" json:"nextHopIp" yaml:"nextHopIp"`
 	// URL to a VpnTunnel that should handle matching packets.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_route#next_hop_vpn_tunnel GoogleComputeRoute#next_hop_vpn_tunnel}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_route#next_hop_vpn_tunnel GoogleComputeRoute#next_hop_vpn_tunnel}
 	NextHopVpnTunnel *string `field:"optional" json:"nextHopVpnTunnel" yaml:"nextHopVpnTunnel"`
 	// The priority of this route.
 	//
@@ -108,17 +108,17 @@ type GoogleComputeRouteConfig struct {
 	//
 	// Default value is 1000. Valid range is 0 through 65535.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_route#priority GoogleComputeRoute#priority}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_route#priority GoogleComputeRoute#priority}
 	Priority *float64 `field:"optional" json:"priority" yaml:"priority"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_route#project GoogleComputeRoute#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_route#project GoogleComputeRoute#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// A list of instance tags to which this route applies.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_route#tags GoogleComputeRoute#tags}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_route#tags GoogleComputeRoute#tags}
 	Tags *[]*string `field:"optional" json:"tags" yaml:"tags"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_route#timeouts GoogleComputeRoute#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_route#timeouts GoogleComputeRoute#timeouts}
 	Timeouts *GoogleComputeRouteTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

@@ -1,0 +1,6 @@
+package datagooglecertificatemanagercertificates
+
+
+type DataGoogleCertificateManagerCertificatesCertificatesManaged struct {
+}
+

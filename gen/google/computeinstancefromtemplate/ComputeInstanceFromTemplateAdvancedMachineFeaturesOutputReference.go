@@ -28,10 +28,16 @@ type ComputeInstanceFromTemplateAdvancedMachineFeaturesOutputReference interface
 	EnableNestedVirtualization() interface{}
 	SetEnableNestedVirtualization(val interface{})
 	EnableNestedVirtualizationInput() interface{}
+	EnableUefiNetworking() interface{}
+	SetEnableUefiNetworking(val interface{})
+	EnableUefiNetworkingInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() *ComputeInstanceFromTemplateAdvancedMachineFeatures
 	SetInternalValue(val *ComputeInstanceFromTemplateAdvancedMachineFeatures)
+	PerformanceMonitoringUnit() *string
+	SetPerformanceMonitoringUnit(val *string)
+	PerformanceMonitoringUnitInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -43,6 +49,9 @@ type ComputeInstanceFromTemplateAdvancedMachineFeaturesOutputReference interface
 	ThreadsPerCore() *float64
 	SetThreadsPerCore(val *float64)
 	ThreadsPerCoreInput() *float64
+	TurboMode() *string
+	SetTurboMode(val *string)
+	TurboModeInput() *string
 	VisibleCoreCount() *float64
 	SetVisibleCoreCount(val *float64)
 	VisibleCoreCountInput() *float64
@@ -71,7 +80,10 @@ type ComputeInstanceFromTemplateAdvancedMachineFeaturesOutputReference interface
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetEnableNestedVirtualization()
+	ResetEnableUefiNetworking()
+	ResetPerformanceMonitoringUnit()
 	ResetThreadsPerCore()
+	ResetTurboMode()
 	ResetVisibleCoreCount()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -138,6 +150,26 @@ func (j *jsiiProxy_ComputeInstanceFromTemplateAdvancedMachineFeaturesOutputRefer
 	return returns
 }
 
+func (j *jsiiProxy_ComputeInstanceFromTemplateAdvancedMachineFeaturesOutputReference) EnableUefiNetworking() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableUefiNetworking",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceFromTemplateAdvancedMachineFeaturesOutputReference) EnableUefiNetworkingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableUefiNetworkingInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeInstanceFromTemplateAdvancedMachineFeaturesOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -153,6 +185,26 @@ func (j *jsiiProxy_ComputeInstanceFromTemplateAdvancedMachineFeaturesOutputRefer
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceFromTemplateAdvancedMachineFeaturesOutputReference) PerformanceMonitoringUnit() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"performanceMonitoringUnit",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceFromTemplateAdvancedMachineFeaturesOutputReference) PerformanceMonitoringUnitInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"performanceMonitoringUnitInput",
 		&returns,
 	)
 	return returns
@@ -193,6 +245,26 @@ func (j *jsiiProxy_ComputeInstanceFromTemplateAdvancedMachineFeaturesOutputRefer
 	_jsii_.Get(
 		j,
 		"threadsPerCoreInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceFromTemplateAdvancedMachineFeaturesOutputReference) TurboMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"turboMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceFromTemplateAdvancedMachineFeaturesOutputReference) TurboModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"turboModeInput",
 		&returns,
 	)
 	return returns
@@ -279,6 +351,17 @@ func (j *jsiiProxy_ComputeInstanceFromTemplateAdvancedMachineFeaturesOutputRefer
 	)
 }
 
+func (j *jsiiProxy_ComputeInstanceFromTemplateAdvancedMachineFeaturesOutputReference)SetEnableUefiNetworking(val interface{}) {
+	if err := j.validateSetEnableUefiNetworkingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableUefiNetworking",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ComputeInstanceFromTemplateAdvancedMachineFeaturesOutputReference)SetInternalValue(val *ComputeInstanceFromTemplateAdvancedMachineFeatures) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -286,6 +369,17 @@ func (j *jsiiProxy_ComputeInstanceFromTemplateAdvancedMachineFeaturesOutputRefer
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeInstanceFromTemplateAdvancedMachineFeaturesOutputReference)SetPerformanceMonitoringUnit(val *string) {
+	if err := j.validateSetPerformanceMonitoringUnitParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"performanceMonitoringUnit",
 		val,
 	)
 }
@@ -319,6 +413,17 @@ func (j *jsiiProxy_ComputeInstanceFromTemplateAdvancedMachineFeaturesOutputRefer
 	_jsii_.Set(
 		j,
 		"threadsPerCore",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeInstanceFromTemplateAdvancedMachineFeaturesOutputReference)SetTurboMode(val *string) {
+	if err := j.validateSetTurboModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"turboMode",
 		val,
 	)
 }
@@ -528,10 +633,34 @@ func (c *jsiiProxy_ComputeInstanceFromTemplateAdvancedMachineFeaturesOutputRefer
 	)
 }
 
+func (c *jsiiProxy_ComputeInstanceFromTemplateAdvancedMachineFeaturesOutputReference) ResetEnableUefiNetworking() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEnableUefiNetworking",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeInstanceFromTemplateAdvancedMachineFeaturesOutputReference) ResetPerformanceMonitoringUnit() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetPerformanceMonitoringUnit",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ComputeInstanceFromTemplateAdvancedMachineFeaturesOutputReference) ResetThreadsPerCore() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetThreadsPerCore",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeInstanceFromTemplateAdvancedMachineFeaturesOutputReference) ResetTurboMode() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetTurboMode",
 		nil, // no parameters
 	)
 }

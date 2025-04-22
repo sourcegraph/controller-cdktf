@@ -1,0 +1,6 @@
+package datagoogleoracledatabasecloudvmcluster
+
+
+type DataGoogleOracleDatabaseCloudVmClusterPropertiesTimeZone struct {
+}
+

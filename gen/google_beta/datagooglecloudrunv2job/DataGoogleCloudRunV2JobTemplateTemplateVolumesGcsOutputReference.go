@@ -30,6 +30,7 @@ type DataGoogleCloudRunV2JobTemplateTemplateVolumesGcsOutputReference interface 
 	Fqn() *string
 	InternalValue() *DataGoogleCloudRunV2JobTemplateTemplateVolumesGcs
 	SetInternalValue(val *DataGoogleCloudRunV2JobTemplateTemplateVolumesGcs)
+	MountOptions() *[]*string
 	ReadOnly() cdktf.IResolvable
 	// Experimental.
 	TerraformAttribute() *string
@@ -133,6 +134,16 @@ func (j *jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateVolumesGcsOutputRefere
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateVolumesGcsOutputReference) MountOptions() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"mountOptions",
 		&returns,
 	)
 	return returns

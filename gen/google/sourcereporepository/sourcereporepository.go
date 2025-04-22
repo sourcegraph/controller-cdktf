@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/sourcereporepository/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/sourcerepo_repository google_sourcerepo_repository}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/sourcerepo_repository google_sourcerepo_repository}.
 type SourcerepoRepository interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -24,6 +24,9 @@ type SourcerepoRepository interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreateIgnoreAlreadyExists() interface{}
+	SetCreateIgnoreAlreadyExists(val interface{})
+	CreateIgnoreAlreadyExistsInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -118,6 +121,7 @@ type SourcerepoRepository interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutPubsubConfigs(value interface{})
 	PutTimeouts(value *SourcerepoRepositoryTimeouts)
+	ResetCreateIgnoreAlreadyExists()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -178,6 +182,26 @@ func (j *jsiiProxy_SourcerepoRepository) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SourcerepoRepository) CreateIgnoreAlreadyExists() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"createIgnoreAlreadyExists",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SourcerepoRepository) CreateIgnoreAlreadyExistsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"createIgnoreAlreadyExistsInput",
 		&returns,
 	)
 	return returns
@@ -424,7 +448,7 @@ func (j *jsiiProxy_SourcerepoRepository) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/sourcerepo_repository google_sourcerepo_repository} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/sourcerepo_repository google_sourcerepo_repository} Resource.
 func NewSourcerepoRepository(scope constructs.Construct, id *string, config *SourcerepoRepositoryConfig) SourcerepoRepository {
 	_init_.Initialize()
 
@@ -442,7 +466,7 @@ func NewSourcerepoRepository(scope constructs.Construct, id *string, config *Sou
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/sourcerepo_repository google_sourcerepo_repository} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/sourcerepo_repository google_sourcerepo_repository} Resource.
 func NewSourcerepoRepository_Override(s SourcerepoRepository, scope constructs.Construct, id *string, config *SourcerepoRepositoryConfig) {
 	_init_.Initialize()
 
@@ -471,6 +495,17 @@ func (j *jsiiProxy_SourcerepoRepository)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SourcerepoRepository)SetCreateIgnoreAlreadyExists(val interface{}) {
+	if err := j.validateSetCreateIgnoreAlreadyExistsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"createIgnoreAlreadyExists",
 		val,
 	)
 }
@@ -926,6 +961,14 @@ func (s *jsiiProxy_SourcerepoRepository) PutTimeouts(value *SourcerepoRepository
 		s,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SourcerepoRepository) ResetCreateIgnoreAlreadyExists() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetCreateIgnoreAlreadyExists",
+		nil, // no parameters
 	)
 }
 

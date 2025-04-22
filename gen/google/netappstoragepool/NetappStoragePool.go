@@ -9,12 +9,15 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/netappstoragepool/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/netapp_storage_pool google_netapp_storage_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/netapp_storage_pool google_netapp_storage_pool}.
 type NetappStoragePool interface {
 	cdktf.TerraformResource
 	ActiveDirectory() *string
 	SetActiveDirectory(val *string)
 	ActiveDirectoryInput() *string
+	AllowAutoTiering() interface{}
+	SetAllowAutoTiering(val interface{})
+	AllowAutoTieringInput() interface{}
 	CapacityGib() *string
 	SetCapacityGib(val *string)
 	CapacityGibInput() *string
@@ -87,6 +90,9 @@ type NetappStoragePool interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ReplicaZone() *string
+	SetReplicaZone(val *string)
+	ReplicaZoneInput() *string
 	ServiceLevel() *string
 	SetServiceLevel(val *string)
 	ServiceLevelInput() *string
@@ -101,6 +107,9 @@ type NetappStoragePool interface {
 	TimeoutsInput() interface{}
 	VolumeCapacityGib() *string
 	VolumeCount() *float64
+	Zone() *string
+	SetZone(val *string)
+	ZoneInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -146,6 +155,7 @@ type NetappStoragePool interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *NetappStoragePoolTimeouts)
 	ResetActiveDirectory()
+	ResetAllowAutoTiering()
 	ResetDescription()
 	ResetId()
 	ResetKmsConfig()
@@ -155,7 +165,9 @@ type NetappStoragePool interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetReplicaZone()
 	ResetTimeouts()
+	ResetZone()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -189,6 +201,26 @@ func (j *jsiiProxy_NetappStoragePool) ActiveDirectoryInput() *string {
 	_jsii_.Get(
 		j,
 		"activeDirectoryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappStoragePool) AllowAutoTiering() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowAutoTiering",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappStoragePool) AllowAutoTieringInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowAutoTieringInput",
 		&returns,
 	)
 	return returns
@@ -544,6 +576,26 @@ func (j *jsiiProxy_NetappStoragePool) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_NetappStoragePool) ReplicaZone() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"replicaZone",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappStoragePool) ReplicaZoneInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"replicaZoneInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NetappStoragePool) ServiceLevel() *string {
 	var returns *string
 	_jsii_.Get(
@@ -644,8 +696,28 @@ func (j *jsiiProxy_NetappStoragePool) VolumeCount() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_NetappStoragePool) Zone() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zone",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/netapp_storage_pool google_netapp_storage_pool} Resource.
+func (j *jsiiProxy_NetappStoragePool) ZoneInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zoneInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/netapp_storage_pool google_netapp_storage_pool} Resource.
 func NewNetappStoragePool(scope constructs.Construct, id *string, config *NetappStoragePoolConfig) NetappStoragePool {
 	_init_.Initialize()
 
@@ -663,7 +735,7 @@ func NewNetappStoragePool(scope constructs.Construct, id *string, config *Netapp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/netapp_storage_pool google_netapp_storage_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/netapp_storage_pool google_netapp_storage_pool} Resource.
 func NewNetappStoragePool_Override(n NetappStoragePool, scope constructs.Construct, id *string, config *NetappStoragePoolConfig) {
 	_init_.Initialize()
 
@@ -681,6 +753,17 @@ func (j *jsiiProxy_NetappStoragePool)SetActiveDirectory(val *string) {
 	_jsii_.Set(
 		j,
 		"activeDirectory",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetappStoragePool)SetAllowAutoTiering(val interface{}) {
+	if err := j.validateSetAllowAutoTieringParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowAutoTiering",
 		val,
 	)
 }
@@ -863,6 +946,17 @@ func (j *jsiiProxy_NetappStoragePool)SetProvisioners(val *[]interface{}) {
 	)
 }
 
+func (j *jsiiProxy_NetappStoragePool)SetReplicaZone(val *string) {
+	if err := j.validateSetReplicaZoneParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"replicaZone",
+		val,
+	)
+}
+
 func (j *jsiiProxy_NetappStoragePool)SetServiceLevel(val *string) {
 	if err := j.validateSetServiceLevelParameters(val); err != nil {
 		panic(err)
@@ -870,6 +964,17 @@ func (j *jsiiProxy_NetappStoragePool)SetServiceLevel(val *string) {
 	_jsii_.Set(
 		j,
 		"serviceLevel",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetappStoragePool)SetZone(val *string) {
+	if err := j.validateSetZoneParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"zone",
 		val,
 	)
 }
@@ -1246,6 +1351,14 @@ func (n *jsiiProxy_NetappStoragePool) ResetActiveDirectory() {
 	)
 }
 
+func (n *jsiiProxy_NetappStoragePool) ResetAllowAutoTiering() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetAllowAutoTiering",
+		nil, // no parameters
+	)
+}
+
 func (n *jsiiProxy_NetappStoragePool) ResetDescription() {
 	_jsii_.InvokeVoid(
 		n,
@@ -1302,10 +1415,26 @@ func (n *jsiiProxy_NetappStoragePool) ResetProject() {
 	)
 }
 
+func (n *jsiiProxy_NetappStoragePool) ResetReplicaZone() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetReplicaZone",
+		nil, // no parameters
+	)
+}
+
 func (n *jsiiProxy_NetappStoragePool) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetappStoragePool) ResetZone() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetZone",
 		nil, // no parameters
 	)
 }

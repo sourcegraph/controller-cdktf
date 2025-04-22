@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/iapappengineversioniammember/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/iap_app_engine_version_iam_member google_iap_app_engine_version_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/iap_app_engine_version_iam_member google_iap_app_engine_version_iam_member}.
 type IapAppEngineVersionIamMember interface {
 	cdktf.TerraformResource
 	AppId() *string
@@ -481,7 +481,7 @@ func (j *jsiiProxy_IapAppEngineVersionIamMember) VersionIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/iap_app_engine_version_iam_member google_iap_app_engine_version_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/iap_app_engine_version_iam_member google_iap_app_engine_version_iam_member} Resource.
 func NewIapAppEngineVersionIamMember(scope constructs.Construct, id *string, config *IapAppEngineVersionIamMemberConfig) IapAppEngineVersionIamMember {
 	_init_.Initialize()
 
@@ -499,7 +499,7 @@ func NewIapAppEngineVersionIamMember(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/iap_app_engine_version_iam_member google_iap_app_engine_version_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/iap_app_engine_version_iam_member google_iap_app_engine_version_iam_member} Resource.
 func NewIapAppEngineVersionIamMember_Override(i IapAppEngineVersionIamMember, scope constructs.Construct, id *string, config *IapAppEngineVersionIamMemberConfig) {
 	_init_.Initialize()
 

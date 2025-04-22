@@ -88,6 +88,10 @@ func (g *jsiiProxy_GoogleAssuredWorkloadsWorkload) validatePutTimeoutsParameters
 	return nil
 }
 
+func (g *jsiiProxy_GoogleAssuredWorkloadsWorkload) validatePutWorkloadOptionsParameters(value *GoogleAssuredWorkloadsWorkloadWorkloadOptions) error {
+	return nil
+}
+
 func validateGoogleAssuredWorkloadsWorkload_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -149,6 +153,10 @@ func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload) validateSetOrganizationParame
 }
 
 func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload) validateSetPartnerParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload) validateSetPartnerServicesBillingAccountParameters(val *string) error {
 	return nil
 }
 

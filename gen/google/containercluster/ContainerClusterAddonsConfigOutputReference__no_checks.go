@@ -84,6 +84,14 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) validatePutNetwo
 	return nil
 }
 
+func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) validatePutParallelstoreCsiDriverConfigParameters(value *ContainerClusterAddonsConfigParallelstoreCsiDriverConfig) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) validatePutRayOperatorConfigParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) validatePutStatefulHaConfigParameters(value *ContainerClusterAddonsConfigStatefulHaConfig) error {
 	return nil
 }

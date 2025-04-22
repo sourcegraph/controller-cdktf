@@ -281,6 +281,17 @@ func (g *jsiiProxy_GoogleContainerAttachedCluster) validatePutProxyConfigParamet
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerAttachedCluster) validatePutSecurityPostureConfigParameters(value *GoogleContainerAttachedClusterSecurityPostureConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerAttachedCluster) validatePutTimeoutsParameters(value *GoogleContainerAttachedClusterTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

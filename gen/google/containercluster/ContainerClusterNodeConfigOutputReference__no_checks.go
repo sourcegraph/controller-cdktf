@@ -112,6 +112,10 @@ func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) validatePutTaintPa
 	return nil
 }
 
+func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) validatePutWindowsNodeConfigParameters(value *ContainerClusterNodeConfigWindowsNodeConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) validatePutWorkloadMetadataConfigParameters(value *ContainerClusterNodeConfigWorkloadMetadataConfig) error {
 	return nil
 }
@@ -160,11 +164,19 @@ func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) validateSetLocalSs
 	return nil
 }
 
+func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) validateSetLocalSsdEncryptionModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) validateSetLoggingVariantParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) validateSetMachineTypeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) validateSetMaxRunDurationParameters(val *string) error {
 	return nil
 }
 
@@ -201,6 +213,10 @@ func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) validateSetService
 }
 
 func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) validateSetSpotParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) validateSetStoragePoolsParameters(val *[]*string) error {
 	return nil
 }
 

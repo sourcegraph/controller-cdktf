@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleworkbenchinstanceiambinding/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_workbench_instance_iam_binding google_workbench_instance_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_workbench_instance_iam_binding google_workbench_instance_iam_binding}.
 type GoogleWorkbenchInstanceIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -459,7 +459,7 @@ func (j *jsiiProxy_GoogleWorkbenchInstanceIamBinding) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_workbench_instance_iam_binding google_workbench_instance_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_workbench_instance_iam_binding google_workbench_instance_iam_binding} Resource.
 func NewGoogleWorkbenchInstanceIamBinding(scope constructs.Construct, id *string, config *GoogleWorkbenchInstanceIamBindingConfig) GoogleWorkbenchInstanceIamBinding {
 	_init_.Initialize()
 
@@ -477,7 +477,7 @@ func NewGoogleWorkbenchInstanceIamBinding(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_workbench_instance_iam_binding google_workbench_instance_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_workbench_instance_iam_binding google_workbench_instance_iam_binding} Resource.
 func NewGoogleWorkbenchInstanceIamBinding_Override(g GoogleWorkbenchInstanceIamBinding, scope constructs.Construct, id *string, config *GoogleWorkbenchInstanceIamBindingConfig) {
 	_init_.Initialize()
 

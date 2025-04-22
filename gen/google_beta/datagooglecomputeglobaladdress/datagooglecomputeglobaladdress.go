@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglecomputeglobaladdress/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_compute_global_address google_compute_global_address}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/data-sources/google_compute_global_address google_compute_global_address}.
 type DataGoogleComputeGlobalAddress interface {
 	cdktf.TerraformDataSource
 	Address() *string
@@ -419,7 +419,7 @@ func (j *jsiiProxy_DataGoogleComputeGlobalAddress) Users() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_compute_global_address google_compute_global_address} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/data-sources/google_compute_global_address google_compute_global_address} Data Source.
 func NewDataGoogleComputeGlobalAddress(scope constructs.Construct, id *string, config *DataGoogleComputeGlobalAddressConfig) DataGoogleComputeGlobalAddress {
 	_init_.Initialize()
 
@@ -437,7 +437,7 @@ func NewDataGoogleComputeGlobalAddress(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_compute_global_address google_compute_global_address} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/data-sources/google_compute_global_address google_compute_global_address} Data Source.
 func NewDataGoogleComputeGlobalAddress_Override(d DataGoogleComputeGlobalAddress, scope constructs.Construct, id *string, config *DataGoogleComputeGlobalAddressConfig) {
 	_init_.Initialize()
 

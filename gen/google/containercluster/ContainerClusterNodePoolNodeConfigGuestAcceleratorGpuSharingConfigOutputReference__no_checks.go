@@ -60,7 +60,7 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingC
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingConfigOutputReference) validateSetInternalValueParameters(val *ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingConfig) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingC
 	return nil
 }
 
-func validateNewContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

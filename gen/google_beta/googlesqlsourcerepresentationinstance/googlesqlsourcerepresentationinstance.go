@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlesqlsourcerepresentationinstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_sql_source_representation_instance google_sql_source_representation_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_sql_source_representation_instance google_sql_source_representation_instance}.
 type GoogleSqlSourceRepresentationInstance interface {
 	cdktf.TerraformResource
 	CaCertificate() *string
@@ -616,7 +616,7 @@ func (j *jsiiProxy_GoogleSqlSourceRepresentationInstance) UsernameInput() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_sql_source_representation_instance google_sql_source_representation_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_sql_source_representation_instance google_sql_source_representation_instance} Resource.
 func NewGoogleSqlSourceRepresentationInstance(scope constructs.Construct, id *string, config *GoogleSqlSourceRepresentationInstanceConfig) GoogleSqlSourceRepresentationInstance {
 	_init_.Initialize()
 
@@ -634,7 +634,7 @@ func NewGoogleSqlSourceRepresentationInstance(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_sql_source_representation_instance google_sql_source_representation_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_sql_source_representation_instance google_sql_source_representation_instance} Resource.
 func NewGoogleSqlSourceRepresentationInstance_Override(g GoogleSqlSourceRepresentationInstance, scope constructs.Construct, id *string, config *GoogleSqlSourceRepresentationInstanceConfig) {
 	_init_.Initialize()
 

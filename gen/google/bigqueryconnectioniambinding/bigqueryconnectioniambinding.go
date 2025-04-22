@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/bigqueryconnectioniambinding/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/bigquery_connection_iam_binding google_bigquery_connection_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/bigquery_connection_iam_binding google_bigquery_connection_iam_binding}.
 type BigqueryConnectionIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -459,7 +459,7 @@ func (j *jsiiProxy_BigqueryConnectionIamBinding) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/bigquery_connection_iam_binding google_bigquery_connection_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/bigquery_connection_iam_binding google_bigquery_connection_iam_binding} Resource.
 func NewBigqueryConnectionIamBinding(scope constructs.Construct, id *string, config *BigqueryConnectionIamBindingConfig) BigqueryConnectionIamBinding {
 	_init_.Initialize()
 
@@ -477,7 +477,7 @@ func NewBigqueryConnectionIamBinding(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/bigquery_connection_iam_binding google_bigquery_connection_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/bigquery_connection_iam_binding google_bigquery_connection_iam_binding} Resource.
 func NewBigqueryConnectionIamBinding_Override(b BigqueryConnectionIamBinding, scope constructs.Construct, id *string, config *BigqueryConnectionIamBindingConfig) {
 	_init_.Initialize()
 

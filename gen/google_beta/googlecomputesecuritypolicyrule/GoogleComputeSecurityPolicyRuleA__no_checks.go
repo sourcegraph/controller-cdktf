@@ -72,6 +72,10 @@ func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleA) validateOverrideLogicalIdPa
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleA) validatePutHeaderActionParameters(value *GoogleComputeSecurityPolicyRuleHeaderActionA) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleA) validatePutMatchParameters(value *GoogleComputeSecurityPolicyRuleMatchA) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleA) validatePutPreconfiguredWaf
 }
 
 func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleA) validatePutRateLimitOptionsParameters(value *GoogleComputeSecurityPolicyRuleRateLimitOptionsA) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleA) validatePutRedirectOptionsParameters(value *GoogleComputeSecurityPolicyRuleRedirectOptionsA) error {
 	return nil
 }
 

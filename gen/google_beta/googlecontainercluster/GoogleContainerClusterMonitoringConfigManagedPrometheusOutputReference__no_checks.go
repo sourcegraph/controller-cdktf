@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleContainerClusterMonitoringConfigManagedPrometheusOutput
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerClusterMonitoringConfigManagedPrometheusOutputReference) validatePutAutoMonitoringConfigParameters(value *GoogleContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerClusterMonitoringConfigManagedPrometheusOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

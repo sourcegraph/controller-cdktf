@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/netappkmsconfig/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/netapp_kmsconfig google_netapp_kmsconfig}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/netapp_kmsconfig google_netapp_kmsconfig}.
 type NetappKmsconfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -516,7 +516,7 @@ func (j *jsiiProxy_NetappKmsconfig) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/netapp_kmsconfig google_netapp_kmsconfig} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/netapp_kmsconfig google_netapp_kmsconfig} Resource.
 func NewNetappKmsconfig(scope constructs.Construct, id *string, config *NetappKmsconfigConfig) NetappKmsconfig {
 	_init_.Initialize()
 
@@ -534,7 +534,7 @@ func NewNetappKmsconfig(scope constructs.Construct, id *string, config *NetappKm
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/netapp_kmsconfig google_netapp_kmsconfig} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/netapp_kmsconfig google_netapp_kmsconfig} Resource.
 func NewNetappKmsconfig_Override(n NetappKmsconfig, scope constructs.Construct, id *string, config *NetappKmsconfigConfig) {
 	_init_.Initialize()
 

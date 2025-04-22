@@ -35,6 +35,9 @@ type GoogleComputeExternalVpnGatewayInterfaceOutputReference interface {
 	IpAddress() *string
 	SetIpAddress(val *string)
 	IpAddressInput() *string
+	Ipv6Address() *string
+	SetIpv6Address(val *string)
+	Ipv6AddressInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -69,6 +72,7 @@ type GoogleComputeExternalVpnGatewayInterfaceOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetId()
 	ResetIpAddress()
+	ResetIpv6Address()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -174,6 +178,26 @@ func (j *jsiiProxy_GoogleComputeExternalVpnGatewayInterfaceOutputReference) IpAd
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeExternalVpnGatewayInterfaceOutputReference) Ipv6Address() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6Address",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeExternalVpnGatewayInterfaceOutputReference) Ipv6AddressInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6AddressInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeExternalVpnGatewayInterfaceOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -273,6 +297,17 @@ func (j *jsiiProxy_GoogleComputeExternalVpnGatewayInterfaceOutputReference)SetIp
 	_jsii_.Set(
 		j,
 		"ipAddress",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeExternalVpnGatewayInterfaceOutputReference)SetIpv6Address(val *string) {
+	if err := j.validateSetIpv6AddressParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipv6Address",
 		val,
 	)
 }
@@ -497,6 +532,14 @@ func (g *jsiiProxy_GoogleComputeExternalVpnGatewayInterfaceOutputReference) Rese
 	_jsii_.InvokeVoid(
 		g,
 		"resetIpAddress",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeExternalVpnGatewayInterfaceOutputReference) ResetIpv6Address() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIpv6Address",
 		nil, // no parameters
 	)
 }

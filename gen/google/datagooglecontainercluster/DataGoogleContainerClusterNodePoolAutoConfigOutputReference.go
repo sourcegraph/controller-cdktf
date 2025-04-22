@@ -29,7 +29,9 @@ type DataGoogleContainerClusterNodePoolAutoConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataGoogleContainerClusterNodePoolAutoConfig
 	SetInternalValue(val *DataGoogleContainerClusterNodePoolAutoConfig)
+	LinuxNodeConfig() DataGoogleContainerClusterNodePoolAutoConfigLinuxNodeConfigList
 	NetworkTags() DataGoogleContainerClusterNodePoolAutoConfigNetworkTagsList
+	NodeKubeletConfig() DataGoogleContainerClusterNodePoolAutoConfigNodeKubeletConfigList
 	ResourceManagerTags() cdktf.StringMap
 	// Experimental.
 	TerraformAttribute() *string
@@ -128,11 +130,31 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodePoolAutoConfigOutputReference) 
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolAutoConfigOutputReference) LinuxNodeConfig() DataGoogleContainerClusterNodePoolAutoConfigLinuxNodeConfigList {
+	var returns DataGoogleContainerClusterNodePoolAutoConfigLinuxNodeConfigList
+	_jsii_.Get(
+		j,
+		"linuxNodeConfig",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleContainerClusterNodePoolAutoConfigOutputReference) NetworkTags() DataGoogleContainerClusterNodePoolAutoConfigNetworkTagsList {
 	var returns DataGoogleContainerClusterNodePoolAutoConfigNetworkTagsList
 	_jsii_.Get(
 		j,
 		"networkTags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolAutoConfigOutputReference) NodeKubeletConfig() DataGoogleContainerClusterNodePoolAutoConfigNodeKubeletConfigList {
+	var returns DataGoogleContainerClusterNodePoolAutoConfigNodeKubeletConfigList
+	_jsii_.Get(
+		j,
+		"nodeKubeletConfig",
 		&returns,
 	)
 	return returns

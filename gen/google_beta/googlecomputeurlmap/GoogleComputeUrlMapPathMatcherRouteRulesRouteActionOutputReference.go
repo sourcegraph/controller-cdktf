@@ -33,6 +33,8 @@ type GoogleComputeUrlMapPathMatcherRouteRulesRouteActionOutputReference interfac
 	Fqn() *string
 	InternalValue() *GoogleComputeUrlMapPathMatcherRouteRulesRouteAction
 	SetInternalValue(val *GoogleComputeUrlMapPathMatcherRouteRulesRouteAction)
+	MaxStreamDuration() GoogleComputeUrlMapPathMatcherRouteRulesRouteActionMaxStreamDurationOutputReference
+	MaxStreamDurationInput() *GoogleComputeUrlMapPathMatcherRouteRulesRouteActionMaxStreamDuration
 	RequestMirrorPolicy() GoogleComputeUrlMapPathMatcherRouteRulesRouteActionRequestMirrorPolicyOutputReference
 	RequestMirrorPolicyInput() *GoogleComputeUrlMapPathMatcherRouteRulesRouteActionRequestMirrorPolicy
 	RetryPolicy() GoogleComputeUrlMapPathMatcherRouteRulesRouteActionRetryPolicyOutputReference
@@ -77,6 +79,7 @@ type GoogleComputeUrlMapPathMatcherRouteRulesRouteActionOutputReference interfac
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCorsPolicy(value *GoogleComputeUrlMapPathMatcherRouteRulesRouteActionCorsPolicy)
 	PutFaultInjectionPolicy(value *GoogleComputeUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicy)
+	PutMaxStreamDuration(value *GoogleComputeUrlMapPathMatcherRouteRulesRouteActionMaxStreamDuration)
 	PutRequestMirrorPolicy(value *GoogleComputeUrlMapPathMatcherRouteRulesRouteActionRequestMirrorPolicy)
 	PutRetryPolicy(value *GoogleComputeUrlMapPathMatcherRouteRulesRouteActionRetryPolicy)
 	PutTimeout(value *GoogleComputeUrlMapPathMatcherRouteRulesRouteActionTimeout)
@@ -84,6 +87,7 @@ type GoogleComputeUrlMapPathMatcherRouteRulesRouteActionOutputReference interfac
 	PutWeightedBackendServices(value interface{})
 	ResetCorsPolicy()
 	ResetFaultInjectionPolicy()
+	ResetMaxStreamDuration()
 	ResetRequestMirrorPolicy()
 	ResetRetryPolicy()
 	ResetTimeout()
@@ -189,6 +193,26 @@ func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesRouteActionOutputRefe
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesRouteActionOutputReference) MaxStreamDuration() GoogleComputeUrlMapPathMatcherRouteRulesRouteActionMaxStreamDurationOutputReference {
+	var returns GoogleComputeUrlMapPathMatcherRouteRulesRouteActionMaxStreamDurationOutputReference
+	_jsii_.Get(
+		j,
+		"maxStreamDuration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesRouteActionOutputReference) MaxStreamDurationInput() *GoogleComputeUrlMapPathMatcherRouteRulesRouteActionMaxStreamDuration {
+	var returns *GoogleComputeUrlMapPathMatcherRouteRulesRouteActionMaxStreamDuration
+	_jsii_.Get(
+		j,
+		"maxStreamDurationInput",
 		&returns,
 	)
 	return returns
@@ -605,6 +629,17 @@ func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesRouteActionOutputRefe
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesRouteActionOutputReference) PutMaxStreamDuration(value *GoogleComputeUrlMapPathMatcherRouteRulesRouteActionMaxStreamDuration) {
+	if err := g.validatePutMaxStreamDurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putMaxStreamDuration",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesRouteActionOutputReference) PutRequestMirrorPolicy(value *GoogleComputeUrlMapPathMatcherRouteRulesRouteActionRequestMirrorPolicy) {
 	if err := g.validatePutRequestMirrorPolicyParameters(value); err != nil {
 		panic(err)
@@ -672,6 +707,14 @@ func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesRouteActionOutputRefe
 	_jsii_.InvokeVoid(
 		g,
 		"resetFaultInjectionPolicy",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesRouteActionOutputReference) ResetMaxStreamDuration() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMaxStreamDuration",
 		nil, // no parameters
 	)
 }

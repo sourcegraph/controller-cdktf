@@ -44,6 +44,10 @@ func (c *jsiiProxy_ComposerEnvironmentConfigSoftwareConfigOutputReference) valid
 	return nil
 }
 
+func (c *jsiiProxy_ComposerEnvironmentConfigSoftwareConfigOutputReference) validatePutCloudDataLineageIntegrationParameters(value *ComposerEnvironmentConfigSoftwareConfigCloudDataLineageIntegration) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComposerEnvironmentConfigSoftwareConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -89,6 +93,10 @@ func (j *jsiiProxy_ComposerEnvironmentConfigSoftwareConfigOutputReference) valid
 }
 
 func (j *jsiiProxy_ComposerEnvironmentConfigSoftwareConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComposerEnvironmentConfigSoftwareConfigOutputReference) validateSetWebServerPluginsModeParameters(val *string) error {
 	return nil
 }
 

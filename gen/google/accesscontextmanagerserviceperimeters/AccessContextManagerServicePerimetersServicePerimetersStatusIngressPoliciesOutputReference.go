@@ -41,6 +41,9 @@ type AccessContextManagerServicePerimetersServicePerimetersStatusIngressPolicies
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Title() *string
+	SetTitle(val *string)
+	TitleInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -69,6 +72,7 @@ type AccessContextManagerServicePerimetersServicePerimetersStatusIngressPolicies
 	PutIngressTo(value *AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressTo)
 	ResetIngressFrom()
 	ResetIngressTo()
+	ResetTitle()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -194,6 +198,26 @@ func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersStatusI
 	return returns
 }
 
+func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesOutputReference) Title() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"title",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesOutputReference) TitleInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"titleInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewAccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesOutputReference {
 	_init_.Initialize()
@@ -273,6 +297,17 @@ func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersStatusI
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesOutputReference)SetTitle(val *string) {
+	if err := j.validateSetTitleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"title",
 		val,
 	)
 }
@@ -497,6 +532,14 @@ func (a *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersStatusI
 	_jsii_.InvokeVoid(
 		a,
 		"resetIngressTo",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesOutputReference) ResetTitle() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetTitle",
 		nil, // no parameters
 	)
 }

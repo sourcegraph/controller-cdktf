@@ -4,12 +4,11 @@ package googlecloudrundomainmapping
 type GoogleCloudRunDomainMappingMetadata struct {
 	// In Cloud Run the namespace must be equal to either the project ID or project number.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_cloud_run_domain_mapping#namespace GoogleCloudRunDomainMapping#namespace}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_cloud_run_domain_mapping#namespace GoogleCloudRunDomainMapping#namespace}
 	Namespace *string `field:"required" json:"namespace" yaml:"namespace"`
 	// Annotations is a key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata.
 	//
-	// More
-	// info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations
+	// More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations
 	//
 	// **Note**: The Cloud Run API may add additional annotations that were not provided in your config.
 	// If terraform plan shows a diff where a server-side annotation is added, you can add it to your config
@@ -18,7 +17,7 @@ type GoogleCloudRunDomainMappingMetadata struct {
 	// **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
 	// Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_cloud_run_domain_mapping#annotations GoogleCloudRunDomainMapping#annotations}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_cloud_run_domain_mapping#annotations GoogleCloudRunDomainMapping#annotations}
 	Annotations *map[string]*string `field:"optional" json:"annotations" yaml:"annotations"`
 	// Map of string keys and values that can be used to organize and categorize (scope and select) objects.
 	//
@@ -29,7 +28,7 @@ type GoogleCloudRunDomainMappingMetadata struct {
 	// **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 	// Please refer to the field 'effective_labels' for all of the labels present on the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_cloud_run_domain_mapping#labels GoogleCloudRunDomainMapping#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_cloud_run_domain_mapping#labels GoogleCloudRunDomainMapping#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
 }
 

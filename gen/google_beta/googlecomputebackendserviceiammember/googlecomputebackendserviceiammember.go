@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputebackendserviceiammember/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_backend_service_iam_member google_compute_backend_service_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_backend_service_iam_member google_compute_backend_service_iam_member}.
 type GoogleComputeBackendServiceIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -435,7 +435,7 @@ func (j *jsiiProxy_GoogleComputeBackendServiceIamMember) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_backend_service_iam_member google_compute_backend_service_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_backend_service_iam_member google_compute_backend_service_iam_member} Resource.
 func NewGoogleComputeBackendServiceIamMember(scope constructs.Construct, id *string, config *GoogleComputeBackendServiceIamMemberConfig) GoogleComputeBackendServiceIamMember {
 	_init_.Initialize()
 
@@ -453,7 +453,7 @@ func NewGoogleComputeBackendServiceIamMember(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_backend_service_iam_member google_compute_backend_service_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_backend_service_iam_member google_compute_backend_service_iam_member} Resource.
 func NewGoogleComputeBackendServiceIamMember_Override(g GoogleComputeBackendServiceIamMember, scope constructs.Construct, id *string, config *GoogleComputeBackendServiceIamMemberConfig) {
 	_init_.Initialize()
 

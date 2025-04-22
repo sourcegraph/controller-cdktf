@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlesecuresourcemanagerinstanceiambinding/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_secure_source_manager_instance_iam_binding google_secure_source_manager_instance_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_secure_source_manager_instance_iam_binding google_secure_source_manager_instance_iam_binding}.
 type GoogleSecureSourceManagerInstanceIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -459,7 +459,7 @@ func (j *jsiiProxy_GoogleSecureSourceManagerInstanceIamBinding) TerraformResourc
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_secure_source_manager_instance_iam_binding google_secure_source_manager_instance_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_secure_source_manager_instance_iam_binding google_secure_source_manager_instance_iam_binding} Resource.
 func NewGoogleSecureSourceManagerInstanceIamBinding(scope constructs.Construct, id *string, config *GoogleSecureSourceManagerInstanceIamBindingConfig) GoogleSecureSourceManagerInstanceIamBinding {
 	_init_.Initialize()
 
@@ -477,7 +477,7 @@ func NewGoogleSecureSourceManagerInstanceIamBinding(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_secure_source_manager_instance_iam_binding google_secure_source_manager_instance_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_secure_source_manager_instance_iam_binding google_secure_source_manager_instance_iam_binding} Resource.
 func NewGoogleSecureSourceManagerInstanceIamBinding_Override(g GoogleSecureSourceManagerInstanceIamBinding, scope constructs.Construct, id *string, config *GoogleSecureSourceManagerInstanceIamBindingConfig) {
 	_init_.Initialize()
 

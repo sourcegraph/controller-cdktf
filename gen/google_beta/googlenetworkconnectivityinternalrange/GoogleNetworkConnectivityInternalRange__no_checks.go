@@ -72,6 +72,10 @@ func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) validateOverrideLogic
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) validatePutMigrationParameters(value *GoogleNetworkConnectivityInternalRangeMigration) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) validatePutTimeoutsParameters(value *GoogleNetworkConnectivityInternalRangeTimeouts) error {
 	return nil
 }

@@ -96,6 +96,10 @@ func (g *jsiiProxy_GoogleArtifactRegistryRepository) validatePutVirtualRepositor
 	return nil
 }
 
+func (g *jsiiProxy_GoogleArtifactRegistryRepository) validatePutVulnerabilityScanningConfigParameters(value *GoogleArtifactRegistryRepositoryVulnerabilityScanningConfig) error {
+	return nil
+}
+
 func validateGoogleArtifactRegistryRepository_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

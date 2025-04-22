@@ -10,6 +10,9 @@ import (
 
 type ContainerClusterDnsConfigOutputReference interface {
 	cdktf.ComplexObject
+	AdditiveVpcScopeDnsDomain() *string
+	SetAdditiveVpcScopeDnsDomain(val *string)
+	AdditiveVpcScopeDnsDomainInput() *string
 	ClusterDns() *string
 	SetClusterDns(val *string)
 	ClusterDnsDomain() *string
@@ -70,6 +73,7 @@ type ContainerClusterDnsConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAdditiveVpcScopeDnsDomain()
 	ResetClusterDns()
 	ResetClusterDnsDomain()
 	ResetClusterDnsScope()
@@ -86,6 +90,26 @@ type ContainerClusterDnsConfigOutputReference interface {
 // The jsii proxy struct for ContainerClusterDnsConfigOutputReference
 type jsiiProxy_ContainerClusterDnsConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_ContainerClusterDnsConfigOutputReference) AdditiveVpcScopeDnsDomain() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"additiveVpcScopeDnsDomain",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterDnsConfigOutputReference) AdditiveVpcScopeDnsDomainInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"additiveVpcScopeDnsDomainInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ContainerClusterDnsConfigOutputReference) ClusterDns() *string {
@@ -243,6 +267,17 @@ func NewContainerClusterDnsConfigOutputReference_Override(c ContainerClusterDnsC
 		"@cdktf/provider-google.containerCluster.ContainerClusterDnsConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
+	)
+}
+
+func (j *jsiiProxy_ContainerClusterDnsConfigOutputReference)SetAdditiveVpcScopeDnsDomain(val *string) {
+	if err := j.validateSetAdditiveVpcScopeDnsDomainParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"additiveVpcScopeDnsDomain",
+		val,
 	)
 }
 
@@ -518,6 +553,14 @@ func (c *jsiiProxy_ContainerClusterDnsConfigOutputReference) InterpolationForAtt
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_ContainerClusterDnsConfigOutputReference) ResetAdditiveVpcScopeDnsDomain() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAdditiveVpcScopeDnsDomain",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_ContainerClusterDnsConfigOutputReference) ResetClusterDns() {

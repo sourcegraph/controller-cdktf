@@ -19,6 +19,9 @@ type Cloudfunctions2FunctionServiceConfigOutputReference interface {
 	AvailableMemory() *string
 	SetAvailableMemory(val *string)
 	AvailableMemoryInput() *string
+	BinaryAuthorizationPolicy() *string
+	SetBinaryAuthorizationPolicy(val *string)
+	BinaryAuthorizationPolicyInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -111,6 +114,7 @@ type Cloudfunctions2FunctionServiceConfigOutputReference interface {
 	ResetAllTrafficOnLatestRevision()
 	ResetAvailableCpu()
 	ResetAvailableMemory()
+	ResetBinaryAuthorizationPolicy()
 	ResetEnvironmentVariables()
 	ResetIngressSettings()
 	ResetMaxInstanceCount()
@@ -193,6 +197,26 @@ func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) Availabl
 	_jsii_.Get(
 		j,
 		"availableMemoryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) BinaryAuthorizationPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"binaryAuthorizationPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) BinaryAuthorizationPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"binaryAuthorizationPolicyInput",
 		&returns,
 	)
 	return returns
@@ -585,6 +609,17 @@ func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference)SetAvaila
 	_jsii_.Set(
 		j,
 		"availableMemory",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference)SetBinaryAuthorizationPolicy(val *string) {
+	if err := j.validateSetBinaryAuthorizationPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"binaryAuthorizationPolicy",
 		val,
 	)
 }
@@ -982,6 +1017,14 @@ func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) ResetAva
 	_jsii_.InvokeVoid(
 		c,
 		"resetAvailableMemory",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) ResetBinaryAuthorizationPolicy() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetBinaryAuthorizationPolicy",
 		nil, // no parameters
 	)
 }

@@ -88,6 +88,10 @@ func (g *jsiiProxy_GoogleIamWorkloadIdentityPoolProvider) validatePutTimeoutsPar
 	return nil
 }
 
+func (g *jsiiProxy_GoogleIamWorkloadIdentityPoolProvider) validatePutX509Parameters(value *GoogleIamWorkloadIdentityPoolProviderX509) error {
+	return nil
+}
+
 func validateGoogleIamWorkloadIdentityPoolProvider_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

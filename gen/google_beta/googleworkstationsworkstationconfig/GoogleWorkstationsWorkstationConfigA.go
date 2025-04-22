@@ -9,9 +9,11 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleworkstationsworkstationconfig/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_workstations_workstation_config google_workstations_workstation_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_workstations_workstation_config google_workstations_workstation_config}.
 type GoogleWorkstationsWorkstationConfigA interface {
 	cdktf.TerraformResource
+	AllowedPorts() GoogleWorkstationsWorkstationConfigAllowedPortsList
+	AllowedPortsInput() interface{}
 	Annotations() *map[string]*string
 	SetAnnotations(val *map[string]*string)
 	AnnotationsInput() *map[string]*string
@@ -78,6 +80,9 @@ type GoogleWorkstationsWorkstationConfigA interface {
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
+	MaxUsableWorkstations() *float64
+	SetMaxUsableWorkstations(val *float64)
+	MaxUsableWorkstationsInput() *float64
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
@@ -163,6 +168,7 @@ type GoogleWorkstationsWorkstationConfigA interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAllowedPorts(value interface{})
 	PutContainer(value *GoogleWorkstationsWorkstationConfigContainer)
 	PutEncryptionKey(value *GoogleWorkstationsWorkstationConfigEncryptionKey)
 	PutEphemeralDirectories(value interface{})
@@ -170,6 +176,7 @@ type GoogleWorkstationsWorkstationConfigA interface {
 	PutPersistentDirectories(value interface{})
 	PutReadinessChecks(value interface{})
 	PutTimeouts(value *GoogleWorkstationsWorkstationConfigTimeouts)
+	ResetAllowedPorts()
 	ResetAnnotations()
 	ResetContainer()
 	ResetDisableTcpConnections()
@@ -181,6 +188,7 @@ type GoogleWorkstationsWorkstationConfigA interface {
 	ResetId()
 	ResetIdleTimeout()
 	ResetLabels()
+	ResetMaxUsableWorkstations()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -206,6 +214,26 @@ type GoogleWorkstationsWorkstationConfigA interface {
 // The jsii proxy struct for GoogleWorkstationsWorkstationConfigA
 type jsiiProxy_GoogleWorkstationsWorkstationConfigA struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) AllowedPorts() GoogleWorkstationsWorkstationConfigAllowedPortsList {
+	var returns GoogleWorkstationsWorkstationConfigAllowedPortsList
+	_jsii_.Get(
+		j,
+		"allowedPorts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) AllowedPortsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowedPortsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) Annotations() *map[string]*string {
@@ -598,6 +626,26 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) LocationInput() *string
 	return returns
 }
 
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) MaxUsableWorkstations() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxUsableWorkstations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) MaxUsableWorkstationsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxUsableWorkstationsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -859,7 +907,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) WorkstationConfigIdInpu
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_workstations_workstation_config google_workstations_workstation_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_workstations_workstation_config google_workstations_workstation_config} Resource.
 func NewGoogleWorkstationsWorkstationConfigA(scope constructs.Construct, id *string, config *GoogleWorkstationsWorkstationConfigAConfig) GoogleWorkstationsWorkstationConfigA {
 	_init_.Initialize()
 
@@ -877,7 +925,7 @@ func NewGoogleWorkstationsWorkstationConfigA(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_workstations_workstation_config google_workstations_workstation_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_workstations_workstation_config google_workstations_workstation_config} Resource.
 func NewGoogleWorkstationsWorkstationConfigA_Override(g GoogleWorkstationsWorkstationConfigA, scope constructs.Construct, id *string, config *GoogleWorkstationsWorkstationConfigAConfig) {
 	_init_.Initialize()
 
@@ -1021,6 +1069,17 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA)SetLocation(val *string)
 	_jsii_.Set(
 		j,
 		"location",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA)SetMaxUsableWorkstations(val *float64) {
+	if err := j.validateSetMaxUsableWorkstationsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxUsableWorkstations",
 		val,
 	)
 }
@@ -1452,6 +1511,17 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) OverrideLogicalId(newLo
 	)
 }
 
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) PutAllowedPorts(value interface{}) {
+	if err := g.validatePutAllowedPortsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAllowedPorts",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) PutContainer(value *GoogleWorkstationsWorkstationConfigContainer) {
 	if err := g.validatePutContainerParameters(value); err != nil {
 		panic(err)
@@ -1526,6 +1596,14 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) PutTimeouts(value *Goog
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) ResetAllowedPorts() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAllowedPorts",
+		nil, // no parameters
 	)
 }
 
@@ -1613,6 +1691,14 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) ResetLabels() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetLabels",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) ResetMaxUsableWorkstations() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMaxUsableWorkstations",
 		nil, // no parameters
 	)
 }

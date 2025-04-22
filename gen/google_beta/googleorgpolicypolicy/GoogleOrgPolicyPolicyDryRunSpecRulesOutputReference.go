@@ -40,6 +40,9 @@ type GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Parameters() *string
+	SetParameters(val *string)
+	ParametersInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -80,6 +83,7 @@ type GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference interface {
 	ResetCondition()
 	ResetDenyAll()
 	ResetEnforce()
+	ResetParameters()
 	ResetValues()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -226,6 +230,26 @@ func (j *jsiiProxy_GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference) Internal
 	return returns
 }
 
+func (j *jsiiProxy_GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference) Parameters() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parameters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference) ParametersInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parametersInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -356,6 +380,17 @@ func (j *jsiiProxy_GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference)SetIntern
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference)SetParameters(val *string) {
+	if err := j.validateSetParametersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"parameters",
 		val,
 	)
 }
@@ -618,6 +653,14 @@ func (g *jsiiProxy_GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference) ResetEnf
 	_jsii_.InvokeVoid(
 		g,
 		"resetEnforce",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference) ResetParameters() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetParameters",
 		nil, // no parameters
 	)
 }

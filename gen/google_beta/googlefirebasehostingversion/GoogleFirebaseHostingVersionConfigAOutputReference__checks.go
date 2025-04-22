@@ -90,6 +90,37 @@ func (g *jsiiProxy_GoogleFirebaseHostingVersionConfigAOutputReference) validateI
 	return nil
 }
 
+func (g *jsiiProxy_GoogleFirebaseHostingVersionConfigAOutputReference) validatePutHeadersParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*GoogleFirebaseHostingVersionConfigHeaders:
+		value := value.(*[]*GoogleFirebaseHostingVersionConfigHeaders)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*GoogleFirebaseHostingVersionConfigHeaders:
+		value_ := value.([]*GoogleFirebaseHostingVersionConfigHeaders)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*GoogleFirebaseHostingVersionConfigHeaders; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFirebaseHostingVersionConfigAOutputReference) validatePutRedirectsParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

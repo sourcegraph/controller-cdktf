@@ -72,6 +72,10 @@ func (g *jsiiProxy_GoogleDataprocWorkflowTemplate) validateOverrideLogicalIdPara
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataprocWorkflowTemplate) validatePutEncryptionConfigParameters(value *GoogleDataprocWorkflowTemplateEncryptionConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataprocWorkflowTemplate) validatePutJobsParameters(value interface{}) error {
 	return nil
 }

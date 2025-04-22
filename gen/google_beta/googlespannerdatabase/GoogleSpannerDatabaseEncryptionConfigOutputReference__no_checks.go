@@ -64,6 +64,10 @@ func (j *jsiiProxy_GoogleSpannerDatabaseEncryptionConfigOutputReference) validat
 	return nil
 }
 
+func (j *jsiiProxy_GoogleSpannerDatabaseEncryptionConfigOutputReference) validateSetKmsKeyNamesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSpannerDatabaseEncryptionConfigOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

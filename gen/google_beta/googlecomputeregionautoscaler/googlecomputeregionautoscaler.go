@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeregionautoscaler/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_region_autoscaler google_compute_region_autoscaler}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_region_autoscaler google_compute_region_autoscaler}.
 type GoogleComputeRegionAutoscaler interface {
 	cdktf.TerraformResource
 	AutoscalingPolicy() GoogleComputeRegionAutoscalerAutoscalingPolicyOutputReference
@@ -494,7 +494,7 @@ func (j *jsiiProxy_GoogleComputeRegionAutoscaler) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_region_autoscaler google_compute_region_autoscaler} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_region_autoscaler google_compute_region_autoscaler} Resource.
 func NewGoogleComputeRegionAutoscaler(scope constructs.Construct, id *string, config *GoogleComputeRegionAutoscalerConfig) GoogleComputeRegionAutoscaler {
 	_init_.Initialize()
 
@@ -512,7 +512,7 @@ func NewGoogleComputeRegionAutoscaler(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_region_autoscaler google_compute_region_autoscaler} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_region_autoscaler google_compute_region_autoscaler} Resource.
 func NewGoogleComputeRegionAutoscaler_Override(g GoogleComputeRegionAutoscaler, scope constructs.Construct, id *string, config *GoogleComputeRegionAutoscalerConfig) {
 	_init_.Initialize()
 

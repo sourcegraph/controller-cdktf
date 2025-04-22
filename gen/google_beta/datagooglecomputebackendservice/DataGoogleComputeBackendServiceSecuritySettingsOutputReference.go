@@ -10,6 +10,7 @@ import (
 
 type DataGoogleComputeBackendServiceSecuritySettingsOutputReference interface {
 	cdktf.ComplexObject
+	AwsV4Authentication() DataGoogleComputeBackendServiceSecuritySettingsAwsV4AuthenticationList
 	ClientTlsPolicy() *string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -76,6 +77,16 @@ type DataGoogleComputeBackendServiceSecuritySettingsOutputReference interface {
 // The jsii proxy struct for DataGoogleComputeBackendServiceSecuritySettingsOutputReference
 type jsiiProxy_DataGoogleComputeBackendServiceSecuritySettingsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataGoogleComputeBackendServiceSecuritySettingsOutputReference) AwsV4Authentication() DataGoogleComputeBackendServiceSecuritySettingsAwsV4AuthenticationList {
+	var returns DataGoogleComputeBackendServiceSecuritySettingsAwsV4AuthenticationList
+	_jsii_.Get(
+		j,
+		"awsV4Authentication",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataGoogleComputeBackendServiceSecuritySettingsOutputReference) ClientTlsPolicy() *string {

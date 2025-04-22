@@ -80,11 +80,19 @@ func (c *jsiiProxy_ComputeRegionInstanceGroupManager) validatePutAutoHealingPoli
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRegionInstanceGroupManager) validatePutInstanceFlexibilityPolicyParameters(value *ComputeRegionInstanceGroupManagerInstanceFlexibilityPolicy) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionInstanceGroupManager) validatePutInstanceLifecyclePolicyParameters(value *ComputeRegionInstanceGroupManagerInstanceLifecyclePolicy) error {
 	return nil
 }
 
 func (c *jsiiProxy_ComputeRegionInstanceGroupManager) validatePutNamedPortParameters(value interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRegionInstanceGroupManager) validatePutStandbyPolicyParameters(value *ComputeRegionInstanceGroupManagerStandbyPolicy) error {
 	return nil
 }
 
@@ -185,6 +193,14 @@ func (j *jsiiProxy_ComputeRegionInstanceGroupManager) validateSetTargetPoolsPara
 }
 
 func (j *jsiiProxy_ComputeRegionInstanceGroupManager) validateSetTargetSizeParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeRegionInstanceGroupManager) validateSetTargetStoppedSizeParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeRegionInstanceGroupManager) validateSetTargetSuspendedSizeParameters(val *float64) error {
 	return nil
 }
 

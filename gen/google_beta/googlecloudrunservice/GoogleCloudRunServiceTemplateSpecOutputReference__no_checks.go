@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference) validateSetNodeSelectorParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference) validateSetServiceAccountNameParameters(val *string) error {
 	return nil
 }

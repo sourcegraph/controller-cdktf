@@ -44,6 +44,8 @@ type GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleOutputRefer
 	PriorityInput() *string
 	RouteAction() GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionOutputReference
 	RouteActionInput() *GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteAction
+	RouteMethods() GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteMethodsOutputReference
+	RouteMethodsInput() *GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteMethods
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -81,11 +83,13 @@ type GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleOutputRefer
 	PutHeaderAction(value *GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleHeaderAction)
 	PutMatchRule(value interface{})
 	PutRouteAction(value *GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteAction)
+	PutRouteMethods(value *GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteMethods)
 	PutUrlRedirect(value *GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleUrlRedirect)
 	ResetDescription()
 	ResetHeaderAction()
 	ResetOrigin()
 	ResetRouteAction()
+	ResetRouteMethods()
 	ResetUrlRedirect()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -267,6 +271,26 @@ func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteR
 	_jsii_.Get(
 		j,
 		"routeActionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleOutputReference) RouteMethods() GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteMethodsOutputReference {
+	var returns GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteMethodsOutputReference
+	_jsii_.Get(
+		j,
+		"routeMethods",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleOutputReference) RouteMethodsInput() *GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteMethods {
+	var returns *GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteMethods
+	_jsii_.Get(
+		j,
+		"routeMethodsInput",
 		&returns,
 	)
 	return returns
@@ -647,6 +671,17 @@ func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteR
 	)
 }
 
+func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleOutputReference) PutRouteMethods(value *GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteMethods) {
+	if err := g.validatePutRouteMethodsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putRouteMethods",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleOutputReference) PutUrlRedirect(value *GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleUrlRedirect) {
 	if err := g.validatePutUrlRedirectParameters(value); err != nil {
 		panic(err)
@@ -686,6 +721,14 @@ func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteR
 	_jsii_.InvokeVoid(
 		g,
 		"resetRouteAction",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleOutputReference) ResetRouteMethods() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRouteMethods",
 		nil, // no parameters
 	)
 }

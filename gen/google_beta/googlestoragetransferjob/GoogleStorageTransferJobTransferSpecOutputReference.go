@@ -35,6 +35,8 @@ type GoogleStorageTransferJobTransferSpecOutputReference interface {
 	GcsDataSinkInput() *GoogleStorageTransferJobTransferSpecGcsDataSink
 	GcsDataSource() GoogleStorageTransferJobTransferSpecGcsDataSourceOutputReference
 	GcsDataSourceInput() *GoogleStorageTransferJobTransferSpecGcsDataSource
+	HdfsDataSource() GoogleStorageTransferJobTransferSpecHdfsDataSourceOutputReference
+	HdfsDataSourceInput() *GoogleStorageTransferJobTransferSpecHdfsDataSource
 	HttpDataSource() GoogleStorageTransferJobTransferSpecHttpDataSourceOutputReference
 	HttpDataSourceInput() *GoogleStorageTransferJobTransferSpecHttpDataSource
 	InternalValue() *GoogleStorageTransferJobTransferSpec
@@ -89,6 +91,7 @@ type GoogleStorageTransferJobTransferSpecOutputReference interface {
 	PutAzureBlobStorageDataSource(value *GoogleStorageTransferJobTransferSpecAzureBlobStorageDataSource)
 	PutGcsDataSink(value *GoogleStorageTransferJobTransferSpecGcsDataSink)
 	PutGcsDataSource(value *GoogleStorageTransferJobTransferSpecGcsDataSource)
+	PutHdfsDataSource(value *GoogleStorageTransferJobTransferSpecHdfsDataSource)
 	PutHttpDataSource(value *GoogleStorageTransferJobTransferSpecHttpDataSource)
 	PutObjectConditions(value *GoogleStorageTransferJobTransferSpecObjectConditions)
 	PutPosixDataSink(value *GoogleStorageTransferJobTransferSpecPosixDataSink)
@@ -98,6 +101,7 @@ type GoogleStorageTransferJobTransferSpecOutputReference interface {
 	ResetAzureBlobStorageDataSource()
 	ResetGcsDataSink()
 	ResetGcsDataSource()
+	ResetHdfsDataSource()
 	ResetHttpDataSource()
 	ResetObjectConditions()
 	ResetPosixDataSink()
@@ -235,6 +239,26 @@ func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecOutputReference) GcsDataS
 	_jsii_.Get(
 		j,
 		"gcsDataSourceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecOutputReference) HdfsDataSource() GoogleStorageTransferJobTransferSpecHdfsDataSourceOutputReference {
+	var returns GoogleStorageTransferJobTransferSpecHdfsDataSourceOutputReference
+	_jsii_.Get(
+		j,
+		"hdfsDataSource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecOutputReference) HdfsDataSourceInput() *GoogleStorageTransferJobTransferSpecHdfsDataSource {
+	var returns *GoogleStorageTransferJobTransferSpecHdfsDataSource
+	_jsii_.Get(
+		j,
+		"hdfsDataSourceInput",
 		&returns,
 	)
 	return returns
@@ -745,6 +769,17 @@ func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecOutputReference) PutGcsDa
 	)
 }
 
+func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecOutputReference) PutHdfsDataSource(value *GoogleStorageTransferJobTransferSpecHdfsDataSource) {
+	if err := g.validatePutHdfsDataSourceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putHdfsDataSource",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecOutputReference) PutHttpDataSource(value *GoogleStorageTransferJobTransferSpecHttpDataSource) {
 	if err := g.validatePutHttpDataSourceParameters(value); err != nil {
 		panic(err)
@@ -828,6 +863,14 @@ func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecOutputReference) ResetGcs
 	_jsii_.InvokeVoid(
 		g,
 		"resetGcsDataSource",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecOutputReference) ResetHdfsDataSource() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetHdfsDataSource",
 		nil, // no parameters
 	)
 }

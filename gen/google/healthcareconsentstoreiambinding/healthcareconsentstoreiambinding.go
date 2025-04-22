@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/healthcareconsentstoreiambinding/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/healthcare_consent_store_iam_binding google_healthcare_consent_store_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/healthcare_consent_store_iam_binding google_healthcare_consent_store_iam_binding}.
 type HealthcareConsentStoreIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -434,7 +434,7 @@ func (j *jsiiProxy_HealthcareConsentStoreIamBinding) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/healthcare_consent_store_iam_binding google_healthcare_consent_store_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/healthcare_consent_store_iam_binding google_healthcare_consent_store_iam_binding} Resource.
 func NewHealthcareConsentStoreIamBinding(scope constructs.Construct, id *string, config *HealthcareConsentStoreIamBindingConfig) HealthcareConsentStoreIamBinding {
 	_init_.Initialize()
 
@@ -452,7 +452,7 @@ func NewHealthcareConsentStoreIamBinding(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/healthcare_consent_store_iam_binding google_healthcare_consent_store_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/healthcare_consent_store_iam_binding google_healthcare_consent_store_iam_binding} Resource.
 func NewHealthcareConsentStoreIamBinding_Override(h HealthcareConsentStoreIamBinding, scope constructs.Construct, id *string, config *HealthcareConsentStoreIamBindingConfig) {
 	_init_.Initialize()
 

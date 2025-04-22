@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlestoragebucket/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_storage_bucket google_storage_bucket}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_storage_bucket google_storage_bucket}.
 type GoogleStorageBucket interface {
 	cdktf.TerraformResource
 	Autoclass() GoogleStorageBucketAutoclassOutputReference
@@ -54,6 +54,8 @@ type GoogleStorageBucket interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	HierarchicalNamespace() GoogleStorageBucketHierarchicalNamespaceOutputReference
+	HierarchicalNamespaceInput() *GoogleStorageBucketHierarchicalNamespace
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -171,6 +173,7 @@ type GoogleStorageBucket interface {
 	PutCors(value interface{})
 	PutCustomPlacementConfig(value *GoogleStorageBucketCustomPlacementConfig)
 	PutEncryption(value *GoogleStorageBucketEncryption)
+	PutHierarchicalNamespace(value *GoogleStorageBucketHierarchicalNamespace)
 	PutLifecycleRule(value interface{})
 	PutLogging(value *GoogleStorageBucketLogging)
 	PutRetentionPolicy(value *GoogleStorageBucketRetentionPolicy)
@@ -185,6 +188,7 @@ type GoogleStorageBucket interface {
 	ResetEnableObjectRetention()
 	ResetEncryption()
 	ResetForceDestroy()
+	ResetHierarchicalNamespace()
 	ResetId()
 	ResetLabels()
 	ResetLifecycleRule()
@@ -446,6 +450,26 @@ func (j *jsiiProxy_GoogleStorageBucket) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageBucket) HierarchicalNamespace() GoogleStorageBucketHierarchicalNamespaceOutputReference {
+	var returns GoogleStorageBucketHierarchicalNamespaceOutputReference
+	_jsii_.Get(
+		j,
+		"hierarchicalNamespace",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageBucket) HierarchicalNamespaceInput() *GoogleStorageBucketHierarchicalNamespace {
+	var returns *GoogleStorageBucketHierarchicalNamespace
+	_jsii_.Get(
+		j,
+		"hierarchicalNamespaceInput",
 		&returns,
 	)
 	return returns
@@ -912,7 +936,7 @@ func (j *jsiiProxy_GoogleStorageBucket) WebsiteInput() *GoogleStorageBucketWebsi
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_storage_bucket google_storage_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_storage_bucket google_storage_bucket} Resource.
 func NewGoogleStorageBucket(scope constructs.Construct, id *string, config *GoogleStorageBucketConfig) GoogleStorageBucket {
 	_init_.Initialize()
 
@@ -930,7 +954,7 @@ func NewGoogleStorageBucket(scope constructs.Construct, id *string, config *Goog
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_storage_bucket google_storage_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_storage_bucket google_storage_bucket} Resource.
 func NewGoogleStorageBucket_Override(g GoogleStorageBucket, scope constructs.Construct, id *string, config *GoogleStorageBucketConfig) {
 	_init_.Initialize()
 
@@ -1549,6 +1573,17 @@ func (g *jsiiProxy_GoogleStorageBucket) PutEncryption(value *GoogleStorageBucket
 	)
 }
 
+func (g *jsiiProxy_GoogleStorageBucket) PutHierarchicalNamespace(value *GoogleStorageBucketHierarchicalNamespace) {
+	if err := g.validatePutHierarchicalNamespaceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putHierarchicalNamespace",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleStorageBucket) PutLifecycleRule(value interface{}) {
 	if err := g.validatePutLifecycleRuleParameters(value); err != nil {
 		panic(err)
@@ -1678,6 +1713,14 @@ func (g *jsiiProxy_GoogleStorageBucket) ResetForceDestroy() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetForceDestroy",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleStorageBucket) ResetHierarchicalNamespace() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetHierarchicalNamespace",
 		nil, // no parameters
 	)
 }

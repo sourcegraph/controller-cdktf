@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlenotebookslocation/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_notebooks_location google_notebooks_location}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_notebooks_location google_notebooks_location}.
 type GoogleNotebooksLocation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -390,7 +390,7 @@ func (j *jsiiProxy_GoogleNotebooksLocation) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_notebooks_location google_notebooks_location} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_notebooks_location google_notebooks_location} Resource.
 func NewGoogleNotebooksLocation(scope constructs.Construct, id *string, config *GoogleNotebooksLocationConfig) GoogleNotebooksLocation {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewGoogleNotebooksLocation(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_notebooks_location google_notebooks_location} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_notebooks_location google_notebooks_location} Resource.
 func NewGoogleNotebooksLocation_Override(g GoogleNotebooksLocation, scope constructs.Construct, id *string, config *GoogleNotebooksLocationConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagoogledatacatalogentrygroupiampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/data_catalog_entry_group_iam_policy google_data_catalog_entry_group_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/data-sources/data_catalog_entry_group_iam_policy google_data_catalog_entry_group_iam_policy}.
 type DataGoogleDataCatalogEntryGroupIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -355,7 +355,7 @@ func (j *jsiiProxy_DataGoogleDataCatalogEntryGroupIamPolicy) TerraformResourceTy
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/data_catalog_entry_group_iam_policy google_data_catalog_entry_group_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/data-sources/data_catalog_entry_group_iam_policy google_data_catalog_entry_group_iam_policy} Data Source.
 func NewDataGoogleDataCatalogEntryGroupIamPolicy(scope constructs.Construct, id *string, config *DataGoogleDataCatalogEntryGroupIamPolicyConfig) DataGoogleDataCatalogEntryGroupIamPolicy {
 	_init_.Initialize()
 
@@ -373,7 +373,7 @@ func NewDataGoogleDataCatalogEntryGroupIamPolicy(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/data_catalog_entry_group_iam_policy google_data_catalog_entry_group_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/data-sources/data_catalog_entry_group_iam_policy google_data_catalog_entry_group_iam_policy} Data Source.
 func NewDataGoogleDataCatalogEntryGroupIamPolicy_Override(d DataGoogleDataCatalogEntryGroupIamPolicy, scope constructs.Construct, id *string, config *DataGoogleDataCatalogEntryGroupIamPolicyConfig) {
 	_init_.Initialize()
 

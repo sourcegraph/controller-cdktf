@@ -101,6 +101,17 @@ func (g *jsiiProxy_GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefault
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOutputReference) validatePutLayoutParsingConfigParameters(value *GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOutputReference) validatePutOcrParsingConfigParameters(value *GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOcrParsingConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

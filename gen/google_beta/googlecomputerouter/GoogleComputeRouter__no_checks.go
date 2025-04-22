@@ -76,6 +76,10 @@ func (g *jsiiProxy_GoogleComputeRouter) validatePutBgpParameters(value *GoogleCo
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeRouter) validatePutMd5AuthenticationKeysParameters(value *GoogleComputeRouterMd5AuthenticationKeys) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRouter) validatePutTimeoutsParameters(value *GoogleComputeRouterTimeouts) error {
 	return nil
 }
