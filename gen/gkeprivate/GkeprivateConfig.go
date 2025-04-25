@@ -29,6 +29,10 @@ type GkeprivateConfig struct {
 	AddClusterFirewallRules *bool `field:"optional" json:"addClusterFirewallRules" yaml:"addClusterFirewallRules"`
 	// List of _names_ of the additional secondary subnet ip ranges to use for pods.
 	AdditionalIpRangePods *[]*string `field:"optional" json:"additionalIpRangePods" yaml:"additionalIpRangePods"`
+	// This will enable Cloud DNS additive VPC scope.
+	//
+	// Must provide a domain name that is unique within the VPC. For this to work cluster_dns = `CLOUD_DNS` and cluster_dns_scope = `CLUSTER_SCOPE` must both be set as well.
+	AdditiveVpcScopeDnsDomain *string `field:"optional" json:"additiveVpcScopeDnsDomain" yaml:"additiveVpcScopeDnsDomain"`
 	// Create master_webhook firewall rules for ports defined in `firewall_inbound_ports`.
 	AddMasterWebhookFirewallRules *bool `field:"optional" json:"addMasterWebhookFirewallRules" yaml:"addMasterWebhookFirewallRules"`
 	// Create GKE shadow firewall (the same as default firewall rules with firewall logs enabled).
@@ -37,6 +41,10 @@ type GkeprivateConfig struct {
 	//
 	// Group name must be in format gke-security-groups@yourdomain.com
 	AuthenticatorSecurityGroup *string `field:"optional" json:"authenticatorSecurityGroup" yaml:"authenticatorSecurityGroup"`
+	// The Customer Managed Encryption Key used to encrypt the boot disk attached to each node in the node pool, if not overridden in `node_pools`.
+	//
+	// This should be of the form projects/[KEY_PROJECT_ID]/locations/[LOCATION]/keyRings/[RING_NAME]/cryptoKeys/[KEY_NAME]. For more information about protecting resources with Cloud KMS Keys please see: https://cloud.google.com/compute/docs/disks/customer-managed-encryption
+	BootDiskKmsKey *string `field:"optional" json:"bootDiskKmsKey" yaml:"bootDiskKmsKey"`
 	// (Beta) Enable CloudRun addon.
 	Cloudrun *bool `field:"optional" json:"cloudrun" yaml:"cloudrun"`
 	// (Beta) Configure the Cloud Run load balancer type.
@@ -93,7 +101,7 @@ type GkeprivateConfig struct {
 	//
 	// true.
 	DeletionProtection *bool `field:"optional" json:"deletionProtection" yaml:"deletionProtection"`
-	// (Beta) A toggle for Terraform and kubectl to connect to the master's internal IP address during deployment.
+	// A toggle for Terraform and kubectl to connect to the master's internal IP address during deployment.
 	DeployUsingPrivateEndpoint *bool `field:"optional" json:"deployUsingPrivateEndpoint" yaml:"deployUsingPrivateEndpoint"`
 	// The description of the cluster.
 	Description *string `field:"optional" json:"description" yaml:"description"`
@@ -101,19 +109,25 @@ type GkeprivateConfig struct {
 	DisableDefaultSnat *bool `field:"optional" json:"disableDefaultSnat" yaml:"disableDefaultSnat"`
 	// Disable the /0.1/ and /v1beta1/ metadata server endpoints on the node. Changing this value will cause all node pools to be recreated. true.
 	DisableLegacyMetadataEndpoints *bool `field:"optional" json:"disableLegacyMetadataEndpoints" yaml:"disableLegacyMetadataEndpoints"`
+	// (Optional) Controls whether external traffic is allowed over the dns endpoint.
+	DnsAllowExternalTraffic *bool `field:"optional" json:"dnsAllowExternalTraffic" yaml:"dnsAllowExternalTraffic"`
 	// The status of the NodeLocal DNSCache addon.
 	DnsCache *bool `field:"optional" json:"dnsCache" yaml:"dnsCache"`
 	// Enable BinAuthZ Admission controller.
 	EnableBinaryAuthorization *bool `field:"optional" json:"enableBinaryAuthorization" yaml:"enableBinaryAuthorization"`
+	// Enable Cilium Cluster Wide Network Policies on the cluster.
+	EnableCiliumClusterwideNetworkPolicy *bool `field:"optional" json:"enableCiliumClusterwideNetworkPolicy" yaml:"enableCiliumClusterwideNetworkPolicy"`
 	// An optional flag to enable confidential node config.
 	EnableConfidentialNodes *bool `field:"optional" json:"enableConfidentialNodes" yaml:"enableConfidentialNodes"`
 	// Enables Cost Allocation Feature and the cluster name and namespace of your GKE workloads appear in the labels field of the billing export to BigQuery.
 	EnableCostAllocation *bool `field:"optional" json:"enableCostAllocation" yaml:"enableCostAllocation"`
+	// Whether to enable the default node pools metadata key-value pairs such as `cluster_name` and `node_pool` true.
+	EnableDefaultNodePoolsMetadata *bool `field:"optional" json:"enableDefaultNodePoolsMetadata" yaml:"enableDefaultNodePoolsMetadata"`
 	// Enable FQDN Network Policies on the cluster.
 	EnableFqdnNetworkPolicy *bool `field:"optional" json:"enableFqdnNetworkPolicy" yaml:"enableFqdnNetworkPolicy"`
 	// Enable image streaming on cluster level.
 	EnableGcfs *bool `field:"optional" json:"enableGcfs" yaml:"enableGcfs"`
-	// Enable the Identity Service component, which allows customers to use external identity providers with the K8S API.
+	// (Optional) Enable the Identity Service component, which allows customers to use external identity providers with the K8S API.
 	EnableIdentityService *bool `field:"optional" json:"enableIdentityService" yaml:"enableIdentityService"`
 	// Whether Intra-node visibility is enabled for this cluster.
 	//
@@ -137,15 +151,17 @@ type GkeprivateConfig struct {
 	//
 	// If enabled, pods must be valid under a PodSecurityPolicy to be created. Pod Security Policy was removed from GKE clusters with version >= 1.25.0.
 	EnablePodSecurityPolicy *bool `field:"optional" json:"enablePodSecurityPolicy" yaml:"enablePodSecurityPolicy"`
-	// (Beta) Whether the master's internal IP address is used as the cluster endpoint.
+	// Whether the master's internal IP address is used as the cluster endpoint.
 	EnablePrivateEndpoint *bool `field:"optional" json:"enablePrivateEndpoint" yaml:"enablePrivateEndpoint"`
-	// (Beta) Whether nodes have internal IP addresses only.
+	// Whether nodes have internal IP addresses only true.
 	EnablePrivateNodes *bool `field:"optional" json:"enablePrivateNodes" yaml:"enablePrivateNodes"`
 	// Whether to enable resource consumption metering on this cluster.
 	//
 	// When enabled, a table will be created in the resource export BigQuery dataset to store resource consumption data. The resulting table can be joined with the resource usage table or with BigQuery billing export.
 	// true.
 	EnableResourceConsumptionExport *bool `field:"optional" json:"enableResourceConsumptionExport" yaml:"enableResourceConsumptionExport"`
+	// Enable the Secret Manager add-on for this cluster.
+	EnableSecretManagerAddon *bool `field:"optional" json:"enableSecretManagerAddon" yaml:"enableSecretManagerAddon"`
 	// Enable Shielded Nodes features on all nodes in this cluster true.
 	EnableShieldedNodes *bool `field:"optional" json:"enableShieldedNodes" yaml:"enableShieldedNodes"`
 	// Enable Cloud TPU resources in the cluster.
@@ -154,6 +170,10 @@ type GkeprivateConfig struct {
 	EnableTpu *bool `field:"optional" json:"enableTpu" yaml:"enableTpu"`
 	// Vertical Pod Autoscaling automatically adjusts the resources of pods controlled by it.
 	EnableVerticalPodAutoscaling *bool `field:"optional" json:"enableVerticalPodAutoscaling" yaml:"enableVerticalPodAutoscaling"`
+	// (Optional) Enable or disable GKE enterprise.
+	//
+	// Valid values are STANDARD and ENTERPRISE.
+	EnterpriseConfig *string `field:"optional" json:"enterpriseConfig" yaml:"enterpriseConfig"`
 	// The status of the Filestore CSI driver addon, which allows the usage of filestore instance as volumes.
 	FilestoreCsiDriver *bool `field:"optional" json:"filestoreCsiDriver" yaml:"filestoreCsiDriver"`
 	// List of TCP ports for admission/webhook controllers.
@@ -177,6 +197,8 @@ type GkeprivateConfig struct {
 	//
 	// true.
 	GcePdCsiDriver *bool `field:"optional" json:"gcePdCsiDriver" yaml:"gcePdCsiDriver"`
+	// Allow access through Google Cloud public IP addresses.
+	GcpPublicCidrsAccessEnabled *bool `field:"optional" json:"gcpPublicCidrsAccessEnabled" yaml:"gcpPublicCidrsAccessEnabled"`
 	// Whether GCE FUSE CSI driver is enabled for this cluster.
 	GcsFuseCsiDriver *bool `field:"optional" json:"gcsFuseCsiDriver" yaml:"gcsFuseCsiDriver"`
 	// Whether Backup for GKE agent is enabled for this cluster.
@@ -194,6 +216,10 @@ type GkeprivateConfig struct {
 	IdentityNamespace *string `field:"optional" json:"identityNamespace" yaml:"identityNamespace"`
 	// The number of nodes to create in this cluster's default node pool.
 	InitialNodeCount *float64 `field:"optional" json:"initialNodeCount" yaml:"initialNodeCount"`
+	// Whether or not to set `insecure_kubelet_readonly_port_enabled` for node pool defaults and autopilot clusters.
+	//
+	// Note: this can be set at the node pool level separately within `node_pools`.
+	InsecureKubeletReadonlyPortEnabled *bool `field:"optional" json:"insecureKubeletReadonlyPortEnabled" yaml:"insecureKubeletReadonlyPortEnabled"`
 	// Whether to masquerade traffic to the link-local prefix (169.254.0.0/16).
 	IpMasqLinkLocal *bool `field:"optional" json:"ipMasqLinkLocal" yaml:"ipMasqLinkLocal"`
 	// The interval at which the agent attempts to sync its ConfigMap file from the disk.
@@ -217,7 +243,7 @@ type GkeprivateConfig struct {
 	// If set to 'latest' it will pull latest available version in the selected region.
 	// latest.
 	KubernetesVersion *string `field:"optional" json:"kubernetesVersion" yaml:"kubernetesVersion"`
-	// List of services to monitor: SYSTEM_COMPONENTS, WORKLOADS.
+	// List of services to monitor: SYSTEM_COMPONENTS, APISERVER, CONTROLLER_MANAGER, KCP_CONNECTION, KCP_SSHD, SCHEDULER, and WORKLOADS.
 	//
 	// Empty list is default GKE configuration.
 	LoggingEnabledComponents *[]*string `field:"optional" json:"loggingEnabledComponents" yaml:"loggingEnabledComponents"`
@@ -226,6 +252,10 @@ type GkeprivateConfig struct {
 	// Available options include logging.googleapis.com, logging.googleapis.com/kubernetes (beta), and none
 	// logging.googleapis.com/kubernetes
 	LoggingService *string `field:"optional" json:"loggingService" yaml:"loggingService"`
+	// (Optional) The type of logging agent that is deployed by default for newly created node pools in the cluster.
+	//
+	// Valid values include DEFAULT and MAX_THROUGHPUT.
+	LoggingVariant *string `field:"optional" json:"loggingVariant" yaml:"loggingVariant"`
 	// Time window specified for recurring maintenance operations in RFC3339 format.
 	MaintenanceEndTime *string `field:"optional" json:"maintenanceEndTime" yaml:"maintenanceEndTime"`
 	// List of maintenance exclusions.
@@ -244,14 +274,11 @@ type GkeprivateConfig struct {
 	//
 	// true.
 	MasterGlobalAccessEnabled *bool `field:"optional" json:"masterGlobalAccessEnabled" yaml:"masterGlobalAccessEnabled"`
-	// (Beta) The IP range in CIDR notation to use for the hosted master network.
-	//
-	// Optional for Autopilot clusters.
-	// 10.0.0.0/28
+	// (Optional) The IP range in CIDR notation to use for the hosted master network.
 	MasterIpv4CidrBlock *string `field:"optional" json:"masterIpv4CidrBlock" yaml:"masterIpv4CidrBlock"`
-	// List of services to monitor: SYSTEM_COMPONENTS, WORKLOADS.
+	// List of services to monitor: SYSTEM_COMPONENTS, APISERVER, SCHEDULER, CONTROLLER_MANAGER, STORAGE, HPA, POD, DAEMONSET, DEPLOYMENT, STATEFULSET, KUBELET, CADVISOR and DCGM.
 	//
-	// Empty list is default GKE configuration.
+	// In beta provider, WORKLOADS is supported on top of those 12 values. (WORKLOADS is deprecated and removed in GKE 1.24.) KUBELET and CADVISOR are only supported in GKE 1.29.3-gke.1093000 and above. Empty list is default GKE configuration.
 	MonitoringEnabledComponents *[]*string `field:"optional" json:"monitoringEnabledComponents" yaml:"monitoringEnabledComponents"`
 	// Configuration for Managed Service for Prometheus.
 	//
@@ -259,8 +286,10 @@ type GkeprivateConfig struct {
 	MonitoringEnableManagedPrometheus *bool `field:"optional" json:"monitoringEnableManagedPrometheus" yaml:"monitoringEnableManagedPrometheus"`
 	// Whether or not the advanced datapath metrics are enabled.
 	MonitoringEnableObservabilityMetrics *bool `field:"optional" json:"monitoringEnableObservabilityMetrics" yaml:"monitoringEnableObservabilityMetrics"`
-	// Mode used to make advanced datapath metrics relay available.
-	MonitoringObservabilityMetricsRelayMode *string `field:"optional" json:"monitoringObservabilityMetricsRelayMode" yaml:"monitoringObservabilityMetricsRelayMode"`
+	// Whether or not the advanced datapath relay is enabled.
+	MonitoringEnableObservabilityRelay *bool `field:"optional" json:"monitoringEnableObservabilityRelay" yaml:"monitoringEnableObservabilityRelay"`
+	// The monitoring metrics writer role to assign to the GKE node service account roles/monitoring.metricWriter.
+	MonitoringMetricWriterRole *string `field:"optional" json:"monitoringMetricWriterRole" yaml:"monitoringMetricWriterRole"`
 	// The monitoring service that the cluster should write metrics to.
 	//
 	// Automatically send metrics from pods in the cluster to the Google Cloud Monitoring API. VM metrics will be collected by Google Compute Engine regardless of this setting Available options include monitoring.googleapis.com, monitoring.googleapis.com/kubernetes (beta) and none
@@ -280,6 +309,8 @@ type GkeprivateConfig struct {
 	NodeMetadata *string `field:"optional" json:"nodeMetadata" yaml:"nodeMetadata"`
 	// List of maps containing node pools [object Object] The property type contains a map, they have special handling, please see {@link cdk.tf /module-map-inputs the docs}.
 	NodePools *[]*map[string]interface{} `field:"optional" json:"nodePools" yaml:"nodePools"`
+	// Map of strings containing cgroup node config by node-pool name The property type contains a map, they have special handling, please see {@link cdk.tf /module-map-inputs the docs}.
+	NodePoolsCgroupMode *map[string]*string `field:"optional" json:"nodePoolsCgroupMode" yaml:"nodePoolsCgroupMode"`
 	// Map of maps containing node labels by node-pool name The property type contains a map, they have special handling, please see {@link cdk.tf /module-map-inputs the docs}.
 	NodePoolsLabels *map[string]*map[string]*string `field:"optional" json:"nodePoolsLabels" yaml:"nodePoolsLabels"`
 	// Map of maps containing linux node config sysctls by node-pool name The property type contains a map, they have special handling, please see {@link cdk.tf /module-map-inputs the docs}.
@@ -290,6 +321,8 @@ type GkeprivateConfig struct {
 	NodePoolsOauthScopes *map[string]*[]*string `field:"optional" json:"nodePoolsOauthScopes" yaml:"nodePoolsOauthScopes"`
 	// Map of maps containing resource labels by node-pool name The property type contains a map, they have special handling, please see {@link cdk.tf /module-map-inputs the docs}.
 	NodePoolsResourceLabels *map[string]*map[string]*string `field:"optional" json:"nodePoolsResourceLabels" yaml:"nodePoolsResourceLabels"`
+	// Map of maps containing resource manager tags by node-pool name The property type contains a map, they have special handling, please see {@link cdk.tf /module-map-inputs the docs}.
+	NodePoolsResourceManagerTags *map[string]*map[string]*string `field:"optional" json:"nodePoolsResourceManagerTags" yaml:"nodePoolsResourceManagerTags"`
 	// Map of lists containing node network tags by node-pool name The property type contains a map, they have special handling, please see {@link cdk.tf /module-map-inputs the docs}.
 	NodePoolsTags *map[string]*[]*string `field:"optional" json:"nodePoolsTags" yaml:"nodePoolsTags"`
 	// Map of lists containing node taints by node-pool name The property type contains a map, they have special handling, please see {@link cdk.tf /module-map-inputs the docs}.
@@ -304,6 +337,16 @@ type GkeprivateConfig struct {
 	//
 	// Format is projects/{project}/topics/{topic}.
 	NotificationConfigTopic *string `field:"optional" json:"notificationConfigTopic" yaml:"notificationConfigTopic"`
+	// Choose what type of notifications you want to receive.
+	//
+	// If no filters are applied, you'll receive all notification types. Can be used to filter what notifications are sent. Accepted values are UPGRADE_AVAILABLE_EVENT, UPGRADE_EVENT, and SECURITY_BULLETIN_EVENT.
+	NotificationFilterEventType *[]*string `field:"optional" json:"notificationFilterEventType" yaml:"notificationFilterEventType"`
+	// Whether the Parallelstore CSI driver Addon is enabled for this cluster.
+	ParallelstoreCsiDriver *bool `field:"optional" json:"parallelstoreCsiDriver" yaml:"parallelstoreCsiDriver"`
+	// The subnetwork to use for the hosted master network.
+	PrivateEndpointSubnetwork *string `field:"optional" json:"privateEndpointSubnetwork" yaml:"privateEndpointSubnetwork"`
+	// The Ray Operator Addon configuration for this cluster.
+	RayOperatorConfig interface{} `field:"optional" json:"rayOperatorConfig" yaml:"rayOperatorConfig"`
 	// The region to host the cluster in (optional if zonal cluster / required if regional).
 	Region *string `field:"optional" json:"region" yaml:"region"`
 	// Whether is a regional cluster (zonal cluster if set false.
@@ -333,7 +376,7 @@ type GkeprivateConfig struct {
 	SecurityPostureMode *string `field:"optional" json:"securityPostureMode" yaml:"securityPostureMode"`
 	// Security posture vulnerability mode.
 	//
-	// Accepted values are `VULNERABILITY_DISABLED` and `VULNERABILITY_BASIC`. Defaults to `VULNERABILITY_DISABLED`.
+	// Accepted values are `VULNERABILITY_DISABLED`, `VULNERABILITY_BASIC`, and `VULNERABILITY_ENTERPRISE`. Defaults to `VULNERABILITY_DISABLED`.
 	// VULNERABILITY_DISABLED.
 	SecurityPostureVulnerabilityMode *string `field:"optional" json:"securityPostureVulnerabilityMode" yaml:"securityPostureVulnerabilityMode"`
 	// The service account to run nodes as if not overridden in `node_pools`.
@@ -360,6 +403,8 @@ type GkeprivateConfig struct {
 	// Either `IPV4` or `IPV4_IPV6`. Defaults to `IPV4`.
 	// IPV4.
 	StackType *string `field:"optional" json:"stackType" yaml:"stackType"`
+	// Whether the Stateful HA Addon is enabled for this cluster.
+	StatefulHa *bool `field:"optional" json:"statefulHa" yaml:"statefulHa"`
 	// Map of stub domains and their resolvers to forward DNS queries for a certain domain to an external DNS server The property type contains a map, they have special handling, please see {@link cdk.tf /module-map-inputs the docs}.
 	StubDomains *map[string]*[]*string `field:"optional" json:"stubDomains" yaml:"stubDomains"`
 	// Timeout for cluster operations.
@@ -372,11 +417,14 @@ type GkeprivateConfig struct {
 	//
 	// The property type contains a map, they have special handling, please see {@link cdk.tf /module-map-inputs the docs}
 	WindowsNodePools *[]*map[string]*string `field:"optional" json:"windowsNodePools" yaml:"windowsNodePools"`
-	// (beta) Workload config audit mode.
+	// (beta) Sets which mode of auditing should be used for the cluster's workloads.
 	//
+	// Accepted values are DISABLED, BASIC.
 	// DISABLED.
 	WorkloadConfigAuditMode *string `field:"optional" json:"workloadConfigAuditMode" yaml:"workloadConfigAuditMode"`
-	// (beta) Vulnerability mode.
+	// (beta) Sets which mode to use for Protect workload vulnerability scanning feature.
+	//
+	// Accepted values are DISABLED, BASIC.
 	WorkloadVulnerabilityMode *string `field:"optional" json:"workloadVulnerabilityMode" yaml:"workloadVulnerabilityMode"`
 	// The zones to host the cluster in (optional if regional cluster / required if zonal).
 	Zones *[]*string `field:"optional" json:"zones" yaml:"zones"`

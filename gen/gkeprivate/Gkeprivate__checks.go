@@ -138,6 +138,14 @@ func (j *jsiiProxy_Gkeprivate) validateSetProjectIdParameters(val *string) error
 	return nil
 }
 
+func (j *jsiiProxy_Gkeprivate) validateSetRayOperatorConfigParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Gkeprivate) validateSetShadowFirewallRulesLogConfigParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
