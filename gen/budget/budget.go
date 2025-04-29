@@ -11,7 +11,7 @@ import (
 
 // Defines an Budget based on a Terraform module.
 //
-// Docs at Terraform Registry: {@link https://registry.terraform.io/modules/terraform-google-modules/project-factory/google/14.4.0/submodules/budget terraform-google-modules/project-factory/google//modules/budget}
+// Docs at Terraform Registry: {@link https://registry.terraform.io/modules/terraform-google-modules/project-factory/google/18.0.0/submodules/budget terraform-google-modules/project-factory/google//modules/budget}
 type Budget interface {
 	cdktf.TerraformModule
 	AlertPubsubTopic() *string
