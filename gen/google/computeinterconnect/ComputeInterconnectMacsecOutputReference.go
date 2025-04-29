@@ -25,6 +25,9 @@ type ComputeInterconnectMacsecOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	FailOpen() interface{}
+	SetFailOpen(val interface{})
+	FailOpenInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() *ComputeInterconnectMacsec
@@ -64,6 +67,7 @@ type ComputeInterconnectMacsecOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutPreSharedKeys(value interface{})
+	ResetFailOpen()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -104,6 +108,26 @@ func (j *jsiiProxy_ComputeInterconnectMacsecOutputReference) CreationStack() *[]
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInterconnectMacsecOutputReference) FailOpen() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"failOpen",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInterconnectMacsecOutputReference) FailOpenInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"failOpenInput",
 		&returns,
 	)
 	return returns
@@ -215,6 +239,17 @@ func (j *jsiiProxy_ComputeInterconnectMacsecOutputReference)SetComplexObjectIsFr
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeInterconnectMacsecOutputReference)SetFailOpen(val interface{}) {
+	if err := j.validateSetFailOpenParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"failOpen",
 		val,
 	)
 }
@@ -446,6 +481,14 @@ func (c *jsiiProxy_ComputeInterconnectMacsecOutputReference) PutPreSharedKeys(va
 		c,
 		"putPreSharedKeys",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ComputeInterconnectMacsecOutputReference) ResetFailOpen() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetFailOpen",
+		nil, // no parameters
 	)
 }
 

@@ -48,6 +48,10 @@ func (d *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsin
 	return nil
 }
 
+func (d *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOutputReference) validatePutLayoutParsingConfigParameters(value *DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfig) error {
+	return nil
+}
+
 func (d *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOutputReference) validatePutOcrParsingConfigParameters(value *DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOcrParsingConfig) error {
 	return nil
 }

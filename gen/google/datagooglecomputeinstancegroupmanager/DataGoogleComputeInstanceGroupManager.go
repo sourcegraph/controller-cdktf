@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagooglecomputeinstancegroupmanager/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/compute_instance_group_manager google_compute_instance_group_manager}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/compute_instance_group_manager google_compute_instance_group_manager}.
 type DataGoogleComputeInstanceGroupManager interface {
 	cdktf.TerraformDataSource
 	AllInstancesConfig() DataGoogleComputeInstanceGroupManagerAllInstancesConfigList
@@ -42,6 +42,7 @@ type DataGoogleComputeInstanceGroupManager interface {
 	SetId(val *string)
 	IdInput() *string
 	InstanceGroup() *string
+	InstanceGroupManagerId() *float64
 	InstanceLifecyclePolicy() DataGoogleComputeInstanceGroupManagerInstanceLifecyclePolicyList
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -67,12 +68,15 @@ type DataGoogleComputeInstanceGroupManager interface {
 	SelfLink() *string
 	SetSelfLink(val *string)
 	SelfLinkInput() *string
+	StandbyPolicy() DataGoogleComputeInstanceGroupManagerStandbyPolicyList
 	StatefulDisk() DataGoogleComputeInstanceGroupManagerStatefulDiskList
 	StatefulExternalIp() DataGoogleComputeInstanceGroupManagerStatefulExternalIpList
 	StatefulInternalIp() DataGoogleComputeInstanceGroupManagerStatefulInternalIpList
 	Status() DataGoogleComputeInstanceGroupManagerStatusList
 	TargetPools() *[]*string
 	TargetSize() *float64
+	TargetStoppedSize() *float64
+	TargetSuspendedSize() *float64
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -298,6 +302,16 @@ func (j *jsiiProxy_DataGoogleComputeInstanceGroupManager) InstanceGroup() *strin
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeInstanceGroupManager) InstanceGroupManagerId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"instanceGroupManagerId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeInstanceGroupManager) InstanceLifecyclePolicy() DataGoogleComputeInstanceGroupManagerInstanceLifecyclePolicyList {
 	var returns DataGoogleComputeInstanceGroupManagerInstanceLifecyclePolicyList
 	_jsii_.Get(
@@ -438,6 +452,16 @@ func (j *jsiiProxy_DataGoogleComputeInstanceGroupManager) SelfLinkInput() *strin
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeInstanceGroupManager) StandbyPolicy() DataGoogleComputeInstanceGroupManagerStandbyPolicyList {
+	var returns DataGoogleComputeInstanceGroupManagerStandbyPolicyList
+	_jsii_.Get(
+		j,
+		"standbyPolicy",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeInstanceGroupManager) StatefulDisk() DataGoogleComputeInstanceGroupManagerStatefulDiskList {
 	var returns DataGoogleComputeInstanceGroupManagerStatefulDiskList
 	_jsii_.Get(
@@ -493,6 +517,26 @@ func (j *jsiiProxy_DataGoogleComputeInstanceGroupManager) TargetSize() *float64 
 	_jsii_.Get(
 		j,
 		"targetSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeInstanceGroupManager) TargetStoppedSize() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"targetStoppedSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeInstanceGroupManager) TargetSuspendedSize() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"targetSuspendedSize",
 		&returns,
 	)
 	return returns
@@ -589,7 +633,7 @@ func (j *jsiiProxy_DataGoogleComputeInstanceGroupManager) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/compute_instance_group_manager google_compute_instance_group_manager} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/compute_instance_group_manager google_compute_instance_group_manager} Data Source.
 func NewDataGoogleComputeInstanceGroupManager(scope constructs.Construct, id *string, config *DataGoogleComputeInstanceGroupManagerConfig) DataGoogleComputeInstanceGroupManager {
 	_init_.Initialize()
 
@@ -607,7 +651,7 @@ func NewDataGoogleComputeInstanceGroupManager(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/compute_instance_group_manager google_compute_instance_group_manager} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/compute_instance_group_manager google_compute_instance_group_manager} Data Source.
 func NewDataGoogleComputeInstanceGroupManager_Override(d DataGoogleComputeInstanceGroupManager, scope constructs.Construct, id *string, config *DataGoogleComputeInstanceGroupManagerConfig) {
 	_init_.Initialize()
 

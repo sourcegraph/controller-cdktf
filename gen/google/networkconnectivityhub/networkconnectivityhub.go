@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/networkconnectivityhub/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/network_connectivity_hub google_network_connectivity_hub}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/network_connectivity_hub google_network_connectivity_hub}.
 type NetworkConnectivityHub interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -33,6 +33,9 @@ type NetworkConnectivityHub interface {
 	SetDescription(val *string)
 	DescriptionInput() *string
 	EffectiveLabels() cdktf.StringMap
+	ExportPsc() interface{}
+	SetExportPsc(val interface{})
+	ExportPscInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -56,6 +59,12 @@ type NetworkConnectivityHub interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	PolicyMode() *string
+	SetPolicyMode(val *string)
+	PolicyModeInput() *string
+	PresetTopology() *string
+	SetPresetTopology(val *string)
+	PresetTopologyInput() *string
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -127,11 +136,15 @@ type NetworkConnectivityHub interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *NetworkConnectivityHubTimeouts)
 	ResetDescription()
+	ResetExportPsc()
 	ResetId()
 	ResetLabels()
+	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPolicyMode()
+	ResetPresetTopology()
 	ResetProject()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -242,6 +255,26 @@ func (j *jsiiProxy_NetworkConnectivityHub) EffectiveLabels() cdktf.StringMap {
 	return returns
 }
 
+func (j *jsiiProxy_NetworkConnectivityHub) ExportPsc() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"exportPsc",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkConnectivityHub) ExportPscInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"exportPscInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NetworkConnectivityHub) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -347,6 +380,46 @@ func (j *jsiiProxy_NetworkConnectivityHub) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkConnectivityHub) PolicyMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"policyMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkConnectivityHub) PolicyModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"policyModeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkConnectivityHub) PresetTopology() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"presetTopology",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkConnectivityHub) PresetTopologyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"presetTopologyInput",
 		&returns,
 	)
 	return returns
@@ -503,7 +576,7 @@ func (j *jsiiProxy_NetworkConnectivityHub) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/network_connectivity_hub google_network_connectivity_hub} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/network_connectivity_hub google_network_connectivity_hub} Resource.
 func NewNetworkConnectivityHub(scope constructs.Construct, id *string, config *NetworkConnectivityHubConfig) NetworkConnectivityHub {
 	_init_.Initialize()
 
@@ -521,7 +594,7 @@ func NewNetworkConnectivityHub(scope constructs.Construct, id *string, config *N
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/network_connectivity_hub google_network_connectivity_hub} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/network_connectivity_hub google_network_connectivity_hub} Resource.
 func NewNetworkConnectivityHub_Override(n NetworkConnectivityHub, scope constructs.Construct, id *string, config *NetworkConnectivityHubConfig) {
 	_init_.Initialize()
 
@@ -569,6 +642,17 @@ func (j *jsiiProxy_NetworkConnectivityHub)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkConnectivityHub)SetExportPsc(val interface{}) {
+	if err := j.validateSetExportPscParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"exportPsc",
 		val,
 	)
 }
@@ -621,6 +705,28 @@ func (j *jsiiProxy_NetworkConnectivityHub)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkConnectivityHub)SetPolicyMode(val *string) {
+	if err := j.validateSetPolicyModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"policyMode",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkConnectivityHub)SetPresetTopology(val *string) {
+	if err := j.validateSetPresetTopologyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"presetTopology",
 		val,
 	)
 }
@@ -1027,6 +1133,14 @@ func (n *jsiiProxy_NetworkConnectivityHub) ResetDescription() {
 	)
 }
 
+func (n *jsiiProxy_NetworkConnectivityHub) ResetExportPsc() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetExportPsc",
+		nil, // no parameters
+	)
+}
+
 func (n *jsiiProxy_NetworkConnectivityHub) ResetId() {
 	_jsii_.InvokeVoid(
 		n,
@@ -1043,10 +1157,34 @@ func (n *jsiiProxy_NetworkConnectivityHub) ResetLabels() {
 	)
 }
 
+func (n *jsiiProxy_NetworkConnectivityHub) ResetName() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetName",
+		nil, // no parameters
+	)
+}
+
 func (n *jsiiProxy_NetworkConnectivityHub) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkConnectivityHub) ResetPolicyMode() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetPolicyMode",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkConnectivityHub) ResetPresetTopology() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetPresetTopology",
 		nil, // no parameters
 	)
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/networkconnectivityregionalendpoint/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/network_connectivity_regional_endpoint google_network_connectivity_regional_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/network_connectivity_regional_endpoint google_network_connectivity_regional_endpoint}.
 type NetworkConnectivityRegionalEndpoint interface {
 	cdktf.TerraformResource
 	AccessType() *string
@@ -622,7 +622,7 @@ func (j *jsiiProxy_NetworkConnectivityRegionalEndpoint) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/network_connectivity_regional_endpoint google_network_connectivity_regional_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/network_connectivity_regional_endpoint google_network_connectivity_regional_endpoint} Resource.
 func NewNetworkConnectivityRegionalEndpoint(scope constructs.Construct, id *string, config *NetworkConnectivityRegionalEndpointConfig) NetworkConnectivityRegionalEndpoint {
 	_init_.Initialize()
 
@@ -640,7 +640,7 @@ func NewNetworkConnectivityRegionalEndpoint(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/network_connectivity_regional_endpoint google_network_connectivity_regional_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/network_connectivity_regional_endpoint google_network_connectivity_regional_endpoint} Resource.
 func NewNetworkConnectivityRegionalEndpoint_Override(n NetworkConnectivityRegionalEndpoint, scope constructs.Construct, id *string, config *NetworkConnectivityRegionalEndpointConfig) {
 	_init_.Initialize()
 

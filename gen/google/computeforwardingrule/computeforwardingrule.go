@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/computeforwardingrule/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_forwarding_rule google_compute_forwarding_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_forwarding_rule google_compute_forwarding_rule}.
 type ComputeForwardingRule interface {
 	cdktf.TerraformResource
 	AllowGlobalAccess() interface{}
@@ -50,6 +50,7 @@ type ComputeForwardingRule interface {
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
 	SetForEach(val cdktf.ITerraformIterator)
+	ForwardingRuleId() *float64
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -60,6 +61,9 @@ type ComputeForwardingRule interface {
 	IpAddress() *string
 	SetIpAddress(val *string)
 	IpAddressInput() *string
+	IpCollection() *string
+	SetIpCollection(val *string)
+	IpCollectionInput() *string
 	IpProtocol() *string
 	SetIpProtocol(val *string)
 	IpProtocolInput() *string
@@ -198,6 +202,7 @@ type ComputeForwardingRule interface {
 	ResetDescription()
 	ResetId()
 	ResetIpAddress()
+	ResetIpCollection()
 	ResetIpProtocol()
 	ResetIpVersion()
 	ResetIsMirroringCollector()
@@ -428,6 +433,16 @@ func (j *jsiiProxy_ComputeForwardingRule) ForEach() cdktf.ITerraformIterator {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeForwardingRule) ForwardingRuleId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"forwardingRuleId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeForwardingRule) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -483,6 +498,26 @@ func (j *jsiiProxy_ComputeForwardingRule) IpAddressInput() *string {
 	_jsii_.Get(
 		j,
 		"ipAddressInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeForwardingRule) IpCollection() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipCollection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeForwardingRule) IpCollectionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipCollectionInput",
 		&returns,
 	)
 	return returns
@@ -1029,7 +1064,7 @@ func (j *jsiiProxy_ComputeForwardingRule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_forwarding_rule google_compute_forwarding_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_forwarding_rule google_compute_forwarding_rule} Resource.
 func NewComputeForwardingRule(scope constructs.Construct, id *string, config *ComputeForwardingRuleConfig) ComputeForwardingRule {
 	_init_.Initialize()
 
@@ -1047,7 +1082,7 @@ func NewComputeForwardingRule(scope constructs.Construct, id *string, config *Co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_forwarding_rule google_compute_forwarding_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_forwarding_rule google_compute_forwarding_rule} Resource.
 func NewComputeForwardingRule_Override(c ComputeForwardingRule, scope constructs.Construct, id *string, config *ComputeForwardingRuleConfig) {
 	_init_.Initialize()
 
@@ -1169,6 +1204,17 @@ func (j *jsiiProxy_ComputeForwardingRule)SetIpAddress(val *string) {
 	_jsii_.Set(
 		j,
 		"ipAddress",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeForwardingRule)SetIpCollection(val *string) {
+	if err := j.validateSetIpCollectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipCollection",
 		val,
 	)
 }
@@ -1828,6 +1874,14 @@ func (c *jsiiProxy_ComputeForwardingRule) ResetIpAddress() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetIpAddress",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeForwardingRule) ResetIpCollection() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetIpCollection",
 		nil, // no parameters
 	)
 }

@@ -215,7 +215,29 @@ func (s *jsiiProxy_StorageTransferJob) validatePutEventStreamParameters(value *S
 	return nil
 }
 
+func (s *jsiiProxy_StorageTransferJob) validatePutLoggingConfigParameters(value *StorageTransferJobLoggingConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (s *jsiiProxy_StorageTransferJob) validatePutNotificationConfigParameters(value *StorageTransferJobNotificationConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (s *jsiiProxy_StorageTransferJob) validatePutReplicationSpecParameters(value *StorageTransferJobReplicationSpec) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

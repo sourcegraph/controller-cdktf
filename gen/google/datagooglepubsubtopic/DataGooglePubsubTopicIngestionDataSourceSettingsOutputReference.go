@@ -11,6 +11,9 @@ import (
 type DataGooglePubsubTopicIngestionDataSourceSettingsOutputReference interface {
 	cdktf.ComplexObject
 	AwsKinesis() DataGooglePubsubTopicIngestionDataSourceSettingsAwsKinesisList
+	AwsMsk() DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskList
+	AzureEventHubs() DataGooglePubsubTopicIngestionDataSourceSettingsAzureEventHubsList
+	CloudStorage() DataGooglePubsubTopicIngestionDataSourceSettingsCloudStorageList
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -21,6 +24,7 @@ type DataGooglePubsubTopicIngestionDataSourceSettingsOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ConfluentCloud() DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -30,6 +34,7 @@ type DataGooglePubsubTopicIngestionDataSourceSettingsOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataGooglePubsubTopicIngestionDataSourceSettings
 	SetInternalValue(val *DataGooglePubsubTopicIngestionDataSourceSettings)
+	PlatformLogsSettings() DataGooglePubsubTopicIngestionDataSourceSettingsPlatformLogsSettingsList
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -87,6 +92,36 @@ func (j *jsiiProxy_DataGooglePubsubTopicIngestionDataSourceSettingsOutputReferen
 	return returns
 }
 
+func (j *jsiiProxy_DataGooglePubsubTopicIngestionDataSourceSettingsOutputReference) AwsMsk() DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskList {
+	var returns DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskList
+	_jsii_.Get(
+		j,
+		"awsMsk",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGooglePubsubTopicIngestionDataSourceSettingsOutputReference) AzureEventHubs() DataGooglePubsubTopicIngestionDataSourceSettingsAzureEventHubsList {
+	var returns DataGooglePubsubTopicIngestionDataSourceSettingsAzureEventHubsList
+	_jsii_.Get(
+		j,
+		"azureEventHubs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGooglePubsubTopicIngestionDataSourceSettingsOutputReference) CloudStorage() DataGooglePubsubTopicIngestionDataSourceSettingsCloudStorageList {
+	var returns DataGooglePubsubTopicIngestionDataSourceSettingsCloudStorageList
+	_jsii_.Get(
+		j,
+		"cloudStorage",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGooglePubsubTopicIngestionDataSourceSettingsOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -102,6 +137,16 @@ func (j *jsiiProxy_DataGooglePubsubTopicIngestionDataSourceSettingsOutputReferen
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGooglePubsubTopicIngestionDataSourceSettingsOutputReference) ConfluentCloud() DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudList {
+	var returns DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudList
+	_jsii_.Get(
+		j,
+		"confluentCloud",
 		&returns,
 	)
 	return returns
@@ -132,6 +177,16 @@ func (j *jsiiProxy_DataGooglePubsubTopicIngestionDataSourceSettingsOutputReferen
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGooglePubsubTopicIngestionDataSourceSettingsOutputReference) PlatformLogsSettings() DataGooglePubsubTopicIngestionDataSourceSettingsPlatformLogsSettingsList {
+	var returns DataGooglePubsubTopicIngestionDataSourceSettingsPlatformLogsSettingsList
+	_jsii_.Get(
+		j,
+		"platformLogsSettings",
 		&returns,
 	)
 	return returns

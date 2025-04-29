@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagooglecomputebackendservice/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/compute_backend_service google_compute_backend_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/compute_backend_service google_compute_backend_service}.
 type DataGoogleComputeBackendService interface {
 	cdktf.TerraformDataSource
 	AffinityCookieTtlSec() *float64
@@ -28,6 +28,7 @@ type DataGoogleComputeBackendService interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreationTimestamp() *string
+	CustomMetrics() DataGoogleComputeBackendServiceCustomMetricsList
 	CustomRequestHeaders() *[]*string
 	CustomResponseHeaders() *[]*string
 	// Experimental.
@@ -52,6 +53,7 @@ type DataGoogleComputeBackendService interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IpAddressSelectionPolicy() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -60,6 +62,7 @@ type DataGoogleComputeBackendService interface {
 	LocalityLbPolicies() DataGoogleComputeBackendServiceLocalityLbPoliciesList
 	LocalityLbPolicy() *string
 	LogConfig() DataGoogleComputeBackendServiceLogConfigList
+	MaxStreamDuration() DataGoogleComputeBackendServiceMaxStreamDurationList
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -82,6 +85,7 @@ type DataGoogleComputeBackendService interface {
 	SelfLink() *string
 	ServiceLbPolicy() *string
 	SessionAffinity() *string
+	StrongSessionAffinityCookie() DataGoogleComputeBackendServiceStrongSessionAffinityCookieList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -248,6 +252,16 @@ func (j *jsiiProxy_DataGoogleComputeBackendService) CreationTimestamp() *string 
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeBackendService) CustomMetrics() DataGoogleComputeBackendServiceCustomMetricsList {
+	var returns DataGoogleComputeBackendServiceCustomMetricsList
+	_jsii_.Get(
+		j,
+		"customMetrics",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeBackendService) CustomRequestHeaders() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -398,6 +412,16 @@ func (j *jsiiProxy_DataGoogleComputeBackendService) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeBackendService) IpAddressSelectionPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipAddressSelectionPolicy",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeBackendService) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -443,6 +467,16 @@ func (j *jsiiProxy_DataGoogleComputeBackendService) LogConfig() DataGoogleComput
 	_jsii_.Get(
 		j,
 		"logConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeBackendService) MaxStreamDuration() DataGoogleComputeBackendServiceMaxStreamDurationList {
+	var returns DataGoogleComputeBackendServiceMaxStreamDurationList
+	_jsii_.Get(
+		j,
+		"maxStreamDuration",
 		&returns,
 	)
 	return returns
@@ -598,6 +632,16 @@ func (j *jsiiProxy_DataGoogleComputeBackendService) SessionAffinity() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeBackendService) StrongSessionAffinityCookie() DataGoogleComputeBackendServiceStrongSessionAffinityCookieList {
+	var returns DataGoogleComputeBackendServiceStrongSessionAffinityCookieList
+	_jsii_.Get(
+		j,
+		"strongSessionAffinityCookie",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeBackendService) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -639,7 +683,7 @@ func (j *jsiiProxy_DataGoogleComputeBackendService) TimeoutSec() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/compute_backend_service google_compute_backend_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/compute_backend_service google_compute_backend_service} Data Source.
 func NewDataGoogleComputeBackendService(scope constructs.Construct, id *string, config *DataGoogleComputeBackendServiceConfig) DataGoogleComputeBackendService {
 	_init_.Initialize()
 
@@ -657,7 +701,7 @@ func NewDataGoogleComputeBackendService(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/compute_backend_service google_compute_backend_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/compute_backend_service google_compute_backend_service} Data Source.
 func NewDataGoogleComputeBackendService_Override(d DataGoogleComputeBackendService, scope constructs.Construct, id *string, config *DataGoogleComputeBackendServiceConfig) {
 	_init_.Initialize()
 

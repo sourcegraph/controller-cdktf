@@ -109,6 +109,26 @@ func (d *jsiiProxy_DiscoveryEngineChatEngineChatEngineConfigOutputReference) val
 	return nil
 }
 
+func (j *jsiiProxy_DiscoveryEngineChatEngineChatEngineConfigOutputReference) validateSetAllowCrossRegionParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DiscoveryEngineChatEngineChatEngineConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
@@ -167,6 +187,14 @@ func (j *jsiiProxy_DiscoveryEngineChatEngineChatEngineConfigOutputReference) val
 }
 
 func (j *jsiiProxy_DiscoveryEngineChatEngineChatEngineConfigOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DiscoveryEngineChatEngineChatEngineConfigOutputReference) validateSetDialogflowAgentToLinkParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

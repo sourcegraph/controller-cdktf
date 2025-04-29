@@ -1,0 +1,6 @@
+package networksecuritymirroringendpointgroupassociation
+
+
+type NetworkSecurityMirroringEndpointGroupAssociationLocations struct {
+}
+

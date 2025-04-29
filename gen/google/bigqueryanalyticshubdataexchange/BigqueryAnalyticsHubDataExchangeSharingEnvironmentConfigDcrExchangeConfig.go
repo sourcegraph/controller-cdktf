@@ -1,0 +1,6 @@
+package bigqueryanalyticshubdataexchange
+
+
+type BigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigDcrExchangeConfig struct {
+}
+

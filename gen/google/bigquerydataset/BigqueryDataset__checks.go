@@ -246,6 +246,17 @@ func (b *jsiiProxy_BigqueryDataset) validatePutDefaultEncryptionConfigurationPar
 	return nil
 }
 
+func (b *jsiiProxy_BigqueryDataset) validatePutExternalCatalogDatasetOptionsParameters(value *BigqueryDatasetExternalCatalogDatasetOptions) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryDataset) validatePutExternalDatasetReferenceParameters(value *BigqueryDatasetExternalDatasetReference) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -575,6 +586,14 @@ func (j *jsiiProxy_BigqueryDataset) validateSetProvisionersParameters(val *[]int
 				return fmt.Errorf("parameter val[%#v] must be one of the allowed types: *cdktf.FileProvisioner, *cdktf.LocalExecProvisioner, *cdktf.RemoteExecProvisioner; received %#v (a %T)", idx_97dfc6, v, v)
 			}
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_BigqueryDataset) validateSetResourceTagsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

@@ -26,11 +26,14 @@ type DataGoogleCloudRunV2JobTemplateTemplateVolumesOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EmptyDir() DataGoogleCloudRunV2JobTemplateTemplateVolumesEmptyDirList
 	// Experimental.
 	Fqn() *string
+	Gcs() DataGoogleCloudRunV2JobTemplateTemplateVolumesGcsList
 	InternalValue() *DataGoogleCloudRunV2JobTemplateTemplateVolumes
 	SetInternalValue(val *DataGoogleCloudRunV2JobTemplateTemplateVolumes)
 	Name() *string
+	Nfs() DataGoogleCloudRunV2JobTemplateTemplateVolumesNfsList
 	Secret() DataGoogleCloudRunV2JobTemplateTemplateVolumesSecretList
 	// Experimental.
 	TerraformAttribute() *string
@@ -119,11 +122,31 @@ func (j *jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateVolumesOutputReference
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateVolumesOutputReference) EmptyDir() DataGoogleCloudRunV2JobTemplateTemplateVolumesEmptyDirList {
+	var returns DataGoogleCloudRunV2JobTemplateTemplateVolumesEmptyDirList
+	_jsii_.Get(
+		j,
+		"emptyDir",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateVolumesOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateVolumesOutputReference) Gcs() DataGoogleCloudRunV2JobTemplateTemplateVolumesGcsList {
+	var returns DataGoogleCloudRunV2JobTemplateTemplateVolumesGcsList
+	_jsii_.Get(
+		j,
+		"gcs",
 		&returns,
 	)
 	return returns
@@ -144,6 +167,16 @@ func (j *jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateVolumesOutputReference
 	_jsii_.Get(
 		j,
 		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateVolumesOutputReference) Nfs() DataGoogleCloudRunV2JobTemplateTemplateVolumesNfsList {
+	var returns DataGoogleCloudRunV2JobTemplateTemplateVolumesNfsList
+	_jsii_.Get(
+		j,
+		"nfs",
 		&returns,
 	)
 	return returns

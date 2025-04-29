@@ -32,6 +32,8 @@ type DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolic
 	InstanceSelectionResults() DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionResultsList
 	InternalValue() *DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicy
 	SetInternalValue(val *DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicy)
+	ProvisioningModelMix() DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyProvisioningModelMixOutputReference
+	ProvisioningModelMixInput() *DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyProvisioningModelMix
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -65,7 +67,9 @@ type DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolic
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutInstanceSelectionList(value interface{})
+	PutProvisioningModelMix(value *DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyProvisioningModelMix)
 	ResetInstanceSelectionList()
+	ResetProvisioningModelMix()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -156,6 +160,26 @@ func (j *jsiiProxy_DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFl
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyOutputReference) ProvisioningModelMix() DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyProvisioningModelMixOutputReference {
+	var returns DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyProvisioningModelMixOutputReference
+	_jsii_.Get(
+		j,
+		"provisioningModelMix",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyOutputReference) ProvisioningModelMixInput() *DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyProvisioningModelMix {
+	var returns *DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyProvisioningModelMix
+	_jsii_.Get(
+		j,
+		"provisioningModelMixInput",
 		&returns,
 	)
 	return returns
@@ -461,10 +485,29 @@ func (d *jsiiProxy_DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFl
 	)
 }
 
+func (d *jsiiProxy_DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyOutputReference) PutProvisioningModelMix(value *DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyProvisioningModelMix) {
+	if err := d.validatePutProvisioningModelMixParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putProvisioningModelMix",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyOutputReference) ResetInstanceSelectionList() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetInstanceSelectionList",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyOutputReference) ResetProvisioningModelMix() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProvisioningModelMix",
 		nil, // no parameters
 	)
 }

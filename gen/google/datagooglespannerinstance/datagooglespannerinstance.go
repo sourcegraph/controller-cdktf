@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagooglespannerinstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/spanner_instance google_spanner_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/spanner_instance google_spanner_instance}.
 type DataGoogleSpannerInstance interface {
 	cdktf.TerraformDataSource
 	AutoscalingConfig() DataGoogleSpannerInstanceAutoscalingConfigList
@@ -24,6 +24,7 @@ type DataGoogleSpannerInstance interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DefaultBackupScheduleType() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -31,6 +32,7 @@ type DataGoogleSpannerInstance interface {
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
+	Edition() *string
 	EffectiveLabels() cdktf.StringMap
 	ForceDestroy() cdktf.IResolvable
 	// Experimental.
@@ -184,6 +186,16 @@ func (j *jsiiProxy_DataGoogleSpannerInstance) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleSpannerInstance) DefaultBackupScheduleType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultBackupScheduleType",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleSpannerInstance) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -209,6 +221,16 @@ func (j *jsiiProxy_DataGoogleSpannerInstance) DisplayNameInput() *string {
 	_jsii_.Get(
 		j,
 		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSpannerInstance) Edition() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"edition",
 		&returns,
 	)
 	return returns
@@ -445,7 +467,7 @@ func (j *jsiiProxy_DataGoogleSpannerInstance) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/spanner_instance google_spanner_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/spanner_instance google_spanner_instance} Data Source.
 func NewDataGoogleSpannerInstance(scope constructs.Construct, id *string, config *DataGoogleSpannerInstanceConfig) DataGoogleSpannerInstance {
 	_init_.Initialize()
 
@@ -463,7 +485,7 @@ func NewDataGoogleSpannerInstance(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/spanner_instance google_spanner_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/spanner_instance google_spanner_instance} Data Source.
 func NewDataGoogleSpannerInstance_Override(d DataGoogleSpannerInstance, scope constructs.Construct, id *string, config *DataGoogleSpannerInstanceConfig) {
 	_init_.Initialize()
 

@@ -1,0 +1,6 @@
+package datagooglesecretmanagerregionalsecretversion
+
+
+type DataGoogleSecretManagerRegionalSecretVersionCustomerManagedEncryption struct {
+}
+

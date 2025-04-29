@@ -1,0 +1,6 @@
+package vertexaiindexendpointdeployedindex
+
+
+type VertexAiIndexEndpointDeployedIndexPrivateEndpointsPscAutomatedEndpoints struct {
+}
+

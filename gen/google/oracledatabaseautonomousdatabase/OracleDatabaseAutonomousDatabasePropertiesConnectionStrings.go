@@ -1,0 +1,6 @@
+package oracledatabaseautonomousdatabase
+
+
+type OracleDatabaseAutonomousDatabasePropertiesConnectionStrings struct {
+}
+

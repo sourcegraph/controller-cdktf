@@ -80,6 +80,10 @@ func (b *jsiiProxy_BigqueryDataset) validatePutDefaultEncryptionConfigurationPar
 	return nil
 }
 
+func (b *jsiiProxy_BigqueryDataset) validatePutExternalCatalogDatasetOptionsParameters(value *BigqueryDatasetExternalCatalogDatasetOptions) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryDataset) validatePutExternalDatasetReferenceParameters(value *BigqueryDatasetExternalDatasetReference) error {
 	return nil
 }
@@ -169,6 +173,10 @@ func (j *jsiiProxy_BigqueryDataset) validateSetProjectParameters(val *string) er
 }
 
 func (j *jsiiProxy_BigqueryDataset) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_BigqueryDataset) validateSetResourceTagsParameters(val *map[string]*string) error {
 	return nil
 }
 

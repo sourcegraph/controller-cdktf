@@ -32,6 +32,12 @@ type BigqueryDataTransferConfigSensitiveParamsOutputReference interface {
 	SecretAccessKey() *string
 	SetSecretAccessKey(val *string)
 	SecretAccessKeyInput() *string
+	SecretAccessKeyWo() *string
+	SetSecretAccessKeyWo(val *string)
+	SecretAccessKeyWoInput() *string
+	SecretAccessKeyWoVersion() *float64
+	SetSecretAccessKeyWoVersion(val *float64)
+	SecretAccessKeyWoVersionInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -64,6 +70,9 @@ type BigqueryDataTransferConfigSensitiveParamsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetSecretAccessKey()
+	ResetSecretAccessKeyWo()
+	ResetSecretAccessKeyWoVersion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -144,6 +153,46 @@ func (j *jsiiProxy_BigqueryDataTransferConfigSensitiveParamsOutputReference) Sec
 	_jsii_.Get(
 		j,
 		"secretAccessKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryDataTransferConfigSensitiveParamsOutputReference) SecretAccessKeyWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secretAccessKeyWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryDataTransferConfigSensitiveParamsOutputReference) SecretAccessKeyWoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secretAccessKeyWoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryDataTransferConfigSensitiveParamsOutputReference) SecretAccessKeyWoVersion() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"secretAccessKeyWoVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryDataTransferConfigSensitiveParamsOutputReference) SecretAccessKeyWoVersionInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"secretAccessKeyWoVersionInput",
 		&returns,
 	)
 	return returns
@@ -237,6 +286,28 @@ func (j *jsiiProxy_BigqueryDataTransferConfigSensitiveParamsOutputReference)SetS
 	_jsii_.Set(
 		j,
 		"secretAccessKey",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigqueryDataTransferConfigSensitiveParamsOutputReference)SetSecretAccessKeyWo(val *string) {
+	if err := j.validateSetSecretAccessKeyWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"secretAccessKeyWo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigqueryDataTransferConfigSensitiveParamsOutputReference)SetSecretAccessKeyWoVersion(val *float64) {
+	if err := j.validateSetSecretAccessKeyWoVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"secretAccessKeyWoVersion",
 		val,
 	)
 }
@@ -447,6 +518,30 @@ func (b *jsiiProxy_BigqueryDataTransferConfigSensitiveParamsOutputReference) Int
 	)
 
 	return returns
+}
+
+func (b *jsiiProxy_BigqueryDataTransferConfigSensitiveParamsOutputReference) ResetSecretAccessKey() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetSecretAccessKey",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryDataTransferConfigSensitiveParamsOutputReference) ResetSecretAccessKeyWo() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetSecretAccessKeyWo",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryDataTransferConfigSensitiveParamsOutputReference) ResetSecretAccessKeyWoVersion() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetSecretAccessKeyWoVersion",
+		nil, // no parameters
+	)
 }
 
 func (b *jsiiProxy_BigqueryDataTransferConfigSensitiveParamsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

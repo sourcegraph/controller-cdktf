@@ -44,6 +44,9 @@ type DatastreamConnectionProfileOracleProfileOutputReference interface {
 	Port() *float64
 	SetPort(val *float64)
 	PortInput() *float64
+	SecretManagerStoredPassword() *string
+	SetSecretManagerStoredPassword(val *string)
+	SecretManagerStoredPasswordInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -80,7 +83,9 @@ type DatastreamConnectionProfileOracleProfileOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetConnectionAttributes()
+	ResetPassword()
 	ResetPort()
+	ResetSecretManagerStoredPassword()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -246,6 +251,26 @@ func (j *jsiiProxy_DatastreamConnectionProfileOracleProfileOutputReference) Port
 	return returns
 }
 
+func (j *jsiiProxy_DatastreamConnectionProfileOracleProfileOutputReference) SecretManagerStoredPassword() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secretManagerStoredPassword",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatastreamConnectionProfileOracleProfileOutputReference) SecretManagerStoredPasswordInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secretManagerStoredPasswordInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatastreamConnectionProfileOracleProfileOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -398,6 +423,17 @@ func (j *jsiiProxy_DatastreamConnectionProfileOracleProfileOutputReference)SetPo
 	_jsii_.Set(
 		j,
 		"port",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatastreamConnectionProfileOracleProfileOutputReference)SetSecretManagerStoredPassword(val *string) {
+	if err := j.validateSetSecretManagerStoredPasswordParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"secretManagerStoredPassword",
 		val,
 	)
 }
@@ -629,10 +665,26 @@ func (d *jsiiProxy_DatastreamConnectionProfileOracleProfileOutputReference) Rese
 	)
 }
 
+func (d *jsiiProxy_DatastreamConnectionProfileOracleProfileOutputReference) ResetPassword() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPassword",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DatastreamConnectionProfileOracleProfileOutputReference) ResetPort() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetPort",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatastreamConnectionProfileOracleProfileOutputReference) ResetSecretManagerStoredPassword() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSecretManagerStoredPassword",
 		nil, // no parameters
 	)
 }

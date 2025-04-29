@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/iapappengineversioniambinding/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/iap_app_engine_version_iam_binding google_iap_app_engine_version_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/iap_app_engine_version_iam_binding google_iap_app_engine_version_iam_binding}.
 type IapAppEngineVersionIamBinding interface {
 	cdktf.TerraformResource
 	AppId() *string
@@ -481,7 +481,7 @@ func (j *jsiiProxy_IapAppEngineVersionIamBinding) VersionIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/iap_app_engine_version_iam_binding google_iap_app_engine_version_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/iap_app_engine_version_iam_binding google_iap_app_engine_version_iam_binding} Resource.
 func NewIapAppEngineVersionIamBinding(scope constructs.Construct, id *string, config *IapAppEngineVersionIamBindingConfig) IapAppEngineVersionIamBinding {
 	_init_.Initialize()
 
@@ -499,7 +499,7 @@ func NewIapAppEngineVersionIamBinding(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/iap_app_engine_version_iam_binding google_iap_app_engine_version_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/iap_app_engine_version_iam_binding google_iap_app_engine_version_iam_binding} Resource.
 func NewIapAppEngineVersionIamBinding_Override(i IapAppEngineVersionIamBinding, scope constructs.Construct, id *string, config *IapAppEngineVersionIamBindingConfig) {
 	_init_.Initialize()
 

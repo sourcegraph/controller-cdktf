@@ -72,6 +72,22 @@ func (j *jsiiProxy_ComputeInstanceBootDiskOutputReference) validateSetDiskEncryp
 	return nil
 }
 
+func (j *jsiiProxy_ComputeInstanceBootDiskOutputReference) validateSetDiskEncryptionKeyRsaParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeInstanceBootDiskOutputReference) validateSetDiskEncryptionServiceAccountParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeInstanceBootDiskOutputReference) validateSetGuestOsFeaturesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeInstanceBootDiskOutputReference) validateSetInterfaceParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeInstanceBootDiskOutputReference) validateSetInternalValueParameters(val *ComputeInstanceBootDisk) error {
 	return nil
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/lookerinstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/looker_instance google_looker_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/looker_instance google_looker_instance}.
 type LookerInstance interface {
 	cdktf.TerraformResource
 	AdminSettings() LookerInstanceAdminSettingsOutputReference
@@ -32,6 +32,9 @@ type LookerInstance interface {
 	CreateTime() *string
 	CustomDomain() LookerInstanceCustomDomainOutputReference
 	CustomDomainInput() *LookerInstanceCustomDomain
+	DeletionPolicy() *string
+	SetDeletionPolicy(val *string)
+	DeletionPolicyInput() *string
 	DenyMaintenancePeriod() LookerInstanceDenyMaintenancePeriodOutputReference
 	DenyMaintenancePeriodInput() *LookerInstanceDenyMaintenancePeriod
 	// Experimental.
@@ -41,6 +44,9 @@ type LookerInstance interface {
 	EgressPublicIp() *string
 	EncryptionConfig() LookerInstanceEncryptionConfigOutputReference
 	EncryptionConfigInput() *LookerInstanceEncryptionConfig
+	FipsEnabled() interface{}
+	SetFipsEnabled(val interface{})
+	FipsEnabledInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -86,6 +92,11 @@ type LookerInstance interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	PscConfig() LookerInstancePscConfigOutputReference
+	PscConfigInput() *LookerInstancePscConfig
+	PscEnabled() interface{}
+	SetPscEnabled(val interface{})
+	PscEnabledInput() interface{}
 	PublicIpEnabled() interface{}
 	SetPublicIpEnabled(val interface{})
 	PublicIpEnabledInput() interface{}
@@ -157,22 +168,26 @@ type LookerInstance interface {
 	PutEncryptionConfig(value *LookerInstanceEncryptionConfig)
 	PutMaintenanceWindow(value *LookerInstanceMaintenanceWindow)
 	PutOauthConfig(value *LookerInstanceOauthConfig)
+	PutPscConfig(value *LookerInstancePscConfig)
 	PutTimeouts(value *LookerInstanceTimeouts)
 	PutUserMetadata(value *LookerInstanceUserMetadata)
 	ResetAdminSettings()
 	ResetConsumerNetwork()
 	ResetCustomDomain()
+	ResetDeletionPolicy()
 	ResetDenyMaintenancePeriod()
 	ResetEncryptionConfig()
+	ResetFipsEnabled()
 	ResetId()
 	ResetMaintenanceWindow()
-	ResetOauthConfig()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPlatformEdition()
 	ResetPrivateIpEnabled()
 	ResetProject()
+	ResetPscConfig()
+	ResetPscEnabled()
 	ResetPublicIpEnabled()
 	ResetRegion()
 	ResetReservedRange()
@@ -306,6 +321,26 @@ func (j *jsiiProxy_LookerInstance) CustomDomainInput() *LookerInstanceCustomDoma
 	return returns
 }
 
+func (j *jsiiProxy_LookerInstance) DeletionPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deletionPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LookerInstance) DeletionPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deletionPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LookerInstance) DenyMaintenancePeriod() LookerInstanceDenyMaintenancePeriodOutputReference {
 	var returns LookerInstanceDenyMaintenancePeriodOutputReference
 	_jsii_.Get(
@@ -361,6 +396,26 @@ func (j *jsiiProxy_LookerInstance) EncryptionConfigInput() *LookerInstanceEncryp
 	_jsii_.Get(
 		j,
 		"encryptionConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LookerInstance) FipsEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"fipsEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LookerInstance) FipsEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"fipsEnabledInput",
 		&returns,
 	)
 	return returns
@@ -616,6 +671,46 @@ func (j *jsiiProxy_LookerInstance) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_LookerInstance) PscConfig() LookerInstancePscConfigOutputReference {
+	var returns LookerInstancePscConfigOutputReference
+	_jsii_.Get(
+		j,
+		"pscConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LookerInstance) PscConfigInput() *LookerInstancePscConfig {
+	var returns *LookerInstancePscConfig
+	_jsii_.Get(
+		j,
+		"pscConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LookerInstance) PscEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"pscEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LookerInstance) PscEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"pscEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LookerInstance) PublicIpEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -767,7 +862,7 @@ func (j *jsiiProxy_LookerInstance) UserMetadataInput() *LookerInstanceUserMetada
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/looker_instance google_looker_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/looker_instance google_looker_instance} Resource.
 func NewLookerInstance(scope constructs.Construct, id *string, config *LookerInstanceConfig) LookerInstance {
 	_init_.Initialize()
 
@@ -785,7 +880,7 @@ func NewLookerInstance(scope constructs.Construct, id *string, config *LookerIns
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/looker_instance google_looker_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/looker_instance google_looker_instance} Resource.
 func NewLookerInstance_Override(l LookerInstance, scope constructs.Construct, id *string, config *LookerInstanceConfig) {
 	_init_.Initialize()
 
@@ -829,10 +924,32 @@ func (j *jsiiProxy_LookerInstance)SetCount(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_LookerInstance)SetDeletionPolicy(val *string) {
+	if err := j.validateSetDeletionPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deletionPolicy",
+		val,
+	)
+}
+
 func (j *jsiiProxy_LookerInstance)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LookerInstance)SetFipsEnabled(val interface{}) {
+	if err := j.validateSetFipsEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"fipsEnabled",
 		val,
 	)
 }
@@ -926,6 +1043,17 @@ func (j *jsiiProxy_LookerInstance)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LookerInstance)SetPscEnabled(val interface{}) {
+	if err := j.validateSetPscEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pscEnabled",
 		val,
 	)
 }
@@ -1382,6 +1510,17 @@ func (l *jsiiProxy_LookerInstance) PutOauthConfig(value *LookerInstanceOauthConf
 	)
 }
 
+func (l *jsiiProxy_LookerInstance) PutPscConfig(value *LookerInstancePscConfig) {
+	if err := l.validatePutPscConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putPscConfig",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LookerInstance) PutTimeouts(value *LookerInstanceTimeouts) {
 	if err := l.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1428,6 +1567,14 @@ func (l *jsiiProxy_LookerInstance) ResetCustomDomain() {
 	)
 }
 
+func (l *jsiiProxy_LookerInstance) ResetDeletionPolicy() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetDeletionPolicy",
+		nil, // no parameters
+	)
+}
+
 func (l *jsiiProxy_LookerInstance) ResetDenyMaintenancePeriod() {
 	_jsii_.InvokeVoid(
 		l,
@@ -1444,6 +1591,14 @@ func (l *jsiiProxy_LookerInstance) ResetEncryptionConfig() {
 	)
 }
 
+func (l *jsiiProxy_LookerInstance) ResetFipsEnabled() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetFipsEnabled",
+		nil, // no parameters
+	)
+}
+
 func (l *jsiiProxy_LookerInstance) ResetId() {
 	_jsii_.InvokeVoid(
 		l,
@@ -1456,14 +1611,6 @@ func (l *jsiiProxy_LookerInstance) ResetMaintenanceWindow() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetMaintenanceWindow",
-		nil, // no parameters
-	)
-}
-
-func (l *jsiiProxy_LookerInstance) ResetOauthConfig() {
-	_jsii_.InvokeVoid(
-		l,
-		"resetOauthConfig",
 		nil, // no parameters
 	)
 }
@@ -1496,6 +1643,22 @@ func (l *jsiiProxy_LookerInstance) ResetProject() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LookerInstance) ResetPscConfig() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetPscConfig",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LookerInstance) ResetPscEnabled() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetPscEnabled",
 		nil, // no parameters
 	)
 }

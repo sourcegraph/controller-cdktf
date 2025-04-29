@@ -28,10 +28,14 @@ type DataGoogleComputeInstanceBootDiskOutputReference interface {
 	CreationStack() *[]*string
 	DeviceName() *string
 	DiskEncryptionKeyRaw() *string
+	DiskEncryptionKeyRsa() *string
 	DiskEncryptionKeySha256() *string
+	DiskEncryptionServiceAccount() *string
 	// Experimental.
 	Fqn() *string
+	GuestOsFeatures() *[]*string
 	InitializeParams() DataGoogleComputeInstanceBootDiskInitializeParamsList
+	Interface() *string
 	InternalValue() *DataGoogleComputeInstanceBootDisk
 	SetInternalValue(val *DataGoogleComputeInstanceBootDisk)
 	KmsKeySelfLink() *string
@@ -144,11 +148,31 @@ func (j *jsiiProxy_DataGoogleComputeInstanceBootDiskOutputReference) DiskEncrypt
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeInstanceBootDiskOutputReference) DiskEncryptionKeyRsa() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"diskEncryptionKeyRsa",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeInstanceBootDiskOutputReference) DiskEncryptionKeySha256() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"diskEncryptionKeySha256",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeInstanceBootDiskOutputReference) DiskEncryptionServiceAccount() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"diskEncryptionServiceAccount",
 		&returns,
 	)
 	return returns
@@ -164,11 +188,31 @@ func (j *jsiiProxy_DataGoogleComputeInstanceBootDiskOutputReference) Fqn() *stri
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeInstanceBootDiskOutputReference) GuestOsFeatures() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"guestOsFeatures",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeInstanceBootDiskOutputReference) InitializeParams() DataGoogleComputeInstanceBootDiskInitializeParamsList {
 	var returns DataGoogleComputeInstanceBootDiskInitializeParamsList
 	_jsii_.Get(
 		j,
 		"initializeParams",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeInstanceBootDiskOutputReference) Interface() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"interface",
 		&returns,
 	)
 	return returns

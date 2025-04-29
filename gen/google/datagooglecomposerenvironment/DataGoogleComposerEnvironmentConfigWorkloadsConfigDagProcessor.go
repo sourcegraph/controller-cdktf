@@ -1,0 +1,6 @@
+package datagooglecomposerenvironment
+
+
+type DataGoogleComposerEnvironmentConfigWorkloadsConfigDagProcessor struct {
+}
+

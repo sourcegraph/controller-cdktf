@@ -25,6 +25,9 @@ type ComputeRegionBackendServiceIapOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Enabled() interface{}
+	SetEnabled(val interface{})
+	EnabledInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() *ComputeRegionBackendServiceIap
@@ -68,6 +71,8 @@ type ComputeRegionBackendServiceIapOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetOauth2ClientId()
+	ResetOauth2ClientSecret()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -108,6 +113,26 @@ func (j *jsiiProxy_ComputeRegionBackendServiceIapOutputReference) CreationStack(
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionBackendServiceIapOutputReference) Enabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionBackendServiceIapOutputReference) EnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enabledInput",
 		&returns,
 	)
 	return returns
@@ -249,6 +274,17 @@ func (j *jsiiProxy_ComputeRegionBackendServiceIapOutputReference)SetComplexObjec
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeRegionBackendServiceIapOutputReference)SetEnabled(val interface{}) {
+	if err := j.validateSetEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enabled",
 		val,
 	)
 }
@@ -492,6 +528,22 @@ func (c *jsiiProxy_ComputeRegionBackendServiceIapOutputReference) InterpolationF
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_ComputeRegionBackendServiceIapOutputReference) ResetOauth2ClientId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetOauth2ClientId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRegionBackendServiceIapOutputReference) ResetOauth2ClientSecret() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetOauth2ClientSecret",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_ComputeRegionBackendServiceIapOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

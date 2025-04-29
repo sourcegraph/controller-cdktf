@@ -1,0 +1,6 @@
+package datagooglecomputesecuritypolicy
+
+
+type DataGoogleComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfigsTrafficGranularityConfigs struct {
+}
+

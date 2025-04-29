@@ -68,6 +68,10 @@ func (j *jsiiProxy_ComputeRegionInstanceTemplateSchedulingOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRegionInstanceTemplateSchedulingOutputReference) validateSetAvailabilityDomainParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRegionInstanceTemplateSchedulingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -97,6 +101,10 @@ func (j *jsiiProxy_ComputeRegionInstanceTemplateSchedulingOutputReference) valid
 }
 
 func (j *jsiiProxy_ComputeRegionInstanceTemplateSchedulingOutputReference) validateSetProvisioningModelParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeRegionInstanceTemplateSchedulingOutputReference) validateSetTerminationTimeParameters(val *string) error {
 	return nil
 }
 

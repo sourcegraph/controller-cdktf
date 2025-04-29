@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/cloudrunv2job/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/cloud_run_v2_job google_cloud_run_v2_job}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/cloud_run_v2_job google_cloud_run_v2_job}.
 type CloudRunV2Job interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -39,6 +39,9 @@ type CloudRunV2Job interface {
 	CreateTime() *string
 	Creator() *string
 	DeleteTime() *string
+	DeletionProtection() interface{}
+	SetDeletionProtection(val interface{})
+	DeletionProtectionInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -159,6 +162,7 @@ type CloudRunV2Job interface {
 	ResetBinaryAuthorization()
 	ResetClient()
 	ResetClientVersion()
+	ResetDeletionProtection()
 	ResetId()
 	ResetLabels()
 	ResetLaunchStage()
@@ -340,6 +344,26 @@ func (j *jsiiProxy_CloudRunV2Job) DeleteTime() *string {
 	_jsii_.Get(
 		j,
 		"deleteTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2Job) DeletionProtection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2Job) DeletionProtectionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtectionInput",
 		&returns,
 	)
 	return returns
@@ -766,7 +790,7 @@ func (j *jsiiProxy_CloudRunV2Job) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/cloud_run_v2_job google_cloud_run_v2_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/cloud_run_v2_job google_cloud_run_v2_job} Resource.
 func NewCloudRunV2Job(scope constructs.Construct, id *string, config *CloudRunV2JobConfig) CloudRunV2Job {
 	_init_.Initialize()
 
@@ -784,7 +808,7 @@ func NewCloudRunV2Job(scope constructs.Construct, id *string, config *CloudRunV2
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/cloud_run_v2_job google_cloud_run_v2_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/cloud_run_v2_job google_cloud_run_v2_job} Resource.
 func NewCloudRunV2Job_Override(c CloudRunV2Job, scope constructs.Construct, id *string, config *CloudRunV2JobConfig) {
 	_init_.Initialize()
 
@@ -846,6 +870,17 @@ func (j *jsiiProxy_CloudRunV2Job)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudRunV2Job)SetDeletionProtection(val interface{}) {
+	if err := j.validateSetDeletionProtectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deletionProtection",
 		val,
 	)
 }
@@ -1376,6 +1411,14 @@ func (c *jsiiProxy_CloudRunV2Job) ResetClientVersion() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetClientVersion",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudRunV2Job) ResetDeletionProtection() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDeletionProtection",
 		nil, // no parameters
 	)
 }

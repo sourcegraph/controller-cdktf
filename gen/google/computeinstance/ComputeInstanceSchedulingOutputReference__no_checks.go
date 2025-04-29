@@ -68,6 +68,10 @@ func (j *jsiiProxy_ComputeInstanceSchedulingOutputReference) validateSetAutomati
 	return nil
 }
 
+func (j *jsiiProxy_ComputeInstanceSchedulingOutputReference) validateSetAvailabilityDomainParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeInstanceSchedulingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -97,6 +101,10 @@ func (j *jsiiProxy_ComputeInstanceSchedulingOutputReference) validateSetPreempti
 }
 
 func (j *jsiiProxy_ComputeInstanceSchedulingOutputReference) validateSetProvisioningModelParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeInstanceSchedulingOutputReference) validateSetTerminationTimeParameters(val *string) error {
 	return nil
 }
 

@@ -48,6 +48,10 @@ func (c *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputRefer
 	return nil
 }
 
+func (c *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) validatePutGcfsConfigParameters(value *ContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -57,6 +61,10 @@ func (j *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputRefer
 }
 
 func (j *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) validateSetInsecureKubeletReadonlyPortEnabledParameters(val *string) error {
 	return nil
 }
 

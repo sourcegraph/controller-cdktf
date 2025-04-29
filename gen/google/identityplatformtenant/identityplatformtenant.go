@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/identityplatformtenant/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/identity_platform_tenant google_identity_platform_tenant}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/identity_platform_tenant google_identity_platform_tenant}.
 type IdentityPlatformTenant interface {
 	cdktf.TerraformResource
 	AllowPasswordSignup() interface{}
@@ -17,6 +17,8 @@ type IdentityPlatformTenant interface {
 	AllowPasswordSignupInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	Client() IdentityPlatformTenantClientOutputReference
+	ClientInput() *IdentityPlatformTenantClient
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -122,8 +124,10 @@ type IdentityPlatformTenant interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutClient(value *IdentityPlatformTenantClient)
 	PutTimeouts(value *IdentityPlatformTenantTimeouts)
 	ResetAllowPasswordSignup()
+	ResetClient()
 	ResetDisableAuth()
 	ResetEnableEmailLinkSignin()
 	ResetId()
@@ -175,6 +179,26 @@ func (j *jsiiProxy_IdentityPlatformTenant) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityPlatformTenant) Client() IdentityPlatformTenantClientOutputReference {
+	var returns IdentityPlatformTenantClientOutputReference
+	_jsii_.Get(
+		j,
+		"client",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityPlatformTenant) ClientInput() *IdentityPlatformTenantClient {
+	var returns *IdentityPlatformTenantClient
+	_jsii_.Get(
+		j,
+		"clientInput",
 		&returns,
 	)
 	return returns
@@ -461,7 +485,7 @@ func (j *jsiiProxy_IdentityPlatformTenant) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/identity_platform_tenant google_identity_platform_tenant} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/identity_platform_tenant google_identity_platform_tenant} Resource.
 func NewIdentityPlatformTenant(scope constructs.Construct, id *string, config *IdentityPlatformTenantConfig) IdentityPlatformTenant {
 	_init_.Initialize()
 
@@ -479,7 +503,7 @@ func NewIdentityPlatformTenant(scope constructs.Construct, id *string, config *I
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/identity_platform_tenant google_identity_platform_tenant} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/identity_platform_tenant google_identity_platform_tenant} Resource.
 func NewIdentityPlatformTenant_Override(i IdentityPlatformTenant, scope constructs.Construct, id *string, config *IdentityPlatformTenantConfig) {
 	_init_.Initialize()
 
@@ -977,6 +1001,17 @@ func (i *jsiiProxy_IdentityPlatformTenant) OverrideLogicalId(newLogicalId *strin
 	)
 }
 
+func (i *jsiiProxy_IdentityPlatformTenant) PutClient(value *IdentityPlatformTenantClient) {
+	if err := i.validatePutClientParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"putClient",
+		[]interface{}{value},
+	)
+}
+
 func (i *jsiiProxy_IdentityPlatformTenant) PutTimeouts(value *IdentityPlatformTenantTimeouts) {
 	if err := i.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -992,6 +1027,14 @@ func (i *jsiiProxy_IdentityPlatformTenant) ResetAllowPasswordSignup() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetAllowPasswordSignup",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IdentityPlatformTenant) ResetClient() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetClient",
 		nil, // no parameters
 	)
 }

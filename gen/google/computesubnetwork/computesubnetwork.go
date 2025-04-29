@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/computesubnetwork/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_subnetwork google_compute_subnetwork}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_subnetwork google_compute_subnetwork}.
 type ComputeSubnetwork interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -32,6 +32,9 @@ type ComputeSubnetwork interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EnableFlowLogs() interface{}
+	SetEnableFlowLogs(val interface{})
+	EnableFlowLogsInput() interface{}
 	ExternalIpv6Prefix() *string
 	SetExternalIpv6Prefix(val *string)
 	ExternalIpv6PrefixInput() *string
@@ -52,10 +55,14 @@ type ComputeSubnetwork interface {
 	IpCidrRange() *string
 	SetIpCidrRange(val *string)
 	IpCidrRangeInput() *string
+	IpCollection() *string
+	SetIpCollection(val *string)
+	IpCollectionInput() *string
 	Ipv6AccessType() *string
 	SetIpv6AccessType(val *string)
 	Ipv6AccessTypeInput() *string
 	Ipv6CidrRange() *string
+	Ipv6GceEndpoint() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -95,15 +102,23 @@ type ComputeSubnetwork interface {
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
+	ReservedInternalRange() *string
+	SetReservedInternalRange(val *string)
+	ReservedInternalRangeInput() *string
 	Role() *string
 	SetRole(val *string)
 	RoleInput() *string
 	SecondaryIpRange() ComputeSubnetworkSecondaryIpRangeList
 	SecondaryIpRangeInput() interface{}
 	SelfLink() *string
+	SendSecondaryIpRangeIfEmpty() interface{}
+	SetSendSecondaryIpRangeIfEmpty(val interface{})
+	SendSecondaryIpRangeIfEmptyInput() interface{}
 	StackType() *string
 	SetStackType(val *string)
 	StackTypeInput() *string
+	State() *string
+	SubnetworkId() *float64
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -159,8 +174,11 @@ type ComputeSubnetwork interface {
 	PutSecondaryIpRange(value interface{})
 	PutTimeouts(value *ComputeSubnetworkTimeouts)
 	ResetDescription()
+	ResetEnableFlowLogs()
 	ResetExternalIpv6Prefix()
 	ResetId()
+	ResetIpCidrRange()
+	ResetIpCollection()
 	ResetIpv6AccessType()
 	ResetLogConfig()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -171,8 +189,10 @@ type ComputeSubnetwork interface {
 	ResetProject()
 	ResetPurpose()
 	ResetRegion()
+	ResetReservedInternalRange()
 	ResetRole()
 	ResetSecondaryIpRange()
+	ResetSendSecondaryIpRangeIfEmpty()
 	ResetStackType()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -268,6 +288,26 @@ func (j *jsiiProxy_ComputeSubnetwork) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeSubnetwork) EnableFlowLogs() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableFlowLogs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeSubnetwork) EnableFlowLogsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableFlowLogsInput",
 		&returns,
 	)
 	return returns
@@ -393,6 +433,26 @@ func (j *jsiiProxy_ComputeSubnetwork) IpCidrRangeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeSubnetwork) IpCollection() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipCollection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeSubnetwork) IpCollectionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipCollectionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeSubnetwork) Ipv6AccessType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -418,6 +478,16 @@ func (j *jsiiProxy_ComputeSubnetwork) Ipv6CidrRange() *string {
 	_jsii_.Get(
 		j,
 		"ipv6CidrRange",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeSubnetwork) Ipv6GceEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6GceEndpoint",
 		&returns,
 	)
 	return returns
@@ -633,6 +703,26 @@ func (j *jsiiProxy_ComputeSubnetwork) RegionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeSubnetwork) ReservedInternalRange() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"reservedInternalRange",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeSubnetwork) ReservedInternalRangeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"reservedInternalRangeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeSubnetwork) Role() *string {
 	var returns *string
 	_jsii_.Get(
@@ -683,6 +773,26 @@ func (j *jsiiProxy_ComputeSubnetwork) SelfLink() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeSubnetwork) SendSecondaryIpRangeIfEmpty() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sendSecondaryIpRangeIfEmpty",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeSubnetwork) SendSecondaryIpRangeIfEmptyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sendSecondaryIpRangeIfEmptyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeSubnetwork) StackType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -698,6 +808,26 @@ func (j *jsiiProxy_ComputeSubnetwork) StackTypeInput() *string {
 	_jsii_.Get(
 		j,
 		"stackTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeSubnetwork) State() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"state",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeSubnetwork) SubnetworkId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"subnetworkId",
 		&returns,
 	)
 	return returns
@@ -754,7 +884,7 @@ func (j *jsiiProxy_ComputeSubnetwork) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_subnetwork google_compute_subnetwork} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_subnetwork google_compute_subnetwork} Resource.
 func NewComputeSubnetwork(scope constructs.Construct, id *string, config *ComputeSubnetworkConfig) ComputeSubnetwork {
 	_init_.Initialize()
 
@@ -772,7 +902,7 @@ func NewComputeSubnetwork(scope constructs.Construct, id *string, config *Comput
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_subnetwork google_compute_subnetwork} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_subnetwork google_compute_subnetwork} Resource.
 func NewComputeSubnetwork_Override(c ComputeSubnetwork, scope constructs.Construct, id *string, config *ComputeSubnetworkConfig) {
 	_init_.Initialize()
 
@@ -824,6 +954,17 @@ func (j *jsiiProxy_ComputeSubnetwork)SetDescription(val *string) {
 	)
 }
 
+func (j *jsiiProxy_ComputeSubnetwork)SetEnableFlowLogs(val interface{}) {
+	if err := j.validateSetEnableFlowLogsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableFlowLogs",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ComputeSubnetwork)SetExternalIpv6Prefix(val *string) {
 	if err := j.validateSetExternalIpv6PrefixParameters(val); err != nil {
 		panic(err)
@@ -861,6 +1002,17 @@ func (j *jsiiProxy_ComputeSubnetwork)SetIpCidrRange(val *string) {
 	_jsii_.Set(
 		j,
 		"ipCidrRange",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeSubnetwork)SetIpCollection(val *string) {
+	if err := j.validateSetIpCollectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipCollection",
 		val,
 	)
 }
@@ -983,6 +1135,17 @@ func (j *jsiiProxy_ComputeSubnetwork)SetRegion(val *string) {
 	)
 }
 
+func (j *jsiiProxy_ComputeSubnetwork)SetReservedInternalRange(val *string) {
+	if err := j.validateSetReservedInternalRangeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"reservedInternalRange",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ComputeSubnetwork)SetRole(val *string) {
 	if err := j.validateSetRoleParameters(val); err != nil {
 		panic(err)
@@ -990,6 +1153,17 @@ func (j *jsiiProxy_ComputeSubnetwork)SetRole(val *string) {
 	_jsii_.Set(
 		j,
 		"role",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeSubnetwork)SetSendSecondaryIpRangeIfEmpty(val interface{}) {
+	if err := j.validateSetSendSecondaryIpRangeIfEmptyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sendSecondaryIpRangeIfEmpty",
 		val,
 	)
 }
@@ -1399,6 +1573,14 @@ func (c *jsiiProxy_ComputeSubnetwork) ResetDescription() {
 	)
 }
 
+func (c *jsiiProxy_ComputeSubnetwork) ResetEnableFlowLogs() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEnableFlowLogs",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ComputeSubnetwork) ResetExternalIpv6Prefix() {
 	_jsii_.InvokeVoid(
 		c,
@@ -1411,6 +1593,22 @@ func (c *jsiiProxy_ComputeSubnetwork) ResetId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeSubnetwork) ResetIpCidrRange() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetIpCidrRange",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeSubnetwork) ResetIpCollection() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetIpCollection",
 		nil, // no parameters
 	)
 }
@@ -1479,6 +1677,14 @@ func (c *jsiiProxy_ComputeSubnetwork) ResetRegion() {
 	)
 }
 
+func (c *jsiiProxy_ComputeSubnetwork) ResetReservedInternalRange() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetReservedInternalRange",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ComputeSubnetwork) ResetRole() {
 	_jsii_.InvokeVoid(
 		c,
@@ -1491,6 +1697,14 @@ func (c *jsiiProxy_ComputeSubnetwork) ResetSecondaryIpRange() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetSecondaryIpRange",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeSubnetwork) ResetSendSecondaryIpRangeIfEmpty() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSendSecondaryIpRangeIfEmpty",
 		nil, // no parameters
 	)
 }

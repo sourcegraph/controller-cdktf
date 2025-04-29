@@ -48,6 +48,26 @@ func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) valida
 	return nil
 }
 
+func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) validatePutAwsMskParameters(value *PubsubTopicIngestionDataSourceSettingsAwsMsk) error {
+	return nil
+}
+
+func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) validatePutAzureEventHubsParameters(value *PubsubTopicIngestionDataSourceSettingsAzureEventHubs) error {
+	return nil
+}
+
+func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) validatePutCloudStorageParameters(value *PubsubTopicIngestionDataSourceSettingsCloudStorage) error {
+	return nil
+}
+
+func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) validatePutConfluentCloudParameters(value *PubsubTopicIngestionDataSourceSettingsConfluentCloud) error {
+	return nil
+}
+
+func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) validatePutPlatformLogsSettingsParameters(value *PubsubTopicIngestionDataSourceSettingsPlatformLogsSettings) error {
+	return nil
+}
+
 func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

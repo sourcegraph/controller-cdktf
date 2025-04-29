@@ -34,6 +34,8 @@ type DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesOutpu
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	LayoutParsingConfig() DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesLayoutParsingConfigOutputReference
+	LayoutParsingConfigInput() *DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesLayoutParsingConfig
 	OcrParsingConfig() DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesOcrParsingConfigOutputReference
 	OcrParsingConfigInput() *DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesOcrParsingConfig
 	// Experimental.
@@ -69,8 +71,10 @@ type DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesOutpu
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutDigitalParsingConfig(value *DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesDigitalParsingConfig)
+	PutLayoutParsingConfig(value *DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesLayoutParsingConfig)
 	PutOcrParsingConfig(value *DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesOcrParsingConfig)
 	ResetDigitalParsingConfig()
+	ResetLayoutParsingConfig()
 	ResetOcrParsingConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -172,6 +176,26 @@ func (j *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfig
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesOutputReference) LayoutParsingConfig() DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesLayoutParsingConfigOutputReference {
+	var returns DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesLayoutParsingConfigOutputReference
+	_jsii_.Get(
+		j,
+		"layoutParsingConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesOutputReference) LayoutParsingConfigInput() *DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesLayoutParsingConfig {
+	var returns *DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesLayoutParsingConfig
+	_jsii_.Get(
+		j,
+		"layoutParsingConfigInput",
 		&returns,
 	)
 	return returns
@@ -508,6 +532,17 @@ func (d *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfig
 	)
 }
 
+func (d *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesOutputReference) PutLayoutParsingConfig(value *DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesLayoutParsingConfig) {
+	if err := d.validatePutLayoutParsingConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putLayoutParsingConfig",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesOutputReference) PutOcrParsingConfig(value *DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesOcrParsingConfig) {
 	if err := d.validatePutOcrParsingConfigParameters(value); err != nil {
 		panic(err)
@@ -523,6 +558,14 @@ func (d *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfig
 	_jsii_.InvokeVoid(
 		d,
 		"resetDigitalParsingConfig",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesOutputReference) ResetLayoutParsingConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetLayoutParsingConfig",
 		nil, // no parameters
 	)
 }

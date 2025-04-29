@@ -44,7 +44,19 @@ func (c *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputRefe
 	return nil
 }
 
+func (c *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) validatePutSourceImageEncryptionKeyParameters(value *ComputeInstanceFromTemplateBootDiskInitializeParamsSourceImageEncryptionKey) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) validatePutSourceSnapshotEncryptionKeyParameters(value *ComputeInstanceFromTemplateBootDiskInitializeParamsSourceSnapshotEncryptionKey) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) validateSetArchitectureParameters(val *string) error {
 	return nil
 }
 
@@ -84,7 +96,19 @@ func (j *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputRefe
 	return nil
 }
 
+func (j *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) validateSetResourcePoliciesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) validateSetSizeParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) validateSetSnapshotParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) validateSetStoragePoolParameters(val *string) error {
 	return nil
 }
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagooglefilestoreinstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/filestore_instance google_filestore_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/filestore_instance google_filestore_instance}.
 type DataGoogleFilestoreInstance interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -21,12 +21,15 @@ type DataGoogleFilestoreInstance interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreateTime() *string
+	DeletionProtectionEnabled() cdktf.IResolvable
+	DeletionProtectionReason() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Description() *string
 	EffectiveLabels() cdktf.StringMap
+	EffectiveReplication() DataGoogleFilestoreInstanceEffectiveReplicationList
 	Etag() *string
 	FileShares() DataGoogleFilestoreInstanceFileSharesList
 	// Experimental.
@@ -40,6 +43,7 @@ type DataGoogleFilestoreInstance interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	InitialReplication() DataGoogleFilestoreInstanceInitialReplicationList
 	KmsKeyName() *string
 	Labels() cdktf.StringMap
 	// Experimental.
@@ -55,15 +59,18 @@ type DataGoogleFilestoreInstance interface {
 	Networks() DataGoogleFilestoreInstanceNetworksList
 	// The tree node.
 	Node() constructs.Node
+	PerformanceConfig() DataGoogleFilestoreInstancePerformanceConfigList
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
+	Protocol() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Tags() cdktf.StringMap
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
@@ -163,6 +170,26 @@ func (j *jsiiProxy_DataGoogleFilestoreInstance) CreateTime() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleFilestoreInstance) DeletionProtectionEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"deletionProtectionEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleFilestoreInstance) DeletionProtectionReason() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deletionProtectionReason",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleFilestoreInstance) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -188,6 +215,16 @@ func (j *jsiiProxy_DataGoogleFilestoreInstance) EffectiveLabels() cdktf.StringMa
 	_jsii_.Get(
 		j,
 		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleFilestoreInstance) EffectiveReplication() DataGoogleFilestoreInstanceEffectiveReplicationList {
+	var returns DataGoogleFilestoreInstanceEffectiveReplicationList
+	_jsii_.Get(
+		j,
+		"effectiveReplication",
 		&returns,
 	)
 	return returns
@@ -258,6 +295,16 @@ func (j *jsiiProxy_DataGoogleFilestoreInstance) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleFilestoreInstance) InitialReplication() DataGoogleFilestoreInstanceInitialReplicationList {
+	var returns DataGoogleFilestoreInstanceInitialReplicationList
+	_jsii_.Get(
+		j,
+		"initialReplication",
 		&returns,
 	)
 	return returns
@@ -353,6 +400,16 @@ func (j *jsiiProxy_DataGoogleFilestoreInstance) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleFilestoreInstance) PerformanceConfig() DataGoogleFilestoreInstancePerformanceConfigList {
+	var returns DataGoogleFilestoreInstancePerformanceConfigList
+	_jsii_.Get(
+		j,
+		"performanceConfig",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleFilestoreInstance) Project() *string {
 	var returns *string
 	_jsii_.Get(
@@ -373,6 +430,16 @@ func (j *jsiiProxy_DataGoogleFilestoreInstance) ProjectInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleFilestoreInstance) Protocol() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"protocol",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleFilestoreInstance) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -388,6 +455,16 @@ func (j *jsiiProxy_DataGoogleFilestoreInstance) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleFilestoreInstance) Tags() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"tags",
 		&returns,
 	)
 	return returns
@@ -454,7 +531,7 @@ func (j *jsiiProxy_DataGoogleFilestoreInstance) Zone() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/filestore_instance google_filestore_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/filestore_instance google_filestore_instance} Data Source.
 func NewDataGoogleFilestoreInstance(scope constructs.Construct, id *string, config *DataGoogleFilestoreInstanceConfig) DataGoogleFilestoreInstance {
 	_init_.Initialize()
 
@@ -472,7 +549,7 @@ func NewDataGoogleFilestoreInstance(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/filestore_instance google_filestore_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/filestore_instance google_filestore_instance} Data Source.
 func NewDataGoogleFilestoreInstance_Override(d DataGoogleFilestoreInstance, scope constructs.Construct, id *string, config *DataGoogleFilestoreInstanceConfig) {
 	_init_.Initialize()
 

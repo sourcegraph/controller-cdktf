@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/activedirectorydomain/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/active_directory_domain google_active_directory_domain}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/active_directory_domain google_active_directory_domain}.
 type ActiveDirectoryDomain interface {
 	cdktf.TerraformResource
 	Admin() *string
@@ -30,6 +30,9 @@ type ActiveDirectoryDomain interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DeletionProtection() interface{}
+	SetDeletionProtection(val interface{})
+	DeletionProtectionInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -134,6 +137,7 @@ type ActiveDirectoryDomain interface {
 	PutTimeouts(value *ActiveDirectoryDomainTimeouts)
 	ResetAdmin()
 	ResetAuthorizedNetworks()
+	ResetDeletionProtection()
 	ResetId()
 	ResetLabels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -234,6 +238,26 @@ func (j *jsiiProxy_ActiveDirectoryDomain) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ActiveDirectoryDomain) DeletionProtection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ActiveDirectoryDomain) DeletionProtectionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtectionInput",
 		&returns,
 	)
 	return returns
@@ -540,7 +564,7 @@ func (j *jsiiProxy_ActiveDirectoryDomain) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/active_directory_domain google_active_directory_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/active_directory_domain google_active_directory_domain} Resource.
 func NewActiveDirectoryDomain(scope constructs.Construct, id *string, config *ActiveDirectoryDomainConfig) ActiveDirectoryDomain {
 	_init_.Initialize()
 
@@ -558,7 +582,7 @@ func NewActiveDirectoryDomain(scope constructs.Construct, id *string, config *Ac
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/active_directory_domain google_active_directory_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/active_directory_domain google_active_directory_domain} Resource.
 func NewActiveDirectoryDomain_Override(a ActiveDirectoryDomain, scope constructs.Construct, id *string, config *ActiveDirectoryDomainConfig) {
 	_init_.Initialize()
 
@@ -609,6 +633,17 @@ func (j *jsiiProxy_ActiveDirectoryDomain)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ActiveDirectoryDomain)SetDeletionProtection(val interface{}) {
+	if err := j.validateSetDeletionProtectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deletionProtection",
 		val,
 	)
 }
@@ -1101,6 +1136,14 @@ func (a *jsiiProxy_ActiveDirectoryDomain) ResetAuthorizedNetworks() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetAuthorizedNetworks",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ActiveDirectoryDomain) ResetDeletionProtection() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDeletionProtection",
 		nil, // no parameters
 	)
 }

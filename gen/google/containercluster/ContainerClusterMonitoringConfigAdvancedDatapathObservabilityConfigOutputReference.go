@@ -35,9 +35,6 @@ type ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputRe
 	Fqn() *string
 	InternalValue() *ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfig
 	SetInternalValue(val *ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfig)
-	RelayMode() *string
-	SetRelayMode(val *string)
-	RelayModeInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,8 +67,6 @@ type ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputRe
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetEnableRelay()
-	ResetRelayMode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -177,26 +172,6 @@ func (j *jsiiProxy_ContainerClusterMonitoringConfigAdvancedDatapathObservability
 	return returns
 }
 
-func (j *jsiiProxy_ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference) RelayMode() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"relayMode",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference) RelayModeInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"relayModeInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -296,17 +271,6 @@ func (j *jsiiProxy_ContainerClusterMonitoringConfigAdvancedDatapathObservability
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference)SetRelayMode(val *string) {
-	if err := j.validateSetRelayModeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"relayMode",
 		val,
 	)
 }
@@ -517,22 +481,6 @@ func (c *jsiiProxy_ContainerClusterMonitoringConfigAdvancedDatapathObservability
 	)
 
 	return returns
-}
-
-func (c *jsiiProxy_ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference) ResetEnableRelay() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetEnableRelay",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference) ResetRelayMode() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetRelayMode",
-		nil, // no parameters
-	)
 }
 
 func (c *jsiiProxy_ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

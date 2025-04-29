@@ -47,6 +47,8 @@ type DatabaseMigrationServiceConnectionProfilePostgresqlSslOutputReference inter
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	Type() *string
+	SetType(val *string)
+	TypeInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -71,8 +73,10 @@ type DatabaseMigrationServiceConnectionProfilePostgresqlSslOutputReference inter
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetCaCertificate()
 	ResetClientCertificate()
 	ResetClientKey()
+	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -228,6 +232,16 @@ func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfilePostgresqlSslOutputR
 	return returns
 }
 
+func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfilePostgresqlSslOutputReference) TypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"typeInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewDatabaseMigrationServiceConnectionProfilePostgresqlSslOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DatabaseMigrationServiceConnectionProfilePostgresqlSslOutputReference {
 	_init_.Initialize()
@@ -340,6 +354,17 @@ func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfilePostgresqlSslOutputR
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfilePostgresqlSslOutputReference)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"type",
 		val,
 	)
 }
@@ -530,6 +555,14 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfilePostgresqlSslOutputR
 	return returns
 }
 
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfilePostgresqlSslOutputReference) ResetCaCertificate() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCaCertificate",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfilePostgresqlSslOutputReference) ResetClientCertificate() {
 	_jsii_.InvokeVoid(
 		d,
@@ -542,6 +575,14 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfilePostgresqlSslOutputR
 	_jsii_.InvokeVoid(
 		d,
 		"resetClientKey",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfilePostgresqlSslOutputReference) ResetType() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetType",
 		nil, // no parameters
 	)
 }

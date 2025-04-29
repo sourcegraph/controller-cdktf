@@ -40,6 +40,7 @@ type DataGoogleComputeRegionInstanceTemplateDiskOutputReference interface {
 	Labels() cdktf.StringMap
 	Mode() *string
 	ProvisionedIops() *float64
+	ProvisionedThroughput() *float64
 	ResourceManagerTags() cdktf.StringMap
 	ResourcePolicies() *[]*string
 	Source() *string
@@ -250,6 +251,16 @@ func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplateDiskOutputReference) P
 	_jsii_.Get(
 		j,
 		"provisionedIops",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplateDiskOutputReference) ProvisionedThroughput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"provisionedThroughput",
 		&returns,
 	)
 	return returns

@@ -50,6 +50,9 @@ type ComputeBackendServiceCdnPolicyOutputReference interface {
 	NegativeCachingInput() interface{}
 	NegativeCachingPolicy() ComputeBackendServiceCdnPolicyNegativeCachingPolicyList
 	NegativeCachingPolicyInput() interface{}
+	RequestCoalescing() interface{}
+	SetRequestCoalescing(val interface{})
+	RequestCoalescingInput() interface{}
 	ServeWhileStale() *float64
 	SetServeWhileStale(val *float64)
 	ServeWhileStaleInput() *float64
@@ -99,6 +102,7 @@ type ComputeBackendServiceCdnPolicyOutputReference interface {
 	ResetMaxTtl()
 	ResetNegativeCaching()
 	ResetNegativeCachingPolicy()
+	ResetRequestCoalescing()
 	ResetServeWhileStale()
 	ResetSignedUrlCacheMaxAgeSec()
 	// Produce the Token's value at resolution time.
@@ -326,6 +330,26 @@ func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) NegativeCachin
 	return returns
 }
 
+func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) RequestCoalescing() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"requestCoalescing",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) RequestCoalescingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"requestCoalescingInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) ServeWhileStale() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -498,6 +522,17 @@ func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference)SetNegativeCach
 	_jsii_.Set(
 		j,
 		"negativeCaching",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference)SetRequestCoalescing(val interface{}) {
+	if err := j.validateSetRequestCoalescingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"requestCoalescing",
 		val,
 	)
 }
@@ -825,6 +860,14 @@ func (c *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) ResetNegativeC
 	_jsii_.InvokeVoid(
 		c,
 		"resetNegativeCachingPolicy",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) ResetRequestCoalescing() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRequestCoalescing",
 		nil, // no parameters
 	)
 }

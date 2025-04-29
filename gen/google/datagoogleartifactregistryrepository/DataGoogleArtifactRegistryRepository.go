@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagoogleartifactregistryrepository/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/artifact_registry_repository google_artifact_registry_repository}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/artifact_registry_repository google_artifact_registry_repository}.
 type DataGoogleArtifactRegistryRepository interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -78,6 +78,7 @@ type DataGoogleArtifactRegistryRepository interface {
 	TerraformResourceType() *string
 	UpdateTime() *string
 	VirtualRepositoryConfig() DataGoogleArtifactRegistryRepositoryVirtualRepositoryConfigList
+	VulnerabilityScanningConfig() DataGoogleArtifactRegistryRepositoryVulnerabilityScanningConfigList
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -507,8 +508,18 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryRepository) VirtualRepositoryConfig
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleArtifactRegistryRepository) VulnerabilityScanningConfig() DataGoogleArtifactRegistryRepositoryVulnerabilityScanningConfigList {
+	var returns DataGoogleArtifactRegistryRepositoryVulnerabilityScanningConfigList
+	_jsii_.Get(
+		j,
+		"vulnerabilityScanningConfig",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/artifact_registry_repository google_artifact_registry_repository} Data Source.
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/artifact_registry_repository google_artifact_registry_repository} Data Source.
 func NewDataGoogleArtifactRegistryRepository(scope constructs.Construct, id *string, config *DataGoogleArtifactRegistryRepositoryConfig) DataGoogleArtifactRegistryRepository {
 	_init_.Initialize()
 
@@ -526,7 +537,7 @@ func NewDataGoogleArtifactRegistryRepository(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/artifact_registry_repository google_artifact_registry_repository} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/artifact_registry_repository google_artifact_registry_repository} Data Source.
 func NewDataGoogleArtifactRegistryRepository_Override(d DataGoogleArtifactRegistryRepository, scope constructs.Construct, id *string, config *DataGoogleArtifactRegistryRepositoryConfig) {
 	_init_.Initialize()
 

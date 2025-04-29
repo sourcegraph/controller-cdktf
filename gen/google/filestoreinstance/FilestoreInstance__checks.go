@@ -215,6 +215,17 @@ func (f *jsiiProxy_FilestoreInstance) validatePutFileSharesParameters(value *Fil
 	return nil
 }
 
+func (f *jsiiProxy_FilestoreInstance) validatePutInitialReplicationParameters(value *FilestoreInstanceInitialReplication) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (f *jsiiProxy_FilestoreInstance) validatePutNetworksParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -241,6 +252,17 @@ func (f *jsiiProxy_FilestoreInstance) validatePutNetworksParameters(value interf
 		if !_jsii_.IsAnonymousProxy(value) {
 			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*FilestoreInstanceNetworks; received %#v (a %T)", value, value)
 		}
+	}
+
+	return nil
+}
+
+func (f *jsiiProxy_FilestoreInstance) validatePutPerformanceConfigParameters(value *FilestoreInstancePerformanceConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil
@@ -387,6 +409,34 @@ func (j *jsiiProxy_FilestoreInstance) validateSetCountParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_FilestoreInstance) validateSetDeletionProtectionEnabledParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_FilestoreInstance) validateSetDeletionProtectionReasonParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_FilestoreInstance) validateSetDescriptionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -451,6 +501,14 @@ func (j *jsiiProxy_FilestoreInstance) validateSetProjectParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_FilestoreInstance) validateSetProtocolParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_FilestoreInstance) validateSetProvisionersParameters(val *[]interface{}) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
@@ -492,6 +550,14 @@ func (j *jsiiProxy_FilestoreInstance) validateSetProvisionersParameters(val *[]i
 				return fmt.Errorf("parameter val[%#v] must be one of the allowed types: *cdktf.FileProvisioner, *cdktf.LocalExecProvisioner, *cdktf.RemoteExecProvisioner; received %#v (a %T)", idx_97dfc6, v, v)
 			}
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_FilestoreInstance) validateSetTagsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

@@ -112,6 +112,10 @@ func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) validateSetProvis
 	return nil
 }
 
+func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) validateSetProvisionedThroughputParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) validateSetResourceManagerTagsParameters(val *map[string]*string) error {
 	return nil
 }

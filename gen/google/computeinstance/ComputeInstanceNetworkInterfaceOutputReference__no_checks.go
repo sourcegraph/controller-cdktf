@@ -84,6 +84,10 @@ func (j *jsiiProxy_ComputeInstanceNetworkInterfaceOutputReference) validateSetNe
 	return nil
 }
 
+func (j *jsiiProxy_ComputeInstanceNetworkInterfaceOutputReference) validateSetNetworkAttachmentParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeInstanceNetworkInterfaceOutputReference) validateSetNetworkIpParameters(val *string) error {
 	return nil
 }

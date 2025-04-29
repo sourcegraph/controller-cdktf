@@ -11,6 +11,7 @@ import (
 type DataGoogleComputeInstanceSchedulingOutputReference interface {
 	cdktf.ComplexObject
 	AutomaticRestart() cdktf.IResolvable
+	AvailabilityDomain() *float64
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -39,6 +40,7 @@ type DataGoogleComputeInstanceSchedulingOutputReference interface {
 	OnInstanceStopAction() DataGoogleComputeInstanceSchedulingOnInstanceStopActionList
 	Preemptible() cdktf.IResolvable
 	ProvisioningModel() *string
+	TerminationTime() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -91,6 +93,16 @@ func (j *jsiiProxy_DataGoogleComputeInstanceSchedulingOutputReference) Automatic
 	_jsii_.Get(
 		j,
 		"automaticRestart",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeInstanceSchedulingOutputReference) AvailabilityDomain() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"availabilityDomain",
 		&returns,
 	)
 	return returns
@@ -231,6 +243,16 @@ func (j *jsiiProxy_DataGoogleComputeInstanceSchedulingOutputReference) Provision
 	_jsii_.Get(
 		j,
 		"provisioningModel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeInstanceSchedulingOutputReference) TerminationTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terminationTime",
 		&returns,
 	)
 	return returns

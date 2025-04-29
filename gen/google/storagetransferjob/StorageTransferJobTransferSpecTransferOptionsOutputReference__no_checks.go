@@ -44,6 +44,10 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecTransferOptionsOutputReference)
 	return nil
 }
 
+func (s *jsiiProxy_StorageTransferJobTransferSpecTransferOptionsOutputReference) validatePutMetadataOptionsParameters(value *StorageTransferJobTransferSpecTransferOptionsMetadataOptions) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageTransferJobTransferSpecTransferOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

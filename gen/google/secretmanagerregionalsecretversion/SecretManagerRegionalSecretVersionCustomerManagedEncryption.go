@@ -1,0 +1,6 @@
+package secretmanagerregionalsecretversion
+
+
+type SecretManagerRegionalSecretVersionCustomerManagedEncryption struct {
+}
+

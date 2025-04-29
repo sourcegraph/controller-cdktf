@@ -80,6 +80,10 @@ func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileMysqlSslOutputRefere
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference) validateSetTypeParameters(val *string) error {
+	return nil
+}
+
 func validateNewDatabaseMigrationServiceConnectionProfileMysqlSslOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

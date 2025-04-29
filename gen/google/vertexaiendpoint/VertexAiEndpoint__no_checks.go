@@ -76,6 +76,14 @@ func (v *jsiiProxy_VertexAiEndpoint) validatePutEncryptionSpecParameters(value *
 	return nil
 }
 
+func (v *jsiiProxy_VertexAiEndpoint) validatePutPredictRequestResponseLoggingConfigParameters(value *VertexAiEndpointPredictRequestResponseLoggingConfig) error {
+	return nil
+}
+
+func (v *jsiiProxy_VertexAiEndpoint) validatePutPrivateServiceConnectConfigParameters(value *VertexAiEndpointPrivateServiceConnectConfig) error {
+	return nil
+}
+
 func (v *jsiiProxy_VertexAiEndpoint) validatePutTimeoutsParameters(value *VertexAiEndpointTimeouts) error {
 	return nil
 }
@@ -101,6 +109,10 @@ func (j *jsiiProxy_VertexAiEndpoint) validateSetConnectionParameters(val interfa
 }
 
 func (j *jsiiProxy_VertexAiEndpoint) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_VertexAiEndpoint) validateSetDedicatedEndpointEnabledParameters(val interface{}) error {
 	return nil
 }
 
@@ -145,6 +157,10 @@ func (j *jsiiProxy_VertexAiEndpoint) validateSetProvisionersParameters(val *[]in
 }
 
 func (j *jsiiProxy_VertexAiEndpoint) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_VertexAiEndpoint) validateSetTrafficSplitParameters(val *string) error {
 	return nil
 }
 

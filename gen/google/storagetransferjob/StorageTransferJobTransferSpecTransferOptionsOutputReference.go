@@ -35,6 +35,8 @@ type StorageTransferJobTransferSpecTransferOptionsOutputReference interface {
 	Fqn() *string
 	InternalValue() *StorageTransferJobTransferSpecTransferOptions
 	SetInternalValue(val *StorageTransferJobTransferSpecTransferOptions)
+	MetadataOptions() StorageTransferJobTransferSpecTransferOptionsMetadataOptionsOutputReference
+	MetadataOptionsInput() *StorageTransferJobTransferSpecTransferOptionsMetadataOptions
 	OverwriteObjectsAlreadyExistingInSink() interface{}
 	SetOverwriteObjectsAlreadyExistingInSink(val interface{})
 	OverwriteObjectsAlreadyExistingInSinkInput() interface{}
@@ -73,8 +75,10 @@ type StorageTransferJobTransferSpecTransferOptionsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutMetadataOptions(value *StorageTransferJobTransferSpecTransferOptionsMetadataOptions)
 	ResetDeleteObjectsFromSourceAfterTransfer()
 	ResetDeleteObjectsUniqueInSink()
+	ResetMetadataOptions()
 	ResetOverwriteObjectsAlreadyExistingInSink()
 	ResetOverwriteWhen()
 	// Produce the Token's value at resolution time.
@@ -177,6 +181,26 @@ func (j *jsiiProxy_StorageTransferJobTransferSpecTransferOptionsOutputReference)
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageTransferJobTransferSpecTransferOptionsOutputReference) MetadataOptions() StorageTransferJobTransferSpecTransferOptionsMetadataOptionsOutputReference {
+	var returns StorageTransferJobTransferSpecTransferOptionsMetadataOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"metadataOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageTransferJobTransferSpecTransferOptionsOutputReference) MetadataOptionsInput() *StorageTransferJobTransferSpecTransferOptionsMetadataOptions {
+	var returns *StorageTransferJobTransferSpecTransferOptionsMetadataOptions
+	_jsii_.Get(
+		j,
+		"metadataOptionsInput",
 		&returns,
 	)
 	return returns
@@ -555,6 +579,17 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecTransferOptionsOutputReference)
 	return returns
 }
 
+func (s *jsiiProxy_StorageTransferJobTransferSpecTransferOptionsOutputReference) PutMetadataOptions(value *StorageTransferJobTransferSpecTransferOptionsMetadataOptions) {
+	if err := s.validatePutMetadataOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putMetadataOptions",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_StorageTransferJobTransferSpecTransferOptionsOutputReference) ResetDeleteObjectsFromSourceAfterTransfer() {
 	_jsii_.InvokeVoid(
 		s,
@@ -567,6 +602,14 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecTransferOptionsOutputReference)
 	_jsii_.InvokeVoid(
 		s,
 		"resetDeleteObjectsUniqueInSink",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageTransferJobTransferSpecTransferOptionsOutputReference) ResetMetadataOptions() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetMetadataOptions",
 		nil, // no parameters
 	)
 }

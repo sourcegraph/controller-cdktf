@@ -1,0 +1,6 @@
+package datagooglememorystoreinstance
+
+
+type DataGoogleMemorystoreInstanceCrossInstanceReplicationConfigPrimaryInstance struct {
+}
+

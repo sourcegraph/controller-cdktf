@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagoogleserviceaccountjwt/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/service_account_jwt google_service_account_jwt}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/service_account_jwt google_service_account_jwt}.
 type DataGoogleServiceAccountJwt interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -367,7 +367,7 @@ func (j *jsiiProxy_DataGoogleServiceAccountJwt) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/service_account_jwt google_service_account_jwt} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/service_account_jwt google_service_account_jwt} Data Source.
 func NewDataGoogleServiceAccountJwt(scope constructs.Construct, id *string, config *DataGoogleServiceAccountJwtConfig) DataGoogleServiceAccountJwt {
 	_init_.Initialize()
 
@@ -385,7 +385,7 @@ func NewDataGoogleServiceAccountJwt(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/service_account_jwt google_service_account_jwt} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/service_account_jwt google_service_account_jwt} Data Source.
 func NewDataGoogleServiceAccountJwt_Override(d DataGoogleServiceAccountJwt, scope constructs.Construct, id *string, config *DataGoogleServiceAccountJwtConfig) {
 	_init_.Initialize()
 

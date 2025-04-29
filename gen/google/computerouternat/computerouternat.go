@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/computerouternat/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_router_nat google_compute_router_nat}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_router_nat google_compute_router_nat}.
 type ComputeRouterNat interface {
 	cdktf.TerraformResource
 	AutoNetworkTier() *string
@@ -57,6 +57,9 @@ type ComputeRouterNat interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	InitialNatIps() *[]*string
+	SetInitialNatIps(val *[]*string)
+	InitialNatIpsInput() *[]*string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -123,6 +126,9 @@ type ComputeRouterNat interface {
 	TerraformResourceType() *string
 	Timeouts() ComputeRouterNatTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	Type() *string
+	SetType(val *string)
+	TypeInput() *string
 	UdpIdleTimeoutSec() *float64
 	SetUdpIdleTimeoutSec(val *float64)
 	UdpIdleTimeoutSecInput() *float64
@@ -180,6 +186,7 @@ type ComputeRouterNat interface {
 	ResetEndpointTypes()
 	ResetIcmpIdleTimeoutSec()
 	ResetId()
+	ResetInitialNatIps()
 	ResetLogConfig()
 	ResetMaxPortsPerVm()
 	ResetMinPortsPerVm()
@@ -196,6 +203,7 @@ type ComputeRouterNat interface {
 	ResetTcpTimeWaitTimeoutSec()
 	ResetTcpTransitoryIdleTimeoutSec()
 	ResetTimeouts()
+	ResetType()
 	ResetUdpIdleTimeoutSec()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -430,6 +438,26 @@ func (j *jsiiProxy_ComputeRouterNat) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRouterNat) InitialNatIps() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"initialNatIps",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRouterNat) InitialNatIpsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"initialNatIpsInput",
 		&returns,
 	)
 	return returns
@@ -835,6 +863,26 @@ func (j *jsiiProxy_ComputeRouterNat) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeRouterNat) Type() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"type",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRouterNat) TypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"typeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeRouterNat) UdpIdleTimeoutSec() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -856,7 +904,7 @@ func (j *jsiiProxy_ComputeRouterNat) UdpIdleTimeoutSecInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_router_nat google_compute_router_nat} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_router_nat google_compute_router_nat} Resource.
 func NewComputeRouterNat(scope constructs.Construct, id *string, config *ComputeRouterNatConfig) ComputeRouterNat {
 	_init_.Initialize()
 
@@ -874,7 +922,7 @@ func NewComputeRouterNat(scope constructs.Construct, id *string, config *Compute
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_router_nat google_compute_router_nat} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_router_nat google_compute_router_nat} Resource.
 func NewComputeRouterNat_Override(c ComputeRouterNat, scope constructs.Construct, id *string, config *ComputeRouterNatConfig) {
 	_init_.Initialize()
 
@@ -996,6 +1044,17 @@ func (j *jsiiProxy_ComputeRouterNat)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeRouterNat)SetInitialNatIps(val *[]*string) {
+	if err := j.validateSetInitialNatIpsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"initialNatIps",
 		val,
 	)
 }
@@ -1158,6 +1217,17 @@ func (j *jsiiProxy_ComputeRouterNat)SetTcpTransitoryIdleTimeoutSec(val *float64)
 	_jsii_.Set(
 		j,
 		"tcpTransitoryIdleTimeoutSec",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeRouterNat)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"type",
 		val,
 	)
 }
@@ -1626,6 +1696,14 @@ func (c *jsiiProxy_ComputeRouterNat) ResetId() {
 	)
 }
 
+func (c *jsiiProxy_ComputeRouterNat) ResetInitialNatIps() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetInitialNatIps",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ComputeRouterNat) ResetLogConfig() {
 	_jsii_.InvokeVoid(
 		c,
@@ -1734,6 +1812,14 @@ func (c *jsiiProxy_ComputeRouterNat) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRouterNat) ResetType() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetType",
 		nil, // no parameters
 	)
 }

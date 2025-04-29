@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/storagedefaultobjectaccesscontrol/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/storage_default_object_access_control google_storage_default_object_access_control}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/storage_default_object_access_control google_storage_default_object_access_control}.
 type StorageDefaultObjectAccessControl interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -479,7 +479,7 @@ func (j *jsiiProxy_StorageDefaultObjectAccessControl) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/storage_default_object_access_control google_storage_default_object_access_control} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/storage_default_object_access_control google_storage_default_object_access_control} Resource.
 func NewStorageDefaultObjectAccessControl(scope constructs.Construct, id *string, config *StorageDefaultObjectAccessControlConfig) StorageDefaultObjectAccessControl {
 	_init_.Initialize()
 
@@ -497,7 +497,7 @@ func NewStorageDefaultObjectAccessControl(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/storage_default_object_access_control google_storage_default_object_access_control} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/storage_default_object_access_control google_storage_default_object_access_control} Resource.
 func NewStorageDefaultObjectAccessControl_Override(s StorageDefaultObjectAccessControl, scope constructs.Construct, id *string, config *StorageDefaultObjectAccessControlConfig) {
 	_init_.Initialize()
 

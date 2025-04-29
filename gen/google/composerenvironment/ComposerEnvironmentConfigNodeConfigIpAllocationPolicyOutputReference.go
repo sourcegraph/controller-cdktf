@@ -33,8 +33,8 @@ type ComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReference interf
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *ComposerEnvironmentConfigNodeConfigIpAllocationPolicy
+	SetInternalValue(val *ComposerEnvironmentConfigNodeConfigIpAllocationPolicy)
 	ServicesIpv4CidrBlock() *string
 	SetServicesIpv4CidrBlock(val *string)
 	ServicesIpv4CidrBlockInput() *string
@@ -176,8 +176,8 @@ func (j *jsiiProxy_ComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReference) InternalValue() *ComposerEnvironmentConfigNodeConfigIpAllocationPolicy {
+	var returns *ComposerEnvironmentConfigNodeConfigIpAllocationPolicy
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -267,29 +267,29 @@ func (j *jsiiProxy_ComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputRe
 }
 
 
-func NewComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReference {
+func NewComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_ComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReference_Override(c ComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReference_Override(c ComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
 }
@@ -338,7 +338,7 @@ func (j *jsiiProxy_ComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputRe
 	)
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReference)SetInternalValue(val *ComposerEnvironmentConfigNodeConfigIpAllocationPolicy) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

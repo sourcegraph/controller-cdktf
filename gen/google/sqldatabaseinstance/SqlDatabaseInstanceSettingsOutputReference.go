@@ -67,6 +67,9 @@ type SqlDatabaseInstanceSettingsOutputReference interface {
 	Edition() *string
 	SetEdition(val *string)
 	EditionInput() *string
+	EnableDataplexIntegration() interface{}
+	SetEnableDataplexIntegration(val interface{})
+	EnableDataplexIntegrationInput() interface{}
 	EnableGoogleMlIntegration() interface{}
 	SetEnableGoogleMlIntegration(val interface{})
 	EnableGoogleMlIntegrationInput() interface{}
@@ -87,6 +90,9 @@ type SqlDatabaseInstanceSettingsOutputReference interface {
 	PricingPlan() *string
 	SetPricingPlan(val *string)
 	PricingPlanInput() *string
+	RetainBackupsOnDelete() interface{}
+	SetRetainBackupsOnDelete(val interface{})
+	RetainBackupsOnDeleteInput() interface{}
 	SqlServerAuditConfig() SqlDatabaseInstanceSettingsSqlServerAuditConfigOutputReference
 	SqlServerAuditConfigInput() *SqlDatabaseInstanceSettingsSqlServerAuditConfig
 	// Experimental.
@@ -159,6 +165,7 @@ type SqlDatabaseInstanceSettingsOutputReference interface {
 	ResetDiskSize()
 	ResetDiskType()
 	ResetEdition()
+	ResetEnableDataplexIntegration()
 	ResetEnableGoogleMlIntegration()
 	ResetInsightsConfig()
 	ResetIpConfiguration()
@@ -166,6 +173,7 @@ type SqlDatabaseInstanceSettingsOutputReference interface {
 	ResetMaintenanceWindow()
 	ResetPasswordValidationPolicy()
 	ResetPricingPlan()
+	ResetRetainBackupsOnDelete()
 	ResetSqlServerAuditConfig()
 	ResetTimeZone()
 	ResetUserLabels()
@@ -534,6 +542,26 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) EditionInput() *s
 	return returns
 }
 
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) EnableDataplexIntegration() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableDataplexIntegration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) EnableDataplexIntegrationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableDataplexIntegrationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) EnableGoogleMlIntegration() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -689,6 +717,26 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) PricingPlanInput(
 	_jsii_.Get(
 		j,
 		"pricingPlanInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) RetainBackupsOnDelete() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"retainBackupsOnDelete",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) RetainBackupsOnDeleteInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"retainBackupsOnDeleteInput",
 		&returns,
 	)
 	return returns
@@ -964,6 +1012,17 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetEdition(val *st
 	)
 }
 
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetEnableDataplexIntegration(val interface{}) {
+	if err := j.validateSetEnableDataplexIntegrationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableDataplexIntegration",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetEnableGoogleMlIntegration(val interface{}) {
 	if err := j.validateSetEnableGoogleMlIntegrationParameters(val); err != nil {
 		panic(err)
@@ -993,6 +1052,17 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetPricingPlan(val
 	_jsii_.Set(
 		j,
 		"pricingPlan",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetRetainBackupsOnDelete(val interface{}) {
+	if err := j.validateSetRetainBackupsOnDeleteParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"retainBackupsOnDelete",
 		val,
 	)
 }
@@ -1498,6 +1568,14 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ResetEdition() {
 	)
 }
 
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ResetEnableDataplexIntegration() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetEnableDataplexIntegration",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ResetEnableGoogleMlIntegration() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1550,6 +1628,14 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ResetPricingPlan(
 	_jsii_.InvokeVoid(
 		s,
 		"resetPricingPlan",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ResetRetainBackupsOnDelete() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRetainBackupsOnDelete",
 		nil, // no parameters
 	)
 }

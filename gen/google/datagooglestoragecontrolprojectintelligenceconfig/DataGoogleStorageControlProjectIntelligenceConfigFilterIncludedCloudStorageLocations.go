@@ -1,0 +1,6 @@
+package datagooglestoragecontrolprojectintelligenceconfig
+
+
+type DataGoogleStorageControlProjectIntelligenceConfigFilterIncludedCloudStorageLocations struct {
+}
+

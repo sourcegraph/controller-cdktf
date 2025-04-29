@@ -136,6 +136,10 @@ func (j *jsiiProxy_DataprocMetastoreService) validateSetDatabaseTypeParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_DataprocMetastoreService) validateSetDeletionProtectionParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataprocMetastoreService) validateSetIdParameters(val *string) error {
 	return nil
 }
@@ -173,6 +177,10 @@ func (j *jsiiProxy_DataprocMetastoreService) validateSetReleaseChannelParameters
 }
 
 func (j *jsiiProxy_DataprocMetastoreService) validateSetServiceIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataprocMetastoreService) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }
 

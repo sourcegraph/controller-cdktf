@@ -10,6 +10,9 @@ import (
 
 type DatabaseMigrationServiceConnectionProfilePostgresqlOutputReference interface {
 	cdktf.ComplexObject
+	AlloydbClusterId() *string
+	SetAlloydbClusterId(val *string)
+	AlloydbClusterIdInput() *string
 	CloudSqlId() *string
 	SetCloudSqlId(val *string)
 	CloudSqlIdInput() *string
@@ -81,8 +84,13 @@ type DatabaseMigrationServiceConnectionProfilePostgresqlOutputReference interfac
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutSsl(value *DatabaseMigrationServiceConnectionProfilePostgresqlSsl)
+	ResetAlloydbClusterId()
 	ResetCloudSqlId()
+	ResetHost()
+	ResetPassword()
+	ResetPort()
 	ResetSsl()
+	ResetUsername()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -96,6 +104,26 @@ type DatabaseMigrationServiceConnectionProfilePostgresqlOutputReference interfac
 // The jsii proxy struct for DatabaseMigrationServiceConnectionProfilePostgresqlOutputReference
 type jsiiProxy_DatabaseMigrationServiceConnectionProfilePostgresqlOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfilePostgresqlOutputReference) AlloydbClusterId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"alloydbClusterId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfilePostgresqlOutputReference) AlloydbClusterIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"alloydbClusterIdInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfilePostgresqlOutputReference) CloudSqlId() *string {
@@ -333,6 +361,17 @@ func NewDatabaseMigrationServiceConnectionProfilePostgresqlOutputReference_Overr
 		"@cdktf/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfilePostgresqlOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
+	)
+}
+
+func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfilePostgresqlOutputReference)SetAlloydbClusterId(val *string) {
+	if err := j.validateSetAlloydbClusterIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"alloydbClusterId",
+		val,
 	)
 }
 
@@ -643,6 +682,14 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfilePostgresqlOutputRefe
 	)
 }
 
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfilePostgresqlOutputReference) ResetAlloydbClusterId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAlloydbClusterId",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfilePostgresqlOutputReference) ResetCloudSqlId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -651,10 +698,42 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfilePostgresqlOutputRefe
 	)
 }
 
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfilePostgresqlOutputReference) ResetHost() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetHost",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfilePostgresqlOutputReference) ResetPassword() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPassword",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfilePostgresqlOutputReference) ResetPort() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPort",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfilePostgresqlOutputReference) ResetSsl() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetSsl",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfilePostgresqlOutputReference) ResetUsername() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetUsername",
 		nil, // no parameters
 	)
 }

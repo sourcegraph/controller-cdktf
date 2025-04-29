@@ -92,6 +92,10 @@ func validateComputePublicDelegatedPrefix_IsTerraformResourceParameters(x interf
 	return nil
 }
 
+func (j *jsiiProxy_ComputePublicDelegatedPrefix) validateSetAllocatablePrefixLengthParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputePublicDelegatedPrefix) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -117,6 +121,10 @@ func (j *jsiiProxy_ComputePublicDelegatedPrefix) validateSetIsLiveMigrationParam
 }
 
 func (j *jsiiProxy_ComputePublicDelegatedPrefix) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputePublicDelegatedPrefix) validateSetModeParameters(val *string) error {
 	return nil
 }
 

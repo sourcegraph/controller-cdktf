@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/redisinstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/redis_instance google_redis_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/redis_instance google_redis_instance}.
 type RedisInstance interface {
 	cdktf.TerraformResource
 	AlternativeLocationId() *string
@@ -128,6 +128,9 @@ type RedisInstance interface {
 	SetSecondaryIpRange(val *string)
 	SecondaryIpRangeInput() *string
 	ServerCaCerts() RedisInstanceServerCaCertsList
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
@@ -212,6 +215,7 @@ type RedisInstance interface {
 	ResetReplicaCount()
 	ResetReservedIpRange()
 	ResetSecondaryIpRange()
+	ResetTags()
 	ResetTier()
 	ResetTimeouts()
 	ResetTransitEncryptionMode()
@@ -923,6 +927,26 @@ func (j *jsiiProxy_RedisInstance) ServerCaCerts() RedisInstanceServerCaCertsList
 	return returns
 }
 
+func (j *jsiiProxy_RedisInstance) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedisInstance) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RedisInstance) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -1024,7 +1048,7 @@ func (j *jsiiProxy_RedisInstance) TransitEncryptionModeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/redis_instance google_redis_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/redis_instance google_redis_instance} Resource.
 func NewRedisInstance(scope constructs.Construct, id *string, config *RedisInstanceConfig) RedisInstance {
 	_init_.Initialize()
 
@@ -1042,7 +1066,7 @@ func NewRedisInstance(scope constructs.Construct, id *string, config *RedisInsta
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/redis_instance google_redis_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/redis_instance google_redis_instance} Resource.
 func NewRedisInstance_Override(r RedisInstance, scope constructs.Construct, id *string, config *RedisInstanceConfig) {
 	_init_.Initialize()
 
@@ -1337,6 +1361,17 @@ func (j *jsiiProxy_RedisInstance)SetSecondaryIpRange(val *string) {
 	_jsii_.Set(
 		j,
 		"secondaryIpRange",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedisInstance)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
 		val,
 	)
 }
@@ -1913,6 +1948,14 @@ func (r *jsiiProxy_RedisInstance) ResetSecondaryIpRange() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetSecondaryIpRange",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedisInstance) ResetTags() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetTags",
 		nil, // no parameters
 	)
 }

@@ -72,6 +72,10 @@ func (b *jsiiProxy_BigtableAppProfile) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
+func (b *jsiiProxy_BigtableAppProfile) validatePutDataBoostIsolationReadOnlyParameters(value *BigtableAppProfileDataBoostIsolationReadOnly) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigtableAppProfile) validatePutSingleClusterRoutingParameters(value *BigtableAppProfileSingleClusterRouting) error {
 	return nil
 }
@@ -145,6 +149,10 @@ func (j *jsiiProxy_BigtableAppProfile) validateSetProjectParameters(val *string)
 }
 
 func (j *jsiiProxy_BigtableAppProfile) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_BigtableAppProfile) validateSetRowAffinityParameters(val interface{}) error {
 	return nil
 }
 

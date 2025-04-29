@@ -14,6 +14,9 @@ type PrivatecaCaPoolIssuancePolicyOutputReference interface {
 	AllowedIssuanceModesInput() *PrivatecaCaPoolIssuancePolicyAllowedIssuanceModes
 	AllowedKeyTypes() PrivatecaCaPoolIssuancePolicyAllowedKeyTypesList
 	AllowedKeyTypesInput() interface{}
+	BackdateDuration() *string
+	SetBackdateDuration(val *string)
+	BackdateDurationInput() *string
 	BaselineValues() PrivatecaCaPoolIssuancePolicyBaselineValuesOutputReference
 	BaselineValuesInput() *PrivatecaCaPoolIssuancePolicyBaselineValues
 	// the index of the complex object in a list.
@@ -78,6 +81,7 @@ type PrivatecaCaPoolIssuancePolicyOutputReference interface {
 	PutIdentityConstraints(value *PrivatecaCaPoolIssuancePolicyIdentityConstraints)
 	ResetAllowedIssuanceModes()
 	ResetAllowedKeyTypes()
+	ResetBackdateDuration()
 	ResetBaselineValues()
 	ResetIdentityConstraints()
 	ResetMaximumLifetime()
@@ -131,6 +135,26 @@ func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) AllowedKeyTypes
 	_jsii_.Get(
 		j,
 		"allowedKeyTypesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) BackdateDuration() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"backdateDuration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) BackdateDurationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"backdateDurationInput",
 		&returns,
 	)
 	return returns
@@ -291,6 +315,17 @@ func NewPrivatecaCaPoolIssuancePolicyOutputReference_Override(p PrivatecaCaPoolI
 		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
+	)
+}
+
+func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference)SetBackdateDuration(val *string) {
+	if err := j.validateSetBackdateDurationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"backdateDuration",
+		val,
 	)
 }
 
@@ -602,6 +637,14 @@ func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) ResetAllowedKey
 	_jsii_.InvokeVoid(
 		p,
 		"resetAllowedKeyTypes",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) ResetBackdateDuration() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetBackdateDuration",
 		nil, // no parameters
 	)
 }

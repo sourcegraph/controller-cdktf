@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/project/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/project google_project}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/project google_project}.
 type Project interface {
 	cdktf.TerraformResource
 	AutoCreateNetwork() interface{}
@@ -30,6 +30,9 @@ type Project interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DeletionPolicy() *string
+	SetDeletionPolicy(val *string)
+	DeletionPolicyInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -78,9 +81,9 @@ type Project interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
-	SkipDelete() interface{}
-	SetSkipDelete(val interface{})
-	SkipDeleteInput() interface{}
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
@@ -136,6 +139,7 @@ type Project interface {
 	PutTimeouts(value *ProjectTimeouts)
 	ResetAutoCreateNetwork()
 	ResetBillingAccount()
+	ResetDeletionPolicy()
 	ResetFolderId()
 	ResetId()
 	ResetLabels()
@@ -143,7 +147,7 @@ type Project interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetSkipDelete()
+	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -238,6 +242,26 @@ func (j *jsiiProxy_Project) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) DeletionPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deletionPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) DeletionPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deletionPolicyInput",
 		&returns,
 	)
 	return returns
@@ -473,21 +497,21 @@ func (j *jsiiProxy_Project) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Project) SkipDelete() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Project) Tags() *map[string]*string {
+	var returns *map[string]*string
 	_jsii_.Get(
 		j,
-		"skipDelete",
+		"tags",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_Project) SkipDeleteInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Project) TagsInput() *map[string]*string {
+	var returns *map[string]*string
 	_jsii_.Get(
 		j,
-		"skipDeleteInput",
+		"tagsInput",
 		&returns,
 	)
 	return returns
@@ -554,7 +578,7 @@ func (j *jsiiProxy_Project) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/project google_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/project google_project} Resource.
 func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) Project {
 	_init_.Initialize()
 
@@ -572,7 +596,7 @@ func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) P
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/project google_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/project google_project} Resource.
 func NewProject_Override(p Project, scope constructs.Construct, id *string, config *ProjectConfig) {
 	_init_.Initialize()
 
@@ -623,6 +647,17 @@ func (j *jsiiProxy_Project)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Project)SetDeletionPolicy(val *string) {
+	if err := j.validateSetDeletionPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deletionPolicy",
 		val,
 	)
 }
@@ -739,13 +774,13 @@ func (j *jsiiProxy_Project)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Project)SetSkipDelete(val interface{}) {
-	if err := j.validateSetSkipDeleteParameters(val); err != nil {
+func (j *jsiiProxy_Project)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"skipDelete",
+		"tags",
 		val,
 	)
 }
@@ -1130,6 +1165,14 @@ func (p *jsiiProxy_Project) ResetBillingAccount() {
 	)
 }
 
+func (p *jsiiProxy_Project) ResetDeletionPolicy() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetDeletionPolicy",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_Project) ResetFolderId() {
 	_jsii_.InvokeVoid(
 		p,
@@ -1170,10 +1213,10 @@ func (p *jsiiProxy_Project) ResetOverrideLogicalId() {
 	)
 }
 
-func (p *jsiiProxy_Project) ResetSkipDelete() {
+func (p *jsiiProxy_Project) ResetTags() {
 	_jsii_.InvokeVoid(
 		p,
-		"resetSkipDelete",
+		"resetTags",
 		nil, // no parameters
 	)
 }

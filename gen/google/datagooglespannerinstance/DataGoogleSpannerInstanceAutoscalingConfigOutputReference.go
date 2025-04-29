@@ -10,6 +10,7 @@ import (
 
 type DataGoogleSpannerInstanceAutoscalingConfigOutputReference interface {
 	cdktf.ComplexObject
+	AsymmetricAutoscalingOptions() DataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsList
 	AutoscalingLimits() DataGoogleSpannerInstanceAutoscalingConfigAutoscalingLimitsList
 	AutoscalingTargets() DataGoogleSpannerInstanceAutoscalingConfigAutoscalingTargetsList
 	// the index of the complex object in a list.
@@ -76,6 +77,16 @@ type DataGoogleSpannerInstanceAutoscalingConfigOutputReference interface {
 // The jsii proxy struct for DataGoogleSpannerInstanceAutoscalingConfigOutputReference
 type jsiiProxy_DataGoogleSpannerInstanceAutoscalingConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataGoogleSpannerInstanceAutoscalingConfigOutputReference) AsymmetricAutoscalingOptions() DataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsList {
+	var returns DataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsList
+	_jsii_.Get(
+		j,
+		"asymmetricAutoscalingOptions",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataGoogleSpannerInstanceAutoscalingConfigOutputReference) AutoscalingLimits() DataGoogleSpannerInstanceAutoscalingConfigAutoscalingLimitsList {

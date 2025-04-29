@@ -226,6 +226,17 @@ func (c *jsiiProxy_ComputeRegionInstanceGroupManager) validatePutAutoHealingPoli
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRegionInstanceGroupManager) validatePutInstanceFlexibilityPolicyParameters(value *ComputeRegionInstanceGroupManagerInstanceFlexibilityPolicy) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionInstanceGroupManager) validatePutInstanceLifecyclePolicyParameters(value *ComputeRegionInstanceGroupManagerInstanceLifecyclePolicy) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -263,6 +274,17 @@ func (c *jsiiProxy_ComputeRegionInstanceGroupManager) validatePutNamedPortParame
 		if !_jsii_.IsAnonymousProxy(value) {
 			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ComputeRegionInstanceGroupManagerNamedPort; received %#v (a %T)", value, value)
 		}
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRegionInstanceGroupManager) validatePutStandbyPolicyParameters(value *ComputeRegionInstanceGroupManagerStandbyPolicy) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil
@@ -679,6 +701,22 @@ func (j *jsiiProxy_ComputeRegionInstanceGroupManager) validateSetTargetPoolsPara
 }
 
 func (j *jsiiProxy_ComputeRegionInstanceGroupManager) validateSetTargetSizeParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ComputeRegionInstanceGroupManager) validateSetTargetStoppedSizeParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ComputeRegionInstanceGroupManager) validateSetTargetSuspendedSizeParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
