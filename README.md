@@ -32,6 +32,8 @@ Re-generate all providers and modules:
 make -j4
 ```
 
+If you upgrade google terraform provider, follow the version upgrade guide eg. [v6 upgrade](https://github.com/hashicorp/terraform-provider-google/blob/main/website/docs/guides/version_6_upgrade.html.markdown) and update the controller.
+
 ## FAQ
 
 ### Why not use the pre-built providers?
