@@ -92,6 +92,10 @@ func (j *jsiiProxy_Database) validateSetAllowConnectionsParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_Database) validateSetAlterObjectOwnershipParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Database) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

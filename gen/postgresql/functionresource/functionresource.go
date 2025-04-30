@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/postgresql/functionresource/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.18.0/docs/resources/function postgresql_function}.
+// Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/function postgresql_function}.
 type FunctionResource interface {
 	cdktf.TerraformResource
 	Arg() FunctionResourceArgList
@@ -50,6 +50,9 @@ type FunctionResource interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	Language() *string
+	SetLanguage(val *string)
+	LanguageInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -59,6 +62,9 @@ type FunctionResource interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Parallel() *string
+	SetParallel(val *string)
+	ParallelInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -75,12 +81,21 @@ type FunctionResource interface {
 	Schema() *string
 	SetSchema(val *string)
 	SchemaInput() *string
+	SecurityDefiner() interface{}
+	SetSecurityDefiner(val interface{})
+	SecurityDefinerInput() interface{}
+	Strict() interface{}
+	SetStrict(val interface{})
+	StrictInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Volatility() *string
+	SetVolatility(val *string)
+	VolatilityInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -129,11 +144,16 @@ type FunctionResource interface {
 	ResetDatabase()
 	ResetDropCascade()
 	ResetId()
+	ResetLanguage()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetParallel()
 	ResetReturns()
 	ResetSchema()
+	ResetSecurityDefiner()
+	ResetStrict()
+	ResetVolatility()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -332,6 +352,26 @@ func (j *jsiiProxy_FunctionResource) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_FunctionResource) Language() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"language",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FunctionResource) LanguageInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"languageInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FunctionResource) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -367,6 +407,26 @@ func (j *jsiiProxy_FunctionResource) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FunctionResource) Parallel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parallel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FunctionResource) ParallelInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parallelInput",
 		&returns,
 	)
 	return returns
@@ -442,6 +502,46 @@ func (j *jsiiProxy_FunctionResource) SchemaInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_FunctionResource) SecurityDefiner() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"securityDefiner",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FunctionResource) SecurityDefinerInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"securityDefinerInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FunctionResource) Strict() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"strict",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FunctionResource) StrictInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"strictInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FunctionResource) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -472,8 +572,28 @@ func (j *jsiiProxy_FunctionResource) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_FunctionResource) Volatility() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"volatility",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.18.0/docs/resources/function postgresql_function} Resource.
+func (j *jsiiProxy_FunctionResource) VolatilityInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"volatilityInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/function postgresql_function} Resource.
 func NewFunctionResource(scope constructs.Construct, id *string, config *FunctionResourceConfig) FunctionResource {
 	_init_.Initialize()
 
@@ -491,7 +611,7 @@ func NewFunctionResource(scope constructs.Construct, id *string, config *Functio
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.18.0/docs/resources/function postgresql_function} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/function postgresql_function} Resource.
 func NewFunctionResource_Override(f FunctionResource, scope constructs.Construct, id *string, config *FunctionResourceConfig) {
 	_init_.Initialize()
 
@@ -584,6 +704,17 @@ func (j *jsiiProxy_FunctionResource)SetId(val *string) {
 	)
 }
 
+func (j *jsiiProxy_FunctionResource)SetLanguage(val *string) {
+	if err := j.validateSetLanguageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"language",
+		val,
+	)
+}
+
 func (j *jsiiProxy_FunctionResource)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -602,6 +733,17 @@ func (j *jsiiProxy_FunctionResource)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FunctionResource)SetParallel(val *string) {
+	if err := j.validateSetParallelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"parallel",
 		val,
 	)
 }
@@ -643,6 +785,39 @@ func (j *jsiiProxy_FunctionResource)SetSchema(val *string) {
 	_jsii_.Set(
 		j,
 		"schema",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FunctionResource)SetSecurityDefiner(val interface{}) {
+	if err := j.validateSetSecurityDefinerParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"securityDefiner",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FunctionResource)SetStrict(val interface{}) {
+	if err := j.validateSetStrictParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"strict",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FunctionResource)SetVolatility(val *string) {
+	if err := j.validateSetVolatilityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"volatility",
 		val,
 	)
 }
@@ -1043,10 +1218,26 @@ func (f *jsiiProxy_FunctionResource) ResetId() {
 	)
 }
 
+func (f *jsiiProxy_FunctionResource) ResetLanguage() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetLanguage",
+		nil, // no parameters
+	)
+}
+
 func (f *jsiiProxy_FunctionResource) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FunctionResource) ResetParallel() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetParallel",
 		nil, // no parameters
 	)
 }
@@ -1063,6 +1254,30 @@ func (f *jsiiProxy_FunctionResource) ResetSchema() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetSchema",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FunctionResource) ResetSecurityDefiner() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetSecurityDefiner",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FunctionResource) ResetStrict() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetStrict",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FunctionResource) ResetVolatility() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetVolatility",
 		nil, // no parameters
 	)
 }

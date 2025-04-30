@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/postgresql/extension/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.18.0/docs/resources/extension postgresql_extension}.
+// Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/extension postgresql_extension}.
 type Extension interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -450,7 +450,7 @@ func (j *jsiiProxy_Extension) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.18.0/docs/resources/extension postgresql_extension} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/extension postgresql_extension} Resource.
 func NewExtension(scope constructs.Construct, id *string, config *ExtensionConfig) Extension {
 	_init_.Initialize()
 
@@ -468,7 +468,7 @@ func NewExtension(scope constructs.Construct, id *string, config *ExtensionConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.18.0/docs/resources/extension postgresql_extension} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/extension postgresql_extension} Resource.
 func NewExtension_Override(e Extension, scope constructs.Construct, id *string, config *ExtensionConfig) {
 	_init_.Initialize()
 

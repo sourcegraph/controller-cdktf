@@ -21,32 +21,32 @@ type SchemaConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the schema.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.18.0/docs/resources/schema#name Schema#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/schema#name Schema#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The database name to alter schema.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.18.0/docs/resources/schema#database Schema#database}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/schema#database Schema#database}
 	Database *string `field:"optional" json:"database" yaml:"database"`
 	// When true, will also drop all the objects that are contained in the schema.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.18.0/docs/resources/schema#drop_cascade Schema#drop_cascade}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/schema#drop_cascade Schema#drop_cascade}
 	DropCascade interface{} `field:"optional" json:"dropCascade" yaml:"dropCascade"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.18.0/docs/resources/schema#id Schema#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/schema#id Schema#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// When true, use the existing schema if it exists.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.18.0/docs/resources/schema#if_not_exists Schema#if_not_exists}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/schema#if_not_exists Schema#if_not_exists}
 	IfNotExists interface{} `field:"optional" json:"ifNotExists" yaml:"ifNotExists"`
 	// The ROLE name who owns the schema.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.18.0/docs/resources/schema#owner Schema#owner}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/schema#owner Schema#owner}
 	Owner *string `field:"optional" json:"owner" yaml:"owner"`
 	// policy block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.18.0/docs/resources/schema#policy Schema#policy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/schema#policy Schema#policy}
 	Policy interface{} `field:"optional" json:"policy" yaml:"policy"`
 }
 

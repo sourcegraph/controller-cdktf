@@ -88,6 +88,23 @@ func (j *jsiiProxy_PostgresqlProvider) validateSetAwsRdsIamAuthParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_PostgresqlProvider) validateSetAzureIdentityAuthParameters(val interface{}) error {
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_PostgresqlProvider) validateSetClientcertParameters(val *PostgresqlProviderClientcert) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err

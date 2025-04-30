@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/postgresql/provider/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.18.0/docs postgresql}.
+// Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs postgresql}.
 type PostgresqlProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
@@ -21,6 +21,18 @@ type PostgresqlProvider interface {
 	AwsRdsIamProfile() *string
 	SetAwsRdsIamProfile(val *string)
 	AwsRdsIamProfileInput() *string
+	AwsRdsIamProviderRoleArn() *string
+	SetAwsRdsIamProviderRoleArn(val *string)
+	AwsRdsIamProviderRoleArnInput() *string
+	AwsRdsIamRegion() *string
+	SetAwsRdsIamRegion(val *string)
+	AwsRdsIamRegionInput() *string
+	AzureIdentityAuth() interface{}
+	SetAzureIdentityAuth(val interface{})
+	AzureIdentityAuthInput() interface{}
+	AzureTenantId() *string
+	SetAzureTenantId(val *string)
+	AzureTenantIdInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Clientcert() *PostgresqlProviderClientcert
@@ -44,6 +56,9 @@ type PostgresqlProvider interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GcpIamImpersonateServiceAccount() *string
+	SetGcpIamImpersonateServiceAccount(val *string)
+	GcpIamImpersonateServiceAccountInput() *string
 	Host() *string
 	SetHost(val *string)
 	HostInput() *string
@@ -94,11 +109,16 @@ type PostgresqlProvider interface {
 	ResetAlias()
 	ResetAwsRdsIamAuth()
 	ResetAwsRdsIamProfile()
+	ResetAwsRdsIamProviderRoleArn()
+	ResetAwsRdsIamRegion()
+	ResetAzureIdentityAuth()
+	ResetAzureTenantId()
 	ResetClientcert()
 	ResetConnectTimeout()
 	ResetDatabase()
 	ResetDatabaseUsername()
 	ResetExpectedVersion()
+	ResetGcpIamImpersonateServiceAccount()
 	ResetHost()
 	ResetMaxConnections()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -185,6 +205,86 @@ func (j *jsiiProxy_PostgresqlProvider) AwsRdsIamProfileInput() *string {
 	_jsii_.Get(
 		j,
 		"awsRdsIamProfileInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresqlProvider) AwsRdsIamProviderRoleArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"awsRdsIamProviderRoleArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresqlProvider) AwsRdsIamProviderRoleArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"awsRdsIamProviderRoleArnInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresqlProvider) AwsRdsIamRegion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"awsRdsIamRegion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresqlProvider) AwsRdsIamRegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"awsRdsIamRegionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresqlProvider) AzureIdentityAuth() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"azureIdentityAuth",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresqlProvider) AzureIdentityAuthInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"azureIdentityAuthInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresqlProvider) AzureTenantId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"azureTenantId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresqlProvider) AzureTenantIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"azureTenantIdInput",
 		&returns,
 	)
 	return returns
@@ -325,6 +425,26 @@ func (j *jsiiProxy_PostgresqlProvider) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresqlProvider) GcpIamImpersonateServiceAccount() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gcpIamImpersonateServiceAccount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresqlProvider) GcpIamImpersonateServiceAccountInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gcpIamImpersonateServiceAccountInput",
 		&returns,
 	)
 	return returns
@@ -591,7 +711,7 @@ func (j *jsiiProxy_PostgresqlProvider) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.18.0/docs postgresql} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs postgresql} Resource.
 func NewPostgresqlProvider(scope constructs.Construct, id *string, config *PostgresqlProviderConfig) PostgresqlProvider {
 	_init_.Initialize()
 
@@ -609,7 +729,7 @@ func NewPostgresqlProvider(scope constructs.Construct, id *string, config *Postg
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.18.0/docs postgresql} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs postgresql} Resource.
 func NewPostgresqlProvider_Override(p PostgresqlProvider, scope constructs.Construct, id *string, config *PostgresqlProviderConfig) {
 	_init_.Initialize()
 
@@ -643,6 +763,41 @@ func (j *jsiiProxy_PostgresqlProvider)SetAwsRdsIamProfile(val *string) {
 	_jsii_.Set(
 		j,
 		"awsRdsIamProfile",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PostgresqlProvider)SetAwsRdsIamProviderRoleArn(val *string) {
+	_jsii_.Set(
+		j,
+		"awsRdsIamProviderRoleArn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PostgresqlProvider)SetAwsRdsIamRegion(val *string) {
+	_jsii_.Set(
+		j,
+		"awsRdsIamRegion",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PostgresqlProvider)SetAzureIdentityAuth(val interface{}) {
+	if err := j.validateSetAzureIdentityAuthParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"azureIdentityAuth",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PostgresqlProvider)SetAzureTenantId(val *string) {
+	_jsii_.Set(
+		j,
+		"azureTenantId",
 		val,
 	)
 }
@@ -686,6 +841,14 @@ func (j *jsiiProxy_PostgresqlProvider)SetExpectedVersion(val *string) {
 	_jsii_.Set(
 		j,
 		"expectedVersion",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PostgresqlProvider)SetGcpIamImpersonateServiceAccount(val *string) {
+	_jsii_.Set(
+		j,
+		"gcpIamImpersonateServiceAccount",
 		val,
 	)
 }
@@ -922,6 +1085,38 @@ func (p *jsiiProxy_PostgresqlProvider) ResetAwsRdsIamProfile() {
 	)
 }
 
+func (p *jsiiProxy_PostgresqlProvider) ResetAwsRdsIamProviderRoleArn() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAwsRdsIamProviderRoleArn",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PostgresqlProvider) ResetAwsRdsIamRegion() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAwsRdsIamRegion",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PostgresqlProvider) ResetAzureIdentityAuth() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAzureIdentityAuth",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PostgresqlProvider) ResetAzureTenantId() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAzureTenantId",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PostgresqlProvider) ResetClientcert() {
 	_jsii_.InvokeVoid(
 		p,
@@ -958,6 +1153,14 @@ func (p *jsiiProxy_PostgresqlProvider) ResetExpectedVersion() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetExpectedVersion",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PostgresqlProvider) ResetGcpIamImpersonateServiceAccount() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetGcpIamImpersonateServiceAccount",
 		nil, // no parameters
 	)
 }

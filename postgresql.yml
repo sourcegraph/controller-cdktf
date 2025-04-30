@@ -1,8 +1,8 @@
 name: postgresql
 
 provider:
-  source: registry.terraform.io/sourcegraph/postgresql
-  version: "1.18.0"
+  source: registry.terraform.io/cyrilgdn/postgresql
+  version: "1.25.0"
 
 target:
   language: go

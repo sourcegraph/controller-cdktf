@@ -32,6 +32,10 @@ func (j *jsiiProxy_PostgresqlProvider) validateSetAwsRdsIamAuthParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_PostgresqlProvider) validateSetAzureIdentityAuthParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PostgresqlProvider) validateSetClientcertParameters(val *PostgresqlProviderClientcert) error {
 	return nil
 }
