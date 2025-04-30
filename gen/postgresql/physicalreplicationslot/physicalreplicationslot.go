@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/postgresql/physicalreplicationslot/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.18.0/docs/resources/physical_replication_slot postgresql_physical_replication_slot}.
+// Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/physical_replication_slot postgresql_physical_replication_slot}.
 type PhysicalReplicationSlot interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -330,7 +330,7 @@ func (j *jsiiProxy_PhysicalReplicationSlot) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.18.0/docs/resources/physical_replication_slot postgresql_physical_replication_slot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/physical_replication_slot postgresql_physical_replication_slot} Resource.
 func NewPhysicalReplicationSlot(scope constructs.Construct, id *string, config *PhysicalReplicationSlotConfig) PhysicalReplicationSlot {
 	_init_.Initialize()
 
@@ -348,7 +348,7 @@ func NewPhysicalReplicationSlot(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.18.0/docs/resources/physical_replication_slot postgresql_physical_replication_slot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/physical_replication_slot postgresql_physical_replication_slot} Resource.
 func NewPhysicalReplicationSlot_Override(p PhysicalReplicationSlot, scope constructs.Construct, id *string, config *PhysicalReplicationSlotConfig) {
 	_init_.Initialize()
 
