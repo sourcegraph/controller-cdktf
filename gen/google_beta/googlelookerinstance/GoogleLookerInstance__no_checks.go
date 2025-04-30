@@ -96,6 +96,10 @@ func (g *jsiiProxy_GoogleLookerInstance) validatePutOauthConfigParameters(value 
 	return nil
 }
 
+func (g *jsiiProxy_GoogleLookerInstance) validatePutPscConfigParameters(value *GoogleLookerInstancePscConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleLookerInstance) validatePutTimeoutsParameters(value *GoogleLookerInstanceTimeouts) error {
 	return nil
 }
@@ -132,6 +136,14 @@ func (j *jsiiProxy_GoogleLookerInstance) validateSetCountParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_GoogleLookerInstance) validateSetDeletionPolicyParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleLookerInstance) validateSetFipsEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleLookerInstance) validateSetIdParameters(val *string) error {
 	return nil
 }
@@ -157,6 +169,10 @@ func (j *jsiiProxy_GoogleLookerInstance) validateSetProjectParameters(val *strin
 }
 
 func (j *jsiiProxy_GoogleLookerInstance) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleLookerInstance) validateSetPscEnabledParameters(val interface{}) error {
 	return nil
 }
 

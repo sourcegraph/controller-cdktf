@@ -35,6 +35,9 @@ type GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeC
 	Fqn() *string
 	InternalValue() *GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesServiceNetworking
 	SetInternalValue(val *GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesServiceNetworking)
+	PodSelectorLabel() *string
+	SetPodSelectorLabel(val *string)
+	PodSelectorLabelInput() *string
 	Service() *string
 	SetService(val *string)
 	ServiceInput() *string
@@ -71,6 +74,7 @@ type GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeC
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetDisablePodOverprovisioning()
+	ResetPodSelectorLabel()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -171,6 +175,26 @@ func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategy
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesServiceNetworkingOutputReference) PodSelectorLabel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"podSelectorLabel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesServiceNetworkingOutputReference) PodSelectorLabelInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"podSelectorLabelInput",
 		&returns,
 	)
 	return returns
@@ -295,6 +319,17 @@ func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategy
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesServiceNetworkingOutputReference)SetPodSelectorLabel(val *string) {
+	if err := j.validateSetPodSelectorLabelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"podSelectorLabel",
 		val,
 	)
 }
@@ -522,6 +557,14 @@ func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategy
 	_jsii_.InvokeVoid(
 		g,
 		"resetDisablePodOverprovisioning",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesServiceNetworkingOutputReference) ResetPodSelectorLabel() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPodSelectorLabel",
 		nil, // no parameters
 	)
 }

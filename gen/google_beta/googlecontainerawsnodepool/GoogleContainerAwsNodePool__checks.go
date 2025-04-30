@@ -226,6 +226,17 @@ func (g *jsiiProxy_GoogleContainerAwsNodePool) validatePutConfigParameters(value
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerAwsNodePool) validatePutKubeletConfigParameters(value *GoogleContainerAwsNodePoolKubeletConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerAwsNodePool) validatePutManagementParameters(value *GoogleContainerAwsNodePoolManagement) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

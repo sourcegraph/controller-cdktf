@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlesecuresourcemanagerinstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_secure_source_manager_instance google_secure_source_manager_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_secure_source_manager_instance google_secure_source_manager_instance}.
 type GoogleSecureSourceManagerInstance interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -88,6 +88,8 @@ type GoogleSecureSourceManagerInstance interface {
 	Timeouts() GoogleSecureSourceManagerInstanceTimeoutsOutputReference
 	TimeoutsInput() interface{}
 	UpdateTime() *string
+	WorkforceIdentityFederationConfig() GoogleSecureSourceManagerInstanceWorkforceIdentityFederationConfigOutputReference
+	WorkforceIdentityFederationConfigInput() *GoogleSecureSourceManagerInstanceWorkforceIdentityFederationConfig
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -133,6 +135,7 @@ type GoogleSecureSourceManagerInstance interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutPrivateConfig(value *GoogleSecureSourceManagerInstancePrivateConfig)
 	PutTimeouts(value *GoogleSecureSourceManagerInstanceTimeouts)
+	PutWorkforceIdentityFederationConfig(value *GoogleSecureSourceManagerInstanceWorkforceIdentityFederationConfig)
 	ResetId()
 	ResetKmsKey()
 	ResetLabels()
@@ -142,6 +145,7 @@ type GoogleSecureSourceManagerInstance interface {
 	ResetPrivateConfig()
 	ResetProject()
 	ResetTimeouts()
+	ResetWorkforceIdentityFederationConfig()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -560,8 +564,28 @@ func (j *jsiiProxy_GoogleSecureSourceManagerInstance) UpdateTime() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleSecureSourceManagerInstance) WorkforceIdentityFederationConfig() GoogleSecureSourceManagerInstanceWorkforceIdentityFederationConfigOutputReference {
+	var returns GoogleSecureSourceManagerInstanceWorkforceIdentityFederationConfigOutputReference
+	_jsii_.Get(
+		j,
+		"workforceIdentityFederationConfig",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_secure_source_manager_instance google_secure_source_manager_instance} Resource.
+func (j *jsiiProxy_GoogleSecureSourceManagerInstance) WorkforceIdentityFederationConfigInput() *GoogleSecureSourceManagerInstanceWorkforceIdentityFederationConfig {
+	var returns *GoogleSecureSourceManagerInstanceWorkforceIdentityFederationConfig
+	_jsii_.Get(
+		j,
+		"workforceIdentityFederationConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_secure_source_manager_instance google_secure_source_manager_instance} Resource.
 func NewGoogleSecureSourceManagerInstance(scope constructs.Construct, id *string, config *GoogleSecureSourceManagerInstanceConfig) GoogleSecureSourceManagerInstance {
 	_init_.Initialize()
 
@@ -579,7 +603,7 @@ func NewGoogleSecureSourceManagerInstance(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_secure_source_manager_instance google_secure_source_manager_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_secure_source_manager_instance google_secure_source_manager_instance} Resource.
 func NewGoogleSecureSourceManagerInstance_Override(g GoogleSecureSourceManagerInstance, scope constructs.Construct, id *string, config *GoogleSecureSourceManagerInstanceConfig) {
 	_init_.Initialize()
 
@@ -1099,6 +1123,17 @@ func (g *jsiiProxy_GoogleSecureSourceManagerInstance) PutTimeouts(value *GoogleS
 	)
 }
 
+func (g *jsiiProxy_GoogleSecureSourceManagerInstance) PutWorkforceIdentityFederationConfig(value *GoogleSecureSourceManagerInstanceWorkforceIdentityFederationConfig) {
+	if err := g.validatePutWorkforceIdentityFederationConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putWorkforceIdentityFederationConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleSecureSourceManagerInstance) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1151,6 +1186,14 @@ func (g *jsiiProxy_GoogleSecureSourceManagerInstance) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleSecureSourceManagerInstance) ResetWorkforceIdentityFederationConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetWorkforceIdentityFederationConfig",
 		nil, // no parameters
 	)
 }

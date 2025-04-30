@@ -13,6 +13,7 @@ type DataGoogleCloudfunctions2FunctionServiceConfigOutputReference interface {
 	AllTrafficOnLatestRevision() cdktf.IResolvable
 	AvailableCpu() *string
 	AvailableMemory() *string
+	BinaryAuthorizationPolicy() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -118,6 +119,16 @@ func (j *jsiiProxy_DataGoogleCloudfunctions2FunctionServiceConfigOutputReference
 	_jsii_.Get(
 		j,
 		"availableMemory",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleCloudfunctions2FunctionServiceConfigOutputReference) BinaryAuthorizationPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"binaryAuthorizationPolicy",
 		&returns,
 	)
 	return returns

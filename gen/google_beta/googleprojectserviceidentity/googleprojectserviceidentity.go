@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleprojectserviceidentity/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_project_service_identity google_project_service_identity}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_project_service_identity google_project_service_identity}.
 type GoogleProjectServiceIdentity interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -44,6 +44,7 @@ type GoogleProjectServiceIdentity interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Member() *string
 	// The tree node.
 	Node() constructs.Node
 	Project() *string
@@ -258,6 +259,16 @@ func (j *jsiiProxy_GoogleProjectServiceIdentity) Lifecycle() *cdktf.TerraformRes
 	return returns
 }
 
+func (j *jsiiProxy_GoogleProjectServiceIdentity) Member() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"member",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleProjectServiceIdentity) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -389,7 +400,7 @@ func (j *jsiiProxy_GoogleProjectServiceIdentity) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_project_service_identity google_project_service_identity} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_project_service_identity google_project_service_identity} Resource.
 func NewGoogleProjectServiceIdentity(scope constructs.Construct, id *string, config *GoogleProjectServiceIdentityConfig) GoogleProjectServiceIdentity {
 	_init_.Initialize()
 
@@ -407,7 +418,7 @@ func NewGoogleProjectServiceIdentity(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_project_service_identity google_project_service_identity} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_project_service_identity google_project_service_identity} Resource.
 func NewGoogleProjectServiceIdentity_Override(g GoogleProjectServiceIdentity, scope constructs.Construct, id *string, config *GoogleProjectServiceIdentityConfig) {
 	_init_.Initialize()
 

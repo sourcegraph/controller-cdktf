@@ -64,6 +64,10 @@ func (j *jsiiProxy_GoogleAlloydbInstanceMachineConfigOutputReference) validateSe
 	return nil
 }
 
+func (j *jsiiProxy_GoogleAlloydbInstanceMachineConfigOutputReference) validateSetMachineTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleAlloydbInstanceMachineConfigOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

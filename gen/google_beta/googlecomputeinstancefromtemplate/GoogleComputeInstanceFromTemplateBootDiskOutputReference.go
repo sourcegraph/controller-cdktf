@@ -34,11 +34,23 @@ type GoogleComputeInstanceFromTemplateBootDiskOutputReference interface {
 	DiskEncryptionKeyRaw() *string
 	SetDiskEncryptionKeyRaw(val *string)
 	DiskEncryptionKeyRawInput() *string
+	DiskEncryptionKeyRsa() *string
+	SetDiskEncryptionKeyRsa(val *string)
+	DiskEncryptionKeyRsaInput() *string
 	DiskEncryptionKeySha256() *string
+	DiskEncryptionServiceAccount() *string
+	SetDiskEncryptionServiceAccount(val *string)
+	DiskEncryptionServiceAccountInput() *string
 	// Experimental.
 	Fqn() *string
+	GuestOsFeatures() *[]*string
+	SetGuestOsFeatures(val *[]*string)
+	GuestOsFeaturesInput() *[]*string
 	InitializeParams() GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference
 	InitializeParamsInput() *GoogleComputeInstanceFromTemplateBootDiskInitializeParams
+	Interface() *string
+	SetInterface(val *string)
+	InterfaceInput() *string
 	InternalValue() *GoogleComputeInstanceFromTemplateBootDisk
 	SetInternalValue(val *GoogleComputeInstanceFromTemplateBootDisk)
 	KmsKeySelfLink() *string
@@ -86,7 +98,11 @@ type GoogleComputeInstanceFromTemplateBootDiskOutputReference interface {
 	ResetAutoDelete()
 	ResetDeviceName()
 	ResetDiskEncryptionKeyRaw()
+	ResetDiskEncryptionKeyRsa()
+	ResetDiskEncryptionServiceAccount()
+	ResetGuestOsFeatures()
 	ResetInitializeParams()
+	ResetInterface()
 	ResetKmsKeySelfLink()
 	ResetMode()
 	ResetSource()
@@ -195,6 +211,26 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference) Dis
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference) DiskEncryptionKeyRsa() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"diskEncryptionKeyRsa",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference) DiskEncryptionKeyRsaInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"diskEncryptionKeyRsaInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference) DiskEncryptionKeySha256() *string {
 	var returns *string
 	_jsii_.Get(
@@ -205,11 +241,51 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference) Dis
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference) DiskEncryptionServiceAccount() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"diskEncryptionServiceAccount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference) DiskEncryptionServiceAccountInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"diskEncryptionServiceAccountInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference) GuestOsFeatures() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"guestOsFeatures",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference) GuestOsFeaturesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"guestOsFeaturesInput",
 		&returns,
 	)
 	return returns
@@ -230,6 +306,26 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference) Ini
 	_jsii_.Get(
 		j,
 		"initializeParamsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference) Interface() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"interface",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference) InterfaceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"interfaceInput",
 		&returns,
 	)
 	return returns
@@ -404,6 +500,50 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference)SetD
 	_jsii_.Set(
 		j,
 		"diskEncryptionKeyRaw",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference)SetDiskEncryptionKeyRsa(val *string) {
+	if err := j.validateSetDiskEncryptionKeyRsaParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"diskEncryptionKeyRsa",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference)SetDiskEncryptionServiceAccount(val *string) {
+	if err := j.validateSetDiskEncryptionServiceAccountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"diskEncryptionServiceAccount",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference)SetGuestOsFeatures(val *[]*string) {
+	if err := j.validateSetGuestOsFeaturesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"guestOsFeatures",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference)SetInterface(val *string) {
+	if err := j.validateSetInterfaceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"interface",
 		val,
 	)
 }
@@ -695,10 +835,42 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference) Res
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference) ResetDiskEncryptionKeyRsa() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDiskEncryptionKeyRsa",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference) ResetDiskEncryptionServiceAccount() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDiskEncryptionServiceAccount",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference) ResetGuestOsFeatures() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetGuestOsFeatures",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference) ResetInitializeParams() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetInitializeParams",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference) ResetInterface() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetInterface",
 		nil, // no parameters
 	)
 }

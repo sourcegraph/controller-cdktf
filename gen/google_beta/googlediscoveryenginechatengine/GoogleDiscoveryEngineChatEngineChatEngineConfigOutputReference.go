@@ -12,6 +12,9 @@ type GoogleDiscoveryEngineChatEngineChatEngineConfigOutputReference interface {
 	cdktf.ComplexObject
 	AgentCreationConfig() GoogleDiscoveryEngineChatEngineChatEngineConfigAgentCreationConfigOutputReference
 	AgentCreationConfigInput() *GoogleDiscoveryEngineChatEngineChatEngineConfigAgentCreationConfig
+	AllowCrossRegion() interface{}
+	SetAllowCrossRegion(val interface{})
+	AllowCrossRegionInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -27,6 +30,9 @@ type GoogleDiscoveryEngineChatEngineChatEngineConfigOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DialogflowAgentToLink() *string
+	SetDialogflowAgentToLink(val *string)
+	DialogflowAgentToLinkInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleDiscoveryEngineChatEngineChatEngineConfig
@@ -64,6 +70,9 @@ type GoogleDiscoveryEngineChatEngineChatEngineConfigOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAgentCreationConfig(value *GoogleDiscoveryEngineChatEngineChatEngineConfigAgentCreationConfig)
+	ResetAgentCreationConfig()
+	ResetAllowCrossRegion()
+	ResetDialogflowAgentToLink()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -99,6 +108,26 @@ func (j *jsiiProxy_GoogleDiscoveryEngineChatEngineChatEngineConfigOutputReferenc
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDiscoveryEngineChatEngineChatEngineConfigOutputReference) AllowCrossRegion() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowCrossRegion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDiscoveryEngineChatEngineChatEngineConfigOutputReference) AllowCrossRegionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowCrossRegionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleDiscoveryEngineChatEngineChatEngineConfigOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -124,6 +153,26 @@ func (j *jsiiProxy_GoogleDiscoveryEngineChatEngineChatEngineConfigOutputReferenc
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDiscoveryEngineChatEngineChatEngineConfigOutputReference) DialogflowAgentToLink() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dialogflowAgentToLink",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDiscoveryEngineChatEngineChatEngineConfigOutputReference) DialogflowAgentToLinkInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dialogflowAgentToLinkInput",
 		&returns,
 	)
 	return returns
@@ -197,6 +246,17 @@ func NewGoogleDiscoveryEngineChatEngineChatEngineConfigOutputReference_Override(
 	)
 }
 
+func (j *jsiiProxy_GoogleDiscoveryEngineChatEngineChatEngineConfigOutputReference)SetAllowCrossRegion(val interface{}) {
+	if err := j.validateSetAllowCrossRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowCrossRegion",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleDiscoveryEngineChatEngineChatEngineConfigOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -215,6 +275,17 @@ func (j *jsiiProxy_GoogleDiscoveryEngineChatEngineChatEngineConfigOutputReferenc
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDiscoveryEngineChatEngineChatEngineConfigOutputReference)SetDialogflowAgentToLink(val *string) {
+	if err := j.validateSetDialogflowAgentToLinkParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dialogflowAgentToLink",
 		val,
 	)
 }
@@ -446,6 +517,30 @@ func (g *jsiiProxy_GoogleDiscoveryEngineChatEngineChatEngineConfigOutputReferenc
 		g,
 		"putAgentCreationConfig",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDiscoveryEngineChatEngineChatEngineConfigOutputReference) ResetAgentCreationConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAgentCreationConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDiscoveryEngineChatEngineChatEngineConfigOutputReference) ResetAllowCrossRegion() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAllowCrossRegion",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDiscoveryEngineChatEngineChatEngineConfigOutputReference) ResetDialogflowAgentToLink() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDialogflowAgentToLink",
+		nil, // no parameters
 	)
 }
 

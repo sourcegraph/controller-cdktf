@@ -90,6 +90,37 @@ func (g *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOutput
 	return nil
 }
 
+func (g *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference) validatePutDeploymentOverridesParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncDeploymentOverrides:
+		value := value.(*[]*GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncDeploymentOverrides)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncDeploymentOverrides:
+		value_ := value.([]*GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncDeploymentOverrides)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncDeploymentOverrides; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference) validatePutGitParameters(value *GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncGit) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -185,6 +216,26 @@ func (j *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOutput
 	return nil
 }
 
+func (j *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference) validateSetEnabledParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference) validateSetInternalValueParameters(val *GoogleGkeHubFeatureMembershipConfigmanagementConfigSync) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
@@ -224,6 +275,26 @@ func (j *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOutput
 func (j *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference) validateSetSourceFormatParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference) validateSetStopSyncingParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil

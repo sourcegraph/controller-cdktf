@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledataprocworkflowtemplate/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_dataproc_workflow_template google_dataproc_workflow_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_dataproc_workflow_template google_dataproc_workflow_template}.
 type GoogleDataprocWorkflowTemplate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -33,6 +33,8 @@ type GoogleDataprocWorkflowTemplate interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	EffectiveLabels() cdktf.StringMap
+	EncryptionConfig() GoogleDataprocWorkflowTemplateEncryptionConfigOutputReference
+	EncryptionConfigInput() *GoogleDataprocWorkflowTemplateEncryptionConfig
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -134,11 +136,13 @@ type GoogleDataprocWorkflowTemplate interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutEncryptionConfig(value *GoogleDataprocWorkflowTemplateEncryptionConfig)
 	PutJobs(value interface{})
 	PutParameters(value interface{})
 	PutPlacement(value *GoogleDataprocWorkflowTemplatePlacement)
 	PutTimeouts(value *GoogleDataprocWorkflowTemplateTimeouts)
 	ResetDagTimeout()
+	ResetEncryptionConfig()
 	ResetId()
 	ResetLabels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -251,6 +255,26 @@ func (j *jsiiProxy_GoogleDataprocWorkflowTemplate) EffectiveLabels() cdktf.Strin
 	_jsii_.Get(
 		j,
 		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataprocWorkflowTemplate) EncryptionConfig() GoogleDataprocWorkflowTemplateEncryptionConfigOutputReference {
+	var returns GoogleDataprocWorkflowTemplateEncryptionConfigOutputReference
+	_jsii_.Get(
+		j,
+		"encryptionConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataprocWorkflowTemplate) EncryptionConfigInput() *GoogleDataprocWorkflowTemplateEncryptionConfig {
+	var returns *GoogleDataprocWorkflowTemplateEncryptionConfig
+	_jsii_.Get(
+		j,
+		"encryptionConfigInput",
 		&returns,
 	)
 	return returns
@@ -587,7 +611,7 @@ func (j *jsiiProxy_GoogleDataprocWorkflowTemplate) VersionInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_dataproc_workflow_template google_dataproc_workflow_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_dataproc_workflow_template google_dataproc_workflow_template} Resource.
 func NewGoogleDataprocWorkflowTemplate(scope constructs.Construct, id *string, config *GoogleDataprocWorkflowTemplateConfig) GoogleDataprocWorkflowTemplate {
 	_init_.Initialize()
 
@@ -605,7 +629,7 @@ func NewGoogleDataprocWorkflowTemplate(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_dataproc_workflow_template google_dataproc_workflow_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_dataproc_workflow_template google_dataproc_workflow_template} Resource.
 func NewGoogleDataprocWorkflowTemplate_Override(g GoogleDataprocWorkflowTemplate, scope constructs.Construct, id *string, config *GoogleDataprocWorkflowTemplateConfig) {
 	_init_.Initialize()
 
@@ -1114,6 +1138,17 @@ func (g *jsiiProxy_GoogleDataprocWorkflowTemplate) OverrideLogicalId(newLogicalI
 	)
 }
 
+func (g *jsiiProxy_GoogleDataprocWorkflowTemplate) PutEncryptionConfig(value *GoogleDataprocWorkflowTemplateEncryptionConfig) {
+	if err := g.validatePutEncryptionConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putEncryptionConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDataprocWorkflowTemplate) PutJobs(value interface{}) {
 	if err := g.validatePutJobsParameters(value); err != nil {
 		panic(err)
@@ -1162,6 +1197,14 @@ func (g *jsiiProxy_GoogleDataprocWorkflowTemplate) ResetDagTimeout() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDagTimeout",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataprocWorkflowTemplate) ResetEncryptionConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEncryptionConfig",
 		nil, // no parameters
 	)
 }

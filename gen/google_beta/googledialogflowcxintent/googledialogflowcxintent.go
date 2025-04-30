@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledialogflowcxintent/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_dialogflow_cx_intent google_dialogflow_cx_intent}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_dialogflow_cx_intent google_dialogflow_cx_intent}.
 type GoogleDialogflowCxIntent interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -627,7 +627,7 @@ func (j *jsiiProxy_GoogleDialogflowCxIntent) TrainingPhrasesInput() interface{} 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_dialogflow_cx_intent google_dialogflow_cx_intent} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_dialogflow_cx_intent google_dialogflow_cx_intent} Resource.
 func NewGoogleDialogflowCxIntent(scope constructs.Construct, id *string, config *GoogleDialogflowCxIntentConfig) GoogleDialogflowCxIntent {
 	_init_.Initialize()
 
@@ -645,7 +645,7 @@ func NewGoogleDialogflowCxIntent(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_dialogflow_cx_intent google_dialogflow_cx_intent} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_dialogflow_cx_intent google_dialogflow_cx_intent} Resource.
 func NewGoogleDialogflowCxIntent_Override(g GoogleDialogflowCxIntent, scope constructs.Construct, id *string, config *GoogleDialogflowCxIntentConfig) {
 	_init_.Initialize()
 

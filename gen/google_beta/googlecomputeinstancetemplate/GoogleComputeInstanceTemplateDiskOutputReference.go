@@ -61,6 +61,9 @@ type GoogleComputeInstanceTemplateDiskOutputReference interface {
 	ProvisionedIops() *float64
 	SetProvisionedIops(val *float64)
 	ProvisionedIopsInput() *float64
+	ProvisionedThroughput() *float64
+	SetProvisionedThroughput(val *float64)
+	ProvisionedThroughputInput() *float64
 	ResourceManagerTags() *map[string]*string
 	SetResourceManagerTags(val *map[string]*string)
 	ResourceManagerTagsInput() *map[string]*string
@@ -129,6 +132,7 @@ type GoogleComputeInstanceTemplateDiskOutputReference interface {
 	ResetLabels()
 	ResetMode()
 	ResetProvisionedIops()
+	ResetProvisionedThroughput()
 	ResetResourceManagerTags()
 	ResetResourcePolicies()
 	ResetSource()
@@ -417,6 +421,26 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) Provisioned
 	_jsii_.Get(
 		j,
 		"provisionedIopsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) ProvisionedThroughput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"provisionedThroughput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) ProvisionedThroughputInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"provisionedThroughputInput",
 		&returns,
 	)
 	return returns
@@ -769,6 +793,17 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference)SetProvision
 	_jsii_.Set(
 		j,
 		"provisionedIops",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference)SetProvisionedThroughput(val *float64) {
+	if err := j.validateSetProvisionedThroughputParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisionedThroughput",
 		val,
 	)
 }
@@ -1164,6 +1199,14 @@ func (g *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) ResetProvis
 	_jsii_.InvokeVoid(
 		g,
 		"resetProvisionedIops",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) ResetProvisionedThroughput() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetProvisionedThroughput",
 		nil, // no parameters
 	)
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleprojectusageexportbucket/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_project_usage_export_bucket google_project_usage_export_bucket}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_project_usage_export_bucket google_project_usage_export_bucket}.
 type GoogleProjectUsageExportBucket interface {
 	cdktf.TerraformResource
 	BucketName() *string
@@ -402,7 +402,7 @@ func (j *jsiiProxy_GoogleProjectUsageExportBucket) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_project_usage_export_bucket google_project_usage_export_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_project_usage_export_bucket google_project_usage_export_bucket} Resource.
 func NewGoogleProjectUsageExportBucket(scope constructs.Construct, id *string, config *GoogleProjectUsageExportBucketConfig) GoogleProjectUsageExportBucket {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewGoogleProjectUsageExportBucket(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_project_usage_export_bucket google_project_usage_export_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_project_usage_export_bucket google_project_usage_export_bucket} Resource.
 func NewGoogleProjectUsageExportBucket_Override(g GoogleProjectUsageExportBucket, scope constructs.Construct, id *string, config *GoogleProjectUsageExportBucketConfig) {
 	_init_.Initialize()
 

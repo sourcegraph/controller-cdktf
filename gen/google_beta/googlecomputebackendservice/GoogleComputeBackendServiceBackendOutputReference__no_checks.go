@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) validateIn
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) validatePutCustomMetricsParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -101,6 +105,10 @@ func (j *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) validateSe
 }
 
 func (j *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) validateSetMaxUtilizationParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) validateSetPreferenceParameters(val *string) error {
 	return nil
 }
 

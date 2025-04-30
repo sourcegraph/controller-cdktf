@@ -53,15 +53,15 @@ type GoogleStorageBucketLifecycleRuleConditionOutputReference interface {
 	MatchesSuffix() *[]*string
 	SetMatchesSuffix(val *[]*string)
 	MatchesSuffixInput() *[]*string
-	NoAge() interface{}
-	SetNoAge(val interface{})
-	NoAgeInput() interface{}
 	NoncurrentTimeBefore() *string
 	SetNoncurrentTimeBefore(val *string)
 	NoncurrentTimeBeforeInput() *string
 	NumNewerVersions() *float64
 	SetNumNewerVersions(val *float64)
 	NumNewerVersionsInput() *float64
+	SendAgeIfZero() interface{}
+	SetSendAgeIfZero(val interface{})
+	SendAgeIfZeroInput() interface{}
 	SendDaysSinceCustomTimeIfZero() interface{}
 	SetSendDaysSinceCustomTimeIfZero(val interface{})
 	SendDaysSinceCustomTimeIfZeroInput() interface{}
@@ -114,9 +114,9 @@ type GoogleStorageBucketLifecycleRuleConditionOutputReference interface {
 	ResetMatchesPrefix()
 	ResetMatchesStorageClass()
 	ResetMatchesSuffix()
-	ResetNoAge()
 	ResetNoncurrentTimeBefore()
 	ResetNumNewerVersions()
+	ResetSendAgeIfZero()
 	ResetSendDaysSinceCustomTimeIfZero()
 	ResetSendDaysSinceNoncurrentTimeIfZero()
 	ResetSendNumNewerVersionsIfZero()
@@ -346,26 +346,6 @@ func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) Mat
 	return returns
 }
 
-func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) NoAge() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"noAge",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) NoAgeInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"noAgeInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) NoncurrentTimeBefore() *string {
 	var returns *string
 	_jsii_.Get(
@@ -401,6 +381,26 @@ func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) Num
 	_jsii_.Get(
 		j,
 		"numNewerVersionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) SendAgeIfZero() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sendAgeIfZero",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) SendAgeIfZeroInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sendAgeIfZeroInput",
 		&returns,
 	)
 	return returns
@@ -655,17 +655,6 @@ func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference)SetM
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference)SetNoAge(val interface{}) {
-	if err := j.validateSetNoAgeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"noAge",
-		val,
-	)
-}
-
 func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference)SetNoncurrentTimeBefore(val *string) {
 	if err := j.validateSetNoncurrentTimeBeforeParameters(val); err != nil {
 		panic(err)
@@ -684,6 +673,17 @@ func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference)SetN
 	_jsii_.Set(
 		j,
 		"numNewerVersions",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference)SetSendAgeIfZero(val interface{}) {
+	if err := j.validateSetSendAgeIfZeroParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sendAgeIfZero",
 		val,
 	)
 }
@@ -1004,14 +1004,6 @@ func (g *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) Res
 	)
 }
 
-func (g *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) ResetNoAge() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetNoAge",
-		nil, // no parameters
-	)
-}
-
 func (g *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) ResetNoncurrentTimeBefore() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1024,6 +1016,14 @@ func (g *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) Res
 	_jsii_.InvokeVoid(
 		g,
 		"resetNumNewerVersions",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) ResetSendAgeIfZero() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSendAgeIfZero",
 		nil, // no parameters
 	)
 }

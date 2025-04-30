@@ -60,11 +60,19 @@ func (j *jsiiProxy_GoogleComputeSnapshotSourceDiskEncryptionKeyOutputReference) 
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeSnapshotSourceDiskEncryptionKeyOutputReference) validateSetKmsKeySelfLinkParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeSnapshotSourceDiskEncryptionKeyOutputReference) validateSetKmsKeyServiceAccountParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_GoogleComputeSnapshotSourceDiskEncryptionKeyOutputReference) validateSetRawKeyParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeSnapshotSourceDiskEncryptionKeyOutputReference) validateSetRsaEncryptedKeyParameters(val *string) error {
 	return nil
 }
 

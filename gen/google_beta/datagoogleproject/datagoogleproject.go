@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagoogleproject/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_project google_project}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_project google_project}.
 type DataGoogleProject interface {
 	cdktf.TerraformDataSource
 	AutoCreateNetwork() cdktf.IResolvable
@@ -22,6 +22,7 @@ type DataGoogleProject interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DeletionPolicy() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -58,7 +59,7 @@ type DataGoogleProject interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
-	SkipDelete() cdktf.IResolvable
+	Tags() cdktf.StringMap
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
@@ -160,6 +161,16 @@ func (j *jsiiProxy_DataGoogleProject) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleProject) DeletionPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deletionPolicy",
 		&returns,
 	)
 	return returns
@@ -345,11 +356,11 @@ func (j *jsiiProxy_DataGoogleProject) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleProject) SkipDelete() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataGoogleProject) Tags() cdktf.StringMap {
+	var returns cdktf.StringMap
 	_jsii_.Get(
 		j,
-		"skipDelete",
+		"tags",
 		&returns,
 	)
 	return returns
@@ -396,7 +407,7 @@ func (j *jsiiProxy_DataGoogleProject) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_project google_project} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_project google_project} Data Source.
 func NewDataGoogleProject(scope constructs.Construct, id *string, config *DataGoogleProjectConfig) DataGoogleProject {
 	_init_.Initialize()
 
@@ -414,7 +425,7 @@ func NewDataGoogleProject(scope constructs.Construct, id *string, config *DataGo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_project google_project} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_project google_project} Data Source.
 func NewDataGoogleProject_Override(d DataGoogleProject, scope constructs.Construct, id *string, config *DataGoogleProjectConfig) {
 	_init_.Initialize()
 

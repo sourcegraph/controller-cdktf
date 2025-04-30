@@ -52,6 +52,10 @@ func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesRouteActionOutputRefe
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesRouteActionOutputReference) validatePutMaxStreamDurationParameters(value *GoogleComputeUrlMapPathMatcherRouteRulesRouteActionMaxStreamDuration) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesRouteActionOutputReference) validatePutRequestMirrorPolicyParameters(value *GoogleComputeUrlMapPathMatcherRouteRulesRouteActionRequestMirrorPolicy) error {
 	return nil
 }

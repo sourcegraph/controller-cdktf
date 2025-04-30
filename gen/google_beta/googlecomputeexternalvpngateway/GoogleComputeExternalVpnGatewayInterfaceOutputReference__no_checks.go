@@ -68,6 +68,10 @@ func (j *jsiiProxy_GoogleComputeExternalVpnGatewayInterfaceOutputReference) vali
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeExternalVpnGatewayInterfaceOutputReference) validateSetIpv6AddressParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeExternalVpnGatewayInterfaceOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

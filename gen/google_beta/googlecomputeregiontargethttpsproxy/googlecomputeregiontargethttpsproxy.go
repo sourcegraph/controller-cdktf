@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeregiontargethttpsproxy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_region_target_https_proxy google_compute_region_target_https_proxy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_region_target_https_proxy google_compute_region_target_https_proxy}.
 type GoogleComputeRegionTargetHttpsProxy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -43,6 +43,9 @@ type GoogleComputeRegionTargetHttpsProxy interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	HttpKeepAliveTimeoutSec() *float64
+	SetHttpKeepAliveTimeoutSec(val *float64)
+	HttpKeepAliveTimeoutSecInput() *float64
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -139,6 +142,7 @@ type GoogleComputeRegionTargetHttpsProxy interface {
 	PutTimeouts(value *GoogleComputeRegionTargetHttpsProxyTimeouts)
 	ResetCertificateManagerCertificates()
 	ResetDescription()
+	ResetHttpKeepAliveTimeoutSec()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -292,6 +296,26 @@ func (j *jsiiProxy_GoogleComputeRegionTargetHttpsProxy) FriendlyUniqueId() *stri
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionTargetHttpsProxy) HttpKeepAliveTimeoutSec() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"httpKeepAliveTimeoutSec",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionTargetHttpsProxy) HttpKeepAliveTimeoutSecInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"httpKeepAliveTimeoutSecInput",
 		&returns,
 	)
 	return returns
@@ -578,7 +602,7 @@ func (j *jsiiProxy_GoogleComputeRegionTargetHttpsProxy) UrlMapInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_region_target_https_proxy google_compute_region_target_https_proxy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_region_target_https_proxy google_compute_region_target_https_proxy} Resource.
 func NewGoogleComputeRegionTargetHttpsProxy(scope constructs.Construct, id *string, config *GoogleComputeRegionTargetHttpsProxyConfig) GoogleComputeRegionTargetHttpsProxy {
 	_init_.Initialize()
 
@@ -596,7 +620,7 @@ func NewGoogleComputeRegionTargetHttpsProxy(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_region_target_https_proxy google_compute_region_target_https_proxy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_region_target_https_proxy google_compute_region_target_https_proxy} Resource.
 func NewGoogleComputeRegionTargetHttpsProxy_Override(g GoogleComputeRegionTargetHttpsProxy, scope constructs.Construct, id *string, config *GoogleComputeRegionTargetHttpsProxyConfig) {
 	_init_.Initialize()
 
@@ -663,6 +687,17 @@ func (j *jsiiProxy_GoogleComputeRegionTargetHttpsProxy)SetForEach(val cdktf.ITer
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionTargetHttpsProxy)SetHttpKeepAliveTimeoutSec(val *float64) {
+	if err := j.validateSetHttpKeepAliveTimeoutSecParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"httpKeepAliveTimeoutSec",
 		val,
 	)
 }
@@ -1161,6 +1196,14 @@ func (g *jsiiProxy_GoogleComputeRegionTargetHttpsProxy) ResetDescription() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionTargetHttpsProxy) ResetHttpKeepAliveTimeoutSec() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetHttpKeepAliveTimeoutSec",
 		nil, // no parameters
 	)
 }

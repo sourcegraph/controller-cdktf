@@ -80,6 +80,10 @@ func (g *jsiiProxy_GoogleSecureSourceManagerInstance) validatePutTimeoutsParamet
 	return nil
 }
 
+func (g *jsiiProxy_GoogleSecureSourceManagerInstance) validatePutWorkforceIdentityFederationConfigParameters(value *GoogleSecureSourceManagerInstanceWorkforceIdentityFederationConfig) error {
+	return nil
+}
+
 func validateGoogleSecureSourceManagerInstance_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

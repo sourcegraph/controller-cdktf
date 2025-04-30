@@ -68,6 +68,10 @@ func (j *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference) validateSetReservedInternalRangeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

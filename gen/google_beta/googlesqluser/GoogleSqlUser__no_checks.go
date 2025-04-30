@@ -132,6 +132,14 @@ func (j *jsiiProxy_GoogleSqlUser) validateSetPasswordParameters(val *string) err
 	return nil
 }
 
+func (j *jsiiProxy_GoogleSqlUser) validateSetPasswordWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleSqlUser) validateSetPasswordWoVersionParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSqlUser) validateSetProjectParameters(val *string) error {
 	return nil
 }

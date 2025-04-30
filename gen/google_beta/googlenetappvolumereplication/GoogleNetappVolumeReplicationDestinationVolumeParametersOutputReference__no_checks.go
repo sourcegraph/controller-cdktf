@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleNetappVolumeReplicationDestinationVolumeParametersOutpu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetappVolumeReplicationDestinationVolumeParametersOutputReference) validatePutTieringPolicyParameters(value *GoogleNetappVolumeReplicationDestinationVolumeParametersTieringPolicy) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetappVolumeReplicationDestinationVolumeParametersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

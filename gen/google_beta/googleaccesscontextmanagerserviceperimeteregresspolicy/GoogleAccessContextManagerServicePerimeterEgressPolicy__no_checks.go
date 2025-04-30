@@ -124,6 +124,10 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterEgressPolicy) valid
 	return nil
 }
 
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterEgressPolicy) validateSetTitleParameters(val *string) error {
+	return nil
+}
+
 func validateNewGoogleAccessContextManagerServicePerimeterEgressPolicyParameters(scope constructs.Construct, id *string, config *GoogleAccessContextManagerServicePerimeterEgressPolicyConfig) error {
 	return nil
 }

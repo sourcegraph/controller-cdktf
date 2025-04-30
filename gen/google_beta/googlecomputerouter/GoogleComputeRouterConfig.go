@@ -28,38 +28,42 @@ type GoogleComputeRouterConfig struct {
 	// following characters must be a dash, lowercase letter, or digit,
 	// except the last character, which cannot be a dash.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_router#name GoogleComputeRouter#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_router#name GoogleComputeRouter#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// A reference to the network to which this router belongs.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_router#network GoogleComputeRouter#network}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_router#network GoogleComputeRouter#network}
 	Network *string `field:"required" json:"network" yaml:"network"`
 	// bgp block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_router#bgp GoogleComputeRouter#bgp}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_router#bgp GoogleComputeRouter#bgp}
 	Bgp *GoogleComputeRouterBgp `field:"optional" json:"bgp" yaml:"bgp"`
 	// An optional description of this resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_router#description GoogleComputeRouter#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_router#description GoogleComputeRouter#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// Indicates if a router is dedicated for use with encrypted VLAN attachments (interconnectAttachments).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_router#encrypted_interconnect_router GoogleComputeRouter#encrypted_interconnect_router}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_router#encrypted_interconnect_router GoogleComputeRouter#encrypted_interconnect_router}
 	EncryptedInterconnectRouter interface{} `field:"optional" json:"encryptedInterconnectRouter" yaml:"encryptedInterconnectRouter"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_router#id GoogleComputeRouter#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_router#id GoogleComputeRouter#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_router#project GoogleComputeRouter#project}.
+	// md5_authentication_keys block.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_router#md5_authentication_keys GoogleComputeRouter#md5_authentication_keys}
+	Md5AuthenticationKeys *GoogleComputeRouterMd5AuthenticationKeys `field:"optional" json:"md5AuthenticationKeys" yaml:"md5AuthenticationKeys"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_router#project GoogleComputeRouter#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// Region where the router resides.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_router#region GoogleComputeRouter#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_router#region GoogleComputeRouter#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_router#timeouts GoogleComputeRouter#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_router#timeouts GoogleComputeRouter#timeouts}
 	Timeouts *GoogleComputeRouterTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

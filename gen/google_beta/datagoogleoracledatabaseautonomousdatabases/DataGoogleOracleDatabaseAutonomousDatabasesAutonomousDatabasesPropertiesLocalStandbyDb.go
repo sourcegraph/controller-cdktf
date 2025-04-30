@@ -1,0 +1,6 @@
+package datagoogleoracledatabaseautonomousdatabases
+
+
+type DataGoogleOracleDatabaseAutonomousDatabasesAutonomousDatabasesPropertiesLocalStandbyDb struct {
+}
+

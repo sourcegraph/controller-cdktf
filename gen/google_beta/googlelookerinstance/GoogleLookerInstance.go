@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlelookerinstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_looker_instance google_looker_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_looker_instance google_looker_instance}.
 type GoogleLookerInstance interface {
 	cdktf.TerraformResource
 	AdminSettings() GoogleLookerInstanceAdminSettingsOutputReference
@@ -32,6 +32,9 @@ type GoogleLookerInstance interface {
 	CreateTime() *string
 	CustomDomain() GoogleLookerInstanceCustomDomainOutputReference
 	CustomDomainInput() *GoogleLookerInstanceCustomDomain
+	DeletionPolicy() *string
+	SetDeletionPolicy(val *string)
+	DeletionPolicyInput() *string
 	DenyMaintenancePeriod() GoogleLookerInstanceDenyMaintenancePeriodOutputReference
 	DenyMaintenancePeriodInput() *GoogleLookerInstanceDenyMaintenancePeriod
 	// Experimental.
@@ -41,6 +44,9 @@ type GoogleLookerInstance interface {
 	EgressPublicIp() *string
 	EncryptionConfig() GoogleLookerInstanceEncryptionConfigOutputReference
 	EncryptionConfigInput() *GoogleLookerInstanceEncryptionConfig
+	FipsEnabled() interface{}
+	SetFipsEnabled(val interface{})
+	FipsEnabledInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -86,6 +92,11 @@ type GoogleLookerInstance interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	PscConfig() GoogleLookerInstancePscConfigOutputReference
+	PscConfigInput() *GoogleLookerInstancePscConfig
+	PscEnabled() interface{}
+	SetPscEnabled(val interface{})
+	PscEnabledInput() interface{}
 	PublicIpEnabled() interface{}
 	SetPublicIpEnabled(val interface{})
 	PublicIpEnabledInput() interface{}
@@ -157,22 +168,26 @@ type GoogleLookerInstance interface {
 	PutEncryptionConfig(value *GoogleLookerInstanceEncryptionConfig)
 	PutMaintenanceWindow(value *GoogleLookerInstanceMaintenanceWindow)
 	PutOauthConfig(value *GoogleLookerInstanceOauthConfig)
+	PutPscConfig(value *GoogleLookerInstancePscConfig)
 	PutTimeouts(value *GoogleLookerInstanceTimeouts)
 	PutUserMetadata(value *GoogleLookerInstanceUserMetadata)
 	ResetAdminSettings()
 	ResetConsumerNetwork()
 	ResetCustomDomain()
+	ResetDeletionPolicy()
 	ResetDenyMaintenancePeriod()
 	ResetEncryptionConfig()
+	ResetFipsEnabled()
 	ResetId()
 	ResetMaintenanceWindow()
-	ResetOauthConfig()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPlatformEdition()
 	ResetPrivateIpEnabled()
 	ResetProject()
+	ResetPscConfig()
+	ResetPscEnabled()
 	ResetPublicIpEnabled()
 	ResetRegion()
 	ResetReservedRange()
@@ -306,6 +321,26 @@ func (j *jsiiProxy_GoogleLookerInstance) CustomDomainInput() *GoogleLookerInstan
 	return returns
 }
 
+func (j *jsiiProxy_GoogleLookerInstance) DeletionPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deletionPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleLookerInstance) DeletionPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deletionPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleLookerInstance) DenyMaintenancePeriod() GoogleLookerInstanceDenyMaintenancePeriodOutputReference {
 	var returns GoogleLookerInstanceDenyMaintenancePeriodOutputReference
 	_jsii_.Get(
@@ -361,6 +396,26 @@ func (j *jsiiProxy_GoogleLookerInstance) EncryptionConfigInput() *GoogleLookerIn
 	_jsii_.Get(
 		j,
 		"encryptionConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleLookerInstance) FipsEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"fipsEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleLookerInstance) FipsEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"fipsEnabledInput",
 		&returns,
 	)
 	return returns
@@ -616,6 +671,46 @@ func (j *jsiiProxy_GoogleLookerInstance) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleLookerInstance) PscConfig() GoogleLookerInstancePscConfigOutputReference {
+	var returns GoogleLookerInstancePscConfigOutputReference
+	_jsii_.Get(
+		j,
+		"pscConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleLookerInstance) PscConfigInput() *GoogleLookerInstancePscConfig {
+	var returns *GoogleLookerInstancePscConfig
+	_jsii_.Get(
+		j,
+		"pscConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleLookerInstance) PscEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"pscEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleLookerInstance) PscEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"pscEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleLookerInstance) PublicIpEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -767,7 +862,7 @@ func (j *jsiiProxy_GoogleLookerInstance) UserMetadataInput() *GoogleLookerInstan
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_looker_instance google_looker_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_looker_instance google_looker_instance} Resource.
 func NewGoogleLookerInstance(scope constructs.Construct, id *string, config *GoogleLookerInstanceConfig) GoogleLookerInstance {
 	_init_.Initialize()
 
@@ -785,7 +880,7 @@ func NewGoogleLookerInstance(scope constructs.Construct, id *string, config *Goo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_looker_instance google_looker_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_looker_instance google_looker_instance} Resource.
 func NewGoogleLookerInstance_Override(g GoogleLookerInstance, scope constructs.Construct, id *string, config *GoogleLookerInstanceConfig) {
 	_init_.Initialize()
 
@@ -829,10 +924,32 @@ func (j *jsiiProxy_GoogleLookerInstance)SetCount(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_GoogleLookerInstance)SetDeletionPolicy(val *string) {
+	if err := j.validateSetDeletionPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deletionPolicy",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleLookerInstance)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleLookerInstance)SetFipsEnabled(val interface{}) {
+	if err := j.validateSetFipsEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"fipsEnabled",
 		val,
 	)
 }
@@ -926,6 +1043,17 @@ func (j *jsiiProxy_GoogleLookerInstance)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleLookerInstance)SetPscEnabled(val interface{}) {
+	if err := j.validateSetPscEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pscEnabled",
 		val,
 	)
 }
@@ -1382,6 +1510,17 @@ func (g *jsiiProxy_GoogleLookerInstance) PutOauthConfig(value *GoogleLookerInsta
 	)
 }
 
+func (g *jsiiProxy_GoogleLookerInstance) PutPscConfig(value *GoogleLookerInstancePscConfig) {
+	if err := g.validatePutPscConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putPscConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleLookerInstance) PutTimeouts(value *GoogleLookerInstanceTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1428,6 +1567,14 @@ func (g *jsiiProxy_GoogleLookerInstance) ResetCustomDomain() {
 	)
 }
 
+func (g *jsiiProxy_GoogleLookerInstance) ResetDeletionPolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDeletionPolicy",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleLookerInstance) ResetDenyMaintenancePeriod() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1444,6 +1591,14 @@ func (g *jsiiProxy_GoogleLookerInstance) ResetEncryptionConfig() {
 	)
 }
 
+func (g *jsiiProxy_GoogleLookerInstance) ResetFipsEnabled() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetFipsEnabled",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleLookerInstance) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1456,14 +1611,6 @@ func (g *jsiiProxy_GoogleLookerInstance) ResetMaintenanceWindow() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetMaintenanceWindow",
-		nil, // no parameters
-	)
-}
-
-func (g *jsiiProxy_GoogleLookerInstance) ResetOauthConfig() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetOauthConfig",
 		nil, // no parameters
 	)
 }
@@ -1496,6 +1643,22 @@ func (g *jsiiProxy_GoogleLookerInstance) ResetProject() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleLookerInstance) ResetPscConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPscConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleLookerInstance) ResetPscEnabled() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPscEnabled",
 		nil, // no parameters
 	)
 }

@@ -108,10 +108,6 @@ func (j *jsiiProxy_GoogleIntegrationsClient) validateSetCreateSampleIntegrations
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIntegrationsClient) validateSetCreateSampleWorkflowsParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_GoogleIntegrationsClient) validateSetIdParameters(val *string) error {
 	return nil
 }
@@ -129,10 +125,6 @@ func (j *jsiiProxy_GoogleIntegrationsClient) validateSetProjectParameters(val *s
 }
 
 func (j *jsiiProxy_GoogleIntegrationsClient) validateSetProvisionersParameters(val *[]interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_GoogleIntegrationsClient) validateSetProvisionGmekParameters(val interface{}) error {
 	return nil
 }
 

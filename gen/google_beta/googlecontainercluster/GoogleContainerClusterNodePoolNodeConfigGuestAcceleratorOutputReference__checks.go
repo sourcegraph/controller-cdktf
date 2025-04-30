@@ -90,63 +90,23 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigGuestAcceleratorOutpu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigGuestAcceleratorOutputReference) validatePutGpuDriverInstallationConfigParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigGuestAcceleratorOutputReference) validatePutGpuDriverInstallationConfigParameters(value *GoogleContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*GoogleContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfig:
-		value := value.(*[]*GoogleContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfig)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*GoogleContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfig:
-		value_ := value.([]*GoogleContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfig)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*GoogleContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfig; received %#v (a %T)", value, value)
-		}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigGuestAcceleratorOutputReference) validatePutGpuSharingConfigParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigGuestAcceleratorOutputReference) validatePutGpuSharingConfigParameters(value *GoogleContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*GoogleContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingConfig:
-		value := value.(*[]*GoogleContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingConfig)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*GoogleContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingConfig:
-		value_ := value.([]*GoogleContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingConfig)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*GoogleContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingConfig; received %#v (a %T)", value, value)
-		}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil

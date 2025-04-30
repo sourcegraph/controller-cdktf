@@ -72,6 +72,14 @@ func (g *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) validateOverr
 	return nil
 }
 
+func (g *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) validatePutScopedAccessSettingsParameters(value interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) validatePutSessionSettingsParameters(value *GoogleAccessContextManagerGcpUserAccessBindingSessionSettings) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) validatePutTimeoutsParameters(value *GoogleAccessContextManagerGcpUserAccessBindingTimeouts) error {
 	return nil
 }

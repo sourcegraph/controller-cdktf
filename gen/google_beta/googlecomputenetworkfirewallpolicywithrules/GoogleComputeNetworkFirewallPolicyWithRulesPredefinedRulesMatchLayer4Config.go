@@ -1,0 +1,6 @@
+package googlecomputenetworkfirewallpolicywithrules
+
+
+type GoogleComputeNetworkFirewallPolicyWithRulesPredefinedRulesMatchLayer4Config struct {
+}
+

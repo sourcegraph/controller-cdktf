@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleedgenetworksubnet/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_edgenetwork_subnet google_edgenetwork_subnet}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_edgenetwork_subnet google_edgenetwork_subnet}.
 type GoogleEdgenetworkSubnet interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -32,6 +32,7 @@ type GoogleEdgenetworkSubnet interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -84,6 +85,7 @@ type GoogleEdgenetworkSubnet interface {
 	SubnetIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -245,6 +247,16 @@ func (j *jsiiProxy_GoogleEdgenetworkSubnet) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleEdgenetworkSubnet) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -520,6 +532,16 @@ func (j *jsiiProxy_GoogleEdgenetworkSubnet) TerraformGeneratorMetadata() *cdktf.
 	return returns
 }
 
+func (j *jsiiProxy_GoogleEdgenetworkSubnet) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleEdgenetworkSubnet) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -611,7 +633,7 @@ func (j *jsiiProxy_GoogleEdgenetworkSubnet) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_edgenetwork_subnet google_edgenetwork_subnet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_edgenetwork_subnet google_edgenetwork_subnet} Resource.
 func NewGoogleEdgenetworkSubnet(scope constructs.Construct, id *string, config *GoogleEdgenetworkSubnetConfig) GoogleEdgenetworkSubnet {
 	_init_.Initialize()
 
@@ -629,7 +651,7 @@ func NewGoogleEdgenetworkSubnet(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_edgenetwork_subnet google_edgenetwork_subnet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_edgenetwork_subnet google_edgenetwork_subnet} Resource.
 func NewGoogleEdgenetworkSubnet_Override(g GoogleEdgenetworkSubnet, scope constructs.Construct, id *string, config *GoogleEdgenetworkSubnetConfig) {
 	_init_.Initialize()
 

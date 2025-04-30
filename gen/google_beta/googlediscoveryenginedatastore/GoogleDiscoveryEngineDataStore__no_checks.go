@@ -72,6 +72,10 @@ func (g *jsiiProxy_GoogleDiscoveryEngineDataStore) validateOverrideLogicalIdPara
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDiscoveryEngineDataStore) validatePutAdvancedSiteSearchConfigParameters(value *GoogleDiscoveryEngineDataStoreAdvancedSiteSearchConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDiscoveryEngineDataStore) validatePutDocumentProcessingConfigParameters(value *GoogleDiscoveryEngineDataStoreDocumentProcessingConfig) error {
 	return nil
 }
@@ -141,6 +145,10 @@ func (j *jsiiProxy_GoogleDiscoveryEngineDataStore) validateSetProjectParameters(
 }
 
 func (j *jsiiProxy_GoogleDiscoveryEngineDataStore) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDiscoveryEngineDataStore) validateSetSkipDefaultSchemaCreationParameters(val interface{}) error {
 	return nil
 }
 

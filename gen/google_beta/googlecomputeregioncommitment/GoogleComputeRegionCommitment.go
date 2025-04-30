@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeregioncommitment/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_region_commitment google_compute_region_commitment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_region_commitment google_compute_region_commitment}.
 type GoogleComputeRegionCommitment interface {
 	cdktf.TerraformResource
 	AutoRenew() interface{}
@@ -40,6 +40,9 @@ type GoogleComputeRegionCommitment interface {
 	SetDescription(val *string)
 	DescriptionInput() *string
 	EndTimestamp() *string
+	ExistingReservations() *string
+	SetExistingReservations(val *string)
+	ExistingReservationsInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -147,6 +150,7 @@ type GoogleComputeRegionCommitment interface {
 	ResetAutoRenew()
 	ResetCategory()
 	ResetDescription()
+	ResetExistingReservations()
 	ResetId()
 	ResetLicenseResource()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -310,6 +314,26 @@ func (j *jsiiProxy_GoogleComputeRegionCommitment) EndTimestamp() *string {
 	_jsii_.Get(
 		j,
 		"endTimestamp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionCommitment) ExistingReservations() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"existingReservations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionCommitment) ExistingReservationsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"existingReservationsInput",
 		&returns,
 	)
 	return returns
@@ -646,7 +670,7 @@ func (j *jsiiProxy_GoogleComputeRegionCommitment) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_region_commitment google_compute_region_commitment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_region_commitment google_compute_region_commitment} Resource.
 func NewGoogleComputeRegionCommitment(scope constructs.Construct, id *string, config *GoogleComputeRegionCommitmentConfig) GoogleComputeRegionCommitment {
 	_init_.Initialize()
 
@@ -664,7 +688,7 @@ func NewGoogleComputeRegionCommitment(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_region_commitment google_compute_region_commitment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_region_commitment google_compute_region_commitment} Resource.
 func NewGoogleComputeRegionCommitment_Override(g GoogleComputeRegionCommitment, scope constructs.Construct, id *string, config *GoogleComputeRegionCommitmentConfig) {
 	_init_.Initialize()
 
@@ -734,6 +758,17 @@ func (j *jsiiProxy_GoogleComputeRegionCommitment)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionCommitment)SetExistingReservations(val *string) {
+	if err := j.validateSetExistingReservationsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"existingReservations",
 		val,
 	)
 }
@@ -1248,6 +1283,14 @@ func (g *jsiiProxy_GoogleComputeRegionCommitment) ResetDescription() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionCommitment) ResetExistingReservations() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetExistingReservations",
 		nil, // no parameters
 	)
 }

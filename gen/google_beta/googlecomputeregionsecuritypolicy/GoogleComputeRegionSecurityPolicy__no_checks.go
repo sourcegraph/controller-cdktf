@@ -76,6 +76,10 @@ func (g *jsiiProxy_GoogleComputeRegionSecurityPolicy) validatePutDdosProtectionC
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeRegionSecurityPolicy) validatePutRulesParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRegionSecurityPolicy) validatePutTimeoutsParameters(value *GoogleComputeRegionSecurityPolicyTimeouts) error {
 	return nil
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleidentityplatformtenant/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_identity_platform_tenant google_identity_platform_tenant}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_identity_platform_tenant google_identity_platform_tenant}.
 type GoogleIdentityPlatformTenant interface {
 	cdktf.TerraformResource
 	AllowPasswordSignup() interface{}
@@ -17,6 +17,8 @@ type GoogleIdentityPlatformTenant interface {
 	AllowPasswordSignupInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	Client() GoogleIdentityPlatformTenantClientOutputReference
+	ClientInput() *GoogleIdentityPlatformTenantClient
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -122,8 +124,10 @@ type GoogleIdentityPlatformTenant interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutClient(value *GoogleIdentityPlatformTenantClient)
 	PutTimeouts(value *GoogleIdentityPlatformTenantTimeouts)
 	ResetAllowPasswordSignup()
+	ResetClient()
 	ResetDisableAuth()
 	ResetEnableEmailLinkSignin()
 	ResetId()
@@ -175,6 +179,26 @@ func (j *jsiiProxy_GoogleIdentityPlatformTenant) CdktfStack() cdktf.TerraformSta
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleIdentityPlatformTenant) Client() GoogleIdentityPlatformTenantClientOutputReference {
+	var returns GoogleIdentityPlatformTenantClientOutputReference
+	_jsii_.Get(
+		j,
+		"client",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleIdentityPlatformTenant) ClientInput() *GoogleIdentityPlatformTenantClient {
+	var returns *GoogleIdentityPlatformTenantClient
+	_jsii_.Get(
+		j,
+		"clientInput",
 		&returns,
 	)
 	return returns
@@ -461,7 +485,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformTenant) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_identity_platform_tenant google_identity_platform_tenant} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_identity_platform_tenant google_identity_platform_tenant} Resource.
 func NewGoogleIdentityPlatformTenant(scope constructs.Construct, id *string, config *GoogleIdentityPlatformTenantConfig) GoogleIdentityPlatformTenant {
 	_init_.Initialize()
 
@@ -479,7 +503,7 @@ func NewGoogleIdentityPlatformTenant(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_identity_platform_tenant google_identity_platform_tenant} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_identity_platform_tenant google_identity_platform_tenant} Resource.
 func NewGoogleIdentityPlatformTenant_Override(g GoogleIdentityPlatformTenant, scope constructs.Construct, id *string, config *GoogleIdentityPlatformTenantConfig) {
 	_init_.Initialize()
 
@@ -977,6 +1001,17 @@ func (g *jsiiProxy_GoogleIdentityPlatformTenant) OverrideLogicalId(newLogicalId 
 	)
 }
 
+func (g *jsiiProxy_GoogleIdentityPlatformTenant) PutClient(value *GoogleIdentityPlatformTenantClient) {
+	if err := g.validatePutClientParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putClient",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleIdentityPlatformTenant) PutTimeouts(value *GoogleIdentityPlatformTenantTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -992,6 +1027,14 @@ func (g *jsiiProxy_GoogleIdentityPlatformTenant) ResetAllowPasswordSignup() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetAllowPasswordSignup",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleIdentityPlatformTenant) ResetClient() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetClient",
 		nil, // no parameters
 	)
 }

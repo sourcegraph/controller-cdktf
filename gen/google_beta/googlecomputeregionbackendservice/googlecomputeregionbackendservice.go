@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeregionbackendservice/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_region_backend_service google_compute_region_backend_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_region_backend_service google_compute_region_backend_service}.
 type GoogleComputeRegionBackendService interface {
 	cdktf.TerraformResource
 	AffinityCookieTtlSec() *float64
@@ -41,6 +41,8 @@ type GoogleComputeRegionBackendService interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreationTimestamp() *string
+	CustomMetrics() GoogleComputeRegionBackendServiceCustomMetricsList
+	CustomMetricsInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -71,6 +73,9 @@ type GoogleComputeRegionBackendService interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IpAddressSelectionPolicy() *string
+	SetIpAddressSelectionPolicy(val *string)
+	IpAddressSelectionPolicyInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -122,6 +127,8 @@ type GoogleComputeRegionBackendService interface {
 	SessionAffinity() *string
 	SetSessionAffinity(val *string)
 	SessionAffinityInput() *string
+	StrongSessionAffinityCookie() GoogleComputeRegionBackendServiceStrongSessionAffinityCookieOutputReference
+	StrongSessionAffinityCookieInput() *GoogleComputeRegionBackendServiceStrongSessionAffinityCookie
 	Subsetting() GoogleComputeRegionBackendServiceSubsettingOutputReference
 	SubsettingInput() *GoogleComputeRegionBackendServiceSubsetting
 	// Experimental.
@@ -183,10 +190,12 @@ type GoogleComputeRegionBackendService interface {
 	PutCircuitBreakers(value *GoogleComputeRegionBackendServiceCircuitBreakers)
 	PutConnectionTrackingPolicy(value *GoogleComputeRegionBackendServiceConnectionTrackingPolicy)
 	PutConsistentHash(value *GoogleComputeRegionBackendServiceConsistentHash)
+	PutCustomMetrics(value interface{})
 	PutFailoverPolicy(value *GoogleComputeRegionBackendServiceFailoverPolicy)
 	PutIap(value *GoogleComputeRegionBackendServiceIap)
 	PutLogConfig(value *GoogleComputeRegionBackendServiceLogConfig)
 	PutOutlierDetection(value *GoogleComputeRegionBackendServiceOutlierDetection)
+	PutStrongSessionAffinityCookie(value *GoogleComputeRegionBackendServiceStrongSessionAffinityCookie)
 	PutSubsetting(value *GoogleComputeRegionBackendServiceSubsetting)
 	PutTimeouts(value *GoogleComputeRegionBackendServiceTimeouts)
 	ResetAffinityCookieTtlSec()
@@ -196,12 +205,14 @@ type GoogleComputeRegionBackendService interface {
 	ResetConnectionDrainingTimeoutSec()
 	ResetConnectionTrackingPolicy()
 	ResetConsistentHash()
+	ResetCustomMetrics()
 	ResetDescription()
 	ResetEnableCdn()
 	ResetFailoverPolicy()
 	ResetHealthChecks()
 	ResetIap()
 	ResetId()
+	ResetIpAddressSelectionPolicy()
 	ResetLoadBalancingScheme()
 	ResetLocalityLbPolicy()
 	ResetLogConfig()
@@ -216,6 +227,7 @@ type GoogleComputeRegionBackendService interface {
 	ResetRegion()
 	ResetSecurityPolicy()
 	ResetSessionAffinity()
+	ResetStrongSessionAffinityCookie()
 	ResetSubsetting()
 	ResetTimeouts()
 	ResetTimeoutSec()
@@ -427,6 +439,26 @@ func (j *jsiiProxy_GoogleComputeRegionBackendService) CreationTimestamp() *strin
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeRegionBackendService) CustomMetrics() GoogleComputeRegionBackendServiceCustomMetricsList {
+	var returns GoogleComputeRegionBackendServiceCustomMetricsList
+	_jsii_.Get(
+		j,
+		"customMetrics",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionBackendService) CustomMetricsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"customMetricsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeRegionBackendService) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -602,6 +634,26 @@ func (j *jsiiProxy_GoogleComputeRegionBackendService) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionBackendService) IpAddressSelectionPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipAddressSelectionPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionBackendService) IpAddressSelectionPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipAddressSelectionPolicyInput",
 		&returns,
 	)
 	return returns
@@ -907,6 +959,26 @@ func (j *jsiiProxy_GoogleComputeRegionBackendService) SessionAffinityInput() *st
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeRegionBackendService) StrongSessionAffinityCookie() GoogleComputeRegionBackendServiceStrongSessionAffinityCookieOutputReference {
+	var returns GoogleComputeRegionBackendServiceStrongSessionAffinityCookieOutputReference
+	_jsii_.Get(
+		j,
+		"strongSessionAffinityCookie",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionBackendService) StrongSessionAffinityCookieInput() *GoogleComputeRegionBackendServiceStrongSessionAffinityCookie {
+	var returns *GoogleComputeRegionBackendServiceStrongSessionAffinityCookie
+	_jsii_.Get(
+		j,
+		"strongSessionAffinityCookieInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeRegionBackendService) Subsetting() GoogleComputeRegionBackendServiceSubsettingOutputReference {
 	var returns GoogleComputeRegionBackendServiceSubsettingOutputReference
 	_jsii_.Get(
@@ -998,7 +1070,7 @@ func (j *jsiiProxy_GoogleComputeRegionBackendService) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_region_backend_service google_compute_region_backend_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_region_backend_service google_compute_region_backend_service} Resource.
 func NewGoogleComputeRegionBackendService(scope constructs.Construct, id *string, config *GoogleComputeRegionBackendServiceConfig) GoogleComputeRegionBackendService {
 	_init_.Initialize()
 
@@ -1016,7 +1088,7 @@ func NewGoogleComputeRegionBackendService(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_region_backend_service google_compute_region_backend_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_region_backend_service google_compute_region_backend_service} Resource.
 func NewGoogleComputeRegionBackendService_Override(g GoogleComputeRegionBackendService, scope constructs.Construct, id *string, config *GoogleComputeRegionBackendServiceConfig) {
 	_init_.Initialize()
 
@@ -1127,6 +1199,17 @@ func (j *jsiiProxy_GoogleComputeRegionBackendService)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionBackendService)SetIpAddressSelectionPolicy(val *string) {
+	if err := j.validateSetIpAddressSelectionPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipAddressSelectionPolicy",
 		val,
 	)
 }
@@ -1690,6 +1773,17 @@ func (g *jsiiProxy_GoogleComputeRegionBackendService) PutConsistentHash(value *G
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeRegionBackendService) PutCustomMetrics(value interface{}) {
+	if err := g.validatePutCustomMetricsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putCustomMetrics",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeRegionBackendService) PutFailoverPolicy(value *GoogleComputeRegionBackendServiceFailoverPolicy) {
 	if err := g.validatePutFailoverPolicyParameters(value); err != nil {
 		panic(err)
@@ -1730,6 +1824,17 @@ func (g *jsiiProxy_GoogleComputeRegionBackendService) PutOutlierDetection(value 
 	_jsii_.InvokeVoid(
 		g,
 		"putOutlierDetection",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionBackendService) PutStrongSessionAffinityCookie(value *GoogleComputeRegionBackendServiceStrongSessionAffinityCookie) {
+	if err := g.validatePutStrongSessionAffinityCookieParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putStrongSessionAffinityCookie",
 		[]interface{}{value},
 	)
 }
@@ -1812,6 +1917,14 @@ func (g *jsiiProxy_GoogleComputeRegionBackendService) ResetConsistentHash() {
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeRegionBackendService) ResetCustomMetrics() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCustomMetrics",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeRegionBackendService) ResetDescription() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1856,6 +1969,14 @@ func (g *jsiiProxy_GoogleComputeRegionBackendService) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionBackendService) ResetIpAddressSelectionPolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIpAddressSelectionPolicy",
 		nil, // no parameters
 	)
 }
@@ -1952,6 +2073,14 @@ func (g *jsiiProxy_GoogleComputeRegionBackendService) ResetSessionAffinity() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetSessionAffinity",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionBackendService) ResetStrongSessionAffinityCookie() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetStrongSessionAffinityCookie",
 		nil, // no parameters
 	)
 }

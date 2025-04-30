@@ -76,6 +76,10 @@ func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) validatePutLinkedInterconnect
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) validatePutLinkedProducerVpcNetworkParameters(value *GoogleNetworkConnectivitySpokeLinkedProducerVpcNetwork) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) validatePutLinkedRouterApplianceInstancesParameters(value *GoogleNetworkConnectivitySpokeLinkedRouterApplianceInstances) error {
 	return nil
 }
@@ -117,6 +121,10 @@ func (j *jsiiProxy_GoogleNetworkConnectivitySpoke) validateSetCountParameters(va
 }
 
 func (j *jsiiProxy_GoogleNetworkConnectivitySpoke) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleNetworkConnectivitySpoke) validateSetGroupParameters(val *string) error {
 	return nil
 }
 

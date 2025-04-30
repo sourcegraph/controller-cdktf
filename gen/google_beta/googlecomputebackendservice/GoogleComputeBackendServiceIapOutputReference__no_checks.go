@@ -56,6 +56,10 @@ func (j *jsiiProxy_GoogleComputeBackendServiceIapOutputReference) validateSetCom
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeBackendServiceIapOutputReference) validateSetEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeBackendServiceIapOutputReference) validateSetInternalValueParameters(val *GoogleComputeBackendServiceIap) error {
 	return nil
 }

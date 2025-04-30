@@ -140,6 +140,10 @@ func (j *jsiiProxy_GoogleComputeRouterNat) validateSetIdParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRouterNat) validateSetInitialNatIpsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRouterNat) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

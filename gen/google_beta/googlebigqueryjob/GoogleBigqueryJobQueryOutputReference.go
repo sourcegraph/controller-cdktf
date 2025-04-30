@@ -23,6 +23,9 @@ type GoogleBigqueryJobQueryOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	Continuous() interface{}
+	SetContinuous(val interface{})
+	ContinuousInput() interface{}
 	CreateDisposition() *string
 	SetCreateDisposition(val *string)
 	CreateDispositionInput() *string
@@ -113,6 +116,7 @@ type GoogleBigqueryJobQueryOutputReference interface {
 	PutScriptOptions(value *GoogleBigqueryJobQueryScriptOptions)
 	PutUserDefinedFunctionResources(value interface{})
 	ResetAllowLargeResults()
+	ResetContinuous()
 	ResetCreateDisposition()
 	ResetDefaultDataset()
 	ResetDestinationEncryptionConfiguration()
@@ -178,6 +182,26 @@ func (j *jsiiProxy_GoogleBigqueryJobQueryOutputReference) ComplexObjectIsFromSet
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryJobQueryOutputReference) Continuous() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"continuous",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryJobQueryOutputReference) ContinuousInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"continuousInput",
 		&returns,
 	)
 	return returns
@@ -614,6 +638,17 @@ func (j *jsiiProxy_GoogleBigqueryJobQueryOutputReference)SetComplexObjectIsFromS
 	)
 }
 
+func (j *jsiiProxy_GoogleBigqueryJobQueryOutputReference)SetContinuous(val interface{}) {
+	if err := j.validateSetContinuousParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"continuous",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleBigqueryJobQueryOutputReference)SetCreateDisposition(val *string) {
 	if err := j.validateSetCreateDispositionParameters(val); err != nil {
 		panic(err)
@@ -1013,6 +1048,14 @@ func (g *jsiiProxy_GoogleBigqueryJobQueryOutputReference) ResetAllowLargeResults
 	_jsii_.InvokeVoid(
 		g,
 		"resetAllowLargeResults",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBigqueryJobQueryOutputReference) ResetContinuous() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetContinuous",
 		nil, // no parameters
 	)
 }

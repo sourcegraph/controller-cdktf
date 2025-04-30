@@ -72,6 +72,14 @@ func (g *jsiiProxy_GoogleNetworkSecuritySecurityProfile) validateOverrideLogical
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetworkSecuritySecurityProfile) validatePutCustomInterceptProfileParameters(value *GoogleNetworkSecuritySecurityProfileCustomInterceptProfile) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetworkSecuritySecurityProfile) validatePutCustomMirroringProfileParameters(value *GoogleNetworkSecuritySecurityProfileCustomMirroringProfile) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkSecuritySecurityProfile) validatePutThreatPreventionProfileParameters(value *GoogleNetworkSecuritySecurityProfileThreatPreventionProfile) error {
 	return nil
 }

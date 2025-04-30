@@ -116,6 +116,10 @@ func (j *jsiiProxy_GoogleComputeSubnetwork) validateSetDescriptionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeSubnetwork) validateSetEnableFlowLogsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeSubnetwork) validateSetExternalIpv6PrefixParameters(val *string) error {
 	return nil
 }
@@ -125,6 +129,10 @@ func (j *jsiiProxy_GoogleComputeSubnetwork) validateSetIdParameters(val *string)
 }
 
 func (j *jsiiProxy_GoogleComputeSubnetwork) validateSetIpCidrRangeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeSubnetwork) validateSetIpCollectionParameters(val *string) error {
 	return nil
 }
 
@@ -168,7 +176,15 @@ func (j *jsiiProxy_GoogleComputeSubnetwork) validateSetRegionParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeSubnetwork) validateSetReservedInternalRangeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeSubnetwork) validateSetRoleParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeSubnetwork) validateSetSendSecondaryIpRangeIfEmptyParameters(val interface{}) error {
 	return nil
 }
 

@@ -1,0 +1,6 @@
+package googlenetworksecurityinterceptendpointgroup
+
+
+type GoogleNetworkSecurityInterceptEndpointGroupAssociations struct {
+}
+

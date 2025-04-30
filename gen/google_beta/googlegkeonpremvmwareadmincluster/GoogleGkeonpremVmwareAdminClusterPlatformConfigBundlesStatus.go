@@ -1,0 +1,6 @@
+package googlegkeonpremvmwareadmincluster
+
+
+type GoogleGkeonpremVmwareAdminClusterPlatformConfigBundlesStatus struct {
+}
+

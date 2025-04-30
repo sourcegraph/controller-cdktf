@@ -108,7 +108,15 @@ func (j *jsiiProxy_GoogleWorkflowsWorkflow) validateSetCryptoKeyNameParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_GoogleWorkflowsWorkflow) validateSetDeletionProtectionParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleWorkflowsWorkflow) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleWorkflowsWorkflow) validateSetExecutionHistoryLevelParameters(val *string) error {
 	return nil
 }
 
@@ -149,6 +157,10 @@ func (j *jsiiProxy_GoogleWorkflowsWorkflow) validateSetServiceAccountParameters(
 }
 
 func (j *jsiiProxy_GoogleWorkflowsWorkflow) validateSetSourceContentsParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleWorkflowsWorkflow) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }
 

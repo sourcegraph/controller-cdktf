@@ -32,6 +32,8 @@ type GoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference in
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	PscAutoConnections() GoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsList
+	PscAutoConnectionsInput() interface{}
 	PscEnabled() interface{}
 	SetPscEnabled(val interface{})
 	PscEnabledInput() interface{}
@@ -67,7 +69,9 @@ type GoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference in
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutPscAutoConnections(value interface{})
 	ResetAllowedConsumerProjects()
+	ResetPscAutoConnections()
 	ResetPscEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -149,6 +153,26 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigOutp
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference) PscAutoConnections() GoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsList {
+	var returns GoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsList
+	_jsii_.Get(
+		j,
+		"pscAutoConnections",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference) PscAutoConnectionsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"pscAutoConnectionsInput",
 		&returns,
 	)
 	return returns
@@ -485,10 +509,29 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigOutp
 	return returns
 }
 
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference) PutPscAutoConnections(value interface{}) {
+	if err := g.validatePutPscAutoConnectionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putPscAutoConnections",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference) ResetAllowedConsumerProjects() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetAllowedConsumerProjects",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference) ResetPscAutoConnections() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPscAutoConnections",
 		nil, // no parameters
 	)
 }

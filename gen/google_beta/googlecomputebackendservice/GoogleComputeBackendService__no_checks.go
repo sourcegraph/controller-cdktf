@@ -88,6 +88,10 @@ func (g *jsiiProxy_GoogleComputeBackendService) validatePutConsistentHashParamet
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeBackendService) validatePutCustomMetricsParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeBackendService) validatePutIapParameters(value *GoogleComputeBackendServiceIap) error {
 	return nil
 }
@@ -100,6 +104,10 @@ func (g *jsiiProxy_GoogleComputeBackendService) validatePutLogConfigParameters(v
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeBackendService) validatePutMaxStreamDurationParameters(value *GoogleComputeBackendServiceMaxStreamDuration) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeBackendService) validatePutOutlierDetectionParameters(value *GoogleComputeBackendServiceOutlierDetection) error {
 	return nil
 }
@@ -108,7 +116,15 @@ func (g *jsiiProxy_GoogleComputeBackendService) validatePutSecuritySettingsParam
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeBackendService) validatePutStrongSessionAffinityCookieParameters(value *GoogleComputeBackendServiceStrongSessionAffinityCookie) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeBackendService) validatePutTimeoutsParameters(value *GoogleComputeBackendServiceTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeBackendService) validatePutTlsSettingsParameters(value *GoogleComputeBackendServiceTlsSettings) error {
 	return nil
 }
 
@@ -173,6 +189,10 @@ func (j *jsiiProxy_GoogleComputeBackendService) validateSetHealthChecksParameter
 }
 
 func (j *jsiiProxy_GoogleComputeBackendService) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeBackendService) validateSetIpAddressSelectionPolicyParameters(val *string) error {
 	return nil
 }
 

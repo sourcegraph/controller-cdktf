@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagoogledataprocmetastoreservice/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_dataproc_metastore_service google_dataproc_metastore_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_dataproc_metastore_service google_dataproc_metastore_service}.
 type DataGoogleDataprocMetastoreService interface {
 	cdktf.TerraformDataSource
 	ArtifactGcsUri() *string
@@ -21,7 +21,9 @@ type DataGoogleDataprocMetastoreService interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreateTime() *string
 	DatabaseType() *string
+	DeletionProtection() cdktf.IResolvable
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -74,6 +76,7 @@ type DataGoogleDataprocMetastoreService interface {
 	ServiceIdInput() *string
 	State() *string
 	StateMessage() *string
+	Tags() cdktf.StringMap
 	TelemetryConfig() DataGoogleDataprocMetastoreServiceTelemetryConfigList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -84,6 +87,7 @@ type DataGoogleDataprocMetastoreService interface {
 	TerraformResourceType() *string
 	Tier() *string
 	Uid() *string
+	UpdateTime() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -173,11 +177,31 @@ func (j *jsiiProxy_DataGoogleDataprocMetastoreService) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleDataprocMetastoreService) CreateTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createTime",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleDataprocMetastoreService) DatabaseType() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"databaseType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleDataprocMetastoreService) DeletionProtection() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"deletionProtection",
 		&returns,
 	)
 	return returns
@@ -503,6 +527,16 @@ func (j *jsiiProxy_DataGoogleDataprocMetastoreService) StateMessage() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleDataprocMetastoreService) Tags() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleDataprocMetastoreService) TelemetryConfig() DataGoogleDataprocMetastoreServiceTelemetryConfigList {
 	var returns DataGoogleDataprocMetastoreServiceTelemetryConfigList
 	_jsii_.Get(
@@ -573,8 +607,18 @@ func (j *jsiiProxy_DataGoogleDataprocMetastoreService) Uid() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleDataprocMetastoreService) UpdateTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updateTime",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_dataproc_metastore_service google_dataproc_metastore_service} Data Source.
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_dataproc_metastore_service google_dataproc_metastore_service} Data Source.
 func NewDataGoogleDataprocMetastoreService(scope constructs.Construct, id *string, config *DataGoogleDataprocMetastoreServiceConfig) DataGoogleDataprocMetastoreService {
 	_init_.Initialize()
 
@@ -592,7 +636,7 @@ func NewDataGoogleDataprocMetastoreService(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_dataproc_metastore_service google_dataproc_metastore_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_dataproc_metastore_service google_dataproc_metastore_service} Data Source.
 func NewDataGoogleDataprocMetastoreService_Override(d DataGoogleDataprocMetastoreService, scope constructs.Construct, id *string, config *DataGoogleDataprocMetastoreServiceConfig) {
 	_init_.Initialize()
 

@@ -47,6 +47,12 @@ type GoogleSqlDatabaseInstanceSettingsOutputReference interface {
 	DatabaseFlagsInput() interface{}
 	DataCacheConfig() GoogleSqlDatabaseInstanceSettingsDataCacheConfigOutputReference
 	DataCacheConfigInput() *GoogleSqlDatabaseInstanceSettingsDataCacheConfig
+	DataDiskProvisionedIops() *float64
+	SetDataDiskProvisionedIops(val *float64)
+	DataDiskProvisionedIopsInput() *float64
+	DataDiskProvisionedThroughput() *float64
+	SetDataDiskProvisionedThroughput(val *float64)
+	DataDiskProvisionedThroughputInput() *float64
 	DeletionProtectionEnabled() interface{}
 	SetDeletionProtectionEnabled(val interface{})
 	DeletionProtectionEnabledInput() interface{}
@@ -67,6 +73,9 @@ type GoogleSqlDatabaseInstanceSettingsOutputReference interface {
 	Edition() *string
 	SetEdition(val *string)
 	EditionInput() *string
+	EnableDataplexIntegration() interface{}
+	SetEnableDataplexIntegration(val interface{})
+	EnableDataplexIntegrationInput() interface{}
 	EnableGoogleMlIntegration() interface{}
 	SetEnableGoogleMlIntegration(val interface{})
 	EnableGoogleMlIntegrationInput() interface{}
@@ -87,6 +96,9 @@ type GoogleSqlDatabaseInstanceSettingsOutputReference interface {
 	PricingPlan() *string
 	SetPricingPlan(val *string)
 	PricingPlanInput() *string
+	RetainBackupsOnDelete() interface{}
+	SetRetainBackupsOnDelete(val interface{})
+	RetainBackupsOnDeleteInput() interface{}
 	SqlServerAuditConfig() GoogleSqlDatabaseInstanceSettingsSqlServerAuditConfigOutputReference
 	SqlServerAuditConfigInput() *GoogleSqlDatabaseInstanceSettingsSqlServerAuditConfig
 	// Experimental.
@@ -152,6 +164,8 @@ type GoogleSqlDatabaseInstanceSettingsOutputReference interface {
 	ResetConnectorEnforcement()
 	ResetDatabaseFlags()
 	ResetDataCacheConfig()
+	ResetDataDiskProvisionedIops()
+	ResetDataDiskProvisionedThroughput()
 	ResetDeletionProtectionEnabled()
 	ResetDenyMaintenancePeriod()
 	ResetDiskAutoresize()
@@ -159,6 +173,7 @@ type GoogleSqlDatabaseInstanceSettingsOutputReference interface {
 	ResetDiskSize()
 	ResetDiskType()
 	ResetEdition()
+	ResetEnableDataplexIntegration()
 	ResetEnableGoogleMlIntegration()
 	ResetInsightsConfig()
 	ResetIpConfiguration()
@@ -166,6 +181,7 @@ type GoogleSqlDatabaseInstanceSettingsOutputReference interface {
 	ResetMaintenanceWindow()
 	ResetPasswordValidationPolicy()
 	ResetPricingPlan()
+	ResetRetainBackupsOnDelete()
 	ResetSqlServerAuditConfig()
 	ResetTimeZone()
 	ResetUserLabels()
@@ -394,6 +410,46 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) DataCacheCo
 	return returns
 }
 
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) DataDiskProvisionedIops() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"dataDiskProvisionedIops",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) DataDiskProvisionedIopsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"dataDiskProvisionedIopsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) DataDiskProvisionedThroughput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"dataDiskProvisionedThroughput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) DataDiskProvisionedThroughputInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"dataDiskProvisionedThroughputInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) DeletionProtectionEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -529,6 +585,26 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) EditionInpu
 	_jsii_.Get(
 		j,
 		"editionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) EnableDataplexIntegration() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableDataplexIntegration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) EnableDataplexIntegrationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableDataplexIntegrationInput",
 		&returns,
 	)
 	return returns
@@ -689,6 +765,26 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) PricingPlan
 	_jsii_.Get(
 		j,
 		"pricingPlanInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) RetainBackupsOnDelete() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"retainBackupsOnDelete",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) RetainBackupsOnDeleteInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"retainBackupsOnDeleteInput",
 		&returns,
 	)
 	return returns
@@ -898,6 +994,28 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetConnector
 	)
 }
 
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetDataDiskProvisionedIops(val *float64) {
+	if err := j.validateSetDataDiskProvisionedIopsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dataDiskProvisionedIops",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetDataDiskProvisionedThroughput(val *float64) {
+	if err := j.validateSetDataDiskProvisionedThroughputParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dataDiskProvisionedThroughput",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetDeletionProtectionEnabled(val interface{}) {
 	if err := j.validateSetDeletionProtectionEnabledParameters(val); err != nil {
 		panic(err)
@@ -964,6 +1082,17 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetEdition(v
 	)
 }
 
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetEnableDataplexIntegration(val interface{}) {
+	if err := j.validateSetEnableDataplexIntegrationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableDataplexIntegration",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetEnableGoogleMlIntegration(val interface{}) {
 	if err := j.validateSetEnableGoogleMlIntegrationParameters(val); err != nil {
 		panic(err)
@@ -993,6 +1122,17 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetPricingPl
 	_jsii_.Set(
 		j,
 		"pricingPlan",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetRetainBackupsOnDelete(val interface{}) {
+	if err := j.validateSetRetainBackupsOnDeleteParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"retainBackupsOnDelete",
 		val,
 	)
 }
@@ -1442,6 +1582,22 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ResetDataCa
 	)
 }
 
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ResetDataDiskProvisionedIops() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDataDiskProvisionedIops",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ResetDataDiskProvisionedThroughput() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDataDiskProvisionedThroughput",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ResetDeletionProtectionEnabled() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1498,6 +1654,14 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ResetEditio
 	)
 }
 
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ResetEnableDataplexIntegration() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnableDataplexIntegration",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ResetEnableGoogleMlIntegration() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1550,6 +1714,14 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ResetPricin
 	_jsii_.InvokeVoid(
 		g,
 		"resetPricingPlan",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ResetRetainBackupsOnDelete() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRetainBackupsOnDelete",
 		nil, // no parameters
 	)
 }

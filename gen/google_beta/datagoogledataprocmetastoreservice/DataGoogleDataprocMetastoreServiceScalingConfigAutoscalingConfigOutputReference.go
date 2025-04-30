@@ -11,6 +11,7 @@ import (
 type DataGoogleDataprocMetastoreServiceScalingConfigAutoscalingConfigOutputReference interface {
 	cdktf.ComplexObject
 	AutoscalingEnabled() cdktf.IResolvable
+	AutoscalingFactor() *float64
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -83,6 +84,16 @@ func (j *jsiiProxy_DataGoogleDataprocMetastoreServiceScalingConfigAutoscalingCon
 	_jsii_.Get(
 		j,
 		"autoscalingEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleDataprocMetastoreServiceScalingConfigAutoscalingConfigOutputReference) AutoscalingFactor() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"autoscalingFactor",
 		&returns,
 	)
 	return returns

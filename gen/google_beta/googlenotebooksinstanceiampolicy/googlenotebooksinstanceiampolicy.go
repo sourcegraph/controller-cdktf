@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlenotebooksinstanceiampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_notebooks_instance_iam_policy google_notebooks_instance_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_notebooks_instance_iam_policy google_notebooks_instance_iam_policy}.
 type GoogleNotebooksInstanceIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -412,7 +412,7 @@ func (j *jsiiProxy_GoogleNotebooksInstanceIamPolicy) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_notebooks_instance_iam_policy google_notebooks_instance_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_notebooks_instance_iam_policy google_notebooks_instance_iam_policy} Resource.
 func NewGoogleNotebooksInstanceIamPolicy(scope constructs.Construct, id *string, config *GoogleNotebooksInstanceIamPolicyConfig) GoogleNotebooksInstanceIamPolicy {
 	_init_.Initialize()
 
@@ -430,7 +430,7 @@ func NewGoogleNotebooksInstanceIamPolicy(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_notebooks_instance_iam_policy google_notebooks_instance_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_notebooks_instance_iam_policy google_notebooks_instance_iam_policy} Resource.
 func NewGoogleNotebooksInstanceIamPolicy_Override(g GoogleNotebooksInstanceIamPolicy, scope constructs.Construct, id *string, config *GoogleNotebooksInstanceIamPolicyConfig) {
 	_init_.Initialize()
 

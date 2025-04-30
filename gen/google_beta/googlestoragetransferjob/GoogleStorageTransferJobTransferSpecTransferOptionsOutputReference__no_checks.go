@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputRefe
 	return nil
 }
 
+func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputReference) validatePutMetadataOptionsParameters(value *GoogleStorageTransferJobTransferSpecTransferOptionsMetadataOptions) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

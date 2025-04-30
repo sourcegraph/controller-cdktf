@@ -32,7 +32,11 @@ func (j *jsiiProxy_GoogleBetaProvider) validateSetAddTerraformAttributionLabelPa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBetaProvider) validateSetBatchingParameters(val *GoogleBetaProviderBatching) error {
+func (j *jsiiProxy_GoogleBetaProvider) validateSetBatchingParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) validateSetExternalCredentialsParameters(val interface{}) error {
 	return nil
 }
 

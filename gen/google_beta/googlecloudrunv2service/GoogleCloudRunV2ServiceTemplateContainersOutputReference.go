@@ -13,6 +13,10 @@ type GoogleCloudRunV2ServiceTemplateContainersOutputReference interface {
 	Args() *[]*string
 	SetArgs(val *[]*string)
 	ArgsInput() *[]*string
+	BaseImageUri() *string
+	SetBaseImageUri(val *string)
+	BaseImageUriInput() *string
+	BuildInfo() GoogleCloudRunV2ServiceTemplateContainersBuildInfoList
 	Command() *[]*string
 	SetCommand(val *[]*string)
 	CommandInput() *[]*string
@@ -98,6 +102,7 @@ type GoogleCloudRunV2ServiceTemplateContainersOutputReference interface {
 	PutStartupProbe(value *GoogleCloudRunV2ServiceTemplateContainersStartupProbe)
 	PutVolumeMounts(value interface{})
 	ResetArgs()
+	ResetBaseImageUri()
 	ResetCommand()
 	ResetDependsOn()
 	ResetEnv()
@@ -138,6 +143,36 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) Arg
 	_jsii_.Get(
 		j,
 		"argsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) BaseImageUri() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"baseImageUri",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) BaseImageUriInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"baseImageUriInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) BuildInfo() GoogleCloudRunV2ServiceTemplateContainersBuildInfoList {
+	var returns GoogleCloudRunV2ServiceTemplateContainersBuildInfoList
+	_jsii_.Get(
+		j,
+		"buildInfo",
 		&returns,
 	)
 	return returns
@@ -468,6 +503,17 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference)SetA
 	_jsii_.Set(
 		j,
 		"args",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference)SetBaseImageUri(val *string) {
+	if err := j.validateSetBaseImageUriParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"baseImageUri",
 		val,
 	)
 }
@@ -838,6 +884,14 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) Res
 	_jsii_.InvokeVoid(
 		g,
 		"resetArgs",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) ResetBaseImageUri() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetBaseImageUri",
 		nil, // no parameters
 	)
 }

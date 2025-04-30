@@ -60,6 +60,10 @@ func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecOutputReference) validate
 	return nil
 }
 
+func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecOutputReference) validatePutHdfsDataSourceParameters(value *GoogleStorageTransferJobTransferSpecHdfsDataSource) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecOutputReference) validatePutHttpDataSourceParameters(value *GoogleStorageTransferJobTransferSpecHttpDataSource) error {
 	return nil
 }

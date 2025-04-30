@@ -60,6 +60,10 @@ func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsOutputR
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsOutputReference) validateSetExternalEndpointsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsOutputReference) validateSetInternalValueParameters(val *GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargets) error {
 	return nil
 }

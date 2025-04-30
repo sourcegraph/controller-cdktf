@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleiaptunnelinstanceiampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_iap_tunnel_instance_iam_policy google_iap_tunnel_instance_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_iap_tunnel_instance_iam_policy google_iap_tunnel_instance_iam_policy}.
 type GoogleIapTunnelInstanceIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -412,7 +412,7 @@ func (j *jsiiProxy_GoogleIapTunnelInstanceIamPolicy) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_iap_tunnel_instance_iam_policy google_iap_tunnel_instance_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_iap_tunnel_instance_iam_policy google_iap_tunnel_instance_iam_policy} Resource.
 func NewGoogleIapTunnelInstanceIamPolicy(scope constructs.Construct, id *string, config *GoogleIapTunnelInstanceIamPolicyConfig) GoogleIapTunnelInstanceIamPolicy {
 	_init_.Initialize()
 
@@ -430,7 +430,7 @@ func NewGoogleIapTunnelInstanceIamPolicy(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_iap_tunnel_instance_iam_policy google_iap_tunnel_instance_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_iap_tunnel_instance_iam_policy google_iap_tunnel_instance_iam_policy} Resource.
 func NewGoogleIapTunnelInstanceIamPolicy_Override(g GoogleIapTunnelInstanceIamPolicy, scope constructs.Construct, id *string, config *GoogleIapTunnelInstanceIamPolicyConfig) {
 	_init_.Initialize()
 

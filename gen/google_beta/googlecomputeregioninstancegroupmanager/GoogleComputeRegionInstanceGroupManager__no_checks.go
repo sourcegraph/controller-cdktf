@@ -80,6 +80,10 @@ func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) validatePutAutoHeali
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) validatePutInstanceFlexibilityPolicyParameters(value *GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicy) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) validatePutInstanceLifecyclePolicyParameters(value *GoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicy) error {
 	return nil
 }

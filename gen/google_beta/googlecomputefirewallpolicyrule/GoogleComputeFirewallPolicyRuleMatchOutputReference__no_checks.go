@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) validateSetDestNetworkScopeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) validateSetDestRegionCodesParameters(val *[]*string) error {
 	return nil
 }
@@ -93,6 +97,14 @@ func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) validate
 }
 
 func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) validateSetSrcIpRangesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) validateSetSrcNetworksParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) validateSetSrcNetworkScopeParameters(val *string) error {
 	return nil
 }
 

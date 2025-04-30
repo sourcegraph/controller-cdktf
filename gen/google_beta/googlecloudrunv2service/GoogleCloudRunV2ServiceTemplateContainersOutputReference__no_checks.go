@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) val
 	return nil
 }
 
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) validateSetBaseImageUriParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) validateSetCommandParameters(val *[]*string) error {
 	return nil
 }

@@ -100,6 +100,10 @@ func validateGoogleNetworkManagementConnectivityTest_IsTerraformResourceParamete
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetworkManagementConnectivityTest) validateSetBypassFirewallChecksParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetworkManagementConnectivityTest) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -141,6 +145,10 @@ func (j *jsiiProxy_GoogleNetworkManagementConnectivityTest) validateSetProvision
 }
 
 func (j *jsiiProxy_GoogleNetworkManagementConnectivityTest) validateSetRelatedProjectsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleNetworkManagementConnectivityTest) validateSetRoundTripParameters(val interface{}) error {
 	return nil
 }
 

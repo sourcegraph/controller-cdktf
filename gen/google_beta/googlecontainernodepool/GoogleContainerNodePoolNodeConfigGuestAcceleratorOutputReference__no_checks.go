@@ -44,11 +44,11 @@ func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigGuestAcceleratorOutputRefere
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigGuestAcceleratorOutputReference) validatePutGpuDriverInstallationConfigParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigGuestAcceleratorOutputReference) validatePutGpuDriverInstallationConfigParameters(value *GoogleContainerNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfig) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigGuestAcceleratorOutputReference) validatePutGpuSharingConfigParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigGuestAcceleratorOutputReference) validatePutGpuSharingConfigParameters(value *GoogleContainerNodePoolNodeConfigGuestAcceleratorGpuSharingConfig) error {
 	return nil
 }
 

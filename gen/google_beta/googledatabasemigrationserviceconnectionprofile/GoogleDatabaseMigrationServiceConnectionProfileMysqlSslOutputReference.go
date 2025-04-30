@@ -47,6 +47,8 @@ type GoogleDatabaseMigrationServiceConnectionProfileMysqlSslOutputReference inte
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	Type() *string
+	SetType(val *string)
+	TypeInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -71,8 +73,10 @@ type GoogleDatabaseMigrationServiceConnectionProfileMysqlSslOutputReference inte
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetCaCertificate()
 	ResetClientCertificate()
 	ResetClientKey()
+	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -228,6 +232,16 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileMysqlSslOutput
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileMysqlSslOutputReference) TypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"typeInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewGoogleDatabaseMigrationServiceConnectionProfileMysqlSslOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleDatabaseMigrationServiceConnectionProfileMysqlSslOutputReference {
 	_init_.Initialize()
@@ -340,6 +354,17 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileMysqlSslOutput
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileMysqlSslOutputReference)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"type",
 		val,
 	)
 }
@@ -530,6 +555,14 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileMysqlSslOutput
 	return returns
 }
 
+func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileMysqlSslOutputReference) ResetCaCertificate() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCaCertificate",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileMysqlSslOutputReference) ResetClientCertificate() {
 	_jsii_.InvokeVoid(
 		g,
@@ -542,6 +575,14 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileMysqlSslOutput
 	_jsii_.InvokeVoid(
 		g,
 		"resetClientKey",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileMysqlSslOutputReference) ResetType() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetType",
 		nil, // no parameters
 	)
 }

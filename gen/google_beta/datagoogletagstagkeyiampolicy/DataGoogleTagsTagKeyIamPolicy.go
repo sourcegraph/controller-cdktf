@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagoogletagstagkeyiampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_tags_tag_key_iam_policy google_tags_tag_key_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_tags_tag_key_iam_policy google_tags_tag_key_iam_policy}.
 type DataGoogleTagsTagKeyIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -307,7 +307,7 @@ func (j *jsiiProxy_DataGoogleTagsTagKeyIamPolicy) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_tags_tag_key_iam_policy google_tags_tag_key_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_tags_tag_key_iam_policy google_tags_tag_key_iam_policy} Data Source.
 func NewDataGoogleTagsTagKeyIamPolicy(scope constructs.Construct, id *string, config *DataGoogleTagsTagKeyIamPolicyConfig) DataGoogleTagsTagKeyIamPolicy {
 	_init_.Initialize()
 
@@ -325,7 +325,7 @@ func NewDataGoogleTagsTagKeyIamPolicy(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_tags_tag_key_iam_policy google_tags_tag_key_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_tags_tag_key_iam_policy google_tags_tag_key_iam_policy} Data Source.
 func NewDataGoogleTagsTagKeyIamPolicy_Override(d DataGoogleTagsTagKeyIamPolicy, scope constructs.Construct, id *string, config *DataGoogleTagsTagKeyIamPolicyConfig) {
 	_init_.Initialize()
 

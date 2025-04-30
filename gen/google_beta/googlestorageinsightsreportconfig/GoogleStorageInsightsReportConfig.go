@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlestorageinsightsreportconfig/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_storage_insights_report_config google_storage_insights_report_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_storage_insights_report_config google_storage_insights_report_config}.
 type GoogleStorageInsightsReportConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -58,6 +58,8 @@ type GoogleStorageInsightsReportConfig interface {
 	Node() constructs.Node
 	ObjectMetadataReportOptions() GoogleStorageInsightsReportConfigObjectMetadataReportOptionsOutputReference
 	ObjectMetadataReportOptionsInput() *GoogleStorageInsightsReportConfigObjectMetadataReportOptions
+	ParquetOptions() GoogleStorageInsightsReportConfigParquetOptionsOutputReference
+	ParquetOptionsInput() *GoogleStorageInsightsReportConfigParquetOptions
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -125,7 +127,9 @@ type GoogleStorageInsightsReportConfig interface {
 	PutCsvOptions(value *GoogleStorageInsightsReportConfigCsvOptions)
 	PutFrequencyOptions(value *GoogleStorageInsightsReportConfigFrequencyOptions)
 	PutObjectMetadataReportOptions(value *GoogleStorageInsightsReportConfigObjectMetadataReportOptions)
+	PutParquetOptions(value *GoogleStorageInsightsReportConfigParquetOptions)
 	PutTimeouts(value *GoogleStorageInsightsReportConfigTimeouts)
+	ResetCsvOptions()
 	ResetDisplayName()
 	ResetFrequencyOptions()
 	ResetId()
@@ -133,6 +137,7 @@ type GoogleStorageInsightsReportConfig interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetParquetOptions()
 	ResetProject()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -383,6 +388,26 @@ func (j *jsiiProxy_GoogleStorageInsightsReportConfig) ObjectMetadataReportOption
 	return returns
 }
 
+func (j *jsiiProxy_GoogleStorageInsightsReportConfig) ParquetOptions() GoogleStorageInsightsReportConfigParquetOptionsOutputReference {
+	var returns GoogleStorageInsightsReportConfigParquetOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"parquetOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageInsightsReportConfig) ParquetOptionsInput() *GoogleStorageInsightsReportConfigParquetOptions {
+	var returns *GoogleStorageInsightsReportConfigParquetOptions
+	_jsii_.Get(
+		j,
+		"parquetOptionsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleStorageInsightsReportConfig) Project() *string {
 	var returns *string
 	_jsii_.Get(
@@ -484,7 +509,7 @@ func (j *jsiiProxy_GoogleStorageInsightsReportConfig) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_storage_insights_report_config google_storage_insights_report_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_storage_insights_report_config google_storage_insights_report_config} Resource.
 func NewGoogleStorageInsightsReportConfig(scope constructs.Construct, id *string, config *GoogleStorageInsightsReportConfigConfig) GoogleStorageInsightsReportConfig {
 	_init_.Initialize()
 
@@ -502,7 +527,7 @@ func NewGoogleStorageInsightsReportConfig(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_storage_insights_report_config google_storage_insights_report_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_storage_insights_report_config google_storage_insights_report_config} Resource.
 func NewGoogleStorageInsightsReportConfig_Override(g GoogleStorageInsightsReportConfig, scope constructs.Construct, id *string, config *GoogleStorageInsightsReportConfigConfig) {
 	_init_.Initialize()
 
@@ -1011,6 +1036,17 @@ func (g *jsiiProxy_GoogleStorageInsightsReportConfig) PutObjectMetadataReportOpt
 	)
 }
 
+func (g *jsiiProxy_GoogleStorageInsightsReportConfig) PutParquetOptions(value *GoogleStorageInsightsReportConfigParquetOptions) {
+	if err := g.validatePutParquetOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putParquetOptions",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleStorageInsightsReportConfig) PutTimeouts(value *GoogleStorageInsightsReportConfigTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1019,6 +1055,14 @@ func (g *jsiiProxy_GoogleStorageInsightsReportConfig) PutTimeouts(value *GoogleS
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleStorageInsightsReportConfig) ResetCsvOptions() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCsvOptions",
+		nil, // no parameters
 	)
 }
 
@@ -1058,6 +1102,14 @@ func (g *jsiiProxy_GoogleStorageInsightsReportConfig) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleStorageInsightsReportConfig) ResetParquetOptions() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetParquetOptions",
 		nil, // no parameters
 	)
 }

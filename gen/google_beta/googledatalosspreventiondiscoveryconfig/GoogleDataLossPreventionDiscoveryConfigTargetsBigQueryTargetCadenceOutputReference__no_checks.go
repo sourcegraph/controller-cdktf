@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetC
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetCadenceOutputReference) validatePutInspectTemplateModifiedCadenceParameters(value *GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetCadenceInspectTemplateModifiedCadence) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetCadenceOutputReference) validatePutSchemaModifiedCadenceParameters(value *GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetCadenceSchemaModifiedCadence) error {
 	return nil
 }

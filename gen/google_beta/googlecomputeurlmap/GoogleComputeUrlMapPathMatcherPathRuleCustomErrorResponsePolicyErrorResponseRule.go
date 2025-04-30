@@ -10,13 +10,13 @@ type GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyErrorRespons
 	//
 	// Values must be unique within matchResponseCodes and across all errorResponseRules of CustomErrorResponsePolicy.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_url_map#match_response_codes GoogleComputeUrlMap#match_response_codes}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_url_map#match_response_codes GoogleComputeUrlMap#match_response_codes}
 	MatchResponseCodes *[]*string `field:"optional" json:"matchResponseCodes" yaml:"matchResponseCodes"`
 	// The HTTP status code returned with the response containing the custom error content.
 	//
 	// If overrideResponseCode is not supplied, the same response code returned by the original backend bucket or backend service is returned to the client.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_url_map#override_response_code GoogleComputeUrlMap#override_response_code}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_url_map#override_response_code GoogleComputeUrlMap#override_response_code}
 	OverrideResponseCode *float64 `field:"optional" json:"overrideResponseCode" yaml:"overrideResponseCode"`
 	// The full path to a file within backendBucket .
 	//
@@ -25,7 +25,7 @@ type GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyErrorRespons
 	// If the file is not available in backendBucket or the load balancer cannot reach the BackendBucket, a simple Not Found Error is returned to the client.
 	// The value must be from 1 to 1024 characters
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_url_map#path GoogleComputeUrlMap#path}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_url_map#path GoogleComputeUrlMap#path}
 	Path *string `field:"optional" json:"path" yaml:"path"`
 }
 

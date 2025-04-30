@@ -90,6 +90,17 @@ func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigSqlServerSourceConfigOutput
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigSqlServerSourceConfigOutputReference) validatePutChangeTablesParameters(value *GoogleDatastreamStreamSourceConfigSqlServerSourceConfigChangeTables) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigSqlServerSourceConfigOutputReference) validatePutExcludeObjectsParameters(value *GoogleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjects) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -102,6 +113,17 @@ func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigSqlServerSourceConfigOutput
 }
 
 func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigSqlServerSourceConfigOutputReference) validatePutIncludeObjectsParameters(value *GoogleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjects) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigSqlServerSourceConfigOutputReference) validatePutTransactionLogsParameters(value *GoogleDatastreamStreamSourceConfigSqlServerSourceConfigTransactionLogs) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

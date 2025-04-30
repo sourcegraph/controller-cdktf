@@ -88,6 +88,10 @@ func (g *jsiiProxy_GoogleStorageBucket) validatePutEncryptionParameters(value *G
 	return nil
 }
 
+func (g *jsiiProxy_GoogleStorageBucket) validatePutHierarchicalNamespaceParameters(value *GoogleStorageBucketHierarchicalNamespace) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleStorageBucket) validatePutLifecycleRuleParameters(value interface{}) error {
 	return nil
 }

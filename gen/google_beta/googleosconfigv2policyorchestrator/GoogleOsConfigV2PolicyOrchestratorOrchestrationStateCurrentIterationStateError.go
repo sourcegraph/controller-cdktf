@@ -1,0 +1,6 @@
+package googleosconfigv2policyorchestrator
+
+
+type GoogleOsConfigV2PolicyOrchestratorOrchestrationStateCurrentIterationStateError struct {
+}
+

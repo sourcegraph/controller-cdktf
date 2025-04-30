@@ -28,6 +28,9 @@ type GooglePubsubTopicMessageStoragePolicyOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EnforceInTransit() interface{}
+	SetEnforceInTransit(val interface{})
+	EnforceInTransitInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GooglePubsubTopicMessageStoragePolicy
@@ -64,6 +67,7 @@ type GooglePubsubTopicMessageStoragePolicyOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetEnforceInTransit()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -124,6 +128,26 @@ func (j *jsiiProxy_GooglePubsubTopicMessageStoragePolicyOutputReference) Creatio
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GooglePubsubTopicMessageStoragePolicyOutputReference) EnforceInTransit() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enforceInTransit",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GooglePubsubTopicMessageStoragePolicyOutputReference) EnforceInTransitInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enforceInTransitInput",
 		&returns,
 	)
 	return returns
@@ -226,6 +250,17 @@ func (j *jsiiProxy_GooglePubsubTopicMessageStoragePolicyOutputReference)SetCompl
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GooglePubsubTopicMessageStoragePolicyOutputReference)SetEnforceInTransit(val interface{}) {
+	if err := j.validateSetEnforceInTransitParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enforceInTransit",
 		val,
 	)
 }
@@ -447,6 +482,14 @@ func (g *jsiiProxy_GooglePubsubTopicMessageStoragePolicyOutputReference) Interpo
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GooglePubsubTopicMessageStoragePolicyOutputReference) ResetEnforceInTransit() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnforceInTransit",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GooglePubsubTopicMessageStoragePolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

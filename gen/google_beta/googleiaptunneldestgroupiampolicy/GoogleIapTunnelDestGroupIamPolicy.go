@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleiaptunneldestgroupiampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_iap_tunnel_dest_group_iam_policy google_iap_tunnel_dest_group_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_iap_tunnel_dest_group_iam_policy google_iap_tunnel_dest_group_iam_policy}.
 type GoogleIapTunnelDestGroupIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -412,7 +412,7 @@ func (j *jsiiProxy_GoogleIapTunnelDestGroupIamPolicy) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_iap_tunnel_dest_group_iam_policy google_iap_tunnel_dest_group_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_iap_tunnel_dest_group_iam_policy google_iap_tunnel_dest_group_iam_policy} Resource.
 func NewGoogleIapTunnelDestGroupIamPolicy(scope constructs.Construct, id *string, config *GoogleIapTunnelDestGroupIamPolicyConfig) GoogleIapTunnelDestGroupIamPolicy {
 	_init_.Initialize()
 
@@ -430,7 +430,7 @@ func NewGoogleIapTunnelDestGroupIamPolicy(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_iap_tunnel_dest_group_iam_policy google_iap_tunnel_dest_group_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_iap_tunnel_dest_group_iam_policy google_iap_tunnel_dest_group_iam_policy} Resource.
 func NewGoogleIapTunnelDestGroupIamPolicy_Override(g GoogleIapTunnelDestGroupIamPolicy, scope constructs.Construct, id *string, config *GoogleIapTunnelDestGroupIamPolicyConfig) {
 	_init_.Initialize()
 

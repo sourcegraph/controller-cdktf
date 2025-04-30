@@ -179,6 +179,22 @@ func (j *jsiiProxy_GoogleBigqueryDataTransferConfigSensitiveParamsOutputReferenc
 	return nil
 }
 
+func (j *jsiiProxy_GoogleBigqueryDataTransferConfigSensitiveParamsOutputReference) validateSetSecretAccessKeyWoParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataTransferConfigSensitiveParamsOutputReference) validateSetSecretAccessKeyWoVersionParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBigqueryDataTransferConfigSensitiveParamsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

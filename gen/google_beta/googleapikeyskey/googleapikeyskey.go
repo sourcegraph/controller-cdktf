@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleapikeyskey/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_apikeys_key google_apikeys_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_apikeys_key google_apikeys_key}.
 type GoogleApikeysKey interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -448,7 +448,7 @@ func (j *jsiiProxy_GoogleApikeysKey) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_apikeys_key google_apikeys_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_apikeys_key google_apikeys_key} Resource.
 func NewGoogleApikeysKey(scope constructs.Construct, id *string, config *GoogleApikeysKeyConfig) GoogleApikeysKey {
 	_init_.Initialize()
 
@@ -466,7 +466,7 @@ func NewGoogleApikeysKey(scope constructs.Construct, id *string, config *GoogleA
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_apikeys_key google_apikeys_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_apikeys_key google_apikeys_key} Resource.
 func NewGoogleApikeysKey_Override(g GoogleApikeysKey, scope constructs.Construct, id *string, config *GoogleApikeysKeyConfig) {
 	_init_.Initialize()
 

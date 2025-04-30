@@ -25,6 +25,9 @@ type GoogleComputeRegionBackendServiceIapOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Enabled() interface{}
+	SetEnabled(val interface{})
+	EnabledInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleComputeRegionBackendServiceIap
@@ -68,6 +71,8 @@ type GoogleComputeRegionBackendServiceIapOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetOauth2ClientId()
+	ResetOauth2ClientSecret()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -108,6 +113,26 @@ func (j *jsiiProxy_GoogleComputeRegionBackendServiceIapOutputReference) Creation
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionBackendServiceIapOutputReference) Enabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionBackendServiceIapOutputReference) EnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enabledInput",
 		&returns,
 	)
 	return returns
@@ -249,6 +274,17 @@ func (j *jsiiProxy_GoogleComputeRegionBackendServiceIapOutputReference)SetComple
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionBackendServiceIapOutputReference)SetEnabled(val interface{}) {
+	if err := j.validateSetEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enabled",
 		val,
 	)
 }
@@ -492,6 +528,22 @@ func (g *jsiiProxy_GoogleComputeRegionBackendServiceIapOutputReference) Interpol
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeRegionBackendServiceIapOutputReference) ResetOauth2ClientId() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetOauth2ClientId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionBackendServiceIapOutputReference) ResetOauth2ClientSecret() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetOauth2ClientSecret",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleComputeRegionBackendServiceIapOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

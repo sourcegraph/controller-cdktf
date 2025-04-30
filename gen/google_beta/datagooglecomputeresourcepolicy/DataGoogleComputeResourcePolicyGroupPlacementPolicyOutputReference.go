@@ -29,6 +29,7 @@ type DataGoogleComputeResourcePolicyGroupPlacementPolicyOutputReference interfac
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	GpuTopology() *string
 	InternalValue() *DataGoogleComputeResourcePolicyGroupPlacementPolicy
 	SetInternalValue(val *DataGoogleComputeResourcePolicyGroupPlacementPolicy)
 	MaxDistance() *float64
@@ -40,6 +41,7 @@ type DataGoogleComputeResourcePolicyGroupPlacementPolicyOutputReference interfac
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TpuTopology() *string
 	VmCount() *float64
 	// Experimental.
 	ComputeFqn() *string
@@ -140,6 +142,16 @@ func (j *jsiiProxy_DataGoogleComputeResourcePolicyGroupPlacementPolicyOutputRefe
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeResourcePolicyGroupPlacementPolicyOutputReference) GpuTopology() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gpuTopology",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeResourcePolicyGroupPlacementPolicyOutputReference) InternalValue() *DataGoogleComputeResourcePolicyGroupPlacementPolicy {
 	var returns *DataGoogleComputeResourcePolicyGroupPlacementPolicy
 	_jsii_.Get(
@@ -175,6 +187,16 @@ func (j *jsiiProxy_DataGoogleComputeResourcePolicyGroupPlacementPolicyOutputRefe
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeResourcePolicyGroupPlacementPolicyOutputReference) TpuTopology() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tpuTopology",
 		&returns,
 	)
 	return returns

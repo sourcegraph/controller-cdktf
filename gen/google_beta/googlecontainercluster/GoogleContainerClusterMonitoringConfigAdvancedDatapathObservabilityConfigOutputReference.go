@@ -35,9 +35,6 @@ type GoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOu
 	Fqn() *string
 	InternalValue() *GoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfig
 	SetInternalValue(val *GoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfig)
-	RelayMode() *string
-	SetRelayMode(val *string)
-	RelayModeInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,8 +67,6 @@ type GoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOu
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetEnableRelay()
-	ResetRelayMode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -177,26 +172,6 @@ func (j *jsiiProxy_GoogleContainerClusterMonitoringConfigAdvancedDatapathObserva
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference) RelayMode() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"relayMode",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_GoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference) RelayModeInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"relayModeInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_GoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -296,17 +271,6 @@ func (j *jsiiProxy_GoogleContainerClusterMonitoringConfigAdvancedDatapathObserva
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_GoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference)SetRelayMode(val *string) {
-	if err := j.validateSetRelayModeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"relayMode",
 		val,
 	)
 }
@@ -517,22 +481,6 @@ func (g *jsiiProxy_GoogleContainerClusterMonitoringConfigAdvancedDatapathObserva
 	)
 
 	return returns
-}
-
-func (g *jsiiProxy_GoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference) ResetEnableRelay() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetEnableRelay",
-		nil, // no parameters
-	)
-}
-
-func (g *jsiiProxy_GoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference) ResetRelayMode() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetRelayMode",
-		nil, // no parameters
-	)
 }
 
 func (g *jsiiProxy_GoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

@@ -92,15 +92,15 @@ func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) validateSetNoAgeParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) validateSetNoncurrentTimeBeforeParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) validateSetNumNewerVersionsParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) validateSetSendAgeIfZeroParameters(val interface{}) error {
 	return nil
 }
 

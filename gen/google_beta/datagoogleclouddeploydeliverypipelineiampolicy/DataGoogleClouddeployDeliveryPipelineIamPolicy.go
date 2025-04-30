@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagoogleclouddeploydeliverypipelineiampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_clouddeploy_delivery_pipeline_iam_policy google_clouddeploy_delivery_pipeline_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_clouddeploy_delivery_pipeline_iam_policy google_clouddeploy_delivery_pipeline_iam_policy}.
 type DataGoogleClouddeployDeliveryPipelineIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -355,7 +355,7 @@ func (j *jsiiProxy_DataGoogleClouddeployDeliveryPipelineIamPolicy) TerraformReso
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_clouddeploy_delivery_pipeline_iam_policy google_clouddeploy_delivery_pipeline_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_clouddeploy_delivery_pipeline_iam_policy google_clouddeploy_delivery_pipeline_iam_policy} Data Source.
 func NewDataGoogleClouddeployDeliveryPipelineIamPolicy(scope constructs.Construct, id *string, config *DataGoogleClouddeployDeliveryPipelineIamPolicyConfig) DataGoogleClouddeployDeliveryPipelineIamPolicy {
 	_init_.Initialize()
 
@@ -373,7 +373,7 @@ func NewDataGoogleClouddeployDeliveryPipelineIamPolicy(scope constructs.Construc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_clouddeploy_delivery_pipeline_iam_policy google_clouddeploy_delivery_pipeline_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_clouddeploy_delivery_pipeline_iam_policy google_clouddeploy_delivery_pipeline_iam_policy} Data Source.
 func NewDataGoogleClouddeployDeliveryPipelineIamPolicy_Override(d DataGoogleClouddeployDeliveryPipelineIamPolicy, scope constructs.Construct, id *string, config *DataGoogleClouddeployDeliveryPipelineIamPolicyConfig) {
 	_init_.Initialize()
 

@@ -44,7 +44,7 @@ func (g *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) val
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) validatePutIpAllocationPolicyParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) validatePutIpAllocationPolicyParameters(value *GoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicy) error {
 	return nil
 }
 

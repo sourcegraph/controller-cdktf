@@ -96,6 +96,10 @@ func (j *jsiiProxy_GoogleNetappStoragePool) validateSetActiveDirectoryParameters
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetappStoragePool) validateSetAllowAutoTieringParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetappStoragePool) validateSetCapacityGibParameters(val *string) error {
 	return nil
 }

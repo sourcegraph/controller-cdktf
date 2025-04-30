@@ -116,6 +116,14 @@ func (j *jsiiProxy_GoogleComputeRegionDisk) validateSetCountParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRegionDisk) validateSetCreateSnapshotBeforeDestroyParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) validateSetCreateSnapshotBeforeDestroyPrefixParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRegionDisk) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

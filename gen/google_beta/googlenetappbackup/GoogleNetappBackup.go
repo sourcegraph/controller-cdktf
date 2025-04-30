@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlenetappbackup/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_netapp_backup google_netapp_backup}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_netapp_backup google_netapp_backup}.
 type GoogleNetappBackup interface {
 	cdktf.TerraformResource
 	BackupType() *string
@@ -597,7 +597,7 @@ func (j *jsiiProxy_GoogleNetappBackup) VolumeUsageBytes() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_netapp_backup google_netapp_backup} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_netapp_backup google_netapp_backup} Resource.
 func NewGoogleNetappBackup(scope constructs.Construct, id *string, config *GoogleNetappBackupConfig) GoogleNetappBackup {
 	_init_.Initialize()
 
@@ -615,7 +615,7 @@ func NewGoogleNetappBackup(scope constructs.Construct, id *string, config *Googl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_netapp_backup google_netapp_backup} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_netapp_backup google_netapp_backup} Resource.
 func NewGoogleNetappBackup_Override(g GoogleNetappBackup, scope constructs.Construct, id *string, config *GoogleNetappBackupConfig) {
 	_init_.Initialize()
 

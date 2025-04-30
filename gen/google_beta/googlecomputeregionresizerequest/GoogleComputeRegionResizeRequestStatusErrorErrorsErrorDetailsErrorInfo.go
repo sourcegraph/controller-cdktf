@@ -1,0 +1,6 @@
+package googlecomputeregionresizerequest
+
+
+type GoogleComputeRegionResizeRequestStatusErrorErrorsErrorDetailsErrorInfo struct {
+}
+

@@ -88,6 +88,10 @@ func (g *jsiiProxy_GooglePrivatecaCertificateAuthority) validatePutTimeoutsParam
 	return nil
 }
 
+func (g *jsiiProxy_GooglePrivatecaCertificateAuthority) validatePutUserDefinedAccessUrlsParameters(value *GooglePrivatecaCertificateAuthorityUserDefinedAccessUrls) error {
+	return nil
+}
+
 func validateGooglePrivatecaCertificateAuthority_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

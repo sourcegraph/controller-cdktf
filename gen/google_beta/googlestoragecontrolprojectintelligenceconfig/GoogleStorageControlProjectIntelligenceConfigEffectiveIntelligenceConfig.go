@@ -1,0 +1,6 @@
+package googlestoragecontrolprojectintelligenceconfig
+
+
+type GoogleStorageControlProjectIntelligenceConfigEffectiveIntelligenceConfig struct {
+}
+

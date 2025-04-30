@@ -64,7 +64,11 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateAttachedDiskOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromTemplateAttachedDiskOutputReference) validateSetDiskEncryptionKeySha256Parameters(val *string) error {
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateAttachedDiskOutputReference) validateSetDiskEncryptionKeyRsaParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateAttachedDiskOutputReference) validateSetDiskEncryptionServiceAccountParameters(val *string) error {
 	return nil
 }
 

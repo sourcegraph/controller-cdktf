@@ -144,6 +144,10 @@ func (j *jsiiProxy_GoogleComputeServiceAttachment) validateSetProjectParameters(
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeServiceAttachment) validateSetPropagatedConnectionLimitParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeServiceAttachment) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

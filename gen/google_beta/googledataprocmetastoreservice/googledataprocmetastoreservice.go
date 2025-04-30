@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledataprocmetastoreservice/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_dataproc_metastore_service google_dataproc_metastore_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_dataproc_metastore_service google_dataproc_metastore_service}.
 type GoogleDataprocMetastoreService interface {
 	cdktf.TerraformResource
 	ArtifactGcsUri() *string
@@ -25,9 +25,13 @@ type GoogleDataprocMetastoreService interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreateTime() *string
 	DatabaseType() *string
 	SetDatabaseType(val *string)
 	DatabaseTypeInput() *string
+	DeletionProtection() interface{}
+	SetDeletionProtection(val interface{})
+	DeletionProtectionInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -99,6 +103,9 @@ type GoogleDataprocMetastoreService interface {
 	ServiceIdInput() *string
 	State() *string
 	StateMessage() *string
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsInput() *map[string]*string
 	TelemetryConfig() GoogleDataprocMetastoreServiceTelemetryConfigOutputReference
 	TelemetryConfigInput() *GoogleDataprocMetastoreServiceTelemetryConfig
 	// Experimental.
@@ -114,6 +121,7 @@ type GoogleDataprocMetastoreService interface {
 	Timeouts() GoogleDataprocMetastoreServiceTimeoutsOutputReference
 	TimeoutsInput() interface{}
 	Uid() *string
+	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -167,6 +175,7 @@ type GoogleDataprocMetastoreService interface {
 	PutTelemetryConfig(value *GoogleDataprocMetastoreServiceTelemetryConfig)
 	PutTimeouts(value *GoogleDataprocMetastoreServiceTimeouts)
 	ResetDatabaseType()
+	ResetDeletionProtection()
 	ResetEncryptionConfig()
 	ResetHiveMetastoreConfig()
 	ResetId()
@@ -184,6 +193,7 @@ type GoogleDataprocMetastoreService interface {
 	ResetReleaseChannel()
 	ResetScalingConfig()
 	ResetScheduledBackup()
+	ResetTags()
 	ResetTelemetryConfig()
 	ResetTier()
 	ResetTimeouts()
@@ -255,6 +265,16 @@ func (j *jsiiProxy_GoogleDataprocMetastoreService) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDataprocMetastoreService) CreateTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createTime",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleDataprocMetastoreService) DatabaseType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -270,6 +290,26 @@ func (j *jsiiProxy_GoogleDataprocMetastoreService) DatabaseTypeInput() *string {
 	_jsii_.Get(
 		j,
 		"databaseTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataprocMetastoreService) DeletionProtection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataprocMetastoreService) DeletionProtectionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtectionInput",
 		&returns,
 	)
 	return returns
@@ -715,6 +755,26 @@ func (j *jsiiProxy_GoogleDataprocMetastoreService) StateMessage() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDataprocMetastoreService) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataprocMetastoreService) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleDataprocMetastoreService) TelemetryConfig() GoogleDataprocMetastoreServiceTelemetryConfigOutputReference {
 	var returns GoogleDataprocMetastoreServiceTelemetryConfigOutputReference
 	_jsii_.Get(
@@ -825,8 +885,18 @@ func (j *jsiiProxy_GoogleDataprocMetastoreService) Uid() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDataprocMetastoreService) UpdateTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updateTime",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_dataproc_metastore_service google_dataproc_metastore_service} Resource.
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_dataproc_metastore_service google_dataproc_metastore_service} Resource.
 func NewGoogleDataprocMetastoreService(scope constructs.Construct, id *string, config *GoogleDataprocMetastoreServiceConfig) GoogleDataprocMetastoreService {
 	_init_.Initialize()
 
@@ -844,7 +914,7 @@ func NewGoogleDataprocMetastoreService(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_dataproc_metastore_service google_dataproc_metastore_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_dataproc_metastore_service google_dataproc_metastore_service} Resource.
 func NewGoogleDataprocMetastoreService_Override(g GoogleDataprocMetastoreService, scope constructs.Construct, id *string, config *GoogleDataprocMetastoreServiceConfig) {
 	_init_.Initialize()
 
@@ -884,6 +954,17 @@ func (j *jsiiProxy_GoogleDataprocMetastoreService)SetDatabaseType(val *string) {
 	_jsii_.Set(
 		j,
 		"databaseType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataprocMetastoreService)SetDeletionProtection(val interface{}) {
+	if err := j.validateSetDeletionProtectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deletionProtection",
 		val,
 	)
 }
@@ -1018,6 +1099,17 @@ func (j *jsiiProxy_GoogleDataprocMetastoreService)SetServiceId(val *string) {
 	_jsii_.Set(
 		j,
 		"serviceId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataprocMetastoreService)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
 		val,
 	)
 }
@@ -1493,6 +1585,14 @@ func (g *jsiiProxy_GoogleDataprocMetastoreService) ResetDatabaseType() {
 	)
 }
 
+func (g *jsiiProxy_GoogleDataprocMetastoreService) ResetDeletionProtection() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDeletionProtection",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleDataprocMetastoreService) ResetEncryptionConfig() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1609,6 +1709,14 @@ func (g *jsiiProxy_GoogleDataprocMetastoreService) ResetScheduledBackup() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetScheduledBackup",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataprocMetastoreService) ResetTags() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTags",
 		nil, // no parameters
 	)
 }

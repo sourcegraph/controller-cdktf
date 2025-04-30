@@ -33,6 +33,10 @@ type GoogleDialogflowCxFlowAdvancedSettingsOutputReference interface {
 	Fqn() *string
 	InternalValue() *GoogleDialogflowCxFlowAdvancedSettings
 	SetInternalValue(val *GoogleDialogflowCxFlowAdvancedSettings)
+	LoggingSettings() GoogleDialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference
+	LoggingSettingsInput() *GoogleDialogflowCxFlowAdvancedSettingsLoggingSettings
+	SpeechSettings() GoogleDialogflowCxFlowAdvancedSettingsSpeechSettingsOutputReference
+	SpeechSettingsInput() *GoogleDialogflowCxFlowAdvancedSettingsSpeechSettings
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,8 +71,12 @@ type GoogleDialogflowCxFlowAdvancedSettingsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAudioExportGcsDestination(value *GoogleDialogflowCxFlowAdvancedSettingsAudioExportGcsDestination)
 	PutDtmfSettings(value *GoogleDialogflowCxFlowAdvancedSettingsDtmfSettings)
+	PutLoggingSettings(value *GoogleDialogflowCxFlowAdvancedSettingsLoggingSettings)
+	PutSpeechSettings(value *GoogleDialogflowCxFlowAdvancedSettingsSpeechSettings)
 	ResetAudioExportGcsDestination()
 	ResetDtmfSettings()
+	ResetLoggingSettings()
+	ResetSpeechSettings()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -169,6 +177,46 @@ func (j *jsiiProxy_GoogleDialogflowCxFlowAdvancedSettingsOutputReference) Intern
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDialogflowCxFlowAdvancedSettingsOutputReference) LoggingSettings() GoogleDialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference {
+	var returns GoogleDialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"loggingSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDialogflowCxFlowAdvancedSettingsOutputReference) LoggingSettingsInput() *GoogleDialogflowCxFlowAdvancedSettingsLoggingSettings {
+	var returns *GoogleDialogflowCxFlowAdvancedSettingsLoggingSettings
+	_jsii_.Get(
+		j,
+		"loggingSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDialogflowCxFlowAdvancedSettingsOutputReference) SpeechSettings() GoogleDialogflowCxFlowAdvancedSettingsSpeechSettingsOutputReference {
+	var returns GoogleDialogflowCxFlowAdvancedSettingsSpeechSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"speechSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDialogflowCxFlowAdvancedSettingsOutputReference) SpeechSettingsInput() *GoogleDialogflowCxFlowAdvancedSettingsSpeechSettings {
+	var returns *GoogleDialogflowCxFlowAdvancedSettingsSpeechSettings
+	_jsii_.Get(
+		j,
+		"speechSettingsInput",
 		&returns,
 	)
 	return returns
@@ -485,6 +533,28 @@ func (g *jsiiProxy_GoogleDialogflowCxFlowAdvancedSettingsOutputReference) PutDtm
 	)
 }
 
+func (g *jsiiProxy_GoogleDialogflowCxFlowAdvancedSettingsOutputReference) PutLoggingSettings(value *GoogleDialogflowCxFlowAdvancedSettingsLoggingSettings) {
+	if err := g.validatePutLoggingSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putLoggingSettings",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDialogflowCxFlowAdvancedSettingsOutputReference) PutSpeechSettings(value *GoogleDialogflowCxFlowAdvancedSettingsSpeechSettings) {
+	if err := g.validatePutSpeechSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSpeechSettings",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDialogflowCxFlowAdvancedSettingsOutputReference) ResetAudioExportGcsDestination() {
 	_jsii_.InvokeVoid(
 		g,
@@ -497,6 +567,22 @@ func (g *jsiiProxy_GoogleDialogflowCxFlowAdvancedSettingsOutputReference) ResetD
 	_jsii_.InvokeVoid(
 		g,
 		"resetDtmfSettings",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDialogflowCxFlowAdvancedSettingsOutputReference) ResetLoggingSettings() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLoggingSettings",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDialogflowCxFlowAdvancedSettingsOutputReference) ResetSpeechSettings() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSpeechSettings",
 		nil, // no parameters
 	)
 }

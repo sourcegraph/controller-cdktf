@@ -203,6 +203,14 @@ func (j *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference) validateSetReservedInternalRangeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

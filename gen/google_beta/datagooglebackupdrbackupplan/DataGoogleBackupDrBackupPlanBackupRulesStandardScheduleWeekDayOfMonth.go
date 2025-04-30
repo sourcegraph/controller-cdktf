@@ -1,0 +1,6 @@
+package datagooglebackupdrbackupplan
+
+
+type DataGoogleBackupDrBackupPlanBackupRulesStandardScheduleWeekDayOfMonth struct {
+}
+

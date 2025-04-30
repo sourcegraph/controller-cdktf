@@ -64,6 +64,10 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceBinaryAuthorizationOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_GoogleCloudRunV2ServiceBinaryAuthorizationOutputReference) validateSetPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCloudRunV2ServiceBinaryAuthorizationOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

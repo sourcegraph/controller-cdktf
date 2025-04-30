@@ -27,6 +27,7 @@ type DataGoogleComputeBackendServiceBackendOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomMetrics() DataGoogleComputeBackendServiceBackendCustomMetricsList
 	Description() *string
 	// Experimental.
 	Fqn() *string
@@ -40,6 +41,7 @@ type DataGoogleComputeBackendServiceBackendOutputReference interface {
 	MaxRatePerEndpoint() *float64
 	MaxRatePerInstance() *float64
 	MaxUtilization() *float64
+	Preference() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -132,6 +134,16 @@ func (j *jsiiProxy_DataGoogleComputeBackendServiceBackendOutputReference) Creati
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeBackendServiceBackendOutputReference) CustomMetrics() DataGoogleComputeBackendServiceBackendCustomMetricsList {
+	var returns DataGoogleComputeBackendServiceBackendCustomMetricsList
+	_jsii_.Get(
+		j,
+		"customMetrics",
 		&returns,
 	)
 	return returns
@@ -242,6 +254,16 @@ func (j *jsiiProxy_DataGoogleComputeBackendServiceBackendOutputReference) MaxUti
 	_jsii_.Get(
 		j,
 		"maxUtilization",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeBackendServiceBackendOutputReference) Preference() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"preference",
 		&returns,
 	)
 	return returns

@@ -211,14 +211,6 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceAccessCo
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceAccessConfigOutputReference) validateSetSecurityPolicyParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceAccessConfigOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

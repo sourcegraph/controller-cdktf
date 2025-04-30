@@ -48,7 +48,15 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) validatePutCo
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) validatePutNodeSelectorParameters(value *GoogleCloudRunV2ServiceTemplateNodeSelector) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) validatePutScalingParameters(value *GoogleCloudRunV2ServiceTemplateScaling) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) validatePutServiceMeshParameters(value *GoogleCloudRunV2ServiceTemplateServiceMesh) error {
 	return nil
 }
 
@@ -81,6 +89,10 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) validateSetEn
 }
 
 func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) validateSetExecutionEnvironmentParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) validateSetGpuZonalRedundancyDisabledParameters(val interface{}) error {
 	return nil
 }
 

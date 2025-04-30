@@ -8,7 +8,7 @@ type GoogleBinaryAuthorizationPolicyAdmissionWhitelistPatterns struct {
 	// wildcard, but this is allowed only in text after the registry/
 	// part.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_binary_authorization_policy#name_pattern GoogleBinaryAuthorizationPolicy#name_pattern}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_binary_authorization_policy#name_pattern GoogleBinaryAuthorizationPolicy#name_pattern}
 	NamePattern *string `field:"required" json:"namePattern" yaml:"namePattern"`
 }
 

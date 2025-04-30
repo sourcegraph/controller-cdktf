@@ -60,6 +60,10 @@ func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) validateSe
 	return nil
 }
 
+func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) validateSetEnableOutboundPublicIpParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) validateSetEnablePublicIpParameters(val interface{}) error {
 	return nil
 }

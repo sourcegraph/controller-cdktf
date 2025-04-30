@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlenetworkservicesmesh/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_network_services_mesh google_network_services_mesh}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_network_services_mesh google_network_services_mesh}.
 type GoogleNetworkServicesMesh interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -54,6 +54,9 @@ type GoogleNetworkServicesMesh interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Location() *string
+	SetLocation(val *string)
+	LocationInput() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -131,6 +134,7 @@ type GoogleNetworkServicesMesh interface {
 	ResetId()
 	ResetInterceptionPort()
 	ResetLabels()
+	ResetLocation()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -344,6 +348,26 @@ func (j *jsiiProxy_GoogleNetworkServicesMesh) Lifecycle() *cdktf.TerraformResour
 	return returns
 }
 
+func (j *jsiiProxy_GoogleNetworkServicesMesh) Location() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"location",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesMesh) LocationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"locationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleNetworkServicesMesh) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -505,7 +529,7 @@ func (j *jsiiProxy_GoogleNetworkServicesMesh) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_network_services_mesh google_network_services_mesh} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_network_services_mesh google_network_services_mesh} Resource.
 func NewGoogleNetworkServicesMesh(scope constructs.Construct, id *string, config *GoogleNetworkServicesMeshConfig) GoogleNetworkServicesMesh {
 	_init_.Initialize()
 
@@ -523,7 +547,7 @@ func NewGoogleNetworkServicesMesh(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_network_services_mesh google_network_services_mesh} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_network_services_mesh google_network_services_mesh} Resource.
 func NewGoogleNetworkServicesMesh_Override(g GoogleNetworkServicesMesh, scope constructs.Construct, id *string, config *GoogleNetworkServicesMeshConfig) {
 	_init_.Initialize()
 
@@ -623,6 +647,17 @@ func (j *jsiiProxy_GoogleNetworkServicesMesh)SetLifecycle(val *cdktf.TerraformRe
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesMesh)SetLocation(val *string) {
+	if err := j.validateSetLocationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"location",
 		val,
 	)
 }
@@ -1060,6 +1095,14 @@ func (g *jsiiProxy_GoogleNetworkServicesMesh) ResetLabels() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetLabels",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleNetworkServicesMesh) ResetLocation() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLocation",
 		nil, // no parameters
 	)
 }

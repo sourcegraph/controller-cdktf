@@ -132,6 +132,14 @@ func (j *jsiiProxy_GoogleSecretManagerSecretVersion) validateSetSecretDataParame
 	return nil
 }
 
+func (j *jsiiProxy_GoogleSecretManagerSecretVersion) validateSetSecretDataWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleSecretManagerSecretVersion) validateSetSecretDataWoVersionParameters(val *float64) error {
+	return nil
+}
+
 func validateNewGoogleSecretManagerSecretVersionParameters(scope constructs.Construct, id *string, config *GoogleSecretManagerSecretVersionConfig) error {
 	return nil
 }

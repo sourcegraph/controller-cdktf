@@ -84,6 +84,10 @@ func (g *jsiiProxy_GoogleComputeRegionNetworkEndpointGroup) validatePutCloudRunP
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeRegionNetworkEndpointGroup) validatePutPscDataParameters(value *GoogleComputeRegionNetworkEndpointGroupPscData) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRegionNetworkEndpointGroup) validatePutServerlessDeploymentParameters(value *GoogleComputeRegionNetworkEndpointGroupServerlessDeployment) error {
 	return nil
 }

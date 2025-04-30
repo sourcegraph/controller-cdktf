@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleVmwareenginePrivateCloudManagementClusterOutputReferenc
 	return nil
 }
 
+func (g *jsiiProxy_GoogleVmwareenginePrivateCloudManagementClusterOutputReference) validatePutAutoscalingSettingsParameters(value *GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettings) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleVmwareenginePrivateCloudManagementClusterOutputReference) validatePutNodeTypeConfigsParameters(value interface{}) error {
 	return nil
 }

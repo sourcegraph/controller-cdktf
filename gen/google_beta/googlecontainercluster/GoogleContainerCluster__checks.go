@@ -270,6 +270,17 @@ func (g *jsiiProxy_GoogleContainerCluster) validatePutConfidentialNodesParameter
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) validatePutControlPlaneEndpointsConfigParameters(value *GoogleContainerClusterControlPlaneEndpointsConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) validatePutCostManagementConfigParameters(value *GoogleContainerClusterCostManagementConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -315,6 +326,17 @@ func (g *jsiiProxy_GoogleContainerCluster) validatePutDnsConfigParameters(value 
 }
 
 func (g *jsiiProxy_GoogleContainerCluster) validatePutEnableK8SBetaApisParameters(value *GoogleContainerClusterEnableK8SBetaApis) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) validatePutEnterpriseConfigParameters(value *GoogleContainerClusterEnterpriseConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -521,6 +543,17 @@ func (g *jsiiProxy_GoogleContainerCluster) validatePutNotificationConfigParamete
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) validatePutPodAutoscalingParameters(value *GoogleContainerClusterPodAutoscaling) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) validatePutPodSecurityPolicyConfigParameters(value *GoogleContainerClusterPodSecurityPolicyConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -621,6 +654,17 @@ func (g *jsiiProxy_GoogleContainerCluster) validatePutTimeoutsParameters(value *
 }
 
 func (g *jsiiProxy_GoogleContainerCluster) validatePutTpuConfigParameters(value *GoogleContainerClusterTpuConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) validatePutUserManagedKeysConfigParameters(value *GoogleContainerClusterUserManagedKeysConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -861,6 +905,26 @@ func (j *jsiiProxy_GoogleContainerCluster) validateSetDeletionProtectionParamete
 func (j *jsiiProxy_GoogleContainerCluster) validateSetDescriptionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) validateSetDisableL4LbFirewallReconciliationParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil

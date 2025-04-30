@@ -204,7 +204,29 @@ func (g *jsiiProxy_GoogleBigqueryTable) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBigqueryTable) validatePutBiglakeConfigurationParameters(value *GoogleBigqueryTableBiglakeConfiguration) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigqueryTable) validatePutEncryptionConfigurationParameters(value *GoogleBigqueryTableEncryptionConfiguration) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBigqueryTable) validatePutExternalCatalogTableOptionsParameters(value *GoogleBigqueryTableExternalCatalogTableOptions) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -238,6 +260,17 @@ func (g *jsiiProxy_GoogleBigqueryTable) validatePutMaterializedViewParameters(va
 }
 
 func (g *jsiiProxy_GoogleBigqueryTable) validatePutRangePartitioningParameters(value *GoogleBigqueryTableRangePartitioning) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBigqueryTable) validatePutSchemaForeignTypeInfoParameters(value *GoogleBigqueryTableSchemaForeignTypeInfo) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -327,26 +360,6 @@ func validateGoogleBigqueryTable_IsTerraformElementParameters(x interface{}) err
 func validateGoogleBigqueryTable_IsTerraformResourceParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_GoogleBigqueryTable) validateSetAllowResourceTagsOnDeletionParameters(val interface{}) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-	switch val.(type) {
-	case *bool:
-		// ok
-	case bool:
-		// ok
-	case cdktf.IResolvable:
-		// ok
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
-		}
 	}
 
 	return nil
@@ -625,6 +638,14 @@ func (j *jsiiProxy_GoogleBigqueryTable) validateSetSchemaParameters(val *string)
 }
 
 func (j *jsiiProxy_GoogleBigqueryTable) validateSetTableIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleBigqueryTable) validateSetTableMetadataViewParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

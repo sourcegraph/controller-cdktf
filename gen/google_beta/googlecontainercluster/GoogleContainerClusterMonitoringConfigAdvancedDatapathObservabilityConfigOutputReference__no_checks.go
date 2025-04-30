@@ -68,10 +68,6 @@ func (j *jsiiProxy_GoogleContainerClusterMonitoringConfigAdvancedDatapathObserva
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference) validateSetRelayModeParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_GoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

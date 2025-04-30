@@ -68,6 +68,10 @@ func (j *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputRef
 	return nil
 }
 
+func (j *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputReference) validateSetUseTopicSchemaParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputReference) validateSetWriteMetadataParameters(val interface{}) error {
 	return nil
 }

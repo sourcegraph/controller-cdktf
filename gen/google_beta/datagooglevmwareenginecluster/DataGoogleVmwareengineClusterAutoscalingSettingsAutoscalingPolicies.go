@@ -1,0 +1,6 @@
+package datagooglevmwareenginecluster
+
+
+type DataGoogleVmwareengineClusterAutoscalingSettingsAutoscalingPolicies struct {
+}
+

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleloggingbillingaccountexclusion/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_logging_billing_account_exclusion google_logging_billing_account_exclusion}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_logging_billing_account_exclusion google_logging_billing_account_exclusion}.
 type GoogleLoggingBillingAccountExclusion interface {
 	cdktf.TerraformResource
 	BillingAccount() *string
@@ -424,7 +424,7 @@ func (j *jsiiProxy_GoogleLoggingBillingAccountExclusion) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_logging_billing_account_exclusion google_logging_billing_account_exclusion} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_logging_billing_account_exclusion google_logging_billing_account_exclusion} Resource.
 func NewGoogleLoggingBillingAccountExclusion(scope constructs.Construct, id *string, config *GoogleLoggingBillingAccountExclusionConfig) GoogleLoggingBillingAccountExclusion {
 	_init_.Initialize()
 
@@ -442,7 +442,7 @@ func NewGoogleLoggingBillingAccountExclusion(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_logging_billing_account_exclusion google_logging_billing_account_exclusion} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_logging_billing_account_exclusion google_logging_billing_account_exclusion} Resource.
 func NewGoogleLoggingBillingAccountExclusion_Override(g GoogleLoggingBillingAccountExclusion, scope constructs.Construct, id *string, config *GoogleLoggingBillingAccountExclusionConfig) {
 	_init_.Initialize()
 

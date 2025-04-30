@@ -25,6 +25,9 @@ type GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsOutputReference inter
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	ExternalEndpoints() *[]*string
+	SetExternalEndpoints(val *[]*string)
+	ExternalEndpointsInput() *[]*string
 	// Experimental.
 	Fqn() *string
 	InternalLoadBalancers() GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancersList
@@ -64,6 +67,8 @@ type GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsOutputReference inter
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutInternalLoadBalancers(value interface{})
+	ResetExternalEndpoints()
+	ResetInternalLoadBalancers()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -104,6 +109,26 @@ func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsOutputR
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsOutputReference) ExternalEndpoints() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"externalEndpoints",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsOutputReference) ExternalEndpointsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"externalEndpointsInput",
 		&returns,
 	)
 	return returns
@@ -215,6 +240,17 @@ func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsOutputR
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsOutputReference)SetExternalEndpoints(val *[]*string) {
+	if err := j.validateSetExternalEndpointsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"externalEndpoints",
 		val,
 	)
 }
@@ -446,6 +482,22 @@ func (g *jsiiProxy_GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsOutputR
 		g,
 		"putInternalLoadBalancers",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsOutputReference) ResetExternalEndpoints() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetExternalEndpoints",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsOutputReference) ResetInternalLoadBalancers() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetInternalLoadBalancers",
+		nil, // no parameters
 	)
 }
 

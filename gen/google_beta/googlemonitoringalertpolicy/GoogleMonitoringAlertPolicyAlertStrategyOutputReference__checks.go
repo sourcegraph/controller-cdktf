@@ -221,6 +221,14 @@ func (j *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference) vali
 	return nil
 }
 
+func (j *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference) validateSetNotificationPromptsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

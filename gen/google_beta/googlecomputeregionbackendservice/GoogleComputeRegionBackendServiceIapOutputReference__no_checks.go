@@ -56,6 +56,10 @@ func (j *jsiiProxy_GoogleComputeRegionBackendServiceIapOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRegionBackendServiceIapOutputReference) validateSetEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRegionBackendServiceIapOutputReference) validateSetInternalValueParameters(val *GoogleComputeRegionBackendServiceIap) error {
 	return nil
 }

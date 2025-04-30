@@ -132,6 +132,10 @@ func (j *jsiiProxy_GoogleComputeForwardingRule) validateSetIpAddressParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeForwardingRule) validateSetIpCollectionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeForwardingRule) validateSetIpProtocolParameters(val *string) error {
 	return nil
 }

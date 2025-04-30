@@ -100,6 +100,14 @@ func (j *jsiiProxy_GoogleNetworkSecuritySecurityProfileGroup) validateSetCountPa
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetworkSecuritySecurityProfileGroup) validateSetCustomInterceptProfileParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleNetworkSecuritySecurityProfileGroup) validateSetCustomMirroringProfileParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetworkSecuritySecurityProfileGroup) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

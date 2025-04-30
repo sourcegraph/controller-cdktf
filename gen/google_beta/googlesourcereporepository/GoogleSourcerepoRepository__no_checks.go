@@ -104,6 +104,10 @@ func (j *jsiiProxy_GoogleSourcerepoRepository) validateSetCountParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_GoogleSourcerepoRepository) validateSetCreateIgnoreAlreadyExistsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSourcerepoRepository) validateSetIdParameters(val *string) error {
 	return nil
 }

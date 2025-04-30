@@ -10,6 +10,8 @@ import (
 
 type GoogleDatastreamStreamSourceConfigSqlServerSourceConfigOutputReference interface {
 	cdktf.ComplexObject
+	ChangeTables() GoogleDatastreamStreamSourceConfigSqlServerSourceConfigChangeTablesOutputReference
+	ChangeTablesInput() *GoogleDatastreamStreamSourceConfigSqlServerSourceConfigChangeTables
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -47,6 +49,8 @@ type GoogleDatastreamStreamSourceConfigSqlServerSourceConfigOutputReference inte
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TransactionLogs() GoogleDatastreamStreamSourceConfigSqlServerSourceConfigTransactionLogsOutputReference
+	TransactionLogsInput() *GoogleDatastreamStreamSourceConfigSqlServerSourceConfigTransactionLogs
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -71,12 +75,16 @@ type GoogleDatastreamStreamSourceConfigSqlServerSourceConfigOutputReference inte
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutChangeTables(value *GoogleDatastreamStreamSourceConfigSqlServerSourceConfigChangeTables)
 	PutExcludeObjects(value *GoogleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjects)
 	PutIncludeObjects(value *GoogleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjects)
+	PutTransactionLogs(value *GoogleDatastreamStreamSourceConfigSqlServerSourceConfigTransactionLogs)
+	ResetChangeTables()
 	ResetExcludeObjects()
 	ResetIncludeObjects()
 	ResetMaxConcurrentBackfillTasks()
 	ResetMaxConcurrentCdcTasks()
+	ResetTransactionLogs()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -90,6 +98,26 @@ type GoogleDatastreamStreamSourceConfigSqlServerSourceConfigOutputReference inte
 // The jsii proxy struct for GoogleDatastreamStreamSourceConfigSqlServerSourceConfigOutputReference
 type jsiiProxy_GoogleDatastreamStreamSourceConfigSqlServerSourceConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GoogleDatastreamStreamSourceConfigSqlServerSourceConfigOutputReference) ChangeTables() GoogleDatastreamStreamSourceConfigSqlServerSourceConfigChangeTablesOutputReference {
+	var returns GoogleDatastreamStreamSourceConfigSqlServerSourceConfigChangeTablesOutputReference
+	_jsii_.Get(
+		j,
+		"changeTables",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDatastreamStreamSourceConfigSqlServerSourceConfigOutputReference) ChangeTablesInput() *GoogleDatastreamStreamSourceConfigSqlServerSourceConfigChangeTables {
+	var returns *GoogleDatastreamStreamSourceConfigSqlServerSourceConfigChangeTables
+	_jsii_.Get(
+		j,
+		"changeTablesInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleDatastreamStreamSourceConfigSqlServerSourceConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -237,6 +265,26 @@ func (j *jsiiProxy_GoogleDatastreamStreamSourceConfigSqlServerSourceConfigOutput
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDatastreamStreamSourceConfigSqlServerSourceConfigOutputReference) TransactionLogs() GoogleDatastreamStreamSourceConfigSqlServerSourceConfigTransactionLogsOutputReference {
+	var returns GoogleDatastreamStreamSourceConfigSqlServerSourceConfigTransactionLogsOutputReference
+	_jsii_.Get(
+		j,
+		"transactionLogs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDatastreamStreamSourceConfigSqlServerSourceConfigOutputReference) TransactionLogsInput() *GoogleDatastreamStreamSourceConfigSqlServerSourceConfigTransactionLogs {
+	var returns *GoogleDatastreamStreamSourceConfigSqlServerSourceConfigTransactionLogs
+	_jsii_.Get(
+		j,
+		"transactionLogsInput",
 		&returns,
 	)
 	return returns
@@ -533,6 +581,17 @@ func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigSqlServerSourceConfigOutput
 	return returns
 }
 
+func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigSqlServerSourceConfigOutputReference) PutChangeTables(value *GoogleDatastreamStreamSourceConfigSqlServerSourceConfigChangeTables) {
+	if err := g.validatePutChangeTablesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putChangeTables",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigSqlServerSourceConfigOutputReference) PutExcludeObjects(value *GoogleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjects) {
 	if err := g.validatePutExcludeObjectsParameters(value); err != nil {
 		panic(err)
@@ -552,6 +611,25 @@ func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigSqlServerSourceConfigOutput
 		g,
 		"putIncludeObjects",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigSqlServerSourceConfigOutputReference) PutTransactionLogs(value *GoogleDatastreamStreamSourceConfigSqlServerSourceConfigTransactionLogs) {
+	if err := g.validatePutTransactionLogsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putTransactionLogs",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigSqlServerSourceConfigOutputReference) ResetChangeTables() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetChangeTables",
+		nil, // no parameters
 	)
 }
 
@@ -583,6 +661,14 @@ func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigSqlServerSourceConfigOutput
 	_jsii_.InvokeVoid(
 		g,
 		"resetMaxConcurrentCdcTasks",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigSqlServerSourceConfigOutputReference) ResetTransactionLogs() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTransactionLogs",
 		nil, // no parameters
 	)
 }

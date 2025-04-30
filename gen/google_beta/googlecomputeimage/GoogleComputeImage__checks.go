@@ -257,6 +257,50 @@ func (g *jsiiProxy_GoogleComputeImage) validatePutRawDiskParameters(value *Googl
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeImage) validatePutShieldedInstanceInitialStateParameters(value *GoogleComputeImageShieldedInstanceInitialState) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeImage) validatePutSourceDiskEncryptionKeyParameters(value *GoogleComputeImageSourceDiskEncryptionKey) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeImage) validatePutSourceImageEncryptionKeyParameters(value *GoogleComputeImageSourceImageEncryptionKey) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeImage) validatePutSourceSnapshotEncryptionKeyParameters(value *GoogleComputeImageSourceSnapshotEncryptionKey) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeImage) validatePutTimeoutsParameters(value *GoogleComputeImageTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

@@ -35,6 +35,8 @@ type GoogleDatastreamStreamSourceConfigOutputReference interface {
 	OracleSourceConfigInput() *GoogleDatastreamStreamSourceConfigOracleSourceConfig
 	PostgresqlSourceConfig() GoogleDatastreamStreamSourceConfigPostgresqlSourceConfigOutputReference
 	PostgresqlSourceConfigInput() *GoogleDatastreamStreamSourceConfigPostgresqlSourceConfig
+	SalesforceSourceConfig() GoogleDatastreamStreamSourceConfigSalesforceSourceConfigOutputReference
+	SalesforceSourceConfigInput() *GoogleDatastreamStreamSourceConfigSalesforceSourceConfig
 	SourceConnectionProfile() *string
 	SetSourceConnectionProfile(val *string)
 	SourceConnectionProfileInput() *string
@@ -75,10 +77,12 @@ type GoogleDatastreamStreamSourceConfigOutputReference interface {
 	PutMysqlSourceConfig(value *GoogleDatastreamStreamSourceConfigMysqlSourceConfig)
 	PutOracleSourceConfig(value *GoogleDatastreamStreamSourceConfigOracleSourceConfig)
 	PutPostgresqlSourceConfig(value *GoogleDatastreamStreamSourceConfigPostgresqlSourceConfig)
+	PutSalesforceSourceConfig(value *GoogleDatastreamStreamSourceConfigSalesforceSourceConfig)
 	PutSqlServerSourceConfig(value *GoogleDatastreamStreamSourceConfigSqlServerSourceConfig)
 	ResetMysqlSourceConfig()
 	ResetOracleSourceConfig()
 	ResetPostgresqlSourceConfig()
+	ResetSalesforceSourceConfig()
 	ResetSqlServerSourceConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -200,6 +204,26 @@ func (j *jsiiProxy_GoogleDatastreamStreamSourceConfigOutputReference) Postgresql
 	_jsii_.Get(
 		j,
 		"postgresqlSourceConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDatastreamStreamSourceConfigOutputReference) SalesforceSourceConfig() GoogleDatastreamStreamSourceConfigSalesforceSourceConfigOutputReference {
+	var returns GoogleDatastreamStreamSourceConfigSalesforceSourceConfigOutputReference
+	_jsii_.Get(
+		j,
+		"salesforceSourceConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDatastreamStreamSourceConfigOutputReference) SalesforceSourceConfigInput() *GoogleDatastreamStreamSourceConfigSalesforceSourceConfig {
+	var returns *GoogleDatastreamStreamSourceConfigSalesforceSourceConfig
+	_jsii_.Get(
+		j,
+		"salesforceSourceConfigInput",
 		&returns,
 	)
 	return returns
@@ -578,6 +602,17 @@ func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigOutputReference) PutPostgre
 	)
 }
 
+func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigOutputReference) PutSalesforceSourceConfig(value *GoogleDatastreamStreamSourceConfigSalesforceSourceConfig) {
+	if err := g.validatePutSalesforceSourceConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSalesforceSourceConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigOutputReference) PutSqlServerSourceConfig(value *GoogleDatastreamStreamSourceConfigSqlServerSourceConfig) {
 	if err := g.validatePutSqlServerSourceConfigParameters(value); err != nil {
 		panic(err)
@@ -609,6 +644,14 @@ func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigOutputReference) ResetPostg
 	_jsii_.InvokeVoid(
 		g,
 		"resetPostgresqlSourceConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigOutputReference) ResetSalesforceSourceConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSalesforceSourceConfig",
 		nil, // no parameters
 	)
 }

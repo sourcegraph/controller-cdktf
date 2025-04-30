@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOutput
 	return nil
 }
 
+func (g *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference) validatePutDeploymentOverridesParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference) validatePutGitParameters(value *GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncGit) error {
 	return nil
 }
@@ -64,6 +68,10 @@ func (j *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOutput
 	return nil
 }
 
+func (j *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference) validateSetEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference) validateSetInternalValueParameters(val *GoogleGkeHubFeatureMembershipConfigmanagementConfigSync) error {
 	return nil
 }
@@ -77,6 +85,10 @@ func (j *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOutput
 }
 
 func (j *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference) validateSetSourceFormatParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference) validateSetStopSyncingParameters(val interface{}) error {
 	return nil
 }
 

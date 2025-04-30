@@ -41,6 +41,8 @@ type DataGoogleContainerClusterAddonsConfigOutputReference interface {
 	IstioConfig() DataGoogleContainerClusterAddonsConfigIstioConfigList
 	KalmConfig() DataGoogleContainerClusterAddonsConfigKalmConfigList
 	NetworkPolicyConfig() DataGoogleContainerClusterAddonsConfigNetworkPolicyConfigList
+	ParallelstoreCsiDriverConfig() DataGoogleContainerClusterAddonsConfigParallelstoreCsiDriverConfigList
+	RayOperatorConfig() DataGoogleContainerClusterAddonsConfigRayOperatorConfigList
 	StatefulHaConfig() DataGoogleContainerClusterAddonsConfigStatefulHaConfigList
 	// Experimental.
 	TerraformAttribute() *string
@@ -254,6 +256,26 @@ func (j *jsiiProxy_DataGoogleContainerClusterAddonsConfigOutputReference) Networ
 	_jsii_.Get(
 		j,
 		"networkPolicyConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterAddonsConfigOutputReference) ParallelstoreCsiDriverConfig() DataGoogleContainerClusterAddonsConfigParallelstoreCsiDriverConfigList {
+	var returns DataGoogleContainerClusterAddonsConfigParallelstoreCsiDriverConfigList
+	_jsii_.Get(
+		j,
+		"parallelstoreCsiDriverConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterAddonsConfigOutputReference) RayOperatorConfig() DataGoogleContainerClusterAddonsConfigRayOperatorConfigList {
+	var returns DataGoogleContainerClusterAddonsConfigRayOperatorConfigList
+	_jsii_.Get(
+		j,
+		"rayOperatorConfig",
 		&returns,
 	)
 	return returns

@@ -1,0 +1,6 @@
+package googlecomputenetworkfirewallpolicywithrules
+
+
+type GoogleComputeNetworkFirewallPolicyWithRulesPredefinedRules struct {
+}
+

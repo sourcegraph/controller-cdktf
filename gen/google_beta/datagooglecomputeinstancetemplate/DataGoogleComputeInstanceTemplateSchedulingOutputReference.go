@@ -11,6 +11,7 @@ import (
 type DataGoogleComputeInstanceTemplateSchedulingOutputReference interface {
 	cdktf.ComplexObject
 	AutomaticRestart() cdktf.IResolvable
+	AvailabilityDomain() *float64
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -28,6 +29,8 @@ type DataGoogleComputeInstanceTemplateSchedulingOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	GracefulShutdown() DataGoogleComputeInstanceTemplateSchedulingGracefulShutdownList
+	HostErrorTimeoutSeconds() *float64
 	InstanceTerminationAction() *string
 	InternalValue() *DataGoogleComputeInstanceTemplateScheduling
 	SetInternalValue(val *DataGoogleComputeInstanceTemplateScheduling)
@@ -40,6 +43,7 @@ type DataGoogleComputeInstanceTemplateSchedulingOutputReference interface {
 	OnInstanceStopAction() DataGoogleComputeInstanceTemplateSchedulingOnInstanceStopActionList
 	Preemptible() cdktf.IResolvable
 	ProvisioningModel() *string
+	TerminationTime() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -97,6 +101,16 @@ func (j *jsiiProxy_DataGoogleComputeInstanceTemplateSchedulingOutputReference) A
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeInstanceTemplateSchedulingOutputReference) AvailabilityDomain() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"availabilityDomain",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeInstanceTemplateSchedulingOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -132,6 +146,26 @@ func (j *jsiiProxy_DataGoogleComputeInstanceTemplateSchedulingOutputReference) F
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeInstanceTemplateSchedulingOutputReference) GracefulShutdown() DataGoogleComputeInstanceTemplateSchedulingGracefulShutdownList {
+	var returns DataGoogleComputeInstanceTemplateSchedulingGracefulShutdownList
+	_jsii_.Get(
+		j,
+		"gracefulShutdown",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeInstanceTemplateSchedulingOutputReference) HostErrorTimeoutSeconds() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"hostErrorTimeoutSeconds",
 		&returns,
 	)
 	return returns
@@ -242,6 +276,16 @@ func (j *jsiiProxy_DataGoogleComputeInstanceTemplateSchedulingOutputReference) P
 	_jsii_.Get(
 		j,
 		"provisioningModel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeInstanceTemplateSchedulingOutputReference) TerminationTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terminationTime",
 		&returns,
 	)
 	return returns

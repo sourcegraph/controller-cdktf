@@ -52,11 +52,19 @@ func (g *jsiiProxy_GoogleDiscoveryEngineChatEngineChatEngineConfigOutputReferenc
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDiscoveryEngineChatEngineChatEngineConfigOutputReference) validateSetAllowCrossRegionParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDiscoveryEngineChatEngineChatEngineConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_GoogleDiscoveryEngineChatEngineChatEngineConfigOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDiscoveryEngineChatEngineChatEngineConfigOutputReference) validateSetDialogflowAgentToLinkParameters(val *string) error {
 	return nil
 }
 

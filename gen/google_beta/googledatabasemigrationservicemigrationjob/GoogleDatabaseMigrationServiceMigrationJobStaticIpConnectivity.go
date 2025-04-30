@@ -1,0 +1,6 @@
+package googledatabasemigrationservicemigrationjob
+
+
+type GoogleDatabaseMigrationServiceMigrationJobStaticIpConnectivity struct {
+}
+

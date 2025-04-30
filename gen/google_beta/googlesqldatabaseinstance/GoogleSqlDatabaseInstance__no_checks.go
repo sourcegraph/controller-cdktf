@@ -80,6 +80,10 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstance) validatePutReplicaConfigurationPar
 	return nil
 }
 
+func (g *jsiiProxy_GoogleSqlDatabaseInstance) validatePutReplicationClusterParameters(value *GoogleSqlDatabaseInstanceReplicationCluster) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSqlDatabaseInstance) validatePutRestoreBackupContextParameters(value *GoogleSqlDatabaseInstanceRestoreBackupContext) error {
 	return nil
 }
@@ -161,6 +165,10 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstance) validateSetProvisionersParameters(
 }
 
 func (j *jsiiProxy_GoogleSqlDatabaseInstance) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstance) validateSetReplicaNamesParameters(val *[]*string) error {
 	return nil
 }
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlesecretmanagersecretiambinding/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_secret_manager_secret_iam_binding google_secret_manager_secret_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_secret_manager_secret_iam_binding google_secret_manager_secret_iam_binding}.
 type GoogleSecretManagerSecretIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -435,7 +435,7 @@ func (j *jsiiProxy_GoogleSecretManagerSecretIamBinding) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_secret_manager_secret_iam_binding google_secret_manager_secret_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_secret_manager_secret_iam_binding google_secret_manager_secret_iam_binding} Resource.
 func NewGoogleSecretManagerSecretIamBinding(scope constructs.Construct, id *string, config *GoogleSecretManagerSecretIamBindingConfig) GoogleSecretManagerSecretIamBinding {
 	_init_.Initialize()
 
@@ -453,7 +453,7 @@ func NewGoogleSecretManagerSecretIamBinding(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_secret_manager_secret_iam_binding google_secret_manager_secret_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_secret_manager_secret_iam_binding google_secret_manager_secret_iam_binding} Resource.
 func NewGoogleSecretManagerSecretIamBinding_Override(g GoogleSecretManagerSecretIamBinding, scope constructs.Construct, id *string, config *GoogleSecretManagerSecretIamBindingConfig) {
 	_init_.Initialize()
 

@@ -52,6 +52,14 @@ func (g *jsiiProxy_GoogleClouddeployAutomationRulesOutputReference) validatePutP
 	return nil
 }
 
+func (g *jsiiProxy_GoogleClouddeployAutomationRulesOutputReference) validatePutRepairRolloutRuleParameters(value *GoogleClouddeployAutomationRulesRepairRolloutRule) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleClouddeployAutomationRulesOutputReference) validatePutTimedPromoteReleaseRuleParameters(value *GoogleClouddeployAutomationRulesTimedPromoteReleaseRule) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleClouddeployAutomationRulesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

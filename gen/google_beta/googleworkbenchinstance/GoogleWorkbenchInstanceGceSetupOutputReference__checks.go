@@ -132,6 +132,17 @@ func (g *jsiiProxy_GoogleWorkbenchInstanceGceSetupOutputReference) validatePutBo
 	return nil
 }
 
+func (g *jsiiProxy_GoogleWorkbenchInstanceGceSetupOutputReference) validatePutConfidentialInstanceConfigParameters(value *GoogleWorkbenchInstanceGceSetupConfidentialInstanceConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleWorkbenchInstanceGceSetupOutputReference) validatePutContainerImageParameters(value *GoogleWorkbenchInstanceGceSetupContainerImage) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

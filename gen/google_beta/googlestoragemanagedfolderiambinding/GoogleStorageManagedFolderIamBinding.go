@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlestoragemanagedfolderiambinding/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_storage_managed_folder_iam_binding google_storage_managed_folder_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_storage_managed_folder_iam_binding google_storage_managed_folder_iam_binding}.
 type GoogleStorageManagedFolderIamBinding interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -434,7 +434,7 @@ func (j *jsiiProxy_GoogleStorageManagedFolderIamBinding) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_storage_managed_folder_iam_binding google_storage_managed_folder_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_storage_managed_folder_iam_binding google_storage_managed_folder_iam_binding} Resource.
 func NewGoogleStorageManagedFolderIamBinding(scope constructs.Construct, id *string, config *GoogleStorageManagedFolderIamBindingConfig) GoogleStorageManagedFolderIamBinding {
 	_init_.Initialize()
 
@@ -452,7 +452,7 @@ func NewGoogleStorageManagedFolderIamBinding(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_storage_managed_folder_iam_binding google_storage_managed_folder_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_storage_managed_folder_iam_binding google_storage_managed_folder_iam_binding} Resource.
 func NewGoogleStorageManagedFolderIamBinding_Override(g GoogleStorageManagedFolderIamBinding, scope constructs.Construct, id *string, config *GoogleStorageManagedFolderIamBindingConfig) {
 	_init_.Initialize()
 

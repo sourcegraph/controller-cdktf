@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleComputeRegionBackendServiceBackendOutputReference) vali
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeRegionBackendServiceBackendOutputReference) validatePutCustomMetricsParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRegionBackendServiceBackendOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

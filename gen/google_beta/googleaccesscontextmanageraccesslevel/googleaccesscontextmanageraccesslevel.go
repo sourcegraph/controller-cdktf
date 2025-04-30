@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleaccesscontextmanageraccesslevel/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_access_context_manager_access_level google_access_context_manager_access_level}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_access_context_manager_access_level google_access_context_manager_access_level}.
 type GoogleAccessContextManagerAccessLevel interface {
 	cdktf.TerraformResource
 	Basic() GoogleAccessContextManagerAccessLevelBasicOutputReference
@@ -472,7 +472,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessLevel) TitleInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_access_context_manager_access_level google_access_context_manager_access_level} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_access_context_manager_access_level google_access_context_manager_access_level} Resource.
 func NewGoogleAccessContextManagerAccessLevel(scope constructs.Construct, id *string, config *GoogleAccessContextManagerAccessLevelConfig) GoogleAccessContextManagerAccessLevel {
 	_init_.Initialize()
 
@@ -490,7 +490,7 @@ func NewGoogleAccessContextManagerAccessLevel(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_access_context_manager_access_level google_access_context_manager_access_level} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_access_context_manager_access_level google_access_context_manager_access_level} Resource.
 func NewGoogleAccessContextManagerAccessLevel_Override(g GoogleAccessContextManagerAccessLevel, scope constructs.Construct, id *string, config *GoogleAccessContextManagerAccessLevelConfig) {
 	_init_.Initialize()
 

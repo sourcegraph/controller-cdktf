@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlevertexaifeaturegroupfeature/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_vertex_ai_feature_group_feature google_vertex_ai_feature_group_feature}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_vertex_ai_feature_group_feature google_vertex_ai_feature_group_feature}.
 type GoogleVertexAiFeatureGroupFeature interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -540,7 +540,7 @@ func (j *jsiiProxy_GoogleVertexAiFeatureGroupFeature) VersionColumnNameInput() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_vertex_ai_feature_group_feature google_vertex_ai_feature_group_feature} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_vertex_ai_feature_group_feature google_vertex_ai_feature_group_feature} Resource.
 func NewGoogleVertexAiFeatureGroupFeature(scope constructs.Construct, id *string, config *GoogleVertexAiFeatureGroupFeatureConfig) GoogleVertexAiFeatureGroupFeature {
 	_init_.Initialize()
 
@@ -558,7 +558,7 @@ func NewGoogleVertexAiFeatureGroupFeature(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_vertex_ai_feature_group_feature google_vertex_ai_feature_group_feature} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_vertex_ai_feature_group_feature google_vertex_ai_feature_group_feature} Resource.
 func NewGoogleVertexAiFeatureGroupFeature_Override(g GoogleVertexAiFeatureGroupFeature, scope constructs.Construct, id *string, config *GoogleVertexAiFeatureGroupFeatureConfig) {
 	_init_.Initialize()
 

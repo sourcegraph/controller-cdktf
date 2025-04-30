@@ -96,6 +96,10 @@ func (g *jsiiProxy_GoogleContainerCluster) validatePutConfidentialNodesParameter
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) validatePutControlPlaneEndpointsConfigParameters(value *GoogleContainerClusterControlPlaneEndpointsConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) validatePutCostManagementConfigParameters(value *GoogleContainerClusterCostManagementConfig) error {
 	return nil
 }
@@ -113,6 +117,10 @@ func (g *jsiiProxy_GoogleContainerCluster) validatePutDnsConfigParameters(value 
 }
 
 func (g *jsiiProxy_GoogleContainerCluster) validatePutEnableK8SBetaApisParameters(value *GoogleContainerClusterEnableK8SBetaApis) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) validatePutEnterpriseConfigParameters(value *GoogleContainerClusterEnterpriseConfig) error {
 	return nil
 }
 
@@ -180,6 +188,10 @@ func (g *jsiiProxy_GoogleContainerCluster) validatePutNotificationConfigParamete
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) validatePutPodAutoscalingParameters(value *GoogleContainerClusterPodAutoscaling) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) validatePutPodSecurityPolicyConfigParameters(value *GoogleContainerClusterPodSecurityPolicyConfig) error {
 	return nil
 }
@@ -217,6 +229,10 @@ func (g *jsiiProxy_GoogleContainerCluster) validatePutTimeoutsParameters(value *
 }
 
 func (g *jsiiProxy_GoogleContainerCluster) validatePutTpuConfigParameters(value *GoogleContainerClusterTpuConfig) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) validatePutUserManagedKeysConfigParameters(value *GoogleContainerClusterUserManagedKeysConfig) error {
 	return nil
 }
 
@@ -277,6 +293,10 @@ func (j *jsiiProxy_GoogleContainerCluster) validateSetDeletionProtectionParamete
 }
 
 func (j *jsiiProxy_GoogleContainerCluster) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) validateSetDisableL4LbFirewallReconciliationParameters(val interface{}) error {
 	return nil
 }
 

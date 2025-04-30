@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllOutputReference) validatePut
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllOutputReference) validatePutSalesforceExcludedObjectsParameters(value *GoogleDatastreamStreamBackfillAllSalesforceExcludedObjects) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllOutputReference) validatePutSqlServerExcludedObjectsParameters(value *GoogleDatastreamStreamBackfillAllSqlServerExcludedObjects) error {
 	return nil
 }

@@ -90,7 +90,29 @@ func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigMysqlSourceConfigOutputRefe
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigMysqlSourceConfigOutputReference) validatePutBinaryLogPositionParameters(value *GoogleDatastreamStreamSourceConfigMysqlSourceConfigBinaryLogPosition) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigMysqlSourceConfigOutputReference) validatePutExcludeObjectsParameters(value *GoogleDatastreamStreamSourceConfigMysqlSourceConfigExcludeObjects) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigMysqlSourceConfigOutputReference) validatePutGtidParameters(value *GoogleDatastreamStreamSourceConfigMysqlSourceConfigGtid) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

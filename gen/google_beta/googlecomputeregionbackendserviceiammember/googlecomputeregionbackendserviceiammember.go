@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeregionbackendserviceiammember/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_region_backend_service_iam_member google_compute_region_backend_service_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_region_backend_service_iam_member google_compute_region_backend_service_iam_member}.
 type GoogleComputeRegionBackendServiceIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -459,7 +459,7 @@ func (j *jsiiProxy_GoogleComputeRegionBackendServiceIamMember) TerraformResource
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_region_backend_service_iam_member google_compute_region_backend_service_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_region_backend_service_iam_member google_compute_region_backend_service_iam_member} Resource.
 func NewGoogleComputeRegionBackendServiceIamMember(scope constructs.Construct, id *string, config *GoogleComputeRegionBackendServiceIamMemberConfig) GoogleComputeRegionBackendServiceIamMember {
 	_init_.Initialize()
 
@@ -477,7 +477,7 @@ func NewGoogleComputeRegionBackendServiceIamMember(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_region_backend_service_iam_member google_compute_region_backend_service_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_region_backend_service_iam_member google_compute_region_backend_service_iam_member} Resource.
 func NewGoogleComputeRegionBackendServiceIamMember_Override(g GoogleComputeRegionBackendServiceIamMember, scope constructs.Construct, id *string, config *GoogleComputeRegionBackendServiceIamMemberConfig) {
 	_init_.Initialize()
 

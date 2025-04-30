@@ -128,6 +128,10 @@ func (j *jsiiProxy_GoogleServiceNetworkingConnection) validateSetServiceParamete
 	return nil
 }
 
+func (j *jsiiProxy_GoogleServiceNetworkingConnection) validateSetUpdateOnCreationFailParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewGoogleServiceNetworkingConnectionParameters(scope constructs.Construct, id *string, config *GoogleServiceNetworkingConnectionConfig) error {
 	return nil
 }

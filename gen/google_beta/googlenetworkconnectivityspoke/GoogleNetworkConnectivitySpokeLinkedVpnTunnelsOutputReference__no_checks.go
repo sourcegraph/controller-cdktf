@@ -56,6 +56,10 @@ func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedVpnTunnelsOutputReference
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedVpnTunnelsOutputReference) validateSetIncludeImportRangesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedVpnTunnelsOutputReference) validateSetInternalValueParameters(val *GoogleNetworkConnectivitySpokeLinkedVpnTunnels) error {
 	return nil
 }

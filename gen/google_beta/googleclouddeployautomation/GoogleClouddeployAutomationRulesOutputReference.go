@@ -33,6 +33,8 @@ type GoogleClouddeployAutomationRulesOutputReference interface {
 	SetInternalValue(val interface{})
 	PromoteReleaseRule() GoogleClouddeployAutomationRulesPromoteReleaseRuleOutputReference
 	PromoteReleaseRuleInput() *GoogleClouddeployAutomationRulesPromoteReleaseRule
+	RepairRolloutRule() GoogleClouddeployAutomationRulesRepairRolloutRuleOutputReference
+	RepairRolloutRuleInput() *GoogleClouddeployAutomationRulesRepairRolloutRule
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -41,6 +43,8 @@ type GoogleClouddeployAutomationRulesOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TimedPromoteReleaseRule() GoogleClouddeployAutomationRulesTimedPromoteReleaseRuleOutputReference
+	TimedPromoteReleaseRuleInput() *GoogleClouddeployAutomationRulesTimedPromoteReleaseRule
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -67,8 +71,12 @@ type GoogleClouddeployAutomationRulesOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAdvanceRolloutRule(value *GoogleClouddeployAutomationRulesAdvanceRolloutRule)
 	PutPromoteReleaseRule(value *GoogleClouddeployAutomationRulesPromoteReleaseRule)
+	PutRepairRolloutRule(value *GoogleClouddeployAutomationRulesRepairRolloutRule)
+	PutTimedPromoteReleaseRule(value *GoogleClouddeployAutomationRulesTimedPromoteReleaseRule)
 	ResetAdvanceRolloutRule()
 	ResetPromoteReleaseRule()
+	ResetRepairRolloutRule()
+	ResetTimedPromoteReleaseRule()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -174,6 +182,26 @@ func (j *jsiiProxy_GoogleClouddeployAutomationRulesOutputReference) PromoteRelea
 	return returns
 }
 
+func (j *jsiiProxy_GoogleClouddeployAutomationRulesOutputReference) RepairRolloutRule() GoogleClouddeployAutomationRulesRepairRolloutRuleOutputReference {
+	var returns GoogleClouddeployAutomationRulesRepairRolloutRuleOutputReference
+	_jsii_.Get(
+		j,
+		"repairRolloutRule",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleClouddeployAutomationRulesOutputReference) RepairRolloutRuleInput() *GoogleClouddeployAutomationRulesRepairRolloutRule {
+	var returns *GoogleClouddeployAutomationRulesRepairRolloutRule
+	_jsii_.Get(
+		j,
+		"repairRolloutRuleInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleClouddeployAutomationRulesOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -189,6 +217,26 @@ func (j *jsiiProxy_GoogleClouddeployAutomationRulesOutputReference) TerraformRes
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleClouddeployAutomationRulesOutputReference) TimedPromoteReleaseRule() GoogleClouddeployAutomationRulesTimedPromoteReleaseRuleOutputReference {
+	var returns GoogleClouddeployAutomationRulesTimedPromoteReleaseRuleOutputReference
+	_jsii_.Get(
+		j,
+		"timedPromoteReleaseRule",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleClouddeployAutomationRulesOutputReference) TimedPromoteReleaseRuleInput() *GoogleClouddeployAutomationRulesTimedPromoteReleaseRule {
+	var returns *GoogleClouddeployAutomationRulesTimedPromoteReleaseRule
+	_jsii_.Get(
+		j,
+		"timedPromoteReleaseRuleInput",
 		&returns,
 	)
 	return returns
@@ -485,6 +533,28 @@ func (g *jsiiProxy_GoogleClouddeployAutomationRulesOutputReference) PutPromoteRe
 	)
 }
 
+func (g *jsiiProxy_GoogleClouddeployAutomationRulesOutputReference) PutRepairRolloutRule(value *GoogleClouddeployAutomationRulesRepairRolloutRule) {
+	if err := g.validatePutRepairRolloutRuleParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putRepairRolloutRule",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleClouddeployAutomationRulesOutputReference) PutTimedPromoteReleaseRule(value *GoogleClouddeployAutomationRulesTimedPromoteReleaseRule) {
+	if err := g.validatePutTimedPromoteReleaseRuleParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putTimedPromoteReleaseRule",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleClouddeployAutomationRulesOutputReference) ResetAdvanceRolloutRule() {
 	_jsii_.InvokeVoid(
 		g,
@@ -497,6 +567,22 @@ func (g *jsiiProxy_GoogleClouddeployAutomationRulesOutputReference) ResetPromote
 	_jsii_.InvokeVoid(
 		g,
 		"resetPromoteReleaseRule",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleClouddeployAutomationRulesOutputReference) ResetRepairRolloutRule() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRepairRolloutRule",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleClouddeployAutomationRulesOutputReference) ResetTimedPromoteReleaseRule() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTimedPromoteReleaseRule",
 		nil, // no parameters
 	)
 }

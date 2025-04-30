@@ -27,6 +27,8 @@ type GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetCadenceOutputRe
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	InspectTemplateModifiedCadence() GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetCadenceInspectTemplateModifiedCadenceOutputReference
+	InspectTemplateModifiedCadenceInput() *GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetCadenceInspectTemplateModifiedCadence
 	InternalValue() *GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetCadence
 	SetInternalValue(val *GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetCadence)
 	SchemaModifiedCadence() GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetCadenceSchemaModifiedCadenceOutputReference
@@ -65,8 +67,10 @@ type GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetCadenceOutputRe
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutInspectTemplateModifiedCadence(value *GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetCadenceInspectTemplateModifiedCadence)
 	PutSchemaModifiedCadence(value *GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetCadenceSchemaModifiedCadence)
 	PutTableModifiedCadence(value *GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetCadenceTableModifiedCadence)
+	ResetInspectTemplateModifiedCadence()
 	ResetSchemaModifiedCadence()
 	ResetTableModifiedCadence()
 	// Produce the Token's value at resolution time.
@@ -119,6 +123,26 @@ func (j *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetC
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetCadenceOutputReference) InspectTemplateModifiedCadence() GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetCadenceInspectTemplateModifiedCadenceOutputReference {
+	var returns GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetCadenceInspectTemplateModifiedCadenceOutputReference
+	_jsii_.Get(
+		j,
+		"inspectTemplateModifiedCadence",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetCadenceOutputReference) InspectTemplateModifiedCadenceInput() *GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetCadenceInspectTemplateModifiedCadence {
+	var returns *GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetCadenceInspectTemplateModifiedCadence
+	_jsii_.Get(
+		j,
+		"inspectTemplateModifiedCadenceInput",
 		&returns,
 	)
 	return returns
@@ -463,6 +487,17 @@ func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetC
 	return returns
 }
 
+func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetCadenceOutputReference) PutInspectTemplateModifiedCadence(value *GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetCadenceInspectTemplateModifiedCadence) {
+	if err := g.validatePutInspectTemplateModifiedCadenceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putInspectTemplateModifiedCadence",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetCadenceOutputReference) PutSchemaModifiedCadence(value *GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetCadenceSchemaModifiedCadence) {
 	if err := g.validatePutSchemaModifiedCadenceParameters(value); err != nil {
 		panic(err)
@@ -482,6 +517,14 @@ func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetC
 		g,
 		"putTableModifiedCadence",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetCadenceOutputReference) ResetInspectTemplateModifiedCadence() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetInspectTemplateModifiedCadence",
+		nil, // no parameters
 	)
 }
 

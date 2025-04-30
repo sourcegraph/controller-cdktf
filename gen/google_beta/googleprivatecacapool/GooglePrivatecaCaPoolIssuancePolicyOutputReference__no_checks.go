@@ -64,6 +64,10 @@ func (g *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyOutputReference) validateR
 	return nil
 }
 
+func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyOutputReference) validateSetBackdateDurationParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

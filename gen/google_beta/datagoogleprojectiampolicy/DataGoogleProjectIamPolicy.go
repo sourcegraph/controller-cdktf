@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagoogleprojectiampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_project_iam_policy google_project_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_project_iam_policy google_project_iam_policy}.
 type DataGoogleProjectIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -307,7 +307,7 @@ func (j *jsiiProxy_DataGoogleProjectIamPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_project_iam_policy google_project_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_project_iam_policy google_project_iam_policy} Data Source.
 func NewDataGoogleProjectIamPolicy(scope constructs.Construct, id *string, config *DataGoogleProjectIamPolicyConfig) DataGoogleProjectIamPolicy {
 	_init_.Initialize()
 
@@ -325,7 +325,7 @@ func NewDataGoogleProjectIamPolicy(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_project_iam_policy google_project_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_project_iam_policy google_project_iam_policy} Data Source.
 func NewDataGoogleProjectIamPolicy_Override(d DataGoogleProjectIamPolicy, scope constructs.Construct, id *string, config *DataGoogleProjectIamPolicyConfig) {
 	_init_.Initialize()
 

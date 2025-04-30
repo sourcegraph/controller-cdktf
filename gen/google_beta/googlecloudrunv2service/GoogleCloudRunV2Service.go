@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecloudrunv2service/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_cloud_run_v2_service google_cloud_run_v2_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_cloud_run_v2_service google_cloud_run_v2_service}.
 type GoogleCloudRunV2Service interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -17,6 +17,8 @@ type GoogleCloudRunV2Service interface {
 	AnnotationsInput() *map[string]*string
 	BinaryAuthorization() GoogleCloudRunV2ServiceBinaryAuthorizationOutputReference
 	BinaryAuthorizationInput() *GoogleCloudRunV2ServiceBinaryAuthorization
+	BuildConfig() GoogleCloudRunV2ServiceBuildConfigOutputReference
+	BuildConfigInput() *GoogleCloudRunV2ServiceBuildConfig
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Client() *string
@@ -45,6 +47,9 @@ type GoogleCloudRunV2Service interface {
 	SetDefaultUriDisabled(val interface{})
 	DefaultUriDisabledInput() interface{}
 	DeleteTime() *string
+	DeletionProtection() interface{}
+	SetDeletionProtection(val interface{})
+	DeletionProtectionInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -65,12 +70,18 @@ type GoogleCloudRunV2Service interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Generation() *string
+	IapEnabled() interface{}
+	SetIapEnabled(val interface{})
+	IapEnabledInput() interface{}
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
 	Ingress() *string
 	SetIngress(val *string)
 	IngressInput() *string
+	InvokerIamDisabled() interface{}
+	SetInvokerIamDisabled(val interface{})
+	InvokerIamDisabledInput() interface{}
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
 	LabelsInput() *map[string]*string
@@ -127,6 +138,7 @@ type GoogleCloudRunV2Service interface {
 	Uid() *string
 	UpdateTime() *string
 	Uri() *string
+	Urls() *[]*string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -171,19 +183,24 @@ type GoogleCloudRunV2Service interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutBinaryAuthorization(value *GoogleCloudRunV2ServiceBinaryAuthorization)
+	PutBuildConfig(value *GoogleCloudRunV2ServiceBuildConfig)
 	PutScaling(value *GoogleCloudRunV2ServiceScaling)
 	PutTemplate(value *GoogleCloudRunV2ServiceTemplate)
 	PutTimeouts(value *GoogleCloudRunV2ServiceTimeouts)
 	PutTraffic(value interface{})
 	ResetAnnotations()
 	ResetBinaryAuthorization()
+	ResetBuildConfig()
 	ResetClient()
 	ResetClientVersion()
 	ResetCustomAudiences()
 	ResetDefaultUriDisabled()
+	ResetDeletionProtection()
 	ResetDescription()
+	ResetIapEnabled()
 	ResetId()
 	ResetIngress()
+	ResetInvokerIamDisabled()
 	ResetLabels()
 	ResetLaunchStage()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -246,6 +263,26 @@ func (j *jsiiProxy_GoogleCloudRunV2Service) BinaryAuthorizationInput() *GoogleCl
 	_jsii_.Get(
 		j,
 		"binaryAuthorizationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2Service) BuildConfig() GoogleCloudRunV2ServiceBuildConfigOutputReference {
+	var returns GoogleCloudRunV2ServiceBuildConfigOutputReference
+	_jsii_.Get(
+		j,
+		"buildConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2Service) BuildConfigInput() *GoogleCloudRunV2ServiceBuildConfig {
+	var returns *GoogleCloudRunV2ServiceBuildConfig
+	_jsii_.Get(
+		j,
+		"buildConfigInput",
 		&returns,
 	)
 	return returns
@@ -411,6 +448,26 @@ func (j *jsiiProxy_GoogleCloudRunV2Service) DeleteTime() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleCloudRunV2Service) DeletionProtection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2Service) DeletionProtectionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtectionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleCloudRunV2Service) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -521,6 +578,26 @@ func (j *jsiiProxy_GoogleCloudRunV2Service) Generation() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleCloudRunV2Service) IapEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"iapEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2Service) IapEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"iapEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleCloudRunV2Service) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -556,6 +633,26 @@ func (j *jsiiProxy_GoogleCloudRunV2Service) IngressInput() *string {
 	_jsii_.Get(
 		j,
 		"ingressInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2Service) InvokerIamDisabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"invokerIamDisabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2Service) InvokerIamDisabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"invokerIamDisabledInput",
 		&returns,
 	)
 	return returns
@@ -931,8 +1028,18 @@ func (j *jsiiProxy_GoogleCloudRunV2Service) Uri() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleCloudRunV2Service) Urls() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"urls",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_cloud_run_v2_service google_cloud_run_v2_service} Resource.
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_cloud_run_v2_service google_cloud_run_v2_service} Resource.
 func NewGoogleCloudRunV2Service(scope constructs.Construct, id *string, config *GoogleCloudRunV2ServiceConfig) GoogleCloudRunV2Service {
 	_init_.Initialize()
 
@@ -950,7 +1057,7 @@ func NewGoogleCloudRunV2Service(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_cloud_run_v2_service google_cloud_run_v2_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_cloud_run_v2_service google_cloud_run_v2_service} Resource.
 func NewGoogleCloudRunV2Service_Override(g GoogleCloudRunV2Service, scope constructs.Construct, id *string, config *GoogleCloudRunV2ServiceConfig) {
 	_init_.Initialize()
 
@@ -1038,6 +1145,17 @@ func (j *jsiiProxy_GoogleCloudRunV2Service)SetDefaultUriDisabled(val interface{}
 	)
 }
 
+func (j *jsiiProxy_GoogleCloudRunV2Service)SetDeletionProtection(val interface{}) {
+	if err := j.validateSetDeletionProtectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deletionProtection",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleCloudRunV2Service)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
@@ -1065,6 +1183,17 @@ func (j *jsiiProxy_GoogleCloudRunV2Service)SetForEach(val cdktf.ITerraformIterat
 	)
 }
 
+func (j *jsiiProxy_GoogleCloudRunV2Service)SetIapEnabled(val interface{}) {
+	if err := j.validateSetIapEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"iapEnabled",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleCloudRunV2Service)SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
@@ -1083,6 +1212,17 @@ func (j *jsiiProxy_GoogleCloudRunV2Service)SetIngress(val *string) {
 	_jsii_.Set(
 		j,
 		"ingress",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2Service)SetInvokerIamDisabled(val interface{}) {
+	if err := j.validateSetInvokerIamDisabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"invokerIamDisabled",
 		val,
 	)
 }
@@ -1536,6 +1676,17 @@ func (g *jsiiProxy_GoogleCloudRunV2Service) PutBinaryAuthorization(value *Google
 	)
 }
 
+func (g *jsiiProxy_GoogleCloudRunV2Service) PutBuildConfig(value *GoogleCloudRunV2ServiceBuildConfig) {
+	if err := g.validatePutBuildConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putBuildConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleCloudRunV2Service) PutScaling(value *GoogleCloudRunV2ServiceScaling) {
 	if err := g.validatePutScalingParameters(value); err != nil {
 		panic(err)
@@ -1596,6 +1747,14 @@ func (g *jsiiProxy_GoogleCloudRunV2Service) ResetBinaryAuthorization() {
 	)
 }
 
+func (g *jsiiProxy_GoogleCloudRunV2Service) ResetBuildConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetBuildConfig",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleCloudRunV2Service) ResetClient() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1628,10 +1787,26 @@ func (g *jsiiProxy_GoogleCloudRunV2Service) ResetDefaultUriDisabled() {
 	)
 }
 
+func (g *jsiiProxy_GoogleCloudRunV2Service) ResetDeletionProtection() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDeletionProtection",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleCloudRunV2Service) ResetDescription() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudRunV2Service) ResetIapEnabled() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIapEnabled",
 		nil, // no parameters
 	)
 }
@@ -1648,6 +1823,14 @@ func (g *jsiiProxy_GoogleCloudRunV2Service) ResetIngress() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetIngress",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudRunV2Service) ResetInvokerIamDisabled() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetInvokerIamDisabled",
 		nil, // no parameters
 	)
 }

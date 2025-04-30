@@ -36,6 +36,7 @@ type DataGoogleContainerClusterNodePoolNodeConfigOutputReference interface {
 	EphemeralStorageConfig() DataGoogleContainerClusterNodePoolNodeConfigEphemeralStorageConfigList
 	EphemeralStorageLocalSsdConfig() DataGoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigList
 	FastSocket() DataGoogleContainerClusterNodePoolNodeConfigFastSocketList
+	FlexStart() cdktf.IResolvable
 	// Experimental.
 	Fqn() *string
 	GcfsConfig() DataGoogleContainerClusterNodePoolNodeConfigGcfsConfigList
@@ -50,8 +51,10 @@ type DataGoogleContainerClusterNodePoolNodeConfigOutputReference interface {
 	LinuxNodeConfig() DataGoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigList
 	LocalNvmeSsdBlockConfig() DataGoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigList
 	LocalSsdCount() *float64
+	LocalSsdEncryptionMode() *string
 	LoggingVariant() *string
 	MachineType() *string
+	MaxRunDuration() *string
 	Metadata() cdktf.StringMap
 	MinCpuPlatform() *string
 	NodeGroup() *string
@@ -66,6 +69,7 @@ type DataGoogleContainerClusterNodePoolNodeConfigOutputReference interface {
 	ShieldedInstanceConfig() DataGoogleContainerClusterNodePoolNodeConfigShieldedInstanceConfigList
 	SoleTenantConfig() DataGoogleContainerClusterNodePoolNodeConfigSoleTenantConfigList
 	Spot() cdktf.IResolvable
+	StoragePools() *[]*string
 	Tags() *[]*string
 	Taint() DataGoogleContainerClusterNodePoolNodeConfigTaintList
 	// Experimental.
@@ -76,6 +80,7 @@ type DataGoogleContainerClusterNodePoolNodeConfigOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	WindowsNodeConfig() DataGoogleContainerClusterNodePoolNodeConfigWindowsNodeConfigList
 	WorkloadMetadataConfig() DataGoogleContainerClusterNodePoolNodeConfigWorkloadMetadataConfigList
 	// Experimental.
 	ComputeFqn() *string
@@ -256,6 +261,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigOutputReference) 
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigOutputReference) FlexStart() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"flexStart",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -376,6 +391,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigOutputReference) 
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigOutputReference) LocalSsdEncryptionMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"localSsdEncryptionMode",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigOutputReference) LoggingVariant() *string {
 	var returns *string
 	_jsii_.Get(
@@ -391,6 +416,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigOutputReference) 
 	_jsii_.Get(
 		j,
 		"machineType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigOutputReference) MaxRunDuration() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maxRunDuration",
 		&returns,
 	)
 	return returns
@@ -536,6 +571,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigOutputReference) 
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigOutputReference) StoragePools() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"storagePools",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigOutputReference) Tags() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -571,6 +616,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigOutputReference) 
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigOutputReference) WindowsNodeConfig() DataGoogleContainerClusterNodePoolNodeConfigWindowsNodeConfigList {
+	var returns DataGoogleContainerClusterNodePoolNodeConfigWindowsNodeConfigList
+	_jsii_.Get(
+		j,
+		"windowsNodeConfig",
 		&returns,
 	)
 	return returns

@@ -35,6 +35,9 @@ type GoogleGkeHubFeatureMembershipConfigmanagementOutputReference interface {
 	HierarchyControllerInput() *GoogleGkeHubFeatureMembershipConfigmanagementHierarchyController
 	InternalValue() *GoogleGkeHubFeatureMembershipConfigmanagement
 	SetInternalValue(val *GoogleGkeHubFeatureMembershipConfigmanagement)
+	Management() *string
+	SetManagement(val *string)
+	ManagementInput() *string
 	PolicyController() GoogleGkeHubFeatureMembershipConfigmanagementPolicyControllerOutputReference
 	PolicyControllerInput() *GoogleGkeHubFeatureMembershipConfigmanagementPolicyController
 	// Experimental.
@@ -79,6 +82,7 @@ type GoogleGkeHubFeatureMembershipConfigmanagementOutputReference interface {
 	ResetBinauthz()
 	ResetConfigSync()
 	ResetHierarchyController()
+	ResetManagement()
 	ResetPolicyController()
 	ResetVersion()
 	// Produce the Token's value at resolution time.
@@ -206,6 +210,26 @@ func (j *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementOutputReference)
 	return returns
 }
 
+func (j *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementOutputReference) Management() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"management",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementOutputReference) ManagementInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"managementInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementOutputReference) PolicyController() GoogleGkeHubFeatureMembershipConfigmanagementPolicyControllerOutputReference {
 	var returns GoogleGkeHubFeatureMembershipConfigmanagementPolicyControllerOutputReference
 	_jsii_.Get(
@@ -323,6 +347,17 @@ func (j *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementOutputReference)
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementOutputReference)SetManagement(val *string) {
+	if err := j.validateSetManagementParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"management",
 		val,
 	)
 }
@@ -610,6 +645,14 @@ func (g *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementOutputReference)
 	_jsii_.InvokeVoid(
 		g,
 		"resetHierarchyController",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementOutputReference) ResetManagement() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetManagement",
 		nil, // no parameters
 	)
 }

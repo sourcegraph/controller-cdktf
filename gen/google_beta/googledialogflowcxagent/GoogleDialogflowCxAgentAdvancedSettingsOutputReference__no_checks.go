@@ -52,6 +52,14 @@ func (g *jsiiProxy_GoogleDialogflowCxAgentAdvancedSettingsOutputReference) valid
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDialogflowCxAgentAdvancedSettingsOutputReference) validatePutLoggingSettingsParameters(value *GoogleDialogflowCxAgentAdvancedSettingsLoggingSettings) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDialogflowCxAgentAdvancedSettingsOutputReference) validatePutSpeechSettingsParameters(value *GoogleDialogflowCxAgentAdvancedSettingsSpeechSettings) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDialogflowCxAgentAdvancedSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
