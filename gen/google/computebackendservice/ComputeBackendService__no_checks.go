@@ -88,6 +88,10 @@ func (c *jsiiProxy_ComputeBackendService) validatePutConsistentHashParameters(va
 	return nil
 }
 
+func (c *jsiiProxy_ComputeBackendService) validatePutCustomMetricsParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeBackendService) validatePutIapParameters(value *ComputeBackendServiceIap) error {
 	return nil
 }
@@ -100,11 +104,19 @@ func (c *jsiiProxy_ComputeBackendService) validatePutLogConfigParameters(value *
 	return nil
 }
 
+func (c *jsiiProxy_ComputeBackendService) validatePutMaxStreamDurationParameters(value *ComputeBackendServiceMaxStreamDuration) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeBackendService) validatePutOutlierDetectionParameters(value *ComputeBackendServiceOutlierDetection) error {
 	return nil
 }
 
 func (c *jsiiProxy_ComputeBackendService) validatePutSecuritySettingsParameters(value *ComputeBackendServiceSecuritySettings) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeBackendService) validatePutStrongSessionAffinityCookieParameters(value *ComputeBackendServiceStrongSessionAffinityCookie) error {
 	return nil
 }
 
@@ -173,6 +185,10 @@ func (j *jsiiProxy_ComputeBackendService) validateSetHealthChecksParameters(val 
 }
 
 func (j *jsiiProxy_ComputeBackendService) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeBackendService) validateSetIpAddressSelectionPolicyParameters(val *string) error {
 	return nil
 }
 

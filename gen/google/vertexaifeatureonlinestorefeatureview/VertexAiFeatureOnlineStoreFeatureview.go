@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/vertexaifeatureonlinestorefeatureview/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/vertex_ai_feature_online_store_featureview google_vertex_ai_feature_online_store_featureview}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/vertex_ai_feature_online_store_featureview google_vertex_ai_feature_online_store_featureview}.
 type VertexAiFeatureOnlineStoreFeatureview interface {
 	cdktf.TerraformResource
 	BigQuerySource() VertexAiFeatureOnlineStoreFeatureviewBigQuerySourceOutputReference
@@ -144,6 +144,7 @@ type VertexAiFeatureOnlineStoreFeatureview interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetRegion()
 	ResetSyncConfig()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -565,7 +566,7 @@ func (j *jsiiProxy_VertexAiFeatureOnlineStoreFeatureview) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/vertex_ai_feature_online_store_featureview google_vertex_ai_feature_online_store_featureview} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/vertex_ai_feature_online_store_featureview google_vertex_ai_feature_online_store_featureview} Resource.
 func NewVertexAiFeatureOnlineStoreFeatureview(scope constructs.Construct, id *string, config *VertexAiFeatureOnlineStoreFeatureviewConfig) VertexAiFeatureOnlineStoreFeatureview {
 	_init_.Initialize()
 
@@ -583,7 +584,7 @@ func NewVertexAiFeatureOnlineStoreFeatureview(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/vertex_ai_feature_online_store_featureview google_vertex_ai_feature_online_store_featureview} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/vertex_ai_feature_online_store_featureview google_vertex_ai_feature_online_store_featureview} Resource.
 func NewVertexAiFeatureOnlineStoreFeatureview_Override(v VertexAiFeatureOnlineStoreFeatureview, scope constructs.Construct, id *string, config *VertexAiFeatureOnlineStoreFeatureviewConfig) {
 	_init_.Initialize()
 
@@ -1177,6 +1178,14 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStoreFeatureview) ResetProject() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VertexAiFeatureOnlineStoreFeatureview) ResetRegion() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

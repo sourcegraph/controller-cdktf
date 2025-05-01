@@ -11,13 +11,13 @@ type GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeader
 	// CONTAINS: The operator matches if the field value contains the specified value.
 	// EQUALS_ANY: The operator matches if the field value is any value.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_security_policy_rule#operator GoogleComputeSecurityPolicyRuleA#operator}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_security_policy_rule#operator GoogleComputeSecurityPolicyRuleA#operator}
 	Operator *string `field:"required" json:"operator" yaml:"operator"`
 	// A request field matching the specified value will be excluded from inspection during preconfigured WAF evaluation.
 	//
 	// The field value must be given if the field operator is not EQUALS_ANY, and cannot be given if the field operator is EQUALS_ANY.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_security_policy_rule#value GoogleComputeSecurityPolicyRuleA#value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_security_policy_rule#value GoogleComputeSecurityPolicyRuleA#value}
 	Value *string `field:"optional" json:"value" yaml:"value"`
 }
 

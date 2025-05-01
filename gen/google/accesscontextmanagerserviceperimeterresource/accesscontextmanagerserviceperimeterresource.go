@@ -9,9 +9,10 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/accesscontextmanagerserviceperimeterresource/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/access_context_manager_service_perimeter_resource google_access_context_manager_service_perimeter_resource}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/access_context_manager_service_perimeter_resource google_access_context_manager_service_perimeter_resource}.
 type AccessContextManagerServicePerimeterResource interface {
 	cdktf.TerraformResource
+	AccessPolicyId() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -28,6 +29,7 @@ type AccessContextManagerServicePerimeterResource interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Etag() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -136,6 +138,16 @@ type jsiiProxy_AccessContextManagerServicePerimeterResource struct {
 	internal.Type__cdktfTerraformResource
 }
 
+func (j *jsiiProxy_AccessContextManagerServicePerimeterResource) AccessPolicyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessPolicyId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccessContextManagerServicePerimeterResource) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
@@ -181,6 +193,16 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeterResource) DependsOn() *[]
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessContextManagerServicePerimeterResource) Etag() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"etag",
 		&returns,
 	)
 	return returns
@@ -377,7 +399,7 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeterResource) TimeoutsInput()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/access_context_manager_service_perimeter_resource google_access_context_manager_service_perimeter_resource} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/access_context_manager_service_perimeter_resource google_access_context_manager_service_perimeter_resource} Resource.
 func NewAccessContextManagerServicePerimeterResource(scope constructs.Construct, id *string, config *AccessContextManagerServicePerimeterResourceConfig) AccessContextManagerServicePerimeterResource {
 	_init_.Initialize()
 
@@ -395,7 +417,7 @@ func NewAccessContextManagerServicePerimeterResource(scope constructs.Construct,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/access_context_manager_service_perimeter_resource google_access_context_manager_service_perimeter_resource} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/access_context_manager_service_perimeter_resource google_access_context_manager_service_perimeter_resource} Resource.
 func NewAccessContextManagerServicePerimeterResource_Override(a AccessContextManagerServicePerimeterResource, scope constructs.Construct, id *string, config *AccessContextManagerServicePerimeterResourceConfig) {
 	_init_.Initialize()
 

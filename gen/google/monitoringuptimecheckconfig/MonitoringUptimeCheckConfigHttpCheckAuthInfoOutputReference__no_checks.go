@@ -64,6 +64,14 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckAuthInfoOutputReference) 
 	return nil
 }
 
+func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckAuthInfoOutputReference) validateSetPasswordWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckAuthInfoOutputReference) validateSetPasswordWoVersionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckAuthInfoOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

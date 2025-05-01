@@ -182,6 +182,14 @@ func (j *jsiiProxy_ComputeInstanceSchedulingOutputReference) validateSetAutomati
 	return nil
 }
 
+func (j *jsiiProxy_ComputeInstanceSchedulingOutputReference) validateSetAvailabilityDomainParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ComputeInstanceSchedulingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
@@ -300,6 +308,14 @@ func (j *jsiiProxy_ComputeInstanceSchedulingOutputReference) validateSetPreempti
 }
 
 func (j *jsiiProxy_ComputeInstanceSchedulingOutputReference) validateSetProvisioningModelParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ComputeInstanceSchedulingOutputReference) validateSetTerminationTimeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

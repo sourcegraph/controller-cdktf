@@ -52,6 +52,10 @@ func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigActionsOutputReference
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigActionsOutputReference) validatePutTagResourcesParameters(value *GoogleDataLossPreventionDiscoveryConfigActionsTagResources) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigActionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

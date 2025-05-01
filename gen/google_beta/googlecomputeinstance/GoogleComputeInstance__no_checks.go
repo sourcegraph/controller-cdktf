@@ -92,6 +92,10 @@ func (g *jsiiProxy_GoogleComputeInstance) validatePutGuestAcceleratorParameters(
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeInstance) validatePutInstanceEncryptionKeyParameters(value *GoogleComputeInstanceInstanceEncryptionKey) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeInstance) validatePutNetworkInterfaceParameters(value interface{}) error {
 	return nil
 }
@@ -181,6 +185,10 @@ func (j *jsiiProxy_GoogleComputeInstance) validateSetHostnameParameters(val *str
 }
 
 func (j *jsiiProxy_GoogleComputeInstance) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeInstance) validateSetKeyRevocationActionTypeParameters(val *string) error {
 	return nil
 }
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlestoragedefaultobjectacl/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_storage_default_object_acl google_storage_default_object_acl}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_storage_default_object_acl google_storage_default_object_acl}.
 type GoogleStorageDefaultObjectAcl interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -354,7 +354,7 @@ func (j *jsiiProxy_GoogleStorageDefaultObjectAcl) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_storage_default_object_acl google_storage_default_object_acl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_storage_default_object_acl google_storage_default_object_acl} Resource.
 func NewGoogleStorageDefaultObjectAcl(scope constructs.Construct, id *string, config *GoogleStorageDefaultObjectAclConfig) GoogleStorageDefaultObjectAcl {
 	_init_.Initialize()
 
@@ -372,7 +372,7 @@ func NewGoogleStorageDefaultObjectAcl(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_storage_default_object_acl google_storage_default_object_acl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_storage_default_object_acl google_storage_default_object_acl} Resource.
 func NewGoogleStorageDefaultObjectAcl_Override(g GoogleStorageDefaultObjectAcl, scope constructs.Construct, id *string, config *GoogleStorageDefaultObjectAclConfig) {
 	_init_.Initialize()
 

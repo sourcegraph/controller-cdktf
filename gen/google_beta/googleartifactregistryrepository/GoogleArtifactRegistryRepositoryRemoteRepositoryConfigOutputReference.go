@@ -12,6 +12,8 @@ type GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference inter
 	cdktf.ComplexObject
 	AptRepository() GoogleArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryOutputReference
 	AptRepositoryInput() *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigAptRepository
+	CommonRepository() GoogleArtifactRegistryRepositoryRemoteRepositoryConfigCommonRepositoryOutputReference
+	CommonRepositoryInput() *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigCommonRepository
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -82,6 +84,7 @@ type GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference inter
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAptRepository(value *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigAptRepository)
+	PutCommonRepository(value *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigCommonRepository)
 	PutDockerRepository(value *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepository)
 	PutMavenRepository(value *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepository)
 	PutNpmRepository(value *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepository)
@@ -89,6 +92,7 @@ type GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference inter
 	PutUpstreamCredentials(value *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentials)
 	PutYumRepository(value *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigYumRepository)
 	ResetAptRepository()
+	ResetCommonRepository()
 	ResetDescription()
 	ResetDisableUpstreamValidation()
 	ResetDockerRepository()
@@ -127,6 +131,26 @@ func (j *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputR
 	_jsii_.Get(
 		j,
 		"aptRepositoryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) CommonRepository() GoogleArtifactRegistryRepositoryRemoteRepositoryConfigCommonRepositoryOutputReference {
+	var returns GoogleArtifactRegistryRepositoryRemoteRepositoryConfigCommonRepositoryOutputReference
+	_jsii_.Get(
+		j,
+		"commonRepository",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) CommonRepositoryInput() *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigCommonRepository {
+	var returns *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigCommonRepository
+	_jsii_.Get(
+		j,
+		"commonRepositoryInput",
 		&returns,
 	)
 	return returns
@@ -664,6 +688,17 @@ func (g *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputR
 	)
 }
 
+func (g *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) PutCommonRepository(value *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigCommonRepository) {
+	if err := g.validatePutCommonRepositoryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putCommonRepository",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) PutDockerRepository(value *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepository) {
 	if err := g.validatePutDockerRepositoryParameters(value); err != nil {
 		panic(err)
@@ -734,6 +769,14 @@ func (g *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputR
 	_jsii_.InvokeVoid(
 		g,
 		"resetAptRepository",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) ResetCommonRepository() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCommonRepository",
 		nil, // no parameters
 	)
 }

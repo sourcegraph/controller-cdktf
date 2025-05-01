@@ -34,6 +34,8 @@ type DataGoogleSqlDatabaseInstanceSettingsOutputReference interface {
 	CreationStack() *[]*string
 	DatabaseFlags() DataGoogleSqlDatabaseInstanceSettingsDatabaseFlagsList
 	DataCacheConfig() DataGoogleSqlDatabaseInstanceSettingsDataCacheConfigList
+	DataDiskProvisionedIops() *float64
+	DataDiskProvisionedThroughput() *float64
 	DeletionProtectionEnabled() cdktf.IResolvable
 	DenyMaintenancePeriod() DataGoogleSqlDatabaseInstanceSettingsDenyMaintenancePeriodList
 	DiskAutoresize() cdktf.IResolvable
@@ -41,6 +43,7 @@ type DataGoogleSqlDatabaseInstanceSettingsOutputReference interface {
 	DiskSize() *float64
 	DiskType() *string
 	Edition() *string
+	EnableDataplexIntegration() cdktf.IResolvable
 	EnableGoogleMlIntegration() cdktf.IResolvable
 	// Experimental.
 	Fqn() *string
@@ -52,6 +55,7 @@ type DataGoogleSqlDatabaseInstanceSettingsOutputReference interface {
 	MaintenanceWindow() DataGoogleSqlDatabaseInstanceSettingsMaintenanceWindowList
 	PasswordValidationPolicy() DataGoogleSqlDatabaseInstanceSettingsPasswordValidationPolicyList
 	PricingPlan() *string
+	RetainBackupsOnDelete() cdktf.IResolvable
 	SqlServerAuditConfig() DataGoogleSqlDatabaseInstanceSettingsSqlServerAuditConfigList
 	// Experimental.
 	TerraformAttribute() *string
@@ -224,6 +228,26 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsOutputReference) DataCac
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsOutputReference) DataDiskProvisionedIops() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"dataDiskProvisionedIops",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsOutputReference) DataDiskProvisionedThroughput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"dataDiskProvisionedThroughput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsOutputReference) DeletionProtectionEnabled() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 	_jsii_.Get(
@@ -289,6 +313,16 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsOutputReference) Edition
 	_jsii_.Get(
 		j,
 		"edition",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsOutputReference) EnableDataplexIntegration() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"enableDataplexIntegration",
 		&returns,
 	)
 	return returns
@@ -379,6 +413,16 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsOutputReference) Pricing
 	_jsii_.Get(
 		j,
 		"pricingPlan",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsOutputReference) RetainBackupsOnDelete() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"retainBackupsOnDelete",
 		&returns,
 	)
 	return returns

@@ -31,6 +31,8 @@ type GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigO
 	Fqn() *string
 	InternalValue() *GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfig
 	SetInternalValue(val *GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfig)
+	LayoutParsingConfig() GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfigOutputReference
+	LayoutParsingConfigInput() *GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfig
 	OcrParsingConfig() GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOcrParsingConfigOutputReference
 	OcrParsingConfigInput() *GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOcrParsingConfig
 	// Experimental.
@@ -66,8 +68,10 @@ type GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigO
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutDigitalParsingConfig(value *GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigDigitalParsingConfig)
+	PutLayoutParsingConfig(value *GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfig)
 	PutOcrParsingConfig(value *GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOcrParsingConfig)
 	ResetDigitalParsingConfig()
+	ResetLayoutParsingConfig()
 	ResetOcrParsingConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -149,6 +153,26 @@ func (j *jsiiProxy_GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefault
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOutputReference) LayoutParsingConfig() GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfigOutputReference {
+	var returns GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfigOutputReference
+	_jsii_.Get(
+		j,
+		"layoutParsingConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOutputReference) LayoutParsingConfigInput() *GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfig {
+	var returns *GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfig
+	_jsii_.Get(
+		j,
+		"layoutParsingConfigInput",
 		&returns,
 	)
 	return returns
@@ -474,6 +498,17 @@ func (g *jsiiProxy_GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefault
 	)
 }
 
+func (g *jsiiProxy_GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOutputReference) PutLayoutParsingConfig(value *GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfig) {
+	if err := g.validatePutLayoutParsingConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putLayoutParsingConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOutputReference) PutOcrParsingConfig(value *GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOcrParsingConfig) {
 	if err := g.validatePutOcrParsingConfigParameters(value); err != nil {
 		panic(err)
@@ -489,6 +524,14 @@ func (g *jsiiProxy_GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefault
 	_jsii_.InvokeVoid(
 		g,
 		"resetDigitalParsingConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOutputReference) ResetLayoutParsingConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLayoutParsingConfig",
 		nil, // no parameters
 	)
 }

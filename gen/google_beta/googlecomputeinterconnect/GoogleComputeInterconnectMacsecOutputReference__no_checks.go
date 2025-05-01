@@ -60,6 +60,10 @@ func (j *jsiiProxy_GoogleComputeInterconnectMacsecOutputReference) validateSetCo
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeInterconnectMacsecOutputReference) validateSetFailOpenParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeInterconnectMacsecOutputReference) validateSetInternalValueParameters(val *GoogleComputeInterconnectMacsec) error {
 	return nil
 }

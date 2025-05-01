@@ -10,6 +10,8 @@ import (
 
 type GoogleContainerClusterMonitoringConfigManagedPrometheusOutputReference interface {
 	cdktf.ComplexObject
+	AutoMonitoringConfig() GoogleContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfigOutputReference
+	AutoMonitoringConfigInput() *GoogleContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfig
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -64,6 +66,8 @@ type GoogleContainerClusterMonitoringConfigManagedPrometheusOutputReference inte
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAutoMonitoringConfig(value *GoogleContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfig)
+	ResetAutoMonitoringConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -77,6 +81,26 @@ type GoogleContainerClusterMonitoringConfigManagedPrometheusOutputReference inte
 // The jsii proxy struct for GoogleContainerClusterMonitoringConfigManagedPrometheusOutputReference
 type jsiiProxy_GoogleContainerClusterMonitoringConfigManagedPrometheusOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GoogleContainerClusterMonitoringConfigManagedPrometheusOutputReference) AutoMonitoringConfig() GoogleContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfigOutputReference {
+	var returns GoogleContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfigOutputReference
+	_jsii_.Get(
+		j,
+		"autoMonitoringConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterMonitoringConfigManagedPrometheusOutputReference) AutoMonitoringConfigInput() *GoogleContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfig {
+	var returns *GoogleContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfig
+	_jsii_.Get(
+		j,
+		"autoMonitoringConfigInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleContainerClusterMonitoringConfigManagedPrometheusOutputReference) ComplexObjectIndex() interface{} {
@@ -447,6 +471,25 @@ func (g *jsiiProxy_GoogleContainerClusterMonitoringConfigManagedPrometheusOutput
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleContainerClusterMonitoringConfigManagedPrometheusOutputReference) PutAutoMonitoringConfig(value *GoogleContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfig) {
+	if err := g.validatePutAutoMonitoringConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAutoMonitoringConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterMonitoringConfigManagedPrometheusOutputReference) ResetAutoMonitoringConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAutoMonitoringConfig",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleContainerClusterMonitoringConfigManagedPrometheusOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

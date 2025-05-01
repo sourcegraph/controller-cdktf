@@ -48,6 +48,10 @@ func (g *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputR
 	return nil
 }
 
+func (g *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) validatePutCommonRepositoryParameters(value *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigCommonRepository) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) validatePutDockerRepositoryParameters(value *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepository) error {
 	return nil
 }

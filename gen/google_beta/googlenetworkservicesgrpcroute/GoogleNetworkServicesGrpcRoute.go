@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlenetworkservicesgrpcroute/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_network_services_grpc_route google_network_services_grpc_route}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_network_services_grpc_route google_network_services_grpc_route}.
 type GoogleNetworkServicesGrpcRoute interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -57,6 +57,9 @@ type GoogleNetworkServicesGrpcRoute interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Location() *string
+	SetLocation(val *string)
+	LocationInput() *string
 	Meshes() *[]*string
 	SetMeshes(val *[]*string)
 	MeshesInput() *[]*string
@@ -140,6 +143,7 @@ type GoogleNetworkServicesGrpcRoute interface {
 	ResetGateways()
 	ResetId()
 	ResetLabels()
+	ResetLocation()
 	ResetMeshes()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -374,6 +378,26 @@ func (j *jsiiProxy_GoogleNetworkServicesGrpcRoute) Lifecycle() *cdktf.TerraformR
 	return returns
 }
 
+func (j *jsiiProxy_GoogleNetworkServicesGrpcRoute) Location() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"location",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesGrpcRoute) LocationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"locationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleNetworkServicesGrpcRoute) Meshes() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -575,7 +599,7 @@ func (j *jsiiProxy_GoogleNetworkServicesGrpcRoute) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_network_services_grpc_route google_network_services_grpc_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_network_services_grpc_route google_network_services_grpc_route} Resource.
 func NewGoogleNetworkServicesGrpcRoute(scope constructs.Construct, id *string, config *GoogleNetworkServicesGrpcRouteConfig) GoogleNetworkServicesGrpcRoute {
 	_init_.Initialize()
 
@@ -593,7 +617,7 @@ func NewGoogleNetworkServicesGrpcRoute(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_network_services_grpc_route google_network_services_grpc_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_network_services_grpc_route google_network_services_grpc_route} Resource.
 func NewGoogleNetworkServicesGrpcRoute_Override(g GoogleNetworkServicesGrpcRoute, scope constructs.Construct, id *string, config *GoogleNetworkServicesGrpcRouteConfig) {
 	_init_.Initialize()
 
@@ -704,6 +728,17 @@ func (j *jsiiProxy_GoogleNetworkServicesGrpcRoute)SetLifecycle(val *cdktf.Terraf
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesGrpcRoute)SetLocation(val *string) {
+	if err := j.validateSetLocationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"location",
 		val,
 	)
 }
@@ -1163,6 +1198,14 @@ func (g *jsiiProxy_GoogleNetworkServicesGrpcRoute) ResetLabels() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetLabels",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleNetworkServicesGrpcRoute) ResetLocation() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLocation",
 		nil, // no parameters
 	)
 }

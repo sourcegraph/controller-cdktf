@@ -1,0 +1,6 @@
+package datagooglevmwareenginecluster
+
+
+type DataGoogleVmwareengineClusterAutoscalingSettingsAutoscalingPoliciesConsumedMemoryThresholds struct {
+}
+

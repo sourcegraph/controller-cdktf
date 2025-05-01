@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlefirebasehostingrelease/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_firebase_hosting_release google_firebase_hosting_release}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_firebase_hosting_release google_firebase_hosting_release}.
 type GoogleFirebaseHostingRelease interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -472,7 +472,7 @@ func (j *jsiiProxy_GoogleFirebaseHostingRelease) VersionNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_firebase_hosting_release google_firebase_hosting_release} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_firebase_hosting_release google_firebase_hosting_release} Resource.
 func NewGoogleFirebaseHostingRelease(scope constructs.Construct, id *string, config *GoogleFirebaseHostingReleaseConfig) GoogleFirebaseHostingRelease {
 	_init_.Initialize()
 
@@ -490,7 +490,7 @@ func NewGoogleFirebaseHostingRelease(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_firebase_hosting_release google_firebase_hosting_release} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_firebase_hosting_release google_firebase_hosting_release} Resource.
 func NewGoogleFirebaseHostingRelease_Override(g GoogleFirebaseHostingRelease, scope constructs.Construct, id *string, config *GoogleFirebaseHostingReleaseConfig) {
 	_init_.Initialize()
 

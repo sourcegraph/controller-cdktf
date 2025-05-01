@@ -48,6 +48,8 @@ type DataGoogleSqlDatabaseInstancesInstancesOutputReference interface {
 	PublicIpAddress() *string
 	Region() *string
 	ReplicaConfiguration() DataGoogleSqlDatabaseInstancesInstancesReplicaConfigurationList
+	ReplicaNames() *[]*string
+	ReplicationCluster() DataGoogleSqlDatabaseInstancesInstancesReplicationClusterList
 	RestoreBackupContext() DataGoogleSqlDatabaseInstancesInstancesRestoreBackupContextList
 	RootPassword() *string
 	SelfLink() *string
@@ -336,6 +338,26 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference) Repli
 	_jsii_.Get(
 		j,
 		"replicaConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference) ReplicaNames() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"replicaNames",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference) ReplicationCluster() DataGoogleSqlDatabaseInstancesInstancesReplicationClusterList {
+	var returns DataGoogleSqlDatabaseInstancesInstancesReplicationClusterList
+	_jsii_.Get(
+		j,
+		"replicationCluster",
 		&returns,
 	)
 	return returns

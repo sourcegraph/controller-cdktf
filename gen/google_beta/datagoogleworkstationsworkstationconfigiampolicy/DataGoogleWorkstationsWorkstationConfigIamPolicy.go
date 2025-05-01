@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagoogleworkstationsworkstationconfigiampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_workstations_workstation_config_iam_policy google_workstations_workstation_config_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_workstations_workstation_config_iam_policy google_workstations_workstation_config_iam_policy}.
 type DataGoogleWorkstationsWorkstationConfigIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -378,7 +378,7 @@ func (j *jsiiProxy_DataGoogleWorkstationsWorkstationConfigIamPolicy) Workstation
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_workstations_workstation_config_iam_policy google_workstations_workstation_config_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_workstations_workstation_config_iam_policy google_workstations_workstation_config_iam_policy} Data Source.
 func NewDataGoogleWorkstationsWorkstationConfigIamPolicy(scope constructs.Construct, id *string, config *DataGoogleWorkstationsWorkstationConfigIamPolicyConfig) DataGoogleWorkstationsWorkstationConfigIamPolicy {
 	_init_.Initialize()
 
@@ -396,7 +396,7 @@ func NewDataGoogleWorkstationsWorkstationConfigIamPolicy(scope constructs.Constr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_workstations_workstation_config_iam_policy google_workstations_workstation_config_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_workstations_workstation_config_iam_policy google_workstations_workstation_config_iam_policy} Data Source.
 func NewDataGoogleWorkstationsWorkstationConfigIamPolicy_Override(d DataGoogleWorkstationsWorkstationConfigIamPolicy, scope constructs.Construct, id *string, config *DataGoogleWorkstationsWorkstationConfigIamPolicyConfig) {
 	_init_.Initialize()
 

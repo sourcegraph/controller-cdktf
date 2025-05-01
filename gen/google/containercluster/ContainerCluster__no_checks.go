@@ -92,6 +92,10 @@ func (c *jsiiProxy_ContainerCluster) validatePutConfidentialNodesParameters(valu
 	return nil
 }
 
+func (c *jsiiProxy_ContainerCluster) validatePutControlPlaneEndpointsConfigParameters(value *ContainerClusterControlPlaneEndpointsConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerCluster) validatePutCostManagementConfigParameters(value *ContainerClusterCostManagementConfig) error {
 	return nil
 }
@@ -109,6 +113,10 @@ func (c *jsiiProxy_ContainerCluster) validatePutDnsConfigParameters(value *Conta
 }
 
 func (c *jsiiProxy_ContainerCluster) validatePutEnableK8SBetaApisParameters(value *ContainerClusterEnableK8SBetaApis) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerCluster) validatePutEnterpriseConfigParameters(value *ContainerClusterEnterpriseConfig) error {
 	return nil
 }
 
@@ -188,6 +196,10 @@ func (c *jsiiProxy_ContainerCluster) validatePutResourceUsageExportConfigParamet
 	return nil
 }
 
+func (c *jsiiProxy_ContainerCluster) validatePutSecretManagerConfigParameters(value *ContainerClusterSecretManagerConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerCluster) validatePutSecurityPostureConfigParameters(value *ContainerClusterSecurityPostureConfig) error {
 	return nil
 }
@@ -197,6 +209,10 @@ func (c *jsiiProxy_ContainerCluster) validatePutServiceExternalIpsConfigParamete
 }
 
 func (c *jsiiProxy_ContainerCluster) validatePutTimeoutsParameters(value *ContainerClusterTimeouts) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerCluster) validatePutUserManagedKeysConfigParameters(value *ContainerClusterUserManagedKeysConfig) error {
 	return nil
 }
 
@@ -256,11 +272,19 @@ func (j *jsiiProxy_ContainerCluster) validateSetDescriptionParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_ContainerCluster) validateSetDisableL4LbFirewallReconciliationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerCluster) validateSetEnableAutopilotParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_ContainerCluster) validateSetEnableCiliumClusterwideNetworkPolicyParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ContainerCluster) validateSetEnableFqdnNetworkPolicyParameters(val interface{}) error {
 	return nil
 }
 
@@ -277,6 +301,10 @@ func (j *jsiiProxy_ContainerCluster) validateSetEnableL4IlbSubsettingParameters(
 }
 
 func (j *jsiiProxy_ContainerCluster) validateSetEnableLegacyAbacParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ContainerCluster) validateSetEnableMultiNetworkingParameters(val interface{}) error {
 	return nil
 }
 

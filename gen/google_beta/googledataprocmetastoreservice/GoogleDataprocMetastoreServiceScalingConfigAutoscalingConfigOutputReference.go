@@ -13,6 +13,7 @@ type GoogleDataprocMetastoreServiceScalingConfigAutoscalingConfigOutputReference
 	AutoscalingEnabled() interface{}
 	SetAutoscalingEnabled(val interface{})
 	AutoscalingEnabledInput() interface{}
+	AutoscalingFactor() *float64
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -99,6 +100,16 @@ func (j *jsiiProxy_GoogleDataprocMetastoreServiceScalingConfigAutoscalingConfigO
 	_jsii_.Get(
 		j,
 		"autoscalingEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataprocMetastoreServiceScalingConfigAutoscalingConfigOutputReference) AutoscalingFactor() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"autoscalingFactor",
 		&returns,
 	)
 	return returns

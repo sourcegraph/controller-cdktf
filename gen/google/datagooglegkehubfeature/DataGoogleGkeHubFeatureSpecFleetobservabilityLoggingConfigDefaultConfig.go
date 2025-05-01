@@ -1,0 +1,6 @@
+package datagooglegkehubfeature
+
+
+type DataGoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigDefaultConfig struct {
+}
+

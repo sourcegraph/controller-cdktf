@@ -163,6 +163,14 @@ func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedVpnTunnelsOutputReference
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedVpnTunnelsOutputReference) validateSetIncludeImportRangesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedVpnTunnelsOutputReference) validateSetInternalValueParameters(val *GoogleNetworkConnectivitySpokeLinkedVpnTunnels) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err

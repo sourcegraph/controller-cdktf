@@ -56,6 +56,14 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigOutputReference) validatePutPostg
 	return nil
 }
 
+func (d *jsiiProxy_DatastreamStreamSourceConfigOutputReference) validatePutSalesforceSourceConfigParameters(value *DatastreamStreamSourceConfigSalesforceSourceConfig) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatastreamStreamSourceConfigOutputReference) validatePutSqlServerSourceConfigParameters(value *DatastreamStreamSourceConfigSqlServerSourceConfig) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatastreamStreamSourceConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

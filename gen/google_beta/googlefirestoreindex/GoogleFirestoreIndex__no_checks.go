@@ -116,11 +116,19 @@ func (j *jsiiProxy_GoogleFirestoreIndex) validateSetDatabaseParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_GoogleFirestoreIndex) validateSetDensityParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleFirestoreIndex) validateSetIdParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_GoogleFirestoreIndex) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleFirestoreIndex) validateSetMultikeyParameters(val interface{}) error {
 	return nil
 }
 

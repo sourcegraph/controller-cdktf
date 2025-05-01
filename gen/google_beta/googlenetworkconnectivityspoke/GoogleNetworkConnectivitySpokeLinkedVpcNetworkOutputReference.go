@@ -30,6 +30,9 @@ type GoogleNetworkConnectivitySpokeLinkedVpcNetworkOutputReference interface {
 	ExcludeExportRangesInput() *[]*string
 	// Experimental.
 	Fqn() *string
+	IncludeExportRanges() *[]*string
+	SetIncludeExportRanges(val *[]*string)
+	IncludeExportRangesInput() *[]*string
 	InternalValue() *GoogleNetworkConnectivitySpokeLinkedVpcNetwork
 	SetInternalValue(val *GoogleNetworkConnectivitySpokeLinkedVpcNetwork)
 	// Experimental.
@@ -68,6 +71,7 @@ type GoogleNetworkConnectivitySpokeLinkedVpcNetworkOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetExcludeExportRanges()
+	ResetIncludeExportRanges()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -138,6 +142,26 @@ func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedVpcNetworkOutputReference
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedVpcNetworkOutputReference) IncludeExportRanges() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"includeExportRanges",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedVpcNetworkOutputReference) IncludeExportRangesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"includeExportRangesInput",
 		&returns,
 	)
 	return returns
@@ -250,6 +274,17 @@ func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedVpcNetworkOutputReference
 	_jsii_.Set(
 		j,
 		"excludeExportRanges",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedVpcNetworkOutputReference)SetIncludeExportRanges(val *[]*string) {
+	if err := j.validateSetIncludeExportRangesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"includeExportRanges",
 		val,
 	)
 }
@@ -488,6 +523,14 @@ func (g *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedVpcNetworkOutputReference
 	_jsii_.InvokeVoid(
 		g,
 		"resetExcludeExportRanges",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedVpcNetworkOutputReference) ResetIncludeExportRanges() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIncludeExportRanges",
 		nil, // no parameters
 	)
 }

@@ -21,43 +21,43 @@ type GoogleApigeeOrganizationConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The project ID associated with the Apigee organization.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_apigee_organization#project_id GoogleApigeeOrganization#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_apigee_organization#project_id GoogleApigeeOrganization#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// Primary GCP region for analytics data storage. For valid values, see [Create an Apigee organization](https://cloud.google.com/apigee/docs/api-platform/get-started/create-org).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_apigee_organization#analytics_region GoogleApigeeOrganization#analytics_region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_apigee_organization#analytics_region GoogleApigeeOrganization#analytics_region}
 	AnalyticsRegion *string `field:"optional" json:"analyticsRegion" yaml:"analyticsRegion"`
 	// Cloud KMS key name used for encrypting API consumer data.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_apigee_organization#api_consumer_data_encryption_key_name GoogleApigeeOrganization#api_consumer_data_encryption_key_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_apigee_organization#api_consumer_data_encryption_key_name GoogleApigeeOrganization#api_consumer_data_encryption_key_name}
 	ApiConsumerDataEncryptionKeyName *string `field:"optional" json:"apiConsumerDataEncryptionKeyName" yaml:"apiConsumerDataEncryptionKeyName"`
 	// This field is needed only for customers using non-default data residency regions.
 	//
 	// Apigee stores some control plane data only in single region.
 	// This field determines which single region Apigee should use.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_apigee_organization#api_consumer_data_location GoogleApigeeOrganization#api_consumer_data_location}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_apigee_organization#api_consumer_data_location GoogleApigeeOrganization#api_consumer_data_location}
 	ApiConsumerDataLocation *string `field:"optional" json:"apiConsumerDataLocation" yaml:"apiConsumerDataLocation"`
 	// Compute Engine network used for Service Networking to be peered with Apigee runtime instances.
 	//
 	// See [Getting started with the Service Networking API](https://cloud.google.com/service-infrastructure/docs/service-networking/getting-started).
 	// Valid only when 'RuntimeType' is set to CLOUD. The value can be updated only when there are no runtime instances. For example: "default".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_apigee_organization#authorized_network GoogleApigeeOrganization#authorized_network}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_apigee_organization#authorized_network GoogleApigeeOrganization#authorized_network}
 	AuthorizedNetwork *string `field:"optional" json:"authorizedNetwork" yaml:"authorizedNetwork"`
 	// Billing type of the Apigee organization. See [Apigee pricing](https://cloud.google.com/apigee/pricing).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_apigee_organization#billing_type GoogleApigeeOrganization#billing_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_apigee_organization#billing_type GoogleApigeeOrganization#billing_type}
 	BillingType *string `field:"optional" json:"billingType" yaml:"billingType"`
 	// Cloud KMS key name used for encrypting control plane data that is stored in a multi region.
 	//
 	// Only used for the data residency region "US" or "EU".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_apigee_organization#control_plane_encryption_key_name GoogleApigeeOrganization#control_plane_encryption_key_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_apigee_organization#control_plane_encryption_key_name GoogleApigeeOrganization#control_plane_encryption_key_name}
 	ControlPlaneEncryptionKeyName *string `field:"optional" json:"controlPlaneEncryptionKeyName" yaml:"controlPlaneEncryptionKeyName"`
 	// Description of the Apigee organization.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_apigee_organization#description GoogleApigeeOrganization#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_apigee_organization#description GoogleApigeeOrganization#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// Flag that specifies whether the VPC Peering through Private Google Access should be disabled between the consumer network and Apigee.
 	//
@@ -66,20 +66,20 @@ type GoogleApigeeOrganizationConfig struct {
 	// Valid only when 'RuntimeType' is set to CLOUD. The value must be set before the creation
 	// of any Apigee runtime instance and can be updated only when there are no runtime instances.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_apigee_organization#disable_vpc_peering GoogleApigeeOrganization#disable_vpc_peering}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_apigee_organization#disable_vpc_peering GoogleApigeeOrganization#disable_vpc_peering}
 	DisableVpcPeering interface{} `field:"optional" json:"disableVpcPeering" yaml:"disableVpcPeering"`
 	// The display name of the Apigee organization.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_apigee_organization#display_name GoogleApigeeOrganization#display_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_apigee_organization#display_name GoogleApigeeOrganization#display_name}
 	DisplayName *string `field:"optional" json:"displayName" yaml:"displayName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_apigee_organization#id GoogleApigeeOrganization#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_apigee_organization#id GoogleApigeeOrganization#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// properties block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_apigee_organization#properties GoogleApigeeOrganization#properties}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_apigee_organization#properties GoogleApigeeOrganization#properties}
 	Properties *GoogleApigeeOrganizationProperties `field:"optional" json:"properties" yaml:"properties"`
 	// Optional.
 	//
@@ -88,7 +88,7 @@ type GoogleApigeeOrganizationConfig struct {
 	// operation completes. During this period, the Organization may be restored to its last known state.
 	// After this period, the Organization will no longer be able to be restored. Default value: "DELETION_RETENTION_UNSPECIFIED" Possible values: ["DELETION_RETENTION_UNSPECIFIED", "MINIMUM"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_apigee_organization#retention GoogleApigeeOrganization#retention}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_apigee_organization#retention GoogleApigeeOrganization#retention}
 	Retention *string `field:"optional" json:"retention" yaml:"retention"`
 	// Cloud KMS key name used for encrypting the data that is stored and replicated across runtime instances.
 	//
@@ -96,15 +96,15 @@ type GoogleApigeeOrganizationConfig struct {
 	// If not specified, a Google-Managed encryption key will be used.
 	// Valid only when 'RuntimeType' is CLOUD. For example: 'projects/foo/locations/us/keyRings/bar/cryptoKeys/baz'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_apigee_organization#runtime_database_encryption_key_name GoogleApigeeOrganization#runtime_database_encryption_key_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_apigee_organization#runtime_database_encryption_key_name GoogleApigeeOrganization#runtime_database_encryption_key_name}
 	RuntimeDatabaseEncryptionKeyName *string `field:"optional" json:"runtimeDatabaseEncryptionKeyName" yaml:"runtimeDatabaseEncryptionKeyName"`
 	// Runtime type of the Apigee organization based on the Apigee subscription purchased. Default value: "CLOUD" Possible values: ["CLOUD", "HYBRID"].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_apigee_organization#runtime_type GoogleApigeeOrganization#runtime_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_apigee_organization#runtime_type GoogleApigeeOrganization#runtime_type}
 	RuntimeType *string `field:"optional" json:"runtimeType" yaml:"runtimeType"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_apigee_organization#timeouts GoogleApigeeOrganization#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_apigee_organization#timeouts GoogleApigeeOrganization#timeouts}
 	Timeouts *GoogleApigeeOrganizationTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

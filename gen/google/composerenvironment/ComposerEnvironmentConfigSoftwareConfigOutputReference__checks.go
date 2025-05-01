@@ -90,6 +90,17 @@ func (c *jsiiProxy_ComposerEnvironmentConfigSoftwareConfigOutputReference) valid
 	return nil
 }
 
+func (c *jsiiProxy_ComposerEnvironmentConfigSoftwareConfigOutputReference) validatePutCloudDataLineageIntegrationParameters(value *ComposerEnvironmentConfigSoftwareConfigCloudDataLineageIntegration) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (c *jsiiProxy_ComposerEnvironmentConfigSoftwareConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
@@ -228,6 +239,14 @@ func (j *jsiiProxy_ComposerEnvironmentConfigSoftwareConfigOutputReference) valid
 }
 
 func (j *jsiiProxy_ComposerEnvironmentConfigSoftwareConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ComposerEnvironmentConfigSoftwareConfigOutputReference) validateSetWebServerPluginsModeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

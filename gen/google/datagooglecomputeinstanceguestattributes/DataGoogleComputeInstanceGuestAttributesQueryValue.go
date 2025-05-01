@@ -1,0 +1,6 @@
+package datagooglecomputeinstanceguestattributes
+
+
+type DataGoogleComputeInstanceGuestAttributesQueryValue struct {
+}
+

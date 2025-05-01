@@ -67,8 +67,6 @@ type GoogleNetworkConnectivitySpokeLinkedRouterApplianceInstancesInstancesOutput
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetIpAddress()
-	ResetVirtualMachine()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -483,22 +481,6 @@ func (g *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedRouterApplianceInstancesI
 	)
 
 	return returns
-}
-
-func (g *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedRouterApplianceInstancesInstancesOutputReference) ResetIpAddress() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetIpAddress",
-		nil, // no parameters
-	)
-}
-
-func (g *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedRouterApplianceInstancesInstancesOutputReference) ResetVirtualMachine() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetVirtualMachine",
-		nil, // no parameters
-	)
 }
 
 func (g *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedRouterApplianceInstancesInstancesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeimage/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_image google_compute_image}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_image google_compute_image}.
 type GoogleComputeImage interface {
 	cdktf.TerraformResource
 	ArchiveSizeBytes() *float64
@@ -87,14 +87,22 @@ type GoogleComputeImage interface {
 	// Experimental.
 	RawOverrides() interface{}
 	SelfLink() *string
+	ShieldedInstanceInitialState() GoogleComputeImageShieldedInstanceInitialStateOutputReference
+	ShieldedInstanceInitialStateInput() *GoogleComputeImageShieldedInstanceInitialState
 	SourceDisk() *string
 	SetSourceDisk(val *string)
+	SourceDiskEncryptionKey() GoogleComputeImageSourceDiskEncryptionKeyOutputReference
+	SourceDiskEncryptionKeyInput() *GoogleComputeImageSourceDiskEncryptionKey
 	SourceDiskInput() *string
 	SourceImage() *string
 	SetSourceImage(val *string)
+	SourceImageEncryptionKey() GoogleComputeImageSourceImageEncryptionKeyOutputReference
+	SourceImageEncryptionKeyInput() *GoogleComputeImageSourceImageEncryptionKey
 	SourceImageInput() *string
 	SourceSnapshot() *string
 	SetSourceSnapshot(val *string)
+	SourceSnapshotEncryptionKey() GoogleComputeImageSourceSnapshotEncryptionKeyOutputReference
+	SourceSnapshotEncryptionKeyInput() *GoogleComputeImageSourceSnapshotEncryptionKey
 	SourceSnapshotInput() *string
 	StorageLocations() *[]*string
 	SetStorageLocations(val *[]*string)
@@ -154,6 +162,10 @@ type GoogleComputeImage interface {
 	PutGuestOsFeatures(value interface{})
 	PutImageEncryptionKey(value *GoogleComputeImageImageEncryptionKey)
 	PutRawDisk(value *GoogleComputeImageRawDisk)
+	PutShieldedInstanceInitialState(value *GoogleComputeImageShieldedInstanceInitialState)
+	PutSourceDiskEncryptionKey(value *GoogleComputeImageSourceDiskEncryptionKey)
+	PutSourceImageEncryptionKey(value *GoogleComputeImageSourceImageEncryptionKey)
+	PutSourceSnapshotEncryptionKey(value *GoogleComputeImageSourceSnapshotEncryptionKey)
 	PutTimeouts(value *GoogleComputeImageTimeouts)
 	ResetDescription()
 	ResetDiskSizeGb()
@@ -168,9 +180,13 @@ type GoogleComputeImage interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetRawDisk()
+	ResetShieldedInstanceInitialState()
 	ResetSourceDisk()
+	ResetSourceDiskEncryptionKey()
 	ResetSourceImage()
+	ResetSourceImageEncryptionKey()
 	ResetSourceSnapshot()
+	ResetSourceSnapshotEncryptionKey()
 	ResetStorageLocations()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -591,11 +607,51 @@ func (j *jsiiProxy_GoogleComputeImage) SelfLink() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeImage) ShieldedInstanceInitialState() GoogleComputeImageShieldedInstanceInitialStateOutputReference {
+	var returns GoogleComputeImageShieldedInstanceInitialStateOutputReference
+	_jsii_.Get(
+		j,
+		"shieldedInstanceInitialState",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeImage) ShieldedInstanceInitialStateInput() *GoogleComputeImageShieldedInstanceInitialState {
+	var returns *GoogleComputeImageShieldedInstanceInitialState
+	_jsii_.Get(
+		j,
+		"shieldedInstanceInitialStateInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeImage) SourceDisk() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"sourceDisk",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeImage) SourceDiskEncryptionKey() GoogleComputeImageSourceDiskEncryptionKeyOutputReference {
+	var returns GoogleComputeImageSourceDiskEncryptionKeyOutputReference
+	_jsii_.Get(
+		j,
+		"sourceDiskEncryptionKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeImage) SourceDiskEncryptionKeyInput() *GoogleComputeImageSourceDiskEncryptionKey {
+	var returns *GoogleComputeImageSourceDiskEncryptionKey
+	_jsii_.Get(
+		j,
+		"sourceDiskEncryptionKeyInput",
 		&returns,
 	)
 	return returns
@@ -621,6 +677,26 @@ func (j *jsiiProxy_GoogleComputeImage) SourceImage() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeImage) SourceImageEncryptionKey() GoogleComputeImageSourceImageEncryptionKeyOutputReference {
+	var returns GoogleComputeImageSourceImageEncryptionKeyOutputReference
+	_jsii_.Get(
+		j,
+		"sourceImageEncryptionKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeImage) SourceImageEncryptionKeyInput() *GoogleComputeImageSourceImageEncryptionKey {
+	var returns *GoogleComputeImageSourceImageEncryptionKey
+	_jsii_.Get(
+		j,
+		"sourceImageEncryptionKeyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeImage) SourceImageInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -636,6 +712,26 @@ func (j *jsiiProxy_GoogleComputeImage) SourceSnapshot() *string {
 	_jsii_.Get(
 		j,
 		"sourceSnapshot",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeImage) SourceSnapshotEncryptionKey() GoogleComputeImageSourceSnapshotEncryptionKeyOutputReference {
+	var returns GoogleComputeImageSourceSnapshotEncryptionKeyOutputReference
+	_jsii_.Get(
+		j,
+		"sourceSnapshotEncryptionKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeImage) SourceSnapshotEncryptionKeyInput() *GoogleComputeImageSourceSnapshotEncryptionKey {
+	var returns *GoogleComputeImageSourceSnapshotEncryptionKey
+	_jsii_.Get(
+		j,
+		"sourceSnapshotEncryptionKeyInput",
 		&returns,
 	)
 	return returns
@@ -732,7 +828,7 @@ func (j *jsiiProxy_GoogleComputeImage) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_image google_compute_image} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_image google_compute_image} Resource.
 func NewGoogleComputeImage(scope constructs.Construct, id *string, config *GoogleComputeImageConfig) GoogleComputeImage {
 	_init_.Initialize()
 
@@ -750,7 +846,7 @@ func NewGoogleComputeImage(scope constructs.Construct, id *string, config *Googl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_image google_compute_image} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_image google_compute_image} Resource.
 func NewGoogleComputeImage_Override(g GoogleComputeImage, scope constructs.Construct, id *string, config *GoogleComputeImageConfig) {
 	_init_.Initialize()
 
@@ -1347,6 +1443,50 @@ func (g *jsiiProxy_GoogleComputeImage) PutRawDisk(value *GoogleComputeImageRawDi
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeImage) PutShieldedInstanceInitialState(value *GoogleComputeImageShieldedInstanceInitialState) {
+	if err := g.validatePutShieldedInstanceInitialStateParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putShieldedInstanceInitialState",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeImage) PutSourceDiskEncryptionKey(value *GoogleComputeImageSourceDiskEncryptionKey) {
+	if err := g.validatePutSourceDiskEncryptionKeyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSourceDiskEncryptionKey",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeImage) PutSourceImageEncryptionKey(value *GoogleComputeImageSourceImageEncryptionKey) {
+	if err := g.validatePutSourceImageEncryptionKeyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSourceImageEncryptionKey",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeImage) PutSourceSnapshotEncryptionKey(value *GoogleComputeImageSourceSnapshotEncryptionKey) {
+	if err := g.validatePutSourceSnapshotEncryptionKeyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSourceSnapshotEncryptionKey",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeImage) PutTimeouts(value *GoogleComputeImageTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1446,10 +1586,26 @@ func (g *jsiiProxy_GoogleComputeImage) ResetRawDisk() {
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeImage) ResetShieldedInstanceInitialState() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetShieldedInstanceInitialState",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeImage) ResetSourceDisk() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetSourceDisk",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeImage) ResetSourceDiskEncryptionKey() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSourceDiskEncryptionKey",
 		nil, // no parameters
 	)
 }
@@ -1462,10 +1618,26 @@ func (g *jsiiProxy_GoogleComputeImage) ResetSourceImage() {
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeImage) ResetSourceImageEncryptionKey() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSourceImageEncryptionKey",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeImage) ResetSourceSnapshot() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetSourceSnapshot",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeImage) ResetSourceSnapshotEncryptionKey() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSourceSnapshotEncryptionKey",
 		nil, // no parameters
 	)
 }

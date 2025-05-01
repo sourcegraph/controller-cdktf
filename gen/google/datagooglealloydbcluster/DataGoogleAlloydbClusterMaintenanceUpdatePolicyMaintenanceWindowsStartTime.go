@@ -1,0 +1,6 @@
+package datagooglealloydbcluster
+
+
+type DataGoogleAlloydbClusterMaintenanceUpdatePolicyMaintenanceWindowsStartTime struct {
+}
+

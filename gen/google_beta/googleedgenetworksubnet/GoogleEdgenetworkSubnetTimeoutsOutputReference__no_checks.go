@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleEdgenetworkSubnetTimeoutsOutputReference) validateSetTe
 	return nil
 }
 
+func (j *jsiiProxy_GoogleEdgenetworkSubnetTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
+	return nil
+}
+
 func validateNewGoogleEdgenetworkSubnetTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

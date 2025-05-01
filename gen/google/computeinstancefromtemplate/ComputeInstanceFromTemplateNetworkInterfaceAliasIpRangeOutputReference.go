@@ -67,7 +67,6 @@ type ComputeInstanceFromTemplateNetworkInterfaceAliasIpRangeOutputReference inte
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetIpCidrRange()
 	ResetSubnetworkRangeName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -483,14 +482,6 @@ func (c *jsiiProxy_ComputeInstanceFromTemplateNetworkInterfaceAliasIpRangeOutput
 	)
 
 	return returns
-}
-
-func (c *jsiiProxy_ComputeInstanceFromTemplateNetworkInterfaceAliasIpRangeOutputReference) ResetIpCidrRange() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetIpCidrRange",
-		nil, // no parameters
-	)
 }
 
 func (c *jsiiProxy_ComputeInstanceFromTemplateNetworkInterfaceAliasIpRangeOutputReference) ResetSubnetworkRangeName() {

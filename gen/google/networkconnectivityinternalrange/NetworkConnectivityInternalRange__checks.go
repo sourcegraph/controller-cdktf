@@ -204,6 +204,17 @@ func (n *jsiiProxy_NetworkConnectivityInternalRange) validateOverrideLogicalIdPa
 	return nil
 }
 
+func (n *jsiiProxy_NetworkConnectivityInternalRange) validatePutMigrationParameters(value *NetworkConnectivityInternalRangeMigration) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (n *jsiiProxy_NetworkConnectivityInternalRange) validatePutTimeoutsParameters(value *NetworkConnectivityInternalRangeTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -346,6 +357,14 @@ func (j *jsiiProxy_NetworkConnectivityInternalRange) validateSetCountParameters(
 }
 
 func (j *jsiiProxy_NetworkConnectivityInternalRange) validateSetDescriptionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_NetworkConnectivityInternalRange) validateSetExcludeCidrRangesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

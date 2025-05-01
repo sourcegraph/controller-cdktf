@@ -37,6 +37,7 @@ type DataGooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputReference int
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	UseTopicSchema() cdktf.IResolvable
 	WriteMetadata() cdktf.IResolvable
 	// Experimental.
 	ComputeFqn() *string
@@ -142,6 +143,16 @@ func (j *jsiiProxy_DataGooglePubsubSubscriptionCloudStorageConfigAvroConfigOutpu
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputReference) UseTopicSchema() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"useTopicSchema",
 		&returns,
 	)
 	return returns

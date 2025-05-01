@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputerouternat/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_router_nat google_compute_router_nat}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_router_nat google_compute_router_nat}.
 type GoogleComputeRouterNat interface {
 	cdktf.TerraformResource
 	AutoNetworkTier() *string
@@ -57,6 +57,9 @@ type GoogleComputeRouterNat interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	InitialNatIps() *[]*string
+	SetInitialNatIps(val *[]*string)
+	InitialNatIpsInput() *[]*string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -183,6 +186,7 @@ type GoogleComputeRouterNat interface {
 	ResetEndpointTypes()
 	ResetIcmpIdleTimeoutSec()
 	ResetId()
+	ResetInitialNatIps()
 	ResetLogConfig()
 	ResetMaxPortsPerVm()
 	ResetMinPortsPerVm()
@@ -434,6 +438,26 @@ func (j *jsiiProxy_GoogleComputeRouterNat) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRouterNat) InitialNatIps() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"initialNatIps",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRouterNat) InitialNatIpsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"initialNatIpsInput",
 		&returns,
 	)
 	return returns
@@ -880,7 +904,7 @@ func (j *jsiiProxy_GoogleComputeRouterNat) UdpIdleTimeoutSecInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_router_nat google_compute_router_nat} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_router_nat google_compute_router_nat} Resource.
 func NewGoogleComputeRouterNat(scope constructs.Construct, id *string, config *GoogleComputeRouterNatConfig) GoogleComputeRouterNat {
 	_init_.Initialize()
 
@@ -898,7 +922,7 @@ func NewGoogleComputeRouterNat(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_router_nat google_compute_router_nat} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_router_nat google_compute_router_nat} Resource.
 func NewGoogleComputeRouterNat_Override(g GoogleComputeRouterNat, scope constructs.Construct, id *string, config *GoogleComputeRouterNatConfig) {
 	_init_.Initialize()
 
@@ -1020,6 +1044,17 @@ func (j *jsiiProxy_GoogleComputeRouterNat)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRouterNat)SetInitialNatIps(val *[]*string) {
+	if err := j.validateSetInitialNatIpsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"initialNatIps",
 		val,
 	)
 }
@@ -1657,6 +1692,14 @@ func (g *jsiiProxy_GoogleComputeRouterNat) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRouterNat) ResetInitialNatIps() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetInitialNatIps",
 		nil, // no parameters
 	)
 }

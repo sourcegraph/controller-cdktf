@@ -144,6 +144,10 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validateSetEditio
 	return nil
 }
 
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validateSetEnableDataplexIntegrationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validateSetEnableGoogleMlIntegrationParameters(val interface{}) error {
 	return nil
 }
@@ -153,6 +157,10 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validateSetIntern
 }
 
 func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validateSetPricingPlanParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validateSetRetainBackupsOnDeleteParameters(val interface{}) error {
 	return nil
 }
 

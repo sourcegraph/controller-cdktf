@@ -1,0 +1,6 @@
+package datagooglecloudidentitygrouptransitivememberships
+
+
+type DataGoogleCloudIdentityGroupTransitiveMembershipsMemberships struct {
+}
+

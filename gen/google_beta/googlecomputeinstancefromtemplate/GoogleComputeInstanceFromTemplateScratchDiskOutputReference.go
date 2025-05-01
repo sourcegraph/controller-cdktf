@@ -71,7 +71,6 @@ type GoogleComputeInstanceFromTemplateScratchDiskOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetDeviceName()
-	ResetInterface()
 	ResetSize()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -524,14 +523,6 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplateScratchDiskOutputReference) 
 	_jsii_.InvokeVoid(
 		g,
 		"resetDeviceName",
-		nil, // no parameters
-	)
-}
-
-func (g *jsiiProxy_GoogleComputeInstanceFromTemplateScratchDiskOutputReference) ResetInterface() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetInterface",
 		nil, // no parameters
 	)
 }

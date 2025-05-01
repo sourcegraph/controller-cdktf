@@ -196,6 +196,10 @@ func (j *jsiiProxy_RedisInstance) validateSetSecondaryIpRangeParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_RedisInstance) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedisInstance) validateSetTierParameters(val *string) error {
 	return nil
 }

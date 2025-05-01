@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleapigatewayapiiambinding/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_api_gateway_api_iam_binding google_api_gateway_api_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_api_gateway_api_iam_binding google_api_gateway_api_iam_binding}.
 type GoogleApiGatewayApiIamBinding interface {
 	cdktf.TerraformResource
 	Api() *string
@@ -435,7 +435,7 @@ func (j *jsiiProxy_GoogleApiGatewayApiIamBinding) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_api_gateway_api_iam_binding google_api_gateway_api_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_api_gateway_api_iam_binding google_api_gateway_api_iam_binding} Resource.
 func NewGoogleApiGatewayApiIamBinding(scope constructs.Construct, id *string, config *GoogleApiGatewayApiIamBindingConfig) GoogleApiGatewayApiIamBinding {
 	_init_.Initialize()
 
@@ -453,7 +453,7 @@ func NewGoogleApiGatewayApiIamBinding(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_api_gateway_api_iam_binding google_api_gateway_api_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_api_gateway_api_iam_binding google_api_gateway_api_iam_binding} Resource.
 func NewGoogleApiGatewayApiIamBinding_Override(g GoogleApiGatewayApiIamBinding, scope constructs.Construct, id *string, config *GoogleApiGatewayApiIamBindingConfig) {
 	_init_.Initialize()
 

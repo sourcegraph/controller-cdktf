@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlebigqueryanalyticshubdataexchangeiammember/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_member google_bigquery_analytics_hub_data_exchange_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_member google_bigquery_analytics_hub_data_exchange_iam_member}.
 type GoogleBigqueryAnalyticsHubDataExchangeIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -459,7 +459,7 @@ func (j *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchangeIamMember) TerraformRes
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_member google_bigquery_analytics_hub_data_exchange_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_member google_bigquery_analytics_hub_data_exchange_iam_member} Resource.
 func NewGoogleBigqueryAnalyticsHubDataExchangeIamMember(scope constructs.Construct, id *string, config *GoogleBigqueryAnalyticsHubDataExchangeIamMemberConfig) GoogleBigqueryAnalyticsHubDataExchangeIamMember {
 	_init_.Initialize()
 
@@ -477,7 +477,7 @@ func NewGoogleBigqueryAnalyticsHubDataExchangeIamMember(scope constructs.Constru
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_member google_bigquery_analytics_hub_data_exchange_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_member google_bigquery_analytics_hub_data_exchange_iam_member} Resource.
 func NewGoogleBigqueryAnalyticsHubDataExchangeIamMember_Override(g GoogleBigqueryAnalyticsHubDataExchangeIamMember, scope constructs.Construct, id *string, config *GoogleBigqueryAnalyticsHubDataExchangeIamMemberConfig) {
 	_init_.Initialize()
 

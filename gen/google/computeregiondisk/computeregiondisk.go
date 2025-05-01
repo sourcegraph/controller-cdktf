@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/computeregiondisk/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_region_disk google_compute_region_disk}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_region_disk google_compute_region_disk}.
 type ComputeRegionDisk interface {
 	cdktf.TerraformResource
 	AsyncPrimaryDisk() ComputeRegionDiskAsyncPrimaryDiskOutputReference
@@ -26,6 +26,12 @@ type ComputeRegionDisk interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreateSnapshotBeforeDestroy() interface{}
+	SetCreateSnapshotBeforeDestroy(val interface{})
+	CreateSnapshotBeforeDestroyInput() interface{}
+	CreateSnapshotBeforeDestroyPrefix() *string
+	SetCreateSnapshotBeforeDestroyPrefix(val *string)
+	CreateSnapshotBeforeDestroyPrefixInput() *string
 	CreationTimestamp() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -166,6 +172,8 @@ type ComputeRegionDisk interface {
 	PutSourceSnapshotEncryptionKey(value *ComputeRegionDiskSourceSnapshotEncryptionKey)
 	PutTimeouts(value *ComputeRegionDiskTimeouts)
 	ResetAsyncPrimaryDisk()
+	ResetCreateSnapshotBeforeDestroy()
+	ResetCreateSnapshotBeforeDestroyPrefix()
 	ResetDescription()
 	ResetDiskEncryptionKey()
 	ResetGuestOsFeatures()
@@ -257,6 +265,46 @@ func (j *jsiiProxy_ComputeRegionDisk) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionDisk) CreateSnapshotBeforeDestroy() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"createSnapshotBeforeDestroy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionDisk) CreateSnapshotBeforeDestroyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"createSnapshotBeforeDestroyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionDisk) CreateSnapshotBeforeDestroyPrefix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createSnapshotBeforeDestroyPrefix",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionDisk) CreateSnapshotBeforeDestroyPrefixInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createSnapshotBeforeDestroyPrefixInput",
 		&returns,
 	)
 	return returns
@@ -823,7 +871,7 @@ func (j *jsiiProxy_ComputeRegionDisk) Users() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_region_disk google_compute_region_disk} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_region_disk google_compute_region_disk} Resource.
 func NewComputeRegionDisk(scope constructs.Construct, id *string, config *ComputeRegionDiskConfig) ComputeRegionDisk {
 	_init_.Initialize()
 
@@ -841,7 +889,7 @@ func NewComputeRegionDisk(scope constructs.Construct, id *string, config *Comput
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_region_disk google_compute_region_disk} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_region_disk google_compute_region_disk} Resource.
 func NewComputeRegionDisk_Override(c ComputeRegionDisk, scope constructs.Construct, id *string, config *ComputeRegionDiskConfig) {
 	_init_.Initialize()
 
@@ -870,6 +918,28 @@ func (j *jsiiProxy_ComputeRegionDisk)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeRegionDisk)SetCreateSnapshotBeforeDestroy(val interface{}) {
+	if err := j.validateSetCreateSnapshotBeforeDestroyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"createSnapshotBeforeDestroy",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeRegionDisk)SetCreateSnapshotBeforeDestroyPrefix(val *string) {
+	if err := j.validateSetCreateSnapshotBeforeDestroyPrefixParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"createSnapshotBeforeDestroyPrefix",
 		val,
 	)
 }
@@ -1475,6 +1545,22 @@ func (c *jsiiProxy_ComputeRegionDisk) ResetAsyncPrimaryDisk() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetAsyncPrimaryDisk",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRegionDisk) ResetCreateSnapshotBeforeDestroy() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCreateSnapshotBeforeDestroy",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRegionDisk) ResetCreateSnapshotBeforeDestroyPrefix() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCreateSnapshotBeforeDestroyPrefix",
 		nil, // no parameters
 	)
 }

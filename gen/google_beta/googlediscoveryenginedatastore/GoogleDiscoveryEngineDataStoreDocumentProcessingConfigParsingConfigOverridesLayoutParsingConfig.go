@@ -1,0 +1,6 @@
+package googlediscoveryenginedatastore
+
+
+type GoogleDiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesLayoutParsingConfig struct {
+}
+

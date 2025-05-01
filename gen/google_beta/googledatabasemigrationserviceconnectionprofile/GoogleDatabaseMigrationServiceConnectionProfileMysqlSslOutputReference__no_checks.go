@@ -80,6 +80,10 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileMysqlSslOutput
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileMysqlSslOutputReference) validateSetTypeParameters(val *string) error {
+	return nil
+}
+
 func validateNewGoogleDatabaseMigrationServiceConnectionProfileMysqlSslOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

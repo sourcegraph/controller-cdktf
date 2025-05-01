@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/workflowsworkflow/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/workflows_workflow google_workflows_workflow}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/workflows_workflow google_workflows_workflow}.
 type WorkflowsWorkflow interface {
 	cdktf.TerraformResource
 	CallLogLevel() *string
@@ -31,6 +31,9 @@ type WorkflowsWorkflow interface {
 	CryptoKeyName() *string
 	SetCryptoKeyName(val *string)
 	CryptoKeyNameInput() *string
+	DeletionProtection() interface{}
+	SetDeletionProtection(val interface{})
+	DeletionProtectionInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -39,6 +42,9 @@ type WorkflowsWorkflow interface {
 	SetDescription(val *string)
 	DescriptionInput() *string
 	EffectiveLabels() cdktf.StringMap
+	ExecutionHistoryLevel() *string
+	SetExecutionHistoryLevel(val *string)
+	ExecutionHistoryLevelInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -89,6 +95,9 @@ type WorkflowsWorkflow interface {
 	SetSourceContents(val *string)
 	SourceContentsInput() *string
 	State() *string
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
@@ -148,7 +157,9 @@ type WorkflowsWorkflow interface {
 	PutTimeouts(value *WorkflowsWorkflowTimeouts)
 	ResetCallLogLevel()
 	ResetCryptoKeyName()
+	ResetDeletionProtection()
 	ResetDescription()
+	ResetExecutionHistoryLevel()
 	ResetId()
 	ResetLabels()
 	ResetName()
@@ -160,6 +171,7 @@ type WorkflowsWorkflow interface {
 	ResetRegion()
 	ResetServiceAccount()
 	ResetSourceContents()
+	ResetTags()
 	ResetTimeouts()
 	ResetUserEnvVars()
 	SynthesizeAttributes() *map[string]interface{}
@@ -270,6 +282,26 @@ func (j *jsiiProxy_WorkflowsWorkflow) CryptoKeyNameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_WorkflowsWorkflow) DeletionProtection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkflowsWorkflow) DeletionProtectionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtectionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkflowsWorkflow) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -305,6 +337,26 @@ func (j *jsiiProxy_WorkflowsWorkflow) EffectiveLabels() cdktf.StringMap {
 	_jsii_.Get(
 		j,
 		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkflowsWorkflow) ExecutionHistoryLevel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"executionHistoryLevel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkflowsWorkflow) ExecutionHistoryLevelInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"executionHistoryLevelInput",
 		&returns,
 	)
 	return returns
@@ -570,6 +622,26 @@ func (j *jsiiProxy_WorkflowsWorkflow) State() *string {
 	return returns
 }
 
+func (j *jsiiProxy_WorkflowsWorkflow) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkflowsWorkflow) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkflowsWorkflow) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -661,7 +733,7 @@ func (j *jsiiProxy_WorkflowsWorkflow) UserEnvVarsInput() *map[string]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/workflows_workflow google_workflows_workflow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/workflows_workflow google_workflows_workflow} Resource.
 func NewWorkflowsWorkflow(scope constructs.Construct, id *string, config *WorkflowsWorkflowConfig) WorkflowsWorkflow {
 	_init_.Initialize()
 
@@ -679,7 +751,7 @@ func NewWorkflowsWorkflow(scope constructs.Construct, id *string, config *Workfl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/workflows_workflow google_workflows_workflow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/workflows_workflow google_workflows_workflow} Resource.
 func NewWorkflowsWorkflow_Override(w WorkflowsWorkflow, scope constructs.Construct, id *string, config *WorkflowsWorkflowConfig) {
 	_init_.Initialize()
 
@@ -734,6 +806,17 @@ func (j *jsiiProxy_WorkflowsWorkflow)SetCryptoKeyName(val *string) {
 	)
 }
 
+func (j *jsiiProxy_WorkflowsWorkflow)SetDeletionProtection(val interface{}) {
+	if err := j.validateSetDeletionProtectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deletionProtection",
+		val,
+	)
+}
+
 func (j *jsiiProxy_WorkflowsWorkflow)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
@@ -749,6 +832,17 @@ func (j *jsiiProxy_WorkflowsWorkflow)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkflowsWorkflow)SetExecutionHistoryLevel(val *string) {
+	if err := j.validateSetExecutionHistoryLevelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"executionHistoryLevel",
 		val,
 	)
 }
@@ -875,6 +969,17 @@ func (j *jsiiProxy_WorkflowsWorkflow)SetSourceContents(val *string) {
 	_jsii_.Set(
 		j,
 		"sourceContents",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkflowsWorkflow)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
 		val,
 	)
 }
@@ -1270,10 +1375,26 @@ func (w *jsiiProxy_WorkflowsWorkflow) ResetCryptoKeyName() {
 	)
 }
 
+func (w *jsiiProxy_WorkflowsWorkflow) ResetDeletionProtection() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetDeletionProtection",
+		nil, // no parameters
+	)
+}
+
 func (w *jsiiProxy_WorkflowsWorkflow) ResetDescription() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkflowsWorkflow) ResetExecutionHistoryLevel() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetExecutionHistoryLevel",
 		nil, // no parameters
 	)
 }
@@ -1346,6 +1467,14 @@ func (w *jsiiProxy_WorkflowsWorkflow) ResetSourceContents() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetSourceContents",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkflowsWorkflow) ResetTags() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetTags",
 		nil, // no parameters
 	)
 }

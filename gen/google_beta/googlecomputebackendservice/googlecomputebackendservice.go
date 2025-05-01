@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputebackendservice/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_backend_service google_compute_backend_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_backend_service google_compute_backend_service}.
 type GoogleComputeBackendService interface {
 	cdktf.TerraformResource
 	AffinityCookieTtlSec() *float64
@@ -42,6 +42,8 @@ type GoogleComputeBackendService interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreationTimestamp() *string
+	CustomMetrics() GoogleComputeBackendServiceCustomMetricsList
+	CustomMetricsInput() interface{}
 	CustomRequestHeaders() *[]*string
 	SetCustomRequestHeaders(val *[]*string)
 	CustomRequestHeadersInput() *[]*string
@@ -79,6 +81,9 @@ type GoogleComputeBackendService interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IpAddressSelectionPolicy() *string
+	SetIpAddressSelectionPolicy(val *string)
+	IpAddressSelectionPolicyInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -93,6 +98,8 @@ type GoogleComputeBackendService interface {
 	LocalityLbPolicyInput() *string
 	LogConfig() GoogleComputeBackendServiceLogConfigOutputReference
 	LogConfigInput() *GoogleComputeBackendServiceLogConfig
+	MaxStreamDuration() GoogleComputeBackendServiceMaxStreamDurationOutputReference
+	MaxStreamDurationInput() *GoogleComputeBackendServiceMaxStreamDuration
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -131,6 +138,8 @@ type GoogleComputeBackendService interface {
 	SessionAffinity() *string
 	SetSessionAffinity(val *string)
 	SessionAffinityInput() *string
+	StrongSessionAffinityCookie() GoogleComputeBackendServiceStrongSessionAffinityCookieOutputReference
+	StrongSessionAffinityCookieInput() *GoogleComputeBackendServiceStrongSessionAffinityCookie
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -142,6 +151,8 @@ type GoogleComputeBackendService interface {
 	SetTimeoutSec(val *float64)
 	TimeoutSecInput() *float64
 	TimeoutsInput() interface{}
+	TlsSettings() GoogleComputeBackendServiceTlsSettingsOutputReference
+	TlsSettingsInput() *GoogleComputeBackendServiceTlsSettings
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -189,12 +200,16 @@ type GoogleComputeBackendService interface {
 	PutCdnPolicy(value *GoogleComputeBackendServiceCdnPolicy)
 	PutCircuitBreakers(value *GoogleComputeBackendServiceCircuitBreakers)
 	PutConsistentHash(value *GoogleComputeBackendServiceConsistentHash)
+	PutCustomMetrics(value interface{})
 	PutIap(value *GoogleComputeBackendServiceIap)
 	PutLocalityLbPolicies(value interface{})
 	PutLogConfig(value *GoogleComputeBackendServiceLogConfig)
+	PutMaxStreamDuration(value *GoogleComputeBackendServiceMaxStreamDuration)
 	PutOutlierDetection(value *GoogleComputeBackendServiceOutlierDetection)
 	PutSecuritySettings(value *GoogleComputeBackendServiceSecuritySettings)
+	PutStrongSessionAffinityCookie(value *GoogleComputeBackendServiceStrongSessionAffinityCookie)
 	PutTimeouts(value *GoogleComputeBackendServiceTimeouts)
+	PutTlsSettings(value *GoogleComputeBackendServiceTlsSettings)
 	ResetAffinityCookieTtlSec()
 	ResetBackend()
 	ResetCdnPolicy()
@@ -202,6 +217,7 @@ type GoogleComputeBackendService interface {
 	ResetCompressionMode()
 	ResetConnectionDrainingTimeoutSec()
 	ResetConsistentHash()
+	ResetCustomMetrics()
 	ResetCustomRequestHeaders()
 	ResetCustomResponseHeaders()
 	ResetDescription()
@@ -210,10 +226,12 @@ type GoogleComputeBackendService interface {
 	ResetHealthChecks()
 	ResetIap()
 	ResetId()
+	ResetIpAddressSelectionPolicy()
 	ResetLoadBalancingScheme()
 	ResetLocalityLbPolicies()
 	ResetLocalityLbPolicy()
 	ResetLogConfig()
+	ResetMaxStreamDuration()
 	ResetOutlierDetection()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -225,8 +243,10 @@ type GoogleComputeBackendService interface {
 	ResetSecuritySettings()
 	ResetServiceLbPolicy()
 	ResetSessionAffinity()
+	ResetStrongSessionAffinityCookie()
 	ResetTimeouts()
 	ResetTimeoutSec()
+	ResetTlsSettings()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -430,6 +450,26 @@ func (j *jsiiProxy_GoogleComputeBackendService) CreationTimestamp() *string {
 	_jsii_.Get(
 		j,
 		"creationTimestamp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeBackendService) CustomMetrics() GoogleComputeBackendServiceCustomMetricsList {
+	var returns GoogleComputeBackendServiceCustomMetricsList
+	_jsii_.Get(
+		j,
+		"customMetrics",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeBackendService) CustomMetricsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"customMetricsInput",
 		&returns,
 	)
 	return returns
@@ -655,6 +695,26 @@ func (j *jsiiProxy_GoogleComputeBackendService) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeBackendService) IpAddressSelectionPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipAddressSelectionPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeBackendService) IpAddressSelectionPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipAddressSelectionPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeBackendService) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -740,6 +800,26 @@ func (j *jsiiProxy_GoogleComputeBackendService) LogConfigInput() *GoogleComputeB
 	_jsii_.Get(
 		j,
 		"logConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeBackendService) MaxStreamDuration() GoogleComputeBackendServiceMaxStreamDurationOutputReference {
+	var returns GoogleComputeBackendServiceMaxStreamDurationOutputReference
+	_jsii_.Get(
+		j,
+		"maxStreamDuration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeBackendService) MaxStreamDurationInput() *GoogleComputeBackendServiceMaxStreamDuration {
+	var returns *GoogleComputeBackendServiceMaxStreamDuration
+	_jsii_.Get(
+		j,
+		"maxStreamDurationInput",
 		&returns,
 	)
 	return returns
@@ -975,6 +1055,26 @@ func (j *jsiiProxy_GoogleComputeBackendService) SessionAffinityInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeBackendService) StrongSessionAffinityCookie() GoogleComputeBackendServiceStrongSessionAffinityCookieOutputReference {
+	var returns GoogleComputeBackendServiceStrongSessionAffinityCookieOutputReference
+	_jsii_.Get(
+		j,
+		"strongSessionAffinityCookie",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeBackendService) StrongSessionAffinityCookieInput() *GoogleComputeBackendServiceStrongSessionAffinityCookie {
+	var returns *GoogleComputeBackendServiceStrongSessionAffinityCookie
+	_jsii_.Get(
+		j,
+		"strongSessionAffinityCookieInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeBackendService) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -1045,8 +1145,28 @@ func (j *jsiiProxy_GoogleComputeBackendService) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeBackendService) TlsSettings() GoogleComputeBackendServiceTlsSettingsOutputReference {
+	var returns GoogleComputeBackendServiceTlsSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"tlsSettings",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_backend_service google_compute_backend_service} Resource.
+func (j *jsiiProxy_GoogleComputeBackendService) TlsSettingsInput() *GoogleComputeBackendServiceTlsSettings {
+	var returns *GoogleComputeBackendServiceTlsSettings
+	_jsii_.Get(
+		j,
+		"tlsSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_backend_service google_compute_backend_service} Resource.
 func NewGoogleComputeBackendService(scope constructs.Construct, id *string, config *GoogleComputeBackendServiceConfig) GoogleComputeBackendService {
 	_init_.Initialize()
 
@@ -1064,7 +1184,7 @@ func NewGoogleComputeBackendService(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_backend_service google_compute_backend_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_backend_service google_compute_backend_service} Resource.
 func NewGoogleComputeBackendService_Override(g GoogleComputeBackendService, scope constructs.Construct, id *string, config *GoogleComputeBackendServiceConfig) {
 	_init_.Initialize()
 
@@ -1219,6 +1339,17 @@ func (j *jsiiProxy_GoogleComputeBackendService)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeBackendService)SetIpAddressSelectionPolicy(val *string) {
+	if err := j.validateSetIpAddressSelectionPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipAddressSelectionPolicy",
 		val,
 	)
 }
@@ -1760,6 +1891,17 @@ func (g *jsiiProxy_GoogleComputeBackendService) PutConsistentHash(value *GoogleC
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeBackendService) PutCustomMetrics(value interface{}) {
+	if err := g.validatePutCustomMetricsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putCustomMetrics",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeBackendService) PutIap(value *GoogleComputeBackendServiceIap) {
 	if err := g.validatePutIapParameters(value); err != nil {
 		panic(err)
@@ -1793,6 +1935,17 @@ func (g *jsiiProxy_GoogleComputeBackendService) PutLogConfig(value *GoogleComput
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeBackendService) PutMaxStreamDuration(value *GoogleComputeBackendServiceMaxStreamDuration) {
+	if err := g.validatePutMaxStreamDurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putMaxStreamDuration",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeBackendService) PutOutlierDetection(value *GoogleComputeBackendServiceOutlierDetection) {
 	if err := g.validatePutOutlierDetectionParameters(value); err != nil {
 		panic(err)
@@ -1815,6 +1968,17 @@ func (g *jsiiProxy_GoogleComputeBackendService) PutSecuritySettings(value *Googl
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeBackendService) PutStrongSessionAffinityCookie(value *GoogleComputeBackendServiceStrongSessionAffinityCookie) {
+	if err := g.validatePutStrongSessionAffinityCookieParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putStrongSessionAffinityCookie",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeBackendService) PutTimeouts(value *GoogleComputeBackendServiceTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1822,6 +1986,17 @@ func (g *jsiiProxy_GoogleComputeBackendService) PutTimeouts(value *GoogleCompute
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeBackendService) PutTlsSettings(value *GoogleComputeBackendServiceTlsSettings) {
+	if err := g.validatePutTlsSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putTlsSettings",
 		[]interface{}{value},
 	)
 }
@@ -1878,6 +2053,14 @@ func (g *jsiiProxy_GoogleComputeBackendService) ResetConsistentHash() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetConsistentHash",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeBackendService) ResetCustomMetrics() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCustomMetrics",
 		nil, // no parameters
 	)
 }
@@ -1946,6 +2129,14 @@ func (g *jsiiProxy_GoogleComputeBackendService) ResetId() {
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeBackendService) ResetIpAddressSelectionPolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIpAddressSelectionPolicy",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeBackendService) ResetLoadBalancingScheme() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1974,6 +2165,14 @@ func (g *jsiiProxy_GoogleComputeBackendService) ResetLogConfig() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetLogConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeBackendService) ResetMaxStreamDuration() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMaxStreamDuration",
 		nil, // no parameters
 	)
 }
@@ -2050,6 +2249,14 @@ func (g *jsiiProxy_GoogleComputeBackendService) ResetSessionAffinity() {
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeBackendService) ResetStrongSessionAffinityCookie() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetStrongSessionAffinityCookie",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeBackendService) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		g,
@@ -2062,6 +2269,14 @@ func (g *jsiiProxy_GoogleComputeBackendService) ResetTimeoutSec() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetTimeoutSec",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeBackendService) ResetTlsSettings() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTlsSettings",
 		nil, // no parameters
 	)
 }

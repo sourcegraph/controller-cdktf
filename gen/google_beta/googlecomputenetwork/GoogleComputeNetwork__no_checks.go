@@ -96,6 +96,18 @@ func (j *jsiiProxy_GoogleComputeNetwork) validateSetAutoCreateSubnetworksParamet
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeNetwork) validateSetBgpAlwaysCompareMedParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeNetwork) validateSetBgpBestPathSelectionModeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeNetwork) validateSetBgpInterRegionCostParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeNetwork) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -137,6 +149,10 @@ func (j *jsiiProxy_GoogleComputeNetwork) validateSetNameParameters(val *string) 
 }
 
 func (j *jsiiProxy_GoogleComputeNetwork) validateSetNetworkFirewallPolicyEnforcementOrderParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeNetwork) validateSetNetworkProfileParameters(val *string) error {
 	return nil
 }
 

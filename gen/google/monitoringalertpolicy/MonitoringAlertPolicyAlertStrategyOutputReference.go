@@ -34,6 +34,9 @@ type MonitoringAlertPolicyAlertStrategyOutputReference interface {
 	SetInternalValue(val *MonitoringAlertPolicyAlertStrategy)
 	NotificationChannelStrategy() MonitoringAlertPolicyAlertStrategyNotificationChannelStrategyList
 	NotificationChannelStrategyInput() interface{}
+	NotificationPrompts() *[]*string
+	SetNotificationPrompts(val *[]*string)
+	NotificationPromptsInput() *[]*string
 	NotificationRateLimit() MonitoringAlertPolicyAlertStrategyNotificationRateLimitOutputReference
 	NotificationRateLimitInput() *MonitoringAlertPolicyAlertStrategyNotificationRateLimit
 	// Experimental.
@@ -72,6 +75,7 @@ type MonitoringAlertPolicyAlertStrategyOutputReference interface {
 	PutNotificationRateLimit(value *MonitoringAlertPolicyAlertStrategyNotificationRateLimit)
 	ResetAutoClose()
 	ResetNotificationChannelStrategy()
+	ResetNotificationPrompts()
 	ResetNotificationRateLimit()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -173,6 +177,26 @@ func (j *jsiiProxy_MonitoringAlertPolicyAlertStrategyOutputReference) Notificati
 	_jsii_.Get(
 		j,
 		"notificationChannelStrategyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringAlertPolicyAlertStrategyOutputReference) NotificationPrompts() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"notificationPrompts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringAlertPolicyAlertStrategyOutputReference) NotificationPromptsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"notificationPromptsInput",
 		&returns,
 	)
 	return returns
@@ -286,6 +310,17 @@ func (j *jsiiProxy_MonitoringAlertPolicyAlertStrategyOutputReference)SetInternal
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MonitoringAlertPolicyAlertStrategyOutputReference)SetNotificationPrompts(val *[]*string) {
+	if err := j.validateSetNotificationPromptsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"notificationPrompts",
 		val,
 	)
 }
@@ -532,6 +567,14 @@ func (m *jsiiProxy_MonitoringAlertPolicyAlertStrategyOutputReference) ResetNotif
 	_jsii_.InvokeVoid(
 		m,
 		"resetNotificationChannelStrategy",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MonitoringAlertPolicyAlertStrategyOutputReference) ResetNotificationPrompts() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetNotificationPrompts",
 		nil, // no parameters
 	)
 }

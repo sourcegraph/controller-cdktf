@@ -33,6 +33,8 @@ type GoogleDataLossPreventionDiscoveryConfigActionsOutputReference interface {
 	SetInternalValue(val interface{})
 	PubSubNotification() GoogleDataLossPreventionDiscoveryConfigActionsPubSubNotificationOutputReference
 	PubSubNotificationInput() *GoogleDataLossPreventionDiscoveryConfigActionsPubSubNotification
+	TagResources() GoogleDataLossPreventionDiscoveryConfigActionsTagResourcesOutputReference
+	TagResourcesInput() *GoogleDataLossPreventionDiscoveryConfigActionsTagResources
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,8 +69,10 @@ type GoogleDataLossPreventionDiscoveryConfigActionsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutExportData(value *GoogleDataLossPreventionDiscoveryConfigActionsExportData)
 	PutPubSubNotification(value *GoogleDataLossPreventionDiscoveryConfigActionsPubSubNotification)
+	PutTagResources(value *GoogleDataLossPreventionDiscoveryConfigActionsTagResources)
 	ResetExportData()
 	ResetPubSubNotification()
+	ResetTagResources()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -169,6 +173,26 @@ func (j *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigActionsOutputReference
 	_jsii_.Get(
 		j,
 		"pubSubNotificationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigActionsOutputReference) TagResources() GoogleDataLossPreventionDiscoveryConfigActionsTagResourcesOutputReference {
+	var returns GoogleDataLossPreventionDiscoveryConfigActionsTagResourcesOutputReference
+	_jsii_.Get(
+		j,
+		"tagResources",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigActionsOutputReference) TagResourcesInput() *GoogleDataLossPreventionDiscoveryConfigActionsTagResources {
+	var returns *GoogleDataLossPreventionDiscoveryConfigActionsTagResources
+	_jsii_.Get(
+		j,
+		"tagResourcesInput",
 		&returns,
 	)
 	return returns
@@ -485,6 +509,17 @@ func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigActionsOutputReference
 	)
 }
 
+func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigActionsOutputReference) PutTagResources(value *GoogleDataLossPreventionDiscoveryConfigActionsTagResources) {
+	if err := g.validatePutTagResourcesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putTagResources",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigActionsOutputReference) ResetExportData() {
 	_jsii_.InvokeVoid(
 		g,
@@ -497,6 +532,14 @@ func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigActionsOutputReference
 	_jsii_.InvokeVoid(
 		g,
 		"resetPubSubNotification",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigActionsOutputReference) ResetTagResources() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTagResources",
 		nil, // no parameters
 	)
 }

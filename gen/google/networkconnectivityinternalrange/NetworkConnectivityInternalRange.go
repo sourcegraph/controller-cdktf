@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/networkconnectivityinternalrange/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/network_connectivity_internal_range google_network_connectivity_internal_range}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/network_connectivity_internal_range google_network_connectivity_internal_range}.
 type NetworkConnectivityInternalRange interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -32,6 +32,9 @@ type NetworkConnectivityInternalRange interface {
 	SetDescription(val *string)
 	DescriptionInput() *string
 	EffectiveLabels() cdktf.StringMap
+	ExcludeCidrRanges() *[]*string
+	SetExcludeCidrRanges(val *[]*string)
+	ExcludeCidrRangesInput() *[]*string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -53,6 +56,8 @@ type NetworkConnectivityInternalRange interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Migration() NetworkConnectivityInternalRangeMigrationOutputReference
+	MigrationInput() *NetworkConnectivityInternalRangeMigration
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -142,11 +147,14 @@ type NetworkConnectivityInternalRange interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutMigration(value *NetworkConnectivityInternalRangeMigration)
 	PutTimeouts(value *NetworkConnectivityInternalRangeTimeouts)
 	ResetDescription()
+	ResetExcludeCidrRanges()
 	ResetId()
 	ResetIpCidrRange()
 	ResetLabels()
+	ResetMigration()
 	ResetOverlaps()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -253,6 +261,26 @@ func (j *jsiiProxy_NetworkConnectivityInternalRange) EffectiveLabels() cdktf.Str
 	return returns
 }
 
+func (j *jsiiProxy_NetworkConnectivityInternalRange) ExcludeCidrRanges() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"excludeCidrRanges",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkConnectivityInternalRange) ExcludeCidrRangesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"excludeCidrRangesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NetworkConnectivityInternalRange) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -348,6 +376,26 @@ func (j *jsiiProxy_NetworkConnectivityInternalRange) Lifecycle() *cdktf.Terrafor
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkConnectivityInternalRange) Migration() NetworkConnectivityInternalRangeMigrationOutputReference {
+	var returns NetworkConnectivityInternalRangeMigrationOutputReference
+	_jsii_.Get(
+		j,
+		"migration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkConnectivityInternalRange) MigrationInput() *NetworkConnectivityInternalRangeMigration {
+	var returns *NetworkConnectivityInternalRangeMigration
+	_jsii_.Get(
+		j,
+		"migrationInput",
 		&returns,
 	)
 	return returns
@@ -624,7 +672,7 @@ func (j *jsiiProxy_NetworkConnectivityInternalRange) Users() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/network_connectivity_internal_range google_network_connectivity_internal_range} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/network_connectivity_internal_range google_network_connectivity_internal_range} Resource.
 func NewNetworkConnectivityInternalRange(scope constructs.Construct, id *string, config *NetworkConnectivityInternalRangeConfig) NetworkConnectivityInternalRange {
 	_init_.Initialize()
 
@@ -642,7 +690,7 @@ func NewNetworkConnectivityInternalRange(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/network_connectivity_internal_range google_network_connectivity_internal_range} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/network_connectivity_internal_range google_network_connectivity_internal_range} Resource.
 func NewNetworkConnectivityInternalRange_Override(n NetworkConnectivityInternalRange, scope constructs.Construct, id *string, config *NetworkConnectivityInternalRangeConfig) {
 	_init_.Initialize()
 
@@ -690,6 +738,17 @@ func (j *jsiiProxy_NetworkConnectivityInternalRange)SetDescription(val *string) 
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkConnectivityInternalRange)SetExcludeCidrRanges(val *[]*string) {
+	if err := j.validateSetExcludeCidrRangesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"excludeCidrRanges",
 		val,
 	)
 }
@@ -1206,6 +1265,17 @@ func (n *jsiiProxy_NetworkConnectivityInternalRange) OverrideLogicalId(newLogica
 	)
 }
 
+func (n *jsiiProxy_NetworkConnectivityInternalRange) PutMigration(value *NetworkConnectivityInternalRangeMigration) {
+	if err := n.validatePutMigrationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putMigration",
+		[]interface{}{value},
+	)
+}
+
 func (n *jsiiProxy_NetworkConnectivityInternalRange) PutTimeouts(value *NetworkConnectivityInternalRangeTimeouts) {
 	if err := n.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1221,6 +1291,14 @@ func (n *jsiiProxy_NetworkConnectivityInternalRange) ResetDescription() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkConnectivityInternalRange) ResetExcludeCidrRanges() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetExcludeCidrRanges",
 		nil, // no parameters
 	)
 }
@@ -1245,6 +1323,14 @@ func (n *jsiiProxy_NetworkConnectivityInternalRange) ResetLabels() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetLabels",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkConnectivityInternalRange) ResetMigration() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetMigration",
 		nil, // no parameters
 	)
 }

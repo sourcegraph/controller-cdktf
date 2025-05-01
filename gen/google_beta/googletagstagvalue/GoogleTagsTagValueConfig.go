@@ -21,28 +21,28 @@ type GoogleTagsTagValueConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Input only. The resource name of the new TagValue's parent. Must be of the form tagKeys/{tag_key_id}.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_tags_tag_value#parent GoogleTagsTagValue#parent}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_tags_tag_value#parent GoogleTagsTagValue#parent}
 	Parent *string `field:"required" json:"parent" yaml:"parent"`
 	// Input only.
 	//
 	// User-assigned short name for TagValue. The short name should be unique for TagValues within the same parent TagKey.
 	//
-	// The short name must be 63 characters or less, beginning and ending with an alphanumeric character ([a-z0-9A-Z]) with dashes (-), underscores (_), dots (.), and alphanumerics between.
+	// The short name can have a maximum length of 256 characters. The permitted character set for the shortName includes all UTF-8 encoded Unicode characters except single quotes ('), double quotes ("), backslashes (\\), and forward slashes (/).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_tags_tag_value#short_name GoogleTagsTagValue#short_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_tags_tag_value#short_name GoogleTagsTagValue#short_name}
 	ShortName *string `field:"required" json:"shortName" yaml:"shortName"`
 	// User-assigned description of the TagValue. Must not exceed 256 characters.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_tags_tag_value#description GoogleTagsTagValue#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_tags_tag_value#description GoogleTagsTagValue#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_tags_tag_value#id GoogleTagsTagValue#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_tags_tag_value#id GoogleTagsTagValue#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_tags_tag_value#timeouts GoogleTagsTagValue#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_tags_tag_value#timeouts GoogleTagsTagValue#timeouts}
 	Timeouts *GoogleTagsTagValueTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

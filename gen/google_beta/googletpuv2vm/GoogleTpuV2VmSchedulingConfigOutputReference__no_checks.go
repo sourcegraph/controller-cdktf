@@ -68,6 +68,10 @@ func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) validateSetRese
 	return nil
 }
 
+func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) validateSetSpotParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

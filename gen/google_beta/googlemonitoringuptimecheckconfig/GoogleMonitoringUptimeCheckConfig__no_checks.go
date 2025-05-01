@@ -140,6 +140,10 @@ func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfig) validateSetLifecycleParame
 	return nil
 }
 
+func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfig) validateSetLogCheckFailuresParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfig) validateSetPeriodParameters(val *string) error {
 	return nil
 }

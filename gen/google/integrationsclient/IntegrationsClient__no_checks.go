@@ -108,10 +108,6 @@ func (j *jsiiProxy_IntegrationsClient) validateSetCreateSampleIntegrationsParame
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationsClient) validateSetCreateSampleWorkflowsParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_IntegrationsClient) validateSetIdParameters(val *string) error {
 	return nil
 }
@@ -129,10 +125,6 @@ func (j *jsiiProxy_IntegrationsClient) validateSetProjectParameters(val *string)
 }
 
 func (j *jsiiProxy_IntegrationsClient) validateSetProvisionersParameters(val *[]interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_IntegrationsClient) validateSetProvisionGmekParameters(val interface{}) error {
 	return nil
 }
 

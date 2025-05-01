@@ -124,6 +124,10 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeterEgressPolicy) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_AccessContextManagerServicePerimeterEgressPolicy) validateSetTitleParameters(val *string) error {
+	return nil
+}
+
 func validateNewAccessContextManagerServicePerimeterEgressPolicyParameters(scope constructs.Construct, id *string, config *AccessContextManagerServicePerimeterEgressPolicyConfig) error {
 	return nil
 }

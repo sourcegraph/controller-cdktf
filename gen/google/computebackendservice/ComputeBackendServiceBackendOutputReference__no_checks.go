@@ -44,6 +44,10 @@ func (c *jsiiProxy_ComputeBackendServiceBackendOutputReference) validateInterpol
 	return nil
 }
 
+func (c *jsiiProxy_ComputeBackendServiceBackendOutputReference) validatePutCustomMetricsParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeBackendServiceBackendOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -101,6 +105,10 @@ func (j *jsiiProxy_ComputeBackendServiceBackendOutputReference) validateSetMaxRa
 }
 
 func (j *jsiiProxy_ComputeBackendServiceBackendOutputReference) validateSetMaxUtilizationParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeBackendServiceBackendOutputReference) validateSetPreferenceParameters(val *string) error {
 	return nil
 }
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/computepublicadvertisedprefix/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_public_advertised_prefix google_compute_public_advertised_prefix}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_public_advertised_prefix google_compute_public_advertised_prefix}.
 type ComputePublicAdvertisedPrefix interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -57,6 +57,9 @@ type ComputePublicAdvertisedPrefix interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	PdpScope() *string
+	SetPdpScope(val *string)
+	PdpScopeInput() *string
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -71,6 +74,7 @@ type ComputePublicAdvertisedPrefix interface {
 	// Experimental.
 	RawOverrides() interface{}
 	SelfLink() *string
+	SharedSecret() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -128,6 +132,7 @@ type ComputePublicAdvertisedPrefix interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPdpScope()
 	ResetProject()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -348,6 +353,26 @@ func (j *jsiiProxy_ComputePublicAdvertisedPrefix) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_ComputePublicAdvertisedPrefix) PdpScope() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pdpScope",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputePublicAdvertisedPrefix) PdpScopeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pdpScopeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputePublicAdvertisedPrefix) Project() *string {
 	var returns *string
 	_jsii_.Get(
@@ -408,6 +433,16 @@ func (j *jsiiProxy_ComputePublicAdvertisedPrefix) SelfLink() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ComputePublicAdvertisedPrefix) SharedSecret() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sharedSecret",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputePublicAdvertisedPrefix) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -459,7 +494,7 @@ func (j *jsiiProxy_ComputePublicAdvertisedPrefix) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_public_advertised_prefix google_compute_public_advertised_prefix} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_public_advertised_prefix google_compute_public_advertised_prefix} Resource.
 func NewComputePublicAdvertisedPrefix(scope constructs.Construct, id *string, config *ComputePublicAdvertisedPrefixConfig) ComputePublicAdvertisedPrefix {
 	_init_.Initialize()
 
@@ -477,7 +512,7 @@ func NewComputePublicAdvertisedPrefix(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_public_advertised_prefix google_compute_public_advertised_prefix} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_public_advertised_prefix google_compute_public_advertised_prefix} Resource.
 func NewComputePublicAdvertisedPrefix_Override(c ComputePublicAdvertisedPrefix, scope constructs.Construct, id *string, config *ComputePublicAdvertisedPrefixConfig) {
 	_init_.Initialize()
 
@@ -588,6 +623,17 @@ func (j *jsiiProxy_ComputePublicAdvertisedPrefix)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputePublicAdvertisedPrefix)SetPdpScope(val *string) {
+	if err := j.validateSetPdpScopeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pdpScope",
 		val,
 	)
 }
@@ -1006,6 +1052,14 @@ func (c *jsiiProxy_ComputePublicAdvertisedPrefix) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputePublicAdvertisedPrefix) ResetPdpScope() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetPdpScope",
 		nil, // no parameters
 	)
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeresourcepolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_resource_policy google_compute_resource_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_resource_policy google_compute_resource_policy}.
 type GoogleComputeResourcePolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -84,6 +84,8 @@ type GoogleComputeResourcePolicy interface {
 	TerraformResourceType() *string
 	Timeouts() GoogleComputeResourcePolicyTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	WorkloadPolicy() GoogleComputeResourcePolicyWorkloadPolicyOutputReference
+	WorkloadPolicyInput() *GoogleComputeResourcePolicyWorkloadPolicy
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -132,6 +134,7 @@ type GoogleComputeResourcePolicy interface {
 	PutInstanceSchedulePolicy(value *GoogleComputeResourcePolicyInstanceSchedulePolicy)
 	PutSnapshotSchedulePolicy(value *GoogleComputeResourcePolicySnapshotSchedulePolicy)
 	PutTimeouts(value *GoogleComputeResourcePolicyTimeouts)
+	PutWorkloadPolicy(value *GoogleComputeResourcePolicyWorkloadPolicy)
 	ResetDescription()
 	ResetDiskConsistencyGroupPolicy()
 	ResetGroupPlacementPolicy()
@@ -144,6 +147,7 @@ type GoogleComputeResourcePolicy interface {
 	ResetRegion()
 	ResetSnapshotSchedulePolicy()
 	ResetTimeouts()
+	ResetWorkloadPolicy()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -532,8 +536,28 @@ func (j *jsiiProxy_GoogleComputeResourcePolicy) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeResourcePolicy) WorkloadPolicy() GoogleComputeResourcePolicyWorkloadPolicyOutputReference {
+	var returns GoogleComputeResourcePolicyWorkloadPolicyOutputReference
+	_jsii_.Get(
+		j,
+		"workloadPolicy",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_resource_policy google_compute_resource_policy} Resource.
+func (j *jsiiProxy_GoogleComputeResourcePolicy) WorkloadPolicyInput() *GoogleComputeResourcePolicyWorkloadPolicy {
+	var returns *GoogleComputeResourcePolicyWorkloadPolicy
+	_jsii_.Get(
+		j,
+		"workloadPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_resource_policy google_compute_resource_policy} Resource.
 func NewGoogleComputeResourcePolicy(scope constructs.Construct, id *string, config *GoogleComputeResourcePolicyConfig) GoogleComputeResourcePolicy {
 	_init_.Initialize()
 
@@ -551,7 +575,7 @@ func NewGoogleComputeResourcePolicy(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_resource_policy google_compute_resource_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_resource_policy google_compute_resource_policy} Resource.
 func NewGoogleComputeResourcePolicy_Override(g GoogleComputeResourcePolicy, scope constructs.Construct, id *string, config *GoogleComputeResourcePolicyConfig) {
 	_init_.Initialize()
 
@@ -1093,6 +1117,17 @@ func (g *jsiiProxy_GoogleComputeResourcePolicy) PutTimeouts(value *GoogleCompute
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeResourcePolicy) PutWorkloadPolicy(value *GoogleComputeResourcePolicyWorkloadPolicy) {
+	if err := g.validatePutWorkloadPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putWorkloadPolicy",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeResourcePolicy) ResetDescription() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1169,6 +1204,14 @@ func (g *jsiiProxy_GoogleComputeResourcePolicy) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeResourcePolicy) ResetWorkloadPolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetWorkloadPolicy",
 		nil, // no parameters
 	)
 }

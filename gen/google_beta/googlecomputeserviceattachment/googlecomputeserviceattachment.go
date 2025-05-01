@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeserviceattachment/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_service_attachment google_compute_service_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_service_attachment google_compute_service_attachment}.
 type GoogleComputeServiceAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -73,6 +73,9 @@ type GoogleComputeServiceAttachment interface {
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
+	PropagatedConnectionLimit() *float64
+	SetPropagatedConnectionLimit(val *float64)
+	PropagatedConnectionLimitInput() *float64
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -155,6 +158,7 @@ type GoogleComputeServiceAttachment interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetPropagatedConnectionLimit()
 	ResetReconcileConnections()
 	ResetRegion()
 	ResetTimeouts()
@@ -496,6 +500,26 @@ func (j *jsiiProxy_GoogleComputeServiceAttachment) ProjectInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeServiceAttachment) PropagatedConnectionLimit() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"propagatedConnectionLimit",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeServiceAttachment) PropagatedConnectionLimitInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"propagatedConnectionLimitInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeServiceAttachment) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -647,7 +671,7 @@ func (j *jsiiProxy_GoogleComputeServiceAttachment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_service_attachment google_compute_service_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_service_attachment google_compute_service_attachment} Resource.
 func NewGoogleComputeServiceAttachment(scope constructs.Construct, id *string, config *GoogleComputeServiceAttachmentConfig) GoogleComputeServiceAttachment {
 	_init_.Initialize()
 
@@ -665,7 +689,7 @@ func NewGoogleComputeServiceAttachment(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_service_attachment google_compute_service_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_service_attachment google_compute_service_attachment} Resource.
 func NewGoogleComputeServiceAttachment_Override(g GoogleComputeServiceAttachment, scope constructs.Construct, id *string, config *GoogleComputeServiceAttachmentConfig) {
 	_init_.Initialize()
 
@@ -820,6 +844,17 @@ func (j *jsiiProxy_GoogleComputeServiceAttachment)SetProject(val *string) {
 	_jsii_.Set(
 		j,
 		"project",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeServiceAttachment)SetPropagatedConnectionLimit(val *float64) {
+	if err := j.validateSetPropagatedConnectionLimitParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"propagatedConnectionLimit",
 		val,
 	)
 }
@@ -1303,6 +1338,14 @@ func (g *jsiiProxy_GoogleComputeServiceAttachment) ResetProject() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeServiceAttachment) ResetPropagatedConnectionLimit() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPropagatedConnectionLimit",
 		nil, // no parameters
 	)
 }

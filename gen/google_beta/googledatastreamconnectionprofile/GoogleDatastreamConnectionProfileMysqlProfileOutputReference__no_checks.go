@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleDatastreamConnectionProfileMysqlProfileOutputReference)
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDatastreamConnectionProfileMysqlProfileOutputReference) validateSetSecretManagerStoredPasswordParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDatastreamConnectionProfileMysqlProfileOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

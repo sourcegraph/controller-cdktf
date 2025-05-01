@@ -30,8 +30,8 @@ type GoogleComputeInstanceFromMachineImageServiceAccountOutputReference interfac
 	EmailInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *GoogleComputeInstanceFromMachineImageServiceAccount
+	SetInternalValue(val *GoogleComputeInstanceFromMachineImageServiceAccount)
 	Scopes() *[]*string
 	SetScopes(val *[]*string)
 	ScopesInput() *[]*string
@@ -68,7 +68,6 @@ type GoogleComputeInstanceFromMachineImageServiceAccountOutputReference interfac
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetEmail()
-	ResetScopes()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -144,8 +143,8 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageServiceAccountOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageServiceAccountOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageServiceAccountOutputReference) InternalValue() *GoogleComputeInstanceFromMachineImageServiceAccount {
+	var returns *GoogleComputeInstanceFromMachineImageServiceAccount
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -195,29 +194,29 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageServiceAccountOutputRefe
 }
 
 
-func NewGoogleComputeInstanceFromMachineImageServiceAccountOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleComputeInstanceFromMachineImageServiceAccountOutputReference {
+func NewGoogleComputeInstanceFromMachineImageServiceAccountOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleComputeInstanceFromMachineImageServiceAccountOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewGoogleComputeInstanceFromMachineImageServiceAccountOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewGoogleComputeInstanceFromMachineImageServiceAccountOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_GoogleComputeInstanceFromMachineImageServiceAccountOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-google-beta.googleComputeInstanceFromMachineImage.GoogleComputeInstanceFromMachineImageServiceAccountOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewGoogleComputeInstanceFromMachineImageServiceAccountOutputReference_Override(g GoogleComputeInstanceFromMachineImageServiceAccountOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewGoogleComputeInstanceFromMachineImageServiceAccountOutputReference_Override(g GoogleComputeInstanceFromMachineImageServiceAccountOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-google-beta.googleComputeInstanceFromMachineImage.GoogleComputeInstanceFromMachineImageServiceAccountOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
 }
@@ -255,7 +254,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageServiceAccountOutputRefe
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageServiceAccountOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageServiceAccountOutputReference)SetInternalValue(val *GoogleComputeInstanceFromMachineImageServiceAccount) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,14 +488,6 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImageServiceAccountOutputRefe
 	_jsii_.InvokeVoid(
 		g,
 		"resetEmail",
-		nil, // no parameters
-	)
-}
-
-func (g *jsiiProxy_GoogleComputeInstanceFromMachineImageServiceAccountOutputReference) ResetScopes() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetScopes",
 		nil, // no parameters
 	)
 }

@@ -128,6 +128,10 @@ func (j *jsiiProxy_NetworkSecurityGatewaySecurityPolicy) validateSetProvisioners
 	return nil
 }
 
+func (j *jsiiProxy_NetworkSecurityGatewaySecurityPolicy) validateSetTlsInspectionPolicyParameters(val *string) error {
+	return nil
+}
+
 func validateNewNetworkSecurityGatewaySecurityPolicyParameters(scope constructs.Construct, id *string, config *NetworkSecurityGatewaySecurityPolicyConfig) error {
 	return nil
 }

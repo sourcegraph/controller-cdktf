@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) validateInter
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) validatePutGracefulShutdownParameters(value *GoogleComputeInstanceSchedulingGracefulShutdown) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) validatePutLocalSsdRecoveryTimeoutParameters(value *GoogleComputeInstanceSchedulingLocalSsdRecoveryTimeout) error {
 	return nil
 }
@@ -68,11 +72,19 @@ func (j *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) validateSetAu
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) validateSetAvailabilityDomainParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) validateSetHostErrorTimeoutSecondsParameters(val *float64) error {
 	return nil
 }
 
@@ -101,6 +113,10 @@ func (j *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) validateSetPr
 }
 
 func (j *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) validateSetProvisioningModelParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) validateSetTerminationTimeParameters(val *string) error {
 	return nil
 }
 

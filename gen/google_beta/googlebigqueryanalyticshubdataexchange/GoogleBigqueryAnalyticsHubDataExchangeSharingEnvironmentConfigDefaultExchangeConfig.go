@@ -1,0 +1,6 @@
+package googlebigqueryanalyticshubdataexchange
+
+
+type GoogleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigDefaultExchangeConfig struct {
+}
+

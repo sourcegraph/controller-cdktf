@@ -30,8 +30,8 @@ type ComputeInstanceFromTemplateServiceAccountOutputReference interface {
 	EmailInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *ComputeInstanceFromTemplateServiceAccount
+	SetInternalValue(val *ComputeInstanceFromTemplateServiceAccount)
 	Scopes() *[]*string
 	SetScopes(val *[]*string)
 	ScopesInput() *[]*string
@@ -68,7 +68,6 @@ type ComputeInstanceFromTemplateServiceAccountOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetEmail()
-	ResetScopes()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -144,8 +143,8 @@ func (j *jsiiProxy_ComputeInstanceFromTemplateServiceAccountOutputReference) Fqn
 	return returns
 }
 
-func (j *jsiiProxy_ComputeInstanceFromTemplateServiceAccountOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeInstanceFromTemplateServiceAccountOutputReference) InternalValue() *ComputeInstanceFromTemplateServiceAccount {
+	var returns *ComputeInstanceFromTemplateServiceAccount
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -195,29 +194,29 @@ func (j *jsiiProxy_ComputeInstanceFromTemplateServiceAccountOutputReference) Ter
 }
 
 
-func NewComputeInstanceFromTemplateServiceAccountOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ComputeInstanceFromTemplateServiceAccountOutputReference {
+func NewComputeInstanceFromTemplateServiceAccountOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComputeInstanceFromTemplateServiceAccountOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewComputeInstanceFromTemplateServiceAccountOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewComputeInstanceFromTemplateServiceAccountOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_ComputeInstanceFromTemplateServiceAccountOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeInstanceFromTemplate.ComputeInstanceFromTemplateServiceAccountOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewComputeInstanceFromTemplateServiceAccountOutputReference_Override(c ComputeInstanceFromTemplateServiceAccountOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewComputeInstanceFromTemplateServiceAccountOutputReference_Override(c ComputeInstanceFromTemplateServiceAccountOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeInstanceFromTemplate.ComputeInstanceFromTemplateServiceAccountOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
 }
@@ -255,7 +254,7 @@ func (j *jsiiProxy_ComputeInstanceFromTemplateServiceAccountOutputReference)SetE
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceFromTemplateServiceAccountOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ComputeInstanceFromTemplateServiceAccountOutputReference)SetInternalValue(val *ComputeInstanceFromTemplateServiceAccount) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,14 +488,6 @@ func (c *jsiiProxy_ComputeInstanceFromTemplateServiceAccountOutputReference) Res
 	_jsii_.InvokeVoid(
 		c,
 		"resetEmail",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_ComputeInstanceFromTemplateServiceAccountOutputReference) ResetScopes() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetScopes",
 		nil, // no parameters
 	)
 }

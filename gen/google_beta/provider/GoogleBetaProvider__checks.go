@@ -88,9 +88,57 @@ func (j *jsiiProxy_GoogleBetaProvider) validateSetAddTerraformAttributionLabelPa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBetaProvider) validateSetBatchingParameters(val *GoogleBetaProviderBatching) error {
-	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-		return err
+func (j *jsiiProxy_GoogleBetaProvider) validateSetBatchingParameters(val interface{}) error {
+	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*GoogleBetaProviderBatching:
+		val := val.(*[]*GoogleBetaProviderBatching)
+		for idx_97dfc6, v := range *val {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter val[%#v]", idx_97dfc6) }); err != nil {
+				return err
+			}
+		}
+	case []*GoogleBetaProviderBatching:
+		val_ := val.([]*GoogleBetaProviderBatching)
+		val := &val_
+		for idx_97dfc6, v := range *val {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter val[%#v]", idx_97dfc6) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*GoogleBetaProviderBatching; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) validateSetExternalCredentialsParameters(val interface{}) error {
+	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*GoogleBetaProviderExternalCredentials:
+		val := val.(*[]*GoogleBetaProviderExternalCredentials)
+		for idx_97dfc6, v := range *val {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter val[%#v]", idx_97dfc6) }); err != nil {
+				return err
+			}
+		}
+	case []*GoogleBetaProviderExternalCredentials:
+		val_ := val.([]*GoogleBetaProviderExternalCredentials)
+		val := &val_
+		for idx_97dfc6, v := range *val {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter val[%#v]", idx_97dfc6) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*GoogleBetaProviderExternalCredentials; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil

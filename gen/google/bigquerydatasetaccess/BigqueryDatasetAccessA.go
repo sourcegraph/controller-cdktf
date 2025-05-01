@@ -9,12 +9,14 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/bigquerydatasetaccess/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/bigquery_dataset_access google_bigquery_dataset_access}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/bigquery_dataset_access google_bigquery_dataset_access}.
 type BigqueryDatasetAccessA interface {
 	cdktf.TerraformResource
 	ApiUpdatedMember() cdktf.IResolvable
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	Condition() BigqueryDatasetAccessConditionAOutputReference
+	ConditionInput() *BigqueryDatasetAccessConditionA
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -137,10 +139,12 @@ type BigqueryDatasetAccessA interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutCondition(value *BigqueryDatasetAccessConditionA)
 	PutDataset(value *BigqueryDatasetAccessDatasetA)
 	PutRoutine(value *BigqueryDatasetAccessRoutineA)
 	PutTimeouts(value *BigqueryDatasetAccessTimeouts)
 	PutView(value *BigqueryDatasetAccessViewA)
+	ResetCondition()
 	ResetDataset()
 	ResetDomain()
 	ResetGroupByEmail()
@@ -189,6 +193,26 @@ func (j *jsiiProxy_BigqueryDatasetAccessA) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryDatasetAccessA) Condition() BigqueryDatasetAccessConditionAOutputReference {
+	var returns BigqueryDatasetAccessConditionAOutputReference
+	_jsii_.Get(
+		j,
+		"condition",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryDatasetAccessA) ConditionInput() *BigqueryDatasetAccessConditionA {
+	var returns *BigqueryDatasetAccessConditionA
+	_jsii_.Get(
+		j,
+		"conditionInput",
 		&returns,
 	)
 	return returns
@@ -605,7 +629,7 @@ func (j *jsiiProxy_BigqueryDatasetAccessA) ViewInput() *BigqueryDatasetAccessVie
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/bigquery_dataset_access google_bigquery_dataset_access} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/bigquery_dataset_access google_bigquery_dataset_access} Resource.
 func NewBigqueryDatasetAccessA(scope constructs.Construct, id *string, config *BigqueryDatasetAccessAConfig) BigqueryDatasetAccessA {
 	_init_.Initialize()
 
@@ -623,7 +647,7 @@ func NewBigqueryDatasetAccessA(scope constructs.Construct, id *string, config *B
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/bigquery_dataset_access google_bigquery_dataset_access} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/bigquery_dataset_access google_bigquery_dataset_access} Resource.
 func NewBigqueryDatasetAccessA_Override(b BigqueryDatasetAccessA, scope constructs.Construct, id *string, config *BigqueryDatasetAccessAConfig) {
 	_init_.Initialize()
 
@@ -1154,6 +1178,17 @@ func (b *jsiiProxy_BigqueryDatasetAccessA) OverrideLogicalId(newLogicalId *strin
 	)
 }
 
+func (b *jsiiProxy_BigqueryDatasetAccessA) PutCondition(value *BigqueryDatasetAccessConditionA) {
+	if err := b.validatePutConditionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putCondition",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BigqueryDatasetAccessA) PutDataset(value *BigqueryDatasetAccessDatasetA) {
 	if err := b.validatePutDatasetParameters(value); err != nil {
 		panic(err)
@@ -1195,6 +1230,14 @@ func (b *jsiiProxy_BigqueryDatasetAccessA) PutView(value *BigqueryDatasetAccessV
 		b,
 		"putView",
 		[]interface{}{value},
+	)
+}
+
+func (b *jsiiProxy_BigqueryDatasetAccessA) ResetCondition() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetCondition",
+		nil, // no parameters
 	)
 }
 

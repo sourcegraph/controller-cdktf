@@ -32,6 +32,7 @@ type BigqueryAnalyticsHubListingRestrictedExportConfigOutputReference interface 
 	Fqn() *string
 	InternalValue() *BigqueryAnalyticsHubListingRestrictedExportConfig
 	SetInternalValue(val *BigqueryAnalyticsHubListingRestrictedExportConfig)
+	RestrictDirectTableAccess() cdktf.IResolvable
 	RestrictQueryResult() interface{}
 	SetRestrictQueryResult(val interface{})
 	RestrictQueryResultInput() interface{}
@@ -149,6 +150,16 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListingRestrictedExportConfigOutputRefere
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryAnalyticsHubListingRestrictedExportConfigOutputReference) RestrictDirectTableAccess() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"restrictDirectTableAccess",
 		&returns,
 	)
 	return returns

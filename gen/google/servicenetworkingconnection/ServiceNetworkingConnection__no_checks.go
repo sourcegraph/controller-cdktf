@@ -128,6 +128,10 @@ func (j *jsiiProxy_ServiceNetworkingConnection) validateSetServiceParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_ServiceNetworkingConnection) validateSetUpdateOnCreationFailParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewServiceNetworkingConnectionParameters(scope constructs.Construct, id *string, config *ServiceNetworkingConnectionConfig) error {
 	return nil
 }

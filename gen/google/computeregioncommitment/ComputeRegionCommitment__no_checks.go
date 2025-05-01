@@ -120,6 +120,10 @@ func (j *jsiiProxy_ComputeRegionCommitment) validateSetDescriptionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRegionCommitment) validateSetExistingReservationsParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRegionCommitment) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -8,11 +8,11 @@ type GoogleOsConfigPatchDeploymentRecurringScheduleMonthly struct {
 	// Months without the target day will be skipped. For example, a schedule to run "every month on the 31st"
 	// will not run in February, April, June, etc.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_os_config_patch_deployment#month_day GoogleOsConfigPatchDeployment#month_day}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_os_config_patch_deployment#month_day GoogleOsConfigPatchDeployment#month_day}
 	MonthDay *float64 `field:"optional" json:"monthDay" yaml:"monthDay"`
 	// week_day_of_month block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_os_config_patch_deployment#week_day_of_month GoogleOsConfigPatchDeployment#week_day_of_month}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_os_config_patch_deployment#week_day_of_month GoogleOsConfigPatchDeployment#week_day_of_month}
 	WeekDayOfMonth *GoogleOsConfigPatchDeploymentRecurringScheduleMonthlyWeekDayOfMonth `field:"optional" json:"weekDayOfMonth" yaml:"weekDayOfMonth"`
 }
 

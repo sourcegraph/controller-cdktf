@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleComputeBackendServiceSecuritySettingsOutputReference) v
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeBackendServiceSecuritySettingsOutputReference) validatePutAwsV4AuthenticationParameters(value *GoogleComputeBackendServiceSecuritySettingsAwsV4Authentication) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeBackendServiceSecuritySettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

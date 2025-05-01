@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleDiscoveryEngineDataStoreDocumentProcessingConfigOutputR
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDiscoveryEngineDataStoreDocumentProcessingConfigOutputReference) validatePutChunkingConfigParameters(value *GoogleDiscoveryEngineDataStoreDocumentProcessingConfigChunkingConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDiscoveryEngineDataStoreDocumentProcessingConfigOutputReference) validatePutDefaultParsingConfigParameters(value *GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfig) error {
 	return nil
 }

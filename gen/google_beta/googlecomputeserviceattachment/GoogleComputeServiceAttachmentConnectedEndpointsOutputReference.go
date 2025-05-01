@@ -20,6 +20,7 @@ type GoogleComputeServiceAttachmentConnectedEndpointsOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ConsumerNetwork() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -30,6 +31,8 @@ type GoogleComputeServiceAttachmentConnectedEndpointsOutputReference interface {
 	Fqn() *string
 	InternalValue() *GoogleComputeServiceAttachmentConnectedEndpoints
 	SetInternalValue(val *GoogleComputeServiceAttachmentConnectedEndpoints)
+	PropagatedConnectionCount() *float64
+	PscConnectionId() *string
 	Status() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -98,6 +101,16 @@ func (j *jsiiProxy_GoogleComputeServiceAttachmentConnectedEndpointsOutputReferen
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeServiceAttachmentConnectedEndpointsOutputReference) ConsumerNetwork() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"consumerNetwork",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeServiceAttachmentConnectedEndpointsOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -133,6 +146,26 @@ func (j *jsiiProxy_GoogleComputeServiceAttachmentConnectedEndpointsOutputReferen
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeServiceAttachmentConnectedEndpointsOutputReference) PropagatedConnectionCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"propagatedConnectionCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeServiceAttachmentConnectedEndpointsOutputReference) PscConnectionId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pscConnectionId",
 		&returns,
 	)
 	return returns

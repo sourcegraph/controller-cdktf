@@ -44,7 +44,7 @@ func (c *jsiiProxy_ComposerEnvironmentConfigNodeConfigOutputReference) validateI
 	return nil
 }
 
-func (c *jsiiProxy_ComposerEnvironmentConfigNodeConfigOutputReference) validatePutIpAllocationPolicyParameters(value interface{}) error {
+func (c *jsiiProxy_ComposerEnvironmentConfigNodeConfigOutputReference) validatePutIpAllocationPolicyParameters(value *ComposerEnvironmentConfigNodeConfigIpAllocationPolicy) error {
 	return nil
 }
 
@@ -57,6 +57,14 @@ func (j *jsiiProxy_ComposerEnvironmentConfigNodeConfigOutputReference) validateS
 }
 
 func (j *jsiiProxy_ComposerEnvironmentConfigNodeConfigOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComposerEnvironmentConfigNodeConfigOutputReference) validateSetComposerInternalIpv4CidrBlockParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComposerEnvironmentConfigNodeConfigOutputReference) validateSetComposerNetworkAttachmentParameters(val *string) error {
 	return nil
 }
 

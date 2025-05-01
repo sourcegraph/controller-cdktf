@@ -80,6 +80,10 @@ func (c *jsiiProxy_ContainerAwsNodePool) validatePutConfigParameters(value *Cont
 	return nil
 }
 
+func (c *jsiiProxy_ContainerAwsNodePool) validatePutKubeletConfigParameters(value *ContainerAwsNodePoolKubeletConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerAwsNodePool) validatePutManagementParameters(value *ContainerAwsNodePoolManagement) error {
 	return nil
 }

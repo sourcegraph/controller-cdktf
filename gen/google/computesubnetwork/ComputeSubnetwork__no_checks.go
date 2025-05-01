@@ -112,6 +112,10 @@ func (j *jsiiProxy_ComputeSubnetwork) validateSetDescriptionParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_ComputeSubnetwork) validateSetEnableFlowLogsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeSubnetwork) validateSetExternalIpv6PrefixParameters(val *string) error {
 	return nil
 }
@@ -121,6 +125,10 @@ func (j *jsiiProxy_ComputeSubnetwork) validateSetIdParameters(val *string) error
 }
 
 func (j *jsiiProxy_ComputeSubnetwork) validateSetIpCidrRangeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeSubnetwork) validateSetIpCollectionParameters(val *string) error {
 	return nil
 }
 
@@ -164,7 +172,15 @@ func (j *jsiiProxy_ComputeSubnetwork) validateSetRegionParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_ComputeSubnetwork) validateSetReservedInternalRangeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeSubnetwork) validateSetRoleParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeSubnetwork) validateSetSendSecondaryIpRangeIfEmptyParameters(val interface{}) error {
 	return nil
 }
 

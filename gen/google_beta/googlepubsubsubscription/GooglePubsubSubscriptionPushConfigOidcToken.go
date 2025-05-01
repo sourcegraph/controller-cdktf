@@ -8,7 +8,7 @@ type GooglePubsubSubscriptionPushConfigOidcToken struct {
 	// subscriptions.modifyPushConfig RPCs) must have the
 	// iam.serviceAccounts.actAs permission for the service account.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_pubsub_subscription#service_account_email GooglePubsubSubscription#service_account_email}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_pubsub_subscription#service_account_email GooglePubsubSubscription#service_account_email}
 	ServiceAccountEmail *string `field:"required" json:"serviceAccountEmail" yaml:"serviceAccountEmail"`
 	// Audience to be used when generating OIDC token.
 	//
@@ -19,7 +19,7 @@ type GooglePubsubSubscriptionPushConfigOidcToken struct {
 	// token audience here: https://tools.ietf.org/html/rfc7519#section-4.1.3
 	// Note: if not specified, the Push endpoint URL will be used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_pubsub_subscription#audience GooglePubsubSubscription#audience}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_pubsub_subscription#audience GooglePubsubSubscription#audience}
 	Audience *string `field:"optional" json:"audience" yaml:"audience"`
 }
 

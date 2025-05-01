@@ -10,6 +10,8 @@ import (
 
 type GoogleWorkbenchInstanceGceSetupNetworkInterfacesOutputReference interface {
 	cdktf.ComplexObject
+	AccessConfigs() GoogleWorkbenchInstanceGceSetupNetworkInterfacesAccessConfigsList
+	AccessConfigsInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -70,6 +72,8 @@ type GoogleWorkbenchInstanceGceSetupNetworkInterfacesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAccessConfigs(value interface{})
+	ResetAccessConfigs()
 	ResetNetwork()
 	ResetNicType()
 	ResetSubnet()
@@ -86,6 +90,26 @@ type GoogleWorkbenchInstanceGceSetupNetworkInterfacesOutputReference interface {
 // The jsii proxy struct for GoogleWorkbenchInstanceGceSetupNetworkInterfacesOutputReference
 type jsiiProxy_GoogleWorkbenchInstanceGceSetupNetworkInterfacesOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GoogleWorkbenchInstanceGceSetupNetworkInterfacesOutputReference) AccessConfigs() GoogleWorkbenchInstanceGceSetupNetworkInterfacesAccessConfigsList {
+	var returns GoogleWorkbenchInstanceGceSetupNetworkInterfacesAccessConfigsList
+	_jsii_.Get(
+		j,
+		"accessConfigs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleWorkbenchInstanceGceSetupNetworkInterfacesOutputReference) AccessConfigsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"accessConfigsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleWorkbenchInstanceGceSetupNetworkInterfacesOutputReference) ComplexObjectIndex() interface{} {
@@ -518,6 +542,25 @@ func (g *jsiiProxy_GoogleWorkbenchInstanceGceSetupNetworkInterfacesOutputReferen
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleWorkbenchInstanceGceSetupNetworkInterfacesOutputReference) PutAccessConfigs(value interface{}) {
+	if err := g.validatePutAccessConfigsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAccessConfigs",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleWorkbenchInstanceGceSetupNetworkInterfacesOutputReference) ResetAccessConfigs() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAccessConfigs",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleWorkbenchInstanceGceSetupNetworkInterfacesOutputReference) ResetNetwork() {

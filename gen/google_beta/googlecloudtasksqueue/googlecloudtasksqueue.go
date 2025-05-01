@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecloudtasksqueue/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_cloud_tasks_queue google_cloud_tasks_queue}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_cloud_tasks_queue google_cloud_tasks_queue}.
 type GoogleCloudTasksQueue interface {
 	cdktf.TerraformResource
 	AppEngineRoutingOverride() GoogleCloudTasksQueueAppEngineRoutingOverrideOutputReference
@@ -38,6 +38,8 @@ type GoogleCloudTasksQueue interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	HttpTarget() GoogleCloudTasksQueueHttpTargetOutputReference
+	HttpTargetInput() *GoogleCloudTasksQueueHttpTarget
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -124,11 +126,13 @@ type GoogleCloudTasksQueue interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAppEngineRoutingOverride(value *GoogleCloudTasksQueueAppEngineRoutingOverride)
+	PutHttpTarget(value *GoogleCloudTasksQueueHttpTarget)
 	PutRateLimits(value *GoogleCloudTasksQueueRateLimits)
 	PutRetryConfig(value *GoogleCloudTasksQueueRetryConfig)
 	PutStackdriverLoggingConfig(value *GoogleCloudTasksQueueStackdriverLoggingConfig)
 	PutTimeouts(value *GoogleCloudTasksQueueTimeouts)
 	ResetAppEngineRoutingOverride()
+	ResetHttpTarget()
 	ResetId()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -252,6 +256,26 @@ func (j *jsiiProxy_GoogleCloudTasksQueue) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudTasksQueue) HttpTarget() GoogleCloudTasksQueueHttpTargetOutputReference {
+	var returns GoogleCloudTasksQueueHttpTargetOutputReference
+	_jsii_.Get(
+		j,
+		"httpTarget",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudTasksQueue) HttpTargetInput() *GoogleCloudTasksQueueHttpTarget {
+	var returns *GoogleCloudTasksQueueHttpTarget
+	_jsii_.Get(
+		j,
+		"httpTargetInput",
 		&returns,
 	)
 	return returns
@@ -498,7 +522,7 @@ func (j *jsiiProxy_GoogleCloudTasksQueue) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_cloud_tasks_queue google_cloud_tasks_queue} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_cloud_tasks_queue google_cloud_tasks_queue} Resource.
 func NewGoogleCloudTasksQueue(scope constructs.Construct, id *string, config *GoogleCloudTasksQueueConfig) GoogleCloudTasksQueue {
 	_init_.Initialize()
 
@@ -516,7 +540,7 @@ func NewGoogleCloudTasksQueue(scope constructs.Construct, id *string, config *Go
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_cloud_tasks_queue google_cloud_tasks_queue} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_cloud_tasks_queue google_cloud_tasks_queue} Resource.
 func NewGoogleCloudTasksQueue_Override(g GoogleCloudTasksQueue, scope constructs.Construct, id *string, config *GoogleCloudTasksQueueConfig) {
 	_init_.Initialize()
 
@@ -1003,6 +1027,17 @@ func (g *jsiiProxy_GoogleCloudTasksQueue) PutAppEngineRoutingOverride(value *Goo
 	)
 }
 
+func (g *jsiiProxy_GoogleCloudTasksQueue) PutHttpTarget(value *GoogleCloudTasksQueueHttpTarget) {
+	if err := g.validatePutHttpTargetParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putHttpTarget",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleCloudTasksQueue) PutRateLimits(value *GoogleCloudTasksQueueRateLimits) {
 	if err := g.validatePutRateLimitsParameters(value); err != nil {
 		panic(err)
@@ -1051,6 +1086,14 @@ func (g *jsiiProxy_GoogleCloudTasksQueue) ResetAppEngineRoutingOverride() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetAppEngineRoutingOverride",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudTasksQueue) ResetHttpTarget() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetHttpTarget",
 		nil, // no parameters
 	)
 }

@@ -26,10 +26,12 @@ type DataGoogleComputeInstanceAdvancedMachineFeaturesOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	EnableNestedVirtualization() cdktf.IResolvable
+	EnableUefiNetworking() cdktf.IResolvable
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataGoogleComputeInstanceAdvancedMachineFeatures
 	SetInternalValue(val *DataGoogleComputeInstanceAdvancedMachineFeatures)
+	PerformanceMonitoringUnit() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -39,6 +41,7 @@ type DataGoogleComputeInstanceAdvancedMachineFeaturesOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	ThreadsPerCore() *float64
+	TurboMode() *string
 	VisibleCoreCount() *float64
 	// Experimental.
 	ComputeFqn() *string
@@ -119,6 +122,16 @@ func (j *jsiiProxy_DataGoogleComputeInstanceAdvancedMachineFeaturesOutputReferen
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeInstanceAdvancedMachineFeaturesOutputReference) EnableUefiNetworking() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"enableUefiNetworking",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeInstanceAdvancedMachineFeaturesOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -134,6 +147,16 @@ func (j *jsiiProxy_DataGoogleComputeInstanceAdvancedMachineFeaturesOutputReferen
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeInstanceAdvancedMachineFeaturesOutputReference) PerformanceMonitoringUnit() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"performanceMonitoringUnit",
 		&returns,
 	)
 	return returns
@@ -164,6 +187,16 @@ func (j *jsiiProxy_DataGoogleComputeInstanceAdvancedMachineFeaturesOutputReferen
 	_jsii_.Get(
 		j,
 		"threadsPerCore",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeInstanceAdvancedMachineFeaturesOutputReference) TurboMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"turboMode",
 		&returns,
 	)
 	return returns

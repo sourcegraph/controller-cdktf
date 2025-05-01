@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglestorageobjectsignedurl/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_storage_object_signed_url google_storage_object_signed_url}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_storage_object_signed_url google_storage_object_signed_url}.
 type DataGoogleStorageObjectSignedUrl interface {
 	cdktf.TerraformDataSource
 	Bucket() *string
@@ -463,7 +463,7 @@ func (j *jsiiProxy_DataGoogleStorageObjectSignedUrl) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_storage_object_signed_url google_storage_object_signed_url} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_storage_object_signed_url google_storage_object_signed_url} Data Source.
 func NewDataGoogleStorageObjectSignedUrl(scope constructs.Construct, id *string, config *DataGoogleStorageObjectSignedUrlConfig) DataGoogleStorageObjectSignedUrl {
 	_init_.Initialize()
 
@@ -481,7 +481,7 @@ func NewDataGoogleStorageObjectSignedUrl(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_storage_object_signed_url google_storage_object_signed_url} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_storage_object_signed_url google_storage_object_signed_url} Data Source.
 func NewDataGoogleStorageObjectSignedUrl_Override(d DataGoogleStorageObjectSignedUrl, scope constructs.Construct, id *string, config *DataGoogleStorageObjectSignedUrlConfig) {
 	_init_.Initialize()
 

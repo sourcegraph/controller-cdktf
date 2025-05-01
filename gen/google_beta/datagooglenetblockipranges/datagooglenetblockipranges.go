@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglenetblockipranges/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_netblock_ip_ranges google_netblock_ip_ranges}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_netblock_ip_ranges google_netblock_ip_ranges}.
 type DataGoogleNetblockIpRanges interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -319,7 +319,7 @@ func (j *jsiiProxy_DataGoogleNetblockIpRanges) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_netblock_ip_ranges google_netblock_ip_ranges} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_netblock_ip_ranges google_netblock_ip_ranges} Data Source.
 func NewDataGoogleNetblockIpRanges(scope constructs.Construct, id *string, config *DataGoogleNetblockIpRangesConfig) DataGoogleNetblockIpRanges {
 	_init_.Initialize()
 
@@ -337,7 +337,7 @@ func NewDataGoogleNetblockIpRanges(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_netblock_ip_ranges google_netblock_ip_ranges} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_netblock_ip_ranges google_netblock_ip_ranges} Data Source.
 func NewDataGoogleNetblockIpRanges_Override(d DataGoogleNetblockIpRanges, scope constructs.Construct, id *string, config *DataGoogleNetblockIpRangesConfig) {
 	_init_.Initialize()
 

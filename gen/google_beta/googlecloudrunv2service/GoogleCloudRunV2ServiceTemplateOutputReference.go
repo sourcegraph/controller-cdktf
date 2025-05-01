@@ -38,6 +38,9 @@ type GoogleCloudRunV2ServiceTemplateOutputReference interface {
 	ExecutionEnvironmentInput() *string
 	// Experimental.
 	Fqn() *string
+	GpuZonalRedundancyDisabled() interface{}
+	SetGpuZonalRedundancyDisabled(val interface{})
+	GpuZonalRedundancyDisabledInput() interface{}
 	InternalValue() *GoogleCloudRunV2ServiceTemplate
 	SetInternalValue(val *GoogleCloudRunV2ServiceTemplate)
 	Labels() *map[string]*string
@@ -46,6 +49,8 @@ type GoogleCloudRunV2ServiceTemplateOutputReference interface {
 	MaxInstanceRequestConcurrency() *float64
 	SetMaxInstanceRequestConcurrency(val *float64)
 	MaxInstanceRequestConcurrencyInput() *float64
+	NodeSelector() GoogleCloudRunV2ServiceTemplateNodeSelectorOutputReference
+	NodeSelectorInput() *GoogleCloudRunV2ServiceTemplateNodeSelector
 	Revision() *string
 	SetRevision(val *string)
 	RevisionInput() *string
@@ -54,6 +59,8 @@ type GoogleCloudRunV2ServiceTemplateOutputReference interface {
 	ServiceAccount() *string
 	SetServiceAccount(val *string)
 	ServiceAccountInput() *string
+	ServiceMesh() GoogleCloudRunV2ServiceTemplateServiceMeshOutputReference
+	ServiceMeshInput() *GoogleCloudRunV2ServiceTemplateServiceMesh
 	SessionAffinity() interface{}
 	SetSessionAffinity(val interface{})
 	SessionAffinityInput() interface{}
@@ -97,18 +104,23 @@ type GoogleCloudRunV2ServiceTemplateOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutContainers(value interface{})
+	PutNodeSelector(value *GoogleCloudRunV2ServiceTemplateNodeSelector)
 	PutScaling(value *GoogleCloudRunV2ServiceTemplateScaling)
+	PutServiceMesh(value *GoogleCloudRunV2ServiceTemplateServiceMesh)
 	PutVolumes(value interface{})
 	PutVpcAccess(value *GoogleCloudRunV2ServiceTemplateVpcAccess)
 	ResetAnnotations()
 	ResetContainers()
 	ResetEncryptionKey()
 	ResetExecutionEnvironment()
+	ResetGpuZonalRedundancyDisabled()
 	ResetLabels()
 	ResetMaxInstanceRequestConcurrency()
+	ResetNodeSelector()
 	ResetRevision()
 	ResetScaling()
 	ResetServiceAccount()
+	ResetServiceMesh()
 	ResetSessionAffinity()
 	ResetTimeout()
 	ResetVolumes()
@@ -248,6 +260,26 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) Fqn() *string
 	return returns
 }
 
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) GpuZonalRedundancyDisabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"gpuZonalRedundancyDisabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) GpuZonalRedundancyDisabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"gpuZonalRedundancyDisabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) InternalValue() *GoogleCloudRunV2ServiceTemplate {
 	var returns *GoogleCloudRunV2ServiceTemplate
 	_jsii_.Get(
@@ -293,6 +325,26 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) MaxInstanceRe
 	_jsii_.Get(
 		j,
 		"maxInstanceRequestConcurrencyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) NodeSelector() GoogleCloudRunV2ServiceTemplateNodeSelectorOutputReference {
+	var returns GoogleCloudRunV2ServiceTemplateNodeSelectorOutputReference
+	_jsii_.Get(
+		j,
+		"nodeSelector",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) NodeSelectorInput() *GoogleCloudRunV2ServiceTemplateNodeSelector {
+	var returns *GoogleCloudRunV2ServiceTemplateNodeSelector
+	_jsii_.Get(
+		j,
+		"nodeSelectorInput",
 		&returns,
 	)
 	return returns
@@ -353,6 +405,26 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) ServiceAccoun
 	_jsii_.Get(
 		j,
 		"serviceAccountInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) ServiceMesh() GoogleCloudRunV2ServiceTemplateServiceMeshOutputReference {
+	var returns GoogleCloudRunV2ServiceTemplateServiceMeshOutputReference
+	_jsii_.Get(
+		j,
+		"serviceMesh",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) ServiceMeshInput() *GoogleCloudRunV2ServiceTemplateServiceMesh {
+	var returns *GoogleCloudRunV2ServiceTemplateServiceMesh
+	_jsii_.Get(
+		j,
+		"serviceMeshInput",
 		&returns,
 	)
 	return returns
@@ -537,6 +609,17 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference)SetExecutionEn
 	_jsii_.Set(
 		j,
 		"executionEnvironment",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference)SetGpuZonalRedundancyDisabled(val interface{}) {
+	if err := j.validateSetGpuZonalRedundancyDisabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"gpuZonalRedundancyDisabled",
 		val,
 	)
 }
@@ -837,6 +920,17 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) PutContainers
 	)
 }
 
+func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) PutNodeSelector(value *GoogleCloudRunV2ServiceTemplateNodeSelector) {
+	if err := g.validatePutNodeSelectorParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putNodeSelector",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) PutScaling(value *GoogleCloudRunV2ServiceTemplateScaling) {
 	if err := g.validatePutScalingParameters(value); err != nil {
 		panic(err)
@@ -844,6 +938,17 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) PutScaling(va
 	_jsii_.InvokeVoid(
 		g,
 		"putScaling",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) PutServiceMesh(value *GoogleCloudRunV2ServiceTemplateServiceMesh) {
+	if err := g.validatePutServiceMeshParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putServiceMesh",
 		[]interface{}{value},
 	)
 }
@@ -902,6 +1007,14 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) ResetExecutio
 	)
 }
 
+func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) ResetGpuZonalRedundancyDisabled() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetGpuZonalRedundancyDisabled",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) ResetLabels() {
 	_jsii_.InvokeVoid(
 		g,
@@ -914,6 +1027,14 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) ResetMaxInsta
 	_jsii_.InvokeVoid(
 		g,
 		"resetMaxInstanceRequestConcurrency",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) ResetNodeSelector() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNodeSelector",
 		nil, // no parameters
 	)
 }
@@ -938,6 +1059,14 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) ResetServiceA
 	_jsii_.InvokeVoid(
 		g,
 		"resetServiceAccount",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) ResetServiceMesh() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetServiceMesh",
 		nil, // no parameters
 	)
 }

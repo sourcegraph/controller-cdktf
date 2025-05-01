@@ -50,6 +50,9 @@ type GoogleComputeBackendServiceCdnPolicyOutputReference interface {
 	NegativeCachingInput() interface{}
 	NegativeCachingPolicy() GoogleComputeBackendServiceCdnPolicyNegativeCachingPolicyList
 	NegativeCachingPolicyInput() interface{}
+	RequestCoalescing() interface{}
+	SetRequestCoalescing(val interface{})
+	RequestCoalescingInput() interface{}
 	ServeWhileStale() *float64
 	SetServeWhileStale(val *float64)
 	ServeWhileStaleInput() *float64
@@ -99,6 +102,7 @@ type GoogleComputeBackendServiceCdnPolicyOutputReference interface {
 	ResetMaxTtl()
 	ResetNegativeCaching()
 	ResetNegativeCachingPolicy()
+	ResetRequestCoalescing()
 	ResetServeWhileStale()
 	ResetSignedUrlCacheMaxAgeSec()
 	// Produce the Token's value at resolution time.
@@ -326,6 +330,26 @@ func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyOutputReference) Negative
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyOutputReference) RequestCoalescing() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"requestCoalescing",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyOutputReference) RequestCoalescingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"requestCoalescingInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyOutputReference) ServeWhileStale() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -498,6 +522,17 @@ func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyOutputReference)SetNegati
 	_jsii_.Set(
 		j,
 		"negativeCaching",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyOutputReference)SetRequestCoalescing(val interface{}) {
+	if err := j.validateSetRequestCoalescingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"requestCoalescing",
 		val,
 	)
 }
@@ -825,6 +860,14 @@ func (g *jsiiProxy_GoogleComputeBackendServiceCdnPolicyOutputReference) ResetNeg
 	_jsii_.InvokeVoid(
 		g,
 		"resetNegativeCachingPolicy",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeBackendServiceCdnPolicyOutputReference) ResetRequestCoalescing() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRequestCoalescing",
 		nil, // no parameters
 	)
 }

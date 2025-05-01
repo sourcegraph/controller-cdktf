@@ -71,7 +71,6 @@ type ComputeInstanceFromTemplateScratchDiskOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetDeviceName()
-	ResetInterface()
 	ResetSize()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -524,14 +523,6 @@ func (c *jsiiProxy_ComputeInstanceFromTemplateScratchDiskOutputReference) ResetD
 	_jsii_.InvokeVoid(
 		c,
 		"resetDeviceName",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_ComputeInstanceFromTemplateScratchDiskOutputReference) ResetInterface() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetInterface",
 		nil, // no parameters
 	)
 }

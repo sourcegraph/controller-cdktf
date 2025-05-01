@@ -7,7 +7,7 @@ type GoogleBigqueryDatasetDefaultEncryptionConfiguration struct {
 	// The BigQuery Service Account associated with your project requires
 	// access to this encryption key.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_bigquery_dataset#kms_key_name GoogleBigqueryDataset#kms_key_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_bigquery_dataset#kms_key_name GoogleBigqueryDataset#kms_key_name}
 	KmsKeyName *string `field:"required" json:"kmsKeyName" yaml:"kmsKeyName"`
 }
 

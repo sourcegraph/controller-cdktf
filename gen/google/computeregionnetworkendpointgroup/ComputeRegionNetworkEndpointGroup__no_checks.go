@@ -84,6 +84,10 @@ func (c *jsiiProxy_ComputeRegionNetworkEndpointGroup) validatePutCloudRunParamet
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRegionNetworkEndpointGroup) validatePutPscDataParameters(value *ComputeRegionNetworkEndpointGroupPscData) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionNetworkEndpointGroup) validatePutTimeoutsParameters(value *ComputeRegionNetworkEndpointGroupTimeouts) error {
 	return nil
 }

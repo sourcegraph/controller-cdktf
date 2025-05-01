@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecertificatemanagerdnsauthorization/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_certificate_manager_dns_authorization google_certificate_manager_dns_authorization}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_certificate_manager_dns_authorization google_certificate_manager_dns_authorization}.
 type GoogleCertificateManagerDnsAuthorization interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -530,7 +530,7 @@ func (j *jsiiProxy_GoogleCertificateManagerDnsAuthorization) TypeInput() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_certificate_manager_dns_authorization google_certificate_manager_dns_authorization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_certificate_manager_dns_authorization google_certificate_manager_dns_authorization} Resource.
 func NewGoogleCertificateManagerDnsAuthorization(scope constructs.Construct, id *string, config *GoogleCertificateManagerDnsAuthorizationConfig) GoogleCertificateManagerDnsAuthorization {
 	_init_.Initialize()
 
@@ -548,7 +548,7 @@ func NewGoogleCertificateManagerDnsAuthorization(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_certificate_manager_dns_authorization google_certificate_manager_dns_authorization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_certificate_manager_dns_authorization google_certificate_manager_dns_authorization} Resource.
 func NewGoogleCertificateManagerDnsAuthorization_Override(g GoogleCertificateManagerDnsAuthorization, scope constructs.Construct, id *string, config *GoogleCertificateManagerDnsAuthorizationConfig) {
 	_init_.Initialize()
 

@@ -1,0 +1,6 @@
+package googledatastreamstream
+
+
+type GoogleDatastreamStreamSourceConfigMysqlSourceConfigBinaryLogPosition struct {
+}
+

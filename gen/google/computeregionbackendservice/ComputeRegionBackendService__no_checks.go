@@ -88,6 +88,10 @@ func (c *jsiiProxy_ComputeRegionBackendService) validatePutConsistentHashParamet
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRegionBackendService) validatePutCustomMetricsParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionBackendService) validatePutFailoverPolicyParameters(value *ComputeRegionBackendServiceFailoverPolicy) error {
 	return nil
 }
@@ -101,6 +105,10 @@ func (c *jsiiProxy_ComputeRegionBackendService) validatePutLogConfigParameters(v
 }
 
 func (c *jsiiProxy_ComputeRegionBackendService) validatePutOutlierDetectionParameters(value *ComputeRegionBackendServiceOutlierDetection) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRegionBackendService) validatePutStrongSessionAffinityCookieParameters(value *ComputeRegionBackendServiceStrongSessionAffinityCookie) error {
 	return nil
 }
 
@@ -153,6 +161,10 @@ func (j *jsiiProxy_ComputeRegionBackendService) validateSetHealthChecksParameter
 }
 
 func (j *jsiiProxy_ComputeRegionBackendService) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeRegionBackendService) validateSetIpAddressSelectionPolicyParameters(val *string) error {
 	return nil
 }
 

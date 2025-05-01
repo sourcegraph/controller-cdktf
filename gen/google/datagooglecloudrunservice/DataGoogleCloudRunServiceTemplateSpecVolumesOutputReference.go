@@ -25,11 +25,14 @@ type DataGoogleCloudRunServiceTemplateSpecVolumesOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Csi() DataGoogleCloudRunServiceTemplateSpecVolumesCsiList
+	EmptyDir() DataGoogleCloudRunServiceTemplateSpecVolumesEmptyDirList
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataGoogleCloudRunServiceTemplateSpecVolumes
 	SetInternalValue(val *DataGoogleCloudRunServiceTemplateSpecVolumes)
 	Name() *string
+	Nfs() DataGoogleCloudRunServiceTemplateSpecVolumesNfsList
 	Secret() DataGoogleCloudRunServiceTemplateSpecVolumesSecretList
 	// Experimental.
 	TerraformAttribute() *string
@@ -108,6 +111,26 @@ func (j *jsiiProxy_DataGoogleCloudRunServiceTemplateSpecVolumesOutputReference) 
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleCloudRunServiceTemplateSpecVolumesOutputReference) Csi() DataGoogleCloudRunServiceTemplateSpecVolumesCsiList {
+	var returns DataGoogleCloudRunServiceTemplateSpecVolumesCsiList
+	_jsii_.Get(
+		j,
+		"csi",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleCloudRunServiceTemplateSpecVolumesOutputReference) EmptyDir() DataGoogleCloudRunServiceTemplateSpecVolumesEmptyDirList {
+	var returns DataGoogleCloudRunServiceTemplateSpecVolumesEmptyDirList
+	_jsii_.Get(
+		j,
+		"emptyDir",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleCloudRunServiceTemplateSpecVolumesOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -133,6 +156,16 @@ func (j *jsiiProxy_DataGoogleCloudRunServiceTemplateSpecVolumesOutputReference) 
 	_jsii_.Get(
 		j,
 		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleCloudRunServiceTemplateSpecVolumesOutputReference) Nfs() DataGoogleCloudRunServiceTemplateSpecVolumesNfsList {
+	var returns DataGoogleCloudRunServiceTemplateSpecVolumesNfsList
+	_jsii_.Get(
+		j,
+		"nfs",
 		&returns,
 	)
 	return returns

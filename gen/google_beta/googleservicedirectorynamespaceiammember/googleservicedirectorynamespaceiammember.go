@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleservicedirectorynamespaceiammember/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_service_directory_namespace_iam_member google_service_directory_namespace_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_service_directory_namespace_iam_member google_service_directory_namespace_iam_member}.
 type GoogleServiceDirectoryNamespaceIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -411,7 +411,7 @@ func (j *jsiiProxy_GoogleServiceDirectoryNamespaceIamMember) TerraformResourceTy
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_service_directory_namespace_iam_member google_service_directory_namespace_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_service_directory_namespace_iam_member google_service_directory_namespace_iam_member} Resource.
 func NewGoogleServiceDirectoryNamespaceIamMember(scope constructs.Construct, id *string, config *GoogleServiceDirectoryNamespaceIamMemberConfig) GoogleServiceDirectoryNamespaceIamMember {
 	_init_.Initialize()
 
@@ -429,7 +429,7 @@ func NewGoogleServiceDirectoryNamespaceIamMember(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_service_directory_namespace_iam_member google_service_directory_namespace_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_service_directory_namespace_iam_member google_service_directory_namespace_iam_member} Resource.
 func NewGoogleServiceDirectoryNamespaceIamMember_Override(g GoogleServiceDirectoryNamespaceIamMember, scope constructs.Construct, id *string, config *GoogleServiceDirectoryNamespaceIamMemberConfig) {
 	_init_.Initialize()
 

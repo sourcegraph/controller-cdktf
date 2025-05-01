@@ -32,6 +32,9 @@ type AlloydbInstanceMachineConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *AlloydbInstanceMachineConfig
 	SetInternalValue(val *AlloydbInstanceMachineConfig)
+	MachineType() *string
+	SetMachineType(val *string)
+	MachineTypeInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -65,6 +68,7 @@ type AlloydbInstanceMachineConfigOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetCpuCount()
+	ResetMachineType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -145,6 +149,26 @@ func (j *jsiiProxy_AlloydbInstanceMachineConfigOutputReference) InternalValue() 
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbInstanceMachineConfigOutputReference) MachineType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"machineType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbInstanceMachineConfigOutputReference) MachineTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"machineTypeInput",
 		&returns,
 	)
 	return returns
@@ -238,6 +262,17 @@ func (j *jsiiProxy_AlloydbInstanceMachineConfigOutputReference)SetInternalValue(
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AlloydbInstanceMachineConfigOutputReference)SetMachineType(val *string) {
+	if err := j.validateSetMachineTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"machineType",
 		val,
 	)
 }
@@ -454,6 +489,14 @@ func (a *jsiiProxy_AlloydbInstanceMachineConfigOutputReference) ResetCpuCount() 
 	_jsii_.InvokeVoid(
 		a,
 		"resetCpuCount",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlloydbInstanceMachineConfigOutputReference) ResetMachineType() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetMachineType",
 		nil, // no parameters
 	)
 }

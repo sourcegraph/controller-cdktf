@@ -29,6 +29,11 @@ type ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference interface
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	GcfsConfig() ContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfigOutputReference
+	GcfsConfigInput() *ContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfig
+	InsecureKubeletReadonlyPortEnabled() *string
+	SetInsecureKubeletReadonlyPortEnabled(val *string)
+	InsecureKubeletReadonlyPortEnabledInput() *string
 	InternalValue() *ContainerClusterNodePoolDefaultsNodeConfigDefaults
 	SetInternalValue(val *ContainerClusterNodePoolDefaultsNodeConfigDefaults)
 	LoggingVariant() *string
@@ -67,7 +72,10 @@ type ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference interface
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutContainerdConfig(value *ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfig)
+	PutGcfsConfig(value *ContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfig)
 	ResetContainerdConfig()
+	ResetGcfsConfig()
+	ResetInsecureKubeletReadonlyPortEnabled()
 	ResetLoggingVariant()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -139,6 +147,46 @@ func (j *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputRefer
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) GcfsConfig() ContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfigOutputReference {
+	var returns ContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfigOutputReference
+	_jsii_.Get(
+		j,
+		"gcfsConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) GcfsConfigInput() *ContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfig {
+	var returns *ContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfig
+	_jsii_.Get(
+		j,
+		"gcfsConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) InsecureKubeletReadonlyPortEnabled() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"insecureKubeletReadonlyPortEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) InsecureKubeletReadonlyPortEnabledInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"insecureKubeletReadonlyPortEnabledInput",
 		&returns,
 	)
 	return returns
@@ -240,6 +288,17 @@ func (j *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputRefer
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference)SetInsecureKubeletReadonlyPortEnabled(val *string) {
+	if err := j.validateSetInsecureKubeletReadonlyPortEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"insecureKubeletReadonlyPortEnabled",
 		val,
 	)
 }
@@ -485,10 +544,37 @@ func (c *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputRefer
 	)
 }
 
+func (c *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) PutGcfsConfig(value *ContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfig) {
+	if err := c.validatePutGcfsConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putGcfsConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) ResetContainerdConfig() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetContainerdConfig",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) ResetGcfsConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetGcfsConfig",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) ResetInsecureKubeletReadonlyPortEnabled() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetInsecureKubeletReadonlyPortEnabled",
 		nil, // no parameters
 	)
 }

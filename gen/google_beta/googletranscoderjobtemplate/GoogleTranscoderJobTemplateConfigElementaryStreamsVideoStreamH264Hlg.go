@@ -1,0 +1,6 @@
+package googletranscoderjobtemplate
+
+
+type GoogleTranscoderJobTemplateConfigElementaryStreamsVideoStreamH264Hlg struct {
+}
+

@@ -1,0 +1,6 @@
+package datagoogleiamworkloadidentitypoolprovider
+
+
+type DataGoogleIamWorkloadIdentityPoolProviderX509TrustStoreTrustAnchors struct {
+}
+

@@ -1,0 +1,6 @@
+package storagecontrolfolderintelligenceconfig
+
+
+type StorageControlFolderIntelligenceConfigEffectiveIntelligenceConfig struct {
+}
+

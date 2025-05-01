@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleclouddeploydeliverypipelineiambinding/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_binding google_clouddeploy_delivery_pipeline_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_binding google_clouddeploy_delivery_pipeline_iam_binding}.
 type GoogleClouddeployDeliveryPipelineIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -459,7 +459,7 @@ func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineIamBinding) TerraformResourc
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_binding google_clouddeploy_delivery_pipeline_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_binding google_clouddeploy_delivery_pipeline_iam_binding} Resource.
 func NewGoogleClouddeployDeliveryPipelineIamBinding(scope constructs.Construct, id *string, config *GoogleClouddeployDeliveryPipelineIamBindingConfig) GoogleClouddeployDeliveryPipelineIamBinding {
 	_init_.Initialize()
 
@@ -477,7 +477,7 @@ func NewGoogleClouddeployDeliveryPipelineIamBinding(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_binding google_clouddeploy_delivery_pipeline_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_binding google_clouddeploy_delivery_pipeline_iam_binding} Resource.
 func NewGoogleClouddeployDeliveryPipelineIamBinding_Override(g GoogleClouddeployDeliveryPipelineIamBinding, scope constructs.Construct, id *string, config *GoogleClouddeployDeliveryPipelineIamBindingConfig) {
 	_init_.Initialize()
 

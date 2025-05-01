@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/iamdenypolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/iam_deny_policy google_iam_deny_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/iam_deny_policy google_iam_deny_policy}.
 type IamDenyPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -435,7 +435,7 @@ func (j *jsiiProxy_IamDenyPolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/iam_deny_policy google_iam_deny_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/iam_deny_policy google_iam_deny_policy} Resource.
 func NewIamDenyPolicy(scope constructs.Construct, id *string, config *IamDenyPolicyConfig) IamDenyPolicy {
 	_init_.Initialize()
 
@@ -453,7 +453,7 @@ func NewIamDenyPolicy(scope constructs.Construct, id *string, config *IamDenyPol
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/iam_deny_policy google_iam_deny_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/iam_deny_policy google_iam_deny_policy} Resource.
 func NewIamDenyPolicy_Override(i IamDenyPolicy, scope constructs.Construct, id *string, config *IamDenyPolicyConfig) {
 	_init_.Initialize()
 

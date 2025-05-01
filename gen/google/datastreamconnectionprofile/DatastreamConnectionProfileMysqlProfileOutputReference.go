@@ -38,6 +38,9 @@ type DatastreamConnectionProfileMysqlProfileOutputReference interface {
 	Port() *float64
 	SetPort(val *float64)
 	PortInput() *float64
+	SecretManagerStoredPassword() *string
+	SetSecretManagerStoredPassword(val *string)
+	SecretManagerStoredPasswordInput() *string
 	SslConfig() DatastreamConnectionProfileMysqlProfileSslConfigOutputReference
 	SslConfigInput() *DatastreamConnectionProfileMysqlProfileSslConfig
 	// Experimental.
@@ -76,7 +79,9 @@ type DatastreamConnectionProfileMysqlProfileOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutSslConfig(value *DatastreamConnectionProfileMysqlProfileSslConfig)
+	ResetPassword()
 	ResetPort()
+	ResetSecretManagerStoredPassword()
 	ResetSslConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -198,6 +203,26 @@ func (j *jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference) PortI
 	_jsii_.Get(
 		j,
 		"portInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference) SecretManagerStoredPassword() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secretManagerStoredPassword",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference) SecretManagerStoredPasswordInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secretManagerStoredPasswordInput",
 		&returns,
 	)
 	return returns
@@ -353,6 +378,17 @@ func (j *jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference)SetPor
 	_jsii_.Set(
 		j,
 		"port",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference)SetSecretManagerStoredPassword(val *string) {
+	if err := j.validateSetSecretManagerStoredPasswordParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"secretManagerStoredPassword",
 		val,
 	)
 }
@@ -587,10 +623,26 @@ func (d *jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference) PutSs
 	)
 }
 
+func (d *jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference) ResetPassword() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPassword",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference) ResetPort() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetPort",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference) ResetSecretManagerStoredPassword() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSecretManagerStoredPassword",
 		nil, // no parameters
 	)
 }

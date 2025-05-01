@@ -124,6 +124,10 @@ func (j *jsiiProxy_ComputePublicAdvertisedPrefix) validateSetNameParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_ComputePublicAdvertisedPrefix) validateSetPdpScopeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputePublicAdvertisedPrefix) validateSetProjectParameters(val *string) error {
 	return nil
 }

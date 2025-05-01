@@ -31,6 +31,8 @@ type GoogleComputeBackendServiceBackendOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomMetrics() GoogleComputeBackendServiceBackendCustomMetricsList
+	CustomMetricsInput() interface{}
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
@@ -62,6 +64,9 @@ type GoogleComputeBackendServiceBackendOutputReference interface {
 	MaxUtilization() *float64
 	SetMaxUtilization(val *float64)
 	MaxUtilizationInput() *float64
+	Preference() *string
+	SetPreference(val *string)
+	PreferenceInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -94,8 +99,10 @@ type GoogleComputeBackendServiceBackendOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutCustomMetrics(value interface{})
 	ResetBalancingMode()
 	ResetCapacityScaler()
+	ResetCustomMetrics()
 	ResetDescription()
 	ResetMaxConnections()
 	ResetMaxConnectionsPerEndpoint()
@@ -104,6 +111,7 @@ type GoogleComputeBackendServiceBackendOutputReference interface {
 	ResetMaxRatePerEndpoint()
 	ResetMaxRatePerInstance()
 	ResetMaxUtilization()
+	ResetPreference()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -184,6 +192,26 @@ func (j *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) CreationSt
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) CustomMetrics() GoogleComputeBackendServiceBackendCustomMetricsList {
+	var returns GoogleComputeBackendServiceBackendCustomMetricsList
+	_jsii_.Get(
+		j,
+		"customMetrics",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) CustomMetricsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"customMetricsInput",
 		&returns,
 	)
 	return returns
@@ -389,6 +417,26 @@ func (j *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) MaxUtiliza
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) Preference() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"preference",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) PreferenceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"preferenceInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -587,6 +635,17 @@ func (j *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference)SetMaxUtili
 	_jsii_.Set(
 		j,
 		"maxUtilization",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference)SetPreference(val *string) {
+	if err := j.validateSetPreferenceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"preference",
 		val,
 	)
 }
@@ -799,6 +858,17 @@ func (g *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) Interpolat
 	return returns
 }
 
+func (g *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) PutCustomMetrics(value interface{}) {
+	if err := g.validatePutCustomMetricsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putCustomMetrics",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) ResetBalancingMode() {
 	_jsii_.InvokeVoid(
 		g,
@@ -811,6 +881,14 @@ func (g *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) ResetCapac
 	_jsii_.InvokeVoid(
 		g,
 		"resetCapacityScaler",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) ResetCustomMetrics() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCustomMetrics",
 		nil, // no parameters
 	)
 }
@@ -875,6 +953,14 @@ func (g *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) ResetMaxUt
 	_jsii_.InvokeVoid(
 		g,
 		"resetMaxUtilization",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) ResetPreference() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPreference",
 		nil, // no parameters
 	)
 }

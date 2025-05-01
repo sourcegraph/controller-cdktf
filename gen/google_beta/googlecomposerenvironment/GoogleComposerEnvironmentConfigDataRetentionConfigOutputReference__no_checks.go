@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleComposerEnvironmentConfigDataRetentionConfigOutputRefer
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComposerEnvironmentConfigDataRetentionConfigOutputReference) validatePutAirflowMetadataRetentionConfigParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComposerEnvironmentConfigDataRetentionConfigOutputReference) validatePutTaskLogsRetentionConfigParameters(value interface{}) error {
 	return nil
 }

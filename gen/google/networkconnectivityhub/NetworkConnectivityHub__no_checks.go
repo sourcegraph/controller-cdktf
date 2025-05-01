@@ -104,6 +104,10 @@ func (j *jsiiProxy_NetworkConnectivityHub) validateSetDescriptionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_NetworkConnectivityHub) validateSetExportPscParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkConnectivityHub) validateSetIdParameters(val *string) error {
 	return nil
 }
@@ -117,6 +121,14 @@ func (j *jsiiProxy_NetworkConnectivityHub) validateSetLifecycleParameters(val *c
 }
 
 func (j *jsiiProxy_NetworkConnectivityHub) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NetworkConnectivityHub) validateSetPolicyModeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NetworkConnectivityHub) validateSetPresetTopologyParameters(val *string) error {
 	return nil
 }
 

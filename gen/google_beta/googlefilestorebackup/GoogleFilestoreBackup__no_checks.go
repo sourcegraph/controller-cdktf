@@ -140,6 +140,10 @@ func (j *jsiiProxy_GoogleFilestoreBackup) validateSetSourceInstanceParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_GoogleFilestoreBackup) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func validateNewGoogleFilestoreBackupParameters(scope constructs.Construct, id *string, config *GoogleFilestoreBackupConfig) error {
 	return nil
 }

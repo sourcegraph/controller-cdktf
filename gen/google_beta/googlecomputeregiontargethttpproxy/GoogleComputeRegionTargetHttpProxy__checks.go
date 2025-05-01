@@ -353,6 +353,14 @@ func (j *jsiiProxy_GoogleComputeRegionTargetHttpProxy) validateSetDescriptionPar
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRegionTargetHttpProxy) validateSetHttpKeepAliveTimeoutSecParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRegionTargetHttpProxy) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

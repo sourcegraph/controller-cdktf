@@ -108,6 +108,10 @@ func (j *jsiiProxy_GoogleActiveDirectoryDomain) validateSetCountParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_GoogleActiveDirectoryDomain) validateSetDeletionProtectionParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleActiveDirectoryDomain) validateSetDomainNameParameters(val *string) error {
 	return nil
 }

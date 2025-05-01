@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleFirebaseHostingVersionConfigAOutputReference) validateI
 	return nil
 }
 
+func (g *jsiiProxy_GoogleFirebaseHostingVersionConfigAOutputReference) validatePutHeadersParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFirebaseHostingVersionConfigAOutputReference) validatePutRedirectsParameters(value interface{}) error {
 	return nil
 }

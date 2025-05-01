@@ -72,6 +72,10 @@ func (f *jsiiProxy_FirestoreDatabase) validateOverrideLogicalIdParameters(newLog
 	return nil
 }
 
+func (f *jsiiProxy_FirestoreDatabase) validatePutCmekConfigParameters(value *FirestoreDatabaseCmekConfig) error {
+	return nil
+}
+
 func (f *jsiiProxy_FirestoreDatabase) validatePutTimeoutsParameters(value *FirestoreDatabaseTimeouts) error {
 	return nil
 }
@@ -105,6 +109,10 @@ func (j *jsiiProxy_FirestoreDatabase) validateSetConnectionParameters(val interf
 }
 
 func (j *jsiiProxy_FirestoreDatabase) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_FirestoreDatabase) validateSetDatabaseEditionParameters(val *string) error {
 	return nil
 }
 

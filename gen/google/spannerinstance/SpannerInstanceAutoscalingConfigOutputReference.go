@@ -10,6 +10,8 @@ import (
 
 type SpannerInstanceAutoscalingConfigOutputReference interface {
 	cdktf.ComplexObject
+	AsymmetricAutoscalingOptions() SpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsList
+	AsymmetricAutoscalingOptionsInput() interface{}
 	AutoscalingLimits() SpannerInstanceAutoscalingConfigAutoscalingLimitsOutputReference
 	AutoscalingLimitsInput() *SpannerInstanceAutoscalingConfigAutoscalingLimits
 	AutoscalingTargets() SpannerInstanceAutoscalingConfigAutoscalingTargetsOutputReference
@@ -65,8 +67,10 @@ type SpannerInstanceAutoscalingConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAsymmetricAutoscalingOptions(value interface{})
 	PutAutoscalingLimits(value *SpannerInstanceAutoscalingConfigAutoscalingLimits)
 	PutAutoscalingTargets(value *SpannerInstanceAutoscalingConfigAutoscalingTargets)
+	ResetAsymmetricAutoscalingOptions()
 	ResetAutoscalingLimits()
 	ResetAutoscalingTargets()
 	// Produce the Token's value at resolution time.
@@ -82,6 +86,26 @@ type SpannerInstanceAutoscalingConfigOutputReference interface {
 // The jsii proxy struct for SpannerInstanceAutoscalingConfigOutputReference
 type jsiiProxy_SpannerInstanceAutoscalingConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_SpannerInstanceAutoscalingConfigOutputReference) AsymmetricAutoscalingOptions() SpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsList {
+	var returns SpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsList
+	_jsii_.Get(
+		j,
+		"asymmetricAutoscalingOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpannerInstanceAutoscalingConfigOutputReference) AsymmetricAutoscalingOptionsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"asymmetricAutoscalingOptionsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_SpannerInstanceAutoscalingConfigOutputReference) AutoscalingLimits() SpannerInstanceAutoscalingConfigAutoscalingLimitsOutputReference {
@@ -463,6 +487,17 @@ func (s *jsiiProxy_SpannerInstanceAutoscalingConfigOutputReference) Interpolatio
 	return returns
 }
 
+func (s *jsiiProxy_SpannerInstanceAutoscalingConfigOutputReference) PutAsymmetricAutoscalingOptions(value interface{}) {
+	if err := s.validatePutAsymmetricAutoscalingOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putAsymmetricAutoscalingOptions",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SpannerInstanceAutoscalingConfigOutputReference) PutAutoscalingLimits(value *SpannerInstanceAutoscalingConfigAutoscalingLimits) {
 	if err := s.validatePutAutoscalingLimitsParameters(value); err != nil {
 		panic(err)
@@ -482,6 +517,14 @@ func (s *jsiiProxy_SpannerInstanceAutoscalingConfigOutputReference) PutAutoscali
 		s,
 		"putAutoscalingTargets",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SpannerInstanceAutoscalingConfigOutputReference) ResetAsymmetricAutoscalingOptions() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAsymmetricAutoscalingOptions",
+		nil, // no parameters
 	)
 }
 

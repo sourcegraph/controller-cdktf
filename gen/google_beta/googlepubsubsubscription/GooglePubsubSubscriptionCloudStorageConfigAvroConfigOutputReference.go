@@ -37,6 +37,9 @@ type GooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputReference interfa
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	UseTopicSchema() interface{}
+	SetUseTopicSchema(val interface{})
+	UseTopicSchemaInput() interface{}
 	WriteMetadata() interface{}
 	SetWriteMetadata(val interface{})
 	WriteMetadataInput() interface{}
@@ -64,6 +67,7 @@ type GooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputReference interfa
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetUseTopicSchema()
 	ResetWriteMetadata()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -145,6 +149,26 @@ func (j *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputRef
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputReference) UseTopicSchema() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useTopicSchema",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputReference) UseTopicSchemaInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useTopicSchemaInput",
 		&returns,
 	)
 	return returns
@@ -249,6 +273,17 @@ func (j *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputRef
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputReference)SetUseTopicSchema(val interface{}) {
+	if err := j.validateSetUseTopicSchemaParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"useTopicSchema",
 		val,
 	)
 }
@@ -448,6 +483,14 @@ func (g *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputRef
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputReference) ResetUseTopicSchema() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetUseTopicSchema",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputReference) ResetWriteMetadata() {

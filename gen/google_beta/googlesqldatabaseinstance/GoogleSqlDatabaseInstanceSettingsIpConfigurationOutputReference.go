@@ -30,6 +30,9 @@ type GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomSubjectAlternativeNames() *[]*string
+	SetCustomSubjectAlternativeNames(val *[]*string)
+	CustomSubjectAlternativeNamesInput() *[]*string
 	EnablePrivatePathForGoogleCloudServices() interface{}
 	SetEnablePrivatePathForGoogleCloudServices(val interface{})
 	EnablePrivatePathForGoogleCloudServicesInput() interface{}
@@ -45,9 +48,12 @@ type GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference interface {
 	PrivateNetworkInput() *string
 	PscConfig() GoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigList
 	PscConfigInput() interface{}
-	RequireSsl() interface{}
-	SetRequireSsl(val interface{})
-	RequireSslInput() interface{}
+	ServerCaMode() *string
+	SetServerCaMode(val *string)
+	ServerCaModeInput() *string
+	ServerCaPool() *string
+	SetServerCaPool(val *string)
+	ServerCaPoolInput() *string
 	SslMode() *string
 	SetSslMode(val *string)
 	SslModeInput() *string
@@ -87,11 +93,13 @@ type GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference interface {
 	PutPscConfig(value interface{})
 	ResetAllocatedIpRange()
 	ResetAuthorizedNetworks()
+	ResetCustomSubjectAlternativeNames()
 	ResetEnablePrivatePathForGoogleCloudServices()
 	ResetIpv4Enabled()
 	ResetPrivateNetwork()
 	ResetPscConfig()
-	ResetRequireSsl()
+	ResetServerCaMode()
+	ResetServerCaPool()
 	ResetSslMode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -173,6 +181,26 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReferen
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) CustomSubjectAlternativeNames() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"customSubjectAlternativeNames",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) CustomSubjectAlternativeNamesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"customSubjectAlternativeNamesInput",
 		&returns,
 	)
 	return returns
@@ -278,21 +306,41 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) RequireSsl() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) ServerCaMode() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"requireSsl",
+		"serverCaMode",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) RequireSslInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) ServerCaModeInput() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"requireSslInput",
+		"serverCaModeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) ServerCaPool() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serverCaPool",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) ServerCaPoolInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serverCaPoolInput",
 		&returns,
 	)
 	return returns
@@ -399,6 +447,17 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReferen
 	)
 }
 
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference)SetCustomSubjectAlternativeNames(val *[]*string) {
+	if err := j.validateSetCustomSubjectAlternativeNamesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customSubjectAlternativeNames",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference)SetEnablePrivatePathForGoogleCloudServices(val interface{}) {
 	if err := j.validateSetEnablePrivatePathForGoogleCloudServicesParameters(val); err != nil {
 		panic(err)
@@ -443,13 +502,24 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReferen
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference)SetRequireSsl(val interface{}) {
-	if err := j.validateSetRequireSslParameters(val); err != nil {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference)SetServerCaMode(val *string) {
+	if err := j.validateSetServerCaModeParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"requireSsl",
+		"serverCaMode",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference)SetServerCaPool(val *string) {
+	if err := j.validateSetServerCaPoolParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serverCaPool",
 		val,
 	)
 }
@@ -711,6 +781,14 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReferen
 	)
 }
 
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) ResetCustomSubjectAlternativeNames() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCustomSubjectAlternativeNames",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) ResetEnablePrivatePathForGoogleCloudServices() {
 	_jsii_.InvokeVoid(
 		g,
@@ -743,10 +821,18 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReferen
 	)
 }
 
-func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) ResetRequireSsl() {
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) ResetServerCaMode() {
 	_jsii_.InvokeVoid(
 		g,
-		"resetRequireSsl",
+		"resetServerCaMode",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) ResetServerCaPool() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetServerCaPool",
 		nil, // no parameters
 	)
 }

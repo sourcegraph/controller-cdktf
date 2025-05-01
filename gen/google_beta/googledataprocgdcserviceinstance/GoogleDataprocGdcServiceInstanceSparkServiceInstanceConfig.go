@@ -1,0 +1,6 @@
+package googledataprocgdcserviceinstance
+
+
+type GoogleDataprocGdcServiceInstanceSparkServiceInstanceConfig struct {
+}
+

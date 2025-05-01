@@ -35,6 +35,8 @@ type GoogleDatastreamStreamBackfillAllOutputReference interface {
 	OracleExcludedObjectsInput() *GoogleDatastreamStreamBackfillAllOracleExcludedObjects
 	PostgresqlExcludedObjects() GoogleDatastreamStreamBackfillAllPostgresqlExcludedObjectsOutputReference
 	PostgresqlExcludedObjectsInput() *GoogleDatastreamStreamBackfillAllPostgresqlExcludedObjects
+	SalesforceExcludedObjects() GoogleDatastreamStreamBackfillAllSalesforceExcludedObjectsOutputReference
+	SalesforceExcludedObjectsInput() *GoogleDatastreamStreamBackfillAllSalesforceExcludedObjects
 	SqlServerExcludedObjects() GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsOutputReference
 	SqlServerExcludedObjectsInput() *GoogleDatastreamStreamBackfillAllSqlServerExcludedObjects
 	// Experimental.
@@ -72,10 +74,12 @@ type GoogleDatastreamStreamBackfillAllOutputReference interface {
 	PutMysqlExcludedObjects(value *GoogleDatastreamStreamBackfillAllMysqlExcludedObjects)
 	PutOracleExcludedObjects(value *GoogleDatastreamStreamBackfillAllOracleExcludedObjects)
 	PutPostgresqlExcludedObjects(value *GoogleDatastreamStreamBackfillAllPostgresqlExcludedObjects)
+	PutSalesforceExcludedObjects(value *GoogleDatastreamStreamBackfillAllSalesforceExcludedObjects)
 	PutSqlServerExcludedObjects(value *GoogleDatastreamStreamBackfillAllSqlServerExcludedObjects)
 	ResetMysqlExcludedObjects()
 	ResetOracleExcludedObjects()
 	ResetPostgresqlExcludedObjects()
+	ResetSalesforceExcludedObjects()
 	ResetSqlServerExcludedObjects()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -197,6 +201,26 @@ func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllOutputReference) PostgresqlE
 	_jsii_.Get(
 		j,
 		"postgresqlExcludedObjectsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllOutputReference) SalesforceExcludedObjects() GoogleDatastreamStreamBackfillAllSalesforceExcludedObjectsOutputReference {
+	var returns GoogleDatastreamStreamBackfillAllSalesforceExcludedObjectsOutputReference
+	_jsii_.Get(
+		j,
+		"salesforceExcludedObjects",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllOutputReference) SalesforceExcludedObjectsInput() *GoogleDatastreamStreamBackfillAllSalesforceExcludedObjects {
+	var returns *GoogleDatastreamStreamBackfillAllSalesforceExcludedObjects
+	_jsii_.Get(
+		j,
+		"salesforceExcludedObjectsInput",
 		&returns,
 	)
 	return returns
@@ -544,6 +568,17 @@ func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllOutputReference) PutPostgres
 	)
 }
 
+func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllOutputReference) PutSalesforceExcludedObjects(value *GoogleDatastreamStreamBackfillAllSalesforceExcludedObjects) {
+	if err := g.validatePutSalesforceExcludedObjectsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSalesforceExcludedObjects",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllOutputReference) PutSqlServerExcludedObjects(value *GoogleDatastreamStreamBackfillAllSqlServerExcludedObjects) {
 	if err := g.validatePutSqlServerExcludedObjectsParameters(value); err != nil {
 		panic(err)
@@ -575,6 +610,14 @@ func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllOutputReference) ResetPostgr
 	_jsii_.InvokeVoid(
 		g,
 		"resetPostgresqlExcludedObjects",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllOutputReference) ResetSalesforceExcludedObjects() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSalesforceExcludedObjects",
 		nil, // no parameters
 	)
 }

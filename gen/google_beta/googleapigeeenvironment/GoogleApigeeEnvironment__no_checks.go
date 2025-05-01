@@ -76,6 +76,10 @@ func (g *jsiiProxy_GoogleApigeeEnvironment) validatePutNodeConfigParameters(valu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleApigeeEnvironment) validatePutPropertiesParameters(value *GoogleApigeeEnvironmentProperties) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleApigeeEnvironment) validatePutTimeoutsParameters(value *GoogleApigeeEnvironmentTimeouts) error {
 	return nil
 }

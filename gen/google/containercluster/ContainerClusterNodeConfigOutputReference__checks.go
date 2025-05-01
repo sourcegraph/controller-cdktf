@@ -337,6 +337,17 @@ func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) validatePutTaintPa
 	return nil
 }
 
+func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) validatePutWindowsNodeConfigParameters(value *ContainerClusterNodeConfigWindowsNodeConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) validatePutWorkloadMetadataConfigParameters(value *ContainerClusterNodeConfigWorkloadMetadataConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -497,6 +508,14 @@ func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) validateSetLocalSs
 	return nil
 }
 
+func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) validateSetLocalSsdEncryptionModeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) validateSetLoggingVariantParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -506,6 +525,14 @@ func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) validateSetLogging
 }
 
 func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) validateSetMachineTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) validateSetMaxRunDurationParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -604,6 +631,14 @@ func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) validateSetSpotPar
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) validateSetStoragePoolsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/computediskasyncreplication/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_disk_async_replication google_compute_disk_async_replication}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_disk_async_replication google_compute_disk_async_replication}.
 type ComputeDiskAsyncReplication interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -377,7 +377,7 @@ func (j *jsiiProxy_ComputeDiskAsyncReplication) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_disk_async_replication google_compute_disk_async_replication} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_disk_async_replication google_compute_disk_async_replication} Resource.
 func NewComputeDiskAsyncReplication(scope constructs.Construct, id *string, config *ComputeDiskAsyncReplicationConfig) ComputeDiskAsyncReplication {
 	_init_.Initialize()
 
@@ -395,7 +395,7 @@ func NewComputeDiskAsyncReplication(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_disk_async_replication google_compute_disk_async_replication} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_disk_async_replication google_compute_disk_async_replication} Resource.
 func NewComputeDiskAsyncReplication_Override(c ComputeDiskAsyncReplication, scope constructs.Construct, id *string, config *ComputeDiskAsyncReplicationConfig) {
 	_init_.Initialize()
 

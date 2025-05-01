@@ -23,13 +23,13 @@ type GoogleComputeInstanceGroupConfig struct {
 	//
 	// Must be 1-63 characters long and comply with RFC1035. Supported characters include lowercase letters, numbers, and hyphens.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_instance_group#name GoogleComputeInstanceGroup#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_instance_group#name GoogleComputeInstanceGroup#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// An optional textual description of the instance group.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_instance_group#description GoogleComputeInstanceGroup#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_instance_group#description GoogleComputeInstanceGroup#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_instance_group#id GoogleComputeInstanceGroup#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_instance_group#id GoogleComputeInstanceGroup#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -38,31 +38,31 @@ type GoogleComputeInstanceGroupConfig struct {
 	//
 	// When adding instances they must all be in the same network and zone as the instance group.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_instance_group#instances GoogleComputeInstanceGroup#instances}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_instance_group#instances GoogleComputeInstanceGroup#instances}
 	Instances *[]*string `field:"optional" json:"instances" yaml:"instances"`
 	// named_port block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_instance_group#named_port GoogleComputeInstanceGroup#named_port}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_instance_group#named_port GoogleComputeInstanceGroup#named_port}
 	NamedPort interface{} `field:"optional" json:"namedPort" yaml:"namedPort"`
 	// The URL of the network the instance group is in.
 	//
 	// If this is different from the network where the instances are in, the creation fails. Defaults to the network where the instances are in (if neither network nor instances is specified, this field will be blank).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_instance_group#network GoogleComputeInstanceGroup#network}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_instance_group#network GoogleComputeInstanceGroup#network}
 	Network *string `field:"optional" json:"network" yaml:"network"`
 	// The ID of the project in which the resource belongs.
 	//
 	// If it is not provided, the provider project is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_instance_group#project GoogleComputeInstanceGroup#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_instance_group#project GoogleComputeInstanceGroup#project}
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_instance_group#timeouts GoogleComputeInstanceGroup#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_instance_group#timeouts GoogleComputeInstanceGroup#timeouts}
 	Timeouts *GoogleComputeInstanceGroupTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 	// The zone that this instance group should be created in.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_instance_group#zone GoogleComputeInstanceGroup#zone}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_instance_group#zone GoogleComputeInstanceGroup#zone}
 	Zone *string `field:"optional" json:"zone" yaml:"zone"`
 }
 

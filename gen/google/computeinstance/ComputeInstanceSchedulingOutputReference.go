@@ -13,6 +13,9 @@ type ComputeInstanceSchedulingOutputReference interface {
 	AutomaticRestart() interface{}
 	SetAutomaticRestart(val interface{})
 	AutomaticRestartInput() interface{}
+	AvailabilityDomain() *float64
+	SetAvailabilityDomain(val *float64)
+	AvailabilityDomainInput() *float64
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -55,6 +58,9 @@ type ComputeInstanceSchedulingOutputReference interface {
 	ProvisioningModel() *string
 	SetProvisioningModel(val *string)
 	ProvisioningModelInput() *string
+	TerminationTime() *string
+	SetTerminationTime(val *string)
+	TerminationTimeInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -92,6 +98,7 @@ type ComputeInstanceSchedulingOutputReference interface {
 	PutNodeAffinities(value interface{})
 	PutOnInstanceStopAction(value *ComputeInstanceSchedulingOnInstanceStopAction)
 	ResetAutomaticRestart()
+	ResetAvailabilityDomain()
 	ResetInstanceTerminationAction()
 	ResetLocalSsdRecoveryTimeout()
 	ResetMaxRunDuration()
@@ -101,6 +108,7 @@ type ComputeInstanceSchedulingOutputReference interface {
 	ResetOnInstanceStopAction()
 	ResetPreemptible()
 	ResetProvisioningModel()
+	ResetTerminationTime()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -131,6 +139,26 @@ func (j *jsiiProxy_ComputeInstanceSchedulingOutputReference) AutomaticRestartInp
 	_jsii_.Get(
 		j,
 		"automaticRestartInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceSchedulingOutputReference) AvailabilityDomain() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"availabilityDomain",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceSchedulingOutputReference) AvailabilityDomainInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"availabilityDomainInput",
 		&returns,
 	)
 	return returns
@@ -366,6 +394,26 @@ func (j *jsiiProxy_ComputeInstanceSchedulingOutputReference) ProvisioningModelIn
 	return returns
 }
 
+func (j *jsiiProxy_ComputeInstanceSchedulingOutputReference) TerminationTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terminationTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceSchedulingOutputReference) TerminationTimeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terminationTimeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeInstanceSchedulingOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -421,6 +469,17 @@ func (j *jsiiProxy_ComputeInstanceSchedulingOutputReference)SetAutomaticRestart(
 	_jsii_.Set(
 		j,
 		"automaticRestart",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeInstanceSchedulingOutputReference)SetAvailabilityDomain(val *float64) {
+	if err := j.validateSetAvailabilityDomainParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"availabilityDomain",
 		val,
 	)
 }
@@ -509,6 +568,17 @@ func (j *jsiiProxy_ComputeInstanceSchedulingOutputReference)SetProvisioningModel
 	_jsii_.Set(
 		j,
 		"provisioningModel",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeInstanceSchedulingOutputReference)SetTerminationTime(val *string) {
+	if err := j.validateSetTerminationTimeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"terminationTime",
 		val,
 	)
 }
@@ -773,6 +843,14 @@ func (c *jsiiProxy_ComputeInstanceSchedulingOutputReference) ResetAutomaticResta
 	)
 }
 
+func (c *jsiiProxy_ComputeInstanceSchedulingOutputReference) ResetAvailabilityDomain() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAvailabilityDomain",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ComputeInstanceSchedulingOutputReference) ResetInstanceTerminationAction() {
 	_jsii_.InvokeVoid(
 		c,
@@ -841,6 +919,14 @@ func (c *jsiiProxy_ComputeInstanceSchedulingOutputReference) ResetProvisioningMo
 	_jsii_.InvokeVoid(
 		c,
 		"resetProvisioningModel",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeInstanceSchedulingOutputReference) ResetTerminationTime() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetTerminationTime",
 		nil, // no parameters
 	)
 }

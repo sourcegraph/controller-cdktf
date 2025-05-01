@@ -32,6 +32,8 @@ type SqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference interfac
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	PscAutoConnections() SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsList
+	PscAutoConnectionsInput() interface{}
 	PscEnabled() interface{}
 	SetPscEnabled(val interface{})
 	PscEnabledInput() interface{}
@@ -67,7 +69,9 @@ type SqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference interfac
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutPscAutoConnections(value interface{})
 	ResetAllowedConsumerProjects()
+	ResetPscAutoConnections()
 	ResetPscEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -149,6 +153,26 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputRefe
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference) PscAutoConnections() SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsList {
+	var returns SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsList
+	_jsii_.Get(
+		j,
+		"pscAutoConnections",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference) PscAutoConnectionsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"pscAutoConnectionsInput",
 		&returns,
 	)
 	return returns
@@ -485,10 +509,29 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputRefe
 	return returns
 }
 
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference) PutPscAutoConnections(value interface{}) {
+	if err := s.validatePutPscAutoConnectionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putPscAutoConnections",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference) ResetAllowedConsumerProjects() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetAllowedConsumerProjects",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference) ResetPscAutoConnections() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetPscAutoConnections",
 		nil, // no parameters
 	)
 }

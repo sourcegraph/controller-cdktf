@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglemonitoringistiocanonicalservice/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_monitoring_istio_canonical_service google_monitoring_istio_canonical_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_monitoring_istio_canonical_service google_monitoring_istio_canonical_service}.
 type DataGoogleMonitoringIstioCanonicalService interface {
 	cdktf.TerraformDataSource
 	CanonicalService() *string
@@ -410,7 +410,7 @@ func (j *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) UserLabels() cdktf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_monitoring_istio_canonical_service google_monitoring_istio_canonical_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_monitoring_istio_canonical_service google_monitoring_istio_canonical_service} Data Source.
 func NewDataGoogleMonitoringIstioCanonicalService(scope constructs.Construct, id *string, config *DataGoogleMonitoringIstioCanonicalServiceConfig) DataGoogleMonitoringIstioCanonicalService {
 	_init_.Initialize()
 
@@ -428,7 +428,7 @@ func NewDataGoogleMonitoringIstioCanonicalService(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_monitoring_istio_canonical_service google_monitoring_istio_canonical_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_monitoring_istio_canonical_service google_monitoring_istio_canonical_service} Data Source.
 func NewDataGoogleMonitoringIstioCanonicalService_Override(d DataGoogleMonitoringIstioCanonicalService, scope constructs.Construct, id *string, config *DataGoogleMonitoringIstioCanonicalServiceConfig) {
 	_init_.Initialize()
 

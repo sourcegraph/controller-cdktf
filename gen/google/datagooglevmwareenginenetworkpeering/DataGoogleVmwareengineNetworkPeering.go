@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagooglevmwareenginenetworkpeering/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/vmwareengine_network_peering google_vmwareengine_network_peering}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/vmwareengine_network_peering google_vmwareengine_network_peering}.
 type DataGoogleVmwareengineNetworkPeering interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -463,7 +463,7 @@ func (j *jsiiProxy_DataGoogleVmwareengineNetworkPeering) VmwareEngineNetworkCano
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/vmwareengine_network_peering google_vmwareengine_network_peering} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/vmwareengine_network_peering google_vmwareengine_network_peering} Data Source.
 func NewDataGoogleVmwareengineNetworkPeering(scope constructs.Construct, id *string, config *DataGoogleVmwareengineNetworkPeeringConfig) DataGoogleVmwareengineNetworkPeering {
 	_init_.Initialize()
 
@@ -481,7 +481,7 @@ func NewDataGoogleVmwareengineNetworkPeering(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/vmwareengine_network_peering google_vmwareengine_network_peering} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/vmwareengine_network_peering google_vmwareengine_network_peering} Data Source.
 func NewDataGoogleVmwareengineNetworkPeering_Override(d DataGoogleVmwareengineNetworkPeering, scope constructs.Construct, id *string, config *DataGoogleVmwareengineNetworkPeeringConfig) {
 	_init_.Initialize()
 

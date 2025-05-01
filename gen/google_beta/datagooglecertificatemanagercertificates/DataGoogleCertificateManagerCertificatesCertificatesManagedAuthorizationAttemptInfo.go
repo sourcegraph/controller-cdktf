@@ -1,0 +1,6 @@
+package datagooglecertificatemanagercertificates
+
+
+type DataGoogleCertificateManagerCertificatesCertificatesManagedAuthorizationAttemptInfo struct {
+}
+

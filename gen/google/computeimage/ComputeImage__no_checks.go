@@ -84,6 +84,22 @@ func (c *jsiiProxy_ComputeImage) validatePutRawDiskParameters(value *ComputeImag
 	return nil
 }
 
+func (c *jsiiProxy_ComputeImage) validatePutShieldedInstanceInitialStateParameters(value *ComputeImageShieldedInstanceInitialState) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeImage) validatePutSourceDiskEncryptionKeyParameters(value *ComputeImageSourceDiskEncryptionKey) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeImage) validatePutSourceImageEncryptionKeyParameters(value *ComputeImageSourceImageEncryptionKey) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeImage) validatePutSourceSnapshotEncryptionKeyParameters(value *ComputeImageSourceSnapshotEncryptionKey) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeImage) validatePutTimeoutsParameters(value *ComputeImageTimeouts) error {
 	return nil
 }

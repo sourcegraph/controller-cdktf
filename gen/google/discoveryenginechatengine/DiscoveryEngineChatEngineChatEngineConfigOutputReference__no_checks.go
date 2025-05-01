@@ -52,11 +52,19 @@ func (d *jsiiProxy_DiscoveryEngineChatEngineChatEngineConfigOutputReference) val
 	return nil
 }
 
+func (j *jsiiProxy_DiscoveryEngineChatEngineChatEngineConfigOutputReference) validateSetAllowCrossRegionParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DiscoveryEngineChatEngineChatEngineConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_DiscoveryEngineChatEngineChatEngineConfigOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_DiscoveryEngineChatEngineChatEngineConfigOutputReference) validateSetDialogflowAgentToLinkParameters(val *string) error {
 	return nil
 }
 

@@ -1,12 +1,8 @@
 name: gkeprivate
 
 module:
-  # TODO(@michaellzc):
-  # - https://github.com/terraform-google-modules/terraform-google-kubernetes-engine/pull/1806
-  # cherry pick to v26.1.1 at https://github.com/michaellzc/terraform-google-kubernetes-engine/tree/fork-30-3-0
-  # source: terraform-google-modules/kubernetes-engine/google//modules/beta-private-cluster
-  # version: "30.3.0"
-  source: git::https://github.com/michaellzc/terraform-google-kubernetes-engine.git//modules/beta-private-cluster?ref=d276cfbb3aee47fb93cd506341d4f10d1d4c34c9
+  source: terraform-google-modules/kubernetes-engine/google//modules/beta-private-cluster
+  version: 36.3.0
 
 target:
   language: go

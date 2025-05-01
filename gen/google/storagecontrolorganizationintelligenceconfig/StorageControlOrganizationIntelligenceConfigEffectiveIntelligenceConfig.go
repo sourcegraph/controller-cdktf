@@ -1,0 +1,6 @@
+package storagecontrolorganizationintelligenceconfig
+
+
+type StorageControlOrganizationIntelligenceConfigEffectiveIntelligenceConfig struct {
+}
+

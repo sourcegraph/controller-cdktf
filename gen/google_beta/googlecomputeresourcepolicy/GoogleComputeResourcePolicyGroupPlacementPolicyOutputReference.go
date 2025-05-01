@@ -33,6 +33,9 @@ type GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	GpuTopology() *string
+	SetGpuTopology(val *string)
+	GpuTopologyInput() *string
 	InternalValue() *GoogleComputeResourcePolicyGroupPlacementPolicy
 	SetInternalValue(val *GoogleComputeResourcePolicyGroupPlacementPolicy)
 	MaxDistance() *float64
@@ -46,6 +49,9 @@ type GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TpuTopology() *string
+	SetTpuTopology(val *string)
+	TpuTopologyInput() *string
 	VmCount() *float64
 	SetVmCount(val *float64)
 	VmCountInput() *float64
@@ -75,7 +81,9 @@ type GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAvailabilityDomainCount()
 	ResetCollocation()
+	ResetGpuTopology()
 	ResetMaxDistance()
+	ResetTpuTopology()
 	ResetVmCount()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -172,6 +180,26 @@ func (j *jsiiProxy_GoogleComputeResourcePolicyGroupPlacementPolicyOutputReferenc
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference) GpuTopology() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gpuTopology",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference) GpuTopologyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gpuTopologyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference) InternalValue() *GoogleComputeResourcePolicyGroupPlacementPolicy {
 	var returns *GoogleComputeResourcePolicyGroupPlacementPolicy
 	_jsii_.Get(
@@ -217,6 +245,26 @@ func (j *jsiiProxy_GoogleComputeResourcePolicyGroupPlacementPolicyOutputReferenc
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference) TpuTopology() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tpuTopology",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference) TpuTopologyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tpuTopologyInput",
 		&returns,
 	)
 	return returns
@@ -314,6 +362,17 @@ func (j *jsiiProxy_GoogleComputeResourcePolicyGroupPlacementPolicyOutputReferenc
 	)
 }
 
+func (j *jsiiProxy_GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference)SetGpuTopology(val *string) {
+	if err := j.validateSetGpuTopologyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"gpuTopology",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference)SetInternalValue(val *GoogleComputeResourcePolicyGroupPlacementPolicy) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -354,6 +413,17 @@ func (j *jsiiProxy_GoogleComputeResourcePolicyGroupPlacementPolicyOutputReferenc
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference)SetTpuTopology(val *string) {
+	if err := j.validateSetTpuTopologyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tpuTopology",
 		val,
 	)
 }
@@ -571,10 +641,26 @@ func (g *jsiiProxy_GoogleComputeResourcePolicyGroupPlacementPolicyOutputReferenc
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference) ResetGpuTopology() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetGpuTopology",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference) ResetMaxDistance() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetMaxDistance",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference) ResetTpuTopology() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTpuTopology",
 		nil, // no parameters
 	)
 }

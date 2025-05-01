@@ -92,6 +92,10 @@ func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyOutputReference) validateSetRequestCoalescingParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyOutputReference) validateSetServeWhileStaleParameters(val *float64) error {
 	return nil
 }

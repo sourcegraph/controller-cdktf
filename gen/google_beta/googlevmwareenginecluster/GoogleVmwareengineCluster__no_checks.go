@@ -72,6 +72,10 @@ func (g *jsiiProxy_GoogleVmwareengineCluster) validateOverrideLogicalIdParameter
 	return nil
 }
 
+func (g *jsiiProxy_GoogleVmwareengineCluster) validatePutAutoscalingSettingsParameters(value *GoogleVmwareengineClusterAutoscalingSettings) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleVmwareengineCluster) validatePutNodeTypeConfigsParameters(value interface{}) error {
 	return nil
 }

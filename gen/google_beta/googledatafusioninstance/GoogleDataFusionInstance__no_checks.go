@@ -176,6 +176,10 @@ func (j *jsiiProxy_GoogleDataFusionInstance) validateSetRegionParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataFusionInstance) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataFusionInstance) validateSetTypeParameters(val *string) error {
 	return nil
 }

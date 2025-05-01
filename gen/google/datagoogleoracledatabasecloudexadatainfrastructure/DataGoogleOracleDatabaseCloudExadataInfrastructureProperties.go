@@ -1,0 +1,6 @@
+package datagoogleoracledatabasecloudexadatainfrastructure
+
+
+type DataGoogleOracleDatabaseCloudExadataInfrastructureProperties struct {
+}
+

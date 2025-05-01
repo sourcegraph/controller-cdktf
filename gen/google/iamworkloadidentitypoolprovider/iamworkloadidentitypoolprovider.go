@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/iamworkloadidentitypoolprovider/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/iam_workload_identity_pool_provider google_iam_workload_identity_pool_provider}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/iam_workload_identity_pool_provider google_iam_workload_identity_pool_provider}.
 type IamWorkloadIdentityPoolProvider interface {
 	cdktf.TerraformResource
 	AttributeCondition() *string
@@ -95,6 +95,8 @@ type IamWorkloadIdentityPoolProvider interface {
 	WorkloadIdentityPoolProviderId() *string
 	SetWorkloadIdentityPoolProviderId(val *string)
 	WorkloadIdentityPoolProviderIdInput() *string
+	X509() IamWorkloadIdentityPoolProviderX509OutputReference
+	X509Input() *IamWorkloadIdentityPoolProviderX509
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -142,6 +144,7 @@ type IamWorkloadIdentityPoolProvider interface {
 	PutOidc(value *IamWorkloadIdentityPoolProviderOidc)
 	PutSaml(value *IamWorkloadIdentityPoolProviderSaml)
 	PutTimeouts(value *IamWorkloadIdentityPoolProviderTimeouts)
+	PutX509(value *IamWorkloadIdentityPoolProviderX509)
 	ResetAttributeCondition()
 	ResetAttributeMapping()
 	ResetAws()
@@ -156,6 +159,7 @@ type IamWorkloadIdentityPoolProvider interface {
 	ResetProject()
 	ResetSaml()
 	ResetTimeouts()
+	ResetX509()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -614,8 +618,28 @@ func (j *jsiiProxy_IamWorkloadIdentityPoolProvider) WorkloadIdentityPoolProvider
 	return returns
 }
 
+func (j *jsiiProxy_IamWorkloadIdentityPoolProvider) X509() IamWorkloadIdentityPoolProviderX509OutputReference {
+	var returns IamWorkloadIdentityPoolProviderX509OutputReference
+	_jsii_.Get(
+		j,
+		"x509",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/iam_workload_identity_pool_provider google_iam_workload_identity_pool_provider} Resource.
+func (j *jsiiProxy_IamWorkloadIdentityPoolProvider) X509Input() *IamWorkloadIdentityPoolProviderX509 {
+	var returns *IamWorkloadIdentityPoolProviderX509
+	_jsii_.Get(
+		j,
+		"x509Input",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/iam_workload_identity_pool_provider google_iam_workload_identity_pool_provider} Resource.
 func NewIamWorkloadIdentityPoolProvider(scope constructs.Construct, id *string, config *IamWorkloadIdentityPoolProviderConfig) IamWorkloadIdentityPoolProvider {
 	_init_.Initialize()
 
@@ -633,7 +657,7 @@ func NewIamWorkloadIdentityPoolProvider(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/iam_workload_identity_pool_provider google_iam_workload_identity_pool_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/iam_workload_identity_pool_provider google_iam_workload_identity_pool_provider} Resource.
 func NewIamWorkloadIdentityPoolProvider_Override(i IamWorkloadIdentityPoolProvider, scope constructs.Construct, id *string, config *IamWorkloadIdentityPoolProviderConfig) {
 	_init_.Initialize()
 
@@ -1208,6 +1232,17 @@ func (i *jsiiProxy_IamWorkloadIdentityPoolProvider) PutTimeouts(value *IamWorklo
 	)
 }
 
+func (i *jsiiProxy_IamWorkloadIdentityPoolProvider) PutX509(value *IamWorkloadIdentityPoolProviderX509) {
+	if err := i.validatePutX509Parameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"putX509",
+		[]interface{}{value},
+	)
+}
+
 func (i *jsiiProxy_IamWorkloadIdentityPoolProvider) ResetAttributeCondition() {
 	_jsii_.InvokeVoid(
 		i,
@@ -1300,6 +1335,14 @@ func (i *jsiiProxy_IamWorkloadIdentityPoolProvider) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IamWorkloadIdentityPoolProvider) ResetX509() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetX509",
 		nil, // no parameters
 	)
 }

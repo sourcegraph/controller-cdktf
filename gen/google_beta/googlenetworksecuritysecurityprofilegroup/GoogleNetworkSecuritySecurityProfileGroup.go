@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlenetworksecuritysecurityprofilegroup/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_network_security_security_profile_group google_network_security_security_profile_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_network_security_security_profile_group google_network_security_security_profile_group}.
 type GoogleNetworkSecuritySecurityProfileGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -25,6 +25,12 @@ type GoogleNetworkSecuritySecurityProfileGroup interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreateTime() *string
+	CustomInterceptProfile() *string
+	SetCustomInterceptProfile(val *string)
+	CustomInterceptProfileInput() *string
+	CustomMirroringProfile() *string
+	SetCustomMirroringProfile(val *string)
+	CustomMirroringProfileInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -130,6 +136,8 @@ type GoogleNetworkSecuritySecurityProfileGroup interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *GoogleNetworkSecuritySecurityProfileGroupTimeouts)
+	ResetCustomInterceptProfile()
+	ResetCustomMirroringProfile()
 	ResetDescription()
 	ResetId()
 	ResetLabels()
@@ -203,6 +211,46 @@ func (j *jsiiProxy_GoogleNetworkSecuritySecurityProfileGroup) CreateTime() *stri
 	_jsii_.Get(
 		j,
 		"createTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkSecuritySecurityProfileGroup) CustomInterceptProfile() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customInterceptProfile",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkSecuritySecurityProfileGroup) CustomInterceptProfileInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customInterceptProfileInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkSecuritySecurityProfileGroup) CustomMirroringProfile() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customMirroringProfile",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkSecuritySecurityProfileGroup) CustomMirroringProfileInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customMirroringProfileInput",
 		&returns,
 	)
 	return returns
@@ -529,7 +577,7 @@ func (j *jsiiProxy_GoogleNetworkSecuritySecurityProfileGroup) UpdateTime() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_network_security_security_profile_group google_network_security_security_profile_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_network_security_security_profile_group google_network_security_security_profile_group} Resource.
 func NewGoogleNetworkSecuritySecurityProfileGroup(scope constructs.Construct, id *string, config *GoogleNetworkSecuritySecurityProfileGroupConfig) GoogleNetworkSecuritySecurityProfileGroup {
 	_init_.Initialize()
 
@@ -547,7 +595,7 @@ func NewGoogleNetworkSecuritySecurityProfileGroup(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_network_security_security_profile_group google_network_security_security_profile_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_network_security_security_profile_group google_network_security_security_profile_group} Resource.
 func NewGoogleNetworkSecuritySecurityProfileGroup_Override(g GoogleNetworkSecuritySecurityProfileGroup, scope constructs.Construct, id *string, config *GoogleNetworkSecuritySecurityProfileGroupConfig) {
 	_init_.Initialize()
 
@@ -576,6 +624,28 @@ func (j *jsiiProxy_GoogleNetworkSecuritySecurityProfileGroup)SetCount(val interf
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleNetworkSecuritySecurityProfileGroup)SetCustomInterceptProfile(val *string) {
+	if err := j.validateSetCustomInterceptProfileParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customInterceptProfile",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleNetworkSecuritySecurityProfileGroup)SetCustomMirroringProfile(val *string) {
+	if err := j.validateSetCustomMirroringProfileParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customMirroringProfile",
 		val,
 	)
 }
@@ -1064,6 +1134,22 @@ func (g *jsiiProxy_GoogleNetworkSecuritySecurityProfileGroup) PutTimeouts(value 
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleNetworkSecuritySecurityProfileGroup) ResetCustomInterceptProfile() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCustomInterceptProfile",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleNetworkSecuritySecurityProfileGroup) ResetCustomMirroringProfile() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCustomMirroringProfile",
+		nil, // no parameters
 	)
 }
 

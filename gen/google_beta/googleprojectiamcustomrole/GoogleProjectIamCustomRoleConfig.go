@@ -23,32 +23,32 @@ type GoogleProjectIamCustomRoleConfig struct {
 	//
 	// At least one permission must be specified.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_project_iam_custom_role#permissions GoogleProjectIamCustomRole#permissions}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_project_iam_custom_role#permissions GoogleProjectIamCustomRole#permissions}
 	Permissions *[]*string `field:"required" json:"permissions" yaml:"permissions"`
 	// The camel case role id to use for this role. Cannot contain - characters.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_project_iam_custom_role#role_id GoogleProjectIamCustomRole#role_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_project_iam_custom_role#role_id GoogleProjectIamCustomRole#role_id}
 	RoleId *string `field:"required" json:"roleId" yaml:"roleId"`
 	// A human-readable title for the role.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_project_iam_custom_role#title GoogleProjectIamCustomRole#title}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_project_iam_custom_role#title GoogleProjectIamCustomRole#title}
 	Title *string `field:"required" json:"title" yaml:"title"`
 	// A human-readable description for the role.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_project_iam_custom_role#description GoogleProjectIamCustomRole#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_project_iam_custom_role#description GoogleProjectIamCustomRole#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_project_iam_custom_role#id GoogleProjectIamCustomRole#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_project_iam_custom_role#id GoogleProjectIamCustomRole#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// The project that the service account will be created in. Defaults to the provider project configuration.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_project_iam_custom_role#project GoogleProjectIamCustomRole#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_project_iam_custom_role#project GoogleProjectIamCustomRole#project}
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// The current launch stage of the role. Defaults to GA.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_project_iam_custom_role#stage GoogleProjectIamCustomRole#stage}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_project_iam_custom_role#stage GoogleProjectIamCustomRole#stage}
 	Stage *string `field:"optional" json:"stage" yaml:"stage"`
 }
 

@@ -9,11 +9,14 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleprojectservice/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_project_service google_project_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_project_service google_project_service}.
 type GoogleProjectService interface {
 	cdktf.TerraformResource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	CheckIfServiceHasUsageOnDestroy() interface{}
+	SetCheckIfServiceHasUsageOnDestroy(val interface{})
+	CheckIfServiceHasUsageOnDestroyInput() interface{}
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -119,6 +122,7 @@ type GoogleProjectService interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *GoogleProjectServiceTimeouts)
+	ResetCheckIfServiceHasUsageOnDestroy()
 	ResetDisableDependentServices()
 	ResetDisableOnDestroy()
 	ResetId()
@@ -150,6 +154,26 @@ func (j *jsiiProxy_GoogleProjectService) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProjectService) CheckIfServiceHasUsageOnDestroy() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"checkIfServiceHasUsageOnDestroy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProjectService) CheckIfServiceHasUsageOnDestroyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"checkIfServiceHasUsageOnDestroyInput",
 		&returns,
 	)
 	return returns
@@ -426,7 +450,7 @@ func (j *jsiiProxy_GoogleProjectService) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_project_service google_project_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_project_service google_project_service} Resource.
 func NewGoogleProjectService(scope constructs.Construct, id *string, config *GoogleProjectServiceConfig) GoogleProjectService {
 	_init_.Initialize()
 
@@ -444,7 +468,7 @@ func NewGoogleProjectService(scope constructs.Construct, id *string, config *Goo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_project_service google_project_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_project_service google_project_service} Resource.
 func NewGoogleProjectService_Override(g GoogleProjectService, scope constructs.Construct, id *string, config *GoogleProjectServiceConfig) {
 	_init_.Initialize()
 
@@ -452,6 +476,17 @@ func NewGoogleProjectService_Override(g GoogleProjectService, scope constructs.C
 		"@cdktf/provider-google-beta.googleProjectService.GoogleProjectService",
 		[]interface{}{scope, id, config},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GoogleProjectService)SetCheckIfServiceHasUsageOnDestroy(val interface{}) {
+	if err := j.validateSetCheckIfServiceHasUsageOnDestroyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"checkIfServiceHasUsageOnDestroy",
+		val,
 	)
 }
 
@@ -939,6 +974,14 @@ func (g *jsiiProxy_GoogleProjectService) PutTimeouts(value *GoogleProjectService
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleProjectService) ResetCheckIfServiceHasUsageOnDestroy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCheckIfServiceHasUsageOnDestroy",
+		nil, // no parameters
 	)
 }
 

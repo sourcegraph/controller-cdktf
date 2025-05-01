@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlesqluser/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_sql_user google_sql_user}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_sql_user google_sql_user}.
 type GoogleSqlUser interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -62,6 +62,12 @@ type GoogleSqlUser interface {
 	PasswordInput() *string
 	PasswordPolicy() GoogleSqlUserPasswordPolicyOutputReference
 	PasswordPolicyInput() *GoogleSqlUserPasswordPolicy
+	PasswordWo() *string
+	SetPasswordWo(val *string)
+	PasswordWoInput() *string
+	PasswordWoVersion() *float64
+	SetPasswordWoVersion(val *float64)
+	PasswordWoVersionInput() *float64
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -140,6 +146,8 @@ type GoogleSqlUser interface {
 	ResetOverrideLogicalId()
 	ResetPassword()
 	ResetPasswordPolicy()
+	ResetPasswordWo()
+	ResetPasswordWoVersion()
 	ResetProject()
 	ResetTimeouts()
 	ResetType()
@@ -401,6 +409,46 @@ func (j *jsiiProxy_GoogleSqlUser) PasswordPolicyInput() *GoogleSqlUserPasswordPo
 	return returns
 }
 
+func (j *jsiiProxy_GoogleSqlUser) PasswordWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlUser) PasswordWoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordWoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlUser) PasswordWoVersion() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"passwordWoVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlUser) PasswordWoVersionInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"passwordWoVersionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleSqlUser) Project() *string {
 	var returns *string
 	_jsii_.Get(
@@ -532,7 +580,7 @@ func (j *jsiiProxy_GoogleSqlUser) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_sql_user google_sql_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_sql_user google_sql_user} Resource.
 func NewGoogleSqlUser(scope constructs.Construct, id *string, config *GoogleSqlUserConfig) GoogleSqlUser {
 	_init_.Initialize()
 
@@ -550,7 +598,7 @@ func NewGoogleSqlUser(scope constructs.Construct, id *string, config *GoogleSqlU
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_sql_user google_sql_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_sql_user google_sql_user} Resource.
 func NewGoogleSqlUser_Override(g GoogleSqlUser, scope constructs.Construct, id *string, config *GoogleSqlUserConfig) {
 	_init_.Initialize()
 
@@ -672,6 +720,28 @@ func (j *jsiiProxy_GoogleSqlUser)SetPassword(val *string) {
 	_jsii_.Set(
 		j,
 		"password",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleSqlUser)SetPasswordWo(val *string) {
+	if err := j.validateSetPasswordWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"passwordWo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleSqlUser)SetPasswordWoVersion(val *float64) {
+	if err := j.validateSetPasswordWoVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"passwordWoVersion",
 		val,
 	)
 }
@@ -1136,6 +1206,22 @@ func (g *jsiiProxy_GoogleSqlUser) ResetPasswordPolicy() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetPasswordPolicy",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleSqlUser) ResetPasswordWo() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPasswordWo",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleSqlUser) ResetPasswordWoVersion() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPasswordWoVersion",
 		nil, // no parameters
 	)
 }

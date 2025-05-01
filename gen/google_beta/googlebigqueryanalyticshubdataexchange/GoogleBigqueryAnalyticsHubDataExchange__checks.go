@@ -204,6 +204,17 @@ func (g *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchange) validateOverrideLogic
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchange) validatePutSharingEnvironmentConfigParameters(value *GoogleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchange) validatePutTimeoutsParameters(value *GoogleBigqueryAnalyticsHubDataExchangeTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

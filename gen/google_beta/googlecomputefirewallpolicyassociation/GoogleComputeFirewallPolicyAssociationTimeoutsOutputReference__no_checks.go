@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleComputeFirewallPolicyAssociationTimeoutsOutputReference
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeFirewallPolicyAssociationTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
+	return nil
+}
+
 func validateNewGoogleComputeFirewallPolicyAssociationTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

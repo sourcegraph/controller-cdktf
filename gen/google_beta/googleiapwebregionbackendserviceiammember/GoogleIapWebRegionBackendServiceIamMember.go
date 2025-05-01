@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleiapwebregionbackendserviceiammember/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_iap_web_region_backend_service_iam_member google_iap_web_region_backend_service_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_iap_web_region_backend_service_iam_member google_iap_web_region_backend_service_iam_member}.
 type GoogleIapWebRegionBackendServiceIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -459,7 +459,7 @@ func (j *jsiiProxy_GoogleIapWebRegionBackendServiceIamMember) WebRegionBackendSe
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_iap_web_region_backend_service_iam_member google_iap_web_region_backend_service_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_iap_web_region_backend_service_iam_member google_iap_web_region_backend_service_iam_member} Resource.
 func NewGoogleIapWebRegionBackendServiceIamMember(scope constructs.Construct, id *string, config *GoogleIapWebRegionBackendServiceIamMemberConfig) GoogleIapWebRegionBackendServiceIamMember {
 	_init_.Initialize()
 
@@ -477,7 +477,7 @@ func NewGoogleIapWebRegionBackendServiceIamMember(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_iap_web_region_backend_service_iam_member google_iap_web_region_backend_service_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_iap_web_region_backend_service_iam_member google_iap_web_region_backend_service_iam_member} Resource.
 func NewGoogleIapWebRegionBackendServiceIamMember_Override(g GoogleIapWebRegionBackendServiceIamMember, scope constructs.Construct, id *string, config *GoogleIapWebRegionBackendServiceIamMemberConfig) {
 	_init_.Initialize()
 

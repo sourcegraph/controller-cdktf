@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/netappactivedirectory/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/netapp_active_directory google_netapp_active_directory}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/netapp_active_directory google_netapp_active_directory}.
 type NetappActiveDirectory interface {
 	cdktf.TerraformResource
 	Administrators() *[]*string
@@ -883,7 +883,7 @@ func (j *jsiiProxy_NetappActiveDirectory) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/netapp_active_directory google_netapp_active_directory} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/netapp_active_directory google_netapp_active_directory} Resource.
 func NewNetappActiveDirectory(scope constructs.Construct, id *string, config *NetappActiveDirectoryConfig) NetappActiveDirectory {
 	_init_.Initialize()
 
@@ -901,7 +901,7 @@ func NewNetappActiveDirectory(scope constructs.Construct, id *string, config *Ne
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/netapp_active_directory google_netapp_active_directory} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/netapp_active_directory google_netapp_active_directory} Resource.
 func NewNetappActiveDirectory_Override(n NetappActiveDirectory, scope constructs.Construct, id *string, config *NetappActiveDirectoryConfig) {
 	_init_.Initialize()
 

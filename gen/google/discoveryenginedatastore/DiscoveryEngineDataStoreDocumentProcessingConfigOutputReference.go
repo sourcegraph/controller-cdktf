@@ -10,6 +10,8 @@ import (
 
 type DiscoveryEngineDataStoreDocumentProcessingConfigOutputReference interface {
 	cdktf.ComplexObject
+	ChunkingConfig() DiscoveryEngineDataStoreDocumentProcessingConfigChunkingConfigOutputReference
+	ChunkingConfigInput() *DiscoveryEngineDataStoreDocumentProcessingConfigChunkingConfig
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -66,8 +68,10 @@ type DiscoveryEngineDataStoreDocumentProcessingConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutChunkingConfig(value *DiscoveryEngineDataStoreDocumentProcessingConfigChunkingConfig)
 	PutDefaultParsingConfig(value *DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfig)
 	PutParsingConfigOverrides(value interface{})
+	ResetChunkingConfig()
 	ResetDefaultParsingConfig()
 	ResetParsingConfigOverrides()
 	// Produce the Token's value at resolution time.
@@ -83,6 +87,26 @@ type DiscoveryEngineDataStoreDocumentProcessingConfigOutputReference interface {
 // The jsii proxy struct for DiscoveryEngineDataStoreDocumentProcessingConfigOutputReference
 type jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigOutputReference) ChunkingConfig() DiscoveryEngineDataStoreDocumentProcessingConfigChunkingConfigOutputReference {
+	var returns DiscoveryEngineDataStoreDocumentProcessingConfigChunkingConfigOutputReference
+	_jsii_.Get(
+		j,
+		"chunkingConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigOutputReference) ChunkingConfigInput() *DiscoveryEngineDataStoreDocumentProcessingConfigChunkingConfig {
+	var returns *DiscoveryEngineDataStoreDocumentProcessingConfigChunkingConfig
+	_jsii_.Get(
+		j,
+		"chunkingConfigInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -474,6 +498,17 @@ func (d *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigOutputReferen
 	return returns
 }
 
+func (d *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigOutputReference) PutChunkingConfig(value *DiscoveryEngineDataStoreDocumentProcessingConfigChunkingConfig) {
+	if err := d.validatePutChunkingConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putChunkingConfig",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigOutputReference) PutDefaultParsingConfig(value *DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfig) {
 	if err := d.validatePutDefaultParsingConfigParameters(value); err != nil {
 		panic(err)
@@ -493,6 +528,14 @@ func (d *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigOutputReferen
 		d,
 		"putParsingConfigOverrides",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigOutputReference) ResetChunkingConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetChunkingConfig",
+		nil, // no parameters
 	)
 }
 

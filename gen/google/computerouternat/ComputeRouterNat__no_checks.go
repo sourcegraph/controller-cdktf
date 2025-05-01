@@ -140,6 +140,10 @@ func (j *jsiiProxy_ComputeRouterNat) validateSetIdParameters(val *string) error 
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRouterNat) validateSetInitialNatIpsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRouterNat) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
@@ -193,6 +197,10 @@ func (j *jsiiProxy_ComputeRouterNat) validateSetTcpTimeWaitTimeoutSecParameters(
 }
 
 func (j *jsiiProxy_ComputeRouterNat) validateSetTcpTransitoryIdleTimeoutSecParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeRouterNat) validateSetTypeParameters(val *string) error {
 	return nil
 }
 

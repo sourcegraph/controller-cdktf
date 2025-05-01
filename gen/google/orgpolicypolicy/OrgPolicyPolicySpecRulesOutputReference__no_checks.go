@@ -80,6 +80,10 @@ func (j *jsiiProxy_OrgPolicyPolicySpecRulesOutputReference) validateSetInternalV
 	return nil
 }
 
+func (j *jsiiProxy_OrgPolicyPolicySpecRulesOutputReference) validateSetParametersParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_OrgPolicyPolicySpecRulesOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

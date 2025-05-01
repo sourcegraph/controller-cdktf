@@ -64,6 +64,14 @@ func (j *jsiiProxy_GoogleComputeRegionBackendServiceLogConfigOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRegionBackendServiceLogConfigOutputReference) validateSetOptionalFieldsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeRegionBackendServiceLogConfigOutputReference) validateSetOptionalModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRegionBackendServiceLogConfigOutputReference) validateSetSampleRateParameters(val *float64) error {
 	return nil
 }

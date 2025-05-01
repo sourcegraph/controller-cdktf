@@ -10,6 +10,8 @@ import (
 
 type GoogleSpannerInstanceAutoscalingConfigOutputReference interface {
 	cdktf.ComplexObject
+	AsymmetricAutoscalingOptions() GoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsList
+	AsymmetricAutoscalingOptionsInput() interface{}
 	AutoscalingLimits() GoogleSpannerInstanceAutoscalingConfigAutoscalingLimitsOutputReference
 	AutoscalingLimitsInput() *GoogleSpannerInstanceAutoscalingConfigAutoscalingLimits
 	AutoscalingTargets() GoogleSpannerInstanceAutoscalingConfigAutoscalingTargetsOutputReference
@@ -65,8 +67,10 @@ type GoogleSpannerInstanceAutoscalingConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAsymmetricAutoscalingOptions(value interface{})
 	PutAutoscalingLimits(value *GoogleSpannerInstanceAutoscalingConfigAutoscalingLimits)
 	PutAutoscalingTargets(value *GoogleSpannerInstanceAutoscalingConfigAutoscalingTargets)
+	ResetAsymmetricAutoscalingOptions()
 	ResetAutoscalingLimits()
 	ResetAutoscalingTargets()
 	// Produce the Token's value at resolution time.
@@ -82,6 +86,26 @@ type GoogleSpannerInstanceAutoscalingConfigOutputReference interface {
 // The jsii proxy struct for GoogleSpannerInstanceAutoscalingConfigOutputReference
 type jsiiProxy_GoogleSpannerInstanceAutoscalingConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GoogleSpannerInstanceAutoscalingConfigOutputReference) AsymmetricAutoscalingOptions() GoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsList {
+	var returns GoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsList
+	_jsii_.Get(
+		j,
+		"asymmetricAutoscalingOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSpannerInstanceAutoscalingConfigOutputReference) AsymmetricAutoscalingOptionsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"asymmetricAutoscalingOptionsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleSpannerInstanceAutoscalingConfigOutputReference) AutoscalingLimits() GoogleSpannerInstanceAutoscalingConfigAutoscalingLimitsOutputReference {
@@ -463,6 +487,17 @@ func (g *jsiiProxy_GoogleSpannerInstanceAutoscalingConfigOutputReference) Interp
 	return returns
 }
 
+func (g *jsiiProxy_GoogleSpannerInstanceAutoscalingConfigOutputReference) PutAsymmetricAutoscalingOptions(value interface{}) {
+	if err := g.validatePutAsymmetricAutoscalingOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAsymmetricAutoscalingOptions",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleSpannerInstanceAutoscalingConfigOutputReference) PutAutoscalingLimits(value *GoogleSpannerInstanceAutoscalingConfigAutoscalingLimits) {
 	if err := g.validatePutAutoscalingLimitsParameters(value); err != nil {
 		panic(err)
@@ -482,6 +517,14 @@ func (g *jsiiProxy_GoogleSpannerInstanceAutoscalingConfigOutputReference) PutAut
 		g,
 		"putAutoscalingTargets",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleSpannerInstanceAutoscalingConfigOutputReference) ResetAsymmetricAutoscalingOptions() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAsymmetricAutoscalingOptions",
+		nil, // no parameters
 	)
 }
 

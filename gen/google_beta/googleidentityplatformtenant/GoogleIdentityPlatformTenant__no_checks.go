@@ -72,6 +72,10 @@ func (g *jsiiProxy_GoogleIdentityPlatformTenant) validateOverrideLogicalIdParame
 	return nil
 }
 
+func (g *jsiiProxy_GoogleIdentityPlatformTenant) validatePutClientParameters(value *GoogleIdentityPlatformTenantClient) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIdentityPlatformTenant) validatePutTimeoutsParameters(value *GoogleIdentityPlatformTenantTimeouts) error {
 	return nil
 }

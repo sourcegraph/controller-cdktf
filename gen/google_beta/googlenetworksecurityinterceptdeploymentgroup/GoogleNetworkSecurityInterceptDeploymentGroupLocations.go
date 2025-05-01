@@ -1,0 +1,6 @@
+package googlenetworksecurityinterceptdeploymentgroup
+
+
+type GoogleNetworkSecurityInterceptDeploymentGroupLocations struct {
+}
+

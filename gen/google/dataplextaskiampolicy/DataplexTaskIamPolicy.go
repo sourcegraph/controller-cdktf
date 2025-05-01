@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/dataplextaskiampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/dataplex_task_iam_policy google_dataplex_task_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/dataplex_task_iam_policy google_dataplex_task_iam_policy}.
 type DataplexTaskIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -435,7 +435,7 @@ func (j *jsiiProxy_DataplexTaskIamPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/dataplex_task_iam_policy google_dataplex_task_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/dataplex_task_iam_policy google_dataplex_task_iam_policy} Resource.
 func NewDataplexTaskIamPolicy(scope constructs.Construct, id *string, config *DataplexTaskIamPolicyConfig) DataplexTaskIamPolicy {
 	_init_.Initialize()
 
@@ -453,7 +453,7 @@ func NewDataplexTaskIamPolicy(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/dataplex_task_iam_policy google_dataplex_task_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/dataplex_task_iam_policy google_dataplex_task_iam_policy} Resource.
 func NewDataplexTaskIamPolicy_Override(d DataplexTaskIamPolicy, scope constructs.Construct, id *string, config *DataplexTaskIamPolicyConfig) {
 	_init_.Initialize()
 

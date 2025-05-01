@@ -44,6 +44,9 @@ type GoogleDatastreamConnectionProfileOracleProfileOutputReference interface {
 	Port() *float64
 	SetPort(val *float64)
 	PortInput() *float64
+	SecretManagerStoredPassword() *string
+	SetSecretManagerStoredPassword(val *string)
+	SecretManagerStoredPasswordInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -80,7 +83,9 @@ type GoogleDatastreamConnectionProfileOracleProfileOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetConnectionAttributes()
+	ResetPassword()
 	ResetPort()
+	ResetSecretManagerStoredPassword()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -246,6 +251,26 @@ func (j *jsiiProxy_GoogleDatastreamConnectionProfileOracleProfileOutputReference
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDatastreamConnectionProfileOracleProfileOutputReference) SecretManagerStoredPassword() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secretManagerStoredPassword",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDatastreamConnectionProfileOracleProfileOutputReference) SecretManagerStoredPasswordInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secretManagerStoredPasswordInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleDatastreamConnectionProfileOracleProfileOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -398,6 +423,17 @@ func (j *jsiiProxy_GoogleDatastreamConnectionProfileOracleProfileOutputReference
 	_jsii_.Set(
 		j,
 		"port",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDatastreamConnectionProfileOracleProfileOutputReference)SetSecretManagerStoredPassword(val *string) {
+	if err := j.validateSetSecretManagerStoredPasswordParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"secretManagerStoredPassword",
 		val,
 	)
 }
@@ -629,10 +665,26 @@ func (g *jsiiProxy_GoogleDatastreamConnectionProfileOracleProfileOutputReference
 	)
 }
 
+func (g *jsiiProxy_GoogleDatastreamConnectionProfileOracleProfileOutputReference) ResetPassword() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPassword",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleDatastreamConnectionProfileOracleProfileOutputReference) ResetPort() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetPort",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDatastreamConnectionProfileOracleProfileOutputReference) ResetSecretManagerStoredPassword() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSecretManagerStoredPassword",
 		nil, // no parameters
 	)
 }

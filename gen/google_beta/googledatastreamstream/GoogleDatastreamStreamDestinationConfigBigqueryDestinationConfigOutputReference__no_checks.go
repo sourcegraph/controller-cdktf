@@ -44,6 +44,18 @@ func (g *jsiiProxy_GoogleDatastreamStreamDestinationConfigBigqueryDestinationCon
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDatastreamStreamDestinationConfigBigqueryDestinationConfigOutputReference) validatePutAppendOnlyParameters(value *GoogleDatastreamStreamDestinationConfigBigqueryDestinationConfigAppendOnly) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDatastreamStreamDestinationConfigBigqueryDestinationConfigOutputReference) validatePutBlmtConfigParameters(value *GoogleDatastreamStreamDestinationConfigBigqueryDestinationConfigBlmtConfig) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDatastreamStreamDestinationConfigBigqueryDestinationConfigOutputReference) validatePutMergeParameters(value *GoogleDatastreamStreamDestinationConfigBigqueryDestinationConfigMerge) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDatastreamStreamDestinationConfigBigqueryDestinationConfigOutputReference) validatePutSingleTargetDatasetParameters(value *GoogleDatastreamStreamDestinationConfigBigqueryDestinationConfigSingleTargetDataset) error {
 	return nil
 }

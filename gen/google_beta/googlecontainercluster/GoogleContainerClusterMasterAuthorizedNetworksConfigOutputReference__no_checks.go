@@ -68,6 +68,10 @@ func (j *jsiiProxy_GoogleContainerClusterMasterAuthorizedNetworksConfigOutputRef
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerClusterMasterAuthorizedNetworksConfigOutputReference) validateSetPrivateEndpointEnforcementEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerClusterMasterAuthorizedNetworksConfigOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

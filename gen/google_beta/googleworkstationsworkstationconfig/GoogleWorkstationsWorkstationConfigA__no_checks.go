@@ -72,6 +72,10 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validateOverrideLogical
 	return nil
 }
 
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validatePutAllowedPortsParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validatePutContainerParameters(value *GoogleWorkstationsWorkstationConfigContainer) error {
 	return nil
 }
@@ -157,6 +161,10 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validateSetLifecyclePar
 }
 
 func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validateSetLocationParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validateSetMaxUsableWorkstationsParameters(val *float64) error {
 	return nil
 }
 

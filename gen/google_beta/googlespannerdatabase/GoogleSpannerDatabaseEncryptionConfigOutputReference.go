@@ -32,6 +32,9 @@ type GoogleSpannerDatabaseEncryptionConfigOutputReference interface {
 	KmsKeyName() *string
 	SetKmsKeyName(val *string)
 	KmsKeyNameInput() *string
+	KmsKeyNames() *[]*string
+	SetKmsKeyNames(val *[]*string)
+	KmsKeyNamesInput() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -64,6 +67,8 @@ type GoogleSpannerDatabaseEncryptionConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetKmsKeyName()
+	ResetKmsKeyNames()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -144,6 +149,26 @@ func (j *jsiiProxy_GoogleSpannerDatabaseEncryptionConfigOutputReference) KmsKeyN
 	_jsii_.Get(
 		j,
 		"kmsKeyNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSpannerDatabaseEncryptionConfigOutputReference) KmsKeyNames() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"kmsKeyNames",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSpannerDatabaseEncryptionConfigOutputReference) KmsKeyNamesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"kmsKeyNamesInput",
 		&returns,
 	)
 	return returns
@@ -237,6 +262,17 @@ func (j *jsiiProxy_GoogleSpannerDatabaseEncryptionConfigOutputReference)SetKmsKe
 	_jsii_.Set(
 		j,
 		"kmsKeyName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleSpannerDatabaseEncryptionConfigOutputReference)SetKmsKeyNames(val *[]*string) {
+	if err := j.validateSetKmsKeyNamesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kmsKeyNames",
 		val,
 	)
 }
@@ -447,6 +483,22 @@ func (g *jsiiProxy_GoogleSpannerDatabaseEncryptionConfigOutputReference) Interpo
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleSpannerDatabaseEncryptionConfigOutputReference) ResetKmsKeyName() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetKmsKeyName",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleSpannerDatabaseEncryptionConfigOutputReference) ResetKmsKeyNames() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetKmsKeyNames",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleSpannerDatabaseEncryptionConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

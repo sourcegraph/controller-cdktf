@@ -1,0 +1,6 @@
+package datagooglevmwareengineprivatecloud
+
+
+type DataGoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettings struct {
+}
+

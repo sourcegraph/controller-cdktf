@@ -60,11 +60,19 @@ func (j *jsiiProxy_GoogleClouddeployTargetGkeOutputReference) validateSetComplex
 	return nil
 }
 
+func (j *jsiiProxy_GoogleClouddeployTargetGkeOutputReference) validateSetDnsEndpointParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleClouddeployTargetGkeOutputReference) validateSetInternalIpParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_GoogleClouddeployTargetGkeOutputReference) validateSetInternalValueParameters(val *GoogleClouddeployTargetGke) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleClouddeployTargetGkeOutputReference) validateSetProxyUrlParameters(val *string) error {
 	return nil
 }
 

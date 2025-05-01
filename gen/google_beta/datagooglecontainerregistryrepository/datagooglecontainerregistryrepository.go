@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglecontainerregistryrepository/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_container_registry_repository google_container_registry_repository}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_container_registry_repository google_container_registry_repository}.
 type DataGoogleContainerRegistryRepository interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -321,7 +321,7 @@ func (j *jsiiProxy_DataGoogleContainerRegistryRepository) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_container_registry_repository google_container_registry_repository} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_container_registry_repository google_container_registry_repository} Data Source.
 func NewDataGoogleContainerRegistryRepository(scope constructs.Construct, id *string, config *DataGoogleContainerRegistryRepositoryConfig) DataGoogleContainerRegistryRepository {
 	_init_.Initialize()
 
@@ -339,7 +339,7 @@ func NewDataGoogleContainerRegistryRepository(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_container_registry_repository google_container_registry_repository} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_container_registry_repository google_container_registry_repository} Data Source.
 func NewDataGoogleContainerRegistryRepository_Override(d DataGoogleContainerRegistryRepository, scope constructs.Construct, id *string, config *DataGoogleContainerRegistryRepositoryConfig) {
 	_init_.Initialize()
 

@@ -21,24 +21,24 @@ type GoogleFirebaseAppCheckRecaptchaEnterpriseConfigConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The ID of an [Web App](https://firebase.google.com/docs/reference/firebase-management/rest/v1beta1/projects.webApps#WebApp.FIELDS.app_id).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_firebase_app_check_recaptcha_enterprise_config#app_id GoogleFirebaseAppCheckRecaptchaEnterpriseConfig#app_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_firebase_app_check_recaptcha_enterprise_config#app_id GoogleFirebaseAppCheckRecaptchaEnterpriseConfig#app_id}
 	AppId *string `field:"required" json:"appId" yaml:"appId"`
 	// The score-based site key created in reCAPTCHA Enterprise used to invoke reCAPTCHA and generate the reCAPTCHA tokens for your application.
 	//
 	// **Important**: This is not the siteSecret (as it is in reCAPTCHA v3), but rather your score-based reCAPTCHA Enterprise site key.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_firebase_app_check_recaptcha_enterprise_config#site_key GoogleFirebaseAppCheckRecaptchaEnterpriseConfig#site_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_firebase_app_check_recaptcha_enterprise_config#site_key GoogleFirebaseAppCheckRecaptchaEnterpriseConfig#site_key}
 	SiteKey *string `field:"required" json:"siteKey" yaml:"siteKey"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_firebase_app_check_recaptcha_enterprise_config#id GoogleFirebaseAppCheckRecaptchaEnterpriseConfig#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_firebase_app_check_recaptcha_enterprise_config#id GoogleFirebaseAppCheckRecaptchaEnterpriseConfig#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_firebase_app_check_recaptcha_enterprise_config#project GoogleFirebaseAppCheckRecaptchaEnterpriseConfig#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_firebase_app_check_recaptcha_enterprise_config#project GoogleFirebaseAppCheckRecaptchaEnterpriseConfig#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_firebase_app_check_recaptcha_enterprise_config#timeouts GoogleFirebaseAppCheckRecaptchaEnterpriseConfig#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_firebase_app_check_recaptcha_enterprise_config#timeouts GoogleFirebaseAppCheckRecaptchaEnterpriseConfig#timeouts}
 	Timeouts *GoogleFirebaseAppCheckRecaptchaEnterpriseConfigTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 	// Specifies the duration for which App Check tokens exchanged from reCAPTCHA Enterprise artifacts will be valid.
 	//
@@ -46,7 +46,7 @@ type GoogleFirebaseAppCheckRecaptchaEnterpriseConfigConfig struct {
 	//
 	// A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.5s".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_firebase_app_check_recaptcha_enterprise_config#token_ttl GoogleFirebaseAppCheckRecaptchaEnterpriseConfig#token_ttl}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_firebase_app_check_recaptcha_enterprise_config#token_ttl GoogleFirebaseAppCheckRecaptchaEnterpriseConfig#token_ttl}
 	TokenTtl *string `field:"optional" json:"tokenTtl" yaml:"tokenTtl"`
 }
 

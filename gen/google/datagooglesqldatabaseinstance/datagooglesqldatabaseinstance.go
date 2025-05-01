@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagooglesqldatabaseinstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/sql_database_instance google_sql_database_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/sql_database_instance google_sql_database_instance}.
 type DataGoogleSqlDatabaseInstance interface {
 	cdktf.TerraformDataSource
 	AvailableMaintenanceVersions() *[]*string
@@ -70,6 +70,8 @@ type DataGoogleSqlDatabaseInstance interface {
 	RawOverrides() interface{}
 	Region() *string
 	ReplicaConfiguration() DataGoogleSqlDatabaseInstanceReplicaConfigurationList
+	ReplicaNames() *[]*string
+	ReplicationCluster() DataGoogleSqlDatabaseInstanceReplicationClusterList
 	RestoreBackupContext() DataGoogleSqlDatabaseInstanceRestoreBackupContextList
 	RootPassword() *string
 	SelfLink() *string
@@ -471,6 +473,26 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstance) ReplicaConfiguration() DataGoo
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstance) ReplicaNames() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"replicaNames",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstance) ReplicationCluster() DataGoogleSqlDatabaseInstanceReplicationClusterList {
+	var returns DataGoogleSqlDatabaseInstanceReplicationClusterList
+	_jsii_.Get(
+		j,
+		"replicationCluster",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleSqlDatabaseInstance) RestoreBackupContext() DataGoogleSqlDatabaseInstanceRestoreBackupContextList {
 	var returns DataGoogleSqlDatabaseInstanceRestoreBackupContextList
 	_jsii_.Get(
@@ -562,7 +584,7 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstance) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/sql_database_instance google_sql_database_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/sql_database_instance google_sql_database_instance} Data Source.
 func NewDataGoogleSqlDatabaseInstance(scope constructs.Construct, id *string, config *DataGoogleSqlDatabaseInstanceConfig) DataGoogleSqlDatabaseInstance {
 	_init_.Initialize()
 
@@ -580,7 +602,7 @@ func NewDataGoogleSqlDatabaseInstance(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/sql_database_instance google_sql_database_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/sql_database_instance google_sql_database_instance} Data Source.
 func NewDataGoogleSqlDatabaseInstance_Override(d DataGoogleSqlDatabaseInstance, scope constructs.Construct, id *string, config *DataGoogleSqlDatabaseInstanceConfig) {
 	_init_.Initialize()
 

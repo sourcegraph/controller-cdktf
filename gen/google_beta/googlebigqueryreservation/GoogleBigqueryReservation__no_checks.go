@@ -128,10 +128,6 @@ func (j *jsiiProxy_GoogleBigqueryReservation) validateSetLocationParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryReservation) validateSetMultiRegionAuxiliaryParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_GoogleBigqueryReservation) validateSetNameParameters(val *string) error {
 	return nil
 }
@@ -141,6 +137,10 @@ func (j *jsiiProxy_GoogleBigqueryReservation) validateSetProjectParameters(val *
 }
 
 func (j *jsiiProxy_GoogleBigqueryReservation) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleBigqueryReservation) validateSetSecondaryLocationParameters(val *string) error {
 	return nil
 }
 

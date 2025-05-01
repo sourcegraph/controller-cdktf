@@ -1,0 +1,6 @@
+package databasemigrationservicemigrationjob
+
+
+type DatabaseMigrationServiceMigrationJobStaticIpConnectivity struct {
+}
+

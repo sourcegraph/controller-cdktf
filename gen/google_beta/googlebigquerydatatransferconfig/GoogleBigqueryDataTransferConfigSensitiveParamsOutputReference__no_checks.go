@@ -64,6 +64,14 @@ func (j *jsiiProxy_GoogleBigqueryDataTransferConfigSensitiveParamsOutputReferenc
 	return nil
 }
 
+func (j *jsiiProxy_GoogleBigqueryDataTransferConfigSensitiveParamsOutputReference) validateSetSecretAccessKeyWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataTransferConfigSensitiveParamsOutputReference) validateSetSecretAccessKeyWoVersionParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBigqueryDataTransferConfigSensitiveParamsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputehavpngateway/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_ha_vpn_gateway google_compute_ha_vpn_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_ha_vpn_gateway google_compute_ha_vpn_gateway}.
 type GoogleComputeHaVpnGateway interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -31,6 +31,7 @@ type GoogleComputeHaVpnGateway interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -39,9 +40,16 @@ type GoogleComputeHaVpnGateway interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GatewayIpVersion() *string
+	SetGatewayIpVersion(val *string)
+	GatewayIpVersionInput() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	LabelFingerprint() *string
+	Labels() *map[string]*string
+	SetLabels(val *map[string]*string)
+	LabelsInput() *map[string]*string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -76,6 +84,7 @@ type GoogleComputeHaVpnGateway interface {
 	StackTypeInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -130,7 +139,9 @@ type GoogleComputeHaVpnGateway interface {
 	PutTimeouts(value *GoogleComputeHaVpnGatewayTimeouts)
 	PutVpnInterfaces(value interface{})
 	ResetDescription()
+	ResetGatewayIpVersion()
 	ResetId()
+	ResetLabels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -227,6 +238,16 @@ func (j *jsiiProxy_GoogleComputeHaVpnGateway) DescriptionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeHaVpnGateway) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeHaVpnGateway) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -257,6 +278,26 @@ func (j *jsiiProxy_GoogleComputeHaVpnGateway) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeHaVpnGateway) GatewayIpVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gatewayIpVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeHaVpnGateway) GatewayIpVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gatewayIpVersionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeHaVpnGateway) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -272,6 +313,36 @@ func (j *jsiiProxy_GoogleComputeHaVpnGateway) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeHaVpnGateway) LabelFingerprint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"labelFingerprint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeHaVpnGateway) Labels() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeHaVpnGateway) LabelsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labelsInput",
 		&returns,
 	)
 	return returns
@@ -447,6 +518,16 @@ func (j *jsiiProxy_GoogleComputeHaVpnGateway) TerraformGeneratorMetadata() *cdkt
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeHaVpnGateway) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeHaVpnGateway) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -508,7 +589,7 @@ func (j *jsiiProxy_GoogleComputeHaVpnGateway) VpnInterfacesInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_ha_vpn_gateway google_compute_ha_vpn_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_ha_vpn_gateway google_compute_ha_vpn_gateway} Resource.
 func NewGoogleComputeHaVpnGateway(scope constructs.Construct, id *string, config *GoogleComputeHaVpnGatewayConfig) GoogleComputeHaVpnGateway {
 	_init_.Initialize()
 
@@ -526,7 +607,7 @@ func NewGoogleComputeHaVpnGateway(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_compute_ha_vpn_gateway google_compute_ha_vpn_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_ha_vpn_gateway google_compute_ha_vpn_gateway} Resource.
 func NewGoogleComputeHaVpnGateway_Override(g GoogleComputeHaVpnGateway, scope constructs.Construct, id *string, config *GoogleComputeHaVpnGatewayConfig) {
 	_init_.Initialize()
 
@@ -586,6 +667,17 @@ func (j *jsiiProxy_GoogleComputeHaVpnGateway)SetForEach(val cdktf.ITerraformIter
 	)
 }
 
+func (j *jsiiProxy_GoogleComputeHaVpnGateway)SetGatewayIpVersion(val *string) {
+	if err := j.validateSetGatewayIpVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"gatewayIpVersion",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleComputeHaVpnGateway)SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
@@ -593,6 +685,17 @@ func (j *jsiiProxy_GoogleComputeHaVpnGateway)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeHaVpnGateway)SetLabels(val *map[string]*string) {
+	if err := j.validateSetLabelsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"labels",
 		val,
 	)
 }
@@ -1065,10 +1168,26 @@ func (g *jsiiProxy_GoogleComputeHaVpnGateway) ResetDescription() {
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeHaVpnGateway) ResetGatewayIpVersion() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetGatewayIpVersion",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeHaVpnGateway) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeHaVpnGateway) ResetLabels() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLabels",
 		nil, // no parameters
 	)
 }

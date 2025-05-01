@@ -80,6 +80,10 @@ func (j *jsiiProxy_GoogleBigqueryJobQueryOutputReference) validateSetComplexObje
 	return nil
 }
 
+func (j *jsiiProxy_GoogleBigqueryJobQueryOutputReference) validateSetContinuousParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBigqueryJobQueryOutputReference) validateSetCreateDispositionParameters(val *string) error {
 	return nil
 }

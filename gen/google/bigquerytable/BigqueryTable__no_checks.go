@@ -72,7 +72,15 @@ func (b *jsiiProxy_BigqueryTable) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
+func (b *jsiiProxy_BigqueryTable) validatePutBiglakeConfigurationParameters(value *BigqueryTableBiglakeConfiguration) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryTable) validatePutEncryptionConfigurationParameters(value *BigqueryTableEncryptionConfiguration) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigqueryTable) validatePutExternalCatalogTableOptionsParameters(value *BigqueryTableExternalCatalogTableOptions) error {
 	return nil
 }
 
@@ -85,6 +93,10 @@ func (b *jsiiProxy_BigqueryTable) validatePutMaterializedViewParameters(value *B
 }
 
 func (b *jsiiProxy_BigqueryTable) validatePutRangePartitioningParameters(value *BigqueryTableRangePartitioning) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigqueryTable) validatePutSchemaForeignTypeInfoParameters(value *BigqueryTableSchemaForeignTypeInfo) error {
 	return nil
 }
 
@@ -180,11 +192,19 @@ func (j *jsiiProxy_BigqueryTable) validateSetRequirePartitionFilterParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_BigqueryTable) validateSetResourceTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BigqueryTable) validateSetSchemaParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_BigqueryTable) validateSetTableIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_BigqueryTable) validateSetTableMetadataViewParameters(val *string) error {
 	return nil
 }
 

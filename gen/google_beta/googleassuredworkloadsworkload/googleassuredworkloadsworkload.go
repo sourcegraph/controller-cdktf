@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleassuredworkloadsworkload/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_assured_workloads_workload google_assured_workloads_workload}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_assured_workloads_workload google_assured_workloads_workload}.
 type GoogleAssuredWorkloadsWorkload interface {
 	cdktf.TerraformResource
 	BillingAccount() *string
@@ -80,6 +80,9 @@ type GoogleAssuredWorkloadsWorkload interface {
 	PartnerInput() *string
 	PartnerPermissions() GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference
 	PartnerPermissionsInput() *GoogleAssuredWorkloadsWorkloadPartnerPermissions
+	PartnerServicesBillingAccount() *string
+	SetPartnerServicesBillingAccount(val *string)
+	PartnerServicesBillingAccountInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -109,6 +112,8 @@ type GoogleAssuredWorkloadsWorkload interface {
 	ViolationNotificationsEnabled() interface{}
 	SetViolationNotificationsEnabled(val interface{})
 	ViolationNotificationsEnabledInput() interface{}
+	WorkloadOptions() GoogleAssuredWorkloadsWorkloadWorkloadOptionsOutputReference
+	WorkloadOptionsInput() *GoogleAssuredWorkloadsWorkloadWorkloadOptions
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -156,6 +161,7 @@ type GoogleAssuredWorkloadsWorkload interface {
 	PutPartnerPermissions(value *GoogleAssuredWorkloadsWorkloadPartnerPermissions)
 	PutResourceSettings(value interface{})
 	PutTimeouts(value *GoogleAssuredWorkloadsWorkloadTimeouts)
+	PutWorkloadOptions(value *GoogleAssuredWorkloadsWorkloadWorkloadOptions)
 	ResetBillingAccount()
 	ResetEnableSovereignControls()
 	ResetId()
@@ -166,10 +172,12 @@ type GoogleAssuredWorkloadsWorkload interface {
 	ResetOverrideLogicalId()
 	ResetPartner()
 	ResetPartnerPermissions()
+	ResetPartnerServicesBillingAccount()
 	ResetProvisionedResourcesParent()
 	ResetResourceSettings()
 	ResetTimeouts()
 	ResetViolationNotificationsEnabled()
+	ResetWorkloadOptions()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -578,6 +586,26 @@ func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload) PartnerPermissionsInput() *Go
 	return returns
 }
 
+func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload) PartnerServicesBillingAccount() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"partnerServicesBillingAccount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload) PartnerServicesBillingAccountInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"partnerServicesBillingAccountInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -748,8 +776,28 @@ func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload) ViolationNotificationsEnabled
 	return returns
 }
 
+func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload) WorkloadOptions() GoogleAssuredWorkloadsWorkloadWorkloadOptionsOutputReference {
+	var returns GoogleAssuredWorkloadsWorkloadWorkloadOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"workloadOptions",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_assured_workloads_workload google_assured_workloads_workload} Resource.
+func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload) WorkloadOptionsInput() *GoogleAssuredWorkloadsWorkloadWorkloadOptions {
+	var returns *GoogleAssuredWorkloadsWorkloadWorkloadOptions
+	_jsii_.Get(
+		j,
+		"workloadOptionsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_assured_workloads_workload google_assured_workloads_workload} Resource.
 func NewGoogleAssuredWorkloadsWorkload(scope constructs.Construct, id *string, config *GoogleAssuredWorkloadsWorkloadConfig) GoogleAssuredWorkloadsWorkload {
 	_init_.Initialize()
 
@@ -767,7 +815,7 @@ func NewGoogleAssuredWorkloadsWorkload(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_assured_workloads_workload google_assured_workloads_workload} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_assured_workloads_workload google_assured_workloads_workload} Resource.
 func NewGoogleAssuredWorkloadsWorkload_Override(g GoogleAssuredWorkloadsWorkload, scope constructs.Construct, id *string, config *GoogleAssuredWorkloadsWorkloadConfig) {
 	_init_.Initialize()
 
@@ -922,6 +970,17 @@ func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload)SetPartner(val *string) {
 	_jsii_.Set(
 		j,
 		"partner",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload)SetPartnerServicesBillingAccount(val *string) {
+	if err := j.validateSetPartnerServicesBillingAccountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"partnerServicesBillingAccount",
 		val,
 	)
 }
@@ -1364,6 +1423,17 @@ func (g *jsiiProxy_GoogleAssuredWorkloadsWorkload) PutTimeouts(value *GoogleAssu
 	)
 }
 
+func (g *jsiiProxy_GoogleAssuredWorkloadsWorkload) PutWorkloadOptions(value *GoogleAssuredWorkloadsWorkloadWorkloadOptions) {
+	if err := g.validatePutWorkloadOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putWorkloadOptions",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleAssuredWorkloadsWorkload) ResetBillingAccount() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1428,6 +1498,14 @@ func (g *jsiiProxy_GoogleAssuredWorkloadsWorkload) ResetPartnerPermissions() {
 	)
 }
 
+func (g *jsiiProxy_GoogleAssuredWorkloadsWorkload) ResetPartnerServicesBillingAccount() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPartnerServicesBillingAccount",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleAssuredWorkloadsWorkload) ResetProvisionedResourcesParent() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1456,6 +1534,14 @@ func (g *jsiiProxy_GoogleAssuredWorkloadsWorkload) ResetViolationNotificationsEn
 	_jsii_.InvokeVoid(
 		g,
 		"resetViolationNotificationsEnabled",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAssuredWorkloadsWorkload) ResetWorkloadOptions() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetWorkloadOptions",
 		nil, // no parameters
 	)
 }

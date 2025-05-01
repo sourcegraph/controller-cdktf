@@ -1,0 +1,6 @@
+package bigqueryanalyticshublistingsubscription
+
+
+type BigqueryAnalyticsHubListingSubscriptionLinkedResources struct {
+}
+

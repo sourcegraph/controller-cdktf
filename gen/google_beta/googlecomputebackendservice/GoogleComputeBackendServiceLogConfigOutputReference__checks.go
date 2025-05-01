@@ -191,6 +191,22 @@ func (j *jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference) validateSetOptionalFieldsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference) validateSetOptionalModeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference) validateSetSampleRateParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

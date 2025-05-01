@@ -60,7 +60,15 @@ func (j *jsiiProxy_ComputeInstanceTemplateAdvancedMachineFeaturesOutputReference
 	return nil
 }
 
+func (j *jsiiProxy_ComputeInstanceTemplateAdvancedMachineFeaturesOutputReference) validateSetEnableUefiNetworkingParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeInstanceTemplateAdvancedMachineFeaturesOutputReference) validateSetInternalValueParameters(val *ComputeInstanceTemplateAdvancedMachineFeatures) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeInstanceTemplateAdvancedMachineFeaturesOutputReference) validateSetPerformanceMonitoringUnitParameters(val *string) error {
 	return nil
 }
 
@@ -73,6 +81,10 @@ func (j *jsiiProxy_ComputeInstanceTemplateAdvancedMachineFeaturesOutputReference
 }
 
 func (j *jsiiProxy_ComputeInstanceTemplateAdvancedMachineFeaturesOutputReference) validateSetThreadsPerCoreParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeInstanceTemplateAdvancedMachineFeaturesOutputReference) validateSetTurboModeParameters(val *string) error {
 	return nil
 }
 

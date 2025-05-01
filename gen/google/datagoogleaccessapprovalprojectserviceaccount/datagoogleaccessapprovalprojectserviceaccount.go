@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagoogleaccessapprovalprojectserviceaccount/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/access_approval_project_service_account google_access_approval_project_service_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/access_approval_project_service_account google_access_approval_project_service_account}.
 type DataGoogleAccessApprovalProjectServiceAccount interface {
 	cdktf.TerraformDataSource
 	AccountEmail() *string
@@ -307,7 +307,7 @@ func (j *jsiiProxy_DataGoogleAccessApprovalProjectServiceAccount) TerraformResou
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/access_approval_project_service_account google_access_approval_project_service_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/access_approval_project_service_account google_access_approval_project_service_account} Data Source.
 func NewDataGoogleAccessApprovalProjectServiceAccount(scope constructs.Construct, id *string, config *DataGoogleAccessApprovalProjectServiceAccountConfig) DataGoogleAccessApprovalProjectServiceAccount {
 	_init_.Initialize()
 
@@ -325,7 +325,7 @@ func NewDataGoogleAccessApprovalProjectServiceAccount(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/data-sources/access_approval_project_service_account google_access_approval_project_service_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/access_approval_project_service_account google_access_approval_project_service_account} Data Source.
 func NewDataGoogleAccessApprovalProjectServiceAccount_Override(d DataGoogleAccessApprovalProjectServiceAccount, scope constructs.Construct, id *string, config *DataGoogleAccessApprovalProjectServiceAccountConfig) {
 	_init_.Initialize()
 

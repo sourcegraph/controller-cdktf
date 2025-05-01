@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlefirestoredatabase/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_firestore_database google_firestore_database}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_firestore_database google_firestore_database}.
 type GoogleFirestoreDatabase interface {
 	cdktf.TerraformResource
 	AppEngineIntegrationMode() *string
@@ -33,6 +33,9 @@ type GoogleFirestoreDatabase interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreateTime() *string
+	DatabaseEdition() *string
+	SetDatabaseEdition(val *string)
+	DatabaseEditionInput() *string
 	DeleteProtectionState() *string
 	SetDeleteProtectionState(val *string)
 	DeleteProtectionStateInput() *string
@@ -147,6 +150,7 @@ type GoogleFirestoreDatabase interface {
 	ResetAppEngineIntegrationMode()
 	ResetCmekConfig()
 	ResetConcurrencyMode()
+	ResetDatabaseEdition()
 	ResetDeleteProtectionState()
 	ResetDeletionPolicy()
 	ResetId()
@@ -279,6 +283,26 @@ func (j *jsiiProxy_GoogleFirestoreDatabase) CreateTime() *string {
 	_jsii_.Get(
 		j,
 		"createTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleFirestoreDatabase) DatabaseEdition() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"databaseEdition",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleFirestoreDatabase) DatabaseEditionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"databaseEditionInput",
 		&returns,
 	)
 	return returns
@@ -645,7 +669,7 @@ func (j *jsiiProxy_GoogleFirestoreDatabase) VersionRetentionPeriod() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_firestore_database google_firestore_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_firestore_database google_firestore_database} Resource.
 func NewGoogleFirestoreDatabase(scope constructs.Construct, id *string, config *GoogleFirestoreDatabaseConfig) GoogleFirestoreDatabase {
 	_init_.Initialize()
 
@@ -663,7 +687,7 @@ func NewGoogleFirestoreDatabase(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_firestore_database google_firestore_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_firestore_database google_firestore_database} Resource.
 func NewGoogleFirestoreDatabase_Override(g GoogleFirestoreDatabase, scope constructs.Construct, id *string, config *GoogleFirestoreDatabaseConfig) {
 	_init_.Initialize()
 
@@ -714,6 +738,17 @@ func (j *jsiiProxy_GoogleFirestoreDatabase)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleFirestoreDatabase)SetDatabaseEdition(val *string) {
+	if err := j.validateSetDatabaseEditionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"databaseEdition",
 		val,
 	)
 }
@@ -1247,6 +1282,14 @@ func (g *jsiiProxy_GoogleFirestoreDatabase) ResetConcurrencyMode() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetConcurrencyMode",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleFirestoreDatabase) ResetDatabaseEdition() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDatabaseEdition",
 		nil, // no parameters
 	)
 }

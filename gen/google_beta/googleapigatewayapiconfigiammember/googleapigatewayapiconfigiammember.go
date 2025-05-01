@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleapigatewayapiconfigiammember/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_api_gateway_api_config_iam_member google_api_gateway_api_config_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_api_gateway_api_config_iam_member google_api_gateway_api_config_iam_member}.
 type GoogleApiGatewayApiConfigIamMember interface {
 	cdktf.TerraformResource
 	Api() *string
@@ -458,7 +458,7 @@ func (j *jsiiProxy_GoogleApiGatewayApiConfigIamMember) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_api_gateway_api_config_iam_member google_api_gateway_api_config_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_api_gateway_api_config_iam_member google_api_gateway_api_config_iam_member} Resource.
 func NewGoogleApiGatewayApiConfigIamMember(scope constructs.Construct, id *string, config *GoogleApiGatewayApiConfigIamMemberConfig) GoogleApiGatewayApiConfigIamMember {
 	_init_.Initialize()
 
@@ -476,7 +476,7 @@ func NewGoogleApiGatewayApiConfigIamMember(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_api_gateway_api_config_iam_member google_api_gateway_api_config_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_api_gateway_api_config_iam_member google_api_gateway_api_config_iam_member} Resource.
 func NewGoogleApiGatewayApiConfigIamMember_Override(g GoogleApiGatewayApiConfigIamMember, scope constructs.Construct, id *string, config *GoogleApiGatewayApiConfigIamMemberConfig) {
 	_init_.Initialize()
 

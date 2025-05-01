@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledatacatalogtaxonomyiambinding/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_data_catalog_taxonomy_iam_binding google_data_catalog_taxonomy_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_data_catalog_taxonomy_iam_binding google_data_catalog_taxonomy_iam_binding}.
 type GoogleDataCatalogTaxonomyIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -459,7 +459,7 @@ func (j *jsiiProxy_GoogleDataCatalogTaxonomyIamBinding) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_data_catalog_taxonomy_iam_binding google_data_catalog_taxonomy_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_data_catalog_taxonomy_iam_binding google_data_catalog_taxonomy_iam_binding} Resource.
 func NewGoogleDataCatalogTaxonomyIamBinding(scope constructs.Construct, id *string, config *GoogleDataCatalogTaxonomyIamBindingConfig) GoogleDataCatalogTaxonomyIamBinding {
 	_init_.Initialize()
 
@@ -477,7 +477,7 @@ func NewGoogleDataCatalogTaxonomyIamBinding(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_data_catalog_taxonomy_iam_binding google_data_catalog_taxonomy_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_data_catalog_taxonomy_iam_binding google_data_catalog_taxonomy_iam_binding} Resource.
 func NewGoogleDataCatalogTaxonomyIamBinding_Override(g GoogleDataCatalogTaxonomyIamBinding, scope constructs.Construct, id *string, config *GoogleDataCatalogTaxonomyIamBindingConfig) {
 	_init_.Initialize()
 

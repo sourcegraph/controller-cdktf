@@ -100,6 +100,10 @@ func (j *jsiiProxy_Folder) validateSetCountParameters(val interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_Folder) validateSetDeletionProtectionParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Folder) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }
@@ -117,6 +121,10 @@ func (j *jsiiProxy_Folder) validateSetParentParameters(val *string) error {
 }
 
 func (j *jsiiProxy_Folder) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Folder) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }
 

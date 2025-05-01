@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/computeattacheddisk/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_attached_disk google_compute_attached_disk}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_attached_disk google_compute_attached_disk}.
 type ComputeAttachedDisk interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -48,6 +48,9 @@ type ComputeAttachedDisk interface {
 	Instance() *string
 	SetInstance(val *string)
 	InstanceInput() *string
+	Interface() *string
+	SetInterface(val *string)
+	InterfaceInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -127,6 +130,7 @@ type ComputeAttachedDisk interface {
 	PutTimeouts(value *ComputeAttachedDiskTimeouts)
 	ResetDeviceName()
 	ResetId()
+	ResetInterface()
 	ResetMode()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -312,6 +316,26 @@ func (j *jsiiProxy_ComputeAttachedDisk) InstanceInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeAttachedDisk) Interface() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"interface",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeAttachedDisk) InterfaceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"interfaceInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeAttachedDisk) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -473,7 +497,7 @@ func (j *jsiiProxy_ComputeAttachedDisk) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_attached_disk google_compute_attached_disk} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_attached_disk google_compute_attached_disk} Resource.
 func NewComputeAttachedDisk(scope constructs.Construct, id *string, config *ComputeAttachedDiskConfig) ComputeAttachedDisk {
 	_init_.Initialize()
 
@@ -491,7 +515,7 @@ func NewComputeAttachedDisk(scope constructs.Construct, id *string, config *Comp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_attached_disk google_compute_attached_disk} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_attached_disk google_compute_attached_disk} Resource.
 func NewComputeAttachedDisk_Override(c ComputeAttachedDisk, scope constructs.Construct, id *string, config *ComputeAttachedDiskConfig) {
 	_init_.Initialize()
 
@@ -580,6 +604,17 @@ func (j *jsiiProxy_ComputeAttachedDisk)SetInstance(val *string) {
 	_jsii_.Set(
 		j,
 		"instance",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeAttachedDisk)SetInterface(val *string) {
+	if err := j.validateSetInterfaceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"interface",
 		val,
 	)
 }
@@ -1023,6 +1058,14 @@ func (c *jsiiProxy_ComputeAttachedDisk) ResetId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeAttachedDisk) ResetInterface() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetInterface",
 		nil, // no parameters
 	)
 }

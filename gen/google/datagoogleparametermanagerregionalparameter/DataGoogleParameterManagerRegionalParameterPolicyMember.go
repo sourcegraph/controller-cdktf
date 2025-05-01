@@ -1,0 +1,6 @@
+package datagoogleparametermanagerregionalparameter
+
+
+type DataGoogleParameterManagerRegionalParameterPolicyMember struct {
+}
+

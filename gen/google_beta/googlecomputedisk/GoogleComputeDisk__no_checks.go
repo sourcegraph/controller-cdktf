@@ -84,6 +84,10 @@ func (g *jsiiProxy_GoogleComputeDisk) validatePutGuestOsFeaturesParameters(value
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeDisk) validatePutParamsParameters(value *GoogleComputeDiskParams) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeDisk) validatePutSourceImageEncryptionKeyParameters(value *GoogleComputeDiskSourceImageEncryptionKey) error {
 	return nil
 }
@@ -112,11 +116,27 @@ func validateGoogleComputeDisk_IsTerraformResourceParameters(x interface{}) erro
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeDisk) validateSetAccessModeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeDisk) validateSetArchitectureParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeDisk) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_GoogleComputeDisk) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeDisk) validateSetCreateSnapshotBeforeDestroyParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeDisk) validateSetCreateSnapshotBeforeDestroyPrefixParameters(val *string) error {
 	return nil
 }
 
@@ -193,6 +213,14 @@ func (j *jsiiProxy_GoogleComputeDisk) validateSetSnapshotParameters(val *string)
 }
 
 func (j *jsiiProxy_GoogleComputeDisk) validateSetSourceDiskParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeDisk) validateSetSourceInstantSnapshotParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeDisk) validateSetSourceStorageObjectParameters(val *string) error {
 	return nil
 }
 

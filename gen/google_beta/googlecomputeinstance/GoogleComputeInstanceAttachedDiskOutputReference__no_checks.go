@@ -64,6 +64,14 @@ func (j *jsiiProxy_GoogleComputeInstanceAttachedDiskOutputReference) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceAttachedDiskOutputReference) validateSetDiskEncryptionKeyRsaParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceAttachedDiskOutputReference) validateSetDiskEncryptionServiceAccountParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceAttachedDiskOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

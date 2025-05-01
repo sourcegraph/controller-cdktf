@@ -104,6 +104,10 @@ func (j *jsiiProxy_GoogleSccMuteConfig) validateSetDescriptionParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_GoogleSccMuteConfig) validateSetExpiryTimeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSccMuteConfig) validateSetFilterParameters(val *string) error {
 	return nil
 }
@@ -125,6 +129,10 @@ func (j *jsiiProxy_GoogleSccMuteConfig) validateSetParentParameters(val *string)
 }
 
 func (j *jsiiProxy_GoogleSccMuteConfig) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleSccMuteConfig) validateSetTypeParameters(val *string) error {
 	return nil
 }
 

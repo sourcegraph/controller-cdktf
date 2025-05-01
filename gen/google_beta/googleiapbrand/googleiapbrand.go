@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleiapbrand/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_iap_brand google_iap_brand}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_iap_brand google_iap_brand}.
 type GoogleIapBrand interface {
 	cdktf.TerraformResource
 	ApplicationTitle() *string
@@ -423,7 +423,7 @@ func (j *jsiiProxy_GoogleIapBrand) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_iap_brand google_iap_brand} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_iap_brand google_iap_brand} Resource.
 func NewGoogleIapBrand(scope constructs.Construct, id *string, config *GoogleIapBrandConfig) GoogleIapBrand {
 	_init_.Initialize()
 
@@ -441,7 +441,7 @@ func NewGoogleIapBrand(scope constructs.Construct, id *string, config *GoogleIap
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_iap_brand google_iap_brand} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_iap_brand google_iap_brand} Resource.
 func NewGoogleIapBrand_Override(g GoogleIapBrand, scope constructs.Construct, id *string, config *GoogleIapBrandConfig) {
 	_init_.Initialize()
 
