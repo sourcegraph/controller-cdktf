@@ -45,3 +45,4 @@ We would like to use specific versions of provides, hence we are not using pre-b
 Generated code combined from all providers and modules exceed the limit of `go get`, and this cannot be changed.
 
 [sourcegraph/controller]: https://github.com/sourcegraph/controller
+Hello World
