@@ -1,0 +1,11 @@
+name: incident
+
+provider:
+  source: registry.terraform.io/incident-io/incident
+  version: 5.21.1
+
+target:
+  language: go
+  moduleName: github.com/sourcegraph/controller-cdktf/gen
+
+output: gen

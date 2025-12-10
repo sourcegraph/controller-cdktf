@@ -1,0 +1,6 @@
+package dataincidentalertsources
+
+
+type DataIncidentAlertSourcesAlertSourcesTemplateExpressionsOperationsBranchesBranches struct {
+}
+

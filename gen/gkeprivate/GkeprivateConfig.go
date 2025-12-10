@@ -183,7 +183,7 @@ type GkeprivateConfig struct {
 	// 9443
 	// 15017.
 	FirewallInboundPorts *[]*string `field:"optional" json:"firewallInboundPorts" yaml:"firewallInboundPorts"`
-	// Priority rule for firewall rules 1,000.
+	// Priority rule for firewall rules 1000.
 	FirewallPriority *float64 `field:"optional" json:"firewallPriority" yaml:"firewallPriority"`
 	// (Optional) Register the cluster with the fleet in this project.
 	FleetProject *string `field:"optional" json:"fleetProject" yaml:"fleetProject"`
