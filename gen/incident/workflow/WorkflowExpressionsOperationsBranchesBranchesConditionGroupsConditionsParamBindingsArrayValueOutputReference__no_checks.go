@@ -1,0 +1,82 @@
+//go:build no_runtime_type_checking
+
+package workflow
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (w *jsiiProxy_WorkflowExpressionsOperationsBranchesBranchesConditionGroupsConditionsParamBindingsArrayValueOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkflowExpressionsOperationsBranchesBranchesConditionGroupsConditionsParamBindingsArrayValueOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkflowExpressionsOperationsBranchesBranchesConditionGroupsConditionsParamBindingsArrayValueOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkflowExpressionsOperationsBranchesBranchesConditionGroupsConditionsParamBindingsArrayValueOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkflowExpressionsOperationsBranchesBranchesConditionGroupsConditionsParamBindingsArrayValueOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkflowExpressionsOperationsBranchesBranchesConditionGroupsConditionsParamBindingsArrayValueOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkflowExpressionsOperationsBranchesBranchesConditionGroupsConditionsParamBindingsArrayValueOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkflowExpressionsOperationsBranchesBranchesConditionGroupsConditionsParamBindingsArrayValueOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkflowExpressionsOperationsBranchesBranchesConditionGroupsConditionsParamBindingsArrayValueOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkflowExpressionsOperationsBranchesBranchesConditionGroupsConditionsParamBindingsArrayValueOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkflowExpressionsOperationsBranchesBranchesConditionGroupsConditionsParamBindingsArrayValueOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkflowExpressionsOperationsBranchesBranchesConditionGroupsConditionsParamBindingsArrayValueOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkflowExpressionsOperationsBranchesBranchesConditionGroupsConditionsParamBindingsArrayValueOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkflowExpressionsOperationsBranchesBranchesConditionGroupsConditionsParamBindingsArrayValueOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkflowExpressionsOperationsBranchesBranchesConditionGroupsConditionsParamBindingsArrayValueOutputReference) validateSetLiteralParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkflowExpressionsOperationsBranchesBranchesConditionGroupsConditionsParamBindingsArrayValueOutputReference) validateSetReferenceParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkflowExpressionsOperationsBranchesBranchesConditionGroupsConditionsParamBindingsArrayValueOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkflowExpressionsOperationsBranchesBranchesConditionGroupsConditionsParamBindingsArrayValueOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func validateNewWorkflowExpressionsOperationsBranchesBranchesConditionGroupsConditionsParamBindingsArrayValueOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+	return nil
+}
+
