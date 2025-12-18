@@ -1,0 +1,38 @@
+//go:build no_runtime_type_checking
+
+package dataobservereferencetable
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (d *jsiiProxy_DataObserveReferenceTableSchemaList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataObserveReferenceTableSchemaList) validateGetParameters(index *float64) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataObserveReferenceTableSchemaList) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataObserveReferenceTableSchemaList) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataObserveReferenceTableSchemaList) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataObserveReferenceTableSchemaList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataObserveReferenceTableSchemaList) validateSetWrapsSetParameters(val *bool) error {
+	return nil
+}
+
+func validateNewDataObserveReferenceTableSchemaListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+	return nil
+}
+

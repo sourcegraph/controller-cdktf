@@ -1,0 +1,11 @@
+name: observe
+
+provider:
+  source: registry.terraform.io/observeinc/observe
+  version: 0.14.47
+
+target:
+  language: go
+  moduleName: github.com/sourcegraph/controller-cdktf/gen
+
+output: gen
