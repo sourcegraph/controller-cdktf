@@ -11,7 +11,7 @@ import (
 
 // Defines an Observegcp based on a Terraform module.
 //
-// Docs at Terraform Registry: {@link https://registry.terraform.io/modules/observeinc/collection/google/0.9.0 observeinc/collection/google}
+// Docs at Terraform Registry: {@link https://registry.terraform.io/modules/observeinc/collection/google/1.0.2 observeinc/collection/google}
 type Observegcp interface {
 	cdktf.TerraformModule
 	BucketLifecycleAbortUploadDays() *float64
@@ -28,6 +28,8 @@ type Observegcp interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EnableAssetTracking() *bool
+	SetEnableAssetTracking(val *bool)
 	EnableFunction() *bool
 	SetEnableFunction(val *bool)
 	FolderIncludeChildren() *bool
@@ -194,6 +196,16 @@ func (j *jsiiProxy_Observegcp) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Observegcp) EnableAssetTracking() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"enableAssetTracking",
 		&returns,
 	)
 	return returns
@@ -665,6 +677,14 @@ func (j *jsiiProxy_Observegcp)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Observegcp)SetEnableAssetTracking(val *bool) {
+	_jsii_.Set(
+		j,
+		"enableAssetTracking",
 		val,
 	)
 }

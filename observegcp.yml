@@ -2,7 +2,7 @@ name: observegcp
 
 module:
   source: observeinc/collection/google
-  version: 0.9.0
+  version: 1.0.2
 
 target:
   language: go

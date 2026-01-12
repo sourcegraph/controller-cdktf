@@ -20,6 +20,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "cloudFunctionDebugLevel", GoGetter: "CloudFunctionDebugLevel"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
+			_jsii_.MemberProperty{JsiiProperty: "enableAssetTracking", GoGetter: "EnableAssetTracking"},
 			_jsii_.MemberProperty{JsiiProperty: "enableFunction", GoGetter: "EnableFunction"},
 			_jsii_.MemberProperty{JsiiProperty: "folderIncludeChildren", GoGetter: "FolderIncludeChildren"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
