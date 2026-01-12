@@ -29,7 +29,13 @@ type ObservegcpConfig struct {
 	BucketLifecycleDeleteDays *float64 `field:"optional" json:"bucketLifecycleDeleteDays" yaml:"bucketLifecycleDeleteDays"`
 	// The debug level for the GCP cloud functions WARNING.
 	CloudFunctionDebugLevel *string `field:"optional" json:"cloudFunctionDebugLevel" yaml:"cloudFunctionDebugLevel"`
-	// Whether to enable the Cloud function true.
+	// Whether to enable the Cloud function that tracks GCP assets.
+	//
+	// true.
+	EnableAssetTracking *bool `field:"optional" json:"enableAssetTracking" yaml:"enableAssetTracking"`
+	// DEPRECATED: This variable has been renamed to 'enable_asset_tracking'.
+	//
+	// Please update your configuration to use 'enable_asset_tracking' instead.
 	EnableFunction *bool `field:"optional" json:"enableFunction" yaml:"enableFunction"`
 	// Whether to include all children Projects of a Folder when collecting logs true.
 	FolderIncludeChildren *bool `field:"optional" json:"folderIncludeChildren" yaml:"folderIncludeChildren"`
