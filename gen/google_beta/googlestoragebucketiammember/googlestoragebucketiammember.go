@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlestoragebucketiammember/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_storage_bucket_iam_member google_storage_bucket_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_storage_bucket_iam_member google_storage_bucket_iam_member}.
 type GoogleStorageBucketIamMember interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -73,6 +73,8 @@ type GoogleStorageBucketIamMember interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() GoogleStorageBucketIamMemberTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -117,11 +119,13 @@ type GoogleStorageBucketIamMember interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutCondition(value *GoogleStorageBucketIamMemberCondition)
+	PutTimeouts(value *GoogleStorageBucketIamMemberTimeouts)
 	ResetCondition()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -410,8 +414,28 @@ func (j *jsiiProxy_GoogleStorageBucketIamMember) TerraformResourceType() *string
 	return returns
 }
 
+func (j *jsiiProxy_GoogleStorageBucketIamMember) Timeouts() GoogleStorageBucketIamMemberTimeoutsOutputReference {
+	var returns GoogleStorageBucketIamMemberTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_storage_bucket_iam_member google_storage_bucket_iam_member} Resource.
+func (j *jsiiProxy_GoogleStorageBucketIamMember) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_storage_bucket_iam_member google_storage_bucket_iam_member} Resource.
 func NewGoogleStorageBucketIamMember(scope constructs.Construct, id *string, config *GoogleStorageBucketIamMemberConfig) GoogleStorageBucketIamMember {
 	_init_.Initialize()
 
@@ -429,7 +453,7 @@ func NewGoogleStorageBucketIamMember(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_storage_bucket_iam_member google_storage_bucket_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_storage_bucket_iam_member google_storage_bucket_iam_member} Resource.
 func NewGoogleStorageBucketIamMember_Override(g GoogleStorageBucketIamMember, scope constructs.Construct, id *string, config *GoogleStorageBucketIamMemberConfig) {
 	_init_.Initialize()
 
@@ -916,6 +940,17 @@ func (g *jsiiProxy_GoogleStorageBucketIamMember) PutCondition(value *GoogleStora
 	)
 }
 
+func (g *jsiiProxy_GoogleStorageBucketIamMember) PutTimeouts(value *GoogleStorageBucketIamMemberTimeouts) {
+	if err := g.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleStorageBucketIamMember) ResetCondition() {
 	_jsii_.InvokeVoid(
 		g,
@@ -936,6 +971,14 @@ func (g *jsiiProxy_GoogleStorageBucketIamMember) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleStorageBucketIamMember) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

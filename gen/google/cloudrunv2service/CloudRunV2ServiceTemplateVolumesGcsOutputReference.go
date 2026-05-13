@@ -32,6 +32,9 @@ type CloudRunV2ServiceTemplateVolumesGcsOutputReference interface {
 	Fqn() *string
 	InternalValue() *CloudRunV2ServiceTemplateVolumesGcs
 	SetInternalValue(val *CloudRunV2ServiceTemplateVolumesGcs)
+	MountOptions() *[]*string
+	SetMountOptions(val *[]*string)
+	MountOptionsInput() *[]*string
 	ReadOnly() interface{}
 	SetReadOnly(val interface{})
 	ReadOnlyInput() interface{}
@@ -67,6 +70,7 @@ type CloudRunV2ServiceTemplateVolumesGcsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetMountOptions()
 	ResetReadOnly()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -148,6 +152,26 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateVolumesGcsOutputReference) InternalV
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2ServiceTemplateVolumesGcsOutputReference) MountOptions() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"mountOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2ServiceTemplateVolumesGcsOutputReference) MountOptionsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"mountOptionsInput",
 		&returns,
 	)
 	return returns
@@ -261,6 +285,17 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateVolumesGcsOutputReference)SetInterna
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudRunV2ServiceTemplateVolumesGcsOutputReference)SetMountOptions(val *[]*string) {
+	if err := j.validateSetMountOptionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"mountOptions",
 		val,
 	)
 }
@@ -482,6 +517,14 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateVolumesGcsOutputReference) Interpola
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_CloudRunV2ServiceTemplateVolumesGcsOutputReference) ResetMountOptions() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetMountOptions",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_CloudRunV2ServiceTemplateVolumesGcsOutputReference) ResetReadOnly() {

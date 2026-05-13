@@ -23,22 +23,29 @@ type ComputeNetworkFirewallPolicyConfig struct {
 	//
 	// The name should be unique in the project in which the firewall policy is created. The name must be 1-63 characters long, and comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression [a-z]([-a-z0-9]*[a-z0-9])? which means the first character must be a lowercase letter, and all following characters must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_network_firewall_policy#name ComputeNetworkFirewallPolicy#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_network_firewall_policy#name ComputeNetworkFirewallPolicy#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// An optional description of this resource. Provide this property when you create the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_network_firewall_policy#description ComputeNetworkFirewallPolicy#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_network_firewall_policy#description ComputeNetworkFirewallPolicy#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_network_firewall_policy#id ComputeNetworkFirewallPolicy#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_network_firewall_policy#id ComputeNetworkFirewallPolicy#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_network_firewall_policy#project ComputeNetworkFirewallPolicy#project}.
+	// Policy type is used to determine which resources (networks) the policy can be associated with.
+	//
+	// A policy can be associated with a network only if the network has the matching policyType in its network profile.
+	// Different policy types may support some of the Firewall Rules features. Possible values: ["VPC_POLICY"]
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_network_firewall_policy#policy_type ComputeNetworkFirewallPolicy#policy_type}
+	PolicyType *string `field:"optional" json:"policyType" yaml:"policyType"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_network_firewall_policy#project ComputeNetworkFirewallPolicy#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_network_firewall_policy#timeouts ComputeNetworkFirewallPolicy#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_network_firewall_policy#timeouts ComputeNetworkFirewallPolicy#timeouts}
 	Timeouts *ComputeNetworkFirewallPolicyTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

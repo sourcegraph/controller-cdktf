@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlenetworkservicestlsroute/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_network_services_tls_route google_network_services_tls_route}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_network_services_tls_route google_network_services_tls_route}.
 type GoogleNetworkServicesTlsRoute interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -50,6 +50,9 @@ type GoogleNetworkServicesTlsRoute interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Location() *string
+	SetLocation(val *string)
+	LocationInput() *string
 	Meshes() *[]*string
 	SetMeshes(val *[]*string)
 	MeshesInput() *[]*string
@@ -74,6 +77,9 @@ type GoogleNetworkServicesTlsRoute interface {
 	Rules() GoogleNetworkServicesTlsRouteRulesList
 	RulesInput() interface{}
 	SelfLink() *string
+	TargetProxies() *[]*string
+	SetTargetProxies(val *[]*string)
+	TargetProxiesInput() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -131,11 +137,13 @@ type GoogleNetworkServicesTlsRoute interface {
 	ResetDescription()
 	ResetGateways()
 	ResetId()
+	ResetLocation()
 	ResetMeshes()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetTargetProxies()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -315,6 +323,26 @@ func (j *jsiiProxy_GoogleNetworkServicesTlsRoute) Lifecycle() *cdktf.TerraformRe
 	return returns
 }
 
+func (j *jsiiProxy_GoogleNetworkServicesTlsRoute) Location() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"location",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesTlsRoute) LocationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"locationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleNetworkServicesTlsRoute) Meshes() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -445,6 +473,26 @@ func (j *jsiiProxy_GoogleNetworkServicesTlsRoute) SelfLink() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleNetworkServicesTlsRoute) TargetProxies() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"targetProxies",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesTlsRoute) TargetProxiesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"targetProxiesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleNetworkServicesTlsRoute) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -506,7 +554,7 @@ func (j *jsiiProxy_GoogleNetworkServicesTlsRoute) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_network_services_tls_route google_network_services_tls_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_network_services_tls_route google_network_services_tls_route} Resource.
 func NewGoogleNetworkServicesTlsRoute(scope constructs.Construct, id *string, config *GoogleNetworkServicesTlsRouteConfig) GoogleNetworkServicesTlsRoute {
 	_init_.Initialize()
 
@@ -524,7 +572,7 @@ func NewGoogleNetworkServicesTlsRoute(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_network_services_tls_route google_network_services_tls_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_network_services_tls_route google_network_services_tls_route} Resource.
 func NewGoogleNetworkServicesTlsRoute_Override(g GoogleNetworkServicesTlsRoute, scope constructs.Construct, id *string, config *GoogleNetworkServicesTlsRouteConfig) {
 	_init_.Initialize()
 
@@ -617,6 +665,17 @@ func (j *jsiiProxy_GoogleNetworkServicesTlsRoute)SetLifecycle(val *cdktf.Terrafo
 	)
 }
 
+func (j *jsiiProxy_GoogleNetworkServicesTlsRoute)SetLocation(val *string) {
+	if err := j.validateSetLocationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"location",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleNetworkServicesTlsRoute)SetMeshes(val *[]*string) {
 	if err := j.validateSetMeshesParameters(val); err != nil {
 		panic(err)
@@ -665,6 +724,17 @@ func (j *jsiiProxy_GoogleNetworkServicesTlsRoute)SetProvisioners(val *[]interfac
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesTlsRoute)SetTargetProxies(val *[]*string) {
+	if err := j.validateSetTargetProxiesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"targetProxies",
 		val,
 	)
 }
@@ -1068,6 +1138,14 @@ func (g *jsiiProxy_GoogleNetworkServicesTlsRoute) ResetId() {
 	)
 }
 
+func (g *jsiiProxy_GoogleNetworkServicesTlsRoute) ResetLocation() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLocation",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleNetworkServicesTlsRoute) ResetMeshes() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1088,6 +1166,14 @@ func (g *jsiiProxy_GoogleNetworkServicesTlsRoute) ResetProject() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleNetworkServicesTlsRoute) ResetTargetProxies() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTargetProxies",
 		nil, // no parameters
 	)
 }

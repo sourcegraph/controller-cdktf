@@ -48,6 +48,10 @@ func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateOutputReference) validateP
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateOutputReference) validatePutNodeSelectorParameters(value *GoogleCloudRunV2JobTemplateTemplateNodeSelector) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateOutputReference) validatePutVolumesParameters(value interface{}) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateOutputReference) validateS
 }
 
 func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateOutputReference) validateSetExecutionEnvironmentParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateOutputReference) validateSetGpuZonalRedundancyDisabledParameters(val interface{}) error {
 	return nil
 }
 

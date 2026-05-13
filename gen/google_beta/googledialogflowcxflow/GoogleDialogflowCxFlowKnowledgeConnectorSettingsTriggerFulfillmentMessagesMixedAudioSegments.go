@@ -1,0 +1,6 @@
+package googledialogflowcxflow
+
+
+type GoogleDialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesMixedAudioSegments struct {
+}
+

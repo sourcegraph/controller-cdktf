@@ -237,6 +237,17 @@ func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStore) validatePutEmbeddingManagem
 	return nil
 }
 
+func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStore) validatePutEncryptionSpecParameters(value *GoogleVertexAiFeatureOnlineStoreEncryptionSpec) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStore) validatePutOptimizedParameters(value *GoogleVertexAiFeatureOnlineStoreOptimized) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

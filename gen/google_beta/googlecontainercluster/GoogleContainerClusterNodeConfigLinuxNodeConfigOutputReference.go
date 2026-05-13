@@ -10,6 +10,8 @@ import (
 
 type GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference interface {
 	cdktf.ComplexObject
+	AccurateTimeConfig() GoogleContainerClusterNodeConfigLinuxNodeConfigAccurateTimeConfigOutputReference
+	AccurateTimeConfigInput() *GoogleContainerClusterNodeConfigLinuxNodeConfigAccurateTimeConfig
 	CgroupMode() *string
 	SetCgroupMode(val *string)
 	CgroupModeInput() *string
@@ -34,6 +36,10 @@ type GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference interface {
 	HugepagesConfigInput() *GoogleContainerClusterNodeConfigLinuxNodeConfigHugepagesConfig
 	InternalValue() *GoogleContainerClusterNodeConfigLinuxNodeConfig
 	SetInternalValue(val *GoogleContainerClusterNodeConfigLinuxNodeConfig)
+	NodeKernelModuleLoading() GoogleContainerClusterNodeConfigLinuxNodeConfigNodeKernelModuleLoadingOutputReference
+	NodeKernelModuleLoadingInput() *GoogleContainerClusterNodeConfigLinuxNodeConfigNodeKernelModuleLoading
+	SwapConfig() GoogleContainerClusterNodeConfigLinuxNodeConfigSwapConfigOutputReference
+	SwapConfigInput() *GoogleContainerClusterNodeConfigLinuxNodeConfigSwapConfig
 	Sysctls() *map[string]*string
 	SetSysctls(val *map[string]*string)
 	SysctlsInput() *map[string]*string
@@ -45,6 +51,12 @@ type GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TransparentHugepageDefrag() *string
+	SetTransparentHugepageDefrag(val *string)
+	TransparentHugepageDefragInput() *string
+	TransparentHugepageEnabled() *string
+	SetTransparentHugepageEnabled(val *string)
+	TransparentHugepageEnabledInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -69,10 +81,18 @@ type GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAccurateTimeConfig(value *GoogleContainerClusterNodeConfigLinuxNodeConfigAccurateTimeConfig)
 	PutHugepagesConfig(value *GoogleContainerClusterNodeConfigLinuxNodeConfigHugepagesConfig)
+	PutNodeKernelModuleLoading(value *GoogleContainerClusterNodeConfigLinuxNodeConfigNodeKernelModuleLoading)
+	PutSwapConfig(value *GoogleContainerClusterNodeConfigLinuxNodeConfigSwapConfig)
+	ResetAccurateTimeConfig()
 	ResetCgroupMode()
 	ResetHugepagesConfig()
+	ResetNodeKernelModuleLoading()
+	ResetSwapConfig()
 	ResetSysctls()
+	ResetTransparentHugepageDefrag()
+	ResetTransparentHugepageEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -86,6 +106,26 @@ type GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference interface {
 // The jsii proxy struct for GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference
 type jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference) AccurateTimeConfig() GoogleContainerClusterNodeConfigLinuxNodeConfigAccurateTimeConfigOutputReference {
+	var returns GoogleContainerClusterNodeConfigLinuxNodeConfigAccurateTimeConfigOutputReference
+	_jsii_.Get(
+		j,
+		"accurateTimeConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference) AccurateTimeConfigInput() *GoogleContainerClusterNodeConfigLinuxNodeConfigAccurateTimeConfig {
+	var returns *GoogleContainerClusterNodeConfigLinuxNodeConfigAccurateTimeConfig
+	_jsii_.Get(
+		j,
+		"accurateTimeConfigInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference) CgroupMode() *string {
@@ -178,6 +218,46 @@ func (j *jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReferenc
 	return returns
 }
 
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference) NodeKernelModuleLoading() GoogleContainerClusterNodeConfigLinuxNodeConfigNodeKernelModuleLoadingOutputReference {
+	var returns GoogleContainerClusterNodeConfigLinuxNodeConfigNodeKernelModuleLoadingOutputReference
+	_jsii_.Get(
+		j,
+		"nodeKernelModuleLoading",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference) NodeKernelModuleLoadingInput() *GoogleContainerClusterNodeConfigLinuxNodeConfigNodeKernelModuleLoading {
+	var returns *GoogleContainerClusterNodeConfigLinuxNodeConfigNodeKernelModuleLoading
+	_jsii_.Get(
+		j,
+		"nodeKernelModuleLoadingInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference) SwapConfig() GoogleContainerClusterNodeConfigLinuxNodeConfigSwapConfigOutputReference {
+	var returns GoogleContainerClusterNodeConfigLinuxNodeConfigSwapConfigOutputReference
+	_jsii_.Get(
+		j,
+		"swapConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference) SwapConfigInput() *GoogleContainerClusterNodeConfigLinuxNodeConfigSwapConfig {
+	var returns *GoogleContainerClusterNodeConfigLinuxNodeConfigSwapConfig
+	_jsii_.Get(
+		j,
+		"swapConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference) Sysctls() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -213,6 +293,46 @@ func (j *jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReferenc
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference) TransparentHugepageDefrag() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"transparentHugepageDefrag",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference) TransparentHugepageDefragInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"transparentHugepageDefragInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference) TransparentHugepageEnabled() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"transparentHugepageEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference) TransparentHugepageEnabledInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"transparentHugepageEnabledInput",
 		&returns,
 	)
 	return returns
@@ -319,6 +439,28 @@ func (j *jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReferenc
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference)SetTransparentHugepageDefrag(val *string) {
+	if err := j.validateSetTransparentHugepageDefragParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"transparentHugepageDefrag",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference)SetTransparentHugepageEnabled(val *string) {
+	if err := j.validateSetTransparentHugepageEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"transparentHugepageEnabled",
 		val,
 	)
 }
@@ -509,6 +651,17 @@ func (g *jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReferenc
 	return returns
 }
 
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference) PutAccurateTimeConfig(value *GoogleContainerClusterNodeConfigLinuxNodeConfigAccurateTimeConfig) {
+	if err := g.validatePutAccurateTimeConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAccurateTimeConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference) PutHugepagesConfig(value *GoogleContainerClusterNodeConfigLinuxNodeConfigHugepagesConfig) {
 	if err := g.validatePutHugepagesConfigParameters(value); err != nil {
 		panic(err)
@@ -517,6 +670,36 @@ func (g *jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReferenc
 		g,
 		"putHugepagesConfig",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference) PutNodeKernelModuleLoading(value *GoogleContainerClusterNodeConfigLinuxNodeConfigNodeKernelModuleLoading) {
+	if err := g.validatePutNodeKernelModuleLoadingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putNodeKernelModuleLoading",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference) PutSwapConfig(value *GoogleContainerClusterNodeConfigLinuxNodeConfigSwapConfig) {
+	if err := g.validatePutSwapConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSwapConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference) ResetAccurateTimeConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAccurateTimeConfig",
+		nil, // no parameters
 	)
 }
 
@@ -536,10 +719,42 @@ func (g *jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReferenc
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference) ResetNodeKernelModuleLoading() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNodeKernelModuleLoading",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference) ResetSwapConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSwapConfig",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference) ResetSysctls() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetSysctls",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference) ResetTransparentHugepageDefrag() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTransparentHugepageDefrag",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference) ResetTransparentHugepageEnabled() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTransparentHugepageEnabled",
 		nil, // no parameters
 	)
 }

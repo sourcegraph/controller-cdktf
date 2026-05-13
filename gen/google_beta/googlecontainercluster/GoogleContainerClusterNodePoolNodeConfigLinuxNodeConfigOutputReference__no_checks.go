@@ -44,7 +44,19 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigOutput
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputReference) validatePutAccurateTimeConfigParameters(value *GoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputReference) validatePutHugepagesConfigParameters(value *GoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigHugepagesConfig) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputReference) validatePutNodeKernelModuleLoadingParameters(value *GoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigNodeKernelModuleLoading) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputReference) validatePutSwapConfigParameters(value *GoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigSwapConfig) error {
 	return nil
 }
 
@@ -77,6 +89,14 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigOutput
 }
 
 func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputReference) validateSetTransparentHugepageDefragParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputReference) validateSetTransparentHugepageEnabledParameters(val *string) error {
 	return nil
 }
 

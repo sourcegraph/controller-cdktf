@@ -1,0 +1,6 @@
+package computenetworkfirewallpolicywithrules
+
+
+type ComputeNetworkFirewallPolicyWithRulesPredefinedRulesMatchSrcSecureTag struct {
+}
+

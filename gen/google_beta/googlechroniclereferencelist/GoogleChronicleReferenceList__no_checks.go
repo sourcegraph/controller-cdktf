@@ -76,6 +76,10 @@ func (g *jsiiProxy_GoogleChronicleReferenceList) validatePutEntriesParameters(va
 	return nil
 }
 
+func (g *jsiiProxy_GoogleChronicleReferenceList) validatePutScopeInfoParameters(value *GoogleChronicleReferenceListScopeInfo) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleChronicleReferenceList) validatePutTimeoutsParameters(value *GoogleChronicleReferenceListTimeouts) error {
 	return nil
 }

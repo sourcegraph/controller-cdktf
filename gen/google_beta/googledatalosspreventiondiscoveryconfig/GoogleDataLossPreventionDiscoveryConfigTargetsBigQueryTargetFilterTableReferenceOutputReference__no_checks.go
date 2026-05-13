@@ -64,6 +64,10 @@ func (j *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetF
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTableReferenceOutputReference) validateSetProjectIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTableReferenceOutputReference) validateSetTableIdParameters(val *string) error {
 	return nil
 }

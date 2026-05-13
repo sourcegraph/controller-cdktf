@@ -56,6 +56,10 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) val
 	return nil
 }
 
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) validateSetEnhancedQueryInsightsEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) validateSetInternalValueParameters(val *SqlDatabaseInstanceSettingsInsightsConfig) error {
 	return nil
 }

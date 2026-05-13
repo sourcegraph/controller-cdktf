@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/vertexaifeatureonlinestore/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/vertex_ai_feature_online_store google_vertex_ai_feature_online_store}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_feature_online_store google_vertex_ai_feature_online_store}.
 type VertexAiFeatureOnlineStore interface {
 	cdktf.TerraformResource
 	Bigtable() VertexAiFeatureOnlineStoreBigtableOutputReference
@@ -34,6 +34,8 @@ type VertexAiFeatureOnlineStore interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	EffectiveLabels() cdktf.StringMap
+	EncryptionSpec() VertexAiFeatureOnlineStoreEncryptionSpecOutputReference
+	EncryptionSpecInput() *VertexAiFeatureOnlineStoreEncryptionSpec
 	Etag() *string
 	ForceDestroy() interface{}
 	SetForceDestroy(val interface{})
@@ -135,10 +137,12 @@ type VertexAiFeatureOnlineStore interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutBigtable(value *VertexAiFeatureOnlineStoreBigtable)
 	PutDedicatedServingEndpoint(value *VertexAiFeatureOnlineStoreDedicatedServingEndpoint)
+	PutEncryptionSpec(value *VertexAiFeatureOnlineStoreEncryptionSpec)
 	PutOptimized(value *VertexAiFeatureOnlineStoreOptimized)
 	PutTimeouts(value *VertexAiFeatureOnlineStoreTimeouts)
 	ResetBigtable()
 	ResetDedicatedServingEndpoint()
+	ResetEncryptionSpec()
 	ResetForceDestroy()
 	ResetId()
 	ResetLabels()
@@ -272,6 +276,26 @@ func (j *jsiiProxy_VertexAiFeatureOnlineStore) EffectiveLabels() cdktf.StringMap
 	_jsii_.Get(
 		j,
 		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VertexAiFeatureOnlineStore) EncryptionSpec() VertexAiFeatureOnlineStoreEncryptionSpecOutputReference {
+	var returns VertexAiFeatureOnlineStoreEncryptionSpecOutputReference
+	_jsii_.Get(
+		j,
+		"encryptionSpec",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VertexAiFeatureOnlineStore) EncryptionSpecInput() *VertexAiFeatureOnlineStoreEncryptionSpec {
+	var returns *VertexAiFeatureOnlineStoreEncryptionSpec
+	_jsii_.Get(
+		j,
+		"encryptionSpecInput",
 		&returns,
 	)
 	return returns
@@ -588,7 +612,7 @@ func (j *jsiiProxy_VertexAiFeatureOnlineStore) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/vertex_ai_feature_online_store google_vertex_ai_feature_online_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_feature_online_store google_vertex_ai_feature_online_store} Resource.
 func NewVertexAiFeatureOnlineStore(scope constructs.Construct, id *string, config *VertexAiFeatureOnlineStoreConfig) VertexAiFeatureOnlineStore {
 	_init_.Initialize()
 
@@ -606,7 +630,7 @@ func NewVertexAiFeatureOnlineStore(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/vertex_ai_feature_online_store google_vertex_ai_feature_online_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_feature_online_store google_vertex_ai_feature_online_store} Resource.
 func NewVertexAiFeatureOnlineStore_Override(v VertexAiFeatureOnlineStore, scope constructs.Construct, id *string, config *VertexAiFeatureOnlineStoreConfig) {
 	_init_.Initialize()
 
@@ -1126,6 +1150,17 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStore) PutDedicatedServingEndpoint(value
 	)
 }
 
+func (v *jsiiProxy_VertexAiFeatureOnlineStore) PutEncryptionSpec(value *VertexAiFeatureOnlineStoreEncryptionSpec) {
+	if err := v.validatePutEncryptionSpecParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"putEncryptionSpec",
+		[]interface{}{value},
+	)
+}
+
 func (v *jsiiProxy_VertexAiFeatureOnlineStore) PutOptimized(value *VertexAiFeatureOnlineStoreOptimized) {
 	if err := v.validatePutOptimizedParameters(value); err != nil {
 		panic(err)
@@ -1160,6 +1195,14 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStore) ResetDedicatedServingEndpoint() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetDedicatedServingEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VertexAiFeatureOnlineStore) ResetEncryptionSpec() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetEncryptionSpec",
 		nil, // no parameters
 	)
 }

@@ -67,6 +67,7 @@ type NetworkSecurityAuthzPolicyTargetOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetLoadBalancingScheme()
 	ResetResources()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -482,6 +483,14 @@ func (n *jsiiProxy_NetworkSecurityAuthzPolicyTargetOutputReference) Interpolatio
 	)
 
 	return returns
+}
+
+func (n *jsiiProxy_NetworkSecurityAuthzPolicyTargetOutputReference) ResetLoadBalancingScheme() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetLoadBalancingScheme",
+		nil, // no parameters
+	)
 }
 
 func (n *jsiiProxy_NetworkSecurityAuthzPolicyTargetOutputReference) ResetResources() {

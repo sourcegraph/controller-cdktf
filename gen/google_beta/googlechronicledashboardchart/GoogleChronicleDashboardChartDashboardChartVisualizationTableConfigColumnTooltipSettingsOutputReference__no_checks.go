@@ -1,0 +1,86 @@
+//go:build no_runtime_type_checking
+
+package googlechronicledashboardchart
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (g *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationTableConfigColumnTooltipSettingsOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationTableConfigColumnTooltipSettingsOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationTableConfigColumnTooltipSettingsOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationTableConfigColumnTooltipSettingsOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationTableConfigColumnTooltipSettingsOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationTableConfigColumnTooltipSettingsOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationTableConfigColumnTooltipSettingsOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationTableConfigColumnTooltipSettingsOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationTableConfigColumnTooltipSettingsOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationTableConfigColumnTooltipSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationTableConfigColumnTooltipSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationTableConfigColumnTooltipSettingsOutputReference) validateSetCellTooltipTextParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationTableConfigColumnTooltipSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationTableConfigColumnTooltipSettingsOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationTableConfigColumnTooltipSettingsOutputReference) validateSetFieldParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationTableConfigColumnTooltipSettingsOutputReference) validateSetHeaderTooltipTextParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationTableConfigColumnTooltipSettingsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationTableConfigColumnTooltipSettingsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationTableConfigColumnTooltipSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func validateNewGoogleChronicleDashboardChartDashboardChartVisualizationTableConfigColumnTooltipSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+	return nil
+}
+

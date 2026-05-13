@@ -1,0 +1,6 @@
+package googledeveloperconnectinsightsconfig
+
+
+type GoogleDeveloperConnectInsightsConfigRuntimeConfigsGkeWorkload struct {
+}
+

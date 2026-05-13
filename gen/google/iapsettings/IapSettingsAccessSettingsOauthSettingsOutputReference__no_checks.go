@@ -48,6 +48,14 @@ func (i *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference) valida
 	return nil
 }
 
+func (j *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference) validateSetClientIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference) validateSetClientSecretParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

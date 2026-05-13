@@ -32,6 +32,12 @@ type GoogleAlloydbClusterInitialUserOutputReference interface {
 	Password() *string
 	SetPassword(val *string)
 	PasswordInput() *string
+	PasswordWo() *string
+	SetPasswordWo(val *string)
+	PasswordWoInput() *string
+	PasswordWoVersion() *string
+	SetPasswordWoVersion(val *string)
+	PasswordWoVersionInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,6 +73,9 @@ type GoogleAlloydbClusterInitialUserOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetPassword()
+	ResetPasswordWo()
+	ResetPasswordWoVersion()
 	ResetUser()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -148,6 +157,46 @@ func (j *jsiiProxy_GoogleAlloydbClusterInitialUserOutputReference) PasswordInput
 	_jsii_.Get(
 		j,
 		"passwordInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAlloydbClusterInitialUserOutputReference) PasswordWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAlloydbClusterInitialUserOutputReference) PasswordWoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordWoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAlloydbClusterInitialUserOutputReference) PasswordWoVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordWoVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAlloydbClusterInitialUserOutputReference) PasswordWoVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordWoVersionInput",
 		&returns,
 	)
 	return returns
@@ -261,6 +310,28 @@ func (j *jsiiProxy_GoogleAlloydbClusterInitialUserOutputReference)SetPassword(va
 	_jsii_.Set(
 		j,
 		"password",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleAlloydbClusterInitialUserOutputReference)SetPasswordWo(val *string) {
+	if err := j.validateSetPasswordWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"passwordWo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleAlloydbClusterInitialUserOutputReference)SetPasswordWoVersion(val *string) {
+	if err := j.validateSetPasswordWoVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"passwordWoVersion",
 		val,
 	)
 }
@@ -482,6 +553,30 @@ func (g *jsiiProxy_GoogleAlloydbClusterInitialUserOutputReference) Interpolation
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleAlloydbClusterInitialUserOutputReference) ResetPassword() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPassword",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAlloydbClusterInitialUserOutputReference) ResetPasswordWo() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPasswordWo",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAlloydbClusterInitialUserOutputReference) ResetPasswordWoVersion() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPasswordWoVersion",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleAlloydbClusterInitialUserOutputReference) ResetUser() {

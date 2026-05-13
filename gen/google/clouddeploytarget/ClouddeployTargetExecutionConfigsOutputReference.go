@@ -28,6 +28,8 @@ type ClouddeployTargetExecutionConfigsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DefaultPool() ClouddeployTargetExecutionConfigsDefaultPoolOutputReference
+	DefaultPoolInput() *ClouddeployTargetExecutionConfigsDefaultPool
 	ExecutionTimeout() *string
 	SetExecutionTimeout(val *string)
 	ExecutionTimeoutInput() *string
@@ -35,6 +37,8 @@ type ClouddeployTargetExecutionConfigsOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	PrivatePool() ClouddeployTargetExecutionConfigsPrivatePoolOutputReference
+	PrivatePoolInput() *ClouddeployTargetExecutionConfigsPrivatePool
 	ServiceAccount() *string
 	SetServiceAccount(val *string)
 	ServiceAccountInput() *string
@@ -79,8 +83,12 @@ type ClouddeployTargetExecutionConfigsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutDefaultPool(value *ClouddeployTargetExecutionConfigsDefaultPool)
+	PutPrivatePool(value *ClouddeployTargetExecutionConfigsPrivatePool)
 	ResetArtifactStorage()
+	ResetDefaultPool()
 	ResetExecutionTimeout()
+	ResetPrivatePool()
 	ResetServiceAccount()
 	ResetVerbose()
 	ResetWorkerPool()
@@ -149,6 +157,26 @@ func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) CreationSta
 	return returns
 }
 
+func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) DefaultPool() ClouddeployTargetExecutionConfigsDefaultPoolOutputReference {
+	var returns ClouddeployTargetExecutionConfigsDefaultPoolOutputReference
+	_jsii_.Get(
+		j,
+		"defaultPool",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) DefaultPoolInput() *ClouddeployTargetExecutionConfigsDefaultPool {
+	var returns *ClouddeployTargetExecutionConfigsDefaultPool
+	_jsii_.Get(
+		j,
+		"defaultPoolInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) ExecutionTimeout() *string {
 	var returns *string
 	_jsii_.Get(
@@ -184,6 +212,26 @@ func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) InternalVal
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) PrivatePool() ClouddeployTargetExecutionConfigsPrivatePoolOutputReference {
+	var returns ClouddeployTargetExecutionConfigsPrivatePoolOutputReference
+	_jsii_.Get(
+		j,
+		"privatePool",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) PrivatePoolInput() *ClouddeployTargetExecutionConfigsPrivatePool {
+	var returns *ClouddeployTargetExecutionConfigsPrivatePool
+	_jsii_.Get(
+		j,
+		"privatePoolInput",
 		&returns,
 	)
 	return returns
@@ -624,6 +672,28 @@ func (c *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) Interpolati
 	return returns
 }
 
+func (c *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) PutDefaultPool(value *ClouddeployTargetExecutionConfigsDefaultPool) {
+	if err := c.validatePutDefaultPoolParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putDefaultPool",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) PutPrivatePool(value *ClouddeployTargetExecutionConfigsPrivatePool) {
+	if err := c.validatePutPrivatePoolParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putPrivatePool",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) ResetArtifactStorage() {
 	_jsii_.InvokeVoid(
 		c,
@@ -632,10 +702,26 @@ func (c *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) ResetArtifa
 	)
 }
 
+func (c *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) ResetDefaultPool() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDefaultPool",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) ResetExecutionTimeout() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetExecutionTimeout",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) ResetPrivatePool() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetPrivatePool",
 		nil, // no parameters
 	)
 }

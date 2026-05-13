@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledataprocmetastoretableiammember/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_dataproc_metastore_table_iam_member google_dataproc_metastore_table_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_dataproc_metastore_table_iam_member google_dataproc_metastore_table_iam_member}.
 type GoogleDataprocMetastoreTableIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -505,7 +505,7 @@ func (j *jsiiProxy_GoogleDataprocMetastoreTableIamMember) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_dataproc_metastore_table_iam_member google_dataproc_metastore_table_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_dataproc_metastore_table_iam_member google_dataproc_metastore_table_iam_member} Resource.
 func NewGoogleDataprocMetastoreTableIamMember(scope constructs.Construct, id *string, config *GoogleDataprocMetastoreTableIamMemberConfig) GoogleDataprocMetastoreTableIamMember {
 	_init_.Initialize()
 
@@ -523,7 +523,7 @@ func NewGoogleDataprocMetastoreTableIamMember(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_dataproc_metastore_table_iam_member google_dataproc_metastore_table_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_dataproc_metastore_table_iam_member google_dataproc_metastore_table_iam_member} Resource.
 func NewGoogleDataprocMetastoreTableIamMember_Override(g GoogleDataprocMetastoreTableIamMember, scope constructs.Construct, id *string, config *GoogleDataprocMetastoreTableIamMemberConfig) {
 	_init_.Initialize()
 

@@ -34,6 +34,9 @@ type ComputeFirewallPolicyRuleMatchOutputReference interface {
 	DestIpRanges() *[]*string
 	SetDestIpRanges(val *[]*string)
 	DestIpRangesInput() *[]*string
+	DestNetworkContext() *string
+	SetDestNetworkContext(val *string)
+	DestNetworkContextInput() *string
 	DestRegionCodes() *[]*string
 	SetDestRegionCodes(val *[]*string)
 	DestRegionCodesInput() *[]*string
@@ -55,9 +58,17 @@ type ComputeFirewallPolicyRuleMatchOutputReference interface {
 	SrcIpRanges() *[]*string
 	SetSrcIpRanges(val *[]*string)
 	SrcIpRangesInput() *[]*string
+	SrcNetworkContext() *string
+	SetSrcNetworkContext(val *string)
+	SrcNetworkContextInput() *string
+	SrcNetworks() *[]*string
+	SetSrcNetworks(val *[]*string)
+	SrcNetworksInput() *[]*string
 	SrcRegionCodes() *[]*string
 	SetSrcRegionCodes(val *[]*string)
 	SrcRegionCodesInput() *[]*string
+	SrcSecureTags() ComputeFirewallPolicyRuleMatchSrcSecureTagsList
+	SrcSecureTagsInput() interface{}
 	SrcThreatIntelligences() *[]*string
 	SetSrcThreatIntelligences(val *[]*string)
 	SrcThreatIntelligencesInput() *[]*string
@@ -94,15 +105,20 @@ type ComputeFirewallPolicyRuleMatchOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutLayer4Configs(value interface{})
+	PutSrcSecureTags(value interface{})
 	ResetDestAddressGroups()
 	ResetDestFqdns()
 	ResetDestIpRanges()
+	ResetDestNetworkContext()
 	ResetDestRegionCodes()
 	ResetDestThreatIntelligences()
 	ResetSrcAddressGroups()
 	ResetSrcFqdns()
 	ResetSrcIpRanges()
+	ResetSrcNetworkContext()
+	ResetSrcNetworks()
 	ResetSrcRegionCodes()
+	ResetSrcSecureTags()
 	ResetSrcThreatIntelligences()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -204,6 +220,26 @@ func (j *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) DestIpRangesIn
 	_jsii_.Get(
 		j,
 		"destIpRangesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) DestNetworkContext() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"destNetworkContext",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) DestNetworkContextInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"destNetworkContextInput",
 		&returns,
 	)
 	return returns
@@ -349,6 +385,46 @@ func (j *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) SrcIpRangesInp
 	return returns
 }
 
+func (j *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) SrcNetworkContext() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"srcNetworkContext",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) SrcNetworkContextInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"srcNetworkContextInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) SrcNetworks() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"srcNetworks",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) SrcNetworksInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"srcNetworksInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) SrcRegionCodes() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -364,6 +440,26 @@ func (j *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) SrcRegionCodes
 	_jsii_.Get(
 		j,
 		"srcRegionCodesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) SrcSecureTags() ComputeFirewallPolicyRuleMatchSrcSecureTagsList {
+	var returns ComputeFirewallPolicyRuleMatchSrcSecureTagsList
+	_jsii_.Get(
+		j,
+		"srcSecureTags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) SrcSecureTagsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"srcSecureTagsInput",
 		&returns,
 	)
 	return returns
@@ -492,6 +588,17 @@ func (j *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference)SetDestIpRanges
 	)
 }
 
+func (j *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference)SetDestNetworkContext(val *string) {
+	if err := j.validateSetDestNetworkContextParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"destNetworkContext",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference)SetDestRegionCodes(val *[]*string) {
 	if err := j.validateSetDestRegionCodesParameters(val); err != nil {
 		panic(err)
@@ -554,6 +661,28 @@ func (j *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference)SetSrcIpRanges(
 	_jsii_.Set(
 		j,
 		"srcIpRanges",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference)SetSrcNetworkContext(val *string) {
+	if err := j.validateSetSrcNetworkContextParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"srcNetworkContext",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference)SetSrcNetworks(val *[]*string) {
+	if err := j.validateSetSrcNetworksParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"srcNetworks",
 		val,
 	)
 }
@@ -799,6 +928,17 @@ func (c *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) PutLayer4Confi
 	)
 }
 
+func (c *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) PutSrcSecureTags(value interface{}) {
+	if err := c.validatePutSrcSecureTagsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putSrcSecureTags",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) ResetDestAddressGroups() {
 	_jsii_.InvokeVoid(
 		c,
@@ -819,6 +959,14 @@ func (c *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) ResetDestIpRan
 	_jsii_.InvokeVoid(
 		c,
 		"resetDestIpRanges",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) ResetDestNetworkContext() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDestNetworkContext",
 		nil, // no parameters
 	)
 }
@@ -863,10 +1011,34 @@ func (c *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) ResetSrcIpRang
 	)
 }
 
+func (c *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) ResetSrcNetworkContext() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSrcNetworkContext",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) ResetSrcNetworks() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSrcNetworks",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) ResetSrcRegionCodes() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetSrcRegionCodes",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) ResetSrcSecureTags() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSrcSecureTags",
 		nil, // no parameters
 	)
 }

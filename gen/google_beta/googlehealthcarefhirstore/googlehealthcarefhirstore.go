@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlehealthcarefhirstore/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_healthcare_fhir_store google_healthcare_fhir_store}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_healthcare_fhir_store google_healthcare_fhir_store}.
 type GoogleHealthcareFhirStore interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,6 +21,8 @@ type GoogleHealthcareFhirStore interface {
 	Connection() interface{}
 	// Experimental.
 	SetConnection(val interface{})
+	ConsentConfig() GoogleHealthcareFhirStoreConsentConfigOutputReference
+	ConsentConfigInput() *GoogleHealthcareFhirStoreConsentConfig
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -102,6 +104,8 @@ type GoogleHealthcareFhirStore interface {
 	TerraformResourceType() *string
 	Timeouts() GoogleHealthcareFhirStoreTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	ValidationConfig() GoogleHealthcareFhirStoreValidationConfigOutputReference
+	ValidationConfigInput() *GoogleHealthcareFhirStoreValidationConfig
 	Version() *string
 	SetVersion(val *string)
 	VersionInput() *string
@@ -148,11 +152,14 @@ type GoogleHealthcareFhirStore interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutConsentConfig(value *GoogleHealthcareFhirStoreConsentConfig)
 	PutNotificationConfig(value *GoogleHealthcareFhirStoreNotificationConfig)
 	PutNotificationConfigs(value interface{})
 	PutStreamConfigs(value interface{})
 	PutTimeouts(value *GoogleHealthcareFhirStoreTimeouts)
+	PutValidationConfig(value *GoogleHealthcareFhirStoreValidationConfig)
 	ResetComplexDataTypeReferenceParsing()
+	ResetConsentConfig()
 	ResetDefaultSearchHandlingStrict()
 	ResetDisableReferentialIntegrity()
 	ResetDisableResourceVersioning()
@@ -168,6 +175,7 @@ type GoogleHealthcareFhirStore interface {
 	ResetOverrideLogicalId()
 	ResetStreamConfigs()
 	ResetTimeouts()
+	ResetValidationConfig()
 	ResetVersion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -222,6 +230,26 @@ func (j *jsiiProxy_GoogleHealthcareFhirStore) Connection() interface{} {
 	_jsii_.Get(
 		j,
 		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleHealthcareFhirStore) ConsentConfig() GoogleHealthcareFhirStoreConsentConfigOutputReference {
+	var returns GoogleHealthcareFhirStoreConsentConfigOutputReference
+	_jsii_.Get(
+		j,
+		"consentConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleHealthcareFhirStore) ConsentConfigInput() *GoogleHealthcareFhirStoreConsentConfig {
+	var returns *GoogleHealthcareFhirStoreConsentConfig
+	_jsii_.Get(
+		j,
+		"consentConfigInput",
 		&returns,
 	)
 	return returns
@@ -677,6 +705,26 @@ func (j *jsiiProxy_GoogleHealthcareFhirStore) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleHealthcareFhirStore) ValidationConfig() GoogleHealthcareFhirStoreValidationConfigOutputReference {
+	var returns GoogleHealthcareFhirStoreValidationConfigOutputReference
+	_jsii_.Get(
+		j,
+		"validationConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleHealthcareFhirStore) ValidationConfigInput() *GoogleHealthcareFhirStoreValidationConfig {
+	var returns *GoogleHealthcareFhirStoreValidationConfig
+	_jsii_.Get(
+		j,
+		"validationConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleHealthcareFhirStore) Version() *string {
 	var returns *string
 	_jsii_.Get(
@@ -698,7 +746,7 @@ func (j *jsiiProxy_GoogleHealthcareFhirStore) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_healthcare_fhir_store google_healthcare_fhir_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_healthcare_fhir_store google_healthcare_fhir_store} Resource.
 func NewGoogleHealthcareFhirStore(scope constructs.Construct, id *string, config *GoogleHealthcareFhirStoreConfig) GoogleHealthcareFhirStore {
 	_init_.Initialize()
 
@@ -716,7 +764,7 @@ func NewGoogleHealthcareFhirStore(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_healthcare_fhir_store google_healthcare_fhir_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_healthcare_fhir_store google_healthcare_fhir_store} Resource.
 func NewGoogleHealthcareFhirStore_Override(g GoogleHealthcareFhirStore, scope constructs.Construct, id *string, config *GoogleHealthcareFhirStoreConfig) {
 	_init_.Initialize()
 
@@ -1280,6 +1328,17 @@ func (g *jsiiProxy_GoogleHealthcareFhirStore) OverrideLogicalId(newLogicalId *st
 	)
 }
 
+func (g *jsiiProxy_GoogleHealthcareFhirStore) PutConsentConfig(value *GoogleHealthcareFhirStoreConsentConfig) {
+	if err := g.validatePutConsentConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putConsentConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleHealthcareFhirStore) PutNotificationConfig(value *GoogleHealthcareFhirStoreNotificationConfig) {
 	if err := g.validatePutNotificationConfigParameters(value); err != nil {
 		panic(err)
@@ -1324,10 +1383,29 @@ func (g *jsiiProxy_GoogleHealthcareFhirStore) PutTimeouts(value *GoogleHealthcar
 	)
 }
 
+func (g *jsiiProxy_GoogleHealthcareFhirStore) PutValidationConfig(value *GoogleHealthcareFhirStoreValidationConfig) {
+	if err := g.validatePutValidationConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putValidationConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleHealthcareFhirStore) ResetComplexDataTypeReferenceParsing() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetComplexDataTypeReferenceParsing",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleHealthcareFhirStore) ResetConsentConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetConsentConfig",
 		nil, // no parameters
 	)
 }
@@ -1432,6 +1510,14 @@ func (g *jsiiProxy_GoogleHealthcareFhirStore) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleHealthcareFhirStore) ResetValidationConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetValidationConfig",
 		nil, // no parameters
 	)
 }

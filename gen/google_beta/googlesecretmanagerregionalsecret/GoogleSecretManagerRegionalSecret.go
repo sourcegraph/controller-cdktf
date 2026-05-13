@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlesecretmanagerregionalsecret/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_secret_manager_regional_secret google_secret_manager_regional_secret}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_secret_manager_regional_secret google_secret_manager_regional_secret}.
 type GoogleSecretManagerRegionalSecret interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -30,6 +30,9 @@ type GoogleSecretManagerRegionalSecret interface {
 	CreateTime() *string
 	CustomerManagedEncryption() GoogleSecretManagerRegionalSecretCustomerManagedEncryptionOutputReference
 	CustomerManagedEncryptionInput() *GoogleSecretManagerRegionalSecretCustomerManagedEncryption
+	DeletionProtection() interface{}
+	SetDeletionProtection(val interface{})
+	DeletionProtectionInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -81,6 +84,9 @@ type GoogleSecretManagerRegionalSecret interface {
 	SecretId() *string
 	SetSecretId(val *string)
 	SecretIdInput() *string
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
@@ -150,6 +156,7 @@ type GoogleSecretManagerRegionalSecret interface {
 	PutTopics(value interface{})
 	ResetAnnotations()
 	ResetCustomerManagedEncryption()
+	ResetDeletionProtection()
 	ResetExpireTime()
 	ResetId()
 	ResetLabels()
@@ -158,6 +165,7 @@ type GoogleSecretManagerRegionalSecret interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetRotation()
+	ResetTags()
 	ResetTimeouts()
 	ResetTopics()
 	ResetTtl()
@@ -266,6 +274,26 @@ func (j *jsiiProxy_GoogleSecretManagerRegionalSecret) CustomerManagedEncryptionI
 	_jsii_.Get(
 		j,
 		"customerManagedEncryptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSecretManagerRegionalSecret) DeletionProtection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSecretManagerRegionalSecret) DeletionProtectionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtectionInput",
 		&returns,
 	)
 	return returns
@@ -531,6 +559,26 @@ func (j *jsiiProxy_GoogleSecretManagerRegionalSecret) SecretIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleSecretManagerRegionalSecret) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSecretManagerRegionalSecret) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleSecretManagerRegionalSecret) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -672,7 +720,7 @@ func (j *jsiiProxy_GoogleSecretManagerRegionalSecret) VersionDestroyTtlInput() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_secret_manager_regional_secret google_secret_manager_regional_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_secret_manager_regional_secret google_secret_manager_regional_secret} Resource.
 func NewGoogleSecretManagerRegionalSecret(scope constructs.Construct, id *string, config *GoogleSecretManagerRegionalSecretConfig) GoogleSecretManagerRegionalSecret {
 	_init_.Initialize()
 
@@ -690,7 +738,7 @@ func NewGoogleSecretManagerRegionalSecret(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_secret_manager_regional_secret google_secret_manager_regional_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_secret_manager_regional_secret google_secret_manager_regional_secret} Resource.
 func NewGoogleSecretManagerRegionalSecret_Override(g GoogleSecretManagerRegionalSecret, scope constructs.Construct, id *string, config *GoogleSecretManagerRegionalSecretConfig) {
 	_init_.Initialize()
 
@@ -730,6 +778,17 @@ func (j *jsiiProxy_GoogleSecretManagerRegionalSecret)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleSecretManagerRegionalSecret)SetDeletionProtection(val interface{}) {
+	if err := j.validateSetDeletionProtectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deletionProtection",
 		val,
 	)
 }
@@ -842,6 +901,17 @@ func (j *jsiiProxy_GoogleSecretManagerRegionalSecret)SetSecretId(val *string) {
 	_jsii_.Set(
 		j,
 		"secretId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleSecretManagerRegionalSecret)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
 		val,
 	)
 }
@@ -1292,6 +1362,14 @@ func (g *jsiiProxy_GoogleSecretManagerRegionalSecret) ResetCustomerManagedEncryp
 	)
 }
 
+func (g *jsiiProxy_GoogleSecretManagerRegionalSecret) ResetDeletionProtection() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDeletionProtection",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleSecretManagerRegionalSecret) ResetExpireTime() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1336,6 +1414,14 @@ func (g *jsiiProxy_GoogleSecretManagerRegionalSecret) ResetRotation() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetRotation",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleSecretManagerRegionalSecret) ResetTags() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTags",
 		nil, // no parameters
 	)
 }

@@ -7,19 +7,23 @@ type FilestoreInstanceFileShares struct {
 	// This must be at least 1024 GiB
 	// for the standard tier, or 2560 GiB for the premium tier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/filestore_instance#capacity_gb FilestoreInstance#capacity_gb}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#capacity_gb FilestoreInstance#capacity_gb}
 	CapacityGb *float64 `field:"required" json:"capacityGb" yaml:"capacityGb"`
 	// The name of the fileshare (16 characters or less).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/filestore_instance#name FilestoreInstance#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#name FilestoreInstance#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// nfs_export_options block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/filestore_instance#nfs_export_options FilestoreInstance#nfs_export_options}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#nfs_export_options FilestoreInstance#nfs_export_options}
 	NfsExportOptions interface{} `field:"optional" json:"nfsExportOptions" yaml:"nfsExportOptions"`
 	// The resource name of the backup, in the format projects/{projectId}/locations/{locationId}/backups/{backupId}, that this file share has been restored from.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/filestore_instance#source_backup FilestoreInstance#source_backup}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#source_backup FilestoreInstance#source_backup}
 	SourceBackup *string `field:"optional" json:"sourceBackup" yaml:"sourceBackup"`
+	// The resource name of the BackupDR backup, in the format 'projects/{project_id}/locations/{location_id}/backupVaults/{backupvault_id}/dataSources/{datasource_id}/backups/{backup_id}', that this file share has been restored from.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#source_backupdr_backup FilestoreInstance#source_backupdr_backup}
+	SourceBackupdrBackup *string `field:"optional" json:"sourceBackupdrBackup" yaml:"sourceBackupdrBackup"`
 }
 

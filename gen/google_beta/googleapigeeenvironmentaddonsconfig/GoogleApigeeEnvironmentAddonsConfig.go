@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleapigeeenvironmentaddonsconfig/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_apigee_environment_addons_config google_apigee_environment_addons_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_apigee_environment_addons_config google_apigee_environment_addons_config}.
 type GoogleApigeeEnvironmentAddonsConfig interface {
 	cdktf.TerraformResource
 	AnalyticsEnabled() interface{}
@@ -378,7 +378,7 @@ func (j *jsiiProxy_GoogleApigeeEnvironmentAddonsConfig) TimeoutsInput() interfac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_apigee_environment_addons_config google_apigee_environment_addons_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_apigee_environment_addons_config google_apigee_environment_addons_config} Resource.
 func NewGoogleApigeeEnvironmentAddonsConfig(scope constructs.Construct, id *string, config *GoogleApigeeEnvironmentAddonsConfigConfig) GoogleApigeeEnvironmentAddonsConfig {
 	_init_.Initialize()
 
@@ -396,7 +396,7 @@ func NewGoogleApigeeEnvironmentAddonsConfig(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_apigee_environment_addons_config google_apigee_environment_addons_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_apigee_environment_addons_config google_apigee_environment_addons_config} Resource.
 func NewGoogleApigeeEnvironmentAddonsConfig_Override(g GoogleApigeeEnvironmentAddonsConfig, scope constructs.Construct, id *string, config *GoogleApigeeEnvironmentAddonsConfigConfig) {
 	_init_.Initialize()
 

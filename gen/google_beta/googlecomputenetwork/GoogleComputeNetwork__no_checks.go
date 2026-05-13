@@ -72,6 +72,10 @@ func (g *jsiiProxy_GoogleComputeNetwork) validateOverrideLogicalIdParameters(new
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeNetwork) validatePutParamsParameters(value *GoogleComputeNetworkParams) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeNetwork) validatePutTimeoutsParameters(value *GoogleComputeNetworkTimeouts) error {
 	return nil
 }
@@ -113,6 +117,10 @@ func (j *jsiiProxy_GoogleComputeNetwork) validateSetConnectionParameters(val int
 }
 
 func (j *jsiiProxy_GoogleComputeNetwork) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeNetwork) validateSetDeleteBgpAlwaysCompareMedParameters(val interface{}) error {
 	return nil
 }
 

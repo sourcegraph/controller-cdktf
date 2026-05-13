@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleparametermanagerparameter/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_parameter_manager_parameter google_parameter_manager_parameter}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_parameter_manager_parameter google_parameter_manager_parameter}.
 type GoogleParameterManagerParameter interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -516,7 +516,7 @@ func (j *jsiiProxy_GoogleParameterManagerParameter) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_parameter_manager_parameter google_parameter_manager_parameter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_parameter_manager_parameter google_parameter_manager_parameter} Resource.
 func NewGoogleParameterManagerParameter(scope constructs.Construct, id *string, config *GoogleParameterManagerParameterConfig) GoogleParameterManagerParameter {
 	_init_.Initialize()
 
@@ -534,7 +534,7 @@ func NewGoogleParameterManagerParameter(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_parameter_manager_parameter google_parameter_manager_parameter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_parameter_manager_parameter google_parameter_manager_parameter} Resource.
 func NewGoogleParameterManagerParameter_Override(g GoogleParameterManagerParameter, scope constructs.Construct, id *string, config *GoogleParameterManagerParameterConfig) {
 	_init_.Initialize()
 

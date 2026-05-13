@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference) vali
 	return nil
 }
 
+func (d *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference) validatePutInstanceFlexibilityPolicyParameters(value *DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicy) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

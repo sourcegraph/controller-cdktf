@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagooglecomputeregionbackendservice/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/compute_region_backend_service google_compute_region_backend_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/compute_region_backend_service google_compute_region_backend_service}.
 type DataGoogleComputeRegionBackendService interface {
 	cdktf.TerraformDataSource
 	AffinityCookieTtlSec() *float64
@@ -45,6 +45,7 @@ type DataGoogleComputeRegionBackendService interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	GeneratedId() *float64
+	HaPolicy() DataGoogleComputeRegionBackendServiceHaPolicyList
 	HealthChecks() *[]*string
 	Iap() DataGoogleComputeRegionBackendServiceIapList
 	Id() *string
@@ -62,9 +63,11 @@ type DataGoogleComputeRegionBackendService interface {
 	SetName(val *string)
 	NameInput() *string
 	Network() *string
+	NetworkPassThroughLbTrafficPolicy() DataGoogleComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyList
 	// The tree node.
 	Node() constructs.Node
 	OutlierDetection() DataGoogleComputeRegionBackendServiceOutlierDetectionList
+	Params() DataGoogleComputeRegionBackendServiceParamsList
 	PortName() *string
 	Project() *string
 	SetProject(val *string)
@@ -79,6 +82,7 @@ type DataGoogleComputeRegionBackendService interface {
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
+	SecurityPolicy() *string
 	SelfLink() *string
 	SessionAffinity() *string
 	StrongSessionAffinityCookie() DataGoogleComputeRegionBackendServiceStrongSessionAffinityCookieList
@@ -89,6 +93,7 @@ type DataGoogleComputeRegionBackendService interface {
 	// Experimental.
 	TerraformResourceType() *string
 	TimeoutSec() *float64
+	TlsSettings() DataGoogleComputeRegionBackendServiceTlsSettingsList
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -339,6 +344,16 @@ func (j *jsiiProxy_DataGoogleComputeRegionBackendService) GeneratedId() *float64
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeRegionBackendService) HaPolicy() DataGoogleComputeRegionBackendServiceHaPolicyList {
+	var returns DataGoogleComputeRegionBackendServiceHaPolicyList
+	_jsii_.Get(
+		j,
+		"haPolicy",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeRegionBackendService) HealthChecks() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -459,6 +474,16 @@ func (j *jsiiProxy_DataGoogleComputeRegionBackendService) Network() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeRegionBackendService) NetworkPassThroughLbTrafficPolicy() DataGoogleComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyList {
+	var returns DataGoogleComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyList
+	_jsii_.Get(
+		j,
+		"networkPassThroughLbTrafficPolicy",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeRegionBackendService) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -474,6 +499,16 @@ func (j *jsiiProxy_DataGoogleComputeRegionBackendService) OutlierDetection() Dat
 	_jsii_.Get(
 		j,
 		"outlierDetection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeRegionBackendService) Params() DataGoogleComputeRegionBackendServiceParamsList {
+	var returns DataGoogleComputeRegionBackendServiceParamsList
+	_jsii_.Get(
+		j,
+		"params",
 		&returns,
 	)
 	return returns
@@ -559,6 +594,16 @@ func (j *jsiiProxy_DataGoogleComputeRegionBackendService) RegionInput() *string 
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeRegionBackendService) SecurityPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securityPolicy",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeRegionBackendService) SelfLink() *string {
 	var returns *string
 	_jsii_.Get(
@@ -629,8 +674,18 @@ func (j *jsiiProxy_DataGoogleComputeRegionBackendService) TimeoutSec() *float64 
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeRegionBackendService) TlsSettings() DataGoogleComputeRegionBackendServiceTlsSettingsList {
+	var returns DataGoogleComputeRegionBackendServiceTlsSettingsList
+	_jsii_.Get(
+		j,
+		"tlsSettings",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/compute_region_backend_service google_compute_region_backend_service} Data Source.
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/compute_region_backend_service google_compute_region_backend_service} Data Source.
 func NewDataGoogleComputeRegionBackendService(scope constructs.Construct, id *string, config *DataGoogleComputeRegionBackendServiceConfig) DataGoogleComputeRegionBackendService {
 	_init_.Initialize()
 
@@ -648,7 +703,7 @@ func NewDataGoogleComputeRegionBackendService(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/compute_region_backend_service google_compute_region_backend_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/compute_region_backend_service google_compute_region_backend_service} Data Source.
 func NewDataGoogleComputeRegionBackendService_Override(d DataGoogleComputeRegionBackendService, scope constructs.Construct, id *string, config *DataGoogleComputeRegionBackendServiceConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputepublicdelegatedprefix/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_public_delegated_prefix google_compute_public_delegated_prefix}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_public_delegated_prefix google_compute_public_delegated_prefix}.
 type GoogleComputePublicDelegatedPrefix interface {
 	cdktf.TerraformResource
 	AllocatablePrefixLength() *float64
@@ -34,6 +34,7 @@ type GoogleComputePublicDelegatedPrefix interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EnableEnhancedIpv4Allocation() cdktf.IResolvable
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -48,6 +49,7 @@ type GoogleComputePublicDelegatedPrefix interface {
 	IpCidrRange() *string
 	SetIpCidrRange(val *string)
 	IpCidrRangeInput() *string
+	Ipv6AccessType() *string
 	IsLiveMigration() interface{}
 	SetIsLiveMigration(val interface{})
 	IsLiveMigrationInput() interface{}
@@ -77,6 +79,7 @@ type GoogleComputePublicDelegatedPrefix interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	PublicDelegatedSubPrefixs() GoogleComputePublicDelegatedPrefixPublicDelegatedSubPrefixsList
 	// Experimental.
 	RawOverrides() interface{}
 	Region() *string
@@ -253,6 +256,16 @@ func (j *jsiiProxy_GoogleComputePublicDelegatedPrefix) DescriptionInput() *strin
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputePublicDelegatedPrefix) EnableEnhancedIpv4Allocation() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"enableEnhancedIpv4Allocation",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputePublicDelegatedPrefix) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -318,6 +331,16 @@ func (j *jsiiProxy_GoogleComputePublicDelegatedPrefix) IpCidrRangeInput() *strin
 	_jsii_.Get(
 		j,
 		"ipCidrRangeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputePublicDelegatedPrefix) Ipv6AccessType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6AccessType",
 		&returns,
 	)
 	return returns
@@ -463,6 +486,16 @@ func (j *jsiiProxy_GoogleComputePublicDelegatedPrefix) Provisioners() *[]interfa
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputePublicDelegatedPrefix) PublicDelegatedSubPrefixs() GoogleComputePublicDelegatedPrefixPublicDelegatedSubPrefixsList {
+	var returns GoogleComputePublicDelegatedPrefixPublicDelegatedSubPrefixsList
+	_jsii_.Get(
+		j,
+		"publicDelegatedSubPrefixs",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputePublicDelegatedPrefix) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -554,7 +587,7 @@ func (j *jsiiProxy_GoogleComputePublicDelegatedPrefix) TimeoutsInput() interface
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_public_delegated_prefix google_compute_public_delegated_prefix} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_public_delegated_prefix google_compute_public_delegated_prefix} Resource.
 func NewGoogleComputePublicDelegatedPrefix(scope constructs.Construct, id *string, config *GoogleComputePublicDelegatedPrefixConfig) GoogleComputePublicDelegatedPrefix {
 	_init_.Initialize()
 
@@ -572,7 +605,7 @@ func NewGoogleComputePublicDelegatedPrefix(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_public_delegated_prefix google_compute_public_delegated_prefix} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_public_delegated_prefix google_compute_public_delegated_prefix} Resource.
 func NewGoogleComputePublicDelegatedPrefix_Override(g GoogleComputePublicDelegatedPrefix, scope constructs.Construct, id *string, config *GoogleComputePublicDelegatedPrefixConfig) {
 	_init_.Initialize()
 

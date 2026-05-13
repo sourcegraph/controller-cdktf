@@ -108,6 +108,10 @@ func (j *jsiiProxy_CloudIdentityGroupMembership) validateSetCountParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_CloudIdentityGroupMembership) validateSetCreateIgnoreAlreadyExistsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudIdentityGroupMembership) validateSetGroupParameters(val *string) error {
 	return nil
 }

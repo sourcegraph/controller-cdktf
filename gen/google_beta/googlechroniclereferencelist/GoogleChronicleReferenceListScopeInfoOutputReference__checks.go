@@ -90,6 +90,17 @@ func (g *jsiiProxy_GoogleChronicleReferenceListScopeInfoOutputReference) validat
 	return nil
 }
 
+func (g *jsiiProxy_GoogleChronicleReferenceListScopeInfoOutputReference) validatePutReferenceListScopeParameters(value *GoogleChronicleReferenceListScopeInfoReferenceListScope) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleChronicleReferenceListScopeInfoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
@@ -187,21 +198,13 @@ func (j *jsiiProxy_GoogleChronicleReferenceListScopeInfoOutputReference) validat
 	return nil
 }
 
-func validateNewGoogleChronicleReferenceListScopeInfoOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleChronicleReferenceListScopeInfoOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}
 
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
-	}
-
-	if complexObjectIndex == nil {
-		return fmt.Errorf("parameter complexObjectIndex is required, but nil was provided")
-	}
-
-	if complexObjectIsFromSet == nil {
-		return fmt.Errorf("parameter complexObjectIsFromSet is required, but nil was provided")
 	}
 
 	return nil

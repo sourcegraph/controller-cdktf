@@ -140,6 +140,10 @@ func (j *jsiiProxy_GoogleAppEngineApplication) validateSetServingStatusParameter
 	return nil
 }
 
+func (j *jsiiProxy_GoogleAppEngineApplication) validateSetSslPolicyParameters(val *string) error {
+	return nil
+}
+
 func validateNewGoogleAppEngineApplicationParameters(scope constructs.Construct, id *string, config *GoogleAppEngineApplicationConfig) error {
 	return nil
 }

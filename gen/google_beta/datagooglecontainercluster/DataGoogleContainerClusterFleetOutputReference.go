@@ -32,6 +32,7 @@ type DataGoogleContainerClusterFleetOutputReference interface {
 	Membership() *string
 	MembershipId() *string
 	MembershipLocation() *string
+	MembershipType() *string
 	PreRegistered() cdktf.IResolvable
 	Project() *string
 	// Experimental.
@@ -156,6 +157,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterFleetOutputReference) MembershipLoc
 	_jsii_.Get(
 		j,
 		"membershipLocation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterFleetOutputReference) MembershipType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"membershipType",
 		&returns,
 	)
 	return returns

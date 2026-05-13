@@ -1,0 +1,6 @@
+package networkconnectivitymulticlouddatatransferconfig
+
+
+type NetworkConnectivityMulticloudDataTransferConfigServicesStates struct {
+}
+

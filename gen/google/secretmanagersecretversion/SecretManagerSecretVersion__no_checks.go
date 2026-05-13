@@ -120,6 +120,10 @@ func (j *jsiiProxy_SecretManagerSecretVersion) validateSetLifecycleParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_SecretManagerSecretVersion) validateSetProjectParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecretManagerSecretVersion) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

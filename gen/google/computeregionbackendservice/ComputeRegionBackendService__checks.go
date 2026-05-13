@@ -310,6 +310,17 @@ func (c *jsiiProxy_ComputeRegionBackendService) validatePutFailoverPolicyParamet
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRegionBackendService) validatePutHaPolicyParameters(value *ComputeRegionBackendServiceHaPolicy) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionBackendService) validatePutIapParameters(value *ComputeRegionBackendServiceIap) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -332,7 +343,29 @@ func (c *jsiiProxy_ComputeRegionBackendService) validatePutLogConfigParameters(v
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRegionBackendService) validatePutNetworkPassThroughLbTrafficPolicyParameters(value *ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicy) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionBackendService) validatePutOutlierDetectionParameters(value *ComputeRegionBackendServiceOutlierDetection) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRegionBackendService) validatePutParamsParameters(value *ComputeRegionBackendServiceParams) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -355,6 +388,17 @@ func (c *jsiiProxy_ComputeRegionBackendService) validatePutStrongSessionAffinity
 }
 
 func (c *jsiiProxy_ComputeRegionBackendService) validatePutTimeoutsParameters(value *ComputeRegionBackendServiceTimeouts) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRegionBackendService) validatePutTlsSettingsParameters(value *ComputeRegionBackendServiceTlsSettings) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -674,6 +718,14 @@ func (j *jsiiProxy_ComputeRegionBackendService) validateSetProvisionersParameter
 }
 
 func (j *jsiiProxy_ComputeRegionBackendService) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ComputeRegionBackendService) validateSetSecurityPolicyParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

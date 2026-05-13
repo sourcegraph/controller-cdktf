@@ -120,6 +120,10 @@ func (j *jsiiProxy_GoogleStorageInsightsReportConfig) validateSetDisplayNamePara
 	return nil
 }
 
+func (j *jsiiProxy_GoogleStorageInsightsReportConfig) validateSetForceDestroyParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleStorageInsightsReportConfig) validateSetIdParameters(val *string) error {
 	return nil
 }

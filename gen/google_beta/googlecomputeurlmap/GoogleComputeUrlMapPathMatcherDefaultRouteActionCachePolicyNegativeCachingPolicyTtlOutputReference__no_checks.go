@@ -1,0 +1,82 @@
+//go:build no_runtime_type_checking
+
+package googlecomputeurlmap
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionCachePolicyNegativeCachingPolicyTtlOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionCachePolicyNegativeCachingPolicyTtlOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionCachePolicyNegativeCachingPolicyTtlOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionCachePolicyNegativeCachingPolicyTtlOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionCachePolicyNegativeCachingPolicyTtlOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionCachePolicyNegativeCachingPolicyTtlOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionCachePolicyNegativeCachingPolicyTtlOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionCachePolicyNegativeCachingPolicyTtlOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionCachePolicyNegativeCachingPolicyTtlOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionCachePolicyNegativeCachingPolicyTtlOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionCachePolicyNegativeCachingPolicyTtlOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionCachePolicyNegativeCachingPolicyTtlOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionCachePolicyNegativeCachingPolicyTtlOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionCachePolicyNegativeCachingPolicyTtlOutputReference) validateSetInternalValueParameters(val *GoogleComputeUrlMapPathMatcherDefaultRouteActionCachePolicyNegativeCachingPolicyTtl) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionCachePolicyNegativeCachingPolicyTtlOutputReference) validateSetNanosParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionCachePolicyNegativeCachingPolicyTtlOutputReference) validateSetSecondsParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionCachePolicyNegativeCachingPolicyTtlOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionCachePolicyNegativeCachingPolicyTtlOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func validateNewGoogleComputeUrlMapPathMatcherDefaultRouteActionCachePolicyNegativeCachingPolicyTtlOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+	return nil
+}
+

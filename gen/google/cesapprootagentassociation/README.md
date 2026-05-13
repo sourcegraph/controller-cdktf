@@ -1,0 +1,3 @@
+# `google_ces_app_root_agent_association`
+
+Refer to the Terraform Registry for docs: [`google_ces_app_root_agent_association`](https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/ces_app_root_agent_association).

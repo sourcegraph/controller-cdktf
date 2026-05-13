@@ -33,6 +33,9 @@ type SqlDatabaseInstanceReplicationClusterOutputReference interface {
 	Fqn() *string
 	InternalValue() *SqlDatabaseInstanceReplicationCluster
 	SetInternalValue(val *SqlDatabaseInstanceReplicationCluster)
+	PsaWriteEndpoint() *string
+	SetPsaWriteEndpoint(val *string)
+	PsaWriteEndpointInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -66,6 +69,7 @@ type SqlDatabaseInstanceReplicationClusterOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetFailoverDrReplicaName()
+	ResetPsaWriteEndpoint()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -161,6 +165,26 @@ func (j *jsiiProxy_SqlDatabaseInstanceReplicationClusterOutputReference) Interna
 	return returns
 }
 
+func (j *jsiiProxy_SqlDatabaseInstanceReplicationClusterOutputReference) PsaWriteEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"psaWriteEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceReplicationClusterOutputReference) PsaWriteEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"psaWriteEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SqlDatabaseInstanceReplicationClusterOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -249,6 +273,17 @@ func (j *jsiiProxy_SqlDatabaseInstanceReplicationClusterOutputReference)SetInter
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceReplicationClusterOutputReference)SetPsaWriteEndpoint(val *string) {
+	if err := j.validateSetPsaWriteEndpointParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"psaWriteEndpoint",
 		val,
 	)
 }
@@ -465,6 +500,14 @@ func (s *jsiiProxy_SqlDatabaseInstanceReplicationClusterOutputReference) ResetFa
 	_jsii_.InvokeVoid(
 		s,
 		"resetFailoverDrReplicaName",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlDatabaseInstanceReplicationClusterOutputReference) ResetPsaWriteEndpoint() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetPsaWriteEndpoint",
 		nil, // no parameters
 	)
 }

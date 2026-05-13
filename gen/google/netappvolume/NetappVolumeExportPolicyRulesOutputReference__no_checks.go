@@ -56,6 +56,10 @@ func (j *jsiiProxy_NetappVolumeExportPolicyRulesOutputReference) validateSetAllo
 	return nil
 }
 
+func (j *jsiiProxy_NetappVolumeExportPolicyRulesOutputReference) validateSetAnonUidParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetappVolumeExportPolicyRulesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -101,6 +105,10 @@ func (j *jsiiProxy_NetappVolumeExportPolicyRulesOutputReference) validateSetNfsv
 }
 
 func (j *jsiiProxy_NetappVolumeExportPolicyRulesOutputReference) validateSetNfsv4Parameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_NetappVolumeExportPolicyRulesOutputReference) validateSetSquashModeParameters(val *string) error {
 	return nil
 }
 

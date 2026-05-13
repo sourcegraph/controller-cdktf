@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/colabruntimetemplate/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/colab_runtime_template google_colab_runtime_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_runtime_template google_colab_runtime_template}.
 type ColabRuntimeTemplate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -711,7 +711,7 @@ func (j *jsiiProxy_ColabRuntimeTemplate) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/colab_runtime_template google_colab_runtime_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_runtime_template google_colab_runtime_template} Resource.
 func NewColabRuntimeTemplate(scope constructs.Construct, id *string, config *ColabRuntimeTemplateConfig) ColabRuntimeTemplate {
 	_init_.Initialize()
 
@@ -729,7 +729,7 @@ func NewColabRuntimeTemplate(scope constructs.Construct, id *string, config *Col
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/colab_runtime_template google_colab_runtime_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_runtime_template google_colab_runtime_template} Resource.
 func NewColabRuntimeTemplate_Override(c ColabRuntimeTemplate, scope constructs.Construct, id *string, config *ColabRuntimeTemplateConfig) {
 	_init_.Initialize()
 

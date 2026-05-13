@@ -40,6 +40,9 @@ type GoogleOracleDatabaseCloudVmClusterPropertiesTimeZoneOutputReference interfa
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Version() *string
+	SetVersion(val *string)
+	VersionInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -65,6 +68,7 @@ type GoogleOracleDatabaseCloudVmClusterPropertiesTimeZoneOutputReference interfa
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetId()
+	ResetVersion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -170,6 +174,26 @@ func (j *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesTimeZoneOutputRef
 	return returns
 }
 
+func (j *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesTimeZoneOutputReference) Version() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"version",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesTimeZoneOutputReference) VersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"versionInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewGoogleOracleDatabaseCloudVmClusterPropertiesTimeZoneOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleOracleDatabaseCloudVmClusterPropertiesTimeZoneOutputReference {
 	_init_.Initialize()
@@ -260,6 +284,17 @@ func (j *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesTimeZoneOutputRef
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesTimeZoneOutputReference)SetVersion(val *string) {
+	if err := j.validateSetVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"version",
 		val,
 	)
 }
@@ -454,6 +489,14 @@ func (g *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesTimeZoneOutputRef
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesTimeZoneOutputReference) ResetVersion() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetVersion",
 		nil, // no parameters
 	)
 }

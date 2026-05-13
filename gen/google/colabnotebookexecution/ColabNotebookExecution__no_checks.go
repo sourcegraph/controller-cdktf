@@ -72,6 +72,10 @@ func (c *jsiiProxy_ColabNotebookExecution) validateOverrideLogicalIdParameters(n
 	return nil
 }
 
+func (c *jsiiProxy_ColabNotebookExecution) validatePutCustomEnvironmentSpecParameters(value *ColabNotebookExecutionCustomEnvironmentSpec) error {
+	return nil
+}
+
 func (c *jsiiProxy_ColabNotebookExecution) validatePutDataformRepositorySourceParameters(value *ColabNotebookExecutionDataformRepositorySource) error {
 	return nil
 }

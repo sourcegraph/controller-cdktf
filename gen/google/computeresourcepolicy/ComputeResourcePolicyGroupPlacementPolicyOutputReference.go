@@ -33,6 +33,9 @@ type ComputeResourcePolicyGroupPlacementPolicyOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	GpuTopology() *string
+	SetGpuTopology(val *string)
+	GpuTopologyInput() *string
 	InternalValue() *ComputeResourcePolicyGroupPlacementPolicy
 	SetInternalValue(val *ComputeResourcePolicyGroupPlacementPolicy)
 	// Experimental.
@@ -72,6 +75,7 @@ type ComputeResourcePolicyGroupPlacementPolicyOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAvailabilityDomainCount()
 	ResetCollocation()
+	ResetGpuTopology()
 	ResetVmCount()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -163,6 +167,26 @@ func (j *jsiiProxy_ComputeResourcePolicyGroupPlacementPolicyOutputReference) Fqn
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeResourcePolicyGroupPlacementPolicyOutputReference) GpuTopology() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gpuTopology",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeResourcePolicyGroupPlacementPolicyOutputReference) GpuTopologyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gpuTopologyInput",
 		&returns,
 	)
 	return returns
@@ -286,6 +310,17 @@ func (j *jsiiProxy_ComputeResourcePolicyGroupPlacementPolicyOutputReference)SetC
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeResourcePolicyGroupPlacementPolicyOutputReference)SetGpuTopology(val *string) {
+	if err := j.validateSetGpuTopologyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"gpuTopology",
 		val,
 	)
 }
@@ -532,6 +567,14 @@ func (c *jsiiProxy_ComputeResourcePolicyGroupPlacementPolicyOutputReference) Res
 	_jsii_.InvokeVoid(
 		c,
 		"resetCollocation",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeResourcePolicyGroupPlacementPolicyOutputReference) ResetGpuTopology() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetGpuTopology",
 		nil, // no parameters
 	)
 }

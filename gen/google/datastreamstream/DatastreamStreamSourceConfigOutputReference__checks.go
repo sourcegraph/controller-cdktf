@@ -90,6 +90,17 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigOutputReference) validateInterpol
 	return nil
 }
 
+func (d *jsiiProxy_DatastreamStreamSourceConfigOutputReference) validatePutMongodbSourceConfigParameters(value *DatastreamStreamSourceConfigMongodbSourceConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DatastreamStreamSourceConfigOutputReference) validatePutMysqlSourceConfigParameters(value *DatastreamStreamSourceConfigMysqlSourceConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -124,6 +135,17 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigOutputReference) validatePutPostg
 }
 
 func (d *jsiiProxy_DatastreamStreamSourceConfigOutputReference) validatePutSalesforceSourceConfigParameters(value *DatastreamStreamSourceConfigSalesforceSourceConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DatastreamStreamSourceConfigOutputReference) validatePutSpannerSourceConfigParameters(value *DatastreamStreamSourceConfigSpannerSourceConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

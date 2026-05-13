@@ -39,6 +39,7 @@ type GoogleComputeFirewallPolicyWithRulesPredefinedRulesOutputReference interfac
 	RuleName() *string
 	SecurityProfileGroup() *string
 	TargetResources() *[]*string
+	TargetSecureTag() GoogleComputeFirewallPolicyWithRulesPredefinedRulesTargetSecureTagList
 	TargetServiceAccounts() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
@@ -233,6 +234,16 @@ func (j *jsiiProxy_GoogleComputeFirewallPolicyWithRulesPredefinedRulesOutputRefe
 	_jsii_.Get(
 		j,
 		"targetResources",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeFirewallPolicyWithRulesPredefinedRulesOutputReference) TargetSecureTag() GoogleComputeFirewallPolicyWithRulesPredefinedRulesTargetSecureTagList {
+	var returns GoogleComputeFirewallPolicyWithRulesPredefinedRulesTargetSecureTagList
+	_jsii_.Get(
+		j,
+		"targetSecureTag",
 		&returns,
 	)
 	return returns

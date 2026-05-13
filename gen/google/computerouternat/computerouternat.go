@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/computerouternat/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_router_nat google_compute_router_nat}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_router_nat google_compute_router_nat}.
 type ComputeRouterNat interface {
 	cdktf.TerraformResource
 	AutoNetworkTier() *string
@@ -75,6 +75,8 @@ type ComputeRouterNat interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	Nat64Subnetwork() ComputeRouterNatNat64SubnetworkList
+	Nat64SubnetworkInput() interface{}
 	NatIpAllocateOption() *string
 	SetNatIpAllocateOption(val *string)
 	NatIpAllocateOptionInput() *string
@@ -106,6 +108,9 @@ type ComputeRouterNat interface {
 	RulesInput() interface{}
 	SourceSubnetworkIpRangesToNat() *string
 	SetSourceSubnetworkIpRangesToNat(val *string)
+	SourceSubnetworkIpRangesToNat64() *string
+	SetSourceSubnetworkIpRangesToNat64(val *string)
+	SourceSubnetworkIpRangesToNat64Input() *string
 	SourceSubnetworkIpRangesToNatInput() *string
 	Subnetwork() ComputeRouterNatSubnetworkList
 	SubnetworkInput() interface{}
@@ -176,6 +181,7 @@ type ComputeRouterNat interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutLogConfig(value *ComputeRouterNatLogConfig)
+	PutNat64Subnetwork(value interface{})
 	PutRules(value interface{})
 	PutSubnetwork(value interface{})
 	PutTimeouts(value *ComputeRouterNatTimeouts)
@@ -190,6 +196,7 @@ type ComputeRouterNat interface {
 	ResetLogConfig()
 	ResetMaxPortsPerVm()
 	ResetMinPortsPerVm()
+	ResetNat64Subnetwork()
 	ResetNatIpAllocateOption()
 	ResetNatIps()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -198,6 +205,7 @@ type ComputeRouterNat interface {
 	ResetProject()
 	ResetRegion()
 	ResetRules()
+	ResetSourceSubnetworkIpRangesToNat64()
 	ResetSubnetwork()
 	ResetTcpEstablishedIdleTimeoutSec()
 	ResetTcpTimeWaitTimeoutSec()
@@ -553,6 +561,26 @@ func (j *jsiiProxy_ComputeRouterNat) NameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeRouterNat) Nat64Subnetwork() ComputeRouterNatNat64SubnetworkList {
+	var returns ComputeRouterNatNat64SubnetworkList
+	_jsii_.Get(
+		j,
+		"nat64Subnetwork",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRouterNat) Nat64SubnetworkInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"nat64SubnetworkInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeRouterNat) NatIpAllocateOption() *string {
 	var returns *string
 	_jsii_.Get(
@@ -718,6 +746,26 @@ func (j *jsiiProxy_ComputeRouterNat) SourceSubnetworkIpRangesToNat() *string {
 	_jsii_.Get(
 		j,
 		"sourceSubnetworkIpRangesToNat",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRouterNat) SourceSubnetworkIpRangesToNat64() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceSubnetworkIpRangesToNat64",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRouterNat) SourceSubnetworkIpRangesToNat64Input() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceSubnetworkIpRangesToNat64Input",
 		&returns,
 	)
 	return returns
@@ -904,7 +952,7 @@ func (j *jsiiProxy_ComputeRouterNat) UdpIdleTimeoutSecInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_router_nat google_compute_router_nat} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_router_nat google_compute_router_nat} Resource.
 func NewComputeRouterNat(scope constructs.Construct, id *string, config *ComputeRouterNatConfig) ComputeRouterNat {
 	_init_.Initialize()
 
@@ -922,7 +970,7 @@ func NewComputeRouterNat(scope constructs.Construct, id *string, config *Compute
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_router_nat google_compute_router_nat} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_router_nat google_compute_router_nat} Resource.
 func NewComputeRouterNat_Override(c ComputeRouterNat, scope constructs.Construct, id *string, config *ComputeRouterNatConfig) {
 	_init_.Initialize()
 
@@ -1184,6 +1232,17 @@ func (j *jsiiProxy_ComputeRouterNat)SetSourceSubnetworkIpRangesToNat(val *string
 	_jsii_.Set(
 		j,
 		"sourceSubnetworkIpRangesToNat",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeRouterNat)SetSourceSubnetworkIpRangesToNat64(val *string) {
+	if err := j.validateSetSourceSubnetworkIpRangesToNat64Parameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sourceSubnetworkIpRangesToNat64",
 		val,
 	)
 }
@@ -1607,6 +1666,17 @@ func (c *jsiiProxy_ComputeRouterNat) PutLogConfig(value *ComputeRouterNatLogConf
 	)
 }
 
+func (c *jsiiProxy_ComputeRouterNat) PutNat64Subnetwork(value interface{}) {
+	if err := c.validatePutNat64SubnetworkParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putNat64Subnetwork",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeRouterNat) PutRules(value interface{}) {
 	if err := c.validatePutRulesParameters(value); err != nil {
 		panic(err)
@@ -1728,6 +1798,14 @@ func (c *jsiiProxy_ComputeRouterNat) ResetMinPortsPerVm() {
 	)
 }
 
+func (c *jsiiProxy_ComputeRouterNat) ResetNat64Subnetwork() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetNat64Subnetwork",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ComputeRouterNat) ResetNatIpAllocateOption() {
 	_jsii_.InvokeVoid(
 		c,
@@ -1772,6 +1850,14 @@ func (c *jsiiProxy_ComputeRouterNat) ResetRules() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetRules",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRouterNat) ResetSourceSubnetworkIpRangesToNat64() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSourceSubnetworkIpRangesToNat64",
 		nil, // no parameters
 	)
 }

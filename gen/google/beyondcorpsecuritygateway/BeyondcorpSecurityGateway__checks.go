@@ -235,6 +235,39 @@ func (b *jsiiProxy_BeyondcorpSecurityGateway) validatePutHubsParameters(value in
 	return nil
 }
 
+func (b *jsiiProxy_BeyondcorpSecurityGateway) validatePutLoggingParameters(value *BeyondcorpSecurityGatewayLogging) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (b *jsiiProxy_BeyondcorpSecurityGateway) validatePutProxyProtocolConfigParameters(value *BeyondcorpSecurityGatewayProxyProtocolConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (b *jsiiProxy_BeyondcorpSecurityGateway) validatePutServiceDiscoveryParameters(value *BeyondcorpSecurityGatewayServiceDiscovery) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (b *jsiiProxy_BeyondcorpSecurityGateway) validatePutTimeoutsParameters(value *BeyondcorpSecurityGatewayTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

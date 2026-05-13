@@ -72,6 +72,10 @@ func (c *jsiiProxy_ComputeStoragePool) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
+func (c *jsiiProxy_ComputeStoragePool) validatePutParamsParameters(value *ComputeStoragePoolParams) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeStoragePool) validatePutTimeoutsParameters(value *ComputeStoragePoolTimeouts) error {
 	return nil
 }
@@ -109,6 +113,10 @@ func (j *jsiiProxy_ComputeStoragePool) validateSetDeletionProtectionParameters(v
 }
 
 func (j *jsiiProxy_ComputeStoragePool) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeStoragePool) validateSetLabelsParameters(val *map[string]*string) error {
 	return nil
 }
 

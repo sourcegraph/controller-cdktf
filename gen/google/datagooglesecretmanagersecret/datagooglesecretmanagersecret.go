@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagooglesecretmanagersecret/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/secret_manager_secret google_secret_manager_secret}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/secret_manager_secret google_secret_manager_secret}.
 type DataGoogleSecretManagerSecret interface {
 	cdktf.TerraformDataSource
 	Annotations() cdktf.StringMap
@@ -22,6 +22,7 @@ type DataGoogleSecretManagerSecret interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreateTime() *string
+	DeletionProtection() cdktf.IResolvable
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -62,6 +63,7 @@ type DataGoogleSecretManagerSecret interface {
 	SecretId() *string
 	SetSecretId(val *string)
 	SecretIdInput() *string
+	Tags() cdktf.StringMap
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
@@ -167,6 +169,16 @@ func (j *jsiiProxy_DataGoogleSecretManagerSecret) CreateTime() *string {
 	_jsii_.Get(
 		j,
 		"createTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSecretManagerSecret) DeletionProtection() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"deletionProtection",
 		&returns,
 	)
 	return returns
@@ -382,6 +394,16 @@ func (j *jsiiProxy_DataGoogleSecretManagerSecret) SecretIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleSecretManagerSecret) Tags() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleSecretManagerSecret) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -463,7 +485,7 @@ func (j *jsiiProxy_DataGoogleSecretManagerSecret) VersionDestroyTtl() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/secret_manager_secret google_secret_manager_secret} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/secret_manager_secret google_secret_manager_secret} Data Source.
 func NewDataGoogleSecretManagerSecret(scope constructs.Construct, id *string, config *DataGoogleSecretManagerSecretConfig) DataGoogleSecretManagerSecret {
 	_init_.Initialize()
 
@@ -481,7 +503,7 @@ func NewDataGoogleSecretManagerSecret(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/secret_manager_secret google_secret_manager_secret} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/secret_manager_secret google_secret_manager_secret} Data Source.
 func NewDataGoogleSecretManagerSecret_Override(d DataGoogleSecretManagerSecret, scope constructs.Construct, id *string, config *DataGoogleSecretManagerSecretConfig) {
 	_init_.Initialize()
 

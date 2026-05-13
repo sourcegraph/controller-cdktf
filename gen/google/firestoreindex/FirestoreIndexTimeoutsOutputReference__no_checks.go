@@ -76,6 +76,10 @@ func (j *jsiiProxy_FirestoreIndexTimeoutsOutputReference) validateSetTerraformRe
 	return nil
 }
 
+func (j *jsiiProxy_FirestoreIndexTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
+	return nil
+}
+
 func validateNewFirestoreIndexTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

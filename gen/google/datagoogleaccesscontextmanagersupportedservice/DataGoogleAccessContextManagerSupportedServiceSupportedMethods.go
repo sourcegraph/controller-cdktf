@@ -1,0 +1,6 @@
+package datagoogleaccesscontextmanagersupportedservice
+
+
+type DataGoogleAccessContextManagerSupportedServiceSupportedMethods struct {
+}
+

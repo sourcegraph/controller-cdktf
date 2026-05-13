@@ -31,6 +31,8 @@ type ContainerClusterNodePoolNodeConfigContainerdConfigOutputReference interface
 	SetInternalValue(val *ContainerClusterNodePoolNodeConfigContainerdConfig)
 	PrivateRegistryAccessConfig() ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference
 	PrivateRegistryAccessConfigInput() *ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfig
+	RegistryHosts() ContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsList
+	RegistryHostsInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -39,6 +41,8 @@ type ContainerClusterNodePoolNodeConfigContainerdConfigOutputReference interface
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	WritableCgroups() ContainerClusterNodePoolNodeConfigContainerdConfigWritableCgroupsOutputReference
+	WritableCgroupsInput() *ContainerClusterNodePoolNodeConfigContainerdConfigWritableCgroups
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -64,7 +68,11 @@ type ContainerClusterNodePoolNodeConfigContainerdConfigOutputReference interface
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutPrivateRegistryAccessConfig(value *ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfig)
+	PutRegistryHosts(value interface{})
+	PutWritableCgroups(value *ContainerClusterNodePoolNodeConfigContainerdConfigWritableCgroups)
 	ResetPrivateRegistryAccessConfig()
+	ResetRegistryHosts()
+	ResetWritableCgroups()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -150,6 +158,26 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigContainerdConfigOutputRefer
 	return returns
 }
 
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigContainerdConfigOutputReference) RegistryHosts() ContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsList {
+	var returns ContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsList
+	_jsii_.Get(
+		j,
+		"registryHosts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigContainerdConfigOutputReference) RegistryHostsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"registryHostsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigContainerdConfigOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -165,6 +193,26 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigContainerdConfigOutputRefer
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigContainerdConfigOutputReference) WritableCgroups() ContainerClusterNodePoolNodeConfigContainerdConfigWritableCgroupsOutputReference {
+	var returns ContainerClusterNodePoolNodeConfigContainerdConfigWritableCgroupsOutputReference
+	_jsii_.Get(
+		j,
+		"writableCgroups",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigContainerdConfigOutputReference) WritableCgroupsInput() *ContainerClusterNodePoolNodeConfigContainerdConfigWritableCgroups {
+	var returns *ContainerClusterNodePoolNodeConfigContainerdConfigWritableCgroups
+	_jsii_.Get(
+		j,
+		"writableCgroupsInput",
 		&returns,
 	)
 	return returns
@@ -450,10 +498,48 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigContainerdConfigOutputRefer
 	)
 }
 
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigContainerdConfigOutputReference) PutRegistryHosts(value interface{}) {
+	if err := c.validatePutRegistryHostsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putRegistryHosts",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigContainerdConfigOutputReference) PutWritableCgroups(value *ContainerClusterNodePoolNodeConfigContainerdConfigWritableCgroups) {
+	if err := c.validatePutWritableCgroupsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putWritableCgroups",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigContainerdConfigOutputReference) ResetPrivateRegistryAccessConfig() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetPrivateRegistryAccessConfig",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigContainerdConfigOutputReference) ResetRegistryHosts() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRegistryHosts",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigContainerdConfigOutputReference) ResetWritableCgroups() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetWritableCgroups",
 		nil, // no parameters
 	)
 }

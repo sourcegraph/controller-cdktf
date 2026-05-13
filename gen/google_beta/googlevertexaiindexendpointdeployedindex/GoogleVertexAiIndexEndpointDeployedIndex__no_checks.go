@@ -148,6 +148,10 @@ func (j *jsiiProxy_GoogleVertexAiIndexEndpointDeployedIndex) validateSetProvisio
 	return nil
 }
 
+func (j *jsiiProxy_GoogleVertexAiIndexEndpointDeployedIndex) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleVertexAiIndexEndpointDeployedIndex) validateSetReservedIpRangesParameters(val *[]*string) error {
 	return nil
 }

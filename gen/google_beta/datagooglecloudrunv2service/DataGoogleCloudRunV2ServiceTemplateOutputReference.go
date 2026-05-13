@@ -32,6 +32,7 @@ type DataGoogleCloudRunV2ServiceTemplateOutputReference interface {
 	// Experimental.
 	Fqn() *string
 	GpuZonalRedundancyDisabled() cdktf.IResolvable
+	HealthCheckDisabled() cdktf.IResolvable
 	InternalValue() *DataGoogleCloudRunV2ServiceTemplate
 	SetInternalValue(val *DataGoogleCloudRunV2ServiceTemplate)
 	Labels() cdktf.StringMap
@@ -177,6 +178,16 @@ func (j *jsiiProxy_DataGoogleCloudRunV2ServiceTemplateOutputReference) GpuZonalR
 	_jsii_.Get(
 		j,
 		"gpuZonalRedundancyDisabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleCloudRunV2ServiceTemplateOutputReference) HealthCheckDisabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"healthCheckDisabled",
 		&returns,
 	)
 	return returns

@@ -76,11 +76,19 @@ func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) va
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) validatePutTemplateReferenceParameters(value *GoogleDataplexDatascanDataQualitySpecRulesTemplateReference) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) validatePutUniquenessExpectationParameters(value *GoogleDataplexDatascanDataQualitySpecRulesUniquenessExpectation) error {
 	return nil
 }
 
 func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) validateSetAttributesParameters(val *map[string]*string) error {
 	return nil
 }
 
@@ -113,6 +121,10 @@ func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) va
 }
 
 func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) validateSetSuspendedParameters(val interface{}) error {
 	return nil
 }
 

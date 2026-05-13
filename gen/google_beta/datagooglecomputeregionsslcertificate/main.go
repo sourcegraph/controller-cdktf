@@ -43,6 +43,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "privateKey", GoGetter: "PrivateKey"},
+			_jsii_.MemberProperty{JsiiProperty: "privateKeyWo", GoGetter: "PrivateKeyWo"},
+			_jsii_.MemberProperty{JsiiProperty: "privateKeyWoVersion", GoGetter: "PrivateKeyWoVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "project", GoGetter: "Project"},
 			_jsii_.MemberProperty{JsiiProperty: "projectInput", GoGetter: "ProjectInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},

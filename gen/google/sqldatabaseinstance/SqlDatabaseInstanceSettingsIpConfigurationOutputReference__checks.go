@@ -313,6 +313,14 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) validateSetServerCertificateRotationModeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) validateSetSslModeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

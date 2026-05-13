@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledataprocworkflowtemplate/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_dataproc_workflow_template google_dataproc_workflow_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_dataproc_workflow_template google_dataproc_workflow_template}.
 type GoogleDataprocWorkflowTemplate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -611,7 +611,7 @@ func (j *jsiiProxy_GoogleDataprocWorkflowTemplate) VersionInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_dataproc_workflow_template google_dataproc_workflow_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_dataproc_workflow_template google_dataproc_workflow_template} Resource.
 func NewGoogleDataprocWorkflowTemplate(scope constructs.Construct, id *string, config *GoogleDataprocWorkflowTemplateConfig) GoogleDataprocWorkflowTemplate {
 	_init_.Initialize()
 
@@ -629,7 +629,7 @@ func NewGoogleDataprocWorkflowTemplate(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_dataproc_workflow_template google_dataproc_workflow_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_dataproc_workflow_template google_dataproc_workflow_template} Resource.
 func NewGoogleDataprocWorkflowTemplate_Override(g GoogleDataprocWorkflowTemplate, scope constructs.Construct, id *string, config *GoogleDataprocWorkflowTemplateConfig) {
 	_init_.Initialize()
 

@@ -21,6 +21,7 @@ type DataGoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnect
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
 	ConsumerNetwork() *string
+	ConsumerNetworkStatus() *string
 	ConsumerServiceProjectId() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
@@ -31,6 +32,8 @@ type DataGoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnect
 	Fqn() *string
 	InternalValue() *DataGoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnections
 	SetInternalValue(val *DataGoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnections)
+	IpAddress() *string
+	Status() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -108,6 +111,16 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfig
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference) ConsumerNetworkStatus() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"consumerNetworkStatus",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference) ConsumerServiceProjectId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -143,6 +156,26 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfig
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference) IpAddress() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipAddress",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference) Status() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"status",
 		&returns,
 	)
 	return returns

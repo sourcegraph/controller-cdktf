@@ -1,0 +1,82 @@
+//go:build no_runtime_type_checking
+
+package googlecesevaluation
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (g *jsiiProxy_GoogleCesEvaluationGoldenTurnsStepsExpectationAgentResponseChunksToolCallToolsetToolOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCesEvaluationGoldenTurnsStepsExpectationAgentResponseChunksToolCallToolsetToolOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCesEvaluationGoldenTurnsStepsExpectationAgentResponseChunksToolCallToolsetToolOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCesEvaluationGoldenTurnsStepsExpectationAgentResponseChunksToolCallToolsetToolOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCesEvaluationGoldenTurnsStepsExpectationAgentResponseChunksToolCallToolsetToolOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCesEvaluationGoldenTurnsStepsExpectationAgentResponseChunksToolCallToolsetToolOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCesEvaluationGoldenTurnsStepsExpectationAgentResponseChunksToolCallToolsetToolOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCesEvaluationGoldenTurnsStepsExpectationAgentResponseChunksToolCallToolsetToolOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCesEvaluationGoldenTurnsStepsExpectationAgentResponseChunksToolCallToolsetToolOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCesEvaluationGoldenTurnsStepsExpectationAgentResponseChunksToolCallToolsetToolOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCesEvaluationGoldenTurnsStepsExpectationAgentResponseChunksToolCallToolsetToolOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleCesEvaluationGoldenTurnsStepsExpectationAgentResponseChunksToolCallToolsetToolOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleCesEvaluationGoldenTurnsStepsExpectationAgentResponseChunksToolCallToolsetToolOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleCesEvaluationGoldenTurnsStepsExpectationAgentResponseChunksToolCallToolsetToolOutputReference) validateSetInternalValueParameters(val *GoogleCesEvaluationGoldenTurnsStepsExpectationAgentResponseChunksToolCallToolsetTool) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleCesEvaluationGoldenTurnsStepsExpectationAgentResponseChunksToolCallToolsetToolOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleCesEvaluationGoldenTurnsStepsExpectationAgentResponseChunksToolCallToolsetToolOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleCesEvaluationGoldenTurnsStepsExpectationAgentResponseChunksToolCallToolsetToolOutputReference) validateSetToolIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleCesEvaluationGoldenTurnsStepsExpectationAgentResponseChunksToolCallToolsetToolOutputReference) validateSetToolsetParameters(val *string) error {
+	return nil
+}
+
+func validateNewGoogleCesEvaluationGoldenTurnsStepsExpectationAgentResponseChunksToolCallToolsetToolOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+	return nil
+}
+

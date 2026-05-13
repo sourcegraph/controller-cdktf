@@ -76,6 +76,10 @@ func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheOrigin) validatePutAwsV4Authent
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheOrigin) validatePutFlexShieldingParameters(value *GoogleNetworkServicesEdgeCacheOriginFlexShielding) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheOrigin) validatePutOriginOverrideActionParameters(value *GoogleNetworkServicesEdgeCacheOriginOriginOverrideAction) error {
 	return nil
 }

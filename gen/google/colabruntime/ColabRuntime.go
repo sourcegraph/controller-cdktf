@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/colabruntime/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/colab_runtime google_colab_runtime}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_runtime google_colab_runtime}.
 type ColabRuntime interface {
 	cdktf.TerraformResource
 	AutoUpgrade() interface{}
@@ -588,7 +588,7 @@ func (j *jsiiProxy_ColabRuntime) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/colab_runtime google_colab_runtime} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_runtime google_colab_runtime} Resource.
 func NewColabRuntime(scope constructs.Construct, id *string, config *ColabRuntimeConfig) ColabRuntime {
 	_init_.Initialize()
 
@@ -606,7 +606,7 @@ func NewColabRuntime(scope constructs.Construct, id *string, config *ColabRuntim
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/colab_runtime google_colab_runtime} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_runtime google_colab_runtime} Resource.
 func NewColabRuntime_Override(c ColabRuntime, scope constructs.Construct, id *string, config *ColabRuntimeConfig) {
 	_init_.Initialize()
 

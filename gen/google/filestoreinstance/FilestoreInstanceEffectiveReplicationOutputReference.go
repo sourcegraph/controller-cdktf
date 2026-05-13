@@ -30,6 +30,7 @@ type FilestoreInstanceEffectiveReplicationOutputReference interface {
 	InternalValue() *FilestoreInstanceEffectiveReplication
 	SetInternalValue(val *FilestoreInstanceEffectiveReplication)
 	Replicas() FilestoreInstanceEffectiveReplicationReplicasList
+	Role() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -132,6 +133,16 @@ func (j *jsiiProxy_FilestoreInstanceEffectiveReplicationOutputReference) Replica
 	_jsii_.Get(
 		j,
 		"replicas",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FilestoreInstanceEffectiveReplicationOutputReference) Role() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"role",
 		&returns,
 	)
 	return returns

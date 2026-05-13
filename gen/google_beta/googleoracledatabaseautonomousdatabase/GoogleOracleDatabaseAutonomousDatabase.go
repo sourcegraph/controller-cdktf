@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleoracledatabaseautonomousdatabase/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_oracle_database_autonomous_database google_oracle_database_autonomous_database}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_oracle_database_autonomous_database google_oracle_database_autonomous_database}.
 type GoogleOracleDatabaseAutonomousDatabase interface {
 	cdktf.TerraformResource
 	AdminPassword() *string
@@ -44,6 +44,7 @@ type GoogleOracleDatabaseAutonomousDatabase interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DisasterRecoverySupportedLocations() *[]*string
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
@@ -76,6 +77,13 @@ type GoogleOracleDatabaseAutonomousDatabase interface {
 	NetworkInput() *string
 	// The tree node.
 	Node() constructs.Node
+	OdbNetwork() *string
+	SetOdbNetwork(val *string)
+	OdbNetworkInput() *string
+	OdbSubnet() *string
+	SetOdbSubnet(val *string)
+	OdbSubnetInput() *string
+	PeerAutonomousDatabases() *[]*string
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -91,6 +99,8 @@ type GoogleOracleDatabaseAutonomousDatabase interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	SourceConfig() GoogleOracleDatabaseAutonomousDatabaseSourceConfigOutputReference
+	SourceConfigInput() *GoogleOracleDatabaseAutonomousDatabaseSourceConfig
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
@@ -144,16 +154,24 @@ type GoogleOracleDatabaseAutonomousDatabase interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutProperties(value *GoogleOracleDatabaseAutonomousDatabaseProperties)
+	PutSourceConfig(value *GoogleOracleDatabaseAutonomousDatabaseSourceConfig)
 	PutTimeouts(value *GoogleOracleDatabaseAutonomousDatabaseTimeouts)
 	ResetAdminPassword()
+	ResetCidr()
+	ResetDatabase()
 	ResetDeletionProtection()
 	ResetDisplayName()
 	ResetId()
 	ResetLabels()
+	ResetNetwork()
+	ResetOdbNetwork()
+	ResetOdbSubnet()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetProperties()
+	ResetSourceConfig()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -328,6 +346,16 @@ func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) DependsOn() *[]*strin
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) DisasterRecoverySupportedLocations() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"disasterRecoverySupportedLocations",
 		&returns,
 	)
 	return returns
@@ -513,6 +541,56 @@ func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) Node() constructs.Nod
 	return returns
 }
 
+func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) OdbNetwork() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"odbNetwork",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) OdbNetworkInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"odbNetworkInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) OdbSubnet() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"odbSubnet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) OdbSubnetInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"odbSubnetInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) PeerAutonomousDatabases() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"peerAutonomousDatabases",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) Project() *string {
 	var returns *string
 	_jsii_.Get(
@@ -583,6 +661,26 @@ func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) RawOverrides() interf
 	return returns
 }
 
+func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) SourceConfig() GoogleOracleDatabaseAutonomousDatabaseSourceConfigOutputReference {
+	var returns GoogleOracleDatabaseAutonomousDatabaseSourceConfigOutputReference
+	_jsii_.Get(
+		j,
+		"sourceConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) SourceConfigInput() *GoogleOracleDatabaseAutonomousDatabaseSourceConfig {
+	var returns *GoogleOracleDatabaseAutonomousDatabaseSourceConfig
+	_jsii_.Get(
+		j,
+		"sourceConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -644,7 +742,7 @@ func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) TimeoutsInput() inter
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_oracle_database_autonomous_database google_oracle_database_autonomous_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_oracle_database_autonomous_database google_oracle_database_autonomous_database} Resource.
 func NewGoogleOracleDatabaseAutonomousDatabase(scope constructs.Construct, id *string, config *GoogleOracleDatabaseAutonomousDatabaseConfig) GoogleOracleDatabaseAutonomousDatabase {
 	_init_.Initialize()
 
@@ -662,7 +760,7 @@ func NewGoogleOracleDatabaseAutonomousDatabase(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_oracle_database_autonomous_database google_oracle_database_autonomous_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_oracle_database_autonomous_database google_oracle_database_autonomous_database} Resource.
 func NewGoogleOracleDatabaseAutonomousDatabase_Override(g GoogleOracleDatabaseAutonomousDatabase, scope constructs.Construct, id *string, config *GoogleOracleDatabaseAutonomousDatabaseConfig) {
 	_init_.Initialize()
 
@@ -828,6 +926,28 @@ func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase)SetNetwork(val *string
 	_jsii_.Set(
 		j,
 		"network",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase)SetOdbNetwork(val *string) {
+	if err := j.validateSetOdbNetworkParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"odbNetwork",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase)SetOdbSubnet(val *string) {
+	if err := j.validateSetOdbSubnetParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"odbSubnet",
 		val,
 	)
 }
@@ -1226,6 +1346,17 @@ func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) PutProperties(value *
 	)
 }
 
+func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) PutSourceConfig(value *GoogleOracleDatabaseAutonomousDatabaseSourceConfig) {
+	if err := g.validatePutSourceConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSourceConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) PutTimeouts(value *GoogleOracleDatabaseAutonomousDatabaseTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1241,6 +1372,22 @@ func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) ResetAdminPassword() 
 	_jsii_.InvokeVoid(
 		g,
 		"resetAdminPassword",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) ResetCidr() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCidr",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) ResetDatabase() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDatabase",
 		nil, // no parameters
 	)
 }
@@ -1277,6 +1424,30 @@ func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) ResetLabels() {
 	)
 }
 
+func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) ResetNetwork() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNetwork",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) ResetOdbNetwork() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetOdbNetwork",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) ResetOdbSubnet() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetOdbSubnet",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1289,6 +1460,22 @@ func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) ResetProject() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) ResetProperties() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetProperties",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) ResetSourceConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSourceConfig",
 		nil, // no parameters
 	)
 }

@@ -68,6 +68,10 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigOutp
 	return nil
 }
 
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference) validateSetNetworkAttachmentUriParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference) validateSetPscEnabledParameters(val interface{}) error {
 	return nil
 }

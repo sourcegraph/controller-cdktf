@@ -1,0 +1,6 @@
+package networkservicesmulticastgroupconsumeractivation
+
+
+type NetworkServicesMulticastGroupConsumerActivationState struct {
+}
+

@@ -235,6 +235,17 @@ func (g *jsiiProxy_GoogleBackupDrBackupPlan) validatePutBackupRulesParameters(va
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBackupDrBackupPlan) validatePutDiskBackupPlanPropertiesParameters(value *GoogleBackupDrBackupPlanDiskBackupPlanProperties) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBackupDrBackupPlan) validatePutTimeoutsParameters(value *GoogleBackupDrBackupPlanTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -417,6 +428,22 @@ func (j *jsiiProxy_GoogleBackupDrBackupPlan) validateSetLifecycleParameters(val 
 }
 
 func (j *jsiiProxy_GoogleBackupDrBackupPlan) validateSetLocationParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleBackupDrBackupPlan) validateSetLogRetentionDaysParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleBackupDrBackupPlan) validateSetMaxCustomOnDemandRetentionDaysParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

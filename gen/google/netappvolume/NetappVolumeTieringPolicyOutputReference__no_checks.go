@@ -60,6 +60,10 @@ func (j *jsiiProxy_NetappVolumeTieringPolicyOutputReference) validateSetCoolingT
 	return nil
 }
 
+func (j *jsiiProxy_NetappVolumeTieringPolicyOutputReference) validateSetHotTierBypassModeEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetappVolumeTieringPolicyOutputReference) validateSetInternalValueParameters(val *NetappVolumeTieringPolicy) error {
 	return nil
 }

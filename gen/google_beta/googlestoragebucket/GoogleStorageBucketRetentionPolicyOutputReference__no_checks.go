@@ -64,7 +64,7 @@ func (j *jsiiProxy_GoogleStorageBucketRetentionPolicyOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageBucketRetentionPolicyOutputReference) validateSetRetentionPeriodParameters(val *float64) error {
+func (j *jsiiProxy_GoogleStorageBucketRetentionPolicyOutputReference) validateSetRetentionPeriodParameters(val *string) error {
 	return nil
 }
 

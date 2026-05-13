@@ -31,6 +31,7 @@ type BackupDrBackupPlanAssociationRulesConfigInfoOutputReference interface {
 	SetInternalValue(val *BackupDrBackupPlanAssociationRulesConfigInfo)
 	LastBackupError() BackupDrBackupPlanAssociationRulesConfigInfoLastBackupErrorList
 	LastBackupState() *string
+	LastSuccessfulBackupConsistencyTime() *string
 	RuleId() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -144,6 +145,16 @@ func (j *jsiiProxy_BackupDrBackupPlanAssociationRulesConfigInfoOutputReference) 
 	_jsii_.Get(
 		j,
 		"lastBackupState",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BackupDrBackupPlanAssociationRulesConfigInfoOutputReference) LastSuccessfulBackupConsistencyTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lastSuccessfulBackupConsistencyTime",
 		&returns,
 	)
 	return returns

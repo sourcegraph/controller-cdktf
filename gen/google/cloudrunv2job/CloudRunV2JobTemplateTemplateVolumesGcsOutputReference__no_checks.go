@@ -64,6 +64,10 @@ func (j *jsiiProxy_CloudRunV2JobTemplateTemplateVolumesGcsOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_CloudRunV2JobTemplateTemplateVolumesGcsOutputReference) validateSetMountOptionsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudRunV2JobTemplateTemplateVolumesGcsOutputReference) validateSetReadOnlyParameters(val interface{}) error {
 	return nil
 }

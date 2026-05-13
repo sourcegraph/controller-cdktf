@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlefirebaseapphostingbuild/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_firebase_app_hosting_build google_firebase_app_hosting_build}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_firebase_app_hosting_build google_firebase_app_hosting_build}.
 type GoogleFirebaseAppHostingBuild interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -673,7 +673,7 @@ func (j *jsiiProxy_GoogleFirebaseAppHostingBuild) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_firebase_app_hosting_build google_firebase_app_hosting_build} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_firebase_app_hosting_build google_firebase_app_hosting_build} Resource.
 func NewGoogleFirebaseAppHostingBuild(scope constructs.Construct, id *string, config *GoogleFirebaseAppHostingBuildConfig) GoogleFirebaseAppHostingBuild {
 	_init_.Initialize()
 
@@ -691,7 +691,7 @@ func NewGoogleFirebaseAppHostingBuild(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_firebase_app_hosting_build google_firebase_app_hosting_build} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_firebase_app_hosting_build google_firebase_app_hosting_build} Resource.
 func NewGoogleFirebaseAppHostingBuild_Override(g GoogleFirebaseAppHostingBuild, scope constructs.Construct, id *string, config *GoogleFirebaseAppHostingBuildConfig) {
 	_init_.Initialize()
 

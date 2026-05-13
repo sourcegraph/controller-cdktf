@@ -88,6 +88,10 @@ func (g *jsiiProxy_GooglePubsubSubscription) validatePutExpirationPolicyParamete
 	return nil
 }
 
+func (g *jsiiProxy_GooglePubsubSubscription) validatePutMessageTransformsParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GooglePubsubSubscription) validatePutPushConfigParameters(value *GooglePubsubSubscriptionPushConfig) error {
 	return nil
 }
@@ -169,6 +173,10 @@ func (j *jsiiProxy_GooglePubsubSubscription) validateSetProvisionersParameters(v
 }
 
 func (j *jsiiProxy_GooglePubsubSubscription) validateSetRetainAckedMessagesParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GooglePubsubSubscription) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }
 

@@ -27,6 +27,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "diskId", GoGetter: "DiskId"},
 			_jsii_.MemberProperty{JsiiProperty: "effectiveLabels", GoGetter: "EffectiveLabels"},
 			_jsii_.MemberProperty{JsiiProperty: "enableConfidentialCompute", GoGetter: "EnableConfidentialCompute"},
+			_jsii_.MemberProperty{JsiiProperty: "eraseWindowsVssSignature", GoGetter: "EraseWindowsVssSignature"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},

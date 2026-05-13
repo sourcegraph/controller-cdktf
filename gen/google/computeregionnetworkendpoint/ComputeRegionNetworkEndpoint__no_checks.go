@@ -92,6 +92,10 @@ func validateComputeRegionNetworkEndpoint_IsTerraformResourceParameters(x interf
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRegionNetworkEndpoint) validateSetClientDestinationPortParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRegionNetworkEndpoint) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -105,6 +109,10 @@ func (j *jsiiProxy_ComputeRegionNetworkEndpoint) validateSetFqdnParameters(val *
 }
 
 func (j *jsiiProxy_ComputeRegionNetworkEndpoint) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeRegionNetworkEndpoint) validateSetInstanceParameters(val *string) error {
 	return nil
 }
 

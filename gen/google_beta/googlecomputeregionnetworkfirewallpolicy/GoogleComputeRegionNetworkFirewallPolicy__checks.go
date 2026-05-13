@@ -377,6 +377,14 @@ func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicy) validateSetNamePara
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicy) validateSetPolicyTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicy) validateSetProjectParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

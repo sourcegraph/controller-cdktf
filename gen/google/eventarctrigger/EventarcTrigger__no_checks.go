@@ -80,6 +80,10 @@ func (e *jsiiProxy_EventarcTrigger) validatePutMatchingCriteriaParameters(value 
 	return nil
 }
 
+func (e *jsiiProxy_EventarcTrigger) validatePutRetryPolicyParameters(value *EventarcTriggerRetryPolicy) error {
+	return nil
+}
+
 func (e *jsiiProxy_EventarcTrigger) validatePutTimeoutsParameters(value *EventarcTriggerTimeouts) error {
 	return nil
 }

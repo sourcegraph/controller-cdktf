@@ -9,7 +9,7 @@ type GoogleComputeRegionNetworkEndpointGroupPscData struct {
 	// private-service-connect, then PSC NEG will be connected to a first port in the
 	// available PSC producer port range.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_region_network_endpoint_group#producer_port GoogleComputeRegionNetworkEndpointGroup#producer_port}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_region_network_endpoint_group#producer_port GoogleComputeRegionNetworkEndpointGroup#producer_port}
 	ProducerPort *string `field:"optional" json:"producerPort" yaml:"producerPort"`
 }
 

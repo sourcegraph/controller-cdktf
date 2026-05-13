@@ -9,9 +9,10 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagoogleoracledatabasecloudvmcluster/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_oracle_database_cloud_vm_cluster google_oracle_database_cloud_vm_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/data-sources/google_oracle_database_cloud_vm_cluster google_oracle_database_cloud_vm_cluster}.
 type DataGoogleOracleDatabaseCloudVmCluster interface {
 	cdktf.TerraformDataSource
+	BackupOdbSubnet() *string
 	BackupSubnetCidr() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -58,6 +59,8 @@ type DataGoogleOracleDatabaseCloudVmCluster interface {
 	Network() *string
 	// The tree node.
 	Node() constructs.Node
+	OdbNetwork() *string
+	OdbSubnet() *string
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -122,6 +125,16 @@ type DataGoogleOracleDatabaseCloudVmCluster interface {
 // The jsii proxy struct for DataGoogleOracleDatabaseCloudVmCluster
 type jsiiProxy_DataGoogleOracleDatabaseCloudVmCluster struct {
 	internal.Type__cdktfTerraformDataSource
+}
+
+func (j *jsiiProxy_DataGoogleOracleDatabaseCloudVmCluster) BackupOdbSubnet() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"backupOdbSubnet",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataGoogleOracleDatabaseCloudVmCluster) BackupSubnetCidr() *string {
@@ -384,6 +397,26 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseCloudVmCluster) Node() constructs.Nod
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleOracleDatabaseCloudVmCluster) OdbNetwork() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"odbNetwork",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleOracleDatabaseCloudVmCluster) OdbSubnet() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"odbSubnet",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleOracleDatabaseCloudVmCluster) Project() *string {
 	var returns *string
 	_jsii_.Get(
@@ -475,7 +508,7 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseCloudVmCluster) TerraformResourceType
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_oracle_database_cloud_vm_cluster google_oracle_database_cloud_vm_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/data-sources/google_oracle_database_cloud_vm_cluster google_oracle_database_cloud_vm_cluster} Data Source.
 func NewDataGoogleOracleDatabaseCloudVmCluster(scope constructs.Construct, id *string, config *DataGoogleOracleDatabaseCloudVmClusterConfig) DataGoogleOracleDatabaseCloudVmCluster {
 	_init_.Initialize()
 
@@ -493,7 +526,7 @@ func NewDataGoogleOracleDatabaseCloudVmCluster(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_oracle_database_cloud_vm_cluster google_oracle_database_cloud_vm_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/data-sources/google_oracle_database_cloud_vm_cluster google_oracle_database_cloud_vm_cluster} Data Source.
 func NewDataGoogleOracleDatabaseCloudVmCluster_Override(d DataGoogleOracleDatabaseCloudVmCluster, scope constructs.Construct, id *string, config *DataGoogleOracleDatabaseCloudVmClusterConfig) {
 	_init_.Initialize()
 

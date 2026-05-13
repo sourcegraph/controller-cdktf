@@ -108,6 +108,10 @@ func validateGoogleComputeRegionDisk_IsTerraformResourceParameters(x interface{}
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRegionDisk) validateSetAccessModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRegionDisk) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -125,6 +129,10 @@ func (j *jsiiProxy_GoogleComputeRegionDisk) validateSetCreateSnapshotBeforeDestr
 }
 
 func (j *jsiiProxy_GoogleComputeRegionDisk) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) validateSetEraseWindowsVssSignatureParameters(val interface{}) error {
 	return nil
 }
 
@@ -157,6 +165,14 @@ func (j *jsiiProxy_GoogleComputeRegionDisk) validateSetPhysicalBlockSizeBytesPar
 }
 
 func (j *jsiiProxy_GoogleComputeRegionDisk) validateSetProjectParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) validateSetProvisionedIopsParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) validateSetProvisionedThroughputParameters(val *float64) error {
 	return nil
 }
 

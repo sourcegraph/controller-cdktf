@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigOutputReference) vali
 	return nil
 }
 
+func (g *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigOutputReference) validatePutColabImageParameters(value *GoogleColabRuntimeTemplateSoftwareConfigColabImage) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigOutputReference) validatePutEnvParameters(value interface{}) error {
 	return nil
 }

@@ -124,6 +124,10 @@ func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicy) validateSetProvision
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicy) validateSetShortNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicy) validateSetTypeParameters(val *string) error {
 	return nil
 }

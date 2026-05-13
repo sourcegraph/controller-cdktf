@@ -2,10 +2,6 @@ package datalosspreventionjobtrigger
 
 
 type DataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfig struct {
-	// table block.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/data_loss_prevention_job_trigger#table DataLossPreventionJobTrigger#table}
-	Table *DataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigTable `field:"required" json:"table" yaml:"table"`
 	// Schema used for writing the findings for Inspect jobs.
 	//
 	// This field is only used for
@@ -17,7 +13,15 @@ type DataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfig struc
 	// table with no schema, and no changes will be made to an existing table that has a schema.
 	// Only for use with external storage. Possible values: ["BASIC_COLUMNS", "GCS_COLUMNS", "DATASTORE_COLUMNS", "BIG_QUERY_COLUMNS", "ALL_COLUMNS"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/data_loss_prevention_job_trigger#output_schema DataLossPreventionJobTrigger#output_schema}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/data_loss_prevention_job_trigger#output_schema DataLossPreventionJobTrigger#output_schema}
 	OutputSchema *string `field:"optional" json:"outputSchema" yaml:"outputSchema"`
+	// storage_path block.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/data_loss_prevention_job_trigger#storage_path DataLossPreventionJobTrigger#storage_path}
+	StoragePath *DataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigStoragePath `field:"optional" json:"storagePath" yaml:"storagePath"`
+	// table block.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/data_loss_prevention_job_trigger#table DataLossPreventionJobTrigger#table}
+	Table *DataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigTable `field:"optional" json:"table" yaml:"table"`
 }
 

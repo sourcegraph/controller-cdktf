@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledataprocgdcserviceinstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_dataproc_gdc_service_instance google_dataproc_gdc_service_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_dataproc_gdc_service_instance google_dataproc_gdc_service_instance}.
 type GoogleDataprocGdcServiceInstance interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -642,7 +642,7 @@ func (j *jsiiProxy_GoogleDataprocGdcServiceInstance) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_dataproc_gdc_service_instance google_dataproc_gdc_service_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_dataproc_gdc_service_instance google_dataproc_gdc_service_instance} Resource.
 func NewGoogleDataprocGdcServiceInstance(scope constructs.Construct, id *string, config *GoogleDataprocGdcServiceInstanceConfig) GoogleDataprocGdcServiceInstance {
 	_init_.Initialize()
 
@@ -660,7 +660,7 @@ func NewGoogleDataprocGdcServiceInstance(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_dataproc_gdc_service_instance google_dataproc_gdc_service_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_dataproc_gdc_service_instance google_dataproc_gdc_service_instance} Resource.
 func NewGoogleDataprocGdcServiceInstance_Override(g GoogleDataprocGdcServiceInstance, scope constructs.Construct, id *string, config *GoogleDataprocGdcServiceInstanceConfig) {
 	_init_.Initialize()
 

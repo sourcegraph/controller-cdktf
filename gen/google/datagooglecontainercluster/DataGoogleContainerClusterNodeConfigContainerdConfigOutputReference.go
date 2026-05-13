@@ -30,6 +30,7 @@ type DataGoogleContainerClusterNodeConfigContainerdConfigOutputReference interfa
 	InternalValue() *DataGoogleContainerClusterNodeConfigContainerdConfig
 	SetInternalValue(val *DataGoogleContainerClusterNodeConfigContainerdConfig)
 	PrivateRegistryAccessConfig() DataGoogleContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigList
+	RegistryHosts() DataGoogleContainerClusterNodeConfigContainerdConfigRegistryHostsList
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -38,6 +39,7 @@ type DataGoogleContainerClusterNodeConfigContainerdConfigOutputReference interfa
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	WritableCgroups() DataGoogleContainerClusterNodeConfigContainerdConfigWritableCgroupsList
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -137,6 +139,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigContainerdConfigOutputRef
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigContainerdConfigOutputReference) RegistryHosts() DataGoogleContainerClusterNodeConfigContainerdConfigRegistryHostsList {
+	var returns DataGoogleContainerClusterNodeConfigContainerdConfigRegistryHostsList
+	_jsii_.Get(
+		j,
+		"registryHosts",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigContainerdConfigOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -152,6 +164,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigContainerdConfigOutputRef
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigContainerdConfigOutputReference) WritableCgroups() DataGoogleContainerClusterNodeConfigContainerdConfigWritableCgroupsList {
+	var returns DataGoogleContainerClusterNodeConfigContainerdConfigWritableCgroupsList
+	_jsii_.Get(
+		j,
+		"writableCgroups",
 		&returns,
 	)
 	return returns

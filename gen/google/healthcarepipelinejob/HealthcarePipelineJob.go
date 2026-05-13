@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/healthcarepipelinejob/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/healthcare_pipeline_job google_healthcare_pipeline_job}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_pipeline_job google_healthcare_pipeline_job}.
 type HealthcarePipelineJob interface {
 	cdktf.TerraformResource
 	BackfillPipelineJob() HealthcarePipelineJobBackfillPipelineJobOutputReference
@@ -553,7 +553,7 @@ func (j *jsiiProxy_HealthcarePipelineJob) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/healthcare_pipeline_job google_healthcare_pipeline_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_pipeline_job google_healthcare_pipeline_job} Resource.
 func NewHealthcarePipelineJob(scope constructs.Construct, id *string, config *HealthcarePipelineJobConfig) HealthcarePipelineJob {
 	_init_.Initialize()
 
@@ -571,7 +571,7 @@ func NewHealthcarePipelineJob(scope constructs.Construct, id *string, config *He
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/healthcare_pipeline_job google_healthcare_pipeline_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_pipeline_job google_healthcare_pipeline_job} Resource.
 func NewHealthcarePipelineJob_Override(h HealthcarePipelineJob, scope constructs.Construct, id *string, config *HealthcarePipelineJobConfig) {
 	_init_.Initialize()
 

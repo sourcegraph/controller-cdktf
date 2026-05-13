@@ -742,6 +742,8 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorTopology", GoGetter: "AcceleratorTopology"},
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorTopologyInput", GoGetter: "AcceleratorTopologyInput"},
+			_jsii_.MemberProperty{JsiiProperty: "acceleratorTopologyMode", GoGetter: "AcceleratorTopologyMode"},
+			_jsii_.MemberProperty{JsiiProperty: "acceleratorTopologyModeInput", GoGetter: "AcceleratorTopologyModeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -762,6 +764,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "maxTopologyDistance", GoGetter: "MaxTopologyDistance"},
 			_jsii_.MemberProperty{JsiiProperty: "maxTopologyDistanceInput", GoGetter: "MaxTopologyDistanceInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAcceleratorTopology", GoMethod: "ResetAcceleratorTopology"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAcceleratorTopologyMode", GoMethod: "ResetAcceleratorTopologyMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMaxTopologyDistance", GoMethod: "ResetMaxTopologyDistance"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},

@@ -9,9 +9,11 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/lustreinstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/lustre_instance google_lustre_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/lustre_instance google_lustre_instance}.
 type LustreInstance interface {
 	cdktf.TerraformResource
+	AccessRulesOptions() LustreInstanceAccessRulesOptionsOutputReference
+	AccessRulesOptionsInput() *LustreInstanceAccessRulesOptions
 	CapacityGib() *string
 	SetCapacityGib(val *string)
 	CapacityGibInput() *string
@@ -35,6 +37,8 @@ type LustreInstance interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	DynamicTierOptions() LustreInstanceDynamicTierOptionsOutputReference
+	DynamicTierOptionsInput() *LustreInstanceDynamicTierOptions
 	EffectiveLabels() cdktf.StringMap
 	Filesystem() *string
 	SetFilesystem(val *string)
@@ -56,6 +60,9 @@ type LustreInstance interface {
 	InstanceId() *string
 	SetInstanceId(val *string)
 	InstanceIdInput() *string
+	KmsKey() *string
+	SetKmsKey(val *string)
+	KmsKeyInput() *string
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
 	LabelsInput() *map[string]*string
@@ -66,6 +73,8 @@ type LustreInstance interface {
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
+	MaintenancePolicy() LustreInstanceMaintenancePolicyOutputReference
+	MaintenancePolicyInput() *LustreInstanceMaintenancePolicy
 	MountPoint() *string
 	Name() *string
 	Network() *string
@@ -73,6 +82,12 @@ type LustreInstance interface {
 	NetworkInput() *string
 	// The tree node.
 	Node() constructs.Node
+	PerUnitStorageThroughput() *string
+	SetPerUnitStorageThroughput(val *string)
+	PerUnitStorageThroughputInput() *string
+	PlacementPolicy() *string
+	SetPlacementPolicy(val *string)
+	PlacementPolicyInput() *string
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -87,6 +102,7 @@ type LustreInstance interface {
 	// Experimental.
 	RawOverrides() interface{}
 	State() *string
+	StateReason() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
@@ -96,6 +112,8 @@ type LustreInstance interface {
 	TerraformResourceType() *string
 	Timeouts() LustreInstanceTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	Uid() *string
+	UpcomingMaintenanceSchedule() LustreInstanceUpcomingMaintenanceScheduleList
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
@@ -140,14 +158,23 @@ type LustreInstance interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAccessRulesOptions(value *LustreInstanceAccessRulesOptions)
+	PutDynamicTierOptions(value *LustreInstanceDynamicTierOptions)
+	PutMaintenancePolicy(value *LustreInstanceMaintenancePolicy)
 	PutTimeouts(value *LustreInstanceTimeouts)
+	ResetAccessRulesOptions()
 	ResetDescription()
+	ResetDynamicTierOptions()
 	ResetGkeSupportEnabled()
 	ResetId()
+	ResetKmsKey()
 	ResetLabels()
+	ResetMaintenancePolicy()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPerUnitStorageThroughput()
+	ResetPlacementPolicy()
 	ResetProject()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -166,6 +193,26 @@ type LustreInstance interface {
 // The jsii proxy struct for LustreInstance
 type jsiiProxy_LustreInstance struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_LustreInstance) AccessRulesOptions() LustreInstanceAccessRulesOptionsOutputReference {
+	var returns LustreInstanceAccessRulesOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"accessRulesOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LustreInstance) AccessRulesOptionsInput() *LustreInstanceAccessRulesOptions {
+	var returns *LustreInstanceAccessRulesOptions
+	_jsii_.Get(
+		j,
+		"accessRulesOptionsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_LustreInstance) CapacityGib() *string {
@@ -263,6 +310,26 @@ func (j *jsiiProxy_LustreInstance) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LustreInstance) DynamicTierOptions() LustreInstanceDynamicTierOptionsOutputReference {
+	var returns LustreInstanceDynamicTierOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"dynamicTierOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LustreInstance) DynamicTierOptionsInput() *LustreInstanceDynamicTierOptions {
+	var returns *LustreInstanceDynamicTierOptions
+	_jsii_.Get(
+		j,
+		"dynamicTierOptionsInput",
 		&returns,
 	)
 	return returns
@@ -388,6 +455,26 @@ func (j *jsiiProxy_LustreInstance) InstanceIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_LustreInstance) KmsKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LustreInstance) KmsKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKeyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LustreInstance) Labels() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -438,6 +525,26 @@ func (j *jsiiProxy_LustreInstance) LocationInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_LustreInstance) MaintenancePolicy() LustreInstanceMaintenancePolicyOutputReference {
+	var returns LustreInstanceMaintenancePolicyOutputReference
+	_jsii_.Get(
+		j,
+		"maintenancePolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LustreInstance) MaintenancePolicyInput() *LustreInstanceMaintenancePolicy {
+	var returns *LustreInstanceMaintenancePolicy
+	_jsii_.Get(
+		j,
+		"maintenancePolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LustreInstance) MountPoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -483,6 +590,46 @@ func (j *jsiiProxy_LustreInstance) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LustreInstance) PerUnitStorageThroughput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"perUnitStorageThroughput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LustreInstance) PerUnitStorageThroughputInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"perUnitStorageThroughputInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LustreInstance) PlacementPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"placementPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LustreInstance) PlacementPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"placementPolicyInput",
 		&returns,
 	)
 	return returns
@@ -548,6 +695,16 @@ func (j *jsiiProxy_LustreInstance) State() *string {
 	return returns
 }
 
+func (j *jsiiProxy_LustreInstance) StateReason() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"stateReason",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LustreInstance) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -608,6 +765,26 @@ func (j *jsiiProxy_LustreInstance) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_LustreInstance) Uid() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"uid",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LustreInstance) UpcomingMaintenanceSchedule() LustreInstanceUpcomingMaintenanceScheduleList {
+	var returns LustreInstanceUpcomingMaintenanceScheduleList
+	_jsii_.Get(
+		j,
+		"upcomingMaintenanceSchedule",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LustreInstance) UpdateTime() *string {
 	var returns *string
 	_jsii_.Get(
@@ -619,7 +796,7 @@ func (j *jsiiProxy_LustreInstance) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/lustre_instance google_lustre_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/lustre_instance google_lustre_instance} Resource.
 func NewLustreInstance(scope constructs.Construct, id *string, config *LustreInstanceConfig) LustreInstance {
 	_init_.Initialize()
 
@@ -637,7 +814,7 @@ func NewLustreInstance(scope constructs.Construct, id *string, config *LustreIns
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/lustre_instance google_lustre_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/lustre_instance google_lustre_instance} Resource.
 func NewLustreInstance_Override(l LustreInstance, scope constructs.Construct, id *string, config *LustreInstanceConfig) {
 	_init_.Initialize()
 
@@ -752,6 +929,17 @@ func (j *jsiiProxy_LustreInstance)SetInstanceId(val *string) {
 	)
 }
 
+func (j *jsiiProxy_LustreInstance)SetKmsKey(val *string) {
+	if err := j.validateSetKmsKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kmsKey",
+		val,
+	)
+}
+
 func (j *jsiiProxy_LustreInstance)SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
@@ -792,6 +980,28 @@ func (j *jsiiProxy_LustreInstance)SetNetwork(val *string) {
 	_jsii_.Set(
 		j,
 		"network",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LustreInstance)SetPerUnitStorageThroughput(val *string) {
+	if err := j.validateSetPerUnitStorageThroughputParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"perUnitStorageThroughput",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LustreInstance)SetPlacementPolicy(val *string) {
+	if err := j.validateSetPlacementPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"placementPolicy",
 		val,
 	)
 }
@@ -1179,6 +1389,39 @@ func (l *jsiiProxy_LustreInstance) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (l *jsiiProxy_LustreInstance) PutAccessRulesOptions(value *LustreInstanceAccessRulesOptions) {
+	if err := l.validatePutAccessRulesOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putAccessRulesOptions",
+		[]interface{}{value},
+	)
+}
+
+func (l *jsiiProxy_LustreInstance) PutDynamicTierOptions(value *LustreInstanceDynamicTierOptions) {
+	if err := l.validatePutDynamicTierOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putDynamicTierOptions",
+		[]interface{}{value},
+	)
+}
+
+func (l *jsiiProxy_LustreInstance) PutMaintenancePolicy(value *LustreInstanceMaintenancePolicy) {
+	if err := l.validatePutMaintenancePolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putMaintenancePolicy",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LustreInstance) PutTimeouts(value *LustreInstanceTimeouts) {
 	if err := l.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1190,10 +1433,26 @@ func (l *jsiiProxy_LustreInstance) PutTimeouts(value *LustreInstanceTimeouts) {
 	)
 }
 
+func (l *jsiiProxy_LustreInstance) ResetAccessRulesOptions() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetAccessRulesOptions",
+		nil, // no parameters
+	)
+}
+
 func (l *jsiiProxy_LustreInstance) ResetDescription() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LustreInstance) ResetDynamicTierOptions() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetDynamicTierOptions",
 		nil, // no parameters
 	)
 }
@@ -1214,6 +1473,14 @@ func (l *jsiiProxy_LustreInstance) ResetId() {
 	)
 }
 
+func (l *jsiiProxy_LustreInstance) ResetKmsKey() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetKmsKey",
+		nil, // no parameters
+	)
+}
+
 func (l *jsiiProxy_LustreInstance) ResetLabels() {
 	_jsii_.InvokeVoid(
 		l,
@@ -1222,10 +1489,34 @@ func (l *jsiiProxy_LustreInstance) ResetLabels() {
 	)
 }
 
+func (l *jsiiProxy_LustreInstance) ResetMaintenancePolicy() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetMaintenancePolicy",
+		nil, // no parameters
+	)
+}
+
 func (l *jsiiProxy_LustreInstance) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LustreInstance) ResetPerUnitStorageThroughput() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetPerUnitStorageThroughput",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LustreInstance) ResetPlacementPolicy() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetPlacementPolicy",
 		nil, // no parameters
 	)
 }

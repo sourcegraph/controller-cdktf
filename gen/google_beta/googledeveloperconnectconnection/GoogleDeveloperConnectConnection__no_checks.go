@@ -100,6 +100,10 @@ func (g *jsiiProxy_GoogleDeveloperConnectConnection) validatePutGitlabEnterprise
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDeveloperConnectConnection) validatePutHttpConfigParameters(value *GoogleDeveloperConnectConnectionHttpConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDeveloperConnectConnection) validatePutTimeoutsParameters(value *GoogleDeveloperConnectConnectionTimeouts) error {
 	return nil
 }

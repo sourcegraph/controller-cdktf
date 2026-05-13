@@ -56,6 +56,10 @@ func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference)
 	return nil
 }
 
+func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference) validateSetCloudfrontDomainParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -64,7 +68,15 @@ func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference)
 	return nil
 }
 
+func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference) validateSetCredentialsSecretParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference) validateSetInternalValueParameters(val *StorageTransferJobTransferSpecAwsS3DataSource) error {
+	return nil
+}
+
+func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference) validateSetManagedPrivateNetworkParameters(val interface{}) error {
 	return nil
 }
 

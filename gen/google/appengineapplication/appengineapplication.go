@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/appengineapplication/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/app_engine_application google_app_engine_application}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/app_engine_application google_app_engine_application}.
 type AppEngineApplication interface {
 	cdktf.TerraformResource
 	AppId() *string
@@ -80,6 +80,9 @@ type AppEngineApplication interface {
 	ServingStatus() *string
 	SetServingStatus(val *string)
 	ServingStatusInput() *string
+	SslPolicy() *string
+	SetSslPolicy(val *string)
+	SslPolicyInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -145,6 +148,7 @@ type AppEngineApplication interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetServingStatus()
+	ResetSslPolicy()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -514,6 +518,26 @@ func (j *jsiiProxy_AppEngineApplication) ServingStatusInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AppEngineApplication) SslPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sslPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppEngineApplication) SslPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sslPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AppEngineApplication) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -575,7 +599,7 @@ func (j *jsiiProxy_AppEngineApplication) UrlDispatchRule() AppEngineApplicationU
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/app_engine_application google_app_engine_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/app_engine_application google_app_engine_application} Resource.
 func NewAppEngineApplication(scope constructs.Construct, id *string, config *AppEngineApplicationConfig) AppEngineApplication {
 	_init_.Initialize()
 
@@ -593,7 +617,7 @@ func NewAppEngineApplication(scope constructs.Construct, id *string, config *App
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/app_engine_application google_app_engine_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/app_engine_application google_app_engine_application} Resource.
 func NewAppEngineApplication_Override(a AppEngineApplication, scope constructs.Construct, id *string, config *AppEngineApplicationConfig) {
 	_init_.Initialize()
 
@@ -734,6 +758,17 @@ func (j *jsiiProxy_AppEngineApplication)SetServingStatus(val *string) {
 	_jsii_.Set(
 		j,
 		"servingStatus",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppEngineApplication)SetSslPolicy(val *string) {
+	if err := j.validateSetSslPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sslPolicy",
 		val,
 	)
 }
@@ -1184,6 +1219,14 @@ func (a *jsiiProxy_AppEngineApplication) ResetServingStatus() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetServingStatus",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppEngineApplication) ResetSslPolicy() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetSslPolicy",
 		nil, // no parameters
 	)
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleComputeReservationSpecificReservationInstanceProperties
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeReservationSpecificReservationInstancePropertiesOutputReference) validateSetMaintenanceIntervalParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeReservationSpecificReservationInstancePropertiesOutputReference) validateSetMinCpuPlatformParameters(val *string) error {
 	return nil
 }

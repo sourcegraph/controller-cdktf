@@ -31,6 +31,9 @@ type GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputReference interfac
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	IgmpQuery() *string
+	SetIgmpQuery(val *string)
+	IgmpQueryInput() *string
 	InternalIpv6PrefixLength() *float64
 	SetInternalIpv6PrefixLength(val *float64)
 	InternalIpv6PrefixLengthInput() *float64
@@ -45,6 +48,9 @@ type GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputReference interfac
 	Name() *string
 	Network() *string
 	SetNetwork(val *string)
+	NetworkAttachment() *string
+	SetNetworkAttachment(val *string)
+	NetworkAttachmentInput() *string
 	NetworkInput() *string
 	NetworkIp() *string
 	SetNetworkIp(val *string)
@@ -52,6 +58,7 @@ type GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputReference interfac
 	NicType() *string
 	SetNicType(val *string)
 	NicTypeInput() *string
+	ParentNicName() *string
 	QueueCount() *float64
 	SetQueueCount(val *float64)
 	QueueCountInput() *float64
@@ -72,6 +79,9 @@ type GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputReference interfac
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Vlan() *float64
+	SetVlan(val *float64)
+	VlanInput() *float64
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -101,16 +111,19 @@ type GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputReference interfac
 	PutIpv6AccessConfig(value interface{})
 	ResetAccessConfig()
 	ResetAliasIpRange()
+	ResetIgmpQuery()
 	ResetInternalIpv6PrefixLength()
 	ResetIpv6AccessConfig()
 	ResetIpv6Address()
 	ResetNetwork()
+	ResetNetworkAttachment()
 	ResetNetworkIp()
 	ResetNicType()
 	ResetQueueCount()
 	ResetStackType()
 	ResetSubnetwork()
 	ResetSubnetworkProject()
+	ResetVlan()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -201,6 +214,26 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputRefe
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputReference) IgmpQuery() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"igmpQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputReference) IgmpQueryInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"igmpQueryInput",
 		&returns,
 	)
 	return returns
@@ -306,6 +339,26 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputRefe
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputReference) NetworkAttachment() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkAttachment",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputReference) NetworkAttachmentInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkAttachmentInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputReference) NetworkInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -351,6 +404,16 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputRefe
 	_jsii_.Get(
 		j,
 		"nicTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputReference) ParentNicName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parentNicName",
 		&returns,
 	)
 	return returns
@@ -456,6 +519,26 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputRefe
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputReference) Vlan() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"vlan",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputReference) VlanInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"vlanInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewGoogleComputeRegionInstanceTemplateNetworkInterfaceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputReference {
 	_init_.Initialize()
@@ -506,6 +589,17 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputRefe
 	)
 }
 
+func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputReference)SetIgmpQuery(val *string) {
+	if err := j.validateSetIgmpQueryParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"igmpQuery",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputReference)SetInternalIpv6PrefixLength(val *float64) {
 	if err := j.validateSetInternalIpv6PrefixLengthParameters(val); err != nil {
 		panic(err)
@@ -546,6 +640,17 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputRefe
 	_jsii_.Set(
 		j,
 		"network",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputReference)SetNetworkAttachment(val *string) {
+	if err := j.validateSetNetworkAttachmentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"networkAttachment",
 		val,
 	)
 }
@@ -634,6 +739,17 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputRefe
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputReference)SetVlan(val *float64) {
+	if err := j.validateSetVlanParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"vlan",
 		val,
 	)
 }
@@ -873,6 +989,14 @@ func (g *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputRefe
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputReference) ResetIgmpQuery() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIgmpQuery",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputReference) ResetInternalIpv6PrefixLength() {
 	_jsii_.InvokeVoid(
 		g,
@@ -901,6 +1025,14 @@ func (g *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputRefe
 	_jsii_.InvokeVoid(
 		g,
 		"resetNetwork",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputReference) ResetNetworkAttachment() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNetworkAttachment",
 		nil, // no parameters
 	)
 }
@@ -949,6 +1081,14 @@ func (g *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputRefe
 	_jsii_.InvokeVoid(
 		g,
 		"resetSubnetworkProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputReference) ResetVlan() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetVlan",
 		nil, // no parameters
 	)
 }

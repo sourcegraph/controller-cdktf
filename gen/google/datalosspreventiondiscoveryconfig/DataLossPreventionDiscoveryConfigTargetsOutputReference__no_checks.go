@@ -56,6 +56,10 @@ func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsOutputReference) vali
 	return nil
 }
 
+func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsOutputReference) validatePutOtherCloudTargetParameters(value *DataLossPreventionDiscoveryConfigTargetsOtherCloudTarget) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsOutputReference) validatePutSecretsTargetParameters(value *DataLossPreventionDiscoveryConfigTargetsSecretsTarget) error {
 	return nil
 }

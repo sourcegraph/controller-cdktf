@@ -30,6 +30,7 @@ type DataGoogleContainerClusterNodePoolAutoConfigLinuxNodeConfigOutputReference 
 	Fqn() *string
 	InternalValue() *DataGoogleContainerClusterNodePoolAutoConfigLinuxNodeConfig
 	SetInternalValue(val *DataGoogleContainerClusterNodePoolAutoConfigLinuxNodeConfig)
+	NodeKernelModuleLoading() DataGoogleContainerClusterNodePoolAutoConfigLinuxNodeConfigNodeKernelModuleLoadingList
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -132,6 +133,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodePoolAutoConfigLinuxNodeConfigOu
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolAutoConfigLinuxNodeConfigOutputReference) NodeKernelModuleLoading() DataGoogleContainerClusterNodePoolAutoConfigLinuxNodeConfigNodeKernelModuleLoadingList {
+	var returns DataGoogleContainerClusterNodePoolAutoConfigLinuxNodeConfigNodeKernelModuleLoadingList
+	_jsii_.Get(
+		j,
+		"nodeKernelModuleLoading",
 		&returns,
 	)
 	return returns

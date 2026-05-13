@@ -40,6 +40,9 @@ type GoogleContainerClusterNodePoolNodeConfigSandboxConfigOutputReference interf
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Type() *string
+	SetType(val *string)
+	TypeInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -64,6 +67,8 @@ type GoogleContainerClusterNodePoolNodeConfigSandboxConfigOutputReference interf
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetSandboxType()
+	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -169,6 +174,26 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigSandboxConfigOutputRe
 	return returns
 }
 
+func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigSandboxConfigOutputReference) Type() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"type",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigSandboxConfigOutputReference) TypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"typeInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewGoogleContainerClusterNodePoolNodeConfigSandboxConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleContainerClusterNodePoolNodeConfigSandboxConfigOutputReference {
 	_init_.Initialize()
@@ -259,6 +284,17 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigSandboxConfigOutputRe
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigSandboxConfigOutputReference)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"type",
 		val,
 	)
 }
@@ -447,6 +483,22 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigSandboxConfigOutputRe
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigSandboxConfigOutputReference) ResetSandboxType() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSandboxType",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigSandboxConfigOutputReference) ResetType() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetType",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigSandboxConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

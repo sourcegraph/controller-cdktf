@@ -116,6 +116,10 @@ func (j *jsiiProxy_MemcacheInstance) validateSetCountParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_MemcacheInstance) validateSetDeletionProtectionParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MemcacheInstance) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

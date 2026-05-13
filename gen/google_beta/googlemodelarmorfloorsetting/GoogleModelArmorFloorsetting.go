@@ -1,0 +1,1257 @@
+package googlemodelarmorfloorsetting
+
+import (
+	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlemodelarmorfloorsetting/internal"
+)
+
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_model_armor_floorsetting google_model_armor_floorsetting}.
+type GoogleModelArmorFloorsetting interface {
+	cdktf.TerraformResource
+	AiPlatformFloorSetting() GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputReference
+	AiPlatformFloorSettingInput() *GoogleModelArmorFloorsettingAiPlatformFloorSetting
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() interface{}
+	// Experimental.
+	SetCount(val interface{})
+	CreateTime() *string
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	EnableFloorSettingEnforcement() interface{}
+	SetEnableFloorSettingEnforcement(val interface{})
+	EnableFloorSettingEnforcementInput() interface{}
+	FilterConfig() GoogleModelArmorFloorsettingFilterConfigOutputReference
+	FilterConfigInput() *GoogleModelArmorFloorsettingFilterConfig
+	FloorSettingMetadata() GoogleModelArmorFloorsettingFloorSettingMetadataOutputReference
+	FloorSettingMetadataInput() *GoogleModelArmorFloorsettingFloorSettingMetadata
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	GoogleMcpServerFloorSetting() GoogleModelArmorFloorsettingGoogleMcpServerFloorSettingOutputReference
+	GoogleMcpServerFloorSettingInput() *GoogleModelArmorFloorsettingGoogleMcpServerFloorSetting
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	IntegratedServices() *[]*string
+	SetIntegratedServices(val *[]*string)
+	IntegratedServicesInput() *[]*string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Location() *string
+	SetLocation(val *string)
+	LocationInput() *string
+	Name() *string
+	// The tree node.
+	Node() constructs.Node
+	Parent() *string
+	SetParent(val *string)
+	ParentInput() *string
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	// Experimental.
+	RawOverrides() interface{}
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	Timeouts() GoogleModelArmorFloorsettingTimeoutsOutputReference
+	TimeoutsInput() interface{}
+	UpdateTime() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutAiPlatformFloorSetting(value *GoogleModelArmorFloorsettingAiPlatformFloorSetting)
+	PutFilterConfig(value *GoogleModelArmorFloorsettingFilterConfig)
+	PutFloorSettingMetadata(value *GoogleModelArmorFloorsettingFloorSettingMetadata)
+	PutGoogleMcpServerFloorSetting(value *GoogleModelArmorFloorsettingGoogleMcpServerFloorSetting)
+	PutTimeouts(value *GoogleModelArmorFloorsettingTimeouts)
+	ResetAiPlatformFloorSetting()
+	ResetEnableFloorSettingEnforcement()
+	ResetFloorSettingMetadata()
+	ResetGoogleMcpServerFloorSetting()
+	ResetId()
+	ResetIntegratedServices()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetTimeouts()
+	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for GoogleModelArmorFloorsetting
+type jsiiProxy_GoogleModelArmorFloorsetting struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GoogleModelArmorFloorsetting) AiPlatformFloorSetting() GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputReference {
+	var returns GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputReference
+	_jsii_.Get(
+		j,
+		"aiPlatformFloorSetting",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleModelArmorFloorsetting) AiPlatformFloorSettingInput() *GoogleModelArmorFloorsettingAiPlatformFloorSetting {
+	var returns *GoogleModelArmorFloorsettingAiPlatformFloorSetting
+	_jsii_.Get(
+		j,
+		"aiPlatformFloorSettingInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleModelArmorFloorsetting) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleModelArmorFloorsetting) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleModelArmorFloorsetting) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleModelArmorFloorsetting) Count() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleModelArmorFloorsetting) CreateTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleModelArmorFloorsetting) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleModelArmorFloorsetting) EnableFloorSettingEnforcement() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableFloorSettingEnforcement",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleModelArmorFloorsetting) EnableFloorSettingEnforcementInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableFloorSettingEnforcementInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleModelArmorFloorsetting) FilterConfig() GoogleModelArmorFloorsettingFilterConfigOutputReference {
+	var returns GoogleModelArmorFloorsettingFilterConfigOutputReference
+	_jsii_.Get(
+		j,
+		"filterConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleModelArmorFloorsetting) FilterConfigInput() *GoogleModelArmorFloorsettingFilterConfig {
+	var returns *GoogleModelArmorFloorsettingFilterConfig
+	_jsii_.Get(
+		j,
+		"filterConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleModelArmorFloorsetting) FloorSettingMetadata() GoogleModelArmorFloorsettingFloorSettingMetadataOutputReference {
+	var returns GoogleModelArmorFloorsettingFloorSettingMetadataOutputReference
+	_jsii_.Get(
+		j,
+		"floorSettingMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleModelArmorFloorsetting) FloorSettingMetadataInput() *GoogleModelArmorFloorsettingFloorSettingMetadata {
+	var returns *GoogleModelArmorFloorsettingFloorSettingMetadata
+	_jsii_.Get(
+		j,
+		"floorSettingMetadataInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleModelArmorFloorsetting) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleModelArmorFloorsetting) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleModelArmorFloorsetting) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleModelArmorFloorsetting) GoogleMcpServerFloorSetting() GoogleModelArmorFloorsettingGoogleMcpServerFloorSettingOutputReference {
+	var returns GoogleModelArmorFloorsettingGoogleMcpServerFloorSettingOutputReference
+	_jsii_.Get(
+		j,
+		"googleMcpServerFloorSetting",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleModelArmorFloorsetting) GoogleMcpServerFloorSettingInput() *GoogleModelArmorFloorsettingGoogleMcpServerFloorSetting {
+	var returns *GoogleModelArmorFloorsettingGoogleMcpServerFloorSetting
+	_jsii_.Get(
+		j,
+		"googleMcpServerFloorSettingInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleModelArmorFloorsetting) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleModelArmorFloorsetting) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleModelArmorFloorsetting) IntegratedServices() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"integratedServices",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleModelArmorFloorsetting) IntegratedServicesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"integratedServicesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleModelArmorFloorsetting) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleModelArmorFloorsetting) Location() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"location",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleModelArmorFloorsetting) LocationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"locationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleModelArmorFloorsetting) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleModelArmorFloorsetting) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleModelArmorFloorsetting) Parent() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parent",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleModelArmorFloorsetting) ParentInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parentInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleModelArmorFloorsetting) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleModelArmorFloorsetting) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleModelArmorFloorsetting) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleModelArmorFloorsetting) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleModelArmorFloorsetting) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleModelArmorFloorsetting) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleModelArmorFloorsetting) Timeouts() GoogleModelArmorFloorsettingTimeoutsOutputReference {
+	var returns GoogleModelArmorFloorsettingTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleModelArmorFloorsetting) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleModelArmorFloorsetting) UpdateTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updateTime",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_model_armor_floorsetting google_model_armor_floorsetting} Resource.
+func NewGoogleModelArmorFloorsetting(scope constructs.Construct, id *string, config *GoogleModelArmorFloorsettingConfig) GoogleModelArmorFloorsetting {
+	_init_.Initialize()
+
+	if err := validateNewGoogleModelArmorFloorsettingParameters(scope, id, config); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_GoogleModelArmorFloorsetting{}
+
+	_jsii_.Create(
+		"@cdktf/provider-google-beta.googleModelArmorFloorsetting.GoogleModelArmorFloorsetting",
+		[]interface{}{scope, id, config},
+		&j,
+	)
+
+	return &j
+}
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_model_armor_floorsetting google_model_armor_floorsetting} Resource.
+func NewGoogleModelArmorFloorsetting_Override(g GoogleModelArmorFloorsetting, scope constructs.Construct, id *string, config *GoogleModelArmorFloorsettingConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-google-beta.googleModelArmorFloorsetting.GoogleModelArmorFloorsetting",
+		[]interface{}{scope, id, config},
+		g,
+	)
+}
+
+func (j *jsiiProxy_GoogleModelArmorFloorsetting)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleModelArmorFloorsetting)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleModelArmorFloorsetting)SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleModelArmorFloorsetting)SetEnableFloorSettingEnforcement(val interface{}) {
+	if err := j.validateSetEnableFloorSettingEnforcementParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableFloorSettingEnforcement",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleModelArmorFloorsetting)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleModelArmorFloorsetting)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleModelArmorFloorsetting)SetIntegratedServices(val *[]*string) {
+	if err := j.validateSetIntegratedServicesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"integratedServices",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleModelArmorFloorsetting)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleModelArmorFloorsetting)SetLocation(val *string) {
+	if err := j.validateSetLocationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"location",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleModelArmorFloorsetting)SetParent(val *string) {
+	if err := j.validateSetParentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"parent",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleModelArmorFloorsetting)SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleModelArmorFloorsetting)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+// Generates CDKTF code for importing a GoogleModelArmorFloorsetting resource upon running "cdktf plan <stack-name>".
+func GoogleModelArmorFloorsetting_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateGoogleModelArmorFloorsetting_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google-beta.googleModelArmorFloorsetting.GoogleModelArmorFloorsetting",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func GoogleModelArmorFloorsetting_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateGoogleModelArmorFloorsetting_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google-beta.googleModelArmorFloorsetting.GoogleModelArmorFloorsetting",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func GoogleModelArmorFloorsetting_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateGoogleModelArmorFloorsetting_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google-beta.googleModelArmorFloorsetting.GoogleModelArmorFloorsetting",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func GoogleModelArmorFloorsetting_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateGoogleModelArmorFloorsetting_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google-beta.googleModelArmorFloorsetting.GoogleModelArmorFloorsetting",
+		"isTerraformResource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func GoogleModelArmorFloorsetting_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"@cdktf/provider-google-beta.googleModelArmorFloorsetting.GoogleModelArmorFloorsetting",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (g *jsiiProxy_GoogleModelArmorFloorsetting) AddMoveTarget(moveTarget *string) {
+	if err := g.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
+}
+
+func (g *jsiiProxy_GoogleModelArmorFloorsetting) AddOverride(path *string, value interface{}) {
+	if err := g.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (g *jsiiProxy_GoogleModelArmorFloorsetting) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		g,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleModelArmorFloorsetting) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		g,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleModelArmorFloorsetting) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := g.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		g,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleModelArmorFloorsetting) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := g.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		g,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleModelArmorFloorsetting) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := g.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *float64
+
+	_jsii_.Invoke(
+		g,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleModelArmorFloorsetting) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := g.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		g,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleModelArmorFloorsetting) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := g.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		g,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleModelArmorFloorsetting) GetStringAttribute(terraformAttribute *string) *string {
+	if err := g.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		g,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleModelArmorFloorsetting) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := g.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		g,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleModelArmorFloorsetting) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		g,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleModelArmorFloorsetting) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := g.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
+func (g *jsiiProxy_GoogleModelArmorFloorsetting) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		g,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleModelArmorFloorsetting) MoveFromId(id *string) {
+	if err := g.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
+func (g *jsiiProxy_GoogleModelArmorFloorsetting) MoveTo(moveTarget *string, index interface{}) {
+	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
+}
+
+func (g *jsiiProxy_GoogleModelArmorFloorsetting) MoveToId(id *string) {
+	if err := g.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"moveToId",
+		[]interface{}{id},
+	)
+}
+
+func (g *jsiiProxy_GoogleModelArmorFloorsetting) OverrideLogicalId(newLogicalId *string) {
+	if err := g.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (g *jsiiProxy_GoogleModelArmorFloorsetting) PutAiPlatformFloorSetting(value *GoogleModelArmorFloorsettingAiPlatformFloorSetting) {
+	if err := g.validatePutAiPlatformFloorSettingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAiPlatformFloorSetting",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleModelArmorFloorsetting) PutFilterConfig(value *GoogleModelArmorFloorsettingFilterConfig) {
+	if err := g.validatePutFilterConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putFilterConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleModelArmorFloorsetting) PutFloorSettingMetadata(value *GoogleModelArmorFloorsettingFloorSettingMetadata) {
+	if err := g.validatePutFloorSettingMetadataParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putFloorSettingMetadata",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleModelArmorFloorsetting) PutGoogleMcpServerFloorSetting(value *GoogleModelArmorFloorsettingGoogleMcpServerFloorSetting) {
+	if err := g.validatePutGoogleMcpServerFloorSettingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putGoogleMcpServerFloorSetting",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleModelArmorFloorsetting) PutTimeouts(value *GoogleModelArmorFloorsettingTimeouts) {
+	if err := g.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleModelArmorFloorsetting) ResetAiPlatformFloorSetting() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAiPlatformFloorSetting",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleModelArmorFloorsetting) ResetEnableFloorSettingEnforcement() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnableFloorSettingEnforcement",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleModelArmorFloorsetting) ResetFloorSettingMetadata() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetFloorSettingMetadata",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleModelArmorFloorsetting) ResetGoogleMcpServerFloorSetting() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetGoogleMcpServerFloorSetting",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleModelArmorFloorsetting) ResetId() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleModelArmorFloorsetting) ResetIntegratedServices() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIntegratedServices",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleModelArmorFloorsetting) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleModelArmorFloorsetting) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleModelArmorFloorsetting) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		g,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleModelArmorFloorsetting) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		g,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleModelArmorFloorsetting) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		g,
+		"toHclTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleModelArmorFloorsetting) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		g,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleModelArmorFloorsetting) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		g,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleModelArmorFloorsetting) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		g,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

@@ -116,6 +116,10 @@ func (j *jsiiProxy_ComputeAddress) validateSetIdParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_ComputeAddress) validateSetIpCollectionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeAddress) validateSetIpv6EndpointTypeParameters(val *string) error {
 	return nil
 }

@@ -1,0 +1,6 @@
+package datagooglememcacheinstance
+
+
+type DataGoogleMemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindow struct {
+}
+

@@ -38,6 +38,9 @@ type NetworkServicesLbTrafficExtensionExtensionChainsExtensionsOutputReference i
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Metadata() *map[string]*string
+	SetMetadata(val *map[string]*string)
+	MetadataInput() *map[string]*string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -85,6 +88,7 @@ type NetworkServicesLbTrafficExtensionExtensionChainsExtensionsOutputReference i
 	ResetAuthority()
 	ResetFailOpen()
 	ResetForwardHeaders()
+	ResetMetadata()
 	ResetSupportedEvents()
 	ResetTimeout()
 	// Produce the Token's value at resolution time.
@@ -207,6 +211,26 @@ func (j *jsiiProxy_NetworkServicesLbTrafficExtensionExtensionChainsExtensionsOut
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesLbTrafficExtensionExtensionChainsExtensionsOutputReference) Metadata() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"metadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesLbTrafficExtensionExtensionChainsExtensionsOutputReference) MetadataInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"metadataInput",
 		&returns,
 	)
 	return returns
@@ -402,6 +426,17 @@ func (j *jsiiProxy_NetworkServicesLbTrafficExtensionExtensionChainsExtensionsOut
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkServicesLbTrafficExtensionExtensionChainsExtensionsOutputReference)SetMetadata(val *map[string]*string) {
+	if err := j.validateSetMetadataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"metadata",
 		val,
 	)
 }
@@ -678,6 +713,14 @@ func (n *jsiiProxy_NetworkServicesLbTrafficExtensionExtensionChainsExtensionsOut
 	_jsii_.InvokeVoid(
 		n,
 		"resetForwardHeaders",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkServicesLbTrafficExtensionExtensionChainsExtensionsOutputReference) ResetMetadata() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetMetadata",
 		nil, // no parameters
 	)
 }

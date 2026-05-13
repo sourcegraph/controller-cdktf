@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputesecuritypolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_security_policy google_compute_security_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_security_policy google_compute_security_policy}.
 type GoogleComputeSecurityPolicy interface {
 	cdktf.TerraformResource
 	AdaptiveProtectionConfig() GoogleComputeSecurityPolicyAdaptiveProtectionConfigOutputReference
@@ -35,6 +35,7 @@ type GoogleComputeSecurityPolicy interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EffectiveLabels() cdktf.StringMap
 	Fingerprint() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -47,6 +48,10 @@ type GoogleComputeSecurityPolicy interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	LabelFingerprint() *string
+	Labels() *map[string]*string
+	SetLabels(val *map[string]*string)
+	LabelsInput() *map[string]*string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -76,6 +81,7 @@ type GoogleComputeSecurityPolicy interface {
 	SelfLink() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -137,6 +143,7 @@ type GoogleComputeSecurityPolicy interface {
 	ResetAdvancedOptionsConfig()
 	ResetDescription()
 	ResetId()
+	ResetLabels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -273,6 +280,16 @@ func (j *jsiiProxy_GoogleComputeSecurityPolicy) DescriptionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeSecurityPolicy) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeSecurityPolicy) Fingerprint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -328,6 +345,36 @@ func (j *jsiiProxy_GoogleComputeSecurityPolicy) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeSecurityPolicy) LabelFingerprint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"labelFingerprint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeSecurityPolicy) Labels() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeSecurityPolicy) LabelsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labelsInput",
 		&returns,
 	)
 	return returns
@@ -483,6 +530,16 @@ func (j *jsiiProxy_GoogleComputeSecurityPolicy) TerraformGeneratorMetadata() *cd
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeSecurityPolicy) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeSecurityPolicy) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -544,7 +601,7 @@ func (j *jsiiProxy_GoogleComputeSecurityPolicy) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_security_policy google_compute_security_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_security_policy google_compute_security_policy} Resource.
 func NewGoogleComputeSecurityPolicy(scope constructs.Construct, id *string, config *GoogleComputeSecurityPolicyConfig) GoogleComputeSecurityPolicy {
 	_init_.Initialize()
 
@@ -562,7 +619,7 @@ func NewGoogleComputeSecurityPolicy(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_security_policy google_compute_security_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_security_policy google_compute_security_policy} Resource.
 func NewGoogleComputeSecurityPolicy_Override(g GoogleComputeSecurityPolicy, scope constructs.Construct, id *string, config *GoogleComputeSecurityPolicyConfig) {
 	_init_.Initialize()
 
@@ -629,6 +686,17 @@ func (j *jsiiProxy_GoogleComputeSecurityPolicy)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeSecurityPolicy)SetLabels(val *map[string]*string) {
+	if err := j.validateSetLabelsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"labels",
 		val,
 	)
 }
@@ -1132,6 +1200,14 @@ func (g *jsiiProxy_GoogleComputeSecurityPolicy) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeSecurityPolicy) ResetLabels() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLabels",
 		nil, // no parameters
 	)
 }

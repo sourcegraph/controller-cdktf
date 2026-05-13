@@ -72,6 +72,10 @@ func (c *jsiiProxy_ComputeInstantSnapshot) validateOverrideLogicalIdParameters(n
 	return nil
 }
 
+func (c *jsiiProxy_ComputeInstantSnapshot) validatePutParamsParameters(value *ComputeInstantSnapshotParams) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeInstantSnapshot) validatePutTimeoutsParameters(value *ComputeInstantSnapshotTimeouts) error {
 	return nil
 }

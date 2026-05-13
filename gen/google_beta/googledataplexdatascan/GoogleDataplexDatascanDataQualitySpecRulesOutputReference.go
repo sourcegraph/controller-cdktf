@@ -10,6 +10,9 @@ import (
 
 type GoogleDataplexDatascanDataQualitySpecRulesOutputReference interface {
 	cdktf.ComplexObject
+	Attributes() *map[string]*string
+	SetAttributes(val *map[string]*string)
+	AttributesInput() *map[string]*string
 	Column() *string
 	SetColumn(val *string)
 	ColumnInput() *string
@@ -58,8 +61,13 @@ type GoogleDataplexDatascanDataQualitySpecRulesOutputReference interface {
 	SqlAssertionInput() *GoogleDataplexDatascanDataQualitySpecRulesSqlAssertion
 	StatisticRangeExpectation() GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputReference
 	StatisticRangeExpectationInput() *GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectation
+	Suspended() interface{}
+	SetSuspended(val interface{})
+	SuspendedInput() interface{}
 	TableConditionExpectation() GoogleDataplexDatascanDataQualitySpecRulesTableConditionExpectationOutputReference
 	TableConditionExpectationInput() *GoogleDataplexDatascanDataQualitySpecRulesTableConditionExpectation
+	TemplateReference() GoogleDataplexDatascanDataQualitySpecRulesTemplateReferenceOutputReference
+	TemplateReferenceInput() *GoogleDataplexDatascanDataQualitySpecRulesTemplateReference
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -105,7 +113,9 @@ type GoogleDataplexDatascanDataQualitySpecRulesOutputReference interface {
 	PutSqlAssertion(value *GoogleDataplexDatascanDataQualitySpecRulesSqlAssertion)
 	PutStatisticRangeExpectation(value *GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectation)
 	PutTableConditionExpectation(value *GoogleDataplexDatascanDataQualitySpecRulesTableConditionExpectation)
+	PutTemplateReference(value *GoogleDataplexDatascanDataQualitySpecRulesTemplateReference)
 	PutUniquenessExpectation(value *GoogleDataplexDatascanDataQualitySpecRulesUniquenessExpectation)
+	ResetAttributes()
 	ResetColumn()
 	ResetDescription()
 	ResetIgnoreNull()
@@ -117,7 +127,9 @@ type GoogleDataplexDatascanDataQualitySpecRulesOutputReference interface {
 	ResetSetExpectation()
 	ResetSqlAssertion()
 	ResetStatisticRangeExpectation()
+	ResetSuspended()
 	ResetTableConditionExpectation()
+	ResetTemplateReference()
 	ResetThreshold()
 	ResetUniquenessExpectation()
 	// Produce the Token's value at resolution time.
@@ -133,6 +145,26 @@ type GoogleDataplexDatascanDataQualitySpecRulesOutputReference interface {
 // The jsii proxy struct for GoogleDataplexDatascanDataQualitySpecRulesOutputReference
 type jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) Attributes() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"attributes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) AttributesInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"attributesInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) Column() *string {
@@ -425,6 +457,26 @@ func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) St
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) Suspended() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"suspended",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) SuspendedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"suspendedInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) TableConditionExpectation() GoogleDataplexDatascanDataQualitySpecRulesTableConditionExpectationOutputReference {
 	var returns GoogleDataplexDatascanDataQualitySpecRulesTableConditionExpectationOutputReference
 	_jsii_.Get(
@@ -440,6 +492,26 @@ func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) Ta
 	_jsii_.Get(
 		j,
 		"tableConditionExpectationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) TemplateReference() GoogleDataplexDatascanDataQualitySpecRulesTemplateReferenceOutputReference {
+	var returns GoogleDataplexDatascanDataQualitySpecRulesTemplateReferenceOutputReference
+	_jsii_.Get(
+		j,
+		"templateReference",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) TemplateReferenceInput() *GoogleDataplexDatascanDataQualitySpecRulesTemplateReference {
+	var returns *GoogleDataplexDatascanDataQualitySpecRulesTemplateReference
+	_jsii_.Get(
+		j,
+		"templateReferenceInput",
 		&returns,
 	)
 	return returns
@@ -533,6 +605,17 @@ func NewGoogleDataplexDatascanDataQualitySpecRulesOutputReference_Override(g Goo
 	)
 }
 
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference)SetAttributes(val *map[string]*string) {
+	if err := j.validateSetAttributesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"attributes",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference)SetColumn(val *string) {
 	if err := j.validateSetColumnParameters(val); err != nil {
 		panic(err)
@@ -617,6 +700,17 @@ func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference)Set
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference)SetSuspended(val interface{}) {
+	if err := j.validateSetSuspendedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"suspended",
 		val,
 	)
 }
@@ -928,6 +1022,17 @@ func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) Pu
 	)
 }
 
+func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) PutTemplateReference(value *GoogleDataplexDatascanDataQualitySpecRulesTemplateReference) {
+	if err := g.validatePutTemplateReferenceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putTemplateReference",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) PutUniquenessExpectation(value *GoogleDataplexDatascanDataQualitySpecRulesUniquenessExpectation) {
 	if err := g.validatePutUniquenessExpectationParameters(value); err != nil {
 		panic(err)
@@ -936,6 +1041,14 @@ func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) Pu
 		g,
 		"putUniquenessExpectation",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) ResetAttributes() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAttributes",
+		nil, // no parameters
 	)
 }
 
@@ -1027,10 +1140,26 @@ func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) Re
 	)
 }
 
+func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) ResetSuspended() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSuspended",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) ResetTableConditionExpectation() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetTableConditionExpectation",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) ResetTemplateReference() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTemplateReference",
 		nil, // no parameters
 	)
 }

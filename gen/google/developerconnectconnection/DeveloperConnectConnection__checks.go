@@ -281,6 +281,17 @@ func (d *jsiiProxy_DeveloperConnectConnection) validatePutGitlabEnterpriseConfig
 	return nil
 }
 
+func (d *jsiiProxy_DeveloperConnectConnection) validatePutHttpConfigParameters(value *DeveloperConnectConnectionHttpConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DeveloperConnectConnection) validatePutTimeoutsParameters(value *DeveloperConnectConnectionTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

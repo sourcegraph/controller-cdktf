@@ -4,7 +4,7 @@ package googleosconfigv2policyorchestrator
 type GoogleOsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadRollout struct {
 	// disruption_budget block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_os_config_v2_policy_orchestrator#disruption_budget GoogleOsConfigV2PolicyOrchestrator#disruption_budget}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_os_config_v2_policy_orchestrator#disruption_budget GoogleOsConfigV2PolicyOrchestrator#disruption_budget}
 	DisruptionBudget *GoogleOsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadRolloutDisruptionBudget `field:"required" json:"disruptionBudget" yaml:"disruptionBudget"`
 	// Required.
 	//
@@ -14,7 +14,7 @@ type GoogleOsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1P
 	// until this duration of time has passed after configuration changes are
 	// applied.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_os_config_v2_policy_orchestrator#min_wait_duration GoogleOsConfigV2PolicyOrchestrator#min_wait_duration}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_os_config_v2_policy_orchestrator#min_wait_duration GoogleOsConfigV2PolicyOrchestrator#min_wait_duration}
 	MinWaitDuration *string `field:"required" json:"minWaitDuration" yaml:"minWaitDuration"`
 }
 

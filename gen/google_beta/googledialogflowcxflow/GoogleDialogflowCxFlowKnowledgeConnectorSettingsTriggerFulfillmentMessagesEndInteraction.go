@@ -1,0 +1,6 @@
+package googledialogflowcxflow
+
+
+type GoogleDialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesEndInteraction struct {
+}
+

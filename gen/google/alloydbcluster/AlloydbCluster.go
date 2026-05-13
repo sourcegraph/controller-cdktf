@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/alloydbcluster/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/alloydb_cluster google_alloydb_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_cluster google_alloydb_cluster}.
 type AlloydbCluster interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -17,6 +17,7 @@ type AlloydbCluster interface {
 	AnnotationsInput() *map[string]*string
 	AutomatedBackupPolicy() AlloydbClusterAutomatedBackupPolicyOutputReference
 	AutomatedBackupPolicyInput() *AlloydbClusterAutomatedBackupPolicy
+	BackupdrBackupSource() AlloydbClusterBackupdrBackupSourceList
 	BackupSource() AlloydbClusterBackupSourceList
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -42,9 +43,14 @@ type AlloydbCluster interface {
 	DatabaseVersion() *string
 	SetDatabaseVersion(val *string)
 	DatabaseVersionInput() *string
+	DataplexConfig() AlloydbClusterDataplexConfigOutputReference
+	DataplexConfigInput() *AlloydbClusterDataplexConfig
 	DeletionPolicy() *string
 	SetDeletionPolicy(val *string)
 	DeletionPolicyInput() *string
+	DeletionProtection() interface{}
+	SetDeletionProtection(val interface{})
+	DeletionProtectionInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -107,6 +113,10 @@ type AlloydbCluster interface {
 	// Experimental.
 	RawOverrides() interface{}
 	Reconciling() cdktf.IResolvable
+	RestoreBackupdrBackupSource() AlloydbClusterRestoreBackupdrBackupSourceOutputReference
+	RestoreBackupdrBackupSourceInput() *AlloydbClusterRestoreBackupdrBackupSource
+	RestoreBackupdrPitrSource() AlloydbClusterRestoreBackupdrPitrSourceOutputReference
+	RestoreBackupdrPitrSourceInput() *AlloydbClusterRestoreBackupdrPitrSource
 	RestoreBackupSource() AlloydbClusterRestoreBackupSourceOutputReference
 	RestoreBackupSourceInput() *AlloydbClusterRestoreBackupSource
 	RestoreContinuousBackupSource() AlloydbClusterRestoreContinuousBackupSourceOutputReference
@@ -176,11 +186,14 @@ type AlloydbCluster interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAutomatedBackupPolicy(value *AlloydbClusterAutomatedBackupPolicy)
 	PutContinuousBackupConfig(value *AlloydbClusterContinuousBackupConfig)
+	PutDataplexConfig(value *AlloydbClusterDataplexConfig)
 	PutEncryptionConfig(value *AlloydbClusterEncryptionConfig)
 	PutInitialUser(value *AlloydbClusterInitialUser)
 	PutMaintenanceUpdatePolicy(value *AlloydbClusterMaintenanceUpdatePolicy)
 	PutNetworkConfig(value *AlloydbClusterNetworkConfig)
 	PutPscConfig(value *AlloydbClusterPscConfig)
+	PutRestoreBackupdrBackupSource(value *AlloydbClusterRestoreBackupdrBackupSource)
+	PutRestoreBackupdrPitrSource(value *AlloydbClusterRestoreBackupdrPitrSource)
 	PutRestoreBackupSource(value *AlloydbClusterRestoreBackupSource)
 	PutRestoreContinuousBackupSource(value *AlloydbClusterRestoreContinuousBackupSource)
 	PutSecondaryConfig(value *AlloydbClusterSecondaryConfig)
@@ -190,7 +203,9 @@ type AlloydbCluster interface {
 	ResetClusterType()
 	ResetContinuousBackupConfig()
 	ResetDatabaseVersion()
+	ResetDataplexConfig()
 	ResetDeletionPolicy()
+	ResetDeletionProtection()
 	ResetDisplayName()
 	ResetEncryptionConfig()
 	ResetEtag()
@@ -204,6 +219,8 @@ type AlloydbCluster interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetPscConfig()
+	ResetRestoreBackupdrBackupSource()
+	ResetRestoreBackupdrPitrSource()
 	ResetRestoreBackupSource()
 	ResetRestoreContinuousBackupSource()
 	ResetSecondaryConfig()
@@ -263,6 +280,16 @@ func (j *jsiiProxy_AlloydbCluster) AutomatedBackupPolicyInput() *AlloydbClusterA
 	_jsii_.Get(
 		j,
 		"automatedBackupPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbCluster) BackupdrBackupSource() AlloydbClusterBackupdrBackupSourceList {
+	var returns AlloydbClusterBackupdrBackupSourceList
+	_jsii_.Get(
+		j,
+		"backupdrBackupSource",
 		&returns,
 	)
 	return returns
@@ -408,6 +435,26 @@ func (j *jsiiProxy_AlloydbCluster) DatabaseVersionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AlloydbCluster) DataplexConfig() AlloydbClusterDataplexConfigOutputReference {
+	var returns AlloydbClusterDataplexConfigOutputReference
+	_jsii_.Get(
+		j,
+		"dataplexConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbCluster) DataplexConfigInput() *AlloydbClusterDataplexConfig {
+	var returns *AlloydbClusterDataplexConfig
+	_jsii_.Get(
+		j,
+		"dataplexConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AlloydbCluster) DeletionPolicy() *string {
 	var returns *string
 	_jsii_.Get(
@@ -423,6 +470,26 @@ func (j *jsiiProxy_AlloydbCluster) DeletionPolicyInput() *string {
 	_jsii_.Get(
 		j,
 		"deletionPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbCluster) DeletionProtection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbCluster) DeletionProtectionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtectionInput",
 		&returns,
 	)
 	return returns
@@ -798,6 +865,46 @@ func (j *jsiiProxy_AlloydbCluster) Reconciling() cdktf.IResolvable {
 	return returns
 }
 
+func (j *jsiiProxy_AlloydbCluster) RestoreBackupdrBackupSource() AlloydbClusterRestoreBackupdrBackupSourceOutputReference {
+	var returns AlloydbClusterRestoreBackupdrBackupSourceOutputReference
+	_jsii_.Get(
+		j,
+		"restoreBackupdrBackupSource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbCluster) RestoreBackupdrBackupSourceInput() *AlloydbClusterRestoreBackupdrBackupSource {
+	var returns *AlloydbClusterRestoreBackupdrBackupSource
+	_jsii_.Get(
+		j,
+		"restoreBackupdrBackupSourceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbCluster) RestoreBackupdrPitrSource() AlloydbClusterRestoreBackupdrPitrSourceOutputReference {
+	var returns AlloydbClusterRestoreBackupdrPitrSourceOutputReference
+	_jsii_.Get(
+		j,
+		"restoreBackupdrPitrSource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbCluster) RestoreBackupdrPitrSourceInput() *AlloydbClusterRestoreBackupdrPitrSource {
+	var returns *AlloydbClusterRestoreBackupdrPitrSource
+	_jsii_.Get(
+		j,
+		"restoreBackupdrPitrSourceInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AlloydbCluster) RestoreBackupSource() AlloydbClusterRestoreBackupSourceOutputReference {
 	var returns AlloydbClusterRestoreBackupSourceOutputReference
 	_jsii_.Get(
@@ -989,7 +1096,7 @@ func (j *jsiiProxy_AlloydbCluster) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/alloydb_cluster google_alloydb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_cluster google_alloydb_cluster} Resource.
 func NewAlloydbCluster(scope constructs.Construct, id *string, config *AlloydbClusterConfig) AlloydbCluster {
 	_init_.Initialize()
 
@@ -1007,7 +1114,7 @@ func NewAlloydbCluster(scope constructs.Construct, id *string, config *AlloydbCl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/alloydb_cluster google_alloydb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_cluster google_alloydb_cluster} Resource.
 func NewAlloydbCluster_Override(a AlloydbCluster, scope constructs.Construct, id *string, config *AlloydbClusterConfig) {
 	_init_.Initialize()
 
@@ -1091,6 +1198,17 @@ func (j *jsiiProxy_AlloydbCluster)SetDeletionPolicy(val *string) {
 	_jsii_.Set(
 		j,
 		"deletionPolicy",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AlloydbCluster)SetDeletionProtection(val interface{}) {
+	if err := j.validateSetDeletionProtectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deletionProtection",
 		val,
 	)
 }
@@ -1604,6 +1722,17 @@ func (a *jsiiProxy_AlloydbCluster) PutContinuousBackupConfig(value *AlloydbClust
 	)
 }
 
+func (a *jsiiProxy_AlloydbCluster) PutDataplexConfig(value *AlloydbClusterDataplexConfig) {
+	if err := a.validatePutDataplexConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putDataplexConfig",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AlloydbCluster) PutEncryptionConfig(value *AlloydbClusterEncryptionConfig) {
 	if err := a.validatePutEncryptionConfigParameters(value); err != nil {
 		panic(err)
@@ -1655,6 +1784,28 @@ func (a *jsiiProxy_AlloydbCluster) PutPscConfig(value *AlloydbClusterPscConfig) 
 	_jsii_.InvokeVoid(
 		a,
 		"putPscConfig",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AlloydbCluster) PutRestoreBackupdrBackupSource(value *AlloydbClusterRestoreBackupdrBackupSource) {
+	if err := a.validatePutRestoreBackupdrBackupSourceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putRestoreBackupdrBackupSource",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AlloydbCluster) PutRestoreBackupdrPitrSource(value *AlloydbClusterRestoreBackupdrPitrSource) {
+	if err := a.validatePutRestoreBackupdrPitrSourceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putRestoreBackupdrPitrSource",
 		[]interface{}{value},
 	)
 }
@@ -1743,10 +1894,26 @@ func (a *jsiiProxy_AlloydbCluster) ResetDatabaseVersion() {
 	)
 }
 
+func (a *jsiiProxy_AlloydbCluster) ResetDataplexConfig() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDataplexConfig",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AlloydbCluster) ResetDeletionPolicy() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetDeletionPolicy",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlloydbCluster) ResetDeletionProtection() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDeletionProtection",
 		nil, // no parameters
 	)
 }
@@ -1835,6 +2002,22 @@ func (a *jsiiProxy_AlloydbCluster) ResetPscConfig() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetPscConfig",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlloydbCluster) ResetRestoreBackupdrBackupSource() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRestoreBackupdrBackupSource",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlloydbCluster) ResetRestoreBackupdrPitrSource() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRestoreBackupdrPitrSource",
 		nil, // no parameters
 	)
 }

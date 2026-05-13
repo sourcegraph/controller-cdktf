@@ -9,9 +9,11 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeregionsecuritypolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_region_security_policy google_compute_region_security_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_region_security_policy google_compute_region_security_policy}.
 type GoogleComputeRegionSecurityPolicy interface {
 	cdktf.TerraformResource
+	AdvancedOptionsConfig() GoogleComputeRegionSecurityPolicyAdvancedOptionsConfigOutputReference
+	AdvancedOptionsConfigInput() *GoogleComputeRegionSecurityPolicyAdvancedOptionsConfig
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -131,10 +133,12 @@ type GoogleComputeRegionSecurityPolicy interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAdvancedOptionsConfig(value *GoogleComputeRegionSecurityPolicyAdvancedOptionsConfig)
 	PutDdosProtectionConfig(value *GoogleComputeRegionSecurityPolicyDdosProtectionConfig)
 	PutRules(value interface{})
 	PutTimeouts(value *GoogleComputeRegionSecurityPolicyTimeouts)
 	PutUserDefinedFields(value interface{})
+	ResetAdvancedOptionsConfig()
 	ResetDdosProtectionConfig()
 	ResetDescription()
 	ResetId()
@@ -163,6 +167,26 @@ type GoogleComputeRegionSecurityPolicy interface {
 // The jsii proxy struct for GoogleComputeRegionSecurityPolicy
 type jsiiProxy_GoogleComputeRegionSecurityPolicy struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GoogleComputeRegionSecurityPolicy) AdvancedOptionsConfig() GoogleComputeRegionSecurityPolicyAdvancedOptionsConfigOutputReference {
+	var returns GoogleComputeRegionSecurityPolicyAdvancedOptionsConfigOutputReference
+	_jsii_.Get(
+		j,
+		"advancedOptionsConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionSecurityPolicy) AdvancedOptionsConfigInput() *GoogleComputeRegionSecurityPolicyAdvancedOptionsConfig {
+	var returns *GoogleComputeRegionSecurityPolicyAdvancedOptionsConfig
+	_jsii_.Get(
+		j,
+		"advancedOptionsConfigInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleComputeRegionSecurityPolicy) CdktfStack() cdktf.TerraformStack {
@@ -566,7 +590,7 @@ func (j *jsiiProxy_GoogleComputeRegionSecurityPolicy) UserDefinedFieldsInput() i
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_region_security_policy google_compute_region_security_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_region_security_policy google_compute_region_security_policy} Resource.
 func NewGoogleComputeRegionSecurityPolicy(scope constructs.Construct, id *string, config *GoogleComputeRegionSecurityPolicyConfig) GoogleComputeRegionSecurityPolicy {
 	_init_.Initialize()
 
@@ -584,7 +608,7 @@ func NewGoogleComputeRegionSecurityPolicy(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_region_security_policy google_compute_region_security_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_region_security_policy google_compute_region_security_policy} Resource.
 func NewGoogleComputeRegionSecurityPolicy_Override(g GoogleComputeRegionSecurityPolicy, scope constructs.Construct, id *string, config *GoogleComputeRegionSecurityPolicyConfig) {
 	_init_.Initialize()
 
@@ -1082,6 +1106,17 @@ func (g *jsiiProxy_GoogleComputeRegionSecurityPolicy) OverrideLogicalId(newLogic
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeRegionSecurityPolicy) PutAdvancedOptionsConfig(value *GoogleComputeRegionSecurityPolicyAdvancedOptionsConfig) {
+	if err := g.validatePutAdvancedOptionsConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAdvancedOptionsConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeRegionSecurityPolicy) PutDdosProtectionConfig(value *GoogleComputeRegionSecurityPolicyDdosProtectionConfig) {
 	if err := g.validatePutDdosProtectionConfigParameters(value); err != nil {
 		panic(err)
@@ -1123,6 +1158,14 @@ func (g *jsiiProxy_GoogleComputeRegionSecurityPolicy) PutUserDefinedFields(value
 		g,
 		"putUserDefinedFields",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionSecurityPolicy) ResetAdvancedOptionsConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAdvancedOptionsConfig",
+		nil, // no parameters
 	)
 }
 

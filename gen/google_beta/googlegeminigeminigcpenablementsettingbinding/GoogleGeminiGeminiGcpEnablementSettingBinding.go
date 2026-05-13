@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlegeminigeminigcpenablementsettingbinding/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_gemini_gemini_gcp_enablement_setting_binding google_gemini_gemini_gcp_enablement_setting_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_gemini_gemini_gcp_enablement_setting_binding google_gemini_gemini_gcp_enablement_setting_binding}.
 type GoogleGeminiGeminiGcpEnablementSettingBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -551,7 +551,7 @@ func (j *jsiiProxy_GoogleGeminiGeminiGcpEnablementSettingBinding) UpdateTime() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_gemini_gemini_gcp_enablement_setting_binding google_gemini_gemini_gcp_enablement_setting_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_gemini_gemini_gcp_enablement_setting_binding google_gemini_gemini_gcp_enablement_setting_binding} Resource.
 func NewGoogleGeminiGeminiGcpEnablementSettingBinding(scope constructs.Construct, id *string, config *GoogleGeminiGeminiGcpEnablementSettingBindingConfig) GoogleGeminiGeminiGcpEnablementSettingBinding {
 	_init_.Initialize()
 
@@ -569,7 +569,7 @@ func NewGoogleGeminiGeminiGcpEnablementSettingBinding(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_gemini_gemini_gcp_enablement_setting_binding google_gemini_gemini_gcp_enablement_setting_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_gemini_gemini_gcp_enablement_setting_binding google_gemini_gemini_gcp_enablement_setting_binding} Resource.
 func NewGoogleGeminiGeminiGcpEnablementSettingBinding_Override(g GoogleGeminiGeminiGcpEnablementSettingBinding, scope constructs.Construct, id *string, config *GoogleGeminiGeminiGcpEnablementSettingBindingConfig) {
 	_init_.Initialize()
 

@@ -1,0 +1,6 @@
+package googlecomputeinterconnectattachmentgroup
+
+
+type GoogleComputeInterconnectAttachmentGroupConfiguredAvailabilitySlaIntendedSlaBlockers struct {
+}
+

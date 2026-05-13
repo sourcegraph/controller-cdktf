@@ -1,0 +1,1082 @@
+package googlecesapp
+
+import (
+	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
+
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecesapp/internal"
+)
+
+type GoogleCesAppVariableDeclarationsSchemaOutputReference interface {
+	cdktf.ComplexObject
+	AdditionalProperties() *string
+	SetAdditionalProperties(val *string)
+	AdditionalPropertiesInput() *string
+	AnyOf() *string
+	SetAnyOf(val *string)
+	AnyOfInput() *string
+	// the index of the complex object in a list.
+	// Experimental.
+	ComplexObjectIndex() interface{}
+	// Experimental.
+	SetComplexObjectIndex(val interface{})
+	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
+	// Experimental.
+	ComplexObjectIsFromSet() *bool
+	// Experimental.
+	SetComplexObjectIsFromSet(val *bool)
+	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
+	//
+	// If this returns an empty array the stack will not be attached.
+	// Experimental.
+	CreationStack() *[]*string
+	Default() *string
+	SetDefault(val *string)
+	DefaultInput() *string
+	Defs() *string
+	SetDefs(val *string)
+	DefsInput() *string
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
+	Enum() *[]*string
+	SetEnum(val *[]*string)
+	EnumInput() *[]*string
+	// Experimental.
+	Fqn() *string
+	InternalValue() *GoogleCesAppVariableDeclarationsSchema
+	SetInternalValue(val *GoogleCesAppVariableDeclarationsSchema)
+	Items() *string
+	SetItems(val *string)
+	ItemsInput() *string
+	Nullable() interface{}
+	SetNullable(val interface{})
+	NullableInput() interface{}
+	PrefixItems() *string
+	SetPrefixItems(val *string)
+	PrefixItemsInput() *string
+	Properties() *string
+	SetProperties(val *string)
+	PropertiesInput() *string
+	Ref() *string
+	SetRef(val *string)
+	RefInput() *string
+	Required() *[]*string
+	SetRequired(val *[]*string)
+	RequiredInput() *[]*string
+	// Experimental.
+	TerraformAttribute() *string
+	// Experimental.
+	SetTerraformAttribute(val *string)
+	// Experimental.
+	TerraformResource() cdktf.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Title() *string
+	SetTitle(val *string)
+	TitleInput() *string
+	Type() *string
+	SetType(val *string)
+	TypeInput() *string
+	UniqueItems() interface{}
+	SetUniqueItems(val interface{})
+	UniqueItemsInput() interface{}
+	// Experimental.
+	ComputeFqn() *string
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationAsList() cdktf.IResolvable
+	// Experimental.
+	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAdditionalProperties()
+	ResetAnyOf()
+	ResetDefault()
+	ResetDefs()
+	ResetDescription()
+	ResetEnum()
+	ResetItems()
+	ResetNullable()
+	ResetPrefixItems()
+	ResetProperties()
+	ResetRef()
+	ResetRequired()
+	ResetTitle()
+	ResetUniqueItems()
+	// Produce the Token's value at resolution time.
+	// Experimental.
+	Resolve(_context cdktf.IResolveContext) interface{}
+	// Return a string representation of this resolvable object.
+	//
+	// Returns a reversible string representation.
+	// Experimental.
+	ToString() *string
+}
+
+// The jsii proxy struct for GoogleCesAppVariableDeclarationsSchemaOutputReference
+type jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference struct {
+	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) AdditionalProperties() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"additionalProperties",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) AdditionalPropertiesInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"additionalPropertiesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) AnyOf() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"anyOf",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) AnyOfInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"anyOfInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) ComplexObjectIndex() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"complexObjectIndex",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) ComplexObjectIsFromSet() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) CreationStack() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) Default() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"default",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) DefaultInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) Defs() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) DefsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) Enum() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"enum",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) EnumInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"enumInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) InternalValue() *GoogleCesAppVariableDeclarationsSchema {
+	var returns *GoogleCesAppVariableDeclarationsSchema
+	_jsii_.Get(
+		j,
+		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) Items() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"items",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) ItemsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"itemsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) Nullable() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"nullable",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) NullableInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"nullableInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) PrefixItems() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"prefixItems",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) PrefixItemsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"prefixItemsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) Properties() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"properties",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) PropertiesInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"propertiesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) Ref() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ref",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) RefInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"refInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) Required() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"required",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) RequiredInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"requiredInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) TerraformAttribute() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformAttribute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) TerraformResource() cdktf.IInterpolatingParent {
+	var returns cdktf.IInterpolatingParent
+	_jsii_.Get(
+		j,
+		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) Title() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"title",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) TitleInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"titleInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) Type() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"type",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) TypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"typeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) UniqueItems() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"uniqueItems",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) UniqueItemsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"uniqueItemsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+func NewGoogleCesAppVariableDeclarationsSchemaOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleCesAppVariableDeclarationsSchemaOutputReference {
+	_init_.Initialize()
+
+	if err := validateNewGoogleCesAppVariableDeclarationsSchemaOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference{}
+
+	_jsii_.Create(
+		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppVariableDeclarationsSchemaOutputReference",
+		[]interface{}{terraformResource, terraformAttribute},
+		&j,
+	)
+
+	return &j
+}
+
+func NewGoogleCesAppVariableDeclarationsSchemaOutputReference_Override(g GoogleCesAppVariableDeclarationsSchemaOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppVariableDeclarationsSchemaOutputReference",
+		[]interface{}{terraformResource, terraformAttribute},
+		g,
+	)
+}
+
+func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference)SetAdditionalProperties(val *string) {
+	if err := j.validateSetAdditionalPropertiesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"additionalProperties",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference)SetAnyOf(val *string) {
+	if err := j.validateSetAnyOfParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"anyOf",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"complexObjectIndex",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference)SetDefault(val *string) {
+	if err := j.validateSetDefaultParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"default",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference)SetDefs(val *string) {
+	if err := j.validateSetDefsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defs",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference)SetEnum(val *[]*string) {
+	if err := j.validateSetEnumParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enum",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference)SetInternalValue(val *GoogleCesAppVariableDeclarationsSchema) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference)SetItems(val *string) {
+	if err := j.validateSetItemsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"items",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference)SetNullable(val interface{}) {
+	if err := j.validateSetNullableParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"nullable",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference)SetPrefixItems(val *string) {
+	if err := j.validateSetPrefixItemsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"prefixItems",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference)SetProperties(val *string) {
+	if err := j.validateSetPropertiesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"properties",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference)SetRef(val *string) {
+	if err := j.validateSetRefParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ref",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference)SetRequired(val *[]*string) {
+	if err := j.validateSetRequiredParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"required",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"terraformAttribute",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference)SetTitle(val *string) {
+	if err := j.validateSetTitleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"title",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"type",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference)SetUniqueItems(val interface{}) {
+	if err := j.validateSetUniqueItemsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"uniqueItems",
+		val,
+	)
+}
+
+func (g *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) ComputeFqn() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		g,
+		"computeFqn",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		g,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		g,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := g.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		g,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := g.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		g,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := g.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *float64
+
+	_jsii_.Invoke(
+		g,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := g.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		g,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := g.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		g,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := g.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		g,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := g.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		g,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) InterpolationAsList() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		g,
+		"interpolationAsList",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		g,
+		"interpolationForAttribute",
+		[]interface{}{property},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) ResetAdditionalProperties() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAdditionalProperties",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) ResetAnyOf() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAnyOf",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) ResetDefault() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDefault",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) ResetDefs() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDefs",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) ResetDescription() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) ResetEnum() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnum",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) ResetItems() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetItems",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) ResetNullable() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNullable",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) ResetPrefixItems() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPrefixItems",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) ResetProperties() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetProperties",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) ResetRef() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRef",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) ResetRequired() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRequired",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) ResetTitle() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTitle",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) ResetUniqueItems() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetUniqueItems",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
+	var returns interface{}
+
+	_jsii_.Invoke(
+		g,
+		"resolve",
+		[]interface{}{_context},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		g,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

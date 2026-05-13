@@ -1,0 +1,6 @@
+package googledataplexdatascan
+
+
+type GoogleDataplexDatascanDataQualitySpecPostScanActionsNotificationReportJobFailureTrigger struct {
+}
+

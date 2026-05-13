@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/dataprocmetastoretableiammember/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/dataproc_metastore_table_iam_member google_dataproc_metastore_table_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_metastore_table_iam_member google_dataproc_metastore_table_iam_member}.
 type DataprocMetastoreTableIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -505,7 +505,7 @@ func (j *jsiiProxy_DataprocMetastoreTableIamMember) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/dataproc_metastore_table_iam_member google_dataproc_metastore_table_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_metastore_table_iam_member google_dataproc_metastore_table_iam_member} Resource.
 func NewDataprocMetastoreTableIamMember(scope constructs.Construct, id *string, config *DataprocMetastoreTableIamMemberConfig) DataprocMetastoreTableIamMember {
 	_init_.Initialize()
 
@@ -523,7 +523,7 @@ func NewDataprocMetastoreTableIamMember(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/dataproc_metastore_table_iam_member google_dataproc_metastore_table_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_metastore_table_iam_member google_dataproc_metastore_table_iam_member} Resource.
 func NewDataprocMetastoreTableIamMember_Override(d DataprocMetastoreTableIamMember, scope constructs.Construct, id *string, config *DataprocMetastoreTableIamMemberConfig) {
 	_init_.Initialize()
 

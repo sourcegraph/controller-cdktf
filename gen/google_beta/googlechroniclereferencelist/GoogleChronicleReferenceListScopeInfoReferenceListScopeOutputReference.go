@@ -30,6 +30,8 @@ type GoogleChronicleReferenceListScopeInfoReferenceListScopeOutputReference inte
 	InternalValue() *GoogleChronicleReferenceListScopeInfoReferenceListScope
 	SetInternalValue(val *GoogleChronicleReferenceListScopeInfoReferenceListScope)
 	ScopeNames() *[]*string
+	SetScopeNames(val *[]*string)
+	ScopeNamesInput() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -62,6 +64,7 @@ type GoogleChronicleReferenceListScopeInfoReferenceListScopeOutputReference inte
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetScopeNames()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -137,6 +140,16 @@ func (j *jsiiProxy_GoogleChronicleReferenceListScopeInfoReferenceListScopeOutput
 	return returns
 }
 
+func (j *jsiiProxy_GoogleChronicleReferenceListScopeInfoReferenceListScopeOutputReference) ScopeNamesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"scopeNamesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleChronicleReferenceListScopeInfoReferenceListScopeOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -158,29 +171,29 @@ func (j *jsiiProxy_GoogleChronicleReferenceListScopeInfoReferenceListScopeOutput
 }
 
 
-func NewGoogleChronicleReferenceListScopeInfoReferenceListScopeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleChronicleReferenceListScopeInfoReferenceListScopeOutputReference {
+func NewGoogleChronicleReferenceListScopeInfoReferenceListScopeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleChronicleReferenceListScopeInfoReferenceListScopeOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewGoogleChronicleReferenceListScopeInfoReferenceListScopeOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewGoogleChronicleReferenceListScopeInfoReferenceListScopeOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_GoogleChronicleReferenceListScopeInfoReferenceListScopeOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-google-beta.googleChronicleReferenceList.GoogleChronicleReferenceListScopeInfoReferenceListScopeOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewGoogleChronicleReferenceListScopeInfoReferenceListScopeOutputReference_Override(g GoogleChronicleReferenceListScopeInfoReferenceListScopeOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewGoogleChronicleReferenceListScopeInfoReferenceListScopeOutputReference_Override(g GoogleChronicleReferenceListScopeInfoReferenceListScopeOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-google-beta.googleChronicleReferenceList.GoogleChronicleReferenceListScopeInfoReferenceListScopeOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
 }
@@ -214,6 +227,17 @@ func (j *jsiiProxy_GoogleChronicleReferenceListScopeInfoReferenceListScopeOutput
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleChronicleReferenceListScopeInfoReferenceListScopeOutputReference)SetScopeNames(val *[]*string) {
+	if err := j.validateSetScopeNamesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"scopeNames",
 		val,
 	)
 }
@@ -424,6 +448,14 @@ func (g *jsiiProxy_GoogleChronicleReferenceListScopeInfoReferenceListScopeOutput
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleChronicleReferenceListScopeInfoReferenceListScopeOutputReference) ResetScopeNames() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetScopeNames",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleChronicleReferenceListScopeInfoReferenceListScopeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

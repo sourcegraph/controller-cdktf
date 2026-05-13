@@ -6,7 +6,7 @@ type NetworkConnectivityGroupAutoAccept struct {
 	//
 	// The auto-accept setting is applied to spokes being created or updated in these projects.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/network_connectivity_group#auto_accept_projects NetworkConnectivityGroup#auto_accept_projects}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_connectivity_group#auto_accept_projects NetworkConnectivityGroup#auto_accept_projects}
 	AutoAcceptProjects *[]*string `field:"required" json:"autoAcceptProjects" yaml:"autoAcceptProjects"`
 }
 

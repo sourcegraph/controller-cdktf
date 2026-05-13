@@ -88,6 +88,10 @@ func (c *jsiiProxy_ContainerNodePool) validatePutNodeConfigParameters(value *Con
 	return nil
 }
 
+func (c *jsiiProxy_ContainerNodePool) validatePutNodeDrainConfigParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerNodePool) validatePutPlacementPolicyParameters(value *ContainerNodePoolPlacementPolicy) error {
 	return nil
 }

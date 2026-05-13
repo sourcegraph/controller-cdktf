@@ -76,6 +76,10 @@ func (g *jsiiProxy_GoogleDnsPolicy) validatePutAlternativeNameServerConfigParame
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDnsPolicy) validatePutDns64ConfigParameters(value *GoogleDnsPolicyDns64Config) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDnsPolicy) validatePutNetworksParameters(value interface{}) error {
 	return nil
 }

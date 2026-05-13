@@ -112,6 +112,17 @@ func (g *jsiiProxy_GoogleGkeBackupBackupPlanBackupConfigOutputReference) validat
 	return nil
 }
 
+func (g *jsiiProxy_GoogleGkeBackupBackupPlanBackupConfigOutputReference) validatePutSelectedNamespaceLabelsParameters(value *GoogleGkeBackupBackupPlanBackupConfigSelectedNamespaceLabels) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleGkeBackupBackupPlanBackupConfigOutputReference) validatePutSelectedNamespacesParameters(value *GoogleGkeBackupBackupPlanBackupConfigSelectedNamespaces) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

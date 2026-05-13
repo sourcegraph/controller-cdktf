@@ -60,6 +60,10 @@ func (j *jsiiProxy_VertexAiFeatureOnlineStoreBigtableOutputReference) validateSe
 	return nil
 }
 
+func (j *jsiiProxy_VertexAiFeatureOnlineStoreBigtableOutputReference) validateSetEnableDirectBigtableAccessParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VertexAiFeatureOnlineStoreBigtableOutputReference) validateSetInternalValueParameters(val *VertexAiFeatureOnlineStoreBigtable) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (j *jsiiProxy_VertexAiFeatureOnlineStoreBigtableOutputReference) validateSe
 }
 
 func (j *jsiiProxy_VertexAiFeatureOnlineStoreBigtableOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_VertexAiFeatureOnlineStoreBigtableOutputReference) validateSetZoneParameters(val *string) error {
 	return nil
 }
 

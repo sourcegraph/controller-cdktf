@@ -34,6 +34,8 @@ type DataprocClusterClusterConfigMasterConfigOutputReference interface {
 	ImageUri() *string
 	SetImageUri(val *string)
 	ImageUriInput() *string
+	InstanceFlexibilityPolicy() DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyOutputReference
+	InstanceFlexibilityPolicyInput() *DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicy
 	InstanceNames() *[]*string
 	InternalValue() *DataprocClusterClusterConfigMasterConfig
 	SetInternalValue(val *DataprocClusterClusterConfigMasterConfig)
@@ -80,9 +82,11 @@ type DataprocClusterClusterConfigMasterConfigOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAccelerators(value interface{})
 	PutDiskConfig(value *DataprocClusterClusterConfigMasterConfigDiskConfig)
+	PutInstanceFlexibilityPolicy(value *DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicy)
 	ResetAccelerators()
 	ResetDiskConfig()
 	ResetImageUri()
+	ResetInstanceFlexibilityPolicy()
 	ResetMachineType()
 	ResetMinCpuPlatform()
 	ResetNumInstances()
@@ -196,6 +200,26 @@ func (j *jsiiProxy_DataprocClusterClusterConfigMasterConfigOutputReference) Imag
 	_jsii_.Get(
 		j,
 		"imageUriInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocClusterClusterConfigMasterConfigOutputReference) InstanceFlexibilityPolicy() DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyOutputReference {
+	var returns DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyOutputReference
+	_jsii_.Get(
+		j,
+		"instanceFlexibilityPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocClusterClusterConfigMasterConfigOutputReference) InstanceFlexibilityPolicyInput() *DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicy {
+	var returns *DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicy
+	_jsii_.Get(
+		j,
+		"instanceFlexibilityPolicyInput",
 		&returns,
 	)
 	return returns
@@ -636,6 +660,17 @@ func (d *jsiiProxy_DataprocClusterClusterConfigMasterConfigOutputReference) PutD
 	)
 }
 
+func (d *jsiiProxy_DataprocClusterClusterConfigMasterConfigOutputReference) PutInstanceFlexibilityPolicy(value *DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicy) {
+	if err := d.validatePutInstanceFlexibilityPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putInstanceFlexibilityPolicy",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataprocClusterClusterConfigMasterConfigOutputReference) ResetAccelerators() {
 	_jsii_.InvokeVoid(
 		d,
@@ -656,6 +691,14 @@ func (d *jsiiProxy_DataprocClusterClusterConfigMasterConfigOutputReference) Rese
 	_jsii_.InvokeVoid(
 		d,
 		"resetImageUri",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataprocClusterClusterConfigMasterConfigOutputReference) ResetInstanceFlexibilityPolicy() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetInstanceFlexibilityPolicy",
 		nil, // no parameters
 	)
 }

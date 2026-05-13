@@ -33,6 +33,9 @@ type GoogleContainerClusterClusterAutoscalingOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DefaultComputeClassEnabled() interface{}
+	SetDefaultComputeClassEnabled(val interface{})
+	DefaultComputeClassEnabledInput() interface{}
 	Enabled() interface{}
 	SetEnabled(val interface{})
 	EnabledInput() interface{}
@@ -79,6 +82,7 @@ type GoogleContainerClusterClusterAutoscalingOutputReference interface {
 	ResetAutoProvisioningDefaults()
 	ResetAutoProvisioningLocations()
 	ResetAutoscalingProfile()
+	ResetDefaultComputeClassEnabled()
 	ResetEnabled()
 	ResetResourceLimits()
 	// Produce the Token's value at resolution time.
@@ -181,6 +185,26 @@ func (j *jsiiProxy_GoogleContainerClusterClusterAutoscalingOutputReference) Crea
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterClusterAutoscalingOutputReference) DefaultComputeClassEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"defaultComputeClassEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterClusterAutoscalingOutputReference) DefaultComputeClassEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"defaultComputeClassEnabledInput",
 		&returns,
 	)
 	return returns
@@ -334,6 +358,17 @@ func (j *jsiiProxy_GoogleContainerClusterClusterAutoscalingOutputReference)SetCo
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerClusterClusterAutoscalingOutputReference)SetDefaultComputeClassEnabled(val interface{}) {
+	if err := j.validateSetDefaultComputeClassEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultComputeClassEnabled",
 		val,
 	)
 }
@@ -610,6 +645,14 @@ func (g *jsiiProxy_GoogleContainerClusterClusterAutoscalingOutputReference) Rese
 	_jsii_.InvokeVoid(
 		g,
 		"resetAutoscalingProfile",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterClusterAutoscalingOutputReference) ResetDefaultComputeClassEnabled() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDefaultComputeClassEnabled",
 		nil, // no parameters
 	)
 }

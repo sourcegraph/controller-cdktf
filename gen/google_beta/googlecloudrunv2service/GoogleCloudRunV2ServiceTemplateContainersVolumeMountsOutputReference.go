@@ -35,6 +35,9 @@ type GoogleCloudRunV2ServiceTemplateContainersVolumeMountsOutputReference interf
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	SubPath() *string
+	SetSubPath(val *string)
+	SubPathInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,6 +70,7 @@ type GoogleCloudRunV2ServiceTemplateContainersVolumeMountsOutputReference interf
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetSubPath()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -172,6 +176,26 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersVolumeMountsOutputRe
 	return returns
 }
 
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersVolumeMountsOutputReference) SubPath() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subPath",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersVolumeMountsOutputReference) SubPathInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subPathInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersVolumeMountsOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -271,6 +295,17 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersVolumeMountsOutputRe
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersVolumeMountsOutputReference)SetSubPath(val *string) {
+	if err := j.validateSetSubPathParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"subPath",
 		val,
 	)
 }
@@ -481,6 +516,14 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersVolumeMountsOutputRe
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersVolumeMountsOutputReference) ResetSubPath() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSubPath",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersVolumeMountsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

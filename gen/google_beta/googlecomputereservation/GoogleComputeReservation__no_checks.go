@@ -72,6 +72,14 @@ func (g *jsiiProxy_GoogleComputeReservation) validateOverrideLogicalIdParameters
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeReservation) validatePutDeleteAfterDurationParameters(value *GoogleComputeReservationDeleteAfterDuration) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeReservation) validatePutReservationSharingPolicyParameters(value *GoogleComputeReservationReservationSharingPolicy) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeReservation) validatePutShareSettingsParameters(value *GoogleComputeReservationShareSettings) error {
 	return nil
 }
@@ -108,11 +116,15 @@ func (j *jsiiProxy_GoogleComputeReservation) validateSetCountParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeReservation) validateSetDeleteAtTimeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeReservation) validateSetDescriptionParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeReservation) validateSetIdParameters(val *string) error {
+func (j *jsiiProxy_GoogleComputeReservation) validateSetEnableEmergentMaintenanceParameters(val interface{}) error {
 	return nil
 }
 

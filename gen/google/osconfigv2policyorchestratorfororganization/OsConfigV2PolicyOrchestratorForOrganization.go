@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/osconfigv2policyorchestratorfororganization/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/os_config_v2_policy_orchestrator_for_organization google_os_config_v2_policy_orchestrator_for_organization}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_v2_policy_orchestrator_for_organization google_os_config_v2_policy_orchestrator_for_organization}.
 type OsConfigV2PolicyOrchestratorForOrganization interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -607,7 +607,7 @@ func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) UpdateTime() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/os_config_v2_policy_orchestrator_for_organization google_os_config_v2_policy_orchestrator_for_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_v2_policy_orchestrator_for_organization google_os_config_v2_policy_orchestrator_for_organization} Resource.
 func NewOsConfigV2PolicyOrchestratorForOrganization(scope constructs.Construct, id *string, config *OsConfigV2PolicyOrchestratorForOrganizationConfig) OsConfigV2PolicyOrchestratorForOrganization {
 	_init_.Initialize()
 
@@ -625,7 +625,7 @@ func NewOsConfigV2PolicyOrchestratorForOrganization(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/os_config_v2_policy_orchestrator_for_organization google_os_config_v2_policy_orchestrator_for_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_v2_policy_orchestrator_for_organization google_os_config_v2_policy_orchestrator_for_organization} Resource.
 func NewOsConfigV2PolicyOrchestratorForOrganization_Override(o OsConfigV2PolicyOrchestratorForOrganization, scope constructs.Construct, id *string, config *OsConfigV2PolicyOrchestratorForOrganizationConfig) {
 	_init_.Initialize()
 

@@ -56,11 +56,23 @@ func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecOutputReference) validat
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecOutputReference) validateSetCatalogPublishingEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecOutputReference) validateSetEnableCatalogBasedRulesParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecOutputReference) validateSetFilterParameters(val *string) error {
 	return nil
 }
 

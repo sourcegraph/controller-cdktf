@@ -88,6 +88,10 @@ func (g *jsiiProxy_GoogleNetworkSecuritySecurityProfile) validatePutTimeoutsPara
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetworkSecuritySecurityProfile) validatePutUrlFilteringProfileParameters(value *GoogleNetworkSecuritySecurityProfileUrlFilteringProfile) error {
+	return nil
+}
+
 func validateGoogleNetworkSecuritySecurityProfile_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

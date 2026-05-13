@@ -90,6 +90,37 @@ func (v *jsiiProxy_VertexAiEndpointPrivateServiceConnectConfigOutputReference) v
 	return nil
 }
 
+func (v *jsiiProxy_VertexAiEndpointPrivateServiceConnectConfigOutputReference) validatePutPscAutomationConfigsParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*VertexAiEndpointPrivateServiceConnectConfigPscAutomationConfigs:
+		value := value.(*[]*VertexAiEndpointPrivateServiceConnectConfigPscAutomationConfigs)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*VertexAiEndpointPrivateServiceConnectConfigPscAutomationConfigs:
+		value_ := value.([]*VertexAiEndpointPrivateServiceConnectConfigPscAutomationConfigs)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*VertexAiEndpointPrivateServiceConnectConfigPscAutomationConfigs; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (v *jsiiProxy_VertexAiEndpointPrivateServiceConnectConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
@@ -164,26 +195,6 @@ func (j *jsiiProxy_VertexAiEndpointPrivateServiceConnectConfigOutputReference) v
 }
 
 func (j *jsiiProxy_VertexAiEndpointPrivateServiceConnectConfigOutputReference) validateSetEnablePrivateServiceConnectParameters(val interface{}) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-	switch val.(type) {
-	case *bool:
-		// ok
-	case bool:
-		// ok
-	case cdktf.IResolvable:
-		// ok
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
-		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_VertexAiEndpointPrivateServiceConnectConfigOutputReference) validateSetEnableSecurePrivateServiceConnectParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

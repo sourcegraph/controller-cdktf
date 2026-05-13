@@ -160,6 +160,10 @@ func (j *jsiiProxy_DataFusionInstance) validateSetOptionsParameters(val *map[str
 	return nil
 }
 
+func (j *jsiiProxy_DataFusionInstance) validateSetPatchRevisionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFusionInstance) validateSetPrivateInstanceParameters(val interface{}) error {
 	return nil
 }

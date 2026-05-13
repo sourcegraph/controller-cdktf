@@ -237,6 +237,17 @@ func (g *jsiiProxy_GoogleDatastreamConnectionProfile) validatePutGcsProfileParam
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDatastreamConnectionProfile) validatePutMongodbProfileParameters(value *GoogleDatastreamConnectionProfileMongodbProfile) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDatastreamConnectionProfile) validatePutMysqlProfileParameters(value *GoogleDatastreamConnectionProfileMysqlProfile) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -282,6 +293,17 @@ func (g *jsiiProxy_GoogleDatastreamConnectionProfile) validatePutPrivateConnecti
 }
 
 func (g *jsiiProxy_GoogleDatastreamConnectionProfile) validatePutSalesforceProfileParameters(value *GoogleDatastreamConnectionProfileSalesforceProfile) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDatastreamConnectionProfile) validatePutSpannerProfileParameters(value *GoogleDatastreamConnectionProfileSpannerProfile) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

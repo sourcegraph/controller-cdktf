@@ -144,6 +144,10 @@ func (j *jsiiProxy_BigtableInstance) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
+func (j *jsiiProxy_BigtableInstance) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func validateNewBigtableInstanceParameters(scope constructs.Construct, id *string, config *BigtableInstanceConfig) error {
 	return nil
 }

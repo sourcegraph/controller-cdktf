@@ -1,0 +1,6 @@
+package computeinterconnectgroup
+
+
+type ComputeInterconnectGroupConfiguredTopologyCapabilityIntendedCapabilityBlockers struct {
+}
+

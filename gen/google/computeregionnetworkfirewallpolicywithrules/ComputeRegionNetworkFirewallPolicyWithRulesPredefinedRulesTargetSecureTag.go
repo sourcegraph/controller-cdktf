@@ -1,0 +1,6 @@
+package computeregionnetworkfirewallpolicywithrules
+
+
+type ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesTargetSecureTag struct {
+}
+

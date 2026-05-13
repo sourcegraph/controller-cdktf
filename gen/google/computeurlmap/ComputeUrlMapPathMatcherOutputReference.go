@@ -25,6 +25,8 @@ type ComputeUrlMapPathMatcherOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DefaultCustomErrorResponsePolicy() ComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyOutputReference
+	DefaultCustomErrorResponsePolicyInput() *ComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicy
 	DefaultRouteAction() ComputeUrlMapPathMatcherDefaultRouteActionOutputReference
 	DefaultRouteActionInput() *ComputeUrlMapPathMatcherDefaultRouteAction
 	DefaultService() *string
@@ -80,11 +82,13 @@ type ComputeUrlMapPathMatcherOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutDefaultCustomErrorResponsePolicy(value *ComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicy)
 	PutDefaultRouteAction(value *ComputeUrlMapPathMatcherDefaultRouteAction)
 	PutDefaultUrlRedirect(value *ComputeUrlMapPathMatcherDefaultUrlRedirect)
 	PutHeaderAction(value *ComputeUrlMapPathMatcherHeaderAction)
 	PutPathRule(value interface{})
 	PutRouteRules(value interface{})
+	ResetDefaultCustomErrorResponsePolicy()
 	ResetDefaultRouteAction()
 	ResetDefaultService()
 	ResetDefaultUrlRedirect()
@@ -132,6 +136,26 @@ func (j *jsiiProxy_ComputeUrlMapPathMatcherOutputReference) CreationStack() *[]*
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeUrlMapPathMatcherOutputReference) DefaultCustomErrorResponsePolicy() ComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyOutputReference {
+	var returns ComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyOutputReference
+	_jsii_.Get(
+		j,
+		"defaultCustomErrorResponsePolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeUrlMapPathMatcherOutputReference) DefaultCustomErrorResponsePolicyInput() *ComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicy {
+	var returns *ComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicy
+	_jsii_.Get(
+		j,
+		"defaultCustomErrorResponsePolicyInput",
 		&returns,
 	)
 	return returns
@@ -639,6 +663,17 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherOutputReference) InterpolationForAttr
 	return returns
 }
 
+func (c *jsiiProxy_ComputeUrlMapPathMatcherOutputReference) PutDefaultCustomErrorResponsePolicy(value *ComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicy) {
+	if err := c.validatePutDefaultCustomErrorResponsePolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putDefaultCustomErrorResponsePolicy",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeUrlMapPathMatcherOutputReference) PutDefaultRouteAction(value *ComputeUrlMapPathMatcherDefaultRouteAction) {
 	if err := c.validatePutDefaultRouteActionParameters(value); err != nil {
 		panic(err)
@@ -691,6 +726,14 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherOutputReference) PutRouteRules(value 
 		c,
 		"putRouteRules",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ComputeUrlMapPathMatcherOutputReference) ResetDefaultCustomErrorResponsePolicy() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDefaultCustomErrorResponsePolicy",
+		nil, // no parameters
 	)
 }
 

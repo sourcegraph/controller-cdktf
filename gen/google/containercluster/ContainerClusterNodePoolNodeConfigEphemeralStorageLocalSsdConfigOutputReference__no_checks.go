@@ -56,6 +56,10 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdCon
 	return nil
 }
 
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference) validateSetDataCacheCountParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference) validateSetInternalValueParameters(val *ContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfig) error {
 	return nil
 }

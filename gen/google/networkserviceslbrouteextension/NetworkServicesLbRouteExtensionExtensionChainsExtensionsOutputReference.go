@@ -38,12 +38,24 @@ type NetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference int
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Metadata() *map[string]*string
+	SetMetadata(val *map[string]*string)
+	MetadataInput() *map[string]*string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	ObservabilityMode() interface{}
+	SetObservabilityMode(val interface{})
+	ObservabilityModeInput() interface{}
+	RequestBodySendMode() *string
+	SetRequestBodySendMode(val *string)
+	RequestBodySendModeInput() *string
 	Service() *string
 	SetService(val *string)
 	ServiceInput() *string
+	SupportedEvents() *[]*string
+	SetSupportedEvents(val *[]*string)
+	SupportedEventsInput() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -82,6 +94,10 @@ type NetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference int
 	ResetAuthority()
 	ResetFailOpen()
 	ResetForwardHeaders()
+	ResetMetadata()
+	ResetObservabilityMode()
+	ResetRequestBodySendMode()
+	ResetSupportedEvents()
 	ResetTimeout()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -208,6 +224,26 @@ func (j *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsExtensionsOutpu
 	return returns
 }
 
+func (j *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference) Metadata() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"metadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference) MetadataInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"metadataInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -228,6 +264,46 @@ func (j *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsExtensionsOutpu
 	return returns
 }
 
+func (j *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference) ObservabilityMode() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"observabilityMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference) ObservabilityModeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"observabilityModeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference) RequestBodySendMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"requestBodySendMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference) RequestBodySendModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"requestBodySendModeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference) Service() *string {
 	var returns *string
 	_jsii_.Get(
@@ -243,6 +319,26 @@ func (j *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsExtensionsOutpu
 	_jsii_.Get(
 		j,
 		"serviceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference) SupportedEvents() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"supportedEvents",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference) SupportedEventsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"supportedEventsInput",
 		&returns,
 	)
 	return returns
@@ -382,6 +478,17 @@ func (j *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsExtensionsOutpu
 	)
 }
 
+func (j *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference)SetMetadata(val *map[string]*string) {
+	if err := j.validateSetMetadataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"metadata",
+		val,
+	)
+}
+
 func (j *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference)SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
@@ -393,6 +500,28 @@ func (j *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsExtensionsOutpu
 	)
 }
 
+func (j *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference)SetObservabilityMode(val interface{}) {
+	if err := j.validateSetObservabilityModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"observabilityMode",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference)SetRequestBodySendMode(val *string) {
+	if err := j.validateSetRequestBodySendModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"requestBodySendMode",
+		val,
+	)
+}
+
 func (j *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference)SetService(val *string) {
 	if err := j.validateSetServiceParameters(val); err != nil {
 		panic(err)
@@ -400,6 +529,17 @@ func (j *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsExtensionsOutpu
 	_jsii_.Set(
 		j,
 		"service",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference)SetSupportedEvents(val *[]*string) {
+	if err := j.validateSetSupportedEventsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"supportedEvents",
 		val,
 	)
 }
@@ -643,6 +783,38 @@ func (n *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsExtensionsOutpu
 	_jsii_.InvokeVoid(
 		n,
 		"resetForwardHeaders",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference) ResetMetadata() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetMetadata",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference) ResetObservabilityMode() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetObservabilityMode",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference) ResetRequestBodySendMode() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetRequestBodySendMode",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference) ResetSupportedEvents() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetSupportedEvents",
 		nil, // no parameters
 	)
 }

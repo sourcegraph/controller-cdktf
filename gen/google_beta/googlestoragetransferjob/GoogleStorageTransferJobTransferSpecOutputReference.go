@@ -10,6 +10,8 @@ import (
 
 type GoogleStorageTransferJobTransferSpecOutputReference interface {
 	cdktf.ComplexObject
+	AwsS3CompatibleDataSource() GoogleStorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference
+	AwsS3CompatibleDataSourceInput() *GoogleStorageTransferJobTransferSpecAwsS3CompatibleDataSource
 	AwsS3DataSource() GoogleStorageTransferJobTransferSpecAwsS3DataSourceOutputReference
 	AwsS3DataSourceInput() *GoogleStorageTransferJobTransferSpecAwsS3DataSource
 	AzureBlobStorageDataSource() GoogleStorageTransferJobTransferSpecAzureBlobStorageDataSourceOutputReference
@@ -61,6 +63,8 @@ type GoogleStorageTransferJobTransferSpecOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TransferManifest() GoogleStorageTransferJobTransferSpecTransferManifestOutputReference
+	TransferManifestInput() *GoogleStorageTransferJobTransferSpecTransferManifest
 	TransferOptions() GoogleStorageTransferJobTransferSpecTransferOptionsOutputReference
 	TransferOptionsInput() *GoogleStorageTransferJobTransferSpecTransferOptions
 	// Experimental.
@@ -87,6 +91,7 @@ type GoogleStorageTransferJobTransferSpecOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAwsS3CompatibleDataSource(value *GoogleStorageTransferJobTransferSpecAwsS3CompatibleDataSource)
 	PutAwsS3DataSource(value *GoogleStorageTransferJobTransferSpecAwsS3DataSource)
 	PutAzureBlobStorageDataSource(value *GoogleStorageTransferJobTransferSpecAzureBlobStorageDataSource)
 	PutGcsDataSink(value *GoogleStorageTransferJobTransferSpecGcsDataSink)
@@ -96,7 +101,9 @@ type GoogleStorageTransferJobTransferSpecOutputReference interface {
 	PutObjectConditions(value *GoogleStorageTransferJobTransferSpecObjectConditions)
 	PutPosixDataSink(value *GoogleStorageTransferJobTransferSpecPosixDataSink)
 	PutPosixDataSource(value *GoogleStorageTransferJobTransferSpecPosixDataSource)
+	PutTransferManifest(value *GoogleStorageTransferJobTransferSpecTransferManifest)
 	PutTransferOptions(value *GoogleStorageTransferJobTransferSpecTransferOptions)
+	ResetAwsS3CompatibleDataSource()
 	ResetAwsS3DataSource()
 	ResetAzureBlobStorageDataSource()
 	ResetGcsDataSink()
@@ -108,6 +115,7 @@ type GoogleStorageTransferJobTransferSpecOutputReference interface {
 	ResetPosixDataSource()
 	ResetSinkAgentPoolName()
 	ResetSourceAgentPoolName()
+	ResetTransferManifest()
 	ResetTransferOptions()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -122,6 +130,26 @@ type GoogleStorageTransferJobTransferSpecOutputReference interface {
 // The jsii proxy struct for GoogleStorageTransferJobTransferSpecOutputReference
 type jsiiProxy_GoogleStorageTransferJobTransferSpecOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecOutputReference) AwsS3CompatibleDataSource() GoogleStorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference {
+	var returns GoogleStorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference
+	_jsii_.Get(
+		j,
+		"awsS3CompatibleDataSource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecOutputReference) AwsS3CompatibleDataSourceInput() *GoogleStorageTransferJobTransferSpecAwsS3CompatibleDataSource {
+	var returns *GoogleStorageTransferJobTransferSpecAwsS3CompatibleDataSource
+	_jsii_.Get(
+		j,
+		"awsS3CompatibleDataSourceInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecOutputReference) AwsS3DataSource() GoogleStorageTransferJobTransferSpecAwsS3DataSourceOutputReference {
@@ -409,6 +437,26 @@ func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecOutputReference) Terrafor
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecOutputReference) TransferManifest() GoogleStorageTransferJobTransferSpecTransferManifestOutputReference {
+	var returns GoogleStorageTransferJobTransferSpecTransferManifestOutputReference
+	_jsii_.Get(
+		j,
+		"transferManifest",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecOutputReference) TransferManifestInput() *GoogleStorageTransferJobTransferSpecTransferManifest {
+	var returns *GoogleStorageTransferJobTransferSpecTransferManifest
+	_jsii_.Get(
+		j,
+		"transferManifestInput",
 		&returns,
 	)
 	return returns
@@ -725,6 +773,17 @@ func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecOutputReference) Interpol
 	return returns
 }
 
+func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecOutputReference) PutAwsS3CompatibleDataSource(value *GoogleStorageTransferJobTransferSpecAwsS3CompatibleDataSource) {
+	if err := g.validatePutAwsS3CompatibleDataSourceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAwsS3CompatibleDataSource",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecOutputReference) PutAwsS3DataSource(value *GoogleStorageTransferJobTransferSpecAwsS3DataSource) {
 	if err := g.validatePutAwsS3DataSourceParameters(value); err != nil {
 		panic(err)
@@ -824,6 +883,17 @@ func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecOutputReference) PutPosix
 	)
 }
 
+func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecOutputReference) PutTransferManifest(value *GoogleStorageTransferJobTransferSpecTransferManifest) {
+	if err := g.validatePutTransferManifestParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putTransferManifest",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecOutputReference) PutTransferOptions(value *GoogleStorageTransferJobTransferSpecTransferOptions) {
 	if err := g.validatePutTransferOptionsParameters(value); err != nil {
 		panic(err)
@@ -832,6 +902,14 @@ func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecOutputReference) PutTrans
 		g,
 		"putTransferOptions",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecOutputReference) ResetAwsS3CompatibleDataSource() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAwsS3CompatibleDataSource",
+		nil, // no parameters
 	)
 }
 
@@ -919,6 +997,14 @@ func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecOutputReference) ResetSou
 	_jsii_.InvokeVoid(
 		g,
 		"resetSourceAgentPoolName",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecOutputReference) ResetTransferManifest() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTransferManifest",
 		nil, // no parameters
 	)
 }

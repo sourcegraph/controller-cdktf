@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlenetappstoragepool/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_netapp_storage_pool google_netapp_storage_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_netapp_storage_pool google_netapp_storage_pool}.
 type GoogleNetappStoragePool interface {
 	cdktf.TerraformResource
 	ActiveDirectory() *string
@@ -18,11 +18,13 @@ type GoogleNetappStoragePool interface {
 	AllowAutoTiering() interface{}
 	SetAllowAutoTiering(val interface{})
 	AllowAutoTieringInput() interface{}
+	AvailableThroughputMibps() *float64
 	CapacityGib() *string
 	SetCapacityGib(val *string)
 	CapacityGibInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	ColdTierSizeUsedGib() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -33,6 +35,9 @@ type GoogleNetappStoragePool interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CustomPerformanceEnabled() interface{}
+	SetCustomPerformanceEnabled(val interface{})
+	CustomPerformanceEnabledInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -41,6 +46,9 @@ type GoogleNetappStoragePool interface {
 	SetDescription(val *string)
 	DescriptionInput() *string
 	EffectiveLabels() cdktf.StringMap
+	EnableHotTierAutoResize() interface{}
+	SetEnableHotTierAutoResize(val interface{})
+	EnableHotTierAutoResizeInput() interface{}
 	EncryptionType() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -50,6 +58,10 @@ type GoogleNetappStoragePool interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	HotTierSizeGib() *string
+	SetHotTierSizeGib(val *string)
+	HotTierSizeGibInput() *string
+	HotTierSizeUsedGib() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -69,6 +81,9 @@ type GoogleNetappStoragePool interface {
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
+	Mode() *string
+	SetMode(val *string)
+	ModeInput() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -88,11 +103,20 @@ type GoogleNetappStoragePool interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	QosType() *string
+	SetQosType(val *string)
+	QosTypeInput() *string
 	// Experimental.
 	RawOverrides() interface{}
 	ReplicaZone() *string
 	SetReplicaZone(val *string)
 	ReplicaZoneInput() *string
+	ScaleTier() *string
+	SetScaleTier(val *string)
+	ScaleTierInput() *string
+	ScaleType() *string
+	SetScaleType(val *string)
+	ScaleTypeInput() *string
 	ServiceLevel() *string
 	SetServiceLevel(val *string)
 	ServiceLevelInput() *string
@@ -105,6 +129,15 @@ type GoogleNetappStoragePool interface {
 	TerraformResourceType() *string
 	Timeouts() GoogleNetappStoragePoolTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	TotalIops() *string
+	SetTotalIops(val *string)
+	TotalIopsInput() *string
+	TotalThroughputMibps() *string
+	SetTotalThroughputMibps(val *string)
+	TotalThroughputMibpsInput() *string
+	Type() *string
+	SetType(val *string)
+	TypeInput() *string
 	VolumeCapacityGib() *string
 	VolumeCount() *float64
 	Zone() *string
@@ -156,17 +189,27 @@ type GoogleNetappStoragePool interface {
 	PutTimeouts(value *GoogleNetappStoragePoolTimeouts)
 	ResetActiveDirectory()
 	ResetAllowAutoTiering()
+	ResetCustomPerformanceEnabled()
 	ResetDescription()
+	ResetEnableHotTierAutoResize()
+	ResetHotTierSizeGib()
 	ResetId()
 	ResetKmsConfig()
 	ResetLabels()
 	ResetLdapEnabled()
+	ResetMode()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetQosType()
 	ResetReplicaZone()
+	ResetScaleTier()
+	ResetScaleType()
 	ResetTimeouts()
+	ResetTotalIops()
+	ResetTotalThroughputMibps()
+	ResetType()
 	ResetZone()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -226,6 +269,16 @@ func (j *jsiiProxy_GoogleNetappStoragePool) AllowAutoTieringInput() interface{} 
 	return returns
 }
 
+func (j *jsiiProxy_GoogleNetappStoragePool) AvailableThroughputMibps() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"availableThroughputMibps",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleNetappStoragePool) CapacityGib() *string {
 	var returns *string
 	_jsii_.Get(
@@ -256,6 +309,16 @@ func (j *jsiiProxy_GoogleNetappStoragePool) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleNetappStoragePool) ColdTierSizeUsedGib() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"coldTierSizeUsedGib",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleNetappStoragePool) Connection() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -281,6 +344,26 @@ func (j *jsiiProxy_GoogleNetappStoragePool) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetappStoragePool) CustomPerformanceEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"customPerformanceEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetappStoragePool) CustomPerformanceEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"customPerformanceEnabledInput",
 		&returns,
 	)
 	return returns
@@ -326,6 +409,26 @@ func (j *jsiiProxy_GoogleNetappStoragePool) EffectiveLabels() cdktf.StringMap {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleNetappStoragePool) EnableHotTierAutoResize() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableHotTierAutoResize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetappStoragePool) EnableHotTierAutoResizeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableHotTierAutoResizeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleNetappStoragePool) EncryptionType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -361,6 +464,36 @@ func (j *jsiiProxy_GoogleNetappStoragePool) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetappStoragePool) HotTierSizeGib() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hotTierSizeGib",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetappStoragePool) HotTierSizeGibInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hotTierSizeGibInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetappStoragePool) HotTierSizeUsedGib() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hotTierSizeUsedGib",
 		&returns,
 	)
 	return returns
@@ -476,6 +609,26 @@ func (j *jsiiProxy_GoogleNetappStoragePool) LocationInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleNetappStoragePool) Mode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetappStoragePool) ModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleNetappStoragePool) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -566,6 +719,26 @@ func (j *jsiiProxy_GoogleNetappStoragePool) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleNetappStoragePool) QosType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"qosType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetappStoragePool) QosTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"qosTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleNetappStoragePool) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -591,6 +764,46 @@ func (j *jsiiProxy_GoogleNetappStoragePool) ReplicaZoneInput() *string {
 	_jsii_.Get(
 		j,
 		"replicaZoneInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetappStoragePool) ScaleTier() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scaleTier",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetappStoragePool) ScaleTierInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scaleTierInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetappStoragePool) ScaleType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scaleType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetappStoragePool) ScaleTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scaleTypeInput",
 		&returns,
 	)
 	return returns
@@ -676,6 +889,66 @@ func (j *jsiiProxy_GoogleNetappStoragePool) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleNetappStoragePool) TotalIops() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"totalIops",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetappStoragePool) TotalIopsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"totalIopsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetappStoragePool) TotalThroughputMibps() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"totalThroughputMibps",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetappStoragePool) TotalThroughputMibpsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"totalThroughputMibpsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetappStoragePool) Type() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"type",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetappStoragePool) TypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"typeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleNetappStoragePool) VolumeCapacityGib() *string {
 	var returns *string
 	_jsii_.Get(
@@ -717,7 +990,7 @@ func (j *jsiiProxy_GoogleNetappStoragePool) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_netapp_storage_pool google_netapp_storage_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_netapp_storage_pool google_netapp_storage_pool} Resource.
 func NewGoogleNetappStoragePool(scope constructs.Construct, id *string, config *GoogleNetappStoragePoolConfig) GoogleNetappStoragePool {
 	_init_.Initialize()
 
@@ -735,7 +1008,7 @@ func NewGoogleNetappStoragePool(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_netapp_storage_pool google_netapp_storage_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_netapp_storage_pool google_netapp_storage_pool} Resource.
 func NewGoogleNetappStoragePool_Override(g GoogleNetappStoragePool, scope constructs.Construct, id *string, config *GoogleNetappStoragePoolConfig) {
 	_init_.Initialize()
 
@@ -801,6 +1074,17 @@ func (j *jsiiProxy_GoogleNetappStoragePool)SetCount(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_GoogleNetappStoragePool)SetCustomPerformanceEnabled(val interface{}) {
+	if err := j.validateSetCustomPerformanceEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customPerformanceEnabled",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleNetappStoragePool)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
@@ -820,10 +1104,32 @@ func (j *jsiiProxy_GoogleNetappStoragePool)SetDescription(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleNetappStoragePool)SetEnableHotTierAutoResize(val interface{}) {
+	if err := j.validateSetEnableHotTierAutoResizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableHotTierAutoResize",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleNetappStoragePool)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleNetappStoragePool)SetHotTierSizeGib(val *string) {
+	if err := j.validateSetHotTierSizeGibParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hotTierSizeGib",
 		val,
 	)
 }
@@ -894,6 +1200,17 @@ func (j *jsiiProxy_GoogleNetappStoragePool)SetLocation(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleNetappStoragePool)SetMode(val *string) {
+	if err := j.validateSetModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"mode",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleNetappStoragePool)SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
@@ -946,6 +1263,17 @@ func (j *jsiiProxy_GoogleNetappStoragePool)SetProvisioners(val *[]interface{}) {
 	)
 }
 
+func (j *jsiiProxy_GoogleNetappStoragePool)SetQosType(val *string) {
+	if err := j.validateSetQosTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"qosType",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleNetappStoragePool)SetReplicaZone(val *string) {
 	if err := j.validateSetReplicaZoneParameters(val); err != nil {
 		panic(err)
@@ -957,6 +1285,28 @@ func (j *jsiiProxy_GoogleNetappStoragePool)SetReplicaZone(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleNetappStoragePool)SetScaleTier(val *string) {
+	if err := j.validateSetScaleTierParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"scaleTier",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleNetappStoragePool)SetScaleType(val *string) {
+	if err := j.validateSetScaleTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"scaleType",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleNetappStoragePool)SetServiceLevel(val *string) {
 	if err := j.validateSetServiceLevelParameters(val); err != nil {
 		panic(err)
@@ -964,6 +1314,39 @@ func (j *jsiiProxy_GoogleNetappStoragePool)SetServiceLevel(val *string) {
 	_jsii_.Set(
 		j,
 		"serviceLevel",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleNetappStoragePool)SetTotalIops(val *string) {
+	if err := j.validateSetTotalIopsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"totalIops",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleNetappStoragePool)SetTotalThroughputMibps(val *string) {
+	if err := j.validateSetTotalThroughputMibpsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"totalThroughputMibps",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleNetappStoragePool)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"type",
 		val,
 	)
 }
@@ -1359,10 +1742,34 @@ func (g *jsiiProxy_GoogleNetappStoragePool) ResetAllowAutoTiering() {
 	)
 }
 
+func (g *jsiiProxy_GoogleNetappStoragePool) ResetCustomPerformanceEnabled() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCustomPerformanceEnabled",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleNetappStoragePool) ResetDescription() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleNetappStoragePool) ResetEnableHotTierAutoResize() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnableHotTierAutoResize",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleNetappStoragePool) ResetHotTierSizeGib() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetHotTierSizeGib",
 		nil, // no parameters
 	)
 }
@@ -1399,6 +1806,14 @@ func (g *jsiiProxy_GoogleNetappStoragePool) ResetLdapEnabled() {
 	)
 }
 
+func (g *jsiiProxy_GoogleNetappStoragePool) ResetMode() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMode",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleNetappStoragePool) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1415,6 +1830,14 @@ func (g *jsiiProxy_GoogleNetappStoragePool) ResetProject() {
 	)
 }
 
+func (g *jsiiProxy_GoogleNetappStoragePool) ResetQosType() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetQosType",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleNetappStoragePool) ResetReplicaZone() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1423,10 +1846,50 @@ func (g *jsiiProxy_GoogleNetappStoragePool) ResetReplicaZone() {
 	)
 }
 
+func (g *jsiiProxy_GoogleNetappStoragePool) ResetScaleTier() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetScaleTier",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleNetappStoragePool) ResetScaleType() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetScaleType",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleNetappStoragePool) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleNetappStoragePool) ResetTotalIops() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTotalIops",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleNetappStoragePool) ResetTotalThroughputMibps() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTotalThroughputMibps",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleNetappStoragePool) ResetType() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetType",
 		nil, // no parameters
 	)
 }

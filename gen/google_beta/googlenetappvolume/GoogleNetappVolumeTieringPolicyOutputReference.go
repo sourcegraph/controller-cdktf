@@ -30,6 +30,9 @@ type GoogleNetappVolumeTieringPolicyOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	HotTierBypassModeEnabled() interface{}
+	SetHotTierBypassModeEnabled(val interface{})
+	HotTierBypassModeEnabledInput() interface{}
 	InternalValue() *GoogleNetappVolumeTieringPolicy
 	SetInternalValue(val *GoogleNetappVolumeTieringPolicy)
 	// Experimental.
@@ -68,6 +71,7 @@ type GoogleNetappVolumeTieringPolicyOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetCoolingThresholdDays()
+	ResetHotTierBypassModeEnabled()
 	ResetTierAction()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -139,6 +143,26 @@ func (j *jsiiProxy_GoogleNetappVolumeTieringPolicyOutputReference) Fqn() *string
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetappVolumeTieringPolicyOutputReference) HotTierBypassModeEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hotTierBypassModeEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetappVolumeTieringPolicyOutputReference) HotTierBypassModeEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hotTierBypassModeEnabledInput",
 		&returns,
 	)
 	return returns
@@ -251,6 +275,17 @@ func (j *jsiiProxy_GoogleNetappVolumeTieringPolicyOutputReference)SetCoolingThre
 	_jsii_.Set(
 		j,
 		"coolingThresholdDays",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleNetappVolumeTieringPolicyOutputReference)SetHotTierBypassModeEnabled(val interface{}) {
+	if err := j.validateSetHotTierBypassModeEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hotTierBypassModeEnabled",
 		val,
 	)
 }
@@ -489,6 +524,14 @@ func (g *jsiiProxy_GoogleNetappVolumeTieringPolicyOutputReference) ResetCoolingT
 	_jsii_.InvokeVoid(
 		g,
 		"resetCoolingThresholdDays",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleNetappVolumeTieringPolicyOutputReference) ResetHotTierBypassModeEnabled() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetHotTierBypassModeEnabled",
 		nil, // no parameters
 	)
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputestoragepooliampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_storage_pool_iam_policy google_compute_storage_pool_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_storage_pool_iam_policy google_compute_storage_pool_iam_policy}.
 type GoogleComputeStoragePoolIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -412,7 +412,7 @@ func (j *jsiiProxy_GoogleComputeStoragePoolIamPolicy) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_storage_pool_iam_policy google_compute_storage_pool_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_storage_pool_iam_policy google_compute_storage_pool_iam_policy} Resource.
 func NewGoogleComputeStoragePoolIamPolicy(scope constructs.Construct, id *string, config *GoogleComputeStoragePoolIamPolicyConfig) GoogleComputeStoragePoolIamPolicy {
 	_init_.Initialize()
 
@@ -430,7 +430,7 @@ func NewGoogleComputeStoragePoolIamPolicy(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_storage_pool_iam_policy google_compute_storage_pool_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_storage_pool_iam_policy google_compute_storage_pool_iam_policy} Resource.
 func NewGoogleComputeStoragePoolIamPolicy_Override(g GoogleComputeStoragePoolIamPolicy, scope constructs.Construct, id *string, config *GoogleComputeStoragePoolIamPolicyConfig) {
 	_init_.Initialize()
 

@@ -25,6 +25,9 @@ type GkeHubScopeRbacRoleBindingRoleOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomRole() *string
+	SetCustomRole(val *string)
+	CustomRoleInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GkeHubScopeRbacRoleBindingRole
@@ -64,6 +67,7 @@ type GkeHubScopeRbacRoleBindingRoleOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetCustomRole()
 	ResetPredefinedRole()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -105,6 +109,26 @@ func (j *jsiiProxy_GkeHubScopeRbacRoleBindingRoleOutputReference) CreationStack(
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GkeHubScopeRbacRoleBindingRoleOutputReference) CustomRole() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customRole",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GkeHubScopeRbacRoleBindingRoleOutputReference) CustomRoleInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customRoleInput",
 		&returns,
 	)
 	return returns
@@ -216,6 +240,17 @@ func (j *jsiiProxy_GkeHubScopeRbacRoleBindingRoleOutputReference)SetComplexObjec
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GkeHubScopeRbacRoleBindingRoleOutputReference)SetCustomRole(val *string) {
+	if err := j.validateSetCustomRoleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customRole",
 		val,
 	)
 }
@@ -448,6 +483,14 @@ func (g *jsiiProxy_GkeHubScopeRbacRoleBindingRoleOutputReference) InterpolationF
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GkeHubScopeRbacRoleBindingRoleOutputReference) ResetCustomRole() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCustomRole",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GkeHubScopeRbacRoleBindingRoleOutputReference) ResetPredefinedRole() {

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/sqluser/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/sql_user google_sql_user}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_user google_sql_user}.
 type SqlUser interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -24,6 +24,9 @@ type SqlUser interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DatabaseRoles() *[]*string
+	SetDatabaseRoles(val *[]*string)
+	DatabaseRolesInput() *[]*string
 	DeletionPolicy() *string
 	SetDeletionPolicy(val *string)
 	DeletionPolicyInput() *string
@@ -42,6 +45,7 @@ type SqlUser interface {
 	Host() *string
 	SetHost(val *string)
 	HostInput() *string
+	IamEmail() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -138,6 +142,7 @@ type SqlUser interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutPasswordPolicy(value *SqlUserPasswordPolicy)
 	PutTimeouts(value *SqlUserTimeouts)
+	ResetDatabaseRoles()
 	ResetDeletionPolicy()
 	ResetHost()
 	ResetId()
@@ -204,6 +209,26 @@ func (j *jsiiProxy_SqlUser) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlUser) DatabaseRoles() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"databaseRoles",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlUser) DatabaseRolesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"databaseRolesInput",
 		&returns,
 	)
 	return returns
@@ -284,6 +309,16 @@ func (j *jsiiProxy_SqlUser) HostInput() *string {
 	_jsii_.Get(
 		j,
 		"hostInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlUser) IamEmail() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"iamEmail",
 		&returns,
 	)
 	return returns
@@ -580,7 +615,7 @@ func (j *jsiiProxy_SqlUser) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/sql_user google_sql_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_user google_sql_user} Resource.
 func NewSqlUser(scope constructs.Construct, id *string, config *SqlUserConfig) SqlUser {
 	_init_.Initialize()
 
@@ -598,7 +633,7 @@ func NewSqlUser(scope constructs.Construct, id *string, config *SqlUserConfig) S
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/sql_user google_sql_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_user google_sql_user} Resource.
 func NewSqlUser_Override(s SqlUser, scope constructs.Construct, id *string, config *SqlUserConfig) {
 	_init_.Initialize()
 
@@ -627,6 +662,17 @@ func (j *jsiiProxy_SqlUser)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SqlUser)SetDatabaseRoles(val *[]*string) {
+	if err := j.validateSetDatabaseRolesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"databaseRoles",
 		val,
 	)
 }
@@ -1159,6 +1205,14 @@ func (s *jsiiProxy_SqlUser) PutTimeouts(value *SqlUserTimeouts) {
 		s,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SqlUser) ResetDatabaseRoles() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDatabaseRoles",
+		nil, // no parameters
 	)
 }
 

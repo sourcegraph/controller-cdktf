@@ -6,7 +6,7 @@ type GoogleIapSettingsAccessSettingsCorsSettings struct {
 	//
 	// If undefined, IAP will not apply any special logic to OPTIONS requests.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_iap_settings#allow_http_options GoogleIapSettings#allow_http_options}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_iap_settings#allow_http_options GoogleIapSettings#allow_http_options}
 	AllowHttpOptions interface{} `field:"optional" json:"allowHttpOptions" yaml:"allowHttpOptions"`
 }
 

@@ -1,0 +1,6 @@
+package datagooglestorageinsightsdatasetconfig
+
+
+type DataGoogleStorageInsightsDatasetConfigIncludeCloudStorageLocations struct {
+}
+

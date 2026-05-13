@@ -106,6 +106,22 @@ func (j *jsiiProxy_MonitoringNotificationChannelSensitiveLabelsOutputReference) 
 	return nil
 }
 
+func (j *jsiiProxy_MonitoringNotificationChannelSensitiveLabelsOutputReference) validateSetAuthTokenWoParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_MonitoringNotificationChannelSensitiveLabelsOutputReference) validateSetAuthTokenWoVersionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_MonitoringNotificationChannelSensitiveLabelsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
@@ -187,7 +203,39 @@ func (j *jsiiProxy_MonitoringNotificationChannelSensitiveLabelsOutputReference) 
 	return nil
 }
 
+func (j *jsiiProxy_MonitoringNotificationChannelSensitiveLabelsOutputReference) validateSetPasswordWoParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_MonitoringNotificationChannelSensitiveLabelsOutputReference) validateSetPasswordWoVersionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_MonitoringNotificationChannelSensitiveLabelsOutputReference) validateSetServiceKeyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_MonitoringNotificationChannelSensitiveLabelsOutputReference) validateSetServiceKeyWoParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_MonitoringNotificationChannelSensitiveLabelsOutputReference) validateSetServiceKeyWoVersionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/apigeeenvkeystore/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/apigee_env_keystore google_apigee_env_keystore}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_env_keystore google_apigee_env_keystore}.
 type ApigeeEnvKeystore interface {
 	cdktf.TerraformResource
 	Aliases() *[]*string
@@ -115,7 +115,6 @@ type ApigeeEnvKeystore interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *ApigeeEnvKeystoreTimeouts)
 	ResetId()
-	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -389,7 +388,7 @@ func (j *jsiiProxy_ApigeeEnvKeystore) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/apigee_env_keystore google_apigee_env_keystore} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_env_keystore google_apigee_env_keystore} Resource.
 func NewApigeeEnvKeystore(scope constructs.Construct, id *string, config *ApigeeEnvKeystoreConfig) ApigeeEnvKeystore {
 	_init_.Initialize()
 
@@ -407,7 +406,7 @@ func NewApigeeEnvKeystore(scope constructs.Construct, id *string, config *Apigee
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/apigee_env_keystore google_apigee_env_keystore} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_env_keystore google_apigee_env_keystore} Resource.
 func NewApigeeEnvKeystore_Override(a ApigeeEnvKeystore, scope constructs.Construct, id *string, config *ApigeeEnvKeystoreConfig) {
 	_init_.Initialize()
 
@@ -887,14 +886,6 @@ func (a *jsiiProxy_ApigeeEnvKeystore) ResetId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetId",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_ApigeeEnvKeystore) ResetName() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetName",
 		nil, // no parameters
 	)
 }

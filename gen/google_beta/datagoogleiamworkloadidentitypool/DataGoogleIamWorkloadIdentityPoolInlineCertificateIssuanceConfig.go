@@ -1,0 +1,6 @@
+package datagoogleiamworkloadidentitypool
+
+
+type DataGoogleIamWorkloadIdentityPoolInlineCertificateIssuanceConfig struct {
+}
+

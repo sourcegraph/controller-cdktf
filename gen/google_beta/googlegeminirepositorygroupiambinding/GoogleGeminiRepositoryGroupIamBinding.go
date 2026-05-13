@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlegeminirepositorygroupiambinding/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_gemini_repository_group_iam_binding google_gemini_repository_group_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_gemini_repository_group_iam_binding google_gemini_repository_group_iam_binding}.
 type GoogleGeminiRepositoryGroupIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -482,7 +482,7 @@ func (j *jsiiProxy_GoogleGeminiRepositoryGroupIamBinding) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_gemini_repository_group_iam_binding google_gemini_repository_group_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_gemini_repository_group_iam_binding google_gemini_repository_group_iam_binding} Resource.
 func NewGoogleGeminiRepositoryGroupIamBinding(scope constructs.Construct, id *string, config *GoogleGeminiRepositoryGroupIamBindingConfig) GoogleGeminiRepositoryGroupIamBinding {
 	_init_.Initialize()
 
@@ -500,7 +500,7 @@ func NewGoogleGeminiRepositoryGroupIamBinding(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_gemini_repository_group_iam_binding google_gemini_repository_group_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_gemini_repository_group_iam_binding google_gemini_repository_group_iam_binding} Resource.
 func NewGoogleGeminiRepositoryGroupIamBinding_Override(g GoogleGeminiRepositoryGroupIamBinding, scope constructs.Construct, id *string, config *GoogleGeminiRepositoryGroupIamBindingConfig) {
 	_init_.Initialize()
 

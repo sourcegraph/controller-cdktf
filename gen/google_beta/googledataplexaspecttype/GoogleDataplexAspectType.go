@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledataplexaspecttype/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_dataplex_aspect_type google_dataplex_aspect_type}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_dataplex_aspect_type google_dataplex_aspect_type}.
 type GoogleDataplexAspectType interface {
 	cdktf.TerraformResource
 	AspectTypeId() *string
@@ -28,6 +28,9 @@ type GoogleDataplexAspectType interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreateTime() *string
+	DataClassification() *string
+	SetDataClassification(val *string)
+	DataClassificationInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -136,6 +139,7 @@ type GoogleDataplexAspectType interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *GoogleDataplexAspectTypeTimeouts)
 	ResetAspectTypeId()
+	ResetDataClassification()
 	ResetDescription()
 	ResetDisplayName()
 	ResetId()
@@ -230,6 +234,26 @@ func (j *jsiiProxy_GoogleDataplexAspectType) CreateTime() *string {
 	_jsii_.Get(
 		j,
 		"createTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataplexAspectType) DataClassification() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataClassification",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataplexAspectType) DataClassificationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataClassificationInput",
 		&returns,
 	)
 	return returns
@@ -576,7 +600,7 @@ func (j *jsiiProxy_GoogleDataplexAspectType) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_dataplex_aspect_type google_dataplex_aspect_type} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_dataplex_aspect_type google_dataplex_aspect_type} Resource.
 func NewGoogleDataplexAspectType(scope constructs.Construct, id *string, config *GoogleDataplexAspectTypeConfig) GoogleDataplexAspectType {
 	_init_.Initialize()
 
@@ -594,7 +618,7 @@ func NewGoogleDataplexAspectType(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_dataplex_aspect_type google_dataplex_aspect_type} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_dataplex_aspect_type google_dataplex_aspect_type} Resource.
 func NewGoogleDataplexAspectType_Override(g GoogleDataplexAspectType, scope constructs.Construct, id *string, config *GoogleDataplexAspectTypeConfig) {
 	_init_.Initialize()
 
@@ -634,6 +658,17 @@ func (j *jsiiProxy_GoogleDataplexAspectType)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataplexAspectType)SetDataClassification(val *string) {
+	if err := j.validateSetDataClassificationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dataClassification",
 		val,
 	)
 }
@@ -1129,6 +1164,14 @@ func (g *jsiiProxy_GoogleDataplexAspectType) ResetAspectTypeId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetAspectTypeId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataplexAspectType) ResetDataClassification() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDataClassification",
 		nil, // no parameters
 	)
 }

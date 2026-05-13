@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagooglepubsubtopic/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/pubsub_topic google_pubsub_topic}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/pubsub_topic google_pubsub_topic}.
 type DataGooglePubsubTopic interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -45,6 +45,7 @@ type DataGooglePubsubTopic interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	MessageRetentionDuration() *string
 	MessageStoragePolicy() DataGooglePubsubTopicMessageStoragePolicyList
+	MessageTransforms() DataGooglePubsubTopicMessageTransformsList
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -60,6 +61,7 @@ type DataGooglePubsubTopic interface {
 	// Experimental.
 	RawOverrides() interface{}
 	SchemaSettings() DataGooglePubsubTopicSchemaSettingsList
+	Tags() cdktf.StringMap
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
@@ -276,6 +278,16 @@ func (j *jsiiProxy_DataGooglePubsubTopic) MessageStoragePolicy() DataGooglePubsu
 	return returns
 }
 
+func (j *jsiiProxy_DataGooglePubsubTopic) MessageTransforms() DataGooglePubsubTopicMessageTransformsList {
+	var returns DataGooglePubsubTopicMessageTransformsList
+	_jsii_.Get(
+		j,
+		"messageTransforms",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGooglePubsubTopic) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -356,6 +368,16 @@ func (j *jsiiProxy_DataGooglePubsubTopic) SchemaSettings() DataGooglePubsubTopic
 	return returns
 }
 
+func (j *jsiiProxy_DataGooglePubsubTopic) Tags() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGooglePubsubTopic) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -397,7 +419,7 @@ func (j *jsiiProxy_DataGooglePubsubTopic) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/pubsub_topic google_pubsub_topic} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/pubsub_topic google_pubsub_topic} Data Source.
 func NewDataGooglePubsubTopic(scope constructs.Construct, id *string, config *DataGooglePubsubTopicConfig) DataGooglePubsubTopic {
 	_init_.Initialize()
 
@@ -415,7 +437,7 @@ func NewDataGooglePubsubTopic(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/pubsub_topic google_pubsub_topic} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/pubsub_topic google_pubsub_topic} Data Source.
 func NewDataGooglePubsubTopic_Override(d DataGooglePubsubTopic, scope constructs.Construct, id *string, config *DataGooglePubsubTopicConfig) {
 	_init_.Initialize()
 

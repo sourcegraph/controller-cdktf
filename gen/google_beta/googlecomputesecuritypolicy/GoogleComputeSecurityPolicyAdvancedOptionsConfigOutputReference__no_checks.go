@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleComputeSecurityPolicyAdvancedOptionsConfigOutputReferen
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeSecurityPolicyAdvancedOptionsConfigOutputReference) validateSetRequestBodyInspectionSizeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeSecurityPolicyAdvancedOptionsConfigOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

@@ -30,6 +30,7 @@ type DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigOutputReference
 	InternalValue() *DataGoogleContainerClusterNodePoolNodeConfigContainerdConfig
 	SetInternalValue(val *DataGoogleContainerClusterNodePoolNodeConfigContainerdConfig)
 	PrivateRegistryAccessConfig() DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigList
+	RegistryHosts() DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsList
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -38,6 +39,7 @@ type DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigOutputReference
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	WritableCgroups() DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigWritableCgroupsList
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -137,6 +139,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigO
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigOutputReference) RegistryHosts() DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsList {
+	var returns DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsList
+	_jsii_.Get(
+		j,
+		"registryHosts",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -152,6 +164,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigO
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigOutputReference) WritableCgroups() DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigWritableCgroupsList {
+	var returns DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigWritableCgroupsList
+	_jsii_.Get(
+		j,
+		"writableCgroups",
 		&returns,
 	)
 	return returns

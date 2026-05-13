@@ -76,11 +76,23 @@ func (g *jsiiProxy_GoogleDataplexDatascan) validatePutDataParameters(value *Goog
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataplexDatascan) validatePutDataDiscoverySpecParameters(value *GoogleDataplexDatascanDataDiscoverySpec) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataplexDatascan) validatePutDataDocumentationSpecParameters(value *GoogleDataplexDatascanDataDocumentationSpec) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataplexDatascan) validatePutDataProfileSpecParameters(value *GoogleDataplexDatascanDataProfileSpec) error {
 	return nil
 }
 
 func (g *jsiiProxy_GoogleDataplexDatascan) validatePutDataQualitySpecParameters(value *GoogleDataplexDatascanDataQualitySpec) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataplexDatascan) validatePutExecutionIdentityParameters(value *GoogleDataplexDatascanExecutionIdentity) error {
 	return nil
 }
 

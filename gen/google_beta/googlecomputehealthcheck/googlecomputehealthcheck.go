@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputehealthcheck/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_health_check google_compute_health_check}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_health_check google_compute_health_check}.
 type GoogleComputeHealthCheck interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -45,6 +45,8 @@ type GoogleComputeHealthCheck interface {
 	FriendlyUniqueId() *string
 	GrpcHealthCheck() GoogleComputeHealthCheckGrpcHealthCheckOutputReference
 	GrpcHealthCheckInput() *GoogleComputeHealthCheckGrpcHealthCheck
+	GrpcTlsHealthCheck() GoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference
+	GrpcTlsHealthCheckInput() *GoogleComputeHealthCheckGrpcTlsHealthCheck
 	HealthyThreshold() *float64
 	SetHealthyThreshold(val *float64)
 	HealthyThresholdInput() *float64
@@ -148,6 +150,7 @@ type GoogleComputeHealthCheck interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutGrpcHealthCheck(value *GoogleComputeHealthCheckGrpcHealthCheck)
+	PutGrpcTlsHealthCheck(value *GoogleComputeHealthCheckGrpcTlsHealthCheck)
 	PutHttp2HealthCheck(value *GoogleComputeHealthCheckHttp2HealthCheck)
 	PutHttpHealthCheck(value *GoogleComputeHealthCheckHttpHealthCheck)
 	PutHttpsHealthCheck(value *GoogleComputeHealthCheckHttpsHealthCheck)
@@ -158,6 +161,7 @@ type GoogleComputeHealthCheck interface {
 	ResetCheckIntervalSec()
 	ResetDescription()
 	ResetGrpcHealthCheck()
+	ResetGrpcTlsHealthCheck()
 	ResetHealthyThreshold()
 	ResetHttp2HealthCheck()
 	ResetHttpHealthCheck()
@@ -337,6 +341,26 @@ func (j *jsiiProxy_GoogleComputeHealthCheck) GrpcHealthCheckInput() *GoogleCompu
 	_jsii_.Get(
 		j,
 		"grpcHealthCheckInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck) GrpcTlsHealthCheck() GoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference {
+	var returns GoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference
+	_jsii_.Get(
+		j,
+		"grpcTlsHealthCheck",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck) GrpcTlsHealthCheckInput() *GoogleComputeHealthCheckGrpcTlsHealthCheck {
+	var returns *GoogleComputeHealthCheckGrpcTlsHealthCheck
+	_jsii_.Get(
+		j,
+		"grpcTlsHealthCheckInput",
 		&returns,
 	)
 	return returns
@@ -723,7 +747,7 @@ func (j *jsiiProxy_GoogleComputeHealthCheck) UnhealthyThresholdInput() *float64 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_health_check google_compute_health_check} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_health_check google_compute_health_check} Resource.
 func NewGoogleComputeHealthCheck(scope constructs.Construct, id *string, config *GoogleComputeHealthCheckConfig) GoogleComputeHealthCheck {
 	_init_.Initialize()
 
@@ -741,7 +765,7 @@ func NewGoogleComputeHealthCheck(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_health_check google_compute_health_check} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_health_check google_compute_health_check} Resource.
 func NewGoogleComputeHealthCheck_Override(g GoogleComputeHealthCheck, scope constructs.Construct, id *string, config *GoogleComputeHealthCheckConfig) {
 	_init_.Initialize()
 
@@ -1283,6 +1307,17 @@ func (g *jsiiProxy_GoogleComputeHealthCheck) PutGrpcHealthCheck(value *GoogleCom
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeHealthCheck) PutGrpcTlsHealthCheck(value *GoogleComputeHealthCheckGrpcTlsHealthCheck) {
+	if err := g.validatePutGrpcTlsHealthCheckParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putGrpcTlsHealthCheck",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeHealthCheck) PutHttp2HealthCheck(value *GoogleComputeHealthCheckHttp2HealthCheck) {
 	if err := g.validatePutHttp2HealthCheckParameters(value); err != nil {
 		panic(err)
@@ -1380,6 +1415,14 @@ func (g *jsiiProxy_GoogleComputeHealthCheck) ResetGrpcHealthCheck() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetGrpcHealthCheck",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeHealthCheck) ResetGrpcTlsHealthCheck() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetGrpcTlsHealthCheck",
 		nil, // no parameters
 	)
 }

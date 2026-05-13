@@ -84,6 +84,10 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReferen
 	return nil
 }
 
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReference) validateSetSourceColumnMatchParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

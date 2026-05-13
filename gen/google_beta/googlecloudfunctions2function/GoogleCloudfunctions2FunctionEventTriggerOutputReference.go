@@ -81,7 +81,6 @@ type GoogleCloudfunctions2FunctionEventTriggerOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutEventFilters(value interface{})
 	ResetEventFilters()
-	ResetEventType()
 	ResetPubsubTopic()
 	ResetRetryPolicy()
 	ResetServiceAccountEmail()
@@ -640,14 +639,6 @@ func (g *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference) Res
 	_jsii_.InvokeVoid(
 		g,
 		"resetEventFilters",
-		nil, // no parameters
-	)
-}
-
-func (g *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference) ResetEventType() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetEventType",
 		nil, // no parameters
 	)
 }

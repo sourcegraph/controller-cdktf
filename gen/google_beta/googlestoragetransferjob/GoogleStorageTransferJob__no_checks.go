@@ -144,6 +144,10 @@ func (j *jsiiProxy_GoogleStorageTransferJob) validateSetProvisionersParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_GoogleStorageTransferJob) validateSetServiceAccountParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleStorageTransferJob) validateSetStatusParameters(val *string) error {
 	return nil
 }

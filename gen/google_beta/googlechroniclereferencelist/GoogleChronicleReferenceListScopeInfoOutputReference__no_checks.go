@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleChronicleReferenceListScopeInfoOutputReference) validat
 	return nil
 }
 
+func (g *jsiiProxy_GoogleChronicleReferenceListScopeInfoOutputReference) validatePutReferenceListScopeParameters(value *GoogleChronicleReferenceListScopeInfoReferenceListScope) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleChronicleReferenceListScopeInfoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -68,7 +72,7 @@ func (j *jsiiProxy_GoogleChronicleReferenceListScopeInfoOutputReference) validat
 	return nil
 }
 
-func validateNewGoogleChronicleReferenceListScopeInfoOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleChronicleReferenceListScopeInfoOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

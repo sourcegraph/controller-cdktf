@@ -454,6 +454,14 @@ func (j *jsiiProxy_NetworkSecurityAuthzPolicy) validateSetNameParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_NetworkSecurityAuthzPolicy) validateSetPolicyProfileParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_NetworkSecurityAuthzPolicy) validateSetProjectParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

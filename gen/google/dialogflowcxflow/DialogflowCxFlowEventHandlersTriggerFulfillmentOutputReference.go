@@ -27,6 +27,9 @@ type DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EnableGenerativeFallback() interface{}
+	SetEnableGenerativeFallback(val interface{})
+	EnableGenerativeFallbackInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DialogflowCxFlowEventHandlersTriggerFulfillment
@@ -80,6 +83,7 @@ type DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReference interface {
 	PutMessages(value interface{})
 	PutSetParameterActions(value interface{})
 	ResetConditionalCases()
+	ResetEnableGenerativeFallback()
 	ResetMessages()
 	ResetReturnPartialResponses()
 	ResetSetParameterActions()
@@ -145,6 +149,26 @@ func (j *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReferenc
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReference) EnableGenerativeFallback() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableGenerativeFallback",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReference) EnableGenerativeFallbackInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableGenerativeFallbackInput",
 		&returns,
 	)
 	return returns
@@ -336,6 +360,17 @@ func (j *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReferenc
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReference)SetEnableGenerativeFallback(val interface{}) {
+	if err := j.validateSetEnableGenerativeFallbackParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableGenerativeFallback",
 		val,
 	)
 }
@@ -629,6 +664,14 @@ func (d *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReferenc
 	_jsii_.InvokeVoid(
 		d,
 		"resetConditionalCases",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReference) ResetEnableGenerativeFallback() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetEnableGenerativeFallback",
 		nil, // no parameters
 	)
 }

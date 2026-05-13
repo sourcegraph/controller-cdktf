@@ -9,9 +9,10 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagooglecomputereservation/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/compute_reservation google_compute_reservation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/compute_reservation google_compute_reservation}.
 type DataGoogleComputeReservation interface {
 	cdktf.TerraformDataSource
+	BlockNames() *[]*string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Commitment() *string
@@ -22,6 +23,8 @@ type DataGoogleComputeReservation interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreationTimestamp() *string
+	DeleteAfterDuration() DataGoogleComputeReservationDeleteAfterDurationList
+	DeleteAtTime() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -36,12 +39,12 @@ type DataGoogleComputeReservation interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
+	Kind() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LinkedCommitments() *[]*string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -56,6 +59,10 @@ type DataGoogleComputeReservation interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	ReservationBlockCount() *float64
+	ReservationSharingPolicy() DataGoogleComputeReservationReservationSharingPolicyList
+	ResourceStatus() DataGoogleComputeReservationResourceStatusList
+	SatisfiesPzs() cdktf.IResolvable
 	SelfLink() *string
 	ShareSettings() DataGoogleComputeReservationShareSettingsList
 	SpecificReservation() DataGoogleComputeReservationSpecificReservationList
@@ -95,7 +102,6 @@ type DataGoogleComputeReservation interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -117,6 +123,16 @@ type DataGoogleComputeReservation interface {
 // The jsii proxy struct for DataGoogleComputeReservation
 type jsiiProxy_DataGoogleComputeReservation struct {
 	internal.Type__cdktfTerraformDataSource
+}
+
+func (j *jsiiProxy_DataGoogleComputeReservation) BlockNames() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"blockNames",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataGoogleComputeReservation) CdktfStack() cdktf.TerraformStack {
@@ -164,6 +180,26 @@ func (j *jsiiProxy_DataGoogleComputeReservation) CreationTimestamp() *string {
 	_jsii_.Get(
 		j,
 		"creationTimestamp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeReservation) DeleteAfterDuration() DataGoogleComputeReservationDeleteAfterDurationList {
+	var returns DataGoogleComputeReservationDeleteAfterDurationList
+	_jsii_.Get(
+		j,
+		"deleteAfterDuration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeReservation) DeleteAtTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deleteAtTime",
 		&returns,
 	)
 	return returns
@@ -229,11 +265,11 @@ func (j *jsiiProxy_DataGoogleComputeReservation) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeReservation) IdInput() *string {
+func (j *jsiiProxy_DataGoogleComputeReservation) Kind() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"idInput",
+		"kind",
 		&returns,
 	)
 	return returns
@@ -244,6 +280,16 @@ func (j *jsiiProxy_DataGoogleComputeReservation) Lifecycle() *cdktf.TerraformRes
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeReservation) LinkedCommitments() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"linkedCommitments",
 		&returns,
 	)
 	return returns
@@ -314,6 +360,46 @@ func (j *jsiiProxy_DataGoogleComputeReservation) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeReservation) ReservationBlockCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"reservationBlockCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeReservation) ReservationSharingPolicy() DataGoogleComputeReservationReservationSharingPolicyList {
+	var returns DataGoogleComputeReservationReservationSharingPolicyList
+	_jsii_.Get(
+		j,
+		"reservationSharingPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeReservation) ResourceStatus() DataGoogleComputeReservationResourceStatusList {
+	var returns DataGoogleComputeReservationResourceStatusList
+	_jsii_.Get(
+		j,
+		"resourceStatus",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeReservation) SatisfiesPzs() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"satisfiesPzs",
 		&returns,
 	)
 	return returns
@@ -420,7 +506,7 @@ func (j *jsiiProxy_DataGoogleComputeReservation) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/compute_reservation google_compute_reservation} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/compute_reservation google_compute_reservation} Data Source.
 func NewDataGoogleComputeReservation(scope constructs.Construct, id *string, config *DataGoogleComputeReservationConfig) DataGoogleComputeReservation {
 	_init_.Initialize()
 
@@ -438,7 +524,7 @@ func NewDataGoogleComputeReservation(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/compute_reservation google_compute_reservation} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/compute_reservation google_compute_reservation} Data Source.
 func NewDataGoogleComputeReservation_Override(d DataGoogleComputeReservation, scope constructs.Construct, id *string, config *DataGoogleComputeReservationConfig) {
 	_init_.Initialize()
 
@@ -472,17 +558,6 @@ func (j *jsiiProxy_DataGoogleComputeReservation)SetForEach(val cdktf.ITerraformI
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataGoogleComputeReservation)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -821,14 +896,6 @@ func (d *jsiiProxy_DataGoogleComputeReservation) OverrideLogicalId(newLogicalId 
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (d *jsiiProxy_DataGoogleComputeReservation) ResetId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetId",
-		nil, // no parameters
 	)
 }
 

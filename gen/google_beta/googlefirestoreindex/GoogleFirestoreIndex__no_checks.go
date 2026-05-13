@@ -116,6 +116,10 @@ func (j *jsiiProxy_GoogleFirestoreIndex) validateSetDatabaseParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_GoogleFirestoreIndex) validateSetDeletionPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleFirestoreIndex) validateSetDensityParameters(val *string) error {
 	return nil
 }
@@ -141,6 +145,14 @@ func (j *jsiiProxy_GoogleFirestoreIndex) validateSetProvisionersParameters(val *
 }
 
 func (j *jsiiProxy_GoogleFirestoreIndex) validateSetQueryScopeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleFirestoreIndex) validateSetSkipWaitParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleFirestoreIndex) validateSetUniqueParameters(val interface{}) error {
 	return nil
 }
 

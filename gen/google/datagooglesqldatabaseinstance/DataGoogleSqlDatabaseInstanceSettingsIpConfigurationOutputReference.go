@@ -38,6 +38,7 @@ type DataGoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference interfa
 	PscConfig() DataGoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigList
 	ServerCaMode() *string
 	ServerCaPool() *string
+	ServerCertificateRotationMode() *string
 	SslMode() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -221,6 +222,16 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsIpConfigurationOutputRef
 	_jsii_.Get(
 		j,
 		"serverCaPool",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) ServerCertificateRotationMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serverCertificateRotationMode",
 		&returns,
 	)
 	return returns

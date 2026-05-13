@@ -40,6 +40,14 @@ func (j *jsiiProxy_GoogleBetaProvider) validateSetExternalCredentialsParameters(
 	return nil
 }
 
+func (j *jsiiProxy_GoogleBetaProvider) validateSetPreferGlobalEndpointsParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) validateSetPreferRegionalEndpointsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBetaProvider) validateSetUserProjectOverrideParameters(val interface{}) error {
 	return nil
 }

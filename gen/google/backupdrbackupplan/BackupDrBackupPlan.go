@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/backupdrbackupplan/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/backup_dr_backup_plan google_backup_dr_backup_plan}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_backup_plan google_backup_dr_backup_plan}.
 type BackupDrBackupPlan interface {
 	cdktf.TerraformResource
 	BackupPlanId() *string
@@ -41,6 +41,8 @@ type BackupDrBackupPlan interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	DiskBackupPlanProperties() BackupDrBackupPlanDiskBackupPlanPropertiesOutputReference
+	DiskBackupPlanPropertiesInput() *BackupDrBackupPlanDiskBackupPlanProperties
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -59,6 +61,12 @@ type BackupDrBackupPlan interface {
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
+	LogRetentionDays() *float64
+	SetLogRetentionDays(val *float64)
+	LogRetentionDaysInput() *float64
+	MaxCustomOnDemandRetentionDays() *float64
+	SetMaxCustomOnDemandRetentionDays(val *float64)
+	MaxCustomOnDemandRetentionDaysInput() *float64
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
@@ -78,6 +86,7 @@ type BackupDrBackupPlan interface {
 	ResourceType() *string
 	SetResourceType(val *string)
 	ResourceTypeInput() *string
+	SupportedResourceTypes() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -131,9 +140,14 @@ type BackupDrBackupPlan interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutBackupRules(value interface{})
+	PutDiskBackupPlanProperties(value *BackupDrBackupPlanDiskBackupPlanProperties)
 	PutTimeouts(value *BackupDrBackupPlanTimeouts)
+	ResetBackupRules()
 	ResetDescription()
+	ResetDiskBackupPlanProperties()
 	ResetId()
+	ResetLogRetentionDays()
+	ResetMaxCustomOnDemandRetentionDays()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -307,6 +321,26 @@ func (j *jsiiProxy_BackupDrBackupPlan) DescriptionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_BackupDrBackupPlan) DiskBackupPlanProperties() BackupDrBackupPlanDiskBackupPlanPropertiesOutputReference {
+	var returns BackupDrBackupPlanDiskBackupPlanPropertiesOutputReference
+	_jsii_.Get(
+		j,
+		"diskBackupPlanProperties",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BackupDrBackupPlan) DiskBackupPlanPropertiesInput() *BackupDrBackupPlanDiskBackupPlanProperties {
+	var returns *BackupDrBackupPlanDiskBackupPlanProperties
+	_jsii_.Get(
+		j,
+		"diskBackupPlanPropertiesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BackupDrBackupPlan) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -382,6 +416,46 @@ func (j *jsiiProxy_BackupDrBackupPlan) LocationInput() *string {
 	_jsii_.Get(
 		j,
 		"locationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BackupDrBackupPlan) LogRetentionDays() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"logRetentionDays",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BackupDrBackupPlan) LogRetentionDaysInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"logRetentionDaysInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BackupDrBackupPlan) MaxCustomOnDemandRetentionDays() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxCustomOnDemandRetentionDays",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BackupDrBackupPlan) MaxCustomOnDemandRetentionDaysInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxCustomOnDemandRetentionDaysInput",
 		&returns,
 	)
 	return returns
@@ -477,6 +551,16 @@ func (j *jsiiProxy_BackupDrBackupPlan) ResourceTypeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_BackupDrBackupPlan) SupportedResourceTypes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"supportedResourceTypes",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BackupDrBackupPlan) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -538,7 +622,7 @@ func (j *jsiiProxy_BackupDrBackupPlan) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/backup_dr_backup_plan google_backup_dr_backup_plan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_backup_plan google_backup_dr_backup_plan} Resource.
 func NewBackupDrBackupPlan(scope constructs.Construct, id *string, config *BackupDrBackupPlanConfig) BackupDrBackupPlan {
 	_init_.Initialize()
 
@@ -556,7 +640,7 @@ func NewBackupDrBackupPlan(scope constructs.Construct, id *string, config *Backu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/backup_dr_backup_plan google_backup_dr_backup_plan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_backup_plan google_backup_dr_backup_plan} Resource.
 func NewBackupDrBackupPlan_Override(b BackupDrBackupPlan, scope constructs.Construct, id *string, config *BackupDrBackupPlanConfig) {
 	_init_.Initialize()
 
@@ -667,6 +751,28 @@ func (j *jsiiProxy_BackupDrBackupPlan)SetLocation(val *string) {
 	_jsii_.Set(
 		j,
 		"location",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BackupDrBackupPlan)SetLogRetentionDays(val *float64) {
+	if err := j.validateSetLogRetentionDaysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"logRetentionDays",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BackupDrBackupPlan)SetMaxCustomOnDemandRetentionDays(val *float64) {
+	if err := j.validateSetMaxCustomOnDemandRetentionDaysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxCustomOnDemandRetentionDays",
 		val,
 	)
 }
@@ -1076,6 +1182,17 @@ func (b *jsiiProxy_BackupDrBackupPlan) PutBackupRules(value interface{}) {
 	)
 }
 
+func (b *jsiiProxy_BackupDrBackupPlan) PutDiskBackupPlanProperties(value *BackupDrBackupPlanDiskBackupPlanProperties) {
+	if err := b.validatePutDiskBackupPlanPropertiesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putDiskBackupPlanProperties",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BackupDrBackupPlan) PutTimeouts(value *BackupDrBackupPlanTimeouts) {
 	if err := b.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1087,6 +1204,14 @@ func (b *jsiiProxy_BackupDrBackupPlan) PutTimeouts(value *BackupDrBackupPlanTime
 	)
 }
 
+func (b *jsiiProxy_BackupDrBackupPlan) ResetBackupRules() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetBackupRules",
+		nil, // no parameters
+	)
+}
+
 func (b *jsiiProxy_BackupDrBackupPlan) ResetDescription() {
 	_jsii_.InvokeVoid(
 		b,
@@ -1095,10 +1220,34 @@ func (b *jsiiProxy_BackupDrBackupPlan) ResetDescription() {
 	)
 }
 
+func (b *jsiiProxy_BackupDrBackupPlan) ResetDiskBackupPlanProperties() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetDiskBackupPlanProperties",
+		nil, // no parameters
+	)
+}
+
 func (b *jsiiProxy_BackupDrBackupPlan) ResetId() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BackupDrBackupPlan) ResetLogRetentionDays() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetLogRetentionDays",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BackupDrBackupPlan) ResetMaxCustomOnDemandRetentionDays() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetMaxCustomOnDemandRetentionDays",
 		nil, // no parameters
 	)
 }

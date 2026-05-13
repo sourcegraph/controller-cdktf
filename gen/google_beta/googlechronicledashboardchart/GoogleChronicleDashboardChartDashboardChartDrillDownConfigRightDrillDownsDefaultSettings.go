@@ -1,0 +1,8 @@
+package googlechronicledashboardchart
+
+
+type GoogleChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsDefaultSettings struct {
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_chronicle_dashboard_chart#enabled GoogleChronicleDashboardChart#enabled}.
+	Enabled interface{} `field:"required" json:"enabled" yaml:"enabled"`
+}
+

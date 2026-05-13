@@ -10,6 +10,9 @@ import (
 
 type GoogleGkeonpremBareMetalAdminClusterNetworkConfigOutputReference interface {
 	cdktf.ComplexObject
+	AdvancedNetworking() interface{}
+	SetAdvancedNetworking(val interface{})
+	AdvancedNetworkingInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -31,6 +34,8 @@ type GoogleGkeonpremBareMetalAdminClusterNetworkConfigOutputReference interface 
 	SetInternalValue(val *GoogleGkeonpremBareMetalAdminClusterNetworkConfig)
 	IslandModeCidr() GoogleGkeonpremBareMetalAdminClusterNetworkConfigIslandModeCidrOutputReference
 	IslandModeCidrInput() *GoogleGkeonpremBareMetalAdminClusterNetworkConfigIslandModeCidr
+	MultipleNetworkInterfacesConfig() GoogleGkeonpremBareMetalAdminClusterNetworkConfigMultipleNetworkInterfacesConfigOutputReference
+	MultipleNetworkInterfacesConfigInput() *GoogleGkeonpremBareMetalAdminClusterNetworkConfigMultipleNetworkInterfacesConfig
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -64,7 +69,10 @@ type GoogleGkeonpremBareMetalAdminClusterNetworkConfigOutputReference interface 
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutIslandModeCidr(value *GoogleGkeonpremBareMetalAdminClusterNetworkConfigIslandModeCidr)
+	PutMultipleNetworkInterfacesConfig(value *GoogleGkeonpremBareMetalAdminClusterNetworkConfigMultipleNetworkInterfacesConfig)
+	ResetAdvancedNetworking()
 	ResetIslandModeCidr()
+	ResetMultipleNetworkInterfacesConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -78,6 +86,26 @@ type GoogleGkeonpremBareMetalAdminClusterNetworkConfigOutputReference interface 
 // The jsii proxy struct for GoogleGkeonpremBareMetalAdminClusterNetworkConfigOutputReference
 type jsiiProxy_GoogleGkeonpremBareMetalAdminClusterNetworkConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GoogleGkeonpremBareMetalAdminClusterNetworkConfigOutputReference) AdvancedNetworking() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"advancedNetworking",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeonpremBareMetalAdminClusterNetworkConfigOutputReference) AdvancedNetworkingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"advancedNetworkingInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleGkeonpremBareMetalAdminClusterNetworkConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -150,6 +178,26 @@ func (j *jsiiProxy_GoogleGkeonpremBareMetalAdminClusterNetworkConfigOutputRefere
 	return returns
 }
 
+func (j *jsiiProxy_GoogleGkeonpremBareMetalAdminClusterNetworkConfigOutputReference) MultipleNetworkInterfacesConfig() GoogleGkeonpremBareMetalAdminClusterNetworkConfigMultipleNetworkInterfacesConfigOutputReference {
+	var returns GoogleGkeonpremBareMetalAdminClusterNetworkConfigMultipleNetworkInterfacesConfigOutputReference
+	_jsii_.Get(
+		j,
+		"multipleNetworkInterfacesConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeonpremBareMetalAdminClusterNetworkConfigOutputReference) MultipleNetworkInterfacesConfigInput() *GoogleGkeonpremBareMetalAdminClusterNetworkConfigMultipleNetworkInterfacesConfig {
+	var returns *GoogleGkeonpremBareMetalAdminClusterNetworkConfigMultipleNetworkInterfacesConfig
+	_jsii_.Get(
+		j,
+		"multipleNetworkInterfacesConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleGkeonpremBareMetalAdminClusterNetworkConfigOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -195,6 +243,17 @@ func NewGoogleGkeonpremBareMetalAdminClusterNetworkConfigOutputReference_Overrid
 		"@cdktf/provider-google-beta.googleGkeonpremBareMetalAdminCluster.GoogleGkeonpremBareMetalAdminClusterNetworkConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GoogleGkeonpremBareMetalAdminClusterNetworkConfigOutputReference)SetAdvancedNetworking(val interface{}) {
+	if err := j.validateSetAdvancedNetworkingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"advancedNetworking",
+		val,
 	)
 }
 
@@ -450,10 +509,37 @@ func (g *jsiiProxy_GoogleGkeonpremBareMetalAdminClusterNetworkConfigOutputRefere
 	)
 }
 
+func (g *jsiiProxy_GoogleGkeonpremBareMetalAdminClusterNetworkConfigOutputReference) PutMultipleNetworkInterfacesConfig(value *GoogleGkeonpremBareMetalAdminClusterNetworkConfigMultipleNetworkInterfacesConfig) {
+	if err := g.validatePutMultipleNetworkInterfacesConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putMultipleNetworkInterfacesConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleGkeonpremBareMetalAdminClusterNetworkConfigOutputReference) ResetAdvancedNetworking() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAdvancedNetworking",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleGkeonpremBareMetalAdminClusterNetworkConfigOutputReference) ResetIslandModeCidr() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetIslandModeCidr",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleGkeonpremBareMetalAdminClusterNetworkConfigOutputReference) ResetMultipleNetworkInterfacesConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMultipleNetworkInterfacesConfig",
 		nil, // no parameters
 	)
 }

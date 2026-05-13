@@ -47,6 +47,7 @@ type DataGooglePubsubSubscriptionCloudStorageConfigOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TextConfig() DataGooglePubsubSubscriptionCloudStorageConfigTextConfigList
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -251,6 +252,16 @@ func (j *jsiiProxy_DataGooglePubsubSubscriptionCloudStorageConfigOutputReference
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGooglePubsubSubscriptionCloudStorageConfigOutputReference) TextConfig() DataGooglePubsubSubscriptionCloudStorageConfigTextConfigList {
+	var returns DataGooglePubsubSubscriptionCloudStorageConfigTextConfigList
+	_jsii_.Get(
+		j,
+		"textConfig",
 		&returns,
 	)
 	return returns

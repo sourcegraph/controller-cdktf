@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlebigqueryreservation/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_bigquery_reservation google_bigquery_reservation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_bigquery_reservation google_bigquery_reservation}.
 type GoogleBigqueryReservation interface {
 	cdktf.TerraformResource
 	Autoscale() GoogleBigqueryReservationAutoscaleOutputReference
@@ -57,6 +57,9 @@ type GoogleBigqueryReservation interface {
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
+	MaxSlots() *float64
+	SetMaxSlots(val *float64)
+	MaxSlotsInput() *float64
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -78,6 +81,12 @@ type GoogleBigqueryReservation interface {
 	// Experimental.
 	RawOverrides() interface{}
 	ReplicationStatus() GoogleBigqueryReservationReplicationStatusList
+	ReservationGroup() *string
+	SetReservationGroup(val *string)
+	ReservationGroupInput() *string
+	ScalingMode() *string
+	SetScalingMode(val *string)
+	ScalingModeInput() *string
 	SecondaryLocation() *string
 	SetSecondaryLocation(val *string)
 	SecondaryLocationInput() *string
@@ -143,10 +152,13 @@ type GoogleBigqueryReservation interface {
 	ResetId()
 	ResetIgnoreIdleSlots()
 	ResetLocation()
+	ResetMaxSlots()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetReservationGroup()
+	ResetScalingMode()
 	ResetSecondaryLocation()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -377,6 +389,26 @@ func (j *jsiiProxy_GoogleBigqueryReservation) LocationInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBigqueryReservation) MaxSlots() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxSlots",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryReservation) MaxSlotsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxSlotsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBigqueryReservation) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -487,6 +519,46 @@ func (j *jsiiProxy_GoogleBigqueryReservation) ReplicationStatus() GoogleBigquery
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBigqueryReservation) ReservationGroup() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"reservationGroup",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryReservation) ReservationGroupInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"reservationGroupInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryReservation) ScalingMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scalingMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryReservation) ScalingModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scalingModeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBigqueryReservation) SecondaryLocation() *string {
 	var returns *string
 	_jsii_.Get(
@@ -578,7 +650,7 @@ func (j *jsiiProxy_GoogleBigqueryReservation) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_bigquery_reservation google_bigquery_reservation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_bigquery_reservation google_bigquery_reservation} Resource.
 func NewGoogleBigqueryReservation(scope constructs.Construct, id *string, config *GoogleBigqueryReservationConfig) GoogleBigqueryReservation {
 	_init_.Initialize()
 
@@ -596,7 +668,7 @@ func NewGoogleBigqueryReservation(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_bigquery_reservation google_bigquery_reservation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_bigquery_reservation google_bigquery_reservation} Resource.
 func NewGoogleBigqueryReservation_Override(g GoogleBigqueryReservation, scope constructs.Construct, id *string, config *GoogleBigqueryReservationConfig) {
 	_init_.Initialize()
 
@@ -711,6 +783,17 @@ func (j *jsiiProxy_GoogleBigqueryReservation)SetLocation(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleBigqueryReservation)SetMaxSlots(val *float64) {
+	if err := j.validateSetMaxSlotsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxSlots",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleBigqueryReservation)SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
@@ -748,6 +831,28 @@ func (j *jsiiProxy_GoogleBigqueryReservation)SetProvisioners(val *[]interface{})
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBigqueryReservation)SetReservationGroup(val *string) {
+	if err := j.validateSetReservationGroupParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"reservationGroup",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBigqueryReservation)SetScalingMode(val *string) {
+	if err := j.validateSetScalingModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"scalingMode",
 		val,
 	)
 }
@@ -1197,6 +1302,14 @@ func (g *jsiiProxy_GoogleBigqueryReservation) ResetLocation() {
 	)
 }
 
+func (g *jsiiProxy_GoogleBigqueryReservation) ResetMaxSlots() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMaxSlots",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleBigqueryReservation) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1209,6 +1322,22 @@ func (g *jsiiProxy_GoogleBigqueryReservation) ResetProject() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBigqueryReservation) ResetReservationGroup() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetReservationGroup",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBigqueryReservation) ResetScalingMode() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetScalingMode",
 		nil, // no parameters
 	)
 }

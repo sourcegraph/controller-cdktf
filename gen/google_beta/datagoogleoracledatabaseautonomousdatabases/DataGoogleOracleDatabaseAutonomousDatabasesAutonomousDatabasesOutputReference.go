@@ -31,6 +31,7 @@ type DataGoogleOracleDatabaseAutonomousDatabasesAutonomousDatabasesOutputReferen
 	CreationStack() *[]*string
 	Database() *string
 	DeletionProtection() cdktf.IResolvable
+	DisasterRecoverySupportedLocations() *[]*string
 	DisplayName() *string
 	EffectiveLabels() cdktf.StringMap
 	EntitlementId() *string
@@ -42,8 +43,12 @@ type DataGoogleOracleDatabaseAutonomousDatabasesAutonomousDatabasesOutputReferen
 	Location() *string
 	Name() *string
 	Network() *string
+	OdbNetwork() *string
+	OdbSubnet() *string
+	PeerAutonomousDatabases() *[]*string
 	Project() *string
 	Properties() DataGoogleOracleDatabaseAutonomousDatabasesAutonomousDatabasesPropertiesList
+	SourceConfig() DataGoogleOracleDatabaseAutonomousDatabasesAutonomousDatabasesSourceConfigList
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -182,6 +187,16 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasesAutonomousDatabase
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasesAutonomousDatabasesOutputReference) DisasterRecoverySupportedLocations() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"disasterRecoverySupportedLocations",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasesAutonomousDatabasesOutputReference) DisplayName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -272,6 +287,36 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasesAutonomousDatabase
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasesAutonomousDatabasesOutputReference) OdbNetwork() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"odbNetwork",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasesAutonomousDatabasesOutputReference) OdbSubnet() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"odbSubnet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasesAutonomousDatabasesOutputReference) PeerAutonomousDatabases() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"peerAutonomousDatabases",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasesAutonomousDatabasesOutputReference) Project() *string {
 	var returns *string
 	_jsii_.Get(
@@ -287,6 +332,16 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasesAutonomousDatabase
 	_jsii_.Get(
 		j,
 		"properties",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasesAutonomousDatabasesOutputReference) SourceConfig() DataGoogleOracleDatabaseAutonomousDatabasesAutonomousDatabasesSourceConfigList {
+	var returns DataGoogleOracleDatabaseAutonomousDatabasesAutonomousDatabasesSourceConfigList
+	_jsii_.Get(
+		j,
+		"sourceConfig",
 		&returns,
 	)
 	return returns

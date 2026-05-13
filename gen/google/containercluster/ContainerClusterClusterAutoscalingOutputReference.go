@@ -33,6 +33,9 @@ type ContainerClusterClusterAutoscalingOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DefaultComputeClassEnabled() interface{}
+	SetDefaultComputeClassEnabled(val interface{})
+	DefaultComputeClassEnabledInput() interface{}
 	Enabled() interface{}
 	SetEnabled(val interface{})
 	EnabledInput() interface{}
@@ -79,6 +82,7 @@ type ContainerClusterClusterAutoscalingOutputReference interface {
 	ResetAutoProvisioningDefaults()
 	ResetAutoProvisioningLocations()
 	ResetAutoscalingProfile()
+	ResetDefaultComputeClassEnabled()
 	ResetEnabled()
 	ResetResourceLimits()
 	// Produce the Token's value at resolution time.
@@ -181,6 +185,26 @@ func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) CreationSt
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) DefaultComputeClassEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"defaultComputeClassEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) DefaultComputeClassEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"defaultComputeClassEnabledInput",
 		&returns,
 	)
 	return returns
@@ -334,6 +358,17 @@ func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference)SetComplexO
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference)SetDefaultComputeClassEnabled(val interface{}) {
+	if err := j.validateSetDefaultComputeClassEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultComputeClassEnabled",
 		val,
 	)
 }
@@ -610,6 +645,14 @@ func (c *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) ResetAutos
 	_jsii_.InvokeVoid(
 		c,
 		"resetAutoscalingProfile",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) ResetDefaultComputeClassEnabled() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDefaultComputeClassEnabled",
 		nil, // no parameters
 	)
 }

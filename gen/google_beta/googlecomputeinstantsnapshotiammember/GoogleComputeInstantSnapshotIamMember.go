@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeinstantsnapshotiammember/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_instant_snapshot_iam_member google_compute_instant_snapshot_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_instant_snapshot_iam_member google_compute_instant_snapshot_iam_member}.
 type GoogleComputeInstantSnapshotIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -459,7 +459,7 @@ func (j *jsiiProxy_GoogleComputeInstantSnapshotIamMember) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_instant_snapshot_iam_member google_compute_instant_snapshot_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_instant_snapshot_iam_member google_compute_instant_snapshot_iam_member} Resource.
 func NewGoogleComputeInstantSnapshotIamMember(scope constructs.Construct, id *string, config *GoogleComputeInstantSnapshotIamMemberConfig) GoogleComputeInstantSnapshotIamMember {
 	_init_.Initialize()
 
@@ -477,7 +477,7 @@ func NewGoogleComputeInstantSnapshotIamMember(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_instant_snapshot_iam_member google_compute_instant_snapshot_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_instant_snapshot_iam_member google_compute_instant_snapshot_iam_member} Resource.
 func NewGoogleComputeInstantSnapshotIamMember_Override(g GoogleComputeInstantSnapshotIamMember, scope constructs.Construct, id *string, config *GoogleComputeInstantSnapshotIamMemberConfig) {
 	_init_.Initialize()
 

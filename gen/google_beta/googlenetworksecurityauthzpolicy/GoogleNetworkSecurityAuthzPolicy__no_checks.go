@@ -140,6 +140,10 @@ func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicy) validateSetNameParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicy) validateSetPolicyProfileParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicy) validateSetProjectParameters(val *string) error {
 	return nil
 }

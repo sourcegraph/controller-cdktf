@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/databasemigrationservicemigrationjob/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/database_migration_service_migration_job google_database_migration_service_migration_job}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/database_migration_service_migration_job google_database_migration_service_migration_job}.
 type DatabaseMigrationServiceMigrationJob interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -72,6 +72,8 @@ type DatabaseMigrationServiceMigrationJob interface {
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
+	ObjectsConfig() DatabaseMigrationServiceMigrationJobObjectsConfigOutputReference
+	ObjectsConfigInput() *DatabaseMigrationServiceMigrationJobObjectsConfig
 	PerformanceConfig() DatabaseMigrationServiceMigrationJobPerformanceConfigOutputReference
 	PerformanceConfigInput() *DatabaseMigrationServiceMigrationJobPerformanceConfig
 	Phase() *string
@@ -154,6 +156,7 @@ type DatabaseMigrationServiceMigrationJob interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutDumpFlags(value *DatabaseMigrationServiceMigrationJobDumpFlags)
+	PutObjectsConfig(value *DatabaseMigrationServiceMigrationJobObjectsConfig)
 	PutPerformanceConfig(value *DatabaseMigrationServiceMigrationJobPerformanceConfig)
 	PutReverseSshConnectivity(value *DatabaseMigrationServiceMigrationJobReverseSshConnectivity)
 	PutStaticIpConnectivity(value *DatabaseMigrationServiceMigrationJobStaticIpConnectivity)
@@ -166,6 +169,7 @@ type DatabaseMigrationServiceMigrationJob interface {
 	ResetId()
 	ResetLabels()
 	ResetLocation()
+	ResetObjectsConfig()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -513,6 +517,26 @@ func (j *jsiiProxy_DatabaseMigrationServiceMigrationJob) Node() constructs.Node 
 	return returns
 }
 
+func (j *jsiiProxy_DatabaseMigrationServiceMigrationJob) ObjectsConfig() DatabaseMigrationServiceMigrationJobObjectsConfigOutputReference {
+	var returns DatabaseMigrationServiceMigrationJobObjectsConfigOutputReference
+	_jsii_.Get(
+		j,
+		"objectsConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseMigrationServiceMigrationJob) ObjectsConfigInput() *DatabaseMigrationServiceMigrationJobObjectsConfig {
+	var returns *DatabaseMigrationServiceMigrationJobObjectsConfig
+	_jsii_.Get(
+		j,
+		"objectsConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatabaseMigrationServiceMigrationJob) PerformanceConfig() DatabaseMigrationServiceMigrationJobPerformanceConfigOutputReference {
 	var returns DatabaseMigrationServiceMigrationJobPerformanceConfigOutputReference
 	_jsii_.Get(
@@ -764,7 +788,7 @@ func (j *jsiiProxy_DatabaseMigrationServiceMigrationJob) VpcPeeringConnectivityI
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/database_migration_service_migration_job google_database_migration_service_migration_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/database_migration_service_migration_job google_database_migration_service_migration_job} Resource.
 func NewDatabaseMigrationServiceMigrationJob(scope constructs.Construct, id *string, config *DatabaseMigrationServiceMigrationJobConfig) DatabaseMigrationServiceMigrationJob {
 	_init_.Initialize()
 
@@ -782,7 +806,7 @@ func NewDatabaseMigrationServiceMigrationJob(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/database_migration_service_migration_job google_database_migration_service_migration_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/database_migration_service_migration_job google_database_migration_service_migration_job} Resource.
 func NewDatabaseMigrationServiceMigrationJob_Override(d DatabaseMigrationServiceMigrationJob, scope constructs.Construct, id *string, config *DatabaseMigrationServiceMigrationJobConfig) {
 	_init_.Initialize()
 
@@ -1346,6 +1370,17 @@ func (d *jsiiProxy_DatabaseMigrationServiceMigrationJob) PutDumpFlags(value *Dat
 	)
 }
 
+func (d *jsiiProxy_DatabaseMigrationServiceMigrationJob) PutObjectsConfig(value *DatabaseMigrationServiceMigrationJobObjectsConfig) {
+	if err := d.validatePutObjectsConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putObjectsConfig",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DatabaseMigrationServiceMigrationJob) PutPerformanceConfig(value *DatabaseMigrationServiceMigrationJobPerformanceConfig) {
 	if err := d.validatePutPerformanceConfigParameters(value); err != nil {
 		panic(err)
@@ -1453,6 +1488,14 @@ func (d *jsiiProxy_DatabaseMigrationServiceMigrationJob) ResetLocation() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetLocation",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseMigrationServiceMigrationJob) ResetObjectsConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetObjectsConfig",
 		nil, // no parameters
 	)
 }

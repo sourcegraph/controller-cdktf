@@ -92,6 +92,10 @@ func validateTagsTagKey_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_TagsTagKey) validateSetAllowedValuesRegexParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_TagsTagKey) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

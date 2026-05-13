@@ -52,6 +52,10 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigWorkerConfigOutputReference
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataprocClusterClusterConfigWorkerConfigOutputReference) validatePutInstanceFlexibilityPolicyParameters(value *GoogleDataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicy) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataprocClusterClusterConfigWorkerConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

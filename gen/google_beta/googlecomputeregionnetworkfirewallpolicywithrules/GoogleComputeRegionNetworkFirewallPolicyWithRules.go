@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeregionnetworkfirewallpolicywithrules/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_region_network_firewall_policy_with_rules google_compute_region_network_firewall_policy_with_rules}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_region_network_firewall_policy_with_rules google_compute_region_network_firewall_policy_with_rules}.
 type GoogleComputeRegionNetworkFirewallPolicyWithRules interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -54,6 +54,9 @@ type GoogleComputeRegionNetworkFirewallPolicyWithRules interface {
 	NetworkFirewallPolicyId() *string
 	// The tree node.
 	Node() constructs.Node
+	PolicyType() *string
+	SetPolicyType(val *string)
+	PolicyTypeInput() *string
 	PredefinedRules() GoogleComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesList
 	Project() *string
 	SetProject(val *string)
@@ -134,6 +137,7 @@ type GoogleComputeRegionNetworkFirewallPolicyWithRules interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPolicyType()
 	ResetProject()
 	ResetRegion()
 	ResetTimeouts()
@@ -345,6 +349,26 @@ func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyWithRules) Node() con
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyWithRules) PolicyType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"policyType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyWithRules) PolicyTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"policyTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyWithRules) PredefinedRules() GoogleComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesList {
 	var returns GoogleComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesList
 	_jsii_.Get(
@@ -526,7 +550,7 @@ func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyWithRules) TimeoutsIn
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_region_network_firewall_policy_with_rules google_compute_region_network_firewall_policy_with_rules} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_region_network_firewall_policy_with_rules google_compute_region_network_firewall_policy_with_rules} Resource.
 func NewGoogleComputeRegionNetworkFirewallPolicyWithRules(scope constructs.Construct, id *string, config *GoogleComputeRegionNetworkFirewallPolicyWithRulesConfig) GoogleComputeRegionNetworkFirewallPolicyWithRules {
 	_init_.Initialize()
 
@@ -544,7 +568,7 @@ func NewGoogleComputeRegionNetworkFirewallPolicyWithRules(scope constructs.Const
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_region_network_firewall_policy_with_rules google_compute_region_network_firewall_policy_with_rules} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_region_network_firewall_policy_with_rules google_compute_region_network_firewall_policy_with_rules} Resource.
 func NewGoogleComputeRegionNetworkFirewallPolicyWithRules_Override(g GoogleComputeRegionNetworkFirewallPolicyWithRules, scope constructs.Construct, id *string, config *GoogleComputeRegionNetworkFirewallPolicyWithRulesConfig) {
 	_init_.Initialize()
 
@@ -633,6 +657,17 @@ func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyWithRules)SetName(val
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyWithRules)SetPolicyType(val *string) {
+	if err := j.validateSetPolicyTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"policyType",
 		val,
 	)
 }
@@ -1073,6 +1108,14 @@ func (g *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyWithRules) ResetOverr
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyWithRules) ResetPolicyType() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPolicyType",
 		nil, // no parameters
 	)
 }

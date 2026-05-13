@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeorganizationsecuritypolicyrule/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_organization_security_policy_rule google_compute_organization_security_policy_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_organization_security_policy_rule google_compute_organization_security_policy_rule}.
 type GoogleComputeOrganizationSecurityPolicyRule interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -48,6 +48,8 @@ type GoogleComputeOrganizationSecurityPolicyRule interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	HeaderAction() GoogleComputeOrganizationSecurityPolicyRuleHeaderActionOutputReference
+	HeaderActionInput() *GoogleComputeOrganizationSecurityPolicyRuleHeaderAction
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -62,6 +64,8 @@ type GoogleComputeOrganizationSecurityPolicyRule interface {
 	PolicyId() *string
 	SetPolicyId(val *string)
 	PolicyIdInput() *string
+	PreconfiguredWafConfig() GoogleComputeOrganizationSecurityPolicyRulePreconfiguredWafConfigOutputReference
+	PreconfiguredWafConfigInput() *GoogleComputeOrganizationSecurityPolicyRulePreconfiguredWafConfig
 	Preview() interface{}
 	SetPreview(val interface{})
 	PreviewInput() interface{}
@@ -78,6 +82,8 @@ type GoogleComputeOrganizationSecurityPolicyRule interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RedirectOptions() GoogleComputeOrganizationSecurityPolicyRuleRedirectOptionsOutputReference
+	RedirectOptionsInput() *GoogleComputeOrganizationSecurityPolicyRuleRedirectOptions
 	TargetResources() *[]*string
 	SetTargetResources(val *[]*string)
 	TargetResourcesInput() *[]*string
@@ -135,16 +141,22 @@ type GoogleComputeOrganizationSecurityPolicyRule interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutHeaderAction(value *GoogleComputeOrganizationSecurityPolicyRuleHeaderAction)
 	PutMatch(value *GoogleComputeOrganizationSecurityPolicyRuleMatch)
+	PutPreconfiguredWafConfig(value *GoogleComputeOrganizationSecurityPolicyRulePreconfiguredWafConfig)
+	PutRedirectOptions(value *GoogleComputeOrganizationSecurityPolicyRuleRedirectOptions)
 	PutTimeouts(value *GoogleComputeOrganizationSecurityPolicyRuleTimeouts)
 	ResetDescription()
 	ResetDirection()
 	ResetEnableLogging()
+	ResetHeaderAction()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPreconfiguredWafConfig()
 	ResetPreview()
+	ResetRedirectOptions()
 	ResetTargetResources()
 	ResetTargetServiceAccounts()
 	ResetTimeouts()
@@ -326,6 +338,26 @@ func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) FriendlyUniqueId
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) HeaderAction() GoogleComputeOrganizationSecurityPolicyRuleHeaderActionOutputReference {
+	var returns GoogleComputeOrganizationSecurityPolicyRuleHeaderActionOutputReference
+	_jsii_.Get(
+		j,
+		"headerAction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) HeaderActionInput() *GoogleComputeOrganizationSecurityPolicyRuleHeaderAction {
+	var returns *GoogleComputeOrganizationSecurityPolicyRuleHeaderAction
+	_jsii_.Get(
+		j,
+		"headerActionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -406,6 +438,26 @@ func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) PolicyIdInput() 
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) PreconfiguredWafConfig() GoogleComputeOrganizationSecurityPolicyRulePreconfiguredWafConfigOutputReference {
+	var returns GoogleComputeOrganizationSecurityPolicyRulePreconfiguredWafConfigOutputReference
+	_jsii_.Get(
+		j,
+		"preconfiguredWafConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) PreconfiguredWafConfigInput() *GoogleComputeOrganizationSecurityPolicyRulePreconfiguredWafConfig {
+	var returns *GoogleComputeOrganizationSecurityPolicyRulePreconfiguredWafConfig
+	_jsii_.Get(
+		j,
+		"preconfiguredWafConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) Preview() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -471,6 +523,26 @@ func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) RawOverrides() i
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) RedirectOptions() GoogleComputeOrganizationSecurityPolicyRuleRedirectOptionsOutputReference {
+	var returns GoogleComputeOrganizationSecurityPolicyRuleRedirectOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"redirectOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) RedirectOptionsInput() *GoogleComputeOrganizationSecurityPolicyRuleRedirectOptions {
+	var returns *GoogleComputeOrganizationSecurityPolicyRuleRedirectOptions
+	_jsii_.Get(
+		j,
+		"redirectOptionsInput",
 		&returns,
 	)
 	return returns
@@ -567,7 +639,7 @@ func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) TimeoutsInput() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_organization_security_policy_rule google_compute_organization_security_policy_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_organization_security_policy_rule google_compute_organization_security_policy_rule} Resource.
 func NewGoogleComputeOrganizationSecurityPolicyRule(scope constructs.Construct, id *string, config *GoogleComputeOrganizationSecurityPolicyRuleConfig) GoogleComputeOrganizationSecurityPolicyRule {
 	_init_.Initialize()
 
@@ -585,7 +657,7 @@ func NewGoogleComputeOrganizationSecurityPolicyRule(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_organization_security_policy_rule google_compute_organization_security_policy_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_organization_security_policy_rule google_compute_organization_security_policy_rule} Resource.
 func NewGoogleComputeOrganizationSecurityPolicyRule_Override(g GoogleComputeOrganizationSecurityPolicyRule, scope constructs.Construct, id *string, config *GoogleComputeOrganizationSecurityPolicyRuleConfig) {
 	_init_.Initialize()
 
@@ -1127,6 +1199,17 @@ func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) OverrideLogicalI
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) PutHeaderAction(value *GoogleComputeOrganizationSecurityPolicyRuleHeaderAction) {
+	if err := g.validatePutHeaderActionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putHeaderAction",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) PutMatch(value *GoogleComputeOrganizationSecurityPolicyRuleMatch) {
 	if err := g.validatePutMatchParameters(value); err != nil {
 		panic(err)
@@ -1134,6 +1217,28 @@ func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) PutMatch(value *
 	_jsii_.InvokeVoid(
 		g,
 		"putMatch",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) PutPreconfiguredWafConfig(value *GoogleComputeOrganizationSecurityPolicyRulePreconfiguredWafConfig) {
+	if err := g.validatePutPreconfiguredWafConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putPreconfiguredWafConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) PutRedirectOptions(value *GoogleComputeOrganizationSecurityPolicyRuleRedirectOptions) {
+	if err := g.validatePutRedirectOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putRedirectOptions",
 		[]interface{}{value},
 	)
 }
@@ -1173,6 +1278,14 @@ func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) ResetEnableLoggi
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) ResetHeaderAction() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetHeaderAction",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1189,10 +1302,26 @@ func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) ResetOverrideLog
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) ResetPreconfiguredWafConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPreconfiguredWafConfig",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) ResetPreview() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetPreview",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) ResetRedirectOptions() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRedirectOptions",
 		nil, // no parameters
 	)
 }

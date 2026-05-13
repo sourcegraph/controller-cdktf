@@ -1,0 +1,6 @@
+package datagooglecomputeregionsecuritypolicy
+
+
+type DataGoogleComputeRegionSecurityPolicyRulesNetworkMatchUserDefinedFields struct {
+}
+

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlevertexaifeatureonlinestore/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_vertex_ai_feature_online_store google_vertex_ai_feature_online_store}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_vertex_ai_feature_online_store google_vertex_ai_feature_online_store}.
 type GoogleVertexAiFeatureOnlineStore interface {
 	cdktf.TerraformResource
 	Bigtable() GoogleVertexAiFeatureOnlineStoreBigtableOutputReference
@@ -36,6 +36,8 @@ type GoogleVertexAiFeatureOnlineStore interface {
 	EffectiveLabels() cdktf.StringMap
 	EmbeddingManagement() GoogleVertexAiFeatureOnlineStoreEmbeddingManagementOutputReference
 	EmbeddingManagementInput() *GoogleVertexAiFeatureOnlineStoreEmbeddingManagement
+	EncryptionSpec() GoogleVertexAiFeatureOnlineStoreEncryptionSpecOutputReference
+	EncryptionSpecInput() *GoogleVertexAiFeatureOnlineStoreEncryptionSpec
 	Etag() *string
 	ForceDestroy() interface{}
 	SetForceDestroy(val interface{})
@@ -138,11 +140,13 @@ type GoogleVertexAiFeatureOnlineStore interface {
 	PutBigtable(value *GoogleVertexAiFeatureOnlineStoreBigtable)
 	PutDedicatedServingEndpoint(value *GoogleVertexAiFeatureOnlineStoreDedicatedServingEndpoint)
 	PutEmbeddingManagement(value *GoogleVertexAiFeatureOnlineStoreEmbeddingManagement)
+	PutEncryptionSpec(value *GoogleVertexAiFeatureOnlineStoreEncryptionSpec)
 	PutOptimized(value *GoogleVertexAiFeatureOnlineStoreOptimized)
 	PutTimeouts(value *GoogleVertexAiFeatureOnlineStoreTimeouts)
 	ResetBigtable()
 	ResetDedicatedServingEndpoint()
 	ResetEmbeddingManagement()
+	ResetEncryptionSpec()
 	ResetForceDestroy()
 	ResetId()
 	ResetLabels()
@@ -296,6 +300,26 @@ func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStore) EmbeddingManagementInput() 
 	_jsii_.Get(
 		j,
 		"embeddingManagementInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStore) EncryptionSpec() GoogleVertexAiFeatureOnlineStoreEncryptionSpecOutputReference {
+	var returns GoogleVertexAiFeatureOnlineStoreEncryptionSpecOutputReference
+	_jsii_.Get(
+		j,
+		"encryptionSpec",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStore) EncryptionSpecInput() *GoogleVertexAiFeatureOnlineStoreEncryptionSpec {
+	var returns *GoogleVertexAiFeatureOnlineStoreEncryptionSpec
+	_jsii_.Get(
+		j,
+		"encryptionSpecInput",
 		&returns,
 	)
 	return returns
@@ -612,7 +636,7 @@ func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStore) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_vertex_ai_feature_online_store google_vertex_ai_feature_online_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_vertex_ai_feature_online_store google_vertex_ai_feature_online_store} Resource.
 func NewGoogleVertexAiFeatureOnlineStore(scope constructs.Construct, id *string, config *GoogleVertexAiFeatureOnlineStoreConfig) GoogleVertexAiFeatureOnlineStore {
 	_init_.Initialize()
 
@@ -630,7 +654,7 @@ func NewGoogleVertexAiFeatureOnlineStore(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_vertex_ai_feature_online_store google_vertex_ai_feature_online_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_vertex_ai_feature_online_store google_vertex_ai_feature_online_store} Resource.
 func NewGoogleVertexAiFeatureOnlineStore_Override(g GoogleVertexAiFeatureOnlineStore, scope constructs.Construct, id *string, config *GoogleVertexAiFeatureOnlineStoreConfig) {
 	_init_.Initialize()
 
@@ -1161,6 +1185,17 @@ func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStore) PutEmbeddingManagement(valu
 	)
 }
 
+func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStore) PutEncryptionSpec(value *GoogleVertexAiFeatureOnlineStoreEncryptionSpec) {
+	if err := g.validatePutEncryptionSpecParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putEncryptionSpec",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStore) PutOptimized(value *GoogleVertexAiFeatureOnlineStoreOptimized) {
 	if err := g.validatePutOptimizedParameters(value); err != nil {
 		panic(err)
@@ -1203,6 +1238,14 @@ func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStore) ResetEmbeddingManagement() 
 	_jsii_.InvokeVoid(
 		g,
 		"resetEmbeddingManagement",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStore) ResetEncryptionSpec() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEncryptionSpec",
 		nil, // no parameters
 	)
 }

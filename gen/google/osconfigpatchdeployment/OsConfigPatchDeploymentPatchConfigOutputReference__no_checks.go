@@ -96,6 +96,10 @@ func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) validateSe
 	return nil
 }
 
+func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) validateSetSkipUnpatchableVmsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

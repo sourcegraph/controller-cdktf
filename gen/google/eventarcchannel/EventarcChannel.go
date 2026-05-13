@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/eventarcchannel/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/eventarc_channel google_eventarc_channel}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_channel google_eventarc_channel}.
 type EventarcChannel interface {
 	cdktf.TerraformResource
 	ActivationToken() *string
@@ -33,6 +33,7 @@ type EventarcChannel interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -44,6 +45,9 @@ type EventarcChannel interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	Labels() *map[string]*string
+	SetLabels(val *map[string]*string)
+	LabelsInput() *map[string]*string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -73,6 +77,7 @@ type EventarcChannel interface {
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -130,6 +135,7 @@ type EventarcChannel interface {
 	PutTimeouts(value *EventarcChannelTimeouts)
 	ResetCryptoKeyName()
 	ResetId()
+	ResetLabels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -244,6 +250,16 @@ func (j *jsiiProxy_EventarcChannel) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_EventarcChannel) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_EventarcChannel) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -289,6 +305,26 @@ func (j *jsiiProxy_EventarcChannel) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EventarcChannel) Labels() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EventarcChannel) LabelsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labelsInput",
 		&returns,
 	)
 	return returns
@@ -434,6 +470,16 @@ func (j *jsiiProxy_EventarcChannel) TerraformGeneratorMetadata() *cdktf.Terrafor
 	return returns
 }
 
+func (j *jsiiProxy_EventarcChannel) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_EventarcChannel) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -515,7 +561,7 @@ func (j *jsiiProxy_EventarcChannel) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/eventarc_channel google_eventarc_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_channel google_eventarc_channel} Resource.
 func NewEventarcChannel(scope constructs.Construct, id *string, config *EventarcChannelConfig) EventarcChannel {
 	_init_.Initialize()
 
@@ -533,7 +579,7 @@ func NewEventarcChannel(scope constructs.Construct, id *string, config *Eventarc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/eventarc_channel google_eventarc_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_channel google_eventarc_channel} Resource.
 func NewEventarcChannel_Override(e EventarcChannel, scope constructs.Construct, id *string, config *EventarcChannelConfig) {
 	_init_.Initialize()
 
@@ -600,6 +646,17 @@ func (j *jsiiProxy_EventarcChannel)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EventarcChannel)SetLabels(val *map[string]*string) {
+	if err := j.validateSetLabelsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"labels",
 		val,
 	)
 }
@@ -1054,6 +1111,14 @@ func (e *jsiiProxy_EventarcChannel) ResetId() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EventarcChannel) ResetLabels() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetLabels",
 		nil, // no parameters
 	)
 }

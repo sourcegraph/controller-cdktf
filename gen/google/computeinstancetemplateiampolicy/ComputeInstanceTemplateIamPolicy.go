@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/computeinstancetemplateiampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_instance_template_iam_policy google_compute_instance_template_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_template_iam_policy google_compute_instance_template_iam_policy}.
 type ComputeInstanceTemplateIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -388,7 +388,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateIamPolicy) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_instance_template_iam_policy google_compute_instance_template_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_template_iam_policy google_compute_instance_template_iam_policy} Resource.
 func NewComputeInstanceTemplateIamPolicy(scope constructs.Construct, id *string, config *ComputeInstanceTemplateIamPolicyConfig) ComputeInstanceTemplateIamPolicy {
 	_init_.Initialize()
 
@@ -406,7 +406,7 @@ func NewComputeInstanceTemplateIamPolicy(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_instance_template_iam_policy google_compute_instance_template_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_template_iam_policy google_compute_instance_template_iam_policy} Resource.
 func NewComputeInstanceTemplateIamPolicy_Override(c ComputeInstanceTemplateIamPolicy, scope constructs.Construct, id *string, config *ComputeInstanceTemplateIamPolicyConfig) {
 	_init_.Initialize()
 

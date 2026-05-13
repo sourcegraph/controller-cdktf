@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagooglekmsekmconnectioniampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/kms_ekm_connection_iam_policy google_kms_ekm_connection_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/kms_ekm_connection_iam_policy google_kms_ekm_connection_iam_policy}.
 type DataGoogleKmsEkmConnectionIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -355,7 +355,7 @@ func (j *jsiiProxy_DataGoogleKmsEkmConnectionIamPolicy) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/kms_ekm_connection_iam_policy google_kms_ekm_connection_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/kms_ekm_connection_iam_policy google_kms_ekm_connection_iam_policy} Data Source.
 func NewDataGoogleKmsEkmConnectionIamPolicy(scope constructs.Construct, id *string, config *DataGoogleKmsEkmConnectionIamPolicyConfig) DataGoogleKmsEkmConnectionIamPolicy {
 	_init_.Initialize()
 
@@ -373,7 +373,7 @@ func NewDataGoogleKmsEkmConnectionIamPolicy(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/kms_ekm_connection_iam_policy google_kms_ekm_connection_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/kms_ekm_connection_iam_policy google_kms_ekm_connection_iam_policy} Data Source.
 func NewDataGoogleKmsEkmConnectionIamPolicy_Override(d DataGoogleKmsEkmConnectionIamPolicy, scope constructs.Construct, id *string, config *DataGoogleKmsEkmConnectionIamPolicyConfig) {
 	_init_.Initialize()
 

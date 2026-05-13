@@ -44,6 +44,10 @@ func (c *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStanda
 	return nil
 }
 
+func (c *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardPredeployOutputReference) validatePutTasksParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardPredeployOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

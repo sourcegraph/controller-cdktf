@@ -1,0 +1,6 @@
+package datagooglebackupdrbackupplanassociations
+
+
+type DataGoogleBackupDrBackupPlanAssociationsAssociationsRulesConfigInfo struct {
+}
+

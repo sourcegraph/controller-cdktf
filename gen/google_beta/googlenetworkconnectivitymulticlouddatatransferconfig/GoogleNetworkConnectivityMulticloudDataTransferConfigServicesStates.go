@@ -1,0 +1,6 @@
+package googlenetworkconnectivitymulticlouddatatransferconfig
+
+
+type GoogleNetworkConnectivityMulticloudDataTransferConfigServicesStates struct {
+}
+

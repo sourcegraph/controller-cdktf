@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/memorystoreinstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/memorystore_instance google_memorystore_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/memorystore_instance google_memorystore_instance}.
 type MemorystoreInstance interface {
 	cdktf.TerraformResource
 	AuthorizationMode() *string
@@ -17,6 +17,7 @@ type MemorystoreInstance interface {
 	AuthorizationModeInput() *string
 	AutomatedBackupConfig() MemorystoreInstanceAutomatedBackupConfigOutputReference
 	AutomatedBackupConfigInput() *MemorystoreInstanceAutomatedBackupConfig
+	AvailableMaintenanceVersions() *[]*string
 	BackupCollection() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -40,10 +41,13 @@ type MemorystoreInstance interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DesiredAutoCreatedEndpoints() MemorystoreInstanceDesiredAutoCreatedEndpointsList
+	DesiredAutoCreatedEndpointsInput() interface{}
 	DesiredPscAutoConnections() MemorystoreInstanceDesiredPscAutoConnectionsList
 	DesiredPscAutoConnectionsInput() interface{}
 	DiscoveryEndpoints() MemorystoreInstanceDiscoveryEndpointsList
 	EffectiveLabels() cdktf.StringMap
+	EffectiveMaintenanceVersion() *string
 	Endpoints() MemorystoreInstanceEndpointsList
 	EngineConfigs() *map[string]*string
 	SetEngineConfigs(val *map[string]*string)
@@ -67,6 +71,9 @@ type MemorystoreInstance interface {
 	InstanceId() *string
 	SetInstanceId(val *string)
 	InstanceIdInput() *string
+	KmsKey() *string
+	SetKmsKey(val *string)
+	KmsKeyInput() *string
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
 	LabelsInput() *map[string]*string
@@ -80,8 +87,12 @@ type MemorystoreInstance interface {
 	MaintenancePolicy() MemorystoreInstanceMaintenancePolicyOutputReference
 	MaintenancePolicyInput() *MemorystoreInstanceMaintenancePolicy
 	MaintenanceSchedule() MemorystoreInstanceMaintenanceScheduleList
+	MaintenanceVersion() *string
+	SetMaintenanceVersion(val *string)
+	MaintenanceVersionInput() *string
 	ManagedBackupSource() MemorystoreInstanceManagedBackupSourceOutputReference
 	ManagedBackupSourceInput() *MemorystoreInstanceManagedBackupSource
+	ManagedServerCa() MemorystoreInstanceManagedServerCaList
 	Mode() *string
 	SetMode(val *string)
 	ModeInput() *string
@@ -112,6 +123,12 @@ type MemorystoreInstance interface {
 	ReplicaCount() *float64
 	SetReplicaCount(val *float64)
 	ReplicaCountInput() *float64
+	ServerCaMode() *string
+	SetServerCaMode(val *string)
+	ServerCaModeInput() *string
+	ServerCaPool() *string
+	SetServerCaPool(val *string)
+	ServerCaPoolInput() *string
 	ShardCount() *float64
 	SetShardCount(val *float64)
 	ShardCountInput() *float64
@@ -178,6 +195,7 @@ type MemorystoreInstance interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAutomatedBackupConfig(value *MemorystoreInstanceAutomatedBackupConfig)
 	PutCrossInstanceReplicationConfig(value *MemorystoreInstanceCrossInstanceReplicationConfig)
+	PutDesiredAutoCreatedEndpoints(value interface{})
 	PutDesiredPscAutoConnections(value interface{})
 	PutGcsSource(value *MemorystoreInstanceGcsSource)
 	PutMaintenancePolicy(value *MemorystoreInstanceMaintenancePolicy)
@@ -189,13 +207,16 @@ type MemorystoreInstance interface {
 	ResetAutomatedBackupConfig()
 	ResetCrossInstanceReplicationConfig()
 	ResetDeletionProtectionEnabled()
+	ResetDesiredAutoCreatedEndpoints()
 	ResetDesiredPscAutoConnections()
 	ResetEngineConfigs()
 	ResetEngineVersion()
 	ResetGcsSource()
 	ResetId()
+	ResetKmsKey()
 	ResetLabels()
 	ResetMaintenancePolicy()
+	ResetMaintenanceVersion()
 	ResetManagedBackupSource()
 	ResetMode()
 	ResetNodeType()
@@ -205,6 +226,8 @@ type MemorystoreInstance interface {
 	ResetPersistenceConfig()
 	ResetProject()
 	ResetReplicaCount()
+	ResetServerCaMode()
+	ResetServerCaPool()
 	ResetTimeouts()
 	ResetTransitEncryptionMode()
 	ResetZoneDistributionConfig()
@@ -261,6 +284,16 @@ func (j *jsiiProxy_MemorystoreInstance) AutomatedBackupConfigInput() *Memorystor
 	_jsii_.Get(
 		j,
 		"automatedBackupConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemorystoreInstance) AvailableMaintenanceVersions() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"availableMaintenanceVersions",
 		&returns,
 	)
 	return returns
@@ -376,6 +409,26 @@ func (j *jsiiProxy_MemorystoreInstance) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_MemorystoreInstance) DesiredAutoCreatedEndpoints() MemorystoreInstanceDesiredAutoCreatedEndpointsList {
+	var returns MemorystoreInstanceDesiredAutoCreatedEndpointsList
+	_jsii_.Get(
+		j,
+		"desiredAutoCreatedEndpoints",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemorystoreInstance) DesiredAutoCreatedEndpointsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"desiredAutoCreatedEndpointsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MemorystoreInstance) DesiredPscAutoConnections() MemorystoreInstanceDesiredPscAutoConnectionsList {
 	var returns MemorystoreInstanceDesiredPscAutoConnectionsList
 	_jsii_.Get(
@@ -411,6 +464,16 @@ func (j *jsiiProxy_MemorystoreInstance) EffectiveLabels() cdktf.StringMap {
 	_jsii_.Get(
 		j,
 		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemorystoreInstance) EffectiveMaintenanceVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"effectiveMaintenanceVersion",
 		&returns,
 	)
 	return returns
@@ -556,6 +619,26 @@ func (j *jsiiProxy_MemorystoreInstance) InstanceIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_MemorystoreInstance) KmsKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemorystoreInstance) KmsKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKeyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MemorystoreInstance) Labels() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -636,6 +719,26 @@ func (j *jsiiProxy_MemorystoreInstance) MaintenanceSchedule() MemorystoreInstanc
 	return returns
 }
 
+func (j *jsiiProxy_MemorystoreInstance) MaintenanceVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maintenanceVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemorystoreInstance) MaintenanceVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maintenanceVersionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MemorystoreInstance) ManagedBackupSource() MemorystoreInstanceManagedBackupSourceOutputReference {
 	var returns MemorystoreInstanceManagedBackupSourceOutputReference
 	_jsii_.Get(
@@ -651,6 +754,16 @@ func (j *jsiiProxy_MemorystoreInstance) ManagedBackupSourceInput() *MemorystoreI
 	_jsii_.Get(
 		j,
 		"managedBackupSourceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemorystoreInstance) ManagedServerCa() MemorystoreInstanceManagedServerCaList {
+	var returns MemorystoreInstanceManagedServerCaList
+	_jsii_.Get(
+		j,
+		"managedServerCa",
 		&returns,
 	)
 	return returns
@@ -836,6 +949,46 @@ func (j *jsiiProxy_MemorystoreInstance) ReplicaCountInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_MemorystoreInstance) ServerCaMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serverCaMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemorystoreInstance) ServerCaModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serverCaModeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemorystoreInstance) ServerCaPool() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serverCaPool",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemorystoreInstance) ServerCaPoolInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serverCaPoolInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MemorystoreInstance) ShardCount() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -997,7 +1150,7 @@ func (j *jsiiProxy_MemorystoreInstance) ZoneDistributionConfigInput() *Memorysto
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/memorystore_instance google_memorystore_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/memorystore_instance google_memorystore_instance} Resource.
 func NewMemorystoreInstance(scope constructs.Construct, id *string, config *MemorystoreInstanceConfig) MemorystoreInstance {
 	_init_.Initialize()
 
@@ -1015,7 +1168,7 @@ func NewMemorystoreInstance(scope constructs.Construct, id *string, config *Memo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/memorystore_instance google_memorystore_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/memorystore_instance google_memorystore_instance} Resource.
 func NewMemorystoreInstance_Override(m MemorystoreInstance, scope constructs.Construct, id *string, config *MemorystoreInstanceConfig) {
 	_init_.Initialize()
 
@@ -1130,6 +1283,17 @@ func (j *jsiiProxy_MemorystoreInstance)SetInstanceId(val *string) {
 	)
 }
 
+func (j *jsiiProxy_MemorystoreInstance)SetKmsKey(val *string) {
+	if err := j.validateSetKmsKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kmsKey",
+		val,
+	)
+}
+
 func (j *jsiiProxy_MemorystoreInstance)SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
@@ -1159,6 +1323,17 @@ func (j *jsiiProxy_MemorystoreInstance)SetLocation(val *string) {
 	_jsii_.Set(
 		j,
 		"location",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MemorystoreInstance)SetMaintenanceVersion(val *string) {
+	if err := j.validateSetMaintenanceVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maintenanceVersion",
 		val,
 	)
 }
@@ -1222,6 +1397,28 @@ func (j *jsiiProxy_MemorystoreInstance)SetReplicaCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"replicaCount",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MemorystoreInstance)SetServerCaMode(val *string) {
+	if err := j.validateSetServerCaModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serverCaMode",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MemorystoreInstance)SetServerCaPool(val *string) {
+	if err := j.validateSetServerCaPoolParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serverCaPool",
 		val,
 	)
 }
@@ -1623,6 +1820,17 @@ func (m *jsiiProxy_MemorystoreInstance) PutCrossInstanceReplicationConfig(value 
 	)
 }
 
+func (m *jsiiProxy_MemorystoreInstance) PutDesiredAutoCreatedEndpoints(value interface{}) {
+	if err := m.validatePutDesiredAutoCreatedEndpointsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putDesiredAutoCreatedEndpoints",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MemorystoreInstance) PutDesiredPscAutoConnections(value interface{}) {
 	if err := m.validatePutDesiredPscAutoConnectionsParameters(value); err != nil {
 		panic(err)
@@ -1732,6 +1940,14 @@ func (m *jsiiProxy_MemorystoreInstance) ResetDeletionProtectionEnabled() {
 	)
 }
 
+func (m *jsiiProxy_MemorystoreInstance) ResetDesiredAutoCreatedEndpoints() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetDesiredAutoCreatedEndpoints",
+		nil, // no parameters
+	)
+}
+
 func (m *jsiiProxy_MemorystoreInstance) ResetDesiredPscAutoConnections() {
 	_jsii_.InvokeVoid(
 		m,
@@ -1772,6 +1988,14 @@ func (m *jsiiProxy_MemorystoreInstance) ResetId() {
 	)
 }
 
+func (m *jsiiProxy_MemorystoreInstance) ResetKmsKey() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetKmsKey",
+		nil, // no parameters
+	)
+}
+
 func (m *jsiiProxy_MemorystoreInstance) ResetLabels() {
 	_jsii_.InvokeVoid(
 		m,
@@ -1784,6 +2008,14 @@ func (m *jsiiProxy_MemorystoreInstance) ResetMaintenancePolicy() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetMaintenancePolicy",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MemorystoreInstance) ResetMaintenanceVersion() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetMaintenanceVersion",
 		nil, // no parameters
 	)
 }
@@ -1840,6 +2072,22 @@ func (m *jsiiProxy_MemorystoreInstance) ResetReplicaCount() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetReplicaCount",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MemorystoreInstance) ResetServerCaMode() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetServerCaMode",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MemorystoreInstance) ResetServerCaPool() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetServerCaPool",
 		nil, // no parameters
 	)
 }

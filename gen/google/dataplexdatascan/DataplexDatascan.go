@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/dataplexdatascan/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/dataplex_datascan google_dataplex_datascan}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_datascan google_dataplex_datascan}.
 type DataplexDatascan interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -26,6 +26,10 @@ type DataplexDatascan interface {
 	SetCount(val interface{})
 	CreateTime() *string
 	Data() DataplexDatascanDataOutputReference
+	DataDiscoverySpec() DataplexDatascanDataDiscoverySpecOutputReference
+	DataDiscoverySpecInput() *DataplexDatascanDataDiscoverySpec
+	DataDocumentationSpec() DataplexDatascanDataDocumentationSpecOutputReference
+	DataDocumentationSpecInput() *DataplexDatascanDataDocumentationSpec
 	DataInput() *DataplexDatascanData
 	DataProfileSpec() DataplexDatascanDataProfileSpecOutputReference
 	DataProfileSpecInput() *DataplexDatascanDataProfileSpec
@@ -45,6 +49,8 @@ type DataplexDatascan interface {
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
 	EffectiveLabels() cdktf.StringMap
+	ExecutionIdentity() DataplexDatascanExecutionIdentityOutputReference
+	ExecutionIdentityInput() *DataplexDatascanExecutionIdentity
 	ExecutionSpec() DataplexDatascanExecutionSpecOutputReference
 	ExecutionSpecInput() *DataplexDatascanExecutionSpec
 	ExecutionStatus() DataplexDatascanExecutionStatusList
@@ -142,14 +148,20 @@ type DataplexDatascan interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutData(value *DataplexDatascanData)
+	PutDataDiscoverySpec(value *DataplexDatascanDataDiscoverySpec)
+	PutDataDocumentationSpec(value *DataplexDatascanDataDocumentationSpec)
 	PutDataProfileSpec(value *DataplexDatascanDataProfileSpec)
 	PutDataQualitySpec(value *DataplexDatascanDataQualitySpec)
+	PutExecutionIdentity(value *DataplexDatascanExecutionIdentity)
 	PutExecutionSpec(value *DataplexDatascanExecutionSpec)
 	PutTimeouts(value *DataplexDatascanTimeouts)
+	ResetDataDiscoverySpec()
+	ResetDataDocumentationSpec()
 	ResetDataProfileSpec()
 	ResetDataQualitySpec()
 	ResetDescription()
 	ResetDisplayName()
+	ResetExecutionIdentity()
 	ResetId()
 	ResetLabels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -230,6 +242,46 @@ func (j *jsiiProxy_DataplexDatascan) Data() DataplexDatascanDataOutputReference 
 	_jsii_.Get(
 		j,
 		"data",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataplexDatascan) DataDiscoverySpec() DataplexDatascanDataDiscoverySpecOutputReference {
+	var returns DataplexDatascanDataDiscoverySpecOutputReference
+	_jsii_.Get(
+		j,
+		"dataDiscoverySpec",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataplexDatascan) DataDiscoverySpecInput() *DataplexDatascanDataDiscoverySpec {
+	var returns *DataplexDatascanDataDiscoverySpec
+	_jsii_.Get(
+		j,
+		"dataDiscoverySpecInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataplexDatascan) DataDocumentationSpec() DataplexDatascanDataDocumentationSpecOutputReference {
+	var returns DataplexDatascanDataDocumentationSpecOutputReference
+	_jsii_.Get(
+		j,
+		"dataDocumentationSpec",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataplexDatascan) DataDocumentationSpecInput() *DataplexDatascanDataDocumentationSpec {
+	var returns *DataplexDatascanDataDocumentationSpec
+	_jsii_.Get(
+		j,
+		"dataDocumentationSpecInput",
 		&returns,
 	)
 	return returns
@@ -360,6 +412,26 @@ func (j *jsiiProxy_DataplexDatascan) EffectiveLabels() cdktf.StringMap {
 	_jsii_.Get(
 		j,
 		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataplexDatascan) ExecutionIdentity() DataplexDatascanExecutionIdentityOutputReference {
+	var returns DataplexDatascanExecutionIdentityOutputReference
+	_jsii_.Get(
+		j,
+		"executionIdentity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataplexDatascan) ExecutionIdentityInput() *DataplexDatascanExecutionIdentity {
+	var returns *DataplexDatascanExecutionIdentity
+	_jsii_.Get(
+		j,
+		"executionIdentityInput",
 		&returns,
 	)
 	return returns
@@ -666,7 +738,7 @@ func (j *jsiiProxy_DataplexDatascan) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/dataplex_datascan google_dataplex_datascan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_datascan google_dataplex_datascan} Resource.
 func NewDataplexDatascan(scope constructs.Construct, id *string, config *DataplexDatascanConfig) DataplexDatascan {
 	_init_.Initialize()
 
@@ -684,7 +756,7 @@ func NewDataplexDatascan(scope constructs.Construct, id *string, config *Dataple
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/dataplex_datascan google_dataplex_datascan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_datascan google_dataplex_datascan} Resource.
 func NewDataplexDatascan_Override(d DataplexDatascan, scope constructs.Construct, id *string, config *DataplexDatascanConfig) {
 	_init_.Initialize()
 
@@ -1204,6 +1276,28 @@ func (d *jsiiProxy_DataplexDatascan) PutData(value *DataplexDatascanData) {
 	)
 }
 
+func (d *jsiiProxy_DataplexDatascan) PutDataDiscoverySpec(value *DataplexDatascanDataDiscoverySpec) {
+	if err := d.validatePutDataDiscoverySpecParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putDataDiscoverySpec",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataplexDatascan) PutDataDocumentationSpec(value *DataplexDatascanDataDocumentationSpec) {
+	if err := d.validatePutDataDocumentationSpecParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putDataDocumentationSpec",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataplexDatascan) PutDataProfileSpec(value *DataplexDatascanDataProfileSpec) {
 	if err := d.validatePutDataProfileSpecParameters(value); err != nil {
 		panic(err)
@@ -1222,6 +1316,17 @@ func (d *jsiiProxy_DataplexDatascan) PutDataQualitySpec(value *DataplexDatascanD
 	_jsii_.InvokeVoid(
 		d,
 		"putDataQualitySpec",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataplexDatascan) PutExecutionIdentity(value *DataplexDatascanExecutionIdentity) {
+	if err := d.validatePutExecutionIdentityParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putExecutionIdentity",
 		[]interface{}{value},
 	)
 }
@@ -1245,6 +1350,22 @@ func (d *jsiiProxy_DataplexDatascan) PutTimeouts(value *DataplexDatascanTimeouts
 		d,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataplexDatascan) ResetDataDiscoverySpec() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDataDiscoverySpec",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataplexDatascan) ResetDataDocumentationSpec() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDataDocumentationSpec",
+		nil, // no parameters
 	)
 }
 
@@ -1276,6 +1397,14 @@ func (d *jsiiProxy_DataplexDatascan) ResetDisplayName() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetDisplayName",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataplexDatascan) ResetExecutionIdentity() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetExecutionIdentity",
 		nil, // no parameters
 	)
 }

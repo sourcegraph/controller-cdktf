@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagoogledataprocmetastoredatabaseiampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_dataproc_metastore_database_iam_policy google_dataproc_metastore_database_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/data-sources/google_dataproc_metastore_database_iam_policy google_dataproc_metastore_database_iam_policy}.
 type DataGoogleDataprocMetastoreDatabaseIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -378,7 +378,7 @@ func (j *jsiiProxy_DataGoogleDataprocMetastoreDatabaseIamPolicy) TerraformResour
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_dataproc_metastore_database_iam_policy google_dataproc_metastore_database_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/data-sources/google_dataproc_metastore_database_iam_policy google_dataproc_metastore_database_iam_policy} Data Source.
 func NewDataGoogleDataprocMetastoreDatabaseIamPolicy(scope constructs.Construct, id *string, config *DataGoogleDataprocMetastoreDatabaseIamPolicyConfig) DataGoogleDataprocMetastoreDatabaseIamPolicy {
 	_init_.Initialize()
 
@@ -396,7 +396,7 @@ func NewDataGoogleDataprocMetastoreDatabaseIamPolicy(scope constructs.Construct,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_dataproc_metastore_database_iam_policy google_dataproc_metastore_database_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/data-sources/google_dataproc_metastore_database_iam_policy google_dataproc_metastore_database_iam_policy} Data Source.
 func NewDataGoogleDataprocMetastoreDatabaseIamPolicy_Override(d DataGoogleDataprocMetastoreDatabaseIamPolicy, scope constructs.Construct, id *string, config *DataGoogleDataprocMetastoreDatabaseIamPolicyConfig) {
 	_init_.Initialize()
 

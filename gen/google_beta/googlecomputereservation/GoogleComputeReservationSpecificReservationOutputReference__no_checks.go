@@ -68,6 +68,10 @@ func (j *jsiiProxy_GoogleComputeReservationSpecificReservationOutputReference) v
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeReservationSpecificReservationOutputReference) validateSetSourceInstanceTemplateParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeReservationSpecificReservationOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

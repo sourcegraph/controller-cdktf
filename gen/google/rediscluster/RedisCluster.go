@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/rediscluster/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/redis_cluster google_redis_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/redis_cluster google_redis_cluster}.
 type RedisCluster interface {
 	cdktf.TerraformResource
 	AuthorizationMode() *string
@@ -17,6 +17,7 @@ type RedisCluster interface {
 	AuthorizationModeInput() *string
 	AutomatedBackupConfig() RedisClusterAutomatedBackupConfigOutputReference
 	AutomatedBackupConfigInput() *RedisClusterAutomatedBackupConfig
+	AvailableMaintenanceVersions() *[]*string
 	BackupCollection() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -41,6 +42,8 @@ type RedisCluster interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	DiscoveryEndpoints() RedisClusterDiscoveryEndpointsList
+	EffectiveLabels() cdktf.StringMap
+	EffectiveMaintenanceVersion() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -57,6 +60,9 @@ type RedisCluster interface {
 	KmsKey() *string
 	SetKmsKey(val *string)
 	KmsKeyInput() *string
+	Labels() *map[string]*string
+	SetLabels(val *map[string]*string)
+	LabelsInput() *map[string]*string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -64,8 +70,12 @@ type RedisCluster interface {
 	MaintenancePolicy() RedisClusterMaintenancePolicyOutputReference
 	MaintenancePolicyInput() *RedisClusterMaintenancePolicy
 	MaintenanceSchedule() RedisClusterMaintenanceScheduleList
+	MaintenanceVersion() *string
+	SetMaintenanceVersion(val *string)
+	MaintenanceVersionInput() *string
 	ManagedBackupSource() RedisClusterManagedBackupSourceOutputReference
 	ManagedBackupSourceInput() *RedisClusterManagedBackupSource
+	ManagedServerCa() RedisClusterManagedServerCaList
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -103,6 +113,12 @@ type RedisCluster interface {
 	ReplicaCount() *float64
 	SetReplicaCount(val *float64)
 	ReplicaCountInput() *float64
+	ServerCaMode() *string
+	SetServerCaMode(val *string)
+	ServerCaModeInput() *string
+	ServerCaPool() *string
+	SetServerCaPool(val *string)
+	ServerCaPoolInput() *string
 	ShardCount() *float64
 	SetShardCount(val *float64)
 	ShardCountInput() *float64
@@ -111,6 +127,7 @@ type RedisCluster interface {
 	StateInfo() RedisClusterStateInfoList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -182,7 +199,9 @@ type RedisCluster interface {
 	ResetGcsSource()
 	ResetId()
 	ResetKmsKey()
+	ResetLabels()
 	ResetMaintenancePolicy()
+	ResetMaintenanceVersion()
 	ResetManagedBackupSource()
 	ResetName()
 	ResetNodeType()
@@ -195,6 +214,8 @@ type RedisCluster interface {
 	ResetRedisConfigs()
 	ResetRegion()
 	ResetReplicaCount()
+	ResetServerCaMode()
+	ResetServerCaPool()
 	ResetTimeouts()
 	ResetTransitEncryptionMode()
 	ResetZoneDistributionConfig()
@@ -251,6 +272,16 @@ func (j *jsiiProxy_RedisCluster) AutomatedBackupConfigInput() *RedisClusterAutom
 	_jsii_.Get(
 		j,
 		"automatedBackupConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedisCluster) AvailableMaintenanceVersions() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"availableMaintenanceVersions",
 		&returns,
 	)
 	return returns
@@ -376,6 +407,26 @@ func (j *jsiiProxy_RedisCluster) DiscoveryEndpoints() RedisClusterDiscoveryEndpo
 	return returns
 }
 
+func (j *jsiiProxy_RedisCluster) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedisCluster) EffectiveMaintenanceVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"effectiveMaintenanceVersion",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RedisCluster) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -466,6 +517,26 @@ func (j *jsiiProxy_RedisCluster) KmsKeyInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_RedisCluster) Labels() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedisCluster) LabelsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labelsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RedisCluster) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -506,6 +577,26 @@ func (j *jsiiProxy_RedisCluster) MaintenanceSchedule() RedisClusterMaintenanceSc
 	return returns
 }
 
+func (j *jsiiProxy_RedisCluster) MaintenanceVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maintenanceVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedisCluster) MaintenanceVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maintenanceVersionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RedisCluster) ManagedBackupSource() RedisClusterManagedBackupSourceOutputReference {
 	var returns RedisClusterManagedBackupSourceOutputReference
 	_jsii_.Get(
@@ -521,6 +612,16 @@ func (j *jsiiProxy_RedisCluster) ManagedBackupSourceInput() *RedisClusterManaged
 	_jsii_.Get(
 		j,
 		"managedBackupSourceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedisCluster) ManagedServerCa() RedisClusterManagedServerCaList {
+	var returns RedisClusterManagedServerCaList
+	_jsii_.Get(
+		j,
+		"managedServerCa",
 		&returns,
 	)
 	return returns
@@ -756,6 +857,46 @@ func (j *jsiiProxy_RedisCluster) ReplicaCountInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_RedisCluster) ServerCaMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serverCaMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedisCluster) ServerCaModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serverCaModeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedisCluster) ServerCaPool() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serverCaPool",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedisCluster) ServerCaPoolInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serverCaPoolInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RedisCluster) ShardCount() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -811,6 +952,16 @@ func (j *jsiiProxy_RedisCluster) TerraformGeneratorMetadata() *cdktf.TerraformPr
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedisCluster) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
 		&returns,
 	)
 	return returns
@@ -907,7 +1058,7 @@ func (j *jsiiProxy_RedisCluster) ZoneDistributionConfigInput() *RedisClusterZone
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/redis_cluster google_redis_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/redis_cluster google_redis_cluster} Resource.
 func NewRedisCluster(scope constructs.Construct, id *string, config *RedisClusterConfig) RedisCluster {
 	_init_.Initialize()
 
@@ -925,7 +1076,7 @@ func NewRedisCluster(scope constructs.Construct, id *string, config *RedisCluste
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/redis_cluster google_redis_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/redis_cluster google_redis_cluster} Resource.
 func NewRedisCluster_Override(r RedisCluster, scope constructs.Construct, id *string, config *RedisClusterConfig) {
 	_init_.Initialize()
 
@@ -1018,6 +1169,17 @@ func (j *jsiiProxy_RedisCluster)SetKmsKey(val *string) {
 	)
 }
 
+func (j *jsiiProxy_RedisCluster)SetLabels(val *map[string]*string) {
+	if err := j.validateSetLabelsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"labels",
+		val,
+	)
+}
+
 func (j *jsiiProxy_RedisCluster)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -1025,6 +1187,17 @@ func (j *jsiiProxy_RedisCluster)SetLifecycle(val *cdktf.TerraformResourceLifecyc
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedisCluster)SetMaintenanceVersion(val *string) {
+	if err := j.validateSetMaintenanceVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maintenanceVersion",
 		val,
 	)
 }
@@ -1110,6 +1283,28 @@ func (j *jsiiProxy_RedisCluster)SetReplicaCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"replicaCount",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedisCluster)SetServerCaMode(val *string) {
+	if err := j.validateSetServerCaModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serverCaMode",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedisCluster)SetServerCaPool(val *string) {
+	if err := j.validateSetServerCaPoolParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serverCaPool",
 		val,
 	)
 }
@@ -1644,10 +1839,26 @@ func (r *jsiiProxy_RedisCluster) ResetKmsKey() {
 	)
 }
 
+func (r *jsiiProxy_RedisCluster) ResetLabels() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetLabels",
+		nil, // no parameters
+	)
+}
+
 func (r *jsiiProxy_RedisCluster) ResetMaintenancePolicy() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetMaintenancePolicy",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedisCluster) ResetMaintenanceVersion() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetMaintenanceVersion",
 		nil, // no parameters
 	)
 }
@@ -1728,6 +1939,22 @@ func (r *jsiiProxy_RedisCluster) ResetReplicaCount() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetReplicaCount",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedisCluster) ResetServerCaMode() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetServerCaMode",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedisCluster) ResetServerCaPool() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetServerCaPool",
 		nil, // no parameters
 	)
 }

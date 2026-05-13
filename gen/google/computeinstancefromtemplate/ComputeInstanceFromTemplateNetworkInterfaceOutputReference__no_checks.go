@@ -68,6 +68,10 @@ func (j *jsiiProxy_ComputeInstanceFromTemplateNetworkInterfaceOutputReference) v
 	return nil
 }
 
+func (j *jsiiProxy_ComputeInstanceFromTemplateNetworkInterfaceOutputReference) validateSetIgmpQueryParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeInstanceFromTemplateNetworkInterfaceOutputReference) validateSetInternalIpv6PrefixLengthParameters(val *float64) error {
 	return nil
 }
@@ -117,6 +121,10 @@ func (j *jsiiProxy_ComputeInstanceFromTemplateNetworkInterfaceOutputReference) v
 }
 
 func (j *jsiiProxy_ComputeInstanceFromTemplateNetworkInterfaceOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeInstanceFromTemplateNetworkInterfaceOutputReference) validateSetVlanParameters(val *float64) error {
 	return nil
 }
 

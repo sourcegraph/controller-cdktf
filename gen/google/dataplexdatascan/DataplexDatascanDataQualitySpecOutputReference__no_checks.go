@@ -56,11 +56,23 @@ func (d *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) validateResol
 	return nil
 }
 
+func (j *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) validateSetCatalogPublishingEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) validateSetEnableCatalogBasedRulesParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) validateSetFilterParameters(val *string) error {
 	return nil
 }
 

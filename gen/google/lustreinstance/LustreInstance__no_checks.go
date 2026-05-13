@@ -72,6 +72,18 @@ func (l *jsiiProxy_LustreInstance) validateOverrideLogicalIdParameters(newLogica
 	return nil
 }
 
+func (l *jsiiProxy_LustreInstance) validatePutAccessRulesOptionsParameters(value *LustreInstanceAccessRulesOptions) error {
+	return nil
+}
+
+func (l *jsiiProxy_LustreInstance) validatePutDynamicTierOptionsParameters(value *LustreInstanceDynamicTierOptions) error {
+	return nil
+}
+
+func (l *jsiiProxy_LustreInstance) validatePutMaintenancePolicyParameters(value *LustreInstanceMaintenancePolicy) error {
+	return nil
+}
+
 func (l *jsiiProxy_LustreInstance) validatePutTimeoutsParameters(value *LustreInstanceTimeouts) error {
 	return nil
 }
@@ -124,6 +136,10 @@ func (j *jsiiProxy_LustreInstance) validateSetInstanceIdParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_LustreInstance) validateSetKmsKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LustreInstance) validateSetLabelsParameters(val *map[string]*string) error {
 	return nil
 }
@@ -137,6 +153,14 @@ func (j *jsiiProxy_LustreInstance) validateSetLocationParameters(val *string) er
 }
 
 func (j *jsiiProxy_LustreInstance) validateSetNetworkParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LustreInstance) validateSetPerUnitStorageThroughputParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LustreInstance) validateSetPlacementPolicyParameters(val *string) error {
 	return nil
 }
 

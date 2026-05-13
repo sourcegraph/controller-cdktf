@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindin
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigOutputReference) validatePutStoragePathParameters(value *GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigStoragePath) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigOutputReference) validatePutTableParameters(value *GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigTable) error {
 	return nil
 }

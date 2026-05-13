@@ -204,6 +204,17 @@ func (g *jsiiProxy_GoogleStorageBucketObject) validateOverrideLogicalIdParameter
 	return nil
 }
 
+func (g *jsiiProxy_GoogleStorageBucketObject) validatePutContextsParameters(value *GoogleStorageBucketObjectContexts) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleStorageBucketObject) validatePutCustomerEncryptionParameters(value *GoogleStorageBucketObjectCustomerEncryption) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -423,6 +434,14 @@ func (j *jsiiProxy_GoogleStorageBucketObject) validateSetCountParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_GoogleStorageBucketObject) validateSetDeletionPolicyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleStorageBucketObject) validateSetDetectMd5HashParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -432,6 +451,26 @@ func (j *jsiiProxy_GoogleStorageBucketObject) validateSetDetectMd5HashParameters
 }
 
 func (j *jsiiProxy_GoogleStorageBucketObject) validateSetEventBasedHoldParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleStorageBucketObject) validateSetForceEmptyContentTypeParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -538,6 +577,14 @@ func (j *jsiiProxy_GoogleStorageBucketObject) validateSetProvisionersParameters(
 }
 
 func (j *jsiiProxy_GoogleStorageBucketObject) validateSetSourceParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleStorageBucketObject) validateSetSourceMd5HashParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

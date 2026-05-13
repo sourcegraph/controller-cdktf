@@ -251,6 +251,14 @@ func (j *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigOutputReference) 
 	return nil
 }
 
+func (j *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigOutputReference) validateSetResourceManagerTagsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigOutputReference) validateSetServiceAccountParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/geminigeminigcpenablementsetting/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/gemini_gemini_gcp_enablement_setting google_gemini_gemini_gcp_enablement_setting}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/gemini_gemini_gcp_enablement_setting google_gemini_gemini_gcp_enablement_setting}.
 type GeminiGeminiGcpEnablementSetting interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -29,6 +29,9 @@ type GeminiGeminiGcpEnablementSetting interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DisableWebGrounding() interface{}
+	SetDisableWebGrounding(val interface{})
+	DisableWebGroundingInput() interface{}
 	EffectiveLabels() cdktf.StringMap
 	EnableCustomerDataSharing() interface{}
 	SetEnableCustomerDataSharing(val interface{})
@@ -83,6 +86,9 @@ type GeminiGeminiGcpEnablementSetting interface {
 	Timeouts() GeminiGeminiGcpEnablementSettingTimeoutsOutputReference
 	TimeoutsInput() interface{}
 	UpdateTime() *string
+	WebGroundingType() *string
+	SetWebGroundingType(val *string)
+	WebGroundingTypeInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -127,6 +133,7 @@ type GeminiGeminiGcpEnablementSetting interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *GeminiGeminiGcpEnablementSettingTimeouts)
+	ResetDisableWebGrounding()
 	ResetEnableCustomerDataSharing()
 	ResetId()
 	ResetLabels()
@@ -135,6 +142,7 @@ type GeminiGeminiGcpEnablementSetting interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
+	ResetWebGroundingType()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -208,6 +216,26 @@ func (j *jsiiProxy_GeminiGeminiGcpEnablementSetting) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GeminiGeminiGcpEnablementSetting) DisableWebGrounding() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableWebGrounding",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GeminiGeminiGcpEnablementSetting) DisableWebGroundingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableWebGroundingInput",
 		&returns,
 	)
 	return returns
@@ -503,8 +531,28 @@ func (j *jsiiProxy_GeminiGeminiGcpEnablementSetting) UpdateTime() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GeminiGeminiGcpEnablementSetting) WebGroundingType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"webGroundingType",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/gemini_gemini_gcp_enablement_setting google_gemini_gemini_gcp_enablement_setting} Resource.
+func (j *jsiiProxy_GeminiGeminiGcpEnablementSetting) WebGroundingTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"webGroundingTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/gemini_gemini_gcp_enablement_setting google_gemini_gemini_gcp_enablement_setting} Resource.
 func NewGeminiGeminiGcpEnablementSetting(scope constructs.Construct, id *string, config *GeminiGeminiGcpEnablementSettingConfig) GeminiGeminiGcpEnablementSetting {
 	_init_.Initialize()
 
@@ -522,7 +570,7 @@ func NewGeminiGeminiGcpEnablementSetting(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/gemini_gemini_gcp_enablement_setting google_gemini_gemini_gcp_enablement_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/gemini_gemini_gcp_enablement_setting google_gemini_gemini_gcp_enablement_setting} Resource.
 func NewGeminiGeminiGcpEnablementSetting_Override(g GeminiGeminiGcpEnablementSetting, scope constructs.Construct, id *string, config *GeminiGeminiGcpEnablementSettingConfig) {
 	_init_.Initialize()
 
@@ -559,6 +607,17 @@ func (j *jsiiProxy_GeminiGeminiGcpEnablementSetting)SetDependsOn(val *[]*string)
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GeminiGeminiGcpEnablementSetting)SetDisableWebGrounding(val interface{}) {
+	if err := j.validateSetDisableWebGroundingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableWebGrounding",
 		val,
 	)
 }
@@ -663,6 +722,17 @@ func (j *jsiiProxy_GeminiGeminiGcpEnablementSetting)SetProvisioners(val *[]inter
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GeminiGeminiGcpEnablementSetting)SetWebGroundingType(val *string) {
+	if err := j.validateSetWebGroundingTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"webGroundingType",
 		val,
 	)
 }
@@ -1031,6 +1101,14 @@ func (g *jsiiProxy_GeminiGeminiGcpEnablementSetting) PutTimeouts(value *GeminiGe
 	)
 }
 
+func (g *jsiiProxy_GeminiGeminiGcpEnablementSetting) ResetDisableWebGrounding() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDisableWebGrounding",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GeminiGeminiGcpEnablementSetting) ResetEnableCustomerDataSharing() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1075,6 +1153,14 @@ func (g *jsiiProxy_GeminiGeminiGcpEnablementSetting) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GeminiGeminiGcpEnablementSetting) ResetWebGroundingType() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetWebGroundingType",
 		nil, // no parameters
 	)
 }

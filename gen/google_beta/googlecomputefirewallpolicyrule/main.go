@@ -62,6 +62,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putMatch", GoMethod: "PutMatch"},
+			_jsii_.MemberMethod{JsiiMethod: "putTargetSecureTags", GoMethod: "PutTargetSecureTags"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
@@ -71,6 +72,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSecurityProfileGroup", GoMethod: "ResetSecurityProfileGroup"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTargetResources", GoMethod: "ResetTargetResources"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTargetSecureTags", GoMethod: "ResetTargetSecureTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTargetServiceAccounts", GoMethod: "ResetTargetServiceAccounts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTlsInspect", GoMethod: "ResetTlsInspect"},
@@ -81,6 +83,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeHclAttributes", GoMethod: "SynthesizeHclAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "targetResources", GoGetter: "TargetResources"},
 			_jsii_.MemberProperty{JsiiProperty: "targetResourcesInput", GoGetter: "TargetResourcesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "targetSecureTags", GoGetter: "TargetSecureTags"},
+			_jsii_.MemberProperty{JsiiProperty: "targetSecureTagsInput", GoGetter: "TargetSecureTagsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "targetServiceAccounts", GoGetter: "TargetServiceAccounts"},
 			_jsii_.MemberProperty{JsiiProperty: "targetServiceAccountsInput", GoGetter: "TargetServiceAccountsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
@@ -186,6 +190,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "destFqdnsInput", GoGetter: "DestFqdnsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "destIpRanges", GoGetter: "DestIpRanges"},
 			_jsii_.MemberProperty{JsiiProperty: "destIpRangesInput", GoGetter: "DestIpRangesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "destNetworkContext", GoGetter: "DestNetworkContext"},
+			_jsii_.MemberProperty{JsiiProperty: "destNetworkContextInput", GoGetter: "DestNetworkContextInput"},
 			_jsii_.MemberProperty{JsiiProperty: "destNetworkScope", GoGetter: "DestNetworkScope"},
 			_jsii_.MemberProperty{JsiiProperty: "destNetworkScopeInput", GoGetter: "DestNetworkScopeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "destRegionCodes", GoGetter: "DestRegionCodes"},
@@ -208,18 +214,22 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "layer4Configs", GoGetter: "Layer4Configs"},
 			_jsii_.MemberProperty{JsiiProperty: "layer4ConfigsInput", GoGetter: "Layer4ConfigsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putLayer4Configs", GoMethod: "PutLayer4Configs"},
+			_jsii_.MemberMethod{JsiiMethod: "putSrcSecureTags", GoMethod: "PutSrcSecureTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDestAddressGroups", GoMethod: "ResetDestAddressGroups"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDestFqdns", GoMethod: "ResetDestFqdns"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDestIpRanges", GoMethod: "ResetDestIpRanges"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDestNetworkContext", GoMethod: "ResetDestNetworkContext"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDestNetworkScope", GoMethod: "ResetDestNetworkScope"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDestRegionCodes", GoMethod: "ResetDestRegionCodes"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDestThreatIntelligences", GoMethod: "ResetDestThreatIntelligences"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSrcAddressGroups", GoMethod: "ResetSrcAddressGroups"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSrcFqdns", GoMethod: "ResetSrcFqdns"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSrcIpRanges", GoMethod: "ResetSrcIpRanges"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSrcNetworkContext", GoMethod: "ResetSrcNetworkContext"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSrcNetworks", GoMethod: "ResetSrcNetworks"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSrcNetworkScope", GoMethod: "ResetSrcNetworkScope"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSrcRegionCodes", GoMethod: "ResetSrcRegionCodes"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSrcSecureTags", GoMethod: "ResetSrcSecureTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSrcThreatIntelligences", GoMethod: "ResetSrcThreatIntelligences"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "srcAddressGroups", GoGetter: "SrcAddressGroups"},
@@ -228,12 +238,16 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "srcFqdnsInput", GoGetter: "SrcFqdnsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "srcIpRanges", GoGetter: "SrcIpRanges"},
 			_jsii_.MemberProperty{JsiiProperty: "srcIpRangesInput", GoGetter: "SrcIpRangesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "srcNetworkContext", GoGetter: "SrcNetworkContext"},
+			_jsii_.MemberProperty{JsiiProperty: "srcNetworkContextInput", GoGetter: "SrcNetworkContextInput"},
 			_jsii_.MemberProperty{JsiiProperty: "srcNetworks", GoGetter: "SrcNetworks"},
 			_jsii_.MemberProperty{JsiiProperty: "srcNetworkScope", GoGetter: "SrcNetworkScope"},
 			_jsii_.MemberProperty{JsiiProperty: "srcNetworkScopeInput", GoGetter: "SrcNetworkScopeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "srcNetworksInput", GoGetter: "SrcNetworksInput"},
 			_jsii_.MemberProperty{JsiiProperty: "srcRegionCodes", GoGetter: "SrcRegionCodes"},
 			_jsii_.MemberProperty{JsiiProperty: "srcRegionCodesInput", GoGetter: "SrcRegionCodesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "srcSecureTags", GoGetter: "SrcSecureTags"},
+			_jsii_.MemberProperty{JsiiProperty: "srcSecureTagsInput", GoGetter: "SrcSecureTagsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "srcThreatIntelligences", GoGetter: "SrcThreatIntelligences"},
 			_jsii_.MemberProperty{JsiiProperty: "srcThreatIntelligencesInput", GoGetter: "SrcThreatIntelligencesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
@@ -242,6 +256,130 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google-beta.googleComputeFirewallPolicyRule.GoogleComputeFirewallPolicyRuleMatchSrcSecureTags",
+		reflect.TypeOf((*GoogleComputeFirewallPolicyRuleMatchSrcSecureTags)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google-beta.googleComputeFirewallPolicyRule.GoogleComputeFirewallPolicyRuleMatchSrcSecureTagsList",
+		reflect.TypeOf((*GoogleComputeFirewallPolicyRuleMatchSrcSecureTagsList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleComputeFirewallPolicyRuleMatchSrcSecureTagsList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google-beta.googleComputeFirewallPolicyRule.GoogleComputeFirewallPolicyRuleMatchSrcSecureTagsOutputReference",
+		reflect.TypeOf((*GoogleComputeFirewallPolicyRuleMatchSrcSecureTagsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
+			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetName", GoMethod: "ResetName"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "state", GoGetter: "State"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleComputeFirewallPolicyRuleMatchSrcSecureTagsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google-beta.googleComputeFirewallPolicyRule.GoogleComputeFirewallPolicyRuleTargetSecureTags",
+		reflect.TypeOf((*GoogleComputeFirewallPolicyRuleTargetSecureTags)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google-beta.googleComputeFirewallPolicyRule.GoogleComputeFirewallPolicyRuleTargetSecureTagsList",
+		reflect.TypeOf((*GoogleComputeFirewallPolicyRuleTargetSecureTagsList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleComputeFirewallPolicyRuleTargetSecureTagsList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google-beta.googleComputeFirewallPolicyRule.GoogleComputeFirewallPolicyRuleTargetSecureTagsOutputReference",
+		reflect.TypeOf((*GoogleComputeFirewallPolicyRuleTargetSecureTagsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
+			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetName", GoMethod: "ResetName"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "state", GoGetter: "State"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleComputeFirewallPolicyRuleTargetSecureTagsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

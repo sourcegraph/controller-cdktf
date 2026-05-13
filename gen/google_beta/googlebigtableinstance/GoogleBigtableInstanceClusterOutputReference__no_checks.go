@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleBigtableInstanceClusterOutputReference) validateSetKmsK
 	return nil
 }
 
+func (j *jsiiProxy_GoogleBigtableInstanceClusterOutputReference) validateSetNodeScalingFactorParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBigtableInstanceClusterOutputReference) validateSetNumNodesParameters(val *float64) error {
 	return nil
 }

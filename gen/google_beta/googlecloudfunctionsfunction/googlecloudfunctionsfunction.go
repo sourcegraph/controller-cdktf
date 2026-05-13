@@ -9,9 +9,11 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecloudfunctionsfunction/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_cloudfunctions_function google_cloudfunctions_function}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_cloudfunctions_function google_cloudfunctions_function}.
 type GoogleCloudfunctionsFunction interface {
 	cdktf.TerraformResource
+	AutomaticUpdatePolicy() GoogleCloudfunctionsFunctionAutomaticUpdatePolicyOutputReference
+	AutomaticUpdatePolicyInput() *GoogleCloudfunctionsFunctionAutomaticUpdatePolicy
 	AvailableMemoryMb() *float64
 	SetAvailableMemoryMb(val *float64)
 	AvailableMemoryMbInput() *float64
@@ -99,6 +101,8 @@ type GoogleCloudfunctionsFunction interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	OnDeployUpdatePolicy() GoogleCloudfunctionsFunctionOnDeployUpdatePolicyOutputReference
+	OnDeployUpdatePolicyInput() *GoogleCloudfunctionsFunctionOnDeployUpdatePolicy
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -199,11 +203,14 @@ type GoogleCloudfunctionsFunction interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAutomaticUpdatePolicy(value *GoogleCloudfunctionsFunctionAutomaticUpdatePolicy)
 	PutEventTrigger(value *GoogleCloudfunctionsFunctionEventTrigger)
+	PutOnDeployUpdatePolicy(value *GoogleCloudfunctionsFunctionOnDeployUpdatePolicy)
 	PutSecretEnvironmentVariables(value interface{})
 	PutSecretVolumes(value interface{})
 	PutSourceRepository(value *GoogleCloudfunctionsFunctionSourceRepository)
 	PutTimeouts(value *GoogleCloudfunctionsFunctionTimeouts)
+	ResetAutomaticUpdatePolicy()
 	ResetAvailableMemoryMb()
 	ResetBuildEnvironmentVariables()
 	ResetBuildServiceAccount()
@@ -222,6 +229,7 @@ type GoogleCloudfunctionsFunction interface {
 	ResetLabels()
 	ResetMaxInstances()
 	ResetMinInstances()
+	ResetOnDeployUpdatePolicy()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -254,6 +262,26 @@ type GoogleCloudfunctionsFunction interface {
 // The jsii proxy struct for GoogleCloudfunctionsFunction
 type jsiiProxy_GoogleCloudfunctionsFunction struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GoogleCloudfunctionsFunction) AutomaticUpdatePolicy() GoogleCloudfunctionsFunctionAutomaticUpdatePolicyOutputReference {
+	var returns GoogleCloudfunctionsFunctionAutomaticUpdatePolicyOutputReference
+	_jsii_.Get(
+		j,
+		"automaticUpdatePolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudfunctionsFunction) AutomaticUpdatePolicyInput() *GoogleCloudfunctionsFunctionAutomaticUpdatePolicy {
+	var returns *GoogleCloudfunctionsFunctionAutomaticUpdatePolicy
+	_jsii_.Get(
+		j,
+		"automaticUpdatePolicyInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleCloudfunctionsFunction) AvailableMemoryMb() *float64 {
@@ -746,6 +774,26 @@ func (j *jsiiProxy_GoogleCloudfunctionsFunction) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleCloudfunctionsFunction) OnDeployUpdatePolicy() GoogleCloudfunctionsFunctionOnDeployUpdatePolicyOutputReference {
+	var returns GoogleCloudfunctionsFunctionOnDeployUpdatePolicyOutputReference
+	_jsii_.Get(
+		j,
+		"onDeployUpdatePolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudfunctionsFunction) OnDeployUpdatePolicyInput() *GoogleCloudfunctionsFunctionOnDeployUpdatePolicy {
+	var returns *GoogleCloudfunctionsFunctionOnDeployUpdatePolicy
+	_jsii_.Get(
+		j,
+		"onDeployUpdatePolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleCloudfunctionsFunction) Project() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1117,7 +1165,7 @@ func (j *jsiiProxy_GoogleCloudfunctionsFunction) VpcConnectorInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_cloudfunctions_function google_cloudfunctions_function} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_cloudfunctions_function google_cloudfunctions_function} Resource.
 func NewGoogleCloudfunctionsFunction(scope constructs.Construct, id *string, config *GoogleCloudfunctionsFunctionConfig) GoogleCloudfunctionsFunction {
 	_init_.Initialize()
 
@@ -1135,7 +1183,7 @@ func NewGoogleCloudfunctionsFunction(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_cloudfunctions_function google_cloudfunctions_function} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_cloudfunctions_function google_cloudfunctions_function} Resource.
 func NewGoogleCloudfunctionsFunction_Override(g GoogleCloudfunctionsFunction, scope constructs.Construct, id *string, config *GoogleCloudfunctionsFunctionConfig) {
 	_init_.Initialize()
 
@@ -1875,6 +1923,17 @@ func (g *jsiiProxy_GoogleCloudfunctionsFunction) OverrideLogicalId(newLogicalId 
 	)
 }
 
+func (g *jsiiProxy_GoogleCloudfunctionsFunction) PutAutomaticUpdatePolicy(value *GoogleCloudfunctionsFunctionAutomaticUpdatePolicy) {
+	if err := g.validatePutAutomaticUpdatePolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAutomaticUpdatePolicy",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleCloudfunctionsFunction) PutEventTrigger(value *GoogleCloudfunctionsFunctionEventTrigger) {
 	if err := g.validatePutEventTriggerParameters(value); err != nil {
 		panic(err)
@@ -1882,6 +1941,17 @@ func (g *jsiiProxy_GoogleCloudfunctionsFunction) PutEventTrigger(value *GoogleCl
 	_jsii_.InvokeVoid(
 		g,
 		"putEventTrigger",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudfunctionsFunction) PutOnDeployUpdatePolicy(value *GoogleCloudfunctionsFunctionOnDeployUpdatePolicy) {
+	if err := g.validatePutOnDeployUpdatePolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putOnDeployUpdatePolicy",
 		[]interface{}{value},
 	)
 }
@@ -1927,6 +1997,14 @@ func (g *jsiiProxy_GoogleCloudfunctionsFunction) PutTimeouts(value *GoogleCloudf
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudfunctionsFunction) ResetAutomaticUpdatePolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAutomaticUpdatePolicy",
+		nil, // no parameters
 	)
 }
 
@@ -2070,6 +2148,14 @@ func (g *jsiiProxy_GoogleCloudfunctionsFunction) ResetMinInstances() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetMinInstances",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudfunctionsFunction) ResetOnDeployUpdatePolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetOnDeployUpdatePolicy",
 		nil, // no parameters
 	)
 }

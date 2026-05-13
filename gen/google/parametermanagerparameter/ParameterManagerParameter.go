@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/parametermanagerparameter/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/parameter_manager_parameter google_parameter_manager_parameter}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/parameter_manager_parameter google_parameter_manager_parameter}.
 type ParameterManagerParameter interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -516,7 +516,7 @@ func (j *jsiiProxy_ParameterManagerParameter) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/parameter_manager_parameter google_parameter_manager_parameter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/parameter_manager_parameter google_parameter_manager_parameter} Resource.
 func NewParameterManagerParameter(scope constructs.Construct, id *string, config *ParameterManagerParameterConfig) ParameterManagerParameter {
 	_init_.Initialize()
 
@@ -534,7 +534,7 @@ func NewParameterManagerParameter(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/parameter_manager_parameter google_parameter_manager_parameter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/parameter_manager_parameter google_parameter_manager_parameter} Resource.
 func NewParameterManagerParameter_Override(p ParameterManagerParameter, scope constructs.Construct, id *string, config *ParameterManagerParameterConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/healthcarefhirstore/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/healthcare_fhir_store google_healthcare_fhir_store}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store google_healthcare_fhir_store}.
 type HealthcareFhirStore interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -99,6 +99,8 @@ type HealthcareFhirStore interface {
 	TerraformResourceType() *string
 	Timeouts() HealthcareFhirStoreTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	ValidationConfig() HealthcareFhirStoreValidationConfigOutputReference
+	ValidationConfigInput() *HealthcareFhirStoreValidationConfig
 	Version() *string
 	SetVersion(val *string)
 	VersionInput() *string
@@ -149,6 +151,7 @@ type HealthcareFhirStore interface {
 	PutNotificationConfigs(value interface{})
 	PutStreamConfigs(value interface{})
 	PutTimeouts(value *HealthcareFhirStoreTimeouts)
+	PutValidationConfig(value *HealthcareFhirStoreValidationConfig)
 	ResetComplexDataTypeReferenceParsing()
 	ResetDefaultSearchHandlingStrict()
 	ResetDisableReferentialIntegrity()
@@ -164,6 +167,7 @@ type HealthcareFhirStore interface {
 	ResetOverrideLogicalId()
 	ResetStreamConfigs()
 	ResetTimeouts()
+	ResetValidationConfig()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -652,6 +656,26 @@ func (j *jsiiProxy_HealthcareFhirStore) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_HealthcareFhirStore) ValidationConfig() HealthcareFhirStoreValidationConfigOutputReference {
+	var returns HealthcareFhirStoreValidationConfigOutputReference
+	_jsii_.Get(
+		j,
+		"validationConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HealthcareFhirStore) ValidationConfigInput() *HealthcareFhirStoreValidationConfig {
+	var returns *HealthcareFhirStoreValidationConfig
+	_jsii_.Get(
+		j,
+		"validationConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_HealthcareFhirStore) Version() *string {
 	var returns *string
 	_jsii_.Get(
@@ -673,7 +697,7 @@ func (j *jsiiProxy_HealthcareFhirStore) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/healthcare_fhir_store google_healthcare_fhir_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store google_healthcare_fhir_store} Resource.
 func NewHealthcareFhirStore(scope constructs.Construct, id *string, config *HealthcareFhirStoreConfig) HealthcareFhirStore {
 	_init_.Initialize()
 
@@ -691,7 +715,7 @@ func NewHealthcareFhirStore(scope constructs.Construct, id *string, config *Heal
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/healthcare_fhir_store google_healthcare_fhir_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store google_healthcare_fhir_store} Resource.
 func NewHealthcareFhirStore_Override(h HealthcareFhirStore, scope constructs.Construct, id *string, config *HealthcareFhirStoreConfig) {
 	_init_.Initialize()
 
@@ -1288,6 +1312,17 @@ func (h *jsiiProxy_HealthcareFhirStore) PutTimeouts(value *HealthcareFhirStoreTi
 	)
 }
 
+func (h *jsiiProxy_HealthcareFhirStore) PutValidationConfig(value *HealthcareFhirStoreValidationConfig) {
+	if err := h.validatePutValidationConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		h,
+		"putValidationConfig",
+		[]interface{}{value},
+	)
+}
+
 func (h *jsiiProxy_HealthcareFhirStore) ResetComplexDataTypeReferenceParsing() {
 	_jsii_.InvokeVoid(
 		h,
@@ -1388,6 +1423,14 @@ func (h *jsiiProxy_HealthcareFhirStore) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		h,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (h *jsiiProxy_HealthcareFhirStore) ResetValidationConfig() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetValidationConfig",
 		nil, // no parameters
 	)
 }

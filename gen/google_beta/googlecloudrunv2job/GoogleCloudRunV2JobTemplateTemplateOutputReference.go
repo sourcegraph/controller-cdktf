@@ -35,11 +35,16 @@ type GoogleCloudRunV2JobTemplateTemplateOutputReference interface {
 	ExecutionEnvironmentInput() *string
 	// Experimental.
 	Fqn() *string
+	GpuZonalRedundancyDisabled() interface{}
+	SetGpuZonalRedundancyDisabled(val interface{})
+	GpuZonalRedundancyDisabledInput() interface{}
 	InternalValue() *GoogleCloudRunV2JobTemplateTemplate
 	SetInternalValue(val *GoogleCloudRunV2JobTemplateTemplate)
 	MaxRetries() *float64
 	SetMaxRetries(val *float64)
 	MaxRetriesInput() *float64
+	NodeSelector() GoogleCloudRunV2JobTemplateTemplateNodeSelectorOutputReference
+	NodeSelectorInput() *GoogleCloudRunV2JobTemplateTemplateNodeSelector
 	ServiceAccount() *string
 	SetServiceAccount(val *string)
 	ServiceAccountInput() *string
@@ -83,12 +88,15 @@ type GoogleCloudRunV2JobTemplateTemplateOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutContainers(value interface{})
+	PutNodeSelector(value *GoogleCloudRunV2JobTemplateTemplateNodeSelector)
 	PutVolumes(value interface{})
 	PutVpcAccess(value *GoogleCloudRunV2JobTemplateTemplateVpcAccess)
 	ResetContainers()
 	ResetEncryptionKey()
 	ResetExecutionEnvironment()
+	ResetGpuZonalRedundancyDisabled()
 	ResetMaxRetries()
+	ResetNodeSelector()
 	ResetServiceAccount()
 	ResetTimeout()
 	ResetVolumes()
@@ -208,6 +216,26 @@ func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateOutputReference) Fqn() *st
 	return returns
 }
 
+func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateOutputReference) GpuZonalRedundancyDisabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"gpuZonalRedundancyDisabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateOutputReference) GpuZonalRedundancyDisabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"gpuZonalRedundancyDisabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateOutputReference) InternalValue() *GoogleCloudRunV2JobTemplateTemplate {
 	var returns *GoogleCloudRunV2JobTemplateTemplate
 	_jsii_.Get(
@@ -233,6 +261,26 @@ func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateOutputReference) MaxRetrie
 	_jsii_.Get(
 		j,
 		"maxRetriesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateOutputReference) NodeSelector() GoogleCloudRunV2JobTemplateTemplateNodeSelectorOutputReference {
+	var returns GoogleCloudRunV2JobTemplateTemplateNodeSelectorOutputReference
+	_jsii_.Get(
+		j,
+		"nodeSelector",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateOutputReference) NodeSelectorInput() *GoogleCloudRunV2JobTemplateTemplateNodeSelector {
+	var returns *GoogleCloudRunV2JobTemplateTemplateNodeSelector
+	_jsii_.Get(
+		j,
+		"nodeSelectorInput",
 		&returns,
 	)
 	return returns
@@ -406,6 +454,17 @@ func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateOutputReference)SetExecuti
 	_jsii_.Set(
 		j,
 		"executionEnvironment",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateOutputReference)SetGpuZonalRedundancyDisabled(val interface{}) {
+	if err := j.validateSetGpuZonalRedundancyDisabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"gpuZonalRedundancyDisabled",
 		val,
 	)
 }
@@ -673,6 +732,17 @@ func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateOutputReference) PutContai
 	)
 }
 
+func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateOutputReference) PutNodeSelector(value *GoogleCloudRunV2JobTemplateTemplateNodeSelector) {
+	if err := g.validatePutNodeSelectorParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putNodeSelector",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateOutputReference) PutVolumes(value interface{}) {
 	if err := g.validatePutVolumesParameters(value); err != nil {
 		panic(err)
@@ -719,10 +789,26 @@ func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateOutputReference) ResetExec
 	)
 }
 
+func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateOutputReference) ResetGpuZonalRedundancyDisabled() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetGpuZonalRedundancyDisabled",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateOutputReference) ResetMaxRetries() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetMaxRetries",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateOutputReference) ResetNodeSelector() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNodeSelector",
 		nil, // no parameters
 	)
 }

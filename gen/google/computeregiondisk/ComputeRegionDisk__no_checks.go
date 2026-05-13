@@ -108,6 +108,10 @@ func validateComputeRegionDisk_IsTerraformResourceParameters(x interface{}) erro
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRegionDisk) validateSetAccessModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRegionDisk) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -153,6 +157,14 @@ func (j *jsiiProxy_ComputeRegionDisk) validateSetPhysicalBlockSizeBytesParameter
 }
 
 func (j *jsiiProxy_ComputeRegionDisk) validateSetProjectParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeRegionDisk) validateSetProvisionedIopsParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeRegionDisk) validateSetProvisionedThroughputParameters(val *float64) error {
 	return nil
 }
 

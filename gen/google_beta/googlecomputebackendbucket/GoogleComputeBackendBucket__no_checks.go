@@ -76,6 +76,10 @@ func (g *jsiiProxy_GoogleComputeBackendBucket) validatePutCdnPolicyParameters(va
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeBackendBucket) validatePutParamsParameters(value *GoogleComputeBackendBucketParams) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeBackendBucket) validatePutTimeoutsParameters(value *GoogleComputeBackendBucketTimeouts) error {
 	return nil
 }
@@ -133,6 +137,10 @@ func (j *jsiiProxy_GoogleComputeBackendBucket) validateSetIdParameters(val *stri
 }
 
 func (j *jsiiProxy_GoogleComputeBackendBucket) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeBackendBucket) validateSetLoadBalancingSchemeParameters(val *string) error {
 	return nil
 }
 

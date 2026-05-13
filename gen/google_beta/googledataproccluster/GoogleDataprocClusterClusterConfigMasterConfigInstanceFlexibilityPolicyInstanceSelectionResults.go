@@ -1,0 +1,6 @@
+package googledataproccluster
+
+
+type GoogleDataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionResults struct {
+}
+

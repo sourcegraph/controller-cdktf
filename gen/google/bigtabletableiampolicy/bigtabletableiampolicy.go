@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/bigtabletableiampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/bigtable_table_iam_policy google_bigtable_table_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigtable_table_iam_policy google_bigtable_table_iam_policy}.
 type BigtableTableIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -40,9 +40,9 @@ type BigtableTableIamPolicy interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	Instance() *string
-	SetInstance(val *string)
-	InstanceInput() *string
+	InstanceName() *string
+	SetInstanceName(val *string)
+	InstanceNameInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -250,21 +250,21 @@ func (j *jsiiProxy_BigtableTableIamPolicy) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_BigtableTableIamPolicy) Instance() *string {
+func (j *jsiiProxy_BigtableTableIamPolicy) InstanceName() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"instance",
+		"instanceName",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_BigtableTableIamPolicy) InstanceInput() *string {
+func (j *jsiiProxy_BigtableTableIamPolicy) InstanceNameInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"instanceInput",
+		"instanceNameInput",
 		&returns,
 	)
 	return returns
@@ -411,7 +411,7 @@ func (j *jsiiProxy_BigtableTableIamPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/bigtable_table_iam_policy google_bigtable_table_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigtable_table_iam_policy google_bigtable_table_iam_policy} Resource.
 func NewBigtableTableIamPolicy(scope constructs.Construct, id *string, config *BigtableTableIamPolicyConfig) BigtableTableIamPolicy {
 	_init_.Initialize()
 
@@ -429,7 +429,7 @@ func NewBigtableTableIamPolicy(scope constructs.Construct, id *string, config *B
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/bigtable_table_iam_policy google_bigtable_table_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigtable_table_iam_policy google_bigtable_table_iam_policy} Resource.
 func NewBigtableTableIamPolicy_Override(b BigtableTableIamPolicy, scope constructs.Construct, id *string, config *BigtableTableIamPolicyConfig) {
 	_init_.Initialize()
 
@@ -489,13 +489,13 @@ func (j *jsiiProxy_BigtableTableIamPolicy)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigtableTableIamPolicy)SetInstance(val *string) {
-	if err := j.validateSetInstanceParameters(val); err != nil {
+func (j *jsiiProxy_BigtableTableIamPolicy)SetInstanceName(val *string) {
+	if err := j.validateSetInstanceNameParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"instance",
+		"instanceName",
 		val,
 	)
 }

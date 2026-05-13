@@ -21,7 +21,7 @@ type GoogleFirestoreDatabaseConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The location of the database. Available locations are listed at https://cloud.google.com/firestore/docs/locations.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_firestore_database#location_id GoogleFirestoreDatabase#location_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_firestore_database#location_id GoogleFirestoreDatabase#location_id}
 	LocationId *string `field:"required" json:"locationId" yaml:"locationId"`
 	// The ID to use for the database, which will become the final component of the database's resource name.
 	//
@@ -31,27 +31,27 @@ type GoogleFirestoreDatabaseConfig struct {
 	// UUID-like /[0-9a-f]{8}(-[0-9a-f]{4}){3}-[0-9a-f]{12}/.
 	// "(default)" database id is also valid.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_firestore_database#name GoogleFirestoreDatabase#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_firestore_database#name GoogleFirestoreDatabase#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The type of the database. See https://cloud.google.com/datastore/docs/firestore-or-datastore for information about how to choose. Possible values: ["FIRESTORE_NATIVE", "DATASTORE_MODE"].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_firestore_database#type GoogleFirestoreDatabase#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_firestore_database#type GoogleFirestoreDatabase#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
 	// The App Engine integration mode to use for this database. Possible values: ["ENABLED", "DISABLED"].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_firestore_database#app_engine_integration_mode GoogleFirestoreDatabase#app_engine_integration_mode}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_firestore_database#app_engine_integration_mode GoogleFirestoreDatabase#app_engine_integration_mode}
 	AppEngineIntegrationMode *string `field:"optional" json:"appEngineIntegrationMode" yaml:"appEngineIntegrationMode"`
 	// cmek_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_firestore_database#cmek_config GoogleFirestoreDatabase#cmek_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_firestore_database#cmek_config GoogleFirestoreDatabase#cmek_config}
 	CmekConfig *GoogleFirestoreDatabaseCmekConfig `field:"optional" json:"cmekConfig" yaml:"cmekConfig"`
 	// The concurrency control mode to use for this database. Possible values: ["OPTIMISTIC", "PESSIMISTIC", "OPTIMISTIC_WITH_ENTITY_GROUPS"].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_firestore_database#concurrency_mode GoogleFirestoreDatabase#concurrency_mode}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_firestore_database#concurrency_mode GoogleFirestoreDatabase#concurrency_mode}
 	ConcurrencyMode *string `field:"optional" json:"concurrencyMode" yaml:"concurrencyMode"`
-	// The database edition. Possible values: ["STANDARD", "ENTERPRISE"].
+	// The database edition. When set to 'ENTERPRISE', then type must be set to 'FIRESTORE_NATIVE'. Possible values: ["STANDARD", "ENTERPRISE"].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_firestore_database#database_edition GoogleFirestoreDatabase#database_edition}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_firestore_database#database_edition GoogleFirestoreDatabase#database_edition}
 	DatabaseEdition *string `field:"optional" json:"databaseEdition" yaml:"databaseEdition"`
 	// State of delete protection for the database.
 	//
@@ -59,7 +59,7 @@ type GoogleFirestoreDatabaseConfig struct {
 	// The default value is 'DELETE_PROTECTION_STATE_UNSPECIFIED', which is currently equivalent to 'DELETE_PROTECTION_DISABLED'.
 	// **Note:** Additionally, to delete this database using 'terraform destroy', 'deletion_policy' must be set to 'DELETE'. Possible values: ["DELETE_PROTECTION_STATE_UNSPECIFIED", "DELETE_PROTECTION_ENABLED", "DELETE_PROTECTION_DISABLED"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_firestore_database#delete_protection_state GoogleFirestoreDatabase#delete_protection_state}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_firestore_database#delete_protection_state GoogleFirestoreDatabase#delete_protection_state}
 	DeleteProtectionState *string `field:"optional" json:"deleteProtectionState" yaml:"deleteProtectionState"`
 	// Deletion behavior for this database.
 	//
@@ -68,13 +68,27 @@ type GoogleFirestoreDatabaseConfig struct {
 	// The default value is 'ABANDON'.
 	// See also 'delete_protection'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_firestore_database#deletion_policy GoogleFirestoreDatabase#deletion_policy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_firestore_database#deletion_policy GoogleFirestoreDatabase#deletion_policy}
 	DeletionPolicy *string `field:"optional" json:"deletionPolicy" yaml:"deletionPolicy"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_firestore_database#id GoogleFirestoreDatabase#id}.
+	// The Firestore API data access mode to use for this database.
+	//
+	// Can only be
+	// specified for 'ENTERPRISE' edition databases. Possible values: ["DATA_ACCESS_MODE_ENABLED", "DATA_ACCESS_MODE_DISABLED"]
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_firestore_database#firestore_data_access_mode GoogleFirestoreDatabase#firestore_data_access_mode}
+	FirestoreDataAccessMode *string `field:"optional" json:"firestoreDataAccessMode" yaml:"firestoreDataAccessMode"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_firestore_database#id GoogleFirestoreDatabase#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
+	// The MongoDB compatible API data access mode to use for this database.
+	//
+	// Can
+	// only be specified for 'ENTERPRISE' edition databases. Possible values: ["DATA_ACCESS_MODE_ENABLED", "DATA_ACCESS_MODE_DISABLED"]
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_firestore_database#mongodb_compatible_data_access_mode GoogleFirestoreDatabase#mongodb_compatible_data_access_mode}
+	MongodbCompatibleDataAccessMode *string `field:"optional" json:"mongodbCompatibleDataAccessMode" yaml:"mongodbCompatibleDataAccessMode"`
 	// Whether to enable the PITR feature on this database.
 	//
 	// If 'POINT_IN_TIME_RECOVERY_ENABLED' is selected, reads are supported on selected versions of the data from within the past 7 days.
@@ -82,13 +96,31 @@ type GoogleFirestoreDatabaseConfig struct {
 	// and reads against 1-minute snapshots beyond 1 hour and within 7 days.
 	// If 'POINT_IN_TIME_RECOVERY_DISABLED' is selected, reads are supported on any version of the data from within the past 1 hour. Default value: "POINT_IN_TIME_RECOVERY_DISABLED" Possible values: ["POINT_IN_TIME_RECOVERY_ENABLED", "POINT_IN_TIME_RECOVERY_DISABLED"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_firestore_database#point_in_time_recovery_enablement GoogleFirestoreDatabase#point_in_time_recovery_enablement}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_firestore_database#point_in_time_recovery_enablement GoogleFirestoreDatabase#point_in_time_recovery_enablement}
 	PointInTimeRecoveryEnablement *string `field:"optional" json:"pointInTimeRecoveryEnablement" yaml:"pointInTimeRecoveryEnablement"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_firestore_database#project GoogleFirestoreDatabase#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_firestore_database#project GoogleFirestoreDatabase#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
+	// The Realtime Updates mode to use for this database.
+	//
+	// Can only be specified
+	// for 'ENTERPRISE' edition databases. Possible values: ["REALTIME_UPDATES_MODE_ENABLED", "REALTIME_UPDATES_MODE_DISABLED"]
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_firestore_database#realtime_updates_mode GoogleFirestoreDatabase#realtime_updates_mode}
+	RealtimeUpdatesMode *string `field:"optional" json:"realtimeUpdatesMode" yaml:"realtimeUpdatesMode"`
+	// Input only.
+	//
+	// A map of resource manager tags. Resource manager tag keys
+	// and values have the same definition as resource manager tags.
+	// Keys must be in the format tagKeys/{tag_key_id}, and values are in the format tagValues/456.
+	// The field is ignored when empty. The field is immutable and causes
+	// resource replacement when mutated. To apply tags to an existing resource, see
+	// the 'google_tags_tag_value' resource.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_firestore_database#tags GoogleFirestoreDatabase#tags}
+	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_firestore_database#timeouts GoogleFirestoreDatabase#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_firestore_database#timeouts GoogleFirestoreDatabase#timeouts}
 	Timeouts *GoogleFirestoreDatabaseTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

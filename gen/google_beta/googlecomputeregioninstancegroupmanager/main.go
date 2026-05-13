@@ -79,10 +79,12 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putInstanceLifecyclePolicy", GoMethod: "PutInstanceLifecyclePolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "putNamedPort", GoMethod: "PutNamedPort"},
 			_jsii_.MemberMethod{JsiiMethod: "putParams", GoMethod: "PutParams"},
+			_jsii_.MemberMethod{JsiiMethod: "putResourcePolicies", GoMethod: "PutResourcePolicies"},
 			_jsii_.MemberMethod{JsiiMethod: "putStandbyPolicy", GoMethod: "PutStandbyPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "putStatefulDisk", GoMethod: "PutStatefulDisk"},
 			_jsii_.MemberMethod{JsiiMethod: "putStatefulExternalIp", GoMethod: "PutStatefulExternalIp"},
 			_jsii_.MemberMethod{JsiiMethod: "putStatefulInternalIp", GoMethod: "PutStatefulInternalIp"},
+			_jsii_.MemberMethod{JsiiMethod: "putTargetSizePolicy", GoMethod: "PutTargetSizePolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "putUpdatePolicy", GoMethod: "PutUpdatePolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "putVersion", GoMethod: "PutVersion"},
@@ -103,18 +105,22 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetParams", GoMethod: "ResetParams"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProject", GoMethod: "ResetProject"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRegion", GoMethod: "ResetRegion"},
+			_jsii_.MemberMethod{JsiiMethod: "resetResourcePolicies", GoMethod: "ResetResourcePolicies"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStandbyPolicy", GoMethod: "ResetStandbyPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStatefulDisk", GoMethod: "ResetStatefulDisk"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStatefulExternalIp", GoMethod: "ResetStatefulExternalIp"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStatefulInternalIp", GoMethod: "ResetStatefulInternalIp"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTargetPools", GoMethod: "ResetTargetPools"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTargetSize", GoMethod: "ResetTargetSize"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTargetSizePolicy", GoMethod: "ResetTargetSizePolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTargetStoppedSize", GoMethod: "ResetTargetStoppedSize"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTargetSuspendedSize", GoMethod: "ResetTargetSuspendedSize"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUpdatePolicy", GoMethod: "ResetUpdatePolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWaitForInstances", GoMethod: "ResetWaitForInstances"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWaitForInstancesStatus", GoMethod: "ResetWaitForInstancesStatus"},
+			_jsii_.MemberProperty{JsiiProperty: "resourcePolicies", GoGetter: "ResourcePolicies"},
+			_jsii_.MemberProperty{JsiiProperty: "resourcePoliciesInput", GoGetter: "ResourcePoliciesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "selfLink", GoGetter: "SelfLink"},
 			_jsii_.MemberProperty{JsiiProperty: "standbyPolicy", GoGetter: "StandbyPolicy"},
 			_jsii_.MemberProperty{JsiiProperty: "standbyPolicyInput", GoGetter: "StandbyPolicyInput"},
@@ -131,6 +137,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "targetPoolsInput", GoGetter: "TargetPoolsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "targetSize", GoGetter: "TargetSize"},
 			_jsii_.MemberProperty{JsiiProperty: "targetSizeInput", GoGetter: "TargetSizeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "targetSizePolicy", GoGetter: "TargetSizePolicy"},
+			_jsii_.MemberProperty{JsiiProperty: "targetSizePolicyInput", GoGetter: "TargetSizePolicyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "targetStoppedSize", GoGetter: "TargetStoppedSize"},
 			_jsii_.MemberProperty{JsiiProperty: "targetStoppedSizeInput", GoGetter: "TargetStoppedSizeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "targetSuspendedSize", GoGetter: "TargetSuspendedSize"},
@@ -253,6 +261,403 @@ func init() {
 		"@cdktf/provider-google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyInstanceSelections",
 		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyInstanceSelections)(nil)).Elem(),
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyInstanceSelectionsDisks",
+		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyInstanceSelectionsDisks)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyInstanceSelectionsDisksDiskEncryptionKey",
+		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyInstanceSelectionsDisksDiskEncryptionKey)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyInstanceSelectionsDisksDiskEncryptionKeyOutputReference",
+		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyInstanceSelectionsDisksDiskEncryptionKeyOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "kmsKeySelfLink", GoGetter: "KmsKeySelfLink"},
+			_jsii_.MemberProperty{JsiiProperty: "kmsKeySelfLinkInput", GoGetter: "KmsKeySelfLinkInput"},
+			_jsii_.MemberProperty{JsiiProperty: "kmsKeyServiceAccount", GoGetter: "KmsKeyServiceAccount"},
+			_jsii_.MemberProperty{JsiiProperty: "kmsKeyServiceAccountInput", GoGetter: "KmsKeyServiceAccountInput"},
+			_jsii_.MemberProperty{JsiiProperty: "rawKey", GoGetter: "RawKey"},
+			_jsii_.MemberProperty{JsiiProperty: "rawKeyInput", GoGetter: "RawKeyInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetKmsKeySelfLink", GoMethod: "ResetKmsKeySelfLink"},
+			_jsii_.MemberMethod{JsiiMethod: "resetKmsKeyServiceAccount", GoMethod: "ResetKmsKeyServiceAccount"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRawKey", GoMethod: "ResetRawKey"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRsaEncryptedKey", GoMethod: "ResetRsaEncryptedKey"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "rsaEncryptedKey", GoGetter: "RsaEncryptedKey"},
+			_jsii_.MemberProperty{JsiiProperty: "rsaEncryptedKeyInput", GoGetter: "RsaEncryptedKeyInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyInstanceSelectionsDisksDiskEncryptionKeyOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyInstanceSelectionsDisksLabels",
+		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyInstanceSelectionsDisksLabels)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyInstanceSelectionsDisksLabelsList",
+		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyInstanceSelectionsDisksLabelsList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyInstanceSelectionsDisksLabelsList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyInstanceSelectionsDisksLabelsOutputReference",
+		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyInstanceSelectionsDisksLabelsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "key", GoGetter: "Key"},
+			_jsii_.MemberProperty{JsiiProperty: "keyInput", GoGetter: "KeyInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
+			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyInstanceSelectionsDisksLabelsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyInstanceSelectionsDisksList",
+		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyInstanceSelectionsDisksList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyInstanceSelectionsDisksList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyInstanceSelectionsDisksOutputReference",
+		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyInstanceSelectionsDisksOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "architecture", GoGetter: "Architecture"},
+			_jsii_.MemberProperty{JsiiProperty: "architectureInput", GoGetter: "ArchitectureInput"},
+			_jsii_.MemberProperty{JsiiProperty: "autoDelete", GoGetter: "AutoDelete"},
+			_jsii_.MemberProperty{JsiiProperty: "autoDeleteInput", GoGetter: "AutoDeleteInput"},
+			_jsii_.MemberProperty{JsiiProperty: "boot", GoGetter: "Boot"},
+			_jsii_.MemberProperty{JsiiProperty: "bootInput", GoGetter: "BootInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "deviceName", GoGetter: "DeviceName"},
+			_jsii_.MemberProperty{JsiiProperty: "deviceNameInput", GoGetter: "DeviceNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "diskEncryptionKey", GoGetter: "DiskEncryptionKey"},
+			_jsii_.MemberProperty{JsiiProperty: "diskEncryptionKeyInput", GoGetter: "DiskEncryptionKeyInput"},
+			_jsii_.MemberProperty{JsiiProperty: "diskName", GoGetter: "DiskName"},
+			_jsii_.MemberProperty{JsiiProperty: "diskNameInput", GoGetter: "DiskNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "diskSizeGb", GoGetter: "DiskSizeGb"},
+			_jsii_.MemberProperty{JsiiProperty: "diskSizeGbInput", GoGetter: "DiskSizeGbInput"},
+			_jsii_.MemberProperty{JsiiProperty: "diskType", GoGetter: "DiskType"},
+			_jsii_.MemberProperty{JsiiProperty: "diskTypeInput", GoGetter: "DiskTypeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "guestOsFeatures", GoGetter: "GuestOsFeatures"},
+			_jsii_.MemberProperty{JsiiProperty: "guestOsFeaturesInput", GoGetter: "GuestOsFeaturesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "interface", GoGetter: "Interface"},
+			_jsii_.MemberProperty{JsiiProperty: "interfaceInput", GoGetter: "InterfaceInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "labels", GoGetter: "Labels"},
+			_jsii_.MemberProperty{JsiiProperty: "labelsInput", GoGetter: "LabelsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "mode", GoGetter: "Mode"},
+			_jsii_.MemberProperty{JsiiProperty: "modeInput", GoGetter: "ModeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "provisionedIops", GoGetter: "ProvisionedIops"},
+			_jsii_.MemberProperty{JsiiProperty: "provisionedIopsInput", GoGetter: "ProvisionedIopsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "provisionedThroughput", GoGetter: "ProvisionedThroughput"},
+			_jsii_.MemberProperty{JsiiProperty: "provisionedThroughputInput", GoGetter: "ProvisionedThroughputInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putDiskEncryptionKey", GoMethod: "PutDiskEncryptionKey"},
+			_jsii_.MemberMethod{JsiiMethod: "putLabels", GoMethod: "PutLabels"},
+			_jsii_.MemberMethod{JsiiMethod: "putResourceManagerTags", GoMethod: "PutResourceManagerTags"},
+			_jsii_.MemberMethod{JsiiMethod: "putSourceImageEncryptionKey", GoMethod: "PutSourceImageEncryptionKey"},
+			_jsii_.MemberMethod{JsiiMethod: "putSourceSnapshotEncryptionKey", GoMethod: "PutSourceSnapshotEncryptionKey"},
+			_jsii_.MemberMethod{JsiiMethod: "resetArchitecture", GoMethod: "ResetArchitecture"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAutoDelete", GoMethod: "ResetAutoDelete"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBoot", GoMethod: "ResetBoot"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDeviceName", GoMethod: "ResetDeviceName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDiskEncryptionKey", GoMethod: "ResetDiskEncryptionKey"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDiskName", GoMethod: "ResetDiskName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDiskSizeGb", GoMethod: "ResetDiskSizeGb"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDiskType", GoMethod: "ResetDiskType"},
+			_jsii_.MemberMethod{JsiiMethod: "resetGuestOsFeatures", GoMethod: "ResetGuestOsFeatures"},
+			_jsii_.MemberMethod{JsiiMethod: "resetInterface", GoMethod: "ResetInterface"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLabels", GoMethod: "ResetLabels"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMode", GoMethod: "ResetMode"},
+			_jsii_.MemberMethod{JsiiMethod: "resetProvisionedIops", GoMethod: "ResetProvisionedIops"},
+			_jsii_.MemberMethod{JsiiMethod: "resetProvisionedThroughput", GoMethod: "ResetProvisionedThroughput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetResourceManagerTags", GoMethod: "ResetResourceManagerTags"},
+			_jsii_.MemberMethod{JsiiMethod: "resetResourcePolicies", GoMethod: "ResetResourcePolicies"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSource", GoMethod: "ResetSource"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSourceImage", GoMethod: "ResetSourceImage"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSourceImageEncryptionKey", GoMethod: "ResetSourceImageEncryptionKey"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSourceSnapshot", GoMethod: "ResetSourceSnapshot"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSourceSnapshotEncryptionKey", GoMethod: "ResetSourceSnapshotEncryptionKey"},
+			_jsii_.MemberMethod{JsiiMethod: "resetType", GoMethod: "ResetType"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "resourceManagerTags", GoGetter: "ResourceManagerTags"},
+			_jsii_.MemberProperty{JsiiProperty: "resourceManagerTagsInput", GoGetter: "ResourceManagerTagsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "resourcePolicies", GoGetter: "ResourcePolicies"},
+			_jsii_.MemberProperty{JsiiProperty: "resourcePoliciesInput", GoGetter: "ResourcePoliciesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "source", GoGetter: "Source"},
+			_jsii_.MemberProperty{JsiiProperty: "sourceImage", GoGetter: "SourceImage"},
+			_jsii_.MemberProperty{JsiiProperty: "sourceImageEncryptionKey", GoGetter: "SourceImageEncryptionKey"},
+			_jsii_.MemberProperty{JsiiProperty: "sourceImageEncryptionKeyInput", GoGetter: "SourceImageEncryptionKeyInput"},
+			_jsii_.MemberProperty{JsiiProperty: "sourceImageInput", GoGetter: "SourceImageInput"},
+			_jsii_.MemberProperty{JsiiProperty: "sourceInput", GoGetter: "SourceInput"},
+			_jsii_.MemberProperty{JsiiProperty: "sourceSnapshot", GoGetter: "SourceSnapshot"},
+			_jsii_.MemberProperty{JsiiProperty: "sourceSnapshotEncryptionKey", GoGetter: "SourceSnapshotEncryptionKey"},
+			_jsii_.MemberProperty{JsiiProperty: "sourceSnapshotEncryptionKeyInput", GoGetter: "SourceSnapshotEncryptionKeyInput"},
+			_jsii_.MemberProperty{JsiiProperty: "sourceSnapshotInput", GoGetter: "SourceSnapshotInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
+			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyInstanceSelectionsDisksOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyInstanceSelectionsDisksResourceManagerTags",
+		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyInstanceSelectionsDisksResourceManagerTags)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyInstanceSelectionsDisksResourceManagerTagsList",
+		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyInstanceSelectionsDisksResourceManagerTagsList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyInstanceSelectionsDisksResourceManagerTagsList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyInstanceSelectionsDisksResourceManagerTagsOutputReference",
+		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyInstanceSelectionsDisksResourceManagerTagsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "key", GoGetter: "Key"},
+			_jsii_.MemberProperty{JsiiProperty: "keyInput", GoGetter: "KeyInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
+			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyInstanceSelectionsDisksResourceManagerTagsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyInstanceSelectionsDisksSourceImageEncryptionKey",
+		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyInstanceSelectionsDisksSourceImageEncryptionKey)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyInstanceSelectionsDisksSourceImageEncryptionKeyOutputReference",
+		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyInstanceSelectionsDisksSourceImageEncryptionKeyOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "kmsKeySelfLink", GoGetter: "KmsKeySelfLink"},
+			_jsii_.MemberProperty{JsiiProperty: "kmsKeySelfLinkInput", GoGetter: "KmsKeySelfLinkInput"},
+			_jsii_.MemberProperty{JsiiProperty: "kmsKeyServiceAccount", GoGetter: "KmsKeyServiceAccount"},
+			_jsii_.MemberProperty{JsiiProperty: "kmsKeyServiceAccountInput", GoGetter: "KmsKeyServiceAccountInput"},
+			_jsii_.MemberProperty{JsiiProperty: "rawKey", GoGetter: "RawKey"},
+			_jsii_.MemberProperty{JsiiProperty: "rawKeyInput", GoGetter: "RawKeyInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetKmsKeySelfLink", GoMethod: "ResetKmsKeySelfLink"},
+			_jsii_.MemberMethod{JsiiMethod: "resetKmsKeyServiceAccount", GoMethod: "ResetKmsKeyServiceAccount"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRawKey", GoMethod: "ResetRawKey"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRsaEncryptedKey", GoMethod: "ResetRsaEncryptedKey"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "rsaEncryptedKey", GoGetter: "RsaEncryptedKey"},
+			_jsii_.MemberProperty{JsiiProperty: "rsaEncryptedKeyInput", GoGetter: "RsaEncryptedKeyInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyInstanceSelectionsDisksSourceImageEncryptionKeyOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyInstanceSelectionsDisksSourceSnapshotEncryptionKey",
+		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyInstanceSelectionsDisksSourceSnapshotEncryptionKey)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyInstanceSelectionsDisksSourceSnapshotEncryptionKeyOutputReference",
+		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyInstanceSelectionsDisksSourceSnapshotEncryptionKeyOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "kmsKeySelfLink", GoGetter: "KmsKeySelfLink"},
+			_jsii_.MemberProperty{JsiiProperty: "kmsKeySelfLinkInput", GoGetter: "KmsKeySelfLinkInput"},
+			_jsii_.MemberProperty{JsiiProperty: "kmsKeyServiceAccount", GoGetter: "KmsKeyServiceAccount"},
+			_jsii_.MemberProperty{JsiiProperty: "kmsKeyServiceAccountInput", GoGetter: "KmsKeyServiceAccountInput"},
+			_jsii_.MemberProperty{JsiiProperty: "rawKey", GoGetter: "RawKey"},
+			_jsii_.MemberProperty{JsiiProperty: "rawKeyInput", GoGetter: "RawKeyInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetKmsKeySelfLink", GoMethod: "ResetKmsKeySelfLink"},
+			_jsii_.MemberMethod{JsiiMethod: "resetKmsKeyServiceAccount", GoMethod: "ResetKmsKeyServiceAccount"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRawKey", GoMethod: "ResetRawKey"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRsaEncryptedKey", GoMethod: "ResetRsaEncryptedKey"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "rsaEncryptedKey", GoGetter: "RsaEncryptedKey"},
+			_jsii_.MemberProperty{JsiiProperty: "rsaEncryptedKeyInput", GoGetter: "RsaEncryptedKeyInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyInstanceSelectionsDisksSourceSnapshotEncryptionKeyOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyInstanceSelectionsList",
 		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyInstanceSelectionsList)(nil)).Elem(),
@@ -283,6 +688,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "disks", GoGetter: "Disks"},
+			_jsii_.MemberProperty{JsiiProperty: "disksInput", GoGetter: "DisksInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
@@ -298,10 +705,15 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "machineTypes", GoGetter: "MachineTypes"},
 			_jsii_.MemberProperty{JsiiProperty: "machineTypesInput", GoGetter: "MachineTypesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "minCpuPlatform", GoGetter: "MinCpuPlatform"},
+			_jsii_.MemberProperty{JsiiProperty: "minCpuPlatformInput", GoGetter: "MinCpuPlatformInput"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putDisks", GoMethod: "PutDisks"},
 			_jsii_.MemberProperty{JsiiProperty: "rank", GoGetter: "Rank"},
 			_jsii_.MemberProperty{JsiiProperty: "rankInput", GoGetter: "RankInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDisks", GoMethod: "ResetDisks"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMinCpuPlatform", GoMethod: "ResetMinCpuPlatform"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRank", GoMethod: "ResetRank"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
@@ -354,6 +766,45 @@ func init() {
 		"@cdktf/provider-google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicy",
 		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicy)(nil)).Elem(),
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicyOnRepair",
+		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicyOnRepair)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicyOnRepairOutputReference",
+		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicyOnRepairOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "allowChangingZone", GoGetter: "AllowChangingZone"},
+			_jsii_.MemberProperty{JsiiProperty: "allowChangingZoneInput", GoGetter: "AllowChangingZoneInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAllowChangingZone", GoMethod: "ResetAllowChangingZone"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicyOnRepairOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicyOutputReference",
 		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicyOutputReference)(nil)).Elem(),
@@ -381,9 +832,13 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "onFailedHealthCheck", GoGetter: "OnFailedHealthCheck"},
 			_jsii_.MemberProperty{JsiiProperty: "onFailedHealthCheckInput", GoGetter: "OnFailedHealthCheckInput"},
+			_jsii_.MemberProperty{JsiiProperty: "onRepair", GoGetter: "OnRepair"},
+			_jsii_.MemberProperty{JsiiProperty: "onRepairInput", GoGetter: "OnRepairInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putOnRepair", GoMethod: "PutOnRepair"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDefaultActionOnFailure", GoMethod: "ResetDefaultActionOnFailure"},
 			_jsii_.MemberMethod{JsiiMethod: "resetForceUpdateOnRepair", GoMethod: "ResetForceUpdateOnRepair"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOnFailedHealthCheck", GoMethod: "ResetOnFailedHealthCheck"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOnRepair", GoMethod: "ResetOnRepair"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
@@ -492,6 +947,45 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleComputeRegionInstanceGroupManagerParamsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerResourcePolicies",
+		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManagerResourcePolicies)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerResourcePoliciesOutputReference",
+		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManagerResourcePoliciesOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWorkloadPolicy", GoMethod: "ResetWorkloadPolicy"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "workloadPolicy", GoGetter: "WorkloadPolicy"},
+			_jsii_.MemberProperty{JsiiProperty: "workloadPolicyInput", GoGetter: "WorkloadPolicyInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleComputeRegionInstanceGroupManagerResourcePoliciesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -1020,6 +1514,66 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleComputeRegionInstanceGroupManagerStatusVersionTargetOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerTargetSizePolicy",
+		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManagerTargetSizePolicy)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerTargetSizePolicyList",
+		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManagerTargetSizePolicyList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleComputeRegionInstanceGroupManagerTargetSizePolicyList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerTargetSizePolicyOutputReference",
+		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManagerTargetSizePolicyOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "mode", GoGetter: "Mode"},
+			_jsii_.MemberProperty{JsiiProperty: "modeInput", GoGetter: "ModeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleComputeRegionInstanceGroupManagerTargetSizePolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

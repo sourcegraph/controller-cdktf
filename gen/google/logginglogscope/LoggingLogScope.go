@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/logginglogscope/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/logging_log_scope google_logging_log_scope}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/logging_log_scope google_logging_log_scope}.
 type LoggingLogScope interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -471,7 +471,7 @@ func (j *jsiiProxy_LoggingLogScope) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/logging_log_scope google_logging_log_scope} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/logging_log_scope google_logging_log_scope} Resource.
 func NewLoggingLogScope(scope constructs.Construct, id *string, config *LoggingLogScopeConfig) LoggingLogScope {
 	_init_.Initialize()
 
@@ -489,7 +489,7 @@ func NewLoggingLogScope(scope constructs.Construct, id *string, config *LoggingL
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/logging_log_scope google_logging_log_scope} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/logging_log_scope google_logging_log_scope} Resource.
 func NewLoggingLogScope_Override(l LoggingLogScope, scope constructs.Construct, id *string, config *LoggingLogScopeConfig) {
 	_init_.Initialize()
 

@@ -132,6 +132,10 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareNodePool) validateSetNameParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_GoogleGkeonpremVmwareNodePool) validateSetOnPremVersionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleGkeonpremVmwareNodePool) validateSetProjectParameters(val *string) error {
 	return nil
 }

@@ -1,0 +1,18 @@
+package biglakeicebergtable
+
+
+type BiglakeIcebergTableSchema struct {
+	// fields block.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/biglake_iceberg_table#fields BiglakeIcebergTable#fields}
+	Fields interface{} `field:"required" json:"fields" yaml:"fields"`
+	// The field IDs that make up the identifier for the table.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/biglake_iceberg_table#identifier_field_ids BiglakeIcebergTable#identifier_field_ids}
+	IdentifierFieldIds *[]*float64 `field:"optional" json:"identifierFieldIds" yaml:"identifierFieldIds"`
+	// The type of the schema.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/biglake_iceberg_table#type BiglakeIcebergTable#type}
+	Type *string `field:"optional" json:"type" yaml:"type"`
+}
+

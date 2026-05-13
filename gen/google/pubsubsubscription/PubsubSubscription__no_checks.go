@@ -88,6 +88,10 @@ func (p *jsiiProxy_PubsubSubscription) validatePutExpirationPolicyParameters(val
 	return nil
 }
 
+func (p *jsiiProxy_PubsubSubscription) validatePutMessageTransformsParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PubsubSubscription) validatePutPushConfigParameters(value *PubsubSubscriptionPushConfig) error {
 	return nil
 }
@@ -169,6 +173,10 @@ func (j *jsiiProxy_PubsubSubscription) validateSetProvisionersParameters(val *[]
 }
 
 func (j *jsiiProxy_PubsubSubscription) validateSetRetainAckedMessagesParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_PubsubSubscription) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }
 

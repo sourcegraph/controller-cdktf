@@ -88,6 +88,10 @@ func (h *jsiiProxy_HealthcareFhirStore) validatePutTimeoutsParameters(value *Hea
 	return nil
 }
 
+func (h *jsiiProxy_HealthcareFhirStore) validatePutValidationConfigParameters(value *HealthcareFhirStoreValidationConfig) error {
+	return nil
+}
+
 func validateHealthcareFhirStore_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

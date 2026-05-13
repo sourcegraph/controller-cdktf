@@ -17,6 +17,9 @@ type GoogleSqlDatabaseInstanceSettingsOutputReference interface {
 	ActiveDirectoryConfigInput() *GoogleSqlDatabaseInstanceSettingsActiveDirectoryConfig
 	AdvancedMachineFeatures() GoogleSqlDatabaseInstanceSettingsAdvancedMachineFeaturesOutputReference
 	AdvancedMachineFeaturesInput() *GoogleSqlDatabaseInstanceSettingsAdvancedMachineFeatures
+	AutoUpgradeEnabled() interface{}
+	SetAutoUpgradeEnabled(val interface{})
+	AutoUpgradeEnabledInput() interface{}
 	AvailabilityType() *string
 	SetAvailabilityType(val *string)
 	AvailabilityTypeInput() *string
@@ -35,6 +38,8 @@ type GoogleSqlDatabaseInstanceSettingsOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ConnectionPoolConfig() GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigList
+	ConnectionPoolConfigInput() interface{}
 	ConnectorEnforcement() *string
 	SetConnectorEnforcement(val *string)
 	ConnectorEnforcementInput() *string
@@ -43,6 +48,9 @@ type GoogleSqlDatabaseInstanceSettingsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DataApiAccess() *string
+	SetDataApiAccess(val *string)
+	DataApiAccessInput() *string
 	DatabaseFlags() GoogleSqlDatabaseInstanceSettingsDatabaseFlagsList
 	DatabaseFlagsInput() interface{}
 	DataCacheConfig() GoogleSqlDatabaseInstanceSettingsDataCacheConfigOutputReference
@@ -73,12 +81,17 @@ type GoogleSqlDatabaseInstanceSettingsOutputReference interface {
 	Edition() *string
 	SetEdition(val *string)
 	EditionInput() *string
+	EffectiveAvailabilityType() *string
 	EnableDataplexIntegration() interface{}
 	SetEnableDataplexIntegration(val interface{})
 	EnableDataplexIntegrationInput() interface{}
 	EnableGoogleMlIntegration() interface{}
 	SetEnableGoogleMlIntegration(val interface{})
 	EnableGoogleMlIntegrationInput() interface{}
+	EntraidConfig() GoogleSqlDatabaseInstanceSettingsEntraidConfigOutputReference
+	EntraidConfigInput() *GoogleSqlDatabaseInstanceSettingsEntraidConfig
+	FinalBackupConfig() GoogleSqlDatabaseInstanceSettingsFinalBackupConfigOutputReference
+	FinalBackupConfigInput() *GoogleSqlDatabaseInstanceSettingsFinalBackupConfig
 	// Experimental.
 	Fqn() *string
 	InsightsConfig() GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference
@@ -96,6 +109,8 @@ type GoogleSqlDatabaseInstanceSettingsOutputReference interface {
 	PricingPlan() *string
 	SetPricingPlan(val *string)
 	PricingPlanInput() *string
+	ReadPoolAutoScaleConfig() GoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference
+	ReadPoolAutoScaleConfigInput() *GoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfig
 	RetainBackupsOnDelete() interface{}
 	SetRetainBackupsOnDelete(val interface{})
 	RetainBackupsOnDeleteInput() interface{}
@@ -146,22 +161,29 @@ type GoogleSqlDatabaseInstanceSettingsOutputReference interface {
 	PutActiveDirectoryConfig(value *GoogleSqlDatabaseInstanceSettingsActiveDirectoryConfig)
 	PutAdvancedMachineFeatures(value *GoogleSqlDatabaseInstanceSettingsAdvancedMachineFeatures)
 	PutBackupConfiguration(value *GoogleSqlDatabaseInstanceSettingsBackupConfiguration)
+	PutConnectionPoolConfig(value interface{})
 	PutDatabaseFlags(value interface{})
 	PutDataCacheConfig(value *GoogleSqlDatabaseInstanceSettingsDataCacheConfig)
 	PutDenyMaintenancePeriod(value *GoogleSqlDatabaseInstanceSettingsDenyMaintenancePeriod)
+	PutEntraidConfig(value *GoogleSqlDatabaseInstanceSettingsEntraidConfig)
+	PutFinalBackupConfig(value *GoogleSqlDatabaseInstanceSettingsFinalBackupConfig)
 	PutInsightsConfig(value *GoogleSqlDatabaseInstanceSettingsInsightsConfig)
 	PutIpConfiguration(value *GoogleSqlDatabaseInstanceSettingsIpConfiguration)
 	PutLocationPreference(value *GoogleSqlDatabaseInstanceSettingsLocationPreference)
 	PutMaintenanceWindow(value *GoogleSqlDatabaseInstanceSettingsMaintenanceWindow)
 	PutPasswordValidationPolicy(value *GoogleSqlDatabaseInstanceSettingsPasswordValidationPolicy)
+	PutReadPoolAutoScaleConfig(value *GoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfig)
 	PutSqlServerAuditConfig(value *GoogleSqlDatabaseInstanceSettingsSqlServerAuditConfig)
 	ResetActivationPolicy()
 	ResetActiveDirectoryConfig()
 	ResetAdvancedMachineFeatures()
+	ResetAutoUpgradeEnabled()
 	ResetAvailabilityType()
 	ResetBackupConfiguration()
 	ResetCollation()
+	ResetConnectionPoolConfig()
 	ResetConnectorEnforcement()
+	ResetDataApiAccess()
 	ResetDatabaseFlags()
 	ResetDataCacheConfig()
 	ResetDataDiskProvisionedIops()
@@ -175,12 +197,15 @@ type GoogleSqlDatabaseInstanceSettingsOutputReference interface {
 	ResetEdition()
 	ResetEnableDataplexIntegration()
 	ResetEnableGoogleMlIntegration()
+	ResetEntraidConfig()
+	ResetFinalBackupConfig()
 	ResetInsightsConfig()
 	ResetIpConfiguration()
 	ResetLocationPreference()
 	ResetMaintenanceWindow()
 	ResetPasswordValidationPolicy()
 	ResetPricingPlan()
+	ResetReadPoolAutoScaleConfig()
 	ResetRetainBackupsOnDelete()
 	ResetSqlServerAuditConfig()
 	ResetTimeZone()
@@ -255,6 +280,26 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) AdvancedMac
 	_jsii_.Get(
 		j,
 		"advancedMachineFeaturesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) AutoUpgradeEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"autoUpgradeEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) AutoUpgradeEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"autoUpgradeEnabledInput",
 		&returns,
 	)
 	return returns
@@ -340,6 +385,26 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ComplexObje
 	return returns
 }
 
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ConnectionPoolConfig() GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigList {
+	var returns GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigList
+	_jsii_.Get(
+		j,
+		"connectionPoolConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ConnectionPoolConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connectionPoolConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ConnectorEnforcement() *string {
 	var returns *string
 	_jsii_.Get(
@@ -365,6 +430,26 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) CreationSta
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) DataApiAccess() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataApiAccess",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) DataApiAccessInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataApiAccessInput",
 		&returns,
 	)
 	return returns
@@ -590,6 +675,16 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) EditionInpu
 	return returns
 }
 
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) EffectiveAvailabilityType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"effectiveAvailabilityType",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) EnableDataplexIntegration() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -625,6 +720,46 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) EnableGoogl
 	_jsii_.Get(
 		j,
 		"enableGoogleMlIntegrationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) EntraidConfig() GoogleSqlDatabaseInstanceSettingsEntraidConfigOutputReference {
+	var returns GoogleSqlDatabaseInstanceSettingsEntraidConfigOutputReference
+	_jsii_.Get(
+		j,
+		"entraidConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) EntraidConfigInput() *GoogleSqlDatabaseInstanceSettingsEntraidConfig {
+	var returns *GoogleSqlDatabaseInstanceSettingsEntraidConfig
+	_jsii_.Get(
+		j,
+		"entraidConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) FinalBackupConfig() GoogleSqlDatabaseInstanceSettingsFinalBackupConfigOutputReference {
+	var returns GoogleSqlDatabaseInstanceSettingsFinalBackupConfigOutputReference
+	_jsii_.Get(
+		j,
+		"finalBackupConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) FinalBackupConfigInput() *GoogleSqlDatabaseInstanceSettingsFinalBackupConfig {
+	var returns *GoogleSqlDatabaseInstanceSettingsFinalBackupConfig
+	_jsii_.Get(
+		j,
+		"finalBackupConfigInput",
 		&returns,
 	)
 	return returns
@@ -765,6 +900,26 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) PricingPlan
 	_jsii_.Get(
 		j,
 		"pricingPlanInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ReadPoolAutoScaleConfig() GoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference {
+	var returns GoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference
+	_jsii_.Get(
+		j,
+		"readPoolAutoScaleConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ReadPoolAutoScaleConfigInput() *GoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfig {
+	var returns *GoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfig
+	_jsii_.Get(
+		j,
+		"readPoolAutoScaleConfigInput",
 		&returns,
 	)
 	return returns
@@ -939,6 +1094,17 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetActivatio
 	)
 }
 
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetAutoUpgradeEnabled(val interface{}) {
+	if err := j.validateSetAutoUpgradeEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"autoUpgradeEnabled",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetAvailabilityType(val *string) {
 	if err := j.validateSetAvailabilityTypeParameters(val); err != nil {
 		panic(err)
@@ -990,6 +1156,17 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetConnector
 	_jsii_.Set(
 		j,
 		"connectorEnforcement",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetDataApiAccess(val *string) {
+	if err := j.validateSetDataApiAccessParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dataApiAccess",
 		val,
 	)
 }
@@ -1411,6 +1588,17 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) PutBackupCo
 	)
 }
 
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) PutConnectionPoolConfig(value interface{}) {
+	if err := g.validatePutConnectionPoolConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putConnectionPoolConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) PutDatabaseFlags(value interface{}) {
 	if err := g.validatePutDatabaseFlagsParameters(value); err != nil {
 		panic(err)
@@ -1440,6 +1628,28 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) PutDenyMain
 	_jsii_.InvokeVoid(
 		g,
 		"putDenyMaintenancePeriod",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) PutEntraidConfig(value *GoogleSqlDatabaseInstanceSettingsEntraidConfig) {
+	if err := g.validatePutEntraidConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putEntraidConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) PutFinalBackupConfig(value *GoogleSqlDatabaseInstanceSettingsFinalBackupConfig) {
+	if err := g.validatePutFinalBackupConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putFinalBackupConfig",
 		[]interface{}{value},
 	)
 }
@@ -1499,6 +1709,17 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) PutPassword
 	)
 }
 
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) PutReadPoolAutoScaleConfig(value *GoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfig) {
+	if err := g.validatePutReadPoolAutoScaleConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putReadPoolAutoScaleConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) PutSqlServerAuditConfig(value *GoogleSqlDatabaseInstanceSettingsSqlServerAuditConfig) {
 	if err := g.validatePutSqlServerAuditConfigParameters(value); err != nil {
 		panic(err)
@@ -1534,6 +1755,14 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ResetAdvanc
 	)
 }
 
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ResetAutoUpgradeEnabled() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAutoUpgradeEnabled",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ResetAvailabilityType() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1558,10 +1787,26 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ResetCollat
 	)
 }
 
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ResetConnectionPoolConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetConnectionPoolConfig",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ResetConnectorEnforcement() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetConnectorEnforcement",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ResetDataApiAccess() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDataApiAccess",
 		nil, // no parameters
 	)
 }
@@ -1670,6 +1915,22 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ResetEnable
 	)
 }
 
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ResetEntraidConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEntraidConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ResetFinalBackupConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetFinalBackupConfig",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ResetInsightsConfig() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1714,6 +1975,14 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ResetPricin
 	_jsii_.InvokeVoid(
 		g,
 		"resetPricingPlan",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ResetReadPoolAutoScaleConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetReadPoolAutoScaleConfig",
 		nil, // no parameters
 	)
 }

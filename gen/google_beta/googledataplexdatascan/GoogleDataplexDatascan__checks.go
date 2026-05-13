@@ -215,6 +215,28 @@ func (g *jsiiProxy_GoogleDataplexDatascan) validatePutDataParameters(value *Goog
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataplexDatascan) validatePutDataDiscoverySpecParameters(value *GoogleDataplexDatascanDataDiscoverySpec) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataplexDatascan) validatePutDataDocumentationSpecParameters(value *GoogleDataplexDatascanDataDocumentationSpec) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataplexDatascan) validatePutDataProfileSpecParameters(value *GoogleDataplexDatascanDataProfileSpec) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -227,6 +249,17 @@ func (g *jsiiProxy_GoogleDataplexDatascan) validatePutDataProfileSpecParameters(
 }
 
 func (g *jsiiProxy_GoogleDataplexDatascan) validatePutDataQualitySpecParameters(value *GoogleDataplexDatascanDataQualitySpec) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataplexDatascan) validatePutExecutionIdentityParameters(value *GoogleDataplexDatascanExecutionIdentity) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

@@ -41,6 +41,9 @@ type GoogleFilestoreInstanceFileSharesNfsExportOptionsOutputReference interface 
 	IpRanges() *[]*string
 	SetIpRanges(val *[]*string)
 	IpRangesInput() *[]*string
+	Network() *string
+	SetNetwork(val *string)
+	NetworkInput() *string
 	SquashMode() *string
 	SetSquashMode(val *string)
 	SquashModeInput() *string
@@ -80,6 +83,7 @@ type GoogleFilestoreInstanceFileSharesNfsExportOptionsOutputReference interface 
 	ResetAnonGid()
 	ResetAnonUid()
 	ResetIpRanges()
+	ResetNetwork()
 	ResetSquashMode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -226,6 +230,26 @@ func (j *jsiiProxy_GoogleFilestoreInstanceFileSharesNfsExportOptionsOutputRefere
 	return returns
 }
 
+func (j *jsiiProxy_GoogleFilestoreInstanceFileSharesNfsExportOptionsOutputReference) Network() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"network",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleFilestoreInstanceFileSharesNfsExportOptionsOutputReference) NetworkInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleFilestoreInstanceFileSharesNfsExportOptionsOutputReference) SquashMode() *string {
 	var returns *string
 	_jsii_.Get(
@@ -367,6 +391,17 @@ func (j *jsiiProxy_GoogleFilestoreInstanceFileSharesNfsExportOptionsOutputRefere
 	_jsii_.Set(
 		j,
 		"ipRanges",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleFilestoreInstanceFileSharesNfsExportOptionsOutputReference)SetNetwork(val *string) {
+	if err := j.validateSetNetworkParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"network",
 		val,
 	)
 }
@@ -618,6 +653,14 @@ func (g *jsiiProxy_GoogleFilestoreInstanceFileSharesNfsExportOptionsOutputRefere
 	_jsii_.InvokeVoid(
 		g,
 		"resetIpRanges",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleFilestoreInstanceFileSharesNfsExportOptionsOutputReference) ResetNetwork() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNetwork",
 		nil, // no parameters
 	)
 }

@@ -9,9 +9,12 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeregiondisk/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_region_disk google_compute_region_disk}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_region_disk google_compute_region_disk}.
 type GoogleComputeRegionDisk interface {
 	cdktf.TerraformResource
+	AccessMode() *string
+	SetAccessMode(val *string)
+	AccessModeInput() *string
 	AsyncPrimaryDisk() GoogleComputeRegionDiskAsyncPrimaryDiskOutputReference
 	AsyncPrimaryDiskInput() *GoogleComputeRegionDiskAsyncPrimaryDisk
 	// Experimental.
@@ -42,7 +45,11 @@ type GoogleComputeRegionDisk interface {
 	DescriptionInput() *string
 	DiskEncryptionKey() GoogleComputeRegionDiskDiskEncryptionKeyOutputReference
 	DiskEncryptionKeyInput() *GoogleComputeRegionDiskDiskEncryptionKey
+	DiskId() *string
 	EffectiveLabels() cdktf.StringMap
+	EraseWindowsVssSignature() interface{}
+	SetEraseWindowsVssSignature(val interface{})
+	EraseWindowsVssSignatureInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -87,6 +94,12 @@ type GoogleComputeRegionDisk interface {
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	ProvisionedIops() *float64
+	SetProvisionedIops(val *float64)
+	ProvisionedIopsInput() *float64
+	ProvisionedThroughput() *float64
+	SetProvisionedThroughput(val *float64)
+	ProvisionedThroughputInput() *float64
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -174,11 +187,13 @@ type GoogleComputeRegionDisk interface {
 	PutGuestOsFeatures(value interface{})
 	PutSourceSnapshotEncryptionKey(value *GoogleComputeRegionDiskSourceSnapshotEncryptionKey)
 	PutTimeouts(value *GoogleComputeRegionDiskTimeouts)
+	ResetAccessMode()
 	ResetAsyncPrimaryDisk()
 	ResetCreateSnapshotBeforeDestroy()
 	ResetCreateSnapshotBeforeDestroyPrefix()
 	ResetDescription()
 	ResetDiskEncryptionKey()
+	ResetEraseWindowsVssSignature()
 	ResetGuestOsFeatures()
 	ResetId()
 	ResetInterface()
@@ -189,6 +204,8 @@ type GoogleComputeRegionDisk interface {
 	ResetOverrideLogicalId()
 	ResetPhysicalBlockSizeBytes()
 	ResetProject()
+	ResetProvisionedIops()
+	ResetProvisionedThroughput()
 	ResetRegion()
 	ResetSize()
 	ResetSnapshot()
@@ -212,6 +229,26 @@ type GoogleComputeRegionDisk interface {
 // The jsii proxy struct for GoogleComputeRegionDisk
 type jsiiProxy_GoogleComputeRegionDisk struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) AccessMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) AccessModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessModeInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleComputeRegionDisk) AsyncPrimaryDisk() GoogleComputeRegionDiskAsyncPrimaryDiskOutputReference {
@@ -374,11 +411,41 @@ func (j *jsiiProxy_GoogleComputeRegionDisk) DiskEncryptionKeyInput() *GoogleComp
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeRegionDisk) DiskId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"diskId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeRegionDisk) EffectiveLabels() cdktf.StringMap {
 	var returns cdktf.StringMap
 	_jsii_.Get(
 		j,
 		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) EraseWindowsVssSignature() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"eraseWindowsVssSignature",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) EraseWindowsVssSignatureInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"eraseWindowsVssSignatureInput",
 		&returns,
 	)
 	return returns
@@ -629,6 +696,46 @@ func (j *jsiiProxy_GoogleComputeRegionDisk) Provider() cdktf.TerraformProvider {
 	_jsii_.Get(
 		j,
 		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) ProvisionedIops() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"provisionedIops",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) ProvisionedIopsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"provisionedIopsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) ProvisionedThroughput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"provisionedThroughput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) ProvisionedThroughputInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"provisionedThroughputInput",
 		&returns,
 	)
 	return returns
@@ -895,7 +1002,7 @@ func (j *jsiiProxy_GoogleComputeRegionDisk) Users() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_region_disk google_compute_region_disk} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_region_disk google_compute_region_disk} Resource.
 func NewGoogleComputeRegionDisk(scope constructs.Construct, id *string, config *GoogleComputeRegionDiskConfig) GoogleComputeRegionDisk {
 	_init_.Initialize()
 
@@ -913,7 +1020,7 @@ func NewGoogleComputeRegionDisk(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_region_disk google_compute_region_disk} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_region_disk google_compute_region_disk} Resource.
 func NewGoogleComputeRegionDisk_Override(g GoogleComputeRegionDisk, scope constructs.Construct, id *string, config *GoogleComputeRegionDiskConfig) {
 	_init_.Initialize()
 
@@ -921,6 +1028,17 @@ func NewGoogleComputeRegionDisk_Override(g GoogleComputeRegionDisk, scope constr
 		"@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk",
 		[]interface{}{scope, id, config},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk)SetAccessMode(val *string) {
+	if err := j.validateSetAccessModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accessMode",
+		val,
 	)
 }
 
@@ -983,6 +1101,17 @@ func (j *jsiiProxy_GoogleComputeRegionDisk)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk)SetEraseWindowsVssSignature(val interface{}) {
+	if err := j.validateSetEraseWindowsVssSignatureParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"eraseWindowsVssSignature",
 		val,
 	)
 }
@@ -1087,6 +1216,28 @@ func (j *jsiiProxy_GoogleComputeRegionDisk)SetProvider(val cdktf.TerraformProvid
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk)SetProvisionedIops(val *float64) {
+	if err := j.validateSetProvisionedIopsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisionedIops",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk)SetProvisionedThroughput(val *float64) {
+	if err := j.validateSetProvisionedThroughputParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisionedThroughput",
 		val,
 	)
 }
@@ -1576,6 +1727,14 @@ func (g *jsiiProxy_GoogleComputeRegionDisk) PutTimeouts(value *GoogleComputeRegi
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeRegionDisk) ResetAccessMode() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAccessMode",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeRegionDisk) ResetAsyncPrimaryDisk() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1612,6 +1771,14 @@ func (g *jsiiProxy_GoogleComputeRegionDisk) ResetDiskEncryptionKey() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDiskEncryptionKey",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionDisk) ResetEraseWindowsVssSignature() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEraseWindowsVssSignature",
 		nil, // no parameters
 	)
 }
@@ -1676,6 +1843,22 @@ func (g *jsiiProxy_GoogleComputeRegionDisk) ResetProject() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionDisk) ResetProvisionedIops() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetProvisionedIops",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionDisk) ResetProvisionedThroughput() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetProvisionedThroughput",
 		nil, // no parameters
 	)
 }

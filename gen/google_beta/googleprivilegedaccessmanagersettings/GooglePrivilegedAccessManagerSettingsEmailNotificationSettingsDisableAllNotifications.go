@@ -1,0 +1,6 @@
+package googleprivilegedaccessmanagersettings
+
+
+type GooglePrivilegedAccessManagerSettingsEmailNotificationSettingsDisableAllNotifications struct {
+}
+

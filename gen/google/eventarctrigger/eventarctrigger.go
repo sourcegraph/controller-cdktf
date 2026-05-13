@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/eventarctrigger/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/eventarc_trigger google_eventarc_trigger}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_trigger google_eventarc_trigger}.
 type EventarcTrigger interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -81,6 +81,8 @@ type EventarcTrigger interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RetryPolicy() EventarcTriggerRetryPolicyOutputReference
+	RetryPolicyInput() *EventarcTriggerRetryPolicy
 	ServiceAccount() *string
 	SetServiceAccount(val *string)
 	ServiceAccountInput() *string
@@ -142,6 +144,7 @@ type EventarcTrigger interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutDestination(value *EventarcTriggerDestination)
 	PutMatchingCriteria(value interface{})
+	PutRetryPolicy(value *EventarcTriggerRetryPolicy)
 	PutTimeouts(value *EventarcTriggerTimeouts)
 	PutTransport(value *EventarcTriggerTransport)
 	ResetChannel()
@@ -152,6 +155,7 @@ type EventarcTrigger interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetRetryPolicy()
 	ResetServiceAccount()
 	ResetTimeouts()
 	ResetTransport()
@@ -523,6 +527,26 @@ func (j *jsiiProxy_EventarcTrigger) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_EventarcTrigger) RetryPolicy() EventarcTriggerRetryPolicyOutputReference {
+	var returns EventarcTriggerRetryPolicyOutputReference
+	_jsii_.Get(
+		j,
+		"retryPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EventarcTrigger) RetryPolicyInput() *EventarcTriggerRetryPolicy {
+	var returns *EventarcTriggerRetryPolicy
+	_jsii_.Get(
+		j,
+		"retryPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_EventarcTrigger) ServiceAccount() *string {
 	var returns *string
 	_jsii_.Get(
@@ -644,7 +668,7 @@ func (j *jsiiProxy_EventarcTrigger) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/eventarc_trigger google_eventarc_trigger} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_trigger google_eventarc_trigger} Resource.
 func NewEventarcTrigger(scope constructs.Construct, id *string, config *EventarcTriggerConfig) EventarcTrigger {
 	_init_.Initialize()
 
@@ -662,7 +686,7 @@ func NewEventarcTrigger(scope constructs.Construct, id *string, config *Eventarc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/eventarc_trigger google_eventarc_trigger} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_trigger google_eventarc_trigger} Resource.
 func NewEventarcTrigger_Override(e EventarcTrigger, scope constructs.Construct, id *string, config *EventarcTriggerConfig) {
 	_init_.Initialize()
 
@@ -1204,6 +1228,17 @@ func (e *jsiiProxy_EventarcTrigger) PutMatchingCriteria(value interface{}) {
 	)
 }
 
+func (e *jsiiProxy_EventarcTrigger) PutRetryPolicy(value *EventarcTriggerRetryPolicy) {
+	if err := e.validatePutRetryPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putRetryPolicy",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_EventarcTrigger) PutTimeouts(value *EventarcTriggerTimeouts) {
 	if err := e.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1270,6 +1305,14 @@ func (e *jsiiProxy_EventarcTrigger) ResetProject() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EventarcTrigger) ResetRetryPolicy() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetRetryPolicy",
 		nil, // no parameters
 	)
 }

@@ -1,0 +1,102 @@
+//go:build no_runtime_type_checking
+
+package googledatastreamstream
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (g *jsiiProxy_GoogleDatastreamStreamRuleSetsObjectFilterSourceObjectIdentifierOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDatastreamStreamRuleSetsObjectFilterSourceObjectIdentifierOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDatastreamStreamRuleSetsObjectFilterSourceObjectIdentifierOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDatastreamStreamRuleSetsObjectFilterSourceObjectIdentifierOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDatastreamStreamRuleSetsObjectFilterSourceObjectIdentifierOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDatastreamStreamRuleSetsObjectFilterSourceObjectIdentifierOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDatastreamStreamRuleSetsObjectFilterSourceObjectIdentifierOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDatastreamStreamRuleSetsObjectFilterSourceObjectIdentifierOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDatastreamStreamRuleSetsObjectFilterSourceObjectIdentifierOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDatastreamStreamRuleSetsObjectFilterSourceObjectIdentifierOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDatastreamStreamRuleSetsObjectFilterSourceObjectIdentifierOutputReference) validatePutMongodbIdentifierParameters(value *GoogleDatastreamStreamRuleSetsObjectFilterSourceObjectIdentifierMongodbIdentifier) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDatastreamStreamRuleSetsObjectFilterSourceObjectIdentifierOutputReference) validatePutMysqlIdentifierParameters(value *GoogleDatastreamStreamRuleSetsObjectFilterSourceObjectIdentifierMysqlIdentifier) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDatastreamStreamRuleSetsObjectFilterSourceObjectIdentifierOutputReference) validatePutOracleIdentifierParameters(value *GoogleDatastreamStreamRuleSetsObjectFilterSourceObjectIdentifierOracleIdentifier) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDatastreamStreamRuleSetsObjectFilterSourceObjectIdentifierOutputReference) validatePutPostgresqlIdentifierParameters(value *GoogleDatastreamStreamRuleSetsObjectFilterSourceObjectIdentifierPostgresqlIdentifier) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDatastreamStreamRuleSetsObjectFilterSourceObjectIdentifierOutputReference) validatePutSalesforceIdentifierParameters(value *GoogleDatastreamStreamRuleSetsObjectFilterSourceObjectIdentifierSalesforceIdentifier) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDatastreamStreamRuleSetsObjectFilterSourceObjectIdentifierOutputReference) validatePutSpannerIdentifierParameters(value *GoogleDatastreamStreamRuleSetsObjectFilterSourceObjectIdentifierSpannerIdentifier) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDatastreamStreamRuleSetsObjectFilterSourceObjectIdentifierOutputReference) validatePutSqlServerIdentifierParameters(value *GoogleDatastreamStreamRuleSetsObjectFilterSourceObjectIdentifierSqlServerIdentifier) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDatastreamStreamRuleSetsObjectFilterSourceObjectIdentifierOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDatastreamStreamRuleSetsObjectFilterSourceObjectIdentifierOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDatastreamStreamRuleSetsObjectFilterSourceObjectIdentifierOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDatastreamStreamRuleSetsObjectFilterSourceObjectIdentifierOutputReference) validateSetInternalValueParameters(val *GoogleDatastreamStreamRuleSetsObjectFilterSourceObjectIdentifier) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDatastreamStreamRuleSetsObjectFilterSourceObjectIdentifierOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDatastreamStreamRuleSetsObjectFilterSourceObjectIdentifierOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func validateNewGoogleDatastreamStreamRuleSetsObjectFilterSourceObjectIdentifierOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+	return nil
+}
+

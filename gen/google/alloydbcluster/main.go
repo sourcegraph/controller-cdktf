@@ -17,6 +17,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "annotationsInput", GoGetter: "AnnotationsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "automatedBackupPolicy", GoGetter: "AutomatedBackupPolicy"},
 			_jsii_.MemberProperty{JsiiProperty: "automatedBackupPolicyInput", GoGetter: "AutomatedBackupPolicyInput"},
+			_jsii_.MemberProperty{JsiiProperty: "backupdrBackupSource", GoGetter: "BackupdrBackupSource"},
 			_jsii_.MemberProperty{JsiiProperty: "backupSource", GoGetter: "BackupSource"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "clusterId", GoGetter: "ClusterId"},
@@ -31,8 +32,12 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
 			_jsii_.MemberProperty{JsiiProperty: "databaseVersion", GoGetter: "DatabaseVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "databaseVersionInput", GoGetter: "DatabaseVersionInput"},
+			_jsii_.MemberProperty{JsiiProperty: "dataplexConfig", GoGetter: "DataplexConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "dataplexConfigInput", GoGetter: "DataplexConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "deletionPolicy", GoGetter: "DeletionPolicy"},
 			_jsii_.MemberProperty{JsiiProperty: "deletionPolicyInput", GoGetter: "DeletionPolicyInput"},
+			_jsii_.MemberProperty{JsiiProperty: "deletionProtection", GoGetter: "DeletionProtection"},
+			_jsii_.MemberProperty{JsiiProperty: "deletionProtectionInput", GoGetter: "DeletionProtectionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
 			_jsii_.MemberProperty{JsiiProperty: "displayName", GoGetter: "DisplayName"},
 			_jsii_.MemberProperty{JsiiProperty: "displayNameInput", GoGetter: "DisplayNameInput"},
@@ -86,11 +91,14 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "pscConfigInput", GoGetter: "PscConfigInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putAutomatedBackupPolicy", GoMethod: "PutAutomatedBackupPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "putContinuousBackupConfig", GoMethod: "PutContinuousBackupConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "putDataplexConfig", GoMethod: "PutDataplexConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putEncryptionConfig", GoMethod: "PutEncryptionConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putInitialUser", GoMethod: "PutInitialUser"},
 			_jsii_.MemberMethod{JsiiMethod: "putMaintenanceUpdatePolicy", GoMethod: "PutMaintenanceUpdatePolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "putNetworkConfig", GoMethod: "PutNetworkConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putPscConfig", GoMethod: "PutPscConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "putRestoreBackupdrBackupSource", GoMethod: "PutRestoreBackupdrBackupSource"},
+			_jsii_.MemberMethod{JsiiMethod: "putRestoreBackupdrPitrSource", GoMethod: "PutRestoreBackupdrPitrSource"},
 			_jsii_.MemberMethod{JsiiMethod: "putRestoreBackupSource", GoMethod: "PutRestoreBackupSource"},
 			_jsii_.MemberMethod{JsiiMethod: "putRestoreContinuousBackupSource", GoMethod: "PutRestoreContinuousBackupSource"},
 			_jsii_.MemberMethod{JsiiMethod: "putSecondaryConfig", GoMethod: "PutSecondaryConfig"},
@@ -102,7 +110,9 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetClusterType", GoMethod: "ResetClusterType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetContinuousBackupConfig", GoMethod: "ResetContinuousBackupConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDatabaseVersion", GoMethod: "ResetDatabaseVersion"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDataplexConfig", GoMethod: "ResetDataplexConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDeletionPolicy", GoMethod: "ResetDeletionPolicy"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDeletionProtection", GoMethod: "ResetDeletionProtection"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDisplayName", GoMethod: "ResetDisplayName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEncryptionConfig", GoMethod: "ResetEncryptionConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEtag", GoMethod: "ResetEtag"},
@@ -114,12 +124,18 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProject", GoMethod: "ResetProject"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPscConfig", GoMethod: "ResetPscConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRestoreBackupdrBackupSource", GoMethod: "ResetRestoreBackupdrBackupSource"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRestoreBackupdrPitrSource", GoMethod: "ResetRestoreBackupdrPitrSource"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRestoreBackupSource", GoMethod: "ResetRestoreBackupSource"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRestoreContinuousBackupSource", GoMethod: "ResetRestoreContinuousBackupSource"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSecondaryConfig", GoMethod: "ResetSecondaryConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSkipAwaitMajorVersionUpgrade", GoMethod: "ResetSkipAwaitMajorVersionUpgrade"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSubscriptionType", GoMethod: "ResetSubscriptionType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
+			_jsii_.MemberProperty{JsiiProperty: "restoreBackupdrBackupSource", GoGetter: "RestoreBackupdrBackupSource"},
+			_jsii_.MemberProperty{JsiiProperty: "restoreBackupdrBackupSourceInput", GoGetter: "RestoreBackupdrBackupSourceInput"},
+			_jsii_.MemberProperty{JsiiProperty: "restoreBackupdrPitrSource", GoGetter: "RestoreBackupdrPitrSource"},
+			_jsii_.MemberProperty{JsiiProperty: "restoreBackupdrPitrSourceInput", GoGetter: "RestoreBackupdrPitrSourceInput"},
 			_jsii_.MemberProperty{JsiiProperty: "restoreBackupSource", GoGetter: "RestoreBackupSource"},
 			_jsii_.MemberProperty{JsiiProperty: "restoreBackupSourceInput", GoGetter: "RestoreBackupSourceInput"},
 			_jsii_.MemberProperty{JsiiProperty: "restoreContinuousBackupSource", GoGetter: "RestoreContinuousBackupSource"},
@@ -504,6 +520,64 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.alloydbCluster.AlloydbClusterBackupdrBackupSource",
+		reflect.TypeOf((*AlloydbClusterBackupdrBackupSource)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.alloydbCluster.AlloydbClusterBackupdrBackupSourceList",
+		reflect.TypeOf((*AlloydbClusterBackupdrBackupSourceList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_AlloydbClusterBackupdrBackupSourceList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.alloydbCluster.AlloydbClusterBackupdrBackupSourceOutputReference",
+		reflect.TypeOf((*AlloydbClusterBackupdrBackupSourceOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "backup", GoGetter: "Backup"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_AlloydbClusterBackupdrBackupSourceOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.alloydbCluster.AlloydbClusterConfig",
 		reflect.TypeOf((*AlloydbClusterConfig)(nil)).Elem(),
 	)
@@ -713,6 +787,44 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.alloydbCluster.AlloydbClusterDataplexConfig",
+		reflect.TypeOf((*AlloydbClusterDataplexConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.alloydbCluster.AlloydbClusterDataplexConfigOutputReference",
+		reflect.TypeOf((*AlloydbClusterDataplexConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "enabled", GoGetter: "Enabled"},
+			_jsii_.MemberProperty{JsiiProperty: "enabledInput", GoGetter: "EnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_AlloydbClusterDataplexConfigOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.alloydbCluster.AlloydbClusterEncryptionConfig",
 		reflect.TypeOf((*AlloydbClusterEncryptionConfig)(nil)).Elem(),
 	)
@@ -837,6 +949,13 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "password", GoGetter: "Password"},
 			_jsii_.MemberProperty{JsiiProperty: "passwordInput", GoGetter: "PasswordInput"},
+			_jsii_.MemberProperty{JsiiProperty: "passwordWo", GoGetter: "PasswordWo"},
+			_jsii_.MemberProperty{JsiiProperty: "passwordWoInput", GoGetter: "PasswordWoInput"},
+			_jsii_.MemberProperty{JsiiProperty: "passwordWoVersion", GoGetter: "PasswordWoVersion"},
+			_jsii_.MemberProperty{JsiiProperty: "passwordWoVersionInput", GoGetter: "PasswordWoVersionInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPassword", GoMethod: "ResetPassword"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPasswordWo", GoMethod: "ResetPasswordWo"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPasswordWoVersion", GoMethod: "ResetPasswordWoVersion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUser", GoMethod: "ResetUser"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
@@ -1177,6 +1296,84 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AlloydbClusterRestoreBackupSourceOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.alloydbCluster.AlloydbClusterRestoreBackupdrBackupSource",
+		reflect.TypeOf((*AlloydbClusterRestoreBackupdrBackupSource)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.alloydbCluster.AlloydbClusterRestoreBackupdrBackupSourceOutputReference",
+		reflect.TypeOf((*AlloydbClusterRestoreBackupdrBackupSourceOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "backup", GoGetter: "Backup"},
+			_jsii_.MemberProperty{JsiiProperty: "backupInput", GoGetter: "BackupInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_AlloydbClusterRestoreBackupdrBackupSourceOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.alloydbCluster.AlloydbClusterRestoreBackupdrPitrSource",
+		reflect.TypeOf((*AlloydbClusterRestoreBackupdrPitrSource)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.alloydbCluster.AlloydbClusterRestoreBackupdrPitrSourceOutputReference",
+		reflect.TypeOf((*AlloydbClusterRestoreBackupdrPitrSourceOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "dataSource", GoGetter: "DataSource"},
+			_jsii_.MemberProperty{JsiiProperty: "dataSourceInput", GoGetter: "DataSourceInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "pointInTime", GoGetter: "PointInTime"},
+			_jsii_.MemberProperty{JsiiProperty: "pointInTimeInput", GoGetter: "PointInTimeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_AlloydbClusterRestoreBackupdrPitrSourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

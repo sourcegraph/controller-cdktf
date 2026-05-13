@@ -32,6 +32,8 @@ type ContainerClusterSecretManagerConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *ContainerClusterSecretManagerConfig
 	SetInternalValue(val *ContainerClusterSecretManagerConfig)
+	RotationConfig() ContainerClusterSecretManagerConfigRotationConfigOutputReference
+	RotationConfigInput() *ContainerClusterSecretManagerConfigRotationConfig
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -64,6 +66,8 @@ type ContainerClusterSecretManagerConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutRotationConfig(value *ContainerClusterSecretManagerConfigRotationConfig)
+	ResetRotationConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -144,6 +148,26 @@ func (j *jsiiProxy_ContainerClusterSecretManagerConfigOutputReference) InternalV
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterSecretManagerConfigOutputReference) RotationConfig() ContainerClusterSecretManagerConfigRotationConfigOutputReference {
+	var returns ContainerClusterSecretManagerConfigRotationConfigOutputReference
+	_jsii_.Get(
+		j,
+		"rotationConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterSecretManagerConfigOutputReference) RotationConfigInput() *ContainerClusterSecretManagerConfigRotationConfig {
+	var returns *ContainerClusterSecretManagerConfigRotationConfig
+	_jsii_.Get(
+		j,
+		"rotationConfigInput",
 		&returns,
 	)
 	return returns
@@ -447,6 +471,25 @@ func (c *jsiiProxy_ContainerClusterSecretManagerConfigOutputReference) Interpola
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_ContainerClusterSecretManagerConfigOutputReference) PutRotationConfig(value *ContainerClusterSecretManagerConfigRotationConfig) {
+	if err := c.validatePutRotationConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putRotationConfig",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterSecretManagerConfigOutputReference) ResetRotationConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRotationConfig",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_ContainerClusterSecretManagerConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

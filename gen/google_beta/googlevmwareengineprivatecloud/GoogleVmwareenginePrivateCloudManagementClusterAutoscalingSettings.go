@@ -4,7 +4,7 @@ package googlevmwareengineprivatecloud
 type GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettings struct {
 	// autoscaling_policies block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_vmwareengine_private_cloud#autoscaling_policies GoogleVmwareenginePrivateCloud#autoscaling_policies}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_vmwareengine_private_cloud#autoscaling_policies GoogleVmwareenginePrivateCloud#autoscaling_policies}
 	AutoscalingPolicies interface{} `field:"required" json:"autoscalingPolicies" yaml:"autoscalingPolicies"`
 	// The minimum duration between consecutive autoscale operations.
 	//
@@ -13,15 +13,15 @@ type GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettings struct {
 	// Cool down period must be in whole minutes (for example, 30m, 31m, 50m).
 	// Mandatory for successful addition of autoscaling settings in cluster.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_vmwareengine_private_cloud#cool_down_period GoogleVmwareenginePrivateCloud#cool_down_period}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_vmwareengine_private_cloud#cool_down_period GoogleVmwareenginePrivateCloud#cool_down_period}
 	CoolDownPeriod *string `field:"optional" json:"coolDownPeriod" yaml:"coolDownPeriod"`
 	// Maximum number of nodes of any type in a cluster. Mandatory for successful addition of autoscaling settings in cluster.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_vmwareengine_private_cloud#max_cluster_node_count GoogleVmwareenginePrivateCloud#max_cluster_node_count}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_vmwareengine_private_cloud#max_cluster_node_count GoogleVmwareenginePrivateCloud#max_cluster_node_count}
 	MaxClusterNodeCount *float64 `field:"optional" json:"maxClusterNodeCount" yaml:"maxClusterNodeCount"`
 	// Minimum number of nodes of any type in a cluster. Mandatory for successful addition of autoscaling settings in cluster.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_vmwareengine_private_cloud#min_cluster_node_count GoogleVmwareenginePrivateCloud#min_cluster_node_count}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_vmwareengine_private_cloud#min_cluster_node_count GoogleVmwareenginePrivateCloud#min_cluster_node_count}
 	MinClusterNodeCount *float64 `field:"optional" json:"minClusterNodeCount" yaml:"minClusterNodeCount"`
 }
 

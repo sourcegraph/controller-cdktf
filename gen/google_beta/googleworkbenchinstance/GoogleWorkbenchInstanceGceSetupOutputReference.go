@@ -53,6 +53,8 @@ type GoogleWorkbenchInstanceGceSetupOutputReference interface {
 	MetadataInput() *map[string]*string
 	NetworkInterfaces() GoogleWorkbenchInstanceGceSetupNetworkInterfacesList
 	NetworkInterfacesInput() interface{}
+	ReservationAffinity() GoogleWorkbenchInstanceGceSetupReservationAffinityOutputReference
+	ReservationAffinityInput() *GoogleWorkbenchInstanceGceSetupReservationAffinity
 	ServiceAccounts() GoogleWorkbenchInstanceGceSetupServiceAccountsList
 	ServiceAccountsInput() interface{}
 	ShieldedInstanceConfig() GoogleWorkbenchInstanceGceSetupShieldedInstanceConfigOutputReference
@@ -100,6 +102,7 @@ type GoogleWorkbenchInstanceGceSetupOutputReference interface {
 	PutContainerImage(value *GoogleWorkbenchInstanceGceSetupContainerImage)
 	PutDataDisks(value *GoogleWorkbenchInstanceGceSetupDataDisks)
 	PutNetworkInterfaces(value interface{})
+	PutReservationAffinity(value *GoogleWorkbenchInstanceGceSetupReservationAffinity)
 	PutServiceAccounts(value interface{})
 	PutShieldedInstanceConfig(value *GoogleWorkbenchInstanceGceSetupShieldedInstanceConfig)
 	PutVmImage(value *GoogleWorkbenchInstanceGceSetupVmImage)
@@ -113,6 +116,7 @@ type GoogleWorkbenchInstanceGceSetupOutputReference interface {
 	ResetMachineType()
 	ResetMetadata()
 	ResetNetworkInterfaces()
+	ResetReservationAffinity()
 	ResetServiceAccounts()
 	ResetShieldedInstanceConfig()
 	ResetTags()
@@ -377,6 +381,26 @@ func (j *jsiiProxy_GoogleWorkbenchInstanceGceSetupOutputReference) NetworkInterf
 	_jsii_.Get(
 		j,
 		"networkInterfacesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleWorkbenchInstanceGceSetupOutputReference) ReservationAffinity() GoogleWorkbenchInstanceGceSetupReservationAffinityOutputReference {
+	var returns GoogleWorkbenchInstanceGceSetupReservationAffinityOutputReference
+	_jsii_.Get(
+		j,
+		"reservationAffinity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleWorkbenchInstanceGceSetupOutputReference) ReservationAffinityInput() *GoogleWorkbenchInstanceGceSetupReservationAffinity {
+	var returns *GoogleWorkbenchInstanceGceSetupReservationAffinity
+	_jsii_.Get(
+		j,
+		"reservationAffinityInput",
 		&returns,
 	)
 	return returns
@@ -872,6 +896,17 @@ func (g *jsiiProxy_GoogleWorkbenchInstanceGceSetupOutputReference) PutNetworkInt
 	)
 }
 
+func (g *jsiiProxy_GoogleWorkbenchInstanceGceSetupOutputReference) PutReservationAffinity(value *GoogleWorkbenchInstanceGceSetupReservationAffinity) {
+	if err := g.validatePutReservationAffinityParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putReservationAffinity",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleWorkbenchInstanceGceSetupOutputReference) PutServiceAccounts(value interface{}) {
 	if err := g.validatePutServiceAccountsParameters(value); err != nil {
 		panic(err)
@@ -981,6 +1016,14 @@ func (g *jsiiProxy_GoogleWorkbenchInstanceGceSetupOutputReference) ResetNetworkI
 	_jsii_.InvokeVoid(
 		g,
 		"resetNetworkInterfaces",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleWorkbenchInstanceGceSetupOutputReference) ResetReservationAffinity() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetReservationAffinity",
 		nil, // no parameters
 	)
 }

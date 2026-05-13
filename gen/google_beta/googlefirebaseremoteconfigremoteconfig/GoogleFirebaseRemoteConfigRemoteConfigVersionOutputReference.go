@@ -1,0 +1,523 @@
+package googlefirebaseremoteconfigremoteconfig
+
+import (
+	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
+
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlefirebaseremoteconfigremoteconfig/internal"
+)
+
+type GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference interface {
+	cdktf.ComplexObject
+	// the index of the complex object in a list.
+	// Experimental.
+	ComplexObjectIndex() interface{}
+	// Experimental.
+	SetComplexObjectIndex(val interface{})
+	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
+	// Experimental.
+	ComplexObjectIsFromSet() *bool
+	// Experimental.
+	SetComplexObjectIsFromSet(val *bool)
+	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
+	//
+	// If this returns an empty array the stack will not be attached.
+	// Experimental.
+	CreationStack() *[]*string
+	// Experimental.
+	Fqn() *string
+	InternalValue() *GoogleFirebaseRemoteConfigRemoteConfigVersion
+	SetInternalValue(val *GoogleFirebaseRemoteConfigRemoteConfigVersion)
+	IsLegacy() cdktf.IResolvable
+	RollbackSource() *string
+	// Experimental.
+	TerraformAttribute() *string
+	// Experimental.
+	SetTerraformAttribute(val *string)
+	// Experimental.
+	TerraformResource() cdktf.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktf.IInterpolatingParent)
+	UpdateOrigin() *string
+	UpdateTime() *string
+	UpdateType() *string
+	UpdateUser() GoogleFirebaseRemoteConfigRemoteConfigVersionUpdateUserList
+	VersionNumber() *string
+	// Experimental.
+	ComputeFqn() *string
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationAsList() cdktf.IResolvable
+	// Experimental.
+	InterpolationForAttribute(property *string) cdktf.IResolvable
+	// Produce the Token's value at resolution time.
+	// Experimental.
+	Resolve(_context cdktf.IResolveContext) interface{}
+	// Return a string representation of this resolvable object.
+	//
+	// Returns a reversible string representation.
+	// Experimental.
+	ToString() *string
+}
+
+// The jsii proxy struct for GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference
+type jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference struct {
+	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference) ComplexObjectIndex() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"complexObjectIndex",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference) ComplexObjectIsFromSet() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference) CreationStack() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference) InternalValue() *GoogleFirebaseRemoteConfigRemoteConfigVersion {
+	var returns *GoogleFirebaseRemoteConfigRemoteConfigVersion
+	_jsii_.Get(
+		j,
+		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference) IsLegacy() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"isLegacy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference) RollbackSource() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rollbackSource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference) TerraformAttribute() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformAttribute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
+	var returns cdktf.IInterpolatingParent
+	_jsii_.Get(
+		j,
+		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference) UpdateOrigin() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updateOrigin",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference) UpdateTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updateTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference) UpdateType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updateType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference) UpdateUser() GoogleFirebaseRemoteConfigRemoteConfigVersionUpdateUserList {
+	var returns GoogleFirebaseRemoteConfigRemoteConfigVersionUpdateUserList
+	_jsii_.Get(
+		j,
+		"updateUser",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference) VersionNumber() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"versionNumber",
+		&returns,
+	)
+	return returns
+}
+
+
+func NewGoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference {
+	_init_.Initialize()
+
+	if err := validateNewGoogleFirebaseRemoteConfigRemoteConfigVersionOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference{}
+
+	_jsii_.Create(
+		"@cdktf/provider-google-beta.googleFirebaseRemoteConfigRemoteConfig.GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference",
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		&j,
+	)
+
+	return &j
+}
+
+func NewGoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference_Override(g GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-google-beta.googleFirebaseRemoteConfigRemoteConfig.GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference",
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		g,
+	)
+}
+
+func (j *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"complexObjectIndex",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference)SetInternalValue(val *GoogleFirebaseRemoteConfigRemoteConfigVersion) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"terraformAttribute",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"terraformResource",
+		val,
+	)
+}
+
+func (g *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference) ComputeFqn() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		g,
+		"computeFqn",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		g,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		g,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := g.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		g,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := g.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		g,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := g.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *float64
+
+	_jsii_.Invoke(
+		g,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := g.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		g,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := g.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		g,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := g.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		g,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := g.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		g,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference) InterpolationAsList() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		g,
+		"interpolationAsList",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		g,
+		"interpolationForAttribute",
+		[]interface{}{property},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
+	var returns interface{}
+
+	_jsii_.Invoke(
+		g,
+		"resolve",
+		[]interface{}{_context},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		g,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

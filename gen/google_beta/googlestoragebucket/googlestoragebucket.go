@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlestoragebucket/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_storage_bucket google_storage_bucket}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_storage_bucket google_storage_bucket}.
 type GoogleStorageBucket interface {
 	cdktf.TerraformResource
 	Autoclass() GoogleStorageBucketAutoclassOutputReference
@@ -59,6 +59,8 @@ type GoogleStorageBucket interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IpFilter() GoogleStorageBucketIpFilterOutputReference
+	IpFilterInput() *GoogleStorageBucketIpFilter
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
 	LabelsInput() *map[string]*string
@@ -116,11 +118,13 @@ type GoogleStorageBucket interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	TimeCreated() *string
 	Timeouts() GoogleStorageBucketTimeoutsOutputReference
 	TimeoutsInput() interface{}
 	UniformBucketLevelAccess() interface{}
 	SetUniformBucketLevelAccess(val interface{})
 	UniformBucketLevelAccessInput() interface{}
+	Updated() *string
 	Url() *string
 	Versioning() GoogleStorageBucketVersioningOutputReference
 	VersioningInput() *GoogleStorageBucketVersioning
@@ -174,6 +178,7 @@ type GoogleStorageBucket interface {
 	PutCustomPlacementConfig(value *GoogleStorageBucketCustomPlacementConfig)
 	PutEncryption(value *GoogleStorageBucketEncryption)
 	PutHierarchicalNamespace(value *GoogleStorageBucketHierarchicalNamespace)
+	PutIpFilter(value *GoogleStorageBucketIpFilter)
 	PutLifecycleRule(value interface{})
 	PutLogging(value *GoogleStorageBucketLogging)
 	PutRetentionPolicy(value *GoogleStorageBucketRetentionPolicy)
@@ -190,6 +195,7 @@ type GoogleStorageBucket interface {
 	ResetForceDestroy()
 	ResetHierarchicalNamespace()
 	ResetId()
+	ResetIpFilter()
 	ResetLabels()
 	ResetLifecycleRule()
 	ResetLogging()
@@ -490,6 +496,26 @@ func (j *jsiiProxy_GoogleStorageBucket) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageBucket) IpFilter() GoogleStorageBucketIpFilterOutputReference {
+	var returns GoogleStorageBucketIpFilterOutputReference
+	_jsii_.Get(
+		j,
+		"ipFilter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageBucket) IpFilterInput() *GoogleStorageBucketIpFilter {
+	var returns *GoogleStorageBucketIpFilter
+	_jsii_.Get(
+		j,
+		"ipFilterInput",
 		&returns,
 	)
 	return returns
@@ -845,6 +871,16 @@ func (j *jsiiProxy_GoogleStorageBucket) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleStorageBucket) TimeCreated() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"timeCreated",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleStorageBucket) Timeouts() GoogleStorageBucketTimeoutsOutputReference {
 	var returns GoogleStorageBucketTimeoutsOutputReference
 	_jsii_.Get(
@@ -880,6 +916,16 @@ func (j *jsiiProxy_GoogleStorageBucket) UniformBucketLevelAccessInput() interfac
 	_jsii_.Get(
 		j,
 		"uniformBucketLevelAccessInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageBucket) Updated() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updated",
 		&returns,
 	)
 	return returns
@@ -936,7 +982,7 @@ func (j *jsiiProxy_GoogleStorageBucket) WebsiteInput() *GoogleStorageBucketWebsi
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_storage_bucket google_storage_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_storage_bucket google_storage_bucket} Resource.
 func NewGoogleStorageBucket(scope constructs.Construct, id *string, config *GoogleStorageBucketConfig) GoogleStorageBucket {
 	_init_.Initialize()
 
@@ -954,7 +1000,7 @@ func NewGoogleStorageBucket(scope constructs.Construct, id *string, config *Goog
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_storage_bucket google_storage_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_storage_bucket google_storage_bucket} Resource.
 func NewGoogleStorageBucket_Override(g GoogleStorageBucket, scope constructs.Construct, id *string, config *GoogleStorageBucketConfig) {
 	_init_.Initialize()
 
@@ -1584,6 +1630,17 @@ func (g *jsiiProxy_GoogleStorageBucket) PutHierarchicalNamespace(value *GoogleSt
 	)
 }
 
+func (g *jsiiProxy_GoogleStorageBucket) PutIpFilter(value *GoogleStorageBucketIpFilter) {
+	if err := g.validatePutIpFilterParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putIpFilter",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleStorageBucket) PutLifecycleRule(value interface{}) {
 	if err := g.validatePutLifecycleRuleParameters(value); err != nil {
 		panic(err)
@@ -1729,6 +1786,14 @@ func (g *jsiiProxy_GoogleStorageBucket) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleStorageBucket) ResetIpFilter() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIpFilter",
 		nil, // no parameters
 	)
 }

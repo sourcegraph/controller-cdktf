@@ -1,0 +1,6 @@
+package datagooglebackupdrdatasourcereferences
+
+
+type DataGoogleBackupDrDataSourceReferencesDataSourceReferences struct {
+}
+

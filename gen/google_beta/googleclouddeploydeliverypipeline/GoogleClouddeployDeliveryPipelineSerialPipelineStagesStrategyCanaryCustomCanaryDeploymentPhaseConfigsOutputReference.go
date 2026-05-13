@@ -10,6 +10,8 @@ import (
 
 type GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsOutputReference interface {
 	cdktf.ComplexObject
+	Analysis() GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsAnalysisOutputReference
+	AnalysisInput() *GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsAnalysis
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -52,6 +54,8 @@ type GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCa
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	Verify() interface{}
 	SetVerify(val interface{})
+	VerifyConfig() GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsVerifyConfigOutputReference
+	VerifyConfigInput() *GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsVerifyConfig
 	VerifyInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
@@ -77,12 +81,16 @@ type GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCa
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAnalysis(value *GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsAnalysis)
 	PutPostdeploy(value *GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsPostdeploy)
 	PutPredeploy(value *GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsPredeploy)
+	PutVerifyConfig(value *GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsVerifyConfig)
+	ResetAnalysis()
 	ResetPostdeploy()
 	ResetPredeploy()
 	ResetProfiles()
 	ResetVerify()
+	ResetVerifyConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -96,6 +104,26 @@ type GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCa
 // The jsii proxy struct for GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsOutputReference
 type jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsOutputReference) Analysis() GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsAnalysisOutputReference {
+	var returns GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsAnalysisOutputReference
+	_jsii_.Get(
+		j,
+		"analysis",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsOutputReference) AnalysisInput() *GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsAnalysis {
+	var returns *GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsAnalysis
+	_jsii_.Get(
+		j,
+		"analysisInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsOutputReference) ComplexObjectIndex() interface{} {
@@ -273,6 +301,26 @@ func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategy
 	_jsii_.Get(
 		j,
 		"verify",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsOutputReference) VerifyConfig() GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsVerifyConfigOutputReference {
+	var returns GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsVerifyConfigOutputReference
+	_jsii_.Get(
+		j,
+		"verifyConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsOutputReference) VerifyConfigInput() *GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsVerifyConfig {
+	var returns *GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsVerifyConfig
+	_jsii_.Get(
+		j,
+		"verifyConfigInput",
 		&returns,
 	)
 	return returns
@@ -601,6 +649,17 @@ func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategy
 	return returns
 }
 
+func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsOutputReference) PutAnalysis(value *GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsAnalysis) {
+	if err := g.validatePutAnalysisParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAnalysis",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsOutputReference) PutPostdeploy(value *GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsPostdeploy) {
 	if err := g.validatePutPostdeployParameters(value); err != nil {
 		panic(err)
@@ -620,6 +679,25 @@ func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategy
 		g,
 		"putPredeploy",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsOutputReference) PutVerifyConfig(value *GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsVerifyConfig) {
+	if err := g.validatePutVerifyConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putVerifyConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsOutputReference) ResetAnalysis() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAnalysis",
+		nil, // no parameters
 	)
 }
 
@@ -651,6 +729,14 @@ func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategy
 	_jsii_.InvokeVoid(
 		g,
 		"resetVerify",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsOutputReference) ResetVerifyConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetVerifyConfig",
 		nil, // no parameters
 	)
 }

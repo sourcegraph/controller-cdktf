@@ -9,9 +9,10 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/netappbackup/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/netapp_backup google_netapp_backup}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_backup google_netapp_backup}.
 type NetappBackup interface {
 	cdktf.TerraformResource
+	BackupRegion() *string
 	BackupType() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -93,6 +94,7 @@ type NetappBackup interface {
 	VaultName() *string
 	SetVaultName(val *string)
 	VaultNameInput() *string
+	VolumeRegion() *string
 	VolumeUsageBytes() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
@@ -164,6 +166,16 @@ type NetappBackup interface {
 // The jsii proxy struct for NetappBackup
 type jsiiProxy_NetappBackup struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_NetappBackup) BackupRegion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"backupRegion",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_NetappBackup) BackupType() *string {
@@ -586,6 +598,16 @@ func (j *jsiiProxy_NetappBackup) VaultNameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_NetappBackup) VolumeRegion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"volumeRegion",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NetappBackup) VolumeUsageBytes() *string {
 	var returns *string
 	_jsii_.Get(
@@ -597,7 +619,7 @@ func (j *jsiiProxy_NetappBackup) VolumeUsageBytes() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/netapp_backup google_netapp_backup} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_backup google_netapp_backup} Resource.
 func NewNetappBackup(scope constructs.Construct, id *string, config *NetappBackupConfig) NetappBackup {
 	_init_.Initialize()
 
@@ -615,7 +637,7 @@ func NewNetappBackup(scope constructs.Construct, id *string, config *NetappBacku
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/netapp_backup google_netapp_backup} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_backup google_netapp_backup} Resource.
 func NewNetappBackup_Override(n NetappBackup, scope constructs.Construct, id *string, config *NetappBackupConfig) {
 	_init_.Initialize()
 

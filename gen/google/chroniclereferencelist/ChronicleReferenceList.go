@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/chroniclereferencelist/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/chronicle_reference_list google_chronicle_reference_list}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_reference_list google_chronicle_reference_list}.
 type ChronicleReferenceList interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -77,7 +77,8 @@ type ChronicleReferenceList interface {
 	RevisionCreateTime() *string
 	RuleAssociationsCount() *float64
 	Rules() *[]*string
-	ScopeInfo() ChronicleReferenceListScopeInfoList
+	ScopeInfo() ChronicleReferenceListScopeInfoOutputReference
+	ScopeInfoInput() *ChronicleReferenceListScopeInfo
 	SyntaxType() *string
 	SetSyntaxType(val *string)
 	SyntaxTypeInput() *string
@@ -133,12 +134,14 @@ type ChronicleReferenceList interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutEntries(value interface{})
+	PutScopeInfo(value *ChronicleReferenceListScopeInfo)
 	PutTimeouts(value *ChronicleReferenceListTimeouts)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetScopeInfo()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -478,11 +481,21 @@ func (j *jsiiProxy_ChronicleReferenceList) Rules() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_ChronicleReferenceList) ScopeInfo() ChronicleReferenceListScopeInfoList {
-	var returns ChronicleReferenceListScopeInfoList
+func (j *jsiiProxy_ChronicleReferenceList) ScopeInfo() ChronicleReferenceListScopeInfoOutputReference {
+	var returns ChronicleReferenceListScopeInfoOutputReference
 	_jsii_.Get(
 		j,
 		"scopeInfo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ChronicleReferenceList) ScopeInfoInput() *ChronicleReferenceListScopeInfo {
+	var returns *ChronicleReferenceListScopeInfo
+	_jsii_.Get(
+		j,
+		"scopeInfoInput",
 		&returns,
 	)
 	return returns
@@ -559,7 +572,7 @@ func (j *jsiiProxy_ChronicleReferenceList) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/chronicle_reference_list google_chronicle_reference_list} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_reference_list google_chronicle_reference_list} Resource.
 func NewChronicleReferenceList(scope constructs.Construct, id *string, config *ChronicleReferenceListConfig) ChronicleReferenceList {
 	_init_.Initialize()
 
@@ -577,7 +590,7 @@ func NewChronicleReferenceList(scope constructs.Construct, id *string, config *C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/chronicle_reference_list google_chronicle_reference_list} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_reference_list google_chronicle_reference_list} Resource.
 func NewChronicleReferenceList_Override(c ChronicleReferenceList, scope constructs.Construct, id *string, config *ChronicleReferenceListConfig) {
 	_init_.Initialize()
 
@@ -1097,6 +1110,17 @@ func (c *jsiiProxy_ChronicleReferenceList) PutEntries(value interface{}) {
 	)
 }
 
+func (c *jsiiProxy_ChronicleReferenceList) PutScopeInfo(value *ChronicleReferenceListScopeInfo) {
+	if err := c.validatePutScopeInfoParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putScopeInfo",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ChronicleReferenceList) PutTimeouts(value *ChronicleReferenceListTimeouts) {
 	if err := c.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1128,6 +1152,14 @@ func (c *jsiiProxy_ChronicleReferenceList) ResetProject() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ChronicleReferenceList) ResetScopeInfo() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetScopeInfo",
 		nil, // no parameters
 	)
 }

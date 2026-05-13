@@ -68,11 +68,19 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesCaOptionsOu
 	return nil
 }
 
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesCaOptionsOutputReference) validateSetNullCaParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesCaOptionsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesCaOptionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesCaOptionsOutputReference) validateSetZeroMaxIssuerPathLengthParameters(val interface{}) error {
 	return nil
 }
 

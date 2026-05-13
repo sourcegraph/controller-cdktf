@@ -76,6 +76,10 @@ func (b *jsiiProxy_BackupDrBackupPlan) validatePutBackupRulesParameters(value in
 	return nil
 }
 
+func (b *jsiiProxy_BackupDrBackupPlan) validatePutDiskBackupPlanPropertiesParameters(value *BackupDrBackupPlanDiskBackupPlanProperties) error {
+	return nil
+}
+
 func (b *jsiiProxy_BackupDrBackupPlan) validatePutTimeoutsParameters(value *BackupDrBackupPlanTimeouts) error {
 	return nil
 }
@@ -125,6 +129,14 @@ func (j *jsiiProxy_BackupDrBackupPlan) validateSetLifecycleParameters(val *cdktf
 }
 
 func (j *jsiiProxy_BackupDrBackupPlan) validateSetLocationParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_BackupDrBackupPlan) validateSetLogRetentionDaysParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_BackupDrBackupPlan) validateSetMaxCustomOnDemandRetentionDaysParameters(val *float64) error {
 	return nil
 }
 

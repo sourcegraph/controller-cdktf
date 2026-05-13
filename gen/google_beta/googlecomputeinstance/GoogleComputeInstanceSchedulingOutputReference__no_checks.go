@@ -64,6 +64,10 @@ func (g *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) validatePutOn
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) validatePutPreemptionNoticeDurationParameters(value *GoogleComputeInstanceSchedulingPreemptionNoticeDuration) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -113,6 +117,10 @@ func (j *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) validateSetPr
 }
 
 func (j *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) validateSetProvisioningModelParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) validateSetSkipGuestOsShutdownParameters(val interface{}) error {
 	return nil
 }
 

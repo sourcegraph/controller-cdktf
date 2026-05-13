@@ -90,6 +90,28 @@ func (g *jsiiProxy_GoogleClouddeployTargetExecutionConfigsOutputReference) valid
 	return nil
 }
 
+func (g *jsiiProxy_GoogleClouddeployTargetExecutionConfigsOutputReference) validatePutDefaultPoolParameters(value *GoogleClouddeployTargetExecutionConfigsDefaultPool) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleClouddeployTargetExecutionConfigsOutputReference) validatePutPrivatePoolParameters(value *GoogleClouddeployTargetExecutionConfigsPrivatePool) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleClouddeployTargetExecutionConfigsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")

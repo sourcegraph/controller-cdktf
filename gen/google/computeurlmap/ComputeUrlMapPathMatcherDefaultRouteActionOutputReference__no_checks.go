@@ -44,6 +44,10 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionOutputReference) va
 	return nil
 }
 
+func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionOutputReference) validatePutCachePolicyParameters(value *ComputeUrlMapPathMatcherDefaultRouteActionCachePolicy) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionOutputReference) validatePutCorsPolicyParameters(value *ComputeUrlMapPathMatcherDefaultRouteActionCorsPolicy) error {
 	return nil
 }

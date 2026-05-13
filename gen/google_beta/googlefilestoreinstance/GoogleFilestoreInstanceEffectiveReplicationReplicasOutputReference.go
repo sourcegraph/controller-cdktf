@@ -30,6 +30,7 @@ type GoogleFilestoreInstanceEffectiveReplicationReplicasOutputReference interfac
 	InternalValue() *GoogleFilestoreInstanceEffectiveReplicationReplicas
 	SetInternalValue(val *GoogleFilestoreInstanceEffectiveReplicationReplicas)
 	LastActiveSyncTime() *string
+	PeerInstance() *string
 	State() *string
 	StateReasons() *[]*string
 	// Experimental.
@@ -134,6 +135,16 @@ func (j *jsiiProxy_GoogleFilestoreInstanceEffectiveReplicationReplicasOutputRefe
 	_jsii_.Get(
 		j,
 		"lastActiveSyncTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleFilestoreInstanceEffectiveReplicationReplicasOutputReference) PeerInstance() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"peerInstance",
 		&returns,
 	)
 	return returns

@@ -1,0 +1,427 @@
+//go:build !no_runtime_type_checking
+
+package discoveryenginewidgetconfig
+
+import (
+	"fmt"
+
+	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+)
+
+func (d *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+	if property == nil {
+		return fmt.Errorf("parameter property is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) validatePutDataStoreUiConfigsParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigs:
+		value := value.(*[]*DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigs)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigs:
+		value_ := value.([]*DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigs)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigs; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) validatePutGenerativeAnswerConfigParameters(value *DiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+	if _context == nil {
+		return fmt.Errorf("parameter _context is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	switch val.(type) {
+	case *string:
+		// ok
+	case string:
+		// ok
+	case *float64:
+		// ok
+	case float64:
+		// ok
+	case *int:
+		// ok
+	case int:
+		// ok
+	case *uint:
+		// ok
+	case uint:
+		// ok
+	case *int8:
+		// ok
+	case int8:
+		// ok
+	case *int16:
+		// ok
+	case int16:
+		// ok
+	case *int32:
+		// ok
+	case int32:
+		// ok
+	case *int64:
+		// ok
+	case int64:
+		// ok
+	case *uint8:
+		// ok
+	case uint8:
+		// ok
+	case *uint16:
+		// ok
+	case uint16:
+		// ok
+	case *uint32:
+		// ok
+	case uint32:
+		// ok
+	case *uint64:
+		// ok
+	case uint64:
+		// ok
+	default:
+		return fmt.Errorf("parameter val must be one of the allowed types: *string, *float64; received %#v (a %T)", val, val)
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) validateSetDefaultSearchRequestOrderByParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) validateSetDisableUserEventsCollectionParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) validateSetEnableAutocompleteParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) validateSetEnableCreateAgentButtonParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) validateSetEnablePeopleSearchParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) validateSetEnableQualityFeedbackParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) validateSetEnableSafeSearchParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) validateSetEnableSearchAsYouTypeParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) validateSetEnableVisualContentSummaryParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) validateSetInteractionTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) validateSetInternalValueParameters(val *DiscoveryEngineWidgetConfigUiSettings) error {
+	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) validateSetResultDescriptionTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateNewDiscoveryEngineWidgetConfigUiSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+	if terraformResource == nil {
+		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
+	}
+
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
+	}
+
+	return nil
+}
+

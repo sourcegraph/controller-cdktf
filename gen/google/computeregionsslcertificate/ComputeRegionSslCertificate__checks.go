@@ -401,6 +401,22 @@ func (j *jsiiProxy_ComputeRegionSslCertificate) validateSetPrivateKeyParameters(
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRegionSslCertificate) validateSetPrivateKeyWoParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ComputeRegionSslCertificate) validateSetPrivateKeyWoVersionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRegionSslCertificate) validateSetProjectParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

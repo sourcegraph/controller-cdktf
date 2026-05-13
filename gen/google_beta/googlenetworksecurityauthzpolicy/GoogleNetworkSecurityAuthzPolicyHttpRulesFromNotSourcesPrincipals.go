@@ -8,17 +8,17 @@ type GoogleNetworkSecurityAuthzPolicyHttpRulesFromNotSourcesPrincipals struct {
 	// Examples:
 	// * abc matches the value xyz.abc.def
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_network_security_authz_policy#contains GoogleNetworkSecurityAuthzPolicy#contains}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_network_security_authz_policy#contains GoogleNetworkSecurityAuthzPolicy#contains}
 	Contains *string `field:"optional" json:"contains" yaml:"contains"`
 	// The input string must match exactly the string specified here. Examples: * abc only matches the value abc.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_network_security_authz_policy#exact GoogleNetworkSecurityAuthzPolicy#exact}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_network_security_authz_policy#exact GoogleNetworkSecurityAuthzPolicy#exact}
 	Exact *string `field:"optional" json:"exact" yaml:"exact"`
 	// If true, indicates the exact/prefix/suffix/contains matching should be case insensitive.
 	//
 	// For example, the matcher data will match both input string Data and data if set to true.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_network_security_authz_policy#ignore_case GoogleNetworkSecurityAuthzPolicy#ignore_case}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_network_security_authz_policy#ignore_case GoogleNetworkSecurityAuthzPolicy#ignore_case}
 	IgnoreCase interface{} `field:"optional" json:"ignoreCase" yaml:"ignoreCase"`
 	// The input string must have the prefix specified here.
 	//
@@ -26,15 +26,25 @@ type GoogleNetworkSecurityAuthzPolicyHttpRulesFromNotSourcesPrincipals struct {
 	// Examples:
 	// * abc matches the value abc.xyz
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_network_security_authz_policy#prefix GoogleNetworkSecurityAuthzPolicy#prefix}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_network_security_authz_policy#prefix GoogleNetworkSecurityAuthzPolicy#prefix}
 	Prefix *string `field:"optional" json:"prefix" yaml:"prefix"`
+	// principal block.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_network_security_authz_policy#principal GoogleNetworkSecurityAuthzPolicy#principal}
+	Principal *GoogleNetworkSecurityAuthzPolicyHttpRulesFromNotSourcesPrincipalsPrincipal `field:"optional" json:"principal" yaml:"principal"`
+	// An enum to decide what principal value the principal rule will match against.
+	//
+	// If not specified, the PrincipalSelector is CLIENT_CERT_URI_SAN. Default value: "CLIENT_CERT_URI_SAN" Possible values: ["PRINCIPAL_SELECTOR_UNSPECIFIED", "CLIENT_CERT_URI_SAN", "CLIENT_CERT_DNS_NAME_SAN", "CLIENT_CERT_COMMON_NAME"]
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_network_security_authz_policy#principal_selector GoogleNetworkSecurityAuthzPolicy#principal_selector}
+	PrincipalSelector *string `field:"optional" json:"principalSelector" yaml:"principalSelector"`
 	// The input string must have the suffix specified here.
 	//
 	// Note: empty prefix is not allowed, please use regex instead.
 	// Examples:
 	// * abc matches the value xyz.abc
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_network_security_authz_policy#suffix GoogleNetworkSecurityAuthzPolicy#suffix}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_network_security_authz_policy#suffix GoogleNetworkSecurityAuthzPolicy#suffix}
 	Suffix *string `field:"optional" json:"suffix" yaml:"suffix"`
 }
 

@@ -76,7 +76,23 @@ func (g *jsiiProxy_GoogleNetappVolume) validatePutBackupConfigParameters(value *
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetappVolume) validatePutBlockDevicesParameters(value interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetappVolume) validatePutCacheParametersParameters(value *GoogleNetappVolumeCacheParameters) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetappVolume) validatePutExportPolicyParameters(value *GoogleNetappVolumeExportPolicy) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetappVolume) validatePutHybridReplicationParametersParameters(value *GoogleNetappVolumeHybridReplicationParameters) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetappVolume) validatePutLargeCapacityConfigParameters(value *GoogleNetappVolumeLargeCapacityConfig) error {
 	return nil
 }
 
@@ -197,6 +213,10 @@ func (j *jsiiProxy_GoogleNetappVolume) validateSetSnapshotDirectoryParameters(va
 }
 
 func (j *jsiiProxy_GoogleNetappVolume) validateSetStoragePoolParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleNetappVolume) validateSetThroughputMibpsParameters(val *float64) error {
 	return nil
 }
 

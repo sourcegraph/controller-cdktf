@@ -29,6 +29,8 @@ type GoogleNetworkSecurityAuthzPolicyHttpRulesFromSourcesOutputReference interfa
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	IpBlocks() GoogleNetworkSecurityAuthzPolicyHttpRulesFromSourcesIpBlocksList
+	IpBlocksInput() interface{}
 	Principals() GoogleNetworkSecurityAuthzPolicyHttpRulesFromSourcesPrincipalsList
 	PrincipalsInput() interface{}
 	Resources() GoogleNetworkSecurityAuthzPolicyHttpRulesFromSourcesResourcesList
@@ -65,8 +67,10 @@ type GoogleNetworkSecurityAuthzPolicyHttpRulesFromSourcesOutputReference interfa
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutIpBlocks(value interface{})
 	PutPrincipals(value interface{})
 	PutResources(value interface{})
+	ResetIpBlocks()
 	ResetPrincipals()
 	ResetResources()
 	// Produce the Token's value at resolution time.
@@ -129,6 +133,26 @@ func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesFromSourcesOutputRef
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesFromSourcesOutputReference) IpBlocks() GoogleNetworkSecurityAuthzPolicyHttpRulesFromSourcesIpBlocksList {
+	var returns GoogleNetworkSecurityAuthzPolicyHttpRulesFromSourcesIpBlocksList
+	_jsii_.Get(
+		j,
+		"ipBlocks",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesFromSourcesOutputReference) IpBlocksInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ipBlocksInput",
 		&returns,
 	)
 	return returns
@@ -463,6 +487,17 @@ func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesFromSourcesOutputRef
 	return returns
 }
 
+func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesFromSourcesOutputReference) PutIpBlocks(value interface{}) {
+	if err := g.validatePutIpBlocksParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putIpBlocks",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesFromSourcesOutputReference) PutPrincipals(value interface{}) {
 	if err := g.validatePutPrincipalsParameters(value); err != nil {
 		panic(err)
@@ -482,6 +517,14 @@ func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesFromSourcesOutputRef
 		g,
 		"putResources",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesFromSourcesOutputReference) ResetIpBlocks() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIpBlocks",
+		nil, // no parameters
 	)
 }
 

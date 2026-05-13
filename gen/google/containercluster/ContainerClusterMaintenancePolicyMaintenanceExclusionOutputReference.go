@@ -73,6 +73,7 @@ type ContainerClusterMaintenancePolicyMaintenanceExclusionOutputReference interf
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutExclusionOptions(value *ContainerClusterMaintenancePolicyMaintenanceExclusionExclusionOptions)
+	ResetEndTime()
 	ResetExclusionOptions()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -549,6 +550,14 @@ func (c *jsiiProxy_ContainerClusterMaintenancePolicyMaintenanceExclusionOutputRe
 		c,
 		"putExclusionOptions",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterMaintenancePolicyMaintenanceExclusionOutputReference) ResetEndTime() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEndTime",
+		nil, // no parameters
 	)
 }
 

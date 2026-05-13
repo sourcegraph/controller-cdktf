@@ -33,6 +33,7 @@ type ComputeReservationSpecificReservationInstancePropertiesOutputReference inte
 	SetInternalValue(val *ComputeReservationSpecificReservationInstanceProperties)
 	LocalSsds() ComputeReservationSpecificReservationInstancePropertiesLocalSsdsList
 	LocalSsdsInput() interface{}
+	LocationHint() *string
 	MachineType() *string
 	SetMachineType(val *string)
 	MachineTypeInput() *string
@@ -176,6 +177,16 @@ func (j *jsiiProxy_ComputeReservationSpecificReservationInstancePropertiesOutput
 	_jsii_.Get(
 		j,
 		"localSsdsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeReservationSpecificReservationInstancePropertiesOutputReference) LocationHint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"locationHint",
 		&returns,
 	)
 	return returns

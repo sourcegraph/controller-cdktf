@@ -116,6 +116,10 @@ func (j *jsiiProxy_SecretManagerRegionalSecret) validateSetCountParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_SecretManagerRegionalSecret) validateSetDeletionProtectionParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecretManagerRegionalSecret) validateSetExpireTimeParameters(val *string) error {
 	return nil
 }
@@ -145,6 +149,10 @@ func (j *jsiiProxy_SecretManagerRegionalSecret) validateSetProvisionersParameter
 }
 
 func (j *jsiiProxy_SecretManagerRegionalSecret) validateSetSecretIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SecretManagerRegionalSecret) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }
 

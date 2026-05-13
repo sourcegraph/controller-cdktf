@@ -1,0 +1,6 @@
+package googlebigqueryanalyticshubdataexchangesubscription
+
+
+type GoogleBigqueryAnalyticsHubDataExchangeSubscriptionLinkedDatasetMap struct {
+}
+

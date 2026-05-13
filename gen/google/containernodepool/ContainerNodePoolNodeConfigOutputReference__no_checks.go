@@ -48,6 +48,10 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validatePutAdvanc
 	return nil
 }
 
+func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validatePutBootDiskParameters(value *ContainerNodePoolNodeConfigBootDisk) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validatePutConfidentialNodesParameters(value *ContainerNodePoolNodeConfigConfidentialNodes) error {
 	return nil
 }
@@ -93,6 +97,10 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validatePutLocalN
 }
 
 func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validatePutReservationAffinityParameters(value *ContainerNodePoolNodeConfigReservationAffinity) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validatePutSandboxConfigParameters(value *ContainerNodePoolNodeConfigSandboxConfig) error {
 	return nil
 }
 
@@ -145,6 +153,10 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validateSetDiskTy
 }
 
 func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validateSetEnableConfidentialStorageParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validateSetFlexStartParameters(val interface{}) error {
 	return nil
 }
 

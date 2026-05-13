@@ -4,7 +4,7 @@ package googlecomputeregionbackendservice
 type GoogleComputeRegionBackendServiceCustomMetrics struct {
 	// If true, the metric data is not used for load balancing.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_region_backend_service#dry_run GoogleComputeRegionBackendService#dry_run}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_region_backend_service#dry_run GoogleComputeRegionBackendService#dry_run}
 	DryRun interface{} `field:"required" json:"dryRun" yaml:"dryRun"`
 	// Name of a custom utilization signal.
 	//
@@ -18,7 +18,7 @@ type GoogleComputeRegionBackendServiceCustomMetrics struct {
 	// loadBalancingScheme set to <code>EXTERNAL_MANAGED</code>,
 	// <code>INTERNAL_MANAGED</code> <code>INTERNAL_SELF_MANAGED</code>.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_region_backend_service#name GoogleComputeRegionBackendService#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_region_backend_service#name GoogleComputeRegionBackendService#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

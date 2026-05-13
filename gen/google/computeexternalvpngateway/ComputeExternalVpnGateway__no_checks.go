@@ -76,6 +76,10 @@ func (c *jsiiProxy_ComputeExternalVpnGateway) validatePutInterfaceParameters(val
 	return nil
 }
 
+func (c *jsiiProxy_ComputeExternalVpnGateway) validatePutParamsParameters(value *ComputeExternalVpnGatewayParams) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeExternalVpnGateway) validatePutTimeoutsParameters(value *ComputeExternalVpnGatewayTimeouts) error {
 	return nil
 }

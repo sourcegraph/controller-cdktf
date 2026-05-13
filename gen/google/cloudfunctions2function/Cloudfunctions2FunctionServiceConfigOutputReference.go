@@ -37,6 +37,11 @@ type Cloudfunctions2FunctionServiceConfigOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DirectVpcEgress() *string
+	SetDirectVpcEgress(val *string)
+	DirectVpcEgressInput() *string
+	DirectVpcNetworkInterface() Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceList
+	DirectVpcNetworkInterfaceInput() interface{}
 	EnvironmentVariables() *map[string]*string
 	SetEnvironmentVariables(val *map[string]*string)
 	EnvironmentVariablesInput() *map[string]*string
@@ -62,11 +67,9 @@ type Cloudfunctions2FunctionServiceConfigOutputReference interface {
 	SecretVolumes() Cloudfunctions2FunctionServiceConfigSecretVolumesList
 	SecretVolumesInput() interface{}
 	Service() *string
-	SetService(val *string)
 	ServiceAccountEmail() *string
 	SetServiceAccountEmail(val *string)
 	ServiceAccountEmailInput() *string
-	ServiceInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -109,12 +112,15 @@ type Cloudfunctions2FunctionServiceConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutDirectVpcNetworkInterface(value interface{})
 	PutSecretEnvironmentVariables(value interface{})
 	PutSecretVolumes(value interface{})
 	ResetAllTrafficOnLatestRevision()
 	ResetAvailableCpu()
 	ResetAvailableMemory()
 	ResetBinaryAuthorizationPolicy()
+	ResetDirectVpcEgress()
+	ResetDirectVpcNetworkInterface()
 	ResetEnvironmentVariables()
 	ResetIngressSettings()
 	ResetMaxInstanceCount()
@@ -122,7 +128,6 @@ type Cloudfunctions2FunctionServiceConfigOutputReference interface {
 	ResetMinInstanceCount()
 	ResetSecretEnvironmentVariables()
 	ResetSecretVolumes()
-	ResetService()
 	ResetServiceAccountEmail()
 	ResetTimeoutSeconds()
 	ResetVpcConnector()
@@ -247,6 +252,46 @@ func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) Creation
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) DirectVpcEgress() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"directVpcEgress",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) DirectVpcEgressInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"directVpcEgressInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) DirectVpcNetworkInterface() Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceList {
+	var returns Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceList
+	_jsii_.Get(
+		j,
+		"directVpcNetworkInterface",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) DirectVpcNetworkInterfaceInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"directVpcNetworkInterfaceInput",
 		&returns,
 	)
 	return returns
@@ -452,16 +497,6 @@ func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) ServiceA
 	return returns
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) ServiceInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"serviceInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -646,6 +681,17 @@ func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference)SetComple
 	)
 }
 
+func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference)SetDirectVpcEgress(val *string) {
+	if err := j.validateSetDirectVpcEgressParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"directVpcEgress",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference)SetEnvironmentVariables(val *map[string]*string) {
 	if err := j.validateSetEnvironmentVariablesParameters(val); err != nil {
 		panic(err)
@@ -708,17 +754,6 @@ func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference)SetMinIns
 	_jsii_.Set(
 		j,
 		"minInstanceCount",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference)SetService(val *string) {
-	if err := j.validateSetServiceParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"service",
 		val,
 	)
 }
@@ -975,6 +1010,17 @@ func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) Interpol
 	return returns
 }
 
+func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) PutDirectVpcNetworkInterface(value interface{}) {
+	if err := c.validatePutDirectVpcNetworkInterfaceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putDirectVpcNetworkInterface",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) PutSecretEnvironmentVariables(value interface{}) {
 	if err := c.validatePutSecretEnvironmentVariablesParameters(value); err != nil {
 		panic(err)
@@ -1025,6 +1071,22 @@ func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) ResetBin
 	_jsii_.InvokeVoid(
 		c,
 		"resetBinaryAuthorizationPolicy",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) ResetDirectVpcEgress() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDirectVpcEgress",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) ResetDirectVpcNetworkInterface() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDirectVpcNetworkInterface",
 		nil, // no parameters
 	)
 }
@@ -1081,14 +1143,6 @@ func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) ResetSec
 	_jsii_.InvokeVoid(
 		c,
 		"resetSecretVolumes",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) ResetService() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetService",
 		nil, // no parameters
 	)
 }

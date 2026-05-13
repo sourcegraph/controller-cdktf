@@ -21,21 +21,21 @@ type GoogleChronicleReferenceListConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Required. A user-provided description of the reference list.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_chronicle_reference_list#description GoogleChronicleReferenceList#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_chronicle_reference_list#description GoogleChronicleReferenceList#description}
 	Description *string `field:"required" json:"description" yaml:"description"`
 	// entries block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_chronicle_reference_list#entries GoogleChronicleReferenceList#entries}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_chronicle_reference_list#entries GoogleChronicleReferenceList#entries}
 	Entries interface{} `field:"required" json:"entries" yaml:"entries"`
 	// The unique identifier for the Chronicle instance, which is the same as the customer ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_chronicle_reference_list#instance GoogleChronicleReferenceList#instance}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_chronicle_reference_list#instance GoogleChronicleReferenceList#instance}
 	Instance *string `field:"required" json:"instance" yaml:"instance"`
 	// The location of the resource.
 	//
 	// This is the geographical region where the Chronicle instance resides, such as "us" or "europe-west2".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_chronicle_reference_list#location GoogleChronicleReferenceList#location}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_chronicle_reference_list#location GoogleChronicleReferenceList#location}
 	Location *string `field:"required" json:"location" yaml:"location"`
 	// Required.
 	//
@@ -46,22 +46,26 @@ type GoogleChronicleReferenceListConfig struct {
 	// - Has length < 256.
 	// - Must be unique.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_chronicle_reference_list#reference_list_id GoogleChronicleReferenceList#reference_list_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_chronicle_reference_list#reference_list_id GoogleChronicleReferenceList#reference_list_id}
 	ReferenceListId *string `field:"required" json:"referenceListId" yaml:"referenceListId"`
 	// Possible values: REFERENCE_LIST_SYNTAX_TYPE_PLAIN_TEXT_STRING REFERENCE_LIST_SYNTAX_TYPE_REGEX REFERENCE_LIST_SYNTAX_TYPE_CIDR.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_chronicle_reference_list#syntax_type GoogleChronicleReferenceList#syntax_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_chronicle_reference_list#syntax_type GoogleChronicleReferenceList#syntax_type}
 	SyntaxType *string `field:"required" json:"syntaxType" yaml:"syntaxType"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_chronicle_reference_list#id GoogleChronicleReferenceList#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_chronicle_reference_list#id GoogleChronicleReferenceList#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_chronicle_reference_list#project GoogleChronicleReferenceList#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_chronicle_reference_list#project GoogleChronicleReferenceList#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
+	// scope_info block.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_chronicle_reference_list#scope_info GoogleChronicleReferenceList#scope_info}
+	ScopeInfo *GoogleChronicleReferenceListScopeInfo `field:"optional" json:"scopeInfo" yaml:"scopeInfo"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_chronicle_reference_list#timeouts GoogleChronicleReferenceList#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_chronicle_reference_list#timeouts GoogleChronicleReferenceList#timeouts}
 	Timeouts *GoogleChronicleReferenceListTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

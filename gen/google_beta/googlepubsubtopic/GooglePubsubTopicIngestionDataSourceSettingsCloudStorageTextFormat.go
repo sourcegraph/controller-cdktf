@@ -8,7 +8,7 @@ type GooglePubsubTopicIngestionDataSourceSettingsCloudStorageTextFormat struct {
 	// specified by the delimiter will be set to the 'data' field of a Pub/Sub
 	// message. When unset, '\n' is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_pubsub_topic#delimiter GooglePubsubTopic#delimiter}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_pubsub_topic#delimiter GooglePubsubTopic#delimiter}
 	Delimiter *string `field:"optional" json:"delimiter" yaml:"delimiter"`
 }
 

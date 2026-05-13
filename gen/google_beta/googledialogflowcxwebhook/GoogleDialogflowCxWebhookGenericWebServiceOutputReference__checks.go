@@ -90,6 +90,59 @@ func (g *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) va
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) validatePutOauthConfigParameters(value *GoogleDialogflowCxWebhookGenericWebServiceOauthConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) validatePutSecretVersionsForRequestHeadersParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*GoogleDialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeaders:
+		value := value.(*[]*GoogleDialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeaders)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*GoogleDialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeaders:
+		value_ := value.([]*GoogleDialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeaders)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*GoogleDialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeaders; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) validatePutServiceAccountAuthConfigParameters(value *GoogleDialogflowCxWebhookGenericWebServiceServiceAccountAuthConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
@@ -171,6 +224,14 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) validateSetHttpMethodParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) validateSetInternalValueParameters(val *GoogleDialogflowCxWebhookGenericWebService) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
@@ -179,7 +240,39 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) validateSetParameterMappingParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) validateSetRequestBodyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) validateSetRequestHeadersParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) validateSetSecretVersionForUsernamePasswordParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) validateSetServiceAgentAuthParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -204,6 +297,14 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) va
 }
 
 func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) validateSetUriParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) validateSetWebhookTypeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

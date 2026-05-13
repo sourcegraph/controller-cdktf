@@ -29,6 +29,8 @@ type DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterCollectionO
 	Fqn() *string
 	IncludeRegexes() DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterCollectionIncludeRegexesOutputReference
 	IncludeRegexesInput() *DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterCollectionIncludeRegexes
+	IncludeTags() DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterCollectionIncludeTagsOutputReference
+	IncludeTagsInput() *DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterCollectionIncludeTags
 	InternalValue() *DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterCollection
 	SetInternalValue(val *DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterCollection)
 	// Experimental.
@@ -64,7 +66,9 @@ type DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterCollectionO
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutIncludeRegexes(value *DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterCollectionIncludeRegexes)
+	PutIncludeTags(value *DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterCollectionIncludeTags)
 	ResetIncludeRegexes()
+	ResetIncludeTags()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -135,6 +139,26 @@ func (j *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFil
 	_jsii_.Get(
 		j,
 		"includeRegexesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterCollectionOutputReference) IncludeTags() DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterCollectionIncludeTagsOutputReference {
+	var returns DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterCollectionIncludeTagsOutputReference
+	_jsii_.Get(
+		j,
+		"includeTags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterCollectionOutputReference) IncludeTagsInput() *DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterCollectionIncludeTags {
+	var returns *DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterCollectionIncludeTags
+	_jsii_.Get(
+		j,
+		"includeTagsInput",
 		&returns,
 	)
 	return returns
@@ -450,10 +474,29 @@ func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFil
 	)
 }
 
+func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterCollectionOutputReference) PutIncludeTags(value *DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterCollectionIncludeTags) {
+	if err := d.validatePutIncludeTagsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putIncludeTags",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterCollectionOutputReference) ResetIncludeRegexes() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetIncludeRegexes",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterCollectionOutputReference) ResetIncludeTags() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIncludeTags",
 		nil, // no parameters
 	)
 }

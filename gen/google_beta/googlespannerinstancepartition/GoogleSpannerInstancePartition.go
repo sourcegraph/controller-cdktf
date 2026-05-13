@@ -9,9 +9,11 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlespannerinstancepartition/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_spanner_instance_partition google_spanner_instance_partition}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_spanner_instance_partition google_spanner_instance_partition}.
 type GoogleSpannerInstancePartition interface {
 	cdktf.TerraformResource
+	AutoscalingConfig() GoogleSpannerInstancePartitionAutoscalingConfigOutputReference
+	AutoscalingConfigInput() *GoogleSpannerInstancePartitionAutoscalingConfig
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Config() *string
@@ -128,7 +130,9 @@ type GoogleSpannerInstancePartition interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAutoscalingConfig(value *GoogleSpannerInstancePartitionAutoscalingConfig)
 	PutTimeouts(value *GoogleSpannerInstancePartitionTimeouts)
+	ResetAutoscalingConfig()
 	ResetId()
 	ResetNodeCount()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -153,6 +157,26 @@ type GoogleSpannerInstancePartition interface {
 // The jsii proxy struct for GoogleSpannerInstancePartition
 type jsiiProxy_GoogleSpannerInstancePartition struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GoogleSpannerInstancePartition) AutoscalingConfig() GoogleSpannerInstancePartitionAutoscalingConfigOutputReference {
+	var returns GoogleSpannerInstancePartitionAutoscalingConfigOutputReference
+	_jsii_.Get(
+		j,
+		"autoscalingConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSpannerInstancePartition) AutoscalingConfigInput() *GoogleSpannerInstancePartitionAutoscalingConfig {
+	var returns *GoogleSpannerInstancePartitionAutoscalingConfig
+	_jsii_.Get(
+		j,
+		"autoscalingConfigInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleSpannerInstancePartition) CdktfStack() cdktf.TerraformStack {
@@ -506,7 +530,7 @@ func (j *jsiiProxy_GoogleSpannerInstancePartition) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_spanner_instance_partition google_spanner_instance_partition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_spanner_instance_partition google_spanner_instance_partition} Resource.
 func NewGoogleSpannerInstancePartition(scope constructs.Construct, id *string, config *GoogleSpannerInstancePartitionConfig) GoogleSpannerInstancePartition {
 	_init_.Initialize()
 
@@ -524,7 +548,7 @@ func NewGoogleSpannerInstancePartition(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_spanner_instance_partition google_spanner_instance_partition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_spanner_instance_partition google_spanner_instance_partition} Resource.
 func NewGoogleSpannerInstancePartition_Override(g GoogleSpannerInstancePartition, scope constructs.Construct, id *string, config *GoogleSpannerInstancePartitionConfig) {
 	_init_.Initialize()
 
@@ -1044,6 +1068,17 @@ func (g *jsiiProxy_GoogleSpannerInstancePartition) OverrideLogicalId(newLogicalI
 	)
 }
 
+func (g *jsiiProxy_GoogleSpannerInstancePartition) PutAutoscalingConfig(value *GoogleSpannerInstancePartitionAutoscalingConfig) {
+	if err := g.validatePutAutoscalingConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAutoscalingConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleSpannerInstancePartition) PutTimeouts(value *GoogleSpannerInstancePartitionTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1052,6 +1087,14 @@ func (g *jsiiProxy_GoogleSpannerInstancePartition) PutTimeouts(value *GoogleSpan
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleSpannerInstancePartition) ResetAutoscalingConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAutoscalingConfig",
+		nil, // no parameters
 	)
 }
 

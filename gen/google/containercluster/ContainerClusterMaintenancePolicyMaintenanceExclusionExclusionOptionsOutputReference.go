@@ -25,6 +25,9 @@ type ContainerClusterMaintenancePolicyMaintenanceExclusionExclusionOptionsOutput
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EndTimeBehavior() *string
+	SetEndTimeBehavior(val *string)
+	EndTimeBehaviorInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *ContainerClusterMaintenancePolicyMaintenanceExclusionExclusionOptions
@@ -64,6 +67,7 @@ type ContainerClusterMaintenancePolicyMaintenanceExclusionExclusionOptionsOutput
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetEndTimeBehavior()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -104,6 +108,26 @@ func (j *jsiiProxy_ContainerClusterMaintenancePolicyMaintenanceExclusionExclusio
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterMaintenancePolicyMaintenanceExclusionExclusionOptionsOutputReference) EndTimeBehavior() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"endTimeBehavior",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterMaintenancePolicyMaintenanceExclusionExclusionOptionsOutputReference) EndTimeBehaviorInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"endTimeBehaviorInput",
 		&returns,
 	)
 	return returns
@@ -215,6 +239,17 @@ func (j *jsiiProxy_ContainerClusterMaintenancePolicyMaintenanceExclusionExclusio
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerClusterMaintenancePolicyMaintenanceExclusionExclusionOptionsOutputReference)SetEndTimeBehavior(val *string) {
+	if err := j.validateSetEndTimeBehaviorParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"endTimeBehavior",
 		val,
 	)
 }
@@ -447,6 +482,14 @@ func (c *jsiiProxy_ContainerClusterMaintenancePolicyMaintenanceExclusionExclusio
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_ContainerClusterMaintenancePolicyMaintenanceExclusionExclusionOptionsOutputReference) ResetEndTimeBehavior() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEndTimeBehavior",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_ContainerClusterMaintenancePolicyMaintenanceExclusionExclusionOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

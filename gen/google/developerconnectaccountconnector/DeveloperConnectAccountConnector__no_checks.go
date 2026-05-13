@@ -72,7 +72,15 @@ func (d *jsiiProxy_DeveloperConnectAccountConnector) validateOverrideLogicalIdPa
 	return nil
 }
 
+func (d *jsiiProxy_DeveloperConnectAccountConnector) validatePutCustomOauthConfigParameters(value *DeveloperConnectAccountConnectorCustomOauthConfig) error {
+	return nil
+}
+
 func (d *jsiiProxy_DeveloperConnectAccountConnector) validatePutProviderOauthConfigParameters(value *DeveloperConnectAccountConnectorProviderOauthConfig) error {
+	return nil
+}
+
+func (d *jsiiProxy_DeveloperConnectAccountConnector) validatePutProxyConfigParameters(value *DeveloperConnectAccountConnectorProxyConfig) error {
 	return nil
 }
 
@@ -109,6 +117,10 @@ func (j *jsiiProxy_DeveloperConnectAccountConnector) validateSetConnectionParame
 }
 
 func (j *jsiiProxy_DeveloperConnectAccountConnector) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DeveloperConnectAccountConnector) validateSetEtagParameters(val *string) error {
 	return nil
 }
 

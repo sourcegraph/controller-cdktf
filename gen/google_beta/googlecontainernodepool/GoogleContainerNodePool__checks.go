@@ -248,6 +248,37 @@ func (g *jsiiProxy_GoogleContainerNodePool) validatePutNodeConfigParameters(valu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerNodePool) validatePutNodeDrainConfigParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*GoogleContainerNodePoolNodeDrainConfig:
+		value := value.(*[]*GoogleContainerNodePoolNodeDrainConfig)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*GoogleContainerNodePoolNodeDrainConfig:
+		value_ := value.([]*GoogleContainerNodePoolNodeDrainConfig)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*GoogleContainerNodePoolNodeDrainConfig; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerNodePool) validatePutPlacementPolicyParameters(value *GoogleContainerNodePoolPlacementPolicy) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

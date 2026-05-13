@@ -43,6 +43,15 @@ type GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EvictionMaxPodGracePeriodSeconds() *float64
+	SetEvictionMaxPodGracePeriodSeconds(val *float64)
+	EvictionMaxPodGracePeriodSecondsInput() *float64
+	EvictionMinimumReclaim() GoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference
+	EvictionMinimumReclaimInput() *GoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaim
+	EvictionSoft() GoogleContainerNodePoolNodeConfigKubeletConfigEvictionSoftOutputReference
+	EvictionSoftGracePeriod() GoogleContainerNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference
+	EvictionSoftGracePeriodInput() *GoogleContainerNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriod
+	EvictionSoftInput() *GoogleContainerNodePoolNodeConfigKubeletConfigEvictionSoft
 	// Experimental.
 	Fqn() *string
 	ImageGcHighThresholdPercent() *float64
@@ -62,9 +71,17 @@ type GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference interface {
 	InsecureKubeletReadonlyPortEnabledInput() *string
 	InternalValue() *GoogleContainerNodePoolNodeConfigKubeletConfig
 	SetInternalValue(val *GoogleContainerNodePoolNodeConfigKubeletConfig)
+	MaxParallelImagePulls() *float64
+	SetMaxParallelImagePulls(val *float64)
+	MaxParallelImagePullsInput() *float64
+	MemoryManager() GoogleContainerNodePoolNodeConfigKubeletConfigMemoryManagerOutputReference
+	MemoryManagerInput() *GoogleContainerNodePoolNodeConfigKubeletConfigMemoryManager
 	PodPidsLimit() *float64
 	SetPodPidsLimit(val *float64)
 	PodPidsLimitInput() *float64
+	SingleProcessOomKill() interface{}
+	SetSingleProcessOomKill(val interface{})
+	SingleProcessOomKillInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -73,6 +90,8 @@ type GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TopologyManager() GoogleContainerNodePoolNodeConfigKubeletConfigTopologyManagerOutputReference
+	TopologyManagerInput() *GoogleContainerNodePoolNodeConfigKubeletConfigTopologyManager
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -97,18 +116,31 @@ type GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutEvictionMinimumReclaim(value *GoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaim)
+	PutEvictionSoft(value *GoogleContainerNodePoolNodeConfigKubeletConfigEvictionSoft)
+	PutEvictionSoftGracePeriod(value *GoogleContainerNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriod)
+	PutMemoryManager(value *GoogleContainerNodePoolNodeConfigKubeletConfigMemoryManager)
+	PutTopologyManager(value *GoogleContainerNodePoolNodeConfigKubeletConfigTopologyManager)
 	ResetAllowedUnsafeSysctls()
 	ResetContainerLogMaxFiles()
 	ResetContainerLogMaxSize()
 	ResetCpuCfsQuota()
 	ResetCpuCfsQuotaPeriod()
 	ResetCpuManagerPolicy()
+	ResetEvictionMaxPodGracePeriodSeconds()
+	ResetEvictionMinimumReclaim()
+	ResetEvictionSoft()
+	ResetEvictionSoftGracePeriod()
 	ResetImageGcHighThresholdPercent()
 	ResetImageGcLowThresholdPercent()
 	ResetImageMaximumGcAge()
 	ResetImageMinimumGcAge()
 	ResetInsecureKubeletReadonlyPortEnabled()
+	ResetMaxParallelImagePulls()
+	ResetMemoryManager()
 	ResetPodPidsLimit()
+	ResetSingleProcessOomKill()
+	ResetTopologyManager()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -274,6 +306,86 @@ func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference
 	return returns
 }
 
+func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference) EvictionMaxPodGracePeriodSeconds() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"evictionMaxPodGracePeriodSeconds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference) EvictionMaxPodGracePeriodSecondsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"evictionMaxPodGracePeriodSecondsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference) EvictionMinimumReclaim() GoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference {
+	var returns GoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference
+	_jsii_.Get(
+		j,
+		"evictionMinimumReclaim",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference) EvictionMinimumReclaimInput() *GoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaim {
+	var returns *GoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaim
+	_jsii_.Get(
+		j,
+		"evictionMinimumReclaimInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference) EvictionSoft() GoogleContainerNodePoolNodeConfigKubeletConfigEvictionSoftOutputReference {
+	var returns GoogleContainerNodePoolNodeConfigKubeletConfigEvictionSoftOutputReference
+	_jsii_.Get(
+		j,
+		"evictionSoft",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference) EvictionSoftGracePeriod() GoogleContainerNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference {
+	var returns GoogleContainerNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference
+	_jsii_.Get(
+		j,
+		"evictionSoftGracePeriod",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference) EvictionSoftGracePeriodInput() *GoogleContainerNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriod {
+	var returns *GoogleContainerNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriod
+	_jsii_.Get(
+		j,
+		"evictionSoftGracePeriodInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference) EvictionSoftInput() *GoogleContainerNodePoolNodeConfigKubeletConfigEvictionSoft {
+	var returns *GoogleContainerNodePoolNodeConfigKubeletConfigEvictionSoft
+	_jsii_.Get(
+		j,
+		"evictionSoftInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -394,6 +506,46 @@ func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference
 	return returns
 }
 
+func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference) MaxParallelImagePulls() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxParallelImagePulls",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference) MaxParallelImagePullsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxParallelImagePullsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference) MemoryManager() GoogleContainerNodePoolNodeConfigKubeletConfigMemoryManagerOutputReference {
+	var returns GoogleContainerNodePoolNodeConfigKubeletConfigMemoryManagerOutputReference
+	_jsii_.Get(
+		j,
+		"memoryManager",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference) MemoryManagerInput() *GoogleContainerNodePoolNodeConfigKubeletConfigMemoryManager {
+	var returns *GoogleContainerNodePoolNodeConfigKubeletConfigMemoryManager
+	_jsii_.Get(
+		j,
+		"memoryManagerInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference) PodPidsLimit() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -414,6 +566,26 @@ func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference
 	return returns
 }
 
+func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference) SingleProcessOomKill() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"singleProcessOomKill",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference) SingleProcessOomKillInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"singleProcessOomKillInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -429,6 +601,26 @@ func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference) TopologyManager() GoogleContainerNodePoolNodeConfigKubeletConfigTopologyManagerOutputReference {
+	var returns GoogleContainerNodePoolNodeConfigKubeletConfigTopologyManagerOutputReference
+	_jsii_.Get(
+		j,
+		"topologyManager",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference) TopologyManagerInput() *GoogleContainerNodePoolNodeConfigKubeletConfigTopologyManager {
+	var returns *GoogleContainerNodePoolNodeConfigKubeletConfigTopologyManager
+	_jsii_.Get(
+		j,
+		"topologyManagerInput",
 		&returns,
 	)
 	return returns
@@ -550,6 +742,17 @@ func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference
 	)
 }
 
+func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference)SetEvictionMaxPodGracePeriodSeconds(val *float64) {
+	if err := j.validateSetEvictionMaxPodGracePeriodSecondsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"evictionMaxPodGracePeriodSeconds",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference)SetImageGcHighThresholdPercent(val *float64) {
 	if err := j.validateSetImageGcHighThresholdPercentParameters(val); err != nil {
 		panic(err)
@@ -616,6 +819,17 @@ func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference
 	)
 }
 
+func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference)SetMaxParallelImagePulls(val *float64) {
+	if err := j.validateSetMaxParallelImagePullsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxParallelImagePulls",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference)SetPodPidsLimit(val *float64) {
 	if err := j.validateSetPodPidsLimitParameters(val); err != nil {
 		panic(err)
@@ -623,6 +837,17 @@ func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference
 	_jsii_.Set(
 		j,
 		"podPidsLimit",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference)SetSingleProcessOomKill(val interface{}) {
+	if err := j.validateSetSingleProcessOomKillParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"singleProcessOomKill",
 		val,
 	)
 }
@@ -835,6 +1060,61 @@ func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference
 	return returns
 }
 
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference) PutEvictionMinimumReclaim(value *GoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaim) {
+	if err := g.validatePutEvictionMinimumReclaimParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putEvictionMinimumReclaim",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference) PutEvictionSoft(value *GoogleContainerNodePoolNodeConfigKubeletConfigEvictionSoft) {
+	if err := g.validatePutEvictionSoftParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putEvictionSoft",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference) PutEvictionSoftGracePeriod(value *GoogleContainerNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriod) {
+	if err := g.validatePutEvictionSoftGracePeriodParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putEvictionSoftGracePeriod",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference) PutMemoryManager(value *GoogleContainerNodePoolNodeConfigKubeletConfigMemoryManager) {
+	if err := g.validatePutMemoryManagerParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putMemoryManager",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference) PutTopologyManager(value *GoogleContainerNodePoolNodeConfigKubeletConfigTopologyManager) {
+	if err := g.validatePutTopologyManagerParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putTopologyManager",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference) ResetAllowedUnsafeSysctls() {
 	_jsii_.InvokeVoid(
 		g,
@@ -883,6 +1163,38 @@ func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference) ResetEvictionMaxPodGracePeriodSeconds() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEvictionMaxPodGracePeriodSeconds",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference) ResetEvictionMinimumReclaim() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEvictionMinimumReclaim",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference) ResetEvictionSoft() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEvictionSoft",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference) ResetEvictionSoftGracePeriod() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEvictionSoftGracePeriod",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference) ResetImageGcHighThresholdPercent() {
 	_jsii_.InvokeVoid(
 		g,
@@ -923,10 +1235,42 @@ func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference) ResetMaxParallelImagePulls() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMaxParallelImagePulls",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference) ResetMemoryManager() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMemoryManager",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference) ResetPodPidsLimit() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetPodPidsLimit",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference) ResetSingleProcessOomKill() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSingleProcessOomKill",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference) ResetTopologyManager() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTopologyManager",
 		nil, // no parameters
 	)
 }

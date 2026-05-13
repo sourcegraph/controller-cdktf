@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlestoragebucketiampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_storage_bucket_iam_policy google_storage_bucket_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_storage_bucket_iam_policy google_storage_bucket_iam_policy}.
 type GoogleStorageBucketIamPolicy interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -68,6 +68,8 @@ type GoogleStorageBucketIamPolicy interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() GoogleStorageBucketIamPolicyTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -111,10 +113,12 @@ type GoogleStorageBucketIamPolicy interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutTimeouts(value *GoogleStorageBucketIamPolicyTimeouts)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -363,8 +367,28 @@ func (j *jsiiProxy_GoogleStorageBucketIamPolicy) TerraformResourceType() *string
 	return returns
 }
 
+func (j *jsiiProxy_GoogleStorageBucketIamPolicy) Timeouts() GoogleStorageBucketIamPolicyTimeoutsOutputReference {
+	var returns GoogleStorageBucketIamPolicyTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_storage_bucket_iam_policy google_storage_bucket_iam_policy} Resource.
+func (j *jsiiProxy_GoogleStorageBucketIamPolicy) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_storage_bucket_iam_policy google_storage_bucket_iam_policy} Resource.
 func NewGoogleStorageBucketIamPolicy(scope constructs.Construct, id *string, config *GoogleStorageBucketIamPolicyConfig) GoogleStorageBucketIamPolicy {
 	_init_.Initialize()
 
@@ -382,7 +406,7 @@ func NewGoogleStorageBucketIamPolicy(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_storage_bucket_iam_policy google_storage_bucket_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_storage_bucket_iam_policy google_storage_bucket_iam_policy} Resource.
 func NewGoogleStorageBucketIamPolicy_Override(g GoogleStorageBucketIamPolicy, scope constructs.Construct, id *string, config *GoogleStorageBucketIamPolicyConfig) {
 	_init_.Initialize()
 
@@ -847,6 +871,17 @@ func (g *jsiiProxy_GoogleStorageBucketIamPolicy) OverrideLogicalId(newLogicalId 
 	)
 }
 
+func (g *jsiiProxy_GoogleStorageBucketIamPolicy) PutTimeouts(value *GoogleStorageBucketIamPolicyTimeouts) {
+	if err := g.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleStorageBucketIamPolicy) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
@@ -859,6 +894,14 @@ func (g *jsiiProxy_GoogleStorageBucketIamPolicy) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleStorageBucketIamPolicy) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

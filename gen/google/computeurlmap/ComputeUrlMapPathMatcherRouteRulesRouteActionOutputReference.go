@@ -10,6 +10,8 @@ import (
 
 type ComputeUrlMapPathMatcherRouteRulesRouteActionOutputReference interface {
 	cdktf.ComplexObject
+	CachePolicy() ComputeUrlMapPathMatcherRouteRulesRouteActionCachePolicyOutputReference
+	CachePolicyInput() *ComputeUrlMapPathMatcherRouteRulesRouteActionCachePolicy
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -77,6 +79,7 @@ type ComputeUrlMapPathMatcherRouteRulesRouteActionOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutCachePolicy(value *ComputeUrlMapPathMatcherRouteRulesRouteActionCachePolicy)
 	PutCorsPolicy(value *ComputeUrlMapPathMatcherRouteRulesRouteActionCorsPolicy)
 	PutFaultInjectionPolicy(value *ComputeUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicy)
 	PutMaxStreamDuration(value *ComputeUrlMapPathMatcherRouteRulesRouteActionMaxStreamDuration)
@@ -85,6 +88,7 @@ type ComputeUrlMapPathMatcherRouteRulesRouteActionOutputReference interface {
 	PutTimeout(value *ComputeUrlMapPathMatcherRouteRulesRouteActionTimeout)
 	PutUrlRewrite(value *ComputeUrlMapPathMatcherRouteRulesRouteActionUrlRewrite)
 	PutWeightedBackendServices(value interface{})
+	ResetCachePolicy()
 	ResetCorsPolicy()
 	ResetFaultInjectionPolicy()
 	ResetMaxStreamDuration()
@@ -106,6 +110,26 @@ type ComputeUrlMapPathMatcherRouteRulesRouteActionOutputReference interface {
 // The jsii proxy struct for ComputeUrlMapPathMatcherRouteRulesRouteActionOutputReference
 type jsiiProxy_ComputeUrlMapPathMatcherRouteRulesRouteActionOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesRouteActionOutputReference) CachePolicy() ComputeUrlMapPathMatcherRouteRulesRouteActionCachePolicyOutputReference {
+	var returns ComputeUrlMapPathMatcherRouteRulesRouteActionCachePolicyOutputReference
+	_jsii_.Get(
+		j,
+		"cachePolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesRouteActionOutputReference) CachePolicyInput() *ComputeUrlMapPathMatcherRouteRulesRouteActionCachePolicy {
+	var returns *ComputeUrlMapPathMatcherRouteRulesRouteActionCachePolicy
+	_jsii_.Get(
+		j,
+		"cachePolicyInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesRouteActionOutputReference) ComplexObjectIndex() interface{} {
@@ -607,6 +631,17 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesRouteActionOutputReference)
 	return returns
 }
 
+func (c *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesRouteActionOutputReference) PutCachePolicy(value *ComputeUrlMapPathMatcherRouteRulesRouteActionCachePolicy) {
+	if err := c.validatePutCachePolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putCachePolicy",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesRouteActionOutputReference) PutCorsPolicy(value *ComputeUrlMapPathMatcherRouteRulesRouteActionCorsPolicy) {
 	if err := c.validatePutCorsPolicyParameters(value); err != nil {
 		panic(err)
@@ -692,6 +727,14 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesRouteActionOutputReference)
 		c,
 		"putWeightedBackendServices",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesRouteActionOutputReference) ResetCachePolicy() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCachePolicy",
+		nil, // no parameters
 	)
 }
 

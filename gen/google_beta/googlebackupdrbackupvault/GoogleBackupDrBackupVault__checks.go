@@ -204,6 +204,17 @@ func (g *jsiiProxy_GoogleBackupDrBackupVault) validateOverrideLogicalIdParameter
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBackupDrBackupVault) validatePutEncryptionConfigParameters(value *GoogleBackupDrBackupVaultEncryptionConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBackupDrBackupVault) validatePutTimeoutsParameters(value *GoogleBackupDrBackupVaultTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -292,6 +303,14 @@ func (j *jsiiProxy_GoogleBackupDrBackupVault) validateSetAnnotationsParameters(v
 }
 
 func (j *jsiiProxy_GoogleBackupDrBackupVault) validateSetBackupMinimumEnforcedRetentionDurationParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleBackupDrBackupVault) validateSetBackupRetentionInheritanceParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

@@ -101,6 +101,17 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) validatePu
 	return nil
 }
 
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) validatePutBootDiskParameters(value *ContainerClusterNodePoolNodeConfigBootDisk) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) validatePutConfidentialNodesParameters(value *ContainerClusterNodePoolNodeConfigConfidentialNodes) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -243,6 +254,17 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) validatePu
 }
 
 func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) validatePutReservationAffinityParameters(value *ContainerClusterNodePoolNodeConfigReservationAffinity) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) validatePutSandboxConfigParameters(value *ContainerClusterNodePoolNodeConfigSandboxConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -457,6 +479,26 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) validateSe
 }
 
 func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) validateSetEnableConfidentialStorageParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) validateSetFlexStartParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

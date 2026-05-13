@@ -72,6 +72,10 @@ func (p *jsiiProxy_PrivatecaCaPool) validateOverrideLogicalIdParameters(newLogic
 	return nil
 }
 
+func (p *jsiiProxy_PrivatecaCaPool) validatePutEncryptionSpecParameters(value *PrivatecaCaPoolEncryptionSpec) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrivatecaCaPool) validatePutIssuancePolicyParameters(value *PrivatecaCaPoolIssuancePolicy) error {
 	return nil
 }

@@ -32,6 +32,9 @@ type ContainerClusterFleetOutputReference interface {
 	Membership() *string
 	MembershipId() *string
 	MembershipLocation() *string
+	MembershipType() *string
+	SetMembershipType(val *string)
+	MembershipTypeInput() *string
 	PreRegistered() cdktf.IResolvable
 	Project() *string
 	SetProject(val *string)
@@ -68,6 +71,7 @@ type ContainerClusterFleetOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetMembershipType()
 	ResetProject()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -159,6 +163,26 @@ func (j *jsiiProxy_ContainerClusterFleetOutputReference) MembershipLocation() *s
 	_jsii_.Get(
 		j,
 		"membershipLocation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterFleetOutputReference) MembershipType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"membershipType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterFleetOutputReference) MembershipTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"membershipTypeInput",
 		&returns,
 	)
 	return returns
@@ -271,6 +295,17 @@ func (j *jsiiProxy_ContainerClusterFleetOutputReference)SetInternalValue(val *Co
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerClusterFleetOutputReference)SetMembershipType(val *string) {
+	if err := j.validateSetMembershipTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"membershipType",
 		val,
 	)
 }
@@ -492,6 +527,14 @@ func (c *jsiiProxy_ContainerClusterFleetOutputReference) InterpolationForAttribu
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_ContainerClusterFleetOutputReference) ResetMembershipType() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetMembershipType",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_ContainerClusterFleetOutputReference) ResetProject() {

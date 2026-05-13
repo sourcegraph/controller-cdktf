@@ -1,0 +1,6 @@
+package datagooglecomputeregioninstancegroupmanager
+
+
+type DataGoogleComputeRegionInstanceGroupManagerResourcePolicies struct {
+}
+

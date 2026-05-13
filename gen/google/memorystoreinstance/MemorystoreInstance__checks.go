@@ -226,6 +226,37 @@ func (m *jsiiProxy_MemorystoreInstance) validatePutCrossInstanceReplicationConfi
 	return nil
 }
 
+func (m *jsiiProxy_MemorystoreInstance) validatePutDesiredAutoCreatedEndpointsParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*MemorystoreInstanceDesiredAutoCreatedEndpoints:
+		value := value.(*[]*MemorystoreInstanceDesiredAutoCreatedEndpoints)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*MemorystoreInstanceDesiredAutoCreatedEndpoints:
+		value_ := value.([]*MemorystoreInstanceDesiredAutoCreatedEndpoints)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*MemorystoreInstanceDesiredAutoCreatedEndpoints; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (m *jsiiProxy_MemorystoreInstance) validatePutDesiredPscAutoConnectionsParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -513,6 +544,14 @@ func (j *jsiiProxy_MemorystoreInstance) validateSetInstanceIdParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_MemorystoreInstance) validateSetKmsKeyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_MemorystoreInstance) validateSetLabelsParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -530,6 +569,14 @@ func (j *jsiiProxy_MemorystoreInstance) validateSetLifecycleParameters(val *cdkt
 }
 
 func (j *jsiiProxy_MemorystoreInstance) validateSetLocationParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_MemorystoreInstance) validateSetMaintenanceVersionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -608,6 +655,22 @@ func (j *jsiiProxy_MemorystoreInstance) validateSetProvisionersParameters(val *[
 }
 
 func (j *jsiiProxy_MemorystoreInstance) validateSetReplicaCountParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_MemorystoreInstance) validateSetServerCaModeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_MemorystoreInstance) validateSetServerCaPoolParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

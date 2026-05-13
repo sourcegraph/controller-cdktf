@@ -1,0 +1,6 @@
+package datagooglebigquerytable
+
+
+type DataGoogleBigqueryTableExternalDataConfigurationBigtableOptionsColumnFamily struct {
+}
+

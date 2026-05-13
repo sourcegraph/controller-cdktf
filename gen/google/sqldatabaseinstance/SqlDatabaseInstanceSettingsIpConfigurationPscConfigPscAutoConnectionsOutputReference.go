@@ -23,6 +23,7 @@ type SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutput
 	ConsumerNetwork() *string
 	SetConsumerNetwork(val *string)
 	ConsumerNetworkInput() *string
+	ConsumerNetworkStatus() *string
 	ConsumerServiceProjectId() *string
 	SetConsumerServiceProjectId(val *string)
 	ConsumerServiceProjectIdInput() *string
@@ -35,6 +36,8 @@ type SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutput
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	IpAddress() *string
+	Status() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -123,6 +126,16 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoCon
 	return returns
 }
 
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference) ConsumerNetworkStatus() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"consumerNetworkStatus",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference) ConsumerServiceProjectId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -168,6 +181,26 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoCon
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference) IpAddress() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipAddress",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference) Status() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"status",
 		&returns,
 	)
 	return returns

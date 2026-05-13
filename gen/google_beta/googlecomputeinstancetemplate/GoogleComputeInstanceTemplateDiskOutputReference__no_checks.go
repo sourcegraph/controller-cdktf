@@ -60,6 +60,10 @@ func (g *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) validateRes
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) validateSetArchitectureParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) validateSetAutoDeleteParameters(val interface{}) error {
 	return nil
 }
@@ -89,6 +93,10 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) validateSet
 }
 
 func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) validateSetDiskTypeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) validateSetGuestOsFeaturesParameters(val *[]*string) error {
 	return nil
 }
 
@@ -133,6 +141,10 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) validateSet
 }
 
 func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) validateSetSourceSnapshotParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) validateSetStoragePoolParameters(val *string) error {
 	return nil
 }
 

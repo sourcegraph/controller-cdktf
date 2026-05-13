@@ -25,8 +25,17 @@ type NetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference interf
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	ExcludeExportRanges() *[]*string
+	SetExcludeExportRanges(val *[]*string)
+	ExcludeExportRangesInput() *[]*string
+	ExcludeImportRanges() *[]*string
+	SetExcludeImportRanges(val *[]*string)
+	ExcludeImportRangesInput() *[]*string
 	// Experimental.
 	Fqn() *string
+	IncludeExportRanges() *[]*string
+	SetIncludeExportRanges(val *[]*string)
+	IncludeExportRangesInput() *[]*string
 	IncludeImportRanges() *[]*string
 	SetIncludeImportRanges(val *[]*string)
 	IncludeImportRangesInput() *[]*string
@@ -70,6 +79,9 @@ type NetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference interf
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetExcludeExportRanges()
+	ResetExcludeImportRanges()
+	ResetIncludeExportRanges()
 	ResetIncludeImportRanges()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -116,11 +128,71 @@ func (j *jsiiProxy_NetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputRe
 	return returns
 }
 
+func (j *jsiiProxy_NetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference) ExcludeExportRanges() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"excludeExportRanges",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference) ExcludeExportRangesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"excludeExportRangesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference) ExcludeImportRanges() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"excludeImportRanges",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference) ExcludeImportRangesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"excludeImportRangesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference) IncludeExportRanges() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"includeExportRanges",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference) IncludeExportRangesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"includeExportRangesInput",
 		&returns,
 	)
 	return returns
@@ -262,6 +334,39 @@ func (j *jsiiProxy_NetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputRe
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference)SetExcludeExportRanges(val *[]*string) {
+	if err := j.validateSetExcludeExportRangesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"excludeExportRanges",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference)SetExcludeImportRanges(val *[]*string) {
+	if err := j.validateSetExcludeImportRangesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"excludeImportRanges",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference)SetIncludeExportRanges(val *[]*string) {
+	if err := j.validateSetIncludeExportRangesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"includeExportRanges",
 		val,
 	)
 }
@@ -516,6 +621,30 @@ func (n *jsiiProxy_NetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputRe
 	)
 
 	return returns
+}
+
+func (n *jsiiProxy_NetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference) ResetExcludeExportRanges() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetExcludeExportRanges",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference) ResetExcludeImportRanges() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetExcludeImportRanges",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference) ResetIncludeExportRanges() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetIncludeExportRanges",
+		nil, // no parameters
+	)
 }
 
 func (n *jsiiProxy_NetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference) ResetIncludeImportRanges() {

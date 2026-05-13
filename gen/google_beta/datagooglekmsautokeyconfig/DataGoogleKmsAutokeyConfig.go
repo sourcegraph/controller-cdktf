@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglekmsautokeyconfig/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_kms_autokey_config google_kms_autokey_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/data-sources/google_kms_autokey_config google_kms_autokey_config}.
 type DataGoogleKmsAutokeyConfig interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -24,6 +24,7 @@ type DataGoogleKmsAutokeyConfig interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Etag() *string
 	Folder() *string
 	SetFolder(val *string)
 	FolderInput() *string
@@ -39,6 +40,7 @@ type DataGoogleKmsAutokeyConfig interface {
 	SetId(val *string)
 	IdInput() *string
 	KeyProject() *string
+	KeyProjectResolutionMode() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -145,6 +147,16 @@ func (j *jsiiProxy_DataGoogleKmsAutokeyConfig) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleKmsAutokeyConfig) Etag() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"etag",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleKmsAutokeyConfig) Folder() *string {
 	var returns *string
 	_jsii_.Get(
@@ -225,6 +237,16 @@ func (j *jsiiProxy_DataGoogleKmsAutokeyConfig) KeyProject() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleKmsAutokeyConfig) KeyProjectResolutionMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyProjectResolutionMode",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleKmsAutokeyConfig) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -296,7 +318,7 @@ func (j *jsiiProxy_DataGoogleKmsAutokeyConfig) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_kms_autokey_config google_kms_autokey_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/data-sources/google_kms_autokey_config google_kms_autokey_config} Data Source.
 func NewDataGoogleKmsAutokeyConfig(scope constructs.Construct, id *string, config *DataGoogleKmsAutokeyConfigConfig) DataGoogleKmsAutokeyConfig {
 	_init_.Initialize()
 
@@ -314,7 +336,7 @@ func NewDataGoogleKmsAutokeyConfig(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_kms_autokey_config google_kms_autokey_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/data-sources/google_kms_autokey_config google_kms_autokey_config} Data Source.
 func NewDataGoogleKmsAutokeyConfig_Override(d DataGoogleKmsAutokeyConfig, scope constructs.Construct, id *string, config *DataGoogleKmsAutokeyConfigConfig) {
 	_init_.Initialize()
 

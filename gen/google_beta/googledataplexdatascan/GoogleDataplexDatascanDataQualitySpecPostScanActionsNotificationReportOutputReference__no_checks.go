@@ -1,0 +1,90 @@
+//go:build no_runtime_type_checking
+
+package googledataplexdatascan
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecPostScanActionsNotificationReportOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecPostScanActionsNotificationReportOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecPostScanActionsNotificationReportOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecPostScanActionsNotificationReportOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecPostScanActionsNotificationReportOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecPostScanActionsNotificationReportOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecPostScanActionsNotificationReportOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecPostScanActionsNotificationReportOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecPostScanActionsNotificationReportOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecPostScanActionsNotificationReportOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecPostScanActionsNotificationReportOutputReference) validatePutJobEndTriggerParameters(value *GoogleDataplexDatascanDataQualitySpecPostScanActionsNotificationReportJobEndTrigger) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecPostScanActionsNotificationReportOutputReference) validatePutJobFailureTriggerParameters(value *GoogleDataplexDatascanDataQualitySpecPostScanActionsNotificationReportJobFailureTrigger) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecPostScanActionsNotificationReportOutputReference) validatePutRecipientsParameters(value *GoogleDataplexDatascanDataQualitySpecPostScanActionsNotificationReportRecipients) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecPostScanActionsNotificationReportOutputReference) validatePutScoreThresholdTriggerParameters(value *GoogleDataplexDatascanDataQualitySpecPostScanActionsNotificationReportScoreThresholdTrigger) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecPostScanActionsNotificationReportOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecPostScanActionsNotificationReportOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecPostScanActionsNotificationReportOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecPostScanActionsNotificationReportOutputReference) validateSetInternalValueParameters(val *GoogleDataplexDatascanDataQualitySpecPostScanActionsNotificationReport) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecPostScanActionsNotificationReportOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecPostScanActionsNotificationReportOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func validateNewGoogleDataplexDatascanDataQualitySpecPostScanActionsNotificationReportOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+	return nil
+}
+

@@ -120,6 +120,10 @@ func (j *jsiiProxy_GoogleComputeNetworkFirewallPolicyWithRules) validateSetNameP
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeNetworkFirewallPolicyWithRules) validateSetPolicyTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeNetworkFirewallPolicyWithRules) validateSetProjectParameters(val *string) error {
 	return nil
 }

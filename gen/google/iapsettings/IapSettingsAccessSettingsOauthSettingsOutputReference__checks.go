@@ -98,6 +98,22 @@ func (i *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference) valida
 	return nil
 }
 
+func (j *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference) validateSetClientIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference) validateSetClientSecretParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:

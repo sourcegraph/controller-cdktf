@@ -76,6 +76,10 @@ func (c *jsiiProxy_ChronicleReferenceList) validatePutEntriesParameters(value in
 	return nil
 }
 
+func (c *jsiiProxy_ChronicleReferenceList) validatePutScopeInfoParameters(value *ChronicleReferenceListScopeInfo) error {
+	return nil
+}
+
 func (c *jsiiProxy_ChronicleReferenceList) validatePutTimeoutsParameters(value *ChronicleReferenceListTimeouts) error {
 	return nil
 }

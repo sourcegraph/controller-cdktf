@@ -72,6 +72,10 @@ func (n *jsiiProxy_NetappBackupVault) validateOverrideLogicalIdParameters(newLog
 	return nil
 }
 
+func (n *jsiiProxy_NetappBackupVault) validatePutBackupRetentionPolicyParameters(value *NetappBackupVaultBackupRetentionPolicy) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetappBackupVault) validatePutTimeoutsParameters(value *NetappBackupVaultTimeouts) error {
 	return nil
 }
@@ -92,6 +96,14 @@ func validateNetappBackupVault_IsTerraformResourceParameters(x interface{}) erro
 	return nil
 }
 
+func (j *jsiiProxy_NetappBackupVault) validateSetBackupRegionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NetappBackupVault) validateSetBackupVaultTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetappBackupVault) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -105,6 +117,10 @@ func (j *jsiiProxy_NetappBackupVault) validateSetDescriptionParameters(val *stri
 }
 
 func (j *jsiiProxy_NetappBackupVault) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NetappBackupVault) validateSetKmsConfigParameters(val *string) error {
 	return nil
 }
 

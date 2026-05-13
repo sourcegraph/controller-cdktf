@@ -64,6 +64,10 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicationClusterOutputReference) v
 	return nil
 }
 
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicationClusterOutputReference) validateSetPsaWriteEndpointParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicationClusterOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

@@ -191,7 +191,7 @@ func (j *jsiiProxy_StorageBucketRetentionPolicyOutputReference) validateSetIsLoc
 	return nil
 }
 
-func (j *jsiiProxy_StorageBucketRetentionPolicyOutputReference) validateSetRetentionPeriodParameters(val *float64) error {
+func (j *jsiiProxy_StorageBucketRetentionPolicyOutputReference) validateSetRetentionPeriodParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

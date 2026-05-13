@@ -60,6 +60,10 @@ func (j *jsiiProxy_GoogleComputeServiceAttachmentConsumerAcceptListsOutputRefere
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeServiceAttachmentConsumerAcceptListsOutputReference) validateSetEndpointUrlParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeServiceAttachmentConsumerAcceptListsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

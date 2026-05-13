@@ -60,6 +60,10 @@ func (j *jsiiProxy_GoogleNetworkSecuritySecurityProfileCustomMirroringProfileOut
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetworkSecuritySecurityProfileCustomMirroringProfileOutputReference) validateSetMirroringDeploymentGroupsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetworkSecuritySecurityProfileCustomMirroringProfileOutputReference) validateSetMirroringEndpointGroupParameters(val *string) error {
 	return nil
 }

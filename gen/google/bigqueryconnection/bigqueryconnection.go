@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/bigqueryconnection/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/bigquery_connection google_bigquery_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection google_bigquery_connection}.
 type BigqueryConnection interface {
 	cdktf.TerraformResource
 	Aws() BigqueryConnectionAwsOutputReference
@@ -24,6 +24,8 @@ type BigqueryConnection interface {
 	CloudSpannerInput() *BigqueryConnectionCloudSpanner
 	CloudSql() BigqueryConnectionCloudSqlOutputReference
 	CloudSqlInput() *BigqueryConnectionCloudSql
+	Configuration() BigqueryConnectionConfigurationOutputReference
+	ConfigurationInput() *BigqueryConnectionConfiguration
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -143,6 +145,7 @@ type BigqueryConnection interface {
 	PutCloudResource(value *BigqueryConnectionCloudResource)
 	PutCloudSpanner(value *BigqueryConnectionCloudSpanner)
 	PutCloudSql(value *BigqueryConnectionCloudSql)
+	PutConfiguration(value *BigqueryConnectionConfiguration)
 	PutSpark(value *BigqueryConnectionSpark)
 	PutTimeouts(value *BigqueryConnectionTimeouts)
 	ResetAws()
@@ -150,6 +153,7 @@ type BigqueryConnection interface {
 	ResetCloudResource()
 	ResetCloudSpanner()
 	ResetCloudSql()
+	ResetConfiguration()
 	ResetConnectionId()
 	ResetDescription()
 	ResetFriendlyName()
@@ -285,6 +289,26 @@ func (j *jsiiProxy_BigqueryConnection) CloudSqlInput() *BigqueryConnectionCloudS
 	_jsii_.Get(
 		j,
 		"cloudSqlInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryConnection) Configuration() BigqueryConnectionConfigurationOutputReference {
+	var returns BigqueryConnectionConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"configuration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryConnection) ConfigurationInput() *BigqueryConnectionConfiguration {
+	var returns *BigqueryConnectionConfiguration
+	_jsii_.Get(
+		j,
+		"configurationInput",
 		&returns,
 	)
 	return returns
@@ -641,7 +665,7 @@ func (j *jsiiProxy_BigqueryConnection) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/bigquery_connection google_bigquery_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection google_bigquery_connection} Resource.
 func NewBigqueryConnection(scope constructs.Construct, id *string, config *BigqueryConnectionConfig) BigqueryConnection {
 	_init_.Initialize()
 
@@ -659,7 +683,7 @@ func NewBigqueryConnection(scope constructs.Construct, id *string, config *Bigqu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/bigquery_connection google_bigquery_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection google_bigquery_connection} Resource.
 func NewBigqueryConnection_Override(b BigqueryConnection, scope constructs.Construct, id *string, config *BigqueryConnectionConfig) {
 	_init_.Initialize()
 
@@ -1223,6 +1247,17 @@ func (b *jsiiProxy_BigqueryConnection) PutCloudSql(value *BigqueryConnectionClou
 	)
 }
 
+func (b *jsiiProxy_BigqueryConnection) PutConfiguration(value *BigqueryConnectionConfiguration) {
+	if err := b.validatePutConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BigqueryConnection) PutSpark(value *BigqueryConnectionSpark) {
 	if err := b.validatePutSparkParameters(value); err != nil {
 		panic(err)
@@ -1281,6 +1316,14 @@ func (b *jsiiProxy_BigqueryConnection) ResetCloudSql() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetCloudSql",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryConnection) ResetConfiguration() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetConfiguration",
 		nil, // no parameters
 	)
 }

@@ -35,11 +35,16 @@ type CloudRunV2JobTemplateTemplateOutputReference interface {
 	ExecutionEnvironmentInput() *string
 	// Experimental.
 	Fqn() *string
+	GpuZonalRedundancyDisabled() interface{}
+	SetGpuZonalRedundancyDisabled(val interface{})
+	GpuZonalRedundancyDisabledInput() interface{}
 	InternalValue() *CloudRunV2JobTemplateTemplate
 	SetInternalValue(val *CloudRunV2JobTemplateTemplate)
 	MaxRetries() *float64
 	SetMaxRetries(val *float64)
 	MaxRetriesInput() *float64
+	NodeSelector() CloudRunV2JobTemplateTemplateNodeSelectorOutputReference
+	NodeSelectorInput() *CloudRunV2JobTemplateTemplateNodeSelector
 	ServiceAccount() *string
 	SetServiceAccount(val *string)
 	ServiceAccountInput() *string
@@ -83,12 +88,15 @@ type CloudRunV2JobTemplateTemplateOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutContainers(value interface{})
+	PutNodeSelector(value *CloudRunV2JobTemplateTemplateNodeSelector)
 	PutVolumes(value interface{})
 	PutVpcAccess(value *CloudRunV2JobTemplateTemplateVpcAccess)
 	ResetContainers()
 	ResetEncryptionKey()
 	ResetExecutionEnvironment()
+	ResetGpuZonalRedundancyDisabled()
 	ResetMaxRetries()
+	ResetNodeSelector()
 	ResetServiceAccount()
 	ResetTimeout()
 	ResetVolumes()
@@ -208,6 +216,26 @@ func (j *jsiiProxy_CloudRunV2JobTemplateTemplateOutputReference) Fqn() *string {
 	return returns
 }
 
+func (j *jsiiProxy_CloudRunV2JobTemplateTemplateOutputReference) GpuZonalRedundancyDisabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"gpuZonalRedundancyDisabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2JobTemplateTemplateOutputReference) GpuZonalRedundancyDisabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"gpuZonalRedundancyDisabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudRunV2JobTemplateTemplateOutputReference) InternalValue() *CloudRunV2JobTemplateTemplate {
 	var returns *CloudRunV2JobTemplateTemplate
 	_jsii_.Get(
@@ -233,6 +261,26 @@ func (j *jsiiProxy_CloudRunV2JobTemplateTemplateOutputReference) MaxRetriesInput
 	_jsii_.Get(
 		j,
 		"maxRetriesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2JobTemplateTemplateOutputReference) NodeSelector() CloudRunV2JobTemplateTemplateNodeSelectorOutputReference {
+	var returns CloudRunV2JobTemplateTemplateNodeSelectorOutputReference
+	_jsii_.Get(
+		j,
+		"nodeSelector",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2JobTemplateTemplateOutputReference) NodeSelectorInput() *CloudRunV2JobTemplateTemplateNodeSelector {
+	var returns *CloudRunV2JobTemplateTemplateNodeSelector
+	_jsii_.Get(
+		j,
+		"nodeSelectorInput",
 		&returns,
 	)
 	return returns
@@ -406,6 +454,17 @@ func (j *jsiiProxy_CloudRunV2JobTemplateTemplateOutputReference)SetExecutionEnvi
 	_jsii_.Set(
 		j,
 		"executionEnvironment",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudRunV2JobTemplateTemplateOutputReference)SetGpuZonalRedundancyDisabled(val interface{}) {
+	if err := j.validateSetGpuZonalRedundancyDisabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"gpuZonalRedundancyDisabled",
 		val,
 	)
 }
@@ -673,6 +732,17 @@ func (c *jsiiProxy_CloudRunV2JobTemplateTemplateOutputReference) PutContainers(v
 	)
 }
 
+func (c *jsiiProxy_CloudRunV2JobTemplateTemplateOutputReference) PutNodeSelector(value *CloudRunV2JobTemplateTemplateNodeSelector) {
+	if err := c.validatePutNodeSelectorParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putNodeSelector",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CloudRunV2JobTemplateTemplateOutputReference) PutVolumes(value interface{}) {
 	if err := c.validatePutVolumesParameters(value); err != nil {
 		panic(err)
@@ -719,10 +789,26 @@ func (c *jsiiProxy_CloudRunV2JobTemplateTemplateOutputReference) ResetExecutionE
 	)
 }
 
+func (c *jsiiProxy_CloudRunV2JobTemplateTemplateOutputReference) ResetGpuZonalRedundancyDisabled() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetGpuZonalRedundancyDisabled",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_CloudRunV2JobTemplateTemplateOutputReference) ResetMaxRetries() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetMaxRetries",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudRunV2JobTemplateTemplateOutputReference) ResetNodeSelector() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetNodeSelector",
 		nil, // no parameters
 	)
 }

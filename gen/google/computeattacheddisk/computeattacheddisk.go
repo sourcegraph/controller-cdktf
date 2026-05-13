@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/computeattacheddisk/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_attached_disk google_compute_attached_disk}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_attached_disk google_compute_attached_disk}.
 type ComputeAttachedDisk interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -497,7 +497,7 @@ func (j *jsiiProxy_ComputeAttachedDisk) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_attached_disk google_compute_attached_disk} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_attached_disk google_compute_attached_disk} Resource.
 func NewComputeAttachedDisk(scope constructs.Construct, id *string, config *ComputeAttachedDiskConfig) ComputeAttachedDisk {
 	_init_.Initialize()
 
@@ -515,7 +515,7 @@ func NewComputeAttachedDisk(scope constructs.Construct, id *string, config *Comp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_attached_disk google_compute_attached_disk} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_attached_disk google_compute_attached_disk} Resource.
 func NewComputeAttachedDisk_Override(c ComputeAttachedDisk, scope constructs.Construct, id *string, config *ComputeAttachedDiskConfig) {
 	_init_.Initialize()
 

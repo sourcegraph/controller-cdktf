@@ -10,7 +10,7 @@ type GoogleWorkbenchInstanceGceSetupNetworkInterfacesAccessConfigs struct {
 	// specify a static external IP address, it must live in the same region as
 	// the zone of the instance.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_workbench_instance#external_ip GoogleWorkbenchInstance#external_ip}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_workbench_instance#external_ip GoogleWorkbenchInstance#external_ip}
 	ExternalIp *string `field:"required" json:"externalIp" yaml:"externalIp"`
 }
 

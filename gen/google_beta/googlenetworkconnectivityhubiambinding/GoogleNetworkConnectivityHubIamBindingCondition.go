@@ -1,0 +1,12 @@
+package googlenetworkconnectivityhubiambinding
+
+
+type GoogleNetworkConnectivityHubIamBindingCondition struct {
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_network_connectivity_hub_iam_binding#expression GoogleNetworkConnectivityHubIamBinding#expression}.
+	Expression *string `field:"required" json:"expression" yaml:"expression"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_network_connectivity_hub_iam_binding#title GoogleNetworkConnectivityHubIamBinding#title}.
+	Title *string `field:"required" json:"title" yaml:"title"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_network_connectivity_hub_iam_binding#description GoogleNetworkConnectivityHubIamBinding#description}.
+	Description *string `field:"optional" json:"description" yaml:"description"`
+}
+

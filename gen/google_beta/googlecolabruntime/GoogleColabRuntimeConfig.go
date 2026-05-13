@@ -21,48 +21,48 @@ type GoogleColabRuntimeConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Required. The display name of the Runtime.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_colab_runtime#display_name GoogleColabRuntime#display_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_colab_runtime#display_name GoogleColabRuntime#display_name}
 	DisplayName *string `field:"required" json:"displayName" yaml:"displayName"`
 	// The location for the resource: https://cloud.google.com/colab/docs/locations.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_colab_runtime#location GoogleColabRuntime#location}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_colab_runtime#location GoogleColabRuntime#location}
 	Location *string `field:"required" json:"location" yaml:"location"`
 	// The user email of the NotebookRuntime.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_colab_runtime#runtime_user GoogleColabRuntime#runtime_user}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_colab_runtime#runtime_user GoogleColabRuntime#runtime_user}
 	RuntimeUser *string `field:"required" json:"runtimeUser" yaml:"runtimeUser"`
 	// Triggers an upgrade anytime the runtime is started if it is upgradable.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_colab_runtime#auto_upgrade GoogleColabRuntime#auto_upgrade}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_colab_runtime#auto_upgrade GoogleColabRuntime#auto_upgrade}
 	AutoUpgrade interface{} `field:"optional" json:"autoUpgrade" yaml:"autoUpgrade"`
 	// The description of the Runtime.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_colab_runtime#description GoogleColabRuntime#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_colab_runtime#description GoogleColabRuntime#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// Desired state of the Colab Runtime.
 	//
 	// Set this field to 'RUNNING' to start the runtime, and 'STOPPED' to stop it.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_colab_runtime#desired_state GoogleColabRuntime#desired_state}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_colab_runtime#desired_state GoogleColabRuntime#desired_state}
 	DesiredState *string `field:"optional" json:"desiredState" yaml:"desiredState"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_colab_runtime#id GoogleColabRuntime#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_colab_runtime#id GoogleColabRuntime#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// The resource name of the Runtime.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_colab_runtime#name GoogleColabRuntime#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_colab_runtime#name GoogleColabRuntime#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// notebook_runtime_template_ref block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_colab_runtime#notebook_runtime_template_ref GoogleColabRuntime#notebook_runtime_template_ref}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_colab_runtime#notebook_runtime_template_ref GoogleColabRuntime#notebook_runtime_template_ref}
 	NotebookRuntimeTemplateRef *GoogleColabRuntimeNotebookRuntimeTemplateRef `field:"optional" json:"notebookRuntimeTemplateRef" yaml:"notebookRuntimeTemplateRef"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_colab_runtime#project GoogleColabRuntime#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_colab_runtime#project GoogleColabRuntime#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_colab_runtime#timeouts GoogleColabRuntime#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_colab_runtime#timeouts GoogleColabRuntime#timeouts}
 	Timeouts *GoogleColabRuntimeTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

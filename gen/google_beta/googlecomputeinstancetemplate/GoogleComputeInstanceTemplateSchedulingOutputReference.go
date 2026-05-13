@@ -63,9 +63,14 @@ type GoogleComputeInstanceTemplateSchedulingOutputReference interface {
 	Preemptible() interface{}
 	SetPreemptible(val interface{})
 	PreemptibleInput() interface{}
+	PreemptionNoticeDuration() GoogleComputeInstanceTemplateSchedulingPreemptionNoticeDurationOutputReference
+	PreemptionNoticeDurationInput() *GoogleComputeInstanceTemplateSchedulingPreemptionNoticeDuration
 	ProvisioningModel() *string
 	SetProvisioningModel(val *string)
 	ProvisioningModelInput() *string
+	SkipGuestOsShutdown() interface{}
+	SetSkipGuestOsShutdown(val interface{})
+	SkipGuestOsShutdownInput() interface{}
 	TerminationTime() *string
 	SetTerminationTime(val *string)
 	TerminationTimeInput() *string
@@ -106,6 +111,7 @@ type GoogleComputeInstanceTemplateSchedulingOutputReference interface {
 	PutMaxRunDuration(value *GoogleComputeInstanceTemplateSchedulingMaxRunDuration)
 	PutNodeAffinities(value interface{})
 	PutOnInstanceStopAction(value *GoogleComputeInstanceTemplateSchedulingOnInstanceStopAction)
+	PutPreemptionNoticeDuration(value *GoogleComputeInstanceTemplateSchedulingPreemptionNoticeDuration)
 	ResetAutomaticRestart()
 	ResetAvailabilityDomain()
 	ResetGracefulShutdown()
@@ -119,7 +125,9 @@ type GoogleComputeInstanceTemplateSchedulingOutputReference interface {
 	ResetOnHostMaintenance()
 	ResetOnInstanceStopAction()
 	ResetPreemptible()
+	ResetPreemptionNoticeDuration()
 	ResetProvisioningModel()
+	ResetSkipGuestOsShutdown()
 	ResetTerminationTime()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -446,6 +454,26 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) Preem
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) PreemptionNoticeDuration() GoogleComputeInstanceTemplateSchedulingPreemptionNoticeDurationOutputReference {
+	var returns GoogleComputeInstanceTemplateSchedulingPreemptionNoticeDurationOutputReference
+	_jsii_.Get(
+		j,
+		"preemptionNoticeDuration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) PreemptionNoticeDurationInput() *GoogleComputeInstanceTemplateSchedulingPreemptionNoticeDuration {
+	var returns *GoogleComputeInstanceTemplateSchedulingPreemptionNoticeDuration
+	_jsii_.Get(
+		j,
+		"preemptionNoticeDurationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) ProvisioningModel() *string {
 	var returns *string
 	_jsii_.Get(
@@ -461,6 +489,26 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) Provi
 	_jsii_.Get(
 		j,
 		"provisioningModelInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) SkipGuestOsShutdown() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipGuestOsShutdown",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) SkipGuestOsShutdownInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipGuestOsShutdownInput",
 		&returns,
 	)
 	return returns
@@ -662,6 +710,17 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference)SetPro
 	_jsii_.Set(
 		j,
 		"provisioningModel",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference)SetSkipGuestOsShutdown(val interface{}) {
+	if err := j.validateSetSkipGuestOsShutdownParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"skipGuestOsShutdown",
 		val,
 	)
 }
@@ -940,6 +999,17 @@ func (g *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) PutOn
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) PutPreemptionNoticeDuration(value *GoogleComputeInstanceTemplateSchedulingPreemptionNoticeDuration) {
+	if err := g.validatePutPreemptionNoticeDurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putPreemptionNoticeDuration",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) ResetAutomaticRestart() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1044,10 +1114,26 @@ func (g *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) Reset
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) ResetPreemptionNoticeDuration() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPreemptionNoticeDuration",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) ResetProvisioningModel() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProvisioningModel",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) ResetSkipGuestOsShutdown() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSkipGuestOsShutdown",
 		nil, // no parameters
 	)
 }

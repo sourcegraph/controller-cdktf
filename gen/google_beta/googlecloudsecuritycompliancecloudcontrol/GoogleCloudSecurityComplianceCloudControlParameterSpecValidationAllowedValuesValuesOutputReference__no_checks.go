@@ -1,0 +1,94 @@
+//go:build no_runtime_type_checking
+
+package googlecloudsecuritycompliancecloudcontrol
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (g *jsiiProxy_GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOutputReference) validatePutOneofValueParameters(value *GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValue) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOutputReference) validatePutStringListValueParameters(value *GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesStringListValue) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOutputReference) validateSetBoolValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOutputReference) validateSetNumberValueParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOutputReference) validateSetStringValueParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func validateNewGoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+	return nil
+}
+

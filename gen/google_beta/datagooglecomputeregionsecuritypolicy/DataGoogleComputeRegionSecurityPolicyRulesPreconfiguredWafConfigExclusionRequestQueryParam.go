@@ -1,0 +1,6 @@
+package datagooglecomputeregionsecuritypolicy
+
+
+type DataGoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestQueryParam struct {
+}
+

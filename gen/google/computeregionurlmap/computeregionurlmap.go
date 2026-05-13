@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/computeregionurlmap/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_region_url_map google_compute_region_url_map}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_url_map google_compute_region_url_map}.
 type ComputeRegionUrlMap interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -48,6 +48,8 @@ type ComputeRegionUrlMap interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	HeaderAction() ComputeRegionUrlMapHeaderActionOutputReference
+	HeaderActionInput() *ComputeRegionUrlMapHeaderAction
 	HostRule() ComputeRegionUrlMapHostRuleList
 	HostRuleInput() interface{}
 	Id() *string
@@ -137,6 +139,7 @@ type ComputeRegionUrlMap interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutDefaultRouteAction(value *ComputeRegionUrlMapDefaultRouteAction)
 	PutDefaultUrlRedirect(value *ComputeRegionUrlMapDefaultUrlRedirect)
+	PutHeaderAction(value *ComputeRegionUrlMapHeaderAction)
 	PutHostRule(value interface{})
 	PutPathMatcher(value interface{})
 	PutTest(value interface{})
@@ -145,6 +148,7 @@ type ComputeRegionUrlMap interface {
 	ResetDefaultService()
 	ResetDefaultUrlRedirect()
 	ResetDescription()
+	ResetHeaderAction()
 	ResetHostRule()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -348,6 +352,26 @@ func (j *jsiiProxy_ComputeRegionUrlMap) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionUrlMap) HeaderAction() ComputeRegionUrlMapHeaderActionOutputReference {
+	var returns ComputeRegionUrlMapHeaderActionOutputReference
+	_jsii_.Get(
+		j,
+		"headerAction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionUrlMap) HeaderActionInput() *ComputeRegionUrlMapHeaderAction {
+	var returns *ComputeRegionUrlMapHeaderAction
+	_jsii_.Get(
+		j,
+		"headerActionInput",
 		&returns,
 	)
 	return returns
@@ -614,7 +638,7 @@ func (j *jsiiProxy_ComputeRegionUrlMap) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_region_url_map google_compute_region_url_map} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_url_map google_compute_region_url_map} Resource.
 func NewComputeRegionUrlMap(scope constructs.Construct, id *string, config *ComputeRegionUrlMapConfig) ComputeRegionUrlMap {
 	_init_.Initialize()
 
@@ -632,7 +656,7 @@ func NewComputeRegionUrlMap(scope constructs.Construct, id *string, config *Comp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_region_url_map google_compute_region_url_map} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_url_map google_compute_region_url_map} Resource.
 func NewComputeRegionUrlMap_Override(c ComputeRegionUrlMap, scope constructs.Construct, id *string, config *ComputeRegionUrlMapConfig) {
 	_init_.Initialize()
 
@@ -1152,6 +1176,17 @@ func (c *jsiiProxy_ComputeRegionUrlMap) PutDefaultUrlRedirect(value *ComputeRegi
 	)
 }
 
+func (c *jsiiProxy_ComputeRegionUrlMap) PutHeaderAction(value *ComputeRegionUrlMapHeaderAction) {
+	if err := c.validatePutHeaderActionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putHeaderAction",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeRegionUrlMap) PutHostRule(value interface{}) {
 	if err := c.validatePutHostRuleParameters(value); err != nil {
 		panic(err)
@@ -1224,6 +1259,14 @@ func (c *jsiiProxy_ComputeRegionUrlMap) ResetDescription() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRegionUrlMap) ResetHeaderAction() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetHeaderAction",
 		nil, // no parameters
 	)
 }

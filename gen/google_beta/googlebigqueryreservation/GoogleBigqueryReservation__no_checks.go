@@ -128,6 +128,10 @@ func (j *jsiiProxy_GoogleBigqueryReservation) validateSetLocationParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_GoogleBigqueryReservation) validateSetMaxSlotsParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBigqueryReservation) validateSetNameParameters(val *string) error {
 	return nil
 }
@@ -137,6 +141,14 @@ func (j *jsiiProxy_GoogleBigqueryReservation) validateSetProjectParameters(val *
 }
 
 func (j *jsiiProxy_GoogleBigqueryReservation) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleBigqueryReservation) validateSetReservationGroupParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleBigqueryReservation) validateSetScalingModeParameters(val *string) error {
 	return nil
 }
 

@@ -60,6 +60,10 @@ func (j *jsiiProxy_DiscoveryEngineSearchEngineSearchEngineConfigOutputReference)
 	return nil
 }
 
+func (j *jsiiProxy_DiscoveryEngineSearchEngineSearchEngineConfigOutputReference) validateSetRequiredSubscriptionTierParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DiscoveryEngineSearchEngineSearchEngineConfigOutputReference) validateSetSearchAddOnsParameters(val *[]*string) error {
 	return nil
 }

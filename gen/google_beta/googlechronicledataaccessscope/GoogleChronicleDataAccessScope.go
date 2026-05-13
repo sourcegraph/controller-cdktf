@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlechronicledataaccessscope/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_chronicle_data_access_scope google_chronicle_data_access_scope}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_chronicle_data_access_scope google_chronicle_data_access_scope}.
 type GoogleChronicleDataAccessScope interface {
 	cdktf.TerraformResource
 	AllowAll() interface{}
@@ -586,7 +586,7 @@ func (j *jsiiProxy_GoogleChronicleDataAccessScope) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_chronicle_data_access_scope google_chronicle_data_access_scope} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_chronicle_data_access_scope google_chronicle_data_access_scope} Resource.
 func NewGoogleChronicleDataAccessScope(scope constructs.Construct, id *string, config *GoogleChronicleDataAccessScopeConfig) GoogleChronicleDataAccessScope {
 	_init_.Initialize()
 
@@ -604,7 +604,7 @@ func NewGoogleChronicleDataAccessScope(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_chronicle_data_access_scope google_chronicle_data_access_scope} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_chronicle_data_access_scope google_chronicle_data_access_scope} Resource.
 func NewGoogleChronicleDataAccessScope_Override(g GoogleChronicleDataAccessScope, scope constructs.Construct, id *string, config *GoogleChronicleDataAccessScopeConfig) {
 	_init_.Initialize()
 

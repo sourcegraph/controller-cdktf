@@ -72,10 +72,6 @@ func (a *jsiiProxy_ApigeeKeystoresAliasesKeyCertFile) validateOverrideLogicalIdP
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeKeystoresAliasesKeyCertFile) validatePutCertsInfoParameters(value *ApigeeKeystoresAliasesKeyCertFileCertsInfo) error {
-	return nil
-}
-
 func (a *jsiiProxy_ApigeeKeystoresAliasesKeyCertFile) validatePutTimeoutsParameters(value *ApigeeKeystoresAliasesKeyCertFileTimeouts) error {
 	return nil
 }
@@ -113,10 +109,6 @@ func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFile) validateSetCountParameters
 }
 
 func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFile) validateSetEnvironmentParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFile) validateSetIdParameters(val *string) error {
 	return nil
 }
 

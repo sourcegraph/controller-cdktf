@@ -80,6 +80,10 @@ func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfig) validatePutOrgConfig
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfig) validatePutOtherCloudStartingLocationParameters(value *GoogleDataLossPreventionDiscoveryConfigOtherCloudStartingLocation) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfig) validatePutTargetsParameters(value interface{}) error {
 	return nil
 }

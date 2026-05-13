@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/bigtabletable/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/bigtable_table google_bigtable_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigtable_table google_bigtable_table}.
 type BigtableTable interface {
 	cdktf.TerraformResource
 	AutomatedBackupPolicy() BigtableTableAutomatedBackupPolicyOutputReference
@@ -74,6 +74,9 @@ type BigtableTable interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RowKeySchema() *string
+	SetRowKeySchema(val *string)
+	RowKeySchemaInput() *string
 	SplitKeys() *[]*string
 	SetSplitKeys(val *[]*string)
 	SplitKeysInput() *[]*string
@@ -140,6 +143,7 @@ type BigtableTable interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetRowKeySchema()
 	ResetSplitKeys()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -450,6 +454,26 @@ func (j *jsiiProxy_BigtableTable) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_BigtableTable) RowKeySchema() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rowKeySchema",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigtableTable) RowKeySchemaInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rowKeySchemaInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BigtableTable) SplitKeys() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -521,7 +545,7 @@ func (j *jsiiProxy_BigtableTable) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/bigtable_table google_bigtable_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigtable_table google_bigtable_table} Resource.
 func NewBigtableTable(scope constructs.Construct, id *string, config *BigtableTableConfig) BigtableTable {
 	_init_.Initialize()
 
@@ -539,7 +563,7 @@ func NewBigtableTable(scope constructs.Construct, id *string, config *BigtableTa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/bigtable_table google_bigtable_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigtable_table google_bigtable_table} Resource.
 func NewBigtableTable_Override(b BigtableTable, scope constructs.Construct, id *string, config *BigtableTableConfig) {
 	_init_.Initialize()
 
@@ -680,6 +704,17 @@ func (j *jsiiProxy_BigtableTable)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigtableTable)SetRowKeySchema(val *string) {
+	if err := j.validateSetRowKeySchemaParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rowKeySchema",
 		val,
 	)
 }
@@ -1133,6 +1168,14 @@ func (b *jsiiProxy_BigtableTable) ResetProject() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigtableTable) ResetRowKeySchema() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetRowKeySchema",
 		nil, // no parameters
 	)
 }

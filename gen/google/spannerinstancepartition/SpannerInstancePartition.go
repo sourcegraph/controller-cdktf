@@ -9,9 +9,11 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/spannerinstancepartition/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/spanner_instance_partition google_spanner_instance_partition}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/spanner_instance_partition google_spanner_instance_partition}.
 type SpannerInstancePartition interface {
 	cdktf.TerraformResource
+	AutoscalingConfig() SpannerInstancePartitionAutoscalingConfigOutputReference
+	AutoscalingConfigInput() *SpannerInstancePartitionAutoscalingConfig
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Config() *string
@@ -128,7 +130,9 @@ type SpannerInstancePartition interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAutoscalingConfig(value *SpannerInstancePartitionAutoscalingConfig)
 	PutTimeouts(value *SpannerInstancePartitionTimeouts)
+	ResetAutoscalingConfig()
 	ResetId()
 	ResetNodeCount()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -153,6 +157,26 @@ type SpannerInstancePartition interface {
 // The jsii proxy struct for SpannerInstancePartition
 type jsiiProxy_SpannerInstancePartition struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_SpannerInstancePartition) AutoscalingConfig() SpannerInstancePartitionAutoscalingConfigOutputReference {
+	var returns SpannerInstancePartitionAutoscalingConfigOutputReference
+	_jsii_.Get(
+		j,
+		"autoscalingConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpannerInstancePartition) AutoscalingConfigInput() *SpannerInstancePartitionAutoscalingConfig {
+	var returns *SpannerInstancePartitionAutoscalingConfig
+	_jsii_.Get(
+		j,
+		"autoscalingConfigInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_SpannerInstancePartition) CdktfStack() cdktf.TerraformStack {
@@ -506,7 +530,7 @@ func (j *jsiiProxy_SpannerInstancePartition) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/spanner_instance_partition google_spanner_instance_partition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/spanner_instance_partition google_spanner_instance_partition} Resource.
 func NewSpannerInstancePartition(scope constructs.Construct, id *string, config *SpannerInstancePartitionConfig) SpannerInstancePartition {
 	_init_.Initialize()
 
@@ -524,7 +548,7 @@ func NewSpannerInstancePartition(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/spanner_instance_partition google_spanner_instance_partition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/spanner_instance_partition google_spanner_instance_partition} Resource.
 func NewSpannerInstancePartition_Override(s SpannerInstancePartition, scope constructs.Construct, id *string, config *SpannerInstancePartitionConfig) {
 	_init_.Initialize()
 
@@ -1044,6 +1068,17 @@ func (s *jsiiProxy_SpannerInstancePartition) OverrideLogicalId(newLogicalId *str
 	)
 }
 
+func (s *jsiiProxy_SpannerInstancePartition) PutAutoscalingConfig(value *SpannerInstancePartitionAutoscalingConfig) {
+	if err := s.validatePutAutoscalingConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putAutoscalingConfig",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SpannerInstancePartition) PutTimeouts(value *SpannerInstancePartitionTimeouts) {
 	if err := s.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1052,6 +1087,14 @@ func (s *jsiiProxy_SpannerInstancePartition) PutTimeouts(value *SpannerInstanceP
 		s,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SpannerInstancePartition) ResetAutoscalingConfig() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAutoscalingConfig",
+		nil, // no parameters
 	)
 }
 

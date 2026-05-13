@@ -72,6 +72,10 @@ func (g *jsiiProxy_GoogleManagedKafkaCluster) validateOverrideLogicalIdParameter
 	return nil
 }
 
+func (g *jsiiProxy_GoogleManagedKafkaCluster) validatePutBrokerCapacityConfigParameters(value *GoogleManagedKafkaClusterBrokerCapacityConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleManagedKafkaCluster) validatePutCapacityConfigParameters(value *GoogleManagedKafkaClusterCapacityConfig) error {
 	return nil
 }
@@ -85,6 +89,10 @@ func (g *jsiiProxy_GoogleManagedKafkaCluster) validatePutRebalanceConfigParamete
 }
 
 func (g *jsiiProxy_GoogleManagedKafkaCluster) validatePutTimeoutsParameters(value *GoogleManagedKafkaClusterTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleManagedKafkaCluster) validatePutTlsConfigParameters(value *GoogleManagedKafkaClusterTlsConfig) error {
 	return nil
 }
 

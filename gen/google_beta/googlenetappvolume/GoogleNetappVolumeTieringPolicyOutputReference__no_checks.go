@@ -60,6 +60,10 @@ func (j *jsiiProxy_GoogleNetappVolumeTieringPolicyOutputReference) validateSetCo
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetappVolumeTieringPolicyOutputReference) validateSetHotTierBypassModeEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetappVolumeTieringPolicyOutputReference) validateSetInternalValueParameters(val *GoogleNetappVolumeTieringPolicy) error {
 	return nil
 }

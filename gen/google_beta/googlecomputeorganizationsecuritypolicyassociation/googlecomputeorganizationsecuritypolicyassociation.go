@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeorganizationsecuritypolicyassociation/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_organization_security_policy_association google_compute_organization_security_policy_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_organization_security_policy_association google_compute_organization_security_policy_association}.
 type GoogleComputeOrganizationSecurityPolicyAssociation interface {
 	cdktf.TerraformResource
 	AttachmentId() *string
@@ -32,6 +32,12 @@ type GoogleComputeOrganizationSecurityPolicyAssociation interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	DisplayName() *string
+	ExcludedFolders() *[]*string
+	SetExcludedFolders(val *[]*string)
+	ExcludedFoldersInput() *[]*string
+	ExcludedProjects() *[]*string
+	SetExcludedProjects(val *[]*string)
+	ExcludedProjectsInput() *[]*string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -117,6 +123,8 @@ type GoogleComputeOrganizationSecurityPolicyAssociation interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *GoogleComputeOrganizationSecurityPolicyAssociationTimeouts)
+	ResetExcludedFolders()
+	ResetExcludedProjects()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -215,6 +223,46 @@ func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyAssociation) DisplayNa
 	_jsii_.Get(
 		j,
 		"displayName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyAssociation) ExcludedFolders() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"excludedFolders",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyAssociation) ExcludedFoldersInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"excludedFoldersInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyAssociation) ExcludedProjects() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"excludedProjects",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyAssociation) ExcludedProjectsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"excludedProjectsInput",
 		&returns,
 	)
 	return returns
@@ -411,7 +459,7 @@ func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyAssociation) TimeoutsI
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_organization_security_policy_association google_compute_organization_security_policy_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_organization_security_policy_association google_compute_organization_security_policy_association} Resource.
 func NewGoogleComputeOrganizationSecurityPolicyAssociation(scope constructs.Construct, id *string, config *GoogleComputeOrganizationSecurityPolicyAssociationConfig) GoogleComputeOrganizationSecurityPolicyAssociation {
 	_init_.Initialize()
 
@@ -429,7 +477,7 @@ func NewGoogleComputeOrganizationSecurityPolicyAssociation(scope constructs.Cons
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_organization_security_policy_association google_compute_organization_security_policy_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_organization_security_policy_association google_compute_organization_security_policy_association} Resource.
 func NewGoogleComputeOrganizationSecurityPolicyAssociation_Override(g GoogleComputeOrganizationSecurityPolicyAssociation, scope constructs.Construct, id *string, config *GoogleComputeOrganizationSecurityPolicyAssociationConfig) {
 	_init_.Initialize()
 
@@ -477,6 +525,28 @@ func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyAssociation)SetDepends
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyAssociation)SetExcludedFolders(val *[]*string) {
+	if err := j.validateSetExcludedFoldersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"excludedFolders",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyAssociation)SetExcludedProjects(val *[]*string) {
+	if err := j.validateSetExcludedProjectsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"excludedProjects",
 		val,
 	)
 }
@@ -913,6 +983,22 @@ func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyAssociation) PutTimeou
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyAssociation) ResetExcludedFolders() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetExcludedFolders",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyAssociation) ResetExcludedProjects() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetExcludedProjects",
+		nil, // no parameters
 	)
 }
 

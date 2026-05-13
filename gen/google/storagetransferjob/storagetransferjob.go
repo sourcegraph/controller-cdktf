@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/storagetransferjob/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/storage_transfer_job google_storage_transfer_job}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job google_storage_transfer_job}.
 type StorageTransferJob interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -77,6 +77,9 @@ type StorageTransferJob interface {
 	ReplicationSpecInput() *StorageTransferJobReplicationSpec
 	Schedule() StorageTransferJobScheduleOutputReference
 	ScheduleInput() *StorageTransferJobSchedule
+	ServiceAccount() *string
+	SetServiceAccount(val *string)
+	ServiceAccountInput() *string
 	Status() *string
 	SetStatus(val *string)
 	StatusInput() *string
@@ -148,6 +151,7 @@ type StorageTransferJob interface {
 	ResetProject()
 	ResetReplicationSpec()
 	ResetSchedule()
+	ResetServiceAccount()
 	ResetStatus()
 	ResetTransferSpec()
 	SynthesizeAttributes() *map[string]interface{}
@@ -508,6 +512,26 @@ func (j *jsiiProxy_StorageTransferJob) ScheduleInput() *StorageTransferJobSchedu
 	return returns
 }
 
+func (j *jsiiProxy_StorageTransferJob) ServiceAccount() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageTransferJob) ServiceAccountInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccountInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StorageTransferJob) Status() *string {
 	var returns *string
 	_jsii_.Get(
@@ -579,7 +603,7 @@ func (j *jsiiProxy_StorageTransferJob) TransferSpecInput() *StorageTransferJobTr
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/storage_transfer_job google_storage_transfer_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job google_storage_transfer_job} Resource.
 func NewStorageTransferJob(scope constructs.Construct, id *string, config *StorageTransferJobConfig) StorageTransferJob {
 	_init_.Initialize()
 
@@ -597,7 +621,7 @@ func NewStorageTransferJob(scope constructs.Construct, id *string, config *Stora
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/storage_transfer_job google_storage_transfer_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job google_storage_transfer_job} Resource.
 func NewStorageTransferJob_Override(s StorageTransferJob, scope constructs.Construct, id *string, config *StorageTransferJobConfig) {
 	_init_.Initialize()
 
@@ -716,6 +740,17 @@ func (j *jsiiProxy_StorageTransferJob)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageTransferJob)SetServiceAccount(val *string) {
+	if err := j.validateSetServiceAccountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serviceAccount",
 		val,
 	)
 }
@@ -1218,6 +1253,14 @@ func (s *jsiiProxy_StorageTransferJob) ResetSchedule() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetSchedule",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageTransferJob) ResetServiceAccount() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetServiceAccount",
 		nil, // no parameters
 	)
 }

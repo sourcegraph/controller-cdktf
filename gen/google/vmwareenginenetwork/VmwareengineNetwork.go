@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/vmwareenginenetwork/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/vmwareengine_network google_vmwareengine_network}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vmwareengine_network google_vmwareengine_network}.
 type VmwareengineNetwork interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -24,6 +24,7 @@ type VmwareengineNetwork interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -31,6 +32,7 @@ type VmwareengineNetwork interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	Etag() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -80,6 +82,7 @@ type VmwareengineNetwork interface {
 	SetType(val *string)
 	TypeInput() *string
 	Uid() *string
+	UpdateTime() *string
 	VpcNetworks() VmwareengineNetworkVpcNetworksList
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
@@ -190,6 +193,16 @@ func (j *jsiiProxy_VmwareengineNetwork) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_VmwareengineNetwork) CreateTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createTime",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VmwareengineNetwork) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -215,6 +228,16 @@ func (j *jsiiProxy_VmwareengineNetwork) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VmwareengineNetwork) Etag() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"etag",
 		&returns,
 	)
 	return returns
@@ -470,6 +493,16 @@ func (j *jsiiProxy_VmwareengineNetwork) Uid() *string {
 	return returns
 }
 
+func (j *jsiiProxy_VmwareengineNetwork) UpdateTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updateTime",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VmwareengineNetwork) VpcNetworks() VmwareengineNetworkVpcNetworksList {
 	var returns VmwareengineNetworkVpcNetworksList
 	_jsii_.Get(
@@ -481,7 +514,7 @@ func (j *jsiiProxy_VmwareengineNetwork) VpcNetworks() VmwareengineNetworkVpcNetw
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/vmwareengine_network google_vmwareengine_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vmwareengine_network google_vmwareengine_network} Resource.
 func NewVmwareengineNetwork(scope constructs.Construct, id *string, config *VmwareengineNetworkConfig) VmwareengineNetwork {
 	_init_.Initialize()
 
@@ -499,7 +532,7 @@ func NewVmwareengineNetwork(scope constructs.Construct, id *string, config *Vmwa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/vmwareengine_network google_vmwareengine_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vmwareengine_network google_vmwareengine_network} Resource.
 func NewVmwareengineNetwork_Override(v VmwareengineNetwork, scope constructs.Construct, id *string, config *VmwareengineNetworkConfig) {
 	_init_.Initialize()
 

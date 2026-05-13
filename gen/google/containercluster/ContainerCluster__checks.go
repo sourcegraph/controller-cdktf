@@ -215,7 +215,29 @@ func (c *jsiiProxy_ContainerCluster) validatePutAddonsConfigParameters(value *Co
 	return nil
 }
 
+func (c *jsiiProxy_ContainerCluster) validatePutAnonymousAuthenticationConfigParameters(value *ContainerClusterAnonymousAuthenticationConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (c *jsiiProxy_ContainerCluster) validatePutAuthenticatorGroupsConfigParameters(value *ContainerClusterAuthenticatorGroupsConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_ContainerCluster) validatePutAutopilotClusterPolicyConfigParameters(value *ContainerClusterAutopilotClusterPolicyConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -358,6 +380,17 @@ func (c *jsiiProxy_ContainerCluster) validatePutGatewayApiConfigParameters(value
 	return nil
 }
 
+func (c *jsiiProxy_ContainerCluster) validatePutGkeAutoUpgradeConfigParameters(value *ContainerClusterGkeAutoUpgradeConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (c *jsiiProxy_ContainerCluster) validatePutIdentityServiceConfigParameters(value *ContainerClusterIdentityServiceConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -436,6 +469,17 @@ func (c *jsiiProxy_ContainerCluster) validatePutMeshCertificatesParameters(value
 }
 
 func (c *jsiiProxy_ContainerCluster) validatePutMonitoringConfigParameters(value *ContainerClusterMonitoringConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_ContainerCluster) validatePutNetworkPerformanceConfigParameters(value *ContainerClusterNetworkPerformanceConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -532,7 +576,29 @@ func (c *jsiiProxy_ContainerCluster) validatePutNotificationConfigParameters(val
 	return nil
 }
 
+func (c *jsiiProxy_ContainerCluster) validatePutPodAutoscalingParameters(value *ContainerClusterPodAutoscaling) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (c *jsiiProxy_ContainerCluster) validatePutPrivateClusterConfigParameters(value *ContainerClusterPrivateClusterConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_ContainerCluster) validatePutRbacBindingConfigParameters(value *ContainerClusterRbacBindingConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -697,6 +763,14 @@ func (j *jsiiProxy_ContainerCluster) validateSetAllowNetAdminParameters(val inte
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ContainerCluster) validateSetAutopilotPrivilegedAdmissionParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil
@@ -1073,6 +1147,14 @@ func (j *jsiiProxy_ContainerCluster) validateSetIdParameters(val *string) error 
 }
 
 func (j *jsiiProxy_ContainerCluster) validateSetInitialNodeCountParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ContainerCluster) validateSetInTransitEncryptionConfigParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

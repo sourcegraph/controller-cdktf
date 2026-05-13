@@ -72,6 +72,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetParent", GoMethod: "ResetParent"},
 			_jsii_.MemberMethod{JsiiMethod: "resetThreatPreventionProfile", GoMethod: "ResetThreatPreventionProfile"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUrlFilteringProfile", GoMethod: "ResetUrlFilteringProfile"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeHclAttributes", GoMethod: "SynthesizeHclAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
@@ -87,6 +88,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
+			_jsii_.MemberProperty{JsiiProperty: "urlFilteringProfile", GoGetter: "UrlFilteringProfile"},
+			_jsii_.MemberProperty{JsiiProperty: "urlFilteringProfileInput", GoGetter: "UrlFilteringProfileInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleNetworkSecuritySecurityProfileGroup{}

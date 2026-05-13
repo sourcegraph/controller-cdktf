@@ -92,6 +92,10 @@ func (g *jsiiProxy_GoogleStorageBucket) validatePutHierarchicalNamespaceParamete
 	return nil
 }
 
+func (g *jsiiProxy_GoogleStorageBucket) validatePutIpFilterParameters(value *GoogleStorageBucketIpFilter) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleStorageBucket) validatePutLifecycleRuleParameters(value interface{}) error {
 	return nil
 }

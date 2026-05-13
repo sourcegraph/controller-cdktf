@@ -39,6 +39,7 @@ type DataGoogleCloudRunV2ServiceTemplateContainersOutputReference interface {
 	LivenessProbe() DataGoogleCloudRunV2ServiceTemplateContainersLivenessProbeList
 	Name() *string
 	Ports() DataGoogleCloudRunV2ServiceTemplateContainersPortsList
+	ReadinessProbe() DataGoogleCloudRunV2ServiceTemplateContainersReadinessProbeList
 	Resources() DataGoogleCloudRunV2ServiceTemplateContainersResourcesList
 	StartupProbe() DataGoogleCloudRunV2ServiceTemplateContainersStartupProbeList
 	// Experimental.
@@ -235,6 +236,16 @@ func (j *jsiiProxy_DataGoogleCloudRunV2ServiceTemplateContainersOutputReference)
 	_jsii_.Get(
 		j,
 		"ports",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleCloudRunV2ServiceTemplateContainersOutputReference) ReadinessProbe() DataGoogleCloudRunV2ServiceTemplateContainersReadinessProbeList {
+	var returns DataGoogleCloudRunV2ServiceTemplateContainersReadinessProbeList
+	_jsii_.Get(
+		j,
+		"readinessProbe",
 		&returns,
 	)
 	return returns

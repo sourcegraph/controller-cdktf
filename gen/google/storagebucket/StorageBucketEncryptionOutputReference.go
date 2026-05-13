@@ -25,11 +25,17 @@ type StorageBucketEncryptionOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomerManagedEncryptionEnforcementConfig() StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference
+	CustomerManagedEncryptionEnforcementConfigInput() *StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfig
+	CustomerSuppliedEncryptionEnforcementConfig() StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference
+	CustomerSuppliedEncryptionEnforcementConfigInput() *StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfig
 	DefaultKmsKeyName() *string
 	SetDefaultKmsKeyName(val *string)
 	DefaultKmsKeyNameInput() *string
 	// Experimental.
 	Fqn() *string
+	GoogleManagedEncryptionEnforcementConfig() StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference
+	GoogleManagedEncryptionEnforcementConfigInput() *StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfig
 	InternalValue() *StorageBucketEncryption
 	SetInternalValue(val *StorageBucketEncryption)
 	// Experimental.
@@ -64,6 +70,13 @@ type StorageBucketEncryptionOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutCustomerManagedEncryptionEnforcementConfig(value *StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfig)
+	PutCustomerSuppliedEncryptionEnforcementConfig(value *StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfig)
+	PutGoogleManagedEncryptionEnforcementConfig(value *StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfig)
+	ResetCustomerManagedEncryptionEnforcementConfig()
+	ResetCustomerSuppliedEncryptionEnforcementConfig()
+	ResetDefaultKmsKeyName()
+	ResetGoogleManagedEncryptionEnforcementConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -109,6 +122,46 @@ func (j *jsiiProxy_StorageBucketEncryptionOutputReference) CreationStack() *[]*s
 	return returns
 }
 
+func (j *jsiiProxy_StorageBucketEncryptionOutputReference) CustomerManagedEncryptionEnforcementConfig() StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference {
+	var returns StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference
+	_jsii_.Get(
+		j,
+		"customerManagedEncryptionEnforcementConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucketEncryptionOutputReference) CustomerManagedEncryptionEnforcementConfigInput() *StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfig {
+	var returns *StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfig
+	_jsii_.Get(
+		j,
+		"customerManagedEncryptionEnforcementConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucketEncryptionOutputReference) CustomerSuppliedEncryptionEnforcementConfig() StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference {
+	var returns StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference
+	_jsii_.Get(
+		j,
+		"customerSuppliedEncryptionEnforcementConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucketEncryptionOutputReference) CustomerSuppliedEncryptionEnforcementConfigInput() *StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfig {
+	var returns *StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfig
+	_jsii_.Get(
+		j,
+		"customerSuppliedEncryptionEnforcementConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StorageBucketEncryptionOutputReference) DefaultKmsKeyName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -134,6 +187,26 @@ func (j *jsiiProxy_StorageBucketEncryptionOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucketEncryptionOutputReference) GoogleManagedEncryptionEnforcementConfig() StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference {
+	var returns StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference
+	_jsii_.Get(
+		j,
+		"googleManagedEncryptionEnforcementConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucketEncryptionOutputReference) GoogleManagedEncryptionEnforcementConfigInput() *StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfig {
+	var returns *StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfig
+	_jsii_.Get(
+		j,
+		"googleManagedEncryptionEnforcementConfigInput",
 		&returns,
 	)
 	return returns
@@ -447,6 +520,71 @@ func (s *jsiiProxy_StorageBucketEncryptionOutputReference) InterpolationForAttri
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_StorageBucketEncryptionOutputReference) PutCustomerManagedEncryptionEnforcementConfig(value *StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfig) {
+	if err := s.validatePutCustomerManagedEncryptionEnforcementConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putCustomerManagedEncryptionEnforcementConfig",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_StorageBucketEncryptionOutputReference) PutCustomerSuppliedEncryptionEnforcementConfig(value *StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfig) {
+	if err := s.validatePutCustomerSuppliedEncryptionEnforcementConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putCustomerSuppliedEncryptionEnforcementConfig",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_StorageBucketEncryptionOutputReference) PutGoogleManagedEncryptionEnforcementConfig(value *StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfig) {
+	if err := s.validatePutGoogleManagedEncryptionEnforcementConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putGoogleManagedEncryptionEnforcementConfig",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_StorageBucketEncryptionOutputReference) ResetCustomerManagedEncryptionEnforcementConfig() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetCustomerManagedEncryptionEnforcementConfig",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageBucketEncryptionOutputReference) ResetCustomerSuppliedEncryptionEnforcementConfig() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetCustomerSuppliedEncryptionEnforcementConfig",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageBucketEncryptionOutputReference) ResetDefaultKmsKeyName() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDefaultKmsKeyName",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageBucketEncryptionOutputReference) ResetGoogleManagedEncryptionEnforcementConfig() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetGoogleManagedEncryptionEnforcementConfig",
+		nil, // no parameters
+	)
 }
 
 func (s *jsiiProxy_StorageBucketEncryptionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

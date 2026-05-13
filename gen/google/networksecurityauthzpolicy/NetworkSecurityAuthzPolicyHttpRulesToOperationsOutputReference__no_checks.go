@@ -52,6 +52,10 @@ func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToOperationsOutputReferenc
 	return nil
 }
 
+func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToOperationsOutputReference) validatePutMcpParameters(value *NetworkSecurityAuthzPolicyHttpRulesToOperationsMcp) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToOperationsOutputReference) validatePutPathsParameters(value interface{}) error {
 	return nil
 }

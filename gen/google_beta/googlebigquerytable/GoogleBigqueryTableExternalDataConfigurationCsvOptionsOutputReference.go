@@ -47,6 +47,9 @@ type GoogleBigqueryTableExternalDataConfigurationCsvOptionsOutputReference inter
 	SkipLeadingRows() *float64
 	SetSkipLeadingRows(val *float64)
 	SkipLeadingRowsInput() *float64
+	SourceColumnMatch() *string
+	SetSourceColumnMatch(val *string)
+	SourceColumnMatchInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -84,6 +87,7 @@ type GoogleBigqueryTableExternalDataConfigurationCsvOptionsOutputReference inter
 	ResetEncoding()
 	ResetFieldDelimiter()
 	ResetSkipLeadingRows()
+	ResetSourceColumnMatch()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -269,6 +273,26 @@ func (j *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationCsvOptionsOutputR
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationCsvOptionsOutputReference) SourceColumnMatch() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceColumnMatch",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationCsvOptionsOutputReference) SourceColumnMatchInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceColumnMatchInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationCsvOptionsOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -412,6 +436,17 @@ func (j *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationCsvOptionsOutputR
 	_jsii_.Set(
 		j,
 		"skipLeadingRows",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationCsvOptionsOutputReference)SetSourceColumnMatch(val *string) {
+	if err := j.validateSetSourceColumnMatchParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sourceColumnMatch",
 		val,
 	)
 }
@@ -660,6 +695,14 @@ func (g *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationCsvOptionsOutputR
 	_jsii_.InvokeVoid(
 		g,
 		"resetSkipLeadingRows",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationCsvOptionsOutputReference) ResetSourceColumnMatch() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSourceColumnMatch",
 		nil, // no parameters
 	)
 }

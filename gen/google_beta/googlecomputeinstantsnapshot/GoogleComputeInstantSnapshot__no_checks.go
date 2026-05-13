@@ -72,6 +72,10 @@ func (g *jsiiProxy_GoogleComputeInstantSnapshot) validateOverrideLogicalIdParame
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeInstantSnapshot) validatePutParamsParameters(value *GoogleComputeInstantSnapshotParams) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeInstantSnapshot) validatePutTimeoutsParameters(value *GoogleComputeInstantSnapshotTimeouts) error {
 	return nil
 }

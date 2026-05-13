@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleComputeInstanceAttachedDiskOutputReference) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceAttachedDiskOutputReference) validateSetForceAttachParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceAttachedDiskOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

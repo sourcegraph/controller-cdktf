@@ -171,7 +171,31 @@ func (j *jsiiProxy_CloudRunV2ServiceScalingOutputReference) validateSetInternalV
 	return nil
 }
 
+func (j *jsiiProxy_CloudRunV2ServiceScalingOutputReference) validateSetManualInstanceCountParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_CloudRunV2ServiceScalingOutputReference) validateSetMaxInstanceCountParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_CloudRunV2ServiceScalingOutputReference) validateSetMinInstanceCountParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_CloudRunV2ServiceScalingOutputReference) validateSetScalingModeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

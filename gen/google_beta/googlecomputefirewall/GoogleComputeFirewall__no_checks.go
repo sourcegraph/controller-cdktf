@@ -84,6 +84,10 @@ func (g *jsiiProxy_GoogleComputeFirewall) validatePutLogConfigParameters(value *
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeFirewall) validatePutParamsParameters(value *GoogleComputeFirewallParams) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeFirewall) validatePutTimeoutsParameters(value *GoogleComputeFirewallTimeouts) error {
 	return nil
 }

@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecOutputReference) validate
 	return nil
 }
 
+func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecOutputReference) validatePutAwsS3CompatibleDataSourceParameters(value *GoogleStorageTransferJobTransferSpecAwsS3CompatibleDataSource) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecOutputReference) validatePutAwsS3DataSourceParameters(value *GoogleStorageTransferJobTransferSpecAwsS3DataSource) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecOutputReference) validate
 }
 
 func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecOutputReference) validatePutPosixDataSourceParameters(value *GoogleStorageTransferJobTransferSpecPosixDataSource) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecOutputReference) validatePutTransferManifestParameters(value *GoogleStorageTransferJobTransferSpecTransferManifest) error {
 	return nil
 }
 

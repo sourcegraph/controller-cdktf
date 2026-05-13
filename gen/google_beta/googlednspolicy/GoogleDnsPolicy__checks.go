@@ -215,6 +215,17 @@ func (g *jsiiProxy_GoogleDnsPolicy) validatePutAlternativeNameServerConfigParame
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDnsPolicy) validatePutDns64ConfigParameters(value *GoogleDnsPolicyDns64Config) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDnsPolicy) validatePutNetworksParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

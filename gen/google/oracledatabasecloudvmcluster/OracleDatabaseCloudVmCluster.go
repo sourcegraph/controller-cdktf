@@ -9,9 +9,12 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/oracledatabasecloudvmcluster/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/oracle_database_cloud_vm_cluster google_oracle_database_cloud_vm_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/oracle_database_cloud_vm_cluster google_oracle_database_cloud_vm_cluster}.
 type OracleDatabaseCloudVmCluster interface {
 	cdktf.TerraformResource
+	BackupOdbSubnet() *string
+	SetBackupOdbSubnet(val *string)
+	BackupOdbSubnetInput() *string
 	BackupSubnetCidr() *string
 	SetBackupSubnetCidr(val *string)
 	BackupSubnetCidrInput() *string
@@ -76,6 +79,12 @@ type OracleDatabaseCloudVmCluster interface {
 	NetworkInput() *string
 	// The tree node.
 	Node() constructs.Node
+	OdbNetwork() *string
+	SetOdbNetwork(val *string)
+	OdbNetworkInput() *string
+	OdbSubnet() *string
+	SetOdbSubnet(val *string)
+	OdbSubnetInput() *string
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -145,10 +154,16 @@ type OracleDatabaseCloudVmCluster interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutProperties(value *OracleDatabaseCloudVmClusterProperties)
 	PutTimeouts(value *OracleDatabaseCloudVmClusterTimeouts)
+	ResetBackupOdbSubnet()
+	ResetBackupSubnetCidr()
+	ResetCidr()
 	ResetDeletionProtection()
 	ResetDisplayName()
 	ResetId()
 	ResetLabels()
+	ResetNetwork()
+	ResetOdbNetwork()
+	ResetOdbSubnet()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -171,6 +186,26 @@ type OracleDatabaseCloudVmCluster interface {
 // The jsii proxy struct for OracleDatabaseCloudVmCluster
 type jsiiProxy_OracleDatabaseCloudVmCluster struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_OracleDatabaseCloudVmCluster) BackupOdbSubnet() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"backupOdbSubnet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OracleDatabaseCloudVmCluster) BackupOdbSubnetInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"backupOdbSubnetInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_OracleDatabaseCloudVmCluster) BackupSubnetCidr() *string {
@@ -513,6 +548,46 @@ func (j *jsiiProxy_OracleDatabaseCloudVmCluster) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_OracleDatabaseCloudVmCluster) OdbNetwork() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"odbNetwork",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OracleDatabaseCloudVmCluster) OdbNetworkInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"odbNetworkInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OracleDatabaseCloudVmCluster) OdbSubnet() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"odbSubnet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OracleDatabaseCloudVmCluster) OdbSubnetInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"odbSubnetInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OracleDatabaseCloudVmCluster) Project() *string {
 	var returns *string
 	_jsii_.Get(
@@ -644,7 +719,7 @@ func (j *jsiiProxy_OracleDatabaseCloudVmCluster) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/oracle_database_cloud_vm_cluster google_oracle_database_cloud_vm_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/oracle_database_cloud_vm_cluster google_oracle_database_cloud_vm_cluster} Resource.
 func NewOracleDatabaseCloudVmCluster(scope constructs.Construct, id *string, config *OracleDatabaseCloudVmClusterConfig) OracleDatabaseCloudVmCluster {
 	_init_.Initialize()
 
@@ -662,7 +737,7 @@ func NewOracleDatabaseCloudVmCluster(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/oracle_database_cloud_vm_cluster google_oracle_database_cloud_vm_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/oracle_database_cloud_vm_cluster google_oracle_database_cloud_vm_cluster} Resource.
 func NewOracleDatabaseCloudVmCluster_Override(o OracleDatabaseCloudVmCluster, scope constructs.Construct, id *string, config *OracleDatabaseCloudVmClusterConfig) {
 	_init_.Initialize()
 
@@ -670,6 +745,17 @@ func NewOracleDatabaseCloudVmCluster_Override(o OracleDatabaseCloudVmCluster, sc
 		"@cdktf/provider-google.oracleDatabaseCloudVmCluster.OracleDatabaseCloudVmCluster",
 		[]interface{}{scope, id, config},
 		o,
+	)
+}
+
+func (j *jsiiProxy_OracleDatabaseCloudVmCluster)SetBackupOdbSubnet(val *string) {
+	if err := j.validateSetBackupOdbSubnetParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"backupOdbSubnet",
+		val,
 	)
 }
 
@@ -828,6 +914,28 @@ func (j *jsiiProxy_OracleDatabaseCloudVmCluster)SetNetwork(val *string) {
 	_jsii_.Set(
 		j,
 		"network",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OracleDatabaseCloudVmCluster)SetOdbNetwork(val *string) {
+	if err := j.validateSetOdbNetworkParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"odbNetwork",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OracleDatabaseCloudVmCluster)SetOdbSubnet(val *string) {
+	if err := j.validateSetOdbSubnetParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"odbSubnet",
 		val,
 	)
 }
@@ -1237,6 +1345,30 @@ func (o *jsiiProxy_OracleDatabaseCloudVmCluster) PutTimeouts(value *OracleDataba
 	)
 }
 
+func (o *jsiiProxy_OracleDatabaseCloudVmCluster) ResetBackupOdbSubnet() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetBackupOdbSubnet",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OracleDatabaseCloudVmCluster) ResetBackupSubnetCidr() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetBackupSubnetCidr",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OracleDatabaseCloudVmCluster) ResetCidr() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetCidr",
+		nil, // no parameters
+	)
+}
+
 func (o *jsiiProxy_OracleDatabaseCloudVmCluster) ResetDeletionProtection() {
 	_jsii_.InvokeVoid(
 		o,
@@ -1265,6 +1397,30 @@ func (o *jsiiProxy_OracleDatabaseCloudVmCluster) ResetLabels() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetLabels",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OracleDatabaseCloudVmCluster) ResetNetwork() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetNetwork",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OracleDatabaseCloudVmCluster) ResetOdbNetwork() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetOdbNetwork",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OracleDatabaseCloudVmCluster) ResetOdbSubnet() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetOdbSubnet",
 		nil, // no parameters
 	)
 }

@@ -168,6 +168,10 @@ func (j *jsiiProxy_GoogleDataprocJob) validateSetRegionParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataprocJob) validateSetWaitForCompletionParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewGoogleDataprocJobParameters(scope constructs.Construct, id *string, config *GoogleDataprocJobConfig) error {
 	return nil
 }

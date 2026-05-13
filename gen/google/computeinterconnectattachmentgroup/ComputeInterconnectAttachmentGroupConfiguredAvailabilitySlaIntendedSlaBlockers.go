@@ -1,0 +1,6 @@
+package computeinterconnectattachmentgroup
+
+
+type ComputeInterconnectAttachmentGroupConfiguredAvailabilitySlaIntendedSlaBlockers struct {
+}
+

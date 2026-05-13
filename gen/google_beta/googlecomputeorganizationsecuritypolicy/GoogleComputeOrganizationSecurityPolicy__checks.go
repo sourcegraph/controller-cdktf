@@ -431,6 +431,14 @@ func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicy) validateSetProvision
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicy) validateSetShortNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicy) validateSetTypeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

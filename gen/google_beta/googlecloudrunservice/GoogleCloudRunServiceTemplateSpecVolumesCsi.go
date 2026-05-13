@@ -8,11 +8,11 @@ type GoogleCloudRunServiceTemplateSpecVolumesCsi struct {
 	//   * gcsfuse.run.googleapis.com: Mount a Google Cloud Storage bucket using GCSFuse. This driver requires the
 	//     run.googleapis.com/execution-environment annotation to be unset or set to "gen2"
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_cloud_run_service#driver GoogleCloudRunService#driver}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_cloud_run_service#driver GoogleCloudRunService#driver}
 	Driver *string `field:"required" json:"driver" yaml:"driver"`
 	// If true, all mounts created from this volume will be read-only.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_cloud_run_service#read_only GoogleCloudRunService#read_only}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_cloud_run_service#read_only GoogleCloudRunService#read_only}
 	ReadOnly interface{} `field:"optional" json:"readOnly" yaml:"readOnly"`
 	// Driver-specific attributes.
 	//
@@ -20,7 +20,7 @@ type GoogleCloudRunServiceTemplateSpecVolumesCsi struct {
 	//   * gcsfuse.run.googleapis.com
 	//     * bucketName: The name of the Cloud Storage Bucket that backs this volume. The Cloud Run Service identity must have access to this bucket.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_cloud_run_service#volume_attributes GoogleCloudRunService#volume_attributes}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_cloud_run_service#volume_attributes GoogleCloudRunService#volume_attributes}
 	VolumeAttributes *map[string]*string `field:"optional" json:"volumeAttributes" yaml:"volumeAttributes"`
 }
 

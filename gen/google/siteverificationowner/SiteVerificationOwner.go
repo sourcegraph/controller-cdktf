@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/siteverificationowner/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/site_verification_owner google_site_verification_owner}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/site_verification_owner google_site_verification_owner}.
 type SiteVerificationOwner interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -377,7 +377,7 @@ func (j *jsiiProxy_SiteVerificationOwner) WebResourceIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/site_verification_owner google_site_verification_owner} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/site_verification_owner google_site_verification_owner} Resource.
 func NewSiteVerificationOwner(scope constructs.Construct, id *string, config *SiteVerificationOwnerConfig) SiteVerificationOwner {
 	_init_.Initialize()
 
@@ -395,7 +395,7 @@ func NewSiteVerificationOwner(scope constructs.Construct, id *string, config *Si
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/site_verification_owner google_site_verification_owner} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/site_verification_owner google_site_verification_owner} Resource.
 func NewSiteVerificationOwner_Override(s SiteVerificationOwner, scope constructs.Construct, id *string, config *SiteVerificationOwnerConfig) {
 	_init_.Initialize()
 

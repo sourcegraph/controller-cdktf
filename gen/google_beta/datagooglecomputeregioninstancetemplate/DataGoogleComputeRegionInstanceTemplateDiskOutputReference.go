@@ -10,6 +10,7 @@ import (
 
 type DataGoogleComputeRegionInstanceTemplateDiskOutputReference interface {
 	cdktf.ComplexObject
+	Architecture() *string
 	AutoDelete() cdktf.IResolvable
 	Boot() cdktf.IResolvable
 	// the index of the complex object in a list.
@@ -34,6 +35,7 @@ type DataGoogleComputeRegionInstanceTemplateDiskOutputReference interface {
 	DiskType() *string
 	// Experimental.
 	Fqn() *string
+	GuestOsFeatures() *[]*string
 	Interface() *string
 	InternalValue() *DataGoogleComputeRegionInstanceTemplateDisk
 	SetInternalValue(val *DataGoogleComputeRegionInstanceTemplateDisk)
@@ -48,6 +50,7 @@ type DataGoogleComputeRegionInstanceTemplateDiskOutputReference interface {
 	SourceImageEncryptionKey() DataGoogleComputeRegionInstanceTemplateDiskSourceImageEncryptionKeyList
 	SourceSnapshot() *string
 	SourceSnapshotEncryptionKey() DataGoogleComputeRegionInstanceTemplateDiskSourceSnapshotEncryptionKeyList
+	StoragePool() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -94,6 +97,16 @@ type DataGoogleComputeRegionInstanceTemplateDiskOutputReference interface {
 // The jsii proxy struct for DataGoogleComputeRegionInstanceTemplateDiskOutputReference
 type jsiiProxy_DataGoogleComputeRegionInstanceTemplateDiskOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplateDiskOutputReference) Architecture() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"architecture",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplateDiskOutputReference) AutoDelete() cdktf.IResolvable {
@@ -201,6 +214,16 @@ func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplateDiskOutputReference) F
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplateDiskOutputReference) GuestOsFeatures() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"guestOsFeatures",
 		&returns,
 	)
 	return returns
@@ -331,6 +354,16 @@ func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplateDiskOutputReference) S
 	_jsii_.Get(
 		j,
 		"sourceSnapshotEncryptionKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplateDiskOutputReference) StoragePool() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storagePool",
 		&returns,
 	)
 	return returns

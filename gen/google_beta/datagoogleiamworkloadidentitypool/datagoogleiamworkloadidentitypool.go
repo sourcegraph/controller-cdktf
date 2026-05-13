@@ -9,9 +9,10 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagoogleiamworkloadidentitypool/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_iam_workload_identity_pool google_iam_workload_identity_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/data-sources/google_iam_workload_identity_pool google_iam_workload_identity_pool}.
 type DataGoogleIamWorkloadIdentityPool interface {
 	cdktf.TerraformDataSource
+	AttestationRules() DataGoogleIamWorkloadIdentityPoolAttestationRulesList
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -38,10 +39,13 @@ type DataGoogleIamWorkloadIdentityPool interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	InlineCertificateIssuanceConfig() DataGoogleIamWorkloadIdentityPoolInlineCertificateIssuanceConfigList
+	InlineTrustConfig() DataGoogleIamWorkloadIdentityPoolInlineTrustConfigList
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Mode() *string
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
@@ -111,6 +115,16 @@ type DataGoogleIamWorkloadIdentityPool interface {
 // The jsii proxy struct for DataGoogleIamWorkloadIdentityPool
 type jsiiProxy_DataGoogleIamWorkloadIdentityPool struct {
 	internal.Type__cdktfTerraformDataSource
+}
+
+func (j *jsiiProxy_DataGoogleIamWorkloadIdentityPool) AttestationRules() DataGoogleIamWorkloadIdentityPoolAttestationRulesList {
+	var returns DataGoogleIamWorkloadIdentityPoolAttestationRulesList
+	_jsii_.Get(
+		j,
+		"attestationRules",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataGoogleIamWorkloadIdentityPool) CdktfStack() cdktf.TerraformStack {
@@ -233,11 +247,41 @@ func (j *jsiiProxy_DataGoogleIamWorkloadIdentityPool) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleIamWorkloadIdentityPool) InlineCertificateIssuanceConfig() DataGoogleIamWorkloadIdentityPoolInlineCertificateIssuanceConfigList {
+	var returns DataGoogleIamWorkloadIdentityPoolInlineCertificateIssuanceConfigList
+	_jsii_.Get(
+		j,
+		"inlineCertificateIssuanceConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleIamWorkloadIdentityPool) InlineTrustConfig() DataGoogleIamWorkloadIdentityPoolInlineTrustConfigList {
+	var returns DataGoogleIamWorkloadIdentityPoolInlineTrustConfigList
+	_jsii_.Get(
+		j,
+		"inlineTrustConfig",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleIamWorkloadIdentityPool) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleIamWorkloadIdentityPool) Mode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mode",
 		&returns,
 	)
 	return returns
@@ -364,7 +408,7 @@ func (j *jsiiProxy_DataGoogleIamWorkloadIdentityPool) WorkloadIdentityPoolIdInpu
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_iam_workload_identity_pool google_iam_workload_identity_pool} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/data-sources/google_iam_workload_identity_pool google_iam_workload_identity_pool} Data Source.
 func NewDataGoogleIamWorkloadIdentityPool(scope constructs.Construct, id *string, config *DataGoogleIamWorkloadIdentityPoolConfig) DataGoogleIamWorkloadIdentityPool {
 	_init_.Initialize()
 
@@ -382,7 +426,7 @@ func NewDataGoogleIamWorkloadIdentityPool(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_iam_workload_identity_pool google_iam_workload_identity_pool} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/data-sources/google_iam_workload_identity_pool google_iam_workload_identity_pool} Data Source.
 func NewDataGoogleIamWorkloadIdentityPool_Override(d DataGoogleIamWorkloadIdentityPool, scope constructs.Construct, id *string, config *DataGoogleIamWorkloadIdentityPoolConfig) {
 	_init_.Initialize()
 

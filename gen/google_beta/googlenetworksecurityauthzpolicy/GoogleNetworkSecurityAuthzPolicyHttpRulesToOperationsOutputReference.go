@@ -33,6 +33,8 @@ type GoogleNetworkSecurityAuthzPolicyHttpRulesToOperationsOutputReference interf
 	HostsInput() interface{}
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Mcp() GoogleNetworkSecurityAuthzPolicyHttpRulesToOperationsMcpOutputReference
+	McpInput() *GoogleNetworkSecurityAuthzPolicyHttpRulesToOperationsMcp
 	Methods() *[]*string
 	SetMethods(val *[]*string)
 	MethodsInput() *[]*string
@@ -72,9 +74,11 @@ type GoogleNetworkSecurityAuthzPolicyHttpRulesToOperationsOutputReference interf
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutHeaderSet(value *GoogleNetworkSecurityAuthzPolicyHttpRulesToOperationsHeaderSet)
 	PutHosts(value interface{})
+	PutMcp(value *GoogleNetworkSecurityAuthzPolicyHttpRulesToOperationsMcp)
 	PutPaths(value interface{})
 	ResetHeaderSet()
 	ResetHosts()
+	ResetMcp()
 	ResetMethods()
 	ResetPaths()
 	// Produce the Token's value at resolution time.
@@ -177,6 +181,26 @@ func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesToOperationsOutputRe
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesToOperationsOutputReference) Mcp() GoogleNetworkSecurityAuthzPolicyHttpRulesToOperationsMcpOutputReference {
+	var returns GoogleNetworkSecurityAuthzPolicyHttpRulesToOperationsMcpOutputReference
+	_jsii_.Get(
+		j,
+		"mcp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesToOperationsOutputReference) McpInput() *GoogleNetworkSecurityAuthzPolicyHttpRulesToOperationsMcp {
+	var returns *GoogleNetworkSecurityAuthzPolicyHttpRulesToOperationsMcp
+	_jsii_.Get(
+		j,
+		"mcpInput",
 		&returns,
 	)
 	return returns
@@ -544,6 +568,17 @@ func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesToOperationsOutputRe
 	)
 }
 
+func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesToOperationsOutputReference) PutMcp(value *GoogleNetworkSecurityAuthzPolicyHttpRulesToOperationsMcp) {
+	if err := g.validatePutMcpParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putMcp",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesToOperationsOutputReference) PutPaths(value interface{}) {
 	if err := g.validatePutPathsParameters(value); err != nil {
 		panic(err)
@@ -567,6 +602,14 @@ func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesToOperationsOutputRe
 	_jsii_.InvokeVoid(
 		g,
 		"resetHosts",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesToOperationsOutputReference) ResetMcp() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMcp",
 		nil, // no parameters
 	)
 }

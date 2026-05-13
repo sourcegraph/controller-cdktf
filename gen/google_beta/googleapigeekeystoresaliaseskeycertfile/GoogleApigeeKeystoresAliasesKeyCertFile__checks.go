@@ -204,17 +204,6 @@ func (g *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) validateOverrideLogi
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) validatePutCertsInfoParameters(value *GoogleApigeeKeystoresAliasesKeyCertFileCertsInfo) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
 func (g *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) validatePutTimeoutsParameters(value *GoogleApigeeKeystoresAliasesKeyCertFileTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -373,14 +362,6 @@ func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) validateSetCountPara
 }
 
 func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) validateSetEnvironmentParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

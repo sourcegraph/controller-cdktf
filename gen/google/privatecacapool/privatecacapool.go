@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/privatecacapool/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/privateca_ca_pool google_privateca_ca_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool google_privateca_ca_pool}.
 type PrivatecaCaPool interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -29,6 +29,8 @@ type PrivatecaCaPool interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	EffectiveLabels() cdktf.StringMap
+	EncryptionSpec() PrivatecaCaPoolEncryptionSpecOutputReference
+	EncryptionSpecInput() *PrivatecaCaPoolEncryptionSpec
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -127,9 +129,11 @@ type PrivatecaCaPool interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutEncryptionSpec(value *PrivatecaCaPoolEncryptionSpec)
 	PutIssuancePolicy(value *PrivatecaCaPoolIssuancePolicy)
 	PutPublishingOptions(value *PrivatecaCaPoolPublishingOptions)
 	PutTimeouts(value *PrivatecaCaPoolTimeouts)
+	ResetEncryptionSpec()
 	ResetId()
 	ResetIssuancePolicy()
 	ResetLabels()
@@ -212,6 +216,26 @@ func (j *jsiiProxy_PrivatecaCaPool) EffectiveLabels() cdktf.StringMap {
 	_jsii_.Get(
 		j,
 		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PrivatecaCaPool) EncryptionSpec() PrivatecaCaPoolEncryptionSpecOutputReference {
+	var returns PrivatecaCaPoolEncryptionSpecOutputReference
+	_jsii_.Get(
+		j,
+		"encryptionSpec",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PrivatecaCaPool) EncryptionSpecInput() *PrivatecaCaPoolEncryptionSpec {
+	var returns *PrivatecaCaPoolEncryptionSpec
+	_jsii_.Get(
+		j,
+		"encryptionSpecInput",
 		&returns,
 	)
 	return returns
@@ -518,7 +542,7 @@ func (j *jsiiProxy_PrivatecaCaPool) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/privateca_ca_pool google_privateca_ca_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool google_privateca_ca_pool} Resource.
 func NewPrivatecaCaPool(scope constructs.Construct, id *string, config *PrivatecaCaPoolConfig) PrivatecaCaPool {
 	_init_.Initialize()
 
@@ -536,7 +560,7 @@ func NewPrivatecaCaPool(scope constructs.Construct, id *string, config *Privatec
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/privateca_ca_pool google_privateca_ca_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool google_privateca_ca_pool} Resource.
 func NewPrivatecaCaPool_Override(p PrivatecaCaPool, scope constructs.Construct, id *string, config *PrivatecaCaPoolConfig) {
 	_init_.Initialize()
 
@@ -1034,6 +1058,17 @@ func (p *jsiiProxy_PrivatecaCaPool) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (p *jsiiProxy_PrivatecaCaPool) PutEncryptionSpec(value *PrivatecaCaPoolEncryptionSpec) {
+	if err := p.validatePutEncryptionSpecParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putEncryptionSpec",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PrivatecaCaPool) PutIssuancePolicy(value *PrivatecaCaPoolIssuancePolicy) {
 	if err := p.validatePutIssuancePolicyParameters(value); err != nil {
 		panic(err)
@@ -1064,6 +1099,14 @@ func (p *jsiiProxy_PrivatecaCaPool) PutTimeouts(value *PrivatecaCaPoolTimeouts) 
 		p,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PrivatecaCaPool) ResetEncryptionSpec() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetEncryptionSpec",
+		nil, // no parameters
 	)
 }
 

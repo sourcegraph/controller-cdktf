@@ -90,6 +90,61 @@ func (c *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) valid
 	return nil
 }
 
+func (c *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) validatePutEvictionMinimumReclaimParameters(value *ContainerClusterNodeConfigKubeletConfigEvictionMinimumReclaim) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) validatePutEvictionSoftParameters(value *ContainerClusterNodeConfigKubeletConfigEvictionSoft) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) validatePutEvictionSoftGracePeriodParameters(value *ContainerClusterNodeConfigKubeletConfigEvictionSoftGracePeriod) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) validatePutMemoryManagerParameters(value *ContainerClusterNodeConfigKubeletConfigMemoryManager) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) validatePutTopologyManagerParameters(value *ContainerClusterNodeConfigKubeletConfigTopologyManager) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (c *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
@@ -223,6 +278,14 @@ func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) validateSetEvictionMaxPodGracePeriodSecondsParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) validateSetImageGcHighThresholdPercentParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -271,9 +334,37 @@ func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) validateSetMaxParallelImagePullsParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) validateSetPodPidsLimitParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) validateSetSingleProcessOomKillParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil

@@ -44,6 +44,26 @@ func (g *jsiiProxy_GoogleContainerClusterNodeConfigKubeletConfigOutputReference)
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigKubeletConfigOutputReference) validatePutEvictionMinimumReclaimParameters(value *GoogleContainerClusterNodeConfigKubeletConfigEvictionMinimumReclaim) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigKubeletConfigOutputReference) validatePutEvictionSoftParameters(value *GoogleContainerClusterNodeConfigKubeletConfigEvictionSoft) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigKubeletConfigOutputReference) validatePutEvictionSoftGracePeriodParameters(value *GoogleContainerClusterNodeConfigKubeletConfigEvictionSoftGracePeriod) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigKubeletConfigOutputReference) validatePutMemoryManagerParameters(value *GoogleContainerClusterNodeConfigKubeletConfigMemoryManager) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigKubeletConfigOutputReference) validatePutTopologyManagerParameters(value *GoogleContainerClusterNodeConfigKubeletConfigTopologyManager) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerClusterNodeConfigKubeletConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -80,6 +100,10 @@ func (j *jsiiProxy_GoogleContainerClusterNodeConfigKubeletConfigOutputReference)
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigKubeletConfigOutputReference) validateSetEvictionMaxPodGracePeriodSecondsParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerClusterNodeConfigKubeletConfigOutputReference) validateSetImageGcHighThresholdPercentParameters(val *float64) error {
 	return nil
 }
@@ -104,7 +128,15 @@ func (j *jsiiProxy_GoogleContainerClusterNodeConfigKubeletConfigOutputReference)
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigKubeletConfigOutputReference) validateSetMaxParallelImagePullsParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerClusterNodeConfigKubeletConfigOutputReference) validateSetPodPidsLimitParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigKubeletConfigOutputReference) validateSetSingleProcessOomKillParameters(val interface{}) error {
 	return nil
 }
 

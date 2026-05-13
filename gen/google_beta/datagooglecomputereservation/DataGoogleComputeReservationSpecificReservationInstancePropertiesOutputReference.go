@@ -31,7 +31,9 @@ type DataGoogleComputeReservationSpecificReservationInstancePropertiesOutputRefe
 	InternalValue() *DataGoogleComputeReservationSpecificReservationInstanceProperties
 	SetInternalValue(val *DataGoogleComputeReservationSpecificReservationInstanceProperties)
 	LocalSsds() DataGoogleComputeReservationSpecificReservationInstancePropertiesLocalSsdsList
+	LocationHint() *string
 	MachineType() *string
+	MaintenanceInterval() *string
 	MinCpuPlatform() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -150,11 +152,31 @@ func (j *jsiiProxy_DataGoogleComputeReservationSpecificReservationInstanceProper
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeReservationSpecificReservationInstancePropertiesOutputReference) LocationHint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"locationHint",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeReservationSpecificReservationInstancePropertiesOutputReference) MachineType() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"machineType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeReservationSpecificReservationInstancePropertiesOutputReference) MaintenanceInterval() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maintenanceInterval",
 		&returns,
 	)
 	return returns

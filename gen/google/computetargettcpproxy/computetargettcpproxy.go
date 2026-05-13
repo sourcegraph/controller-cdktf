@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/computetargettcpproxy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_target_tcp_proxy google_compute_target_tcp_proxy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_target_tcp_proxy google_compute_target_tcp_proxy}.
 type ComputeTargetTcpProxy interface {
 	cdktf.TerraformResource
 	BackendService() *string
@@ -128,6 +128,7 @@ type ComputeTargetTcpProxy interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *ComputeTargetTcpProxyTimeouts)
+	ResetBackendService()
 	ResetDescription()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -506,7 +507,7 @@ func (j *jsiiProxy_ComputeTargetTcpProxy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_target_tcp_proxy google_compute_target_tcp_proxy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_target_tcp_proxy google_compute_target_tcp_proxy} Resource.
 func NewComputeTargetTcpProxy(scope constructs.Construct, id *string, config *ComputeTargetTcpProxyConfig) ComputeTargetTcpProxy {
 	_init_.Initialize()
 
@@ -524,7 +525,7 @@ func NewComputeTargetTcpProxy(scope constructs.Construct, id *string, config *Co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_target_tcp_proxy google_compute_target_tcp_proxy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_target_tcp_proxy google_compute_target_tcp_proxy} Resource.
 func NewComputeTargetTcpProxy_Override(c ComputeTargetTcpProxy, scope constructs.Construct, id *string, config *ComputeTargetTcpProxyConfig) {
 	_init_.Initialize()
 
@@ -1041,6 +1042,14 @@ func (c *jsiiProxy_ComputeTargetTcpProxy) PutTimeouts(value *ComputeTargetTcpPro
 		c,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ComputeTargetTcpProxy) ResetBackendService() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetBackendService",
+		nil, // no parameters
 	)
 }
 

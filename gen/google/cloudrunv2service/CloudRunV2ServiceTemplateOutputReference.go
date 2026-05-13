@@ -41,6 +41,9 @@ type CloudRunV2ServiceTemplateOutputReference interface {
 	GpuZonalRedundancyDisabled() interface{}
 	SetGpuZonalRedundancyDisabled(val interface{})
 	GpuZonalRedundancyDisabledInput() interface{}
+	HealthCheckDisabled() interface{}
+	SetHealthCheckDisabled(val interface{})
+	HealthCheckDisabledInput() interface{}
 	InternalValue() *CloudRunV2ServiceTemplate
 	SetInternalValue(val *CloudRunV2ServiceTemplate)
 	Labels() *map[string]*string
@@ -111,6 +114,7 @@ type CloudRunV2ServiceTemplateOutputReference interface {
 	ResetEncryptionKey()
 	ResetExecutionEnvironment()
 	ResetGpuZonalRedundancyDisabled()
+	ResetHealthCheckDisabled()
 	ResetLabels()
 	ResetMaxInstanceRequestConcurrency()
 	ResetNodeSelector()
@@ -271,6 +275,26 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) GpuZonalRedundancyD
 	_jsii_.Get(
 		j,
 		"gpuZonalRedundancyDisabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) HealthCheckDisabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"healthCheckDisabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) HealthCheckDisabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"healthCheckDisabledInput",
 		&returns,
 	)
 	return returns
@@ -596,6 +620,17 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateOutputReference)SetGpuZonalRedundanc
 	_jsii_.Set(
 		j,
 		"gpuZonalRedundancyDisabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudRunV2ServiceTemplateOutputReference)SetHealthCheckDisabled(val interface{}) {
+	if err := j.validateSetHealthCheckDisabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"healthCheckDisabled",
 		val,
 	)
 }
@@ -976,6 +1011,14 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) ResetGpuZonalRedund
 	_jsii_.InvokeVoid(
 		c,
 		"resetGpuZonalRedundancyDisabled",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) ResetHealthCheckDisabled() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetHealthCheckDisabled",
 		nil, // no parameters
 	)
 }

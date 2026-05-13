@@ -10,6 +10,8 @@ import (
 
 type GkeonpremBareMetalAdminClusterLoadBalancerOutputReference interface {
 	cdktf.ComplexObject
+	BgpLbConfig() GkeonpremBareMetalAdminClusterLoadBalancerBgpLbConfigOutputReference
+	BgpLbConfigInput() *GkeonpremBareMetalAdminClusterLoadBalancerBgpLbConfig
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -67,9 +69,11 @@ type GkeonpremBareMetalAdminClusterLoadBalancerOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutBgpLbConfig(value *GkeonpremBareMetalAdminClusterLoadBalancerBgpLbConfig)
 	PutManualLbConfig(value *GkeonpremBareMetalAdminClusterLoadBalancerManualLbConfig)
 	PutPortConfig(value *GkeonpremBareMetalAdminClusterLoadBalancerPortConfig)
 	PutVipConfig(value *GkeonpremBareMetalAdminClusterLoadBalancerVipConfig)
+	ResetBgpLbConfig()
 	ResetManualLbConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -84,6 +88,26 @@ type GkeonpremBareMetalAdminClusterLoadBalancerOutputReference interface {
 // The jsii proxy struct for GkeonpremBareMetalAdminClusterLoadBalancerOutputReference
 type jsiiProxy_GkeonpremBareMetalAdminClusterLoadBalancerOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GkeonpremBareMetalAdminClusterLoadBalancerOutputReference) BgpLbConfig() GkeonpremBareMetalAdminClusterLoadBalancerBgpLbConfigOutputReference {
+	var returns GkeonpremBareMetalAdminClusterLoadBalancerBgpLbConfigOutputReference
+	_jsii_.Get(
+		j,
+		"bgpLbConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GkeonpremBareMetalAdminClusterLoadBalancerOutputReference) BgpLbConfigInput() *GkeonpremBareMetalAdminClusterLoadBalancerBgpLbConfig {
+	var returns *GkeonpremBareMetalAdminClusterLoadBalancerBgpLbConfig
+	_jsii_.Get(
+		j,
+		"bgpLbConfigInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GkeonpremBareMetalAdminClusterLoadBalancerOutputReference) ComplexObjectIndex() interface{} {
@@ -485,6 +509,17 @@ func (g *jsiiProxy_GkeonpremBareMetalAdminClusterLoadBalancerOutputReference) In
 	return returns
 }
 
+func (g *jsiiProxy_GkeonpremBareMetalAdminClusterLoadBalancerOutputReference) PutBgpLbConfig(value *GkeonpremBareMetalAdminClusterLoadBalancerBgpLbConfig) {
+	if err := g.validatePutBgpLbConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putBgpLbConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GkeonpremBareMetalAdminClusterLoadBalancerOutputReference) PutManualLbConfig(value *GkeonpremBareMetalAdminClusterLoadBalancerManualLbConfig) {
 	if err := g.validatePutManualLbConfigParameters(value); err != nil {
 		panic(err)
@@ -515,6 +550,14 @@ func (g *jsiiProxy_GkeonpremBareMetalAdminClusterLoadBalancerOutputReference) Pu
 		g,
 		"putVipConfig",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GkeonpremBareMetalAdminClusterLoadBalancerOutputReference) ResetBgpLbConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetBgpLbConfig",
+		nil, // no parameters
 	)
 }
 

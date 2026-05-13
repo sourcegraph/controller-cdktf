@@ -76,7 +76,15 @@ func (j *jsiiProxy_SqlDatabaseInstanceCloneOutputReference) validateSetPreferred
 	return nil
 }
 
+func (j *jsiiProxy_SqlDatabaseInstanceCloneOutputReference) validateSetSourceInstanceDeletionTimeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlDatabaseInstanceCloneOutputReference) validateSetSourceInstanceNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceCloneOutputReference) validateSetSourceProjectParameters(val *string) error {
 	return nil
 }
 

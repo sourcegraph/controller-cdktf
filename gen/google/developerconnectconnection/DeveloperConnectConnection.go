@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/developerconnectconnection/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/developer_connect_connection google_developer_connect_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection google_developer_connect_connection}.
 type DeveloperConnectConnection interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -66,6 +66,8 @@ type DeveloperConnectConnection interface {
 	GitlabConfigInput() *DeveloperConnectConnectionGitlabConfig
 	GitlabEnterpriseConfig() DeveloperConnectConnectionGitlabEnterpriseConfigOutputReference
 	GitlabEnterpriseConfigInput() *DeveloperConnectConnectionGitlabEnterpriseConfig
+	HttpConfig() DeveloperConnectConnectionHttpConfigOutputReference
+	HttpConfigInput() *DeveloperConnectConnectionHttpConfig
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -158,6 +160,7 @@ type DeveloperConnectConnection interface {
 	PutGithubEnterpriseConfig(value *DeveloperConnectConnectionGithubEnterpriseConfig)
 	PutGitlabConfig(value *DeveloperConnectConnectionGitlabConfig)
 	PutGitlabEnterpriseConfig(value *DeveloperConnectConnectionGitlabEnterpriseConfig)
+	PutHttpConfig(value *DeveloperConnectConnectionHttpConfig)
 	PutTimeouts(value *DeveloperConnectConnectionTimeouts)
 	ResetAnnotations()
 	ResetBitbucketCloudConfig()
@@ -169,6 +172,7 @@ type DeveloperConnectConnection interface {
 	ResetGithubEnterpriseConfig()
 	ResetGitlabConfig()
 	ResetGitlabEnterpriseConfig()
+	ResetHttpConfig()
 	ResetId()
 	ResetLabels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -534,6 +538,26 @@ func (j *jsiiProxy_DeveloperConnectConnection) GitlabEnterpriseConfigInput() *De
 	return returns
 }
 
+func (j *jsiiProxy_DeveloperConnectConnection) HttpConfig() DeveloperConnectConnectionHttpConfigOutputReference {
+	var returns DeveloperConnectConnectionHttpConfigOutputReference
+	_jsii_.Get(
+		j,
+		"httpConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DeveloperConnectConnection) HttpConfigInput() *DeveloperConnectConnectionHttpConfig {
+	var returns *DeveloperConnectConnectionHttpConfig
+	_jsii_.Get(
+		j,
+		"httpConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DeveloperConnectConnection) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -775,7 +799,7 @@ func (j *jsiiProxy_DeveloperConnectConnection) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/developer_connect_connection google_developer_connect_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection google_developer_connect_connection} Resource.
 func NewDeveloperConnectConnection(scope constructs.Construct, id *string, config *DeveloperConnectConnectionConfig) DeveloperConnectConnection {
 	_init_.Initialize()
 
@@ -793,7 +817,7 @@ func NewDeveloperConnectConnection(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/developer_connect_connection google_developer_connect_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection google_developer_connect_connection} Resource.
 func NewDeveloperConnectConnection_Override(d DeveloperConnectConnection, scope constructs.Construct, id *string, config *DeveloperConnectConnectionConfig) {
 	_init_.Initialize()
 
@@ -1390,6 +1414,17 @@ func (d *jsiiProxy_DeveloperConnectConnection) PutGitlabEnterpriseConfig(value *
 	)
 }
 
+func (d *jsiiProxy_DeveloperConnectConnection) PutHttpConfig(value *DeveloperConnectConnectionHttpConfig) {
+	if err := d.validatePutHttpConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putHttpConfig",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DeveloperConnectConnection) PutTimeouts(value *DeveloperConnectConnectionTimeouts) {
 	if err := d.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1477,6 +1512,14 @@ func (d *jsiiProxy_DeveloperConnectConnection) ResetGitlabEnterpriseConfig() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetGitlabEnterpriseConfig",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DeveloperConnectConnection) ResetHttpConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetHttpConfig",
 		nil, // no parameters
 	)
 }

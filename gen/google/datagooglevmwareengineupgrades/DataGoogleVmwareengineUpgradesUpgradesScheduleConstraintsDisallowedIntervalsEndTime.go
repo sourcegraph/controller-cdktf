@@ -1,0 +1,6 @@
+package datagooglevmwareengineupgrades
+
+
+type DataGoogleVmwareengineUpgradesUpgradesScheduleConstraintsDisallowedIntervalsEndTime struct {
+}
+

@@ -1,0 +1,6 @@
+package googlenetworkservicesmulticastdomainactivation
+
+
+type GoogleNetworkServicesMulticastDomainActivationState struct {
+}
+

@@ -136,6 +136,10 @@ func (j *jsiiProxy_DataprocMetastoreFederation) validateSetProvisionersParameter
 	return nil
 }
 
+func (j *jsiiProxy_DataprocMetastoreFederation) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataprocMetastoreFederation) validateSetVersionParameters(val *string) error {
 	return nil
 }

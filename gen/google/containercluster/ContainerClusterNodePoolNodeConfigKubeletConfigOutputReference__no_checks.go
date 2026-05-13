@@ -44,6 +44,26 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReferenc
 	return nil
 }
 
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) validatePutEvictionMinimumReclaimParameters(value *ContainerClusterNodePoolNodeConfigKubeletConfigEvictionMinimumReclaim) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) validatePutEvictionSoftParameters(value *ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoft) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) validatePutEvictionSoftGracePeriodParameters(value *ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriod) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) validatePutMemoryManagerParameters(value *ContainerClusterNodePoolNodeConfigKubeletConfigMemoryManager) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) validatePutTopologyManagerParameters(value *ContainerClusterNodePoolNodeConfigKubeletConfigTopologyManager) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -80,6 +100,10 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReferenc
 	return nil
 }
 
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) validateSetEvictionMaxPodGracePeriodSecondsParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) validateSetImageGcHighThresholdPercentParameters(val *float64) error {
 	return nil
 }
@@ -104,7 +128,15 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReferenc
 	return nil
 }
 
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) validateSetMaxParallelImagePullsParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) validateSetPodPidsLimitParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) validateSetSingleProcessOomKillParameters(val interface{}) error {
 	return nil
 }
 

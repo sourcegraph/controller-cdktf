@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglesecretmanagersecretversion/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_secret_manager_secret_version google_secret_manager_secret_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/data-sources/google_secret_manager_secret_version google_secret_manager_secret_version}.
 type DataGoogleSecretManagerSecretVersion interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -27,6 +27,9 @@ type DataGoogleSecretManagerSecretVersion interface {
 	SetDependsOn(val *[]*string)
 	DestroyTime() *string
 	Enabled() cdktf.IResolvable
+	FetchSecretData() interface{}
+	SetFetchSecretData(val interface{})
+	FetchSecretDataInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -95,6 +98,7 @@ type DataGoogleSecretManagerSecretVersion interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetFetchSecretData()
 	ResetId()
 	ResetIsSecretDataBase64()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -186,6 +190,26 @@ func (j *jsiiProxy_DataGoogleSecretManagerSecretVersion) Enabled() cdktf.IResolv
 	_jsii_.Get(
 		j,
 		"enabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSecretManagerSecretVersion) FetchSecretData() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"fetchSecretData",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSecretManagerSecretVersion) FetchSecretDataInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"fetchSecretDataInput",
 		&returns,
 	)
 	return returns
@@ -412,7 +436,7 @@ func (j *jsiiProxy_DataGoogleSecretManagerSecretVersion) VersionInput() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_secret_manager_secret_version google_secret_manager_secret_version} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/data-sources/google_secret_manager_secret_version google_secret_manager_secret_version} Data Source.
 func NewDataGoogleSecretManagerSecretVersion(scope constructs.Construct, id *string, config *DataGoogleSecretManagerSecretVersionConfig) DataGoogleSecretManagerSecretVersion {
 	_init_.Initialize()
 
@@ -430,7 +454,7 @@ func NewDataGoogleSecretManagerSecretVersion(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_secret_manager_secret_version google_secret_manager_secret_version} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/data-sources/google_secret_manager_secret_version google_secret_manager_secret_version} Data Source.
 func NewDataGoogleSecretManagerSecretVersion_Override(d DataGoogleSecretManagerSecretVersion, scope constructs.Construct, id *string, config *DataGoogleSecretManagerSecretVersionConfig) {
 	_init_.Initialize()
 
@@ -456,6 +480,17 @@ func (j *jsiiProxy_DataGoogleSecretManagerSecretVersion)SetDependsOn(val *[]*str
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGoogleSecretManagerSecretVersion)SetFetchSecretData(val interface{}) {
+	if err := j.validateSetFetchSecretDataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"fetchSecretData",
 		val,
 	)
 }
@@ -824,6 +859,14 @@ func (d *jsiiProxy_DataGoogleSecretManagerSecretVersion) OverrideLogicalId(newLo
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataGoogleSecretManagerSecretVersion) ResetFetchSecretData() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFetchSecretData",
+		nil, // no parameters
 	)
 }
 

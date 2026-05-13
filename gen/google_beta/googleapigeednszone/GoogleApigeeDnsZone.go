@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleapigeednszone/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_apigee_dns_zone google_apigee_dns_zone}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_apigee_dns_zone google_apigee_dns_zone}.
 type GoogleApigeeDnsZone interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -457,7 +457,7 @@ func (j *jsiiProxy_GoogleApigeeDnsZone) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_apigee_dns_zone google_apigee_dns_zone} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_apigee_dns_zone google_apigee_dns_zone} Resource.
 func NewGoogleApigeeDnsZone(scope constructs.Construct, id *string, config *GoogleApigeeDnsZoneConfig) GoogleApigeeDnsZone {
 	_init_.Initialize()
 
@@ -475,7 +475,7 @@ func NewGoogleApigeeDnsZone(scope constructs.Construct, id *string, config *Goog
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_apigee_dns_zone google_apigee_dns_zone} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_apigee_dns_zone google_apigee_dns_zone} Resource.
 func NewGoogleApigeeDnsZone_Override(g GoogleApigeeDnsZone, scope constructs.Construct, id *string, config *GoogleApigeeDnsZoneConfig) {
 	_init_.Initialize()
 

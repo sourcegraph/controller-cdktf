@@ -60,6 +60,10 @@ func (j *jsiiProxy_NetworkSecuritySecurityProfileCustomMirroringProfileOutputRef
 	return nil
 }
 
+func (j *jsiiProxy_NetworkSecuritySecurityProfileCustomMirroringProfileOutputReference) validateSetMirroringDeploymentGroupsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkSecuritySecurityProfileCustomMirroringProfileOutputReference) validateSetMirroringEndpointGroupParameters(val *string) error {
 	return nil
 }

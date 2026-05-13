@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecloudbuildtrigger/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_cloudbuild_trigger google_cloudbuild_trigger}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_cloudbuild_trigger google_cloudbuild_trigger}.
 type GoogleCloudbuildTrigger interface {
 	cdktf.TerraformResource
 	ApprovalConfig() GoogleCloudbuildTriggerApprovalConfigOutputReference
@@ -38,6 +38,8 @@ type GoogleCloudbuildTrigger interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	DeveloperConnectEventConfig() GoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference
+	DeveloperConnectEventConfigInput() *GoogleCloudbuildTriggerDeveloperConnectEventConfig
 	Disabled() interface{}
 	SetDisabled(val interface{})
 	DisabledInput() interface{}
@@ -170,6 +172,7 @@ type GoogleCloudbuildTrigger interface {
 	PutApprovalConfig(value *GoogleCloudbuildTriggerApprovalConfig)
 	PutBitbucketServerTriggerConfig(value *GoogleCloudbuildTriggerBitbucketServerTriggerConfig)
 	PutBuildAttribute(value *GoogleCloudbuildTriggerBuild)
+	PutDeveloperConnectEventConfig(value *GoogleCloudbuildTriggerDeveloperConnectEventConfig)
 	PutGitFileSource(value *GoogleCloudbuildTriggerGitFileSource)
 	PutGithub(value *GoogleCloudbuildTriggerGithub)
 	PutPubsubConfig(value *GoogleCloudbuildTriggerPubsubConfig)
@@ -182,6 +185,7 @@ type GoogleCloudbuildTrigger interface {
 	ResetBitbucketServerTriggerConfig()
 	ResetBuildAttribute()
 	ResetDescription()
+	ResetDeveloperConnectEventConfig()
 	ResetDisabled()
 	ResetFilename()
 	ResetFilter()
@@ -359,6 +363,26 @@ func (j *jsiiProxy_GoogleCloudbuildTrigger) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudbuildTrigger) DeveloperConnectEventConfig() GoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference {
+	var returns GoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference
+	_jsii_.Get(
+		j,
+		"developerConnectEventConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudbuildTrigger) DeveloperConnectEventConfigInput() *GoogleCloudbuildTriggerDeveloperConnectEventConfig {
+	var returns *GoogleCloudbuildTriggerDeveloperConnectEventConfig
+	_jsii_.Get(
+		j,
+		"developerConnectEventConfigInput",
 		&returns,
 	)
 	return returns
@@ -905,7 +929,7 @@ func (j *jsiiProxy_GoogleCloudbuildTrigger) WebhookConfigInput() *GoogleCloudbui
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_cloudbuild_trigger google_cloudbuild_trigger} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_cloudbuild_trigger google_cloudbuild_trigger} Resource.
 func NewGoogleCloudbuildTrigger(scope constructs.Construct, id *string, config *GoogleCloudbuildTriggerConfig) GoogleCloudbuildTrigger {
 	_init_.Initialize()
 
@@ -923,7 +947,7 @@ func NewGoogleCloudbuildTrigger(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_cloudbuild_trigger google_cloudbuild_trigger} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_cloudbuild_trigger google_cloudbuild_trigger} Resource.
 func NewGoogleCloudbuildTrigger_Override(g GoogleCloudbuildTrigger, scope constructs.Construct, id *string, config *GoogleCloudbuildTriggerConfig) {
 	_init_.Initialize()
 
@@ -1542,6 +1566,17 @@ func (g *jsiiProxy_GoogleCloudbuildTrigger) PutBuildAttribute(value *GoogleCloud
 	)
 }
 
+func (g *jsiiProxy_GoogleCloudbuildTrigger) PutDeveloperConnectEventConfig(value *GoogleCloudbuildTriggerDeveloperConnectEventConfig) {
+	if err := g.validatePutDeveloperConnectEventConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putDeveloperConnectEventConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleCloudbuildTrigger) PutGitFileSource(value *GoogleCloudbuildTriggerGitFileSource) {
 	if err := g.validatePutGitFileSourceParameters(value); err != nil {
 		panic(err)
@@ -1658,6 +1693,14 @@ func (g *jsiiProxy_GoogleCloudbuildTrigger) ResetDescription() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudbuildTrigger) ResetDeveloperConnectEventConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDeveloperConnectEventConfig",
 		nil, // no parameters
 	)
 }

@@ -29,41 +29,55 @@ type GoogleComputeReservationConfig struct {
 	// characters must be a dash, lowercase letter, or digit, except the last
 	// character, which cannot be a dash.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_reservation#name GoogleComputeReservation#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_reservation#name GoogleComputeReservation#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// specific_reservation block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_reservation#specific_reservation GoogleComputeReservation#specific_reservation}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_reservation#specific_reservation GoogleComputeReservation#specific_reservation}
 	SpecificReservation *GoogleComputeReservationSpecificReservation `field:"required" json:"specificReservation" yaml:"specificReservation"`
 	// The zone where the reservation is made.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_reservation#zone GoogleComputeReservation#zone}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_reservation#zone GoogleComputeReservation#zone}
 	Zone *string `field:"required" json:"zone" yaml:"zone"`
+	// delete_after_duration block.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_reservation#delete_after_duration GoogleComputeReservation#delete_after_duration}
+	DeleteAfterDuration *GoogleComputeReservationDeleteAfterDuration `field:"optional" json:"deleteAfterDuration" yaml:"deleteAfterDuration"`
+	// Absolute time in future when the reservation will be auto-deleted by Compute Engine.
+	//
+	// Timestamp is represented in RFC3339 text format.
+	// Cannot be used with delete_after_duration.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_reservation#delete_at_time GoogleComputeReservation#delete_at_time}
+	DeleteAtTime *string `field:"optional" json:"deleteAtTime" yaml:"deleteAtTime"`
 	// An optional description of this resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_reservation#description GoogleComputeReservation#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_reservation#description GoogleComputeReservation#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_reservation#id GoogleComputeReservation#id}.
+	// Indicates if this group of VMs have emergent maintenance enabled.
 	//
-	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_reservation#project GoogleComputeReservation#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_reservation#enable_emergent_maintenance GoogleComputeReservation#enable_emergent_maintenance}
+	EnableEmergentMaintenance interface{} `field:"optional" json:"enableEmergentMaintenance" yaml:"enableEmergentMaintenance"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_reservation#project GoogleComputeReservation#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
+	// reservation_sharing_policy block.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_reservation#reservation_sharing_policy GoogleComputeReservation#reservation_sharing_policy}
+	ReservationSharingPolicy *GoogleComputeReservationReservationSharingPolicy `field:"optional" json:"reservationSharingPolicy" yaml:"reservationSharingPolicy"`
 	// share_settings block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_reservation#share_settings GoogleComputeReservation#share_settings}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_reservation#share_settings GoogleComputeReservation#share_settings}
 	ShareSettings *GoogleComputeReservationShareSettings `field:"optional" json:"shareSettings" yaml:"shareSettings"`
 	// When set to true, only VMs that target this reservation by name can consume this reservation.
 	//
 	// Otherwise, it can be consumed by VMs with
 	// affinity for any reservation. Defaults to false.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_reservation#specific_reservation_required GoogleComputeReservation#specific_reservation_required}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_reservation#specific_reservation_required GoogleComputeReservation#specific_reservation_required}
 	SpecificReservationRequired interface{} `field:"optional" json:"specificReservationRequired" yaml:"specificReservationRequired"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_reservation#timeouts GoogleComputeReservation#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_reservation#timeouts GoogleComputeReservation#timeouts}
 	Timeouts *GoogleComputeReservationTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

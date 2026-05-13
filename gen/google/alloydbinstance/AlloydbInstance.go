@@ -9,9 +9,12 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/alloydbinstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/alloydb_instance google_alloydb_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance google_alloydb_instance}.
 type AlloydbInstance interface {
 	cdktf.TerraformResource
+	ActivationPolicy() *string
+	SetActivationPolicy(val *string)
+	ActivationPolicyInput() *string
 	Annotations() *map[string]*string
 	SetAnnotations(val *map[string]*string)
 	AnnotationsInput() *map[string]*string
@@ -29,6 +32,8 @@ type AlloydbInstance interface {
 	Connection() interface{}
 	// Experimental.
 	SetConnection(val interface{})
+	ConnectionPoolConfig() AlloydbInstanceConnectionPoolConfigOutputReference
+	ConnectionPoolConfigInput() *AlloydbInstanceConnectionPoolConfig
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -158,15 +163,18 @@ type AlloydbInstance interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutClientConnectionConfig(value *AlloydbInstanceClientConnectionConfig)
+	PutConnectionPoolConfig(value *AlloydbInstanceConnectionPoolConfig)
 	PutMachineConfig(value *AlloydbInstanceMachineConfig)
 	PutNetworkConfig(value *AlloydbInstanceNetworkConfig)
 	PutPscInstanceConfig(value *AlloydbInstancePscInstanceConfig)
 	PutQueryInsightsConfig(value *AlloydbInstanceQueryInsightsConfig)
 	PutReadPoolConfig(value *AlloydbInstanceReadPoolConfig)
 	PutTimeouts(value *AlloydbInstanceTimeouts)
+	ResetActivationPolicy()
 	ResetAnnotations()
 	ResetAvailabilityType()
 	ResetClientConnectionConfig()
+	ResetConnectionPoolConfig()
 	ResetDatabaseFlags()
 	ResetDisplayName()
 	ResetGceZone()
@@ -197,6 +205,26 @@ type AlloydbInstance interface {
 // The jsii proxy struct for AlloydbInstance
 type jsiiProxy_AlloydbInstance struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_AlloydbInstance) ActivationPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"activationPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbInstance) ActivationPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"activationPolicyInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_AlloydbInstance) Annotations() *map[string]*string {
@@ -294,6 +322,26 @@ func (j *jsiiProxy_AlloydbInstance) Connection() interface{} {
 	_jsii_.Get(
 		j,
 		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbInstance) ConnectionPoolConfig() AlloydbInstanceConnectionPoolConfigOutputReference {
+	var returns AlloydbInstanceConnectionPoolConfigOutputReference
+	_jsii_.Get(
+		j,
+		"connectionPoolConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbInstance) ConnectionPoolConfigInput() *AlloydbInstanceConnectionPoolConfig {
+	var returns *AlloydbInstanceConnectionPoolConfig
+	_jsii_.Get(
+		j,
+		"connectionPoolConfigInput",
 		&returns,
 	)
 	return returns
@@ -820,7 +868,7 @@ func (j *jsiiProxy_AlloydbInstance) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/alloydb_instance google_alloydb_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance google_alloydb_instance} Resource.
 func NewAlloydbInstance(scope constructs.Construct, id *string, config *AlloydbInstanceConfig) AlloydbInstance {
 	_init_.Initialize()
 
@@ -838,7 +886,7 @@ func NewAlloydbInstance(scope constructs.Construct, id *string, config *AlloydbI
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/alloydb_instance google_alloydb_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance google_alloydb_instance} Resource.
 func NewAlloydbInstance_Override(a AlloydbInstance, scope constructs.Construct, id *string, config *AlloydbInstanceConfig) {
 	_init_.Initialize()
 
@@ -846,6 +894,17 @@ func NewAlloydbInstance_Override(a AlloydbInstance, scope constructs.Construct, 
 		"@cdktf/provider-google.alloydbInstance.AlloydbInstance",
 		[]interface{}{scope, id, config},
 		a,
+	)
+}
+
+func (j *jsiiProxy_AlloydbInstance)SetActivationPolicy(val *string) {
+	if err := j.validateSetActivationPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"activationPolicy",
+		val,
 	)
 }
 
@@ -1391,6 +1450,17 @@ func (a *jsiiProxy_AlloydbInstance) PutClientConnectionConfig(value *AlloydbInst
 	)
 }
 
+func (a *jsiiProxy_AlloydbInstance) PutConnectionPoolConfig(value *AlloydbInstanceConnectionPoolConfig) {
+	if err := a.validatePutConnectionPoolConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putConnectionPoolConfig",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AlloydbInstance) PutMachineConfig(value *AlloydbInstanceMachineConfig) {
 	if err := a.validatePutMachineConfigParameters(value); err != nil {
 		panic(err)
@@ -1457,6 +1527,14 @@ func (a *jsiiProxy_AlloydbInstance) PutTimeouts(value *AlloydbInstanceTimeouts) 
 	)
 }
 
+func (a *jsiiProxy_AlloydbInstance) ResetActivationPolicy() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetActivationPolicy",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AlloydbInstance) ResetAnnotations() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1477,6 +1555,14 @@ func (a *jsiiProxy_AlloydbInstance) ResetClientConnectionConfig() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetClientConnectionConfig",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlloydbInstance) ResetConnectionPoolConfig() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetConnectionPoolConfig",
 		nil, // no parameters
 	)
 }

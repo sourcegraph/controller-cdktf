@@ -356,6 +356,14 @@ func (j *jsiiProxy_GoogleSecureSourceManagerRepository) validateSetCountParamete
 	return nil
 }
 
+func (j *jsiiProxy_GoogleSecureSourceManagerRepository) validateSetDeletionPolicyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSecureSourceManagerRepository) validateSetDescriptionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

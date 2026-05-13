@@ -11,6 +11,8 @@ import (
 type DataGoogleMonitoringNotificationChannelSensitiveLabelsOutputReference interface {
 	cdktf.ComplexObject
 	AuthToken() *string
+	AuthTokenWo() *string
+	AuthTokenWoVersion() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -31,7 +33,11 @@ type DataGoogleMonitoringNotificationChannelSensitiveLabelsOutputReference inter
 	InternalValue() *DataGoogleMonitoringNotificationChannelSensitiveLabels
 	SetInternalValue(val *DataGoogleMonitoringNotificationChannelSensitiveLabels)
 	Password() *string
+	PasswordWo() *string
+	PasswordWoVersion() *string
 	ServiceKey() *string
+	ServiceKeyWo() *string
+	ServiceKeyWoVersion() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -84,6 +90,26 @@ func (j *jsiiProxy_DataGoogleMonitoringNotificationChannelSensitiveLabelsOutputR
 	_jsii_.Get(
 		j,
 		"authToken",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleMonitoringNotificationChannelSensitiveLabelsOutputReference) AuthTokenWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authTokenWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleMonitoringNotificationChannelSensitiveLabelsOutputReference) AuthTokenWoVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authTokenWoVersion",
 		&returns,
 	)
 	return returns
@@ -149,11 +175,51 @@ func (j *jsiiProxy_DataGoogleMonitoringNotificationChannelSensitiveLabelsOutputR
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleMonitoringNotificationChannelSensitiveLabelsOutputReference) PasswordWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleMonitoringNotificationChannelSensitiveLabelsOutputReference) PasswordWoVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordWoVersion",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleMonitoringNotificationChannelSensitiveLabelsOutputReference) ServiceKey() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"serviceKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleMonitoringNotificationChannelSensitiveLabelsOutputReference) ServiceKeyWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceKeyWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleMonitoringNotificationChannelSensitiveLabelsOutputReference) ServiceKeyWoVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceKeyWoVersion",
 		&returns,
 	)
 	return returns

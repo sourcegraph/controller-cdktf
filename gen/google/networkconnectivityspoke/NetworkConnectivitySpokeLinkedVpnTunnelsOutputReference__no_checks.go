@@ -56,6 +56,18 @@ func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference) vali
 	return nil
 }
 
+func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference) validateSetExcludeExportRangesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference) validateSetExcludeImportRangesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference) validateSetIncludeExportRangesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference) validateSetIncludeImportRangesParameters(val *[]*string) error {
 	return nil
 }

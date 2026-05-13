@@ -29,9 +29,18 @@ type GoogleCloudRunV2ServiceScalingOutputReference interface {
 	Fqn() *string
 	InternalValue() *GoogleCloudRunV2ServiceScaling
 	SetInternalValue(val *GoogleCloudRunV2ServiceScaling)
+	ManualInstanceCount() *float64
+	SetManualInstanceCount(val *float64)
+	ManualInstanceCountInput() *float64
+	MaxInstanceCount() *float64
+	SetMaxInstanceCount(val *float64)
+	MaxInstanceCountInput() *float64
 	MinInstanceCount() *float64
 	SetMinInstanceCount(val *float64)
 	MinInstanceCountInput() *float64
+	ScalingMode() *string
+	SetScalingMode(val *string)
+	ScalingModeInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -64,7 +73,10 @@ type GoogleCloudRunV2ServiceScalingOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetManualInstanceCount()
+	ResetMaxInstanceCount()
 	ResetMinInstanceCount()
+	ResetScalingMode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -130,6 +142,46 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceScalingOutputReference) InternalValue(
 	return returns
 }
 
+func (j *jsiiProxy_GoogleCloudRunV2ServiceScalingOutputReference) ManualInstanceCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"manualInstanceCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2ServiceScalingOutputReference) ManualInstanceCountInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"manualInstanceCountInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2ServiceScalingOutputReference) MaxInstanceCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxInstanceCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2ServiceScalingOutputReference) MaxInstanceCountInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxInstanceCountInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleCloudRunV2ServiceScalingOutputReference) MinInstanceCount() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -145,6 +197,26 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceScalingOutputReference) MinInstanceCou
 	_jsii_.Get(
 		j,
 		"minInstanceCountInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2ServiceScalingOutputReference) ScalingMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scalingMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2ServiceScalingOutputReference) ScalingModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scalingModeInput",
 		&returns,
 	)
 	return returns
@@ -231,6 +303,28 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceScalingOutputReference)SetInternalValu
 	)
 }
 
+func (j *jsiiProxy_GoogleCloudRunV2ServiceScalingOutputReference)SetManualInstanceCount(val *float64) {
+	if err := j.validateSetManualInstanceCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"manualInstanceCount",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2ServiceScalingOutputReference)SetMaxInstanceCount(val *float64) {
+	if err := j.validateSetMaxInstanceCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxInstanceCount",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleCloudRunV2ServiceScalingOutputReference)SetMinInstanceCount(val *float64) {
 	if err := j.validateSetMinInstanceCountParameters(val); err != nil {
 		panic(err)
@@ -238,6 +332,17 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceScalingOutputReference)SetMinInstanceC
 	_jsii_.Set(
 		j,
 		"minInstanceCount",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2ServiceScalingOutputReference)SetScalingMode(val *string) {
+	if err := j.validateSetScalingModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"scalingMode",
 		val,
 	)
 }
@@ -450,10 +555,34 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceScalingOutputReference) InterpolationF
 	return returns
 }
 
+func (g *jsiiProxy_GoogleCloudRunV2ServiceScalingOutputReference) ResetManualInstanceCount() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetManualInstanceCount",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudRunV2ServiceScalingOutputReference) ResetMaxInstanceCount() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMaxInstanceCount",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleCloudRunV2ServiceScalingOutputReference) ResetMinInstanceCount() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetMinInstanceCount",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudRunV2ServiceScalingOutputReference) ResetScalingMode() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetScalingMode",
 		nil, // no parameters
 	)
 }

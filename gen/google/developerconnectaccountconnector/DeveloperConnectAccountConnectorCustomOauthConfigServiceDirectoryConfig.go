@@ -1,0 +1,10 @@
+package developerconnectaccountconnector
+
+
+type DeveloperConnectAccountConnectorCustomOauthConfigServiceDirectoryConfig struct {
+	// The Service Directory service name. Format: projects/{project}/locations/{location}/namespaces/{namespace}/services/{service}.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_account_connector#service DeveloperConnectAccountConnector#service}
+	Service *string `field:"required" json:"service" yaml:"service"`
+}
+

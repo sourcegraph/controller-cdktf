@@ -48,6 +48,18 @@ func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigActionsOutputReference
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigActionsOutputReference) validatePutPublishToChronicleParameters(value *GoogleDataLossPreventionDiscoveryConfigActionsPublishToChronicle) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigActionsOutputReference) validatePutPublishToDataplexCatalogParameters(value *GoogleDataLossPreventionDiscoveryConfigActionsPublishToDataplexCatalog) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigActionsOutputReference) validatePutPublishToSccParameters(value *GoogleDataLossPreventionDiscoveryConfigActionsPublishToScc) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigActionsOutputReference) validatePutPubSubNotificationParameters(value *GoogleDataLossPreventionDiscoveryConfigActionsPubSubNotification) error {
 	return nil
 }

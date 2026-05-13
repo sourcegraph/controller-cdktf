@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglecomputebackendservice/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_compute_backend_service google_compute_backend_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/data-sources/google_compute_backend_service google_compute_backend_service}.
 type DataGoogleComputeBackendService interface {
 	cdktf.TerraformDataSource
 	AffinityCookieTtlSec() *float64
@@ -36,8 +36,11 @@ type DataGoogleComputeBackendService interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Description() *string
+	DynamicForwarding() DataGoogleComputeBackendServiceDynamicForwardingList
 	EdgeSecurityPolicy() *string
 	EnableCdn() cdktf.IResolvable
+	ExternalManagedMigrationState() *string
+	ExternalManagedMigrationTestingPercentage() *float64
 	Fingerprint() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -66,9 +69,11 @@ type DataGoogleComputeBackendService interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	NetworkPassThroughLbTrafficPolicy() DataGoogleComputeBackendServiceNetworkPassThroughLbTrafficPolicyList
 	// The tree node.
 	Node() constructs.Node
 	OutlierDetection() DataGoogleComputeBackendServiceOutlierDetectionList
+	Params() DataGoogleComputeBackendServiceParamsList
 	PortName() *string
 	Project() *string
 	SetProject(val *string)
@@ -303,6 +308,16 @@ func (j *jsiiProxy_DataGoogleComputeBackendService) Description() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeBackendService) DynamicForwarding() DataGoogleComputeBackendServiceDynamicForwardingList {
+	var returns DataGoogleComputeBackendServiceDynamicForwardingList
+	_jsii_.Get(
+		j,
+		"dynamicForwarding",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeBackendService) EdgeSecurityPolicy() *string {
 	var returns *string
 	_jsii_.Get(
@@ -318,6 +333,26 @@ func (j *jsiiProxy_DataGoogleComputeBackendService) EnableCdn() cdktf.IResolvabl
 	_jsii_.Get(
 		j,
 		"enableCdn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeBackendService) ExternalManagedMigrationState() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"externalManagedMigrationState",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeBackendService) ExternalManagedMigrationTestingPercentage() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"externalManagedMigrationTestingPercentage",
 		&returns,
 	)
 	return returns
@@ -503,6 +538,16 @@ func (j *jsiiProxy_DataGoogleComputeBackendService) NameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeBackendService) NetworkPassThroughLbTrafficPolicy() DataGoogleComputeBackendServiceNetworkPassThroughLbTrafficPolicyList {
+	var returns DataGoogleComputeBackendServiceNetworkPassThroughLbTrafficPolicyList
+	_jsii_.Get(
+		j,
+		"networkPassThroughLbTrafficPolicy",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeBackendService) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -518,6 +563,16 @@ func (j *jsiiProxy_DataGoogleComputeBackendService) OutlierDetection() DataGoogl
 	_jsii_.Get(
 		j,
 		"outlierDetection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeBackendService) Params() DataGoogleComputeBackendServiceParamsList {
+	var returns DataGoogleComputeBackendServiceParamsList
+	_jsii_.Get(
+		j,
+		"params",
 		&returns,
 	)
 	return returns
@@ -694,7 +749,7 @@ func (j *jsiiProxy_DataGoogleComputeBackendService) TlsSettings() DataGoogleComp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_compute_backend_service google_compute_backend_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/data-sources/google_compute_backend_service google_compute_backend_service} Data Source.
 func NewDataGoogleComputeBackendService(scope constructs.Construct, id *string, config *DataGoogleComputeBackendServiceConfig) DataGoogleComputeBackendService {
 	_init_.Initialize()
 
@@ -712,7 +767,7 @@ func NewDataGoogleComputeBackendService(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_compute_backend_service google_compute_backend_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/data-sources/google_compute_backend_service google_compute_backend_service} Data Source.
 func NewDataGoogleComputeBackendService_Override(d DataGoogleComputeBackendService, scope constructs.Construct, id *string, config *DataGoogleComputeBackendServiceConfig) {
 	_init_.Initialize()
 

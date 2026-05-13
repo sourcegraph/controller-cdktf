@@ -2,9 +2,21 @@ package networksecuritysecurityprofile
 
 
 type NetworkSecuritySecurityProfileCustomMirroringProfile struct {
-	// The Mirroring Endpoint Group to which matching traffic should be mirrored. Format: projects/{project_id}/locations/global/mirroringEndpointGroups/{endpoint_group_id}.
+	// The target Mirroring Endpoint Group.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/network_security_security_profile#mirroring_endpoint_group NetworkSecuritySecurityProfile#mirroring_endpoint_group}
+	// When a mirroring rule with this security profile attached matches a packet,
+	// a replica will be mirrored to the location-local target in this group.
+	// Format: projects/{project_id}/locations/global/mirroringEndpointGroups/{endpoint_group_id}
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_security_profile#mirroring_endpoint_group NetworkSecuritySecurityProfile#mirroring_endpoint_group}
 	MirroringEndpointGroup *string `field:"required" json:"mirroringEndpointGroup" yaml:"mirroringEndpointGroup"`
+	// The target downstream Mirroring Deployment Groups.
+	//
+	// This field is used for Packet Broker mirroring endpoint groups to specify
+	// the deployment groups that the packet should be mirrored to by the broker.
+	// Format: projects/{project_id}/locations/global/mirroringDeploymentGroups/{deployment_group_id}
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_security_profile#mirroring_deployment_groups NetworkSecuritySecurityProfile#mirroring_deployment_groups}
+	MirroringDeploymentGroups *[]*string `field:"optional" json:"mirroringDeploymentGroups" yaml:"mirroringDeploymentGroups"`
 }
 

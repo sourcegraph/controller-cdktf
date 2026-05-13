@@ -8,7 +8,7 @@ type GoogleNetworkConnectivityInternalRangeMigration struct {
 	// InternalRange.
 	// An example /projects/{project}/regions/{region}/subnetworks/{subnet}
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_network_connectivity_internal_range#source GoogleNetworkConnectivityInternalRange#source}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_network_connectivity_internal_range#source GoogleNetworkConnectivityInternalRange#source}
 	Source *string `field:"required" json:"source" yaml:"source"`
 	// Resource path of the target resource.
 	//
@@ -17,7 +17,7 @@ type GoogleNetworkConnectivityInternalRangeMigration struct {
 	// may not exist yet.
 	// For example /projects/{project}/regions/{region}/subnetworks/{subnet}
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_network_connectivity_internal_range#target GoogleNetworkConnectivityInternalRange#target}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_network_connectivity_internal_range#target GoogleNetworkConnectivityInternalRange#target}
 	Target *string `field:"required" json:"target" yaml:"target"`
 }
 

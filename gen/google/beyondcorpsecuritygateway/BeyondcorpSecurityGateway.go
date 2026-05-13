@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/beyondcorpsecuritygateway/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/beyondcorp_security_gateway google_beyondcorp_security_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/beyondcorp_security_gateway google_beyondcorp_security_gateway}.
 type BeyondcorpSecurityGateway interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -25,6 +25,7 @@ type BeyondcorpSecurityGateway interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreateTime() *string
+	DelegatingServiceAccount() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -53,6 +54,8 @@ type BeyondcorpSecurityGateway interface {
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
+	Logging() BeyondcorpSecurityGatewayLoggingOutputReference
+	LoggingInput() *BeyondcorpSecurityGatewayLogging
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
@@ -67,11 +70,15 @@ type BeyondcorpSecurityGateway interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	ProxyProtocolConfig() BeyondcorpSecurityGatewayProxyProtocolConfigOutputReference
+	ProxyProtocolConfigInput() *BeyondcorpSecurityGatewayProxyProtocolConfig
 	// Experimental.
 	RawOverrides() interface{}
 	SecurityGatewayId() *string
 	SetSecurityGatewayId(val *string)
 	SecurityGatewayIdInput() *string
+	ServiceDiscovery() BeyondcorpSecurityGatewayServiceDiscoveryOutputReference
+	ServiceDiscoveryInput() *BeyondcorpSecurityGatewayServiceDiscovery
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -126,15 +133,21 @@ type BeyondcorpSecurityGateway interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutHubs(value interface{})
+	PutLogging(value *BeyondcorpSecurityGatewayLogging)
+	PutProxyProtocolConfig(value *BeyondcorpSecurityGatewayProxyProtocolConfig)
+	PutServiceDiscovery(value *BeyondcorpSecurityGatewayServiceDiscovery)
 	PutTimeouts(value *BeyondcorpSecurityGatewayTimeouts)
 	ResetDisplayName()
 	ResetHubs()
 	ResetId()
 	ResetLocation()
+	ResetLogging()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetProxyProtocolConfig()
+	ResetServiceDiscovery()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -199,6 +212,16 @@ func (j *jsiiProxy_BeyondcorpSecurityGateway) CreateTime() *string {
 	_jsii_.Get(
 		j,
 		"createTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BeyondcorpSecurityGateway) DelegatingServiceAccount() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"delegatingServiceAccount",
 		&returns,
 	)
 	return returns
@@ -344,6 +367,26 @@ func (j *jsiiProxy_BeyondcorpSecurityGateway) LocationInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_BeyondcorpSecurityGateway) Logging() BeyondcorpSecurityGatewayLoggingOutputReference {
+	var returns BeyondcorpSecurityGatewayLoggingOutputReference
+	_jsii_.Get(
+		j,
+		"logging",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BeyondcorpSecurityGateway) LoggingInput() *BeyondcorpSecurityGatewayLogging {
+	var returns *BeyondcorpSecurityGatewayLogging
+	_jsii_.Get(
+		j,
+		"loggingInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BeyondcorpSecurityGateway) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -404,6 +447,26 @@ func (j *jsiiProxy_BeyondcorpSecurityGateway) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_BeyondcorpSecurityGateway) ProxyProtocolConfig() BeyondcorpSecurityGatewayProxyProtocolConfigOutputReference {
+	var returns BeyondcorpSecurityGatewayProxyProtocolConfigOutputReference
+	_jsii_.Get(
+		j,
+		"proxyProtocolConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BeyondcorpSecurityGateway) ProxyProtocolConfigInput() *BeyondcorpSecurityGatewayProxyProtocolConfig {
+	var returns *BeyondcorpSecurityGatewayProxyProtocolConfig
+	_jsii_.Get(
+		j,
+		"proxyProtocolConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BeyondcorpSecurityGateway) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -429,6 +492,26 @@ func (j *jsiiProxy_BeyondcorpSecurityGateway) SecurityGatewayIdInput() *string {
 	_jsii_.Get(
 		j,
 		"securityGatewayIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BeyondcorpSecurityGateway) ServiceDiscovery() BeyondcorpSecurityGatewayServiceDiscoveryOutputReference {
+	var returns BeyondcorpSecurityGatewayServiceDiscoveryOutputReference
+	_jsii_.Get(
+		j,
+		"serviceDiscovery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BeyondcorpSecurityGateway) ServiceDiscoveryInput() *BeyondcorpSecurityGatewayServiceDiscovery {
+	var returns *BeyondcorpSecurityGatewayServiceDiscovery
+	_jsii_.Get(
+		j,
+		"serviceDiscoveryInput",
 		&returns,
 	)
 	return returns
@@ -505,7 +588,7 @@ func (j *jsiiProxy_BeyondcorpSecurityGateway) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/beyondcorp_security_gateway google_beyondcorp_security_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/beyondcorp_security_gateway google_beyondcorp_security_gateway} Resource.
 func NewBeyondcorpSecurityGateway(scope constructs.Construct, id *string, config *BeyondcorpSecurityGatewayConfig) BeyondcorpSecurityGateway {
 	_init_.Initialize()
 
@@ -523,7 +606,7 @@ func NewBeyondcorpSecurityGateway(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/beyondcorp_security_gateway google_beyondcorp_security_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/beyondcorp_security_gateway google_beyondcorp_security_gateway} Resource.
 func NewBeyondcorpSecurityGateway_Override(b BeyondcorpSecurityGateway, scope constructs.Construct, id *string, config *BeyondcorpSecurityGatewayConfig) {
 	_init_.Initialize()
 
@@ -1021,6 +1104,39 @@ func (b *jsiiProxy_BeyondcorpSecurityGateway) PutHubs(value interface{}) {
 	)
 }
 
+func (b *jsiiProxy_BeyondcorpSecurityGateway) PutLogging(value *BeyondcorpSecurityGatewayLogging) {
+	if err := b.validatePutLoggingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putLogging",
+		[]interface{}{value},
+	)
+}
+
+func (b *jsiiProxy_BeyondcorpSecurityGateway) PutProxyProtocolConfig(value *BeyondcorpSecurityGatewayProxyProtocolConfig) {
+	if err := b.validatePutProxyProtocolConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putProxyProtocolConfig",
+		[]interface{}{value},
+	)
+}
+
+func (b *jsiiProxy_BeyondcorpSecurityGateway) PutServiceDiscovery(value *BeyondcorpSecurityGatewayServiceDiscovery) {
+	if err := b.validatePutServiceDiscoveryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putServiceDiscovery",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BeyondcorpSecurityGateway) PutTimeouts(value *BeyondcorpSecurityGatewayTimeouts) {
 	if err := b.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1064,6 +1180,14 @@ func (b *jsiiProxy_BeyondcorpSecurityGateway) ResetLocation() {
 	)
 }
 
+func (b *jsiiProxy_BeyondcorpSecurityGateway) ResetLogging() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetLogging",
+		nil, // no parameters
+	)
+}
+
 func (b *jsiiProxy_BeyondcorpSecurityGateway) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		b,
@@ -1076,6 +1200,22 @@ func (b *jsiiProxy_BeyondcorpSecurityGateway) ResetProject() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BeyondcorpSecurityGateway) ResetProxyProtocolConfig() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetProxyProtocolConfig",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BeyondcorpSecurityGateway) ResetServiceDiscovery() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetServiceDiscovery",
 		nil, // no parameters
 	)
 }

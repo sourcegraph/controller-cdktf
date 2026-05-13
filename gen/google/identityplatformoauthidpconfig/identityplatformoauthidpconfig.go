@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/identityplatformoauthidpconfig/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/identity_platform_oauth_idp_config google_identity_platform_oauth_idp_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/identity_platform_oauth_idp_config google_identity_platform_oauth_idp_config}.
 type IdentityPlatformOauthIdpConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -76,6 +76,8 @@ type IdentityPlatformOauthIdpConfig interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ResponseType() IdentityPlatformOauthIdpConfigResponseTypeOutputReference
+	ResponseTypeInput() *IdentityPlatformOauthIdpConfigResponseType
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -127,6 +129,7 @@ type IdentityPlatformOauthIdpConfig interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutResponseType(value *IdentityPlatformOauthIdpConfigResponseType)
 	PutTimeouts(value *IdentityPlatformOauthIdpConfigTimeouts)
 	ResetClientSecret()
 	ResetDisplayName()
@@ -136,6 +139,7 @@ type IdentityPlatformOauthIdpConfig interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetResponseType()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -445,6 +449,26 @@ func (j *jsiiProxy_IdentityPlatformOauthIdpConfig) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_IdentityPlatformOauthIdpConfig) ResponseType() IdentityPlatformOauthIdpConfigResponseTypeOutputReference {
+	var returns IdentityPlatformOauthIdpConfigResponseTypeOutputReference
+	_jsii_.Get(
+		j,
+		"responseType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityPlatformOauthIdpConfig) ResponseTypeInput() *IdentityPlatformOauthIdpConfigResponseType {
+	var returns *IdentityPlatformOauthIdpConfigResponseType
+	_jsii_.Get(
+		j,
+		"responseTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_IdentityPlatformOauthIdpConfig) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -496,7 +520,7 @@ func (j *jsiiProxy_IdentityPlatformOauthIdpConfig) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/identity_platform_oauth_idp_config google_identity_platform_oauth_idp_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/identity_platform_oauth_idp_config google_identity_platform_oauth_idp_config} Resource.
 func NewIdentityPlatformOauthIdpConfig(scope constructs.Construct, id *string, config *IdentityPlatformOauthIdpConfigConfig) IdentityPlatformOauthIdpConfig {
 	_init_.Initialize()
 
@@ -514,7 +538,7 @@ func NewIdentityPlatformOauthIdpConfig(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/identity_platform_oauth_idp_config google_identity_platform_oauth_idp_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/identity_platform_oauth_idp_config google_identity_platform_oauth_idp_config} Resource.
 func NewIdentityPlatformOauthIdpConfig_Override(i IdentityPlatformOauthIdpConfig, scope constructs.Construct, id *string, config *IdentityPlatformOauthIdpConfigConfig) {
 	_init_.Initialize()
 
@@ -1034,6 +1058,17 @@ func (i *jsiiProxy_IdentityPlatformOauthIdpConfig) OverrideLogicalId(newLogicalI
 	)
 }
 
+func (i *jsiiProxy_IdentityPlatformOauthIdpConfig) PutResponseType(value *IdentityPlatformOauthIdpConfigResponseType) {
+	if err := i.validatePutResponseTypeParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"putResponseType",
+		[]interface{}{value},
+	)
+}
+
 func (i *jsiiProxy_IdentityPlatformOauthIdpConfig) PutTimeouts(value *IdentityPlatformOauthIdpConfigTimeouts) {
 	if err := i.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1089,6 +1124,14 @@ func (i *jsiiProxy_IdentityPlatformOauthIdpConfig) ResetProject() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IdentityPlatformOauthIdpConfig) ResetResponseType() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetResponseType",
 		nil, // no parameters
 	)
 }

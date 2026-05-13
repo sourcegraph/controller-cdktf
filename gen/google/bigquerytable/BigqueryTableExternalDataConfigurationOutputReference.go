@@ -40,6 +40,9 @@ type BigqueryTableExternalDataConfigurationOutputReference interface {
 	CreationStack() *[]*string
 	CsvOptions() BigqueryTableExternalDataConfigurationCsvOptionsOutputReference
 	CsvOptionsInput() *BigqueryTableExternalDataConfigurationCsvOptions
+	DecimalTargetTypes() *[]*string
+	SetDecimalTargetTypes(val *[]*string)
+	DecimalTargetTypesInput() *[]*string
 	FileSetSpecType() *string
 	SetFileSetSpecType(val *string)
 	FileSetSpecTypeInput() *string
@@ -126,6 +129,7 @@ type BigqueryTableExternalDataConfigurationOutputReference interface {
 	ResetCompression()
 	ResetConnectionId()
 	ResetCsvOptions()
+	ResetDecimalTargetTypes()
 	ResetFileSetSpecType()
 	ResetGoogleSheetsOptions()
 	ResetHivePartitioningOptions()
@@ -299,6 +303,26 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) CsvOpt
 	_jsii_.Get(
 		j,
 		"csvOptionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) DecimalTargetTypes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"decimalTargetTypes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) DecimalTargetTypesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"decimalTargetTypesInput",
 		&returns,
 	)
 	return returns
@@ -703,6 +727,17 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference)SetConn
 	_jsii_.Set(
 		j,
 		"connectionId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference)SetDecimalTargetTypes(val *[]*string) {
+	if err := j.validateSetDecimalTargetTypesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"decimalTargetTypes",
 		val,
 	)
 }
@@ -1149,6 +1184,14 @@ func (b *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) ResetC
 	_jsii_.InvokeVoid(
 		b,
 		"resetCsvOptions",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) ResetDecimalTargetTypes() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetDecimalTargetTypes",
 		nil, // no parameters
 	)
 }

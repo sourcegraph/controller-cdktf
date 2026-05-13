@@ -48,6 +48,10 @@ func (g *jsiiProxy_GoogleNetworkConnectivityServiceConnectionPolicyPscConfigOutp
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetworkConnectivityServiceConnectionPolicyPscConfigOutputReference) validateSetAllowedGoogleProducersResourceHierarchyLevelParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetworkConnectivityServiceConnectionPolicyPscConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -61,6 +65,10 @@ func (j *jsiiProxy_GoogleNetworkConnectivityServiceConnectionPolicyPscConfigOutp
 }
 
 func (j *jsiiProxy_GoogleNetworkConnectivityServiceConnectionPolicyPscConfigOutputReference) validateSetLimitParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleNetworkConnectivityServiceConnectionPolicyPscConfigOutputReference) validateSetProducerInstanceLocationParameters(val *string) error {
 	return nil
 }
 

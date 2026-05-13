@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleaccesscontextmanageringresspolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_access_context_manager_ingress_policy google_access_context_manager_ingress_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_access_context_manager_ingress_policy google_access_context_manager_ingress_policy}.
 type GoogleAccessContextManagerIngressPolicy interface {
 	cdktf.TerraformResource
 	AccessPolicyId() *string
@@ -388,7 +388,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerIngressPolicy) TimeoutsInput() inte
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_access_context_manager_ingress_policy google_access_context_manager_ingress_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_access_context_manager_ingress_policy google_access_context_manager_ingress_policy} Resource.
 func NewGoogleAccessContextManagerIngressPolicy(scope constructs.Construct, id *string, config *GoogleAccessContextManagerIngressPolicyConfig) GoogleAccessContextManagerIngressPolicy {
 	_init_.Initialize()
 
@@ -406,7 +406,7 @@ func NewGoogleAccessContextManagerIngressPolicy(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_access_context_manager_ingress_policy google_access_context_manager_ingress_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_access_context_manager_ingress_policy google_access_context_manager_ingress_policy} Resource.
 func NewGoogleAccessContextManagerIngressPolicy_Override(g GoogleAccessContextManagerIngressPolicy, scope constructs.Construct, id *string, config *GoogleAccessContextManagerIngressPolicyConfig) {
 	_init_.Initialize()
 

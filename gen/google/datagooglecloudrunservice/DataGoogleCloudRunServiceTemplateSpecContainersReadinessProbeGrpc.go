@@ -1,0 +1,6 @@
+package datagooglecloudrunservice
+
+
+type DataGoogleCloudRunServiceTemplateSpecContainersReadinessProbeGrpc struct {
+}
+

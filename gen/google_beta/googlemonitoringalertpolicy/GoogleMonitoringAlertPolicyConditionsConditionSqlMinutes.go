@@ -7,7 +7,7 @@ type GoogleMonitoringAlertPolicyConditionsConditionSqlMinutes struct {
 	// The interval must be greater than or
 	// equal to 5 minutes and less than or equal to 1440 minutes.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_monitoring_alert_policy#periodicity GoogleMonitoringAlertPolicy#periodicity}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_monitoring_alert_policy#periodicity GoogleMonitoringAlertPolicy#periodicity}
 	Periodicity *float64 `field:"required" json:"periodicity" yaml:"periodicity"`
 }
 

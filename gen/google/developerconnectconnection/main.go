@@ -57,6 +57,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "gitlabEnterpriseConfig", GoGetter: "GitlabEnterpriseConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "gitlabEnterpriseConfigInput", GoGetter: "GitlabEnterpriseConfigInput"},
 			_jsii_.MemberMethod{JsiiMethod: "hasResourceMove", GoMethod: "HasResourceMove"},
+			_jsii_.MemberProperty{JsiiProperty: "httpConfig", GoGetter: "HttpConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "httpConfigInput", GoGetter: "HttpConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
@@ -84,6 +86,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putGithubEnterpriseConfig", GoMethod: "PutGithubEnterpriseConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putGitlabConfig", GoMethod: "PutGitlabConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putGitlabEnterpriseConfig", GoMethod: "PutGitlabEnterpriseConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "putHttpConfig", GoMethod: "PutHttpConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "reconciling", GoGetter: "Reconciling"},
@@ -97,6 +100,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetGithubEnterpriseConfig", GoMethod: "ResetGithubEnterpriseConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGitlabConfig", GoMethod: "ResetGitlabConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGitlabEnterpriseConfig", GoMethod: "ResetGitlabEnterpriseConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "resetHttpConfig", GoMethod: "ResetHttpConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLabels", GoMethod: "ResetLabels"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
@@ -930,6 +934,177 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DeveloperConnectConnectionGitlabEnterpriseConfigServiceDirectoryConfigOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfig",
+		reflect.TypeOf((*DeveloperConnectConnectionHttpConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthentication",
+		reflect.TypeOf((*DeveloperConnectConnectionHttpConfigBasicAuthentication)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference",
+		reflect.TypeOf((*DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "passwordSecretVersion", GoGetter: "PasswordSecretVersion"},
+			_jsii_.MemberProperty{JsiiProperty: "passwordSecretVersionInput", GoGetter: "PasswordSecretVersionInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPasswordSecretVersion", GoMethod: "ResetPasswordSecretVersion"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
+			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthentication",
+		reflect.TypeOf((*DeveloperConnectConnectionHttpConfigBearerTokenAuthentication)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference",
+		reflect.TypeOf((*DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTokenSecretVersion", GoMethod: "ResetTokenSecretVersion"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberProperty{JsiiProperty: "tokenSecretVersion", GoGetter: "TokenSecretVersion"},
+			_jsii_.MemberProperty{JsiiProperty: "tokenSecretVersionInput", GoGetter: "TokenSecretVersionInput"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference",
+		reflect.TypeOf((*DeveloperConnectConnectionHttpConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "basicAuthentication", GoGetter: "BasicAuthentication"},
+			_jsii_.MemberProperty{JsiiProperty: "basicAuthenticationInput", GoGetter: "BasicAuthenticationInput"},
+			_jsii_.MemberProperty{JsiiProperty: "bearerTokenAuthentication", GoGetter: "BearerTokenAuthentication"},
+			_jsii_.MemberProperty{JsiiProperty: "bearerTokenAuthenticationInput", GoGetter: "BearerTokenAuthenticationInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "hostUri", GoGetter: "HostUri"},
+			_jsii_.MemberProperty{JsiiProperty: "hostUriInput", GoGetter: "HostUriInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "putBasicAuthentication", GoMethod: "PutBasicAuthentication"},
+			_jsii_.MemberMethod{JsiiMethod: "putBearerTokenAuthentication", GoMethod: "PutBearerTokenAuthentication"},
+			_jsii_.MemberMethod{JsiiMethod: "putServiceDirectoryConfig", GoMethod: "PutServiceDirectoryConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBasicAuthentication", GoMethod: "ResetBasicAuthentication"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBearerTokenAuthentication", GoMethod: "ResetBearerTokenAuthentication"},
+			_jsii_.MemberMethod{JsiiMethod: "resetServiceDirectoryConfig", GoMethod: "ResetServiceDirectoryConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSslCaCertificate", GoMethod: "ResetSslCaCertificate"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "serviceDirectoryConfig", GoGetter: "ServiceDirectoryConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "serviceDirectoryConfigInput", GoGetter: "ServiceDirectoryConfigInput"},
+			_jsii_.MemberProperty{JsiiProperty: "sslCaCertificate", GoGetter: "SslCaCertificate"},
+			_jsii_.MemberProperty{JsiiProperty: "sslCaCertificateInput", GoGetter: "SslCaCertificateInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfig",
+		reflect.TypeOf((*DeveloperConnectConnectionHttpConfigServiceDirectoryConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference",
+		reflect.TypeOf((*DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "service", GoGetter: "Service"},
+			_jsii_.MemberProperty{JsiiProperty: "serviceInput", GoGetter: "ServiceInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

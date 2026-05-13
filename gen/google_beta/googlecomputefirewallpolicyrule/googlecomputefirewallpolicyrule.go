@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputefirewallpolicyrule/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_firewall_policy_rule google_compute_firewall_policy_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_firewall_policy_rule google_compute_firewall_policy_rule}.
 type GoogleComputeFirewallPolicyRule interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -87,6 +87,8 @@ type GoogleComputeFirewallPolicyRule interface {
 	TargetResources() *[]*string
 	SetTargetResources(val *[]*string)
 	TargetResourcesInput() *[]*string
+	TargetSecureTags() GoogleComputeFirewallPolicyRuleTargetSecureTagsList
+	TargetSecureTagsInput() interface{}
 	TargetServiceAccounts() *[]*string
 	SetTargetServiceAccounts(val *[]*string)
 	TargetServiceAccountsInput() *[]*string
@@ -145,6 +147,7 @@ type GoogleComputeFirewallPolicyRule interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutMatch(value *GoogleComputeFirewallPolicyRuleMatch)
+	PutTargetSecureTags(value interface{})
 	PutTimeouts(value *GoogleComputeFirewallPolicyRuleTimeouts)
 	ResetDescription()
 	ResetDisabled()
@@ -155,6 +158,7 @@ type GoogleComputeFirewallPolicyRule interface {
 	ResetOverrideLogicalId()
 	ResetSecurityProfileGroup()
 	ResetTargetResources()
+	ResetTargetSecureTags()
 	ResetTargetServiceAccounts()
 	ResetTimeouts()
 	ResetTlsInspect()
@@ -556,6 +560,26 @@ func (j *jsiiProxy_GoogleComputeFirewallPolicyRule) TargetResourcesInput() *[]*s
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeFirewallPolicyRule) TargetSecureTags() GoogleComputeFirewallPolicyRuleTargetSecureTagsList {
+	var returns GoogleComputeFirewallPolicyRuleTargetSecureTagsList
+	_jsii_.Get(
+		j,
+		"targetSecureTags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeFirewallPolicyRule) TargetSecureTagsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"targetSecureTagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeFirewallPolicyRule) TargetServiceAccounts() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -647,7 +671,7 @@ func (j *jsiiProxy_GoogleComputeFirewallPolicyRule) TlsInspectInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_firewall_policy_rule google_compute_firewall_policy_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_firewall_policy_rule google_compute_firewall_policy_rule} Resource.
 func NewGoogleComputeFirewallPolicyRule(scope constructs.Construct, id *string, config *GoogleComputeFirewallPolicyRuleConfig) GoogleComputeFirewallPolicyRule {
 	_init_.Initialize()
 
@@ -665,7 +689,7 @@ func NewGoogleComputeFirewallPolicyRule(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_firewall_policy_rule google_compute_firewall_policy_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_firewall_policy_rule google_compute_firewall_policy_rule} Resource.
 func NewGoogleComputeFirewallPolicyRule_Override(g GoogleComputeFirewallPolicyRule, scope constructs.Construct, id *string, config *GoogleComputeFirewallPolicyRuleConfig) {
 	_init_.Initialize()
 
@@ -1240,6 +1264,17 @@ func (g *jsiiProxy_GoogleComputeFirewallPolicyRule) PutMatch(value *GoogleComput
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeFirewallPolicyRule) PutTargetSecureTags(value interface{}) {
+	if err := g.validatePutTargetSecureTagsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putTargetSecureTags",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeFirewallPolicyRule) PutTimeouts(value *GoogleComputeFirewallPolicyRuleTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1303,6 +1338,14 @@ func (g *jsiiProxy_GoogleComputeFirewallPolicyRule) ResetTargetResources() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetTargetResources",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeFirewallPolicyRule) ResetTargetSecureTags() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTargetSecureTags",
 		nil, // no parameters
 	)
 }

@@ -251,6 +251,14 @@ func (j *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigOutputRefer
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference) validateSetResourceManagerTagsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference) validateSetServiceAccountParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -90,7 +90,40 @@ func (g *jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReferenc
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference) validatePutAccurateTimeConfigParameters(value *GoogleContainerClusterNodeConfigLinuxNodeConfigAccurateTimeConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference) validatePutHugepagesConfigParameters(value *GoogleContainerClusterNodeConfigLinuxNodeConfigHugepagesConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference) validatePutNodeKernelModuleLoadingParameters(value *GoogleContainerClusterNodeConfigLinuxNodeConfigNodeKernelModuleLoading) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference) validatePutSwapConfigParameters(value *GoogleContainerClusterNodeConfigLinuxNodeConfigSwapConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -207,6 +240,22 @@ func (j *jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReferenc
 }
 
 func (j *jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference) validateSetTransparentHugepageDefragParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference) validateSetTransparentHugepageEnabledParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

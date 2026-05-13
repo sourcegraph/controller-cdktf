@@ -32,6 +32,9 @@ type GoogleIntegrationConnectorsConnectionLogConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *GoogleIntegrationConnectorsConnectionLogConfig
 	SetInternalValue(val *GoogleIntegrationConnectorsConnectionLogConfig)
+	Level() *string
+	SetLevel(val *string)
+	LevelInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -64,6 +67,7 @@ type GoogleIntegrationConnectorsConnectionLogConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetLevel()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -144,6 +148,26 @@ func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionLogConfigOutputReference
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionLogConfigOutputReference) Level() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"level",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionLogConfigOutputReference) LevelInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"levelInput",
 		&returns,
 	)
 	return returns
@@ -237,6 +261,17 @@ func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionLogConfigOutputReference
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionLogConfigOutputReference)SetLevel(val *string) {
+	if err := j.validateSetLevelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"level",
 		val,
 	)
 }
@@ -447,6 +482,14 @@ func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionLogConfigOutputReference
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionLogConfigOutputReference) ResetLevel() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLevel",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionLogConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

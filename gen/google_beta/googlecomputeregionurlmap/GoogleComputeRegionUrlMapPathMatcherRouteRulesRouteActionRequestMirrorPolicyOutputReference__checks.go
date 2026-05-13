@@ -179,6 +179,14 @@ func (j *jsiiProxy_GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionRequ
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionRequestMirrorPolicyOutputReference) validateSetMirrorPercentParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionRequestMirrorPolicyOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

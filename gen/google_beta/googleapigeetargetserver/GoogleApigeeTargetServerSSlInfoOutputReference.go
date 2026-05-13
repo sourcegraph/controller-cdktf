@@ -36,6 +36,9 @@ type GoogleApigeeTargetServerSSlInfoOutputReference interface {
 	Enabled() interface{}
 	SetEnabled(val interface{})
 	EnabledInput() interface{}
+	Enforce() interface{}
+	SetEnforce(val interface{})
+	EnforceInput() interface{}
 	// Experimental.
 	Fqn() *string
 	IgnoreValidationErrors() interface{}
@@ -91,6 +94,7 @@ type GoogleApigeeTargetServerSSlInfoOutputReference interface {
 	ResetCiphers()
 	ResetClientAuthEnabled()
 	ResetCommonName()
+	ResetEnforce()
 	ResetIgnoreValidationErrors()
 	ResetKeyAlias()
 	ResetKeyStore()
@@ -216,6 +220,26 @@ func (j *jsiiProxy_GoogleApigeeTargetServerSSlInfoOutputReference) EnabledInput(
 	_jsii_.Get(
 		j,
 		"enabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleApigeeTargetServerSSlInfoOutputReference) Enforce() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enforce",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleApigeeTargetServerSSlInfoOutputReference) EnforceInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enforceInput",
 		&returns,
 	)
 	return returns
@@ -440,6 +464,17 @@ func (j *jsiiProxy_GoogleApigeeTargetServerSSlInfoOutputReference)SetEnabled(val
 	_jsii_.Set(
 		j,
 		"enabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleApigeeTargetServerSSlInfoOutputReference)SetEnforce(val interface{}) {
+	if err := j.validateSetEnforceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enforce",
 		val,
 	)
 }
@@ -749,6 +784,14 @@ func (g *jsiiProxy_GoogleApigeeTargetServerSSlInfoOutputReference) ResetCommonNa
 	_jsii_.InvokeVoid(
 		g,
 		"resetCommonName",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleApigeeTargetServerSSlInfoOutputReference) ResetEnforce() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnforce",
 		nil, // no parameters
 	)
 }

@@ -1,0 +1,6 @@
+package googlenetworkconnectivitydestination
+
+
+type GoogleNetworkConnectivityDestinationStateTimelineStates struct {
+}
+

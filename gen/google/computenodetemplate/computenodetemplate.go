@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/computenodetemplate/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_node_template google_compute_node_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_node_template google_compute_node_template}.
 type ComputeNodeTemplate interface {
 	cdktf.TerraformResource
 	Accelerators() ComputeNodeTemplateAcceleratorsList
@@ -147,7 +147,6 @@ type ComputeNodeTemplate interface {
 	ResetDescription()
 	ResetDisks()
 	ResetId()
-	ResetName()
 	ResetNodeAffinityLabels()
 	ResetNodeType()
 	ResetNodeTypeFlexibility()
@@ -617,7 +616,7 @@ func (j *jsiiProxy_ComputeNodeTemplate) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_node_template google_compute_node_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_node_template google_compute_node_template} Resource.
 func NewComputeNodeTemplate(scope constructs.Construct, id *string, config *ComputeNodeTemplateConfig) ComputeNodeTemplate {
 	_init_.Initialize()
 
@@ -635,7 +634,7 @@ func NewComputeNodeTemplate(scope constructs.Construct, id *string, config *Comp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_node_template google_compute_node_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_node_template google_compute_node_template} Resource.
 func NewComputeNodeTemplate_Override(c ComputeNodeTemplate, scope constructs.Construct, id *string, config *ComputeNodeTemplateConfig) {
 	_init_.Initialize()
 
@@ -1246,14 +1245,6 @@ func (c *jsiiProxy_ComputeNodeTemplate) ResetId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetId",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_ComputeNodeTemplate) ResetName() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetName",
 		nil, // no parameters
 	)
 }

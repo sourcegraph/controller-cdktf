@@ -143,7 +143,29 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) val
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) validatePutReadinessProbeParameters(value *GoogleCloudRunV2ServiceTemplateContainersReadinessProbe) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) validatePutResourcesParameters(value *GoogleCloudRunV2ServiceTemplateContainersResources) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) validatePutSourceCodeParameters(value *GoogleCloudRunV2ServiceTemplateContainersSourceCode) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

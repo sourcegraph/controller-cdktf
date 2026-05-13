@@ -48,6 +48,14 @@ func (d *jsiiProxy_DataprocClusterClusterConfigWorkerConfigDiskConfigOutputRefer
 	return nil
 }
 
+func (j *jsiiProxy_DataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference) validateSetBootDiskProvisionedIopsParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference) validateSetBootDiskProvisionedThroughputParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference) validateSetBootDiskSizeGbParameters(val *float64) error {
 	return nil
 }

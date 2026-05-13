@@ -44,6 +44,10 @@ func (c *jsiiProxy_ColabRuntimeTemplateSoftwareConfigOutputReference) validateIn
 	return nil
 }
 
+func (c *jsiiProxy_ColabRuntimeTemplateSoftwareConfigOutputReference) validatePutColabImageParameters(value *ColabRuntimeTemplateSoftwareConfigColabImage) error {
+	return nil
+}
+
 func (c *jsiiProxy_ColabRuntimeTemplateSoftwareConfigOutputReference) validatePutEnvParameters(value interface{}) error {
 	return nil
 }

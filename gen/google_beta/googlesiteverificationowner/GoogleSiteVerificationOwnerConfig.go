@@ -21,20 +21,20 @@ type GoogleSiteVerificationOwnerConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The email address of the owner.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_site_verification_owner#email GoogleSiteVerificationOwner#email}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_site_verification_owner#email GoogleSiteVerificationOwner#email}
 	Email *string `field:"required" json:"email" yaml:"email"`
 	// The id of the Web Resource to add this owner to, in the form "webResource/<web-resource-id>".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_site_verification_owner#web_resource_id GoogleSiteVerificationOwner#web_resource_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_site_verification_owner#web_resource_id GoogleSiteVerificationOwner#web_resource_id}
 	WebResourceId *string `field:"required" json:"webResourceId" yaml:"webResourceId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_site_verification_owner#id GoogleSiteVerificationOwner#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_site_verification_owner#id GoogleSiteVerificationOwner#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_site_verification_owner#timeouts GoogleSiteVerificationOwner#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_site_verification_owner#timeouts GoogleSiteVerificationOwner#timeouts}
 	Timeouts *GoogleSiteVerificationOwnerTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

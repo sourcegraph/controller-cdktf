@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledataformrepositoryreleaseconfig/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_dataform_repository_release_config google_dataform_repository_release_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_dataform_repository_release_config google_dataform_repository_release_config}.
 type GoogleDataformRepositoryReleaseConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -33,6 +33,9 @@ type GoogleDataformRepositoryReleaseConfig interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Disabled() interface{}
+	SetDisabled(val interface{})
+	DisabledInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -134,6 +137,7 @@ type GoogleDataformRepositoryReleaseConfig interface {
 	PutTimeouts(value *GoogleDataformRepositoryReleaseConfigTimeouts)
 	ResetCodeCompilationConfig()
 	ResetCronSchedule()
+	ResetDisabled()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -246,6 +250,26 @@ func (j *jsiiProxy_GoogleDataformRepositoryReleaseConfig) DependsOn() *[]*string
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataformRepositoryReleaseConfig) Disabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataformRepositoryReleaseConfig) DisabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disabledInput",
 		&returns,
 	)
 	return returns
@@ -532,7 +556,7 @@ func (j *jsiiProxy_GoogleDataformRepositoryReleaseConfig) TimeZoneInput() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_dataform_repository_release_config google_dataform_repository_release_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_dataform_repository_release_config google_dataform_repository_release_config} Resource.
 func NewGoogleDataformRepositoryReleaseConfig(scope constructs.Construct, id *string, config *GoogleDataformRepositoryReleaseConfigConfig) GoogleDataformRepositoryReleaseConfig {
 	_init_.Initialize()
 
@@ -550,7 +574,7 @@ func NewGoogleDataformRepositoryReleaseConfig(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_dataform_repository_release_config google_dataform_repository_release_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_dataform_repository_release_config google_dataform_repository_release_config} Resource.
 func NewGoogleDataformRepositoryReleaseConfig_Override(g GoogleDataformRepositoryReleaseConfig, scope constructs.Construct, id *string, config *GoogleDataformRepositoryReleaseConfigConfig) {
 	_init_.Initialize()
 
@@ -598,6 +622,17 @@ func (j *jsiiProxy_GoogleDataformRepositoryReleaseConfig)SetDependsOn(val *[]*st
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataformRepositoryReleaseConfig)SetDisabled(val interface{}) {
+	if err := j.validateSetDisabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disabled",
 		val,
 	)
 }
@@ -1104,6 +1139,14 @@ func (g *jsiiProxy_GoogleDataformRepositoryReleaseConfig) ResetCronSchedule() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetCronSchedule",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataformRepositoryReleaseConfig) ResetDisabled() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDisabled",
 		nil, // no parameters
 	)
 }

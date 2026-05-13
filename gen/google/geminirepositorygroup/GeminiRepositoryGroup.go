@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/geminirepositorygroup/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/gemini_repository_group google_gemini_repository_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/gemini_repository_group google_gemini_repository_group}.
 type GeminiRepositoryGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -526,7 +526,7 @@ func (j *jsiiProxy_GeminiRepositoryGroup) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/gemini_repository_group google_gemini_repository_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/gemini_repository_group google_gemini_repository_group} Resource.
 func NewGeminiRepositoryGroup(scope constructs.Construct, id *string, config *GeminiRepositoryGroupConfig) GeminiRepositoryGroup {
 	_init_.Initialize()
 
@@ -544,7 +544,7 @@ func NewGeminiRepositoryGroup(scope constructs.Construct, id *string, config *Ge
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/gemini_repository_group google_gemini_repository_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/gemini_repository_group google_gemini_repository_group} Resource.
 func NewGeminiRepositoryGroup_Override(g GeminiRepositoryGroup, scope constructs.Construct, id *string, config *GeminiRepositoryGroupConfig) {
 	_init_.Initialize()
 

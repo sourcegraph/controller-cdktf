@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlegeminiloggingsetting/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_gemini_logging_setting google_gemini_logging_setting}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_gemini_logging_setting google_gemini_logging_setting}.
 type GoogleGeminiLoggingSetting interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -528,7 +528,7 @@ func (j *jsiiProxy_GoogleGeminiLoggingSetting) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_gemini_logging_setting google_gemini_logging_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_gemini_logging_setting google_gemini_logging_setting} Resource.
 func NewGoogleGeminiLoggingSetting(scope constructs.Construct, id *string, config *GoogleGeminiLoggingSettingConfig) GoogleGeminiLoggingSetting {
 	_init_.Initialize()
 
@@ -546,7 +546,7 @@ func NewGoogleGeminiLoggingSetting(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_gemini_logging_setting google_gemini_logging_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_gemini_logging_setting google_gemini_logging_setting} Resource.
 func NewGoogleGeminiLoggingSetting_Override(g GoogleGeminiLoggingSetting, scope constructs.Construct, id *string, config *GoogleGeminiLoggingSettingConfig) {
 	_init_.Initialize()
 

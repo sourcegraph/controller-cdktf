@@ -76,6 +76,10 @@ func (g *jsiiProxy_GoogleComputeExternalVpnGateway) validatePutInterfaceParamete
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeExternalVpnGateway) validatePutParamsParameters(value *GoogleComputeExternalVpnGatewayParams) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeExternalVpnGateway) validatePutTimeoutsParameters(value *GoogleComputeExternalVpnGatewayTimeouts) error {
 	return nil
 }

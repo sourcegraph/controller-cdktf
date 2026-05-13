@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeaddress/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_address google_compute_address}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_address google_compute_address}.
 type GoogleComputeAddress interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -50,6 +50,9 @@ type GoogleComputeAddress interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IpCollection() *string
+	SetIpCollection(val *string)
+	IpCollectionInput() *string
 	Ipv6EndpointType() *string
 	SetIpv6EndpointType(val *string)
 	Ipv6EndpointTypeInput() *string
@@ -159,6 +162,7 @@ type GoogleComputeAddress interface {
 	ResetAddressType()
 	ResetDescription()
 	ResetId()
+	ResetIpCollection()
 	ResetIpv6EndpointType()
 	ResetIpVersion()
 	ResetLabels()
@@ -366,6 +370,26 @@ func (j *jsiiProxy_GoogleComputeAddress) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeAddress) IpCollection() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipCollection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeAddress) IpCollectionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipCollectionInput",
 		&returns,
 	)
 	return returns
@@ -732,7 +756,7 @@ func (j *jsiiProxy_GoogleComputeAddress) Users() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_address google_compute_address} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_address google_compute_address} Resource.
 func NewGoogleComputeAddress(scope constructs.Construct, id *string, config *GoogleComputeAddressConfig) GoogleComputeAddress {
 	_init_.Initialize()
 
@@ -750,7 +774,7 @@ func NewGoogleComputeAddress(scope constructs.Construct, id *string, config *Goo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_address google_compute_address} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_address google_compute_address} Resource.
 func NewGoogleComputeAddress_Override(g GoogleComputeAddress, scope constructs.Construct, id *string, config *GoogleComputeAddressConfig) {
 	_init_.Initialize()
 
@@ -839,6 +863,17 @@ func (j *jsiiProxy_GoogleComputeAddress)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeAddress)SetIpCollection(val *string) {
+	if err := j.validateSetIpCollectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipCollection",
 		val,
 	)
 }
@@ -1386,6 +1421,14 @@ func (g *jsiiProxy_GoogleComputeAddress) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeAddress) ResetIpCollection() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIpCollection",
 		nil, // no parameters
 	)
 }

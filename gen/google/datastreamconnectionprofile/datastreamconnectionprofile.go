@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/datastreamconnectionprofile/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/datastream_connection_profile google_datastream_connection_profile}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/datastream_connection_profile google_datastream_connection_profile}.
 type DatastreamConnectionProfile interface {
 	cdktf.TerraformResource
 	BigqueryProfile() DatastreamConnectionProfileBigqueryProfileOutputReference
@@ -65,6 +65,8 @@ type DatastreamConnectionProfile interface {
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
+	MongodbProfile() DatastreamConnectionProfileMongodbProfileOutputReference
+	MongodbProfileInput() *DatastreamConnectionProfileMongodbProfile
 	MysqlProfile() DatastreamConnectionProfileMysqlProfileOutputReference
 	MysqlProfileInput() *DatastreamConnectionProfileMysqlProfile
 	Name() *string
@@ -146,6 +148,7 @@ type DatastreamConnectionProfile interface {
 	PutBigqueryProfile(value *DatastreamConnectionProfileBigqueryProfile)
 	PutForwardSshConnectivity(value *DatastreamConnectionProfileForwardSshConnectivity)
 	PutGcsProfile(value *DatastreamConnectionProfileGcsProfile)
+	PutMongodbProfile(value *DatastreamConnectionProfileMongodbProfile)
 	PutMysqlProfile(value *DatastreamConnectionProfileMysqlProfile)
 	PutOracleProfile(value *DatastreamConnectionProfileOracleProfile)
 	PutPostgresqlProfile(value *DatastreamConnectionProfilePostgresqlProfile)
@@ -158,6 +161,7 @@ type DatastreamConnectionProfile interface {
 	ResetGcsProfile()
 	ResetId()
 	ResetLabels()
+	ResetMongodbProfile()
 	ResetMysqlProfile()
 	ResetOracleProfile()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -466,6 +470,26 @@ func (j *jsiiProxy_DatastreamConnectionProfile) LocationInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DatastreamConnectionProfile) MongodbProfile() DatastreamConnectionProfileMongodbProfileOutputReference {
+	var returns DatastreamConnectionProfileMongodbProfileOutputReference
+	_jsii_.Get(
+		j,
+		"mongodbProfile",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatastreamConnectionProfile) MongodbProfileInput() *DatastreamConnectionProfileMongodbProfile {
+	var returns *DatastreamConnectionProfileMongodbProfile
+	_jsii_.Get(
+		j,
+		"mongodbProfileInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatastreamConnectionProfile) MysqlProfile() DatastreamConnectionProfileMysqlProfileOutputReference {
 	var returns DatastreamConnectionProfileMysqlProfileOutputReference
 	_jsii_.Get(
@@ -697,7 +721,7 @@ func (j *jsiiProxy_DatastreamConnectionProfile) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/datastream_connection_profile google_datastream_connection_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/datastream_connection_profile google_datastream_connection_profile} Resource.
 func NewDatastreamConnectionProfile(scope constructs.Construct, id *string, config *DatastreamConnectionProfileConfig) DatastreamConnectionProfile {
 	_init_.Initialize()
 
@@ -715,7 +739,7 @@ func NewDatastreamConnectionProfile(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/datastream_connection_profile google_datastream_connection_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/datastream_connection_profile google_datastream_connection_profile} Resource.
 func NewDatastreamConnectionProfile_Override(d DatastreamConnectionProfile, scope constructs.Construct, id *string, config *DatastreamConnectionProfileConfig) {
 	_init_.Initialize()
 
@@ -1257,6 +1281,17 @@ func (d *jsiiProxy_DatastreamConnectionProfile) PutGcsProfile(value *DatastreamC
 	)
 }
 
+func (d *jsiiProxy_DatastreamConnectionProfile) PutMongodbProfile(value *DatastreamConnectionProfileMongodbProfile) {
+	if err := d.validatePutMongodbProfileParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putMongodbProfile",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DatastreamConnectionProfile) PutMysqlProfile(value *DatastreamConnectionProfileMysqlProfile) {
 	if err := d.validatePutMysqlProfileParameters(value); err != nil {
 		panic(err)
@@ -1367,6 +1402,14 @@ func (d *jsiiProxy_DatastreamConnectionProfile) ResetLabels() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetLabels",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatastreamConnectionProfile) ResetMongodbProfile() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetMongodbProfile",
 		nil, // no parameters
 	)
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlevertexaifeatureonlinestorefeatureviewiammember/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_member google_vertex_ai_feature_online_store_featureview_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_member google_vertex_ai_feature_online_store_featureview_iam_member}.
 type GoogleVertexAiFeatureOnlineStoreFeatureviewIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -482,7 +482,7 @@ func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureviewIamMember) Terrafo
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_member google_vertex_ai_feature_online_store_featureview_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_member google_vertex_ai_feature_online_store_featureview_iam_member} Resource.
 func NewGoogleVertexAiFeatureOnlineStoreFeatureviewIamMember(scope constructs.Construct, id *string, config *GoogleVertexAiFeatureOnlineStoreFeatureviewIamMemberConfig) GoogleVertexAiFeatureOnlineStoreFeatureviewIamMember {
 	_init_.Initialize()
 
@@ -500,7 +500,7 @@ func NewGoogleVertexAiFeatureOnlineStoreFeatureviewIamMember(scope constructs.Co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_member google_vertex_ai_feature_online_store_featureview_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_member google_vertex_ai_feature_online_store_featureview_iam_member} Resource.
 func NewGoogleVertexAiFeatureOnlineStoreFeatureviewIamMember_Override(g GoogleVertexAiFeatureOnlineStoreFeatureviewIamMember, scope constructs.Construct, id *string, config *GoogleVertexAiFeatureOnlineStoreFeatureviewIamMemberConfig) {
 	_init_.Initialize()
 

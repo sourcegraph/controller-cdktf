@@ -10,6 +10,12 @@ import (
 
 type DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigDiskConfigOutputReference interface {
 	cdktf.ComplexObject
+	BootDiskProvisionedIops() *float64
+	SetBootDiskProvisionedIops(val *float64)
+	BootDiskProvisionedIopsInput() *float64
+	BootDiskProvisionedThroughput() *float64
+	SetBootDiskProvisionedThroughput(val *float64)
+	BootDiskProvisionedThroughputInput() *float64
 	BootDiskSizeGb() *float64
 	SetBootDiskSizeGb(val *float64)
 	BootDiskSizeGbInput() *float64
@@ -73,6 +79,8 @@ type DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigDisk
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetBootDiskProvisionedIops()
+	ResetBootDiskProvisionedThroughput()
 	ResetBootDiskSizeGb()
 	ResetBootDiskType()
 	ResetLocalSsdInterface()
@@ -90,6 +98,46 @@ type DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigDisk
 // The jsii proxy struct for DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigDiskConfigOutputReference
 type jsiiProxy_DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigDiskConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigDiskConfigOutputReference) BootDiskProvisionedIops() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"bootDiskProvisionedIops",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigDiskConfigOutputReference) BootDiskProvisionedIopsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"bootDiskProvisionedIopsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigDiskConfigOutputReference) BootDiskProvisionedThroughput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"bootDiskProvisionedThroughput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigDiskConfigOutputReference) BootDiskProvisionedThroughputInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"bootDiskProvisionedThroughputInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigDiskConfigOutputReference) BootDiskSizeGb() *float64 {
@@ -267,6 +315,28 @@ func NewDataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigD
 		"@cdktf/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigDiskConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
+	)
+}
+
+func (j *jsiiProxy_DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigDiskConfigOutputReference)SetBootDiskProvisionedIops(val *float64) {
+	if err := j.validateSetBootDiskProvisionedIopsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"bootDiskProvisionedIops",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigDiskConfigOutputReference)SetBootDiskProvisionedThroughput(val *float64) {
+	if err := j.validateSetBootDiskProvisionedThroughputParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"bootDiskProvisionedThroughput",
+		val,
 	)
 }
 
@@ -553,6 +623,22 @@ func (d *jsiiProxy_DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeG
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigDiskConfigOutputReference) ResetBootDiskProvisionedIops() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetBootDiskProvisionedIops",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigDiskConfigOutputReference) ResetBootDiskProvisionedThroughput() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetBootDiskProvisionedThroughput",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigDiskConfigOutputReference) ResetBootDiskSizeGb() {

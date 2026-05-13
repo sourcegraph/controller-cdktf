@@ -9,16 +9,20 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledialogflowcxagent/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_dialogflow_cx_agent google_dialogflow_cx_agent}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_dialogflow_cx_agent google_dialogflow_cx_agent}.
 type GoogleDialogflowCxAgent interface {
 	cdktf.TerraformResource
 	AdvancedSettings() GoogleDialogflowCxAgentAdvancedSettingsOutputReference
 	AdvancedSettingsInput() *GoogleDialogflowCxAgentAdvancedSettings
+	AnswerFeedbackSettings() GoogleDialogflowCxAgentAnswerFeedbackSettingsOutputReference
+	AnswerFeedbackSettingsInput() *GoogleDialogflowCxAgentAnswerFeedbackSettings
 	AvatarUri() *string
 	SetAvatarUri(val *string)
 	AvatarUriInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	ClientCertificateSettings() GoogleDialogflowCxAgentClientCertificateSettingsOutputReference
+	ClientCertificateSettingsInput() *GoogleDialogflowCxAgentClientCertificateSettings
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -32,6 +36,9 @@ type GoogleDialogflowCxAgent interface {
 	DefaultLanguageCode() *string
 	SetDefaultLanguageCode(val *string)
 	DefaultLanguageCodeInput() *string
+	DeleteChatEngineOnDestroy() interface{}
+	SetDeleteChatEngineOnDestroy(val interface{})
+	DeleteChatEngineOnDestroyInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -42,6 +49,9 @@ type GoogleDialogflowCxAgent interface {
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
+	EnableMultiLanguageTraining() interface{}
+	SetEnableMultiLanguageTraining(val interface{})
+	EnableMultiLanguageTrainingInput() interface{}
 	EnableSpellCorrection() interface{}
 	SetEnableSpellCorrection(val interface{})
 	EnableSpellCorrectionInput() interface{}
@@ -56,6 +66,8 @@ type GoogleDialogflowCxAgent interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GenAppBuilderSettings() GoogleDialogflowCxAgentGenAppBuilderSettingsOutputReference
+	GenAppBuilderSettingsInput() *GoogleDialogflowCxAgentGenAppBuilderSettings
 	GitIntegrationSettings() GoogleDialogflowCxAgentGitIntegrationSettingsOutputReference
 	GitIntegrationSettingsInput() *GoogleDialogflowCxAgentGitIntegrationSettings
 	Id() *string
@@ -68,9 +80,14 @@ type GoogleDialogflowCxAgent interface {
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
+	Locked() interface{}
+	SetLocked(val interface{})
+	LockedInput() interface{}
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
+	PersonalizationSettings() GoogleDialogflowCxAgentPersonalizationSettingsOutputReference
+	PersonalizationSettingsInput() *GoogleDialogflowCxAgentPersonalizationSettings
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -84,12 +101,17 @@ type GoogleDialogflowCxAgent interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	SatisfiesPzi() cdktf.IResolvable
+	SatisfiesPzs() cdktf.IResolvable
 	SecuritySettings() *string
 	SetSecuritySettings(val *string)
 	SecuritySettingsInput() *string
 	SpeechToTextSettings() GoogleDialogflowCxAgentSpeechToTextSettingsOutputReference
 	SpeechToTextSettingsInput() *GoogleDialogflowCxAgentSpeechToTextSettings
 	StartFlow() *string
+	StartPlaybook() *string
+	SetStartPlaybook(val *string)
+	StartPlaybookInput() *string
 	SupportedLanguageCodes() *[]*string
 	SetSupportedLanguageCodes(val *[]*string)
 	SupportedLanguageCodesInput() *[]*string
@@ -150,23 +172,35 @@ type GoogleDialogflowCxAgent interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAdvancedSettings(value *GoogleDialogflowCxAgentAdvancedSettings)
+	PutAnswerFeedbackSettings(value *GoogleDialogflowCxAgentAnswerFeedbackSettings)
+	PutClientCertificateSettings(value *GoogleDialogflowCxAgentClientCertificateSettings)
+	PutGenAppBuilderSettings(value *GoogleDialogflowCxAgentGenAppBuilderSettings)
 	PutGitIntegrationSettings(value *GoogleDialogflowCxAgentGitIntegrationSettings)
+	PutPersonalizationSettings(value *GoogleDialogflowCxAgentPersonalizationSettings)
 	PutSpeechToTextSettings(value *GoogleDialogflowCxAgentSpeechToTextSettings)
 	PutTextToSpeechSettings(value *GoogleDialogflowCxAgentTextToSpeechSettings)
 	PutTimeouts(value *GoogleDialogflowCxAgentTimeouts)
 	ResetAdvancedSettings()
+	ResetAnswerFeedbackSettings()
 	ResetAvatarUri()
+	ResetClientCertificateSettings()
+	ResetDeleteChatEngineOnDestroy()
 	ResetDescription()
+	ResetEnableMultiLanguageTraining()
 	ResetEnableSpellCorrection()
 	ResetEnableStackdriverLogging()
+	ResetGenAppBuilderSettings()
 	ResetGitIntegrationSettings()
 	ResetId()
+	ResetLocked()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPersonalizationSettings()
 	ResetProject()
 	ResetSecuritySettings()
 	ResetSpeechToTextSettings()
+	ResetStartPlaybook()
 	ResetSupportedLanguageCodes()
 	ResetTextToSpeechSettings()
 	ResetTimeouts()
@@ -208,6 +242,26 @@ func (j *jsiiProxy_GoogleDialogflowCxAgent) AdvancedSettingsInput() *GoogleDialo
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDialogflowCxAgent) AnswerFeedbackSettings() GoogleDialogflowCxAgentAnswerFeedbackSettingsOutputReference {
+	var returns GoogleDialogflowCxAgentAnswerFeedbackSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"answerFeedbackSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDialogflowCxAgent) AnswerFeedbackSettingsInput() *GoogleDialogflowCxAgentAnswerFeedbackSettings {
+	var returns *GoogleDialogflowCxAgentAnswerFeedbackSettings
+	_jsii_.Get(
+		j,
+		"answerFeedbackSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleDialogflowCxAgent) AvatarUri() *string {
 	var returns *string
 	_jsii_.Get(
@@ -233,6 +287,26 @@ func (j *jsiiProxy_GoogleDialogflowCxAgent) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDialogflowCxAgent) ClientCertificateSettings() GoogleDialogflowCxAgentClientCertificateSettingsOutputReference {
+	var returns GoogleDialogflowCxAgentClientCertificateSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"clientCertificateSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDialogflowCxAgent) ClientCertificateSettingsInput() *GoogleDialogflowCxAgentClientCertificateSettings {
+	var returns *GoogleDialogflowCxAgentClientCertificateSettings
+	_jsii_.Get(
+		j,
+		"clientCertificateSettingsInput",
 		&returns,
 	)
 	return returns
@@ -288,6 +362,26 @@ func (j *jsiiProxy_GoogleDialogflowCxAgent) DefaultLanguageCodeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDialogflowCxAgent) DeleteChatEngineOnDestroy() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deleteChatEngineOnDestroy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDialogflowCxAgent) DeleteChatEngineOnDestroyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deleteChatEngineOnDestroyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleDialogflowCxAgent) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -333,6 +427,26 @@ func (j *jsiiProxy_GoogleDialogflowCxAgent) DisplayNameInput() *string {
 	_jsii_.Get(
 		j,
 		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDialogflowCxAgent) EnableMultiLanguageTraining() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableMultiLanguageTraining",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDialogflowCxAgent) EnableMultiLanguageTrainingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableMultiLanguageTrainingInput",
 		&returns,
 	)
 	return returns
@@ -408,6 +522,26 @@ func (j *jsiiProxy_GoogleDialogflowCxAgent) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDialogflowCxAgent) GenAppBuilderSettings() GoogleDialogflowCxAgentGenAppBuilderSettingsOutputReference {
+	var returns GoogleDialogflowCxAgentGenAppBuilderSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"genAppBuilderSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDialogflowCxAgent) GenAppBuilderSettingsInput() *GoogleDialogflowCxAgentGenAppBuilderSettings {
+	var returns *GoogleDialogflowCxAgentGenAppBuilderSettings
+	_jsii_.Get(
+		j,
+		"genAppBuilderSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleDialogflowCxAgent) GitIntegrationSettings() GoogleDialogflowCxAgentGitIntegrationSettingsOutputReference {
 	var returns GoogleDialogflowCxAgentGitIntegrationSettingsOutputReference
 	_jsii_.Get(
@@ -478,6 +612,26 @@ func (j *jsiiProxy_GoogleDialogflowCxAgent) LocationInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDialogflowCxAgent) Locked() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"locked",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDialogflowCxAgent) LockedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"lockedInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleDialogflowCxAgent) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -493,6 +647,26 @@ func (j *jsiiProxy_GoogleDialogflowCxAgent) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDialogflowCxAgent) PersonalizationSettings() GoogleDialogflowCxAgentPersonalizationSettingsOutputReference {
+	var returns GoogleDialogflowCxAgentPersonalizationSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"personalizationSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDialogflowCxAgent) PersonalizationSettingsInput() *GoogleDialogflowCxAgentPersonalizationSettings {
+	var returns *GoogleDialogflowCxAgentPersonalizationSettings
+	_jsii_.Get(
+		j,
+		"personalizationSettingsInput",
 		&returns,
 	)
 	return returns
@@ -548,6 +722,26 @@ func (j *jsiiProxy_GoogleDialogflowCxAgent) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDialogflowCxAgent) SatisfiesPzi() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"satisfiesPzi",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDialogflowCxAgent) SatisfiesPzs() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"satisfiesPzs",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleDialogflowCxAgent) SecuritySettings() *string {
 	var returns *string
 	_jsii_.Get(
@@ -593,6 +787,26 @@ func (j *jsiiProxy_GoogleDialogflowCxAgent) StartFlow() *string {
 	_jsii_.Get(
 		j,
 		"startFlow",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDialogflowCxAgent) StartPlaybook() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"startPlaybook",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDialogflowCxAgent) StartPlaybookInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"startPlaybookInput",
 		&returns,
 	)
 	return returns
@@ -709,7 +923,7 @@ func (j *jsiiProxy_GoogleDialogflowCxAgent) TimeZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_dialogflow_cx_agent google_dialogflow_cx_agent} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_dialogflow_cx_agent google_dialogflow_cx_agent} Resource.
 func NewGoogleDialogflowCxAgent(scope constructs.Construct, id *string, config *GoogleDialogflowCxAgentConfig) GoogleDialogflowCxAgent {
 	_init_.Initialize()
 
@@ -727,7 +941,7 @@ func NewGoogleDialogflowCxAgent(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_dialogflow_cx_agent google_dialogflow_cx_agent} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_dialogflow_cx_agent google_dialogflow_cx_agent} Resource.
 func NewGoogleDialogflowCxAgent_Override(g GoogleDialogflowCxAgent, scope constructs.Construct, id *string, config *GoogleDialogflowCxAgentConfig) {
 	_init_.Initialize()
 
@@ -782,6 +996,17 @@ func (j *jsiiProxy_GoogleDialogflowCxAgent)SetDefaultLanguageCode(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleDialogflowCxAgent)SetDeleteChatEngineOnDestroy(val interface{}) {
+	if err := j.validateSetDeleteChatEngineOnDestroyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deleteChatEngineOnDestroy",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleDialogflowCxAgent)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
@@ -808,6 +1033,17 @@ func (j *jsiiProxy_GoogleDialogflowCxAgent)SetDisplayName(val *string) {
 	_jsii_.Set(
 		j,
 		"displayName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDialogflowCxAgent)SetEnableMultiLanguageTraining(val interface{}) {
+	if err := j.validateSetEnableMultiLanguageTrainingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableMultiLanguageTraining",
 		val,
 	)
 }
@@ -875,6 +1111,17 @@ func (j *jsiiProxy_GoogleDialogflowCxAgent)SetLocation(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleDialogflowCxAgent)SetLocked(val interface{}) {
+	if err := j.validateSetLockedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"locked",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleDialogflowCxAgent)SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
@@ -912,6 +1159,17 @@ func (j *jsiiProxy_GoogleDialogflowCxAgent)SetSecuritySettings(val *string) {
 	_jsii_.Set(
 		j,
 		"securitySettings",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDialogflowCxAgent)SetStartPlaybook(val *string) {
+	if err := j.validateSetStartPlaybookParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"startPlaybook",
 		val,
 	)
 }
@@ -1302,6 +1560,39 @@ func (g *jsiiProxy_GoogleDialogflowCxAgent) PutAdvancedSettings(value *GoogleDia
 	)
 }
 
+func (g *jsiiProxy_GoogleDialogflowCxAgent) PutAnswerFeedbackSettings(value *GoogleDialogflowCxAgentAnswerFeedbackSettings) {
+	if err := g.validatePutAnswerFeedbackSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAnswerFeedbackSettings",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDialogflowCxAgent) PutClientCertificateSettings(value *GoogleDialogflowCxAgentClientCertificateSettings) {
+	if err := g.validatePutClientCertificateSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putClientCertificateSettings",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDialogflowCxAgent) PutGenAppBuilderSettings(value *GoogleDialogflowCxAgentGenAppBuilderSettings) {
+	if err := g.validatePutGenAppBuilderSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putGenAppBuilderSettings",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDialogflowCxAgent) PutGitIntegrationSettings(value *GoogleDialogflowCxAgentGitIntegrationSettings) {
 	if err := g.validatePutGitIntegrationSettingsParameters(value); err != nil {
 		panic(err)
@@ -1309,6 +1600,17 @@ func (g *jsiiProxy_GoogleDialogflowCxAgent) PutGitIntegrationSettings(value *Goo
 	_jsii_.InvokeVoid(
 		g,
 		"putGitIntegrationSettings",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDialogflowCxAgent) PutPersonalizationSettings(value *GoogleDialogflowCxAgentPersonalizationSettings) {
+	if err := g.validatePutPersonalizationSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putPersonalizationSettings",
 		[]interface{}{value},
 	)
 }
@@ -1354,6 +1656,14 @@ func (g *jsiiProxy_GoogleDialogflowCxAgent) ResetAdvancedSettings() {
 	)
 }
 
+func (g *jsiiProxy_GoogleDialogflowCxAgent) ResetAnswerFeedbackSettings() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAnswerFeedbackSettings",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleDialogflowCxAgent) ResetAvatarUri() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1362,10 +1672,34 @@ func (g *jsiiProxy_GoogleDialogflowCxAgent) ResetAvatarUri() {
 	)
 }
 
+func (g *jsiiProxy_GoogleDialogflowCxAgent) ResetClientCertificateSettings() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetClientCertificateSettings",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDialogflowCxAgent) ResetDeleteChatEngineOnDestroy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDeleteChatEngineOnDestroy",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleDialogflowCxAgent) ResetDescription() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDialogflowCxAgent) ResetEnableMultiLanguageTraining() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnableMultiLanguageTraining",
 		nil, // no parameters
 	)
 }
@@ -1386,6 +1720,14 @@ func (g *jsiiProxy_GoogleDialogflowCxAgent) ResetEnableStackdriverLogging() {
 	)
 }
 
+func (g *jsiiProxy_GoogleDialogflowCxAgent) ResetGenAppBuilderSettings() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetGenAppBuilderSettings",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleDialogflowCxAgent) ResetGitIntegrationSettings() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1402,10 +1744,26 @@ func (g *jsiiProxy_GoogleDialogflowCxAgent) ResetId() {
 	)
 }
 
+func (g *jsiiProxy_GoogleDialogflowCxAgent) ResetLocked() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLocked",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleDialogflowCxAgent) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDialogflowCxAgent) ResetPersonalizationSettings() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPersonalizationSettings",
 		nil, // no parameters
 	)
 }
@@ -1430,6 +1788,14 @@ func (g *jsiiProxy_GoogleDialogflowCxAgent) ResetSpeechToTextSettings() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetSpeechToTextSettings",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDialogflowCxAgent) ResetStartPlaybook() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetStartPlaybook",
 		nil, // no parameters
 	)
 }

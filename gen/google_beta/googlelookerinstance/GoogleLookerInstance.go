@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlelookerinstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_looker_instance google_looker_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_looker_instance google_looker_instance}.
 type GoogleLookerInstance interface {
 	cdktf.TerraformResource
 	AdminSettings() GoogleLookerInstanceAdminSettingsOutputReference
@@ -25,6 +25,11 @@ type GoogleLookerInstance interface {
 	ConsumerNetwork() *string
 	SetConsumerNetwork(val *string)
 	ConsumerNetworkInput() *string
+	ControlledEgressConfig() GoogleLookerInstanceControlledEgressConfigOutputReference
+	ControlledEgressConfigInput() *GoogleLookerInstanceControlledEgressConfig
+	ControlledEgressEnabled() interface{}
+	SetControlledEgressEnabled(val interface{})
+	ControlledEgressEnabledInput() interface{}
 	// Experimental.
 	Count() interface{}
 	// Experimental.
@@ -55,6 +60,9 @@ type GoogleLookerInstance interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GeminiEnabled() interface{}
+	SetGeminiEnabled(val interface{})
+	GeminiEnabledInput() interface{}
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -75,6 +83,8 @@ type GoogleLookerInstance interface {
 	Node() constructs.Node
 	OauthConfig() GoogleLookerInstanceOauthConfigOutputReference
 	OauthConfigInput() *GoogleLookerInstanceOauthConfig
+	PeriodicExportConfig() GoogleLookerInstancePeriodicExportConfigOutputReference
+	PeriodicExportConfigInput() *GoogleLookerInstancePeriodicExportConfig
 	PlatformEdition() *string
 	SetPlatformEdition(val *string)
 	PlatformEditionInput() *string
@@ -163,26 +173,32 @@ type GoogleLookerInstance interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAdminSettings(value *GoogleLookerInstanceAdminSettings)
+	PutControlledEgressConfig(value *GoogleLookerInstanceControlledEgressConfig)
 	PutCustomDomain(value *GoogleLookerInstanceCustomDomain)
 	PutDenyMaintenancePeriod(value *GoogleLookerInstanceDenyMaintenancePeriod)
 	PutEncryptionConfig(value *GoogleLookerInstanceEncryptionConfig)
 	PutMaintenanceWindow(value *GoogleLookerInstanceMaintenanceWindow)
 	PutOauthConfig(value *GoogleLookerInstanceOauthConfig)
+	PutPeriodicExportConfig(value *GoogleLookerInstancePeriodicExportConfig)
 	PutPscConfig(value *GoogleLookerInstancePscConfig)
 	PutTimeouts(value *GoogleLookerInstanceTimeouts)
 	PutUserMetadata(value *GoogleLookerInstanceUserMetadata)
 	ResetAdminSettings()
 	ResetConsumerNetwork()
+	ResetControlledEgressConfig()
+	ResetControlledEgressEnabled()
 	ResetCustomDomain()
 	ResetDeletionPolicy()
 	ResetDenyMaintenancePeriod()
 	ResetEncryptionConfig()
 	ResetFipsEnabled()
+	ResetGeminiEnabled()
 	ResetId()
 	ResetMaintenanceWindow()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPeriodicExportConfig()
 	ResetPlatformEdition()
 	ResetPrivateIpEnabled()
 	ResetProject()
@@ -276,6 +292,46 @@ func (j *jsiiProxy_GoogleLookerInstance) ConsumerNetworkInput() *string {
 	_jsii_.Get(
 		j,
 		"consumerNetworkInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleLookerInstance) ControlledEgressConfig() GoogleLookerInstanceControlledEgressConfigOutputReference {
+	var returns GoogleLookerInstanceControlledEgressConfigOutputReference
+	_jsii_.Get(
+		j,
+		"controlledEgressConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleLookerInstance) ControlledEgressConfigInput() *GoogleLookerInstanceControlledEgressConfig {
+	var returns *GoogleLookerInstanceControlledEgressConfig
+	_jsii_.Get(
+		j,
+		"controlledEgressConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleLookerInstance) ControlledEgressEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"controlledEgressEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleLookerInstance) ControlledEgressEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"controlledEgressEnabledInput",
 		&returns,
 	)
 	return returns
@@ -451,6 +507,26 @@ func (j *jsiiProxy_GoogleLookerInstance) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleLookerInstance) GeminiEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"geminiEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleLookerInstance) GeminiEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"geminiEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleLookerInstance) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -586,6 +662,26 @@ func (j *jsiiProxy_GoogleLookerInstance) OauthConfigInput() *GoogleLookerInstanc
 	_jsii_.Get(
 		j,
 		"oauthConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleLookerInstance) PeriodicExportConfig() GoogleLookerInstancePeriodicExportConfigOutputReference {
+	var returns GoogleLookerInstancePeriodicExportConfigOutputReference
+	_jsii_.Get(
+		j,
+		"periodicExportConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleLookerInstance) PeriodicExportConfigInput() *GoogleLookerInstancePeriodicExportConfig {
+	var returns *GoogleLookerInstancePeriodicExportConfig
+	_jsii_.Get(
+		j,
+		"periodicExportConfigInput",
 		&returns,
 	)
 	return returns
@@ -862,7 +958,7 @@ func (j *jsiiProxy_GoogleLookerInstance) UserMetadataInput() *GoogleLookerInstan
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_looker_instance google_looker_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_looker_instance google_looker_instance} Resource.
 func NewGoogleLookerInstance(scope constructs.Construct, id *string, config *GoogleLookerInstanceConfig) GoogleLookerInstance {
 	_init_.Initialize()
 
@@ -880,7 +976,7 @@ func NewGoogleLookerInstance(scope constructs.Construct, id *string, config *Goo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_looker_instance google_looker_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_looker_instance google_looker_instance} Resource.
 func NewGoogleLookerInstance_Override(g GoogleLookerInstance, scope constructs.Construct, id *string, config *GoogleLookerInstanceConfig) {
 	_init_.Initialize()
 
@@ -909,6 +1005,17 @@ func (j *jsiiProxy_GoogleLookerInstance)SetConsumerNetwork(val *string) {
 	_jsii_.Set(
 		j,
 		"consumerNetwork",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleLookerInstance)SetControlledEgressEnabled(val interface{}) {
+	if err := j.validateSetControlledEgressEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"controlledEgressEnabled",
 		val,
 	)
 }
@@ -958,6 +1065,17 @@ func (j *jsiiProxy_GoogleLookerInstance)SetForEach(val cdktf.ITerraformIterator)
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleLookerInstance)SetGeminiEnabled(val interface{}) {
+	if err := j.validateSetGeminiEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"geminiEnabled",
 		val,
 	)
 }
@@ -1455,6 +1573,17 @@ func (g *jsiiProxy_GoogleLookerInstance) PutAdminSettings(value *GoogleLookerIns
 	)
 }
 
+func (g *jsiiProxy_GoogleLookerInstance) PutControlledEgressConfig(value *GoogleLookerInstanceControlledEgressConfig) {
+	if err := g.validatePutControlledEgressConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putControlledEgressConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleLookerInstance) PutCustomDomain(value *GoogleLookerInstanceCustomDomain) {
 	if err := g.validatePutCustomDomainParameters(value); err != nil {
 		panic(err)
@@ -1510,6 +1639,17 @@ func (g *jsiiProxy_GoogleLookerInstance) PutOauthConfig(value *GoogleLookerInsta
 	)
 }
 
+func (g *jsiiProxy_GoogleLookerInstance) PutPeriodicExportConfig(value *GoogleLookerInstancePeriodicExportConfig) {
+	if err := g.validatePutPeriodicExportConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putPeriodicExportConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleLookerInstance) PutPscConfig(value *GoogleLookerInstancePscConfig) {
 	if err := g.validatePutPscConfigParameters(value); err != nil {
 		panic(err)
@@ -1559,6 +1699,22 @@ func (g *jsiiProxy_GoogleLookerInstance) ResetConsumerNetwork() {
 	)
 }
 
+func (g *jsiiProxy_GoogleLookerInstance) ResetControlledEgressConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetControlledEgressConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleLookerInstance) ResetControlledEgressEnabled() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetControlledEgressEnabled",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleLookerInstance) ResetCustomDomain() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1599,6 +1755,14 @@ func (g *jsiiProxy_GoogleLookerInstance) ResetFipsEnabled() {
 	)
 }
 
+func (g *jsiiProxy_GoogleLookerInstance) ResetGeminiEnabled() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetGeminiEnabled",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleLookerInstance) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1619,6 +1783,14 @@ func (g *jsiiProxy_GoogleLookerInstance) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleLookerInstance) ResetPeriodicExportConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPeriodicExportConfig",
 		nil, // no parameters
 	)
 }

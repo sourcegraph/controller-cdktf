@@ -45,6 +45,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "edgeSecurityPolicyInput", GoGetter: "EdgeSecurityPolicyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "enableCdn", GoGetter: "EnableCdn"},
 			_jsii_.MemberProperty{JsiiProperty: "enableCdnInput", GoGetter: "EnableCdnInput"},
+			_jsii_.MemberProperty{JsiiProperty: "externalManagedMigrationState", GoGetter: "ExternalManagedMigrationState"},
+			_jsii_.MemberProperty{JsiiProperty: "externalManagedMigrationStateInput", GoGetter: "ExternalManagedMigrationStateInput"},
+			_jsii_.MemberProperty{JsiiProperty: "externalManagedMigrationTestingPercentage", GoGetter: "ExternalManagedMigrationTestingPercentage"},
+			_jsii_.MemberProperty{JsiiProperty: "externalManagedMigrationTestingPercentageInput", GoGetter: "ExternalManagedMigrationTestingPercentageInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fingerprint", GoGetter: "Fingerprint"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -90,6 +94,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "outlierDetection", GoGetter: "OutlierDetection"},
 			_jsii_.MemberProperty{JsiiProperty: "outlierDetectionInput", GoGetter: "OutlierDetectionInput"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
+			_jsii_.MemberProperty{JsiiProperty: "params", GoGetter: "Params"},
+			_jsii_.MemberProperty{JsiiProperty: "paramsInput", GoGetter: "ParamsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "portName", GoGetter: "PortName"},
 			_jsii_.MemberProperty{JsiiProperty: "portNameInput", GoGetter: "PortNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "project", GoGetter: "Project"},
@@ -108,9 +114,11 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putLogConfig", GoMethod: "PutLogConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putMaxStreamDuration", GoMethod: "PutMaxStreamDuration"},
 			_jsii_.MemberMethod{JsiiMethod: "putOutlierDetection", GoMethod: "PutOutlierDetection"},
+			_jsii_.MemberMethod{JsiiMethod: "putParams", GoMethod: "PutParams"},
 			_jsii_.MemberMethod{JsiiMethod: "putSecuritySettings", GoMethod: "PutSecuritySettings"},
 			_jsii_.MemberMethod{JsiiMethod: "putStrongSessionAffinityCookie", GoMethod: "PutStrongSessionAffinityCookie"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
+			_jsii_.MemberMethod{JsiiMethod: "putTlsSettings", GoMethod: "PutTlsSettings"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAffinityCookieTtlSec", GoMethod: "ResetAffinityCookieTtlSec"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBackend", GoMethod: "ResetBackend"},
@@ -125,6 +133,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEdgeSecurityPolicy", GoMethod: "ResetEdgeSecurityPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnableCdn", GoMethod: "ResetEnableCdn"},
+			_jsii_.MemberMethod{JsiiMethod: "resetExternalManagedMigrationState", GoMethod: "ResetExternalManagedMigrationState"},
+			_jsii_.MemberMethod{JsiiMethod: "resetExternalManagedMigrationTestingPercentage", GoMethod: "ResetExternalManagedMigrationTestingPercentage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHealthChecks", GoMethod: "ResetHealthChecks"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIap", GoMethod: "ResetIap"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
@@ -136,6 +146,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetMaxStreamDuration", GoMethod: "ResetMaxStreamDuration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOutlierDetection", GoMethod: "ResetOutlierDetection"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetParams", GoMethod: "ResetParams"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPortName", GoMethod: "ResetPortName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProject", GoMethod: "ResetProject"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProtocol", GoMethod: "ResetProtocol"},
@@ -146,6 +157,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetStrongSessionAffinityCookie", GoMethod: "ResetStrongSessionAffinityCookie"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeoutSec", GoMethod: "ResetTimeoutSec"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTlsSettings", GoMethod: "ResetTlsSettings"},
 			_jsii_.MemberProperty{JsiiProperty: "securityPolicy", GoGetter: "SecurityPolicy"},
 			_jsii_.MemberProperty{JsiiProperty: "securityPolicyInput", GoGetter: "SecurityPolicyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "securitySettings", GoGetter: "SecuritySettings"},
@@ -166,6 +178,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeoutSec", GoGetter: "TimeoutSec"},
 			_jsii_.MemberProperty{JsiiProperty: "timeoutSecInput", GoGetter: "TimeoutSecInput"},
 			_jsii_.MemberProperty{JsiiProperty: "timeoutsInput", GoGetter: "TimeoutsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "tlsSettings", GoGetter: "TlsSettings"},
+			_jsii_.MemberProperty{JsiiProperty: "tlsSettingsInput", GoGetter: "TlsSettingsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toHclTerraform", GoMethod: "ToHclTerraform"},
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
@@ -1275,6 +1289,45 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceParams",
+		reflect.TypeOf((*ComputeBackendServiceParams)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceParamsOutputReference",
+		reflect.TypeOf((*ComputeBackendServiceParamsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetResourceManagerTags", GoMethod: "ResetResourceManagerTags"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "resourceManagerTags", GoGetter: "ResourceManagerTags"},
+			_jsii_.MemberProperty{JsiiProperty: "resourceManagerTagsInput", GoGetter: "ResourceManagerTagsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ComputeBackendServiceParamsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceSecuritySettings",
 		reflect.TypeOf((*ComputeBackendServiceSecuritySettings)(nil)).Elem(),
 	)
@@ -1496,6 +1549,116 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeBackendServiceTimeoutsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceTlsSettings",
+		reflect.TypeOf((*ComputeBackendServiceTlsSettings)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsOutputReference",
+		reflect.TypeOf((*ComputeBackendServiceTlsSettingsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "authenticationConfig", GoGetter: "AuthenticationConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "authenticationConfigInput", GoGetter: "AuthenticationConfigInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "putSubjectAltNames", GoMethod: "PutSubjectAltNames"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAuthenticationConfig", GoMethod: "ResetAuthenticationConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSni", GoMethod: "ResetSni"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSubjectAltNames", GoMethod: "ResetSubjectAltNames"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "sni", GoGetter: "Sni"},
+			_jsii_.MemberProperty{JsiiProperty: "sniInput", GoGetter: "SniInput"},
+			_jsii_.MemberProperty{JsiiProperty: "subjectAltNames", GoGetter: "SubjectAltNames"},
+			_jsii_.MemberProperty{JsiiProperty: "subjectAltNamesInput", GoGetter: "SubjectAltNamesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ComputeBackendServiceTlsSettingsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsSubjectAltNames",
+		reflect.TypeOf((*ComputeBackendServiceTlsSettingsSubjectAltNames)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsSubjectAltNamesList",
+		reflect.TypeOf((*ComputeBackendServiceTlsSettingsSubjectAltNamesList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ComputeBackendServiceTlsSettingsSubjectAltNamesList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsSubjectAltNamesOutputReference",
+		reflect.TypeOf((*ComputeBackendServiceTlsSettingsSubjectAltNamesOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "dnsName", GoGetter: "DnsName"},
+			_jsii_.MemberProperty{JsiiProperty: "dnsNameInput", GoGetter: "DnsNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDnsName", GoMethod: "ResetDnsName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUniformResourceIdentifier", GoMethod: "ResetUniformResourceIdentifier"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "uniformResourceIdentifier", GoGetter: "UniformResourceIdentifier"},
+			_jsii_.MemberProperty{JsiiProperty: "uniformResourceIdentifierInput", GoGetter: "UniformResourceIdentifierInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ComputeBackendServiceTlsSettingsSubjectAltNamesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/osconfigv2policyorchestrator/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/os_config_v2_policy_orchestrator google_os_config_v2_policy_orchestrator}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_v2_policy_orchestrator google_os_config_v2_policy_orchestrator}.
 type OsConfigV2PolicyOrchestrator interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -597,7 +597,7 @@ func (j *jsiiProxy_OsConfigV2PolicyOrchestrator) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/os_config_v2_policy_orchestrator google_os_config_v2_policy_orchestrator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_v2_policy_orchestrator google_os_config_v2_policy_orchestrator} Resource.
 func NewOsConfigV2PolicyOrchestrator(scope constructs.Construct, id *string, config *OsConfigV2PolicyOrchestratorConfig) OsConfigV2PolicyOrchestrator {
 	_init_.Initialize()
 
@@ -615,7 +615,7 @@ func NewOsConfigV2PolicyOrchestrator(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/os_config_v2_policy_orchestrator google_os_config_v2_policy_orchestrator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_v2_policy_orchestrator google_os_config_v2_policy_orchestrator} Resource.
 func NewOsConfigV2PolicyOrchestrator_Override(o OsConfigV2PolicyOrchestrator, scope constructs.Construct, id *string, config *OsConfigV2PolicyOrchestratorConfig) {
 	_init_.Initialize()
 

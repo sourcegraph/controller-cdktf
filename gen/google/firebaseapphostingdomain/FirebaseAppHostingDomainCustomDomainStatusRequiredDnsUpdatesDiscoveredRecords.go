@@ -1,0 +1,6 @@
+package firebaseapphostingdomain
+
+
+type FirebaseAppHostingDomainCustomDomainStatusRequiredDnsUpdatesDiscoveredRecords struct {
+}
+

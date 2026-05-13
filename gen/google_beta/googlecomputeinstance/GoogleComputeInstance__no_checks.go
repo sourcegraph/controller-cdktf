@@ -180,6 +180,10 @@ func (j *jsiiProxy_GoogleComputeInstance) validateSetEnableDisplayParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeInstance) validateSetEraseWindowsVssSignatureParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeInstance) validateSetHostnameParameters(val *string) error {
 	return nil
 }

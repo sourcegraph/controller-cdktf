@@ -88,6 +88,10 @@ func (n *jsiiProxy_NetworkSecuritySecurityProfile) validatePutTimeoutsParameters
 	return nil
 }
 
+func (n *jsiiProxy_NetworkSecuritySecurityProfile) validatePutUrlFilteringProfileParameters(value *NetworkSecuritySecurityProfileUrlFilteringProfile) error {
+	return nil
+}
+
 func validateNetworkSecuritySecurityProfile_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

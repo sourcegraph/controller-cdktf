@@ -76,6 +76,10 @@ func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) validatePutProperties
 	return nil
 }
 
+func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) validatePutSourceConfigParameters(value *GoogleOracleDatabaseAutonomousDatabaseSourceConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) validatePutTimeoutsParameters(value *GoogleOracleDatabaseAutonomousDatabaseTimeouts) error {
 	return nil
 }
@@ -145,6 +149,14 @@ func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) validateSetLocationPa
 }
 
 func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) validateSetNetworkParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) validateSetOdbNetworkParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) validateSetOdbSubnetParameters(val *string) error {
 	return nil
 }
 

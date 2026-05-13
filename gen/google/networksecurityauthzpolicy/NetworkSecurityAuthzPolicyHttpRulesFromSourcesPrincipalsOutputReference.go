@@ -41,6 +41,11 @@ type NetworkSecurityAuthzPolicyHttpRulesFromSourcesPrincipalsOutputReference int
 	Prefix() *string
 	SetPrefix(val *string)
 	PrefixInput() *string
+	Principal() NetworkSecurityAuthzPolicyHttpRulesFromSourcesPrincipalsPrincipalOutputReference
+	PrincipalInput() *NetworkSecurityAuthzPolicyHttpRulesFromSourcesPrincipalsPrincipal
+	PrincipalSelector() *string
+	SetPrincipalSelector(val *string)
+	PrincipalSelectorInput() *string
 	Suffix() *string
 	SetSuffix(val *string)
 	SuffixInput() *string
@@ -76,10 +81,13 @@ type NetworkSecurityAuthzPolicyHttpRulesFromSourcesPrincipalsOutputReference int
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutPrincipal(value *NetworkSecurityAuthzPolicyHttpRulesFromSourcesPrincipalsPrincipal)
 	ResetContains()
 	ResetExact()
 	ResetIgnoreCase()
 	ResetPrefix()
+	ResetPrincipal()
+	ResetPrincipalSelector()
 	ResetSuffix()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -226,6 +234,46 @@ func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromSourcesPrincipalsOutpu
 	return returns
 }
 
+func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromSourcesPrincipalsOutputReference) Principal() NetworkSecurityAuthzPolicyHttpRulesFromSourcesPrincipalsPrincipalOutputReference {
+	var returns NetworkSecurityAuthzPolicyHttpRulesFromSourcesPrincipalsPrincipalOutputReference
+	_jsii_.Get(
+		j,
+		"principal",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromSourcesPrincipalsOutputReference) PrincipalInput() *NetworkSecurityAuthzPolicyHttpRulesFromSourcesPrincipalsPrincipal {
+	var returns *NetworkSecurityAuthzPolicyHttpRulesFromSourcesPrincipalsPrincipal
+	_jsii_.Get(
+		j,
+		"principalInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromSourcesPrincipalsOutputReference) PrincipalSelector() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"principalSelector",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromSourcesPrincipalsOutputReference) PrincipalSelectorInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"principalSelectorInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromSourcesPrincipalsOutputReference) Suffix() *string {
 	var returns *string
 	_jsii_.Get(
@@ -367,6 +415,17 @@ func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromSourcesPrincipalsOutpu
 	_jsii_.Set(
 		j,
 		"prefix",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromSourcesPrincipalsOutputReference)SetPrincipalSelector(val *string) {
+	if err := j.validateSetPrincipalSelectorParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"principalSelector",
 		val,
 	)
 }
@@ -590,6 +649,17 @@ func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromSourcesPrincipalsOutpu
 	return returns
 }
 
+func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromSourcesPrincipalsOutputReference) PutPrincipal(value *NetworkSecurityAuthzPolicyHttpRulesFromSourcesPrincipalsPrincipal) {
+	if err := n.validatePutPrincipalParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putPrincipal",
+		[]interface{}{value},
+	)
+}
+
 func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromSourcesPrincipalsOutputReference) ResetContains() {
 	_jsii_.InvokeVoid(
 		n,
@@ -618,6 +688,22 @@ func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromSourcesPrincipalsOutpu
 	_jsii_.InvokeVoid(
 		n,
 		"resetPrefix",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromSourcesPrincipalsOutputReference) ResetPrincipal() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetPrincipal",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromSourcesPrincipalsOutputReference) ResetPrincipalSelector() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetPrincipalSelector",
 		nil, // no parameters
 	)
 }

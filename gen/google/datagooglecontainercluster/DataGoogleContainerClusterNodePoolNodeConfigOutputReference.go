@@ -11,6 +11,7 @@ import (
 type DataGoogleContainerClusterNodePoolNodeConfigOutputReference interface {
 	cdktf.ComplexObject
 	AdvancedMachineFeatures() DataGoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesList
+	BootDisk() DataGoogleContainerClusterNodePoolNodeConfigBootDiskList
 	BootDiskKmsKey() *string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -35,6 +36,7 @@ type DataGoogleContainerClusterNodePoolNodeConfigOutputReference interface {
 	EnableConfidentialStorage() cdktf.IResolvable
 	EphemeralStorageLocalSsdConfig() DataGoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigList
 	FastSocket() DataGoogleContainerClusterNodePoolNodeConfigFastSocketList
+	FlexStart() cdktf.IResolvable
 	// Experimental.
 	Fqn() *string
 	GcfsConfig() DataGoogleContainerClusterNodePoolNodeConfigGcfsConfigList
@@ -61,6 +63,7 @@ type DataGoogleContainerClusterNodePoolNodeConfigOutputReference interface {
 	ReservationAffinity() DataGoogleContainerClusterNodePoolNodeConfigReservationAffinityList
 	ResourceLabels() cdktf.StringMap
 	ResourceManagerTags() cdktf.StringMap
+	SandboxConfig() DataGoogleContainerClusterNodePoolNodeConfigSandboxConfigList
 	SecondaryBootDisks() DataGoogleContainerClusterNodePoolNodeConfigSecondaryBootDisksList
 	ServiceAccount() *string
 	ShieldedInstanceConfig() DataGoogleContainerClusterNodePoolNodeConfigShieldedInstanceConfigList
@@ -123,6 +126,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigOutputReference) 
 	_jsii_.Get(
 		j,
 		"advancedMachineFeatures",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigOutputReference) BootDisk() DataGoogleContainerClusterNodePoolNodeConfigBootDiskList {
+	var returns DataGoogleContainerClusterNodePoolNodeConfigBootDiskList
+	_jsii_.Get(
+		j,
+		"bootDisk",
 		&returns,
 	)
 	return returns
@@ -243,6 +256,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigOutputReference) 
 	_jsii_.Get(
 		j,
 		"fastSocket",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigOutputReference) FlexStart() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"flexStart",
 		&returns,
 	)
 	return returns
@@ -483,6 +506,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigOutputReference) 
 	_jsii_.Get(
 		j,
 		"resourceManagerTags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigOutputReference) SandboxConfig() DataGoogleContainerClusterNodePoolNodeConfigSandboxConfigList {
+	var returns DataGoogleContainerClusterNodePoolNodeConfigSandboxConfigList
+	_jsii_.Get(
+		j,
+		"sandboxConfig",
 		&returns,
 	)
 	return returns

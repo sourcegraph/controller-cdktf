@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlegeminicoderepositoryindex/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_gemini_code_repository_index google_gemini_code_repository_index}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_gemini_code_repository_index google_gemini_code_repository_index}.
 type GoogleGeminiCodeRepositoryIndex interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -539,7 +539,7 @@ func (j *jsiiProxy_GoogleGeminiCodeRepositoryIndex) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_gemini_code_repository_index google_gemini_code_repository_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_gemini_code_repository_index google_gemini_code_repository_index} Resource.
 func NewGoogleGeminiCodeRepositoryIndex(scope constructs.Construct, id *string, config *GoogleGeminiCodeRepositoryIndexConfig) GoogleGeminiCodeRepositoryIndex {
 	_init_.Initialize()
 
@@ -557,7 +557,7 @@ func NewGoogleGeminiCodeRepositoryIndex(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_gemini_code_repository_index google_gemini_code_repository_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_gemini_code_repository_index google_gemini_code_repository_index} Resource.
 func NewGoogleGeminiCodeRepositoryIndex_Override(g GoogleGeminiCodeRepositoryIndex, scope constructs.Construct, id *string, config *GoogleGeminiCodeRepositoryIndexConfig) {
 	_init_.Initialize()
 

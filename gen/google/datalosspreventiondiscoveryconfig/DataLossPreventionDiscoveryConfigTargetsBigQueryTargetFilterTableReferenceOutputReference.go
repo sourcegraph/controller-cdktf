@@ -32,6 +32,9 @@ type DataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTableReferenceO
 	Fqn() *string
 	InternalValue() *DataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTableReference
 	SetInternalValue(val *DataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTableReference)
+	ProjectId() *string
+	SetProjectId(val *string)
+	ProjectIdInput() *string
 	TableId() *string
 	SetTableId(val *string)
 	TableIdInput() *string
@@ -67,6 +70,7 @@ type DataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTableReferenceO
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetProjectId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -147,6 +151,26 @@ func (j *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterT
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTableReferenceOutputReference) ProjectId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTableReferenceOutputReference) ProjectIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectIdInput",
 		&returns,
 	)
 	return returns
@@ -260,6 +284,17 @@ func (j *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterT
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTableReferenceOutputReference)SetProjectId(val *string) {
+	if err := j.validateSetProjectIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"projectId",
 		val,
 	)
 }
@@ -481,6 +516,14 @@ func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterT
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTableReferenceOutputReference) ResetProjectId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProjectId",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTableReferenceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

@@ -9,9 +9,11 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/managedkafkacluster/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/managed_kafka_cluster google_managed_kafka_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/managed_kafka_cluster google_managed_kafka_cluster}.
 type ManagedKafkaCluster interface {
 	cdktf.TerraformResource
+	BrokerCapacityConfig() ManagedKafkaClusterBrokerCapacityConfigOutputReference
+	BrokerCapacityConfigInput() *ManagedKafkaClusterBrokerCapacityConfig
 	CapacityConfig() ManagedKafkaClusterCapacityConfigOutputReference
 	CapacityConfigInput() *ManagedKafkaClusterCapacityConfig
 	// Experimental.
@@ -86,6 +88,8 @@ type ManagedKafkaCluster interface {
 	TerraformResourceType() *string
 	Timeouts() ManagedKafkaClusterTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	TlsConfig() ManagedKafkaClusterTlsConfigOutputReference
+	TlsConfigInput() *ManagedKafkaClusterTlsConfig
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
@@ -130,10 +134,13 @@ type ManagedKafkaCluster interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutBrokerCapacityConfig(value *ManagedKafkaClusterBrokerCapacityConfig)
 	PutCapacityConfig(value *ManagedKafkaClusterCapacityConfig)
 	PutGcpConfig(value *ManagedKafkaClusterGcpConfig)
 	PutRebalanceConfig(value *ManagedKafkaClusterRebalanceConfig)
 	PutTimeouts(value *ManagedKafkaClusterTimeouts)
+	PutTlsConfig(value *ManagedKafkaClusterTlsConfig)
+	ResetBrokerCapacityConfig()
 	ResetId()
 	ResetLabels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -142,6 +149,7 @@ type ManagedKafkaCluster interface {
 	ResetProject()
 	ResetRebalanceConfig()
 	ResetTimeouts()
+	ResetTlsConfig()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -158,6 +166,26 @@ type ManagedKafkaCluster interface {
 // The jsii proxy struct for ManagedKafkaCluster
 type jsiiProxy_ManagedKafkaCluster struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_ManagedKafkaCluster) BrokerCapacityConfig() ManagedKafkaClusterBrokerCapacityConfigOutputReference {
+	var returns ManagedKafkaClusterBrokerCapacityConfigOutputReference
+	_jsii_.Get(
+		j,
+		"brokerCapacityConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ManagedKafkaCluster) BrokerCapacityConfigInput() *ManagedKafkaClusterBrokerCapacityConfig {
+	var returns *ManagedKafkaClusterBrokerCapacityConfig
+	_jsii_.Get(
+		j,
+		"brokerCapacityConfigInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ManagedKafkaCluster) CapacityConfig() ManagedKafkaClusterCapacityConfigOutputReference {
@@ -550,6 +578,26 @@ func (j *jsiiProxy_ManagedKafkaCluster) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ManagedKafkaCluster) TlsConfig() ManagedKafkaClusterTlsConfigOutputReference {
+	var returns ManagedKafkaClusterTlsConfigOutputReference
+	_jsii_.Get(
+		j,
+		"tlsConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ManagedKafkaCluster) TlsConfigInput() *ManagedKafkaClusterTlsConfig {
+	var returns *ManagedKafkaClusterTlsConfig
+	_jsii_.Get(
+		j,
+		"tlsConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ManagedKafkaCluster) UpdateTime() *string {
 	var returns *string
 	_jsii_.Get(
@@ -561,7 +609,7 @@ func (j *jsiiProxy_ManagedKafkaCluster) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/managed_kafka_cluster google_managed_kafka_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/managed_kafka_cluster google_managed_kafka_cluster} Resource.
 func NewManagedKafkaCluster(scope constructs.Construct, id *string, config *ManagedKafkaClusterConfig) ManagedKafkaCluster {
 	_init_.Initialize()
 
@@ -579,7 +627,7 @@ func NewManagedKafkaCluster(scope constructs.Construct, id *string, config *Mana
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/managed_kafka_cluster google_managed_kafka_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/managed_kafka_cluster google_managed_kafka_cluster} Resource.
 func NewManagedKafkaCluster_Override(m ManagedKafkaCluster, scope constructs.Construct, id *string, config *ManagedKafkaClusterConfig) {
 	_init_.Initialize()
 
@@ -1066,6 +1114,17 @@ func (m *jsiiProxy_ManagedKafkaCluster) OverrideLogicalId(newLogicalId *string) 
 	)
 }
 
+func (m *jsiiProxy_ManagedKafkaCluster) PutBrokerCapacityConfig(value *ManagedKafkaClusterBrokerCapacityConfig) {
+	if err := m.validatePutBrokerCapacityConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putBrokerCapacityConfig",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_ManagedKafkaCluster) PutCapacityConfig(value *ManagedKafkaClusterCapacityConfig) {
 	if err := m.validatePutCapacityConfigParameters(value); err != nil {
 		panic(err)
@@ -1107,6 +1166,25 @@ func (m *jsiiProxy_ManagedKafkaCluster) PutTimeouts(value *ManagedKafkaClusterTi
 		m,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_ManagedKafkaCluster) PutTlsConfig(value *ManagedKafkaClusterTlsConfig) {
+	if err := m.validatePutTlsConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putTlsConfig",
+		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_ManagedKafkaCluster) ResetBrokerCapacityConfig() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetBrokerCapacityConfig",
+		nil, // no parameters
 	)
 }
 
@@ -1154,6 +1232,14 @@ func (m *jsiiProxy_ManagedKafkaCluster) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_ManagedKafkaCluster) ResetTlsConfig() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetTlsConfig",
 		nil, // no parameters
 	)
 }

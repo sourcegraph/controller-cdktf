@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/backupdrbackupvault/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/backup_dr_backup_vault google_backup_dr_backup_vault}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_backup_vault google_backup_dr_backup_vault}.
 type BackupDrBackupVault interface {
 	cdktf.TerraformResource
 	AccessRestriction() *string
@@ -25,6 +25,9 @@ type BackupDrBackupVault interface {
 	BackupMinimumEnforcedRetentionDuration() *string
 	SetBackupMinimumEnforcedRetentionDuration(val *string)
 	BackupMinimumEnforcedRetentionDurationInput() *string
+	BackupRetentionInheritance() *string
+	SetBackupRetentionInheritance(val *string)
+	BackupRetentionInheritanceInput() *string
 	BackupVaultId() *string
 	SetBackupVaultId(val *string)
 	BackupVaultIdInput() *string
@@ -54,6 +57,8 @@ type BackupDrBackupVault interface {
 	EffectiveTime() *string
 	SetEffectiveTime(val *string)
 	EffectiveTimeInput() *string
+	EncryptionConfig() BackupDrBackupVaultEncryptionConfigOutputReference
+	EncryptionConfigInput() *BackupDrBackupVaultEncryptionConfig
 	Etag() *string
 	ForceDelete() interface{}
 	SetForceDelete(val interface{})
@@ -161,12 +166,15 @@ type BackupDrBackupVault interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutEncryptionConfig(value *BackupDrBackupVaultEncryptionConfig)
 	PutTimeouts(value *BackupDrBackupVaultTimeouts)
 	ResetAccessRestriction()
 	ResetAllowMissing()
 	ResetAnnotations()
+	ResetBackupRetentionInheritance()
 	ResetDescription()
 	ResetEffectiveTime()
+	ResetEncryptionConfig()
 	ResetForceDelete()
 	ResetForceUpdate()
 	ResetId()
@@ -281,6 +289,26 @@ func (j *jsiiProxy_BackupDrBackupVault) BackupMinimumEnforcedRetentionDurationIn
 	_jsii_.Get(
 		j,
 		"backupMinimumEnforcedRetentionDurationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BackupDrBackupVault) BackupRetentionInheritance() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"backupRetentionInheritance",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BackupDrBackupVault) BackupRetentionInheritanceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"backupRetentionInheritanceInput",
 		&returns,
 	)
 	return returns
@@ -431,6 +459,26 @@ func (j *jsiiProxy_BackupDrBackupVault) EffectiveTimeInput() *string {
 	_jsii_.Get(
 		j,
 		"effectiveTimeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BackupDrBackupVault) EncryptionConfig() BackupDrBackupVaultEncryptionConfigOutputReference {
+	var returns BackupDrBackupVaultEncryptionConfigOutputReference
+	_jsii_.Get(
+		j,
+		"encryptionConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BackupDrBackupVault) EncryptionConfigInput() *BackupDrBackupVaultEncryptionConfig {
+	var returns *BackupDrBackupVaultEncryptionConfig
+	_jsii_.Get(
+		j,
+		"encryptionConfigInput",
 		&returns,
 	)
 	return returns
@@ -807,7 +855,7 @@ func (j *jsiiProxy_BackupDrBackupVault) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/backup_dr_backup_vault google_backup_dr_backup_vault} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_backup_vault google_backup_dr_backup_vault} Resource.
 func NewBackupDrBackupVault(scope constructs.Construct, id *string, config *BackupDrBackupVaultConfig) BackupDrBackupVault {
 	_init_.Initialize()
 
@@ -825,7 +873,7 @@ func NewBackupDrBackupVault(scope constructs.Construct, id *string, config *Back
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/backup_dr_backup_vault google_backup_dr_backup_vault} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_backup_vault google_backup_dr_backup_vault} Resource.
 func NewBackupDrBackupVault_Override(b BackupDrBackupVault, scope constructs.Construct, id *string, config *BackupDrBackupVaultConfig) {
 	_init_.Initialize()
 
@@ -876,6 +924,17 @@ func (j *jsiiProxy_BackupDrBackupVault)SetBackupMinimumEnforcedRetentionDuration
 	_jsii_.Set(
 		j,
 		"backupMinimumEnforcedRetentionDuration",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BackupDrBackupVault)SetBackupRetentionInheritance(val *string) {
+	if err := j.validateSetBackupRetentionInheritanceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"backupRetentionInheritance",
 		val,
 	)
 }
@@ -1422,6 +1481,17 @@ func (b *jsiiProxy_BackupDrBackupVault) OverrideLogicalId(newLogicalId *string) 
 	)
 }
 
+func (b *jsiiProxy_BackupDrBackupVault) PutEncryptionConfig(value *BackupDrBackupVaultEncryptionConfig) {
+	if err := b.validatePutEncryptionConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putEncryptionConfig",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BackupDrBackupVault) PutTimeouts(value *BackupDrBackupVaultTimeouts) {
 	if err := b.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1457,6 +1527,14 @@ func (b *jsiiProxy_BackupDrBackupVault) ResetAnnotations() {
 	)
 }
 
+func (b *jsiiProxy_BackupDrBackupVault) ResetBackupRetentionInheritance() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetBackupRetentionInheritance",
+		nil, // no parameters
+	)
+}
+
 func (b *jsiiProxy_BackupDrBackupVault) ResetDescription() {
 	_jsii_.InvokeVoid(
 		b,
@@ -1469,6 +1547,14 @@ func (b *jsiiProxy_BackupDrBackupVault) ResetEffectiveTime() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetEffectiveTime",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BackupDrBackupVault) ResetEncryptionConfig() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetEncryptionConfig",
 		nil, // no parameters
 	)
 }

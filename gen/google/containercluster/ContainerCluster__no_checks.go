@@ -76,7 +76,15 @@ func (c *jsiiProxy_ContainerCluster) validatePutAddonsConfigParameters(value *Co
 	return nil
 }
 
+func (c *jsiiProxy_ContainerCluster) validatePutAnonymousAuthenticationConfigParameters(value *ContainerClusterAnonymousAuthenticationConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerCluster) validatePutAuthenticatorGroupsConfigParameters(value *ContainerClusterAuthenticatorGroupsConfig) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerCluster) validatePutAutopilotClusterPolicyConfigParameters(value *ContainerClusterAutopilotClusterPolicyConfig) error {
 	return nil
 }
 
@@ -128,6 +136,10 @@ func (c *jsiiProxy_ContainerCluster) validatePutGatewayApiConfigParameters(value
 	return nil
 }
 
+func (c *jsiiProxy_ContainerCluster) validatePutGkeAutoUpgradeConfigParameters(value *ContainerClusterGkeAutoUpgradeConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerCluster) validatePutIdentityServiceConfigParameters(value *ContainerClusterIdentityServiceConfig) error {
 	return nil
 }
@@ -160,6 +172,10 @@ func (c *jsiiProxy_ContainerCluster) validatePutMonitoringConfigParameters(value
 	return nil
 }
 
+func (c *jsiiProxy_ContainerCluster) validatePutNetworkPerformanceConfigParameters(value *ContainerClusterNetworkPerformanceConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerCluster) validatePutNetworkPolicyParameters(value *ContainerClusterNetworkPolicy) error {
 	return nil
 }
@@ -184,7 +200,15 @@ func (c *jsiiProxy_ContainerCluster) validatePutNotificationConfigParameters(val
 	return nil
 }
 
+func (c *jsiiProxy_ContainerCluster) validatePutPodAutoscalingParameters(value *ContainerClusterPodAutoscaling) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerCluster) validatePutPrivateClusterConfigParameters(value *ContainerClusterPrivateClusterConfig) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerCluster) validatePutRbacBindingConfigParameters(value *ContainerClusterRbacBindingConfig) error {
 	return nil
 }
 
@@ -241,6 +265,10 @@ func validateContainerCluster_IsTerraformResourceParameters(x interface{}) error
 }
 
 func (j *jsiiProxy_ContainerCluster) validateSetAllowNetAdminParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ContainerCluster) validateSetAutopilotPrivilegedAdmissionParameters(val *[]*string) error {
 	return nil
 }
 
@@ -321,6 +349,10 @@ func (j *jsiiProxy_ContainerCluster) validateSetIdParameters(val *string) error 
 }
 
 func (j *jsiiProxy_ContainerCluster) validateSetInitialNodeCountParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_ContainerCluster) validateSetInTransitEncryptionConfigParameters(val *string) error {
 	return nil
 }
 

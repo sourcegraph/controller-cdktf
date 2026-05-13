@@ -9,11 +9,12 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglealloydbcluster/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_alloydb_cluster google_alloydb_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/data-sources/google_alloydb_cluster google_alloydb_cluster}.
 type DataGoogleAlloydbCluster interface {
 	cdktf.TerraformDataSource
 	Annotations() cdktf.StringMap
 	AutomatedBackupPolicy() DataGoogleAlloydbClusterAutomatedBackupPolicyList
+	BackupdrBackupSource() DataGoogleAlloydbClusterBackupdrBackupSourceList
 	BackupSource() DataGoogleAlloydbClusterBackupSourceList
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -30,7 +31,9 @@ type DataGoogleAlloydbCluster interface {
 	// Experimental.
 	SetCount(val interface{})
 	DatabaseVersion() *string
+	DataplexConfig() DataGoogleAlloydbClusterDataplexConfigList
 	DeletionPolicy() *string
+	DeletionProtection() cdktf.IResolvable
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -78,6 +81,8 @@ type DataGoogleAlloydbCluster interface {
 	// Experimental.
 	RawOverrides() interface{}
 	Reconciling() cdktf.IResolvable
+	RestoreBackupdrBackupSource() DataGoogleAlloydbClusterRestoreBackupdrBackupSourceList
+	RestoreBackupdrPitrSource() DataGoogleAlloydbClusterRestoreBackupdrPitrSourceList
 	RestoreBackupSource() DataGoogleAlloydbClusterRestoreBackupSourceList
 	RestoreContinuousBackupSource() DataGoogleAlloydbClusterRestoreContinuousBackupSourceList
 	SecondaryConfig() DataGoogleAlloydbClusterSecondaryConfigList
@@ -158,6 +163,16 @@ func (j *jsiiProxy_DataGoogleAlloydbCluster) AutomatedBackupPolicy() DataGoogleA
 	_jsii_.Get(
 		j,
 		"automatedBackupPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleAlloydbCluster) BackupdrBackupSource() DataGoogleAlloydbClusterBackupdrBackupSourceList {
+	var returns DataGoogleAlloydbClusterBackupdrBackupSourceList
+	_jsii_.Get(
+		j,
+		"backupdrBackupSource",
 		&returns,
 	)
 	return returns
@@ -263,11 +278,31 @@ func (j *jsiiProxy_DataGoogleAlloydbCluster) DatabaseVersion() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleAlloydbCluster) DataplexConfig() DataGoogleAlloydbClusterDataplexConfigList {
+	var returns DataGoogleAlloydbClusterDataplexConfigList
+	_jsii_.Get(
+		j,
+		"dataplexConfig",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleAlloydbCluster) DeletionPolicy() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"deletionPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleAlloydbCluster) DeletionProtection() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"deletionProtection",
 		&returns,
 	)
 	return returns
@@ -553,6 +588,26 @@ func (j *jsiiProxy_DataGoogleAlloydbCluster) Reconciling() cdktf.IResolvable {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleAlloydbCluster) RestoreBackupdrBackupSource() DataGoogleAlloydbClusterRestoreBackupdrBackupSourceList {
+	var returns DataGoogleAlloydbClusterRestoreBackupdrBackupSourceList
+	_jsii_.Get(
+		j,
+		"restoreBackupdrBackupSource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleAlloydbCluster) RestoreBackupdrPitrSource() DataGoogleAlloydbClusterRestoreBackupdrPitrSourceList {
+	var returns DataGoogleAlloydbClusterRestoreBackupdrPitrSourceList
+	_jsii_.Get(
+		j,
+		"restoreBackupdrPitrSource",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleAlloydbCluster) RestoreBackupSource() DataGoogleAlloydbClusterRestoreBackupSourceList {
 	var returns DataGoogleAlloydbClusterRestoreBackupSourceList
 	_jsii_.Get(
@@ -674,7 +729,7 @@ func (j *jsiiProxy_DataGoogleAlloydbCluster) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_alloydb_cluster google_alloydb_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/data-sources/google_alloydb_cluster google_alloydb_cluster} Data Source.
 func NewDataGoogleAlloydbCluster(scope constructs.Construct, id *string, config *DataGoogleAlloydbClusterConfig) DataGoogleAlloydbCluster {
 	_init_.Initialize()
 
@@ -692,7 +747,7 @@ func NewDataGoogleAlloydbCluster(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_alloydb_cluster google_alloydb_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/data-sources/google_alloydb_cluster google_alloydb_cluster} Data Source.
 func NewDataGoogleAlloydbCluster_Override(d DataGoogleAlloydbCluster, scope constructs.Construct, id *string, config *DataGoogleAlloydbClusterConfig) {
 	_init_.Initialize()
 

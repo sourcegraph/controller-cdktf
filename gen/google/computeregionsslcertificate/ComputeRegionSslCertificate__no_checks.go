@@ -128,6 +128,14 @@ func (j *jsiiProxy_ComputeRegionSslCertificate) validateSetPrivateKeyParameters(
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRegionSslCertificate) validateSetPrivateKeyWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeRegionSslCertificate) validateSetPrivateKeyWoVersionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRegionSslCertificate) validateSetProjectParameters(val *string) error {
 	return nil
 }

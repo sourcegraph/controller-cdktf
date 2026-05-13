@@ -48,6 +48,14 @@ func (d *jsiiProxy_DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeG
 	return nil
 }
 
+func (j *jsiiProxy_DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigDiskConfigOutputReference) validateSetBootDiskProvisionedIopsParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigDiskConfigOutputReference) validateSetBootDiskProvisionedThroughputParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigDiskConfigOutputReference) validateSetBootDiskSizeGbParameters(val *float64) error {
 	return nil
 }

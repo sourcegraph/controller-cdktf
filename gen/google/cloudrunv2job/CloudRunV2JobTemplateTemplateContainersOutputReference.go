@@ -31,6 +31,9 @@ type CloudRunV2JobTemplateTemplateContainersOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DependsOn() *[]*string
+	SetDependsOn(val *[]*string)
+	DependsOnInput() *[]*string
 	Env() CloudRunV2JobTemplateTemplateContainersEnvList
 	EnvInput() interface{}
 	// Experimental.
@@ -47,6 +50,8 @@ type CloudRunV2JobTemplateTemplateContainersOutputReference interface {
 	PortsInput() interface{}
 	Resources() CloudRunV2JobTemplateTemplateContainersResourcesOutputReference
 	ResourcesInput() *CloudRunV2JobTemplateTemplateContainersResources
+	StartupProbe() CloudRunV2JobTemplateTemplateContainersStartupProbeOutputReference
+	StartupProbeInput() *CloudRunV2JobTemplateTemplateContainersStartupProbe
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -87,13 +92,16 @@ type CloudRunV2JobTemplateTemplateContainersOutputReference interface {
 	PutEnv(value interface{})
 	PutPorts(value interface{})
 	PutResources(value *CloudRunV2JobTemplateTemplateContainersResources)
+	PutStartupProbe(value *CloudRunV2JobTemplateTemplateContainersStartupProbe)
 	PutVolumeMounts(value interface{})
 	ResetArgs()
 	ResetCommand()
+	ResetDependsOn()
 	ResetEnv()
 	ResetName()
 	ResetPorts()
 	ResetResources()
+	ResetStartupProbe()
 	ResetVolumeMounts()
 	ResetWorkingDir()
 	// Produce the Token's value at resolution time.
@@ -176,6 +184,26 @@ func (j *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference) Creat
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference) DependsOnInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOnInput",
 		&returns,
 	)
 	return returns
@@ -296,6 +324,26 @@ func (j *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference) Resou
 	_jsii_.Get(
 		j,
 		"resourcesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference) StartupProbe() CloudRunV2JobTemplateTemplateContainersStartupProbeOutputReference {
+	var returns CloudRunV2JobTemplateTemplateContainersStartupProbeOutputReference
+	_jsii_.Get(
+		j,
+		"startupProbe",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference) StartupProbeInput() *CloudRunV2JobTemplateTemplateContainersStartupProbe {
+	var returns *CloudRunV2JobTemplateTemplateContainersStartupProbe
+	_jsii_.Get(
+		j,
+		"startupProbeInput",
 		&returns,
 	)
 	return returns
@@ -429,6 +477,17 @@ func (j *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference)SetCom
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference)SetDependsOn(val *[]*string) {
+	if err := j.validateSetDependsOnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dependsOn",
 		val,
 	)
 }
@@ -718,6 +777,17 @@ func (c *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference) PutRe
 	)
 }
 
+func (c *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference) PutStartupProbe(value *CloudRunV2JobTemplateTemplateContainersStartupProbe) {
+	if err := c.validatePutStartupProbeParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putStartupProbe",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference) PutVolumeMounts(value interface{}) {
 	if err := c.validatePutVolumeMountsParameters(value); err != nil {
 		panic(err)
@@ -741,6 +811,14 @@ func (c *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference) Reset
 	_jsii_.InvokeVoid(
 		c,
 		"resetCommand",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference) ResetDependsOn() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDependsOn",
 		nil, // no parameters
 	)
 }
@@ -773,6 +851,14 @@ func (c *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference) Reset
 	_jsii_.InvokeVoid(
 		c,
 		"resetResources",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference) ResetStartupProbe() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetStartupProbe",
 		nil, // no parameters
 	)
 }

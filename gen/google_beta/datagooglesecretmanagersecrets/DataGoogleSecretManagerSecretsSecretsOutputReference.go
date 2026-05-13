@@ -27,6 +27,7 @@ type DataGoogleSecretManagerSecretsSecretsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DeletionProtection() cdktf.IResolvable
 	EffectiveAnnotations() cdktf.StringMap
 	EffectiveLabels() cdktf.StringMap
 	ExpireTime() *string
@@ -40,6 +41,7 @@ type DataGoogleSecretManagerSecretsSecretsOutputReference interface {
 	Replication() DataGoogleSecretManagerSecretsSecretsReplicationList
 	Rotation() DataGoogleSecretManagerSecretsSecretsRotationList
 	SecretId() *string
+	Tags() cdktf.StringMap
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -137,6 +139,16 @@ func (j *jsiiProxy_DataGoogleSecretManagerSecretsSecretsOutputReference) Creatio
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSecretManagerSecretsSecretsOutputReference) DeletionProtection() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"deletionProtection",
 		&returns,
 	)
 	return returns
@@ -247,6 +259,16 @@ func (j *jsiiProxy_DataGoogleSecretManagerSecretsSecretsOutputReference) SecretI
 	_jsii_.Get(
 		j,
 		"secretId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSecretManagerSecretsSecretsOutputReference) Tags() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"tags",
 		&returns,
 	)
 	return returns

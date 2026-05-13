@@ -148,7 +148,15 @@ func (j *jsiiProxy_RedisCluster) validateSetKmsKeyParameters(val *string) error 
 	return nil
 }
 
+func (j *jsiiProxy_RedisCluster) validateSetLabelsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedisCluster) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_RedisCluster) validateSetMaintenanceVersionParameters(val *string) error {
 	return nil
 }
 
@@ -177,6 +185,14 @@ func (j *jsiiProxy_RedisCluster) validateSetRegionParameters(val *string) error 
 }
 
 func (j *jsiiProxy_RedisCluster) validateSetReplicaCountParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_RedisCluster) validateSetServerCaModeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_RedisCluster) validateSetServerCaPoolParameters(val *string) error {
 	return nil
 }
 

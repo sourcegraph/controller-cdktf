@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlediscoveryenginedatastore/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_discovery_engine_data_store google_discovery_engine_data_store}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_discovery_engine_data_store google_discovery_engine_data_store}.
 type GoogleDiscoveryEngineDataStore interface {
 	cdktf.TerraformResource
 	AdvancedSiteSearchConfig() GoogleDiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReference
@@ -60,6 +60,9 @@ type GoogleDiscoveryEngineDataStore interface {
 	IndustryVertical() *string
 	SetIndustryVertical(val *string)
 	IndustryVerticalInput() *string
+	KmsKeyName() *string
+	SetKmsKeyName(val *string)
+	KmsKeyNameInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -144,9 +147,11 @@ type GoogleDiscoveryEngineDataStore interface {
 	PutDocumentProcessingConfig(value *GoogleDiscoveryEngineDataStoreDocumentProcessingConfig)
 	PutTimeouts(value *GoogleDiscoveryEngineDataStoreTimeouts)
 	ResetAdvancedSiteSearchConfig()
+	ResetContentConfig()
 	ResetCreateAdvancedSiteSearch()
 	ResetDocumentProcessingConfig()
 	ResetId()
+	ResetKmsKeyName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -432,6 +437,26 @@ func (j *jsiiProxy_GoogleDiscoveryEngineDataStore) IndustryVerticalInput() *stri
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDiscoveryEngineDataStore) KmsKeyName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKeyName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDiscoveryEngineDataStore) KmsKeyNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKeyNameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleDiscoveryEngineDataStore) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -623,7 +648,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineDataStore) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_discovery_engine_data_store google_discovery_engine_data_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_discovery_engine_data_store google_discovery_engine_data_store} Resource.
 func NewGoogleDiscoveryEngineDataStore(scope constructs.Construct, id *string, config *GoogleDiscoveryEngineDataStoreConfig) GoogleDiscoveryEngineDataStore {
 	_init_.Initialize()
 
@@ -641,7 +666,7 @@ func NewGoogleDiscoveryEngineDataStore(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_discovery_engine_data_store google_discovery_engine_data_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_discovery_engine_data_store google_discovery_engine_data_store} Resource.
 func NewGoogleDiscoveryEngineDataStore_Override(g GoogleDiscoveryEngineDataStore, scope constructs.Construct, id *string, config *GoogleDiscoveryEngineDataStoreConfig) {
 	_init_.Initialize()
 
@@ -752,6 +777,17 @@ func (j *jsiiProxy_GoogleDiscoveryEngineDataStore)SetIndustryVertical(val *strin
 	_jsii_.Set(
 		j,
 		"industryVertical",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDiscoveryEngineDataStore)SetKmsKeyName(val *string) {
+	if err := j.validateSetKmsKeyNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kmsKeyName",
 		val,
 	)
 }
@@ -1224,6 +1260,14 @@ func (g *jsiiProxy_GoogleDiscoveryEngineDataStore) ResetAdvancedSiteSearchConfig
 	)
 }
 
+func (g *jsiiProxy_GoogleDiscoveryEngineDataStore) ResetContentConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetContentConfig",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleDiscoveryEngineDataStore) ResetCreateAdvancedSiteSearch() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1244,6 +1288,14 @@ func (g *jsiiProxy_GoogleDiscoveryEngineDataStore) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDiscoveryEngineDataStore) ResetKmsKeyName() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetKmsKeyName",
 		nil, // no parameters
 	)
 }

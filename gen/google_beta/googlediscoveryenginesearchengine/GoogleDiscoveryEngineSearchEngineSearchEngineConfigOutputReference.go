@@ -29,6 +29,9 @@ type GoogleDiscoveryEngineSearchEngineSearchEngineConfigOutputReference interfac
 	Fqn() *string
 	InternalValue() *GoogleDiscoveryEngineSearchEngineSearchEngineConfig
 	SetInternalValue(val *GoogleDiscoveryEngineSearchEngineSearchEngineConfig)
+	RequiredSubscriptionTier() *string
+	SetRequiredSubscriptionTier(val *string)
+	RequiredSubscriptionTierInput() *string
 	SearchAddOns() *[]*string
 	SetSearchAddOns(val *[]*string)
 	SearchAddOnsInput() *[]*string
@@ -67,6 +70,7 @@ type GoogleDiscoveryEngineSearchEngineSearchEngineConfigOutputReference interfac
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetRequiredSubscriptionTier()
 	ResetSearchAddOns()
 	ResetSearchTier()
 	// Produce the Token's value at resolution time.
@@ -129,6 +133,26 @@ func (j *jsiiProxy_GoogleDiscoveryEngineSearchEngineSearchEngineConfigOutputRefe
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDiscoveryEngineSearchEngineSearchEngineConfigOutputReference) RequiredSubscriptionTier() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"requiredSubscriptionTier",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDiscoveryEngineSearchEngineSearchEngineConfigOutputReference) RequiredSubscriptionTierInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"requiredSubscriptionTierInput",
 		&returns,
 	)
 	return returns
@@ -251,6 +275,17 @@ func (j *jsiiProxy_GoogleDiscoveryEngineSearchEngineSearchEngineConfigOutputRefe
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDiscoveryEngineSearchEngineSearchEngineConfigOutputReference)SetRequiredSubscriptionTier(val *string) {
+	if err := j.validateSetRequiredSubscriptionTierParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"requiredSubscriptionTier",
 		val,
 	)
 }
@@ -483,6 +518,14 @@ func (g *jsiiProxy_GoogleDiscoveryEngineSearchEngineSearchEngineConfigOutputRefe
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleDiscoveryEngineSearchEngineSearchEngineConfigOutputReference) ResetRequiredSubscriptionTier() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRequiredSubscriptionTier",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleDiscoveryEngineSearchEngineSearchEngineConfigOutputReference) ResetSearchAddOns() {

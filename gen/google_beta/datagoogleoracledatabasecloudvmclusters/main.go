@@ -89,6 +89,7 @@ func init() {
 		"@cdktf/provider-google-beta.dataGoogleOracleDatabaseCloudVmClusters.DataGoogleOracleDatabaseCloudVmClustersCloudVmClustersOutputReference",
 		reflect.TypeOf((*DataGoogleOracleDatabaseCloudVmClustersCloudVmClustersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "backupOdbSubnet", GoGetter: "BackupOdbSubnet"},
 			_jsii_.MemberProperty{JsiiProperty: "backupSubnetCidr", GoGetter: "BackupSubnetCidr"},
 			_jsii_.MemberProperty{JsiiProperty: "cidr", GoGetter: "Cidr"},
 			_jsii_.MemberProperty{JsiiProperty: "cloudVmClusterId", GoGetter: "CloudVmClusterId"},
@@ -119,6 +120,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "network", GoGetter: "Network"},
+			_jsii_.MemberProperty{JsiiProperty: "odbNetwork", GoGetter: "OdbNetwork"},
+			_jsii_.MemberProperty{JsiiProperty: "odbSubnet", GoGetter: "OdbSubnet"},
 			_jsii_.MemberProperty{JsiiProperty: "project", GoGetter: "Project"},
 			_jsii_.MemberProperty{JsiiProperty: "properties", GoGetter: "Properties"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
@@ -333,6 +336,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleOracleDatabaseCloudVmClustersCloudVmClustersPropertiesTimeZoneOutputReference{}

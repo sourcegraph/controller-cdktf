@@ -44,10 +44,6 @@ func (g *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFileCertsInfoOutputReferen
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFileCertsInfoOutputReference) validatePutCertInfoParameters(value interface{}) error {
-	return nil
-}
-
 func (g *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFileCertsInfoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -72,7 +68,7 @@ func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFileCertsInfoOutputReferen
 	return nil
 }
 
-func validateNewGoogleApigeeKeystoresAliasesKeyCertFileCertsInfoOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleApigeeKeystoresAliasesKeyCertFileCertsInfoOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

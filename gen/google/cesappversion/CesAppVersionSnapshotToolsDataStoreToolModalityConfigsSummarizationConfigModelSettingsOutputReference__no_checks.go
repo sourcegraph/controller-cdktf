@@ -1,0 +1,74 @@
+//go:build no_runtime_type_checking
+
+package cesappversion
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (c *jsiiProxy_CesAppVersionSnapshotToolsDataStoreToolModalityConfigsSummarizationConfigModelSettingsOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CesAppVersionSnapshotToolsDataStoreToolModalityConfigsSummarizationConfigModelSettingsOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CesAppVersionSnapshotToolsDataStoreToolModalityConfigsSummarizationConfigModelSettingsOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CesAppVersionSnapshotToolsDataStoreToolModalityConfigsSummarizationConfigModelSettingsOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CesAppVersionSnapshotToolsDataStoreToolModalityConfigsSummarizationConfigModelSettingsOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CesAppVersionSnapshotToolsDataStoreToolModalityConfigsSummarizationConfigModelSettingsOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CesAppVersionSnapshotToolsDataStoreToolModalityConfigsSummarizationConfigModelSettingsOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CesAppVersionSnapshotToolsDataStoreToolModalityConfigsSummarizationConfigModelSettingsOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CesAppVersionSnapshotToolsDataStoreToolModalityConfigsSummarizationConfigModelSettingsOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CesAppVersionSnapshotToolsDataStoreToolModalityConfigsSummarizationConfigModelSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CesAppVersionSnapshotToolsDataStoreToolModalityConfigsSummarizationConfigModelSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_CesAppVersionSnapshotToolsDataStoreToolModalityConfigsSummarizationConfigModelSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_CesAppVersionSnapshotToolsDataStoreToolModalityConfigsSummarizationConfigModelSettingsOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_CesAppVersionSnapshotToolsDataStoreToolModalityConfigsSummarizationConfigModelSettingsOutputReference) validateSetInternalValueParameters(val *CesAppVersionSnapshotToolsDataStoreToolModalityConfigsSummarizationConfigModelSettings) error {
+	return nil
+}
+
+func (j *jsiiProxy_CesAppVersionSnapshotToolsDataStoreToolModalityConfigsSummarizationConfigModelSettingsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_CesAppVersionSnapshotToolsDataStoreToolModalityConfigsSummarizationConfigModelSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func validateNewCesAppVersionSnapshotToolsDataStoreToolModalityConfigsSummarizationConfigModelSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+	return nil
+}
+

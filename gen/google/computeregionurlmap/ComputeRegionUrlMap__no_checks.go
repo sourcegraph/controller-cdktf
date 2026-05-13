@@ -80,6 +80,10 @@ func (c *jsiiProxy_ComputeRegionUrlMap) validatePutDefaultUrlRedirectParameters(
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRegionUrlMap) validatePutHeaderActionParameters(value *ComputeRegionUrlMapHeaderAction) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionUrlMap) validatePutHostRuleParameters(value interface{}) error {
 	return nil
 }

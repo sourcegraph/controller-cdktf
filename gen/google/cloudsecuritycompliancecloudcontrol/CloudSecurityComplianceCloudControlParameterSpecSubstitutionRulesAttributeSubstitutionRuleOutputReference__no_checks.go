@@ -1,0 +1,78 @@
+//go:build no_runtime_type_checking
+
+package cloudsecuritycompliancecloudcontrol
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (c *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesAttributeSubstitutionRuleOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesAttributeSubstitutionRuleOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesAttributeSubstitutionRuleOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesAttributeSubstitutionRuleOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesAttributeSubstitutionRuleOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesAttributeSubstitutionRuleOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesAttributeSubstitutionRuleOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesAttributeSubstitutionRuleOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesAttributeSubstitutionRuleOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesAttributeSubstitutionRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesAttributeSubstitutionRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesAttributeSubstitutionRuleOutputReference) validateSetAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesAttributeSubstitutionRuleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesAttributeSubstitutionRuleOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesAttributeSubstitutionRuleOutputReference) validateSetInternalValueParameters(val *CloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesAttributeSubstitutionRule) error {
+	return nil
+}
+
+func (j *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesAttributeSubstitutionRuleOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesAttributeSubstitutionRuleOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func validateNewCloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesAttributeSubstitutionRuleOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+	return nil
+}
+

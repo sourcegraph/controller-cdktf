@@ -1,0 +1,6 @@
+package bigqueryanalyticshublistingsubscription
+
+
+type BigqueryAnalyticsHubListingSubscriptionCommercialInfoCloudMarketplace struct {
+}
+

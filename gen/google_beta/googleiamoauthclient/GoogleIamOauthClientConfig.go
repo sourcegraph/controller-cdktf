@@ -21,11 +21,11 @@ type GoogleIamOauthClientConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Required. The list of OAuth grant types is allowed for the OauthClient.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_iam_oauth_client#allowed_grant_types GoogleIamOauthClient#allowed_grant_types}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_iam_oauth_client#allowed_grant_types GoogleIamOauthClient#allowed_grant_types}
 	AllowedGrantTypes *[]*string `field:"required" json:"allowedGrantTypes" yaml:"allowedGrantTypes"`
 	// Required. The list of redirect uris that is allowed to redirect back when authorization process is completed.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_iam_oauth_client#allowed_redirect_uris GoogleIamOauthClient#allowed_redirect_uris}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_iam_oauth_client#allowed_redirect_uris GoogleIamOauthClient#allowed_redirect_uris}
 	AllowedRedirectUris *[]*string `field:"required" json:"allowedRedirectUris" yaml:"allowedRedirectUris"`
 	// Required. The list of scopes that the OauthClient is allowed to request during OAuth flows.
 	//
@@ -39,11 +39,11 @@ type GoogleIamOauthClientConfig struct {
 	// * 'email': The OAuth client can read a federated identity's email address.
 	// * 'groups': The OAuth client can read a federated identity's groups.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_iam_oauth_client#allowed_scopes GoogleIamOauthClient#allowed_scopes}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_iam_oauth_client#allowed_scopes GoogleIamOauthClient#allowed_scopes}
 	AllowedScopes *[]*string `field:"required" json:"allowedScopes" yaml:"allowedScopes"`
 	// Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_iam_oauth_client#location GoogleIamOauthClient#location}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_iam_oauth_client#location GoogleIamOauthClient#location}
 	Location *string `field:"required" json:"location" yaml:"location"`
 	// Required.
 	//
@@ -53,7 +53,7 @@ type GoogleIamOauthClientConfig struct {
 	// trailing hyphen. The prefix 'gcp-' is reserved for use by Google, and may
 	// not be specified.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_iam_oauth_client#oauth_client_id GoogleIamOauthClient#oauth_client_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_iam_oauth_client#oauth_client_id GoogleIamOauthClient#oauth_client_id}
 	OauthClientId *string `field:"required" json:"oauthClientId" yaml:"oauthClientId"`
 	// Immutable.
 	//
@@ -65,34 +65,34 @@ type GoogleIamOauthClientConfig struct {
 	// PUBLIC_CLIENT
 	// CONFIDENTIAL_CLIENT
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_iam_oauth_client#client_type GoogleIamOauthClient#client_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_iam_oauth_client#client_type GoogleIamOauthClient#client_type}
 	ClientType *string `field:"optional" json:"clientType" yaml:"clientType"`
 	// A user-specified description of the OauthClient.
 	//
 	// Cannot exceed 256 characters.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_iam_oauth_client#description GoogleIamOauthClient#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_iam_oauth_client#description GoogleIamOauthClient#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// Whether the OauthClient is disabled. You cannot use a disabled OAuth client.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_iam_oauth_client#disabled GoogleIamOauthClient#disabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_iam_oauth_client#disabled GoogleIamOauthClient#disabled}
 	Disabled interface{} `field:"optional" json:"disabled" yaml:"disabled"`
 	// A user-specified display name of the OauthClient.
 	//
 	// Cannot exceed 32 characters.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_iam_oauth_client#display_name GoogleIamOauthClient#display_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_iam_oauth_client#display_name GoogleIamOauthClient#display_name}
 	DisplayName *string `field:"optional" json:"displayName" yaml:"displayName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_iam_oauth_client#id GoogleIamOauthClient#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_iam_oauth_client#id GoogleIamOauthClient#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_iam_oauth_client#project GoogleIamOauthClient#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_iam_oauth_client#project GoogleIamOauthClient#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_iam_oauth_client#timeouts GoogleIamOauthClient#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_iam_oauth_client#timeouts GoogleIamOauthClient#timeouts}
 	Timeouts *GoogleIamOauthClientTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

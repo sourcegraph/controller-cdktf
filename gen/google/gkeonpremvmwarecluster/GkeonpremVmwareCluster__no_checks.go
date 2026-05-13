@@ -192,6 +192,10 @@ func (j *jsiiProxy_GkeonpremVmwareCluster) validateSetProvisionersParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_GkeonpremVmwareCluster) validateSetSkipValidationsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GkeonpremVmwareCluster) validateSetVmTrackingEnabledParameters(val interface{}) error {
 	return nil
 }

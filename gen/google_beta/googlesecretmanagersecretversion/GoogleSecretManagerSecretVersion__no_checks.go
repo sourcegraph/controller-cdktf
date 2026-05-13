@@ -120,6 +120,10 @@ func (j *jsiiProxy_GoogleSecretManagerSecretVersion) validateSetLifecycleParamet
 	return nil
 }
 
+func (j *jsiiProxy_GoogleSecretManagerSecretVersion) validateSetProjectParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSecretManagerSecretVersion) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }
