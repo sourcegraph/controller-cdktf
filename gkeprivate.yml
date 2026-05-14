@@ -2,7 +2,7 @@ name: gkeprivate
 
 module:
   source: terraform-google-modules/kubernetes-engine/google//modules/beta-private-cluster
-  version: 36.3.0
+  version: 44.1.0
 
 target:
   language: go

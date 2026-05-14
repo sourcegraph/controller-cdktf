@@ -106,14 +106,6 @@ func (j *jsiiProxy_Gkeprivate) validateSetIpRangePodsParameters(val *string) err
 	return nil
 }
 
-func (j *jsiiProxy_Gkeprivate) validateSetIpRangeServicesParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_Gkeprivate) validateSetNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -139,6 +131,14 @@ func (j *jsiiProxy_Gkeprivate) validateSetProjectIdParameters(val *string) error
 }
 
 func (j *jsiiProxy_Gkeprivate) validateSetRayOperatorConfigParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_Gkeprivate) validateSetRbacBindingConfigParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
