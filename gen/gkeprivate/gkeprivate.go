@@ -11,19 +11,23 @@ import (
 
 // Defines an Gkeprivate based on a Terraform module.
 //
-// Docs at Terraform Registry: {@link https://registry.terraform.io/modules/terraform-google-modules/kubernetes-engine/google/36.3.0/submodules/beta-private-cluster terraform-google-modules/kubernetes-engine/google//modules/beta-private-cluster}
+// Docs at Terraform Registry: {@link https://registry.terraform.io/modules/terraform-google-modules/kubernetes-engine/google/44.1.0/submodules/beta-private-cluster terraform-google-modules/kubernetes-engine/google//modules/beta-private-cluster}
 type Gkeprivate interface {
 	cdktf.TerraformModule
 	AddClusterFirewallRules() *bool
 	SetAddClusterFirewallRules(val *bool)
 	AdditionalIpRangePods() *[]*string
 	SetAdditionalIpRangePods(val *[]*string)
+	AdditionalIpRangesConfig() *[]interface{}
+	SetAdditionalIpRangesConfig(val *[]interface{})
 	AdditiveVpcScopeDnsDomain() *string
 	SetAdditiveVpcScopeDnsDomain(val *string)
 	AddMasterWebhookFirewallRules() *bool
 	SetAddMasterWebhookFirewallRules(val *bool)
 	AddShadowFirewallRules() *bool
 	SetAddShadowFirewallRules(val *bool)
+	AnonymousAuthenticationConfigMode() *string
+	SetAnonymousAuthenticationConfigMode(val *string)
 	AuthenticatorSecurityGroup() *string
 	SetAuthenticatorSecurityGroup(val *string)
 	BootDiskKmsKey() *string
@@ -77,6 +81,8 @@ type Gkeprivate interface {
 	SetDescription(val *string)
 	DisableDefaultSnat() *bool
 	SetDisableDefaultSnat(val *bool)
+	DisableL4LbFirewallReconciliation() *bool
+	SetDisableL4LbFirewallReconciliation(val *bool)
 	DisableLegacyMetadataEndpoints() *bool
 	SetDisableLegacyMetadataEndpoints(val *bool)
 	DnsAllowExternalTraffic() *bool
@@ -102,12 +108,18 @@ type Gkeprivate interface {
 	SetEnableIdentityService(val *bool)
 	EnableIntranodeVisibility() *bool
 	SetEnableIntranodeVisibility(val *bool)
+	EnableK8SBetaApis() *[]*string
+	SetEnableK8SBetaApis(val *[]*string)
 	EnableKubernetesAlpha() *bool
 	SetEnableKubernetesAlpha(val *bool)
 	EnableL4IlbSubsetting() *bool
 	SetEnableL4IlbSubsetting(val *bool)
+	EnableLegacyLustrePort() *bool
+	SetEnableLegacyLustrePort(val *bool)
 	EnableMeshCertificates() *bool
 	SetEnableMeshCertificates(val *bool)
+	EnableMultiNetworking() *bool
+	SetEnableMultiNetworking(val *bool)
 	EnableNetworkEgressExport() *bool
 	SetEnableNetworkEgressExport(val *bool)
 	EnablePodSecurityPolicy() *bool
@@ -158,6 +170,8 @@ type Gkeprivate interface {
 	SetGcpPublicCidrsAccessEnabled(val *bool)
 	GcsFuseCsiDriver() *bool
 	SetGcsFuseCsiDriver(val *bool)
+	GkeAutoUpgradeConfigPatchMode() *string
+	SetGkeAutoUpgradeConfigPatchMode(val *string)
 	GkeBackupAgentConfig() *bool
 	SetGkeBackupAgentConfig(val *bool)
 	GrantRegistryAccess() *bool
@@ -165,6 +179,8 @@ type Gkeprivate interface {
 	HorizontalPodAutoscaling() *bool
 	SetHorizontalPodAutoscaling(val *bool)
 	HorizontalPodAutoscalingEnabledOutput() *string
+	HpaProfile() *string
+	SetHpaProfile(val *string)
 	HttpLoadBalancing() *bool
 	SetHttpLoadBalancing(val *bool)
 	HttpLoadBalancingEnabledOutput() *string
@@ -178,6 +194,10 @@ type Gkeprivate interface {
 	SetInsecureKubeletReadonlyPortEnabled(val *bool)
 	InstanceGroupUrlsOutput() *string
 	IntranodeVisibilityEnabledOutput() *string
+	InTransitEncryptionConfig() *string
+	SetInTransitEncryptionConfig(val *string)
+	IpEndpointsEnabled() *bool
+	SetIpEndpointsEnabled(val *bool)
 	IpMasqLinkLocal() *bool
 	SetIpMasqLinkLocal(val *bool)
 	IpMasqResyncInterval() *string
@@ -188,13 +208,6 @@ type Gkeprivate interface {
 	SetIpRangeServices(val *string)
 	IssueClientCertificate() *bool
 	SetIssueClientCertificate(val *bool)
-	Istio() *bool
-	SetIstio(val *bool)
-	IstioAuth() *string
-	SetIstioAuth(val *string)
-	IstioEnabledOutput() *string
-	KalmConfig() *bool
-	SetKalmConfig(val *bool)
 	KubernetesVersion() *string
 	SetKubernetesVersion(val *string)
 	LocationOutput() *string
@@ -205,6 +218,8 @@ type Gkeprivate interface {
 	LoggingServiceOutput() *string
 	LoggingVariant() *string
 	SetLoggingVariant(val *string)
+	LustreCsiDriver() *bool
+	SetLustreCsiDriver(val *bool)
 	MaintenanceEndTime() *string
 	SetMaintenanceEndTime(val *string)
 	MaintenanceExclusions() *[]interface{}
@@ -224,6 +239,8 @@ type Gkeprivate interface {
 	MasterVersionOutput() *string
 	MeshCertificatesConfigOutput() *string
 	MinMasterVersionOutput() *string
+	MonitoringAutoMonitoringConfigScope() *string
+	SetMonitoringAutoMonitoringConfigScope(val *string)
 	MonitoringEnabledComponents() *[]*string
 	SetMonitoringEnabledComponents(val *[]*string)
 	MonitoringEnableManagedPrometheus() *bool
@@ -251,6 +268,8 @@ type Gkeprivate interface {
 	SetNetworkProjectId(val *string)
 	NetworkTags() *[]*string
 	SetNetworkTags(val *[]*string)
+	NetworkTierConfig() *string
+	SetNetworkTierConfig(val *string)
 	// The tree node.
 	Node() constructs.Node
 	NodeMetadata() *string
@@ -259,6 +278,10 @@ type Gkeprivate interface {
 	SetNodePools(val *[]*map[string]interface{})
 	NodePoolsCgroupMode() *map[string]*string
 	SetNodePoolsCgroupMode(val *map[string]*string)
+	NodePoolsHugepageSize1G() *map[string]*string
+	SetNodePoolsHugepageSize1G(val *map[string]*string)
+	NodePoolsHugepageSize2M() *map[string]*string
+	SetNodePoolsHugepageSize2M(val *map[string]*string)
 	NodePoolsLabels() *map[string]*map[string]*string
 	SetNodePoolsLabels(val *map[string]*map[string]*string)
 	NodePoolsLinuxNodeConfigsSysctls() *map[string]*map[string]*string
@@ -276,6 +299,10 @@ type Gkeprivate interface {
 	SetNodePoolsTags(val *map[string]*[]*string)
 	NodePoolsTaints() *map[string]*[]interface{}
 	SetNodePoolsTaints(val *map[string]*[]interface{})
+	NodePoolsTransparentHugepageDefrag() *map[string]*string
+	SetNodePoolsTransparentHugepageDefrag(val *map[string]*string)
+	NodePoolsTransparentHugepageEnabled() *map[string]*string
+	SetNodePoolsTransparentHugepageEnabled(val *map[string]*string)
 	NodePoolsVersionsOutput() *string
 	NonMasqueradeCidrs() *[]*string
 	SetNonMasqueradeCidrs(val *[]*string)
@@ -297,6 +324,8 @@ type Gkeprivate interface {
 	RawOverrides() interface{}
 	RayOperatorConfig() interface{}
 	SetRayOperatorConfig(val interface{})
+	RbacBindingConfig() interface{}
+	SetRbacBindingConfig(val interface{})
 	Region() *string
 	SetRegion(val *string)
 	Regional() *bool
@@ -309,6 +338,8 @@ type Gkeprivate interface {
 	ReleaseChannelOutput() *string
 	RemoveDefaultNodePool() *bool
 	SetRemoveDefaultNodePool(val *bool)
+	ResourceManagerTags() *map[string]*string
+	SetResourceManagerTags(val *map[string]*string)
 	ResourceUsageExportDatasetId() *string
 	SetResourceUsageExportDatasetId(val *string)
 	SandboxEnabled() *bool
@@ -343,6 +374,8 @@ type Gkeprivate interface {
 	SetSubnetwork(val *string)
 	Timeouts() *map[string]*string
 	SetTimeouts(val *map[string]*string)
+	TotalEgressBandwidthTier() *string
+	SetTotalEgressBandwidthTier(val *string)
 	TpuIpv4CidrBlockOutput() *string
 	TypeOutput() *string
 	UpstreamNameservers() *[]*string
@@ -410,6 +443,16 @@ func (j *jsiiProxy_Gkeprivate) AdditionalIpRangePods() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_Gkeprivate) AdditionalIpRangesConfig() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"additionalIpRangesConfig",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Gkeprivate) AdditiveVpcScopeDnsDomain() *string {
 	var returns *string
 	_jsii_.Get(
@@ -435,6 +478,16 @@ func (j *jsiiProxy_Gkeprivate) AddShadowFirewallRules() *bool {
 	_jsii_.Get(
 		j,
 		"addShadowFirewallRules",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Gkeprivate) AnonymousAuthenticationConfigMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"anonymousAuthenticationConfigMode",
 		&returns,
 	)
 	return returns
@@ -710,6 +763,16 @@ func (j *jsiiProxy_Gkeprivate) DisableDefaultSnat() *bool {
 	return returns
 }
 
+func (j *jsiiProxy_Gkeprivate) DisableL4LbFirewallReconciliation() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"disableL4LbFirewallReconciliation",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Gkeprivate) DisableLegacyMetadataEndpoints() *bool {
 	var returns *bool
 	_jsii_.Get(
@@ -840,6 +903,16 @@ func (j *jsiiProxy_Gkeprivate) EnableIntranodeVisibility() *bool {
 	return returns
 }
 
+func (j *jsiiProxy_Gkeprivate) EnableK8SBetaApis() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"enableK8SBetaApis",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Gkeprivate) EnableKubernetesAlpha() *bool {
 	var returns *bool
 	_jsii_.Get(
@@ -860,11 +933,31 @@ func (j *jsiiProxy_Gkeprivate) EnableL4IlbSubsetting() *bool {
 	return returns
 }
 
+func (j *jsiiProxy_Gkeprivate) EnableLegacyLustrePort() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"enableLegacyLustrePort",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Gkeprivate) EnableMeshCertificates() *bool {
 	var returns *bool
 	_jsii_.Get(
 		j,
 		"enableMeshCertificates",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Gkeprivate) EnableMultiNetworking() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"enableMultiNetworking",
 		&returns,
 	)
 	return returns
@@ -1130,6 +1223,16 @@ func (j *jsiiProxy_Gkeprivate) GcsFuseCsiDriver() *bool {
 	return returns
 }
 
+func (j *jsiiProxy_Gkeprivate) GkeAutoUpgradeConfigPatchMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gkeAutoUpgradeConfigPatchMode",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Gkeprivate) GkeBackupAgentConfig() *bool {
 	var returns *bool
 	_jsii_.Get(
@@ -1165,6 +1268,16 @@ func (j *jsiiProxy_Gkeprivate) HorizontalPodAutoscalingEnabledOutput() *string {
 	_jsii_.Get(
 		j,
 		"horizontalPodAutoscalingEnabledOutput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Gkeprivate) HpaProfile() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hpaProfile",
 		&returns,
 	)
 	return returns
@@ -1260,6 +1373,26 @@ func (j *jsiiProxy_Gkeprivate) IntranodeVisibilityEnabledOutput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Gkeprivate) InTransitEncryptionConfig() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"inTransitEncryptionConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Gkeprivate) IpEndpointsEnabled() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"ipEndpointsEnabled",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Gkeprivate) IpMasqLinkLocal() *bool {
 	var returns *bool
 	_jsii_.Get(
@@ -1305,46 +1438,6 @@ func (j *jsiiProxy_Gkeprivate) IssueClientCertificate() *bool {
 	_jsii_.Get(
 		j,
 		"issueClientCertificate",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Gkeprivate) Istio() *bool {
-	var returns *bool
-	_jsii_.Get(
-		j,
-		"istio",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Gkeprivate) IstioAuth() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"istioAuth",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Gkeprivate) IstioEnabledOutput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"istioEnabledOutput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Gkeprivate) KalmConfig() *bool {
-	var returns *bool
-	_jsii_.Get(
-		j,
-		"kalmConfig",
 		&returns,
 	)
 	return returns
@@ -1405,6 +1498,16 @@ func (j *jsiiProxy_Gkeprivate) LoggingVariant() *string {
 	_jsii_.Get(
 		j,
 		"loggingVariant",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Gkeprivate) LustreCsiDriver() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"lustreCsiDriver",
 		&returns,
 	)
 	return returns
@@ -1525,6 +1628,16 @@ func (j *jsiiProxy_Gkeprivate) MinMasterVersionOutput() *string {
 	_jsii_.Get(
 		j,
 		"minMasterVersionOutput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Gkeprivate) MonitoringAutoMonitoringConfigScope() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"monitoringAutoMonitoringConfigScope",
 		&returns,
 	)
 	return returns
@@ -1680,6 +1793,16 @@ func (j *jsiiProxy_Gkeprivate) NetworkTags() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_Gkeprivate) NetworkTierConfig() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkTierConfig",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Gkeprivate) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -1715,6 +1838,26 @@ func (j *jsiiProxy_Gkeprivate) NodePoolsCgroupMode() *map[string]*string {
 	_jsii_.Get(
 		j,
 		"nodePoolsCgroupMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Gkeprivate) NodePoolsHugepageSize1G() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"nodePoolsHugepageSize1G",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Gkeprivate) NodePoolsHugepageSize2M() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"nodePoolsHugepageSize2M",
 		&returns,
 	)
 	return returns
@@ -1805,6 +1948,26 @@ func (j *jsiiProxy_Gkeprivate) NodePoolsTaints() *map[string]*[]interface{} {
 	_jsii_.Get(
 		j,
 		"nodePoolsTaints",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Gkeprivate) NodePoolsTransparentHugepageDefrag() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"nodePoolsTransparentHugepageDefrag",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Gkeprivate) NodePoolsTransparentHugepageEnabled() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"nodePoolsTransparentHugepageEnabled",
 		&returns,
 	)
 	return returns
@@ -1930,6 +2093,16 @@ func (j *jsiiProxy_Gkeprivate) RayOperatorConfig() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Gkeprivate) RbacBindingConfig() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rbacBindingConfig",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Gkeprivate) Region() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1995,6 +2168,16 @@ func (j *jsiiProxy_Gkeprivate) RemoveDefaultNodePool() *bool {
 	_jsii_.Get(
 		j,
 		"removeDefaultNodePool",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Gkeprivate) ResourceManagerTags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"resourceManagerTags",
 		&returns,
 	)
 	return returns
@@ -2180,6 +2363,16 @@ func (j *jsiiProxy_Gkeprivate) Timeouts() *map[string]*string {
 	return returns
 }
 
+func (j *jsiiProxy_Gkeprivate) TotalEgressBandwidthTier() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"totalEgressBandwidthTier",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Gkeprivate) TpuIpv4CidrBlockOutput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -2324,6 +2517,14 @@ func (j *jsiiProxy_Gkeprivate)SetAdditionalIpRangePods(val *[]*string) {
 	)
 }
 
+func (j *jsiiProxy_Gkeprivate)SetAdditionalIpRangesConfig(val *[]interface{}) {
+	_jsii_.Set(
+		j,
+		"additionalIpRangesConfig",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Gkeprivate)SetAdditiveVpcScopeDnsDomain(val *string) {
 	_jsii_.Set(
 		j,
@@ -2344,6 +2545,14 @@ func (j *jsiiProxy_Gkeprivate)SetAddShadowFirewallRules(val *bool) {
 	_jsii_.Set(
 		j,
 		"addShadowFirewallRules",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Gkeprivate)SetAnonymousAuthenticationConfigMode(val *string) {
+	_jsii_.Set(
+		j,
+		"anonymousAuthenticationConfigMode",
 		val,
 	)
 }
@@ -2527,6 +2736,14 @@ func (j *jsiiProxy_Gkeprivate)SetDisableDefaultSnat(val *bool) {
 	)
 }
 
+func (j *jsiiProxy_Gkeprivate)SetDisableL4LbFirewallReconciliation(val *bool) {
+	_jsii_.Set(
+		j,
+		"disableL4LbFirewallReconciliation",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Gkeprivate)SetDisableLegacyMetadataEndpoints(val *bool) {
 	_jsii_.Set(
 		j,
@@ -2623,6 +2840,14 @@ func (j *jsiiProxy_Gkeprivate)SetEnableIntranodeVisibility(val *bool) {
 	)
 }
 
+func (j *jsiiProxy_Gkeprivate)SetEnableK8SBetaApis(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"enableK8SBetaApis",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Gkeprivate)SetEnableKubernetesAlpha(val *bool) {
 	_jsii_.Set(
 		j,
@@ -2639,10 +2864,26 @@ func (j *jsiiProxy_Gkeprivate)SetEnableL4IlbSubsetting(val *bool) {
 	)
 }
 
+func (j *jsiiProxy_Gkeprivate)SetEnableLegacyLustrePort(val *bool) {
+	_jsii_.Set(
+		j,
+		"enableLegacyLustrePort",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Gkeprivate)SetEnableMeshCertificates(val *bool) {
 	_jsii_.Set(
 		j,
 		"enableMeshCertificates",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Gkeprivate)SetEnableMultiNetworking(val *bool) {
+	_jsii_.Set(
+		j,
+		"enableMultiNetworking",
 		val,
 	)
 }
@@ -2807,6 +3048,14 @@ func (j *jsiiProxy_Gkeprivate)SetGcsFuseCsiDriver(val *bool) {
 	)
 }
 
+func (j *jsiiProxy_Gkeprivate)SetGkeAutoUpgradeConfigPatchMode(val *string) {
+	_jsii_.Set(
+		j,
+		"gkeAutoUpgradeConfigPatchMode",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Gkeprivate)SetGkeBackupAgentConfig(val *bool) {
 	_jsii_.Set(
 		j,
@@ -2827,6 +3076,14 @@ func (j *jsiiProxy_Gkeprivate)SetHorizontalPodAutoscaling(val *bool) {
 	_jsii_.Set(
 		j,
 		"horizontalPodAutoscaling",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Gkeprivate)SetHpaProfile(val *string) {
+	_jsii_.Set(
+		j,
+		"hpaProfile",
 		val,
 	)
 }
@@ -2863,6 +3120,22 @@ func (j *jsiiProxy_Gkeprivate)SetInsecureKubeletReadonlyPortEnabled(val *bool) {
 	)
 }
 
+func (j *jsiiProxy_Gkeprivate)SetInTransitEncryptionConfig(val *string) {
+	_jsii_.Set(
+		j,
+		"inTransitEncryptionConfig",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Gkeprivate)SetIpEndpointsEnabled(val *bool) {
+	_jsii_.Set(
+		j,
+		"ipEndpointsEnabled",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Gkeprivate)SetIpMasqLinkLocal(val *bool) {
 	_jsii_.Set(
 		j,
@@ -2891,9 +3164,6 @@ func (j *jsiiProxy_Gkeprivate)SetIpRangePods(val *string) {
 }
 
 func (j *jsiiProxy_Gkeprivate)SetIpRangeServices(val *string) {
-	if err := j.validateSetIpRangeServicesParameters(val); err != nil {
-		panic(err)
-	}
 	_jsii_.Set(
 		j,
 		"ipRangeServices",
@@ -2905,30 +3175,6 @@ func (j *jsiiProxy_Gkeprivate)SetIssueClientCertificate(val *bool) {
 	_jsii_.Set(
 		j,
 		"issueClientCertificate",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Gkeprivate)SetIstio(val *bool) {
-	_jsii_.Set(
-		j,
-		"istio",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Gkeprivate)SetIstioAuth(val *string) {
-	_jsii_.Set(
-		j,
-		"istioAuth",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Gkeprivate)SetKalmConfig(val *bool) {
-	_jsii_.Set(
-		j,
-		"kalmConfig",
 		val,
 	)
 }
@@ -2961,6 +3207,14 @@ func (j *jsiiProxy_Gkeprivate)SetLoggingVariant(val *string) {
 	_jsii_.Set(
 		j,
 		"loggingVariant",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Gkeprivate)SetLustreCsiDriver(val *bool) {
+	_jsii_.Set(
+		j,
+		"lustreCsiDriver",
 		val,
 	)
 }
@@ -3017,6 +3271,14 @@ func (j *jsiiProxy_Gkeprivate)SetMasterIpv4CidrBlock(val *string) {
 	_jsii_.Set(
 		j,
 		"masterIpv4CidrBlock",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Gkeprivate)SetMonitoringAutoMonitoringConfigScope(val *string) {
+	_jsii_.Set(
+		j,
+		"monitoringAutoMonitoringConfigScope",
 		val,
 	)
 }
@@ -3123,6 +3385,14 @@ func (j *jsiiProxy_Gkeprivate)SetNetworkTags(val *[]*string) {
 	)
 }
 
+func (j *jsiiProxy_Gkeprivate)SetNetworkTierConfig(val *string) {
+	_jsii_.Set(
+		j,
+		"networkTierConfig",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Gkeprivate)SetNodeMetadata(val *string) {
 	_jsii_.Set(
 		j,
@@ -3143,6 +3413,22 @@ func (j *jsiiProxy_Gkeprivate)SetNodePoolsCgroupMode(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"nodePoolsCgroupMode",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Gkeprivate)SetNodePoolsHugepageSize1G(val *map[string]*string) {
+	_jsii_.Set(
+		j,
+		"nodePoolsHugepageSize1G",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Gkeprivate)SetNodePoolsHugepageSize2M(val *map[string]*string) {
+	_jsii_.Set(
+		j,
+		"nodePoolsHugepageSize2M",
 		val,
 	)
 }
@@ -3211,6 +3497,22 @@ func (j *jsiiProxy_Gkeprivate)SetNodePoolsTaints(val *map[string]*[]interface{})
 	)
 }
 
+func (j *jsiiProxy_Gkeprivate)SetNodePoolsTransparentHugepageDefrag(val *map[string]*string) {
+	_jsii_.Set(
+		j,
+		"nodePoolsTransparentHugepageDefrag",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Gkeprivate)SetNodePoolsTransparentHugepageEnabled(val *map[string]*string) {
+	_jsii_.Set(
+		j,
+		"nodePoolsTransparentHugepageEnabled",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Gkeprivate)SetNonMasqueradeCidrs(val *[]*string) {
 	_jsii_.Set(
 		j,
@@ -3273,6 +3575,17 @@ func (j *jsiiProxy_Gkeprivate)SetRayOperatorConfig(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_Gkeprivate)SetRbacBindingConfig(val interface{}) {
+	if err := j.validateSetRbacBindingConfigParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rbacBindingConfig",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Gkeprivate)SetRegion(val *string) {
 	_jsii_.Set(
 		j,
@@ -3309,6 +3622,14 @@ func (j *jsiiProxy_Gkeprivate)SetRemoveDefaultNodePool(val *bool) {
 	_jsii_.Set(
 		j,
 		"removeDefaultNodePool",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Gkeprivate)SetResourceManagerTags(val *map[string]*string) {
+	_jsii_.Set(
+		j,
+		"resourceManagerTags",
 		val,
 	)
 }
@@ -3427,6 +3748,14 @@ func (j *jsiiProxy_Gkeprivate)SetTimeouts(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"timeouts",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Gkeprivate)SetTotalEgressBandwidthTier(val *string) {
+	_jsii_.Set(
+		j,
+		"totalEgressBandwidthTier",
 		val,
 	)
 }

@@ -40,10 +40,6 @@ func (j *jsiiProxy_Gkeprivate) validateSetIpRangePodsParameters(val *string) err
 	return nil
 }
 
-func (j *jsiiProxy_Gkeprivate) validateSetIpRangeServicesParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_Gkeprivate) validateSetNameParameters(val *string) error {
 	return nil
 }
@@ -57,6 +53,10 @@ func (j *jsiiProxy_Gkeprivate) validateSetProjectIdParameters(val *string) error
 }
 
 func (j *jsiiProxy_Gkeprivate) validateSetRayOperatorConfigParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Gkeprivate) validateSetRbacBindingConfigParameters(val interface{}) error {
 	return nil
 }
 
