@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglecomputesnapshot/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_compute_snapshot google_compute_snapshot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/data-sources/google_compute_snapshot google_compute_snapshot}.
 type DataGoogleComputeSnapshot interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -40,6 +40,7 @@ type DataGoogleComputeSnapshot interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GuestFlush() cdktf.IResolvable
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -70,8 +71,10 @@ type DataGoogleComputeSnapshot interface {
 	SelfLink() *string
 	SnapshotEncryptionKey() DataGoogleComputeSnapshotSnapshotEncryptionKeyList
 	SnapshotId() *float64
+	SnapshotType() *string
 	SourceDisk() *string
 	SourceDiskEncryptionKey() DataGoogleComputeSnapshotSourceDiskEncryptionKeyList
+	SourceInstantSnapshot() *string
 	StorageBytes() *float64
 	StorageLocations() *[]*string
 	// Experimental.
@@ -274,6 +277,16 @@ func (j *jsiiProxy_DataGoogleComputeSnapshot) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeSnapshot) GuestFlush() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"guestFlush",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeSnapshot) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -454,6 +467,16 @@ func (j *jsiiProxy_DataGoogleComputeSnapshot) SnapshotId() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeSnapshot) SnapshotType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"snapshotType",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeSnapshot) SourceDisk() *string {
 	var returns *string
 	_jsii_.Get(
@@ -469,6 +492,16 @@ func (j *jsiiProxy_DataGoogleComputeSnapshot) SourceDiskEncryptionKey() DataGoog
 	_jsii_.Get(
 		j,
 		"sourceDiskEncryptionKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeSnapshot) SourceInstantSnapshot() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceInstantSnapshot",
 		&returns,
 	)
 	return returns
@@ -545,7 +578,7 @@ func (j *jsiiProxy_DataGoogleComputeSnapshot) Zone() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_compute_snapshot google_compute_snapshot} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/data-sources/google_compute_snapshot google_compute_snapshot} Data Source.
 func NewDataGoogleComputeSnapshot(scope constructs.Construct, id *string, config *DataGoogleComputeSnapshotConfig) DataGoogleComputeSnapshot {
 	_init_.Initialize()
 
@@ -563,7 +596,7 @@ func NewDataGoogleComputeSnapshot(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_compute_snapshot google_compute_snapshot} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/data-sources/google_compute_snapshot google_compute_snapshot} Data Source.
 func NewDataGoogleComputeSnapshot_Override(d DataGoogleComputeSnapshot, scope constructs.Construct, id *string, config *DataGoogleComputeSnapshotConfig) {
 	_init_.Initialize()
 

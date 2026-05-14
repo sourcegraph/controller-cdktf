@@ -90,6 +90,17 @@ func (d *jsiiProxy_DatastreamStreamBackfillAllOutputReference) validateInterpola
 	return nil
 }
 
+func (d *jsiiProxy_DatastreamStreamBackfillAllOutputReference) validatePutMongodbExcludedObjectsParameters(value *DatastreamStreamBackfillAllMongodbExcludedObjects) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DatastreamStreamBackfillAllOutputReference) validatePutMysqlExcludedObjectsParameters(value *DatastreamStreamBackfillAllMysqlExcludedObjects) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -124,6 +135,17 @@ func (d *jsiiProxy_DatastreamStreamBackfillAllOutputReference) validatePutPostgr
 }
 
 func (d *jsiiProxy_DatastreamStreamBackfillAllOutputReference) validatePutSalesforceExcludedObjectsParameters(value *DatastreamStreamBackfillAllSalesforceExcludedObjects) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DatastreamStreamBackfillAllOutputReference) validatePutSpannerExcludedObjectsParameters(value *DatastreamStreamBackfillAllSpannerExcludedObjects) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

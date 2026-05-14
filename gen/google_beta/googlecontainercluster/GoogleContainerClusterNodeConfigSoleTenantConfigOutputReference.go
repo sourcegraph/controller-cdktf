@@ -29,6 +29,9 @@ type GoogleContainerClusterNodeConfigSoleTenantConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *GoogleContainerClusterNodeConfigSoleTenantConfig
 	SetInternalValue(val *GoogleContainerClusterNodeConfigSoleTenantConfig)
+	MinNodeCpus() *float64
+	SetMinNodeCpus(val *float64)
+	MinNodeCpusInput() *float64
 	NodeAffinity() GoogleContainerClusterNodeConfigSoleTenantConfigNodeAffinityList
 	NodeAffinityInput() interface{}
 	// Experimental.
@@ -64,6 +67,7 @@ type GoogleContainerClusterNodeConfigSoleTenantConfigOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutNodeAffinity(value interface{})
+	ResetMinNodeCpus()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -124,6 +128,26 @@ func (j *jsiiProxy_GoogleContainerClusterNodeConfigSoleTenantConfigOutputReferen
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigSoleTenantConfigOutputReference) MinNodeCpus() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"minNodeCpus",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigSoleTenantConfigOutputReference) MinNodeCpusInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"minNodeCpusInput",
 		&returns,
 	)
 	return returns
@@ -226,6 +250,17 @@ func (j *jsiiProxy_GoogleContainerClusterNodeConfigSoleTenantConfigOutputReferen
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigSoleTenantConfigOutputReference)SetMinNodeCpus(val *float64) {
+	if err := j.validateSetMinNodeCpusParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"minNodeCpus",
 		val,
 	)
 }
@@ -446,6 +481,14 @@ func (g *jsiiProxy_GoogleContainerClusterNodeConfigSoleTenantConfigOutputReferen
 		g,
 		"putNodeAffinity",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigSoleTenantConfigOutputReference) ResetMinNodeCpus() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMinNodeCpus",
+		nil, // no parameters
 	)
 }
 

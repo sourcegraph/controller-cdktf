@@ -44,6 +44,10 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesOutputReference) validateIn
 	return nil
 }
 
+func (c *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesOutputReference) validatePutCustomErrorResponsePolicyParameters(value *ComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicy) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesOutputReference) validatePutHeaderActionParameters(value *ComputeUrlMapPathMatcherRouteRulesHeaderAction) error {
 	return nil
 }

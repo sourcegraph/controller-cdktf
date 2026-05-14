@@ -433,6 +433,14 @@ func (j *jsiiProxy_GoogleNetworkManagementVpcFlowLogsConfig) validateSetMetadata
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetworkManagementVpcFlowLogsConfig) validateSetNetworkParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetworkManagementVpcFlowLogsConfig) validateSetProjectParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -488,6 +496,14 @@ func (j *jsiiProxy_GoogleNetworkManagementVpcFlowLogsConfig) validateSetProvisio
 }
 
 func (j *jsiiProxy_GoogleNetworkManagementVpcFlowLogsConfig) validateSetStateParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleNetworkManagementVpcFlowLogsConfig) validateSetSubnetParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

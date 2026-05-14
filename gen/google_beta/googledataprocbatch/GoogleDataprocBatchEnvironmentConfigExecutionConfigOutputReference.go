@@ -10,6 +10,8 @@ import (
 
 type GoogleDataprocBatchEnvironmentConfigExecutionConfigOutputReference interface {
 	cdktf.ComplexObject
+	AuthenticationConfig() GoogleDataprocBatchEnvironmentConfigExecutionConfigAuthenticationConfigOutputReference
+	AuthenticationConfigInput() *GoogleDataprocBatchEnvironmentConfigExecutionConfigAuthenticationConfig
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -82,6 +84,8 @@ type GoogleDataprocBatchEnvironmentConfigExecutionConfigOutputReference interfac
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAuthenticationConfig(value *GoogleDataprocBatchEnvironmentConfigExecutionConfigAuthenticationConfig)
+	ResetAuthenticationConfig()
 	ResetKmsKey()
 	ResetNetworkTags()
 	ResetNetworkUri()
@@ -102,6 +106,26 @@ type GoogleDataprocBatchEnvironmentConfigExecutionConfigOutputReference interfac
 // The jsii proxy struct for GoogleDataprocBatchEnvironmentConfigExecutionConfigOutputReference
 type jsiiProxy_GoogleDataprocBatchEnvironmentConfigExecutionConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GoogleDataprocBatchEnvironmentConfigExecutionConfigOutputReference) AuthenticationConfig() GoogleDataprocBatchEnvironmentConfigExecutionConfigAuthenticationConfigOutputReference {
+	var returns GoogleDataprocBatchEnvironmentConfigExecutionConfigAuthenticationConfigOutputReference
+	_jsii_.Get(
+		j,
+		"authenticationConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataprocBatchEnvironmentConfigExecutionConfigOutputReference) AuthenticationConfigInput() *GoogleDataprocBatchEnvironmentConfigExecutionConfigAuthenticationConfig {
+	var returns *GoogleDataprocBatchEnvironmentConfigExecutionConfigAuthenticationConfig
+	_jsii_.Get(
+		j,
+		"authenticationConfigInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleDataprocBatchEnvironmentConfigExecutionConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -658,6 +682,25 @@ func (g *jsiiProxy_GoogleDataprocBatchEnvironmentConfigExecutionConfigOutputRefe
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleDataprocBatchEnvironmentConfigExecutionConfigOutputReference) PutAuthenticationConfig(value *GoogleDataprocBatchEnvironmentConfigExecutionConfigAuthenticationConfig) {
+	if err := g.validatePutAuthenticationConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAuthenticationConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDataprocBatchEnvironmentConfigExecutionConfigOutputReference) ResetAuthenticationConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAuthenticationConfig",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleDataprocBatchEnvironmentConfigExecutionConfigOutputReference) ResetKmsKey() {

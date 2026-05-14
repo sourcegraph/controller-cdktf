@@ -35,6 +35,8 @@ type GkeHubFeatureSpecOutputReference interface {
 	SetInternalValue(val *GkeHubFeatureSpec)
 	Multiclusteringress() GkeHubFeatureSpecMulticlusteringressOutputReference
 	MulticlusteringressInput() *GkeHubFeatureSpecMulticlusteringress
+	Rbacrolebindingactuation() GkeHubFeatureSpecRbacrolebindingactuationOutputReference
+	RbacrolebindingactuationInput() *GkeHubFeatureSpecRbacrolebindingactuation
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -43,6 +45,8 @@ type GkeHubFeatureSpecOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Workloadidentity() GkeHubFeatureSpecWorkloadidentityOutputReference
+	WorkloadidentityInput() *GkeHubFeatureSpecWorkloadidentity
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -70,9 +74,13 @@ type GkeHubFeatureSpecOutputReference interface {
 	PutClusterupgrade(value *GkeHubFeatureSpecClusterupgrade)
 	PutFleetobservability(value *GkeHubFeatureSpecFleetobservability)
 	PutMulticlusteringress(value *GkeHubFeatureSpecMulticlusteringress)
+	PutRbacrolebindingactuation(value *GkeHubFeatureSpecRbacrolebindingactuation)
+	PutWorkloadidentity(value *GkeHubFeatureSpecWorkloadidentity)
 	ResetClusterupgrade()
 	ResetFleetobservability()
 	ResetMulticlusteringress()
+	ResetRbacrolebindingactuation()
+	ResetWorkloadidentity()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -198,6 +206,26 @@ func (j *jsiiProxy_GkeHubFeatureSpecOutputReference) MulticlusteringressInput() 
 	return returns
 }
 
+func (j *jsiiProxy_GkeHubFeatureSpecOutputReference) Rbacrolebindingactuation() GkeHubFeatureSpecRbacrolebindingactuationOutputReference {
+	var returns GkeHubFeatureSpecRbacrolebindingactuationOutputReference
+	_jsii_.Get(
+		j,
+		"rbacrolebindingactuation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GkeHubFeatureSpecOutputReference) RbacrolebindingactuationInput() *GkeHubFeatureSpecRbacrolebindingactuation {
+	var returns *GkeHubFeatureSpecRbacrolebindingactuation
+	_jsii_.Get(
+		j,
+		"rbacrolebindingactuationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GkeHubFeatureSpecOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -213,6 +241,26 @@ func (j *jsiiProxy_GkeHubFeatureSpecOutputReference) TerraformResource() cdktf.I
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GkeHubFeatureSpecOutputReference) Workloadidentity() GkeHubFeatureSpecWorkloadidentityOutputReference {
+	var returns GkeHubFeatureSpecWorkloadidentityOutputReference
+	_jsii_.Get(
+		j,
+		"workloadidentity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GkeHubFeatureSpecOutputReference) WorkloadidentityInput() *GkeHubFeatureSpecWorkloadidentity {
+	var returns *GkeHubFeatureSpecWorkloadidentity
+	_jsii_.Get(
+		j,
+		"workloadidentityInput",
 		&returns,
 	)
 	return returns
@@ -520,6 +568,28 @@ func (g *jsiiProxy_GkeHubFeatureSpecOutputReference) PutMulticlusteringress(valu
 	)
 }
 
+func (g *jsiiProxy_GkeHubFeatureSpecOutputReference) PutRbacrolebindingactuation(value *GkeHubFeatureSpecRbacrolebindingactuation) {
+	if err := g.validatePutRbacrolebindingactuationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putRbacrolebindingactuation",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GkeHubFeatureSpecOutputReference) PutWorkloadidentity(value *GkeHubFeatureSpecWorkloadidentity) {
+	if err := g.validatePutWorkloadidentityParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putWorkloadidentity",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GkeHubFeatureSpecOutputReference) ResetClusterupgrade() {
 	_jsii_.InvokeVoid(
 		g,
@@ -540,6 +610,22 @@ func (g *jsiiProxy_GkeHubFeatureSpecOutputReference) ResetMulticlusteringress() 
 	_jsii_.InvokeVoid(
 		g,
 		"resetMulticlusteringress",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GkeHubFeatureSpecOutputReference) ResetRbacrolebindingactuation() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRbacrolebindingactuation",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GkeHubFeatureSpecOutputReference) ResetWorkloadidentity() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetWorkloadidentity",
 		nil, // no parameters
 	)
 }

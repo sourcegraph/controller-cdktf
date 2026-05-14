@@ -10,6 +10,7 @@ import (
 
 type DataGoogleComputeReservationSpecificReservationOutputReference interface {
 	cdktf.ComplexObject
+	AssuredCount() *float64
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -32,6 +33,7 @@ type DataGoogleComputeReservationSpecificReservationOutputReference interface {
 	InternalValue() *DataGoogleComputeReservationSpecificReservation
 	SetInternalValue(val *DataGoogleComputeReservationSpecificReservation)
 	InUseCount() *float64
+	SourceInstanceTemplate() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -77,6 +79,16 @@ type DataGoogleComputeReservationSpecificReservationOutputReference interface {
 // The jsii proxy struct for DataGoogleComputeReservationSpecificReservationOutputReference
 type jsiiProxy_DataGoogleComputeReservationSpecificReservationOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataGoogleComputeReservationSpecificReservationOutputReference) AssuredCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"assuredCount",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataGoogleComputeReservationSpecificReservationOutputReference) ComplexObjectIndex() interface{} {
@@ -154,6 +166,16 @@ func (j *jsiiProxy_DataGoogleComputeReservationSpecificReservationOutputReferenc
 	_jsii_.Get(
 		j,
 		"inUseCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeReservationSpecificReservationOutputReference) SourceInstanceTemplate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceInstanceTemplate",
 		&returns,
 	)
 	return returns

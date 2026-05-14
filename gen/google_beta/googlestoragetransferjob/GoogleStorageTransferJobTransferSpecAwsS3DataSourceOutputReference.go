@@ -15,6 +15,9 @@ type GoogleStorageTransferJobTransferSpecAwsS3DataSourceOutputReference interfac
 	BucketName() *string
 	SetBucketName(val *string)
 	BucketNameInput() *string
+	CloudfrontDomain() *string
+	SetCloudfrontDomain(val *string)
+	CloudfrontDomainInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -30,10 +33,16 @@ type GoogleStorageTransferJobTransferSpecAwsS3DataSourceOutputReference interfac
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CredentialsSecret() *string
+	SetCredentialsSecret(val *string)
+	CredentialsSecretInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleStorageTransferJobTransferSpecAwsS3DataSource
 	SetInternalValue(val *GoogleStorageTransferJobTransferSpecAwsS3DataSource)
+	ManagedPrivateNetwork() interface{}
+	SetManagedPrivateNetwork(val interface{})
+	ManagedPrivateNetworkInput() interface{}
 	Path() *string
 	SetPath(val *string)
 	PathInput() *string
@@ -74,6 +83,9 @@ type GoogleStorageTransferJobTransferSpecAwsS3DataSourceOutputReference interfac
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAwsAccessKey(value *GoogleStorageTransferJobTransferSpecAwsS3DataSourceAwsAccessKey)
 	ResetAwsAccessKey()
+	ResetCloudfrontDomain()
+	ResetCredentialsSecret()
+	ResetManagedPrivateNetwork()
 	ResetPath()
 	ResetRoleArn()
 	// Produce the Token's value at resolution time.
@@ -131,6 +143,26 @@ func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecAwsS3DataSourceOutputRefe
 	return returns
 }
 
+func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecAwsS3DataSourceOutputReference) CloudfrontDomain() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cloudfrontDomain",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecAwsS3DataSourceOutputReference) CloudfrontDomainInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cloudfrontDomainInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecAwsS3DataSourceOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -161,6 +193,26 @@ func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecAwsS3DataSourceOutputRefe
 	return returns
 }
 
+func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecAwsS3DataSourceOutputReference) CredentialsSecret() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"credentialsSecret",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecAwsS3DataSourceOutputReference) CredentialsSecretInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"credentialsSecretInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecAwsS3DataSourceOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -176,6 +228,26 @@ func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecAwsS3DataSourceOutputRefe
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecAwsS3DataSourceOutputReference) ManagedPrivateNetwork() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"managedPrivateNetwork",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecAwsS3DataSourceOutputReference) ManagedPrivateNetworkInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"managedPrivateNetworkInput",
 		&returns,
 	)
 	return returns
@@ -280,6 +352,17 @@ func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecAwsS3DataSourceOutputRefe
 	)
 }
 
+func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecAwsS3DataSourceOutputReference)SetCloudfrontDomain(val *string) {
+	if err := j.validateSetCloudfrontDomainParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cloudfrontDomain",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecAwsS3DataSourceOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -302,6 +385,17 @@ func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecAwsS3DataSourceOutputRefe
 	)
 }
 
+func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecAwsS3DataSourceOutputReference)SetCredentialsSecret(val *string) {
+	if err := j.validateSetCredentialsSecretParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"credentialsSecret",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecAwsS3DataSourceOutputReference)SetInternalValue(val *GoogleStorageTransferJobTransferSpecAwsS3DataSource) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -309,6 +403,17 @@ func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecAwsS3DataSourceOutputRefe
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecAwsS3DataSourceOutputReference)SetManagedPrivateNetwork(val interface{}) {
+	if err := j.validateSetManagedPrivateNetworkParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"managedPrivateNetwork",
 		val,
 	)
 }
@@ -558,6 +663,30 @@ func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecAwsS3DataSourceOutputRefe
 	_jsii_.InvokeVoid(
 		g,
 		"resetAwsAccessKey",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecAwsS3DataSourceOutputReference) ResetCloudfrontDomain() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCloudfrontDomain",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecAwsS3DataSourceOutputReference) ResetCredentialsSecret() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCredentialsSecret",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecAwsS3DataSourceOutputReference) ResetManagedPrivateNetwork() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetManagedPrivateNetwork",
 		nil, // no parameters
 	)
 }

@@ -30,6 +30,8 @@ type DataGoogleAlloydbClusterInitialUserOutputReference interface {
 	InternalValue() *DataGoogleAlloydbClusterInitialUser
 	SetInternalValue(val *DataGoogleAlloydbClusterInitialUser)
 	Password() *string
+	PasswordWo() *string
+	PasswordWoVersion() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -133,6 +135,26 @@ func (j *jsiiProxy_DataGoogleAlloydbClusterInitialUserOutputReference) Password(
 	_jsii_.Get(
 		j,
 		"password",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleAlloydbClusterInitialUserOutputReference) PasswordWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleAlloydbClusterInitialUserOutputReference) PasswordWoVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordWoVersion",
 		&returns,
 	)
 	return returns

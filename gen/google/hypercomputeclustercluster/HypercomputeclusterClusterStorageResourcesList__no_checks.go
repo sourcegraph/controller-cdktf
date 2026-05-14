@@ -1,0 +1,38 @@
+//go:build no_runtime_type_checking
+
+package hypercomputeclustercluster
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (h *jsiiProxy_HypercomputeclusterClusterStorageResourcesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
+func (h *jsiiProxy_HypercomputeclusterClusterStorageResourcesList) validateGetParameters(index *float64) error {
+	return nil
+}
+
+func (h *jsiiProxy_HypercomputeclusterClusterStorageResourcesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesList) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesList) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesList) validateSetWrapsSetParameters(val *bool) error {
+	return nil
+}
+
+func validateNewHypercomputeclusterClusterStorageResourcesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+	return nil
+}
+

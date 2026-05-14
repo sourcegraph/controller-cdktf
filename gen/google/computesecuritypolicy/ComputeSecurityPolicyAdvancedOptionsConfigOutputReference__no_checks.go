@@ -72,6 +72,10 @@ func (j *jsiiProxy_ComputeSecurityPolicyAdvancedOptionsConfigOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_ComputeSecurityPolicyAdvancedOptionsConfigOutputReference) validateSetRequestBodyInspectionSizeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeSecurityPolicyAdvancedOptionsConfigOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

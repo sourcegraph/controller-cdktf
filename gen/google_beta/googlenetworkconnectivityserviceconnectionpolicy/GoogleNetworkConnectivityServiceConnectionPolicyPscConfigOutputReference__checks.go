@@ -98,6 +98,14 @@ func (g *jsiiProxy_GoogleNetworkConnectivityServiceConnectionPolicyPscConfigOutp
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetworkConnectivityServiceConnectionPolicyPscConfigOutputReference) validateSetAllowedGoogleProducersResourceHierarchyLevelParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetworkConnectivityServiceConnectionPolicyPscConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
@@ -172,6 +180,14 @@ func (j *jsiiProxy_GoogleNetworkConnectivityServiceConnectionPolicyPscConfigOutp
 }
 
 func (j *jsiiProxy_GoogleNetworkConnectivityServiceConnectionPolicyPscConfigOutputReference) validateSetLimitParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleNetworkConnectivityServiceConnectionPolicyPscConfigOutputReference) validateSetProducerInstanceLocationParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

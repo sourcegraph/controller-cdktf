@@ -72,6 +72,10 @@ func (d *jsiiProxy_DatastreamPrivateConnection) validateOverrideLogicalIdParamet
 	return nil
 }
 
+func (d *jsiiProxy_DatastreamPrivateConnection) validatePutPscInterfaceConfigParameters(value *DatastreamPrivateConnectionPscInterfaceConfig) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatastreamPrivateConnection) validatePutTimeoutsParameters(value *DatastreamPrivateConnectionTimeouts) error {
 	return nil
 }
@@ -105,6 +109,10 @@ func (j *jsiiProxy_DatastreamPrivateConnection) validateSetCountParameters(val i
 }
 
 func (j *jsiiProxy_DatastreamPrivateConnection) validateSetCreateWithoutValidationParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatastreamPrivateConnection) validateSetDeletionPolicyParameters(val *string) error {
 	return nil
 }
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/lookerinstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/looker_instance google_looker_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/looker_instance google_looker_instance}.
 type LookerInstance interface {
 	cdktf.TerraformResource
 	AdminSettings() LookerInstanceAdminSettingsOutputReference
@@ -25,6 +25,11 @@ type LookerInstance interface {
 	ConsumerNetwork() *string
 	SetConsumerNetwork(val *string)
 	ConsumerNetworkInput() *string
+	ControlledEgressConfig() LookerInstanceControlledEgressConfigOutputReference
+	ControlledEgressConfigInput() *LookerInstanceControlledEgressConfig
+	ControlledEgressEnabled() interface{}
+	SetControlledEgressEnabled(val interface{})
+	ControlledEgressEnabledInput() interface{}
 	// Experimental.
 	Count() interface{}
 	// Experimental.
@@ -55,6 +60,9 @@ type LookerInstance interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GeminiEnabled() interface{}
+	SetGeminiEnabled(val interface{})
+	GeminiEnabledInput() interface{}
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -75,6 +83,8 @@ type LookerInstance interface {
 	Node() constructs.Node
 	OauthConfig() LookerInstanceOauthConfigOutputReference
 	OauthConfigInput() *LookerInstanceOauthConfig
+	PeriodicExportConfig() LookerInstancePeriodicExportConfigOutputReference
+	PeriodicExportConfigInput() *LookerInstancePeriodicExportConfig
 	PlatformEdition() *string
 	SetPlatformEdition(val *string)
 	PlatformEditionInput() *string
@@ -163,26 +173,32 @@ type LookerInstance interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAdminSettings(value *LookerInstanceAdminSettings)
+	PutControlledEgressConfig(value *LookerInstanceControlledEgressConfig)
 	PutCustomDomain(value *LookerInstanceCustomDomain)
 	PutDenyMaintenancePeriod(value *LookerInstanceDenyMaintenancePeriod)
 	PutEncryptionConfig(value *LookerInstanceEncryptionConfig)
 	PutMaintenanceWindow(value *LookerInstanceMaintenanceWindow)
 	PutOauthConfig(value *LookerInstanceOauthConfig)
+	PutPeriodicExportConfig(value *LookerInstancePeriodicExportConfig)
 	PutPscConfig(value *LookerInstancePscConfig)
 	PutTimeouts(value *LookerInstanceTimeouts)
 	PutUserMetadata(value *LookerInstanceUserMetadata)
 	ResetAdminSettings()
 	ResetConsumerNetwork()
+	ResetControlledEgressConfig()
+	ResetControlledEgressEnabled()
 	ResetCustomDomain()
 	ResetDeletionPolicy()
 	ResetDenyMaintenancePeriod()
 	ResetEncryptionConfig()
 	ResetFipsEnabled()
+	ResetGeminiEnabled()
 	ResetId()
 	ResetMaintenanceWindow()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPeriodicExportConfig()
 	ResetPlatformEdition()
 	ResetPrivateIpEnabled()
 	ResetProject()
@@ -276,6 +292,46 @@ func (j *jsiiProxy_LookerInstance) ConsumerNetworkInput() *string {
 	_jsii_.Get(
 		j,
 		"consumerNetworkInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LookerInstance) ControlledEgressConfig() LookerInstanceControlledEgressConfigOutputReference {
+	var returns LookerInstanceControlledEgressConfigOutputReference
+	_jsii_.Get(
+		j,
+		"controlledEgressConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LookerInstance) ControlledEgressConfigInput() *LookerInstanceControlledEgressConfig {
+	var returns *LookerInstanceControlledEgressConfig
+	_jsii_.Get(
+		j,
+		"controlledEgressConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LookerInstance) ControlledEgressEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"controlledEgressEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LookerInstance) ControlledEgressEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"controlledEgressEnabledInput",
 		&returns,
 	)
 	return returns
@@ -451,6 +507,26 @@ func (j *jsiiProxy_LookerInstance) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_LookerInstance) GeminiEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"geminiEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LookerInstance) GeminiEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"geminiEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LookerInstance) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -586,6 +662,26 @@ func (j *jsiiProxy_LookerInstance) OauthConfigInput() *LookerInstanceOauthConfig
 	_jsii_.Get(
 		j,
 		"oauthConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LookerInstance) PeriodicExportConfig() LookerInstancePeriodicExportConfigOutputReference {
+	var returns LookerInstancePeriodicExportConfigOutputReference
+	_jsii_.Get(
+		j,
+		"periodicExportConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LookerInstance) PeriodicExportConfigInput() *LookerInstancePeriodicExportConfig {
+	var returns *LookerInstancePeriodicExportConfig
+	_jsii_.Get(
+		j,
+		"periodicExportConfigInput",
 		&returns,
 	)
 	return returns
@@ -862,7 +958,7 @@ func (j *jsiiProxy_LookerInstance) UserMetadataInput() *LookerInstanceUserMetada
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/looker_instance google_looker_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/looker_instance google_looker_instance} Resource.
 func NewLookerInstance(scope constructs.Construct, id *string, config *LookerInstanceConfig) LookerInstance {
 	_init_.Initialize()
 
@@ -880,7 +976,7 @@ func NewLookerInstance(scope constructs.Construct, id *string, config *LookerIns
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/looker_instance google_looker_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/looker_instance google_looker_instance} Resource.
 func NewLookerInstance_Override(l LookerInstance, scope constructs.Construct, id *string, config *LookerInstanceConfig) {
 	_init_.Initialize()
 
@@ -909,6 +1005,17 @@ func (j *jsiiProxy_LookerInstance)SetConsumerNetwork(val *string) {
 	_jsii_.Set(
 		j,
 		"consumerNetwork",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LookerInstance)SetControlledEgressEnabled(val interface{}) {
+	if err := j.validateSetControlledEgressEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"controlledEgressEnabled",
 		val,
 	)
 }
@@ -958,6 +1065,17 @@ func (j *jsiiProxy_LookerInstance)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LookerInstance)SetGeminiEnabled(val interface{}) {
+	if err := j.validateSetGeminiEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"geminiEnabled",
 		val,
 	)
 }
@@ -1455,6 +1573,17 @@ func (l *jsiiProxy_LookerInstance) PutAdminSettings(value *LookerInstanceAdminSe
 	)
 }
 
+func (l *jsiiProxy_LookerInstance) PutControlledEgressConfig(value *LookerInstanceControlledEgressConfig) {
+	if err := l.validatePutControlledEgressConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putControlledEgressConfig",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LookerInstance) PutCustomDomain(value *LookerInstanceCustomDomain) {
 	if err := l.validatePutCustomDomainParameters(value); err != nil {
 		panic(err)
@@ -1510,6 +1639,17 @@ func (l *jsiiProxy_LookerInstance) PutOauthConfig(value *LookerInstanceOauthConf
 	)
 }
 
+func (l *jsiiProxy_LookerInstance) PutPeriodicExportConfig(value *LookerInstancePeriodicExportConfig) {
+	if err := l.validatePutPeriodicExportConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putPeriodicExportConfig",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LookerInstance) PutPscConfig(value *LookerInstancePscConfig) {
 	if err := l.validatePutPscConfigParameters(value); err != nil {
 		panic(err)
@@ -1559,6 +1699,22 @@ func (l *jsiiProxy_LookerInstance) ResetConsumerNetwork() {
 	)
 }
 
+func (l *jsiiProxy_LookerInstance) ResetControlledEgressConfig() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetControlledEgressConfig",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LookerInstance) ResetControlledEgressEnabled() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetControlledEgressEnabled",
+		nil, // no parameters
+	)
+}
+
 func (l *jsiiProxy_LookerInstance) ResetCustomDomain() {
 	_jsii_.InvokeVoid(
 		l,
@@ -1599,6 +1755,14 @@ func (l *jsiiProxy_LookerInstance) ResetFipsEnabled() {
 	)
 }
 
+func (l *jsiiProxy_LookerInstance) ResetGeminiEnabled() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetGeminiEnabled",
+		nil, // no parameters
+	)
+}
+
 func (l *jsiiProxy_LookerInstance) ResetId() {
 	_jsii_.InvokeVoid(
 		l,
@@ -1619,6 +1783,14 @@ func (l *jsiiProxy_LookerInstance) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LookerInstance) ResetPeriodicExportConfig() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetPeriodicExportConfig",
 		nil, // no parameters
 	)
 }

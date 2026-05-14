@@ -33,6 +33,7 @@ type DataGoogleFilestoreInstanceNetworksOutputReference interface {
 	IpAddresses() *[]*string
 	Modes() *[]*string
 	Network() *string
+	PscConfig() DataGoogleFilestoreInstanceNetworksPscConfigList
 	ReservedIpRange() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -166,6 +167,16 @@ func (j *jsiiProxy_DataGoogleFilestoreInstanceNetworksOutputReference) Network()
 	_jsii_.Get(
 		j,
 		"network",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleFilestoreInstanceNetworksOutputReference) PscConfig() DataGoogleFilestoreInstanceNetworksPscConfigList {
+	var returns DataGoogleFilestoreInstanceNetworksPscConfigList
+	_jsii_.Get(
+		j,
+		"pscConfig",
 		&returns,
 	)
 	return returns

@@ -25,6 +25,9 @@ type GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EnhancedQueryInsightsEnabled() interface{}
+	SetEnhancedQueryInsightsEnabled(val interface{})
+	EnhancedQueryInsightsEnabledInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleSqlDatabaseInstanceSettingsInsightsConfig
@@ -76,6 +79,7 @@ type GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetEnhancedQueryInsightsEnabled()
 	ResetQueryInsightsEnabled()
 	ResetQueryPlansPerMinute()
 	ResetQueryStringLength()
@@ -121,6 +125,26 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReferenc
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference) EnhancedQueryInsightsEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enhancedQueryInsightsEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference) EnhancedQueryInsightsEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enhancedQueryInsightsEnabledInput",
 		&returns,
 	)
 	return returns
@@ -312,6 +336,17 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReferenc
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference)SetEnhancedQueryInsightsEnabled(val interface{}) {
+	if err := j.validateSetEnhancedQueryInsightsEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enhancedQueryInsightsEnabled",
 		val,
 	)
 }
@@ -588,6 +623,14 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReferenc
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference) ResetEnhancedQueryInsightsEnabled() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnhancedQueryInsightsEnabled",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference) ResetQueryInsightsEnabled() {

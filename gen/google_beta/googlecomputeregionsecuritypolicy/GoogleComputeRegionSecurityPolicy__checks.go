@@ -204,6 +204,17 @@ func (g *jsiiProxy_GoogleComputeRegionSecurityPolicy) validateOverrideLogicalIdP
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeRegionSecurityPolicy) validatePutAdvancedOptionsConfigParameters(value *GoogleComputeRegionSecurityPolicyAdvancedOptionsConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRegionSecurityPolicy) validatePutDdosProtectionConfigParameters(value *GoogleComputeRegionSecurityPolicyDdosProtectionConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

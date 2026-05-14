@@ -72,6 +72,10 @@ func (s *jsiiProxy_StorageBucketObject) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
+func (s *jsiiProxy_StorageBucketObject) validatePutContextsParameters(value *StorageBucketObjectContexts) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageBucketObject) validatePutCustomerEncryptionParameters(value *StorageBucketObjectCustomerEncryption) error {
 	return nil
 }
@@ -136,11 +140,19 @@ func (j *jsiiProxy_StorageBucketObject) validateSetCountParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_StorageBucketObject) validateSetDeletionPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageBucketObject) validateSetDetectMd5HashParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_StorageBucketObject) validateSetEventBasedHoldParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_StorageBucketObject) validateSetForceEmptyContentTypeParameters(val interface{}) error {
 	return nil
 }
 
@@ -169,6 +181,10 @@ func (j *jsiiProxy_StorageBucketObject) validateSetProvisionersParameters(val *[
 }
 
 func (j *jsiiProxy_StorageBucketObject) validateSetSourceParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_StorageBucketObject) validateSetSourceMd5HashParameters(val *string) error {
 	return nil
 }
 

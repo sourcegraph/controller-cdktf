@@ -80,6 +80,10 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListingSubscriptionDestinationDatasetOutp
 	return nil
 }
 
+func (j *jsiiProxy_BigqueryAnalyticsHubListingSubscriptionDestinationDatasetOutputReference) validateSetReplicaLocationsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BigqueryAnalyticsHubListingSubscriptionDestinationDatasetOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

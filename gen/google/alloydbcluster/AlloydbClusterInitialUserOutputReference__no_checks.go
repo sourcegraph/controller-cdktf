@@ -64,6 +64,14 @@ func (j *jsiiProxy_AlloydbClusterInitialUserOutputReference) validateSetPassword
 	return nil
 }
 
+func (j *jsiiProxy_AlloydbClusterInitialUserOutputReference) validateSetPasswordWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AlloydbClusterInitialUserOutputReference) validateSetPasswordWoVersionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AlloydbClusterInitialUserOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeregiontargethttpproxy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_region_target_http_proxy google_compute_region_target_http_proxy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_compute_region_target_http_proxy google_compute_region_target_http_proxy}.
 type GoogleComputeRegionTargetHttpProxy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -506,7 +506,7 @@ func (j *jsiiProxy_GoogleComputeRegionTargetHttpProxy) UrlMapInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_region_target_http_proxy google_compute_region_target_http_proxy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_compute_region_target_http_proxy google_compute_region_target_http_proxy} Resource.
 func NewGoogleComputeRegionTargetHttpProxy(scope constructs.Construct, id *string, config *GoogleComputeRegionTargetHttpProxyConfig) GoogleComputeRegionTargetHttpProxy {
 	_init_.Initialize()
 
@@ -524,7 +524,7 @@ func NewGoogleComputeRegionTargetHttpProxy(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_region_target_http_proxy google_compute_region_target_http_proxy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_compute_region_target_http_proxy google_compute_region_target_http_proxy} Resource.
 func NewGoogleComputeRegionTargetHttpProxy_Override(g GoogleComputeRegionTargetHttpProxy, scope constructs.Construct, id *string, config *GoogleComputeRegionTargetHttpProxyConfig) {
 	_init_.Initialize()
 

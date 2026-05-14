@@ -215,6 +215,17 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstance) validatePutCloneParameters(value *
 	return nil
 }
 
+func (g *jsiiProxy_GoogleSqlDatabaseInstance) validatePutPointInTimeRestoreContextParameters(value *GoogleSqlDatabaseInstancePointInTimeRestoreContext) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSqlDatabaseInstance) validatePutReplicaConfigurationParameters(value *GoogleSqlDatabaseInstanceReplicaConfiguration) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -305,6 +316,14 @@ func validateGoogleSqlDatabaseInstance_IsTerraformElementParameters(x interface{
 func validateGoogleSqlDatabaseInstance_IsTerraformResourceParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstance) validateSetBackupdrBackupParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil
@@ -436,6 +455,14 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstance) validateSetEncryptionKeyNameParame
 	return nil
 }
 
+func (j *jsiiProxy_GoogleSqlDatabaseInstance) validateSetFinalBackupDescriptionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSqlDatabaseInstance) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -477,6 +504,14 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstance) validateSetMasterInstanceNameParam
 }
 
 func (j *jsiiProxy_GoogleSqlDatabaseInstance) validateSetNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstance) validateSetNodeCountParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -555,6 +590,22 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstance) validateSetReplicaNamesParameters(
 }
 
 func (j *jsiiProxy_GoogleSqlDatabaseInstance) validateSetRootPasswordParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstance) validateSetRootPasswordWoParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstance) validateSetRootPasswordWoVersionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

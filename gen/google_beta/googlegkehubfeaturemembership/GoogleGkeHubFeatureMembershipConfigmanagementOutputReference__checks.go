@@ -90,17 +90,6 @@ func (g *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementOutputReference)
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementOutputReference) validatePutBinauthzParameters(value *GoogleGkeHubFeatureMembershipConfigmanagementBinauthz) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
 func (g *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementOutputReference) validatePutConfigSyncParameters(value *GoogleGkeHubFeatureMembershipConfigmanagementConfigSync) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

@@ -30,6 +30,7 @@ type DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovals
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	Id() *string
 	InternalValue() *DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsSteps
 	SetInternalValue(val *DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsSteps)
 	// Experimental.
@@ -144,6 +145,16 @@ func (j *jsiiProxy_DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowM
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsOutputReference) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
 		&returns,
 	)
 	return returns

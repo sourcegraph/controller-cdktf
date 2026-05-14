@@ -76,6 +76,10 @@ func (g *jsiiProxy_GoogleComputeRegionCommitment) validatePutLicenseResourcePara
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeRegionCommitment) validatePutParamsParameters(value *GoogleComputeRegionCommitmentParams) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRegionCommitment) validatePutResourcesParameters(value interface{}) error {
 	return nil
 }

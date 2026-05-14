@@ -1,0 +1,78 @@
+//go:build no_runtime_type_checking
+
+package dialogflowgenerator
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (d *jsiiProxy_DialogflowGeneratorSummarizationContextFewShotExamplesSummarizationSectionListStructOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DialogflowGeneratorSummarizationContextFewShotExamplesSummarizationSectionListStructOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DialogflowGeneratorSummarizationContextFewShotExamplesSummarizationSectionListStructOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DialogflowGeneratorSummarizationContextFewShotExamplesSummarizationSectionListStructOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DialogflowGeneratorSummarizationContextFewShotExamplesSummarizationSectionListStructOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DialogflowGeneratorSummarizationContextFewShotExamplesSummarizationSectionListStructOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DialogflowGeneratorSummarizationContextFewShotExamplesSummarizationSectionListStructOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DialogflowGeneratorSummarizationContextFewShotExamplesSummarizationSectionListStructOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DialogflowGeneratorSummarizationContextFewShotExamplesSummarizationSectionListStructOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DialogflowGeneratorSummarizationContextFewShotExamplesSummarizationSectionListStructOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DialogflowGeneratorSummarizationContextFewShotExamplesSummarizationSectionListStructOutputReference) validatePutSummarizationSectionsParameters(value interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DialogflowGeneratorSummarizationContextFewShotExamplesSummarizationSectionListStructOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_DialogflowGeneratorSummarizationContextFewShotExamplesSummarizationSectionListStructOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DialogflowGeneratorSummarizationContextFewShotExamplesSummarizationSectionListStructOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_DialogflowGeneratorSummarizationContextFewShotExamplesSummarizationSectionListStructOutputReference) validateSetInternalValueParameters(val *DialogflowGeneratorSummarizationContextFewShotExamplesSummarizationSectionListStruct) error {
+	return nil
+}
+
+func (j *jsiiProxy_DialogflowGeneratorSummarizationContextFewShotExamplesSummarizationSectionListStructOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DialogflowGeneratorSummarizationContextFewShotExamplesSummarizationSectionListStructOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func validateNewDialogflowGeneratorSummarizationContextFewShotExamplesSummarizationSectionListStructOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+	return nil
+}
+

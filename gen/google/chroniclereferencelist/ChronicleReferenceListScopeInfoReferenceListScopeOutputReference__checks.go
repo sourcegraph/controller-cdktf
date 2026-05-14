@@ -171,6 +171,14 @@ func (j *jsiiProxy_ChronicleReferenceListScopeInfoReferenceListScopeOutputRefere
 	return nil
 }
 
+func (j *jsiiProxy_ChronicleReferenceListScopeInfoReferenceListScopeOutputReference) validateSetScopeNamesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ChronicleReferenceListScopeInfoReferenceListScopeOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -187,21 +195,13 @@ func (j *jsiiProxy_ChronicleReferenceListScopeInfoReferenceListScopeOutputRefere
 	return nil
 }
 
-func validateNewChronicleReferenceListScopeInfoReferenceListScopeOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewChronicleReferenceListScopeInfoReferenceListScopeOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}
 
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
-	}
-
-	if complexObjectIndex == nil {
-		return fmt.Errorf("parameter complexObjectIndex is required, but nil was provided")
-	}
-
-	if complexObjectIsFromSet == nil {
-		return fmt.Errorf("parameter complexObjectIsFromSet is required, but nil was provided")
 	}
 
 	return nil

@@ -1,0 +1,6 @@
+package datagooglecertificatemanagerdnsauthorization
+
+
+type DataGoogleCertificateManagerDnsAuthorizationDnsResourceRecord struct {
+}
+

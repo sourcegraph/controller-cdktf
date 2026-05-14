@@ -381,6 +381,8 @@ func init() {
 		"@cdktf/provider-google.blockchainNodeEngineBlockchainNodes.BlockchainNodeEngineBlockchainNodesEthereumDetailsValidatorConfigOutputReference",
 		reflect.TypeOf((*BlockchainNodeEngineBlockchainNodesEthereumDetailsValidatorConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "beaconFeeRecipient", GoGetter: "BeaconFeeRecipient"},
+			_jsii_.MemberProperty{JsiiProperty: "beaconFeeRecipientInput", GoGetter: "BeaconFeeRecipientInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -400,6 +402,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "mevRelayUrls", GoGetter: "MevRelayUrls"},
 			_jsii_.MemberProperty{JsiiProperty: "mevRelayUrlsInput", GoGetter: "MevRelayUrlsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBeaconFeeRecipient", GoMethod: "ResetBeaconFeeRecipient"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMevRelayUrls", GoMethod: "ResetMevRelayUrls"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},

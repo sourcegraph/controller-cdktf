@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleVertexAiIndexEndpointPrivateServiceConnectConfigOutputR
 	return nil
 }
 
+func (g *jsiiProxy_GoogleVertexAiIndexEndpointPrivateServiceConnectConfigOutputReference) validatePutPscAutomationConfigsParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleVertexAiIndexEndpointPrivateServiceConnectConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

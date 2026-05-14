@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/developerconnectaccountconnector/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/developer_connect_account_connector google_developer_connect_account_connector}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/developer_connect_account_connector google_developer_connect_account_connector}.
 type DeveloperConnectAccountConnector interface {
 	cdktf.TerraformResource
 	AccountConnectorId() *string
@@ -31,12 +31,17 @@ type DeveloperConnectAccountConnector interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreateTime() *string
+	CustomOauthConfig() DeveloperConnectAccountConnectorCustomOauthConfigOutputReference
+	CustomOauthConfigInput() *DeveloperConnectAccountConnectorCustomOauthConfig
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	EffectiveAnnotations() cdktf.StringMap
 	EffectiveLabels() cdktf.StringMap
+	Etag() *string
+	SetEtag(val *string)
+	EtagInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -75,6 +80,8 @@ type DeveloperConnectAccountConnector interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	ProxyConfig() DeveloperConnectAccountConnectorProxyConfigOutputReference
+	ProxyConfigInput() *DeveloperConnectAccountConnectorProxyConfig
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
@@ -130,9 +137,13 @@ type DeveloperConnectAccountConnector interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutCustomOauthConfig(value *DeveloperConnectAccountConnectorCustomOauthConfig)
 	PutProviderOauthConfig(value *DeveloperConnectAccountConnectorProviderOauthConfig)
+	PutProxyConfig(value *DeveloperConnectAccountConnectorProxyConfig)
 	PutTimeouts(value *DeveloperConnectAccountConnectorTimeouts)
 	ResetAnnotations()
+	ResetCustomOauthConfig()
+	ResetEtag()
 	ResetId()
 	ResetLabels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -140,6 +151,7 @@ type DeveloperConnectAccountConnector interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetProviderOauthConfig()
+	ResetProxyConfig()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -249,6 +261,26 @@ func (j *jsiiProxy_DeveloperConnectAccountConnector) CreateTime() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DeveloperConnectAccountConnector) CustomOauthConfig() DeveloperConnectAccountConnectorCustomOauthConfigOutputReference {
+	var returns DeveloperConnectAccountConnectorCustomOauthConfigOutputReference
+	_jsii_.Get(
+		j,
+		"customOauthConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DeveloperConnectAccountConnector) CustomOauthConfigInput() *DeveloperConnectAccountConnectorCustomOauthConfig {
+	var returns *DeveloperConnectAccountConnectorCustomOauthConfig
+	_jsii_.Get(
+		j,
+		"customOauthConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DeveloperConnectAccountConnector) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -274,6 +306,26 @@ func (j *jsiiProxy_DeveloperConnectAccountConnector) EffectiveLabels() cdktf.Str
 	_jsii_.Get(
 		j,
 		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DeveloperConnectAccountConnector) Etag() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"etag",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DeveloperConnectAccountConnector) EtagInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"etagInput",
 		&returns,
 	)
 	return returns
@@ -469,6 +521,26 @@ func (j *jsiiProxy_DeveloperConnectAccountConnector) Provisioners() *[]interface
 	return returns
 }
 
+func (j *jsiiProxy_DeveloperConnectAccountConnector) ProxyConfig() DeveloperConnectAccountConnectorProxyConfigOutputReference {
+	var returns DeveloperConnectAccountConnectorProxyConfigOutputReference
+	_jsii_.Get(
+		j,
+		"proxyConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DeveloperConnectAccountConnector) ProxyConfigInput() *DeveloperConnectAccountConnectorProxyConfig {
+	var returns *DeveloperConnectAccountConnectorProxyConfig
+	_jsii_.Get(
+		j,
+		"proxyConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DeveloperConnectAccountConnector) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -550,7 +622,7 @@ func (j *jsiiProxy_DeveloperConnectAccountConnector) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/developer_connect_account_connector google_developer_connect_account_connector} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/developer_connect_account_connector google_developer_connect_account_connector} Resource.
 func NewDeveloperConnectAccountConnector(scope constructs.Construct, id *string, config *DeveloperConnectAccountConnectorConfig) DeveloperConnectAccountConnector {
 	_init_.Initialize()
 
@@ -568,7 +640,7 @@ func NewDeveloperConnectAccountConnector(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/developer_connect_account_connector google_developer_connect_account_connector} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/developer_connect_account_connector google_developer_connect_account_connector} Resource.
 func NewDeveloperConnectAccountConnector_Override(d DeveloperConnectAccountConnector, scope constructs.Construct, id *string, config *DeveloperConnectAccountConnectorConfig) {
 	_init_.Initialize()
 
@@ -627,6 +699,17 @@ func (j *jsiiProxy_DeveloperConnectAccountConnector)SetDependsOn(val *[]*string)
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DeveloperConnectAccountConnector)SetEtag(val *string) {
+	if err := j.validateSetEtagParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"etag",
 		val,
 	)
 }
@@ -1066,6 +1149,17 @@ func (d *jsiiProxy_DeveloperConnectAccountConnector) OverrideLogicalId(newLogica
 	)
 }
 
+func (d *jsiiProxy_DeveloperConnectAccountConnector) PutCustomOauthConfig(value *DeveloperConnectAccountConnectorCustomOauthConfig) {
+	if err := d.validatePutCustomOauthConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putCustomOauthConfig",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DeveloperConnectAccountConnector) PutProviderOauthConfig(value *DeveloperConnectAccountConnectorProviderOauthConfig) {
 	if err := d.validatePutProviderOauthConfigParameters(value); err != nil {
 		panic(err)
@@ -1073,6 +1167,17 @@ func (d *jsiiProxy_DeveloperConnectAccountConnector) PutProviderOauthConfig(valu
 	_jsii_.InvokeVoid(
 		d,
 		"putProviderOauthConfig",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DeveloperConnectAccountConnector) PutProxyConfig(value *DeveloperConnectAccountConnectorProxyConfig) {
+	if err := d.validatePutProxyConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putProxyConfig",
 		[]interface{}{value},
 	)
 }
@@ -1092,6 +1197,22 @@ func (d *jsiiProxy_DeveloperConnectAccountConnector) ResetAnnotations() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetAnnotations",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DeveloperConnectAccountConnector) ResetCustomOauthConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCustomOauthConfig",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DeveloperConnectAccountConnector) ResetEtag() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetEtag",
 		nil, // no parameters
 	)
 }
@@ -1132,6 +1253,14 @@ func (d *jsiiProxy_DeveloperConnectAccountConnector) ResetProviderOauthConfig() 
 	_jsii_.InvokeVoid(
 		d,
 		"resetProviderOauthConfig",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DeveloperConnectAccountConnector) ResetProxyConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProxyConfig",
 		nil, // no parameters
 	)
 }

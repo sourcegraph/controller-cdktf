@@ -48,6 +48,10 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) validatePu
 	return nil
 }
 
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) validatePutBootDiskParameters(value *ContainerClusterNodePoolNodeConfigBootDisk) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) validatePutConfidentialNodesParameters(value *ContainerClusterNodePoolNodeConfigConfidentialNodes) error {
 	return nil
 }
@@ -93,6 +97,10 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) validatePu
 }
 
 func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) validatePutReservationAffinityParameters(value *ContainerClusterNodePoolNodeConfigReservationAffinity) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) validatePutSandboxConfigParameters(value *ContainerClusterNodePoolNodeConfigSandboxConfig) error {
 	return nil
 }
 
@@ -145,6 +153,10 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) validateSe
 }
 
 func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) validateSetEnableConfidentialStorageParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) validateSetFlexStartParameters(val interface{}) error {
 	return nil
 }
 

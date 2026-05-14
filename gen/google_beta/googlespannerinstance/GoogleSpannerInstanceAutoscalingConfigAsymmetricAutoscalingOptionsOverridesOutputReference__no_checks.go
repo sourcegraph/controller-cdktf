@@ -52,11 +52,27 @@ func (g *jsiiProxy_GoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOp
 	return nil
 }
 
+func (j *jsiiProxy_GoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsOverridesOutputReference) validateSetAutoscalingTargetHighPriorityCpuUtilizationPercentParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsOverridesOutputReference) validateSetAutoscalingTargetTotalCpuUtilizationPercentParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsOverridesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_GoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsOverridesOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsOverridesOutputReference) validateSetDisableHighPriorityCpuAutoscalingParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsOverridesOutputReference) validateSetDisableTotalCpuAutoscalingParameters(val interface{}) error {
 	return nil
 }
 

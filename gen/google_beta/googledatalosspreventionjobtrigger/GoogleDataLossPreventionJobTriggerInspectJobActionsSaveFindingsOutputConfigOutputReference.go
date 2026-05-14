@@ -32,6 +32,8 @@ type GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfig
 	OutputSchema() *string
 	SetOutputSchema(val *string)
 	OutputSchemaInput() *string
+	StoragePath() GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigStoragePathOutputReference
+	StoragePathInput() *GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigStoragePath
 	Table() GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigTableOutputReference
 	TableInput() *GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigTable
 	// Experimental.
@@ -66,8 +68,11 @@ type GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfig
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutStoragePath(value *GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigStoragePath)
 	PutTable(value *GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigTable)
 	ResetOutputSchema()
+	ResetStoragePath()
+	ResetTable()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -148,6 +153,26 @@ func (j *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindin
 	_jsii_.Get(
 		j,
 		"outputSchemaInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigOutputReference) StoragePath() GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigStoragePathOutputReference {
+	var returns GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigStoragePathOutputReference
+	_jsii_.Get(
+		j,
+		"storagePath",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigOutputReference) StoragePathInput() *GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigStoragePath {
+	var returns *GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigStoragePath
+	_jsii_.Get(
+		j,
+		"storagePathInput",
 		&returns,
 	)
 	return returns
@@ -473,6 +498,17 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindin
 	return returns
 }
 
+func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigOutputReference) PutStoragePath(value *GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigStoragePath) {
+	if err := g.validatePutStoragePathParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putStoragePath",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigOutputReference) PutTable(value *GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigTable) {
 	if err := g.validatePutTableParameters(value); err != nil {
 		panic(err)
@@ -488,6 +524,22 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindin
 	_jsii_.InvokeVoid(
 		g,
 		"resetOutputSchema",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigOutputReference) ResetStoragePath() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetStoragePath",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigOutputReference) ResetTable() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTable",
 		nil, // no parameters
 	)
 }

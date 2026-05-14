@@ -68,6 +68,10 @@ func (j *jsiiProxy_CloudRunServiceTemplateSpecContainersVolumeMountsOutputRefere
 	return nil
 }
 
+func (j *jsiiProxy_CloudRunServiceTemplateSpecContainersVolumeMountsOutputReference) validateSetSubPathParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudRunServiceTemplateSpecContainersVolumeMountsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

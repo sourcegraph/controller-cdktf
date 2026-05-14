@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/storagebucketobject/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/storage_bucket_object google_storage_bucket_object}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object google_storage_bucket_object}.
 type StorageBucketObject interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -41,6 +41,8 @@ type StorageBucketObject interface {
 	ContentType() *string
 	SetContentType(val *string)
 	ContentTypeInput() *string
+	Contexts() StorageBucketObjectContextsOutputReference
+	ContextsInput() *StorageBucketObjectContexts
 	// Experimental.
 	Count() interface{}
 	// Experimental.
@@ -48,6 +50,9 @@ type StorageBucketObject interface {
 	Crc32C() *string
 	CustomerEncryption() StorageBucketObjectCustomerEncryptionOutputReference
 	CustomerEncryptionInput() *StorageBucketObjectCustomerEncryption
+	DeletionPolicy() *string
+	SetDeletionPolicy(val *string)
+	DeletionPolicyInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -58,6 +63,9 @@ type StorageBucketObject interface {
 	EventBasedHold() interface{}
 	SetEventBasedHold(val interface{})
 	EventBasedHoldInput() interface{}
+	ForceEmptyContentType() interface{}
+	SetForceEmptyContentType(val interface{})
+	ForceEmptyContentTypeInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -105,6 +113,9 @@ type StorageBucketObject interface {
 	Source() *string
 	SetSource(val *string)
 	SourceInput() *string
+	SourceMd5Hash() *string
+	SetSourceMd5Hash(val *string)
+	SourceMd5HashInput() *string
 	StorageClass() *string
 	SetStorageClass(val *string)
 	StorageClassInput() *string
@@ -162,6 +173,7 @@ type StorageBucketObject interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutContexts(value *StorageBucketObjectContexts)
 	PutCustomerEncryption(value *StorageBucketObjectCustomerEncryption)
 	PutRetention(value *StorageBucketObjectRetention)
 	PutTimeouts(value *StorageBucketObjectTimeouts)
@@ -171,9 +183,12 @@ type StorageBucketObject interface {
 	ResetContentEncoding()
 	ResetContentLanguage()
 	ResetContentType()
+	ResetContexts()
 	ResetCustomerEncryption()
+	ResetDeletionPolicy()
 	ResetDetectMd5Hash()
 	ResetEventBasedHold()
+	ResetForceEmptyContentType()
 	ResetId()
 	ResetKmsKeyName()
 	ResetMetadata()
@@ -182,6 +197,7 @@ type StorageBucketObject interface {
 	ResetOverrideLogicalId()
 	ResetRetention()
 	ResetSource()
+	ResetSourceMd5Hash()
 	ResetStorageClass()
 	ResetTemporaryHold()
 	ResetTimeouts()
@@ -373,6 +389,26 @@ func (j *jsiiProxy_StorageBucketObject) ContentTypeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_StorageBucketObject) Contexts() StorageBucketObjectContextsOutputReference {
+	var returns StorageBucketObjectContextsOutputReference
+	_jsii_.Get(
+		j,
+		"contexts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucketObject) ContextsInput() *StorageBucketObjectContexts {
+	var returns *StorageBucketObjectContexts
+	_jsii_.Get(
+		j,
+		"contextsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StorageBucketObject) Count() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -408,6 +444,26 @@ func (j *jsiiProxy_StorageBucketObject) CustomerEncryptionInput() *StorageBucket
 	_jsii_.Get(
 		j,
 		"customerEncryptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucketObject) DeletionPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deletionPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucketObject) DeletionPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deletionPolicyInput",
 		&returns,
 	)
 	return returns
@@ -458,6 +514,26 @@ func (j *jsiiProxy_StorageBucketObject) EventBasedHoldInput() interface{} {
 	_jsii_.Get(
 		j,
 		"eventBasedHoldInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucketObject) ForceEmptyContentType() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceEmptyContentType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucketObject) ForceEmptyContentTypeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceEmptyContentTypeInput",
 		&returns,
 	)
 	return returns
@@ -723,6 +799,26 @@ func (j *jsiiProxy_StorageBucketObject) SourceInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_StorageBucketObject) SourceMd5Hash() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceMd5Hash",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucketObject) SourceMd5HashInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceMd5HashInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StorageBucketObject) StorageClass() *string {
 	var returns *string
 	_jsii_.Get(
@@ -814,7 +910,7 @@ func (j *jsiiProxy_StorageBucketObject) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/storage_bucket_object google_storage_bucket_object} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object google_storage_bucket_object} Resource.
 func NewStorageBucketObject(scope constructs.Construct, id *string, config *StorageBucketObjectConfig) StorageBucketObject {
 	_init_.Initialize()
 
@@ -832,7 +928,7 @@ func NewStorageBucketObject(scope constructs.Construct, id *string, config *Stor
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/storage_bucket_object google_storage_bucket_object} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object google_storage_bucket_object} Resource.
 func NewStorageBucketObject_Override(s StorageBucketObject, scope constructs.Construct, id *string, config *StorageBucketObjectConfig) {
 	_init_.Initialize()
 
@@ -942,6 +1038,17 @@ func (j *jsiiProxy_StorageBucketObject)SetCount(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_StorageBucketObject)SetDeletionPolicy(val *string) {
+	if err := j.validateSetDeletionPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deletionPolicy",
+		val,
+	)
+}
+
 func (j *jsiiProxy_StorageBucketObject)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
@@ -968,6 +1075,17 @@ func (j *jsiiProxy_StorageBucketObject)SetEventBasedHold(val interface{}) {
 	_jsii_.Set(
 		j,
 		"eventBasedHold",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageBucketObject)SetForceEmptyContentType(val interface{}) {
+	if err := j.validateSetForceEmptyContentTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"forceEmptyContentType",
 		val,
 	)
 }
@@ -1061,6 +1179,17 @@ func (j *jsiiProxy_StorageBucketObject)SetSource(val *string) {
 	_jsii_.Set(
 		j,
 		"source",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageBucketObject)SetSourceMd5Hash(val *string) {
+	if err := j.validateSetSourceMd5HashParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sourceMd5Hash",
 		val,
 	)
 }
@@ -1440,6 +1569,17 @@ func (s *jsiiProxy_StorageBucketObject) OverrideLogicalId(newLogicalId *string) 
 	)
 }
 
+func (s *jsiiProxy_StorageBucketObject) PutContexts(value *StorageBucketObjectContexts) {
+	if err := s.validatePutContextsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putContexts",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_StorageBucketObject) PutCustomerEncryption(value *StorageBucketObjectCustomerEncryption) {
 	if err := s.validatePutCustomerEncryptionParameters(value); err != nil {
 		panic(err)
@@ -1521,10 +1661,26 @@ func (s *jsiiProxy_StorageBucketObject) ResetContentType() {
 	)
 }
 
+func (s *jsiiProxy_StorageBucketObject) ResetContexts() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetContexts",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_StorageBucketObject) ResetCustomerEncryption() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetCustomerEncryption",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageBucketObject) ResetDeletionPolicy() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDeletionPolicy",
 		nil, // no parameters
 	)
 }
@@ -1541,6 +1697,14 @@ func (s *jsiiProxy_StorageBucketObject) ResetEventBasedHold() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetEventBasedHold",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageBucketObject) ResetForceEmptyContentType() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetForceEmptyContentType",
 		nil, // no parameters
 	)
 }
@@ -1589,6 +1753,14 @@ func (s *jsiiProxy_StorageBucketObject) ResetSource() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetSource",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageBucketObject) ResetSourceMd5Hash() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSourceMd5Hash",
 		nil, // no parameters
 	)
 }

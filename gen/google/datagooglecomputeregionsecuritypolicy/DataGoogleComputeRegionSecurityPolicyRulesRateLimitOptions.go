@@ -1,0 +1,6 @@
+package datagooglecomputeregionsecuritypolicy
+
+
+type DataGoogleComputeRegionSecurityPolicyRulesRateLimitOptions struct {
+}
+

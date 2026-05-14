@@ -13,6 +13,7 @@ type DataGoogleSqlDatabaseInstancesInstancesSettingsOutputReference interface {
 	ActivationPolicy() *string
 	ActiveDirectoryConfig() DataGoogleSqlDatabaseInstancesInstancesSettingsActiveDirectoryConfigList
 	AdvancedMachineFeatures() DataGoogleSqlDatabaseInstancesInstancesSettingsAdvancedMachineFeaturesList
+	AutoUpgradeEnabled() cdktf.IResolvable
 	AvailabilityType() *string
 	BackupConfiguration() DataGoogleSqlDatabaseInstancesInstancesSettingsBackupConfigurationList
 	Collation() *string
@@ -26,12 +27,14 @@ type DataGoogleSqlDatabaseInstancesInstancesSettingsOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ConnectionPoolConfig() DataGoogleSqlDatabaseInstancesInstancesSettingsConnectionPoolConfigList
 	ConnectorEnforcement() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DataApiAccess() *string
 	DatabaseFlags() DataGoogleSqlDatabaseInstancesInstancesSettingsDatabaseFlagsList
 	DataCacheConfig() DataGoogleSqlDatabaseInstancesInstancesSettingsDataCacheConfigList
 	DeletionProtectionEnabled() cdktf.IResolvable
@@ -41,8 +44,11 @@ type DataGoogleSqlDatabaseInstancesInstancesSettingsOutputReference interface {
 	DiskSize() *float64
 	DiskType() *string
 	Edition() *string
+	EffectiveAvailabilityType() *string
 	EnableDataplexIntegration() cdktf.IResolvable
 	EnableGoogleMlIntegration() cdktf.IResolvable
+	EntraidConfig() DataGoogleSqlDatabaseInstancesInstancesSettingsEntraidConfigList
+	FinalBackupConfig() DataGoogleSqlDatabaseInstancesInstancesSettingsFinalBackupConfigList
 	// Experimental.
 	Fqn() *string
 	InsightsConfig() DataGoogleSqlDatabaseInstancesInstancesSettingsInsightsConfigList
@@ -53,6 +59,7 @@ type DataGoogleSqlDatabaseInstancesInstancesSettingsOutputReference interface {
 	MaintenanceWindow() DataGoogleSqlDatabaseInstancesInstancesSettingsMaintenanceWindowList
 	PasswordValidationPolicy() DataGoogleSqlDatabaseInstancesInstancesSettingsPasswordValidationPolicyList
 	PricingPlan() *string
+	ReadPoolAutoScaleConfig() DataGoogleSqlDatabaseInstancesInstancesSettingsReadPoolAutoScaleConfigList
 	RetainBackupsOnDelete() cdktf.IResolvable
 	SqlServerAuditConfig() DataGoogleSqlDatabaseInstancesInstancesSettingsSqlServerAuditConfigList
 	// Experimental.
@@ -136,6 +143,16 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsOutputReferenc
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsOutputReference) AutoUpgradeEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"autoUpgradeEnabled",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsOutputReference) AvailabilityType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -186,6 +203,16 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsOutputReferenc
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsOutputReference) ConnectionPoolConfig() DataGoogleSqlDatabaseInstancesInstancesSettingsConnectionPoolConfigList {
+	var returns DataGoogleSqlDatabaseInstancesInstancesSettingsConnectionPoolConfigList
+	_jsii_.Get(
+		j,
+		"connectionPoolConfig",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsOutputReference) ConnectorEnforcement() *string {
 	var returns *string
 	_jsii_.Get(
@@ -201,6 +228,16 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsOutputReferenc
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsOutputReference) DataApiAccess() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataApiAccess",
 		&returns,
 	)
 	return returns
@@ -296,6 +333,16 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsOutputReferenc
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsOutputReference) EffectiveAvailabilityType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"effectiveAvailabilityType",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsOutputReference) EnableDataplexIntegration() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 	_jsii_.Get(
@@ -311,6 +358,26 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsOutputReferenc
 	_jsii_.Get(
 		j,
 		"enableGoogleMlIntegration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsOutputReference) EntraidConfig() DataGoogleSqlDatabaseInstancesInstancesSettingsEntraidConfigList {
+	var returns DataGoogleSqlDatabaseInstancesInstancesSettingsEntraidConfigList
+	_jsii_.Get(
+		j,
+		"entraidConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsOutputReference) FinalBackupConfig() DataGoogleSqlDatabaseInstancesInstancesSettingsFinalBackupConfigList {
+	var returns DataGoogleSqlDatabaseInstancesInstancesSettingsFinalBackupConfigList
+	_jsii_.Get(
+		j,
+		"finalBackupConfig",
 		&returns,
 	)
 	return returns
@@ -391,6 +458,16 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsOutputReferenc
 	_jsii_.Get(
 		j,
 		"pricingPlan",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsOutputReference) ReadPoolAutoScaleConfig() DataGoogleSqlDatabaseInstancesInstancesSettingsReadPoolAutoScaleConfigList {
+	var returns DataGoogleSqlDatabaseInstancesInstancesSettingsReadPoolAutoScaleConfigList
+	_jsii_.Get(
+		j,
+		"readPoolAutoScaleConfig",
 		&returns,
 	)
 	return returns

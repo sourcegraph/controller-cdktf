@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/networksecuritymirroringendpointgroup/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/network_security_mirroring_endpoint_group google_network_security_mirroring_endpoint_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_mirroring_endpoint_group google_network_security_mirroring_endpoint_group}.
 type NetworkSecurityMirroringEndpointGroup interface {
 	cdktf.TerraformResource
 	Associations() NetworkSecurityMirroringEndpointGroupAssociationsList
@@ -59,6 +59,9 @@ type NetworkSecurityMirroringEndpointGroup interface {
 	MirroringDeploymentGroup() *string
 	SetMirroringDeploymentGroup(val *string)
 	MirroringDeploymentGroupInput() *string
+	MirroringDeploymentGroups() *[]*string
+	SetMirroringDeploymentGroups(val *[]*string)
+	MirroringDeploymentGroupsInput() *[]*string
 	MirroringEndpointGroupId() *string
 	SetMirroringEndpointGroupId(val *string)
 	MirroringEndpointGroupIdInput() *string
@@ -89,6 +92,9 @@ type NetworkSecurityMirroringEndpointGroup interface {
 	TerraformResourceType() *string
 	Timeouts() NetworkSecurityMirroringEndpointGroupTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	Type() *string
+	SetType(val *string)
+	TypeInput() *string
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
@@ -137,11 +143,14 @@ type NetworkSecurityMirroringEndpointGroup interface {
 	ResetDescription()
 	ResetId()
 	ResetLabels()
+	ResetMirroringDeploymentGroup()
+	ResetMirroringDeploymentGroups()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
+	ResetType()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -390,6 +399,26 @@ func (j *jsiiProxy_NetworkSecurityMirroringEndpointGroup) MirroringDeploymentGro
 	return returns
 }
 
+func (j *jsiiProxy_NetworkSecurityMirroringEndpointGroup) MirroringDeploymentGroups() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"mirroringDeploymentGroups",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkSecurityMirroringEndpointGroup) MirroringDeploymentGroupsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"mirroringDeploymentGroupsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NetworkSecurityMirroringEndpointGroup) MirroringEndpointGroupId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -560,6 +589,26 @@ func (j *jsiiProxy_NetworkSecurityMirroringEndpointGroup) TimeoutsInput() interf
 	return returns
 }
 
+func (j *jsiiProxy_NetworkSecurityMirroringEndpointGroup) Type() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"type",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkSecurityMirroringEndpointGroup) TypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"typeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NetworkSecurityMirroringEndpointGroup) UpdateTime() *string {
 	var returns *string
 	_jsii_.Get(
@@ -571,7 +620,7 @@ func (j *jsiiProxy_NetworkSecurityMirroringEndpointGroup) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/network_security_mirroring_endpoint_group google_network_security_mirroring_endpoint_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_mirroring_endpoint_group google_network_security_mirroring_endpoint_group} Resource.
 func NewNetworkSecurityMirroringEndpointGroup(scope constructs.Construct, id *string, config *NetworkSecurityMirroringEndpointGroupConfig) NetworkSecurityMirroringEndpointGroup {
 	_init_.Initialize()
 
@@ -589,7 +638,7 @@ func NewNetworkSecurityMirroringEndpointGroup(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/network_security_mirroring_endpoint_group google_network_security_mirroring_endpoint_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_mirroring_endpoint_group google_network_security_mirroring_endpoint_group} Resource.
 func NewNetworkSecurityMirroringEndpointGroup_Override(n NetworkSecurityMirroringEndpointGroup, scope constructs.Construct, id *string, config *NetworkSecurityMirroringEndpointGroupConfig) {
 	_init_.Initialize()
 
@@ -704,6 +753,17 @@ func (j *jsiiProxy_NetworkSecurityMirroringEndpointGroup)SetMirroringDeploymentG
 	)
 }
 
+func (j *jsiiProxy_NetworkSecurityMirroringEndpointGroup)SetMirroringDeploymentGroups(val *[]*string) {
+	if err := j.validateSetMirroringDeploymentGroupsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"mirroringDeploymentGroups",
+		val,
+	)
+}
+
 func (j *jsiiProxy_NetworkSecurityMirroringEndpointGroup)SetMirroringEndpointGroupId(val *string) {
 	if err := j.validateSetMirroringEndpointGroupIdParameters(val); err != nil {
 		panic(err)
@@ -741,6 +801,17 @@ func (j *jsiiProxy_NetworkSecurityMirroringEndpointGroup)SetProvisioners(val *[]
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkSecurityMirroringEndpointGroup)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"type",
 		val,
 	)
 }
@@ -1133,6 +1204,22 @@ func (n *jsiiProxy_NetworkSecurityMirroringEndpointGroup) ResetLabels() {
 	)
 }
 
+func (n *jsiiProxy_NetworkSecurityMirroringEndpointGroup) ResetMirroringDeploymentGroup() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetMirroringDeploymentGroup",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkSecurityMirroringEndpointGroup) ResetMirroringDeploymentGroups() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetMirroringDeploymentGroups",
+		nil, // no parameters
+	)
+}
+
 func (n *jsiiProxy_NetworkSecurityMirroringEndpointGroup) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		n,
@@ -1153,6 +1240,14 @@ func (n *jsiiProxy_NetworkSecurityMirroringEndpointGroup) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkSecurityMirroringEndpointGroup) ResetType() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetType",
 		nil, // no parameters
 	)
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputepublicadvertisedprefix/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_public_advertised_prefix google_compute_public_advertised_prefix}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_compute_public_advertised_prefix google_compute_public_advertised_prefix}.
 type GoogleComputePublicAdvertisedPrefix interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -48,6 +48,9 @@ type GoogleComputePublicAdvertisedPrefix interface {
 	IpCidrRange() *string
 	SetIpCidrRange(val *string)
 	IpCidrRangeInput() *string
+	Ipv6AccessType() *string
+	SetIpv6AccessType(val *string)
+	Ipv6AccessTypeInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -128,7 +131,9 @@ type GoogleComputePublicAdvertisedPrefix interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *GoogleComputePublicAdvertisedPrefixTimeouts)
 	ResetDescription()
+	ResetDnsVerificationIp()
 	ResetId()
+	ResetIpv6AccessType()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -308,6 +313,26 @@ func (j *jsiiProxy_GoogleComputePublicAdvertisedPrefix) IpCidrRangeInput() *stri
 	_jsii_.Get(
 		j,
 		"ipCidrRangeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputePublicAdvertisedPrefix) Ipv6AccessType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6AccessType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputePublicAdvertisedPrefix) Ipv6AccessTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6AccessTypeInput",
 		&returns,
 	)
 	return returns
@@ -494,7 +519,7 @@ func (j *jsiiProxy_GoogleComputePublicAdvertisedPrefix) TimeoutsInput() interfac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_public_advertised_prefix google_compute_public_advertised_prefix} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_compute_public_advertised_prefix google_compute_public_advertised_prefix} Resource.
 func NewGoogleComputePublicAdvertisedPrefix(scope constructs.Construct, id *string, config *GoogleComputePublicAdvertisedPrefixConfig) GoogleComputePublicAdvertisedPrefix {
 	_init_.Initialize()
 
@@ -512,7 +537,7 @@ func NewGoogleComputePublicAdvertisedPrefix(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_public_advertised_prefix google_compute_public_advertised_prefix} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_compute_public_advertised_prefix google_compute_public_advertised_prefix} Resource.
 func NewGoogleComputePublicAdvertisedPrefix_Override(g GoogleComputePublicAdvertisedPrefix, scope constructs.Construct, id *string, config *GoogleComputePublicAdvertisedPrefixConfig) {
 	_init_.Initialize()
 
@@ -601,6 +626,17 @@ func (j *jsiiProxy_GoogleComputePublicAdvertisedPrefix)SetIpCidrRange(val *strin
 	_jsii_.Set(
 		j,
 		"ipCidrRange",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputePublicAdvertisedPrefix)SetIpv6AccessType(val *string) {
+	if err := j.validateSetIpv6AccessTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipv6AccessType",
 		val,
 	)
 }
@@ -1040,10 +1076,26 @@ func (g *jsiiProxy_GoogleComputePublicAdvertisedPrefix) ResetDescription() {
 	)
 }
 
+func (g *jsiiProxy_GoogleComputePublicAdvertisedPrefix) ResetDnsVerificationIp() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDnsVerificationIp",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputePublicAdvertisedPrefix) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputePublicAdvertisedPrefix) ResetIpv6AccessType() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIpv6AccessType",
 		nil, // no parameters
 	)
 }

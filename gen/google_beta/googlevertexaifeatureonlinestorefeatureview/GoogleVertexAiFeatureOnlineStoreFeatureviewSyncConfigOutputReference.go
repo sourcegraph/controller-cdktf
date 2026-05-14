@@ -20,6 +20,9 @@ type GoogleVertexAiFeatureOnlineStoreFeatureviewSyncConfigOutputReference interf
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	Continuous() interface{}
+	SetContinuous(val interface{})
+	ContinuousInput() interface{}
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -64,6 +67,7 @@ type GoogleVertexAiFeatureOnlineStoreFeatureviewSyncConfigOutputReference interf
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetContinuous()
 	ResetCron()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -95,6 +99,26 @@ func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureviewSyncConfigOutputRe
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureviewSyncConfigOutputReference) Continuous() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"continuous",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureviewSyncConfigOutputReference) ContinuousInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"continuousInput",
 		&returns,
 	)
 	return returns
@@ -216,6 +240,17 @@ func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureviewSyncConfigOutputRe
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureviewSyncConfigOutputReference)SetContinuous(val interface{}) {
+	if err := j.validateSetContinuousParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"continuous",
 		val,
 	)
 }
@@ -448,6 +483,14 @@ func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureviewSyncConfigOutputRe
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureviewSyncConfigOutputReference) ResetContinuous() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetContinuous",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureviewSyncConfigOutputReference) ResetCron() {

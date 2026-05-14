@@ -44,7 +44,19 @@ func (c *jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference) validateIn
 	return nil
 }
 
+func (c *jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference) validatePutAdditionalIpRangesConfigParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference) validatePutAdditionalPodRangesConfigParameters(value *ContainerClusterIpAllocationPolicyAdditionalPodRangesConfig) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference) validatePutAutoIpamConfigParameters(value *ContainerClusterIpAllocationPolicyAutoIpamConfig) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference) validatePutNetworkTierConfigParameters(value *ContainerClusterIpAllocationPolicyNetworkTierConfig) error {
 	return nil
 }
 

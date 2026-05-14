@@ -48,6 +48,10 @@ func (b *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsValidatorCo
 	return nil
 }
 
+func (j *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsValidatorConfigOutputReference) validateSetBeaconFeeRecipientParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsValidatorConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

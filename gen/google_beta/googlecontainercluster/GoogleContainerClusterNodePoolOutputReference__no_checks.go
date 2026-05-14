@@ -60,6 +60,10 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) validatePutNod
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) validatePutNodeDrainConfigParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) validatePutPlacementPolicyParameters(value *GoogleContainerClusterNodePoolPlacementPolicy) error {
 	return nil
 }

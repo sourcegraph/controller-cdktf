@@ -72,6 +72,10 @@ func (g *jsiiProxy_GoogleStorageBucketObject) validateOverrideLogicalIdParameter
 	return nil
 }
 
+func (g *jsiiProxy_GoogleStorageBucketObject) validatePutContextsParameters(value *GoogleStorageBucketObjectContexts) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleStorageBucketObject) validatePutCustomerEncryptionParameters(value *GoogleStorageBucketObjectCustomerEncryption) error {
 	return nil
 }
@@ -136,11 +140,19 @@ func (j *jsiiProxy_GoogleStorageBucketObject) validateSetCountParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_GoogleStorageBucketObject) validateSetDeletionPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleStorageBucketObject) validateSetDetectMd5HashParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_GoogleStorageBucketObject) validateSetEventBasedHoldParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleStorageBucketObject) validateSetForceEmptyContentTypeParameters(val interface{}) error {
 	return nil
 }
 
@@ -169,6 +181,10 @@ func (j *jsiiProxy_GoogleStorageBucketObject) validateSetProvisionersParameters(
 }
 
 func (j *jsiiProxy_GoogleStorageBucketObject) validateSetSourceParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleStorageBucketObject) validateSetSourceMd5HashParameters(val *string) error {
 	return nil
 }
 

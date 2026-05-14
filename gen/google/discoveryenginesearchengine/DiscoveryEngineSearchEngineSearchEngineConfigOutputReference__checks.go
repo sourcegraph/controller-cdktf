@@ -171,6 +171,14 @@ func (j *jsiiProxy_DiscoveryEngineSearchEngineSearchEngineConfigOutputReference)
 	return nil
 }
 
+func (j *jsiiProxy_DiscoveryEngineSearchEngineSearchEngineConfigOutputReference) validateSetRequiredSubscriptionTierParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DiscoveryEngineSearchEngineSearchEngineConfigOutputReference) validateSetSearchAddOnsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -41,6 +41,11 @@ type GoogleNetworkSecurityAuthzPolicyHttpRulesFromNotSourcesPrincipalsOutputRefe
 	Prefix() *string
 	SetPrefix(val *string)
 	PrefixInput() *string
+	Principal() GoogleNetworkSecurityAuthzPolicyHttpRulesFromNotSourcesPrincipalsPrincipalOutputReference
+	PrincipalInput() *GoogleNetworkSecurityAuthzPolicyHttpRulesFromNotSourcesPrincipalsPrincipal
+	PrincipalSelector() *string
+	SetPrincipalSelector(val *string)
+	PrincipalSelectorInput() *string
 	Suffix() *string
 	SetSuffix(val *string)
 	SuffixInput() *string
@@ -76,10 +81,13 @@ type GoogleNetworkSecurityAuthzPolicyHttpRulesFromNotSourcesPrincipalsOutputRefe
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutPrincipal(value *GoogleNetworkSecurityAuthzPolicyHttpRulesFromNotSourcesPrincipalsPrincipal)
 	ResetContains()
 	ResetExact()
 	ResetIgnoreCase()
 	ResetPrefix()
+	ResetPrincipal()
+	ResetPrincipalSelector()
 	ResetSuffix()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -226,6 +234,46 @@ func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesFromNotSourcesPrinci
 	return returns
 }
 
+func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesFromNotSourcesPrincipalsOutputReference) Principal() GoogleNetworkSecurityAuthzPolicyHttpRulesFromNotSourcesPrincipalsPrincipalOutputReference {
+	var returns GoogleNetworkSecurityAuthzPolicyHttpRulesFromNotSourcesPrincipalsPrincipalOutputReference
+	_jsii_.Get(
+		j,
+		"principal",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesFromNotSourcesPrincipalsOutputReference) PrincipalInput() *GoogleNetworkSecurityAuthzPolicyHttpRulesFromNotSourcesPrincipalsPrincipal {
+	var returns *GoogleNetworkSecurityAuthzPolicyHttpRulesFromNotSourcesPrincipalsPrincipal
+	_jsii_.Get(
+		j,
+		"principalInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesFromNotSourcesPrincipalsOutputReference) PrincipalSelector() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"principalSelector",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesFromNotSourcesPrincipalsOutputReference) PrincipalSelectorInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"principalSelectorInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesFromNotSourcesPrincipalsOutputReference) Suffix() *string {
 	var returns *string
 	_jsii_.Get(
@@ -367,6 +415,17 @@ func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesFromNotSourcesPrinci
 	_jsii_.Set(
 		j,
 		"prefix",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesFromNotSourcesPrincipalsOutputReference)SetPrincipalSelector(val *string) {
+	if err := j.validateSetPrincipalSelectorParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"principalSelector",
 		val,
 	)
 }
@@ -590,6 +649,17 @@ func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesFromNotSourcesPrinci
 	return returns
 }
 
+func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesFromNotSourcesPrincipalsOutputReference) PutPrincipal(value *GoogleNetworkSecurityAuthzPolicyHttpRulesFromNotSourcesPrincipalsPrincipal) {
+	if err := g.validatePutPrincipalParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putPrincipal",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesFromNotSourcesPrincipalsOutputReference) ResetContains() {
 	_jsii_.InvokeVoid(
 		g,
@@ -618,6 +688,22 @@ func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesFromNotSourcesPrinci
 	_jsii_.InvokeVoid(
 		g,
 		"resetPrefix",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesFromNotSourcesPrincipalsOutputReference) ResetPrincipal() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPrincipal",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesFromNotSourcesPrincipalsOutputReference) ResetPrincipalSelector() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPrincipalSelector",
 		nil, // no parameters
 	)
 }

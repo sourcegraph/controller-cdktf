@@ -1,0 +1,6 @@
+package networkservicesmulticastconsumerassociation
+
+
+type NetworkServicesMulticastConsumerAssociationState struct {
+}
+

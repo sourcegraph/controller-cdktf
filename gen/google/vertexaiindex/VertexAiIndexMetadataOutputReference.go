@@ -70,7 +70,6 @@ type VertexAiIndexMetadataOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutConfig(value *VertexAiIndexMetadataConfig)
-	ResetConfig()
 	ResetContentsDeltaUri()
 	ResetIsCompleteOverwrite()
 	// Produce the Token's value at resolution time.
@@ -517,14 +516,6 @@ func (v *jsiiProxy_VertexAiIndexMetadataOutputReference) PutConfig(value *Vertex
 		v,
 		"putConfig",
 		[]interface{}{value},
-	)
-}
-
-func (v *jsiiProxy_VertexAiIndexMetadataOutputReference) ResetConfig() {
-	_jsii_.InvokeVoid(
-		v,
-		"resetConfig",
-		nil, // no parameters
 	)
 }
 

@@ -56,6 +56,10 @@ func (j *jsiiProxy_VertexAiFeatureOnlineStoreFeatureviewSyncConfigOutputReferenc
 	return nil
 }
 
+func (j *jsiiProxy_VertexAiFeatureOnlineStoreFeatureviewSyncConfigOutputReference) validateSetContinuousParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VertexAiFeatureOnlineStoreFeatureviewSyncConfigOutputReference) validateSetCronParameters(val *string) error {
 	return nil
 }

@@ -10,6 +10,9 @@ import (
 
 type ComputeRegionInstanceTemplateDiskOutputReference interface {
 	cdktf.ComplexObject
+	Architecture() *string
+	SetArchitecture(val *string)
+	ArchitectureInput() *string
 	AutoDelete() interface{}
 	SetAutoDelete(val interface{})
 	AutoDeleteInput() interface{}
@@ -47,6 +50,9 @@ type ComputeRegionInstanceTemplateDiskOutputReference interface {
 	DiskTypeInput() *string
 	// Experimental.
 	Fqn() *string
+	GuestOsFeatures() *[]*string
+	SetGuestOsFeatures(val *[]*string)
+	GuestOsFeaturesInput() *[]*string
 	Interface() *string
 	SetInterface(val *string)
 	InterfaceInput() *string
@@ -83,6 +89,9 @@ type ComputeRegionInstanceTemplateDiskOutputReference interface {
 	SourceSnapshotEncryptionKey() ComputeRegionInstanceTemplateDiskSourceSnapshotEncryptionKeyOutputReference
 	SourceSnapshotEncryptionKeyInput() *ComputeRegionInstanceTemplateDiskSourceSnapshotEncryptionKey
 	SourceSnapshotInput() *string
+	StoragePool() *string
+	SetStoragePool(val *string)
+	StoragePoolInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -121,6 +130,7 @@ type ComputeRegionInstanceTemplateDiskOutputReference interface {
 	PutDiskEncryptionKey(value *ComputeRegionInstanceTemplateDiskDiskEncryptionKey)
 	PutSourceImageEncryptionKey(value *ComputeRegionInstanceTemplateDiskSourceImageEncryptionKey)
 	PutSourceSnapshotEncryptionKey(value *ComputeRegionInstanceTemplateDiskSourceSnapshotEncryptionKey)
+	ResetArchitecture()
 	ResetAutoDelete()
 	ResetBoot()
 	ResetDeviceName()
@@ -128,6 +138,7 @@ type ComputeRegionInstanceTemplateDiskOutputReference interface {
 	ResetDiskName()
 	ResetDiskSizeGb()
 	ResetDiskType()
+	ResetGuestOsFeatures()
 	ResetInterface()
 	ResetLabels()
 	ResetMode()
@@ -140,6 +151,7 @@ type ComputeRegionInstanceTemplateDiskOutputReference interface {
 	ResetSourceImageEncryptionKey()
 	ResetSourceSnapshot()
 	ResetSourceSnapshotEncryptionKey()
+	ResetStoragePool()
 	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -154,6 +166,26 @@ type ComputeRegionInstanceTemplateDiskOutputReference interface {
 // The jsii proxy struct for ComputeRegionInstanceTemplateDiskOutputReference
 type jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference) Architecture() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"architecture",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference) ArchitectureInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"architectureInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference) AutoDelete() interface{} {
@@ -331,6 +363,26 @@ func (j *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference) Fqn() *stri
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference) GuestOsFeatures() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"guestOsFeatures",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference) GuestOsFeaturesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"guestOsFeaturesInput",
 		&returns,
 	)
 	return returns
@@ -586,6 +638,26 @@ func (j *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference) SourceSnaps
 	return returns
 }
 
+func (j *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference) StoragePool() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storagePool",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference) StoragePoolInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storagePoolInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -651,6 +723,17 @@ func NewComputeRegionInstanceTemplateDiskOutputReference_Override(c ComputeRegio
 		"@cdktf/provider-google.computeRegionInstanceTemplate.ComputeRegionInstanceTemplateDiskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
+	)
+}
+
+func (j *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference)SetArchitecture(val *string) {
+	if err := j.validateSetArchitectureParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"architecture",
+		val,
 	)
 }
 
@@ -738,6 +821,17 @@ func (j *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference)SetDiskType(
 	_jsii_.Set(
 		j,
 		"diskType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference)SetGuestOsFeatures(val *[]*string) {
+	if err := j.validateSetGuestOsFeaturesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"guestOsFeatures",
 		val,
 	)
 }
@@ -859,6 +953,17 @@ func (j *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference)SetSourceSna
 	_jsii_.Set(
 		j,
 		"sourceSnapshot",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference)SetStoragePool(val *string) {
+	if err := j.validateSetStoragePoolParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"storagePool",
 		val,
 	)
 }
@@ -1115,6 +1220,14 @@ func (c *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference) PutSourceSn
 	)
 }
 
+func (c *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference) ResetArchitecture() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetArchitecture",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference) ResetAutoDelete() {
 	_jsii_.InvokeVoid(
 		c,
@@ -1167,6 +1280,14 @@ func (c *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference) ResetDiskTy
 	_jsii_.InvokeVoid(
 		c,
 		"resetDiskType",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference) ResetGuestOsFeatures() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetGuestOsFeatures",
 		nil, // no parameters
 	)
 }
@@ -1263,6 +1384,14 @@ func (c *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference) ResetSource
 	_jsii_.InvokeVoid(
 		c,
 		"resetSourceSnapshotEncryptionKey",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference) ResetStoragePool() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetStoragePool",
 		nil, // no parameters
 	)
 }

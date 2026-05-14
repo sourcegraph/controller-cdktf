@@ -215,6 +215,17 @@ func (g *jsiiProxy_GoogleLookerInstance) validatePutAdminSettingsParameters(valu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleLookerInstance) validatePutControlledEgressConfigParameters(value *GoogleLookerInstanceControlledEgressConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleLookerInstance) validatePutCustomDomainParameters(value *GoogleLookerInstanceCustomDomain) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -260,6 +271,17 @@ func (g *jsiiProxy_GoogleLookerInstance) validatePutMaintenanceWindowParameters(
 }
 
 func (g *jsiiProxy_GoogleLookerInstance) validatePutOauthConfigParameters(value *GoogleLookerInstanceOauthConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleLookerInstance) validatePutPeriodicExportConfigParameters(value *GoogleLookerInstancePeriodicExportConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -384,6 +406,26 @@ func (j *jsiiProxy_GoogleLookerInstance) validateSetConsumerNetworkParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_GoogleLookerInstance) validateSetControlledEgressEnabledParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleLookerInstance) validateSetCountParameters(val interface{}) error {
 	switch val.(type) {
 	case *float64:
@@ -450,6 +492,26 @@ func (j *jsiiProxy_GoogleLookerInstance) validateSetDeletionPolicyParameters(val
 }
 
 func (j *jsiiProxy_GoogleLookerInstance) validateSetFipsEnabledParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleLookerInstance) validateSetGeminiEnabledParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

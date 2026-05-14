@@ -72,6 +72,18 @@ func (i *jsiiProxy_IamWorkloadIdentityPool) validateOverrideLogicalIdParameters(
 	return nil
 }
 
+func (i *jsiiProxy_IamWorkloadIdentityPool) validatePutAttestationRulesParameters(value interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IamWorkloadIdentityPool) validatePutInlineCertificateIssuanceConfigParameters(value *IamWorkloadIdentityPoolInlineCertificateIssuanceConfig) error {
+	return nil
+}
+
+func (i *jsiiProxy_IamWorkloadIdentityPool) validatePutInlineTrustConfigParameters(value *IamWorkloadIdentityPoolInlineTrustConfig) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamWorkloadIdentityPool) validatePutTimeoutsParameters(value *IamWorkloadIdentityPoolTimeouts) error {
 	return nil
 }
@@ -117,6 +129,10 @@ func (j *jsiiProxy_IamWorkloadIdentityPool) validateSetIdParameters(val *string)
 }
 
 func (j *jsiiProxy_IamWorkloadIdentityPool) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_IamWorkloadIdentityPool) validateSetModeParameters(val *string) error {
 	return nil
 }
 

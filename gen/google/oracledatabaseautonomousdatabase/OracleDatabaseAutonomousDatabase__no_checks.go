@@ -76,6 +76,10 @@ func (o *jsiiProxy_OracleDatabaseAutonomousDatabase) validatePutPropertiesParame
 	return nil
 }
 
+func (o *jsiiProxy_OracleDatabaseAutonomousDatabase) validatePutSourceConfigParameters(value *OracleDatabaseAutonomousDatabaseSourceConfig) error {
+	return nil
+}
+
 func (o *jsiiProxy_OracleDatabaseAutonomousDatabase) validatePutTimeoutsParameters(value *OracleDatabaseAutonomousDatabaseTimeouts) error {
 	return nil
 }
@@ -145,6 +149,14 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) validateSetLocationParamete
 }
 
 func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) validateSetNetworkParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) validateSetOdbNetworkParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) validateSetOdbSubnetParameters(val *string) error {
 	return nil
 }
 

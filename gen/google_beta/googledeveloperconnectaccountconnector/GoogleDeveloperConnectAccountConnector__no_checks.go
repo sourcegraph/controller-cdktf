@@ -72,7 +72,15 @@ func (g *jsiiProxy_GoogleDeveloperConnectAccountConnector) validateOverrideLogic
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDeveloperConnectAccountConnector) validatePutCustomOauthConfigParameters(value *GoogleDeveloperConnectAccountConnectorCustomOauthConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDeveloperConnectAccountConnector) validatePutProviderOauthConfigParameters(value *GoogleDeveloperConnectAccountConnectorProviderOauthConfig) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDeveloperConnectAccountConnector) validatePutProxyConfigParameters(value *GoogleDeveloperConnectAccountConnectorProxyConfig) error {
 	return nil
 }
 
@@ -109,6 +117,10 @@ func (j *jsiiProxy_GoogleDeveloperConnectAccountConnector) validateSetConnection
 }
 
 func (j *jsiiProxy_GoogleDeveloperConnectAccountConnector) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDeveloperConnectAccountConnector) validateSetEtagParameters(val *string) error {
 	return nil
 }
 

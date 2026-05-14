@@ -23,6 +23,7 @@ type DataGoogleContainerClusterUserManagedKeysConfigOutputReference interface {
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
 	ControlPlaneDiskEncryptionKey() *string
+	ControlPlaneDiskEncryptionKeyVersions() *[]*string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -129,6 +130,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterUserManagedKeysConfigOutputReferenc
 	_jsii_.Get(
 		j,
 		"controlPlaneDiskEncryptionKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterUserManagedKeysConfigOutputReference) ControlPlaneDiskEncryptionKeyVersions() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"controlPlaneDiskEncryptionKeyVersions",
 		&returns,
 	)
 	return returns

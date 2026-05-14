@@ -140,7 +140,15 @@ func (j *jsiiProxy_ComputeSnapshot) validateSetProvisionersParameters(val *[]int
 	return nil
 }
 
+func (j *jsiiProxy_ComputeSnapshot) validateSetSnapshotTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeSnapshot) validateSetSourceDiskParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeSnapshot) validateSetSourceInstantSnapshotParameters(val *string) error {
 	return nil
 }
 

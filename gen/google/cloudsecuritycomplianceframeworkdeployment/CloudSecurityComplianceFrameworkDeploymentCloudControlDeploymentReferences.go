@@ -1,0 +1,6 @@
+package cloudsecuritycomplianceframeworkdeployment
+
+
+type CloudSecurityComplianceFrameworkDeploymentCloudControlDeploymentReferences struct {
+}
+

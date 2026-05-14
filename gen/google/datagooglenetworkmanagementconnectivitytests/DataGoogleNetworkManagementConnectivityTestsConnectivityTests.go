@@ -1,0 +1,6 @@
+package datagooglenetworkmanagementconnectivitytests
+
+
+type DataGoogleNetworkManagementConnectivityTestsConnectivityTests struct {
+}
+

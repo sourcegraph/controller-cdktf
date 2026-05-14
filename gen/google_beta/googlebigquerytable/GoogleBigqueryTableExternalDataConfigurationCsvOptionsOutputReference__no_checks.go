@@ -84,6 +84,10 @@ func (j *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationCsvOptionsOutputR
 	return nil
 }
 
+func (j *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationCsvOptionsOutputReference) validateSetSourceColumnMatchParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationCsvOptionsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

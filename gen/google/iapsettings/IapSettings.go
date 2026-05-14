@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/iapsettings/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/iap_settings google_iap_settings}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_settings google_iap_settings}.
 type IapSettings interface {
 	cdktf.TerraformResource
 	AccessSettings() IapSettingsAccessSettingsOutputReference
@@ -402,7 +402,7 @@ func (j *jsiiProxy_IapSettings) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/iap_settings google_iap_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_settings google_iap_settings} Resource.
 func NewIapSettings(scope constructs.Construct, id *string, config *IapSettingsConfig) IapSettings {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewIapSettings(scope constructs.Construct, id *string, config *IapSettingsC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/iap_settings google_iap_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_settings google_iap_settings} Resource.
 func NewIapSettings_Override(i IapSettings, scope constructs.Construct, id *string, config *IapSettingsConfig) {
 	_init_.Initialize()
 

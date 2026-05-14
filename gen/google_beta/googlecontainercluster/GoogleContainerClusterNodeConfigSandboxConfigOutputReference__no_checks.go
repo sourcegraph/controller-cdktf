@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleContainerClusterNodeConfigSandboxConfigOutputReference)
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigSandboxConfigOutputReference) validateSetTypeParameters(val *string) error {
+	return nil
+}
+
 func validateNewGoogleContainerClusterNodeConfigSandboxConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func (g *jsiiProxy_GkeHubFeatureSpecOutputReference) validatePutMulticlusteringr
 	return nil
 }
 
+func (g *jsiiProxy_GkeHubFeatureSpecOutputReference) validatePutRbacrolebindingactuationParameters(value *GkeHubFeatureSpecRbacrolebindingactuation) error {
+	return nil
+}
+
+func (g *jsiiProxy_GkeHubFeatureSpecOutputReference) validatePutWorkloadidentityParameters(value *GkeHubFeatureSpecWorkloadidentity) error {
+	return nil
+}
+
 func (g *jsiiProxy_GkeHubFeatureSpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

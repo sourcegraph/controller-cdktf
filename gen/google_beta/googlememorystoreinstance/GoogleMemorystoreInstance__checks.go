@@ -226,6 +226,37 @@ func (g *jsiiProxy_GoogleMemorystoreInstance) validatePutCrossInstanceReplicatio
 	return nil
 }
 
+func (g *jsiiProxy_GoogleMemorystoreInstance) validatePutDesiredAutoCreatedEndpointsParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*GoogleMemorystoreInstanceDesiredAutoCreatedEndpoints:
+		value := value.(*[]*GoogleMemorystoreInstanceDesiredAutoCreatedEndpoints)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*GoogleMemorystoreInstanceDesiredAutoCreatedEndpoints:
+		value_ := value.([]*GoogleMemorystoreInstanceDesiredAutoCreatedEndpoints)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*GoogleMemorystoreInstanceDesiredAutoCreatedEndpoints; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleMemorystoreInstance) validatePutDesiredPscAutoConnectionsParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -513,6 +544,14 @@ func (j *jsiiProxy_GoogleMemorystoreInstance) validateSetInstanceIdParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_GoogleMemorystoreInstance) validateSetKmsKeyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleMemorystoreInstance) validateSetLabelsParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -530,6 +569,14 @@ func (j *jsiiProxy_GoogleMemorystoreInstance) validateSetLifecycleParameters(val
 }
 
 func (j *jsiiProxy_GoogleMemorystoreInstance) validateSetLocationParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleMemorystoreInstance) validateSetMaintenanceVersionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -608,6 +655,22 @@ func (j *jsiiProxy_GoogleMemorystoreInstance) validateSetProvisionersParameters(
 }
 
 func (j *jsiiProxy_GoogleMemorystoreInstance) validateSetReplicaCountParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleMemorystoreInstance) validateSetServerCaModeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleMemorystoreInstance) validateSetServerCaPoolParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

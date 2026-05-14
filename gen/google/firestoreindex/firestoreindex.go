@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/firestoreindex/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/firestore_index google_firestore_index}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_index google_firestore_index}.
 type FirestoreIndex interface {
 	cdktf.TerraformResource
 	ApiScope() *string
@@ -33,6 +33,9 @@ type FirestoreIndex interface {
 	Database() *string
 	SetDatabase(val *string)
 	DatabaseInput() *string
+	DeletionPolicy() *string
+	SetDeletionPolicy(val *string)
+	DeletionPolicyInput() *string
 	Density() *string
 	SetDensity(val *string)
 	DensityInput() *string
@@ -79,6 +82,9 @@ type FirestoreIndex interface {
 	QueryScopeInput() *string
 	// Experimental.
 	RawOverrides() interface{}
+	SkipWait() interface{}
+	SetSkipWait(val interface{})
+	SkipWaitInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -87,6 +93,9 @@ type FirestoreIndex interface {
 	TerraformResourceType() *string
 	Timeouts() FirestoreIndexTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	Unique() interface{}
+	SetUnique(val interface{})
+	UniqueInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -134,6 +143,7 @@ type FirestoreIndex interface {
 	PutTimeouts(value *FirestoreIndexTimeouts)
 	ResetApiScope()
 	ResetDatabase()
+	ResetDeletionPolicy()
 	ResetDensity()
 	ResetId()
 	ResetMultikey()
@@ -142,7 +152,9 @@ type FirestoreIndex interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetQueryScope()
+	ResetSkipWait()
 	ResetTimeouts()
+	ResetUnique()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -256,6 +268,26 @@ func (j *jsiiProxy_FirestoreIndex) DatabaseInput() *string {
 	_jsii_.Get(
 		j,
 		"databaseInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FirestoreIndex) DeletionPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deletionPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FirestoreIndex) DeletionPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deletionPolicyInput",
 		&returns,
 	)
 	return returns
@@ -481,6 +513,26 @@ func (j *jsiiProxy_FirestoreIndex) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_FirestoreIndex) SkipWait() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipWait",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FirestoreIndex) SkipWaitInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipWaitInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FirestoreIndex) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -531,8 +583,28 @@ func (j *jsiiProxy_FirestoreIndex) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_FirestoreIndex) Unique() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"unique",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/firestore_index google_firestore_index} Resource.
+func (j *jsiiProxy_FirestoreIndex) UniqueInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"uniqueInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_index google_firestore_index} Resource.
 func NewFirestoreIndex(scope constructs.Construct, id *string, config *FirestoreIndexConfig) FirestoreIndex {
 	_init_.Initialize()
 
@@ -550,7 +622,7 @@ func NewFirestoreIndex(scope constructs.Construct, id *string, config *Firestore
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/firestore_index google_firestore_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_index google_firestore_index} Resource.
 func NewFirestoreIndex_Override(f FirestoreIndex, scope constructs.Construct, id *string, config *FirestoreIndexConfig) {
 	_init_.Initialize()
 
@@ -612,6 +684,17 @@ func (j *jsiiProxy_FirestoreIndex)SetDatabase(val *string) {
 	_jsii_.Set(
 		j,
 		"database",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FirestoreIndex)SetDeletionPolicy(val *string) {
+	if err := j.validateSetDeletionPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deletionPolicy",
 		val,
 	)
 }
@@ -713,6 +796,28 @@ func (j *jsiiProxy_FirestoreIndex)SetQueryScope(val *string) {
 	_jsii_.Set(
 		j,
 		"queryScope",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FirestoreIndex)SetSkipWait(val interface{}) {
+	if err := j.validateSetSkipWaitParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"skipWait",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FirestoreIndex)SetUnique(val interface{}) {
+	if err := j.validateSetUniqueParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"unique",
 		val,
 	)
 }
@@ -1108,6 +1213,14 @@ func (f *jsiiProxy_FirestoreIndex) ResetDatabase() {
 	)
 }
 
+func (f *jsiiProxy_FirestoreIndex) ResetDeletionPolicy() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetDeletionPolicy",
+		nil, // no parameters
+	)
+}
+
 func (f *jsiiProxy_FirestoreIndex) ResetDensity() {
 	_jsii_.InvokeVoid(
 		f,
@@ -1156,10 +1269,26 @@ func (f *jsiiProxy_FirestoreIndex) ResetQueryScope() {
 	)
 }
 
+func (f *jsiiProxy_FirestoreIndex) ResetSkipWait() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetSkipWait",
+		nil, // no parameters
+	)
+}
+
 func (f *jsiiProxy_FirestoreIndex) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FirestoreIndex) ResetUnique() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetUnique",
 		nil, // no parameters
 	)
 }

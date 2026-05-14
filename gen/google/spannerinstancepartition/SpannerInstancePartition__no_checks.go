@@ -72,6 +72,10 @@ func (s *jsiiProxy_SpannerInstancePartition) validateOverrideLogicalIdParameters
 	return nil
 }
 
+func (s *jsiiProxy_SpannerInstancePartition) validatePutAutoscalingConfigParameters(value *SpannerInstancePartitionAutoscalingConfig) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpannerInstancePartition) validatePutTimeoutsParameters(value *SpannerInstancePartitionTimeouts) error {
 	return nil
 }

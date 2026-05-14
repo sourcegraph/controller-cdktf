@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagooglecloudrunv2job/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/cloud_run_v2_job google_cloud_run_v2_job}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/cloud_run_v2_job google_cloud_run_v2_job}.
 type DataGoogleCloudRunV2Job interface {
 	cdktf.TerraformDataSource
 	Annotations() cdktf.StringMap
@@ -619,7 +619,7 @@ func (j *jsiiProxy_DataGoogleCloudRunV2Job) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/cloud_run_v2_job google_cloud_run_v2_job} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/cloud_run_v2_job google_cloud_run_v2_job} Data Source.
 func NewDataGoogleCloudRunV2Job(scope constructs.Construct, id *string, config *DataGoogleCloudRunV2JobConfig) DataGoogleCloudRunV2Job {
 	_init_.Initialize()
 
@@ -637,7 +637,7 @@ func NewDataGoogleCloudRunV2Job(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/cloud_run_v2_job google_cloud_run_v2_job} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/cloud_run_v2_job google_cloud_run_v2_job} Data Source.
 func NewDataGoogleCloudRunV2Job_Override(d DataGoogleCloudRunV2Job, scope constructs.Construct, id *string, config *DataGoogleCloudRunV2JobConfig) {
 	_init_.Initialize()
 

@@ -171,6 +171,14 @@ func (j *jsiiProxy_GoogleNetworkSecuritySecurityProfileCustomMirroringProfileOut
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetworkSecuritySecurityProfileCustomMirroringProfileOutputReference) validateSetMirroringDeploymentGroupsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetworkSecuritySecurityProfileCustomMirroringProfileOutputReference) validateSetMirroringEndpointGroupParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

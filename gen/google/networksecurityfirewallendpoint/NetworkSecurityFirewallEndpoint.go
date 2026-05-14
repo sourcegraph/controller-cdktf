@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/networksecurityfirewallendpoint/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/network_security_firewall_endpoint google_network_security_firewall_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_firewall_endpoint google_network_security_firewall_endpoint}.
 type NetworkSecurityFirewallEndpoint interface {
 	cdktf.TerraformResource
 	AssociatedNetworks() *[]*string
@@ -34,6 +34,8 @@ type NetworkSecurityFirewallEndpoint interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	EffectiveLabels() cdktf.StringMap
+	EndpointSettings() NetworkSecurityFirewallEndpointEndpointSettingsOutputReference
+	EndpointSettingsInput() *NetworkSecurityFirewallEndpointEndpointSettings
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -129,7 +131,10 @@ type NetworkSecurityFirewallEndpoint interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutEndpointSettings(value *NetworkSecurityFirewallEndpointEndpointSettings)
 	PutTimeouts(value *NetworkSecurityFirewallEndpointTimeouts)
+	ResetBillingProjectId()
+	ResetEndpointSettings()
 	ResetId()
 	ResetLabels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -249,6 +254,26 @@ func (j *jsiiProxy_NetworkSecurityFirewallEndpoint) EffectiveLabels() cdktf.Stri
 	_jsii_.Get(
 		j,
 		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkSecurityFirewallEndpoint) EndpointSettings() NetworkSecurityFirewallEndpointEndpointSettingsOutputReference {
+	var returns NetworkSecurityFirewallEndpointEndpointSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"endpointSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkSecurityFirewallEndpoint) EndpointSettingsInput() *NetworkSecurityFirewallEndpointEndpointSettings {
+	var returns *NetworkSecurityFirewallEndpointEndpointSettings
+	_jsii_.Get(
+		j,
+		"endpointSettingsInput",
 		&returns,
 	)
 	return returns
@@ -535,7 +560,7 @@ func (j *jsiiProxy_NetworkSecurityFirewallEndpoint) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/network_security_firewall_endpoint google_network_security_firewall_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_firewall_endpoint google_network_security_firewall_endpoint} Resource.
 func NewNetworkSecurityFirewallEndpoint(scope constructs.Construct, id *string, config *NetworkSecurityFirewallEndpointConfig) NetworkSecurityFirewallEndpoint {
 	_init_.Initialize()
 
@@ -553,7 +578,7 @@ func NewNetworkSecurityFirewallEndpoint(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/network_security_firewall_endpoint google_network_security_firewall_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_firewall_endpoint google_network_security_firewall_endpoint} Resource.
 func NewNetworkSecurityFirewallEndpoint_Override(n NetworkSecurityFirewallEndpoint, scope constructs.Construct, id *string, config *NetworkSecurityFirewallEndpointConfig) {
 	_init_.Initialize()
 
@@ -1051,6 +1076,17 @@ func (n *jsiiProxy_NetworkSecurityFirewallEndpoint) OverrideLogicalId(newLogical
 	)
 }
 
+func (n *jsiiProxy_NetworkSecurityFirewallEndpoint) PutEndpointSettings(value *NetworkSecurityFirewallEndpointEndpointSettings) {
+	if err := n.validatePutEndpointSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putEndpointSettings",
+		[]interface{}{value},
+	)
+}
+
 func (n *jsiiProxy_NetworkSecurityFirewallEndpoint) PutTimeouts(value *NetworkSecurityFirewallEndpointTimeouts) {
 	if err := n.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1059,6 +1095,22 @@ func (n *jsiiProxy_NetworkSecurityFirewallEndpoint) PutTimeouts(value *NetworkSe
 		n,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (n *jsiiProxy_NetworkSecurityFirewallEndpoint) ResetBillingProjectId() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetBillingProjectId",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkSecurityFirewallEndpoint) ResetEndpointSettings() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetEndpointSettings",
+		nil, // no parameters
 	)
 }
 

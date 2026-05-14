@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledatastreamprivateconnection/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_datastream_private_connection google_datastream_private_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_datastream_private_connection google_datastream_private_connection}.
 type GoogleDatastreamPrivateConnection interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -27,6 +27,9 @@ type GoogleDatastreamPrivateConnection interface {
 	CreateWithoutValidation() interface{}
 	SetCreateWithoutValidation(val interface{})
 	CreateWithoutValidationInput() interface{}
+	DeletionPolicy() *string
+	SetDeletionPolicy(val *string)
+	DeletionPolicyInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -74,6 +77,8 @@ type GoogleDatastreamPrivateConnection interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	PscInterfaceConfig() GoogleDatastreamPrivateConnectionPscInterfaceConfigOutputReference
+	PscInterfaceConfigInput() *GoogleDatastreamPrivateConnectionPscInterfaceConfig
 	// Experimental.
 	RawOverrides() interface{}
 	State() *string
@@ -131,16 +136,20 @@ type GoogleDatastreamPrivateConnection interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutPscInterfaceConfig(value *GoogleDatastreamPrivateConnectionPscInterfaceConfig)
 	PutTimeouts(value *GoogleDatastreamPrivateConnectionTimeouts)
 	PutVpcPeeringConfig(value *GoogleDatastreamPrivateConnectionVpcPeeringConfig)
 	ResetCreateWithoutValidation()
+	ResetDeletionPolicy()
 	ResetId()
 	ResetLabels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetPscInterfaceConfig()
 	ResetTimeouts()
+	ResetVpcPeeringConfig()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -214,6 +223,26 @@ func (j *jsiiProxy_GoogleDatastreamPrivateConnection) CreateWithoutValidationInp
 	_jsii_.Get(
 		j,
 		"createWithoutValidationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDatastreamPrivateConnection) DeletionPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deletionPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDatastreamPrivateConnection) DeletionPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deletionPolicyInput",
 		&returns,
 	)
 	return returns
@@ -449,6 +478,26 @@ func (j *jsiiProxy_GoogleDatastreamPrivateConnection) Provisioners() *[]interfac
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDatastreamPrivateConnection) PscInterfaceConfig() GoogleDatastreamPrivateConnectionPscInterfaceConfigOutputReference {
+	var returns GoogleDatastreamPrivateConnectionPscInterfaceConfigOutputReference
+	_jsii_.Get(
+		j,
+		"pscInterfaceConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDatastreamPrivateConnection) PscInterfaceConfigInput() *GoogleDatastreamPrivateConnectionPscInterfaceConfig {
+	var returns *GoogleDatastreamPrivateConnectionPscInterfaceConfig
+	_jsii_.Get(
+		j,
+		"pscInterfaceConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleDatastreamPrivateConnection) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -550,7 +599,7 @@ func (j *jsiiProxy_GoogleDatastreamPrivateConnection) VpcPeeringConfigInput() *G
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_datastream_private_connection google_datastream_private_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_datastream_private_connection google_datastream_private_connection} Resource.
 func NewGoogleDatastreamPrivateConnection(scope constructs.Construct, id *string, config *GoogleDatastreamPrivateConnectionConfig) GoogleDatastreamPrivateConnection {
 	_init_.Initialize()
 
@@ -568,7 +617,7 @@ func NewGoogleDatastreamPrivateConnection(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_datastream_private_connection google_datastream_private_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_datastream_private_connection google_datastream_private_connection} Resource.
 func NewGoogleDatastreamPrivateConnection_Override(g GoogleDatastreamPrivateConnection, scope constructs.Construct, id *string, config *GoogleDatastreamPrivateConnectionConfig) {
 	_init_.Initialize()
 
@@ -608,6 +657,17 @@ func (j *jsiiProxy_GoogleDatastreamPrivateConnection)SetCreateWithoutValidation(
 	_jsii_.Set(
 		j,
 		"createWithoutValidation",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDatastreamPrivateConnection)SetDeletionPolicy(val *string) {
+	if err := j.validateSetDeletionPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deletionPolicy",
 		val,
 	)
 }
@@ -1077,6 +1137,17 @@ func (g *jsiiProxy_GoogleDatastreamPrivateConnection) OverrideLogicalId(newLogic
 	)
 }
 
+func (g *jsiiProxy_GoogleDatastreamPrivateConnection) PutPscInterfaceConfig(value *GoogleDatastreamPrivateConnectionPscInterfaceConfig) {
+	if err := g.validatePutPscInterfaceConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putPscInterfaceConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDatastreamPrivateConnection) PutTimeouts(value *GoogleDatastreamPrivateConnectionTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1103,6 +1174,14 @@ func (g *jsiiProxy_GoogleDatastreamPrivateConnection) ResetCreateWithoutValidati
 	_jsii_.InvokeVoid(
 		g,
 		"resetCreateWithoutValidation",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDatastreamPrivateConnection) ResetDeletionPolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDeletionPolicy",
 		nil, // no parameters
 	)
 }
@@ -1139,10 +1218,26 @@ func (g *jsiiProxy_GoogleDatastreamPrivateConnection) ResetProject() {
 	)
 }
 
+func (g *jsiiProxy_GoogleDatastreamPrivateConnection) ResetPscInterfaceConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPscInterfaceConfig",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleDatastreamPrivateConnection) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDatastreamPrivateConnection) ResetVpcPeeringConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetVpcPeeringConfig",
 		nil, // no parameters
 	)
 }

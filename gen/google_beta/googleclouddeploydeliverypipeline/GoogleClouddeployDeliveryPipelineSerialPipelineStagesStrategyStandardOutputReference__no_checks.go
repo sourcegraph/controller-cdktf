@@ -44,11 +44,19 @@ func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategy
 	return nil
 }
 
+func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardOutputReference) validatePutAnalysisParameters(value *GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardAnalysis) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardOutputReference) validatePutPostdeployParameters(value *GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardPostdeploy) error {
 	return nil
 }
 
 func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardOutputReference) validatePutPredeployParameters(value *GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardPredeploy) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardOutputReference) validatePutVerifyConfigParameters(value *GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardVerifyConfig) error {
 	return nil
 }
 

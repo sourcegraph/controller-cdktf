@@ -54,6 +54,8 @@ type CloudRunV2ServiceTemplateContainersOutputReference interface {
 	NameInput() *string
 	Ports() CloudRunV2ServiceTemplateContainersPortsOutputReference
 	PortsInput() *CloudRunV2ServiceTemplateContainersPorts
+	ReadinessProbe() CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference
+	ReadinessProbeInput() *CloudRunV2ServiceTemplateContainersReadinessProbe
 	Resources() CloudRunV2ServiceTemplateContainersResourcesOutputReference
 	ResourcesInput() *CloudRunV2ServiceTemplateContainersResources
 	StartupProbe() CloudRunV2ServiceTemplateContainersStartupProbeOutputReference
@@ -98,6 +100,7 @@ type CloudRunV2ServiceTemplateContainersOutputReference interface {
 	PutEnv(value interface{})
 	PutLivenessProbe(value *CloudRunV2ServiceTemplateContainersLivenessProbe)
 	PutPorts(value *CloudRunV2ServiceTemplateContainersPorts)
+	PutReadinessProbe(value *CloudRunV2ServiceTemplateContainersReadinessProbe)
 	PutResources(value *CloudRunV2ServiceTemplateContainersResources)
 	PutStartupProbe(value *CloudRunV2ServiceTemplateContainersStartupProbe)
 	PutVolumeMounts(value interface{})
@@ -109,6 +112,7 @@ type CloudRunV2ServiceTemplateContainersOutputReference interface {
 	ResetLivenessProbe()
 	ResetName()
 	ResetPorts()
+	ResetReadinessProbe()
 	ResetResources()
 	ResetStartupProbe()
 	ResetVolumeMounts()
@@ -363,6 +367,26 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersOutputReference) PortsInpu
 	_jsii_.Get(
 		j,
 		"portsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersOutputReference) ReadinessProbe() CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference {
+	var returns CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference
+	_jsii_.Get(
+		j,
+		"readinessProbe",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersOutputReference) ReadinessProbeInput() *CloudRunV2ServiceTemplateContainersReadinessProbe {
+	var returns *CloudRunV2ServiceTemplateContainersReadinessProbe
+	_jsii_.Get(
+		j,
+		"readinessProbeInput",
 		&returns,
 	)
 	return returns
@@ -847,6 +871,17 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersOutputReference) PutPorts(
 	)
 }
 
+func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersOutputReference) PutReadinessProbe(value *CloudRunV2ServiceTemplateContainersReadinessProbe) {
+	if err := c.validatePutReadinessProbeParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putReadinessProbe",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersOutputReference) PutResources(value *CloudRunV2ServiceTemplateContainersResources) {
 	if err := c.validatePutResourcesParameters(value); err != nil {
 		panic(err)
@@ -940,6 +975,14 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersOutputReference) ResetPort
 	_jsii_.InvokeVoid(
 		c,
 		"resetPorts",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersOutputReference) ResetReadinessProbe() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetReadinessProbe",
 		nil, // no parameters
 	)
 }

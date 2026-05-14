@@ -68,6 +68,14 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskSourceSnapshotEncryptionKeyO
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskSourceSnapshotEncryptionKeyOutputReference) validateSetRawKeyParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskSourceSnapshotEncryptionKeyOutputReference) validateSetRsaEncryptedKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskSourceSnapshotEncryptionKeyOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

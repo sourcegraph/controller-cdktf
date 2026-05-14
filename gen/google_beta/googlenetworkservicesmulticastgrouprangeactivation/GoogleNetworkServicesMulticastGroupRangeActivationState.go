@@ -1,0 +1,6 @@
+package googlenetworkservicesmulticastgrouprangeactivation
+
+
+type GoogleNetworkServicesMulticastGroupRangeActivationState struct {
+}
+

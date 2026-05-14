@@ -4,7 +4,7 @@ package googleosconfigv2policyorchestrator
 type GoogleOsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadInstanceFilterInventories struct {
 	// Required. The OS short name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_os_config_v2_policy_orchestrator#os_short_name GoogleOsConfigV2PolicyOrchestrator#os_short_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_os_config_v2_policy_orchestrator#os_short_name GoogleOsConfigV2PolicyOrchestrator#os_short_name}
 	OsShortName *string `field:"required" json:"osShortName" yaml:"osShortName"`
 	// The OS version.
 	//
@@ -14,7 +14,7 @@ type GoogleOsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1P
 	//
 	// An empty string matches all OS versions.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_os_config_v2_policy_orchestrator#os_version GoogleOsConfigV2PolicyOrchestrator#os_version}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_os_config_v2_policy_orchestrator#os_version GoogleOsConfigV2PolicyOrchestrator#os_version}
 	OsVersion *string `field:"optional" json:"osVersion" yaml:"osVersion"`
 }
 

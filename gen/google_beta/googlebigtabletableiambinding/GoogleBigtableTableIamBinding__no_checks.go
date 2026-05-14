@@ -104,7 +104,7 @@ func (j *jsiiProxy_GoogleBigtableTableIamBinding) validateSetIdParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigtableTableIamBinding) validateSetInstanceParameters(val *string) error {
+func (j *jsiiProxy_GoogleBigtableTableIamBinding) validateSetInstanceNameParameters(val *string) error {
 	return nil
 }
 

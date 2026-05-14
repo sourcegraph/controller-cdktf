@@ -19,24 +19,24 @@ type GoogleSecretManagerRegionalSecretIamMemberConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_secret_manager_regional_secret_iam_member#member GoogleSecretManagerRegionalSecretIamMember#member}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_secret_manager_regional_secret_iam_member#member GoogleSecretManagerRegionalSecretIamMember#member}.
 	Member *string `field:"required" json:"member" yaml:"member"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_secret_manager_regional_secret_iam_member#role GoogleSecretManagerRegionalSecretIamMember#role}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_secret_manager_regional_secret_iam_member#role GoogleSecretManagerRegionalSecretIamMember#role}.
 	Role *string `field:"required" json:"role" yaml:"role"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_secret_manager_regional_secret_iam_member#secret_id GoogleSecretManagerRegionalSecretIamMember#secret_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_secret_manager_regional_secret_iam_member#secret_id GoogleSecretManagerRegionalSecretIamMember#secret_id}.
 	SecretId *string `field:"required" json:"secretId" yaml:"secretId"`
 	// condition block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_secret_manager_regional_secret_iam_member#condition GoogleSecretManagerRegionalSecretIamMember#condition}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_secret_manager_regional_secret_iam_member#condition GoogleSecretManagerRegionalSecretIamMember#condition}
 	Condition *GoogleSecretManagerRegionalSecretIamMemberCondition `field:"optional" json:"condition" yaml:"condition"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_secret_manager_regional_secret_iam_member#id GoogleSecretManagerRegionalSecretIamMember#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_secret_manager_regional_secret_iam_member#id GoogleSecretManagerRegionalSecretIamMember#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_secret_manager_regional_secret_iam_member#location GoogleSecretManagerRegionalSecretIamMember#location}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_secret_manager_regional_secret_iam_member#location GoogleSecretManagerRegionalSecretIamMember#location}.
 	Location *string `field:"optional" json:"location" yaml:"location"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_secret_manager_regional_secret_iam_member#project GoogleSecretManagerRegionalSecretIamMember#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_secret_manager_regional_secret_iam_member#project GoogleSecretManagerRegionalSecretIamMember#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 }
 

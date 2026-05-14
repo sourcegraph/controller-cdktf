@@ -310,7 +310,29 @@ func (g *jsiiProxy_GoogleComputeRegionBackendService) validatePutCustomMetricsPa
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeRegionBackendService) validatePutDynamicForwardingParameters(value *GoogleComputeRegionBackendServiceDynamicForwarding) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRegionBackendService) validatePutFailoverPolicyParameters(value *GoogleComputeRegionBackendServiceFailoverPolicy) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeRegionBackendService) validatePutHaPolicyParameters(value *GoogleComputeRegionBackendServiceHaPolicy) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -343,7 +365,29 @@ func (g *jsiiProxy_GoogleComputeRegionBackendService) validatePutLogConfigParame
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeRegionBackendService) validatePutNetworkPassThroughLbTrafficPolicyParameters(value *GoogleComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicy) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRegionBackendService) validatePutOutlierDetectionParameters(value *GoogleComputeRegionBackendServiceOutlierDetection) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeRegionBackendService) validatePutParamsParameters(value *GoogleComputeRegionBackendServiceParams) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -377,6 +421,17 @@ func (g *jsiiProxy_GoogleComputeRegionBackendService) validatePutSubsettingParam
 }
 
 func (g *jsiiProxy_GoogleComputeRegionBackendService) validatePutTimeoutsParameters(value *GoogleComputeRegionBackendServiceTimeouts) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeRegionBackendService) validatePutTlsSettingsParameters(value *GoogleComputeRegionBackendServiceTlsSettings) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

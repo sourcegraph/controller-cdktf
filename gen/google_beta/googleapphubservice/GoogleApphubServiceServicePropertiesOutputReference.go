@@ -25,12 +25,16 @@ type GoogleApphubServiceServicePropertiesOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	ExtendedMetadata() GoogleApphubServiceServicePropertiesExtendedMetadataList
 	// Experimental.
 	Fqn() *string
+	FunctionalType() GoogleApphubServiceServicePropertiesFunctionalTypeList
 	GcpProject() *string
+	Identity() GoogleApphubServiceServicePropertiesIdentityList
 	InternalValue() *GoogleApphubServiceServiceProperties
 	SetInternalValue(val *GoogleApphubServiceServiceProperties)
 	Location() *string
+	RegistrationType() GoogleApphubServiceServicePropertiesRegistrationTypeList
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -109,6 +113,16 @@ func (j *jsiiProxy_GoogleApphubServiceServicePropertiesOutputReference) Creation
 	return returns
 }
 
+func (j *jsiiProxy_GoogleApphubServiceServicePropertiesOutputReference) ExtendedMetadata() GoogleApphubServiceServicePropertiesExtendedMetadataList {
+	var returns GoogleApphubServiceServicePropertiesExtendedMetadataList
+	_jsii_.Get(
+		j,
+		"extendedMetadata",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleApphubServiceServicePropertiesOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -119,11 +133,31 @@ func (j *jsiiProxy_GoogleApphubServiceServicePropertiesOutputReference) Fqn() *s
 	return returns
 }
 
+func (j *jsiiProxy_GoogleApphubServiceServicePropertiesOutputReference) FunctionalType() GoogleApphubServiceServicePropertiesFunctionalTypeList {
+	var returns GoogleApphubServiceServicePropertiesFunctionalTypeList
+	_jsii_.Get(
+		j,
+		"functionalType",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleApphubServiceServicePropertiesOutputReference) GcpProject() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"gcpProject",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleApphubServiceServicePropertiesOutputReference) Identity() GoogleApphubServiceServicePropertiesIdentityList {
+	var returns GoogleApphubServiceServicePropertiesIdentityList
+	_jsii_.Get(
+		j,
+		"identity",
 		&returns,
 	)
 	return returns
@@ -144,6 +178,16 @@ func (j *jsiiProxy_GoogleApphubServiceServicePropertiesOutputReference) Location
 	_jsii_.Get(
 		j,
 		"location",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleApphubServiceServicePropertiesOutputReference) RegistrationType() GoogleApphubServiceServicePropertiesRegistrationTypeList {
+	var returns GoogleApphubServiceServicePropertiesRegistrationTypeList
+	_jsii_.Get(
+		j,
+		"registrationType",
 		&returns,
 	)
 	return returns

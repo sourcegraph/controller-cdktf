@@ -48,6 +48,10 @@ func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRuleMatchOutputReferen
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRuleMatchOutputReference) validatePutExprParameters(value *GoogleComputeOrganizationSecurityPolicyRuleMatchExpr) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRuleMatchOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

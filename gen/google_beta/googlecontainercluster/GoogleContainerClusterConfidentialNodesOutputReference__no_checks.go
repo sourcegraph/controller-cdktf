@@ -56,6 +56,10 @@ func (j *jsiiProxy_GoogleContainerClusterConfidentialNodesOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerClusterConfidentialNodesOutputReference) validateSetConfidentialInstanceTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerClusterConfidentialNodesOutputReference) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

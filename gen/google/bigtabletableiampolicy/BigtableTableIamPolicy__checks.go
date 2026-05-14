@@ -342,7 +342,7 @@ func (j *jsiiProxy_BigtableTableIamPolicy) validateSetIdParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_BigtableTableIamPolicy) validateSetInstanceParameters(val *string) error {
+func (j *jsiiProxy_BigtableTableIamPolicy) validateSetInstanceNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

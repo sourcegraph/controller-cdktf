@@ -6,7 +6,7 @@ type GoogleIapSettingsApplicationSettingsAttributePropagationSettings struct {
 	//
 	// If set to true, attributes returned from the expression will be propagated in the set output credentials.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_iap_settings#enable GoogleIapSettings#enable}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_iap_settings#enable GoogleIapSettings#enable}
 	Enable interface{} `field:"optional" json:"enable" yaml:"enable"`
 	// Raw string CEL expression.
 	//
@@ -14,7 +14,7 @@ type GoogleIapSettingsApplicationSettingsAttributePropagationSettings struct {
 	// be selected. Expressions can select different attribute types from attributes:
 	// attributes.saml_attributes, attributes.iap_attributes.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_iap_settings#expression GoogleIapSettings#expression}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_iap_settings#expression GoogleIapSettings#expression}
 	Expression *string `field:"optional" json:"expression" yaml:"expression"`
 	// Which output credentials attributes selected by the CEL expression should be propagated in.
 	//
@@ -27,7 +27,7 @@ type GoogleIapSettingsApplicationSettingsAttributePropagationSettings struct {
 	// * 'RCTOKEN': Propagate attributes in the RCToken of the form: "
 	//              additional_claims": { "my_attribute": ["value1", "value2"] } Possible values: ["HEADER", "JWT", "RCTOKEN"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_iap_settings#output_credentials GoogleIapSettings#output_credentials}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_iap_settings#output_credentials GoogleIapSettings#output_credentials}
 	OutputCredentials *[]*string `field:"optional" json:"outputCredentials" yaml:"outputCredentials"`
 }
 

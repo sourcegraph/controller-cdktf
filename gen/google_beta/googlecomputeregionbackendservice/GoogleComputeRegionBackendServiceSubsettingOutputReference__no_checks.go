@@ -64,6 +64,10 @@ func (j *jsiiProxy_GoogleComputeRegionBackendServiceSubsettingOutputReference) v
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRegionBackendServiceSubsettingOutputReference) validateSetSubsetSizeParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRegionBackendServiceSubsettingOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

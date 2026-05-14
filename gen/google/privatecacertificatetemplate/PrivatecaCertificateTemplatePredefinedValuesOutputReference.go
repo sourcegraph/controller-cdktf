@@ -38,6 +38,8 @@ type PrivatecaCertificateTemplatePredefinedValuesOutputReference interface {
 	SetInternalValue(val *PrivatecaCertificateTemplatePredefinedValues)
 	KeyUsage() PrivatecaCertificateTemplatePredefinedValuesKeyUsageOutputReference
 	KeyUsageInput() *PrivatecaCertificateTemplatePredefinedValuesKeyUsage
+	NameConstraints() PrivatecaCertificateTemplatePredefinedValuesNameConstraintsOutputReference
+	NameConstraintsInput() *PrivatecaCertificateTemplatePredefinedValuesNameConstraints
 	PolicyIds() PrivatecaCertificateTemplatePredefinedValuesPolicyIdsList
 	PolicyIdsInput() interface{}
 	// Experimental.
@@ -75,11 +77,13 @@ type PrivatecaCertificateTemplatePredefinedValuesOutputReference interface {
 	PutAdditionalExtensions(value interface{})
 	PutCaOptions(value *PrivatecaCertificateTemplatePredefinedValuesCaOptions)
 	PutKeyUsage(value *PrivatecaCertificateTemplatePredefinedValuesKeyUsage)
+	PutNameConstraints(value *PrivatecaCertificateTemplatePredefinedValuesNameConstraints)
 	PutPolicyIds(value interface{})
 	ResetAdditionalExtensions()
 	ResetAiaOcspServers()
 	ResetCaOptions()
 	ResetKeyUsage()
+	ResetNameConstraints()
 	ResetPolicyIds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -221,6 +225,26 @@ func (j *jsiiProxy_PrivatecaCertificateTemplatePredefinedValuesOutputReference) 
 	_jsii_.Get(
 		j,
 		"keyUsageInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PrivatecaCertificateTemplatePredefinedValuesOutputReference) NameConstraints() PrivatecaCertificateTemplatePredefinedValuesNameConstraintsOutputReference {
+	var returns PrivatecaCertificateTemplatePredefinedValuesNameConstraintsOutputReference
+	_jsii_.Get(
+		j,
+		"nameConstraints",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PrivatecaCertificateTemplatePredefinedValuesOutputReference) NameConstraintsInput() *PrivatecaCertificateTemplatePredefinedValuesNameConstraints {
+	var returns *PrivatecaCertificateTemplatePredefinedValuesNameConstraints
+	_jsii_.Get(
+		j,
+		"nameConstraintsInput",
 		&returns,
 	)
 	return returns
@@ -579,6 +603,17 @@ func (p *jsiiProxy_PrivatecaCertificateTemplatePredefinedValuesOutputReference) 
 	)
 }
 
+func (p *jsiiProxy_PrivatecaCertificateTemplatePredefinedValuesOutputReference) PutNameConstraints(value *PrivatecaCertificateTemplatePredefinedValuesNameConstraints) {
+	if err := p.validatePutNameConstraintsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putNameConstraints",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PrivatecaCertificateTemplatePredefinedValuesOutputReference) PutPolicyIds(value interface{}) {
 	if err := p.validatePutPolicyIdsParameters(value); err != nil {
 		panic(err)
@@ -618,6 +653,14 @@ func (p *jsiiProxy_PrivatecaCertificateTemplatePredefinedValuesOutputReference) 
 	_jsii_.InvokeVoid(
 		p,
 		"resetKeyUsage",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PrivatecaCertificateTemplatePredefinedValuesOutputReference) ResetNameConstraints() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetNameConstraints",
 		nil, // no parameters
 	)
 }

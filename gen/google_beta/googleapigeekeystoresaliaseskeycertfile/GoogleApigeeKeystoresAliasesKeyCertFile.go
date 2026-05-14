@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleapigeekeystoresaliaseskeycertfile/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_apigee_keystores_aliases_key_cert_file google_apigee_keystores_aliases_key_cert_file}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_apigee_keystores_aliases_key_cert_file google_apigee_keystores_aliases_key_cert_file}.
 type GoogleApigeeKeystoresAliasesKeyCertFile interface {
 	cdktf.TerraformResource
 	Alias() *string
@@ -20,8 +20,7 @@ type GoogleApigeeKeystoresAliasesKeyCertFile interface {
 	Cert() *string
 	SetCert(val *string)
 	CertInput() *string
-	CertsInfo() GoogleApigeeKeystoresAliasesKeyCertFileCertsInfoOutputReference
-	CertsInfoInput() *GoogleApigeeKeystoresAliasesKeyCertFileCertsInfo
+	CertsInfo() GoogleApigeeKeystoresAliasesKeyCertFileCertsInfoList
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -48,8 +47,6 @@ type GoogleApigeeKeystoresAliasesKeyCertFile interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	Key() *string
 	SetKey(val *string)
 	KeyInput() *string
@@ -130,10 +127,7 @@ type GoogleApigeeKeystoresAliasesKeyCertFile interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutCertsInfo(value *GoogleApigeeKeystoresAliasesKeyCertFileCertsInfo)
 	PutTimeouts(value *GoogleApigeeKeystoresAliasesKeyCertFileTimeouts)
-	ResetCertsInfo()
-	ResetId()
 	ResetKey()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -208,21 +202,11 @@ func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) CertInput() *string 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) CertsInfo() GoogleApigeeKeystoresAliasesKeyCertFileCertsInfoOutputReference {
-	var returns GoogleApigeeKeystoresAliasesKeyCertFileCertsInfoOutputReference
+func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) CertsInfo() GoogleApigeeKeystoresAliasesKeyCertFileCertsInfoList {
+	var returns GoogleApigeeKeystoresAliasesKeyCertFileCertsInfoList
 	_jsii_.Get(
 		j,
 		"certsInfo",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) CertsInfoInput() *GoogleApigeeKeystoresAliasesKeyCertFileCertsInfo {
-	var returns *GoogleApigeeKeystoresAliasesKeyCertFileCertsInfo
-	_jsii_.Get(
-		j,
-		"certsInfoInput",
 		&returns,
 	)
 	return returns
@@ -323,16 +307,6 @@ func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -529,7 +503,7 @@ func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_apigee_keystores_aliases_key_cert_file google_apigee_keystores_aliases_key_cert_file} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_apigee_keystores_aliases_key_cert_file google_apigee_keystores_aliases_key_cert_file} Resource.
 func NewGoogleApigeeKeystoresAliasesKeyCertFile(scope constructs.Construct, id *string, config *GoogleApigeeKeystoresAliasesKeyCertFileConfig) GoogleApigeeKeystoresAliasesKeyCertFile {
 	_init_.Initialize()
 
@@ -547,7 +521,7 @@ func NewGoogleApigeeKeystoresAliasesKeyCertFile(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_apigee_keystores_aliases_key_cert_file google_apigee_keystores_aliases_key_cert_file} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_apigee_keystores_aliases_key_cert_file google_apigee_keystores_aliases_key_cert_file} Resource.
 func NewGoogleApigeeKeystoresAliasesKeyCertFile_Override(g GoogleApigeeKeystoresAliasesKeyCertFile, scope constructs.Construct, id *string, config *GoogleApigeeKeystoresAliasesKeyCertFileConfig) {
 	_init_.Initialize()
 
@@ -625,17 +599,6 @@ func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile)SetForEach(val cdktf.
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -1067,17 +1030,6 @@ func (g *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) OverrideLogicalId(ne
 	)
 }
 
-func (g *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) PutCertsInfo(value *GoogleApigeeKeystoresAliasesKeyCertFileCertsInfo) {
-	if err := g.validatePutCertsInfoParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		g,
-		"putCertsInfo",
-		[]interface{}{value},
-	)
-}
-
 func (g *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) PutTimeouts(value *GoogleApigeeKeystoresAliasesKeyCertFileTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1086,22 +1038,6 @@ func (g *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) PutTimeouts(value *G
 		g,
 		"putTimeouts",
 		[]interface{}{value},
-	)
-}
-
-func (g *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) ResetCertsInfo() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetCertsInfo",
-		nil, // no parameters
-	)
-}
-
-func (g *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) ResetId() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetId",
-		nil, // no parameters
 	)
 }
 

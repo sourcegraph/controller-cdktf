@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/computeexternalvpngateway/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_external_vpn_gateway google_compute_external_vpn_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_external_vpn_gateway google_compute_external_vpn_gateway}.
 type ComputeExternalVpnGateway interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -58,6 +58,8 @@ type ComputeExternalVpnGateway interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Params() ComputeExternalVpnGatewayParamsOutputReference
+	ParamsInput() *ComputeExternalVpnGatewayParams
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -128,6 +130,7 @@ type ComputeExternalVpnGateway interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutInterface(value interface{})
+	PutParams(value *ComputeExternalVpnGatewayParams)
 	PutTimeouts(value *ComputeExternalVpnGatewayTimeouts)
 	ResetDescription()
 	ResetId()
@@ -136,6 +139,7 @@ type ComputeExternalVpnGateway interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetParams()
 	ResetProject()
 	ResetRedundancyType()
 	ResetTimeouts()
@@ -377,6 +381,26 @@ func (j *jsiiProxy_ComputeExternalVpnGateway) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeExternalVpnGateway) Params() ComputeExternalVpnGatewayParamsOutputReference {
+	var returns ComputeExternalVpnGatewayParamsOutputReference
+	_jsii_.Get(
+		j,
+		"params",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeExternalVpnGateway) ParamsInput() *ComputeExternalVpnGatewayParams {
+	var returns *ComputeExternalVpnGatewayParams
+	_jsii_.Get(
+		j,
+		"paramsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeExternalVpnGateway) Project() *string {
 	var returns *string
 	_jsii_.Get(
@@ -518,7 +542,7 @@ func (j *jsiiProxy_ComputeExternalVpnGateway) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_external_vpn_gateway google_compute_external_vpn_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_external_vpn_gateway google_compute_external_vpn_gateway} Resource.
 func NewComputeExternalVpnGateway(scope constructs.Construct, id *string, config *ComputeExternalVpnGatewayConfig) ComputeExternalVpnGateway {
 	_init_.Initialize()
 
@@ -536,7 +560,7 @@ func NewComputeExternalVpnGateway(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_external_vpn_gateway google_compute_external_vpn_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_external_vpn_gateway google_compute_external_vpn_gateway} Resource.
 func NewComputeExternalVpnGateway_Override(c ComputeExternalVpnGateway, scope constructs.Construct, id *string, config *ComputeExternalVpnGatewayConfig) {
 	_init_.Initialize()
 
@@ -1045,6 +1069,17 @@ func (c *jsiiProxy_ComputeExternalVpnGateway) PutInterface(value interface{}) {
 	)
 }
 
+func (c *jsiiProxy_ComputeExternalVpnGateway) PutParams(value *ComputeExternalVpnGatewayParams) {
+	if err := c.validatePutParamsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putParams",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeExternalVpnGateway) PutTimeouts(value *ComputeExternalVpnGatewayTimeouts) {
 	if err := c.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1092,6 +1127,14 @@ func (c *jsiiProxy_ComputeExternalVpnGateway) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeExternalVpnGateway) ResetParams() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetParams",
 		nil, // no parameters
 	)
 }

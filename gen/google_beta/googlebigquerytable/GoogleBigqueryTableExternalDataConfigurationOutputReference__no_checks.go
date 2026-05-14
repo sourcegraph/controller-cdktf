@@ -96,6 +96,10 @@ func (j *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationOutputReference) 
 	return nil
 }
 
+func (j *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationOutputReference) validateSetDecimalTargetTypesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationOutputReference) validateSetFileSetSpecTypeParameters(val *string) error {
 	return nil
 }

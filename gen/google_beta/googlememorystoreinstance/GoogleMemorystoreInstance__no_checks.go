@@ -80,6 +80,10 @@ func (g *jsiiProxy_GoogleMemorystoreInstance) validatePutCrossInstanceReplicatio
 	return nil
 }
 
+func (g *jsiiProxy_GoogleMemorystoreInstance) validatePutDesiredAutoCreatedEndpointsParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleMemorystoreInstance) validatePutDesiredPscAutoConnectionsParameters(value interface{}) error {
 	return nil
 }
@@ -156,6 +160,10 @@ func (j *jsiiProxy_GoogleMemorystoreInstance) validateSetInstanceIdParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_GoogleMemorystoreInstance) validateSetKmsKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleMemorystoreInstance) validateSetLabelsParameters(val *map[string]*string) error {
 	return nil
 }
@@ -165,6 +173,10 @@ func (j *jsiiProxy_GoogleMemorystoreInstance) validateSetLifecycleParameters(val
 }
 
 func (j *jsiiProxy_GoogleMemorystoreInstance) validateSetLocationParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleMemorystoreInstance) validateSetMaintenanceVersionParameters(val *string) error {
 	return nil
 }
 
@@ -185,6 +197,14 @@ func (j *jsiiProxy_GoogleMemorystoreInstance) validateSetProvisionersParameters(
 }
 
 func (j *jsiiProxy_GoogleMemorystoreInstance) validateSetReplicaCountParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleMemorystoreInstance) validateSetServerCaModeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleMemorystoreInstance) validateSetServerCaPoolParameters(val *string) error {
 	return nil
 }
 

@@ -96,6 +96,10 @@ func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) validatePutParamsPar
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) validatePutResourcePoliciesParameters(value *GoogleComputeRegionInstanceGroupManagerResourcePolicies) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) validatePutStandbyPolicyParameters(value *GoogleComputeRegionInstanceGroupManagerStandbyPolicy) error {
 	return nil
 }
@@ -109,6 +113,10 @@ func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) validatePutStatefulE
 }
 
 func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) validatePutStatefulInternalIpParameters(value interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) validatePutTargetSizePolicyParameters(value interface{}) error {
 	return nil
 }
 

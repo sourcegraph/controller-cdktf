@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlealloydbcluster/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_alloydb_cluster google_alloydb_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_alloydb_cluster google_alloydb_cluster}.
 type GoogleAlloydbCluster interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -17,6 +17,7 @@ type GoogleAlloydbCluster interface {
 	AnnotationsInput() *map[string]*string
 	AutomatedBackupPolicy() GoogleAlloydbClusterAutomatedBackupPolicyOutputReference
 	AutomatedBackupPolicyInput() *GoogleAlloydbClusterAutomatedBackupPolicy
+	BackupdrBackupSource() GoogleAlloydbClusterBackupdrBackupSourceList
 	BackupSource() GoogleAlloydbClusterBackupSourceList
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -42,9 +43,14 @@ type GoogleAlloydbCluster interface {
 	DatabaseVersion() *string
 	SetDatabaseVersion(val *string)
 	DatabaseVersionInput() *string
+	DataplexConfig() GoogleAlloydbClusterDataplexConfigOutputReference
+	DataplexConfigInput() *GoogleAlloydbClusterDataplexConfig
 	DeletionPolicy() *string
 	SetDeletionPolicy(val *string)
 	DeletionPolicyInput() *string
+	DeletionProtection() interface{}
+	SetDeletionProtection(val interface{})
+	DeletionProtectionInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -107,6 +113,10 @@ type GoogleAlloydbCluster interface {
 	// Experimental.
 	RawOverrides() interface{}
 	Reconciling() cdktf.IResolvable
+	RestoreBackupdrBackupSource() GoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference
+	RestoreBackupdrBackupSourceInput() *GoogleAlloydbClusterRestoreBackupdrBackupSource
+	RestoreBackupdrPitrSource() GoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference
+	RestoreBackupdrPitrSourceInput() *GoogleAlloydbClusterRestoreBackupdrPitrSource
 	RestoreBackupSource() GoogleAlloydbClusterRestoreBackupSourceOutputReference
 	RestoreBackupSourceInput() *GoogleAlloydbClusterRestoreBackupSource
 	RestoreContinuousBackupSource() GoogleAlloydbClusterRestoreContinuousBackupSourceOutputReference
@@ -176,11 +186,14 @@ type GoogleAlloydbCluster interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAutomatedBackupPolicy(value *GoogleAlloydbClusterAutomatedBackupPolicy)
 	PutContinuousBackupConfig(value *GoogleAlloydbClusterContinuousBackupConfig)
+	PutDataplexConfig(value *GoogleAlloydbClusterDataplexConfig)
 	PutEncryptionConfig(value *GoogleAlloydbClusterEncryptionConfig)
 	PutInitialUser(value *GoogleAlloydbClusterInitialUser)
 	PutMaintenanceUpdatePolicy(value *GoogleAlloydbClusterMaintenanceUpdatePolicy)
 	PutNetworkConfig(value *GoogleAlloydbClusterNetworkConfig)
 	PutPscConfig(value *GoogleAlloydbClusterPscConfig)
+	PutRestoreBackupdrBackupSource(value *GoogleAlloydbClusterRestoreBackupdrBackupSource)
+	PutRestoreBackupdrPitrSource(value *GoogleAlloydbClusterRestoreBackupdrPitrSource)
 	PutRestoreBackupSource(value *GoogleAlloydbClusterRestoreBackupSource)
 	PutRestoreContinuousBackupSource(value *GoogleAlloydbClusterRestoreContinuousBackupSource)
 	PutSecondaryConfig(value *GoogleAlloydbClusterSecondaryConfig)
@@ -190,7 +203,9 @@ type GoogleAlloydbCluster interface {
 	ResetClusterType()
 	ResetContinuousBackupConfig()
 	ResetDatabaseVersion()
+	ResetDataplexConfig()
 	ResetDeletionPolicy()
+	ResetDeletionProtection()
 	ResetDisplayName()
 	ResetEncryptionConfig()
 	ResetEtag()
@@ -204,6 +219,8 @@ type GoogleAlloydbCluster interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetPscConfig()
+	ResetRestoreBackupdrBackupSource()
+	ResetRestoreBackupdrPitrSource()
 	ResetRestoreBackupSource()
 	ResetRestoreContinuousBackupSource()
 	ResetSecondaryConfig()
@@ -263,6 +280,16 @@ func (j *jsiiProxy_GoogleAlloydbCluster) AutomatedBackupPolicyInput() *GoogleAll
 	_jsii_.Get(
 		j,
 		"automatedBackupPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAlloydbCluster) BackupdrBackupSource() GoogleAlloydbClusterBackupdrBackupSourceList {
+	var returns GoogleAlloydbClusterBackupdrBackupSourceList
+	_jsii_.Get(
+		j,
+		"backupdrBackupSource",
 		&returns,
 	)
 	return returns
@@ -408,6 +435,26 @@ func (j *jsiiProxy_GoogleAlloydbCluster) DatabaseVersionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleAlloydbCluster) DataplexConfig() GoogleAlloydbClusterDataplexConfigOutputReference {
+	var returns GoogleAlloydbClusterDataplexConfigOutputReference
+	_jsii_.Get(
+		j,
+		"dataplexConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAlloydbCluster) DataplexConfigInput() *GoogleAlloydbClusterDataplexConfig {
+	var returns *GoogleAlloydbClusterDataplexConfig
+	_jsii_.Get(
+		j,
+		"dataplexConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleAlloydbCluster) DeletionPolicy() *string {
 	var returns *string
 	_jsii_.Get(
@@ -423,6 +470,26 @@ func (j *jsiiProxy_GoogleAlloydbCluster) DeletionPolicyInput() *string {
 	_jsii_.Get(
 		j,
 		"deletionPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAlloydbCluster) DeletionProtection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAlloydbCluster) DeletionProtectionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtectionInput",
 		&returns,
 	)
 	return returns
@@ -798,6 +865,46 @@ func (j *jsiiProxy_GoogleAlloydbCluster) Reconciling() cdktf.IResolvable {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleAlloydbCluster) RestoreBackupdrBackupSource() GoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference {
+	var returns GoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference
+	_jsii_.Get(
+		j,
+		"restoreBackupdrBackupSource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAlloydbCluster) RestoreBackupdrBackupSourceInput() *GoogleAlloydbClusterRestoreBackupdrBackupSource {
+	var returns *GoogleAlloydbClusterRestoreBackupdrBackupSource
+	_jsii_.Get(
+		j,
+		"restoreBackupdrBackupSourceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAlloydbCluster) RestoreBackupdrPitrSource() GoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference {
+	var returns GoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference
+	_jsii_.Get(
+		j,
+		"restoreBackupdrPitrSource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAlloydbCluster) RestoreBackupdrPitrSourceInput() *GoogleAlloydbClusterRestoreBackupdrPitrSource {
+	var returns *GoogleAlloydbClusterRestoreBackupdrPitrSource
+	_jsii_.Get(
+		j,
+		"restoreBackupdrPitrSourceInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleAlloydbCluster) RestoreBackupSource() GoogleAlloydbClusterRestoreBackupSourceOutputReference {
 	var returns GoogleAlloydbClusterRestoreBackupSourceOutputReference
 	_jsii_.Get(
@@ -989,7 +1096,7 @@ func (j *jsiiProxy_GoogleAlloydbCluster) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_alloydb_cluster google_alloydb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_alloydb_cluster google_alloydb_cluster} Resource.
 func NewGoogleAlloydbCluster(scope constructs.Construct, id *string, config *GoogleAlloydbClusterConfig) GoogleAlloydbCluster {
 	_init_.Initialize()
 
@@ -1007,7 +1114,7 @@ func NewGoogleAlloydbCluster(scope constructs.Construct, id *string, config *Goo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_alloydb_cluster google_alloydb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_alloydb_cluster google_alloydb_cluster} Resource.
 func NewGoogleAlloydbCluster_Override(g GoogleAlloydbCluster, scope constructs.Construct, id *string, config *GoogleAlloydbClusterConfig) {
 	_init_.Initialize()
 
@@ -1091,6 +1198,17 @@ func (j *jsiiProxy_GoogleAlloydbCluster)SetDeletionPolicy(val *string) {
 	_jsii_.Set(
 		j,
 		"deletionPolicy",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleAlloydbCluster)SetDeletionProtection(val interface{}) {
+	if err := j.validateSetDeletionProtectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deletionProtection",
 		val,
 	)
 }
@@ -1604,6 +1722,17 @@ func (g *jsiiProxy_GoogleAlloydbCluster) PutContinuousBackupConfig(value *Google
 	)
 }
 
+func (g *jsiiProxy_GoogleAlloydbCluster) PutDataplexConfig(value *GoogleAlloydbClusterDataplexConfig) {
+	if err := g.validatePutDataplexConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putDataplexConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleAlloydbCluster) PutEncryptionConfig(value *GoogleAlloydbClusterEncryptionConfig) {
 	if err := g.validatePutEncryptionConfigParameters(value); err != nil {
 		panic(err)
@@ -1655,6 +1784,28 @@ func (g *jsiiProxy_GoogleAlloydbCluster) PutPscConfig(value *GoogleAlloydbCluste
 	_jsii_.InvokeVoid(
 		g,
 		"putPscConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleAlloydbCluster) PutRestoreBackupdrBackupSource(value *GoogleAlloydbClusterRestoreBackupdrBackupSource) {
+	if err := g.validatePutRestoreBackupdrBackupSourceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putRestoreBackupdrBackupSource",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleAlloydbCluster) PutRestoreBackupdrPitrSource(value *GoogleAlloydbClusterRestoreBackupdrPitrSource) {
+	if err := g.validatePutRestoreBackupdrPitrSourceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putRestoreBackupdrPitrSource",
 		[]interface{}{value},
 	)
 }
@@ -1743,10 +1894,26 @@ func (g *jsiiProxy_GoogleAlloydbCluster) ResetDatabaseVersion() {
 	)
 }
 
+func (g *jsiiProxy_GoogleAlloydbCluster) ResetDataplexConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDataplexConfig",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleAlloydbCluster) ResetDeletionPolicy() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDeletionPolicy",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAlloydbCluster) ResetDeletionProtection() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDeletionProtection",
 		nil, // no parameters
 	)
 }
@@ -1835,6 +2002,22 @@ func (g *jsiiProxy_GoogleAlloydbCluster) ResetPscConfig() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetPscConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAlloydbCluster) ResetRestoreBackupdrBackupSource() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRestoreBackupdrBackupSource",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAlloydbCluster) ResetRestoreBackupdrPitrSource() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRestoreBackupdrPitrSource",
 		nil, // no parameters
 	)
 }

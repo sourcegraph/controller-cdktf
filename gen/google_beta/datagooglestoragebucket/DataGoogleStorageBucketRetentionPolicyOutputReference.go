@@ -30,7 +30,7 @@ type DataGoogleStorageBucketRetentionPolicyOutputReference interface {
 	InternalValue() *DataGoogleStorageBucketRetentionPolicy
 	SetInternalValue(val *DataGoogleStorageBucketRetentionPolicy)
 	IsLocked() cdktf.IResolvable
-	RetentionPeriod() *float64
+	RetentionPeriod() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -138,8 +138,8 @@ func (j *jsiiProxy_DataGoogleStorageBucketRetentionPolicyOutputReference) IsLock
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleStorageBucketRetentionPolicyOutputReference) RetentionPeriod() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataGoogleStorageBucketRetentionPolicyOutputReference) RetentionPeriod() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"retentionPeriod",

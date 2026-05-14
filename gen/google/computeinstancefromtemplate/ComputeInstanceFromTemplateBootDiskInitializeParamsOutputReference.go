@@ -47,6 +47,9 @@ type ComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference interfac
 	ProvisionedThroughput() *float64
 	SetProvisionedThroughput(val *float64)
 	ProvisionedThroughputInput() *float64
+	ReplicaZones() *[]*string
+	SetReplicaZones(val *[]*string)
+	ReplicaZonesInput() *[]*string
 	ResourceManagerTags() *map[string]*string
 	SetResourceManagerTags(val *map[string]*string)
 	ResourceManagerTagsInput() *map[string]*string
@@ -109,6 +112,7 @@ type ComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference interfac
 	ResetLabels()
 	ResetProvisionedIops()
 	ResetProvisionedThroughput()
+	ResetReplicaZones()
 	ResetResourceManagerTags()
 	ResetResourcePolicies()
 	ResetSize()
@@ -297,6 +301,26 @@ func (j *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputRefe
 	_jsii_.Get(
 		j,
 		"provisionedThroughputInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) ReplicaZones() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"replicaZones",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) ReplicaZonesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"replicaZonesInput",
 		&returns,
 	)
 	return returns
@@ -605,6 +629,17 @@ func (j *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputRefe
 	_jsii_.Set(
 		j,
 		"provisionedThroughput",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference)SetReplicaZones(val *[]*string) {
+	if err := j.validateSetReplicaZonesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"replicaZones",
 		val,
 	)
 }
@@ -949,6 +984,14 @@ func (c *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputRefe
 	_jsii_.InvokeVoid(
 		c,
 		"resetProvisionedThroughput",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) ResetReplicaZones() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetReplicaZones",
 		nil, // no parameters
 	)
 }

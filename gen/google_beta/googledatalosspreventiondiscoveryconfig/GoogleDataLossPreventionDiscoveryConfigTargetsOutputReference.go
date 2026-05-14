@@ -35,6 +35,8 @@ type GoogleDataLossPreventionDiscoveryConfigTargetsOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	OtherCloudTarget() GoogleDataLossPreventionDiscoveryConfigTargetsOtherCloudTargetOutputReference
+	OtherCloudTargetInput() *GoogleDataLossPreventionDiscoveryConfigTargetsOtherCloudTarget
 	SecretsTarget() GoogleDataLossPreventionDiscoveryConfigTargetsSecretsTargetOutputReference
 	SecretsTargetInput() *GoogleDataLossPreventionDiscoveryConfigTargetsSecretsTarget
 	// Experimental.
@@ -72,10 +74,12 @@ type GoogleDataLossPreventionDiscoveryConfigTargetsOutputReference interface {
 	PutBigQueryTarget(value *GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTarget)
 	PutCloudSqlTarget(value *GoogleDataLossPreventionDiscoveryConfigTargetsCloudSqlTarget)
 	PutCloudStorageTarget(value *GoogleDataLossPreventionDiscoveryConfigTargetsCloudStorageTarget)
+	PutOtherCloudTarget(value *GoogleDataLossPreventionDiscoveryConfigTargetsOtherCloudTarget)
 	PutSecretsTarget(value *GoogleDataLossPreventionDiscoveryConfigTargetsSecretsTarget)
 	ResetBigQueryTarget()
 	ResetCloudSqlTarget()
 	ResetCloudStorageTarget()
+	ResetOtherCloudTarget()
 	ResetSecretsTarget()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -197,6 +201,26 @@ func (j *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsOutputReference
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsOutputReference) OtherCloudTarget() GoogleDataLossPreventionDiscoveryConfigTargetsOtherCloudTargetOutputReference {
+	var returns GoogleDataLossPreventionDiscoveryConfigTargetsOtherCloudTargetOutputReference
+	_jsii_.Get(
+		j,
+		"otherCloudTarget",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsOutputReference) OtherCloudTargetInput() *GoogleDataLossPreventionDiscoveryConfigTargetsOtherCloudTarget {
+	var returns *GoogleDataLossPreventionDiscoveryConfigTargetsOtherCloudTarget
+	_jsii_.Get(
+		j,
+		"otherCloudTargetInput",
 		&returns,
 	)
 	return returns
@@ -544,6 +568,17 @@ func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsOutputReference
 	)
 }
 
+func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsOutputReference) PutOtherCloudTarget(value *GoogleDataLossPreventionDiscoveryConfigTargetsOtherCloudTarget) {
+	if err := g.validatePutOtherCloudTargetParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putOtherCloudTarget",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsOutputReference) PutSecretsTarget(value *GoogleDataLossPreventionDiscoveryConfigTargetsSecretsTarget) {
 	if err := g.validatePutSecretsTargetParameters(value); err != nil {
 		panic(err)
@@ -575,6 +610,14 @@ func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsOutputReference
 	_jsii_.InvokeVoid(
 		g,
 		"resetCloudStorageTarget",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsOutputReference) ResetOtherCloudTarget() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetOtherCloudTarget",
 		nil, // no parameters
 	)
 }

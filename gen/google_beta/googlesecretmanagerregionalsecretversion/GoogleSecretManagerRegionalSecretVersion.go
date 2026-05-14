@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlesecretmanagerregionalsecretversion/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_secret_manager_regional_secret_version google_secret_manager_regional_secret_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_secret_manager_regional_secret_version google_secret_manager_regional_secret_version}.
 type GoogleSecretManagerRegionalSecretVersion interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -515,7 +515,7 @@ func (j *jsiiProxy_GoogleSecretManagerRegionalSecretVersion) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_secret_manager_regional_secret_version google_secret_manager_regional_secret_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_secret_manager_regional_secret_version google_secret_manager_regional_secret_version} Resource.
 func NewGoogleSecretManagerRegionalSecretVersion(scope constructs.Construct, id *string, config *GoogleSecretManagerRegionalSecretVersionConfig) GoogleSecretManagerRegionalSecretVersion {
 	_init_.Initialize()
 
@@ -533,7 +533,7 @@ func NewGoogleSecretManagerRegionalSecretVersion(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_secret_manager_regional_secret_version google_secret_manager_regional_secret_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_secret_manager_regional_secret_version google_secret_manager_regional_secret_version} Resource.
 func NewGoogleSecretManagerRegionalSecretVersion_Override(g GoogleSecretManagerRegionalSecretVersion, scope constructs.Construct, id *string, config *GoogleSecretManagerRegionalSecretVersionConfig) {
 	_init_.Initialize()
 

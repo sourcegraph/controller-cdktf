@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagooglestoragebucket/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/storage_bucket google_storage_bucket}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/storage_bucket google_storage_bucket}.
 type DataGoogleStorageBucket interface {
 	cdktf.TerraformDataSource
 	Autoclass() DataGoogleStorageBucketAutoclassList
@@ -44,6 +44,7 @@ type DataGoogleStorageBucket interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IpFilter() DataGoogleStorageBucketIpFilterList
 	Labels() cdktf.StringMap
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -81,7 +82,9 @@ type DataGoogleStorageBucket interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	TimeCreated() *string
 	UniformBucketLevelAccess() cdktf.IResolvable
+	Updated() *string
 	Url() *string
 	Versioning() DataGoogleStorageBucketVersioningList
 	Website() DataGoogleStorageBucketWebsiteList
@@ -309,6 +312,16 @@ func (j *jsiiProxy_DataGoogleStorageBucket) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleStorageBucket) IpFilter() DataGoogleStorageBucketIpFilterList {
+	var returns DataGoogleStorageBucketIpFilterList
+	_jsii_.Get(
+		j,
+		"ipFilter",
 		&returns,
 	)
 	return returns
@@ -554,11 +567,31 @@ func (j *jsiiProxy_DataGoogleStorageBucket) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleStorageBucket) TimeCreated() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"timeCreated",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleStorageBucket) UniformBucketLevelAccess() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"uniformBucketLevelAccess",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleStorageBucket) Updated() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updated",
 		&returns,
 	)
 	return returns
@@ -595,7 +628,7 @@ func (j *jsiiProxy_DataGoogleStorageBucket) Website() DataGoogleStorageBucketWeb
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/storage_bucket google_storage_bucket} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/storage_bucket google_storage_bucket} Data Source.
 func NewDataGoogleStorageBucket(scope constructs.Construct, id *string, config *DataGoogleStorageBucketConfig) DataGoogleStorageBucket {
 	_init_.Initialize()
 
@@ -613,7 +646,7 @@ func NewDataGoogleStorageBucket(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/storage_bucket google_storage_bucket} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/storage_bucket google_storage_bucket} Data Source.
 func NewDataGoogleStorageBucket_Override(d DataGoogleStorageBucket, scope constructs.Construct, id *string, config *DataGoogleStorageBucketConfig) {
 	_init_.Initialize()
 

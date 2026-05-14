@@ -246,6 +246,17 @@ func (g *jsiiProxy_GoogleEventarcTrigger) validatePutMatchingCriteriaParameters(
 	return nil
 }
 
+func (g *jsiiProxy_GoogleEventarcTrigger) validatePutRetryPolicyParameters(value *GoogleEventarcTriggerRetryPolicy) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleEventarcTrigger) validatePutTimeoutsParameters(value *GoogleEventarcTriggerTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

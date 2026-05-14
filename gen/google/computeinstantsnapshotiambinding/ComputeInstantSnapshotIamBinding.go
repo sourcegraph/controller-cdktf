@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/computeinstantsnapshotiambinding/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_instant_snapshot_iam_binding google_compute_instant_snapshot_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instant_snapshot_iam_binding google_compute_instant_snapshot_iam_binding}.
 type ComputeInstantSnapshotIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -459,7 +459,7 @@ func (j *jsiiProxy_ComputeInstantSnapshotIamBinding) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_instant_snapshot_iam_binding google_compute_instant_snapshot_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instant_snapshot_iam_binding google_compute_instant_snapshot_iam_binding} Resource.
 func NewComputeInstantSnapshotIamBinding(scope constructs.Construct, id *string, config *ComputeInstantSnapshotIamBindingConfig) ComputeInstantSnapshotIamBinding {
 	_init_.Initialize()
 
@@ -477,7 +477,7 @@ func NewComputeInstantSnapshotIamBinding(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_instant_snapshot_iam_binding google_compute_instant_snapshot_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instant_snapshot_iam_binding google_compute_instant_snapshot_iam_binding} Resource.
 func NewComputeInstantSnapshotIamBinding_Override(c ComputeInstantSnapshotIamBinding, scope constructs.Construct, id *string, config *ComputeInstantSnapshotIamBindingConfig) {
 	_init_.Initialize()
 

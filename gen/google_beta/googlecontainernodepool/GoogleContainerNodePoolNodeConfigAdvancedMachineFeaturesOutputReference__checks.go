@@ -191,6 +191,14 @@ func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigAdvancedMachineFeaturesOutpu
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigAdvancedMachineFeaturesOutputReference) validateSetPerformanceMonitoringUnitParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigAdvancedMachineFeaturesOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

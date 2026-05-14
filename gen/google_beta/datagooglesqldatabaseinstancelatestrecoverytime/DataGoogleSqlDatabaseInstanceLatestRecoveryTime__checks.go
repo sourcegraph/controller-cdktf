@@ -240,6 +240,14 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceLatestRecoveryTime) validateSetP
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceLatestRecoveryTime) validateSetSourceInstanceDeletionTimeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataGoogleSqlDatabaseInstanceLatestRecoveryTimeParameters(scope constructs.Construct, id *string, config *DataGoogleSqlDatabaseInstanceLatestRecoveryTimeConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

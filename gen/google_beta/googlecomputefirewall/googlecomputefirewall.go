@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputefirewall/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_firewall google_compute_firewall}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_compute_firewall google_compute_firewall}.
 type GoogleComputeFirewall interface {
 	cdktf.TerraformResource
 	Allow() GoogleComputeFirewallAllowList
@@ -73,6 +73,8 @@ type GoogleComputeFirewall interface {
 	NetworkInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Params() GoogleComputeFirewallParamsOutputReference
+	ParamsInput() *GoogleComputeFirewallParams
 	Priority() *float64
 	SetPriority(val *float64)
 	PriorityInput() *float64
@@ -159,6 +161,7 @@ type GoogleComputeFirewall interface {
 	PutAllow(value interface{})
 	PutDeny(value interface{})
 	PutLogConfig(value *GoogleComputeFirewallLogConfig)
+	PutParams(value *GoogleComputeFirewallParams)
 	PutTimeouts(value *GoogleComputeFirewallTimeouts)
 	ResetAllow()
 	ResetDeny()
@@ -172,6 +175,7 @@ type GoogleComputeFirewall interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetParams()
 	ResetPriority()
 	ResetProject()
 	ResetSourceRanges()
@@ -528,6 +532,26 @@ func (j *jsiiProxy_GoogleComputeFirewall) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeFirewall) Params() GoogleComputeFirewallParamsOutputReference {
+	var returns GoogleComputeFirewallParamsOutputReference
+	_jsii_.Get(
+		j,
+		"params",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall) ParamsInput() *GoogleComputeFirewallParams {
+	var returns *GoogleComputeFirewallParams
+	_jsii_.Get(
+		j,
+		"paramsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeFirewall) Priority() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -759,7 +783,7 @@ func (j *jsiiProxy_GoogleComputeFirewall) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_firewall google_compute_firewall} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_compute_firewall google_compute_firewall} Resource.
 func NewGoogleComputeFirewall(scope constructs.Construct, id *string, config *GoogleComputeFirewallConfig) GoogleComputeFirewall {
 	_init_.Initialize()
 
@@ -777,7 +801,7 @@ func NewGoogleComputeFirewall(scope constructs.Construct, id *string, config *Go
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_firewall google_compute_firewall} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_compute_firewall google_compute_firewall} Resource.
 func NewGoogleComputeFirewall_Override(g GoogleComputeFirewall, scope constructs.Construct, id *string, config *GoogleComputeFirewallConfig) {
 	_init_.Initialize()
 
@@ -1407,6 +1431,17 @@ func (g *jsiiProxy_GoogleComputeFirewall) PutLogConfig(value *GoogleComputeFirew
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeFirewall) PutParams(value *GoogleComputeFirewallParams) {
+	if err := g.validatePutParamsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putParams",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeFirewall) PutTimeouts(value *GoogleComputeFirewallTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1494,6 +1529,14 @@ func (g *jsiiProxy_GoogleComputeFirewall) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeFirewall) ResetParams() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetParams",
 		nil, // no parameters
 	)
 }

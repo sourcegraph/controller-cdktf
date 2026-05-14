@@ -256,6 +256,14 @@ func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) validateSetIgmpQueryParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) validateSetInternalIpv6PrefixLengthParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -297,6 +305,14 @@ func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) valid
 }
 
 func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) validateSetNetworkParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) validateSetNetworkAttachmentParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -361,6 +377,14 @@ func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) valid
 }
 
 func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) validateSetVlanParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

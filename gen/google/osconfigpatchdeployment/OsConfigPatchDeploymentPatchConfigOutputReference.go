@@ -43,6 +43,9 @@ type OsConfigPatchDeploymentPatchConfigOutputReference interface {
 	RebootConfig() *string
 	SetRebootConfig(val *string)
 	RebootConfigInput() *string
+	SkipUnpatchableVms() interface{}
+	SetSkipUnpatchableVms(val interface{})
+	SkipUnpatchableVmsInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -94,6 +97,7 @@ type OsConfigPatchDeploymentPatchConfigOutputReference interface {
 	ResetPostStep()
 	ResetPreStep()
 	ResetRebootConfig()
+	ResetSkipUnpatchableVms()
 	ResetWindowsUpdate()
 	ResetYum()
 	ResetZypper()
@@ -282,6 +286,26 @@ func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) RebootConf
 	return returns
 }
 
+func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) SkipUnpatchableVms() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipUnpatchableVms",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) SkipUnpatchableVmsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipUnpatchableVmsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -441,6 +465,17 @@ func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference)SetRebootCo
 	_jsii_.Set(
 		j,
 		"rebootConfig",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference)SetSkipUnpatchableVms(val interface{}) {
+	if err := j.validateSetSkipUnpatchableVmsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"skipUnpatchableVms",
 		val,
 	)
 }
@@ -774,6 +809,14 @@ func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) ResetReboo
 	_jsii_.InvokeVoid(
 		o,
 		"resetRebootConfig",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) ResetSkipUnpatchableVms() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetSkipUnpatchableVms",
 		nil, // no parameters
 	)
 }

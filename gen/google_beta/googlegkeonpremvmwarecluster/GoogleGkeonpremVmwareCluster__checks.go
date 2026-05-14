@@ -633,6 +633,14 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareCluster) validateSetProvisionersParamete
 	return nil
 }
 
+func (j *jsiiProxy_GoogleGkeonpremVmwareCluster) validateSetSkipValidationsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleGkeonpremVmwareCluster) validateSetVmTrackingEnabledParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

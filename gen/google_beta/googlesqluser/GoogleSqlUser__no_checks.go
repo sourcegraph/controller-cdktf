@@ -104,6 +104,10 @@ func (j *jsiiProxy_GoogleSqlUser) validateSetCountParameters(val interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_GoogleSqlUser) validateSetDatabaseRolesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSqlUser) validateSetDeletionPolicyParameters(val *string) error {
 	return nil
 }

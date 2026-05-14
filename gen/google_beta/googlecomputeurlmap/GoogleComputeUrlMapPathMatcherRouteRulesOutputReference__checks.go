@@ -112,6 +112,68 @@ func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesOutputReference) vali
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesOutputReference) validatePutHttpFilterConfigsParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterConfigs:
+		value := value.(*[]*GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterConfigs)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterConfigs:
+		value_ := value.([]*GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterConfigs)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterConfigs; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesOutputReference) validatePutHttpFilterMetadataParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterMetadata:
+		value := value.(*[]*GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterMetadata)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterMetadata:
+		value_ := value.([]*GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterMetadata)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterMetadata; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesOutputReference) validatePutMatchRulesParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

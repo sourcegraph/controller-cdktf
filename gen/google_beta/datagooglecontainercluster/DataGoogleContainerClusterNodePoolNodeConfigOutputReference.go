@@ -11,6 +11,7 @@ import (
 type DataGoogleContainerClusterNodePoolNodeConfigOutputReference interface {
 	cdktf.ComplexObject
 	AdvancedMachineFeatures() DataGoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesList
+	BootDisk() DataGoogleContainerClusterNodePoolNodeConfigBootDiskList
 	BootDiskKmsKey() *string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -126,6 +127,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigOutputReference) 
 	_jsii_.Get(
 		j,
 		"advancedMachineFeatures",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigOutputReference) BootDisk() DataGoogleContainerClusterNodePoolNodeConfigBootDiskList {
+	var returns DataGoogleContainerClusterNodePoolNodeConfigBootDiskList
+	_jsii_.Get(
+		j,
+		"bootDisk",
 		&returns,
 	)
 	return returns

@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleApigeeTargetServerSSlInfoOutputReference) validateSetEn
 	return nil
 }
 
+func (j *jsiiProxy_GoogleApigeeTargetServerSSlInfoOutputReference) validateSetEnforceParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleApigeeTargetServerSSlInfoOutputReference) validateSetIgnoreValidationErrorsParameters(val interface{}) error {
 	return nil
 }

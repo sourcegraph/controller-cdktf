@@ -71,7 +71,6 @@ type GoogleComputeRouterRoutePolicyTermsOutputReference interface {
 	PutActions(value interface{})
 	PutMatch(value *GoogleComputeRouterRoutePolicyTermsMatch)
 	ResetActions()
-	ResetMatch()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -523,14 +522,6 @@ func (g *jsiiProxy_GoogleComputeRouterRoutePolicyTermsOutputReference) ResetActi
 	_jsii_.InvokeVoid(
 		g,
 		"resetActions",
-		nil, // no parameters
-	)
-}
-
-func (g *jsiiProxy_GoogleComputeRouterRoutePolicyTermsOutputReference) ResetMatch() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetMatch",
 		nil, // no parameters
 	)
 }

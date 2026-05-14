@@ -35,6 +35,9 @@ type SpannerBackupScheduleEncryptionConfigOutputReference interface {
 	KmsKeyName() *string
 	SetKmsKeyName(val *string)
 	KmsKeyNameInput() *string
+	KmsKeyNames() *[]*string
+	SetKmsKeyNames(val *[]*string)
+	KmsKeyNamesInput() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -68,6 +71,7 @@ type SpannerBackupScheduleEncryptionConfigOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetKmsKeyName()
+	ResetKmsKeyNames()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -173,6 +177,26 @@ func (j *jsiiProxy_SpannerBackupScheduleEncryptionConfigOutputReference) KmsKeyN
 	return returns
 }
 
+func (j *jsiiProxy_SpannerBackupScheduleEncryptionConfigOutputReference) KmsKeyNames() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"kmsKeyNames",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpannerBackupScheduleEncryptionConfigOutputReference) KmsKeyNamesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"kmsKeyNamesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SpannerBackupScheduleEncryptionConfigOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -272,6 +296,17 @@ func (j *jsiiProxy_SpannerBackupScheduleEncryptionConfigOutputReference)SetKmsKe
 	_jsii_.Set(
 		j,
 		"kmsKeyName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SpannerBackupScheduleEncryptionConfigOutputReference)SetKmsKeyNames(val *[]*string) {
+	if err := j.validateSetKmsKeyNamesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kmsKeyNames",
 		val,
 	)
 }
@@ -488,6 +523,14 @@ func (s *jsiiProxy_SpannerBackupScheduleEncryptionConfigOutputReference) ResetKm
 	_jsii_.InvokeVoid(
 		s,
 		"resetKmsKeyName",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SpannerBackupScheduleEncryptionConfigOutputReference) ResetKmsKeyNames() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetKmsKeyNames",
 		nil, // no parameters
 	)
 }

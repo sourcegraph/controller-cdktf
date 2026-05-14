@@ -1,0 +1,6 @@
+package googlecestoolset
+
+
+type GoogleCesToolsetOpenApiToolsetApiAuthenticationServiceAgentIdTokenAuthConfig struct {
+}
+

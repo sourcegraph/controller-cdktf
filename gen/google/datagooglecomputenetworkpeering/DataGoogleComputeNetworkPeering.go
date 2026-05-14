@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagooglecomputenetworkpeering/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/compute_network_peering google_compute_network_peering}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/compute_network_peering google_compute_network_peering}.
 type DataGoogleComputeNetworkPeering interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -69,6 +69,7 @@ type DataGoogleComputeNetworkPeering interface {
 	TerraformResourceType() *string
 	Timeouts() DataGoogleComputeNetworkPeeringTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	UpdateStrategy() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -419,8 +420,18 @@ func (j *jsiiProxy_DataGoogleComputeNetworkPeering) TimeoutsInput() interface{} 
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeNetworkPeering) UpdateStrategy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updateStrategy",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/compute_network_peering google_compute_network_peering} Data Source.
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/compute_network_peering google_compute_network_peering} Data Source.
 func NewDataGoogleComputeNetworkPeering(scope constructs.Construct, id *string, config *DataGoogleComputeNetworkPeeringConfig) DataGoogleComputeNetworkPeering {
 	_init_.Initialize()
 
@@ -438,7 +449,7 @@ func NewDataGoogleComputeNetworkPeering(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/compute_network_peering google_compute_network_peering} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/compute_network_peering google_compute_network_peering} Data Source.
 func NewDataGoogleComputeNetworkPeering_Override(d DataGoogleComputeNetworkPeering, scope constructs.Construct, id *string, config *DataGoogleComputeNetworkPeeringConfig) {
 	_init_.Initialize()
 

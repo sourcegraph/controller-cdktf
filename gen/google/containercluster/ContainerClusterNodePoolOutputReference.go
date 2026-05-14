@@ -54,6 +54,8 @@ type ContainerClusterNodePoolOutputReference interface {
 	NodeCount() *float64
 	SetNodeCount(val *float64)
 	NodeCountInput() *float64
+	NodeDrainConfig() ContainerClusterNodePoolNodeDrainConfigList
+	NodeDrainConfigInput() interface{}
 	NodeLocations() *[]*string
 	SetNodeLocations(val *[]*string)
 	NodeLocationsInput() *[]*string
@@ -102,6 +104,7 @@ type ContainerClusterNodePoolOutputReference interface {
 	PutManagement(value *ContainerClusterNodePoolManagement)
 	PutNetworkConfig(value *ContainerClusterNodePoolNetworkConfig)
 	PutNodeConfig(value *ContainerClusterNodePoolNodeConfig)
+	PutNodeDrainConfig(value interface{})
 	PutPlacementPolicy(value *ContainerClusterNodePoolPlacementPolicy)
 	PutQueuedProvisioning(value *ContainerClusterNodePoolQueuedProvisioning)
 	PutUpgradeSettings(value *ContainerClusterNodePoolUpgradeSettings)
@@ -114,6 +117,7 @@ type ContainerClusterNodePoolOutputReference interface {
 	ResetNetworkConfig()
 	ResetNodeConfig()
 	ResetNodeCount()
+	ResetNodeDrainConfig()
 	ResetNodeLocations()
 	ResetPlacementPolicy()
 	ResetQueuedProvisioning()
@@ -379,6 +383,26 @@ func (j *jsiiProxy_ContainerClusterNodePoolOutputReference) NodeCountInput() *fl
 	_jsii_.Get(
 		j,
 		"nodeCountInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolOutputReference) NodeDrainConfig() ContainerClusterNodePoolNodeDrainConfigList {
+	var returns ContainerClusterNodePoolNodeDrainConfigList
+	_jsii_.Get(
+		j,
+		"nodeDrainConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolOutputReference) NodeDrainConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"nodeDrainConfigInput",
 		&returns,
 	)
 	return returns
@@ -894,6 +918,17 @@ func (c *jsiiProxy_ContainerClusterNodePoolOutputReference) PutNodeConfig(value 
 	)
 }
 
+func (c *jsiiProxy_ContainerClusterNodePoolOutputReference) PutNodeDrainConfig(value interface{}) {
+	if err := c.validatePutNodeDrainConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putNodeDrainConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerClusterNodePoolOutputReference) PutPlacementPolicy(value *ContainerClusterNodePoolPlacementPolicy) {
 	if err := c.validatePutPlacementPolicyParameters(value); err != nil {
 		panic(err)
@@ -995,6 +1030,14 @@ func (c *jsiiProxy_ContainerClusterNodePoolOutputReference) ResetNodeCount() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetNodeCount",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolOutputReference) ResetNodeDrainConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetNodeDrainConfig",
 		nil, // no parameters
 	)
 }

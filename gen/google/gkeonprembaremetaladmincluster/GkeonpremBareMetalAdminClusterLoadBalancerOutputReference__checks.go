@@ -90,6 +90,17 @@ func (g *jsiiProxy_GkeonpremBareMetalAdminClusterLoadBalancerOutputReference) va
 	return nil
 }
 
+func (g *jsiiProxy_GkeonpremBareMetalAdminClusterLoadBalancerOutputReference) validatePutBgpLbConfigParameters(value *GkeonpremBareMetalAdminClusterLoadBalancerBgpLbConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GkeonpremBareMetalAdminClusterLoadBalancerOutputReference) validatePutManualLbConfigParameters(value *GkeonpremBareMetalAdminClusterLoadBalancerManualLbConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagooglecertificatemanagercertificates/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/certificate_manager_certificates google_certificate_manager_certificates}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/certificate_manager_certificates google_certificate_manager_certificates}.
 type DataGoogleCertificateManagerCertificates interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -321,7 +321,7 @@ func (j *jsiiProxy_DataGoogleCertificateManagerCertificates) TerraformResourceTy
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/certificate_manager_certificates google_certificate_manager_certificates} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/certificate_manager_certificates google_certificate_manager_certificates} Data Source.
 func NewDataGoogleCertificateManagerCertificates(scope constructs.Construct, id *string, config *DataGoogleCertificateManagerCertificatesConfig) DataGoogleCertificateManagerCertificates {
 	_init_.Initialize()
 
@@ -339,7 +339,7 @@ func NewDataGoogleCertificateManagerCertificates(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/certificate_manager_certificates google_certificate_manager_certificates} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/certificate_manager_certificates google_certificate_manager_certificates} Data Source.
 func NewDataGoogleCertificateManagerCertificates_Override(d DataGoogleCertificateManagerCertificates, scope constructs.Construct, id *string, config *DataGoogleCertificateManagerCertificatesConfig) {
 	_init_.Initialize()
 

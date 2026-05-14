@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlespannerinstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_spanner_instance google_spanner_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_spanner_instance google_spanner_instance}.
 type GoogleSpannerInstance interface {
 	cdktf.TerraformResource
 	AutoscalingConfig() GoogleSpannerInstanceAutoscalingConfigOutputReference
@@ -57,6 +57,9 @@ type GoogleSpannerInstance interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	InstanceType() *string
+	SetInstanceType(val *string)
+	InstanceTypeInput() *string
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
 	LabelsInput() *map[string]*string
@@ -148,6 +151,7 @@ type GoogleSpannerInstance interface {
 	ResetEdition()
 	ResetForceDestroy()
 	ResetId()
+	ResetInstanceType()
 	ResetLabels()
 	ResetName()
 	ResetNumNodes()
@@ -405,6 +409,26 @@ func (j *jsiiProxy_GoogleSpannerInstance) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleSpannerInstance) InstanceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"instanceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSpannerInstance) InstanceTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"instanceTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleSpannerInstance) Labels() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -626,7 +650,7 @@ func (j *jsiiProxy_GoogleSpannerInstance) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_spanner_instance google_spanner_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_spanner_instance google_spanner_instance} Resource.
 func NewGoogleSpannerInstance(scope constructs.Construct, id *string, config *GoogleSpannerInstanceConfig) GoogleSpannerInstance {
 	_init_.Initialize()
 
@@ -644,7 +668,7 @@ func NewGoogleSpannerInstance(scope constructs.Construct, id *string, config *Go
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_spanner_instance google_spanner_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_spanner_instance google_spanner_instance} Resource.
 func NewGoogleSpannerInstance_Override(g GoogleSpannerInstance, scope constructs.Construct, id *string, config *GoogleSpannerInstanceConfig) {
 	_init_.Initialize()
 
@@ -755,6 +779,17 @@ func (j *jsiiProxy_GoogleSpannerInstance)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleSpannerInstance)SetInstanceType(val *string) {
+	if err := j.validateSetInstanceTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"instanceType",
 		val,
 	)
 }
@@ -1255,6 +1290,14 @@ func (g *jsiiProxy_GoogleSpannerInstance) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleSpannerInstance) ResetInstanceType() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetInstanceType",
 		nil, // no parameters
 	)
 }

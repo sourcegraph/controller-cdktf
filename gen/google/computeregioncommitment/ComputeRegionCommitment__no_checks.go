@@ -76,6 +76,10 @@ func (c *jsiiProxy_ComputeRegionCommitment) validatePutLicenseResourceParameters
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRegionCommitment) validatePutParamsParameters(value *ComputeRegionCommitmentParams) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionCommitment) validatePutResourcesParameters(value interface{}) error {
 	return nil
 }

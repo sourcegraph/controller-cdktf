@@ -64,6 +64,10 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigOutputReference) v
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigOutputReference) validateSetAcceleratorNetworkProfileParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -89,6 +93,10 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigOutputReference) v
 }
 
 func (j *jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigOutputReference) validateSetPodRangeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigOutputReference) validateSetSubnetworkParameters(val *string) error {
 	return nil
 }
 

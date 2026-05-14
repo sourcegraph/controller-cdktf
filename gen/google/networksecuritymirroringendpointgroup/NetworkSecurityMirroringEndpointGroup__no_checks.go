@@ -124,6 +124,10 @@ func (j *jsiiProxy_NetworkSecurityMirroringEndpointGroup) validateSetMirroringDe
 	return nil
 }
 
+func (j *jsiiProxy_NetworkSecurityMirroringEndpointGroup) validateSetMirroringDeploymentGroupsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkSecurityMirroringEndpointGroup) validateSetMirroringEndpointGroupIdParameters(val *string) error {
 	return nil
 }
@@ -133,6 +137,10 @@ func (j *jsiiProxy_NetworkSecurityMirroringEndpointGroup) validateSetProjectPara
 }
 
 func (j *jsiiProxy_NetworkSecurityMirroringEndpointGroup) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_NetworkSecurityMirroringEndpointGroup) validateSetTypeParameters(val *string) error {
 	return nil
 }
 

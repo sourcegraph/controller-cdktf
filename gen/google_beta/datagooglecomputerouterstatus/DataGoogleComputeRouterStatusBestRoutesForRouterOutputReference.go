@@ -47,6 +47,7 @@ type DataGoogleComputeRouterStatusBestRoutesForRouterOutputReference interface {
 	NextHopOrigin() *string
 	NextHopPeering() *string
 	NextHopVpnTunnel() *string
+	Params() DataGoogleComputeRouterStatusBestRoutesForRouterParamsList
 	Priority() *float64
 	Project() *string
 	RouteStatus() *string
@@ -326,6 +327,16 @@ func (j *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesForRouterOutputReferen
 	_jsii_.Get(
 		j,
 		"nextHopVpnTunnel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesForRouterOutputReference) Params() DataGoogleComputeRouterStatusBestRoutesForRouterParamsList {
+	var returns DataGoogleComputeRouterStatusBestRoutesForRouterParamsList
+	_jsii_.Get(
+		j,
+		"params",
 		&returns,
 	)
 	return returns

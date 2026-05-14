@@ -112,6 +112,10 @@ func (j *jsiiProxy_StorageAnywhereCache) validateSetIdParameters(val *string) er
 	return nil
 }
 
+func (j *jsiiProxy_StorageAnywhereCache) validateSetIngestOnWriteParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageAnywhereCache) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

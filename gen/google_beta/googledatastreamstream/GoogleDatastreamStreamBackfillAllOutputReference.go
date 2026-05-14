@@ -29,6 +29,8 @@ type GoogleDatastreamStreamBackfillAllOutputReference interface {
 	Fqn() *string
 	InternalValue() *GoogleDatastreamStreamBackfillAll
 	SetInternalValue(val *GoogleDatastreamStreamBackfillAll)
+	MongodbExcludedObjects() GoogleDatastreamStreamBackfillAllMongodbExcludedObjectsOutputReference
+	MongodbExcludedObjectsInput() *GoogleDatastreamStreamBackfillAllMongodbExcludedObjects
 	MysqlExcludedObjects() GoogleDatastreamStreamBackfillAllMysqlExcludedObjectsOutputReference
 	MysqlExcludedObjectsInput() *GoogleDatastreamStreamBackfillAllMysqlExcludedObjects
 	OracleExcludedObjects() GoogleDatastreamStreamBackfillAllOracleExcludedObjectsOutputReference
@@ -37,6 +39,8 @@ type GoogleDatastreamStreamBackfillAllOutputReference interface {
 	PostgresqlExcludedObjectsInput() *GoogleDatastreamStreamBackfillAllPostgresqlExcludedObjects
 	SalesforceExcludedObjects() GoogleDatastreamStreamBackfillAllSalesforceExcludedObjectsOutputReference
 	SalesforceExcludedObjectsInput() *GoogleDatastreamStreamBackfillAllSalesforceExcludedObjects
+	SpannerExcludedObjects() GoogleDatastreamStreamBackfillAllSpannerExcludedObjectsOutputReference
+	SpannerExcludedObjectsInput() *GoogleDatastreamStreamBackfillAllSpannerExcludedObjects
 	SqlServerExcludedObjects() GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsOutputReference
 	SqlServerExcludedObjectsInput() *GoogleDatastreamStreamBackfillAllSqlServerExcludedObjects
 	// Experimental.
@@ -71,15 +75,19 @@ type GoogleDatastreamStreamBackfillAllOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutMongodbExcludedObjects(value *GoogleDatastreamStreamBackfillAllMongodbExcludedObjects)
 	PutMysqlExcludedObjects(value *GoogleDatastreamStreamBackfillAllMysqlExcludedObjects)
 	PutOracleExcludedObjects(value *GoogleDatastreamStreamBackfillAllOracleExcludedObjects)
 	PutPostgresqlExcludedObjects(value *GoogleDatastreamStreamBackfillAllPostgresqlExcludedObjects)
 	PutSalesforceExcludedObjects(value *GoogleDatastreamStreamBackfillAllSalesforceExcludedObjects)
+	PutSpannerExcludedObjects(value *GoogleDatastreamStreamBackfillAllSpannerExcludedObjects)
 	PutSqlServerExcludedObjects(value *GoogleDatastreamStreamBackfillAllSqlServerExcludedObjects)
+	ResetMongodbExcludedObjects()
 	ResetMysqlExcludedObjects()
 	ResetOracleExcludedObjects()
 	ResetPostgresqlExcludedObjects()
 	ResetSalesforceExcludedObjects()
+	ResetSpannerExcludedObjects()
 	ResetSqlServerExcludedObjects()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -141,6 +149,26 @@ func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllOutputReference) InternalVal
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllOutputReference) MongodbExcludedObjects() GoogleDatastreamStreamBackfillAllMongodbExcludedObjectsOutputReference {
+	var returns GoogleDatastreamStreamBackfillAllMongodbExcludedObjectsOutputReference
+	_jsii_.Get(
+		j,
+		"mongodbExcludedObjects",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllOutputReference) MongodbExcludedObjectsInput() *GoogleDatastreamStreamBackfillAllMongodbExcludedObjects {
+	var returns *GoogleDatastreamStreamBackfillAllMongodbExcludedObjects
+	_jsii_.Get(
+		j,
+		"mongodbExcludedObjectsInput",
 		&returns,
 	)
 	return returns
@@ -221,6 +249,26 @@ func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllOutputReference) SalesforceE
 	_jsii_.Get(
 		j,
 		"salesforceExcludedObjectsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllOutputReference) SpannerExcludedObjects() GoogleDatastreamStreamBackfillAllSpannerExcludedObjectsOutputReference {
+	var returns GoogleDatastreamStreamBackfillAllSpannerExcludedObjectsOutputReference
+	_jsii_.Get(
+		j,
+		"spannerExcludedObjects",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllOutputReference) SpannerExcludedObjectsInput() *GoogleDatastreamStreamBackfillAllSpannerExcludedObjects {
+	var returns *GoogleDatastreamStreamBackfillAllSpannerExcludedObjects
+	_jsii_.Get(
+		j,
+		"spannerExcludedObjectsInput",
 		&returns,
 	)
 	return returns
@@ -535,6 +583,17 @@ func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllOutputReference) Interpolati
 	return returns
 }
 
+func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllOutputReference) PutMongodbExcludedObjects(value *GoogleDatastreamStreamBackfillAllMongodbExcludedObjects) {
+	if err := g.validatePutMongodbExcludedObjectsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putMongodbExcludedObjects",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllOutputReference) PutMysqlExcludedObjects(value *GoogleDatastreamStreamBackfillAllMysqlExcludedObjects) {
 	if err := g.validatePutMysqlExcludedObjectsParameters(value); err != nil {
 		panic(err)
@@ -579,6 +638,17 @@ func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllOutputReference) PutSalesfor
 	)
 }
 
+func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllOutputReference) PutSpannerExcludedObjects(value *GoogleDatastreamStreamBackfillAllSpannerExcludedObjects) {
+	if err := g.validatePutSpannerExcludedObjectsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSpannerExcludedObjects",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllOutputReference) PutSqlServerExcludedObjects(value *GoogleDatastreamStreamBackfillAllSqlServerExcludedObjects) {
 	if err := g.validatePutSqlServerExcludedObjectsParameters(value); err != nil {
 		panic(err)
@@ -587,6 +657,14 @@ func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllOutputReference) PutSqlServe
 		g,
 		"putSqlServerExcludedObjects",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllOutputReference) ResetMongodbExcludedObjects() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMongodbExcludedObjects",
+		nil, // no parameters
 	)
 }
 
@@ -618,6 +696,14 @@ func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllOutputReference) ResetSalesf
 	_jsii_.InvokeVoid(
 		g,
 		"resetSalesforceExcludedObjects",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllOutputReference) ResetSpannerExcludedObjects() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSpannerExcludedObjects",
 		nil, // no parameters
 	)
 }

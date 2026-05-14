@@ -72,6 +72,10 @@ func (g *jsiiProxy_GoogleVertexAiIndex) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
+func (g *jsiiProxy_GoogleVertexAiIndex) validatePutEncryptionSpecParameters(value *GoogleVertexAiIndexEncryptionSpec) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleVertexAiIndex) validatePutMetadataParameters(value *GoogleVertexAiIndexMetadata) error {
 	return nil
 }

@@ -90,6 +90,17 @@ func (g *jsiiProxy_GoogleContainerNodePoolUpgradeSettingsBlueGreenSettingsOutput
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference) validatePutAutoscaledRolloutPolicyParameters(value *GoogleContainerNodePoolUpgradeSettingsBlueGreenSettingsAutoscaledRolloutPolicy) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference) validatePutStandardRolloutPolicyParameters(value *GoogleContainerNodePoolUpgradeSettingsBlueGreenSettingsStandardRolloutPolicy) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

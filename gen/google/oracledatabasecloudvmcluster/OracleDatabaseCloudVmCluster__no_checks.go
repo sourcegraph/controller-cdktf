@@ -96,6 +96,10 @@ func validateOracleDatabaseCloudVmCluster_IsTerraformResourceParameters(x interf
 	return nil
 }
 
+func (j *jsiiProxy_OracleDatabaseCloudVmCluster) validateSetBackupOdbSubnetParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_OracleDatabaseCloudVmCluster) validateSetBackupSubnetCidrParameters(val *string) error {
 	return nil
 }
@@ -145,6 +149,14 @@ func (j *jsiiProxy_OracleDatabaseCloudVmCluster) validateSetLocationParameters(v
 }
 
 func (j *jsiiProxy_OracleDatabaseCloudVmCluster) validateSetNetworkParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_OracleDatabaseCloudVmCluster) validateSetOdbNetworkParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_OracleDatabaseCloudVmCluster) validateSetOdbSubnetParameters(val *string) error {
 	return nil
 }
 

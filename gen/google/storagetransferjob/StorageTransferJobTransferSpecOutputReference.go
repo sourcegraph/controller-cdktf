@@ -10,6 +10,8 @@ import (
 
 type StorageTransferJobTransferSpecOutputReference interface {
 	cdktf.ComplexObject
+	AwsS3CompatibleDataSource() StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference
+	AwsS3CompatibleDataSourceInput() *StorageTransferJobTransferSpecAwsS3CompatibleDataSource
 	AwsS3DataSource() StorageTransferJobTransferSpecAwsS3DataSourceOutputReference
 	AwsS3DataSourceInput() *StorageTransferJobTransferSpecAwsS3DataSource
 	AzureBlobStorageDataSource() StorageTransferJobTransferSpecAzureBlobStorageDataSourceOutputReference
@@ -61,6 +63,8 @@ type StorageTransferJobTransferSpecOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TransferManifest() StorageTransferJobTransferSpecTransferManifestOutputReference
+	TransferManifestInput() *StorageTransferJobTransferSpecTransferManifest
 	TransferOptions() StorageTransferJobTransferSpecTransferOptionsOutputReference
 	TransferOptionsInput() *StorageTransferJobTransferSpecTransferOptions
 	// Experimental.
@@ -87,6 +91,7 @@ type StorageTransferJobTransferSpecOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAwsS3CompatibleDataSource(value *StorageTransferJobTransferSpecAwsS3CompatibleDataSource)
 	PutAwsS3DataSource(value *StorageTransferJobTransferSpecAwsS3DataSource)
 	PutAzureBlobStorageDataSource(value *StorageTransferJobTransferSpecAzureBlobStorageDataSource)
 	PutGcsDataSink(value *StorageTransferJobTransferSpecGcsDataSink)
@@ -96,7 +101,9 @@ type StorageTransferJobTransferSpecOutputReference interface {
 	PutObjectConditions(value *StorageTransferJobTransferSpecObjectConditions)
 	PutPosixDataSink(value *StorageTransferJobTransferSpecPosixDataSink)
 	PutPosixDataSource(value *StorageTransferJobTransferSpecPosixDataSource)
+	PutTransferManifest(value *StorageTransferJobTransferSpecTransferManifest)
 	PutTransferOptions(value *StorageTransferJobTransferSpecTransferOptions)
+	ResetAwsS3CompatibleDataSource()
 	ResetAwsS3DataSource()
 	ResetAzureBlobStorageDataSource()
 	ResetGcsDataSink()
@@ -108,6 +115,7 @@ type StorageTransferJobTransferSpecOutputReference interface {
 	ResetPosixDataSource()
 	ResetSinkAgentPoolName()
 	ResetSourceAgentPoolName()
+	ResetTransferManifest()
 	ResetTransferOptions()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -122,6 +130,26 @@ type StorageTransferJobTransferSpecOutputReference interface {
 // The jsii proxy struct for StorageTransferJobTransferSpecOutputReference
 type jsiiProxy_StorageTransferJobTransferSpecOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_StorageTransferJobTransferSpecOutputReference) AwsS3CompatibleDataSource() StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference {
+	var returns StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference
+	_jsii_.Get(
+		j,
+		"awsS3CompatibleDataSource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageTransferJobTransferSpecOutputReference) AwsS3CompatibleDataSourceInput() *StorageTransferJobTransferSpecAwsS3CompatibleDataSource {
+	var returns *StorageTransferJobTransferSpecAwsS3CompatibleDataSource
+	_jsii_.Get(
+		j,
+		"awsS3CompatibleDataSourceInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_StorageTransferJobTransferSpecOutputReference) AwsS3DataSource() StorageTransferJobTransferSpecAwsS3DataSourceOutputReference {
@@ -409,6 +437,26 @@ func (j *jsiiProxy_StorageTransferJobTransferSpecOutputReference) TerraformResou
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageTransferJobTransferSpecOutputReference) TransferManifest() StorageTransferJobTransferSpecTransferManifestOutputReference {
+	var returns StorageTransferJobTransferSpecTransferManifestOutputReference
+	_jsii_.Get(
+		j,
+		"transferManifest",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageTransferJobTransferSpecOutputReference) TransferManifestInput() *StorageTransferJobTransferSpecTransferManifest {
+	var returns *StorageTransferJobTransferSpecTransferManifest
+	_jsii_.Get(
+		j,
+		"transferManifestInput",
 		&returns,
 	)
 	return returns
@@ -725,6 +773,17 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecOutputReference) InterpolationF
 	return returns
 }
 
+func (s *jsiiProxy_StorageTransferJobTransferSpecOutputReference) PutAwsS3CompatibleDataSource(value *StorageTransferJobTransferSpecAwsS3CompatibleDataSource) {
+	if err := s.validatePutAwsS3CompatibleDataSourceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putAwsS3CompatibleDataSource",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_StorageTransferJobTransferSpecOutputReference) PutAwsS3DataSource(value *StorageTransferJobTransferSpecAwsS3DataSource) {
 	if err := s.validatePutAwsS3DataSourceParameters(value); err != nil {
 		panic(err)
@@ -824,6 +883,17 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecOutputReference) PutPosixDataSo
 	)
 }
 
+func (s *jsiiProxy_StorageTransferJobTransferSpecOutputReference) PutTransferManifest(value *StorageTransferJobTransferSpecTransferManifest) {
+	if err := s.validatePutTransferManifestParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putTransferManifest",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_StorageTransferJobTransferSpecOutputReference) PutTransferOptions(value *StorageTransferJobTransferSpecTransferOptions) {
 	if err := s.validatePutTransferOptionsParameters(value); err != nil {
 		panic(err)
@@ -832,6 +902,14 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecOutputReference) PutTransferOpt
 		s,
 		"putTransferOptions",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_StorageTransferJobTransferSpecOutputReference) ResetAwsS3CompatibleDataSource() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAwsS3CompatibleDataSource",
+		nil, // no parameters
 	)
 }
 
@@ -919,6 +997,14 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecOutputReference) ResetSourceAge
 	_jsii_.InvokeVoid(
 		s,
 		"resetSourceAgentPoolName",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageTransferJobTransferSpecOutputReference) ResetTransferManifest() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTransferManifest",
 		nil, // no parameters
 	)
 }

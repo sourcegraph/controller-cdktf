@@ -27,6 +27,8 @@ type GoogleContainerClusterMaintenancePolicyOutputReference interface {
 	CreationStack() *[]*string
 	DailyMaintenanceWindow() GoogleContainerClusterMaintenancePolicyDailyMaintenanceWindowOutputReference
 	DailyMaintenanceWindowInput() *GoogleContainerClusterMaintenancePolicyDailyMaintenanceWindow
+	DisruptionBudget() GoogleContainerClusterMaintenancePolicyDisruptionBudgetOutputReference
+	DisruptionBudgetInput() *GoogleContainerClusterMaintenancePolicyDisruptionBudget
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleContainerClusterMaintenancePolicy
@@ -68,9 +70,11 @@ type GoogleContainerClusterMaintenancePolicyOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutDailyMaintenanceWindow(value *GoogleContainerClusterMaintenancePolicyDailyMaintenanceWindow)
+	PutDisruptionBudget(value *GoogleContainerClusterMaintenancePolicyDisruptionBudget)
 	PutMaintenanceExclusion(value interface{})
 	PutRecurringWindow(value *GoogleContainerClusterMaintenancePolicyRecurringWindow)
 	ResetDailyMaintenanceWindow()
+	ResetDisruptionBudget()
 	ResetMaintenanceExclusion()
 	ResetRecurringWindow()
 	// Produce the Token's value at resolution time.
@@ -133,6 +137,26 @@ func (j *jsiiProxy_GoogleContainerClusterMaintenancePolicyOutputReference) Daily
 	_jsii_.Get(
 		j,
 		"dailyMaintenanceWindowInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterMaintenancePolicyOutputReference) DisruptionBudget() GoogleContainerClusterMaintenancePolicyDisruptionBudgetOutputReference {
+	var returns GoogleContainerClusterMaintenancePolicyDisruptionBudgetOutputReference
+	_jsii_.Get(
+		j,
+		"disruptionBudget",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterMaintenancePolicyOutputReference) DisruptionBudgetInput() *GoogleContainerClusterMaintenancePolicyDisruptionBudget {
+	var returns *GoogleContainerClusterMaintenancePolicyDisruptionBudget
+	_jsii_.Get(
+		j,
+		"disruptionBudgetInput",
 		&returns,
 	)
 	return returns
@@ -498,6 +522,17 @@ func (g *jsiiProxy_GoogleContainerClusterMaintenancePolicyOutputReference) PutDa
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerClusterMaintenancePolicyOutputReference) PutDisruptionBudget(value *GoogleContainerClusterMaintenancePolicyDisruptionBudget) {
+	if err := g.validatePutDisruptionBudgetParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putDisruptionBudget",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerClusterMaintenancePolicyOutputReference) PutMaintenanceExclusion(value interface{}) {
 	if err := g.validatePutMaintenanceExclusionParameters(value); err != nil {
 		panic(err)
@@ -524,6 +559,14 @@ func (g *jsiiProxy_GoogleContainerClusterMaintenancePolicyOutputReference) Reset
 	_jsii_.InvokeVoid(
 		g,
 		"resetDailyMaintenanceWindow",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterMaintenancePolicyOutputReference) ResetDisruptionBudget() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDisruptionBudget",
 		nil, // no parameters
 	)
 }

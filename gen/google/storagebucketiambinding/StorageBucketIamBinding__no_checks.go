@@ -76,6 +76,10 @@ func (s *jsiiProxy_StorageBucketIamBinding) validatePutConditionParameters(value
 	return nil
 }
 
+func (s *jsiiProxy_StorageBucketIamBinding) validatePutTimeoutsParameters(value *StorageBucketIamBindingTimeouts) error {
+	return nil
+}
+
 func validateStorageBucketIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

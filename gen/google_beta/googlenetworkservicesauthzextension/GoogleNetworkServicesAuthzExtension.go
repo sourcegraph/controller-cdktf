@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlenetworkservicesauthzextension/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_network_services_authz_extension google_network_services_authz_extension}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_network_services_authz_extension google_network_services_authz_extension}.
 type GoogleNetworkServicesAuthzExtension interface {
 	cdktf.TerraformResource
 	Authority() *string
@@ -150,11 +150,13 @@ type GoogleNetworkServicesAuthzExtension interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *GoogleNetworkServicesAuthzExtensionTimeouts)
+	ResetAuthority()
 	ResetDescription()
 	ResetFailOpen()
 	ResetForwardHeaders()
 	ResetId()
 	ResetLabels()
+	ResetLoadBalancingScheme()
 	ResetMetadata()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -681,7 +683,7 @@ func (j *jsiiProxy_GoogleNetworkServicesAuthzExtension) WireFormatInput() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_network_services_authz_extension google_network_services_authz_extension} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_network_services_authz_extension google_network_services_authz_extension} Resource.
 func NewGoogleNetworkServicesAuthzExtension(scope constructs.Construct, id *string, config *GoogleNetworkServicesAuthzExtensionConfig) GoogleNetworkServicesAuthzExtension {
 	_init_.Initialize()
 
@@ -699,7 +701,7 @@ func NewGoogleNetworkServicesAuthzExtension(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_network_services_authz_extension google_network_services_authz_extension} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_network_services_authz_extension google_network_services_authz_extension} Resource.
 func NewGoogleNetworkServicesAuthzExtension_Override(g GoogleNetworkServicesAuthzExtension, scope constructs.Construct, id *string, config *GoogleNetworkServicesAuthzExtensionConfig) {
 	_init_.Initialize()
 
@@ -1296,6 +1298,14 @@ func (g *jsiiProxy_GoogleNetworkServicesAuthzExtension) PutTimeouts(value *Googl
 	)
 }
 
+func (g *jsiiProxy_GoogleNetworkServicesAuthzExtension) ResetAuthority() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAuthority",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleNetworkServicesAuthzExtension) ResetDescription() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1332,6 +1342,14 @@ func (g *jsiiProxy_GoogleNetworkServicesAuthzExtension) ResetLabels() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetLabels",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleNetworkServicesAuthzExtension) ResetLoadBalancingScheme() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLoadBalancingScheme",
 		nil, // no parameters
 	)
 }

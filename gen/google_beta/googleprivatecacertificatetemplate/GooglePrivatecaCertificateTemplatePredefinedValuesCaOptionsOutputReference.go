@@ -35,6 +35,9 @@ type GooglePrivatecaCertificateTemplatePredefinedValuesCaOptionsOutputReference 
 	MaxIssuerPathLength() *float64
 	SetMaxIssuerPathLength(val *float64)
 	MaxIssuerPathLengthInput() *float64
+	NullCa() interface{}
+	SetNullCa(val interface{})
+	NullCaInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -43,6 +46,9 @@ type GooglePrivatecaCertificateTemplatePredefinedValuesCaOptionsOutputReference 
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	ZeroMaxIssuerPathLength() interface{}
+	SetZeroMaxIssuerPathLength(val interface{})
+	ZeroMaxIssuerPathLengthInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -69,6 +75,8 @@ type GooglePrivatecaCertificateTemplatePredefinedValuesCaOptionsOutputReference 
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetIsCa()
 	ResetMaxIssuerPathLength()
+	ResetNullCa()
+	ResetZeroMaxIssuerPathLength()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -174,6 +182,26 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesCaOptionsOu
 	return returns
 }
 
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesCaOptionsOutputReference) NullCa() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"nullCa",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesCaOptionsOutputReference) NullCaInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"nullCaInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesCaOptionsOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -189,6 +217,26 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesCaOptionsOu
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesCaOptionsOutputReference) ZeroMaxIssuerPathLength() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"zeroMaxIssuerPathLength",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesCaOptionsOutputReference) ZeroMaxIssuerPathLengthInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"zeroMaxIssuerPathLengthInput",
 		&returns,
 	)
 	return returns
@@ -277,6 +325,17 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesCaOptionsOu
 	)
 }
 
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesCaOptionsOutputReference)SetNullCa(val interface{}) {
+	if err := j.validateSetNullCaParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"nullCa",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesCaOptionsOutputReference)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
@@ -295,6 +354,17 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesCaOptionsOu
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesCaOptionsOutputReference)SetZeroMaxIssuerPathLength(val interface{}) {
+	if err := j.validateSetZeroMaxIssuerPathLengthParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"zeroMaxIssuerPathLength",
 		val,
 	)
 }
@@ -497,6 +567,22 @@ func (g *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesCaOptionsOu
 	_jsii_.InvokeVoid(
 		g,
 		"resetMaxIssuerPathLength",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesCaOptionsOutputReference) ResetNullCa() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNullCa",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesCaOptionsOutputReference) ResetZeroMaxIssuerPathLength() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetZeroMaxIssuerPathLength",
 		nil, // no parameters
 	)
 }

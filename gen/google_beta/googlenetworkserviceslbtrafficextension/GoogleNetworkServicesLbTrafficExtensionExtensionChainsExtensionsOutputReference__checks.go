@@ -223,6 +223,14 @@ func (j *jsiiProxy_GoogleNetworkServicesLbTrafficExtensionExtensionChainsExtensi
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetworkServicesLbTrafficExtensionExtensionChainsExtensionsOutputReference) validateSetMetadataParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetworkServicesLbTrafficExtensionExtensionChainsExtensionsOutputReference) validateSetNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

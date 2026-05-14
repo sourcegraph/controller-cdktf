@@ -72,6 +72,10 @@ func (c *jsiiProxy_ComputeNetwork) validateOverrideLogicalIdParameters(newLogica
 	return nil
 }
 
+func (c *jsiiProxy_ComputeNetwork) validatePutParamsParameters(value *ComputeNetworkParams) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeNetwork) validatePutTimeoutsParameters(value *ComputeNetworkTimeouts) error {
 	return nil
 }
@@ -113,6 +117,10 @@ func (j *jsiiProxy_ComputeNetwork) validateSetConnectionParameters(val interface
 }
 
 func (j *jsiiProxy_ComputeNetwork) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeNetwork) validateSetDeleteBgpAlwaysCompareMedParameters(val interface{}) error {
 	return nil
 }
 

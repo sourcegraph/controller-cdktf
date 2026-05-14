@@ -9,11 +9,12 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/computeaddress/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_address google_compute_address}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_address google_compute_address}.
 type ComputeAddress interface {
 	cdktf.TerraformResource
 	Address() *string
 	SetAddress(val *string)
+	AddressId() *string
 	AddressInput() *string
 	AddressType() *string
 	SetAddressType(val *string)
@@ -50,6 +51,9 @@ type ComputeAddress interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IpCollection() *string
+	SetIpCollection(val *string)
+	IpCollectionInput() *string
 	Ipv6EndpointType() *string
 	SetIpv6EndpointType(val *string)
 	Ipv6EndpointTypeInput() *string
@@ -159,6 +163,7 @@ type ComputeAddress interface {
 	ResetAddressType()
 	ResetDescription()
 	ResetId()
+	ResetIpCollection()
 	ResetIpv6EndpointType()
 	ResetIpVersion()
 	ResetLabels()
@@ -196,6 +201,16 @@ func (j *jsiiProxy_ComputeAddress) Address() *string {
 	_jsii_.Get(
 		j,
 		"address",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeAddress) AddressId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"addressId",
 		&returns,
 	)
 	return returns
@@ -366,6 +381,26 @@ func (j *jsiiProxy_ComputeAddress) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeAddress) IpCollection() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipCollection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeAddress) IpCollectionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipCollectionInput",
 		&returns,
 	)
 	return returns
@@ -732,7 +767,7 @@ func (j *jsiiProxy_ComputeAddress) Users() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_address google_compute_address} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_address google_compute_address} Resource.
 func NewComputeAddress(scope constructs.Construct, id *string, config *ComputeAddressConfig) ComputeAddress {
 	_init_.Initialize()
 
@@ -750,7 +785,7 @@ func NewComputeAddress(scope constructs.Construct, id *string, config *ComputeAd
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_address google_compute_address} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_address google_compute_address} Resource.
 func NewComputeAddress_Override(c ComputeAddress, scope constructs.Construct, id *string, config *ComputeAddressConfig) {
 	_init_.Initialize()
 
@@ -839,6 +874,17 @@ func (j *jsiiProxy_ComputeAddress)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeAddress)SetIpCollection(val *string) {
+	if err := j.validateSetIpCollectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipCollection",
 		val,
 	)
 }
@@ -1386,6 +1432,14 @@ func (c *jsiiProxy_ComputeAddress) ResetId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeAddress) ResetIpCollection() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetIpCollection",
 		nil, // no parameters
 	)
 }

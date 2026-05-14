@@ -30,33 +30,33 @@ type NetworkSecurityAuthzPolicyConfig struct {
 	// 3. If there are no ALLOW policies for the resource or if any of the ALLOW policies match the request, the request is allowed.
 	// 4. Else the request is denied by default if none of the configured AuthzPolicies with ALLOW action match the request. Possible values: ["ALLOW", "DENY", "CUSTOM"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/network_security_authz_policy#action NetworkSecurityAuthzPolicy#action}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_authz_policy#action NetworkSecurityAuthzPolicy#action}
 	Action *string `field:"required" json:"action" yaml:"action"`
 	// The location of the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/network_security_authz_policy#location NetworkSecurityAuthzPolicy#location}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_authz_policy#location NetworkSecurityAuthzPolicy#location}
 	Location *string `field:"required" json:"location" yaml:"location"`
 	// Identifier. Name of the AuthzPolicy resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/network_security_authz_policy#name NetworkSecurityAuthzPolicy#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_authz_policy#name NetworkSecurityAuthzPolicy#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// target block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/network_security_authz_policy#target NetworkSecurityAuthzPolicy#target}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_authz_policy#target NetworkSecurityAuthzPolicy#target}
 	Target *NetworkSecurityAuthzPolicyTarget `field:"required" json:"target" yaml:"target"`
 	// custom_provider block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/network_security_authz_policy#custom_provider NetworkSecurityAuthzPolicy#custom_provider}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_authz_policy#custom_provider NetworkSecurityAuthzPolicy#custom_provider}
 	CustomProvider *NetworkSecurityAuthzPolicyCustomProvider `field:"optional" json:"customProvider" yaml:"customProvider"`
 	// A human-readable description of the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/network_security_authz_policy#description NetworkSecurityAuthzPolicy#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_authz_policy#description NetworkSecurityAuthzPolicy#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// http_rules block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/network_security_authz_policy#http_rules NetworkSecurityAuthzPolicy#http_rules}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_authz_policy#http_rules NetworkSecurityAuthzPolicy#http_rules}
 	HttpRules interface{} `field:"optional" json:"httpRules" yaml:"httpRules"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/network_security_authz_policy#id NetworkSecurityAuthzPolicy#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_authz_policy#id NetworkSecurityAuthzPolicy#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -66,13 +66,24 @@ type NetworkSecurityAuthzPolicyConfig struct {
 	// **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 	// Please refer to the field 'effective_labels' for all of the labels present on the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/network_security_authz_policy#labels NetworkSecurityAuthzPolicy#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_authz_policy#labels NetworkSecurityAuthzPolicy#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/network_security_authz_policy#project NetworkSecurityAuthzPolicy#project}.
+	// Defines the type of authorization being performed.
+	//
+	// 'REQUEST_AUTHZ' applies to request authorization. CUSTOM
+	// authorization policies with Authz extensions will be allowed with ext_authz or ext_proc protocols. Extensions are
+	// invoked only once when the request headers arrive. 'CONTENT_AUTHZ' applies to content security, sanitization, etc.
+	// Only CUSTOM action is allowed in this policy profile. AuthzExtensions in the custom provider must support ext_proc
+	// protocol and be capable of receiving all ext_proc events (REQUEST_HEADERS, REQUEST_BODY, REQUEST_TRAILERS,
+	// RESPONSE_HEADERS, RESPONSE_BODY, RESPONSE_TRAILERS) with FULL_DUPLEX_STREAMED body send mode. Possible values: ["REQUEST_AUTHZ", "CONTENT_AUTHZ"]
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_authz_policy#policy_profile NetworkSecurityAuthzPolicy#policy_profile}
+	PolicyProfile *string `field:"optional" json:"policyProfile" yaml:"policyProfile"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_authz_policy#project NetworkSecurityAuthzPolicy#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/network_security_authz_policy#timeouts NetworkSecurityAuthzPolicy#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_authz_policy#timeouts NetworkSecurityAuthzPolicy#timeouts}
 	Timeouts *NetworkSecurityAuthzPolicyTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

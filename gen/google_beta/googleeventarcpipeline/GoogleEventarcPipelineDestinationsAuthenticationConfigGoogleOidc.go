@@ -11,7 +11,7 @@ type GoogleEventarcPipelineDestinationsAuthenticationConfigGoogleOidc struct {
 	// roles/roles/iam.serviceAccountTokenCreator role to allow the
 	// Pipeline to create OpenID tokens for authenticated requests.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_eventarc_pipeline#service_account GoogleEventarcPipeline#service_account}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_eventarc_pipeline#service_account GoogleEventarcPipeline#service_account}
 	ServiceAccount *string `field:"required" json:"serviceAccount" yaml:"serviceAccount"`
 	// Audience to be used to generate the OIDC Token.
 	//
@@ -19,7 +19,7 @@ type GoogleEventarcPipelineDestinationsAuthenticationConfigGoogleOidc struct {
 	// identifies the recipient that the JWT is intended for. If
 	// unspecified, the destination URI will be used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_eventarc_pipeline#audience GoogleEventarcPipeline#audience}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_eventarc_pipeline#audience GoogleEventarcPipeline#audience}
 	Audience *string `field:"optional" json:"audience" yaml:"audience"`
 }
 

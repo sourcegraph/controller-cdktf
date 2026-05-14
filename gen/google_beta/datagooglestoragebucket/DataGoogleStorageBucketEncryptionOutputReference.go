@@ -25,9 +25,12 @@ type DataGoogleStorageBucketEncryptionOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomerManagedEncryptionEnforcementConfig() DataGoogleStorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigList
+	CustomerSuppliedEncryptionEnforcementConfig() DataGoogleStorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigList
 	DefaultKmsKeyName() *string
 	// Experimental.
 	Fqn() *string
+	GoogleManagedEncryptionEnforcementConfig() DataGoogleStorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigList
 	InternalValue() *DataGoogleStorageBucketEncryption
 	SetInternalValue(val *DataGoogleStorageBucketEncryption)
 	// Experimental.
@@ -107,6 +110,26 @@ func (j *jsiiProxy_DataGoogleStorageBucketEncryptionOutputReference) CreationSta
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleStorageBucketEncryptionOutputReference) CustomerManagedEncryptionEnforcementConfig() DataGoogleStorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigList {
+	var returns DataGoogleStorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigList
+	_jsii_.Get(
+		j,
+		"customerManagedEncryptionEnforcementConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleStorageBucketEncryptionOutputReference) CustomerSuppliedEncryptionEnforcementConfig() DataGoogleStorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigList {
+	var returns DataGoogleStorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigList
+	_jsii_.Get(
+		j,
+		"customerSuppliedEncryptionEnforcementConfig",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleStorageBucketEncryptionOutputReference) DefaultKmsKeyName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -122,6 +145,16 @@ func (j *jsiiProxy_DataGoogleStorageBucketEncryptionOutputReference) Fqn() *stri
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleStorageBucketEncryptionOutputReference) GoogleManagedEncryptionEnforcementConfig() DataGoogleStorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigList {
+	var returns DataGoogleStorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigList
+	_jsii_.Get(
+		j,
+		"googleManagedEncryptionEnforcementConfig",
 		&returns,
 	)
 	return returns

@@ -72,6 +72,10 @@ func (g *jsiiProxy_GoogleIamWorkforcePoolProvider) validateOverrideLogicalIdPara
 	return nil
 }
 
+func (g *jsiiProxy_GoogleIamWorkforcePoolProvider) validatePutExtendedAttributesOauth2ClientParameters(value *GoogleIamWorkforcePoolProviderExtendedAttributesOauth2Client) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIamWorkforcePoolProvider) validatePutExtraAttributesOauth2ClientParameters(value *GoogleIamWorkforcePoolProviderExtraAttributesOauth2Client) error {
 	return nil
 }
@@ -124,6 +128,10 @@ func (j *jsiiProxy_GoogleIamWorkforcePoolProvider) validateSetDescriptionParamet
 	return nil
 }
 
+func (j *jsiiProxy_GoogleIamWorkforcePoolProvider) validateSetDetailedAuditLoggingParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleIamWorkforcePoolProvider) validateSetDisabledParameters(val interface{}) error {
 	return nil
 }
@@ -149,6 +157,10 @@ func (j *jsiiProxy_GoogleIamWorkforcePoolProvider) validateSetProviderIdParamete
 }
 
 func (j *jsiiProxy_GoogleIamWorkforcePoolProvider) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleIamWorkforcePoolProvider) validateSetScimUsageParameters(val *string) error {
 	return nil
 }
 

@@ -25,12 +25,16 @@ type ApphubServiceServicePropertiesOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	ExtendedMetadata() ApphubServiceServicePropertiesExtendedMetadataList
 	// Experimental.
 	Fqn() *string
+	FunctionalType() ApphubServiceServicePropertiesFunctionalTypeList
 	GcpProject() *string
+	Identity() ApphubServiceServicePropertiesIdentityList
 	InternalValue() *ApphubServiceServiceProperties
 	SetInternalValue(val *ApphubServiceServiceProperties)
 	Location() *string
+	RegistrationType() ApphubServiceServicePropertiesRegistrationTypeList
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -109,6 +113,16 @@ func (j *jsiiProxy_ApphubServiceServicePropertiesOutputReference) CreationStack(
 	return returns
 }
 
+func (j *jsiiProxy_ApphubServiceServicePropertiesOutputReference) ExtendedMetadata() ApphubServiceServicePropertiesExtendedMetadataList {
+	var returns ApphubServiceServicePropertiesExtendedMetadataList
+	_jsii_.Get(
+		j,
+		"extendedMetadata",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApphubServiceServicePropertiesOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -119,11 +133,31 @@ func (j *jsiiProxy_ApphubServiceServicePropertiesOutputReference) Fqn() *string 
 	return returns
 }
 
+func (j *jsiiProxy_ApphubServiceServicePropertiesOutputReference) FunctionalType() ApphubServiceServicePropertiesFunctionalTypeList {
+	var returns ApphubServiceServicePropertiesFunctionalTypeList
+	_jsii_.Get(
+		j,
+		"functionalType",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApphubServiceServicePropertiesOutputReference) GcpProject() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"gcpProject",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApphubServiceServicePropertiesOutputReference) Identity() ApphubServiceServicePropertiesIdentityList {
+	var returns ApphubServiceServicePropertiesIdentityList
+	_jsii_.Get(
+		j,
+		"identity",
 		&returns,
 	)
 	return returns
@@ -144,6 +178,16 @@ func (j *jsiiProxy_ApphubServiceServicePropertiesOutputReference) Location() *st
 	_jsii_.Get(
 		j,
 		"location",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApphubServiceServicePropertiesOutputReference) RegistrationType() ApphubServiceServicePropertiesRegistrationTypeList {
+	var returns ApphubServiceServicePropertiesRegistrationTypeList
+	_jsii_.Get(
+		j,
+		"registrationType",
 		&returns,
 	)
 	return returns

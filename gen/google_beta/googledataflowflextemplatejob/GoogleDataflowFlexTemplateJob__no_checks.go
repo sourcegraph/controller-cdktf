@@ -92,6 +92,10 @@ func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) validateSetAdditionalExperimen
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) validateSetAdditionalPipelineOptionsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) validateSetAutoscalingAlgorithmParameters(val *string) error {
 	return nil
 }

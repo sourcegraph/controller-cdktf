@@ -885,6 +885,54 @@ func init() {
 		reflect.TypeOf((*GoogleWorkstationsWorkstationConfigPersistentDirectories)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigPersistentDirectoriesGceHd",
+		reflect.TypeOf((*GoogleWorkstationsWorkstationConfigPersistentDirectoriesGceHd)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigPersistentDirectoriesGceHdOutputReference",
+		reflect.TypeOf((*GoogleWorkstationsWorkstationConfigPersistentDirectoriesGceHdOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "archiveTimeout", GoGetter: "ArchiveTimeout"},
+			_jsii_.MemberProperty{JsiiProperty: "archiveTimeoutInput", GoGetter: "ArchiveTimeoutInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "reclaimPolicy", GoGetter: "ReclaimPolicy"},
+			_jsii_.MemberProperty{JsiiProperty: "reclaimPolicyInput", GoGetter: "ReclaimPolicyInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetArchiveTimeout", GoMethod: "ResetArchiveTimeout"},
+			_jsii_.MemberMethod{JsiiMethod: "resetReclaimPolicy", GoMethod: "ResetReclaimPolicy"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSizeGb", GoMethod: "ResetSizeGb"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSourceSnapshot", GoMethod: "ResetSourceSnapshot"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "sizeGb", GoGetter: "SizeGb"},
+			_jsii_.MemberProperty{JsiiProperty: "sizeGbInput", GoGetter: "SizeGbInput"},
+			_jsii_.MemberProperty{JsiiProperty: "sourceSnapshot", GoGetter: "SourceSnapshot"},
+			_jsii_.MemberProperty{JsiiProperty: "sourceSnapshotInput", GoGetter: "SourceSnapshotInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleWorkstationsWorkstationConfigPersistentDirectoriesGceHdOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigPersistentDirectoriesGcePd",
 		reflect.TypeOf((*GoogleWorkstationsWorkstationConfigPersistentDirectoriesGcePd)(nil)).Elem(),
 	)
@@ -966,6 +1014,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberProperty{JsiiProperty: "gceHd", GoGetter: "GceHd"},
+			_jsii_.MemberProperty{JsiiProperty: "gceHdInput", GoGetter: "GceHdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "gcePd", GoGetter: "GcePd"},
 			_jsii_.MemberProperty{JsiiProperty: "gcePdInput", GoGetter: "GcePdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
@@ -982,7 +1032,9 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "mountPath", GoGetter: "MountPath"},
 			_jsii_.MemberProperty{JsiiProperty: "mountPathInput", GoGetter: "MountPathInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putGceHd", GoMethod: "PutGceHd"},
 			_jsii_.MemberMethod{JsiiMethod: "putGcePd", GoMethod: "PutGcePd"},
+			_jsii_.MemberMethod{JsiiMethod: "resetGceHd", GoMethod: "ResetGceHd"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGcePd", GoMethod: "ResetGcePd"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMountPath", GoMethod: "ResetMountPath"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},

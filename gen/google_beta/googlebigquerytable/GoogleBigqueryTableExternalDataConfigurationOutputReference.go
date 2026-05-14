@@ -40,6 +40,9 @@ type GoogleBigqueryTableExternalDataConfigurationOutputReference interface {
 	CreationStack() *[]*string
 	CsvOptions() GoogleBigqueryTableExternalDataConfigurationCsvOptionsOutputReference
 	CsvOptionsInput() *GoogleBigqueryTableExternalDataConfigurationCsvOptions
+	DecimalTargetTypes() *[]*string
+	SetDecimalTargetTypes(val *[]*string)
+	DecimalTargetTypesInput() *[]*string
 	FileSetSpecType() *string
 	SetFileSetSpecType(val *string)
 	FileSetSpecTypeInput() *string
@@ -126,6 +129,7 @@ type GoogleBigqueryTableExternalDataConfigurationOutputReference interface {
 	ResetCompression()
 	ResetConnectionId()
 	ResetCsvOptions()
+	ResetDecimalTargetTypes()
 	ResetFileSetSpecType()
 	ResetGoogleSheetsOptions()
 	ResetHivePartitioningOptions()
@@ -299,6 +303,26 @@ func (j *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationOutputReference) 
 	_jsii_.Get(
 		j,
 		"csvOptionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationOutputReference) DecimalTargetTypes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"decimalTargetTypes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationOutputReference) DecimalTargetTypesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"decimalTargetTypesInput",
 		&returns,
 	)
 	return returns
@@ -703,6 +727,17 @@ func (j *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationOutputReference)S
 	_jsii_.Set(
 		j,
 		"connectionId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationOutputReference)SetDecimalTargetTypes(val *[]*string) {
+	if err := j.validateSetDecimalTargetTypesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"decimalTargetTypes",
 		val,
 	)
 }
@@ -1149,6 +1184,14 @@ func (g *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationOutputReference) 
 	_jsii_.InvokeVoid(
 		g,
 		"resetCsvOptions",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationOutputReference) ResetDecimalTargetTypes() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDecimalTargetTypes",
 		nil, // no parameters
 	)
 }

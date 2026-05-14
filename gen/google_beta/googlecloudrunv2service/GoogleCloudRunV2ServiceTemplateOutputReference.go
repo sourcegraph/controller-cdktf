@@ -41,6 +41,9 @@ type GoogleCloudRunV2ServiceTemplateOutputReference interface {
 	GpuZonalRedundancyDisabled() interface{}
 	SetGpuZonalRedundancyDisabled(val interface{})
 	GpuZonalRedundancyDisabledInput() interface{}
+	HealthCheckDisabled() interface{}
+	SetHealthCheckDisabled(val interface{})
+	HealthCheckDisabledInput() interface{}
 	InternalValue() *GoogleCloudRunV2ServiceTemplate
 	SetInternalValue(val *GoogleCloudRunV2ServiceTemplate)
 	Labels() *map[string]*string
@@ -114,6 +117,7 @@ type GoogleCloudRunV2ServiceTemplateOutputReference interface {
 	ResetEncryptionKey()
 	ResetExecutionEnvironment()
 	ResetGpuZonalRedundancyDisabled()
+	ResetHealthCheckDisabled()
 	ResetLabels()
 	ResetMaxInstanceRequestConcurrency()
 	ResetNodeSelector()
@@ -275,6 +279,26 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) GpuZonalRedun
 	_jsii_.Get(
 		j,
 		"gpuZonalRedundancyDisabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) HealthCheckDisabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"healthCheckDisabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) HealthCheckDisabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"healthCheckDisabledInput",
 		&returns,
 	)
 	return returns
@@ -620,6 +644,17 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference)SetGpuZonalRed
 	_jsii_.Set(
 		j,
 		"gpuZonalRedundancyDisabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference)SetHealthCheckDisabled(val interface{}) {
+	if err := j.validateSetHealthCheckDisabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"healthCheckDisabled",
 		val,
 	)
 }
@@ -1011,6 +1046,14 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) ResetGpuZonal
 	_jsii_.InvokeVoid(
 		g,
 		"resetGpuZonalRedundancyDisabled",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) ResetHealthCheckDisabled() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetHealthCheckDisabled",
 		nil, // no parameters
 	)
 }

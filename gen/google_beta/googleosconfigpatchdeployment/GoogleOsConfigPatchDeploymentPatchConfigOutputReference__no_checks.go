@@ -96,6 +96,10 @@ func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference) vali
 	return nil
 }
 
+func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference) validateSetSkipUnpatchableVmsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

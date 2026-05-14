@@ -10,6 +10,9 @@ import (
 
 type DataplexDatascanDataQualitySpecRulesOutputReference interface {
 	cdktf.ComplexObject
+	Attributes() *map[string]*string
+	SetAttributes(val *map[string]*string)
+	AttributesInput() *map[string]*string
 	Column() *string
 	SetColumn(val *string)
 	ColumnInput() *string
@@ -58,8 +61,13 @@ type DataplexDatascanDataQualitySpecRulesOutputReference interface {
 	SqlAssertionInput() *DataplexDatascanDataQualitySpecRulesSqlAssertion
 	StatisticRangeExpectation() DataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputReference
 	StatisticRangeExpectationInput() *DataplexDatascanDataQualitySpecRulesStatisticRangeExpectation
+	Suspended() interface{}
+	SetSuspended(val interface{})
+	SuspendedInput() interface{}
 	TableConditionExpectation() DataplexDatascanDataQualitySpecRulesTableConditionExpectationOutputReference
 	TableConditionExpectationInput() *DataplexDatascanDataQualitySpecRulesTableConditionExpectation
+	TemplateReference() DataplexDatascanDataQualitySpecRulesTemplateReferenceOutputReference
+	TemplateReferenceInput() *DataplexDatascanDataQualitySpecRulesTemplateReference
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -105,7 +113,9 @@ type DataplexDatascanDataQualitySpecRulesOutputReference interface {
 	PutSqlAssertion(value *DataplexDatascanDataQualitySpecRulesSqlAssertion)
 	PutStatisticRangeExpectation(value *DataplexDatascanDataQualitySpecRulesStatisticRangeExpectation)
 	PutTableConditionExpectation(value *DataplexDatascanDataQualitySpecRulesTableConditionExpectation)
+	PutTemplateReference(value *DataplexDatascanDataQualitySpecRulesTemplateReference)
 	PutUniquenessExpectation(value *DataplexDatascanDataQualitySpecRulesUniquenessExpectation)
+	ResetAttributes()
 	ResetColumn()
 	ResetDescription()
 	ResetIgnoreNull()
@@ -117,7 +127,9 @@ type DataplexDatascanDataQualitySpecRulesOutputReference interface {
 	ResetSetExpectation()
 	ResetSqlAssertion()
 	ResetStatisticRangeExpectation()
+	ResetSuspended()
 	ResetTableConditionExpectation()
+	ResetTemplateReference()
 	ResetThreshold()
 	ResetUniquenessExpectation()
 	// Produce the Token's value at resolution time.
@@ -133,6 +145,26 @@ type DataplexDatascanDataQualitySpecRulesOutputReference interface {
 // The jsii proxy struct for DataplexDatascanDataQualitySpecRulesOutputReference
 type jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) Attributes() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"attributes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) AttributesInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"attributesInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) Column() *string {
@@ -425,6 +457,26 @@ func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) Statisti
 	return returns
 }
 
+func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) Suspended() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"suspended",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) SuspendedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"suspendedInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) TableConditionExpectation() DataplexDatascanDataQualitySpecRulesTableConditionExpectationOutputReference {
 	var returns DataplexDatascanDataQualitySpecRulesTableConditionExpectationOutputReference
 	_jsii_.Get(
@@ -440,6 +492,26 @@ func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) TableCon
 	_jsii_.Get(
 		j,
 		"tableConditionExpectationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) TemplateReference() DataplexDatascanDataQualitySpecRulesTemplateReferenceOutputReference {
+	var returns DataplexDatascanDataQualitySpecRulesTemplateReferenceOutputReference
+	_jsii_.Get(
+		j,
+		"templateReference",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) TemplateReferenceInput() *DataplexDatascanDataQualitySpecRulesTemplateReference {
+	var returns *DataplexDatascanDataQualitySpecRulesTemplateReference
+	_jsii_.Get(
+		j,
+		"templateReferenceInput",
 		&returns,
 	)
 	return returns
@@ -533,6 +605,17 @@ func NewDataplexDatascanDataQualitySpecRulesOutputReference_Override(d DataplexD
 	)
 }
 
+func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference)SetAttributes(val *map[string]*string) {
+	if err := j.validateSetAttributesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"attributes",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference)SetColumn(val *string) {
 	if err := j.validateSetColumnParameters(val); err != nil {
 		panic(err)
@@ -617,6 +700,17 @@ func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference)SetName(v
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference)SetSuspended(val interface{}) {
+	if err := j.validateSetSuspendedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"suspended",
 		val,
 	)
 }
@@ -928,6 +1022,17 @@ func (d *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) PutTable
 	)
 }
 
+func (d *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) PutTemplateReference(value *DataplexDatascanDataQualitySpecRulesTemplateReference) {
+	if err := d.validatePutTemplateReferenceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putTemplateReference",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) PutUniquenessExpectation(value *DataplexDatascanDataQualitySpecRulesUniquenessExpectation) {
 	if err := d.validatePutUniquenessExpectationParameters(value); err != nil {
 		panic(err)
@@ -936,6 +1041,14 @@ func (d *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) PutUniqu
 		d,
 		"putUniquenessExpectation",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) ResetAttributes() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAttributes",
+		nil, // no parameters
 	)
 }
 
@@ -1027,10 +1140,26 @@ func (d *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) ResetSta
 	)
 }
 
+func (d *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) ResetSuspended() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSuspended",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) ResetTableConditionExpectation() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetTableConditionExpectation",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) ResetTemplateReference() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTemplateReference",
 		nil, // no parameters
 	)
 }

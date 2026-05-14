@@ -31,6 +31,12 @@ type DataLossPreventionDiscoveryConfigActionsOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	PublishToChronicle() DataLossPreventionDiscoveryConfigActionsPublishToChronicleOutputReference
+	PublishToChronicleInput() *DataLossPreventionDiscoveryConfigActionsPublishToChronicle
+	PublishToDataplexCatalog() DataLossPreventionDiscoveryConfigActionsPublishToDataplexCatalogOutputReference
+	PublishToDataplexCatalogInput() *DataLossPreventionDiscoveryConfigActionsPublishToDataplexCatalog
+	PublishToScc() DataLossPreventionDiscoveryConfigActionsPublishToSccOutputReference
+	PublishToSccInput() *DataLossPreventionDiscoveryConfigActionsPublishToScc
 	PubSubNotification() DataLossPreventionDiscoveryConfigActionsPubSubNotificationOutputReference
 	PubSubNotificationInput() *DataLossPreventionDiscoveryConfigActionsPubSubNotification
 	TagResources() DataLossPreventionDiscoveryConfigActionsTagResourcesOutputReference
@@ -68,9 +74,15 @@ type DataLossPreventionDiscoveryConfigActionsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutExportData(value *DataLossPreventionDiscoveryConfigActionsExportData)
+	PutPublishToChronicle(value *DataLossPreventionDiscoveryConfigActionsPublishToChronicle)
+	PutPublishToDataplexCatalog(value *DataLossPreventionDiscoveryConfigActionsPublishToDataplexCatalog)
+	PutPublishToScc(value *DataLossPreventionDiscoveryConfigActionsPublishToScc)
 	PutPubSubNotification(value *DataLossPreventionDiscoveryConfigActionsPubSubNotification)
 	PutTagResources(value *DataLossPreventionDiscoveryConfigActionsTagResources)
 	ResetExportData()
+	ResetPublishToChronicle()
+	ResetPublishToDataplexCatalog()
+	ResetPublishToScc()
 	ResetPubSubNotification()
 	ResetTagResources()
 	// Produce the Token's value at resolution time.
@@ -153,6 +165,66 @@ func (j *jsiiProxy_DataLossPreventionDiscoveryConfigActionsOutputReference) Inte
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionDiscoveryConfigActionsOutputReference) PublishToChronicle() DataLossPreventionDiscoveryConfigActionsPublishToChronicleOutputReference {
+	var returns DataLossPreventionDiscoveryConfigActionsPublishToChronicleOutputReference
+	_jsii_.Get(
+		j,
+		"publishToChronicle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionDiscoveryConfigActionsOutputReference) PublishToChronicleInput() *DataLossPreventionDiscoveryConfigActionsPublishToChronicle {
+	var returns *DataLossPreventionDiscoveryConfigActionsPublishToChronicle
+	_jsii_.Get(
+		j,
+		"publishToChronicleInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionDiscoveryConfigActionsOutputReference) PublishToDataplexCatalog() DataLossPreventionDiscoveryConfigActionsPublishToDataplexCatalogOutputReference {
+	var returns DataLossPreventionDiscoveryConfigActionsPublishToDataplexCatalogOutputReference
+	_jsii_.Get(
+		j,
+		"publishToDataplexCatalog",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionDiscoveryConfigActionsOutputReference) PublishToDataplexCatalogInput() *DataLossPreventionDiscoveryConfigActionsPublishToDataplexCatalog {
+	var returns *DataLossPreventionDiscoveryConfigActionsPublishToDataplexCatalog
+	_jsii_.Get(
+		j,
+		"publishToDataplexCatalogInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionDiscoveryConfigActionsOutputReference) PublishToScc() DataLossPreventionDiscoveryConfigActionsPublishToSccOutputReference {
+	var returns DataLossPreventionDiscoveryConfigActionsPublishToSccOutputReference
+	_jsii_.Get(
+		j,
+		"publishToScc",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionDiscoveryConfigActionsOutputReference) PublishToSccInput() *DataLossPreventionDiscoveryConfigActionsPublishToScc {
+	var returns *DataLossPreventionDiscoveryConfigActionsPublishToScc
+	_jsii_.Get(
+		j,
+		"publishToSccInput",
 		&returns,
 	)
 	return returns
@@ -498,6 +570,39 @@ func (d *jsiiProxy_DataLossPreventionDiscoveryConfigActionsOutputReference) PutE
 	)
 }
 
+func (d *jsiiProxy_DataLossPreventionDiscoveryConfigActionsOutputReference) PutPublishToChronicle(value *DataLossPreventionDiscoveryConfigActionsPublishToChronicle) {
+	if err := d.validatePutPublishToChronicleParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putPublishToChronicle",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataLossPreventionDiscoveryConfigActionsOutputReference) PutPublishToDataplexCatalog(value *DataLossPreventionDiscoveryConfigActionsPublishToDataplexCatalog) {
+	if err := d.validatePutPublishToDataplexCatalogParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putPublishToDataplexCatalog",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataLossPreventionDiscoveryConfigActionsOutputReference) PutPublishToScc(value *DataLossPreventionDiscoveryConfigActionsPublishToScc) {
+	if err := d.validatePutPublishToSccParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putPublishToScc",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataLossPreventionDiscoveryConfigActionsOutputReference) PutPubSubNotification(value *DataLossPreventionDiscoveryConfigActionsPubSubNotification) {
 	if err := d.validatePutPubSubNotificationParameters(value); err != nil {
 		panic(err)
@@ -524,6 +629,30 @@ func (d *jsiiProxy_DataLossPreventionDiscoveryConfigActionsOutputReference) Rese
 	_jsii_.InvokeVoid(
 		d,
 		"resetExportData",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataLossPreventionDiscoveryConfigActionsOutputReference) ResetPublishToChronicle() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPublishToChronicle",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataLossPreventionDiscoveryConfigActionsOutputReference) ResetPublishToDataplexCatalog() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPublishToDataplexCatalog",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataLossPreventionDiscoveryConfigActionsOutputReference) ResetPublishToScc() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPublishToScc",
 		nil, // no parameters
 	)
 }

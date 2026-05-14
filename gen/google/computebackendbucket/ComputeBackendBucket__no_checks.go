@@ -76,6 +76,10 @@ func (c *jsiiProxy_ComputeBackendBucket) validatePutCdnPolicyParameters(value *C
 	return nil
 }
 
+func (c *jsiiProxy_ComputeBackendBucket) validatePutParamsParameters(value *ComputeBackendBucketParams) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeBackendBucket) validatePutTimeoutsParameters(value *ComputeBackendBucketTimeouts) error {
 	return nil
 }
@@ -133,6 +137,10 @@ func (j *jsiiProxy_ComputeBackendBucket) validateSetIdParameters(val *string) er
 }
 
 func (j *jsiiProxy_ComputeBackendBucket) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeBackendBucket) validateSetLoadBalancingSchemeParameters(val *string) error {
 	return nil
 }
 

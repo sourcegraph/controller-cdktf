@@ -144,6 +144,10 @@ func (j *jsiiProxy_StorageTransferJob) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_StorageTransferJob) validateSetServiceAccountParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageTransferJob) validateSetStatusParameters(val *string) error {
 	return nil
 }

@@ -43,6 +43,9 @@ type SpannerInstanceAutoscalingConfigAutoscalingTargetsOutputReference interface
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TotalCpuUtilizationPercent() *float64
+	SetTotalCpuUtilizationPercent(val *float64)
+	TotalCpuUtilizationPercentInput() *float64
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -69,6 +72,7 @@ type SpannerInstanceAutoscalingConfigAutoscalingTargetsOutputReference interface
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetHighPriorityCpuUtilizationPercent()
 	ResetStorageUtilizationPercent()
+	ResetTotalCpuUtilizationPercent()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -194,6 +198,26 @@ func (j *jsiiProxy_SpannerInstanceAutoscalingConfigAutoscalingTargetsOutputRefer
 	return returns
 }
 
+func (j *jsiiProxy_SpannerInstanceAutoscalingConfigAutoscalingTargetsOutputReference) TotalCpuUtilizationPercent() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"totalCpuUtilizationPercent",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpannerInstanceAutoscalingConfigAutoscalingTargetsOutputReference) TotalCpuUtilizationPercentInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"totalCpuUtilizationPercentInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewSpannerInstanceAutoscalingConfigAutoscalingTargetsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SpannerInstanceAutoscalingConfigAutoscalingTargetsOutputReference {
 	_init_.Initialize()
@@ -295,6 +319,17 @@ func (j *jsiiProxy_SpannerInstanceAutoscalingConfigAutoscalingTargetsOutputRefer
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SpannerInstanceAutoscalingConfigAutoscalingTargetsOutputReference)SetTotalCpuUtilizationPercent(val *float64) {
+	if err := j.validateSetTotalCpuUtilizationPercentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"totalCpuUtilizationPercent",
 		val,
 	)
 }
@@ -497,6 +532,14 @@ func (s *jsiiProxy_SpannerInstanceAutoscalingConfigAutoscalingTargetsOutputRefer
 	_jsii_.InvokeVoid(
 		s,
 		"resetStorageUtilizationPercent",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SpannerInstanceAutoscalingConfigAutoscalingTargetsOutputReference) ResetTotalCpuUtilizationPercent() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTotalCpuUtilizationPercent",
 		nil, // no parameters
 	)
 }

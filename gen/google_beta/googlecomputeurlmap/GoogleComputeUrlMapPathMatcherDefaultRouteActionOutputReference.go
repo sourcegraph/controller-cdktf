@@ -10,6 +10,8 @@ import (
 
 type GoogleComputeUrlMapPathMatcherDefaultRouteActionOutputReference interface {
 	cdktf.ComplexObject
+	CachePolicy() GoogleComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputReference
+	CachePolicyInput() *GoogleComputeUrlMapPathMatcherDefaultRouteActionCachePolicy
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -77,6 +79,7 @@ type GoogleComputeUrlMapPathMatcherDefaultRouteActionOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutCachePolicy(value *GoogleComputeUrlMapPathMatcherDefaultRouteActionCachePolicy)
 	PutCorsPolicy(value *GoogleComputeUrlMapPathMatcherDefaultRouteActionCorsPolicy)
 	PutFaultInjectionPolicy(value *GoogleComputeUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicy)
 	PutMaxStreamDuration(value *GoogleComputeUrlMapPathMatcherDefaultRouteActionMaxStreamDuration)
@@ -85,6 +88,7 @@ type GoogleComputeUrlMapPathMatcherDefaultRouteActionOutputReference interface {
 	PutTimeout(value *GoogleComputeUrlMapPathMatcherDefaultRouteActionTimeout)
 	PutUrlRewrite(value *GoogleComputeUrlMapPathMatcherDefaultRouteActionUrlRewrite)
 	PutWeightedBackendServices(value interface{})
+	ResetCachePolicy()
 	ResetCorsPolicy()
 	ResetFaultInjectionPolicy()
 	ResetMaxStreamDuration()
@@ -106,6 +110,26 @@ type GoogleComputeUrlMapPathMatcherDefaultRouteActionOutputReference interface {
 // The jsii proxy struct for GoogleComputeUrlMapPathMatcherDefaultRouteActionOutputReference
 type jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionOutputReference) CachePolicy() GoogleComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputReference {
+	var returns GoogleComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputReference
+	_jsii_.Get(
+		j,
+		"cachePolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionOutputReference) CachePolicyInput() *GoogleComputeUrlMapPathMatcherDefaultRouteActionCachePolicy {
+	var returns *GoogleComputeUrlMapPathMatcherDefaultRouteActionCachePolicy
+	_jsii_.Get(
+		j,
+		"cachePolicyInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionOutputReference) ComplexObjectIndex() interface{} {
@@ -607,6 +631,17 @@ func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionOutputReferen
 	return returns
 }
 
+func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionOutputReference) PutCachePolicy(value *GoogleComputeUrlMapPathMatcherDefaultRouteActionCachePolicy) {
+	if err := g.validatePutCachePolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putCachePolicy",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionOutputReference) PutCorsPolicy(value *GoogleComputeUrlMapPathMatcherDefaultRouteActionCorsPolicy) {
 	if err := g.validatePutCorsPolicyParameters(value); err != nil {
 		panic(err)
@@ -692,6 +727,14 @@ func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionOutputReferen
 		g,
 		"putWeightedBackendServices",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionOutputReference) ResetCachePolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCachePolicy",
+		nil, // no parameters
 	)
 }
 

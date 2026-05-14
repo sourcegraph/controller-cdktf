@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleidentityplatformoauthidpconfig/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_identity_platform_oauth_idp_config google_identity_platform_oauth_idp_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_identity_platform_oauth_idp_config google_identity_platform_oauth_idp_config}.
 type GoogleIdentityPlatformOauthIdpConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -76,6 +76,8 @@ type GoogleIdentityPlatformOauthIdpConfig interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ResponseType() GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReference
+	ResponseTypeInput() *GoogleIdentityPlatformOauthIdpConfigResponseType
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -127,6 +129,7 @@ type GoogleIdentityPlatformOauthIdpConfig interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutResponseType(value *GoogleIdentityPlatformOauthIdpConfigResponseType)
 	PutTimeouts(value *GoogleIdentityPlatformOauthIdpConfigTimeouts)
 	ResetClientSecret()
 	ResetDisplayName()
@@ -136,6 +139,7 @@ type GoogleIdentityPlatformOauthIdpConfig interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetResponseType()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -445,6 +449,26 @@ func (j *jsiiProxy_GoogleIdentityPlatformOauthIdpConfig) RawOverrides() interfac
 	return returns
 }
 
+func (j *jsiiProxy_GoogleIdentityPlatformOauthIdpConfig) ResponseType() GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReference {
+	var returns GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReference
+	_jsii_.Get(
+		j,
+		"responseType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleIdentityPlatformOauthIdpConfig) ResponseTypeInput() *GoogleIdentityPlatformOauthIdpConfigResponseType {
+	var returns *GoogleIdentityPlatformOauthIdpConfigResponseType
+	_jsii_.Get(
+		j,
+		"responseTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleIdentityPlatformOauthIdpConfig) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -496,7 +520,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformOauthIdpConfig) TimeoutsInput() interfa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_identity_platform_oauth_idp_config google_identity_platform_oauth_idp_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_identity_platform_oauth_idp_config google_identity_platform_oauth_idp_config} Resource.
 func NewGoogleIdentityPlatformOauthIdpConfig(scope constructs.Construct, id *string, config *GoogleIdentityPlatformOauthIdpConfigConfig) GoogleIdentityPlatformOauthIdpConfig {
 	_init_.Initialize()
 
@@ -514,7 +538,7 @@ func NewGoogleIdentityPlatformOauthIdpConfig(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_identity_platform_oauth_idp_config google_identity_platform_oauth_idp_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_identity_platform_oauth_idp_config google_identity_platform_oauth_idp_config} Resource.
 func NewGoogleIdentityPlatformOauthIdpConfig_Override(g GoogleIdentityPlatformOauthIdpConfig, scope constructs.Construct, id *string, config *GoogleIdentityPlatformOauthIdpConfigConfig) {
 	_init_.Initialize()
 
@@ -1034,6 +1058,17 @@ func (g *jsiiProxy_GoogleIdentityPlatformOauthIdpConfig) OverrideLogicalId(newLo
 	)
 }
 
+func (g *jsiiProxy_GoogleIdentityPlatformOauthIdpConfig) PutResponseType(value *GoogleIdentityPlatformOauthIdpConfigResponseType) {
+	if err := g.validatePutResponseTypeParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putResponseType",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleIdentityPlatformOauthIdpConfig) PutTimeouts(value *GoogleIdentityPlatformOauthIdpConfigTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1089,6 +1124,14 @@ func (g *jsiiProxy_GoogleIdentityPlatformOauthIdpConfig) ResetProject() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleIdentityPlatformOauthIdpConfig) ResetResponseType() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetResponseType",
 		nil, // no parameters
 	)
 }

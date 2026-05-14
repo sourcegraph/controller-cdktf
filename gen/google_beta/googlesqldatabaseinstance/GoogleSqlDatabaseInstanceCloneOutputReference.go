@@ -41,9 +41,15 @@ type GoogleSqlDatabaseInstanceCloneOutputReference interface {
 	PreferredZone() *string
 	SetPreferredZone(val *string)
 	PreferredZoneInput() *string
+	SourceInstanceDeletionTime() *string
+	SetSourceInstanceDeletionTime(val *string)
+	SourceInstanceDeletionTimeInput() *string
 	SourceInstanceName() *string
 	SetSourceInstanceName(val *string)
 	SourceInstanceNameInput() *string
+	SourceProject() *string
+	SetSourceProject(val *string)
+	SourceProjectInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -80,6 +86,8 @@ type GoogleSqlDatabaseInstanceCloneOutputReference interface {
 	ResetDatabaseNames()
 	ResetPointInTime()
 	ResetPreferredZone()
+	ResetSourceInstanceDeletionTime()
+	ResetSourceProject()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -225,6 +233,26 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) PreferredZoneI
 	return returns
 }
 
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) SourceInstanceDeletionTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceInstanceDeletionTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) SourceInstanceDeletionTimeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceInstanceDeletionTimeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) SourceInstanceName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -240,6 +268,26 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) SourceInstance
 	_jsii_.Get(
 		j,
 		"sourceInstanceNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) SourceProject() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceProject",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) SourceProjectInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceProjectInput",
 		&returns,
 	)
 	return returns
@@ -370,6 +418,17 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference)SetPreferredZon
 	)
 }
 
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference)SetSourceInstanceDeletionTime(val *string) {
+	if err := j.validateSetSourceInstanceDeletionTimeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sourceInstanceDeletionTime",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference)SetSourceInstanceName(val *string) {
 	if err := j.validateSetSourceInstanceNameParameters(val); err != nil {
 		panic(err)
@@ -377,6 +436,17 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference)SetSourceInstan
 	_jsii_.Set(
 		j,
 		"sourceInstanceName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference)SetSourceProject(val *string) {
+	if err := j.validateSetSourceProjectParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sourceProject",
 		val,
 	)
 }
@@ -617,6 +687,22 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) ResetPreferred
 	_jsii_.InvokeVoid(
 		g,
 		"resetPreferredZone",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) ResetSourceInstanceDeletionTime() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSourceInstanceDeletionTime",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) ResetSourceProject() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSourceProject",
 		nil, // no parameters
 	)
 }

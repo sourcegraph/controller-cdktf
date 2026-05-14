@@ -1,0 +1,6 @@
+package googledatastreamconnectionprofile
+
+
+type GoogleDatastreamConnectionProfileMongodbProfileSrvConnectionFormat struct {
+}
+

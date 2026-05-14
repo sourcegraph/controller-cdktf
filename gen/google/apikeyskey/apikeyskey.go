@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/apikeyskey/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/apikeys_key google_apikeys_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apikeys_key google_apikeys_key}.
 type ApikeysKey interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -67,6 +67,9 @@ type ApikeysKey interface {
 	RawOverrides() interface{}
 	Restrictions() ApikeysKeyRestrictionsOutputReference
 	RestrictionsInput() *ApikeysKeyRestrictions
+	ServiceAccountEmail() *string
+	SetServiceAccountEmail(val *string)
+	ServiceAccountEmailInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -128,6 +131,7 @@ type ApikeysKey interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetRestrictions()
+	ResetServiceAccountEmail()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -387,6 +391,26 @@ func (j *jsiiProxy_ApikeysKey) RestrictionsInput() *ApikeysKeyRestrictions {
 	return returns
 }
 
+func (j *jsiiProxy_ApikeysKey) ServiceAccountEmail() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccountEmail",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApikeysKey) ServiceAccountEmailInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccountEmailInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApikeysKey) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -448,7 +472,7 @@ func (j *jsiiProxy_ApikeysKey) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/apikeys_key google_apikeys_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apikeys_key google_apikeys_key} Resource.
 func NewApikeysKey(scope constructs.Construct, id *string, config *ApikeysKeyConfig) ApikeysKey {
 	_init_.Initialize()
 
@@ -466,7 +490,7 @@ func NewApikeysKey(scope constructs.Construct, id *string, config *ApikeysKeyCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/apikeys_key google_apikeys_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apikeys_key google_apikeys_key} Resource.
 func NewApikeysKey_Override(a ApikeysKey, scope constructs.Construct, id *string, config *ApikeysKeyConfig) {
 	_init_.Initialize()
 
@@ -585,6 +609,17 @@ func (j *jsiiProxy_ApikeysKey)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApikeysKey)SetServiceAccountEmail(val *string) {
+	if err := j.validateSetServiceAccountEmailParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serviceAccountEmail",
 		val,
 	)
 }
@@ -1000,6 +1035,14 @@ func (a *jsiiProxy_ApikeysKey) ResetRestrictions() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetRestrictions",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApikeysKey) ResetServiceAccountEmail() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetServiceAccountEmail",
 		nil, // no parameters
 	)
 }

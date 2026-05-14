@@ -116,6 +116,10 @@ func (j *jsiiProxy_GoogleSecretManagerSecret) validateSetCountParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_GoogleSecretManagerSecret) validateSetDeletionProtectionParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSecretManagerSecret) validateSetExpireTimeParameters(val *string) error {
 	return nil
 }
@@ -141,6 +145,10 @@ func (j *jsiiProxy_GoogleSecretManagerSecret) validateSetProvisionersParameters(
 }
 
 func (j *jsiiProxy_GoogleSecretManagerSecret) validateSetSecretIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleSecretManagerSecret) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }
 

@@ -12,6 +12,7 @@ type SqlDatabaseInstanceSettingsBackupConfigurationOutputReference interface {
 	cdktf.ComplexObject
 	BackupRetentionSettings() SqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettingsOutputReference
 	BackupRetentionSettingsInput() *SqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettings
+	BackupTier() *string
 	BinaryLogEnabled() interface{}
 	SetBinaryLogEnabled(val interface{})
 	BinaryLogEnabledInput() interface{}
@@ -119,6 +120,16 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference
 	_jsii_.Get(
 		j,
 		"backupRetentionSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference) BackupTier() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"backupTier",
 		&returns,
 	)
 	return returns

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagooglevmwareenginenetwork/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/vmwareengine_network google_vmwareengine_network}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/vmwareengine_network google_vmwareengine_network}.
 type DataGoogleVmwareengineNetwork interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -20,11 +20,13 @@ type DataGoogleVmwareengineNetwork interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Description() *string
+	Etag() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -66,6 +68,7 @@ type DataGoogleVmwareengineNetwork interface {
 	TerraformResourceType() *string
 	Type() *string
 	Uid() *string
+	UpdateTime() *string
 	VpcNetworks() DataGoogleVmwareengineNetworkVpcNetworksList
 	// Experimental.
 	AddOverride(path *string, value interface{})
@@ -146,6 +149,16 @@ func (j *jsiiProxy_DataGoogleVmwareengineNetwork) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleVmwareengineNetwork) CreateTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createTime",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleVmwareengineNetwork) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -161,6 +174,16 @@ func (j *jsiiProxy_DataGoogleVmwareengineNetwork) Description() *string {
 	_jsii_.Get(
 		j,
 		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleVmwareengineNetwork) Etag() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"etag",
 		&returns,
 	)
 	return returns
@@ -376,6 +399,16 @@ func (j *jsiiProxy_DataGoogleVmwareengineNetwork) Uid() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleVmwareengineNetwork) UpdateTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updateTime",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleVmwareengineNetwork) VpcNetworks() DataGoogleVmwareengineNetworkVpcNetworksList {
 	var returns DataGoogleVmwareengineNetworkVpcNetworksList
 	_jsii_.Get(
@@ -387,7 +420,7 @@ func (j *jsiiProxy_DataGoogleVmwareengineNetwork) VpcNetworks() DataGoogleVmware
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/vmwareengine_network google_vmwareengine_network} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/vmwareengine_network google_vmwareengine_network} Data Source.
 func NewDataGoogleVmwareengineNetwork(scope constructs.Construct, id *string, config *DataGoogleVmwareengineNetworkConfig) DataGoogleVmwareengineNetwork {
 	_init_.Initialize()
 
@@ -405,7 +438,7 @@ func NewDataGoogleVmwareengineNetwork(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/vmwareengine_network google_vmwareengine_network} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/vmwareengine_network google_vmwareengine_network} Data Source.
 func NewDataGoogleVmwareengineNetwork_Override(d DataGoogleVmwareengineNetwork, scope constructs.Construct, id *string, config *DataGoogleVmwareengineNetworkConfig) {
 	_init_.Initialize()
 

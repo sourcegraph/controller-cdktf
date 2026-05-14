@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleComputeUrlMapTestOutputReference) validateInterpolation
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeUrlMapTestOutputReference) validatePutHeadersParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeUrlMapTestOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -57,6 +61,14 @@ func (j *jsiiProxy_GoogleComputeUrlMapTestOutputReference) validateSetComplexObj
 }
 
 func (j *jsiiProxy_GoogleComputeUrlMapTestOutputReference) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeUrlMapTestOutputReference) validateSetExpectedOutputUrlParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeUrlMapTestOutputReference) validateSetExpectedRedirectResponseCodeParameters(val *float64) error {
 	return nil
 }
 

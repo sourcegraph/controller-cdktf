@@ -29,6 +29,8 @@ type DatastreamStreamSourceConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *DatastreamStreamSourceConfig
 	SetInternalValue(val *DatastreamStreamSourceConfig)
+	MongodbSourceConfig() DatastreamStreamSourceConfigMongodbSourceConfigOutputReference
+	MongodbSourceConfigInput() *DatastreamStreamSourceConfigMongodbSourceConfig
 	MysqlSourceConfig() DatastreamStreamSourceConfigMysqlSourceConfigOutputReference
 	MysqlSourceConfigInput() *DatastreamStreamSourceConfigMysqlSourceConfig
 	OracleSourceConfig() DatastreamStreamSourceConfigOracleSourceConfigOutputReference
@@ -40,6 +42,8 @@ type DatastreamStreamSourceConfigOutputReference interface {
 	SourceConnectionProfile() *string
 	SetSourceConnectionProfile(val *string)
 	SourceConnectionProfileInput() *string
+	SpannerSourceConfig() DatastreamStreamSourceConfigSpannerSourceConfigOutputReference
+	SpannerSourceConfigInput() *DatastreamStreamSourceConfigSpannerSourceConfig
 	SqlServerSourceConfig() DatastreamStreamSourceConfigSqlServerSourceConfigOutputReference
 	SqlServerSourceConfigInput() *DatastreamStreamSourceConfigSqlServerSourceConfig
 	// Experimental.
@@ -74,15 +78,19 @@ type DatastreamStreamSourceConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutMongodbSourceConfig(value *DatastreamStreamSourceConfigMongodbSourceConfig)
 	PutMysqlSourceConfig(value *DatastreamStreamSourceConfigMysqlSourceConfig)
 	PutOracleSourceConfig(value *DatastreamStreamSourceConfigOracleSourceConfig)
 	PutPostgresqlSourceConfig(value *DatastreamStreamSourceConfigPostgresqlSourceConfig)
 	PutSalesforceSourceConfig(value *DatastreamStreamSourceConfigSalesforceSourceConfig)
+	PutSpannerSourceConfig(value *DatastreamStreamSourceConfigSpannerSourceConfig)
 	PutSqlServerSourceConfig(value *DatastreamStreamSourceConfigSqlServerSourceConfig)
+	ResetMongodbSourceConfig()
 	ResetMysqlSourceConfig()
 	ResetOracleSourceConfig()
 	ResetPostgresqlSourceConfig()
 	ResetSalesforceSourceConfig()
+	ResetSpannerSourceConfig()
 	ResetSqlServerSourceConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -144,6 +152,26 @@ func (j *jsiiProxy_DatastreamStreamSourceConfigOutputReference) InternalValue() 
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatastreamStreamSourceConfigOutputReference) MongodbSourceConfig() DatastreamStreamSourceConfigMongodbSourceConfigOutputReference {
+	var returns DatastreamStreamSourceConfigMongodbSourceConfigOutputReference
+	_jsii_.Get(
+		j,
+		"mongodbSourceConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatastreamStreamSourceConfigOutputReference) MongodbSourceConfigInput() *DatastreamStreamSourceConfigMongodbSourceConfig {
+	var returns *DatastreamStreamSourceConfigMongodbSourceConfig
+	_jsii_.Get(
+		j,
+		"mongodbSourceConfigInput",
 		&returns,
 	)
 	return returns
@@ -244,6 +272,26 @@ func (j *jsiiProxy_DatastreamStreamSourceConfigOutputReference) SourceConnection
 	_jsii_.Get(
 		j,
 		"sourceConnectionProfileInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatastreamStreamSourceConfigOutputReference) SpannerSourceConfig() DatastreamStreamSourceConfigSpannerSourceConfigOutputReference {
+	var returns DatastreamStreamSourceConfigSpannerSourceConfigOutputReference
+	_jsii_.Get(
+		j,
+		"spannerSourceConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatastreamStreamSourceConfigOutputReference) SpannerSourceConfigInput() *DatastreamStreamSourceConfigSpannerSourceConfig {
+	var returns *DatastreamStreamSourceConfigSpannerSourceConfig
+	_jsii_.Get(
+		j,
+		"spannerSourceConfigInput",
 		&returns,
 	)
 	return returns
@@ -569,6 +617,17 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigOutputReference) InterpolationFor
 	return returns
 }
 
+func (d *jsiiProxy_DatastreamStreamSourceConfigOutputReference) PutMongodbSourceConfig(value *DatastreamStreamSourceConfigMongodbSourceConfig) {
+	if err := d.validatePutMongodbSourceConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putMongodbSourceConfig",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DatastreamStreamSourceConfigOutputReference) PutMysqlSourceConfig(value *DatastreamStreamSourceConfigMysqlSourceConfig) {
 	if err := d.validatePutMysqlSourceConfigParameters(value); err != nil {
 		panic(err)
@@ -613,6 +672,17 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigOutputReference) PutSalesforceSou
 	)
 }
 
+func (d *jsiiProxy_DatastreamStreamSourceConfigOutputReference) PutSpannerSourceConfig(value *DatastreamStreamSourceConfigSpannerSourceConfig) {
+	if err := d.validatePutSpannerSourceConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putSpannerSourceConfig",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DatastreamStreamSourceConfigOutputReference) PutSqlServerSourceConfig(value *DatastreamStreamSourceConfigSqlServerSourceConfig) {
 	if err := d.validatePutSqlServerSourceConfigParameters(value); err != nil {
 		panic(err)
@@ -621,6 +691,14 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigOutputReference) PutSqlServerSour
 		d,
 		"putSqlServerSourceConfig",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DatastreamStreamSourceConfigOutputReference) ResetMongodbSourceConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetMongodbSourceConfig",
+		nil, // no parameters
 	)
 }
 
@@ -652,6 +730,14 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigOutputReference) ResetSalesforceS
 	_jsii_.InvokeVoid(
 		d,
 		"resetSalesforceSourceConfig",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatastreamStreamSourceConfigOutputReference) ResetSpannerSourceConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSpannerSourceConfig",
 		nil, // no parameters
 	)
 }

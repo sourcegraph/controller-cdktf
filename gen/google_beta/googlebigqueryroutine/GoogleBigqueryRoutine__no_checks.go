@@ -76,6 +76,14 @@ func (g *jsiiProxy_GoogleBigqueryRoutine) validatePutArgumentsParameters(value i
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBigqueryRoutine) validatePutExternalRuntimeOptionsParameters(value *GoogleBigqueryRoutineExternalRuntimeOptions) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBigqueryRoutine) validatePutPythonOptionsParameters(value *GoogleBigqueryRoutinePythonOptions) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigqueryRoutine) validatePutRemoteFunctionOptionsParameters(value *GoogleBigqueryRoutineRemoteFunctionOptions) error {
 	return nil
 }
@@ -169,6 +177,10 @@ func (j *jsiiProxy_GoogleBigqueryRoutine) validateSetRoutineIdParameters(val *st
 }
 
 func (j *jsiiProxy_GoogleBigqueryRoutine) validateSetRoutineTypeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleBigqueryRoutine) validateSetSecurityModeParameters(val *string) error {
 	return nil
 }
 

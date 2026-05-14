@@ -80,6 +80,10 @@ func (g *jsiiProxy_GooglePubsubTopic) validatePutMessageStoragePolicyParameters(
 	return nil
 }
 
+func (g *jsiiProxy_GooglePubsubTopic) validatePutMessageTransformsParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GooglePubsubTopic) validatePutSchemaSettingsParameters(value *GooglePubsubTopicSchemaSettings) error {
 	return nil
 }
@@ -141,6 +145,10 @@ func (j *jsiiProxy_GooglePubsubTopic) validateSetProjectParameters(val *string) 
 }
 
 func (j *jsiiProxy_GooglePubsubTopic) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GooglePubsubTopic) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }
 

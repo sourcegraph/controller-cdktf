@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleclouddeploycustomtargettype/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_clouddeploy_custom_target_type google_clouddeploy_custom_target_type}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_clouddeploy_custom_target_type google_clouddeploy_custom_target_type}.
 type GoogleClouddeployCustomTargetType interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -80,6 +80,8 @@ type GoogleClouddeployCustomTargetType interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Tasks() GoogleClouddeployCustomTargetTypeTasksOutputReference
+	TasksInput() *GoogleClouddeployCustomTargetTypeTasks
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
@@ -135,6 +137,7 @@ type GoogleClouddeployCustomTargetType interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutCustomActions(value *GoogleClouddeployCustomTargetTypeCustomActions)
+	PutTasks(value *GoogleClouddeployCustomTargetTypeTasks)
 	PutTimeouts(value *GoogleClouddeployCustomTargetTypeTimeouts)
 	ResetAnnotations()
 	ResetCustomActions()
@@ -145,6 +148,7 @@ type GoogleClouddeployCustomTargetType interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetTasks()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -504,6 +508,26 @@ func (j *jsiiProxy_GoogleClouddeployCustomTargetType) RawOverrides() interface{}
 	return returns
 }
 
+func (j *jsiiProxy_GoogleClouddeployCustomTargetType) Tasks() GoogleClouddeployCustomTargetTypeTasksOutputReference {
+	var returns GoogleClouddeployCustomTargetTypeTasksOutputReference
+	_jsii_.Get(
+		j,
+		"tasks",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleClouddeployCustomTargetType) TasksInput() *GoogleClouddeployCustomTargetTypeTasks {
+	var returns *GoogleClouddeployCustomTargetTypeTasks
+	_jsii_.Get(
+		j,
+		"tasksInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleClouddeployCustomTargetType) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -585,7 +609,7 @@ func (j *jsiiProxy_GoogleClouddeployCustomTargetType) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_clouddeploy_custom_target_type google_clouddeploy_custom_target_type} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_clouddeploy_custom_target_type google_clouddeploy_custom_target_type} Resource.
 func NewGoogleClouddeployCustomTargetType(scope constructs.Construct, id *string, config *GoogleClouddeployCustomTargetTypeConfig) GoogleClouddeployCustomTargetType {
 	_init_.Initialize()
 
@@ -603,7 +627,7 @@ func NewGoogleClouddeployCustomTargetType(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_clouddeploy_custom_target_type google_clouddeploy_custom_target_type} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_clouddeploy_custom_target_type google_clouddeploy_custom_target_type} Resource.
 func NewGoogleClouddeployCustomTargetType_Override(g GoogleClouddeployCustomTargetType, scope constructs.Construct, id *string, config *GoogleClouddeployCustomTargetTypeConfig) {
 	_init_.Initialize()
 
@@ -1123,6 +1147,17 @@ func (g *jsiiProxy_GoogleClouddeployCustomTargetType) PutCustomActions(value *Go
 	)
 }
 
+func (g *jsiiProxy_GoogleClouddeployCustomTargetType) PutTasks(value *GoogleClouddeployCustomTargetTypeTasks) {
+	if err := g.validatePutTasksParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putTasks",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleClouddeployCustomTargetType) PutTimeouts(value *GoogleClouddeployCustomTargetTypeTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1186,6 +1221,14 @@ func (g *jsiiProxy_GoogleClouddeployCustomTargetType) ResetProject() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleClouddeployCustomTargetType) ResetTasks() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTasks",
 		nil, // no parameters
 	)
 }

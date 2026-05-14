@@ -1,0 +1,82 @@
+//go:build no_runtime_type_checking
+
+package googlecesevaluation
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (g *jsiiProxy_GoogleCesEvaluationScenarioScenarioExpectationsToolExpectationMockToolResponseToolsetToolOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCesEvaluationScenarioScenarioExpectationsToolExpectationMockToolResponseToolsetToolOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCesEvaluationScenarioScenarioExpectationsToolExpectationMockToolResponseToolsetToolOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCesEvaluationScenarioScenarioExpectationsToolExpectationMockToolResponseToolsetToolOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCesEvaluationScenarioScenarioExpectationsToolExpectationMockToolResponseToolsetToolOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCesEvaluationScenarioScenarioExpectationsToolExpectationMockToolResponseToolsetToolOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCesEvaluationScenarioScenarioExpectationsToolExpectationMockToolResponseToolsetToolOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCesEvaluationScenarioScenarioExpectationsToolExpectationMockToolResponseToolsetToolOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCesEvaluationScenarioScenarioExpectationsToolExpectationMockToolResponseToolsetToolOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCesEvaluationScenarioScenarioExpectationsToolExpectationMockToolResponseToolsetToolOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCesEvaluationScenarioScenarioExpectationsToolExpectationMockToolResponseToolsetToolOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleCesEvaluationScenarioScenarioExpectationsToolExpectationMockToolResponseToolsetToolOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleCesEvaluationScenarioScenarioExpectationsToolExpectationMockToolResponseToolsetToolOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleCesEvaluationScenarioScenarioExpectationsToolExpectationMockToolResponseToolsetToolOutputReference) validateSetInternalValueParameters(val *GoogleCesEvaluationScenarioScenarioExpectationsToolExpectationMockToolResponseToolsetTool) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleCesEvaluationScenarioScenarioExpectationsToolExpectationMockToolResponseToolsetToolOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleCesEvaluationScenarioScenarioExpectationsToolExpectationMockToolResponseToolsetToolOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleCesEvaluationScenarioScenarioExpectationsToolExpectationMockToolResponseToolsetToolOutputReference) validateSetToolIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleCesEvaluationScenarioScenarioExpectationsToolExpectationMockToolResponseToolsetToolOutputReference) validateSetToolsetParameters(val *string) error {
+	return nil
+}
+
+func validateNewGoogleCesEvaluationScenarioScenarioExpectationsToolExpectationMockToolResponseToolsetToolOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+	return nil
+}
+

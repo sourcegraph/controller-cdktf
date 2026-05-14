@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsOutputReference
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsOutputReference) validatePutOtherCloudTargetParameters(value *GoogleDataLossPreventionDiscoveryConfigTargetsOtherCloudTarget) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsOutputReference) validatePutSecretsTargetParameters(value *GoogleDataLossPreventionDiscoveryConfigTargetsSecretsTarget) error {
 	return nil
 }

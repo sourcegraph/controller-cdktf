@@ -32,6 +32,8 @@ type AlloydbInstancePscInstanceConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *AlloydbInstancePscInstanceConfig
 	SetInternalValue(val *AlloydbInstancePscInstanceConfig)
+	PscAutoConnections() AlloydbInstancePscInstanceConfigPscAutoConnectionsList
+	PscAutoConnectionsInput() interface{}
 	PscDnsName() *string
 	PscInterfaceConfigs() AlloydbInstancePscInstanceConfigPscInterfaceConfigsList
 	PscInterfaceConfigsInput() interface{}
@@ -68,8 +70,10 @@ type AlloydbInstancePscInstanceConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutPscAutoConnections(value interface{})
 	PutPscInterfaceConfigs(value interface{})
 	ResetAllowedConsumerProjects()
+	ResetPscAutoConnections()
 	ResetPscInterfaceConfigs()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -151,6 +155,26 @@ func (j *jsiiProxy_AlloydbInstancePscInstanceConfigOutputReference) InternalValu
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbInstancePscInstanceConfigOutputReference) PscAutoConnections() AlloydbInstancePscInstanceConfigPscAutoConnectionsList {
+	var returns AlloydbInstancePscInstanceConfigPscAutoConnectionsList
+	_jsii_.Get(
+		j,
+		"pscAutoConnections",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbInstancePscInstanceConfigOutputReference) PscAutoConnectionsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"pscAutoConnectionsInput",
 		&returns,
 	)
 	return returns
@@ -496,6 +520,17 @@ func (a *jsiiProxy_AlloydbInstancePscInstanceConfigOutputReference) Interpolatio
 	return returns
 }
 
+func (a *jsiiProxy_AlloydbInstancePscInstanceConfigOutputReference) PutPscAutoConnections(value interface{}) {
+	if err := a.validatePutPscAutoConnectionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putPscAutoConnections",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AlloydbInstancePscInstanceConfigOutputReference) PutPscInterfaceConfigs(value interface{}) {
 	if err := a.validatePutPscInterfaceConfigsParameters(value); err != nil {
 		panic(err)
@@ -511,6 +546,14 @@ func (a *jsiiProxy_AlloydbInstancePscInstanceConfigOutputReference) ResetAllowed
 	_jsii_.InvokeVoid(
 		a,
 		"resetAllowedConsumerProjects",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlloydbInstancePscInstanceConfigOutputReference) ResetPscAutoConnections() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetPscAutoConnections",
 		nil, // no parameters
 	)
 }

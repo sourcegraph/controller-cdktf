@@ -30,6 +30,7 @@ type DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfi
 	InternalValue() *DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfig
 	SetInternalValue(val *DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfig)
 	PrivateRegistryAccessConfig() DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigList
+	RegistryHosts() DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsList
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -38,6 +39,7 @@ type DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfi
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	WritableCgroups() DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigWritableCgroupsList
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -137,6 +139,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsC
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigOutputReference) RegistryHosts() DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsList {
+	var returns DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsList
+	_jsii_.Get(
+		j,
+		"registryHosts",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -152,6 +164,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsC
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigOutputReference) WritableCgroups() DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigWritableCgroupsList {
+	var returns DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigWritableCgroupsList
+	_jsii_.Get(
+		j,
+		"writableCgroups",
 		&returns,
 	)
 	return returns

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/computeinterconnect/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_interconnect google_compute_interconnect}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect google_compute_interconnect}.
 type ComputeInterconnect interface {
 	cdktf.TerraformResource
 	AdminEnabled() interface{}
@@ -56,6 +56,7 @@ type ComputeInterconnect interface {
 	SetId(val *string)
 	IdInput() *string
 	InterconnectAttachments() *[]*string
+	InterconnectGroups() *[]*string
 	InterconnectType() *string
 	SetInterconnectType(val *string)
 	InterconnectTypeInput() *string
@@ -87,6 +88,8 @@ type ComputeInterconnect interface {
 	// The tree node.
 	Node() constructs.Node
 	OperationalStatus() *string
+	Params() ComputeInterconnectParamsOutputReference
+	ParamsInput() *ComputeInterconnectParams
 	PeerIpAddress() *string
 	Project() *string
 	SetProject(val *string)
@@ -122,6 +125,7 @@ type ComputeInterconnect interface {
 	TerraformResourceType() *string
 	Timeouts() ComputeInterconnectTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	WireGroups() *[]*string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -166,19 +170,20 @@ type ComputeInterconnect interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutMacsec(value *ComputeInterconnectMacsec)
+	PutParams(value *ComputeInterconnectParams)
 	PutTimeouts(value *ComputeInterconnectTimeouts)
 	ResetAdminEnabled()
 	ResetCustomerName()
 	ResetDescription()
 	ResetId()
 	ResetLabels()
-	ResetLocation()
 	ResetMacsec()
 	ResetMacsecEnabled()
 	ResetNocContactEmail()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetParams()
 	ResetProject()
 	ResetRemoteLocation()
 	ResetRequestedFeatures()
@@ -441,6 +446,16 @@ func (j *jsiiProxy_ComputeInterconnect) InterconnectAttachments() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeInterconnect) InterconnectGroups() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"interconnectGroups",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeInterconnect) InterconnectType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -636,6 +651,26 @@ func (j *jsiiProxy_ComputeInterconnect) OperationalStatus() *string {
 	_jsii_.Get(
 		j,
 		"operationalStatus",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInterconnect) Params() ComputeInterconnectParamsOutputReference {
+	var returns ComputeInterconnectParamsOutputReference
+	_jsii_.Get(
+		j,
+		"params",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInterconnect) ParamsInput() *ComputeInterconnectParams {
+	var returns *ComputeInterconnectParams
+	_jsii_.Get(
+		j,
+		"paramsInput",
 		&returns,
 	)
 	return returns
@@ -851,8 +886,18 @@ func (j *jsiiProxy_ComputeInterconnect) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeInterconnect) WireGroups() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"wireGroups",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_interconnect google_compute_interconnect} Resource.
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect google_compute_interconnect} Resource.
 func NewComputeInterconnect(scope constructs.Construct, id *string, config *ComputeInterconnectConfig) ComputeInterconnect {
 	_init_.Initialize()
 
@@ -870,7 +915,7 @@ func NewComputeInterconnect(scope constructs.Construct, id *string, config *Comp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_interconnect google_compute_interconnect} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect google_compute_interconnect} Resource.
 func NewComputeInterconnect_Override(c ComputeInterconnect, scope constructs.Construct, id *string, config *ComputeInterconnectConfig) {
 	_init_.Initialize()
 
@@ -1478,6 +1523,17 @@ func (c *jsiiProxy_ComputeInterconnect) PutMacsec(value *ComputeInterconnectMacs
 	)
 }
 
+func (c *jsiiProxy_ComputeInterconnect) PutParams(value *ComputeInterconnectParams) {
+	if err := c.validatePutParamsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putParams",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeInterconnect) PutTimeouts(value *ComputeInterconnectTimeouts) {
 	if err := c.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1529,14 +1585,6 @@ func (c *jsiiProxy_ComputeInterconnect) ResetLabels() {
 	)
 }
 
-func (c *jsiiProxy_ComputeInterconnect) ResetLocation() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetLocation",
-		nil, // no parameters
-	)
-}
-
 func (c *jsiiProxy_ComputeInterconnect) ResetMacsec() {
 	_jsii_.InvokeVoid(
 		c,
@@ -1565,6 +1613,14 @@ func (c *jsiiProxy_ComputeInterconnect) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeInterconnect) ResetParams() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetParams",
 		nil, // no parameters
 	)
 }

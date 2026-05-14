@@ -32,6 +32,7 @@ type DataGoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicyOutputRef
 	InternalValue() *DataGoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicy
 	SetInternalValue(val *DataGoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicy)
 	OnFailedHealthCheck() *string
+	OnRepair() DataGoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicyOnRepairList
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -154,6 +155,16 @@ func (j *jsiiProxy_DataGoogleComputeRegionInstanceGroupManagerInstanceLifecycleP
 	_jsii_.Get(
 		j,
 		"onFailedHealthCheck",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicyOutputReference) OnRepair() DataGoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicyOnRepairList {
+	var returns DataGoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicyOnRepairList
+	_jsii_.Get(
+		j,
+		"onRepair",
 		&returns,
 	)
 	return returns

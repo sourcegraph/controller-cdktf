@@ -76,7 +76,23 @@ func (n *jsiiProxy_NetappVolume) validatePutBackupConfigParameters(value *Netapp
 	return nil
 }
 
+func (n *jsiiProxy_NetappVolume) validatePutBlockDevicesParameters(value interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetappVolume) validatePutCacheParametersParameters(value *NetappVolumeCacheParameters) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetappVolume) validatePutExportPolicyParameters(value *NetappVolumeExportPolicy) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetappVolume) validatePutHybridReplicationParametersParameters(value *NetappVolumeHybridReplicationParameters) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetappVolume) validatePutLargeCapacityConfigParameters(value *NetappVolumeLargeCapacityConfig) error {
 	return nil
 }
 
@@ -197,6 +213,10 @@ func (j *jsiiProxy_NetappVolume) validateSetSnapshotDirectoryParameters(val inte
 }
 
 func (j *jsiiProxy_NetappVolume) validateSetStoragePoolParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NetappVolume) validateSetThroughputMibpsParameters(val *float64) error {
 	return nil
 }
 

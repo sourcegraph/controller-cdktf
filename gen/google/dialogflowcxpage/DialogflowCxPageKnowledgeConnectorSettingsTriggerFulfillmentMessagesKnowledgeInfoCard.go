@@ -1,0 +1,6 @@
+package dialogflowcxpage
+
+
+type DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesKnowledgeInfoCard struct {
+}
+

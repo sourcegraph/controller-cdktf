@@ -9,9 +9,18 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlenetappbackupvault/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_netapp_backup_vault google_netapp_backup_vault}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_netapp_backup_vault google_netapp_backup_vault}.
 type GoogleNetappBackupVault interface {
 	cdktf.TerraformResource
+	BackupRegion() *string
+	SetBackupRegion(val *string)
+	BackupRegionInput() *string
+	BackupRetentionPolicy() GoogleNetappBackupVaultBackupRetentionPolicyOutputReference
+	BackupRetentionPolicyInput() *GoogleNetappBackupVaultBackupRetentionPolicy
+	BackupsCryptoKeyVersion() *string
+	BackupVaultType() *string
+	SetBackupVaultType(val *string)
+	BackupVaultTypeInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -32,7 +41,9 @@ type GoogleNetappBackupVault interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	DestinationBackupVault() *string
 	EffectiveLabels() cdktf.StringMap
+	EncryptionState() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -44,6 +55,9 @@ type GoogleNetappBackupVault interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	KmsConfig() *string
+	SetKmsConfig(val *string)
+	KmsConfigInput() *string
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
 	LabelsInput() *map[string]*string
@@ -72,6 +86,8 @@ type GoogleNetappBackupVault interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	SourceBackupVault() *string
+	SourceRegion() *string
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -125,9 +141,14 @@ type GoogleNetappBackupVault interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutBackupRetentionPolicy(value *GoogleNetappBackupVaultBackupRetentionPolicy)
 	PutTimeouts(value *GoogleNetappBackupVaultTimeouts)
+	ResetBackupRegion()
+	ResetBackupRetentionPolicy()
+	ResetBackupVaultType()
 	ResetDescription()
 	ResetId()
+	ResetKmsConfig()
 	ResetLabels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -150,6 +171,76 @@ type GoogleNetappBackupVault interface {
 // The jsii proxy struct for GoogleNetappBackupVault
 type jsiiProxy_GoogleNetappBackupVault struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GoogleNetappBackupVault) BackupRegion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"backupRegion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetappBackupVault) BackupRegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"backupRegionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetappBackupVault) BackupRetentionPolicy() GoogleNetappBackupVaultBackupRetentionPolicyOutputReference {
+	var returns GoogleNetappBackupVaultBackupRetentionPolicyOutputReference
+	_jsii_.Get(
+		j,
+		"backupRetentionPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetappBackupVault) BackupRetentionPolicyInput() *GoogleNetappBackupVaultBackupRetentionPolicy {
+	var returns *GoogleNetappBackupVaultBackupRetentionPolicy
+	_jsii_.Get(
+		j,
+		"backupRetentionPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetappBackupVault) BackupsCryptoKeyVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"backupsCryptoKeyVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetappBackupVault) BackupVaultType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"backupVaultType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetappBackupVault) BackupVaultTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"backupVaultTypeInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleNetappBackupVault) CdktfStack() cdktf.TerraformStack {
@@ -232,11 +323,31 @@ func (j *jsiiProxy_GoogleNetappBackupVault) DescriptionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleNetappBackupVault) DestinationBackupVault() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"destinationBackupVault",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleNetappBackupVault) EffectiveLabels() cdktf.StringMap {
 	var returns cdktf.StringMap
 	_jsii_.Get(
 		j,
 		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetappBackupVault) EncryptionState() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"encryptionState",
 		&returns,
 	)
 	return returns
@@ -287,6 +398,26 @@ func (j *jsiiProxy_GoogleNetappBackupVault) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetappBackupVault) KmsConfig() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetappBackupVault) KmsConfigInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsConfigInput",
 		&returns,
 	)
 	return returns
@@ -422,6 +553,26 @@ func (j *jsiiProxy_GoogleNetappBackupVault) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleNetappBackupVault) SourceBackupVault() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceBackupVault",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetappBackupVault) SourceRegion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceRegion",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleNetappBackupVault) State() *string {
 	var returns *string
 	_jsii_.Get(
@@ -493,7 +644,7 @@ func (j *jsiiProxy_GoogleNetappBackupVault) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_netapp_backup_vault google_netapp_backup_vault} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_netapp_backup_vault google_netapp_backup_vault} Resource.
 func NewGoogleNetappBackupVault(scope constructs.Construct, id *string, config *GoogleNetappBackupVaultConfig) GoogleNetappBackupVault {
 	_init_.Initialize()
 
@@ -511,7 +662,7 @@ func NewGoogleNetappBackupVault(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_netapp_backup_vault google_netapp_backup_vault} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_netapp_backup_vault google_netapp_backup_vault} Resource.
 func NewGoogleNetappBackupVault_Override(g GoogleNetappBackupVault, scope constructs.Construct, id *string, config *GoogleNetappBackupVaultConfig) {
 	_init_.Initialize()
 
@@ -519,6 +670,28 @@ func NewGoogleNetappBackupVault_Override(g GoogleNetappBackupVault, scope constr
 		"@cdktf/provider-google-beta.googleNetappBackupVault.GoogleNetappBackupVault",
 		[]interface{}{scope, id, config},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GoogleNetappBackupVault)SetBackupRegion(val *string) {
+	if err := j.validateSetBackupRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"backupRegion",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleNetappBackupVault)SetBackupVaultType(val *string) {
+	if err := j.validateSetBackupVaultTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"backupVaultType",
+		val,
 	)
 }
 
@@ -578,6 +751,17 @@ func (j *jsiiProxy_GoogleNetappBackupVault)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleNetappBackupVault)SetKmsConfig(val *string) {
+	if err := j.validateSetKmsConfigParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kmsConfig",
 		val,
 	)
 }
@@ -1009,6 +1193,17 @@ func (g *jsiiProxy_GoogleNetappBackupVault) OverrideLogicalId(newLogicalId *stri
 	)
 }
 
+func (g *jsiiProxy_GoogleNetappBackupVault) PutBackupRetentionPolicy(value *GoogleNetappBackupVaultBackupRetentionPolicy) {
+	if err := g.validatePutBackupRetentionPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putBackupRetentionPolicy",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleNetappBackupVault) PutTimeouts(value *GoogleNetappBackupVaultTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1017,6 +1212,30 @@ func (g *jsiiProxy_GoogleNetappBackupVault) PutTimeouts(value *GoogleNetappBacku
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleNetappBackupVault) ResetBackupRegion() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetBackupRegion",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleNetappBackupVault) ResetBackupRetentionPolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetBackupRetentionPolicy",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleNetappBackupVault) ResetBackupVaultType() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetBackupVaultType",
+		nil, // no parameters
 	)
 }
 
@@ -1032,6 +1251,14 @@ func (g *jsiiProxy_GoogleNetappBackupVault) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleNetappBackupVault) ResetKmsConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetKmsConfig",
 		nil, // no parameters
 	)
 }

@@ -140,6 +140,10 @@ func (j *jsiiProxy_BigtableTable) validateSetProvisionersParameters(val *[]inter
 	return nil
 }
 
+func (j *jsiiProxy_BigtableTable) validateSetRowKeySchemaParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BigtableTable) validateSetSplitKeysParameters(val *[]*string) error {
 	return nil
 }

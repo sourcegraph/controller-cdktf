@@ -72,6 +72,14 @@ func (g *jsiiProxy_GoogleComputeInterconnectAttachment) validateOverrideLogicalI
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeInterconnectAttachment) validatePutL2ForwardingParameters(value *GoogleComputeInterconnectAttachmentL2Forwarding) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeInterconnectAttachment) validatePutParamsParameters(value *GoogleComputeInterconnectAttachmentParams) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeInterconnectAttachment) validatePutTimeoutsParameters(value *GoogleComputeInterconnectAttachmentTimeouts) error {
 	return nil
 }
@@ -97,6 +105,22 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachment) validateSetAdminEnabledP
 }
 
 func (j *jsiiProxy_GoogleComputeInterconnectAttachment) validateSetBandwidthParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) validateSetCandidateCloudRouterIpAddressParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) validateSetCandidateCloudRouterIpv6AddressParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) validateSetCandidateCustomerRouterIpAddressParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) validateSetCandidateCustomerRouterIpv6AddressParameters(val *string) error {
 	return nil
 }
 

@@ -10,6 +10,7 @@ import (
 
 type DataGoogleContainerClusterNodePoolNetworkConfigOutputReference interface {
 	cdktf.ComplexObject
+	AcceleratorNetworkProfile() *string
 	AdditionalNodeNetworkConfigs() DataGoogleContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigsList
 	AdditionalPodNetworkConfigs() DataGoogleContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigsList
 	// the index of the complex object in a list.
@@ -37,6 +38,7 @@ type DataGoogleContainerClusterNodePoolNetworkConfigOutputReference interface {
 	PodCidrOverprovisionConfig() DataGoogleContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfigList
 	PodIpv4CidrBlock() *string
 	PodRange() *string
+	Subnetwork() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -82,6 +84,16 @@ type DataGoogleContainerClusterNodePoolNetworkConfigOutputReference interface {
 // The jsii proxy struct for DataGoogleContainerClusterNodePoolNetworkConfigOutputReference
 type jsiiProxy_DataGoogleContainerClusterNodePoolNetworkConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNetworkConfigOutputReference) AcceleratorNetworkProfile() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"acceleratorNetworkProfile",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNetworkConfigOutputReference) AdditionalNodeNetworkConfigs() DataGoogleContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigsList {
@@ -209,6 +221,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNetworkConfigOutputReferenc
 	_jsii_.Get(
 		j,
 		"podRange",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNetworkConfigOutputReference) Subnetwork() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subnetwork",
 		&returns,
 	)
 	return returns

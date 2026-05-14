@@ -76,6 +76,10 @@ func (c *jsiiProxy_ComputeInterconnect) validatePutMacsecParameters(value *Compu
 	return nil
 }
 
+func (c *jsiiProxy_ComputeInterconnect) validatePutParamsParameters(value *ComputeInterconnectParams) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeInterconnect) validatePutTimeoutsParameters(value *ComputeInterconnectTimeouts) error {
 	return nil
 }

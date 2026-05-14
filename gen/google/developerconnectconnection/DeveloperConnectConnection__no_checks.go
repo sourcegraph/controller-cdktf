@@ -100,6 +100,10 @@ func (d *jsiiProxy_DeveloperConnectConnection) validatePutGitlabEnterpriseConfig
 	return nil
 }
 
+func (d *jsiiProxy_DeveloperConnectConnection) validatePutHttpConfigParameters(value *DeveloperConnectConnectionHttpConfig) error {
+	return nil
+}
+
 func (d *jsiiProxy_DeveloperConnectConnection) validatePutTimeoutsParameters(value *DeveloperConnectConnectionTimeouts) error {
 	return nil
 }

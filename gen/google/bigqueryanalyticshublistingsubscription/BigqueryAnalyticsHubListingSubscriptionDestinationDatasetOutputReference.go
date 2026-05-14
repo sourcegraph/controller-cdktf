@@ -43,6 +43,9 @@ type BigqueryAnalyticsHubListingSubscriptionDestinationDatasetOutputReference in
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
+	ReplicaLocations() *[]*string
+	SetReplicaLocations(val *[]*string)
+	ReplicaLocationsInput() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -79,6 +82,7 @@ type BigqueryAnalyticsHubListingSubscriptionDestinationDatasetOutputReference in
 	ResetDescription()
 	ResetFriendlyName()
 	ResetLabels()
+	ResetReplicaLocations()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -244,6 +248,26 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListingSubscriptionDestinationDatasetOutp
 	return returns
 }
 
+func (j *jsiiProxy_BigqueryAnalyticsHubListingSubscriptionDestinationDatasetOutputReference) ReplicaLocations() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"replicaLocations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryAnalyticsHubListingSubscriptionDestinationDatasetOutputReference) ReplicaLocationsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"replicaLocationsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BigqueryAnalyticsHubListingSubscriptionDestinationDatasetOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -365,6 +389,17 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListingSubscriptionDestinationDatasetOutp
 	_jsii_.Set(
 		j,
 		"location",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigqueryAnalyticsHubListingSubscriptionDestinationDatasetOutputReference)SetReplicaLocations(val *[]*string) {
+	if err := j.validateSetReplicaLocationsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"replicaLocations",
 		val,
 	)
 }
@@ -608,6 +643,14 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListingSubscriptionDestinationDatasetOutp
 	_jsii_.InvokeVoid(
 		b,
 		"resetLabels",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryAnalyticsHubListingSubscriptionDestinationDatasetOutputReference) ResetReplicaLocations() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetReplicaLocations",
 		nil, // no parameters
 	)
 }

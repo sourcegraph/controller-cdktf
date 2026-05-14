@@ -416,6 +416,45 @@ func init() {
 		reflect.TypeOf((*ColabRuntimeTemplateSoftwareConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.colabRuntimeTemplate.ColabRuntimeTemplateSoftwareConfigColabImage",
+		reflect.TypeOf((*ColabRuntimeTemplateSoftwareConfigColabImage)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.colabRuntimeTemplate.ColabRuntimeTemplateSoftwareConfigColabImageOutputReference",
+		reflect.TypeOf((*ColabRuntimeTemplateSoftwareConfigColabImageOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "releaseName", GoGetter: "ReleaseName"},
+			_jsii_.MemberProperty{JsiiProperty: "releaseNameInput", GoGetter: "ReleaseNameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetReleaseName", GoMethod: "ResetReleaseName"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ColabRuntimeTemplateSoftwareConfigColabImageOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.colabRuntimeTemplate.ColabRuntimeTemplateSoftwareConfigEnv",
 		reflect.TypeOf((*ColabRuntimeTemplateSoftwareConfigEnv)(nil)).Elem(),
 	)
@@ -483,6 +522,8 @@ func init() {
 		"@cdktf/provider-google.colabRuntimeTemplate.ColabRuntimeTemplateSoftwareConfigOutputReference",
 		reflect.TypeOf((*ColabRuntimeTemplateSoftwareConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "colabImage", GoGetter: "ColabImage"},
+			_jsii_.MemberProperty{JsiiProperty: "colabImageInput", GoGetter: "ColabImageInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -504,8 +545,10 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "postStartupScriptConfig", GoGetter: "PostStartupScriptConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "postStartupScriptConfigInput", GoGetter: "PostStartupScriptConfigInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putColabImage", GoMethod: "PutColabImage"},
 			_jsii_.MemberMethod{JsiiMethod: "putEnv", GoMethod: "PutEnv"},
 			_jsii_.MemberMethod{JsiiMethod: "putPostStartupScriptConfig", GoMethod: "PutPostStartupScriptConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "resetColabImage", GoMethod: "ResetColabImage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnv", GoMethod: "ResetEnv"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPostStartupScriptConfig", GoMethod: "ResetPostStartupScriptConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},

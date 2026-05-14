@@ -56,6 +56,10 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReferenc
 	return nil
 }
 
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference) validateSetEnhancedQueryInsightsEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference) validateSetInternalValueParameters(val *GoogleSqlDatabaseInstanceSettingsInsightsConfig) error {
 	return nil
 }

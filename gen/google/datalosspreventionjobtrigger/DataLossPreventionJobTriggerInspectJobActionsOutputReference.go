@@ -35,6 +35,8 @@ type DataLossPreventionJobTriggerInspectJobActionsOutputReference interface {
 	JobNotificationEmailsInput() *DataLossPreventionJobTriggerInspectJobActionsJobNotificationEmails
 	PublishFindingsToCloudDataCatalog() DataLossPreventionJobTriggerInspectJobActionsPublishFindingsToCloudDataCatalogOutputReference
 	PublishFindingsToCloudDataCatalogInput() *DataLossPreventionJobTriggerInspectJobActionsPublishFindingsToCloudDataCatalog
+	PublishFindingsToDataplexCatalog() DataLossPreventionJobTriggerInspectJobActionsPublishFindingsToDataplexCatalogOutputReference
+	PublishFindingsToDataplexCatalogInput() *DataLossPreventionJobTriggerInspectJobActionsPublishFindingsToDataplexCatalog
 	PublishSummaryToCscc() DataLossPreventionJobTriggerInspectJobActionsPublishSummaryToCsccOutputReference
 	PublishSummaryToCsccInput() *DataLossPreventionJobTriggerInspectJobActionsPublishSummaryToCscc
 	PublishToStackdriver() DataLossPreventionJobTriggerInspectJobActionsPublishToStackdriverOutputReference
@@ -78,6 +80,7 @@ type DataLossPreventionJobTriggerInspectJobActionsOutputReference interface {
 	PutDeidentify(value *DataLossPreventionJobTriggerInspectJobActionsDeidentify)
 	PutJobNotificationEmails(value *DataLossPreventionJobTriggerInspectJobActionsJobNotificationEmails)
 	PutPublishFindingsToCloudDataCatalog(value *DataLossPreventionJobTriggerInspectJobActionsPublishFindingsToCloudDataCatalog)
+	PutPublishFindingsToDataplexCatalog(value *DataLossPreventionJobTriggerInspectJobActionsPublishFindingsToDataplexCatalog)
 	PutPublishSummaryToCscc(value *DataLossPreventionJobTriggerInspectJobActionsPublishSummaryToCscc)
 	PutPublishToStackdriver(value *DataLossPreventionJobTriggerInspectJobActionsPublishToStackdriver)
 	PutPubSub(value *DataLossPreventionJobTriggerInspectJobActionsPubSub)
@@ -85,6 +88,7 @@ type DataLossPreventionJobTriggerInspectJobActionsOutputReference interface {
 	ResetDeidentify()
 	ResetJobNotificationEmails()
 	ResetPublishFindingsToCloudDataCatalog()
+	ResetPublishFindingsToDataplexCatalog()
 	ResetPublishSummaryToCscc()
 	ResetPublishToStackdriver()
 	ResetPubSub()
@@ -209,6 +213,26 @@ func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsOutputReference)
 	_jsii_.Get(
 		j,
 		"publishFindingsToCloudDataCatalogInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsOutputReference) PublishFindingsToDataplexCatalog() DataLossPreventionJobTriggerInspectJobActionsPublishFindingsToDataplexCatalogOutputReference {
+	var returns DataLossPreventionJobTriggerInspectJobActionsPublishFindingsToDataplexCatalogOutputReference
+	_jsii_.Get(
+		j,
+		"publishFindingsToDataplexCatalog",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsOutputReference) PublishFindingsToDataplexCatalogInput() *DataLossPreventionJobTriggerInspectJobActionsPublishFindingsToDataplexCatalog {
+	var returns *DataLossPreventionJobTriggerInspectJobActionsPublishFindingsToDataplexCatalog
+	_jsii_.Get(
+		j,
+		"publishFindingsToDataplexCatalogInput",
 		&returns,
 	)
 	return returns
@@ -616,6 +640,17 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsOutputReference)
 	)
 }
 
+func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsOutputReference) PutPublishFindingsToDataplexCatalog(value *DataLossPreventionJobTriggerInspectJobActionsPublishFindingsToDataplexCatalog) {
+	if err := d.validatePutPublishFindingsToDataplexCatalogParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putPublishFindingsToDataplexCatalog",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsOutputReference) PutPublishSummaryToCscc(value *DataLossPreventionJobTriggerInspectJobActionsPublishSummaryToCscc) {
 	if err := d.validatePutPublishSummaryToCsccParameters(value); err != nil {
 		panic(err)
@@ -680,6 +715,14 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsOutputReference)
 	_jsii_.InvokeVoid(
 		d,
 		"resetPublishFindingsToCloudDataCatalog",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsOutputReference) ResetPublishFindingsToDataplexCatalog() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPublishFindingsToDataplexCatalog",
 		nil, // no parameters
 	)
 }

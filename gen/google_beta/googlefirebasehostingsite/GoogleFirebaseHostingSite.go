@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlefirebasehostingsite/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_firebase_hosting_site google_firebase_hosting_site}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_firebase_hosting_site google_firebase_hosting_site}.
 type GoogleFirebaseHostingSite interface {
 	cdktf.TerraformResource
 	AppId() *string
@@ -74,6 +74,7 @@ type GoogleFirebaseHostingSite interface {
 	TerraformResourceType() *string
 	Timeouts() GoogleFirebaseHostingSiteTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	Type() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -424,8 +425,18 @@ func (j *jsiiProxy_GoogleFirebaseHostingSite) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleFirebaseHostingSite) Type() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"type",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_firebase_hosting_site google_firebase_hosting_site} Resource.
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_firebase_hosting_site google_firebase_hosting_site} Resource.
 func NewGoogleFirebaseHostingSite(scope constructs.Construct, id *string, config *GoogleFirebaseHostingSiteConfig) GoogleFirebaseHostingSite {
 	_init_.Initialize()
 
@@ -443,7 +454,7 @@ func NewGoogleFirebaseHostingSite(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_firebase_hosting_site google_firebase_hosting_site} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_firebase_hosting_site google_firebase_hosting_site} Resource.
 func NewGoogleFirebaseHostingSite_Override(g GoogleFirebaseHostingSite, scope constructs.Construct, id *string, config *GoogleFirebaseHostingSiteConfig) {
 	_init_.Initialize()
 

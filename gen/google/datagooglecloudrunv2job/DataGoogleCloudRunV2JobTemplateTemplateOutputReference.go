@@ -30,9 +30,11 @@ type DataGoogleCloudRunV2JobTemplateTemplateOutputReference interface {
 	ExecutionEnvironment() *string
 	// Experimental.
 	Fqn() *string
+	GpuZonalRedundancyDisabled() cdktf.IResolvable
 	InternalValue() *DataGoogleCloudRunV2JobTemplateTemplate
 	SetInternalValue(val *DataGoogleCloudRunV2JobTemplateTemplate)
 	MaxRetries() *float64
+	NodeSelector() DataGoogleCloudRunV2JobTemplateTemplateNodeSelectorList
 	ServiceAccount() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -154,6 +156,16 @@ func (j *jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateOutputReference) Fqn()
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateOutputReference) GpuZonalRedundancyDisabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"gpuZonalRedundancyDisabled",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateOutputReference) InternalValue() *DataGoogleCloudRunV2JobTemplateTemplate {
 	var returns *DataGoogleCloudRunV2JobTemplateTemplate
 	_jsii_.Get(
@@ -169,6 +181,16 @@ func (j *jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateOutputReference) MaxRe
 	_jsii_.Get(
 		j,
 		"maxRetries",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateOutputReference) NodeSelector() DataGoogleCloudRunV2JobTemplateTemplateNodeSelectorList {
+	var returns DataGoogleCloudRunV2JobTemplateTemplateNodeSelectorList
+	_jsii_.Get(
+		j,
+		"nodeSelector",
 		&returns,
 	)
 	return returns

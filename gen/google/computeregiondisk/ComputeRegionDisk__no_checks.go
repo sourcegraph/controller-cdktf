@@ -84,6 +84,10 @@ func (c *jsiiProxy_ComputeRegionDisk) validatePutGuestOsFeaturesParameters(value
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRegionDisk) validatePutSourceImageEncryptionKeyParameters(value *ComputeRegionDiskSourceImageEncryptionKey) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionDisk) validatePutSourceSnapshotEncryptionKeyParameters(value *ComputeRegionDiskSourceSnapshotEncryptionKey) error {
 	return nil
 }
@@ -105,6 +109,10 @@ func validateComputeRegionDisk_IsTerraformElementParameters(x interface{}) error
 }
 
 func validateComputeRegionDisk_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeRegionDisk) validateSetAccessModeParameters(val *string) error {
 	return nil
 }
 
@@ -132,6 +140,10 @@ func (j *jsiiProxy_ComputeRegionDisk) validateSetIdParameters(val *string) error
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRegionDisk) validateSetImageParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRegionDisk) validateSetLabelsParameters(val *map[string]*string) error {
 	return nil
 }
@@ -153,6 +165,14 @@ func (j *jsiiProxy_ComputeRegionDisk) validateSetPhysicalBlockSizeBytesParameter
 }
 
 func (j *jsiiProxy_ComputeRegionDisk) validateSetProjectParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeRegionDisk) validateSetProvisionedIopsParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeRegionDisk) validateSetProvisionedThroughputParameters(val *float64) error {
 	return nil
 }
 

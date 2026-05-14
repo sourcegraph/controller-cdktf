@@ -28,6 +28,9 @@ type CloudbuildWorkerPoolWorkerConfigOutputReference interface {
 	DiskSizeGb() *float64
 	SetDiskSizeGb(val *float64)
 	DiskSizeGbInput() *float64
+	EnableNestedVirtualization() interface{}
+	SetEnableNestedVirtualization(val interface{})
+	EnableNestedVirtualizationInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() *CloudbuildWorkerPoolWorkerConfig
@@ -71,6 +74,7 @@ type CloudbuildWorkerPoolWorkerConfigOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetDiskSizeGb()
+	ResetEnableNestedVirtualization()
 	ResetMachineType()
 	ResetNoExternalIp()
 	// Produce the Token's value at resolution time.
@@ -133,6 +137,26 @@ func (j *jsiiProxy_CloudbuildWorkerPoolWorkerConfigOutputReference) DiskSizeGbIn
 	_jsii_.Get(
 		j,
 		"diskSizeGbInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudbuildWorkerPoolWorkerConfigOutputReference) EnableNestedVirtualization() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableNestedVirtualization",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudbuildWorkerPoolWorkerConfigOutputReference) EnableNestedVirtualizationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableNestedVirtualizationInput",
 		&returns,
 	)
 	return returns
@@ -275,6 +299,17 @@ func (j *jsiiProxy_CloudbuildWorkerPoolWorkerConfigOutputReference)SetDiskSizeGb
 	_jsii_.Set(
 		j,
 		"diskSizeGb",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudbuildWorkerPoolWorkerConfigOutputReference)SetEnableNestedVirtualization(val interface{}) {
+	if err := j.validateSetEnableNestedVirtualizationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableNestedVirtualization",
 		val,
 	)
 }
@@ -524,6 +559,14 @@ func (c *jsiiProxy_CloudbuildWorkerPoolWorkerConfigOutputReference) ResetDiskSiz
 	_jsii_.InvokeVoid(
 		c,
 		"resetDiskSizeGb",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudbuildWorkerPoolWorkerConfigOutputReference) ResetEnableNestedVirtualization() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEnableNestedVirtualization",
 		nil, // no parameters
 	)
 }

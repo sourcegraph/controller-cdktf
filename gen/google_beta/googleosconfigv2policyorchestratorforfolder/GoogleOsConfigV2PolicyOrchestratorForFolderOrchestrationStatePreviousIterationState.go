@@ -1,0 +1,6 @@
+package googleosconfigv2policyorchestratorforfolder
+
+
+type GoogleOsConfigV2PolicyOrchestratorForFolderOrchestrationStatePreviousIterationState struct {
+}
+

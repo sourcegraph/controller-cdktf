@@ -163,6 +163,14 @@ func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigEphemeralStorageLocalSsdConf
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference) validateSetDataCacheCountParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference) validateSetInternalValueParameters(val *GoogleContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfig) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err

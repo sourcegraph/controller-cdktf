@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/composeruserworkloadsconfigmap/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/composer_user_workloads_config_map google_composer_user_workloads_config_map}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/composer_user_workloads_config_map google_composer_user_workloads_config_map}.
 type ComposerUserWorkloadsConfigMap interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -449,7 +449,7 @@ func (j *jsiiProxy_ComposerUserWorkloadsConfigMap) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/composer_user_workloads_config_map google_composer_user_workloads_config_map} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/composer_user_workloads_config_map google_composer_user_workloads_config_map} Resource.
 func NewComposerUserWorkloadsConfigMap(scope constructs.Construct, id *string, config *ComposerUserWorkloadsConfigMapConfig) ComposerUserWorkloadsConfigMap {
 	_init_.Initialize()
 
@@ -467,7 +467,7 @@ func NewComposerUserWorkloadsConfigMap(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/composer_user_workloads_config_map google_composer_user_workloads_config_map} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/composer_user_workloads_config_map google_composer_user_workloads_config_map} Resource.
 func NewComposerUserWorkloadsConfigMap_Override(c ComposerUserWorkloadsConfigMap, scope constructs.Construct, id *string, config *ComposerUserWorkloadsConfigMapConfig) {
 	_init_.Initialize()
 

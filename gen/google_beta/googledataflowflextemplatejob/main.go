@@ -13,6 +13,8 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalExperiments", GoGetter: "AdditionalExperiments"},
 			_jsii_.MemberProperty{JsiiProperty: "additionalExperimentsInput", GoGetter: "AdditionalExperimentsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "additionalPipelineOptions", GoGetter: "AdditionalPipelineOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "additionalPipelineOptionsInput", GoGetter: "AdditionalPipelineOptionsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "autoscalingAlgorithm", GoGetter: "AutoscalingAlgorithm"},
@@ -81,6 +83,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "region", GoGetter: "Region"},
 			_jsii_.MemberProperty{JsiiProperty: "regionInput", GoGetter: "RegionInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAdditionalExperiments", GoMethod: "ResetAdditionalExperiments"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAdditionalPipelineOptions", GoMethod: "ResetAdditionalPipelineOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutoscalingAlgorithm", GoMethod: "ResetAutoscalingAlgorithm"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnableStreamingEngine", GoMethod: "ResetEnableStreamingEngine"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},

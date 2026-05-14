@@ -67,6 +67,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStackType", GoMethod: "ResetStackType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUpdateStrategy", GoMethod: "ResetUpdateStrategy"},
 			_jsii_.MemberProperty{JsiiProperty: "stackType", GoGetter: "StackType"},
 			_jsii_.MemberProperty{JsiiProperty: "stackTypeInput", GoGetter: "StackTypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "state", GoGetter: "State"},
@@ -82,6 +83,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberProperty{JsiiProperty: "updateStrategy", GoGetter: "UpdateStrategy"},
+			_jsii_.MemberProperty{JsiiProperty: "updateStrategyInput", GoGetter: "UpdateStrategyInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleComputeNetworkPeering{}

@@ -204,6 +204,28 @@ func (g *jsiiProxy_GoogleComputeReservation) validateOverrideLogicalIdParameters
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeReservation) validatePutDeleteAfterDurationParameters(value *GoogleComputeReservationDeleteAfterDuration) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeReservation) validatePutReservationSharingPolicyParameters(value *GoogleComputeReservationReservationSharingPolicy) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeReservation) validatePutShareSettingsParameters(value *GoogleComputeReservationShareSettings) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -367,6 +389,14 @@ func (j *jsiiProxy_GoogleComputeReservation) validateSetCountParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeReservation) validateSetDeleteAtTimeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeReservation) validateSetDescriptionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -375,9 +405,21 @@ func (j *jsiiProxy_GoogleComputeReservation) validateSetDescriptionParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeReservation) validateSetIdParameters(val *string) error {
+func (j *jsiiProxy_GoogleComputeReservation) validateSetEnableEmergentMaintenanceParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil

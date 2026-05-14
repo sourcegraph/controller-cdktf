@@ -44,6 +44,9 @@ type DataprocClusterClusterConfigGceClusterConfigOutputReference interface {
 	NodeGroupAffinityInput() *DataprocClusterClusterConfigGceClusterConfigNodeGroupAffinity
 	ReservationAffinity() DataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference
 	ReservationAffinityInput() *DataprocClusterClusterConfigGceClusterConfigReservationAffinity
+	ResourceManagerTags() *map[string]*string
+	SetResourceManagerTags(val *map[string]*string)
+	ResourceManagerTagsInput() *map[string]*string
 	ServiceAccount() *string
 	SetServiceAccount(val *string)
 	ServiceAccountInput() *string
@@ -103,6 +106,7 @@ type DataprocClusterClusterConfigGceClusterConfigOutputReference interface {
 	ResetNetwork()
 	ResetNodeGroupAffinity()
 	ResetReservationAffinity()
+	ResetResourceManagerTags()
 	ResetServiceAccount()
 	ResetServiceAccountScopes()
 	ResetShieldedInstanceConfig()
@@ -289,6 +293,26 @@ func (j *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigOutputReference) 
 	_jsii_.Get(
 		j,
 		"reservationAffinityInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigOutputReference) ResourceManagerTags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"resourceManagerTags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigOutputReference) ResourceManagerTagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"resourceManagerTagsInput",
 		&returns,
 	)
 	return returns
@@ -524,6 +548,17 @@ func (j *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigOutputReference)S
 	_jsii_.Set(
 		j,
 		"network",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigOutputReference)SetResourceManagerTags(val *map[string]*string) {
+	if err := j.validateSetResourceManagerTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"resourceManagerTags",
 		val,
 	)
 }
@@ -879,6 +914,14 @@ func (d *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigOutputReference) 
 	_jsii_.InvokeVoid(
 		d,
 		"resetReservationAffinity",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigOutputReference) ResetResourceManagerTags() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetResourceManagerTags",
 		nil, // no parameters
 	)
 }

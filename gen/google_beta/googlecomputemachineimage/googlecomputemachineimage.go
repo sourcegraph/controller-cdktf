@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputemachineimage/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_machine_image google_compute_machine_image}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_compute_machine_image google_compute_machine_image}.
 type GoogleComputeMachineImage interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -56,6 +56,8 @@ type GoogleComputeMachineImage interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Params() GoogleComputeMachineImageParamsOutputReference
+	ParamsInput() *GoogleComputeMachineImageParams
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -126,6 +128,7 @@ type GoogleComputeMachineImage interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutMachineImageEncryptionKey(value *GoogleComputeMachineImageMachineImageEncryptionKey)
+	PutParams(value *GoogleComputeMachineImageParams)
 	PutTimeouts(value *GoogleComputeMachineImageTimeouts)
 	ResetDescription()
 	ResetGuestFlush()
@@ -134,6 +137,7 @@ type GoogleComputeMachineImage interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetParams()
 	ResetProject()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -354,6 +358,26 @@ func (j *jsiiProxy_GoogleComputeMachineImage) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeMachineImage) Params() GoogleComputeMachineImageParamsOutputReference {
+	var returns GoogleComputeMachineImageParamsOutputReference
+	_jsii_.Get(
+		j,
+		"params",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeMachineImage) ParamsInput() *GoogleComputeMachineImageParams {
+	var returns *GoogleComputeMachineImageParams
+	_jsii_.Get(
+		j,
+		"paramsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeMachineImage) Project() *string {
 	var returns *string
 	_jsii_.Get(
@@ -495,7 +519,7 @@ func (j *jsiiProxy_GoogleComputeMachineImage) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_machine_image google_compute_machine_image} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_compute_machine_image google_compute_machine_image} Resource.
 func NewGoogleComputeMachineImage(scope constructs.Construct, id *string, config *GoogleComputeMachineImageConfig) GoogleComputeMachineImage {
 	_init_.Initialize()
 
@@ -513,7 +537,7 @@ func NewGoogleComputeMachineImage(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_machine_image google_compute_machine_image} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_compute_machine_image google_compute_machine_image} Resource.
 func NewGoogleComputeMachineImage_Override(g GoogleComputeMachineImage, scope constructs.Construct, id *string, config *GoogleComputeMachineImageConfig) {
 	_init_.Initialize()
 
@@ -1022,6 +1046,17 @@ func (g *jsiiProxy_GoogleComputeMachineImage) PutMachineImageEncryptionKey(value
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeMachineImage) PutParams(value *GoogleComputeMachineImageParams) {
+	if err := g.validatePutParamsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putParams",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeMachineImage) PutTimeouts(value *GoogleComputeMachineImageTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1069,6 +1104,14 @@ func (g *jsiiProxy_GoogleComputeMachineImage) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeMachineImage) ResetParams() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetParams",
 		nil, // no parameters
 	)
 }

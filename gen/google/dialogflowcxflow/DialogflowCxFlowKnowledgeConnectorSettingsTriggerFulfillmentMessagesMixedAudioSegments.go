@@ -1,0 +1,6 @@
+package dialogflowcxflow
+
+
+type DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesMixedAudioSegments struct {
+}
+

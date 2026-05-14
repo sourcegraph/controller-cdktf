@@ -163,6 +163,30 @@ func (j *jsiiProxy_NetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputRe
 	return nil
 }
 
+func (j *jsiiProxy_NetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference) validateSetExcludeExportRangesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_NetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference) validateSetExcludeImportRangesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_NetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference) validateSetIncludeExportRangesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_NetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference) validateSetIncludeImportRangesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

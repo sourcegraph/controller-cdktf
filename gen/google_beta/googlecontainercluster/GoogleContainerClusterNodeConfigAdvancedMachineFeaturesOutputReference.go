@@ -32,6 +32,9 @@ type GoogleContainerClusterNodeConfigAdvancedMachineFeaturesOutputReference inte
 	Fqn() *string
 	InternalValue() *GoogleContainerClusterNodeConfigAdvancedMachineFeatures
 	SetInternalValue(val *GoogleContainerClusterNodeConfigAdvancedMachineFeatures)
+	PerformanceMonitoringUnit() *string
+	SetPerformanceMonitoringUnit(val *string)
+	PerformanceMonitoringUnitInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -68,6 +71,7 @@ type GoogleContainerClusterNodeConfigAdvancedMachineFeaturesOutputReference inte
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetEnableNestedVirtualization()
+	ResetPerformanceMonitoringUnit()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -148,6 +152,26 @@ func (j *jsiiProxy_GoogleContainerClusterNodeConfigAdvancedMachineFeaturesOutput
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigAdvancedMachineFeaturesOutputReference) PerformanceMonitoringUnit() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"performanceMonitoringUnit",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigAdvancedMachineFeaturesOutputReference) PerformanceMonitoringUnitInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"performanceMonitoringUnitInput",
 		&returns,
 	)
 	return returns
@@ -261,6 +285,17 @@ func (j *jsiiProxy_GoogleContainerClusterNodeConfigAdvancedMachineFeaturesOutput
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigAdvancedMachineFeaturesOutputReference)SetPerformanceMonitoringUnit(val *string) {
+	if err := j.validateSetPerformanceMonitoringUnitParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"performanceMonitoringUnit",
 		val,
 	)
 }
@@ -488,6 +523,14 @@ func (g *jsiiProxy_GoogleContainerClusterNodeConfigAdvancedMachineFeaturesOutput
 	_jsii_.InvokeVoid(
 		g,
 		"resetEnableNestedVirtualization",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigAdvancedMachineFeaturesOutputReference) ResetPerformanceMonitoringUnit() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPerformanceMonitoringUnit",
 		nil, // no parameters
 	)
 }

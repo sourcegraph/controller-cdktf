@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/discoveryenginedatastore/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/discovery_engine_data_store google_discovery_engine_data_store}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_data_store google_discovery_engine_data_store}.
 type DiscoveryEngineDataStore interface {
 	cdktf.TerraformResource
 	AdvancedSiteSearchConfig() DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReference
@@ -60,6 +60,9 @@ type DiscoveryEngineDataStore interface {
 	IndustryVertical() *string
 	SetIndustryVertical(val *string)
 	IndustryVerticalInput() *string
+	KmsKeyName() *string
+	SetKmsKeyName(val *string)
+	KmsKeyNameInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -144,9 +147,11 @@ type DiscoveryEngineDataStore interface {
 	PutDocumentProcessingConfig(value *DiscoveryEngineDataStoreDocumentProcessingConfig)
 	PutTimeouts(value *DiscoveryEngineDataStoreTimeouts)
 	ResetAdvancedSiteSearchConfig()
+	ResetContentConfig()
 	ResetCreateAdvancedSiteSearch()
 	ResetDocumentProcessingConfig()
 	ResetId()
+	ResetKmsKeyName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -432,6 +437,26 @@ func (j *jsiiProxy_DiscoveryEngineDataStore) IndustryVerticalInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DiscoveryEngineDataStore) KmsKeyName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKeyName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DiscoveryEngineDataStore) KmsKeyNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKeyNameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DiscoveryEngineDataStore) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -623,7 +648,7 @@ func (j *jsiiProxy_DiscoveryEngineDataStore) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/discovery_engine_data_store google_discovery_engine_data_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_data_store google_discovery_engine_data_store} Resource.
 func NewDiscoveryEngineDataStore(scope constructs.Construct, id *string, config *DiscoveryEngineDataStoreConfig) DiscoveryEngineDataStore {
 	_init_.Initialize()
 
@@ -641,7 +666,7 @@ func NewDiscoveryEngineDataStore(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/discovery_engine_data_store google_discovery_engine_data_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_data_store google_discovery_engine_data_store} Resource.
 func NewDiscoveryEngineDataStore_Override(d DiscoveryEngineDataStore, scope constructs.Construct, id *string, config *DiscoveryEngineDataStoreConfig) {
 	_init_.Initialize()
 
@@ -752,6 +777,17 @@ func (j *jsiiProxy_DiscoveryEngineDataStore)SetIndustryVertical(val *string) {
 	_jsii_.Set(
 		j,
 		"industryVertical",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DiscoveryEngineDataStore)SetKmsKeyName(val *string) {
+	if err := j.validateSetKmsKeyNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kmsKeyName",
 		val,
 	)
 }
@@ -1224,6 +1260,14 @@ func (d *jsiiProxy_DiscoveryEngineDataStore) ResetAdvancedSiteSearchConfig() {
 	)
 }
 
+func (d *jsiiProxy_DiscoveryEngineDataStore) ResetContentConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetContentConfig",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DiscoveryEngineDataStore) ResetCreateAdvancedSiteSearch() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1244,6 +1288,14 @@ func (d *jsiiProxy_DiscoveryEngineDataStore) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DiscoveryEngineDataStore) ResetKmsKeyName() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetKmsKeyName",
 		nil, // no parameters
 	)
 }

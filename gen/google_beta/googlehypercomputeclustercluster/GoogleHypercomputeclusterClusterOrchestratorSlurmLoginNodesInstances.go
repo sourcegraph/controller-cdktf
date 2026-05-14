@@ -1,0 +1,6 @@
+package googlehypercomputeclustercluster
+
+
+type GoogleHypercomputeclusterClusterOrchestratorSlurmLoginNodesInstances struct {
+}
+

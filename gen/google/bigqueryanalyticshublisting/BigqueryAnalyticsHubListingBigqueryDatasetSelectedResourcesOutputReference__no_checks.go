@@ -60,6 +60,10 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListingBigqueryDatasetSelectedResourcesOu
 	return nil
 }
 
+func (j *jsiiProxy_BigqueryAnalyticsHubListingBigqueryDatasetSelectedResourcesOutputReference) validateSetRoutineParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BigqueryAnalyticsHubListingBigqueryDatasetSelectedResourcesOutputReference) validateSetTableParameters(val *string) error {
 	return nil
 }

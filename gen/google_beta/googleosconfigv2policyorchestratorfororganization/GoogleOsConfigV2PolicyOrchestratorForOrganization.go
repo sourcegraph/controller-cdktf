@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleosconfigv2policyorchestratorfororganization/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_os_config_v2_policy_orchestrator_for_organization google_os_config_v2_policy_orchestrator_for_organization}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_os_config_v2_policy_orchestrator_for_organization google_os_config_v2_policy_orchestrator_for_organization}.
 type GoogleOsConfigV2PolicyOrchestratorForOrganization interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -607,7 +607,7 @@ func (j *jsiiProxy_GoogleOsConfigV2PolicyOrchestratorForOrganization) UpdateTime
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_os_config_v2_policy_orchestrator_for_organization google_os_config_v2_policy_orchestrator_for_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_os_config_v2_policy_orchestrator_for_organization google_os_config_v2_policy_orchestrator_for_organization} Resource.
 func NewGoogleOsConfigV2PolicyOrchestratorForOrganization(scope constructs.Construct, id *string, config *GoogleOsConfigV2PolicyOrchestratorForOrganizationConfig) GoogleOsConfigV2PolicyOrchestratorForOrganization {
 	_init_.Initialize()
 
@@ -625,7 +625,7 @@ func NewGoogleOsConfigV2PolicyOrchestratorForOrganization(scope constructs.Const
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_os_config_v2_policy_orchestrator_for_organization google_os_config_v2_policy_orchestrator_for_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_os_config_v2_policy_orchestrator_for_organization google_os_config_v2_policy_orchestrator_for_organization} Resource.
 func NewGoogleOsConfigV2PolicyOrchestratorForOrganization_Override(g GoogleOsConfigV2PolicyOrchestratorForOrganization, scope constructs.Construct, id *string, config *GoogleOsConfigV2PolicyOrchestratorForOrganizationConfig) {
 	_init_.Initialize()
 

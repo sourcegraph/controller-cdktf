@@ -35,9 +35,9 @@ type GoogleGkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsOutputRef
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	ManualAssign() *string
-	SetManualAssign(val *string)
-	ManualAssignInput() *string
+	ManualAssign() interface{}
+	SetManualAssign(val interface{})
+	ManualAssignInput() interface{}
 	Pool() *string
 	SetPool(val *string)
 	PoolInput() *string
@@ -180,8 +180,8 @@ func (j *jsiiProxy_GoogleGkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddress
 	return returns
 }
 
-func (j *jsiiProxy_GoogleGkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsOutputReference) ManualAssign() *string {
-	var returns *string
+func (j *jsiiProxy_GoogleGkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsOutputReference) ManualAssign() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"manualAssign",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_GoogleGkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddress
 	return returns
 }
 
-func (j *jsiiProxy_GoogleGkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsOutputReference) ManualAssignInput() *string {
-	var returns *string
+func (j *jsiiProxy_GoogleGkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsOutputReference) ManualAssignInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"manualAssignInput",
@@ -323,7 +323,7 @@ func (j *jsiiProxy_GoogleGkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddress
 	)
 }
 
-func (j *jsiiProxy_GoogleGkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsOutputReference)SetManualAssign(val *string) {
+func (j *jsiiProxy_GoogleGkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsOutputReference)SetManualAssign(val interface{}) {
 	if err := j.validateSetManualAssignParameters(val); err != nil {
 		panic(err)
 	}

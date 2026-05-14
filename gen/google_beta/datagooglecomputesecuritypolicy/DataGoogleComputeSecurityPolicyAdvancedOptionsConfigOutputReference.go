@@ -32,6 +32,7 @@ type DataGoogleComputeSecurityPolicyAdvancedOptionsConfigOutputReference interfa
 	JsonCustomConfig() DataGoogleComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfigList
 	JsonParsing() *string
 	LogLevel() *string
+	RequestBodyInspectionSize() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -155,6 +156,16 @@ func (j *jsiiProxy_DataGoogleComputeSecurityPolicyAdvancedOptionsConfigOutputRef
 	_jsii_.Get(
 		j,
 		"logLevel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeSecurityPolicyAdvancedOptionsConfigOutputReference) RequestBodyInspectionSize() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"requestBodyInspectionSize",
 		&returns,
 	)
 	return returns

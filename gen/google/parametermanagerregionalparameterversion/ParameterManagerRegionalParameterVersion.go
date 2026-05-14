@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/parametermanagerregionalparameterversion/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/parameter_manager_regional_parameter_version google_parameter_manager_regional_parameter_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/parameter_manager_regional_parameter_version google_parameter_manager_regional_parameter_version}.
 type ParameterManagerRegionalParameterVersion interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -479,7 +479,7 @@ func (j *jsiiProxy_ParameterManagerRegionalParameterVersion) UpdateTime() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/parameter_manager_regional_parameter_version google_parameter_manager_regional_parameter_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/parameter_manager_regional_parameter_version google_parameter_manager_regional_parameter_version} Resource.
 func NewParameterManagerRegionalParameterVersion(scope constructs.Construct, id *string, config *ParameterManagerRegionalParameterVersionConfig) ParameterManagerRegionalParameterVersion {
 	_init_.Initialize()
 
@@ -497,7 +497,7 @@ func NewParameterManagerRegionalParameterVersion(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/parameter_manager_regional_parameter_version google_parameter_manager_regional_parameter_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/parameter_manager_regional_parameter_version google_parameter_manager_regional_parameter_version} Resource.
 func NewParameterManagerRegionalParameterVersion_Override(p ParameterManagerRegionalParameterVersion, scope constructs.Construct, id *string, config *ParameterManagerRegionalParameterVersionConfig) {
 	_init_.Initialize()
 

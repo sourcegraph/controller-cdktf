@@ -4,7 +4,11 @@ package clouddeploydeliverypipeline
 type ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardPredeploy struct {
 	// Optional. A sequence of skaffold custom actions to invoke during execution of the predeploy job.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/clouddeploy_delivery_pipeline#actions ClouddeployDeliveryPipeline#actions}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_delivery_pipeline#actions ClouddeployDeliveryPipeline#actions}
 	Actions *[]*string `field:"optional" json:"actions" yaml:"actions"`
+	// tasks block.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_delivery_pipeline#tasks ClouddeployDeliveryPipeline#tasks}
+	Tasks interface{} `field:"optional" json:"tasks" yaml:"tasks"`
 }
 

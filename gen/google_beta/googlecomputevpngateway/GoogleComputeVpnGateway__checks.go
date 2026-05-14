@@ -204,6 +204,17 @@ func (g *jsiiProxy_GoogleComputeVpnGateway) validateOverrideLogicalIdParameters(
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeVpnGateway) validatePutParamsParameters(value *GoogleComputeVpnGatewayParams) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeVpnGateway) validatePutTimeoutsParameters(value *GoogleComputeVpnGatewayTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

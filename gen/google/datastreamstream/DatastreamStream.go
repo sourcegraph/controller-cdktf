@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/datastreamstream/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/datastream_stream google_datastream_stream}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/datastream_stream google_datastream_stream}.
 type DatastreamStream interface {
 	cdktf.TerraformResource
 	BackfillAll() DatastreamStreamBackfillAllOutputReference
@@ -84,6 +84,8 @@ type DatastreamStream interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RuleSets() DatastreamStreamRuleSetsList
+	RuleSetsInput() interface{}
 	SourceConfig() DatastreamStreamSourceConfigOutputReference
 	SourceConfigInput() *DatastreamStreamSourceConfig
 	State() *string
@@ -145,6 +147,7 @@ type DatastreamStream interface {
 	PutBackfillAll(value *DatastreamStreamBackfillAll)
 	PutBackfillNone(value *DatastreamStreamBackfillNone)
 	PutDestinationConfig(value *DatastreamStreamDestinationConfig)
+	PutRuleSets(value interface{})
 	PutSourceConfig(value *DatastreamStreamSourceConfig)
 	PutTimeouts(value *DatastreamStreamTimeouts)
 	ResetBackfillAll()
@@ -158,6 +161,7 @@ type DatastreamStream interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetRuleSets()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -547,6 +551,26 @@ func (j *jsiiProxy_DatastreamStream) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DatastreamStream) RuleSets() DatastreamStreamRuleSetsList {
+	var returns DatastreamStreamRuleSetsList
+	_jsii_.Get(
+		j,
+		"ruleSets",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatastreamStream) RuleSetsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ruleSetsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatastreamStream) SourceConfig() DatastreamStreamSourceConfigOutputReference {
 	var returns DatastreamStreamSourceConfigOutputReference
 	_jsii_.Get(
@@ -658,7 +682,7 @@ func (j *jsiiProxy_DatastreamStream) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/datastream_stream google_datastream_stream} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/datastream_stream google_datastream_stream} Resource.
 func NewDatastreamStream(scope constructs.Construct, id *string, config *DatastreamStreamConfig) DatastreamStream {
 	_init_.Initialize()
 
@@ -676,7 +700,7 @@ func NewDatastreamStream(scope constructs.Construct, id *string, config *Datastr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/datastream_stream google_datastream_stream} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/datastream_stream google_datastream_stream} Resource.
 func NewDatastreamStream_Override(d DatastreamStream, scope constructs.Construct, id *string, config *DatastreamStreamConfig) {
 	_init_.Initialize()
 
@@ -1240,6 +1264,17 @@ func (d *jsiiProxy_DatastreamStream) PutDestinationConfig(value *DatastreamStrea
 	)
 }
 
+func (d *jsiiProxy_DatastreamStream) PutRuleSets(value interface{}) {
+	if err := d.validatePutRuleSetsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putRuleSets",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DatastreamStream) PutSourceConfig(value *DatastreamStreamSourceConfig) {
 	if err := d.validatePutSourceConfigParameters(value); err != nil {
 		panic(err)
@@ -1330,6 +1365,14 @@ func (d *jsiiProxy_DatastreamStream) ResetProject() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatastreamStream) ResetRuleSets() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRuleSets",
 		nil, // no parameters
 	)
 }

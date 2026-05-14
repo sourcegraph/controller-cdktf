@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlebackupdrbackupplan/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_backup_dr_backup_plan google_backup_dr_backup_plan}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_backup_dr_backup_plan google_backup_dr_backup_plan}.
 type GoogleBackupDrBackupPlan interface {
 	cdktf.TerraformResource
 	BackupPlanId() *string
@@ -41,6 +41,8 @@ type GoogleBackupDrBackupPlan interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	DiskBackupPlanProperties() GoogleBackupDrBackupPlanDiskBackupPlanPropertiesOutputReference
+	DiskBackupPlanPropertiesInput() *GoogleBackupDrBackupPlanDiskBackupPlanProperties
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -59,6 +61,12 @@ type GoogleBackupDrBackupPlan interface {
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
+	LogRetentionDays() *float64
+	SetLogRetentionDays(val *float64)
+	LogRetentionDaysInput() *float64
+	MaxCustomOnDemandRetentionDays() *float64
+	SetMaxCustomOnDemandRetentionDays(val *float64)
+	MaxCustomOnDemandRetentionDaysInput() *float64
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
@@ -78,6 +86,7 @@ type GoogleBackupDrBackupPlan interface {
 	ResourceType() *string
 	SetResourceType(val *string)
 	ResourceTypeInput() *string
+	SupportedResourceTypes() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -131,9 +140,14 @@ type GoogleBackupDrBackupPlan interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutBackupRules(value interface{})
+	PutDiskBackupPlanProperties(value *GoogleBackupDrBackupPlanDiskBackupPlanProperties)
 	PutTimeouts(value *GoogleBackupDrBackupPlanTimeouts)
+	ResetBackupRules()
 	ResetDescription()
+	ResetDiskBackupPlanProperties()
 	ResetId()
+	ResetLogRetentionDays()
+	ResetMaxCustomOnDemandRetentionDays()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -307,6 +321,26 @@ func (j *jsiiProxy_GoogleBackupDrBackupPlan) DescriptionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBackupDrBackupPlan) DiskBackupPlanProperties() GoogleBackupDrBackupPlanDiskBackupPlanPropertiesOutputReference {
+	var returns GoogleBackupDrBackupPlanDiskBackupPlanPropertiesOutputReference
+	_jsii_.Get(
+		j,
+		"diskBackupPlanProperties",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBackupDrBackupPlan) DiskBackupPlanPropertiesInput() *GoogleBackupDrBackupPlanDiskBackupPlanProperties {
+	var returns *GoogleBackupDrBackupPlanDiskBackupPlanProperties
+	_jsii_.Get(
+		j,
+		"diskBackupPlanPropertiesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBackupDrBackupPlan) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -382,6 +416,46 @@ func (j *jsiiProxy_GoogleBackupDrBackupPlan) LocationInput() *string {
 	_jsii_.Get(
 		j,
 		"locationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBackupDrBackupPlan) LogRetentionDays() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"logRetentionDays",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBackupDrBackupPlan) LogRetentionDaysInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"logRetentionDaysInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBackupDrBackupPlan) MaxCustomOnDemandRetentionDays() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxCustomOnDemandRetentionDays",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBackupDrBackupPlan) MaxCustomOnDemandRetentionDaysInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxCustomOnDemandRetentionDaysInput",
 		&returns,
 	)
 	return returns
@@ -477,6 +551,16 @@ func (j *jsiiProxy_GoogleBackupDrBackupPlan) ResourceTypeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBackupDrBackupPlan) SupportedResourceTypes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"supportedResourceTypes",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBackupDrBackupPlan) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -538,7 +622,7 @@ func (j *jsiiProxy_GoogleBackupDrBackupPlan) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_backup_dr_backup_plan google_backup_dr_backup_plan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_backup_dr_backup_plan google_backup_dr_backup_plan} Resource.
 func NewGoogleBackupDrBackupPlan(scope constructs.Construct, id *string, config *GoogleBackupDrBackupPlanConfig) GoogleBackupDrBackupPlan {
 	_init_.Initialize()
 
@@ -556,7 +640,7 @@ func NewGoogleBackupDrBackupPlan(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_backup_dr_backup_plan google_backup_dr_backup_plan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_backup_dr_backup_plan google_backup_dr_backup_plan} Resource.
 func NewGoogleBackupDrBackupPlan_Override(g GoogleBackupDrBackupPlan, scope constructs.Construct, id *string, config *GoogleBackupDrBackupPlanConfig) {
 	_init_.Initialize()
 
@@ -667,6 +751,28 @@ func (j *jsiiProxy_GoogleBackupDrBackupPlan)SetLocation(val *string) {
 	_jsii_.Set(
 		j,
 		"location",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBackupDrBackupPlan)SetLogRetentionDays(val *float64) {
+	if err := j.validateSetLogRetentionDaysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"logRetentionDays",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBackupDrBackupPlan)SetMaxCustomOnDemandRetentionDays(val *float64) {
+	if err := j.validateSetMaxCustomOnDemandRetentionDaysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxCustomOnDemandRetentionDays",
 		val,
 	)
 }
@@ -1076,6 +1182,17 @@ func (g *jsiiProxy_GoogleBackupDrBackupPlan) PutBackupRules(value interface{}) {
 	)
 }
 
+func (g *jsiiProxy_GoogleBackupDrBackupPlan) PutDiskBackupPlanProperties(value *GoogleBackupDrBackupPlanDiskBackupPlanProperties) {
+	if err := g.validatePutDiskBackupPlanPropertiesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putDiskBackupPlanProperties",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleBackupDrBackupPlan) PutTimeouts(value *GoogleBackupDrBackupPlanTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1087,6 +1204,14 @@ func (g *jsiiProxy_GoogleBackupDrBackupPlan) PutTimeouts(value *GoogleBackupDrBa
 	)
 }
 
+func (g *jsiiProxy_GoogleBackupDrBackupPlan) ResetBackupRules() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetBackupRules",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleBackupDrBackupPlan) ResetDescription() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1095,10 +1220,34 @@ func (g *jsiiProxy_GoogleBackupDrBackupPlan) ResetDescription() {
 	)
 }
 
+func (g *jsiiProxy_GoogleBackupDrBackupPlan) ResetDiskBackupPlanProperties() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDiskBackupPlanProperties",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleBackupDrBackupPlan) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBackupDrBackupPlan) ResetLogRetentionDays() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLogRetentionDays",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBackupDrBackupPlan) ResetMaxCustomOnDemandRetentionDays() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMaxCustomOnDemandRetentionDays",
 		nil, // no parameters
 	)
 }

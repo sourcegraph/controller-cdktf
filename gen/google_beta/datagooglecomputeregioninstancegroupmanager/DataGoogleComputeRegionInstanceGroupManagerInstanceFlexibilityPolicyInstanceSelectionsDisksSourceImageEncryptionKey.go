@@ -1,0 +1,6 @@
+package datagooglecomputeregioninstancegroupmanager
+
+
+type DataGoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyInstanceSelectionsDisksSourceImageEncryptionKey struct {
+}
+

@@ -10,6 +10,12 @@ import (
 
 type DataprocClusterClusterConfigMasterConfigDiskConfigOutputReference interface {
 	cdktf.ComplexObject
+	BootDiskProvisionedIops() *float64
+	SetBootDiskProvisionedIops(val *float64)
+	BootDiskProvisionedIopsInput() *float64
+	BootDiskProvisionedThroughput() *float64
+	SetBootDiskProvisionedThroughput(val *float64)
+	BootDiskProvisionedThroughputInput() *float64
 	BootDiskSizeGb() *float64
 	SetBootDiskSizeGb(val *float64)
 	BootDiskSizeGbInput() *float64
@@ -73,6 +79,8 @@ type DataprocClusterClusterConfigMasterConfigDiskConfigOutputReference interface
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetBootDiskProvisionedIops()
+	ResetBootDiskProvisionedThroughput()
 	ResetBootDiskSizeGb()
 	ResetBootDiskType()
 	ResetLocalSsdInterface()
@@ -90,6 +98,46 @@ type DataprocClusterClusterConfigMasterConfigDiskConfigOutputReference interface
 // The jsii proxy struct for DataprocClusterClusterConfigMasterConfigDiskConfigOutputReference
 type jsiiProxy_DataprocClusterClusterConfigMasterConfigDiskConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataprocClusterClusterConfigMasterConfigDiskConfigOutputReference) BootDiskProvisionedIops() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"bootDiskProvisionedIops",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocClusterClusterConfigMasterConfigDiskConfigOutputReference) BootDiskProvisionedIopsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"bootDiskProvisionedIopsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocClusterClusterConfigMasterConfigDiskConfigOutputReference) BootDiskProvisionedThroughput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"bootDiskProvisionedThroughput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocClusterClusterConfigMasterConfigDiskConfigOutputReference) BootDiskProvisionedThroughputInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"bootDiskProvisionedThroughputInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataprocClusterClusterConfigMasterConfigDiskConfigOutputReference) BootDiskSizeGb() *float64 {
@@ -267,6 +315,28 @@ func NewDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference_Overri
 		"@cdktf/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigDiskConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
+	)
+}
+
+func (j *jsiiProxy_DataprocClusterClusterConfigMasterConfigDiskConfigOutputReference)SetBootDiskProvisionedIops(val *float64) {
+	if err := j.validateSetBootDiskProvisionedIopsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"bootDiskProvisionedIops",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataprocClusterClusterConfigMasterConfigDiskConfigOutputReference)SetBootDiskProvisionedThroughput(val *float64) {
+	if err := j.validateSetBootDiskProvisionedThroughputParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"bootDiskProvisionedThroughput",
+		val,
 	)
 }
 
@@ -553,6 +623,22 @@ func (d *jsiiProxy_DataprocClusterClusterConfigMasterConfigDiskConfigOutputRefer
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DataprocClusterClusterConfigMasterConfigDiskConfigOutputReference) ResetBootDiskProvisionedIops() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetBootDiskProvisionedIops",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataprocClusterClusterConfigMasterConfigDiskConfigOutputReference) ResetBootDiskProvisionedThroughput() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetBootDiskProvisionedThroughput",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DataprocClusterClusterConfigMasterConfigDiskConfigOutputReference) ResetBootDiskSizeGb() {

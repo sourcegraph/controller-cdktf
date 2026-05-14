@@ -72,6 +72,10 @@ func (g *jsiiProxy_GooglePrivatecaCaPool) validateOverrideLogicalIdParameters(ne
 	return nil
 }
 
+func (g *jsiiProxy_GooglePrivatecaCaPool) validatePutEncryptionSpecParameters(value *GooglePrivatecaCaPoolEncryptionSpec) error {
+	return nil
+}
+
 func (g *jsiiProxy_GooglePrivatecaCaPool) validatePutIssuancePolicyParameters(value *GooglePrivatecaCaPoolIssuancePolicy) error {
 	return nil
 }

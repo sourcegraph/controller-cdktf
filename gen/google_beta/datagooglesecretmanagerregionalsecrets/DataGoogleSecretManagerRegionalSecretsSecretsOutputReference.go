@@ -28,6 +28,7 @@ type DataGoogleSecretManagerRegionalSecretsSecretsOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	CustomerManagedEncryption() DataGoogleSecretManagerRegionalSecretsSecretsCustomerManagedEncryptionList
+	DeletionProtection() cdktf.IResolvable
 	EffectiveAnnotations() cdktf.StringMap
 	EffectiveLabels() cdktf.StringMap
 	ExpireTime() *string
@@ -41,6 +42,7 @@ type DataGoogleSecretManagerRegionalSecretsSecretsOutputReference interface {
 	Project() *string
 	Rotation() DataGoogleSecretManagerRegionalSecretsSecretsRotationList
 	SecretId() *string
+	Tags() cdktf.StringMap
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -153,6 +155,16 @@ func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsOutputReference)
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsOutputReference) DeletionProtection() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"deletionProtection",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsOutputReference) EffectiveAnnotations() cdktf.StringMap {
 	var returns cdktf.StringMap
 	_jsii_.Get(
@@ -258,6 +270,16 @@ func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsOutputReference)
 	_jsii_.Get(
 		j,
 		"secretId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsOutputReference) Tags() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"tags",
 		&returns,
 	)
 	return returns

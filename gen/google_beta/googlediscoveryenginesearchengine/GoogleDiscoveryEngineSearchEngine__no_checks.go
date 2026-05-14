@@ -76,6 +76,10 @@ func (g *jsiiProxy_GoogleDiscoveryEngineSearchEngine) validatePutCommonConfigPar
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDiscoveryEngineSearchEngine) validatePutKnowledgeGraphConfigParameters(value *GoogleDiscoveryEngineSearchEngineKnowledgeGraphConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDiscoveryEngineSearchEngine) validatePutSearchEngineConfigParameters(value *GoogleDiscoveryEngineSearchEngineSearchEngineConfig) error {
 	return nil
 }
@@ -100,6 +104,10 @@ func validateGoogleDiscoveryEngineSearchEngine_IsTerraformResourceParameters(x i
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDiscoveryEngineSearchEngine) validateSetAppTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDiscoveryEngineSearchEngine) validateSetCollectionIdParameters(val *string) error {
 	return nil
 }
@@ -116,6 +124,10 @@ func (j *jsiiProxy_GoogleDiscoveryEngineSearchEngine) validateSetDataStoreIdsPar
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDiscoveryEngineSearchEngine) validateSetDisableAnalyticsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDiscoveryEngineSearchEngine) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }
@@ -124,11 +136,19 @@ func (j *jsiiProxy_GoogleDiscoveryEngineSearchEngine) validateSetEngineIdParamet
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDiscoveryEngineSearchEngine) validateSetFeaturesParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDiscoveryEngineSearchEngine) validateSetIdParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_GoogleDiscoveryEngineSearchEngine) validateSetIndustryVerticalParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDiscoveryEngineSearchEngine) validateSetKmsKeyNameParameters(val *string) error {
 	return nil
 }
 

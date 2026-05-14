@@ -68,6 +68,10 @@ func (j *jsiiProxy_ComputeReservationSpecificReservationOutputReference) validat
 	return nil
 }
 
+func (j *jsiiProxy_ComputeReservationSpecificReservationOutputReference) validateSetSourceInstanceTemplateParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeReservationSpecificReservationOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

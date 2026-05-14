@@ -45,6 +45,8 @@ type GkeBackupBackupPlanBackupConfigOutputReference interface {
 	PermissiveModeInput() interface{}
 	SelectedApplications() GkeBackupBackupPlanBackupConfigSelectedApplicationsOutputReference
 	SelectedApplicationsInput() *GkeBackupBackupPlanBackupConfigSelectedApplications
+	SelectedNamespaceLabels() GkeBackupBackupPlanBackupConfigSelectedNamespaceLabelsOutputReference
+	SelectedNamespaceLabelsInput() *GkeBackupBackupPlanBackupConfigSelectedNamespaceLabels
 	SelectedNamespaces() GkeBackupBackupPlanBackupConfigSelectedNamespacesOutputReference
 	SelectedNamespacesInput() *GkeBackupBackupPlanBackupConfigSelectedNamespaces
 	// Experimental.
@@ -81,6 +83,7 @@ type GkeBackupBackupPlanBackupConfigOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutEncryptionKey(value *GkeBackupBackupPlanBackupConfigEncryptionKey)
 	PutSelectedApplications(value *GkeBackupBackupPlanBackupConfigSelectedApplications)
+	PutSelectedNamespaceLabels(value *GkeBackupBackupPlanBackupConfigSelectedNamespaceLabels)
 	PutSelectedNamespaces(value *GkeBackupBackupPlanBackupConfigSelectedNamespaces)
 	ResetAllNamespaces()
 	ResetEncryptionKey()
@@ -88,6 +91,7 @@ type GkeBackupBackupPlanBackupConfigOutputReference interface {
 	ResetIncludeVolumeData()
 	ResetPermissiveMode()
 	ResetSelectedApplications()
+	ResetSelectedNamespaceLabels()
 	ResetSelectedNamespaces()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -269,6 +273,26 @@ func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) SelectedAppli
 	_jsii_.Get(
 		j,
 		"selectedApplicationsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) SelectedNamespaceLabels() GkeBackupBackupPlanBackupConfigSelectedNamespaceLabelsOutputReference {
+	var returns GkeBackupBackupPlanBackupConfigSelectedNamespaceLabelsOutputReference
+	_jsii_.Get(
+		j,
+		"selectedNamespaceLabels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) SelectedNamespaceLabelsInput() *GkeBackupBackupPlanBackupConfigSelectedNamespaceLabels {
+	var returns *GkeBackupBackupPlanBackupConfigSelectedNamespaceLabels
+	_jsii_.Get(
+		j,
+		"selectedNamespaceLabelsInput",
 		&returns,
 	)
 	return returns
@@ -649,6 +673,17 @@ func (g *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) PutSelectedAp
 	)
 }
 
+func (g *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) PutSelectedNamespaceLabels(value *GkeBackupBackupPlanBackupConfigSelectedNamespaceLabels) {
+	if err := g.validatePutSelectedNamespaceLabelsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSelectedNamespaceLabels",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) PutSelectedNamespaces(value *GkeBackupBackupPlanBackupConfigSelectedNamespaces) {
 	if err := g.validatePutSelectedNamespacesParameters(value); err != nil {
 		panic(err)
@@ -704,6 +739,14 @@ func (g *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) ResetSelected
 	_jsii_.InvokeVoid(
 		g,
 		"resetSelectedApplications",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) ResetSelectedNamespaceLabels() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSelectedNamespaceLabels",
 		nil, // no parameters
 	)
 }

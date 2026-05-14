@@ -39,7 +39,9 @@ type DataGoogleCloudRunV2ServiceTemplateContainersOutputReference interface {
 	LivenessProbe() DataGoogleCloudRunV2ServiceTemplateContainersLivenessProbeList
 	Name() *string
 	Ports() DataGoogleCloudRunV2ServiceTemplateContainersPortsList
+	ReadinessProbe() DataGoogleCloudRunV2ServiceTemplateContainersReadinessProbeList
 	Resources() DataGoogleCloudRunV2ServiceTemplateContainersResourcesList
+	SourceCode() DataGoogleCloudRunV2ServiceTemplateContainersSourceCodeList
 	StartupProbe() DataGoogleCloudRunV2ServiceTemplateContainersStartupProbeList
 	// Experimental.
 	TerraformAttribute() *string
@@ -240,11 +242,31 @@ func (j *jsiiProxy_DataGoogleCloudRunV2ServiceTemplateContainersOutputReference)
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleCloudRunV2ServiceTemplateContainersOutputReference) ReadinessProbe() DataGoogleCloudRunV2ServiceTemplateContainersReadinessProbeList {
+	var returns DataGoogleCloudRunV2ServiceTemplateContainersReadinessProbeList
+	_jsii_.Get(
+		j,
+		"readinessProbe",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleCloudRunV2ServiceTemplateContainersOutputReference) Resources() DataGoogleCloudRunV2ServiceTemplateContainersResourcesList {
 	var returns DataGoogleCloudRunV2ServiceTemplateContainersResourcesList
 	_jsii_.Get(
 		j,
 		"resources",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleCloudRunV2ServiceTemplateContainersOutputReference) SourceCode() DataGoogleCloudRunV2ServiceTemplateContainersSourceCodeList {
+	var returns DataGoogleCloudRunV2ServiceTemplateContainersSourceCodeList
+	_jsii_.Get(
+		j,
+		"sourceCode",
 		&returns,
 	)
 	return returns

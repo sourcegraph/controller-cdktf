@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagoogleserviceaccounts/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/service_accounts google_service_accounts}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/service_accounts google_service_accounts}.
 type DataGoogleServiceAccounts interface {
 	cdktf.TerraformDataSource
 	Accounts() DataGoogleServiceAccountsAccountsList
@@ -345,7 +345,7 @@ func (j *jsiiProxy_DataGoogleServiceAccounts) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/service_accounts google_service_accounts} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/service_accounts google_service_accounts} Data Source.
 func NewDataGoogleServiceAccounts(scope constructs.Construct, id *string, config *DataGoogleServiceAccountsConfig) DataGoogleServiceAccounts {
 	_init_.Initialize()
 
@@ -363,7 +363,7 @@ func NewDataGoogleServiceAccounts(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/service_accounts google_service_accounts} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/service_accounts google_service_accounts} Data Source.
 func NewDataGoogleServiceAccounts_Override(d DataGoogleServiceAccounts, scope constructs.Construct, id *string, config *DataGoogleServiceAccountsConfig) {
 	_init_.Initialize()
 

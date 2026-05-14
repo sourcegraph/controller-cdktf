@@ -90,6 +90,17 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherPathRuleRouteActionOutputReference) v
 	return nil
 }
 
+func (c *jsiiProxy_ComputeUrlMapPathMatcherPathRuleRouteActionOutputReference) validatePutCachePolicyParameters(value *ComputeUrlMapPathMatcherPathRuleRouteActionCachePolicy) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (c *jsiiProxy_ComputeUrlMapPathMatcherPathRuleRouteActionOutputReference) validatePutCorsPolicyParameters(value *ComputeUrlMapPathMatcherPathRuleRouteActionCorsPolicy) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

@@ -72,6 +72,10 @@ func (g *jsiiProxy_GoogleBackupDrBackupVault) validateOverrideLogicalIdParameter
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBackupDrBackupVault) validatePutEncryptionConfigParameters(value *GoogleBackupDrBackupVaultEncryptionConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBackupDrBackupVault) validatePutTimeoutsParameters(value *GoogleBackupDrBackupVaultTimeouts) error {
 	return nil
 }
@@ -105,6 +109,10 @@ func (j *jsiiProxy_GoogleBackupDrBackupVault) validateSetAnnotationsParameters(v
 }
 
 func (j *jsiiProxy_GoogleBackupDrBackupVault) validateSetBackupMinimumEnforcedRetentionDurationParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleBackupDrBackupVault) validateSetBackupRetentionInheritanceParameters(val *string) error {
 	return nil
 }
 

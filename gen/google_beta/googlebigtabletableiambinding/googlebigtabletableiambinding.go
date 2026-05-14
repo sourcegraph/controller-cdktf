@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlebigtabletableiambinding/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_bigtable_table_iam_binding google_bigtable_table_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_bigtable_table_iam_binding google_bigtable_table_iam_binding}.
 type GoogleBigtableTableIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -42,9 +42,9 @@ type GoogleBigtableTableIamBinding interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	Instance() *string
-	SetInstance(val *string)
-	InstanceInput() *string
+	InstanceName() *string
+	SetInstanceName(val *string)
+	InstanceNameInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -277,21 +277,21 @@ func (j *jsiiProxy_GoogleBigtableTableIamBinding) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigtableTableIamBinding) Instance() *string {
+func (j *jsiiProxy_GoogleBigtableTableIamBinding) InstanceName() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"instance",
+		"instanceName",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigtableTableIamBinding) InstanceInput() *string {
+func (j *jsiiProxy_GoogleBigtableTableIamBinding) InstanceNameInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"instanceInput",
+		"instanceNameInput",
 		&returns,
 	)
 	return returns
@@ -458,7 +458,7 @@ func (j *jsiiProxy_GoogleBigtableTableIamBinding) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_bigtable_table_iam_binding google_bigtable_table_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_bigtable_table_iam_binding google_bigtable_table_iam_binding} Resource.
 func NewGoogleBigtableTableIamBinding(scope constructs.Construct, id *string, config *GoogleBigtableTableIamBindingConfig) GoogleBigtableTableIamBinding {
 	_init_.Initialize()
 
@@ -476,7 +476,7 @@ func NewGoogleBigtableTableIamBinding(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_bigtable_table_iam_binding google_bigtable_table_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_bigtable_table_iam_binding google_bigtable_table_iam_binding} Resource.
 func NewGoogleBigtableTableIamBinding_Override(g GoogleBigtableTableIamBinding, scope constructs.Construct, id *string, config *GoogleBigtableTableIamBindingConfig) {
 	_init_.Initialize()
 
@@ -536,13 +536,13 @@ func (j *jsiiProxy_GoogleBigtableTableIamBinding)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBigtableTableIamBinding)SetInstance(val *string) {
-	if err := j.validateSetInstanceParameters(val); err != nil {
+func (j *jsiiProxy_GoogleBigtableTableIamBinding)SetInstanceName(val *string) {
+	if err := j.validateSetInstanceNameParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"instance",
+		"instanceName",
 		val,
 	)
 }

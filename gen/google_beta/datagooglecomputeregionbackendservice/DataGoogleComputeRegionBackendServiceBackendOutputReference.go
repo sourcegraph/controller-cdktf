@@ -38,6 +38,9 @@ type DataGoogleComputeRegionBackendServiceBackendOutputReference interface {
 	MaxConnections() *float64
 	MaxConnectionsPerEndpoint() *float64
 	MaxConnectionsPerInstance() *float64
+	MaxInFlightRequests() *float64
+	MaxInFlightRequestsPerEndpoint() *float64
+	MaxInFlightRequestsPerInstance() *float64
 	MaxRate() *float64
 	MaxRatePerEndpoint() *float64
 	MaxRatePerInstance() *float64
@@ -50,6 +53,7 @@ type DataGoogleComputeRegionBackendServiceBackendOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TrafficDuration() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -229,6 +233,36 @@ func (j *jsiiProxy_DataGoogleComputeRegionBackendServiceBackendOutputReference) 
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeRegionBackendServiceBackendOutputReference) MaxInFlightRequests() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxInFlightRequests",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeRegionBackendServiceBackendOutputReference) MaxInFlightRequestsPerEndpoint() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxInFlightRequestsPerEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeRegionBackendServiceBackendOutputReference) MaxInFlightRequestsPerInstance() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxInFlightRequestsPerInstance",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeRegionBackendServiceBackendOutputReference) MaxRate() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -284,6 +318,16 @@ func (j *jsiiProxy_DataGoogleComputeRegionBackendServiceBackendOutputReference) 
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeRegionBackendServiceBackendOutputReference) TrafficDuration() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"trafficDuration",
 		&returns,
 	)
 	return returns

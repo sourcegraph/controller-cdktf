@@ -52,6 +52,10 @@ func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesToOperationsOutputRe
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesToOperationsOutputReference) validatePutMcpParameters(value *GoogleNetworkSecurityAuthzPolicyHttpRulesToOperationsMcp) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesToOperationsOutputReference) validatePutPathsParameters(value interface{}) error {
 	return nil
 }

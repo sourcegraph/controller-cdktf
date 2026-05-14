@@ -72,6 +72,14 @@ func (c *jsiiProxy_ComputeReservation) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
+func (c *jsiiProxy_ComputeReservation) validatePutDeleteAfterDurationParameters(value *ComputeReservationDeleteAfterDuration) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeReservation) validatePutReservationSharingPolicyParameters(value *ComputeReservationReservationSharingPolicy) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeReservation) validatePutShareSettingsParameters(value *ComputeReservationShareSettings) error {
 	return nil
 }
@@ -108,11 +116,11 @@ func (j *jsiiProxy_ComputeReservation) validateSetCountParameters(val interface{
 	return nil
 }
 
-func (j *jsiiProxy_ComputeReservation) validateSetDescriptionParameters(val *string) error {
+func (j *jsiiProxy_ComputeReservation) validateSetDeleteAtTimeParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_ComputeReservation) validateSetIdParameters(val *string) error {
+func (j *jsiiProxy_ComputeReservation) validateSetDescriptionParameters(val *string) error {
 	return nil
 }
 

@@ -25,6 +25,8 @@ type ComputeUrlMapPathMatcherRouteRulesOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomErrorResponsePolicy() ComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicyOutputReference
+	CustomErrorResponsePolicyInput() *ComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicy
 	// Experimental.
 	Fqn() *string
 	HeaderAction() ComputeUrlMapPathMatcherRouteRulesHeaderActionOutputReference
@@ -75,10 +77,12 @@ type ComputeUrlMapPathMatcherRouteRulesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutCustomErrorResponsePolicy(value *ComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicy)
 	PutHeaderAction(value *ComputeUrlMapPathMatcherRouteRulesHeaderAction)
 	PutMatchRules(value interface{})
 	PutRouteAction(value *ComputeUrlMapPathMatcherRouteRulesRouteAction)
 	PutUrlRedirect(value *ComputeUrlMapPathMatcherRouteRulesUrlRedirect)
+	ResetCustomErrorResponsePolicy()
 	ResetHeaderAction()
 	ResetMatchRules()
 	ResetRouteAction()
@@ -124,6 +128,26 @@ func (j *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesOutputReference) CreationSt
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesOutputReference) CustomErrorResponsePolicy() ComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicyOutputReference {
+	var returns ComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicyOutputReference
+	_jsii_.Get(
+		j,
+		"customErrorResponsePolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesOutputReference) CustomErrorResponsePolicyInput() *ComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicy {
+	var returns *ComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicy
+	_jsii_.Get(
+		j,
+		"customErrorResponsePolicyInput",
 		&returns,
 	)
 	return returns
@@ -580,6 +604,17 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesOutputReference) Interpolat
 	return returns
 }
 
+func (c *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesOutputReference) PutCustomErrorResponsePolicy(value *ComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicy) {
+	if err := c.validatePutCustomErrorResponsePolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putCustomErrorResponsePolicy",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesOutputReference) PutHeaderAction(value *ComputeUrlMapPathMatcherRouteRulesHeaderAction) {
 	if err := c.validatePutHeaderActionParameters(value); err != nil {
 		panic(err)
@@ -621,6 +656,14 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesOutputReference) PutUrlRedi
 		c,
 		"putUrlRedirect",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesOutputReference) ResetCustomErrorResponsePolicy() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCustomErrorResponsePolicy",
+		nil, // no parameters
 	)
 }
 

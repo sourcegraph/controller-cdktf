@@ -116,6 +116,10 @@ func (j *jsiiProxy_GoogleComputePublicAdvertisedPrefix) validateSetIpCidrRangePa
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputePublicAdvertisedPrefix) validateSetIpv6AccessTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputePublicAdvertisedPrefix) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

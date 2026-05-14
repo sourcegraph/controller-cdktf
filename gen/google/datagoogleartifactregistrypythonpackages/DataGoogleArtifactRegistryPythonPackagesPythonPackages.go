@@ -1,0 +1,6 @@
+package datagoogleartifactregistrypythonpackages
+
+
+type DataGoogleArtifactRegistryPythonPackagesPythonPackages struct {
+}
+

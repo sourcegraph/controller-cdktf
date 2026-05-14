@@ -29,7 +29,7 @@ type GoogleSccFolderNotificationConfigStreamingConfig struct {
 	// [Filtering notifications](https://cloud.google.com/security-command-center/docs/how-to-api-filter-notifications)
 	// for information on how to write a filter.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_scc_folder_notification_config#filter GoogleSccFolderNotificationConfig#filter}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_scc_folder_notification_config#filter GoogleSccFolderNotificationConfig#filter}
 	Filter *string `field:"required" json:"filter" yaml:"filter"`
 }
 

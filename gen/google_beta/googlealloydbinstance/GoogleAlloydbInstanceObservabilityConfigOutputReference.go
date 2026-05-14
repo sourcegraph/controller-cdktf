@@ -58,6 +58,9 @@ type GoogleAlloydbInstanceObservabilityConfigOutputReference interface {
 	TrackActiveQueries() interface{}
 	SetTrackActiveQueries(val interface{})
 	TrackActiveQueriesInput() interface{}
+	TrackClientAddress() interface{}
+	SetTrackClientAddress(val interface{})
+	TrackClientAddressInput() interface{}
 	TrackWaitEvents() interface{}
 	SetTrackWaitEvents(val interface{})
 	TrackWaitEventsInput() interface{}
@@ -95,6 +98,7 @@ type GoogleAlloydbInstanceObservabilityConfigOutputReference interface {
 	ResetQueryPlansPerMinute()
 	ResetRecordApplicationTags()
 	ResetTrackActiveQueries()
+	ResetTrackClientAddress()
 	ResetTrackWaitEvents()
 	ResetTrackWaitEventTypes()
 	// Produce the Token's value at resolution time.
@@ -322,6 +326,26 @@ func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) Trac
 	return returns
 }
 
+func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) TrackClientAddress() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"trackClientAddress",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) TrackClientAddressInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"trackClientAddressInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) TrackWaitEvents() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -518,6 +542,17 @@ func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference)SetTr
 	_jsii_.Set(
 		j,
 		"trackActiveQueries",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference)SetTrackClientAddress(val interface{}) {
+	if err := j.validateSetTrackClientAddressParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"trackClientAddress",
 		val,
 	)
 }
@@ -782,6 +817,14 @@ func (g *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) Rese
 	_jsii_.InvokeVoid(
 		g,
 		"resetTrackActiveQueries",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) ResetTrackClientAddress() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTrackClientAddress",
 		nil, // no parameters
 	)
 }

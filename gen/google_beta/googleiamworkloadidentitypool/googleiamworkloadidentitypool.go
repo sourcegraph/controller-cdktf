@@ -9,9 +9,11 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleiamworkloadidentitypool/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_iam_workload_identity_pool google_iam_workload_identity_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_iam_workload_identity_pool google_iam_workload_identity_pool}.
 type GoogleIamWorkloadIdentityPool interface {
 	cdktf.TerraformResource
+	AttestationRules() GoogleIamWorkloadIdentityPoolAttestationRulesList
+	AttestationRulesInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -48,10 +50,17 @@ type GoogleIamWorkloadIdentityPool interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	InlineCertificateIssuanceConfig() GoogleIamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference
+	InlineCertificateIssuanceConfigInput() *GoogleIamWorkloadIdentityPoolInlineCertificateIssuanceConfig
+	InlineTrustConfig() GoogleIamWorkloadIdentityPoolInlineTrustConfigOutputReference
+	InlineTrustConfigInput() *GoogleIamWorkloadIdentityPoolInlineTrustConfig
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Mode() *string
+	SetMode(val *string)
+	ModeInput() *string
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
@@ -123,11 +132,18 @@ type GoogleIamWorkloadIdentityPool interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAttestationRules(value interface{})
+	PutInlineCertificateIssuanceConfig(value *GoogleIamWorkloadIdentityPoolInlineCertificateIssuanceConfig)
+	PutInlineTrustConfig(value *GoogleIamWorkloadIdentityPoolInlineTrustConfig)
 	PutTimeouts(value *GoogleIamWorkloadIdentityPoolTimeouts)
+	ResetAttestationRules()
 	ResetDescription()
 	ResetDisabled()
 	ResetDisplayName()
 	ResetId()
+	ResetInlineCertificateIssuanceConfig()
+	ResetInlineTrustConfig()
+	ResetMode()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -149,6 +165,26 @@ type GoogleIamWorkloadIdentityPool interface {
 // The jsii proxy struct for GoogleIamWorkloadIdentityPool
 type jsiiProxy_GoogleIamWorkloadIdentityPool struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) AttestationRules() GoogleIamWorkloadIdentityPoolAttestationRulesList {
+	var returns GoogleIamWorkloadIdentityPoolAttestationRulesList
+	_jsii_.Get(
+		j,
+		"attestationRules",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) AttestationRulesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"attestationRulesInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) CdktfStack() cdktf.TerraformStack {
@@ -311,11 +347,71 @@ func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) InlineCertificateIssuanceConfig() GoogleIamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference {
+	var returns GoogleIamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference
+	_jsii_.Get(
+		j,
+		"inlineCertificateIssuanceConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) InlineCertificateIssuanceConfigInput() *GoogleIamWorkloadIdentityPoolInlineCertificateIssuanceConfig {
+	var returns *GoogleIamWorkloadIdentityPoolInlineCertificateIssuanceConfig
+	_jsii_.Get(
+		j,
+		"inlineCertificateIssuanceConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) InlineTrustConfig() GoogleIamWorkloadIdentityPoolInlineTrustConfigOutputReference {
+	var returns GoogleIamWorkloadIdentityPoolInlineTrustConfigOutputReference
+	_jsii_.Get(
+		j,
+		"inlineTrustConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) InlineTrustConfigInput() *GoogleIamWorkloadIdentityPoolInlineTrustConfig {
+	var returns *GoogleIamWorkloadIdentityPoolInlineTrustConfig
+	_jsii_.Get(
+		j,
+		"inlineTrustConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) Mode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) ModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modeInput",
 		&returns,
 	)
 	return returns
@@ -472,7 +568,7 @@ func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) WorkloadIdentityPoolIdInput() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_iam_workload_identity_pool google_iam_workload_identity_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_iam_workload_identity_pool google_iam_workload_identity_pool} Resource.
 func NewGoogleIamWorkloadIdentityPool(scope constructs.Construct, id *string, config *GoogleIamWorkloadIdentityPoolConfig) GoogleIamWorkloadIdentityPool {
 	_init_.Initialize()
 
@@ -490,7 +586,7 @@ func NewGoogleIamWorkloadIdentityPool(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_iam_workload_identity_pool google_iam_workload_identity_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_iam_workload_identity_pool google_iam_workload_identity_pool} Resource.
 func NewGoogleIamWorkloadIdentityPool_Override(g GoogleIamWorkloadIdentityPool, scope constructs.Construct, id *string, config *GoogleIamWorkloadIdentityPoolConfig) {
 	_init_.Initialize()
 
@@ -590,6 +686,17 @@ func (j *jsiiProxy_GoogleIamWorkloadIdentityPool)SetLifecycle(val *cdktf.Terrafo
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleIamWorkloadIdentityPool)SetMode(val *string) {
+	if err := j.validateSetModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"mode",
 		val,
 	)
 }
@@ -988,6 +1095,39 @@ func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) OverrideLogicalId(newLogicalId
 	)
 }
 
+func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) PutAttestationRules(value interface{}) {
+	if err := g.validatePutAttestationRulesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAttestationRules",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) PutInlineCertificateIssuanceConfig(value *GoogleIamWorkloadIdentityPoolInlineCertificateIssuanceConfig) {
+	if err := g.validatePutInlineCertificateIssuanceConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putInlineCertificateIssuanceConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) PutInlineTrustConfig(value *GoogleIamWorkloadIdentityPoolInlineTrustConfig) {
+	if err := g.validatePutInlineTrustConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putInlineTrustConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) PutTimeouts(value *GoogleIamWorkloadIdentityPoolTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -996,6 +1136,14 @@ func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) PutTimeouts(value *GoogleIamWo
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) ResetAttestationRules() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAttestationRules",
+		nil, // no parameters
 	)
 }
 
@@ -1027,6 +1175,30 @@ func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) ResetInlineCertificateIssuanceConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetInlineCertificateIssuanceConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) ResetInlineTrustConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetInlineTrustConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) ResetMode() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMode",
 		nil, // no parameters
 	)
 }

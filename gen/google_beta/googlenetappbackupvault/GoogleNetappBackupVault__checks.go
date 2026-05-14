@@ -204,6 +204,17 @@ func (g *jsiiProxy_GoogleNetappBackupVault) validateOverrideLogicalIdParameters(
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetappBackupVault) validatePutBackupRetentionPolicyParameters(value *GoogleNetappBackupVaultBackupRetentionPolicy) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetappBackupVault) validatePutTimeoutsParameters(value *GoogleNetappBackupVaultTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -250,6 +261,22 @@ func validateGoogleNetappBackupVault_IsTerraformElementParameters(x interface{})
 func validateGoogleNetappBackupVault_IsTerraformResourceParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleNetappBackupVault) validateSetBackupRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleNetappBackupVault) validateSetBackupVaultTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil
@@ -354,6 +381,14 @@ func (j *jsiiProxy_GoogleNetappBackupVault) validateSetDescriptionParameters(val
 }
 
 func (j *jsiiProxy_GoogleNetappBackupVault) validateSetIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleNetappBackupVault) validateSetKmsConfigParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

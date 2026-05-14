@@ -1,0 +1,1254 @@
+package googlecestool
+
+import (
+	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
+
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecestool/internal"
+)
+
+type GoogleCesToolClientFunctionParametersOutputReference interface {
+	cdktf.ComplexObject
+	AdditionalProperties() *string
+	SetAdditionalProperties(val *string)
+	AdditionalPropertiesInput() *string
+	AnyOf() *string
+	SetAnyOf(val *string)
+	AnyOfInput() *string
+	// the index of the complex object in a list.
+	// Experimental.
+	ComplexObjectIndex() interface{}
+	// Experimental.
+	SetComplexObjectIndex(val interface{})
+	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
+	// Experimental.
+	ComplexObjectIsFromSet() *bool
+	// Experimental.
+	SetComplexObjectIsFromSet(val *bool)
+	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
+	//
+	// If this returns an empty array the stack will not be attached.
+	// Experimental.
+	CreationStack() *[]*string
+	Default() *string
+	SetDefault(val *string)
+	DefaultInput() *string
+	Defs() *string
+	SetDefs(val *string)
+	DefsInput() *string
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
+	Enum() *[]*string
+	SetEnum(val *[]*string)
+	EnumInput() *[]*string
+	// Experimental.
+	Fqn() *string
+	InternalValue() *GoogleCesToolClientFunctionParameters
+	SetInternalValue(val *GoogleCesToolClientFunctionParameters)
+	Items() *string
+	SetItems(val *string)
+	ItemsInput() *string
+	Maximum() *float64
+	SetMaximum(val *float64)
+	MaximumInput() *float64
+	MaxItems() *float64
+	SetMaxItems(val *float64)
+	MaxItemsInput() *float64
+	Minimum() *float64
+	SetMinimum(val *float64)
+	MinimumInput() *float64
+	MinItems() *float64
+	SetMinItems(val *float64)
+	MinItemsInput() *float64
+	Nullable() interface{}
+	SetNullable(val interface{})
+	NullableInput() interface{}
+	PrefixItems() *string
+	SetPrefixItems(val *string)
+	PrefixItemsInput() *string
+	Properties() *string
+	SetProperties(val *string)
+	PropertiesInput() *string
+	Ref() *string
+	SetRef(val *string)
+	RefInput() *string
+	Required() *[]*string
+	SetRequired(val *[]*string)
+	RequiredInput() *[]*string
+	// Experimental.
+	TerraformAttribute() *string
+	// Experimental.
+	SetTerraformAttribute(val *string)
+	// Experimental.
+	TerraformResource() cdktf.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Title() *string
+	SetTitle(val *string)
+	TitleInput() *string
+	Type() *string
+	SetType(val *string)
+	TypeInput() *string
+	UniqueItems() interface{}
+	SetUniqueItems(val interface{})
+	UniqueItemsInput() interface{}
+	// Experimental.
+	ComputeFqn() *string
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationAsList() cdktf.IResolvable
+	// Experimental.
+	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAdditionalProperties()
+	ResetAnyOf()
+	ResetDefault()
+	ResetDefs()
+	ResetDescription()
+	ResetEnum()
+	ResetItems()
+	ResetMaximum()
+	ResetMaxItems()
+	ResetMinimum()
+	ResetMinItems()
+	ResetNullable()
+	ResetPrefixItems()
+	ResetProperties()
+	ResetRef()
+	ResetRequired()
+	ResetTitle()
+	ResetUniqueItems()
+	// Produce the Token's value at resolution time.
+	// Experimental.
+	Resolve(_context cdktf.IResolveContext) interface{}
+	// Return a string representation of this resolvable object.
+	//
+	// Returns a reversible string representation.
+	// Experimental.
+	ToString() *string
+}
+
+// The jsii proxy struct for GoogleCesToolClientFunctionParametersOutputReference
+type jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference struct {
+	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) AdditionalProperties() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"additionalProperties",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) AdditionalPropertiesInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"additionalPropertiesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) AnyOf() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"anyOf",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) AnyOfInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"anyOfInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) ComplexObjectIndex() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"complexObjectIndex",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) ComplexObjectIsFromSet() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) CreationStack() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) Default() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"default",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) DefaultInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) Defs() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) DefsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) Enum() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"enum",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) EnumInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"enumInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) InternalValue() *GoogleCesToolClientFunctionParameters {
+	var returns *GoogleCesToolClientFunctionParameters
+	_jsii_.Get(
+		j,
+		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) Items() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"items",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) ItemsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"itemsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) Maximum() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maximum",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) MaximumInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maximumInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) MaxItems() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxItems",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) MaxItemsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxItemsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) Minimum() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"minimum",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) MinimumInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"minimumInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) MinItems() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"minItems",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) MinItemsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"minItemsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) Nullable() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"nullable",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) NullableInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"nullableInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) PrefixItems() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"prefixItems",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) PrefixItemsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"prefixItemsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) Properties() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"properties",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) PropertiesInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"propertiesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) Ref() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ref",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) RefInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"refInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) Required() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"required",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) RequiredInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"requiredInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) TerraformAttribute() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformAttribute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) TerraformResource() cdktf.IInterpolatingParent {
+	var returns cdktf.IInterpolatingParent
+	_jsii_.Get(
+		j,
+		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) Title() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"title",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) TitleInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"titleInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) Type() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"type",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) TypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"typeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) UniqueItems() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"uniqueItems",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) UniqueItemsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"uniqueItemsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+func NewGoogleCesToolClientFunctionParametersOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleCesToolClientFunctionParametersOutputReference {
+	_init_.Initialize()
+
+	if err := validateNewGoogleCesToolClientFunctionParametersOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference{}
+
+	_jsii_.Create(
+		"@cdktf/provider-google-beta.googleCesTool.GoogleCesToolClientFunctionParametersOutputReference",
+		[]interface{}{terraformResource, terraformAttribute},
+		&j,
+	)
+
+	return &j
+}
+
+func NewGoogleCesToolClientFunctionParametersOutputReference_Override(g GoogleCesToolClientFunctionParametersOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-google-beta.googleCesTool.GoogleCesToolClientFunctionParametersOutputReference",
+		[]interface{}{terraformResource, terraformAttribute},
+		g,
+	)
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference)SetAdditionalProperties(val *string) {
+	if err := j.validateSetAdditionalPropertiesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"additionalProperties",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference)SetAnyOf(val *string) {
+	if err := j.validateSetAnyOfParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"anyOf",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"complexObjectIndex",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference)SetDefault(val *string) {
+	if err := j.validateSetDefaultParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"default",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference)SetDefs(val *string) {
+	if err := j.validateSetDefsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defs",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference)SetEnum(val *[]*string) {
+	if err := j.validateSetEnumParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enum",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference)SetInternalValue(val *GoogleCesToolClientFunctionParameters) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference)SetItems(val *string) {
+	if err := j.validateSetItemsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"items",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference)SetMaximum(val *float64) {
+	if err := j.validateSetMaximumParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maximum",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference)SetMaxItems(val *float64) {
+	if err := j.validateSetMaxItemsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxItems",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference)SetMinimum(val *float64) {
+	if err := j.validateSetMinimumParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"minimum",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference)SetMinItems(val *float64) {
+	if err := j.validateSetMinItemsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"minItems",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference)SetNullable(val interface{}) {
+	if err := j.validateSetNullableParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"nullable",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference)SetPrefixItems(val *string) {
+	if err := j.validateSetPrefixItemsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"prefixItems",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference)SetProperties(val *string) {
+	if err := j.validateSetPropertiesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"properties",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference)SetRef(val *string) {
+	if err := j.validateSetRefParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ref",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference)SetRequired(val *[]*string) {
+	if err := j.validateSetRequiredParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"required",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"terraformAttribute",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference)SetTitle(val *string) {
+	if err := j.validateSetTitleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"title",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"type",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference)SetUniqueItems(val interface{}) {
+	if err := j.validateSetUniqueItemsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"uniqueItems",
+		val,
+	)
+}
+
+func (g *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) ComputeFqn() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		g,
+		"computeFqn",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		g,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		g,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := g.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		g,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := g.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		g,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := g.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *float64
+
+	_jsii_.Invoke(
+		g,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := g.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		g,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := g.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		g,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := g.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		g,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := g.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		g,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) InterpolationAsList() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		g,
+		"interpolationAsList",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		g,
+		"interpolationForAttribute",
+		[]interface{}{property},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) ResetAdditionalProperties() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAdditionalProperties",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) ResetAnyOf() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAnyOf",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) ResetDefault() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDefault",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) ResetDefs() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDefs",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) ResetDescription() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) ResetEnum() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnum",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) ResetItems() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetItems",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) ResetMaximum() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMaximum",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) ResetMaxItems() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMaxItems",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) ResetMinimum() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMinimum",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) ResetMinItems() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMinItems",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) ResetNullable() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNullable",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) ResetPrefixItems() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPrefixItems",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) ResetProperties() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetProperties",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) ResetRef() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRef",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) ResetRequired() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRequired",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) ResetTitle() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTitle",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) ResetUniqueItems() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetUniqueItems",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
+	var returns interface{}
+
+	_jsii_.Invoke(
+		g,
+		"resolve",
+		[]interface{}{_context},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleCesToolClientFunctionParametersOutputReference) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		g,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

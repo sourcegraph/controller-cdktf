@@ -72,6 +72,10 @@ func (g *jsiiProxy_GoogleColabNotebookExecution) validateOverrideLogicalIdParame
 	return nil
 }
 
+func (g *jsiiProxy_GoogleColabNotebookExecution) validatePutCustomEnvironmentSpecParameters(value *GoogleColabNotebookExecutionCustomEnvironmentSpec) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleColabNotebookExecution) validatePutDataformRepositorySourceParameters(value *GoogleColabNotebookExecutionDataformRepositorySource) error {
 	return nil
 }

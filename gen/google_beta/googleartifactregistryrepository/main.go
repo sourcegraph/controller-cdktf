@@ -76,6 +76,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putVirtualRepositoryConfig", GoMethod: "PutVirtualRepositoryConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putVulnerabilityScanningConfig", GoMethod: "PutVulnerabilityScanningConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberProperty{JsiiProperty: "registryUri", GoGetter: "RegistryUri"},
 			_jsii_.MemberProperty{JsiiProperty: "remoteRepositoryConfig", GoGetter: "RemoteRepositoryConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "remoteRepositoryConfigInput", GoGetter: "RemoteRepositoryConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "repositoryId", GoGetter: "RepositoryId"},

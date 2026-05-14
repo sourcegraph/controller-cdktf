@@ -80,6 +80,10 @@ func (g *jsiiProxy_GoogleCloudRunV2Service) validatePutBuildConfigParameters(val
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCloudRunV2Service) validatePutMultiRegionSettingsParameters(value *GoogleCloudRunV2ServiceMultiRegionSettings) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudRunV2Service) validatePutScalingParameters(value *GoogleCloudRunV2ServiceScaling) error {
 	return nil
 }

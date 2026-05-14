@@ -30,6 +30,7 @@ type DataGoogleComputeRegionBackendServiceSubsettingOutputReference interface {
 	InternalValue() *DataGoogleComputeRegionBackendServiceSubsetting
 	SetInternalValue(val *DataGoogleComputeRegionBackendServiceSubsetting)
 	Policy() *string
+	SubsetSize() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -132,6 +133,16 @@ func (j *jsiiProxy_DataGoogleComputeRegionBackendServiceSubsettingOutputReferenc
 	_jsii_.Get(
 		j,
 		"policy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeRegionBackendServiceSubsettingOutputReference) SubsetSize() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"subsetSize",
 		&returns,
 	)
 	return returns

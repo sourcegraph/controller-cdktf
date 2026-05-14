@@ -92,6 +92,10 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) validateSetGpuZonal
 	return nil
 }
 
+func (j *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) validateSetHealthCheckDisabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) validateSetInternalValueParameters(val *CloudRunV2ServiceTemplate) error {
 	return nil
 }

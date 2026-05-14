@@ -68,6 +68,10 @@ func (g *jsiiProxy_GoogleWorkbenchInstanceGceSetupOutputReference) validatePutNe
 	return nil
 }
 
+func (g *jsiiProxy_GoogleWorkbenchInstanceGceSetupOutputReference) validatePutReservationAffinityParameters(value *GoogleWorkbenchInstanceGceSetupReservationAffinity) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleWorkbenchInstanceGceSetupOutputReference) validatePutServiceAccountsParameters(value interface{}) error {
 	return nil
 }

@@ -9,12 +9,15 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglecontainercluster/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_container_cluster google_container_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/data-sources/google_container_cluster google_container_cluster}.
 type DataGoogleContainerCluster interface {
 	cdktf.TerraformDataSource
 	AddonsConfig() DataGoogleContainerClusterAddonsConfigList
 	AllowNetAdmin() cdktf.IResolvable
+	AnonymousAuthenticationConfig() DataGoogleContainerClusterAnonymousAuthenticationConfigList
 	AuthenticatorGroupsConfig() DataGoogleContainerClusterAuthenticatorGroupsConfigList
+	AutopilotClusterPolicyConfig() DataGoogleContainerClusterAutopilotClusterPolicyConfigList
+	AutopilotPrivilegedAdmission() *[]*string
 	BinaryAuthorization() DataGoogleContainerClusterBinaryAuthorizationList
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -66,11 +69,13 @@ type DataGoogleContainerCluster interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	GatewayApiConfig() DataGoogleContainerClusterGatewayApiConfigList
+	GkeAutoUpgradeConfig() DataGoogleContainerClusterGkeAutoUpgradeConfigList
 	Id() *string
 	SetId(val *string)
 	IdentityServiceConfig() DataGoogleContainerClusterIdentityServiceConfigList
 	IdInput() *string
 	InitialNodeCount() *float64
+	InTransitEncryptionConfig() *string
 	IpAllocationPolicy() DataGoogleContainerClusterIpAllocationPolicyList
 	LabelFingerprint() *string
 	// Experimental.
@@ -83,6 +88,8 @@ type DataGoogleContainerCluster interface {
 	LoggingConfig() DataGoogleContainerClusterLoggingConfigList
 	LoggingService() *string
 	MaintenancePolicy() DataGoogleContainerClusterMaintenancePolicyList
+	ManagedMachineLearningDiagnosticsConfig() DataGoogleContainerClusterManagedMachineLearningDiagnosticsConfigList
+	ManagedOpentelemetryConfig() DataGoogleContainerClusterManagedOpentelemetryConfigList
 	MasterAuth() DataGoogleContainerClusterMasterAuthList
 	MasterAuthorizedNetworksConfig() DataGoogleContainerClusterMasterAuthorizedNetworksConfigList
 	MasterVersion() *string
@@ -95,6 +102,7 @@ type DataGoogleContainerCluster interface {
 	NameInput() *string
 	Network() *string
 	NetworkingMode() *string
+	NetworkPerformanceConfig() DataGoogleContainerClusterNetworkPerformanceConfigList
 	NetworkPolicy() DataGoogleContainerClusterNetworkPolicyList
 	// The tree node.
 	Node() constructs.Node
@@ -120,11 +128,13 @@ type DataGoogleContainerCluster interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	RbacBindingConfig() DataGoogleContainerClusterRbacBindingConfigList
 	ReleaseChannel() DataGoogleContainerClusterReleaseChannelList
 	RemoveDefaultNodePool() cdktf.IResolvable
 	ResourceLabels() cdktf.StringMap
 	ResourceUsageExportConfig() DataGoogleContainerClusterResourceUsageExportConfigList
 	SecretManagerConfig() DataGoogleContainerClusterSecretManagerConfigList
+	SecretSyncConfig() DataGoogleContainerClusterSecretSyncConfigList
 	SecurityPostureConfig() DataGoogleContainerClusterSecurityPostureConfigList
 	SelfLink() *string
 	ServiceExternalIpsConfig() DataGoogleContainerClusterServiceExternalIpsConfigList
@@ -213,11 +223,41 @@ func (j *jsiiProxy_DataGoogleContainerCluster) AllowNetAdmin() cdktf.IResolvable
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleContainerCluster) AnonymousAuthenticationConfig() DataGoogleContainerClusterAnonymousAuthenticationConfigList {
+	var returns DataGoogleContainerClusterAnonymousAuthenticationConfigList
+	_jsii_.Get(
+		j,
+		"anonymousAuthenticationConfig",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleContainerCluster) AuthenticatorGroupsConfig() DataGoogleContainerClusterAuthenticatorGroupsConfigList {
 	var returns DataGoogleContainerClusterAuthenticatorGroupsConfigList
 	_jsii_.Get(
 		j,
 		"authenticatorGroupsConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerCluster) AutopilotClusterPolicyConfig() DataGoogleContainerClusterAutopilotClusterPolicyConfigList {
+	var returns DataGoogleContainerClusterAutopilotClusterPolicyConfigList
+	_jsii_.Get(
+		j,
+		"autopilotClusterPolicyConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerCluster) AutopilotPrivilegedAdmission() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"autopilotPrivilegedAdmission",
 		&returns,
 	)
 	return returns
@@ -603,6 +643,16 @@ func (j *jsiiProxy_DataGoogleContainerCluster) GatewayApiConfig() DataGoogleCont
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleContainerCluster) GkeAutoUpgradeConfig() DataGoogleContainerClusterGkeAutoUpgradeConfigList {
+	var returns DataGoogleContainerClusterGkeAutoUpgradeConfigList
+	_jsii_.Get(
+		j,
+		"gkeAutoUpgradeConfig",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleContainerCluster) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -638,6 +688,16 @@ func (j *jsiiProxy_DataGoogleContainerCluster) InitialNodeCount() *float64 {
 	_jsii_.Get(
 		j,
 		"initialNodeCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerCluster) InTransitEncryptionConfig() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"inTransitEncryptionConfig",
 		&returns,
 	)
 	return returns
@@ -718,6 +778,26 @@ func (j *jsiiProxy_DataGoogleContainerCluster) MaintenancePolicy() DataGoogleCon
 	_jsii_.Get(
 		j,
 		"maintenancePolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerCluster) ManagedMachineLearningDiagnosticsConfig() DataGoogleContainerClusterManagedMachineLearningDiagnosticsConfigList {
+	var returns DataGoogleContainerClusterManagedMachineLearningDiagnosticsConfigList
+	_jsii_.Get(
+		j,
+		"managedMachineLearningDiagnosticsConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerCluster) ManagedOpentelemetryConfig() DataGoogleContainerClusterManagedOpentelemetryConfigList {
+	var returns DataGoogleContainerClusterManagedOpentelemetryConfigList
+	_jsii_.Get(
+		j,
+		"managedOpentelemetryConfig",
 		&returns,
 	)
 	return returns
@@ -828,6 +908,16 @@ func (j *jsiiProxy_DataGoogleContainerCluster) NetworkingMode() *string {
 	_jsii_.Get(
 		j,
 		"networkingMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerCluster) NetworkPerformanceConfig() DataGoogleContainerClusterNetworkPerformanceConfigList {
+	var returns DataGoogleContainerClusterNetworkPerformanceConfigList
+	_jsii_.Get(
+		j,
+		"networkPerformanceConfig",
 		&returns,
 	)
 	return returns
@@ -1023,6 +1113,16 @@ func (j *jsiiProxy_DataGoogleContainerCluster) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleContainerCluster) RbacBindingConfig() DataGoogleContainerClusterRbacBindingConfigList {
+	var returns DataGoogleContainerClusterRbacBindingConfigList
+	_jsii_.Get(
+		j,
+		"rbacBindingConfig",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleContainerCluster) ReleaseChannel() DataGoogleContainerClusterReleaseChannelList {
 	var returns DataGoogleContainerClusterReleaseChannelList
 	_jsii_.Get(
@@ -1068,6 +1168,16 @@ func (j *jsiiProxy_DataGoogleContainerCluster) SecretManagerConfig() DataGoogleC
 	_jsii_.Get(
 		j,
 		"secretManagerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerCluster) SecretSyncConfig() DataGoogleContainerClusterSecretSyncConfigList {
+	var returns DataGoogleContainerClusterSecretSyncConfigList
+	_jsii_.Get(
+		j,
+		"secretSyncConfig",
 		&returns,
 	)
 	return returns
@@ -1224,7 +1334,7 @@ func (j *jsiiProxy_DataGoogleContainerCluster) WorkloadIdentityConfig() DataGoog
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_container_cluster google_container_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/data-sources/google_container_cluster google_container_cluster} Data Source.
 func NewDataGoogleContainerCluster(scope constructs.Construct, id *string, config *DataGoogleContainerClusterConfig) DataGoogleContainerCluster {
 	_init_.Initialize()
 
@@ -1242,7 +1352,7 @@ func NewDataGoogleContainerCluster(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_container_cluster google_container_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/data-sources/google_container_cluster google_container_cluster} Data Source.
 func NewDataGoogleContainerCluster_Override(d DataGoogleContainerCluster, scope constructs.Construct, id *string, config *DataGoogleContainerClusterConfig) {
 	_init_.Initialize()
 

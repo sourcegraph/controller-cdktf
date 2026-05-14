@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/computehavpngateway/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_ha_vpn_gateway google_compute_ha_vpn_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ha_vpn_gateway google_compute_ha_vpn_gateway}.
 type ComputeHaVpnGateway interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -62,6 +62,8 @@ type ComputeHaVpnGateway interface {
 	NetworkInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Params() ComputeHaVpnGatewayParamsOutputReference
+	ParamsInput() *ComputeHaVpnGatewayParams
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -136,6 +138,7 @@ type ComputeHaVpnGateway interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutParams(value *ComputeHaVpnGatewayParams)
 	PutTimeouts(value *ComputeHaVpnGatewayTimeouts)
 	PutVpnInterfaces(value interface{})
 	ResetDescription()
@@ -145,6 +148,7 @@ type ComputeHaVpnGateway interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetParams()
 	ResetProject()
 	ResetRegion()
 	ResetStackType()
@@ -408,6 +412,26 @@ func (j *jsiiProxy_ComputeHaVpnGateway) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeHaVpnGateway) Params() ComputeHaVpnGatewayParamsOutputReference {
+	var returns ComputeHaVpnGatewayParamsOutputReference
+	_jsii_.Get(
+		j,
+		"params",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeHaVpnGateway) ParamsInput() *ComputeHaVpnGatewayParams {
+	var returns *ComputeHaVpnGatewayParams
+	_jsii_.Get(
+		j,
+		"paramsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeHaVpnGateway) Project() *string {
 	var returns *string
 	_jsii_.Get(
@@ -589,7 +613,7 @@ func (j *jsiiProxy_ComputeHaVpnGateway) VpnInterfacesInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_ha_vpn_gateway google_compute_ha_vpn_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ha_vpn_gateway google_compute_ha_vpn_gateway} Resource.
 func NewComputeHaVpnGateway(scope constructs.Construct, id *string, config *ComputeHaVpnGatewayConfig) ComputeHaVpnGateway {
 	_init_.Initialize()
 
@@ -607,7 +631,7 @@ func NewComputeHaVpnGateway(scope constructs.Construct, id *string, config *Comp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_ha_vpn_gateway google_compute_ha_vpn_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ha_vpn_gateway google_compute_ha_vpn_gateway} Resource.
 func NewComputeHaVpnGateway_Override(c ComputeHaVpnGateway, scope constructs.Construct, id *string, config *ComputeHaVpnGatewayConfig) {
 	_init_.Initialize()
 
@@ -1138,6 +1162,17 @@ func (c *jsiiProxy_ComputeHaVpnGateway) OverrideLogicalId(newLogicalId *string) 
 	)
 }
 
+func (c *jsiiProxy_ComputeHaVpnGateway) PutParams(value *ComputeHaVpnGatewayParams) {
+	if err := c.validatePutParamsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putParams",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeHaVpnGateway) PutTimeouts(value *ComputeHaVpnGatewayTimeouts) {
 	if err := c.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1196,6 +1231,14 @@ func (c *jsiiProxy_ComputeHaVpnGateway) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeHaVpnGateway) ResetParams() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetParams",
 		nil, // no parameters
 	)
 }

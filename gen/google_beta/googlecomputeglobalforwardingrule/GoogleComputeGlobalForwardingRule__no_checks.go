@@ -116,6 +116,14 @@ func (j *jsiiProxy_GoogleComputeGlobalForwardingRule) validateSetDescriptionPara
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeGlobalForwardingRule) validateSetExternalManagedBackendBucketMigrationStateParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeGlobalForwardingRule) validateSetExternalManagedBackendBucketMigrationTestingPercentageParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeGlobalForwardingRule) validateSetIdParameters(val *string) error {
 	return nil
 }

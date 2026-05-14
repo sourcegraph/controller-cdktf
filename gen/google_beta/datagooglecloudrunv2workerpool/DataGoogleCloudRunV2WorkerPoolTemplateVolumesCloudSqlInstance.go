@@ -1,0 +1,6 @@
+package datagooglecloudrunv2workerpool
+
+
+type DataGoogleCloudRunV2WorkerPoolTemplateVolumesCloudSqlInstance struct {
+}
+

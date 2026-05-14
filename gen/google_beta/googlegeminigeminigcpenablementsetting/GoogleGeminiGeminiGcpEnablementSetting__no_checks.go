@@ -100,6 +100,10 @@ func (j *jsiiProxy_GoogleGeminiGeminiGcpEnablementSetting) validateSetCountParam
 	return nil
 }
 
+func (j *jsiiProxy_GoogleGeminiGeminiGcpEnablementSetting) validateSetDisableWebGroundingParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleGeminiGeminiGcpEnablementSetting) validateSetEnableCustomerDataSharingParameters(val interface{}) error {
 	return nil
 }
@@ -129,6 +133,10 @@ func (j *jsiiProxy_GoogleGeminiGeminiGcpEnablementSetting) validateSetProjectPar
 }
 
 func (j *jsiiProxy_GoogleGeminiGeminiGcpEnablementSetting) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleGeminiGeminiGcpEnablementSetting) validateSetWebGroundingTypeParameters(val *string) error {
 	return nil
 }
 

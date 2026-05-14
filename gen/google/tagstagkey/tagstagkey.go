@@ -9,9 +9,12 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/tagstagkey/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/tags_tag_key google_tags_tag_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/tags_tag_key google_tags_tag_key}.
 type TagsTagKey interface {
 	cdktf.TerraformResource
+	AllowedValuesRegex() *string
+	SetAllowedValuesRegex(val *string)
+	AllowedValuesRegexInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -126,6 +129,7 @@ type TagsTagKey interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *TagsTagKeyTimeouts)
+	ResetAllowedValuesRegex()
 	ResetDescription()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -150,6 +154,26 @@ type TagsTagKey interface {
 // The jsii proxy struct for TagsTagKey
 type jsiiProxy_TagsTagKey struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_TagsTagKey) AllowedValuesRegex() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"allowedValuesRegex",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TagsTagKey) AllowedValuesRegexInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"allowedValuesRegexInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_TagsTagKey) CdktfStack() cdktf.TerraformStack {
@@ -493,7 +517,7 @@ func (j *jsiiProxy_TagsTagKey) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/tags_tag_key google_tags_tag_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/tags_tag_key google_tags_tag_key} Resource.
 func NewTagsTagKey(scope constructs.Construct, id *string, config *TagsTagKeyConfig) TagsTagKey {
 	_init_.Initialize()
 
@@ -511,7 +535,7 @@ func NewTagsTagKey(scope constructs.Construct, id *string, config *TagsTagKeyCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/tags_tag_key google_tags_tag_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/tags_tag_key google_tags_tag_key} Resource.
 func NewTagsTagKey_Override(t TagsTagKey, scope constructs.Construct, id *string, config *TagsTagKeyConfig) {
 	_init_.Initialize()
 
@@ -519,6 +543,17 @@ func NewTagsTagKey_Override(t TagsTagKey, scope constructs.Construct, id *string
 		"@cdktf/provider-google.tagsTagKey.TagsTagKey",
 		[]interface{}{scope, id, config},
 		t,
+	)
+}
+
+func (j *jsiiProxy_TagsTagKey)SetAllowedValuesRegex(val *string) {
+	if err := j.validateSetAllowedValuesRegexParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowedValuesRegex",
+		val,
 	)
 }
 
@@ -1017,6 +1052,14 @@ func (t *jsiiProxy_TagsTagKey) PutTimeouts(value *TagsTagKeyTimeouts) {
 		t,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (t *jsiiProxy_TagsTagKey) ResetAllowedValuesRegex() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetAllowedValuesRegex",
+		nil, // no parameters
 	)
 }
 

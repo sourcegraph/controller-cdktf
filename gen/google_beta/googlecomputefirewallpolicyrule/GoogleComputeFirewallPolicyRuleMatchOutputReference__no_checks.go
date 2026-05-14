@@ -48,6 +48,10 @@ func (g *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) validate
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) validatePutSrcSecureTagsParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) validate
 }
 
 func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) validateSetDestIpRangesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) validateSetDestNetworkContextParameters(val *string) error {
 	return nil
 }
 
@@ -97,6 +105,10 @@ func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) validate
 }
 
 func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) validateSetSrcIpRangesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) validateSetSrcNetworkContextParameters(val *string) error {
 	return nil
 }
 

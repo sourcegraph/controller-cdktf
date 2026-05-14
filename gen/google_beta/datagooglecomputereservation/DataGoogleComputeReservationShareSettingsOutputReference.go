@@ -30,6 +30,7 @@ type DataGoogleComputeReservationShareSettingsOutputReference interface {
 	InternalValue() *DataGoogleComputeReservationShareSettings
 	SetInternalValue(val *DataGoogleComputeReservationShareSettings)
 	ProjectMap() DataGoogleComputeReservationShareSettingsProjectMapList
+	Projects() *[]*string
 	ShareType() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -133,6 +134,16 @@ func (j *jsiiProxy_DataGoogleComputeReservationShareSettingsOutputReference) Pro
 	_jsii_.Get(
 		j,
 		"projectMap",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeReservationShareSettingsOutputReference) Projects() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"projects",
 		&returns,
 	)
 	return returns

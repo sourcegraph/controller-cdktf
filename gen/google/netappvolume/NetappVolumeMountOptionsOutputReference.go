@@ -32,6 +32,7 @@ type NetappVolumeMountOptionsOutputReference interface {
 	Instructions() *string
 	InternalValue() *NetappVolumeMountOptions
 	SetInternalValue(val *NetappVolumeMountOptions)
+	IpAddress() *string
 	Protocol() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -155,6 +156,16 @@ func (j *jsiiProxy_NetappVolumeMountOptionsOutputReference) InternalValue() *Net
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappVolumeMountOptionsOutputReference) IpAddress() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipAddress",
 		&returns,
 	)
 	return returns

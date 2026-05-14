@@ -38,6 +38,8 @@ type GoogleComputeInstanceGroupManagerInstanceLifecyclePolicyOutputReference int
 	OnFailedHealthCheck() *string
 	SetOnFailedHealthCheck(val *string)
 	OnFailedHealthCheckInput() *string
+	OnRepair() GoogleComputeInstanceGroupManagerInstanceLifecyclePolicyOnRepairOutputReference
+	OnRepairInput() *GoogleComputeInstanceGroupManagerInstanceLifecyclePolicyOnRepair
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,9 +72,11 @@ type GoogleComputeInstanceGroupManagerInstanceLifecyclePolicyOutputReference int
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutOnRepair(value *GoogleComputeInstanceGroupManagerInstanceLifecyclePolicyOnRepair)
 	ResetDefaultActionOnFailure()
 	ResetForceUpdateOnRepair()
 	ResetOnFailedHealthCheck()
+	ResetOnRepair()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -193,6 +197,26 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupManagerInstanceLifecyclePolicyOutpu
 	_jsii_.Get(
 		j,
 		"onFailedHealthCheckInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceGroupManagerInstanceLifecyclePolicyOutputReference) OnRepair() GoogleComputeInstanceGroupManagerInstanceLifecyclePolicyOnRepairOutputReference {
+	var returns GoogleComputeInstanceGroupManagerInstanceLifecyclePolicyOnRepairOutputReference
+	_jsii_.Get(
+		j,
+		"onRepair",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceGroupManagerInstanceLifecyclePolicyOutputReference) OnRepairInput() *GoogleComputeInstanceGroupManagerInstanceLifecyclePolicyOnRepair {
+	var returns *GoogleComputeInstanceGroupManagerInstanceLifecyclePolicyOnRepair
+	_jsii_.Get(
+		j,
+		"onRepairInput",
 		&returns,
 	)
 	return returns
@@ -520,6 +544,17 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManagerInstanceLifecyclePolicyOutpu
 	return returns
 }
 
+func (g *jsiiProxy_GoogleComputeInstanceGroupManagerInstanceLifecyclePolicyOutputReference) PutOnRepair(value *GoogleComputeInstanceGroupManagerInstanceLifecyclePolicyOnRepair) {
+	if err := g.validatePutOnRepairParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putOnRepair",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceGroupManagerInstanceLifecyclePolicyOutputReference) ResetDefaultActionOnFailure() {
 	_jsii_.InvokeVoid(
 		g,
@@ -540,6 +575,14 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManagerInstanceLifecyclePolicyOutpu
 	_jsii_.InvokeVoid(
 		g,
 		"resetOnFailedHealthCheck",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceGroupManagerInstanceLifecyclePolicyOutputReference) ResetOnRepair() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetOnRepair",
 		nil, // no parameters
 	)
 }

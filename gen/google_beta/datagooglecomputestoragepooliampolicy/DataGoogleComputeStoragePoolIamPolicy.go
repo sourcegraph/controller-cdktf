@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglecomputestoragepooliampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_compute_storage_pool_iam_policy google_compute_storage_pool_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/data-sources/google_compute_storage_pool_iam_policy google_compute_storage_pool_iam_policy}.
 type DataGoogleComputeStoragePoolIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -355,7 +355,7 @@ func (j *jsiiProxy_DataGoogleComputeStoragePoolIamPolicy) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_compute_storage_pool_iam_policy google_compute_storage_pool_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/data-sources/google_compute_storage_pool_iam_policy google_compute_storage_pool_iam_policy} Data Source.
 func NewDataGoogleComputeStoragePoolIamPolicy(scope constructs.Construct, id *string, config *DataGoogleComputeStoragePoolIamPolicyConfig) DataGoogleComputeStoragePoolIamPolicy {
 	_init_.Initialize()
 
@@ -373,7 +373,7 @@ func NewDataGoogleComputeStoragePoolIamPolicy(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_compute_storage_pool_iam_policy google_compute_storage_pool_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/data-sources/google_compute_storage_pool_iam_policy google_compute_storage_pool_iam_policy} Data Source.
 func NewDataGoogleComputeStoragePoolIamPolicy_Override(d DataGoogleComputeStoragePoolIamPolicy, scope constructs.Construct, id *string, config *DataGoogleComputeStoragePoolIamPolicyConfig) {
 	_init_.Initialize()
 

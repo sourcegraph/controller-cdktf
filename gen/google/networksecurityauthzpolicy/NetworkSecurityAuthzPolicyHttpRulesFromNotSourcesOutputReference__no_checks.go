@@ -44,6 +44,10 @@ func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromNotSourcesOutputRefere
 	return nil
 }
 
+func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromNotSourcesOutputReference) validatePutIpBlocksParameters(value interface{}) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromNotSourcesOutputReference) validatePutPrincipalsParameters(value interface{}) error {
 	return nil
 }

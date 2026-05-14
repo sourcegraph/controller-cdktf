@@ -1,0 +1,6 @@
+package datagooglediscoveryenginedatastore
+
+
+type DataGoogleDiscoveryEngineDataStoreDocumentProcessingConfig struct {
+}
+

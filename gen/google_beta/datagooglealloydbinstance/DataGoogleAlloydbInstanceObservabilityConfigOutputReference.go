@@ -44,6 +44,7 @@ type DataGoogleAlloydbInstanceObservabilityConfigOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	TrackActiveQueries() cdktf.IResolvable
+	TrackClientAddress() cdktf.IResolvable
 	TrackWaitEvents() cdktf.IResolvable
 	TrackWaitEventTypes() cdktf.IResolvable
 	// Experimental.
@@ -220,6 +221,16 @@ func (j *jsiiProxy_DataGoogleAlloydbInstanceObservabilityConfigOutputReference) 
 	_jsii_.Get(
 		j,
 		"trackActiveQueries",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleAlloydbInstanceObservabilityConfigOutputReference) TrackClientAddress() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"trackClientAddress",
 		&returns,
 	)
 	return returns

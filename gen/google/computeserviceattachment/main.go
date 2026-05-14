@@ -65,6 +65,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "propagatedConnectionLimitInput", GoGetter: "PropagatedConnectionLimitInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
+			_jsii_.MemberProperty{JsiiProperty: "pscServiceAttachmentId", GoGetter: "PscServiceAttachmentId"},
 			_jsii_.MemberMethod{JsiiMethod: "putConsumerAcceptLists", GoMethod: "PutConsumerAcceptLists"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
@@ -82,8 +83,14 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetPropagatedConnectionLimit", GoMethod: "ResetPropagatedConnectionLimit"},
 			_jsii_.MemberMethod{JsiiMethod: "resetReconcileConnections", GoMethod: "ResetReconcileConnections"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRegion", GoMethod: "ResetRegion"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSendPropagatedConnectionLimitIfZero", GoMethod: "ResetSendPropagatedConnectionLimitIfZero"},
+			_jsii_.MemberMethod{JsiiMethod: "resetShowNatIps", GoMethod: "ResetShowNatIps"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "selfLink", GoGetter: "SelfLink"},
+			_jsii_.MemberProperty{JsiiProperty: "sendPropagatedConnectionLimitIfZero", GoGetter: "SendPropagatedConnectionLimitIfZero"},
+			_jsii_.MemberProperty{JsiiProperty: "sendPropagatedConnectionLimitIfZeroInput", GoGetter: "SendPropagatedConnectionLimitIfZeroInput"},
+			_jsii_.MemberProperty{JsiiProperty: "showNatIps", GoGetter: "ShowNatIps"},
+			_jsii_.MemberProperty{JsiiProperty: "showNatIpsInput", GoGetter: "ShowNatIpsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeHclAttributes", GoMethod: "SynthesizeHclAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "targetService", GoGetter: "TargetService"},
@@ -156,6 +163,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "natIps", GoGetter: "NatIps"},
 			_jsii_.MemberProperty{JsiiProperty: "propagatedConnectionCount", GoGetter: "PropagatedConnectionCount"},
 			_jsii_.MemberProperty{JsiiProperty: "pscConnectionId", GoGetter: "PscConnectionId"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
@@ -206,6 +214,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "connectionLimit", GoGetter: "ConnectionLimit"},
 			_jsii_.MemberProperty{JsiiProperty: "connectionLimitInput", GoGetter: "ConnectionLimitInput"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "endpointUrl", GoGetter: "EndpointUrl"},
+			_jsii_.MemberProperty{JsiiProperty: "endpointUrlInput", GoGetter: "EndpointUrlInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
@@ -223,6 +233,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "networkUrlInput", GoGetter: "NetworkUrlInput"},
 			_jsii_.MemberProperty{JsiiProperty: "projectIdOrNum", GoGetter: "ProjectIdOrNum"},
 			_jsii_.MemberProperty{JsiiProperty: "projectIdOrNumInput", GoGetter: "ProjectIdOrNumInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEndpointUrl", GoMethod: "ResetEndpointUrl"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNetworkUrl", GoMethod: "ResetNetworkUrl"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProjectIdOrNum", GoMethod: "ResetProjectIdOrNum"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
@@ -232,6 +243,65 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeServiceAttachmentConsumerAcceptListsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentId",
+		reflect.TypeOf((*ComputeServiceAttachmentPscServiceAttachmentId)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdList",
+		reflect.TypeOf((*ComputeServiceAttachmentPscServiceAttachmentIdList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ComputeServiceAttachmentPscServiceAttachmentIdList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdOutputReference",
+		reflect.TypeOf((*ComputeServiceAttachmentPscServiceAttachmentIdOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "high", GoGetter: "High"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "low", GoGetter: "Low"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ComputeServiceAttachmentPscServiceAttachmentIdOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

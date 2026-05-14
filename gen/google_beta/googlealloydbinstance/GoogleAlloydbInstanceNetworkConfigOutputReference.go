@@ -10,6 +10,9 @@ import (
 
 type GoogleAlloydbInstanceNetworkConfigOutputReference interface {
 	cdktf.ComplexObject
+	AllocatedIpRangeOverride() *string
+	SetAllocatedIpRangeOverride(val *string)
+	AllocatedIpRangeOverrideInput() *string
 	AuthorizedExternalNetworks() GoogleAlloydbInstanceNetworkConfigAuthorizedExternalNetworksList
 	AuthorizedExternalNetworksInput() interface{}
 	// the index of the complex object in a list.
@@ -70,6 +73,7 @@ type GoogleAlloydbInstanceNetworkConfigOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAuthorizedExternalNetworks(value interface{})
+	ResetAllocatedIpRangeOverride()
 	ResetAuthorizedExternalNetworks()
 	ResetEnableOutboundPublicIp()
 	ResetEnablePublicIp()
@@ -86,6 +90,26 @@ type GoogleAlloydbInstanceNetworkConfigOutputReference interface {
 // The jsii proxy struct for GoogleAlloydbInstanceNetworkConfigOutputReference
 type jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) AllocatedIpRangeOverride() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"allocatedIpRangeOverride",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) AllocatedIpRangeOverrideInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"allocatedIpRangeOverrideInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) AuthorizedExternalNetworks() GoogleAlloydbInstanceNetworkConfigAuthorizedExternalNetworksList {
@@ -243,6 +267,17 @@ func NewGoogleAlloydbInstanceNetworkConfigOutputReference_Override(g GoogleAlloy
 		"@cdktf/provider-google-beta.googleAlloydbInstance.GoogleAlloydbInstanceNetworkConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference)SetAllocatedIpRangeOverride(val *string) {
+	if err := j.validateSetAllocatedIpRangeOverrideParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allocatedIpRangeOverride",
+		val,
 	)
 }
 
@@ -517,6 +552,14 @@ func (g *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) PutAuthori
 		g,
 		"putAuthorizedExternalNetworks",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) ResetAllocatedIpRangeOverride() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAllocatedIpRangeOverride",
+		nil, // no parameters
 	)
 }
 

@@ -44,6 +44,14 @@ func (c *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) validateInt
 	return nil
 }
 
+func (c *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) validatePutDefaultPoolParameters(value *ClouddeployTargetExecutionConfigsDefaultPool) error {
+	return nil
+}
+
+func (c *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) validatePutPrivatePoolParameters(value *ClouddeployTargetExecutionConfigsPrivatePool) error {
+	return nil
+}
+
 func (c *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

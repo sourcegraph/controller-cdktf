@@ -32,6 +32,9 @@ type GoogleAccessContextManagerGcpUserAccessBindingScopedAccessSettingsScopeClie
 	Fqn() *string
 	InternalValue() *GoogleAccessContextManagerGcpUserAccessBindingScopedAccessSettingsScopeClientScopeRestrictedClientApplication
 	SetInternalValue(val *GoogleAccessContextManagerGcpUserAccessBindingScopedAccessSettingsScopeClientScopeRestrictedClientApplication)
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -65,6 +68,7 @@ type GoogleAccessContextManagerGcpUserAccessBindingScopedAccessSettingsScopeClie
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetClientId()
+	ResetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -145,6 +149,26 @@ func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBindingScopedAccessSet
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBindingScopedAccessSettingsScopeClientScopeRestrictedClientApplicationOutputReference) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBindingScopedAccessSettingsScopeClientScopeRestrictedClientApplicationOutputReference) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
 		&returns,
 	)
 	return returns
@@ -238,6 +262,17 @@ func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBindingScopedAccessSet
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBindingScopedAccessSettingsScopeClientScopeRestrictedClientApplicationOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
 		val,
 	)
 }
@@ -454,6 +489,14 @@ func (g *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBindingScopedAccessSet
 	_jsii_.InvokeVoid(
 		g,
 		"resetClientId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBindingScopedAccessSettingsScopeClientScopeRestrictedClientApplicationOutputReference) ResetName() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetName",
 		nil, // no parameters
 	)
 }

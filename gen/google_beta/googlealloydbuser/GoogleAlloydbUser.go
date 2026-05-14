@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlealloydbuser/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_alloydb_user google_alloydb_user}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_alloydb_user google_alloydb_user}.
 type GoogleAlloydbUser interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -55,6 +55,12 @@ type GoogleAlloydbUser interface {
 	Password() *string
 	SetPassword(val *string)
 	PasswordInput() *string
+	PasswordWo() *string
+	SetPasswordWo(val *string)
+	PasswordWoInput() *string
+	PasswordWoVersion() *string
+	SetPasswordWoVersion(val *string)
+	PasswordWoVersionInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -129,6 +135,8 @@ type GoogleAlloydbUser interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPassword()
+	ResetPasswordWo()
+	ResetPasswordWoVersion()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -338,6 +346,46 @@ func (j *jsiiProxy_GoogleAlloydbUser) PasswordInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleAlloydbUser) PasswordWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAlloydbUser) PasswordWoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordWoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAlloydbUser) PasswordWoVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordWoVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAlloydbUser) PasswordWoVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordWoVersionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleAlloydbUser) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -459,7 +507,7 @@ func (j *jsiiProxy_GoogleAlloydbUser) UserTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_alloydb_user google_alloydb_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_alloydb_user google_alloydb_user} Resource.
 func NewGoogleAlloydbUser(scope constructs.Construct, id *string, config *GoogleAlloydbUserConfig) GoogleAlloydbUser {
 	_init_.Initialize()
 
@@ -477,7 +525,7 @@ func NewGoogleAlloydbUser(scope constructs.Construct, id *string, config *Google
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_alloydb_user google_alloydb_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_alloydb_user google_alloydb_user} Resource.
 func NewGoogleAlloydbUser_Override(g GoogleAlloydbUser, scope constructs.Construct, id *string, config *GoogleAlloydbUserConfig) {
 	_init_.Initialize()
 
@@ -577,6 +625,28 @@ func (j *jsiiProxy_GoogleAlloydbUser)SetPassword(val *string) {
 	_jsii_.Set(
 		j,
 		"password",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleAlloydbUser)SetPasswordWo(val *string) {
+	if err := j.validateSetPasswordWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"passwordWo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleAlloydbUser)SetPasswordWoVersion(val *string) {
+	if err := j.validateSetPasswordWoVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"passwordWoVersion",
 		val,
 	)
 }
@@ -1014,6 +1084,22 @@ func (g *jsiiProxy_GoogleAlloydbUser) ResetPassword() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetPassword",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAlloydbUser) ResetPasswordWo() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPasswordWo",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAlloydbUser) ResetPasswordWoVersion() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPasswordWoVersion",
 		nil, // no parameters
 	)
 }

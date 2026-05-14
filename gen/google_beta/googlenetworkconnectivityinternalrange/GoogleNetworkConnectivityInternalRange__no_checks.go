@@ -72,6 +72,10 @@ func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) validateOverrideLogic
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) validatePutAllocationOptionsParameters(value *GoogleNetworkConnectivityInternalRangeAllocationOptions) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) validatePutMigrationParameters(value *GoogleNetworkConnectivityInternalRangeMigration) error {
 	return nil
 }
@@ -113,6 +117,10 @@ func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) validateSetExcludeCid
 }
 
 func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) validateSetImmutableParameters(val interface{}) error {
 	return nil
 }
 

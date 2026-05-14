@@ -112,6 +112,10 @@ func (c *jsiiProxy_ComputeBackendService) validatePutOutlierDetectionParameters(
 	return nil
 }
 
+func (c *jsiiProxy_ComputeBackendService) validatePutParamsParameters(value *ComputeBackendServiceParams) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeBackendService) validatePutSecuritySettingsParameters(value *ComputeBackendServiceSecuritySettings) error {
 	return nil
 }
@@ -121,6 +125,10 @@ func (c *jsiiProxy_ComputeBackendService) validatePutStrongSessionAffinityCookie
 }
 
 func (c *jsiiProxy_ComputeBackendService) validatePutTimeoutsParameters(value *ComputeBackendServiceTimeouts) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeBackendService) validatePutTlsSettingsParameters(value *ComputeBackendServiceTlsSettings) error {
 	return nil
 }
 
@@ -177,6 +185,14 @@ func (j *jsiiProxy_ComputeBackendService) validateSetEdgeSecurityPolicyParameter
 }
 
 func (j *jsiiProxy_ComputeBackendService) validateSetEnableCdnParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeBackendService) validateSetExternalManagedMigrationStateParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeBackendService) validateSetExternalManagedMigrationTestingPercentageParameters(val *float64) error {
 	return nil
 }
 

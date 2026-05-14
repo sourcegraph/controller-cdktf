@@ -52,6 +52,10 @@ func (j *jsiiProxy_GoogleDataprocClusterClusterConfigLifecycleConfigOutputRefere
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference) validateSetAutoStopTimeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -61,6 +65,10 @@ func (j *jsiiProxy_GoogleDataprocClusterClusterConfigLifecycleConfigOutputRefere
 }
 
 func (j *jsiiProxy_GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference) validateSetIdleDeleteTtlParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference) validateSetIdleStopTtlParameters(val *string) error {
 	return nil
 }
 

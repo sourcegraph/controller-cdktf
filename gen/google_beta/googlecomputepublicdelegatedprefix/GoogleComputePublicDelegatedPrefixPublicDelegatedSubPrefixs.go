@@ -1,0 +1,6 @@
+package googlecomputepublicdelegatedprefix
+
+
+type GoogleComputePublicDelegatedPrefixPublicDelegatedSubPrefixs struct {
+}
+

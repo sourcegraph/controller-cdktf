@@ -1,0 +1,6 @@
+package googlecomputeinterconnectgroup
+
+
+type GoogleComputeInterconnectGroupConfiguredTopologyCapabilityIntendedCapabilityBlockers struct {
+}
+

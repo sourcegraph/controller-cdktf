@@ -39,6 +39,9 @@ type GoogleFilestoreInstanceFileSharesOutputReference interface {
 	NfsExportOptionsInput() interface{}
 	SourceBackup() *string
 	SetSourceBackup(val *string)
+	SourceBackupdrBackup() *string
+	SetSourceBackupdrBackup(val *string)
+	SourceBackupdrBackupInput() *string
 	SourceBackupInput() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -75,6 +78,7 @@ type GoogleFilestoreInstanceFileSharesOutputReference interface {
 	PutNfsExportOptions(value interface{})
 	ResetNfsExportOptions()
 	ResetSourceBackup()
+	ResetSourceBackupdrBackup()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -210,6 +214,26 @@ func (j *jsiiProxy_GoogleFilestoreInstanceFileSharesOutputReference) SourceBacku
 	return returns
 }
 
+func (j *jsiiProxy_GoogleFilestoreInstanceFileSharesOutputReference) SourceBackupdrBackup() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceBackupdrBackup",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleFilestoreInstanceFileSharesOutputReference) SourceBackupdrBackupInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceBackupdrBackupInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleFilestoreInstanceFileSharesOutputReference) SourceBackupInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -330,6 +354,17 @@ func (j *jsiiProxy_GoogleFilestoreInstanceFileSharesOutputReference)SetSourceBac
 	_jsii_.Set(
 		j,
 		"sourceBackup",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleFilestoreInstanceFileSharesOutputReference)SetSourceBackupdrBackup(val *string) {
+	if err := j.validateSetSourceBackupdrBackupParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sourceBackupdrBackup",
 		val,
 	)
 }
@@ -565,6 +600,14 @@ func (g *jsiiProxy_GoogleFilestoreInstanceFileSharesOutputReference) ResetSource
 	_jsii_.InvokeVoid(
 		g,
 		"resetSourceBackup",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleFilestoreInstanceFileSharesOutputReference) ResetSourceBackupdrBackup() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSourceBackupdrBackup",
 		nil, // no parameters
 	)
 }

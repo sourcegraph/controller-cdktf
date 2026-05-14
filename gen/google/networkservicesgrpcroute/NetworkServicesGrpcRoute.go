@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/networkservicesgrpcroute/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/network_services_grpc_route google_network_services_grpc_route}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_grpc_route google_network_services_grpc_route}.
 type NetworkServicesGrpcRoute interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -599,7 +599,7 @@ func (j *jsiiProxy_NetworkServicesGrpcRoute) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/network_services_grpc_route google_network_services_grpc_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_grpc_route google_network_services_grpc_route} Resource.
 func NewNetworkServicesGrpcRoute(scope constructs.Construct, id *string, config *NetworkServicesGrpcRouteConfig) NetworkServicesGrpcRoute {
 	_init_.Initialize()
 
@@ -617,7 +617,7 @@ func NewNetworkServicesGrpcRoute(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/network_services_grpc_route google_network_services_grpc_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_grpc_route google_network_services_grpc_route} Resource.
 func NewNetworkServicesGrpcRoute_Override(n NetworkServicesGrpcRoute, scope constructs.Construct, id *string, config *NetworkServicesGrpcRouteConfig) {
 	_init_.Initialize()
 

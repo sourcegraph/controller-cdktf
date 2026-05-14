@@ -10,6 +10,8 @@ import (
 
 type GoogleContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference interface {
 	cdktf.ComplexObject
+	AutoscaledRolloutPolicy() GoogleContainerNodePoolUpgradeSettingsBlueGreenSettingsAutoscaledRolloutPolicyOutputReference
+	AutoscaledRolloutPolicyInput() *GoogleContainerNodePoolUpgradeSettingsBlueGreenSettingsAutoscaledRolloutPolicy
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -66,8 +68,11 @@ type GoogleContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference inte
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAutoscaledRolloutPolicy(value *GoogleContainerNodePoolUpgradeSettingsBlueGreenSettingsAutoscaledRolloutPolicy)
 	PutStandardRolloutPolicy(value *GoogleContainerNodePoolUpgradeSettingsBlueGreenSettingsStandardRolloutPolicy)
+	ResetAutoscaledRolloutPolicy()
 	ResetNodePoolSoakDuration()
+	ResetStandardRolloutPolicy()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -81,6 +86,26 @@ type GoogleContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference inte
 // The jsii proxy struct for GoogleContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference
 type jsiiProxy_GoogleContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GoogleContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference) AutoscaledRolloutPolicy() GoogleContainerNodePoolUpgradeSettingsBlueGreenSettingsAutoscaledRolloutPolicyOutputReference {
+	var returns GoogleContainerNodePoolUpgradeSettingsBlueGreenSettingsAutoscaledRolloutPolicyOutputReference
+	_jsii_.Get(
+		j,
+		"autoscaledRolloutPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference) AutoscaledRolloutPolicyInput() *GoogleContainerNodePoolUpgradeSettingsBlueGreenSettingsAutoscaledRolloutPolicy {
+	var returns *GoogleContainerNodePoolUpgradeSettingsBlueGreenSettingsAutoscaledRolloutPolicy
+	_jsii_.Get(
+		j,
+		"autoscaledRolloutPolicyInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference) ComplexObjectIndex() interface{} {
@@ -473,6 +498,17 @@ func (g *jsiiProxy_GoogleContainerNodePoolUpgradeSettingsBlueGreenSettingsOutput
 	return returns
 }
 
+func (g *jsiiProxy_GoogleContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference) PutAutoscaledRolloutPolicy(value *GoogleContainerNodePoolUpgradeSettingsBlueGreenSettingsAutoscaledRolloutPolicy) {
+	if err := g.validatePutAutoscaledRolloutPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAutoscaledRolloutPolicy",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference) PutStandardRolloutPolicy(value *GoogleContainerNodePoolUpgradeSettingsBlueGreenSettingsStandardRolloutPolicy) {
 	if err := g.validatePutStandardRolloutPolicyParameters(value); err != nil {
 		panic(err)
@@ -484,10 +520,26 @@ func (g *jsiiProxy_GoogleContainerNodePoolUpgradeSettingsBlueGreenSettingsOutput
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference) ResetAutoscaledRolloutPolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAutoscaledRolloutPolicy",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference) ResetNodePoolSoakDuration() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetNodePoolSoakDuration",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference) ResetStandardRolloutPolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetStandardRolloutPolicy",
 		nil, // no parameters
 	)
 }

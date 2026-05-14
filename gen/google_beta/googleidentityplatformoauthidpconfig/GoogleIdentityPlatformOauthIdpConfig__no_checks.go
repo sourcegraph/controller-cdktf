@@ -72,6 +72,10 @@ func (g *jsiiProxy_GoogleIdentityPlatformOauthIdpConfig) validateOverrideLogical
 	return nil
 }
 
+func (g *jsiiProxy_GoogleIdentityPlatformOauthIdpConfig) validatePutResponseTypeParameters(value *GoogleIdentityPlatformOauthIdpConfigResponseType) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIdentityPlatformOauthIdpConfig) validatePutTimeoutsParameters(value *GoogleIdentityPlatformOauthIdpConfigTimeouts) error {
 	return nil
 }

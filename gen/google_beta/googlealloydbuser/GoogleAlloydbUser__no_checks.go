@@ -120,6 +120,14 @@ func (j *jsiiProxy_GoogleAlloydbUser) validateSetPasswordParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_GoogleAlloydbUser) validateSetPasswordWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleAlloydbUser) validateSetPasswordWoVersionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleAlloydbUser) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

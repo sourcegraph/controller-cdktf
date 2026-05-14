@@ -76,6 +76,10 @@ func (g *jsiiProxy_GoogleComputeFirewallPolicyRule) validatePutMatchParameters(v
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeFirewallPolicyRule) validatePutTargetSecureTagsParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeFirewallPolicyRule) validatePutTimeoutsParameters(value *GoogleComputeFirewallPolicyRuleTimeouts) error {
 	return nil
 }

@@ -33,6 +33,7 @@ type DataGoogleFilestoreInstanceFileSharesOutputReference interface {
 	Name() *string
 	NfsExportOptions() DataGoogleFilestoreInstanceFileSharesNfsExportOptionsList
 	SourceBackup() *string
+	SourceBackupdrBackup() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -165,6 +166,16 @@ func (j *jsiiProxy_DataGoogleFilestoreInstanceFileSharesOutputReference) SourceB
 	_jsii_.Get(
 		j,
 		"sourceBackup",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleFilestoreInstanceFileSharesOutputReference) SourceBackupdrBackup() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceBackupdrBackup",
 		&returns,
 	)
 	return returns

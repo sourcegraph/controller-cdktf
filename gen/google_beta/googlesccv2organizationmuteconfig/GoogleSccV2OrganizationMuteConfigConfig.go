@@ -26,36 +26,36 @@ type GoogleSccV2OrganizationMuteConfigConfig struct {
 	// If a filter contains project = X but is created under the
 	// project = Y scope, it might not match any findings.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_scc_v2_organization_mute_config#filter GoogleSccV2OrganizationMuteConfig#filter}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_scc_v2_organization_mute_config#filter GoogleSccV2OrganizationMuteConfig#filter}
 	Filter *string `field:"required" json:"filter" yaml:"filter"`
 	// Unique identifier provided by the client within the parent scope.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_scc_v2_organization_mute_config#mute_config_id GoogleSccV2OrganizationMuteConfig#mute_config_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_scc_v2_organization_mute_config#mute_config_id GoogleSccV2OrganizationMuteConfig#mute_config_id}
 	MuteConfigId *string `field:"required" json:"muteConfigId" yaml:"muteConfigId"`
 	// The organization whose Cloud Security Command Center the Mute Config lives in.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_scc_v2_organization_mute_config#organization GoogleSccV2OrganizationMuteConfig#organization}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_scc_v2_organization_mute_config#organization GoogleSccV2OrganizationMuteConfig#organization}
 	Organization *string `field:"required" json:"organization" yaml:"organization"`
 	// The type of the mute config.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_scc_v2_organization_mute_config#type GoogleSccV2OrganizationMuteConfig#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_scc_v2_organization_mute_config#type GoogleSccV2OrganizationMuteConfig#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
 	// A description of the mute config.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_scc_v2_organization_mute_config#description GoogleSccV2OrganizationMuteConfig#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_scc_v2_organization_mute_config#description GoogleSccV2OrganizationMuteConfig#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_scc_v2_organization_mute_config#id GoogleSccV2OrganizationMuteConfig#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_scc_v2_organization_mute_config#id GoogleSccV2OrganizationMuteConfig#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// location Id is provided by organization. If not provided, Use global as default.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_scc_v2_organization_mute_config#location GoogleSccV2OrganizationMuteConfig#location}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_scc_v2_organization_mute_config#location GoogleSccV2OrganizationMuteConfig#location}
 	Location *string `field:"optional" json:"location" yaml:"location"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_scc_v2_organization_mute_config#timeouts GoogleSccV2OrganizationMuteConfig#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_scc_v2_organization_mute_config#timeouts GoogleSccV2OrganizationMuteConfig#timeouts}
 	Timeouts *GoogleSccV2OrganizationMuteConfigTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

@@ -84,6 +84,10 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListing) validatePutPublisherParameters(v
 	return nil
 }
 
+func (b *jsiiProxy_BigqueryAnalyticsHubListing) validatePutPubsubTopicParameters(value *BigqueryAnalyticsHubListingPubsubTopic) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryAnalyticsHubListing) validatePutRestrictedExportConfigParameters(value *BigqueryAnalyticsHubListingRestrictedExportConfig) error {
 	return nil
 }
@@ -108,6 +112,10 @@ func validateBigqueryAnalyticsHubListing_IsTerraformResourceParameters(x interfa
 	return nil
 }
 
+func (j *jsiiProxy_BigqueryAnalyticsHubListing) validateSetAllowOnlyMetadataSharingParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BigqueryAnalyticsHubListing) validateSetCategoriesParameters(val *[]*string) error {
 	return nil
 }
@@ -124,7 +132,15 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListing) validateSetDataExchangeIdParamet
 	return nil
 }
 
+func (j *jsiiProxy_BigqueryAnalyticsHubListing) validateSetDeleteCommercialParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BigqueryAnalyticsHubListing) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_BigqueryAnalyticsHubListing) validateSetDiscoveryTypeParameters(val *string) error {
 	return nil
 }
 
@@ -153,6 +169,10 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListing) validateSetListingIdParameters(v
 }
 
 func (j *jsiiProxy_BigqueryAnalyticsHubListing) validateSetLocationParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_BigqueryAnalyticsHubListing) validateSetLogLinkedDatasetQueryUserEmailParameters(val interface{}) error {
 	return nil
 }
 

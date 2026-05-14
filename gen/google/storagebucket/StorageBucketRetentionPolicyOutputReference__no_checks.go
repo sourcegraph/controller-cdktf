@@ -64,7 +64,7 @@ func (j *jsiiProxy_StorageBucketRetentionPolicyOutputReference) validateSetIsLoc
 	return nil
 }
 
-func (j *jsiiProxy_StorageBucketRetentionPolicyOutputReference) validateSetRetentionPeriodParameters(val *float64) error {
+func (j *jsiiProxy_StorageBucketRetentionPolicyOutputReference) validateSetRetentionPeriodParameters(val *string) error {
 	return nil
 }
 

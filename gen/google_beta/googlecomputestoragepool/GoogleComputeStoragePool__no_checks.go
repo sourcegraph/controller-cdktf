@@ -72,6 +72,10 @@ func (g *jsiiProxy_GoogleComputeStoragePool) validateOverrideLogicalIdParameters
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeStoragePool) validatePutParamsParameters(value *GoogleComputeStoragePoolParams) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeStoragePool) validatePutTimeoutsParameters(value *GoogleComputeStoragePoolTimeouts) error {
 	return nil
 }
@@ -109,6 +113,10 @@ func (j *jsiiProxy_GoogleComputeStoragePool) validateSetDeletionProtectionParame
 }
 
 func (j *jsiiProxy_GoogleComputeStoragePool) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeStoragePool) validateSetLabelsParameters(val *map[string]*string) error {
 	return nil
 }
 

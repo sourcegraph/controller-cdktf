@@ -80,6 +80,10 @@ func (g *jsiiProxy_GoogleDialogflowCxFlow) validatePutEventHandlersParameters(va
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDialogflowCxFlow) validatePutKnowledgeConnectorSettingsParameters(value *GoogleDialogflowCxFlowKnowledgeConnectorSettings) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDialogflowCxFlow) validatePutNluSettingsParameters(value *GoogleDialogflowCxFlowNluSettings) error {
 	return nil
 }

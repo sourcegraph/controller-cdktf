@@ -1,0 +1,6 @@
+package googlecloudsecuritycomplianceframeworkdeployment
+
+
+type GoogleCloudSecurityComplianceFrameworkDeploymentCloudControlDeploymentReferences struct {
+}
+

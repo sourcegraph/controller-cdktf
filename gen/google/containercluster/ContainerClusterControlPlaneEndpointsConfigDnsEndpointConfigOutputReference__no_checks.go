@@ -60,6 +60,14 @@ func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigO
 	return nil
 }
 
+func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference) validateSetEnableK8SCertsViaDnsParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference) validateSetEnableK8STokensViaDnsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference) validateSetEndpointParameters(val *string) error {
 	return nil
 }

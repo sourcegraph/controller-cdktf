@@ -31,6 +31,7 @@ type DataGoogleCloudRunServiceTemplateSpecContainersVolumeMountsOutputReference 
 	SetInternalValue(val *DataGoogleCloudRunServiceTemplateSpecContainersVolumeMounts)
 	MountPath() *string
 	Name() *string
+	SubPath() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -143,6 +144,16 @@ func (j *jsiiProxy_DataGoogleCloudRunServiceTemplateSpecContainersVolumeMountsOu
 	_jsii_.Get(
 		j,
 		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleCloudRunServiceTemplateSpecContainersVolumeMountsOutputReference) SubPath() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subPath",
 		&returns,
 	)
 	return returns

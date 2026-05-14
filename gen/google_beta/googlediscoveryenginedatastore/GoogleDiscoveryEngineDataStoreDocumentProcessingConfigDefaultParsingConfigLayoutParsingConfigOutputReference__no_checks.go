@@ -56,7 +56,31 @@ func (j *jsiiProxy_GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefault
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfigOutputReference) validateSetEnableImageAnnotationParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfigOutputReference) validateSetEnableTableAnnotationParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfigOutputReference) validateSetExcludeHtmlClassesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfigOutputReference) validateSetExcludeHtmlElementsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfigOutputReference) validateSetExcludeHtmlIdsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfigOutputReference) validateSetInternalValueParameters(val *GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfig) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfigOutputReference) validateSetStructuredContentTypesParameters(val *[]*string) error {
 	return nil
 }
 

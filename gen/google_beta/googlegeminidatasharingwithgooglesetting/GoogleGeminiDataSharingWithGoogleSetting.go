@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlegeminidatasharingwithgooglesetting/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_gemini_data_sharing_with_google_setting google_gemini_data_sharing_with_google_setting}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_gemini_data_sharing_with_google_setting google_gemini_data_sharing_with_google_setting}.
 type GoogleGeminiDataSharingWithGoogleSetting interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -33,6 +33,9 @@ type GoogleGeminiDataSharingWithGoogleSetting interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	EffectiveLabels() cdktf.StringMap
+	EnableDataSharing() interface{}
+	SetEnableDataSharing(val interface{})
+	EnableDataSharingInput() interface{}
 	EnablePreviewDataSharing() interface{}
 	SetEnablePreviewDataSharing(val interface{})
 	EnablePreviewDataSharingInput() interface{}
@@ -127,6 +130,7 @@ type GoogleGeminiDataSharingWithGoogleSetting interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *GoogleGeminiDataSharingWithGoogleSettingTimeouts)
+	ResetEnableDataSharing()
 	ResetEnablePreviewDataSharing()
 	ResetId()
 	ResetLabels()
@@ -239,6 +243,26 @@ func (j *jsiiProxy_GoogleGeminiDataSharingWithGoogleSetting) EffectiveLabels() c
 	_jsii_.Get(
 		j,
 		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGeminiDataSharingWithGoogleSetting) EnableDataSharing() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableDataSharing",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGeminiDataSharingWithGoogleSetting) EnableDataSharingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableDataSharingInput",
 		&returns,
 	)
 	return returns
@@ -505,7 +529,7 @@ func (j *jsiiProxy_GoogleGeminiDataSharingWithGoogleSetting) UpdateTime() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_gemini_data_sharing_with_google_setting google_gemini_data_sharing_with_google_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_gemini_data_sharing_with_google_setting google_gemini_data_sharing_with_google_setting} Resource.
 func NewGoogleGeminiDataSharingWithGoogleSetting(scope constructs.Construct, id *string, config *GoogleGeminiDataSharingWithGoogleSettingConfig) GoogleGeminiDataSharingWithGoogleSetting {
 	_init_.Initialize()
 
@@ -523,7 +547,7 @@ func NewGoogleGeminiDataSharingWithGoogleSetting(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_gemini_data_sharing_with_google_setting google_gemini_data_sharing_with_google_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_gemini_data_sharing_with_google_setting google_gemini_data_sharing_with_google_setting} Resource.
 func NewGoogleGeminiDataSharingWithGoogleSetting_Override(g GoogleGeminiDataSharingWithGoogleSetting, scope constructs.Construct, id *string, config *GoogleGeminiDataSharingWithGoogleSettingConfig) {
 	_init_.Initialize()
 
@@ -571,6 +595,17 @@ func (j *jsiiProxy_GoogleGeminiDataSharingWithGoogleSetting)SetDependsOn(val *[]
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleGeminiDataSharingWithGoogleSetting)SetEnableDataSharing(val interface{}) {
+	if err := j.validateSetEnableDataSharingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableDataSharing",
 		val,
 	)
 }
@@ -1029,6 +1064,14 @@ func (g *jsiiProxy_GoogleGeminiDataSharingWithGoogleSetting) PutTimeouts(value *
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleGeminiDataSharingWithGoogleSetting) ResetEnableDataSharing() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnableDataSharing",
+		nil, // no parameters
 	)
 }
 

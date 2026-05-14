@@ -73,6 +73,7 @@ type GoogleContainerClusterMaintenancePolicyMaintenanceExclusionOutputReference 
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutExclusionOptions(value *GoogleContainerClusterMaintenancePolicyMaintenanceExclusionExclusionOptions)
+	ResetEndTime()
 	ResetExclusionOptions()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -549,6 +550,14 @@ func (g *jsiiProxy_GoogleContainerClusterMaintenancePolicyMaintenanceExclusionOu
 		g,
 		"putExclusionOptions",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterMaintenancePolicyMaintenanceExclusionOutputReference) ResetEndTime() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEndTime",
+		nil, // no parameters
 	)
 }
 

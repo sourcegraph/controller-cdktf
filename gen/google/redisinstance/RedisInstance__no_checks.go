@@ -128,6 +128,10 @@ func (j *jsiiProxy_RedisInstance) validateSetCustomerManagedKeyParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_RedisInstance) validateSetDeletionProtectionParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedisInstance) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }
@@ -193,10 +197,6 @@ func (j *jsiiProxy_RedisInstance) validateSetReservedIpRangeParameters(val *stri
 }
 
 func (j *jsiiProxy_RedisInstance) validateSetSecondaryIpRangeParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_RedisInstance) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }
 

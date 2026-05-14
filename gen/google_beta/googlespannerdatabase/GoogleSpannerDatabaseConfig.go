@@ -21,17 +21,17 @@ type GoogleSpannerDatabaseConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The instance to create the database on.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_spanner_database#instance GoogleSpannerDatabase#instance}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_spanner_database#instance GoogleSpannerDatabase#instance}
 	Instance *string `field:"required" json:"instance" yaml:"instance"`
 	// A unique identifier for the database, which cannot be changed after the instance is created.
 	//
 	// Values are of the form '[a-z][-_a-z0-9]*[a-z0-9]'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_spanner_database#name GoogleSpannerDatabase#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_spanner_database#name GoogleSpannerDatabase#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The dialect of the Cloud Spanner Database. If it is not provided, "GOOGLE_STANDARD_SQL" will be used. Possible values: ["GOOGLE_STANDARD_SQL", "POSTGRESQL"].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_spanner_database#database_dialect GoogleSpannerDatabase#database_dialect}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_spanner_database#database_dialect GoogleSpannerDatabase#database_dialect}
 	DatabaseDialect *string `field:"optional" json:"databaseDialect" yaml:"databaseDialect"`
 	// An optional list of DDL statements to run inside the database. Statements can create tables, indexes, etc.
 	//
@@ -43,8 +43,15 @@ type GoogleSpannerDatabaseConfig struct {
 	// newly appended DDL statements can be executed in an update. However, modifications
 	// to prior statements will create a plan that marks the resource for recreation.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_spanner_database#ddl GoogleSpannerDatabase#ddl}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_spanner_database#ddl GoogleSpannerDatabase#ddl}
 	Ddl *[]*string `field:"optional" json:"ddl" yaml:"ddl"`
+	// The default time zone for the database.
+	//
+	// The default time zone must be a valid name
+	// from the tz database. Default value is "America/Los_angeles".
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_spanner_database#default_time_zone GoogleSpannerDatabase#default_time_zone}
+	DefaultTimeZone *string `field:"optional" json:"defaultTimeZone" yaml:"defaultTimeZone"`
 	// Whether Terraform will be prevented from destroying the database.
 	//
 	// Defaults to true.
@@ -54,7 +61,7 @@ type GoogleSpannerDatabaseConfig struct {
 	// or 'terraform destroy' that would delete the database will fail.
 	// When the field is set to false, deleting the database is allowed.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_spanner_database#deletion_protection GoogleSpannerDatabase#deletion_protection}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_spanner_database#deletion_protection GoogleSpannerDatabase#deletion_protection}
 	DeletionProtection interface{} `field:"optional" json:"deletionProtection" yaml:"deletionProtection"`
 	// Whether drop protection is enabled for this database.
 	//
@@ -66,22 +73,22 @@ type GoogleSpannerDatabaseConfig struct {
 	// (2) Setting "enableDropProtection" to true also prevents the deletion of the parent instance containing the database.
 	// "deletion_protection" attribute does not provide protection against the deletion of the parent instance.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_spanner_database#enable_drop_protection GoogleSpannerDatabase#enable_drop_protection}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_spanner_database#enable_drop_protection GoogleSpannerDatabase#enable_drop_protection}
 	EnableDropProtection interface{} `field:"optional" json:"enableDropProtection" yaml:"enableDropProtection"`
 	// encryption_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_spanner_database#encryption_config GoogleSpannerDatabase#encryption_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_spanner_database#encryption_config GoogleSpannerDatabase#encryption_config}
 	EncryptionConfig *GoogleSpannerDatabaseEncryptionConfig `field:"optional" json:"encryptionConfig" yaml:"encryptionConfig"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_spanner_database#id GoogleSpannerDatabase#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_spanner_database#id GoogleSpannerDatabase#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_spanner_database#project GoogleSpannerDatabase#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_spanner_database#project GoogleSpannerDatabase#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_spanner_database#timeouts GoogleSpannerDatabase#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_spanner_database#timeouts GoogleSpannerDatabase#timeouts}
 	Timeouts *GoogleSpannerDatabaseTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 	// The retention period for the database.
 	//
@@ -91,7 +98,7 @@ type GoogleSpannerDatabaseConfig struct {
 	// If this property is used, you must avoid adding new DDL statements to 'ddl' that
 	// update the database's version_retention_period.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_spanner_database#version_retention_period GoogleSpannerDatabase#version_retention_period}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_spanner_database#version_retention_period GoogleSpannerDatabase#version_retention_period}
 	VersionRetentionPeriod *string `field:"optional" json:"versionRetentionPeriod" yaml:"versionRetentionPeriod"`
 }
 

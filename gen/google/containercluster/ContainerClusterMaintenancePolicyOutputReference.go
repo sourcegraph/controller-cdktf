@@ -27,6 +27,8 @@ type ContainerClusterMaintenancePolicyOutputReference interface {
 	CreationStack() *[]*string
 	DailyMaintenanceWindow() ContainerClusterMaintenancePolicyDailyMaintenanceWindowOutputReference
 	DailyMaintenanceWindowInput() *ContainerClusterMaintenancePolicyDailyMaintenanceWindow
+	DisruptionBudget() ContainerClusterMaintenancePolicyDisruptionBudgetOutputReference
+	DisruptionBudgetInput() *ContainerClusterMaintenancePolicyDisruptionBudget
 	// Experimental.
 	Fqn() *string
 	InternalValue() *ContainerClusterMaintenancePolicy
@@ -68,9 +70,11 @@ type ContainerClusterMaintenancePolicyOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutDailyMaintenanceWindow(value *ContainerClusterMaintenancePolicyDailyMaintenanceWindow)
+	PutDisruptionBudget(value *ContainerClusterMaintenancePolicyDisruptionBudget)
 	PutMaintenanceExclusion(value interface{})
 	PutRecurringWindow(value *ContainerClusterMaintenancePolicyRecurringWindow)
 	ResetDailyMaintenanceWindow()
+	ResetDisruptionBudget()
 	ResetMaintenanceExclusion()
 	ResetRecurringWindow()
 	// Produce the Token's value at resolution time.
@@ -133,6 +137,26 @@ func (j *jsiiProxy_ContainerClusterMaintenancePolicyOutputReference) DailyMainte
 	_jsii_.Get(
 		j,
 		"dailyMaintenanceWindowInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterMaintenancePolicyOutputReference) DisruptionBudget() ContainerClusterMaintenancePolicyDisruptionBudgetOutputReference {
+	var returns ContainerClusterMaintenancePolicyDisruptionBudgetOutputReference
+	_jsii_.Get(
+		j,
+		"disruptionBudget",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterMaintenancePolicyOutputReference) DisruptionBudgetInput() *ContainerClusterMaintenancePolicyDisruptionBudget {
+	var returns *ContainerClusterMaintenancePolicyDisruptionBudget
+	_jsii_.Get(
+		j,
+		"disruptionBudgetInput",
 		&returns,
 	)
 	return returns
@@ -498,6 +522,17 @@ func (c *jsiiProxy_ContainerClusterMaintenancePolicyOutputReference) PutDailyMai
 	)
 }
 
+func (c *jsiiProxy_ContainerClusterMaintenancePolicyOutputReference) PutDisruptionBudget(value *ContainerClusterMaintenancePolicyDisruptionBudget) {
+	if err := c.validatePutDisruptionBudgetParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putDisruptionBudget",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerClusterMaintenancePolicyOutputReference) PutMaintenanceExclusion(value interface{}) {
 	if err := c.validatePutMaintenanceExclusionParameters(value); err != nil {
 		panic(err)
@@ -524,6 +559,14 @@ func (c *jsiiProxy_ContainerClusterMaintenancePolicyOutputReference) ResetDailyM
 	_jsii_.InvokeVoid(
 		c,
 		"resetDailyMaintenanceWindow",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterMaintenancePolicyOutputReference) ResetDisruptionBudget() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDisruptionBudget",
 		nil, // no parameters
 	)
 }

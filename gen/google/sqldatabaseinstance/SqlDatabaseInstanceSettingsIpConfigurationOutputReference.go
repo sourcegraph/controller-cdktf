@@ -54,6 +54,9 @@ type SqlDatabaseInstanceSettingsIpConfigurationOutputReference interface {
 	ServerCaPool() *string
 	SetServerCaPool(val *string)
 	ServerCaPoolInput() *string
+	ServerCertificateRotationMode() *string
+	SetServerCertificateRotationMode(val *string)
+	ServerCertificateRotationModeInput() *string
 	SslMode() *string
 	SetSslMode(val *string)
 	SslModeInput() *string
@@ -100,6 +103,7 @@ type SqlDatabaseInstanceSettingsIpConfigurationOutputReference interface {
 	ResetPscConfig()
 	ResetServerCaMode()
 	ResetServerCaPool()
+	ResetServerCertificateRotationMode()
 	ResetSslMode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -346,6 +350,26 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) Se
 	return returns
 }
 
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) ServerCertificateRotationMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serverCertificateRotationMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) ServerCertificateRotationModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serverCertificateRotationModeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) SslMode() *string {
 	var returns *string
 	_jsii_.Get(
@@ -520,6 +544,17 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference)Set
 	_jsii_.Set(
 		j,
 		"serverCaPool",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference)SetServerCertificateRotationMode(val *string) {
+	if err := j.validateSetServerCertificateRotationModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serverCertificateRotationMode",
 		val,
 	)
 }
@@ -833,6 +868,14 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) Re
 	_jsii_.InvokeVoid(
 		s,
 		"resetServerCaPool",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) ResetServerCertificateRotationMode() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetServerCertificateRotationMode",
 		nil, // no parameters
 	)
 }

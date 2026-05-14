@@ -9,12 +9,17 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeinterconnect/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_interconnect google_compute_interconnect}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_compute_interconnect google_compute_interconnect}.
 type GoogleComputeInterconnect interface {
 	cdktf.TerraformResource
+	AaiEnabled() interface{}
+	SetAaiEnabled(val interface{})
+	AaiEnabledInput() interface{}
 	AdminEnabled() interface{}
 	SetAdminEnabled(val interface{})
 	AdminEnabledInput() interface{}
+	ApplicationAwareInterconnect() GoogleComputeInterconnectApplicationAwareInterconnectOutputReference
+	ApplicationAwareInterconnectInput() *GoogleComputeInterconnectApplicationAwareInterconnect
 	AvailableFeatures() *[]*string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -56,6 +61,7 @@ type GoogleComputeInterconnect interface {
 	SetId(val *string)
 	IdInput() *string
 	InterconnectAttachments() *[]*string
+	InterconnectGroups() *[]*string
 	InterconnectType() *string
 	SetInterconnectType(val *string)
 	InterconnectTypeInput() *string
@@ -87,6 +93,8 @@ type GoogleComputeInterconnect interface {
 	// The tree node.
 	Node() constructs.Node
 	OperationalStatus() *string
+	Params() GoogleComputeInterconnectParamsOutputReference
+	ParamsInput() *GoogleComputeInterconnectParams
 	PeerIpAddress() *string
 	Project() *string
 	SetProject(val *string)
@@ -122,6 +130,7 @@ type GoogleComputeInterconnect interface {
 	TerraformResourceType() *string
 	Timeouts() GoogleComputeInterconnectTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	WireGroups() *[]*string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -165,20 +174,24 @@ type GoogleComputeInterconnect interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutApplicationAwareInterconnect(value *GoogleComputeInterconnectApplicationAwareInterconnect)
 	PutMacsec(value *GoogleComputeInterconnectMacsec)
+	PutParams(value *GoogleComputeInterconnectParams)
 	PutTimeouts(value *GoogleComputeInterconnectTimeouts)
+	ResetAaiEnabled()
 	ResetAdminEnabled()
+	ResetApplicationAwareInterconnect()
 	ResetCustomerName()
 	ResetDescription()
 	ResetId()
 	ResetLabels()
-	ResetLocation()
 	ResetMacsec()
 	ResetMacsecEnabled()
 	ResetNocContactEmail()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetParams()
 	ResetProject()
 	ResetRemoteLocation()
 	ResetRequestedFeatures()
@@ -201,6 +214,26 @@ type jsiiProxy_GoogleComputeInterconnect struct {
 	internal.Type__cdktfTerraformResource
 }
 
+func (j *jsiiProxy_GoogleComputeInterconnect) AaiEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"aaiEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInterconnect) AaiEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"aaiEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeInterconnect) AdminEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -216,6 +249,26 @@ func (j *jsiiProxy_GoogleComputeInterconnect) AdminEnabledInput() interface{} {
 	_jsii_.Get(
 		j,
 		"adminEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInterconnect) ApplicationAwareInterconnect() GoogleComputeInterconnectApplicationAwareInterconnectOutputReference {
+	var returns GoogleComputeInterconnectApplicationAwareInterconnectOutputReference
+	_jsii_.Get(
+		j,
+		"applicationAwareInterconnect",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInterconnect) ApplicationAwareInterconnectInput() *GoogleComputeInterconnectApplicationAwareInterconnect {
+	var returns *GoogleComputeInterconnectApplicationAwareInterconnect
+	_jsii_.Get(
+		j,
+		"applicationAwareInterconnectInput",
 		&returns,
 	)
 	return returns
@@ -441,6 +494,16 @@ func (j *jsiiProxy_GoogleComputeInterconnect) InterconnectAttachments() *[]*stri
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeInterconnect) InterconnectGroups() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"interconnectGroups",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeInterconnect) InterconnectType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -636,6 +699,26 @@ func (j *jsiiProxy_GoogleComputeInterconnect) OperationalStatus() *string {
 	_jsii_.Get(
 		j,
 		"operationalStatus",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInterconnect) Params() GoogleComputeInterconnectParamsOutputReference {
+	var returns GoogleComputeInterconnectParamsOutputReference
+	_jsii_.Get(
+		j,
+		"params",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInterconnect) ParamsInput() *GoogleComputeInterconnectParams {
+	var returns *GoogleComputeInterconnectParams
+	_jsii_.Get(
+		j,
+		"paramsInput",
 		&returns,
 	)
 	return returns
@@ -851,8 +934,18 @@ func (j *jsiiProxy_GoogleComputeInterconnect) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeInterconnect) WireGroups() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"wireGroups",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_interconnect google_compute_interconnect} Resource.
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_compute_interconnect google_compute_interconnect} Resource.
 func NewGoogleComputeInterconnect(scope constructs.Construct, id *string, config *GoogleComputeInterconnectConfig) GoogleComputeInterconnect {
 	_init_.Initialize()
 
@@ -870,7 +963,7 @@ func NewGoogleComputeInterconnect(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_interconnect google_compute_interconnect} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_compute_interconnect google_compute_interconnect} Resource.
 func NewGoogleComputeInterconnect_Override(g GoogleComputeInterconnect, scope constructs.Construct, id *string, config *GoogleComputeInterconnectConfig) {
 	_init_.Initialize()
 
@@ -878,6 +971,17 @@ func NewGoogleComputeInterconnect_Override(g GoogleComputeInterconnect, scope co
 		"@cdktf/provider-google-beta.googleComputeInterconnect.GoogleComputeInterconnect",
 		[]interface{}{scope, id, config},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeInterconnect)SetAaiEnabled(val interface{}) {
+	if err := j.validateSetAaiEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"aaiEnabled",
+		val,
 	)
 }
 
@@ -1467,6 +1571,17 @@ func (g *jsiiProxy_GoogleComputeInterconnect) OverrideLogicalId(newLogicalId *st
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeInterconnect) PutApplicationAwareInterconnect(value *GoogleComputeInterconnectApplicationAwareInterconnect) {
+	if err := g.validatePutApplicationAwareInterconnectParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putApplicationAwareInterconnect",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeInterconnect) PutMacsec(value *GoogleComputeInterconnectMacsec) {
 	if err := g.validatePutMacsecParameters(value); err != nil {
 		panic(err)
@@ -1474,6 +1589,17 @@ func (g *jsiiProxy_GoogleComputeInterconnect) PutMacsec(value *GoogleComputeInte
 	_jsii_.InvokeVoid(
 		g,
 		"putMacsec",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInterconnect) PutParams(value *GoogleComputeInterconnectParams) {
+	if err := g.validatePutParamsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putParams",
 		[]interface{}{value},
 	)
 }
@@ -1489,10 +1615,26 @@ func (g *jsiiProxy_GoogleComputeInterconnect) PutTimeouts(value *GoogleComputeIn
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeInterconnect) ResetAaiEnabled() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAaiEnabled",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeInterconnect) ResetAdminEnabled() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetAdminEnabled",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInterconnect) ResetApplicationAwareInterconnect() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetApplicationAwareInterconnect",
 		nil, // no parameters
 	)
 }
@@ -1529,14 +1671,6 @@ func (g *jsiiProxy_GoogleComputeInterconnect) ResetLabels() {
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeInterconnect) ResetLocation() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetLocation",
-		nil, // no parameters
-	)
-}
-
 func (g *jsiiProxy_GoogleComputeInterconnect) ResetMacsec() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1565,6 +1699,14 @@ func (g *jsiiProxy_GoogleComputeInterconnect) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInterconnect) ResetParams() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetParams",
 		nil, // no parameters
 	)
 }

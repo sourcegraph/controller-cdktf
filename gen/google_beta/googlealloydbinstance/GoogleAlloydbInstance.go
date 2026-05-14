@@ -9,9 +9,12 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlealloydbinstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_alloydb_instance google_alloydb_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_alloydb_instance google_alloydb_instance}.
 type GoogleAlloydbInstance interface {
 	cdktf.TerraformResource
+	ActivationPolicy() *string
+	SetActivationPolicy(val *string)
+	ActivationPolicyInput() *string
 	Annotations() *map[string]*string
 	SetAnnotations(val *map[string]*string)
 	AnnotationsInput() *map[string]*string
@@ -29,6 +32,8 @@ type GoogleAlloydbInstance interface {
 	Connection() interface{}
 	// Experimental.
 	SetConnection(val interface{})
+	ConnectionPoolConfig() GoogleAlloydbInstanceConnectionPoolConfigOutputReference
+	ConnectionPoolConfigInput() *GoogleAlloydbInstanceConnectionPoolConfig
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -160,6 +165,7 @@ type GoogleAlloydbInstance interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutClientConnectionConfig(value *GoogleAlloydbInstanceClientConnectionConfig)
+	PutConnectionPoolConfig(value *GoogleAlloydbInstanceConnectionPoolConfig)
 	PutMachineConfig(value *GoogleAlloydbInstanceMachineConfig)
 	PutNetworkConfig(value *GoogleAlloydbInstanceNetworkConfig)
 	PutObservabilityConfig(value *GoogleAlloydbInstanceObservabilityConfig)
@@ -167,9 +173,11 @@ type GoogleAlloydbInstance interface {
 	PutQueryInsightsConfig(value *GoogleAlloydbInstanceQueryInsightsConfig)
 	PutReadPoolConfig(value *GoogleAlloydbInstanceReadPoolConfig)
 	PutTimeouts(value *GoogleAlloydbInstanceTimeouts)
+	ResetActivationPolicy()
 	ResetAnnotations()
 	ResetAvailabilityType()
 	ResetClientConnectionConfig()
+	ResetConnectionPoolConfig()
 	ResetDatabaseFlags()
 	ResetDisplayName()
 	ResetGceZone()
@@ -201,6 +209,26 @@ type GoogleAlloydbInstance interface {
 // The jsii proxy struct for GoogleAlloydbInstance
 type jsiiProxy_GoogleAlloydbInstance struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GoogleAlloydbInstance) ActivationPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"activationPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAlloydbInstance) ActivationPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"activationPolicyInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleAlloydbInstance) Annotations() *map[string]*string {
@@ -298,6 +326,26 @@ func (j *jsiiProxy_GoogleAlloydbInstance) Connection() interface{} {
 	_jsii_.Get(
 		j,
 		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAlloydbInstance) ConnectionPoolConfig() GoogleAlloydbInstanceConnectionPoolConfigOutputReference {
+	var returns GoogleAlloydbInstanceConnectionPoolConfigOutputReference
+	_jsii_.Get(
+		j,
+		"connectionPoolConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAlloydbInstance) ConnectionPoolConfigInput() *GoogleAlloydbInstanceConnectionPoolConfig {
+	var returns *GoogleAlloydbInstanceConnectionPoolConfig
+	_jsii_.Get(
+		j,
+		"connectionPoolConfigInput",
 		&returns,
 	)
 	return returns
@@ -844,7 +892,7 @@ func (j *jsiiProxy_GoogleAlloydbInstance) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_alloydb_instance google_alloydb_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_alloydb_instance google_alloydb_instance} Resource.
 func NewGoogleAlloydbInstance(scope constructs.Construct, id *string, config *GoogleAlloydbInstanceConfig) GoogleAlloydbInstance {
 	_init_.Initialize()
 
@@ -862,7 +910,7 @@ func NewGoogleAlloydbInstance(scope constructs.Construct, id *string, config *Go
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_alloydb_instance google_alloydb_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_alloydb_instance google_alloydb_instance} Resource.
 func NewGoogleAlloydbInstance_Override(g GoogleAlloydbInstance, scope constructs.Construct, id *string, config *GoogleAlloydbInstanceConfig) {
 	_init_.Initialize()
 
@@ -870,6 +918,17 @@ func NewGoogleAlloydbInstance_Override(g GoogleAlloydbInstance, scope constructs
 		"@cdktf/provider-google-beta.googleAlloydbInstance.GoogleAlloydbInstance",
 		[]interface{}{scope, id, config},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GoogleAlloydbInstance)SetActivationPolicy(val *string) {
+	if err := j.validateSetActivationPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"activationPolicy",
+		val,
 	)
 }
 
@@ -1415,6 +1474,17 @@ func (g *jsiiProxy_GoogleAlloydbInstance) PutClientConnectionConfig(value *Googl
 	)
 }
 
+func (g *jsiiProxy_GoogleAlloydbInstance) PutConnectionPoolConfig(value *GoogleAlloydbInstanceConnectionPoolConfig) {
+	if err := g.validatePutConnectionPoolConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putConnectionPoolConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleAlloydbInstance) PutMachineConfig(value *GoogleAlloydbInstanceMachineConfig) {
 	if err := g.validatePutMachineConfigParameters(value); err != nil {
 		panic(err)
@@ -1492,6 +1562,14 @@ func (g *jsiiProxy_GoogleAlloydbInstance) PutTimeouts(value *GoogleAlloydbInstan
 	)
 }
 
+func (g *jsiiProxy_GoogleAlloydbInstance) ResetActivationPolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetActivationPolicy",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleAlloydbInstance) ResetAnnotations() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1512,6 +1590,14 @@ func (g *jsiiProxy_GoogleAlloydbInstance) ResetClientConnectionConfig() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetClientConnectionConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAlloydbInstance) ResetConnectionPoolConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetConnectionPoolConfig",
 		nil, // no parameters
 	)
 }

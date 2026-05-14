@@ -72,7 +72,19 @@ func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) validateOverride
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) validatePutHeaderActionParameters(value *GoogleComputeOrganizationSecurityPolicyRuleHeaderAction) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) validatePutMatchParameters(value *GoogleComputeOrganizationSecurityPolicyRuleMatch) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) validatePutPreconfiguredWafConfigParameters(value *GoogleComputeOrganizationSecurityPolicyRulePreconfiguredWafConfig) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) validatePutRedirectOptionsParameters(value *GoogleComputeOrganizationSecurityPolicyRuleRedirectOptions) error {
 	return nil
 }
 

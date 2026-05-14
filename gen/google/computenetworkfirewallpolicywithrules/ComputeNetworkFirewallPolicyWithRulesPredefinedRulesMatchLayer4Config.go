@@ -1,0 +1,6 @@
+package computenetworkfirewallpolicywithrules
+
+
+type ComputeNetworkFirewallPolicyWithRulesPredefinedRulesMatchLayer4Config struct {
+}
+

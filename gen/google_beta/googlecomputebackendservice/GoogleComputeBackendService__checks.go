@@ -299,6 +299,17 @@ func (g *jsiiProxy_GoogleComputeBackendService) validatePutCustomMetricsParamete
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeBackendService) validatePutDynamicForwardingParameters(value *GoogleComputeBackendServiceDynamicForwarding) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeBackendService) validatePutIapParameters(value *GoogleComputeBackendServiceIap) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -363,7 +374,29 @@ func (g *jsiiProxy_GoogleComputeBackendService) validatePutMaxStreamDurationPara
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeBackendService) validatePutNetworkPassThroughLbTrafficPolicyParameters(value *GoogleComputeBackendServiceNetworkPassThroughLbTrafficPolicy) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeBackendService) validatePutOutlierDetectionParameters(value *GoogleComputeBackendServiceOutlierDetection) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeBackendService) validatePutParamsParameters(value *GoogleComputeBackendServiceParams) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -619,6 +652,22 @@ func (j *jsiiProxy_GoogleComputeBackendService) validateSetEnableCdnParameters(v
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeBackendService) validateSetExternalManagedMigrationStateParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeBackendService) validateSetExternalManagedMigrationTestingPercentageParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

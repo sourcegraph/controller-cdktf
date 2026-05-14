@@ -76,6 +76,10 @@ func (l *jsiiProxy_LookerInstance) validatePutAdminSettingsParameters(value *Loo
 	return nil
 }
 
+func (l *jsiiProxy_LookerInstance) validatePutControlledEgressConfigParameters(value *LookerInstanceControlledEgressConfig) error {
+	return nil
+}
+
 func (l *jsiiProxy_LookerInstance) validatePutCustomDomainParameters(value *LookerInstanceCustomDomain) error {
 	return nil
 }
@@ -93,6 +97,10 @@ func (l *jsiiProxy_LookerInstance) validatePutMaintenanceWindowParameters(value 
 }
 
 func (l *jsiiProxy_LookerInstance) validatePutOauthConfigParameters(value *LookerInstanceOauthConfig) error {
+	return nil
+}
+
+func (l *jsiiProxy_LookerInstance) validatePutPeriodicExportConfigParameters(value *LookerInstancePeriodicExportConfig) error {
 	return nil
 }
 
@@ -132,6 +140,10 @@ func (j *jsiiProxy_LookerInstance) validateSetConsumerNetworkParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_LookerInstance) validateSetControlledEgressEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LookerInstance) validateSetCountParameters(val interface{}) error {
 	return nil
 }
@@ -141,6 +153,10 @@ func (j *jsiiProxy_LookerInstance) validateSetDeletionPolicyParameters(val *stri
 }
 
 func (j *jsiiProxy_LookerInstance) validateSetFipsEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_LookerInstance) validateSetGeminiEnabledParameters(val interface{}) error {
 	return nil
 }
 

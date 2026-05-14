@@ -60,6 +60,10 @@ func (g *jsiiProxy_GoogleDataplexDatascanDataProfileSpecOutputReference) validat
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataplexDatascanDataProfileSpecOutputReference) validateSetCatalogPublishingEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataplexDatascanDataProfileSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

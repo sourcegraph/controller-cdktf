@@ -215,6 +215,17 @@ func (d *jsiiProxy_DatabaseMigrationServiceMigrationJob) validatePutDumpFlagsPar
 	return nil
 }
 
+func (d *jsiiProxy_DatabaseMigrationServiceMigrationJob) validatePutObjectsConfigParameters(value *DatabaseMigrationServiceMigrationJobObjectsConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DatabaseMigrationServiceMigrationJob) validatePutPerformanceConfigParameters(value *DatabaseMigrationServiceMigrationJobPerformanceConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

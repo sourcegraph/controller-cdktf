@@ -72,6 +72,10 @@ func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) validateOverrideLogicalIdPara
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) validatePutGatewayParameters(value *GoogleNetworkConnectivitySpokeGateway) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) validatePutLinkedInterconnectAttachmentsParameters(value *GoogleNetworkConnectivitySpokeLinkedInterconnectAttachments) error {
 	return nil
 }

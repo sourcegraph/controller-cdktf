@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlestoragenotification/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_storage_notification google_storage_notification}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_storage_notification google_storage_notification}.
 type GoogleStorageNotification interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -46,8 +46,6 @@ type GoogleStorageNotification interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -126,7 +124,6 @@ type GoogleStorageNotification interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetCustomAttributes()
 	ResetEventTypes()
-	ResetId()
 	ResetObjectNamePrefix()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -299,16 +296,6 @@ func (j *jsiiProxy_GoogleStorageNotification) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleStorageNotification) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_GoogleStorageNotification) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -470,7 +457,7 @@ func (j *jsiiProxy_GoogleStorageNotification) TopicInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_storage_notification google_storage_notification} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_storage_notification google_storage_notification} Resource.
 func NewGoogleStorageNotification(scope constructs.Construct, id *string, config *GoogleStorageNotificationConfig) GoogleStorageNotification {
 	_init_.Initialize()
 
@@ -488,7 +475,7 @@ func NewGoogleStorageNotification(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_storage_notification google_storage_notification} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_storage_notification google_storage_notification} Resource.
 func NewGoogleStorageNotification_Override(g GoogleStorageNotification, scope constructs.Construct, id *string, config *GoogleStorageNotificationConfig) {
 	_init_.Initialize()
 
@@ -566,17 +553,6 @@ func (j *jsiiProxy_GoogleStorageNotification)SetForEach(val cdktf.ITerraformIter
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_GoogleStorageNotification)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -1009,14 +985,6 @@ func (g *jsiiProxy_GoogleStorageNotification) ResetEventTypes() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetEventTypes",
-		nil, // no parameters
-	)
-}
-
-func (g *jsiiProxy_GoogleStorageNotification) ResetId() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetId",
 		nil, // no parameters
 	)
 }

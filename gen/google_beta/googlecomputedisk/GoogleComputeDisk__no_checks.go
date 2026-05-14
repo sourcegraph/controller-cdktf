@@ -148,6 +148,10 @@ func (j *jsiiProxy_GoogleComputeDisk) validateSetEnableConfidentialComputeParame
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeDisk) validateSetEraseWindowsVssSignatureParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeDisk) validateSetIdParameters(val *string) error {
 	return nil
 }

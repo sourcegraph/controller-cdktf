@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecloudidentitygroupmembership/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_cloud_identity_group_membership google_cloud_identity_group_membership}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_cloud_identity_group_membership google_cloud_identity_group_membership}.
 type GoogleCloudIdentityGroupMembership interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -24,6 +24,9 @@ type GoogleCloudIdentityGroupMembership interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreateIgnoreAlreadyExists() interface{}
+	SetCreateIgnoreAlreadyExists(val interface{})
+	CreateIgnoreAlreadyExistsInput() interface{}
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -123,6 +126,7 @@ type GoogleCloudIdentityGroupMembership interface {
 	PutPreferredMemberKey(value *GoogleCloudIdentityGroupMembershipPreferredMemberKey)
 	PutRoles(value interface{})
 	PutTimeouts(value *GoogleCloudIdentityGroupMembershipTimeouts)
+	ResetCreateIgnoreAlreadyExists()
 	ResetId()
 	ResetMemberKey()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -183,6 +187,26 @@ func (j *jsiiProxy_GoogleCloudIdentityGroupMembership) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudIdentityGroupMembership) CreateIgnoreAlreadyExists() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"createIgnoreAlreadyExists",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudIdentityGroupMembership) CreateIgnoreAlreadyExistsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"createIgnoreAlreadyExistsInput",
 		&returns,
 	)
 	return returns
@@ -469,7 +493,7 @@ func (j *jsiiProxy_GoogleCloudIdentityGroupMembership) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_cloud_identity_group_membership google_cloud_identity_group_membership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_cloud_identity_group_membership google_cloud_identity_group_membership} Resource.
 func NewGoogleCloudIdentityGroupMembership(scope constructs.Construct, id *string, config *GoogleCloudIdentityGroupMembershipConfig) GoogleCloudIdentityGroupMembership {
 	_init_.Initialize()
 
@@ -487,7 +511,7 @@ func NewGoogleCloudIdentityGroupMembership(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_cloud_identity_group_membership google_cloud_identity_group_membership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_cloud_identity_group_membership google_cloud_identity_group_membership} Resource.
 func NewGoogleCloudIdentityGroupMembership_Override(g GoogleCloudIdentityGroupMembership, scope constructs.Construct, id *string, config *GoogleCloudIdentityGroupMembershipConfig) {
 	_init_.Initialize()
 
@@ -516,6 +540,17 @@ func (j *jsiiProxy_GoogleCloudIdentityGroupMembership)SetCount(val interface{}) 
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCloudIdentityGroupMembership)SetCreateIgnoreAlreadyExists(val interface{}) {
+	if err := j.validateSetCreateIgnoreAlreadyExistsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"createIgnoreAlreadyExists",
 		val,
 	)
 }
@@ -982,6 +1017,14 @@ func (g *jsiiProxy_GoogleCloudIdentityGroupMembership) PutTimeouts(value *Google
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudIdentityGroupMembership) ResetCreateIgnoreAlreadyExists() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCreateIgnoreAlreadyExists",
+		nil, // no parameters
 	)
 }
 

@@ -44,6 +44,10 @@ func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromSourcesPrincipalsOutpu
 	return nil
 }
 
+func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromSourcesPrincipalsOutputReference) validatePutPrincipalParameters(value *NetworkSecurityAuthzPolicyHttpRulesFromSourcesPrincipalsPrincipal) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromSourcesPrincipalsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromSourcesPrincipalsOutpu
 }
 
 func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromSourcesPrincipalsOutputReference) validateSetPrefixParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromSourcesPrincipalsOutputReference) validateSetPrincipalSelectorParameters(val *string) error {
 	return nil
 }
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/vertexaiindexendpoint/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/vertex_ai_index_endpoint google_vertex_ai_index_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_index_endpoint google_vertex_ai_index_endpoint}.
 type VertexAiIndexEndpoint interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -36,6 +36,8 @@ type VertexAiIndexEndpoint interface {
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
 	EffectiveLabels() cdktf.StringMap
+	EncryptionSpec() VertexAiIndexEndpointEncryptionSpecOutputReference
+	EncryptionSpecInput() *VertexAiIndexEndpointEncryptionSpec
 	Etag() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -136,9 +138,11 @@ type VertexAiIndexEndpoint interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutEncryptionSpec(value *VertexAiIndexEndpointEncryptionSpec)
 	PutPrivateServiceConnectConfig(value *VertexAiIndexEndpointPrivateServiceConnectConfig)
 	PutTimeouts(value *VertexAiIndexEndpointTimeouts)
 	ResetDescription()
+	ResetEncryptionSpec()
 	ResetId()
 	ResetLabels()
 	ResetNetwork()
@@ -273,6 +277,26 @@ func (j *jsiiProxy_VertexAiIndexEndpoint) EffectiveLabels() cdktf.StringMap {
 	_jsii_.Get(
 		j,
 		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VertexAiIndexEndpoint) EncryptionSpec() VertexAiIndexEndpointEncryptionSpecOutputReference {
+	var returns VertexAiIndexEndpointEncryptionSpecOutputReference
+	_jsii_.Get(
+		j,
+		"encryptionSpec",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VertexAiIndexEndpoint) EncryptionSpecInput() *VertexAiIndexEndpointEncryptionSpec {
+	var returns *VertexAiIndexEndpointEncryptionSpec
+	_jsii_.Get(
+		j,
+		"encryptionSpecInput",
 		&returns,
 	)
 	return returns
@@ -599,7 +623,7 @@ func (j *jsiiProxy_VertexAiIndexEndpoint) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/vertex_ai_index_endpoint google_vertex_ai_index_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_index_endpoint google_vertex_ai_index_endpoint} Resource.
 func NewVertexAiIndexEndpoint(scope constructs.Construct, id *string, config *VertexAiIndexEndpointConfig) VertexAiIndexEndpoint {
 	_init_.Initialize()
 
@@ -617,7 +641,7 @@ func NewVertexAiIndexEndpoint(scope constructs.Construct, id *string, config *Ve
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/vertex_ai_index_endpoint google_vertex_ai_index_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_index_endpoint google_vertex_ai_index_endpoint} Resource.
 func NewVertexAiIndexEndpoint_Override(v VertexAiIndexEndpoint, scope constructs.Construct, id *string, config *VertexAiIndexEndpointConfig) {
 	_init_.Initialize()
 
@@ -1137,6 +1161,17 @@ func (v *jsiiProxy_VertexAiIndexEndpoint) OverrideLogicalId(newLogicalId *string
 	)
 }
 
+func (v *jsiiProxy_VertexAiIndexEndpoint) PutEncryptionSpec(value *VertexAiIndexEndpointEncryptionSpec) {
+	if err := v.validatePutEncryptionSpecParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"putEncryptionSpec",
+		[]interface{}{value},
+	)
+}
+
 func (v *jsiiProxy_VertexAiIndexEndpoint) PutPrivateServiceConnectConfig(value *VertexAiIndexEndpointPrivateServiceConnectConfig) {
 	if err := v.validatePutPrivateServiceConnectConfigParameters(value); err != nil {
 		panic(err)
@@ -1163,6 +1198,14 @@ func (v *jsiiProxy_VertexAiIndexEndpoint) ResetDescription() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VertexAiIndexEndpoint) ResetEncryptionSpec() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetEncryptionSpec",
 		nil, // no parameters
 	)
 }

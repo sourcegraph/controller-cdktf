@@ -92,6 +92,10 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validatePutParamsParameter
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validatePutResourcePoliciesParameters(value *GoogleComputeInstanceGroupManagerResourcePolicies) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validatePutStandbyPolicyParameters(value *GoogleComputeInstanceGroupManagerStandbyPolicy) error {
 	return nil
 }
@@ -105,6 +109,10 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validatePutStatefulExterna
 }
 
 func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validatePutStatefulInternalIpParameters(value interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validatePutTargetSizePolicyParameters(value interface{}) error {
 	return nil
 }
 

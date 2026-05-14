@@ -12,6 +12,8 @@ type ContainerNodePoolNodeConfigOutputReference interface {
 	cdktf.ComplexObject
 	AdvancedMachineFeatures() ContainerNodePoolNodeConfigAdvancedMachineFeaturesOutputReference
 	AdvancedMachineFeaturesInput() *ContainerNodePoolNodeConfigAdvancedMachineFeatures
+	BootDisk() ContainerNodePoolNodeConfigBootDiskOutputReference
+	BootDiskInput() *ContainerNodePoolNodeConfigBootDisk
 	BootDiskKmsKey() *string
 	SetBootDiskKmsKey(val *string)
 	BootDiskKmsKeyInput() *string
@@ -48,6 +50,9 @@ type ContainerNodePoolNodeConfigOutputReference interface {
 	EphemeralStorageLocalSsdConfigInput() *ContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfig
 	FastSocket() ContainerNodePoolNodeConfigFastSocketOutputReference
 	FastSocketInput() *ContainerNodePoolNodeConfigFastSocket
+	FlexStart() interface{}
+	SetFlexStart(val interface{})
+	FlexStartInput() interface{}
 	// Experimental.
 	Fqn() *string
 	GcfsConfig() ContainerNodePoolNodeConfigGcfsConfigOutputReference
@@ -110,6 +115,8 @@ type ContainerNodePoolNodeConfigOutputReference interface {
 	ResourceManagerTags() *map[string]*string
 	SetResourceManagerTags(val *map[string]*string)
 	ResourceManagerTagsInput() *map[string]*string
+	SandboxConfig() ContainerNodePoolNodeConfigSandboxConfigOutputReference
+	SandboxConfigInput() *ContainerNodePoolNodeConfigSandboxConfig
 	SecondaryBootDisks() ContainerNodePoolNodeConfigSecondaryBootDisksList
 	SecondaryBootDisksInput() interface{}
 	ServiceAccount() *string
@@ -167,6 +174,7 @@ type ContainerNodePoolNodeConfigOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAdvancedMachineFeatures(value *ContainerNodePoolNodeConfigAdvancedMachineFeatures)
+	PutBootDisk(value *ContainerNodePoolNodeConfigBootDisk)
 	PutConfidentialNodes(value *ContainerNodePoolNodeConfigConfidentialNodes)
 	PutContainerdConfig(value *ContainerNodePoolNodeConfigContainerdConfig)
 	PutEphemeralStorageLocalSsdConfig(value *ContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfig)
@@ -179,6 +187,7 @@ type ContainerNodePoolNodeConfigOutputReference interface {
 	PutLinuxNodeConfig(value *ContainerNodePoolNodeConfigLinuxNodeConfig)
 	PutLocalNvmeSsdBlockConfig(value *ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfig)
 	PutReservationAffinity(value *ContainerNodePoolNodeConfigReservationAffinity)
+	PutSandboxConfig(value *ContainerNodePoolNodeConfigSandboxConfig)
 	PutSecondaryBootDisks(value interface{})
 	PutShieldedInstanceConfig(value *ContainerNodePoolNodeConfigShieldedInstanceConfig)
 	PutSoleTenantConfig(value *ContainerNodePoolNodeConfigSoleTenantConfig)
@@ -186,6 +195,7 @@ type ContainerNodePoolNodeConfigOutputReference interface {
 	PutWindowsNodeConfig(value *ContainerNodePoolNodeConfigWindowsNodeConfig)
 	PutWorkloadMetadataConfig(value *ContainerNodePoolNodeConfigWorkloadMetadataConfig)
 	ResetAdvancedMachineFeatures()
+	ResetBootDisk()
 	ResetBootDiskKmsKey()
 	ResetConfidentialNodes()
 	ResetContainerdConfig()
@@ -194,6 +204,7 @@ type ContainerNodePoolNodeConfigOutputReference interface {
 	ResetEnableConfidentialStorage()
 	ResetEphemeralStorageLocalSsdConfig()
 	ResetFastSocket()
+	ResetFlexStart()
 	ResetGcfsConfig()
 	ResetGuestAccelerator()
 	ResetGvnic()
@@ -216,6 +227,7 @@ type ContainerNodePoolNodeConfigOutputReference interface {
 	ResetReservationAffinity()
 	ResetResourceLabels()
 	ResetResourceManagerTags()
+	ResetSandboxConfig()
 	ResetSecondaryBootDisks()
 	ResetServiceAccount()
 	ResetShieldedInstanceConfig()
@@ -256,6 +268,26 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) AdvancedMachineFe
 	_jsii_.Get(
 		j,
 		"advancedMachineFeaturesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) BootDisk() ContainerNodePoolNodeConfigBootDiskOutputReference {
+	var returns ContainerNodePoolNodeConfigBootDiskOutputReference
+	_jsii_.Get(
+		j,
+		"bootDisk",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) BootDiskInput() *ContainerNodePoolNodeConfigBootDisk {
+	var returns *ContainerNodePoolNodeConfigBootDisk
+	_jsii_.Get(
+		j,
+		"bootDiskInput",
 		&returns,
 	)
 	return returns
@@ -456,6 +488,26 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) FastSocketInput()
 	_jsii_.Get(
 		j,
 		"fastSocketInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) FlexStart() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"flexStart",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) FlexStartInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"flexStartInput",
 		&returns,
 	)
 	return returns
@@ -921,6 +973,26 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) ResourceManagerTa
 	return returns
 }
 
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) SandboxConfig() ContainerNodePoolNodeConfigSandboxConfigOutputReference {
+	var returns ContainerNodePoolNodeConfigSandboxConfigOutputReference
+	_jsii_.Get(
+		j,
+		"sandboxConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) SandboxConfigInput() *ContainerNodePoolNodeConfigSandboxConfig {
+	var returns *ContainerNodePoolNodeConfigSandboxConfig
+	_jsii_.Get(
+		j,
+		"sandboxConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) SecondaryBootDisks() ContainerNodePoolNodeConfigSecondaryBootDisksList {
 	var returns ContainerNodePoolNodeConfigSecondaryBootDisksList
 	_jsii_.Get(
@@ -1231,6 +1303,17 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetEnableConfident
 	_jsii_.Set(
 		j,
 		"enableConfidentialStorage",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetFlexStart(val interface{}) {
+	if err := j.validateSetFlexStartParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"flexStart",
 		val,
 	)
 }
@@ -1663,6 +1746,17 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) PutAdvancedMachin
 	)
 }
 
+func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) PutBootDisk(value *ContainerNodePoolNodeConfigBootDisk) {
+	if err := c.validatePutBootDiskParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putBootDisk",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) PutConfidentialNodes(value *ContainerNodePoolNodeConfigConfidentialNodes) {
 	if err := c.validatePutConfidentialNodesParameters(value); err != nil {
 		panic(err)
@@ -1795,6 +1889,17 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) PutReservationAff
 	)
 }
 
+func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) PutSandboxConfig(value *ContainerNodePoolNodeConfigSandboxConfig) {
+	if err := c.validatePutSandboxConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putSandboxConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) PutSecondaryBootDisks(value interface{}) {
 	if err := c.validatePutSecondaryBootDisksParameters(value); err != nil {
 		panic(err)
@@ -1869,6 +1974,14 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) ResetAdvancedMach
 	)
 }
 
+func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) ResetBootDisk() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetBootDisk",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) ResetBootDiskKmsKey() {
 	_jsii_.InvokeVoid(
 		c,
@@ -1929,6 +2042,14 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) ResetFastSocket()
 	_jsii_.InvokeVoid(
 		c,
 		"resetFastSocket",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) ResetFlexStart() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetFlexStart",
 		nil, // no parameters
 	)
 }
@@ -2105,6 +2226,14 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) ResetResourceMana
 	_jsii_.InvokeVoid(
 		c,
 		"resetResourceManagerTags",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) ResetSandboxConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSandboxConfig",
 		nil, // no parameters
 	)
 }

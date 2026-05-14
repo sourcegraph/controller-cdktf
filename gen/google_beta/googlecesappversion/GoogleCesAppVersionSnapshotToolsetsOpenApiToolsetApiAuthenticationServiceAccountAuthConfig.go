@@ -1,0 +1,6 @@
+package googlecesappversion
+
+
+type GoogleCesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationServiceAccountAuthConfig struct {
+}
+

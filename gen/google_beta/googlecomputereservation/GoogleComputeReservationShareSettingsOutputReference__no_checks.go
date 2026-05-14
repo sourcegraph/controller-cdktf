@@ -64,6 +64,10 @@ func (j *jsiiProxy_GoogleComputeReservationShareSettingsOutputReference) validat
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeReservationShareSettingsOutputReference) validateSetProjectsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeReservationShareSettingsOutputReference) validateSetShareTypeParameters(val *string) error {
 	return nil
 }

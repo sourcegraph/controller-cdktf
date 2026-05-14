@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/computeinstancetemplateiambinding/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_instance_template_iam_binding google_compute_instance_template_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_template_iam_binding google_compute_instance_template_iam_binding}.
 type ComputeInstanceTemplateIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -435,7 +435,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateIamBinding) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_instance_template_iam_binding google_compute_instance_template_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_template_iam_binding google_compute_instance_template_iam_binding} Resource.
 func NewComputeInstanceTemplateIamBinding(scope constructs.Construct, id *string, config *ComputeInstanceTemplateIamBindingConfig) ComputeInstanceTemplateIamBinding {
 	_init_.Initialize()
 
@@ -453,7 +453,7 @@ func NewComputeInstanceTemplateIamBinding(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_instance_template_iam_binding google_compute_instance_template_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_template_iam_binding google_compute_instance_template_iam_binding} Resource.
 func NewComputeInstanceTemplateIamBinding_Override(c ComputeInstanceTemplateIamBinding, scope constructs.Construct, id *string, config *ComputeInstanceTemplateIamBindingConfig) {
 	_init_.Initialize()
 

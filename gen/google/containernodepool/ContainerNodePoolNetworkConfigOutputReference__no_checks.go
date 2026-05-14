@@ -64,6 +64,10 @@ func (c *jsiiProxy_ContainerNodePoolNetworkConfigOutputReference) validateResolv
 	return nil
 }
 
+func (j *jsiiProxy_ContainerNodePoolNetworkConfigOutputReference) validateSetAcceleratorNetworkProfileParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerNodePoolNetworkConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -89,6 +93,10 @@ func (j *jsiiProxy_ContainerNodePoolNetworkConfigOutputReference) validateSetPod
 }
 
 func (j *jsiiProxy_ContainerNodePoolNetworkConfigOutputReference) validateSetPodRangeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ContainerNodePoolNetworkConfigOutputReference) validateSetSubnetworkParameters(val *string) error {
 	return nil
 }
 

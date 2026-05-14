@@ -38,12 +38,24 @@ type GoogleNetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReferen
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Metadata() *map[string]*string
+	SetMetadata(val *map[string]*string)
+	MetadataInput() *map[string]*string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	ObservabilityMode() interface{}
+	SetObservabilityMode(val interface{})
+	ObservabilityModeInput() interface{}
+	RequestBodySendMode() *string
+	SetRequestBodySendMode(val *string)
+	RequestBodySendModeInput() *string
 	Service() *string
 	SetService(val *string)
 	ServiceInput() *string
+	SupportedEvents() *[]*string
+	SetSupportedEvents(val *[]*string)
+	SupportedEventsInput() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -82,6 +94,10 @@ type GoogleNetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReferen
 	ResetAuthority()
 	ResetFailOpen()
 	ResetForwardHeaders()
+	ResetMetadata()
+	ResetObservabilityMode()
+	ResetRequestBodySendMode()
+	ResetSupportedEvents()
 	ResetTimeout()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -208,6 +224,26 @@ func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsExtension
 	return returns
 }
 
+func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference) Metadata() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"metadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference) MetadataInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"metadataInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -228,6 +264,46 @@ func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsExtension
 	return returns
 }
 
+func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference) ObservabilityMode() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"observabilityMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference) ObservabilityModeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"observabilityModeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference) RequestBodySendMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"requestBodySendMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference) RequestBodySendModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"requestBodySendModeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference) Service() *string {
 	var returns *string
 	_jsii_.Get(
@@ -243,6 +319,26 @@ func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsExtension
 	_jsii_.Get(
 		j,
 		"serviceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference) SupportedEvents() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"supportedEvents",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference) SupportedEventsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"supportedEventsInput",
 		&returns,
 	)
 	return returns
@@ -382,6 +478,17 @@ func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsExtension
 	)
 }
 
+func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference)SetMetadata(val *map[string]*string) {
+	if err := j.validateSetMetadataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"metadata",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference)SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
@@ -393,6 +500,28 @@ func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsExtension
 	)
 }
 
+func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference)SetObservabilityMode(val interface{}) {
+	if err := j.validateSetObservabilityModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"observabilityMode",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference)SetRequestBodySendMode(val *string) {
+	if err := j.validateSetRequestBodySendModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"requestBodySendMode",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference)SetService(val *string) {
 	if err := j.validateSetServiceParameters(val); err != nil {
 		panic(err)
@@ -400,6 +529,17 @@ func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsExtension
 	_jsii_.Set(
 		j,
 		"service",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference)SetSupportedEvents(val *[]*string) {
+	if err := j.validateSetSupportedEventsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"supportedEvents",
 		val,
 	)
 }
@@ -643,6 +783,38 @@ func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsExtension
 	_jsii_.InvokeVoid(
 		g,
 		"resetForwardHeaders",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference) ResetMetadata() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMetadata",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference) ResetObservabilityMode() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetObservabilityMode",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference) ResetRequestBodySendMode() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRequestBodySendMode",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference) ResetSupportedEvents() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSupportedEvents",
 		nil, // no parameters
 	)
 }

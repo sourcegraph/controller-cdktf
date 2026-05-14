@@ -40,6 +40,7 @@ type DataGoogleContainerClusterNodePoolOutputReference interface {
 	NetworkConfig() DataGoogleContainerClusterNodePoolNetworkConfigList
 	NodeConfig() DataGoogleContainerClusterNodePoolNodeConfigList
 	NodeCount() *float64
+	NodeDrainConfig() DataGoogleContainerClusterNodePoolNodeDrainConfigList
 	NodeLocations() *[]*string
 	PlacementPolicy() DataGoogleContainerClusterNodePoolPlacementPolicyList
 	QueuedProvisioning() DataGoogleContainerClusterNodePoolQueuedProvisioningList
@@ -247,6 +248,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodePoolOutputReference) NodeCount(
 	_jsii_.Get(
 		j,
 		"nodeCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolOutputReference) NodeDrainConfig() DataGoogleContainerClusterNodePoolNodeDrainConfigList {
+	var returns DataGoogleContainerClusterNodePoolNodeDrainConfigList
+	_jsii_.Get(
+		j,
+		"nodeDrainConfig",
 		&returns,
 	)
 	return returns

@@ -235,6 +235,17 @@ func (c *jsiiProxy_ChronicleReferenceList) validatePutEntriesParameters(value in
 	return nil
 }
 
+func (c *jsiiProxy_ChronicleReferenceList) validatePutScopeInfoParameters(value *ChronicleReferenceListScopeInfo) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (c *jsiiProxy_ChronicleReferenceList) validatePutTimeoutsParameters(value *ChronicleReferenceListTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

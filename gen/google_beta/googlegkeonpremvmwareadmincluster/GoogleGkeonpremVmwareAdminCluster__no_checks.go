@@ -104,6 +104,14 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareAdminCluster) validatePutPlatformConfigP
 	return nil
 }
 
+func (g *jsiiProxy_GoogleGkeonpremVmwareAdminCluster) validatePutPrivateRegistryConfigParameters(value *GoogleGkeonpremVmwareAdminClusterPrivateRegistryConfig) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleGkeonpremVmwareAdminCluster) validatePutProxyParameters(value *GoogleGkeonpremVmwareAdminClusterProxy) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleGkeonpremVmwareAdminCluster) validatePutTimeoutsParameters(value *GoogleGkeonpremVmwareAdminClusterTimeouts) error {
 	return nil
 }
@@ -145,6 +153,10 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareAdminCluster) validateSetCountParameters
 }
 
 func (j *jsiiProxy_GoogleGkeonpremVmwareAdminCluster) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleGkeonpremVmwareAdminCluster) validateSetEnableAdvancedClusterParameters(val interface{}) error {
 	return nil
 }
 

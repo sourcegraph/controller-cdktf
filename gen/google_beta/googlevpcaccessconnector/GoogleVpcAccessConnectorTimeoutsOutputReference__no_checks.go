@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleVpcAccessConnectorTimeoutsOutputReference) validateSetT
 	return nil
 }
 
+func (j *jsiiProxy_GoogleVpcAccessConnectorTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
+	return nil
+}
+
 func validateNewGoogleVpcAccessConnectorTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

@@ -64,6 +64,10 @@ func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBindingScopedAccessSet
 	return nil
 }
 
+func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBindingScopedAccessSettingsScopeClientScopeRestrictedClientApplicationOutputReference) validateSetNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBindingScopedAccessSettingsScopeClientScopeRestrictedClientApplicationOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

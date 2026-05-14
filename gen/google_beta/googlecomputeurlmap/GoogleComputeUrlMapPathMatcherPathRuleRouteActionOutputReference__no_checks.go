@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherPathRuleRouteActionOutputRefere
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherPathRuleRouteActionOutputReference) validatePutCachePolicyParameters(value *GoogleComputeUrlMapPathMatcherPathRuleRouteActionCachePolicy) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherPathRuleRouteActionOutputReference) validatePutCorsPolicyParameters(value *GoogleComputeUrlMapPathMatcherPathRuleRouteActionCorsPolicy) error {
 	return nil
 }

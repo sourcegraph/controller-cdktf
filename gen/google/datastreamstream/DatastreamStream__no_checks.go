@@ -84,6 +84,10 @@ func (d *jsiiProxy_DatastreamStream) validatePutDestinationConfigParameters(valu
 	return nil
 }
 
+func (d *jsiiProxy_DatastreamStream) validatePutRuleSetsParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatastreamStream) validatePutSourceConfigParameters(value *DatastreamStreamSourceConfig) error {
 	return nil
 }

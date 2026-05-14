@@ -33,7 +33,9 @@ type DataGoogleSqlDatabaseInstancesInstancesCloneOutputReference interface {
 	SetInternalValue(val *DataGoogleSqlDatabaseInstancesInstancesClone)
 	PointInTime() *string
 	PreferredZone() *string
+	SourceInstanceDeletionTime() *string
 	SourceInstanceName() *string
+	SourceProject() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -171,11 +173,31 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesCloneOutputReference) 
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesCloneOutputReference) SourceInstanceDeletionTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceInstanceDeletionTime",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesCloneOutputReference) SourceInstanceName() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"sourceInstanceName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesCloneOutputReference) SourceProject() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceProject",
 		&returns,
 	)
 	return returns

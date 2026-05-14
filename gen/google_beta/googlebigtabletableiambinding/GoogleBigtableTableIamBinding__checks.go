@@ -353,7 +353,7 @@ func (j *jsiiProxy_GoogleBigtableTableIamBinding) validateSetIdParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigtableTableIamBinding) validateSetInstanceParameters(val *string) error {
+func (j *jsiiProxy_GoogleBigtableTableIamBinding) validateSetInstanceNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

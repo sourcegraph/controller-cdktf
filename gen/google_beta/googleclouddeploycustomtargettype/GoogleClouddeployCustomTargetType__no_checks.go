@@ -76,6 +76,10 @@ func (g *jsiiProxy_GoogleClouddeployCustomTargetType) validatePutCustomActionsPa
 	return nil
 }
 
+func (g *jsiiProxy_GoogleClouddeployCustomTargetType) validatePutTasksParameters(value *GoogleClouddeployCustomTargetTypeTasks) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleClouddeployCustomTargetType) validatePutTimeoutsParameters(value *GoogleClouddeployCustomTargetTypeTimeouts) error {
 	return nil
 }

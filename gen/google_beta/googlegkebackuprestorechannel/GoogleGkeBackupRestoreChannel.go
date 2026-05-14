@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlegkebackuprestorechannel/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_gke_backup_restore_channel google_gke_backup_restore_channel}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_gke_backup_restore_channel google_gke_backup_restore_channel}.
 type GoogleGkeBackupRestoreChannel interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -527,7 +527,7 @@ func (j *jsiiProxy_GoogleGkeBackupRestoreChannel) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_gke_backup_restore_channel google_gke_backup_restore_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_gke_backup_restore_channel google_gke_backup_restore_channel} Resource.
 func NewGoogleGkeBackupRestoreChannel(scope constructs.Construct, id *string, config *GoogleGkeBackupRestoreChannelConfig) GoogleGkeBackupRestoreChannel {
 	_init_.Initialize()
 
@@ -545,7 +545,7 @@ func NewGoogleGkeBackupRestoreChannel(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_gke_backup_restore_channel google_gke_backup_restore_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_gke_backup_restore_channel google_gke_backup_restore_channel} Resource.
 func NewGoogleGkeBackupRestoreChannel_Override(g GoogleGkeBackupRestoreChannel, scope constructs.Construct, id *string, config *GoogleGkeBackupRestoreChannelConfig) {
 	_init_.Initialize()
 

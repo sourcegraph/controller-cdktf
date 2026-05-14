@@ -56,6 +56,10 @@ func (c *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference) valid
 	return nil
 }
 
+func (c *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference) validatePutStartupProbeParameters(value *CloudRunV2JobTemplateTemplateContainersStartupProbe) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference) validatePutVolumeMountsParameters(value interface{}) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (j *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference) valid
 }
 
 func (j *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference) validateSetDependsOnParameters(val *[]*string) error {
 	return nil
 }
 

@@ -80,6 +80,10 @@ func (m *jsiiProxy_MemorystoreInstance) validatePutCrossInstanceReplicationConfi
 	return nil
 }
 
+func (m *jsiiProxy_MemorystoreInstance) validatePutDesiredAutoCreatedEndpointsParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MemorystoreInstance) validatePutDesiredPscAutoConnectionsParameters(value interface{}) error {
 	return nil
 }
@@ -156,6 +160,10 @@ func (j *jsiiProxy_MemorystoreInstance) validateSetInstanceIdParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_MemorystoreInstance) validateSetKmsKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MemorystoreInstance) validateSetLabelsParameters(val *map[string]*string) error {
 	return nil
 }
@@ -165,6 +173,10 @@ func (j *jsiiProxy_MemorystoreInstance) validateSetLifecycleParameters(val *cdkt
 }
 
 func (j *jsiiProxy_MemorystoreInstance) validateSetLocationParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_MemorystoreInstance) validateSetMaintenanceVersionParameters(val *string) error {
 	return nil
 }
 
@@ -185,6 +197,14 @@ func (j *jsiiProxy_MemorystoreInstance) validateSetProvisionersParameters(val *[
 }
 
 func (j *jsiiProxy_MemorystoreInstance) validateSetReplicaCountParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_MemorystoreInstance) validateSetServerCaModeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_MemorystoreInstance) validateSetServerCaPoolParameters(val *string) error {
 	return nil
 }
 

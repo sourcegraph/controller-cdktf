@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlegeminigeminigcpenablementsetting/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_gemini_gemini_gcp_enablement_setting google_gemini_gemini_gcp_enablement_setting}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_gemini_gemini_gcp_enablement_setting google_gemini_gemini_gcp_enablement_setting}.
 type GoogleGeminiGeminiGcpEnablementSetting interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -29,6 +29,9 @@ type GoogleGeminiGeminiGcpEnablementSetting interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DisableWebGrounding() interface{}
+	SetDisableWebGrounding(val interface{})
+	DisableWebGroundingInput() interface{}
 	EffectiveLabels() cdktf.StringMap
 	EnableCustomerDataSharing() interface{}
 	SetEnableCustomerDataSharing(val interface{})
@@ -83,6 +86,9 @@ type GoogleGeminiGeminiGcpEnablementSetting interface {
 	Timeouts() GoogleGeminiGeminiGcpEnablementSettingTimeoutsOutputReference
 	TimeoutsInput() interface{}
 	UpdateTime() *string
+	WebGroundingType() *string
+	SetWebGroundingType(val *string)
+	WebGroundingTypeInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -127,6 +133,7 @@ type GoogleGeminiGeminiGcpEnablementSetting interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *GoogleGeminiGeminiGcpEnablementSettingTimeouts)
+	ResetDisableWebGrounding()
 	ResetEnableCustomerDataSharing()
 	ResetId()
 	ResetLabels()
@@ -135,6 +142,7 @@ type GoogleGeminiGeminiGcpEnablementSetting interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
+	ResetWebGroundingType()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -208,6 +216,26 @@ func (j *jsiiProxy_GoogleGeminiGeminiGcpEnablementSetting) DependsOn() *[]*strin
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGeminiGeminiGcpEnablementSetting) DisableWebGrounding() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableWebGrounding",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGeminiGeminiGcpEnablementSetting) DisableWebGroundingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableWebGroundingInput",
 		&returns,
 	)
 	return returns
@@ -503,8 +531,28 @@ func (j *jsiiProxy_GoogleGeminiGeminiGcpEnablementSetting) UpdateTime() *string 
 	return returns
 }
 
+func (j *jsiiProxy_GoogleGeminiGeminiGcpEnablementSetting) WebGroundingType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"webGroundingType",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_gemini_gemini_gcp_enablement_setting google_gemini_gemini_gcp_enablement_setting} Resource.
+func (j *jsiiProxy_GoogleGeminiGeminiGcpEnablementSetting) WebGroundingTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"webGroundingTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_gemini_gemini_gcp_enablement_setting google_gemini_gemini_gcp_enablement_setting} Resource.
 func NewGoogleGeminiGeminiGcpEnablementSetting(scope constructs.Construct, id *string, config *GoogleGeminiGeminiGcpEnablementSettingConfig) GoogleGeminiGeminiGcpEnablementSetting {
 	_init_.Initialize()
 
@@ -522,7 +570,7 @@ func NewGoogleGeminiGeminiGcpEnablementSetting(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_gemini_gemini_gcp_enablement_setting google_gemini_gemini_gcp_enablement_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_gemini_gemini_gcp_enablement_setting google_gemini_gemini_gcp_enablement_setting} Resource.
 func NewGoogleGeminiGeminiGcpEnablementSetting_Override(g GoogleGeminiGeminiGcpEnablementSetting, scope constructs.Construct, id *string, config *GoogleGeminiGeminiGcpEnablementSettingConfig) {
 	_init_.Initialize()
 
@@ -559,6 +607,17 @@ func (j *jsiiProxy_GoogleGeminiGeminiGcpEnablementSetting)SetDependsOn(val *[]*s
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleGeminiGeminiGcpEnablementSetting)SetDisableWebGrounding(val interface{}) {
+	if err := j.validateSetDisableWebGroundingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableWebGrounding",
 		val,
 	)
 }
@@ -663,6 +722,17 @@ func (j *jsiiProxy_GoogleGeminiGeminiGcpEnablementSetting)SetProvisioners(val *[
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleGeminiGeminiGcpEnablementSetting)SetWebGroundingType(val *string) {
+	if err := j.validateSetWebGroundingTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"webGroundingType",
 		val,
 	)
 }
@@ -1031,6 +1101,14 @@ func (g *jsiiProxy_GoogleGeminiGeminiGcpEnablementSetting) PutTimeouts(value *Go
 	)
 }
 
+func (g *jsiiProxy_GoogleGeminiGeminiGcpEnablementSetting) ResetDisableWebGrounding() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDisableWebGrounding",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleGeminiGeminiGcpEnablementSetting) ResetEnableCustomerDataSharing() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1075,6 +1153,14 @@ func (g *jsiiProxy_GoogleGeminiGeminiGcpEnablementSetting) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleGeminiGeminiGcpEnablementSetting) ResetWebGroundingType() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetWebGroundingType",
 		nil, // no parameters
 	)
 }

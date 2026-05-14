@@ -32,6 +32,9 @@ type GoogleContainerClusterFleetOutputReference interface {
 	Membership() *string
 	MembershipId() *string
 	MembershipLocation() *string
+	MembershipType() *string
+	SetMembershipType(val *string)
+	MembershipTypeInput() *string
 	PreRegistered() cdktf.IResolvable
 	Project() *string
 	SetProject(val *string)
@@ -68,6 +71,7 @@ type GoogleContainerClusterFleetOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetMembershipType()
 	ResetProject()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -159,6 +163,26 @@ func (j *jsiiProxy_GoogleContainerClusterFleetOutputReference) MembershipLocatio
 	_jsii_.Get(
 		j,
 		"membershipLocation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterFleetOutputReference) MembershipType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"membershipType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterFleetOutputReference) MembershipTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"membershipTypeInput",
 		&returns,
 	)
 	return returns
@@ -271,6 +295,17 @@ func (j *jsiiProxy_GoogleContainerClusterFleetOutputReference)SetInternalValue(v
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerClusterFleetOutputReference)SetMembershipType(val *string) {
+	if err := j.validateSetMembershipTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"membershipType",
 		val,
 	)
 }
@@ -492,6 +527,14 @@ func (g *jsiiProxy_GoogleContainerClusterFleetOutputReference) InterpolationForA
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleContainerClusterFleetOutputReference) ResetMembershipType() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMembershipType",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleContainerClusterFleetOutputReference) ResetProject() {

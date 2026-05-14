@@ -257,6 +257,17 @@ func (g *jsiiProxy_GoogleComputeRegionDisk) validatePutGuestOsFeaturesParameters
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeRegionDisk) validatePutSourceImageEncryptionKeyParameters(value *GoogleComputeRegionDiskSourceImageEncryptionKey) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRegionDisk) validatePutSourceSnapshotEncryptionKeyParameters(value *GoogleComputeRegionDiskSourceSnapshotEncryptionKey) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -314,6 +325,14 @@ func validateGoogleComputeRegionDisk_IsTerraformElementParameters(x interface{})
 func validateGoogleComputeRegionDisk_IsTerraformResourceParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) validateSetAccessModeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil
@@ -445,7 +464,35 @@ func (j *jsiiProxy_GoogleComputeRegionDisk) validateSetDescriptionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRegionDisk) validateSetEraseWindowsVssSignatureParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRegionDisk) validateSetIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) validateSetImageParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -502,6 +549,22 @@ func (j *jsiiProxy_GoogleComputeRegionDisk) validateSetPhysicalBlockSizeBytesPar
 }
 
 func (j *jsiiProxy_GoogleComputeRegionDisk) validateSetProjectParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) validateSetProvisionedIopsParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) validateSetProvisionedThroughputParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

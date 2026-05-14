@@ -25,9 +25,12 @@ type GoogleApphubWorkloadWorkloadPropertiesOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	ExtendedMetadata() GoogleApphubWorkloadWorkloadPropertiesExtendedMetadataList
 	// Experimental.
 	Fqn() *string
+	FunctionalType() GoogleApphubWorkloadWorkloadPropertiesFunctionalTypeList
 	GcpProject() *string
+	Identity() GoogleApphubWorkloadWorkloadPropertiesIdentityList
 	InternalValue() *GoogleApphubWorkloadWorkloadProperties
 	SetInternalValue(val *GoogleApphubWorkloadWorkloadProperties)
 	Location() *string
@@ -109,6 +112,16 @@ func (j *jsiiProxy_GoogleApphubWorkloadWorkloadPropertiesOutputReference) Creati
 	return returns
 }
 
+func (j *jsiiProxy_GoogleApphubWorkloadWorkloadPropertiesOutputReference) ExtendedMetadata() GoogleApphubWorkloadWorkloadPropertiesExtendedMetadataList {
+	var returns GoogleApphubWorkloadWorkloadPropertiesExtendedMetadataList
+	_jsii_.Get(
+		j,
+		"extendedMetadata",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleApphubWorkloadWorkloadPropertiesOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -119,11 +132,31 @@ func (j *jsiiProxy_GoogleApphubWorkloadWorkloadPropertiesOutputReference) Fqn() 
 	return returns
 }
 
+func (j *jsiiProxy_GoogleApphubWorkloadWorkloadPropertiesOutputReference) FunctionalType() GoogleApphubWorkloadWorkloadPropertiesFunctionalTypeList {
+	var returns GoogleApphubWorkloadWorkloadPropertiesFunctionalTypeList
+	_jsii_.Get(
+		j,
+		"functionalType",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleApphubWorkloadWorkloadPropertiesOutputReference) GcpProject() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"gcpProject",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleApphubWorkloadWorkloadPropertiesOutputReference) Identity() GoogleApphubWorkloadWorkloadPropertiesIdentityList {
+	var returns GoogleApphubWorkloadWorkloadPropertiesIdentityList
+	_jsii_.Get(
+		j,
+		"identity",
 		&returns,
 	)
 	return returns

@@ -80,6 +80,10 @@ func (g *jsiiProxy_GoogleNetworkServicesServiceLbPolicies) validatePutFailoverCo
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetworkServicesServiceLbPolicies) validatePutIsolationConfigParameters(value *GoogleNetworkServicesServiceLbPoliciesIsolationConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkServicesServiceLbPolicies) validatePutTimeoutsParameters(value *GoogleNetworkServicesServiceLbPoliciesTimeouts) error {
 	return nil
 }

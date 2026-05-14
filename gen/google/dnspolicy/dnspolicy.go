@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/dnspolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/dns_policy google_dns_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dns_policy google_dns_policy}.
 type DnsPolicy interface {
 	cdktf.TerraformResource
 	AlternativeNameServerConfig() DnsPolicyAlternativeNameServerConfigOutputReference
@@ -33,6 +33,8 @@ type DnsPolicy interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	Dns64Config() DnsPolicyDns64ConfigOutputReference
+	Dns64ConfigInput() *DnsPolicyDns64Config
 	EnableInboundForwarding() interface{}
 	SetEnableInboundForwarding(val interface{})
 	EnableInboundForwardingInput() interface{}
@@ -126,10 +128,12 @@ type DnsPolicy interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAlternativeNameServerConfig(value *DnsPolicyAlternativeNameServerConfig)
+	PutDns64Config(value *DnsPolicyDns64Config)
 	PutNetworks(value interface{})
 	PutTimeouts(value *DnsPolicyTimeouts)
 	ResetAlternativeNameServerConfig()
 	ResetDescription()
+	ResetDns64Config()
 	ResetEnableInboundForwarding()
 	ResetEnableLogging()
 	ResetId()
@@ -242,6 +246,26 @@ func (j *jsiiProxy_DnsPolicy) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DnsPolicy) Dns64Config() DnsPolicyDns64ConfigOutputReference {
+	var returns DnsPolicyDns64ConfigOutputReference
+	_jsii_.Get(
+		j,
+		"dns64Config",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DnsPolicy) Dns64ConfigInput() *DnsPolicyDns64Config {
+	var returns *DnsPolicyDns64Config
+	_jsii_.Get(
+		j,
+		"dns64ConfigInput",
 		&returns,
 	)
 	return returns
@@ -498,7 +522,7 @@ func (j *jsiiProxy_DnsPolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/dns_policy google_dns_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dns_policy google_dns_policy} Resource.
 func NewDnsPolicy(scope constructs.Construct, id *string, config *DnsPolicyConfig) DnsPolicy {
 	_init_.Initialize()
 
@@ -516,7 +540,7 @@ func NewDnsPolicy(scope constructs.Construct, id *string, config *DnsPolicyConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/dns_policy google_dns_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dns_policy google_dns_policy} Resource.
 func NewDnsPolicy_Override(d DnsPolicy, scope constructs.Construct, id *string, config *DnsPolicyConfig) {
 	_init_.Initialize()
 
@@ -1025,6 +1049,17 @@ func (d *jsiiProxy_DnsPolicy) PutAlternativeNameServerConfig(value *DnsPolicyAlt
 	)
 }
 
+func (d *jsiiProxy_DnsPolicy) PutDns64Config(value *DnsPolicyDns64Config) {
+	if err := d.validatePutDns64ConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putDns64Config",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DnsPolicy) PutNetworks(value interface{}) {
 	if err := d.validatePutNetworksParameters(value); err != nil {
 		panic(err)
@@ -1059,6 +1094,14 @@ func (d *jsiiProxy_DnsPolicy) ResetDescription() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DnsPolicy) ResetDns64Config() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDns64Config",
 		nil, // no parameters
 	)
 }

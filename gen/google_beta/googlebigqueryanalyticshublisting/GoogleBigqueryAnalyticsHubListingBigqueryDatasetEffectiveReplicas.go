@@ -1,0 +1,6 @@
+package googlebigqueryanalyticshublisting
+
+
+type GoogleBigqueryAnalyticsHubListingBigqueryDatasetEffectiveReplicas struct {
+}
+

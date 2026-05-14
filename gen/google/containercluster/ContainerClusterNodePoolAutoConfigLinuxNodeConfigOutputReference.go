@@ -32,6 +32,8 @@ type ContainerClusterNodePoolAutoConfigLinuxNodeConfigOutputReference interface 
 	Fqn() *string
 	InternalValue() *ContainerClusterNodePoolAutoConfigLinuxNodeConfig
 	SetInternalValue(val *ContainerClusterNodePoolAutoConfigLinuxNodeConfig)
+	NodeKernelModuleLoading() ContainerClusterNodePoolAutoConfigLinuxNodeConfigNodeKernelModuleLoadingOutputReference
+	NodeKernelModuleLoadingInput() *ContainerClusterNodePoolAutoConfigLinuxNodeConfigNodeKernelModuleLoading
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -64,7 +66,9 @@ type ContainerClusterNodePoolAutoConfigLinuxNodeConfigOutputReference interface 
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutNodeKernelModuleLoading(value *ContainerClusterNodePoolAutoConfigLinuxNodeConfigNodeKernelModuleLoading)
 	ResetCgroupMode()
+	ResetNodeKernelModuleLoading()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -145,6 +149,26 @@ func (j *jsiiProxy_ContainerClusterNodePoolAutoConfigLinuxNodeConfigOutputRefere
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolAutoConfigLinuxNodeConfigOutputReference) NodeKernelModuleLoading() ContainerClusterNodePoolAutoConfigLinuxNodeConfigNodeKernelModuleLoadingOutputReference {
+	var returns ContainerClusterNodePoolAutoConfigLinuxNodeConfigNodeKernelModuleLoadingOutputReference
+	_jsii_.Get(
+		j,
+		"nodeKernelModuleLoading",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolAutoConfigLinuxNodeConfigOutputReference) NodeKernelModuleLoadingInput() *ContainerClusterNodePoolAutoConfigLinuxNodeConfigNodeKernelModuleLoading {
+	var returns *ContainerClusterNodePoolAutoConfigLinuxNodeConfigNodeKernelModuleLoading
+	_jsii_.Get(
+		j,
+		"nodeKernelModuleLoadingInput",
 		&returns,
 	)
 	return returns
@@ -450,10 +474,29 @@ func (c *jsiiProxy_ContainerClusterNodePoolAutoConfigLinuxNodeConfigOutputRefere
 	return returns
 }
 
+func (c *jsiiProxy_ContainerClusterNodePoolAutoConfigLinuxNodeConfigOutputReference) PutNodeKernelModuleLoading(value *ContainerClusterNodePoolAutoConfigLinuxNodeConfigNodeKernelModuleLoading) {
+	if err := c.validatePutNodeKernelModuleLoadingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putNodeKernelModuleLoading",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerClusterNodePoolAutoConfigLinuxNodeConfigOutputReference) ResetCgroupMode() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetCgroupMode",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolAutoConfigLinuxNodeConfigOutputReference) ResetNodeKernelModuleLoading() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetNodeKernelModuleLoading",
 		nil, // no parameters
 	)
 }

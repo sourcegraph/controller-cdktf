@@ -1,0 +1,6 @@
+package networkservicesmulticastgrouprangeactivation
+
+
+type NetworkServicesMulticastGroupRangeActivationState struct {
+}
+

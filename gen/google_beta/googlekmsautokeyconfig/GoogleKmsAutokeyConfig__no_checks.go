@@ -112,6 +112,10 @@ func (j *jsiiProxy_GoogleKmsAutokeyConfig) validateSetKeyProjectParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_GoogleKmsAutokeyConfig) validateSetKeyProjectResolutionModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleKmsAutokeyConfig) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

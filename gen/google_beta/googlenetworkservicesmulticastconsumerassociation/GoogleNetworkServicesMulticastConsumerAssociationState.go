@@ -1,0 +1,6 @@
+package googlenetworkservicesmulticastconsumerassociation
+
+
+type GoogleNetworkServicesMulticastConsumerAssociationState struct {
+}
+

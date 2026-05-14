@@ -172,6 +172,10 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) validateSetEnableDispl
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) validateSetEraseWindowsVssSignatureParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) validateSetHostnameParameters(val *string) error {
 	return nil
 }

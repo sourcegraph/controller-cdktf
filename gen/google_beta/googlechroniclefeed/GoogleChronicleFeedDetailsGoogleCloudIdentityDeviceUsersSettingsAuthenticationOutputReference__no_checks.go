@@ -1,0 +1,86 @@
+//go:build no_runtime_type_checking
+
+package googlechroniclefeed
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (g *jsiiProxy_GoogleChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthenticationOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthenticationOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthenticationOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthenticationOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthenticationOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthenticationOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthenticationOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthenticationOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthenticationOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthenticationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthenticationOutputReference) validatePutClaimsParameters(value *GoogleChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthenticationClaims) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthenticationOutputReference) validatePutRsCredentialsParameters(value *GoogleChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthenticationRsCredentials) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthenticationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthenticationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthenticationOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthenticationOutputReference) validateSetInternalValueParameters(val *GoogleChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthentication) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthenticationOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthenticationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthenticationOutputReference) validateSetTokenEndpointParameters(val *string) error {
+	return nil
+}
+
+func validateNewGoogleChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthenticationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+	return nil
+}
+

@@ -68,7 +68,7 @@ func (j *jsiiProxy_GoogleGkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddress
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsOutputReference) validateSetManualAssignParameters(val *string) error {
+func (j *jsiiProxy_GoogleGkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsOutputReference) validateSetManualAssignParameters(val interface{}) error {
 	return nil
 }
 

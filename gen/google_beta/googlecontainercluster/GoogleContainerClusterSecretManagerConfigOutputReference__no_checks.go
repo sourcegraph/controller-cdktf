@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleContainerClusterSecretManagerConfigOutputReference) val
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerClusterSecretManagerConfigOutputReference) validatePutRotationConfigParameters(value *GoogleContainerClusterSecretManagerConfigRotationConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerClusterSecretManagerConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

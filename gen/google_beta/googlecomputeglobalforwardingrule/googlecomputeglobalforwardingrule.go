@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeglobalforwardingrule/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_global_forwarding_rule google_compute_global_forwarding_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_compute_global_forwarding_rule google_compute_global_forwarding_rule}.
 type GoogleComputeGlobalForwardingRule interface {
 	cdktf.TerraformResource
 	AllowPscGlobalAccess() interface{}
@@ -36,6 +36,12 @@ type GoogleComputeGlobalForwardingRule interface {
 	SetDescription(val *string)
 	DescriptionInput() *string
 	EffectiveLabels() cdktf.StringMap
+	ExternalManagedBackendBucketMigrationState() *string
+	SetExternalManagedBackendBucketMigrationState(val *string)
+	ExternalManagedBackendBucketMigrationStateInput() *string
+	ExternalManagedBackendBucketMigrationTestingPercentage() *float64
+	SetExternalManagedBackendBucketMigrationTestingPercentage(val *float64)
+	ExternalManagedBackendBucketMigrationTestingPercentageInput() *float64
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -171,6 +177,8 @@ type GoogleComputeGlobalForwardingRule interface {
 	PutTimeouts(value *GoogleComputeGlobalForwardingRuleTimeouts)
 	ResetAllowPscGlobalAccess()
 	ResetDescription()
+	ResetExternalManagedBackendBucketMigrationState()
+	ResetExternalManagedBackendBucketMigrationTestingPercentage()
 	ResetId()
 	ResetIpAddress()
 	ResetIpProtocol()
@@ -313,6 +321,46 @@ func (j *jsiiProxy_GoogleComputeGlobalForwardingRule) EffectiveLabels() cdktf.St
 	_jsii_.Get(
 		j,
 		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeGlobalForwardingRule) ExternalManagedBackendBucketMigrationState() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"externalManagedBackendBucketMigrationState",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeGlobalForwardingRule) ExternalManagedBackendBucketMigrationStateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"externalManagedBackendBucketMigrationStateInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeGlobalForwardingRule) ExternalManagedBackendBucketMigrationTestingPercentage() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"externalManagedBackendBucketMigrationTestingPercentage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeGlobalForwardingRule) ExternalManagedBackendBucketMigrationTestingPercentageInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"externalManagedBackendBucketMigrationTestingPercentageInput",
 		&returns,
 	)
 	return returns
@@ -849,7 +897,7 @@ func (j *jsiiProxy_GoogleComputeGlobalForwardingRule) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_global_forwarding_rule google_compute_global_forwarding_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_compute_global_forwarding_rule google_compute_global_forwarding_rule} Resource.
 func NewGoogleComputeGlobalForwardingRule(scope constructs.Construct, id *string, config *GoogleComputeGlobalForwardingRuleConfig) GoogleComputeGlobalForwardingRule {
 	_init_.Initialize()
 
@@ -867,7 +915,7 @@ func NewGoogleComputeGlobalForwardingRule(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_global_forwarding_rule google_compute_global_forwarding_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_compute_global_forwarding_rule google_compute_global_forwarding_rule} Resource.
 func NewGoogleComputeGlobalForwardingRule_Override(g GoogleComputeGlobalForwardingRule, scope constructs.Construct, id *string, config *GoogleComputeGlobalForwardingRuleConfig) {
 	_init_.Initialize()
 
@@ -926,6 +974,28 @@ func (j *jsiiProxy_GoogleComputeGlobalForwardingRule)SetDescription(val *string)
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeGlobalForwardingRule)SetExternalManagedBackendBucketMigrationState(val *string) {
+	if err := j.validateSetExternalManagedBackendBucketMigrationStateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"externalManagedBackendBucketMigrationState",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeGlobalForwardingRule)SetExternalManagedBackendBucketMigrationTestingPercentage(val *float64) {
+	if err := j.validateSetExternalManagedBackendBucketMigrationTestingPercentageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"externalManagedBackendBucketMigrationTestingPercentage",
 		val,
 	)
 }
@@ -1531,6 +1601,22 @@ func (g *jsiiProxy_GoogleComputeGlobalForwardingRule) ResetDescription() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeGlobalForwardingRule) ResetExternalManagedBackendBucketMigrationState() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetExternalManagedBackendBucketMigrationState",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeGlobalForwardingRule) ResetExternalManagedBackendBucketMigrationTestingPercentage() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetExternalManagedBackendBucketMigrationTestingPercentage",
 		nil, // no parameters
 	)
 }

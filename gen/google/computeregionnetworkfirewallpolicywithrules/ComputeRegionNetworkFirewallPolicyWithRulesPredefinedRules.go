@@ -1,0 +1,6 @@
+package computeregionnetworkfirewallpolicywithrules
+
+
+type ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRules struct {
+}
+

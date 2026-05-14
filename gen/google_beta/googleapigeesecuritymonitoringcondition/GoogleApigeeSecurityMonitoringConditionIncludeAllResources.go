@@ -1,0 +1,6 @@
+package googleapigeesecuritymonitoringcondition
+
+
+type GoogleApigeeSecurityMonitoringConditionIncludeAllResources struct {
+}
+
