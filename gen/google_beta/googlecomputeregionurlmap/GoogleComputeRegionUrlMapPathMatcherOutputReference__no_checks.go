@@ -44,7 +44,15 @@ func (g *jsiiProxy_GoogleComputeRegionUrlMapPathMatcherOutputReference) validate
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeRegionUrlMapPathMatcherOutputReference) validatePutDefaultRouteActionParameters(value *GoogleComputeRegionUrlMapPathMatcherDefaultRouteAction) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRegionUrlMapPathMatcherOutputReference) validatePutDefaultUrlRedirectParameters(value *GoogleComputeRegionUrlMapPathMatcherDefaultUrlRedirect) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeRegionUrlMapPathMatcherOutputReference) validatePutHeaderActionParameters(value *GoogleComputeRegionUrlMapPathMatcherHeaderAction) error {
 	return nil
 }
 

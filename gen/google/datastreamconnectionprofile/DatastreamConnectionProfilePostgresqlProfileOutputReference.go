@@ -44,6 +44,8 @@ type DatastreamConnectionProfilePostgresqlProfileOutputReference interface {
 	SecretManagerStoredPassword() *string
 	SetSecretManagerStoredPassword(val *string)
 	SecretManagerStoredPasswordInput() *string
+	SslConfig() DatastreamConnectionProfilePostgresqlProfileSslConfigOutputReference
+	SslConfigInput() *DatastreamConnectionProfilePostgresqlProfileSslConfig
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -79,9 +81,11 @@ type DatastreamConnectionProfilePostgresqlProfileOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutSslConfig(value *DatastreamConnectionProfilePostgresqlProfileSslConfig)
 	ResetPassword()
 	ResetPort()
 	ResetSecretManagerStoredPassword()
+	ResetSslConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -242,6 +246,26 @@ func (j *jsiiProxy_DatastreamConnectionProfilePostgresqlProfileOutputReference) 
 	_jsii_.Get(
 		j,
 		"secretManagerStoredPasswordInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatastreamConnectionProfilePostgresqlProfileOutputReference) SslConfig() DatastreamConnectionProfilePostgresqlProfileSslConfigOutputReference {
+	var returns DatastreamConnectionProfilePostgresqlProfileSslConfigOutputReference
+	_jsii_.Get(
+		j,
+		"sslConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatastreamConnectionProfilePostgresqlProfileOutputReference) SslConfigInput() *DatastreamConnectionProfilePostgresqlProfileSslConfig {
+	var returns *DatastreamConnectionProfilePostgresqlProfileSslConfig
+	_jsii_.Get(
+		j,
+		"sslConfigInput",
 		&returns,
 	)
 	return returns
@@ -622,6 +646,17 @@ func (d *jsiiProxy_DatastreamConnectionProfilePostgresqlProfileOutputReference) 
 	return returns
 }
 
+func (d *jsiiProxy_DatastreamConnectionProfilePostgresqlProfileOutputReference) PutSslConfig(value *DatastreamConnectionProfilePostgresqlProfileSslConfig) {
+	if err := d.validatePutSslConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putSslConfig",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DatastreamConnectionProfilePostgresqlProfileOutputReference) ResetPassword() {
 	_jsii_.InvokeVoid(
 		d,
@@ -642,6 +677,14 @@ func (d *jsiiProxy_DatastreamConnectionProfilePostgresqlProfileOutputReference) 
 	_jsii_.InvokeVoid(
 		d,
 		"resetSecretManagerStoredPassword",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatastreamConnectionProfilePostgresqlProfileOutputReference) ResetSslConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSslConfig",
 		nil, // no parameters
 	)
 }

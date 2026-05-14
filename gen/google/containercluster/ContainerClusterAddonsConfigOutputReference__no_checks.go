@@ -80,6 +80,10 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) validatePutHttpL
 	return nil
 }
 
+func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) validatePutLustreCsiDriverConfigParameters(value *ContainerClusterAddonsConfigLustreCsiDriverConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) validatePutNetworkPolicyConfigParameters(value *ContainerClusterAddonsConfigNetworkPolicyConfig) error {
 	return nil
 }
@@ -89,6 +93,10 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) validatePutParal
 }
 
 func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) validatePutRayOperatorConfigParameters(value interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) validatePutSliceControllerConfigParameters(value *ContainerClusterAddonsConfigSliceControllerConfig) error {
 	return nil
 }
 

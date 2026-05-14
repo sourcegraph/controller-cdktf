@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeregionnetworkfirewallpolicyrule/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_region_network_firewall_policy_rule google_compute_region_network_firewall_policy_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_compute_region_network_firewall_policy_rule google_compute_region_network_firewall_policy_rule}.
 type GoogleComputeRegionNetworkFirewallPolicyRule interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -93,11 +93,17 @@ type GoogleComputeRegionNetworkFirewallPolicyRule interface {
 	SecurityProfileGroup() *string
 	SetSecurityProfileGroup(val *string)
 	SecurityProfileGroupInput() *string
+	TargetForwardingRules() *[]*string
+	SetTargetForwardingRules(val *[]*string)
+	TargetForwardingRulesInput() *[]*string
 	TargetSecureTags() GoogleComputeRegionNetworkFirewallPolicyRuleTargetSecureTagsList
 	TargetSecureTagsInput() interface{}
 	TargetServiceAccounts() *[]*string
 	SetTargetServiceAccounts(val *[]*string)
 	TargetServiceAccountsInput() *[]*string
+	TargetType() *string
+	SetTargetType(val *string)
+	TargetTypeInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -166,8 +172,10 @@ type GoogleComputeRegionNetworkFirewallPolicyRule interface {
 	ResetRegion()
 	ResetRuleName()
 	ResetSecurityProfileGroup()
+	ResetTargetForwardingRules()
 	ResetTargetSecureTags()
 	ResetTargetServiceAccounts()
+	ResetTargetType()
 	ResetTimeouts()
 	ResetTlsInspect()
 	SynthesizeAttributes() *map[string]interface{}
@@ -608,6 +616,26 @@ func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule) SecurityProfile
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule) TargetForwardingRules() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"targetForwardingRules",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule) TargetForwardingRulesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"targetForwardingRulesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule) TargetSecureTags() GoogleComputeRegionNetworkFirewallPolicyRuleTargetSecureTagsList {
 	var returns GoogleComputeRegionNetworkFirewallPolicyRuleTargetSecureTagsList
 	_jsii_.Get(
@@ -643,6 +671,26 @@ func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule) TargetServiceAc
 	_jsii_.Get(
 		j,
 		"targetServiceAccountsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule) TargetType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"targetType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule) TargetTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"targetTypeInput",
 		&returns,
 	)
 	return returns
@@ -719,7 +767,7 @@ func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule) TlsInspectInput
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_region_network_firewall_policy_rule google_compute_region_network_firewall_policy_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_compute_region_network_firewall_policy_rule google_compute_region_network_firewall_policy_rule} Resource.
 func NewGoogleComputeRegionNetworkFirewallPolicyRule(scope constructs.Construct, id *string, config *GoogleComputeRegionNetworkFirewallPolicyRuleConfig) GoogleComputeRegionNetworkFirewallPolicyRule {
 	_init_.Initialize()
 
@@ -737,7 +785,7 @@ func NewGoogleComputeRegionNetworkFirewallPolicyRule(scope constructs.Construct,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_region_network_firewall_policy_rule google_compute_region_network_firewall_policy_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_compute_region_network_firewall_policy_rule google_compute_region_network_firewall_policy_rule} Resource.
 func NewGoogleComputeRegionNetworkFirewallPolicyRule_Override(g GoogleComputeRegionNetworkFirewallPolicyRule, scope constructs.Construct, id *string, config *GoogleComputeRegionNetworkFirewallPolicyRuleConfig) {
 	_init_.Initialize()
 
@@ -948,6 +996,17 @@ func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule)SetSecurityProfi
 	)
 }
 
+func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule)SetTargetForwardingRules(val *[]*string) {
+	if err := j.validateSetTargetForwardingRulesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"targetForwardingRules",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule)SetTargetServiceAccounts(val *[]*string) {
 	if err := j.validateSetTargetServiceAccountsParameters(val); err != nil {
 		panic(err)
@@ -955,6 +1014,17 @@ func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule)SetTargetService
 	_jsii_.Set(
 		j,
 		"targetServiceAccounts",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule)SetTargetType(val *string) {
+	if err := j.validateSetTargetTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"targetType",
 		val,
 	)
 }
@@ -1428,6 +1498,14 @@ func (g *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule) ResetSecurityPr
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule) ResetTargetForwardingRules() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTargetForwardingRules",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule) ResetTargetSecureTags() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1440,6 +1518,14 @@ func (g *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule) ResetTargetServ
 	_jsii_.InvokeVoid(
 		g,
 		"resetTargetServiceAccounts",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule) ResetTargetType() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTargetType",
 		nil, // no parameters
 	)
 }

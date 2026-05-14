@@ -1,0 +1,6 @@
+package networksecurityinterceptendpointgroupassociation
+
+
+type NetworkSecurityInterceptEndpointGroupAssociationLocationsDetails struct {
+}
+

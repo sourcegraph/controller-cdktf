@@ -215,6 +215,37 @@ func (g *jsiiProxy_GoogleComputeRouterNat) validatePutLogConfigParameters(value 
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeRouterNat) validatePutNat64SubnetworkParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*GoogleComputeRouterNatNat64Subnetwork:
+		value := value.(*[]*GoogleComputeRouterNatNat64Subnetwork)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*GoogleComputeRouterNatNat64Subnetwork:
+		value_ := value.([]*GoogleComputeRouterNatNat64Subnetwork)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*GoogleComputeRouterNatNat64Subnetwork; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRouterNat) validatePutRulesParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -625,6 +656,14 @@ func (j *jsiiProxy_GoogleComputeRouterNat) validateSetRouterParameters(val *stri
 }
 
 func (j *jsiiProxy_GoogleComputeRouterNat) validateSetSourceSubnetworkIpRangesToNatParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeRouterNat) validateSetSourceSubnetworkIpRangesToNat64Parameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

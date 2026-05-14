@@ -28,10 +28,14 @@ type GoogleBigqueryAnalyticsHubListingBigqueryDatasetOutputReference interface {
 	Dataset() *string
 	SetDataset(val *string)
 	DatasetInput() *string
+	EffectiveReplicas() GoogleBigqueryAnalyticsHubListingBigqueryDatasetEffectiveReplicasList
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleBigqueryAnalyticsHubListingBigqueryDataset
 	SetInternalValue(val *GoogleBigqueryAnalyticsHubListingBigqueryDataset)
+	ReplicaLocations() *[]*string
+	SetReplicaLocations(val *[]*string)
+	ReplicaLocationsInput() *[]*string
 	SelectedResources() GoogleBigqueryAnalyticsHubListingBigqueryDatasetSelectedResourcesList
 	SelectedResourcesInput() interface{}
 	// Experimental.
@@ -67,6 +71,7 @@ type GoogleBigqueryAnalyticsHubListingBigqueryDatasetOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutSelectedResources(value interface{})
+	ResetReplicaLocations()
 	ResetSelectedResources()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -133,6 +138,16 @@ func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListingBigqueryDatasetOutputReferen
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListingBigqueryDatasetOutputReference) EffectiveReplicas() GoogleBigqueryAnalyticsHubListingBigqueryDatasetEffectiveReplicasList {
+	var returns GoogleBigqueryAnalyticsHubListingBigqueryDatasetEffectiveReplicasList
+	_jsii_.Get(
+		j,
+		"effectiveReplicas",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListingBigqueryDatasetOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -148,6 +163,26 @@ func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListingBigqueryDatasetOutputReferen
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListingBigqueryDatasetOutputReference) ReplicaLocations() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"replicaLocations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListingBigqueryDatasetOutputReference) ReplicaLocationsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"replicaLocationsInput",
 		&returns,
 	)
 	return returns
@@ -261,6 +296,17 @@ func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListingBigqueryDatasetOutputReferen
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListingBigqueryDatasetOutputReference)SetReplicaLocations(val *[]*string) {
+	if err := j.validateSetReplicaLocationsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"replicaLocations",
 		val,
 	)
 }
@@ -481,6 +527,14 @@ func (g *jsiiProxy_GoogleBigqueryAnalyticsHubListingBigqueryDatasetOutputReferen
 		g,
 		"putSelectedResources",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleBigqueryAnalyticsHubListingBigqueryDatasetOutputReference) ResetReplicaLocations() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetReplicaLocations",
+		nil, // no parameters
 	)
 }
 

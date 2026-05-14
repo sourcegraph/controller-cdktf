@@ -104,6 +104,10 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServicePrivateConnection) validateSetC
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDatabaseMigrationServicePrivateConnection) validateSetCreateWithoutValidationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDatabaseMigrationServicePrivateConnection) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

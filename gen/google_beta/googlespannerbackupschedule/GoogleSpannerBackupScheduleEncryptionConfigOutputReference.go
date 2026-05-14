@@ -35,6 +35,9 @@ type GoogleSpannerBackupScheduleEncryptionConfigOutputReference interface {
 	KmsKeyName() *string
 	SetKmsKeyName(val *string)
 	KmsKeyNameInput() *string
+	KmsKeyNames() *[]*string
+	SetKmsKeyNames(val *[]*string)
+	KmsKeyNamesInput() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -68,6 +71,7 @@ type GoogleSpannerBackupScheduleEncryptionConfigOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetKmsKeyName()
+	ResetKmsKeyNames()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -173,6 +177,26 @@ func (j *jsiiProxy_GoogleSpannerBackupScheduleEncryptionConfigOutputReference) K
 	return returns
 }
 
+func (j *jsiiProxy_GoogleSpannerBackupScheduleEncryptionConfigOutputReference) KmsKeyNames() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"kmsKeyNames",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSpannerBackupScheduleEncryptionConfigOutputReference) KmsKeyNamesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"kmsKeyNamesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleSpannerBackupScheduleEncryptionConfigOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -272,6 +296,17 @@ func (j *jsiiProxy_GoogleSpannerBackupScheduleEncryptionConfigOutputReference)Se
 	_jsii_.Set(
 		j,
 		"kmsKeyName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleSpannerBackupScheduleEncryptionConfigOutputReference)SetKmsKeyNames(val *[]*string) {
+	if err := j.validateSetKmsKeyNamesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kmsKeyNames",
 		val,
 	)
 }
@@ -488,6 +523,14 @@ func (g *jsiiProxy_GoogleSpannerBackupScheduleEncryptionConfigOutputReference) R
 	_jsii_.InvokeVoid(
 		g,
 		"resetKmsKeyName",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleSpannerBackupScheduleEncryptionConfigOutputReference) ResetKmsKeyNames() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetKmsKeyNames",
 		nil, // no parameters
 	)
 }

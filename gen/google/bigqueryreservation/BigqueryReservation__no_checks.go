@@ -140,6 +140,10 @@ func (j *jsiiProxy_BigqueryReservation) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_BigqueryReservation) validateSetReservationGroupParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BigqueryReservation) validateSetSecondaryLocationParameters(val *string) error {
 	return nil
 }

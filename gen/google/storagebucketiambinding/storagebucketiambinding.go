@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/storagebucketiambinding/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/storage_bucket_iam_binding google_storage_bucket_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_iam_binding google_storage_bucket_iam_binding}.
 type StorageBucketIamBinding interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -73,6 +73,8 @@ type StorageBucketIamBinding interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() StorageBucketIamBindingTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -117,11 +119,13 @@ type StorageBucketIamBinding interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutCondition(value *StorageBucketIamBindingCondition)
+	PutTimeouts(value *StorageBucketIamBindingTimeouts)
 	ResetCondition()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -410,8 +414,28 @@ func (j *jsiiProxy_StorageBucketIamBinding) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_StorageBucketIamBinding) Timeouts() StorageBucketIamBindingTimeoutsOutputReference {
+	var returns StorageBucketIamBindingTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/storage_bucket_iam_binding google_storage_bucket_iam_binding} Resource.
+func (j *jsiiProxy_StorageBucketIamBinding) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_iam_binding google_storage_bucket_iam_binding} Resource.
 func NewStorageBucketIamBinding(scope constructs.Construct, id *string, config *StorageBucketIamBindingConfig) StorageBucketIamBinding {
 	_init_.Initialize()
 
@@ -429,7 +453,7 @@ func NewStorageBucketIamBinding(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/storage_bucket_iam_binding google_storage_bucket_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_iam_binding google_storage_bucket_iam_binding} Resource.
 func NewStorageBucketIamBinding_Override(s StorageBucketIamBinding, scope constructs.Construct, id *string, config *StorageBucketIamBindingConfig) {
 	_init_.Initialize()
 
@@ -916,6 +940,17 @@ func (s *jsiiProxy_StorageBucketIamBinding) PutCondition(value *StorageBucketIam
 	)
 }
 
+func (s *jsiiProxy_StorageBucketIamBinding) PutTimeouts(value *StorageBucketIamBindingTimeouts) {
+	if err := s.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_StorageBucketIamBinding) ResetCondition() {
 	_jsii_.InvokeVoid(
 		s,
@@ -936,6 +971,14 @@ func (s *jsiiProxy_StorageBucketIamBinding) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageBucketIamBinding) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

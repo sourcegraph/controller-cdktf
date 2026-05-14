@@ -72,6 +72,10 @@ func (g *jsiiProxy_GoogleStorageBucketIamPolicy) validateOverrideLogicalIdParame
 	return nil
 }
 
+func (g *jsiiProxy_GoogleStorageBucketIamPolicy) validatePutTimeoutsParameters(value *GoogleStorageBucketIamPolicyTimeouts) error {
+	return nil
+}
+
 func validateGoogleStorageBucketIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

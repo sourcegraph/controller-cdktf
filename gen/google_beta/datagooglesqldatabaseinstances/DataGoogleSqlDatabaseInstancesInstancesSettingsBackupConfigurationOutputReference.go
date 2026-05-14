@@ -11,6 +11,7 @@ import (
 type DataGoogleSqlDatabaseInstancesInstancesSettingsBackupConfigurationOutputReference interface {
 	cdktf.ComplexObject
 	BackupRetentionSettings() DataGoogleSqlDatabaseInstancesInstancesSettingsBackupConfigurationBackupRetentionSettingsList
+	BackupTier() *string
 	BinaryLogEnabled() cdktf.IResolvable
 	// the index of the complex object in a list.
 	// Experimental.
@@ -88,6 +89,16 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsBackupConfigur
 	_jsii_.Get(
 		j,
 		"backupRetentionSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsBackupConfigurationOutputReference) BackupTier() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"backupTier",
 		&returns,
 	)
 	return returns

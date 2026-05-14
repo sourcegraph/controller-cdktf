@@ -31,6 +31,7 @@ type GoogleComputeServiceAttachmentConnectedEndpointsOutputReference interface {
 	Fqn() *string
 	InternalValue() *GoogleComputeServiceAttachmentConnectedEndpoints
 	SetInternalValue(val *GoogleComputeServiceAttachmentConnectedEndpoints)
+	NatIps() *[]*string
 	PropagatedConnectionCount() *float64
 	PscConnectionId() *string
 	Status() *string
@@ -146,6 +147,16 @@ func (j *jsiiProxy_GoogleComputeServiceAttachmentConnectedEndpointsOutputReferen
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeServiceAttachmentConnectedEndpointsOutputReference) NatIps() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"natIps",
 		&returns,
 	)
 	return returns

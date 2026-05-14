@@ -148,6 +148,10 @@ func (j *jsiiProxy_GoogleBigqueryJob) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
+func (j *jsiiProxy_GoogleBigqueryJob) validateSetReservationParameters(val *string) error {
+	return nil
+}
+
 func validateNewGoogleBigqueryJobParameters(scope constructs.Construct, id *string, config *GoogleBigqueryJobConfig) error {
 	return nil
 }

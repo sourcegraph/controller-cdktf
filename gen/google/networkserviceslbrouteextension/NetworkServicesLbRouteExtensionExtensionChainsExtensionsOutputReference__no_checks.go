@@ -72,11 +72,27 @@ func (j *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsExtensionsOutpu
 	return nil
 }
 
+func (j *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference) validateSetMetadataParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference) validateSetNameParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference) validateSetObservabilityModeParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference) validateSetRequestBodySendModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference) validateSetServiceParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference) validateSetSupportedEventsParameters(val *[]*string) error {
 	return nil
 }
 

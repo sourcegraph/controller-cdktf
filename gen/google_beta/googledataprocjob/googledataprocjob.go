@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledataprocjob/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_dataproc_job google_dataproc_job}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_dataproc_job google_dataproc_job}.
 type GoogleDataprocJob interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -100,6 +100,9 @@ type GoogleDataprocJob interface {
 	TerraformResourceType() *string
 	Timeouts() GoogleDataprocJobTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	WaitForCompletion() interface{}
+	SetWaitForCompletion(val interface{})
+	WaitForCompletionInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -172,6 +175,7 @@ type GoogleDataprocJob interface {
 	ResetSparkConfig()
 	ResetSparksqlConfig()
 	ResetTimeouts()
+	ResetWaitForCompletion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -720,8 +724,28 @@ func (j *jsiiProxy_GoogleDataprocJob) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDataprocJob) WaitForCompletion() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"waitForCompletion",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_dataproc_job google_dataproc_job} Resource.
+func (j *jsiiProxy_GoogleDataprocJob) WaitForCompletionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"waitForCompletionInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_dataproc_job google_dataproc_job} Resource.
 func NewGoogleDataprocJob(scope constructs.Construct, id *string, config *GoogleDataprocJobConfig) GoogleDataprocJob {
 	_init_.Initialize()
 
@@ -739,7 +763,7 @@ func NewGoogleDataprocJob(scope constructs.Construct, id *string, config *Google
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_dataproc_job google_dataproc_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_dataproc_job google_dataproc_job} Resource.
 func NewGoogleDataprocJob_Override(g GoogleDataprocJob, scope constructs.Construct, id *string, config *GoogleDataprocJobConfig) {
 	_init_.Initialize()
 
@@ -869,6 +893,17 @@ func (j *jsiiProxy_GoogleDataprocJob)SetRegion(val *string) {
 	_jsii_.Set(
 		j,
 		"region",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataprocJob)SetWaitForCompletion(val interface{}) {
+	if err := j.validateSetWaitForCompletionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"waitForCompletion",
 		val,
 	)
 }
@@ -1471,6 +1506,14 @@ func (g *jsiiProxy_GoogleDataprocJob) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataprocJob) ResetWaitForCompletion() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetWaitForCompletion",
 		nil, // no parameters
 	)
 }

@@ -76,7 +76,15 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) validateSetPre
 	return nil
 }
 
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) validateSetSourceInstanceDeletionTimeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) validateSetSourceInstanceNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) validateSetSourceProjectParameters(val *string) error {
 	return nil
 }
 

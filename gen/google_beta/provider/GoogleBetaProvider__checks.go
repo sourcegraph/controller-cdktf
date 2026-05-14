@@ -144,6 +144,40 @@ func (j *jsiiProxy_GoogleBetaProvider) validateSetExternalCredentialsParameters(
 	return nil
 }
 
+func (j *jsiiProxy_GoogleBetaProvider) validateSetPreferGlobalEndpointsParameters(val interface{}) error {
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) validateSetPreferRegionalEndpointsParameters(val interface{}) error {
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBetaProvider) validateSetUserProjectOverrideParameters(val interface{}) error {
 	switch val.(type) {
 	case *bool:

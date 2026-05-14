@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagoogleserviceaccountkey/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/service_account_key google_service_account_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/service_account_key google_service_account_key}.
 type DataGoogleServiceAccountKey interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -45,9 +45,6 @@ type DataGoogleServiceAccountKey interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
-	Project() *string
-	SetProject(val *string)
-	ProjectInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -93,7 +90,6 @@ type DataGoogleServiceAccountKey interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetProject()
 	ResetPublicKeyType()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -254,26 +250,6 @@ func (j *jsiiProxy_DataGoogleServiceAccountKey) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleServiceAccountKey) Project() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"project",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataGoogleServiceAccountKey) ProjectInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"projectInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataGoogleServiceAccountKey) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -355,7 +331,7 @@ func (j *jsiiProxy_DataGoogleServiceAccountKey) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/service_account_key google_service_account_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/service_account_key google_service_account_key} Data Source.
 func NewDataGoogleServiceAccountKey(scope constructs.Construct, id *string, config *DataGoogleServiceAccountKeyConfig) DataGoogleServiceAccountKey {
 	_init_.Initialize()
 
@@ -373,7 +349,7 @@ func NewDataGoogleServiceAccountKey(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/service_account_key google_service_account_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/service_account_key google_service_account_key} Data Source.
 func NewDataGoogleServiceAccountKey_Override(d DataGoogleServiceAccountKey, scope constructs.Construct, id *string, config *DataGoogleServiceAccountKeyConfig) {
 	_init_.Initialize()
 
@@ -440,17 +416,6 @@ func (j *jsiiProxy_DataGoogleServiceAccountKey)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataGoogleServiceAccountKey)SetProject(val *string) {
-	if err := j.validateSetProjectParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"project",
 		val,
 	)
 }
@@ -771,14 +736,6 @@ func (d *jsiiProxy_DataGoogleServiceAccountKey) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataGoogleServiceAccountKey) ResetProject() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetProject",
 		nil, // no parameters
 	)
 }

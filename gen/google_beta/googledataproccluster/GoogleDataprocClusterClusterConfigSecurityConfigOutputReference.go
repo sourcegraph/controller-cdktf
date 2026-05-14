@@ -27,6 +27,8 @@ type GoogleDataprocClusterClusterConfigSecurityConfigOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	IdentityConfig() GoogleDataprocClusterClusterConfigSecurityConfigIdentityConfigOutputReference
+	IdentityConfigInput() *GoogleDataprocClusterClusterConfigSecurityConfigIdentityConfig
 	InternalValue() *GoogleDataprocClusterClusterConfigSecurityConfig
 	SetInternalValue(val *GoogleDataprocClusterClusterConfigSecurityConfig)
 	KerberosConfig() GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference
@@ -63,7 +65,10 @@ type GoogleDataprocClusterClusterConfigSecurityConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutIdentityConfig(value *GoogleDataprocClusterClusterConfigSecurityConfigIdentityConfig)
 	PutKerberosConfig(value *GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfig)
+	ResetIdentityConfig()
+	ResetKerberosConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -114,6 +119,26 @@ func (j *jsiiProxy_GoogleDataprocClusterClusterConfigSecurityConfigOutputReferen
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigSecurityConfigOutputReference) IdentityConfig() GoogleDataprocClusterClusterConfigSecurityConfigIdentityConfigOutputReference {
+	var returns GoogleDataprocClusterClusterConfigSecurityConfigIdentityConfigOutputReference
+	_jsii_.Get(
+		j,
+		"identityConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigSecurityConfigOutputReference) IdentityConfigInput() *GoogleDataprocClusterClusterConfigSecurityConfigIdentityConfig {
+	var returns *GoogleDataprocClusterClusterConfigSecurityConfigIdentityConfig
+	_jsii_.Get(
+		j,
+		"identityConfigInput",
 		&returns,
 	)
 	return returns
@@ -438,6 +463,17 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigSecurityConfigOutputReferen
 	return returns
 }
 
+func (g *jsiiProxy_GoogleDataprocClusterClusterConfigSecurityConfigOutputReference) PutIdentityConfig(value *GoogleDataprocClusterClusterConfigSecurityConfigIdentityConfig) {
+	if err := g.validatePutIdentityConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putIdentityConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDataprocClusterClusterConfigSecurityConfigOutputReference) PutKerberosConfig(value *GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfig) {
 	if err := g.validatePutKerberosConfigParameters(value); err != nil {
 		panic(err)
@@ -446,6 +482,22 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigSecurityConfigOutputReferen
 		g,
 		"putKerberosConfig",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDataprocClusterClusterConfigSecurityConfigOutputReference) ResetIdentityConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIdentityConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataprocClusterClusterConfigSecurityConfigOutputReference) ResetKerberosConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetKerberosConfig",
+		nil, // no parameters
 	)
 }
 

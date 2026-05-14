@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/composeruserworkloadssecret/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/composer_user_workloads_secret google_composer_user_workloads_secret}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/composer_user_workloads_secret google_composer_user_workloads_secret}.
 type ComposerUserWorkloadsSecret interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -449,7 +449,7 @@ func (j *jsiiProxy_ComposerUserWorkloadsSecret) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/composer_user_workloads_secret google_composer_user_workloads_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/composer_user_workloads_secret google_composer_user_workloads_secret} Resource.
 func NewComposerUserWorkloadsSecret(scope constructs.Construct, id *string, config *ComposerUserWorkloadsSecretConfig) ComposerUserWorkloadsSecret {
 	_init_.Initialize()
 
@@ -467,7 +467,7 @@ func NewComposerUserWorkloadsSecret(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/composer_user_workloads_secret google_composer_user_workloads_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/composer_user_workloads_secret google_composer_user_workloads_secret} Resource.
 func NewComposerUserWorkloadsSecret_Override(c ComposerUserWorkloadsSecret, scope constructs.Construct, id *string, config *ComposerUserWorkloadsSecretConfig) {
 	_init_.Initialize()
 

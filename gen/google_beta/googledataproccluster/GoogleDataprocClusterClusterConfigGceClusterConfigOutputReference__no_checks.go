@@ -88,6 +88,10 @@ func (j *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigOutputRefer
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference) validateSetResourceManagerTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference) validateSetServiceAccountParameters(val *string) error {
 	return nil
 }

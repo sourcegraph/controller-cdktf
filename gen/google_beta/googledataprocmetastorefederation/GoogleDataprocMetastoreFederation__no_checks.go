@@ -136,6 +136,10 @@ func (j *jsiiProxy_GoogleDataprocMetastoreFederation) validateSetProvisionersPar
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataprocMetastoreFederation) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataprocMetastoreFederation) validateSetVersionParameters(val *string) error {
 	return nil
 }

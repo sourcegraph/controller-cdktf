@@ -48,6 +48,10 @@ func (c *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) validatePutLay
 	return nil
 }
 
+func (c *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) validatePutSrcSecureTagsParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (j *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) validateSetDes
 	return nil
 }
 
+func (j *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) validateSetDestNetworkContextParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) validateSetDestRegionCodesParameters(val *[]*string) error {
 	return nil
 }
@@ -93,6 +101,14 @@ func (j *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) validateSetSrc
 }
 
 func (j *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) validateSetSrcIpRangesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) validateSetSrcNetworkContextParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) validateSetSrcNetworksParameters(val *[]*string) error {
 	return nil
 }
 

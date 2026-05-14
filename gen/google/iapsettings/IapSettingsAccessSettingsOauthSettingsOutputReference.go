@@ -10,6 +10,13 @@ import (
 
 type IapSettingsAccessSettingsOauthSettingsOutputReference interface {
 	cdktf.ComplexObject
+	ClientId() *string
+	SetClientId(val *string)
+	ClientIdInput() *string
+	ClientSecret() *string
+	SetClientSecret(val *string)
+	ClientSecretInput() *string
+	ClientSecretSha256() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -67,6 +74,8 @@ type IapSettingsAccessSettingsOauthSettingsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetClientId()
+	ResetClientSecret()
 	ResetLoginHint()
 	ResetProgrammaticClients()
 	// Produce the Token's value at resolution time.
@@ -82,6 +91,56 @@ type IapSettingsAccessSettingsOauthSettingsOutputReference interface {
 // The jsii proxy struct for IapSettingsAccessSettingsOauthSettingsOutputReference
 type jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference) ClientId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference) ClientIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference) ClientSecret() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientSecret",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference) ClientSecretInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientSecretInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference) ClientSecretSha256() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientSecretSha256",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference) ComplexObjectIndex() interface{} {
@@ -219,6 +278,28 @@ func NewIapSettingsAccessSettingsOauthSettingsOutputReference_Override(i IapSett
 		"@cdktf/provider-google.iapSettings.IapSettingsAccessSettingsOauthSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
+	)
+}
+
+func (j *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference)SetClientId(val *string) {
+	if err := j.validateSetClientIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"clientId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference)SetClientSecret(val *string) {
+	if err := j.validateSetClientSecretParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"clientSecret",
+		val,
 	)
 }
 
@@ -483,6 +564,22 @@ func (i *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference) Interp
 	)
 
 	return returns
+}
+
+func (i *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference) ResetClientId() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetClientId",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference) ResetClientSecret() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetClientSecret",
+		nil, // no parameters
+	)
 }
 
 func (i *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference) ResetLoginHint() {

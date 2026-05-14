@@ -72,6 +72,10 @@ func (g *jsiiProxy_GoogleComputeRegionSecurityPolicy) validateOverrideLogicalIdP
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeRegionSecurityPolicy) validatePutAdvancedOptionsConfigParameters(value *GoogleComputeRegionSecurityPolicyAdvancedOptionsConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRegionSecurityPolicy) validatePutDdosProtectionConfigParameters(value *GoogleComputeRegionSecurityPolicyDdosProtectionConfig) error {
 	return nil
 }

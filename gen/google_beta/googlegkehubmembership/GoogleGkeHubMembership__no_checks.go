@@ -108,10 +108,6 @@ func (j *jsiiProxy_GoogleGkeHubMembership) validateSetCountParameters(val interf
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeHubMembership) validateSetDescriptionParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_GoogleGkeHubMembership) validateSetIdParameters(val *string) error {
 	return nil
 }

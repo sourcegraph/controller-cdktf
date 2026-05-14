@@ -33,6 +33,7 @@ type DataGoogleFilestoreInstanceFileSharesNfsExportOptionsOutputReference interf
 	InternalValue() *DataGoogleFilestoreInstanceFileSharesNfsExportOptions
 	SetInternalValue(val *DataGoogleFilestoreInstanceFileSharesNfsExportOptions)
 	IpRanges() *[]*string
+	Network() *string
 	SquashMode() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -166,6 +167,16 @@ func (j *jsiiProxy_DataGoogleFilestoreInstanceFileSharesNfsExportOptionsOutputRe
 	_jsii_.Get(
 		j,
 		"ipRanges",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleFilestoreInstanceFileSharesNfsExportOptionsOutputReference) Network() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"network",
 		&returns,
 	)
 	return returns

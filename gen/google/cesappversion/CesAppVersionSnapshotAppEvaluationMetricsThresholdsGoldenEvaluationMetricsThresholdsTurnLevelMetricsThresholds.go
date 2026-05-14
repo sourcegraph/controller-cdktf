@@ -1,0 +1,6 @@
+package cesappversion
+
+
+type CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholds struct {
+}
+

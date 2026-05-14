@@ -204,6 +204,28 @@ func (g *jsiiProxy_GoogleComputeVpnTunnel) validateOverrideLogicalIdParameters(n
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeVpnTunnel) validatePutCipherSuiteParameters(value *GoogleComputeVpnTunnelCipherSuite) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeVpnTunnel) validatePutParamsParameters(value *GoogleComputeVpnTunnelParams) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeVpnTunnel) validatePutTimeoutsParameters(value *GoogleComputeVpnTunnelTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -512,6 +534,22 @@ func (j *jsiiProxy_GoogleComputeVpnTunnel) validateSetRouterParameters(val *stri
 }
 
 func (j *jsiiProxy_GoogleComputeVpnTunnel) validateSetSharedSecretParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeVpnTunnel) validateSetSharedSecretWoParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeVpnTunnel) validateSetSharedSecretWoVersionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

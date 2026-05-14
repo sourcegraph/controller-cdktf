@@ -187,6 +187,22 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateDiskSourceImageEncryptionK
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateDiskSourceImageEncryptionKeyOutputReference) validateSetRawKeyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateDiskSourceImageEncryptionKeyOutputReference) validateSetRsaEncryptedKeyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateDiskSourceImageEncryptionKeyOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

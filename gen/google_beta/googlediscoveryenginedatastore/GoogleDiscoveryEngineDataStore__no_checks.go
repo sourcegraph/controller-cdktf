@@ -132,6 +132,10 @@ func (j *jsiiProxy_GoogleDiscoveryEngineDataStore) validateSetIndustryVerticalPa
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDiscoveryEngineDataStore) validateSetKmsKeyNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDiscoveryEngineDataStore) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

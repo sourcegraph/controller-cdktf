@@ -76,6 +76,10 @@ func (d *jsiiProxy_DatabaseMigrationServiceMigrationJob) validatePutDumpFlagsPar
 	return nil
 }
 
+func (d *jsiiProxy_DatabaseMigrationServiceMigrationJob) validatePutObjectsConfigParameters(value *DatabaseMigrationServiceMigrationJobObjectsConfig) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatabaseMigrationServiceMigrationJob) validatePutPerformanceConfigParameters(value *DatabaseMigrationServiceMigrationJobPerformanceConfig) error {
 	return nil
 }

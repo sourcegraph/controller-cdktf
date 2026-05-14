@@ -44,6 +44,10 @@ func (c *jsiiProxy_ContainerClusterNodePoolAutoConfigLinuxNodeConfigOutputRefere
 	return nil
 }
 
+func (c *jsiiProxy_ContainerClusterNodePoolAutoConfigLinuxNodeConfigOutputReference) validatePutNodeKernelModuleLoadingParameters(value *ContainerClusterNodePoolAutoConfigLinuxNodeConfigNodeKernelModuleLoading) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerClusterNodePoolAutoConfigLinuxNodeConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

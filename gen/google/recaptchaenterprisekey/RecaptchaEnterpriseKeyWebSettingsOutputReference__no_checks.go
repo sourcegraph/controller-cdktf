@@ -44,6 +44,10 @@ func (r *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference) validateInt
 	return nil
 }
 
+func (r *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference) validatePutChallengeSettingsParameters(value *RecaptchaEnterpriseKeyWebSettingsChallengeSettings) error {
+	return nil
+}
+
 func (r *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

@@ -191,6 +191,14 @@ func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionLogConfigOutputReference
 	return nil
 }
 
+func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionLogConfigOutputReference) validateSetLevelParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionLogConfigOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -442,6 +442,14 @@ func (j *jsiiProxy_GoogleApikeysKey) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
+func (j *jsiiProxy_GoogleApikeysKey) validateSetServiceAccountEmailParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewGoogleApikeysKeyParameters(scope constructs.Construct, id *string, config *GoogleApikeysKeyConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

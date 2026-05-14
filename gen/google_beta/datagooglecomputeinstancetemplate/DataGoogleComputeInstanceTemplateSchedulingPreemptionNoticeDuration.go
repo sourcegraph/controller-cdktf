@@ -1,0 +1,6 @@
+package datagooglecomputeinstancetemplate
+
+
+type DataGoogleComputeInstanceTemplateSchedulingPreemptionNoticeDuration struct {
+}
+

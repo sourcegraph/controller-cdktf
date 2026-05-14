@@ -10,6 +10,7 @@ import (
 
 type DataGoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference interface {
 	cdktf.ComplexObject
+	AccurateTimeConfig() DataGoogleContainerClusterNodeConfigLinuxNodeConfigAccurateTimeConfigList
 	CgroupMode() *string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -31,6 +32,8 @@ type DataGoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference interfac
 	HugepagesConfig() DataGoogleContainerClusterNodeConfigLinuxNodeConfigHugepagesConfigList
 	InternalValue() *DataGoogleContainerClusterNodeConfigLinuxNodeConfig
 	SetInternalValue(val *DataGoogleContainerClusterNodeConfigLinuxNodeConfig)
+	NodeKernelModuleLoading() DataGoogleContainerClusterNodeConfigLinuxNodeConfigNodeKernelModuleLoadingList
+	SwapConfig() DataGoogleContainerClusterNodeConfigLinuxNodeConfigSwapConfigList
 	Sysctls() cdktf.StringMap
 	// Experimental.
 	TerraformAttribute() *string
@@ -40,6 +43,8 @@ type DataGoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference interfac
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TransparentHugepageDefrag() *string
+	TransparentHugepageEnabled() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -77,6 +82,16 @@ type DataGoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference interfac
 // The jsii proxy struct for DataGoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference
 type jsiiProxy_DataGoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference) AccurateTimeConfig() DataGoogleContainerClusterNodeConfigLinuxNodeConfigAccurateTimeConfigList {
+	var returns DataGoogleContainerClusterNodeConfigLinuxNodeConfigAccurateTimeConfigList
+	_jsii_.Get(
+		j,
+		"accurateTimeConfig",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference) CgroupMode() *string {
@@ -149,6 +164,26 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigLinuxNodeConfigOutputRefe
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference) NodeKernelModuleLoading() DataGoogleContainerClusterNodeConfigLinuxNodeConfigNodeKernelModuleLoadingList {
+	var returns DataGoogleContainerClusterNodeConfigLinuxNodeConfigNodeKernelModuleLoadingList
+	_jsii_.Get(
+		j,
+		"nodeKernelModuleLoading",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference) SwapConfig() DataGoogleContainerClusterNodeConfigLinuxNodeConfigSwapConfigList {
+	var returns DataGoogleContainerClusterNodeConfigLinuxNodeConfigSwapConfigList
+	_jsii_.Get(
+		j,
+		"swapConfig",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference) Sysctls() cdktf.StringMap {
 	var returns cdktf.StringMap
 	_jsii_.Get(
@@ -174,6 +209,26 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigLinuxNodeConfigOutputRefe
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference) TransparentHugepageDefrag() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"transparentHugepageDefrag",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference) TransparentHugepageEnabled() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"transparentHugepageEnabled",
 		&returns,
 	)
 	return returns

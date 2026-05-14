@@ -279,6 +279,17 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validatePutParamsParameter
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validatePutResourcePoliciesParameters(value *GoogleComputeInstanceGroupManagerResourcePolicies) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validatePutStandbyPolicyParameters(value *GoogleComputeInstanceGroupManagerStandbyPolicy) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -377,6 +388,37 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validatePutStatefulInterna
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
 			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*GoogleComputeInstanceGroupManagerStatefulInternalIp; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validatePutTargetSizePolicyParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*GoogleComputeInstanceGroupManagerTargetSizePolicy:
+		value := value.(*[]*GoogleComputeInstanceGroupManagerTargetSizePolicy)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*GoogleComputeInstanceGroupManagerTargetSizePolicy:
+		value_ := value.([]*GoogleComputeInstanceGroupManagerTargetSizePolicy)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*GoogleComputeInstanceGroupManagerTargetSizePolicy; received %#v (a %T)", value, value)
 		}
 	}
 

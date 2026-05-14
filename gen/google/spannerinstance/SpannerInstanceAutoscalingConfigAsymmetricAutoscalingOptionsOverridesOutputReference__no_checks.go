@@ -52,11 +52,27 @@ func (s *jsiiProxy_SpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsO
 	return nil
 }
 
+func (j *jsiiProxy_SpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsOverridesOutputReference) validateSetAutoscalingTargetHighPriorityCpuUtilizationPercentParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_SpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsOverridesOutputReference) validateSetAutoscalingTargetTotalCpuUtilizationPercentParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsOverridesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_SpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsOverridesOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_SpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsOverridesOutputReference) validateSetDisableHighPriorityCpuAutoscalingParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_SpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsOverridesOutputReference) validateSetDisableTotalCpuAutoscalingParameters(val interface{}) error {
 	return nil
 }
 

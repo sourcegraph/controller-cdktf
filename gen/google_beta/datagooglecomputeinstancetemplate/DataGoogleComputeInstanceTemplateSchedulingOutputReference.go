@@ -42,7 +42,9 @@ type DataGoogleComputeInstanceTemplateSchedulingOutputReference interface {
 	OnHostMaintenance() *string
 	OnInstanceStopAction() DataGoogleComputeInstanceTemplateSchedulingOnInstanceStopActionList
 	Preemptible() cdktf.IResolvable
+	PreemptionNoticeDuration() DataGoogleComputeInstanceTemplateSchedulingPreemptionNoticeDurationList
 	ProvisioningModel() *string
+	SkipGuestOsShutdown() cdktf.IResolvable
 	TerminationTime() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -271,11 +273,31 @@ func (j *jsiiProxy_DataGoogleComputeInstanceTemplateSchedulingOutputReference) P
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeInstanceTemplateSchedulingOutputReference) PreemptionNoticeDuration() DataGoogleComputeInstanceTemplateSchedulingPreemptionNoticeDurationList {
+	var returns DataGoogleComputeInstanceTemplateSchedulingPreemptionNoticeDurationList
+	_jsii_.Get(
+		j,
+		"preemptionNoticeDuration",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeInstanceTemplateSchedulingOutputReference) ProvisioningModel() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"provisioningModel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeInstanceTemplateSchedulingOutputReference) SkipGuestOsShutdown() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"skipGuestOsShutdown",
 		&returns,
 	)
 	return returns

@@ -80,6 +80,10 @@ func (g *jsiiProxy_GoogleComputeServiceAttachment) validatePutTimeoutsParameters
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeServiceAttachment) validatePutTunnelingConfigParameters(value *GoogleComputeServiceAttachmentTunnelingConfig) error {
+	return nil
+}
+
 func validateGoogleComputeServiceAttachment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -157,6 +161,14 @@ func (j *jsiiProxy_GoogleComputeServiceAttachment) validateSetReconcileConnectio
 }
 
 func (j *jsiiProxy_GoogleComputeServiceAttachment) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeServiceAttachment) validateSetSendPropagatedConnectionLimitIfZeroParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeServiceAttachment) validateSetShowNatIpsParameters(val interface{}) error {
 	return nil
 }
 

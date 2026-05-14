@@ -26,6 +26,8 @@ type DataGoogleContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutpu
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EnableK8SCertsViaDns() cdktf.IResolvable
+	EnableK8STokensViaDns() cdktf.IResolvable
 	Endpoint() *string
 	// Experimental.
 	Fqn() *string
@@ -113,6 +115,26 @@ func (j *jsiiProxy_DataGoogleContainerClusterControlPlaneEndpointsConfigDnsEndpo
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference) EnableK8SCertsViaDns() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"enableK8SCertsViaDns",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference) EnableK8STokensViaDns() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"enableK8STokensViaDns",
 		&returns,
 	)
 	return returns

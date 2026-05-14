@@ -56,7 +56,15 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) val
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) validatePutReadinessProbeParameters(value *GoogleCloudRunV2ServiceTemplateContainersReadinessProbe) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) validatePutResourcesParameters(value *GoogleCloudRunV2ServiceTemplateContainersResources) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) validatePutSourceCodeParameters(value *GoogleCloudRunV2ServiceTemplateContainersSourceCode) error {
 	return nil
 }
 

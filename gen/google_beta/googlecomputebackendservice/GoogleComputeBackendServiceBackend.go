@@ -21,7 +21,7 @@ type GoogleComputeBackendServiceBackend struct {
 	// Group resource using the fully-qualified URL, rather than a
 	// partial URL.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_backend_service#group GoogleComputeBackendService#group}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_compute_backend_service#group GoogleComputeBackendService#group}
 	Group *string `field:"required" json:"group" yaml:"group"`
 	// Specifies the balancing mode for this backend.
 	//
@@ -30,9 +30,9 @@ type GoogleComputeBackendServiceBackend struct {
 	// CUSTOM_METRICS (for HTTP(s)) and CONNECTION (for TCP/SSL).
 	//
 	// See the [Backend Services Overview](https://cloud.google.com/load-balancing/docs/backend-service#balancing-mode)
-	// for an explanation of load balancing modes. Default value: "UTILIZATION" Possible values: ["UTILIZATION", "RATE", "CONNECTION", "CUSTOM_METRICS"]
+	// for an explanation of load balancing modes. Default value: "UTILIZATION" Possible values: ["UTILIZATION", "RATE", "CONNECTION", "CUSTOM_METRICS", "IN_FLIGHT"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_backend_service#balancing_mode GoogleComputeBackendService#balancing_mode}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_compute_backend_service#balancing_mode GoogleComputeBackendService#balancing_mode}
 	BalancingMode *string `field:"optional" json:"balancingMode" yaml:"balancingMode"`
 	// A multiplier applied to the group's maximum servicing capacity (based on UTILIZATION, RATE or CONNECTION).
 	//
@@ -41,15 +41,15 @@ type GoogleComputeBackendServiceBackend struct {
 	// setting of 0 means the group is completely drained, offering
 	// 0% of its available Capacity. Valid range is [0.0,1.0].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_backend_service#capacity_scaler GoogleComputeBackendService#capacity_scaler}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_compute_backend_service#capacity_scaler GoogleComputeBackendService#capacity_scaler}
 	CapacityScaler *float64 `field:"optional" json:"capacityScaler" yaml:"capacityScaler"`
 	// custom_metrics block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_backend_service#custom_metrics GoogleComputeBackendService#custom_metrics}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_compute_backend_service#custom_metrics GoogleComputeBackendService#custom_metrics}
 	CustomMetrics interface{} `field:"optional" json:"customMetrics" yaml:"customMetrics"`
 	// An optional description of this resource. Provide this property when you create the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_backend_service#description GoogleComputeBackendService#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_compute_backend_service#description GoogleComputeBackendService#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// The max number of simultaneous connections for the group. Can be used with either CONNECTION or UTILIZATION balancing modes.
 	//
@@ -57,7 +57,7 @@ type GoogleComputeBackendServiceBackend struct {
 	// of maxConnectionsPerInstance or maxConnectionsPerEndpoint,
 	// as appropriate for group type, must be set.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_backend_service#max_connections GoogleComputeBackendService#max_connections}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_compute_backend_service#max_connections GoogleComputeBackendService#max_connections}
 	MaxConnections *float64 `field:"optional" json:"maxConnections" yaml:"maxConnections"`
 	// The max number of simultaneous connections that a single backend network endpoint can handle.
 	//
@@ -68,7 +68,7 @@ type GoogleComputeBackendServiceBackend struct {
 	// For CONNECTION mode, either
 	// maxConnections or maxConnectionsPerEndpoint must be set.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_backend_service#max_connections_per_endpoint GoogleComputeBackendService#max_connections_per_endpoint}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_compute_backend_service#max_connections_per_endpoint GoogleComputeBackendService#max_connections_per_endpoint}
 	MaxConnectionsPerEndpoint *float64 `field:"optional" json:"maxConnectionsPerEndpoint" yaml:"maxConnectionsPerEndpoint"`
 	// The max number of simultaneous connections that a single backend instance can handle.
 	//
@@ -79,8 +79,23 @@ type GoogleComputeBackendServiceBackend struct {
 	// For CONNECTION mode, either maxConnections or
 	// maxConnectionsPerInstance must be set.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_backend_service#max_connections_per_instance GoogleComputeBackendService#max_connections_per_instance}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_compute_backend_service#max_connections_per_instance GoogleComputeBackendService#max_connections_per_instance}
 	MaxConnectionsPerInstance *float64 `field:"optional" json:"maxConnectionsPerInstance" yaml:"maxConnectionsPerInstance"`
+	// Defines a maximum number of in-flight requests for the whole NEG or instance group.
+	//
+	// Not available if backend's balancingMode is RATE
+	// or CONNECTION.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_compute_backend_service#max_in_flight_requests GoogleComputeBackendService#max_in_flight_requests}
+	MaxInFlightRequests *float64 `field:"optional" json:"maxInFlightRequests" yaml:"maxInFlightRequests"`
+	// Defines a maximum number of in-flight requests for a single endpoint. Not available if backend's balancingMode is RATE or CONNECTION.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_compute_backend_service#max_in_flight_requests_per_endpoint GoogleComputeBackendService#max_in_flight_requests_per_endpoint}
+	MaxInFlightRequestsPerEndpoint *float64 `field:"optional" json:"maxInFlightRequestsPerEndpoint" yaml:"maxInFlightRequestsPerEndpoint"`
+	// Defines a maximum number of in-flight requests for a single VM. Not available if backend's balancingMode is RATE or CONNECTION.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_compute_backend_service#max_in_flight_requests_per_instance GoogleComputeBackendService#max_in_flight_requests_per_instance}
+	MaxInFlightRequestsPerInstance *float64 `field:"optional" json:"maxInFlightRequestsPerInstance" yaml:"maxInFlightRequestsPerInstance"`
 	// The max requests per second (RPS) of the group.
 	//
 	// Can be used with either RATE or UTILIZATION balancing modes,
@@ -88,7 +103,7 @@ type GoogleComputeBackendServiceBackend struct {
 	// of maxRatePerInstance or maxRatePerEndpoint, as appropriate for
 	// group type, must be set.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_backend_service#max_rate GoogleComputeBackendService#max_rate}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_compute_backend_service#max_rate GoogleComputeBackendService#max_rate}
 	MaxRate *float64 `field:"optional" json:"maxRate" yaml:"maxRate"`
 	// The max requests per second (RPS) that a single backend network endpoint can handle.
 	//
@@ -96,7 +111,7 @@ type GoogleComputeBackendServiceBackend struct {
 	// the group. Can be used in either balancing mode. For RATE mode,
 	// either maxRate or maxRatePerEndpoint must be set.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_backend_service#max_rate_per_endpoint GoogleComputeBackendService#max_rate_per_endpoint}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_compute_backend_service#max_rate_per_endpoint GoogleComputeBackendService#max_rate_per_endpoint}
 	MaxRatePerEndpoint *float64 `field:"optional" json:"maxRatePerEndpoint" yaml:"maxRatePerEndpoint"`
 	// The max requests per second (RPS) that a single backend instance can handle.
 	//
@@ -104,11 +119,11 @@ type GoogleComputeBackendServiceBackend struct {
 	// the group. Can be used in either balancing mode. For RATE mode,
 	// either maxRate or maxRatePerInstance must be set.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_backend_service#max_rate_per_instance GoogleComputeBackendService#max_rate_per_instance}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_compute_backend_service#max_rate_per_instance GoogleComputeBackendService#max_rate_per_instance}
 	MaxRatePerInstance *float64 `field:"optional" json:"maxRatePerInstance" yaml:"maxRatePerInstance"`
 	// Used when balancingMode is UTILIZATION. This ratio defines the CPU utilization target for the group. Valid range is [0.0, 1.0].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_backend_service#max_utilization GoogleComputeBackendService#max_utilization}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_compute_backend_service#max_utilization GoogleComputeBackendService#max_utilization}
 	MaxUtilization *float64 `field:"optional" json:"maxUtilization" yaml:"maxUtilization"`
 	// This field indicates whether this backend should be fully utilized before sending traffic to backends with default preference.
 	//
@@ -118,7 +133,13 @@ type GoogleComputeBackendServiceBackend struct {
 	//   - DEFAULT: If preferred backends don't have enough capacity, backends in this layer would be used and
 	//     traffic would be assigned based on the load balancing algorithm you use. This is the default Possible values: ["PREFERRED", "DEFAULT"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_backend_service#preference GoogleComputeBackendService#preference}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_compute_backend_service#preference GoogleComputeBackendService#preference}
 	Preference *string `field:"optional" json:"preference" yaml:"preference"`
+	// This field specifies how long a connection should be kept alive for: - LONG: Most of the requests are expected to take more than multiple   seconds to finish.
+	//
+	// - SHORT: Most requests are expected to finish with a sub-second latency. Possible values: ["LONG", "SHORT"]
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_compute_backend_service#traffic_duration GoogleComputeBackendService#traffic_duration}
+	TrafficDuration *string `field:"optional" json:"trafficDuration" yaml:"trafficDuration"`
 }
 

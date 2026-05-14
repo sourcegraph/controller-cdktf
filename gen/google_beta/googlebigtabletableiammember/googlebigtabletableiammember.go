@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlebigtabletableiammember/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_bigtable_table_iam_member google_bigtable_table_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_bigtable_table_iam_member google_bigtable_table_iam_member}.
 type GoogleBigtableTableIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -42,9 +42,9 @@ type GoogleBigtableTableIamMember interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	Instance() *string
-	SetInstance(val *string)
-	InstanceInput() *string
+	InstanceName() *string
+	SetInstanceName(val *string)
+	InstanceNameInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -277,21 +277,21 @@ func (j *jsiiProxy_GoogleBigtableTableIamMember) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigtableTableIamMember) Instance() *string {
+func (j *jsiiProxy_GoogleBigtableTableIamMember) InstanceName() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"instance",
+		"instanceName",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigtableTableIamMember) InstanceInput() *string {
+func (j *jsiiProxy_GoogleBigtableTableIamMember) InstanceNameInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"instanceInput",
+		"instanceNameInput",
 		&returns,
 	)
 	return returns
@@ -458,7 +458,7 @@ func (j *jsiiProxy_GoogleBigtableTableIamMember) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_bigtable_table_iam_member google_bigtable_table_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_bigtable_table_iam_member google_bigtable_table_iam_member} Resource.
 func NewGoogleBigtableTableIamMember(scope constructs.Construct, id *string, config *GoogleBigtableTableIamMemberConfig) GoogleBigtableTableIamMember {
 	_init_.Initialize()
 
@@ -476,7 +476,7 @@ func NewGoogleBigtableTableIamMember(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_bigtable_table_iam_member google_bigtable_table_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_bigtable_table_iam_member google_bigtable_table_iam_member} Resource.
 func NewGoogleBigtableTableIamMember_Override(g GoogleBigtableTableIamMember, scope constructs.Construct, id *string, config *GoogleBigtableTableIamMemberConfig) {
 	_init_.Initialize()
 
@@ -536,13 +536,13 @@ func (j *jsiiProxy_GoogleBigtableTableIamMember)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBigtableTableIamMember)SetInstance(val *string) {
-	if err := j.validateSetInstanceParameters(val); err != nil {
+func (j *jsiiProxy_GoogleBigtableTableIamMember)SetInstanceName(val *string) {
+	if err := j.validateSetInstanceNameParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"instance",
+		"instanceName",
 		val,
 	)
 }

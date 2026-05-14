@@ -64,6 +64,8 @@ type PubsubSubscriptionCloudStorageConfigOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TextConfig() PubsubSubscriptionCloudStorageConfigTextConfigOutputReference
+	TextConfigInput() *PubsubSubscriptionCloudStorageConfigTextConfig
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -89,6 +91,7 @@ type PubsubSubscriptionCloudStorageConfigOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAvroConfig(value *PubsubSubscriptionCloudStorageConfigAvroConfig)
+	PutTextConfig(value *PubsubSubscriptionCloudStorageConfigTextConfig)
 	ResetAvroConfig()
 	ResetFilenameDatetimeFormat()
 	ResetFilenamePrefix()
@@ -97,6 +100,7 @@ type PubsubSubscriptionCloudStorageConfigOutputReference interface {
 	ResetMaxDuration()
 	ResetMaxMessages()
 	ResetServiceAccountEmail()
+	ResetTextConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -367,6 +371,26 @@ func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) Terrafor
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) TextConfig() PubsubSubscriptionCloudStorageConfigTextConfigOutputReference {
+	var returns PubsubSubscriptionCloudStorageConfigTextConfigOutputReference
+	_jsii_.Get(
+		j,
+		"textConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) TextConfigInput() *PubsubSubscriptionCloudStorageConfigTextConfig {
+	var returns *PubsubSubscriptionCloudStorageConfigTextConfig
+	_jsii_.Get(
+		j,
+		"textConfigInput",
 		&returns,
 	)
 	return returns
@@ -740,6 +764,17 @@ func (p *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) PutAvroC
 	)
 }
 
+func (p *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) PutTextConfig(value *PubsubSubscriptionCloudStorageConfigTextConfig) {
+	if err := p.validatePutTextConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putTextConfig",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) ResetAvroConfig() {
 	_jsii_.InvokeVoid(
 		p,
@@ -800,6 +835,14 @@ func (p *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) ResetSer
 	_jsii_.InvokeVoid(
 		p,
 		"resetServiceAccountEmail",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) ResetTextConfig() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetTextConfig",
 		nil, // no parameters
 	)
 }

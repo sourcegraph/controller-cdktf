@@ -32,6 +32,8 @@ type DataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigOutput
 	OutputSchema() *string
 	SetOutputSchema(val *string)
 	OutputSchemaInput() *string
+	StoragePath() DataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigStoragePathOutputReference
+	StoragePathInput() *DataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigStoragePath
 	Table() DataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigTableOutputReference
 	TableInput() *DataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigTable
 	// Experimental.
@@ -66,8 +68,11 @@ type DataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigOutput
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutStoragePath(value *DataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigStoragePath)
 	PutTable(value *DataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigTable)
 	ResetOutputSchema()
+	ResetStoragePath()
+	ResetTable()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -148,6 +153,26 @@ func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutp
 	_jsii_.Get(
 		j,
 		"outputSchemaInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigOutputReference) StoragePath() DataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigStoragePathOutputReference {
+	var returns DataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigStoragePathOutputReference
+	_jsii_.Get(
+		j,
+		"storagePath",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigOutputReference) StoragePathInput() *DataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigStoragePath {
+	var returns *DataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigStoragePath
+	_jsii_.Get(
+		j,
+		"storagePathInput",
 		&returns,
 	)
 	return returns
@@ -473,6 +498,17 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutp
 	return returns
 }
 
+func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigOutputReference) PutStoragePath(value *DataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigStoragePath) {
+	if err := d.validatePutStoragePathParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putStoragePath",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigOutputReference) PutTable(value *DataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigTable) {
 	if err := d.validatePutTableParameters(value); err != nil {
 		panic(err)
@@ -488,6 +524,22 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutp
 	_jsii_.InvokeVoid(
 		d,
 		"resetOutputSchema",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigOutputReference) ResetStoragePath() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetStoragePath",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigOutputReference) ResetTable() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTable",
 		nil, // no parameters
 	)
 }

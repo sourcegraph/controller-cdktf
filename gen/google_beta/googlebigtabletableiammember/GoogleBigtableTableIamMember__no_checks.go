@@ -104,7 +104,7 @@ func (j *jsiiProxy_GoogleBigtableTableIamMember) validateSetIdParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigtableTableIamMember) validateSetInstanceParameters(val *string) error {
+func (j *jsiiProxy_GoogleBigtableTableIamMember) validateSetInstanceNameParameters(val *string) error {
 	return nil
 }
 

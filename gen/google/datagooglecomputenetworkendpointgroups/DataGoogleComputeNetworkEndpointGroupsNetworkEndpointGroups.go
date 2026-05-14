@@ -1,0 +1,6 @@
+package datagooglecomputenetworkendpointgroups
+
+
+type DataGoogleComputeNetworkEndpointGroupsNetworkEndpointGroups struct {
+}
+

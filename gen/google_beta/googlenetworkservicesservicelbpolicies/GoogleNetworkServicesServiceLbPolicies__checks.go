@@ -226,6 +226,17 @@ func (g *jsiiProxy_GoogleNetworkServicesServiceLbPolicies) validatePutFailoverCo
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetworkServicesServiceLbPolicies) validatePutIsolationConfigParameters(value *GoogleNetworkServicesServiceLbPoliciesIsolationConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkServicesServiceLbPolicies) validatePutTimeoutsParameters(value *GoogleNetworkServicesServiceLbPoliciesTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

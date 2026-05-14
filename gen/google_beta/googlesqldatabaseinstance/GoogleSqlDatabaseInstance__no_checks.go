@@ -76,6 +76,10 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstance) validatePutCloneParameters(value *
 	return nil
 }
 
+func (g *jsiiProxy_GoogleSqlDatabaseInstance) validatePutPointInTimeRestoreContextParameters(value *GoogleSqlDatabaseInstancePointInTimeRestoreContext) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSqlDatabaseInstance) validatePutReplicaConfigurationParameters(value *GoogleSqlDatabaseInstanceReplicaConfiguration) error {
 	return nil
 }
@@ -112,6 +116,10 @@ func validateGoogleSqlDatabaseInstance_IsTerraformResourceParameters(x interface
 	return nil
 }
 
+func (j *jsiiProxy_GoogleSqlDatabaseInstance) validateSetBackupdrBackupParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSqlDatabaseInstance) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -129,6 +137,10 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstance) validateSetDeletionProtectionParam
 }
 
 func (j *jsiiProxy_GoogleSqlDatabaseInstance) validateSetEncryptionKeyNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstance) validateSetFinalBackupDescriptionParameters(val *string) error {
 	return nil
 }
 
@@ -156,6 +168,10 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstance) validateSetNameParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_GoogleSqlDatabaseInstance) validateSetNodeCountParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSqlDatabaseInstance) validateSetProjectParameters(val *string) error {
 	return nil
 }
@@ -173,6 +189,14 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstance) validateSetReplicaNamesParameters(
 }
 
 func (j *jsiiProxy_GoogleSqlDatabaseInstance) validateSetRootPasswordParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstance) validateSetRootPasswordWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstance) validateSetRootPasswordWoVersionParameters(val *string) error {
 	return nil
 }
 

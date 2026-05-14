@@ -37,6 +37,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "grpcHealthCheck", GoGetter: "GrpcHealthCheck"},
 			_jsii_.MemberProperty{JsiiProperty: "grpcHealthCheckInput", GoGetter: "GrpcHealthCheckInput"},
+			_jsii_.MemberProperty{JsiiProperty: "grpcTlsHealthCheck", GoGetter: "GrpcTlsHealthCheck"},
+			_jsii_.MemberProperty{JsiiProperty: "grpcTlsHealthCheckInput", GoGetter: "GrpcTlsHealthCheckInput"},
 			_jsii_.MemberMethod{JsiiMethod: "hasResourceMove", GoMethod: "HasResourceMove"},
 			_jsii_.MemberProperty{JsiiProperty: "healthyThreshold", GoGetter: "HealthyThreshold"},
 			_jsii_.MemberProperty{JsiiProperty: "healthyThresholdInput", GoGetter: "HealthyThresholdInput"},
@@ -65,6 +67,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putGrpcHealthCheck", GoMethod: "PutGrpcHealthCheck"},
+			_jsii_.MemberMethod{JsiiMethod: "putGrpcTlsHealthCheck", GoMethod: "PutGrpcTlsHealthCheck"},
 			_jsii_.MemberMethod{JsiiMethod: "putHttp2HealthCheck", GoMethod: "PutHttp2HealthCheck"},
 			_jsii_.MemberMethod{JsiiMethod: "putHttpHealthCheck", GoMethod: "PutHttpHealthCheck"},
 			_jsii_.MemberMethod{JsiiMethod: "putHttpsHealthCheck", GoMethod: "PutHttpsHealthCheck"},
@@ -76,6 +79,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetCheckIntervalSec", GoMethod: "ResetCheckIntervalSec"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGrpcHealthCheck", GoMethod: "ResetGrpcHealthCheck"},
+			_jsii_.MemberMethod{JsiiMethod: "resetGrpcTlsHealthCheck", GoMethod: "ResetGrpcTlsHealthCheck"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHealthyThreshold", GoMethod: "ResetHealthyThreshold"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHttp2HealthCheck", GoMethod: "ResetHttp2HealthCheck"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHttpHealthCheck", GoMethod: "ResetHttpHealthCheck"},
@@ -168,6 +172,51 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeHealthCheckGrpcHealthCheckOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.computeHealthCheck.ComputeHealthCheckGrpcTlsHealthCheck",
+		reflect.TypeOf((*ComputeHealthCheckGrpcTlsHealthCheck)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.computeHealthCheck.ComputeHealthCheckGrpcTlsHealthCheckOutputReference",
+		reflect.TypeOf((*ComputeHealthCheckGrpcTlsHealthCheckOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "grpcServiceName", GoGetter: "GrpcServiceName"},
+			_jsii_.MemberProperty{JsiiProperty: "grpcServiceNameInput", GoGetter: "GrpcServiceNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "port", GoGetter: "Port"},
+			_jsii_.MemberProperty{JsiiProperty: "portInput", GoGetter: "PortInput"},
+			_jsii_.MemberProperty{JsiiProperty: "portSpecification", GoGetter: "PortSpecification"},
+			_jsii_.MemberProperty{JsiiProperty: "portSpecificationInput", GoGetter: "PortSpecificationInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetGrpcServiceName", GoMethod: "ResetGrpcServiceName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPort", GoMethod: "ResetPort"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPortSpecification", GoMethod: "ResetPortSpecification"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ComputeHealthCheckGrpcTlsHealthCheckOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

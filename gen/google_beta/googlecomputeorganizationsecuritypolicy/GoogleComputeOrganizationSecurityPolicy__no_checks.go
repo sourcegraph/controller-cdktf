@@ -72,6 +72,10 @@ func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicy) validateOverrideLogi
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicy) validatePutAdvancedOptionsConfigParameters(value *GoogleComputeOrganizationSecurityPolicyAdvancedOptionsConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicy) validatePutTimeoutsParameters(value *GoogleComputeOrganizationSecurityPolicyTimeouts) error {
 	return nil
 }
@@ -121,6 +125,10 @@ func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicy) validateSetParentPar
 }
 
 func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicy) validateSetShortNameParameters(val *string) error {
 	return nil
 }
 

@@ -60,6 +60,10 @@ func (j *jsiiProxy_ChronicleReferenceListScopeInfoReferenceListScopeOutputRefere
 	return nil
 }
 
+func (j *jsiiProxy_ChronicleReferenceListScopeInfoReferenceListScopeOutputReference) validateSetScopeNamesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ChronicleReferenceListScopeInfoReferenceListScopeOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }
@@ -68,7 +72,7 @@ func (j *jsiiProxy_ChronicleReferenceListScopeInfoReferenceListScopeOutputRefere
 	return nil
 }
 
-func validateNewChronicleReferenceListScopeInfoReferenceListScopeOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewChronicleReferenceListScopeInfoReferenceListScopeOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

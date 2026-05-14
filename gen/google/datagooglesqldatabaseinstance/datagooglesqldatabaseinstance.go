@@ -9,10 +9,11 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagooglesqldatabaseinstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/sql_database_instance google_sql_database_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/sql_database_instance google_sql_database_instance}.
 type DataGoogleSqlDatabaseInstance interface {
 	cdktf.TerraformDataSource
 	AvailableMaintenanceVersions() *[]*string
+	BackupdrBackup() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Clone() DataGoogleSqlDatabaseInstanceCloneList
@@ -30,7 +31,9 @@ type DataGoogleSqlDatabaseInstance interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	DnsName() *string
+	DnsNames() DataGoogleSqlDatabaseInstanceDnsNamesList
 	EncryptionKeyName() *string
+	FinalBackupDescription() *string
 	FirstIpAddress() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -56,6 +59,8 @@ type DataGoogleSqlDatabaseInstance interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	NodeCount() *float64
+	PointInTimeRestoreContext() DataGoogleSqlDatabaseInstancePointInTimeRestoreContextList
 	PrivateIpAddress() *string
 	Project() *string
 	SetProject(val *string)
@@ -74,6 +79,8 @@ type DataGoogleSqlDatabaseInstance interface {
 	ReplicationCluster() DataGoogleSqlDatabaseInstanceReplicationClusterList
 	RestoreBackupContext() DataGoogleSqlDatabaseInstanceRestoreBackupContextList
 	RootPassword() *string
+	RootPasswordWo() *string
+	RootPasswordWoVersion() *string
 	SelfLink() *string
 	ServerCaCert() DataGoogleSqlDatabaseInstanceServerCaCertList
 	ServiceAccountEmailAddress() *string
@@ -138,6 +145,16 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstance) AvailableMaintenanceVersions()
 	_jsii_.Get(
 		j,
 		"availableMaintenanceVersions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstance) BackupdrBackup() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"backupdrBackup",
 		&returns,
 	)
 	return returns
@@ -233,11 +250,31 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstance) DnsName() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstance) DnsNames() DataGoogleSqlDatabaseInstanceDnsNamesList {
+	var returns DataGoogleSqlDatabaseInstanceDnsNamesList
+	_jsii_.Get(
+		j,
+		"dnsNames",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleSqlDatabaseInstance) EncryptionKeyName() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"encryptionKeyName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstance) FinalBackupDescription() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"finalBackupDescription",
 		&returns,
 	)
 	return returns
@@ -383,6 +420,26 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstance) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstance) NodeCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"nodeCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstance) PointInTimeRestoreContext() DataGoogleSqlDatabaseInstancePointInTimeRestoreContextList {
+	var returns DataGoogleSqlDatabaseInstancePointInTimeRestoreContextList
+	_jsii_.Get(
+		j,
+		"pointInTimeRestoreContext",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleSqlDatabaseInstance) PrivateIpAddress() *string {
 	var returns *string
 	_jsii_.Get(
@@ -513,6 +570,26 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstance) RootPassword() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstance) RootPasswordWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rootPasswordWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstance) RootPasswordWoVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rootPasswordWoVersion",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleSqlDatabaseInstance) SelfLink() *string {
 	var returns *string
 	_jsii_.Get(
@@ -584,7 +661,7 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstance) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/sql_database_instance google_sql_database_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/sql_database_instance google_sql_database_instance} Data Source.
 func NewDataGoogleSqlDatabaseInstance(scope constructs.Construct, id *string, config *DataGoogleSqlDatabaseInstanceConfig) DataGoogleSqlDatabaseInstance {
 	_init_.Initialize()
 
@@ -602,7 +679,7 @@ func NewDataGoogleSqlDatabaseInstance(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/sql_database_instance google_sql_database_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/sql_database_instance google_sql_database_instance} Data Source.
 func NewDataGoogleSqlDatabaseInstance_Override(d DataGoogleSqlDatabaseInstance, scope constructs.Construct, id *string, config *DataGoogleSqlDatabaseInstanceConfig) {
 	_init_.Initialize()
 

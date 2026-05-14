@@ -39,6 +39,7 @@ type GoogleComputeFirewallPolicyWithRulesPredefinedRulesMatchOutputReference int
 	SrcFqdns() *[]*string
 	SrcIpRanges() *[]*string
 	SrcRegionCodes() *[]*string
+	SrcSecureTag() GoogleComputeFirewallPolicyWithRulesPredefinedRulesMatchSrcSecureTagList
 	SrcThreatIntelligences() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
@@ -232,6 +233,16 @@ func (j *jsiiProxy_GoogleComputeFirewallPolicyWithRulesPredefinedRulesMatchOutpu
 	_jsii_.Get(
 		j,
 		"srcRegionCodes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeFirewallPolicyWithRulesPredefinedRulesMatchOutputReference) SrcSecureTag() GoogleComputeFirewallPolicyWithRulesPredefinedRulesMatchSrcSecureTagList {
+	var returns GoogleComputeFirewallPolicyWithRulesPredefinedRulesMatchSrcSecureTagList
+	_jsii_.Get(
+		j,
+		"srcSecureTag",
 		&returns,
 	)
 	return returns

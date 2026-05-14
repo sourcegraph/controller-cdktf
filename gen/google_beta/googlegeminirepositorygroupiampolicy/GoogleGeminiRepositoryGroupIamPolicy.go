@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlegeminirepositorygroupiampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_gemini_repository_group_iam_policy google_gemini_repository_group_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_gemini_repository_group_iam_policy google_gemini_repository_group_iam_policy}.
 type GoogleGeminiRepositoryGroupIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -435,7 +435,7 @@ func (j *jsiiProxy_GoogleGeminiRepositoryGroupIamPolicy) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_gemini_repository_group_iam_policy google_gemini_repository_group_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_gemini_repository_group_iam_policy google_gemini_repository_group_iam_policy} Resource.
 func NewGoogleGeminiRepositoryGroupIamPolicy(scope constructs.Construct, id *string, config *GoogleGeminiRepositoryGroupIamPolicyConfig) GoogleGeminiRepositoryGroupIamPolicy {
 	_init_.Initialize()
 
@@ -453,7 +453,7 @@ func NewGoogleGeminiRepositoryGroupIamPolicy(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_gemini_repository_group_iam_policy google_gemini_repository_group_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_gemini_repository_group_iam_policy google_gemini_repository_group_iam_policy} Resource.
 func NewGoogleGeminiRepositoryGroupIamPolicy_Override(g GoogleGeminiRepositoryGroupIamPolicy, scope constructs.Construct, id *string, config *GoogleGeminiRepositoryGroupIamPolicyConfig) {
 	_init_.Initialize()
 

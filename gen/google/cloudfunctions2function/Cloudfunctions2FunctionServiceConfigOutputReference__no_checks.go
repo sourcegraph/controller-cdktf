@@ -44,6 +44,10 @@ func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) validate
 	return nil
 }
 
+func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) validatePutDirectVpcNetworkInterfaceParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) validatePutSecretEnvironmentVariablesParameters(value interface{}) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) validateSetDirectVpcEgressParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) validateSetEnvironmentVariablesParameters(val *map[string]*string) error {
 	return nil
 }
@@ -101,10 +109,6 @@ func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) validate
 }
 
 func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) validateSetMinInstanceCountParameters(val *float64) error {
-	return nil
-}
-
-func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) validateSetServiceParameters(val *string) error {
 	return nil
 }
 

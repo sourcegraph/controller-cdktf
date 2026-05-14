@@ -27,6 +27,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
 			_jsii_.MemberProperty{JsiiProperty: "description", GoGetter: "Description"},
 			_jsii_.MemberProperty{JsiiProperty: "descriptionInput", GoGetter: "DescriptionInput"},
+			_jsii_.MemberProperty{JsiiProperty: "developerConnectEventConfig", GoGetter: "DeveloperConnectEventConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "developerConnectEventConfigInput", GoGetter: "DeveloperConnectEventConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "disabled", GoGetter: "Disabled"},
 			_jsii_.MemberProperty{JsiiProperty: "disabledInput", GoGetter: "DisabledInput"},
 			_jsii_.MemberProperty{JsiiProperty: "filename", GoGetter: "Filename"},
@@ -79,6 +81,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putApprovalConfig", GoMethod: "PutApprovalConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putBitbucketServerTriggerConfig", GoMethod: "PutBitbucketServerTriggerConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putBuildAttribute", GoMethod: "PutBuildAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "putDeveloperConnectEventConfig", GoMethod: "PutDeveloperConnectEventConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putGitFileSource", GoMethod: "PutGitFileSource"},
 			_jsii_.MemberMethod{JsiiMethod: "putGithub", GoMethod: "PutGithub"},
 			_jsii_.MemberMethod{JsiiMethod: "putPubsubConfig", GoMethod: "PutPubsubConfig"},
@@ -94,6 +97,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetBitbucketServerTriggerConfig", GoMethod: "ResetBitbucketServerTriggerConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBuildAttribute", GoMethod: "ResetBuildAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDeveloperConnectEventConfig", GoMethod: "ResetDeveloperConnectEventConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDisabled", GoMethod: "ResetDisabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFilename", GoMethod: "ResetFilename"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFilter", GoMethod: "ResetFilter"},
@@ -1372,6 +1376,143 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerConfig",
 		reflect.TypeOf((*CloudbuildTriggerConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerDeveloperConnectEventConfig",
+		reflect.TypeOf((*CloudbuildTriggerDeveloperConnectEventConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerDeveloperConnectEventConfigOutputReference",
+		reflect.TypeOf((*CloudbuildTriggerDeveloperConnectEventConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "gitRepositoryLink", GoGetter: "GitRepositoryLink"},
+			_jsii_.MemberProperty{JsiiProperty: "gitRepositoryLinkInput", GoGetter: "GitRepositoryLinkInput"},
+			_jsii_.MemberProperty{JsiiProperty: "gitRepositoryLinkType", GoGetter: "GitRepositoryLinkType"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "pullRequest", GoGetter: "PullRequest"},
+			_jsii_.MemberProperty{JsiiProperty: "pullRequestInput", GoGetter: "PullRequestInput"},
+			_jsii_.MemberProperty{JsiiProperty: "push", GoGetter: "Push"},
+			_jsii_.MemberProperty{JsiiProperty: "pushInput", GoGetter: "PushInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putPullRequest", GoMethod: "PutPullRequest"},
+			_jsii_.MemberMethod{JsiiMethod: "putPush", GoMethod: "PutPush"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPullRequest", GoMethod: "ResetPullRequest"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPush", GoMethod: "ResetPush"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_CloudbuildTriggerDeveloperConnectEventConfigOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerDeveloperConnectEventConfigPullRequest",
+		reflect.TypeOf((*CloudbuildTriggerDeveloperConnectEventConfigPullRequest)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference",
+		reflect.TypeOf((*CloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "branch", GoGetter: "Branch"},
+			_jsii_.MemberProperty{JsiiProperty: "branchInput", GoGetter: "BranchInput"},
+			_jsii_.MemberProperty{JsiiProperty: "commentControl", GoGetter: "CommentControl"},
+			_jsii_.MemberProperty{JsiiProperty: "commentControlInput", GoGetter: "CommentControlInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "invertRegex", GoGetter: "InvertRegex"},
+			_jsii_.MemberProperty{JsiiProperty: "invertRegexInput", GoGetter: "InvertRegexInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBranch", GoMethod: "ResetBranch"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCommentControl", GoMethod: "ResetCommentControl"},
+			_jsii_.MemberMethod{JsiiMethod: "resetInvertRegex", GoMethod: "ResetInvertRegex"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_CloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerDeveloperConnectEventConfigPush",
+		reflect.TypeOf((*CloudbuildTriggerDeveloperConnectEventConfigPush)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerDeveloperConnectEventConfigPushOutputReference",
+		reflect.TypeOf((*CloudbuildTriggerDeveloperConnectEventConfigPushOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "branch", GoGetter: "Branch"},
+			_jsii_.MemberProperty{JsiiProperty: "branchInput", GoGetter: "BranchInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "invertRegex", GoGetter: "InvertRegex"},
+			_jsii_.MemberProperty{JsiiProperty: "invertRegexInput", GoGetter: "InvertRegexInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBranch", GoMethod: "ResetBranch"},
+			_jsii_.MemberMethod{JsiiMethod: "resetInvertRegex", GoMethod: "ResetInvertRegex"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTag", GoMethod: "ResetTag"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "tag", GoGetter: "Tag"},
+			_jsii_.MemberProperty{JsiiProperty: "tagInput", GoGetter: "TagInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_CloudbuildTriggerDeveloperConnectEventConfigPushOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerGitFileSource",

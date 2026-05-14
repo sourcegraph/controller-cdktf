@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/computepacketmirroring/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_packet_mirroring google_compute_packet_mirroring}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_packet_mirroring google_compute_packet_mirroring}.
 type ComputePacketMirroring interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -33,6 +33,9 @@ type ComputePacketMirroring interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	Enable() *string
+	SetEnable(val *string)
+	EnableInput() *string
 	Filter() ComputePacketMirroringFilterOutputReference
 	FilterInput() *ComputePacketMirroringFilter
 	// Experimental.
@@ -135,6 +138,7 @@ type ComputePacketMirroring interface {
 	PutNetwork(value *ComputePacketMirroringNetwork)
 	PutTimeouts(value *ComputePacketMirroringTimeouts)
 	ResetDescription()
+	ResetEnable()
 	ResetFilter()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -247,6 +251,26 @@ func (j *jsiiProxy_ComputePacketMirroring) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputePacketMirroring) Enable() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"enable",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputePacketMirroring) EnableInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"enableInput",
 		&returns,
 	)
 	return returns
@@ -543,7 +567,7 @@ func (j *jsiiProxy_ComputePacketMirroring) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_packet_mirroring google_compute_packet_mirroring} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_packet_mirroring google_compute_packet_mirroring} Resource.
 func NewComputePacketMirroring(scope constructs.Construct, id *string, config *ComputePacketMirroringConfig) ComputePacketMirroring {
 	_init_.Initialize()
 
@@ -561,7 +585,7 @@ func NewComputePacketMirroring(scope constructs.Construct, id *string, config *C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_packet_mirroring google_compute_packet_mirroring} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_packet_mirroring google_compute_packet_mirroring} Resource.
 func NewComputePacketMirroring_Override(c ComputePacketMirroring, scope constructs.Construct, id *string, config *ComputePacketMirroringConfig) {
 	_init_.Initialize()
 
@@ -609,6 +633,17 @@ func (j *jsiiProxy_ComputePacketMirroring)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputePacketMirroring)SetEnable(val *string) {
+	if err := j.validateSetEnableParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enable",
 		val,
 	)
 }
@@ -1118,6 +1153,14 @@ func (c *jsiiProxy_ComputePacketMirroring) ResetDescription() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputePacketMirroring) ResetEnable() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEnable",
 		nil, // no parameters
 	)
 }

@@ -34,6 +34,9 @@ type GoogleMigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePre
 	LicenseTypeInput() *string
 	MachinePreferences() GoogleMigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferencesOutputReference
 	MachinePreferencesInput() *GoogleMigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferences
+	PersistentDiskType() *string
+	SetPersistentDiskType(val *string)
+	PersistentDiskTypeInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -69,6 +72,7 @@ type GoogleMigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePre
 	PutMachinePreferences(value *GoogleMigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferences)
 	ResetLicenseType()
 	ResetMachinePreferences()
+	ResetPersistentDiskType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -174,6 +178,26 @@ func (j *jsiiProxy_GoogleMigrationCenterPreferenceSetVirtualMachinePreferencesCo
 	return returns
 }
 
+func (j *jsiiProxy_GoogleMigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesOutputReference) PersistentDiskType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"persistentDiskType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesOutputReference) PersistentDiskTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"persistentDiskTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleMigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -262,6 +286,17 @@ func (j *jsiiProxy_GoogleMigrationCenterPreferenceSetVirtualMachinePreferencesCo
 	_jsii_.Set(
 		j,
 		"licenseType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleMigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesOutputReference)SetPersistentDiskType(val *string) {
+	if err := j.validateSetPersistentDiskTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"persistentDiskType",
 		val,
 	)
 }
@@ -497,6 +532,14 @@ func (g *jsiiProxy_GoogleMigrationCenterPreferenceSetVirtualMachinePreferencesCo
 	_jsii_.InvokeVoid(
 		g,
 		"resetMachinePreferences",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleMigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesOutputReference) ResetPersistentDiskType() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPersistentDiskType",
 		nil, // no parameters
 	)
 }

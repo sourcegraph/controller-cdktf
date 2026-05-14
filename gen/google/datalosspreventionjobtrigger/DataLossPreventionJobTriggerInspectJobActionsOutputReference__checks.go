@@ -123,6 +123,17 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsOutputReference)
 	return nil
 }
 
+func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsOutputReference) validatePutPublishFindingsToDataplexCatalogParameters(value *DataLossPreventionJobTriggerInspectJobActionsPublishFindingsToDataplexCatalog) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsOutputReference) validatePutPublishSummaryToCsccParameters(value *DataLossPreventionJobTriggerInspectJobActionsPublishSummaryToCscc) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

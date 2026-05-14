@@ -35,6 +35,8 @@ type GoogleDataLossPreventionJobTriggerInspectJobActionsOutputReference interfac
 	JobNotificationEmailsInput() *GoogleDataLossPreventionJobTriggerInspectJobActionsJobNotificationEmails
 	PublishFindingsToCloudDataCatalog() GoogleDataLossPreventionJobTriggerInspectJobActionsPublishFindingsToCloudDataCatalogOutputReference
 	PublishFindingsToCloudDataCatalogInput() *GoogleDataLossPreventionJobTriggerInspectJobActionsPublishFindingsToCloudDataCatalog
+	PublishFindingsToDataplexCatalog() GoogleDataLossPreventionJobTriggerInspectJobActionsPublishFindingsToDataplexCatalogOutputReference
+	PublishFindingsToDataplexCatalogInput() *GoogleDataLossPreventionJobTriggerInspectJobActionsPublishFindingsToDataplexCatalog
 	PublishSummaryToCscc() GoogleDataLossPreventionJobTriggerInspectJobActionsPublishSummaryToCsccOutputReference
 	PublishSummaryToCsccInput() *GoogleDataLossPreventionJobTriggerInspectJobActionsPublishSummaryToCscc
 	PublishToStackdriver() GoogleDataLossPreventionJobTriggerInspectJobActionsPublishToStackdriverOutputReference
@@ -78,6 +80,7 @@ type GoogleDataLossPreventionJobTriggerInspectJobActionsOutputReference interfac
 	PutDeidentify(value *GoogleDataLossPreventionJobTriggerInspectJobActionsDeidentify)
 	PutJobNotificationEmails(value *GoogleDataLossPreventionJobTriggerInspectJobActionsJobNotificationEmails)
 	PutPublishFindingsToCloudDataCatalog(value *GoogleDataLossPreventionJobTriggerInspectJobActionsPublishFindingsToCloudDataCatalog)
+	PutPublishFindingsToDataplexCatalog(value *GoogleDataLossPreventionJobTriggerInspectJobActionsPublishFindingsToDataplexCatalog)
 	PutPublishSummaryToCscc(value *GoogleDataLossPreventionJobTriggerInspectJobActionsPublishSummaryToCscc)
 	PutPublishToStackdriver(value *GoogleDataLossPreventionJobTriggerInspectJobActionsPublishToStackdriver)
 	PutPubSub(value *GoogleDataLossPreventionJobTriggerInspectJobActionsPubSub)
@@ -85,6 +88,7 @@ type GoogleDataLossPreventionJobTriggerInspectJobActionsOutputReference interfac
 	ResetDeidentify()
 	ResetJobNotificationEmails()
 	ResetPublishFindingsToCloudDataCatalog()
+	ResetPublishFindingsToDataplexCatalog()
 	ResetPublishSummaryToCscc()
 	ResetPublishToStackdriver()
 	ResetPubSub()
@@ -209,6 +213,26 @@ func (j *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsOutputRefe
 	_jsii_.Get(
 		j,
 		"publishFindingsToCloudDataCatalogInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsOutputReference) PublishFindingsToDataplexCatalog() GoogleDataLossPreventionJobTriggerInspectJobActionsPublishFindingsToDataplexCatalogOutputReference {
+	var returns GoogleDataLossPreventionJobTriggerInspectJobActionsPublishFindingsToDataplexCatalogOutputReference
+	_jsii_.Get(
+		j,
+		"publishFindingsToDataplexCatalog",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsOutputReference) PublishFindingsToDataplexCatalogInput() *GoogleDataLossPreventionJobTriggerInspectJobActionsPublishFindingsToDataplexCatalog {
+	var returns *GoogleDataLossPreventionJobTriggerInspectJobActionsPublishFindingsToDataplexCatalog
+	_jsii_.Get(
+		j,
+		"publishFindingsToDataplexCatalogInput",
 		&returns,
 	)
 	return returns
@@ -616,6 +640,17 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsOutputRefe
 	)
 }
 
+func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsOutputReference) PutPublishFindingsToDataplexCatalog(value *GoogleDataLossPreventionJobTriggerInspectJobActionsPublishFindingsToDataplexCatalog) {
+	if err := g.validatePutPublishFindingsToDataplexCatalogParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putPublishFindingsToDataplexCatalog",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsOutputReference) PutPublishSummaryToCscc(value *GoogleDataLossPreventionJobTriggerInspectJobActionsPublishSummaryToCscc) {
 	if err := g.validatePutPublishSummaryToCsccParameters(value); err != nil {
 		panic(err)
@@ -680,6 +715,14 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsOutputRefe
 	_jsii_.InvokeVoid(
 		g,
 		"resetPublishFindingsToCloudDataCatalog",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsOutputReference) ResetPublishFindingsToDataplexCatalog() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPublishFindingsToDataplexCatalog",
 		nil, // no parameters
 	)
 }

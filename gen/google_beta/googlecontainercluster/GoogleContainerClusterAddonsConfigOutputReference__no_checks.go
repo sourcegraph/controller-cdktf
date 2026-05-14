@@ -88,6 +88,10 @@ func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) validatePu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) validatePutLustreCsiDriverConfigParameters(value *GoogleContainerClusterAddonsConfigLustreCsiDriverConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) validatePutNetworkPolicyConfigParameters(value *GoogleContainerClusterAddonsConfigNetworkPolicyConfig) error {
 	return nil
 }
@@ -96,7 +100,15 @@ func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) validatePu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) validatePutPodSnapshotConfigParameters(value *GoogleContainerClusterAddonsConfigPodSnapshotConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) validatePutRayOperatorConfigParameters(value interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) validatePutSliceControllerConfigParameters(value *GoogleContainerClusterAddonsConfigSliceControllerConfig) error {
 	return nil
 }
 

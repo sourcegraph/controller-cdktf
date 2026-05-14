@@ -1,0 +1,6 @@
+package datagooglebeyondcorpsecuritygateway
+
+
+type DataGoogleBeyondcorpSecurityGatewayServiceDiscoveryApiGatewayResourceOverride struct {
+}
+

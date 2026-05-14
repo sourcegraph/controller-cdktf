@@ -108,6 +108,10 @@ func (j *jsiiProxy_EventarcChannel) validateSetIdParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_EventarcChannel) validateSetLabelsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_EventarcChannel) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

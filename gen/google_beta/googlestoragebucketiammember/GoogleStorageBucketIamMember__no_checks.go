@@ -76,6 +76,10 @@ func (g *jsiiProxy_GoogleStorageBucketIamMember) validatePutConditionParameters(
 	return nil
 }
 
+func (g *jsiiProxy_GoogleStorageBucketIamMember) validatePutTimeoutsParameters(value *GoogleStorageBucketIamMemberTimeouts) error {
+	return nil
+}
+
 func validateGoogleStorageBucketIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

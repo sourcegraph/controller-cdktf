@@ -76,6 +76,10 @@ func (g *jsiiProxy_GoogleBackupDrBackupPlan) validatePutBackupRulesParameters(va
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBackupDrBackupPlan) validatePutDiskBackupPlanPropertiesParameters(value *GoogleBackupDrBackupPlanDiskBackupPlanProperties) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBackupDrBackupPlan) validatePutTimeoutsParameters(value *GoogleBackupDrBackupPlanTimeouts) error {
 	return nil
 }
@@ -125,6 +129,14 @@ func (j *jsiiProxy_GoogleBackupDrBackupPlan) validateSetLifecycleParameters(val 
 }
 
 func (j *jsiiProxy_GoogleBackupDrBackupPlan) validateSetLocationParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleBackupDrBackupPlan) validateSetLogRetentionDaysParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleBackupDrBackupPlan) validateSetMaxCustomOnDemandRetentionDaysParameters(val *float64) error {
 	return nil
 }
 

@@ -1,0 +1,6 @@
+package datagooglecontainercluster
+
+
+type DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsHostsClientCert struct {
+}
+

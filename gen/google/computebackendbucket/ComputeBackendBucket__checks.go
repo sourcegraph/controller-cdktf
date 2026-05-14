@@ -215,6 +215,17 @@ func (c *jsiiProxy_ComputeBackendBucket) validatePutCdnPolicyParameters(value *C
 	return nil
 }
 
+func (c *jsiiProxy_ComputeBackendBucket) validatePutParamsParameters(value *ComputeBackendBucketParams) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (c *jsiiProxy_ComputeBackendBucket) validatePutTimeoutsParameters(value *ComputeBackendBucketTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -427,6 +438,14 @@ func (j *jsiiProxy_ComputeBackendBucket) validateSetIdParameters(val *string) er
 func (j *jsiiProxy_ComputeBackendBucket) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ComputeBackendBucket) validateSetLoadBalancingSchemeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

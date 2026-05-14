@@ -1,0 +1,6 @@
+package googledatalosspreventiondiscoveryconfig
+
+
+type GoogleDataLossPreventionDiscoveryConfigTargetsOtherCloudTargetDisabled struct {
+}
+

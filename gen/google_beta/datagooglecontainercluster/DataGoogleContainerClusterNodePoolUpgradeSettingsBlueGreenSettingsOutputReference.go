@@ -10,6 +10,7 @@ import (
 
 type DataGoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsOutputReference interface {
 	cdktf.ComplexObject
+	AutoscaledRolloutPolicy() DataGoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsAutoscaledRolloutPolicyList
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -76,6 +77,16 @@ type DataGoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsOutputRef
 // The jsii proxy struct for DataGoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsOutputReference
 type jsiiProxy_DataGoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsOutputReference) AutoscaledRolloutPolicy() DataGoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsAutoscaledRolloutPolicyList {
+	var returns DataGoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsAutoscaledRolloutPolicyList
+	_jsii_.Get(
+		j,
+		"autoscaledRolloutPolicy",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataGoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsOutputReference) ComplexObjectIndex() interface{} {

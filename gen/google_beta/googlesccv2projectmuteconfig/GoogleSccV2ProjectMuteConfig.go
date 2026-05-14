@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlesccv2projectmuteconfig/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_scc_v2_project_mute_config google_scc_v2_project_mute_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_scc_v2_project_mute_config google_scc_v2_project_mute_config}.
 type GoogleSccV2ProjectMuteConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -516,7 +516,7 @@ func (j *jsiiProxy_GoogleSccV2ProjectMuteConfig) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_scc_v2_project_mute_config google_scc_v2_project_mute_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_scc_v2_project_mute_config google_scc_v2_project_mute_config} Resource.
 func NewGoogleSccV2ProjectMuteConfig(scope constructs.Construct, id *string, config *GoogleSccV2ProjectMuteConfigConfig) GoogleSccV2ProjectMuteConfig {
 	_init_.Initialize()
 
@@ -534,7 +534,7 @@ func NewGoogleSccV2ProjectMuteConfig(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_scc_v2_project_mute_config google_scc_v2_project_mute_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_scc_v2_project_mute_config google_scc_v2_project_mute_config} Resource.
 func NewGoogleSccV2ProjectMuteConfig_Override(g GoogleSccV2ProjectMuteConfig, scope constructs.Construct, id *string, config *GoogleSccV2ProjectMuteConfigConfig) {
 	_init_.Initialize()
 

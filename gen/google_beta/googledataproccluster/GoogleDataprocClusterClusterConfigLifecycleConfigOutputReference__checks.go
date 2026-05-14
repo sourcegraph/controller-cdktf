@@ -106,6 +106,14 @@ func (j *jsiiProxy_GoogleDataprocClusterClusterConfigLifecycleConfigOutputRefere
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference) validateSetAutoStopTimeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
@@ -172,6 +180,14 @@ func (j *jsiiProxy_GoogleDataprocClusterClusterConfigLifecycleConfigOutputRefere
 }
 
 func (j *jsiiProxy_GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference) validateSetIdleDeleteTtlParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference) validateSetIdleStopTtlParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

@@ -13,6 +13,9 @@ type GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference interface 
 	AutoDeleteTime() *string
 	SetAutoDeleteTime(val *string)
 	AutoDeleteTimeInput() *string
+	AutoStopTime() *string
+	SetAutoStopTime(val *string)
+	AutoStopTimeInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -34,6 +37,9 @@ type GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference interface 
 	SetIdleDeleteTtl(val *string)
 	IdleDeleteTtlInput() *string
 	IdleStartTime() *string
+	IdleStopTtl() *string
+	SetIdleStopTtl(val *string)
+	IdleStopTtlInput() *string
 	InternalValue() *GoogleDataprocClusterClusterConfigLifecycleConfig
 	SetInternalValue(val *GoogleDataprocClusterClusterConfigLifecycleConfig)
 	// Experimental.
@@ -69,7 +75,9 @@ type GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference interface 
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAutoDeleteTime()
+	ResetAutoStopTime()
 	ResetIdleDeleteTtl()
+	ResetIdleStopTtl()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -100,6 +108,26 @@ func (j *jsiiProxy_GoogleDataprocClusterClusterConfigLifecycleConfigOutputRefere
 	_jsii_.Get(
 		j,
 		"autoDeleteTimeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference) AutoStopTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"autoStopTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference) AutoStopTimeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"autoStopTimeInput",
 		&returns,
 	)
 	return returns
@@ -175,6 +203,26 @@ func (j *jsiiProxy_GoogleDataprocClusterClusterConfigLifecycleConfigOutputRefere
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference) IdleStopTtl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idleStopTtl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference) IdleStopTtlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idleStopTtlInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference) InternalValue() *GoogleDataprocClusterClusterConfigLifecycleConfig {
 	var returns *GoogleDataprocClusterClusterConfigLifecycleConfig
 	_jsii_.Get(
@@ -244,6 +292,17 @@ func (j *jsiiProxy_GoogleDataprocClusterClusterConfigLifecycleConfigOutputRefere
 	)
 }
 
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference)SetAutoStopTime(val *string) {
+	if err := j.validateSetAutoStopTimeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"autoStopTime",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -273,6 +332,17 @@ func (j *jsiiProxy_GoogleDataprocClusterClusterConfigLifecycleConfigOutputRefere
 	_jsii_.Set(
 		j,
 		"idleDeleteTtl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference)SetIdleStopTtl(val *string) {
+	if err := j.validateSetIdleStopTtlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"idleStopTtl",
 		val,
 	)
 }
@@ -504,10 +574,26 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigLifecycleConfigOutputRefere
 	)
 }
 
+func (g *jsiiProxy_GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference) ResetAutoStopTime() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAutoStopTime",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference) ResetIdleDeleteTtl() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetIdleDeleteTtl",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference) ResetIdleStopTtl() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIdleStopTtl",
 		nil, // no parameters
 	)
 }

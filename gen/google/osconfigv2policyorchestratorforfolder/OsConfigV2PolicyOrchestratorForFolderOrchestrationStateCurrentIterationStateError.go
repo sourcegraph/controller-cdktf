@@ -1,0 +1,6 @@
+package osconfigv2policyorchestratorforfolder
+
+
+type OsConfigV2PolicyOrchestratorForFolderOrchestrationStateCurrentIterationStateError struct {
+}
+

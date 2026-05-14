@@ -96,7 +96,15 @@ func (g *jsiiProxy_GoogleComputeRegionBackendService) validatePutCustomMetricsPa
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeRegionBackendService) validatePutDynamicForwardingParameters(value *GoogleComputeRegionBackendServiceDynamicForwarding) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRegionBackendService) validatePutFailoverPolicyParameters(value *GoogleComputeRegionBackendServiceFailoverPolicy) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeRegionBackendService) validatePutHaPolicyParameters(value *GoogleComputeRegionBackendServiceHaPolicy) error {
 	return nil
 }
 
@@ -108,7 +116,15 @@ func (g *jsiiProxy_GoogleComputeRegionBackendService) validatePutLogConfigParame
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeRegionBackendService) validatePutNetworkPassThroughLbTrafficPolicyParameters(value *GoogleComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicy) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRegionBackendService) validatePutOutlierDetectionParameters(value *GoogleComputeRegionBackendServiceOutlierDetection) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeRegionBackendService) validatePutParamsParameters(value *GoogleComputeRegionBackendServiceParams) error {
 	return nil
 }
 
@@ -121,6 +137,10 @@ func (g *jsiiProxy_GoogleComputeRegionBackendService) validatePutSubsettingParam
 }
 
 func (g *jsiiProxy_GoogleComputeRegionBackendService) validatePutTimeoutsParameters(value *GoogleComputeRegionBackendServiceTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeRegionBackendService) validatePutTlsSettingsParameters(value *GoogleComputeRegionBackendServiceTlsSettings) error {
 	return nil
 }
 

@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleContainerNodePoolUpgradeSettingsBlueGreenSettingsOutput
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference) validatePutAutoscaledRolloutPolicyParameters(value *GoogleContainerNodePoolUpgradeSettingsBlueGreenSettingsAutoscaledRolloutPolicy) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference) validatePutStandardRolloutPolicyParameters(value *GoogleContainerNodePoolUpgradeSettingsBlueGreenSettingsStandardRolloutPolicy) error {
 	return nil
 }

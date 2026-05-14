@@ -218,6 +218,14 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) validateSetCpuCoreCountParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) validateSetDataStorageSizeGbParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -374,6 +382,14 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) validateSetSecretIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -383,6 +399,14 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) va
 }
 
 func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) validateSetVaultIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

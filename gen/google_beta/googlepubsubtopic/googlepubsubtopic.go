@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlepubsubtopic/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_pubsub_topic google_pubsub_topic}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_pubsub_topic google_pubsub_topic}.
 type GooglePubsubTopic interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -57,6 +57,8 @@ type GooglePubsubTopic interface {
 	MessageRetentionDurationInput() *string
 	MessageStoragePolicy() GooglePubsubTopicMessageStoragePolicyOutputReference
 	MessageStoragePolicyInput() *GooglePubsubTopicMessageStoragePolicy
+	MessageTransforms() GooglePubsubTopicMessageTransformsList
+	MessageTransformsInput() interface{}
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -77,6 +79,9 @@ type GooglePubsubTopic interface {
 	RawOverrides() interface{}
 	SchemaSettings() GooglePubsubTopicSchemaSettingsOutputReference
 	SchemaSettingsInput() *GooglePubsubTopicSchemaSettings
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
@@ -131,6 +136,7 @@ type GooglePubsubTopic interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutIngestionDataSourceSettings(value *GooglePubsubTopicIngestionDataSourceSettings)
 	PutMessageStoragePolicy(value *GooglePubsubTopicMessageStoragePolicy)
+	PutMessageTransforms(value interface{})
 	PutSchemaSettings(value *GooglePubsubTopicSchemaSettings)
 	PutTimeouts(value *GooglePubsubTopicTimeouts)
 	ResetId()
@@ -139,11 +145,13 @@ type GooglePubsubTopic interface {
 	ResetLabels()
 	ResetMessageRetentionDuration()
 	ResetMessageStoragePolicy()
+	ResetMessageTransforms()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetSchemaSettings()
+	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -383,6 +391,26 @@ func (j *jsiiProxy_GooglePubsubTopic) MessageStoragePolicyInput() *GooglePubsubT
 	return returns
 }
 
+func (j *jsiiProxy_GooglePubsubTopic) MessageTransforms() GooglePubsubTopicMessageTransformsList {
+	var returns GooglePubsubTopicMessageTransformsList
+	_jsii_.Get(
+		j,
+		"messageTransforms",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GooglePubsubTopic) MessageTransformsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"messageTransformsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GooglePubsubTopic) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -483,6 +511,26 @@ func (j *jsiiProxy_GooglePubsubTopic) SchemaSettingsInput() *GooglePubsubTopicSc
 	return returns
 }
 
+func (j *jsiiProxy_GooglePubsubTopic) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GooglePubsubTopic) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GooglePubsubTopic) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -544,7 +592,7 @@ func (j *jsiiProxy_GooglePubsubTopic) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_pubsub_topic google_pubsub_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_pubsub_topic google_pubsub_topic} Resource.
 func NewGooglePubsubTopic(scope constructs.Construct, id *string, config *GooglePubsubTopicConfig) GooglePubsubTopic {
 	_init_.Initialize()
 
@@ -562,7 +610,7 @@ func NewGooglePubsubTopic(scope constructs.Construct, id *string, config *Google
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_pubsub_topic google_pubsub_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_pubsub_topic google_pubsub_topic} Resource.
 func NewGooglePubsubTopic_Override(g GooglePubsubTopic, scope constructs.Construct, id *string, config *GooglePubsubTopicConfig) {
 	_init_.Initialize()
 
@@ -703,6 +751,17 @@ func (j *jsiiProxy_GooglePubsubTopic)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GooglePubsubTopic)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
 		val,
 	)
 }
@@ -1082,6 +1141,17 @@ func (g *jsiiProxy_GooglePubsubTopic) PutMessageStoragePolicy(value *GooglePubsu
 	)
 }
 
+func (g *jsiiProxy_GooglePubsubTopic) PutMessageTransforms(value interface{}) {
+	if err := g.validatePutMessageTransformsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putMessageTransforms",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GooglePubsubTopic) PutSchemaSettings(value *GooglePubsubTopicSchemaSettings) {
 	if err := g.validatePutSchemaSettingsParameters(value); err != nil {
 		panic(err)
@@ -1152,6 +1222,14 @@ func (g *jsiiProxy_GooglePubsubTopic) ResetMessageStoragePolicy() {
 	)
 }
 
+func (g *jsiiProxy_GooglePubsubTopic) ResetMessageTransforms() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMessageTransforms",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GooglePubsubTopic) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1172,6 +1250,14 @@ func (g *jsiiProxy_GooglePubsubTopic) ResetSchemaSettings() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetSchemaSettings",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GooglePubsubTopic) ResetTags() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTags",
 		nil, // no parameters
 	)
 }

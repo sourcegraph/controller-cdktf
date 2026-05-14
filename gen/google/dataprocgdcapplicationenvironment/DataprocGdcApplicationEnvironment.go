@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/dataprocgdcapplicationenvironment/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/dataproc_gdc_application_environment google_dataproc_gdc_application_environment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_gdc_application_environment google_dataproc_gdc_application_environment}.
 type DataprocGdcApplicationEnvironment interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -622,7 +622,7 @@ func (j *jsiiProxy_DataprocGdcApplicationEnvironment) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/dataproc_gdc_application_environment google_dataproc_gdc_application_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_gdc_application_environment google_dataproc_gdc_application_environment} Resource.
 func NewDataprocGdcApplicationEnvironment(scope constructs.Construct, id *string, config *DataprocGdcApplicationEnvironmentConfig) DataprocGdcApplicationEnvironment {
 	_init_.Initialize()
 
@@ -640,7 +640,7 @@ func NewDataprocGdcApplicationEnvironment(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/dataproc_gdc_application_environment google_dataproc_gdc_application_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_gdc_application_environment google_dataproc_gdc_application_environment} Resource.
 func NewDataprocGdcApplicationEnvironment_Override(d DataprocGdcApplicationEnvironment, scope constructs.Construct, id *string, config *DataprocGdcApplicationEnvironmentConfig) {
 	_init_.Initialize()
 

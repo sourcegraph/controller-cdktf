@@ -31,6 +31,7 @@ type GoogleComputeInstanceFromMachineImageBootDiskOutputReference interface {
 	DiskEncryptionKeyRsa() *string
 	DiskEncryptionKeySha256() *string
 	DiskEncryptionServiceAccount() *string
+	ForceAttach() cdktf.IResolvable
 	// Experimental.
 	Fqn() *string
 	GuestOsFeatures() *[]*string
@@ -173,6 +174,16 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageBootDiskOutputReference)
 	_jsii_.Get(
 		j,
 		"diskEncryptionServiceAccount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageBootDiskOutputReference) ForceAttach() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"forceAttach",
 		&returns,
 	)
 	return returns

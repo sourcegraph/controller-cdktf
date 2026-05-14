@@ -6,11 +6,11 @@ type GoogleFirebaseAppHostingBackendCodebase struct {
 	//
 	// projects/{project}/locations/{location}/connections/{connection}/gitRepositoryLinks/{repositoryLink}
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_firebase_app_hosting_backend#repository GoogleFirebaseAppHostingBackend#repository}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_firebase_app_hosting_backend#repository GoogleFirebaseAppHostingBackend#repository}
 	Repository *string `field:"required" json:"repository" yaml:"repository"`
 	// If 'repository' is provided, the directory relative to the root of the repository to use as the root for the deployed web app.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_firebase_app_hosting_backend#root_directory GoogleFirebaseAppHostingBackend#root_directory}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_firebase_app_hosting_backend#root_directory GoogleFirebaseAppHostingBackend#root_directory}
 	RootDirectory *string `field:"optional" json:"rootDirectory" yaml:"rootDirectory"`
 }
 

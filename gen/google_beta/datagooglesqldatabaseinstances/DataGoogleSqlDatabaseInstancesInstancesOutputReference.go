@@ -11,6 +11,7 @@ import (
 type DataGoogleSqlDatabaseInstancesInstancesOutputReference interface {
 	cdktf.ComplexObject
 	AvailableMaintenanceVersions() *[]*string
+	BackupdrBackup() *string
 	Clone() DataGoogleSqlDatabaseInstancesInstancesCloneList
 	// the index of the complex object in a list.
 	// Experimental.
@@ -31,7 +32,9 @@ type DataGoogleSqlDatabaseInstancesInstancesOutputReference interface {
 	DatabaseVersion() *string
 	DeletionProtection() cdktf.IResolvable
 	DnsName() *string
+	DnsNames() DataGoogleSqlDatabaseInstancesInstancesDnsNamesList
 	EncryptionKeyName() *string
+	FinalBackupDescription() *string
 	FirstIpAddress() *string
 	// Experimental.
 	Fqn() *string
@@ -42,6 +45,8 @@ type DataGoogleSqlDatabaseInstancesInstancesOutputReference interface {
 	MaintenanceVersion() *string
 	MasterInstanceName() *string
 	Name() *string
+	NodeCount() *float64
+	PointInTimeRestoreContext() DataGoogleSqlDatabaseInstancesInstancesPointInTimeRestoreContextList
 	PrivateIpAddress() *string
 	Project() *string
 	PscServiceAttachmentLink() *string
@@ -52,6 +57,8 @@ type DataGoogleSqlDatabaseInstancesInstancesOutputReference interface {
 	ReplicationCluster() DataGoogleSqlDatabaseInstancesInstancesReplicationClusterList
 	RestoreBackupContext() DataGoogleSqlDatabaseInstancesInstancesRestoreBackupContextList
 	RootPassword() *string
+	RootPasswordWo() *string
+	RootPasswordWoVersion() *string
 	SelfLink() *string
 	ServerCaCert() DataGoogleSqlDatabaseInstancesInstancesServerCaCertList
 	ServiceAccountEmailAddress() *string
@@ -108,6 +115,16 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference) Avail
 	_jsii_.Get(
 		j,
 		"availableMaintenanceVersions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference) BackupdrBackup() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"backupdrBackup",
 		&returns,
 	)
 	return returns
@@ -193,11 +210,31 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference) DnsNa
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference) DnsNames() DataGoogleSqlDatabaseInstancesInstancesDnsNamesList {
+	var returns DataGoogleSqlDatabaseInstancesInstancesDnsNamesList
+	_jsii_.Get(
+		j,
+		"dnsNames",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference) EncryptionKeyName() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"encryptionKeyName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference) FinalBackupDescription() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"finalBackupDescription",
 		&returns,
 	)
 	return returns
@@ -278,6 +315,26 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference) Name(
 	_jsii_.Get(
 		j,
 		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference) NodeCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"nodeCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference) PointInTimeRestoreContext() DataGoogleSqlDatabaseInstancesInstancesPointInTimeRestoreContextList {
+	var returns DataGoogleSqlDatabaseInstancesInstancesPointInTimeRestoreContextList
+	_jsii_.Get(
+		j,
+		"pointInTimeRestoreContext",
 		&returns,
 	)
 	return returns
@@ -378,6 +435,26 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference) RootP
 	_jsii_.Get(
 		j,
 		"rootPassword",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference) RootPasswordWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rootPasswordWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference) RootPasswordWoVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rootPasswordWoVersion",
 		&returns,
 	)
 	return returns

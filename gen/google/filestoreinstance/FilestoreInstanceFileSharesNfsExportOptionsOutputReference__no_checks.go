@@ -76,6 +76,10 @@ func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference) v
 	return nil
 }
 
+func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference) validateSetNetworkParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference) validateSetSquashModeParameters(val *string) error {
 	return nil
 }

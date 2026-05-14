@@ -36,6 +36,9 @@ type ApigeeTargetServerSSlInfoOutputReference interface {
 	Enabled() interface{}
 	SetEnabled(val interface{})
 	EnabledInput() interface{}
+	Enforce() interface{}
+	SetEnforce(val interface{})
+	EnforceInput() interface{}
 	// Experimental.
 	Fqn() *string
 	IgnoreValidationErrors() interface{}
@@ -91,6 +94,7 @@ type ApigeeTargetServerSSlInfoOutputReference interface {
 	ResetCiphers()
 	ResetClientAuthEnabled()
 	ResetCommonName()
+	ResetEnforce()
 	ResetIgnoreValidationErrors()
 	ResetKeyAlias()
 	ResetKeyStore()
@@ -216,6 +220,26 @@ func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) EnabledInput() inte
 	_jsii_.Get(
 		j,
 		"enabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) Enforce() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enforce",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) EnforceInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enforceInput",
 		&returns,
 	)
 	return returns
@@ -440,6 +464,17 @@ func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference)SetEnabled(val inter
 	_jsii_.Set(
 		j,
 		"enabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference)SetEnforce(val interface{}) {
+	if err := j.validateSetEnforceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enforce",
 		val,
 	)
 }
@@ -749,6 +784,14 @@ func (a *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) ResetCommonName() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetCommonName",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) ResetEnforce() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetEnforce",
 		nil, // no parameters
 	)
 }

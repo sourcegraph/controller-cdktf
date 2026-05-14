@@ -80,7 +80,7 @@ type GoogleEventarcPipelineMediationsTransformation struct {
 	// representation of the CloudEvent. To convert that data to a JSON
 	// string it can be chained with the toJsonString function.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_eventarc_pipeline#transformation_template GoogleEventarcPipeline#transformation_template}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_eventarc_pipeline#transformation_template GoogleEventarcPipeline#transformation_template}
 	TransformationTemplate *string `field:"optional" json:"transformationTemplate" yaml:"transformationTemplate"`
 }
 

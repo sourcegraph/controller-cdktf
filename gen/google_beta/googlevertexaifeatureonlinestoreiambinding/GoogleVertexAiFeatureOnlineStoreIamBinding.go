@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlevertexaifeatureonlinestoreiambinding/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_vertex_ai_feature_online_store_iam_binding google_vertex_ai_feature_online_store_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_vertex_ai_feature_online_store_iam_binding google_vertex_ai_feature_online_store_iam_binding}.
 type GoogleVertexAiFeatureOnlineStoreIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -459,7 +459,7 @@ func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreIamBinding) TerraformResource
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_vertex_ai_feature_online_store_iam_binding google_vertex_ai_feature_online_store_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_vertex_ai_feature_online_store_iam_binding google_vertex_ai_feature_online_store_iam_binding} Resource.
 func NewGoogleVertexAiFeatureOnlineStoreIamBinding(scope constructs.Construct, id *string, config *GoogleVertexAiFeatureOnlineStoreIamBindingConfig) GoogleVertexAiFeatureOnlineStoreIamBinding {
 	_init_.Initialize()
 
@@ -477,7 +477,7 @@ func NewGoogleVertexAiFeatureOnlineStoreIamBinding(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_vertex_ai_feature_online_store_iam_binding google_vertex_ai_feature_online_store_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_vertex_ai_feature_online_store_iam_binding google_vertex_ai_feature_online_store_iam_binding} Resource.
 func NewGoogleVertexAiFeatureOnlineStoreIamBinding_Override(g GoogleVertexAiFeatureOnlineStoreIamBinding, scope constructs.Construct, id *string, config *GoogleVertexAiFeatureOnlineStoreIamBindingConfig) {
 	_init_.Initialize()
 

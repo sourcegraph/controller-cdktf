@@ -1,0 +1,6 @@
+package googledatalosspreventiondiscoveryconfig
+
+
+type GoogleDataLossPreventionDiscoveryConfigTargetsOtherCloudTargetFilterOthers struct {
+}
+

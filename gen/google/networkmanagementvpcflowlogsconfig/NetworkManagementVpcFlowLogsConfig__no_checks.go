@@ -144,6 +144,10 @@ func (j *jsiiProxy_NetworkManagementVpcFlowLogsConfig) validateSetMetadataFields
 	return nil
 }
 
+func (j *jsiiProxy_NetworkManagementVpcFlowLogsConfig) validateSetNetworkParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkManagementVpcFlowLogsConfig) validateSetProjectParameters(val *string) error {
 	return nil
 }
@@ -153,6 +157,10 @@ func (j *jsiiProxy_NetworkManagementVpcFlowLogsConfig) validateSetProvisionersPa
 }
 
 func (j *jsiiProxy_NetworkManagementVpcFlowLogsConfig) validateSetStateParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NetworkManagementVpcFlowLogsConfig) validateSetSubnetParameters(val *string) error {
 	return nil
 }
 

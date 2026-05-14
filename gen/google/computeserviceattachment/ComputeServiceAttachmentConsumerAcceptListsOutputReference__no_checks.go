@@ -60,6 +60,10 @@ func (j *jsiiProxy_ComputeServiceAttachmentConsumerAcceptListsOutputReference) v
 	return nil
 }
 
+func (j *jsiiProxy_ComputeServiceAttachmentConsumerAcceptListsOutputReference) validateSetEndpointUrlParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeServiceAttachmentConsumerAcceptListsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

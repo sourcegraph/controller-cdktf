@@ -143,6 +143,17 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersOutputReference) validateP
 	return nil
 }
 
+func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersOutputReference) validatePutReadinessProbeParameters(value *CloudRunV2ServiceTemplateContainersReadinessProbe) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersOutputReference) validatePutResourcesParameters(value *CloudRunV2ServiceTemplateContainersResources) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

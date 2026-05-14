@@ -60,6 +60,10 @@ func (j *jsiiProxy_GoogleContainerClusterFleetOutputReference) validateSetIntern
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerClusterFleetOutputReference) validateSetMembershipTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerClusterFleetOutputReference) validateSetProjectParameters(val *string) error {
 	return nil
 }

@@ -198,6 +198,14 @@ func (j *jsiiProxy_GoogleComputeSecurityPolicyAdvancedOptionsConfigOutputReferen
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeSecurityPolicyAdvancedOptionsConfigOutputReference) validateSetRequestBodyInspectionSizeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeSecurityPolicyAdvancedOptionsConfigOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

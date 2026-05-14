@@ -204,6 +204,17 @@ func (g *jsiiProxy_GoogleHealthcareFhirStore) validateOverrideLogicalIdParameter
 	return nil
 }
 
+func (g *jsiiProxy_GoogleHealthcareFhirStore) validatePutConsentConfigParameters(value *GoogleHealthcareFhirStoreConsentConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleHealthcareFhirStore) validatePutNotificationConfigParameters(value *GoogleHealthcareFhirStoreNotificationConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -278,6 +289,17 @@ func (g *jsiiProxy_GoogleHealthcareFhirStore) validatePutStreamConfigsParameters
 }
 
 func (g *jsiiProxy_GoogleHealthcareFhirStore) validatePutTimeoutsParameters(value *GoogleHealthcareFhirStoreTimeouts) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleHealthcareFhirStore) validatePutValidationConfigParameters(value *GoogleHealthcareFhirStoreValidationConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

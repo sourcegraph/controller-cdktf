@@ -28,6 +28,8 @@ type GoogleClouddeployTargetExecutionConfigsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DefaultPool() GoogleClouddeployTargetExecutionConfigsDefaultPoolOutputReference
+	DefaultPoolInput() *GoogleClouddeployTargetExecutionConfigsDefaultPool
 	ExecutionTimeout() *string
 	SetExecutionTimeout(val *string)
 	ExecutionTimeoutInput() *string
@@ -35,6 +37,8 @@ type GoogleClouddeployTargetExecutionConfigsOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	PrivatePool() GoogleClouddeployTargetExecutionConfigsPrivatePoolOutputReference
+	PrivatePoolInput() *GoogleClouddeployTargetExecutionConfigsPrivatePool
 	ServiceAccount() *string
 	SetServiceAccount(val *string)
 	ServiceAccountInput() *string
@@ -79,8 +83,12 @@ type GoogleClouddeployTargetExecutionConfigsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutDefaultPool(value *GoogleClouddeployTargetExecutionConfigsDefaultPool)
+	PutPrivatePool(value *GoogleClouddeployTargetExecutionConfigsPrivatePool)
 	ResetArtifactStorage()
+	ResetDefaultPool()
 	ResetExecutionTimeout()
+	ResetPrivatePool()
 	ResetServiceAccount()
 	ResetVerbose()
 	ResetWorkerPool()
@@ -149,6 +157,26 @@ func (j *jsiiProxy_GoogleClouddeployTargetExecutionConfigsOutputReference) Creat
 	return returns
 }
 
+func (j *jsiiProxy_GoogleClouddeployTargetExecutionConfigsOutputReference) DefaultPool() GoogleClouddeployTargetExecutionConfigsDefaultPoolOutputReference {
+	var returns GoogleClouddeployTargetExecutionConfigsDefaultPoolOutputReference
+	_jsii_.Get(
+		j,
+		"defaultPool",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleClouddeployTargetExecutionConfigsOutputReference) DefaultPoolInput() *GoogleClouddeployTargetExecutionConfigsDefaultPool {
+	var returns *GoogleClouddeployTargetExecutionConfigsDefaultPool
+	_jsii_.Get(
+		j,
+		"defaultPoolInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleClouddeployTargetExecutionConfigsOutputReference) ExecutionTimeout() *string {
 	var returns *string
 	_jsii_.Get(
@@ -184,6 +212,26 @@ func (j *jsiiProxy_GoogleClouddeployTargetExecutionConfigsOutputReference) Inter
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleClouddeployTargetExecutionConfigsOutputReference) PrivatePool() GoogleClouddeployTargetExecutionConfigsPrivatePoolOutputReference {
+	var returns GoogleClouddeployTargetExecutionConfigsPrivatePoolOutputReference
+	_jsii_.Get(
+		j,
+		"privatePool",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleClouddeployTargetExecutionConfigsOutputReference) PrivatePoolInput() *GoogleClouddeployTargetExecutionConfigsPrivatePool {
+	var returns *GoogleClouddeployTargetExecutionConfigsPrivatePool
+	_jsii_.Get(
+		j,
+		"privatePoolInput",
 		&returns,
 	)
 	return returns
@@ -624,6 +672,28 @@ func (g *jsiiProxy_GoogleClouddeployTargetExecutionConfigsOutputReference) Inter
 	return returns
 }
 
+func (g *jsiiProxy_GoogleClouddeployTargetExecutionConfigsOutputReference) PutDefaultPool(value *GoogleClouddeployTargetExecutionConfigsDefaultPool) {
+	if err := g.validatePutDefaultPoolParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putDefaultPool",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleClouddeployTargetExecutionConfigsOutputReference) PutPrivatePool(value *GoogleClouddeployTargetExecutionConfigsPrivatePool) {
+	if err := g.validatePutPrivatePoolParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putPrivatePool",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleClouddeployTargetExecutionConfigsOutputReference) ResetArtifactStorage() {
 	_jsii_.InvokeVoid(
 		g,
@@ -632,10 +702,26 @@ func (g *jsiiProxy_GoogleClouddeployTargetExecutionConfigsOutputReference) Reset
 	)
 }
 
+func (g *jsiiProxy_GoogleClouddeployTargetExecutionConfigsOutputReference) ResetDefaultPool() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDefaultPool",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleClouddeployTargetExecutionConfigsOutputReference) ResetExecutionTimeout() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetExecutionTimeout",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleClouddeployTargetExecutionConfigsOutputReference) ResetPrivatePool() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPrivatePool",
 		nil, // no parameters
 	)
 }

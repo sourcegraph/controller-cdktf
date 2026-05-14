@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/computestoragepool/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_storage_pool google_compute_storage_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_storage_pool google_compute_storage_pool}.
 type ComputeStoragePool interface {
 	cdktf.TerraformResource
 	CapacityProvisioningType() *string
@@ -38,6 +38,7 @@ type ComputeStoragePool interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -49,6 +50,9 @@ type ComputeStoragePool interface {
 	Id() *string
 	Kind() *string
 	LabelFingerprint() *string
+	Labels() *map[string]*string
+	SetLabels(val *map[string]*string)
+	LabelsInput() *map[string]*string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -58,6 +62,8 @@ type ComputeStoragePool interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Params() ComputeStoragePoolParamsOutputReference
+	ParamsInput() *ComputeStoragePoolParams
 	PerformanceProvisioningType() *string
 	SetPerformanceProvisioningType(val *string)
 	PerformanceProvisioningTypeInput() *string
@@ -90,6 +96,7 @@ type ComputeStoragePool interface {
 	StoragePoolTypeInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -142,13 +149,16 @@ type ComputeStoragePool interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutParams(value *ComputeStoragePoolParams)
 	PutTimeouts(value *ComputeStoragePoolTimeouts)
 	ResetCapacityProvisioningType()
 	ResetDeletionProtection()
 	ResetDescription()
+	ResetLabels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetParams()
 	ResetPerformanceProvisioningType()
 	ResetPoolProvisionedIops()
 	ResetProject()
@@ -292,6 +302,16 @@ func (j *jsiiProxy_ComputeStoragePool) DescriptionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeStoragePool) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeStoragePool) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -352,6 +372,26 @@ func (j *jsiiProxy_ComputeStoragePool) LabelFingerprint() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeStoragePool) Labels() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeStoragePool) LabelsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labelsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeStoragePool) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -387,6 +427,26 @@ func (j *jsiiProxy_ComputeStoragePool) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeStoragePool) Params() ComputeStoragePoolParamsOutputReference {
+	var returns ComputeStoragePoolParamsOutputReference
+	_jsii_.Get(
+		j,
+		"params",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeStoragePool) ParamsInput() *ComputeStoragePoolParams {
+	var returns *ComputeStoragePoolParams
+	_jsii_.Get(
+		j,
+		"paramsInput",
 		&returns,
 	)
 	return returns
@@ -572,6 +632,16 @@ func (j *jsiiProxy_ComputeStoragePool) TerraformGeneratorMetadata() *cdktf.Terra
 	return returns
 }
 
+func (j *jsiiProxy_ComputeStoragePool) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeStoragePool) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -633,7 +703,7 @@ func (j *jsiiProxy_ComputeStoragePool) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_storage_pool google_compute_storage_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_storage_pool google_compute_storage_pool} Resource.
 func NewComputeStoragePool(scope constructs.Construct, id *string, config *ComputeStoragePoolConfig) ComputeStoragePool {
 	_init_.Initialize()
 
@@ -651,7 +721,7 @@ func NewComputeStoragePool(scope constructs.Construct, id *string, config *Compu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_storage_pool google_compute_storage_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_storage_pool google_compute_storage_pool} Resource.
 func NewComputeStoragePool_Override(c ComputeStoragePool, scope constructs.Construct, id *string, config *ComputeStoragePoolConfig) {
 	_init_.Initialize()
 
@@ -729,6 +799,17 @@ func (j *jsiiProxy_ComputeStoragePool)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeStoragePool)SetLabels(val *map[string]*string) {
+	if err := j.validateSetLabelsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"labels",
 		val,
 	)
 }
@@ -1204,6 +1285,17 @@ func (c *jsiiProxy_ComputeStoragePool) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (c *jsiiProxy_ComputeStoragePool) PutParams(value *ComputeStoragePoolParams) {
+	if err := c.validatePutParamsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putParams",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeStoragePool) PutTimeouts(value *ComputeStoragePoolTimeouts) {
 	if err := c.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1239,10 +1331,26 @@ func (c *jsiiProxy_ComputeStoragePool) ResetDescription() {
 	)
 }
 
+func (c *jsiiProxy_ComputeStoragePool) ResetLabels() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetLabels",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ComputeStoragePool) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeStoragePool) ResetParams() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetParams",
 		nil, // no parameters
 	)
 }

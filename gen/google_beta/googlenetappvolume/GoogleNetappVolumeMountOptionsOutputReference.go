@@ -32,6 +32,7 @@ type GoogleNetappVolumeMountOptionsOutputReference interface {
 	Instructions() *string
 	InternalValue() *GoogleNetappVolumeMountOptions
 	SetInternalValue(val *GoogleNetappVolumeMountOptions)
+	IpAddress() *string
 	Protocol() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -155,6 +156,16 @@ func (j *jsiiProxy_GoogleNetappVolumeMountOptionsOutputReference) InternalValue(
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetappVolumeMountOptionsOutputReference) IpAddress() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipAddress",
 		&returns,
 	)
 	return returns

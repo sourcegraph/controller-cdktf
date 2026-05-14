@@ -38,6 +38,8 @@ type FirestoreIndexFieldsOutputReference interface {
 	Order() *string
 	SetOrder(val *string)
 	OrderInput() *string
+	SearchConfig() FirestoreIndexFieldsSearchConfigOutputReference
+	SearchConfigInput() *FirestoreIndexFieldsSearchConfig
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -72,10 +74,12 @@ type FirestoreIndexFieldsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutSearchConfig(value *FirestoreIndexFieldsSearchConfig)
 	PutVectorConfig(value *FirestoreIndexFieldsVectorConfig)
 	ResetArrayConfig()
 	ResetFieldPath()
 	ResetOrder()
+	ResetSearchConfig()
 	ResetVectorConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -197,6 +201,26 @@ func (j *jsiiProxy_FirestoreIndexFieldsOutputReference) OrderInput() *string {
 	_jsii_.Get(
 		j,
 		"orderInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FirestoreIndexFieldsOutputReference) SearchConfig() FirestoreIndexFieldsSearchConfigOutputReference {
+	var returns FirestoreIndexFieldsSearchConfigOutputReference
+	_jsii_.Get(
+		j,
+		"searchConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FirestoreIndexFieldsOutputReference) SearchConfigInput() *FirestoreIndexFieldsSearchConfig {
+	var returns *FirestoreIndexFieldsSearchConfig
+	_jsii_.Get(
+		j,
+		"searchConfigInput",
 		&returns,
 	)
 	return returns
@@ -544,6 +568,17 @@ func (f *jsiiProxy_FirestoreIndexFieldsOutputReference) InterpolationForAttribut
 	return returns
 }
 
+func (f *jsiiProxy_FirestoreIndexFieldsOutputReference) PutSearchConfig(value *FirestoreIndexFieldsSearchConfig) {
+	if err := f.validatePutSearchConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"putSearchConfig",
+		[]interface{}{value},
+	)
+}
+
 func (f *jsiiProxy_FirestoreIndexFieldsOutputReference) PutVectorConfig(value *FirestoreIndexFieldsVectorConfig) {
 	if err := f.validatePutVectorConfigParameters(value); err != nil {
 		panic(err)
@@ -575,6 +610,14 @@ func (f *jsiiProxy_FirestoreIndexFieldsOutputReference) ResetOrder() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetOrder",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FirestoreIndexFieldsOutputReference) ResetSearchConfig() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetSearchConfig",
 		nil, // no parameters
 	)
 }

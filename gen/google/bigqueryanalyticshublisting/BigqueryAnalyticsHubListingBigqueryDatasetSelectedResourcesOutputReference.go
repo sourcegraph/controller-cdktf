@@ -29,6 +29,9 @@ type BigqueryAnalyticsHubListingBigqueryDatasetSelectedResourcesOutputReference 
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Routine() *string
+	SetRoutine(val *string)
+	RoutineInput() *string
 	Table() *string
 	SetTable(val *string)
 	TableInput() *string
@@ -64,6 +67,7 @@ type BigqueryAnalyticsHubListingBigqueryDatasetSelectedResourcesOutputReference 
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetRoutine()
 	ResetTable()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -125,6 +129,26 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListingBigqueryDatasetSelectedResourcesOu
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryAnalyticsHubListingBigqueryDatasetSelectedResourcesOutputReference) Routine() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routine",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryAnalyticsHubListingBigqueryDatasetSelectedResourcesOutputReference) RoutineInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routineInput",
 		&returns,
 	)
 	return returns
@@ -227,6 +251,17 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListingBigqueryDatasetSelectedResourcesOu
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigqueryAnalyticsHubListingBigqueryDatasetSelectedResourcesOutputReference)SetRoutine(val *string) {
+	if err := j.validateSetRoutineParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"routine",
 		val,
 	)
 }
@@ -448,6 +483,14 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListingBigqueryDatasetSelectedResourcesOu
 	)
 
 	return returns
+}
+
+func (b *jsiiProxy_BigqueryAnalyticsHubListingBigqueryDatasetSelectedResourcesOutputReference) ResetRoutine() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetRoutine",
+		nil, // no parameters
+	)
 }
 
 func (b *jsiiProxy_BigqueryAnalyticsHubListingBigqueryDatasetSelectedResourcesOutputReference) ResetTable() {

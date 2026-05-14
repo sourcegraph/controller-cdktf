@@ -1,0 +1,6 @@
+package datagooglenetworkmanagementconnectivitytestrun
+
+
+type DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTraces struct {
+}
+

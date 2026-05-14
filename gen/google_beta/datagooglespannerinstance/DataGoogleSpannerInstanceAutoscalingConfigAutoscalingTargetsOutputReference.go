@@ -39,6 +39,7 @@ type DataGoogleSpannerInstanceAutoscalingConfigAutoscalingTargetsOutputReference
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TotalCpuUtilizationPercent() *float64
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -163,6 +164,16 @@ func (j *jsiiProxy_DataGoogleSpannerInstanceAutoscalingConfigAutoscalingTargetsO
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSpannerInstanceAutoscalingConfigAutoscalingTargetsOutputReference) TotalCpuUtilizationPercent() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"totalCpuUtilizationPercent",
 		&returns,
 	)
 	return returns

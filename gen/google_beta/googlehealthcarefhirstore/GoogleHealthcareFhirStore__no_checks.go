@@ -72,6 +72,10 @@ func (g *jsiiProxy_GoogleHealthcareFhirStore) validateOverrideLogicalIdParameter
 	return nil
 }
 
+func (g *jsiiProxy_GoogleHealthcareFhirStore) validatePutConsentConfigParameters(value *GoogleHealthcareFhirStoreConsentConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleHealthcareFhirStore) validatePutNotificationConfigParameters(value *GoogleHealthcareFhirStoreNotificationConfig) error {
 	return nil
 }
@@ -85,6 +89,10 @@ func (g *jsiiProxy_GoogleHealthcareFhirStore) validatePutStreamConfigsParameters
 }
 
 func (g *jsiiProxy_GoogleHealthcareFhirStore) validatePutTimeoutsParameters(value *GoogleHealthcareFhirStoreTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleHealthcareFhirStore) validatePutValidationConfigParameters(value *GoogleHealthcareFhirStoreValidationConfig) error {
 	return nil
 }
 

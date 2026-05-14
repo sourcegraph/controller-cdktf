@@ -215,6 +215,17 @@ func (s *jsiiProxy_SqlDatabaseInstance) validatePutCloneParameters(value *SqlDat
 	return nil
 }
 
+func (s *jsiiProxy_SqlDatabaseInstance) validatePutPointInTimeRestoreContextParameters(value *SqlDatabaseInstancePointInTimeRestoreContext) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (s *jsiiProxy_SqlDatabaseInstance) validatePutReplicaConfigurationParameters(value *SqlDatabaseInstanceReplicaConfiguration) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -305,6 +316,14 @@ func validateSqlDatabaseInstance_IsTerraformElementParameters(x interface{}) err
 func validateSqlDatabaseInstance_IsTerraformResourceParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SqlDatabaseInstance) validateSetBackupdrBackupParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil
@@ -436,6 +455,14 @@ func (j *jsiiProxy_SqlDatabaseInstance) validateSetEncryptionKeyNameParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_SqlDatabaseInstance) validateSetFinalBackupDescriptionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SqlDatabaseInstance) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -477,6 +504,14 @@ func (j *jsiiProxy_SqlDatabaseInstance) validateSetMasterInstanceNameParameters(
 }
 
 func (j *jsiiProxy_SqlDatabaseInstance) validateSetNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SqlDatabaseInstance) validateSetNodeCountParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -555,6 +590,22 @@ func (j *jsiiProxy_SqlDatabaseInstance) validateSetReplicaNamesParameters(val *[
 }
 
 func (j *jsiiProxy_SqlDatabaseInstance) validateSetRootPasswordParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SqlDatabaseInstance) validateSetRootPasswordWoParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SqlDatabaseInstance) validateSetRootPasswordWoVersionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

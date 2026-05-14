@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/computeregioninstancegroupmanager/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_region_instance_group_manager google_compute_region_instance_group_manager}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_instance_group_manager google_compute_region_instance_group_manager}.
 type ComputeRegionInstanceGroupManager interface {
 	cdktf.TerraformResource
 	AllInstancesConfig() ComputeRegionInstanceGroupManagerAllInstancesConfigOutputReference
@@ -93,6 +93,8 @@ type ComputeRegionInstanceGroupManager interface {
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
+	ResourcePolicies() ComputeRegionInstanceGroupManagerResourcePoliciesOutputReference
+	ResourcePoliciesInput() *ComputeRegionInstanceGroupManagerResourcePolicies
 	SelfLink() *string
 	StandbyPolicy() ComputeRegionInstanceGroupManagerStandbyPolicyOutputReference
 	StandbyPolicyInput() *ComputeRegionInstanceGroupManagerStandbyPolicy
@@ -109,6 +111,8 @@ type ComputeRegionInstanceGroupManager interface {
 	TargetSize() *float64
 	SetTargetSize(val *float64)
 	TargetSizeInput() *float64
+	TargetSizePolicy() ComputeRegionInstanceGroupManagerTargetSizePolicyList
+	TargetSizePolicyInput() interface{}
 	TargetStoppedSize() *float64
 	SetTargetStoppedSize(val *float64)
 	TargetStoppedSizeInput() *float64
@@ -181,10 +185,12 @@ type ComputeRegionInstanceGroupManager interface {
 	PutInstanceFlexibilityPolicy(value *ComputeRegionInstanceGroupManagerInstanceFlexibilityPolicy)
 	PutInstanceLifecyclePolicy(value *ComputeRegionInstanceGroupManagerInstanceLifecyclePolicy)
 	PutNamedPort(value interface{})
+	PutResourcePolicies(value *ComputeRegionInstanceGroupManagerResourcePolicies)
 	PutStandbyPolicy(value *ComputeRegionInstanceGroupManagerStandbyPolicy)
 	PutStatefulDisk(value interface{})
 	PutStatefulExternalIp(value interface{})
 	PutStatefulInternalIp(value interface{})
+	PutTargetSizePolicy(value interface{})
 	PutTimeouts(value *ComputeRegionInstanceGroupManagerTimeouts)
 	PutUpdatePolicy(value *ComputeRegionInstanceGroupManagerUpdatePolicy)
 	PutVersion(value interface{})
@@ -203,12 +209,14 @@ type ComputeRegionInstanceGroupManager interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetRegion()
+	ResetResourcePolicies()
 	ResetStandbyPolicy()
 	ResetStatefulDisk()
 	ResetStatefulExternalIp()
 	ResetStatefulInternalIp()
 	ResetTargetPools()
 	ResetTargetSize()
+	ResetTargetSizePolicy()
 	ResetTargetStoppedSize()
 	ResetTargetSuspendedSize()
 	ResetTimeouts()
@@ -683,6 +691,26 @@ func (j *jsiiProxy_ComputeRegionInstanceGroupManager) RegionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeRegionInstanceGroupManager) ResourcePolicies() ComputeRegionInstanceGroupManagerResourcePoliciesOutputReference {
+	var returns ComputeRegionInstanceGroupManagerResourcePoliciesOutputReference
+	_jsii_.Get(
+		j,
+		"resourcePolicies",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionInstanceGroupManager) ResourcePoliciesInput() *ComputeRegionInstanceGroupManagerResourcePolicies {
+	var returns *ComputeRegionInstanceGroupManagerResourcePolicies
+	_jsii_.Get(
+		j,
+		"resourcePoliciesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeRegionInstanceGroupManager) SelfLink() *string {
 	var returns *string
 	_jsii_.Get(
@@ -818,6 +846,26 @@ func (j *jsiiProxy_ComputeRegionInstanceGroupManager) TargetSizeInput() *float64
 	_jsii_.Get(
 		j,
 		"targetSizeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionInstanceGroupManager) TargetSizePolicy() ComputeRegionInstanceGroupManagerTargetSizePolicyList {
+	var returns ComputeRegionInstanceGroupManagerTargetSizePolicyList
+	_jsii_.Get(
+		j,
+		"targetSizePolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionInstanceGroupManager) TargetSizePolicyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"targetSizePolicyInput",
 		&returns,
 	)
 	return returns
@@ -994,7 +1042,7 @@ func (j *jsiiProxy_ComputeRegionInstanceGroupManager) WaitForInstancesStatusInpu
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_region_instance_group_manager google_compute_region_instance_group_manager} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_instance_group_manager google_compute_region_instance_group_manager} Resource.
 func NewComputeRegionInstanceGroupManager(scope constructs.Construct, id *string, config *ComputeRegionInstanceGroupManagerConfig) ComputeRegionInstanceGroupManager {
 	_init_.Initialize()
 
@@ -1012,7 +1060,7 @@ func NewComputeRegionInstanceGroupManager(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_region_instance_group_manager google_compute_region_instance_group_manager} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_instance_group_manager google_compute_region_instance_group_manager} Resource.
 func NewComputeRegionInstanceGroupManager_Override(c ComputeRegionInstanceGroupManager, scope constructs.Construct, id *string, config *ComputeRegionInstanceGroupManagerConfig) {
 	_init_.Initialize()
 
@@ -1664,6 +1712,17 @@ func (c *jsiiProxy_ComputeRegionInstanceGroupManager) PutNamedPort(value interfa
 	)
 }
 
+func (c *jsiiProxy_ComputeRegionInstanceGroupManager) PutResourcePolicies(value *ComputeRegionInstanceGroupManagerResourcePolicies) {
+	if err := c.validatePutResourcePoliciesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putResourcePolicies",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeRegionInstanceGroupManager) PutStandbyPolicy(value *ComputeRegionInstanceGroupManagerStandbyPolicy) {
 	if err := c.validatePutStandbyPolicyParameters(value); err != nil {
 		panic(err)
@@ -1704,6 +1763,17 @@ func (c *jsiiProxy_ComputeRegionInstanceGroupManager) PutStatefulInternalIp(valu
 	_jsii_.InvokeVoid(
 		c,
 		"putStatefulInternalIp",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ComputeRegionInstanceGroupManager) PutTargetSizePolicy(value interface{}) {
+	if err := c.validatePutTargetSizePolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putTargetSizePolicy",
 		[]interface{}{value},
 	)
 }
@@ -1845,6 +1915,14 @@ func (c *jsiiProxy_ComputeRegionInstanceGroupManager) ResetRegion() {
 	)
 }
 
+func (c *jsiiProxy_ComputeRegionInstanceGroupManager) ResetResourcePolicies() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetResourcePolicies",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ComputeRegionInstanceGroupManager) ResetStandbyPolicy() {
 	_jsii_.InvokeVoid(
 		c,
@@ -1889,6 +1967,14 @@ func (c *jsiiProxy_ComputeRegionInstanceGroupManager) ResetTargetSize() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetTargetSize",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRegionInstanceGroupManager) ResetTargetSizePolicy() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetTargetSizePolicy",
 		nil, // no parameters
 	)
 }

@@ -124,6 +124,10 @@ func (j *jsiiProxy_GoogleComputeSecurityPolicy) validateSetIdParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeSecurityPolicy) validateSetLabelsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeSecurityPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

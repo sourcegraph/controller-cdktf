@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/computeinstantsnapshot/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_instant_snapshot google_compute_instant_snapshot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instant_snapshot google_compute_instant_snapshot}.
 type ComputeInstantSnapshot interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -58,6 +58,8 @@ type ComputeInstantSnapshot interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Params() ComputeInstantSnapshotParamsOutputReference
+	ParamsInput() *ComputeInstantSnapshotParams
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -131,6 +133,7 @@ type ComputeInstantSnapshot interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutParams(value *ComputeInstantSnapshotParams)
 	PutTimeouts(value *ComputeInstantSnapshotTimeouts)
 	ResetDescription()
 	ResetId()
@@ -138,6 +141,7 @@ type ComputeInstantSnapshot interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetParams()
 	ResetProject()
 	ResetTimeouts()
 	ResetZone()
@@ -379,6 +383,26 @@ func (j *jsiiProxy_ComputeInstantSnapshot) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeInstantSnapshot) Params() ComputeInstantSnapshotParamsOutputReference {
+	var returns ComputeInstantSnapshotParamsOutputReference
+	_jsii_.Get(
+		j,
+		"params",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstantSnapshot) ParamsInput() *ComputeInstantSnapshotParams {
+	var returns *ComputeInstantSnapshotParams
+	_jsii_.Get(
+		j,
+		"paramsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeInstantSnapshot) Project() *string {
 	var returns *string
 	_jsii_.Get(
@@ -550,7 +574,7 @@ func (j *jsiiProxy_ComputeInstantSnapshot) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_instant_snapshot google_compute_instant_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instant_snapshot google_compute_instant_snapshot} Resource.
 func NewComputeInstantSnapshot(scope constructs.Construct, id *string, config *ComputeInstantSnapshotConfig) ComputeInstantSnapshot {
 	_init_.Initialize()
 
@@ -568,7 +592,7 @@ func NewComputeInstantSnapshot(scope constructs.Construct, id *string, config *C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_instant_snapshot google_compute_instant_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instant_snapshot google_compute_instant_snapshot} Resource.
 func NewComputeInstantSnapshot_Override(c ComputeInstantSnapshot, scope constructs.Construct, id *string, config *ComputeInstantSnapshotConfig) {
 	_init_.Initialize()
 
@@ -1077,6 +1101,17 @@ func (c *jsiiProxy_ComputeInstantSnapshot) OverrideLogicalId(newLogicalId *strin
 	)
 }
 
+func (c *jsiiProxy_ComputeInstantSnapshot) PutParams(value *ComputeInstantSnapshotParams) {
+	if err := c.validatePutParamsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putParams",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeInstantSnapshot) PutTimeouts(value *ComputeInstantSnapshotTimeouts) {
 	if err := c.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1116,6 +1151,14 @@ func (c *jsiiProxy_ComputeInstantSnapshot) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeInstantSnapshot) ResetParams() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetParams",
 		nil, // no parameters
 	)
 }

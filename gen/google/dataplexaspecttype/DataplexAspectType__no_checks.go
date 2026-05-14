@@ -104,6 +104,10 @@ func (j *jsiiProxy_DataplexAspectType) validateSetCountParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_DataplexAspectType) validateSetDataClassificationParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataplexAspectType) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

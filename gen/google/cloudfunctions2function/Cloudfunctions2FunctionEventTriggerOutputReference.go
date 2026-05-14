@@ -81,7 +81,6 @@ type Cloudfunctions2FunctionEventTriggerOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutEventFilters(value interface{})
 	ResetEventFilters()
-	ResetEventType()
 	ResetPubsubTopic()
 	ResetRetryPolicy()
 	ResetServiceAccountEmail()
@@ -640,14 +639,6 @@ func (c *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference) ResetEven
 	_jsii_.InvokeVoid(
 		c,
 		"resetEventFilters",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference) ResetEventType() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetEventType",
 		nil, // no parameters
 	)
 }

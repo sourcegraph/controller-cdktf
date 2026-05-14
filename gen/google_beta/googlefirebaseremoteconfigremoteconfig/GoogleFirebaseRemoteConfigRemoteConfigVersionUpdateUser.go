@@ -1,0 +1,6 @@
+package googlefirebaseremoteconfigremoteconfig
+
+
+type GoogleFirebaseRemoteConfigRemoteConfigVersionUpdateUser struct {
+}
+

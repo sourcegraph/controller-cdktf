@@ -168,6 +168,10 @@ func (j *jsiiProxy_DataprocJob) validateSetRegionParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_DataprocJob) validateSetWaitForCompletionParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewDataprocJobParameters(scope constructs.Construct, id *string, config *DataprocJobConfig) error {
 	return nil
 }

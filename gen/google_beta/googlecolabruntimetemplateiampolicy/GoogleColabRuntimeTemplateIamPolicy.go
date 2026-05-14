@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecolabruntimetemplateiampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_colab_runtime_template_iam_policy google_colab_runtime_template_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_colab_runtime_template_iam_policy google_colab_runtime_template_iam_policy}.
 type GoogleColabRuntimeTemplateIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -412,7 +412,7 @@ func (j *jsiiProxy_GoogleColabRuntimeTemplateIamPolicy) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_colab_runtime_template_iam_policy google_colab_runtime_template_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_colab_runtime_template_iam_policy google_colab_runtime_template_iam_policy} Resource.
 func NewGoogleColabRuntimeTemplateIamPolicy(scope constructs.Construct, id *string, config *GoogleColabRuntimeTemplateIamPolicyConfig) GoogleColabRuntimeTemplateIamPolicy {
 	_init_.Initialize()
 
@@ -430,7 +430,7 @@ func NewGoogleColabRuntimeTemplateIamPolicy(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_colab_runtime_template_iam_policy google_colab_runtime_template_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_colab_runtime_template_iam_policy google_colab_runtime_template_iam_policy} Resource.
 func NewGoogleColabRuntimeTemplateIamPolicy_Override(g GoogleColabRuntimeTemplateIamPolicy, scope constructs.Construct, id *string, config *GoogleColabRuntimeTemplateIamPolicyConfig) {
 	_init_.Initialize()
 

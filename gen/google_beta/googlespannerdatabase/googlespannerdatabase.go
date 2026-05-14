@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlespannerdatabase/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_spanner_database google_spanner_database}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_spanner_database google_spanner_database}.
 type GoogleSpannerDatabase interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -30,6 +30,9 @@ type GoogleSpannerDatabase interface {
 	Ddl() *[]*string
 	SetDdl(val *[]*string)
 	DdlInput() *[]*string
+	DefaultTimeZone() *string
+	SetDefaultTimeZone(val *string)
+	DefaultTimeZoneInput() *string
 	DeletionProtection() interface{}
 	SetDeletionProtection(val interface{})
 	DeletionProtectionInput() interface{}
@@ -137,6 +140,7 @@ type GoogleSpannerDatabase interface {
 	PutTimeouts(value *GoogleSpannerDatabaseTimeouts)
 	ResetDatabaseDialect()
 	ResetDdl()
+	ResetDefaultTimeZone()
 	ResetDeletionProtection()
 	ResetEnableDropProtection()
 	ResetEncryptionConfig()
@@ -240,6 +244,26 @@ func (j *jsiiProxy_GoogleSpannerDatabase) DdlInput() *[]*string {
 	_jsii_.Get(
 		j,
 		"ddlInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSpannerDatabase) DefaultTimeZone() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultTimeZone",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSpannerDatabase) DefaultTimeZoneInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultTimeZoneInput",
 		&returns,
 	)
 	return returns
@@ -556,7 +580,7 @@ func (j *jsiiProxy_GoogleSpannerDatabase) VersionRetentionPeriodInput() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_spanner_database google_spanner_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_spanner_database google_spanner_database} Resource.
 func NewGoogleSpannerDatabase(scope constructs.Construct, id *string, config *GoogleSpannerDatabaseConfig) GoogleSpannerDatabase {
 	_init_.Initialize()
 
@@ -574,7 +598,7 @@ func NewGoogleSpannerDatabase(scope constructs.Construct, id *string, config *Go
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_spanner_database google_spanner_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_spanner_database google_spanner_database} Resource.
 func NewGoogleSpannerDatabase_Override(g GoogleSpannerDatabase, scope constructs.Construct, id *string, config *GoogleSpannerDatabaseConfig) {
 	_init_.Initialize()
 
@@ -625,6 +649,17 @@ func (j *jsiiProxy_GoogleSpannerDatabase)SetDdl(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"ddl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleSpannerDatabase)SetDefaultTimeZone(val *string) {
+	if err := j.validateSetDefaultTimeZoneParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultTimeZone",
 		val,
 	)
 }
@@ -1139,6 +1174,14 @@ func (g *jsiiProxy_GoogleSpannerDatabase) ResetDdl() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDdl",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleSpannerDatabase) ResetDefaultTimeZone() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDefaultTimeZone",
 		nil, // no parameters
 	)
 }

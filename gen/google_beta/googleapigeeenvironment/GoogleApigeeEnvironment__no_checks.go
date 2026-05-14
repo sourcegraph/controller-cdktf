@@ -72,6 +72,10 @@ func (g *jsiiProxy_GoogleApigeeEnvironment) validateOverrideLogicalIdParameters(
 	return nil
 }
 
+func (g *jsiiProxy_GoogleApigeeEnvironment) validatePutClientIpResolutionConfigParameters(value *GoogleApigeeEnvironmentClientIpResolutionConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleApigeeEnvironment) validatePutNodeConfigParameters(value *GoogleApigeeEnvironmentNodeConfig) error {
 	return nil
 }

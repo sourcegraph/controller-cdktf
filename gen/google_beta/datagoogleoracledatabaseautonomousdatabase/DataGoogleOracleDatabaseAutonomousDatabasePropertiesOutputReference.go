@@ -31,6 +31,7 @@ type DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference interfa
 	ComputeCount() *float64
 	ConnectionStrings() DataGoogleOracleDatabaseAutonomousDatabasePropertiesConnectionStringsList
 	ConnectionUrls() DataGoogleOracleDatabaseAutonomousDatabasePropertiesConnectionUrlsList
+	CpuCoreCount() *float64
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -78,6 +79,7 @@ type DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference interfa
 	RefreshableState() *string
 	Role() *string
 	ScheduledOperationDetails() DataGoogleOracleDatabaseAutonomousDatabasePropertiesScheduledOperationDetailsList
+	SecretId() *string
 	SqlWebDeveloperUrl() *string
 	State() *string
 	SupportedCloneRegions() *[]*string
@@ -91,6 +93,7 @@ type DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference interfa
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	TotalAutoBackupStorageSizeGbs() *float64
 	UsedDataStorageSizeTbs() *float64
+	VaultId() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -255,6 +258,16 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputRef
 	_jsii_.Get(
 		j,
 		"connectionUrls",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference) CpuCoreCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"cpuCoreCount",
 		&returns,
 	)
 	return returns
@@ -670,6 +683,16 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputRef
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference) SecretId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secretId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference) SqlWebDeveloperUrl() *string {
 	var returns *string
 	_jsii_.Get(
@@ -735,6 +758,16 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputRef
 	_jsii_.Get(
 		j,
 		"usedDataStorageSizeTbs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference) VaultId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"vaultId",
 		&returns,
 	)
 	return returns

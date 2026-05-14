@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleFilestoreInstanceNetworksOutputReference) validateInter
 	return nil
 }
 
+func (g *jsiiProxy_GoogleFilestoreInstanceNetworksOutputReference) validatePutPscConfigParameters(value *GoogleFilestoreInstanceNetworksPscConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFilestoreInstanceNetworksOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

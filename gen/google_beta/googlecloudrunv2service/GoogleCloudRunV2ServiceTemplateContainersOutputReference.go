@@ -54,8 +54,12 @@ type GoogleCloudRunV2ServiceTemplateContainersOutputReference interface {
 	NameInput() *string
 	Ports() GoogleCloudRunV2ServiceTemplateContainersPortsOutputReference
 	PortsInput() *GoogleCloudRunV2ServiceTemplateContainersPorts
+	ReadinessProbe() GoogleCloudRunV2ServiceTemplateContainersReadinessProbeOutputReference
+	ReadinessProbeInput() *GoogleCloudRunV2ServiceTemplateContainersReadinessProbe
 	Resources() GoogleCloudRunV2ServiceTemplateContainersResourcesOutputReference
 	ResourcesInput() *GoogleCloudRunV2ServiceTemplateContainersResources
+	SourceCode() GoogleCloudRunV2ServiceTemplateContainersSourceCodeOutputReference
+	SourceCodeInput() *GoogleCloudRunV2ServiceTemplateContainersSourceCode
 	StartupProbe() GoogleCloudRunV2ServiceTemplateContainersStartupProbeOutputReference
 	StartupProbeInput() *GoogleCloudRunV2ServiceTemplateContainersStartupProbe
 	// Experimental.
@@ -98,7 +102,9 @@ type GoogleCloudRunV2ServiceTemplateContainersOutputReference interface {
 	PutEnv(value interface{})
 	PutLivenessProbe(value *GoogleCloudRunV2ServiceTemplateContainersLivenessProbe)
 	PutPorts(value *GoogleCloudRunV2ServiceTemplateContainersPorts)
+	PutReadinessProbe(value *GoogleCloudRunV2ServiceTemplateContainersReadinessProbe)
 	PutResources(value *GoogleCloudRunV2ServiceTemplateContainersResources)
+	PutSourceCode(value *GoogleCloudRunV2ServiceTemplateContainersSourceCode)
 	PutStartupProbe(value *GoogleCloudRunV2ServiceTemplateContainersStartupProbe)
 	PutVolumeMounts(value interface{})
 	ResetArgs()
@@ -109,7 +115,9 @@ type GoogleCloudRunV2ServiceTemplateContainersOutputReference interface {
 	ResetLivenessProbe()
 	ResetName()
 	ResetPorts()
+	ResetReadinessProbe()
 	ResetResources()
+	ResetSourceCode()
 	ResetStartupProbe()
 	ResetVolumeMounts()
 	ResetWorkingDir()
@@ -368,6 +376,26 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) Por
 	return returns
 }
 
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) ReadinessProbe() GoogleCloudRunV2ServiceTemplateContainersReadinessProbeOutputReference {
+	var returns GoogleCloudRunV2ServiceTemplateContainersReadinessProbeOutputReference
+	_jsii_.Get(
+		j,
+		"readinessProbe",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) ReadinessProbeInput() *GoogleCloudRunV2ServiceTemplateContainersReadinessProbe {
+	var returns *GoogleCloudRunV2ServiceTemplateContainersReadinessProbe
+	_jsii_.Get(
+		j,
+		"readinessProbeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) Resources() GoogleCloudRunV2ServiceTemplateContainersResourcesOutputReference {
 	var returns GoogleCloudRunV2ServiceTemplateContainersResourcesOutputReference
 	_jsii_.Get(
@@ -383,6 +411,26 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) Res
 	_jsii_.Get(
 		j,
 		"resourcesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) SourceCode() GoogleCloudRunV2ServiceTemplateContainersSourceCodeOutputReference {
+	var returns GoogleCloudRunV2ServiceTemplateContainersSourceCodeOutputReference
+	_jsii_.Get(
+		j,
+		"sourceCode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) SourceCodeInput() *GoogleCloudRunV2ServiceTemplateContainersSourceCode {
+	var returns *GoogleCloudRunV2ServiceTemplateContainersSourceCode
+	_jsii_.Get(
+		j,
+		"sourceCodeInput",
 		&returns,
 	)
 	return returns
@@ -847,6 +895,17 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) Put
 	)
 }
 
+func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) PutReadinessProbe(value *GoogleCloudRunV2ServiceTemplateContainersReadinessProbe) {
+	if err := g.validatePutReadinessProbeParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putReadinessProbe",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) PutResources(value *GoogleCloudRunV2ServiceTemplateContainersResources) {
 	if err := g.validatePutResourcesParameters(value); err != nil {
 		panic(err)
@@ -854,6 +913,17 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) Put
 	_jsii_.InvokeVoid(
 		g,
 		"putResources",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) PutSourceCode(value *GoogleCloudRunV2ServiceTemplateContainersSourceCode) {
+	if err := g.validatePutSourceCodeParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSourceCode",
 		[]interface{}{value},
 	)
 }
@@ -944,10 +1014,26 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) Res
 	)
 }
 
+func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) ResetReadinessProbe() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetReadinessProbe",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) ResetResources() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetResources",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) ResetSourceCode() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSourceCode",
 		nil, // no parameters
 	)
 }

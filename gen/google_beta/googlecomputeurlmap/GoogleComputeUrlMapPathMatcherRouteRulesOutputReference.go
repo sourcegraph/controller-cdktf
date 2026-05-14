@@ -31,6 +31,10 @@ type GoogleComputeUrlMapPathMatcherRouteRulesOutputReference interface {
 	Fqn() *string
 	HeaderAction() GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputReference
 	HeaderActionInput() *GoogleComputeUrlMapPathMatcherRouteRulesHeaderAction
+	HttpFilterConfigs() GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterConfigsList
+	HttpFilterConfigsInput() interface{}
+	HttpFilterMetadata() GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterMetadataList
+	HttpFilterMetadataInput() interface{}
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	MatchRules() GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesList
@@ -79,11 +83,15 @@ type GoogleComputeUrlMapPathMatcherRouteRulesOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCustomErrorResponsePolicy(value *GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicy)
 	PutHeaderAction(value *GoogleComputeUrlMapPathMatcherRouteRulesHeaderAction)
+	PutHttpFilterConfigs(value interface{})
+	PutHttpFilterMetadata(value interface{})
 	PutMatchRules(value interface{})
 	PutRouteAction(value *GoogleComputeUrlMapPathMatcherRouteRulesRouteAction)
 	PutUrlRedirect(value *GoogleComputeUrlMapPathMatcherRouteRulesUrlRedirect)
 	ResetCustomErrorResponsePolicy()
 	ResetHeaderAction()
+	ResetHttpFilterConfigs()
+	ResetHttpFilterMetadata()
 	ResetMatchRules()
 	ResetRouteAction()
 	ResetService()
@@ -178,6 +186,46 @@ func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesOutputReference) Head
 	_jsii_.Get(
 		j,
 		"headerActionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesOutputReference) HttpFilterConfigs() GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterConfigsList {
+	var returns GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterConfigsList
+	_jsii_.Get(
+		j,
+		"httpFilterConfigs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesOutputReference) HttpFilterConfigsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"httpFilterConfigsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesOutputReference) HttpFilterMetadata() GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterMetadataList {
+	var returns GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterMetadataList
+	_jsii_.Get(
+		j,
+		"httpFilterMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesOutputReference) HttpFilterMetadataInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"httpFilterMetadataInput",
 		&returns,
 	)
 	return returns
@@ -626,6 +674,28 @@ func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesOutputReference) PutH
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesOutputReference) PutHttpFilterConfigs(value interface{}) {
+	if err := g.validatePutHttpFilterConfigsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putHttpFilterConfigs",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesOutputReference) PutHttpFilterMetadata(value interface{}) {
+	if err := g.validatePutHttpFilterMetadataParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putHttpFilterMetadata",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesOutputReference) PutMatchRules(value interface{}) {
 	if err := g.validatePutMatchRulesParameters(value); err != nil {
 		panic(err)
@@ -671,6 +741,22 @@ func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesOutputReference) Rese
 	_jsii_.InvokeVoid(
 		g,
 		"resetHeaderAction",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesOutputReference) ResetHttpFilterConfigs() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetHttpFilterConfigs",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesOutputReference) ResetHttpFilterMetadata() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetHttpFilterMetadata",
 		nil, // no parameters
 	)
 }

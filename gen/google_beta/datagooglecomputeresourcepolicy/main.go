@@ -877,6 +877,7 @@ func init() {
 		reflect.TypeOf((*DataGoogleComputeResourcePolicyWorkloadPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorTopology", GoGetter: "AcceleratorTopology"},
+			_jsii_.MemberProperty{JsiiProperty: "acceleratorTopologyMode", GoGetter: "AcceleratorTopologyMode"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},

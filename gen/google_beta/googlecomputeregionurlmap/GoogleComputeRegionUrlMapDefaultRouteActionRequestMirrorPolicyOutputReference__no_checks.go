@@ -64,6 +64,10 @@ func (j *jsiiProxy_GoogleComputeRegionUrlMapDefaultRouteActionRequestMirrorPolic
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicyOutputReference) validateSetMirrorPercentParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicyOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

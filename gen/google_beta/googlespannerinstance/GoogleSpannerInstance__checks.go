@@ -416,6 +416,14 @@ func (j *jsiiProxy_GoogleSpannerInstance) validateSetIdParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_GoogleSpannerInstance) validateSetInstanceTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSpannerInstance) validateSetLabelsParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

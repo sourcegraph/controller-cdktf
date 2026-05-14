@@ -48,7 +48,15 @@ func (g *jsiiProxy_GoogleGkeonpremBareMetalAdminClusterNetworkConfigOutputRefere
 	return nil
 }
 
+func (g *jsiiProxy_GoogleGkeonpremBareMetalAdminClusterNetworkConfigOutputReference) validatePutMultipleNetworkInterfacesConfigParameters(value *GoogleGkeonpremBareMetalAdminClusterNetworkConfigMultipleNetworkInterfacesConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleGkeonpremBareMetalAdminClusterNetworkConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleGkeonpremBareMetalAdminClusterNetworkConfigOutputReference) validateSetAdvancedNetworkingParameters(val interface{}) error {
 	return nil
 }
 

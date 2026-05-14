@@ -68,6 +68,10 @@ func (j *jsiiProxy_GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentOutputRe
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentOutputReference) validateSetEnableGenerativeFallbackParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentOutputReference) validateSetInternalValueParameters(val *GoogleDialogflowCxFlowEventHandlersTriggerFulfillment) error {
 	return nil
 }

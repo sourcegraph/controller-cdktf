@@ -10,6 +10,7 @@ import (
 
 type DataGoogleTagsTagKeysKeysOutputReference interface {
 	cdktf.ComplexObject
+	AllowedValuesRegex() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -83,6 +84,16 @@ type DataGoogleTagsTagKeysKeysOutputReference interface {
 // The jsii proxy struct for DataGoogleTagsTagKeysKeysOutputReference
 type jsiiProxy_DataGoogleTagsTagKeysKeysOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataGoogleTagsTagKeysKeysOutputReference) AllowedValuesRegex() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"allowedValuesRegex",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataGoogleTagsTagKeysKeysOutputReference) ComplexObjectIndex() interface{} {

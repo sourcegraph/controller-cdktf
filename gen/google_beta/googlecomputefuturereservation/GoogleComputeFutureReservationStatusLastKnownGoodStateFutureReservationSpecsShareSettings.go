@@ -1,0 +1,6 @@
+package googlecomputefuturereservation
+
+
+type GoogleComputeFutureReservationStatusLastKnownGoodStateFutureReservationSpecsShareSettings struct {
+}
+

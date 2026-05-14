@@ -84,6 +84,10 @@ func (g *jsiiProxy_GoogleDatastreamConnectionProfile) validatePutGcsProfileParam
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDatastreamConnectionProfile) validatePutMongodbProfileParameters(value *GoogleDatastreamConnectionProfileMongodbProfile) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDatastreamConnectionProfile) validatePutMysqlProfileParameters(value *GoogleDatastreamConnectionProfileMysqlProfile) error {
 	return nil
 }
@@ -101,6 +105,10 @@ func (g *jsiiProxy_GoogleDatastreamConnectionProfile) validatePutPrivateConnecti
 }
 
 func (g *jsiiProxy_GoogleDatastreamConnectionProfile) validatePutSalesforceProfileParameters(value *GoogleDatastreamConnectionProfileSalesforceProfile) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDatastreamConnectionProfile) validatePutSpannerProfileParameters(value *GoogleDatastreamConnectionProfileSpannerProfile) error {
 	return nil
 }
 

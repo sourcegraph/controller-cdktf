@@ -38,6 +38,7 @@ type DataGoogleOracleDatabaseCloudVmClusterPropertiesTimeZoneOutputReference int
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Version() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -152,6 +153,16 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseCloudVmClusterPropertiesTimeZoneOutpu
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleOracleDatabaseCloudVmClusterPropertiesTimeZoneOutputReference) Version() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"version",
 		&returns,
 	)
 	return returns

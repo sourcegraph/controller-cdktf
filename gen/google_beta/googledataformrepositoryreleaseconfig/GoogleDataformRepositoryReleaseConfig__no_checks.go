@@ -108,6 +108,10 @@ func (j *jsiiProxy_GoogleDataformRepositoryReleaseConfig) validateSetCronSchedul
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataformRepositoryReleaseConfig) validateSetDisabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataformRepositoryReleaseConfig) validateSetGitCommitishParameters(val *string) error {
 	return nil
 }

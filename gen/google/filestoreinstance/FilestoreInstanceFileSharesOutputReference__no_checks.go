@@ -76,6 +76,10 @@ func (j *jsiiProxy_FilestoreInstanceFileSharesOutputReference) validateSetSource
 	return nil
 }
 
+func (j *jsiiProxy_FilestoreInstanceFileSharesOutputReference) validateSetSourceBackupdrBackupParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FilestoreInstanceFileSharesOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

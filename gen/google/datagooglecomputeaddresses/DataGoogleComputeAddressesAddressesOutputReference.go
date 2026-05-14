@@ -33,6 +33,7 @@ type DataGoogleComputeAddressesAddressesOutputReference interface {
 	InternalValue() *DataGoogleComputeAddressesAddresses
 	SetInternalValue(val *DataGoogleComputeAddressesAddresses)
 	Name() *string
+	PrefixLength() *float64
 	Region() *string
 	SelfLink() *string
 	Status() *string
@@ -168,6 +169,16 @@ func (j *jsiiProxy_DataGoogleComputeAddressesAddressesOutputReference) Name() *s
 	_jsii_.Get(
 		j,
 		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeAddressesAddressesOutputReference) PrefixLength() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"prefixLength",
 		&returns,
 	)
 	return returns

@@ -30,6 +30,7 @@ type FilestoreInstanceEffectiveReplicationReplicasOutputReference interface {
 	InternalValue() *FilestoreInstanceEffectiveReplicationReplicas
 	SetInternalValue(val *FilestoreInstanceEffectiveReplicationReplicas)
 	LastActiveSyncTime() *string
+	PeerInstance() *string
 	State() *string
 	StateReasons() *[]*string
 	// Experimental.
@@ -134,6 +135,16 @@ func (j *jsiiProxy_FilestoreInstanceEffectiveReplicationReplicasOutputReference)
 	_jsii_.Get(
 		j,
 		"lastActiveSyncTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FilestoreInstanceEffectiveReplicationReplicasOutputReference) PeerInstance() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"peerInstance",
 		&returns,
 	)
 	return returns

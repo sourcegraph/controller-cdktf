@@ -76,6 +76,10 @@ func (v *jsiiProxy_VmwareengineCluster) validatePutAutoscalingSettingsParameters
 	return nil
 }
 
+func (v *jsiiProxy_VmwareengineCluster) validatePutDatastoreMountConfigParameters(value interface{}) error {
+	return nil
+}
+
 func (v *jsiiProxy_VmwareengineCluster) validatePutNodeTypeConfigsParameters(value interface{}) error {
 	return nil
 }

@@ -25,6 +25,9 @@ type ContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference in
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DataCacheCount() *float64
+	SetDataCacheCount(val *float64)
+	DataCacheCountInput() *float64
 	// Experimental.
 	Fqn() *string
 	InternalValue() *ContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfig
@@ -64,6 +67,7 @@ type ContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference in
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetDataCacheCount()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -104,6 +108,26 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutp
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference) DataCacheCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"dataCacheCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference) DataCacheCountInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"dataCacheCountInput",
 		&returns,
 	)
 	return returns
@@ -215,6 +239,17 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutp
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference)SetDataCacheCount(val *float64) {
+	if err := j.validateSetDataCacheCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dataCacheCount",
 		val,
 	)
 }
@@ -447,6 +482,14 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutp
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_ContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference) ResetDataCacheCount() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDataCacheCount",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_ContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

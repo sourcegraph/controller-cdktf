@@ -25,6 +25,9 @@ type DnsManagedZoneForwardingConfigTargetNameServersOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DomainName() *string
+	SetDomainName(val *string)
+	DomainNameInput() *string
 	ForwardingPath() *string
 	SetForwardingPath(val *string)
 	ForwardingPathInput() *string
@@ -35,6 +38,9 @@ type DnsManagedZoneForwardingConfigTargetNameServersOutputReference interface {
 	Ipv4Address() *string
 	SetIpv4Address(val *string)
 	Ipv4AddressInput() *string
+	Ipv6Address() *string
+	SetIpv6Address(val *string)
+	Ipv6AddressInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,7 +73,10 @@ type DnsManagedZoneForwardingConfigTargetNameServersOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetDomainName()
 	ResetForwardingPath()
+	ResetIpv4Address()
+	ResetIpv6Address()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -108,6 +117,26 @@ func (j *jsiiProxy_DnsManagedZoneForwardingConfigTargetNameServersOutputReferenc
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DnsManagedZoneForwardingConfigTargetNameServersOutputReference) DomainName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"domainName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DnsManagedZoneForwardingConfigTargetNameServersOutputReference) DomainNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"domainNameInput",
 		&returns,
 	)
 	return returns
@@ -168,6 +197,26 @@ func (j *jsiiProxy_DnsManagedZoneForwardingConfigTargetNameServersOutputReferenc
 	_jsii_.Get(
 		j,
 		"ipv4AddressInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DnsManagedZoneForwardingConfigTargetNameServersOutputReference) Ipv6Address() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6Address",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DnsManagedZoneForwardingConfigTargetNameServersOutputReference) Ipv6AddressInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6AddressInput",
 		&returns,
 	)
 	return returns
@@ -243,6 +292,17 @@ func (j *jsiiProxy_DnsManagedZoneForwardingConfigTargetNameServersOutputReferenc
 	)
 }
 
+func (j *jsiiProxy_DnsManagedZoneForwardingConfigTargetNameServersOutputReference)SetDomainName(val *string) {
+	if err := j.validateSetDomainNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"domainName",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DnsManagedZoneForwardingConfigTargetNameServersOutputReference)SetForwardingPath(val *string) {
 	if err := j.validateSetForwardingPathParameters(val); err != nil {
 		panic(err)
@@ -272,6 +332,17 @@ func (j *jsiiProxy_DnsManagedZoneForwardingConfigTargetNameServersOutputReferenc
 	_jsii_.Set(
 		j,
 		"ipv4Address",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DnsManagedZoneForwardingConfigTargetNameServersOutputReference)SetIpv6Address(val *string) {
+	if err := j.validateSetIpv6AddressParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipv6Address",
 		val,
 	)
 }
@@ -484,10 +555,34 @@ func (d *jsiiProxy_DnsManagedZoneForwardingConfigTargetNameServersOutputReferenc
 	return returns
 }
 
+func (d *jsiiProxy_DnsManagedZoneForwardingConfigTargetNameServersOutputReference) ResetDomainName() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDomainName",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DnsManagedZoneForwardingConfigTargetNameServersOutputReference) ResetForwardingPath() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetForwardingPath",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DnsManagedZoneForwardingConfigTargetNameServersOutputReference) ResetIpv4Address() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIpv4Address",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DnsManagedZoneForwardingConfigTargetNameServersOutputReference) ResetIpv6Address() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIpv6Address",
 		nil, // no parameters
 	)
 }

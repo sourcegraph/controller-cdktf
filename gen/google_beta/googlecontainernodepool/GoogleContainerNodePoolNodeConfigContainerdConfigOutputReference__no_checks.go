@@ -48,6 +48,14 @@ func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigContainerdConfigOutputRefere
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigContainerdConfigOutputReference) validatePutRegistryHostsParameters(value interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigContainerdConfigOutputReference) validatePutWritableCgroupsParameters(value *GoogleContainerNodePoolNodeConfigContainerdConfigWritableCgroups) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigContainerdConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

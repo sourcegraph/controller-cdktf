@@ -52,6 +52,10 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigMasterConfigOutputReference
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataprocClusterClusterConfigMasterConfigOutputReference) validatePutInstanceFlexibilityPolicyParameters(value *GoogleDataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicy) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataprocClusterClusterConfigMasterConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

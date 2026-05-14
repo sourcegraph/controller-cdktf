@@ -30,6 +30,7 @@ type GoogleFilestoreInstanceEffectiveReplicationOutputReference interface {
 	InternalValue() *GoogleFilestoreInstanceEffectiveReplication
 	SetInternalValue(val *GoogleFilestoreInstanceEffectiveReplication)
 	Replicas() GoogleFilestoreInstanceEffectiveReplicationReplicasList
+	Role() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -132,6 +133,16 @@ func (j *jsiiProxy_GoogleFilestoreInstanceEffectiveReplicationOutputReference) R
 	_jsii_.Get(
 		j,
 		"replicas",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleFilestoreInstanceEffectiveReplicationOutputReference) Role() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"role",
 		&returns,
 	)
 	return returns

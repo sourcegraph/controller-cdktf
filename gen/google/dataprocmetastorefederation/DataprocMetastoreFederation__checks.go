@@ -490,6 +490,14 @@ func (j *jsiiProxy_DataprocMetastoreFederation) validateSetProvisionersParameter
 	return nil
 }
 
+func (j *jsiiProxy_DataprocMetastoreFederation) validateSetTagsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataprocMetastoreFederation) validateSetVersionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

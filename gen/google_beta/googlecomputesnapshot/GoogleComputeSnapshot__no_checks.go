@@ -116,6 +116,10 @@ func (j *jsiiProxy_GoogleComputeSnapshot) validateSetDescriptionParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeSnapshot) validateSetGuestFlushParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeSnapshot) validateSetIdParameters(val *string) error {
 	return nil
 }
@@ -140,7 +144,15 @@ func (j *jsiiProxy_GoogleComputeSnapshot) validateSetProvisionersParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeSnapshot) validateSetSnapshotTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeSnapshot) validateSetSourceDiskParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeSnapshot) validateSetSourceInstantSnapshotParameters(val *string) error {
 	return nil
 }
 

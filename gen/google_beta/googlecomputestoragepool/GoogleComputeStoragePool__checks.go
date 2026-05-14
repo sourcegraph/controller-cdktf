@@ -204,6 +204,17 @@ func (g *jsiiProxy_GoogleComputeStoragePool) validateOverrideLogicalIdParameters
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeStoragePool) validatePutParamsParameters(value *GoogleComputeStoragePoolParams) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeStoragePool) validatePutTimeoutsParameters(value *GoogleComputeStoragePoolTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -374,6 +385,14 @@ func (j *jsiiProxy_GoogleComputeStoragePool) validateSetDeletionProtectionParame
 }
 
 func (j *jsiiProxy_GoogleComputeStoragePool) validateSetDescriptionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeStoragePool) validateSetLabelsParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

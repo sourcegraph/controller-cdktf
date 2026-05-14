@@ -116,6 +116,10 @@ func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicy) validateSetNamePara
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicy) validateSetPolicyTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicy) validateSetProjectParameters(val *string) error {
 	return nil
 }

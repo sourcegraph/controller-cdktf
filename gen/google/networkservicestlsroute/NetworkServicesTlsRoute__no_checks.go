@@ -120,6 +120,10 @@ func (j *jsiiProxy_NetworkServicesTlsRoute) validateSetLifecycleParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_NetworkServicesTlsRoute) validateSetLocationParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkServicesTlsRoute) validateSetMeshesParameters(val *[]*string) error {
 	return nil
 }
@@ -133,6 +137,10 @@ func (j *jsiiProxy_NetworkServicesTlsRoute) validateSetProjectParameters(val *st
 }
 
 func (j *jsiiProxy_NetworkServicesTlsRoute) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_NetworkServicesTlsRoute) validateSetTargetProxiesParameters(val *[]*string) error {
 	return nil
 }
 

@@ -38,9 +38,11 @@ type DataGoogleContainerClusterAddonsConfigOutputReference interface {
 	HttpLoadBalancing() DataGoogleContainerClusterAddonsConfigHttpLoadBalancingList
 	InternalValue() *DataGoogleContainerClusterAddonsConfig
 	SetInternalValue(val *DataGoogleContainerClusterAddonsConfig)
+	LustreCsiDriverConfig() DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigList
 	NetworkPolicyConfig() DataGoogleContainerClusterAddonsConfigNetworkPolicyConfigList
 	ParallelstoreCsiDriverConfig() DataGoogleContainerClusterAddonsConfigParallelstoreCsiDriverConfigList
 	RayOperatorConfig() DataGoogleContainerClusterAddonsConfigRayOperatorConfigList
+	SliceControllerConfig() DataGoogleContainerClusterAddonsConfigSliceControllerConfigList
 	StatefulHaConfig() DataGoogleContainerClusterAddonsConfigStatefulHaConfigList
 	// Experimental.
 	TerraformAttribute() *string
@@ -229,6 +231,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterAddonsConfigOutputReference) Intern
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleContainerClusterAddonsConfigOutputReference) LustreCsiDriverConfig() DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigList {
+	var returns DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigList
+	_jsii_.Get(
+		j,
+		"lustreCsiDriverConfig",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleContainerClusterAddonsConfigOutputReference) NetworkPolicyConfig() DataGoogleContainerClusterAddonsConfigNetworkPolicyConfigList {
 	var returns DataGoogleContainerClusterAddonsConfigNetworkPolicyConfigList
 	_jsii_.Get(
@@ -254,6 +266,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterAddonsConfigOutputReference) RayOpe
 	_jsii_.Get(
 		j,
 		"rayOperatorConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterAddonsConfigOutputReference) SliceControllerConfig() DataGoogleContainerClusterAddonsConfigSliceControllerConfigList {
+	var returns DataGoogleContainerClusterAddonsConfigSliceControllerConfigList
+	_jsii_.Get(
+		j,
+		"sliceControllerConfig",
 		&returns,
 	)
 	return returns

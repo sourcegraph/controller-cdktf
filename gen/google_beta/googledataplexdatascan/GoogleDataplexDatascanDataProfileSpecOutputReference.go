@@ -10,6 +10,9 @@ import (
 
 type GoogleDataplexDatascanDataProfileSpecOutputReference interface {
 	cdktf.ComplexObject
+	CatalogPublishingEnabled() interface{}
+	SetCatalogPublishingEnabled(val interface{})
+	CatalogPublishingEnabledInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -76,6 +79,7 @@ type GoogleDataplexDatascanDataProfileSpecOutputReference interface {
 	PutExcludeFields(value *GoogleDataplexDatascanDataProfileSpecExcludeFields)
 	PutIncludeFields(value *GoogleDataplexDatascanDataProfileSpecIncludeFields)
 	PutPostScanActions(value *GoogleDataplexDatascanDataProfileSpecPostScanActions)
+	ResetCatalogPublishingEnabled()
 	ResetExcludeFields()
 	ResetIncludeFields()
 	ResetPostScanActions()
@@ -94,6 +98,26 @@ type GoogleDataplexDatascanDataProfileSpecOutputReference interface {
 // The jsii proxy struct for GoogleDataplexDatascanDataProfileSpecOutputReference
 type jsiiProxy_GoogleDataplexDatascanDataProfileSpecOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GoogleDataplexDatascanDataProfileSpecOutputReference) CatalogPublishingEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"catalogPublishingEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataplexDatascanDataProfileSpecOutputReference) CatalogPublishingEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"catalogPublishingEnabledInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleDataplexDatascanDataProfileSpecOutputReference) ComplexObjectIndex() interface{} {
@@ -291,6 +315,17 @@ func NewGoogleDataplexDatascanDataProfileSpecOutputReference_Override(g GoogleDa
 		"@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataProfileSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataplexDatascanDataProfileSpecOutputReference)SetCatalogPublishingEnabled(val interface{}) {
+	if err := j.validateSetCatalogPublishingEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"catalogPublishingEnabled",
+		val,
 	)
 }
 
@@ -587,6 +622,14 @@ func (g *jsiiProxy_GoogleDataplexDatascanDataProfileSpecOutputReference) PutPost
 		g,
 		"putPostScanActions",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDataplexDatascanDataProfileSpecOutputReference) ResetCatalogPublishingEnabled() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCatalogPublishingEnabled",
+		nil, // no parameters
 	)
 }
 

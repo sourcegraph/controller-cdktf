@@ -1,0 +1,6 @@
+package googlecomputefuturereservation
+
+
+type GoogleComputeFutureReservationStatusLastKnownGoodStateFutureReservationSpecsSpecificSkuProperties struct {
+}
+

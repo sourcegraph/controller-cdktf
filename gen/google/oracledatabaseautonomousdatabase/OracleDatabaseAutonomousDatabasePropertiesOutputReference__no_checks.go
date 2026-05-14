@@ -72,6 +72,10 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) validateSetCpuCoreCountParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) validateSetDataStorageSizeGbParameters(val *float64) error {
 	return nil
 }
@@ -132,11 +136,19 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) validateSetSecretIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) validateSetVaultIdParameters(val *string) error {
 	return nil
 }
 

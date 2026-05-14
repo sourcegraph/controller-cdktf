@@ -25,6 +25,9 @@ type SqlDatabaseInstanceSettingsInsightsConfigOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EnhancedQueryInsightsEnabled() interface{}
+	SetEnhancedQueryInsightsEnabled(val interface{})
+	EnhancedQueryInsightsEnabledInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() *SqlDatabaseInstanceSettingsInsightsConfig
@@ -76,6 +79,7 @@ type SqlDatabaseInstanceSettingsInsightsConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetEnhancedQueryInsightsEnabled()
 	ResetQueryInsightsEnabled()
 	ResetQueryPlansPerMinute()
 	ResetQueryStringLength()
@@ -121,6 +125,26 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) Cre
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) EnhancedQueryInsightsEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enhancedQueryInsightsEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) EnhancedQueryInsightsEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enhancedQueryInsightsEnabledInput",
 		&returns,
 	)
 	return returns
@@ -312,6 +336,17 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference)SetC
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference)SetEnhancedQueryInsightsEnabled(val interface{}) {
+	if err := j.validateSetEnhancedQueryInsightsEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enhancedQueryInsightsEnabled",
 		val,
 	)
 }
@@ -588,6 +623,14 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) Int
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) ResetEnhancedQueryInsightsEnabled() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetEnhancedQueryInsightsEnabled",
+		nil, // no parameters
+	)
 }
 
 func (s *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) ResetQueryInsightsEnabled() {

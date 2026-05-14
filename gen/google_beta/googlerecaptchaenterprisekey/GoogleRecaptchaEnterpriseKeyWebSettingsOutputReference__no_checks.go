@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference) valid
 	return nil
 }
 
+func (g *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference) validatePutChallengeSettingsParameters(value *GoogleRecaptchaEnterpriseKeyWebSettingsChallengeSettings) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

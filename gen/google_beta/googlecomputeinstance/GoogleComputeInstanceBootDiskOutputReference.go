@@ -41,6 +41,9 @@ type GoogleComputeInstanceBootDiskOutputReference interface {
 	DiskEncryptionServiceAccount() *string
 	SetDiskEncryptionServiceAccount(val *string)
 	DiskEncryptionServiceAccountInput() *string
+	ForceAttach() interface{}
+	SetForceAttach(val interface{})
+	ForceAttachInput() interface{}
 	// Experimental.
 	Fqn() *string
 	GuestOsFeatures() *[]*string
@@ -100,6 +103,7 @@ type GoogleComputeInstanceBootDiskOutputReference interface {
 	ResetDiskEncryptionKeyRaw()
 	ResetDiskEncryptionKeyRsa()
 	ResetDiskEncryptionServiceAccount()
+	ResetForceAttach()
 	ResetGuestOsFeatures()
 	ResetInitializeParams()
 	ResetInterface()
@@ -256,6 +260,26 @@ func (j *jsiiProxy_GoogleComputeInstanceBootDiskOutputReference) DiskEncryptionS
 	_jsii_.Get(
 		j,
 		"diskEncryptionServiceAccountInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceBootDiskOutputReference) ForceAttach() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceAttach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceBootDiskOutputReference) ForceAttachInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceAttachInput",
 		&returns,
 	)
 	return returns
@@ -522,6 +546,17 @@ func (j *jsiiProxy_GoogleComputeInstanceBootDiskOutputReference)SetDiskEncryptio
 	_jsii_.Set(
 		j,
 		"diskEncryptionServiceAccount",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceBootDiskOutputReference)SetForceAttach(val interface{}) {
+	if err := j.validateSetForceAttachParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"forceAttach",
 		val,
 	)
 }
@@ -847,6 +882,14 @@ func (g *jsiiProxy_GoogleComputeInstanceBootDiskOutputReference) ResetDiskEncryp
 	_jsii_.InvokeVoid(
 		g,
 		"resetDiskEncryptionServiceAccount",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceBootDiskOutputReference) ResetForceAttach() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetForceAttach",
 		nil, // no parameters
 	)
 }

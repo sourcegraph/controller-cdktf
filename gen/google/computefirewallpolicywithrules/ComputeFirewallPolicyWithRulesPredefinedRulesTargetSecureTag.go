@@ -1,0 +1,6 @@
+package computefirewallpolicywithrules
+
+
+type ComputeFirewallPolicyWithRulesPredefinedRulesTargetSecureTag struct {
+}
+

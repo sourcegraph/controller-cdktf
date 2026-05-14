@@ -30,6 +30,7 @@ type DataGoogleComputeRegionInstanceTemplateDiskDiskEncryptionKeyOutputReference
 	InternalValue() *DataGoogleComputeRegionInstanceTemplateDiskDiskEncryptionKey
 	SetInternalValue(val *DataGoogleComputeRegionInstanceTemplateDiskDiskEncryptionKey)
 	KmsKeySelfLink() *string
+	KmsKeyServiceAccount() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -132,6 +133,16 @@ func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplateDiskDiskEncryptionKeyO
 	_jsii_.Get(
 		j,
 		"kmsKeySelfLink",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplateDiskDiskEncryptionKeyOutputReference) KmsKeyServiceAccount() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKeyServiceAccount",
 		&returns,
 	)
 	return returns

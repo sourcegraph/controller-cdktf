@@ -31,6 +31,8 @@ type GoogleDataplexDatascanDataQualitySpecPostScanActionsOutputReference interfa
 	Fqn() *string
 	InternalValue() *GoogleDataplexDatascanDataQualitySpecPostScanActions
 	SetInternalValue(val *GoogleDataplexDatascanDataQualitySpecPostScanActions)
+	NotificationReport() GoogleDataplexDatascanDataQualitySpecPostScanActionsNotificationReportOutputReference
+	NotificationReportInput() *GoogleDataplexDatascanDataQualitySpecPostScanActionsNotificationReport
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -64,7 +66,9 @@ type GoogleDataplexDatascanDataQualitySpecPostScanActionsOutputReference interfa
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutBigqueryExport(value *GoogleDataplexDatascanDataQualitySpecPostScanActionsBigqueryExport)
+	PutNotificationReport(value *GoogleDataplexDatascanDataQualitySpecPostScanActionsNotificationReport)
 	ResetBigqueryExport()
+	ResetNotificationReport()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -145,6 +149,26 @@ func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecPostScanActionsOutputRef
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecPostScanActionsOutputReference) NotificationReport() GoogleDataplexDatascanDataQualitySpecPostScanActionsNotificationReportOutputReference {
+	var returns GoogleDataplexDatascanDataQualitySpecPostScanActionsNotificationReportOutputReference
+	_jsii_.Get(
+		j,
+		"notificationReport",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecPostScanActionsOutputReference) NotificationReportInput() *GoogleDataplexDatascanDataQualitySpecPostScanActionsNotificationReport {
+	var returns *GoogleDataplexDatascanDataQualitySpecPostScanActionsNotificationReport
+	_jsii_.Get(
+		j,
+		"notificationReportInput",
 		&returns,
 	)
 	return returns
@@ -450,10 +474,29 @@ func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecPostScanActionsOutputRef
 	)
 }
 
+func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecPostScanActionsOutputReference) PutNotificationReport(value *GoogleDataplexDatascanDataQualitySpecPostScanActionsNotificationReport) {
+	if err := g.validatePutNotificationReportParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putNotificationReport",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecPostScanActionsOutputReference) ResetBigqueryExport() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetBigqueryExport",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecPostScanActionsOutputReference) ResetNotificationReport() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNotificationReport",
 		nil, // no parameters
 	)
 }

@@ -72,6 +72,18 @@ func (g *jsiiProxy_GoogleLustreInstance) validateOverrideLogicalIdParameters(new
 	return nil
 }
 
+func (g *jsiiProxy_GoogleLustreInstance) validatePutAccessRulesOptionsParameters(value *GoogleLustreInstanceAccessRulesOptions) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleLustreInstance) validatePutDynamicTierOptionsParameters(value *GoogleLustreInstanceDynamicTierOptions) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleLustreInstance) validatePutMaintenancePolicyParameters(value *GoogleLustreInstanceMaintenancePolicy) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleLustreInstance) validatePutTimeoutsParameters(value *GoogleLustreInstanceTimeouts) error {
 	return nil
 }
@@ -124,6 +136,10 @@ func (j *jsiiProxy_GoogleLustreInstance) validateSetInstanceIdParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_GoogleLustreInstance) validateSetKmsKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleLustreInstance) validateSetLabelsParameters(val *map[string]*string) error {
 	return nil
 }
@@ -137,6 +153,14 @@ func (j *jsiiProxy_GoogleLustreInstance) validateSetLocationParameters(val *stri
 }
 
 func (j *jsiiProxy_GoogleLustreInstance) validateSetNetworkParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleLustreInstance) validateSetPerUnitStorageThroughputParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleLustreInstance) validateSetPlacementPolicyParameters(val *string) error {
 	return nil
 }
 

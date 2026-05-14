@@ -10,7 +10,9 @@ import (
 
 type DataGoogleContainerClusterIpAllocationPolicyOutputReference interface {
 	cdktf.ComplexObject
+	AdditionalIpRangesConfig() DataGoogleContainerClusterIpAllocationPolicyAdditionalIpRangesConfigList
 	AdditionalPodRangesConfig() DataGoogleContainerClusterIpAllocationPolicyAdditionalPodRangesConfigList
+	AutoIpamConfig() DataGoogleContainerClusterIpAllocationPolicyAutoIpamConfigList
 	ClusterIpv4CidrBlock() *string
 	ClusterSecondaryRangeName() *string
 	// the index of the complex object in a list.
@@ -32,6 +34,7 @@ type DataGoogleContainerClusterIpAllocationPolicyOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataGoogleContainerClusterIpAllocationPolicy
 	SetInternalValue(val *DataGoogleContainerClusterIpAllocationPolicy)
+	NetworkTierConfig() DataGoogleContainerClusterIpAllocationPolicyNetworkTierConfigList
 	PodCidrOverprovisionConfig() DataGoogleContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigList
 	ServicesIpv4CidrBlock() *string
 	ServicesSecondaryRangeName() *string
@@ -83,11 +86,31 @@ type jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyOutputReference struc
 	internal.Type__cdktfComplexObject
 }
 
+func (j *jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyOutputReference) AdditionalIpRangesConfig() DataGoogleContainerClusterIpAllocationPolicyAdditionalIpRangesConfigList {
+	var returns DataGoogleContainerClusterIpAllocationPolicyAdditionalIpRangesConfigList
+	_jsii_.Get(
+		j,
+		"additionalIpRangesConfig",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyOutputReference) AdditionalPodRangesConfig() DataGoogleContainerClusterIpAllocationPolicyAdditionalPodRangesConfigList {
 	var returns DataGoogleContainerClusterIpAllocationPolicyAdditionalPodRangesConfigList
 	_jsii_.Get(
 		j,
 		"additionalPodRangesConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyOutputReference) AutoIpamConfig() DataGoogleContainerClusterIpAllocationPolicyAutoIpamConfigList {
+	var returns DataGoogleContainerClusterIpAllocationPolicyAutoIpamConfigList
+	_jsii_.Get(
+		j,
+		"autoIpamConfig",
 		&returns,
 	)
 	return returns
@@ -158,6 +181,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyOutputReference) 
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyOutputReference) NetworkTierConfig() DataGoogleContainerClusterIpAllocationPolicyNetworkTierConfigList {
+	var returns DataGoogleContainerClusterIpAllocationPolicyNetworkTierConfigList
+	_jsii_.Get(
+		j,
+		"networkTierConfig",
 		&returns,
 	)
 	return returns

@@ -29,6 +29,7 @@ type DataGoogleComputeResourcePolicyGroupPlacementPolicyOutputReference interfac
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	GpuTopology() *string
 	InternalValue() *DataGoogleComputeResourcePolicyGroupPlacementPolicy
 	SetInternalValue(val *DataGoogleComputeResourcePolicyGroupPlacementPolicy)
 	// Experimental.
@@ -134,6 +135,16 @@ func (j *jsiiProxy_DataGoogleComputeResourcePolicyGroupPlacementPolicyOutputRefe
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeResourcePolicyGroupPlacementPolicyOutputReference) GpuTopology() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gpuTopology",
 		&returns,
 	)
 	return returns

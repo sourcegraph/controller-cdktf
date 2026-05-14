@@ -32,9 +32,9 @@ type StorageBucketRetentionPolicyOutputReference interface {
 	IsLocked() interface{}
 	SetIsLocked(val interface{})
 	IsLockedInput() interface{}
-	RetentionPeriod() *float64
-	SetRetentionPeriod(val *float64)
-	RetentionPeriodInput() *float64
+	RetentionPeriod() *string
+	SetRetentionPeriod(val *string)
+	RetentionPeriodInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -153,8 +153,8 @@ func (j *jsiiProxy_StorageBucketRetentionPolicyOutputReference) IsLockedInput() 
 	return returns
 }
 
-func (j *jsiiProxy_StorageBucketRetentionPolicyOutputReference) RetentionPeriod() *float64 {
-	var returns *float64
+func (j *jsiiProxy_StorageBucketRetentionPolicyOutputReference) RetentionPeriod() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"retentionPeriod",
@@ -163,8 +163,8 @@ func (j *jsiiProxy_StorageBucketRetentionPolicyOutputReference) RetentionPeriod(
 	return returns
 }
 
-func (j *jsiiProxy_StorageBucketRetentionPolicyOutputReference) RetentionPeriodInput() *float64 {
-	var returns *float64
+func (j *jsiiProxy_StorageBucketRetentionPolicyOutputReference) RetentionPeriodInput() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"retentionPeriodInput",
@@ -265,7 +265,7 @@ func (j *jsiiProxy_StorageBucketRetentionPolicyOutputReference)SetIsLocked(val i
 	)
 }
 
-func (j *jsiiProxy_StorageBucketRetentionPolicyOutputReference)SetRetentionPeriod(val *float64) {
+func (j *jsiiProxy_StorageBucketRetentionPolicyOutputReference)SetRetentionPeriod(val *string) {
 	if err := j.validateSetRetentionPeriodParameters(val); err != nil {
 		panic(err)
 	}

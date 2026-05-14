@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputebackendservice/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_backend_service google_compute_backend_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_compute_backend_service google_compute_backend_service}.
 type GoogleComputeBackendService interface {
 	cdktf.TerraformResource
 	AffinityCookieTtlSec() *float64
@@ -57,12 +57,20 @@ type GoogleComputeBackendService interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	DynamicForwarding() GoogleComputeBackendServiceDynamicForwardingOutputReference
+	DynamicForwardingInput() *GoogleComputeBackendServiceDynamicForwarding
 	EdgeSecurityPolicy() *string
 	SetEdgeSecurityPolicy(val *string)
 	EdgeSecurityPolicyInput() *string
 	EnableCdn() interface{}
 	SetEnableCdn(val interface{})
 	EnableCdnInput() interface{}
+	ExternalManagedMigrationState() *string
+	SetExternalManagedMigrationState(val *string)
+	ExternalManagedMigrationStateInput() *string
+	ExternalManagedMigrationTestingPercentage() *float64
+	SetExternalManagedMigrationTestingPercentage(val *float64)
+	ExternalManagedMigrationTestingPercentageInput() *float64
 	Fingerprint() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -103,10 +111,14 @@ type GoogleComputeBackendService interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	NetworkPassThroughLbTrafficPolicy() GoogleComputeBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference
+	NetworkPassThroughLbTrafficPolicyInput() *GoogleComputeBackendServiceNetworkPassThroughLbTrafficPolicy
 	// The tree node.
 	Node() constructs.Node
 	OutlierDetection() GoogleComputeBackendServiceOutlierDetectionOutputReference
 	OutlierDetectionInput() *GoogleComputeBackendServiceOutlierDetection
+	Params() GoogleComputeBackendServiceParamsOutputReference
+	ParamsInput() *GoogleComputeBackendServiceParams
 	PortName() *string
 	SetPortName(val *string)
 	PortNameInput() *string
@@ -201,11 +213,14 @@ type GoogleComputeBackendService interface {
 	PutCircuitBreakers(value *GoogleComputeBackendServiceCircuitBreakers)
 	PutConsistentHash(value *GoogleComputeBackendServiceConsistentHash)
 	PutCustomMetrics(value interface{})
+	PutDynamicForwarding(value *GoogleComputeBackendServiceDynamicForwarding)
 	PutIap(value *GoogleComputeBackendServiceIap)
 	PutLocalityLbPolicies(value interface{})
 	PutLogConfig(value *GoogleComputeBackendServiceLogConfig)
 	PutMaxStreamDuration(value *GoogleComputeBackendServiceMaxStreamDuration)
+	PutNetworkPassThroughLbTrafficPolicy(value *GoogleComputeBackendServiceNetworkPassThroughLbTrafficPolicy)
 	PutOutlierDetection(value *GoogleComputeBackendServiceOutlierDetection)
+	PutParams(value *GoogleComputeBackendServiceParams)
 	PutSecuritySettings(value *GoogleComputeBackendServiceSecuritySettings)
 	PutStrongSessionAffinityCookie(value *GoogleComputeBackendServiceStrongSessionAffinityCookie)
 	PutTimeouts(value *GoogleComputeBackendServiceTimeouts)
@@ -221,8 +236,11 @@ type GoogleComputeBackendService interface {
 	ResetCustomRequestHeaders()
 	ResetCustomResponseHeaders()
 	ResetDescription()
+	ResetDynamicForwarding()
 	ResetEdgeSecurityPolicy()
 	ResetEnableCdn()
+	ResetExternalManagedMigrationState()
+	ResetExternalManagedMigrationTestingPercentage()
 	ResetHealthChecks()
 	ResetIap()
 	ResetId()
@@ -232,10 +250,12 @@ type GoogleComputeBackendService interface {
 	ResetLocalityLbPolicy()
 	ResetLogConfig()
 	ResetMaxStreamDuration()
+	ResetNetworkPassThroughLbTrafficPolicy()
 	ResetOutlierDetection()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetParams()
 	ResetPortName()
 	ResetProject()
 	ResetProtocol()
@@ -545,6 +565,26 @@ func (j *jsiiProxy_GoogleComputeBackendService) DescriptionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeBackendService) DynamicForwarding() GoogleComputeBackendServiceDynamicForwardingOutputReference {
+	var returns GoogleComputeBackendServiceDynamicForwardingOutputReference
+	_jsii_.Get(
+		j,
+		"dynamicForwarding",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeBackendService) DynamicForwardingInput() *GoogleComputeBackendServiceDynamicForwarding {
+	var returns *GoogleComputeBackendServiceDynamicForwarding
+	_jsii_.Get(
+		j,
+		"dynamicForwardingInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeBackendService) EdgeSecurityPolicy() *string {
 	var returns *string
 	_jsii_.Get(
@@ -580,6 +620,46 @@ func (j *jsiiProxy_GoogleComputeBackendService) EnableCdnInput() interface{} {
 	_jsii_.Get(
 		j,
 		"enableCdnInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeBackendService) ExternalManagedMigrationState() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"externalManagedMigrationState",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeBackendService) ExternalManagedMigrationStateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"externalManagedMigrationStateInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeBackendService) ExternalManagedMigrationTestingPercentage() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"externalManagedMigrationTestingPercentage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeBackendService) ExternalManagedMigrationTestingPercentageInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"externalManagedMigrationTestingPercentageInput",
 		&returns,
 	)
 	return returns
@@ -845,6 +925,26 @@ func (j *jsiiProxy_GoogleComputeBackendService) NameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeBackendService) NetworkPassThroughLbTrafficPolicy() GoogleComputeBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference {
+	var returns GoogleComputeBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference
+	_jsii_.Get(
+		j,
+		"networkPassThroughLbTrafficPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeBackendService) NetworkPassThroughLbTrafficPolicyInput() *GoogleComputeBackendServiceNetworkPassThroughLbTrafficPolicy {
+	var returns *GoogleComputeBackendServiceNetworkPassThroughLbTrafficPolicy
+	_jsii_.Get(
+		j,
+		"networkPassThroughLbTrafficPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeBackendService) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -870,6 +970,26 @@ func (j *jsiiProxy_GoogleComputeBackendService) OutlierDetectionInput() *GoogleC
 	_jsii_.Get(
 		j,
 		"outlierDetectionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeBackendService) Params() GoogleComputeBackendServiceParamsOutputReference {
+	var returns GoogleComputeBackendServiceParamsOutputReference
+	_jsii_.Get(
+		j,
+		"params",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeBackendService) ParamsInput() *GoogleComputeBackendServiceParams {
+	var returns *GoogleComputeBackendServiceParams
+	_jsii_.Get(
+		j,
+		"paramsInput",
 		&returns,
 	)
 	return returns
@@ -1166,7 +1286,7 @@ func (j *jsiiProxy_GoogleComputeBackendService) TlsSettingsInput() *GoogleComput
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_backend_service google_compute_backend_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_compute_backend_service google_compute_backend_service} Resource.
 func NewGoogleComputeBackendService(scope constructs.Construct, id *string, config *GoogleComputeBackendServiceConfig) GoogleComputeBackendService {
 	_init_.Initialize()
 
@@ -1184,7 +1304,7 @@ func NewGoogleComputeBackendService(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_backend_service google_compute_backend_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_compute_backend_service google_compute_backend_service} Resource.
 func NewGoogleComputeBackendService_Override(g GoogleComputeBackendService, scope constructs.Construct, id *string, config *GoogleComputeBackendServiceConfig) {
 	_init_.Initialize()
 
@@ -1309,6 +1429,28 @@ func (j *jsiiProxy_GoogleComputeBackendService)SetEnableCdn(val interface{}) {
 	_jsii_.Set(
 		j,
 		"enableCdn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeBackendService)SetExternalManagedMigrationState(val *string) {
+	if err := j.validateSetExternalManagedMigrationStateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"externalManagedMigrationState",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeBackendService)SetExternalManagedMigrationTestingPercentage(val *float64) {
+	if err := j.validateSetExternalManagedMigrationTestingPercentageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"externalManagedMigrationTestingPercentage",
 		val,
 	)
 }
@@ -1902,6 +2044,17 @@ func (g *jsiiProxy_GoogleComputeBackendService) PutCustomMetrics(value interface
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeBackendService) PutDynamicForwarding(value *GoogleComputeBackendServiceDynamicForwarding) {
+	if err := g.validatePutDynamicForwardingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putDynamicForwarding",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeBackendService) PutIap(value *GoogleComputeBackendServiceIap) {
 	if err := g.validatePutIapParameters(value); err != nil {
 		panic(err)
@@ -1946,6 +2099,17 @@ func (g *jsiiProxy_GoogleComputeBackendService) PutMaxStreamDuration(value *Goog
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeBackendService) PutNetworkPassThroughLbTrafficPolicy(value *GoogleComputeBackendServiceNetworkPassThroughLbTrafficPolicy) {
+	if err := g.validatePutNetworkPassThroughLbTrafficPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putNetworkPassThroughLbTrafficPolicy",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeBackendService) PutOutlierDetection(value *GoogleComputeBackendServiceOutlierDetection) {
 	if err := g.validatePutOutlierDetectionParameters(value); err != nil {
 		panic(err)
@@ -1953,6 +2117,17 @@ func (g *jsiiProxy_GoogleComputeBackendService) PutOutlierDetection(value *Googl
 	_jsii_.InvokeVoid(
 		g,
 		"putOutlierDetection",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeBackendService) PutParams(value *GoogleComputeBackendServiceParams) {
+	if err := g.validatePutParamsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putParams",
 		[]interface{}{value},
 	)
 }
@@ -2089,6 +2264,14 @@ func (g *jsiiProxy_GoogleComputeBackendService) ResetDescription() {
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeBackendService) ResetDynamicForwarding() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDynamicForwarding",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeBackendService) ResetEdgeSecurityPolicy() {
 	_jsii_.InvokeVoid(
 		g,
@@ -2101,6 +2284,22 @@ func (g *jsiiProxy_GoogleComputeBackendService) ResetEnableCdn() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetEnableCdn",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeBackendService) ResetExternalManagedMigrationState() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetExternalManagedMigrationState",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeBackendService) ResetExternalManagedMigrationTestingPercentage() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetExternalManagedMigrationTestingPercentage",
 		nil, // no parameters
 	)
 }
@@ -2177,6 +2376,14 @@ func (g *jsiiProxy_GoogleComputeBackendService) ResetMaxStreamDuration() {
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeBackendService) ResetNetworkPassThroughLbTrafficPolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNetworkPassThroughLbTrafficPolicy",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeBackendService) ResetOutlierDetection() {
 	_jsii_.InvokeVoid(
 		g,
@@ -2189,6 +2396,14 @@ func (g *jsiiProxy_GoogleComputeBackendService) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeBackendService) ResetParams() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetParams",
 		nil, // no parameters
 	)
 }

@@ -52,6 +52,10 @@ func (g *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) validateRe
 	return nil
 }
 
+func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) validateSetAllocatedIpRangeOverrideParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

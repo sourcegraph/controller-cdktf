@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagooglebackupdrbackupplan/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/backup_dr_backup_plan google_backup_dr_backup_plan}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/backup_dr_backup_plan google_backup_dr_backup_plan}.
 type DataGoogleBackupDrBackupPlan interface {
 	cdktf.TerraformDataSource
 	BackupPlanId() *string
@@ -32,6 +32,7 @@ type DataGoogleBackupDrBackupPlan interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Description() *string
+	DiskBackupPlanProperties() DataGoogleBackupDrBackupPlanDiskBackupPlanPropertiesList
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -50,6 +51,8 @@ type DataGoogleBackupDrBackupPlan interface {
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
+	LogRetentionDays() *float64
+	MaxCustomOnDemandRetentionDays() *float64
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
@@ -63,6 +66,7 @@ type DataGoogleBackupDrBackupPlan interface {
 	// Experimental.
 	RawOverrides() interface{}
 	ResourceType() *string
+	SupportedResourceTypes() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -229,6 +233,16 @@ func (j *jsiiProxy_DataGoogleBackupDrBackupPlan) Description() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleBackupDrBackupPlan) DiskBackupPlanProperties() DataGoogleBackupDrBackupPlanDiskBackupPlanPropertiesList {
+	var returns DataGoogleBackupDrBackupPlanDiskBackupPlanPropertiesList
+	_jsii_.Get(
+		j,
+		"diskBackupPlanProperties",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleBackupDrBackupPlan) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -309,6 +323,26 @@ func (j *jsiiProxy_DataGoogleBackupDrBackupPlan) LocationInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleBackupDrBackupPlan) LogRetentionDays() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"logRetentionDays",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleBackupDrBackupPlan) MaxCustomOnDemandRetentionDays() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxCustomOnDemandRetentionDays",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleBackupDrBackupPlan) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -379,6 +413,16 @@ func (j *jsiiProxy_DataGoogleBackupDrBackupPlan) ResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleBackupDrBackupPlan) SupportedResourceTypes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"supportedResourceTypes",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleBackupDrBackupPlan) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -420,7 +464,7 @@ func (j *jsiiProxy_DataGoogleBackupDrBackupPlan) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/backup_dr_backup_plan google_backup_dr_backup_plan} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/backup_dr_backup_plan google_backup_dr_backup_plan} Data Source.
 func NewDataGoogleBackupDrBackupPlan(scope constructs.Construct, id *string, config *DataGoogleBackupDrBackupPlanConfig) DataGoogleBackupDrBackupPlan {
 	_init_.Initialize()
 
@@ -438,7 +482,7 @@ func NewDataGoogleBackupDrBackupPlan(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/backup_dr_backup_plan google_backup_dr_backup_plan} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/backup_dr_backup_plan google_backup_dr_backup_plan} Data Source.
 func NewDataGoogleBackupDrBackupPlan_Override(d DataGoogleBackupDrBackupPlan, scope constructs.Construct, id *string, config *DataGoogleBackupDrBackupPlanConfig) {
 	_init_.Initialize()
 

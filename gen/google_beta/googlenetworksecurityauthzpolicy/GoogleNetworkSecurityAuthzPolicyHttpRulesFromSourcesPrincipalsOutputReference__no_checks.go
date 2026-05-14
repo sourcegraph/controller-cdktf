@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesFromSourcesPrincipal
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesFromSourcesPrincipalsOutputReference) validatePutPrincipalParameters(value *GoogleNetworkSecurityAuthzPolicyHttpRulesFromSourcesPrincipalsPrincipal) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesFromSourcesPrincipalsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesFromSourcesPrincipal
 }
 
 func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesFromSourcesPrincipalsOutputReference) validateSetPrefixParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesFromSourcesPrincipalsOutputReference) validateSetPrincipalSelectorParameters(val *string) error {
 	return nil
 }
 

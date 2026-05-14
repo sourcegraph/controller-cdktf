@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlebigqueryanalyticshubdataexchange/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_bigquery_analytics_hub_data_exchange google_bigquery_analytics_hub_data_exchange}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_bigquery_analytics_hub_data_exchange google_bigquery_analytics_hub_data_exchange}.
 type GoogleBigqueryAnalyticsHubDataExchange interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -34,6 +34,9 @@ type GoogleBigqueryAnalyticsHubDataExchange interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	DiscoveryType() *string
+	SetDiscoveryType(val *string)
+	DiscoveryTypeInput() *string
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
@@ -62,6 +65,9 @@ type GoogleBigqueryAnalyticsHubDataExchange interface {
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
+	LogLinkedDatasetQueryUserEmail() interface{}
+	SetLogLinkedDatasetQueryUserEmail(val interface{})
+	LogLinkedDatasetQueryUserEmailInput() interface{}
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
@@ -137,9 +143,11 @@ type GoogleBigqueryAnalyticsHubDataExchange interface {
 	PutSharingEnvironmentConfig(value *GoogleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfig)
 	PutTimeouts(value *GoogleBigqueryAnalyticsHubDataExchangeTimeouts)
 	ResetDescription()
+	ResetDiscoveryType()
 	ResetDocumentation()
 	ResetIcon()
 	ResetId()
+	ResetLogLinkedDatasetQueryUserEmail()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -250,6 +258,26 @@ func (j *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchange) DescriptionInput() *s
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchange) DiscoveryType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"discoveryType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchange) DiscoveryTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"discoveryTypeInput",
 		&returns,
 	)
 	return returns
@@ -400,6 +428,26 @@ func (j *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchange) LocationInput() *stri
 	_jsii_.Get(
 		j,
 		"locationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchange) LogLinkedDatasetQueryUserEmail() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"logLinkedDatasetQueryUserEmail",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchange) LogLinkedDatasetQueryUserEmailInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"logLinkedDatasetQueryUserEmailInput",
 		&returns,
 	)
 	return returns
@@ -566,7 +614,7 @@ func (j *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchange) TimeoutsInput() inter
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_bigquery_analytics_hub_data_exchange google_bigquery_analytics_hub_data_exchange} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_bigquery_analytics_hub_data_exchange google_bigquery_analytics_hub_data_exchange} Resource.
 func NewGoogleBigqueryAnalyticsHubDataExchange(scope constructs.Construct, id *string, config *GoogleBigqueryAnalyticsHubDataExchangeConfig) GoogleBigqueryAnalyticsHubDataExchange {
 	_init_.Initialize()
 
@@ -584,7 +632,7 @@ func NewGoogleBigqueryAnalyticsHubDataExchange(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_bigquery_analytics_hub_data_exchange google_bigquery_analytics_hub_data_exchange} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_bigquery_analytics_hub_data_exchange google_bigquery_analytics_hub_data_exchange} Resource.
 func NewGoogleBigqueryAnalyticsHubDataExchange_Override(g GoogleBigqueryAnalyticsHubDataExchange, scope constructs.Construct, id *string, config *GoogleBigqueryAnalyticsHubDataExchangeConfig) {
 	_init_.Initialize()
 
@@ -643,6 +691,17 @@ func (j *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchange)SetDescription(val *st
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchange)SetDiscoveryType(val *string) {
+	if err := j.validateSetDiscoveryTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"discoveryType",
 		val,
 	)
 }
@@ -717,6 +776,17 @@ func (j *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchange)SetLocation(val *strin
 	_jsii_.Set(
 		j,
 		"location",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchange)SetLogLinkedDatasetQueryUserEmail(val interface{}) {
+	if err := j.validateSetLogLinkedDatasetQueryUserEmailParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"logLinkedDatasetQueryUserEmail",
 		val,
 	)
 }
@@ -1145,6 +1215,14 @@ func (g *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchange) ResetDescription() {
 	)
 }
 
+func (g *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchange) ResetDiscoveryType() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDiscoveryType",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchange) ResetDocumentation() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1165,6 +1243,14 @@ func (g *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchange) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchange) ResetLogLinkedDatasetQueryUserEmail() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLogLinkedDatasetQueryUserEmail",
 		nil, // no parameters
 	)
 }

@@ -19,18 +19,18 @@ type GoogleFolderServiceIdentityConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_folder_service_identity#folder GoogleFolderServiceIdentity#folder}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_folder_service_identity#folder GoogleFolderServiceIdentity#folder}.
 	Folder *string `field:"required" json:"folder" yaml:"folder"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_folder_service_identity#service GoogleFolderServiceIdentity#service}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_folder_service_identity#service GoogleFolderServiceIdentity#service}.
 	Service *string `field:"required" json:"service" yaml:"service"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_folder_service_identity#id GoogleFolderServiceIdentity#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_folder_service_identity#id GoogleFolderServiceIdentity#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_folder_service_identity#timeouts GoogleFolderServiceIdentity#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_folder_service_identity#timeouts GoogleFolderServiceIdentity#timeouts}
 	Timeouts *GoogleFolderServiceIdentityTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

@@ -192,6 +192,10 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareCluster) validateSetProvisionersParamete
 	return nil
 }
 
+func (j *jsiiProxy_GoogleGkeonpremVmwareCluster) validateSetSkipValidationsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleGkeonpremVmwareCluster) validateSetVmTrackingEnabledParameters(val interface{}) error {
 	return nil
 }

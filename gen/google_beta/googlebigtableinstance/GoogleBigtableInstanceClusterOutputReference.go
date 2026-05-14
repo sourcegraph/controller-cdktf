@@ -37,6 +37,9 @@ type GoogleBigtableInstanceClusterOutputReference interface {
 	KmsKeyName() *string
 	SetKmsKeyName(val *string)
 	KmsKeyNameInput() *string
+	NodeScalingFactor() *string
+	SetNodeScalingFactor(val *string)
+	NodeScalingFactorInput() *string
 	NumNodes() *float64
 	SetNumNodes(val *float64)
 	NumNodesInput() *float64
@@ -82,6 +85,7 @@ type GoogleBigtableInstanceClusterOutputReference interface {
 	PutAutoscalingConfig(value *GoogleBigtableInstanceClusterAutoscalingConfig)
 	ResetAutoscalingConfig()
 	ResetKmsKeyName()
+	ResetNodeScalingFactor()
 	ResetNumNodes()
 	ResetStorageType()
 	ResetZone()
@@ -205,6 +209,26 @@ func (j *jsiiProxy_GoogleBigtableInstanceClusterOutputReference) KmsKeyNameInput
 	_jsii_.Get(
 		j,
 		"kmsKeyNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigtableInstanceClusterOutputReference) NodeScalingFactor() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nodeScalingFactor",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigtableInstanceClusterOutputReference) NodeScalingFactorInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nodeScalingFactorInput",
 		&returns,
 	)
 	return returns
@@ -379,6 +403,17 @@ func (j *jsiiProxy_GoogleBigtableInstanceClusterOutputReference)SetKmsKeyName(va
 	_jsii_.Set(
 		j,
 		"kmsKeyName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBigtableInstanceClusterOutputReference)SetNodeScalingFactor(val *string) {
+	if err := j.validateSetNodeScalingFactorParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"nodeScalingFactor",
 		val,
 	)
 }
@@ -647,6 +682,14 @@ func (g *jsiiProxy_GoogleBigtableInstanceClusterOutputReference) ResetKmsKeyName
 	_jsii_.InvokeVoid(
 		g,
 		"resetKmsKeyName",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBigtableInstanceClusterOutputReference) ResetNodeScalingFactor() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNodeScalingFactor",
 		nil, // no parameters
 	)
 }

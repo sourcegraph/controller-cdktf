@@ -80,6 +80,10 @@ func (c *jsiiProxy_ComputeRouter) validatePutMd5AuthenticationKeysParameters(val
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRouter) validatePutParamsParameters(value *ComputeRouterParams) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRouter) validatePutTimeoutsParameters(value *ComputeRouterTimeouts) error {
 	return nil
 }

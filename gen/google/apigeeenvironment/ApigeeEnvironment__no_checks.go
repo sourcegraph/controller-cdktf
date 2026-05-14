@@ -72,6 +72,10 @@ func (a *jsiiProxy_ApigeeEnvironment) validateOverrideLogicalIdParameters(newLog
 	return nil
 }
 
+func (a *jsiiProxy_ApigeeEnvironment) validatePutClientIpResolutionConfigParameters(value *ApigeeEnvironmentClientIpResolutionConfig) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApigeeEnvironment) validatePutNodeConfigParameters(value *ApigeeEnvironmentNodeConfig) error {
 	return nil
 }

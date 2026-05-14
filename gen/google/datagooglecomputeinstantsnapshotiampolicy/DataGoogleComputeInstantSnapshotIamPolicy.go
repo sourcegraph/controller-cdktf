@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagooglecomputeinstantsnapshotiampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/compute_instant_snapshot_iam_policy google_compute_instant_snapshot_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/compute_instant_snapshot_iam_policy google_compute_instant_snapshot_iam_policy}.
 type DataGoogleComputeInstantSnapshotIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -355,7 +355,7 @@ func (j *jsiiProxy_DataGoogleComputeInstantSnapshotIamPolicy) ZoneInput() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/compute_instant_snapshot_iam_policy google_compute_instant_snapshot_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/compute_instant_snapshot_iam_policy google_compute_instant_snapshot_iam_policy} Data Source.
 func NewDataGoogleComputeInstantSnapshotIamPolicy(scope constructs.Construct, id *string, config *DataGoogleComputeInstantSnapshotIamPolicyConfig) DataGoogleComputeInstantSnapshotIamPolicy {
 	_init_.Initialize()
 
@@ -373,7 +373,7 @@ func NewDataGoogleComputeInstantSnapshotIamPolicy(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/compute_instant_snapshot_iam_policy google_compute_instant_snapshot_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/compute_instant_snapshot_iam_policy google_compute_instant_snapshot_iam_policy} Data Source.
 func NewDataGoogleComputeInstantSnapshotIamPolicy_Override(d DataGoogleComputeInstantSnapshotIamPolicy, scope constructs.Construct, id *string, config *DataGoogleComputeInstantSnapshotIamPolicyConfig) {
 	_init_.Initialize()
 

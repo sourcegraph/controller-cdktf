@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputerouternataddress/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_router_nat_address google_compute_router_nat_address}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_compute_router_nat_address google_compute_router_nat_address}.
 type GoogleComputeRouterNatAddress interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -472,7 +472,7 @@ func (j *jsiiProxy_GoogleComputeRouterNatAddress) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_router_nat_address google_compute_router_nat_address} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_compute_router_nat_address google_compute_router_nat_address} Resource.
 func NewGoogleComputeRouterNatAddress(scope constructs.Construct, id *string, config *GoogleComputeRouterNatAddressConfig) GoogleComputeRouterNatAddress {
 	_init_.Initialize()
 
@@ -490,7 +490,7 @@ func NewGoogleComputeRouterNatAddress(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_router_nat_address google_compute_router_nat_address} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_compute_router_nat_address google_compute_router_nat_address} Resource.
 func NewGoogleComputeRouterNatAddress_Override(g GoogleComputeRouterNatAddress, scope constructs.Construct, id *string, config *GoogleComputeRouterNatAddressConfig) {
 	_init_.Initialize()
 

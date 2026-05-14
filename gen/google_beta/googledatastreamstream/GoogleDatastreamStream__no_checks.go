@@ -84,6 +84,10 @@ func (g *jsiiProxy_GoogleDatastreamStream) validatePutDestinationConfigParameter
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDatastreamStream) validatePutRuleSetsParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDatastreamStream) validatePutSourceConfigParameters(value *GoogleDatastreamStreamSourceConfig) error {
 	return nil
 }

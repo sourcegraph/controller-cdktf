@@ -76,6 +76,18 @@ func (b *jsiiProxy_BeyondcorpSecurityGateway) validatePutHubsParameters(value in
 	return nil
 }
 
+func (b *jsiiProxy_BeyondcorpSecurityGateway) validatePutLoggingParameters(value *BeyondcorpSecurityGatewayLogging) error {
+	return nil
+}
+
+func (b *jsiiProxy_BeyondcorpSecurityGateway) validatePutProxyProtocolConfigParameters(value *BeyondcorpSecurityGatewayProxyProtocolConfig) error {
+	return nil
+}
+
+func (b *jsiiProxy_BeyondcorpSecurityGateway) validatePutServiceDiscoveryParameters(value *BeyondcorpSecurityGatewayServiceDiscovery) error {
+	return nil
+}
+
 func (b *jsiiProxy_BeyondcorpSecurityGateway) validatePutTimeoutsParameters(value *BeyondcorpSecurityGatewayTimeouts) error {
 	return nil
 }

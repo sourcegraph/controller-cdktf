@@ -67,6 +67,7 @@ type GoogleNetworkSecurityAuthzPolicyTargetOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetLoadBalancingScheme()
 	ResetResources()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -482,6 +483,14 @@ func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyTargetOutputReference) Interp
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyTargetOutputReference) ResetLoadBalancingScheme() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLoadBalancingScheme",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyTargetOutputReference) ResetResources() {

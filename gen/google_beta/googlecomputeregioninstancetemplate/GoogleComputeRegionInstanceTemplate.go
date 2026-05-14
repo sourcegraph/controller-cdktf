@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeregioninstancetemplate/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_region_instance_template google_compute_region_instance_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_compute_region_instance_template google_compute_region_instance_template}.
 type GoogleComputeRegionInstanceTemplate interface {
 	cdktf.TerraformResource
 	AdvancedMachineFeatures() GoogleComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputReference
@@ -96,6 +96,7 @@ type GoogleComputeRegionInstanceTemplate interface {
 	NetworkPerformanceConfigInput() *GoogleComputeRegionInstanceTemplateNetworkPerformanceConfig
 	// The tree node.
 	Node() constructs.Node
+	NumericId() *string
 	PartnerMetadata() *map[string]*string
 	SetPartnerMetadata(val *map[string]*string)
 	PartnerMetadataInput() *map[string]*string
@@ -756,6 +757,16 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceTemplate) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeRegionInstanceTemplate) NumericId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"numericId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeRegionInstanceTemplate) PartnerMetadata() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -1067,7 +1078,7 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceTemplate) TimeoutsInput() interfac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_region_instance_template google_compute_region_instance_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_compute_region_instance_template google_compute_region_instance_template} Resource.
 func NewGoogleComputeRegionInstanceTemplate(scope constructs.Construct, id *string, config *GoogleComputeRegionInstanceTemplateConfig) GoogleComputeRegionInstanceTemplate {
 	_init_.Initialize()
 
@@ -1085,7 +1096,7 @@ func NewGoogleComputeRegionInstanceTemplate(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_region_instance_template google_compute_region_instance_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_compute_region_instance_template google_compute_region_instance_template} Resource.
 func NewGoogleComputeRegionInstanceTemplate_Override(g GoogleComputeRegionInstanceTemplate, scope constructs.Construct, id *string, config *GoogleComputeRegionInstanceTemplateConfig) {
 	_init_.Initialize()
 

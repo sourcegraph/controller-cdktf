@@ -12,6 +12,7 @@ type GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference interfa
 	cdktf.ComplexObject
 	BackupRetentionSettings() GoogleSqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettingsOutputReference
 	BackupRetentionSettingsInput() *GoogleSqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettings
+	BackupTier() *string
 	BinaryLogEnabled() interface{}
 	SetBinaryLogEnabled(val interface{})
 	BinaryLogEnabledInput() interface{}
@@ -119,6 +120,16 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputRef
 	_jsii_.Get(
 		j,
 		"backupRetentionSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference) BackupTier() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"backupTier",
 		&returns,
 	)
 	return returns

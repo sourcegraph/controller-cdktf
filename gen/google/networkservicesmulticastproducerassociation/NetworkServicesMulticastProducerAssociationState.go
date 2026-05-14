@@ -1,0 +1,6 @@
+package networkservicesmulticastproducerassociation
+
+
+type NetworkServicesMulticastProducerAssociationState struct {
+}
+

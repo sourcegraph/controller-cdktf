@@ -120,6 +120,10 @@ func (j *jsiiProxy_CloudTasksQueue) validateSetCountParameters(val interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_CloudTasksQueue) validateSetDesiredStateParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudTasksQueue) validateSetIdParameters(val *string) error {
 	return nil
 }

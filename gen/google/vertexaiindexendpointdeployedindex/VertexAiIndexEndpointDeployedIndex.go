@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/vertexaiindexendpointdeployedindex/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/vertex_ai_index_endpoint_deployed_index google_vertex_ai_index_endpoint_deployed_index}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_index_endpoint_deployed_index google_vertex_ai_index_endpoint_deployed_index}.
 type VertexAiIndexEndpointDeployedIndex interface {
 	cdktf.TerraformResource
 	AutomaticResources() VertexAiIndexEndpointDeployedIndexAutomaticResourcesOutputReference
@@ -83,6 +83,9 @@ type VertexAiIndexEndpointDeployedIndex interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ReservedIpRanges() *[]*string
 	SetReservedIpRanges(val *[]*string)
 	ReservedIpRangesInput() *[]*string
@@ -151,6 +154,7 @@ type VertexAiIndexEndpointDeployedIndex interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetReservedIpRanges()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -541,6 +545,26 @@ func (j *jsiiProxy_VertexAiIndexEndpointDeployedIndex) RawOverrides() interface{
 	return returns
 }
 
+func (j *jsiiProxy_VertexAiIndexEndpointDeployedIndex) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VertexAiIndexEndpointDeployedIndex) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VertexAiIndexEndpointDeployedIndex) ReservedIpRanges() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -612,7 +636,7 @@ func (j *jsiiProxy_VertexAiIndexEndpointDeployedIndex) TimeoutsInput() interface
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/vertex_ai_index_endpoint_deployed_index google_vertex_ai_index_endpoint_deployed_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_index_endpoint_deployed_index google_vertex_ai_index_endpoint_deployed_index} Resource.
 func NewVertexAiIndexEndpointDeployedIndex(scope constructs.Construct, id *string, config *VertexAiIndexEndpointDeployedIndexConfig) VertexAiIndexEndpointDeployedIndex {
 	_init_.Initialize()
 
@@ -630,7 +654,7 @@ func NewVertexAiIndexEndpointDeployedIndex(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/vertex_ai_index_endpoint_deployed_index google_vertex_ai_index_endpoint_deployed_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_index_endpoint_deployed_index google_vertex_ai_index_endpoint_deployed_index} Resource.
 func NewVertexAiIndexEndpointDeployedIndex_Override(v VertexAiIndexEndpointDeployedIndex, scope constructs.Construct, id *string, config *VertexAiIndexEndpointDeployedIndexConfig) {
 	_init_.Initialize()
 
@@ -782,6 +806,17 @@ func (j *jsiiProxy_VertexAiIndexEndpointDeployedIndex)SetProvisioners(val *[]int
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VertexAiIndexEndpointDeployedIndex)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1254,6 +1289,14 @@ func (v *jsiiProxy_VertexAiIndexEndpointDeployedIndex) ResetOverrideLogicalId() 
 	_jsii_.InvokeVoid(
 		v,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VertexAiIndexEndpointDeployedIndex) ResetRegion() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

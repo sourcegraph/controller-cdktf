@@ -80,6 +80,10 @@ func (c *jsiiProxy_ComputeImage) validatePutImageEncryptionKeyParameters(value *
 	return nil
 }
 
+func (c *jsiiProxy_ComputeImage) validatePutParamsParameters(value *ComputeImageParams) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeImage) validatePutRawDiskParameters(value *ComputeImageRawDisk) error {
 	return nil
 }

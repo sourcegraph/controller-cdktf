@@ -30,7 +30,9 @@ type DataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsOverr
 	InternalValue() *DataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsOverridesAutoscalingLimits
 	SetInternalValue(val *DataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsOverridesAutoscalingLimits)
 	MaxNodes() *float64
+	MaxProcessingUnits() *float64
 	MinNodes() *float64
+	MinProcessingUnits() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -138,11 +140,31 @@ func (j *jsiiProxy_DataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscali
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsOverridesAutoscalingLimitsOutputReference) MaxProcessingUnits() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxProcessingUnits",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsOverridesAutoscalingLimitsOutputReference) MinNodes() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
 		"minNodes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsOverridesAutoscalingLimitsOutputReference) MinProcessingUnits() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"minProcessingUnits",
 		&returns,
 	)
 	return returns

@@ -1,0 +1,6 @@
+package networkservicesmulticastgroupproduceractivation
+
+
+type NetworkServicesMulticastGroupProducerActivationState struct {
+}
+

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputesnapshot/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_snapshot google_compute_snapshot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_compute_snapshot google_compute_snapshot}.
 type GoogleComputeSnapshot interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -45,6 +45,9 @@ type GoogleComputeSnapshot interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GuestFlush() interface{}
+	SetGuestFlush(val interface{})
+	GuestFlushInput() interface{}
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -79,11 +82,17 @@ type GoogleComputeSnapshot interface {
 	SnapshotEncryptionKey() GoogleComputeSnapshotSnapshotEncryptionKeyOutputReference
 	SnapshotEncryptionKeyInput() *GoogleComputeSnapshotSnapshotEncryptionKey
 	SnapshotId() *float64
+	SnapshotType() *string
+	SetSnapshotType(val *string)
+	SnapshotTypeInput() *string
 	SourceDisk() *string
 	SetSourceDisk(val *string)
 	SourceDiskEncryptionKey() GoogleComputeSnapshotSourceDiskEncryptionKeyOutputReference
 	SourceDiskEncryptionKeyInput() *GoogleComputeSnapshotSourceDiskEncryptionKey
 	SourceDiskInput() *string
+	SourceInstantSnapshot() *string
+	SetSourceInstantSnapshot(val *string)
+	SourceInstantSnapshotInput() *string
 	StorageBytes() *float64
 	StorageLocations() *[]*string
 	SetStorageLocations(val *[]*string)
@@ -148,6 +157,7 @@ type GoogleComputeSnapshot interface {
 	PutTimeouts(value *GoogleComputeSnapshotTimeouts)
 	ResetChainName()
 	ResetDescription()
+	ResetGuestFlush()
 	ResetId()
 	ResetLabels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -155,7 +165,10 @@ type GoogleComputeSnapshot interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetSnapshotEncryptionKey()
+	ResetSnapshotType()
+	ResetSourceDisk()
 	ResetSourceDiskEncryptionKey()
+	ResetSourceInstantSnapshot()
 	ResetStorageLocations()
 	ResetTimeouts()
 	ResetZone()
@@ -322,6 +335,26 @@ func (j *jsiiProxy_GoogleComputeSnapshot) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeSnapshot) GuestFlush() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"guestFlush",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeSnapshot) GuestFlushInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"guestFlushInput",
 		&returns,
 	)
 	return returns
@@ -517,6 +550,26 @@ func (j *jsiiProxy_GoogleComputeSnapshot) SnapshotId() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeSnapshot) SnapshotType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"snapshotType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeSnapshot) SnapshotTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"snapshotTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeSnapshot) SourceDisk() *string {
 	var returns *string
 	_jsii_.Get(
@@ -552,6 +605,26 @@ func (j *jsiiProxy_GoogleComputeSnapshot) SourceDiskInput() *string {
 	_jsii_.Get(
 		j,
 		"sourceDiskInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeSnapshot) SourceInstantSnapshot() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceInstantSnapshot",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeSnapshot) SourceInstantSnapshotInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceInstantSnapshotInput",
 		&returns,
 	)
 	return returns
@@ -668,7 +741,7 @@ func (j *jsiiProxy_GoogleComputeSnapshot) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_snapshot google_compute_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_compute_snapshot google_compute_snapshot} Resource.
 func NewGoogleComputeSnapshot(scope constructs.Construct, id *string, config *GoogleComputeSnapshotConfig) GoogleComputeSnapshot {
 	_init_.Initialize()
 
@@ -686,7 +759,7 @@ func NewGoogleComputeSnapshot(scope constructs.Construct, id *string, config *Go
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_snapshot google_compute_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_compute_snapshot google_compute_snapshot} Resource.
 func NewGoogleComputeSnapshot_Override(g GoogleComputeSnapshot, scope constructs.Construct, id *string, config *GoogleComputeSnapshotConfig) {
 	_init_.Initialize()
 
@@ -753,6 +826,17 @@ func (j *jsiiProxy_GoogleComputeSnapshot)SetForEach(val cdktf.ITerraformIterator
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeSnapshot)SetGuestFlush(val interface{}) {
+	if err := j.validateSetGuestFlushParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"guestFlush",
 		val,
 	)
 }
@@ -831,6 +915,17 @@ func (j *jsiiProxy_GoogleComputeSnapshot)SetProvisioners(val *[]interface{}) {
 	)
 }
 
+func (j *jsiiProxy_GoogleComputeSnapshot)SetSnapshotType(val *string) {
+	if err := j.validateSetSnapshotTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"snapshotType",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleComputeSnapshot)SetSourceDisk(val *string) {
 	if err := j.validateSetSourceDiskParameters(val); err != nil {
 		panic(err)
@@ -838,6 +933,17 @@ func (j *jsiiProxy_GoogleComputeSnapshot)SetSourceDisk(val *string) {
 	_jsii_.Set(
 		j,
 		"sourceDisk",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeSnapshot)SetSourceInstantSnapshot(val *string) {
+	if err := j.validateSetSourceInstantSnapshotParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sourceInstantSnapshot",
 		val,
 	)
 }
@@ -1266,6 +1372,14 @@ func (g *jsiiProxy_GoogleComputeSnapshot) ResetDescription() {
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeSnapshot) ResetGuestFlush() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetGuestFlush",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeSnapshot) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1306,10 +1420,34 @@ func (g *jsiiProxy_GoogleComputeSnapshot) ResetSnapshotEncryptionKey() {
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeSnapshot) ResetSnapshotType() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSnapshotType",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeSnapshot) ResetSourceDisk() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSourceDisk",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeSnapshot) ResetSourceDiskEncryptionKey() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetSourceDiskEncryptionKey",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeSnapshot) ResetSourceInstantSnapshot() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSourceInstantSnapshot",
 		nil, // no parameters
 	)
 }

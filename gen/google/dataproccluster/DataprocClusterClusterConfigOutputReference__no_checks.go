@@ -104,11 +104,23 @@ func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) validateResolveP
 	return nil
 }
 
+func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference) validateSetClusterTierParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference) validateSetClusterTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference) validateSetEngineParameters(val *string) error {
 	return nil
 }
 

@@ -76,6 +76,10 @@ func (g *jsiiProxy_GoogleComputeMachineImage) validatePutMachineImageEncryptionK
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeMachineImage) validatePutParamsParameters(value *GoogleComputeMachineImageParams) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeMachineImage) validatePutTimeoutsParameters(value *GoogleComputeMachineImageTimeouts) error {
 	return nil
 }

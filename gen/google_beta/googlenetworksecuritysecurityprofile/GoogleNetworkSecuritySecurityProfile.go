@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlenetworksecuritysecurityprofile/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_network_security_security_profile google_network_security_security_profile}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_network_security_security_profile google_network_security_security_profile}.
 type GoogleNetworkSecuritySecurityProfile interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -93,6 +93,8 @@ type GoogleNetworkSecuritySecurityProfile interface {
 	SetType(val *string)
 	TypeInput() *string
 	UpdateTime() *string
+	UrlFilteringProfile() GoogleNetworkSecuritySecurityProfileUrlFilteringProfileOutputReference
+	UrlFilteringProfileInput() *GoogleNetworkSecuritySecurityProfileUrlFilteringProfile
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -140,6 +142,7 @@ type GoogleNetworkSecuritySecurityProfile interface {
 	PutCustomMirroringProfile(value *GoogleNetworkSecuritySecurityProfileCustomMirroringProfile)
 	PutThreatPreventionProfile(value *GoogleNetworkSecuritySecurityProfileThreatPreventionProfile)
 	PutTimeouts(value *GoogleNetworkSecuritySecurityProfileTimeouts)
+	PutUrlFilteringProfile(value *GoogleNetworkSecuritySecurityProfileUrlFilteringProfile)
 	ResetCustomInterceptProfile()
 	ResetCustomMirroringProfile()
 	ResetDescription()
@@ -152,6 +155,7 @@ type GoogleNetworkSecuritySecurityProfile interface {
 	ResetParent()
 	ResetThreatPreventionProfile()
 	ResetTimeouts()
+	ResetUrlFilteringProfile()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -610,8 +614,28 @@ func (j *jsiiProxy_GoogleNetworkSecuritySecurityProfile) UpdateTime() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleNetworkSecuritySecurityProfile) UrlFilteringProfile() GoogleNetworkSecuritySecurityProfileUrlFilteringProfileOutputReference {
+	var returns GoogleNetworkSecuritySecurityProfileUrlFilteringProfileOutputReference
+	_jsii_.Get(
+		j,
+		"urlFilteringProfile",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_network_security_security_profile google_network_security_security_profile} Resource.
+func (j *jsiiProxy_GoogleNetworkSecuritySecurityProfile) UrlFilteringProfileInput() *GoogleNetworkSecuritySecurityProfileUrlFilteringProfile {
+	var returns *GoogleNetworkSecuritySecurityProfileUrlFilteringProfile
+	_jsii_.Get(
+		j,
+		"urlFilteringProfileInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_network_security_security_profile google_network_security_security_profile} Resource.
 func NewGoogleNetworkSecuritySecurityProfile(scope constructs.Construct, id *string, config *GoogleNetworkSecuritySecurityProfileConfig) GoogleNetworkSecuritySecurityProfile {
 	_init_.Initialize()
 
@@ -629,7 +653,7 @@ func NewGoogleNetworkSecuritySecurityProfile(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_network_security_security_profile google_network_security_security_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_network_security_security_profile google_network_security_security_profile} Resource.
 func NewGoogleNetworkSecuritySecurityProfile_Override(g GoogleNetworkSecuritySecurityProfile, scope constructs.Construct, id *string, config *GoogleNetworkSecuritySecurityProfileConfig) {
 	_init_.Initialize()
 
@@ -1182,6 +1206,17 @@ func (g *jsiiProxy_GoogleNetworkSecuritySecurityProfile) PutTimeouts(value *Goog
 	)
 }
 
+func (g *jsiiProxy_GoogleNetworkSecuritySecurityProfile) PutUrlFilteringProfile(value *GoogleNetworkSecuritySecurityProfileUrlFilteringProfile) {
+	if err := g.validatePutUrlFilteringProfileParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putUrlFilteringProfile",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleNetworkSecuritySecurityProfile) ResetCustomInterceptProfile() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1258,6 +1293,14 @@ func (g *jsiiProxy_GoogleNetworkSecuritySecurityProfile) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleNetworkSecuritySecurityProfile) ResetUrlFilteringProfile() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetUrlFilteringProfile",
 		nil, // no parameters
 	)
 }

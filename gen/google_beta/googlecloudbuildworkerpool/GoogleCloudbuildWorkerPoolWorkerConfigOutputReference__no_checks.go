@@ -60,6 +60,10 @@ func (j *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference) valida
 	return nil
 }
 
+func (j *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference) validateSetEnableNestedVirtualizationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference) validateSetInternalValueParameters(val *GoogleCloudbuildWorkerPoolWorkerConfig) error {
 	return nil
 }

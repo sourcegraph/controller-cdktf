@@ -171,6 +171,14 @@ func (j *jsiiProxy_ComputeServiceAttachmentConsumerAcceptListsOutputReference) v
 	return nil
 }
 
+func (j *jsiiProxy_ComputeServiceAttachmentConsumerAcceptListsOutputReference) validateSetEndpointUrlParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ComputeServiceAttachmentConsumerAcceptListsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
 	case cdktf.IResolvable:

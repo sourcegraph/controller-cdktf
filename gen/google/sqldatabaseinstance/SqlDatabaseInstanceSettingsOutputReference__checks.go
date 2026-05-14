@@ -123,6 +123,37 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validatePutBackup
 	return nil
 }
 
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validatePutConnectionPoolConfigParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*SqlDatabaseInstanceSettingsConnectionPoolConfig:
+		value := value.(*[]*SqlDatabaseInstanceSettingsConnectionPoolConfig)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*SqlDatabaseInstanceSettingsConnectionPoolConfig:
+		value_ := value.([]*SqlDatabaseInstanceSettingsConnectionPoolConfig)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*SqlDatabaseInstanceSettingsConnectionPoolConfig; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validatePutDatabaseFlagsParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -166,6 +197,28 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validatePutDataCa
 }
 
 func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validatePutDenyMaintenancePeriodParameters(value *SqlDatabaseInstanceSettingsDenyMaintenancePeriod) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validatePutEntraidConfigParameters(value *SqlDatabaseInstanceSettingsEntraidConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validatePutFinalBackupConfigParameters(value *SqlDatabaseInstanceSettingsFinalBackupConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -231,6 +284,17 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validatePutPasswo
 	return nil
 }
 
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validatePutReadPoolAutoScaleConfigParameters(value *SqlDatabaseInstanceSettingsReadPoolAutoScaleConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validatePutSqlServerAuditConfigParameters(value *SqlDatabaseInstanceSettingsSqlServerAuditConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -253,6 +317,26 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validateResolvePa
 func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validateSetActivationPolicyParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validateSetAutoUpgradeEnabledParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil
@@ -340,6 +424,14 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validateSetComple
 }
 
 func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validateSetConnectorEnforcementParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validateSetDataApiAccessParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

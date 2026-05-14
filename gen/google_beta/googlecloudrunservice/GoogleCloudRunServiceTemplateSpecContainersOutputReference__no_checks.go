@@ -60,6 +60,10 @@ func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersOutputReference) v
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersOutputReference) validatePutReadinessProbeParameters(value *GoogleCloudRunServiceTemplateSpecContainersReadinessProbe) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersOutputReference) validatePutResourcesParameters(value *GoogleCloudRunServiceTemplateSpecContainersResources) error {
 	return nil
 }

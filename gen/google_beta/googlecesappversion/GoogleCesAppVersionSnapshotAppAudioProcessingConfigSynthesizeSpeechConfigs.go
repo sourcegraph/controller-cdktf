@@ -1,0 +1,6 @@
+package googlecesappversion
+
+
+type GoogleCesAppVersionSnapshotAppAudioProcessingConfigSynthesizeSpeechConfigs struct {
+}
+

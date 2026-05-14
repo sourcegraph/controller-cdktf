@@ -10,6 +10,9 @@ import (
 
 type GoogleDataplexDatascanDataQualitySpecOutputReference interface {
 	cdktf.ComplexObject
+	CatalogPublishingEnabled() interface{}
+	SetCatalogPublishingEnabled(val interface{})
+	CatalogPublishingEnabledInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -25,6 +28,12 @@ type GoogleDataplexDatascanDataQualitySpecOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EnableCatalogBasedRules() interface{}
+	SetEnableCatalogBasedRules(val interface{})
+	EnableCatalogBasedRulesInput() interface{}
+	Filter() *string
+	SetFilter(val *string)
+	FilterInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleDataplexDatascanDataQualitySpec
@@ -73,6 +82,9 @@ type GoogleDataplexDatascanDataQualitySpecOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutPostScanActions(value *GoogleDataplexDatascanDataQualitySpecPostScanActions)
 	PutRules(value interface{})
+	ResetCatalogPublishingEnabled()
+	ResetEnableCatalogBasedRules()
+	ResetFilter()
 	ResetPostScanActions()
 	ResetRowFilter()
 	ResetRules()
@@ -90,6 +102,26 @@ type GoogleDataplexDatascanDataQualitySpecOutputReference interface {
 // The jsii proxy struct for GoogleDataplexDatascanDataQualitySpecOutputReference
 type jsiiProxy_GoogleDataplexDatascanDataQualitySpecOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecOutputReference) CatalogPublishingEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"catalogPublishingEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecOutputReference) CatalogPublishingEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"catalogPublishingEnabledInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecOutputReference) ComplexObjectIndex() interface{} {
@@ -117,6 +149,46 @@ func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecOutputReference) Creatio
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecOutputReference) EnableCatalogBasedRules() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableCatalogBasedRules",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecOutputReference) EnableCatalogBasedRulesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableCatalogBasedRulesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecOutputReference) Filter() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"filter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecOutputReference) FilterInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"filterInput",
 		&returns,
 	)
 	return returns
@@ -270,6 +342,17 @@ func NewGoogleDataplexDatascanDataQualitySpecOutputReference_Override(g GoogleDa
 	)
 }
 
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecOutputReference)SetCatalogPublishingEnabled(val interface{}) {
+	if err := j.validateSetCatalogPublishingEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"catalogPublishingEnabled",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -288,6 +371,28 @@ func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecOutputReference)SetCompl
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecOutputReference)SetEnableCatalogBasedRules(val interface{}) {
+	if err := j.validateSetEnableCatalogBasedRulesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableCatalogBasedRules",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecOutputReference)SetFilter(val *string) {
+	if err := j.validateSetFilterParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"filter",
 		val,
 	)
 }
@@ -552,6 +657,30 @@ func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecOutputReference) PutRule
 		g,
 		"putRules",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecOutputReference) ResetCatalogPublishingEnabled() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCatalogPublishingEnabled",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecOutputReference) ResetEnableCatalogBasedRules() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnableCatalogBasedRules",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecOutputReference) ResetFilter() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetFilter",
+		nil, // no parameters
 	)
 }
 

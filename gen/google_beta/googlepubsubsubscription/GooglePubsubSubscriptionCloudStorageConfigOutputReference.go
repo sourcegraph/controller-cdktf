@@ -64,6 +64,8 @@ type GooglePubsubSubscriptionCloudStorageConfigOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TextConfig() GooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference
+	TextConfigInput() *GooglePubsubSubscriptionCloudStorageConfigTextConfig
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -89,6 +91,7 @@ type GooglePubsubSubscriptionCloudStorageConfigOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAvroConfig(value *GooglePubsubSubscriptionCloudStorageConfigAvroConfig)
+	PutTextConfig(value *GooglePubsubSubscriptionCloudStorageConfigTextConfig)
 	ResetAvroConfig()
 	ResetFilenameDatetimeFormat()
 	ResetFilenamePrefix()
@@ -97,6 +100,7 @@ type GooglePubsubSubscriptionCloudStorageConfigOutputReference interface {
 	ResetMaxDuration()
 	ResetMaxMessages()
 	ResetServiceAccountEmail()
+	ResetTextConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -367,6 +371,26 @@ func (j *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigOutputReference) Te
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigOutputReference) TextConfig() GooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference {
+	var returns GooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference
+	_jsii_.Get(
+		j,
+		"textConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigOutputReference) TextConfigInput() *GooglePubsubSubscriptionCloudStorageConfigTextConfig {
+	var returns *GooglePubsubSubscriptionCloudStorageConfigTextConfig
+	_jsii_.Get(
+		j,
+		"textConfigInput",
 		&returns,
 	)
 	return returns
@@ -740,6 +764,17 @@ func (g *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigOutputReference) Pu
 	)
 }
 
+func (g *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigOutputReference) PutTextConfig(value *GooglePubsubSubscriptionCloudStorageConfigTextConfig) {
+	if err := g.validatePutTextConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putTextConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigOutputReference) ResetAvroConfig() {
 	_jsii_.InvokeVoid(
 		g,
@@ -800,6 +835,14 @@ func (g *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigOutputReference) Re
 	_jsii_.InvokeVoid(
 		g,
 		"resetServiceAccountEmail",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigOutputReference) ResetTextConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTextConfig",
 		nil, // no parameters
 	)
 }

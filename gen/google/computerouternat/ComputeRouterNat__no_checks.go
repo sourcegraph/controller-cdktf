@@ -76,6 +76,10 @@ func (c *jsiiProxy_ComputeRouterNat) validatePutLogConfigParameters(value *Compu
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRouterNat) validatePutNat64SubnetworkParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRouterNat) validatePutRulesParameters(value interface{}) error {
 	return nil
 }
@@ -185,6 +189,10 @@ func (j *jsiiProxy_ComputeRouterNat) validateSetRouterParameters(val *string) er
 }
 
 func (j *jsiiProxy_ComputeRouterNat) validateSetSourceSubnetworkIpRangesToNatParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeRouterNat) validateSetSourceSubnetworkIpRangesToNat64Parameters(val *string) error {
 	return nil
 }
 

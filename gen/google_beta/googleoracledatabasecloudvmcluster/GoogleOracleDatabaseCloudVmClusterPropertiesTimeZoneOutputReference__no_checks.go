@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesTimeZoneOutputRef
 	return nil
 }
 
+func (j *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesTimeZoneOutputReference) validateSetVersionParameters(val *string) error {
+	return nil
+}
+
 func validateNewGoogleOracleDatabaseCloudVmClusterPropertiesTimeZoneOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

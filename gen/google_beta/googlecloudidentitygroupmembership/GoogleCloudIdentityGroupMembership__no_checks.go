@@ -112,6 +112,10 @@ func (j *jsiiProxy_GoogleCloudIdentityGroupMembership) validateSetCountParameter
 	return nil
 }
 
+func (j *jsiiProxy_GoogleCloudIdentityGroupMembership) validateSetCreateIgnoreAlreadyExistsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCloudIdentityGroupMembership) validateSetGroupParameters(val *string) error {
 	return nil
 }

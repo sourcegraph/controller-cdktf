@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManagerInstanceLifecyclePolicyOutpu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeInstanceGroupManagerInstanceLifecyclePolicyOutputReference) validatePutOnRepairParameters(value *GoogleComputeInstanceGroupManagerInstanceLifecyclePolicyOnRepair) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceGroupManagerInstanceLifecyclePolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

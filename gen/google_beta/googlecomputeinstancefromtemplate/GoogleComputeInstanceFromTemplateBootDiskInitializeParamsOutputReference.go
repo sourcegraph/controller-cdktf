@@ -47,6 +47,9 @@ type GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference in
 	ProvisionedThroughput() *float64
 	SetProvisionedThroughput(val *float64)
 	ProvisionedThroughputInput() *float64
+	ReplicaZones() *[]*string
+	SetReplicaZones(val *[]*string)
+	ReplicaZonesInput() *[]*string
 	ResourceManagerTags() *map[string]*string
 	SetResourceManagerTags(val *map[string]*string)
 	ResourceManagerTagsInput() *map[string]*string
@@ -109,6 +112,7 @@ type GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference in
 	ResetLabels()
 	ResetProvisionedIops()
 	ResetProvisionedThroughput()
+	ResetReplicaZones()
 	ResetResourceManagerTags()
 	ResetResourcePolicies()
 	ResetSize()
@@ -297,6 +301,26 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutp
 	_jsii_.Get(
 		j,
 		"provisionedThroughputInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) ReplicaZones() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"replicaZones",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) ReplicaZonesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"replicaZonesInput",
 		&returns,
 	)
 	return returns
@@ -605,6 +629,17 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutp
 	_jsii_.Set(
 		j,
 		"provisionedThroughput",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference)SetReplicaZones(val *[]*string) {
+	if err := j.validateSetReplicaZonesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"replicaZones",
 		val,
 	)
 }
@@ -949,6 +984,14 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutp
 	_jsii_.InvokeVoid(
 		g,
 		"resetProvisionedThroughput",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) ResetReplicaZones() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetReplicaZones",
 		nil, // no parameters
 	)
 }

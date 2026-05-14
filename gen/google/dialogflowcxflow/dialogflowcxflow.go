@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/dialogflowcxflow/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/dialogflow_cx_flow google_dialogflow_cx_flow}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_flow google_dialogflow_cx_flow}.
 type DialogflowCxFlow interface {
 	cdktf.TerraformResource
 	AdvancedSettings() DialogflowCxFlowAdvancedSettingsOutputReference
@@ -52,6 +52,8 @@ type DialogflowCxFlow interface {
 	IsDefaultStartFlow() interface{}
 	SetIsDefaultStartFlow(val interface{})
 	IsDefaultStartFlowInput() interface{}
+	KnowledgeConnectorSettings() DialogflowCxFlowKnowledgeConnectorSettingsOutputReference
+	KnowledgeConnectorSettingsInput() *DialogflowCxFlowKnowledgeConnectorSettings
 	LanguageCode() *string
 	SetLanguageCode(val *string)
 	LanguageCodeInput() *string
@@ -135,6 +137,7 @@ type DialogflowCxFlow interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAdvancedSettings(value *DialogflowCxFlowAdvancedSettings)
 	PutEventHandlers(value interface{})
+	PutKnowledgeConnectorSettings(value *DialogflowCxFlowKnowledgeConnectorSettings)
 	PutNluSettings(value *DialogflowCxFlowNluSettings)
 	PutTimeouts(value *DialogflowCxFlowTimeouts)
 	PutTransitionRoutes(value interface{})
@@ -143,6 +146,7 @@ type DialogflowCxFlow interface {
 	ResetEventHandlers()
 	ResetId()
 	ResetIsDefaultStartFlow()
+	ResetKnowledgeConnectorSettings()
 	ResetLanguageCode()
 	ResetNluSettings()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -370,6 +374,26 @@ func (j *jsiiProxy_DialogflowCxFlow) IsDefaultStartFlowInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DialogflowCxFlow) KnowledgeConnectorSettings() DialogflowCxFlowKnowledgeConnectorSettingsOutputReference {
+	var returns DialogflowCxFlowKnowledgeConnectorSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"knowledgeConnectorSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxFlow) KnowledgeConnectorSettingsInput() *DialogflowCxFlowKnowledgeConnectorSettings {
+	var returns *DialogflowCxFlowKnowledgeConnectorSettings
+	_jsii_.Get(
+		j,
+		"knowledgeConnectorSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DialogflowCxFlow) LanguageCode() *string {
 	var returns *string
 	_jsii_.Get(
@@ -581,7 +605,7 @@ func (j *jsiiProxy_DialogflowCxFlow) TransitionRoutesInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/dialogflow_cx_flow google_dialogflow_cx_flow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_flow google_dialogflow_cx_flow} Resource.
 func NewDialogflowCxFlow(scope constructs.Construct, id *string, config *DialogflowCxFlowConfig) DialogflowCxFlow {
 	_init_.Initialize()
 
@@ -599,7 +623,7 @@ func NewDialogflowCxFlow(scope constructs.Construct, id *string, config *Dialogf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/dialogflow_cx_flow google_dialogflow_cx_flow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_flow google_dialogflow_cx_flow} Resource.
 func NewDialogflowCxFlow_Override(d DialogflowCxFlow, scope constructs.Construct, id *string, config *DialogflowCxFlowConfig) {
 	_init_.Initialize()
 
@@ -1130,6 +1154,17 @@ func (d *jsiiProxy_DialogflowCxFlow) PutEventHandlers(value interface{}) {
 	)
 }
 
+func (d *jsiiProxy_DialogflowCxFlow) PutKnowledgeConnectorSettings(value *DialogflowCxFlowKnowledgeConnectorSettings) {
+	if err := d.validatePutKnowledgeConnectorSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putKnowledgeConnectorSettings",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DialogflowCxFlow) PutNluSettings(value *DialogflowCxFlowNluSettings) {
 	if err := d.validatePutNluSettingsParameters(value); err != nil {
 		panic(err)
@@ -1199,6 +1234,14 @@ func (d *jsiiProxy_DialogflowCxFlow) ResetIsDefaultStartFlow() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetIsDefaultStartFlow",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DialogflowCxFlow) ResetKnowledgeConnectorSettings() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetKnowledgeConnectorSettings",
 		nil, // no parameters
 	)
 }

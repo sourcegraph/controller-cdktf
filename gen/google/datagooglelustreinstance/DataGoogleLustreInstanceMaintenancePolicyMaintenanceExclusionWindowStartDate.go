@@ -1,0 +1,6 @@
+package datagooglelustreinstance
+
+
+type DataGoogleLustreInstanceMaintenancePolicyMaintenanceExclusionWindowStartDate struct {
+}
+

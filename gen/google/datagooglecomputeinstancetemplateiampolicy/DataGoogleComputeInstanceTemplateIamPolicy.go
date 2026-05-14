@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagooglecomputeinstancetemplateiampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/compute_instance_template_iam_policy google_compute_instance_template_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/compute_instance_template_iam_policy google_compute_instance_template_iam_policy}.
 type DataGoogleComputeInstanceTemplateIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -331,7 +331,7 @@ func (j *jsiiProxy_DataGoogleComputeInstanceTemplateIamPolicy) TerraformResource
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/compute_instance_template_iam_policy google_compute_instance_template_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/compute_instance_template_iam_policy google_compute_instance_template_iam_policy} Data Source.
 func NewDataGoogleComputeInstanceTemplateIamPolicy(scope constructs.Construct, id *string, config *DataGoogleComputeInstanceTemplateIamPolicyConfig) DataGoogleComputeInstanceTemplateIamPolicy {
 	_init_.Initialize()
 
@@ -349,7 +349,7 @@ func NewDataGoogleComputeInstanceTemplateIamPolicy(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/compute_instance_template_iam_policy google_compute_instance_template_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/compute_instance_template_iam_policy google_compute_instance_template_iam_policy} Data Source.
 func NewDataGoogleComputeInstanceTemplateIamPolicy_Override(d DataGoogleComputeInstanceTemplateIamPolicy, scope constructs.Construct, id *string, config *DataGoogleComputeInstanceTemplateIamPolicyConfig) {
 	_init_.Initialize()
 

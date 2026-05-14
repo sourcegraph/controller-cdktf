@@ -52,6 +52,14 @@ func (j *jsiiProxy_MonitoringNotificationChannelSensitiveLabelsOutputReference) 
 	return nil
 }
 
+func (j *jsiiProxy_MonitoringNotificationChannelSensitiveLabelsOutputReference) validateSetAuthTokenWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_MonitoringNotificationChannelSensitiveLabelsOutputReference) validateSetAuthTokenWoVersionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MonitoringNotificationChannelSensitiveLabelsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -68,7 +76,23 @@ func (j *jsiiProxy_MonitoringNotificationChannelSensitiveLabelsOutputReference) 
 	return nil
 }
 
+func (j *jsiiProxy_MonitoringNotificationChannelSensitiveLabelsOutputReference) validateSetPasswordWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_MonitoringNotificationChannelSensitiveLabelsOutputReference) validateSetPasswordWoVersionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MonitoringNotificationChannelSensitiveLabelsOutputReference) validateSetServiceKeyParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_MonitoringNotificationChannelSensitiveLabelsOutputReference) validateSetServiceKeyWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_MonitoringNotificationChannelSensitiveLabelsOutputReference) validateSetServiceKeyWoVersionParameters(val *string) error {
 	return nil
 }
 

@@ -11,6 +11,7 @@ import (
 type DataGoogleComputeResourcePolicyWorkloadPolicyOutputReference interface {
 	cdktf.ComplexObject
 	AcceleratorTopology() *string
+	AcceleratorTopologyMode() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -84,6 +85,16 @@ func (j *jsiiProxy_DataGoogleComputeResourcePolicyWorkloadPolicyOutputReference)
 	_jsii_.Get(
 		j,
 		"acceleratorTopology",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeResourcePolicyWorkloadPolicyOutputReference) AcceleratorTopologyMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"acceleratorTopologyMode",
 		&returns,
 	)
 	return returns

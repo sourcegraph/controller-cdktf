@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagooglesecretmanagerregionalsecrets/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/secret_manager_regional_secrets google_secret_manager_regional_secrets}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/secret_manager_regional_secrets google_secret_manager_regional_secrets}.
 type DataGoogleSecretManagerRegionalSecrets interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -344,7 +344,7 @@ func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecrets) TerraformResourceType
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/secret_manager_regional_secrets google_secret_manager_regional_secrets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/secret_manager_regional_secrets google_secret_manager_regional_secrets} Data Source.
 func NewDataGoogleSecretManagerRegionalSecrets(scope constructs.Construct, id *string, config *DataGoogleSecretManagerRegionalSecretsConfig) DataGoogleSecretManagerRegionalSecrets {
 	_init_.Initialize()
 
@@ -362,7 +362,7 @@ func NewDataGoogleSecretManagerRegionalSecrets(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/secret_manager_regional_secrets google_secret_manager_regional_secrets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/secret_manager_regional_secrets google_secret_manager_regional_secrets} Data Source.
 func NewDataGoogleSecretManagerRegionalSecrets_Override(d DataGoogleSecretManagerRegionalSecrets, scope constructs.Construct, id *string, config *DataGoogleSecretManagerRegionalSecretsConfig) {
 	_init_.Initialize()
 

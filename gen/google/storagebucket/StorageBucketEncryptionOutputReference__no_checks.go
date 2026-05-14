@@ -44,6 +44,18 @@ func (s *jsiiProxy_StorageBucketEncryptionOutputReference) validateInterpolation
 	return nil
 }
 
+func (s *jsiiProxy_StorageBucketEncryptionOutputReference) validatePutCustomerManagedEncryptionEnforcementConfigParameters(value *StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfig) error {
+	return nil
+}
+
+func (s *jsiiProxy_StorageBucketEncryptionOutputReference) validatePutCustomerSuppliedEncryptionEnforcementConfigParameters(value *StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfig) error {
+	return nil
+}
+
+func (s *jsiiProxy_StorageBucketEncryptionOutputReference) validatePutGoogleManagedEncryptionEnforcementConfigParameters(value *StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfig) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageBucketEncryptionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

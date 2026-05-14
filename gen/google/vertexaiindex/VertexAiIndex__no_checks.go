@@ -72,6 +72,10 @@ func (v *jsiiProxy_VertexAiIndex) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
+func (v *jsiiProxy_VertexAiIndex) validatePutEncryptionSpecParameters(value *VertexAiIndexEncryptionSpec) error {
+	return nil
+}
+
 func (v *jsiiProxy_VertexAiIndex) validatePutMetadataParameters(value *VertexAiIndexMetadata) error {
 	return nil
 }

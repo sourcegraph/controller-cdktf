@@ -80,6 +80,10 @@ func (d *jsiiProxy_DataLossPreventionDiscoveryConfig) validatePutOrgConfigParame
 	return nil
 }
 
+func (d *jsiiProxy_DataLossPreventionDiscoveryConfig) validatePutOtherCloudStartingLocationParameters(value *DataLossPreventionDiscoveryConfigOtherCloudStartingLocation) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataLossPreventionDiscoveryConfig) validatePutTargetsParameters(value interface{}) error {
 	return nil
 }

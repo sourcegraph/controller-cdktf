@@ -29,6 +29,8 @@ type DataGoogleCloudfunctions2FunctionServiceConfigOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DirectVpcEgress() *string
+	DirectVpcNetworkInterface() DataGoogleCloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceList
 	EnvironmentVariables() cdktf.StringMap
 	// Experimental.
 	Fqn() *string
@@ -159,6 +161,26 @@ func (j *jsiiProxy_DataGoogleCloudfunctions2FunctionServiceConfigOutputReference
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleCloudfunctions2FunctionServiceConfigOutputReference) DirectVpcEgress() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"directVpcEgress",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleCloudfunctions2FunctionServiceConfigOutputReference) DirectVpcNetworkInterface() DataGoogleCloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceList {
+	var returns DataGoogleCloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceList
+	_jsii_.Get(
+		j,
+		"directVpcNetworkInterface",
 		&returns,
 	)
 	return returns

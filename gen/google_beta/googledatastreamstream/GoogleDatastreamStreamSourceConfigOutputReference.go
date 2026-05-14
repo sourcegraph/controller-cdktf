@@ -29,6 +29,8 @@ type GoogleDatastreamStreamSourceConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *GoogleDatastreamStreamSourceConfig
 	SetInternalValue(val *GoogleDatastreamStreamSourceConfig)
+	MongodbSourceConfig() GoogleDatastreamStreamSourceConfigMongodbSourceConfigOutputReference
+	MongodbSourceConfigInput() *GoogleDatastreamStreamSourceConfigMongodbSourceConfig
 	MysqlSourceConfig() GoogleDatastreamStreamSourceConfigMysqlSourceConfigOutputReference
 	MysqlSourceConfigInput() *GoogleDatastreamStreamSourceConfigMysqlSourceConfig
 	OracleSourceConfig() GoogleDatastreamStreamSourceConfigOracleSourceConfigOutputReference
@@ -40,6 +42,8 @@ type GoogleDatastreamStreamSourceConfigOutputReference interface {
 	SourceConnectionProfile() *string
 	SetSourceConnectionProfile(val *string)
 	SourceConnectionProfileInput() *string
+	SpannerSourceConfig() GoogleDatastreamStreamSourceConfigSpannerSourceConfigOutputReference
+	SpannerSourceConfigInput() *GoogleDatastreamStreamSourceConfigSpannerSourceConfig
 	SqlServerSourceConfig() GoogleDatastreamStreamSourceConfigSqlServerSourceConfigOutputReference
 	SqlServerSourceConfigInput() *GoogleDatastreamStreamSourceConfigSqlServerSourceConfig
 	// Experimental.
@@ -74,15 +78,19 @@ type GoogleDatastreamStreamSourceConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutMongodbSourceConfig(value *GoogleDatastreamStreamSourceConfigMongodbSourceConfig)
 	PutMysqlSourceConfig(value *GoogleDatastreamStreamSourceConfigMysqlSourceConfig)
 	PutOracleSourceConfig(value *GoogleDatastreamStreamSourceConfigOracleSourceConfig)
 	PutPostgresqlSourceConfig(value *GoogleDatastreamStreamSourceConfigPostgresqlSourceConfig)
 	PutSalesforceSourceConfig(value *GoogleDatastreamStreamSourceConfigSalesforceSourceConfig)
+	PutSpannerSourceConfig(value *GoogleDatastreamStreamSourceConfigSpannerSourceConfig)
 	PutSqlServerSourceConfig(value *GoogleDatastreamStreamSourceConfigSqlServerSourceConfig)
+	ResetMongodbSourceConfig()
 	ResetMysqlSourceConfig()
 	ResetOracleSourceConfig()
 	ResetPostgresqlSourceConfig()
 	ResetSalesforceSourceConfig()
+	ResetSpannerSourceConfig()
 	ResetSqlServerSourceConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -144,6 +152,26 @@ func (j *jsiiProxy_GoogleDatastreamStreamSourceConfigOutputReference) InternalVa
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDatastreamStreamSourceConfigOutputReference) MongodbSourceConfig() GoogleDatastreamStreamSourceConfigMongodbSourceConfigOutputReference {
+	var returns GoogleDatastreamStreamSourceConfigMongodbSourceConfigOutputReference
+	_jsii_.Get(
+		j,
+		"mongodbSourceConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDatastreamStreamSourceConfigOutputReference) MongodbSourceConfigInput() *GoogleDatastreamStreamSourceConfigMongodbSourceConfig {
+	var returns *GoogleDatastreamStreamSourceConfigMongodbSourceConfig
+	_jsii_.Get(
+		j,
+		"mongodbSourceConfigInput",
 		&returns,
 	)
 	return returns
@@ -244,6 +272,26 @@ func (j *jsiiProxy_GoogleDatastreamStreamSourceConfigOutputReference) SourceConn
 	_jsii_.Get(
 		j,
 		"sourceConnectionProfileInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDatastreamStreamSourceConfigOutputReference) SpannerSourceConfig() GoogleDatastreamStreamSourceConfigSpannerSourceConfigOutputReference {
+	var returns GoogleDatastreamStreamSourceConfigSpannerSourceConfigOutputReference
+	_jsii_.Get(
+		j,
+		"spannerSourceConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDatastreamStreamSourceConfigOutputReference) SpannerSourceConfigInput() *GoogleDatastreamStreamSourceConfigSpannerSourceConfig {
+	var returns *GoogleDatastreamStreamSourceConfigSpannerSourceConfig
+	_jsii_.Get(
+		j,
+		"spannerSourceConfigInput",
 		&returns,
 	)
 	return returns
@@ -569,6 +617,17 @@ func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigOutputReference) Interpolat
 	return returns
 }
 
+func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigOutputReference) PutMongodbSourceConfig(value *GoogleDatastreamStreamSourceConfigMongodbSourceConfig) {
+	if err := g.validatePutMongodbSourceConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putMongodbSourceConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigOutputReference) PutMysqlSourceConfig(value *GoogleDatastreamStreamSourceConfigMysqlSourceConfig) {
 	if err := g.validatePutMysqlSourceConfigParameters(value); err != nil {
 		panic(err)
@@ -613,6 +672,17 @@ func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigOutputReference) PutSalesfo
 	)
 }
 
+func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigOutputReference) PutSpannerSourceConfig(value *GoogleDatastreamStreamSourceConfigSpannerSourceConfig) {
+	if err := g.validatePutSpannerSourceConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSpannerSourceConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigOutputReference) PutSqlServerSourceConfig(value *GoogleDatastreamStreamSourceConfigSqlServerSourceConfig) {
 	if err := g.validatePutSqlServerSourceConfigParameters(value); err != nil {
 		panic(err)
@@ -621,6 +691,14 @@ func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigOutputReference) PutSqlServ
 		g,
 		"putSqlServerSourceConfig",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigOutputReference) ResetMongodbSourceConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMongodbSourceConfig",
+		nil, // no parameters
 	)
 }
 
@@ -652,6 +730,14 @@ func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigOutputReference) ResetSales
 	_jsii_.InvokeVoid(
 		g,
 		"resetSalesforceSourceConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigOutputReference) ResetSpannerSourceConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSpannerSourceConfig",
 		nil, // no parameters
 	)
 }

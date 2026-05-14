@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlesecretmanagerregionalsecretiammember/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_secret_manager_regional_secret_iam_member google_secret_manager_regional_secret_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_secret_manager_regional_secret_iam_member google_secret_manager_regional_secret_iam_member}.
 type GoogleSecretManagerRegionalSecretIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -459,7 +459,7 @@ func (j *jsiiProxy_GoogleSecretManagerRegionalSecretIamMember) TerraformResource
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_secret_manager_regional_secret_iam_member google_secret_manager_regional_secret_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_secret_manager_regional_secret_iam_member google_secret_manager_regional_secret_iam_member} Resource.
 func NewGoogleSecretManagerRegionalSecretIamMember(scope constructs.Construct, id *string, config *GoogleSecretManagerRegionalSecretIamMemberConfig) GoogleSecretManagerRegionalSecretIamMember {
 	_init_.Initialize()
 
@@ -477,7 +477,7 @@ func NewGoogleSecretManagerRegionalSecretIamMember(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_secret_manager_regional_secret_iam_member google_secret_manager_regional_secret_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_secret_manager_regional_secret_iam_member google_secret_manager_regional_secret_iam_member} Resource.
 func NewGoogleSecretManagerRegionalSecretIamMember_Override(g GoogleSecretManagerRegionalSecretIamMember, scope constructs.Construct, id *string, config *GoogleSecretManagerRegionalSecretIamMemberConfig) {
 	_init_.Initialize()
 

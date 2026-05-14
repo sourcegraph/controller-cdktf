@@ -47,12 +47,16 @@ type ContainerClusterAddonsConfigOutputReference interface {
 	HttpLoadBalancingInput() *ContainerClusterAddonsConfigHttpLoadBalancing
 	InternalValue() *ContainerClusterAddonsConfig
 	SetInternalValue(val *ContainerClusterAddonsConfig)
+	LustreCsiDriverConfig() ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference
+	LustreCsiDriverConfigInput() *ContainerClusterAddonsConfigLustreCsiDriverConfig
 	NetworkPolicyConfig() ContainerClusterAddonsConfigNetworkPolicyConfigOutputReference
 	NetworkPolicyConfigInput() *ContainerClusterAddonsConfigNetworkPolicyConfig
 	ParallelstoreCsiDriverConfig() ContainerClusterAddonsConfigParallelstoreCsiDriverConfigOutputReference
 	ParallelstoreCsiDriverConfigInput() *ContainerClusterAddonsConfigParallelstoreCsiDriverConfig
 	RayOperatorConfig() ContainerClusterAddonsConfigRayOperatorConfigList
 	RayOperatorConfigInput() interface{}
+	SliceControllerConfig() ContainerClusterAddonsConfigSliceControllerConfigOutputReference
+	SliceControllerConfigInput() *ContainerClusterAddonsConfigSliceControllerConfig
 	StatefulHaConfig() ContainerClusterAddonsConfigStatefulHaConfigOutputReference
 	StatefulHaConfigInput() *ContainerClusterAddonsConfigStatefulHaConfig
 	// Experimental.
@@ -96,9 +100,11 @@ type ContainerClusterAddonsConfigOutputReference interface {
 	PutGkeBackupAgentConfig(value *ContainerClusterAddonsConfigGkeBackupAgentConfig)
 	PutHorizontalPodAutoscaling(value *ContainerClusterAddonsConfigHorizontalPodAutoscaling)
 	PutHttpLoadBalancing(value *ContainerClusterAddonsConfigHttpLoadBalancing)
+	PutLustreCsiDriverConfig(value *ContainerClusterAddonsConfigLustreCsiDriverConfig)
 	PutNetworkPolicyConfig(value *ContainerClusterAddonsConfigNetworkPolicyConfig)
 	PutParallelstoreCsiDriverConfig(value *ContainerClusterAddonsConfigParallelstoreCsiDriverConfig)
 	PutRayOperatorConfig(value interface{})
+	PutSliceControllerConfig(value *ContainerClusterAddonsConfigSliceControllerConfig)
 	PutStatefulHaConfig(value *ContainerClusterAddonsConfigStatefulHaConfig)
 	ResetCloudrunConfig()
 	ResetConfigConnectorConfig()
@@ -109,9 +115,11 @@ type ContainerClusterAddonsConfigOutputReference interface {
 	ResetGkeBackupAgentConfig()
 	ResetHorizontalPodAutoscaling()
 	ResetHttpLoadBalancing()
+	ResetLustreCsiDriverConfig()
 	ResetNetworkPolicyConfig()
 	ResetParallelstoreCsiDriverConfig()
 	ResetRayOperatorConfig()
+	ResetSliceControllerConfig()
 	ResetStatefulHaConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -358,6 +366,26 @@ func (j *jsiiProxy_ContainerClusterAddonsConfigOutputReference) InternalValue() 
 	return returns
 }
 
+func (j *jsiiProxy_ContainerClusterAddonsConfigOutputReference) LustreCsiDriverConfig() ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference {
+	var returns ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference
+	_jsii_.Get(
+		j,
+		"lustreCsiDriverConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterAddonsConfigOutputReference) LustreCsiDriverConfigInput() *ContainerClusterAddonsConfigLustreCsiDriverConfig {
+	var returns *ContainerClusterAddonsConfigLustreCsiDriverConfig
+	_jsii_.Get(
+		j,
+		"lustreCsiDriverConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContainerClusterAddonsConfigOutputReference) NetworkPolicyConfig() ContainerClusterAddonsConfigNetworkPolicyConfigOutputReference {
 	var returns ContainerClusterAddonsConfigNetworkPolicyConfigOutputReference
 	_jsii_.Get(
@@ -413,6 +441,26 @@ func (j *jsiiProxy_ContainerClusterAddonsConfigOutputReference) RayOperatorConfi
 	_jsii_.Get(
 		j,
 		"rayOperatorConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterAddonsConfigOutputReference) SliceControllerConfig() ContainerClusterAddonsConfigSliceControllerConfigOutputReference {
+	var returns ContainerClusterAddonsConfigSliceControllerConfigOutputReference
+	_jsii_.Get(
+		j,
+		"sliceControllerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterAddonsConfigOutputReference) SliceControllerConfigInput() *ContainerClusterAddonsConfigSliceControllerConfig {
+	var returns *ContainerClusterAddonsConfigSliceControllerConfig
+	_jsii_.Get(
+		j,
+		"sliceControllerConfigInput",
 		&returns,
 	)
 	return returns
@@ -826,6 +874,17 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) PutHttpLoadBalan
 	)
 }
 
+func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) PutLustreCsiDriverConfig(value *ContainerClusterAddonsConfigLustreCsiDriverConfig) {
+	if err := c.validatePutLustreCsiDriverConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putLustreCsiDriverConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) PutNetworkPolicyConfig(value *ContainerClusterAddonsConfigNetworkPolicyConfig) {
 	if err := c.validatePutNetworkPolicyConfigParameters(value); err != nil {
 		panic(err)
@@ -855,6 +914,17 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) PutRayOperatorCo
 	_jsii_.InvokeVoid(
 		c,
 		"putRayOperatorConfig",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) PutSliceControllerConfig(value *ContainerClusterAddonsConfigSliceControllerConfig) {
+	if err := c.validatePutSliceControllerConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putSliceControllerConfig",
 		[]interface{}{value},
 	)
 }
@@ -942,6 +1012,14 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) ResetHttpLoadBal
 	)
 }
 
+func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) ResetLustreCsiDriverConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetLustreCsiDriverConfig",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) ResetNetworkPolicyConfig() {
 	_jsii_.InvokeVoid(
 		c,
@@ -962,6 +1040,14 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) ResetRayOperator
 	_jsii_.InvokeVoid(
 		c,
 		"resetRayOperatorConfig",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) ResetSliceControllerConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSliceControllerConfig",
 		nil, // no parameters
 	)
 }

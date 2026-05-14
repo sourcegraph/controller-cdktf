@@ -19,24 +19,24 @@ type GoogleIapWebCloudRunServiceIamMemberConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_iap_web_cloud_run_service_iam_member#cloud_run_service_name GoogleIapWebCloudRunServiceIamMember#cloud_run_service_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_iap_web_cloud_run_service_iam_member#cloud_run_service_name GoogleIapWebCloudRunServiceIamMember#cloud_run_service_name}.
 	CloudRunServiceName *string `field:"required" json:"cloudRunServiceName" yaml:"cloudRunServiceName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_iap_web_cloud_run_service_iam_member#member GoogleIapWebCloudRunServiceIamMember#member}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_iap_web_cloud_run_service_iam_member#member GoogleIapWebCloudRunServiceIamMember#member}.
 	Member *string `field:"required" json:"member" yaml:"member"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_iap_web_cloud_run_service_iam_member#role GoogleIapWebCloudRunServiceIamMember#role}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_iap_web_cloud_run_service_iam_member#role GoogleIapWebCloudRunServiceIamMember#role}.
 	Role *string `field:"required" json:"role" yaml:"role"`
 	// condition block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_iap_web_cloud_run_service_iam_member#condition GoogleIapWebCloudRunServiceIamMember#condition}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_iap_web_cloud_run_service_iam_member#condition GoogleIapWebCloudRunServiceIamMember#condition}
 	Condition *GoogleIapWebCloudRunServiceIamMemberCondition `field:"optional" json:"condition" yaml:"condition"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_iap_web_cloud_run_service_iam_member#id GoogleIapWebCloudRunServiceIamMember#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_iap_web_cloud_run_service_iam_member#id GoogleIapWebCloudRunServiceIamMember#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_iap_web_cloud_run_service_iam_member#location GoogleIapWebCloudRunServiceIamMember#location}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_iap_web_cloud_run_service_iam_member#location GoogleIapWebCloudRunServiceIamMember#location}.
 	Location *string `field:"optional" json:"location" yaml:"location"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_iap_web_cloud_run_service_iam_member#project GoogleIapWebCloudRunServiceIamMember#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_iap_web_cloud_run_service_iam_member#project GoogleIapWebCloudRunServiceIamMember#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 }
 

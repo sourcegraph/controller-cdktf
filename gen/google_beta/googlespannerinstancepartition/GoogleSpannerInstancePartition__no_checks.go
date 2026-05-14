@@ -72,6 +72,10 @@ func (g *jsiiProxy_GoogleSpannerInstancePartition) validateOverrideLogicalIdPara
 	return nil
 }
 
+func (g *jsiiProxy_GoogleSpannerInstancePartition) validatePutAutoscalingConfigParameters(value *GoogleSpannerInstancePartitionAutoscalingConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSpannerInstancePartition) validatePutTimeoutsParameters(value *GoogleSpannerInstancePartitionTimeouts) error {
 	return nil
 }

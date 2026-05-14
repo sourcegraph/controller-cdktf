@@ -76,6 +76,10 @@ func (a *jsiiProxy_AlloydbInstance) validatePutClientConnectionConfigParameters(
 	return nil
 }
 
+func (a *jsiiProxy_AlloydbInstance) validatePutConnectionPoolConfigParameters(value *AlloydbInstanceConnectionPoolConfig) error {
+	return nil
+}
+
 func (a *jsiiProxy_AlloydbInstance) validatePutMachineConfigParameters(value *AlloydbInstanceMachineConfig) error {
 	return nil
 }
@@ -113,6 +117,10 @@ func validateAlloydbInstance_IsTerraformElementParameters(x interface{}) error {
 }
 
 func validateAlloydbInstance_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_AlloydbInstance) validateSetActivationPolicyParameters(val *string) error {
 	return nil
 }
 

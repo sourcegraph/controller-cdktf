@@ -68,6 +68,10 @@ func (j *jsiiProxy_MigrationCenterPreferenceSetVirtualMachinePreferencesComputeE
 	return nil
 }
 
+func (j *jsiiProxy_MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesOutputReference) validateSetPersistentDiskTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

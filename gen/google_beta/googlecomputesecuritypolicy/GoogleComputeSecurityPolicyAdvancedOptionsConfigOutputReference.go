@@ -37,6 +37,9 @@ type GoogleComputeSecurityPolicyAdvancedOptionsConfigOutputReference interface {
 	LogLevel() *string
 	SetLogLevel(val *string)
 	LogLevelInput() *string
+	RequestBodyInspectionSize() *string
+	SetRequestBodyInspectionSize(val *string)
+	RequestBodyInspectionSizeInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -76,6 +79,7 @@ type GoogleComputeSecurityPolicyAdvancedOptionsConfigOutputReference interface {
 	ResetJsonCustomConfig()
 	ResetJsonParsing()
 	ResetLogLevel()
+	ResetRequestBodyInspectionSize()
 	ResetUserIpRequestHeaders()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -202,6 +206,26 @@ func (j *jsiiProxy_GoogleComputeSecurityPolicyAdvancedOptionsConfigOutputReferen
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeSecurityPolicyAdvancedOptionsConfigOutputReference) RequestBodyInspectionSize() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"requestBodyInspectionSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeSecurityPolicyAdvancedOptionsConfigOutputReference) RequestBodyInspectionSizeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"requestBodyInspectionSizeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeSecurityPolicyAdvancedOptionsConfigOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -321,6 +345,17 @@ func (j *jsiiProxy_GoogleComputeSecurityPolicyAdvancedOptionsConfigOutputReferen
 	_jsii_.Set(
 		j,
 		"logLevel",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeSecurityPolicyAdvancedOptionsConfigOutputReference)SetRequestBodyInspectionSize(val *string) {
+	if err := j.validateSetRequestBodyInspectionSizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"requestBodyInspectionSize",
 		val,
 	)
 }
@@ -575,6 +610,14 @@ func (g *jsiiProxy_GoogleComputeSecurityPolicyAdvancedOptionsConfigOutputReferen
 	_jsii_.InvokeVoid(
 		g,
 		"resetLogLevel",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeSecurityPolicyAdvancedOptionsConfigOutputReference) ResetRequestBodyInspectionSize() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRequestBodyInspectionSize",
 		nil, // no parameters
 	)
 }

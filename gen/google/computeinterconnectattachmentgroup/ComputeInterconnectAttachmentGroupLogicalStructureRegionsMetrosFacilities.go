@@ -1,0 +1,6 @@
+package computeinterconnectattachmentgroup
+
+
+type ComputeInterconnectAttachmentGroupLogicalStructureRegionsMetrosFacilities struct {
+}
+

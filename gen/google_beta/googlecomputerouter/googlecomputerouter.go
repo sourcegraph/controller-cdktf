@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputerouter/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_router google_compute_router}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_compute_router google_compute_router}.
 type GoogleComputeRouter interface {
 	cdktf.TerraformResource
 	Bgp() GoogleComputeRouterBgpOutputReference
@@ -57,11 +57,16 @@ type GoogleComputeRouter interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	NccGateway() *string
+	SetNccGateway(val *string)
+	NccGatewayInput() *string
 	Network() *string
 	SetNetwork(val *string)
 	NetworkInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Params() GoogleComputeRouterParamsOutputReference
+	ParamsInput() *GoogleComputeRouterParams
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -132,15 +137,19 @@ type GoogleComputeRouter interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutBgp(value *GoogleComputeRouterBgp)
 	PutMd5AuthenticationKeys(value *GoogleComputeRouterMd5AuthenticationKeys)
+	PutParams(value *GoogleComputeRouterParams)
 	PutTimeouts(value *GoogleComputeRouterTimeouts)
 	ResetBgp()
 	ResetDescription()
 	ResetEncryptedInterconnectRouter()
 	ResetId()
 	ResetMd5AuthenticationKeys()
+	ResetNccGateway()
+	ResetNetwork()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetParams()
 	ResetProject()
 	ResetRegion()
 	ResetTimeouts()
@@ -382,6 +391,26 @@ func (j *jsiiProxy_GoogleComputeRouter) NameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeRouter) NccGateway() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nccGateway",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRouter) NccGatewayInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nccGatewayInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeRouter) Network() *string {
 	var returns *string
 	_jsii_.Get(
@@ -407,6 +436,26 @@ func (j *jsiiProxy_GoogleComputeRouter) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRouter) Params() GoogleComputeRouterParamsOutputReference {
+	var returns GoogleComputeRouterParamsOutputReference
+	_jsii_.Get(
+		j,
+		"params",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRouter) ParamsInput() *GoogleComputeRouterParams {
+	var returns *GoogleComputeRouterParams
+	_jsii_.Get(
+		j,
+		"paramsInput",
 		&returns,
 	)
 	return returns
@@ -543,7 +592,7 @@ func (j *jsiiProxy_GoogleComputeRouter) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_router google_compute_router} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_compute_router google_compute_router} Resource.
 func NewGoogleComputeRouter(scope constructs.Construct, id *string, config *GoogleComputeRouterConfig) GoogleComputeRouter {
 	_init_.Initialize()
 
@@ -561,7 +610,7 @@ func NewGoogleComputeRouter(scope constructs.Construct, id *string, config *Goog
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_router google_compute_router} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_compute_router google_compute_router} Resource.
 func NewGoogleComputeRouter_Override(g GoogleComputeRouter, scope constructs.Construct, id *string, config *GoogleComputeRouterConfig) {
 	_init_.Initialize()
 
@@ -661,6 +710,17 @@ func (j *jsiiProxy_GoogleComputeRouter)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRouter)SetNccGateway(val *string) {
+	if err := j.validateSetNccGatewayParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"nccGateway",
 		val,
 	)
 }
@@ -1092,6 +1152,17 @@ func (g *jsiiProxy_GoogleComputeRouter) PutMd5AuthenticationKeys(value *GoogleCo
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeRouter) PutParams(value *GoogleComputeRouterParams) {
+	if err := g.validatePutParamsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putParams",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeRouter) PutTimeouts(value *GoogleComputeRouterTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1143,10 +1214,34 @@ func (g *jsiiProxy_GoogleComputeRouter) ResetMd5AuthenticationKeys() {
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeRouter) ResetNccGateway() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNccGateway",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRouter) ResetNetwork() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNetwork",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeRouter) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRouter) ResetParams() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetParams",
 		nil, // no parameters
 	)
 }

@@ -15,6 +15,12 @@ type DataprocClusterClusterConfigOutputReference interface {
 	AuxiliaryNodeGroups() DataprocClusterClusterConfigAuxiliaryNodeGroupsList
 	AuxiliaryNodeGroupsInput() interface{}
 	Bucket() *string
+	ClusterTier() *string
+	SetClusterTier(val *string)
+	ClusterTierInput() *string
+	ClusterType() *string
+	SetClusterType(val *string)
+	ClusterTypeInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -36,6 +42,9 @@ type DataprocClusterClusterConfigOutputReference interface {
 	EncryptionConfigInput() *DataprocClusterClusterConfigEncryptionConfig
 	EndpointConfig() DataprocClusterClusterConfigEndpointConfigOutputReference
 	EndpointConfigInput() *DataprocClusterClusterConfigEndpointConfig
+	Engine() *string
+	SetEngine(val *string)
+	EngineInput() *string
 	// Experimental.
 	Fqn() *string
 	GceClusterConfig() DataprocClusterClusterConfigGceClusterConfigOutputReference
@@ -112,9 +121,12 @@ type DataprocClusterClusterConfigOutputReference interface {
 	PutWorkerConfig(value *DataprocClusterClusterConfigWorkerConfig)
 	ResetAutoscalingConfig()
 	ResetAuxiliaryNodeGroups()
+	ResetClusterTier()
+	ResetClusterType()
 	ResetDataprocMetricConfig()
 	ResetEncryptionConfig()
 	ResetEndpointConfig()
+	ResetEngine()
 	ResetGceClusterConfig()
 	ResetInitializationAction()
 	ResetLifecycleConfig()
@@ -186,6 +198,46 @@ func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference) Bucket() *string
 	_jsii_.Get(
 		j,
 		"bucket",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference) ClusterTier() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusterTier",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference) ClusterTierInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusterTierInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference) ClusterType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusterType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference) ClusterTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusterTypeInput",
 		&returns,
 	)
 	return returns
@@ -276,6 +328,26 @@ func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference) EndpointConfigIn
 	_jsii_.Get(
 		j,
 		"endpointConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference) Engine() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"engine",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference) EngineInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"engineInput",
 		&returns,
 	)
 	return returns
@@ -569,6 +641,28 @@ func NewDataprocClusterClusterConfigOutputReference_Override(d DataprocClusterCl
 	)
 }
 
+func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference)SetClusterTier(val *string) {
+	if err := j.validateSetClusterTierParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"clusterTier",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference)SetClusterType(val *string) {
+	if err := j.validateSetClusterTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"clusterType",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -587,6 +681,17 @@ func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference)SetComplexObjectI
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference)SetEngine(val *string) {
+	if err := j.validateSetEngineParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"engine",
 		val,
 	)
 }
@@ -1002,6 +1107,22 @@ func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) ResetAuxiliaryNo
 	)
 }
 
+func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) ResetClusterTier() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetClusterTier",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) ResetClusterType() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetClusterType",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) ResetDataprocMetricConfig() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1022,6 +1143,14 @@ func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) ResetEndpointCon
 	_jsii_.InvokeVoid(
 		d,
 		"resetEndpointConfig",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) ResetEngine() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetEngine",
 		nil, // no parameters
 	)
 }

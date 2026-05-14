@@ -112,7 +112,19 @@ func (j *jsiiProxy_NetappStoragePool) validateSetCountParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_NetappStoragePool) validateSetCustomPerformanceEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetappStoragePool) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NetappStoragePool) validateSetEnableHotTierAutoResizeParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_NetappStoragePool) validateSetHotTierSizeGibParameters(val *string) error {
 	return nil
 }
 
@@ -140,6 +152,10 @@ func (j *jsiiProxy_NetappStoragePool) validateSetLocationParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_NetappStoragePool) validateSetModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetappStoragePool) validateSetNameParameters(val *string) error {
 	return nil
 }
@@ -156,11 +172,31 @@ func (j *jsiiProxy_NetappStoragePool) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
+func (j *jsiiProxy_NetappStoragePool) validateSetQosTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetappStoragePool) validateSetReplicaZoneParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_NetappStoragePool) validateSetScaleTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetappStoragePool) validateSetServiceLevelParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NetappStoragePool) validateSetTotalIopsParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NetappStoragePool) validateSetTotalThroughputMibpsParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NetappStoragePool) validateSetTypeParameters(val *string) error {
 	return nil
 }
 

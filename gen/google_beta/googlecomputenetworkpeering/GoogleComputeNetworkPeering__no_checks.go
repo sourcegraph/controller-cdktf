@@ -144,6 +144,10 @@ func (j *jsiiProxy_GoogleComputeNetworkPeering) validateSetStackTypeParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeNetworkPeering) validateSetUpdateStrategyParameters(val *string) error {
+	return nil
+}
+
 func validateNewGoogleComputeNetworkPeeringParameters(scope constructs.Construct, id *string, config *GoogleComputeNetworkPeeringConfig) error {
 	return nil
 }

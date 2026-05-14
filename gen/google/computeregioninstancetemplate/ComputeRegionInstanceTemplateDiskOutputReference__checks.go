@@ -131,6 +131,14 @@ func (c *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference) validateRes
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference) validateSetArchitectureParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference) validateSetAutoDeleteParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -268,6 +276,14 @@ func (j *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference) validateSetGuestOsFeaturesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference) validateSetInterfaceParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -365,6 +381,14 @@ func (j *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference) validateSet
 }
 
 func (j *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference) validateSetSourceSnapshotParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference) validateSetStoragePoolParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

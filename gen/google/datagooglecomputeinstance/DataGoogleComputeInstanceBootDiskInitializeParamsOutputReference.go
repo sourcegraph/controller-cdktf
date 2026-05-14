@@ -35,6 +35,7 @@ type DataGoogleComputeInstanceBootDiskInitializeParamsOutputReference interface 
 	Labels() cdktf.StringMap
 	ProvisionedIops() *float64
 	ProvisionedThroughput() *float64
+	ReplicaZones() *[]*string
 	ResourceManagerTags() cdktf.StringMap
 	ResourcePolicies() *[]*string
 	Size() *float64
@@ -195,6 +196,16 @@ func (j *jsiiProxy_DataGoogleComputeInstanceBootDiskInitializeParamsOutputRefere
 	_jsii_.Get(
 		j,
 		"provisionedThroughput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeInstanceBootDiskInitializeParamsOutputReference) ReplicaZones() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"replicaZones",
 		&returns,
 	)
 	return returns

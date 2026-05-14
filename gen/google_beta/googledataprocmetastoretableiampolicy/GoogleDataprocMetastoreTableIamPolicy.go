@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledataprocmetastoretableiampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_dataproc_metastore_table_iam_policy google_dataproc_metastore_table_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_dataproc_metastore_table_iam_policy google_dataproc_metastore_table_iam_policy}.
 type GoogleDataprocMetastoreTableIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -458,7 +458,7 @@ func (j *jsiiProxy_GoogleDataprocMetastoreTableIamPolicy) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_dataproc_metastore_table_iam_policy google_dataproc_metastore_table_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_dataproc_metastore_table_iam_policy google_dataproc_metastore_table_iam_policy} Resource.
 func NewGoogleDataprocMetastoreTableIamPolicy(scope constructs.Construct, id *string, config *GoogleDataprocMetastoreTableIamPolicyConfig) GoogleDataprocMetastoreTableIamPolicy {
 	_init_.Initialize()
 
@@ -476,7 +476,7 @@ func NewGoogleDataprocMetastoreTableIamPolicy(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_dataproc_metastore_table_iam_policy google_dataproc_metastore_table_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_dataproc_metastore_table_iam_policy google_dataproc_metastore_table_iam_policy} Resource.
 func NewGoogleDataprocMetastoreTableIamPolicy_Override(g GoogleDataprocMetastoreTableIamPolicy, scope constructs.Construct, id *string, config *GoogleDataprocMetastoreTableIamPolicyConfig) {
 	_init_.Initialize()
 

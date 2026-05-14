@@ -104,6 +104,10 @@ func (j *jsiiProxy_SqlUser) validateSetCountParameters(val interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_SqlUser) validateSetDatabaseRolesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlUser) validateSetDeletionPolicyParameters(val *string) error {
 	return nil
 }

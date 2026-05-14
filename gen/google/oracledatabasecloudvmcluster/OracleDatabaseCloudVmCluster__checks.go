@@ -266,6 +266,14 @@ func validateOracleDatabaseCloudVmCluster_IsTerraformResourceParameters(x interf
 	return nil
 }
 
+func (j *jsiiProxy_OracleDatabaseCloudVmCluster) validateSetBackupOdbSubnetParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_OracleDatabaseCloudVmCluster) validateSetBackupSubnetCidrParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -449,6 +457,22 @@ func (j *jsiiProxy_OracleDatabaseCloudVmCluster) validateSetLocationParameters(v
 }
 
 func (j *jsiiProxy_OracleDatabaseCloudVmCluster) validateSetNetworkParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_OracleDatabaseCloudVmCluster) validateSetOdbNetworkParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_OracleDatabaseCloudVmCluster) validateSetOdbSubnetParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

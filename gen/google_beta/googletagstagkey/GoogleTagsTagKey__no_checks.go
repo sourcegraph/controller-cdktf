@@ -92,6 +92,10 @@ func validateGoogleTagsTagKey_IsTerraformResourceParameters(x interface{}) error
 	return nil
 }
 
+func (j *jsiiProxy_GoogleTagsTagKey) validateSetAllowedValuesRegexParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleTagsTagKey) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -1,0 +1,6 @@
+package datagoogledataplexdataqualityrules
+
+
+type DataGoogleDataplexDataQualityRulesRulesUniquenessExpectation struct {
+}
+

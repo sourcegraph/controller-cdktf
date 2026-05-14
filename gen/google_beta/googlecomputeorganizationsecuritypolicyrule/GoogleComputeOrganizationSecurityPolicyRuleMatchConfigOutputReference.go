@@ -71,6 +71,7 @@ type GoogleComputeOrganizationSecurityPolicyRuleMatchConfigOutputReference inter
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutLayer4Config(value interface{})
 	ResetDestIpRanges()
+	ResetLayer4Config()
 	ResetSrcIpRanges()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -523,6 +524,14 @@ func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRuleMatchConfigOutputR
 	_jsii_.InvokeVoid(
 		g,
 		"resetDestIpRanges",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRuleMatchConfigOutputReference) ResetLayer4Config() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLayer4Config",
 		nil, // no parameters
 	)
 }

@@ -88,6 +88,10 @@ func (g *jsiiProxy_GoogleDialogflowCxPage) validatePutFormParameters(value *Goog
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDialogflowCxPage) validatePutKnowledgeConnectorSettingsParameters(value *GoogleDialogflowCxPageKnowledgeConnectorSettings) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDialogflowCxPage) validatePutTimeoutsParameters(value *GoogleDialogflowCxPageTimeouts) error {
 	return nil
 }

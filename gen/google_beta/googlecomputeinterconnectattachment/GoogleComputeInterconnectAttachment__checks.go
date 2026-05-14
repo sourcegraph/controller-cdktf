@@ -204,6 +204,28 @@ func (g *jsiiProxy_GoogleComputeInterconnectAttachment) validateOverrideLogicalI
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeInterconnectAttachment) validatePutL2ForwardingParameters(value *GoogleComputeInterconnectAttachmentL2Forwarding) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeInterconnectAttachment) validatePutParamsParameters(value *GoogleComputeInterconnectAttachmentParams) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeInterconnectAttachment) validatePutTimeoutsParameters(value *GoogleComputeInterconnectAttachmentTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -276,6 +298,38 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachment) validateSetAdminEnabledP
 }
 
 func (j *jsiiProxy_GoogleComputeInterconnectAttachment) validateSetBandwidthParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) validateSetCandidateCloudRouterIpAddressParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) validateSetCandidateCloudRouterIpv6AddressParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) validateSetCandidateCustomerRouterIpAddressParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) validateSetCandidateCustomerRouterIpv6AddressParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

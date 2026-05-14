@@ -32,6 +32,9 @@ type GoogleComputeInstanceTemplateDiskDiskEncryptionKeyOutputReference interface
 	KmsKeySelfLink() *string
 	SetKmsKeySelfLink(val *string)
 	KmsKeySelfLinkInput() *string
+	KmsKeyServiceAccount() *string
+	SetKmsKeyServiceAccount(val *string)
+	KmsKeyServiceAccountInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -64,6 +67,8 @@ type GoogleComputeInstanceTemplateDiskDiskEncryptionKeyOutputReference interface
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetKmsKeySelfLink()
+	ResetKmsKeyServiceAccount()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -144,6 +149,26 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskDiskEncryptionKeyOutputRefer
 	_jsii_.Get(
 		j,
 		"kmsKeySelfLinkInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskDiskEncryptionKeyOutputReference) KmsKeyServiceAccount() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKeyServiceAccount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskDiskEncryptionKeyOutputReference) KmsKeyServiceAccountInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKeyServiceAccountInput",
 		&returns,
 	)
 	return returns
@@ -237,6 +262,17 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskDiskEncryptionKeyOutputRefer
 	_jsii_.Set(
 		j,
 		"kmsKeySelfLink",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskDiskEncryptionKeyOutputReference)SetKmsKeyServiceAccount(val *string) {
+	if err := j.validateSetKmsKeyServiceAccountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kmsKeyServiceAccount",
 		val,
 	)
 }
@@ -447,6 +483,22 @@ func (g *jsiiProxy_GoogleComputeInstanceTemplateDiskDiskEncryptionKeyOutputRefer
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceTemplateDiskDiskEncryptionKeyOutputReference) ResetKmsKeySelfLink() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetKmsKeySelfLink",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceTemplateDiskDiskEncryptionKeyOutputReference) ResetKmsKeyServiceAccount() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetKmsKeyServiceAccount",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleComputeInstanceTemplateDiskDiskEncryptionKeyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

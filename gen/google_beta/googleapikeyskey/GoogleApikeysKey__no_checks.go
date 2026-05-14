@@ -128,6 +128,10 @@ func (j *jsiiProxy_GoogleApikeysKey) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
+func (j *jsiiProxy_GoogleApikeysKey) validateSetServiceAccountEmailParameters(val *string) error {
+	return nil
+}
+
 func validateNewGoogleApikeysKeyParameters(scope constructs.Construct, id *string, config *GoogleApikeysKeyConfig) error {
 	return nil
 }

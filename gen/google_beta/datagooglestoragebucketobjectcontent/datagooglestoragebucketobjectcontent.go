@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglestoragebucketobjectcontent/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_storage_bucket_object_content google_storage_bucket_object_content}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/data-sources/google_storage_bucket_object_content google_storage_bucket_object_content}.
 type DataGoogleStorageBucketObjectContent interface {
 	cdktf.TerraformDataSource
 	Bucket() *string
@@ -23,23 +23,28 @@ type DataGoogleStorageBucketObjectContent interface {
 	Content() *string
 	SetContent(val *string)
 	ContentBase64() *string
+	ContentBase64Sha512() *string
 	ContentDisposition() *string
 	ContentEncoding() *string
+	ContentHexsha512() *string
 	ContentInput() *string
 	ContentLanguage() *string
 	ContentType() *string
+	Contexts() DataGoogleStorageBucketObjectContentContextsList
 	// Experimental.
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
 	Crc32C() *string
 	CustomerEncryption() DataGoogleStorageBucketObjectContentCustomerEncryptionList
+	DeletionPolicy() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	DetectMd5Hash() *string
 	EventBasedHold() cdktf.IResolvable
+	ForceEmptyContentType() cdktf.IResolvable
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -76,6 +81,7 @@ type DataGoogleStorageBucketObjectContent interface {
 	Retention() DataGoogleStorageBucketObjectContentRetentionList
 	SelfLink() *string
 	Source() *string
+	SourceMd5Hash() *string
 	StorageClass() *string
 	TemporaryHold() cdktf.IResolvable
 	// Experimental.
@@ -203,6 +209,16 @@ func (j *jsiiProxy_DataGoogleStorageBucketObjectContent) ContentBase64() *string
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleStorageBucketObjectContent) ContentBase64Sha512() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"contentBase64Sha512",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleStorageBucketObjectContent) ContentDisposition() *string {
 	var returns *string
 	_jsii_.Get(
@@ -218,6 +234,16 @@ func (j *jsiiProxy_DataGoogleStorageBucketObjectContent) ContentEncoding() *stri
 	_jsii_.Get(
 		j,
 		"contentEncoding",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleStorageBucketObjectContent) ContentHexsha512() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"contentHexsha512",
 		&returns,
 	)
 	return returns
@@ -253,6 +279,16 @@ func (j *jsiiProxy_DataGoogleStorageBucketObjectContent) ContentType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleStorageBucketObjectContent) Contexts() DataGoogleStorageBucketObjectContentContextsList {
+	var returns DataGoogleStorageBucketObjectContentContextsList
+	_jsii_.Get(
+		j,
+		"contexts",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleStorageBucketObjectContent) Count() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -283,6 +319,16 @@ func (j *jsiiProxy_DataGoogleStorageBucketObjectContent) CustomerEncryption() Da
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleStorageBucketObjectContent) DeletionPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deletionPolicy",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleStorageBucketObjectContent) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -308,6 +354,16 @@ func (j *jsiiProxy_DataGoogleStorageBucketObjectContent) EventBasedHold() cdktf.
 	_jsii_.Get(
 		j,
 		"eventBasedHold",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleStorageBucketObjectContent) ForceEmptyContentType() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"forceEmptyContentType",
 		&returns,
 	)
 	return returns
@@ -523,6 +579,16 @@ func (j *jsiiProxy_DataGoogleStorageBucketObjectContent) Source() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleStorageBucketObjectContent) SourceMd5Hash() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceMd5Hash",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleStorageBucketObjectContent) StorageClass() *string {
 	var returns *string
 	_jsii_.Get(
@@ -574,7 +640,7 @@ func (j *jsiiProxy_DataGoogleStorageBucketObjectContent) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_storage_bucket_object_content google_storage_bucket_object_content} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/data-sources/google_storage_bucket_object_content google_storage_bucket_object_content} Data Source.
 func NewDataGoogleStorageBucketObjectContent(scope constructs.Construct, id *string, config *DataGoogleStorageBucketObjectContentConfig) DataGoogleStorageBucketObjectContent {
 	_init_.Initialize()
 
@@ -592,7 +658,7 @@ func NewDataGoogleStorageBucketObjectContent(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_storage_bucket_object_content google_storage_bucket_object_content} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/data-sources/google_storage_bucket_object_content google_storage_bucket_object_content} Data Source.
 func NewDataGoogleStorageBucketObjectContent_Override(d DataGoogleStorageBucketObjectContent, scope constructs.Construct, id *string, config *DataGoogleStorageBucketObjectContentConfig) {
 	_init_.Initialize()
 

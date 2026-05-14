@@ -29,6 +29,9 @@ type ContainerNodePoolNodeConfigSoleTenantConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *ContainerNodePoolNodeConfigSoleTenantConfig
 	SetInternalValue(val *ContainerNodePoolNodeConfigSoleTenantConfig)
+	MinNodeCpus() *float64
+	SetMinNodeCpus(val *float64)
+	MinNodeCpusInput() *float64
 	NodeAffinity() ContainerNodePoolNodeConfigSoleTenantConfigNodeAffinityList
 	NodeAffinityInput() interface{}
 	// Experimental.
@@ -64,6 +67,7 @@ type ContainerNodePoolNodeConfigSoleTenantConfigOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutNodeAffinity(value interface{})
+	ResetMinNodeCpus()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -124,6 +128,26 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigSoleTenantConfigOutputReference) I
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerNodePoolNodeConfigSoleTenantConfigOutputReference) MinNodeCpus() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"minNodeCpus",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerNodePoolNodeConfigSoleTenantConfigOutputReference) MinNodeCpusInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"minNodeCpusInput",
 		&returns,
 	)
 	return returns
@@ -226,6 +250,17 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigSoleTenantConfigOutputReference)Se
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerNodePoolNodeConfigSoleTenantConfigOutputReference)SetMinNodeCpus(val *float64) {
+	if err := j.validateSetMinNodeCpusParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"minNodeCpus",
 		val,
 	)
 }
@@ -446,6 +481,14 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigSoleTenantConfigOutputReference) P
 		c,
 		"putNodeAffinity",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ContainerNodePoolNodeConfigSoleTenantConfigOutputReference) ResetMinNodeCpus() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetMinNodeCpus",
+		nil, // no parameters
 	)
 }
 

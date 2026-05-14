@@ -72,6 +72,14 @@ func (c *jsiiProxy_ComputeInterconnectAttachment) validateOverrideLogicalIdParam
 	return nil
 }
 
+func (c *jsiiProxy_ComputeInterconnectAttachment) validatePutL2ForwardingParameters(value *ComputeInterconnectAttachmentL2Forwarding) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeInterconnectAttachment) validatePutParamsParameters(value *ComputeInterconnectAttachmentParams) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeInterconnectAttachment) validatePutTimeoutsParameters(value *ComputeInterconnectAttachmentTimeouts) error {
 	return nil
 }
@@ -97,6 +105,22 @@ func (j *jsiiProxy_ComputeInterconnectAttachment) validateSetAdminEnabledParamet
 }
 
 func (j *jsiiProxy_ComputeInterconnectAttachment) validateSetBandwidthParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeInterconnectAttachment) validateSetCandidateCloudRouterIpAddressParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeInterconnectAttachment) validateSetCandidateCloudRouterIpv6AddressParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeInterconnectAttachment) validateSetCandidateCustomerRouterIpAddressParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeInterconnectAttachment) validateSetCandidateCustomerRouterIpv6AddressParameters(val *string) error {
 	return nil
 }
 

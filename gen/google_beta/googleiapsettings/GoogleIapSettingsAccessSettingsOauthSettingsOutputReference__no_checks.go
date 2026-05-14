@@ -48,6 +48,14 @@ func (g *jsiiProxy_GoogleIapSettingsAccessSettingsOauthSettingsOutputReference) 
 	return nil
 }
 
+func (j *jsiiProxy_GoogleIapSettingsAccessSettingsOauthSettingsOutputReference) validateSetClientIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleIapSettingsAccessSettingsOauthSettingsOutputReference) validateSetClientSecretParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleIapSettingsAccessSettingsOauthSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

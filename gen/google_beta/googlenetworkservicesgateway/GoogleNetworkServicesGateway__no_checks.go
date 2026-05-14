@@ -96,6 +96,10 @@ func (j *jsiiProxy_GoogleNetworkServicesGateway) validateSetAddressesParameters(
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetworkServicesGateway) validateSetAllPortsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetworkServicesGateway) validateSetCertificateUrlsParameters(val *[]*string) error {
 	return nil
 }

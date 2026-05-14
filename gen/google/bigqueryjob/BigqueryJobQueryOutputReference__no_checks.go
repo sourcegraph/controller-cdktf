@@ -44,6 +44,10 @@ func (b *jsiiProxy_BigqueryJobQueryOutputReference) validateInterpolationForAttr
 	return nil
 }
 
+func (b *jsiiProxy_BigqueryJobQueryOutputReference) validatePutConnectionPropertiesParameters(value interface{}) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryJobQueryOutputReference) validatePutDefaultDatasetParameters(value *BigqueryJobQueryDefaultDataset) error {
 	return nil
 }

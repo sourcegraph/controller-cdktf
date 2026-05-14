@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/networksecurityauthzpolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/network_security_authz_policy google_network_security_authz_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_authz_policy google_network_security_authz_policy}.
 type NetworkSecurityAuthzPolicy interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -66,6 +66,9 @@ type NetworkSecurityAuthzPolicy interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	PolicyProfile() *string
+	SetPolicyProfile(val *string)
+	PolicyProfileInput() *string
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -146,6 +149,7 @@ type NetworkSecurityAuthzPolicy interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPolicyProfile()
 	ResetProject()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -446,6 +450,26 @@ func (j *jsiiProxy_NetworkSecurityAuthzPolicy) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_NetworkSecurityAuthzPolicy) PolicyProfile() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"policyProfile",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkSecurityAuthzPolicy) PolicyProfileInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"policyProfileInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NetworkSecurityAuthzPolicy) Project() *string {
 	var returns *string
 	_jsii_.Get(
@@ -587,7 +611,7 @@ func (j *jsiiProxy_NetworkSecurityAuthzPolicy) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/network_security_authz_policy google_network_security_authz_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_authz_policy google_network_security_authz_policy} Resource.
 func NewNetworkSecurityAuthzPolicy(scope constructs.Construct, id *string, config *NetworkSecurityAuthzPolicyConfig) NetworkSecurityAuthzPolicy {
 	_init_.Initialize()
 
@@ -605,7 +629,7 @@ func NewNetworkSecurityAuthzPolicy(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/network_security_authz_policy google_network_security_authz_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_authz_policy google_network_security_authz_policy} Resource.
 func NewNetworkSecurityAuthzPolicy_Override(n NetworkSecurityAuthzPolicy, scope constructs.Construct, id *string, config *NetworkSecurityAuthzPolicyConfig) {
 	_init_.Initialize()
 
@@ -727,6 +751,17 @@ func (j *jsiiProxy_NetworkSecurityAuthzPolicy)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkSecurityAuthzPolicy)SetPolicyProfile(val *string) {
+	if err := j.validateSetPolicyProfileParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"policyProfile",
 		val,
 	)
 }
@@ -1202,6 +1237,14 @@ func (n *jsiiProxy_NetworkSecurityAuthzPolicy) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkSecurityAuthzPolicy) ResetPolicyProfile() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetPolicyProfile",
 		nil, // no parameters
 	)
 }

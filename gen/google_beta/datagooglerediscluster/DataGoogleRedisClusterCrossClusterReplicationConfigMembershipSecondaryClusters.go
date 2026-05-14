@@ -1,0 +1,6 @@
+package datagooglerediscluster
+
+
+type DataGoogleRedisClusterCrossClusterReplicationConfigMembershipSecondaryClusters struct {
+}
+

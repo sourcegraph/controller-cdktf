@@ -72,10 +72,6 @@ func (j *jsiiProxy_DataGoogleComputeReservation) validateSetCountParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeReservation) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataGoogleComputeReservation) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

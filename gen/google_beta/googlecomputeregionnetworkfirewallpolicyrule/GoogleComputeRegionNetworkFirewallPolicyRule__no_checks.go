@@ -164,7 +164,15 @@ func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule) validateSetSecu
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule) validateSetTargetForwardingRulesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule) validateSetTargetServiceAccountsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule) validateSetTargetTypeParameters(val *string) error {
 	return nil
 }
 

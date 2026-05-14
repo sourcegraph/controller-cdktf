@@ -215,6 +215,37 @@ func (g *jsiiProxy_GoogleComputeFirewallPolicyRule) validatePutMatchParameters(v
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeFirewallPolicyRule) validatePutTargetSecureTagsParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*GoogleComputeFirewallPolicyRuleTargetSecureTags:
+		value := value.(*[]*GoogleComputeFirewallPolicyRuleTargetSecureTags)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*GoogleComputeFirewallPolicyRuleTargetSecureTags:
+		value_ := value.([]*GoogleComputeFirewallPolicyRuleTargetSecureTags)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*GoogleComputeFirewallPolicyRuleTargetSecureTags; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeFirewallPolicyRule) validatePutTimeoutsParameters(value *GoogleComputeFirewallPolicyRuleTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

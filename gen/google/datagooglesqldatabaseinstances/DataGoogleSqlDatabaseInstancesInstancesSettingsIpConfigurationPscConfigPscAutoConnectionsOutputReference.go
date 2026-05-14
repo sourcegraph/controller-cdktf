@@ -21,6 +21,7 @@ type DataGoogleSqlDatabaseInstancesInstancesSettingsIpConfigurationPscConfigPscA
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
 	ConsumerNetwork() *string
+	ConsumerNetworkStatus() *string
 	ConsumerServiceProjectId() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
@@ -31,6 +32,8 @@ type DataGoogleSqlDatabaseInstancesInstancesSettingsIpConfigurationPscConfigPscA
 	Fqn() *string
 	InternalValue() *DataGoogleSqlDatabaseInstancesInstancesSettingsIpConfigurationPscConfigPscAutoConnections
 	SetInternalValue(val *DataGoogleSqlDatabaseInstancesInstancesSettingsIpConfigurationPscConfigPscAutoConnections)
+	IpAddress() *string
+	Status() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -108,6 +111,16 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsIpConfiguratio
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference) ConsumerNetworkStatus() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"consumerNetworkStatus",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference) ConsumerServiceProjectId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -143,6 +156,26 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsIpConfiguratio
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference) IpAddress() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipAddress",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference) Status() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"status",
 		&returns,
 	)
 	return returns

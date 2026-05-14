@@ -13,6 +13,9 @@ type GoogleComputeResourcePolicyWorkloadPolicyOutputReference interface {
 	AcceleratorTopology() *string
 	SetAcceleratorTopology(val *string)
 	AcceleratorTopologyInput() *string
+	AcceleratorTopologyMode() *string
+	SetAcceleratorTopologyMode(val *string)
+	AcceleratorTopologyModeInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -71,6 +74,7 @@ type GoogleComputeResourcePolicyWorkloadPolicyOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAcceleratorTopology()
+	ResetAcceleratorTopologyMode()
 	ResetMaxTopologyDistance()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -102,6 +106,26 @@ func (j *jsiiProxy_GoogleComputeResourcePolicyWorkloadPolicyOutputReference) Acc
 	_jsii_.Get(
 		j,
 		"acceleratorTopologyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeResourcePolicyWorkloadPolicyOutputReference) AcceleratorTopologyMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"acceleratorTopologyMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeResourcePolicyWorkloadPolicyOutputReference) AcceleratorTopologyModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"acceleratorTopologyModeInput",
 		&returns,
 	)
 	return returns
@@ -252,6 +276,17 @@ func (j *jsiiProxy_GoogleComputeResourcePolicyWorkloadPolicyOutputReference)SetA
 	_jsii_.Set(
 		j,
 		"acceleratorTopology",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeResourcePolicyWorkloadPolicyOutputReference)SetAcceleratorTopologyMode(val *string) {
+	if err := j.validateSetAcceleratorTopologyModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"acceleratorTopologyMode",
 		val,
 	)
 }
@@ -523,6 +558,14 @@ func (g *jsiiProxy_GoogleComputeResourcePolicyWorkloadPolicyOutputReference) Res
 	_jsii_.InvokeVoid(
 		g,
 		"resetAcceleratorTopology",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeResourcePolicyWorkloadPolicyOutputReference) ResetAcceleratorTopologyMode() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAcceleratorTopologyMode",
 		nil, // no parameters
 	)
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/computebackendservice/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_backend_service google_compute_backend_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_backend_service google_compute_backend_service}.
 type ComputeBackendService interface {
 	cdktf.TerraformResource
 	AffinityCookieTtlSec() *float64
@@ -63,6 +63,12 @@ type ComputeBackendService interface {
 	EnableCdn() interface{}
 	SetEnableCdn(val interface{})
 	EnableCdnInput() interface{}
+	ExternalManagedMigrationState() *string
+	SetExternalManagedMigrationState(val *string)
+	ExternalManagedMigrationStateInput() *string
+	ExternalManagedMigrationTestingPercentage() *float64
+	SetExternalManagedMigrationTestingPercentage(val *float64)
+	ExternalManagedMigrationTestingPercentageInput() *float64
 	Fingerprint() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -107,6 +113,8 @@ type ComputeBackendService interface {
 	Node() constructs.Node
 	OutlierDetection() ComputeBackendServiceOutlierDetectionOutputReference
 	OutlierDetectionInput() *ComputeBackendServiceOutlierDetection
+	Params() ComputeBackendServiceParamsOutputReference
+	ParamsInput() *ComputeBackendServiceParams
 	PortName() *string
 	SetPortName(val *string)
 	PortNameInput() *string
@@ -151,6 +159,8 @@ type ComputeBackendService interface {
 	SetTimeoutSec(val *float64)
 	TimeoutSecInput() *float64
 	TimeoutsInput() interface{}
+	TlsSettings() ComputeBackendServiceTlsSettingsOutputReference
+	TlsSettingsInput() *ComputeBackendServiceTlsSettings
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -204,9 +214,11 @@ type ComputeBackendService interface {
 	PutLogConfig(value *ComputeBackendServiceLogConfig)
 	PutMaxStreamDuration(value *ComputeBackendServiceMaxStreamDuration)
 	PutOutlierDetection(value *ComputeBackendServiceOutlierDetection)
+	PutParams(value *ComputeBackendServiceParams)
 	PutSecuritySettings(value *ComputeBackendServiceSecuritySettings)
 	PutStrongSessionAffinityCookie(value *ComputeBackendServiceStrongSessionAffinityCookie)
 	PutTimeouts(value *ComputeBackendServiceTimeouts)
+	PutTlsSettings(value *ComputeBackendServiceTlsSettings)
 	ResetAffinityCookieTtlSec()
 	ResetBackend()
 	ResetCdnPolicy()
@@ -220,6 +232,8 @@ type ComputeBackendService interface {
 	ResetDescription()
 	ResetEdgeSecurityPolicy()
 	ResetEnableCdn()
+	ResetExternalManagedMigrationState()
+	ResetExternalManagedMigrationTestingPercentage()
 	ResetHealthChecks()
 	ResetIap()
 	ResetId()
@@ -233,6 +247,7 @@ type ComputeBackendService interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetParams()
 	ResetPortName()
 	ResetProject()
 	ResetProtocol()
@@ -243,6 +258,7 @@ type ComputeBackendService interface {
 	ResetStrongSessionAffinityCookie()
 	ResetTimeouts()
 	ResetTimeoutSec()
+	ResetTlsSettings()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -581,6 +597,46 @@ func (j *jsiiProxy_ComputeBackendService) EnableCdnInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeBackendService) ExternalManagedMigrationState() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"externalManagedMigrationState",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeBackendService) ExternalManagedMigrationStateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"externalManagedMigrationStateInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeBackendService) ExternalManagedMigrationTestingPercentage() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"externalManagedMigrationTestingPercentage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeBackendService) ExternalManagedMigrationTestingPercentageInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"externalManagedMigrationTestingPercentageInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeBackendService) Fingerprint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -871,6 +927,26 @@ func (j *jsiiProxy_ComputeBackendService) OutlierDetectionInput() *ComputeBacken
 	return returns
 }
 
+func (j *jsiiProxy_ComputeBackendService) Params() ComputeBackendServiceParamsOutputReference {
+	var returns ComputeBackendServiceParamsOutputReference
+	_jsii_.Get(
+		j,
+		"params",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeBackendService) ParamsInput() *ComputeBackendServiceParams {
+	var returns *ComputeBackendServiceParams
+	_jsii_.Get(
+		j,
+		"paramsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeBackendService) PortName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1141,8 +1217,28 @@ func (j *jsiiProxy_ComputeBackendService) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeBackendService) TlsSettings() ComputeBackendServiceTlsSettingsOutputReference {
+	var returns ComputeBackendServiceTlsSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"tlsSettings",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_backend_service google_compute_backend_service} Resource.
+func (j *jsiiProxy_ComputeBackendService) TlsSettingsInput() *ComputeBackendServiceTlsSettings {
+	var returns *ComputeBackendServiceTlsSettings
+	_jsii_.Get(
+		j,
+		"tlsSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_backend_service google_compute_backend_service} Resource.
 func NewComputeBackendService(scope constructs.Construct, id *string, config *ComputeBackendServiceConfig) ComputeBackendService {
 	_init_.Initialize()
 
@@ -1160,7 +1256,7 @@ func NewComputeBackendService(scope constructs.Construct, id *string, config *Co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_backend_service google_compute_backend_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_backend_service google_compute_backend_service} Resource.
 func NewComputeBackendService_Override(c ComputeBackendService, scope constructs.Construct, id *string, config *ComputeBackendServiceConfig) {
 	_init_.Initialize()
 
@@ -1285,6 +1381,28 @@ func (j *jsiiProxy_ComputeBackendService)SetEnableCdn(val interface{}) {
 	_jsii_.Set(
 		j,
 		"enableCdn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeBackendService)SetExternalManagedMigrationState(val *string) {
+	if err := j.validateSetExternalManagedMigrationStateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"externalManagedMigrationState",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeBackendService)SetExternalManagedMigrationTestingPercentage(val *float64) {
+	if err := j.validateSetExternalManagedMigrationTestingPercentageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"externalManagedMigrationTestingPercentage",
 		val,
 	)
 }
@@ -1933,6 +2051,17 @@ func (c *jsiiProxy_ComputeBackendService) PutOutlierDetection(value *ComputeBack
 	)
 }
 
+func (c *jsiiProxy_ComputeBackendService) PutParams(value *ComputeBackendServiceParams) {
+	if err := c.validatePutParamsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putParams",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeBackendService) PutSecuritySettings(value *ComputeBackendServiceSecuritySettings) {
 	if err := c.validatePutSecuritySettingsParameters(value); err != nil {
 		panic(err)
@@ -1962,6 +2091,17 @@ func (c *jsiiProxy_ComputeBackendService) PutTimeouts(value *ComputeBackendServi
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ComputeBackendService) PutTlsSettings(value *ComputeBackendServiceTlsSettings) {
+	if err := c.validatePutTlsSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putTlsSettings",
 		[]interface{}{value},
 	)
 }
@@ -2070,6 +2210,22 @@ func (c *jsiiProxy_ComputeBackendService) ResetEnableCdn() {
 	)
 }
 
+func (c *jsiiProxy_ComputeBackendService) ResetExternalManagedMigrationState() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetExternalManagedMigrationState",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeBackendService) ResetExternalManagedMigrationTestingPercentage() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetExternalManagedMigrationTestingPercentage",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ComputeBackendService) ResetHealthChecks() {
 	_jsii_.InvokeVoid(
 		c,
@@ -2158,6 +2314,14 @@ func (c *jsiiProxy_ComputeBackendService) ResetOverrideLogicalId() {
 	)
 }
 
+func (c *jsiiProxy_ComputeBackendService) ResetParams() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetParams",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ComputeBackendService) ResetPortName() {
 	_jsii_.InvokeVoid(
 		c,
@@ -2234,6 +2398,14 @@ func (c *jsiiProxy_ComputeBackendService) ResetTimeoutSec() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetTimeoutSec",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeBackendService) ResetTlsSettings() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetTlsSettings",
 		nil, // no parameters
 	)
 }

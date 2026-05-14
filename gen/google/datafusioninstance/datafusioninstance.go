@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/datafusioninstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/data_fusion_instance google_data_fusion_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_fusion_instance google_data_fusion_instance}.
 type DataFusionInstance interface {
 	cdktf.TerraformResource
 	Accelerators() DataFusionInstanceAcceleratorsList
@@ -85,6 +85,9 @@ type DataFusionInstance interface {
 	SetOptions(val *map[string]*string)
 	OptionsInput() *map[string]*string
 	P4ServiceAccount() *string
+	PatchRevision() *string
+	SetPatchRevision(val *string)
+	PatchRevisionInput() *string
 	PrivateInstance() interface{}
 	SetPrivateInstance(val interface{})
 	PrivateInstanceInput() interface{}
@@ -194,6 +197,7 @@ type DataFusionInstance interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPatchRevision()
 	ResetPrivateInstance()
 	ResetProject()
 	ResetRegion()
@@ -649,6 +653,26 @@ func (j *jsiiProxy_DataFusionInstance) P4ServiceAccount() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataFusionInstance) PatchRevision() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"patchRevision",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataFusionInstance) PatchRevisionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"patchRevisionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataFusionInstance) PrivateInstance() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -930,7 +954,7 @@ func (j *jsiiProxy_DataFusionInstance) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/data_fusion_instance google_data_fusion_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_fusion_instance google_data_fusion_instance} Resource.
 func NewDataFusionInstance(scope constructs.Construct, id *string, config *DataFusionInstanceConfig) DataFusionInstance {
 	_init_.Initialize()
 
@@ -948,7 +972,7 @@ func NewDataFusionInstance(scope constructs.Construct, id *string, config *DataF
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/data_fusion_instance google_data_fusion_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_fusion_instance google_data_fusion_instance} Resource.
 func NewDataFusionInstance_Override(d DataFusionInstance, scope constructs.Construct, id *string, config *DataFusionInstanceConfig) {
 	_init_.Initialize()
 
@@ -1114,6 +1138,17 @@ func (j *jsiiProxy_DataFusionInstance)SetOptions(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"options",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataFusionInstance)SetPatchRevision(val *string) {
+	if err := j.validateSetPatchRevisionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"patchRevision",
 		val,
 	)
 }
@@ -1730,6 +1765,14 @@ func (d *jsiiProxy_DataFusionInstance) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataFusionInstance) ResetPatchRevision() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPatchRevision",
 		nil, // no parameters
 	)
 }

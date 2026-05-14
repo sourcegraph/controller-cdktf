@@ -358,14 +358,6 @@ func (j *jsiiProxy_StorageNotification) validateSetEventTypesParameters(val *[]*
 	return nil
 }
 
-func (j *jsiiProxy_StorageNotification) validateSetIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_StorageNotification) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err

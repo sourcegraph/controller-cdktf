@@ -88,6 +88,10 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceLatestRecoveryTime) validateSetP
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceLatestRecoveryTime) validateSetSourceInstanceDeletionTimeParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataGoogleSqlDatabaseInstanceLatestRecoveryTimeParameters(scope constructs.Construct, id *string, config *DataGoogleSqlDatabaseInstanceLatestRecoveryTimeConfig) error {
 	return nil
 }

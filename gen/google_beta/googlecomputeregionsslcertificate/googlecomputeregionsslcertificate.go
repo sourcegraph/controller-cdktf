@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeregionsslcertificate/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_region_ssl_certificate google_compute_region_ssl_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_compute_region_ssl_certificate google_compute_region_ssl_certificate}.
 type GoogleComputeRegionSslCertificate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -63,6 +63,12 @@ type GoogleComputeRegionSslCertificate interface {
 	PrivateKey() *string
 	SetPrivateKey(val *string)
 	PrivateKeyInput() *string
+	PrivateKeyWo() *string
+	SetPrivateKeyWo(val *string)
+	PrivateKeyWoInput() *string
+	PrivateKeyWoVersion() *string
+	SetPrivateKeyWoVersion(val *string)
+	PrivateKeyWoVersionInput() *string
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -139,6 +145,9 @@ type GoogleComputeRegionSslCertificate interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPrivateKey()
+	ResetPrivateKeyWo()
+	ResetPrivateKeyWoVersion()
 	ResetProject()
 	ResetRegion()
 	ResetTimeouts()
@@ -410,6 +419,46 @@ func (j *jsiiProxy_GoogleComputeRegionSslCertificate) PrivateKeyInput() *string 
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeRegionSslCertificate) PrivateKeyWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privateKeyWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionSslCertificate) PrivateKeyWoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privateKeyWoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionSslCertificate) PrivateKeyWoVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privateKeyWoVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionSslCertificate) PrivateKeyWoVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privateKeyWoVersionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeRegionSslCertificate) Project() *string {
 	var returns *string
 	_jsii_.Get(
@@ -541,7 +590,7 @@ func (j *jsiiProxy_GoogleComputeRegionSslCertificate) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_region_ssl_certificate google_compute_region_ssl_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_compute_region_ssl_certificate google_compute_region_ssl_certificate} Resource.
 func NewGoogleComputeRegionSslCertificate(scope constructs.Construct, id *string, config *GoogleComputeRegionSslCertificateConfig) GoogleComputeRegionSslCertificate {
 	_init_.Initialize()
 
@@ -559,7 +608,7 @@ func NewGoogleComputeRegionSslCertificate(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_region_ssl_certificate google_compute_region_ssl_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_compute_region_ssl_certificate google_compute_region_ssl_certificate} Resource.
 func NewGoogleComputeRegionSslCertificate_Override(g GoogleComputeRegionSslCertificate, scope constructs.Construct, id *string, config *GoogleComputeRegionSslCertificateConfig) {
 	_init_.Initialize()
 
@@ -681,6 +730,28 @@ func (j *jsiiProxy_GoogleComputeRegionSslCertificate)SetPrivateKey(val *string) 
 	_jsii_.Set(
 		j,
 		"privateKey",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionSslCertificate)SetPrivateKeyWo(val *string) {
+	if err := j.validateSetPrivateKeyWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"privateKeyWo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionSslCertificate)SetPrivateKeyWoVersion(val *string) {
+	if err := j.validateSetPrivateKeyWoVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"privateKeyWoVersion",
 		val,
 	)
 }
@@ -1126,6 +1197,30 @@ func (g *jsiiProxy_GoogleComputeRegionSslCertificate) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionSslCertificate) ResetPrivateKey() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPrivateKey",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionSslCertificate) ResetPrivateKeyWo() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPrivateKeyWo",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionSslCertificate) ResetPrivateKeyWoVersion() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPrivateKeyWoVersion",
 		nil, // no parameters
 	)
 }

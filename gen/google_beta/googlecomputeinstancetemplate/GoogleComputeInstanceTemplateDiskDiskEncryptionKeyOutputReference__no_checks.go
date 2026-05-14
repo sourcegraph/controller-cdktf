@@ -64,6 +64,10 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskDiskEncryptionKeyOutputRefer
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskDiskEncryptionKeyOutputReference) validateSetKmsKeyServiceAccountParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskDiskEncryptionKeyOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

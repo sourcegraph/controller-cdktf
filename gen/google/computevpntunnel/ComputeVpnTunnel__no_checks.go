@@ -72,6 +72,14 @@ func (c *jsiiProxy_ComputeVpnTunnel) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
+func (c *jsiiProxy_ComputeVpnTunnel) validatePutCipherSuiteParameters(value *ComputeVpnTunnelCipherSuite) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeVpnTunnel) validatePutParamsParameters(value *ComputeVpnTunnelParams) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeVpnTunnel) validatePutTimeoutsParameters(value *ComputeVpnTunnelTimeouts) error {
 	return nil
 }
@@ -165,6 +173,14 @@ func (j *jsiiProxy_ComputeVpnTunnel) validateSetRouterParameters(val *string) er
 }
 
 func (j *jsiiProxy_ComputeVpnTunnel) validateSetSharedSecretParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeVpnTunnel) validateSetSharedSecretWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeVpnTunnel) validateSetSharedSecretWoVersionParameters(val *string) error {
 	return nil
 }
 

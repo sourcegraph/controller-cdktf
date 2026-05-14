@@ -9,11 +9,13 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/computevpntunnel/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_vpn_tunnel google_compute_vpn_tunnel}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_vpn_tunnel google_compute_vpn_tunnel}.
 type ComputeVpnTunnel interface {
 	cdktf.TerraformResource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	CipherSuite() ComputeVpnTunnelCipherSuiteOutputReference
+	CipherSuiteInput() *ComputeVpnTunnelCipherSuite
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -64,6 +66,8 @@ type ComputeVpnTunnel interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Params() ComputeVpnTunnelParamsOutputReference
+	ParamsInput() *ComputeVpnTunnelParams
 	PeerExternalGateway() *string
 	SetPeerExternalGateway(val *string)
 	PeerExternalGatewayInput() *string
@@ -103,6 +107,12 @@ type ComputeVpnTunnel interface {
 	SetSharedSecret(val *string)
 	SharedSecretHash() *string
 	SharedSecretInput() *string
+	SharedSecretWo() *string
+	SetSharedSecretWo(val *string)
+	SharedSecretWoInput() *string
+	SharedSecretWoVersion() *string
+	SetSharedSecretWoVersion(val *string)
+	SharedSecretWoVersionInput() *string
 	TargetVpnGateway() *string
 	SetTargetVpnGateway(val *string)
 	TargetVpnGatewayInput() *string
@@ -165,7 +175,10 @@ type ComputeVpnTunnel interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutCipherSuite(value *ComputeVpnTunnelCipherSuite)
+	PutParams(value *ComputeVpnTunnelParams)
 	PutTimeouts(value *ComputeVpnTunnelTimeouts)
+	ResetCipherSuite()
 	ResetDescription()
 	ResetId()
 	ResetIkeVersion()
@@ -174,6 +187,7 @@ type ComputeVpnTunnel interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetParams()
 	ResetPeerExternalGateway()
 	ResetPeerExternalGatewayInterface()
 	ResetPeerGcpGateway()
@@ -182,6 +196,9 @@ type ComputeVpnTunnel interface {
 	ResetRegion()
 	ResetRemoteTrafficSelector()
 	ResetRouter()
+	ResetSharedSecret()
+	ResetSharedSecretWo()
+	ResetSharedSecretWoVersion()
 	ResetTargetVpnGateway()
 	ResetTimeouts()
 	ResetVpnGateway()
@@ -209,6 +226,26 @@ func (j *jsiiProxy_ComputeVpnTunnel) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeVpnTunnel) CipherSuite() ComputeVpnTunnelCipherSuiteOutputReference {
+	var returns ComputeVpnTunnelCipherSuiteOutputReference
+	_jsii_.Get(
+		j,
+		"cipherSuite",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeVpnTunnel) CipherSuiteInput() *ComputeVpnTunnelCipherSuite {
+	var returns *ComputeVpnTunnelCipherSuite
+	_jsii_.Get(
+		j,
+		"cipherSuiteInput",
 		&returns,
 	)
 	return returns
@@ -464,6 +501,26 @@ func (j *jsiiProxy_ComputeVpnTunnel) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeVpnTunnel) Params() ComputeVpnTunnelParamsOutputReference {
+	var returns ComputeVpnTunnelParamsOutputReference
+	_jsii_.Get(
+		j,
+		"params",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeVpnTunnel) ParamsInput() *ComputeVpnTunnelParams {
+	var returns *ComputeVpnTunnelParams
+	_jsii_.Get(
+		j,
+		"paramsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeVpnTunnel) PeerExternalGateway() *string {
 	var returns *string
 	_jsii_.Get(
@@ -694,6 +751,46 @@ func (j *jsiiProxy_ComputeVpnTunnel) SharedSecretInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeVpnTunnel) SharedSecretWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sharedSecretWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeVpnTunnel) SharedSecretWoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sharedSecretWoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeVpnTunnel) SharedSecretWoVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sharedSecretWoVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeVpnTunnel) SharedSecretWoVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sharedSecretWoVersionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeVpnTunnel) TargetVpnGateway() *string {
 	var returns *string
 	_jsii_.Get(
@@ -825,7 +922,7 @@ func (j *jsiiProxy_ComputeVpnTunnel) VpnGatewayInterfaceInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_vpn_tunnel google_compute_vpn_tunnel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_vpn_tunnel google_compute_vpn_tunnel} Resource.
 func NewComputeVpnTunnel(scope constructs.Construct, id *string, config *ComputeVpnTunnelConfig) ComputeVpnTunnel {
 	_init_.Initialize()
 
@@ -843,7 +940,7 @@ func NewComputeVpnTunnel(scope constructs.Construct, id *string, config *Compute
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_vpn_tunnel google_compute_vpn_tunnel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_vpn_tunnel google_compute_vpn_tunnel} Resource.
 func NewComputeVpnTunnel_Override(c ComputeVpnTunnel, scope constructs.Construct, id *string, config *ComputeVpnTunnelConfig) {
 	_init_.Initialize()
 
@@ -1083,6 +1180,28 @@ func (j *jsiiProxy_ComputeVpnTunnel)SetSharedSecret(val *string) {
 	_jsii_.Set(
 		j,
 		"sharedSecret",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeVpnTunnel)SetSharedSecretWo(val *string) {
+	if err := j.validateSetSharedSecretWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sharedSecretWo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeVpnTunnel)SetSharedSecretWoVersion(val *string) {
+	if err := j.validateSetSharedSecretWoVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sharedSecretWoVersion",
 		val,
 	)
 }
@@ -1473,6 +1592,28 @@ func (c *jsiiProxy_ComputeVpnTunnel) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (c *jsiiProxy_ComputeVpnTunnel) PutCipherSuite(value *ComputeVpnTunnelCipherSuite) {
+	if err := c.validatePutCipherSuiteParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putCipherSuite",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ComputeVpnTunnel) PutParams(value *ComputeVpnTunnelParams) {
+	if err := c.validatePutParamsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putParams",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeVpnTunnel) PutTimeouts(value *ComputeVpnTunnelTimeouts) {
 	if err := c.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1481,6 +1622,14 @@ func (c *jsiiProxy_ComputeVpnTunnel) PutTimeouts(value *ComputeVpnTunnelTimeouts
 		c,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ComputeVpnTunnel) ResetCipherSuite() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCipherSuite",
+		nil, // no parameters
 	)
 }
 
@@ -1528,6 +1677,14 @@ func (c *jsiiProxy_ComputeVpnTunnel) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeVpnTunnel) ResetParams() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetParams",
 		nil, // no parameters
 	)
 }
@@ -1592,6 +1749,30 @@ func (c *jsiiProxy_ComputeVpnTunnel) ResetRouter() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetRouter",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeVpnTunnel) ResetSharedSecret() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSharedSecret",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeVpnTunnel) ResetSharedSecretWo() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSharedSecretWo",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeVpnTunnel) ResetSharedSecretWoVersion() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSharedSecretWoVersion",
 		nil, // no parameters
 	)
 }

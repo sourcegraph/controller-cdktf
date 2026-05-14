@@ -1,0 +1,6 @@
+package googlecontactcenterinsightsqascorecardrevision
+
+
+type GoogleContactCenterInsightsQaScorecardRevisionSnapshot struct {
+}
+

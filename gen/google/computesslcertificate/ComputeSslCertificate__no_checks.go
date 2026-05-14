@@ -128,6 +128,14 @@ func (j *jsiiProxy_ComputeSslCertificate) validateSetPrivateKeyParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_ComputeSslCertificate) validateSetPrivateKeyWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeSslCertificate) validateSetPrivateKeyWoVersionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeSslCertificate) validateSetProjectParameters(val *string) error {
 	return nil
 }

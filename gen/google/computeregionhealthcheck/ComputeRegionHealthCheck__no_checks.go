@@ -76,6 +76,10 @@ func (c *jsiiProxy_ComputeRegionHealthCheck) validatePutGrpcHealthCheckParameter
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRegionHealthCheck) validatePutGrpcTlsHealthCheckParameters(value *ComputeRegionHealthCheckGrpcTlsHealthCheck) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionHealthCheck) validatePutHttp2HealthCheckParameters(value *ComputeRegionHealthCheckHttp2HealthCheck) error {
 	return nil
 }

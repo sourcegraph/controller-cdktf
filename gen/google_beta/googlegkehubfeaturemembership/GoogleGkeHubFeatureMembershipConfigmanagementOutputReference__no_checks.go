@@ -44,10 +44,6 @@ func (g *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementOutputReference)
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementOutputReference) validatePutBinauthzParameters(value *GoogleGkeHubFeatureMembershipConfigmanagementBinauthz) error {
-	return nil
-}
-
 func (g *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementOutputReference) validatePutConfigSyncParameters(value *GoogleGkeHubFeatureMembershipConfigmanagementConfigSync) error {
 	return nil
 }

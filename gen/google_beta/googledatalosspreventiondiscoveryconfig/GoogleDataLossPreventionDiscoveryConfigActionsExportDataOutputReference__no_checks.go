@@ -48,6 +48,10 @@ func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigActionsExportDataOutpu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigActionsExportDataOutputReference) validatePutSampleFindingsTableParameters(value *GoogleDataLossPreventionDiscoveryConfigActionsExportDataSampleFindingsTable) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigActionsExportDataOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

@@ -64,6 +64,10 @@ func (j *jsiiProxy_GoogleContainerClusterNodeConfigSoleTenantConfigOutputReferen
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigSoleTenantConfigOutputReference) validateSetMinNodeCpusParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerClusterNodeConfigSoleTenantConfigOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

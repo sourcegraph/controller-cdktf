@@ -43,6 +43,9 @@ type GoogleOsConfigPatchDeploymentPatchConfigOutputReference interface {
 	RebootConfig() *string
 	SetRebootConfig(val *string)
 	RebootConfigInput() *string
+	SkipUnpatchableVms() interface{}
+	SetSkipUnpatchableVms(val interface{})
+	SkipUnpatchableVmsInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -94,6 +97,7 @@ type GoogleOsConfigPatchDeploymentPatchConfigOutputReference interface {
 	ResetPostStep()
 	ResetPreStep()
 	ResetRebootConfig()
+	ResetSkipUnpatchableVms()
 	ResetWindowsUpdate()
 	ResetYum()
 	ResetZypper()
@@ -282,6 +286,26 @@ func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference) Rebo
 	return returns
 }
 
+func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference) SkipUnpatchableVms() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipUnpatchableVms",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference) SkipUnpatchableVmsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipUnpatchableVmsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -441,6 +465,17 @@ func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference)SetRe
 	_jsii_.Set(
 		j,
 		"rebootConfig",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference)SetSkipUnpatchableVms(val interface{}) {
+	if err := j.validateSetSkipUnpatchableVmsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"skipUnpatchableVms",
 		val,
 	)
 }
@@ -774,6 +809,14 @@ func (g *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference) Rese
 	_jsii_.InvokeVoid(
 		g,
 		"resetRebootConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference) ResetSkipUnpatchableVms() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSkipUnpatchableVms",
 		nil, // no parameters
 	)
 }

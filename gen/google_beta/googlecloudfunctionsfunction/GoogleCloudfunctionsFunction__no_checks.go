@@ -72,7 +72,15 @@ func (g *jsiiProxy_GoogleCloudfunctionsFunction) validateOverrideLogicalIdParame
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCloudfunctionsFunction) validatePutAutomaticUpdatePolicyParameters(value *GoogleCloudfunctionsFunctionAutomaticUpdatePolicy) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudfunctionsFunction) validatePutEventTriggerParameters(value *GoogleCloudfunctionsFunctionEventTrigger) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudfunctionsFunction) validatePutOnDeployUpdatePolicyParameters(value *GoogleCloudfunctionsFunctionOnDeployUpdatePolicy) error {
 	return nil
 }
 

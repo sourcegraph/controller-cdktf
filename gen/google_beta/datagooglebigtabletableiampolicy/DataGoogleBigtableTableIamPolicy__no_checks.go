@@ -76,7 +76,7 @@ func (j *jsiiProxy_DataGoogleBigtableTableIamPolicy) validateSetIdParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleBigtableTableIamPolicy) validateSetInstanceParameters(val *string) error {
+func (j *jsiiProxy_DataGoogleBigtableTableIamPolicy) validateSetInstanceNameParameters(val *string) error {
 	return nil
 }
 

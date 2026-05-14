@@ -10,6 +10,9 @@ import (
 
 type GoogleComputeInstanceTemplateDiskOutputReference interface {
 	cdktf.ComplexObject
+	Architecture() *string
+	SetArchitecture(val *string)
+	ArchitectureInput() *string
 	AutoDelete() interface{}
 	SetAutoDelete(val interface{})
 	AutoDeleteInput() interface{}
@@ -47,6 +50,9 @@ type GoogleComputeInstanceTemplateDiskOutputReference interface {
 	DiskTypeInput() *string
 	// Experimental.
 	Fqn() *string
+	GuestOsFeatures() *[]*string
+	SetGuestOsFeatures(val *[]*string)
+	GuestOsFeaturesInput() *[]*string
 	Interface() *string
 	SetInterface(val *string)
 	InterfaceInput() *string
@@ -83,6 +89,9 @@ type GoogleComputeInstanceTemplateDiskOutputReference interface {
 	SourceSnapshotEncryptionKey() GoogleComputeInstanceTemplateDiskSourceSnapshotEncryptionKeyOutputReference
 	SourceSnapshotEncryptionKeyInput() *GoogleComputeInstanceTemplateDiskSourceSnapshotEncryptionKey
 	SourceSnapshotInput() *string
+	StoragePool() *string
+	SetStoragePool(val *string)
+	StoragePoolInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -121,6 +130,7 @@ type GoogleComputeInstanceTemplateDiskOutputReference interface {
 	PutDiskEncryptionKey(value *GoogleComputeInstanceTemplateDiskDiskEncryptionKey)
 	PutSourceImageEncryptionKey(value *GoogleComputeInstanceTemplateDiskSourceImageEncryptionKey)
 	PutSourceSnapshotEncryptionKey(value *GoogleComputeInstanceTemplateDiskSourceSnapshotEncryptionKey)
+	ResetArchitecture()
 	ResetAutoDelete()
 	ResetBoot()
 	ResetDeviceName()
@@ -128,6 +138,7 @@ type GoogleComputeInstanceTemplateDiskOutputReference interface {
 	ResetDiskName()
 	ResetDiskSizeGb()
 	ResetDiskType()
+	ResetGuestOsFeatures()
 	ResetInterface()
 	ResetLabels()
 	ResetMode()
@@ -140,6 +151,7 @@ type GoogleComputeInstanceTemplateDiskOutputReference interface {
 	ResetSourceImageEncryptionKey()
 	ResetSourceSnapshot()
 	ResetSourceSnapshotEncryptionKey()
+	ResetStoragePool()
 	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -154,6 +166,26 @@ type GoogleComputeInstanceTemplateDiskOutputReference interface {
 // The jsii proxy struct for GoogleComputeInstanceTemplateDiskOutputReference
 type jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) Architecture() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"architecture",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) ArchitectureInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"architectureInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) AutoDelete() interface{} {
@@ -331,6 +363,26 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) Fqn() *stri
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) GuestOsFeatures() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"guestOsFeatures",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) GuestOsFeaturesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"guestOsFeaturesInput",
 		&returns,
 	)
 	return returns
@@ -586,6 +638,26 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) SourceSnaps
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) StoragePool() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storagePool",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) StoragePoolInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storagePoolInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -651,6 +723,17 @@ func NewGoogleComputeInstanceTemplateDiskOutputReference_Override(g GoogleComput
 		"@cdktf/provider-google-beta.googleComputeInstanceTemplate.GoogleComputeInstanceTemplateDiskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference)SetArchitecture(val *string) {
+	if err := j.validateSetArchitectureParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"architecture",
+		val,
 	)
 }
 
@@ -738,6 +821,17 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference)SetDiskType(
 	_jsii_.Set(
 		j,
 		"diskType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference)SetGuestOsFeatures(val *[]*string) {
+	if err := j.validateSetGuestOsFeaturesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"guestOsFeatures",
 		val,
 	)
 }
@@ -859,6 +953,17 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference)SetSourceSna
 	_jsii_.Set(
 		j,
 		"sourceSnapshot",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference)SetStoragePool(val *string) {
+	if err := j.validateSetStoragePoolParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"storagePool",
 		val,
 	)
 }
@@ -1115,6 +1220,14 @@ func (g *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) PutSourceSn
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) ResetArchitecture() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetArchitecture",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) ResetAutoDelete() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1167,6 +1280,14 @@ func (g *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) ResetDiskTy
 	_jsii_.InvokeVoid(
 		g,
 		"resetDiskType",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) ResetGuestOsFeatures() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetGuestOsFeatures",
 		nil, // no parameters
 	)
 }
@@ -1263,6 +1384,14 @@ func (g *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) ResetSource
 	_jsii_.InvokeVoid(
 		g,
 		"resetSourceSnapshotEncryptionKey",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) ResetStoragePool() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetStoragePool",
 		nil, // no parameters
 	)
 }

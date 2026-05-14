@@ -88,6 +88,10 @@ func (c *jsiiProxy_ComputeInstanceGroupManager) validatePutNamedPortParameters(v
 	return nil
 }
 
+func (c *jsiiProxy_ComputeInstanceGroupManager) validatePutResourcePoliciesParameters(value *ComputeInstanceGroupManagerResourcePolicies) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeInstanceGroupManager) validatePutStandbyPolicyParameters(value *ComputeInstanceGroupManagerStandbyPolicy) error {
 	return nil
 }
@@ -101,6 +105,10 @@ func (c *jsiiProxy_ComputeInstanceGroupManager) validatePutStatefulExternalIpPar
 }
 
 func (c *jsiiProxy_ComputeInstanceGroupManager) validatePutStatefulInternalIpParameters(value interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeInstanceGroupManager) validatePutTargetSizePolicyParameters(value interface{}) error {
 	return nil
 }
 

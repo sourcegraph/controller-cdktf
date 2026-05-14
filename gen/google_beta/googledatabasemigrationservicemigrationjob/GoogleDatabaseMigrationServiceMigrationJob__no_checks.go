@@ -76,6 +76,10 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) validatePutDumpFl
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) validatePutObjectsConfigParameters(value *GoogleDatabaseMigrationServiceMigrationJobObjectsConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) validatePutPerformanceConfigParameters(value *GoogleDatabaseMigrationServiceMigrationJobPerformanceConfig) error {
 	return nil
 }

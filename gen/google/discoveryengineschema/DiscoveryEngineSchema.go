@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/discoveryengineschema/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/discovery_engine_schema google_discovery_engine_schema}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_schema google_discovery_engine_schema}.
 type DiscoveryEngineSchema interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -459,7 +459,7 @@ func (j *jsiiProxy_DiscoveryEngineSchema) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/discovery_engine_schema google_discovery_engine_schema} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_schema google_discovery_engine_schema} Resource.
 func NewDiscoveryEngineSchema(scope constructs.Construct, id *string, config *DiscoveryEngineSchemaConfig) DiscoveryEngineSchema {
 	_init_.Initialize()
 
@@ -477,7 +477,7 @@ func NewDiscoveryEngineSchema(scope constructs.Construct, id *string, config *Di
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/discovery_engine_schema google_discovery_engine_schema} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_schema google_discovery_engine_schema} Resource.
 func NewDiscoveryEngineSchema_Override(d DiscoveryEngineSchema, scope constructs.Construct, id *string, config *DiscoveryEngineSchemaConfig) {
 	_init_.Initialize()
 

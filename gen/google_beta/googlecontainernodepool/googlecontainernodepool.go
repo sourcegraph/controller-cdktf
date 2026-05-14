@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecontainernodepool/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_container_node_pool google_container_node_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_container_node_pool google_container_node_pool}.
 type GoogleContainerNodePool interface {
 	cdktf.TerraformResource
 	Autoscaling() GoogleContainerNodePoolAutoscalingOutputReference
@@ -76,6 +76,8 @@ type GoogleContainerNodePool interface {
 	NodeCount() *float64
 	SetNodeCount(val *float64)
 	NodeCountInput() *float64
+	NodeDrainConfig() GoogleContainerNodePoolNodeDrainConfigList
+	NodeDrainConfigInput() interface{}
 	NodeLocations() *[]*string
 	SetNodeLocations(val *[]*string)
 	NodeLocationsInput() *[]*string
@@ -157,6 +159,7 @@ type GoogleContainerNodePool interface {
 	PutManagement(value *GoogleContainerNodePoolManagement)
 	PutNetworkConfig(value *GoogleContainerNodePoolNetworkConfig)
 	PutNodeConfig(value *GoogleContainerNodePoolNodeConfig)
+	PutNodeDrainConfig(value interface{})
 	PutPlacementPolicy(value *GoogleContainerNodePoolPlacementPolicy)
 	PutQueuedProvisioning(value *GoogleContainerNodePoolQueuedProvisioning)
 	PutTimeouts(value *GoogleContainerNodePoolTimeouts)
@@ -172,6 +175,7 @@ type GoogleContainerNodePool interface {
 	ResetNetworkConfig()
 	ResetNodeConfig()
 	ResetNodeCount()
+	ResetNodeDrainConfig()
 	ResetNodeLocations()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -560,6 +564,26 @@ func (j *jsiiProxy_GoogleContainerNodePool) NodeCountInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleContainerNodePool) NodeDrainConfig() GoogleContainerNodePoolNodeDrainConfigList {
+	var returns GoogleContainerNodePoolNodeDrainConfigList
+	_jsii_.Get(
+		j,
+		"nodeDrainConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerNodePool) NodeDrainConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"nodeDrainConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleContainerNodePool) NodeLocations() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -771,7 +795,7 @@ func (j *jsiiProxy_GoogleContainerNodePool) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_container_node_pool google_container_node_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_container_node_pool google_container_node_pool} Resource.
 func NewGoogleContainerNodePool(scope constructs.Construct, id *string, config *GoogleContainerNodePoolConfig) GoogleContainerNodePool {
 	_init_.Initialize()
 
@@ -789,7 +813,7 @@ func NewGoogleContainerNodePool(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_container_node_pool google_container_node_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_container_node_pool google_container_node_pool} Resource.
 func NewGoogleContainerNodePool_Override(g GoogleContainerNodePool, scope constructs.Construct, id *string, config *GoogleContainerNodePoolConfig) {
 	_init_.Initialize()
 
@@ -1386,6 +1410,17 @@ func (g *jsiiProxy_GoogleContainerNodePool) PutNodeConfig(value *GoogleContainer
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerNodePool) PutNodeDrainConfig(value interface{}) {
+	if err := g.validatePutNodeDrainConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putNodeDrainConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerNodePool) PutPlacementPolicy(value *GoogleContainerNodePoolPlacementPolicy) {
 	if err := g.validatePutPlacementPolicyParameters(value); err != nil {
 		panic(err)
@@ -1514,6 +1549,14 @@ func (g *jsiiProxy_GoogleContainerNodePool) ResetNodeCount() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetNodeCount",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerNodePool) ResetNodeDrainConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNodeDrainConfig",
 		nil, // no parameters
 	)
 }

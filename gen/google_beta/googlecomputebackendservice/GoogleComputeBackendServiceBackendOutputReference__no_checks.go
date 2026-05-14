@@ -92,6 +92,18 @@ func (j *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) validateSe
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) validateSetMaxInFlightRequestsParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) validateSetMaxInFlightRequestsPerEndpointParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) validateSetMaxInFlightRequestsPerInstanceParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) validateSetMaxRateParameters(val *float64) error {
 	return nil
 }
@@ -117,6 +129,10 @@ func (j *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) validateSe
 }
 
 func (j *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) validateSetTrafficDurationParameters(val *string) error {
 	return nil
 }
 

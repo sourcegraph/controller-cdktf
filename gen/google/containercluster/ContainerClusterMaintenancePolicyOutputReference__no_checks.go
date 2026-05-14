@@ -48,6 +48,10 @@ func (c *jsiiProxy_ContainerClusterMaintenancePolicyOutputReference) validatePut
 	return nil
 }
 
+func (c *jsiiProxy_ContainerClusterMaintenancePolicyOutputReference) validatePutDisruptionBudgetParameters(value *ContainerClusterMaintenancePolicyDisruptionBudget) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerClusterMaintenancePolicyOutputReference) validatePutMaintenanceExclusionParameters(value interface{}) error {
 	return nil
 }

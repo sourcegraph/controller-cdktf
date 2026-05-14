@@ -182,6 +182,14 @@ func (g *jsiiProxy_GoogleContainerNodePoolNetworkConfigOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerNodePoolNetworkConfigOutputReference) validateSetAcceleratorNetworkProfileParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerNodePoolNetworkConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
@@ -304,6 +312,14 @@ func (j *jsiiProxy_GoogleContainerNodePoolNetworkConfigOutputReference) validate
 }
 
 func (j *jsiiProxy_GoogleContainerNodePoolNetworkConfigOutputReference) validateSetPodRangeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleContainerNodePoolNetworkConfigOutputReference) validateSetSubnetworkParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

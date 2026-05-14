@@ -56,6 +56,10 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersOutputReference) validateP
 	return nil
 }
 
+func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersOutputReference) validatePutReadinessProbeParameters(value *CloudRunV2ServiceTemplateContainersReadinessProbe) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersOutputReference) validatePutResourcesParameters(value *CloudRunV2ServiceTemplateContainersResources) error {
 	return nil
 }

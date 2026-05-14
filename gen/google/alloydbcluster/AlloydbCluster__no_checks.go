@@ -80,6 +80,10 @@ func (a *jsiiProxy_AlloydbCluster) validatePutContinuousBackupConfigParameters(v
 	return nil
 }
 
+func (a *jsiiProxy_AlloydbCluster) validatePutDataplexConfigParameters(value *AlloydbClusterDataplexConfig) error {
+	return nil
+}
+
 func (a *jsiiProxy_AlloydbCluster) validatePutEncryptionConfigParameters(value *AlloydbClusterEncryptionConfig) error {
 	return nil
 }
@@ -97,6 +101,14 @@ func (a *jsiiProxy_AlloydbCluster) validatePutNetworkConfigParameters(value *All
 }
 
 func (a *jsiiProxy_AlloydbCluster) validatePutPscConfigParameters(value *AlloydbClusterPscConfig) error {
+	return nil
+}
+
+func (a *jsiiProxy_AlloydbCluster) validatePutRestoreBackupdrBackupSourceParameters(value *AlloydbClusterRestoreBackupdrBackupSource) error {
+	return nil
+}
+
+func (a *jsiiProxy_AlloydbCluster) validatePutRestoreBackupdrPitrSourceParameters(value *AlloydbClusterRestoreBackupdrPitrSource) error {
 	return nil
 }
 
@@ -157,6 +169,10 @@ func (j *jsiiProxy_AlloydbCluster) validateSetDatabaseVersionParameters(val *str
 }
 
 func (j *jsiiProxy_AlloydbCluster) validateSetDeletionPolicyParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AlloydbCluster) validateSetDeletionProtectionParameters(val interface{}) error {
 	return nil
 }
 

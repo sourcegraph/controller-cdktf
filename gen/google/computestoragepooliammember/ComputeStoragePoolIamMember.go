@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/computestoragepooliammember/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_storage_pool_iam_member google_compute_storage_pool_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_storage_pool_iam_member google_compute_storage_pool_iam_member}.
 type ComputeStoragePoolIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -459,7 +459,7 @@ func (j *jsiiProxy_ComputeStoragePoolIamMember) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_storage_pool_iam_member google_compute_storage_pool_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_storage_pool_iam_member google_compute_storage_pool_iam_member} Resource.
 func NewComputeStoragePoolIamMember(scope constructs.Construct, id *string, config *ComputeStoragePoolIamMemberConfig) ComputeStoragePoolIamMember {
 	_init_.Initialize()
 
@@ -477,7 +477,7 @@ func NewComputeStoragePoolIamMember(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_storage_pool_iam_member google_compute_storage_pool_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_storage_pool_iam_member google_compute_storage_pool_iam_member} Resource.
 func NewComputeStoragePoolIamMember_Override(c ComputeStoragePoolIamMember, scope constructs.Construct, id *string, config *ComputeStoragePoolIamMemberConfig) {
 	_init_.Initialize()
 

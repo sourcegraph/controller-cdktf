@@ -80,6 +80,10 @@ func (g *jsiiProxy_GoogleComputeRouter) validatePutMd5AuthenticationKeysParamete
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeRouter) validatePutParamsParameters(value *GoogleComputeRouterParams) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRouter) validatePutTimeoutsParameters(value *GoogleComputeRouterTimeouts) error {
 	return nil
 }
@@ -125,6 +129,10 @@ func (j *jsiiProxy_GoogleComputeRouter) validateSetLifecycleParameters(val *cdkt
 }
 
 func (j *jsiiProxy_GoogleComputeRouter) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeRouter) validateSetNccGatewayParameters(val *string) error {
 	return nil
 }
 

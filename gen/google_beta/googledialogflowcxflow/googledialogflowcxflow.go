@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledialogflowcxflow/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_dialogflow_cx_flow google_dialogflow_cx_flow}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_dialogflow_cx_flow google_dialogflow_cx_flow}.
 type GoogleDialogflowCxFlow interface {
 	cdktf.TerraformResource
 	AdvancedSettings() GoogleDialogflowCxFlowAdvancedSettingsOutputReference
@@ -52,6 +52,8 @@ type GoogleDialogflowCxFlow interface {
 	IsDefaultStartFlow() interface{}
 	SetIsDefaultStartFlow(val interface{})
 	IsDefaultStartFlowInput() interface{}
+	KnowledgeConnectorSettings() GoogleDialogflowCxFlowKnowledgeConnectorSettingsOutputReference
+	KnowledgeConnectorSettingsInput() *GoogleDialogflowCxFlowKnowledgeConnectorSettings
 	LanguageCode() *string
 	SetLanguageCode(val *string)
 	LanguageCodeInput() *string
@@ -135,6 +137,7 @@ type GoogleDialogflowCxFlow interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAdvancedSettings(value *GoogleDialogflowCxFlowAdvancedSettings)
 	PutEventHandlers(value interface{})
+	PutKnowledgeConnectorSettings(value *GoogleDialogflowCxFlowKnowledgeConnectorSettings)
 	PutNluSettings(value *GoogleDialogflowCxFlowNluSettings)
 	PutTimeouts(value *GoogleDialogflowCxFlowTimeouts)
 	PutTransitionRoutes(value interface{})
@@ -143,6 +146,7 @@ type GoogleDialogflowCxFlow interface {
 	ResetEventHandlers()
 	ResetId()
 	ResetIsDefaultStartFlow()
+	ResetKnowledgeConnectorSettings()
 	ResetLanguageCode()
 	ResetNluSettings()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -370,6 +374,26 @@ func (j *jsiiProxy_GoogleDialogflowCxFlow) IsDefaultStartFlowInput() interface{}
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDialogflowCxFlow) KnowledgeConnectorSettings() GoogleDialogflowCxFlowKnowledgeConnectorSettingsOutputReference {
+	var returns GoogleDialogflowCxFlowKnowledgeConnectorSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"knowledgeConnectorSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDialogflowCxFlow) KnowledgeConnectorSettingsInput() *GoogleDialogflowCxFlowKnowledgeConnectorSettings {
+	var returns *GoogleDialogflowCxFlowKnowledgeConnectorSettings
+	_jsii_.Get(
+		j,
+		"knowledgeConnectorSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleDialogflowCxFlow) LanguageCode() *string {
 	var returns *string
 	_jsii_.Get(
@@ -581,7 +605,7 @@ func (j *jsiiProxy_GoogleDialogflowCxFlow) TransitionRoutesInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_dialogflow_cx_flow google_dialogflow_cx_flow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_dialogflow_cx_flow google_dialogflow_cx_flow} Resource.
 func NewGoogleDialogflowCxFlow(scope constructs.Construct, id *string, config *GoogleDialogflowCxFlowConfig) GoogleDialogflowCxFlow {
 	_init_.Initialize()
 
@@ -599,7 +623,7 @@ func NewGoogleDialogflowCxFlow(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_dialogflow_cx_flow google_dialogflow_cx_flow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_dialogflow_cx_flow google_dialogflow_cx_flow} Resource.
 func NewGoogleDialogflowCxFlow_Override(g GoogleDialogflowCxFlow, scope constructs.Construct, id *string, config *GoogleDialogflowCxFlowConfig) {
 	_init_.Initialize()
 
@@ -1130,6 +1154,17 @@ func (g *jsiiProxy_GoogleDialogflowCxFlow) PutEventHandlers(value interface{}) {
 	)
 }
 
+func (g *jsiiProxy_GoogleDialogflowCxFlow) PutKnowledgeConnectorSettings(value *GoogleDialogflowCxFlowKnowledgeConnectorSettings) {
+	if err := g.validatePutKnowledgeConnectorSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putKnowledgeConnectorSettings",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDialogflowCxFlow) PutNluSettings(value *GoogleDialogflowCxFlowNluSettings) {
 	if err := g.validatePutNluSettingsParameters(value); err != nil {
 		panic(err)
@@ -1199,6 +1234,14 @@ func (g *jsiiProxy_GoogleDialogflowCxFlow) ResetIsDefaultStartFlow() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetIsDefaultStartFlow",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDialogflowCxFlow) ResetKnowledgeConnectorSettings() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetKnowledgeConnectorSettings",
 		nil, // no parameters
 	)
 }

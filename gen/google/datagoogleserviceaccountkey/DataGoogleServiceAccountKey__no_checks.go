@@ -84,10 +84,6 @@ func (j *jsiiProxy_DataGoogleServiceAccountKey) validateSetNameParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleServiceAccountKey) validateSetProjectParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataGoogleServiceAccountKey) validateSetPublicKeyTypeParameters(val *string) error {
 	return nil
 }

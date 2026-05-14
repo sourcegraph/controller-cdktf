@@ -48,6 +48,10 @@ func (p *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) validate
 	return nil
 }
 
+func (p *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) validatePutTextConfigParameters(value *PubsubSubscriptionCloudStorageConfigTextConfig) error {
+	return nil
+}
+
 func (p *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

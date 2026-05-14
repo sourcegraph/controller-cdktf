@@ -88,6 +88,10 @@ func (g *jsiiProxy_GoogleContainerNodePool) validatePutNodeConfigParameters(valu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerNodePool) validatePutNodeDrainConfigParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerNodePool) validatePutPlacementPolicyParameters(value *GoogleContainerNodePoolPlacementPolicy) error {
 	return nil
 }

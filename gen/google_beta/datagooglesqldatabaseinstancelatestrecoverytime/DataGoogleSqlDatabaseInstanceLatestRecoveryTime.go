@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglesqldatabaseinstancelatestrecoverytime/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_sql_database_instance_latest_recovery_time google_sql_database_instance_latest_recovery_time}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/data-sources/google_sql_database_instance_latest_recovery_time google_sql_database_instance_latest_recovery_time}.
 type DataGoogleSqlDatabaseInstanceLatestRecoveryTime interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -54,6 +54,9 @@ type DataGoogleSqlDatabaseInstanceLatestRecoveryTime interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	SourceInstanceDeletionTime() *string
+	SetSourceInstanceDeletionTime(val *string)
+	SourceInstanceDeletionTimeInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -90,6 +93,7 @@ type DataGoogleSqlDatabaseInstanceLatestRecoveryTime interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetSourceInstanceDeletionTime()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -289,6 +293,26 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceLatestRecoveryTime) RawOverrides
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceLatestRecoveryTime) SourceInstanceDeletionTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceInstanceDeletionTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceLatestRecoveryTime) SourceInstanceDeletionTimeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceInstanceDeletionTimeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceLatestRecoveryTime) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -320,7 +344,7 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceLatestRecoveryTime) TerraformRes
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_sql_database_instance_latest_recovery_time google_sql_database_instance_latest_recovery_time} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/data-sources/google_sql_database_instance_latest_recovery_time google_sql_database_instance_latest_recovery_time} Data Source.
 func NewDataGoogleSqlDatabaseInstanceLatestRecoveryTime(scope constructs.Construct, id *string, config *DataGoogleSqlDatabaseInstanceLatestRecoveryTimeConfig) DataGoogleSqlDatabaseInstanceLatestRecoveryTime {
 	_init_.Initialize()
 
@@ -338,7 +362,7 @@ func NewDataGoogleSqlDatabaseInstanceLatestRecoveryTime(scope constructs.Constru
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_sql_database_instance_latest_recovery_time google_sql_database_instance_latest_recovery_time} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/data-sources/google_sql_database_instance_latest_recovery_time google_sql_database_instance_latest_recovery_time} Data Source.
 func NewDataGoogleSqlDatabaseInstanceLatestRecoveryTime_Override(d DataGoogleSqlDatabaseInstanceLatestRecoveryTime, scope constructs.Construct, id *string, config *DataGoogleSqlDatabaseInstanceLatestRecoveryTimeConfig) {
 	_init_.Initialize()
 
@@ -424,6 +448,17 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceLatestRecoveryTime)SetProvider(v
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceLatestRecoveryTime)SetSourceInstanceDeletionTime(val *string) {
+	if err := j.validateSetSourceInstanceDeletionTimeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sourceInstanceDeletionTime",
 		val,
 	)
 }
@@ -733,6 +768,14 @@ func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceLatestRecoveryTime) ResetProject
 	_jsii_.InvokeVoid(
 		d,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceLatestRecoveryTime) ResetSourceInstanceDeletionTime() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSourceInstanceDeletionTime",
 		nil, // no parameters
 	)
 }

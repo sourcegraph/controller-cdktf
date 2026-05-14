@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlenetworkservicesmesh/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_network_services_mesh google_network_services_mesh}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_network_services_mesh google_network_services_mesh}.
 type GoogleNetworkServicesMesh interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -529,7 +529,7 @@ func (j *jsiiProxy_GoogleNetworkServicesMesh) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_network_services_mesh google_network_services_mesh} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_network_services_mesh google_network_services_mesh} Resource.
 func NewGoogleNetworkServicesMesh(scope constructs.Construct, id *string, config *GoogleNetworkServicesMeshConfig) GoogleNetworkServicesMesh {
 	_init_.Initialize()
 
@@ -547,7 +547,7 @@ func NewGoogleNetworkServicesMesh(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_network_services_mesh google_network_services_mesh} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_network_services_mesh google_network_services_mesh} Resource.
 func NewGoogleNetworkServicesMesh_Override(g GoogleNetworkServicesMesh, scope constructs.Construct, id *string, config *GoogleNetworkServicesMeshConfig) {
 	_init_.Initialize()
 

@@ -12,6 +12,8 @@ type ContainerClusterNodeConfigOutputReference interface {
 	cdktf.ComplexObject
 	AdvancedMachineFeatures() ContainerClusterNodeConfigAdvancedMachineFeaturesOutputReference
 	AdvancedMachineFeaturesInput() *ContainerClusterNodeConfigAdvancedMachineFeatures
+	BootDisk() ContainerClusterNodeConfigBootDiskOutputReference
+	BootDiskInput() *ContainerClusterNodeConfigBootDisk
 	BootDiskKmsKey() *string
 	SetBootDiskKmsKey(val *string)
 	BootDiskKmsKeyInput() *string
@@ -48,6 +50,9 @@ type ContainerClusterNodeConfigOutputReference interface {
 	EphemeralStorageLocalSsdConfigInput() *ContainerClusterNodeConfigEphemeralStorageLocalSsdConfig
 	FastSocket() ContainerClusterNodeConfigFastSocketOutputReference
 	FastSocketInput() *ContainerClusterNodeConfigFastSocket
+	FlexStart() interface{}
+	SetFlexStart(val interface{})
+	FlexStartInput() interface{}
 	// Experimental.
 	Fqn() *string
 	GcfsConfig() ContainerClusterNodeConfigGcfsConfigOutputReference
@@ -110,6 +115,8 @@ type ContainerClusterNodeConfigOutputReference interface {
 	ResourceManagerTags() *map[string]*string
 	SetResourceManagerTags(val *map[string]*string)
 	ResourceManagerTagsInput() *map[string]*string
+	SandboxConfig() ContainerClusterNodeConfigSandboxConfigOutputReference
+	SandboxConfigInput() *ContainerClusterNodeConfigSandboxConfig
 	SecondaryBootDisks() ContainerClusterNodeConfigSecondaryBootDisksList
 	SecondaryBootDisksInput() interface{}
 	ServiceAccount() *string
@@ -167,6 +174,7 @@ type ContainerClusterNodeConfigOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAdvancedMachineFeatures(value *ContainerClusterNodeConfigAdvancedMachineFeatures)
+	PutBootDisk(value *ContainerClusterNodeConfigBootDisk)
 	PutConfidentialNodes(value *ContainerClusterNodeConfigConfidentialNodes)
 	PutContainerdConfig(value *ContainerClusterNodeConfigContainerdConfig)
 	PutEphemeralStorageLocalSsdConfig(value *ContainerClusterNodeConfigEphemeralStorageLocalSsdConfig)
@@ -179,6 +187,7 @@ type ContainerClusterNodeConfigOutputReference interface {
 	PutLinuxNodeConfig(value *ContainerClusterNodeConfigLinuxNodeConfig)
 	PutLocalNvmeSsdBlockConfig(value *ContainerClusterNodeConfigLocalNvmeSsdBlockConfig)
 	PutReservationAffinity(value *ContainerClusterNodeConfigReservationAffinity)
+	PutSandboxConfig(value *ContainerClusterNodeConfigSandboxConfig)
 	PutSecondaryBootDisks(value interface{})
 	PutShieldedInstanceConfig(value *ContainerClusterNodeConfigShieldedInstanceConfig)
 	PutSoleTenantConfig(value *ContainerClusterNodeConfigSoleTenantConfig)
@@ -186,6 +195,7 @@ type ContainerClusterNodeConfigOutputReference interface {
 	PutWindowsNodeConfig(value *ContainerClusterNodeConfigWindowsNodeConfig)
 	PutWorkloadMetadataConfig(value *ContainerClusterNodeConfigWorkloadMetadataConfig)
 	ResetAdvancedMachineFeatures()
+	ResetBootDisk()
 	ResetBootDiskKmsKey()
 	ResetConfidentialNodes()
 	ResetContainerdConfig()
@@ -194,6 +204,7 @@ type ContainerClusterNodeConfigOutputReference interface {
 	ResetEnableConfidentialStorage()
 	ResetEphemeralStorageLocalSsdConfig()
 	ResetFastSocket()
+	ResetFlexStart()
 	ResetGcfsConfig()
 	ResetGuestAccelerator()
 	ResetGvnic()
@@ -216,6 +227,7 @@ type ContainerClusterNodeConfigOutputReference interface {
 	ResetReservationAffinity()
 	ResetResourceLabels()
 	ResetResourceManagerTags()
+	ResetSandboxConfig()
 	ResetSecondaryBootDisks()
 	ResetServiceAccount()
 	ResetShieldedInstanceConfig()
@@ -256,6 +268,26 @@ func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) AdvancedMachineFea
 	_jsii_.Get(
 		j,
 		"advancedMachineFeaturesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) BootDisk() ContainerClusterNodeConfigBootDiskOutputReference {
+	var returns ContainerClusterNodeConfigBootDiskOutputReference
+	_jsii_.Get(
+		j,
+		"bootDisk",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) BootDiskInput() *ContainerClusterNodeConfigBootDisk {
+	var returns *ContainerClusterNodeConfigBootDisk
+	_jsii_.Get(
+		j,
+		"bootDiskInput",
 		&returns,
 	)
 	return returns
@@ -456,6 +488,26 @@ func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) FastSocketInput() 
 	_jsii_.Get(
 		j,
 		"fastSocketInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) FlexStart() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"flexStart",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) FlexStartInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"flexStartInput",
 		&returns,
 	)
 	return returns
@@ -921,6 +973,26 @@ func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) ResourceManagerTag
 	return returns
 }
 
+func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) SandboxConfig() ContainerClusterNodeConfigSandboxConfigOutputReference {
+	var returns ContainerClusterNodeConfigSandboxConfigOutputReference
+	_jsii_.Get(
+		j,
+		"sandboxConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) SandboxConfigInput() *ContainerClusterNodeConfigSandboxConfig {
+	var returns *ContainerClusterNodeConfigSandboxConfig
+	_jsii_.Get(
+		j,
+		"sandboxConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) SecondaryBootDisks() ContainerClusterNodeConfigSecondaryBootDisksList {
 	var returns ContainerClusterNodeConfigSecondaryBootDisksList
 	_jsii_.Get(
@@ -1231,6 +1303,17 @@ func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference)SetEnableConfidenti
 	_jsii_.Set(
 		j,
 		"enableConfidentialStorage",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference)SetFlexStart(val interface{}) {
+	if err := j.validateSetFlexStartParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"flexStart",
 		val,
 	)
 }
@@ -1663,6 +1746,17 @@ func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) PutAdvancedMachine
 	)
 }
 
+func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) PutBootDisk(value *ContainerClusterNodeConfigBootDisk) {
+	if err := c.validatePutBootDiskParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putBootDisk",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) PutConfidentialNodes(value *ContainerClusterNodeConfigConfidentialNodes) {
 	if err := c.validatePutConfidentialNodesParameters(value); err != nil {
 		panic(err)
@@ -1795,6 +1889,17 @@ func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) PutReservationAffi
 	)
 }
 
+func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) PutSandboxConfig(value *ContainerClusterNodeConfigSandboxConfig) {
+	if err := c.validatePutSandboxConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putSandboxConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) PutSecondaryBootDisks(value interface{}) {
 	if err := c.validatePutSecondaryBootDisksParameters(value); err != nil {
 		panic(err)
@@ -1869,6 +1974,14 @@ func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) ResetAdvancedMachi
 	)
 }
 
+func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) ResetBootDisk() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetBootDisk",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) ResetBootDiskKmsKey() {
 	_jsii_.InvokeVoid(
 		c,
@@ -1929,6 +2042,14 @@ func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) ResetFastSocket() 
 	_jsii_.InvokeVoid(
 		c,
 		"resetFastSocket",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) ResetFlexStart() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetFlexStart",
 		nil, // no parameters
 	)
 }
@@ -2105,6 +2226,14 @@ func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) ResetResourceManag
 	_jsii_.InvokeVoid(
 		c,
 		"resetResourceManagerTags",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) ResetSandboxConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSandboxConfig",
 		nil, // no parameters
 	)
 }

@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigPersistentDirectoriesOutpu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigPersistentDirectoriesOutputReference) validatePutGceHdParameters(value *GoogleWorkstationsWorkstationConfigPersistentDirectoriesGceHd) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigPersistentDirectoriesOutputReference) validatePutGcePdParameters(value *GoogleWorkstationsWorkstationConfigPersistentDirectoriesGcePd) error {
 	return nil
 }

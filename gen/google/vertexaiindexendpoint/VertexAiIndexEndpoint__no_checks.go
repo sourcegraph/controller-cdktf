@@ -72,6 +72,10 @@ func (v *jsiiProxy_VertexAiIndexEndpoint) validateOverrideLogicalIdParameters(ne
 	return nil
 }
 
+func (v *jsiiProxy_VertexAiIndexEndpoint) validatePutEncryptionSpecParameters(value *VertexAiIndexEndpointEncryptionSpec) error {
+	return nil
+}
+
 func (v *jsiiProxy_VertexAiIndexEndpoint) validatePutPrivateServiceConnectConfigParameters(value *VertexAiIndexEndpointPrivateServiceConnectConfig) error {
 	return nil
 }

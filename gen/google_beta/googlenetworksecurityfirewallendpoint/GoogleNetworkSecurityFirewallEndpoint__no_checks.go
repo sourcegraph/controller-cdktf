@@ -72,6 +72,10 @@ func (g *jsiiProxy_GoogleNetworkSecurityFirewallEndpoint) validateOverrideLogica
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetworkSecurityFirewallEndpoint) validatePutEndpointSettingsParameters(value *GoogleNetworkSecurityFirewallEndpointEndpointSettings) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkSecurityFirewallEndpoint) validatePutTimeoutsParameters(value *GoogleNetworkSecurityFirewallEndpointTimeouts) error {
 	return nil
 }

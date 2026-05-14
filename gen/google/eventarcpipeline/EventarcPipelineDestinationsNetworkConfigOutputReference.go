@@ -64,6 +64,7 @@ type EventarcPipelineDestinationsNetworkConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetNetworkAttachment()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -447,6 +448,14 @@ func (e *jsiiProxy_EventarcPipelineDestinationsNetworkConfigOutputReference) Int
 	)
 
 	return returns
+}
+
+func (e *jsiiProxy_EventarcPipelineDestinationsNetworkConfigOutputReference) ResetNetworkAttachment() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetNetworkAttachment",
+		nil, // no parameters
+	)
 }
 
 func (e *jsiiProxy_EventarcPipelineDestinationsNetworkConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

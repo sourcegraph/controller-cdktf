@@ -48,6 +48,10 @@ func (g *jsiiProxy_GoogleContainerClusterMaintenancePolicyOutputReference) valid
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerClusterMaintenancePolicyOutputReference) validatePutDisruptionBudgetParameters(value *GoogleContainerClusterMaintenancePolicyDisruptionBudget) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerClusterMaintenancePolicyOutputReference) validatePutMaintenanceExclusionParameters(value interface{}) error {
 	return nil
 }

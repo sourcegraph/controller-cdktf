@@ -1,0 +1,6 @@
+package gkeonpremvmwareadmincluster
+
+
+type GkeonpremVmwareAdminClusterPlatformConfigBundlesStatusConditions struct {
+}
+

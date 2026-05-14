@@ -64,6 +64,10 @@ func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionLogConfigOutputReference
 	return nil
 }
 
+func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionLogConfigOutputReference) validateSetLevelParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionLogConfigOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

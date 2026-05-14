@@ -9,9 +9,12 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/computeregiondisk/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_region_disk google_compute_region_disk}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_disk google_compute_region_disk}.
 type ComputeRegionDisk interface {
 	cdktf.TerraformResource
+	AccessMode() *string
+	SetAccessMode(val *string)
+	AccessModeInput() *string
 	AsyncPrimaryDisk() ComputeRegionDiskAsyncPrimaryDiskOutputReference
 	AsyncPrimaryDiskInput() *ComputeRegionDiskAsyncPrimaryDisk
 	// Experimental.
@@ -42,6 +45,7 @@ type ComputeRegionDisk interface {
 	DescriptionInput() *string
 	DiskEncryptionKey() ComputeRegionDiskDiskEncryptionKeyOutputReference
 	DiskEncryptionKeyInput() *ComputeRegionDiskDiskEncryptionKey
+	DiskId() *string
 	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -56,6 +60,9 @@ type ComputeRegionDisk interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	Image() *string
+	SetImage(val *string)
+	ImageInput() *string
 	LabelFingerprint() *string
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
@@ -84,6 +91,12 @@ type ComputeRegionDisk interface {
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	ProvisionedIops() *float64
+	SetProvisionedIops(val *float64)
+	ProvisionedIopsInput() *float64
+	ProvisionedThroughput() *float64
+	SetProvisionedThroughput(val *float64)
+	ProvisionedThroughputInput() *float64
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -107,6 +120,9 @@ type ComputeRegionDisk interface {
 	SetSourceDisk(val *string)
 	SourceDiskId() *string
 	SourceDiskInput() *string
+	SourceImageEncryptionKey() ComputeRegionDiskSourceImageEncryptionKeyOutputReference
+	SourceImageEncryptionKeyInput() *ComputeRegionDiskSourceImageEncryptionKey
+	SourceImageId() *string
 	SourceSnapshotEncryptionKey() ComputeRegionDiskSourceSnapshotEncryptionKeyOutputReference
 	SourceSnapshotEncryptionKeyInput() *ComputeRegionDiskSourceSnapshotEncryptionKey
 	SourceSnapshotId() *string
@@ -169,8 +185,10 @@ type ComputeRegionDisk interface {
 	PutAsyncPrimaryDisk(value *ComputeRegionDiskAsyncPrimaryDisk)
 	PutDiskEncryptionKey(value *ComputeRegionDiskDiskEncryptionKey)
 	PutGuestOsFeatures(value interface{})
+	PutSourceImageEncryptionKey(value *ComputeRegionDiskSourceImageEncryptionKey)
 	PutSourceSnapshotEncryptionKey(value *ComputeRegionDiskSourceSnapshotEncryptionKey)
 	PutTimeouts(value *ComputeRegionDiskTimeouts)
+	ResetAccessMode()
 	ResetAsyncPrimaryDisk()
 	ResetCreateSnapshotBeforeDestroy()
 	ResetCreateSnapshotBeforeDestroyPrefix()
@@ -178,6 +196,7 @@ type ComputeRegionDisk interface {
 	ResetDiskEncryptionKey()
 	ResetGuestOsFeatures()
 	ResetId()
+	ResetImage()
 	ResetLabels()
 	ResetLicenses()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -185,10 +204,13 @@ type ComputeRegionDisk interface {
 	ResetOverrideLogicalId()
 	ResetPhysicalBlockSizeBytes()
 	ResetProject()
+	ResetProvisionedIops()
+	ResetProvisionedThroughput()
 	ResetRegion()
 	ResetSize()
 	ResetSnapshot()
 	ResetSourceDisk()
+	ResetSourceImageEncryptionKey()
 	ResetSourceSnapshotEncryptionKey()
 	ResetTimeouts()
 	ResetType()
@@ -208,6 +230,26 @@ type ComputeRegionDisk interface {
 // The jsii proxy struct for ComputeRegionDisk
 type jsiiProxy_ComputeRegionDisk struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_ComputeRegionDisk) AccessMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionDisk) AccessModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessModeInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ComputeRegionDisk) AsyncPrimaryDisk() ComputeRegionDiskAsyncPrimaryDiskOutputReference {
@@ -370,6 +412,16 @@ func (j *jsiiProxy_ComputeRegionDisk) DiskEncryptionKeyInput() *ComputeRegionDis
 	return returns
 }
 
+func (j *jsiiProxy_ComputeRegionDisk) DiskId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"diskId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeRegionDisk) EffectiveLabels() cdktf.StringMap {
 	var returns cdktf.StringMap
 	_jsii_.Get(
@@ -445,6 +497,26 @@ func (j *jsiiProxy_ComputeRegionDisk) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionDisk) Image() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"image",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionDisk) ImageInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"imageInput",
 		&returns,
 	)
 	return returns
@@ -610,6 +682,46 @@ func (j *jsiiProxy_ComputeRegionDisk) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeRegionDisk) ProvisionedIops() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"provisionedIops",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionDisk) ProvisionedIopsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"provisionedIopsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionDisk) ProvisionedThroughput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"provisionedThroughput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionDisk) ProvisionedThroughputInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"provisionedThroughputInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeRegionDisk) Provisioners() *[]interface{} {
 	var returns *[]interface{}
 	_jsii_.Get(
@@ -750,6 +862,36 @@ func (j *jsiiProxy_ComputeRegionDisk) SourceDiskInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeRegionDisk) SourceImageEncryptionKey() ComputeRegionDiskSourceImageEncryptionKeyOutputReference {
+	var returns ComputeRegionDiskSourceImageEncryptionKeyOutputReference
+	_jsii_.Get(
+		j,
+		"sourceImageEncryptionKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionDisk) SourceImageEncryptionKeyInput() *ComputeRegionDiskSourceImageEncryptionKey {
+	var returns *ComputeRegionDiskSourceImageEncryptionKey
+	_jsii_.Get(
+		j,
+		"sourceImageEncryptionKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionDisk) SourceImageId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceImageId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeRegionDisk) SourceSnapshotEncryptionKey() ComputeRegionDiskSourceSnapshotEncryptionKeyOutputReference {
 	var returns ComputeRegionDiskSourceSnapshotEncryptionKeyOutputReference
 	_jsii_.Get(
@@ -871,7 +1013,7 @@ func (j *jsiiProxy_ComputeRegionDisk) Users() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_region_disk google_compute_region_disk} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_disk google_compute_region_disk} Resource.
 func NewComputeRegionDisk(scope constructs.Construct, id *string, config *ComputeRegionDiskConfig) ComputeRegionDisk {
 	_init_.Initialize()
 
@@ -889,7 +1031,7 @@ func NewComputeRegionDisk(scope constructs.Construct, id *string, config *Comput
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_region_disk google_compute_region_disk} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_disk google_compute_region_disk} Resource.
 func NewComputeRegionDisk_Override(c ComputeRegionDisk, scope constructs.Construct, id *string, config *ComputeRegionDiskConfig) {
 	_init_.Initialize()
 
@@ -897,6 +1039,17 @@ func NewComputeRegionDisk_Override(c ComputeRegionDisk, scope constructs.Constru
 		"@cdktf/provider-google.computeRegionDisk.ComputeRegionDisk",
 		[]interface{}{scope, id, config},
 		c,
+	)
+}
+
+func (j *jsiiProxy_ComputeRegionDisk)SetAccessMode(val *string) {
+	if err := j.validateSetAccessModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accessMode",
+		val,
 	)
 }
 
@@ -982,6 +1135,17 @@ func (j *jsiiProxy_ComputeRegionDisk)SetId(val *string) {
 	)
 }
 
+func (j *jsiiProxy_ComputeRegionDisk)SetImage(val *string) {
+	if err := j.validateSetImageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"image",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ComputeRegionDisk)SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
@@ -1052,6 +1216,28 @@ func (j *jsiiProxy_ComputeRegionDisk)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeRegionDisk)SetProvisionedIops(val *float64) {
+	if err := j.validateSetProvisionedIopsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisionedIops",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeRegionDisk)SetProvisionedThroughput(val *float64) {
+	if err := j.validateSetProvisionedThroughputParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisionedThroughput",
 		val,
 	)
 }
@@ -1519,6 +1705,17 @@ func (c *jsiiProxy_ComputeRegionDisk) PutGuestOsFeatures(value interface{}) {
 	)
 }
 
+func (c *jsiiProxy_ComputeRegionDisk) PutSourceImageEncryptionKey(value *ComputeRegionDiskSourceImageEncryptionKey) {
+	if err := c.validatePutSourceImageEncryptionKeyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putSourceImageEncryptionKey",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeRegionDisk) PutSourceSnapshotEncryptionKey(value *ComputeRegionDiskSourceSnapshotEncryptionKey) {
 	if err := c.validatePutSourceSnapshotEncryptionKeyParameters(value); err != nil {
 		panic(err)
@@ -1538,6 +1735,14 @@ func (c *jsiiProxy_ComputeRegionDisk) PutTimeouts(value *ComputeRegionDiskTimeou
 		c,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ComputeRegionDisk) ResetAccessMode() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAccessMode",
+		nil, // no parameters
 	)
 }
 
@@ -1597,6 +1802,14 @@ func (c *jsiiProxy_ComputeRegionDisk) ResetId() {
 	)
 }
 
+func (c *jsiiProxy_ComputeRegionDisk) ResetImage() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetImage",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ComputeRegionDisk) ResetLabels() {
 	_jsii_.InvokeVoid(
 		c,
@@ -1637,6 +1850,22 @@ func (c *jsiiProxy_ComputeRegionDisk) ResetProject() {
 	)
 }
 
+func (c *jsiiProxy_ComputeRegionDisk) ResetProvisionedIops() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetProvisionedIops",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRegionDisk) ResetProvisionedThroughput() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetProvisionedThroughput",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ComputeRegionDisk) ResetRegion() {
 	_jsii_.InvokeVoid(
 		c,
@@ -1665,6 +1894,14 @@ func (c *jsiiProxy_ComputeRegionDisk) ResetSourceDisk() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetSourceDisk",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRegionDisk) ResetSourceImageEncryptionKey() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSourceImageEncryptionKey",
 		nil, // no parameters
 	)
 }

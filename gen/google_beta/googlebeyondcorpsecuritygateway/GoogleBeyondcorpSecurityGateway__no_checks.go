@@ -76,6 +76,18 @@ func (g *jsiiProxy_GoogleBeyondcorpSecurityGateway) validatePutHubsParameters(va
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBeyondcorpSecurityGateway) validatePutLoggingParameters(value *GoogleBeyondcorpSecurityGatewayLogging) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBeyondcorpSecurityGateway) validatePutProxyProtocolConfigParameters(value *GoogleBeyondcorpSecurityGatewayProxyProtocolConfig) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBeyondcorpSecurityGateway) validatePutServiceDiscoveryParameters(value *GoogleBeyondcorpSecurityGatewayServiceDiscovery) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBeyondcorpSecurityGateway) validatePutTimeoutsParameters(value *GoogleBeyondcorpSecurityGatewayTimeouts) error {
 	return nil
 }

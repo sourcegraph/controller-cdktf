@@ -1,0 +1,6 @@
+package datagooglevmwareenginedatastore
+
+
+type DataGoogleVmwareengineDatastoreNfsDatastoreGoogleFileService struct {
+}
+

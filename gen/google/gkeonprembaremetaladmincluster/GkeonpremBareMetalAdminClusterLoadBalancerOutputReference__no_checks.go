@@ -44,6 +44,10 @@ func (g *jsiiProxy_GkeonpremBareMetalAdminClusterLoadBalancerOutputReference) va
 	return nil
 }
 
+func (g *jsiiProxy_GkeonpremBareMetalAdminClusterLoadBalancerOutputReference) validatePutBgpLbConfigParameters(value *GkeonpremBareMetalAdminClusterLoadBalancerBgpLbConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GkeonpremBareMetalAdminClusterLoadBalancerOutputReference) validatePutManualLbConfigParameters(value *GkeonpremBareMetalAdminClusterLoadBalancerManualLbConfig) error {
 	return nil
 }

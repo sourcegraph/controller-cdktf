@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeinstantsnapshotiambinding/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_instant_snapshot_iam_binding google_compute_instant_snapshot_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_compute_instant_snapshot_iam_binding google_compute_instant_snapshot_iam_binding}.
 type GoogleComputeInstantSnapshotIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -459,7 +459,7 @@ func (j *jsiiProxy_GoogleComputeInstantSnapshotIamBinding) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_instant_snapshot_iam_binding google_compute_instant_snapshot_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_compute_instant_snapshot_iam_binding google_compute_instant_snapshot_iam_binding} Resource.
 func NewGoogleComputeInstantSnapshotIamBinding(scope constructs.Construct, id *string, config *GoogleComputeInstantSnapshotIamBindingConfig) GoogleComputeInstantSnapshotIamBinding {
 	_init_.Initialize()
 
@@ -477,7 +477,7 @@ func NewGoogleComputeInstantSnapshotIamBinding(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_instant_snapshot_iam_binding google_compute_instant_snapshot_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_compute_instant_snapshot_iam_binding google_compute_instant_snapshot_iam_binding} Resource.
 func NewGoogleComputeInstantSnapshotIamBinding_Override(g GoogleComputeInstantSnapshotIamBinding, scope constructs.Construct, id *string, config *GoogleComputeInstantSnapshotIamBindingConfig) {
 	_init_.Initialize()
 

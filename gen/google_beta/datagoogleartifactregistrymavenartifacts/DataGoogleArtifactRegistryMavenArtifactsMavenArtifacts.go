@@ -1,0 +1,6 @@
+package datagoogleartifactregistrymavenartifacts
+
+
+type DataGoogleArtifactRegistryMavenArtifactsMavenArtifacts struct {
+}
+

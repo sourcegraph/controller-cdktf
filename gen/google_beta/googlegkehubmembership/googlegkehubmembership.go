@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlegkehubmembership/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_gke_hub_membership google_gke_hub_membership}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_gke_hub_membership google_gke_hub_membership}.
 type GoogleGkeHubMembership interface {
 	cdktf.TerraformResource
 	Authority() GoogleGkeHubMembershipAuthorityOutputReference
@@ -30,9 +30,6 @@ type GoogleGkeHubMembership interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Description() *string
-	SetDescription(val *string)
-	DescriptionInput() *string
 	EffectiveLabels() cdktf.StringMap
 	Endpoint() GoogleGkeHubMembershipEndpointOutputReference
 	EndpointInput() *GoogleGkeHubMembershipEndpoint
@@ -132,7 +129,6 @@ type GoogleGkeHubMembership interface {
 	PutEndpoint(value *GoogleGkeHubMembershipEndpoint)
 	PutTimeouts(value *GoogleGkeHubMembershipTimeouts)
 	ResetAuthority()
-	ResetDescription()
 	ResetEndpoint()
 	ResetId()
 	ResetLabels()
@@ -225,26 +221,6 @@ func (j *jsiiProxy_GoogleGkeHubMembership) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_GoogleGkeHubMembership) Description() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"description",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_GoogleGkeHubMembership) DescriptionInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"descriptionInput",
 		&returns,
 	)
 	return returns
@@ -531,7 +507,7 @@ func (j *jsiiProxy_GoogleGkeHubMembership) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_gke_hub_membership google_gke_hub_membership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_gke_hub_membership google_gke_hub_membership} Resource.
 func NewGoogleGkeHubMembership(scope constructs.Construct, id *string, config *GoogleGkeHubMembershipConfig) GoogleGkeHubMembership {
 	_init_.Initialize()
 
@@ -549,7 +525,7 @@ func NewGoogleGkeHubMembership(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_gke_hub_membership google_gke_hub_membership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_gke_hub_membership google_gke_hub_membership} Resource.
 func NewGoogleGkeHubMembership_Override(g GoogleGkeHubMembership, scope constructs.Construct, id *string, config *GoogleGkeHubMembershipConfig) {
 	_init_.Initialize()
 
@@ -586,17 +562,6 @@ func (j *jsiiProxy_GoogleGkeHubMembership)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
-		val,
-	)
-}
-
-func (j *jsiiProxy_GoogleGkeHubMembership)SetDescription(val *string) {
-	if err := j.validateSetDescriptionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"description",
 		val,
 	)
 }
@@ -1084,14 +1049,6 @@ func (g *jsiiProxy_GoogleGkeHubMembership) ResetAuthority() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetAuthority",
-		nil, // no parameters
-	)
-}
-
-func (g *jsiiProxy_GoogleGkeHubMembership) ResetDescription() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetDescription",
 		nil, // no parameters
 	)
 }

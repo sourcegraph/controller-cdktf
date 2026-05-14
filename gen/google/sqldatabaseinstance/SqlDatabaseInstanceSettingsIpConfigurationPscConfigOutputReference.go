@@ -32,6 +32,9 @@ type SqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference interfac
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	NetworkAttachmentUri() *string
+	SetNetworkAttachmentUri(val *string)
+	NetworkAttachmentUriInput() *string
 	PscAutoConnections() SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsList
 	PscAutoConnectionsInput() interface{}
 	PscEnabled() interface{}
@@ -71,6 +74,7 @@ type SqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference interfac
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutPscAutoConnections(value interface{})
 	ResetAllowedConsumerProjects()
+	ResetNetworkAttachmentUri()
 	ResetPscAutoConnections()
 	ResetPscEnabled()
 	// Produce the Token's value at resolution time.
@@ -153,6 +157,26 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputRefe
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference) NetworkAttachmentUri() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkAttachmentUri",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference) NetworkAttachmentUriInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkAttachmentUriInput",
 		&returns,
 	)
 	return returns
@@ -286,6 +310,17 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputRefe
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference)SetNetworkAttachmentUri(val *string) {
+	if err := j.validateSetNetworkAttachmentUriParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"networkAttachmentUri",
 		val,
 	)
 }
@@ -524,6 +559,14 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputRefe
 	_jsii_.InvokeVoid(
 		s,
 		"resetAllowedConsumerProjects",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference) ResetNetworkAttachmentUri() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetNetworkAttachmentUri",
 		nil, // no parameters
 	)
 }

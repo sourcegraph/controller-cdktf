@@ -31,6 +31,8 @@ type DataGoogleComputeInstanceTemplateDiskSourceSnapshotEncryptionKeyOutputRefer
 	SetInternalValue(val *DataGoogleComputeInstanceTemplateDiskSourceSnapshotEncryptionKey)
 	KmsKeySelfLink() *string
 	KmsKeyServiceAccount() *string
+	RawKey() *string
+	RsaEncryptedKey() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -143,6 +145,26 @@ func (j *jsiiProxy_DataGoogleComputeInstanceTemplateDiskSourceSnapshotEncryption
 	_jsii_.Get(
 		j,
 		"kmsKeyServiceAccount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeInstanceTemplateDiskSourceSnapshotEncryptionKeyOutputReference) RawKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rawKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeInstanceTemplateDiskSourceSnapshotEncryptionKeyOutputReference) RsaEncryptedKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rsaEncryptedKey",
 		&returns,
 	)
 	return returns

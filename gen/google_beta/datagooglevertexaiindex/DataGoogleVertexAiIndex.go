@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglevertexaiindex/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_vertex_ai_index google_vertex_ai_index}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/data-sources/google_vertex_ai_index google_vertex_ai_index}.
 type DataGoogleVertexAiIndex interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -29,6 +29,7 @@ type DataGoogleVertexAiIndex interface {
 	Description() *string
 	DisplayName() *string
 	EffectiveLabels() cdktf.StringMap
+	EncryptionSpec() DataGoogleVertexAiIndexEncryptionSpecList
 	Etag() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -209,6 +210,16 @@ func (j *jsiiProxy_DataGoogleVertexAiIndex) EffectiveLabels() cdktf.StringMap {
 	_jsii_.Get(
 		j,
 		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleVertexAiIndex) EncryptionSpec() DataGoogleVertexAiIndexEncryptionSpecList {
+	var returns DataGoogleVertexAiIndexEncryptionSpecList
+	_jsii_.Get(
+		j,
+		"encryptionSpec",
 		&returns,
 	)
 	return returns
@@ -475,7 +486,7 @@ func (j *jsiiProxy_DataGoogleVertexAiIndex) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_vertex_ai_index google_vertex_ai_index} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/data-sources/google_vertex_ai_index google_vertex_ai_index} Data Source.
 func NewDataGoogleVertexAiIndex(scope constructs.Construct, id *string, config *DataGoogleVertexAiIndexConfig) DataGoogleVertexAiIndex {
 	_init_.Initialize()
 
@@ -493,7 +504,7 @@ func NewDataGoogleVertexAiIndex(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/data-sources/google_vertex_ai_index google_vertex_ai_index} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/data-sources/google_vertex_ai_index google_vertex_ai_index} Data Source.
 func NewDataGoogleVertexAiIndex_Override(d DataGoogleVertexAiIndex, scope constructs.Construct, id *string, config *DataGoogleVertexAiIndexConfig) {
 	_init_.Initialize()
 

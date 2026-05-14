@@ -25,6 +25,7 @@ type DataGoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference interfac
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EnhancedQueryInsightsEnabled() cdktf.IResolvable
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataGoogleSqlDatabaseInstanceSettingsInsightsConfig
@@ -106,6 +107,16 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsInsightsConfigOutputRefe
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference) EnhancedQueryInsightsEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"enhancedQueryInsightsEnabled",
 		&returns,
 	)
 	return returns

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/computeresizerequest/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_resize_request google_compute_resize_request}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_resize_request google_compute_resize_request}.
 type ComputeResizeRequest interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -529,7 +529,7 @@ func (j *jsiiProxy_ComputeResizeRequest) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_resize_request google_compute_resize_request} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_resize_request google_compute_resize_request} Resource.
 func NewComputeResizeRequest(scope constructs.Construct, id *string, config *ComputeResizeRequestConfig) ComputeResizeRequest {
 	_init_.Initialize()
 
@@ -547,7 +547,7 @@ func NewComputeResizeRequest(scope constructs.Construct, id *string, config *Com
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_resize_request google_compute_resize_request} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_resize_request google_compute_resize_request} Resource.
 func NewComputeResizeRequest_Override(c ComputeResizeRequest, scope constructs.Construct, id *string, config *ComputeResizeRequestConfig) {
 	_init_.Initialize()
 

@@ -72,6 +72,10 @@ func (n *jsiiProxy_NetworkSecurityFirewallEndpoint) validateOverrideLogicalIdPar
 	return nil
 }
 
+func (n *jsiiProxy_NetworkSecurityFirewallEndpoint) validatePutEndpointSettingsParameters(value *NetworkSecurityFirewallEndpointEndpointSettings) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkSecurityFirewallEndpoint) validatePutTimeoutsParameters(value *NetworkSecurityFirewallEndpointTimeouts) error {
 	return nil
 }

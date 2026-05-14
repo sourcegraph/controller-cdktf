@@ -28,6 +28,12 @@ type ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EnableK8SCertsViaDns() interface{}
+	SetEnableK8SCertsViaDns(val interface{})
+	EnableK8SCertsViaDnsInput() interface{}
+	EnableK8STokensViaDns() interface{}
+	SetEnableK8STokensViaDns(val interface{})
+	EnableK8STokensViaDnsInput() interface{}
 	Endpoint() *string
 	SetEndpoint(val *string)
 	EndpointInput() *string
@@ -68,6 +74,8 @@ type ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAllowExternalTraffic()
+	ResetEnableK8SCertsViaDns()
+	ResetEnableK8STokensViaDns()
 	ResetEndpoint()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -129,6 +137,46 @@ func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigO
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference) EnableK8SCertsViaDns() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableK8SCertsViaDns",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference) EnableK8SCertsViaDnsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableK8SCertsViaDnsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference) EnableK8STokensViaDns() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableK8STokensViaDns",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference) EnableK8STokensViaDnsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableK8STokensViaDnsInput",
 		&returns,
 	)
 	return returns
@@ -251,6 +299,28 @@ func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigO
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference)SetEnableK8SCertsViaDns(val interface{}) {
+	if err := j.validateSetEnableK8SCertsViaDnsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableK8SCertsViaDns",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference)SetEnableK8STokensViaDns(val interface{}) {
+	if err := j.validateSetEnableK8STokensViaDnsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableK8STokensViaDns",
 		val,
 	)
 }
@@ -489,6 +559,22 @@ func (c *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigO
 	_jsii_.InvokeVoid(
 		c,
 		"resetAllowExternalTraffic",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference) ResetEnableK8SCertsViaDns() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEnableK8SCertsViaDns",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference) ResetEnableK8STokensViaDns() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEnableK8STokensViaDns",
 		nil, // no parameters
 	)
 }

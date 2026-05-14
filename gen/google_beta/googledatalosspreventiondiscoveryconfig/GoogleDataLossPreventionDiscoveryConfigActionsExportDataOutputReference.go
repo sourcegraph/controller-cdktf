@@ -31,6 +31,8 @@ type GoogleDataLossPreventionDiscoveryConfigActionsExportDataOutputReference int
 	SetInternalValue(val *GoogleDataLossPreventionDiscoveryConfigActionsExportData)
 	ProfileTable() GoogleDataLossPreventionDiscoveryConfigActionsExportDataProfileTableOutputReference
 	ProfileTableInput() *GoogleDataLossPreventionDiscoveryConfigActionsExportDataProfileTable
+	SampleFindingsTable() GoogleDataLossPreventionDiscoveryConfigActionsExportDataSampleFindingsTableOutputReference
+	SampleFindingsTableInput() *GoogleDataLossPreventionDiscoveryConfigActionsExportDataSampleFindingsTable
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -64,7 +66,9 @@ type GoogleDataLossPreventionDiscoveryConfigActionsExportDataOutputReference int
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutProfileTable(value *GoogleDataLossPreventionDiscoveryConfigActionsExportDataProfileTable)
+	PutSampleFindingsTable(value *GoogleDataLossPreventionDiscoveryConfigActionsExportDataSampleFindingsTable)
 	ResetProfileTable()
+	ResetSampleFindingsTable()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -145,6 +149,26 @@ func (j *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigActionsExportDataOutpu
 	_jsii_.Get(
 		j,
 		"profileTableInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigActionsExportDataOutputReference) SampleFindingsTable() GoogleDataLossPreventionDiscoveryConfigActionsExportDataSampleFindingsTableOutputReference {
+	var returns GoogleDataLossPreventionDiscoveryConfigActionsExportDataSampleFindingsTableOutputReference
+	_jsii_.Get(
+		j,
+		"sampleFindingsTable",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigActionsExportDataOutputReference) SampleFindingsTableInput() *GoogleDataLossPreventionDiscoveryConfigActionsExportDataSampleFindingsTable {
+	var returns *GoogleDataLossPreventionDiscoveryConfigActionsExportDataSampleFindingsTable
+	_jsii_.Get(
+		j,
+		"sampleFindingsTableInput",
 		&returns,
 	)
 	return returns
@@ -450,10 +474,29 @@ func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigActionsExportDataOutpu
 	)
 }
 
+func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigActionsExportDataOutputReference) PutSampleFindingsTable(value *GoogleDataLossPreventionDiscoveryConfigActionsExportDataSampleFindingsTable) {
+	if err := g.validatePutSampleFindingsTableParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSampleFindingsTable",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigActionsExportDataOutputReference) ResetProfileTable() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProfileTable",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigActionsExportDataOutputReference) ResetSampleFindingsTable() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSampleFindingsTable",
 		nil, // no parameters
 	)
 }

@@ -41,9 +41,15 @@ type SqlDatabaseInstanceCloneOutputReference interface {
 	PreferredZone() *string
 	SetPreferredZone(val *string)
 	PreferredZoneInput() *string
+	SourceInstanceDeletionTime() *string
+	SetSourceInstanceDeletionTime(val *string)
+	SourceInstanceDeletionTimeInput() *string
 	SourceInstanceName() *string
 	SetSourceInstanceName(val *string)
 	SourceInstanceNameInput() *string
+	SourceProject() *string
+	SetSourceProject(val *string)
+	SourceProjectInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -80,6 +86,8 @@ type SqlDatabaseInstanceCloneOutputReference interface {
 	ResetDatabaseNames()
 	ResetPointInTime()
 	ResetPreferredZone()
+	ResetSourceInstanceDeletionTime()
+	ResetSourceProject()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -225,6 +233,26 @@ func (j *jsiiProxy_SqlDatabaseInstanceCloneOutputReference) PreferredZoneInput()
 	return returns
 }
 
+func (j *jsiiProxy_SqlDatabaseInstanceCloneOutputReference) SourceInstanceDeletionTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceInstanceDeletionTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceCloneOutputReference) SourceInstanceDeletionTimeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceInstanceDeletionTimeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SqlDatabaseInstanceCloneOutputReference) SourceInstanceName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -240,6 +268,26 @@ func (j *jsiiProxy_SqlDatabaseInstanceCloneOutputReference) SourceInstanceNameIn
 	_jsii_.Get(
 		j,
 		"sourceInstanceNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceCloneOutputReference) SourceProject() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceProject",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceCloneOutputReference) SourceProjectInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceProjectInput",
 		&returns,
 	)
 	return returns
@@ -370,6 +418,17 @@ func (j *jsiiProxy_SqlDatabaseInstanceCloneOutputReference)SetPreferredZone(val 
 	)
 }
 
+func (j *jsiiProxy_SqlDatabaseInstanceCloneOutputReference)SetSourceInstanceDeletionTime(val *string) {
+	if err := j.validateSetSourceInstanceDeletionTimeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sourceInstanceDeletionTime",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SqlDatabaseInstanceCloneOutputReference)SetSourceInstanceName(val *string) {
 	if err := j.validateSetSourceInstanceNameParameters(val); err != nil {
 		panic(err)
@@ -377,6 +436,17 @@ func (j *jsiiProxy_SqlDatabaseInstanceCloneOutputReference)SetSourceInstanceName
 	_jsii_.Set(
 		j,
 		"sourceInstanceName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceCloneOutputReference)SetSourceProject(val *string) {
+	if err := j.validateSetSourceProjectParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sourceProject",
 		val,
 	)
 }
@@ -617,6 +687,22 @@ func (s *jsiiProxy_SqlDatabaseInstanceCloneOutputReference) ResetPreferredZone()
 	_jsii_.InvokeVoid(
 		s,
 		"resetPreferredZone",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlDatabaseInstanceCloneOutputReference) ResetSourceInstanceDeletionTime() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSourceInstanceDeletionTime",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlDatabaseInstanceCloneOutputReference) ResetSourceProject() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSourceProject",
 		nil, // no parameters
 	)
 }

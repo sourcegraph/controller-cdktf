@@ -96,6 +96,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetSparkConfig", GoMethod: "ResetSparkConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSparksqlConfig", GoMethod: "ResetSparksqlConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWaitForCompletion", GoMethod: "ResetWaitForCompletion"},
 			_jsii_.MemberProperty{JsiiProperty: "scheduling", GoGetter: "Scheduling"},
 			_jsii_.MemberProperty{JsiiProperty: "schedulingInput", GoGetter: "SchedulingInput"},
 			_jsii_.MemberProperty{JsiiProperty: "sparkConfig", GoGetter: "SparkConfig"},
@@ -115,6 +116,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberProperty{JsiiProperty: "waitForCompletion", GoGetter: "WaitForCompletion"},
+			_jsii_.MemberProperty{JsiiProperty: "waitForCompletionInput", GoGetter: "WaitForCompletionInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleDataprocJob{}

@@ -144,6 +144,10 @@ func (j *jsiiProxy_GoogleNetworkSecuritySecurityProfileGroup) validateSetThreatP
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetworkSecuritySecurityProfileGroup) validateSetUrlFilteringProfileParameters(val *string) error {
+	return nil
+}
+
 func validateNewGoogleNetworkSecuritySecurityProfileGroupParameters(scope constructs.Construct, id *string, config *GoogleNetworkSecuritySecurityProfileGroupConfig) error {
 	return nil
 }

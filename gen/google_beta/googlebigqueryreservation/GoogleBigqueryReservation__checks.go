@@ -416,6 +416,14 @@ func (j *jsiiProxy_GoogleBigqueryReservation) validateSetLocationParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_GoogleBigqueryReservation) validateSetMaxSlotsParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBigqueryReservation) validateSetNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -473,6 +481,22 @@ func (j *jsiiProxy_GoogleBigqueryReservation) validateSetProvisionersParameters(
 				return fmt.Errorf("parameter val[%#v] must be one of the allowed types: *cdktf.FileProvisioner, *cdktf.LocalExecProvisioner, *cdktf.RemoteExecProvisioner; received %#v (a %T)", idx_97dfc6, v, v)
 			}
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleBigqueryReservation) validateSetReservationGroupParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleBigqueryReservation) validateSetScalingModeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

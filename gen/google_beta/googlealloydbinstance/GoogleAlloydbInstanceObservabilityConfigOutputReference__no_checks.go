@@ -96,6 +96,10 @@ func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) vali
 	return nil
 }
 
+func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) validateSetTrackClientAddressParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) validateSetTrackWaitEventsParameters(val interface{}) error {
 	return nil
 }

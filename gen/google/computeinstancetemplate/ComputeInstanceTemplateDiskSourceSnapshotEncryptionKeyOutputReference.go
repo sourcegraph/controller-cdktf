@@ -35,6 +35,12 @@ type ComputeInstanceTemplateDiskSourceSnapshotEncryptionKeyOutputReference inter
 	KmsKeyServiceAccount() *string
 	SetKmsKeyServiceAccount(val *string)
 	KmsKeyServiceAccountInput() *string
+	RawKey() *string
+	SetRawKey(val *string)
+	RawKeyInput() *string
+	RsaEncryptedKey() *string
+	SetRsaEncryptedKey(val *string)
+	RsaEncryptedKeyInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,7 +73,10 @@ type ComputeInstanceTemplateDiskSourceSnapshotEncryptionKeyOutputReference inter
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetKmsKeySelfLink()
 	ResetKmsKeyServiceAccount()
+	ResetRawKey()
+	ResetRsaEncryptedKey()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -173,6 +182,46 @@ func (j *jsiiProxy_ComputeInstanceTemplateDiskSourceSnapshotEncryptionKeyOutputR
 	return returns
 }
 
+func (j *jsiiProxy_ComputeInstanceTemplateDiskSourceSnapshotEncryptionKeyOutputReference) RawKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rawKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceTemplateDiskSourceSnapshotEncryptionKeyOutputReference) RawKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rawKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceTemplateDiskSourceSnapshotEncryptionKeyOutputReference) RsaEncryptedKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rsaEncryptedKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceTemplateDiskSourceSnapshotEncryptionKeyOutputReference) RsaEncryptedKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rsaEncryptedKeyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeInstanceTemplateDiskSourceSnapshotEncryptionKeyOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -272,6 +321,28 @@ func (j *jsiiProxy_ComputeInstanceTemplateDiskSourceSnapshotEncryptionKeyOutputR
 	_jsii_.Set(
 		j,
 		"kmsKeyServiceAccount",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeInstanceTemplateDiskSourceSnapshotEncryptionKeyOutputReference)SetRawKey(val *string) {
+	if err := j.validateSetRawKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rawKey",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeInstanceTemplateDiskSourceSnapshotEncryptionKeyOutputReference)SetRsaEncryptedKey(val *string) {
+	if err := j.validateSetRsaEncryptedKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rsaEncryptedKey",
 		val,
 	)
 }
@@ -484,10 +555,34 @@ func (c *jsiiProxy_ComputeInstanceTemplateDiskSourceSnapshotEncryptionKeyOutputR
 	return returns
 }
 
+func (c *jsiiProxy_ComputeInstanceTemplateDiskSourceSnapshotEncryptionKeyOutputReference) ResetKmsKeySelfLink() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetKmsKeySelfLink",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ComputeInstanceTemplateDiskSourceSnapshotEncryptionKeyOutputReference) ResetKmsKeyServiceAccount() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetKmsKeyServiceAccount",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeInstanceTemplateDiskSourceSnapshotEncryptionKeyOutputReference) ResetRawKey() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRawKey",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeInstanceTemplateDiskSourceSnapshotEncryptionKeyOutputReference) ResetRsaEncryptedKey() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRsaEncryptedKey",
 		nil, // no parameters
 	)
 }

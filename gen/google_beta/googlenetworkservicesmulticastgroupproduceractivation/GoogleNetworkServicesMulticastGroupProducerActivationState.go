@@ -1,0 +1,6 @@
+package googlenetworkservicesmulticastgroupproduceractivation
+
+
+type GoogleNetworkServicesMulticastGroupProducerActivationState struct {
+}
+

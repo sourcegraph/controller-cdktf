@@ -44,6 +44,10 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigOutputReference) validateInterpol
 	return nil
 }
 
+func (d *jsiiProxy_DatastreamStreamSourceConfigOutputReference) validatePutMongodbSourceConfigParameters(value *DatastreamStreamSourceConfigMongodbSourceConfig) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatastreamStreamSourceConfigOutputReference) validatePutMysqlSourceConfigParameters(value *DatastreamStreamSourceConfigMysqlSourceConfig) error {
 	return nil
 }
@@ -57,6 +61,10 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigOutputReference) validatePutPostg
 }
 
 func (d *jsiiProxy_DatastreamStreamSourceConfigOutputReference) validatePutSalesforceSourceConfigParameters(value *DatastreamStreamSourceConfigSalesforceSourceConfig) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatastreamStreamSourceConfigOutputReference) validatePutSpannerSourceConfigParameters(value *DatastreamStreamSourceConfigSpannerSourceConfig) error {
 	return nil
 }
 

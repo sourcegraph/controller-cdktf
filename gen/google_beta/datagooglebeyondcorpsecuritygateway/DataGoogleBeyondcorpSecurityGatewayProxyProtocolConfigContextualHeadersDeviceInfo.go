@@ -1,0 +1,6 @@
+package datagooglebeyondcorpsecuritygateway
+
+
+type DataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersDeviceInfo struct {
+}
+

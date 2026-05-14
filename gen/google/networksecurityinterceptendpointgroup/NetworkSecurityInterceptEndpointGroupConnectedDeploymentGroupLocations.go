@@ -1,0 +1,6 @@
+package networksecurityinterceptendpointgroup
+
+
+type NetworkSecurityInterceptEndpointGroupConnectedDeploymentGroupLocations struct {
+}
+

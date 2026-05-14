@@ -52,6 +52,15 @@ type GoogleComputeBackendServiceBackendOutputReference interface {
 	MaxConnectionsPerInstance() *float64
 	SetMaxConnectionsPerInstance(val *float64)
 	MaxConnectionsPerInstanceInput() *float64
+	MaxInFlightRequests() *float64
+	SetMaxInFlightRequests(val *float64)
+	MaxInFlightRequestsInput() *float64
+	MaxInFlightRequestsPerEndpoint() *float64
+	SetMaxInFlightRequestsPerEndpoint(val *float64)
+	MaxInFlightRequestsPerEndpointInput() *float64
+	MaxInFlightRequestsPerInstance() *float64
+	SetMaxInFlightRequestsPerInstance(val *float64)
+	MaxInFlightRequestsPerInstanceInput() *float64
 	MaxRate() *float64
 	SetMaxRate(val *float64)
 	MaxRateInput() *float64
@@ -75,6 +84,9 @@ type GoogleComputeBackendServiceBackendOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TrafficDuration() *string
+	SetTrafficDuration(val *string)
+	TrafficDurationInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -107,11 +119,15 @@ type GoogleComputeBackendServiceBackendOutputReference interface {
 	ResetMaxConnections()
 	ResetMaxConnectionsPerEndpoint()
 	ResetMaxConnectionsPerInstance()
+	ResetMaxInFlightRequests()
+	ResetMaxInFlightRequestsPerEndpoint()
+	ResetMaxInFlightRequestsPerInstance()
 	ResetMaxRate()
 	ResetMaxRatePerEndpoint()
 	ResetMaxRatePerInstance()
 	ResetMaxUtilization()
 	ResetPreference()
+	ResetTrafficDuration()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -337,6 +353,66 @@ func (j *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) MaxConnect
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) MaxInFlightRequests() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxInFlightRequests",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) MaxInFlightRequestsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxInFlightRequestsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) MaxInFlightRequestsPerEndpoint() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxInFlightRequestsPerEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) MaxInFlightRequestsPerEndpointInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxInFlightRequestsPerEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) MaxInFlightRequestsPerInstance() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxInFlightRequestsPerInstance",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) MaxInFlightRequestsPerInstanceInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxInFlightRequestsPerInstanceInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) MaxRate() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -452,6 +528,26 @@ func (j *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) TerraformR
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) TrafficDuration() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"trafficDuration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) TrafficDurationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"trafficDurationInput",
 		&returns,
 	)
 	return returns
@@ -595,6 +691,39 @@ func (j *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference)SetMaxConne
 	)
 }
 
+func (j *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference)SetMaxInFlightRequests(val *float64) {
+	if err := j.validateSetMaxInFlightRequestsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxInFlightRequests",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference)SetMaxInFlightRequestsPerEndpoint(val *float64) {
+	if err := j.validateSetMaxInFlightRequestsPerEndpointParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxInFlightRequestsPerEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference)SetMaxInFlightRequestsPerInstance(val *float64) {
+	if err := j.validateSetMaxInFlightRequestsPerInstanceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxInFlightRequestsPerInstance",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference)SetMaxRate(val *float64) {
 	if err := j.validateSetMaxRateParameters(val); err != nil {
 		panic(err)
@@ -668,6 +797,17 @@ func (j *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference)SetTerrafor
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference)SetTrafficDuration(val *string) {
+	if err := j.validateSetTrafficDurationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"trafficDuration",
 		val,
 	)
 }
@@ -925,6 +1065,30 @@ func (g *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) ResetMaxCo
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) ResetMaxInFlightRequests() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMaxInFlightRequests",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) ResetMaxInFlightRequestsPerEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMaxInFlightRequestsPerEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) ResetMaxInFlightRequestsPerInstance() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMaxInFlightRequestsPerInstance",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) ResetMaxRate() {
 	_jsii_.InvokeVoid(
 		g,
@@ -961,6 +1125,14 @@ func (g *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) ResetPrefe
 	_jsii_.InvokeVoid(
 		g,
 		"resetPreference",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) ResetTrafficDuration() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTrafficDuration",
 		nil, // no parameters
 	)
 }

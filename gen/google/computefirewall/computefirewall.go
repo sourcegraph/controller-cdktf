@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/computefirewall/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_firewall google_compute_firewall}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_firewall google_compute_firewall}.
 type ComputeFirewall interface {
 	cdktf.TerraformResource
 	Allow() ComputeFirewallAllowList
@@ -73,6 +73,8 @@ type ComputeFirewall interface {
 	NetworkInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Params() ComputeFirewallParamsOutputReference
+	ParamsInput() *ComputeFirewallParams
 	Priority() *float64
 	SetPriority(val *float64)
 	PriorityInput() *float64
@@ -159,6 +161,7 @@ type ComputeFirewall interface {
 	PutAllow(value interface{})
 	PutDeny(value interface{})
 	PutLogConfig(value *ComputeFirewallLogConfig)
+	PutParams(value *ComputeFirewallParams)
 	PutTimeouts(value *ComputeFirewallTimeouts)
 	ResetAllow()
 	ResetDeny()
@@ -172,6 +175,7 @@ type ComputeFirewall interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetParams()
 	ResetPriority()
 	ResetProject()
 	ResetSourceRanges()
@@ -528,6 +532,26 @@ func (j *jsiiProxy_ComputeFirewall) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeFirewall) Params() ComputeFirewallParamsOutputReference {
+	var returns ComputeFirewallParamsOutputReference
+	_jsii_.Get(
+		j,
+		"params",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeFirewall) ParamsInput() *ComputeFirewallParams {
+	var returns *ComputeFirewallParams
+	_jsii_.Get(
+		j,
+		"paramsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeFirewall) Priority() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -759,7 +783,7 @@ func (j *jsiiProxy_ComputeFirewall) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_firewall google_compute_firewall} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_firewall google_compute_firewall} Resource.
 func NewComputeFirewall(scope constructs.Construct, id *string, config *ComputeFirewallConfig) ComputeFirewall {
 	_init_.Initialize()
 
@@ -777,7 +801,7 @@ func NewComputeFirewall(scope constructs.Construct, id *string, config *ComputeF
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_firewall google_compute_firewall} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_firewall google_compute_firewall} Resource.
 func NewComputeFirewall_Override(c ComputeFirewall, scope constructs.Construct, id *string, config *ComputeFirewallConfig) {
 	_init_.Initialize()
 
@@ -1407,6 +1431,17 @@ func (c *jsiiProxy_ComputeFirewall) PutLogConfig(value *ComputeFirewallLogConfig
 	)
 }
 
+func (c *jsiiProxy_ComputeFirewall) PutParams(value *ComputeFirewallParams) {
+	if err := c.validatePutParamsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putParams",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeFirewall) PutTimeouts(value *ComputeFirewallTimeouts) {
 	if err := c.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1494,6 +1529,14 @@ func (c *jsiiProxy_ComputeFirewall) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeFirewall) ResetParams() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetParams",
 		nil, // no parameters
 	)
 }

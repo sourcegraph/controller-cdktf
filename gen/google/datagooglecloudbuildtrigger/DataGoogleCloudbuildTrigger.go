@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagooglecloudbuildtrigger/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/cloudbuild_trigger google_cloudbuild_trigger}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/cloudbuild_trigger google_cloudbuild_trigger}.
 type DataGoogleCloudbuildTrigger interface {
 	cdktf.TerraformDataSource
 	ApprovalConfig() DataGoogleCloudbuildTriggerApprovalConfigList
@@ -29,6 +29,7 @@ type DataGoogleCloudbuildTrigger interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Description() *string
+	DeveloperConnectEventConfig() DataGoogleCloudbuildTriggerDeveloperConnectEventConfigList
 	Disabled() cdktf.IResolvable
 	Filename() *string
 	Filter() *string
@@ -218,6 +219,16 @@ func (j *jsiiProxy_DataGoogleCloudbuildTrigger) Description() *string {
 	_jsii_.Get(
 		j,
 		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleCloudbuildTrigger) DeveloperConnectEventConfig() DataGoogleCloudbuildTriggerDeveloperConnectEventConfigList {
+	var returns DataGoogleCloudbuildTriggerDeveloperConnectEventConfigList
+	_jsii_.Get(
+		j,
+		"developerConnectEventConfig",
 		&returns,
 	)
 	return returns
@@ -574,7 +585,7 @@ func (j *jsiiProxy_DataGoogleCloudbuildTrigger) WebhookConfig() DataGoogleCloudb
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/cloudbuild_trigger google_cloudbuild_trigger} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/cloudbuild_trigger google_cloudbuild_trigger} Data Source.
 func NewDataGoogleCloudbuildTrigger(scope constructs.Construct, id *string, config *DataGoogleCloudbuildTriggerConfig) DataGoogleCloudbuildTrigger {
 	_init_.Initialize()
 
@@ -592,7 +603,7 @@ func NewDataGoogleCloudbuildTrigger(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/cloudbuild_trigger google_cloudbuild_trigger} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/cloudbuild_trigger google_cloudbuild_trigger} Data Source.
 func NewDataGoogleCloudbuildTrigger_Override(d DataGoogleCloudbuildTrigger, scope constructs.Construct, id *string, config *DataGoogleCloudbuildTriggerConfig) {
 	_init_.Initialize()
 

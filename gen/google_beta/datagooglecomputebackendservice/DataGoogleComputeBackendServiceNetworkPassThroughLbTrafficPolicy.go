@@ -1,0 +1,6 @@
+package datagooglecomputebackendservice
+
+
+type DataGoogleComputeBackendServiceNetworkPassThroughLbTrafficPolicy struct {
+}
+

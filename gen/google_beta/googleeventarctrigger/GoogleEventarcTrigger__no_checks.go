@@ -80,6 +80,10 @@ func (g *jsiiProxy_GoogleEventarcTrigger) validatePutMatchingCriteriaParameters(
 	return nil
 }
 
+func (g *jsiiProxy_GoogleEventarcTrigger) validatePutRetryPolicyParameters(value *GoogleEventarcTriggerRetryPolicy) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleEventarcTrigger) validatePutTimeoutsParameters(value *GoogleEventarcTriggerTimeouts) error {
 	return nil
 }

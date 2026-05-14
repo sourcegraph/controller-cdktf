@@ -10,8 +10,6 @@ import (
 
 type GoogleGkeHubFeatureMembershipConfigmanagementOutputReference interface {
 	cdktf.ComplexObject
-	Binauthz() GoogleGkeHubFeatureMembershipConfigmanagementBinauthzOutputReference
-	BinauthzInput() *GoogleGkeHubFeatureMembershipConfigmanagementBinauthz
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -75,11 +73,9 @@ type GoogleGkeHubFeatureMembershipConfigmanagementOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutBinauthz(value *GoogleGkeHubFeatureMembershipConfigmanagementBinauthz)
 	PutConfigSync(value *GoogleGkeHubFeatureMembershipConfigmanagementConfigSync)
 	PutHierarchyController(value *GoogleGkeHubFeatureMembershipConfigmanagementHierarchyController)
 	PutPolicyController(value *GoogleGkeHubFeatureMembershipConfigmanagementPolicyController)
-	ResetBinauthz()
 	ResetConfigSync()
 	ResetHierarchyController()
 	ResetManagement()
@@ -98,26 +94,6 @@ type GoogleGkeHubFeatureMembershipConfigmanagementOutputReference interface {
 // The jsii proxy struct for GoogleGkeHubFeatureMembershipConfigmanagementOutputReference
 type jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementOutputReference struct {
 	internal.Type__cdktfComplexObject
-}
-
-func (j *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementOutputReference) Binauthz() GoogleGkeHubFeatureMembershipConfigmanagementBinauthzOutputReference {
-	var returns GoogleGkeHubFeatureMembershipConfigmanagementBinauthzOutputReference
-	_jsii_.Get(
-		j,
-		"binauthz",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementOutputReference) BinauthzInput() *GoogleGkeHubFeatureMembershipConfigmanagementBinauthz {
-	var returns *GoogleGkeHubFeatureMembershipConfigmanagementBinauthz
-	_jsii_.Get(
-		j,
-		"binauthzInput",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementOutputReference) ComplexObjectIndex() interface{} {
@@ -581,17 +557,6 @@ func (g *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementOutputReference)
 	return returns
 }
 
-func (g *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementOutputReference) PutBinauthz(value *GoogleGkeHubFeatureMembershipConfigmanagementBinauthz) {
-	if err := g.validatePutBinauthzParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		g,
-		"putBinauthz",
-		[]interface{}{value},
-	)
-}
-
 func (g *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementOutputReference) PutConfigSync(value *GoogleGkeHubFeatureMembershipConfigmanagementConfigSync) {
 	if err := g.validatePutConfigSyncParameters(value); err != nil {
 		panic(err)
@@ -622,14 +587,6 @@ func (g *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementOutputReference)
 		g,
 		"putPolicyController",
 		[]interface{}{value},
-	)
-}
-
-func (g *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementOutputReference) ResetBinauthz() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetBinauthz",
-		nil, // no parameters
 	)
 }
 

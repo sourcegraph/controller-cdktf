@@ -23,6 +23,8 @@ type BigqueryJobQueryOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ConnectionProperties() BigqueryJobQueryConnectionPropertiesList
+	ConnectionPropertiesInput() interface{}
 	CreateDisposition() *string
 	SetCreateDisposition(val *string)
 	CreateDispositionInput() *string
@@ -107,12 +109,14 @@ type BigqueryJobQueryOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutConnectionProperties(value interface{})
 	PutDefaultDataset(value *BigqueryJobQueryDefaultDataset)
 	PutDestinationEncryptionConfiguration(value *BigqueryJobQueryDestinationEncryptionConfiguration)
 	PutDestinationTable(value *BigqueryJobQueryDestinationTable)
 	PutScriptOptions(value *BigqueryJobQueryScriptOptions)
 	PutUserDefinedFunctionResources(value interface{})
 	ResetAllowLargeResults()
+	ResetConnectionProperties()
 	ResetCreateDisposition()
 	ResetDefaultDataset()
 	ResetDestinationEncryptionConfiguration()
@@ -178,6 +182,26 @@ func (j *jsiiProxy_BigqueryJobQueryOutputReference) ComplexObjectIsFromSet() *bo
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryJobQueryOutputReference) ConnectionProperties() BigqueryJobQueryConnectionPropertiesList {
+	var returns BigqueryJobQueryConnectionPropertiesList
+	_jsii_.Get(
+		j,
+		"connectionProperties",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryJobQueryOutputReference) ConnectionPropertiesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connectionPropertiesInput",
 		&returns,
 	)
 	return returns
@@ -954,6 +978,17 @@ func (b *jsiiProxy_BigqueryJobQueryOutputReference) InterpolationForAttribute(pr
 	return returns
 }
 
+func (b *jsiiProxy_BigqueryJobQueryOutputReference) PutConnectionProperties(value interface{}) {
+	if err := b.validatePutConnectionPropertiesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putConnectionProperties",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BigqueryJobQueryOutputReference) PutDefaultDataset(value *BigqueryJobQueryDefaultDataset) {
 	if err := b.validatePutDefaultDatasetParameters(value); err != nil {
 		panic(err)
@@ -1013,6 +1048,14 @@ func (b *jsiiProxy_BigqueryJobQueryOutputReference) ResetAllowLargeResults() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetAllowLargeResults",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryJobQueryOutputReference) ResetConnectionProperties() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetConnectionProperties",
 		nil, // no parameters
 	)
 }

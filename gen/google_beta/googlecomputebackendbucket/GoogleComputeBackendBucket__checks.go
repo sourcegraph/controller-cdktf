@@ -215,6 +215,17 @@ func (g *jsiiProxy_GoogleComputeBackendBucket) validatePutCdnPolicyParameters(va
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeBackendBucket) validatePutParamsParameters(value *GoogleComputeBackendBucketParams) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeBackendBucket) validatePutTimeoutsParameters(value *GoogleComputeBackendBucketTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -427,6 +438,14 @@ func (j *jsiiProxy_GoogleComputeBackendBucket) validateSetIdParameters(val *stri
 func (j *jsiiProxy_GoogleComputeBackendBucket) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeBackendBucket) validateSetLoadBalancingSchemeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

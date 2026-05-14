@@ -268,6 +268,17 @@ func (c *jsiiProxy_ComputeInstanceGroupManager) validatePutNamedPortParameters(v
 	return nil
 }
 
+func (c *jsiiProxy_ComputeInstanceGroupManager) validatePutResourcePoliciesParameters(value *ComputeInstanceGroupManagerResourcePolicies) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (c *jsiiProxy_ComputeInstanceGroupManager) validatePutStandbyPolicyParameters(value *ComputeInstanceGroupManagerStandbyPolicy) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -366,6 +377,37 @@ func (c *jsiiProxy_ComputeInstanceGroupManager) validatePutStatefulInternalIpPar
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
 			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ComputeInstanceGroupManagerStatefulInternalIp; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_ComputeInstanceGroupManager) validatePutTargetSizePolicyParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*ComputeInstanceGroupManagerTargetSizePolicy:
+		value := value.(*[]*ComputeInstanceGroupManagerTargetSizePolicy)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*ComputeInstanceGroupManagerTargetSizePolicy:
+		value_ := value.([]*ComputeInstanceGroupManagerTargetSizePolicy)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ComputeInstanceGroupManagerTargetSizePolicy; received %#v (a %T)", value, value)
 		}
 	}
 

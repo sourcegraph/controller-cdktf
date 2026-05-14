@@ -28,9 +28,6 @@ type VertexAiEndpointPrivateServiceConnectConfigOutputReference interface {
 	EnablePrivateServiceConnect() interface{}
 	SetEnablePrivateServiceConnect(val interface{})
 	EnablePrivateServiceConnectInput() interface{}
-	EnableSecurePrivateServiceConnect() interface{}
-	SetEnableSecurePrivateServiceConnect(val interface{})
-	EnableSecurePrivateServiceConnectInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() *VertexAiEndpointPrivateServiceConnectConfig
@@ -38,6 +35,8 @@ type VertexAiEndpointPrivateServiceConnectConfigOutputReference interface {
 	ProjectAllowlist() *[]*string
 	SetProjectAllowlist(val *[]*string)
 	ProjectAllowlistInput() *[]*string
+	PscAutomationConfigs() VertexAiEndpointPrivateServiceConnectConfigPscAutomationConfigsList
+	PscAutomationConfigsInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,8 +69,9 @@ type VertexAiEndpointPrivateServiceConnectConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetEnableSecurePrivateServiceConnect()
+	PutPscAutomationConfigs(value interface{})
 	ResetProjectAllowlist()
+	ResetPscAutomationConfigs()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -137,26 +137,6 @@ func (j *jsiiProxy_VertexAiEndpointPrivateServiceConnectConfigOutputReference) E
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiEndpointPrivateServiceConnectConfigOutputReference) EnableSecurePrivateServiceConnect() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"enableSecurePrivateServiceConnect",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_VertexAiEndpointPrivateServiceConnectConfigOutputReference) EnableSecurePrivateServiceConnectInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"enableSecurePrivateServiceConnectInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_VertexAiEndpointPrivateServiceConnectConfigOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -192,6 +172,26 @@ func (j *jsiiProxy_VertexAiEndpointPrivateServiceConnectConfigOutputReference) P
 	_jsii_.Get(
 		j,
 		"projectAllowlistInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VertexAiEndpointPrivateServiceConnectConfigOutputReference) PscAutomationConfigs() VertexAiEndpointPrivateServiceConnectConfigPscAutomationConfigsList {
+	var returns VertexAiEndpointPrivateServiceConnectConfigPscAutomationConfigsList
+	_jsii_.Get(
+		j,
+		"pscAutomationConfigs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VertexAiEndpointPrivateServiceConnectConfigOutputReference) PscAutomationConfigsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"pscAutomationConfigsInput",
 		&returns,
 	)
 	return returns
@@ -274,17 +274,6 @@ func (j *jsiiProxy_VertexAiEndpointPrivateServiceConnectConfigOutputReference)Se
 	_jsii_.Set(
 		j,
 		"enablePrivateServiceConnect",
-		val,
-	)
-}
-
-func (j *jsiiProxy_VertexAiEndpointPrivateServiceConnectConfigOutputReference)SetEnableSecurePrivateServiceConnect(val interface{}) {
-	if err := j.validateSetEnableSecurePrivateServiceConnectParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"enableSecurePrivateServiceConnect",
 		val,
 	)
 }
@@ -519,11 +508,14 @@ func (v *jsiiProxy_VertexAiEndpointPrivateServiceConnectConfigOutputReference) I
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiEndpointPrivateServiceConnectConfigOutputReference) ResetEnableSecurePrivateServiceConnect() {
+func (v *jsiiProxy_VertexAiEndpointPrivateServiceConnectConfigOutputReference) PutPscAutomationConfigs(value interface{}) {
+	if err := v.validatePutPscAutomationConfigsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		v,
-		"resetEnableSecurePrivateServiceConnect",
-		nil, // no parameters
+		"putPscAutomationConfigs",
+		[]interface{}{value},
 	)
 }
 
@@ -531,6 +523,14 @@ func (v *jsiiProxy_VertexAiEndpointPrivateServiceConnectConfigOutputReference) R
 	_jsii_.InvokeVoid(
 		v,
 		"resetProjectAllowlist",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VertexAiEndpointPrivateServiceConnectConfigOutputReference) ResetPscAutomationConfigs() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetPscAutomationConfigs",
 		nil, // no parameters
 	)
 }

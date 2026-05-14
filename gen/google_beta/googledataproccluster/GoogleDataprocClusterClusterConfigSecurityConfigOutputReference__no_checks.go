@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigSecurityConfigOutputReferen
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataprocClusterClusterConfigSecurityConfigOutputReference) validatePutIdentityConfigParameters(value *GoogleDataprocClusterClusterConfigSecurityConfigIdentityConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataprocClusterClusterConfigSecurityConfigOutputReference) validatePutKerberosConfigParameters(value *GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfig) error {
 	return nil
 }

@@ -100,7 +100,7 @@ func (j *jsiiProxy_BigtableTableIamPolicy) validateSetIdParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_BigtableTableIamPolicy) validateSetInstanceParameters(val *string) error {
+func (j *jsiiProxy_BigtableTableIamPolicy) validateSetInstanceNameParameters(val *string) error {
 	return nil
 }
 

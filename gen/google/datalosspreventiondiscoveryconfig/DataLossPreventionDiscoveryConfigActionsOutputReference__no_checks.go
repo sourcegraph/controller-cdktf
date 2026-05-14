@@ -48,6 +48,18 @@ func (d *jsiiProxy_DataLossPreventionDiscoveryConfigActionsOutputReference) vali
 	return nil
 }
 
+func (d *jsiiProxy_DataLossPreventionDiscoveryConfigActionsOutputReference) validatePutPublishToChronicleParameters(value *DataLossPreventionDiscoveryConfigActionsPublishToChronicle) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataLossPreventionDiscoveryConfigActionsOutputReference) validatePutPublishToDataplexCatalogParameters(value *DataLossPreventionDiscoveryConfigActionsPublishToDataplexCatalog) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataLossPreventionDiscoveryConfigActionsOutputReference) validatePutPublishToSccParameters(value *DataLossPreventionDiscoveryConfigActionsPublishToScc) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataLossPreventionDiscoveryConfigActionsOutputReference) validatePutPubSubNotificationParameters(value *DataLossPreventionDiscoveryConfigActionsPubSubNotification) error {
 	return nil
 }

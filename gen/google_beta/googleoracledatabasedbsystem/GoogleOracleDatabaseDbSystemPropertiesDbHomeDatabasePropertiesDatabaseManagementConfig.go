@@ -1,0 +1,6 @@
+package googleoracledatabasedbsystem
+
+
+type GoogleOracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDatabaseManagementConfig struct {
+}
+
