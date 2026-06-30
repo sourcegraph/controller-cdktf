@@ -12,9 +12,9 @@ type MonitorRuleFacetOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -55,7 +55,7 @@ type MonitorRuleFacetOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type MonitorRuleFacetOutputReference interface {
 	ResetTimeValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,8 +92,8 @@ type jsiiProxy_MonitorRuleFacetOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_MonitorRuleFacetOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MonitorRuleFacetOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -262,7 +262,6 @@ func (j *jsiiProxy_MonitorRuleFacetOutputReference) TimeValueInput() *float64 {
 	return returns
 }
 
-
 func NewMonitorRuleFacetOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MonitorRuleFacetOutputReference {
 	_init_.Initialize()
 
@@ -273,7 +272,7 @@ func NewMonitorRuleFacetOutputReference(terraformResource cdktf.IInterpolatingPa
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.monitor.MonitorRuleFacetOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -285,12 +284,12 @@ func NewMonitorRuleFacetOutputReference_Override(m MonitorRuleFacetOutputReferen
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.monitor.MonitorRuleFacetOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MonitorRuleFacetOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MonitorRuleFacetOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_MonitorRuleFacetOutputReference)SetComplexObjectIndex(val int
 	)
 }
 
-func (j *jsiiProxy_MonitorRuleFacetOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MonitorRuleFacetOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_MonitorRuleFacetOutputReference)SetComplexObjectIsFromSet(val
 	)
 }
 
-func (j *jsiiProxy_MonitorRuleFacetOutputReference)SetFacetFunction(val *string) {
+func (j *jsiiProxy_MonitorRuleFacetOutputReference) SetFacetFunction(val *string) {
 	if err := j.validateSetFacetFunctionParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_MonitorRuleFacetOutputReference)SetFacetFunction(val *string)
 	)
 }
 
-func (j *jsiiProxy_MonitorRuleFacetOutputReference)SetFacetValues(val *[]*string) {
+func (j *jsiiProxy_MonitorRuleFacetOutputReference) SetFacetValues(val *[]*string) {
 	if err := j.validateSetFacetValuesParameters(val); err != nil {
 		panic(err)
 	}
@@ -334,7 +333,7 @@ func (j *jsiiProxy_MonitorRuleFacetOutputReference)SetFacetValues(val *[]*string
 	)
 }
 
-func (j *jsiiProxy_MonitorRuleFacetOutputReference)SetInternalValue(val *MonitorRuleFacet) {
+func (j *jsiiProxy_MonitorRuleFacetOutputReference) SetInternalValue(val *MonitorRuleFacet) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,7 +344,7 @@ func (j *jsiiProxy_MonitorRuleFacetOutputReference)SetInternalValue(val *Monitor
 	)
 }
 
-func (j *jsiiProxy_MonitorRuleFacetOutputReference)SetLookbackTime(val *string) {
+func (j *jsiiProxy_MonitorRuleFacetOutputReference) SetLookbackTime(val *string) {
 	if err := j.validateSetLookbackTimeParameters(val); err != nil {
 		panic(err)
 	}
@@ -356,7 +355,7 @@ func (j *jsiiProxy_MonitorRuleFacetOutputReference)SetLookbackTime(val *string) 
 	)
 }
 
-func (j *jsiiProxy_MonitorRuleFacetOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MonitorRuleFacetOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -367,7 +366,7 @@ func (j *jsiiProxy_MonitorRuleFacetOutputReference)SetTerraformAttribute(val *st
 	)
 }
 
-func (j *jsiiProxy_MonitorRuleFacetOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MonitorRuleFacetOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -378,7 +377,7 @@ func (j *jsiiProxy_MonitorRuleFacetOutputReference)SetTerraformResource(val cdkt
 	)
 }
 
-func (j *jsiiProxy_MonitorRuleFacetOutputReference)SetTimeFunction(val *string) {
+func (j *jsiiProxy_MonitorRuleFacetOutputReference) SetTimeFunction(val *string) {
 	if err := j.validateSetTimeFunctionParameters(val); err != nil {
 		panic(err)
 	}
@@ -389,7 +388,7 @@ func (j *jsiiProxy_MonitorRuleFacetOutputReference)SetTimeFunction(val *string) 
 	)
 }
 
-func (j *jsiiProxy_MonitorRuleFacetOutputReference)SetTimeValue(val *float64) {
+func (j *jsiiProxy_MonitorRuleFacetOutputReference) SetTimeValue(val *float64) {
 	if err := j.validateSetTimeValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -413,16 +412,16 @@ func (m *jsiiProxy_MonitorRuleFacetOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (m *jsiiProxy_MonitorRuleFacetOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MonitorRuleFacetOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (m *jsiiProxy_MonitorRuleFacetOutputReference) GetBooleanAttribute(terrafor
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -454,7 +453,7 @@ func (m *jsiiProxy_MonitorRuleFacetOutputReference) GetBooleanMapAttribute(terra
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -470,7 +469,7 @@ func (m *jsiiProxy_MonitorRuleFacetOutputReference) GetListAttribute(terraformAt
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -486,7 +485,7 @@ func (m *jsiiProxy_MonitorRuleFacetOutputReference) GetNumberAttribute(terraform
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -502,7 +501,7 @@ func (m *jsiiProxy_MonitorRuleFacetOutputReference) GetNumberListAttribute(terra
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -518,7 +517,7 @@ func (m *jsiiProxy_MonitorRuleFacetOutputReference) GetNumberMapAttribute(terraf
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -534,7 +533,7 @@ func (m *jsiiProxy_MonitorRuleFacetOutputReference) GetStringAttribute(terraform
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -550,7 +549,7 @@ func (m *jsiiProxy_MonitorRuleFacetOutputReference) GetStringMapAttribute(terraf
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -579,7 +578,7 @@ func (m *jsiiProxy_MonitorRuleFacetOutputReference) InterpolationForAttribute(pr
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -594,16 +593,16 @@ func (m *jsiiProxy_MonitorRuleFacetOutputReference) ResetTimeValue() {
 	)
 }
 
-func (m *jsiiProxy_MonitorRuleFacetOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MonitorRuleFacetOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := m.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -622,4 +621,3 @@ func (m *jsiiProxy_MonitorRuleFacetOutputReference) ToString() *string {
 
 	return returns
 }
-

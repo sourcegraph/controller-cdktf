@@ -6,9 +6,9 @@ import (
 
 type ChannelActionConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type ChannelActionConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/channel_action#name ChannelAction#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/channel_action#workspace ChannelAction#workspace}.
@@ -39,7 +39,7 @@ type ChannelActionConfig struct {
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/channel_action#notify_on_close ChannelAction#notify_on_close}.
-	NotifyOnClose interface{} `field:"optional" json:"notifyOnClose" yaml:"notifyOnClose"`
+	NotifyOnClose any `field:"optional" json:"notifyOnClose" yaml:"notifyOnClose"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/channel_action#rate_limit ChannelAction#rate_limit}.
 	RateLimit *string `field:"optional" json:"rateLimit" yaml:"rateLimit"`
 	// webhook block.
@@ -47,4 +47,3 @@ type ChannelActionConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/channel_action#webhook ChannelAction#webhook}
 	Webhook *ChannelActionWebhook `field:"optional" json:"webhook" yaml:"webhook"`
 }
-

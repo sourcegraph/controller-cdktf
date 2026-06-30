@@ -19,7 +19,7 @@ func (d *jsiiProxy_DropFilter) validateAddMoveTargetParameters(moveTarget *strin
 	return nil
 }
 
-func (d *jsiiProxy_DropFilter) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DropFilter) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DropFilter) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DropFilter) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DropFilter) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateDropFilter_GenerateConfigForImportParameters(scope constructs.Const
 	return nil
 }
 
-func validateDropFilter_IsConstructParameters(x interface{}) error {
+func validateDropFilter_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateDropFilter_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDropFilter_IsTerraformElementParameters(x interface{}) error {
+func validateDropFilter_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateDropFilter_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateDropFilter_IsTerraformResourceParameters(x interface{}) error {
+func validateDropFilter_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateDropFilter_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_DropFilter) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DropFilter) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_DropFilter) validateSetConnectionParameters(val interface{}) 
 	return nil
 }
 
-func (j *jsiiProxy_DropFilter) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DropFilter) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -342,7 +342,7 @@ func (j *jsiiProxy_DropFilter) validateSetDropRateParameters(val *float64) error
 	return nil
 }
 
-func (j *jsiiProxy_DropFilter) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_DropFilter) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -394,7 +394,7 @@ func (j *jsiiProxy_DropFilter) validateSetPipelineParameters(val *string) error 
 	return nil
 }
 
-func (j *jsiiProxy_DropFilter) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DropFilter) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -474,4 +474,3 @@ func validateNewDropFilterParameters(scope constructs.Construct, id *string, con
 
 	return nil
 }
-

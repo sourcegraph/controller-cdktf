@@ -1,6 +1,5 @@
 package poller
 
-
 type PollerCloudwatchMetrics struct {
 	// AWS role to assume when scraping AWS CloudWatch Metrics. External ID will be set to datastream ID.
 	//
@@ -9,7 +8,7 @@ type PollerCloudwatchMetrics struct {
 	// query block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/poller#query Poller#query}
-	Query interface{} `field:"required" json:"query" yaml:"query"`
+	Query any `field:"required" json:"query" yaml:"query"`
 	// AWS Region to scrape from.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/poller#region Poller#region}
@@ -23,4 +22,3 @@ type PollerCloudwatchMetrics struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/poller#period Poller#period}
 	Period *string `field:"optional" json:"period" yaml:"period"`
 }
-

@@ -98,7 +98,7 @@ func (w *jsiiProxy_WorkspaceDefaultGrantsGroupOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_WorkspaceDefaultGrantsGroupOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WorkspaceDefaultGrantsGroupOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_WorkspaceDefaultGrantsGroupOutputReference) validateSetComple
 	return nil
 }
 
-func (j *jsiiProxy_WorkspaceDefaultGrantsGroupOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WorkspaceDefaultGrantsGroupOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewWorkspaceDefaultGrantsGroupOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

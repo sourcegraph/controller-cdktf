@@ -98,7 +98,7 @@ func (m *jsiiProxy_MonitorV2ActionWebhookHeadersOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_MonitorV2ActionWebhookHeadersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MonitorV2ActionWebhookHeadersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_MonitorV2ActionWebhookHeadersOutputReference) validateSetHead
 	return nil
 }
 
-func (j *jsiiProxy_MonitorV2ActionWebhookHeadersOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MonitorV2ActionWebhookHeadersOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewMonitorV2ActionWebhookHeadersOutputReferenceParameters(terraform
 
 	return nil
 }
-

@@ -6,9 +6,9 @@ import (
 
 type GrantConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GrantConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The role to grant.
 	//
 	// Accepted values: `administrator`, `apitoken_creator`, `bookmark_manager`, `dashboard_creator`, `dashboard_editor`, `dashboard_viewer`, `dataset_accelerator`, `dataset_creator`, `dataset_editor`, `dataset_viewer`, `datastream_creator`, `datastream_editor`, `datastream_viewer`, `investigator_global`, `monitor_creator`, `monitor_editor`, `monitor_viewer`, `monitor_action_creator`, `monitor_global_muter`, `reference_table_creator`, `report_manager`, `service_account_creator`, `user_deleter`, `user_inviter`, `worksheet_creator`, `worksheet_editor`, `worksheet_viewer`
@@ -39,4 +39,3 @@ type GrantConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/grant#qualifier Grant#qualifier}
 	Qualifier *GrantQualifier `field:"optional" json:"qualifier" yaml:"qualifier"`
 }
-

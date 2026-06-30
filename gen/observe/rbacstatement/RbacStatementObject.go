@@ -1,9 +1,8 @@
 package rbacstatement
 
-
 type RbacStatementObject struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/rbac_statement#all RbacStatement#all}.
-	All interface{} `field:"optional" json:"all" yaml:"all"`
+	All any `field:"optional" json:"all" yaml:"all"`
 	// The Observe ID for a folder.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/rbac_statement#folder RbacStatement#folder}
@@ -22,7 +21,7 @@ type RbacStatementObject struct {
 	// True to bind to objects owned by the user. Can be provided along with `type`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/rbac_statement#owner RbacStatement#owner}
-	Owner interface{} `field:"optional" json:"owner" yaml:"owner"`
+	Owner any `field:"optional" json:"owner" yaml:"owner"`
 	// The type of object such as dataset.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/rbac_statement#type RbacStatement#type}
@@ -32,4 +31,3 @@ type RbacStatementObject struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/rbac_statement#workspace RbacStatement#workspace}
 	Workspace *string `field:"optional" json:"workspace" yaml:"workspace"`
 }
-

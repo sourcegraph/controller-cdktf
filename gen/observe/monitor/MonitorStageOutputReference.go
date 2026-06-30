@@ -15,9 +15,9 @@ type MonitorStageOutputReference interface {
 	AliasInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,11 +33,11 @@ type MonitorStageOutputReference interface {
 	Input() *string
 	SetInput(val *string)
 	InputInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
-	OutputStage() interface{}
-	SetOutputStage(val interface{})
-	OutputStageInput() interface{}
+	InternalValue() any
+	SetInternalValue(val any)
+	OutputStage() any
+	SetOutputStage(val any)
+	OutputStageInput() any
 	Pipeline() *string
 	SetPipeline(val *string)
 	PipelineInput() *string
@@ -52,7 +52,7 @@ type MonitorStageOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type MonitorStageOutputReference interface {
 	ResetPipeline()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -112,8 +112,8 @@ func (j *jsiiProxy_MonitorStageOutputReference) AliasInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MonitorStageOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MonitorStageOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -172,8 +172,8 @@ func (j *jsiiProxy_MonitorStageOutputReference) InputInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MonitorStageOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MonitorStageOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -182,8 +182,8 @@ func (j *jsiiProxy_MonitorStageOutputReference) InternalValue() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MonitorStageOutputReference) OutputStage() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MonitorStageOutputReference) OutputStage() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"outputStage",
@@ -192,8 +192,8 @@ func (j *jsiiProxy_MonitorStageOutputReference) OutputStage() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MonitorStageOutputReference) OutputStageInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MonitorStageOutputReference) OutputStageInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"outputStageInput",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_MonitorStageOutputReference) TerraformResource() cdktf.IInter
 	return returns
 }
 
-
 func NewMonitorStageOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) MonitorStageOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewMonitorStageOutputReference(terraformResource cdktf.IInterpolatingParent
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.monitor.MonitorStageOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewMonitorStageOutputReference_Override(m MonitorStageOutputReference, terr
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.monitor.MonitorStageOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MonitorStageOutputReference)SetAlias(val *string) {
+func (j *jsiiProxy_MonitorStageOutputReference) SetAlias(val *string) {
 	if err := j.validateSetAliasParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_MonitorStageOutputReference)SetAlias(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MonitorStageOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MonitorStageOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_MonitorStageOutputReference)SetComplexObjectIndex(val interfa
 	)
 }
 
-func (j *jsiiProxy_MonitorStageOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MonitorStageOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_MonitorStageOutputReference)SetComplexObjectIsFromSet(val *bo
 	)
 }
 
-func (j *jsiiProxy_MonitorStageOutputReference)SetInput(val *string) {
+func (j *jsiiProxy_MonitorStageOutputReference) SetInput(val *string) {
 	if err := j.validateSetInputParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_MonitorStageOutputReference)SetInput(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MonitorStageOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_MonitorStageOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_MonitorStageOutputReference)SetInternalValue(val interface{})
 	)
 }
 
-func (j *jsiiProxy_MonitorStageOutputReference)SetOutputStage(val interface{}) {
+func (j *jsiiProxy_MonitorStageOutputReference) SetOutputStage(val any) {
 	if err := j.validateSetOutputStageParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_MonitorStageOutputReference)SetOutputStage(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MonitorStageOutputReference)SetPipeline(val *string) {
+func (j *jsiiProxy_MonitorStageOutputReference) SetPipeline(val *string) {
 	if err := j.validateSetPipelineParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_MonitorStageOutputReference)SetPipeline(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MonitorStageOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MonitorStageOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_MonitorStageOutputReference)SetTerraformAttribute(val *string
 	)
 }
 
-func (j *jsiiProxy_MonitorStageOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MonitorStageOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,16 +381,16 @@ func (m *jsiiProxy_MonitorStageOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (m *jsiiProxy_MonitorStageOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MonitorStageOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -407,7 +406,7 @@ func (m *jsiiProxy_MonitorStageOutputReference) GetBooleanAttribute(terraformAtt
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -423,7 +422,7 @@ func (m *jsiiProxy_MonitorStageOutputReference) GetBooleanMapAttribute(terraform
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -439,7 +438,7 @@ func (m *jsiiProxy_MonitorStageOutputReference) GetListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -455,7 +454,7 @@ func (m *jsiiProxy_MonitorStageOutputReference) GetNumberAttribute(terraformAttr
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -471,7 +470,7 @@ func (m *jsiiProxy_MonitorStageOutputReference) GetNumberListAttribute(terraform
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -487,7 +486,7 @@ func (m *jsiiProxy_MonitorStageOutputReference) GetNumberMapAttribute(terraformA
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func (m *jsiiProxy_MonitorStageOutputReference) GetStringAttribute(terraformAttr
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func (m *jsiiProxy_MonitorStageOutputReference) GetStringMapAttribute(terraformA
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func (m *jsiiProxy_MonitorStageOutputReference) InterpolationForAttribute(proper
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -587,16 +586,16 @@ func (m *jsiiProxy_MonitorStageOutputReference) ResetPipeline() {
 	)
 }
 
-func (m *jsiiProxy_MonitorStageOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MonitorStageOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := m.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (m *jsiiProxy_MonitorStageOutputReference) ToString() *string {
 
 	return returns
 }
-

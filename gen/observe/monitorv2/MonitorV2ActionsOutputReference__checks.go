@@ -120,7 +120,7 @@ func (m *jsiiProxy_MonitorV2ActionsOutputReference) validateResolveParameters(_c
 	return nil
 }
 
-func (j *jsiiProxy_MonitorV2ActionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MonitorV2ActionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -185,7 +185,7 @@ func (j *jsiiProxy_MonitorV2ActionsOutputReference) validateSetComplexObjectIsFr
 	return nil
 }
 
-func (j *jsiiProxy_MonitorV2ActionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MonitorV2ActionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -225,7 +225,7 @@ func (j *jsiiProxy_MonitorV2ActionsOutputReference) validateSetOidParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_MonitorV2ActionsOutputReference) validateSetSendEndNotificationsParameters(val interface{}) error {
+func (j *jsiiProxy_MonitorV2ActionsOutputReference) validateSetSendEndNotificationsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -288,4 +288,3 @@ func validateNewMonitorV2ActionsOutputReferenceParameters(terraformResource cdkt
 
 	return nil
 }
-

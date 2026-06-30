@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.channelAction.ChannelAction",
-		reflect.TypeOf((*ChannelAction)(nil)).Elem(),
+		reflect.TypeFor[ChannelAction](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -84,7 +84,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workspace", GoGetter: "Workspace"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceInput", GoGetter: "WorkspaceInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChannelAction{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -92,15 +92,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.channelAction.ChannelActionConfig",
-		reflect.TypeOf((*ChannelActionConfig)(nil)).Elem(),
+		reflect.TypeFor[ChannelActionConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.channelAction.ChannelActionEmail",
-		reflect.TypeOf((*ChannelActionEmail)(nil)).Elem(),
+		reflect.TypeFor[ChannelActionEmail](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.channelAction.ChannelActionEmailOutputReference",
-		reflect.TypeOf((*ChannelActionEmailOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChannelActionEmailOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "body", GoGetter: "Body"},
 			_jsii_.MemberProperty{JsiiProperty: "bodyInput", GoGetter: "BodyInput"},
@@ -133,7 +133,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "toInput", GoGetter: "ToInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChannelActionEmailOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -141,11 +141,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.channelAction.ChannelActionWebhook",
-		reflect.TypeOf((*ChannelActionWebhook)(nil)).Elem(),
+		reflect.TypeFor[ChannelActionWebhook](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.channelAction.ChannelActionWebhookOutputReference",
-		reflect.TypeOf((*ChannelActionWebhookOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChannelActionWebhookOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "body", GoGetter: "Body"},
 			_jsii_.MemberProperty{JsiiProperty: "bodyInput", GoGetter: "BodyInput"},
@@ -179,7 +179,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 			_jsii_.MemberProperty{JsiiProperty: "urlInput", GoGetter: "UrlInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChannelActionWebhookOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

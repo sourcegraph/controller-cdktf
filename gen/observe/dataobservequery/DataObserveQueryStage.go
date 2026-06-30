@@ -1,6 +1,5 @@
 package dataobservequery
 
-
 type DataObserveQueryStage struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/data-sources/query#alias DataObserveQuery#alias}.
 	Alias *string `field:"optional" json:"alias" yaml:"alias"`
@@ -13,8 +12,7 @@ type DataObserveQueryStage struct {
 	//
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/data-sources/query#output_stage DataObserveQuery#output_stage}
-	OutputStage interface{} `field:"optional" json:"outputStage" yaml:"outputStage"`
+	OutputStage any `field:"optional" json:"outputStage" yaml:"outputStage"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/data-sources/query#pipeline DataObserveQuery#pipeline}.
 	Pipeline *string `field:"optional" json:"pipeline" yaml:"pipeline"`
 }
-

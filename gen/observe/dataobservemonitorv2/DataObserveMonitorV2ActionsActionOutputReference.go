@@ -12,9 +12,9 @@ type DataObserveMonitorV2ActionsActionOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,11 +27,11 @@ type DataObserveMonitorV2ActionsActionOutputReference interface {
 	CreationStack() *[]*string
 	Description() *string
 	Email() DataObserveMonitorV2ActionsActionEmailList
-	EmailInput() interface{}
+	EmailInput() any
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -42,11 +42,11 @@ type DataObserveMonitorV2ActionsActionOutputReference interface {
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	Type() *string
 	Webhook() DataObserveMonitorV2ActionsActionWebhookList
-	WebhookInput() interface{}
+	WebhookInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -67,13 +67,13 @@ type DataObserveMonitorV2ActionsActionOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutEmail(value interface{})
-	PutWebhook(value interface{})
+	PutEmail(value any)
+	PutWebhook(value any)
 	ResetEmail()
 	ResetWebhook()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,8 +86,8 @@ type jsiiProxy_DataObserveMonitorV2ActionsActionOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2ActionsActionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataObserveMonitorV2ActionsActionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -136,8 +136,8 @@ func (j *jsiiProxy_DataObserveMonitorV2ActionsActionOutputReference) Email() Dat
 	return returns
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2ActionsActionOutputReference) EmailInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataObserveMonitorV2ActionsActionOutputReference) EmailInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"emailInput",
@@ -156,8 +156,8 @@ func (j *jsiiProxy_DataObserveMonitorV2ActionsActionOutputReference) Fqn() *stri
 	return returns
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2ActionsActionOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataObserveMonitorV2ActionsActionOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -206,8 +206,8 @@ func (j *jsiiProxy_DataObserveMonitorV2ActionsActionOutputReference) Webhook() D
 	return returns
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2ActionsActionOutputReference) WebhookInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataObserveMonitorV2ActionsActionOutputReference) WebhookInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"webhookInput",
@@ -215,7 +215,6 @@ func (j *jsiiProxy_DataObserveMonitorV2ActionsActionOutputReference) WebhookInpu
 	)
 	return returns
 }
-
 
 func NewDataObserveMonitorV2ActionsActionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataObserveMonitorV2ActionsActionOutputReference {
 	_init_.Initialize()
@@ -227,7 +226,7 @@ func NewDataObserveMonitorV2ActionsActionOutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.dataObserveMonitorV2.DataObserveMonitorV2ActionsActionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -239,12 +238,12 @@ func NewDataObserveMonitorV2ActionsActionOutputReference_Override(d DataObserveM
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.dataObserveMonitorV2.DataObserveMonitorV2ActionsActionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2ActionsActionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataObserveMonitorV2ActionsActionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_DataObserveMonitorV2ActionsActionOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2ActionsActionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataObserveMonitorV2ActionsActionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_DataObserveMonitorV2ActionsActionOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2ActionsActionOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataObserveMonitorV2ActionsActionOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_DataObserveMonitorV2ActionsActionOutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2ActionsActionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataObserveMonitorV2ActionsActionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_DataObserveMonitorV2ActionsActionOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2ActionsActionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataObserveMonitorV2ActionsActionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (d *jsiiProxy_DataObserveMonitorV2ActionsActionOutputReference) ComputeFqn(
 	return returns
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2ActionsActionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataObserveMonitorV2ActionsActionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (d *jsiiProxy_DataObserveMonitorV2ActionsActionOutputReference) GetBooleanA
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (d *jsiiProxy_DataObserveMonitorV2ActionsActionOutputReference) GetBooleanM
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (d *jsiiProxy_DataObserveMonitorV2ActionsActionOutputReference) GetListAttr
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (d *jsiiProxy_DataObserveMonitorV2ActionsActionOutputReference) GetNumberAt
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (d *jsiiProxy_DataObserveMonitorV2ActionsActionOutputReference) GetNumberLi
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (d *jsiiProxy_DataObserveMonitorV2ActionsActionOutputReference) GetNumberMa
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (d *jsiiProxy_DataObserveMonitorV2ActionsActionOutputReference) GetStringAt
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (d *jsiiProxy_DataObserveMonitorV2ActionsActionOutputReference) GetStringMa
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,32 +477,32 @@ func (d *jsiiProxy_DataObserveMonitorV2ActionsActionOutputReference) Interpolati
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2ActionsActionOutputReference) PutEmail(value interface{}) {
+func (d *jsiiProxy_DataObserveMonitorV2ActionsActionOutputReference) PutEmail(value any) {
 	if err := d.validatePutEmailParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putEmail",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2ActionsActionOutputReference) PutWebhook(value interface{}) {
+func (d *jsiiProxy_DataObserveMonitorV2ActionsActionOutputReference) PutWebhook(value any) {
 	if err := d.validatePutWebhookParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putWebhook",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -523,16 +522,16 @@ func (d *jsiiProxy_DataObserveMonitorV2ActionsActionOutputReference) ResetWebhoo
 	)
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2ActionsActionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataObserveMonitorV2ActionsActionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -551,4 +550,3 @@ func (d *jsiiProxy_DataObserveMonitorV2ActionsActionOutputReference) ToString() 
 
 	return returns
 }
-

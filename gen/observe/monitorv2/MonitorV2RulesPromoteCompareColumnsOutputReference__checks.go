@@ -101,7 +101,7 @@ func (m *jsiiProxy_MonitorV2RulesPromoteCompareColumnsOutputReference) validateP
 	return nil
 }
 
-func (m *jsiiProxy_MonitorV2RulesPromoteCompareColumnsOutputReference) validatePutCompareValuesParameters(value interface{}) error {
+func (m *jsiiProxy_MonitorV2RulesPromoteCompareColumnsOutputReference) validatePutCompareValuesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (m *jsiiProxy_MonitorV2RulesPromoteCompareColumnsOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_MonitorV2RulesPromoteCompareColumnsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MonitorV2RulesPromoteCompareColumnsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -205,7 +205,7 @@ func (j *jsiiProxy_MonitorV2RulesPromoteCompareColumnsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_MonitorV2RulesPromoteCompareColumnsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MonitorV2RulesPromoteCompareColumnsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -264,4 +264,3 @@ func validateNewMonitorV2RulesPromoteCompareColumnsOutputReferenceParameters(ter
 
 	return nil
 }
-

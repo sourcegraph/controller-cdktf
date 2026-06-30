@@ -15,15 +15,15 @@ type PreferredPath interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -59,20 +59,20 @@ type PreferredPath interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Source() *string
 	SetSource(val *string)
 	SourceInput() *string
 	Step() PreferredPathStepList
-	StepInput() interface{}
+	StepInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Workspace() *string
@@ -82,9 +82,9 @@ type PreferredPath interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -102,7 +102,7 @@ type PreferredPath interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -114,31 +114,31 @@ type PreferredPath interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutStep(value interface{})
+	PutStep(value any)
 	ResetFolder()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetWorkspace()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for PreferredPath
@@ -156,8 +156,8 @@ func (j *jsiiProxy_PreferredPath) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_PreferredPath) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PreferredPath) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -166,8 +166,8 @@ func (j *jsiiProxy_PreferredPath) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PreferredPath) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_PreferredPath) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -176,8 +176,8 @@ func (j *jsiiProxy_PreferredPath) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_PreferredPath) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PreferredPath) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -336,8 +336,8 @@ func (j *jsiiProxy_PreferredPath) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_PreferredPath) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_PreferredPath) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -346,8 +346,8 @@ func (j *jsiiProxy_PreferredPath) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PreferredPath) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PreferredPath) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -386,8 +386,8 @@ func (j *jsiiProxy_PreferredPath) Step() PreferredPathStepList {
 	return returns
 }
 
-func (j *jsiiProxy_PreferredPath) StepInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PreferredPath) StepInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"stepInput",
@@ -406,8 +406,8 @@ func (j *jsiiProxy_PreferredPath) TerraformGeneratorMetadata() *cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_PreferredPath) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_PreferredPath) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -446,7 +446,6 @@ func (j *jsiiProxy_PreferredPath) WorkspaceInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/preferred_path observe_preferred_path} Resource.
 func NewPreferredPath(scope constructs.Construct, id *string, config *PreferredPathConfig) PreferredPath {
 	_init_.Initialize()
@@ -458,7 +457,7 @@ func NewPreferredPath(scope constructs.Construct, id *string, config *PreferredP
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.preferredPath.PreferredPath",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -471,12 +470,12 @@ func NewPreferredPath_Override(p PreferredPath, scope constructs.Construct, id *
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.preferredPath.PreferredPath",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PreferredPath)SetConnection(val interface{}) {
+func (j *jsiiProxy_PreferredPath) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,7 +486,7 @@ func (j *jsiiProxy_PreferredPath)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PreferredPath)SetCount(val interface{}) {
+func (j *jsiiProxy_PreferredPath) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -498,7 +497,7 @@ func (j *jsiiProxy_PreferredPath)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PreferredPath)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_PreferredPath) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -506,7 +505,7 @@ func (j *jsiiProxy_PreferredPath)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_PreferredPath)SetDescription(val *string) {
+func (j *jsiiProxy_PreferredPath) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -517,7 +516,7 @@ func (j *jsiiProxy_PreferredPath)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PreferredPath)SetFolder(val *string) {
+func (j *jsiiProxy_PreferredPath) SetFolder(val *string) {
 	if err := j.validateSetFolderParameters(val); err != nil {
 		panic(err)
 	}
@@ -528,7 +527,7 @@ func (j *jsiiProxy_PreferredPath)SetFolder(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PreferredPath)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_PreferredPath) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -536,7 +535,7 @@ func (j *jsiiProxy_PreferredPath)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_PreferredPath)SetId(val *string) {
+func (j *jsiiProxy_PreferredPath) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -547,7 +546,7 @@ func (j *jsiiProxy_PreferredPath)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PreferredPath)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_PreferredPath) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -558,7 +557,7 @@ func (j *jsiiProxy_PreferredPath)SetLifecycle(val *cdktf.TerraformResourceLifecy
 	)
 }
 
-func (j *jsiiProxy_PreferredPath)SetName(val *string) {
+func (j *jsiiProxy_PreferredPath) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -569,7 +568,7 @@ func (j *jsiiProxy_PreferredPath)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PreferredPath)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_PreferredPath) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -577,7 +576,7 @@ func (j *jsiiProxy_PreferredPath)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_PreferredPath)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_PreferredPath) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -588,7 +587,7 @@ func (j *jsiiProxy_PreferredPath)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PreferredPath)SetSource(val *string) {
+func (j *jsiiProxy_PreferredPath) SetSource(val *string) {
 	if err := j.validateSetSourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -599,7 +598,7 @@ func (j *jsiiProxy_PreferredPath)SetSource(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PreferredPath)SetWorkspace(val *string) {
+func (j *jsiiProxy_PreferredPath) SetWorkspace(val *string) {
 	if err := j.validateSetWorkspaceParameters(val); err != nil {
 		panic(err)
 	}
@@ -622,7 +621,7 @@ func PreferredPath_GenerateConfigForImport(scope constructs.Construct, importToI
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.preferredPath.PreferredPath",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -646,7 +645,7 @@ func PreferredPath_GenerateConfigForImport(scope constructs.Construct, importToI
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func PreferredPath_IsConstruct(x interface{}) *bool {
+func PreferredPath_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePreferredPath_IsConstructParameters(x); err != nil {
@@ -657,7 +656,7 @@ func PreferredPath_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.preferredPath.PreferredPath",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -665,7 +664,7 @@ func PreferredPath_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func PreferredPath_IsTerraformElement(x interface{}) *bool {
+func PreferredPath_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePreferredPath_IsTerraformElementParameters(x); err != nil {
@@ -676,7 +675,7 @@ func PreferredPath_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.preferredPath.PreferredPath",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -684,7 +683,7 @@ func PreferredPath_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func PreferredPath_IsTerraformResource(x interface{}) *bool {
+func PreferredPath_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePreferredPath_IsTerraformResourceParameters(x); err != nil {
@@ -695,7 +694,7 @@ func PreferredPath_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.preferredPath.PreferredPath",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -720,31 +719,31 @@ func (p *jsiiProxy_PreferredPath) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (p *jsiiProxy_PreferredPath) AddOverride(path *string, value interface{}) {
+func (p *jsiiProxy_PreferredPath) AddOverride(path *string, value any) {
 	if err := p.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (p *jsiiProxy_PreferredPath) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PreferredPath) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -760,7 +759,7 @@ func (p *jsiiProxy_PreferredPath) GetBooleanAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -776,7 +775,7 @@ func (p *jsiiProxy_PreferredPath) GetBooleanMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -792,7 +791,7 @@ func (p *jsiiProxy_PreferredPath) GetListAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -808,7 +807,7 @@ func (p *jsiiProxy_PreferredPath) GetNumberAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -824,7 +823,7 @@ func (p *jsiiProxy_PreferredPath) GetNumberListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -840,7 +839,7 @@ func (p *jsiiProxy_PreferredPath) GetNumberMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -856,7 +855,7 @@ func (p *jsiiProxy_PreferredPath) GetStringAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -872,15 +871,15 @@ func (p *jsiiProxy_PreferredPath) GetStringMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_PreferredPath) HasResourceMove() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PreferredPath) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -899,7 +898,7 @@ func (p *jsiiProxy_PreferredPath) ImportFrom(id *string, provider cdktf.Terrafor
 	_jsii_.InvokeVoid(
 		p,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -912,7 +911,7 @@ func (p *jsiiProxy_PreferredPath) InterpolationForAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -926,18 +925,18 @@ func (p *jsiiProxy_PreferredPath) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (p *jsiiProxy_PreferredPath) MoveTo(moveTarget *string, index interface{}) {
+func (p *jsiiProxy_PreferredPath) MoveTo(moveTarget *string, index any) {
 	if err := p.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -948,7 +947,7 @@ func (p *jsiiProxy_PreferredPath) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -959,18 +958,18 @@ func (p *jsiiProxy_PreferredPath) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (p *jsiiProxy_PreferredPath) PutStep(value interface{}) {
+func (p *jsiiProxy_PreferredPath) PutStep(value any) {
 	if err := p.validatePutStepParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"putStep",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1006,8 +1005,8 @@ func (p *jsiiProxy_PreferredPath) ResetWorkspace() {
 	)
 }
 
-func (p *jsiiProxy_PreferredPath) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_PreferredPath) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -1019,8 +1018,8 @@ func (p *jsiiProxy_PreferredPath) SynthesizeAttributes() *map[string]interface{}
 	return returns
 }
 
-func (p *jsiiProxy_PreferredPath) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_PreferredPath) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -1032,8 +1031,8 @@ func (p *jsiiProxy_PreferredPath) SynthesizeHclAttributes() *map[string]interfac
 	return returns
 }
 
-func (p *jsiiProxy_PreferredPath) ToHclTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PreferredPath) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1045,8 +1044,8 @@ func (p *jsiiProxy_PreferredPath) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_PreferredPath) ToMetadata() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PreferredPath) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1071,8 +1070,8 @@ func (p *jsiiProxy_PreferredPath) ToString() *string {
 	return returns
 }
 
-func (p *jsiiProxy_PreferredPath) ToTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PreferredPath) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1083,4 +1082,3 @@ func (p *jsiiProxy_PreferredPath) ToTerraform() interface{} {
 
 	return returns
 }
-

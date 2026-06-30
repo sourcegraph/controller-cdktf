@@ -98,7 +98,7 @@ func (m *jsiiProxy_MonitorV2SchedulingIntervalOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_MonitorV2SchedulingIntervalOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MonitorV2SchedulingIntervalOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewMonitorV2SchedulingIntervalOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

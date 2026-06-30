@@ -34,7 +34,7 @@ func (d *jsiiProxy_DatasetStageList) validateResolveParameters(_context cdktf.IR
 	return nil
 }
 
-func (j *jsiiProxy_DatasetStageList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DatasetStageList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDatasetStageListParameters(terraformResource cdktf.IInterpolatin
 
 	return nil
 }
-

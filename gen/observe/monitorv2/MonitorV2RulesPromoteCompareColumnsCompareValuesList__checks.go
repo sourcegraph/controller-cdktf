@@ -34,7 +34,7 @@ func (m *jsiiProxy_MonitorV2RulesPromoteCompareColumnsCompareValuesList) validat
 	return nil
 }
 
-func (j *jsiiProxy_MonitorV2RulesPromoteCompareColumnsCompareValuesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MonitorV2RulesPromoteCompareColumnsCompareValuesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewMonitorV2RulesPromoteCompareColumnsCompareValuesListParameters(t
 
 	return nil
 }
-

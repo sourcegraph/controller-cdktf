@@ -17,15 +17,15 @@ type Filedrop interface {
 	Config() FiledropConfigAOutputReference
 	ConfigInput() *FiledropConfigA
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	Datastream() *string
 	SetDatastream(val *string)
 	DatastreamInput() *string
@@ -66,20 +66,20 @@ type Filedrop interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Status() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() FiledropTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Workspace() *string
 	SetWorkspace(val *string)
 	WorkspaceInput() *string
@@ -87,9 +87,9 @@ type Filedrop interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -107,7 +107,7 @@ type Filedrop interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -119,7 +119,7 @@ type Filedrop interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -136,17 +136,17 @@ type Filedrop interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Filedrop
@@ -184,8 +184,8 @@ func (j *jsiiProxy_Filedrop) ConfigInput() *FiledropConfigA {
 	return returns
 }
 
-func (j *jsiiProxy_Filedrop) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Filedrop) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -194,8 +194,8 @@ func (j *jsiiProxy_Filedrop) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Filedrop) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Filedrop) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -204,8 +204,8 @@ func (j *jsiiProxy_Filedrop) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Filedrop) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Filedrop) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -404,8 +404,8 @@ func (j *jsiiProxy_Filedrop) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_Filedrop) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Filedrop) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -414,8 +414,8 @@ func (j *jsiiProxy_Filedrop) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Filedrop) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Filedrop) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -444,8 +444,8 @@ func (j *jsiiProxy_Filedrop) TerraformGeneratorMetadata() *cdktf.TerraformProvid
 	return returns
 }
 
-func (j *jsiiProxy_Filedrop) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Filedrop) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -474,8 +474,8 @@ func (j *jsiiProxy_Filedrop) Timeouts() FiledropTimeoutsOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_Filedrop) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Filedrop) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -504,7 +504,6 @@ func (j *jsiiProxy_Filedrop) WorkspaceInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/filedrop observe_filedrop} Resource.
 func NewFiledrop(scope constructs.Construct, id *string, config *FiledropConfig) Filedrop {
 	_init_.Initialize()
@@ -516,7 +515,7 @@ func NewFiledrop(scope constructs.Construct, id *string, config *FiledropConfig)
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.filedrop.Filedrop",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -529,12 +528,12 @@ func NewFiledrop_Override(f Filedrop, scope constructs.Construct, id *string, co
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.filedrop.Filedrop",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		f,
 	)
 }
 
-func (j *jsiiProxy_Filedrop)SetConnection(val interface{}) {
+func (j *jsiiProxy_Filedrop) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -545,7 +544,7 @@ func (j *jsiiProxy_Filedrop)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Filedrop)SetCount(val interface{}) {
+func (j *jsiiProxy_Filedrop) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -556,7 +555,7 @@ func (j *jsiiProxy_Filedrop)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Filedrop)SetDatastream(val *string) {
+func (j *jsiiProxy_Filedrop) SetDatastream(val *string) {
 	if err := j.validateSetDatastreamParameters(val); err != nil {
 		panic(err)
 	}
@@ -567,7 +566,7 @@ func (j *jsiiProxy_Filedrop)SetDatastream(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Filedrop)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Filedrop) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -575,7 +574,7 @@ func (j *jsiiProxy_Filedrop)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Filedrop)SetDescription(val *string) {
+func (j *jsiiProxy_Filedrop) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -586,7 +585,7 @@ func (j *jsiiProxy_Filedrop)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Filedrop)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Filedrop) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -594,7 +593,7 @@ func (j *jsiiProxy_Filedrop)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Filedrop)SetIconUrl(val *string) {
+func (j *jsiiProxy_Filedrop) SetIconUrl(val *string) {
 	if err := j.validateSetIconUrlParameters(val); err != nil {
 		panic(err)
 	}
@@ -605,7 +604,7 @@ func (j *jsiiProxy_Filedrop)SetIconUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Filedrop)SetId(val *string) {
+func (j *jsiiProxy_Filedrop) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -616,7 +615,7 @@ func (j *jsiiProxy_Filedrop)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Filedrop)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Filedrop) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -627,7 +626,7 @@ func (j *jsiiProxy_Filedrop)SetLifecycle(val *cdktf.TerraformResourceLifecycle) 
 	)
 }
 
-func (j *jsiiProxy_Filedrop)SetName(val *string) {
+func (j *jsiiProxy_Filedrop) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -638,7 +637,7 @@ func (j *jsiiProxy_Filedrop)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Filedrop)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Filedrop) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -646,7 +645,7 @@ func (j *jsiiProxy_Filedrop)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_Filedrop)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Filedrop) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -657,7 +656,7 @@ func (j *jsiiProxy_Filedrop)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Filedrop)SetWorkspace(val *string) {
+func (j *jsiiProxy_Filedrop) SetWorkspace(val *string) {
 	if err := j.validateSetWorkspaceParameters(val); err != nil {
 		panic(err)
 	}
@@ -680,7 +679,7 @@ func Filedrop_GenerateConfigForImport(scope constructs.Construct, importToId *st
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.filedrop.Filedrop",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -704,7 +703,7 @@ func Filedrop_GenerateConfigForImport(scope constructs.Construct, importToId *st
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Filedrop_IsConstruct(x interface{}) *bool {
+func Filedrop_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFiledrop_IsConstructParameters(x); err != nil {
@@ -715,7 +714,7 @@ func Filedrop_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.filedrop.Filedrop",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -723,7 +722,7 @@ func Filedrop_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Filedrop_IsTerraformElement(x interface{}) *bool {
+func Filedrop_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFiledrop_IsTerraformElementParameters(x); err != nil {
@@ -734,7 +733,7 @@ func Filedrop_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.filedrop.Filedrop",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -742,7 +741,7 @@ func Filedrop_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func Filedrop_IsTerraformResource(x interface{}) *bool {
+func Filedrop_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFiledrop_IsTerraformResourceParameters(x); err != nil {
@@ -753,7 +752,7 @@ func Filedrop_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.filedrop.Filedrop",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -778,31 +777,31 @@ func (f *jsiiProxy_Filedrop) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (f *jsiiProxy_Filedrop) AddOverride(path *string, value interface{}) {
+func (f *jsiiProxy_Filedrop) AddOverride(path *string, value any) {
 	if err := f.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (f *jsiiProxy_Filedrop) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (f *jsiiProxy_Filedrop) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := f.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -818,7 +817,7 @@ func (f *jsiiProxy_Filedrop) GetBooleanAttribute(terraformAttribute *string) cdk
 	_jsii_.Invoke(
 		f,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -834,7 +833,7 @@ func (f *jsiiProxy_Filedrop) GetBooleanMapAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		f,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -850,7 +849,7 @@ func (f *jsiiProxy_Filedrop) GetListAttribute(terraformAttribute *string) *[]*st
 	_jsii_.Invoke(
 		f,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -866,7 +865,7 @@ func (f *jsiiProxy_Filedrop) GetNumberAttribute(terraformAttribute *string) *flo
 	_jsii_.Invoke(
 		f,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -882,7 +881,7 @@ func (f *jsiiProxy_Filedrop) GetNumberListAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		f,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -898,7 +897,7 @@ func (f *jsiiProxy_Filedrop) GetNumberMapAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		f,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -914,7 +913,7 @@ func (f *jsiiProxy_Filedrop) GetStringAttribute(terraformAttribute *string) *str
 	_jsii_.Invoke(
 		f,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -930,15 +929,15 @@ func (f *jsiiProxy_Filedrop) GetStringMapAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		f,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (f *jsiiProxy_Filedrop) HasResourceMove() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_Filedrop) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -957,7 +956,7 @@ func (f *jsiiProxy_Filedrop) ImportFrom(id *string, provider cdktf.TerraformProv
 	_jsii_.InvokeVoid(
 		f,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -970,7 +969,7 @@ func (f *jsiiProxy_Filedrop) InterpolationForAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -984,18 +983,18 @@ func (f *jsiiProxy_Filedrop) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (f *jsiiProxy_Filedrop) MoveTo(moveTarget *string, index interface{}) {
+func (f *jsiiProxy_Filedrop) MoveTo(moveTarget *string, index any) {
 	if err := f.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1006,7 +1005,7 @@ func (f *jsiiProxy_Filedrop) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1017,7 +1016,7 @@ func (f *jsiiProxy_Filedrop) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1028,7 +1027,7 @@ func (f *jsiiProxy_Filedrop) PutConfig(value *FiledropConfigA) {
 	_jsii_.InvokeVoid(
 		f,
 		"putConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1039,7 +1038,7 @@ func (f *jsiiProxy_Filedrop) PutTimeouts(value *FiledropTimeouts) {
 	_jsii_.InvokeVoid(
 		f,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1091,8 +1090,8 @@ func (f *jsiiProxy_Filedrop) ResetTimeouts() {
 	)
 }
 
-func (f *jsiiProxy_Filedrop) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (f *jsiiProxy_Filedrop) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
@@ -1104,8 +1103,8 @@ func (f *jsiiProxy_Filedrop) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (f *jsiiProxy_Filedrop) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (f *jsiiProxy_Filedrop) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
@@ -1117,8 +1116,8 @@ func (f *jsiiProxy_Filedrop) SynthesizeHclAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (f *jsiiProxy_Filedrop) ToHclTerraform() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_Filedrop) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1130,8 +1129,8 @@ func (f *jsiiProxy_Filedrop) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (f *jsiiProxy_Filedrop) ToMetadata() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_Filedrop) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1156,8 +1155,8 @@ func (f *jsiiProxy_Filedrop) ToString() *string {
 	return returns
 }
 
-func (f *jsiiProxy_Filedrop) ToTerraform() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_Filedrop) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1168,4 +1167,3 @@ func (f *jsiiProxy_Filedrop) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -19,7 +19,7 @@ func (b *jsiiProxy_BookmarkGroup) validateAddMoveTargetParameters(moveTarget *st
 	return nil
 }
 
-func (b *jsiiProxy_BookmarkGroup) validateAddOverrideParameters(path *string, value interface{}) error {
+func (b *jsiiProxy_BookmarkGroup) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (b *jsiiProxy_BookmarkGroup) validateMoveFromIdParameters(id *string) error
 	return nil
 }
 
-func (b *jsiiProxy_BookmarkGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (b *jsiiProxy_BookmarkGroup) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateBookmarkGroup_GenerateConfigForImportParameters(scope constructs.Co
 	return nil
 }
 
-func validateBookmarkGroup_IsConstructParameters(x interface{}) error {
+func validateBookmarkGroup_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateBookmarkGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateBookmarkGroup_IsTerraformElementParameters(x interface{}) error {
+func validateBookmarkGroup_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateBookmarkGroup_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateBookmarkGroup_IsTerraformResourceParameters(x interface{}) error {
+func validateBookmarkGroup_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateBookmarkGroup_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_BookmarkGroup) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_BookmarkGroup) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_BookmarkGroup) validateSetConnectionParameters(val interface{
 	return nil
 }
 
-func (j *jsiiProxy_BookmarkGroup) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_BookmarkGroup) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -358,7 +358,7 @@ func (j *jsiiProxy_BookmarkGroup) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_BookmarkGroup) validateSetIsHomeParameters(val interface{}) error {
+func (j *jsiiProxy_BookmarkGroup) validateSetIsHomeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -402,7 +402,7 @@ func (j *jsiiProxy_BookmarkGroup) validateSetPresentationParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_BookmarkGroup) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_BookmarkGroup) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -474,4 +474,3 @@ func validateNewBookmarkGroupParameters(scope constructs.Construct, id *string, 
 
 	return nil
 }
-

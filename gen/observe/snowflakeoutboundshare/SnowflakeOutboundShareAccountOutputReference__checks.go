@@ -106,7 +106,7 @@ func (j *jsiiProxy_SnowflakeOutboundShareAccountOutputReference) validateSetAcco
 	return nil
 }
 
-func (j *jsiiProxy_SnowflakeOutboundShareAccountOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SnowflakeOutboundShareAccountOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_SnowflakeOutboundShareAccountOutputReference) validateSetComp
 	return nil
 }
 
-func (j *jsiiProxy_SnowflakeOutboundShareAccountOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SnowflakeOutboundShareAccountOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewSnowflakeOutboundShareAccountOutputReferenceParameters(terraform
 
 	return nil
 }
-

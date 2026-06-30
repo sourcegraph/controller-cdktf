@@ -1,6 +1,5 @@
 package monitor
 
-
 type MonitorRule struct {
 	// change block.
 	//
@@ -17,7 +16,7 @@ type MonitorRule struct {
 	// group_by_group block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/monitor#group_by_group Monitor#group_by_group}
-	GroupByGroup interface{} `field:"optional" json:"groupByGroup" yaml:"groupByGroup"`
+	GroupByGroup any `field:"optional" json:"groupByGroup" yaml:"groupByGroup"`
 	// log block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/monitor#log Monitor#log}
@@ -33,4 +32,3 @@ type MonitorRule struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/monitor#threshold Monitor#threshold}
 	Threshold *MonitorRuleThreshold `field:"optional" json:"threshold" yaml:"threshold"`
 }
-

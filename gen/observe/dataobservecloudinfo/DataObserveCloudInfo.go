@@ -17,11 +17,11 @@ type DataObserveCloudInfo interface {
 	CdktfStack() cdktf.TerraformStack
 	CloudProvider() *string
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -48,18 +48,18 @@ type DataObserveCloudInfo interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Region() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -85,18 +85,18 @@ type DataObserveCloudInfo interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataObserveCloudInfo
@@ -134,8 +134,8 @@ func (j *jsiiProxy_DataObserveCloudInfo) CloudProvider() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataObserveCloudInfo) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataObserveCloudInfo) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -144,8 +144,8 @@ func (j *jsiiProxy_DataObserveCloudInfo) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_DataObserveCloudInfo) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataObserveCloudInfo) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -244,8 +244,8 @@ func (j *jsiiProxy_DataObserveCloudInfo) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataObserveCloudInfo) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataObserveCloudInfo) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -274,8 +274,8 @@ func (j *jsiiProxy_DataObserveCloudInfo) TerraformGeneratorMetadata() *cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_DataObserveCloudInfo) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataObserveCloudInfo) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -294,7 +294,6 @@ func (j *jsiiProxy_DataObserveCloudInfo) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/data-sources/cloud_info observe_cloud_info} Data Source.
 func NewDataObserveCloudInfo(scope constructs.Construct, id *string, config *DataObserveCloudInfoConfig) DataObserveCloudInfo {
 	_init_.Initialize()
@@ -306,7 +305,7 @@ func NewDataObserveCloudInfo(scope constructs.Construct, id *string, config *Dat
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.dataObserveCloudInfo.DataObserveCloudInfo",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -319,12 +318,12 @@ func NewDataObserveCloudInfo_Override(d DataObserveCloudInfo, scope constructs.C
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.dataObserveCloudInfo.DataObserveCloudInfo",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataObserveCloudInfo)SetCount(val interface{}) {
+func (j *jsiiProxy_DataObserveCloudInfo) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,7 +334,7 @@ func (j *jsiiProxy_DataObserveCloudInfo)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataObserveCloudInfo)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataObserveCloudInfo) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -343,7 +342,7 @@ func (j *jsiiProxy_DataObserveCloudInfo)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataObserveCloudInfo)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataObserveCloudInfo) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -351,7 +350,7 @@ func (j *jsiiProxy_DataObserveCloudInfo)SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_DataObserveCloudInfo)SetId(val *string) {
+func (j *jsiiProxy_DataObserveCloudInfo) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,7 +361,7 @@ func (j *jsiiProxy_DataObserveCloudInfo)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataObserveCloudInfo)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataObserveCloudInfo) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -373,7 +372,7 @@ func (j *jsiiProxy_DataObserveCloudInfo)SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_DataObserveCloudInfo)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataObserveCloudInfo) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -393,7 +392,7 @@ func DataObserveCloudInfo_GenerateConfigForImport(scope constructs.Construct, im
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.dataObserveCloudInfo.DataObserveCloudInfo",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func DataObserveCloudInfo_GenerateConfigForImport(scope constructs.Construct, im
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataObserveCloudInfo_IsConstruct(x interface{}) *bool {
+func DataObserveCloudInfo_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataObserveCloudInfo_IsConstructParameters(x); err != nil {
@@ -428,7 +427,7 @@ func DataObserveCloudInfo_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.dataObserveCloudInfo.DataObserveCloudInfo",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func DataObserveCloudInfo_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataObserveCloudInfo_IsTerraformDataSource(x interface{}) *bool {
+func DataObserveCloudInfo_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataObserveCloudInfo_IsTerraformDataSourceParameters(x); err != nil {
@@ -447,7 +446,7 @@ func DataObserveCloudInfo_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.dataObserveCloudInfo.DataObserveCloudInfo",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -455,7 +454,7 @@ func DataObserveCloudInfo_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataObserveCloudInfo_IsTerraformElement(x interface{}) *bool {
+func DataObserveCloudInfo_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataObserveCloudInfo_IsTerraformElementParameters(x); err != nil {
@@ -466,7 +465,7 @@ func DataObserveCloudInfo_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.dataObserveCloudInfo.DataObserveCloudInfo",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -484,27 +483,27 @@ func DataObserveCloudInfo_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataObserveCloudInfo) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataObserveCloudInfo) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataObserveCloudInfo) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataObserveCloudInfo) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -520,7 +519,7 @@ func (d *jsiiProxy_DataObserveCloudInfo) GetBooleanAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -536,7 +535,7 @@ func (d *jsiiProxy_DataObserveCloudInfo) GetBooleanMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -552,7 +551,7 @@ func (d *jsiiProxy_DataObserveCloudInfo) GetListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -568,7 +567,7 @@ func (d *jsiiProxy_DataObserveCloudInfo) GetNumberAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -584,7 +583,7 @@ func (d *jsiiProxy_DataObserveCloudInfo) GetNumberListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -600,7 +599,7 @@ func (d *jsiiProxy_DataObserveCloudInfo) GetNumberMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -616,7 +615,7 @@ func (d *jsiiProxy_DataObserveCloudInfo) GetStringAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -632,7 +631,7 @@ func (d *jsiiProxy_DataObserveCloudInfo) GetStringMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -648,7 +647,7 @@ func (d *jsiiProxy_DataObserveCloudInfo) InterpolationForAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -662,7 +661,7 @@ func (d *jsiiProxy_DataObserveCloudInfo) OverrideLogicalId(newLogicalId *string)
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -682,8 +681,8 @@ func (d *jsiiProxy_DataObserveCloudInfo) ResetOverrideLogicalId() {
 	)
 }
 
-func (d *jsiiProxy_DataObserveCloudInfo) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataObserveCloudInfo) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -695,8 +694,8 @@ func (d *jsiiProxy_DataObserveCloudInfo) SynthesizeAttributes() *map[string]inte
 	return returns
 }
 
-func (d *jsiiProxy_DataObserveCloudInfo) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataObserveCloudInfo) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -708,8 +707,8 @@ func (d *jsiiProxy_DataObserveCloudInfo) SynthesizeHclAttributes() *map[string]i
 	return returns
 }
 
-func (d *jsiiProxy_DataObserveCloudInfo) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataObserveCloudInfo) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -721,8 +720,8 @@ func (d *jsiiProxy_DataObserveCloudInfo) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataObserveCloudInfo) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataObserveCloudInfo) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -747,8 +746,8 @@ func (d *jsiiProxy_DataObserveCloudInfo) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataObserveCloudInfo) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataObserveCloudInfo) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -759,4 +758,3 @@ func (d *jsiiProxy_DataObserveCloudInfo) ToTerraform() interface{} {
 
 	return returns
 }
-

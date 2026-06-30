@@ -17,8 +17,8 @@ type MonitorV2RulesList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type MonitorV2RulesList interface {
 	Get(index *float64) MonitorV2RulesOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_MonitorV2RulesList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MonitorV2RulesList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MonitorV2RulesList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_MonitorV2RulesList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewMonitorV2RulesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorV2RulesList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewMonitorV2RulesList(terraformResource cdktf.IInterpolatingParent, terrafo
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.monitorV2.MonitorV2RulesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewMonitorV2RulesList_Override(m MonitorV2RulesList, terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.monitorV2.MonitorV2RulesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MonitorV2RulesList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_MonitorV2RulesList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_MonitorV2RulesList)SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MonitorV2RulesList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MonitorV2RulesList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_MonitorV2RulesList)SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MonitorV2RulesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MonitorV2RulesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_MonitorV2RulesList)SetTerraformResource(val cdktf.IInterpolat
 	)
 }
 
-func (j *jsiiProxy_MonitorV2RulesList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_MonitorV2RulesList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (m *jsiiProxy_MonitorV2RulesList) AllWithMapKey(mapKeyAttributeName *string
 	_jsii_.Invoke(
 		m,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (m *jsiiProxy_MonitorV2RulesList) Get(index *float64) MonitorV2RulesOutputR
 	_jsii_.Invoke(
 		m,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_MonitorV2RulesList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MonitorV2RulesList) Resolve(_context cdktf.IResolveContext) any {
 	if err := m.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (m *jsiiProxy_MonitorV2RulesList) ToString() *string {
 
 	return returns
 }
-

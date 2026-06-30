@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataObserveMonitorActionEmailOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveMonitorActionEmailOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataObserveMonitorActionEmailOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataObserveMonitorActionEmailOutputReferenceParameters(terraform
 
 	return nil
 }
-

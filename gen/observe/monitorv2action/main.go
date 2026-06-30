@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.monitorV2Action.MonitorV2Action",
-		reflect.TypeOf((*MonitorV2Action)(nil)).Elem(),
+		reflect.TypeFor[MonitorV2Action](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,7 +74,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workspace", GoGetter: "Workspace"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceInput", GoGetter: "WorkspaceInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MonitorV2Action{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -82,15 +82,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.monitorV2Action.MonitorV2ActionConfig",
-		reflect.TypeOf((*MonitorV2ActionConfig)(nil)).Elem(),
+		reflect.TypeFor[MonitorV2ActionConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.monitorV2Action.MonitorV2ActionEmail",
-		reflect.TypeOf((*MonitorV2ActionEmail)(nil)).Elem(),
+		reflect.TypeFor[MonitorV2ActionEmail](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.monitorV2Action.MonitorV2ActionEmailOutputReference",
-		reflect.TypeOf((*MonitorV2ActionEmailOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MonitorV2ActionEmailOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "addresses", GoGetter: "Addresses"},
 			_jsii_.MemberProperty{JsiiProperty: "addressesInput", GoGetter: "AddressesInput"},
@@ -128,7 +128,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "users", GoGetter: "Users"},
 			_jsii_.MemberProperty{JsiiProperty: "usersInput", GoGetter: "UsersInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MonitorV2ActionEmailOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -136,15 +136,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.monitorV2Action.MonitorV2ActionWebhook",
-		reflect.TypeOf((*MonitorV2ActionWebhook)(nil)).Elem(),
+		reflect.TypeFor[MonitorV2ActionWebhook](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.monitorV2Action.MonitorV2ActionWebhookHeaders",
-		reflect.TypeOf((*MonitorV2ActionWebhookHeaders)(nil)).Elem(),
+		reflect.TypeFor[MonitorV2ActionWebhookHeaders](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.monitorV2Action.MonitorV2ActionWebhookHeadersList",
-		reflect.TypeOf((*MonitorV2ActionWebhookHeadersList)(nil)).Elem(),
+		reflect.TypeFor[MonitorV2ActionWebhookHeadersList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -158,7 +158,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MonitorV2ActionWebhookHeadersList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -166,7 +166,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.monitorV2Action.MonitorV2ActionWebhookHeadersOutputReference",
-		reflect.TypeOf((*MonitorV2ActionWebhookHeadersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MonitorV2ActionWebhookHeadersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -194,7 +194,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MonitorV2ActionWebhookHeadersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -202,7 +202,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.monitorV2Action.MonitorV2ActionWebhookOutputReference",
-		reflect.TypeOf((*MonitorV2ActionWebhookOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MonitorV2ActionWebhookOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "body", GoGetter: "Body"},
 			_jsii_.MemberProperty{JsiiProperty: "bodyInput", GoGetter: "BodyInput"},
@@ -239,7 +239,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 			_jsii_.MemberProperty{JsiiProperty: "urlInput", GoGetter: "UrlInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MonitorV2ActionWebhookOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

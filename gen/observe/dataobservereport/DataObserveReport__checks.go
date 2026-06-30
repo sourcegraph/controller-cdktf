@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataObserveReport) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataObserveReport) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -111,7 +111,7 @@ func (d *jsiiProxy_DataObserveReport) validateOverrideLogicalIdParameters(newLog
 	return nil
 }
 
-func (d *jsiiProxy_DataObserveReport) validatePutCreatedByParameters(value interface{}) error {
+func (d *jsiiProxy_DataObserveReport) validatePutCreatedByParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -142,7 +142,7 @@ func (d *jsiiProxy_DataObserveReport) validatePutCreatedByParameters(value inter
 	return nil
 }
 
-func (d *jsiiProxy_DataObserveReport) validatePutDashboardParameters(value interface{}) error {
+func (d *jsiiProxy_DataObserveReport) validatePutDashboardParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -173,7 +173,7 @@ func (d *jsiiProxy_DataObserveReport) validatePutDashboardParameters(value inter
 	return nil
 }
 
-func (d *jsiiProxy_DataObserveReport) validatePutScheduleParameters(value interface{}) error {
+func (d *jsiiProxy_DataObserveReport) validatePutScheduleParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (d *jsiiProxy_DataObserveReport) validatePutScheduleParameters(value interf
 	return nil
 }
 
-func (d *jsiiProxy_DataObserveReport) validatePutUpdatedByParameters(value interface{}) error {
+func (d *jsiiProxy_DataObserveReport) validatePutUpdatedByParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -251,7 +251,7 @@ func validateDataObserveReport_GenerateConfigForImportParameters(scope construct
 	return nil
 }
 
-func validateDataObserveReport_IsConstructParameters(x interface{}) error {
+func validateDataObserveReport_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -259,7 +259,7 @@ func validateDataObserveReport_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDataObserveReport_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataObserveReport_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -267,7 +267,7 @@ func validateDataObserveReport_IsTerraformDataSourceParameters(x interface{}) er
 	return nil
 }
 
-func validateDataObserveReport_IsTerraformElementParameters(x interface{}) error {
+func validateDataObserveReport_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -275,7 +275,7 @@ func validateDataObserveReport_IsTerraformElementParameters(x interface{}) error
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveReport) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataObserveReport) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -382,4 +382,3 @@ func validateNewDataObserveReportParameters(scope constructs.Construct, id *stri
 
 	return nil
 }
-

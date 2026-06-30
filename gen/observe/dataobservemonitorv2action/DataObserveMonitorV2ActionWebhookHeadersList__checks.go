@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataObserveMonitorV2ActionWebhookHeadersList) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2ActionWebhookHeadersList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataObserveMonitorV2ActionWebhookHeadersList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDataObserveMonitorV2ActionWebhookHeadersListParameters(terraform
 
 	return nil
 }
-

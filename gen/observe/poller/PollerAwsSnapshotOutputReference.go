@@ -15,9 +15,9 @@ type PollerAwsSnapshotOutputReference interface {
 	AssumeRoleArnInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -49,7 +49,7 @@ type PollerAwsSnapshotOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -72,7 +72,7 @@ type PollerAwsSnapshotOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -105,8 +105,8 @@ func (j *jsiiProxy_PollerAwsSnapshotOutputReference) AssumeRoleArnInput() *strin
 	return returns
 }
 
-func (j *jsiiProxy_PollerAwsSnapshotOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PollerAwsSnapshotOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -215,7 +215,6 @@ func (j *jsiiProxy_PollerAwsSnapshotOutputReference) TerraformResource() cdktf.I
 	return returns
 }
 
-
 func NewPollerAwsSnapshotOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PollerAwsSnapshotOutputReference {
 	_init_.Initialize()
 
@@ -226,7 +225,7 @@ func NewPollerAwsSnapshotOutputReference(terraformResource cdktf.IInterpolatingP
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.poller.PollerAwsSnapshotOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -238,12 +237,12 @@ func NewPollerAwsSnapshotOutputReference_Override(p PollerAwsSnapshotOutputRefer
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.poller.PollerAwsSnapshotOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PollerAwsSnapshotOutputReference)SetAssumeRoleArn(val *string) {
+func (j *jsiiProxy_PollerAwsSnapshotOutputReference) SetAssumeRoleArn(val *string) {
 	if err := j.validateSetAssumeRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_PollerAwsSnapshotOutputReference)SetAssumeRoleArn(val *string
 	)
 }
 
-func (j *jsiiProxy_PollerAwsSnapshotOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PollerAwsSnapshotOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_PollerAwsSnapshotOutputReference)SetComplexObjectIndex(val in
 	)
 }
 
-func (j *jsiiProxy_PollerAwsSnapshotOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PollerAwsSnapshotOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_PollerAwsSnapshotOutputReference)SetComplexObjectIsFromSet(va
 	)
 }
 
-func (j *jsiiProxy_PollerAwsSnapshotOutputReference)SetIncludeActions(val *[]*string) {
+func (j *jsiiProxy_PollerAwsSnapshotOutputReference) SetIncludeActions(val *[]*string) {
 	if err := j.validateSetIncludeActionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_PollerAwsSnapshotOutputReference)SetIncludeActions(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_PollerAwsSnapshotOutputReference)SetInternalValue(val *PollerAwsSnapshot) {
+func (j *jsiiProxy_PollerAwsSnapshotOutputReference) SetInternalValue(val *PollerAwsSnapshot) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -298,7 +297,7 @@ func (j *jsiiProxy_PollerAwsSnapshotOutputReference)SetInternalValue(val *Poller
 	)
 }
 
-func (j *jsiiProxy_PollerAwsSnapshotOutputReference)SetRegion(val *string) {
+func (j *jsiiProxy_PollerAwsSnapshotOutputReference) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -309,7 +308,7 @@ func (j *jsiiProxy_PollerAwsSnapshotOutputReference)SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PollerAwsSnapshotOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PollerAwsSnapshotOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -320,7 +319,7 @@ func (j *jsiiProxy_PollerAwsSnapshotOutputReference)SetTerraformAttribute(val *s
 	)
 }
 
-func (j *jsiiProxy_PollerAwsSnapshotOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PollerAwsSnapshotOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -344,16 +343,16 @@ func (p *jsiiProxy_PollerAwsSnapshotOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (p *jsiiProxy_PollerAwsSnapshotOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PollerAwsSnapshotOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (p *jsiiProxy_PollerAwsSnapshotOutputReference) GetBooleanAttribute(terrafo
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (p *jsiiProxy_PollerAwsSnapshotOutputReference) GetBooleanMapAttribute(terr
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (p *jsiiProxy_PollerAwsSnapshotOutputReference) GetListAttribute(terraformA
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (p *jsiiProxy_PollerAwsSnapshotOutputReference) GetNumberAttribute(terrafor
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (p *jsiiProxy_PollerAwsSnapshotOutputReference) GetNumberListAttribute(terr
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (p *jsiiProxy_PollerAwsSnapshotOutputReference) GetNumberMapAttribute(terra
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -465,7 +464,7 @@ func (p *jsiiProxy_PollerAwsSnapshotOutputReference) GetStringAttribute(terrafor
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -481,7 +480,7 @@ func (p *jsiiProxy_PollerAwsSnapshotOutputReference) GetStringMapAttribute(terra
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -510,23 +509,23 @@ func (p *jsiiProxy_PollerAwsSnapshotOutputReference) InterpolationForAttribute(p
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_PollerAwsSnapshotOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PollerAwsSnapshotOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -545,4 +544,3 @@ func (p *jsiiProxy_PollerAwsSnapshotOutputReference) ToString() *string {
 
 	return returns
 }
-

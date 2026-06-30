@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataObserveMonitorV2SchedulingTransformOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2SchedulingTransformOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataObserveMonitorV2SchedulingTransformOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataObserveMonitorV2SchedulingTransformOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2SchedulingTransformOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataObserveMonitorV2SchedulingTransformOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDataObserveMonitorV2SchedulingTransformOutputReferenceParameters
 
 	return nil
 }
-

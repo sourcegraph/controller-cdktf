@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataObserveReferenceTable) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataObserveReferenceTable) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -111,7 +111,7 @@ func (d *jsiiProxy_DataObserveReferenceTable) validateOverrideLogicalIdParameter
 	return nil
 }
 
-func (d *jsiiProxy_DataObserveReferenceTable) validatePutSchemaParameters(value interface{}) error {
+func (d *jsiiProxy_DataObserveReferenceTable) validatePutSchemaParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -158,7 +158,7 @@ func validateDataObserveReferenceTable_GenerateConfigForImportParameters(scope c
 	return nil
 }
 
-func validateDataObserveReferenceTable_IsConstructParameters(x interface{}) error {
+func validateDataObserveReferenceTable_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -166,7 +166,7 @@ func validateDataObserveReferenceTable_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
-func validateDataObserveReferenceTable_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataObserveReferenceTable_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -174,7 +174,7 @@ func validateDataObserveReferenceTable_IsTerraformDataSourceParameters(x interfa
 	return nil
 }
 
-func validateDataObserveReferenceTable_IsTerraformElementParameters(x interface{}) error {
+func validateDataObserveReferenceTable_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -182,7 +182,7 @@ func validateDataObserveReferenceTable_IsTerraformElementParameters(x interface{
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveReferenceTable) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataObserveReferenceTable) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -278,4 +278,3 @@ func validateNewDataObserveReferenceTableParameters(scope constructs.Construct, 
 
 	return nil
 }
-

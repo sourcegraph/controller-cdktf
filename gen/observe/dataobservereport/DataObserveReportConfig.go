@@ -6,9 +6,9 @@ import (
 
 type DataObserveReportConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type DataObserveReportConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Resource ID for this object.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/data-sources/report#id DataObserveReport#id}
@@ -29,11 +29,11 @@ type DataObserveReportConfig struct {
 	// created_by block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/data-sources/report#created_by DataObserveReport#created_by}
-	CreatedBy interface{} `field:"optional" json:"createdBy" yaml:"createdBy"`
+	CreatedBy any `field:"optional" json:"createdBy" yaml:"createdBy"`
 	// dashboard block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/data-sources/report#dashboard DataObserveReport#dashboard}
-	Dashboard interface{} `field:"optional" json:"dashboard" yaml:"dashboard"`
+	Dashboard any `field:"optional" json:"dashboard" yaml:"dashboard"`
 	// A list of e-mail bcc addresses that will receive the report.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/data-sources/report#email_bcc_recipients DataObserveReport#email_bcc_recipients}
@@ -45,10 +45,9 @@ type DataObserveReportConfig struct {
 	// schedule block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/data-sources/report#schedule DataObserveReport#schedule}
-	Schedule interface{} `field:"optional" json:"schedule" yaml:"schedule"`
+	Schedule any `field:"optional" json:"schedule" yaml:"schedule"`
 	// updated_by block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/data-sources/report#updated_by DataObserveReport#updated_by}
-	UpdatedBy interface{} `field:"optional" json:"updatedBy" yaml:"updatedBy"`
+	UpdatedBy any `field:"optional" json:"updatedBy" yaml:"updatedBy"`
 }
-

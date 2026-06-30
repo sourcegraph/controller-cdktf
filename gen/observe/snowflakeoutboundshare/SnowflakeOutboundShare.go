@@ -13,19 +13,19 @@ import (
 type SnowflakeOutboundShare interface {
 	cdktf.TerraformResource
 	Account() SnowflakeOutboundShareAccountList
-	AccountInput() interface{}
+	AccountInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -59,16 +59,16 @@ type SnowflakeOutboundShare interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ShareName() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Workspace() *string
@@ -78,9 +78,9 @@ type SnowflakeOutboundShare interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -98,7 +98,7 @@ type SnowflakeOutboundShare interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -110,30 +110,30 @@ type SnowflakeOutboundShare interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutAccount(value interface{})
+	PutAccount(value any)
 	ResetDescription()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for SnowflakeOutboundShare
@@ -151,8 +151,8 @@ func (j *jsiiProxy_SnowflakeOutboundShare) Account() SnowflakeOutboundShareAccou
 	return returns
 }
 
-func (j *jsiiProxy_SnowflakeOutboundShare) AccountInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SnowflakeOutboundShare) AccountInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"accountInput",
@@ -171,8 +171,8 @@ func (j *jsiiProxy_SnowflakeOutboundShare) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_SnowflakeOutboundShare) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SnowflakeOutboundShare) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -181,8 +181,8 @@ func (j *jsiiProxy_SnowflakeOutboundShare) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SnowflakeOutboundShare) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SnowflakeOutboundShare) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -191,8 +191,8 @@ func (j *jsiiProxy_SnowflakeOutboundShare) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_SnowflakeOutboundShare) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SnowflakeOutboundShare) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -341,8 +341,8 @@ func (j *jsiiProxy_SnowflakeOutboundShare) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_SnowflakeOutboundShare) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_SnowflakeOutboundShare) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -351,8 +351,8 @@ func (j *jsiiProxy_SnowflakeOutboundShare) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SnowflakeOutboundShare) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SnowflakeOutboundShare) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -381,8 +381,8 @@ func (j *jsiiProxy_SnowflakeOutboundShare) TerraformGeneratorMetadata() *cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_SnowflakeOutboundShare) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SnowflakeOutboundShare) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -421,7 +421,6 @@ func (j *jsiiProxy_SnowflakeOutboundShare) WorkspaceInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/snowflake_outbound_share observe_snowflake_outbound_share} Resource.
 func NewSnowflakeOutboundShare(scope constructs.Construct, id *string, config *SnowflakeOutboundShareConfig) SnowflakeOutboundShare {
 	_init_.Initialize()
@@ -433,7 +432,7 @@ func NewSnowflakeOutboundShare(scope constructs.Construct, id *string, config *S
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.snowflakeOutboundShare.SnowflakeOutboundShare",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -446,12 +445,12 @@ func NewSnowflakeOutboundShare_Override(s SnowflakeOutboundShare, scope construc
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.snowflakeOutboundShare.SnowflakeOutboundShare",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SnowflakeOutboundShare)SetConnection(val interface{}) {
+func (j *jsiiProxy_SnowflakeOutboundShare) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -462,7 +461,7 @@ func (j *jsiiProxy_SnowflakeOutboundShare)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SnowflakeOutboundShare)SetCount(val interface{}) {
+func (j *jsiiProxy_SnowflakeOutboundShare) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -473,7 +472,7 @@ func (j *jsiiProxy_SnowflakeOutboundShare)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SnowflakeOutboundShare)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SnowflakeOutboundShare) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -481,7 +480,7 @@ func (j *jsiiProxy_SnowflakeOutboundShare)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SnowflakeOutboundShare)SetDescription(val *string) {
+func (j *jsiiProxy_SnowflakeOutboundShare) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -492,7 +491,7 @@ func (j *jsiiProxy_SnowflakeOutboundShare)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SnowflakeOutboundShare)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SnowflakeOutboundShare) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -500,7 +499,7 @@ func (j *jsiiProxy_SnowflakeOutboundShare)SetForEach(val cdktf.ITerraformIterato
 	)
 }
 
-func (j *jsiiProxy_SnowflakeOutboundShare)SetId(val *string) {
+func (j *jsiiProxy_SnowflakeOutboundShare) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_SnowflakeOutboundShare)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SnowflakeOutboundShare)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SnowflakeOutboundShare) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,7 +521,7 @@ func (j *jsiiProxy_SnowflakeOutboundShare)SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
-func (j *jsiiProxy_SnowflakeOutboundShare)SetName(val *string) {
+func (j *jsiiProxy_SnowflakeOutboundShare) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -533,7 +532,7 @@ func (j *jsiiProxy_SnowflakeOutboundShare)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SnowflakeOutboundShare)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SnowflakeOutboundShare) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -541,7 +540,7 @@ func (j *jsiiProxy_SnowflakeOutboundShare)SetProvider(val cdktf.TerraformProvide
 	)
 }
 
-func (j *jsiiProxy_SnowflakeOutboundShare)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SnowflakeOutboundShare) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -552,7 +551,7 @@ func (j *jsiiProxy_SnowflakeOutboundShare)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SnowflakeOutboundShare)SetWorkspace(val *string) {
+func (j *jsiiProxy_SnowflakeOutboundShare) SetWorkspace(val *string) {
 	if err := j.validateSetWorkspaceParameters(val); err != nil {
 		panic(err)
 	}
@@ -575,7 +574,7 @@ func SnowflakeOutboundShare_GenerateConfigForImport(scope constructs.Construct, 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.snowflakeOutboundShare.SnowflakeOutboundShare",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -599,7 +598,7 @@ func SnowflakeOutboundShare_GenerateConfigForImport(scope constructs.Construct, 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func SnowflakeOutboundShare_IsConstruct(x interface{}) *bool {
+func SnowflakeOutboundShare_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSnowflakeOutboundShare_IsConstructParameters(x); err != nil {
@@ -610,7 +609,7 @@ func SnowflakeOutboundShare_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.snowflakeOutboundShare.SnowflakeOutboundShare",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -618,7 +617,7 @@ func SnowflakeOutboundShare_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func SnowflakeOutboundShare_IsTerraformElement(x interface{}) *bool {
+func SnowflakeOutboundShare_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSnowflakeOutboundShare_IsTerraformElementParameters(x); err != nil {
@@ -629,7 +628,7 @@ func SnowflakeOutboundShare_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.snowflakeOutboundShare.SnowflakeOutboundShare",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -637,7 +636,7 @@ func SnowflakeOutboundShare_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func SnowflakeOutboundShare_IsTerraformResource(x interface{}) *bool {
+func SnowflakeOutboundShare_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSnowflakeOutboundShare_IsTerraformResourceParameters(x); err != nil {
@@ -648,7 +647,7 @@ func SnowflakeOutboundShare_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.snowflakeOutboundShare.SnowflakeOutboundShare",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -673,31 +672,31 @@ func (s *jsiiProxy_SnowflakeOutboundShare) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_SnowflakeOutboundShare) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_SnowflakeOutboundShare) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_SnowflakeOutboundShare) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SnowflakeOutboundShare) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -713,7 +712,7 @@ func (s *jsiiProxy_SnowflakeOutboundShare) GetBooleanAttribute(terraformAttribut
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -729,7 +728,7 @@ func (s *jsiiProxy_SnowflakeOutboundShare) GetBooleanMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -745,7 +744,7 @@ func (s *jsiiProxy_SnowflakeOutboundShare) GetListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -761,7 +760,7 @@ func (s *jsiiProxy_SnowflakeOutboundShare) GetNumberAttribute(terraformAttribute
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -777,7 +776,7 @@ func (s *jsiiProxy_SnowflakeOutboundShare) GetNumberListAttribute(terraformAttri
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -793,7 +792,7 @@ func (s *jsiiProxy_SnowflakeOutboundShare) GetNumberMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -809,7 +808,7 @@ func (s *jsiiProxy_SnowflakeOutboundShare) GetStringAttribute(terraformAttribute
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -825,15 +824,15 @@ func (s *jsiiProxy_SnowflakeOutboundShare) GetStringMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SnowflakeOutboundShare) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SnowflakeOutboundShare) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -852,7 +851,7 @@ func (s *jsiiProxy_SnowflakeOutboundShare) ImportFrom(id *string, provider cdktf
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -865,7 +864,7 @@ func (s *jsiiProxy_SnowflakeOutboundShare) InterpolationForAttribute(terraformAt
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -879,18 +878,18 @@ func (s *jsiiProxy_SnowflakeOutboundShare) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_SnowflakeOutboundShare) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_SnowflakeOutboundShare) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -901,7 +900,7 @@ func (s *jsiiProxy_SnowflakeOutboundShare) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -912,18 +911,18 @@ func (s *jsiiProxy_SnowflakeOutboundShare) OverrideLogicalId(newLogicalId *strin
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (s *jsiiProxy_SnowflakeOutboundShare) PutAccount(value interface{}) {
+func (s *jsiiProxy_SnowflakeOutboundShare) PutAccount(value any) {
 	if err := s.validatePutAccountParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putAccount",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -951,8 +950,8 @@ func (s *jsiiProxy_SnowflakeOutboundShare) ResetOverrideLogicalId() {
 	)
 }
 
-func (s *jsiiProxy_SnowflakeOutboundShare) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SnowflakeOutboundShare) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -964,8 +963,8 @@ func (s *jsiiProxy_SnowflakeOutboundShare) SynthesizeAttributes() *map[string]in
 	return returns
 }
 
-func (s *jsiiProxy_SnowflakeOutboundShare) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SnowflakeOutboundShare) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -977,8 +976,8 @@ func (s *jsiiProxy_SnowflakeOutboundShare) SynthesizeHclAttributes() *map[string
 	return returns
 }
 
-func (s *jsiiProxy_SnowflakeOutboundShare) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SnowflakeOutboundShare) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -990,8 +989,8 @@ func (s *jsiiProxy_SnowflakeOutboundShare) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SnowflakeOutboundShare) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SnowflakeOutboundShare) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1016,8 +1015,8 @@ func (s *jsiiProxy_SnowflakeOutboundShare) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SnowflakeOutboundShare) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SnowflakeOutboundShare) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1028,4 +1027,3 @@ func (s *jsiiProxy_SnowflakeOutboundShare) ToTerraform() interface{} {
 
 	return returns
 }
-

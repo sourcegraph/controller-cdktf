@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.rbacStatement.RbacStatement",
-		reflect.TypeOf((*RbacStatement)(nil)).Elem(),
+		reflect.TypeFor[RbacStatement](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -68,7 +68,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RbacStatement{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -76,15 +76,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.rbacStatement.RbacStatementConfig",
-		reflect.TypeOf((*RbacStatementConfig)(nil)).Elem(),
+		reflect.TypeFor[RbacStatementConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.rbacStatement.RbacStatementObject",
-		reflect.TypeOf((*RbacStatementObject)(nil)).Elem(),
+		reflect.TypeFor[RbacStatementObject](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.rbacStatement.RbacStatementObjectOutputReference",
-		reflect.TypeOf((*RbacStatementObjectOutputReference)(nil)).Elem(),
+		reflect.TypeFor[RbacStatementObjectOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "all", GoGetter: "All"},
 			_jsii_.MemberProperty{JsiiProperty: "allInput", GoGetter: "AllInput"},
@@ -129,7 +129,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workspace", GoGetter: "Workspace"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceInput", GoGetter: "WorkspaceInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RbacStatementObjectOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -137,11 +137,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.rbacStatement.RbacStatementSubject",
-		reflect.TypeOf((*RbacStatementSubject)(nil)).Elem(),
+		reflect.TypeFor[RbacStatementSubject](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.rbacStatement.RbacStatementSubjectOutputReference",
-		reflect.TypeOf((*RbacStatementSubjectOutputReference)(nil)).Elem(),
+		reflect.TypeFor[RbacStatementSubjectOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "all", GoGetter: "All"},
 			_jsii_.MemberProperty{JsiiProperty: "allInput", GoGetter: "AllInput"},
@@ -174,7 +174,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "user", GoGetter: "User"},
 			_jsii_.MemberProperty{JsiiProperty: "userInput", GoGetter: "UserInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RbacStatementSubjectOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

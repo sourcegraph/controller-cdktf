@@ -90,7 +90,7 @@ func (m *jsiiProxy_MonitorV2ActionsActionWebhookOutputReference) validateInterpo
 	return nil
 }
 
-func (m *jsiiProxy_MonitorV2ActionsActionWebhookOutputReference) validatePutHeadersParameters(value interface{}) error {
+func (m *jsiiProxy_MonitorV2ActionsActionWebhookOutputReference) validatePutHeadersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -137,7 +137,7 @@ func (j *jsiiProxy_MonitorV2ActionsActionWebhookOutputReference) validateSetBody
 	return nil
 }
 
-func (j *jsiiProxy_MonitorV2ActionsActionWebhookOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MonitorV2ActionsActionWebhookOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -261,4 +261,3 @@ func validateNewMonitorV2ActionsActionWebhookOutputReferenceParameters(terraform
 
 	return nil
 }
-

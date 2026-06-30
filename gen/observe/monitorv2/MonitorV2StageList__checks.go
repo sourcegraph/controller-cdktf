@@ -34,7 +34,7 @@ func (m *jsiiProxy_MonitorV2StageList) validateResolveParameters(_context cdktf.
 	return nil
 }
 
-func (j *jsiiProxy_MonitorV2StageList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MonitorV2StageList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewMonitorV2StageListParameters(terraformResource cdktf.IInterpolat
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.resourceGrants.ResourceGrants",
-		reflect.TypeOf((*ResourceGrants)(nil)).Elem(),
+		reflect.TypeFor[ResourceGrants](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,7 +62,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ResourceGrants{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -70,15 +70,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.resourceGrants.ResourceGrantsConfig",
-		reflect.TypeOf((*ResourceGrantsConfig)(nil)).Elem(),
+		reflect.TypeFor[ResourceGrantsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.resourceGrants.ResourceGrantsGrant",
-		reflect.TypeOf((*ResourceGrantsGrant)(nil)).Elem(),
+		reflect.TypeFor[ResourceGrantsGrant](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.resourceGrants.ResourceGrantsGrantList",
-		reflect.TypeOf((*ResourceGrantsGrantList)(nil)).Elem(),
+		reflect.TypeFor[ResourceGrantsGrantList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -92,7 +92,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ResourceGrantsGrantList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -100,7 +100,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.resourceGrants.ResourceGrantsGrantOutputReference",
-		reflect.TypeOf((*ResourceGrantsGrantOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ResourceGrantsGrantOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -129,7 +129,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ResourceGrantsGrantOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

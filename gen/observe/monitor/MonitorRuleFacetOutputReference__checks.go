@@ -98,7 +98,7 @@ func (m *jsiiProxy_MonitorRuleFacetOutputReference) validateResolveParameters(_c
 	return nil
 }
 
-func (j *jsiiProxy_MonitorRuleFacetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MonitorRuleFacetOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewMonitorRuleFacetOutputReferenceParameters(terraformResource cdkt
 
 	return nil
 }
-

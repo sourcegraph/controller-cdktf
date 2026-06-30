@@ -98,7 +98,7 @@ func (m *jsiiProxy_MonitorNotificationSpecOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_MonitorNotificationSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MonitorNotificationSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_MonitorNotificationSpecOutputReference) validateSetMergeParam
 	return nil
 }
 
-func (j *jsiiProxy_MonitorNotificationSpecOutputReference) validateSetNotifyOnCloseParameters(val interface{}) error {
+func (j *jsiiProxy_MonitorNotificationSpecOutputReference) validateSetNotifyOnCloseParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -242,4 +242,3 @@ func validateNewMonitorNotificationSpecOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

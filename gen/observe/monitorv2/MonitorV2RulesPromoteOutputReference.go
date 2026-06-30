@@ -11,12 +11,12 @@ import (
 type MonitorV2RulesPromoteOutputReference interface {
 	cdktf.ComplexObject
 	CompareColumns() MonitorV2RulesPromoteCompareColumnsList
-	CompareColumnsInput() interface{}
+	CompareColumnsInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -42,7 +42,7 @@ type MonitorV2RulesPromoteOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -63,11 +63,11 @@ type MonitorV2RulesPromoteOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutCompareColumns(value interface{})
+	PutCompareColumns(value any)
 	ResetCompareColumns()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -90,8 +90,8 @@ func (j *jsiiProxy_MonitorV2RulesPromoteOutputReference) CompareColumns() Monito
 	return returns
 }
 
-func (j *jsiiProxy_MonitorV2RulesPromoteOutputReference) CompareColumnsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MonitorV2RulesPromoteOutputReference) CompareColumnsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"compareColumnsInput",
@@ -100,8 +100,8 @@ func (j *jsiiProxy_MonitorV2RulesPromoteOutputReference) CompareColumnsInput() i
 	return returns
 }
 
-func (j *jsiiProxy_MonitorV2RulesPromoteOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MonitorV2RulesPromoteOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -170,7 +170,6 @@ func (j *jsiiProxy_MonitorV2RulesPromoteOutputReference) TerraformResource() cdk
 	return returns
 }
 
-
 func NewMonitorV2RulesPromoteOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MonitorV2RulesPromoteOutputReference {
 	_init_.Initialize()
 
@@ -181,7 +180,7 @@ func NewMonitorV2RulesPromoteOutputReference(terraformResource cdktf.IInterpolat
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.monitorV2.MonitorV2RulesPromoteOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -193,12 +192,12 @@ func NewMonitorV2RulesPromoteOutputReference_Override(m MonitorV2RulesPromoteOut
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.monitorV2.MonitorV2RulesPromoteOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MonitorV2RulesPromoteOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MonitorV2RulesPromoteOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -209,7 +208,7 @@ func (j *jsiiProxy_MonitorV2RulesPromoteOutputReference)SetComplexObjectIndex(va
 	)
 }
 
-func (j *jsiiProxy_MonitorV2RulesPromoteOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MonitorV2RulesPromoteOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -220,7 +219,7 @@ func (j *jsiiProxy_MonitorV2RulesPromoteOutputReference)SetComplexObjectIsFromSe
 	)
 }
 
-func (j *jsiiProxy_MonitorV2RulesPromoteOutputReference)SetInternalValue(val *MonitorV2RulesPromote) {
+func (j *jsiiProxy_MonitorV2RulesPromoteOutputReference) SetInternalValue(val *MonitorV2RulesPromote) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_MonitorV2RulesPromoteOutputReference)SetInternalValue(val *Mo
 	)
 }
 
-func (j *jsiiProxy_MonitorV2RulesPromoteOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MonitorV2RulesPromoteOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_MonitorV2RulesPromoteOutputReference)SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_MonitorV2RulesPromoteOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MonitorV2RulesPromoteOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,16 +265,16 @@ func (m *jsiiProxy_MonitorV2RulesPromoteOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (m *jsiiProxy_MonitorV2RulesPromoteOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MonitorV2RulesPromoteOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -291,7 +290,7 @@ func (m *jsiiProxy_MonitorV2RulesPromoteOutputReference) GetBooleanAttribute(ter
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -307,7 +306,7 @@ func (m *jsiiProxy_MonitorV2RulesPromoteOutputReference) GetBooleanMapAttribute(
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -323,7 +322,7 @@ func (m *jsiiProxy_MonitorV2RulesPromoteOutputReference) GetListAttribute(terraf
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -339,7 +338,7 @@ func (m *jsiiProxy_MonitorV2RulesPromoteOutputReference) GetNumberAttribute(terr
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -355,7 +354,7 @@ func (m *jsiiProxy_MonitorV2RulesPromoteOutputReference) GetNumberListAttribute(
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -371,7 +370,7 @@ func (m *jsiiProxy_MonitorV2RulesPromoteOutputReference) GetNumberMapAttribute(t
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -387,7 +386,7 @@ func (m *jsiiProxy_MonitorV2RulesPromoteOutputReference) GetStringAttribute(terr
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (m *jsiiProxy_MonitorV2RulesPromoteOutputReference) GetStringMapAttribute(t
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,21 +431,21 @@ func (m *jsiiProxy_MonitorV2RulesPromoteOutputReference) InterpolationForAttribu
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_MonitorV2RulesPromoteOutputReference) PutCompareColumns(value interface{}) {
+func (m *jsiiProxy_MonitorV2RulesPromoteOutputReference) PutCompareColumns(value any) {
 	if err := m.validatePutCompareColumnsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"putCompareColumns",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -458,16 +457,16 @@ func (m *jsiiProxy_MonitorV2RulesPromoteOutputReference) ResetCompareColumns() {
 	)
 }
 
-func (m *jsiiProxy_MonitorV2RulesPromoteOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MonitorV2RulesPromoteOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := m.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -486,4 +485,3 @@ func (m *jsiiProxy_MonitorV2RulesPromoteOutputReference) ToString() *string {
 
 	return returns
 }
-

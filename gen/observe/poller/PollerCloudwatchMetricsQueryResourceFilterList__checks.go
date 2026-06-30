@@ -34,7 +34,7 @@ func (p *jsiiProxy_PollerCloudwatchMetricsQueryResourceFilterList) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_PollerCloudwatchMetricsQueryResourceFilterList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PollerCloudwatchMetricsQueryResourceFilterList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewPollerCloudwatchMetricsQueryResourceFilterListParameters(terrafo
 
 	return nil
 }
-

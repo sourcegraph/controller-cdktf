@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataObserveMonitorV2RulesThresholdCompareGroupsCompareValuesL
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2RulesThresholdCompareGroupsCompareValuesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataObserveMonitorV2RulesThresholdCompareGroupsCompareValuesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDataObserveMonitorV2RulesThresholdCompareGroupsCompareValuesList
 
 	return nil
 }
-

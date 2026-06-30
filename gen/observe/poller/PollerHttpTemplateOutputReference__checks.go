@@ -114,7 +114,7 @@ func (j *jsiiProxy_PollerHttpTemplateOutputReference) validateSetBodyParameters(
 	return nil
 }
 
-func (j *jsiiProxy_PollerHttpTemplateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PollerHttpTemplateOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -262,4 +262,3 @@ func validateNewPollerHttpTemplateOutputReferenceParameters(terraformResource cd
 
 	return nil
 }
-

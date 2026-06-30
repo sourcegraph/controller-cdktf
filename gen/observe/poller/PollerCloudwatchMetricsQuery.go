@@ -1,6 +1,5 @@
 package poller
 
-
 type PollerCloudwatchMetricsQuery struct {
 	// AWS Metric Namespace to query.
 	//
@@ -9,7 +8,7 @@ type PollerCloudwatchMetricsQuery struct {
 	// dimension block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/poller#dimension Poller#dimension}
-	Dimension interface{} `field:"optional" json:"dimension" yaml:"dimension"`
+	Dimension any `field:"optional" json:"dimension" yaml:"dimension"`
 	// Metric names to filter down to.
 	//
 	// If more than one metric name is provided, `ListMetrics` will be called with no filter on metric names.
@@ -20,6 +19,5 @@ type PollerCloudwatchMetricsQuery struct {
 	// resource_filter block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/poller#resource_filter Poller#resource_filter}
-	ResourceFilter interface{} `field:"optional" json:"resourceFilter" yaml:"resourceFilter"`
+	ResourceFilter any `field:"optional" json:"resourceFilter" yaml:"resourceFilter"`
 }
-

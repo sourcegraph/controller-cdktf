@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataObserveMonitorRuleLogList) validateResolveParameters(_con
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveMonitorRuleLogList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataObserveMonitorRuleLogList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDataObserveMonitorRuleLogListParameters(terraformResource cdktf.
 
 	return nil
 }
-

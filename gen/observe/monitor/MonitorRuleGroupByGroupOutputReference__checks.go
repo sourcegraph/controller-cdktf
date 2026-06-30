@@ -106,7 +106,7 @@ func (j *jsiiProxy_MonitorRuleGroupByGroupOutputReference) validateSetColumnsPar
 	return nil
 }
 
-func (j *jsiiProxy_MonitorRuleGroupByGroupOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MonitorRuleGroupByGroupOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_MonitorRuleGroupByGroupOutputReference) validateSetGroupNameP
 	return nil
 }
 
-func (j *jsiiProxy_MonitorRuleGroupByGroupOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MonitorRuleGroupByGroupOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewMonitorRuleGroupByGroupOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

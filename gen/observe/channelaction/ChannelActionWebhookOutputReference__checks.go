@@ -106,7 +106,7 @@ func (j *jsiiProxy_ChannelActionWebhookOutputReference) validateSetBodyParameter
 	return nil
 }
 
-func (j *jsiiProxy_ChannelActionWebhookOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ChannelActionWebhookOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewChannelActionWebhookOutputReferenceParameters(terraformResource 
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (s *jsiiProxy_SnowflakeOutboundShare) validateAddMoveTargetParameters(moveT
 	return nil
 }
 
-func (s *jsiiProxy_SnowflakeOutboundShare) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_SnowflakeOutboundShare) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_SnowflakeOutboundShare) validateMoveFromIdParameters(id *stri
 	return nil
 }
 
-func (s *jsiiProxy_SnowflakeOutboundShare) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_SnowflakeOutboundShare) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (s *jsiiProxy_SnowflakeOutboundShare) validateOverrideLogicalIdParameters(n
 	return nil
 }
 
-func (s *jsiiProxy_SnowflakeOutboundShare) validatePutAccountParameters(value interface{}) error {
+func (s *jsiiProxy_SnowflakeOutboundShare) validatePutAccountParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -251,7 +251,7 @@ func validateSnowflakeOutboundShare_GenerateConfigForImportParameters(scope cons
 	return nil
 }
 
-func validateSnowflakeOutboundShare_IsConstructParameters(x interface{}) error {
+func validateSnowflakeOutboundShare_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -259,7 +259,7 @@ func validateSnowflakeOutboundShare_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateSnowflakeOutboundShare_IsTerraformElementParameters(x interface{}) error {
+func validateSnowflakeOutboundShare_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -267,7 +267,7 @@ func validateSnowflakeOutboundShare_IsTerraformElementParameters(x interface{}) 
 	return nil
 }
 
-func validateSnowflakeOutboundShare_IsTerraformResourceParameters(x interface{}) error {
+func validateSnowflakeOutboundShare_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -275,7 +275,7 @@ func validateSnowflakeOutboundShare_IsTerraformResourceParameters(x interface{})
 	return nil
 }
 
-func (j *jsiiProxy_SnowflakeOutboundShare) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_SnowflakeOutboundShare) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -308,7 +308,7 @@ func (j *jsiiProxy_SnowflakeOutboundShare) validateSetConnectionParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_SnowflakeOutboundShare) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_SnowflakeOutboundShare) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -397,7 +397,7 @@ func (j *jsiiProxy_SnowflakeOutboundShare) validateSetNameParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_SnowflakeOutboundShare) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_SnowflakeOutboundShare) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -469,4 +469,3 @@ func validateNewSnowflakeOutboundShareParameters(scope constructs.Construct, id 
 
 	return nil
 }
-

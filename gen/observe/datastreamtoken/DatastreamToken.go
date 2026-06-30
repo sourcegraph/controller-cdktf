@@ -15,15 +15,15 @@ type DatastreamToken interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	Datastream() *string
 	SetDatastream(val *string)
 	DatastreamInput() *string
@@ -34,9 +34,9 @@ type DatastreamToken interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
-	Disabled() interface{}
-	SetDisabled(val interface{})
-	DisabledInput() interface{}
+	Disabled() any
+	SetDisabled(val any)
+	DisabledInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -66,25 +66,25 @@ type DatastreamToken interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Secret() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -102,7 +102,7 @@ type DatastreamToken interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -114,7 +114,7 @@ type DatastreamToken interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -128,17 +128,17 @@ type DatastreamToken interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPassword()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DatastreamToken
@@ -156,8 +156,8 @@ func (j *jsiiProxy_DatastreamToken) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DatastreamToken) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DatastreamToken) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -166,8 +166,8 @@ func (j *jsiiProxy_DatastreamToken) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DatastreamToken) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DatastreamToken) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -176,8 +176,8 @@ func (j *jsiiProxy_DatastreamToken) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_DatastreamToken) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DatastreamToken) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -236,8 +236,8 @@ func (j *jsiiProxy_DatastreamToken) DescriptionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DatastreamToken) Disabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DatastreamToken) Disabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disabled",
@@ -246,8 +246,8 @@ func (j *jsiiProxy_DatastreamToken) Disabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DatastreamToken) DisabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DatastreamToken) DisabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disabledInput",
@@ -386,8 +386,8 @@ func (j *jsiiProxy_DatastreamToken) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DatastreamToken) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DatastreamToken) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -396,8 +396,8 @@ func (j *jsiiProxy_DatastreamToken) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DatastreamToken) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DatastreamToken) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -426,8 +426,8 @@ func (j *jsiiProxy_DatastreamToken) TerraformGeneratorMetadata() *cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_DatastreamToken) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DatastreamToken) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -446,7 +446,6 @@ func (j *jsiiProxy_DatastreamToken) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/datastream_token observe_datastream_token} Resource.
 func NewDatastreamToken(scope constructs.Construct, id *string, config *DatastreamTokenConfig) DatastreamToken {
 	_init_.Initialize()
@@ -458,7 +457,7 @@ func NewDatastreamToken(scope constructs.Construct, id *string, config *Datastre
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.datastreamToken.DatastreamToken",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -471,12 +470,12 @@ func NewDatastreamToken_Override(d DatastreamToken, scope constructs.Construct, 
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.datastreamToken.DatastreamToken",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DatastreamToken)SetConnection(val interface{}) {
+func (j *jsiiProxy_DatastreamToken) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,7 +486,7 @@ func (j *jsiiProxy_DatastreamToken)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DatastreamToken)SetCount(val interface{}) {
+func (j *jsiiProxy_DatastreamToken) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -498,7 +497,7 @@ func (j *jsiiProxy_DatastreamToken)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DatastreamToken)SetDatastream(val *string) {
+func (j *jsiiProxy_DatastreamToken) SetDatastream(val *string) {
 	if err := j.validateSetDatastreamParameters(val); err != nil {
 		panic(err)
 	}
@@ -509,7 +508,7 @@ func (j *jsiiProxy_DatastreamToken)SetDatastream(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DatastreamToken)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DatastreamToken) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -517,7 +516,7 @@ func (j *jsiiProxy_DatastreamToken)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DatastreamToken)SetDescription(val *string) {
+func (j *jsiiProxy_DatastreamToken) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -528,7 +527,7 @@ func (j *jsiiProxy_DatastreamToken)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DatastreamToken)SetDisabled(val interface{}) {
+func (j *jsiiProxy_DatastreamToken) SetDisabled(val any) {
 	if err := j.validateSetDisabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -539,7 +538,7 @@ func (j *jsiiProxy_DatastreamToken)SetDisabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DatastreamToken)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DatastreamToken) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -547,7 +546,7 @@ func (j *jsiiProxy_DatastreamToken)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DatastreamToken)SetId(val *string) {
+func (j *jsiiProxy_DatastreamToken) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -558,7 +557,7 @@ func (j *jsiiProxy_DatastreamToken)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DatastreamToken)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DatastreamToken) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -569,7 +568,7 @@ func (j *jsiiProxy_DatastreamToken)SetLifecycle(val *cdktf.TerraformResourceLife
 	)
 }
 
-func (j *jsiiProxy_DatastreamToken)SetName(val *string) {
+func (j *jsiiProxy_DatastreamToken) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -580,7 +579,7 @@ func (j *jsiiProxy_DatastreamToken)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DatastreamToken)SetPassword(val *string) {
+func (j *jsiiProxy_DatastreamToken) SetPassword(val *string) {
 	if err := j.validateSetPasswordParameters(val); err != nil {
 		panic(err)
 	}
@@ -591,7 +590,7 @@ func (j *jsiiProxy_DatastreamToken)SetPassword(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DatastreamToken)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DatastreamToken) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -599,7 +598,7 @@ func (j *jsiiProxy_DatastreamToken)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_DatastreamToken)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DatastreamToken) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -622,7 +621,7 @@ func DatastreamToken_GenerateConfigForImport(scope constructs.Construct, importT
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.datastreamToken.DatastreamToken",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -646,7 +645,7 @@ func DatastreamToken_GenerateConfigForImport(scope constructs.Construct, importT
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DatastreamToken_IsConstruct(x interface{}) *bool {
+func DatastreamToken_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDatastreamToken_IsConstructParameters(x); err != nil {
@@ -657,7 +656,7 @@ func DatastreamToken_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.datastreamToken.DatastreamToken",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -665,7 +664,7 @@ func DatastreamToken_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DatastreamToken_IsTerraformElement(x interface{}) *bool {
+func DatastreamToken_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDatastreamToken_IsTerraformElementParameters(x); err != nil {
@@ -676,7 +675,7 @@ func DatastreamToken_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.datastreamToken.DatastreamToken",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -684,7 +683,7 @@ func DatastreamToken_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func DatastreamToken_IsTerraformResource(x interface{}) *bool {
+func DatastreamToken_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDatastreamToken_IsTerraformResourceParameters(x); err != nil {
@@ -695,7 +694,7 @@ func DatastreamToken_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.datastreamToken.DatastreamToken",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -720,31 +719,31 @@ func (d *jsiiProxy_DatastreamToken) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_DatastreamToken) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DatastreamToken) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DatastreamToken) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DatastreamToken) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -760,7 +759,7 @@ func (d *jsiiProxy_DatastreamToken) GetBooleanAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -776,7 +775,7 @@ func (d *jsiiProxy_DatastreamToken) GetBooleanMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -792,7 +791,7 @@ func (d *jsiiProxy_DatastreamToken) GetListAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -808,7 +807,7 @@ func (d *jsiiProxy_DatastreamToken) GetNumberAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -824,7 +823,7 @@ func (d *jsiiProxy_DatastreamToken) GetNumberListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -840,7 +839,7 @@ func (d *jsiiProxy_DatastreamToken) GetNumberMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -856,7 +855,7 @@ func (d *jsiiProxy_DatastreamToken) GetStringAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -872,15 +871,15 @@ func (d *jsiiProxy_DatastreamToken) GetStringMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DatastreamToken) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DatastreamToken) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -899,7 +898,7 @@ func (d *jsiiProxy_DatastreamToken) ImportFrom(id *string, provider cdktf.Terraf
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -912,7 +911,7 @@ func (d *jsiiProxy_DatastreamToken) InterpolationForAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -926,18 +925,18 @@ func (d *jsiiProxy_DatastreamToken) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_DatastreamToken) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_DatastreamToken) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -948,7 +947,7 @@ func (d *jsiiProxy_DatastreamToken) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -959,7 +958,7 @@ func (d *jsiiProxy_DatastreamToken) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1003,8 +1002,8 @@ func (d *jsiiProxy_DatastreamToken) ResetPassword() {
 	)
 }
 
-func (d *jsiiProxy_DatastreamToken) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DatastreamToken) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1016,8 +1015,8 @@ func (d *jsiiProxy_DatastreamToken) SynthesizeAttributes() *map[string]interface
 	return returns
 }
 
-func (d *jsiiProxy_DatastreamToken) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DatastreamToken) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1029,8 +1028,8 @@ func (d *jsiiProxy_DatastreamToken) SynthesizeHclAttributes() *map[string]interf
 	return returns
 }
 
-func (d *jsiiProxy_DatastreamToken) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DatastreamToken) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1042,8 +1041,8 @@ func (d *jsiiProxy_DatastreamToken) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DatastreamToken) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DatastreamToken) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1068,8 +1067,8 @@ func (d *jsiiProxy_DatastreamToken) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DatastreamToken) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DatastreamToken) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1080,4 +1079,3 @@ func (d *jsiiProxy_DatastreamToken) ToTerraform() interface{} {
 
 	return returns
 }
-

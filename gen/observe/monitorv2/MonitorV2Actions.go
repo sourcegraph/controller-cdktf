@@ -1,6 +1,5 @@
 package monitorv2
 
-
 type MonitorV2Actions struct {
 	// action block.
 	//
@@ -21,10 +20,9 @@ type MonitorV2Actions struct {
 	// If true, notifications will be sent if the monitor stops triggering.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/monitor_v2#send_end_notifications MonitorV2#send_end_notifications}
-	SendEndNotifications interface{} `field:"optional" json:"sendEndNotifications" yaml:"sendEndNotifications"`
+	SendEndNotifications any `field:"optional" json:"sendEndNotifications" yaml:"sendEndNotifications"`
 	// Determines how frequently you will be reminded of an ongoing alert.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/monitor_v2#send_reminders_interval MonitorV2#send_reminders_interval}
 	SendRemindersInterval *string `field:"optional" json:"sendRemindersInterval" yaml:"sendRemindersInterval"`
 }
-

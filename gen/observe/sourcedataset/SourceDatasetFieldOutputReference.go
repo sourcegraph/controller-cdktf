@@ -12,9 +12,9 @@ type SourceDatasetFieldOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,23 +27,23 @@ type SourceDatasetFieldOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
-	IsConst() interface{}
-	SetIsConst(val interface{})
-	IsConstInput() interface{}
-	IsEnum() interface{}
-	SetIsEnum(val interface{})
-	IsEnumInput() interface{}
-	IsHidden() interface{}
-	SetIsHidden(val interface{})
-	IsHiddenInput() interface{}
-	IsMetric() interface{}
-	SetIsMetric(val interface{})
-	IsMetricInput() interface{}
-	IsSearchable() interface{}
-	SetIsSearchable(val interface{})
-	IsSearchableInput() interface{}
+	InternalValue() any
+	SetInternalValue(val any)
+	IsConst() any
+	SetIsConst(val any)
+	IsConstInput() any
+	IsEnum() any
+	SetIsEnum(val any)
+	IsEnumInput() any
+	IsHidden() any
+	SetIsHidden(val any)
+	IsHiddenInput() any
+	IsMetric() any
+	SetIsMetric(val any)
+	IsMetricInput() any
+	IsSearchable() any
+	SetIsSearchable(val any)
+	IsSearchableInput() any
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -64,7 +64,7 @@ type SourceDatasetFieldOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -92,7 +92,7 @@ type SourceDatasetFieldOutputReference interface {
 	ResetIsSearchable()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -105,8 +105,8 @@ type jsiiProxy_SourceDatasetFieldOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_SourceDatasetFieldOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SourceDatasetFieldOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -145,8 +145,8 @@ func (j *jsiiProxy_SourceDatasetFieldOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SourceDatasetFieldOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SourceDatasetFieldOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -155,8 +155,8 @@ func (j *jsiiProxy_SourceDatasetFieldOutputReference) InternalValue() interface{
 	return returns
 }
 
-func (j *jsiiProxy_SourceDatasetFieldOutputReference) IsConst() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SourceDatasetFieldOutputReference) IsConst() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isConst",
@@ -165,8 +165,8 @@ func (j *jsiiProxy_SourceDatasetFieldOutputReference) IsConst() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SourceDatasetFieldOutputReference) IsConstInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SourceDatasetFieldOutputReference) IsConstInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isConstInput",
@@ -175,8 +175,8 @@ func (j *jsiiProxy_SourceDatasetFieldOutputReference) IsConstInput() interface{}
 	return returns
 }
 
-func (j *jsiiProxy_SourceDatasetFieldOutputReference) IsEnum() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SourceDatasetFieldOutputReference) IsEnum() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isEnum",
@@ -185,8 +185,8 @@ func (j *jsiiProxy_SourceDatasetFieldOutputReference) IsEnum() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SourceDatasetFieldOutputReference) IsEnumInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SourceDatasetFieldOutputReference) IsEnumInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isEnumInput",
@@ -195,8 +195,8 @@ func (j *jsiiProxy_SourceDatasetFieldOutputReference) IsEnumInput() interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_SourceDatasetFieldOutputReference) IsHidden() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SourceDatasetFieldOutputReference) IsHidden() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isHidden",
@@ -205,8 +205,8 @@ func (j *jsiiProxy_SourceDatasetFieldOutputReference) IsHidden() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SourceDatasetFieldOutputReference) IsHiddenInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SourceDatasetFieldOutputReference) IsHiddenInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isHiddenInput",
@@ -215,8 +215,8 @@ func (j *jsiiProxy_SourceDatasetFieldOutputReference) IsHiddenInput() interface{
 	return returns
 }
 
-func (j *jsiiProxy_SourceDatasetFieldOutputReference) IsMetric() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SourceDatasetFieldOutputReference) IsMetric() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isMetric",
@@ -225,8 +225,8 @@ func (j *jsiiProxy_SourceDatasetFieldOutputReference) IsMetric() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SourceDatasetFieldOutputReference) IsMetricInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SourceDatasetFieldOutputReference) IsMetricInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isMetricInput",
@@ -235,8 +235,8 @@ func (j *jsiiProxy_SourceDatasetFieldOutputReference) IsMetricInput() interface{
 	return returns
 }
 
-func (j *jsiiProxy_SourceDatasetFieldOutputReference) IsSearchable() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SourceDatasetFieldOutputReference) IsSearchable() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isSearchable",
@@ -245,8 +245,8 @@ func (j *jsiiProxy_SourceDatasetFieldOutputReference) IsSearchable() interface{}
 	return returns
 }
 
-func (j *jsiiProxy_SourceDatasetFieldOutputReference) IsSearchableInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SourceDatasetFieldOutputReference) IsSearchableInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isSearchableInput",
@@ -335,7 +335,6 @@ func (j *jsiiProxy_SourceDatasetFieldOutputReference) TypeInput() *string {
 	return returns
 }
 
-
 func NewSourceDatasetFieldOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SourceDatasetFieldOutputReference {
 	_init_.Initialize()
 
@@ -346,7 +345,7 @@ func NewSourceDatasetFieldOutputReference(terraformResource cdktf.IInterpolating
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.sourceDataset.SourceDatasetFieldOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -358,12 +357,12 @@ func NewSourceDatasetFieldOutputReference_Override(s SourceDatasetFieldOutputRef
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.sourceDataset.SourceDatasetFieldOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SourceDatasetFieldOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SourceDatasetFieldOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -374,7 +373,7 @@ func (j *jsiiProxy_SourceDatasetFieldOutputReference)SetComplexObjectIndex(val i
 	)
 }
 
-func (j *jsiiProxy_SourceDatasetFieldOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SourceDatasetFieldOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -385,7 +384,7 @@ func (j *jsiiProxy_SourceDatasetFieldOutputReference)SetComplexObjectIsFromSet(v
 	)
 }
 
-func (j *jsiiProxy_SourceDatasetFieldOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_SourceDatasetFieldOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -396,7 +395,7 @@ func (j *jsiiProxy_SourceDatasetFieldOutputReference)SetInternalValue(val interf
 	)
 }
 
-func (j *jsiiProxy_SourceDatasetFieldOutputReference)SetIsConst(val interface{}) {
+func (j *jsiiProxy_SourceDatasetFieldOutputReference) SetIsConst(val any) {
 	if err := j.validateSetIsConstParameters(val); err != nil {
 		panic(err)
 	}
@@ -407,7 +406,7 @@ func (j *jsiiProxy_SourceDatasetFieldOutputReference)SetIsConst(val interface{})
 	)
 }
 
-func (j *jsiiProxy_SourceDatasetFieldOutputReference)SetIsEnum(val interface{}) {
+func (j *jsiiProxy_SourceDatasetFieldOutputReference) SetIsEnum(val any) {
 	if err := j.validateSetIsEnumParameters(val); err != nil {
 		panic(err)
 	}
@@ -418,7 +417,7 @@ func (j *jsiiProxy_SourceDatasetFieldOutputReference)SetIsEnum(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_SourceDatasetFieldOutputReference)SetIsHidden(val interface{}) {
+func (j *jsiiProxy_SourceDatasetFieldOutputReference) SetIsHidden(val any) {
 	if err := j.validateSetIsHiddenParameters(val); err != nil {
 		panic(err)
 	}
@@ -429,7 +428,7 @@ func (j *jsiiProxy_SourceDatasetFieldOutputReference)SetIsHidden(val interface{}
 	)
 }
 
-func (j *jsiiProxy_SourceDatasetFieldOutputReference)SetIsMetric(val interface{}) {
+func (j *jsiiProxy_SourceDatasetFieldOutputReference) SetIsMetric(val any) {
 	if err := j.validateSetIsMetricParameters(val); err != nil {
 		panic(err)
 	}
@@ -440,7 +439,7 @@ func (j *jsiiProxy_SourceDatasetFieldOutputReference)SetIsMetric(val interface{}
 	)
 }
 
-func (j *jsiiProxy_SourceDatasetFieldOutputReference)SetIsSearchable(val interface{}) {
+func (j *jsiiProxy_SourceDatasetFieldOutputReference) SetIsSearchable(val any) {
 	if err := j.validateSetIsSearchableParameters(val); err != nil {
 		panic(err)
 	}
@@ -451,7 +450,7 @@ func (j *jsiiProxy_SourceDatasetFieldOutputReference)SetIsSearchable(val interfa
 	)
 }
 
-func (j *jsiiProxy_SourceDatasetFieldOutputReference)SetName(val *string) {
+func (j *jsiiProxy_SourceDatasetFieldOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -462,7 +461,7 @@ func (j *jsiiProxy_SourceDatasetFieldOutputReference)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SourceDatasetFieldOutputReference)SetSqlType(val *string) {
+func (j *jsiiProxy_SourceDatasetFieldOutputReference) SetSqlType(val *string) {
 	if err := j.validateSetSqlTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -473,7 +472,7 @@ func (j *jsiiProxy_SourceDatasetFieldOutputReference)SetSqlType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SourceDatasetFieldOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SourceDatasetFieldOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -484,7 +483,7 @@ func (j *jsiiProxy_SourceDatasetFieldOutputReference)SetTerraformAttribute(val *
 	)
 }
 
-func (j *jsiiProxy_SourceDatasetFieldOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SourceDatasetFieldOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -495,7 +494,7 @@ func (j *jsiiProxy_SourceDatasetFieldOutputReference)SetTerraformResource(val cd
 	)
 }
 
-func (j *jsiiProxy_SourceDatasetFieldOutputReference)SetType(val *string) {
+func (j *jsiiProxy_SourceDatasetFieldOutputReference) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -519,16 +518,16 @@ func (s *jsiiProxy_SourceDatasetFieldOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SourceDatasetFieldOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SourceDatasetFieldOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -544,7 +543,7 @@ func (s *jsiiProxy_SourceDatasetFieldOutputReference) GetBooleanAttribute(terraf
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -560,7 +559,7 @@ func (s *jsiiProxy_SourceDatasetFieldOutputReference) GetBooleanMapAttribute(ter
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -576,7 +575,7 @@ func (s *jsiiProxy_SourceDatasetFieldOutputReference) GetListAttribute(terraform
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -592,7 +591,7 @@ func (s *jsiiProxy_SourceDatasetFieldOutputReference) GetNumberAttribute(terrafo
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -608,7 +607,7 @@ func (s *jsiiProxy_SourceDatasetFieldOutputReference) GetNumberListAttribute(ter
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -624,7 +623,7 @@ func (s *jsiiProxy_SourceDatasetFieldOutputReference) GetNumberMapAttribute(terr
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -640,7 +639,7 @@ func (s *jsiiProxy_SourceDatasetFieldOutputReference) GetStringAttribute(terrafo
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -656,7 +655,7 @@ func (s *jsiiProxy_SourceDatasetFieldOutputReference) GetStringMapAttribute(terr
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -685,7 +684,7 @@ func (s *jsiiProxy_SourceDatasetFieldOutputReference) InterpolationForAttribute(
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -732,16 +731,16 @@ func (s *jsiiProxy_SourceDatasetFieldOutputReference) ResetIsSearchable() {
 	)
 }
 
-func (s *jsiiProxy_SourceDatasetFieldOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SourceDatasetFieldOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -760,4 +759,3 @@ func (s *jsiiProxy_SourceDatasetFieldOutputReference) ToString() *string {
 
 	return returns
 }
-

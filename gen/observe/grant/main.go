@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.grant.Grant",
-		reflect.TypeOf((*Grant)(nil)).Elem(),
+		reflect.TypeFor[Grant](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,7 +65,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Grant{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -73,15 +73,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.grant.GrantConfig",
-		reflect.TypeOf((*GrantConfig)(nil)).Elem(),
+		reflect.TypeFor[GrantConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.grant.GrantQualifier",
-		reflect.TypeOf((*GrantQualifier)(nil)).Elem(),
+		reflect.TypeFor[GrantQualifier](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.grant.GrantQualifierOutputReference",
-		reflect.TypeOf((*GrantQualifierOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GrantQualifierOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -108,7 +108,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GrantQualifierOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -98,7 +98,7 @@ func (r *jsiiProxy_RbacStatementObjectOutputReference) validateResolveParameters
 	return nil
 }
 
-func (j *jsiiProxy_RbacStatementObjectOutputReference) validateSetAllParameters(val interface{}) error {
+func (j *jsiiProxy_RbacStatementObjectOutputReference) validateSetAllParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -118,7 +118,7 @@ func (j *jsiiProxy_RbacStatementObjectOutputReference) validateSetAllParameters(
 	return nil
 }
 
-func (j *jsiiProxy_RbacStatementObjectOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RbacStatementObjectOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -215,7 +215,7 @@ func (j *jsiiProxy_RbacStatementObjectOutputReference) validateSetNameParameters
 	return nil
 }
 
-func (j *jsiiProxy_RbacStatementObjectOutputReference) validateSetOwnerParameters(val interface{}) error {
+func (j *jsiiProxy_RbacStatementObjectOutputReference) validateSetOwnerParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -278,4 +278,3 @@ func validateNewRbacStatementObjectOutputReferenceParameters(terraformResource c
 
 	return nil
 }
-

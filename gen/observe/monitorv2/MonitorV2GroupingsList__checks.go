@@ -34,7 +34,7 @@ func (m *jsiiProxy_MonitorV2GroupingsList) validateResolveParameters(_context cd
 	return nil
 }
 
-func (j *jsiiProxy_MonitorV2GroupingsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MonitorV2GroupingsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewMonitorV2GroupingsListParameters(terraformResource cdktf.IInterp
 
 	return nil
 }
-

@@ -21,15 +21,15 @@ type Poller interface {
 	CloudwatchMetrics() PollerCloudwatchMetricsOutputReference
 	CloudwatchMetricsInput() *PollerCloudwatchMetrics
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	Datastream() *string
 	SetDatastream(val *string)
 	DatastreamInput() *string
@@ -37,9 +37,9 @@ type Poller interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Disabled() interface{}
-	SetDisabled(val interface{})
-	DisabledInput() interface{}
+	Disabled() any
+	SetDisabled(val any)
+	DisabledInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -76,26 +76,26 @@ type Poller interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	Pubsub() PollerPubsubOutputReference
 	PubsubInput() *PollerPubsub
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Retries() *float64
 	SetRetries(val *float64)
 	RetriesInput() *float64
-	SkipExternalValidation() interface{}
-	SetSkipExternalValidation(val interface{})
-	SkipExternalValidationInput() interface{}
+	SkipExternalValidation() any
+	SetSkipExternalValidation(val any)
+	SkipExternalValidationInput() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Workspace() *string
@@ -105,9 +105,9 @@ type Poller interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -125,7 +125,7 @@ type Poller interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -137,7 +137,7 @@ type Poller interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -168,17 +168,17 @@ type Poller interface {
 	ResetRetries()
 	ResetSkipExternalValidation()
 	ResetTags()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Poller
@@ -256,8 +256,8 @@ func (j *jsiiProxy_Poller) CloudwatchMetricsInput() *PollerCloudwatchMetrics {
 	return returns
 }
 
-func (j *jsiiProxy_Poller) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Poller) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -266,8 +266,8 @@ func (j *jsiiProxy_Poller) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Poller) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Poller) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -276,8 +276,8 @@ func (j *jsiiProxy_Poller) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Poller) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Poller) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -316,8 +316,8 @@ func (j *jsiiProxy_Poller) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_Poller) Disabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Poller) Disabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disabled",
@@ -326,8 +326,8 @@ func (j *jsiiProxy_Poller) Disabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Poller) DisabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Poller) DisabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disabledInput",
@@ -536,8 +536,8 @@ func (j *jsiiProxy_Poller) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_Poller) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Poller) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -566,8 +566,8 @@ func (j *jsiiProxy_Poller) PubsubInput() *PollerPubsub {
 	return returns
 }
 
-func (j *jsiiProxy_Poller) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Poller) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -596,8 +596,8 @@ func (j *jsiiProxy_Poller) RetriesInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_Poller) SkipExternalValidation() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Poller) SkipExternalValidation() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"skipExternalValidation",
@@ -606,8 +606,8 @@ func (j *jsiiProxy_Poller) SkipExternalValidation() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Poller) SkipExternalValidationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Poller) SkipExternalValidationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"skipExternalValidationInput",
@@ -646,8 +646,8 @@ func (j *jsiiProxy_Poller) TerraformGeneratorMetadata() *cdktf.TerraformProvider
 	return returns
 }
 
-func (j *jsiiProxy_Poller) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Poller) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -686,7 +686,6 @@ func (j *jsiiProxy_Poller) WorkspaceInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/poller observe_poller} Resource.
 func NewPoller(scope constructs.Construct, id *string, config *PollerConfig) Poller {
 	_init_.Initialize()
@@ -698,7 +697,7 @@ func NewPoller(scope constructs.Construct, id *string, config *PollerConfig) Pol
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.poller.Poller",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -711,12 +710,12 @@ func NewPoller_Override(p Poller, scope constructs.Construct, id *string, config
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.poller.Poller",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		p,
 	)
 }
 
-func (j *jsiiProxy_Poller)SetConnection(val interface{}) {
+func (j *jsiiProxy_Poller) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -727,7 +726,7 @@ func (j *jsiiProxy_Poller)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Poller)SetCount(val interface{}) {
+func (j *jsiiProxy_Poller) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -738,7 +737,7 @@ func (j *jsiiProxy_Poller)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Poller)SetDatastream(val *string) {
+func (j *jsiiProxy_Poller) SetDatastream(val *string) {
 	if err := j.validateSetDatastreamParameters(val); err != nil {
 		panic(err)
 	}
@@ -749,7 +748,7 @@ func (j *jsiiProxy_Poller)SetDatastream(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Poller)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Poller) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -757,7 +756,7 @@ func (j *jsiiProxy_Poller)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Poller)SetDisabled(val interface{}) {
+func (j *jsiiProxy_Poller) SetDisabled(val any) {
 	if err := j.validateSetDisabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -768,7 +767,7 @@ func (j *jsiiProxy_Poller)SetDisabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Poller)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Poller) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -776,7 +775,7 @@ func (j *jsiiProxy_Poller)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Poller)SetId(val *string) {
+func (j *jsiiProxy_Poller) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -787,7 +786,7 @@ func (j *jsiiProxy_Poller)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Poller)SetInterval(val *string) {
+func (j *jsiiProxy_Poller) SetInterval(val *string) {
 	if err := j.validateSetIntervalParameters(val); err != nil {
 		panic(err)
 	}
@@ -798,7 +797,7 @@ func (j *jsiiProxy_Poller)SetInterval(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Poller)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Poller) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -809,7 +808,7 @@ func (j *jsiiProxy_Poller)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	)
 }
 
-func (j *jsiiProxy_Poller)SetName(val *string) {
+func (j *jsiiProxy_Poller) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -820,7 +819,7 @@ func (j *jsiiProxy_Poller)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Poller)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Poller) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -828,7 +827,7 @@ func (j *jsiiProxy_Poller)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_Poller)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Poller) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -839,7 +838,7 @@ func (j *jsiiProxy_Poller)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Poller)SetRetries(val *float64) {
+func (j *jsiiProxy_Poller) SetRetries(val *float64) {
 	if err := j.validateSetRetriesParameters(val); err != nil {
 		panic(err)
 	}
@@ -850,7 +849,7 @@ func (j *jsiiProxy_Poller)SetRetries(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Poller)SetSkipExternalValidation(val interface{}) {
+func (j *jsiiProxy_Poller) SetSkipExternalValidation(val any) {
 	if err := j.validateSetSkipExternalValidationParameters(val); err != nil {
 		panic(err)
 	}
@@ -861,7 +860,7 @@ func (j *jsiiProxy_Poller)SetSkipExternalValidation(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Poller)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_Poller) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -872,7 +871,7 @@ func (j *jsiiProxy_Poller)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Poller)SetWorkspace(val *string) {
+func (j *jsiiProxy_Poller) SetWorkspace(val *string) {
 	if err := j.validateSetWorkspaceParameters(val); err != nil {
 		panic(err)
 	}
@@ -895,7 +894,7 @@ func Poller_GenerateConfigForImport(scope constructs.Construct, importToId *stri
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.poller.Poller",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -919,7 +918,7 @@ func Poller_GenerateConfigForImport(scope constructs.Construct, importToId *stri
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Poller_IsConstruct(x interface{}) *bool {
+func Poller_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePoller_IsConstructParameters(x); err != nil {
@@ -930,7 +929,7 @@ func Poller_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.poller.Poller",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -938,7 +937,7 @@ func Poller_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Poller_IsTerraformElement(x interface{}) *bool {
+func Poller_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePoller_IsTerraformElementParameters(x); err != nil {
@@ -949,7 +948,7 @@ func Poller_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.poller.Poller",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -957,7 +956,7 @@ func Poller_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func Poller_IsTerraformResource(x interface{}) *bool {
+func Poller_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePoller_IsTerraformResourceParameters(x); err != nil {
@@ -968,7 +967,7 @@ func Poller_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.poller.Poller",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -993,31 +992,31 @@ func (p *jsiiProxy_Poller) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (p *jsiiProxy_Poller) AddOverride(path *string, value interface{}) {
+func (p *jsiiProxy_Poller) AddOverride(path *string, value any) {
 	if err := p.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (p *jsiiProxy_Poller) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_Poller) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1033,7 +1032,7 @@ func (p *jsiiProxy_Poller) GetBooleanAttribute(terraformAttribute *string) cdktf
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1049,7 +1048,7 @@ func (p *jsiiProxy_Poller) GetBooleanMapAttribute(terraformAttribute *string) *m
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1065,7 +1064,7 @@ func (p *jsiiProxy_Poller) GetListAttribute(terraformAttribute *string) *[]*stri
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1081,7 +1080,7 @@ func (p *jsiiProxy_Poller) GetNumberAttribute(terraformAttribute *string) *float
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1097,7 +1096,7 @@ func (p *jsiiProxy_Poller) GetNumberListAttribute(terraformAttribute *string) *[
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1113,7 +1112,7 @@ func (p *jsiiProxy_Poller) GetNumberMapAttribute(terraformAttribute *string) *ma
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1129,7 +1128,7 @@ func (p *jsiiProxy_Poller) GetStringAttribute(terraformAttribute *string) *strin
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1145,15 +1144,15 @@ func (p *jsiiProxy_Poller) GetStringMapAttribute(terraformAttribute *string) *ma
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_Poller) HasResourceMove() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_Poller) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1172,7 +1171,7 @@ func (p *jsiiProxy_Poller) ImportFrom(id *string, provider cdktf.TerraformProvid
 	_jsii_.InvokeVoid(
 		p,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1185,7 +1184,7 @@ func (p *jsiiProxy_Poller) InterpolationForAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1199,18 +1198,18 @@ func (p *jsiiProxy_Poller) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (p *jsiiProxy_Poller) MoveTo(moveTarget *string, index interface{}) {
+func (p *jsiiProxy_Poller) MoveTo(moveTarget *string, index any) {
 	if err := p.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1221,7 +1220,7 @@ func (p *jsiiProxy_Poller) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1232,7 +1231,7 @@ func (p *jsiiProxy_Poller) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1243,7 +1242,7 @@ func (p *jsiiProxy_Poller) PutAwsSnapshot(value *PollerAwsSnapshot) {
 	_jsii_.InvokeVoid(
 		p,
 		"putAwsSnapshot",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1254,7 +1253,7 @@ func (p *jsiiProxy_Poller) PutChunk(value *PollerChunk) {
 	_jsii_.InvokeVoid(
 		p,
 		"putChunk",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1265,7 +1264,7 @@ func (p *jsiiProxy_Poller) PutCloudwatchMetrics(value *PollerCloudwatchMetrics) 
 	_jsii_.InvokeVoid(
 		p,
 		"putCloudwatchMetrics",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1276,7 +1275,7 @@ func (p *jsiiProxy_Poller) PutGcpMonitoring(value *PollerGcpMonitoring) {
 	_jsii_.InvokeVoid(
 		p,
 		"putGcpMonitoring",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1287,7 +1286,7 @@ func (p *jsiiProxy_Poller) PutHttp(value *PollerHttp) {
 	_jsii_.InvokeVoid(
 		p,
 		"putHttp",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1298,7 +1297,7 @@ func (p *jsiiProxy_Poller) PutMongodbatlas(value *PollerMongodbatlas) {
 	_jsii_.InvokeVoid(
 		p,
 		"putMongodbatlas",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1309,7 +1308,7 @@ func (p *jsiiProxy_Poller) PutPubsub(value *PollerPubsub) {
 	_jsii_.InvokeVoid(
 		p,
 		"putPubsub",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1433,8 +1432,8 @@ func (p *jsiiProxy_Poller) ResetTags() {
 	)
 }
 
-func (p *jsiiProxy_Poller) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_Poller) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -1446,8 +1445,8 @@ func (p *jsiiProxy_Poller) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_Poller) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_Poller) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -1459,8 +1458,8 @@ func (p *jsiiProxy_Poller) SynthesizeHclAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_Poller) ToHclTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_Poller) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1472,8 +1471,8 @@ func (p *jsiiProxy_Poller) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_Poller) ToMetadata() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_Poller) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1498,8 +1497,8 @@ func (p *jsiiProxy_Poller) ToString() *string {
 	return returns
 }
 
-func (p *jsiiProxy_Poller) ToTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_Poller) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1510,4 +1509,3 @@ func (p *jsiiProxy_Poller) ToTerraform() interface{} {
 
 	return returns
 }
-

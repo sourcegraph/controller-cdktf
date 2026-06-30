@@ -106,7 +106,7 @@ func (j *jsiiProxy_DataObserveQueryStageOutputReference) validateSetAliasParamet
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveQueryStageOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataObserveQueryStageOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_DataObserveQueryStageOutputReference) validateSetInputParamet
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveQueryStageOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataObserveQueryStageOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -203,7 +203,7 @@ func (j *jsiiProxy_DataObserveQueryStageOutputReference) validateSetInternalValu
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveQueryStageOutputReference) validateSetOutputStageParameters(val interface{}) error {
+func (j *jsiiProxy_DataObserveQueryStageOutputReference) validateSetOutputStageParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -266,4 +266,3 @@ func validateNewDataObserveQueryStageOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

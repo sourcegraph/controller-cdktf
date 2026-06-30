@@ -15,15 +15,15 @@ type MonitorV2Action interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -59,15 +59,15 @@ type MonitorV2Action interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Type() *string
@@ -82,9 +82,9 @@ type MonitorV2Action interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -102,7 +102,7 @@ type MonitorV2Action interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -114,7 +114,7 @@ type MonitorV2Action interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -130,17 +130,17 @@ type MonitorV2Action interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetWebhook()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for MonitorV2Action
@@ -158,8 +158,8 @@ func (j *jsiiProxy_MonitorV2Action) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_MonitorV2Action) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MonitorV2Action) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_MonitorV2Action) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MonitorV2Action) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_MonitorV2Action) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -178,8 +178,8 @@ func (j *jsiiProxy_MonitorV2Action) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_MonitorV2Action) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MonitorV2Action) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -348,8 +348,8 @@ func (j *jsiiProxy_MonitorV2Action) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_MonitorV2Action) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_MonitorV2Action) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -358,8 +358,8 @@ func (j *jsiiProxy_MonitorV2Action) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MonitorV2Action) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MonitorV2Action) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -378,8 +378,8 @@ func (j *jsiiProxy_MonitorV2Action) TerraformGeneratorMetadata() *cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_MonitorV2Action) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_MonitorV2Action) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -458,7 +458,6 @@ func (j *jsiiProxy_MonitorV2Action) WorkspaceInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/monitor_v2_action observe_monitor_v2_action} Resource.
 func NewMonitorV2Action(scope constructs.Construct, id *string, config *MonitorV2ActionConfig) MonitorV2Action {
 	_init_.Initialize()
@@ -470,7 +469,7 @@ func NewMonitorV2Action(scope constructs.Construct, id *string, config *MonitorV
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.monitorV2Action.MonitorV2Action",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -483,12 +482,12 @@ func NewMonitorV2Action_Override(m MonitorV2Action, scope constructs.Construct, 
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.monitorV2Action.MonitorV2Action",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MonitorV2Action)SetConnection(val interface{}) {
+func (j *jsiiProxy_MonitorV2Action) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,7 +498,7 @@ func (j *jsiiProxy_MonitorV2Action)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MonitorV2Action)SetCount(val interface{}) {
+func (j *jsiiProxy_MonitorV2Action) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -510,7 +509,7 @@ func (j *jsiiProxy_MonitorV2Action)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MonitorV2Action)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_MonitorV2Action) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -518,7 +517,7 @@ func (j *jsiiProxy_MonitorV2Action)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_MonitorV2Action)SetDescription(val *string) {
+func (j *jsiiProxy_MonitorV2Action) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -529,7 +528,7 @@ func (j *jsiiProxy_MonitorV2Action)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MonitorV2Action)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_MonitorV2Action) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -537,7 +536,7 @@ func (j *jsiiProxy_MonitorV2Action)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_MonitorV2Action)SetId(val *string) {
+func (j *jsiiProxy_MonitorV2Action) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -548,7 +547,7 @@ func (j *jsiiProxy_MonitorV2Action)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MonitorV2Action)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_MonitorV2Action) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -559,7 +558,7 @@ func (j *jsiiProxy_MonitorV2Action)SetLifecycle(val *cdktf.TerraformResourceLife
 	)
 }
 
-func (j *jsiiProxy_MonitorV2Action)SetName(val *string) {
+func (j *jsiiProxy_MonitorV2Action) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -570,7 +569,7 @@ func (j *jsiiProxy_MonitorV2Action)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MonitorV2Action)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_MonitorV2Action) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -578,7 +577,7 @@ func (j *jsiiProxy_MonitorV2Action)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_MonitorV2Action)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_MonitorV2Action) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -589,7 +588,7 @@ func (j *jsiiProxy_MonitorV2Action)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MonitorV2Action)SetType(val *string) {
+func (j *jsiiProxy_MonitorV2Action) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -600,7 +599,7 @@ func (j *jsiiProxy_MonitorV2Action)SetType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MonitorV2Action)SetWorkspace(val *string) {
+func (j *jsiiProxy_MonitorV2Action) SetWorkspace(val *string) {
 	if err := j.validateSetWorkspaceParameters(val); err != nil {
 		panic(err)
 	}
@@ -623,7 +622,7 @@ func MonitorV2Action_GenerateConfigForImport(scope constructs.Construct, importT
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.monitorV2Action.MonitorV2Action",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -647,7 +646,7 @@ func MonitorV2Action_GenerateConfigForImport(scope constructs.Construct, importT
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func MonitorV2Action_IsConstruct(x interface{}) *bool {
+func MonitorV2Action_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMonitorV2Action_IsConstructParameters(x); err != nil {
@@ -658,7 +657,7 @@ func MonitorV2Action_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.monitorV2Action.MonitorV2Action",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -666,7 +665,7 @@ func MonitorV2Action_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func MonitorV2Action_IsTerraformElement(x interface{}) *bool {
+func MonitorV2Action_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMonitorV2Action_IsTerraformElementParameters(x); err != nil {
@@ -677,7 +676,7 @@ func MonitorV2Action_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.monitorV2Action.MonitorV2Action",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -685,7 +684,7 @@ func MonitorV2Action_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func MonitorV2Action_IsTerraformResource(x interface{}) *bool {
+func MonitorV2Action_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMonitorV2Action_IsTerraformResourceParameters(x); err != nil {
@@ -696,7 +695,7 @@ func MonitorV2Action_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.monitorV2Action.MonitorV2Action",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -721,31 +720,31 @@ func (m *jsiiProxy_MonitorV2Action) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (m *jsiiProxy_MonitorV2Action) AddOverride(path *string, value interface{}) {
+func (m *jsiiProxy_MonitorV2Action) AddOverride(path *string, value any) {
 	if err := m.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (m *jsiiProxy_MonitorV2Action) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MonitorV2Action) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -761,7 +760,7 @@ func (m *jsiiProxy_MonitorV2Action) GetBooleanAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -777,7 +776,7 @@ func (m *jsiiProxy_MonitorV2Action) GetBooleanMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -793,7 +792,7 @@ func (m *jsiiProxy_MonitorV2Action) GetListAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -809,7 +808,7 @@ func (m *jsiiProxy_MonitorV2Action) GetNumberAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -825,7 +824,7 @@ func (m *jsiiProxy_MonitorV2Action) GetNumberListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -841,7 +840,7 @@ func (m *jsiiProxy_MonitorV2Action) GetNumberMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -857,7 +856,7 @@ func (m *jsiiProxy_MonitorV2Action) GetStringAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -873,15 +872,15 @@ func (m *jsiiProxy_MonitorV2Action) GetStringMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_MonitorV2Action) HasResourceMove() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MonitorV2Action) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -900,7 +899,7 @@ func (m *jsiiProxy_MonitorV2Action) ImportFrom(id *string, provider cdktf.Terraf
 	_jsii_.InvokeVoid(
 		m,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -913,7 +912,7 @@ func (m *jsiiProxy_MonitorV2Action) InterpolationForAttribute(terraformAttribute
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -927,18 +926,18 @@ func (m *jsiiProxy_MonitorV2Action) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (m *jsiiProxy_MonitorV2Action) MoveTo(moveTarget *string, index interface{}) {
+func (m *jsiiProxy_MonitorV2Action) MoveTo(moveTarget *string, index any) {
 	if err := m.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -949,7 +948,7 @@ func (m *jsiiProxy_MonitorV2Action) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -960,7 +959,7 @@ func (m *jsiiProxy_MonitorV2Action) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -971,7 +970,7 @@ func (m *jsiiProxy_MonitorV2Action) PutEmail(value *MonitorV2ActionEmail) {
 	_jsii_.InvokeVoid(
 		m,
 		"putEmail",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -982,7 +981,7 @@ func (m *jsiiProxy_MonitorV2Action) PutWebhook(value *MonitorV2ActionWebhook) {
 	_jsii_.InvokeVoid(
 		m,
 		"putWebhook",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1026,8 +1025,8 @@ func (m *jsiiProxy_MonitorV2Action) ResetWebhook() {
 	)
 }
 
-func (m *jsiiProxy_MonitorV2Action) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_MonitorV2Action) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -1039,8 +1038,8 @@ func (m *jsiiProxy_MonitorV2Action) SynthesizeAttributes() *map[string]interface
 	return returns
 }
 
-func (m *jsiiProxy_MonitorV2Action) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_MonitorV2Action) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -1052,8 +1051,8 @@ func (m *jsiiProxy_MonitorV2Action) SynthesizeHclAttributes() *map[string]interf
 	return returns
 }
 
-func (m *jsiiProxy_MonitorV2Action) ToHclTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MonitorV2Action) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1065,8 +1064,8 @@ func (m *jsiiProxy_MonitorV2Action) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (m *jsiiProxy_MonitorV2Action) ToMetadata() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MonitorV2Action) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1091,8 +1090,8 @@ func (m *jsiiProxy_MonitorV2Action) ToString() *string {
 	return returns
 }
 
-func (m *jsiiProxy_MonitorV2Action) ToTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MonitorV2Action) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1103,4 +1102,3 @@ func (m *jsiiProxy_MonitorV2Action) ToTerraform() interface{} {
 
 	return returns
 }
-

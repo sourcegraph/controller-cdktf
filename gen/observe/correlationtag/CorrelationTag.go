@@ -18,15 +18,15 @@ type CorrelationTag interface {
 	SetColumn(val *string)
 	ColumnInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	Dataset() *string
 	SetDataset(val *string)
 	DatasetInput() *string
@@ -62,24 +62,24 @@ type CorrelationTag interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -97,7 +97,7 @@ type CorrelationTag interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -109,7 +109,7 @@ type CorrelationTag interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -121,17 +121,17 @@ type CorrelationTag interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPath()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for CorrelationTag
@@ -169,8 +169,8 @@ func (j *jsiiProxy_CorrelationTag) ColumnInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CorrelationTag) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CorrelationTag) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -179,8 +179,8 @@ func (j *jsiiProxy_CorrelationTag) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CorrelationTag) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CorrelationTag) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -189,8 +189,8 @@ func (j *jsiiProxy_CorrelationTag) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_CorrelationTag) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CorrelationTag) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -349,8 +349,8 @@ func (j *jsiiProxy_CorrelationTag) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_CorrelationTag) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_CorrelationTag) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -359,8 +359,8 @@ func (j *jsiiProxy_CorrelationTag) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CorrelationTag) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CorrelationTag) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -379,8 +379,8 @@ func (j *jsiiProxy_CorrelationTag) TerraformGeneratorMetadata() *cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_CorrelationTag) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CorrelationTag) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -399,7 +399,6 @@ func (j *jsiiProxy_CorrelationTag) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/correlation_tag observe_correlation_tag} Resource.
 func NewCorrelationTag(scope constructs.Construct, id *string, config *CorrelationTagConfig) CorrelationTag {
 	_init_.Initialize()
@@ -411,7 +410,7 @@ func NewCorrelationTag(scope constructs.Construct, id *string, config *Correlati
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.correlationTag.CorrelationTag",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -424,12 +423,12 @@ func NewCorrelationTag_Override(c CorrelationTag, scope constructs.Construct, id
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.correlationTag.CorrelationTag",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CorrelationTag)SetColumn(val *string) {
+func (j *jsiiProxy_CorrelationTag) SetColumn(val *string) {
 	if err := j.validateSetColumnParameters(val); err != nil {
 		panic(err)
 	}
@@ -440,7 +439,7 @@ func (j *jsiiProxy_CorrelationTag)SetColumn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CorrelationTag)SetConnection(val interface{}) {
+func (j *jsiiProxy_CorrelationTag) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -451,7 +450,7 @@ func (j *jsiiProxy_CorrelationTag)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CorrelationTag)SetCount(val interface{}) {
+func (j *jsiiProxy_CorrelationTag) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -462,7 +461,7 @@ func (j *jsiiProxy_CorrelationTag)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CorrelationTag)SetDataset(val *string) {
+func (j *jsiiProxy_CorrelationTag) SetDataset(val *string) {
 	if err := j.validateSetDatasetParameters(val); err != nil {
 		panic(err)
 	}
@@ -473,7 +472,7 @@ func (j *jsiiProxy_CorrelationTag)SetDataset(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CorrelationTag)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CorrelationTag) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -481,7 +480,7 @@ func (j *jsiiProxy_CorrelationTag)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CorrelationTag)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CorrelationTag) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -489,7 +488,7 @@ func (j *jsiiProxy_CorrelationTag)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_CorrelationTag)SetId(val *string) {
+func (j *jsiiProxy_CorrelationTag) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_CorrelationTag)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CorrelationTag)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CorrelationTag) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_CorrelationTag)SetLifecycle(val *cdktf.TerraformResourceLifec
 	)
 }
 
-func (j *jsiiProxy_CorrelationTag)SetName(val *string) {
+func (j *jsiiProxy_CorrelationTag) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,7 +521,7 @@ func (j *jsiiProxy_CorrelationTag)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CorrelationTag)SetPath(val *string) {
+func (j *jsiiProxy_CorrelationTag) SetPath(val *string) {
 	if err := j.validateSetPathParameters(val); err != nil {
 		panic(err)
 	}
@@ -533,7 +532,7 @@ func (j *jsiiProxy_CorrelationTag)SetPath(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CorrelationTag)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CorrelationTag) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -541,7 +540,7 @@ func (j *jsiiProxy_CorrelationTag)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_CorrelationTag)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CorrelationTag) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -564,7 +563,7 @@ func CorrelationTag_GenerateConfigForImport(scope constructs.Construct, importTo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.correlationTag.CorrelationTag",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -588,7 +587,7 @@ func CorrelationTag_GenerateConfigForImport(scope constructs.Construct, importTo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func CorrelationTag_IsConstruct(x interface{}) *bool {
+func CorrelationTag_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCorrelationTag_IsConstructParameters(x); err != nil {
@@ -599,7 +598,7 @@ func CorrelationTag_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.correlationTag.CorrelationTag",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -607,7 +606,7 @@ func CorrelationTag_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func CorrelationTag_IsTerraformElement(x interface{}) *bool {
+func CorrelationTag_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCorrelationTag_IsTerraformElementParameters(x); err != nil {
@@ -618,7 +617,7 @@ func CorrelationTag_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.correlationTag.CorrelationTag",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -626,7 +625,7 @@ func CorrelationTag_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func CorrelationTag_IsTerraformResource(x interface{}) *bool {
+func CorrelationTag_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCorrelationTag_IsTerraformResourceParameters(x); err != nil {
@@ -637,7 +636,7 @@ func CorrelationTag_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.correlationTag.CorrelationTag",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -662,31 +661,31 @@ func (c *jsiiProxy_CorrelationTag) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_CorrelationTag) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_CorrelationTag) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_CorrelationTag) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CorrelationTag) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -702,7 +701,7 @@ func (c *jsiiProxy_CorrelationTag) GetBooleanAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -718,7 +717,7 @@ func (c *jsiiProxy_CorrelationTag) GetBooleanMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -734,7 +733,7 @@ func (c *jsiiProxy_CorrelationTag) GetListAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -750,7 +749,7 @@ func (c *jsiiProxy_CorrelationTag) GetNumberAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -766,7 +765,7 @@ func (c *jsiiProxy_CorrelationTag) GetNumberListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -782,7 +781,7 @@ func (c *jsiiProxy_CorrelationTag) GetNumberMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -798,7 +797,7 @@ func (c *jsiiProxy_CorrelationTag) GetStringAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -814,15 +813,15 @@ func (c *jsiiProxy_CorrelationTag) GetStringMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CorrelationTag) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CorrelationTag) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -841,7 +840,7 @@ func (c *jsiiProxy_CorrelationTag) ImportFrom(id *string, provider cdktf.Terrafo
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -854,7 +853,7 @@ func (c *jsiiProxy_CorrelationTag) InterpolationForAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -868,18 +867,18 @@ func (c *jsiiProxy_CorrelationTag) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_CorrelationTag) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_CorrelationTag) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -890,7 +889,7 @@ func (c *jsiiProxy_CorrelationTag) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -901,7 +900,7 @@ func (c *jsiiProxy_CorrelationTag) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -929,8 +928,8 @@ func (c *jsiiProxy_CorrelationTag) ResetPath() {
 	)
 }
 
-func (c *jsiiProxy_CorrelationTag) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CorrelationTag) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -942,8 +941,8 @@ func (c *jsiiProxy_CorrelationTag) SynthesizeAttributes() *map[string]interface{
 	return returns
 }
 
-func (c *jsiiProxy_CorrelationTag) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CorrelationTag) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -955,8 +954,8 @@ func (c *jsiiProxy_CorrelationTag) SynthesizeHclAttributes() *map[string]interfa
 	return returns
 }
 
-func (c *jsiiProxy_CorrelationTag) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CorrelationTag) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -968,8 +967,8 @@ func (c *jsiiProxy_CorrelationTag) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CorrelationTag) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CorrelationTag) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -994,8 +993,8 @@ func (c *jsiiProxy_CorrelationTag) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_CorrelationTag) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CorrelationTag) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1006,4 +1005,3 @@ func (c *jsiiProxy_CorrelationTag) ToTerraform() interface{} {
 
 	return returns
 }
-

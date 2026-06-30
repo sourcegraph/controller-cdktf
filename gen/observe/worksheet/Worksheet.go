@@ -15,15 +15,15 @@ type Worksheet interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -57,18 +57,18 @@ type Worksheet interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	Queries() *string
 	SetQueries(val *string)
 	QueriesInput() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Workspace() *string
@@ -78,9 +78,9 @@ type Worksheet interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -98,7 +98,7 @@ type Worksheet interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -110,7 +110,7 @@ type Worksheet interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -122,17 +122,17 @@ type Worksheet interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Worksheet
@@ -150,8 +150,8 @@ func (j *jsiiProxy_Worksheet) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_Worksheet) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Worksheet) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -160,8 +160,8 @@ func (j *jsiiProxy_Worksheet) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Worksheet) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Worksheet) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -170,8 +170,8 @@ func (j *jsiiProxy_Worksheet) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Worksheet) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Worksheet) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -320,8 +320,8 @@ func (j *jsiiProxy_Worksheet) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_Worksheet) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Worksheet) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -350,8 +350,8 @@ func (j *jsiiProxy_Worksheet) QueriesInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Worksheet) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Worksheet) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -370,8 +370,8 @@ func (j *jsiiProxy_Worksheet) TerraformGeneratorMetadata() *cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_Worksheet) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Worksheet) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -410,7 +410,6 @@ func (j *jsiiProxy_Worksheet) WorkspaceInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/worksheet observe_worksheet} Resource.
 func NewWorksheet(scope constructs.Construct, id *string, config *WorksheetConfig) Worksheet {
 	_init_.Initialize()
@@ -422,7 +421,7 @@ func NewWorksheet(scope constructs.Construct, id *string, config *WorksheetConfi
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.worksheet.Worksheet",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -435,12 +434,12 @@ func NewWorksheet_Override(w Worksheet, scope constructs.Construct, id *string, 
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.worksheet.Worksheet",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		w,
 	)
 }
 
-func (j *jsiiProxy_Worksheet)SetConnection(val interface{}) {
+func (j *jsiiProxy_Worksheet) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -451,7 +450,7 @@ func (j *jsiiProxy_Worksheet)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Worksheet)SetCount(val interface{}) {
+func (j *jsiiProxy_Worksheet) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -462,7 +461,7 @@ func (j *jsiiProxy_Worksheet)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Worksheet)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Worksheet) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -470,7 +469,7 @@ func (j *jsiiProxy_Worksheet)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Worksheet)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Worksheet) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -478,7 +477,7 @@ func (j *jsiiProxy_Worksheet)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Worksheet)SetIconUrl(val *string) {
+func (j *jsiiProxy_Worksheet) SetIconUrl(val *string) {
 	if err := j.validateSetIconUrlParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_Worksheet)SetIconUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Worksheet)SetId(val *string) {
+func (j *jsiiProxy_Worksheet) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_Worksheet)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Worksheet)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Worksheet) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_Worksheet)SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	)
 }
 
-func (j *jsiiProxy_Worksheet)SetName(val *string) {
+func (j *jsiiProxy_Worksheet) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,7 +521,7 @@ func (j *jsiiProxy_Worksheet)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Worksheet)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Worksheet) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -530,7 +529,7 @@ func (j *jsiiProxy_Worksheet)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_Worksheet)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Worksheet) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -541,7 +540,7 @@ func (j *jsiiProxy_Worksheet)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Worksheet)SetQueries(val *string) {
+func (j *jsiiProxy_Worksheet) SetQueries(val *string) {
 	if err := j.validateSetQueriesParameters(val); err != nil {
 		panic(err)
 	}
@@ -552,7 +551,7 @@ func (j *jsiiProxy_Worksheet)SetQueries(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Worksheet)SetWorkspace(val *string) {
+func (j *jsiiProxy_Worksheet) SetWorkspace(val *string) {
 	if err := j.validateSetWorkspaceParameters(val); err != nil {
 		panic(err)
 	}
@@ -575,7 +574,7 @@ func Worksheet_GenerateConfigForImport(scope constructs.Construct, importToId *s
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.worksheet.Worksheet",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -599,7 +598,7 @@ func Worksheet_GenerateConfigForImport(scope constructs.Construct, importToId *s
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Worksheet_IsConstruct(x interface{}) *bool {
+func Worksheet_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWorksheet_IsConstructParameters(x); err != nil {
@@ -610,7 +609,7 @@ func Worksheet_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.worksheet.Worksheet",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -618,7 +617,7 @@ func Worksheet_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Worksheet_IsTerraformElement(x interface{}) *bool {
+func Worksheet_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWorksheet_IsTerraformElementParameters(x); err != nil {
@@ -629,7 +628,7 @@ func Worksheet_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.worksheet.Worksheet",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -637,7 +636,7 @@ func Worksheet_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func Worksheet_IsTerraformResource(x interface{}) *bool {
+func Worksheet_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWorksheet_IsTerraformResourceParameters(x); err != nil {
@@ -648,7 +647,7 @@ func Worksheet_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.worksheet.Worksheet",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -673,31 +672,31 @@ func (w *jsiiProxy_Worksheet) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (w *jsiiProxy_Worksheet) AddOverride(path *string, value interface{}) {
+func (w *jsiiProxy_Worksheet) AddOverride(path *string, value any) {
 	if err := w.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (w *jsiiProxy_Worksheet) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (w *jsiiProxy_Worksheet) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -713,7 +712,7 @@ func (w *jsiiProxy_Worksheet) GetBooleanAttribute(terraformAttribute *string) cd
 	_jsii_.Invoke(
 		w,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -729,7 +728,7 @@ func (w *jsiiProxy_Worksheet) GetBooleanMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		w,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -745,7 +744,7 @@ func (w *jsiiProxy_Worksheet) GetListAttribute(terraformAttribute *string) *[]*s
 	_jsii_.Invoke(
 		w,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -761,7 +760,7 @@ func (w *jsiiProxy_Worksheet) GetNumberAttribute(terraformAttribute *string) *fl
 	_jsii_.Invoke(
 		w,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -777,7 +776,7 @@ func (w *jsiiProxy_Worksheet) GetNumberListAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		w,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -793,7 +792,7 @@ func (w *jsiiProxy_Worksheet) GetNumberMapAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		w,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -809,7 +808,7 @@ func (w *jsiiProxy_Worksheet) GetStringAttribute(terraformAttribute *string) *st
 	_jsii_.Invoke(
 		w,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -825,15 +824,15 @@ func (w *jsiiProxy_Worksheet) GetStringMapAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		w,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (w *jsiiProxy_Worksheet) HasResourceMove() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_Worksheet) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -852,7 +851,7 @@ func (w *jsiiProxy_Worksheet) ImportFrom(id *string, provider cdktf.TerraformPro
 	_jsii_.InvokeVoid(
 		w,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -865,7 +864,7 @@ func (w *jsiiProxy_Worksheet) InterpolationForAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -879,18 +878,18 @@ func (w *jsiiProxy_Worksheet) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (w *jsiiProxy_Worksheet) MoveTo(moveTarget *string, index interface{}) {
+func (w *jsiiProxy_Worksheet) MoveTo(moveTarget *string, index any) {
 	if err := w.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -901,7 +900,7 @@ func (w *jsiiProxy_Worksheet) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -912,7 +911,7 @@ func (w *jsiiProxy_Worksheet) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -940,8 +939,8 @@ func (w *jsiiProxy_Worksheet) ResetOverrideLogicalId() {
 	)
 }
 
-func (w *jsiiProxy_Worksheet) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (w *jsiiProxy_Worksheet) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
@@ -953,8 +952,8 @@ func (w *jsiiProxy_Worksheet) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (w *jsiiProxy_Worksheet) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (w *jsiiProxy_Worksheet) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
@@ -966,8 +965,8 @@ func (w *jsiiProxy_Worksheet) SynthesizeHclAttributes() *map[string]interface{} 
 	return returns
 }
 
-func (w *jsiiProxy_Worksheet) ToHclTerraform() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_Worksheet) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -979,8 +978,8 @@ func (w *jsiiProxy_Worksheet) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (w *jsiiProxy_Worksheet) ToMetadata() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_Worksheet) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -1005,8 +1004,8 @@ func (w *jsiiProxy_Worksheet) ToString() *string {
 	return returns
 }
 
-func (w *jsiiProxy_Worksheet) ToTerraform() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_Worksheet) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -1017,4 +1016,3 @@ func (w *jsiiProxy_Worksheet) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -90,7 +90,7 @@ func (d *jsiiProxy_DataObserveMonitorV2ActionsOutputReference) validateInterpola
 	return nil
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2ActionsOutputReference) validatePutActionParameters(value interface{}) error {
+func (d *jsiiProxy_DataObserveMonitorV2ActionsOutputReference) validatePutActionParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (d *jsiiProxy_DataObserveMonitorV2ActionsOutputReference) validatePutAction
 	return nil
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2ActionsOutputReference) validatePutConditionsParameters(value interface{}) error {
+func (d *jsiiProxy_DataObserveMonitorV2ActionsOutputReference) validatePutConditionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (d *jsiiProxy_DataObserveMonitorV2ActionsOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2ActionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataObserveMonitorV2ActionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -225,7 +225,7 @@ func (j *jsiiProxy_DataObserveMonitorV2ActionsOutputReference) validateSetComple
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2ActionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataObserveMonitorV2ActionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -284,4 +284,3 @@ func validateNewDataObserveMonitorV2ActionsOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

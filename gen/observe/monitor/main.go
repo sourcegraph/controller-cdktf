@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.monitor.Monitor",
-		reflect.TypeOf((*Monitor)(nil)).Elem(),
+		reflect.TypeFor[Monitor](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -94,7 +94,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workspace", GoGetter: "Workspace"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceInput", GoGetter: "WorkspaceInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Monitor{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -102,15 +102,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.monitor.MonitorConfig",
-		reflect.TypeOf((*MonitorConfig)(nil)).Elem(),
+		reflect.TypeFor[MonitorConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.monitor.MonitorNotificationSpec",
-		reflect.TypeOf((*MonitorNotificationSpec)(nil)).Elem(),
+		reflect.TypeFor[MonitorNotificationSpec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.monitor.MonitorNotificationSpecOutputReference",
-		reflect.TypeOf((*MonitorNotificationSpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MonitorNotificationSpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -147,7 +147,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MonitorNotificationSpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -155,15 +155,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.monitor.MonitorRule",
-		reflect.TypeOf((*MonitorRule)(nil)).Elem(),
+		reflect.TypeFor[MonitorRule](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.monitor.MonitorRuleChange",
-		reflect.TypeOf((*MonitorRuleChange)(nil)).Elem(),
+		reflect.TypeFor[MonitorRuleChange](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.monitor.MonitorRuleChangeOutputReference",
-		reflect.TypeOf((*MonitorRuleChangeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MonitorRuleChangeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregateFunction", GoGetter: "AggregateFunction"},
 			_jsii_.MemberProperty{JsiiProperty: "aggregateFunctionInput", GoGetter: "AggregateFunctionInput"},
@@ -205,7 +205,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MonitorRuleChangeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -213,11 +213,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.monitor.MonitorRuleCount",
-		reflect.TypeOf((*MonitorRuleCount)(nil)).Elem(),
+		reflect.TypeFor[MonitorRuleCount](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.monitor.MonitorRuleCountOutputReference",
-		reflect.TypeOf((*MonitorRuleCountOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MonitorRuleCountOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "compareFunction", GoGetter: "CompareFunction"},
 			_jsii_.MemberProperty{JsiiProperty: "compareFunctionInput", GoGetter: "CompareFunctionInput"},
@@ -251,7 +251,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MonitorRuleCountOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -259,11 +259,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.monitor.MonitorRuleFacet",
-		reflect.TypeOf((*MonitorRuleFacet)(nil)).Elem(),
+		reflect.TypeFor[MonitorRuleFacet](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.monitor.MonitorRuleFacetOutputReference",
-		reflect.TypeOf((*MonitorRuleFacetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MonitorRuleFacetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -298,7 +298,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeValueInput", GoGetter: "TimeValueInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MonitorRuleFacetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -306,11 +306,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.monitor.MonitorRuleGroupByGroup",
-		reflect.TypeOf((*MonitorRuleGroupByGroup)(nil)).Elem(),
+		reflect.TypeFor[MonitorRuleGroupByGroup](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.monitor.MonitorRuleGroupByGroupList",
-		reflect.TypeOf((*MonitorRuleGroupByGroupList)(nil)).Elem(),
+		reflect.TypeFor[MonitorRuleGroupByGroupList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -324,7 +324,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MonitorRuleGroupByGroupList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -332,7 +332,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.monitor.MonitorRuleGroupByGroupOutputReference",
-		reflect.TypeOf((*MonitorRuleGroupByGroupOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MonitorRuleGroupByGroupOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "columns", GoGetter: "Columns"},
 			_jsii_.MemberProperty{JsiiProperty: "columnsInput", GoGetter: "ColumnsInput"},
@@ -362,7 +362,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MonitorRuleGroupByGroupOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -370,11 +370,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.monitor.MonitorRuleLog",
-		reflect.TypeOf((*MonitorRuleLog)(nil)).Elem(),
+		reflect.TypeFor[MonitorRuleLog](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.monitor.MonitorRuleLogOutputReference",
-		reflect.TypeOf((*MonitorRuleLogOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MonitorRuleLogOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "compareFunction", GoGetter: "CompareFunction"},
 			_jsii_.MemberProperty{JsiiProperty: "compareFunctionInput", GoGetter: "CompareFunctionInput"},
@@ -414,7 +414,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MonitorRuleLogOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -422,7 +422,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.monitor.MonitorRuleOutputReference",
-		reflect.TypeOf((*MonitorRuleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MonitorRuleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "change", GoGetter: "Change"},
 			_jsii_.MemberProperty{JsiiProperty: "changeInput", GoGetter: "ChangeInput"},
@@ -477,7 +477,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "thresholdInput", GoGetter: "ThresholdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MonitorRuleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -485,11 +485,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.monitor.MonitorRulePromote",
-		reflect.TypeOf((*MonitorRulePromote)(nil)).Elem(),
+		reflect.TypeFor[MonitorRulePromote](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.monitor.MonitorRulePromoteOutputReference",
-		reflect.TypeOf((*MonitorRulePromoteOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MonitorRulePromoteOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -521,7 +521,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MonitorRulePromoteOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -529,11 +529,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.monitor.MonitorRuleThreshold",
-		reflect.TypeOf((*MonitorRuleThreshold)(nil)).Elem(),
+		reflect.TypeFor[MonitorRuleThreshold](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.monitor.MonitorRuleThresholdOutputReference",
-		reflect.TypeOf((*MonitorRuleThresholdOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MonitorRuleThresholdOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "compareFunction", GoGetter: "CompareFunction"},
 			_jsii_.MemberProperty{JsiiProperty: "compareFunctionInput", GoGetter: "CompareFunctionInput"},
@@ -567,7 +567,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "thresholdAggFunctionInput", GoGetter: "ThresholdAggFunctionInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MonitorRuleThresholdOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -575,11 +575,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.monitor.MonitorStage",
-		reflect.TypeOf((*MonitorStage)(nil)).Elem(),
+		reflect.TypeFor[MonitorStage](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.monitor.MonitorStageList",
-		reflect.TypeOf((*MonitorStageList)(nil)).Elem(),
+		reflect.TypeFor[MonitorStageList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -593,7 +593,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MonitorStageList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -601,7 +601,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.monitor.MonitorStageOutputReference",
-		reflect.TypeOf((*MonitorStageOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MonitorStageOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alias", GoGetter: "Alias"},
 			_jsii_.MemberProperty{JsiiProperty: "aliasInput", GoGetter: "AliasInput"},
@@ -637,7 +637,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MonitorStageOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

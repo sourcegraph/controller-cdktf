@@ -90,7 +90,7 @@ func (p *jsiiProxy_PollerCloudwatchMetricsQueryOutputReference) validateInterpol
 	return nil
 }
 
-func (p *jsiiProxy_PollerCloudwatchMetricsQueryOutputReference) validatePutDimensionParameters(value interface{}) error {
+func (p *jsiiProxy_PollerCloudwatchMetricsQueryOutputReference) validatePutDimensionParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (p *jsiiProxy_PollerCloudwatchMetricsQueryOutputReference) validatePutDimen
 	return nil
 }
 
-func (p *jsiiProxy_PollerCloudwatchMetricsQueryOutputReference) validatePutResourceFilterParameters(value interface{}) error {
+func (p *jsiiProxy_PollerCloudwatchMetricsQueryOutputReference) validatePutResourceFilterParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (p *jsiiProxy_PollerCloudwatchMetricsQueryOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_PollerCloudwatchMetricsQueryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PollerCloudwatchMetricsQueryOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -225,7 +225,7 @@ func (j *jsiiProxy_PollerCloudwatchMetricsQueryOutputReference) validateSetCompl
 	return nil
 }
 
-func (j *jsiiProxy_PollerCloudwatchMetricsQueryOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PollerCloudwatchMetricsQueryOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -300,4 +300,3 @@ func validateNewPollerCloudwatchMetricsQueryOutputReferenceParameters(terraformR
 
 	return nil
 }
-

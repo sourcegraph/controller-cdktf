@@ -6,9 +6,9 @@ import (
 
 type DatasetOutboundShareConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type DatasetOutboundShareConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The OID of the dataset to be shared.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/dataset_outbound_share#dataset DatasetOutboundShare#dataset}
@@ -48,7 +48,7 @@ type DatasetOutboundShareConfig struct {
 	// If set to true, the shared view will have change tracking enabled.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/dataset_outbound_share#change_tracking DatasetOutboundShare#change_tracking}
-	ChangeTracking interface{} `field:"optional" json:"changeTracking" yaml:"changeTracking"`
+	ChangeTracking any `field:"optional" json:"changeTracking" yaml:"changeTracking"`
 	// A description of the dataset sharing configuration.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/dataset_outbound_share#description DatasetOutboundShare#description}
@@ -65,4 +65,3 @@ type DatasetOutboundShareConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/dataset_outbound_share#timeouts DatasetOutboundShare#timeouts}
 	Timeouts *DatasetOutboundShareTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

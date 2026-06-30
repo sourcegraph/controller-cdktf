@@ -114,7 +114,7 @@ func (j *jsiiProxy_MonitorRuleThresholdOutputReference) validateSetCompareValues
 	return nil
 }
 
-func (j *jsiiProxy_MonitorRuleThresholdOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MonitorRuleThresholdOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewMonitorRuleThresholdOutputReferenceParameters(terraformResource 
 
 	return nil
 }
-

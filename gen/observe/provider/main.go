@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.provider.ObserveProvider",
-		reflect.TypeOf((*ObserveProvider)(nil)).Elem(),
+		reflect.TypeFor[ObserveProvider](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "alias", GoGetter: "Alias"},
@@ -81,7 +81,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userPassword", GoGetter: "UserPassword"},
 			_jsii_.MemberProperty{JsiiProperty: "userPasswordInput", GoGetter: "UserPasswordInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ObserveProvider{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformProvider)
 			return &j
@@ -89,6 +89,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.provider.ObserveProviderConfig",
-		reflect.TypeOf((*ObserveProviderConfig)(nil)).Elem(),
+		reflect.TypeFor[ObserveProviderConfig](),
 	)
 }

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataObserveReferenceTableSchemaOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveReferenceTableSchemaOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataObserveReferenceTableSchemaOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataObserveReferenceTableSchemaOutputReference) validateSetCo
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveReferenceTableSchemaOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataObserveReferenceTableSchemaOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDataObserveReferenceTableSchemaOutputReferenceParameters(terrafo
 
 	return nil
 }
-

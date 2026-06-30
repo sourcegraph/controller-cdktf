@@ -34,7 +34,7 @@ func (p *jsiiProxy_PollerCloudwatchMetricsQueryList) validateResolveParameters(_
 	return nil
 }
 
-func (j *jsiiProxy_PollerCloudwatchMetricsQueryList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PollerCloudwatchMetricsQueryList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewPollerCloudwatchMetricsQueryListParameters(terraformResource cdk
 
 	return nil
 }
-

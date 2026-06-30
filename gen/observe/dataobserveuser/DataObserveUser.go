@@ -16,11 +16,11 @@ type DataObserveUser interface {
 	CdktfStack() cdktf.TerraformStack
 	Comment() *string
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -51,17 +51,17 @@ type DataObserveUser interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -88,18 +88,18 @@ type DataObserveUser interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataObserveUser
@@ -127,8 +127,8 @@ func (j *jsiiProxy_DataObserveUser) Comment() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataObserveUser) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataObserveUser) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -137,8 +137,8 @@ func (j *jsiiProxy_DataObserveUser) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_DataObserveUser) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataObserveUser) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -267,8 +267,8 @@ func (j *jsiiProxy_DataObserveUser) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataObserveUser) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataObserveUser) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -287,8 +287,8 @@ func (j *jsiiProxy_DataObserveUser) TerraformGeneratorMetadata() *cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_DataObserveUser) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataObserveUser) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -307,7 +307,6 @@ func (j *jsiiProxy_DataObserveUser) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/data-sources/user observe_user} Data Source.
 func NewDataObserveUser(scope constructs.Construct, id *string, config *DataObserveUserConfig) DataObserveUser {
 	_init_.Initialize()
@@ -319,7 +318,7 @@ func NewDataObserveUser(scope constructs.Construct, id *string, config *DataObse
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.dataObserveUser.DataObserveUser",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -332,12 +331,12 @@ func NewDataObserveUser_Override(d DataObserveUser, scope constructs.Construct, 
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.dataObserveUser.DataObserveUser",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataObserveUser)SetCount(val interface{}) {
+func (j *jsiiProxy_DataObserveUser) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -348,7 +347,7 @@ func (j *jsiiProxy_DataObserveUser)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataObserveUser)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataObserveUser) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -356,7 +355,7 @@ func (j *jsiiProxy_DataObserveUser)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataObserveUser)SetEmail(val *string) {
+func (j *jsiiProxy_DataObserveUser) SetEmail(val *string) {
 	if err := j.validateSetEmailParameters(val); err != nil {
 		panic(err)
 	}
@@ -367,7 +366,7 @@ func (j *jsiiProxy_DataObserveUser)SetEmail(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataObserveUser)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataObserveUser) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -375,7 +374,7 @@ func (j *jsiiProxy_DataObserveUser)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DataObserveUser)SetId(val *string) {
+func (j *jsiiProxy_DataObserveUser) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -386,7 +385,7 @@ func (j *jsiiProxy_DataObserveUser)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataObserveUser)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataObserveUser) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -397,7 +396,7 @@ func (j *jsiiProxy_DataObserveUser)SetLifecycle(val *cdktf.TerraformResourceLife
 	)
 }
 
-func (j *jsiiProxy_DataObserveUser)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataObserveUser) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -417,7 +416,7 @@ func DataObserveUser_GenerateConfigForImport(scope constructs.Construct, importT
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.dataObserveUser.DataObserveUser",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -441,7 +440,7 @@ func DataObserveUser_GenerateConfigForImport(scope constructs.Construct, importT
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataObserveUser_IsConstruct(x interface{}) *bool {
+func DataObserveUser_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataObserveUser_IsConstructParameters(x); err != nil {
@@ -452,7 +451,7 @@ func DataObserveUser_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.dataObserveUser.DataObserveUser",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -460,7 +459,7 @@ func DataObserveUser_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataObserveUser_IsTerraformDataSource(x interface{}) *bool {
+func DataObserveUser_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataObserveUser_IsTerraformDataSourceParameters(x); err != nil {
@@ -471,7 +470,7 @@ func DataObserveUser_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.dataObserveUser.DataObserveUser",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -479,7 +478,7 @@ func DataObserveUser_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataObserveUser_IsTerraformElement(x interface{}) *bool {
+func DataObserveUser_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataObserveUser_IsTerraformElementParameters(x); err != nil {
@@ -490,7 +489,7 @@ func DataObserveUser_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.dataObserveUser.DataObserveUser",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -508,27 +507,27 @@ func DataObserveUser_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataObserveUser) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataObserveUser) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataObserveUser) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataObserveUser) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -544,7 +543,7 @@ func (d *jsiiProxy_DataObserveUser) GetBooleanAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -560,7 +559,7 @@ func (d *jsiiProxy_DataObserveUser) GetBooleanMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -576,7 +575,7 @@ func (d *jsiiProxy_DataObserveUser) GetListAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -592,7 +591,7 @@ func (d *jsiiProxy_DataObserveUser) GetNumberAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -608,7 +607,7 @@ func (d *jsiiProxy_DataObserveUser) GetNumberListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -624,7 +623,7 @@ func (d *jsiiProxy_DataObserveUser) GetNumberMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -640,7 +639,7 @@ func (d *jsiiProxy_DataObserveUser) GetStringAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -656,7 +655,7 @@ func (d *jsiiProxy_DataObserveUser) GetStringMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -672,7 +671,7 @@ func (d *jsiiProxy_DataObserveUser) InterpolationForAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -686,7 +685,7 @@ func (d *jsiiProxy_DataObserveUser) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -714,8 +713,8 @@ func (d *jsiiProxy_DataObserveUser) ResetOverrideLogicalId() {
 	)
 }
 
-func (d *jsiiProxy_DataObserveUser) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataObserveUser) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -727,8 +726,8 @@ func (d *jsiiProxy_DataObserveUser) SynthesizeAttributes() *map[string]interface
 	return returns
 }
 
-func (d *jsiiProxy_DataObserveUser) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataObserveUser) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -740,8 +739,8 @@ func (d *jsiiProxy_DataObserveUser) SynthesizeHclAttributes() *map[string]interf
 	return returns
 }
 
-func (d *jsiiProxy_DataObserveUser) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataObserveUser) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -753,8 +752,8 @@ func (d *jsiiProxy_DataObserveUser) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataObserveUser) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataObserveUser) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -779,8 +778,8 @@ func (d *jsiiProxy_DataObserveUser) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataObserveUser) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataObserveUser) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -791,4 +790,3 @@ func (d *jsiiProxy_DataObserveUser) ToTerraform() interface{} {
 
 	return returns
 }
-

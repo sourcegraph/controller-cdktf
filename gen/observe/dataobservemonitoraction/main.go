@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.dataObserveMonitorAction.DataObserveMonitorAction",
-		reflect.TypeOf((*DataObserveMonitorAction)(nil)).Elem(),
+		reflect.TypeFor[DataObserveMonitorAction](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -61,7 +61,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workspace", GoGetter: "Workspace"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceInput", GoGetter: "WorkspaceInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataObserveMonitorAction{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -69,15 +69,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.dataObserveMonitorAction.DataObserveMonitorActionConfig",
-		reflect.TypeOf((*DataObserveMonitorActionConfig)(nil)).Elem(),
+		reflect.TypeFor[DataObserveMonitorActionConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.dataObserveMonitorAction.DataObserveMonitorActionEmail",
-		reflect.TypeOf((*DataObserveMonitorActionEmail)(nil)).Elem(),
+		reflect.TypeFor[DataObserveMonitorActionEmail](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.dataObserveMonitorAction.DataObserveMonitorActionEmailList",
-		reflect.TypeOf((*DataObserveMonitorActionEmailList)(nil)).Elem(),
+		reflect.TypeFor[DataObserveMonitorActionEmailList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -90,7 +90,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataObserveMonitorActionEmailList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -98,7 +98,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.dataObserveMonitorAction.DataObserveMonitorActionEmailOutputReference",
-		reflect.TypeOf((*DataObserveMonitorActionEmailOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataObserveMonitorActionEmailOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bodyTemplate", GoGetter: "BodyTemplate"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -126,7 +126,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataObserveMonitorActionEmailOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -134,11 +134,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.dataObserveMonitorAction.DataObserveMonitorActionWebhook",
-		reflect.TypeOf((*DataObserveMonitorActionWebhook)(nil)).Elem(),
+		reflect.TypeFor[DataObserveMonitorActionWebhook](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.dataObserveMonitorAction.DataObserveMonitorActionWebhookList",
-		reflect.TypeOf((*DataObserveMonitorActionWebhookList)(nil)).Elem(),
+		reflect.TypeFor[DataObserveMonitorActionWebhookList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -151,7 +151,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataObserveMonitorActionWebhookList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -159,7 +159,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.dataObserveMonitorAction.DataObserveMonitorActionWebhookOutputReference",
-		reflect.TypeOf((*DataObserveMonitorActionWebhookOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataObserveMonitorActionWebhookOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bodyTemplate", GoGetter: "BodyTemplate"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -187,7 +187,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "urlTemplate", GoGetter: "UrlTemplate"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataObserveMonitorActionWebhookOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

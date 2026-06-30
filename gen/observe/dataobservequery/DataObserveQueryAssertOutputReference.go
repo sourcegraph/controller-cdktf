@@ -12,9 +12,9 @@ type DataObserveQueryAssertOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -40,13 +40,13 @@ type DataObserveQueryAssertOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	Update() interface{}
-	SetUpdate(val interface{})
-	UpdateInput() interface{}
+	Update() any
+	SetUpdate(val any)
+	UpdateInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,7 +70,7 @@ type DataObserveQueryAssertOutputReference interface {
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_DataObserveQueryAssertOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataObserveQueryAssertOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataObserveQueryAssertOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -173,8 +173,8 @@ func (j *jsiiProxy_DataObserveQueryAssertOutputReference) TerraformResource() cd
 	return returns
 }
 
-func (j *jsiiProxy_DataObserveQueryAssertOutputReference) Update() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataObserveQueryAssertOutputReference) Update() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"update",
@@ -183,8 +183,8 @@ func (j *jsiiProxy_DataObserveQueryAssertOutputReference) Update() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataObserveQueryAssertOutputReference) UpdateInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataObserveQueryAssertOutputReference) UpdateInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"updateInput",
@@ -192,7 +192,6 @@ func (j *jsiiProxy_DataObserveQueryAssertOutputReference) UpdateInput() interfac
 	)
 	return returns
 }
-
 
 func NewDataObserveQueryAssertOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataObserveQueryAssertOutputReference {
 	_init_.Initialize()
@@ -204,7 +203,7 @@ func NewDataObserveQueryAssertOutputReference(terraformResource cdktf.IInterpola
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.dataObserveQuery.DataObserveQueryAssertOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewDataObserveQueryAssertOutputReference_Override(d DataObserveQueryAssertO
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.dataObserveQuery.DataObserveQueryAssertOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataObserveQueryAssertOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataObserveQueryAssertOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_DataObserveQueryAssertOutputReference)SetComplexObjectIndex(v
 	)
 }
 
-func (j *jsiiProxy_DataObserveQueryAssertOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataObserveQueryAssertOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_DataObserveQueryAssertOutputReference)SetComplexObjectIsFromS
 	)
 }
 
-func (j *jsiiProxy_DataObserveQueryAssertOutputReference)SetGoldenFile(val *string) {
+func (j *jsiiProxy_DataObserveQueryAssertOutputReference) SetGoldenFile(val *string) {
 	if err := j.validateSetGoldenFileParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_DataObserveQueryAssertOutputReference)SetGoldenFile(val *stri
 	)
 }
 
-func (j *jsiiProxy_DataObserveQueryAssertOutputReference)SetInternalValue(val *DataObserveQueryAssert) {
+func (j *jsiiProxy_DataObserveQueryAssertOutputReference) SetInternalValue(val *DataObserveQueryAssert) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_DataObserveQueryAssertOutputReference)SetInternalValue(val *D
 	)
 }
 
-func (j *jsiiProxy_DataObserveQueryAssertOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataObserveQueryAssertOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_DataObserveQueryAssertOutputReference)SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_DataObserveQueryAssertOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataObserveQueryAssertOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_DataObserveQueryAssertOutputReference)SetTerraformResource(va
 	)
 }
 
-func (j *jsiiProxy_DataObserveQueryAssertOutputReference)SetUpdate(val interface{}) {
+func (j *jsiiProxy_DataObserveQueryAssertOutputReference) SetUpdate(val any) {
 	if err := j.validateSetUpdateParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,16 +310,16 @@ func (d *jsiiProxy_DataObserveQueryAssertOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataObserveQueryAssertOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataObserveQueryAssertOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -336,7 +335,7 @@ func (d *jsiiProxy_DataObserveQueryAssertOutputReference) GetBooleanAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -352,7 +351,7 @@ func (d *jsiiProxy_DataObserveQueryAssertOutputReference) GetBooleanMapAttribute
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -368,7 +367,7 @@ func (d *jsiiProxy_DataObserveQueryAssertOutputReference) GetListAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -384,7 +383,7 @@ func (d *jsiiProxy_DataObserveQueryAssertOutputReference) GetNumberAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -400,7 +399,7 @@ func (d *jsiiProxy_DataObserveQueryAssertOutputReference) GetNumberListAttribute
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -416,7 +415,7 @@ func (d *jsiiProxy_DataObserveQueryAssertOutputReference) GetNumberMapAttribute(
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (d *jsiiProxy_DataObserveQueryAssertOutputReference) GetStringAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func (d *jsiiProxy_DataObserveQueryAssertOutputReference) GetStringMapAttribute(
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (d *jsiiProxy_DataObserveQueryAssertOutputReference) InterpolationForAttrib
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -492,16 +491,16 @@ func (d *jsiiProxy_DataObserveQueryAssertOutputReference) ResetUpdate() {
 	)
 }
 
-func (d *jsiiProxy_DataObserveQueryAssertOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataObserveQueryAssertOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (d *jsiiProxy_DataObserveQueryAssertOutputReference) ToString() *string {
 
 	return returns
 }
-

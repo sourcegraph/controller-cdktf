@@ -19,7 +19,7 @@ func (m *jsiiProxy_Monitor) validateAddMoveTargetParameters(moveTarget *string) 
 	return nil
 }
 
-func (m *jsiiProxy_Monitor) validateAddOverrideParameters(path *string, value interface{}) error {
+func (m *jsiiProxy_Monitor) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (m *jsiiProxy_Monitor) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_Monitor) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (m *jsiiProxy_Monitor) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -226,7 +226,7 @@ func (m *jsiiProxy_Monitor) validatePutRuleParameters(value *MonitorRule) error 
 	return nil
 }
 
-func (m *jsiiProxy_Monitor) validatePutStageParameters(value interface{}) error {
+func (m *jsiiProxy_Monitor) validatePutStageParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -273,7 +273,7 @@ func validateMonitor_GenerateConfigForImportParameters(scope constructs.Construc
 	return nil
 }
 
-func validateMonitor_IsConstructParameters(x interface{}) error {
+func validateMonitor_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -281,7 +281,7 @@ func validateMonitor_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateMonitor_IsTerraformElementParameters(x interface{}) error {
+func validateMonitor_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -289,7 +289,7 @@ func validateMonitor_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateMonitor_IsTerraformResourceParameters(x interface{}) error {
+func validateMonitor_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -305,7 +305,7 @@ func (j *jsiiProxy_Monitor) validateSetCommentParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Monitor) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_Monitor) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -338,7 +338,7 @@ func (j *jsiiProxy_Monitor) validateSetConnectionParameters(val interface{}) err
 	return nil
 }
 
-func (j *jsiiProxy_Monitor) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_Monitor) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -411,7 +411,7 @@ func (j *jsiiProxy_Monitor) validateSetDescriptionParameters(val *string) error 
 	return nil
 }
 
-func (j *jsiiProxy_Monitor) validateSetDisabledParameters(val interface{}) error {
+func (j *jsiiProxy_Monitor) validateSetDisabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -463,7 +463,7 @@ func (j *jsiiProxy_Monitor) validateSetInputsParameters(val *map[string]*string)
 	return nil
 }
 
-func (j *jsiiProxy_Monitor) validateSetIsTemplateParameters(val interface{}) error {
+func (j *jsiiProxy_Monitor) validateSetIsTemplateParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -499,7 +499,7 @@ func (j *jsiiProxy_Monitor) validateSetNameParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Monitor) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_Monitor) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -571,4 +571,3 @@ func validateNewMonitorParameters(scope constructs.Construct, id *string, config
 
 	return nil
 }
-

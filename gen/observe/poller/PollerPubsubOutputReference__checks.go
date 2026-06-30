@@ -98,7 +98,7 @@ func (p *jsiiProxy_PollerPubsubOutputReference) validateResolveParameters(_conte
 	return nil
 }
 
-func (j *jsiiProxy_PollerPubsubOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PollerPubsubOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewPollerPubsubOutputReferenceParameters(terraformResource cdktf.II
 
 	return nil
 }
-

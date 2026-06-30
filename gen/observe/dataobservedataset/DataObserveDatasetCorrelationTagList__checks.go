@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataObserveDatasetCorrelationTagList) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveDatasetCorrelationTagList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataObserveDatasetCorrelationTagList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDataObserveDatasetCorrelationTagListParameters(terraformResource
 
 	return nil
 }
-

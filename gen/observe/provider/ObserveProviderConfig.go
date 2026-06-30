@@ -1,6 +1,5 @@
 package provider
 
-
 type ObserveProviderConfig struct {
 	// Your Observe Customer ID.
 	//
@@ -25,7 +24,7 @@ type ObserveProviderConfig struct {
 	// Enable generating object ID-name bindings for cross-tenant export/import (internal use).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs#export_object_bindings ObserveProvider#export_object_bindings}
-	ExportObjectBindings interface{} `field:"optional" json:"exportObjectBindings" yaml:"exportObjectBindings"`
+	ExportObjectBindings any `field:"optional" json:"exportObjectBindings" yaml:"exportObjectBindings"`
 	// Toggle experimental features.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs#flags ObserveProvider#flags}
@@ -37,7 +36,7 @@ type ObserveProviderConfig struct {
 	// Skip TLS certificate validation.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs#insecure ObserveProvider#insecure}
-	Insecure interface{} `field:"optional" json:"insecure" yaml:"insecure"`
+	Insecure any `field:"optional" json:"insecure" yaml:"insecure"`
 	// ID of an Observe object that serves as the parent (managing) object for all resources created by the provider (internal use).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs#managing_object_id ObserveProvider#managing_object_id}
@@ -55,7 +54,7 @@ type ObserveProviderConfig struct {
 	// This can speed up plan time, but means that certain classes of errors will not be detected until applying the changes (such as invalid OPAL).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs#skip_dataset_dry_runs ObserveProvider#skip_dataset_dry_runs}
-	SkipDatasetDryRuns interface{} `field:"optional" json:"skipDatasetDryRuns" yaml:"skipDatasetDryRuns"`
+	SkipDatasetDryRuns any `field:"optional" json:"skipDatasetDryRuns" yaml:"skipDatasetDryRuns"`
 	// Source identifier comment. If null, fallback to `user_email`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs#source_comment ObserveProvider#source_comment}
@@ -73,4 +72,3 @@ type ObserveProviderConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs#user_password ObserveProvider#user_password}
 	UserPassword *string `field:"optional" json:"userPassword" yaml:"userPassword"`
 }
-

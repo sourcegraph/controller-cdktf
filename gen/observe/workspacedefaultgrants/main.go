@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.workspaceDefaultGrants.WorkspaceDefaultGrants",
-		reflect.TypeOf((*WorkspaceDefaultGrants)(nil)).Elem(),
+		reflect.TypeFor[WorkspaceDefaultGrants](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,7 +60,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkspaceDefaultGrants{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -68,15 +68,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.workspaceDefaultGrants.WorkspaceDefaultGrantsConfig",
-		reflect.TypeOf((*WorkspaceDefaultGrantsConfig)(nil)).Elem(),
+		reflect.TypeFor[WorkspaceDefaultGrantsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.workspaceDefaultGrants.WorkspaceDefaultGrantsGroup",
-		reflect.TypeOf((*WorkspaceDefaultGrantsGroup)(nil)).Elem(),
+		reflect.TypeFor[WorkspaceDefaultGrantsGroup](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.workspaceDefaultGrants.WorkspaceDefaultGrantsGroupList",
-		reflect.TypeOf((*WorkspaceDefaultGrantsGroupList)(nil)).Elem(),
+		reflect.TypeFor[WorkspaceDefaultGrantsGroupList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -90,7 +90,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkspaceDefaultGrantsGroupList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -98,7 +98,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.workspaceDefaultGrants.WorkspaceDefaultGrantsGroupOutputReference",
-		reflect.TypeOf((*WorkspaceDefaultGrantsGroupOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WorkspaceDefaultGrantsGroupOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -129,7 +129,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkspaceDefaultGrantsGroupOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

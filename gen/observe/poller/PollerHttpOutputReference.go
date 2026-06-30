@@ -15,9 +15,9 @@ type PollerHttpOutputReference interface {
 	BodyInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -45,9 +45,9 @@ type PollerHttpOutputReference interface {
 	SetMethod(val *string)
 	MethodInput() *string
 	Request() PollerHttpRequestList
-	RequestInput() interface{}
+	RequestInput() any
 	Rule() PollerHttpRuleList
-	RuleInput() interface{}
+	RuleInput() any
 	Template() PollerHttpTemplateOutputReference
 	TemplateInput() *PollerHttpTemplate
 	// Experimental.
@@ -59,11 +59,11 @@ type PollerHttpOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	Timestamp() PollerHttpTimestampList
-	TimestampInput() interface{}
+	TimestampInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -84,10 +84,10 @@ type PollerHttpOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutRequest(value interface{})
-	PutRule(value interface{})
+	PutRequest(value any)
+	PutRule(value any)
 	PutTemplate(value *PollerHttpTemplate)
-	PutTimestamp(value interface{})
+	PutTimestamp(value any)
 	ResetBody()
 	ResetContentType()
 	ResetEndpoint()
@@ -99,7 +99,7 @@ type PollerHttpOutputReference interface {
 	ResetTimestamp()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -132,8 +132,8 @@ func (j *jsiiProxy_PollerHttpOutputReference) BodyInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_PollerHttpOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PollerHttpOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -272,8 +272,8 @@ func (j *jsiiProxy_PollerHttpOutputReference) Request() PollerHttpRequestList {
 	return returns
 }
 
-func (j *jsiiProxy_PollerHttpOutputReference) RequestInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PollerHttpOutputReference) RequestInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requestInput",
@@ -292,8 +292,8 @@ func (j *jsiiProxy_PollerHttpOutputReference) Rule() PollerHttpRuleList {
 	return returns
 }
 
-func (j *jsiiProxy_PollerHttpOutputReference) RuleInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PollerHttpOutputReference) RuleInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ruleInput",
@@ -352,8 +352,8 @@ func (j *jsiiProxy_PollerHttpOutputReference) Timestamp() PollerHttpTimestampLis
 	return returns
 }
 
-func (j *jsiiProxy_PollerHttpOutputReference) TimestampInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PollerHttpOutputReference) TimestampInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timestampInput",
@@ -361,7 +361,6 @@ func (j *jsiiProxy_PollerHttpOutputReference) TimestampInput() interface{} {
 	)
 	return returns
 }
-
 
 func NewPollerHttpOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PollerHttpOutputReference {
 	_init_.Initialize()
@@ -373,7 +372,7 @@ func NewPollerHttpOutputReference(terraformResource cdktf.IInterpolatingParent, 
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.poller.PollerHttpOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -385,12 +384,12 @@ func NewPollerHttpOutputReference_Override(p PollerHttpOutputReference, terrafor
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.poller.PollerHttpOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PollerHttpOutputReference)SetBody(val *string) {
+func (j *jsiiProxy_PollerHttpOutputReference) SetBody(val *string) {
 	if err := j.validateSetBodyParameters(val); err != nil {
 		panic(err)
 	}
@@ -401,7 +400,7 @@ func (j *jsiiProxy_PollerHttpOutputReference)SetBody(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PollerHttpOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PollerHttpOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -412,7 +411,7 @@ func (j *jsiiProxy_PollerHttpOutputReference)SetComplexObjectIndex(val interface
 	)
 }
 
-func (j *jsiiProxy_PollerHttpOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PollerHttpOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -423,7 +422,7 @@ func (j *jsiiProxy_PollerHttpOutputReference)SetComplexObjectIsFromSet(val *bool
 	)
 }
 
-func (j *jsiiProxy_PollerHttpOutputReference)SetContentType(val *string) {
+func (j *jsiiProxy_PollerHttpOutputReference) SetContentType(val *string) {
 	if err := j.validateSetContentTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -434,7 +433,7 @@ func (j *jsiiProxy_PollerHttpOutputReference)SetContentType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PollerHttpOutputReference)SetEndpoint(val *string) {
+func (j *jsiiProxy_PollerHttpOutputReference) SetEndpoint(val *string) {
 	if err := j.validateSetEndpointParameters(val); err != nil {
 		panic(err)
 	}
@@ -445,7 +444,7 @@ func (j *jsiiProxy_PollerHttpOutputReference)SetEndpoint(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PollerHttpOutputReference)SetHeaders(val *map[string]*string) {
+func (j *jsiiProxy_PollerHttpOutputReference) SetHeaders(val *map[string]*string) {
 	if err := j.validateSetHeadersParameters(val); err != nil {
 		panic(err)
 	}
@@ -456,7 +455,7 @@ func (j *jsiiProxy_PollerHttpOutputReference)SetHeaders(val *map[string]*string)
 	)
 }
 
-func (j *jsiiProxy_PollerHttpOutputReference)SetInternalValue(val *PollerHttp) {
+func (j *jsiiProxy_PollerHttpOutputReference) SetInternalValue(val *PollerHttp) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -467,7 +466,7 @@ func (j *jsiiProxy_PollerHttpOutputReference)SetInternalValue(val *PollerHttp) {
 	)
 }
 
-func (j *jsiiProxy_PollerHttpOutputReference)SetMethod(val *string) {
+func (j *jsiiProxy_PollerHttpOutputReference) SetMethod(val *string) {
 	if err := j.validateSetMethodParameters(val); err != nil {
 		panic(err)
 	}
@@ -478,7 +477,7 @@ func (j *jsiiProxy_PollerHttpOutputReference)SetMethod(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PollerHttpOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PollerHttpOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_PollerHttpOutputReference)SetTerraformAttribute(val *string) 
 	)
 }
 
-func (j *jsiiProxy_PollerHttpOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PollerHttpOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -513,16 +512,16 @@ func (p *jsiiProxy_PollerHttpOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (p *jsiiProxy_PollerHttpOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PollerHttpOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func (p *jsiiProxy_PollerHttpOutputReference) GetBooleanAttribute(terraformAttri
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -554,7 +553,7 @@ func (p *jsiiProxy_PollerHttpOutputReference) GetBooleanMapAttribute(terraformAt
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -570,7 +569,7 @@ func (p *jsiiProxy_PollerHttpOutputReference) GetListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -586,7 +585,7 @@ func (p *jsiiProxy_PollerHttpOutputReference) GetNumberAttribute(terraformAttrib
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -602,7 +601,7 @@ func (p *jsiiProxy_PollerHttpOutputReference) GetNumberListAttribute(terraformAt
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -618,7 +617,7 @@ func (p *jsiiProxy_PollerHttpOutputReference) GetNumberMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -634,7 +633,7 @@ func (p *jsiiProxy_PollerHttpOutputReference) GetStringAttribute(terraformAttrib
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -650,7 +649,7 @@ func (p *jsiiProxy_PollerHttpOutputReference) GetStringMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -679,32 +678,32 @@ func (p *jsiiProxy_PollerHttpOutputReference) InterpolationForAttribute(property
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_PollerHttpOutputReference) PutRequest(value interface{}) {
+func (p *jsiiProxy_PollerHttpOutputReference) PutRequest(value any) {
 	if err := p.validatePutRequestParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"putRequest",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (p *jsiiProxy_PollerHttpOutputReference) PutRule(value interface{}) {
+func (p *jsiiProxy_PollerHttpOutputReference) PutRule(value any) {
 	if err := p.validatePutRuleParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"putRule",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -715,18 +714,18 @@ func (p *jsiiProxy_PollerHttpOutputReference) PutTemplate(value *PollerHttpTempl
 	_jsii_.InvokeVoid(
 		p,
 		"putTemplate",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (p *jsiiProxy_PollerHttpOutputReference) PutTimestamp(value interface{}) {
+func (p *jsiiProxy_PollerHttpOutputReference) PutTimestamp(value any) {
 	if err := p.validatePutTimestampParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"putTimestamp",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -802,16 +801,16 @@ func (p *jsiiProxy_PollerHttpOutputReference) ResetTimestamp() {
 	)
 }
 
-func (p *jsiiProxy_PollerHttpOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PollerHttpOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -830,4 +829,3 @@ func (p *jsiiProxy_PollerHttpOutputReference) ToString() *string {
 
 	return returns
 }
-

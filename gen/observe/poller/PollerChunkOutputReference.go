@@ -12,9 +12,9 @@ type PollerChunkOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,9 +25,9 @@ type PollerChunkOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *PollerChunk
@@ -46,7 +46,7 @@ type PollerChunkOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,7 +70,7 @@ type PollerChunkOutputReference interface {
 	ResetSize()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_PollerChunkOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_PollerChunkOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PollerChunkOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -113,8 +113,8 @@ func (j *jsiiProxy_PollerChunkOutputReference) CreationStack() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_PollerChunkOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PollerChunkOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -123,8 +123,8 @@ func (j *jsiiProxy_PollerChunkOutputReference) Enabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PollerChunkOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PollerChunkOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_PollerChunkOutputReference) TerraformResource() cdktf.IInterp
 	return returns
 }
 
-
 func NewPollerChunkOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PollerChunkOutputReference {
 	_init_.Initialize()
 
@@ -204,7 +203,7 @@ func NewPollerChunkOutputReference(terraformResource cdktf.IInterpolatingParent,
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.poller.PollerChunkOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewPollerChunkOutputReference_Override(p PollerChunkOutputReference, terraf
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.poller.PollerChunkOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PollerChunkOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PollerChunkOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_PollerChunkOutputReference)SetComplexObjectIndex(val interfac
 	)
 }
 
-func (j *jsiiProxy_PollerChunkOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PollerChunkOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_PollerChunkOutputReference)SetComplexObjectIsFromSet(val *boo
 	)
 }
 
-func (j *jsiiProxy_PollerChunkOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_PollerChunkOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_PollerChunkOutputReference)SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PollerChunkOutputReference)SetInternalValue(val *PollerChunk) {
+func (j *jsiiProxy_PollerChunkOutputReference) SetInternalValue(val *PollerChunk) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_PollerChunkOutputReference)SetInternalValue(val *PollerChunk)
 	)
 }
 
-func (j *jsiiProxy_PollerChunkOutputReference)SetSize(val *float64) {
+func (j *jsiiProxy_PollerChunkOutputReference) SetSize(val *float64) {
 	if err := j.validateSetSizeParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_PollerChunkOutputReference)SetSize(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_PollerChunkOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PollerChunkOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_PollerChunkOutputReference)SetTerraformAttribute(val *string)
 	)
 }
 
-func (j *jsiiProxy_PollerChunkOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PollerChunkOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,16 +310,16 @@ func (p *jsiiProxy_PollerChunkOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (p *jsiiProxy_PollerChunkOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PollerChunkOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -336,7 +335,7 @@ func (p *jsiiProxy_PollerChunkOutputReference) GetBooleanAttribute(terraformAttr
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -352,7 +351,7 @@ func (p *jsiiProxy_PollerChunkOutputReference) GetBooleanMapAttribute(terraformA
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -368,7 +367,7 @@ func (p *jsiiProxy_PollerChunkOutputReference) GetListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -384,7 +383,7 @@ func (p *jsiiProxy_PollerChunkOutputReference) GetNumberAttribute(terraformAttri
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -400,7 +399,7 @@ func (p *jsiiProxy_PollerChunkOutputReference) GetNumberListAttribute(terraformA
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -416,7 +415,7 @@ func (p *jsiiProxy_PollerChunkOutputReference) GetNumberMapAttribute(terraformAt
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (p *jsiiProxy_PollerChunkOutputReference) GetStringAttribute(terraformAttri
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func (p *jsiiProxy_PollerChunkOutputReference) GetStringMapAttribute(terraformAt
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (p *jsiiProxy_PollerChunkOutputReference) InterpolationForAttribute(propert
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -492,16 +491,16 @@ func (p *jsiiProxy_PollerChunkOutputReference) ResetSize() {
 	)
 }
 
-func (p *jsiiProxy_PollerChunkOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PollerChunkOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (p *jsiiProxy_PollerChunkOutputReference) ToString() *string {
 
 	return returns
 }
-

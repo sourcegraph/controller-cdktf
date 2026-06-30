@@ -18,15 +18,15 @@ type ChannelAction interface {
 	SetChannels(val *[]*string)
 	ChannelsInput() *[]*string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -59,27 +59,27 @@ type ChannelAction interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
-	NotifyOnClose() interface{}
-	SetNotifyOnClose(val interface{})
-	NotifyOnCloseInput() interface{}
+	NotifyOnClose() any
+	SetNotifyOnClose(val any)
+	NotifyOnCloseInput() any
 	Oid() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	RateLimit() *string
 	SetRateLimit(val *string)
 	RateLimitInput() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Webhook() ChannelActionWebhookOutputReference
@@ -91,9 +91,9 @@ type ChannelAction interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -111,7 +111,7 @@ type ChannelAction interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -123,7 +123,7 @@ type ChannelAction interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -143,17 +143,17 @@ type ChannelAction interface {
 	ResetOverrideLogicalId()
 	ResetRateLimit()
 	ResetWebhook()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ChannelAction
@@ -191,8 +191,8 @@ func (j *jsiiProxy_ChannelAction) ChannelsInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_ChannelAction) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ChannelAction) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -201,8 +201,8 @@ func (j *jsiiProxy_ChannelAction) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ChannelAction) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ChannelAction) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -211,8 +211,8 @@ func (j *jsiiProxy_ChannelAction) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_ChannelAction) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ChannelAction) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -381,8 +381,8 @@ func (j *jsiiProxy_ChannelAction) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_ChannelAction) NotifyOnClose() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ChannelAction) NotifyOnClose() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"notifyOnClose",
@@ -391,8 +391,8 @@ func (j *jsiiProxy_ChannelAction) NotifyOnClose() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ChannelAction) NotifyOnCloseInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ChannelAction) NotifyOnCloseInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"notifyOnCloseInput",
@@ -421,8 +421,8 @@ func (j *jsiiProxy_ChannelAction) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ChannelAction) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ChannelAction) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -451,8 +451,8 @@ func (j *jsiiProxy_ChannelAction) RateLimitInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ChannelAction) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ChannelAction) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -471,8 +471,8 @@ func (j *jsiiProxy_ChannelAction) TerraformGeneratorMetadata() *cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_ChannelAction) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ChannelAction) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -531,7 +531,6 @@ func (j *jsiiProxy_ChannelAction) WorkspaceInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/channel_action observe_channel_action} Resource.
 func NewChannelAction(scope constructs.Construct, id *string, config *ChannelActionConfig) ChannelAction {
 	_init_.Initialize()
@@ -543,7 +542,7 @@ func NewChannelAction(scope constructs.Construct, id *string, config *ChannelAct
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.channelAction.ChannelAction",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -556,12 +555,12 @@ func NewChannelAction_Override(c ChannelAction, scope constructs.Construct, id *
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.channelAction.ChannelAction",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ChannelAction)SetChannels(val *[]*string) {
+func (j *jsiiProxy_ChannelAction) SetChannels(val *[]*string) {
 	if err := j.validateSetChannelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -572,7 +571,7 @@ func (j *jsiiProxy_ChannelAction)SetChannels(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ChannelAction)SetConnection(val interface{}) {
+func (j *jsiiProxy_ChannelAction) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -583,7 +582,7 @@ func (j *jsiiProxy_ChannelAction)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ChannelAction)SetCount(val interface{}) {
+func (j *jsiiProxy_ChannelAction) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -594,7 +593,7 @@ func (j *jsiiProxy_ChannelAction)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ChannelAction)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ChannelAction) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -602,7 +601,7 @@ func (j *jsiiProxy_ChannelAction)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ChannelAction)SetDescription(val *string) {
+func (j *jsiiProxy_ChannelAction) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -613,7 +612,7 @@ func (j *jsiiProxy_ChannelAction)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ChannelAction)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ChannelAction) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -621,7 +620,7 @@ func (j *jsiiProxy_ChannelAction)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ChannelAction)SetIconUrl(val *string) {
+func (j *jsiiProxy_ChannelAction) SetIconUrl(val *string) {
 	if err := j.validateSetIconUrlParameters(val); err != nil {
 		panic(err)
 	}
@@ -632,7 +631,7 @@ func (j *jsiiProxy_ChannelAction)SetIconUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ChannelAction)SetId(val *string) {
+func (j *jsiiProxy_ChannelAction) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -643,7 +642,7 @@ func (j *jsiiProxy_ChannelAction)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ChannelAction)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ChannelAction) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -654,7 +653,7 @@ func (j *jsiiProxy_ChannelAction)SetLifecycle(val *cdktf.TerraformResourceLifecy
 	)
 }
 
-func (j *jsiiProxy_ChannelAction)SetName(val *string) {
+func (j *jsiiProxy_ChannelAction) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -665,7 +664,7 @@ func (j *jsiiProxy_ChannelAction)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ChannelAction)SetNotifyOnClose(val interface{}) {
+func (j *jsiiProxy_ChannelAction) SetNotifyOnClose(val any) {
 	if err := j.validateSetNotifyOnCloseParameters(val); err != nil {
 		panic(err)
 	}
@@ -676,7 +675,7 @@ func (j *jsiiProxy_ChannelAction)SetNotifyOnClose(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ChannelAction)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ChannelAction) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -684,7 +683,7 @@ func (j *jsiiProxy_ChannelAction)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_ChannelAction)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ChannelAction) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -695,7 +694,7 @@ func (j *jsiiProxy_ChannelAction)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ChannelAction)SetRateLimit(val *string) {
+func (j *jsiiProxy_ChannelAction) SetRateLimit(val *string) {
 	if err := j.validateSetRateLimitParameters(val); err != nil {
 		panic(err)
 	}
@@ -706,7 +705,7 @@ func (j *jsiiProxy_ChannelAction)SetRateLimit(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ChannelAction)SetWorkspace(val *string) {
+func (j *jsiiProxy_ChannelAction) SetWorkspace(val *string) {
 	if err := j.validateSetWorkspaceParameters(val); err != nil {
 		panic(err)
 	}
@@ -729,7 +728,7 @@ func ChannelAction_GenerateConfigForImport(scope constructs.Construct, importToI
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.channelAction.ChannelAction",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -753,7 +752,7 @@ func ChannelAction_GenerateConfigForImport(scope constructs.Construct, importToI
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ChannelAction_IsConstruct(x interface{}) *bool {
+func ChannelAction_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateChannelAction_IsConstructParameters(x); err != nil {
@@ -764,7 +763,7 @@ func ChannelAction_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.channelAction.ChannelAction",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -772,7 +771,7 @@ func ChannelAction_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ChannelAction_IsTerraformElement(x interface{}) *bool {
+func ChannelAction_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateChannelAction_IsTerraformElementParameters(x); err != nil {
@@ -783,7 +782,7 @@ func ChannelAction_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.channelAction.ChannelAction",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -791,7 +790,7 @@ func ChannelAction_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ChannelAction_IsTerraformResource(x interface{}) *bool {
+func ChannelAction_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateChannelAction_IsTerraformResourceParameters(x); err != nil {
@@ -802,7 +801,7 @@ func ChannelAction_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.channelAction.ChannelAction",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -827,31 +826,31 @@ func (c *jsiiProxy_ChannelAction) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_ChannelAction) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_ChannelAction) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_ChannelAction) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ChannelAction) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -867,7 +866,7 @@ func (c *jsiiProxy_ChannelAction) GetBooleanAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -883,7 +882,7 @@ func (c *jsiiProxy_ChannelAction) GetBooleanMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -899,7 +898,7 @@ func (c *jsiiProxy_ChannelAction) GetListAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -915,7 +914,7 @@ func (c *jsiiProxy_ChannelAction) GetNumberAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -931,7 +930,7 @@ func (c *jsiiProxy_ChannelAction) GetNumberListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -947,7 +946,7 @@ func (c *jsiiProxy_ChannelAction) GetNumberMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -963,7 +962,7 @@ func (c *jsiiProxy_ChannelAction) GetStringAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -979,15 +978,15 @@ func (c *jsiiProxy_ChannelAction) GetStringMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ChannelAction) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ChannelAction) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1006,7 +1005,7 @@ func (c *jsiiProxy_ChannelAction) ImportFrom(id *string, provider cdktf.Terrafor
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1019,7 +1018,7 @@ func (c *jsiiProxy_ChannelAction) InterpolationForAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1033,18 +1032,18 @@ func (c *jsiiProxy_ChannelAction) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_ChannelAction) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_ChannelAction) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1055,7 +1054,7 @@ func (c *jsiiProxy_ChannelAction) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1066,7 +1065,7 @@ func (c *jsiiProxy_ChannelAction) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1077,7 +1076,7 @@ func (c *jsiiProxy_ChannelAction) PutEmail(value *ChannelActionEmail) {
 	_jsii_.InvokeVoid(
 		c,
 		"putEmail",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1088,7 +1087,7 @@ func (c *jsiiProxy_ChannelAction) PutWebhook(value *ChannelActionWebhook) {
 	_jsii_.InvokeVoid(
 		c,
 		"putWebhook",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1164,8 +1163,8 @@ func (c *jsiiProxy_ChannelAction) ResetWebhook() {
 	)
 }
 
-func (c *jsiiProxy_ChannelAction) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ChannelAction) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1177,8 +1176,8 @@ func (c *jsiiProxy_ChannelAction) SynthesizeAttributes() *map[string]interface{}
 	return returns
 }
 
-func (c *jsiiProxy_ChannelAction) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ChannelAction) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1190,8 +1189,8 @@ func (c *jsiiProxy_ChannelAction) SynthesizeHclAttributes() *map[string]interfac
 	return returns
 }
 
-func (c *jsiiProxy_ChannelAction) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ChannelAction) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1203,8 +1202,8 @@ func (c *jsiiProxy_ChannelAction) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_ChannelAction) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ChannelAction) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1229,8 +1228,8 @@ func (c *jsiiProxy_ChannelAction) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_ChannelAction) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ChannelAction) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1241,4 +1240,3 @@ func (c *jsiiProxy_ChannelAction) ToTerraform() interface{} {
 
 	return returns
 }
-

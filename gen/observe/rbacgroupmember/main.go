@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.rbacGroupMember.RbacGroupMember",
-		reflect.TypeOf((*RbacGroupMember)(nil)).Elem(),
+		reflect.TypeFor[RbacGroupMember](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,7 +65,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RbacGroupMember{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -73,15 +73,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.rbacGroupMember.RbacGroupMemberConfig",
-		reflect.TypeOf((*RbacGroupMemberConfig)(nil)).Elem(),
+		reflect.TypeFor[RbacGroupMemberConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.rbacGroupMember.RbacGroupMemberMember",
-		reflect.TypeOf((*RbacGroupMemberMember)(nil)).Elem(),
+		reflect.TypeFor[RbacGroupMemberMember](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.rbacGroupMember.RbacGroupMemberMemberOutputReference",
-		reflect.TypeOf((*RbacGroupMemberMemberOutputReference)(nil)).Elem(),
+		reflect.TypeFor[RbacGroupMemberMemberOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -111,7 +111,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "user", GoGetter: "User"},
 			_jsii_.MemberProperty{JsiiProperty: "userInput", GoGetter: "UserInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RbacGroupMemberMemberOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

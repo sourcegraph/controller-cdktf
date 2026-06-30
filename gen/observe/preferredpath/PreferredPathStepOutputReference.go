@@ -12,9 +12,9 @@ type PreferredPathStepOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,20 +27,20 @@ type PreferredPathStepOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Link() *string
 	SetLink(val *string)
 	LinkInput() *string
 	LinkLabel() *string
 	SetLinkLabel(val *string)
 	LinkLabelInput() *string
-	Reverse() interface{}
-	SetReverse(val interface{})
+	Reverse() any
+	SetReverse(val any)
 	ReverseFrom() *string
 	SetReverseFrom(val *string)
 	ReverseFromInput() *string
-	ReverseInput() interface{}
+	ReverseInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -52,7 +52,7 @@ type PreferredPathStepOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type PreferredPathStepOutputReference interface {
 	ResetReverseFrom()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,8 +92,8 @@ type jsiiProxy_PreferredPathStepOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_PreferredPathStepOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PreferredPathStepOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -132,8 +132,8 @@ func (j *jsiiProxy_PreferredPathStepOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_PreferredPathStepOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PreferredPathStepOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -182,8 +182,8 @@ func (j *jsiiProxy_PreferredPathStepOutputReference) LinkLabelInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_PreferredPathStepOutputReference) Reverse() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PreferredPathStepOutputReference) Reverse() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"reverse",
@@ -212,8 +212,8 @@ func (j *jsiiProxy_PreferredPathStepOutputReference) ReverseFromInput() *string 
 	return returns
 }
 
-func (j *jsiiProxy_PreferredPathStepOutputReference) ReverseInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PreferredPathStepOutputReference) ReverseInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"reverseInput",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_PreferredPathStepOutputReference) TerraformResource() cdktf.I
 	return returns
 }
 
-
 func NewPreferredPathStepOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) PreferredPathStepOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewPreferredPathStepOutputReference(terraformResource cdktf.IInterpolatingP
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.preferredPath.PreferredPathStepOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewPreferredPathStepOutputReference_Override(p PreferredPathStepOutputRefer
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.preferredPath.PreferredPathStepOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PreferredPathStepOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PreferredPathStepOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_PreferredPathStepOutputReference)SetComplexObjectIndex(val in
 	)
 }
 
-func (j *jsiiProxy_PreferredPathStepOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PreferredPathStepOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_PreferredPathStepOutputReference)SetComplexObjectIsFromSet(va
 	)
 }
 
-func (j *jsiiProxy_PreferredPathStepOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_PreferredPathStepOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_PreferredPathStepOutputReference)SetInternalValue(val interfa
 	)
 }
 
-func (j *jsiiProxy_PreferredPathStepOutputReference)SetLink(val *string) {
+func (j *jsiiProxy_PreferredPathStepOutputReference) SetLink(val *string) {
 	if err := j.validateSetLinkParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_PreferredPathStepOutputReference)SetLink(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PreferredPathStepOutputReference)SetLinkLabel(val *string) {
+func (j *jsiiProxy_PreferredPathStepOutputReference) SetLinkLabel(val *string) {
 	if err := j.validateSetLinkLabelParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_PreferredPathStepOutputReference)SetLinkLabel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PreferredPathStepOutputReference)SetReverse(val interface{}) {
+func (j *jsiiProxy_PreferredPathStepOutputReference) SetReverse(val any) {
 	if err := j.validateSetReverseParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_PreferredPathStepOutputReference)SetReverse(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_PreferredPathStepOutputReference)SetReverseFrom(val *string) {
+func (j *jsiiProxy_PreferredPathStepOutputReference) SetReverseFrom(val *string) {
 	if err := j.validateSetReverseFromParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_PreferredPathStepOutputReference)SetReverseFrom(val *string) 
 	)
 }
 
-func (j *jsiiProxy_PreferredPathStepOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PreferredPathStepOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_PreferredPathStepOutputReference)SetTerraformAttribute(val *s
 	)
 }
 
-func (j *jsiiProxy_PreferredPathStepOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PreferredPathStepOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,16 +381,16 @@ func (p *jsiiProxy_PreferredPathStepOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (p *jsiiProxy_PreferredPathStepOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PreferredPathStepOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -407,7 +406,7 @@ func (p *jsiiProxy_PreferredPathStepOutputReference) GetBooleanAttribute(terrafo
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -423,7 +422,7 @@ func (p *jsiiProxy_PreferredPathStepOutputReference) GetBooleanMapAttribute(terr
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -439,7 +438,7 @@ func (p *jsiiProxy_PreferredPathStepOutputReference) GetListAttribute(terraformA
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -455,7 +454,7 @@ func (p *jsiiProxy_PreferredPathStepOutputReference) GetNumberAttribute(terrafor
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -471,7 +470,7 @@ func (p *jsiiProxy_PreferredPathStepOutputReference) GetNumberListAttribute(terr
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -487,7 +486,7 @@ func (p *jsiiProxy_PreferredPathStepOutputReference) GetNumberMapAttribute(terra
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func (p *jsiiProxy_PreferredPathStepOutputReference) GetStringAttribute(terrafor
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func (p *jsiiProxy_PreferredPathStepOutputReference) GetStringMapAttribute(terra
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func (p *jsiiProxy_PreferredPathStepOutputReference) InterpolationForAttribute(p
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -587,16 +586,16 @@ func (p *jsiiProxy_PreferredPathStepOutputReference) ResetReverseFrom() {
 	)
 }
 
-func (p *jsiiProxy_PreferredPathStepOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PreferredPathStepOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (p *jsiiProxy_PreferredPathStepOutputReference) ToString() *string {
 
 	return returns
 }
-

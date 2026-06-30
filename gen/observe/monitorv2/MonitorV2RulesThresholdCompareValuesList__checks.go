@@ -34,7 +34,7 @@ func (m *jsiiProxy_MonitorV2RulesThresholdCompareValuesList) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_MonitorV2RulesThresholdCompareValuesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MonitorV2RulesThresholdCompareValuesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewMonitorV2RulesThresholdCompareValuesListParameters(terraformReso
 
 	return nil
 }
-

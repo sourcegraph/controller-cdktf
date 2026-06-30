@@ -98,7 +98,7 @@ func (p *jsiiProxy_PollerChunkOutputReference) validateResolveParameters(_contex
 	return nil
 }
 
-func (j *jsiiProxy_PollerChunkOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PollerChunkOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_PollerChunkOutputReference) validateSetComplexObjectIsFromSet
 	return nil
 }
 
-func (j *jsiiProxy_PollerChunkOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_PollerChunkOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -226,4 +226,3 @@ func validateNewPollerChunkOutputReferenceParameters(terraformResource cdktf.IIn
 
 	return nil
 }
-

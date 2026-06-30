@@ -36,7 +36,7 @@ type FiledropEndpointS3List interface {
 	Get(index *float64) FiledropEndpointS3OutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_FiledropEndpointS3List) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewFiledropEndpointS3List(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FiledropEndpointS3List {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewFiledropEndpointS3List(terraformResource cdktf.IInterpolatingParent, ter
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.filedrop.FiledropEndpointS3List",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewFiledropEndpointS3List_Override(f FiledropEndpointS3List, terraformResou
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.filedrop.FiledropEndpointS3List",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		f,
 	)
 }
 
-func (j *jsiiProxy_FiledropEndpointS3List)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_FiledropEndpointS3List) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_FiledropEndpointS3List)SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FiledropEndpointS3List)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_FiledropEndpointS3List) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_FiledropEndpointS3List)SetTerraformResource(val cdktf.IInterp
 	)
 }
 
-func (j *jsiiProxy_FiledropEndpointS3List)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_FiledropEndpointS3List) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (f *jsiiProxy_FiledropEndpointS3List) AllWithMapKey(mapKeyAttributeName *st
 	_jsii_.Invoke(
 		f,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (f *jsiiProxy_FiledropEndpointS3List) Get(index *float64) FiledropEndpointS
 	_jsii_.Invoke(
 		f,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (f *jsiiProxy_FiledropEndpointS3List) Resolve(_context cdktf.IResolveContext) interface{} {
+func (f *jsiiProxy_FiledropEndpointS3List) Resolve(_context cdktf.IResolveContext) any {
 	if err := f.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		f,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (f *jsiiProxy_FiledropEndpointS3List) ToString() *string {
 
 	return returns
 }
-
