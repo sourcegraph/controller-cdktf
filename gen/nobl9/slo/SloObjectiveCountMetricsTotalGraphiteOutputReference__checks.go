@@ -98,7 +98,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsTotalGraphiteOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsTotalGraphiteOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsTotalGraphiteOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsTotalGraphiteOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsTotalGraphiteOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsTotalGraphiteOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewSloObjectiveCountMetricsTotalGraphiteOutputReferenceParameters(t
 
 	return nil
 }
-

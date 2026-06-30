@@ -98,7 +98,7 @@ func (b *jsiiProxy_BudgetAdjustmentFiltersSlosSloOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_BudgetAdjustmentFiltersSlosSloOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BudgetAdjustmentFiltersSlosSloOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_BudgetAdjustmentFiltersSlosSloOutputReference) validateSetCom
 	return nil
 }
 
-func (j *jsiiProxy_BudgetAdjustmentFiltersSlosSloOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BudgetAdjustmentFiltersSlosSloOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewBudgetAdjustmentFiltersSlosSloOutputReferenceParameters(terrafor
 
 	return nil
 }
-

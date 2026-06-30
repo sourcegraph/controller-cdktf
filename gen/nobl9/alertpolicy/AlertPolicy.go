@@ -13,27 +13,27 @@ import (
 type AlertPolicy interface {
 	cdktf.TerraformResource
 	AlertMethod() AlertPolicyAlertMethodList
-	AlertMethodInput() interface{}
+	AlertMethodInput() any
 	Annotations() *map[string]*string
 	SetAnnotations(val *map[string]*string)
 	AnnotationsInput() *map[string]*string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Condition() AlertPolicyConditionList
-	ConditionInput() interface{}
+	ConditionInput() any
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	Cooldown() *string
 	SetCooldown(val *string)
 	CooldownInput() *string
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -72,27 +72,27 @@ type AlertPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Severity() *string
 	SetSeverity(val *string)
 	SeverityInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -110,7 +110,7 @@ type AlertPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -122,15 +122,15 @@ type AlertPolicy interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutAlertMethod(value interface{})
-	PutCondition(value interface{})
+	PutAlertMethod(value any)
+	PutCondition(value any)
 	ResetAlertMethod()
 	ResetAnnotations()
 	ResetCooldown()
@@ -140,17 +140,17 @@ type AlertPolicy interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for AlertPolicy
@@ -168,8 +168,8 @@ func (j *jsiiProxy_AlertPolicy) AlertMethod() AlertPolicyAlertMethodList {
 	return returns
 }
 
-func (j *jsiiProxy_AlertPolicy) AlertMethodInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlertPolicy) AlertMethodInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"alertMethodInput",
@@ -218,8 +218,8 @@ func (j *jsiiProxy_AlertPolicy) Condition() AlertPolicyConditionList {
 	return returns
 }
 
-func (j *jsiiProxy_AlertPolicy) ConditionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlertPolicy) ConditionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"conditionInput",
@@ -228,8 +228,8 @@ func (j *jsiiProxy_AlertPolicy) ConditionInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AlertPolicy) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlertPolicy) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -238,8 +238,8 @@ func (j *jsiiProxy_AlertPolicy) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AlertPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AlertPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -268,8 +268,8 @@ func (j *jsiiProxy_AlertPolicy) CooldownInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AlertPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlertPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -448,8 +448,8 @@ func (j *jsiiProxy_AlertPolicy) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_AlertPolicy) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_AlertPolicy) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -458,8 +458,8 @@ func (j *jsiiProxy_AlertPolicy) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AlertPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlertPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -498,8 +498,8 @@ func (j *jsiiProxy_AlertPolicy) TerraformGeneratorMetadata() *cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_AlertPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AlertPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -518,7 +518,6 @@ func (j *jsiiProxy_AlertPolicy) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/alert_policy nobl9_alert_policy} Resource.
 func NewAlertPolicy(scope constructs.Construct, id *string, config *AlertPolicyConfig) AlertPolicy {
 	_init_.Initialize()
@@ -530,7 +529,7 @@ func NewAlertPolicy(scope constructs.Construct, id *string, config *AlertPolicyC
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.alertPolicy.AlertPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -543,12 +542,12 @@ func NewAlertPolicy_Override(a AlertPolicy, scope constructs.Construct, id *stri
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.alertPolicy.AlertPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AlertPolicy)SetAnnotations(val *map[string]*string) {
+func (j *jsiiProxy_AlertPolicy) SetAnnotations(val *map[string]*string) {
 	if err := j.validateSetAnnotationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -559,7 +558,7 @@ func (j *jsiiProxy_AlertPolicy)SetAnnotations(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_AlertPolicy)SetConnection(val interface{}) {
+func (j *jsiiProxy_AlertPolicy) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -570,7 +569,7 @@ func (j *jsiiProxy_AlertPolicy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AlertPolicy)SetCooldown(val *string) {
+func (j *jsiiProxy_AlertPolicy) SetCooldown(val *string) {
 	if err := j.validateSetCooldownParameters(val); err != nil {
 		panic(err)
 	}
@@ -581,7 +580,7 @@ func (j *jsiiProxy_AlertPolicy)SetCooldown(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AlertPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_AlertPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -592,7 +591,7 @@ func (j *jsiiProxy_AlertPolicy)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AlertPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_AlertPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -600,7 +599,7 @@ func (j *jsiiProxy_AlertPolicy)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AlertPolicy)SetDescription(val *string) {
+func (j *jsiiProxy_AlertPolicy) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -611,7 +610,7 @@ func (j *jsiiProxy_AlertPolicy)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AlertPolicy)SetDisplayName(val *string) {
+func (j *jsiiProxy_AlertPolicy) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -622,7 +621,7 @@ func (j *jsiiProxy_AlertPolicy)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AlertPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AlertPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -630,7 +629,7 @@ func (j *jsiiProxy_AlertPolicy)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_AlertPolicy)SetId(val *string) {
+func (j *jsiiProxy_AlertPolicy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -641,7 +640,7 @@ func (j *jsiiProxy_AlertPolicy)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AlertPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AlertPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -652,7 +651,7 @@ func (j *jsiiProxy_AlertPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycl
 	)
 }
 
-func (j *jsiiProxy_AlertPolicy)SetName(val *string) {
+func (j *jsiiProxy_AlertPolicy) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -663,7 +662,7 @@ func (j *jsiiProxy_AlertPolicy)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AlertPolicy)SetProject(val *string) {
+func (j *jsiiProxy_AlertPolicy) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -674,7 +673,7 @@ func (j *jsiiProxy_AlertPolicy)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AlertPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AlertPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -682,7 +681,7 @@ func (j *jsiiProxy_AlertPolicy)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_AlertPolicy)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_AlertPolicy) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -693,7 +692,7 @@ func (j *jsiiProxy_AlertPolicy)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AlertPolicy)SetSeverity(val *string) {
+func (j *jsiiProxy_AlertPolicy) SetSeverity(val *string) {
 	if err := j.validateSetSeverityParameters(val); err != nil {
 		panic(err)
 	}
@@ -716,7 +715,7 @@ func AlertPolicy_GenerateConfigForImport(scope constructs.Construct, importToId 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-nobl9.alertPolicy.AlertPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -740,7 +739,7 @@ func AlertPolicy_GenerateConfigForImport(scope constructs.Construct, importToId 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func AlertPolicy_IsConstruct(x interface{}) *bool {
+func AlertPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAlertPolicy_IsConstructParameters(x); err != nil {
@@ -751,7 +750,7 @@ func AlertPolicy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-nobl9.alertPolicy.AlertPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -759,7 +758,7 @@ func AlertPolicy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func AlertPolicy_IsTerraformElement(x interface{}) *bool {
+func AlertPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAlertPolicy_IsTerraformElementParameters(x); err != nil {
@@ -770,7 +769,7 @@ func AlertPolicy_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-nobl9.alertPolicy.AlertPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -778,7 +777,7 @@ func AlertPolicy_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func AlertPolicy_IsTerraformResource(x interface{}) *bool {
+func AlertPolicy_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAlertPolicy_IsTerraformResourceParameters(x); err != nil {
@@ -789,7 +788,7 @@ func AlertPolicy_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-nobl9.alertPolicy.AlertPolicy",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -814,31 +813,31 @@ func (a *jsiiProxy_AlertPolicy) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_AlertPolicy) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_AlertPolicy) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_AlertPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AlertPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -854,7 +853,7 @@ func (a *jsiiProxy_AlertPolicy) GetBooleanAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -870,7 +869,7 @@ func (a *jsiiProxy_AlertPolicy) GetBooleanMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -886,7 +885,7 @@ func (a *jsiiProxy_AlertPolicy) GetListAttribute(terraformAttribute *string) *[]
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -902,7 +901,7 @@ func (a *jsiiProxy_AlertPolicy) GetNumberAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -918,7 +917,7 @@ func (a *jsiiProxy_AlertPolicy) GetNumberListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -934,7 +933,7 @@ func (a *jsiiProxy_AlertPolicy) GetNumberMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -950,7 +949,7 @@ func (a *jsiiProxy_AlertPolicy) GetStringAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -966,15 +965,15 @@ func (a *jsiiProxy_AlertPolicy) GetStringMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AlertPolicy) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AlertPolicy) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -993,7 +992,7 @@ func (a *jsiiProxy_AlertPolicy) ImportFrom(id *string, provider cdktf.TerraformP
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1006,7 +1005,7 @@ func (a *jsiiProxy_AlertPolicy) InterpolationForAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1020,18 +1019,18 @@ func (a *jsiiProxy_AlertPolicy) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_AlertPolicy) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_AlertPolicy) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1042,7 +1041,7 @@ func (a *jsiiProxy_AlertPolicy) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1053,29 +1052,29 @@ func (a *jsiiProxy_AlertPolicy) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (a *jsiiProxy_AlertPolicy) PutAlertMethod(value interface{}) {
+func (a *jsiiProxy_AlertPolicy) PutAlertMethod(value any) {
 	if err := a.validatePutAlertMethodParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"putAlertMethod",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (a *jsiiProxy_AlertPolicy) PutCondition(value interface{}) {
+func (a *jsiiProxy_AlertPolicy) PutCondition(value any) {
 	if err := a.validatePutConditionParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"putCondition",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1135,8 +1134,8 @@ func (a *jsiiProxy_AlertPolicy) ResetOverrideLogicalId() {
 	)
 }
 
-func (a *jsiiProxy_AlertPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AlertPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1148,8 +1147,8 @@ func (a *jsiiProxy_AlertPolicy) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_AlertPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AlertPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1161,8 +1160,8 @@ func (a *jsiiProxy_AlertPolicy) SynthesizeHclAttributes() *map[string]interface{
 	return returns
 }
 
-func (a *jsiiProxy_AlertPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AlertPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1174,8 +1173,8 @@ func (a *jsiiProxy_AlertPolicy) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_AlertPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AlertPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1200,8 +1199,8 @@ func (a *jsiiProxy_AlertPolicy) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_AlertPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AlertPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1212,4 +1211,3 @@ func (a *jsiiProxy_AlertPolicy) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -34,7 +34,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodRedshiftList) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodRedshiftList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodRedshiftList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSloObjectiveCountMetricsGoodRedshiftListParameters(terraformReso
 
 	return nil
 }
-

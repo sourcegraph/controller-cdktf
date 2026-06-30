@@ -19,7 +19,7 @@ func (a *jsiiProxy_AlertMethodOpsgenie) validateAddMoveTargetParameters(moveTarg
 	return nil
 }
 
-func (a *jsiiProxy_AlertMethodOpsgenie) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_AlertMethodOpsgenie) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_AlertMethodOpsgenie) validateMoveFromIdParameters(id *string)
 	return nil
 }
 
-func (a *jsiiProxy_AlertMethodOpsgenie) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_AlertMethodOpsgenie) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateAlertMethodOpsgenie_GenerateConfigForImportParameters(scope constru
 	return nil
 }
 
-func validateAlertMethodOpsgenie_IsConstructParameters(x interface{}) error {
+func validateAlertMethodOpsgenie_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateAlertMethodOpsgenie_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateAlertMethodOpsgenie_IsTerraformElementParameters(x interface{}) error {
+func validateAlertMethodOpsgenie_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateAlertMethodOpsgenie_IsTerraformElementParameters(x interface{}) err
 	return nil
 }
 
-func validateAlertMethodOpsgenie_IsTerraformResourceParameters(x interface{}) error {
+func validateAlertMethodOpsgenie_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_AlertMethodOpsgenie) validateSetAuthParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_AlertMethodOpsgenie) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_AlertMethodOpsgenie) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_AlertMethodOpsgenie) validateSetConnectionParameters(val inte
 	return nil
 }
 
-func (j *jsiiProxy_AlertMethodOpsgenie) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_AlertMethodOpsgenie) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -390,7 +390,7 @@ func (j *jsiiProxy_AlertMethodOpsgenie) validateSetProjectParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_AlertMethodOpsgenie) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_AlertMethodOpsgenie) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -462,4 +462,3 @@ func validateNewAlertMethodOpsgenieParameters(scope constructs.Construct, id *st
 
 	return nil
 }
-

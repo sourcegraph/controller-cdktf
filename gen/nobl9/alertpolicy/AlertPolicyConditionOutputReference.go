@@ -15,9 +15,9 @@ type AlertPolicyConditionOutputReference interface {
 	AlertingWindowInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,8 +30,8 @@ type AlertPolicyConditionOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	LastsFor() *string
 	SetLastsFor(val *string)
 	LastsForInput() *string
@@ -58,7 +58,7 @@ type AlertPolicyConditionOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -86,7 +86,7 @@ type AlertPolicyConditionOutputReference interface {
 	ResetValueString()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -119,8 +119,8 @@ func (j *jsiiProxy_AlertPolicyConditionOutputReference) AlertingWindowInput() *s
 	return returns
 }
 
-func (j *jsiiProxy_AlertPolicyConditionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlertPolicyConditionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -159,8 +159,8 @@ func (j *jsiiProxy_AlertPolicyConditionOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AlertPolicyConditionOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlertPolicyConditionOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -289,7 +289,6 @@ func (j *jsiiProxy_AlertPolicyConditionOutputReference) ValueStringInput() *stri
 	return returns
 }
 
-
 func NewAlertPolicyConditionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AlertPolicyConditionOutputReference {
 	_init_.Initialize()
 
@@ -300,7 +299,7 @@ func NewAlertPolicyConditionOutputReference(terraformResource cdktf.IInterpolati
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.alertPolicy.AlertPolicyConditionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -312,12 +311,12 @@ func NewAlertPolicyConditionOutputReference_Override(a AlertPolicyConditionOutpu
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.alertPolicy.AlertPolicyConditionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AlertPolicyConditionOutputReference)SetAlertingWindow(val *string) {
+func (j *jsiiProxy_AlertPolicyConditionOutputReference) SetAlertingWindow(val *string) {
 	if err := j.validateSetAlertingWindowParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,7 +327,7 @@ func (j *jsiiProxy_AlertPolicyConditionOutputReference)SetAlertingWindow(val *st
 	)
 }
 
-func (j *jsiiProxy_AlertPolicyConditionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AlertPolicyConditionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -339,7 +338,7 @@ func (j *jsiiProxy_AlertPolicyConditionOutputReference)SetComplexObjectIndex(val
 	)
 }
 
-func (j *jsiiProxy_AlertPolicyConditionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AlertPolicyConditionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -350,7 +349,7 @@ func (j *jsiiProxy_AlertPolicyConditionOutputReference)SetComplexObjectIsFromSet
 	)
 }
 
-func (j *jsiiProxy_AlertPolicyConditionOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AlertPolicyConditionOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -361,7 +360,7 @@ func (j *jsiiProxy_AlertPolicyConditionOutputReference)SetInternalValue(val inte
 	)
 }
 
-func (j *jsiiProxy_AlertPolicyConditionOutputReference)SetLastsFor(val *string) {
+func (j *jsiiProxy_AlertPolicyConditionOutputReference) SetLastsFor(val *string) {
 	if err := j.validateSetLastsForParameters(val); err != nil {
 		panic(err)
 	}
@@ -372,7 +371,7 @@ func (j *jsiiProxy_AlertPolicyConditionOutputReference)SetLastsFor(val *string) 
 	)
 }
 
-func (j *jsiiProxy_AlertPolicyConditionOutputReference)SetMeasurement(val *string) {
+func (j *jsiiProxy_AlertPolicyConditionOutputReference) SetMeasurement(val *string) {
 	if err := j.validateSetMeasurementParameters(val); err != nil {
 		panic(err)
 	}
@@ -383,7 +382,7 @@ func (j *jsiiProxy_AlertPolicyConditionOutputReference)SetMeasurement(val *strin
 	)
 }
 
-func (j *jsiiProxy_AlertPolicyConditionOutputReference)SetOp(val *string) {
+func (j *jsiiProxy_AlertPolicyConditionOutputReference) SetOp(val *string) {
 	if err := j.validateSetOpParameters(val); err != nil {
 		panic(err)
 	}
@@ -394,7 +393,7 @@ func (j *jsiiProxy_AlertPolicyConditionOutputReference)SetOp(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AlertPolicyConditionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AlertPolicyConditionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -405,7 +404,7 @@ func (j *jsiiProxy_AlertPolicyConditionOutputReference)SetTerraformAttribute(val
 	)
 }
 
-func (j *jsiiProxy_AlertPolicyConditionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AlertPolicyConditionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -416,7 +415,7 @@ func (j *jsiiProxy_AlertPolicyConditionOutputReference)SetTerraformResource(val 
 	)
 }
 
-func (j *jsiiProxy_AlertPolicyConditionOutputReference)SetValue(val *float64) {
+func (j *jsiiProxy_AlertPolicyConditionOutputReference) SetValue(val *float64) {
 	if err := j.validateSetValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -427,7 +426,7 @@ func (j *jsiiProxy_AlertPolicyConditionOutputReference)SetValue(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_AlertPolicyConditionOutputReference)SetValueString(val *string) {
+func (j *jsiiProxy_AlertPolicyConditionOutputReference) SetValueString(val *string) {
 	if err := j.validateSetValueStringParameters(val); err != nil {
 		panic(err)
 	}
@@ -451,16 +450,16 @@ func (a *jsiiProxy_AlertPolicyConditionOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (a *jsiiProxy_AlertPolicyConditionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AlertPolicyConditionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,7 +475,7 @@ func (a *jsiiProxy_AlertPolicyConditionOutputReference) GetBooleanAttribute(terr
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -492,7 +491,7 @@ func (a *jsiiProxy_AlertPolicyConditionOutputReference) GetBooleanMapAttribute(t
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -508,7 +507,7 @@ func (a *jsiiProxy_AlertPolicyConditionOutputReference) GetListAttribute(terrafo
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -524,7 +523,7 @@ func (a *jsiiProxy_AlertPolicyConditionOutputReference) GetNumberAttribute(terra
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -540,7 +539,7 @@ func (a *jsiiProxy_AlertPolicyConditionOutputReference) GetNumberListAttribute(t
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -556,7 +555,7 @@ func (a *jsiiProxy_AlertPolicyConditionOutputReference) GetNumberMapAttribute(te
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -572,7 +571,7 @@ func (a *jsiiProxy_AlertPolicyConditionOutputReference) GetStringAttribute(terra
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -588,7 +587,7 @@ func (a *jsiiProxy_AlertPolicyConditionOutputReference) GetStringMapAttribute(te
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -617,7 +616,7 @@ func (a *jsiiProxy_AlertPolicyConditionOutputReference) InterpolationForAttribut
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -664,16 +663,16 @@ func (a *jsiiProxy_AlertPolicyConditionOutputReference) ResetValueString() {
 	)
 }
 
-func (a *jsiiProxy_AlertPolicyConditionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AlertPolicyConditionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -692,4 +691,3 @@ func (a *jsiiProxy_AlertPolicyConditionOutputReference) ToString() *string {
 
 	return returns
 }
-

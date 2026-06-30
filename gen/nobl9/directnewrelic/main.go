@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.directNewrelic.DirectNewrelic",
-		reflect.TypeOf((*DirectNewrelic)(nil)).Elem(),
+		reflect.TypeFor[DirectNewrelic](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -89,7 +89,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DirectNewrelic{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -97,19 +97,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.directNewrelic.DirectNewrelicConfig",
-		reflect.TypeOf((*DirectNewrelicConfig)(nil)).Elem(),
+		reflect.TypeFor[DirectNewrelicConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.directNewrelic.DirectNewrelicHistoricalDataRetrieval",
-		reflect.TypeOf((*DirectNewrelicHistoricalDataRetrieval)(nil)).Elem(),
+		reflect.TypeFor[DirectNewrelicHistoricalDataRetrieval](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.directNewrelic.DirectNewrelicHistoricalDataRetrievalDefaultDuration",
-		reflect.TypeOf((*DirectNewrelicHistoricalDataRetrievalDefaultDuration)(nil)).Elem(),
+		reflect.TypeFor[DirectNewrelicHistoricalDataRetrievalDefaultDuration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.directNewrelic.DirectNewrelicHistoricalDataRetrievalDefaultDurationList",
-		reflect.TypeOf((*DirectNewrelicHistoricalDataRetrievalDefaultDurationList)(nil)).Elem(),
+		reflect.TypeFor[DirectNewrelicHistoricalDataRetrievalDefaultDurationList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -123,7 +123,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DirectNewrelicHistoricalDataRetrievalDefaultDurationList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -131,7 +131,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.directNewrelic.DirectNewrelicHistoricalDataRetrievalDefaultDurationOutputReference",
-		reflect.TypeOf((*DirectNewrelicHistoricalDataRetrievalDefaultDurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DirectNewrelicHistoricalDataRetrievalDefaultDurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -159,7 +159,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DirectNewrelicHistoricalDataRetrievalDefaultDurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -167,11 +167,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.directNewrelic.DirectNewrelicHistoricalDataRetrievalMaxDuration",
-		reflect.TypeOf((*DirectNewrelicHistoricalDataRetrievalMaxDuration)(nil)).Elem(),
+		reflect.TypeFor[DirectNewrelicHistoricalDataRetrievalMaxDuration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.directNewrelic.DirectNewrelicHistoricalDataRetrievalMaxDurationList",
-		reflect.TypeOf((*DirectNewrelicHistoricalDataRetrievalMaxDurationList)(nil)).Elem(),
+		reflect.TypeFor[DirectNewrelicHistoricalDataRetrievalMaxDurationList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -185,7 +185,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DirectNewrelicHistoricalDataRetrievalMaxDurationList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -193,7 +193,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.directNewrelic.DirectNewrelicHistoricalDataRetrievalMaxDurationOutputReference",
-		reflect.TypeOf((*DirectNewrelicHistoricalDataRetrievalMaxDurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DirectNewrelicHistoricalDataRetrievalMaxDurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -221,7 +221,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DirectNewrelicHistoricalDataRetrievalMaxDurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -229,7 +229,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.directNewrelic.DirectNewrelicHistoricalDataRetrievalOutputReference",
-		reflect.TypeOf((*DirectNewrelicHistoricalDataRetrievalOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DirectNewrelicHistoricalDataRetrievalOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -259,7 +259,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DirectNewrelicHistoricalDataRetrievalOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -267,11 +267,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.directNewrelic.DirectNewrelicQueryDelay",
-		reflect.TypeOf((*DirectNewrelicQueryDelay)(nil)).Elem(),
+		reflect.TypeFor[DirectNewrelicQueryDelay](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.directNewrelic.DirectNewrelicQueryDelayOutputReference",
-		reflect.TypeOf((*DirectNewrelicQueryDelayOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DirectNewrelicQueryDelayOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -299,7 +299,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DirectNewrelicQueryDelayOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

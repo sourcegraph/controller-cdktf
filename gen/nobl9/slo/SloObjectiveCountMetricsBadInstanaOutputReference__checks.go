@@ -90,7 +90,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadInstanaOutputReference) validateIn
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsBadInstanaOutputReference) validatePutApplicationParameters(value interface{}) error {
+func (s *jsiiProxy_SloObjectiveCountMetricsBadInstanaOutputReference) validatePutApplicationParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadInstanaOutputReference) validatePu
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsBadInstanaOutputReference) validatePutInfrastructureParameters(value interface{}) error {
+func (s *jsiiProxy_SloObjectiveCountMetricsBadInstanaOutputReference) validatePutInfrastructureParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadInstanaOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsBadInstanaOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsBadInstanaOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -225,7 +225,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsBadInstanaOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsBadInstanaOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsBadInstanaOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -292,4 +292,3 @@ func validateNewSloObjectiveCountMetricsBadInstanaOutputReferenceParameters(terr
 
 	return nil
 }
-

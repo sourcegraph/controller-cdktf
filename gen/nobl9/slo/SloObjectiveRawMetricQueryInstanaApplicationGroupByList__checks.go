@@ -34,7 +34,7 @@ func (s *jsiiProxy_SloObjectiveRawMetricQueryInstanaApplicationGroupByList) vali
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQueryInstanaApplicationGroupByList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveRawMetricQueryInstanaApplicationGroupByList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSloObjectiveRawMetricQueryInstanaApplicationGroupByListParameter
 
 	return nil
 }
-

@@ -90,7 +90,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsTotalAzureMonitorOutputReference) val
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsTotalAzureMonitorOutputReference) validatePutDimensionsParameters(value interface{}) error {
+func (s *jsiiProxy_SloObjectiveCountMetricsTotalAzureMonitorOutputReference) validatePutDimensionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsTotalAzureMonitorOutputReference) val
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsTotalAzureMonitorOutputReference) validatePutWorkspaceParameters(value interface{}) error {
+func (s *jsiiProxy_SloObjectiveCountMetricsTotalAzureMonitorOutputReference) validatePutWorkspaceParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -168,7 +168,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsTotalAzureMonitorOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsTotalAzureMonitorOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsTotalAzureMonitorOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -241,7 +241,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsTotalAzureMonitorOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsTotalAzureMonitorOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsTotalAzureMonitorOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -332,4 +332,3 @@ func validateNewSloObjectiveCountMetricsTotalAzureMonitorOutputReferenceParamete
 
 	return nil
 }
-

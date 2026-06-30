@@ -34,7 +34,7 @@ func (a *jsiiProxy_AgentHistoricalDataRetrievalDefaultDurationList) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_AgentHistoricalDataRetrievalDefaultDurationList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AgentHistoricalDataRetrievalDefaultDurationList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAgentHistoricalDataRetrievalDefaultDurationListParameters(terraf
 
 	return nil
 }
-

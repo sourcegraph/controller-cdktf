@@ -34,7 +34,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadAmazonPrometheusList) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsBadAmazonPrometheusList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsBadAmazonPrometheusList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSloObjectiveCountMetricsBadAmazonPrometheusListParameters(terraf
 
 	return nil
 }
-

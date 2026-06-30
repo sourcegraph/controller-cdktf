@@ -98,7 +98,7 @@ func (s *jsiiProxy_SloIndicatorOutputReference) validateResolveParameters(_conte
 	return nil
 }
 
-func (j *jsiiProxy_SloIndicatorOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SloIndicatorOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewSloIndicatorOutputReferenceParameters(terraformResource cdktf.II
 
 	return nil
 }
-

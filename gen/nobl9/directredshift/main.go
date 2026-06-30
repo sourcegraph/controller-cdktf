@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.directRedshift.DirectRedshift",
-		reflect.TypeOf((*DirectRedshift)(nil)).Elem(),
+		reflect.TypeFor[DirectRedshift](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -86,7 +86,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DirectRedshift{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -94,15 +94,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.directRedshift.DirectRedshiftConfig",
-		reflect.TypeOf((*DirectRedshiftConfig)(nil)).Elem(),
+		reflect.TypeFor[DirectRedshiftConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.directRedshift.DirectRedshiftQueryDelay",
-		reflect.TypeOf((*DirectRedshiftQueryDelay)(nil)).Elem(),
+		reflect.TypeFor[DirectRedshiftQueryDelay](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.directRedshift.DirectRedshiftQueryDelayOutputReference",
-		reflect.TypeOf((*DirectRedshiftQueryDelayOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DirectRedshiftQueryDelayOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -130,7 +130,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DirectRedshiftQueryDelayOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

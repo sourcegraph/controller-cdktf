@@ -98,7 +98,7 @@ func (a *jsiiProxy_AgentGcmConfigOutputReference) validateResolveParameters(_con
 	return nil
 }
 
-func (j *jsiiProxy_AgentGcmConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AgentGcmConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewAgentGcmConfigOutputReferenceParameters(terraformResource cdktf.
 
 	return nil
 }
-

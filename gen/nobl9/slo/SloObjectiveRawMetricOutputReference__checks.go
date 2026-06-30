@@ -90,7 +90,7 @@ func (s *jsiiProxy_SloObjectiveRawMetricOutputReference) validateInterpolationFo
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveRawMetricOutputReference) validatePutQueryParameters(value interface{}) error {
+func (s *jsiiProxy_SloObjectiveRawMetricOutputReference) validatePutQueryParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (s *jsiiProxy_SloObjectiveRawMetricOutputReference) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveRawMetricOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_SloObjectiveRawMetricOutputReference) validateSetComplexObjec
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveRawMetricOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -253,4 +253,3 @@ func validateNewSloObjectiveRawMetricOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

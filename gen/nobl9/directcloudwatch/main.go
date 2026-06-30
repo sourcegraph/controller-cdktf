@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.directCloudwatch.DirectCloudwatch",
-		reflect.TypeOf((*DirectCloudwatch)(nil)).Elem(),
+		reflect.TypeFor[DirectCloudwatch](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -87,7 +87,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DirectCloudwatch{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -95,19 +95,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.directCloudwatch.DirectCloudwatchConfig",
-		reflect.TypeOf((*DirectCloudwatchConfig)(nil)).Elem(),
+		reflect.TypeFor[DirectCloudwatchConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.directCloudwatch.DirectCloudwatchHistoricalDataRetrieval",
-		reflect.TypeOf((*DirectCloudwatchHistoricalDataRetrieval)(nil)).Elem(),
+		reflect.TypeFor[DirectCloudwatchHistoricalDataRetrieval](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.directCloudwatch.DirectCloudwatchHistoricalDataRetrievalDefaultDuration",
-		reflect.TypeOf((*DirectCloudwatchHistoricalDataRetrievalDefaultDuration)(nil)).Elem(),
+		reflect.TypeFor[DirectCloudwatchHistoricalDataRetrievalDefaultDuration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.directCloudwatch.DirectCloudwatchHistoricalDataRetrievalDefaultDurationList",
-		reflect.TypeOf((*DirectCloudwatchHistoricalDataRetrievalDefaultDurationList)(nil)).Elem(),
+		reflect.TypeFor[DirectCloudwatchHistoricalDataRetrievalDefaultDurationList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -121,7 +121,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DirectCloudwatchHistoricalDataRetrievalDefaultDurationList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -129,7 +129,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.directCloudwatch.DirectCloudwatchHistoricalDataRetrievalDefaultDurationOutputReference",
-		reflect.TypeOf((*DirectCloudwatchHistoricalDataRetrievalDefaultDurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DirectCloudwatchHistoricalDataRetrievalDefaultDurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -157,7 +157,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DirectCloudwatchHistoricalDataRetrievalDefaultDurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -165,11 +165,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.directCloudwatch.DirectCloudwatchHistoricalDataRetrievalMaxDuration",
-		reflect.TypeOf((*DirectCloudwatchHistoricalDataRetrievalMaxDuration)(nil)).Elem(),
+		reflect.TypeFor[DirectCloudwatchHistoricalDataRetrievalMaxDuration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.directCloudwatch.DirectCloudwatchHistoricalDataRetrievalMaxDurationList",
-		reflect.TypeOf((*DirectCloudwatchHistoricalDataRetrievalMaxDurationList)(nil)).Elem(),
+		reflect.TypeFor[DirectCloudwatchHistoricalDataRetrievalMaxDurationList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -183,7 +183,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DirectCloudwatchHistoricalDataRetrievalMaxDurationList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -191,7 +191,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.directCloudwatch.DirectCloudwatchHistoricalDataRetrievalMaxDurationOutputReference",
-		reflect.TypeOf((*DirectCloudwatchHistoricalDataRetrievalMaxDurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DirectCloudwatchHistoricalDataRetrievalMaxDurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -219,7 +219,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DirectCloudwatchHistoricalDataRetrievalMaxDurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -227,7 +227,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.directCloudwatch.DirectCloudwatchHistoricalDataRetrievalOutputReference",
-		reflect.TypeOf((*DirectCloudwatchHistoricalDataRetrievalOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DirectCloudwatchHistoricalDataRetrievalOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -257,7 +257,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DirectCloudwatchHistoricalDataRetrievalOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -265,11 +265,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.directCloudwatch.DirectCloudwatchQueryDelay",
-		reflect.TypeOf((*DirectCloudwatchQueryDelay)(nil)).Elem(),
+		reflect.TypeFor[DirectCloudwatchQueryDelay](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.directCloudwatch.DirectCloudwatchQueryDelayOutputReference",
-		reflect.TypeOf((*DirectCloudwatchQueryDelayOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DirectCloudwatchQueryDelayOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -297,7 +297,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DirectCloudwatchQueryDelayOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

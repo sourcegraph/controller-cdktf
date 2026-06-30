@@ -98,7 +98,7 @@ func (s *jsiiProxy_SloObjectiveRawMetricQueryDynatraceOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQueryDynatraceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveRawMetricQueryDynatraceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_SloObjectiveRawMetricQueryDynatraceOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQueryDynatraceOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveRawMetricQueryDynatraceOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewSloObjectiveRawMetricQueryDynatraceOutputReferenceParameters(ter
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodTotalCloudwatchList) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodTotalCloudwatchList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodTotalCloudwatchList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSloObjectiveCountMetricsGoodTotalCloudwatchListParameters(terraf
 
 	return nil
 }
-

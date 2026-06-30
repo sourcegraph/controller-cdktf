@@ -98,7 +98,7 @@ func (a *jsiiProxy_AgentCloudwatchConfigOutputReference) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_AgentCloudwatchConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AgentCloudwatchConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewAgentCloudwatchConfigOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

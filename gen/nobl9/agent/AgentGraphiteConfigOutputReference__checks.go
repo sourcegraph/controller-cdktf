@@ -98,7 +98,7 @@ func (a *jsiiProxy_AgentGraphiteConfigOutputReference) validateResolveParameters
 	return nil
 }
 
-func (j *jsiiProxy_AgentGraphiteConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AgentGraphiteConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewAgentGraphiteConfigOutputReferenceParameters(terraformResource c
 
 	return nil
 }
-

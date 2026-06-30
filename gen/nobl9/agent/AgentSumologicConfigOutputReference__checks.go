@@ -98,7 +98,7 @@ func (a *jsiiProxy_AgentSumologicConfigOutputReference) validateResolveParameter
 	return nil
 }
 
-func (j *jsiiProxy_AgentSumologicConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AgentSumologicConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewAgentSumologicConfigOutputReferenceParameters(terraformResource 
 
 	return nil
 }
-

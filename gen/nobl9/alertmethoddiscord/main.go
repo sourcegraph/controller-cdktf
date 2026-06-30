@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.alertMethodDiscord.AlertMethodDiscord",
-		reflect.TypeOf((*AlertMethodDiscord)(nil)).Elem(),
+		reflect.TypeFor[AlertMethodDiscord](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,7 +69,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 			_jsii_.MemberProperty{JsiiProperty: "urlInput", GoGetter: "UrlInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlertMethodDiscord{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -77,6 +77,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.alertMethodDiscord.AlertMethodDiscordConfig",
-		reflect.TypeOf((*AlertMethodDiscordConfig)(nil)).Elem(),
+		reflect.TypeFor[AlertMethodDiscordConfig](),
 	)
 }

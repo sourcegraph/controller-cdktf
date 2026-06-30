@@ -11,20 +11,20 @@ import (
 type SloObjectiveCountMetricsGoodOutputReference interface {
 	cdktf.ComplexObject
 	AmazonPrometheus() SloObjectiveCountMetricsGoodAmazonPrometheusList
-	AmazonPrometheusInput() interface{}
+	AmazonPrometheusInput() any
 	Appdynamics() SloObjectiveCountMetricsGoodAppdynamicsList
-	AppdynamicsInput() interface{}
+	AppdynamicsInput() any
 	AzureMonitor() SloObjectiveCountMetricsGoodAzureMonitorList
-	AzureMonitorInput() interface{}
+	AzureMonitorInput() any
 	Bigquery() SloObjectiveCountMetricsGoodBigqueryList
-	BigqueryInput() interface{}
+	BigqueryInput() any
 	Cloudwatch() SloObjectiveCountMetricsGoodCloudwatchList
-	CloudwatchInput() interface{}
+	CloudwatchInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -36,47 +36,47 @@ type SloObjectiveCountMetricsGoodOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	Datadog() SloObjectiveCountMetricsGoodDatadogList
-	DatadogInput() interface{}
+	DatadogInput() any
 	Dynatrace() SloObjectiveCountMetricsGoodDynatraceList
-	DynatraceInput() interface{}
+	DynatraceInput() any
 	Elasticsearch() SloObjectiveCountMetricsGoodElasticsearchList
-	ElasticsearchInput() interface{}
+	ElasticsearchInput() any
 	// Experimental.
 	Fqn() *string
 	Gcm() SloObjectiveCountMetricsGoodGcmList
-	GcmInput() interface{}
+	GcmInput() any
 	GrafanaLoki() SloObjectiveCountMetricsGoodGrafanaLokiList
-	GrafanaLokiInput() interface{}
+	GrafanaLokiInput() any
 	Graphite() SloObjectiveCountMetricsGoodGraphiteList
-	GraphiteInput() interface{}
+	GraphiteInput() any
 	Honeycomb() SloObjectiveCountMetricsGoodHoneycombList
-	HoneycombInput() interface{}
+	HoneycombInput() any
 	Influxdb() SloObjectiveCountMetricsGoodInfluxdbList
-	InfluxdbInput() interface{}
+	InfluxdbInput() any
 	Instana() SloObjectiveCountMetricsGoodInstanaList
-	InstanaInput() interface{}
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InstanaInput() any
+	InternalValue() any
+	SetInternalValue(val any)
 	Lightstep() SloObjectiveCountMetricsGoodLightstepList
-	LightstepInput() interface{}
+	LightstepInput() any
 	LogicMonitor() SloObjectiveCountMetricsGoodLogicMonitorList
-	LogicMonitorInput() interface{}
+	LogicMonitorInput() any
 	Newrelic() SloObjectiveCountMetricsGoodNewrelicList
-	NewrelicInput() interface{}
+	NewrelicInput() any
 	Opentsdb() SloObjectiveCountMetricsGoodOpentsdbList
-	OpentsdbInput() interface{}
+	OpentsdbInput() any
 	Pingdom() SloObjectiveCountMetricsGoodPingdomList
-	PingdomInput() interface{}
+	PingdomInput() any
 	Prometheus() SloObjectiveCountMetricsGoodPrometheusList
-	PrometheusInput() interface{}
+	PrometheusInput() any
 	Redshift() SloObjectiveCountMetricsGoodRedshiftList
-	RedshiftInput() interface{}
+	RedshiftInput() any
 	Splunk() SloObjectiveCountMetricsGoodSplunkList
-	SplunkInput() interface{}
+	SplunkInput() any
 	SplunkObservability() SloObjectiveCountMetricsGoodSplunkObservabilityList
-	SplunkObservabilityInput() interface{}
+	SplunkObservabilityInput() any
 	Sumologic() SloObjectiveCountMetricsGoodSumologicList
-	SumologicInput() interface{}
+	SumologicInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -86,11 +86,11 @@ type SloObjectiveCountMetricsGoodOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	Thousandeyes() SloObjectiveCountMetricsGoodThousandeyesList
-	ThousandeyesInput() interface{}
+	ThousandeyesInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -111,31 +111,31 @@ type SloObjectiveCountMetricsGoodOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutAmazonPrometheus(value interface{})
-	PutAppdynamics(value interface{})
-	PutAzureMonitor(value interface{})
-	PutBigquery(value interface{})
-	PutCloudwatch(value interface{})
-	PutDatadog(value interface{})
-	PutDynatrace(value interface{})
-	PutElasticsearch(value interface{})
-	PutGcm(value interface{})
-	PutGrafanaLoki(value interface{})
-	PutGraphite(value interface{})
-	PutHoneycomb(value interface{})
-	PutInfluxdb(value interface{})
-	PutInstana(value interface{})
-	PutLightstep(value interface{})
-	PutLogicMonitor(value interface{})
-	PutNewrelic(value interface{})
-	PutOpentsdb(value interface{})
-	PutPingdom(value interface{})
-	PutPrometheus(value interface{})
-	PutRedshift(value interface{})
-	PutSplunk(value interface{})
-	PutSplunkObservability(value interface{})
-	PutSumologic(value interface{})
-	PutThousandeyes(value interface{})
+	PutAmazonPrometheus(value any)
+	PutAppdynamics(value any)
+	PutAzureMonitor(value any)
+	PutBigquery(value any)
+	PutCloudwatch(value any)
+	PutDatadog(value any)
+	PutDynatrace(value any)
+	PutElasticsearch(value any)
+	PutGcm(value any)
+	PutGrafanaLoki(value any)
+	PutGraphite(value any)
+	PutHoneycomb(value any)
+	PutInfluxdb(value any)
+	PutInstana(value any)
+	PutLightstep(value any)
+	PutLogicMonitor(value any)
+	PutNewrelic(value any)
+	PutOpentsdb(value any)
+	PutPingdom(value any)
+	PutPrometheus(value any)
+	PutRedshift(value any)
+	PutSplunk(value any)
+	PutSplunkObservability(value any)
+	PutSumologic(value any)
+	PutThousandeyes(value any)
 	ResetAmazonPrometheus()
 	ResetAppdynamics()
 	ResetAzureMonitor()
@@ -163,7 +163,7 @@ type SloObjectiveCountMetricsGoodOutputReference interface {
 	ResetThousandeyes()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -186,8 +186,8 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) AmazonPrometheus
 	return returns
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) AmazonPrometheusInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) AmazonPrometheusInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"amazonPrometheusInput",
@@ -206,8 +206,8 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) Appdynamics() Sl
 	return returns
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) AppdynamicsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) AppdynamicsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"appdynamicsInput",
@@ -226,8 +226,8 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) AzureMonitor() S
 	return returns
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) AzureMonitorInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) AzureMonitorInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"azureMonitorInput",
@@ -246,8 +246,8 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) Bigquery() SloOb
 	return returns
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) BigqueryInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) BigqueryInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"bigqueryInput",
@@ -266,8 +266,8 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) Cloudwatch() Slo
 	return returns
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) CloudwatchInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) CloudwatchInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"cloudwatchInput",
@@ -276,8 +276,8 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) CloudwatchInput(
 	return returns
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -316,8 +316,8 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) Datadog() SloObj
 	return returns
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) DatadogInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) DatadogInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"datadogInput",
@@ -336,8 +336,8 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) Dynatrace() SloO
 	return returns
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) DynatraceInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) DynatraceInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"dynatraceInput",
@@ -356,8 +356,8 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) Elasticsearch() 
 	return returns
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) ElasticsearchInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) ElasticsearchInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"elasticsearchInput",
@@ -386,8 +386,8 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) Gcm() SloObjecti
 	return returns
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) GcmInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) GcmInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"gcmInput",
@@ -406,8 +406,8 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) GrafanaLoki() Sl
 	return returns
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) GrafanaLokiInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) GrafanaLokiInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"grafanaLokiInput",
@@ -426,8 +426,8 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) Graphite() SloOb
 	return returns
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) GraphiteInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) GraphiteInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"graphiteInput",
@@ -446,8 +446,8 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) Honeycomb() SloO
 	return returns
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) HoneycombInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) HoneycombInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"honeycombInput",
@@ -466,8 +466,8 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) Influxdb() SloOb
 	return returns
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) InfluxdbInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) InfluxdbInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"influxdbInput",
@@ -486,8 +486,8 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) Instana() SloObj
 	return returns
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) InstanaInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) InstanaInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"instanaInput",
@@ -496,8 +496,8 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) InstanaInput() i
 	return returns
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -516,8 +516,8 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) Lightstep() SloO
 	return returns
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) LightstepInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) LightstepInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"lightstepInput",
@@ -536,8 +536,8 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) LogicMonitor() S
 	return returns
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) LogicMonitorInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) LogicMonitorInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"logicMonitorInput",
@@ -556,8 +556,8 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) Newrelic() SloOb
 	return returns
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) NewrelicInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) NewrelicInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"newrelicInput",
@@ -576,8 +576,8 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) Opentsdb() SloOb
 	return returns
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) OpentsdbInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) OpentsdbInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"opentsdbInput",
@@ -596,8 +596,8 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) Pingdom() SloObj
 	return returns
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) PingdomInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) PingdomInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"pingdomInput",
@@ -616,8 +616,8 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) Prometheus() Slo
 	return returns
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) PrometheusInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) PrometheusInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"prometheusInput",
@@ -636,8 +636,8 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) Redshift() SloOb
 	return returns
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) RedshiftInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) RedshiftInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"redshiftInput",
@@ -656,8 +656,8 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) Splunk() SloObje
 	return returns
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) SplunkInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) SplunkInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"splunkInput",
@@ -676,8 +676,8 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) SplunkObservabil
 	return returns
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) SplunkObservabilityInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) SplunkObservabilityInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"splunkObservabilityInput",
@@ -696,8 +696,8 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) Sumologic() SloO
 	return returns
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) SumologicInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) SumologicInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sumologicInput",
@@ -736,8 +736,8 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) Thousandeyes() S
 	return returns
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) ThousandeyesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) ThousandeyesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"thousandeyesInput",
@@ -745,7 +745,6 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) ThousandeyesInpu
 	)
 	return returns
 }
-
 
 func NewSloObjectiveCountMetricsGoodOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SloObjectiveCountMetricsGoodOutputReference {
 	_init_.Initialize()
@@ -757,7 +756,7 @@ func NewSloObjectiveCountMetricsGoodOutputReference(terraformResource cdktf.IInt
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -769,12 +768,12 @@ func NewSloObjectiveCountMetricsGoodOutputReference_Override(s SloObjectiveCount
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -785,7 +784,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -796,7 +795,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -807,7 +806,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference)SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -818,7 +817,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -842,16 +841,16 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) ComputeFqn() *st
 	return returns
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -867,7 +866,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) GetBooleanAttrib
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -883,7 +882,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) GetBooleanMapAtt
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -899,7 +898,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) GetListAttribute
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -915,7 +914,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) GetNumberAttribu
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -931,7 +930,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) GetNumberListAtt
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -947,7 +946,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) GetNumberMapAttr
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -963,7 +962,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) GetStringAttribu
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -979,7 +978,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) GetStringMapAttr
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1008,285 +1007,285 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) InterpolationFor
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) PutAmazonPrometheus(value interface{}) {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) PutAmazonPrometheus(value any) {
 	if err := s.validatePutAmazonPrometheusParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putAmazonPrometheus",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) PutAppdynamics(value interface{}) {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) PutAppdynamics(value any) {
 	if err := s.validatePutAppdynamicsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putAppdynamics",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) PutAzureMonitor(value interface{}) {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) PutAzureMonitor(value any) {
 	if err := s.validatePutAzureMonitorParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putAzureMonitor",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) PutBigquery(value interface{}) {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) PutBigquery(value any) {
 	if err := s.validatePutBigqueryParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putBigquery",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) PutCloudwatch(value interface{}) {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) PutCloudwatch(value any) {
 	if err := s.validatePutCloudwatchParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putCloudwatch",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) PutDatadog(value interface{}) {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) PutDatadog(value any) {
 	if err := s.validatePutDatadogParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putDatadog",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) PutDynatrace(value interface{}) {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) PutDynatrace(value any) {
 	if err := s.validatePutDynatraceParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putDynatrace",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) PutElasticsearch(value interface{}) {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) PutElasticsearch(value any) {
 	if err := s.validatePutElasticsearchParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putElasticsearch",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) PutGcm(value interface{}) {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) PutGcm(value any) {
 	if err := s.validatePutGcmParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putGcm",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) PutGrafanaLoki(value interface{}) {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) PutGrafanaLoki(value any) {
 	if err := s.validatePutGrafanaLokiParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putGrafanaLoki",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) PutGraphite(value interface{}) {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) PutGraphite(value any) {
 	if err := s.validatePutGraphiteParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putGraphite",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) PutHoneycomb(value interface{}) {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) PutHoneycomb(value any) {
 	if err := s.validatePutHoneycombParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putHoneycomb",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) PutInfluxdb(value interface{}) {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) PutInfluxdb(value any) {
 	if err := s.validatePutInfluxdbParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putInfluxdb",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) PutInstana(value interface{}) {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) PutInstana(value any) {
 	if err := s.validatePutInstanaParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putInstana",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) PutLightstep(value interface{}) {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) PutLightstep(value any) {
 	if err := s.validatePutLightstepParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putLightstep",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) PutLogicMonitor(value interface{}) {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) PutLogicMonitor(value any) {
 	if err := s.validatePutLogicMonitorParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putLogicMonitor",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) PutNewrelic(value interface{}) {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) PutNewrelic(value any) {
 	if err := s.validatePutNewrelicParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putNewrelic",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) PutOpentsdb(value interface{}) {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) PutOpentsdb(value any) {
 	if err := s.validatePutOpentsdbParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putOpentsdb",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) PutPingdom(value interface{}) {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) PutPingdom(value any) {
 	if err := s.validatePutPingdomParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putPingdom",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) PutPrometheus(value interface{}) {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) PutPrometheus(value any) {
 	if err := s.validatePutPrometheusParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putPrometheus",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) PutRedshift(value interface{}) {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) PutRedshift(value any) {
 	if err := s.validatePutRedshiftParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putRedshift",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) PutSplunk(value interface{}) {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) PutSplunk(value any) {
 	if err := s.validatePutSplunkParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putSplunk",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) PutSplunkObservability(value interface{}) {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) PutSplunkObservability(value any) {
 	if err := s.validatePutSplunkObservabilityParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putSplunkObservability",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) PutSumologic(value interface{}) {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) PutSumologic(value any) {
 	if err := s.validatePutSumologicParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putSumologic",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) PutThousandeyes(value interface{}) {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) PutThousandeyes(value any) {
 	if err := s.validatePutThousandeyesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putThousandeyes",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1490,16 +1489,16 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) ResetThousandeye
 	)
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1518,4 +1517,3 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) ToString() *stri
 
 	return returns
 }
-

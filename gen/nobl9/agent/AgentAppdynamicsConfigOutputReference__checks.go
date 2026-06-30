@@ -98,7 +98,7 @@ func (a *jsiiProxy_AgentAppdynamicsConfigOutputReference) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_AgentAppdynamicsConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AgentAppdynamicsConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewAgentAppdynamicsConfigOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

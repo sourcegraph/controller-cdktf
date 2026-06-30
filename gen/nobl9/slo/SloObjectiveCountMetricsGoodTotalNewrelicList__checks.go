@@ -34,7 +34,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodTotalNewrelicList) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodTotalNewrelicList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodTotalNewrelicList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSloObjectiveCountMetricsGoodTotalNewrelicListParameters(terrafor
 
 	return nil
 }
-

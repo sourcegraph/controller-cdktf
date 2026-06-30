@@ -98,7 +98,7 @@ func (s *jsiiProxy_SloObjectiveRawMetricQueryBigqueryOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQueryBigqueryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveRawMetricQueryBigqueryOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_SloObjectiveRawMetricQueryBigqueryOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQueryBigqueryOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveRawMetricQueryBigqueryOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewSloObjectiveRawMetricQueryBigqueryOutputReferenceParameters(terr
 
 	return nil
 }
-

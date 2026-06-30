@@ -90,7 +90,7 @@ func (a *jsiiProxy_AgentHistoricalDataRetrievalOutputReference) validateInterpol
 	return nil
 }
 
-func (a *jsiiProxy_AgentHistoricalDataRetrievalOutputReference) validatePutDefaultDurationParameters(value interface{}) error {
+func (a *jsiiProxy_AgentHistoricalDataRetrievalOutputReference) validatePutDefaultDurationParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (a *jsiiProxy_AgentHistoricalDataRetrievalOutputReference) validatePutDefau
 	return nil
 }
 
-func (a *jsiiProxy_AgentHistoricalDataRetrievalOutputReference) validatePutMaxDurationParameters(value interface{}) error {
+func (a *jsiiProxy_AgentHistoricalDataRetrievalOutputReference) validatePutMaxDurationParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (a *jsiiProxy_AgentHistoricalDataRetrievalOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_AgentHistoricalDataRetrievalOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AgentHistoricalDataRetrievalOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -260,4 +260,3 @@ func validateNewAgentHistoricalDataRetrievalOutputReferenceParameters(terraformR
 
 	return nil
 }
-

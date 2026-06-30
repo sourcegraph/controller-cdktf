@@ -34,7 +34,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodTotalGrafanaLokiList) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodTotalGrafanaLokiList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodTotalGrafanaLokiList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSloObjectiveCountMetricsGoodTotalGrafanaLokiListParameters(terra
 
 	return nil
 }
-

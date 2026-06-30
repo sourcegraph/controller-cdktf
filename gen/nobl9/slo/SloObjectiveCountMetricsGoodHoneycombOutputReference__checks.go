@@ -114,7 +114,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodHoneycombOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodHoneycombOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodHoneycombOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodHoneycombOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodHoneycombOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodHoneycombOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewSloObjectiveCountMetricsGoodHoneycombOutputReferenceParameters(t
 
 	return nil
 }
-

@@ -109,7 +109,7 @@ func (r *jsiiProxy_ReportSystemHealthReviewTimeFrameOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_ReportSystemHealthReviewTimeFrameOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ReportSystemHealthReviewTimeFrameOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewReportSystemHealthReviewTimeFrameOutputReferenceParameters(terra
 
 	return nil
 }
-

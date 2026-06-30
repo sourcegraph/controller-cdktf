@@ -19,7 +19,7 @@ func (d *jsiiProxy_DirectThousandeyes) validateAddMoveTargetParameters(moveTarge
 	return nil
 }
 
-func (d *jsiiProxy_DirectThousandeyes) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DirectThousandeyes) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DirectThousandeyes) validateMoveFromIdParameters(id *string) 
 	return nil
 }
 
-func (d *jsiiProxy_DirectThousandeyes) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DirectThousandeyes) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateDirectThousandeyes_GenerateConfigForImportParameters(scope construc
 	return nil
 }
 
-func validateDirectThousandeyes_IsConstructParameters(x interface{}) error {
+func validateDirectThousandeyes_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateDirectThousandeyes_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDirectThousandeyes_IsTerraformElementParameters(x interface{}) error {
+func validateDirectThousandeyes_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateDirectThousandeyes_IsTerraformElementParameters(x interface{}) erro
 	return nil
 }
 
-func validateDirectThousandeyes_IsTerraformResourceParameters(x interface{}) error {
+func validateDirectThousandeyes_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateDirectThousandeyes_IsTerraformResourceParameters(x interface{}) err
 	return nil
 }
 
-func (j *jsiiProxy_DirectThousandeyes) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DirectThousandeyes) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_DirectThousandeyes) validateSetConnectionParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_DirectThousandeyes) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DirectThousandeyes) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -377,7 +377,7 @@ func (j *jsiiProxy_DirectThousandeyes) validateSetLifecycleParameters(val *cdktf
 	return nil
 }
 
-func (j *jsiiProxy_DirectThousandeyes) validateSetLogCollectionEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_DirectThousandeyes) validateSetLogCollectionEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -421,7 +421,7 @@ func (j *jsiiProxy_DirectThousandeyes) validateSetProjectParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_DirectThousandeyes) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DirectThousandeyes) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -501,4 +501,3 @@ func validateNewDirectThousandeyesParameters(scope constructs.Construct, id *str
 
 	return nil
 }
-

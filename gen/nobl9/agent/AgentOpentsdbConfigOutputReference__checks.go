@@ -98,7 +98,7 @@ func (a *jsiiProxy_AgentOpentsdbConfigOutputReference) validateResolveParameters
 	return nil
 }
 
-func (j *jsiiProxy_AgentOpentsdbConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AgentOpentsdbConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewAgentOpentsdbConfigOutputReferenceParameters(terraformResource c
 
 	return nil
 }
-

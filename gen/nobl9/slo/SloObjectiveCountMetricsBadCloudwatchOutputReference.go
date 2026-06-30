@@ -15,9 +15,9 @@ type SloObjectiveCountMetricsBadCloudwatchOutputReference interface {
 	AccountIdInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -29,11 +29,11 @@ type SloObjectiveCountMetricsBadCloudwatchOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	Dimensions() SloObjectiveCountMetricsBadCloudwatchDimensionsList
-	DimensionsInput() interface{}
+	DimensionsInput() any
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Json() *string
 	SetJson(val *string)
 	JsonInput() *string
@@ -63,7 +63,7 @@ type SloObjectiveCountMetricsBadCloudwatchOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -84,7 +84,7 @@ type SloObjectiveCountMetricsBadCloudwatchOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutDimensions(value interface{})
+	PutDimensions(value any)
 	ResetAccountId()
 	ResetDimensions()
 	ResetJson()
@@ -94,7 +94,7 @@ type SloObjectiveCountMetricsBadCloudwatchOutputReference interface {
 	ResetStat()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -127,8 +127,8 @@ func (j *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference) Account
 	return returns
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -167,8 +167,8 @@ func (j *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference) Dimensi
 	return returns
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference) DimensionsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference) DimensionsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"dimensionsInput",
@@ -187,8 +187,8 @@ func (j *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference) Fqn() *
 	return returns
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -337,7 +337,6 @@ func (j *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference) Terrafo
 	return returns
 }
 
-
 func NewSloObjectiveCountMetricsBadCloudwatchOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SloObjectiveCountMetricsBadCloudwatchOutputReference {
 	_init_.Initialize()
 
@@ -348,7 +347,7 @@ func NewSloObjectiveCountMetricsBadCloudwatchOutputReference(terraformResource c
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadCloudwatchOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -360,12 +359,12 @@ func NewSloObjectiveCountMetricsBadCloudwatchOutputReference_Override(s SloObjec
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadCloudwatchOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference)SetAccountId(val *string) {
+func (j *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -376,7 +375,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference)SetAccou
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -387,7 +386,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -398,7 +397,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -409,7 +408,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference)SetInter
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference)SetJson(val *string) {
+func (j *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference) SetJson(val *string) {
 	if err := j.validateSetJsonParameters(val); err != nil {
 		panic(err)
 	}
@@ -420,7 +419,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference)SetJson(
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference)SetMetricName(val *string) {
+func (j *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference) SetMetricName(val *string) {
 	if err := j.validateSetMetricNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -431,7 +430,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference)SetMetri
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference)SetNamespace(val *string) {
+func (j *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference) SetNamespace(val *string) {
 	if err := j.validateSetNamespaceParameters(val); err != nil {
 		panic(err)
 	}
@@ -442,7 +441,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference)SetNames
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference)SetRegion(val *string) {
+func (j *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -453,7 +452,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference)SetRegio
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference)SetSql(val *string) {
+func (j *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference) SetSql(val *string) {
 	if err := j.validateSetSqlParameters(val); err != nil {
 		panic(err)
 	}
@@ -464,7 +463,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference)SetSql(v
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference)SetStat(val *string) {
+func (j *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference) SetStat(val *string) {
 	if err := j.validateSetStatParameters(val); err != nil {
 		panic(err)
 	}
@@ -475,7 +474,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference)SetStat(
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -486,7 +485,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -510,16 +509,16 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference) Compute
 	return returns
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -535,7 +534,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference) GetBool
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -551,7 +550,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference) GetBool
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -567,7 +566,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference) GetList
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -583,7 +582,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference) GetNumb
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -599,7 +598,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference) GetNumb
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -615,7 +614,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference) GetNumb
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -631,7 +630,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference) GetStri
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -647,7 +646,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference) GetStri
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -676,21 +675,21 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference) Interpo
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference) PutDimensions(value interface{}) {
+func (s *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference) PutDimensions(value any) {
 	if err := s.validatePutDimensionsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putDimensions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -750,16 +749,16 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference) ResetSt
 	)
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -778,4 +777,3 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference) ToStrin
 
 	return returns
 }
-

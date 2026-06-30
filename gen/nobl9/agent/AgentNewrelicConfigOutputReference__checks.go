@@ -106,7 +106,7 @@ func (j *jsiiProxy_AgentNewrelicConfigOutputReference) validateSetAccountIdParam
 	return nil
 }
 
-func (j *jsiiProxy_AgentNewrelicConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AgentNewrelicConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewAgentNewrelicConfigOutputReferenceParameters(terraformResource c
 
 	return nil
 }
-

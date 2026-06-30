@@ -98,7 +98,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadNewrelicOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsBadNewrelicOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsBadNewrelicOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsBadNewrelicOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsBadNewrelicOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsBadNewrelicOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewSloObjectiveCountMetricsBadNewrelicOutputReferenceParameters(ter
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsTotalInstanaInfrastructureList) valid
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsTotalInstanaInfrastructureList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsTotalInstanaInfrastructureList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSloObjectiveCountMetricsTotalInstanaInfrastructureListParameters
 
 	return nil
 }
-

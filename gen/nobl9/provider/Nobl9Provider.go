@@ -24,7 +24,7 @@ type Nobl9Provider interface {
 	SetClientSecret(val *string)
 	ClientSecretInput() *string
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -33,7 +33,7 @@ type Nobl9Provider interface {
 	SetIngestUrl(val *string)
 	IngestUrlInput() *string
 	// Experimental.
-	MetaAttributes() *map[string]interface{}
+	MetaAttributes() *map[string]any
 	// The tree node.
 	Node() constructs.Node
 	OktaAuthServer() *string
@@ -49,7 +49,7 @@ type Nobl9Provider interface {
 	SetProject(val *string)
 	ProjectInput() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -57,7 +57,7 @@ type Nobl9Provider interface {
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -72,17 +72,17 @@ type Nobl9Provider interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Nobl9Provider
@@ -160,8 +160,8 @@ func (j *jsiiProxy_Nobl9Provider) ClientSecretInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Nobl9Provider) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Nobl9Provider) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -210,8 +210,8 @@ func (j *jsiiProxy_Nobl9Provider) IngestUrlInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Nobl9Provider) MetaAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Nobl9Provider) MetaAttributes() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"metaAttributes",
@@ -310,8 +310,8 @@ func (j *jsiiProxy_Nobl9Provider) ProjectInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Nobl9Provider) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Nobl9Provider) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -350,7 +350,6 @@ func (j *jsiiProxy_Nobl9Provider) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs nobl9} Resource.
 func NewNobl9Provider(scope constructs.Construct, id *string, config *Nobl9ProviderConfig) Nobl9Provider {
 	_init_.Initialize()
@@ -362,7 +361,7 @@ func NewNobl9Provider(scope constructs.Construct, id *string, config *Nobl9Provi
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.provider.Nobl9Provider",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -375,12 +374,12 @@ func NewNobl9Provider_Override(n Nobl9Provider, scope constructs.Construct, id *
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.provider.Nobl9Provider",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		n,
 	)
 }
 
-func (j *jsiiProxy_Nobl9Provider)SetAlias(val *string) {
+func (j *jsiiProxy_Nobl9Provider) SetAlias(val *string) {
 	_jsii_.Set(
 		j,
 		"alias",
@@ -388,7 +387,7 @@ func (j *jsiiProxy_Nobl9Provider)SetAlias(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Nobl9Provider)SetClientId(val *string) {
+func (j *jsiiProxy_Nobl9Provider) SetClientId(val *string) {
 	_jsii_.Set(
 		j,
 		"clientId",
@@ -396,7 +395,7 @@ func (j *jsiiProxy_Nobl9Provider)SetClientId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Nobl9Provider)SetClientSecret(val *string) {
+func (j *jsiiProxy_Nobl9Provider) SetClientSecret(val *string) {
 	_jsii_.Set(
 		j,
 		"clientSecret",
@@ -404,7 +403,7 @@ func (j *jsiiProxy_Nobl9Provider)SetClientSecret(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Nobl9Provider)SetIngestUrl(val *string) {
+func (j *jsiiProxy_Nobl9Provider) SetIngestUrl(val *string) {
 	_jsii_.Set(
 		j,
 		"ingestUrl",
@@ -412,7 +411,7 @@ func (j *jsiiProxy_Nobl9Provider)SetIngestUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Nobl9Provider)SetOktaAuthServer(val *string) {
+func (j *jsiiProxy_Nobl9Provider) SetOktaAuthServer(val *string) {
 	_jsii_.Set(
 		j,
 		"oktaAuthServer",
@@ -420,7 +419,7 @@ func (j *jsiiProxy_Nobl9Provider)SetOktaAuthServer(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Nobl9Provider)SetOktaOrgUrl(val *string) {
+func (j *jsiiProxy_Nobl9Provider) SetOktaOrgUrl(val *string) {
 	_jsii_.Set(
 		j,
 		"oktaOrgUrl",
@@ -428,7 +427,7 @@ func (j *jsiiProxy_Nobl9Provider)SetOktaOrgUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Nobl9Provider)SetOrganization(val *string) {
+func (j *jsiiProxy_Nobl9Provider) SetOrganization(val *string) {
 	_jsii_.Set(
 		j,
 		"organization",
@@ -436,7 +435,7 @@ func (j *jsiiProxy_Nobl9Provider)SetOrganization(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Nobl9Provider)SetProject(val *string) {
+func (j *jsiiProxy_Nobl9Provider) SetProject(val *string) {
 	_jsii_.Set(
 		j,
 		"project",
@@ -456,7 +455,7 @@ func Nobl9Provider_GenerateConfigForImport(scope constructs.Construct, importToI
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-nobl9.provider.Nobl9Provider",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -480,7 +479,7 @@ func Nobl9Provider_GenerateConfigForImport(scope constructs.Construct, importToI
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Nobl9Provider_IsConstruct(x interface{}) *bool {
+func Nobl9Provider_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNobl9Provider_IsConstructParameters(x); err != nil {
@@ -491,7 +490,7 @@ func Nobl9Provider_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-nobl9.provider.Nobl9Provider",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -499,7 +498,7 @@ func Nobl9Provider_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Nobl9Provider_IsTerraformElement(x interface{}) *bool {
+func Nobl9Provider_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNobl9Provider_IsTerraformElementParameters(x); err != nil {
@@ -510,7 +509,7 @@ func Nobl9Provider_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-nobl9.provider.Nobl9Provider",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -518,7 +517,7 @@ func Nobl9Provider_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func Nobl9Provider_IsTerraformProvider(x interface{}) *bool {
+func Nobl9Provider_IsTerraformProvider(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNobl9Provider_IsTerraformProviderParameters(x); err != nil {
@@ -529,7 +528,7 @@ func Nobl9Provider_IsTerraformProvider(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-nobl9.provider.Nobl9Provider",
 		"isTerraformProvider",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -547,14 +546,14 @@ func Nobl9Provider_TfResourceType() *string {
 	return returns
 }
 
-func (n *jsiiProxy_Nobl9Provider) AddOverride(path *string, value interface{}) {
+func (n *jsiiProxy_Nobl9Provider) AddOverride(path *string, value any) {
 	if err := n.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
@@ -565,7 +564,7 @@ func (n *jsiiProxy_Nobl9Provider) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -641,8 +640,8 @@ func (n *jsiiProxy_Nobl9Provider) ResetProject() {
 	)
 }
 
-func (n *jsiiProxy_Nobl9Provider) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_Nobl9Provider) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -654,8 +653,8 @@ func (n *jsiiProxy_Nobl9Provider) SynthesizeAttributes() *map[string]interface{}
 	return returns
 }
 
-func (n *jsiiProxy_Nobl9Provider) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_Nobl9Provider) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -667,8 +666,8 @@ func (n *jsiiProxy_Nobl9Provider) SynthesizeHclAttributes() *map[string]interfac
 	return returns
 }
 
-func (n *jsiiProxy_Nobl9Provider) ToHclTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_Nobl9Provider) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -680,8 +679,8 @@ func (n *jsiiProxy_Nobl9Provider) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (n *jsiiProxy_Nobl9Provider) ToMetadata() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_Nobl9Provider) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -706,8 +705,8 @@ func (n *jsiiProxy_Nobl9Provider) ToString() *string {
 	return returns
 }
 
-func (n *jsiiProxy_Nobl9Provider) ToTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_Nobl9Provider) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -718,4 +717,3 @@ func (n *jsiiProxy_Nobl9Provider) ToTerraform() interface{} {
 
 	return returns
 }
-

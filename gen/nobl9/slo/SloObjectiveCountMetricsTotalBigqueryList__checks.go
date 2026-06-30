@@ -34,7 +34,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsTotalBigqueryList) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsTotalBigqueryList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsTotalBigqueryList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSloObjectiveCountMetricsTotalBigqueryListParameters(terraformRes
 
 	return nil
 }
-

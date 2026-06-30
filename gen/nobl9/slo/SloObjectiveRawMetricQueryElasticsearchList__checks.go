@@ -34,7 +34,7 @@ func (s *jsiiProxy_SloObjectiveRawMetricQueryElasticsearchList) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQueryElasticsearchList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveRawMetricQueryElasticsearchList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSloObjectiveRawMetricQueryElasticsearchListParameters(terraformR
 
 	return nil
 }
-

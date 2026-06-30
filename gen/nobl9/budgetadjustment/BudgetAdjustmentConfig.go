@@ -6,9 +6,9 @@ import (
 
 type BudgetAdjustmentConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type BudgetAdjustmentConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The duration of the budget adjustment event.
 	//
 	// The expected value for this field is a string formatted as a time duration. The duration must be defined with a precision of 1 minute. Example: `1h10m`
@@ -48,7 +48,7 @@ type BudgetAdjustmentConfig struct {
 	// filters block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/budget_adjustment#filters BudgetAdjustment#filters}
-	Filters interface{} `field:"optional" json:"filters" yaml:"filters"`
+	Filters any `field:"optional" json:"filters" yaml:"filters"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/budget_adjustment#id BudgetAdjustment#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -59,4 +59,3 @@ type BudgetAdjustmentConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/budget_adjustment#rrule BudgetAdjustment#rrule}
 	Rrule *string `field:"optional" json:"rrule" yaml:"rrule"`
 }
-

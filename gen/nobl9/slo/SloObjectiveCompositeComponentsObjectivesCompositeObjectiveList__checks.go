@@ -34,7 +34,7 @@ func (s *jsiiProxy_SloObjectiveCompositeComponentsObjectivesCompositeObjectiveLi
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCompositeComponentsObjectivesCompositeObjectiveList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCompositeComponentsObjectivesCompositeObjectiveList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSloObjectiveCompositeComponentsObjectivesCompositeObjectiveListP
 
 	return nil
 }
-

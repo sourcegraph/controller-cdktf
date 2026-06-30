@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.budgetAdjustment.BudgetAdjustment",
-		reflect.TypeOf((*BudgetAdjustment)(nil)).Elem(),
+		reflect.TypeFor[BudgetAdjustment](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,7 +75,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BudgetAdjustment{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -83,15 +83,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.budgetAdjustment.BudgetAdjustmentConfig",
-		reflect.TypeOf((*BudgetAdjustmentConfig)(nil)).Elem(),
+		reflect.TypeFor[BudgetAdjustmentConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.budgetAdjustment.BudgetAdjustmentFilters",
-		reflect.TypeOf((*BudgetAdjustmentFilters)(nil)).Elem(),
+		reflect.TypeFor[BudgetAdjustmentFilters](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.budgetAdjustment.BudgetAdjustmentFiltersList",
-		reflect.TypeOf((*BudgetAdjustmentFiltersList)(nil)).Elem(),
+		reflect.TypeFor[BudgetAdjustmentFiltersList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -105,7 +105,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BudgetAdjustmentFiltersList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -113,7 +113,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.budgetAdjustment.BudgetAdjustmentFiltersOutputReference",
-		reflect.TypeOf((*BudgetAdjustmentFiltersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BudgetAdjustmentFiltersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -140,7 +140,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BudgetAdjustmentFiltersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -148,11 +148,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.budgetAdjustment.BudgetAdjustmentFiltersSlos",
-		reflect.TypeOf((*BudgetAdjustmentFiltersSlos)(nil)).Elem(),
+		reflect.TypeFor[BudgetAdjustmentFiltersSlos](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.budgetAdjustment.BudgetAdjustmentFiltersSlosList",
-		reflect.TypeOf((*BudgetAdjustmentFiltersSlosList)(nil)).Elem(),
+		reflect.TypeFor[BudgetAdjustmentFiltersSlosList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -166,7 +166,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BudgetAdjustmentFiltersSlosList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -174,7 +174,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.budgetAdjustment.BudgetAdjustmentFiltersSlosOutputReference",
-		reflect.TypeOf((*BudgetAdjustmentFiltersSlosOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BudgetAdjustmentFiltersSlosOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -201,7 +201,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BudgetAdjustmentFiltersSlosOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -209,11 +209,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.budgetAdjustment.BudgetAdjustmentFiltersSlosSlo",
-		reflect.TypeOf((*BudgetAdjustmentFiltersSlosSlo)(nil)).Elem(),
+		reflect.TypeFor[BudgetAdjustmentFiltersSlosSlo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.budgetAdjustment.BudgetAdjustmentFiltersSlosSloList",
-		reflect.TypeOf((*BudgetAdjustmentFiltersSlosSloList)(nil)).Elem(),
+		reflect.TypeFor[BudgetAdjustmentFiltersSlosSloList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -227,7 +227,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BudgetAdjustmentFiltersSlosSloList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -235,7 +235,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.budgetAdjustment.BudgetAdjustmentFiltersSlosSloOutputReference",
-		reflect.TypeOf((*BudgetAdjustmentFiltersSlosSloOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BudgetAdjustmentFiltersSlosSloOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -263,7 +263,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BudgetAdjustmentFiltersSlosSloOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

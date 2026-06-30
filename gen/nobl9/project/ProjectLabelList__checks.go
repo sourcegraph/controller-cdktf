@@ -34,7 +34,7 @@ func (p *jsiiProxy_ProjectLabelList) validateResolveParameters(_context cdktf.IR
 	return nil
 }
 
-func (j *jsiiProxy_ProjectLabelList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ProjectLabelList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewProjectLabelListParameters(terraformResource cdktf.IInterpolatin
 
 	return nil
 }
-

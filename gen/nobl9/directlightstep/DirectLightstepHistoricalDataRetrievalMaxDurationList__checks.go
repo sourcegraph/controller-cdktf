@@ -34,7 +34,7 @@ func (d *jsiiProxy_DirectLightstepHistoricalDataRetrievalMaxDurationList) valida
 	return nil
 }
 
-func (j *jsiiProxy_DirectLightstepHistoricalDataRetrievalMaxDurationList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DirectLightstepHistoricalDataRetrievalMaxDurationList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDirectLightstepHistoricalDataRetrievalMaxDurationListParameters(
 
 	return nil
 }
-

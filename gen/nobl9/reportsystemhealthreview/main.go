@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.reportSystemHealthReview.ReportSystemHealthReview",
-		reflect.TypeOf((*ReportSystemHealthReview)(nil)).Elem(),
+		reflect.TypeFor[ReportSystemHealthReview](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -79,7 +79,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReportSystemHealthReview{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -87,15 +87,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.reportSystemHealthReview.ReportSystemHealthReviewColumn",
-		reflect.TypeOf((*ReportSystemHealthReviewColumn)(nil)).Elem(),
+		reflect.TypeFor[ReportSystemHealthReviewColumn](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.reportSystemHealthReview.ReportSystemHealthReviewColumnLabel",
-		reflect.TypeOf((*ReportSystemHealthReviewColumnLabel)(nil)).Elem(),
+		reflect.TypeFor[ReportSystemHealthReviewColumnLabel](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.reportSystemHealthReview.ReportSystemHealthReviewColumnLabelList",
-		reflect.TypeOf((*ReportSystemHealthReviewColumnLabelList)(nil)).Elem(),
+		reflect.TypeFor[ReportSystemHealthReviewColumnLabelList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -109,7 +109,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReportSystemHealthReviewColumnLabelList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -117,7 +117,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.reportSystemHealthReview.ReportSystemHealthReviewColumnLabelOutputReference",
-		reflect.TypeOf((*ReportSystemHealthReviewColumnLabelOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReportSystemHealthReviewColumnLabelOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -145,7 +145,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReportSystemHealthReviewColumnLabelOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -153,7 +153,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.reportSystemHealthReview.ReportSystemHealthReviewColumnList",
-		reflect.TypeOf((*ReportSystemHealthReviewColumnList)(nil)).Elem(),
+		reflect.TypeFor[ReportSystemHealthReviewColumnList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -167,7 +167,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReportSystemHealthReviewColumnList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -175,7 +175,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.reportSystemHealthReview.ReportSystemHealthReviewColumnOutputReference",
-		reflect.TypeOf((*ReportSystemHealthReviewColumnOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReportSystemHealthReviewColumnOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -204,7 +204,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReportSystemHealthReviewColumnOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -212,19 +212,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.reportSystemHealthReview.ReportSystemHealthReviewConfig",
-		reflect.TypeOf((*ReportSystemHealthReviewConfig)(nil)).Elem(),
+		reflect.TypeFor[ReportSystemHealthReviewConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.reportSystemHealthReview.ReportSystemHealthReviewFilters",
-		reflect.TypeOf((*ReportSystemHealthReviewFilters)(nil)).Elem(),
+		reflect.TypeFor[ReportSystemHealthReviewFilters](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.reportSystemHealthReview.ReportSystemHealthReviewFiltersLabel",
-		reflect.TypeOf((*ReportSystemHealthReviewFiltersLabel)(nil)).Elem(),
+		reflect.TypeFor[ReportSystemHealthReviewFiltersLabel](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.reportSystemHealthReview.ReportSystemHealthReviewFiltersLabelList",
-		reflect.TypeOf((*ReportSystemHealthReviewFiltersLabelList)(nil)).Elem(),
+		reflect.TypeFor[ReportSystemHealthReviewFiltersLabelList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -238,7 +238,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReportSystemHealthReviewFiltersLabelList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -246,7 +246,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.reportSystemHealthReview.ReportSystemHealthReviewFiltersLabelOutputReference",
-		reflect.TypeOf((*ReportSystemHealthReviewFiltersLabelOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReportSystemHealthReviewFiltersLabelOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -274,7 +274,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReportSystemHealthReviewFiltersLabelOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -282,7 +282,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.reportSystemHealthReview.ReportSystemHealthReviewFiltersOutputReference",
-		reflect.TypeOf((*ReportSystemHealthReviewFiltersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReportSystemHealthReviewFiltersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -321,7 +321,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReportSystemHealthReviewFiltersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -329,11 +329,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.reportSystemHealthReview.ReportSystemHealthReviewFiltersService",
-		reflect.TypeOf((*ReportSystemHealthReviewFiltersService)(nil)).Elem(),
+		reflect.TypeFor[ReportSystemHealthReviewFiltersService](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.reportSystemHealthReview.ReportSystemHealthReviewFiltersServiceList",
-		reflect.TypeOf((*ReportSystemHealthReviewFiltersServiceList)(nil)).Elem(),
+		reflect.TypeFor[ReportSystemHealthReviewFiltersServiceList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -347,7 +347,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReportSystemHealthReviewFiltersServiceList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -355,7 +355,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.reportSystemHealthReview.ReportSystemHealthReviewFiltersServiceOutputReference",
-		reflect.TypeOf((*ReportSystemHealthReviewFiltersServiceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReportSystemHealthReviewFiltersServiceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -383,7 +383,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReportSystemHealthReviewFiltersServiceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -391,11 +391,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.reportSystemHealthReview.ReportSystemHealthReviewFiltersSlo",
-		reflect.TypeOf((*ReportSystemHealthReviewFiltersSlo)(nil)).Elem(),
+		reflect.TypeFor[ReportSystemHealthReviewFiltersSlo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.reportSystemHealthReview.ReportSystemHealthReviewFiltersSloList",
-		reflect.TypeOf((*ReportSystemHealthReviewFiltersSloList)(nil)).Elem(),
+		reflect.TypeFor[ReportSystemHealthReviewFiltersSloList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -409,7 +409,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReportSystemHealthReviewFiltersSloList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -417,7 +417,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.reportSystemHealthReview.ReportSystemHealthReviewFiltersSloOutputReference",
-		reflect.TypeOf((*ReportSystemHealthReviewFiltersSloOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReportSystemHealthReviewFiltersSloOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -445,7 +445,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReportSystemHealthReviewFiltersSloOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -453,11 +453,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.reportSystemHealthReview.ReportSystemHealthReviewThresholds",
-		reflect.TypeOf((*ReportSystemHealthReviewThresholds)(nil)).Elem(),
+		reflect.TypeFor[ReportSystemHealthReviewThresholds](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.reportSystemHealthReview.ReportSystemHealthReviewThresholdsOutputReference",
-		reflect.TypeOf((*ReportSystemHealthReviewThresholdsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReportSystemHealthReviewThresholdsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -488,7 +488,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReportSystemHealthReviewThresholdsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -496,11 +496,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.reportSystemHealthReview.ReportSystemHealthReviewTimeFrame",
-		reflect.TypeOf((*ReportSystemHealthReviewTimeFrame)(nil)).Elem(),
+		reflect.TypeFor[ReportSystemHealthReviewTimeFrame](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.reportSystemHealthReview.ReportSystemHealthReviewTimeFrameOutputReference",
-		reflect.TypeOf((*ReportSystemHealthReviewTimeFrameOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReportSystemHealthReviewTimeFrameOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -529,7 +529,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeZoneInput", GoGetter: "TimeZoneInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReportSystemHealthReviewTimeFrameOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -537,11 +537,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.reportSystemHealthReview.ReportSystemHealthReviewTimeFrameSnapshot",
-		reflect.TypeOf((*ReportSystemHealthReviewTimeFrameSnapshot)(nil)).Elem(),
+		reflect.TypeFor[ReportSystemHealthReviewTimeFrameSnapshot](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.reportSystemHealthReview.ReportSystemHealthReviewTimeFrameSnapshotOutputReference",
-		reflect.TypeOf((*ReportSystemHealthReviewTimeFrameSnapshotOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReportSystemHealthReviewTimeFrameSnapshotOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -573,7 +573,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReportSystemHealthReviewTimeFrameSnapshotOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

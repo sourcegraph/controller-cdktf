@@ -34,7 +34,7 @@ func (d *jsiiProxy_DirectSplunkHistoricalDataRetrievalMaxDurationList) validateR
 	return nil
 }
 
-func (j *jsiiProxy_DirectSplunkHistoricalDataRetrievalMaxDurationList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DirectSplunkHistoricalDataRetrievalMaxDurationList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDirectSplunkHistoricalDataRetrievalMaxDurationListParameters(ter
 
 	return nil
 }
-

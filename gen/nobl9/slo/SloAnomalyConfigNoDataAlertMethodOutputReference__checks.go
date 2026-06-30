@@ -98,7 +98,7 @@ func (s *jsiiProxy_SloAnomalyConfigNoDataAlertMethodOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_SloAnomalyConfigNoDataAlertMethodOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SloAnomalyConfigNoDataAlertMethodOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_SloAnomalyConfigNoDataAlertMethodOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_SloAnomalyConfigNoDataAlertMethodOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloAnomalyConfigNoDataAlertMethodOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewSloAnomalyConfigNoDataAlertMethodOutputReferenceParameters(terra
 
 	return nil
 }
-

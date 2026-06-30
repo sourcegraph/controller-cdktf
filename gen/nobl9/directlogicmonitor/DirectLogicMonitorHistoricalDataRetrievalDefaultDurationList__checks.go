@@ -34,7 +34,7 @@ func (d *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalDefaultDurationList)
 	return nil
 }
 
-func (j *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalDefaultDurationList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalDefaultDurationList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDirectLogicMonitorHistoricalDataRetrievalDefaultDurationListPara
 
 	return nil
 }
-

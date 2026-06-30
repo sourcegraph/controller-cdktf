@@ -1,6 +1,5 @@
 package slo
 
-
 type SloObjectiveCountMetricsTotalInstanaApplication struct {
 	// Depends on the value specified for 'metric_id'- more info in N9 docs.
 	//
@@ -13,7 +12,7 @@ type SloObjectiveCountMetricsTotalInstanaApplication struct {
 	// group_by block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/slo#group_by Slo#group_by}
-	GroupBy interface{} `field:"required" json:"groupBy" yaml:"groupBy"`
+	GroupBy any `field:"required" json:"groupBy" yaml:"groupBy"`
 	// Metric ID one of 'calls', 'erroneousCalls', 'errors', 'latency'.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/slo#metric_id Slo#metric_id}
@@ -21,10 +20,9 @@ type SloObjectiveCountMetricsTotalInstanaApplication struct {
 	// Include internal.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/slo#include_internal Slo#include_internal}
-	IncludeInternal interface{} `field:"optional" json:"includeInternal" yaml:"includeInternal"`
+	IncludeInternal any `field:"optional" json:"includeInternal" yaml:"includeInternal"`
 	// Include synthetic.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/slo#include_synthetic Slo#include_synthetic}
-	IncludeSynthetic interface{} `field:"optional" json:"includeSynthetic" yaml:"includeSynthetic"`
+	IncludeSynthetic any `field:"optional" json:"includeSynthetic" yaml:"includeSynthetic"`
 }
-

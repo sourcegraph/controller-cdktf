@@ -90,7 +90,7 @@ func (b *jsiiProxy_BudgetAdjustmentFiltersSlosOutputReference) validateInterpola
 	return nil
 }
 
-func (b *jsiiProxy_BudgetAdjustmentFiltersSlosOutputReference) validatePutSloParameters(value interface{}) error {
+func (b *jsiiProxy_BudgetAdjustmentFiltersSlosOutputReference) validatePutSloParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (b *jsiiProxy_BudgetAdjustmentFiltersSlosOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_BudgetAdjustmentFiltersSlosOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BudgetAdjustmentFiltersSlosOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_BudgetAdjustmentFiltersSlosOutputReference) validateSetComple
 	return nil
 }
 
-func (j *jsiiProxy_BudgetAdjustmentFiltersSlosOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BudgetAdjustmentFiltersSlosOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -253,4 +253,3 @@ func validateNewBudgetAdjustmentFiltersSlosOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

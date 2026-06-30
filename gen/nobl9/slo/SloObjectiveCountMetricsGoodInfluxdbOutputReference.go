@@ -12,9 +12,9 @@ type SloObjectiveCountMetricsGoodInfluxdbOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,8 +27,8 @@ type SloObjectiveCountMetricsGoodInfluxdbOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Query() *string
 	SetQuery(val *string)
 	QueryInput() *string
@@ -43,7 +43,7 @@ type SloObjectiveCountMetricsGoodInfluxdbOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,7 +66,7 @@ type SloObjectiveCountMetricsGoodInfluxdbOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,8 +79,8 @@ type jsiiProxy_SloObjectiveCountMetricsGoodInfluxdbOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodInfluxdbOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodInfluxdbOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -119,8 +119,8 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodInfluxdbOutputReference) Fqn() *s
 	return returns
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodInfluxdbOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodInfluxdbOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -169,7 +169,6 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodInfluxdbOutputReference) Terrafor
 	return returns
 }
 
-
 func NewSloObjectiveCountMetricsGoodInfluxdbOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SloObjectiveCountMetricsGoodInfluxdbOutputReference {
 	_init_.Initialize()
 
@@ -180,7 +179,7 @@ func NewSloObjectiveCountMetricsGoodInfluxdbOutputReference(terraformResource cd
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodInfluxdbOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -192,12 +191,12 @@ func NewSloObjectiveCountMetricsGoodInfluxdbOutputReference_Override(s SloObject
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodInfluxdbOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodInfluxdbOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodInfluxdbOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -208,7 +207,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodInfluxdbOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodInfluxdbOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodInfluxdbOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -219,7 +218,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodInfluxdbOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodInfluxdbOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodInfluxdbOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -230,7 +229,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodInfluxdbOutputReference)SetIntern
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodInfluxdbOutputReference)SetQuery(val *string) {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodInfluxdbOutputReference) SetQuery(val *string) {
 	if err := j.validateSetQueryParameters(val); err != nil {
 		panic(err)
 	}
@@ -241,7 +240,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodInfluxdbOutputReference)SetQuery(
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodInfluxdbOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodInfluxdbOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -252,7 +251,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodInfluxdbOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodInfluxdbOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodInfluxdbOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,16 +275,16 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodInfluxdbOutputReference) ComputeF
 	return returns
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodInfluxdbOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodInfluxdbOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -301,7 +300,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodInfluxdbOutputReference) GetBoole
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -317,7 +316,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodInfluxdbOutputReference) GetBoole
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -333,7 +332,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodInfluxdbOutputReference) GetListA
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -349,7 +348,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodInfluxdbOutputReference) GetNumbe
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -365,7 +364,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodInfluxdbOutputReference) GetNumbe
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -381,7 +380,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodInfluxdbOutputReference) GetNumbe
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -397,7 +396,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodInfluxdbOutputReference) GetStrin
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -413,7 +412,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodInfluxdbOutputReference) GetStrin
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,23 +441,23 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodInfluxdbOutputReference) Interpol
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodInfluxdbOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodInfluxdbOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -477,4 +476,3 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodInfluxdbOutputReference) ToString
 
 	return returns
 }
-

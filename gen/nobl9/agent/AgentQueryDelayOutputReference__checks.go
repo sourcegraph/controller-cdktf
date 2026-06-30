@@ -98,7 +98,7 @@ func (a *jsiiProxy_AgentQueryDelayOutputReference) validateResolveParameters(_co
 	return nil
 }
 
-func (j *jsiiProxy_AgentQueryDelayOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AgentQueryDelayOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewAgentQueryDelayOutputReferenceParameters(terraformResource cdktf
 
 	return nil
 }
-

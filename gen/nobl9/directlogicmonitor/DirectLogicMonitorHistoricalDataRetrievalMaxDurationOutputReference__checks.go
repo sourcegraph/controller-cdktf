@@ -98,7 +98,7 @@ func (d *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalMaxDurationOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalMaxDurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalMaxDurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalMaxDurationOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalMaxDurationOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalMaxDurationOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDirectLogicMonitorHistoricalDataRetrievalMaxDurationOutputRefere
 
 	return nil
 }
-

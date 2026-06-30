@@ -34,7 +34,7 @@ func (d *jsiiProxy_DirectHoneycombHistoricalDataRetrievalMaxDurationList) valida
 	return nil
 }
 
-func (j *jsiiProxy_DirectHoneycombHistoricalDataRetrievalMaxDurationList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DirectHoneycombHistoricalDataRetrievalMaxDurationList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDirectHoneycombHistoricalDataRetrievalMaxDurationListParameters(
 
 	return nil
 }
-

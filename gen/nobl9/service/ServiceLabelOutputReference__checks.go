@@ -98,7 +98,7 @@ func (s *jsiiProxy_ServiceLabelOutputReference) validateResolveParameters(_conte
 	return nil
 }
 
-func (j *jsiiProxy_ServiceLabelOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ServiceLabelOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ServiceLabelOutputReference) validateSetComplexObjectIsFromSe
 	return nil
 }
 
-func (j *jsiiProxy_ServiceLabelOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ServiceLabelOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewServiceLabelOutputReferenceParameters(terraformResource cdktf.II
 
 	return nil
 }
-

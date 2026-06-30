@@ -21,15 +21,15 @@ type DirectAzureMonitor interface {
 	SetClientSecret(val *string)
 	ClientSecretInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -57,9 +57,9 @@ type DirectAzureMonitor interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	LogCollectionEnabled() interface{}
-	SetLogCollectionEnabled(val interface{})
-	LogCollectionEnabledInput() interface{}
+	LogCollectionEnabled() any
+	SetLogCollectionEnabled(val any)
+	LogCollectionEnabledInput() any
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -73,13 +73,13 @@ type DirectAzureMonitor interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	QueryDelay() DirectAzureMonitorQueryDelayOutputReference
 	QueryDelayInput() *DirectAzureMonitorQueryDelay
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ReleaseChannel() *string
 	SetReleaseChannel(val *string)
 	ReleaseChannelInput() *string
@@ -93,16 +93,16 @@ type DirectAzureMonitor interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -120,7 +120,7 @@ type DirectAzureMonitor interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -132,7 +132,7 @@ type DirectAzureMonitor interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -154,17 +154,17 @@ type DirectAzureMonitor interface {
 	ResetQueryDelay()
 	ResetReleaseChannel()
 	ResetSourceOf()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DirectAzureMonitor
@@ -222,8 +222,8 @@ func (j *jsiiProxy_DirectAzureMonitor) ClientSecretInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DirectAzureMonitor) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DirectAzureMonitor) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -232,8 +232,8 @@ func (j *jsiiProxy_DirectAzureMonitor) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DirectAzureMonitor) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DirectAzureMonitor) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -242,8 +242,8 @@ func (j *jsiiProxy_DirectAzureMonitor) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_DirectAzureMonitor) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DirectAzureMonitor) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -382,8 +382,8 @@ func (j *jsiiProxy_DirectAzureMonitor) Lifecycle() *cdktf.TerraformResourceLifec
 	return returns
 }
 
-func (j *jsiiProxy_DirectAzureMonitor) LogCollectionEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DirectAzureMonitor) LogCollectionEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"logCollectionEnabled",
@@ -392,8 +392,8 @@ func (j *jsiiProxy_DirectAzureMonitor) LogCollectionEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DirectAzureMonitor) LogCollectionEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DirectAzureMonitor) LogCollectionEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"logCollectionEnabledInput",
@@ -462,8 +462,8 @@ func (j *jsiiProxy_DirectAzureMonitor) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DirectAzureMonitor) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DirectAzureMonitor) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -492,8 +492,8 @@ func (j *jsiiProxy_DirectAzureMonitor) QueryDelayInput() *DirectAzureMonitorQuer
 	return returns
 }
 
-func (j *jsiiProxy_DirectAzureMonitor) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DirectAzureMonitor) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -582,8 +582,8 @@ func (j *jsiiProxy_DirectAzureMonitor) TerraformGeneratorMetadata() *cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_DirectAzureMonitor) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DirectAzureMonitor) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -602,7 +602,6 @@ func (j *jsiiProxy_DirectAzureMonitor) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_azure_monitor nobl9_direct_azure_monitor} Resource.
 func NewDirectAzureMonitor(scope constructs.Construct, id *string, config *DirectAzureMonitorConfig) DirectAzureMonitor {
 	_init_.Initialize()
@@ -614,7 +613,7 @@ func NewDirectAzureMonitor(scope constructs.Construct, id *string, config *Direc
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.directAzureMonitor.DirectAzureMonitor",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -627,12 +626,12 @@ func NewDirectAzureMonitor_Override(d DirectAzureMonitor, scope constructs.Const
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.directAzureMonitor.DirectAzureMonitor",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DirectAzureMonitor)SetClientId(val *string) {
+func (j *jsiiProxy_DirectAzureMonitor) SetClientId(val *string) {
 	if err := j.validateSetClientIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -643,7 +642,7 @@ func (j *jsiiProxy_DirectAzureMonitor)SetClientId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DirectAzureMonitor)SetClientSecret(val *string) {
+func (j *jsiiProxy_DirectAzureMonitor) SetClientSecret(val *string) {
 	if err := j.validateSetClientSecretParameters(val); err != nil {
 		panic(err)
 	}
@@ -654,7 +653,7 @@ func (j *jsiiProxy_DirectAzureMonitor)SetClientSecret(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DirectAzureMonitor)SetConnection(val interface{}) {
+func (j *jsiiProxy_DirectAzureMonitor) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -665,7 +664,7 @@ func (j *jsiiProxy_DirectAzureMonitor)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DirectAzureMonitor)SetCount(val interface{}) {
+func (j *jsiiProxy_DirectAzureMonitor) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -676,7 +675,7 @@ func (j *jsiiProxy_DirectAzureMonitor)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DirectAzureMonitor)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DirectAzureMonitor) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -684,7 +683,7 @@ func (j *jsiiProxy_DirectAzureMonitor)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DirectAzureMonitor)SetDescription(val *string) {
+func (j *jsiiProxy_DirectAzureMonitor) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -695,7 +694,7 @@ func (j *jsiiProxy_DirectAzureMonitor)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DirectAzureMonitor)SetDisplayName(val *string) {
+func (j *jsiiProxy_DirectAzureMonitor) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -706,7 +705,7 @@ func (j *jsiiProxy_DirectAzureMonitor)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DirectAzureMonitor)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DirectAzureMonitor) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -714,7 +713,7 @@ func (j *jsiiProxy_DirectAzureMonitor)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DirectAzureMonitor)SetId(val *string) {
+func (j *jsiiProxy_DirectAzureMonitor) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -725,7 +724,7 @@ func (j *jsiiProxy_DirectAzureMonitor)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DirectAzureMonitor)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DirectAzureMonitor) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -736,7 +735,7 @@ func (j *jsiiProxy_DirectAzureMonitor)SetLifecycle(val *cdktf.TerraformResourceL
 	)
 }
 
-func (j *jsiiProxy_DirectAzureMonitor)SetLogCollectionEnabled(val interface{}) {
+func (j *jsiiProxy_DirectAzureMonitor) SetLogCollectionEnabled(val any) {
 	if err := j.validateSetLogCollectionEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -747,7 +746,7 @@ func (j *jsiiProxy_DirectAzureMonitor)SetLogCollectionEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DirectAzureMonitor)SetName(val *string) {
+func (j *jsiiProxy_DirectAzureMonitor) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -758,7 +757,7 @@ func (j *jsiiProxy_DirectAzureMonitor)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DirectAzureMonitor)SetProject(val *string) {
+func (j *jsiiProxy_DirectAzureMonitor) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -769,7 +768,7 @@ func (j *jsiiProxy_DirectAzureMonitor)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DirectAzureMonitor)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DirectAzureMonitor) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -777,7 +776,7 @@ func (j *jsiiProxy_DirectAzureMonitor)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_DirectAzureMonitor)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DirectAzureMonitor) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -788,7 +787,7 @@ func (j *jsiiProxy_DirectAzureMonitor)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DirectAzureMonitor)SetReleaseChannel(val *string) {
+func (j *jsiiProxy_DirectAzureMonitor) SetReleaseChannel(val *string) {
 	if err := j.validateSetReleaseChannelParameters(val); err != nil {
 		panic(err)
 	}
@@ -799,7 +798,7 @@ func (j *jsiiProxy_DirectAzureMonitor)SetReleaseChannel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DirectAzureMonitor)SetSourceOf(val *[]*string) {
+func (j *jsiiProxy_DirectAzureMonitor) SetSourceOf(val *[]*string) {
 	if err := j.validateSetSourceOfParameters(val); err != nil {
 		panic(err)
 	}
@@ -810,7 +809,7 @@ func (j *jsiiProxy_DirectAzureMonitor)SetSourceOf(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DirectAzureMonitor)SetTenantId(val *string) {
+func (j *jsiiProxy_DirectAzureMonitor) SetTenantId(val *string) {
 	if err := j.validateSetTenantIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -833,7 +832,7 @@ func DirectAzureMonitor_GenerateConfigForImport(scope constructs.Construct, impo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-nobl9.directAzureMonitor.DirectAzureMonitor",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -857,7 +856,7 @@ func DirectAzureMonitor_GenerateConfigForImport(scope constructs.Construct, impo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DirectAzureMonitor_IsConstruct(x interface{}) *bool {
+func DirectAzureMonitor_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDirectAzureMonitor_IsConstructParameters(x); err != nil {
@@ -868,7 +867,7 @@ func DirectAzureMonitor_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-nobl9.directAzureMonitor.DirectAzureMonitor",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -876,7 +875,7 @@ func DirectAzureMonitor_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DirectAzureMonitor_IsTerraformElement(x interface{}) *bool {
+func DirectAzureMonitor_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDirectAzureMonitor_IsTerraformElementParameters(x); err != nil {
@@ -887,7 +886,7 @@ func DirectAzureMonitor_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-nobl9.directAzureMonitor.DirectAzureMonitor",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -895,7 +894,7 @@ func DirectAzureMonitor_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func DirectAzureMonitor_IsTerraformResource(x interface{}) *bool {
+func DirectAzureMonitor_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDirectAzureMonitor_IsTerraformResourceParameters(x); err != nil {
@@ -906,7 +905,7 @@ func DirectAzureMonitor_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-nobl9.directAzureMonitor.DirectAzureMonitor",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -931,31 +930,31 @@ func (d *jsiiProxy_DirectAzureMonitor) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_DirectAzureMonitor) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DirectAzureMonitor) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DirectAzureMonitor) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DirectAzureMonitor) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -971,7 +970,7 @@ func (d *jsiiProxy_DirectAzureMonitor) GetBooleanAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -987,7 +986,7 @@ func (d *jsiiProxy_DirectAzureMonitor) GetBooleanMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1003,7 +1002,7 @@ func (d *jsiiProxy_DirectAzureMonitor) GetListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1019,7 +1018,7 @@ func (d *jsiiProxy_DirectAzureMonitor) GetNumberAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1035,7 +1034,7 @@ func (d *jsiiProxy_DirectAzureMonitor) GetNumberListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1051,7 +1050,7 @@ func (d *jsiiProxy_DirectAzureMonitor) GetNumberMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1067,7 +1066,7 @@ func (d *jsiiProxy_DirectAzureMonitor) GetStringAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1083,15 +1082,15 @@ func (d *jsiiProxy_DirectAzureMonitor) GetStringMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DirectAzureMonitor) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DirectAzureMonitor) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1110,7 +1109,7 @@ func (d *jsiiProxy_DirectAzureMonitor) ImportFrom(id *string, provider cdktf.Ter
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1123,7 +1122,7 @@ func (d *jsiiProxy_DirectAzureMonitor) InterpolationForAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1137,18 +1136,18 @@ func (d *jsiiProxy_DirectAzureMonitor) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_DirectAzureMonitor) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_DirectAzureMonitor) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1159,7 +1158,7 @@ func (d *jsiiProxy_DirectAzureMonitor) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1170,7 +1169,7 @@ func (d *jsiiProxy_DirectAzureMonitor) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1181,7 +1180,7 @@ func (d *jsiiProxy_DirectAzureMonitor) PutHistoricalDataRetrieval(value *DirectA
 	_jsii_.InvokeVoid(
 		d,
 		"putHistoricalDataRetrieval",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1192,7 +1191,7 @@ func (d *jsiiProxy_DirectAzureMonitor) PutQueryDelay(value *DirectAzureMonitorQu
 	_jsii_.InvokeVoid(
 		d,
 		"putQueryDelay",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1284,8 +1283,8 @@ func (d *jsiiProxy_DirectAzureMonitor) ResetSourceOf() {
 	)
 }
 
-func (d *jsiiProxy_DirectAzureMonitor) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DirectAzureMonitor) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1297,8 +1296,8 @@ func (d *jsiiProxy_DirectAzureMonitor) SynthesizeAttributes() *map[string]interf
 	return returns
 }
 
-func (d *jsiiProxy_DirectAzureMonitor) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DirectAzureMonitor) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1310,8 +1309,8 @@ func (d *jsiiProxy_DirectAzureMonitor) SynthesizeHclAttributes() *map[string]int
 	return returns
 }
 
-func (d *jsiiProxy_DirectAzureMonitor) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DirectAzureMonitor) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1323,8 +1322,8 @@ func (d *jsiiProxy_DirectAzureMonitor) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DirectAzureMonitor) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DirectAzureMonitor) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1349,8 +1348,8 @@ func (d *jsiiProxy_DirectAzureMonitor) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DirectAzureMonitor) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DirectAzureMonitor) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1361,4 +1360,3 @@ func (d *jsiiProxy_DirectAzureMonitor) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -34,7 +34,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodTotalPingdomList) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodTotalPingdomList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodTotalPingdomList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSloObjectiveCountMetricsGoodTotalPingdomListParameters(terraform
 
 	return nil
 }
-

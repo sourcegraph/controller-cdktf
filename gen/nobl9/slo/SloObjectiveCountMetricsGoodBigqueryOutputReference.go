@@ -12,9 +12,9 @@ type SloObjectiveCountMetricsGoodBigqueryOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,8 +27,8 @@ type SloObjectiveCountMetricsGoodBigqueryOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
@@ -49,7 +49,7 @@ type SloObjectiveCountMetricsGoodBigqueryOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -72,7 +72,7 @@ type SloObjectiveCountMetricsGoodBigqueryOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,8 +85,8 @@ type jsiiProxy_SloObjectiveCountMetricsGoodBigqueryOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodBigqueryOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodBigqueryOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -125,8 +125,8 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodBigqueryOutputReference) Fqn() *s
 	return returns
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodBigqueryOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodBigqueryOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -215,7 +215,6 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodBigqueryOutputReference) Terrafor
 	return returns
 }
 
-
 func NewSloObjectiveCountMetricsGoodBigqueryOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SloObjectiveCountMetricsGoodBigqueryOutputReference {
 	_init_.Initialize()
 
@@ -226,7 +225,7 @@ func NewSloObjectiveCountMetricsGoodBigqueryOutputReference(terraformResource cd
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodBigqueryOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -238,12 +237,12 @@ func NewSloObjectiveCountMetricsGoodBigqueryOutputReference_Override(s SloObject
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodBigqueryOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodBigqueryOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodBigqueryOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodBigqueryOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodBigqueryOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodBigqueryOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodBigqueryOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodBigqueryOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodBigqueryOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodBigqueryOutputReference)SetIntern
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodBigqueryOutputReference)SetLocation(val *string) {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodBigqueryOutputReference) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodBigqueryOutputReference)SetLocati
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodBigqueryOutputReference)SetProjectId(val *string) {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodBigqueryOutputReference) SetProjectId(val *string) {
 	if err := j.validateSetProjectIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -298,7 +297,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodBigqueryOutputReference)SetProjec
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodBigqueryOutputReference)SetQuery(val *string) {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodBigqueryOutputReference) SetQuery(val *string) {
 	if err := j.validateSetQueryParameters(val); err != nil {
 		panic(err)
 	}
@@ -309,7 +308,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodBigqueryOutputReference)SetQuery(
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodBigqueryOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodBigqueryOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -320,7 +319,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodBigqueryOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodBigqueryOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodBigqueryOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -344,16 +343,16 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodBigqueryOutputReference) ComputeF
 	return returns
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodBigqueryOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodBigqueryOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodBigqueryOutputReference) GetBoole
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodBigqueryOutputReference) GetBoole
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodBigqueryOutputReference) GetListA
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodBigqueryOutputReference) GetNumbe
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodBigqueryOutputReference) GetNumbe
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodBigqueryOutputReference) GetNumbe
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -465,7 +464,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodBigqueryOutputReference) GetStrin
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -481,7 +480,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodBigqueryOutputReference) GetStrin
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -510,23 +509,23 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodBigqueryOutputReference) Interpol
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodBigqueryOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodBigqueryOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -545,4 +544,3 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodBigqueryOutputReference) ToString
 
 	return returns
 }
-

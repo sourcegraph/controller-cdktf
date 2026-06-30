@@ -98,7 +98,7 @@ func (s *jsiiProxy_SloCompositeBurnRateConditionOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_SloCompositeBurnRateConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SloCompositeBurnRateConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_SloCompositeBurnRateConditionOutputReference) validateSetComp
 	return nil
 }
 
-func (j *jsiiProxy_SloCompositeBurnRateConditionOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloCompositeBurnRateConditionOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewSloCompositeBurnRateConditionOutputReferenceParameters(terraform
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (a *jsiiProxy_AgentPingdomConfigOutputReference) validateResolveParameters(
 	return nil
 }
 
-func (j *jsiiProxy_AgentPingdomConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AgentPingdomConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewAgentPingdomConfigOutputReferenceParameters(terraformResource cd
 
 	return nil
 }
-

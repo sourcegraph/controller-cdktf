@@ -98,7 +98,7 @@ func (r *jsiiProxy_ReportSystemHealthReviewThresholdsOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_ReportSystemHealthReviewThresholdsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ReportSystemHealthReviewThresholdsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_ReportSystemHealthReviewThresholdsOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_ReportSystemHealthReviewThresholdsOutputReference) validateSetShowNoDataParameters(val interface{}) error {
+func (j *jsiiProxy_ReportSystemHealthReviewThresholdsOutputReference) validateSetShowNoDataParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -234,4 +234,3 @@ func validateNewReportSystemHealthReviewThresholdsOutputReferenceParameters(terr
 
 	return nil
 }
-

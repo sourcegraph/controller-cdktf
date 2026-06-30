@@ -34,7 +34,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadPrometheusList) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsBadPrometheusList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsBadPrometheusList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSloObjectiveCountMetricsBadPrometheusListParameters(terraformRes
 
 	return nil
 }
-

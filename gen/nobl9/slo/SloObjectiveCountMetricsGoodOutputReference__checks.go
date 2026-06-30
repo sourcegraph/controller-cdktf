@@ -90,7 +90,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validateInterpol
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutAmazonPrometheusParameters(value interface{}) error {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutAmazonPrometheusParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutAmazo
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutAppdynamicsParameters(value interface{}) error {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutAppdynamicsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -152,7 +152,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutAppdy
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutAzureMonitorParameters(value interface{}) error {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutAzureMonitorParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutAzure
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutBigqueryParameters(value interface{}) error {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutBigqueryParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -214,7 +214,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutBigqu
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutCloudwatchParameters(value interface{}) error {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutCloudwatchParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -245,7 +245,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutCloud
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutDatadogParameters(value interface{}) error {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutDatadogParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -276,7 +276,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutDatad
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutDynatraceParameters(value interface{}) error {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutDynatraceParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -307,7 +307,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutDynat
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutElasticsearchParameters(value interface{}) error {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutElasticsearchParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -338,7 +338,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutElast
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutGcmParameters(value interface{}) error {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutGcmParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -369,7 +369,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutGcmPa
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutGrafanaLokiParameters(value interface{}) error {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutGrafanaLokiParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -400,7 +400,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutGrafa
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutGraphiteParameters(value interface{}) error {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutGraphiteParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -431,7 +431,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutGraph
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutHoneycombParameters(value interface{}) error {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutHoneycombParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -462,7 +462,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutHoney
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutInfluxdbParameters(value interface{}) error {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutInfluxdbParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -493,7 +493,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutInflu
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutInstanaParameters(value interface{}) error {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutInstanaParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -524,7 +524,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutInsta
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutLightstepParameters(value interface{}) error {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutLightstepParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -555,7 +555,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutLight
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutLogicMonitorParameters(value interface{}) error {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutLogicMonitorParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -586,7 +586,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutLogic
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutNewrelicParameters(value interface{}) error {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutNewrelicParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -617,7 +617,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutNewre
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutOpentsdbParameters(value interface{}) error {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutOpentsdbParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -648,7 +648,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutOpent
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutPingdomParameters(value interface{}) error {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutPingdomParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -679,7 +679,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutPingd
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutPrometheusParameters(value interface{}) error {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutPrometheusParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -710,7 +710,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutProme
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutRedshiftParameters(value interface{}) error {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutRedshiftParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -741,7 +741,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutRedsh
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutSplunkParameters(value interface{}) error {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutSplunkParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -772,7 +772,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutSplun
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutSplunkObservabilityParameters(value interface{}) error {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutSplunkObservabilityParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -803,7 +803,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutSplun
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutSumologicParameters(value interface{}) error {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutSumologicParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -834,7 +834,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutSumol
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutThousandeyesParameters(value interface{}) error {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validatePutThousandeyesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -873,7 +873,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -938,7 +938,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validateSetCompl
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -997,4 +997,3 @@ func validateNewSloObjectiveCountMetricsGoodOutputReferenceParameters(terraformR
 
 	return nil
 }
-

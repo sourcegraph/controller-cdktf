@@ -98,7 +98,7 @@ func (d *jsiiProxy_DirectGcmHistoricalDataRetrievalDefaultDurationOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DirectGcmHistoricalDataRetrievalDefaultDurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DirectGcmHistoricalDataRetrievalDefaultDurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DirectGcmHistoricalDataRetrievalDefaultDurationOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DirectGcmHistoricalDataRetrievalDefaultDurationOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DirectGcmHistoricalDataRetrievalDefaultDurationOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDirectGcmHistoricalDataRetrievalDefaultDurationOutputReferencePa
 
 	return nil
 }
-

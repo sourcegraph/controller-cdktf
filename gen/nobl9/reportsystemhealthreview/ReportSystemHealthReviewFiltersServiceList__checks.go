@@ -34,7 +34,7 @@ func (r *jsiiProxy_ReportSystemHealthReviewFiltersServiceList) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_ReportSystemHealthReviewFiltersServiceList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ReportSystemHealthReviewFiltersServiceList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewReportSystemHealthReviewFiltersServiceListParameters(terraformRe
 
 	return nil
 }
-

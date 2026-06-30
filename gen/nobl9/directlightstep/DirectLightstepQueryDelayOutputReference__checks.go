@@ -98,7 +98,7 @@ func (d *jsiiProxy_DirectLightstepQueryDelayOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_DirectLightstepQueryDelayOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DirectLightstepQueryDelayOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewDirectLightstepQueryDelayOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

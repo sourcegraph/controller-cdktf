@@ -34,7 +34,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadGcmList) validateResolveParameters
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsBadGcmList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsBadGcmList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSloObjectiveCountMetricsBadGcmListParameters(terraformResource c
 
 	return nil
 }
-

@@ -15,15 +15,15 @@ type DirectThousandeyes interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -49,9 +49,9 @@ type DirectThousandeyes interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	LogCollectionEnabled() interface{}
-	SetLogCollectionEnabled(val interface{})
-	LogCollectionEnabledInput() interface{}
+	LogCollectionEnabled() any
+	SetLogCollectionEnabled(val any)
+	LogCollectionEnabledInput() any
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -68,13 +68,13 @@ type DirectThousandeyes interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	QueryDelay() DirectThousandeyesQueryDelayOutputReference
 	QueryDelayInput() *DirectThousandeyesQueryDelay
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ReleaseChannel() *string
 	SetReleaseChannel(val *string)
 	ReleaseChannelInput() *string
@@ -85,16 +85,16 @@ type DirectThousandeyes interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -112,7 +112,7 @@ type DirectThousandeyes interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -124,7 +124,7 @@ type DirectThousandeyes interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -143,17 +143,17 @@ type DirectThousandeyes interface {
 	ResetQueryDelay()
 	ResetReleaseChannel()
 	ResetSourceOf()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DirectThousandeyes
@@ -171,8 +171,8 @@ func (j *jsiiProxy_DirectThousandeyes) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DirectThousandeyes) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DirectThousandeyes) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -181,8 +181,8 @@ func (j *jsiiProxy_DirectThousandeyes) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DirectThousandeyes) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DirectThousandeyes) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -191,8 +191,8 @@ func (j *jsiiProxy_DirectThousandeyes) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_DirectThousandeyes) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DirectThousandeyes) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -311,8 +311,8 @@ func (j *jsiiProxy_DirectThousandeyes) Lifecycle() *cdktf.TerraformResourceLifec
 	return returns
 }
 
-func (j *jsiiProxy_DirectThousandeyes) LogCollectionEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DirectThousandeyes) LogCollectionEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"logCollectionEnabled",
@@ -321,8 +321,8 @@ func (j *jsiiProxy_DirectThousandeyes) LogCollectionEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DirectThousandeyes) LogCollectionEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DirectThousandeyes) LogCollectionEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"logCollectionEnabledInput",
@@ -411,8 +411,8 @@ func (j *jsiiProxy_DirectThousandeyes) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DirectThousandeyes) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DirectThousandeyes) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -441,8 +441,8 @@ func (j *jsiiProxy_DirectThousandeyes) QueryDelayInput() *DirectThousandeyesQuer
 	return returns
 }
 
-func (j *jsiiProxy_DirectThousandeyes) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DirectThousandeyes) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -511,8 +511,8 @@ func (j *jsiiProxy_DirectThousandeyes) TerraformGeneratorMetadata() *cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_DirectThousandeyes) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DirectThousandeyes) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -531,7 +531,6 @@ func (j *jsiiProxy_DirectThousandeyes) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_thousandeyes nobl9_direct_thousandeyes} Resource.
 func NewDirectThousandeyes(scope constructs.Construct, id *string, config *DirectThousandeyesConfig) DirectThousandeyes {
 	_init_.Initialize()
@@ -543,7 +542,7 @@ func NewDirectThousandeyes(scope constructs.Construct, id *string, config *Direc
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.directThousandeyes.DirectThousandeyes",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -556,12 +555,12 @@ func NewDirectThousandeyes_Override(d DirectThousandeyes, scope constructs.Const
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.directThousandeyes.DirectThousandeyes",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DirectThousandeyes)SetConnection(val interface{}) {
+func (j *jsiiProxy_DirectThousandeyes) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -572,7 +571,7 @@ func (j *jsiiProxy_DirectThousandeyes)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DirectThousandeyes)SetCount(val interface{}) {
+func (j *jsiiProxy_DirectThousandeyes) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -583,7 +582,7 @@ func (j *jsiiProxy_DirectThousandeyes)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DirectThousandeyes)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DirectThousandeyes) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -591,7 +590,7 @@ func (j *jsiiProxy_DirectThousandeyes)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DirectThousandeyes)SetDescription(val *string) {
+func (j *jsiiProxy_DirectThousandeyes) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -602,7 +601,7 @@ func (j *jsiiProxy_DirectThousandeyes)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DirectThousandeyes)SetDisplayName(val *string) {
+func (j *jsiiProxy_DirectThousandeyes) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -613,7 +612,7 @@ func (j *jsiiProxy_DirectThousandeyes)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DirectThousandeyes)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DirectThousandeyes) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -621,7 +620,7 @@ func (j *jsiiProxy_DirectThousandeyes)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DirectThousandeyes)SetId(val *string) {
+func (j *jsiiProxy_DirectThousandeyes) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -632,7 +631,7 @@ func (j *jsiiProxy_DirectThousandeyes)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DirectThousandeyes)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DirectThousandeyes) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -643,7 +642,7 @@ func (j *jsiiProxy_DirectThousandeyes)SetLifecycle(val *cdktf.TerraformResourceL
 	)
 }
 
-func (j *jsiiProxy_DirectThousandeyes)SetLogCollectionEnabled(val interface{}) {
+func (j *jsiiProxy_DirectThousandeyes) SetLogCollectionEnabled(val any) {
 	if err := j.validateSetLogCollectionEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -654,7 +653,7 @@ func (j *jsiiProxy_DirectThousandeyes)SetLogCollectionEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DirectThousandeyes)SetName(val *string) {
+func (j *jsiiProxy_DirectThousandeyes) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -665,7 +664,7 @@ func (j *jsiiProxy_DirectThousandeyes)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DirectThousandeyes)SetOauthBearerToken(val *string) {
+func (j *jsiiProxy_DirectThousandeyes) SetOauthBearerToken(val *string) {
 	if err := j.validateSetOauthBearerTokenParameters(val); err != nil {
 		panic(err)
 	}
@@ -676,7 +675,7 @@ func (j *jsiiProxy_DirectThousandeyes)SetOauthBearerToken(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DirectThousandeyes)SetProject(val *string) {
+func (j *jsiiProxy_DirectThousandeyes) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -687,7 +686,7 @@ func (j *jsiiProxy_DirectThousandeyes)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DirectThousandeyes)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DirectThousandeyes) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -695,7 +694,7 @@ func (j *jsiiProxy_DirectThousandeyes)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_DirectThousandeyes)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DirectThousandeyes) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -706,7 +705,7 @@ func (j *jsiiProxy_DirectThousandeyes)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DirectThousandeyes)SetReleaseChannel(val *string) {
+func (j *jsiiProxy_DirectThousandeyes) SetReleaseChannel(val *string) {
 	if err := j.validateSetReleaseChannelParameters(val); err != nil {
 		panic(err)
 	}
@@ -717,7 +716,7 @@ func (j *jsiiProxy_DirectThousandeyes)SetReleaseChannel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DirectThousandeyes)SetSourceOf(val *[]*string) {
+func (j *jsiiProxy_DirectThousandeyes) SetSourceOf(val *[]*string) {
 	if err := j.validateSetSourceOfParameters(val); err != nil {
 		panic(err)
 	}
@@ -740,7 +739,7 @@ func DirectThousandeyes_GenerateConfigForImport(scope constructs.Construct, impo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-nobl9.directThousandeyes.DirectThousandeyes",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -764,7 +763,7 @@ func DirectThousandeyes_GenerateConfigForImport(scope constructs.Construct, impo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DirectThousandeyes_IsConstruct(x interface{}) *bool {
+func DirectThousandeyes_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDirectThousandeyes_IsConstructParameters(x); err != nil {
@@ -775,7 +774,7 @@ func DirectThousandeyes_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-nobl9.directThousandeyes.DirectThousandeyes",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -783,7 +782,7 @@ func DirectThousandeyes_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DirectThousandeyes_IsTerraformElement(x interface{}) *bool {
+func DirectThousandeyes_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDirectThousandeyes_IsTerraformElementParameters(x); err != nil {
@@ -794,7 +793,7 @@ func DirectThousandeyes_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-nobl9.directThousandeyes.DirectThousandeyes",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -802,7 +801,7 @@ func DirectThousandeyes_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func DirectThousandeyes_IsTerraformResource(x interface{}) *bool {
+func DirectThousandeyes_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDirectThousandeyes_IsTerraformResourceParameters(x); err != nil {
@@ -813,7 +812,7 @@ func DirectThousandeyes_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-nobl9.directThousandeyes.DirectThousandeyes",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -838,31 +837,31 @@ func (d *jsiiProxy_DirectThousandeyes) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_DirectThousandeyes) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DirectThousandeyes) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DirectThousandeyes) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DirectThousandeyes) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -878,7 +877,7 @@ func (d *jsiiProxy_DirectThousandeyes) GetBooleanAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -894,7 +893,7 @@ func (d *jsiiProxy_DirectThousandeyes) GetBooleanMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -910,7 +909,7 @@ func (d *jsiiProxy_DirectThousandeyes) GetListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -926,7 +925,7 @@ func (d *jsiiProxy_DirectThousandeyes) GetNumberAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -942,7 +941,7 @@ func (d *jsiiProxy_DirectThousandeyes) GetNumberListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -958,7 +957,7 @@ func (d *jsiiProxy_DirectThousandeyes) GetNumberMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -974,7 +973,7 @@ func (d *jsiiProxy_DirectThousandeyes) GetStringAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -990,15 +989,15 @@ func (d *jsiiProxy_DirectThousandeyes) GetStringMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DirectThousandeyes) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DirectThousandeyes) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1017,7 +1016,7 @@ func (d *jsiiProxy_DirectThousandeyes) ImportFrom(id *string, provider cdktf.Ter
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1030,7 +1029,7 @@ func (d *jsiiProxy_DirectThousandeyes) InterpolationForAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1044,18 +1043,18 @@ func (d *jsiiProxy_DirectThousandeyes) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_DirectThousandeyes) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_DirectThousandeyes) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1066,7 +1065,7 @@ func (d *jsiiProxy_DirectThousandeyes) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1077,7 +1076,7 @@ func (d *jsiiProxy_DirectThousandeyes) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1088,7 +1087,7 @@ func (d *jsiiProxy_DirectThousandeyes) PutQueryDelay(value *DirectThousandeyesQu
 	_jsii_.InvokeVoid(
 		d,
 		"putQueryDelay",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1164,8 +1163,8 @@ func (d *jsiiProxy_DirectThousandeyes) ResetSourceOf() {
 	)
 }
 
-func (d *jsiiProxy_DirectThousandeyes) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DirectThousandeyes) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1177,8 +1176,8 @@ func (d *jsiiProxy_DirectThousandeyes) SynthesizeAttributes() *map[string]interf
 	return returns
 }
 
-func (d *jsiiProxy_DirectThousandeyes) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DirectThousandeyes) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1190,8 +1189,8 @@ func (d *jsiiProxy_DirectThousandeyes) SynthesizeHclAttributes() *map[string]int
 	return returns
 }
 
-func (d *jsiiProxy_DirectThousandeyes) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DirectThousandeyes) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1203,8 +1202,8 @@ func (d *jsiiProxy_DirectThousandeyes) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DirectThousandeyes) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DirectThousandeyes) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1229,8 +1228,8 @@ func (d *jsiiProxy_DirectThousandeyes) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DirectThousandeyes) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DirectThousandeyes) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1241,4 +1240,3 @@ func (d *jsiiProxy_DirectThousandeyes) ToTerraform() interface{} {
 
 	return returns
 }
-

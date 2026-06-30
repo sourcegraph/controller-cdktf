@@ -34,7 +34,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsTotalAzureMonitorWorkspaceList) valid
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsTotalAzureMonitorWorkspaceList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsTotalAzureMonitorWorkspaceList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSloObjectiveCountMetricsTotalAzureMonitorWorkspaceListParameters
 
 	return nil
 }
-

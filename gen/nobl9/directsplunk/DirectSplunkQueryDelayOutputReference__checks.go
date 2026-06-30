@@ -98,7 +98,7 @@ func (d *jsiiProxy_DirectSplunkQueryDelayOutputReference) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_DirectSplunkQueryDelayOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DirectSplunkQueryDelayOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewDirectSplunkQueryDelayOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

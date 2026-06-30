@@ -12,9 +12,9 @@ type AgentGcmConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -40,7 +40,7 @@ type AgentGcmConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -63,7 +63,7 @@ type AgentGcmConfigOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -76,8 +76,8 @@ type jsiiProxy_AgentGcmConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_AgentGcmConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AgentGcmConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -146,7 +146,6 @@ func (j *jsiiProxy_AgentGcmConfigOutputReference) TerraformResource() cdktf.IInt
 	return returns
 }
 
-
 func NewAgentGcmConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AgentGcmConfigOutputReference {
 	_init_.Initialize()
 
@@ -157,7 +156,7 @@ func NewAgentGcmConfigOutputReference(terraformResource cdktf.IInterpolatingPare
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.agent.AgentGcmConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -169,12 +168,12 @@ func NewAgentGcmConfigOutputReference_Override(a AgentGcmConfigOutputReference, 
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.agent.AgentGcmConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AgentGcmConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AgentGcmConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -185,7 +184,7 @@ func (j *jsiiProxy_AgentGcmConfigOutputReference)SetComplexObjectIndex(val inter
 	)
 }
 
-func (j *jsiiProxy_AgentGcmConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AgentGcmConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -196,7 +195,7 @@ func (j *jsiiProxy_AgentGcmConfigOutputReference)SetComplexObjectIsFromSet(val *
 	)
 }
 
-func (j *jsiiProxy_AgentGcmConfigOutputReference)SetInternalValue(val *AgentGcmConfig) {
+func (j *jsiiProxy_AgentGcmConfigOutputReference) SetInternalValue(val *AgentGcmConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -207,7 +206,7 @@ func (j *jsiiProxy_AgentGcmConfigOutputReference)SetInternalValue(val *AgentGcmC
 	)
 }
 
-func (j *jsiiProxy_AgentGcmConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AgentGcmConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -218,7 +217,7 @@ func (j *jsiiProxy_AgentGcmConfigOutputReference)SetTerraformAttribute(val *stri
 	)
 }
 
-func (j *jsiiProxy_AgentGcmConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AgentGcmConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,16 +241,16 @@ func (a *jsiiProxy_AgentGcmConfigOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (a *jsiiProxy_AgentGcmConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AgentGcmConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -267,7 +266,7 @@ func (a *jsiiProxy_AgentGcmConfigOutputReference) GetBooleanAttribute(terraformA
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -283,7 +282,7 @@ func (a *jsiiProxy_AgentGcmConfigOutputReference) GetBooleanMapAttribute(terrafo
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -299,7 +298,7 @@ func (a *jsiiProxy_AgentGcmConfigOutputReference) GetListAttribute(terraformAttr
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -315,7 +314,7 @@ func (a *jsiiProxy_AgentGcmConfigOutputReference) GetNumberAttribute(terraformAt
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -331,7 +330,7 @@ func (a *jsiiProxy_AgentGcmConfigOutputReference) GetNumberListAttribute(terrafo
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -347,7 +346,7 @@ func (a *jsiiProxy_AgentGcmConfigOutputReference) GetNumberMapAttribute(terrafor
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -363,7 +362,7 @@ func (a *jsiiProxy_AgentGcmConfigOutputReference) GetStringAttribute(terraformAt
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -379,7 +378,7 @@ func (a *jsiiProxy_AgentGcmConfigOutputReference) GetStringMapAttribute(terrafor
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -408,23 +407,23 @@ func (a *jsiiProxy_AgentGcmConfigOutputReference) InterpolationForAttribute(prop
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AgentGcmConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AgentGcmConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -443,4 +442,3 @@ func (a *jsiiProxy_AgentGcmConfigOutputReference) ToString() *string {
 
 	return returns
 }
-

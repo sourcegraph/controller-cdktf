@@ -1,6 +1,5 @@
 package reportsystemhealthreview
 
-
 type ReportSystemHealthReviewColumn struct {
 	// Column display name.
 	//
@@ -9,6 +8,5 @@ type ReportSystemHealthReviewColumn struct {
 	// label block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/report_system_health_review#label ReportSystemHealthReview#label}
-	Label interface{} `field:"required" json:"label" yaml:"label"`
+	Label any `field:"required" json:"label" yaml:"label"`
 }
-

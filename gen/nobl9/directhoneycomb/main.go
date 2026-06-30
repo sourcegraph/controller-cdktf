@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.directHoneycomb.DirectHoneycomb",
-		reflect.TypeOf((*DirectHoneycomb)(nil)).Elem(),
+		reflect.TypeFor[DirectHoneycomb](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -87,7 +87,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DirectHoneycomb{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -95,19 +95,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.directHoneycomb.DirectHoneycombConfig",
-		reflect.TypeOf((*DirectHoneycombConfig)(nil)).Elem(),
+		reflect.TypeFor[DirectHoneycombConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.directHoneycomb.DirectHoneycombHistoricalDataRetrieval",
-		reflect.TypeOf((*DirectHoneycombHistoricalDataRetrieval)(nil)).Elem(),
+		reflect.TypeFor[DirectHoneycombHistoricalDataRetrieval](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.directHoneycomb.DirectHoneycombHistoricalDataRetrievalDefaultDuration",
-		reflect.TypeOf((*DirectHoneycombHistoricalDataRetrievalDefaultDuration)(nil)).Elem(),
+		reflect.TypeFor[DirectHoneycombHistoricalDataRetrievalDefaultDuration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.directHoneycomb.DirectHoneycombHistoricalDataRetrievalDefaultDurationList",
-		reflect.TypeOf((*DirectHoneycombHistoricalDataRetrievalDefaultDurationList)(nil)).Elem(),
+		reflect.TypeFor[DirectHoneycombHistoricalDataRetrievalDefaultDurationList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -121,7 +121,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DirectHoneycombHistoricalDataRetrievalDefaultDurationList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -129,7 +129,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.directHoneycomb.DirectHoneycombHistoricalDataRetrievalDefaultDurationOutputReference",
-		reflect.TypeOf((*DirectHoneycombHistoricalDataRetrievalDefaultDurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DirectHoneycombHistoricalDataRetrievalDefaultDurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -157,7 +157,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DirectHoneycombHistoricalDataRetrievalDefaultDurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -165,11 +165,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.directHoneycomb.DirectHoneycombHistoricalDataRetrievalMaxDuration",
-		reflect.TypeOf((*DirectHoneycombHistoricalDataRetrievalMaxDuration)(nil)).Elem(),
+		reflect.TypeFor[DirectHoneycombHistoricalDataRetrievalMaxDuration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.directHoneycomb.DirectHoneycombHistoricalDataRetrievalMaxDurationList",
-		reflect.TypeOf((*DirectHoneycombHistoricalDataRetrievalMaxDurationList)(nil)).Elem(),
+		reflect.TypeFor[DirectHoneycombHistoricalDataRetrievalMaxDurationList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -183,7 +183,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DirectHoneycombHistoricalDataRetrievalMaxDurationList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -191,7 +191,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.directHoneycomb.DirectHoneycombHistoricalDataRetrievalMaxDurationOutputReference",
-		reflect.TypeOf((*DirectHoneycombHistoricalDataRetrievalMaxDurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DirectHoneycombHistoricalDataRetrievalMaxDurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -219,7 +219,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DirectHoneycombHistoricalDataRetrievalMaxDurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -227,7 +227,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.directHoneycomb.DirectHoneycombHistoricalDataRetrievalOutputReference",
-		reflect.TypeOf((*DirectHoneycombHistoricalDataRetrievalOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DirectHoneycombHistoricalDataRetrievalOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -257,7 +257,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DirectHoneycombHistoricalDataRetrievalOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -265,11 +265,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.directHoneycomb.DirectHoneycombQueryDelay",
-		reflect.TypeOf((*DirectHoneycombQueryDelay)(nil)).Elem(),
+		reflect.TypeFor[DirectHoneycombQueryDelay](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.directHoneycomb.DirectHoneycombQueryDelayOutputReference",
-		reflect.TypeOf((*DirectHoneycombQueryDelayOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DirectHoneycombQueryDelayOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -297,7 +297,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DirectHoneycombQueryDelayOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

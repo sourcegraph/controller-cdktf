@@ -34,7 +34,7 @@ func (s *jsiiProxy_SloObjectiveRawMetricQueryGraphiteList) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQueryGraphiteList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveRawMetricQueryGraphiteList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSloObjectiveRawMetricQueryGraphiteListParameters(terraformResour
 
 	return nil
 }
-
