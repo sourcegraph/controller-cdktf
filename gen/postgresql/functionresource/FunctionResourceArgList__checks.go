@@ -34,7 +34,7 @@ func (f *jsiiProxy_FunctionResourceArgList) validateResolveParameters(_context c
 	return nil
 }
 
-func (j *jsiiProxy_FunctionResourceArgList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_FunctionResourceArgList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewFunctionResourceArgListParameters(terraformResource cdktf.IInter
 
 	return nil
 }
-

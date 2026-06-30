@@ -12,20 +12,20 @@ type SchemaPolicyOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
-	Create() interface{}
-	SetCreate(val interface{})
-	CreateInput() interface{}
-	CreateWithGrant() interface{}
-	SetCreateWithGrant(val interface{})
-	CreateWithGrantInput() interface{}
+	Create() any
+	SetCreate(val any)
+	CreateInput() any
+	CreateWithGrant() any
+	SetCreateWithGrant(val any)
+	CreateWithGrantInput() any
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -33,8 +33,8 @@ type SchemaPolicyOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Role() *string
 	SetRole(val *string)
 	RoleInput() *string
@@ -46,16 +46,16 @@ type SchemaPolicyOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	Usage() interface{}
-	SetUsage(val interface{})
-	UsageInput() interface{}
-	UsageWithGrant() interface{}
-	SetUsageWithGrant(val interface{})
-	UsageWithGrantInput() interface{}
+	Usage() any
+	SetUsage(val any)
+	UsageInput() any
+	UsageWithGrant() any
+	SetUsageWithGrant(val any)
+	UsageWithGrantInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -83,7 +83,7 @@ type SchemaPolicyOutputReference interface {
 	ResetUsageWithGrant()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,8 +96,8 @@ type jsiiProxy_SchemaPolicyOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_SchemaPolicyOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SchemaPolicyOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -116,8 +116,8 @@ func (j *jsiiProxy_SchemaPolicyOutputReference) ComplexObjectIsFromSet() *bool {
 	return returns
 }
 
-func (j *jsiiProxy_SchemaPolicyOutputReference) Create() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SchemaPolicyOutputReference) Create() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"create",
@@ -126,8 +126,8 @@ func (j *jsiiProxy_SchemaPolicyOutputReference) Create() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SchemaPolicyOutputReference) CreateInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SchemaPolicyOutputReference) CreateInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"createInput",
@@ -136,8 +136,8 @@ func (j *jsiiProxy_SchemaPolicyOutputReference) CreateInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SchemaPolicyOutputReference) CreateWithGrant() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SchemaPolicyOutputReference) CreateWithGrant() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"createWithGrant",
@@ -146,8 +146,8 @@ func (j *jsiiProxy_SchemaPolicyOutputReference) CreateWithGrant() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SchemaPolicyOutputReference) CreateWithGrantInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SchemaPolicyOutputReference) CreateWithGrantInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"createWithGrantInput",
@@ -176,8 +176,8 @@ func (j *jsiiProxy_SchemaPolicyOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SchemaPolicyOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SchemaPolicyOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -226,8 +226,8 @@ func (j *jsiiProxy_SchemaPolicyOutputReference) TerraformResource() cdktf.IInter
 	return returns
 }
 
-func (j *jsiiProxy_SchemaPolicyOutputReference) Usage() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SchemaPolicyOutputReference) Usage() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"usage",
@@ -236,8 +236,8 @@ func (j *jsiiProxy_SchemaPolicyOutputReference) Usage() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SchemaPolicyOutputReference) UsageInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SchemaPolicyOutputReference) UsageInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"usageInput",
@@ -246,8 +246,8 @@ func (j *jsiiProxy_SchemaPolicyOutputReference) UsageInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SchemaPolicyOutputReference) UsageWithGrant() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SchemaPolicyOutputReference) UsageWithGrant() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"usageWithGrant",
@@ -256,8 +256,8 @@ func (j *jsiiProxy_SchemaPolicyOutputReference) UsageWithGrant() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SchemaPolicyOutputReference) UsageWithGrantInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SchemaPolicyOutputReference) UsageWithGrantInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"usageWithGrantInput",
@@ -265,7 +265,6 @@ func (j *jsiiProxy_SchemaPolicyOutputReference) UsageWithGrantInput() interface{
 	)
 	return returns
 }
-
 
 func NewSchemaPolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SchemaPolicyOutputReference {
 	_init_.Initialize()
@@ -277,7 +276,7 @@ func NewSchemaPolicyOutputReference(terraformResource cdktf.IInterpolatingParent
 
 	_jsii_.Create(
 		"@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -289,12 +288,12 @@ func NewSchemaPolicyOutputReference_Override(s SchemaPolicyOutputReference, terr
 
 	_jsii_.Create(
 		"@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SchemaPolicyOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SchemaPolicyOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,7 +304,7 @@ func (j *jsiiProxy_SchemaPolicyOutputReference)SetComplexObjectIndex(val interfa
 	)
 }
 
-func (j *jsiiProxy_SchemaPolicyOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SchemaPolicyOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,7 +315,7 @@ func (j *jsiiProxy_SchemaPolicyOutputReference)SetComplexObjectIsFromSet(val *bo
 	)
 }
 
-func (j *jsiiProxy_SchemaPolicyOutputReference)SetCreate(val interface{}) {
+func (j *jsiiProxy_SchemaPolicyOutputReference) SetCreate(val any) {
 	if err := j.validateSetCreateParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_SchemaPolicyOutputReference)SetCreate(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SchemaPolicyOutputReference)SetCreateWithGrant(val interface{}) {
+func (j *jsiiProxy_SchemaPolicyOutputReference) SetCreateWithGrant(val any) {
 	if err := j.validateSetCreateWithGrantParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_SchemaPolicyOutputReference)SetCreateWithGrant(val interface{
 	)
 }
 
-func (j *jsiiProxy_SchemaPolicyOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_SchemaPolicyOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_SchemaPolicyOutputReference)SetInternalValue(val interface{})
 	)
 }
 
-func (j *jsiiProxy_SchemaPolicyOutputReference)SetRole(val *string) {
+func (j *jsiiProxy_SchemaPolicyOutputReference) SetRole(val *string) {
 	if err := j.validateSetRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_SchemaPolicyOutputReference)SetRole(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SchemaPolicyOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SchemaPolicyOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_SchemaPolicyOutputReference)SetTerraformAttribute(val *string
 	)
 }
 
-func (j *jsiiProxy_SchemaPolicyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SchemaPolicyOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_SchemaPolicyOutputReference)SetTerraformResource(val cdktf.II
 	)
 }
 
-func (j *jsiiProxy_SchemaPolicyOutputReference)SetUsage(val interface{}) {
+func (j *jsiiProxy_SchemaPolicyOutputReference) SetUsage(val any) {
 	if err := j.validateSetUsageParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_SchemaPolicyOutputReference)SetUsage(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SchemaPolicyOutputReference)SetUsageWithGrant(val interface{}) {
+func (j *jsiiProxy_SchemaPolicyOutputReference) SetUsageWithGrant(val any) {
 	if err := j.validateSetUsageWithGrantParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,16 +416,16 @@ func (s *jsiiProxy_SchemaPolicyOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SchemaPolicyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SchemaPolicyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,7 +441,7 @@ func (s *jsiiProxy_SchemaPolicyOutputReference) GetBooleanAttribute(terraformAtt
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -458,7 +457,7 @@ func (s *jsiiProxy_SchemaPolicyOutputReference) GetBooleanMapAttribute(terraform
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -474,7 +473,7 @@ func (s *jsiiProxy_SchemaPolicyOutputReference) GetListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -490,7 +489,7 @@ func (s *jsiiProxy_SchemaPolicyOutputReference) GetNumberAttribute(terraformAttr
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -506,7 +505,7 @@ func (s *jsiiProxy_SchemaPolicyOutputReference) GetNumberListAttribute(terraform
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -522,7 +521,7 @@ func (s *jsiiProxy_SchemaPolicyOutputReference) GetNumberMapAttribute(terraformA
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func (s *jsiiProxy_SchemaPolicyOutputReference) GetStringAttribute(terraformAttr
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -554,7 +553,7 @@ func (s *jsiiProxy_SchemaPolicyOutputReference) GetStringMapAttribute(terraformA
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -583,7 +582,7 @@ func (s *jsiiProxy_SchemaPolicyOutputReference) InterpolationForAttribute(proper
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -630,16 +629,16 @@ func (s *jsiiProxy_SchemaPolicyOutputReference) ResetUsageWithGrant() {
 	)
 }
 
-func (s *jsiiProxy_SchemaPolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SchemaPolicyOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -658,4 +657,3 @@ func (s *jsiiProxy_SchemaPolicyOutputReference) ToString() *string {
 
 	return returns
 }
-

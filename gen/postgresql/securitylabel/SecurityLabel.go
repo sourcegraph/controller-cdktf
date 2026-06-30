@@ -15,15 +15,15 @@ type SecurityLabel interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -62,24 +62,24 @@ type SecurityLabel interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -97,7 +97,7 @@ type SecurityLabel interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -109,7 +109,7 @@ type SecurityLabel interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -120,17 +120,17 @@ type SecurityLabel interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for SecurityLabel
@@ -148,8 +148,8 @@ func (j *jsiiProxy_SecurityLabel) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_SecurityLabel) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecurityLabel) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -158,8 +158,8 @@ func (j *jsiiProxy_SecurityLabel) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SecurityLabel) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SecurityLabel) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_SecurityLabel) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_SecurityLabel) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecurityLabel) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -348,8 +348,8 @@ func (j *jsiiProxy_SecurityLabel) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_SecurityLabel) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_SecurityLabel) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -358,8 +358,8 @@ func (j *jsiiProxy_SecurityLabel) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SecurityLabel) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecurityLabel) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -378,8 +378,8 @@ func (j *jsiiProxy_SecurityLabel) TerraformGeneratorMetadata() *cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_SecurityLabel) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SecurityLabel) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -398,7 +398,6 @@ func (j *jsiiProxy_SecurityLabel) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/security_label postgresql_security_label} Resource.
 func NewSecurityLabel(scope constructs.Construct, id *string, config *SecurityLabelConfig) SecurityLabel {
 	_init_.Initialize()
@@ -410,7 +409,7 @@ func NewSecurityLabel(scope constructs.Construct, id *string, config *SecurityLa
 
 	_jsii_.Create(
 		"@cdktf/provider-postgresql.securityLabel.SecurityLabel",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -423,12 +422,12 @@ func NewSecurityLabel_Override(s SecurityLabel, scope constructs.Construct, id *
 
 	_jsii_.Create(
 		"@cdktf/provider-postgresql.securityLabel.SecurityLabel",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SecurityLabel)SetConnection(val interface{}) {
+func (j *jsiiProxy_SecurityLabel) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -439,7 +438,7 @@ func (j *jsiiProxy_SecurityLabel)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SecurityLabel)SetCount(val interface{}) {
+func (j *jsiiProxy_SecurityLabel) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -450,7 +449,7 @@ func (j *jsiiProxy_SecurityLabel)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SecurityLabel)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SecurityLabel) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -458,7 +457,7 @@ func (j *jsiiProxy_SecurityLabel)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SecurityLabel)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SecurityLabel) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -466,7 +465,7 @@ func (j *jsiiProxy_SecurityLabel)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_SecurityLabel)SetId(val *string) {
+func (j *jsiiProxy_SecurityLabel) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -477,7 +476,7 @@ func (j *jsiiProxy_SecurityLabel)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SecurityLabel)SetLabel(val *string) {
+func (j *jsiiProxy_SecurityLabel) SetLabel(val *string) {
 	if err := j.validateSetLabelParameters(val); err != nil {
 		panic(err)
 	}
@@ -488,7 +487,7 @@ func (j *jsiiProxy_SecurityLabel)SetLabel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SecurityLabel)SetLabelProvider(val *string) {
+func (j *jsiiProxy_SecurityLabel) SetLabelProvider(val *string) {
 	if err := j.validateSetLabelProviderParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,7 +498,7 @@ func (j *jsiiProxy_SecurityLabel)SetLabelProvider(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SecurityLabel)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SecurityLabel) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -510,7 +509,7 @@ func (j *jsiiProxy_SecurityLabel)SetLifecycle(val *cdktf.TerraformResourceLifecy
 	)
 }
 
-func (j *jsiiProxy_SecurityLabel)SetObjectName(val *string) {
+func (j *jsiiProxy_SecurityLabel) SetObjectName(val *string) {
 	if err := j.validateSetObjectNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -521,7 +520,7 @@ func (j *jsiiProxy_SecurityLabel)SetObjectName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SecurityLabel)SetObjectType(val *string) {
+func (j *jsiiProxy_SecurityLabel) SetObjectType(val *string) {
 	if err := j.validateSetObjectTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -532,7 +531,7 @@ func (j *jsiiProxy_SecurityLabel)SetObjectType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SecurityLabel)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SecurityLabel) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -540,7 +539,7 @@ func (j *jsiiProxy_SecurityLabel)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_SecurityLabel)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SecurityLabel) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -563,7 +562,7 @@ func SecurityLabel_GenerateConfigForImport(scope constructs.Construct, importToI
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-postgresql.securityLabel.SecurityLabel",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -587,7 +586,7 @@ func SecurityLabel_GenerateConfigForImport(scope constructs.Construct, importToI
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func SecurityLabel_IsConstruct(x interface{}) *bool {
+func SecurityLabel_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSecurityLabel_IsConstructParameters(x); err != nil {
@@ -598,7 +597,7 @@ func SecurityLabel_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-postgresql.securityLabel.SecurityLabel",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -606,7 +605,7 @@ func SecurityLabel_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func SecurityLabel_IsTerraformElement(x interface{}) *bool {
+func SecurityLabel_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSecurityLabel_IsTerraformElementParameters(x); err != nil {
@@ -617,7 +616,7 @@ func SecurityLabel_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-postgresql.securityLabel.SecurityLabel",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -625,7 +624,7 @@ func SecurityLabel_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func SecurityLabel_IsTerraformResource(x interface{}) *bool {
+func SecurityLabel_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSecurityLabel_IsTerraformResourceParameters(x); err != nil {
@@ -636,7 +635,7 @@ func SecurityLabel_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-postgresql.securityLabel.SecurityLabel",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -661,31 +660,31 @@ func (s *jsiiProxy_SecurityLabel) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_SecurityLabel) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_SecurityLabel) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_SecurityLabel) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SecurityLabel) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -701,7 +700,7 @@ func (s *jsiiProxy_SecurityLabel) GetBooleanAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -717,7 +716,7 @@ func (s *jsiiProxy_SecurityLabel) GetBooleanMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -733,7 +732,7 @@ func (s *jsiiProxy_SecurityLabel) GetListAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -749,7 +748,7 @@ func (s *jsiiProxy_SecurityLabel) GetNumberAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -765,7 +764,7 @@ func (s *jsiiProxy_SecurityLabel) GetNumberListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -781,7 +780,7 @@ func (s *jsiiProxy_SecurityLabel) GetNumberMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -797,7 +796,7 @@ func (s *jsiiProxy_SecurityLabel) GetStringAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -813,15 +812,15 @@ func (s *jsiiProxy_SecurityLabel) GetStringMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SecurityLabel) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SecurityLabel) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -840,7 +839,7 @@ func (s *jsiiProxy_SecurityLabel) ImportFrom(id *string, provider cdktf.Terrafor
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -853,7 +852,7 @@ func (s *jsiiProxy_SecurityLabel) InterpolationForAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -867,18 +866,18 @@ func (s *jsiiProxy_SecurityLabel) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_SecurityLabel) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_SecurityLabel) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -889,7 +888,7 @@ func (s *jsiiProxy_SecurityLabel) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -900,7 +899,7 @@ func (s *jsiiProxy_SecurityLabel) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -920,8 +919,8 @@ func (s *jsiiProxy_SecurityLabel) ResetOverrideLogicalId() {
 	)
 }
 
-func (s *jsiiProxy_SecurityLabel) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SecurityLabel) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -933,8 +932,8 @@ func (s *jsiiProxy_SecurityLabel) SynthesizeAttributes() *map[string]interface{}
 	return returns
 }
 
-func (s *jsiiProxy_SecurityLabel) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SecurityLabel) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -946,8 +945,8 @@ func (s *jsiiProxy_SecurityLabel) SynthesizeHclAttributes() *map[string]interfac
 	return returns
 }
 
-func (s *jsiiProxy_SecurityLabel) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SecurityLabel) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -959,8 +958,8 @@ func (s *jsiiProxy_SecurityLabel) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SecurityLabel) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SecurityLabel) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -985,8 +984,8 @@ func (s *jsiiProxy_SecurityLabel) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SecurityLabel) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SecurityLabel) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -997,4 +996,3 @@ func (s *jsiiProxy_SecurityLabel) ToTerraform() interface{} {
 
 	return returns
 }
-

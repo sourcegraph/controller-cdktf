@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (p *jsiiProxy_PostgresqlProvider) validateAddOverrideParameters(path *string, value interface{}) error {
+func (p *jsiiProxy_PostgresqlProvider) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -47,7 +47,7 @@ func validatePostgresqlProvider_GenerateConfigForImportParameters(scope construc
 	return nil
 }
 
-func validatePostgresqlProvider_IsConstructParameters(x interface{}) error {
+func validatePostgresqlProvider_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -55,7 +55,7 @@ func validatePostgresqlProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validatePostgresqlProvider_IsTerraformElementParameters(x interface{}) error {
+func validatePostgresqlProvider_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -63,7 +63,7 @@ func validatePostgresqlProvider_IsTerraformElementParameters(x interface{}) erro
 	return nil
 }
 
-func validatePostgresqlProvider_IsTerraformProviderParameters(x interface{}) error {
+func validatePostgresqlProvider_IsTerraformProviderParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -71,7 +71,7 @@ func validatePostgresqlProvider_IsTerraformProviderParameters(x interface{}) err
 	return nil
 }
 
-func (j *jsiiProxy_PostgresqlProvider) validateSetAwsRdsIamAuthParameters(val interface{}) error {
+func (j *jsiiProxy_PostgresqlProvider) validateSetAwsRdsIamAuthParameters(val any) error {
 	switch val.(type) {
 	case *bool:
 		// ok
@@ -88,7 +88,7 @@ func (j *jsiiProxy_PostgresqlProvider) validateSetAwsRdsIamAuthParameters(val in
 	return nil
 }
 
-func (j *jsiiProxy_PostgresqlProvider) validateSetAzureIdentityAuthParameters(val interface{}) error {
+func (j *jsiiProxy_PostgresqlProvider) validateSetAzureIdentityAuthParameters(val any) error {
 	switch val.(type) {
 	case *bool:
 		// ok
@@ -113,7 +113,7 @@ func (j *jsiiProxy_PostgresqlProvider) validateSetClientcertParameters(val *Post
 	return nil
 }
 
-func (j *jsiiProxy_PostgresqlProvider) validateSetSuperuserParameters(val interface{}) error {
+func (j *jsiiProxy_PostgresqlProvider) validateSetSuperuserParameters(val any) error {
 	switch val.(type) {
 	case *bool:
 		// ok
@@ -145,4 +145,3 @@ func validateNewPostgresqlProviderParameters(scope constructs.Construct, id *str
 
 	return nil
 }
-

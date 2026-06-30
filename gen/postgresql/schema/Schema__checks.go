@@ -19,7 +19,7 @@ func (s *jsiiProxy_Schema) validateAddMoveTargetParameters(moveTarget *string) e
 	return nil
 }
 
-func (s *jsiiProxy_Schema) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_Schema) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_Schema) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_Schema) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_Schema) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (s *jsiiProxy_Schema) validateOverrideLogicalIdParameters(newLogicalId *str
 	return nil
 }
 
-func (s *jsiiProxy_Schema) validatePutPolicyParameters(value interface{}) error {
+func (s *jsiiProxy_Schema) validatePutPolicyParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -251,7 +251,7 @@ func validateSchema_GenerateConfigForImportParameters(scope constructs.Construct
 	return nil
 }
 
-func validateSchema_IsConstructParameters(x interface{}) error {
+func validateSchema_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -259,7 +259,7 @@ func validateSchema_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateSchema_IsTerraformElementParameters(x interface{}) error {
+func validateSchema_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -267,7 +267,7 @@ func validateSchema_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateSchema_IsTerraformResourceParameters(x interface{}) error {
+func validateSchema_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -275,7 +275,7 @@ func validateSchema_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_Schema) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_Schema) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -308,7 +308,7 @@ func (j *jsiiProxy_Schema) validateSetConnectionParameters(val interface{}) erro
 	return nil
 }
 
-func (j *jsiiProxy_Schema) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_Schema) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -373,7 +373,7 @@ func (j *jsiiProxy_Schema) validateSetDatabaseParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Schema) validateSetDropCascadeParameters(val interface{}) error {
+func (j *jsiiProxy_Schema) validateSetDropCascadeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -401,7 +401,7 @@ func (j *jsiiProxy_Schema) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Schema) validateSetIfNotExistsParameters(val interface{}) error {
+func (j *jsiiProxy_Schema) validateSetIfNotExistsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -445,7 +445,7 @@ func (j *jsiiProxy_Schema) validateSetOwnerParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Schema) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_Schema) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -509,4 +509,3 @@ func validateNewSchemaParameters(scope constructs.Construct, id *string, config 
 
 	return nil
 }
-

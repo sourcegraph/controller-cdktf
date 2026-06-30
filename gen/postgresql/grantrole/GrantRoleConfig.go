@@ -6,9 +6,9 @@ import (
 
 type GrantRoleConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GrantRoleConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the role that is granted to role.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/grant_role#grant_role GrantRole#grant_role}
@@ -35,6 +35,5 @@ type GrantRoleConfig struct {
 	// Permit the grant recipient to grant it to others.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/grant_role#with_admin_option GrantRole#with_admin_option}
-	WithAdminOption interface{} `field:"optional" json:"withAdminOption" yaml:"withAdminOption"`
+	WithAdminOption any `field:"optional" json:"withAdminOption" yaml:"withAdminOption"`
 }
-

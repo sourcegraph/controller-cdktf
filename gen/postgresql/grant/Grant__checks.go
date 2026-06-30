@@ -19,7 +19,7 @@ func (g *jsiiProxy_Grant) validateAddMoveTargetParameters(moveTarget *string) er
 	return nil
 }
 
-func (g *jsiiProxy_Grant) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_Grant) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_Grant) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_Grant) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_Grant) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateGrant_GenerateConfigForImportParameters(scope constructs.Construct,
 	return nil
 }
 
-func validateGrant_IsConstructParameters(x interface{}) error {
+func validateGrant_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateGrant_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateGrant_IsTerraformElementParameters(x interface{}) error {
+func validateGrant_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateGrant_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateGrant_IsTerraformResourceParameters(x interface{}) error {
+func validateGrant_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_Grant) validateSetColumnsParameters(val *[]*string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Grant) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_Grant) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_Grant) validateSetConnectionParameters(val interface{}) error
 	return nil
 }
 
-func (j *jsiiProxy_Grant) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_Grant) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -390,7 +390,7 @@ func (j *jsiiProxy_Grant) validateSetPrivilegesParameters(val *[]*string) error 
 	return nil
 }
 
-func (j *jsiiProxy_Grant) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_Grant) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -452,7 +452,7 @@ func (j *jsiiProxy_Grant) validateSetSchemaParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Grant) validateSetWithGrantOptionParameters(val interface{}) error {
+func (j *jsiiProxy_Grant) validateSetWithGrantOptionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -490,4 +490,3 @@ func validateNewGrantParameters(scope constructs.Construct, id *string, config *
 
 	return nil
 }
-

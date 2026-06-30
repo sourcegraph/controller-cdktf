@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-postgresql.userMapping.UserMapping",
-		reflect.TypeOf((*UserMapping)(nil)).Elem(),
+		reflect.TypeFor[UserMapping](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,7 +63,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userName", GoGetter: "UserName"},
 			_jsii_.MemberProperty{JsiiProperty: "userNameInput", GoGetter: "UserNameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_UserMapping{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -71,6 +71,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-postgresql.userMapping.UserMappingConfig",
-		reflect.TypeOf((*UserMappingConfig)(nil)).Elem(),
+		reflect.TypeFor[UserMappingConfig](),
 	)
 }

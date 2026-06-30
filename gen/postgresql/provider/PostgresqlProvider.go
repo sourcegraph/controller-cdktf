@@ -15,9 +15,9 @@ type PostgresqlProvider interface {
 	Alias() *string
 	SetAlias(val *string)
 	AliasInput() *string
-	AwsRdsIamAuth() interface{}
-	SetAwsRdsIamAuth(val interface{})
-	AwsRdsIamAuthInput() interface{}
+	AwsRdsIamAuth() any
+	SetAwsRdsIamAuth(val any)
+	AwsRdsIamAuthInput() any
 	AwsRdsIamProfile() *string
 	SetAwsRdsIamProfile(val *string)
 	AwsRdsIamProfileInput() *string
@@ -27,9 +27,9 @@ type PostgresqlProvider interface {
 	AwsRdsIamRegion() *string
 	SetAwsRdsIamRegion(val *string)
 	AwsRdsIamRegionInput() *string
-	AzureIdentityAuth() interface{}
-	SetAzureIdentityAuth(val interface{})
-	AzureIdentityAuthInput() interface{}
+	AzureIdentityAuth() any
+	SetAzureIdentityAuth(val any)
+	AzureIdentityAuthInput() any
 	AzureTenantId() *string
 	SetAzureTenantId(val *string)
 	AzureTenantIdInput() *string
@@ -42,7 +42,7 @@ type PostgresqlProvider interface {
 	SetConnectTimeout(val *float64)
 	ConnectTimeoutInput() *float64
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	Database() *string
 	SetDatabase(val *string)
 	DatabaseInput() *string
@@ -66,7 +66,7 @@ type PostgresqlProvider interface {
 	SetMaxConnections(val *float64)
 	MaxConnectionsInput() *float64
 	// Experimental.
-	MetaAttributes() *map[string]interface{}
+	MetaAttributes() *map[string]any
 	// The tree node.
 	Node() constructs.Node
 	Password() *string
@@ -76,7 +76,7 @@ type PostgresqlProvider interface {
 	SetPort(val *float64)
 	PortInput() *float64
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Scheme() *string
 	SetScheme(val *string)
 	SchemeInput() *string
@@ -89,9 +89,9 @@ type PostgresqlProvider interface {
 	Sslrootcert() *string
 	SetSslrootcert(val *string)
 	SslrootcertInput() *string
-	Superuser() interface{}
-	SetSuperuser(val interface{})
-	SuperuserInput() interface{}
+	Superuser() any
+	SetSuperuser(val any)
+	SuperuserInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -102,7 +102,7 @@ type PostgresqlProvider interface {
 	SetUsername(val *string)
 	UsernameInput() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -132,17 +132,17 @@ type PostgresqlProvider interface {
 	ResetSslrootcert()
 	ResetSuperuser()
 	ResetUsername()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for PostgresqlProvider
@@ -170,8 +170,8 @@ func (j *jsiiProxy_PostgresqlProvider) AliasInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_PostgresqlProvider) AwsRdsIamAuth() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PostgresqlProvider) AwsRdsIamAuth() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"awsRdsIamAuth",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_PostgresqlProvider) AwsRdsIamAuth() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PostgresqlProvider) AwsRdsIamAuthInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PostgresqlProvider) AwsRdsIamAuthInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"awsRdsIamAuthInput",
@@ -250,8 +250,8 @@ func (j *jsiiProxy_PostgresqlProvider) AwsRdsIamRegionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_PostgresqlProvider) AzureIdentityAuth() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PostgresqlProvider) AzureIdentityAuth() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"azureIdentityAuth",
@@ -260,8 +260,8 @@ func (j *jsiiProxy_PostgresqlProvider) AzureIdentityAuth() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PostgresqlProvider) AzureIdentityAuthInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PostgresqlProvider) AzureIdentityAuthInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"azureIdentityAuthInput",
@@ -340,8 +340,8 @@ func (j *jsiiProxy_PostgresqlProvider) ConnectTimeoutInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_PostgresqlProvider) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_PostgresqlProvider) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -490,8 +490,8 @@ func (j *jsiiProxy_PostgresqlProvider) MaxConnectionsInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_PostgresqlProvider) MetaAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_PostgresqlProvider) MetaAttributes() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"metaAttributes",
@@ -550,8 +550,8 @@ func (j *jsiiProxy_PostgresqlProvider) PortInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_PostgresqlProvider) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PostgresqlProvider) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -640,8 +640,8 @@ func (j *jsiiProxy_PostgresqlProvider) SslrootcertInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_PostgresqlProvider) Superuser() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PostgresqlProvider) Superuser() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"superuser",
@@ -650,8 +650,8 @@ func (j *jsiiProxy_PostgresqlProvider) Superuser() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PostgresqlProvider) SuperuserInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PostgresqlProvider) SuperuserInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"superuserInput",
@@ -710,7 +710,6 @@ func (j *jsiiProxy_PostgresqlProvider) UsernameInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs postgresql} Resource.
 func NewPostgresqlProvider(scope constructs.Construct, id *string, config *PostgresqlProviderConfig) PostgresqlProvider {
 	_init_.Initialize()
@@ -722,7 +721,7 @@ func NewPostgresqlProvider(scope constructs.Construct, id *string, config *Postg
 
 	_jsii_.Create(
 		"@cdktf/provider-postgresql.provider.PostgresqlProvider",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -735,12 +734,12 @@ func NewPostgresqlProvider_Override(p PostgresqlProvider, scope constructs.Const
 
 	_jsii_.Create(
 		"@cdktf/provider-postgresql.provider.PostgresqlProvider",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PostgresqlProvider)SetAlias(val *string) {
+func (j *jsiiProxy_PostgresqlProvider) SetAlias(val *string) {
 	_jsii_.Set(
 		j,
 		"alias",
@@ -748,7 +747,7 @@ func (j *jsiiProxy_PostgresqlProvider)SetAlias(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PostgresqlProvider)SetAwsRdsIamAuth(val interface{}) {
+func (j *jsiiProxy_PostgresqlProvider) SetAwsRdsIamAuth(val any) {
 	if err := j.validateSetAwsRdsIamAuthParameters(val); err != nil {
 		panic(err)
 	}
@@ -759,7 +758,7 @@ func (j *jsiiProxy_PostgresqlProvider)SetAwsRdsIamAuth(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PostgresqlProvider)SetAwsRdsIamProfile(val *string) {
+func (j *jsiiProxy_PostgresqlProvider) SetAwsRdsIamProfile(val *string) {
 	_jsii_.Set(
 		j,
 		"awsRdsIamProfile",
@@ -767,7 +766,7 @@ func (j *jsiiProxy_PostgresqlProvider)SetAwsRdsIamProfile(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PostgresqlProvider)SetAwsRdsIamProviderRoleArn(val *string) {
+func (j *jsiiProxy_PostgresqlProvider) SetAwsRdsIamProviderRoleArn(val *string) {
 	_jsii_.Set(
 		j,
 		"awsRdsIamProviderRoleArn",
@@ -775,7 +774,7 @@ func (j *jsiiProxy_PostgresqlProvider)SetAwsRdsIamProviderRoleArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PostgresqlProvider)SetAwsRdsIamRegion(val *string) {
+func (j *jsiiProxy_PostgresqlProvider) SetAwsRdsIamRegion(val *string) {
 	_jsii_.Set(
 		j,
 		"awsRdsIamRegion",
@@ -783,7 +782,7 @@ func (j *jsiiProxy_PostgresqlProvider)SetAwsRdsIamRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PostgresqlProvider)SetAzureIdentityAuth(val interface{}) {
+func (j *jsiiProxy_PostgresqlProvider) SetAzureIdentityAuth(val any) {
 	if err := j.validateSetAzureIdentityAuthParameters(val); err != nil {
 		panic(err)
 	}
@@ -794,7 +793,7 @@ func (j *jsiiProxy_PostgresqlProvider)SetAzureIdentityAuth(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PostgresqlProvider)SetAzureTenantId(val *string) {
+func (j *jsiiProxy_PostgresqlProvider) SetAzureTenantId(val *string) {
 	_jsii_.Set(
 		j,
 		"azureTenantId",
@@ -802,7 +801,7 @@ func (j *jsiiProxy_PostgresqlProvider)SetAzureTenantId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PostgresqlProvider)SetClientcert(val *PostgresqlProviderClientcert) {
+func (j *jsiiProxy_PostgresqlProvider) SetClientcert(val *PostgresqlProviderClientcert) {
 	if err := j.validateSetClientcertParameters(val); err != nil {
 		panic(err)
 	}
@@ -813,7 +812,7 @@ func (j *jsiiProxy_PostgresqlProvider)SetClientcert(val *PostgresqlProviderClien
 	)
 }
 
-func (j *jsiiProxy_PostgresqlProvider)SetConnectTimeout(val *float64) {
+func (j *jsiiProxy_PostgresqlProvider) SetConnectTimeout(val *float64) {
 	_jsii_.Set(
 		j,
 		"connectTimeout",
@@ -821,7 +820,7 @@ func (j *jsiiProxy_PostgresqlProvider)SetConnectTimeout(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_PostgresqlProvider)SetDatabase(val *string) {
+func (j *jsiiProxy_PostgresqlProvider) SetDatabase(val *string) {
 	_jsii_.Set(
 		j,
 		"database",
@@ -829,7 +828,7 @@ func (j *jsiiProxy_PostgresqlProvider)SetDatabase(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PostgresqlProvider)SetDatabaseUsername(val *string) {
+func (j *jsiiProxy_PostgresqlProvider) SetDatabaseUsername(val *string) {
 	_jsii_.Set(
 		j,
 		"databaseUsername",
@@ -837,7 +836,7 @@ func (j *jsiiProxy_PostgresqlProvider)SetDatabaseUsername(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PostgresqlProvider)SetExpectedVersion(val *string) {
+func (j *jsiiProxy_PostgresqlProvider) SetExpectedVersion(val *string) {
 	_jsii_.Set(
 		j,
 		"expectedVersion",
@@ -845,7 +844,7 @@ func (j *jsiiProxy_PostgresqlProvider)SetExpectedVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PostgresqlProvider)SetGcpIamImpersonateServiceAccount(val *string) {
+func (j *jsiiProxy_PostgresqlProvider) SetGcpIamImpersonateServiceAccount(val *string) {
 	_jsii_.Set(
 		j,
 		"gcpIamImpersonateServiceAccount",
@@ -853,7 +852,7 @@ func (j *jsiiProxy_PostgresqlProvider)SetGcpIamImpersonateServiceAccount(val *st
 	)
 }
 
-func (j *jsiiProxy_PostgresqlProvider)SetHost(val *string) {
+func (j *jsiiProxy_PostgresqlProvider) SetHost(val *string) {
 	_jsii_.Set(
 		j,
 		"host",
@@ -861,7 +860,7 @@ func (j *jsiiProxy_PostgresqlProvider)SetHost(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PostgresqlProvider)SetMaxConnections(val *float64) {
+func (j *jsiiProxy_PostgresqlProvider) SetMaxConnections(val *float64) {
 	_jsii_.Set(
 		j,
 		"maxConnections",
@@ -869,7 +868,7 @@ func (j *jsiiProxy_PostgresqlProvider)SetMaxConnections(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_PostgresqlProvider)SetPassword(val *string) {
+func (j *jsiiProxy_PostgresqlProvider) SetPassword(val *string) {
 	_jsii_.Set(
 		j,
 		"password",
@@ -877,7 +876,7 @@ func (j *jsiiProxy_PostgresqlProvider)SetPassword(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PostgresqlProvider)SetPort(val *float64) {
+func (j *jsiiProxy_PostgresqlProvider) SetPort(val *float64) {
 	_jsii_.Set(
 		j,
 		"port",
@@ -885,7 +884,7 @@ func (j *jsiiProxy_PostgresqlProvider)SetPort(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_PostgresqlProvider)SetScheme(val *string) {
+func (j *jsiiProxy_PostgresqlProvider) SetScheme(val *string) {
 	_jsii_.Set(
 		j,
 		"scheme",
@@ -893,7 +892,7 @@ func (j *jsiiProxy_PostgresqlProvider)SetScheme(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PostgresqlProvider)SetSslmode(val *string) {
+func (j *jsiiProxy_PostgresqlProvider) SetSslmode(val *string) {
 	_jsii_.Set(
 		j,
 		"sslmode",
@@ -901,7 +900,7 @@ func (j *jsiiProxy_PostgresqlProvider)SetSslmode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PostgresqlProvider)SetSslMode(val *string) {
+func (j *jsiiProxy_PostgresqlProvider) SetSslMode(val *string) {
 	_jsii_.Set(
 		j,
 		"sslMode",
@@ -909,7 +908,7 @@ func (j *jsiiProxy_PostgresqlProvider)SetSslMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PostgresqlProvider)SetSslrootcert(val *string) {
+func (j *jsiiProxy_PostgresqlProvider) SetSslrootcert(val *string) {
 	_jsii_.Set(
 		j,
 		"sslrootcert",
@@ -917,7 +916,7 @@ func (j *jsiiProxy_PostgresqlProvider)SetSslrootcert(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PostgresqlProvider)SetSuperuser(val interface{}) {
+func (j *jsiiProxy_PostgresqlProvider) SetSuperuser(val any) {
 	if err := j.validateSetSuperuserParameters(val); err != nil {
 		panic(err)
 	}
@@ -928,7 +927,7 @@ func (j *jsiiProxy_PostgresqlProvider)SetSuperuser(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PostgresqlProvider)SetUsername(val *string) {
+func (j *jsiiProxy_PostgresqlProvider) SetUsername(val *string) {
 	_jsii_.Set(
 		j,
 		"username",
@@ -948,7 +947,7 @@ func PostgresqlProvider_GenerateConfigForImport(scope constructs.Construct, impo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-postgresql.provider.PostgresqlProvider",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -972,7 +971,7 @@ func PostgresqlProvider_GenerateConfigForImport(scope constructs.Construct, impo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func PostgresqlProvider_IsConstruct(x interface{}) *bool {
+func PostgresqlProvider_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePostgresqlProvider_IsConstructParameters(x); err != nil {
@@ -983,7 +982,7 @@ func PostgresqlProvider_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-postgresql.provider.PostgresqlProvider",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -991,7 +990,7 @@ func PostgresqlProvider_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func PostgresqlProvider_IsTerraformElement(x interface{}) *bool {
+func PostgresqlProvider_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePostgresqlProvider_IsTerraformElementParameters(x); err != nil {
@@ -1002,7 +1001,7 @@ func PostgresqlProvider_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-postgresql.provider.PostgresqlProvider",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1010,7 +1009,7 @@ func PostgresqlProvider_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func PostgresqlProvider_IsTerraformProvider(x interface{}) *bool {
+func PostgresqlProvider_IsTerraformProvider(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePostgresqlProvider_IsTerraformProviderParameters(x); err != nil {
@@ -1021,7 +1020,7 @@ func PostgresqlProvider_IsTerraformProvider(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-postgresql.provider.PostgresqlProvider",
 		"isTerraformProvider",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1039,14 +1038,14 @@ func PostgresqlProvider_TfResourceType() *string {
 	return returns
 }
 
-func (p *jsiiProxy_PostgresqlProvider) AddOverride(path *string, value interface{}) {
+func (p *jsiiProxy_PostgresqlProvider) AddOverride(path *string, value any) {
 	if err := p.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
@@ -1057,7 +1056,7 @@ func (p *jsiiProxy_PostgresqlProvider) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1253,8 +1252,8 @@ func (p *jsiiProxy_PostgresqlProvider) ResetUsername() {
 	)
 }
 
-func (p *jsiiProxy_PostgresqlProvider) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_PostgresqlProvider) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -1266,8 +1265,8 @@ func (p *jsiiProxy_PostgresqlProvider) SynthesizeAttributes() *map[string]interf
 	return returns
 }
 
-func (p *jsiiProxy_PostgresqlProvider) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_PostgresqlProvider) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -1279,8 +1278,8 @@ func (p *jsiiProxy_PostgresqlProvider) SynthesizeHclAttributes() *map[string]int
 	return returns
 }
 
-func (p *jsiiProxy_PostgresqlProvider) ToHclTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PostgresqlProvider) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1292,8 +1291,8 @@ func (p *jsiiProxy_PostgresqlProvider) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_PostgresqlProvider) ToMetadata() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PostgresqlProvider) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1318,8 +1317,8 @@ func (p *jsiiProxy_PostgresqlProvider) ToString() *string {
 	return returns
 }
 
-func (p *jsiiProxy_PostgresqlProvider) ToTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PostgresqlProvider) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1330,4 +1329,3 @@ func (p *jsiiProxy_PostgresqlProvider) ToTerraform() interface{} {
 
 	return returns
 }
-

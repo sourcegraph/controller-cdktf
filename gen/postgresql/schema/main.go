@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-postgresql.schema.Schema",
-		reflect.TypeOf((*Schema)(nil)).Elem(),
+		reflect.TypeFor[Schema](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,7 +74,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Schema{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -82,15 +82,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-postgresql.schema.SchemaConfig",
-		reflect.TypeOf((*SchemaConfig)(nil)).Elem(),
+		reflect.TypeFor[SchemaConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-postgresql.schema.SchemaPolicy",
-		reflect.TypeOf((*SchemaPolicy)(nil)).Elem(),
+		reflect.TypeFor[SchemaPolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-postgresql.schema.SchemaPolicyList",
-		reflect.TypeOf((*SchemaPolicyList)(nil)).Elem(),
+		reflect.TypeFor[SchemaPolicyList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -104,7 +104,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SchemaPolicyList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -112,7 +112,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference",
-		reflect.TypeOf((*SchemaPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SchemaPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -151,7 +151,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "usageWithGrant", GoGetter: "UsageWithGrant"},
 			_jsii_.MemberProperty{JsiiProperty: "usageWithGrantInput", GoGetter: "UsageWithGrantInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SchemaPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

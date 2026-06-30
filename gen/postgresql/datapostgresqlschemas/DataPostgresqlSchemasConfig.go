@@ -6,9 +6,9 @@ import (
 
 type DataPostgresqlSchemasConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type DataPostgresqlSchemasConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The PostgreSQL database which will be queried for schema names.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/data-sources/schemas#database DataPostgresqlSchemas#database}
@@ -31,7 +31,7 @@ type DataPostgresqlSchemasConfig struct {
 	// Determines whether to include system schemas (pg_ prefix and information_schema). 'public' will always be included.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/data-sources/schemas#include_system_schemas DataPostgresqlSchemas#include_system_schemas}
-	IncludeSystemSchemas interface{} `field:"optional" json:"includeSystemSchemas" yaml:"includeSystemSchemas"`
+	IncludeSystemSchemas any `field:"optional" json:"includeSystemSchemas" yaml:"includeSystemSchemas"`
 	// Expression(s) which will be pattern matched in the query using the PostgreSQL LIKE ALL operator.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/data-sources/schemas#like_all_patterns DataPostgresqlSchemas#like_all_patterns}
@@ -49,4 +49,3 @@ type DataPostgresqlSchemasConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/data-sources/schemas#regex_pattern DataPostgresqlSchemas#regex_pattern}
 	RegexPattern *string `field:"optional" json:"regexPattern" yaml:"regexPattern"`
 }
-

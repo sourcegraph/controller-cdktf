@@ -6,9 +6,9 @@ import (
 
 type SubscriptionConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type SubscriptionConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The connection string to the publisher. It should follow the keyword/value format (https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNSTRING).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/subscription#conninfo Subscription#conninfo}
@@ -34,7 +34,7 @@ type SubscriptionConfig struct {
 	// Specifies whether the command should create the replication slot on the publisher.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/subscription#create_slot Subscription#create_slot}
-	CreateSlot interface{} `field:"optional" json:"createSlot" yaml:"createSlot"`
+	CreateSlot any `field:"optional" json:"createSlot" yaml:"createSlot"`
 	// Sets the database to add the subscription for.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/subscription#database Subscription#database}
@@ -51,4 +51,3 @@ type SubscriptionConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/subscription#slot_name Subscription#slot_name}
 	SlotName *string `field:"optional" json:"slotName" yaml:"slotName"`
 }
-
