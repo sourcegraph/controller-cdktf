@@ -19,7 +19,7 @@ func (s *jsiiProxy_StringResource) validateAddMoveTargetParameters(moveTarget *s
 	return nil
 }
 
-func (s *jsiiProxy_StringResource) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_StringResource) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_StringResource) validateMoveFromIdParameters(id *string) erro
 	return nil
 }
 
-func (s *jsiiProxy_StringResource) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_StringResource) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateStringResource_GenerateConfigForImportParameters(scope constructs.C
 	return nil
 }
 
-func validateStringResource_IsConstructParameters(x interface{}) error {
+func validateStringResource_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateStringResource_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateStringResource_IsTerraformElementParameters(x interface{}) error {
+func validateStringResource_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateStringResource_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateStringResource_IsTerraformResourceParameters(x interface{}) error {
+func validateStringResource_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateStringResource_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_StringResource) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_StringResource) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_StringResource) validateSetConnectionParameters(val interface
 	return nil
 }
 
-func (j *jsiiProxy_StringResource) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_StringResource) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -358,7 +358,7 @@ func (j *jsiiProxy_StringResource) validateSetLifecycleParameters(val *cdktf.Ter
 	return nil
 }
 
-func (j *jsiiProxy_StringResource) validateSetLowerParameters(val interface{}) error {
+func (j *jsiiProxy_StringResource) validateSetLowerParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -410,7 +410,7 @@ func (j *jsiiProxy_StringResource) validateSetMinUpperParameters(val *float64) e
 	return nil
 }
 
-func (j *jsiiProxy_StringResource) validateSetNumberParameters(val interface{}) error {
+func (j *jsiiProxy_StringResource) validateSetNumberParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -430,7 +430,7 @@ func (j *jsiiProxy_StringResource) validateSetNumberParameters(val interface{}) 
 	return nil
 }
 
-func (j *jsiiProxy_StringResource) validateSetNumericParameters(val interface{}) error {
+func (j *jsiiProxy_StringResource) validateSetNumericParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -458,7 +458,7 @@ func (j *jsiiProxy_StringResource) validateSetOverrideSpecialParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_StringResource) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_StringResource) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -504,7 +504,7 @@ func (j *jsiiProxy_StringResource) validateSetProvisionersParameters(val *[]inte
 	return nil
 }
 
-func (j *jsiiProxy_StringResource) validateSetSpecialParameters(val interface{}) error {
+func (j *jsiiProxy_StringResource) validateSetSpecialParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -524,7 +524,7 @@ func (j *jsiiProxy_StringResource) validateSetSpecialParameters(val interface{})
 	return nil
 }
 
-func (j *jsiiProxy_StringResource) validateSetUpperParameters(val interface{}) error {
+func (j *jsiiProxy_StringResource) validateSetUpperParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -562,4 +562,3 @@ func validateNewStringResourceParameters(scope constructs.Construct, id *string,
 
 	return nil
 }
-

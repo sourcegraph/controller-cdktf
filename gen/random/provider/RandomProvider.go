@@ -18,17 +18,17 @@ type RandomProvider interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	// Experimental.
-	MetaAttributes() *map[string]interface{}
+	MetaAttributes() *map[string]any
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -36,7 +36,7 @@ type RandomProvider interface {
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -44,17 +44,17 @@ type RandomProvider interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for RandomProvider
@@ -92,8 +92,8 @@ func (j *jsiiProxy_RandomProvider) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_RandomProvider) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_RandomProvider) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -122,8 +122,8 @@ func (j *jsiiProxy_RandomProvider) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RandomProvider) MetaAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_RandomProvider) MetaAttributes() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"metaAttributes",
@@ -142,8 +142,8 @@ func (j *jsiiProxy_RandomProvider) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_RandomProvider) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RandomProvider) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -182,7 +182,6 @@ func (j *jsiiProxy_RandomProvider) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs random} Resource.
 func NewRandomProvider(scope constructs.Construct, id *string, config *RandomProviderConfig) RandomProvider {
 	_init_.Initialize()
@@ -194,7 +193,7 @@ func NewRandomProvider(scope constructs.Construct, id *string, config *RandomPro
 
 	_jsii_.Create(
 		"@cdktf/provider-random.provider.RandomProvider",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -207,12 +206,12 @@ func NewRandomProvider_Override(r RandomProvider, scope constructs.Construct, id
 
 	_jsii_.Create(
 		"@cdktf/provider-random.provider.RandomProvider",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		r,
 	)
 }
 
-func (j *jsiiProxy_RandomProvider)SetAlias(val *string) {
+func (j *jsiiProxy_RandomProvider) SetAlias(val *string) {
 	_jsii_.Set(
 		j,
 		"alias",
@@ -232,7 +231,7 @@ func RandomProvider_GenerateConfigForImport(scope constructs.Construct, importTo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-random.provider.RandomProvider",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -256,7 +255,7 @@ func RandomProvider_GenerateConfigForImport(scope constructs.Construct, importTo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func RandomProvider_IsConstruct(x interface{}) *bool {
+func RandomProvider_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRandomProvider_IsConstructParameters(x); err != nil {
@@ -267,7 +266,7 @@ func RandomProvider_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-random.provider.RandomProvider",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -275,7 +274,7 @@ func RandomProvider_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func RandomProvider_IsTerraformElement(x interface{}) *bool {
+func RandomProvider_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRandomProvider_IsTerraformElementParameters(x); err != nil {
@@ -286,7 +285,7 @@ func RandomProvider_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-random.provider.RandomProvider",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -294,7 +293,7 @@ func RandomProvider_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func RandomProvider_IsTerraformProvider(x interface{}) *bool {
+func RandomProvider_IsTerraformProvider(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRandomProvider_IsTerraformProviderParameters(x); err != nil {
@@ -305,7 +304,7 @@ func RandomProvider_IsTerraformProvider(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-random.provider.RandomProvider",
 		"isTerraformProvider",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -323,14 +322,14 @@ func RandomProvider_TfResourceType() *string {
 	return returns
 }
 
-func (r *jsiiProxy_RandomProvider) AddOverride(path *string, value interface{}) {
+func (r *jsiiProxy_RandomProvider) AddOverride(path *string, value any) {
 	if err := r.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
@@ -341,7 +340,7 @@ func (r *jsiiProxy_RandomProvider) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -361,8 +360,8 @@ func (r *jsiiProxy_RandomProvider) ResetOverrideLogicalId() {
 	)
 }
 
-func (r *jsiiProxy_RandomProvider) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_RandomProvider) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -374,8 +373,8 @@ func (r *jsiiProxy_RandomProvider) SynthesizeAttributes() *map[string]interface{
 	return returns
 }
 
-func (r *jsiiProxy_RandomProvider) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_RandomProvider) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -387,8 +386,8 @@ func (r *jsiiProxy_RandomProvider) SynthesizeHclAttributes() *map[string]interfa
 	return returns
 }
 
-func (r *jsiiProxy_RandomProvider) ToHclTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RandomProvider) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -400,8 +399,8 @@ func (r *jsiiProxy_RandomProvider) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (r *jsiiProxy_RandomProvider) ToMetadata() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RandomProvider) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -426,8 +425,8 @@ func (r *jsiiProxy_RandomProvider) ToString() *string {
 	return returns
 }
 
-func (r *jsiiProxy_RandomProvider) ToTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RandomProvider) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -438,4 +437,3 @@ func (r *jsiiProxy_RandomProvider) ToTerraform() interface{} {
 
 	return returns
 }
-

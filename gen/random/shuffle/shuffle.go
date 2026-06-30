@@ -15,15 +15,15 @@ type Shuffle interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -54,11 +54,11 @@ type Shuffle interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Result() *[]*string
 	ResultCount() *float64
 	SetResultCount(val *float64)
@@ -69,16 +69,16 @@ type Shuffle interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -96,7 +96,7 @@ type Shuffle interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -108,7 +108,7 @@ type Shuffle interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -121,17 +121,17 @@ type Shuffle interface {
 	ResetOverrideLogicalId()
 	ResetResultCount()
 	ResetSeed()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Shuffle
@@ -149,8 +149,8 @@ func (j *jsiiProxy_Shuffle) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_Shuffle) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Shuffle) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -159,8 +159,8 @@ func (j *jsiiProxy_Shuffle) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Shuffle) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Shuffle) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -169,8 +169,8 @@ func (j *jsiiProxy_Shuffle) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Shuffle) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Shuffle) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -299,8 +299,8 @@ func (j *jsiiProxy_Shuffle) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_Shuffle) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Shuffle) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -309,8 +309,8 @@ func (j *jsiiProxy_Shuffle) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Shuffle) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Shuffle) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -379,8 +379,8 @@ func (j *jsiiProxy_Shuffle) TerraformGeneratorMetadata() *cdktf.TerraformProvide
 	return returns
 }
 
-func (j *jsiiProxy_Shuffle) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Shuffle) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -399,7 +399,6 @@ func (j *jsiiProxy_Shuffle) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/shuffle random_shuffle} Resource.
 func NewShuffle(scope constructs.Construct, id *string, config *ShuffleConfig) Shuffle {
 	_init_.Initialize()
@@ -411,7 +410,7 @@ func NewShuffle(scope constructs.Construct, id *string, config *ShuffleConfig) S
 
 	_jsii_.Create(
 		"@cdktf/provider-random.shuffle.Shuffle",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -424,12 +423,12 @@ func NewShuffle_Override(s Shuffle, scope constructs.Construct, id *string, conf
 
 	_jsii_.Create(
 		"@cdktf/provider-random.shuffle.Shuffle",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_Shuffle)SetConnection(val interface{}) {
+func (j *jsiiProxy_Shuffle) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -440,7 +439,7 @@ func (j *jsiiProxy_Shuffle)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Shuffle)SetCount(val interface{}) {
+func (j *jsiiProxy_Shuffle) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -451,7 +450,7 @@ func (j *jsiiProxy_Shuffle)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Shuffle)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Shuffle) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -459,7 +458,7 @@ func (j *jsiiProxy_Shuffle)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Shuffle)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Shuffle) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -467,7 +466,7 @@ func (j *jsiiProxy_Shuffle)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Shuffle)SetInput(val *[]*string) {
+func (j *jsiiProxy_Shuffle) SetInput(val *[]*string) {
 	if err := j.validateSetInputParameters(val); err != nil {
 		panic(err)
 	}
@@ -478,7 +477,7 @@ func (j *jsiiProxy_Shuffle)SetInput(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Shuffle)SetKeepers(val *map[string]*string) {
+func (j *jsiiProxy_Shuffle) SetKeepers(val *map[string]*string) {
 	if err := j.validateSetKeepersParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_Shuffle)SetKeepers(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Shuffle)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Shuffle) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_Shuffle)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	)
 }
 
-func (j *jsiiProxy_Shuffle)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Shuffle) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -508,7 +507,7 @@ func (j *jsiiProxy_Shuffle)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_Shuffle)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Shuffle) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -519,7 +518,7 @@ func (j *jsiiProxy_Shuffle)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Shuffle)SetResultCount(val *float64) {
+func (j *jsiiProxy_Shuffle) SetResultCount(val *float64) {
 	if err := j.validateSetResultCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -530,7 +529,7 @@ func (j *jsiiProxy_Shuffle)SetResultCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Shuffle)SetSeed(val *string) {
+func (j *jsiiProxy_Shuffle) SetSeed(val *string) {
 	if err := j.validateSetSeedParameters(val); err != nil {
 		panic(err)
 	}
@@ -553,7 +552,7 @@ func Shuffle_GenerateConfigForImport(scope constructs.Construct, importToId *str
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-random.shuffle.Shuffle",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -577,7 +576,7 @@ func Shuffle_GenerateConfigForImport(scope constructs.Construct, importToId *str
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Shuffle_IsConstruct(x interface{}) *bool {
+func Shuffle_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateShuffle_IsConstructParameters(x); err != nil {
@@ -588,7 +587,7 @@ func Shuffle_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-random.shuffle.Shuffle",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -596,7 +595,7 @@ func Shuffle_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Shuffle_IsTerraformElement(x interface{}) *bool {
+func Shuffle_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateShuffle_IsTerraformElementParameters(x); err != nil {
@@ -607,7 +606,7 @@ func Shuffle_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-random.shuffle.Shuffle",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -615,7 +614,7 @@ func Shuffle_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func Shuffle_IsTerraformResource(x interface{}) *bool {
+func Shuffle_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateShuffle_IsTerraformResourceParameters(x); err != nil {
@@ -626,7 +625,7 @@ func Shuffle_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-random.shuffle.Shuffle",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -651,31 +650,31 @@ func (s *jsiiProxy_Shuffle) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_Shuffle) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_Shuffle) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_Shuffle) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_Shuffle) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -691,7 +690,7 @@ func (s *jsiiProxy_Shuffle) GetBooleanAttribute(terraformAttribute *string) cdkt
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -707,7 +706,7 @@ func (s *jsiiProxy_Shuffle) GetBooleanMapAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -723,7 +722,7 @@ func (s *jsiiProxy_Shuffle) GetListAttribute(terraformAttribute *string) *[]*str
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -739,7 +738,7 @@ func (s *jsiiProxy_Shuffle) GetNumberAttribute(terraformAttribute *string) *floa
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -755,7 +754,7 @@ func (s *jsiiProxy_Shuffle) GetNumberListAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -771,7 +770,7 @@ func (s *jsiiProxy_Shuffle) GetNumberMapAttribute(terraformAttribute *string) *m
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -787,7 +786,7 @@ func (s *jsiiProxy_Shuffle) GetStringAttribute(terraformAttribute *string) *stri
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -803,15 +802,15 @@ func (s *jsiiProxy_Shuffle) GetStringMapAttribute(terraformAttribute *string) *m
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_Shuffle) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_Shuffle) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -830,7 +829,7 @@ func (s *jsiiProxy_Shuffle) ImportFrom(id *string, provider cdktf.TerraformProvi
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -843,7 +842,7 @@ func (s *jsiiProxy_Shuffle) InterpolationForAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -857,18 +856,18 @@ func (s *jsiiProxy_Shuffle) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_Shuffle) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_Shuffle) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -879,7 +878,7 @@ func (s *jsiiProxy_Shuffle) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -890,7 +889,7 @@ func (s *jsiiProxy_Shuffle) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -926,8 +925,8 @@ func (s *jsiiProxy_Shuffle) ResetSeed() {
 	)
 }
 
-func (s *jsiiProxy_Shuffle) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_Shuffle) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -939,8 +938,8 @@ func (s *jsiiProxy_Shuffle) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_Shuffle) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_Shuffle) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -952,8 +951,8 @@ func (s *jsiiProxy_Shuffle) SynthesizeHclAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_Shuffle) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_Shuffle) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -965,8 +964,8 @@ func (s *jsiiProxy_Shuffle) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_Shuffle) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_Shuffle) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -991,8 +990,8 @@ func (s *jsiiProxy_Shuffle) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_Shuffle) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_Shuffle) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1003,4 +1002,3 @@ func (s *jsiiProxy_Shuffle) ToTerraform() interface{} {
 
 	return returns
 }
-

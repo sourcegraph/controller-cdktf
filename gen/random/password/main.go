@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-random.password.Password",
-		reflect.TypeOf((*Password)(nil)).Elem(),
+		reflect.TypeFor[Password](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -91,7 +91,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "upper", GoGetter: "Upper"},
 			_jsii_.MemberProperty{JsiiProperty: "upperInput", GoGetter: "UpperInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Password{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -99,6 +99,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-random.password.PasswordConfig",
-		reflect.TypeOf((*PasswordConfig)(nil)).Elem(),
+		reflect.TypeFor[PasswordConfig](),
 	)
 }
