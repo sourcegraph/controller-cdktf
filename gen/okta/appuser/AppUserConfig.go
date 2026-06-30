@@ -6,9 +6,9 @@ import (
 
 type AppUserConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type AppUserConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// App to associate user with.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user#app_id AppUser#app_id}
@@ -45,7 +45,7 @@ type AppUserConfig struct {
 	// If set to true, the resource will be removed from state but not from the Okta app.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user#retain_assignment AppUser#retain_assignment}
-	RetainAssignment interface{} `field:"optional" json:"retainAssignment" yaml:"retainAssignment"`
+	RetainAssignment any `field:"optional" json:"retainAssignment" yaml:"retainAssignment"`
 	// The username to use for the app user.
 	//
 	// In case the user is assigned to the app with `SHARED_USERNAME_AND_PASSWORD` credentials scheme, this field will be computed and should not be set.
@@ -53,4 +53,3 @@ type AppUserConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user#username AppUser#username}
 	Username *string `field:"optional" json:"username" yaml:"username"`
 }
-

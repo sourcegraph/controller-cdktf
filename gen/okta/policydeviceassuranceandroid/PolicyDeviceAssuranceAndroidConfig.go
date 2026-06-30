@@ -6,9 +6,9 @@ import (
 
 type PolicyDeviceAssuranceAndroidConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type PolicyDeviceAssuranceAndroidConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Policy device assurance name.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_device_assurance_android#name PolicyDeviceAssuranceAndroid#name}
@@ -30,7 +30,7 @@ type PolicyDeviceAssuranceAndroidConfig struct {
 	// Is the device jailbroken in the device assurance policy.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_device_assurance_android#jailbreak PolicyDeviceAssuranceAndroid#jailbreak}
-	Jailbreak interface{} `field:"optional" json:"jailbreak" yaml:"jailbreak"`
+	Jailbreak any `field:"optional" json:"jailbreak" yaml:"jailbreak"`
 	// Minimum os version of the device in the device assurance policy.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_device_assurance_android#os_version PolicyDeviceAssuranceAndroid#os_version}
@@ -42,6 +42,5 @@ type PolicyDeviceAssuranceAndroidConfig struct {
 	// Indicates if the device contains a secure hardware functionality.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_device_assurance_android#secure_hardware_present PolicyDeviceAssuranceAndroid#secure_hardware_present}
-	SecureHardwarePresent interface{} `field:"optional" json:"secureHardwarePresent" yaml:"secureHardwarePresent"`
+	SecureHardwarePresent any `field:"optional" json:"secureHardwarePresent" yaml:"secureHardwarePresent"`
 }
-

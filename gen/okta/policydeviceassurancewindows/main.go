@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.policyDeviceAssuranceWindows.PolicyDeviceAssuranceWindows",
-		reflect.TypeOf((*PolicyDeviceAssuranceWindows)(nil)).Elem(),
+		reflect.TypeFor[PolicyDeviceAssuranceWindows](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -133,7 +133,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "tpspWindowsUserDomain", GoGetter: "TpspWindowsUserDomain"},
 			_jsii_.MemberProperty{JsiiProperty: "tpspWindowsUserDomainInput", GoGetter: "TpspWindowsUserDomainInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PolicyDeviceAssuranceWindows{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -141,6 +141,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.policyDeviceAssuranceWindows.PolicyDeviceAssuranceWindowsConfig",
-		reflect.TypeOf((*PolicyDeviceAssuranceWindowsConfig)(nil)).Elem(),
+		reflect.TypeFor[PolicyDeviceAssuranceWindowsConfig](),
 	)
 }

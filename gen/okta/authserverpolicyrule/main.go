@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.authServerPolicyRule.AuthServerPolicyRule",
-		reflect.TypeOf((*AuthServerPolicyRule)(nil)).Elem(),
+		reflect.TypeFor[AuthServerPolicyRule](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessTokenLifetimeMinutes", GoGetter: "AccessTokenLifetimeMinutes"},
 			_jsii_.MemberProperty{JsiiProperty: "accessTokenLifetimeMinutesInput", GoGetter: "AccessTokenLifetimeMinutesInput"},
@@ -100,7 +100,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userWhitelist", GoGetter: "UserWhitelist"},
 			_jsii_.MemberProperty{JsiiProperty: "userWhitelistInput", GoGetter: "UserWhitelistInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AuthServerPolicyRule{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -108,6 +108,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.authServerPolicyRule.AuthServerPolicyRuleConfig",
-		reflect.TypeOf((*AuthServerPolicyRuleConfig)(nil)).Elem(),
+		reflect.TypeFor[AuthServerPolicyRuleConfig](),
 	)
 }

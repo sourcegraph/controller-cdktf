@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.appBookmark.AppBookmark",
-		reflect.TypeOf((*AppBookmark)(nil)).Elem(),
+		reflect.TypeFor[AppBookmark](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessibilityErrorRedirectUrl", GoGetter: "AccessibilityErrorRedirectUrl"},
 			_jsii_.MemberProperty{JsiiProperty: "accessibilityErrorRedirectUrlInput", GoGetter: "AccessibilityErrorRedirectUrlInput"},
@@ -106,7 +106,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 			_jsii_.MemberProperty{JsiiProperty: "urlInput", GoGetter: "UrlInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppBookmark{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -114,15 +114,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.appBookmark.AppBookmarkConfig",
-		reflect.TypeOf((*AppBookmarkConfig)(nil)).Elem(),
+		reflect.TypeFor[AppBookmarkConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.appBookmark.AppBookmarkTimeouts",
-		reflect.TypeOf((*AppBookmarkTimeouts)(nil)).Elem(),
+		reflect.TypeFor[AppBookmarkTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.appBookmark.AppBookmarkTimeoutsOutputReference",
-		reflect.TypeOf((*AppBookmarkTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppBookmarkTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -155,7 +155,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppBookmarkTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -6,9 +6,9 @@ import (
 
 type AppSharedCredentialsConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type AppSharedCredentialsConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The Application's display name.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_shared_credentials#label AppSharedCredentials#label}
@@ -34,7 +34,7 @@ type AppSharedCredentialsConfig struct {
 	// Enable self service. Default is `false`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_shared_credentials#accessibility_self_service AppSharedCredentials#accessibility_self_service}
-	AccessibilitySelfService interface{} `field:"optional" json:"accessibilitySelfService" yaml:"accessibilitySelfService"`
+	AccessibilitySelfService any `field:"optional" json:"accessibilitySelfService" yaml:"accessibilitySelfService"`
 	// Application notes for admins.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_shared_credentials#admin_note AppSharedCredentials#admin_note}
@@ -46,7 +46,7 @@ type AppSharedCredentialsConfig struct {
 	// Display auto submit toolbar.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_shared_credentials#auto_submit_toolbar AppSharedCredentials#auto_submit_toolbar}
-	AutoSubmitToolbar interface{} `field:"optional" json:"autoSubmitToolbar" yaml:"autoSubmitToolbar"`
+	AutoSubmitToolbar any `field:"optional" json:"autoSubmitToolbar" yaml:"autoSubmitToolbar"`
 	// Login button field.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_shared_credentials#button_field AppSharedCredentials#button_field}
@@ -62,11 +62,11 @@ type AppSharedCredentialsConfig struct {
 	// Do not display application icon on mobile app.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_shared_credentials#hide_ios AppSharedCredentials#hide_ios}
-	HideIos interface{} `field:"optional" json:"hideIos" yaml:"hideIos"`
+	HideIos any `field:"optional" json:"hideIos" yaml:"hideIos"`
 	// Do not display application icon to users.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_shared_credentials#hide_web AppSharedCredentials#hide_web}
-	HideWeb interface{} `field:"optional" json:"hideWeb" yaml:"hideWeb"`
+	HideWeb any `field:"optional" json:"hideWeb" yaml:"hideWeb"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_shared_credentials#id AppSharedCredentials#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -135,4 +135,3 @@ type AppSharedCredentialsConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_shared_credentials#user_name_template_type AppSharedCredentials#user_name_template_type}
 	UserNameTemplateType *string `field:"optional" json:"userNameTemplateType" yaml:"userNameTemplateType"`
 }
-

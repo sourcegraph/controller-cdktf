@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.appOauthApiScope.AppOauthApiScope",
-		reflect.TypeOf((*AppOauthApiScope)(nil)).Elem(),
+		reflect.TypeFor[AppOauthApiScope](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,7 +62,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppOauthApiScope{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -70,6 +70,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.appOauthApiScope.AppOauthApiScopeConfig",
-		reflect.TypeOf((*AppOauthApiScopeConfig)(nil)).Elem(),
+		reflect.TypeFor[AppOauthApiScopeConfig](),
 	)
 }

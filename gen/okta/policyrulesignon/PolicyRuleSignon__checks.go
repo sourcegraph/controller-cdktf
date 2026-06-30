@@ -19,7 +19,7 @@ func (p *jsiiProxy_PolicyRuleSignon) validateAddMoveTargetParameters(moveTarget 
 	return nil
 }
 
-func (p *jsiiProxy_PolicyRuleSignon) validateAddOverrideParameters(path *string, value interface{}) error {
+func (p *jsiiProxy_PolicyRuleSignon) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (p *jsiiProxy_PolicyRuleSignon) validateMoveFromIdParameters(id *string) er
 	return nil
 }
 
-func (p *jsiiProxy_PolicyRuleSignon) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (p *jsiiProxy_PolicyRuleSignon) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (p *jsiiProxy_PolicyRuleSignon) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
-func (p *jsiiProxy_PolicyRuleSignon) validatePutFactorSequenceParameters(value interface{}) error {
+func (p *jsiiProxy_PolicyRuleSignon) validatePutFactorSequenceParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -251,7 +251,7 @@ func validatePolicyRuleSignon_GenerateConfigForImportParameters(scope constructs
 	return nil
 }
 
-func validatePolicyRuleSignon_IsConstructParameters(x interface{}) error {
+func validatePolicyRuleSignon_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -259,7 +259,7 @@ func validatePolicyRuleSignon_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validatePolicyRuleSignon_IsTerraformElementParameters(x interface{}) error {
+func validatePolicyRuleSignon_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -267,7 +267,7 @@ func validatePolicyRuleSignon_IsTerraformElementParameters(x interface{}) error 
 	return nil
 }
 
-func validatePolicyRuleSignon_IsTerraformResourceParameters(x interface{}) error {
+func validatePolicyRuleSignon_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -299,7 +299,7 @@ func (j *jsiiProxy_PolicyRuleSignon) validateSetBehaviorsParameters(val *[]*stri
 	return nil
 }
 
-func (j *jsiiProxy_PolicyRuleSignon) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyRuleSignon) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -332,7 +332,7 @@ func (j *jsiiProxy_PolicyRuleSignon) validateSetConnectionParameters(val interfa
 	return nil
 }
 
-func (j *jsiiProxy_PolicyRuleSignon) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyRuleSignon) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -437,7 +437,7 @@ func (j *jsiiProxy_PolicyRuleSignon) validateSetMfaPromptParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_PolicyRuleSignon) validateSetMfaRememberDeviceParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyRuleSignon) validateSetMfaRememberDeviceParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -457,7 +457,7 @@ func (j *jsiiProxy_PolicyRuleSignon) validateSetMfaRememberDeviceParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_PolicyRuleSignon) validateSetMfaRequiredParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyRuleSignon) validateSetMfaRequiredParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -533,7 +533,7 @@ func (j *jsiiProxy_PolicyRuleSignon) validateSetPriorityParameters(val *float64)
 	return nil
 }
 
-func (j *jsiiProxy_PolicyRuleSignon) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_PolicyRuleSignon) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -611,7 +611,7 @@ func (j *jsiiProxy_PolicyRuleSignon) validateSetSessionLifetimeParameters(val *f
 	return nil
 }
 
-func (j *jsiiProxy_PolicyRuleSignon) validateSetSessionPersistentParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyRuleSignon) validateSetSessionPersistentParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -665,4 +665,3 @@ func validateNewPolicyRuleSignonParameters(scope constructs.Construct, id *strin
 
 	return nil
 }
-

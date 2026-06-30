@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.trustedOrigin.TrustedOrigin",
-		reflect.TypeOf((*TrustedOrigin)(nil)).Elem(),
+		reflect.TypeFor[TrustedOrigin](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "active", GoGetter: "Active"},
 			_jsii_.MemberProperty{JsiiProperty: "activeInput", GoGetter: "ActiveInput"},
@@ -65,7 +65,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TrustedOrigin{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -73,6 +73,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.trustedOrigin.TrustedOriginConfig",
-		reflect.TypeOf((*TrustedOriginConfig)(nil)).Elem(),
+		reflect.TypeFor[TrustedOriginConfig](),
 	)
 }

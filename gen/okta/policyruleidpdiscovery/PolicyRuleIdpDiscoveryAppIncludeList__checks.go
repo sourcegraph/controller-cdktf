@@ -34,7 +34,7 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryAppIncludeList) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscoveryAppIncludeList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyRuleIdpDiscoveryAppIncludeList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewPolicyRuleIdpDiscoveryAppIncludeListParameters(terraformResource
 
 	return nil
 }
-

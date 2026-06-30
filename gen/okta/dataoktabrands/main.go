@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.dataOktaBrands.DataOktaBrands",
-		reflect.TypeOf((*DataOktaBrands)(nil)).Elem(),
+		reflect.TypeFor[DataOktaBrands](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "brands", GoGetter: "Brands"},
@@ -49,7 +49,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataOktaBrands{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -57,11 +57,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.dataOktaBrands.DataOktaBrandsBrands",
-		reflect.TypeOf((*DataOktaBrandsBrands)(nil)).Elem(),
+		reflect.TypeFor[DataOktaBrandsBrands](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.dataOktaBrands.DataOktaBrandsBrandsList",
-		reflect.TypeOf((*DataOktaBrandsBrandsList)(nil)).Elem(),
+		reflect.TypeFor[DataOktaBrandsBrandsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -74,7 +74,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataOktaBrandsBrandsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -82,7 +82,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.dataOktaBrands.DataOktaBrandsBrandsOutputReference",
-		reflect.TypeOf((*DataOktaBrandsBrandsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataOktaBrandsBrandsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -111,7 +111,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataOktaBrandsBrandsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -119,6 +119,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.dataOktaBrands.DataOktaBrandsConfig",
-		reflect.TypeOf((*DataOktaBrandsConfig)(nil)).Elem(),
+		reflect.TypeFor[DataOktaBrandsConfig](),
 	)
 }

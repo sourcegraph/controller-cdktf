@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.behavior.Behavior",
-		reflect.TypeOf((*Behavior)(nil)).Elem(),
+		reflect.TypeFor[Behavior](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,7 +75,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "velocity", GoGetter: "Velocity"},
 			_jsii_.MemberProperty{JsiiProperty: "velocityInput", GoGetter: "VelocityInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Behavior{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -83,6 +83,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.behavior.BehaviorConfig",
-		reflect.TypeOf((*BehaviorConfig)(nil)).Elem(),
+		reflect.TypeFor[BehaviorConfig](),
 	)
 }

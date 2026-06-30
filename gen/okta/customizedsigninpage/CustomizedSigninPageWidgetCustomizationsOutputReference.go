@@ -21,9 +21,9 @@ type CustomizedSigninPageWidgetCustomizationsOutputReference interface {
 	ClassicRecoveryFlowEmailOrUsernameLabelInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -60,20 +60,20 @@ type CustomizedSigninPageWidgetCustomizationsOutputReference interface {
 	HelpUrl() *string
 	SetHelpUrl(val *string)
 	HelpUrlInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	PasswordInfoTip() *string
 	SetPasswordInfoTip(val *string)
 	PasswordInfoTipInput() *string
 	PasswordLabel() *string
 	SetPasswordLabel(val *string)
 	PasswordLabelInput() *string
-	ShowPasswordVisibilityToggle() interface{}
-	SetShowPasswordVisibilityToggle(val interface{})
-	ShowPasswordVisibilityToggleInput() interface{}
-	ShowUserIdentifier() interface{}
-	SetShowUserIdentifier(val interface{})
-	ShowUserIdentifierInput() interface{}
+	ShowPasswordVisibilityToggle() any
+	SetShowPasswordVisibilityToggle(val any)
+	ShowPasswordVisibilityToggleInput() any
+	ShowUserIdentifier() any
+	SetShowUserIdentifier(val any)
+	ShowUserIdentifierInput() any
 	SignInLabel() *string
 	SetSignInLabel(val *string)
 	SignInLabelInput() *string
@@ -103,7 +103,7 @@ type CustomizedSigninPageWidgetCustomizationsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -146,7 +146,7 @@ type CustomizedSigninPageWidgetCustomizationsOutputReference interface {
 	ResetUsernameLabel()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -219,8 +219,8 @@ func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) Clas
 	return returns
 }
 
-func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -419,8 +419,8 @@ func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) Help
 	return returns
 }
 
-func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -469,8 +469,8 @@ func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) Pass
 	return returns
 }
 
-func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) ShowPasswordVisibilityToggle() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) ShowPasswordVisibilityToggle() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"showPasswordVisibilityToggle",
@@ -479,8 +479,8 @@ func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) Show
 	return returns
 }
 
-func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) ShowPasswordVisibilityToggleInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) ShowPasswordVisibilityToggleInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"showPasswordVisibilityToggleInput",
@@ -489,8 +489,8 @@ func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) Show
 	return returns
 }
 
-func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) ShowUserIdentifier() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) ShowUserIdentifier() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"showUserIdentifier",
@@ -499,8 +499,8 @@ func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) Show
 	return returns
 }
 
-func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) ShowUserIdentifierInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) ShowUserIdentifierInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"showUserIdentifierInput",
@@ -649,7 +649,6 @@ func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) Widg
 	return returns
 }
 
-
 func NewCustomizedSigninPageWidgetCustomizationsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CustomizedSigninPageWidgetCustomizationsOutputReference {
 	_init_.Initialize()
 
@@ -660,7 +659,7 @@ func NewCustomizedSigninPageWidgetCustomizationsOutputReference(terraformResourc
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPageWidgetCustomizationsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -672,12 +671,12 @@ func NewCustomizedSigninPageWidgetCustomizationsOutputReference_Override(c Custo
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPageWidgetCustomizationsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference)SetAuthenticatorPageCustomLinkLabel(val *string) {
+func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) SetAuthenticatorPageCustomLinkLabel(val *string) {
 	if err := j.validateSetAuthenticatorPageCustomLinkLabelParameters(val); err != nil {
 		panic(err)
 	}
@@ -688,7 +687,7 @@ func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference)SetAu
 	)
 }
 
-func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference)SetAuthenticatorPageCustomLinkUrl(val *string) {
+func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) SetAuthenticatorPageCustomLinkUrl(val *string) {
 	if err := j.validateSetAuthenticatorPageCustomLinkUrlParameters(val); err != nil {
 		panic(err)
 	}
@@ -699,7 +698,7 @@ func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference)SetAu
 	)
 }
 
-func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference)SetClassicRecoveryFlowEmailOrUsernameLabel(val *string) {
+func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) SetClassicRecoveryFlowEmailOrUsernameLabel(val *string) {
 	if err := j.validateSetClassicRecoveryFlowEmailOrUsernameLabelParameters(val); err != nil {
 		panic(err)
 	}
@@ -710,7 +709,7 @@ func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference)SetCl
 	)
 }
 
-func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -721,7 +720,7 @@ func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -732,7 +731,7 @@ func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference)SetCustomLink1Label(val *string) {
+func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) SetCustomLink1Label(val *string) {
 	if err := j.validateSetCustomLink1LabelParameters(val); err != nil {
 		panic(err)
 	}
@@ -743,7 +742,7 @@ func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference)SetCu
 	)
 }
 
-func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference)SetCustomLink1Url(val *string) {
+func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) SetCustomLink1Url(val *string) {
 	if err := j.validateSetCustomLink1UrlParameters(val); err != nil {
 		panic(err)
 	}
@@ -754,7 +753,7 @@ func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference)SetCu
 	)
 }
 
-func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference)SetCustomLink2Label(val *string) {
+func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) SetCustomLink2Label(val *string) {
 	if err := j.validateSetCustomLink2LabelParameters(val); err != nil {
 		panic(err)
 	}
@@ -765,7 +764,7 @@ func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference)SetCu
 	)
 }
 
-func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference)SetCustomLink2Url(val *string) {
+func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) SetCustomLink2Url(val *string) {
 	if err := j.validateSetCustomLink2UrlParameters(val); err != nil {
 		panic(err)
 	}
@@ -776,7 +775,7 @@ func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference)SetCu
 	)
 }
 
-func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference)SetForgotPasswordLabel(val *string) {
+func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) SetForgotPasswordLabel(val *string) {
 	if err := j.validateSetForgotPasswordLabelParameters(val); err != nil {
 		panic(err)
 	}
@@ -787,7 +786,7 @@ func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference)SetFo
 	)
 }
 
-func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference)SetForgotPasswordUrl(val *string) {
+func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) SetForgotPasswordUrl(val *string) {
 	if err := j.validateSetForgotPasswordUrlParameters(val); err != nil {
 		panic(err)
 	}
@@ -798,7 +797,7 @@ func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference)SetFo
 	)
 }
 
-func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference)SetHelpLabel(val *string) {
+func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) SetHelpLabel(val *string) {
 	if err := j.validateSetHelpLabelParameters(val); err != nil {
 		panic(err)
 	}
@@ -809,7 +808,7 @@ func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference)SetHe
 	)
 }
 
-func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference)SetHelpUrl(val *string) {
+func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) SetHelpUrl(val *string) {
 	if err := j.validateSetHelpUrlParameters(val); err != nil {
 		panic(err)
 	}
@@ -820,7 +819,7 @@ func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference)SetHe
 	)
 }
 
-func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -831,7 +830,7 @@ func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference)SetIn
 	)
 }
 
-func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference)SetPasswordInfoTip(val *string) {
+func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) SetPasswordInfoTip(val *string) {
 	if err := j.validateSetPasswordInfoTipParameters(val); err != nil {
 		panic(err)
 	}
@@ -842,7 +841,7 @@ func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference)SetPa
 	)
 }
 
-func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference)SetPasswordLabel(val *string) {
+func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) SetPasswordLabel(val *string) {
 	if err := j.validateSetPasswordLabelParameters(val); err != nil {
 		panic(err)
 	}
@@ -853,7 +852,7 @@ func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference)SetPa
 	)
 }
 
-func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference)SetShowPasswordVisibilityToggle(val interface{}) {
+func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) SetShowPasswordVisibilityToggle(val any) {
 	if err := j.validateSetShowPasswordVisibilityToggleParameters(val); err != nil {
 		panic(err)
 	}
@@ -864,7 +863,7 @@ func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference)SetSh
 	)
 }
 
-func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference)SetShowUserIdentifier(val interface{}) {
+func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) SetShowUserIdentifier(val any) {
 	if err := j.validateSetShowUserIdentifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -875,7 +874,7 @@ func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference)SetSh
 	)
 }
 
-func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference)SetSignInLabel(val *string) {
+func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) SetSignInLabel(val *string) {
 	if err := j.validateSetSignInLabelParameters(val); err != nil {
 		panic(err)
 	}
@@ -886,7 +885,7 @@ func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference)SetSi
 	)
 }
 
-func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -897,7 +896,7 @@ func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -908,7 +907,7 @@ func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference)SetUnlockAccountLabel(val *string) {
+func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) SetUnlockAccountLabel(val *string) {
 	if err := j.validateSetUnlockAccountLabelParameters(val); err != nil {
 		panic(err)
 	}
@@ -919,7 +918,7 @@ func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference)SetUn
 	)
 }
 
-func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference)SetUnlockAccountUrl(val *string) {
+func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) SetUnlockAccountUrl(val *string) {
 	if err := j.validateSetUnlockAccountUrlParameters(val); err != nil {
 		panic(err)
 	}
@@ -930,7 +929,7 @@ func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference)SetUn
 	)
 }
 
-func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference)SetUsernameInfoTip(val *string) {
+func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) SetUsernameInfoTip(val *string) {
 	if err := j.validateSetUsernameInfoTipParameters(val); err != nil {
 		panic(err)
 	}
@@ -941,7 +940,7 @@ func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference)SetUs
 	)
 }
 
-func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference)SetUsernameLabel(val *string) {
+func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) SetUsernameLabel(val *string) {
 	if err := j.validateSetUsernameLabelParameters(val); err != nil {
 		panic(err)
 	}
@@ -952,7 +951,7 @@ func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference)SetUs
 	)
 }
 
-func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference)SetWidgetGeneration(val *string) {
+func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) SetWidgetGeneration(val *string) {
 	if err := j.validateSetWidgetGenerationParameters(val); err != nil {
 		panic(err)
 	}
@@ -976,16 +975,16 @@ func (c *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) Comp
 	return returns
 }
 
-func (c *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1001,7 +1000,7 @@ func (c *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) GetB
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1017,7 +1016,7 @@ func (c *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) GetB
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1033,7 +1032,7 @@ func (c *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) GetL
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1049,7 +1048,7 @@ func (c *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) GetN
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1065,7 +1064,7 @@ func (c *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) GetN
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1081,7 +1080,7 @@ func (c *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) GetN
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1097,7 +1096,7 @@ func (c *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) GetS
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1113,7 +1112,7 @@ func (c *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) GetS
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1142,7 +1141,7 @@ func (c *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) Inte
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -1309,16 +1308,16 @@ func (c *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) Rese
 	)
 }
 
-func (c *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1337,4 +1336,3 @@ func (c *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) ToSt
 
 	return returns
 }
-

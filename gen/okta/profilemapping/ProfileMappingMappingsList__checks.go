@@ -34,7 +34,7 @@ func (p *jsiiProxy_ProfileMappingMappingsList) validateResolveParameters(_contex
 	return nil
 }
 
-func (j *jsiiProxy_ProfileMappingMappingsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ProfileMappingMappingsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewProfileMappingMappingsListParameters(terraformResource cdktf.IIn
 
 	return nil
 }
-

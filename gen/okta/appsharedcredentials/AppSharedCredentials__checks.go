@@ -19,7 +19,7 @@ func (a *jsiiProxy_AppSharedCredentials) validateAddMoveTargetParameters(moveTar
 	return nil
 }
 
-func (a *jsiiProxy_AppSharedCredentials) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_AppSharedCredentials) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_AppSharedCredentials) validateMoveFromIdParameters(id *string
 	return nil
 }
 
-func (a *jsiiProxy_AppSharedCredentials) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_AppSharedCredentials) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateAppSharedCredentials_GenerateConfigForImportParameters(scope constr
 	return nil
 }
 
-func validateAppSharedCredentials_IsConstructParameters(x interface{}) error {
+func validateAppSharedCredentials_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateAppSharedCredentials_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateAppSharedCredentials_IsTerraformElementParameters(x interface{}) error {
+func validateAppSharedCredentials_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateAppSharedCredentials_IsTerraformElementParameters(x interface{}) er
 	return nil
 }
 
-func validateAppSharedCredentials_IsTerraformResourceParameters(x interface{}) error {
+func validateAppSharedCredentials_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -271,7 +271,7 @@ func (j *jsiiProxy_AppSharedCredentials) validateSetAccessibilityLoginRedirectUr
 	return nil
 }
 
-func (j *jsiiProxy_AppSharedCredentials) validateSetAccessibilitySelfServiceParameters(val interface{}) error {
+func (j *jsiiProxy_AppSharedCredentials) validateSetAccessibilitySelfServiceParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -307,7 +307,7 @@ func (j *jsiiProxy_AppSharedCredentials) validateSetAppLinksJsonParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_AppSharedCredentials) validateSetAutoSubmitToolbarParameters(val interface{}) error {
+func (j *jsiiProxy_AppSharedCredentials) validateSetAutoSubmitToolbarParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -343,7 +343,7 @@ func (j *jsiiProxy_AppSharedCredentials) validateSetCheckboxParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_AppSharedCredentials) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_AppSharedCredentials) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -376,7 +376,7 @@ func (j *jsiiProxy_AppSharedCredentials) validateSetConnectionParameters(val int
 	return nil
 }
 
-func (j *jsiiProxy_AppSharedCredentials) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_AppSharedCredentials) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -441,7 +441,7 @@ func (j *jsiiProxy_AppSharedCredentials) validateSetEnduserNoteParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_AppSharedCredentials) validateSetHideIosParameters(val interface{}) error {
+func (j *jsiiProxy_AppSharedCredentials) validateSetHideIosParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -461,7 +461,7 @@ func (j *jsiiProxy_AppSharedCredentials) validateSetHideIosParameters(val interf
 	return nil
 }
 
-func (j *jsiiProxy_AppSharedCredentials) validateSetHideWebParameters(val interface{}) error {
+func (j *jsiiProxy_AppSharedCredentials) validateSetHideWebParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -529,7 +529,7 @@ func (j *jsiiProxy_AppSharedCredentials) validateSetPreconfiguredAppParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_AppSharedCredentials) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_AppSharedCredentials) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -681,4 +681,3 @@ func validateNewAppSharedCredentialsParameters(scope constructs.Construct, id *s
 
 	return nil
 }
-

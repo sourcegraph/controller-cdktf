@@ -6,9 +6,9 @@ import (
 
 type BrandConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type BrandConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the brand.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/brand#name Brand#name}
@@ -26,7 +26,7 @@ type BrandConfig struct {
 	// Is a required input flag with when changing custom_privacy_url, shouldn't be considered as a readable property.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/brand#agree_to_custom_privacy_policy Brand#agree_to_custom_privacy_policy}
-	AgreeToCustomPrivacyPolicy interface{} `field:"optional" json:"agreeToCustomPrivacyPolicy" yaml:"agreeToCustomPrivacyPolicy"`
+	AgreeToCustomPrivacyPolicy any `field:"optional" json:"agreeToCustomPrivacyPolicy" yaml:"agreeToCustomPrivacyPolicy"`
 	// Brand ID - Note: Okta API for brands only reads and updates therefore the okta_brand resource needs to act as a quasi data source.
 	//
 	// Do this by setting brand_id. `DEPRECATED`: Okta has fully support brand creation, this attribute is a no op and will be removed
@@ -56,6 +56,5 @@ type BrandConfig struct {
 	// Removes "Powered by Okta" from the Okta-hosted sign-in page and "© 2021 Okta, Inc." from the Okta End-User Dashboard.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/brand#remove_powered_by_okta Brand#remove_powered_by_okta}
-	RemovePoweredByOkta interface{} `field:"optional" json:"removePoweredByOkta" yaml:"removePoweredByOkta"`
+	RemovePoweredByOkta any `field:"optional" json:"removePoweredByOkta" yaml:"removePoweredByOkta"`
 }
-

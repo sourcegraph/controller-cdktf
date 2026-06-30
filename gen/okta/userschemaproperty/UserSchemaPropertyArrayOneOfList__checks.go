@@ -34,7 +34,7 @@ func (u *jsiiProxy_UserSchemaPropertyArrayOneOfList) validateResolveParameters(_
 	return nil
 }
 
-func (j *jsiiProxy_UserSchemaPropertyArrayOneOfList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_UserSchemaPropertyArrayOneOfList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewUserSchemaPropertyArrayOneOfListParameters(terraformResource cdk
 
 	return nil
 }
-

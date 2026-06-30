@@ -6,9 +6,9 @@ import (
 
 type AppSecurePasswordStoreConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type AppSecurePasswordStoreConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The Application's display name.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_secure_password_store#label AppSecurePasswordStore#label}
@@ -46,7 +46,7 @@ type AppSecurePasswordStoreConfig struct {
 	// Enable self service. Default is `false`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_secure_password_store#accessibility_self_service AppSecurePasswordStore#accessibility_self_service}
-	AccessibilitySelfService interface{} `field:"optional" json:"accessibilitySelfService" yaml:"accessibilitySelfService"`
+	AccessibilitySelfService any `field:"optional" json:"accessibilitySelfService" yaml:"accessibilitySelfService"`
 	// Application notes for admins.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_secure_password_store#admin_note AppSecurePasswordStore#admin_note}
@@ -58,7 +58,7 @@ type AppSecurePasswordStoreConfig struct {
 	// Display auto submit toolbar.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_secure_password_store#auto_submit_toolbar AppSecurePasswordStore#auto_submit_toolbar}
-	AutoSubmitToolbar interface{} `field:"optional" json:"autoSubmitToolbar" yaml:"autoSubmitToolbar"`
+	AutoSubmitToolbar any `field:"optional" json:"autoSubmitToolbar" yaml:"autoSubmitToolbar"`
 	// Application credentials scheme. One of: `EDIT_USERNAME_AND_PASSWORD`, `ADMIN_SETS_CREDENTIALS`, `EDIT_PASSWORD_ONLY`, `EXTERNAL_PASSWORD_SYNC`, or `SHARED_USERNAME_AND_PASSWORD`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_secure_password_store#credentials_scheme AppSecurePasswordStore#credentials_scheme}
@@ -70,11 +70,11 @@ type AppSecurePasswordStoreConfig struct {
 	// Do not display application icon on mobile app.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_secure_password_store#hide_ios AppSecurePasswordStore#hide_ios}
-	HideIos interface{} `field:"optional" json:"hideIos" yaml:"hideIos"`
+	HideIos any `field:"optional" json:"hideIos" yaml:"hideIos"`
 	// Do not display application icon to users.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_secure_password_store#hide_web AppSecurePasswordStore#hide_web}
-	HideWeb interface{} `field:"optional" json:"hideWeb" yaml:"hideWeb"`
+	HideWeb any `field:"optional" json:"hideWeb" yaml:"hideWeb"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_secure_password_store#id AppSecurePasswordStore#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -113,7 +113,7 @@ type AppSecurePasswordStoreConfig struct {
 	// Allow user to reveal password. It can not be set to `true` if `credentials_scheme` is `ADMIN_SETS_CREDENTIALS`, `SHARED_USERNAME_AND_PASSWORD` or `EXTERNAL_PASSWORD_SYNC`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_secure_password_store#reveal_password AppSecurePasswordStore#reveal_password}
-	RevealPassword interface{} `field:"optional" json:"revealPassword" yaml:"revealPassword"`
+	RevealPassword any `field:"optional" json:"revealPassword" yaml:"revealPassword"`
 	// Shared password, required for certain schemes.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_secure_password_store#shared_password AppSecurePasswordStore#shared_password}
@@ -147,4 +147,3 @@ type AppSecurePasswordStoreConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_secure_password_store#user_name_template_type AppSecurePasswordStore#user_name_template_type}
 	UserNameTemplateType *string `field:"optional" json:"userNameTemplateType" yaml:"userNameTemplateType"`
 }
-

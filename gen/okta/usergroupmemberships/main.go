@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.userGroupMemberships.UserGroupMemberships",
-		reflect.TypeOf((*UserGroupMemberships)(nil)).Elem(),
+		reflect.TypeFor[UserGroupMemberships](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,7 +60,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userId", GoGetter: "UserId"},
 			_jsii_.MemberProperty{JsiiProperty: "userIdInput", GoGetter: "UserIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_UserGroupMemberships{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -68,6 +68,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.userGroupMemberships.UserGroupMembershipsConfig",
-		reflect.TypeOf((*UserGroupMembershipsConfig)(nil)).Elem(),
+		reflect.TypeFor[UserGroupMembershipsConfig](),
 	)
 }

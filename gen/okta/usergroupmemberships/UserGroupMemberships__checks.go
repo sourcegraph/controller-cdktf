@@ -19,7 +19,7 @@ func (u *jsiiProxy_UserGroupMemberships) validateAddMoveTargetParameters(moveTar
 	return nil
 }
 
-func (u *jsiiProxy_UserGroupMemberships) validateAddOverrideParameters(path *string, value interface{}) error {
+func (u *jsiiProxy_UserGroupMemberships) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (u *jsiiProxy_UserGroupMemberships) validateMoveFromIdParameters(id *string
 	return nil
 }
 
-func (u *jsiiProxy_UserGroupMemberships) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (u *jsiiProxy_UserGroupMemberships) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateUserGroupMemberships_GenerateConfigForImportParameters(scope constr
 	return nil
 }
 
-func validateUserGroupMemberships_IsConstructParameters(x interface{}) error {
+func validateUserGroupMemberships_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateUserGroupMemberships_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateUserGroupMemberships_IsTerraformElementParameters(x interface{}) error {
+func validateUserGroupMemberships_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateUserGroupMemberships_IsTerraformElementParameters(x interface{}) er
 	return nil
 }
 
-func validateUserGroupMemberships_IsTerraformResourceParameters(x interface{}) error {
+func validateUserGroupMemberships_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateUserGroupMemberships_IsTerraformResourceParameters(x interface{}) e
 	return nil
 }
 
-func (j *jsiiProxy_UserGroupMemberships) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_UserGroupMemberships) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_UserGroupMemberships) validateSetConnectionParameters(val int
 	return nil
 }
 
-func (j *jsiiProxy_UserGroupMemberships) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_UserGroupMemberships) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -358,7 +358,7 @@ func (j *jsiiProxy_UserGroupMemberships) validateSetLifecycleParameters(val *cdk
 	return nil
 }
 
-func (j *jsiiProxy_UserGroupMemberships) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_UserGroupMemberships) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -430,4 +430,3 @@ func validateNewUserGroupMembershipsParameters(scope constructs.Construct, id *s
 
 	return nil
 }
-

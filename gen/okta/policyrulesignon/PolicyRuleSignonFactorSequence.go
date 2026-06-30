@@ -1,6 +1,5 @@
 package policyrulesignon
 
-
 type PolicyRuleSignonFactorSequence struct {
 	// Type of a Factor.
 	//
@@ -13,6 +12,5 @@ type PolicyRuleSignonFactorSequence struct {
 	// secondary_criteria block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_rule_signon#secondary_criteria PolicyRuleSignon#secondary_criteria}
-	SecondaryCriteria interface{} `field:"optional" json:"secondaryCriteria" yaml:"secondaryCriteria"`
+	SecondaryCriteria any `field:"optional" json:"secondaryCriteria" yaml:"secondaryCriteria"`
 }
-

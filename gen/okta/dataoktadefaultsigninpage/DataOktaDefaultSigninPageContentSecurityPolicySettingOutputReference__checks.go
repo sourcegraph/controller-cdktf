@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataOktaDefaultSigninPageContentSecurityPolicySettingOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_DataOktaDefaultSigninPageContentSecurityPolicySettingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataOktaDefaultSigninPageContentSecurityPolicySettingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataOktaDefaultSigninPageContentSecurityPolicySettingOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_DataOktaDefaultSigninPageContentSecurityPolicySettingOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataOktaDefaultSigninPageContentSecurityPolicySettingOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -214,4 +214,3 @@ func validateNewDataOktaDefaultSigninPageContentSecurityPolicySettingOutputRefer
 
 	return nil
 }
-

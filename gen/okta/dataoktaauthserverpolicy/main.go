@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.dataOktaAuthServerPolicy.DataOktaAuthServerPolicy",
-		reflect.TypeOf((*DataOktaAuthServerPolicy)(nil)).Elem(),
+		reflect.TypeFor[DataOktaAuthServerPolicy](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "assignedClients", GoGetter: "AssignedClients"},
@@ -55,7 +55,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataOktaAuthServerPolicy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -63,6 +63,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.dataOktaAuthServerPolicy.DataOktaAuthServerPolicyConfig",
-		reflect.TypeOf((*DataOktaAuthServerPolicyConfig)(nil)).Elem(),
+		reflect.TypeFor[DataOktaAuthServerPolicyConfig](),
 	)
 }

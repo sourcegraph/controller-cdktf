@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.policyRulePassword.PolicyRulePassword",
-		reflect.TypeOf((*PolicyRulePassword)(nil)).Elem(),
+		reflect.TypeFor[PolicyRulePassword](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -88,7 +88,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "usersExcluded", GoGetter: "UsersExcluded"},
 			_jsii_.MemberProperty{JsiiProperty: "usersExcludedInput", GoGetter: "UsersExcludedInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PolicyRulePassword{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -96,6 +96,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.policyRulePassword.PolicyRulePasswordConfig",
-		reflect.TypeOf((*PolicyRulePasswordConfig)(nil)).Elem(),
+		reflect.TypeFor[PolicyRulePasswordConfig](),
 	)
 }

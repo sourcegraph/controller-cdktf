@@ -98,7 +98,7 @@ func (a *jsiiProxy_AppSignonPolicyRulePlatformIncludeOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_AppSignonPolicyRulePlatformIncludeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppSignonPolicyRulePlatformIncludeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_AppSignonPolicyRulePlatformIncludeOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_AppSignonPolicyRulePlatformIncludeOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AppSignonPolicyRulePlatformIncludeOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewAppSignonPolicyRulePlatformIncludeOutputReferenceParameters(terr
 
 	return nil
 }
-

@@ -1,6 +1,5 @@
 package policyruleprofileenrollment
 
-
 type PolicyRuleProfileEnrollmentProfileAttributes struct {
 	// A display-friendly label for this property.
 	//
@@ -13,6 +12,5 @@ type PolicyRuleProfileEnrollmentProfileAttributes struct {
 	// Indicates if this property is required for enrollment.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_rule_profile_enrollment#required PolicyRuleProfileEnrollment#required}
-	Required interface{} `field:"optional" json:"required" yaml:"required"`
+	Required any `field:"optional" json:"required" yaml:"required"`
 }
-

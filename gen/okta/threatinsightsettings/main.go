@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.threatInsightSettings.ThreatInsightSettings",
-		reflect.TypeOf((*ThreatInsightSettings)(nil)).Elem(),
+		reflect.TypeFor[ThreatInsightSettings](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
 			_jsii_.MemberProperty{JsiiProperty: "actionInput", GoGetter: "ActionInput"},
@@ -61,7 +61,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ThreatInsightSettings{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -69,6 +69,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.threatInsightSettings.ThreatInsightSettingsConfig",
-		reflect.TypeOf((*ThreatInsightSettingsConfig)(nil)).Elem(),
+		reflect.TypeFor[ThreatInsightSettingsConfig](),
 	)
 }

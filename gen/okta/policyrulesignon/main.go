@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon",
-		reflect.TypeOf((*PolicyRuleSignon)(nil)).Elem(),
+		reflect.TypeFor[PolicyRuleSignon](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "access", GoGetter: "Access"},
 			_jsii_.MemberProperty{JsiiProperty: "accessInput", GoGetter: "AccessInput"},
@@ -128,7 +128,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "usersExcluded", GoGetter: "UsersExcluded"},
 			_jsii_.MemberProperty{JsiiProperty: "usersExcludedInput", GoGetter: "UsersExcludedInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PolicyRuleSignon{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -136,15 +136,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig",
-		reflect.TypeOf((*PolicyRuleSignonConfig)(nil)).Elem(),
+		reflect.TypeFor[PolicyRuleSignonConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequence",
-		reflect.TypeOf((*PolicyRuleSignonFactorSequence)(nil)).Elem(),
+		reflect.TypeFor[PolicyRuleSignonFactorSequence](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceList",
-		reflect.TypeOf((*PolicyRuleSignonFactorSequenceList)(nil)).Elem(),
+		reflect.TypeFor[PolicyRuleSignonFactorSequenceList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -158,7 +158,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PolicyRuleSignonFactorSequenceList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -166,7 +166,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceOutputReference",
-		reflect.TypeOf((*PolicyRuleSignonFactorSequenceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PolicyRuleSignonFactorSequenceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -198,7 +198,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -206,11 +206,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceSecondaryCriteria",
-		reflect.TypeOf((*PolicyRuleSignonFactorSequenceSecondaryCriteria)(nil)).Elem(),
+		reflect.TypeFor[PolicyRuleSignonFactorSequenceSecondaryCriteria](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceSecondaryCriteriaList",
-		reflect.TypeOf((*PolicyRuleSignonFactorSequenceSecondaryCriteriaList)(nil)).Elem(),
+		reflect.TypeFor[PolicyRuleSignonFactorSequenceSecondaryCriteriaList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -224,7 +224,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PolicyRuleSignonFactorSequenceSecondaryCriteriaList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -232,7 +232,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceSecondaryCriteriaOutputReference",
-		reflect.TypeOf((*PolicyRuleSignonFactorSequenceSecondaryCriteriaOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PolicyRuleSignonFactorSequenceSecondaryCriteriaOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -260,7 +260,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PolicyRuleSignonFactorSequenceSecondaryCriteriaOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

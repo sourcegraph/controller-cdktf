@@ -19,7 +19,7 @@ func (a *jsiiProxy_AuthServer) validateAddMoveTargetParameters(moveTarget *strin
 	return nil
 }
 
-func (a *jsiiProxy_AuthServer) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_AuthServer) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_AuthServer) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AuthServer) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_AuthServer) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateAuthServer_GenerateConfigForImportParameters(scope constructs.Const
 	return nil
 }
 
-func validateAuthServer_IsConstructParameters(x interface{}) error {
+func validateAuthServer_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateAuthServer_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateAuthServer_IsTerraformElementParameters(x interface{}) error {
+func validateAuthServer_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateAuthServer_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateAuthServer_IsTerraformResourceParameters(x interface{}) error {
+func validateAuthServer_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_AuthServer) validateSetAudiencesParameters(val *[]*string) er
 	return nil
 }
 
-func (j *jsiiProxy_AuthServer) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_AuthServer) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_AuthServer) validateSetConnectionParameters(val interface{}) 
 	return nil
 }
 
-func (j *jsiiProxy_AuthServer) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_AuthServer) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -390,7 +390,7 @@ func (j *jsiiProxy_AuthServer) validateSetNameParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_AuthServer) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_AuthServer) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -462,4 +462,3 @@ func validateNewAuthServerParameters(scope constructs.Construct, id *string, con
 
 	return nil
 }
-

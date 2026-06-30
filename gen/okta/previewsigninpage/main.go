@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.previewSigninPage.PreviewSigninPage",
-		reflect.TypeOf((*PreviewSigninPage)(nil)).Elem(),
+		reflect.TypeFor[PreviewSigninPage](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -68,7 +68,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "widgetVersion", GoGetter: "WidgetVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "widgetVersionInput", GoGetter: "WidgetVersionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PreviewSigninPage{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -76,15 +76,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.previewSigninPage.PreviewSigninPageConfig",
-		reflect.TypeOf((*PreviewSigninPageConfig)(nil)).Elem(),
+		reflect.TypeFor[PreviewSigninPageConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.previewSigninPage.PreviewSigninPageContentSecurityPolicySetting",
-		reflect.TypeOf((*PreviewSigninPageContentSecurityPolicySetting)(nil)).Elem(),
+		reflect.TypeFor[PreviewSigninPageContentSecurityPolicySetting](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.previewSigninPage.PreviewSigninPageContentSecurityPolicySettingOutputReference",
-		reflect.TypeOf((*PreviewSigninPageContentSecurityPolicySettingOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PreviewSigninPageContentSecurityPolicySettingOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -117,7 +117,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PreviewSigninPageContentSecurityPolicySettingOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -125,11 +125,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.previewSigninPage.PreviewSigninPageWidgetCustomizations",
-		reflect.TypeOf((*PreviewSigninPageWidgetCustomizations)(nil)).Elem(),
+		reflect.TypeFor[PreviewSigninPageWidgetCustomizations](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.previewSigninPage.PreviewSigninPageWidgetCustomizationsOutputReference",
-		reflect.TypeOf((*PreviewSigninPageWidgetCustomizationsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PreviewSigninPageWidgetCustomizationsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authenticatorPageCustomLinkLabel", GoGetter: "AuthenticatorPageCustomLinkLabel"},
 			_jsii_.MemberProperty{JsiiProperty: "authenticatorPageCustomLinkLabelInput", GoGetter: "AuthenticatorPageCustomLinkLabelInput"},
@@ -215,7 +215,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "widgetGeneration", GoGetter: "WidgetGeneration"},
 			_jsii_.MemberProperty{JsiiProperty: "widgetGenerationInput", GoGetter: "WidgetGenerationInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PreviewSigninPageWidgetCustomizationsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -98,7 +98,7 @@ func (e *jsiiProxy_EmailDomainDnsValidationRecordsOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_EmailDomainDnsValidationRecordsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EmailDomainDnsValidationRecordsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewEmailDomainDnsValidationRecordsOutputReferenceParameters(terrafo
 
 	return nil
 }
-

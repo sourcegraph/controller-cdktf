@@ -6,9 +6,9 @@ import (
 
 type InlineHookConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type InlineHookConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/inline_hook#channel InlineHook#channel}.
 	Channel *map[string]*string `field:"required" json:"channel" yaml:"channel"`
 	// The inline hook display name.
@@ -38,7 +38,7 @@ type InlineHookConfig struct {
 	// headers block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/inline_hook#headers InlineHook#headers}
-	Headers interface{} `field:"optional" json:"headers" yaml:"headers"`
+	Headers any `field:"optional" json:"headers" yaml:"headers"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/inline_hook#id InlineHook#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -49,4 +49,3 @@ type InlineHookConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/inline_hook#status InlineHook#status}
 	Status *string `field:"optional" json:"status" yaml:"status"`
 }
-

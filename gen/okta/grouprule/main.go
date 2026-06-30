@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.groupRule.GroupRule",
-		reflect.TypeOf((*GroupRule)(nil)).Elem(),
+		reflect.TypeFor[GroupRule](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,7 +74,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "usersExcluded", GoGetter: "UsersExcluded"},
 			_jsii_.MemberProperty{JsiiProperty: "usersExcludedInput", GoGetter: "UsersExcludedInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GroupRule{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -82,6 +82,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.groupRule.GroupRuleConfig",
-		reflect.TypeOf((*GroupRuleConfig)(nil)).Elem(),
+		reflect.TypeFor[GroupRuleConfig](),
 	)
 }

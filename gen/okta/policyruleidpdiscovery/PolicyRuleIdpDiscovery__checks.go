@@ -19,7 +19,7 @@ func (p *jsiiProxy_PolicyRuleIdpDiscovery) validateAddMoveTargetParameters(moveT
 	return nil
 }
 
-func (p *jsiiProxy_PolicyRuleIdpDiscovery) validateAddOverrideParameters(path *string, value interface{}) error {
+func (p *jsiiProxy_PolicyRuleIdpDiscovery) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (p *jsiiProxy_PolicyRuleIdpDiscovery) validateMoveFromIdParameters(id *stri
 	return nil
 }
 
-func (p *jsiiProxy_PolicyRuleIdpDiscovery) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (p *jsiiProxy_PolicyRuleIdpDiscovery) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (p *jsiiProxy_PolicyRuleIdpDiscovery) validateOverrideLogicalIdParameters(n
 	return nil
 }
 
-func (p *jsiiProxy_PolicyRuleIdpDiscovery) validatePutAppExcludeParameters(value interface{}) error {
+func (p *jsiiProxy_PolicyRuleIdpDiscovery) validatePutAppExcludeParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -235,7 +235,7 @@ func (p *jsiiProxy_PolicyRuleIdpDiscovery) validatePutAppExcludeParameters(value
 	return nil
 }
 
-func (p *jsiiProxy_PolicyRuleIdpDiscovery) validatePutAppIncludeParameters(value interface{}) error {
+func (p *jsiiProxy_PolicyRuleIdpDiscovery) validatePutAppIncludeParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func (p *jsiiProxy_PolicyRuleIdpDiscovery) validatePutAppIncludeParameters(value
 	return nil
 }
 
-func (p *jsiiProxy_PolicyRuleIdpDiscovery) validatePutPlatformIncludeParameters(value interface{}) error {
+func (p *jsiiProxy_PolicyRuleIdpDiscovery) validatePutPlatformIncludeParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -297,7 +297,7 @@ func (p *jsiiProxy_PolicyRuleIdpDiscovery) validatePutPlatformIncludeParameters(
 	return nil
 }
 
-func (p *jsiiProxy_PolicyRuleIdpDiscovery) validatePutUserIdentifierPatternsParameters(value interface{}) error {
+func (p *jsiiProxy_PolicyRuleIdpDiscovery) validatePutUserIdentifierPatternsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -344,7 +344,7 @@ func validatePolicyRuleIdpDiscovery_GenerateConfigForImportParameters(scope cons
 	return nil
 }
 
-func validatePolicyRuleIdpDiscovery_IsConstructParameters(x interface{}) error {
+func validatePolicyRuleIdpDiscovery_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -352,7 +352,7 @@ func validatePolicyRuleIdpDiscovery_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validatePolicyRuleIdpDiscovery_IsTerraformElementParameters(x interface{}) error {
+func validatePolicyRuleIdpDiscovery_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -360,7 +360,7 @@ func validatePolicyRuleIdpDiscovery_IsTerraformElementParameters(x interface{}) 
 	return nil
 }
 
-func validatePolicyRuleIdpDiscovery_IsTerraformResourceParameters(x interface{}) error {
+func validatePolicyRuleIdpDiscovery_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -368,7 +368,7 @@ func validatePolicyRuleIdpDiscovery_IsTerraformResourceParameters(x interface{})
 	return nil
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscovery) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyRuleIdpDiscovery) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -401,7 +401,7 @@ func (j *jsiiProxy_PolicyRuleIdpDiscovery) validateSetConnectionParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscovery) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyRuleIdpDiscovery) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -538,7 +538,7 @@ func (j *jsiiProxy_PolicyRuleIdpDiscovery) validateSetPriorityParameters(val *fl
 	return nil
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscovery) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_PolicyRuleIdpDiscovery) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -626,4 +626,3 @@ func validateNewPolicyRuleIdpDiscoveryParameters(scope constructs.Construct, id 
 
 	return nil
 }
-

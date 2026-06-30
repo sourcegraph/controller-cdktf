@@ -19,7 +19,7 @@ func (d *jsiiProxy_DomainVerification) validateAddMoveTargetParameters(moveTarge
 	return nil
 }
 
-func (d *jsiiProxy_DomainVerification) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DomainVerification) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DomainVerification) validateMoveFromIdParameters(id *string) 
 	return nil
 }
 
-func (d *jsiiProxy_DomainVerification) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DomainVerification) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateDomainVerification_GenerateConfigForImportParameters(scope construc
 	return nil
 }
 
-func validateDomainVerification_IsConstructParameters(x interface{}) error {
+func validateDomainVerification_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateDomainVerification_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDomainVerification_IsTerraformElementParameters(x interface{}) error {
+func validateDomainVerification_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateDomainVerification_IsTerraformElementParameters(x interface{}) erro
 	return nil
 }
 
-func validateDomainVerification_IsTerraformResourceParameters(x interface{}) error {
+func validateDomainVerification_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateDomainVerification_IsTerraformResourceParameters(x interface{}) err
 	return nil
 }
 
-func (j *jsiiProxy_DomainVerification) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DomainVerification) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_DomainVerification) validateSetConnectionParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_DomainVerification) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DomainVerification) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -358,7 +358,7 @@ func (j *jsiiProxy_DomainVerification) validateSetLifecycleParameters(val *cdktf
 	return nil
 }
 
-func (j *jsiiProxy_DomainVerification) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DomainVerification) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -422,4 +422,3 @@ func validateNewDomainVerificationParameters(scope constructs.Construct, id *str
 
 	return nil
 }
-

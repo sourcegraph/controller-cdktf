@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.appThreeField.AppThreeField",
-		reflect.TypeOf((*AppThreeField)(nil)).Elem(),
+		reflect.TypeFor[AppThreeField](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessibilityErrorRedirectUrl", GoGetter: "AccessibilityErrorRedirectUrl"},
 			_jsii_.MemberProperty{JsiiProperty: "accessibilityErrorRedirectUrlInput", GoGetter: "AccessibilityErrorRedirectUrlInput"},
@@ -137,7 +137,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userNameTemplateType", GoGetter: "UserNameTemplateType"},
 			_jsii_.MemberProperty{JsiiProperty: "userNameTemplateTypeInput", GoGetter: "UserNameTemplateTypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppThreeField{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -145,15 +145,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.appThreeField.AppThreeFieldConfig",
-		reflect.TypeOf((*AppThreeFieldConfig)(nil)).Elem(),
+		reflect.TypeFor[AppThreeFieldConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.appThreeField.AppThreeFieldTimeouts",
-		reflect.TypeOf((*AppThreeFieldTimeouts)(nil)).Elem(),
+		reflect.TypeFor[AppThreeFieldTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.appThreeField.AppThreeFieldTimeoutsOutputReference",
-		reflect.TypeOf((*AppThreeFieldTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppThreeFieldTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -186,7 +186,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppThreeFieldTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

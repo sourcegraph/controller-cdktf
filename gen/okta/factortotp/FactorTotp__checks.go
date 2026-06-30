@@ -19,7 +19,7 @@ func (f *jsiiProxy_FactorTotp) validateAddMoveTargetParameters(moveTarget *strin
 	return nil
 }
 
-func (f *jsiiProxy_FactorTotp) validateAddOverrideParameters(path *string, value interface{}) error {
+func (f *jsiiProxy_FactorTotp) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (f *jsiiProxy_FactorTotp) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FactorTotp) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (f *jsiiProxy_FactorTotp) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateFactorTotp_GenerateConfigForImportParameters(scope constructs.Const
 	return nil
 }
 
-func validateFactorTotp_IsConstructParameters(x interface{}) error {
+func validateFactorTotp_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateFactorTotp_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateFactorTotp_IsTerraformElementParameters(x interface{}) error {
+func validateFactorTotp_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateFactorTotp_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateFactorTotp_IsTerraformResourceParameters(x interface{}) error {
+func validateFactorTotp_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_FactorTotp) validateSetClockDriftIntervalParameters(val *floa
 	return nil
 }
 
-func (j *jsiiProxy_FactorTotp) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_FactorTotp) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_FactorTotp) validateSetConnectionParameters(val interface{}) 
 	return nil
 }
 
-func (j *jsiiProxy_FactorTotp) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_FactorTotp) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -382,7 +382,7 @@ func (j *jsiiProxy_FactorTotp) validateSetOtpLengthParameters(val *float64) erro
 	return nil
 }
 
-func (j *jsiiProxy_FactorTotp) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_FactorTotp) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -462,4 +462,3 @@ func validateNewFactorTotpParameters(scope constructs.Construct, id *string, con
 
 	return nil
 }
-

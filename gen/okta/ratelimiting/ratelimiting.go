@@ -17,19 +17,19 @@ type RateLimiting interface {
 	AuthorizeInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
-	CommunicationsEnabled() interface{}
-	SetCommunicationsEnabled(val interface{})
-	CommunicationsEnabledInput() interface{}
+	CommunicationsEnabled() any
+	SetCommunicationsEnabled(val any)
+	CommunicationsEnabledInput() any
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -59,24 +59,24 @@ type RateLimiting interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -94,7 +94,7 @@ type RateLimiting interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -106,7 +106,7 @@ type RateLimiting interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -118,17 +118,17 @@ type RateLimiting interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for RateLimiting
@@ -166,8 +166,8 @@ func (j *jsiiProxy_RateLimiting) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_RateLimiting) CommunicationsEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RateLimiting) CommunicationsEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"communicationsEnabled",
@@ -176,8 +176,8 @@ func (j *jsiiProxy_RateLimiting) CommunicationsEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RateLimiting) CommunicationsEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RateLimiting) CommunicationsEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"communicationsEnabledInput",
@@ -186,8 +186,8 @@ func (j *jsiiProxy_RateLimiting) CommunicationsEnabledInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RateLimiting) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RateLimiting) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -196,8 +196,8 @@ func (j *jsiiProxy_RateLimiting) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RateLimiting) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_RateLimiting) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -206,8 +206,8 @@ func (j *jsiiProxy_RateLimiting) ConstructNodeMetadata() *map[string]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_RateLimiting) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RateLimiting) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -326,8 +326,8 @@ func (j *jsiiProxy_RateLimiting) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_RateLimiting) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_RateLimiting) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -336,8 +336,8 @@ func (j *jsiiProxy_RateLimiting) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RateLimiting) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RateLimiting) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -356,8 +356,8 @@ func (j *jsiiProxy_RateLimiting) TerraformGeneratorMetadata() *cdktf.TerraformPr
 	return returns
 }
 
-func (j *jsiiProxy_RateLimiting) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_RateLimiting) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -376,7 +376,6 @@ func (j *jsiiProxy_RateLimiting) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/rate_limiting okta_rate_limiting} Resource.
 func NewRateLimiting(scope constructs.Construct, id *string, config *RateLimitingConfig) RateLimiting {
 	_init_.Initialize()
@@ -388,7 +387,7 @@ func NewRateLimiting(scope constructs.Construct, id *string, config *RateLimitin
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.rateLimiting.RateLimiting",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -401,12 +400,12 @@ func NewRateLimiting_Override(r RateLimiting, scope constructs.Construct, id *st
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.rateLimiting.RateLimiting",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		r,
 	)
 }
 
-func (j *jsiiProxy_RateLimiting)SetAuthorize(val *string) {
+func (j *jsiiProxy_RateLimiting) SetAuthorize(val *string) {
 	if err := j.validateSetAuthorizeParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,7 +416,7 @@ func (j *jsiiProxy_RateLimiting)SetAuthorize(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RateLimiting)SetCommunicationsEnabled(val interface{}) {
+func (j *jsiiProxy_RateLimiting) SetCommunicationsEnabled(val any) {
 	if err := j.validateSetCommunicationsEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,7 +427,7 @@ func (j *jsiiProxy_RateLimiting)SetCommunicationsEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RateLimiting)SetConnection(val interface{}) {
+func (j *jsiiProxy_RateLimiting) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -439,7 +438,7 @@ func (j *jsiiProxy_RateLimiting)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RateLimiting)SetCount(val interface{}) {
+func (j *jsiiProxy_RateLimiting) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -450,7 +449,7 @@ func (j *jsiiProxy_RateLimiting)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RateLimiting)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_RateLimiting) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -458,7 +457,7 @@ func (j *jsiiProxy_RateLimiting)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_RateLimiting)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_RateLimiting) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -466,7 +465,7 @@ func (j *jsiiProxy_RateLimiting)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_RateLimiting)SetId(val *string) {
+func (j *jsiiProxy_RateLimiting) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -477,7 +476,7 @@ func (j *jsiiProxy_RateLimiting)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RateLimiting)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_RateLimiting) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -488,7 +487,7 @@ func (j *jsiiProxy_RateLimiting)SetLifecycle(val *cdktf.TerraformResourceLifecyc
 	)
 }
 
-func (j *jsiiProxy_RateLimiting)SetLogin(val *string) {
+func (j *jsiiProxy_RateLimiting) SetLogin(val *string) {
 	if err := j.validateSetLoginParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,7 +498,7 @@ func (j *jsiiProxy_RateLimiting)SetLogin(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RateLimiting)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_RateLimiting) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -507,7 +506,7 @@ func (j *jsiiProxy_RateLimiting)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_RateLimiting)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_RateLimiting) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -530,7 +529,7 @@ func RateLimiting_GenerateConfigForImport(scope constructs.Construct, importToId
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.rateLimiting.RateLimiting",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -554,7 +553,7 @@ func RateLimiting_GenerateConfigForImport(scope constructs.Construct, importToId
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func RateLimiting_IsConstruct(x interface{}) *bool {
+func RateLimiting_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRateLimiting_IsConstructParameters(x); err != nil {
@@ -565,7 +564,7 @@ func RateLimiting_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.rateLimiting.RateLimiting",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -573,7 +572,7 @@ func RateLimiting_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func RateLimiting_IsTerraformElement(x interface{}) *bool {
+func RateLimiting_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRateLimiting_IsTerraformElementParameters(x); err != nil {
@@ -584,7 +583,7 @@ func RateLimiting_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.rateLimiting.RateLimiting",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -592,7 +591,7 @@ func RateLimiting_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func RateLimiting_IsTerraformResource(x interface{}) *bool {
+func RateLimiting_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRateLimiting_IsTerraformResourceParameters(x); err != nil {
@@ -603,7 +602,7 @@ func RateLimiting_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.rateLimiting.RateLimiting",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -628,31 +627,31 @@ func (r *jsiiProxy_RateLimiting) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (r *jsiiProxy_RateLimiting) AddOverride(path *string, value interface{}) {
+func (r *jsiiProxy_RateLimiting) AddOverride(path *string, value any) {
 	if err := r.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (r *jsiiProxy_RateLimiting) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_RateLimiting) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -668,7 +667,7 @@ func (r *jsiiProxy_RateLimiting) GetBooleanAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -684,7 +683,7 @@ func (r *jsiiProxy_RateLimiting) GetBooleanMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -700,7 +699,7 @@ func (r *jsiiProxy_RateLimiting) GetListAttribute(terraformAttribute *string) *[
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -716,7 +715,7 @@ func (r *jsiiProxy_RateLimiting) GetNumberAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -732,7 +731,7 @@ func (r *jsiiProxy_RateLimiting) GetNumberListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -748,7 +747,7 @@ func (r *jsiiProxy_RateLimiting) GetNumberMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -764,7 +763,7 @@ func (r *jsiiProxy_RateLimiting) GetStringAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -780,15 +779,15 @@ func (r *jsiiProxy_RateLimiting) GetStringMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (r *jsiiProxy_RateLimiting) HasResourceMove() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RateLimiting) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -807,7 +806,7 @@ func (r *jsiiProxy_RateLimiting) ImportFrom(id *string, provider cdktf.Terraform
 	_jsii_.InvokeVoid(
 		r,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -820,7 +819,7 @@ func (r *jsiiProxy_RateLimiting) InterpolationForAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -834,18 +833,18 @@ func (r *jsiiProxy_RateLimiting) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (r *jsiiProxy_RateLimiting) MoveTo(moveTarget *string, index interface{}) {
+func (r *jsiiProxy_RateLimiting) MoveTo(moveTarget *string, index any) {
 	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -856,7 +855,7 @@ func (r *jsiiProxy_RateLimiting) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -867,7 +866,7 @@ func (r *jsiiProxy_RateLimiting) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -895,8 +894,8 @@ func (r *jsiiProxy_RateLimiting) ResetOverrideLogicalId() {
 	)
 }
 
-func (r *jsiiProxy_RateLimiting) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_RateLimiting) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -908,8 +907,8 @@ func (r *jsiiProxy_RateLimiting) SynthesizeAttributes() *map[string]interface{} 
 	return returns
 }
 
-func (r *jsiiProxy_RateLimiting) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_RateLimiting) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -921,8 +920,8 @@ func (r *jsiiProxy_RateLimiting) SynthesizeHclAttributes() *map[string]interface
 	return returns
 }
 
-func (r *jsiiProxy_RateLimiting) ToHclTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RateLimiting) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -934,8 +933,8 @@ func (r *jsiiProxy_RateLimiting) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (r *jsiiProxy_RateLimiting) ToMetadata() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RateLimiting) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -960,8 +959,8 @@ func (r *jsiiProxy_RateLimiting) ToString() *string {
 	return returns
 }
 
-func (r *jsiiProxy_RateLimiting) ToTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RateLimiting) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -972,4 +971,3 @@ func (r *jsiiProxy_RateLimiting) ToTerraform() interface{} {
 
 	return returns
 }
-

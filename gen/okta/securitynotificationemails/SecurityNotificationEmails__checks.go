@@ -19,7 +19,7 @@ func (s *jsiiProxy_SecurityNotificationEmails) validateAddMoveTargetParameters(m
 	return nil
 }
 
-func (s *jsiiProxy_SecurityNotificationEmails) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_SecurityNotificationEmails) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_SecurityNotificationEmails) validateMoveFromIdParameters(id *
 	return nil
 }
 
-func (s *jsiiProxy_SecurityNotificationEmails) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_SecurityNotificationEmails) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateSecurityNotificationEmails_GenerateConfigForImportParameters(scope 
 	return nil
 }
 
-func validateSecurityNotificationEmails_IsConstructParameters(x interface{}) error {
+func validateSecurityNotificationEmails_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateSecurityNotificationEmails_IsConstructParameters(x interface{}) err
 	return nil
 }
 
-func validateSecurityNotificationEmails_IsTerraformElementParameters(x interface{}) error {
+func validateSecurityNotificationEmails_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateSecurityNotificationEmails_IsTerraformElementParameters(x interface
 	return nil
 }
 
-func validateSecurityNotificationEmails_IsTerraformResourceParameters(x interface{}) error {
+func validateSecurityNotificationEmails_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateSecurityNotificationEmails_IsTerraformResourceParameters(x interfac
 	return nil
 }
 
-func (j *jsiiProxy_SecurityNotificationEmails) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_SecurityNotificationEmails) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_SecurityNotificationEmails) validateSetConnectionParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_SecurityNotificationEmails) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_SecurityNotificationEmails) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -350,7 +350,7 @@ func (j *jsiiProxy_SecurityNotificationEmails) validateSetLifecycleParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_SecurityNotificationEmails) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_SecurityNotificationEmails) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -396,7 +396,7 @@ func (j *jsiiProxy_SecurityNotificationEmails) validateSetProvisionersParameters
 	return nil
 }
 
-func (j *jsiiProxy_SecurityNotificationEmails) validateSetReportSuspiciousActivityEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_SecurityNotificationEmails) validateSetReportSuspiciousActivityEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -416,7 +416,7 @@ func (j *jsiiProxy_SecurityNotificationEmails) validateSetReportSuspiciousActivi
 	return nil
 }
 
-func (j *jsiiProxy_SecurityNotificationEmails) validateSetSendEmailForFactorEnrollmentEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_SecurityNotificationEmails) validateSetSendEmailForFactorEnrollmentEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -436,7 +436,7 @@ func (j *jsiiProxy_SecurityNotificationEmails) validateSetSendEmailForFactorEnro
 	return nil
 }
 
-func (j *jsiiProxy_SecurityNotificationEmails) validateSetSendEmailForFactorResetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_SecurityNotificationEmails) validateSetSendEmailForFactorResetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -456,7 +456,7 @@ func (j *jsiiProxy_SecurityNotificationEmails) validateSetSendEmailForFactorRese
 	return nil
 }
 
-func (j *jsiiProxy_SecurityNotificationEmails) validateSetSendEmailForNewDeviceEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_SecurityNotificationEmails) validateSetSendEmailForNewDeviceEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -476,7 +476,7 @@ func (j *jsiiProxy_SecurityNotificationEmails) validateSetSendEmailForNewDeviceE
 	return nil
 }
 
-func (j *jsiiProxy_SecurityNotificationEmails) validateSetSendEmailForPasswordChangedEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_SecurityNotificationEmails) validateSetSendEmailForPasswordChangedEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -511,4 +511,3 @@ func validateNewSecurityNotificationEmailsParameters(scope constructs.Construct,
 
 	return nil
 }
-

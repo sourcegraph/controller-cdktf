@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataOktaTrustedOriginsTrustedOriginsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_DataOktaTrustedOriginsTrustedOriginsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataOktaTrustedOriginsTrustedOriginsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataOktaTrustedOriginsTrustedOriginsOutputReferenceParameters(te
 
 	return nil
 }
-

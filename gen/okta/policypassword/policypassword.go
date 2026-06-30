@@ -21,15 +21,15 @@ type PolicyPassword interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -66,18 +66,18 @@ type PolicyPassword interface {
 	PasswordAutoUnlockMinutes() *float64
 	SetPasswordAutoUnlockMinutes(val *float64)
 	PasswordAutoUnlockMinutesInput() *float64
-	PasswordDictionaryLookup() interface{}
-	SetPasswordDictionaryLookup(val interface{})
-	PasswordDictionaryLookupInput() interface{}
-	PasswordExcludeFirstName() interface{}
-	SetPasswordExcludeFirstName(val interface{})
-	PasswordExcludeFirstNameInput() interface{}
-	PasswordExcludeLastName() interface{}
-	SetPasswordExcludeLastName(val interface{})
-	PasswordExcludeLastNameInput() interface{}
-	PasswordExcludeUsername() interface{}
-	SetPasswordExcludeUsername(val interface{})
-	PasswordExcludeUsernameInput() interface{}
+	PasswordDictionaryLookup() any
+	SetPasswordDictionaryLookup(val any)
+	PasswordDictionaryLookupInput() any
+	PasswordExcludeFirstName() any
+	SetPasswordExcludeFirstName(val any)
+	PasswordExcludeFirstNameInput() any
+	PasswordExcludeLastName() any
+	SetPasswordExcludeLastName(val any)
+	PasswordExcludeLastNameInput() any
+	PasswordExcludeUsername() any
+	SetPasswordExcludeUsername(val any)
+	PasswordExcludeUsernameInput() any
 	PasswordExpireWarnDays() *float64
 	SetPasswordExpireWarnDays(val *float64)
 	PasswordExpireWarnDaysInput() *float64
@@ -111,9 +111,9 @@ type PolicyPassword interface {
 	PasswordMinUppercase() *float64
 	SetPasswordMinUppercase(val *float64)
 	PasswordMinUppercaseInput() *float64
-	PasswordShowLockoutFailures() interface{}
-	SetPasswordShowLockoutFailures(val interface{})
-	PasswordShowLockoutFailuresInput() interface{}
+	PasswordShowLockoutFailures() any
+	SetPasswordShowLockoutFailures(val any)
+	PasswordShowLockoutFailuresInput() any
 	Priority() *float64
 	SetPriority(val *float64)
 	PriorityInput() *float64
@@ -122,9 +122,9 @@ type PolicyPassword interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	QuestionMinLength() *float64
 	SetQuestionMinLength(val *float64)
 	QuestionMinLengthInput() *float64
@@ -132,13 +132,13 @@ type PolicyPassword interface {
 	SetQuestionRecovery(val *string)
 	QuestionRecoveryInput() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RecoveryEmailToken() *float64
 	SetRecoveryEmailToken(val *float64)
 	RecoveryEmailTokenInput() *float64
-	SkipUnlock() interface{}
-	SetSkipUnlock(val interface{})
-	SkipUnlockInput() interface{}
+	SkipUnlock() any
+	SetSkipUnlock(val any)
+	SkipUnlockInput() any
 	SmsRecovery() *string
 	SetSmsRecovery(val *string)
 	SmsRecoveryInput() *string
@@ -148,16 +148,16 @@ type PolicyPassword interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -175,7 +175,7 @@ type PolicyPassword interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -187,7 +187,7 @@ type PolicyPassword interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -227,17 +227,17 @@ type PolicyPassword interface {
 	ResetSkipUnlock()
 	ResetSmsRecovery()
 	ResetStatus()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for PolicyPassword
@@ -295,8 +295,8 @@ func (j *jsiiProxy_PolicyPassword) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_PolicyPassword) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyPassword) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -305,8 +305,8 @@ func (j *jsiiProxy_PolicyPassword) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PolicyPassword) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_PolicyPassword) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -315,8 +315,8 @@ func (j *jsiiProxy_PolicyPassword) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_PolicyPassword) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyPassword) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -505,8 +505,8 @@ func (j *jsiiProxy_PolicyPassword) PasswordAutoUnlockMinutesInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_PolicyPassword) PasswordDictionaryLookup() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyPassword) PasswordDictionaryLookup() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"passwordDictionaryLookup",
@@ -515,8 +515,8 @@ func (j *jsiiProxy_PolicyPassword) PasswordDictionaryLookup() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PolicyPassword) PasswordDictionaryLookupInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyPassword) PasswordDictionaryLookupInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"passwordDictionaryLookupInput",
@@ -525,8 +525,8 @@ func (j *jsiiProxy_PolicyPassword) PasswordDictionaryLookupInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PolicyPassword) PasswordExcludeFirstName() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyPassword) PasswordExcludeFirstName() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"passwordExcludeFirstName",
@@ -535,8 +535,8 @@ func (j *jsiiProxy_PolicyPassword) PasswordExcludeFirstName() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PolicyPassword) PasswordExcludeFirstNameInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyPassword) PasswordExcludeFirstNameInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"passwordExcludeFirstNameInput",
@@ -545,8 +545,8 @@ func (j *jsiiProxy_PolicyPassword) PasswordExcludeFirstNameInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PolicyPassword) PasswordExcludeLastName() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyPassword) PasswordExcludeLastName() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"passwordExcludeLastName",
@@ -555,8 +555,8 @@ func (j *jsiiProxy_PolicyPassword) PasswordExcludeLastName() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PolicyPassword) PasswordExcludeLastNameInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyPassword) PasswordExcludeLastNameInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"passwordExcludeLastNameInput",
@@ -565,8 +565,8 @@ func (j *jsiiProxy_PolicyPassword) PasswordExcludeLastNameInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PolicyPassword) PasswordExcludeUsername() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyPassword) PasswordExcludeUsername() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"passwordExcludeUsername",
@@ -575,8 +575,8 @@ func (j *jsiiProxy_PolicyPassword) PasswordExcludeUsername() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PolicyPassword) PasswordExcludeUsernameInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyPassword) PasswordExcludeUsernameInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"passwordExcludeUsernameInput",
@@ -805,8 +805,8 @@ func (j *jsiiProxy_PolicyPassword) PasswordMinUppercaseInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_PolicyPassword) PasswordShowLockoutFailures() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyPassword) PasswordShowLockoutFailures() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"passwordShowLockoutFailures",
@@ -815,8 +815,8 @@ func (j *jsiiProxy_PolicyPassword) PasswordShowLockoutFailures() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PolicyPassword) PasswordShowLockoutFailuresInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyPassword) PasswordShowLockoutFailuresInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"passwordShowLockoutFailuresInput",
@@ -855,8 +855,8 @@ func (j *jsiiProxy_PolicyPassword) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_PolicyPassword) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_PolicyPassword) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -905,8 +905,8 @@ func (j *jsiiProxy_PolicyPassword) QuestionRecoveryInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_PolicyPassword) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyPassword) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -935,8 +935,8 @@ func (j *jsiiProxy_PolicyPassword) RecoveryEmailTokenInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_PolicyPassword) SkipUnlock() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyPassword) SkipUnlock() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"skipUnlock",
@@ -945,8 +945,8 @@ func (j *jsiiProxy_PolicyPassword) SkipUnlock() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PolicyPassword) SkipUnlockInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyPassword) SkipUnlockInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"skipUnlockInput",
@@ -1005,8 +1005,8 @@ func (j *jsiiProxy_PolicyPassword) TerraformGeneratorMetadata() *cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_PolicyPassword) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_PolicyPassword) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -1025,7 +1025,6 @@ func (j *jsiiProxy_PolicyPassword) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_password okta_policy_password} Resource.
 func NewPolicyPassword(scope constructs.Construct, id *string, config *PolicyPasswordConfig) PolicyPassword {
 	_init_.Initialize()
@@ -1037,7 +1036,7 @@ func NewPolicyPassword(scope constructs.Construct, id *string, config *PolicyPas
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.policyPassword.PolicyPassword",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -1050,12 +1049,12 @@ func NewPolicyPassword_Override(p PolicyPassword, scope constructs.Construct, id
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.policyPassword.PolicyPassword",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PolicyPassword)SetAuthProvider(val *string) {
+func (j *jsiiProxy_PolicyPassword) SetAuthProvider(val *string) {
 	if err := j.validateSetAuthProviderParameters(val); err != nil {
 		panic(err)
 	}
@@ -1066,7 +1065,7 @@ func (j *jsiiProxy_PolicyPassword)SetAuthProvider(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PolicyPassword)SetCallRecovery(val *string) {
+func (j *jsiiProxy_PolicyPassword) SetCallRecovery(val *string) {
 	if err := j.validateSetCallRecoveryParameters(val); err != nil {
 		panic(err)
 	}
@@ -1077,7 +1076,7 @@ func (j *jsiiProxy_PolicyPassword)SetCallRecovery(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PolicyPassword)SetConnection(val interface{}) {
+func (j *jsiiProxy_PolicyPassword) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1088,7 +1087,7 @@ func (j *jsiiProxy_PolicyPassword)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PolicyPassword)SetCount(val interface{}) {
+func (j *jsiiProxy_PolicyPassword) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1099,7 +1098,7 @@ func (j *jsiiProxy_PolicyPassword)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PolicyPassword)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_PolicyPassword) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1107,7 +1106,7 @@ func (j *jsiiProxy_PolicyPassword)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_PolicyPassword)SetDescription(val *string) {
+func (j *jsiiProxy_PolicyPassword) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1118,7 +1117,7 @@ func (j *jsiiProxy_PolicyPassword)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PolicyPassword)SetEmailRecovery(val *string) {
+func (j *jsiiProxy_PolicyPassword) SetEmailRecovery(val *string) {
 	if err := j.validateSetEmailRecoveryParameters(val); err != nil {
 		panic(err)
 	}
@@ -1129,7 +1128,7 @@ func (j *jsiiProxy_PolicyPassword)SetEmailRecovery(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PolicyPassword)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_PolicyPassword) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1137,7 +1136,7 @@ func (j *jsiiProxy_PolicyPassword)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_PolicyPassword)SetGroupsIncluded(val *[]*string) {
+func (j *jsiiProxy_PolicyPassword) SetGroupsIncluded(val *[]*string) {
 	if err := j.validateSetGroupsIncludedParameters(val); err != nil {
 		panic(err)
 	}
@@ -1148,7 +1147,7 @@ func (j *jsiiProxy_PolicyPassword)SetGroupsIncluded(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_PolicyPassword)SetId(val *string) {
+func (j *jsiiProxy_PolicyPassword) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1159,7 +1158,7 @@ func (j *jsiiProxy_PolicyPassword)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PolicyPassword)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_PolicyPassword) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1170,7 +1169,7 @@ func (j *jsiiProxy_PolicyPassword)SetLifecycle(val *cdktf.TerraformResourceLifec
 	)
 }
 
-func (j *jsiiProxy_PolicyPassword)SetName(val *string) {
+func (j *jsiiProxy_PolicyPassword) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1181,7 +1180,7 @@ func (j *jsiiProxy_PolicyPassword)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PolicyPassword)SetPasswordAutoUnlockMinutes(val *float64) {
+func (j *jsiiProxy_PolicyPassword) SetPasswordAutoUnlockMinutes(val *float64) {
 	if err := j.validateSetPasswordAutoUnlockMinutesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1192,7 +1191,7 @@ func (j *jsiiProxy_PolicyPassword)SetPasswordAutoUnlockMinutes(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_PolicyPassword)SetPasswordDictionaryLookup(val interface{}) {
+func (j *jsiiProxy_PolicyPassword) SetPasswordDictionaryLookup(val any) {
 	if err := j.validateSetPasswordDictionaryLookupParameters(val); err != nil {
 		panic(err)
 	}
@@ -1203,7 +1202,7 @@ func (j *jsiiProxy_PolicyPassword)SetPasswordDictionaryLookup(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PolicyPassword)SetPasswordExcludeFirstName(val interface{}) {
+func (j *jsiiProxy_PolicyPassword) SetPasswordExcludeFirstName(val any) {
 	if err := j.validateSetPasswordExcludeFirstNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1214,7 +1213,7 @@ func (j *jsiiProxy_PolicyPassword)SetPasswordExcludeFirstName(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PolicyPassword)SetPasswordExcludeLastName(val interface{}) {
+func (j *jsiiProxy_PolicyPassword) SetPasswordExcludeLastName(val any) {
 	if err := j.validateSetPasswordExcludeLastNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1225,7 +1224,7 @@ func (j *jsiiProxy_PolicyPassword)SetPasswordExcludeLastName(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PolicyPassword)SetPasswordExcludeUsername(val interface{}) {
+func (j *jsiiProxy_PolicyPassword) SetPasswordExcludeUsername(val any) {
 	if err := j.validateSetPasswordExcludeUsernameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1236,7 +1235,7 @@ func (j *jsiiProxy_PolicyPassword)SetPasswordExcludeUsername(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PolicyPassword)SetPasswordExpireWarnDays(val *float64) {
+func (j *jsiiProxy_PolicyPassword) SetPasswordExpireWarnDays(val *float64) {
 	if err := j.validateSetPasswordExpireWarnDaysParameters(val); err != nil {
 		panic(err)
 	}
@@ -1247,7 +1246,7 @@ func (j *jsiiProxy_PolicyPassword)SetPasswordExpireWarnDays(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_PolicyPassword)SetPasswordHistoryCount(val *float64) {
+func (j *jsiiProxy_PolicyPassword) SetPasswordHistoryCount(val *float64) {
 	if err := j.validateSetPasswordHistoryCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1258,7 +1257,7 @@ func (j *jsiiProxy_PolicyPassword)SetPasswordHistoryCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_PolicyPassword)SetPasswordLockoutNotificationChannels(val *[]*string) {
+func (j *jsiiProxy_PolicyPassword) SetPasswordLockoutNotificationChannels(val *[]*string) {
 	if err := j.validateSetPasswordLockoutNotificationChannelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1269,7 +1268,7 @@ func (j *jsiiProxy_PolicyPassword)SetPasswordLockoutNotificationChannels(val *[]
 	)
 }
 
-func (j *jsiiProxy_PolicyPassword)SetPasswordMaxAgeDays(val *float64) {
+func (j *jsiiProxy_PolicyPassword) SetPasswordMaxAgeDays(val *float64) {
 	if err := j.validateSetPasswordMaxAgeDaysParameters(val); err != nil {
 		panic(err)
 	}
@@ -1280,7 +1279,7 @@ func (j *jsiiProxy_PolicyPassword)SetPasswordMaxAgeDays(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_PolicyPassword)SetPasswordMaxLockoutAttempts(val *float64) {
+func (j *jsiiProxy_PolicyPassword) SetPasswordMaxLockoutAttempts(val *float64) {
 	if err := j.validateSetPasswordMaxLockoutAttemptsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1291,7 +1290,7 @@ func (j *jsiiProxy_PolicyPassword)SetPasswordMaxLockoutAttempts(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_PolicyPassword)SetPasswordMinAgeMinutes(val *float64) {
+func (j *jsiiProxy_PolicyPassword) SetPasswordMinAgeMinutes(val *float64) {
 	if err := j.validateSetPasswordMinAgeMinutesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1302,7 +1301,7 @@ func (j *jsiiProxy_PolicyPassword)SetPasswordMinAgeMinutes(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_PolicyPassword)SetPasswordMinLength(val *float64) {
+func (j *jsiiProxy_PolicyPassword) SetPasswordMinLength(val *float64) {
 	if err := j.validateSetPasswordMinLengthParameters(val); err != nil {
 		panic(err)
 	}
@@ -1313,7 +1312,7 @@ func (j *jsiiProxy_PolicyPassword)SetPasswordMinLength(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_PolicyPassword)SetPasswordMinLowercase(val *float64) {
+func (j *jsiiProxy_PolicyPassword) SetPasswordMinLowercase(val *float64) {
 	if err := j.validateSetPasswordMinLowercaseParameters(val); err != nil {
 		panic(err)
 	}
@@ -1324,7 +1323,7 @@ func (j *jsiiProxy_PolicyPassword)SetPasswordMinLowercase(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_PolicyPassword)SetPasswordMinNumber(val *float64) {
+func (j *jsiiProxy_PolicyPassword) SetPasswordMinNumber(val *float64) {
 	if err := j.validateSetPasswordMinNumberParameters(val); err != nil {
 		panic(err)
 	}
@@ -1335,7 +1334,7 @@ func (j *jsiiProxy_PolicyPassword)SetPasswordMinNumber(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_PolicyPassword)SetPasswordMinSymbol(val *float64) {
+func (j *jsiiProxy_PolicyPassword) SetPasswordMinSymbol(val *float64) {
 	if err := j.validateSetPasswordMinSymbolParameters(val); err != nil {
 		panic(err)
 	}
@@ -1346,7 +1345,7 @@ func (j *jsiiProxy_PolicyPassword)SetPasswordMinSymbol(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_PolicyPassword)SetPasswordMinUppercase(val *float64) {
+func (j *jsiiProxy_PolicyPassword) SetPasswordMinUppercase(val *float64) {
 	if err := j.validateSetPasswordMinUppercaseParameters(val); err != nil {
 		panic(err)
 	}
@@ -1357,7 +1356,7 @@ func (j *jsiiProxy_PolicyPassword)SetPasswordMinUppercase(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_PolicyPassword)SetPasswordShowLockoutFailures(val interface{}) {
+func (j *jsiiProxy_PolicyPassword) SetPasswordShowLockoutFailures(val any) {
 	if err := j.validateSetPasswordShowLockoutFailuresParameters(val); err != nil {
 		panic(err)
 	}
@@ -1368,7 +1367,7 @@ func (j *jsiiProxy_PolicyPassword)SetPasswordShowLockoutFailures(val interface{}
 	)
 }
 
-func (j *jsiiProxy_PolicyPassword)SetPriority(val *float64) {
+func (j *jsiiProxy_PolicyPassword) SetPriority(val *float64) {
 	if err := j.validateSetPriorityParameters(val); err != nil {
 		panic(err)
 	}
@@ -1379,7 +1378,7 @@ func (j *jsiiProxy_PolicyPassword)SetPriority(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_PolicyPassword)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_PolicyPassword) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1387,7 +1386,7 @@ func (j *jsiiProxy_PolicyPassword)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_PolicyPassword)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_PolicyPassword) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1398,7 +1397,7 @@ func (j *jsiiProxy_PolicyPassword)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PolicyPassword)SetQuestionMinLength(val *float64) {
+func (j *jsiiProxy_PolicyPassword) SetQuestionMinLength(val *float64) {
 	if err := j.validateSetQuestionMinLengthParameters(val); err != nil {
 		panic(err)
 	}
@@ -1409,7 +1408,7 @@ func (j *jsiiProxy_PolicyPassword)SetQuestionMinLength(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_PolicyPassword)SetQuestionRecovery(val *string) {
+func (j *jsiiProxy_PolicyPassword) SetQuestionRecovery(val *string) {
 	if err := j.validateSetQuestionRecoveryParameters(val); err != nil {
 		panic(err)
 	}
@@ -1420,7 +1419,7 @@ func (j *jsiiProxy_PolicyPassword)SetQuestionRecovery(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PolicyPassword)SetRecoveryEmailToken(val *float64) {
+func (j *jsiiProxy_PolicyPassword) SetRecoveryEmailToken(val *float64) {
 	if err := j.validateSetRecoveryEmailTokenParameters(val); err != nil {
 		panic(err)
 	}
@@ -1431,7 +1430,7 @@ func (j *jsiiProxy_PolicyPassword)SetRecoveryEmailToken(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_PolicyPassword)SetSkipUnlock(val interface{}) {
+func (j *jsiiProxy_PolicyPassword) SetSkipUnlock(val any) {
 	if err := j.validateSetSkipUnlockParameters(val); err != nil {
 		panic(err)
 	}
@@ -1442,7 +1441,7 @@ func (j *jsiiProxy_PolicyPassword)SetSkipUnlock(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PolicyPassword)SetSmsRecovery(val *string) {
+func (j *jsiiProxy_PolicyPassword) SetSmsRecovery(val *string) {
 	if err := j.validateSetSmsRecoveryParameters(val); err != nil {
 		panic(err)
 	}
@@ -1453,7 +1452,7 @@ func (j *jsiiProxy_PolicyPassword)SetSmsRecovery(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PolicyPassword)SetStatus(val *string) {
+func (j *jsiiProxy_PolicyPassword) SetStatus(val *string) {
 	if err := j.validateSetStatusParameters(val); err != nil {
 		panic(err)
 	}
@@ -1476,7 +1475,7 @@ func PolicyPassword_GenerateConfigForImport(scope constructs.Construct, importTo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.policyPassword.PolicyPassword",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1500,7 +1499,7 @@ func PolicyPassword_GenerateConfigForImport(scope constructs.Construct, importTo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func PolicyPassword_IsConstruct(x interface{}) *bool {
+func PolicyPassword_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePolicyPassword_IsConstructParameters(x); err != nil {
@@ -1511,7 +1510,7 @@ func PolicyPassword_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.policyPassword.PolicyPassword",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1519,7 +1518,7 @@ func PolicyPassword_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func PolicyPassword_IsTerraformElement(x interface{}) *bool {
+func PolicyPassword_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePolicyPassword_IsTerraformElementParameters(x); err != nil {
@@ -1530,7 +1529,7 @@ func PolicyPassword_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.policyPassword.PolicyPassword",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1538,7 +1537,7 @@ func PolicyPassword_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func PolicyPassword_IsTerraformResource(x interface{}) *bool {
+func PolicyPassword_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePolicyPassword_IsTerraformResourceParameters(x); err != nil {
@@ -1549,7 +1548,7 @@ func PolicyPassword_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.policyPassword.PolicyPassword",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1574,31 +1573,31 @@ func (p *jsiiProxy_PolicyPassword) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (p *jsiiProxy_PolicyPassword) AddOverride(path *string, value interface{}) {
+func (p *jsiiProxy_PolicyPassword) AddOverride(path *string, value any) {
 	if err := p.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (p *jsiiProxy_PolicyPassword) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PolicyPassword) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1614,7 +1613,7 @@ func (p *jsiiProxy_PolicyPassword) GetBooleanAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1630,7 +1629,7 @@ func (p *jsiiProxy_PolicyPassword) GetBooleanMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1646,7 +1645,7 @@ func (p *jsiiProxy_PolicyPassword) GetListAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1662,7 +1661,7 @@ func (p *jsiiProxy_PolicyPassword) GetNumberAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1678,7 +1677,7 @@ func (p *jsiiProxy_PolicyPassword) GetNumberListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1694,7 +1693,7 @@ func (p *jsiiProxy_PolicyPassword) GetNumberMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1710,7 +1709,7 @@ func (p *jsiiProxy_PolicyPassword) GetStringAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1726,15 +1725,15 @@ func (p *jsiiProxy_PolicyPassword) GetStringMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_PolicyPassword) HasResourceMove() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PolicyPassword) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1753,7 +1752,7 @@ func (p *jsiiProxy_PolicyPassword) ImportFrom(id *string, provider cdktf.Terrafo
 	_jsii_.InvokeVoid(
 		p,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1766,7 +1765,7 @@ func (p *jsiiProxy_PolicyPassword) InterpolationForAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1780,18 +1779,18 @@ func (p *jsiiProxy_PolicyPassword) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (p *jsiiProxy_PolicyPassword) MoveTo(moveTarget *string, index interface{}) {
+func (p *jsiiProxy_PolicyPassword) MoveTo(moveTarget *string, index any) {
 	if err := p.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1802,7 +1801,7 @@ func (p *jsiiProxy_PolicyPassword) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1813,7 +1812,7 @@ func (p *jsiiProxy_PolicyPassword) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -2065,8 +2064,8 @@ func (p *jsiiProxy_PolicyPassword) ResetStatus() {
 	)
 }
 
-func (p *jsiiProxy_PolicyPassword) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_PolicyPassword) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -2078,8 +2077,8 @@ func (p *jsiiProxy_PolicyPassword) SynthesizeAttributes() *map[string]interface{
 	return returns
 }
 
-func (p *jsiiProxy_PolicyPassword) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_PolicyPassword) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -2091,8 +2090,8 @@ func (p *jsiiProxy_PolicyPassword) SynthesizeHclAttributes() *map[string]interfa
 	return returns
 }
 
-func (p *jsiiProxy_PolicyPassword) ToHclTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PolicyPassword) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -2104,8 +2103,8 @@ func (p *jsiiProxy_PolicyPassword) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_PolicyPassword) ToMetadata() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PolicyPassword) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -2130,8 +2129,8 @@ func (p *jsiiProxy_PolicyPassword) ToString() *string {
 	return returns
 }
 
-func (p *jsiiProxy_PolicyPassword) ToTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PolicyPassword) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -2142,4 +2141,3 @@ func (p *jsiiProxy_PolicyPassword) ToTerraform() interface{} {
 
 	return returns
 }
-

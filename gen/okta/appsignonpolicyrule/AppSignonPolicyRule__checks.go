@@ -19,7 +19,7 @@ func (a *jsiiProxy_AppSignonPolicyRule) validateAddMoveTargetParameters(moveTarg
 	return nil
 }
 
-func (a *jsiiProxy_AppSignonPolicyRule) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_AppSignonPolicyRule) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_AppSignonPolicyRule) validateMoveFromIdParameters(id *string)
 	return nil
 }
 
-func (a *jsiiProxy_AppSignonPolicyRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_AppSignonPolicyRule) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (a *jsiiProxy_AppSignonPolicyRule) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
-func (a *jsiiProxy_AppSignonPolicyRule) validatePutPlatformIncludeParameters(value interface{}) error {
+func (a *jsiiProxy_AppSignonPolicyRule) validatePutPlatformIncludeParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -251,7 +251,7 @@ func validateAppSignonPolicyRule_GenerateConfigForImportParameters(scope constru
 	return nil
 }
 
-func validateAppSignonPolicyRule_IsConstructParameters(x interface{}) error {
+func validateAppSignonPolicyRule_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -259,7 +259,7 @@ func validateAppSignonPolicyRule_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateAppSignonPolicyRule_IsTerraformElementParameters(x interface{}) error {
+func validateAppSignonPolicyRule_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -267,7 +267,7 @@ func validateAppSignonPolicyRule_IsTerraformElementParameters(x interface{}) err
 	return nil
 }
 
-func validateAppSignonPolicyRule_IsTerraformResourceParameters(x interface{}) error {
+func validateAppSignonPolicyRule_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -283,7 +283,7 @@ func (j *jsiiProxy_AppSignonPolicyRule) validateSetAccessParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_AppSignonPolicyRule) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -324,7 +324,7 @@ func (j *jsiiProxy_AppSignonPolicyRule) validateSetConstraintsParameters(val *[]
 	return nil
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_AppSignonPolicyRule) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -397,7 +397,7 @@ func (j *jsiiProxy_AppSignonPolicyRule) validateSetDeviceAssurancesIncludedParam
 	return nil
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule) validateSetDeviceIsManagedParameters(val interface{}) error {
+func (j *jsiiProxy_AppSignonPolicyRule) validateSetDeviceIsManagedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -417,7 +417,7 @@ func (j *jsiiProxy_AppSignonPolicyRule) validateSetDeviceIsManagedParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule) validateSetDeviceIsRegisteredParameters(val interface{}) error {
+func (j *jsiiProxy_AppSignonPolicyRule) validateSetDeviceIsRegisteredParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -533,7 +533,7 @@ func (j *jsiiProxy_AppSignonPolicyRule) validateSetPriorityParameters(val *float
 	return nil
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_AppSignonPolicyRule) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -661,4 +661,3 @@ func validateNewAppSignonPolicyRuleParameters(scope constructs.Construct, id *st
 
 	return nil
 }
-

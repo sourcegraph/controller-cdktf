@@ -19,7 +19,7 @@ func (a *jsiiProxy_AppAccessPolicyAssignment) validateAddMoveTargetParameters(mo
 	return nil
 }
 
-func (a *jsiiProxy_AppAccessPolicyAssignment) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_AppAccessPolicyAssignment) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_AppAccessPolicyAssignment) validateMoveFromIdParameters(id *s
 	return nil
 }
 
-func (a *jsiiProxy_AppAccessPolicyAssignment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_AppAccessPolicyAssignment) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateAppAccessPolicyAssignment_GenerateConfigForImportParameters(scope c
 	return nil
 }
 
-func validateAppAccessPolicyAssignment_IsConstructParameters(x interface{}) error {
+func validateAppAccessPolicyAssignment_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateAppAccessPolicyAssignment_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
-func validateAppAccessPolicyAssignment_IsTerraformElementParameters(x interface{}) error {
+func validateAppAccessPolicyAssignment_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateAppAccessPolicyAssignment_IsTerraformElementParameters(x interface{
 	return nil
 }
 
-func validateAppAccessPolicyAssignment_IsTerraformResourceParameters(x interface{}) error {
+func validateAppAccessPolicyAssignment_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_AppAccessPolicyAssignment) validateSetAppIdParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_AppAccessPolicyAssignment) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_AppAccessPolicyAssignment) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_AppAccessPolicyAssignment) validateSetConnectionParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_AppAccessPolicyAssignment) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_AppAccessPolicyAssignment) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -358,7 +358,7 @@ func (j *jsiiProxy_AppAccessPolicyAssignment) validateSetPolicyIdParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_AppAccessPolicyAssignment) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_AppAccessPolicyAssignment) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -422,4 +422,3 @@ func validateNewAppAccessPolicyAssignmentParameters(scope constructs.Construct, 
 
 	return nil
 }
-

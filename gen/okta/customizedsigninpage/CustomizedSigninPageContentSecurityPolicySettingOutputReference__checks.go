@@ -98,7 +98,7 @@ func (c *jsiiProxy_CustomizedSigninPageContentSecurityPolicySettingOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_CustomizedSigninPageContentSecurityPolicySettingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CustomizedSigninPageContentSecurityPolicySettingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_CustomizedSigninPageContentSecurityPolicySettingOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_CustomizedSigninPageContentSecurityPolicySettingOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CustomizedSigninPageContentSecurityPolicySettingOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewCustomizedSigninPageContentSecurityPolicySettingOutputReferenceP
 
 	return nil
 }
-

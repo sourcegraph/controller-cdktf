@@ -19,7 +19,7 @@ func (a *jsiiProxy_AppSecurePasswordStore) validateAddMoveTargetParameters(moveT
 	return nil
 }
 
-func (a *jsiiProxy_AppSecurePasswordStore) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_AppSecurePasswordStore) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_AppSecurePasswordStore) validateMoveFromIdParameters(id *stri
 	return nil
 }
 
-func (a *jsiiProxy_AppSecurePasswordStore) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_AppSecurePasswordStore) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateAppSecurePasswordStore_GenerateConfigForImportParameters(scope cons
 	return nil
 }
 
-func validateAppSecurePasswordStore_IsConstructParameters(x interface{}) error {
+func validateAppSecurePasswordStore_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateAppSecurePasswordStore_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateAppSecurePasswordStore_IsTerraformElementParameters(x interface{}) error {
+func validateAppSecurePasswordStore_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateAppSecurePasswordStore_IsTerraformElementParameters(x interface{}) 
 	return nil
 }
 
-func validateAppSecurePasswordStore_IsTerraformResourceParameters(x interface{}) error {
+func validateAppSecurePasswordStore_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -271,7 +271,7 @@ func (j *jsiiProxy_AppSecurePasswordStore) validateSetAccessibilityLoginRedirect
 	return nil
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore) validateSetAccessibilitySelfServiceParameters(val interface{}) error {
+func (j *jsiiProxy_AppSecurePasswordStore) validateSetAccessibilitySelfServiceParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -307,7 +307,7 @@ func (j *jsiiProxy_AppSecurePasswordStore) validateSetAppLinksJsonParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore) validateSetAutoSubmitToolbarParameters(val interface{}) error {
+func (j *jsiiProxy_AppSecurePasswordStore) validateSetAutoSubmitToolbarParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -327,7 +327,7 @@ func (j *jsiiProxy_AppSecurePasswordStore) validateSetAutoSubmitToolbarParameter
 	return nil
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_AppSecurePasswordStore) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -360,7 +360,7 @@ func (j *jsiiProxy_AppSecurePasswordStore) validateSetConnectionParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_AppSecurePasswordStore) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -433,7 +433,7 @@ func (j *jsiiProxy_AppSecurePasswordStore) validateSetEnduserNoteParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore) validateSetHideIosParameters(val interface{}) error {
+func (j *jsiiProxy_AppSecurePasswordStore) validateSetHideIosParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -453,7 +453,7 @@ func (j *jsiiProxy_AppSecurePasswordStore) validateSetHideIosParameters(val inte
 	return nil
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore) validateSetHideWebParameters(val interface{}) error {
+func (j *jsiiProxy_AppSecurePasswordStore) validateSetHideWebParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -561,7 +561,7 @@ func (j *jsiiProxy_AppSecurePasswordStore) validateSetPasswordFieldParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_AppSecurePasswordStore) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -607,7 +607,7 @@ func (j *jsiiProxy_AppSecurePasswordStore) validateSetProvisionersParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore) validateSetRevealPasswordParameters(val interface{}) error {
+func (j *jsiiProxy_AppSecurePasswordStore) validateSetRevealPasswordParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -717,4 +717,3 @@ func validateNewAppSecurePasswordStoreParameters(scope constructs.Construct, id 
 
 	return nil
 }
-

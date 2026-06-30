@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.idpSamlKey.IdpSamlKey",
-		reflect.TypeOf((*IdpSamlKey)(nil)).Elem(),
+		reflect.TypeFor[IdpSamlKey](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,7 +64,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "x5CInput", GoGetter: "X5CInput"},
 			_jsii_.MemberProperty{JsiiProperty: "x5TS256", GoGetter: "X5TS256"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IdpSamlKey{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -72,6 +72,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.idpSamlKey.IdpSamlKeyConfig",
-		reflect.TypeOf((*IdpSamlKeyConfig)(nil)).Elem(),
+		reflect.TypeFor[IdpSamlKeyConfig](),
 	)
 }

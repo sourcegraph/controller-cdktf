@@ -19,7 +19,7 @@ func (u *jsiiProxy_UserSchemaProperty) validateAddMoveTargetParameters(moveTarge
 	return nil
 }
 
-func (u *jsiiProxy_UserSchemaProperty) validateAddOverrideParameters(path *string, value interface{}) error {
+func (u *jsiiProxy_UserSchemaProperty) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (u *jsiiProxy_UserSchemaProperty) validateMoveFromIdParameters(id *string) 
 	return nil
 }
 
-func (u *jsiiProxy_UserSchemaProperty) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (u *jsiiProxy_UserSchemaProperty) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (u *jsiiProxy_UserSchemaProperty) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
-func (u *jsiiProxy_UserSchemaProperty) validatePutArrayOneOfParameters(value interface{}) error {
+func (u *jsiiProxy_UserSchemaProperty) validatePutArrayOneOfParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -235,7 +235,7 @@ func (u *jsiiProxy_UserSchemaProperty) validatePutArrayOneOfParameters(value int
 	return nil
 }
 
-func (u *jsiiProxy_UserSchemaProperty) validatePutMasterOverridePriorityParameters(value interface{}) error {
+func (u *jsiiProxy_UserSchemaProperty) validatePutMasterOverridePriorityParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func (u *jsiiProxy_UserSchemaProperty) validatePutMasterOverridePriorityParamete
 	return nil
 }
 
-func (u *jsiiProxy_UserSchemaProperty) validatePutOneOfParameters(value interface{}) error {
+func (u *jsiiProxy_UserSchemaProperty) validatePutOneOfParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -313,7 +313,7 @@ func validateUserSchemaProperty_GenerateConfigForImportParameters(scope construc
 	return nil
 }
 
-func validateUserSchemaProperty_IsConstructParameters(x interface{}) error {
+func validateUserSchemaProperty_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -321,7 +321,7 @@ func validateUserSchemaProperty_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateUserSchemaProperty_IsTerraformElementParameters(x interface{}) error {
+func validateUserSchemaProperty_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -329,7 +329,7 @@ func validateUserSchemaProperty_IsTerraformElementParameters(x interface{}) erro
 	return nil
 }
 
-func validateUserSchemaProperty_IsTerraformResourceParameters(x interface{}) error {
+func validateUserSchemaProperty_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -353,7 +353,7 @@ func (j *jsiiProxy_UserSchemaProperty) validateSetArrayTypeParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_UserSchemaProperty) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_UserSchemaProperty) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -386,7 +386,7 @@ func (j *jsiiProxy_UserSchemaProperty) validateSetConnectionParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_UserSchemaProperty) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_UserSchemaProperty) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -539,7 +539,7 @@ func (j *jsiiProxy_UserSchemaProperty) validateSetPermissionsParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_UserSchemaProperty) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_UserSchemaProperty) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -585,7 +585,7 @@ func (j *jsiiProxy_UserSchemaProperty) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
-func (j *jsiiProxy_UserSchemaProperty) validateSetRequiredParameters(val interface{}) error {
+func (j *jsiiProxy_UserSchemaProperty) validateSetRequiredParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -663,4 +663,3 @@ func validateNewUserSchemaPropertyParameters(scope constructs.Construct, id *str
 
 	return nil
 }
-

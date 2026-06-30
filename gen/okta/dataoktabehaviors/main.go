@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.dataOktaBehaviors.DataOktaBehaviors",
-		reflect.TypeOf((*DataOktaBehaviors)(nil)).Elem(),
+		reflect.TypeFor[DataOktaBehaviors](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "behaviors", GoGetter: "Behaviors"},
@@ -52,7 +52,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataOktaBehaviors{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -60,11 +60,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.dataOktaBehaviors.DataOktaBehaviorsBehaviors",
-		reflect.TypeOf((*DataOktaBehaviorsBehaviors)(nil)).Elem(),
+		reflect.TypeFor[DataOktaBehaviorsBehaviors](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.dataOktaBehaviors.DataOktaBehaviorsBehaviorsList",
-		reflect.TypeOf((*DataOktaBehaviorsBehaviorsList)(nil)).Elem(),
+		reflect.TypeFor[DataOktaBehaviorsBehaviorsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -77,7 +77,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataOktaBehaviorsBehaviorsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -85,7 +85,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.dataOktaBehaviors.DataOktaBehaviorsBehaviorsOutputReference",
-		reflect.TypeOf((*DataOktaBehaviorsBehaviorsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataOktaBehaviorsBehaviorsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -114,7 +114,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataOktaBehaviorsBehaviorsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -122,6 +122,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.dataOktaBehaviors.DataOktaBehaviorsConfig",
-		reflect.TypeOf((*DataOktaBehaviorsConfig)(nil)).Elem(),
+		reflect.TypeFor[DataOktaBehaviorsConfig](),
 	)
 }

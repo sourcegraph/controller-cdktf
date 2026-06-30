@@ -6,9 +6,9 @@ import (
 
 type IdpSocialConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type IdpSocialConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the IdP.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/idp_social#name IdpSocial#name}
@@ -99,7 +99,7 @@ type IdpSocialConfig struct {
 	// Determines if the IdP should act as a source of truth for user profile attributes.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/idp_social#profile_master IdpSocial#profile_master}
-	ProfileMaster interface{} `field:"optional" json:"profileMaster" yaml:"profileMaster"`
+	ProfileMaster any `field:"optional" json:"profileMaster" yaml:"profileMaster"`
 	// The type of protocol to use. It can be `OIDC` or `OAUTH2`. Default: `OAUTH2`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/idp_social#protocol_type IdpSocial#protocol_type}
@@ -131,4 +131,3 @@ type IdpSocialConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/idp_social#username_template IdpSocial#username_template}
 	UsernameTemplate *string `field:"optional" json:"usernameTemplate" yaml:"usernameTemplate"`
 }
-

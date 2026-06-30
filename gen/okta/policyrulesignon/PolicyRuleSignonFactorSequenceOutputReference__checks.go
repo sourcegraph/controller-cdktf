@@ -90,7 +90,7 @@ func (p *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) validateInterp
 	return nil
 }
 
-func (p *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) validatePutSecondaryCriteriaParameters(value interface{}) error {
+func (p *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) validatePutSecondaryCriteriaParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (p *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) validateSetCom
 	return nil
 }
 
-func (j *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -269,4 +269,3 @@ func validateNewPolicyRuleSignonFactorSequenceOutputReferenceParameters(terrafor
 
 	return nil
 }
-

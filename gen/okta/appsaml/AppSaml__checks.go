@@ -19,7 +19,7 @@ func (a *jsiiProxy_AppSaml) validateAddMoveTargetParameters(moveTarget *string) 
 	return nil
 }
 
-func (a *jsiiProxy_AppSaml) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_AppSaml) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_AppSaml) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppSaml) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_AppSaml) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (a *jsiiProxy_AppSaml) validateOverrideLogicalIdParameters(newLogicalId *st
 	return nil
 }
 
-func (a *jsiiProxy_AppSaml) validatePutAttributeStatementsParameters(value interface{}) error {
+func (a *jsiiProxy_AppSaml) validatePutAttributeStatementsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -262,7 +262,7 @@ func validateAppSaml_GenerateConfigForImportParameters(scope constructs.Construc
 	return nil
 }
 
-func validateAppSaml_IsConstructParameters(x interface{}) error {
+func validateAppSaml_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func validateAppSaml_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateAppSaml_IsTerraformElementParameters(x interface{}) error {
+func validateAppSaml_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func validateAppSaml_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateAppSaml_IsTerraformResourceParameters(x interface{}) error {
+func validateAppSaml_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -302,7 +302,7 @@ func (j *jsiiProxy_AppSaml) validateSetAccessibilityLoginRedirectUrlParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_AppSaml) validateSetAccessibilitySelfServiceParameters(val interface{}) error {
+func (j *jsiiProxy_AppSaml) validateSetAccessibilitySelfServiceParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -354,7 +354,7 @@ func (j *jsiiProxy_AppSaml) validateSetAppSettingsJsonParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_AppSaml) validateSetAssertionSignedParameters(val interface{}) error {
+func (j *jsiiProxy_AppSaml) validateSetAssertionSignedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -398,7 +398,7 @@ func (j *jsiiProxy_AppSaml) validateSetAuthnContextClassRefParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_AppSaml) validateSetAutoSubmitToolbarParameters(val interface{}) error {
+func (j *jsiiProxy_AppSaml) validateSetAutoSubmitToolbarParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -418,7 +418,7 @@ func (j *jsiiProxy_AppSaml) validateSetAutoSubmitToolbarParameters(val interface
 	return nil
 }
 
-func (j *jsiiProxy_AppSaml) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_AppSaml) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -451,7 +451,7 @@ func (j *jsiiProxy_AppSaml) validateSetConnectionParameters(val interface{}) err
 	return nil
 }
 
-func (j *jsiiProxy_AppSaml) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_AppSaml) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -540,7 +540,7 @@ func (j *jsiiProxy_AppSaml) validateSetEnduserNoteParameters(val *string) error 
 	return nil
 }
 
-func (j *jsiiProxy_AppSaml) validateSetHideIosParameters(val interface{}) error {
+func (j *jsiiProxy_AppSaml) validateSetHideIosParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -560,7 +560,7 @@ func (j *jsiiProxy_AppSaml) validateSetHideIosParameters(val interface{}) error 
 	return nil
 }
 
-func (j *jsiiProxy_AppSaml) validateSetHideWebParameters(val interface{}) error {
+func (j *jsiiProxy_AppSaml) validateSetHideWebParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -580,7 +580,7 @@ func (j *jsiiProxy_AppSaml) validateSetHideWebParameters(val interface{}) error 
 	return nil
 }
 
-func (j *jsiiProxy_AppSaml) validateSetHonorForceAuthnParameters(val interface{}) error {
+func (j *jsiiProxy_AppSaml) validateSetHonorForceAuthnParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -616,7 +616,7 @@ func (j *jsiiProxy_AppSaml) validateSetIdpIssuerParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_AppSaml) validateSetImplicitAssignmentParameters(val interface{}) error {
+func (j *jsiiProxy_AppSaml) validateSetImplicitAssignmentParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -692,7 +692,7 @@ func (j *jsiiProxy_AppSaml) validateSetPreconfiguredAppParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_AppSaml) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_AppSaml) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -746,7 +746,7 @@ func (j *jsiiProxy_AppSaml) validateSetRecipientParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_AppSaml) validateSetRequestCompressedParameters(val interface{}) error {
+func (j *jsiiProxy_AppSaml) validateSetRequestCompressedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -766,7 +766,7 @@ func (j *jsiiProxy_AppSaml) validateSetRequestCompressedParameters(val interface
 	return nil
 }
 
-func (j *jsiiProxy_AppSaml) validateSetResponseSignedParameters(val interface{}) error {
+func (j *jsiiProxy_AppSaml) validateSetResponseSignedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -786,7 +786,7 @@ func (j *jsiiProxy_AppSaml) validateSetResponseSignedParameters(val interface{})
 	return nil
 }
 
-func (j *jsiiProxy_AppSaml) validateSetSamlSignedRequestEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_AppSaml) validateSetSamlSignedRequestEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -936,4 +936,3 @@ func validateNewAppSamlParameters(scope constructs.Construct, id *string, config
 
 	return nil
 }
-

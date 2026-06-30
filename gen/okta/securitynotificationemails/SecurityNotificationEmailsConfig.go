@@ -6,9 +6,9 @@ import (
 
 type SecurityNotificationEmailsConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type SecurityNotificationEmailsConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/security_notification_emails#id SecurityNotificationEmails#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -27,22 +27,21 @@ type SecurityNotificationEmailsConfig struct {
 	// Notifies end users about suspicious or unrecognized activity from their account. Default is `true`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/security_notification_emails#report_suspicious_activity_enabled SecurityNotificationEmails#report_suspicious_activity_enabled}
-	ReportSuspiciousActivityEnabled interface{} `field:"optional" json:"reportSuspiciousActivityEnabled" yaml:"reportSuspiciousActivityEnabled"`
+	ReportSuspiciousActivityEnabled any `field:"optional" json:"reportSuspiciousActivityEnabled" yaml:"reportSuspiciousActivityEnabled"`
 	// Notifies end users of any activity on their account related to MFA factor enrollment. Default is `true`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/security_notification_emails#send_email_for_factor_enrollment_enabled SecurityNotificationEmails#send_email_for_factor_enrollment_enabled}
-	SendEmailForFactorEnrollmentEnabled interface{} `field:"optional" json:"sendEmailForFactorEnrollmentEnabled" yaml:"sendEmailForFactorEnrollmentEnabled"`
+	SendEmailForFactorEnrollmentEnabled any `field:"optional" json:"sendEmailForFactorEnrollmentEnabled" yaml:"sendEmailForFactorEnrollmentEnabled"`
 	// Notifies end users that one or more factors have been reset for their account. Default is `true`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/security_notification_emails#send_email_for_factor_reset_enabled SecurityNotificationEmails#send_email_for_factor_reset_enabled}
-	SendEmailForFactorResetEnabled interface{} `field:"optional" json:"sendEmailForFactorResetEnabled" yaml:"sendEmailForFactorResetEnabled"`
+	SendEmailForFactorResetEnabled any `field:"optional" json:"sendEmailForFactorResetEnabled" yaml:"sendEmailForFactorResetEnabled"`
 	// Notifies end users about new sign-on activity. Default is `true`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/security_notification_emails#send_email_for_new_device_enabled SecurityNotificationEmails#send_email_for_new_device_enabled}
-	SendEmailForNewDeviceEnabled interface{} `field:"optional" json:"sendEmailForNewDeviceEnabled" yaml:"sendEmailForNewDeviceEnabled"`
+	SendEmailForNewDeviceEnabled any `field:"optional" json:"sendEmailForNewDeviceEnabled" yaml:"sendEmailForNewDeviceEnabled"`
 	// Notifies end users that the password for their account has changed. Default is `true`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/security_notification_emails#send_email_for_password_changed_enabled SecurityNotificationEmails#send_email_for_password_changed_enabled}
-	SendEmailForPasswordChangedEnabled interface{} `field:"optional" json:"sendEmailForPasswordChangedEnabled" yaml:"sendEmailForPasswordChangedEnabled"`
+	SendEmailForPasswordChangedEnabled any `field:"optional" json:"sendEmailForPasswordChangedEnabled" yaml:"sendEmailForPasswordChangedEnabled"`
 }
-

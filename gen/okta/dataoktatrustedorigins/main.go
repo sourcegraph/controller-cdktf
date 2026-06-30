@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.dataOktaTrustedOrigins.DataOktaTrustedOrigins",
-		reflect.TypeOf((*DataOktaTrustedOrigins)(nil)).Elem(),
+		reflect.TypeFor[DataOktaTrustedOrigins](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -52,7 +52,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "trustedOrigins", GoGetter: "TrustedOrigins"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataOktaTrustedOrigins{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -60,15 +60,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.dataOktaTrustedOrigins.DataOktaTrustedOriginsConfig",
-		reflect.TypeOf((*DataOktaTrustedOriginsConfig)(nil)).Elem(),
+		reflect.TypeFor[DataOktaTrustedOriginsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.dataOktaTrustedOrigins.DataOktaTrustedOriginsTrustedOrigins",
-		reflect.TypeOf((*DataOktaTrustedOriginsTrustedOrigins)(nil)).Elem(),
+		reflect.TypeFor[DataOktaTrustedOriginsTrustedOrigins](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.dataOktaTrustedOrigins.DataOktaTrustedOriginsTrustedOriginsList",
-		reflect.TypeOf((*DataOktaTrustedOriginsTrustedOriginsList)(nil)).Elem(),
+		reflect.TypeFor[DataOktaTrustedOriginsTrustedOriginsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -81,7 +81,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataOktaTrustedOriginsTrustedOriginsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -89,7 +89,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.dataOktaTrustedOrigins.DataOktaTrustedOriginsTrustedOriginsOutputReference",
-		reflect.TypeOf((*DataOktaTrustedOriginsTrustedOriginsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataOktaTrustedOriginsTrustedOriginsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "active", GoGetter: "Active"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -118,7 +118,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataOktaTrustedOriginsTrustedOriginsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

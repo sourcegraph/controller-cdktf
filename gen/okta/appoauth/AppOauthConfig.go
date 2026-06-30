@@ -6,9 +6,9 @@ import (
 
 type AppOauthConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type AppOauthConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The Application's display name.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_oauth#label AppOauth#label}
@@ -38,7 +38,7 @@ type AppOauthConfig struct {
 	// Enable self service. Default is `false`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_oauth#accessibility_self_service AppOauth#accessibility_self_service}
-	AccessibilitySelfService interface{} `field:"optional" json:"accessibilitySelfService" yaml:"accessibilitySelfService"`
+	AccessibilitySelfService any `field:"optional" json:"accessibilitySelfService" yaml:"accessibilitySelfService"`
 	// Application notes for admins.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_oauth#admin_note AppOauth#admin_note}
@@ -66,11 +66,11 @@ type AppOauthConfig struct {
 	// 				See: https://developer.okta.com/docs/reference/api/apps/#oauth-credential-object"
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_oauth#auto_key_rotation AppOauth#auto_key_rotation}
-	AutoKeyRotation interface{} `field:"optional" json:"autoKeyRotation" yaml:"autoKeyRotation"`
+	AutoKeyRotation any `field:"optional" json:"autoKeyRotation" yaml:"autoKeyRotation"`
 	// Display auto submit toolbar.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_oauth#auto_submit_toolbar AppOauth#auto_submit_toolbar}
-	AutoSubmitToolbar interface{} `field:"optional" json:"autoSubmitToolbar" yaml:"autoSubmitToolbar"`
+	AutoSubmitToolbar any `field:"optional" json:"autoSubmitToolbar" yaml:"autoSubmitToolbar"`
 	// The user provided OAuth client secret key value, this can be set when token_endpoint_auth_method is client_secret_basic.
 	//
 	// This does nothing when `omit_secret is set to true.
@@ -104,11 +104,11 @@ type AppOauthConfig struct {
 	// Do not display application icon on mobile app.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_oauth#hide_ios AppOauth#hide_ios}
-	HideIos interface{} `field:"optional" json:"hideIos" yaml:"hideIos"`
+	HideIos any `field:"optional" json:"hideIos" yaml:"hideIos"`
 	// Do not display application icon to users.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_oauth#hide_web AppOauth#hide_web}
-	HideWeb interface{} `field:"optional" json:"hideWeb" yaml:"hideWeb"`
+	HideWeb any `field:"optional" json:"hideWeb" yaml:"hideWeb"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_oauth#id AppOauth#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -117,7 +117,7 @@ type AppOauthConfig struct {
 	// *Early Access Property*. Enable Federation Broker Mode.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_oauth#implicit_assignment AppOauth#implicit_assignment}
-	ImplicitAssignment interface{} `field:"optional" json:"implicitAssignment" yaml:"implicitAssignment"`
+	ImplicitAssignment any `field:"optional" json:"implicitAssignment" yaml:"implicitAssignment"`
 	// *Early Access Property*.
 	//
 	// Indicates whether the Okta Authorization Server uses the original Okta org domain URL or a custom domain URL as the issuer of ID token for this client.
@@ -127,7 +127,7 @@ type AppOauthConfig struct {
 	// jwks block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_oauth#jwks AppOauth#jwks}
-	Jwks interface{} `field:"optional" json:"jwks" yaml:"jwks"`
+	Jwks any `field:"optional" json:"jwks" yaml:"jwks"`
 	// URL reference to JWKS.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_oauth#jwks_uri AppOauth#jwks_uri}
@@ -159,11 +159,11 @@ type AppOauthConfig struct {
 	// When this is false (the default), it will cause the auto-generated client_secret to be persisted in the client_secret attribute in state. This also means that every time an update to this app is run, this value is also set on the API. If this changes from false => true, the `client_secret` is dropped from state and the secret at the time of the apply is what remains. If this is ever changes from true => false your app will be recreated, due to the need to regenerate a secret we can store in state.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_oauth#omit_secret AppOauth#omit_secret}
-	OmitSecret interface{} `field:"optional" json:"omitSecret" yaml:"omitSecret"`
+	OmitSecret any `field:"optional" json:"omitSecret" yaml:"omitSecret"`
 	// Require Proof Key for Code Exchange (PKCE) for additional verification key rotation mode. See: https://developer.okta.com/docs/reference/api/apps/#oauth-credential-object.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_oauth#pkce_required AppOauth#pkce_required}
-	PkceRequired interface{} `field:"optional" json:"pkceRequired" yaml:"pkceRequired"`
+	PkceRequired any `field:"optional" json:"pkceRequired" yaml:"pkceRequired"`
 	// URI to web page providing client policy document.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_oauth#policy_uri AppOauth#policy_uri}
@@ -231,4 +231,3 @@ type AppOauthConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_oauth#wildcard_redirect AppOauth#wildcard_redirect}
 	WildcardRedirect *string `field:"optional" json:"wildcardRedirect" yaml:"wildcardRedirect"`
 }
-

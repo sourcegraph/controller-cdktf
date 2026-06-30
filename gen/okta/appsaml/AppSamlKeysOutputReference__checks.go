@@ -98,7 +98,7 @@ func (a *jsiiProxy_AppSamlKeysOutputReference) validateResolveParameters(_contex
 	return nil
 }
 
-func (j *jsiiProxy_AppSamlKeysOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppSamlKeysOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewAppSamlKeysOutputReferenceParameters(terraformResource cdktf.IIn
 
 	return nil
 }
-

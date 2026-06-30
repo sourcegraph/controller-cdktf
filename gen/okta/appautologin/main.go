@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.appAutoLogin.AppAutoLogin",
-		reflect.TypeOf((*AppAutoLogin)(nil)).Elem(),
+		reflect.TypeFor[AppAutoLogin](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessibilityErrorRedirectUrl", GoGetter: "AccessibilityErrorRedirectUrl"},
 			_jsii_.MemberProperty{JsiiProperty: "accessibilityErrorRedirectUrlInput", GoGetter: "AccessibilityErrorRedirectUrlInput"},
@@ -134,7 +134,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userNameTemplateType", GoGetter: "UserNameTemplateType"},
 			_jsii_.MemberProperty{JsiiProperty: "userNameTemplateTypeInput", GoGetter: "UserNameTemplateTypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppAutoLogin{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -142,15 +142,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig",
-		reflect.TypeOf((*AppAutoLoginConfig)(nil)).Elem(),
+		reflect.TypeFor[AppAutoLoginConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.appAutoLogin.AppAutoLoginTimeouts",
-		reflect.TypeOf((*AppAutoLoginTimeouts)(nil)).Elem(),
+		reflect.TypeFor[AppAutoLoginTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.appAutoLogin.AppAutoLoginTimeoutsOutputReference",
-		reflect.TypeOf((*AppAutoLoginTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppAutoLoginTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -183,7 +183,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppAutoLoginTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

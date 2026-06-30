@@ -18,15 +18,15 @@ type AppOauthApiScope interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -56,27 +56,27 @@ type AppOauthApiScope interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Scopes() *[]*string
 	SetScopes(val *[]*string)
 	ScopesInput() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -94,7 +94,7 @@ type AppOauthApiScope interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -106,7 +106,7 @@ type AppOauthApiScope interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -117,17 +117,17 @@ type AppOauthApiScope interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for AppOauthApiScope
@@ -165,8 +165,8 @@ func (j *jsiiProxy_AppOauthApiScope) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_AppOauthApiScope) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppOauthApiScope) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -175,8 +175,8 @@ func (j *jsiiProxy_AppOauthApiScope) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AppOauthApiScope) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AppOauthApiScope) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -185,8 +185,8 @@ func (j *jsiiProxy_AppOauthApiScope) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_AppOauthApiScope) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppOauthApiScope) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -305,8 +305,8 @@ func (j *jsiiProxy_AppOauthApiScope) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_AppOauthApiScope) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_AppOauthApiScope) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -315,8 +315,8 @@ func (j *jsiiProxy_AppOauthApiScope) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AppOauthApiScope) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppOauthApiScope) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -355,8 +355,8 @@ func (j *jsiiProxy_AppOauthApiScope) TerraformGeneratorMetadata() *cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_AppOauthApiScope) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AppOauthApiScope) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -375,7 +375,6 @@ func (j *jsiiProxy_AppOauthApiScope) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_oauth_api_scope okta_app_oauth_api_scope} Resource.
 func NewAppOauthApiScope(scope constructs.Construct, id *string, config *AppOauthApiScopeConfig) AppOauthApiScope {
 	_init_.Initialize()
@@ -387,7 +386,7 @@ func NewAppOauthApiScope(scope constructs.Construct, id *string, config *AppOaut
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.appOauthApiScope.AppOauthApiScope",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -400,12 +399,12 @@ func NewAppOauthApiScope_Override(a AppOauthApiScope, scope constructs.Construct
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.appOauthApiScope.AppOauthApiScope",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AppOauthApiScope)SetAppId(val *string) {
+func (j *jsiiProxy_AppOauthApiScope) SetAppId(val *string) {
 	if err := j.validateSetAppIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -416,7 +415,7 @@ func (j *jsiiProxy_AppOauthApiScope)SetAppId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppOauthApiScope)SetConnection(val interface{}) {
+func (j *jsiiProxy_AppOauthApiScope) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -427,7 +426,7 @@ func (j *jsiiProxy_AppOauthApiScope)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppOauthApiScope)SetCount(val interface{}) {
+func (j *jsiiProxy_AppOauthApiScope) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -438,7 +437,7 @@ func (j *jsiiProxy_AppOauthApiScope)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppOauthApiScope)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_AppOauthApiScope) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -446,7 +445,7 @@ func (j *jsiiProxy_AppOauthApiScope)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AppOauthApiScope)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AppOauthApiScope) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -454,7 +453,7 @@ func (j *jsiiProxy_AppOauthApiScope)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_AppOauthApiScope)SetId(val *string) {
+func (j *jsiiProxy_AppOauthApiScope) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -465,7 +464,7 @@ func (j *jsiiProxy_AppOauthApiScope)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppOauthApiScope)SetIssuer(val *string) {
+func (j *jsiiProxy_AppOauthApiScope) SetIssuer(val *string) {
 	if err := j.validateSetIssuerParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,7 +475,7 @@ func (j *jsiiProxy_AppOauthApiScope)SetIssuer(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppOauthApiScope)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AppOauthApiScope) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,7 +486,7 @@ func (j *jsiiProxy_AppOauthApiScope)SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_AppOauthApiScope)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AppOauthApiScope) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -495,7 +494,7 @@ func (j *jsiiProxy_AppOauthApiScope)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_AppOauthApiScope)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_AppOauthApiScope) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -506,7 +505,7 @@ func (j *jsiiProxy_AppOauthApiScope)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppOauthApiScope)SetScopes(val *[]*string) {
+func (j *jsiiProxy_AppOauthApiScope) SetScopes(val *[]*string) {
 	if err := j.validateSetScopesParameters(val); err != nil {
 		panic(err)
 	}
@@ -529,7 +528,7 @@ func AppOauthApiScope_GenerateConfigForImport(scope constructs.Construct, import
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.appOauthApiScope.AppOauthApiScope",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -553,7 +552,7 @@ func AppOauthApiScope_GenerateConfigForImport(scope constructs.Construct, import
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func AppOauthApiScope_IsConstruct(x interface{}) *bool {
+func AppOauthApiScope_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAppOauthApiScope_IsConstructParameters(x); err != nil {
@@ -564,7 +563,7 @@ func AppOauthApiScope_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.appOauthApiScope.AppOauthApiScope",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -572,7 +571,7 @@ func AppOauthApiScope_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func AppOauthApiScope_IsTerraformElement(x interface{}) *bool {
+func AppOauthApiScope_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAppOauthApiScope_IsTerraformElementParameters(x); err != nil {
@@ -583,7 +582,7 @@ func AppOauthApiScope_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.appOauthApiScope.AppOauthApiScope",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -591,7 +590,7 @@ func AppOauthApiScope_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func AppOauthApiScope_IsTerraformResource(x interface{}) *bool {
+func AppOauthApiScope_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAppOauthApiScope_IsTerraformResourceParameters(x); err != nil {
@@ -602,7 +601,7 @@ func AppOauthApiScope_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.appOauthApiScope.AppOauthApiScope",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -627,31 +626,31 @@ func (a *jsiiProxy_AppOauthApiScope) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_AppOauthApiScope) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_AppOauthApiScope) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_AppOauthApiScope) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AppOauthApiScope) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -667,7 +666,7 @@ func (a *jsiiProxy_AppOauthApiScope) GetBooleanAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -683,7 +682,7 @@ func (a *jsiiProxy_AppOauthApiScope) GetBooleanMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -699,7 +698,7 @@ func (a *jsiiProxy_AppOauthApiScope) GetListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -715,7 +714,7 @@ func (a *jsiiProxy_AppOauthApiScope) GetNumberAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -731,7 +730,7 @@ func (a *jsiiProxy_AppOauthApiScope) GetNumberListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -747,7 +746,7 @@ func (a *jsiiProxy_AppOauthApiScope) GetNumberMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -763,7 +762,7 @@ func (a *jsiiProxy_AppOauthApiScope) GetStringAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -779,15 +778,15 @@ func (a *jsiiProxy_AppOauthApiScope) GetStringMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AppOauthApiScope) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppOauthApiScope) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -806,7 +805,7 @@ func (a *jsiiProxy_AppOauthApiScope) ImportFrom(id *string, provider cdktf.Terra
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -819,7 +818,7 @@ func (a *jsiiProxy_AppOauthApiScope) InterpolationForAttribute(terraformAttribut
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -833,18 +832,18 @@ func (a *jsiiProxy_AppOauthApiScope) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_AppOauthApiScope) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_AppOauthApiScope) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -855,7 +854,7 @@ func (a *jsiiProxy_AppOauthApiScope) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -866,7 +865,7 @@ func (a *jsiiProxy_AppOauthApiScope) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -886,8 +885,8 @@ func (a *jsiiProxy_AppOauthApiScope) ResetOverrideLogicalId() {
 	)
 }
 
-func (a *jsiiProxy_AppOauthApiScope) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AppOauthApiScope) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -899,8 +898,8 @@ func (a *jsiiProxy_AppOauthApiScope) SynthesizeAttributes() *map[string]interfac
 	return returns
 }
 
-func (a *jsiiProxy_AppOauthApiScope) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AppOauthApiScope) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -912,8 +911,8 @@ func (a *jsiiProxy_AppOauthApiScope) SynthesizeHclAttributes() *map[string]inter
 	return returns
 }
 
-func (a *jsiiProxy_AppOauthApiScope) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppOauthApiScope) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -925,8 +924,8 @@ func (a *jsiiProxy_AppOauthApiScope) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_AppOauthApiScope) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppOauthApiScope) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -951,8 +950,8 @@ func (a *jsiiProxy_AppOauthApiScope) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_AppOauthApiScope) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppOauthApiScope) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -963,4 +962,3 @@ func (a *jsiiProxy_AppOauthApiScope) ToTerraform() interface{} {
 
 	return returns
 }
-

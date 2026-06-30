@@ -122,7 +122,7 @@ func (j *jsiiProxy_PreviewSigninPageWidgetCustomizationsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_PreviewSigninPageWidgetCustomizationsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PreviewSigninPageWidgetCustomizationsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -251,7 +251,7 @@ func (j *jsiiProxy_PreviewSigninPageWidgetCustomizationsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_PreviewSigninPageWidgetCustomizationsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PreviewSigninPageWidgetCustomizationsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -291,7 +291,7 @@ func (j *jsiiProxy_PreviewSigninPageWidgetCustomizationsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_PreviewSigninPageWidgetCustomizationsOutputReference) validateSetShowPasswordVisibilityToggleParameters(val interface{}) error {
+func (j *jsiiProxy_PreviewSigninPageWidgetCustomizationsOutputReference) validateSetShowPasswordVisibilityToggleParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -311,7 +311,7 @@ func (j *jsiiProxy_PreviewSigninPageWidgetCustomizationsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_PreviewSigninPageWidgetCustomizationsOutputReference) validateSetShowUserIdentifierParameters(val interface{}) error {
+func (j *jsiiProxy_PreviewSigninPageWidgetCustomizationsOutputReference) validateSetShowUserIdentifierParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -406,4 +406,3 @@ func validateNewPreviewSigninPageWidgetCustomizationsOutputReferenceParameters(t
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.user.User",
-		reflect.TypeOf((*User)(nil)).Elem(),
+		reflect.TypeFor[User](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -180,7 +180,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zipCode", GoGetter: "ZipCode"},
 			_jsii_.MemberProperty{JsiiProperty: "zipCodeInput", GoGetter: "ZipCodeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_User{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -188,15 +188,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.user.UserConfig",
-		reflect.TypeOf((*UserConfig)(nil)).Elem(),
+		reflect.TypeFor[UserConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.user.UserPasswordHash",
-		reflect.TypeOf((*UserPasswordHash)(nil)).Elem(),
+		reflect.TypeFor[UserPasswordHash](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.user.UserPasswordHashOutputReference",
-		reflect.TypeOf((*UserPasswordHashOutputReference)(nil)).Elem(),
+		reflect.TypeFor[UserPasswordHashOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "algorithm", GoGetter: "Algorithm"},
 			_jsii_.MemberProperty{JsiiProperty: "algorithmInput", GoGetter: "AlgorithmInput"},
@@ -233,7 +233,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workFactor", GoGetter: "WorkFactor"},
 			_jsii_.MemberProperty{JsiiProperty: "workFactorInput", GoGetter: "WorkFactorInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_UserPasswordHashOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

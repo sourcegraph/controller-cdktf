@@ -6,9 +6,9 @@ import (
 
 type PolicyMfaConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type PolicyMfaConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Policy Name.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_mfa#name PolicyMfa#name}
@@ -32,7 +32,7 @@ type PolicyMfaConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_mfa#external_idp PolicyMfa#external_idp}.
 	ExternalIdp *map[string]*string `field:"optional" json:"externalIdp" yaml:"externalIdp"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_mfa#external_idps PolicyMfa#external_idps}.
-	ExternalIdps interface{} `field:"optional" json:"externalIdps" yaml:"externalIdps"`
+	ExternalIdps any `field:"optional" json:"externalIdps" yaml:"externalIdps"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_mfa#fido_u2f PolicyMfa#fido_u2f}.
 	FidoU2F *map[string]*string `field:"optional" json:"fidoU2F" yaml:"fidoU2F"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_mfa#fido_webauthn PolicyMfa#fido_webauthn}.
@@ -53,7 +53,7 @@ type PolicyMfaConfig struct {
 	// Is the policy using Okta Identity Engine (OIE) with authenticators instead of factors?
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_mfa#is_oie PolicyMfa#is_oie}
-	IsOie interface{} `field:"optional" json:"isOie" yaml:"isOie"`
+	IsOie any `field:"optional" json:"isOie" yaml:"isOie"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_mfa#okta_call PolicyMfa#okta_call}.
 	OktaCall *map[string]*string `field:"optional" json:"oktaCall" yaml:"oktaCall"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_mfa#okta_email PolicyMfa#okta_email}.
@@ -95,4 +95,3 @@ type PolicyMfaConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_mfa#yubikey_token PolicyMfa#yubikey_token}.
 	YubikeyToken *map[string]*string `field:"optional" json:"yubikeyToken" yaml:"yubikeyToken"`
 }
-

@@ -98,7 +98,7 @@ func (p *jsiiProxy_PolicyRuleProfileEnrollmentProfileAttributesOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_PolicyRuleProfileEnrollmentProfileAttributesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyRuleProfileEnrollmentProfileAttributesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_PolicyRuleProfileEnrollmentProfileAttributesOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_PolicyRuleProfileEnrollmentProfileAttributesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyRuleProfileEnrollmentProfileAttributesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -203,7 +203,7 @@ func (j *jsiiProxy_PolicyRuleProfileEnrollmentProfileAttributesOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_PolicyRuleProfileEnrollmentProfileAttributesOutputReference) validateSetRequiredParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyRuleProfileEnrollmentProfileAttributesOutputReference) validateSetRequiredParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -258,4 +258,3 @@ func validateNewPolicyRuleProfileEnrollmentProfileAttributesOutputReferenceParam
 
 	return nil
 }
-

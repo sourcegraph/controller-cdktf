@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataOktaOrgMetadataDomainsOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_DataOktaOrgMetadataDomainsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataOktaOrgMetadataDomainsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataOktaOrgMetadataDomainsOutputReference) validateSetComplex
 	return nil
 }
 
-func (j *jsiiProxy_DataOktaOrgMetadataDomainsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataOktaOrgMetadataDomainsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -214,4 +214,3 @@ func validateNewDataOktaOrgMetadataDomainsOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

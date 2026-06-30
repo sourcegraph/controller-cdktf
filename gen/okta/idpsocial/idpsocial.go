@@ -38,15 +38,15 @@ type IdpSocial interface {
 	SetClientSecret(val *string)
 	ClientSecretInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -92,9 +92,9 @@ type IdpSocial interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
-	ProfileMaster() interface{}
-	SetProfileMaster(val interface{})
-	ProfileMasterInput() interface{}
+	ProfileMaster() any
+	SetProfileMaster(val any)
+	ProfileMasterInput() any
 	ProtocolType() *string
 	SetProtocolType(val *string)
 	ProtocolTypeInput() *string
@@ -103,14 +103,14 @@ type IdpSocial interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	ProvisioningAction() *string
 	SetProvisioningAction(val *string)
 	ProvisioningActionInput() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Scopes() *[]*string
 	SetScopes(val *[]*string)
 	ScopesInput() *[]*string
@@ -129,7 +129,7 @@ type IdpSocial interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	TokenBinding() *string
@@ -149,9 +149,9 @@ type IdpSocial interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -169,7 +169,7 @@ type IdpSocial interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -181,7 +181,7 @@ type IdpSocial interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -214,17 +214,17 @@ type IdpSocial interface {
 	ResetSubjectMatchType()
 	ResetSuspendedAction()
 	ResetUsernameTemplate()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for IdpSocial
@@ -402,8 +402,8 @@ func (j *jsiiProxy_IdpSocial) ClientSecretInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_IdpSocial) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IdpSocial) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -412,8 +412,8 @@ func (j *jsiiProxy_IdpSocial) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IdpSocial) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IdpSocial) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -422,8 +422,8 @@ func (j *jsiiProxy_IdpSocial) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IdpSocial) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IdpSocial) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -672,8 +672,8 @@ func (j *jsiiProxy_IdpSocial) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_IdpSocial) ProfileMaster() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IdpSocial) ProfileMaster() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"profileMaster",
@@ -682,8 +682,8 @@ func (j *jsiiProxy_IdpSocial) ProfileMaster() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IdpSocial) ProfileMasterInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IdpSocial) ProfileMasterInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"profileMasterInput",
@@ -722,8 +722,8 @@ func (j *jsiiProxy_IdpSocial) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_IdpSocial) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_IdpSocial) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -752,8 +752,8 @@ func (j *jsiiProxy_IdpSocial) ProvisioningActionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_IdpSocial) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IdpSocial) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -872,8 +872,8 @@ func (j *jsiiProxy_IdpSocial) TerraformGeneratorMetadata() *cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_IdpSocial) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IdpSocial) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -1002,7 +1002,6 @@ func (j *jsiiProxy_IdpSocial) UsernameTemplateInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/idp_social okta_idp_social} Resource.
 func NewIdpSocial(scope constructs.Construct, id *string, config *IdpSocialConfig) IdpSocial {
 	_init_.Initialize()
@@ -1014,7 +1013,7 @@ func NewIdpSocial(scope constructs.Construct, id *string, config *IdpSocialConfi
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.idpSocial.IdpSocial",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -1027,12 +1026,12 @@ func NewIdpSocial_Override(i IdpSocial, scope constructs.Construct, id *string, 
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.idpSocial.IdpSocial",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IdpSocial)SetAccountLinkAction(val *string) {
+func (j *jsiiProxy_IdpSocial) SetAccountLinkAction(val *string) {
 	if err := j.validateSetAccountLinkActionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1043,7 +1042,7 @@ func (j *jsiiProxy_IdpSocial)SetAccountLinkAction(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IdpSocial)SetAccountLinkGroupInclude(val *[]*string) {
+func (j *jsiiProxy_IdpSocial) SetAccountLinkGroupInclude(val *[]*string) {
 	if err := j.validateSetAccountLinkGroupIncludeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1054,7 +1053,7 @@ func (j *jsiiProxy_IdpSocial)SetAccountLinkGroupInclude(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_IdpSocial)SetAppleKid(val *string) {
+func (j *jsiiProxy_IdpSocial) SetAppleKid(val *string) {
 	if err := j.validateSetAppleKidParameters(val); err != nil {
 		panic(err)
 	}
@@ -1065,7 +1064,7 @@ func (j *jsiiProxy_IdpSocial)SetAppleKid(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IdpSocial)SetApplePrivateKey(val *string) {
+func (j *jsiiProxy_IdpSocial) SetApplePrivateKey(val *string) {
 	if err := j.validateSetApplePrivateKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -1076,7 +1075,7 @@ func (j *jsiiProxy_IdpSocial)SetApplePrivateKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IdpSocial)SetAppleTeamId(val *string) {
+func (j *jsiiProxy_IdpSocial) SetAppleTeamId(val *string) {
 	if err := j.validateSetAppleTeamIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1087,7 +1086,7 @@ func (j *jsiiProxy_IdpSocial)SetAppleTeamId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IdpSocial)SetClientId(val *string) {
+func (j *jsiiProxy_IdpSocial) SetClientId(val *string) {
 	if err := j.validateSetClientIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1098,7 +1097,7 @@ func (j *jsiiProxy_IdpSocial)SetClientId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IdpSocial)SetClientSecret(val *string) {
+func (j *jsiiProxy_IdpSocial) SetClientSecret(val *string) {
 	if err := j.validateSetClientSecretParameters(val); err != nil {
 		panic(err)
 	}
@@ -1109,7 +1108,7 @@ func (j *jsiiProxy_IdpSocial)SetClientSecret(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IdpSocial)SetConnection(val interface{}) {
+func (j *jsiiProxy_IdpSocial) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1120,7 +1119,7 @@ func (j *jsiiProxy_IdpSocial)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IdpSocial)SetCount(val interface{}) {
+func (j *jsiiProxy_IdpSocial) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1131,7 +1130,7 @@ func (j *jsiiProxy_IdpSocial)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IdpSocial)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_IdpSocial) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1139,7 +1138,7 @@ func (j *jsiiProxy_IdpSocial)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_IdpSocial)SetDeprovisionedAction(val *string) {
+func (j *jsiiProxy_IdpSocial) SetDeprovisionedAction(val *string) {
 	if err := j.validateSetDeprovisionedActionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1150,7 +1149,7 @@ func (j *jsiiProxy_IdpSocial)SetDeprovisionedAction(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IdpSocial)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_IdpSocial) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1158,7 +1157,7 @@ func (j *jsiiProxy_IdpSocial)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_IdpSocial)SetGroupsAction(val *string) {
+func (j *jsiiProxy_IdpSocial) SetGroupsAction(val *string) {
 	if err := j.validateSetGroupsActionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1169,7 +1168,7 @@ func (j *jsiiProxy_IdpSocial)SetGroupsAction(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IdpSocial)SetGroupsAssignment(val *[]*string) {
+func (j *jsiiProxy_IdpSocial) SetGroupsAssignment(val *[]*string) {
 	if err := j.validateSetGroupsAssignmentParameters(val); err != nil {
 		panic(err)
 	}
@@ -1180,7 +1179,7 @@ func (j *jsiiProxy_IdpSocial)SetGroupsAssignment(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_IdpSocial)SetGroupsAttribute(val *string) {
+func (j *jsiiProxy_IdpSocial) SetGroupsAttribute(val *string) {
 	if err := j.validateSetGroupsAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1191,7 +1190,7 @@ func (j *jsiiProxy_IdpSocial)SetGroupsAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IdpSocial)SetGroupsFilter(val *[]*string) {
+func (j *jsiiProxy_IdpSocial) SetGroupsFilter(val *[]*string) {
 	if err := j.validateSetGroupsFilterParameters(val); err != nil {
 		panic(err)
 	}
@@ -1202,7 +1201,7 @@ func (j *jsiiProxy_IdpSocial)SetGroupsFilter(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_IdpSocial)SetId(val *string) {
+func (j *jsiiProxy_IdpSocial) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1213,7 +1212,7 @@ func (j *jsiiProxy_IdpSocial)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IdpSocial)SetIssuerMode(val *string) {
+func (j *jsiiProxy_IdpSocial) SetIssuerMode(val *string) {
 	if err := j.validateSetIssuerModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1224,7 +1223,7 @@ func (j *jsiiProxy_IdpSocial)SetIssuerMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IdpSocial)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_IdpSocial) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1235,7 +1234,7 @@ func (j *jsiiProxy_IdpSocial)SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	)
 }
 
-func (j *jsiiProxy_IdpSocial)SetMaxClockSkew(val *float64) {
+func (j *jsiiProxy_IdpSocial) SetMaxClockSkew(val *float64) {
 	if err := j.validateSetMaxClockSkewParameters(val); err != nil {
 		panic(err)
 	}
@@ -1246,7 +1245,7 @@ func (j *jsiiProxy_IdpSocial)SetMaxClockSkew(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_IdpSocial)SetName(val *string) {
+func (j *jsiiProxy_IdpSocial) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1257,7 +1256,7 @@ func (j *jsiiProxy_IdpSocial)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IdpSocial)SetProfileMaster(val interface{}) {
+func (j *jsiiProxy_IdpSocial) SetProfileMaster(val any) {
 	if err := j.validateSetProfileMasterParameters(val); err != nil {
 		panic(err)
 	}
@@ -1268,7 +1267,7 @@ func (j *jsiiProxy_IdpSocial)SetProfileMaster(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IdpSocial)SetProtocolType(val *string) {
+func (j *jsiiProxy_IdpSocial) SetProtocolType(val *string) {
 	if err := j.validateSetProtocolTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1279,7 +1278,7 @@ func (j *jsiiProxy_IdpSocial)SetProtocolType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IdpSocial)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_IdpSocial) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1287,7 +1286,7 @@ func (j *jsiiProxy_IdpSocial)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_IdpSocial)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_IdpSocial) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1298,7 +1297,7 @@ func (j *jsiiProxy_IdpSocial)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IdpSocial)SetProvisioningAction(val *string) {
+func (j *jsiiProxy_IdpSocial) SetProvisioningAction(val *string) {
 	if err := j.validateSetProvisioningActionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1309,7 +1308,7 @@ func (j *jsiiProxy_IdpSocial)SetProvisioningAction(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IdpSocial)SetScopes(val *[]*string) {
+func (j *jsiiProxy_IdpSocial) SetScopes(val *[]*string) {
 	if err := j.validateSetScopesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1320,7 +1319,7 @@ func (j *jsiiProxy_IdpSocial)SetScopes(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_IdpSocial)SetStatus(val *string) {
+func (j *jsiiProxy_IdpSocial) SetStatus(val *string) {
 	if err := j.validateSetStatusParameters(val); err != nil {
 		panic(err)
 	}
@@ -1331,7 +1330,7 @@ func (j *jsiiProxy_IdpSocial)SetStatus(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IdpSocial)SetSubjectMatchAttribute(val *string) {
+func (j *jsiiProxy_IdpSocial) SetSubjectMatchAttribute(val *string) {
 	if err := j.validateSetSubjectMatchAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1342,7 +1341,7 @@ func (j *jsiiProxy_IdpSocial)SetSubjectMatchAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IdpSocial)SetSubjectMatchType(val *string) {
+func (j *jsiiProxy_IdpSocial) SetSubjectMatchType(val *string) {
 	if err := j.validateSetSubjectMatchTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1353,7 +1352,7 @@ func (j *jsiiProxy_IdpSocial)SetSubjectMatchType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IdpSocial)SetSuspendedAction(val *string) {
+func (j *jsiiProxy_IdpSocial) SetSuspendedAction(val *string) {
 	if err := j.validateSetSuspendedActionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1364,7 +1363,7 @@ func (j *jsiiProxy_IdpSocial)SetSuspendedAction(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IdpSocial)SetType(val *string) {
+func (j *jsiiProxy_IdpSocial) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1375,7 +1374,7 @@ func (j *jsiiProxy_IdpSocial)SetType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IdpSocial)SetUsernameTemplate(val *string) {
+func (j *jsiiProxy_IdpSocial) SetUsernameTemplate(val *string) {
 	if err := j.validateSetUsernameTemplateParameters(val); err != nil {
 		panic(err)
 	}
@@ -1398,7 +1397,7 @@ func IdpSocial_GenerateConfigForImport(scope constructs.Construct, importToId *s
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.idpSocial.IdpSocial",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1422,7 +1421,7 @@ func IdpSocial_GenerateConfigForImport(scope constructs.Construct, importToId *s
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func IdpSocial_IsConstruct(x interface{}) *bool {
+func IdpSocial_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIdpSocial_IsConstructParameters(x); err != nil {
@@ -1433,7 +1432,7 @@ func IdpSocial_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.idpSocial.IdpSocial",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1441,7 +1440,7 @@ func IdpSocial_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func IdpSocial_IsTerraformElement(x interface{}) *bool {
+func IdpSocial_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIdpSocial_IsTerraformElementParameters(x); err != nil {
@@ -1452,7 +1451,7 @@ func IdpSocial_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.idpSocial.IdpSocial",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1460,7 +1459,7 @@ func IdpSocial_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func IdpSocial_IsTerraformResource(x interface{}) *bool {
+func IdpSocial_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIdpSocial_IsTerraformResourceParameters(x); err != nil {
@@ -1471,7 +1470,7 @@ func IdpSocial_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.idpSocial.IdpSocial",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1496,31 +1495,31 @@ func (i *jsiiProxy_IdpSocial) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (i *jsiiProxy_IdpSocial) AddOverride(path *string, value interface{}) {
+func (i *jsiiProxy_IdpSocial) AddOverride(path *string, value any) {
 	if err := i.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (i *jsiiProxy_IdpSocial) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IdpSocial) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1536,7 +1535,7 @@ func (i *jsiiProxy_IdpSocial) GetBooleanAttribute(terraformAttribute *string) cd
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1552,7 +1551,7 @@ func (i *jsiiProxy_IdpSocial) GetBooleanMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1568,7 +1567,7 @@ func (i *jsiiProxy_IdpSocial) GetListAttribute(terraformAttribute *string) *[]*s
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1584,7 +1583,7 @@ func (i *jsiiProxy_IdpSocial) GetNumberAttribute(terraformAttribute *string) *fl
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1600,7 +1599,7 @@ func (i *jsiiProxy_IdpSocial) GetNumberListAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1616,7 +1615,7 @@ func (i *jsiiProxy_IdpSocial) GetNumberMapAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1632,7 +1631,7 @@ func (i *jsiiProxy_IdpSocial) GetStringAttribute(terraformAttribute *string) *st
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1648,15 +1647,15 @@ func (i *jsiiProxy_IdpSocial) GetStringMapAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_IdpSocial) HasResourceMove() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IdpSocial) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1675,7 +1674,7 @@ func (i *jsiiProxy_IdpSocial) ImportFrom(id *string, provider cdktf.TerraformPro
 	_jsii_.InvokeVoid(
 		i,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1688,7 +1687,7 @@ func (i *jsiiProxy_IdpSocial) InterpolationForAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1702,18 +1701,18 @@ func (i *jsiiProxy_IdpSocial) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (i *jsiiProxy_IdpSocial) MoveTo(moveTarget *string, index interface{}) {
+func (i *jsiiProxy_IdpSocial) MoveTo(moveTarget *string, index any) {
 	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1724,7 +1723,7 @@ func (i *jsiiProxy_IdpSocial) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1735,7 +1734,7 @@ func (i *jsiiProxy_IdpSocial) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1931,8 +1930,8 @@ func (i *jsiiProxy_IdpSocial) ResetUsernameTemplate() {
 	)
 }
 
-func (i *jsiiProxy_IdpSocial) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IdpSocial) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -1944,8 +1943,8 @@ func (i *jsiiProxy_IdpSocial) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (i *jsiiProxy_IdpSocial) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IdpSocial) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -1957,8 +1956,8 @@ func (i *jsiiProxy_IdpSocial) SynthesizeHclAttributes() *map[string]interface{} 
 	return returns
 }
 
-func (i *jsiiProxy_IdpSocial) ToHclTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IdpSocial) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1970,8 +1969,8 @@ func (i *jsiiProxy_IdpSocial) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (i *jsiiProxy_IdpSocial) ToMetadata() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IdpSocial) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1996,8 +1995,8 @@ func (i *jsiiProxy_IdpSocial) ToString() *string {
 	return returns
 }
 
-func (i *jsiiProxy_IdpSocial) ToTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IdpSocial) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -2008,4 +2007,3 @@ func (i *jsiiProxy_IdpSocial) ToTerraform() interface{} {
 
 	return returns
 }
-

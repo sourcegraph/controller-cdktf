@@ -12,9 +12,9 @@ type GroupSchemaPropertyArrayOneOfOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,8 +30,8 @@ type GroupSchemaPropertyArrayOneOfOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -46,7 +46,7 @@ type GroupSchemaPropertyArrayOneOfOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,7 +69,7 @@ type GroupSchemaPropertyArrayOneOfOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,8 +82,8 @@ type jsiiProxy_GroupSchemaPropertyArrayOneOfOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GroupSchemaPropertyArrayOneOfOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GroupSchemaPropertyArrayOneOfOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -142,8 +142,8 @@ func (j *jsiiProxy_GroupSchemaPropertyArrayOneOfOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GroupSchemaPropertyArrayOneOfOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GroupSchemaPropertyArrayOneOfOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -192,7 +192,6 @@ func (j *jsiiProxy_GroupSchemaPropertyArrayOneOfOutputReference) TitleInput() *s
 	return returns
 }
 
-
 func NewGroupSchemaPropertyArrayOneOfOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GroupSchemaPropertyArrayOneOfOutputReference {
 	_init_.Initialize()
 
@@ -203,7 +202,7 @@ func NewGroupSchemaPropertyArrayOneOfOutputReference(terraformResource cdktf.IIn
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.groupSchemaProperty.GroupSchemaPropertyArrayOneOfOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -215,12 +214,12 @@ func NewGroupSchemaPropertyArrayOneOfOutputReference_Override(g GroupSchemaPrope
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.groupSchemaProperty.GroupSchemaPropertyArrayOneOfOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GroupSchemaPropertyArrayOneOfOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GroupSchemaPropertyArrayOneOfOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_GroupSchemaPropertyArrayOneOfOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_GroupSchemaPropertyArrayOneOfOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GroupSchemaPropertyArrayOneOfOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_GroupSchemaPropertyArrayOneOfOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_GroupSchemaPropertyArrayOneOfOutputReference)SetConst(val *string) {
+func (j *jsiiProxy_GroupSchemaPropertyArrayOneOfOutputReference) SetConst(val *string) {
 	if err := j.validateSetConstParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_GroupSchemaPropertyArrayOneOfOutputReference)SetConst(val *st
 	)
 }
 
-func (j *jsiiProxy_GroupSchemaPropertyArrayOneOfOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GroupSchemaPropertyArrayOneOfOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,7 +263,7 @@ func (j *jsiiProxy_GroupSchemaPropertyArrayOneOfOutputReference)SetInternalValue
 	)
 }
 
-func (j *jsiiProxy_GroupSchemaPropertyArrayOneOfOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GroupSchemaPropertyArrayOneOfOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -275,7 +274,7 @@ func (j *jsiiProxy_GroupSchemaPropertyArrayOneOfOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_GroupSchemaPropertyArrayOneOfOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GroupSchemaPropertyArrayOneOfOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -286,7 +285,7 @@ func (j *jsiiProxy_GroupSchemaPropertyArrayOneOfOutputReference)SetTerraformReso
 	)
 }
 
-func (j *jsiiProxy_GroupSchemaPropertyArrayOneOfOutputReference)SetTitle(val *string) {
+func (j *jsiiProxy_GroupSchemaPropertyArrayOneOfOutputReference) SetTitle(val *string) {
 	if err := j.validateSetTitleParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,16 +309,16 @@ func (g *jsiiProxy_GroupSchemaPropertyArrayOneOfOutputReference) ComputeFqn() *s
 	return returns
 }
 
-func (g *jsiiProxy_GroupSchemaPropertyArrayOneOfOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GroupSchemaPropertyArrayOneOfOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -335,7 +334,7 @@ func (g *jsiiProxy_GroupSchemaPropertyArrayOneOfOutputReference) GetBooleanAttri
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -351,7 +350,7 @@ func (g *jsiiProxy_GroupSchemaPropertyArrayOneOfOutputReference) GetBooleanMapAt
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -367,7 +366,7 @@ func (g *jsiiProxy_GroupSchemaPropertyArrayOneOfOutputReference) GetListAttribut
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -383,7 +382,7 @@ func (g *jsiiProxy_GroupSchemaPropertyArrayOneOfOutputReference) GetNumberAttrib
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -399,7 +398,7 @@ func (g *jsiiProxy_GroupSchemaPropertyArrayOneOfOutputReference) GetNumberListAt
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -415,7 +414,7 @@ func (g *jsiiProxy_GroupSchemaPropertyArrayOneOfOutputReference) GetNumberMapAtt
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -431,7 +430,7 @@ func (g *jsiiProxy_GroupSchemaPropertyArrayOneOfOutputReference) GetStringAttrib
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -447,7 +446,7 @@ func (g *jsiiProxy_GroupSchemaPropertyArrayOneOfOutputReference) GetStringMapAtt
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,23 +475,23 @@ func (g *jsiiProxy_GroupSchemaPropertyArrayOneOfOutputReference) InterpolationFo
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GroupSchemaPropertyArrayOneOfOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GroupSchemaPropertyArrayOneOfOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -511,4 +510,3 @@ func (g *jsiiProxy_GroupSchemaPropertyArrayOneOfOutputReference) ToString() *str
 
 	return returns
 }
-

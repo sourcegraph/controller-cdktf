@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.dataOktaUsers.DataOktaUsers",
-		reflect.TypeOf((*DataOktaUsers)(nil)).Elem(),
+		reflect.TypeFor[DataOktaUsers](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -68,7 +68,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "users", GoGetter: "Users"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataOktaUsers{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -76,15 +76,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.dataOktaUsers.DataOktaUsersConfig",
-		reflect.TypeOf((*DataOktaUsersConfig)(nil)).Elem(),
+		reflect.TypeFor[DataOktaUsersConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.dataOktaUsers.DataOktaUsersSearch",
-		reflect.TypeOf((*DataOktaUsersSearch)(nil)).Elem(),
+		reflect.TypeFor[DataOktaUsersSearch](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.dataOktaUsers.DataOktaUsersSearchList",
-		reflect.TypeOf((*DataOktaUsersSearchList)(nil)).Elem(),
+		reflect.TypeFor[DataOktaUsersSearchList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -98,7 +98,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataOktaUsersSearchList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -106,7 +106,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.dataOktaUsers.DataOktaUsersSearchOutputReference",
-		reflect.TypeOf((*DataOktaUsersSearchOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataOktaUsersSearchOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -142,7 +142,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataOktaUsersSearchOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -150,11 +150,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.dataOktaUsers.DataOktaUsersUsers",
-		reflect.TypeOf((*DataOktaUsersUsers)(nil)).Elem(),
+		reflect.TypeFor[DataOktaUsersUsers](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.dataOktaUsers.DataOktaUsersUsersList",
-		reflect.TypeOf((*DataOktaUsersUsersList)(nil)).Elem(),
+		reflect.TypeFor[DataOktaUsersUsersList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -167,7 +167,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataOktaUsersUsersList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -175,7 +175,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.dataOktaUsers.DataOktaUsersUsersOutputReference",
-		reflect.TypeOf((*DataOktaUsersUsersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataOktaUsersUsersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "adminRoles", GoGetter: "AdminRoles"},
 			_jsii_.MemberProperty{JsiiProperty: "city", GoGetter: "City"},
@@ -236,7 +236,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userType", GoGetter: "UserType"},
 			_jsii_.MemberProperty{JsiiProperty: "zipCode", GoGetter: "ZipCode"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataOktaUsersUsersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

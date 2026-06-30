@@ -98,7 +98,7 @@ func (a *jsiiProxy_AppThreeFieldTimeoutsOutputReference) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_AppThreeFieldTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppThreeFieldTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_AppThreeFieldTimeoutsOutputReference) validateSetCreateParame
 	return nil
 }
 
-func (j *jsiiProxy_AppThreeFieldTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AppThreeFieldTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewAppThreeFieldTimeoutsOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

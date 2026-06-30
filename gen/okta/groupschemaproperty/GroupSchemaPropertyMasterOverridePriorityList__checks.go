@@ -34,7 +34,7 @@ func (g *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityList) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGroupSchemaPropertyMasterOverridePriorityListParameters(terrafor
 
 	return nil
 }
-

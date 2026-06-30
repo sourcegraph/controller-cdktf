@@ -19,7 +19,7 @@ func (a *jsiiProxy_AppSwa) validateAddMoveTargetParameters(moveTarget *string) e
 	return nil
 }
 
-func (a *jsiiProxy_AppSwa) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_AppSwa) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_AppSwa) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppSwa) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_AppSwa) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateAppSwa_GenerateConfigForImportParameters(scope constructs.Construct
 	return nil
 }
 
-func validateAppSwa_IsConstructParameters(x interface{}) error {
+func validateAppSwa_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateAppSwa_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateAppSwa_IsTerraformElementParameters(x interface{}) error {
+func validateAppSwa_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateAppSwa_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateAppSwa_IsTerraformResourceParameters(x interface{}) error {
+func validateAppSwa_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -271,7 +271,7 @@ func (j *jsiiProxy_AppSwa) validateSetAccessibilityLoginRedirectUrlParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_AppSwa) validateSetAccessibilitySelfServiceParameters(val interface{}) error {
+func (j *jsiiProxy_AppSwa) validateSetAccessibilitySelfServiceParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -307,7 +307,7 @@ func (j *jsiiProxy_AppSwa) validateSetAppLinksJsonParameters(val *string) error 
 	return nil
 }
 
-func (j *jsiiProxy_AppSwa) validateSetAutoSubmitToolbarParameters(val interface{}) error {
+func (j *jsiiProxy_AppSwa) validateSetAutoSubmitToolbarParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -343,7 +343,7 @@ func (j *jsiiProxy_AppSwa) validateSetCheckboxParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_AppSwa) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_AppSwa) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -376,7 +376,7 @@ func (j *jsiiProxy_AppSwa) validateSetConnectionParameters(val interface{}) erro
 	return nil
 }
 
-func (j *jsiiProxy_AppSwa) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_AppSwa) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -441,7 +441,7 @@ func (j *jsiiProxy_AppSwa) validateSetEnduserNoteParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_AppSwa) validateSetHideIosParameters(val interface{}) error {
+func (j *jsiiProxy_AppSwa) validateSetHideIosParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -461,7 +461,7 @@ func (j *jsiiProxy_AppSwa) validateSetHideIosParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_AppSwa) validateSetHideWebParameters(val interface{}) error {
+func (j *jsiiProxy_AppSwa) validateSetHideWebParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -529,7 +529,7 @@ func (j *jsiiProxy_AppSwa) validateSetPreconfiguredAppParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_AppSwa) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_AppSwa) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -665,4 +665,3 @@ func validateNewAppSwaParameters(scope constructs.Construct, id *string, config 
 
 	return nil
 }
-

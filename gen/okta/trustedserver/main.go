@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.trustedServer.TrustedServer",
-		reflect.TypeOf((*TrustedServer)(nil)).Elem(),
+		reflect.TypeFor[TrustedServer](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -58,7 +58,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "trusted", GoGetter: "Trusted"},
 			_jsii_.MemberProperty{JsiiProperty: "trustedInput", GoGetter: "TrustedInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TrustedServer{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -66,6 +66,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.trustedServer.TrustedServerConfig",
-		reflect.TypeOf((*TrustedServerConfig)(nil)).Elem(),
+		reflect.TypeFor[TrustedServerConfig](),
 	)
 }

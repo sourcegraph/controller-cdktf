@@ -19,7 +19,7 @@ func (p *jsiiProxy_PolicyRuleProfileEnrollment) validateAddMoveTargetParameters(
 	return nil
 }
 
-func (p *jsiiProxy_PolicyRuleProfileEnrollment) validateAddOverrideParameters(path *string, value interface{}) error {
+func (p *jsiiProxy_PolicyRuleProfileEnrollment) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (p *jsiiProxy_PolicyRuleProfileEnrollment) validateMoveFromIdParameters(id 
 	return nil
 }
 
-func (p *jsiiProxy_PolicyRuleProfileEnrollment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (p *jsiiProxy_PolicyRuleProfileEnrollment) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (p *jsiiProxy_PolicyRuleProfileEnrollment) validateOverrideLogicalIdParamet
 	return nil
 }
 
-func (p *jsiiProxy_PolicyRuleProfileEnrollment) validatePutProfileAttributesParameters(value interface{}) error {
+func (p *jsiiProxy_PolicyRuleProfileEnrollment) validatePutProfileAttributesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -251,7 +251,7 @@ func validatePolicyRuleProfileEnrollment_GenerateConfigForImportParameters(scope
 	return nil
 }
 
-func validatePolicyRuleProfileEnrollment_IsConstructParameters(x interface{}) error {
+func validatePolicyRuleProfileEnrollment_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -259,7 +259,7 @@ func validatePolicyRuleProfileEnrollment_IsConstructParameters(x interface{}) er
 	return nil
 }
 
-func validatePolicyRuleProfileEnrollment_IsTerraformElementParameters(x interface{}) error {
+func validatePolicyRuleProfileEnrollment_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -267,7 +267,7 @@ func validatePolicyRuleProfileEnrollment_IsTerraformElementParameters(x interfac
 	return nil
 }
 
-func validatePolicyRuleProfileEnrollment_IsTerraformResourceParameters(x interface{}) error {
+func validatePolicyRuleProfileEnrollment_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -283,7 +283,7 @@ func (j *jsiiProxy_PolicyRuleProfileEnrollment) validateSetAccessParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_PolicyRuleProfileEnrollment) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyRuleProfileEnrollment) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -316,7 +316,7 @@ func (j *jsiiProxy_PolicyRuleProfileEnrollment) validateSetConnectionParameters(
 	return nil
 }
 
-func (j *jsiiProxy_PolicyRuleProfileEnrollment) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyRuleProfileEnrollment) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -373,7 +373,7 @@ func (j *jsiiProxy_PolicyRuleProfileEnrollment) validateSetCountParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_PolicyRuleProfileEnrollment) validateSetEmailVerificationParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyRuleProfileEnrollment) validateSetEmailVerificationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -433,7 +433,7 @@ func (j *jsiiProxy_PolicyRuleProfileEnrollment) validateSetProgressiveProfilingA
 	return nil
 }
 
-func (j *jsiiProxy_PolicyRuleProfileEnrollment) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_PolicyRuleProfileEnrollment) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -521,4 +521,3 @@ func validateNewPolicyRuleProfileEnrollmentParameters(scope constructs.Construct
 
 	return nil
 }
-

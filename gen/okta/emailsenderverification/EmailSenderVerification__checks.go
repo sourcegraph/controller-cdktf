@@ -19,7 +19,7 @@ func (e *jsiiProxy_EmailSenderVerification) validateAddMoveTargetParameters(move
 	return nil
 }
 
-func (e *jsiiProxy_EmailSenderVerification) validateAddOverrideParameters(path *string, value interface{}) error {
+func (e *jsiiProxy_EmailSenderVerification) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (e *jsiiProxy_EmailSenderVerification) validateMoveFromIdParameters(id *str
 	return nil
 }
 
-func (e *jsiiProxy_EmailSenderVerification) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (e *jsiiProxy_EmailSenderVerification) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateEmailSenderVerification_GenerateConfigForImportParameters(scope con
 	return nil
 }
 
-func validateEmailSenderVerification_IsConstructParameters(x interface{}) error {
+func validateEmailSenderVerification_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateEmailSenderVerification_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
-func validateEmailSenderVerification_IsTerraformElementParameters(x interface{}) error {
+func validateEmailSenderVerification_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateEmailSenderVerification_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
-func validateEmailSenderVerification_IsTerraformResourceParameters(x interface{}) error {
+func validateEmailSenderVerification_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateEmailSenderVerification_IsTerraformResourceParameters(x interface{}
 	return nil
 }
 
-func (j *jsiiProxy_EmailSenderVerification) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_EmailSenderVerification) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_EmailSenderVerification) validateSetConnectionParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_EmailSenderVerification) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_EmailSenderVerification) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -350,7 +350,7 @@ func (j *jsiiProxy_EmailSenderVerification) validateSetLifecycleParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_EmailSenderVerification) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_EmailSenderVerification) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -422,4 +422,3 @@ func validateNewEmailSenderVerificationParameters(scope constructs.Construct, id
 
 	return nil
 }
-

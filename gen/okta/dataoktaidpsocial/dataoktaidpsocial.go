@@ -21,11 +21,11 @@ type DataOktaIdpSocial interface {
 	ClientId() *string
 	ClientSecret() *string
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -65,7 +65,7 @@ type DataOktaIdpSocial interface {
 	SetProvider(val cdktf.TerraformProvider)
 	ProvisioningAction() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Scopes() *[]*string
 	Status() *string
 	SubjectMatchAttribute() *string
@@ -74,7 +74,7 @@ type DataOktaIdpSocial interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	TokenBinding() *string
@@ -82,9 +82,9 @@ type DataOktaIdpSocial interface {
 	Type() *string
 	UsernameTemplate() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -111,18 +111,18 @@ type DataOktaIdpSocial interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataOktaIdpSocial
@@ -200,8 +200,8 @@ func (j *jsiiProxy_DataOktaIdpSocial) ClientSecret() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataOktaIdpSocial) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataOktaIdpSocial) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -210,8 +210,8 @@ func (j *jsiiProxy_DataOktaIdpSocial) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_DataOktaIdpSocial) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataOktaIdpSocial) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -430,8 +430,8 @@ func (j *jsiiProxy_DataOktaIdpSocial) ProvisioningAction() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataOktaIdpSocial) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataOktaIdpSocial) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -500,8 +500,8 @@ func (j *jsiiProxy_DataOktaIdpSocial) TerraformGeneratorMetadata() *cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_DataOktaIdpSocial) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataOktaIdpSocial) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -560,7 +560,6 @@ func (j *jsiiProxy_DataOktaIdpSocial) UsernameTemplate() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/idp_social okta_idp_social} Data Source.
 func NewDataOktaIdpSocial(scope constructs.Construct, id *string, config *DataOktaIdpSocialConfig) DataOktaIdpSocial {
 	_init_.Initialize()
@@ -572,7 +571,7 @@ func NewDataOktaIdpSocial(scope constructs.Construct, id *string, config *DataOk
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.dataOktaIdpSocial.DataOktaIdpSocial",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -585,12 +584,12 @@ func NewDataOktaIdpSocial_Override(d DataOktaIdpSocial, scope constructs.Constru
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.dataOktaIdpSocial.DataOktaIdpSocial",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataOktaIdpSocial)SetCount(val interface{}) {
+func (j *jsiiProxy_DataOktaIdpSocial) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -601,7 +600,7 @@ func (j *jsiiProxy_DataOktaIdpSocial)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataOktaIdpSocial)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataOktaIdpSocial) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -609,7 +608,7 @@ func (j *jsiiProxy_DataOktaIdpSocial)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataOktaIdpSocial)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataOktaIdpSocial) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -617,7 +616,7 @@ func (j *jsiiProxy_DataOktaIdpSocial)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DataOktaIdpSocial)SetId(val *string) {
+func (j *jsiiProxy_DataOktaIdpSocial) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -628,7 +627,7 @@ func (j *jsiiProxy_DataOktaIdpSocial)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOktaIdpSocial)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataOktaIdpSocial) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -639,7 +638,7 @@ func (j *jsiiProxy_DataOktaIdpSocial)SetLifecycle(val *cdktf.TerraformResourceLi
 	)
 }
 
-func (j *jsiiProxy_DataOktaIdpSocial)SetName(val *string) {
+func (j *jsiiProxy_DataOktaIdpSocial) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -650,7 +649,7 @@ func (j *jsiiProxy_DataOktaIdpSocial)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOktaIdpSocial)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataOktaIdpSocial) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -670,7 +669,7 @@ func DataOktaIdpSocial_GenerateConfigForImport(scope constructs.Construct, impor
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.dataOktaIdpSocial.DataOktaIdpSocial",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -694,7 +693,7 @@ func DataOktaIdpSocial_GenerateConfigForImport(scope constructs.Construct, impor
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataOktaIdpSocial_IsConstruct(x interface{}) *bool {
+func DataOktaIdpSocial_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataOktaIdpSocial_IsConstructParameters(x); err != nil {
@@ -705,7 +704,7 @@ func DataOktaIdpSocial_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.dataOktaIdpSocial.DataOktaIdpSocial",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -713,7 +712,7 @@ func DataOktaIdpSocial_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataOktaIdpSocial_IsTerraformDataSource(x interface{}) *bool {
+func DataOktaIdpSocial_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataOktaIdpSocial_IsTerraformDataSourceParameters(x); err != nil {
@@ -724,7 +723,7 @@ func DataOktaIdpSocial_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.dataOktaIdpSocial.DataOktaIdpSocial",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -732,7 +731,7 @@ func DataOktaIdpSocial_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataOktaIdpSocial_IsTerraformElement(x interface{}) *bool {
+func DataOktaIdpSocial_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataOktaIdpSocial_IsTerraformElementParameters(x); err != nil {
@@ -743,7 +742,7 @@ func DataOktaIdpSocial_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.dataOktaIdpSocial.DataOktaIdpSocial",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -761,27 +760,27 @@ func DataOktaIdpSocial_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataOktaIdpSocial) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataOktaIdpSocial) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataOktaIdpSocial) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataOktaIdpSocial) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -797,7 +796,7 @@ func (d *jsiiProxy_DataOktaIdpSocial) GetBooleanAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -813,7 +812,7 @@ func (d *jsiiProxy_DataOktaIdpSocial) GetBooleanMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -829,7 +828,7 @@ func (d *jsiiProxy_DataOktaIdpSocial) GetListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -845,7 +844,7 @@ func (d *jsiiProxy_DataOktaIdpSocial) GetNumberAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -861,7 +860,7 @@ func (d *jsiiProxy_DataOktaIdpSocial) GetNumberListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -877,7 +876,7 @@ func (d *jsiiProxy_DataOktaIdpSocial) GetNumberMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -893,7 +892,7 @@ func (d *jsiiProxy_DataOktaIdpSocial) GetStringAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -909,7 +908,7 @@ func (d *jsiiProxy_DataOktaIdpSocial) GetStringMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -925,7 +924,7 @@ func (d *jsiiProxy_DataOktaIdpSocial) InterpolationForAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -939,7 +938,7 @@ func (d *jsiiProxy_DataOktaIdpSocial) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -967,8 +966,8 @@ func (d *jsiiProxy_DataOktaIdpSocial) ResetOverrideLogicalId() {
 	)
 }
 
-func (d *jsiiProxy_DataOktaIdpSocial) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataOktaIdpSocial) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -980,8 +979,8 @@ func (d *jsiiProxy_DataOktaIdpSocial) SynthesizeAttributes() *map[string]interfa
 	return returns
 }
 
-func (d *jsiiProxy_DataOktaIdpSocial) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataOktaIdpSocial) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -993,8 +992,8 @@ func (d *jsiiProxy_DataOktaIdpSocial) SynthesizeHclAttributes() *map[string]inte
 	return returns
 }
 
-func (d *jsiiProxy_DataOktaIdpSocial) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataOktaIdpSocial) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1006,8 +1005,8 @@ func (d *jsiiProxy_DataOktaIdpSocial) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataOktaIdpSocial) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataOktaIdpSocial) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1032,8 +1031,8 @@ func (d *jsiiProxy_DataOktaIdpSocial) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataOktaIdpSocial) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataOktaIdpSocial) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1044,4 +1043,3 @@ func (d *jsiiProxy_DataOktaIdpSocial) ToTerraform() interface{} {
 
 	return returns
 }
-

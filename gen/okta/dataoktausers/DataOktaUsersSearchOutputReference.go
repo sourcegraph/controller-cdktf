@@ -15,9 +15,9 @@ type DataOktaUsersSearchOutputReference interface {
 	ComparisonInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type DataOktaUsersSearchOutputReference interface {
 	ExpressionInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -52,7 +52,7 @@ type DataOktaUsersSearchOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type DataOktaUsersSearchOutputReference interface {
 	ResetValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -112,8 +112,8 @@ func (j *jsiiProxy_DataOktaUsersSearchOutputReference) ComparisonInput() *string
 	return returns
 }
 
-func (j *jsiiProxy_DataOktaUsersSearchOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataOktaUsersSearchOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -172,8 +172,8 @@ func (j *jsiiProxy_DataOktaUsersSearchOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataOktaUsersSearchOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataOktaUsersSearchOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_DataOktaUsersSearchOutputReference) ValueInput() *string {
 	return returns
 }
 
-
 func NewDataOktaUsersSearchOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataOktaUsersSearchOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewDataOktaUsersSearchOutputReference(terraformResource cdktf.IInterpolatin
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.dataOktaUsers.DataOktaUsersSearchOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewDataOktaUsersSearchOutputReference_Override(d DataOktaUsersSearchOutputR
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.dataOktaUsers.DataOktaUsersSearchOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataOktaUsersSearchOutputReference)SetComparison(val *string) {
+func (j *jsiiProxy_DataOktaUsersSearchOutputReference) SetComparison(val *string) {
 	if err := j.validateSetComparisonParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_DataOktaUsersSearchOutputReference)SetComparison(val *string)
 	)
 }
 
-func (j *jsiiProxy_DataOktaUsersSearchOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataOktaUsersSearchOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_DataOktaUsersSearchOutputReference)SetComplexObjectIndex(val 
 	)
 }
 
-func (j *jsiiProxy_DataOktaUsersSearchOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataOktaUsersSearchOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_DataOktaUsersSearchOutputReference)SetComplexObjectIsFromSet(
 	)
 }
 
-func (j *jsiiProxy_DataOktaUsersSearchOutputReference)SetExpression(val *string) {
+func (j *jsiiProxy_DataOktaUsersSearchOutputReference) SetExpression(val *string) {
 	if err := j.validateSetExpressionParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_DataOktaUsersSearchOutputReference)SetExpression(val *string)
 	)
 }
 
-func (j *jsiiProxy_DataOktaUsersSearchOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataOktaUsersSearchOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_DataOktaUsersSearchOutputReference)SetInternalValue(val inter
 	)
 }
 
-func (j *jsiiProxy_DataOktaUsersSearchOutputReference)SetName(val *string) {
+func (j *jsiiProxy_DataOktaUsersSearchOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_DataOktaUsersSearchOutputReference)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOktaUsersSearchOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataOktaUsersSearchOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_DataOktaUsersSearchOutputReference)SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_DataOktaUsersSearchOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataOktaUsersSearchOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_DataOktaUsersSearchOutputReference)SetTerraformResource(val c
 	)
 }
 
-func (j *jsiiProxy_DataOktaUsersSearchOutputReference)SetValue(val *string) {
+func (j *jsiiProxy_DataOktaUsersSearchOutputReference) SetValue(val *string) {
 	if err := j.validateSetValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,16 +381,16 @@ func (d *jsiiProxy_DataOktaUsersSearchOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataOktaUsersSearchOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataOktaUsersSearchOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -407,7 +406,7 @@ func (d *jsiiProxy_DataOktaUsersSearchOutputReference) GetBooleanAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -423,7 +422,7 @@ func (d *jsiiProxy_DataOktaUsersSearchOutputReference) GetBooleanMapAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -439,7 +438,7 @@ func (d *jsiiProxy_DataOktaUsersSearchOutputReference) GetListAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -455,7 +454,7 @@ func (d *jsiiProxy_DataOktaUsersSearchOutputReference) GetNumberAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -471,7 +470,7 @@ func (d *jsiiProxy_DataOktaUsersSearchOutputReference) GetNumberListAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -487,7 +486,7 @@ func (d *jsiiProxy_DataOktaUsersSearchOutputReference) GetNumberMapAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func (d *jsiiProxy_DataOktaUsersSearchOutputReference) GetStringAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func (d *jsiiProxy_DataOktaUsersSearchOutputReference) GetStringMapAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func (d *jsiiProxy_DataOktaUsersSearchOutputReference) InterpolationForAttribute
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -587,16 +586,16 @@ func (d *jsiiProxy_DataOktaUsersSearchOutputReference) ResetValue() {
 	)
 }
 
-func (d *jsiiProxy_DataOktaUsersSearchOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataOktaUsersSearchOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (d *jsiiProxy_DataOktaUsersSearchOutputReference) ToString() *string {
 
 	return returns
 }
-

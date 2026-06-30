@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.appSwa.AppSwa",
-		reflect.TypeOf((*AppSwa)(nil)).Elem(),
+		reflect.TypeFor[AppSwa](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessibilityErrorRedirectUrl", GoGetter: "AccessibilityErrorRedirectUrl"},
 			_jsii_.MemberProperty{JsiiProperty: "accessibilityErrorRedirectUrlInput", GoGetter: "AccessibilityErrorRedirectUrlInput"},
@@ -134,7 +134,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userNameTemplateType", GoGetter: "UserNameTemplateType"},
 			_jsii_.MemberProperty{JsiiProperty: "userNameTemplateTypeInput", GoGetter: "UserNameTemplateTypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppSwa{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -142,15 +142,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.appSwa.AppSwaConfig",
-		reflect.TypeOf((*AppSwaConfig)(nil)).Elem(),
+		reflect.TypeFor[AppSwaConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.appSwa.AppSwaTimeouts",
-		reflect.TypeOf((*AppSwaTimeouts)(nil)).Elem(),
+		reflect.TypeFor[AppSwaTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.appSwa.AppSwaTimeoutsOutputReference",
-		reflect.TypeOf((*AppSwaTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppSwaTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -183,7 +183,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppSwaTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

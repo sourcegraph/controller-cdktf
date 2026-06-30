@@ -15,15 +15,15 @@ type PolicyRulePassword interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -77,18 +77,18 @@ type PolicyRulePassword interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Status() *string
 	SetStatus(val *string)
 	StatusInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	UsersExcluded() *[]*string
@@ -98,9 +98,9 @@ type PolicyRulePassword interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -118,7 +118,7 @@ type PolicyRulePassword interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -130,7 +130,7 @@ type PolicyRulePassword interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -151,17 +151,17 @@ type PolicyRulePassword interface {
 	ResetPriority()
 	ResetStatus()
 	ResetUsersExcluded()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for PolicyRulePassword
@@ -179,8 +179,8 @@ func (j *jsiiProxy_PolicyRulePassword) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_PolicyRulePassword) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyRulePassword) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -189,8 +189,8 @@ func (j *jsiiProxy_PolicyRulePassword) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PolicyRulePassword) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_PolicyRulePassword) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -199,8 +199,8 @@ func (j *jsiiProxy_PolicyRulePassword) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_PolicyRulePassword) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyRulePassword) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -479,8 +479,8 @@ func (j *jsiiProxy_PolicyRulePassword) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_PolicyRulePassword) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_PolicyRulePassword) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -489,8 +489,8 @@ func (j *jsiiProxy_PolicyRulePassword) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PolicyRulePassword) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyRulePassword) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -529,8 +529,8 @@ func (j *jsiiProxy_PolicyRulePassword) TerraformGeneratorMetadata() *cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_PolicyRulePassword) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_PolicyRulePassword) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -569,7 +569,6 @@ func (j *jsiiProxy_PolicyRulePassword) UsersExcludedInput() *[]*string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_rule_password okta_policy_rule_password} Resource.
 func NewPolicyRulePassword(scope constructs.Construct, id *string, config *PolicyRulePasswordConfig) PolicyRulePassword {
 	_init_.Initialize()
@@ -581,7 +580,7 @@ func NewPolicyRulePassword(scope constructs.Construct, id *string, config *Polic
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.policyRulePassword.PolicyRulePassword",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -594,12 +593,12 @@ func NewPolicyRulePassword_Override(p PolicyRulePassword, scope constructs.Const
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.policyRulePassword.PolicyRulePassword",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PolicyRulePassword)SetConnection(val interface{}) {
+func (j *jsiiProxy_PolicyRulePassword) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -610,7 +609,7 @@ func (j *jsiiProxy_PolicyRulePassword)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PolicyRulePassword)SetCount(val interface{}) {
+func (j *jsiiProxy_PolicyRulePassword) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -621,7 +620,7 @@ func (j *jsiiProxy_PolicyRulePassword)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PolicyRulePassword)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_PolicyRulePassword) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -629,7 +628,7 @@ func (j *jsiiProxy_PolicyRulePassword)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_PolicyRulePassword)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_PolicyRulePassword) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -637,7 +636,7 @@ func (j *jsiiProxy_PolicyRulePassword)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_PolicyRulePassword)SetId(val *string) {
+func (j *jsiiProxy_PolicyRulePassword) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -648,7 +647,7 @@ func (j *jsiiProxy_PolicyRulePassword)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PolicyRulePassword)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_PolicyRulePassword) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -659,7 +658,7 @@ func (j *jsiiProxy_PolicyRulePassword)SetLifecycle(val *cdktf.TerraformResourceL
 	)
 }
 
-func (j *jsiiProxy_PolicyRulePassword)SetName(val *string) {
+func (j *jsiiProxy_PolicyRulePassword) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -670,7 +669,7 @@ func (j *jsiiProxy_PolicyRulePassword)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PolicyRulePassword)SetNetworkConnection(val *string) {
+func (j *jsiiProxy_PolicyRulePassword) SetNetworkConnection(val *string) {
 	if err := j.validateSetNetworkConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -681,7 +680,7 @@ func (j *jsiiProxy_PolicyRulePassword)SetNetworkConnection(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PolicyRulePassword)SetNetworkExcludes(val *[]*string) {
+func (j *jsiiProxy_PolicyRulePassword) SetNetworkExcludes(val *[]*string) {
 	if err := j.validateSetNetworkExcludesParameters(val); err != nil {
 		panic(err)
 	}
@@ -692,7 +691,7 @@ func (j *jsiiProxy_PolicyRulePassword)SetNetworkExcludes(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_PolicyRulePassword)SetNetworkIncludes(val *[]*string) {
+func (j *jsiiProxy_PolicyRulePassword) SetNetworkIncludes(val *[]*string) {
 	if err := j.validateSetNetworkIncludesParameters(val); err != nil {
 		panic(err)
 	}
@@ -703,7 +702,7 @@ func (j *jsiiProxy_PolicyRulePassword)SetNetworkIncludes(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_PolicyRulePassword)SetPasswordChange(val *string) {
+func (j *jsiiProxy_PolicyRulePassword) SetPasswordChange(val *string) {
 	if err := j.validateSetPasswordChangeParameters(val); err != nil {
 		panic(err)
 	}
@@ -714,7 +713,7 @@ func (j *jsiiProxy_PolicyRulePassword)SetPasswordChange(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PolicyRulePassword)SetPasswordReset(val *string) {
+func (j *jsiiProxy_PolicyRulePassword) SetPasswordReset(val *string) {
 	if err := j.validateSetPasswordResetParameters(val); err != nil {
 		panic(err)
 	}
@@ -725,7 +724,7 @@ func (j *jsiiProxy_PolicyRulePassword)SetPasswordReset(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PolicyRulePassword)SetPasswordUnlock(val *string) {
+func (j *jsiiProxy_PolicyRulePassword) SetPasswordUnlock(val *string) {
 	if err := j.validateSetPasswordUnlockParameters(val); err != nil {
 		panic(err)
 	}
@@ -736,7 +735,7 @@ func (j *jsiiProxy_PolicyRulePassword)SetPasswordUnlock(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PolicyRulePassword)SetPolicyId(val *string) {
+func (j *jsiiProxy_PolicyRulePassword) SetPolicyId(val *string) {
 	if err := j.validateSetPolicyIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -747,7 +746,7 @@ func (j *jsiiProxy_PolicyRulePassword)SetPolicyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PolicyRulePassword)SetPriority(val *float64) {
+func (j *jsiiProxy_PolicyRulePassword) SetPriority(val *float64) {
 	if err := j.validateSetPriorityParameters(val); err != nil {
 		panic(err)
 	}
@@ -758,7 +757,7 @@ func (j *jsiiProxy_PolicyRulePassword)SetPriority(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_PolicyRulePassword)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_PolicyRulePassword) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -766,7 +765,7 @@ func (j *jsiiProxy_PolicyRulePassword)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_PolicyRulePassword)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_PolicyRulePassword) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -777,7 +776,7 @@ func (j *jsiiProxy_PolicyRulePassword)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PolicyRulePassword)SetStatus(val *string) {
+func (j *jsiiProxy_PolicyRulePassword) SetStatus(val *string) {
 	if err := j.validateSetStatusParameters(val); err != nil {
 		panic(err)
 	}
@@ -788,7 +787,7 @@ func (j *jsiiProxy_PolicyRulePassword)SetStatus(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PolicyRulePassword)SetUsersExcluded(val *[]*string) {
+func (j *jsiiProxy_PolicyRulePassword) SetUsersExcluded(val *[]*string) {
 	if err := j.validateSetUsersExcludedParameters(val); err != nil {
 		panic(err)
 	}
@@ -811,7 +810,7 @@ func PolicyRulePassword_GenerateConfigForImport(scope constructs.Construct, impo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.policyRulePassword.PolicyRulePassword",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -835,7 +834,7 @@ func PolicyRulePassword_GenerateConfigForImport(scope constructs.Construct, impo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func PolicyRulePassword_IsConstruct(x interface{}) *bool {
+func PolicyRulePassword_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePolicyRulePassword_IsConstructParameters(x); err != nil {
@@ -846,7 +845,7 @@ func PolicyRulePassword_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.policyRulePassword.PolicyRulePassword",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -854,7 +853,7 @@ func PolicyRulePassword_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func PolicyRulePassword_IsTerraformElement(x interface{}) *bool {
+func PolicyRulePassword_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePolicyRulePassword_IsTerraformElementParameters(x); err != nil {
@@ -865,7 +864,7 @@ func PolicyRulePassword_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.policyRulePassword.PolicyRulePassword",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -873,7 +872,7 @@ func PolicyRulePassword_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func PolicyRulePassword_IsTerraformResource(x interface{}) *bool {
+func PolicyRulePassword_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePolicyRulePassword_IsTerraformResourceParameters(x); err != nil {
@@ -884,7 +883,7 @@ func PolicyRulePassword_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.policyRulePassword.PolicyRulePassword",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -909,31 +908,31 @@ func (p *jsiiProxy_PolicyRulePassword) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (p *jsiiProxy_PolicyRulePassword) AddOverride(path *string, value interface{}) {
+func (p *jsiiProxy_PolicyRulePassword) AddOverride(path *string, value any) {
 	if err := p.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (p *jsiiProxy_PolicyRulePassword) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PolicyRulePassword) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -949,7 +948,7 @@ func (p *jsiiProxy_PolicyRulePassword) GetBooleanAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -965,7 +964,7 @@ func (p *jsiiProxy_PolicyRulePassword) GetBooleanMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -981,7 +980,7 @@ func (p *jsiiProxy_PolicyRulePassword) GetListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -997,7 +996,7 @@ func (p *jsiiProxy_PolicyRulePassword) GetNumberAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1013,7 +1012,7 @@ func (p *jsiiProxy_PolicyRulePassword) GetNumberListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1029,7 +1028,7 @@ func (p *jsiiProxy_PolicyRulePassword) GetNumberMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1045,7 +1044,7 @@ func (p *jsiiProxy_PolicyRulePassword) GetStringAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1061,15 +1060,15 @@ func (p *jsiiProxy_PolicyRulePassword) GetStringMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_PolicyRulePassword) HasResourceMove() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PolicyRulePassword) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1088,7 +1087,7 @@ func (p *jsiiProxy_PolicyRulePassword) ImportFrom(id *string, provider cdktf.Ter
 	_jsii_.InvokeVoid(
 		p,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1101,7 +1100,7 @@ func (p *jsiiProxy_PolicyRulePassword) InterpolationForAttribute(terraformAttrib
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1115,18 +1114,18 @@ func (p *jsiiProxy_PolicyRulePassword) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (p *jsiiProxy_PolicyRulePassword) MoveTo(moveTarget *string, index interface{}) {
+func (p *jsiiProxy_PolicyRulePassword) MoveTo(moveTarget *string, index any) {
 	if err := p.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1137,7 +1136,7 @@ func (p *jsiiProxy_PolicyRulePassword) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1148,7 +1147,7 @@ func (p *jsiiProxy_PolicyRulePassword) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1248,8 +1247,8 @@ func (p *jsiiProxy_PolicyRulePassword) ResetUsersExcluded() {
 	)
 }
 
-func (p *jsiiProxy_PolicyRulePassword) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_PolicyRulePassword) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -1261,8 +1260,8 @@ func (p *jsiiProxy_PolicyRulePassword) SynthesizeAttributes() *map[string]interf
 	return returns
 }
 
-func (p *jsiiProxy_PolicyRulePassword) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_PolicyRulePassword) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -1274,8 +1273,8 @@ func (p *jsiiProxy_PolicyRulePassword) SynthesizeHclAttributes() *map[string]int
 	return returns
 }
 
-func (p *jsiiProxy_PolicyRulePassword) ToHclTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PolicyRulePassword) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1287,8 +1286,8 @@ func (p *jsiiProxy_PolicyRulePassword) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_PolicyRulePassword) ToMetadata() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PolicyRulePassword) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1313,8 +1312,8 @@ func (p *jsiiProxy_PolicyRulePassword) ToString() *string {
 	return returns
 }
 
-func (p *jsiiProxy_PolicyRulePassword) ToTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PolicyRulePassword) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1325,4 +1324,3 @@ func (p *jsiiProxy_PolicyRulePassword) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (p *jsiiProxy_ProfileMappingMappingsOutputReference) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_ProfileMappingMappingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ProfileMappingMappingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ProfileMappingMappingsOutputReference) validateSetIdParameter
 	return nil
 }
 
-func (j *jsiiProxy_ProfileMappingMappingsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ProfileMappingMappingsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewProfileMappingMappingsOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

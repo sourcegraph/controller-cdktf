@@ -19,7 +19,7 @@ func (a *jsiiProxy_AdminRoleCustomAssignments) validateAddMoveTargetParameters(m
 	return nil
 }
 
-func (a *jsiiProxy_AdminRoleCustomAssignments) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_AdminRoleCustomAssignments) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_AdminRoleCustomAssignments) validateMoveFromIdParameters(id *
 	return nil
 }
 
-func (a *jsiiProxy_AdminRoleCustomAssignments) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_AdminRoleCustomAssignments) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateAdminRoleCustomAssignments_GenerateConfigForImportParameters(scope 
 	return nil
 }
 
-func validateAdminRoleCustomAssignments_IsConstructParameters(x interface{}) error {
+func validateAdminRoleCustomAssignments_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateAdminRoleCustomAssignments_IsConstructParameters(x interface{}) err
 	return nil
 }
 
-func validateAdminRoleCustomAssignments_IsTerraformElementParameters(x interface{}) error {
+func validateAdminRoleCustomAssignments_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateAdminRoleCustomAssignments_IsTerraformElementParameters(x interface
 	return nil
 }
 
-func validateAdminRoleCustomAssignments_IsTerraformResourceParameters(x interface{}) error {
+func validateAdminRoleCustomAssignments_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateAdminRoleCustomAssignments_IsTerraformResourceParameters(x interfac
 	return nil
 }
 
-func (j *jsiiProxy_AdminRoleCustomAssignments) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_AdminRoleCustomAssignments) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_AdminRoleCustomAssignments) validateSetConnectionParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_AdminRoleCustomAssignments) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_AdminRoleCustomAssignments) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -366,7 +366,7 @@ func (j *jsiiProxy_AdminRoleCustomAssignments) validateSetMembersParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_AdminRoleCustomAssignments) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_AdminRoleCustomAssignments) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -438,4 +438,3 @@ func validateNewAdminRoleCustomAssignmentsParameters(scope constructs.Construct,
 
 	return nil
 }
-

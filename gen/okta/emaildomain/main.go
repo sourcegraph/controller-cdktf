@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.emailDomain.EmailDomain",
-		reflect.TypeOf((*EmailDomain)(nil)).Elem(),
+		reflect.TypeFor[EmailDomain](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,7 +66,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userNameInput", GoGetter: "UserNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "validationStatus", GoGetter: "ValidationStatus"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EmailDomain{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -74,15 +74,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.emailDomain.EmailDomainConfig",
-		reflect.TypeOf((*EmailDomainConfig)(nil)).Elem(),
+		reflect.TypeFor[EmailDomainConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.emailDomain.EmailDomainDnsValidationRecords",
-		reflect.TypeOf((*EmailDomainDnsValidationRecords)(nil)).Elem(),
+		reflect.TypeFor[EmailDomainDnsValidationRecords](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.emailDomain.EmailDomainDnsValidationRecordsList",
-		reflect.TypeOf((*EmailDomainDnsValidationRecordsList)(nil)).Elem(),
+		reflect.TypeFor[EmailDomainDnsValidationRecordsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -95,7 +95,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EmailDomainDnsValidationRecordsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -103,7 +103,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.emailDomain.EmailDomainDnsValidationRecordsOutputReference",
-		reflect.TypeOf((*EmailDomainDnsValidationRecordsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EmailDomainDnsValidationRecordsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -131,7 +131,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EmailDomainDnsValidationRecordsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.networkZone.NetworkZone",
-		reflect.TypeOf((*NetworkZone)(nil)).Elem(),
+		reflect.TypeFor[NetworkZone](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -90,7 +90,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "usage", GoGetter: "Usage"},
 			_jsii_.MemberProperty{JsiiProperty: "usageInput", GoGetter: "UsageInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkZone{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -98,6 +98,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.networkZone.NetworkZoneConfig",
-		reflect.TypeOf((*NetworkZoneConfig)(nil)).Elem(),
+		reflect.TypeFor[NetworkZoneConfig](),
 	)
 }

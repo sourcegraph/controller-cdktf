@@ -34,7 +34,7 @@ func (g *jsiiProxy_GroupSchemaPropertyArrayOneOfList) validateResolveParameters(
 	return nil
 }
 
-func (j *jsiiProxy_GroupSchemaPropertyArrayOneOfList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GroupSchemaPropertyArrayOneOfList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGroupSchemaPropertyArrayOneOfListParameters(terraformResource cd
 
 	return nil
 }
-

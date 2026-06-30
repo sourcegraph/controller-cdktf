@@ -106,7 +106,7 @@ func (j *jsiiProxy_LogStreamSettingsOutputReference) validateSetAccountIdParamet
 	return nil
 }
 
-func (j *jsiiProxy_LogStreamSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LogStreamSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -195,7 +195,7 @@ func (j *jsiiProxy_LogStreamSettingsOutputReference) validateSetHostParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_LogStreamSettingsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LogStreamSettingsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -262,4 +262,3 @@ func validateNewLogStreamSettingsOutputReferenceParameters(terraformResource cdk
 
 	return nil
 }
-

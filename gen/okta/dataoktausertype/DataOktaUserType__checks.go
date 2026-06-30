@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataOktaUserType) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataOktaUserType) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataOktaUserType_GenerateConfigForImportParameters(scope constructs
 	return nil
 }
 
-func validateDataOktaUserType_IsConstructParameters(x interface{}) error {
+func validateDataOktaUserType_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataOktaUserType_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDataOktaUserType_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataOktaUserType_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataOktaUserType_IsTerraformDataSourceParameters(x interface{}) err
 	return nil
 }
 
-func validateDataOktaUserType_IsTerraformElementParameters(x interface{}) error {
+func validateDataOktaUserType_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataOktaUserType_IsTerraformElementParameters(x interface{}) error 
 	return nil
 }
 
-func (j *jsiiProxy_DataOktaUserType) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataOktaUserType) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -250,4 +250,3 @@ func validateNewDataOktaUserTypeParameters(scope constructs.Construct, id *strin
 
 	return nil
 }
-

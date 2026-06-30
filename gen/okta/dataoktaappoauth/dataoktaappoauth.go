@@ -12,9 +12,9 @@ import (
 // Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/app_oauth okta_app_oauth}.
 type DataOktaAppOauth interface {
 	cdktf.TerraformDataSource
-	ActiveOnly() interface{}
-	SetActiveOnly(val interface{})
-	ActiveOnlyInput() interface{}
+	ActiveOnly() any
+	SetActiveOnly(val any)
+	ActiveOnlyInput() any
 	AutoSubmitToolbar() cdktf.IResolvable
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -22,11 +22,11 @@ type DataOktaAppOauth interface {
 	ClientSecret() *string
 	ClientUri() *string
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -70,28 +70,28 @@ type DataOktaAppOauth interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RedirectUris() *[]*string
 	ResponseTypes() *[]*string
-	SkipGroups() interface{}
-	SetSkipGroups(val interface{})
-	SkipGroupsInput() interface{}
-	SkipUsers() interface{}
-	SetSkipUsers(val interface{})
-	SkipUsersInput() interface{}
+	SkipGroups() any
+	SetSkipGroups(val any)
+	SkipGroupsInput() any
+	SkipUsers() any
+	SetSkipUsers(val any)
+	SkipUsersInput() any
 	Status() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Type() *string
 	WildcardRedirect() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -122,18 +122,18 @@ type DataOktaAppOauth interface {
 	ResetOverrideLogicalId()
 	ResetSkipGroups()
 	ResetSkipUsers()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataOktaAppOauth
@@ -141,8 +141,8 @@ type jsiiProxy_DataOktaAppOauth struct {
 	internal.Type__cdktfTerraformDataSource
 }
 
-func (j *jsiiProxy_DataOktaAppOauth) ActiveOnly() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataOktaAppOauth) ActiveOnly() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"activeOnly",
@@ -151,8 +151,8 @@ func (j *jsiiProxy_DataOktaAppOauth) ActiveOnly() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataOktaAppOauth) ActiveOnlyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataOktaAppOauth) ActiveOnlyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"activeOnlyInput",
@@ -211,8 +211,8 @@ func (j *jsiiProxy_DataOktaAppOauth) ClientUri() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataOktaAppOauth) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataOktaAppOauth) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -221,8 +221,8 @@ func (j *jsiiProxy_DataOktaAppOauth) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_DataOktaAppOauth) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataOktaAppOauth) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -471,8 +471,8 @@ func (j *jsiiProxy_DataOktaAppOauth) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataOktaAppOauth) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataOktaAppOauth) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -501,8 +501,8 @@ func (j *jsiiProxy_DataOktaAppOauth) ResponseTypes() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataOktaAppOauth) SkipGroups() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataOktaAppOauth) SkipGroups() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"skipGroups",
@@ -511,8 +511,8 @@ func (j *jsiiProxy_DataOktaAppOauth) SkipGroups() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataOktaAppOauth) SkipGroupsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataOktaAppOauth) SkipGroupsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"skipGroupsInput",
@@ -521,8 +521,8 @@ func (j *jsiiProxy_DataOktaAppOauth) SkipGroupsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataOktaAppOauth) SkipUsers() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataOktaAppOauth) SkipUsers() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"skipUsers",
@@ -531,8 +531,8 @@ func (j *jsiiProxy_DataOktaAppOauth) SkipUsers() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataOktaAppOauth) SkipUsersInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataOktaAppOauth) SkipUsersInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"skipUsersInput",
@@ -561,8 +561,8 @@ func (j *jsiiProxy_DataOktaAppOauth) TerraformGeneratorMetadata() *cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_DataOktaAppOauth) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataOktaAppOauth) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -601,7 +601,6 @@ func (j *jsiiProxy_DataOktaAppOauth) WildcardRedirect() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/app_oauth okta_app_oauth} Data Source.
 func NewDataOktaAppOauth(scope constructs.Construct, id *string, config *DataOktaAppOauthConfig) DataOktaAppOauth {
 	_init_.Initialize()
@@ -613,7 +612,7 @@ func NewDataOktaAppOauth(scope constructs.Construct, id *string, config *DataOkt
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.dataOktaAppOauth.DataOktaAppOauth",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -626,12 +625,12 @@ func NewDataOktaAppOauth_Override(d DataOktaAppOauth, scope constructs.Construct
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.dataOktaAppOauth.DataOktaAppOauth",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataOktaAppOauth)SetActiveOnly(val interface{}) {
+func (j *jsiiProxy_DataOktaAppOauth) SetActiveOnly(val any) {
 	if err := j.validateSetActiveOnlyParameters(val); err != nil {
 		panic(err)
 	}
@@ -642,7 +641,7 @@ func (j *jsiiProxy_DataOktaAppOauth)SetActiveOnly(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataOktaAppOauth)SetCount(val interface{}) {
+func (j *jsiiProxy_DataOktaAppOauth) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -653,7 +652,7 @@ func (j *jsiiProxy_DataOktaAppOauth)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataOktaAppOauth)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataOktaAppOauth) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -661,7 +660,7 @@ func (j *jsiiProxy_DataOktaAppOauth)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataOktaAppOauth)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataOktaAppOauth) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -669,7 +668,7 @@ func (j *jsiiProxy_DataOktaAppOauth)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DataOktaAppOauth)SetId(val *string) {
+func (j *jsiiProxy_DataOktaAppOauth) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -680,7 +679,7 @@ func (j *jsiiProxy_DataOktaAppOauth)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOktaAppOauth)SetLabel(val *string) {
+func (j *jsiiProxy_DataOktaAppOauth) SetLabel(val *string) {
 	if err := j.validateSetLabelParameters(val); err != nil {
 		panic(err)
 	}
@@ -691,7 +690,7 @@ func (j *jsiiProxy_DataOktaAppOauth)SetLabel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOktaAppOauth)SetLabelPrefix(val *string) {
+func (j *jsiiProxy_DataOktaAppOauth) SetLabelPrefix(val *string) {
 	if err := j.validateSetLabelPrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -702,7 +701,7 @@ func (j *jsiiProxy_DataOktaAppOauth)SetLabelPrefix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOktaAppOauth)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataOktaAppOauth) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -713,7 +712,7 @@ func (j *jsiiProxy_DataOktaAppOauth)SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_DataOktaAppOauth)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataOktaAppOauth) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -721,7 +720,7 @@ func (j *jsiiProxy_DataOktaAppOauth)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_DataOktaAppOauth)SetSkipGroups(val interface{}) {
+func (j *jsiiProxy_DataOktaAppOauth) SetSkipGroups(val any) {
 	if err := j.validateSetSkipGroupsParameters(val); err != nil {
 		panic(err)
 	}
@@ -732,7 +731,7 @@ func (j *jsiiProxy_DataOktaAppOauth)SetSkipGroups(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataOktaAppOauth)SetSkipUsers(val interface{}) {
+func (j *jsiiProxy_DataOktaAppOauth) SetSkipUsers(val any) {
 	if err := j.validateSetSkipUsersParameters(val); err != nil {
 		panic(err)
 	}
@@ -755,7 +754,7 @@ func DataOktaAppOauth_GenerateConfigForImport(scope constructs.Construct, import
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.dataOktaAppOauth.DataOktaAppOauth",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -779,7 +778,7 @@ func DataOktaAppOauth_GenerateConfigForImport(scope constructs.Construct, import
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataOktaAppOauth_IsConstruct(x interface{}) *bool {
+func DataOktaAppOauth_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataOktaAppOauth_IsConstructParameters(x); err != nil {
@@ -790,7 +789,7 @@ func DataOktaAppOauth_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.dataOktaAppOauth.DataOktaAppOauth",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -798,7 +797,7 @@ func DataOktaAppOauth_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataOktaAppOauth_IsTerraformDataSource(x interface{}) *bool {
+func DataOktaAppOauth_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataOktaAppOauth_IsTerraformDataSourceParameters(x); err != nil {
@@ -809,7 +808,7 @@ func DataOktaAppOauth_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.dataOktaAppOauth.DataOktaAppOauth",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -817,7 +816,7 @@ func DataOktaAppOauth_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataOktaAppOauth_IsTerraformElement(x interface{}) *bool {
+func DataOktaAppOauth_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataOktaAppOauth_IsTerraformElementParameters(x); err != nil {
@@ -828,7 +827,7 @@ func DataOktaAppOauth_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.dataOktaAppOauth.DataOktaAppOauth",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -846,27 +845,27 @@ func DataOktaAppOauth_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataOktaAppOauth) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataOktaAppOauth) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataOktaAppOauth) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataOktaAppOauth) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -882,7 +881,7 @@ func (d *jsiiProxy_DataOktaAppOauth) GetBooleanAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -898,7 +897,7 @@ func (d *jsiiProxy_DataOktaAppOauth) GetBooleanMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -914,7 +913,7 @@ func (d *jsiiProxy_DataOktaAppOauth) GetListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -930,7 +929,7 @@ func (d *jsiiProxy_DataOktaAppOauth) GetNumberAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -946,7 +945,7 @@ func (d *jsiiProxy_DataOktaAppOauth) GetNumberListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -962,7 +961,7 @@ func (d *jsiiProxy_DataOktaAppOauth) GetNumberMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -978,7 +977,7 @@ func (d *jsiiProxy_DataOktaAppOauth) GetStringAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -994,7 +993,7 @@ func (d *jsiiProxy_DataOktaAppOauth) GetStringMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1010,7 +1009,7 @@ func (d *jsiiProxy_DataOktaAppOauth) InterpolationForAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1024,7 +1023,7 @@ func (d *jsiiProxy_DataOktaAppOauth) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1084,8 +1083,8 @@ func (d *jsiiProxy_DataOktaAppOauth) ResetSkipUsers() {
 	)
 }
 
-func (d *jsiiProxy_DataOktaAppOauth) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataOktaAppOauth) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1097,8 +1096,8 @@ func (d *jsiiProxy_DataOktaAppOauth) SynthesizeAttributes() *map[string]interfac
 	return returns
 }
 
-func (d *jsiiProxy_DataOktaAppOauth) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataOktaAppOauth) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1110,8 +1109,8 @@ func (d *jsiiProxy_DataOktaAppOauth) SynthesizeHclAttributes() *map[string]inter
 	return returns
 }
 
-func (d *jsiiProxy_DataOktaAppOauth) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataOktaAppOauth) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1123,8 +1122,8 @@ func (d *jsiiProxy_DataOktaAppOauth) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataOktaAppOauth) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataOktaAppOauth) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1149,8 +1148,8 @@ func (d *jsiiProxy_DataOktaAppOauth) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataOktaAppOauth) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataOktaAppOauth) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1161,4 +1160,3 @@ func (d *jsiiProxy_DataOktaAppOauth) ToTerraform() interface{} {
 
 	return returns
 }
-
