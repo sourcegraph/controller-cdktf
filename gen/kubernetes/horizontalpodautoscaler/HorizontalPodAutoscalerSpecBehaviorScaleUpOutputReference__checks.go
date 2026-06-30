@@ -90,7 +90,7 @@ func (h *jsiiProxy_HorizontalPodAutoscalerSpecBehaviorScaleUpOutputReference) va
 	return nil
 }
 
-func (h *jsiiProxy_HorizontalPodAutoscalerSpecBehaviorScaleUpOutputReference) validatePutPolicyParameters(value interface{}) error {
+func (h *jsiiProxy_HorizontalPodAutoscalerSpecBehaviorScaleUpOutputReference) validatePutPolicyParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (h *jsiiProxy_HorizontalPodAutoscalerSpecBehaviorScaleUpOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscalerSpecBehaviorScaleUpOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_HorizontalPodAutoscalerSpecBehaviorScaleUpOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_HorizontalPodAutoscalerSpecBehaviorScaleUpOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscalerSpecBehaviorScaleUpOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_HorizontalPodAutoscalerSpecBehaviorScaleUpOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -269,4 +269,3 @@ func validateNewHorizontalPodAutoscalerSpecBehaviorScaleUpOutputReferenceParamet
 
 	return nil
 }
-

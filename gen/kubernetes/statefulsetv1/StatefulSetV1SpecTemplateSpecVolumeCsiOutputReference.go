@@ -12,9 +12,9 @@ type StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -37,9 +37,9 @@ type StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference interface {
 	SetInternalValue(val *StatefulSetV1SpecTemplateSpecVolumeCsi)
 	NodePublishSecretRef() StatefulSetV1SpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference
 	NodePublishSecretRefInput() *StatefulSetV1SpecTemplateSpecVolumeCsiNodePublishSecretRef
-	ReadOnly() interface{}
-	SetReadOnly(val interface{})
-	ReadOnlyInput() interface{}
+	ReadOnly() any
+	SetReadOnly(val any)
+	ReadOnlyInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -54,7 +54,7 @@ type StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -82,7 +82,7 @@ type StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference interface {
 	ResetVolumeAttributes()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -95,8 +95,8 @@ type jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -205,8 +205,8 @@ func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference) NodePu
 	return returns
 }
 
-func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference) ReadOnly() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference) ReadOnly() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"readOnly",
@@ -215,8 +215,8 @@ func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference) ReadOn
 	return returns
 }
 
-func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference) ReadOnlyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference) ReadOnlyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"readOnlyInput",
@@ -265,7 +265,6 @@ func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference) Volume
 	return returns
 }
 
-
 func NewStatefulSetV1SpecTemplateSpecVolumeCsiOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference {
 	_init_.Initialize()
 
@@ -276,7 +275,7 @@ func NewStatefulSetV1SpecTemplateSpecVolumeCsiOutputReference(terraformResource 
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -288,12 +287,12 @@ func NewStatefulSetV1SpecTemplateSpecVolumeCsiOutputReference_Override(s Statefu
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		s,
 	)
 }
 
-func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -304,7 +303,7 @@ func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -315,7 +314,7 @@ func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference)SetDriver(val *string) {
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference) SetDriver(val *string) {
 	if err := j.validateSetDriverParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,7 +325,7 @@ func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference)SetDriv
 	)
 }
 
-func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference)SetFsType(val *string) {
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference) SetFsType(val *string) {
 	if err := j.validateSetFsTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -337,7 +336,7 @@ func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference)SetFsTy
 	)
 }
 
-func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference)SetInternalValue(val *StatefulSetV1SpecTemplateSpecVolumeCsi) {
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference) SetInternalValue(val *StatefulSetV1SpecTemplateSpecVolumeCsi) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -348,7 +347,7 @@ func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference)SetInte
 	)
 }
 
-func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference)SetReadOnly(val interface{}) {
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference) SetReadOnly(val any) {
 	if err := j.validateSetReadOnlyParameters(val); err != nil {
 		panic(err)
 	}
@@ -359,7 +358,7 @@ func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference)SetRead
 	)
 }
 
-func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -370,7 +369,7 @@ func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -381,7 +380,7 @@ func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference)SetVolumeAttributes(val *map[string]*string) {
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference) SetVolumeAttributes(val *map[string]*string) {
 	if err := j.validateSetVolumeAttributesParameters(val); err != nil {
 		panic(err)
 	}
@@ -405,16 +404,16 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference) Comput
 	return returns
 }
 
-func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -430,7 +429,7 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference) GetBoo
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -446,7 +445,7 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference) GetBoo
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -462,7 +461,7 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference) GetLis
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference) GetNum
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -494,7 +493,7 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference) GetNum
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -510,7 +509,7 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference) GetNum
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -526,7 +525,7 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference) GetStr
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -542,7 +541,7 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference) GetStr
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -571,7 +570,7 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference) Interp
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -585,7 +584,7 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference) PutNod
 	_jsii_.InvokeVoid(
 		s,
 		"putNodePublishSecretRef",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -621,16 +620,16 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference) ResetV
 	)
 }
 
-func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -649,4 +648,3 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference) ToStri
 
 	return returns
 }
-

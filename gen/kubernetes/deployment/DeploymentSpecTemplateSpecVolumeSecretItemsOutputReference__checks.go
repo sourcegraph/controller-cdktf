@@ -98,7 +98,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeSecretItemsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeSecretItemsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeSecretItemsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeSecretItemsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeSecretItemsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeSecretItemsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewDeploymentSpecTemplateSpecVolumeSecretItemsOutputReferenceParame
 
 	return nil
 }
-

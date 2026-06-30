@@ -34,7 +34,7 @@ func (p *jsiiProxy_PodV1SpecVolumeList) validateResolveParameters(_context cdktf
 	return nil
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PodV1SpecVolumeList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewPodV1SpecVolumeListParameters(terraformResource cdktf.IInterpola
 
 	return nil
 }
-

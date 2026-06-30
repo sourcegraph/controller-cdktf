@@ -15,9 +15,9 @@ type ClusterRoleRuleOutputReference interface {
 	ApiGroupsInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,8 +30,8 @@ type ClusterRoleRuleOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	NonResourceUrls() *[]*string
 	SetNonResourceUrls(val *[]*string)
 	NonResourceUrlsInput() *[]*string
@@ -55,7 +55,7 @@ type ClusterRoleRuleOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -82,7 +82,7 @@ type ClusterRoleRuleOutputReference interface {
 	ResetResources()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -115,8 +115,8 @@ func (j *jsiiProxy_ClusterRoleRuleOutputReference) ApiGroupsInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_ClusterRoleRuleOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ClusterRoleRuleOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -155,8 +155,8 @@ func (j *jsiiProxy_ClusterRoleRuleOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ClusterRoleRuleOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ClusterRoleRuleOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -265,7 +265,6 @@ func (j *jsiiProxy_ClusterRoleRuleOutputReference) VerbsInput() *[]*string {
 	return returns
 }
 
-
 func NewClusterRoleRuleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ClusterRoleRuleOutputReference {
 	_init_.Initialize()
 
@@ -276,7 +275,7 @@ func NewClusterRoleRuleOutputReference(terraformResource cdktf.IInterpolatingPar
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.clusterRole.ClusterRoleRuleOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -288,12 +287,12 @@ func NewClusterRoleRuleOutputReference_Override(c ClusterRoleRuleOutputReference
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.clusterRole.ClusterRoleRuleOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ClusterRoleRuleOutputReference)SetApiGroups(val *[]*string) {
+func (j *jsiiProxy_ClusterRoleRuleOutputReference) SetApiGroups(val *[]*string) {
 	if err := j.validateSetApiGroupsParameters(val); err != nil {
 		panic(err)
 	}
@@ -304,7 +303,7 @@ func (j *jsiiProxy_ClusterRoleRuleOutputReference)SetApiGroups(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ClusterRoleRuleOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ClusterRoleRuleOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -315,7 +314,7 @@ func (j *jsiiProxy_ClusterRoleRuleOutputReference)SetComplexObjectIndex(val inte
 	)
 }
 
-func (j *jsiiProxy_ClusterRoleRuleOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ClusterRoleRuleOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,7 +325,7 @@ func (j *jsiiProxy_ClusterRoleRuleOutputReference)SetComplexObjectIsFromSet(val 
 	)
 }
 
-func (j *jsiiProxy_ClusterRoleRuleOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ClusterRoleRuleOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -337,7 +336,7 @@ func (j *jsiiProxy_ClusterRoleRuleOutputReference)SetInternalValue(val interface
 	)
 }
 
-func (j *jsiiProxy_ClusterRoleRuleOutputReference)SetNonResourceUrls(val *[]*string) {
+func (j *jsiiProxy_ClusterRoleRuleOutputReference) SetNonResourceUrls(val *[]*string) {
 	if err := j.validateSetNonResourceUrlsParameters(val); err != nil {
 		panic(err)
 	}
@@ -348,7 +347,7 @@ func (j *jsiiProxy_ClusterRoleRuleOutputReference)SetNonResourceUrls(val *[]*str
 	)
 }
 
-func (j *jsiiProxy_ClusterRoleRuleOutputReference)SetResourceNames(val *[]*string) {
+func (j *jsiiProxy_ClusterRoleRuleOutputReference) SetResourceNames(val *[]*string) {
 	if err := j.validateSetResourceNamesParameters(val); err != nil {
 		panic(err)
 	}
@@ -359,7 +358,7 @@ func (j *jsiiProxy_ClusterRoleRuleOutputReference)SetResourceNames(val *[]*strin
 	)
 }
 
-func (j *jsiiProxy_ClusterRoleRuleOutputReference)SetResources(val *[]*string) {
+func (j *jsiiProxy_ClusterRoleRuleOutputReference) SetResources(val *[]*string) {
 	if err := j.validateSetResourcesParameters(val); err != nil {
 		panic(err)
 	}
@@ -370,7 +369,7 @@ func (j *jsiiProxy_ClusterRoleRuleOutputReference)SetResources(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ClusterRoleRuleOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ClusterRoleRuleOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -381,7 +380,7 @@ func (j *jsiiProxy_ClusterRoleRuleOutputReference)SetTerraformAttribute(val *str
 	)
 }
 
-func (j *jsiiProxy_ClusterRoleRuleOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ClusterRoleRuleOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -392,7 +391,7 @@ func (j *jsiiProxy_ClusterRoleRuleOutputReference)SetTerraformResource(val cdktf
 	)
 }
 
-func (j *jsiiProxy_ClusterRoleRuleOutputReference)SetVerbs(val *[]*string) {
+func (j *jsiiProxy_ClusterRoleRuleOutputReference) SetVerbs(val *[]*string) {
 	if err := j.validateSetVerbsParameters(val); err != nil {
 		panic(err)
 	}
@@ -416,16 +415,16 @@ func (c *jsiiProxy_ClusterRoleRuleOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (c *jsiiProxy_ClusterRoleRuleOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ClusterRoleRuleOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -441,7 +440,7 @@ func (c *jsiiProxy_ClusterRoleRuleOutputReference) GetBooleanAttribute(terraform
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -457,7 +456,7 @@ func (c *jsiiProxy_ClusterRoleRuleOutputReference) GetBooleanMapAttribute(terraf
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -473,7 +472,7 @@ func (c *jsiiProxy_ClusterRoleRuleOutputReference) GetListAttribute(terraformAtt
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -489,7 +488,7 @@ func (c *jsiiProxy_ClusterRoleRuleOutputReference) GetNumberAttribute(terraformA
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -505,7 +504,7 @@ func (c *jsiiProxy_ClusterRoleRuleOutputReference) GetNumberListAttribute(terraf
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -521,7 +520,7 @@ func (c *jsiiProxy_ClusterRoleRuleOutputReference) GetNumberMapAttribute(terrafo
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -537,7 +536,7 @@ func (c *jsiiProxy_ClusterRoleRuleOutputReference) GetStringAttribute(terraformA
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -553,7 +552,7 @@ func (c *jsiiProxy_ClusterRoleRuleOutputReference) GetStringMapAttribute(terrafo
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -582,7 +581,7 @@ func (c *jsiiProxy_ClusterRoleRuleOutputReference) InterpolationForAttribute(pro
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -621,16 +620,16 @@ func (c *jsiiProxy_ClusterRoleRuleOutputReference) ResetResources() {
 	)
 }
 
-func (c *jsiiProxy_ClusterRoleRuleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ClusterRoleRuleOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -649,4 +648,3 @@ func (c *jsiiProxy_ClusterRoleRuleOutputReference) ToString() *string {
 
 	return returns
 }
-

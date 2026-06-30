@@ -98,7 +98,7 @@ func (m *jsiiProxy_ManifestTimeoutsOutputReference) validateResolveParameters(_c
 	return nil
 }
 
-func (j *jsiiProxy_ManifestTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ManifestTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewManifestTimeoutsOutputReferenceParameters(terraformResource cdkt
 
 	return nil
 }
-

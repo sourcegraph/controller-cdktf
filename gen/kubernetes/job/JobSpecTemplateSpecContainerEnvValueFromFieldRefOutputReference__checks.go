@@ -106,7 +106,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerEnvValueFromFieldRefOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecContainerEnvValueFromFieldRefOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecContainerEnvValueFromFieldRefOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewJobSpecTemplateSpecContainerEnvValueFromFieldRefOutputReferenceP
 
 	return nil
 }
-

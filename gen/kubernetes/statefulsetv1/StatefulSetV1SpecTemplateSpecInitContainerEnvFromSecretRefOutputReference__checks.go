@@ -98,7 +98,7 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerEnvFromSecretRefOut
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerEnvFromSecretRefOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerEnvFromSecretRefOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerEnvFromSecretRefOut
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerEnvFromSecretRefOutputReference) validateSetOptionalParameters(val interface{}) error {
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerEnvFromSecretRefOutputReference) validateSetOptionalParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -226,4 +226,3 @@ func validateNewStatefulSetV1SpecTemplateSpecInitContainerEnvFromSecretRefOutput
 
 	return nil
 }
-

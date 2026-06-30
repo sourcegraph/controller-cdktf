@@ -90,7 +90,7 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerLivenessProbe
 	return nil
 }
 
-func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerLivenessProbeHttpGetOutputReference) validatePutHttpHeaderParameters(value interface{}) error {
+func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerLivenessProbeHttpGetOutputReference) validatePutHttpHeaderParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerLivenessProbe
 	return nil
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerLivenessProbeHttpGetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerLivenessProbeHttpGetOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -261,4 +261,3 @@ func validateNewReplicationControllerV1SpecTemplateSpecContainerLivenessProbeHtt
 
 	return nil
 }
-

@@ -106,7 +106,7 @@ func (j *jsiiProxy_PriorityClassMetadataOutputReference) validateSetAnnotationsP
 	return nil
 }
 
-func (j *jsiiProxy_PriorityClassMetadataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PriorityClassMetadataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewPriorityClassMetadataOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

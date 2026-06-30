@@ -90,7 +90,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOutputReference) validateInterp
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOutputReference) validatePutOptionParameters(value interface{}) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOutputReference) validatePutOptionParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -245,4 +245,3 @@ func validateNewJobV1SpecTemplateSpecDnsConfigOutputReferenceParameters(terrafor
 
 	return nil
 }
-

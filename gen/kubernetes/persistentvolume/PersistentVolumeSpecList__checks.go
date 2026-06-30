@@ -34,7 +34,7 @@ func (p *jsiiProxy_PersistentVolumeSpecList) validateResolveParameters(_context 
 	return nil
 }
 
-func (j *jsiiProxy_PersistentVolumeSpecList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PersistentVolumeSpecList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewPersistentVolumeSpecListParameters(terraformResource cdktf.IInte
 
 	return nil
 }
-

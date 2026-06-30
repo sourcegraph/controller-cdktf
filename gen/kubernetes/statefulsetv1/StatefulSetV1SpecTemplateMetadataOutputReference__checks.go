@@ -106,7 +106,7 @@ func (j *jsiiProxy_StatefulSetV1SpecTemplateMetadataOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetV1SpecTemplateMetadataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StatefulSetV1SpecTemplateMetadataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewStatefulSetV1SpecTemplateMetadataOutputReferenceParameters(terra
 
 	return nil
 }
-

@@ -15,9 +15,9 @@ type IngressClassMetadataOutputReference interface {
 	AnnotationsInput() *map[string]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -55,7 +55,7 @@ type IngressClassMetadataOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -82,7 +82,7 @@ type IngressClassMetadataOutputReference interface {
 	ResetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -115,8 +115,8 @@ func (j *jsiiProxy_IngressClassMetadataOutputReference) AnnotationsInput() *map[
 	return returns
 }
 
-func (j *jsiiProxy_IngressClassMetadataOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IngressClassMetadataOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -275,7 +275,6 @@ func (j *jsiiProxy_IngressClassMetadataOutputReference) Uid() *string {
 	return returns
 }
 
-
 func NewIngressClassMetadataOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) IngressClassMetadataOutputReference {
 	_init_.Initialize()
 
@@ -286,7 +285,7 @@ func NewIngressClassMetadataOutputReference(terraformResource cdktf.IInterpolati
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.ingressClass.IngressClassMetadataOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -298,12 +297,12 @@ func NewIngressClassMetadataOutputReference_Override(i IngressClassMetadataOutpu
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.ingressClass.IngressClassMetadataOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IngressClassMetadataOutputReference)SetAnnotations(val *map[string]*string) {
+func (j *jsiiProxy_IngressClassMetadataOutputReference) SetAnnotations(val *map[string]*string) {
 	if err := j.validateSetAnnotationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_IngressClassMetadataOutputReference)SetAnnotations(val *map[s
 	)
 }
 
-func (j *jsiiProxy_IngressClassMetadataOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_IngressClassMetadataOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_IngressClassMetadataOutputReference)SetComplexObjectIndex(val
 	)
 }
 
-func (j *jsiiProxy_IngressClassMetadataOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_IngressClassMetadataOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_IngressClassMetadataOutputReference)SetComplexObjectIsFromSet
 	)
 }
 
-func (j *jsiiProxy_IngressClassMetadataOutputReference)SetGenerateName(val *string) {
+func (j *jsiiProxy_IngressClassMetadataOutputReference) SetGenerateName(val *string) {
 	if err := j.validateSetGenerateNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_IngressClassMetadataOutputReference)SetGenerateName(val *stri
 	)
 }
 
-func (j *jsiiProxy_IngressClassMetadataOutputReference)SetInternalValue(val *IngressClassMetadata) {
+func (j *jsiiProxy_IngressClassMetadataOutputReference) SetInternalValue(val *IngressClassMetadata) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_IngressClassMetadataOutputReference)SetInternalValue(val *Ing
 	)
 }
 
-func (j *jsiiProxy_IngressClassMetadataOutputReference)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_IngressClassMetadataOutputReference) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -369,7 +368,7 @@ func (j *jsiiProxy_IngressClassMetadataOutputReference)SetLabels(val *map[string
 	)
 }
 
-func (j *jsiiProxy_IngressClassMetadataOutputReference)SetName(val *string) {
+func (j *jsiiProxy_IngressClassMetadataOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -380,7 +379,7 @@ func (j *jsiiProxy_IngressClassMetadataOutputReference)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IngressClassMetadataOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_IngressClassMetadataOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -391,7 +390,7 @@ func (j *jsiiProxy_IngressClassMetadataOutputReference)SetTerraformAttribute(val
 	)
 }
 
-func (j *jsiiProxy_IngressClassMetadataOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IngressClassMetadataOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -415,16 +414,16 @@ func (i *jsiiProxy_IngressClassMetadataOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (i *jsiiProxy_IngressClassMetadataOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IngressClassMetadataOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -440,7 +439,7 @@ func (i *jsiiProxy_IngressClassMetadataOutputReference) GetBooleanAttribute(terr
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -456,7 +455,7 @@ func (i *jsiiProxy_IngressClassMetadataOutputReference) GetBooleanMapAttribute(t
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -472,7 +471,7 @@ func (i *jsiiProxy_IngressClassMetadataOutputReference) GetListAttribute(terrafo
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -488,7 +487,7 @@ func (i *jsiiProxy_IngressClassMetadataOutputReference) GetNumberAttribute(terra
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -504,7 +503,7 @@ func (i *jsiiProxy_IngressClassMetadataOutputReference) GetNumberListAttribute(t
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -520,7 +519,7 @@ func (i *jsiiProxy_IngressClassMetadataOutputReference) GetNumberMapAttribute(te
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -536,7 +535,7 @@ func (i *jsiiProxy_IngressClassMetadataOutputReference) GetStringAttribute(terra
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -552,7 +551,7 @@ func (i *jsiiProxy_IngressClassMetadataOutputReference) GetStringMapAttribute(te
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -581,7 +580,7 @@ func (i *jsiiProxy_IngressClassMetadataOutputReference) InterpolationForAttribut
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -620,16 +619,16 @@ func (i *jsiiProxy_IngressClassMetadataOutputReference) ResetName() {
 	)
 }
 
-func (i *jsiiProxy_IngressClassMetadataOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_IngressClassMetadataOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -648,4 +647,3 @@ func (i *jsiiProxy_IngressClassMetadataOutputReference) ToString() *string {
 
 	return returns
 }
-

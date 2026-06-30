@@ -90,7 +90,7 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecInitContainerOutputRef
 	return nil
 }
 
-func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecInitContainerOutputReference) validatePutEnvParameters(value interface{}) error {
+func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecInitContainerOutputReference) validatePutEnvParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecInitContainerOutputRef
 	return nil
 }
 
-func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecInitContainerOutputReference) validatePutEnvFromParameters(value interface{}) error {
+func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecInitContainerOutputReference) validatePutEnvFromParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -174,7 +174,7 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecInitContainerOutputRef
 	return nil
 }
 
-func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecInitContainerOutputReference) validatePutPortParameters(value interface{}) error {
+func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecInitContainerOutputReference) validatePutPortParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -249,7 +249,7 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecInitContainerOutputRef
 	return nil
 }
 
-func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecInitContainerOutputReference) validatePutVolumeMountParameters(value interface{}) error {
+func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecInitContainerOutputReference) validatePutVolumeMountParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -304,7 +304,7 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecInitContainerOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecInitContainerOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecInitContainerOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -385,7 +385,7 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecInitContainerOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecInitContainerOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecInitContainerOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -417,7 +417,7 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecInitContainerOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecInitContainerOutputReference) validateSetStdinParameters(val interface{}) error {
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecInitContainerOutputReference) validateSetStdinParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -437,7 +437,7 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecInitContainerOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecInitContainerOutputReference) validateSetStdinOnceParameters(val interface{}) error {
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecInitContainerOutputReference) validateSetStdinOnceParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -489,7 +489,7 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecInitContainerOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecInitContainerOutputReference) validateSetTtyParameters(val interface{}) error {
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecInitContainerOutputReference) validateSetTtyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -536,4 +536,3 @@ func validateNewReplicationControllerV1SpecTemplateSpecInitContainerOutputRefere
 
 	return nil
 }
-

@@ -12,9 +12,9 @@ type ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecretRefOutputRefer
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -32,9 +32,9 @@ type ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecretRefOutputRefer
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
-	Optional() interface{}
-	SetOptional(val interface{})
-	OptionalInput() interface{}
+	Optional() any
+	SetOptional(val any)
+	OptionalInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -46,7 +46,7 @@ type ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecretRefOutputRefer
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,7 +70,7 @@ type ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecretRefOutputRefer
 	ResetOptional()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecretRefO
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecretRefOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecretRefOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -153,8 +153,8 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecret
 	return returns
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecretRefOutputReference) Optional() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecretRefOutputReference) Optional() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"optional",
@@ -163,8 +163,8 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecret
 	return returns
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecretRefOutputReference) OptionalInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecretRefOutputReference) OptionalInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"optionalInput",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecret
 	return returns
 }
 
-
 func NewReplicationControllerV1SpecTemplateSpecContainerEnvFromSecretRefOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecretRefOutputReference {
 	_init_.Initialize()
 
@@ -204,7 +203,7 @@ func NewReplicationControllerV1SpecTemplateSpecContainerEnvFromSecretRefOutputRe
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecretRefOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewReplicationControllerV1SpecTemplateSpecContainerEnvFromSecretRefOutputRe
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecretRefOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		r,
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecretRefOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecretRefOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecret
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecretRefOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecretRefOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecret
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecretRefOutputReference)SetInternalValue(val *ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecretRef) {
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecretRefOutputReference) SetInternalValue(val *ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecretRef) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecret
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecretRefOutputReference)SetName(val *string) {
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecretRefOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecret
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecretRefOutputReference)SetOptional(val interface{}) {
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecretRefOutputReference) SetOptional(val any) {
 	if err := j.validateSetOptionalParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecret
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecretRefOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecretRefOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecret
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecretRefOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecretRefOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,16 +310,16 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecret
 	return returns
 }
 
-func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecretRefOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecretRefOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -336,7 +335,7 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecret
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -352,7 +351,7 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecret
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -368,7 +367,7 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecret
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -384,7 +383,7 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecret
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -400,7 +399,7 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecret
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -416,7 +415,7 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecret
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecret
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecret
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecret
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -492,16 +491,16 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecret
 	)
 }
 
-func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecretRefOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecretRefOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := r.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecret
 
 	return returns
 }
-

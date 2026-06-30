@@ -109,7 +109,7 @@ func (p *jsiiProxy_PersistentVolumeV1SpecNodeAffinityOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_PersistentVolumeV1SpecNodeAffinityOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PersistentVolumeV1SpecNodeAffinityOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewPersistentVolumeV1SpecNodeAffinityOutputReferenceParameters(terr
 
 	return nil
 }
-

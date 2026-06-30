@@ -98,7 +98,7 @@ func (m *jsiiProxy_ManifestWaitConditionOutputReference) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_ManifestWaitConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ManifestWaitConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ManifestWaitConditionOutputReference) validateSetComplexObjec
 	return nil
 }
 
-func (j *jsiiProxy_ManifestWaitConditionOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ManifestWaitConditionOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewManifestWaitConditionOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

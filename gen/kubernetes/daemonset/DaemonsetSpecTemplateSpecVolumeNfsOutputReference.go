@@ -12,9 +12,9 @@ type DaemonsetSpecTemplateSpecVolumeNfsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -32,9 +32,9 @@ type DaemonsetSpecTemplateSpecVolumeNfsOutputReference interface {
 	Path() *string
 	SetPath(val *string)
 	PathInput() *string
-	ReadOnly() interface{}
-	SetReadOnly(val interface{})
-	ReadOnlyInput() interface{}
+	ReadOnly() any
+	SetReadOnly(val any)
+	ReadOnlyInput() any
 	Server() *string
 	SetServer(val *string)
 	ServerInput() *string
@@ -49,7 +49,7 @@ type DaemonsetSpecTemplateSpecVolumeNfsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -73,7 +73,7 @@ type DaemonsetSpecTemplateSpecVolumeNfsOutputReference interface {
 	ResetReadOnly()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,8 +86,8 @@ type jsiiProxy_DaemonsetSpecTemplateSpecVolumeNfsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeNfsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeNfsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -156,8 +156,8 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeNfsOutputReference) PathInput(
 	return returns
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeNfsOutputReference) ReadOnly() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeNfsOutputReference) ReadOnly() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"readOnly",
@@ -166,8 +166,8 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeNfsOutputReference) ReadOnly()
 	return returns
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeNfsOutputReference) ReadOnlyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeNfsOutputReference) ReadOnlyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"readOnlyInput",
@@ -216,7 +216,6 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeNfsOutputReference) TerraformR
 	return returns
 }
 
-
 func NewDaemonsetSpecTemplateSpecVolumeNfsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DaemonsetSpecTemplateSpecVolumeNfsOutputReference {
 	_init_.Initialize()
 
@@ -227,7 +226,7 @@ func NewDaemonsetSpecTemplateSpecVolumeNfsOutputReference(terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecVolumeNfsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -239,12 +238,12 @@ func NewDaemonsetSpecTemplateSpecVolumeNfsOutputReference_Override(d DaemonsetSp
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecVolumeNfsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeNfsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeNfsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeNfsOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeNfsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeNfsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeNfsOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeNfsOutputReference)SetInternalValue(val *DaemonsetSpecTemplateSpecVolumeNfs) {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeNfsOutputReference) SetInternalValue(val *DaemonsetSpecTemplateSpecVolumeNfs) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeNfsOutputReference)SetInternal
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeNfsOutputReference)SetPath(val *string) {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeNfsOutputReference) SetPath(val *string) {
 	if err := j.validateSetPathParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeNfsOutputReference)SetPath(val
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeNfsOutputReference)SetReadOnly(val interface{}) {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeNfsOutputReference) SetReadOnly(val any) {
 	if err := j.validateSetReadOnlyParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +298,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeNfsOutputReference)SetReadOnly
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeNfsOutputReference)SetServer(val *string) {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeNfsOutputReference) SetServer(val *string) {
 	if err := j.validateSetServerParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,7 +309,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeNfsOutputReference)SetServer(v
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeNfsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeNfsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -321,7 +320,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeNfsOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeNfsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeNfsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,16 +344,16 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeNfsOutputReference) ComputeFqn
 	return returns
 }
 
-func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeNfsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeNfsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -370,7 +369,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeNfsOutputReference) GetBoolean
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -386,7 +385,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeNfsOutputReference) GetBoolean
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -402,7 +401,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeNfsOutputReference) GetListAtt
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -418,7 +417,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeNfsOutputReference) GetNumberA
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -434,7 +433,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeNfsOutputReference) GetNumberL
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -450,7 +449,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeNfsOutputReference) GetNumberM
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeNfsOutputReference) GetStringA
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -482,7 +481,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeNfsOutputReference) GetStringM
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -511,7 +510,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeNfsOutputReference) Interpolat
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -526,16 +525,16 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeNfsOutputReference) ResetReadO
 	)
 }
 
-func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeNfsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeNfsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -554,4 +553,3 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeNfsOutputReference) ToString()
 
 	return returns
 }
-

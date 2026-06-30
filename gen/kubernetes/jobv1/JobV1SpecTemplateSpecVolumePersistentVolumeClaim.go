@@ -1,6 +1,5 @@
 package jobv1
 
-
 type JobV1SpecTemplateSpecVolumePersistentVolumeClaim struct {
 	// ClaimName is the name of a PersistentVolumeClaim in the same.
 	//
@@ -9,6 +8,5 @@ type JobV1SpecTemplateSpecVolumePersistentVolumeClaim struct {
 	// Will force the ReadOnly setting in VolumeMounts.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/job_v1#read_only JobV1#read_only}
-	ReadOnly interface{} `field:"optional" json:"readOnly" yaml:"readOnly"`
+	ReadOnly any `field:"optional" json:"readOnly" yaml:"readOnly"`
 }
-

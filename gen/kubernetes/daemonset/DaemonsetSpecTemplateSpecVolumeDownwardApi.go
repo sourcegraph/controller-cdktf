@@ -1,6 +1,5 @@
 package daemonset
 
-
 type DaemonsetSpecTemplateSpecVolumeDownwardApi struct {
 	// Optional: mode bits to use on created files by default.
 	//
@@ -11,6 +10,5 @@ type DaemonsetSpecTemplateSpecVolumeDownwardApi struct {
 	// items block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/daemonset#items Daemonset#items}
-	Items interface{} `field:"optional" json:"items" yaml:"items"`
+	Items any `field:"optional" json:"items" yaml:"items"`
 }
-

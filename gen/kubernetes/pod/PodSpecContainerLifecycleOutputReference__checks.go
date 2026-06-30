@@ -90,7 +90,7 @@ func (p *jsiiProxy_PodSpecContainerLifecycleOutputReference) validateInterpolati
 	return nil
 }
 
-func (p *jsiiProxy_PodSpecContainerLifecycleOutputReference) validatePutPostStartParameters(value interface{}) error {
+func (p *jsiiProxy_PodSpecContainerLifecycleOutputReference) validatePutPostStartParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (p *jsiiProxy_PodSpecContainerLifecycleOutputReference) validatePutPostStar
 	return nil
 }
 
-func (p *jsiiProxy_PodSpecContainerLifecycleOutputReference) validatePutPreStopParameters(value interface{}) error {
+func (p *jsiiProxy_PodSpecContainerLifecycleOutputReference) validatePutPreStopParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (p *jsiiProxy_PodSpecContainerLifecycleOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecContainerLifecycleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecContainerLifecycleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -260,4 +260,3 @@ func validateNewPodSpecContainerLifecycleOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

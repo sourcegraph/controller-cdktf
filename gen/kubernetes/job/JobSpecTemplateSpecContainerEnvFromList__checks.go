@@ -34,7 +34,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerEnvFromList) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecContainerEnvFromList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecContainerEnvFromList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewJobSpecTemplateSpecContainerEnvFromListParameters(terraformResou
 
 	return nil
 }
-

@@ -42,7 +42,7 @@ type KubernetesProvider interface {
 	SetConfigPaths(val *[]*string)
 	ConfigPathsInput() *[]*string
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	Exec() *KubernetesProviderExec
 	SetExec(val *KubernetesProviderExec)
 	ExecInput() *KubernetesProviderExec
@@ -62,11 +62,11 @@ type KubernetesProvider interface {
 	IgnoreLabels() *[]*string
 	SetIgnoreLabels(val *[]*string)
 	IgnoreLabelsInput() *[]*string
-	Insecure() interface{}
-	SetInsecure(val interface{})
-	InsecureInput() interface{}
+	Insecure() any
+	SetInsecure(val any)
+	InsecureInput() any
 	// Experimental.
-	MetaAttributes() *map[string]interface{}
+	MetaAttributes() *map[string]any
 	// The tree node.
 	Node() constructs.Node
 	Password() *string
@@ -76,7 +76,7 @@ type KubernetesProvider interface {
 	SetProxyUrl(val *string)
 	ProxyUrlInput() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -90,7 +90,7 @@ type KubernetesProvider interface {
 	SetUsername(val *string)
 	UsernameInput() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -116,17 +116,17 @@ type KubernetesProvider interface {
 	ResetProxyUrl()
 	ResetToken()
 	ResetUsername()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for KubernetesProvider
@@ -324,8 +324,8 @@ func (j *jsiiProxy_KubernetesProvider) ConfigPathsInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_KubernetesProvider) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_KubernetesProvider) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -454,8 +454,8 @@ func (j *jsiiProxy_KubernetesProvider) IgnoreLabelsInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_KubernetesProvider) Insecure() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KubernetesProvider) Insecure() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"insecure",
@@ -464,8 +464,8 @@ func (j *jsiiProxy_KubernetesProvider) Insecure() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_KubernetesProvider) InsecureInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KubernetesProvider) InsecureInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"insecureInput",
@@ -474,8 +474,8 @@ func (j *jsiiProxy_KubernetesProvider) InsecureInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_KubernetesProvider) MetaAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_KubernetesProvider) MetaAttributes() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"metaAttributes",
@@ -534,8 +534,8 @@ func (j *jsiiProxy_KubernetesProvider) ProxyUrlInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_KubernetesProvider) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KubernetesProvider) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -614,7 +614,6 @@ func (j *jsiiProxy_KubernetesProvider) UsernameInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs kubernetes} Resource.
 func NewKubernetesProvider(scope constructs.Construct, id *string, config *KubernetesProviderConfig) KubernetesProvider {
 	_init_.Initialize()
@@ -626,7 +625,7 @@ func NewKubernetesProvider(scope constructs.Construct, id *string, config *Kuber
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.provider.KubernetesProvider",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -639,12 +638,12 @@ func NewKubernetesProvider_Override(k KubernetesProvider, scope constructs.Const
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.provider.KubernetesProvider",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		k,
 	)
 }
 
-func (j *jsiiProxy_KubernetesProvider)SetAlias(val *string) {
+func (j *jsiiProxy_KubernetesProvider) SetAlias(val *string) {
 	_jsii_.Set(
 		j,
 		"alias",
@@ -652,7 +651,7 @@ func (j *jsiiProxy_KubernetesProvider)SetAlias(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KubernetesProvider)SetClientCertificate(val *string) {
+func (j *jsiiProxy_KubernetesProvider) SetClientCertificate(val *string) {
 	_jsii_.Set(
 		j,
 		"clientCertificate",
@@ -660,7 +659,7 @@ func (j *jsiiProxy_KubernetesProvider)SetClientCertificate(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KubernetesProvider)SetClientKey(val *string) {
+func (j *jsiiProxy_KubernetesProvider) SetClientKey(val *string) {
 	_jsii_.Set(
 		j,
 		"clientKey",
@@ -668,7 +667,7 @@ func (j *jsiiProxy_KubernetesProvider)SetClientKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KubernetesProvider)SetClusterCaCertificate(val *string) {
+func (j *jsiiProxy_KubernetesProvider) SetClusterCaCertificate(val *string) {
 	_jsii_.Set(
 		j,
 		"clusterCaCertificate",
@@ -676,7 +675,7 @@ func (j *jsiiProxy_KubernetesProvider)SetClusterCaCertificate(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KubernetesProvider)SetConfigContext(val *string) {
+func (j *jsiiProxy_KubernetesProvider) SetConfigContext(val *string) {
 	_jsii_.Set(
 		j,
 		"configContext",
@@ -684,7 +683,7 @@ func (j *jsiiProxy_KubernetesProvider)SetConfigContext(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KubernetesProvider)SetConfigContextAuthInfo(val *string) {
+func (j *jsiiProxy_KubernetesProvider) SetConfigContextAuthInfo(val *string) {
 	_jsii_.Set(
 		j,
 		"configContextAuthInfo",
@@ -692,7 +691,7 @@ func (j *jsiiProxy_KubernetesProvider)SetConfigContextAuthInfo(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KubernetesProvider)SetConfigContextCluster(val *string) {
+func (j *jsiiProxy_KubernetesProvider) SetConfigContextCluster(val *string) {
 	_jsii_.Set(
 		j,
 		"configContextCluster",
@@ -700,7 +699,7 @@ func (j *jsiiProxy_KubernetesProvider)SetConfigContextCluster(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KubernetesProvider)SetConfigPath(val *string) {
+func (j *jsiiProxy_KubernetesProvider) SetConfigPath(val *string) {
 	_jsii_.Set(
 		j,
 		"configPath",
@@ -708,7 +707,7 @@ func (j *jsiiProxy_KubernetesProvider)SetConfigPath(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KubernetesProvider)SetConfigPaths(val *[]*string) {
+func (j *jsiiProxy_KubernetesProvider) SetConfigPaths(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"configPaths",
@@ -716,7 +715,7 @@ func (j *jsiiProxy_KubernetesProvider)SetConfigPaths(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_KubernetesProvider)SetExec(val *KubernetesProviderExec) {
+func (j *jsiiProxy_KubernetesProvider) SetExec(val *KubernetesProviderExec) {
 	if err := j.validateSetExecParameters(val); err != nil {
 		panic(err)
 	}
@@ -727,7 +726,7 @@ func (j *jsiiProxy_KubernetesProvider)SetExec(val *KubernetesProviderExec) {
 	)
 }
 
-func (j *jsiiProxy_KubernetesProvider)SetExperiments(val *KubernetesProviderExperiments) {
+func (j *jsiiProxy_KubernetesProvider) SetExperiments(val *KubernetesProviderExperiments) {
 	if err := j.validateSetExperimentsParameters(val); err != nil {
 		panic(err)
 	}
@@ -738,7 +737,7 @@ func (j *jsiiProxy_KubernetesProvider)SetExperiments(val *KubernetesProviderExpe
 	)
 }
 
-func (j *jsiiProxy_KubernetesProvider)SetHost(val *string) {
+func (j *jsiiProxy_KubernetesProvider) SetHost(val *string) {
 	_jsii_.Set(
 		j,
 		"host",
@@ -746,7 +745,7 @@ func (j *jsiiProxy_KubernetesProvider)SetHost(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KubernetesProvider)SetIgnoreAnnotations(val *[]*string) {
+func (j *jsiiProxy_KubernetesProvider) SetIgnoreAnnotations(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"ignoreAnnotations",
@@ -754,7 +753,7 @@ func (j *jsiiProxy_KubernetesProvider)SetIgnoreAnnotations(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_KubernetesProvider)SetIgnoreLabels(val *[]*string) {
+func (j *jsiiProxy_KubernetesProvider) SetIgnoreLabels(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"ignoreLabels",
@@ -762,7 +761,7 @@ func (j *jsiiProxy_KubernetesProvider)SetIgnoreLabels(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_KubernetesProvider)SetInsecure(val interface{}) {
+func (j *jsiiProxy_KubernetesProvider) SetInsecure(val any) {
 	if err := j.validateSetInsecureParameters(val); err != nil {
 		panic(err)
 	}
@@ -773,7 +772,7 @@ func (j *jsiiProxy_KubernetesProvider)SetInsecure(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KubernetesProvider)SetPassword(val *string) {
+func (j *jsiiProxy_KubernetesProvider) SetPassword(val *string) {
 	_jsii_.Set(
 		j,
 		"password",
@@ -781,7 +780,7 @@ func (j *jsiiProxy_KubernetesProvider)SetPassword(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KubernetesProvider)SetProxyUrl(val *string) {
+func (j *jsiiProxy_KubernetesProvider) SetProxyUrl(val *string) {
 	_jsii_.Set(
 		j,
 		"proxyUrl",
@@ -789,7 +788,7 @@ func (j *jsiiProxy_KubernetesProvider)SetProxyUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KubernetesProvider)SetToken(val *string) {
+func (j *jsiiProxy_KubernetesProvider) SetToken(val *string) {
 	_jsii_.Set(
 		j,
 		"token",
@@ -797,7 +796,7 @@ func (j *jsiiProxy_KubernetesProvider)SetToken(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KubernetesProvider)SetUsername(val *string) {
+func (j *jsiiProxy_KubernetesProvider) SetUsername(val *string) {
 	_jsii_.Set(
 		j,
 		"username",
@@ -817,7 +816,7 @@ func KubernetesProvider_GenerateConfigForImport(scope constructs.Construct, impo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.provider.KubernetesProvider",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -841,7 +840,7 @@ func KubernetesProvider_GenerateConfigForImport(scope constructs.Construct, impo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func KubernetesProvider_IsConstruct(x interface{}) *bool {
+func KubernetesProvider_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateKubernetesProvider_IsConstructParameters(x); err != nil {
@@ -852,7 +851,7 @@ func KubernetesProvider_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.provider.KubernetesProvider",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -860,7 +859,7 @@ func KubernetesProvider_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func KubernetesProvider_IsTerraformElement(x interface{}) *bool {
+func KubernetesProvider_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateKubernetesProvider_IsTerraformElementParameters(x); err != nil {
@@ -871,7 +870,7 @@ func KubernetesProvider_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.provider.KubernetesProvider",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -879,7 +878,7 @@ func KubernetesProvider_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func KubernetesProvider_IsTerraformProvider(x interface{}) *bool {
+func KubernetesProvider_IsTerraformProvider(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateKubernetesProvider_IsTerraformProviderParameters(x); err != nil {
@@ -890,7 +889,7 @@ func KubernetesProvider_IsTerraformProvider(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.provider.KubernetesProvider",
 		"isTerraformProvider",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -908,14 +907,14 @@ func KubernetesProvider_TfResourceType() *string {
 	return returns
 }
 
-func (k *jsiiProxy_KubernetesProvider) AddOverride(path *string, value interface{}) {
+func (k *jsiiProxy_KubernetesProvider) AddOverride(path *string, value any) {
 	if err := k.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		k,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
@@ -926,7 +925,7 @@ func (k *jsiiProxy_KubernetesProvider) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		k,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1090,8 +1089,8 @@ func (k *jsiiProxy_KubernetesProvider) ResetUsername() {
 	)
 }
 
-func (k *jsiiProxy_KubernetesProvider) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (k *jsiiProxy_KubernetesProvider) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
@@ -1103,8 +1102,8 @@ func (k *jsiiProxy_KubernetesProvider) SynthesizeAttributes() *map[string]interf
 	return returns
 }
 
-func (k *jsiiProxy_KubernetesProvider) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (k *jsiiProxy_KubernetesProvider) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
@@ -1116,8 +1115,8 @@ func (k *jsiiProxy_KubernetesProvider) SynthesizeHclAttributes() *map[string]int
 	return returns
 }
 
-func (k *jsiiProxy_KubernetesProvider) ToHclTerraform() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_KubernetesProvider) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -1129,8 +1128,8 @@ func (k *jsiiProxy_KubernetesProvider) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (k *jsiiProxy_KubernetesProvider) ToMetadata() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_KubernetesProvider) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -1155,8 +1154,8 @@ func (k *jsiiProxy_KubernetesProvider) ToString() *string {
 	return returns
 }
 
-func (k *jsiiProxy_KubernetesProvider) ToTerraform() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_KubernetesProvider) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -1167,4 +1166,3 @@ func (k *jsiiProxy_KubernetesProvider) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -15,9 +15,9 @@ type JobSpecTemplateSpecVolumeRbdOutputReference interface {
 	CephMonitorsInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -47,9 +47,9 @@ type JobSpecTemplateSpecVolumeRbdOutputReference interface {
 	RbdPool() *string
 	SetRbdPool(val *string)
 	RbdPoolInput() *string
-	ReadOnly() interface{}
-	SetReadOnly(val interface{})
-	ReadOnlyInput() interface{}
+	ReadOnly() any
+	SetReadOnly(val any)
+	ReadOnlyInput() any
 	SecretRef() JobSpecTemplateSpecVolumeRbdSecretRefOutputReference
 	SecretRefInput() *JobSpecTemplateSpecVolumeRbdSecretRef
 	// Experimental.
@@ -63,7 +63,7 @@ type JobSpecTemplateSpecVolumeRbdOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -93,7 +93,7 @@ type JobSpecTemplateSpecVolumeRbdOutputReference interface {
 	ResetSecretRef()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -126,8 +126,8 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference) CephMonitorsInpu
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -276,8 +276,8 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference) RbdPoolInput() *
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference) ReadOnly() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference) ReadOnly() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"readOnly",
@@ -286,8 +286,8 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference) ReadOnly() inter
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference) ReadOnlyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference) ReadOnlyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"readOnlyInput",
@@ -336,7 +336,6 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference) TerraformResourc
 	return returns
 }
 
-
 func NewJobSpecTemplateSpecVolumeRbdOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) JobSpecTemplateSpecVolumeRbdOutputReference {
 	_init_.Initialize()
 
@@ -347,7 +346,7 @@ func NewJobSpecTemplateSpecVolumeRbdOutputReference(terraformResource cdktf.IInt
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecVolumeRbdOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -359,12 +358,12 @@ func NewJobSpecTemplateSpecVolumeRbdOutputReference_Override(j JobSpecTemplateSp
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecVolumeRbdOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		j,
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference)SetCephMonitors(val *[]*string) {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference) SetCephMonitors(val *[]*string) {
 	if err := j.validateSetCephMonitorsParameters(val); err != nil {
 		panic(err)
 	}
@@ -375,7 +374,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference)SetCephMonitors(v
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -386,7 +385,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -397,7 +396,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference)SetFsType(val *string) {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference) SetFsType(val *string) {
 	if err := j.validateSetFsTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -408,7 +407,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference)SetFsType(val *st
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference)SetInternalValue(val *JobSpecTemplateSpecVolumeRbd) {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference) SetInternalValue(val *JobSpecTemplateSpecVolumeRbd) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -419,7 +418,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference)SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference)SetKeyring(val *string) {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference) SetKeyring(val *string) {
 	if err := j.validateSetKeyringParameters(val); err != nil {
 		panic(err)
 	}
@@ -430,7 +429,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference)SetKeyring(val *s
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference)SetRadosUser(val *string) {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference) SetRadosUser(val *string) {
 	if err := j.validateSetRadosUserParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,7 +440,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference)SetRadosUser(val 
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference)SetRbdImage(val *string) {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference) SetRbdImage(val *string) {
 	if err := j.validateSetRbdImageParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference)SetRbdImage(val *
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference)SetRbdPool(val *string) {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference) SetRbdPool(val *string) {
 	if err := j.validateSetRbdPoolParameters(val); err != nil {
 		panic(err)
 	}
@@ -463,7 +462,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference)SetRbdPool(val *s
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference)SetReadOnly(val interface{}) {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference) SetReadOnly(val any) {
 	if err := j.validateSetReadOnlyParameters(val); err != nil {
 		panic(err)
 	}
@@ -474,7 +473,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference)SetReadOnly(val i
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -485,7 +484,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -509,16 +508,16 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference) ComputeFqn() *st
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := j.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		j,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -534,7 +533,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference) GetBooleanAttrib
 	_jsii_.Invoke(
 		j,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -550,7 +549,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference) GetBooleanMapAtt
 	_jsii_.Invoke(
 		j,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -566,7 +565,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference) GetListAttribute
 	_jsii_.Invoke(
 		j,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -582,7 +581,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference) GetNumberAttribu
 	_jsii_.Invoke(
 		j,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -598,7 +597,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference) GetNumberListAtt
 	_jsii_.Invoke(
 		j,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -614,7 +613,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference) GetNumberMapAttr
 	_jsii_.Invoke(
 		j,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -630,7 +629,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference) GetStringAttribu
 	_jsii_.Invoke(
 		j,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -646,7 +645,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference) GetStringMapAttr
 	_jsii_.Invoke(
 		j,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -675,7 +674,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference) InterpolationFor
 	_jsii_.Invoke(
 		j,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -689,7 +688,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference) PutSecretRef(val
 	_jsii_.InvokeVoid(
 		j,
 		"putSecretRef",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -741,16 +740,16 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference) ResetSecretRef()
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := j.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		j,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -769,4 +768,3 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeRbdOutputReference) ToString() *stri
 
 	return returns
 }
-

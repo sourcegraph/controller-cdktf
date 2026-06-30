@@ -12,9 +12,9 @@ type ServiceAccountImagePullSecretOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,8 +27,8 @@ type ServiceAccountImagePullSecretOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -43,7 +43,7 @@ type ServiceAccountImagePullSecretOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -67,7 +67,7 @@ type ServiceAccountImagePullSecretOutputReference interface {
 	ResetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,8 +80,8 @@ type jsiiProxy_ServiceAccountImagePullSecretOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ServiceAccountImagePullSecretOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServiceAccountImagePullSecretOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -120,8 +120,8 @@ func (j *jsiiProxy_ServiceAccountImagePullSecretOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ServiceAccountImagePullSecretOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServiceAccountImagePullSecretOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -170,7 +170,6 @@ func (j *jsiiProxy_ServiceAccountImagePullSecretOutputReference) TerraformResour
 	return returns
 }
 
-
 func NewServiceAccountImagePullSecretOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ServiceAccountImagePullSecretOutputReference {
 	_init_.Initialize()
 
@@ -181,7 +180,7 @@ func NewServiceAccountImagePullSecretOutputReference(terraformResource cdktf.IIn
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.serviceAccount.ServiceAccountImagePullSecretOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -193,12 +192,12 @@ func NewServiceAccountImagePullSecretOutputReference_Override(s ServiceAccountIm
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.serviceAccount.ServiceAccountImagePullSecretOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
 }
 
-func (j *jsiiProxy_ServiceAccountImagePullSecretOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ServiceAccountImagePullSecretOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -209,7 +208,7 @@ func (j *jsiiProxy_ServiceAccountImagePullSecretOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_ServiceAccountImagePullSecretOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ServiceAccountImagePullSecretOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -220,7 +219,7 @@ func (j *jsiiProxy_ServiceAccountImagePullSecretOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_ServiceAccountImagePullSecretOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ServiceAccountImagePullSecretOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_ServiceAccountImagePullSecretOutputReference)SetInternalValue
 	)
 }
 
-func (j *jsiiProxy_ServiceAccountImagePullSecretOutputReference)SetName(val *string) {
+func (j *jsiiProxy_ServiceAccountImagePullSecretOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_ServiceAccountImagePullSecretOutputReference)SetName(val *str
 	)
 }
 
-func (j *jsiiProxy_ServiceAccountImagePullSecretOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ServiceAccountImagePullSecretOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_ServiceAccountImagePullSecretOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_ServiceAccountImagePullSecretOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ServiceAccountImagePullSecretOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,16 +276,16 @@ func (s *jsiiProxy_ServiceAccountImagePullSecretOutputReference) ComputeFqn() *s
 	return returns
 }
 
-func (s *jsiiProxy_ServiceAccountImagePullSecretOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_ServiceAccountImagePullSecretOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -302,7 +301,7 @@ func (s *jsiiProxy_ServiceAccountImagePullSecretOutputReference) GetBooleanAttri
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -318,7 +317,7 @@ func (s *jsiiProxy_ServiceAccountImagePullSecretOutputReference) GetBooleanMapAt
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -334,7 +333,7 @@ func (s *jsiiProxy_ServiceAccountImagePullSecretOutputReference) GetListAttribut
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -350,7 +349,7 @@ func (s *jsiiProxy_ServiceAccountImagePullSecretOutputReference) GetNumberAttrib
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -366,7 +365,7 @@ func (s *jsiiProxy_ServiceAccountImagePullSecretOutputReference) GetNumberListAt
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -382,7 +381,7 @@ func (s *jsiiProxy_ServiceAccountImagePullSecretOutputReference) GetNumberMapAtt
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -398,7 +397,7 @@ func (s *jsiiProxy_ServiceAccountImagePullSecretOutputReference) GetStringAttrib
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -414,7 +413,7 @@ func (s *jsiiProxy_ServiceAccountImagePullSecretOutputReference) GetStringMapAtt
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (s *jsiiProxy_ServiceAccountImagePullSecretOutputReference) InterpolationFo
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -458,16 +457,16 @@ func (s *jsiiProxy_ServiceAccountImagePullSecretOutputReference) ResetName() {
 	)
 }
 
-func (s *jsiiProxy_ServiceAccountImagePullSecretOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_ServiceAccountImagePullSecretOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -486,4 +485,3 @@ func (s *jsiiProxy_ServiceAccountImagePullSecretOutputReference) ToString() *str
 
 	return returns
 }
-

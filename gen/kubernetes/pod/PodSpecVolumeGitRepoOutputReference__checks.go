@@ -98,7 +98,7 @@ func (p *jsiiProxy_PodSpecVolumeGitRepoOutputReference) validateResolveParameter
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecVolumeGitRepoOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecVolumeGitRepoOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewPodSpecVolumeGitRepoOutputReferenceParameters(terraformResource 
 
 	return nil
 }
-

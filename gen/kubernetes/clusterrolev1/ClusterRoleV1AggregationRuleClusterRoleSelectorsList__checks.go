@@ -34,7 +34,7 @@ func (c *jsiiProxy_ClusterRoleV1AggregationRuleClusterRoleSelectorsList) validat
 	return nil
 }
 
-func (j *jsiiProxy_ClusterRoleV1AggregationRuleClusterRoleSelectorsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ClusterRoleV1AggregationRuleClusterRoleSelectorsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewClusterRoleV1AggregationRuleClusterRoleSelectorsListParameters(t
 
 	return nil
 }
-

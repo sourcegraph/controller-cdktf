@@ -15,15 +15,15 @@ type CronJobV1 interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -52,28 +52,28 @@ type CronJobV1 interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Spec() CronJobV1SpecOutputReference
 	SpecInput() *CronJobV1Spec
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() CronJobV1TimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,7 +91,7 @@ type CronJobV1 interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -103,7 +103,7 @@ type CronJobV1 interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -118,17 +118,17 @@ type CronJobV1 interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for CronJobV1
@@ -146,8 +146,8 @@ func (j *jsiiProxy_CronJobV1) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_CronJobV1) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CronJobV1) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -156,8 +156,8 @@ func (j *jsiiProxy_CronJobV1) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CronJobV1) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CronJobV1) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -166,8 +166,8 @@ func (j *jsiiProxy_CronJobV1) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CronJobV1) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CronJobV1) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -286,8 +286,8 @@ func (j *jsiiProxy_CronJobV1) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_CronJobV1) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_CronJobV1) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -296,8 +296,8 @@ func (j *jsiiProxy_CronJobV1) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CronJobV1) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CronJobV1) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -336,8 +336,8 @@ func (j *jsiiProxy_CronJobV1) TerraformGeneratorMetadata() *cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_CronJobV1) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CronJobV1) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -366,8 +366,8 @@ func (j *jsiiProxy_CronJobV1) Timeouts() CronJobV1TimeoutsOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_CronJobV1) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CronJobV1) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -375,7 +375,6 @@ func (j *jsiiProxy_CronJobV1) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/cron_job_v1 kubernetes_cron_job_v1} Resource.
 func NewCronJobV1(scope constructs.Construct, id *string, config *CronJobV1Config) CronJobV1 {
@@ -388,7 +387,7 @@ func NewCronJobV1(scope constructs.Construct, id *string, config *CronJobV1Confi
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -401,12 +400,12 @@ func NewCronJobV1_Override(c CronJobV1, scope constructs.Construct, id *string, 
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CronJobV1)SetConnection(val interface{}) {
+func (j *jsiiProxy_CronJobV1) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,7 +416,7 @@ func (j *jsiiProxy_CronJobV1)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CronJobV1)SetCount(val interface{}) {
+func (j *jsiiProxy_CronJobV1) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,7 +427,7 @@ func (j *jsiiProxy_CronJobV1)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CronJobV1)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CronJobV1) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -436,7 +435,7 @@ func (j *jsiiProxy_CronJobV1)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CronJobV1)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CronJobV1) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -444,7 +443,7 @@ func (j *jsiiProxy_CronJobV1)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_CronJobV1)SetId(val *string) {
+func (j *jsiiProxy_CronJobV1) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -455,7 +454,7 @@ func (j *jsiiProxy_CronJobV1)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CronJobV1)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CronJobV1) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -466,7 +465,7 @@ func (j *jsiiProxy_CronJobV1)SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	)
 }
 
-func (j *jsiiProxy_CronJobV1)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CronJobV1) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -474,7 +473,7 @@ func (j *jsiiProxy_CronJobV1)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_CronJobV1)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CronJobV1) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -497,7 +496,7 @@ func CronJobV1_GenerateConfigForImport(scope constructs.Construct, importToId *s
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -521,7 +520,7 @@ func CronJobV1_GenerateConfigForImport(scope constructs.Construct, importToId *s
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func CronJobV1_IsConstruct(x interface{}) *bool {
+func CronJobV1_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCronJobV1_IsConstructParameters(x); err != nil {
@@ -532,7 +531,7 @@ func CronJobV1_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -540,7 +539,7 @@ func CronJobV1_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func CronJobV1_IsTerraformElement(x interface{}) *bool {
+func CronJobV1_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCronJobV1_IsTerraformElementParameters(x); err != nil {
@@ -551,7 +550,7 @@ func CronJobV1_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -559,7 +558,7 @@ func CronJobV1_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func CronJobV1_IsTerraformResource(x interface{}) *bool {
+func CronJobV1_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCronJobV1_IsTerraformResourceParameters(x); err != nil {
@@ -570,7 +569,7 @@ func CronJobV1_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -595,31 +594,31 @@ func (c *jsiiProxy_CronJobV1) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_CronJobV1) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_CronJobV1) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_CronJobV1) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CronJobV1) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -635,7 +634,7 @@ func (c *jsiiProxy_CronJobV1) GetBooleanAttribute(terraformAttribute *string) cd
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -651,7 +650,7 @@ func (c *jsiiProxy_CronJobV1) GetBooleanMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -667,7 +666,7 @@ func (c *jsiiProxy_CronJobV1) GetListAttribute(terraformAttribute *string) *[]*s
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -683,7 +682,7 @@ func (c *jsiiProxy_CronJobV1) GetNumberAttribute(terraformAttribute *string) *fl
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -699,7 +698,7 @@ func (c *jsiiProxy_CronJobV1) GetNumberListAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -715,7 +714,7 @@ func (c *jsiiProxy_CronJobV1) GetNumberMapAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -731,7 +730,7 @@ func (c *jsiiProxy_CronJobV1) GetStringAttribute(terraformAttribute *string) *st
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -747,15 +746,15 @@ func (c *jsiiProxy_CronJobV1) GetStringMapAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CronJobV1) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CronJobV1) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -774,7 +773,7 @@ func (c *jsiiProxy_CronJobV1) ImportFrom(id *string, provider cdktf.TerraformPro
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -787,7 +786,7 @@ func (c *jsiiProxy_CronJobV1) InterpolationForAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -801,18 +800,18 @@ func (c *jsiiProxy_CronJobV1) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_CronJobV1) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_CronJobV1) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -823,7 +822,7 @@ func (c *jsiiProxy_CronJobV1) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -834,7 +833,7 @@ func (c *jsiiProxy_CronJobV1) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -845,7 +844,7 @@ func (c *jsiiProxy_CronJobV1) PutMetadata(value *CronJobV1Metadata) {
 	_jsii_.InvokeVoid(
 		c,
 		"putMetadata",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -856,7 +855,7 @@ func (c *jsiiProxy_CronJobV1) PutSpec(value *CronJobV1Spec) {
 	_jsii_.InvokeVoid(
 		c,
 		"putSpec",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -867,7 +866,7 @@ func (c *jsiiProxy_CronJobV1) PutTimeouts(value *CronJobV1Timeouts) {
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -895,8 +894,8 @@ func (c *jsiiProxy_CronJobV1) ResetTimeouts() {
 	)
 }
 
-func (c *jsiiProxy_CronJobV1) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CronJobV1) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -908,8 +907,8 @@ func (c *jsiiProxy_CronJobV1) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CronJobV1) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CronJobV1) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -921,8 +920,8 @@ func (c *jsiiProxy_CronJobV1) SynthesizeHclAttributes() *map[string]interface{} 
 	return returns
 }
 
-func (c *jsiiProxy_CronJobV1) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CronJobV1) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -934,8 +933,8 @@ func (c *jsiiProxy_CronJobV1) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CronJobV1) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CronJobV1) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -960,8 +959,8 @@ func (c *jsiiProxy_CronJobV1) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_CronJobV1) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CronJobV1) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -972,4 +971,3 @@ func (c *jsiiProxy_CronJobV1) ToTerraform() interface{} {
 
 	return returns
 }
-

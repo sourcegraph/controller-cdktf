@@ -98,7 +98,7 @@ func (p *jsiiProxy_PodSpecContainerEnvFromSecretRefOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecContainerEnvFromSecretRefOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecContainerEnvFromSecretRefOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_PodSpecContainerEnvFromSecretRefOutputReference) validateSetN
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecContainerEnvFromSecretRefOutputReference) validateSetOptionalParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecContainerEnvFromSecretRefOutputReference) validateSetOptionalParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -226,4 +226,3 @@ func validateNewPodSpecContainerEnvFromSecretRefOutputReferenceParameters(terraf
 
 	return nil
 }
-

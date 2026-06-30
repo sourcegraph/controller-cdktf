@@ -15,15 +15,15 @@ type NamespaceV1 interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -52,26 +52,26 @@ type NamespaceV1 interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() NamespaceV1TimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -89,7 +89,7 @@ type NamespaceV1 interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -101,7 +101,7 @@ type NamespaceV1 interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -115,17 +115,17 @@ type NamespaceV1 interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for NamespaceV1
@@ -143,8 +143,8 @@ func (j *jsiiProxy_NamespaceV1) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_NamespaceV1) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NamespaceV1) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -153,8 +153,8 @@ func (j *jsiiProxy_NamespaceV1) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NamespaceV1) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NamespaceV1) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -163,8 +163,8 @@ func (j *jsiiProxy_NamespaceV1) ConstructNodeMetadata() *map[string]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_NamespaceV1) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NamespaceV1) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -283,8 +283,8 @@ func (j *jsiiProxy_NamespaceV1) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_NamespaceV1) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_NamespaceV1) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -293,8 +293,8 @@ func (j *jsiiProxy_NamespaceV1) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NamespaceV1) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NamespaceV1) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -313,8 +313,8 @@ func (j *jsiiProxy_NamespaceV1) TerraformGeneratorMetadata() *cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_NamespaceV1) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NamespaceV1) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -343,8 +343,8 @@ func (j *jsiiProxy_NamespaceV1) Timeouts() NamespaceV1TimeoutsOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_NamespaceV1) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NamespaceV1) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -352,7 +352,6 @@ func (j *jsiiProxy_NamespaceV1) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/namespace_v1 kubernetes_namespace_v1} Resource.
 func NewNamespaceV1(scope constructs.Construct, id *string, config *NamespaceV1Config) NamespaceV1 {
@@ -365,7 +364,7 @@ func NewNamespaceV1(scope constructs.Construct, id *string, config *NamespaceV1C
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.namespaceV1.NamespaceV1",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -378,12 +377,12 @@ func NewNamespaceV1_Override(n NamespaceV1, scope constructs.Construct, id *stri
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.namespaceV1.NamespaceV1",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NamespaceV1)SetConnection(val interface{}) {
+func (j *jsiiProxy_NamespaceV1) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -394,7 +393,7 @@ func (j *jsiiProxy_NamespaceV1)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NamespaceV1)SetCount(val interface{}) {
+func (j *jsiiProxy_NamespaceV1) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -405,7 +404,7 @@ func (j *jsiiProxy_NamespaceV1)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NamespaceV1)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_NamespaceV1) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -413,7 +412,7 @@ func (j *jsiiProxy_NamespaceV1)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_NamespaceV1)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_NamespaceV1) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -421,7 +420,7 @@ func (j *jsiiProxy_NamespaceV1)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_NamespaceV1)SetId(val *string) {
+func (j *jsiiProxy_NamespaceV1) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -432,7 +431,7 @@ func (j *jsiiProxy_NamespaceV1)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NamespaceV1)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_NamespaceV1) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -443,7 +442,7 @@ func (j *jsiiProxy_NamespaceV1)SetLifecycle(val *cdktf.TerraformResourceLifecycl
 	)
 }
 
-func (j *jsiiProxy_NamespaceV1)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_NamespaceV1) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -451,7 +450,7 @@ func (j *jsiiProxy_NamespaceV1)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_NamespaceV1)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_NamespaceV1) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -474,7 +473,7 @@ func NamespaceV1_GenerateConfigForImport(scope constructs.Construct, importToId 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.namespaceV1.NamespaceV1",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -498,7 +497,7 @@ func NamespaceV1_GenerateConfigForImport(scope constructs.Construct, importToId 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func NamespaceV1_IsConstruct(x interface{}) *bool {
+func NamespaceV1_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNamespaceV1_IsConstructParameters(x); err != nil {
@@ -509,7 +508,7 @@ func NamespaceV1_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.namespaceV1.NamespaceV1",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -517,7 +516,7 @@ func NamespaceV1_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func NamespaceV1_IsTerraformElement(x interface{}) *bool {
+func NamespaceV1_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNamespaceV1_IsTerraformElementParameters(x); err != nil {
@@ -528,7 +527,7 @@ func NamespaceV1_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.namespaceV1.NamespaceV1",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -536,7 +535,7 @@ func NamespaceV1_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func NamespaceV1_IsTerraformResource(x interface{}) *bool {
+func NamespaceV1_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNamespaceV1_IsTerraformResourceParameters(x); err != nil {
@@ -547,7 +546,7 @@ func NamespaceV1_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.namespaceV1.NamespaceV1",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -572,31 +571,31 @@ func (n *jsiiProxy_NamespaceV1) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (n *jsiiProxy_NamespaceV1) AddOverride(path *string, value interface{}) {
+func (n *jsiiProxy_NamespaceV1) AddOverride(path *string, value any) {
 	if err := n.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (n *jsiiProxy_NamespaceV1) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NamespaceV1) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -612,7 +611,7 @@ func (n *jsiiProxy_NamespaceV1) GetBooleanAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -628,7 +627,7 @@ func (n *jsiiProxy_NamespaceV1) GetBooleanMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -644,7 +643,7 @@ func (n *jsiiProxy_NamespaceV1) GetListAttribute(terraformAttribute *string) *[]
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -660,7 +659,7 @@ func (n *jsiiProxy_NamespaceV1) GetNumberAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -676,7 +675,7 @@ func (n *jsiiProxy_NamespaceV1) GetNumberListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -692,7 +691,7 @@ func (n *jsiiProxy_NamespaceV1) GetNumberMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -708,7 +707,7 @@ func (n *jsiiProxy_NamespaceV1) GetStringAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -724,15 +723,15 @@ func (n *jsiiProxy_NamespaceV1) GetStringMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NamespaceV1) HasResourceMove() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NamespaceV1) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -751,7 +750,7 @@ func (n *jsiiProxy_NamespaceV1) ImportFrom(id *string, provider cdktf.TerraformP
 	_jsii_.InvokeVoid(
 		n,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -764,7 +763,7 @@ func (n *jsiiProxy_NamespaceV1) InterpolationForAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -778,18 +777,18 @@ func (n *jsiiProxy_NamespaceV1) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (n *jsiiProxy_NamespaceV1) MoveTo(moveTarget *string, index interface{}) {
+func (n *jsiiProxy_NamespaceV1) MoveTo(moveTarget *string, index any) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -800,7 +799,7 @@ func (n *jsiiProxy_NamespaceV1) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -811,7 +810,7 @@ func (n *jsiiProxy_NamespaceV1) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -822,7 +821,7 @@ func (n *jsiiProxy_NamespaceV1) PutMetadata(value *NamespaceV1Metadata) {
 	_jsii_.InvokeVoid(
 		n,
 		"putMetadata",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -833,7 +832,7 @@ func (n *jsiiProxy_NamespaceV1) PutTimeouts(value *NamespaceV1Timeouts) {
 	_jsii_.InvokeVoid(
 		n,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -861,8 +860,8 @@ func (n *jsiiProxy_NamespaceV1) ResetTimeouts() {
 	)
 }
 
-func (n *jsiiProxy_NamespaceV1) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NamespaceV1) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -874,8 +873,8 @@ func (n *jsiiProxy_NamespaceV1) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (n *jsiiProxy_NamespaceV1) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NamespaceV1) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -887,8 +886,8 @@ func (n *jsiiProxy_NamespaceV1) SynthesizeHclAttributes() *map[string]interface{
 	return returns
 }
 
-func (n *jsiiProxy_NamespaceV1) ToHclTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NamespaceV1) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -900,8 +899,8 @@ func (n *jsiiProxy_NamespaceV1) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (n *jsiiProxy_NamespaceV1) ToMetadata() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NamespaceV1) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -926,8 +925,8 @@ func (n *jsiiProxy_NamespaceV1) ToString() *string {
 	return returns
 }
 
-func (n *jsiiProxy_NamespaceV1) ToTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NamespaceV1) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -938,4 +937,3 @@ func (n *jsiiProxy_NamespaceV1) ToTerraform() interface{} {
 
 	return returns
 }
-

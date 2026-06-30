@@ -19,7 +19,7 @@ func (l *jsiiProxy_Labels) validateAddMoveTargetParameters(moveTarget *string) e
 	return nil
 }
 
-func (l *jsiiProxy_Labels) validateAddOverrideParameters(path *string, value interface{}) error {
+func (l *jsiiProxy_Labels) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (l *jsiiProxy_Labels) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_Labels) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (l *jsiiProxy_Labels) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateLabels_GenerateConfigForImportParameters(scope constructs.Construct
 	return nil
 }
 
-func validateLabels_IsConstructParameters(x interface{}) error {
+func validateLabels_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateLabels_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateLabels_IsTerraformElementParameters(x interface{}) error {
+func validateLabels_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateLabels_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateLabels_IsTerraformResourceParameters(x interface{}) error {
+func validateLabels_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_Labels) validateSetApiVersionParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Labels) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_Labels) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_Labels) validateSetConnectionParameters(val interface{}) erro
 	return nil
 }
 
-func (j *jsiiProxy_Labels) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_Labels) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -361,7 +361,7 @@ func (j *jsiiProxy_Labels) validateSetFieldManagerParameters(val *string) error 
 	return nil
 }
 
-func (j *jsiiProxy_Labels) validateSetForceParameters(val interface{}) error {
+func (j *jsiiProxy_Labels) validateSetForceParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -413,7 +413,7 @@ func (j *jsiiProxy_Labels) validateSetLifecycleParameters(val *cdktf.TerraformRe
 	return nil
 }
 
-func (j *jsiiProxy_Labels) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_Labels) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -477,4 +477,3 @@ func validateNewLabelsParameters(scope constructs.Construct, id *string, config 
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecContainerSecurityContextSeLinuxOpti
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecContainerSecurityContextSeLinuxOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecContainerSecurityContextSeLinuxOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewDeploymentSpecTemplateSpecContainerSecurityContextSeLinuxOptions
 
 	return nil
 }
-

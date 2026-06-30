@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.secret.Secret",
-		reflect.TypeOf((*Secret)(nil)).Elem(),
+		reflect.TypeFor[Secret](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,7 +78,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "waitForServiceAccountToken", GoGetter: "WaitForServiceAccountToken"},
 			_jsii_.MemberProperty{JsiiProperty: "waitForServiceAccountTokenInput", GoGetter: "WaitForServiceAccountTokenInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Secret{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -86,15 +86,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.secret.SecretConfig",
-		reflect.TypeOf((*SecretConfig)(nil)).Elem(),
+		reflect.TypeFor[SecretConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.secret.SecretMetadata",
-		reflect.TypeOf((*SecretMetadata)(nil)).Elem(),
+		reflect.TypeFor[SecretMetadata](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference",
-		reflect.TypeOf((*SecretMetadataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecretMetadataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
 			_jsii_.MemberProperty{JsiiProperty: "annotationsInput", GoGetter: "AnnotationsInput"},
@@ -136,7 +136,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecretMetadataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -144,11 +144,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.secret.SecretTimeouts",
-		reflect.TypeOf((*SecretTimeouts)(nil)).Elem(),
+		reflect.TypeFor[SecretTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.secret.SecretTimeoutsOutputReference",
-		reflect.TypeOf((*SecretTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecretTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -175,7 +175,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecretTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

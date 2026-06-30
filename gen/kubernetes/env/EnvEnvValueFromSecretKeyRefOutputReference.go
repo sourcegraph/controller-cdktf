@@ -12,9 +12,9 @@ type EnvEnvValueFromSecretKeyRefOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -35,9 +35,9 @@ type EnvEnvValueFromSecretKeyRefOutputReference interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
-	Optional() interface{}
-	SetOptional(val interface{})
-	OptionalInput() interface{}
+	Optional() any
+	SetOptional(val any)
+	OptionalInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type EnvEnvValueFromSecretKeyRefOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type EnvEnvValueFromSecretKeyRefOutputReference interface {
 	ResetOptional()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -178,8 +178,8 @@ func (j *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference) NameInput() *stri
 	return returns
 }
 
-func (j *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference) Optional() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference) Optional() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"optional",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference) Optional() interf
 	return returns
 }
 
-func (j *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference) OptionalInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference) OptionalInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"optionalInput",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference) TerraformResource
 	return returns
 }
 
-
 func NewEnvEnvValueFromSecretKeyRefOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) EnvEnvValueFromSecretKeyRefOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewEnvEnvValueFromSecretKeyRefOutputReference(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.env.EnvEnvValueFromSecretKeyRefOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewEnvEnvValueFromSecretKeyRefOutputReference_Override(e EnvEnvValueFromSec
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.env.EnvEnvValueFromSecretKeyRefOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference)SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference)SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference)SetInternalValue(val *EnvEnvValueFromSecretKeyRef) {
+func (j *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference) SetInternalValue(val *EnvEnvValueFromSecretKeyRef) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference)SetKey(val *string) {
+func (j *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference) SetKey(val *string) {
 	if err := j.validateSetKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference)SetKey(val *string
 	)
 }
 
-func (j *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference)SetName(val *string) {
+func (j *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference)SetName(val *strin
 	)
 }
 
-func (j *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference)SetOptional(val interface{}) {
+func (j *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference) SetOptional(val any) {
 	if err := j.validateSetOptionalParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference)SetOptional(val in
 	)
 }
 
-func (j *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (e *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference) ComputeFqn() *str
 	return returns
 }
 
-func (e *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (e *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference) GetBooleanAttribu
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (e *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference) GetBooleanMapAttr
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (e *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference) GetListAttribute(
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (e *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference) GetNumberAttribut
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (e *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference) GetNumberListAttr
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (e *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference) GetNumberMapAttri
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (e *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference) GetStringAttribut
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (e *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference) GetStringMapAttri
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (e *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (e *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference) ResetOptional() {
 	)
 }
 
-func (e *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (e *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference) ToString() *strin
 
 	return returns
 }
-

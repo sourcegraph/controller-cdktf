@@ -12,9 +12,9 @@ type LimitRangeV1SpecLimitOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type LimitRangeV1SpecLimitOutputReference interface {
 	DefaultRequestInput() *map[string]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Max() *map[string]*string
 	SetMax(val *map[string]*string)
 	MaxInput() *map[string]*string
@@ -58,7 +58,7 @@ type LimitRangeV1SpecLimitOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -87,7 +87,7 @@ type LimitRangeV1SpecLimitOutputReference interface {
 	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -100,8 +100,8 @@ type jsiiProxy_LimitRangeV1SpecLimitOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_LimitRangeV1SpecLimitOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LimitRangeV1SpecLimitOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_LimitRangeV1SpecLimitOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LimitRangeV1SpecLimitOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LimitRangeV1SpecLimitOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -290,7 +290,6 @@ func (j *jsiiProxy_LimitRangeV1SpecLimitOutputReference) TypeInput() *string {
 	return returns
 }
 
-
 func NewLimitRangeV1SpecLimitOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) LimitRangeV1SpecLimitOutputReference {
 	_init_.Initialize()
 
@@ -301,7 +300,7 @@ func NewLimitRangeV1SpecLimitOutputReference(terraformResource cdktf.IInterpolat
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.limitRangeV1.LimitRangeV1SpecLimitOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -313,12 +312,12 @@ func NewLimitRangeV1SpecLimitOutputReference_Override(l LimitRangeV1SpecLimitOut
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.limitRangeV1.LimitRangeV1SpecLimitOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LimitRangeV1SpecLimitOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_LimitRangeV1SpecLimitOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -329,7 +328,7 @@ func (j *jsiiProxy_LimitRangeV1SpecLimitOutputReference)SetComplexObjectIndex(va
 	)
 }
 
-func (j *jsiiProxy_LimitRangeV1SpecLimitOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_LimitRangeV1SpecLimitOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -340,7 +339,7 @@ func (j *jsiiProxy_LimitRangeV1SpecLimitOutputReference)SetComplexObjectIsFromSe
 	)
 }
 
-func (j *jsiiProxy_LimitRangeV1SpecLimitOutputReference)SetDefault(val *map[string]*string) {
+func (j *jsiiProxy_LimitRangeV1SpecLimitOutputReference) SetDefault(val *map[string]*string) {
 	if err := j.validateSetDefaultParameters(val); err != nil {
 		panic(err)
 	}
@@ -351,7 +350,7 @@ func (j *jsiiProxy_LimitRangeV1SpecLimitOutputReference)SetDefault(val *map[stri
 	)
 }
 
-func (j *jsiiProxy_LimitRangeV1SpecLimitOutputReference)SetDefaultRequest(val *map[string]*string) {
+func (j *jsiiProxy_LimitRangeV1SpecLimitOutputReference) SetDefaultRequest(val *map[string]*string) {
 	if err := j.validateSetDefaultRequestParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,7 +361,7 @@ func (j *jsiiProxy_LimitRangeV1SpecLimitOutputReference)SetDefaultRequest(val *m
 	)
 }
 
-func (j *jsiiProxy_LimitRangeV1SpecLimitOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_LimitRangeV1SpecLimitOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -373,7 +372,7 @@ func (j *jsiiProxy_LimitRangeV1SpecLimitOutputReference)SetInternalValue(val int
 	)
 }
 
-func (j *jsiiProxy_LimitRangeV1SpecLimitOutputReference)SetMax(val *map[string]*string) {
+func (j *jsiiProxy_LimitRangeV1SpecLimitOutputReference) SetMax(val *map[string]*string) {
 	if err := j.validateSetMaxParameters(val); err != nil {
 		panic(err)
 	}
@@ -384,7 +383,7 @@ func (j *jsiiProxy_LimitRangeV1SpecLimitOutputReference)SetMax(val *map[string]*
 	)
 }
 
-func (j *jsiiProxy_LimitRangeV1SpecLimitOutputReference)SetMaxLimitRequestRatio(val *map[string]*string) {
+func (j *jsiiProxy_LimitRangeV1SpecLimitOutputReference) SetMaxLimitRequestRatio(val *map[string]*string) {
 	if err := j.validateSetMaxLimitRequestRatioParameters(val); err != nil {
 		panic(err)
 	}
@@ -395,7 +394,7 @@ func (j *jsiiProxy_LimitRangeV1SpecLimitOutputReference)SetMaxLimitRequestRatio(
 	)
 }
 
-func (j *jsiiProxy_LimitRangeV1SpecLimitOutputReference)SetMin(val *map[string]*string) {
+func (j *jsiiProxy_LimitRangeV1SpecLimitOutputReference) SetMin(val *map[string]*string) {
 	if err := j.validateSetMinParameters(val); err != nil {
 		panic(err)
 	}
@@ -406,7 +405,7 @@ func (j *jsiiProxy_LimitRangeV1SpecLimitOutputReference)SetMin(val *map[string]*
 	)
 }
 
-func (j *jsiiProxy_LimitRangeV1SpecLimitOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LimitRangeV1SpecLimitOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,7 +416,7 @@ func (j *jsiiProxy_LimitRangeV1SpecLimitOutputReference)SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_LimitRangeV1SpecLimitOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LimitRangeV1SpecLimitOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,7 +427,7 @@ func (j *jsiiProxy_LimitRangeV1SpecLimitOutputReference)SetTerraformResource(val
 	)
 }
 
-func (j *jsiiProxy_LimitRangeV1SpecLimitOutputReference)SetType(val *string) {
+func (j *jsiiProxy_LimitRangeV1SpecLimitOutputReference) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,16 +451,16 @@ func (l *jsiiProxy_LimitRangeV1SpecLimitOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (l *jsiiProxy_LimitRangeV1SpecLimitOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LimitRangeV1SpecLimitOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (l *jsiiProxy_LimitRangeV1SpecLimitOutputReference) GetBooleanAttribute(ter
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -493,7 +492,7 @@ func (l *jsiiProxy_LimitRangeV1SpecLimitOutputReference) GetBooleanMapAttribute(
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -509,7 +508,7 @@ func (l *jsiiProxy_LimitRangeV1SpecLimitOutputReference) GetListAttribute(terraf
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -525,7 +524,7 @@ func (l *jsiiProxy_LimitRangeV1SpecLimitOutputReference) GetNumberAttribute(terr
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -541,7 +540,7 @@ func (l *jsiiProxy_LimitRangeV1SpecLimitOutputReference) GetNumberListAttribute(
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -557,7 +556,7 @@ func (l *jsiiProxy_LimitRangeV1SpecLimitOutputReference) GetNumberMapAttribute(t
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -573,7 +572,7 @@ func (l *jsiiProxy_LimitRangeV1SpecLimitOutputReference) GetStringAttribute(terr
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -589,7 +588,7 @@ func (l *jsiiProxy_LimitRangeV1SpecLimitOutputReference) GetStringMapAttribute(t
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -618,7 +617,7 @@ func (l *jsiiProxy_LimitRangeV1SpecLimitOutputReference) InterpolationForAttribu
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -673,16 +672,16 @@ func (l *jsiiProxy_LimitRangeV1SpecLimitOutputReference) ResetType() {
 	)
 }
 
-func (l *jsiiProxy_LimitRangeV1SpecLimitOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LimitRangeV1SpecLimitOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := l.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -701,4 +700,3 @@ func (l *jsiiProxy_LimitRangeV1SpecLimitOutputReference) ToString() *string {
 
 	return returns
 }
-

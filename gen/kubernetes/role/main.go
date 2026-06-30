@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.role.Role",
-		reflect.TypeOf((*Role)(nil)).Elem(),
+		reflect.TypeFor[Role](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,7 +62,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Role{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -70,15 +70,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.role.RoleConfig",
-		reflect.TypeOf((*RoleConfig)(nil)).Elem(),
+		reflect.TypeFor[RoleConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.role.RoleMetadata",
-		reflect.TypeOf((*RoleMetadata)(nil)).Elem(),
+		reflect.TypeFor[RoleMetadata](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.role.RoleMetadataOutputReference",
-		reflect.TypeOf((*RoleMetadataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[RoleMetadataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
 			_jsii_.MemberProperty{JsiiProperty: "annotationsInput", GoGetter: "AnnotationsInput"},
@@ -120,7 +120,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RoleMetadataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -128,11 +128,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.role.RoleRule",
-		reflect.TypeOf((*RoleRule)(nil)).Elem(),
+		reflect.TypeFor[RoleRule](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.role.RoleRuleList",
-		reflect.TypeOf((*RoleRuleList)(nil)).Elem(),
+		reflect.TypeFor[RoleRuleList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -146,7 +146,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RoleRuleList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -154,7 +154,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.role.RoleRuleOutputReference",
-		reflect.TypeOf((*RoleRuleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[RoleRuleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiGroups", GoGetter: "ApiGroups"},
 			_jsii_.MemberProperty{JsiiProperty: "apiGroupsInput", GoGetter: "ApiGroupsInput"},
@@ -187,7 +187,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "verbs", GoGetter: "Verbs"},
 			_jsii_.MemberProperty{JsiiProperty: "verbsInput", GoGetter: "VerbsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RoleRuleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

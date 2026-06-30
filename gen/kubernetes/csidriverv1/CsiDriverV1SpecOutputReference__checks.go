@@ -98,7 +98,7 @@ func (c *jsiiProxy_CsiDriverV1SpecOutputReference) validateResolveParameters(_co
 	return nil
 }
 
-func (j *jsiiProxy_CsiDriverV1SpecOutputReference) validateSetAttachRequiredParameters(val interface{}) error {
+func (j *jsiiProxy_CsiDriverV1SpecOutputReference) validateSetAttachRequiredParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -118,7 +118,7 @@ func (j *jsiiProxy_CsiDriverV1SpecOutputReference) validateSetAttachRequiredPara
 	return nil
 }
 
-func (j *jsiiProxy_CsiDriverV1SpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CsiDriverV1SpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -191,7 +191,7 @@ func (j *jsiiProxy_CsiDriverV1SpecOutputReference) validateSetInternalValueParam
 	return nil
 }
 
-func (j *jsiiProxy_CsiDriverV1SpecOutputReference) validateSetPodInfoOnMountParameters(val interface{}) error {
+func (j *jsiiProxy_CsiDriverV1SpecOutputReference) validateSetPodInfoOnMountParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -246,4 +246,3 @@ func validateNewCsiDriverV1SpecOutputReferenceParameters(terraformResource cdktf
 
 	return nil
 }
-

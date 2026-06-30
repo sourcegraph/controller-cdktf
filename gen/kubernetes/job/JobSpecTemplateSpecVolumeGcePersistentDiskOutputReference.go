@@ -12,9 +12,9 @@ type JobSpecTemplateSpecVolumeGcePersistentDiskOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -38,9 +38,9 @@ type JobSpecTemplateSpecVolumeGcePersistentDiskOutputReference interface {
 	PdName() *string
 	SetPdName(val *string)
 	PdNameInput() *string
-	ReadOnly() interface{}
-	SetReadOnly(val interface{})
-	ReadOnlyInput() interface{}
+	ReadOnly() any
+	SetReadOnly(val any)
+	ReadOnlyInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -52,7 +52,7 @@ type JobSpecTemplateSpecVolumeGcePersistentDiskOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -78,7 +78,7 @@ type JobSpecTemplateSpecVolumeGcePersistentDiskOutputReference interface {
 	ResetReadOnly()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -91,8 +91,8 @@ type jsiiProxy_JobSpecTemplateSpecVolumeGcePersistentDiskOutputReference struct 
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeGcePersistentDiskOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeGcePersistentDiskOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -201,8 +201,8 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeGcePersistentDiskOutputReference) Pd
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeGcePersistentDiskOutputReference) ReadOnly() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeGcePersistentDiskOutputReference) ReadOnly() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"readOnly",
@@ -211,8 +211,8 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeGcePersistentDiskOutputReference) Re
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeGcePersistentDiskOutputReference) ReadOnlyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeGcePersistentDiskOutputReference) ReadOnlyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"readOnlyInput",
@@ -241,7 +241,6 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeGcePersistentDiskOutputReference) Te
 	return returns
 }
 
-
 func NewJobSpecTemplateSpecVolumeGcePersistentDiskOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) JobSpecTemplateSpecVolumeGcePersistentDiskOutputReference {
 	_init_.Initialize()
 
@@ -252,7 +251,7 @@ func NewJobSpecTemplateSpecVolumeGcePersistentDiskOutputReference(terraformResou
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecVolumeGcePersistentDiskOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -264,12 +263,12 @@ func NewJobSpecTemplateSpecVolumeGcePersistentDiskOutputReference_Override(j Job
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecVolumeGcePersistentDiskOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		j,
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeGcePersistentDiskOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeGcePersistentDiskOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -280,7 +279,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeGcePersistentDiskOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeGcePersistentDiskOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeGcePersistentDiskOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -291,7 +290,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeGcePersistentDiskOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeGcePersistentDiskOutputReference)SetFsType(val *string) {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeGcePersistentDiskOutputReference) SetFsType(val *string) {
 	if err := j.validateSetFsTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -302,7 +301,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeGcePersistentDiskOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeGcePersistentDiskOutputReference)SetInternalValue(val *JobSpecTemplateSpecVolumeGcePersistentDisk) {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeGcePersistentDiskOutputReference) SetInternalValue(val *JobSpecTemplateSpecVolumeGcePersistentDisk) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -313,7 +312,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeGcePersistentDiskOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeGcePersistentDiskOutputReference)SetPartition(val *float64) {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeGcePersistentDiskOutputReference) SetPartition(val *float64) {
 	if err := j.validateSetPartitionParameters(val); err != nil {
 		panic(err)
 	}
@@ -324,7 +323,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeGcePersistentDiskOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeGcePersistentDiskOutputReference)SetPdName(val *string) {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeGcePersistentDiskOutputReference) SetPdName(val *string) {
 	if err := j.validateSetPdNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,7 +334,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeGcePersistentDiskOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeGcePersistentDiskOutputReference)SetReadOnly(val interface{}) {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeGcePersistentDiskOutputReference) SetReadOnly(val any) {
 	if err := j.validateSetReadOnlyParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,7 +345,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeGcePersistentDiskOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeGcePersistentDiskOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeGcePersistentDiskOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -357,7 +356,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeGcePersistentDiskOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeGcePersistentDiskOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeGcePersistentDiskOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -381,16 +380,16 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeGcePersistentDiskOutputReference) Co
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeGcePersistentDiskOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeGcePersistentDiskOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := j.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		j,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeGcePersistentDiskOutputReference) Ge
 	_jsii_.Invoke(
 		j,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -422,7 +421,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeGcePersistentDiskOutputReference) Ge
 	_jsii_.Invoke(
 		j,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeGcePersistentDiskOutputReference) Ge
 	_jsii_.Invoke(
 		j,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -454,7 +453,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeGcePersistentDiskOutputReference) Ge
 	_jsii_.Invoke(
 		j,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -470,7 +469,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeGcePersistentDiskOutputReference) Ge
 	_jsii_.Invoke(
 		j,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -486,7 +485,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeGcePersistentDiskOutputReference) Ge
 	_jsii_.Invoke(
 		j,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -502,7 +501,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeGcePersistentDiskOutputReference) Ge
 	_jsii_.Invoke(
 		j,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -518,7 +517,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeGcePersistentDiskOutputReference) Ge
 	_jsii_.Invoke(
 		j,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -547,7 +546,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeGcePersistentDiskOutputReference) In
 	_jsii_.Invoke(
 		j,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -578,16 +577,16 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeGcePersistentDiskOutputReference) Re
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeGcePersistentDiskOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeGcePersistentDiskOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := j.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		j,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -606,4 +605,3 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeGcePersistentDiskOutputReference) To
 
 	return returns
 }
-

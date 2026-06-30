@@ -18,9 +18,9 @@ type MutatingWebhookConfigurationV1WebhookRuleOutputReference interface {
 	ApiVersionsInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type MutatingWebhookConfigurationV1WebhookRuleOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Operations() *[]*string
 	SetOperations(val *[]*string)
 	OperationsInput() *[]*string
@@ -55,7 +55,7 @@ type MutatingWebhookConfigurationV1WebhookRuleOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type MutatingWebhookConfigurationV1WebhookRuleOutputReference interface {
 	ResetScope()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -132,8 +132,8 @@ func (j *jsiiProxy_MutatingWebhookConfigurationV1WebhookRuleOutputReference) Api
 	return returns
 }
 
-func (j *jsiiProxy_MutatingWebhookConfigurationV1WebhookRuleOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MutatingWebhookConfigurationV1WebhookRuleOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -172,8 +172,8 @@ func (j *jsiiProxy_MutatingWebhookConfigurationV1WebhookRuleOutputReference) Fqn
 	return returns
 }
 
-func (j *jsiiProxy_MutatingWebhookConfigurationV1WebhookRuleOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MutatingWebhookConfigurationV1WebhookRuleOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -262,7 +262,6 @@ func (j *jsiiProxy_MutatingWebhookConfigurationV1WebhookRuleOutputReference) Ter
 	return returns
 }
 
-
 func NewMutatingWebhookConfigurationV1WebhookRuleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) MutatingWebhookConfigurationV1WebhookRuleOutputReference {
 	_init_.Initialize()
 
@@ -273,7 +272,7 @@ func NewMutatingWebhookConfigurationV1WebhookRuleOutputReference(terraformResour
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.mutatingWebhookConfigurationV1.MutatingWebhookConfigurationV1WebhookRuleOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -285,12 +284,12 @@ func NewMutatingWebhookConfigurationV1WebhookRuleOutputReference_Override(m Muta
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.mutatingWebhookConfigurationV1.MutatingWebhookConfigurationV1WebhookRuleOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MutatingWebhookConfigurationV1WebhookRuleOutputReference)SetApiGroups(val *[]*string) {
+func (j *jsiiProxy_MutatingWebhookConfigurationV1WebhookRuleOutputReference) SetApiGroups(val *[]*string) {
 	if err := j.validateSetApiGroupsParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_MutatingWebhookConfigurationV1WebhookRuleOutputReference)SetA
 	)
 }
 
-func (j *jsiiProxy_MutatingWebhookConfigurationV1WebhookRuleOutputReference)SetApiVersions(val *[]*string) {
+func (j *jsiiProxy_MutatingWebhookConfigurationV1WebhookRuleOutputReference) SetApiVersions(val *[]*string) {
 	if err := j.validateSetApiVersionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_MutatingWebhookConfigurationV1WebhookRuleOutputReference)SetA
 	)
 }
 
-func (j *jsiiProxy_MutatingWebhookConfigurationV1WebhookRuleOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MutatingWebhookConfigurationV1WebhookRuleOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_MutatingWebhookConfigurationV1WebhookRuleOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_MutatingWebhookConfigurationV1WebhookRuleOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MutatingWebhookConfigurationV1WebhookRuleOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -334,7 +333,7 @@ func (j *jsiiProxy_MutatingWebhookConfigurationV1WebhookRuleOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_MutatingWebhookConfigurationV1WebhookRuleOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_MutatingWebhookConfigurationV1WebhookRuleOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,7 +344,7 @@ func (j *jsiiProxy_MutatingWebhookConfigurationV1WebhookRuleOutputReference)SetI
 	)
 }
 
-func (j *jsiiProxy_MutatingWebhookConfigurationV1WebhookRuleOutputReference)SetOperations(val *[]*string) {
+func (j *jsiiProxy_MutatingWebhookConfigurationV1WebhookRuleOutputReference) SetOperations(val *[]*string) {
 	if err := j.validateSetOperationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -356,7 +355,7 @@ func (j *jsiiProxy_MutatingWebhookConfigurationV1WebhookRuleOutputReference)SetO
 	)
 }
 
-func (j *jsiiProxy_MutatingWebhookConfigurationV1WebhookRuleOutputReference)SetResources(val *[]*string) {
+func (j *jsiiProxy_MutatingWebhookConfigurationV1WebhookRuleOutputReference) SetResources(val *[]*string) {
 	if err := j.validateSetResourcesParameters(val); err != nil {
 		panic(err)
 	}
@@ -367,7 +366,7 @@ func (j *jsiiProxy_MutatingWebhookConfigurationV1WebhookRuleOutputReference)SetR
 	)
 }
 
-func (j *jsiiProxy_MutatingWebhookConfigurationV1WebhookRuleOutputReference)SetScope(val *string) {
+func (j *jsiiProxy_MutatingWebhookConfigurationV1WebhookRuleOutputReference) SetScope(val *string) {
 	if err := j.validateSetScopeParameters(val); err != nil {
 		panic(err)
 	}
@@ -378,7 +377,7 @@ func (j *jsiiProxy_MutatingWebhookConfigurationV1WebhookRuleOutputReference)SetS
 	)
 }
 
-func (j *jsiiProxy_MutatingWebhookConfigurationV1WebhookRuleOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MutatingWebhookConfigurationV1WebhookRuleOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -389,7 +388,7 @@ func (j *jsiiProxy_MutatingWebhookConfigurationV1WebhookRuleOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_MutatingWebhookConfigurationV1WebhookRuleOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MutatingWebhookConfigurationV1WebhookRuleOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -413,16 +412,16 @@ func (m *jsiiProxy_MutatingWebhookConfigurationV1WebhookRuleOutputReference) Com
 	return returns
 }
 
-func (m *jsiiProxy_MutatingWebhookConfigurationV1WebhookRuleOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MutatingWebhookConfigurationV1WebhookRuleOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (m *jsiiProxy_MutatingWebhookConfigurationV1WebhookRuleOutputReference) Get
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -454,7 +453,7 @@ func (m *jsiiProxy_MutatingWebhookConfigurationV1WebhookRuleOutputReference) Get
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -470,7 +469,7 @@ func (m *jsiiProxy_MutatingWebhookConfigurationV1WebhookRuleOutputReference) Get
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -486,7 +485,7 @@ func (m *jsiiProxy_MutatingWebhookConfigurationV1WebhookRuleOutputReference) Get
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -502,7 +501,7 @@ func (m *jsiiProxy_MutatingWebhookConfigurationV1WebhookRuleOutputReference) Get
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -518,7 +517,7 @@ func (m *jsiiProxy_MutatingWebhookConfigurationV1WebhookRuleOutputReference) Get
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -534,7 +533,7 @@ func (m *jsiiProxy_MutatingWebhookConfigurationV1WebhookRuleOutputReference) Get
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -550,7 +549,7 @@ func (m *jsiiProxy_MutatingWebhookConfigurationV1WebhookRuleOutputReference) Get
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -579,7 +578,7 @@ func (m *jsiiProxy_MutatingWebhookConfigurationV1WebhookRuleOutputReference) Int
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -594,16 +593,16 @@ func (m *jsiiProxy_MutatingWebhookConfigurationV1WebhookRuleOutputReference) Res
 	)
 }
 
-func (m *jsiiProxy_MutatingWebhookConfigurationV1WebhookRuleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MutatingWebhookConfigurationV1WebhookRuleOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := m.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -622,4 +621,3 @@ func (m *jsiiProxy_MutatingWebhookConfigurationV1WebhookRuleOutputReference) ToS
 
 	return returns
 }
-

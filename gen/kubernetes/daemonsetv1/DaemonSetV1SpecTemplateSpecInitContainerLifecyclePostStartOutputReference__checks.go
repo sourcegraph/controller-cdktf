@@ -112,7 +112,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStartOut
 	return nil
 }
 
-func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStartOutputReference) validatePutTcpSocketParameters(value interface{}) error {
+func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStartOutputReference) validatePutTcpSocketParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStartOut
 	return nil
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStartOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStartOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -216,7 +216,7 @@ func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStartOut
 	return nil
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStartOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStartOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -275,4 +275,3 @@ func validateNewDaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStartOutput
 
 	return nil
 }
-

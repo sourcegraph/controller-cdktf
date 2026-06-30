@@ -12,9 +12,9 @@ type JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference 
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -31,7 +31,7 @@ type JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference 
 	SetHost(val *string)
 	HostInput() *string
 	HttpHeader() JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderList
-	HttpHeaderInput() interface{}
+	HttpHeaderInput() any
 	InternalValue() *JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGet
 	SetInternalValue(val *JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGet)
 	Path() *string
@@ -54,7 +54,7 @@ type JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference 
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference 
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutHttpHeader(value interface{})
+	PutHttpHeader(value any)
 	ResetHost()
 	ResetHttpHeader()
 	ResetPath()
@@ -83,7 +83,7 @@ type JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference 
 	ResetScheme()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,8 +96,8 @@ type jsiiProxy_JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutput
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -166,8 +166,8 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOu
 	return returns
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference) HttpHeaderInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference) HttpHeaderInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"httpHeaderInput",
@@ -266,7 +266,6 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOu
 	return returns
 }
 
-
 func NewJobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference {
 	_init_.Initialize()
 
@@ -277,7 +276,7 @@ func NewJobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReferen
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -289,12 +288,12 @@ func NewJobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReferen
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		j,
 	)
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,7 +304,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOu
 	)
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,7 +315,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOu
 	)
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference)SetHost(val *string) {
+func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference) SetHost(val *string) {
 	if err := j.validateSetHostParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOu
 	)
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference)SetInternalValue(val *JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGet) {
+func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference) SetInternalValue(val *JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGet) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOu
 	)
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference)SetPath(val *string) {
+func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference) SetPath(val *string) {
 	if err := j.validateSetPathParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOu
 	)
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference)SetPort(val *string) {
+func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference) SetPort(val *string) {
 	if err := j.validateSetPortParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOu
 	)
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference)SetScheme(val *string) {
+func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference) SetScheme(val *string) {
 	if err := j.validateSetSchemeParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOu
 	)
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOu
 	)
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -406,16 +405,16 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOu
 	return returns
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := j.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		j,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -431,7 +430,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOu
 	_jsii_.Invoke(
 		j,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -447,7 +446,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOu
 	_jsii_.Invoke(
 		j,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -463,7 +462,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOu
 	_jsii_.Invoke(
 		j,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -479,7 +478,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOu
 	_jsii_.Invoke(
 		j,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -495,7 +494,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOu
 	_jsii_.Invoke(
 		j,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -511,7 +510,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOu
 	_jsii_.Invoke(
 		j,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -527,7 +526,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOu
 	_jsii_.Invoke(
 		j,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -543,7 +542,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOu
 	_jsii_.Invoke(
 		j,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -572,21 +571,21 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOu
 	_jsii_.Invoke(
 		j,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference) PutHttpHeader(value interface{}) {
+func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference) PutHttpHeader(value any) {
 	if err := j.validatePutHttpHeaderParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		j,
 		"putHttpHeader",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -630,16 +629,16 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOu
 	)
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := j.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		j,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -658,4 +657,3 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOu
 
 	return returns
 }
-

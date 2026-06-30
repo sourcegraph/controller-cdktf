@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.dataKubernetesStorageClass.DataKubernetesStorageClass",
-		reflect.TypeOf((*DataKubernetesStorageClass)(nil)).Elem(),
+		reflect.TypeFor[DataKubernetesStorageClass](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "allowedTopologies", GoGetter: "AllowedTopologies"},
@@ -71,7 +71,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "volumeBindingMode", GoGetter: "VolumeBindingMode"},
 			_jsii_.MemberProperty{JsiiProperty: "volumeBindingModeInput", GoGetter: "VolumeBindingModeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataKubernetesStorageClass{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -79,15 +79,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.dataKubernetesStorageClass.DataKubernetesStorageClassAllowedTopologies",
-		reflect.TypeOf((*DataKubernetesStorageClassAllowedTopologies)(nil)).Elem(),
+		reflect.TypeFor[DataKubernetesStorageClassAllowedTopologies](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.dataKubernetesStorageClass.DataKubernetesStorageClassAllowedTopologiesMatchLabelExpressions",
-		reflect.TypeOf((*DataKubernetesStorageClassAllowedTopologiesMatchLabelExpressions)(nil)).Elem(),
+		reflect.TypeFor[DataKubernetesStorageClassAllowedTopologiesMatchLabelExpressions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.dataKubernetesStorageClass.DataKubernetesStorageClassAllowedTopologiesMatchLabelExpressionsList",
-		reflect.TypeOf((*DataKubernetesStorageClassAllowedTopologiesMatchLabelExpressionsList)(nil)).Elem(),
+		reflect.TypeFor[DataKubernetesStorageClassAllowedTopologiesMatchLabelExpressionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -101,7 +101,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataKubernetesStorageClassAllowedTopologiesMatchLabelExpressionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -109,7 +109,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.dataKubernetesStorageClass.DataKubernetesStorageClassAllowedTopologiesMatchLabelExpressionsOutputReference",
-		reflect.TypeOf((*DataKubernetesStorageClassAllowedTopologiesMatchLabelExpressionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataKubernetesStorageClassAllowedTopologiesMatchLabelExpressionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -139,7 +139,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataKubernetesStorageClassAllowedTopologiesMatchLabelExpressionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -147,7 +147,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.dataKubernetesStorageClass.DataKubernetesStorageClassAllowedTopologiesOutputReference",
-		reflect.TypeOf((*DataKubernetesStorageClassAllowedTopologiesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataKubernetesStorageClassAllowedTopologiesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -175,7 +175,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataKubernetesStorageClassAllowedTopologiesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -183,15 +183,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.dataKubernetesStorageClass.DataKubernetesStorageClassConfig",
-		reflect.TypeOf((*DataKubernetesStorageClassConfig)(nil)).Elem(),
+		reflect.TypeFor[DataKubernetesStorageClassConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.dataKubernetesStorageClass.DataKubernetesStorageClassMetadata",
-		reflect.TypeOf((*DataKubernetesStorageClassMetadata)(nil)).Elem(),
+		reflect.TypeFor[DataKubernetesStorageClassMetadata](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.dataKubernetesStorageClass.DataKubernetesStorageClassMetadataOutputReference",
-		reflect.TypeOf((*DataKubernetesStorageClassMetadataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataKubernetesStorageClassMetadataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
 			_jsii_.MemberProperty{JsiiProperty: "annotationsInput", GoGetter: "AnnotationsInput"},
@@ -227,7 +227,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataKubernetesStorageClassMetadataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

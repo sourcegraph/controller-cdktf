@@ -131,7 +131,7 @@ func (d *jsiiProxy_DaemonsetSpecOutputReference) validateResolveParameters(_cont
 	return nil
 }
 
-func (j *jsiiProxy_DaemonsetSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DaemonsetSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -247,4 +247,3 @@ func validateNewDaemonsetSpecOutputReferenceParameters(terraformResource cdktf.I
 
 	return nil
 }
-

@@ -12,9 +12,9 @@ type DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -32,9 +32,9 @@ type DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference interface {
 	GroupInput() *string
 	InternalValue() *DaemonsetSpecTemplateSpecVolumeQuobyte
 	SetInternalValue(val *DaemonsetSpecTemplateSpecVolumeQuobyte)
-	ReadOnly() interface{}
-	SetReadOnly(val interface{})
-	ReadOnlyInput() interface{}
+	ReadOnly() any
+	SetReadOnly(val any)
+	ReadOnlyInput() any
 	Registry() *string
 	SetRegistry(val *string)
 	RegistryInput() *string
@@ -55,7 +55,7 @@ type DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -81,7 +81,7 @@ type DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference interface {
 	ResetUser()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -94,8 +94,8 @@ type jsiiProxy_DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference) Intern
 	return returns
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference) ReadOnly() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference) ReadOnly() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"readOnly",
@@ -174,8 +174,8 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference) ReadOn
 	return returns
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference) ReadOnlyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference) ReadOnlyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"readOnlyInput",
@@ -264,7 +264,6 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference) Volume
 	return returns
 }
 
-
 func NewDaemonsetSpecTemplateSpecVolumeQuobyteOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference {
 	_init_.Initialize()
 
@@ -275,7 +274,7 @@ func NewDaemonsetSpecTemplateSpecVolumeQuobyteOutputReference(terraformResource 
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -287,12 +286,12 @@ func NewDaemonsetSpecTemplateSpecVolumeQuobyteOutputReference_Override(d Daemons
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference)SetGroup(val *string) {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference) SetGroup(val *string) {
 	if err := j.validateSetGroupParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference)SetGrou
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference)SetInternalValue(val *DaemonsetSpecTemplateSpecVolumeQuobyte) {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference) SetInternalValue(val *DaemonsetSpecTemplateSpecVolumeQuobyte) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference)SetInte
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference)SetReadOnly(val interface{}) {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference) SetReadOnly(val any) {
 	if err := j.validateSetReadOnlyParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference)SetRead
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference)SetRegistry(val *string) {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference) SetRegistry(val *string) {
 	if err := j.validateSetRegistryParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference)SetRegi
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -369,7 +368,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -380,7 +379,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference)SetUser(val *string) {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference) SetUser(val *string) {
 	if err := j.validateSetUserParameters(val); err != nil {
 		panic(err)
 	}
@@ -391,7 +390,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference)SetUser
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference)SetVolume(val *string) {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference) SetVolume(val *string) {
 	if err := j.validateSetVolumeParameters(val); err != nil {
 		panic(err)
 	}
@@ -415,16 +414,16 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference) Comput
 	return returns
 }
 
-func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -440,7 +439,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference) GetBoo
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -456,7 +455,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference) GetBoo
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -472,7 +471,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference) GetLis
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -488,7 +487,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference) GetNum
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -504,7 +503,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference) GetNum
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -520,7 +519,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference) GetNum
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -536,7 +535,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference) GetStr
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -552,7 +551,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference) GetStr
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -581,7 +580,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference) Interp
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -612,16 +611,16 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference) ResetU
 	)
 }
 
-func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -640,4 +639,3 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeQuobyteOutputReference) ToStri
 
 	return returns
 }
-

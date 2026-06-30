@@ -15,21 +15,21 @@ type PodSpecOutputReference interface {
 	ActiveDeadlineSecondsInput() *float64
 	Affinity() PodSpecAffinityOutputReference
 	AffinityInput() *PodSpecAffinity
-	AutomountServiceAccountToken() interface{}
-	SetAutomountServiceAccountToken(val interface{})
-	AutomountServiceAccountTokenInput() interface{}
+	AutomountServiceAccountToken() any
+	SetAutomountServiceAccountToken(val any)
+	AutomountServiceAccountTokenInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
 	Container() PodSpecContainerList
-	ContainerInput() interface{}
+	ContainerInput() any
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -40,29 +40,29 @@ type PodSpecOutputReference interface {
 	DnsPolicy() *string
 	SetDnsPolicy(val *string)
 	DnsPolicyInput() *string
-	EnableServiceLinks() interface{}
-	SetEnableServiceLinks(val interface{})
-	EnableServiceLinksInput() interface{}
+	EnableServiceLinks() any
+	SetEnableServiceLinks(val any)
+	EnableServiceLinksInput() any
 	// Experimental.
 	Fqn() *string
 	HostAliases() PodSpecHostAliasesList
-	HostAliasesInput() interface{}
-	HostIpc() interface{}
-	SetHostIpc(val interface{})
-	HostIpcInput() interface{}
+	HostAliasesInput() any
+	HostIpc() any
+	SetHostIpc(val any)
+	HostIpcInput() any
 	Hostname() *string
 	SetHostname(val *string)
 	HostnameInput() *string
-	HostNetwork() interface{}
-	SetHostNetwork(val interface{})
-	HostNetworkInput() interface{}
-	HostPid() interface{}
-	SetHostPid(val interface{})
-	HostPidInput() interface{}
+	HostNetwork() any
+	SetHostNetwork(val any)
+	HostNetworkInput() any
+	HostPid() any
+	SetHostPid(val any)
+	HostPidInput() any
 	ImagePullSecrets() PodSpecImagePullSecretsList
-	ImagePullSecretsInput() interface{}
+	ImagePullSecretsInput() any
 	InitContainer() PodSpecInitContainerList
-	InitContainerInput() interface{}
+	InitContainerInput() any
 	InternalValue() *PodSpec
 	SetInternalValue(val *PodSpec)
 	NodeName() *string
@@ -75,7 +75,7 @@ type PodSpecOutputReference interface {
 	SetPriorityClassName(val *string)
 	PriorityClassNameInput() *string
 	ReadinessGate() PodSpecReadinessGateList
-	ReadinessGateInput() interface{}
+	ReadinessGateInput() any
 	RestartPolicy() *string
 	SetRestartPolicy(val *string)
 	RestartPolicyInput() *string
@@ -84,9 +84,9 @@ type PodSpecOutputReference interface {
 	ServiceAccountName() *string
 	SetServiceAccountName(val *string)
 	ServiceAccountNameInput() *string
-	ShareProcessNamespace() interface{}
-	SetShareProcessNamespace(val interface{})
-	ShareProcessNamespaceInput() interface{}
+	ShareProcessNamespace() any
+	SetShareProcessNamespace(val any)
+	ShareProcessNamespaceInput() any
 	Subdomain() *string
 	SetSubdomain(val *string)
 	SubdomainInput() *string
@@ -102,15 +102,15 @@ type PodSpecOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	Toleration() PodSpecTolerationList
-	TolerationInput() interface{}
+	TolerationInput() any
 	TopologySpreadConstraint() PodSpecTopologySpreadConstraintList
-	TopologySpreadConstraintInput() interface{}
+	TopologySpreadConstraintInput() any
 	Volume() PodSpecVolumeList
-	VolumeInput() interface{}
+	VolumeInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -132,16 +132,16 @@ type PodSpecOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAffinity(value *PodSpecAffinity)
-	PutContainer(value interface{})
+	PutContainer(value any)
 	PutDnsConfig(value *PodSpecDnsConfig)
-	PutHostAliases(value interface{})
-	PutImagePullSecrets(value interface{})
-	PutInitContainer(value interface{})
-	PutReadinessGate(value interface{})
+	PutHostAliases(value any)
+	PutImagePullSecrets(value any)
+	PutInitContainer(value any)
+	PutReadinessGate(value any)
 	PutSecurityContext(value *PodSpecSecurityContext)
-	PutToleration(value interface{})
-	PutTopologySpreadConstraint(value interface{})
-	PutVolume(value interface{})
+	PutToleration(value any)
+	PutTopologySpreadConstraint(value any)
+	PutVolume(value any)
 	ResetActiveDeadlineSeconds()
 	ResetAffinity()
 	ResetAutomountServiceAccountToken()
@@ -171,7 +171,7 @@ type PodSpecOutputReference interface {
 	ResetVolume()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -224,8 +224,8 @@ func (j *jsiiProxy_PodSpecOutputReference) AffinityInput() *PodSpecAffinity {
 	return returns
 }
 
-func (j *jsiiProxy_PodSpecOutputReference) AutomountServiceAccountToken() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSpecOutputReference) AutomountServiceAccountToken() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"automountServiceAccountToken",
@@ -234,8 +234,8 @@ func (j *jsiiProxy_PodSpecOutputReference) AutomountServiceAccountToken() interf
 	return returns
 }
 
-func (j *jsiiProxy_PodSpecOutputReference) AutomountServiceAccountTokenInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSpecOutputReference) AutomountServiceAccountTokenInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"automountServiceAccountTokenInput",
@@ -244,8 +244,8 @@ func (j *jsiiProxy_PodSpecOutputReference) AutomountServiceAccountTokenInput() i
 	return returns
 }
 
-func (j *jsiiProxy_PodSpecOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSpecOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -274,8 +274,8 @@ func (j *jsiiProxy_PodSpecOutputReference) Container() PodSpecContainerList {
 	return returns
 }
 
-func (j *jsiiProxy_PodSpecOutputReference) ContainerInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSpecOutputReference) ContainerInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"containerInput",
@@ -334,8 +334,8 @@ func (j *jsiiProxy_PodSpecOutputReference) DnsPolicyInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_PodSpecOutputReference) EnableServiceLinks() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSpecOutputReference) EnableServiceLinks() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableServiceLinks",
@@ -344,8 +344,8 @@ func (j *jsiiProxy_PodSpecOutputReference) EnableServiceLinks() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PodSpecOutputReference) EnableServiceLinksInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSpecOutputReference) EnableServiceLinksInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableServiceLinksInput",
@@ -374,8 +374,8 @@ func (j *jsiiProxy_PodSpecOutputReference) HostAliases() PodSpecHostAliasesList 
 	return returns
 }
 
-func (j *jsiiProxy_PodSpecOutputReference) HostAliasesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSpecOutputReference) HostAliasesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"hostAliasesInput",
@@ -384,8 +384,8 @@ func (j *jsiiProxy_PodSpecOutputReference) HostAliasesInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PodSpecOutputReference) HostIpc() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSpecOutputReference) HostIpc() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"hostIpc",
@@ -394,8 +394,8 @@ func (j *jsiiProxy_PodSpecOutputReference) HostIpc() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PodSpecOutputReference) HostIpcInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSpecOutputReference) HostIpcInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"hostIpcInput",
@@ -424,8 +424,8 @@ func (j *jsiiProxy_PodSpecOutputReference) HostnameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_PodSpecOutputReference) HostNetwork() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSpecOutputReference) HostNetwork() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"hostNetwork",
@@ -434,8 +434,8 @@ func (j *jsiiProxy_PodSpecOutputReference) HostNetwork() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PodSpecOutputReference) HostNetworkInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSpecOutputReference) HostNetworkInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"hostNetworkInput",
@@ -444,8 +444,8 @@ func (j *jsiiProxy_PodSpecOutputReference) HostNetworkInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PodSpecOutputReference) HostPid() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSpecOutputReference) HostPid() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"hostPid",
@@ -454,8 +454,8 @@ func (j *jsiiProxy_PodSpecOutputReference) HostPid() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PodSpecOutputReference) HostPidInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSpecOutputReference) HostPidInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"hostPidInput",
@@ -474,8 +474,8 @@ func (j *jsiiProxy_PodSpecOutputReference) ImagePullSecrets() PodSpecImagePullSe
 	return returns
 }
 
-func (j *jsiiProxy_PodSpecOutputReference) ImagePullSecretsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSpecOutputReference) ImagePullSecretsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"imagePullSecretsInput",
@@ -494,8 +494,8 @@ func (j *jsiiProxy_PodSpecOutputReference) InitContainer() PodSpecInitContainerL
 	return returns
 }
 
-func (j *jsiiProxy_PodSpecOutputReference) InitContainerInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSpecOutputReference) InitContainerInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"initContainerInput",
@@ -584,8 +584,8 @@ func (j *jsiiProxy_PodSpecOutputReference) ReadinessGate() PodSpecReadinessGateL
 	return returns
 }
 
-func (j *jsiiProxy_PodSpecOutputReference) ReadinessGateInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSpecOutputReference) ReadinessGateInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"readinessGateInput",
@@ -654,8 +654,8 @@ func (j *jsiiProxy_PodSpecOutputReference) ServiceAccountNameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_PodSpecOutputReference) ShareProcessNamespace() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSpecOutputReference) ShareProcessNamespace() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"shareProcessNamespace",
@@ -664,8 +664,8 @@ func (j *jsiiProxy_PodSpecOutputReference) ShareProcessNamespace() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PodSpecOutputReference) ShareProcessNamespaceInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSpecOutputReference) ShareProcessNamespaceInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"shareProcessNamespaceInput",
@@ -744,8 +744,8 @@ func (j *jsiiProxy_PodSpecOutputReference) Toleration() PodSpecTolerationList {
 	return returns
 }
 
-func (j *jsiiProxy_PodSpecOutputReference) TolerationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSpecOutputReference) TolerationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tolerationInput",
@@ -764,8 +764,8 @@ func (j *jsiiProxy_PodSpecOutputReference) TopologySpreadConstraint() PodSpecTop
 	return returns
 }
 
-func (j *jsiiProxy_PodSpecOutputReference) TopologySpreadConstraintInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSpecOutputReference) TopologySpreadConstraintInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"topologySpreadConstraintInput",
@@ -784,8 +784,8 @@ func (j *jsiiProxy_PodSpecOutputReference) Volume() PodSpecVolumeList {
 	return returns
 }
 
-func (j *jsiiProxy_PodSpecOutputReference) VolumeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSpecOutputReference) VolumeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"volumeInput",
@@ -793,7 +793,6 @@ func (j *jsiiProxy_PodSpecOutputReference) VolumeInput() interface{} {
 	)
 	return returns
 }
-
 
 func NewPodSpecOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PodSpecOutputReference {
 	_init_.Initialize()
@@ -805,7 +804,7 @@ func NewPodSpecOutputReference(terraformResource cdktf.IInterpolatingParent, ter
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.pod.PodSpecOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -817,12 +816,12 @@ func NewPodSpecOutputReference_Override(p PodSpecOutputReference, terraformResou
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.pod.PodSpecOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PodSpecOutputReference)SetActiveDeadlineSeconds(val *float64) {
+func (j *jsiiProxy_PodSpecOutputReference) SetActiveDeadlineSeconds(val *float64) {
 	if err := j.validateSetActiveDeadlineSecondsParameters(val); err != nil {
 		panic(err)
 	}
@@ -833,7 +832,7 @@ func (j *jsiiProxy_PodSpecOutputReference)SetActiveDeadlineSeconds(val *float64)
 	)
 }
 
-func (j *jsiiProxy_PodSpecOutputReference)SetAutomountServiceAccountToken(val interface{}) {
+func (j *jsiiProxy_PodSpecOutputReference) SetAutomountServiceAccountToken(val any) {
 	if err := j.validateSetAutomountServiceAccountTokenParameters(val); err != nil {
 		panic(err)
 	}
@@ -844,7 +843,7 @@ func (j *jsiiProxy_PodSpecOutputReference)SetAutomountServiceAccountToken(val in
 	)
 }
 
-func (j *jsiiProxy_PodSpecOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PodSpecOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -855,7 +854,7 @@ func (j *jsiiProxy_PodSpecOutputReference)SetComplexObjectIndex(val interface{})
 	)
 }
 
-func (j *jsiiProxy_PodSpecOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PodSpecOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -866,7 +865,7 @@ func (j *jsiiProxy_PodSpecOutputReference)SetComplexObjectIsFromSet(val *bool) {
 	)
 }
 
-func (j *jsiiProxy_PodSpecOutputReference)SetDnsPolicy(val *string) {
+func (j *jsiiProxy_PodSpecOutputReference) SetDnsPolicy(val *string) {
 	if err := j.validateSetDnsPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -877,7 +876,7 @@ func (j *jsiiProxy_PodSpecOutputReference)SetDnsPolicy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PodSpecOutputReference)SetEnableServiceLinks(val interface{}) {
+func (j *jsiiProxy_PodSpecOutputReference) SetEnableServiceLinks(val any) {
 	if err := j.validateSetEnableServiceLinksParameters(val); err != nil {
 		panic(err)
 	}
@@ -888,7 +887,7 @@ func (j *jsiiProxy_PodSpecOutputReference)SetEnableServiceLinks(val interface{})
 	)
 }
 
-func (j *jsiiProxy_PodSpecOutputReference)SetHostIpc(val interface{}) {
+func (j *jsiiProxy_PodSpecOutputReference) SetHostIpc(val any) {
 	if err := j.validateSetHostIpcParameters(val); err != nil {
 		panic(err)
 	}
@@ -899,7 +898,7 @@ func (j *jsiiProxy_PodSpecOutputReference)SetHostIpc(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PodSpecOutputReference)SetHostname(val *string) {
+func (j *jsiiProxy_PodSpecOutputReference) SetHostname(val *string) {
 	if err := j.validateSetHostnameParameters(val); err != nil {
 		panic(err)
 	}
@@ -910,7 +909,7 @@ func (j *jsiiProxy_PodSpecOutputReference)SetHostname(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PodSpecOutputReference)SetHostNetwork(val interface{}) {
+func (j *jsiiProxy_PodSpecOutputReference) SetHostNetwork(val any) {
 	if err := j.validateSetHostNetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -921,7 +920,7 @@ func (j *jsiiProxy_PodSpecOutputReference)SetHostNetwork(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PodSpecOutputReference)SetHostPid(val interface{}) {
+func (j *jsiiProxy_PodSpecOutputReference) SetHostPid(val any) {
 	if err := j.validateSetHostPidParameters(val); err != nil {
 		panic(err)
 	}
@@ -932,7 +931,7 @@ func (j *jsiiProxy_PodSpecOutputReference)SetHostPid(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PodSpecOutputReference)SetInternalValue(val *PodSpec) {
+func (j *jsiiProxy_PodSpecOutputReference) SetInternalValue(val *PodSpec) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -943,7 +942,7 @@ func (j *jsiiProxy_PodSpecOutputReference)SetInternalValue(val *PodSpec) {
 	)
 }
 
-func (j *jsiiProxy_PodSpecOutputReference)SetNodeName(val *string) {
+func (j *jsiiProxy_PodSpecOutputReference) SetNodeName(val *string) {
 	if err := j.validateSetNodeNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -954,7 +953,7 @@ func (j *jsiiProxy_PodSpecOutputReference)SetNodeName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PodSpecOutputReference)SetNodeSelector(val *map[string]*string) {
+func (j *jsiiProxy_PodSpecOutputReference) SetNodeSelector(val *map[string]*string) {
 	if err := j.validateSetNodeSelectorParameters(val); err != nil {
 		panic(err)
 	}
@@ -965,7 +964,7 @@ func (j *jsiiProxy_PodSpecOutputReference)SetNodeSelector(val *map[string]*strin
 	)
 }
 
-func (j *jsiiProxy_PodSpecOutputReference)SetPriorityClassName(val *string) {
+func (j *jsiiProxy_PodSpecOutputReference) SetPriorityClassName(val *string) {
 	if err := j.validateSetPriorityClassNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -976,7 +975,7 @@ func (j *jsiiProxy_PodSpecOutputReference)SetPriorityClassName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PodSpecOutputReference)SetRestartPolicy(val *string) {
+func (j *jsiiProxy_PodSpecOutputReference) SetRestartPolicy(val *string) {
 	if err := j.validateSetRestartPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -987,7 +986,7 @@ func (j *jsiiProxy_PodSpecOutputReference)SetRestartPolicy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PodSpecOutputReference)SetServiceAccountName(val *string) {
+func (j *jsiiProxy_PodSpecOutputReference) SetServiceAccountName(val *string) {
 	if err := j.validateSetServiceAccountNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -998,7 +997,7 @@ func (j *jsiiProxy_PodSpecOutputReference)SetServiceAccountName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PodSpecOutputReference)SetShareProcessNamespace(val interface{}) {
+func (j *jsiiProxy_PodSpecOutputReference) SetShareProcessNamespace(val any) {
 	if err := j.validateSetShareProcessNamespaceParameters(val); err != nil {
 		panic(err)
 	}
@@ -1009,7 +1008,7 @@ func (j *jsiiProxy_PodSpecOutputReference)SetShareProcessNamespace(val interface
 	)
 }
 
-func (j *jsiiProxy_PodSpecOutputReference)SetSubdomain(val *string) {
+func (j *jsiiProxy_PodSpecOutputReference) SetSubdomain(val *string) {
 	if err := j.validateSetSubdomainParameters(val); err != nil {
 		panic(err)
 	}
@@ -1020,7 +1019,7 @@ func (j *jsiiProxy_PodSpecOutputReference)SetSubdomain(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PodSpecOutputReference)SetTerminationGracePeriodSeconds(val *float64) {
+func (j *jsiiProxy_PodSpecOutputReference) SetTerminationGracePeriodSeconds(val *float64) {
 	if err := j.validateSetTerminationGracePeriodSecondsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1031,7 +1030,7 @@ func (j *jsiiProxy_PodSpecOutputReference)SetTerminationGracePeriodSeconds(val *
 	)
 }
 
-func (j *jsiiProxy_PodSpecOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PodSpecOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1042,7 +1041,7 @@ func (j *jsiiProxy_PodSpecOutputReference)SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PodSpecOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PodSpecOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -1066,16 +1065,16 @@ func (p *jsiiProxy_PodSpecOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (p *jsiiProxy_PodSpecOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PodSpecOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1091,7 +1090,7 @@ func (p *jsiiProxy_PodSpecOutputReference) GetBooleanAttribute(terraformAttribut
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1107,7 +1106,7 @@ func (p *jsiiProxy_PodSpecOutputReference) GetBooleanMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1123,7 +1122,7 @@ func (p *jsiiProxy_PodSpecOutputReference) GetListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1139,7 +1138,7 @@ func (p *jsiiProxy_PodSpecOutputReference) GetNumberAttribute(terraformAttribute
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1155,7 +1154,7 @@ func (p *jsiiProxy_PodSpecOutputReference) GetNumberListAttribute(terraformAttri
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1171,7 +1170,7 @@ func (p *jsiiProxy_PodSpecOutputReference) GetNumberMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1187,7 +1186,7 @@ func (p *jsiiProxy_PodSpecOutputReference) GetStringAttribute(terraformAttribute
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1203,7 +1202,7 @@ func (p *jsiiProxy_PodSpecOutputReference) GetStringMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1232,7 +1231,7 @@ func (p *jsiiProxy_PodSpecOutputReference) InterpolationForAttribute(property *s
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -1246,18 +1245,18 @@ func (p *jsiiProxy_PodSpecOutputReference) PutAffinity(value *PodSpecAffinity) {
 	_jsii_.InvokeVoid(
 		p,
 		"putAffinity",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (p *jsiiProxy_PodSpecOutputReference) PutContainer(value interface{}) {
+func (p *jsiiProxy_PodSpecOutputReference) PutContainer(value any) {
 	if err := p.validatePutContainerParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"putContainer",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1268,51 +1267,51 @@ func (p *jsiiProxy_PodSpecOutputReference) PutDnsConfig(value *PodSpecDnsConfig)
 	_jsii_.InvokeVoid(
 		p,
 		"putDnsConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (p *jsiiProxy_PodSpecOutputReference) PutHostAliases(value interface{}) {
+func (p *jsiiProxy_PodSpecOutputReference) PutHostAliases(value any) {
 	if err := p.validatePutHostAliasesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"putHostAliases",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (p *jsiiProxy_PodSpecOutputReference) PutImagePullSecrets(value interface{}) {
+func (p *jsiiProxy_PodSpecOutputReference) PutImagePullSecrets(value any) {
 	if err := p.validatePutImagePullSecretsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"putImagePullSecrets",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (p *jsiiProxy_PodSpecOutputReference) PutInitContainer(value interface{}) {
+func (p *jsiiProxy_PodSpecOutputReference) PutInitContainer(value any) {
 	if err := p.validatePutInitContainerParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"putInitContainer",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (p *jsiiProxy_PodSpecOutputReference) PutReadinessGate(value interface{}) {
+func (p *jsiiProxy_PodSpecOutputReference) PutReadinessGate(value any) {
 	if err := p.validatePutReadinessGateParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"putReadinessGate",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1323,40 +1322,40 @@ func (p *jsiiProxy_PodSpecOutputReference) PutSecurityContext(value *PodSpecSecu
 	_jsii_.InvokeVoid(
 		p,
 		"putSecurityContext",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (p *jsiiProxy_PodSpecOutputReference) PutToleration(value interface{}) {
+func (p *jsiiProxy_PodSpecOutputReference) PutToleration(value any) {
 	if err := p.validatePutTolerationParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"putToleration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (p *jsiiProxy_PodSpecOutputReference) PutTopologySpreadConstraint(value interface{}) {
+func (p *jsiiProxy_PodSpecOutputReference) PutTopologySpreadConstraint(value any) {
 	if err := p.validatePutTopologySpreadConstraintParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"putTopologySpreadConstraint",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (p *jsiiProxy_PodSpecOutputReference) PutVolume(value interface{}) {
+func (p *jsiiProxy_PodSpecOutputReference) PutVolume(value any) {
 	if err := p.validatePutVolumeParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"putVolume",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1576,16 +1575,16 @@ func (p *jsiiProxy_PodSpecOutputReference) ResetVolume() {
 	)
 }
 
-func (p *jsiiProxy_PodSpecOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PodSpecOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1604,4 +1603,3 @@ func (p *jsiiProxy_PodSpecOutputReference) ToString() *string {
 
 	return returns
 }
-

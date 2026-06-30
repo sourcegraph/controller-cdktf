@@ -34,7 +34,7 @@ func (h *jsiiProxy_HorizontalPodAutoscalerSpecMetricPodsMetricSelectorMatchExpre
 	return nil
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscalerSpecMetricPodsMetricSelectorMatchExpressionsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_HorizontalPodAutoscalerSpecMetricPodsMetricSelectorMatchExpressionsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewHorizontalPodAutoscalerSpecMetricPodsMetricSelectorMatchExpressi
 
 	return nil
 }
-

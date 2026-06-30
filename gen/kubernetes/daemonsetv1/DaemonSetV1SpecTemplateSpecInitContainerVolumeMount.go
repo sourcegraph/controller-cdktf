@@ -1,6 +1,5 @@
 package daemonsetv1
 
-
 type DaemonSetV1SpecTemplateSpecInitContainerVolumeMount struct {
 	// Path within the container at which the volume should be mounted. Must not contain ':'.
 	//
@@ -19,10 +18,9 @@ type DaemonSetV1SpecTemplateSpecInitContainerVolumeMount struct {
 	// Mounted read-only if true, read-write otherwise (false or unspecified). Defaults to false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/daemon_set_v1#read_only DaemonSetV1#read_only}
-	ReadOnly interface{} `field:"optional" json:"readOnly" yaml:"readOnly"`
+	ReadOnly any `field:"optional" json:"readOnly" yaml:"readOnly"`
 	// Path within the volume from which the container's volume should be mounted. Defaults to "" (volume's root).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/daemon_set_v1#sub_path DaemonSetV1#sub_path}
 	SubPath *string `field:"optional" json:"subPath" yaml:"subPath"`
 }
-

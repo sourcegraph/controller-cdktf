@@ -90,7 +90,7 @@ func (p *jsiiProxy_PodSpecContainerLifecyclePreStopHttpGetOutputReference) valid
 	return nil
 }
 
-func (p *jsiiProxy_PodSpecContainerLifecyclePreStopHttpGetOutputReference) validatePutHttpHeaderParameters(value interface{}) error {
+func (p *jsiiProxy_PodSpecContainerLifecyclePreStopHttpGetOutputReference) validatePutHttpHeaderParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (p *jsiiProxy_PodSpecContainerLifecyclePreStopHttpGetOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecContainerLifecyclePreStopHttpGetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecContainerLifecyclePreStopHttpGetOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -261,4 +261,3 @@ func validateNewPodSpecContainerLifecyclePreStopHttpGetOutputReferenceParameters
 
 	return nil
 }
-

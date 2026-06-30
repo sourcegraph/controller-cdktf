@@ -17,8 +17,8 @@ type PodSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type PodSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList interface {
 	Get(index *float64) PodSpecInitContainerLifecyclePreStopHttpGetHttpHeaderOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_PodSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList) Fq
 	return returns
 }
 
-func (j *jsiiProxy_PodSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_PodSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList) Wr
 	return returns
 }
 
-
 func NewPodSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewPodSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList(terraformResou
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.pod.PodSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewPodSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList_Override(p Pod
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.pod.PodSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PodSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_PodSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_PodSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList)Set
 	)
 }
 
-func (j *jsiiProxy_PodSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PodSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_PodSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList)Set
 	)
 }
 
-func (j *jsiiProxy_PodSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PodSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_PodSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList)Set
 	)
 }
 
-func (j *jsiiProxy_PodSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_PodSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (p *jsiiProxy_PodSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList) Al
 	_jsii_.Invoke(
 		p,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (p *jsiiProxy_PodSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList) Ge
 	_jsii_.Invoke(
 		p,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_PodSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PodSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (p *jsiiProxy_PodSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList) To
 
 	return returns
 }
-

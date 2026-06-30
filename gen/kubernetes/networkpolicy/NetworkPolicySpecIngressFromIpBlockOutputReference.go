@@ -15,9 +15,9 @@ type NetworkPolicySpecIngressFromIpBlockOutputReference interface {
 	CidrInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -46,7 +46,7 @@ type NetworkPolicySpecIngressFromIpBlockOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type NetworkPolicySpecIngressFromIpBlockOutputReference interface {
 	ResetExcept()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -104,8 +104,8 @@ func (j *jsiiProxy_NetworkPolicySpecIngressFromIpBlockOutputReference) CidrInput
 	return returns
 }
 
-func (j *jsiiProxy_NetworkPolicySpecIngressFromIpBlockOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkPolicySpecIngressFromIpBlockOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_NetworkPolicySpecIngressFromIpBlockOutputReference) Terraform
 	return returns
 }
 
-
 func NewNetworkPolicySpecIngressFromIpBlockOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) NetworkPolicySpecIngressFromIpBlockOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewNetworkPolicySpecIngressFromIpBlockOutputReference(terraformResource cdk
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecIngressFromIpBlockOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewNetworkPolicySpecIngressFromIpBlockOutputReference_Override(n NetworkPol
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecIngressFromIpBlockOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetworkPolicySpecIngressFromIpBlockOutputReference)SetCidr(val *string) {
+func (j *jsiiProxy_NetworkPolicySpecIngressFromIpBlockOutputReference) SetCidr(val *string) {
 	if err := j.validateSetCidrParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_NetworkPolicySpecIngressFromIpBlockOutputReference)SetCidr(va
 	)
 }
 
-func (j *jsiiProxy_NetworkPolicySpecIngressFromIpBlockOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_NetworkPolicySpecIngressFromIpBlockOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_NetworkPolicySpecIngressFromIpBlockOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_NetworkPolicySpecIngressFromIpBlockOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_NetworkPolicySpecIngressFromIpBlockOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_NetworkPolicySpecIngressFromIpBlockOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_NetworkPolicySpecIngressFromIpBlockOutputReference)SetExcept(val *[]*string) {
+func (j *jsiiProxy_NetworkPolicySpecIngressFromIpBlockOutputReference) SetExcept(val *[]*string) {
 	if err := j.validateSetExceptParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_NetworkPolicySpecIngressFromIpBlockOutputReference)SetExcept(
 	)
 }
 
-func (j *jsiiProxy_NetworkPolicySpecIngressFromIpBlockOutputReference)SetInternalValue(val *NetworkPolicySpecIngressFromIpBlock) {
+func (j *jsiiProxy_NetworkPolicySpecIngressFromIpBlockOutputReference) SetInternalValue(val *NetworkPolicySpecIngressFromIpBlock) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_NetworkPolicySpecIngressFromIpBlockOutputReference)SetInterna
 	)
 }
 
-func (j *jsiiProxy_NetworkPolicySpecIngressFromIpBlockOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NetworkPolicySpecIngressFromIpBlockOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_NetworkPolicySpecIngressFromIpBlockOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_NetworkPolicySpecIngressFromIpBlockOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NetworkPolicySpecIngressFromIpBlockOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (n *jsiiProxy_NetworkPolicySpecIngressFromIpBlockOutputReference) ComputeFq
 	return returns
 }
 
-func (n *jsiiProxy_NetworkPolicySpecIngressFromIpBlockOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NetworkPolicySpecIngressFromIpBlockOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (n *jsiiProxy_NetworkPolicySpecIngressFromIpBlockOutputReference) GetBoolea
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (n *jsiiProxy_NetworkPolicySpecIngressFromIpBlockOutputReference) GetBoolea
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (n *jsiiProxy_NetworkPolicySpecIngressFromIpBlockOutputReference) GetListAt
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (n *jsiiProxy_NetworkPolicySpecIngressFromIpBlockOutputReference) GetNumber
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (n *jsiiProxy_NetworkPolicySpecIngressFromIpBlockOutputReference) GetNumber
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (n *jsiiProxy_NetworkPolicySpecIngressFromIpBlockOutputReference) GetNumber
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (n *jsiiProxy_NetworkPolicySpecIngressFromIpBlockOutputReference) GetString
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (n *jsiiProxy_NetworkPolicySpecIngressFromIpBlockOutputReference) GetString
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (n *jsiiProxy_NetworkPolicySpecIngressFromIpBlockOutputReference) Interpola
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (n *jsiiProxy_NetworkPolicySpecIngressFromIpBlockOutputReference) ResetExce
 	)
 }
 
-func (n *jsiiProxy_NetworkPolicySpecIngressFromIpBlockOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (n *jsiiProxy_NetworkPolicySpecIngressFromIpBlockOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := n.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (n *jsiiProxy_NetworkPolicySpecIngressFromIpBlockOutputReference) ToString(
 
 	return returns
 }
-

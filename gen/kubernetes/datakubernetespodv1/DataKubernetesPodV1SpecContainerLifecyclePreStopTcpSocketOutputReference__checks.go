@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataKubernetesPodV1SpecContainerLifecyclePreStopTcpSocketOutp
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesPodV1SpecContainerLifecyclePreStopTcpSocketOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataKubernetesPodV1SpecContainerLifecyclePreStopTcpSocketOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataKubernetesPodV1SpecContainerLifecyclePreStopTcpSocketOutputR
 
 	return nil
 }
-

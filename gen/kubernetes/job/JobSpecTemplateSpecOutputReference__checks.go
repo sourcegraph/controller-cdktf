@@ -101,7 +101,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) validatePutAffinityParame
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) validatePutContainerParameters(value interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) validatePutContainerParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) validatePutDnsConfigParam
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) validatePutHostAliasesParameters(value interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) validatePutHostAliasesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -174,7 +174,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) validatePutHostAliasesPar
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) validatePutImagePullSecretsParameters(value interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) validatePutImagePullSecretsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -205,7 +205,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) validatePutImagePullSecre
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) validatePutInitContainerParameters(value interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) validatePutInitContainerParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) validatePutInitContainerP
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) validatePutReadinessGateParameters(value interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) validatePutReadinessGateParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) validatePutSecurityContex
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) validatePutTolerationParameters(value interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) validatePutTolerationParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -309,7 +309,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) validatePutTolerationPara
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) validatePutTopologySpreadConstraintParameters(value interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) validatePutTopologySpreadConstraintParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -340,7 +340,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) validatePutTopologySpread
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) validatePutVolumeParameters(value interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) validatePutVolumeParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -387,7 +387,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) validateSetActiveDeadline
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) validateSetAutomountServiceAccountTokenParameters(val interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) validateSetAutomountServiceAccountTokenParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -407,7 +407,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) validateSetAutomountServi
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -480,7 +480,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) validateSetDnsPolicyParam
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) validateSetEnableServiceLinksParameters(val interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) validateSetEnableServiceLinksParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -500,7 +500,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) validateSetEnableServiceL
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) validateSetHostIpcParameters(val interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) validateSetHostIpcParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -528,7 +528,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) validateSetHostnameParame
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) validateSetHostNetworkParameters(val interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) validateSetHostNetworkParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -548,7 +548,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) validateSetHostNetworkPar
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) validateSetHostPidParameters(val interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) validateSetHostPidParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -616,7 +616,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) validateSetServiceAccount
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) validateSetShareProcessNamespaceParameters(val interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) validateSetShareProcessNamespaceParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -679,4 +679,3 @@ func validateNewJobSpecTemplateSpecOutputReferenceParameters(terraformResource c
 
 	return nil
 }
-

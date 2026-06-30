@@ -12,9 +12,9 @@ type ReplicationControllerSpecTemplateSpecTopologySpreadConstraintOutputReferenc
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,10 +27,10 @@ type ReplicationControllerSpecTemplateSpecTopologySpreadConstraintOutputReferenc
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	LabelSelector() ReplicationControllerSpecTemplateSpecTopologySpreadConstraintLabelSelectorList
-	LabelSelectorInput() interface{}
+	LabelSelectorInput() any
 	MaxSkew() *float64
 	SetMaxSkew(val *float64)
 	MaxSkewInput() *float64
@@ -51,7 +51,7 @@ type ReplicationControllerSpecTemplateSpecTopologySpreadConstraintOutputReferenc
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -72,14 +72,14 @@ type ReplicationControllerSpecTemplateSpecTopologySpreadConstraintOutputReferenc
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutLabelSelector(value interface{})
+	PutLabelSelector(value any)
 	ResetLabelSelector()
 	ResetMaxSkew()
 	ResetTopologyKey()
 	ResetWhenUnsatisfiable()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,8 +92,8 @@ type jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraintOutp
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraintOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraintOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -132,8 +132,8 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraint
 	return returns
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraintOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraintOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraint
 	return returns
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraintOutputReference) LabelSelectorInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraintOutputReference) LabelSelectorInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"labelSelectorInput",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraint
 	return returns
 }
 
-
 func NewReplicationControllerSpecTemplateSpecTopologySpreadConstraintOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecTopologySpreadConstraintOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewReplicationControllerSpecTemplateSpecTopologySpreadConstraintOutputRefer
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecTopologySpreadConstraintOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewReplicationControllerSpecTemplateSpecTopologySpreadConstraintOutputRefer
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecTopologySpreadConstraintOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraintOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraintOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraint
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraintOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraintOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraint
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraintOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraintOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraint
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraintOutputReference)SetMaxSkew(val *float64) {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraintOutputReference) SetMaxSkew(val *float64) {
 	if err := j.validateSetMaxSkewParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraint
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraintOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraintOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraint
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraintOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraintOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraint
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraintOutputReference)SetTopologyKey(val *string) {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraintOutputReference) SetTopologyKey(val *string) {
 	if err := j.validateSetTopologyKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraint
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraintOutputReference)SetWhenUnsatisfiable(val *string) {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraintOutputReference) SetWhenUnsatisfiable(val *string) {
 	if err := j.validateSetWhenUnsatisfiableParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,16 +370,16 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraint
 	return returns
 }
 
-func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraintOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraintOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -396,7 +395,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraint
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -412,7 +411,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraint
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -428,7 +427,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraint
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -444,7 +443,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraint
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -460,7 +459,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraint
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,7 +475,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraint
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -492,7 +491,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraint
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -508,7 +507,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraint
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -537,21 +536,21 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraint
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraintOutputReference) PutLabelSelector(value interface{}) {
+func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraintOutputReference) PutLabelSelector(value any) {
 	if err := r.validatePutLabelSelectorParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"putLabelSelector",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -587,16 +586,16 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraint
 	)
 }
 
-func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraintOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraintOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := r.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraint
 
 	return returns
 }
-

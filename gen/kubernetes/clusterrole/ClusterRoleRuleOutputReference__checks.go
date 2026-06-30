@@ -106,7 +106,7 @@ func (j *jsiiProxy_ClusterRoleRuleOutputReference) validateSetApiGroupsParameter
 	return nil
 }
 
-func (j *jsiiProxy_ClusterRoleRuleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ClusterRoleRuleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ClusterRoleRuleOutputReference) validateSetComplexObjectIsFro
 	return nil
 }
 
-func (j *jsiiProxy_ClusterRoleRuleOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ClusterRoleRuleOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -262,4 +262,3 @@ func validateNewClusterRoleRuleOutputReferenceParameters(terraformResource cdktf
 
 	return nil
 }
-

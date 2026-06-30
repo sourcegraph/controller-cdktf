@@ -34,7 +34,7 @@ func (p *jsiiProxy_PodSpecVolumeProjectedSourcesList) validateResolveParameters(
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecVolumeProjectedSourcesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecVolumeProjectedSourcesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewPodSpecVolumeProjectedSourcesListParameters(terraformResource cd
 
 	return nil
 }
-

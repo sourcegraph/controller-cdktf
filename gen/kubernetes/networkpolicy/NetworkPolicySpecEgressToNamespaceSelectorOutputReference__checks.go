@@ -90,7 +90,7 @@ func (n *jsiiProxy_NetworkPolicySpecEgressToNamespaceSelectorOutputReference) va
 	return nil
 }
 
-func (n *jsiiProxy_NetworkPolicySpecEgressToNamespaceSelectorOutputReference) validatePutMatchExpressionsParameters(value interface{}) error {
+func (n *jsiiProxy_NetworkPolicySpecEgressToNamespaceSelectorOutputReference) validatePutMatchExpressionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (n *jsiiProxy_NetworkPolicySpecEgressToNamespaceSelectorOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_NetworkPolicySpecEgressToNamespaceSelectorOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkPolicySpecEgressToNamespaceSelectorOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -237,4 +237,3 @@ func validateNewNetworkPolicySpecEgressToNamespaceSelectorOutputReferenceParamet
 
 	return nil
 }
-

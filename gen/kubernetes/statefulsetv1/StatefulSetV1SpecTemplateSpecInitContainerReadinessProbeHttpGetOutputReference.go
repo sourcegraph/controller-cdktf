@@ -12,9 +12,9 @@ type StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetOutputRefere
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -31,7 +31,7 @@ type StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetOutputRefere
 	SetHost(val *string)
 	HostInput() *string
 	HttpHeader() StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderList
-	HttpHeaderInput() interface{}
+	HttpHeaderInput() any
 	InternalValue() *StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGet
 	SetInternalValue(val *StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGet)
 	Path() *string
@@ -54,7 +54,7 @@ type StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetOutputRefere
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetOutputRefere
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutHttpHeader(value interface{})
+	PutHttpHeader(value any)
 	ResetHost()
 	ResetHttpHeader()
 	ResetPath()
@@ -83,7 +83,7 @@ type StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetOutputRefere
 	ResetScheme()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,8 +96,8 @@ type jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetOu
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -166,8 +166,8 @@ func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpG
 	return returns
 }
 
-func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference) HttpHeaderInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference) HttpHeaderInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"httpHeaderInput",
@@ -266,7 +266,6 @@ func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpG
 	return returns
 }
 
-
 func NewStatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference {
 	_init_.Initialize()
 
@@ -277,7 +276,7 @@ func NewStatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetOutputRef
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -289,12 +288,12 @@ func NewStatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetOutputRef
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		s,
 	)
 }
 
-func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,7 +304,7 @@ func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpG
 	)
 }
 
-func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,7 +315,7 @@ func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpG
 	)
 }
 
-func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference)SetHost(val *string) {
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference) SetHost(val *string) {
 	if err := j.validateSetHostParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpG
 	)
 }
 
-func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference)SetInternalValue(val *StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGet) {
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference) SetInternalValue(val *StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGet) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpG
 	)
 }
 
-func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference)SetPath(val *string) {
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference) SetPath(val *string) {
 	if err := j.validateSetPathParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpG
 	)
 }
 
-func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference)SetPort(val *string) {
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference) SetPort(val *string) {
 	if err := j.validateSetPortParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpG
 	)
 }
 
-func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference)SetScheme(val *string) {
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference) SetScheme(val *string) {
 	if err := j.validateSetSchemeParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpG
 	)
 }
 
-func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpG
 	)
 }
 
-func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -406,16 +405,16 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpG
 	return returns
 }
 
-func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -431,7 +430,7 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpG
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -447,7 +446,7 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpG
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -463,7 +462,7 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpG
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -479,7 +478,7 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpG
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -495,7 +494,7 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpG
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -511,7 +510,7 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpG
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -527,7 +526,7 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpG
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -543,7 +542,7 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpG
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -572,21 +571,21 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpG
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference) PutHttpHeader(value interface{}) {
+func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference) PutHttpHeader(value any) {
 	if err := s.validatePutHttpHeaderParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putHttpHeader",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -630,16 +629,16 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpG
 	)
 }
 
-func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -658,4 +657,3 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpG
 
 	return returns
 }
-

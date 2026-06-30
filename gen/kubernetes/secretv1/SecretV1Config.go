@@ -6,9 +6,9 @@ import (
 
 type SecretV1Config struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type SecretV1Config struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// metadata block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/secret_v1#metadata SecretV1#metadata}
@@ -39,7 +39,7 @@ type SecretV1Config struct {
 	// Ensures that data stored in the Secret cannot be updated (only object metadata can be modified).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/secret_v1#immutable SecretV1#immutable}
-	Immutable interface{} `field:"optional" json:"immutable" yaml:"immutable"`
+	Immutable any `field:"optional" json:"immutable" yaml:"immutable"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/secret_v1#timeouts SecretV1#timeouts}
@@ -51,6 +51,5 @@ type SecretV1Config struct {
 	// Terraform will wait for the service account token to be created.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/secret_v1#wait_for_service_account_token SecretV1#wait_for_service_account_token}
-	WaitForServiceAccountToken interface{} `field:"optional" json:"waitForServiceAccountToken" yaml:"waitForServiceAccountToken"`
+	WaitForServiceAccountToken any `field:"optional" json:"waitForServiceAccountToken" yaml:"waitForServiceAccountToken"`
 }
-

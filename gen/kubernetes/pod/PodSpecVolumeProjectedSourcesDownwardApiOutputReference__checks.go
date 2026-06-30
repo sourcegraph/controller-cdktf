@@ -90,7 +90,7 @@ func (p *jsiiProxy_PodSpecVolumeProjectedSourcesDownwardApiOutputReference) vali
 	return nil
 }
 
-func (p *jsiiProxy_PodSpecVolumeProjectedSourcesDownwardApiOutputReference) validatePutItemsParameters(value interface{}) error {
+func (p *jsiiProxy_PodSpecVolumeProjectedSourcesDownwardApiOutputReference) validatePutItemsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (p *jsiiProxy_PodSpecVolumeProjectedSourcesDownwardApiOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecVolumeProjectedSourcesDownwardApiOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecVolumeProjectedSourcesDownwardApiOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewPodSpecVolumeProjectedSourcesDownwardApiOutputReferenceParameter
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecInitContainerVolumeMountList) valid
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerVolumeMountList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerVolumeMountList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDeploymentSpecTemplateSpecInitContainerVolumeMountListParameters
 
 	return nil
 }
-

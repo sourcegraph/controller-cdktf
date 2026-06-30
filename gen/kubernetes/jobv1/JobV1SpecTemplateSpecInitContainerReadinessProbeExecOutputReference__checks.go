@@ -106,7 +106,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerReadinessProbeExecOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerReadinessProbeExecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerReadinessProbeExecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewJobV1SpecTemplateSpecInitContainerReadinessProbeExecOutputRefere
 
 	return nil
 }
-

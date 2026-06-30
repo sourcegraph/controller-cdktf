@@ -12,9 +12,9 @@ type PodV1SpecVolumeGlusterfsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -35,9 +35,9 @@ type PodV1SpecVolumeGlusterfsOutputReference interface {
 	Path() *string
 	SetPath(val *string)
 	PathInput() *string
-	ReadOnly() interface{}
-	SetReadOnly(val interface{})
-	ReadOnlyInput() interface{}
+	ReadOnly() any
+	SetReadOnly(val any)
+	ReadOnlyInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type PodV1SpecVolumeGlusterfsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -73,7 +73,7 @@ type PodV1SpecVolumeGlusterfsOutputReference interface {
 	ResetReadOnly()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,8 +86,8 @@ type jsiiProxy_PodV1SpecVolumeGlusterfsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeGlusterfsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodV1SpecVolumeGlusterfsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -176,8 +176,8 @@ func (j *jsiiProxy_PodV1SpecVolumeGlusterfsOutputReference) PathInput() *string 
 	return returns
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeGlusterfsOutputReference) ReadOnly() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodV1SpecVolumeGlusterfsOutputReference) ReadOnly() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"readOnly",
@@ -186,8 +186,8 @@ func (j *jsiiProxy_PodV1SpecVolumeGlusterfsOutputReference) ReadOnly() interface
 	return returns
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeGlusterfsOutputReference) ReadOnlyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodV1SpecVolumeGlusterfsOutputReference) ReadOnlyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"readOnlyInput",
@@ -216,7 +216,6 @@ func (j *jsiiProxy_PodV1SpecVolumeGlusterfsOutputReference) TerraformResource() 
 	return returns
 }
 
-
 func NewPodV1SpecVolumeGlusterfsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PodV1SpecVolumeGlusterfsOutputReference {
 	_init_.Initialize()
 
@@ -227,7 +226,7 @@ func NewPodV1SpecVolumeGlusterfsOutputReference(terraformResource cdktf.IInterpo
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.podV1.PodV1SpecVolumeGlusterfsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -239,12 +238,12 @@ func NewPodV1SpecVolumeGlusterfsOutputReference_Override(p PodV1SpecVolumeGluste
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.podV1.PodV1SpecVolumeGlusterfsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeGlusterfsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PodV1SpecVolumeGlusterfsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_PodV1SpecVolumeGlusterfsOutputReference)SetComplexObjectIndex
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeGlusterfsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PodV1SpecVolumeGlusterfsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_PodV1SpecVolumeGlusterfsOutputReference)SetComplexObjectIsFro
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeGlusterfsOutputReference)SetEndpointsName(val *string) {
+func (j *jsiiProxy_PodV1SpecVolumeGlusterfsOutputReference) SetEndpointsName(val *string) {
 	if err := j.validateSetEndpointsNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_PodV1SpecVolumeGlusterfsOutputReference)SetEndpointsName(val 
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeGlusterfsOutputReference)SetInternalValue(val *PodV1SpecVolumeGlusterfs) {
+func (j *jsiiProxy_PodV1SpecVolumeGlusterfsOutputReference) SetInternalValue(val *PodV1SpecVolumeGlusterfs) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_PodV1SpecVolumeGlusterfsOutputReference)SetInternalValue(val 
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeGlusterfsOutputReference)SetPath(val *string) {
+func (j *jsiiProxy_PodV1SpecVolumeGlusterfsOutputReference) SetPath(val *string) {
 	if err := j.validateSetPathParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +298,7 @@ func (j *jsiiProxy_PodV1SpecVolumeGlusterfsOutputReference)SetPath(val *string) 
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeGlusterfsOutputReference)SetReadOnly(val interface{}) {
+func (j *jsiiProxy_PodV1SpecVolumeGlusterfsOutputReference) SetReadOnly(val any) {
 	if err := j.validateSetReadOnlyParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,7 +309,7 @@ func (j *jsiiProxy_PodV1SpecVolumeGlusterfsOutputReference)SetReadOnly(val inter
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeGlusterfsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PodV1SpecVolumeGlusterfsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -321,7 +320,7 @@ func (j *jsiiProxy_PodV1SpecVolumeGlusterfsOutputReference)SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeGlusterfsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PodV1SpecVolumeGlusterfsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,16 +344,16 @@ func (p *jsiiProxy_PodV1SpecVolumeGlusterfsOutputReference) ComputeFqn() *string
 	return returns
 }
 
-func (p *jsiiProxy_PodV1SpecVolumeGlusterfsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PodV1SpecVolumeGlusterfsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -370,7 +369,7 @@ func (p *jsiiProxy_PodV1SpecVolumeGlusterfsOutputReference) GetBooleanAttribute(
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -386,7 +385,7 @@ func (p *jsiiProxy_PodV1SpecVolumeGlusterfsOutputReference) GetBooleanMapAttribu
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -402,7 +401,7 @@ func (p *jsiiProxy_PodV1SpecVolumeGlusterfsOutputReference) GetListAttribute(ter
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -418,7 +417,7 @@ func (p *jsiiProxy_PodV1SpecVolumeGlusterfsOutputReference) GetNumberAttribute(t
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -434,7 +433,7 @@ func (p *jsiiProxy_PodV1SpecVolumeGlusterfsOutputReference) GetNumberListAttribu
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -450,7 +449,7 @@ func (p *jsiiProxy_PodV1SpecVolumeGlusterfsOutputReference) GetNumberMapAttribut
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func (p *jsiiProxy_PodV1SpecVolumeGlusterfsOutputReference) GetStringAttribute(t
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -482,7 +481,7 @@ func (p *jsiiProxy_PodV1SpecVolumeGlusterfsOutputReference) GetStringMapAttribut
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -511,7 +510,7 @@ func (p *jsiiProxy_PodV1SpecVolumeGlusterfsOutputReference) InterpolationForAttr
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -526,16 +525,16 @@ func (p *jsiiProxy_PodV1SpecVolumeGlusterfsOutputReference) ResetReadOnly() {
 	)
 }
 
-func (p *jsiiProxy_PodV1SpecVolumeGlusterfsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PodV1SpecVolumeGlusterfsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -554,4 +553,3 @@ func (p *jsiiProxy_PodV1SpecVolumeGlusterfsOutputReference) ToString() *string {
 
 	return returns
 }
-

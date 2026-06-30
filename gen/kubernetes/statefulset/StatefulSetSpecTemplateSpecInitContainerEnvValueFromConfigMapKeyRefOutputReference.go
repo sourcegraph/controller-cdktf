@@ -12,9 +12,9 @@ type StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputRe
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -35,9 +35,9 @@ type StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputRe
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
-	Optional() interface{}
-	SetOptional(val interface{})
-	OptionalInput() interface{}
+	Optional() any
+	SetOptional(val any)
+	OptionalInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputRe
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputRe
 	ResetOptional()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyR
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -178,8 +178,8 @@ func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMap
 	return returns
 }
 
-func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference) Optional() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference) Optional() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"optional",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMap
 	return returns
 }
 
-func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference) OptionalInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference) OptionalInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"optionalInput",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMap
 	return returns
 }
 
-
 func NewStatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewStatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutpu
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewStatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutpu
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		s,
 	)
 }
 
-func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMap
 	)
 }
 
-func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMap
 	)
 }
 
-func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference)SetInternalValue(val *StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRef) {
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference) SetInternalValue(val *StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRef) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMap
 	)
 }
 
-func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference)SetKey(val *string) {
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference) SetKey(val *string) {
 	if err := j.validateSetKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMap
 	)
 }
 
-func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference)SetName(val *string) {
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMap
 	)
 }
 
-func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference)SetOptional(val interface{}) {
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference) SetOptional(val any) {
 	if err := j.validateSetOptionalParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMap
 	)
 }
 
-func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMap
 	)
 }
 
-func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMap
 	return returns
 }
 
-func (s *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMap
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMap
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMap
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMap
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMap
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMap
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMap
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMap
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMap
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMap
 	)
 }
 
-func (s *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMap
 
 	return returns
 }
-

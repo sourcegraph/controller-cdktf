@@ -90,7 +90,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecContainerOutputReference) validateInterp
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecContainerOutputReference) validatePutEnvParameters(value interface{}) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecContainerOutputReference) validatePutEnvParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecContainerOutputReference) validatePutEnv
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecContainerOutputReference) validatePutEnvFromParameters(value interface{}) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecContainerOutputReference) validatePutEnvFromParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -174,7 +174,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecContainerOutputReference) validatePutLiv
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecContainerOutputReference) validatePutPortParameters(value interface{}) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecContainerOutputReference) validatePutPortParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -249,7 +249,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecContainerOutputReference) validatePutSta
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecContainerOutputReference) validatePutVolumeMountParameters(value interface{}) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecContainerOutputReference) validatePutVolumeMountParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -304,7 +304,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecContainerOutputReference) validateSetCom
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecContainerOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecContainerOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -385,7 +385,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecContainerOutputReference) validateSetIma
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecContainerOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecContainerOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -417,7 +417,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecContainerOutputReference) validateSetNam
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecContainerOutputReference) validateSetStdinParameters(val interface{}) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecContainerOutputReference) validateSetStdinParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -437,7 +437,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecContainerOutputReference) validateSetStd
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecContainerOutputReference) validateSetStdinOnceParameters(val interface{}) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecContainerOutputReference) validateSetStdinOnceParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -489,7 +489,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecContainerOutputReference) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecContainerOutputReference) validateSetTtyParameters(val interface{}) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecContainerOutputReference) validateSetTtyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -536,4 +536,3 @@ func validateNewJobV1SpecTemplateSpecContainerOutputReferenceParameters(terrafor
 
 	return nil
 }
-

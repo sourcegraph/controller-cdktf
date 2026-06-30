@@ -98,7 +98,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorMat
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorMat
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewJobV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchE
 
 	return nil
 }
-

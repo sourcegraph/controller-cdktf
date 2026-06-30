@@ -98,7 +98,7 @@ func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecAllowedFlexVolumesOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecAllowedFlexVolumesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecAllowedFlexVolumesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecAllowedFlexVolumesOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecAllowedFlexVolumesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecAllowedFlexVolumesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewPodSecurityPolicyV1Beta1SpecAllowedFlexVolumesOutputReferencePar
 
 	return nil
 }
-

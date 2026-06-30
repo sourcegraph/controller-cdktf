@@ -12,16 +12,16 @@ type ManifestWaitOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
 	Condition() ManifestWaitConditionList
-	ConditionInput() interface{}
+	ConditionInput() any
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -34,9 +34,9 @@ type ManifestWaitOutputReference interface {
 	Fqn() *string
 	InternalValue() *ManifestWait
 	SetInternalValue(val *ManifestWait)
-	Rollout() interface{}
-	SetRollout(val interface{})
-	RolloutInput() interface{}
+	Rollout() any
+	SetRollout(val any)
+	RolloutInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -48,7 +48,7 @@ type ManifestWaitOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,13 +69,13 @@ type ManifestWaitOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutCondition(value interface{})
+	PutCondition(value any)
 	ResetCondition()
 	ResetFields()
 	ResetRollout()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_ManifestWaitOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ManifestWaitOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ManifestWaitOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -118,8 +118,8 @@ func (j *jsiiProxy_ManifestWaitOutputReference) Condition() ManifestWaitConditio
 	return returns
 }
 
-func (j *jsiiProxy_ManifestWaitOutputReference) ConditionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ManifestWaitOutputReference) ConditionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"conditionInput",
@@ -178,8 +178,8 @@ func (j *jsiiProxy_ManifestWaitOutputReference) InternalValue() *ManifestWait {
 	return returns
 }
 
-func (j *jsiiProxy_ManifestWaitOutputReference) Rollout() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ManifestWaitOutputReference) Rollout() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rollout",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_ManifestWaitOutputReference) Rollout() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ManifestWaitOutputReference) RolloutInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ManifestWaitOutputReference) RolloutInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rolloutInput",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_ManifestWaitOutputReference) TerraformResource() cdktf.IInter
 	return returns
 }
 
-
 func NewManifestWaitOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ManifestWaitOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewManifestWaitOutputReference(terraformResource cdktf.IInterpolatingParent
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.manifest.ManifestWaitOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewManifestWaitOutputReference_Override(m ManifestWaitOutputReference, terr
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.manifest.ManifestWaitOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		m,
 	)
 }
 
-func (j *jsiiProxy_ManifestWaitOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ManifestWaitOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_ManifestWaitOutputReference)SetComplexObjectIndex(val interfa
 	)
 }
 
-func (j *jsiiProxy_ManifestWaitOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ManifestWaitOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_ManifestWaitOutputReference)SetComplexObjectIsFromSet(val *bo
 	)
 }
 
-func (j *jsiiProxy_ManifestWaitOutputReference)SetFields(val *map[string]*string) {
+func (j *jsiiProxy_ManifestWaitOutputReference) SetFields(val *map[string]*string) {
 	if err := j.validateSetFieldsParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_ManifestWaitOutputReference)SetFields(val *map[string]*string
 	)
 }
 
-func (j *jsiiProxy_ManifestWaitOutputReference)SetInternalValue(val *ManifestWait) {
+func (j *jsiiProxy_ManifestWaitOutputReference) SetInternalValue(val *ManifestWait) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_ManifestWaitOutputReference)SetInternalValue(val *ManifestWai
 	)
 }
 
-func (j *jsiiProxy_ManifestWaitOutputReference)SetRollout(val interface{}) {
+func (j *jsiiProxy_ManifestWaitOutputReference) SetRollout(val any) {
 	if err := j.validateSetRolloutParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_ManifestWaitOutputReference)SetRollout(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ManifestWaitOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ManifestWaitOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_ManifestWaitOutputReference)SetTerraformAttribute(val *string
 	)
 }
 
-func (j *jsiiProxy_ManifestWaitOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ManifestWaitOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,16 +335,16 @@ func (m *jsiiProxy_ManifestWaitOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (m *jsiiProxy_ManifestWaitOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_ManifestWaitOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -361,7 +360,7 @@ func (m *jsiiProxy_ManifestWaitOutputReference) GetBooleanAttribute(terraformAtt
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -377,7 +376,7 @@ func (m *jsiiProxy_ManifestWaitOutputReference) GetBooleanMapAttribute(terraform
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -393,7 +392,7 @@ func (m *jsiiProxy_ManifestWaitOutputReference) GetListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -409,7 +408,7 @@ func (m *jsiiProxy_ManifestWaitOutputReference) GetNumberAttribute(terraformAttr
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -425,7 +424,7 @@ func (m *jsiiProxy_ManifestWaitOutputReference) GetNumberListAttribute(terraform
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -441,7 +440,7 @@ func (m *jsiiProxy_ManifestWaitOutputReference) GetNumberMapAttribute(terraformA
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -457,7 +456,7 @@ func (m *jsiiProxy_ManifestWaitOutputReference) GetStringAttribute(terraformAttr
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -473,7 +472,7 @@ func (m *jsiiProxy_ManifestWaitOutputReference) GetStringMapAttribute(terraformA
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -502,21 +501,21 @@ func (m *jsiiProxy_ManifestWaitOutputReference) InterpolationForAttribute(proper
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_ManifestWaitOutputReference) PutCondition(value interface{}) {
+func (m *jsiiProxy_ManifestWaitOutputReference) PutCondition(value any) {
 	if err := m.validatePutConditionParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"putCondition",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -544,16 +543,16 @@ func (m *jsiiProxy_ManifestWaitOutputReference) ResetRollout() {
 	)
 }
 
-func (m *jsiiProxy_ManifestWaitOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_ManifestWaitOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := m.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (m *jsiiProxy_ManifestWaitOutputReference) ToString() *string {
 
 	return returns
 }
-

@@ -112,7 +112,7 @@ func (p *jsiiProxy_PodV1SpecSecurityContextOutputReference) validatePutSeLinuxOp
 	return nil
 }
 
-func (p *jsiiProxy_PodV1SpecSecurityContextOutputReference) validatePutSysctlParameters(value interface{}) error {
+func (p *jsiiProxy_PodV1SpecSecurityContextOutputReference) validatePutSysctlParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func (p *jsiiProxy_PodV1SpecSecurityContextOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_PodV1SpecSecurityContextOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodV1SpecSecurityContextOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -240,7 +240,7 @@ func (j *jsiiProxy_PodV1SpecSecurityContextOutputReference) validateSetRunAsGrou
 	return nil
 }
 
-func (j *jsiiProxy_PodV1SpecSecurityContextOutputReference) validateSetRunAsNonRootParameters(val interface{}) error {
+func (j *jsiiProxy_PodV1SpecSecurityContextOutputReference) validateSetRunAsNonRootParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -303,4 +303,3 @@ func validateNewPodV1SpecSecurityContextOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

@@ -109,7 +109,7 @@ func (p *jsiiProxy_PodSpecInitContainerEnvOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecInitContainerEnvOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecInitContainerEnvOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -174,7 +174,7 @@ func (j *jsiiProxy_PodSpecInitContainerEnvOutputReference) validateSetComplexObj
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecInitContainerEnvOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecInitContainerEnvOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -249,4 +249,3 @@ func validateNewPodSpecInitContainerEnvOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

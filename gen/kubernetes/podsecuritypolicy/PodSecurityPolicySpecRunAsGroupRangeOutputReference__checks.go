@@ -98,7 +98,7 @@ func (p *jsiiProxy_PodSecurityPolicySpecRunAsGroupRangeOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_PodSecurityPolicySpecRunAsGroupRangeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodSecurityPolicySpecRunAsGroupRangeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_PodSecurityPolicySpecRunAsGroupRangeOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_PodSecurityPolicySpecRunAsGroupRangeOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PodSecurityPolicySpecRunAsGroupRangeOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewPodSecurityPolicySpecRunAsGroupRangeOutputReferenceParameters(te
 
 	return nil
 }
-

@@ -1,6 +1,5 @@
 package cronjob
 
-
 type CronJobSpecJobTemplateSpecTemplateSpecVolumeFc struct {
 	// FC target lun number.
 	//
@@ -19,6 +18,5 @@ type CronJobSpecJobTemplateSpecTemplateSpecVolumeFc struct {
 	// Whether to force the read-only setting in VolumeMounts. Defaults to false (read/write).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/cron_job#read_only CronJob#read_only}
-	ReadOnly interface{} `field:"optional" json:"readOnly" yaml:"readOnly"`
+	ReadOnly any `field:"optional" json:"readOnly" yaml:"readOnly"`
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataKubernetesIngressSpecTlsOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesIngressSpecTlsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataKubernetesIngressSpecTlsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataKubernetesIngressSpecTlsOutputReferenceParameters(terraformR
 
 	return nil
 }
-

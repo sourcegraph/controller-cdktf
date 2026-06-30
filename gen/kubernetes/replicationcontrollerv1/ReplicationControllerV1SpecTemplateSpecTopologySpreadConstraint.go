@@ -1,11 +1,10 @@
 package replicationcontrollerv1
 
-
 type ReplicationControllerV1SpecTemplateSpecTopologySpreadConstraint struct {
 	// label_selector block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/replication_controller_v1#label_selector ReplicationControllerV1#label_selector}
-	LabelSelector interface{} `field:"optional" json:"labelSelector" yaml:"labelSelector"`
+	LabelSelector any `field:"optional" json:"labelSelector" yaml:"labelSelector"`
 	// describes the degree to which pods may be unevenly distributed.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/replication_controller_v1#max_skew ReplicationControllerV1#max_skew}
@@ -21,4 +20,3 @@ type ReplicationControllerV1SpecTemplateSpecTopologySpreadConstraint struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/replication_controller_v1#when_unsatisfiable ReplicationControllerV1#when_unsatisfiable}
 	WhenUnsatisfiable *string `field:"optional" json:"whenUnsatisfiable" yaml:"whenUnsatisfiable"`
 }
-

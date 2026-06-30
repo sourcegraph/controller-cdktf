@@ -34,7 +34,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHea
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewJobV1SpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeader
 
 	return nil
 }
-

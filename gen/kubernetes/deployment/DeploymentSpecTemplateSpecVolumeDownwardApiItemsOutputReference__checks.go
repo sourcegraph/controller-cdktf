@@ -120,7 +120,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeDownwardApiItemsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeDownwardApiItemsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeDownwardApiItemsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -185,7 +185,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeDownwardApiItemsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeDownwardApiItemsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeDownwardApiItemsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -260,4 +260,3 @@ func validateNewDeploymentSpecTemplateSpecVolumeDownwardApiItemsOutputReferenceP
 
 	return nil
 }
-

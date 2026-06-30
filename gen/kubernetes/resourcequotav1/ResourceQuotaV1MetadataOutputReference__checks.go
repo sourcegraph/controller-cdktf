@@ -106,7 +106,7 @@ func (j *jsiiProxy_ResourceQuotaV1MetadataOutputReference) validateSetAnnotation
 	return nil
 }
 
-func (j *jsiiProxy_ResourceQuotaV1MetadataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ResourceQuotaV1MetadataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewResourceQuotaV1MetadataOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

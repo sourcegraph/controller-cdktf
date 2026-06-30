@@ -34,7 +34,7 @@ func (p *jsiiProxy_PodSpecContainerLifecyclePostStartTcpSocketList) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecContainerLifecyclePostStartTcpSocketList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecContainerLifecyclePostStartTcpSocketList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewPodSpecContainerLifecyclePostStartTcpSocketListParameters(terraf
 
 	return nil
 }
-

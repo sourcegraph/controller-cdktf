@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.manifest.Manifest",
-		reflect.TypeOf((*Manifest)(nil)).Elem(),
+		reflect.TypeFor[Manifest](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,7 +77,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "waitForInput", GoGetter: "WaitForInput"},
 			_jsii_.MemberProperty{JsiiProperty: "waitInput", GoGetter: "WaitInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Manifest{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -85,15 +85,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.manifest.ManifestConfig",
-		reflect.TypeOf((*ManifestConfig)(nil)).Elem(),
+		reflect.TypeFor[ManifestConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.manifest.ManifestFieldManager",
-		reflect.TypeOf((*ManifestFieldManager)(nil)).Elem(),
+		reflect.TypeFor[ManifestFieldManager](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.manifest.ManifestFieldManagerOutputReference",
-		reflect.TypeOf((*ManifestFieldManagerOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ManifestFieldManagerOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -123,7 +123,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ManifestFieldManagerOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -131,11 +131,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.manifest.ManifestTimeouts",
-		reflect.TypeOf((*ManifestTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ManifestTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.manifest.ManifestTimeoutsOutputReference",
-		reflect.TypeOf((*ManifestTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ManifestTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -168,7 +168,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ManifestTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -176,15 +176,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.manifest.ManifestWait",
-		reflect.TypeOf((*ManifestWait)(nil)).Elem(),
+		reflect.TypeFor[ManifestWait](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.manifest.ManifestWaitCondition",
-		reflect.TypeOf((*ManifestWaitCondition)(nil)).Elem(),
+		reflect.TypeFor[ManifestWaitCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.manifest.ManifestWaitConditionList",
-		reflect.TypeOf((*ManifestWaitConditionList)(nil)).Elem(),
+		reflect.TypeFor[ManifestWaitConditionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -198,7 +198,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ManifestWaitConditionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -206,7 +206,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.manifest.ManifestWaitConditionOutputReference",
-		reflect.TypeOf((*ManifestWaitConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ManifestWaitConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -236,7 +236,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ManifestWaitConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -244,11 +244,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.manifest.ManifestWaitFor",
-		reflect.TypeOf((*ManifestWaitFor)(nil)).Elem(),
+		reflect.TypeFor[ManifestWaitFor](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.manifest.ManifestWaitForOutputReference",
-		reflect.TypeOf((*ManifestWaitForOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ManifestWaitForOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -275,7 +275,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ManifestWaitForOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -283,7 +283,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.manifest.ManifestWaitOutputReference",
-		reflect.TypeOf((*ManifestWaitOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ManifestWaitOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -317,7 +317,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ManifestWaitOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

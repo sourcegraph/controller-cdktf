@@ -15,9 +15,9 @@ type EnvEnvValueFromFieldRefOutputReference interface {
 	ApiVersionInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -46,7 +46,7 @@ type EnvEnvValueFromFieldRefOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type EnvEnvValueFromFieldRefOutputReference interface {
 	ResetFieldPath()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -104,8 +104,8 @@ func (j *jsiiProxy_EnvEnvValueFromFieldRefOutputReference) ApiVersionInput() *st
 	return returns
 }
 
-func (j *jsiiProxy_EnvEnvValueFromFieldRefOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EnvEnvValueFromFieldRefOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_EnvEnvValueFromFieldRefOutputReference) TerraformResource() c
 	return returns
 }
 
-
 func NewEnvEnvValueFromFieldRefOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) EnvEnvValueFromFieldRefOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewEnvEnvValueFromFieldRefOutputReference(terraformResource cdktf.IInterpol
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.env.EnvEnvValueFromFieldRefOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewEnvEnvValueFromFieldRefOutputReference_Override(e EnvEnvValueFromFieldRe
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.env.EnvEnvValueFromFieldRefOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EnvEnvValueFromFieldRefOutputReference)SetApiVersion(val *string) {
+func (j *jsiiProxy_EnvEnvValueFromFieldRefOutputReference) SetApiVersion(val *string) {
 	if err := j.validateSetApiVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_EnvEnvValueFromFieldRefOutputReference)SetApiVersion(val *str
 	)
 }
 
-func (j *jsiiProxy_EnvEnvValueFromFieldRefOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_EnvEnvValueFromFieldRefOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_EnvEnvValueFromFieldRefOutputReference)SetComplexObjectIndex(
 	)
 }
 
-func (j *jsiiProxy_EnvEnvValueFromFieldRefOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_EnvEnvValueFromFieldRefOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_EnvEnvValueFromFieldRefOutputReference)SetComplexObjectIsFrom
 	)
 }
 
-func (j *jsiiProxy_EnvEnvValueFromFieldRefOutputReference)SetFieldPath(val *string) {
+func (j *jsiiProxy_EnvEnvValueFromFieldRefOutputReference) SetFieldPath(val *string) {
 	if err := j.validateSetFieldPathParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_EnvEnvValueFromFieldRefOutputReference)SetFieldPath(val *stri
 	)
 }
 
-func (j *jsiiProxy_EnvEnvValueFromFieldRefOutputReference)SetInternalValue(val *EnvEnvValueFromFieldRef) {
+func (j *jsiiProxy_EnvEnvValueFromFieldRefOutputReference) SetInternalValue(val *EnvEnvValueFromFieldRef) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_EnvEnvValueFromFieldRefOutputReference)SetInternalValue(val *
 	)
 }
 
-func (j *jsiiProxy_EnvEnvValueFromFieldRefOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_EnvEnvValueFromFieldRefOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_EnvEnvValueFromFieldRefOutputReference)SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_EnvEnvValueFromFieldRefOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EnvEnvValueFromFieldRefOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (e *jsiiProxy_EnvEnvValueFromFieldRefOutputReference) ComputeFqn() *string 
 	return returns
 }
 
-func (e *jsiiProxy_EnvEnvValueFromFieldRefOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EnvEnvValueFromFieldRefOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (e *jsiiProxy_EnvEnvValueFromFieldRefOutputReference) GetBooleanAttribute(t
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (e *jsiiProxy_EnvEnvValueFromFieldRefOutputReference) GetBooleanMapAttribut
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (e *jsiiProxy_EnvEnvValueFromFieldRefOutputReference) GetListAttribute(terr
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (e *jsiiProxy_EnvEnvValueFromFieldRefOutputReference) GetNumberAttribute(te
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (e *jsiiProxy_EnvEnvValueFromFieldRefOutputReference) GetNumberListAttribut
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (e *jsiiProxy_EnvEnvValueFromFieldRefOutputReference) GetNumberMapAttribute
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (e *jsiiProxy_EnvEnvValueFromFieldRefOutputReference) GetStringAttribute(te
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (e *jsiiProxy_EnvEnvValueFromFieldRefOutputReference) GetStringMapAttribute
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (e *jsiiProxy_EnvEnvValueFromFieldRefOutputReference) InterpolationForAttri
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (e *jsiiProxy_EnvEnvValueFromFieldRefOutputReference) ResetFieldPath() {
 	)
 }
 
-func (e *jsiiProxy_EnvEnvValueFromFieldRefOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_EnvEnvValueFromFieldRefOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (e *jsiiProxy_EnvEnvValueFromFieldRefOutputReference) ToString() *string {
 
 	return returns
 }
-

@@ -34,7 +34,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecContainerList) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecContainerList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecContainerList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDaemonsetSpecTemplateSpecContainerListParameters(terraformResour
 
 	return nil
 }
-

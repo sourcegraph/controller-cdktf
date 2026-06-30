@@ -90,7 +90,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerStartupProbeHttpGetOu
 	return nil
 }
 
-func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerStartupProbeHttpGetOutputReference) validatePutHttpHeaderParameters(value interface{}) error {
+func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerStartupProbeHttpGetOutputReference) validatePutHttpHeaderParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerStartupProbeHttpGetOu
 	return nil
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerStartupProbeHttpGetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerStartupProbeHttpGetOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -261,4 +261,3 @@ func validateNewDaemonSetV1SpecTemplateSpecInitContainerStartupProbeHttpGetOutpu
 
 	return nil
 }
-

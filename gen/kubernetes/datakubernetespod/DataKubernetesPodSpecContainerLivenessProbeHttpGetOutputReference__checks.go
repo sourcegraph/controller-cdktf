@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataKubernetesPodSpecContainerLivenessProbeHttpGetOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesPodSpecContainerLivenessProbeHttpGetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataKubernetesPodSpecContainerLivenessProbeHttpGetOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataKubernetesPodSpecContainerLivenessProbeHttpGetOutputReferenc
 
 	return nil
 }
-

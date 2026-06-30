@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.ingressClass.IngressClass",
-		reflect.TypeOf((*IngressClass)(nil)).Elem(),
+		reflect.TypeFor[IngressClass](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,7 +62,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IngressClass{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -70,15 +70,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.ingressClass.IngressClassConfig",
-		reflect.TypeOf((*IngressClassConfig)(nil)).Elem(),
+		reflect.TypeFor[IngressClassConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.ingressClass.IngressClassMetadata",
-		reflect.TypeOf((*IngressClassMetadata)(nil)).Elem(),
+		reflect.TypeFor[IngressClassMetadata](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.ingressClass.IngressClassMetadataOutputReference",
-		reflect.TypeOf((*IngressClassMetadataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IngressClassMetadataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
 			_jsii_.MemberProperty{JsiiProperty: "annotationsInput", GoGetter: "AnnotationsInput"},
@@ -117,7 +117,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IngressClassMetadataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -125,11 +125,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.ingressClass.IngressClassSpec",
-		reflect.TypeOf((*IngressClassSpec)(nil)).Elem(),
+		reflect.TypeFor[IngressClassSpec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.ingressClass.IngressClassSpecOutputReference",
-		reflect.TypeOf((*IngressClassSpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IngressClassSpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -160,7 +160,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IngressClassSpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -168,11 +168,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.ingressClass.IngressClassSpecParameters",
-		reflect.TypeOf((*IngressClassSpecParameters)(nil)).Elem(),
+		reflect.TypeFor[IngressClassSpecParameters](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.ingressClass.IngressClassSpecParametersList",
-		reflect.TypeOf((*IngressClassSpecParametersList)(nil)).Elem(),
+		reflect.TypeFor[IngressClassSpecParametersList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -186,7 +186,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IngressClassSpecParametersList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -194,7 +194,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.ingressClass.IngressClassSpecParametersOutputReference",
-		reflect.TypeOf((*IngressClassSpecParametersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IngressClassSpecParametersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiGroup", GoGetter: "ApiGroup"},
 			_jsii_.MemberProperty{JsiiProperty: "apiGroupInput", GoGetter: "ApiGroupInput"},
@@ -231,7 +231,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IngressClassSpecParametersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

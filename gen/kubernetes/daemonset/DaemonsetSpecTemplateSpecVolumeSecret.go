@@ -1,6 +1,5 @@
 package daemonset
 
-
 type DaemonsetSpecTemplateSpecVolumeSecret struct {
 	// Optional: mode bits to use on created files by default.
 	//
@@ -11,14 +10,13 @@ type DaemonsetSpecTemplateSpecVolumeSecret struct {
 	// items block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/daemonset#items Daemonset#items}
-	Items interface{} `field:"optional" json:"items" yaml:"items"`
+	Items any `field:"optional" json:"items" yaml:"items"`
 	// Optional: Specify whether the Secret or its keys must be defined.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/daemonset#optional Daemonset#optional}
-	Optional interface{} `field:"optional" json:"optional" yaml:"optional"`
+	Optional any `field:"optional" json:"optional" yaml:"optional"`
 	// Name of the secret in the pod's namespace to use. More info: http://kubernetes.io/docs/user-guide/volumes#secrets.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/daemonset#secret_name Daemonset#secret_name}
 	SecretName *string `field:"optional" json:"secretName" yaml:"secretName"`
 }
-

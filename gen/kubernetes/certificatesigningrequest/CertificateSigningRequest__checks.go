@@ -19,7 +19,7 @@ func (c *jsiiProxy_CertificateSigningRequest) validateAddMoveTargetParameters(mo
 	return nil
 }
 
-func (c *jsiiProxy_CertificateSigningRequest) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_CertificateSigningRequest) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_CertificateSigningRequest) validateMoveFromIdParameters(id *s
 	return nil
 }
 
-func (c *jsiiProxy_CertificateSigningRequest) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_CertificateSigningRequest) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -253,7 +253,7 @@ func validateCertificateSigningRequest_GenerateConfigForImportParameters(scope c
 	return nil
 }
 
-func validateCertificateSigningRequest_IsConstructParameters(x interface{}) error {
+func validateCertificateSigningRequest_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -261,7 +261,7 @@ func validateCertificateSigningRequest_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
-func validateCertificateSigningRequest_IsTerraformElementParameters(x interface{}) error {
+func validateCertificateSigningRequest_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -269,7 +269,7 @@ func validateCertificateSigningRequest_IsTerraformElementParameters(x interface{
 	return nil
 }
 
-func validateCertificateSigningRequest_IsTerraformResourceParameters(x interface{}) error {
+func validateCertificateSigningRequest_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -277,7 +277,7 @@ func validateCertificateSigningRequest_IsTerraformResourceParameters(x interface
 	return nil
 }
 
-func (j *jsiiProxy_CertificateSigningRequest) validateSetAutoApproveParameters(val interface{}) error {
+func (j *jsiiProxy_CertificateSigningRequest) validateSetAutoApproveParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -297,7 +297,7 @@ func (j *jsiiProxy_CertificateSigningRequest) validateSetAutoApproveParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_CertificateSigningRequest) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_CertificateSigningRequest) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -330,7 +330,7 @@ func (j *jsiiProxy_CertificateSigningRequest) validateSetConnectionParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_CertificateSigningRequest) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_CertificateSigningRequest) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -403,7 +403,7 @@ func (j *jsiiProxy_CertificateSigningRequest) validateSetLifecycleParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_CertificateSigningRequest) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_CertificateSigningRequest) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -467,4 +467,3 @@ func validateNewCertificateSigningRequestParameters(scope constructs.Construct, 
 
 	return nil
 }
-

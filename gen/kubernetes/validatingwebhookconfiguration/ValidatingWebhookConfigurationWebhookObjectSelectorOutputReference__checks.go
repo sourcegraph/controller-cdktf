@@ -90,7 +90,7 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationWebhookObjectSelectorOutputRefe
 	return nil
 }
 
-func (v *jsiiProxy_ValidatingWebhookConfigurationWebhookObjectSelectorOutputReference) validatePutMatchExpressionsParameters(value interface{}) error {
+func (v *jsiiProxy_ValidatingWebhookConfigurationWebhookObjectSelectorOutputReference) validatePutMatchExpressionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationWebhookObjectSelectorOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_ValidatingWebhookConfigurationWebhookObjectSelectorOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ValidatingWebhookConfigurationWebhookObjectSelectorOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -237,4 +237,3 @@ func validateNewValidatingWebhookConfigurationWebhookObjectSelectorOutputReferen
 
 	return nil
 }
-

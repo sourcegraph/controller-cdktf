@@ -19,7 +19,7 @@ func (h *jsiiProxy_HorizontalPodAutoscaler) validateAddMoveTargetParameters(move
 	return nil
 }
 
-func (h *jsiiProxy_HorizontalPodAutoscaler) validateAddOverrideParameters(path *string, value interface{}) error {
+func (h *jsiiProxy_HorizontalPodAutoscaler) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (h *jsiiProxy_HorizontalPodAutoscaler) validateMoveFromIdParameters(id *str
 	return nil
 }
 
-func (h *jsiiProxy_HorizontalPodAutoscaler) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (h *jsiiProxy_HorizontalPodAutoscaler) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateHorizontalPodAutoscaler_GenerateConfigForImportParameters(scope con
 	return nil
 }
 
-func validateHorizontalPodAutoscaler_IsConstructParameters(x interface{}) error {
+func validateHorizontalPodAutoscaler_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateHorizontalPodAutoscaler_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
-func validateHorizontalPodAutoscaler_IsTerraformElementParameters(x interface{}) error {
+func validateHorizontalPodAutoscaler_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateHorizontalPodAutoscaler_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
-func validateHorizontalPodAutoscaler_IsTerraformResourceParameters(x interface{}) error {
+func validateHorizontalPodAutoscaler_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateHorizontalPodAutoscaler_IsTerraformResourceParameters(x interface{}
 	return nil
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscaler) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_HorizontalPodAutoscaler) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_HorizontalPodAutoscaler) validateSetConnectionParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscaler) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_HorizontalPodAutoscaler) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -372,7 +372,7 @@ func (j *jsiiProxy_HorizontalPodAutoscaler) validateSetLifecycleParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscaler) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_HorizontalPodAutoscaler) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -436,4 +436,3 @@ func validateNewHorizontalPodAutoscalerParameters(scope constructs.Construct, id
 
 	return nil
 }
-

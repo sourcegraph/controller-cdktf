@@ -17,8 +17,8 @@ type JobV1SpecTemplateSpecVolumeConfigMapItemsList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type JobV1SpecTemplateSpecVolumeConfigMapItemsList interface {
 	Get(index *float64) JobV1SpecTemplateSpecVolumeConfigMapItemsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeConfigMapItemsList) Fqn() *string 
 	return returns
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeConfigMapItemsList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeConfigMapItemsList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeConfigMapItemsList) WrapsSet() *bo
 	return returns
 }
 
-
 func NewJobV1SpecTemplateSpecVolumeConfigMapItemsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) JobV1SpecTemplateSpecVolumeConfigMapItemsList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewJobV1SpecTemplateSpecVolumeConfigMapItemsList(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecVolumeConfigMapItemsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewJobV1SpecTemplateSpecVolumeConfigMapItemsList_Override(j JobV1SpecTempla
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecVolumeConfigMapItemsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		j,
 	)
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeConfigMapItemsList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeConfigMapItemsList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeConfigMapItemsList)SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeConfigMapItemsList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeConfigMapItemsList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeConfigMapItemsList)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeConfigMapItemsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeConfigMapItemsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeConfigMapItemsList)SetTerraformRes
 	)
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeConfigMapItemsList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeConfigMapItemsList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeConfigMapItemsList) AllWithMapKey(
 	_jsii_.Invoke(
 		j,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeConfigMapItemsList) Get(index *flo
 	_jsii_.Invoke(
 		j,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeConfigMapItemsList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeConfigMapItemsList) Resolve(_context cdktf.IResolveContext) any {
 	if err := j.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		j,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeConfigMapItemsList) ToString() *st
 
 	return returns
 }
-

@@ -131,7 +131,7 @@ func (n *jsiiProxy_NetworkPolicyV1SpecEgressToOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_NetworkPolicyV1SpecEgressToOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkPolicyV1SpecEgressToOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -196,7 +196,7 @@ func (j *jsiiProxy_NetworkPolicyV1SpecEgressToOutputReference) validateSetComple
 	return nil
 }
 
-func (j *jsiiProxy_NetworkPolicyV1SpecEgressToOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkPolicyV1SpecEgressToOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -255,4 +255,3 @@ func validateNewNetworkPolicyV1SpecEgressToOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

@@ -15,9 +15,9 @@ type PodV1SpecContainerLivenessProbeExecOutputReference interface {
 	CommandInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -43,7 +43,7 @@ type PodV1SpecContainerLivenessProbeExecOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -67,7 +67,7 @@ type PodV1SpecContainerLivenessProbeExecOutputReference interface {
 	ResetCommand()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -100,8 +100,8 @@ func (j *jsiiProxy_PodV1SpecContainerLivenessProbeExecOutputReference) CommandIn
 	return returns
 }
 
-func (j *jsiiProxy_PodV1SpecContainerLivenessProbeExecOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodV1SpecContainerLivenessProbeExecOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -170,7 +170,6 @@ func (j *jsiiProxy_PodV1SpecContainerLivenessProbeExecOutputReference) Terraform
 	return returns
 }
 
-
 func NewPodV1SpecContainerLivenessProbeExecOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PodV1SpecContainerLivenessProbeExecOutputReference {
 	_init_.Initialize()
 
@@ -181,7 +180,7 @@ func NewPodV1SpecContainerLivenessProbeExecOutputReference(terraformResource cdk
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.podV1.PodV1SpecContainerLivenessProbeExecOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -193,12 +192,12 @@ func NewPodV1SpecContainerLivenessProbeExecOutputReference_Override(p PodV1SpecC
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.podV1.PodV1SpecContainerLivenessProbeExecOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecContainerLivenessProbeExecOutputReference)SetCommand(val *[]*string) {
+func (j *jsiiProxy_PodV1SpecContainerLivenessProbeExecOutputReference) SetCommand(val *[]*string) {
 	if err := j.validateSetCommandParameters(val); err != nil {
 		panic(err)
 	}
@@ -209,7 +208,7 @@ func (j *jsiiProxy_PodV1SpecContainerLivenessProbeExecOutputReference)SetCommand
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecContainerLivenessProbeExecOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PodV1SpecContainerLivenessProbeExecOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -220,7 +219,7 @@ func (j *jsiiProxy_PodV1SpecContainerLivenessProbeExecOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecContainerLivenessProbeExecOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PodV1SpecContainerLivenessProbeExecOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_PodV1SpecContainerLivenessProbeExecOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecContainerLivenessProbeExecOutputReference)SetInternalValue(val *PodV1SpecContainerLivenessProbeExec) {
+func (j *jsiiProxy_PodV1SpecContainerLivenessProbeExecOutputReference) SetInternalValue(val *PodV1SpecContainerLivenessProbeExec) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_PodV1SpecContainerLivenessProbeExecOutputReference)SetInterna
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecContainerLivenessProbeExecOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PodV1SpecContainerLivenessProbeExecOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_PodV1SpecContainerLivenessProbeExecOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecContainerLivenessProbeExecOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PodV1SpecContainerLivenessProbeExecOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,16 +276,16 @@ func (p *jsiiProxy_PodV1SpecContainerLivenessProbeExecOutputReference) ComputeFq
 	return returns
 }
 
-func (p *jsiiProxy_PodV1SpecContainerLivenessProbeExecOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PodV1SpecContainerLivenessProbeExecOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -302,7 +301,7 @@ func (p *jsiiProxy_PodV1SpecContainerLivenessProbeExecOutputReference) GetBoolea
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -318,7 +317,7 @@ func (p *jsiiProxy_PodV1SpecContainerLivenessProbeExecOutputReference) GetBoolea
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -334,7 +333,7 @@ func (p *jsiiProxy_PodV1SpecContainerLivenessProbeExecOutputReference) GetListAt
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -350,7 +349,7 @@ func (p *jsiiProxy_PodV1SpecContainerLivenessProbeExecOutputReference) GetNumber
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -366,7 +365,7 @@ func (p *jsiiProxy_PodV1SpecContainerLivenessProbeExecOutputReference) GetNumber
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -382,7 +381,7 @@ func (p *jsiiProxy_PodV1SpecContainerLivenessProbeExecOutputReference) GetNumber
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -398,7 +397,7 @@ func (p *jsiiProxy_PodV1SpecContainerLivenessProbeExecOutputReference) GetString
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -414,7 +413,7 @@ func (p *jsiiProxy_PodV1SpecContainerLivenessProbeExecOutputReference) GetString
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (p *jsiiProxy_PodV1SpecContainerLivenessProbeExecOutputReference) Interpola
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -458,16 +457,16 @@ func (p *jsiiProxy_PodV1SpecContainerLivenessProbeExecOutputReference) ResetComm
 	)
 }
 
-func (p *jsiiProxy_PodV1SpecContainerLivenessProbeExecOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PodV1SpecContainerLivenessProbeExecOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -486,4 +485,3 @@ func (p *jsiiProxy_PodV1SpecContainerLivenessProbeExecOutputReference) ToString(
 
 	return returns
 }
-

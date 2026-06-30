@@ -114,7 +114,7 @@ func (j *jsiiProxy_MutatingWebhookConfigurationV1WebhookRuleOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_MutatingWebhookConfigurationV1WebhookRuleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MutatingWebhookConfigurationV1WebhookRuleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_MutatingWebhookConfigurationV1WebhookRuleOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_MutatingWebhookConfigurationV1WebhookRuleOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MutatingWebhookConfigurationV1WebhookRuleOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -262,4 +262,3 @@ func validateNewMutatingWebhookConfigurationV1WebhookRuleOutputReferenceParamete
 
 	return nil
 }
-

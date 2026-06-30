@@ -34,7 +34,7 @@ func (p *jsiiProxy_PodSpecTolerationList) validateResolveParameters(_context cdk
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecTolerationList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecTolerationList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewPodSpecTolerationListParameters(terraformResource cdktf.IInterpo
 
 	return nil
 }
-

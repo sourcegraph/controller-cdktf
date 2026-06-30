@@ -106,7 +106,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeAzureDiskOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeAzureDiskOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeAzureDiskOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -211,7 +211,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeAzureDiskOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeAzureDiskOutputReference) validateSetReadOnlyParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeAzureDiskOutputReference) validateSetReadOnlyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -258,4 +258,3 @@ func validateNewDeploymentSpecTemplateSpecVolumeAzureDiskOutputReferenceParamete
 
 	return nil
 }
-

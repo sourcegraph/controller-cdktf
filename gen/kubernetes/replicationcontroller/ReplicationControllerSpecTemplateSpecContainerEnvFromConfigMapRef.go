@@ -1,6 +1,5 @@
 package replicationcontroller
 
-
 type ReplicationControllerSpecTemplateSpecContainerEnvFromConfigMapRef struct {
 	// Name of the referent. More info: http://kubernetes.io/docs/user-guide/identifiers#names.
 	//
@@ -9,6 +8,5 @@ type ReplicationControllerSpecTemplateSpecContainerEnvFromConfigMapRef struct {
 	// Specify whether the ConfigMap must be defined.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/replication_controller#optional ReplicationController#optional}
-	Optional interface{} `field:"optional" json:"optional" yaml:"optional"`
+	Optional any `field:"optional" json:"optional" yaml:"optional"`
 }
-

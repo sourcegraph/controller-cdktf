@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataKubernetesServiceStatusLoadBalancerOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesServiceStatusLoadBalancerOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataKubernetesServiceStatusLoadBalancerOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataKubernetesServiceStatusLoadBalancerOutputReferenceParameters
 
 	return nil
 }
-

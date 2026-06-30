@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,7 +62,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HorizontalPodAutoscalerV2Beta2{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -70,15 +70,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2Config",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2Config)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2Config](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2Metadata",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2Metadata)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2Metadata](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2MetadataOutputReference",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2MetadataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2MetadataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
 			_jsii_.MemberProperty{JsiiProperty: "annotationsInput", GoGetter: "AnnotationsInput"},
@@ -120,7 +120,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HorizontalPodAutoscalerV2Beta2MetadataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -128,15 +128,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2Spec",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2Spec)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2Spec](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecBehavior",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecBehavior)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecBehavior](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecBehaviorOutputReference",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecBehaviorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecBehaviorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -168,7 +168,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecBehaviorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -176,11 +176,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleDown",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleDown)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleDown](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleDownList",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleDownList)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleDownList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -194,7 +194,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleDownList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -202,7 +202,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleDownOutputReference",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleDownOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleDownOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -235,7 +235,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleDownOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -243,11 +243,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleDownPolicy",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleDownPolicy)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleDownPolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleDownPolicyList",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleDownPolicyList)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleDownPolicyList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -261,7 +261,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleDownPolicyList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -269,7 +269,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleDownPolicyOutputReference",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleDownPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleDownPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -299,7 +299,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleDownPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -307,11 +307,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleUp",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleUp)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleUp](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleUpList",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleUpList)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleUpList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -325,7 +325,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleUpList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -333,7 +333,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleUpOutputReference",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleUpOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleUpOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -366,7 +366,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleUpOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -374,11 +374,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleUpPolicy",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleUpPolicy)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleUpPolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleUpPolicyList",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleUpPolicyList)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleUpPolicyList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -392,7 +392,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleUpPolicyList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -400,7 +400,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleUpPolicyOutputReference",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleUpPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleUpPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -430,7 +430,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleUpPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -438,15 +438,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecMetric",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecMetric)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecMetric](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecMetricContainerResource",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecMetricContainerResource)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecMetricContainerResource](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecMetricContainerResourceOutputReference",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecMetricContainerResourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecMetricContainerResourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -478,7 +478,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecMetricContainerResourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -486,11 +486,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecMetricContainerResourceTarget",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecMetricContainerResourceTarget)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecMetricContainerResourceTarget](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecMetricContainerResourceTargetOutputReference",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecMetricContainerResourceTargetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecMetricContainerResourceTargetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "averageUtilization", GoGetter: "AverageUtilization"},
 			_jsii_.MemberProperty{JsiiProperty: "averageUtilizationInput", GoGetter: "AverageUtilizationInput"},
@@ -525,7 +525,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecMetricContainerResourceTargetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -533,15 +533,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecMetricExternal",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecMetricExternal)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecMetricExternal](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecMetricExternalMetric",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecMetricExternalMetric)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecMetricExternalMetric](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecMetricExternalMetricOutputReference",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecMetricExternalMetricOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecMetricExternalMetricOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -571,7 +571,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecMetricExternalMetricOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -579,11 +579,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecMetricExternalMetricSelector",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecMetricExternalMetricSelector)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecMetricExternalMetricSelector](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecMetricExternalMetricSelectorList",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecMetricExternalMetricSelectorList)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecMetricExternalMetricSelectorList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -597,7 +597,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecMetricExternalMetricSelectorList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -605,11 +605,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecMetricExternalMetricSelectorMatchExpressions",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecMetricExternalMetricSelectorMatchExpressions)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecMetricExternalMetricSelectorMatchExpressions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecMetricExternalMetricSelectorMatchExpressionsList",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecMetricExternalMetricSelectorMatchExpressionsList)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecMetricExternalMetricSelectorMatchExpressionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -623,7 +623,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecMetricExternalMetricSelectorMatchExpressionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -631,7 +631,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecMetricExternalMetricSelectorMatchExpressionsOutputReference",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecMetricExternalMetricSelectorMatchExpressionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecMetricExternalMetricSelectorMatchExpressionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -664,7 +664,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecMetricExternalMetricSelectorMatchExpressionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -672,7 +672,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecMetricExternalMetricSelectorOutputReference",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecMetricExternalMetricSelectorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecMetricExternalMetricSelectorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -703,7 +703,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecMetricExternalMetricSelectorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -711,7 +711,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecMetricExternalOutputReference",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecMetricExternalOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecMetricExternalOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -742,7 +742,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecMetricExternalOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -750,11 +750,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecMetricExternalTarget",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecMetricExternalTarget)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecMetricExternalTarget](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecMetricExternalTargetOutputReference",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecMetricExternalTargetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecMetricExternalTargetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "averageUtilization", GoGetter: "AverageUtilization"},
 			_jsii_.MemberProperty{JsiiProperty: "averageUtilizationInput", GoGetter: "AverageUtilizationInput"},
@@ -789,7 +789,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecMetricExternalTargetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -797,7 +797,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecMetricList",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecMetricList)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecMetricList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -811,7 +811,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecMetricList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -819,15 +819,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecMetricObject",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecMetricObject)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecMetricObject](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecMetricObjectDescribedObject",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecMetricObjectDescribedObject)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecMetricObjectDescribedObject](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecMetricObjectDescribedObjectOutputReference",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecMetricObjectDescribedObjectOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecMetricObjectDescribedObjectOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiVersion", GoGetter: "ApiVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "apiVersionInput", GoGetter: "ApiVersionInput"},
@@ -857,7 +857,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecMetricObjectDescribedObjectOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -865,11 +865,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecMetricObjectMetric",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecMetricObjectMetric)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecMetricObjectMetric](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecMetricObjectMetricOutputReference",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecMetricObjectMetricOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecMetricObjectMetricOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -899,7 +899,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecMetricObjectMetricOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -907,11 +907,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecMetricObjectMetricSelector",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecMetricObjectMetricSelector)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecMetricObjectMetricSelector](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecMetricObjectMetricSelectorList",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecMetricObjectMetricSelectorList)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecMetricObjectMetricSelectorList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -925,7 +925,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecMetricObjectMetricSelectorList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -933,11 +933,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecMetricObjectMetricSelectorMatchExpressions",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecMetricObjectMetricSelectorMatchExpressions)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecMetricObjectMetricSelectorMatchExpressions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecMetricObjectMetricSelectorMatchExpressionsList",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecMetricObjectMetricSelectorMatchExpressionsList)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecMetricObjectMetricSelectorMatchExpressionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -951,7 +951,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecMetricObjectMetricSelectorMatchExpressionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -959,7 +959,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecMetricObjectMetricSelectorMatchExpressionsOutputReference",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecMetricObjectMetricSelectorMatchExpressionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecMetricObjectMetricSelectorMatchExpressionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -992,7 +992,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecMetricObjectMetricSelectorMatchExpressionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1000,7 +1000,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecMetricObjectMetricSelectorOutputReference",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecMetricObjectMetricSelectorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecMetricObjectMetricSelectorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1031,7 +1031,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecMetricObjectMetricSelectorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1039,7 +1039,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecMetricObjectOutputReference",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecMetricObjectOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecMetricObjectOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1073,7 +1073,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecMetricObjectOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1081,11 +1081,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecMetricObjectTarget",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecMetricObjectTarget)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecMetricObjectTarget](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecMetricObjectTargetOutputReference",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecMetricObjectTargetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecMetricObjectTargetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "averageUtilization", GoGetter: "AverageUtilization"},
 			_jsii_.MemberProperty{JsiiProperty: "averageUtilizationInput", GoGetter: "AverageUtilizationInput"},
@@ -1120,7 +1120,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecMetricObjectTargetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1128,7 +1128,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecMetricOutputReference",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecMetricOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecMetricOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1174,7 +1174,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecMetricOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1182,15 +1182,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecMetricPods",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecMetricPods)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecMetricPods](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetric",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetric)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetric](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricOutputReference",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1220,7 +1220,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1228,11 +1228,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelector",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelector)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelector](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelectorList",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelectorList)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelectorList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1246,7 +1246,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelectorList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1254,11 +1254,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelectorMatchExpressions",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelectorMatchExpressions)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelectorMatchExpressions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelectorMatchExpressionsList",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelectorMatchExpressionsList)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelectorMatchExpressionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1272,7 +1272,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelectorMatchExpressionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1280,7 +1280,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelectorMatchExpressionsOutputReference",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelectorMatchExpressionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelectorMatchExpressionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1313,7 +1313,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelectorMatchExpressionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1321,7 +1321,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelectorOutputReference",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelectorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelectorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1352,7 +1352,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelectorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1360,7 +1360,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecMetricPodsOutputReference",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecMetricPodsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecMetricPodsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1391,7 +1391,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecMetricPodsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1399,11 +1399,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecMetricPodsTarget",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecMetricPodsTarget)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecMetricPodsTarget](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecMetricPodsTargetOutputReference",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecMetricPodsTargetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecMetricPodsTargetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "averageUtilization", GoGetter: "AverageUtilization"},
 			_jsii_.MemberProperty{JsiiProperty: "averageUtilizationInput", GoGetter: "AverageUtilizationInput"},
@@ -1438,7 +1438,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecMetricPodsTargetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1446,11 +1446,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecMetricResource",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecMetricResource)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecMetricResource](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecMetricResourceOutputReference",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecMetricResourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecMetricResourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1480,7 +1480,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecMetricResourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1488,11 +1488,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecMetricResourceTarget",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecMetricResourceTarget)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecMetricResourceTarget](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecMetricResourceTargetOutputReference",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecMetricResourceTargetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecMetricResourceTargetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "averageUtilization", GoGetter: "AverageUtilization"},
 			_jsii_.MemberProperty{JsiiProperty: "averageUtilizationInput", GoGetter: "AverageUtilizationInput"},
@@ -1527,7 +1527,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecMetricResourceTargetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1535,7 +1535,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecOutputReference",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "behavior", GoGetter: "Behavior"},
 			_jsii_.MemberProperty{JsiiProperty: "behaviorInput", GoGetter: "BehaviorInput"},
@@ -1578,7 +1578,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1586,11 +1586,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecScaleTargetRef",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecScaleTargetRef)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecScaleTargetRef](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecScaleTargetRefOutputReference",
-		reflect.TypeOf((*HorizontalPodAutoscalerV2Beta2SpecScaleTargetRefOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HorizontalPodAutoscalerV2Beta2SpecScaleTargetRefOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiVersion", GoGetter: "ApiVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "apiVersionInput", GoGetter: "ApiVersionInput"},
@@ -1621,7 +1621,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecScaleTargetRefOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

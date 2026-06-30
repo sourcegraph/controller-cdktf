@@ -34,7 +34,7 @@ func (s *jsiiProxy_StatefulSetSpecUpdateStrategyList) validateResolveParameters(
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetSpecUpdateStrategyList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_StatefulSetSpecUpdateStrategyList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewStatefulSetSpecUpdateStrategyListParameters(terraformResource cd
 
 	return nil
 }
-

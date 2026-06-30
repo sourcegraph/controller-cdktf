@@ -15,9 +15,9 @@ type StatefulSetMetadataOutputReference interface {
 	AnnotationsInput() *map[string]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -58,7 +58,7 @@ type StatefulSetMetadataOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -86,7 +86,7 @@ type StatefulSetMetadataOutputReference interface {
 	ResetNamespace()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -119,8 +119,8 @@ func (j *jsiiProxy_StatefulSetMetadataOutputReference) AnnotationsInput() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_StatefulSetMetadataOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StatefulSetMetadataOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -299,7 +299,6 @@ func (j *jsiiProxy_StatefulSetMetadataOutputReference) Uid() *string {
 	return returns
 }
 
-
 func NewStatefulSetMetadataOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) StatefulSetMetadataOutputReference {
 	_init_.Initialize()
 
@@ -310,7 +309,7 @@ func NewStatefulSetMetadataOutputReference(terraformResource cdktf.IInterpolatin
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.statefulSet.StatefulSetMetadataOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -322,12 +321,12 @@ func NewStatefulSetMetadataOutputReference_Override(s StatefulSetMetadataOutputR
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.statefulSet.StatefulSetMetadataOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		s,
 	)
 }
 
-func (j *jsiiProxy_StatefulSetMetadataOutputReference)SetAnnotations(val *map[string]*string) {
+func (j *jsiiProxy_StatefulSetMetadataOutputReference) SetAnnotations(val *map[string]*string) {
 	if err := j.validateSetAnnotationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_StatefulSetMetadataOutputReference)SetAnnotations(val *map[st
 	)
 }
 
-func (j *jsiiProxy_StatefulSetMetadataOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_StatefulSetMetadataOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_StatefulSetMetadataOutputReference)SetComplexObjectIndex(val 
 	)
 }
 
-func (j *jsiiProxy_StatefulSetMetadataOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_StatefulSetMetadataOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_StatefulSetMetadataOutputReference)SetComplexObjectIsFromSet(
 	)
 }
 
-func (j *jsiiProxy_StatefulSetMetadataOutputReference)SetGenerateName(val *string) {
+func (j *jsiiProxy_StatefulSetMetadataOutputReference) SetGenerateName(val *string) {
 	if err := j.validateSetGenerateNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_StatefulSetMetadataOutputReference)SetGenerateName(val *strin
 	)
 }
 
-func (j *jsiiProxy_StatefulSetMetadataOutputReference)SetInternalValue(val *StatefulSetMetadata) {
+func (j *jsiiProxy_StatefulSetMetadataOutputReference) SetInternalValue(val *StatefulSetMetadata) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_StatefulSetMetadataOutputReference)SetInternalValue(val *Stat
 	)
 }
 
-func (j *jsiiProxy_StatefulSetMetadataOutputReference)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_StatefulSetMetadataOutputReference) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_StatefulSetMetadataOutputReference)SetLabels(val *map[string]
 	)
 }
 
-func (j *jsiiProxy_StatefulSetMetadataOutputReference)SetName(val *string) {
+func (j *jsiiProxy_StatefulSetMetadataOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -404,7 +403,7 @@ func (j *jsiiProxy_StatefulSetMetadataOutputReference)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StatefulSetMetadataOutputReference)SetNamespace(val *string) {
+func (j *jsiiProxy_StatefulSetMetadataOutputReference) SetNamespace(val *string) {
 	if err := j.validateSetNamespaceParameters(val); err != nil {
 		panic(err)
 	}
@@ -415,7 +414,7 @@ func (j *jsiiProxy_StatefulSetMetadataOutputReference)SetNamespace(val *string) 
 	)
 }
 
-func (j *jsiiProxy_StatefulSetMetadataOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_StatefulSetMetadataOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -426,7 +425,7 @@ func (j *jsiiProxy_StatefulSetMetadataOutputReference)SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_StatefulSetMetadataOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_StatefulSetMetadataOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -450,16 +449,16 @@ func (s *jsiiProxy_StatefulSetMetadataOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (s *jsiiProxy_StatefulSetMetadataOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_StatefulSetMetadataOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -475,7 +474,7 @@ func (s *jsiiProxy_StatefulSetMetadataOutputReference) GetBooleanAttribute(terra
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -491,7 +490,7 @@ func (s *jsiiProxy_StatefulSetMetadataOutputReference) GetBooleanMapAttribute(te
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -507,7 +506,7 @@ func (s *jsiiProxy_StatefulSetMetadataOutputReference) GetListAttribute(terrafor
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -523,7 +522,7 @@ func (s *jsiiProxy_StatefulSetMetadataOutputReference) GetNumberAttribute(terraf
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -539,7 +538,7 @@ func (s *jsiiProxy_StatefulSetMetadataOutputReference) GetNumberListAttribute(te
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -555,7 +554,7 @@ func (s *jsiiProxy_StatefulSetMetadataOutputReference) GetNumberMapAttribute(ter
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -571,7 +570,7 @@ func (s *jsiiProxy_StatefulSetMetadataOutputReference) GetStringAttribute(terraf
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -587,7 +586,7 @@ func (s *jsiiProxy_StatefulSetMetadataOutputReference) GetStringMapAttribute(ter
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -616,7 +615,7 @@ func (s *jsiiProxy_StatefulSetMetadataOutputReference) InterpolationForAttribute
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -663,16 +662,16 @@ func (s *jsiiProxy_StatefulSetMetadataOutputReference) ResetNamespace() {
 	)
 }
 
-func (s *jsiiProxy_StatefulSetMetadataOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_StatefulSetMetadataOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -691,4 +690,3 @@ func (s *jsiiProxy_StatefulSetMetadataOutputReference) ToString() *string {
 
 	return returns
 }
-

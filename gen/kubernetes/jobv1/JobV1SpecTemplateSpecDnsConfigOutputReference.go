@@ -12,9 +12,9 @@ type JobV1SpecTemplateSpecDnsConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,7 +33,7 @@ type JobV1SpecTemplateSpecDnsConfigOutputReference interface {
 	SetNameservers(val *[]*string)
 	NameserversInput() *[]*string
 	Option() JobV1SpecTemplateSpecDnsConfigOptionList
-	OptionInput() interface{}
+	OptionInput() any
 	Searches() *[]*string
 	SetSearches(val *[]*string)
 	SearchesInput() *[]*string
@@ -48,7 +48,7 @@ type JobV1SpecTemplateSpecDnsConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,13 +69,13 @@ type JobV1SpecTemplateSpecDnsConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutOption(value interface{})
+	PutOption(value any)
 	ResetNameservers()
 	ResetOption()
 	ResetSearches()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_JobV1SpecTemplateSpecDnsConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOutputReference) Option() JobV1
 	return returns
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOutputReference) OptionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOutputReference) OptionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"optionInput",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOutputReference) TerraformResou
 	return returns
 }
 
-
 func NewJobV1SpecTemplateSpecDnsConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) JobV1SpecTemplateSpecDnsConfigOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewJobV1SpecTemplateSpecDnsConfigOutputReference(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecDnsConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewJobV1SpecTemplateSpecDnsConfigOutputReference_Override(j JobV1SpecTempla
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecDnsConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		j,
 	)
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOutputReference)SetInternalValue(val *JobV1SpecTemplateSpecDnsConfig) {
+func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOutputReference) SetInternalValue(val *JobV1SpecTemplateSpecDnsConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOutputReference)SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOutputReference)SetNameservers(val *[]*string) {
+func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOutputReference) SetNameservers(val *[]*string) {
 	if err := j.validateSetNameserversParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOutputReference)SetNameservers(
 	)
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOutputReference)SetSearches(val *[]*string) {
+func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOutputReference) SetSearches(val *[]*string) {
 	if err := j.validateSetSearchesParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOutputReference)SetSearches(val
 	)
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,16 +335,16 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOutputReference) ComputeFqn() *
 	return returns
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := j.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		j,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -361,7 +360,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOutputReference) GetBooleanAttr
 	_jsii_.Invoke(
 		j,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -377,7 +376,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOutputReference) GetBooleanMapA
 	_jsii_.Invoke(
 		j,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -393,7 +392,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOutputReference) GetListAttribu
 	_jsii_.Invoke(
 		j,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -409,7 +408,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOutputReference) GetNumberAttri
 	_jsii_.Invoke(
 		j,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -425,7 +424,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOutputReference) GetNumberListA
 	_jsii_.Invoke(
 		j,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -441,7 +440,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOutputReference) GetNumberMapAt
 	_jsii_.Invoke(
 		j,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -457,7 +456,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOutputReference) GetStringAttri
 	_jsii_.Invoke(
 		j,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -473,7 +472,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOutputReference) GetStringMapAt
 	_jsii_.Invoke(
 		j,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -502,21 +501,21 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOutputReference) InterpolationF
 	_jsii_.Invoke(
 		j,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOutputReference) PutOption(value interface{}) {
+func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOutputReference) PutOption(value any) {
 	if err := j.validatePutOptionParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		j,
 		"putOption",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -544,16 +543,16 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOutputReference) ResetSearches(
 	)
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := j.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		j,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOutputReference) ToString() *st
 
 	return returns
 }
-

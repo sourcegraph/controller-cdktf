@@ -34,7 +34,7 @@ func (i *jsiiProxy_IngressV1SpecRuleHttpPathList) validateResolveParameters(_con
 	return nil
 }
 
-func (j *jsiiProxy_IngressV1SpecRuleHttpPathList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IngressV1SpecRuleHttpPathList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewIngressV1SpecRuleHttpPathListParameters(terraformResource cdktf.
 
 	return nil
 }
-

@@ -36,7 +36,7 @@ type DataKubernetesNamespaceV1SpecList interface {
 	Get(index *float64) DataKubernetesNamespaceV1SpecOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_DataKubernetesNamespaceV1SpecList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewDataKubernetesNamespaceV1SpecList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataKubernetesNamespaceV1SpecList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewDataKubernetesNamespaceV1SpecList(terraformResource cdktf.IInterpolating
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.dataKubernetesNamespaceV1.DataKubernetesNamespaceV1SpecList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewDataKubernetesNamespaceV1SpecList_Override(d DataKubernetesNamespaceV1Sp
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.dataKubernetesNamespaceV1.DataKubernetesNamespaceV1SpecList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataKubernetesNamespaceV1SpecList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataKubernetesNamespaceV1SpecList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_DataKubernetesNamespaceV1SpecList)SetTerraformAttribute(val *
 	)
 }
 
-func (j *jsiiProxy_DataKubernetesNamespaceV1SpecList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataKubernetesNamespaceV1SpecList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_DataKubernetesNamespaceV1SpecList)SetTerraformResource(val cd
 	)
 }
 
-func (j *jsiiProxy_DataKubernetesNamespaceV1SpecList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataKubernetesNamespaceV1SpecList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (d *jsiiProxy_DataKubernetesNamespaceV1SpecList) AllWithMapKey(mapKeyAttrib
 	_jsii_.Invoke(
 		d,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (d *jsiiProxy_DataKubernetesNamespaceV1SpecList) Get(index *float64) DataKu
 	_jsii_.Invoke(
 		d,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataKubernetesNamespaceV1SpecList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataKubernetesNamespaceV1SpecList) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (d *jsiiProxy_DataKubernetesNamespaceV1SpecList) ToString() *string {
 
 	return returns
 }
-

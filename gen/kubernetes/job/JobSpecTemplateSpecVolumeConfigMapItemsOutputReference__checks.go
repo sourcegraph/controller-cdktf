@@ -98,7 +98,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeConfigMapItemsOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeConfigMapItemsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeConfigMapItemsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeConfigMapItemsOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeConfigMapItemsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeConfigMapItemsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewJobSpecTemplateSpecVolumeConfigMapItemsOutputReferenceParameters
 
 	return nil
 }
-

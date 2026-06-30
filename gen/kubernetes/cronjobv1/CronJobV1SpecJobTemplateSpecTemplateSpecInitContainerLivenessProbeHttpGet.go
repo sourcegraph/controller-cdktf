@@ -1,6 +1,5 @@
 package cronjobv1
 
-
 type CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGet struct {
 	// Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 	//
@@ -9,7 +8,7 @@ type CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGet s
 	// http_header block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/cron_job_v1#http_header CronJobV1#http_header}
-	HttpHeader interface{} `field:"optional" json:"httpHeader" yaml:"httpHeader"`
+	HttpHeader any `field:"optional" json:"httpHeader" yaml:"httpHeader"`
 	// Path to access on the HTTP server.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/cron_job_v1#path CronJobV1#path}
@@ -25,4 +24,3 @@ type CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGet s
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/cron_job_v1#scheme CronJobV1#scheme}
 	Scheme *string `field:"optional" json:"scheme" yaml:"scheme"`
 }
-

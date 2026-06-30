@@ -12,9 +12,9 @@ type JobSpecTemplateSpecContainerLifecycleOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,9 +30,9 @@ type JobSpecTemplateSpecContainerLifecycleOutputReference interface {
 	InternalValue() *JobSpecTemplateSpecContainerLifecycle
 	SetInternalValue(val *JobSpecTemplateSpecContainerLifecycle)
 	PostStart() JobSpecTemplateSpecContainerLifecyclePostStartList
-	PostStartInput() interface{}
+	PostStartInput() any
 	PreStop() JobSpecTemplateSpecContainerLifecyclePreStopList
-	PreStopInput() interface{}
+	PreStopInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -44,7 +44,7 @@ type JobSpecTemplateSpecContainerLifecycleOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -65,13 +65,13 @@ type JobSpecTemplateSpecContainerLifecycleOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutPostStart(value interface{})
-	PutPreStop(value interface{})
+	PutPostStart(value any)
+	PutPreStop(value any)
 	ResetPostStart()
 	ResetPreStop()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_JobSpecTemplateSpecContainerLifecycleOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecycleOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecycleOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -144,8 +144,8 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecycleOutputReference) PostSta
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecycleOutputReference) PostStartInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecycleOutputReference) PostStartInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"postStartInput",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecycleOutputReference) PreStop
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecycleOutputReference) PreStopInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecycleOutputReference) PreStopInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"preStopInput",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecycleOutputReference) Terrafo
 	return returns
 }
 
-
 func NewJobSpecTemplateSpecContainerLifecycleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) JobSpecTemplateSpecContainerLifecycleOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewJobSpecTemplateSpecContainerLifecycleOutputReference(terraformResource c
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecContainerLifecycleOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewJobSpecTemplateSpecContainerLifecycleOutputReference_Override(j JobSpecT
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecContainerLifecycleOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		j,
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecycleOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecycleOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecycleOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecycleOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecycleOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecycleOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecycleOutputReference)SetInternalValue(val *JobSpecTemplateSpecContainerLifecycle) {
+func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecycleOutputReference) SetInternalValue(val *JobSpecTemplateSpecContainerLifecycle) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecycleOutputReference)SetInter
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecycleOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecycleOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecycleOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecycleOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecycleOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,16 +289,16 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecycleOutputReference) Compute
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecycleOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecycleOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := j.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		j,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -315,7 +314,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecycleOutputReference) GetBool
 	_jsii_.Invoke(
 		j,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -331,7 +330,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecycleOutputReference) GetBool
 	_jsii_.Invoke(
 		j,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -347,7 +346,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecycleOutputReference) GetList
 	_jsii_.Invoke(
 		j,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -363,7 +362,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecycleOutputReference) GetNumb
 	_jsii_.Invoke(
 		j,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -379,7 +378,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecycleOutputReference) GetNumb
 	_jsii_.Invoke(
 		j,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -395,7 +394,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecycleOutputReference) GetNumb
 	_jsii_.Invoke(
 		j,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -411,7 +410,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecycleOutputReference) GetStri
 	_jsii_.Invoke(
 		j,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -427,7 +426,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecycleOutputReference) GetStri
 	_jsii_.Invoke(
 		j,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -456,32 +455,32 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecycleOutputReference) Interpo
 	_jsii_.Invoke(
 		j,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecycleOutputReference) PutPostStart(value interface{}) {
+func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecycleOutputReference) PutPostStart(value any) {
 	if err := j.validatePutPostStartParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		j,
 		"putPostStart",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecycleOutputReference) PutPreStop(value interface{}) {
+func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecycleOutputReference) PutPreStop(value any) {
 	if err := j.validatePutPreStopParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		j,
 		"putPreStop",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -501,16 +500,16 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecycleOutputReference) ResetPr
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecycleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecycleOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := j.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		j,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecycleOutputReference) ToStrin
 
 	return returns
 }
-

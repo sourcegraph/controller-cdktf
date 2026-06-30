@@ -17,8 +17,8 @@ type PodSpecContainerLifecyclePreStopTcpSocketList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type PodSpecContainerLifecyclePreStopTcpSocketList interface {
 	Get(index *float64) PodSpecContainerLifecyclePreStopTcpSocketOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_PodSpecContainerLifecyclePreStopTcpSocketList) Fqn() *string 
 	return returns
 }
 
-func (j *jsiiProxy_PodSpecContainerLifecyclePreStopTcpSocketList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSpecContainerLifecyclePreStopTcpSocketList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_PodSpecContainerLifecyclePreStopTcpSocketList) WrapsSet() *bo
 	return returns
 }
 
-
 func NewPodSpecContainerLifecyclePreStopTcpSocketList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecContainerLifecyclePreStopTcpSocketList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewPodSpecContainerLifecyclePreStopTcpSocketList(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.pod.PodSpecContainerLifecyclePreStopTcpSocketList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewPodSpecContainerLifecyclePreStopTcpSocketList_Override(p PodSpecContaine
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.pod.PodSpecContainerLifecyclePreStopTcpSocketList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PodSpecContainerLifecyclePreStopTcpSocketList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_PodSpecContainerLifecyclePreStopTcpSocketList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_PodSpecContainerLifecyclePreStopTcpSocketList)SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_PodSpecContainerLifecyclePreStopTcpSocketList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PodSpecContainerLifecyclePreStopTcpSocketList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_PodSpecContainerLifecyclePreStopTcpSocketList)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_PodSpecContainerLifecyclePreStopTcpSocketList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PodSpecContainerLifecyclePreStopTcpSocketList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_PodSpecContainerLifecyclePreStopTcpSocketList)SetTerraformRes
 	)
 }
 
-func (j *jsiiProxy_PodSpecContainerLifecyclePreStopTcpSocketList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_PodSpecContainerLifecyclePreStopTcpSocketList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (p *jsiiProxy_PodSpecContainerLifecyclePreStopTcpSocketList) AllWithMapKey(
 	_jsii_.Invoke(
 		p,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (p *jsiiProxy_PodSpecContainerLifecyclePreStopTcpSocketList) Get(index *flo
 	_jsii_.Invoke(
 		p,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_PodSpecContainerLifecyclePreStopTcpSocketList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PodSpecContainerLifecyclePreStopTcpSocketList) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (p *jsiiProxy_PodSpecContainerLifecyclePreStopTcpSocketList) ToString() *st
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (p *jsiiProxy_PodDisruptionBudgetV1SpecSelectorMatchExpressionsOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_PodDisruptionBudgetV1SpecSelectorMatchExpressionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodDisruptionBudgetV1SpecSelectorMatchExpressionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_PodDisruptionBudgetV1SpecSelectorMatchExpressionsOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_PodDisruptionBudgetV1SpecSelectorMatchExpressionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PodDisruptionBudgetV1SpecSelectorMatchExpressionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewPodDisruptionBudgetV1SpecSelectorMatchExpressionsOutputReference
 
 	return nil
 }
-

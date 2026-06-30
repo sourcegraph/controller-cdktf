@@ -1,6 +1,5 @@
 package jobv1
 
-
 type JobV1Spec struct {
 	// template block.
 	//
@@ -31,7 +30,7 @@ type JobV1Spec struct {
 	// Leave unset unless you are certain what you are doing. When false or unset, the system pick labels unique to this job and appends those labels to the pod template. When true, the user is responsible for picking unique labels and specifying the selector. Failure to pick a unique label may cause this and other jobs to not function correctly. More info: https://git.k8s.io/community/contributors/design-proposals/selector-generation.md
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/job_v1#manual_selector JobV1#manual_selector}
-	ManualSelector interface{} `field:"optional" json:"manualSelector" yaml:"manualSelector"`
+	ManualSelector any `field:"optional" json:"manualSelector" yaml:"manualSelector"`
 	// Specifies the maximum desired number of pods the job should run at any given time.
 	//
 	// The actual number of pods running in steady state will be less than this number when ((.spec.completions - .status.successful) < .spec.parallelism), i.e. when the work left to do is less than max parallelism. More info: https://kubernetes.io/docs/concepts/workloads/controllers/jobs-run-to-completion/
@@ -49,4 +48,3 @@ type JobV1Spec struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/job_v1#ttl_seconds_after_finished JobV1#ttl_seconds_after_finished}
 	TtlSecondsAfterFinished *string `field:"optional" json:"ttlSecondsAfterFinished" yaml:"ttlSecondsAfterFinished"`
 }
-

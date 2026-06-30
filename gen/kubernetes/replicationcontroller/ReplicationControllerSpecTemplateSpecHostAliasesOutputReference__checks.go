@@ -98,7 +98,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecHostAliasesOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecHostAliasesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecHostAliasesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecHostAliasesOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecHostAliasesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecHostAliasesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewReplicationControllerSpecTemplateSpecHostAliasesOutputReferenceP
 
 	return nil
 }
-

@@ -1,11 +1,10 @@
 package horizontalpodautoscalerv2beta2
 
-
 type HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleUp struct {
 	// policy block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/horizontal_pod_autoscaler_v2beta2#policy HorizontalPodAutoscalerV2Beta2#policy}
-	Policy interface{} `field:"required" json:"policy" yaml:"policy"`
+	Policy any `field:"required" json:"policy" yaml:"policy"`
 	// Used to specify which policy should be used. If not set, the default value Max is used.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/horizontal_pod_autoscaler_v2beta2#select_policy HorizontalPodAutoscalerV2Beta2#select_policy}
@@ -17,4 +16,3 @@ type HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleUp struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/horizontal_pod_autoscaler_v2beta2#stabilization_window_seconds HorizontalPodAutoscalerV2Beta2#stabilization_window_seconds}
 	StabilizationWindowSeconds *float64 `field:"optional" json:"stabilizationWindowSeconds" yaml:"stabilizationWindowSeconds"`
 }
-

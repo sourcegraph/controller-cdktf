@@ -6,9 +6,9 @@ import (
 
 type DaemonSetV1Config struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type DaemonSetV1Config struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// metadata block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/daemon_set_v1#metadata DaemonSetV1#metadata}
@@ -39,6 +39,5 @@ type DaemonSetV1Config struct {
 	// Wait for the rollout of the deployment to complete. Defaults to true.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/daemon_set_v1#wait_for_rollout DaemonSetV1#wait_for_rollout}
-	WaitForRollout interface{} `field:"optional" json:"waitForRollout" yaml:"waitForRollout"`
+	WaitForRollout any `field:"optional" json:"waitForRollout" yaml:"waitForRollout"`
 }
-

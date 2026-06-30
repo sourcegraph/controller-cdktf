@@ -34,7 +34,7 @@ func (p *jsiiProxy_PodSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuri
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewPodSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringE
 
 	return nil
 }
-

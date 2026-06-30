@@ -90,7 +90,7 @@ func (e *jsiiProxy_EndpointsSubsetOutputReference) validateInterpolationForAttri
 	return nil
 }
 
-func (e *jsiiProxy_EndpointsSubsetOutputReference) validatePutAddressParameters(value interface{}) error {
+func (e *jsiiProxy_EndpointsSubsetOutputReference) validatePutAddressParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (e *jsiiProxy_EndpointsSubsetOutputReference) validatePutAddressParameters(
 	return nil
 }
 
-func (e *jsiiProxy_EndpointsSubsetOutputReference) validatePutNotReadyAddressParameters(value interface{}) error {
+func (e *jsiiProxy_EndpointsSubsetOutputReference) validatePutNotReadyAddressParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -152,7 +152,7 @@ func (e *jsiiProxy_EndpointsSubsetOutputReference) validatePutNotReadyAddressPar
 	return nil
 }
 
-func (e *jsiiProxy_EndpointsSubsetOutputReference) validatePutPortParameters(value interface{}) error {
+func (e *jsiiProxy_EndpointsSubsetOutputReference) validatePutPortParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (e *jsiiProxy_EndpointsSubsetOutputReference) validateResolveParameters(_co
 	return nil
 }
 
-func (j *jsiiProxy_EndpointsSubsetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EndpointsSubsetOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -256,7 +256,7 @@ func (j *jsiiProxy_EndpointsSubsetOutputReference) validateSetComplexObjectIsFro
 	return nil
 }
 
-func (j *jsiiProxy_EndpointsSubsetOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EndpointsSubsetOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -315,4 +315,3 @@ func validateNewEndpointsSubsetOutputReferenceParameters(terraformResource cdktf
 
 	return nil
 }
-

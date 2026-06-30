@@ -106,7 +106,7 @@ func (j *jsiiProxy_PodSpecInitContainerLivenessProbeExecOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecInitContainerLivenessProbeExecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecInitContainerLivenessProbeExecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewPodSpecInitContainerLivenessProbeExecOutputReferenceParameters(t
 
 	return nil
 }
-

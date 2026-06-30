@@ -34,7 +34,7 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecReadinessGateList) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetSpecTemplateSpecReadinessGateList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecReadinessGateList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewStatefulSetSpecTemplateSpecReadinessGateListParameters(terraform
 
 	return nil
 }
-

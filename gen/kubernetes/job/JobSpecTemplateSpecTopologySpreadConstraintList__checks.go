@@ -34,7 +34,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintList) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewJobSpecTemplateSpecTopologySpreadConstraintListParameters(terraf
 
 	return nil
 }
-

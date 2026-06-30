@@ -34,7 +34,7 @@ func (l *jsiiProxy_LimitRangeV1SpecLimitList) validateResolveParameters(_context
 	return nil
 }
 
-func (j *jsiiProxy_LimitRangeV1SpecLimitList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LimitRangeV1SpecLimitList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewLimitRangeV1SpecLimitListParameters(terraformResource cdktf.IInt
 
 	return nil
 }
-

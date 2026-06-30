@@ -18,9 +18,9 @@ type ValidatingWebhookConfigurationV1WebhookRuleOutputReference interface {
 	ApiVersionsInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type ValidatingWebhookConfigurationV1WebhookRuleOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Operations() *[]*string
 	SetOperations(val *[]*string)
 	OperationsInput() *[]*string
@@ -55,7 +55,7 @@ type ValidatingWebhookConfigurationV1WebhookRuleOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type ValidatingWebhookConfigurationV1WebhookRuleOutputReference interface {
 	ResetScope()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -132,8 +132,8 @@ func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookRuleOutputReference) A
 	return returns
 }
 
-func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookRuleOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookRuleOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -172,8 +172,8 @@ func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookRuleOutputReference) F
 	return returns
 }
 
-func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookRuleOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookRuleOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -262,7 +262,6 @@ func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookRuleOutputReference) T
 	return returns
 }
 
-
 func NewValidatingWebhookConfigurationV1WebhookRuleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ValidatingWebhookConfigurationV1WebhookRuleOutputReference {
 	_init_.Initialize()
 
@@ -273,7 +272,7 @@ func NewValidatingWebhookConfigurationV1WebhookRuleOutputReference(terraformReso
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1WebhookRuleOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -285,12 +284,12 @@ func NewValidatingWebhookConfigurationV1WebhookRuleOutputReference_Override(v Va
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1WebhookRuleOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		v,
 	)
 }
 
-func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookRuleOutputReference)SetApiGroups(val *[]*string) {
+func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookRuleOutputReference) SetApiGroups(val *[]*string) {
 	if err := j.validateSetApiGroupsParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookRuleOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookRuleOutputReference)SetApiVersions(val *[]*string) {
+func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookRuleOutputReference) SetApiVersions(val *[]*string) {
 	if err := j.validateSetApiVersionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookRuleOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookRuleOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookRuleOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookRuleOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookRuleOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookRuleOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -334,7 +333,7 @@ func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookRuleOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookRuleOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookRuleOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,7 +344,7 @@ func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookRuleOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookRuleOutputReference)SetOperations(val *[]*string) {
+func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookRuleOutputReference) SetOperations(val *[]*string) {
 	if err := j.validateSetOperationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -356,7 +355,7 @@ func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookRuleOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookRuleOutputReference)SetResources(val *[]*string) {
+func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookRuleOutputReference) SetResources(val *[]*string) {
 	if err := j.validateSetResourcesParameters(val); err != nil {
 		panic(err)
 	}
@@ -367,7 +366,7 @@ func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookRuleOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookRuleOutputReference)SetScope(val *string) {
+func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookRuleOutputReference) SetScope(val *string) {
 	if err := j.validateSetScopeParameters(val); err != nil {
 		panic(err)
 	}
@@ -378,7 +377,7 @@ func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookRuleOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookRuleOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookRuleOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -389,7 +388,7 @@ func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookRuleOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookRuleOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookRuleOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -413,16 +412,16 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1WebhookRuleOutputReference) C
 	return returns
 }
 
-func (v *jsiiProxy_ValidatingWebhookConfigurationV1WebhookRuleOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (v *jsiiProxy_ValidatingWebhookConfigurationV1WebhookRuleOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := v.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1WebhookRuleOutputReference) G
 	_jsii_.Invoke(
 		v,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -454,7 +453,7 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1WebhookRuleOutputReference) G
 	_jsii_.Invoke(
 		v,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -470,7 +469,7 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1WebhookRuleOutputReference) G
 	_jsii_.Invoke(
 		v,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -486,7 +485,7 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1WebhookRuleOutputReference) G
 	_jsii_.Invoke(
 		v,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -502,7 +501,7 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1WebhookRuleOutputReference) G
 	_jsii_.Invoke(
 		v,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -518,7 +517,7 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1WebhookRuleOutputReference) G
 	_jsii_.Invoke(
 		v,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -534,7 +533,7 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1WebhookRuleOutputReference) G
 	_jsii_.Invoke(
 		v,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -550,7 +549,7 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1WebhookRuleOutputReference) G
 	_jsii_.Invoke(
 		v,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -579,7 +578,7 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1WebhookRuleOutputReference) I
 	_jsii_.Invoke(
 		v,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -594,16 +593,16 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1WebhookRuleOutputReference) R
 	)
 }
 
-func (v *jsiiProxy_ValidatingWebhookConfigurationV1WebhookRuleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (v *jsiiProxy_ValidatingWebhookConfigurationV1WebhookRuleOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := v.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		v,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -622,4 +621,3 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1WebhookRuleOutputReference) T
 
 	return returns
 }
-

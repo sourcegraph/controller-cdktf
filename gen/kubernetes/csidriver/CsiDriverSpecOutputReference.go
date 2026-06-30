@@ -10,14 +10,14 @@ import (
 
 type CsiDriverSpecOutputReference interface {
 	cdktf.ComplexObject
-	AttachRequired() interface{}
-	SetAttachRequired(val interface{})
-	AttachRequiredInput() interface{}
+	AttachRequired() any
+	SetAttachRequired(val any)
+	AttachRequiredInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -32,9 +32,9 @@ type CsiDriverSpecOutputReference interface {
 	Fqn() *string
 	InternalValue() *CsiDriverSpec
 	SetInternalValue(val *CsiDriverSpec)
-	PodInfoOnMount() interface{}
-	SetPodInfoOnMount(val interface{})
-	PodInfoOnMountInput() interface{}
+	PodInfoOnMount() any
+	SetPodInfoOnMount(val any)
+	PodInfoOnMountInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type CsiDriverSpecOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -74,7 +74,7 @@ type CsiDriverSpecOutputReference interface {
 	ResetVolumeLifecycleModes()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,8 +87,8 @@ type jsiiProxy_CsiDriverSpecOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_CsiDriverSpecOutputReference) AttachRequired() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CsiDriverSpecOutputReference) AttachRequired() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"attachRequired",
@@ -97,8 +97,8 @@ func (j *jsiiProxy_CsiDriverSpecOutputReference) AttachRequired() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CsiDriverSpecOutputReference) AttachRequiredInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CsiDriverSpecOutputReference) AttachRequiredInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"attachRequiredInput",
@@ -107,8 +107,8 @@ func (j *jsiiProxy_CsiDriverSpecOutputReference) AttachRequiredInput() interface
 	return returns
 }
 
-func (j *jsiiProxy_CsiDriverSpecOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CsiDriverSpecOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -157,8 +157,8 @@ func (j *jsiiProxy_CsiDriverSpecOutputReference) InternalValue() *CsiDriverSpec 
 	return returns
 }
 
-func (j *jsiiProxy_CsiDriverSpecOutputReference) PodInfoOnMount() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CsiDriverSpecOutputReference) PodInfoOnMount() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"podInfoOnMount",
@@ -167,8 +167,8 @@ func (j *jsiiProxy_CsiDriverSpecOutputReference) PodInfoOnMount() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CsiDriverSpecOutputReference) PodInfoOnMountInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CsiDriverSpecOutputReference) PodInfoOnMountInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"podInfoOnMountInput",
@@ -217,7 +217,6 @@ func (j *jsiiProxy_CsiDriverSpecOutputReference) VolumeLifecycleModesInput() *[]
 	return returns
 }
 
-
 func NewCsiDriverSpecOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CsiDriverSpecOutputReference {
 	_init_.Initialize()
 
@@ -228,7 +227,7 @@ func NewCsiDriverSpecOutputReference(terraformResource cdktf.IInterpolatingParen
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.csiDriver.CsiDriverSpecOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -240,12 +239,12 @@ func NewCsiDriverSpecOutputReference_Override(c CsiDriverSpecOutputReference, te
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.csiDriver.CsiDriverSpecOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CsiDriverSpecOutputReference)SetAttachRequired(val interface{}) {
+func (j *jsiiProxy_CsiDriverSpecOutputReference) SetAttachRequired(val any) {
 	if err := j.validateSetAttachRequiredParameters(val); err != nil {
 		panic(err)
 	}
@@ -256,7 +255,7 @@ func (j *jsiiProxy_CsiDriverSpecOutputReference)SetAttachRequired(val interface{
 	)
 }
 
-func (j *jsiiProxy_CsiDriverSpecOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CsiDriverSpecOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -267,7 +266,7 @@ func (j *jsiiProxy_CsiDriverSpecOutputReference)SetComplexObjectIndex(val interf
 	)
 }
 
-func (j *jsiiProxy_CsiDriverSpecOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CsiDriverSpecOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_CsiDriverSpecOutputReference)SetComplexObjectIsFromSet(val *b
 	)
 }
 
-func (j *jsiiProxy_CsiDriverSpecOutputReference)SetInternalValue(val *CsiDriverSpec) {
+func (j *jsiiProxy_CsiDriverSpecOutputReference) SetInternalValue(val *CsiDriverSpec) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_CsiDriverSpecOutputReference)SetInternalValue(val *CsiDriverS
 	)
 }
 
-func (j *jsiiProxy_CsiDriverSpecOutputReference)SetPodInfoOnMount(val interface{}) {
+func (j *jsiiProxy_CsiDriverSpecOutputReference) SetPodInfoOnMount(val any) {
 	if err := j.validateSetPodInfoOnMountParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_CsiDriverSpecOutputReference)SetPodInfoOnMount(val interface{
 	)
 }
 
-func (j *jsiiProxy_CsiDriverSpecOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CsiDriverSpecOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_CsiDriverSpecOutputReference)SetTerraformAttribute(val *strin
 	)
 }
 
-func (j *jsiiProxy_CsiDriverSpecOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CsiDriverSpecOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -322,7 +321,7 @@ func (j *jsiiProxy_CsiDriverSpecOutputReference)SetTerraformResource(val cdktf.I
 	)
 }
 
-func (j *jsiiProxy_CsiDriverSpecOutputReference)SetVolumeLifecycleModes(val *[]*string) {
+func (j *jsiiProxy_CsiDriverSpecOutputReference) SetVolumeLifecycleModes(val *[]*string) {
 	if err := j.validateSetVolumeLifecycleModesParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,16 +345,16 @@ func (c *jsiiProxy_CsiDriverSpecOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (c *jsiiProxy_CsiDriverSpecOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CsiDriverSpecOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -371,7 +370,7 @@ func (c *jsiiProxy_CsiDriverSpecOutputReference) GetBooleanAttribute(terraformAt
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -387,7 +386,7 @@ func (c *jsiiProxy_CsiDriverSpecOutputReference) GetBooleanMapAttribute(terrafor
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (c *jsiiProxy_CsiDriverSpecOutputReference) GetListAttribute(terraformAttri
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,7 +418,7 @@ func (c *jsiiProxy_CsiDriverSpecOutputReference) GetNumberAttribute(terraformAtt
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -435,7 +434,7 @@ func (c *jsiiProxy_CsiDriverSpecOutputReference) GetNumberListAttribute(terrafor
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -451,7 +450,7 @@ func (c *jsiiProxy_CsiDriverSpecOutputReference) GetNumberMapAttribute(terraform
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func (c *jsiiProxy_CsiDriverSpecOutputReference) GetStringAttribute(terraformAtt
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -483,7 +482,7 @@ func (c *jsiiProxy_CsiDriverSpecOutputReference) GetStringMapAttribute(terraform
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (c *jsiiProxy_CsiDriverSpecOutputReference) InterpolationForAttribute(prope
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -535,16 +534,16 @@ func (c *jsiiProxy_CsiDriverSpecOutputReference) ResetVolumeLifecycleModes() {
 	)
 }
 
-func (c *jsiiProxy_CsiDriverSpecOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CsiDriverSpecOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -563,4 +562,3 @@ func (c *jsiiProxy_CsiDriverSpecOutputReference) ToString() *string {
 
 	return returns
 }
-

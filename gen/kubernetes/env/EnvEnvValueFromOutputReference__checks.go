@@ -142,7 +142,7 @@ func (e *jsiiProxy_EnvEnvValueFromOutputReference) validateResolveParameters(_co
 	return nil
 }
 
-func (j *jsiiProxy_EnvEnvValueFromOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EnvEnvValueFromOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -242,4 +242,3 @@ func validateNewEnvEnvValueFromOutputReferenceParameters(terraformResource cdktf
 
 	return nil
 }
-

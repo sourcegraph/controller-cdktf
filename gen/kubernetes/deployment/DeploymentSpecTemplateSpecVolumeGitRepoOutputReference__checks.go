@@ -98,7 +98,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeGitRepoOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeGitRepoOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeGitRepoOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDeploymentSpecTemplateSpecVolumeGitRepoOutputReferenceParameters
 
 	return nil
 }
-

@@ -1,6 +1,5 @@
 package daemonset
 
-
 type DaemonsetSpecTemplateSpecSecurityContext struct {
 	// A special supplemental group that applies to all containers in a pod.
 	//
@@ -19,7 +18,7 @@ type DaemonsetSpecTemplateSpecSecurityContext struct {
 	// If true, the Kubelet will validate the image at runtime to ensure that it does not run as UID 0 (root) and fail to start the container if it does. If unset or false, no such validation will be performed. May also be set in SecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/daemonset#run_as_non_root Daemonset#run_as_non_root}
-	RunAsNonRoot interface{} `field:"optional" json:"runAsNonRoot" yaml:"runAsNonRoot"`
+	RunAsNonRoot any `field:"optional" json:"runAsNonRoot" yaml:"runAsNonRoot"`
 	// The UID to run the entrypoint of the container process.
 	//
 	// Defaults to user specified in image metadata if unspecified. May also be set in SecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence for that container.
@@ -43,6 +42,5 @@ type DaemonsetSpecTemplateSpecSecurityContext struct {
 	// sysctl block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/daemonset#sysctl Daemonset#sysctl}
-	Sysctl interface{} `field:"optional" json:"sysctl" yaml:"sysctl"`
+	Sysctl any `field:"optional" json:"sysctl" yaml:"sysctl"`
 }
-

@@ -112,7 +112,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecSecurityContextOutputReference) validatePu
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecSecurityContextOutputReference) validatePutSysctlParameters(value interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecSecurityContextOutputReference) validatePutSysctlParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecSecurityContextOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecSecurityContextOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecSecurityContextOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -240,7 +240,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecSecurityContextOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecSecurityContextOutputReference) validateSetRunAsNonRootParameters(val interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecSecurityContextOutputReference) validateSetRunAsNonRootParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -303,4 +303,3 @@ func validateNewJobSpecTemplateSpecSecurityContextOutputReferenceParameters(terr
 
 	return nil
 }
-

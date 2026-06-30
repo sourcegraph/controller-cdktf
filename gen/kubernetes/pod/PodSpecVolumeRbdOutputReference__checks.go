@@ -117,7 +117,7 @@ func (j *jsiiProxy_PodSpecVolumeRbdOutputReference) validateSetCephMonitorsParam
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecVolumeRbdOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecVolumeRbdOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,7 +230,7 @@ func (j *jsiiProxy_PodSpecVolumeRbdOutputReference) validateSetRbdPoolParameters
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecVolumeRbdOutputReference) validateSetReadOnlyParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecVolumeRbdOutputReference) validateSetReadOnlyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -277,4 +277,3 @@ func validateNewPodSpecVolumeRbdOutputReferenceParameters(terraformResource cdkt
 
 	return nil
 }
-

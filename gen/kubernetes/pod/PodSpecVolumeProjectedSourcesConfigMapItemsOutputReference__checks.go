@@ -98,7 +98,7 @@ func (p *jsiiProxy_PodSpecVolumeProjectedSourcesConfigMapItemsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecVolumeProjectedSourcesConfigMapItemsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecVolumeProjectedSourcesConfigMapItemsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_PodSpecVolumeProjectedSourcesConfigMapItemsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecVolumeProjectedSourcesConfigMapItemsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecVolumeProjectedSourcesConfigMapItemsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewPodSpecVolumeProjectedSourcesConfigMapItemsOutputReferenceParame
 
 	return nil
 }
-

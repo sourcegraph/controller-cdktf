@@ -98,7 +98,7 @@ func (j *jsiiProxy_JobV1SpecSelectorMatchExpressionsOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecSelectorMatchExpressionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_JobV1SpecSelectorMatchExpressionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_JobV1SpecSelectorMatchExpressionsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecSelectorMatchExpressionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_JobV1SpecSelectorMatchExpressionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewJobV1SpecSelectorMatchExpressionsOutputReferenceParameters(terra
 
 	return nil
 }
-

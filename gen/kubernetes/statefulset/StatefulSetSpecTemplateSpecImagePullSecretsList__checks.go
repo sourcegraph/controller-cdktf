@@ -34,7 +34,7 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecImagePullSecretsList) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetSpecTemplateSpecImagePullSecretsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecImagePullSecretsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewStatefulSetSpecTemplateSpecImagePullSecretsListParameters(terraf
 
 	return nil
 }
-

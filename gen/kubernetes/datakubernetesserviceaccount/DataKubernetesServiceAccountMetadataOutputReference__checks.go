@@ -106,7 +106,7 @@ func (j *jsiiProxy_DataKubernetesServiceAccountMetadataOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesServiceAccountMetadataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataKubernetesServiceAccountMetadataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewDataKubernetesServiceAccountMetadataOutputReferenceParameters(te
 
 	return nil
 }
-

@@ -17,8 +17,8 @@ type JobSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList interfa
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type JobSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList interfa
 	Get(index *float64) JobSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHead
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHead
 	return returns
 }
 
-
 func NewJobSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) JobSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewJobSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList(terr
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewJobSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList_Over
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		j,
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHead
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHead
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHead
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHead
 	_jsii_.Invoke(
 		j,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHead
 	_jsii_.Invoke(
 		j,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList) Resolve(_context cdktf.IResolveContext) any {
 	if err := j.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		j,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHead
 
 	return returns
 }
-

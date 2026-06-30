@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataKubernetesPersistentVolumeClaim) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataKubernetesPersistentVolumeClaim) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -122,7 +122,7 @@ func (d *jsiiProxy_DataKubernetesPersistentVolumeClaim) validatePutMetadataParam
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPersistentVolumeClaim) validatePutSpecParameters(value interface{}) error {
+func (d *jsiiProxy_DataKubernetesPersistentVolumeClaim) validatePutSpecParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -169,7 +169,7 @@ func validateDataKubernetesPersistentVolumeClaim_GenerateConfigForImportParamete
 	return nil
 }
 
-func validateDataKubernetesPersistentVolumeClaim_IsConstructParameters(x interface{}) error {
+func validateDataKubernetesPersistentVolumeClaim_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -177,7 +177,7 @@ func validateDataKubernetesPersistentVolumeClaim_IsConstructParameters(x interfa
 	return nil
 }
 
-func validateDataKubernetesPersistentVolumeClaim_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataKubernetesPersistentVolumeClaim_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -185,7 +185,7 @@ func validateDataKubernetesPersistentVolumeClaim_IsTerraformDataSourceParameters
 	return nil
 }
 
-func validateDataKubernetesPersistentVolumeClaim_IsTerraformElementParameters(x interface{}) error {
+func validateDataKubernetesPersistentVolumeClaim_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -193,7 +193,7 @@ func validateDataKubernetesPersistentVolumeClaim_IsTerraformElementParameters(x 
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesPersistentVolumeClaim) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataKubernetesPersistentVolumeClaim) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -284,4 +284,3 @@ func validateNewDataKubernetesPersistentVolumeClaimParameters(scope constructs.C
 
 	return nil
 }
-

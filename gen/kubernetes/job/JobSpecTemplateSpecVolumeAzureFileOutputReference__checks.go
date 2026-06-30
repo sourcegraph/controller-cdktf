@@ -98,7 +98,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureFileOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureFileOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureFileOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureFileOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureFileOutputReference) validateSetReadOnlyParameters(val interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureFileOutputReference) validateSetReadOnlyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -242,4 +242,3 @@ func validateNewJobSpecTemplateSpecVolumeAzureFileOutputReferenceParameters(terr
 
 	return nil
 }
-

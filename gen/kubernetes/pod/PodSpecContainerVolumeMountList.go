@@ -17,8 +17,8 @@ type PodSpecContainerVolumeMountList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type PodSpecContainerVolumeMountList interface {
 	Get(index *float64) PodSpecContainerVolumeMountOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_PodSpecContainerVolumeMountList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_PodSpecContainerVolumeMountList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSpecContainerVolumeMountList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_PodSpecContainerVolumeMountList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewPodSpecContainerVolumeMountList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecContainerVolumeMountList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewPodSpecContainerVolumeMountList(terraformResource cdktf.IInterpolatingPa
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.pod.PodSpecContainerVolumeMountList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewPodSpecContainerVolumeMountList_Override(p PodSpecContainerVolumeMountLi
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.pod.PodSpecContainerVolumeMountList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PodSpecContainerVolumeMountList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_PodSpecContainerVolumeMountList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_PodSpecContainerVolumeMountList)SetInternalValue(val interfac
 	)
 }
 
-func (j *jsiiProxy_PodSpecContainerVolumeMountList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PodSpecContainerVolumeMountList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_PodSpecContainerVolumeMountList)SetTerraformAttribute(val *st
 	)
 }
 
-func (j *jsiiProxy_PodSpecContainerVolumeMountList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PodSpecContainerVolumeMountList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_PodSpecContainerVolumeMountList)SetTerraformResource(val cdkt
 	)
 }
 
-func (j *jsiiProxy_PodSpecContainerVolumeMountList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_PodSpecContainerVolumeMountList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (p *jsiiProxy_PodSpecContainerVolumeMountList) AllWithMapKey(mapKeyAttribut
 	_jsii_.Invoke(
 		p,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (p *jsiiProxy_PodSpecContainerVolumeMountList) Get(index *float64) PodSpecC
 	_jsii_.Invoke(
 		p,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_PodSpecContainerVolumeMountList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PodSpecContainerVolumeMountList) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (p *jsiiProxy_PodSpecContainerVolumeMountList) ToString() *string {
 
 	return returns
 }
-

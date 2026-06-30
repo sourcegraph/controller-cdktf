@@ -98,7 +98,7 @@ func (i *jsiiProxy_IngressV1StatusOutputReference) validateResolveParameters(_co
 	return nil
 }
 
-func (j *jsiiProxy_IngressV1StatusOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IngressV1StatusOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewIngressV1StatusOutputReferenceParameters(terraformResource cdktf
 
 	return nil
 }
-

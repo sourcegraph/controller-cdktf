@@ -120,7 +120,7 @@ func (i *jsiiProxy_IngressV1SpecDefaultBackendOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_IngressV1SpecDefaultBackendOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IngressV1SpecDefaultBackendOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewIngressV1SpecDefaultBackendOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

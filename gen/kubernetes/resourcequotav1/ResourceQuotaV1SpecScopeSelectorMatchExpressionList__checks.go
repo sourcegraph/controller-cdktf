@@ -34,7 +34,7 @@ func (r *jsiiProxy_ResourceQuotaV1SpecScopeSelectorMatchExpressionList) validate
 	return nil
 }
 
-func (j *jsiiProxy_ResourceQuotaV1SpecScopeSelectorMatchExpressionList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ResourceQuotaV1SpecScopeSelectorMatchExpressionList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewResourceQuotaV1SpecScopeSelectorMatchExpressionListParameters(te
 
 	return nil
 }
-

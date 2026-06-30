@@ -36,7 +36,7 @@ type DataKubernetesPodV1SpecContainerSecurityContextList interface {
 	Get(index *float64) DataKubernetesPodV1SpecContainerSecurityContextOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_DataKubernetesPodV1SpecContainerSecurityContextList) WrapsSet
 	return returns
 }
 
-
 func NewDataKubernetesPodV1SpecContainerSecurityContextList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataKubernetesPodV1SpecContainerSecurityContextList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewDataKubernetesPodV1SpecContainerSecurityContextList(terraformResource cd
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerSecurityContextList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewDataKubernetesPodV1SpecContainerSecurityContextList_Override(d DataKuber
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerSecurityContextList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataKubernetesPodV1SpecContainerSecurityContextList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataKubernetesPodV1SpecContainerSecurityContextList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_DataKubernetesPodV1SpecContainerSecurityContextList)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_DataKubernetesPodV1SpecContainerSecurityContextList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataKubernetesPodV1SpecContainerSecurityContextList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_DataKubernetesPodV1SpecContainerSecurityContextList)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_DataKubernetesPodV1SpecContainerSecurityContextList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataKubernetesPodV1SpecContainerSecurityContextList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (d *jsiiProxy_DataKubernetesPodV1SpecContainerSecurityContextList) AllWithM
 	_jsii_.Invoke(
 		d,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (d *jsiiProxy_DataKubernetesPodV1SpecContainerSecurityContextList) Get(inde
 	_jsii_.Invoke(
 		d,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataKubernetesPodV1SpecContainerSecurityContextList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataKubernetesPodV1SpecContainerSecurityContextList) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (d *jsiiProxy_DataKubernetesPodV1SpecContainerSecurityContextList) ToString
 
 	return returns
 }
-

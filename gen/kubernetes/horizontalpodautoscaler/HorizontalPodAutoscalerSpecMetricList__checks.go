@@ -34,7 +34,7 @@ func (h *jsiiProxy_HorizontalPodAutoscalerSpecMetricList) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscalerSpecMetricList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_HorizontalPodAutoscalerSpecMetricList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewHorizontalPodAutoscalerSpecMetricListParameters(terraformResourc
 
 	return nil
 }
-

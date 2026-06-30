@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataKubernetesPodSpecVolumeAzureDiskOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesPodSpecVolumeAzureDiskOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataKubernetesPodSpecVolumeAzureDiskOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataKubernetesPodSpecVolumeAzureDiskOutputReferenceParameters(te
 
 	return nil
 }
-

@@ -12,9 +12,9 @@ type DeploymentSpecTemplateSpecVolumeSecretItemsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,8 +27,8 @@ type DeploymentSpecTemplateSpecVolumeSecretItemsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Key() *string
 	SetKey(val *string)
 	KeyInput() *string
@@ -49,7 +49,7 @@ type DeploymentSpecTemplateSpecVolumeSecretItemsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type DeploymentSpecTemplateSpecVolumeSecretItemsOutputReference interface {
 	ResetPath()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_DeploymentSpecTemplateSpecVolumeSecretItemsOutputReference struct
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeSecretItemsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeSecretItemsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -128,8 +128,8 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeSecretItemsOutputReference) F
 	return returns
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeSecretItemsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeSecretItemsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeSecretItemsOutputReference) T
 	return returns
 }
 
-
 func NewDeploymentSpecTemplateSpecVolumeSecretItemsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecVolumeSecretItemsOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewDeploymentSpecTemplateSpecVolumeSecretItemsOutputReference(terraformReso
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeSecretItemsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewDeploymentSpecTemplateSpecVolumeSecretItemsOutputReference_Override(d De
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeSecretItemsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeSecretItemsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeSecretItemsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeSecretItemsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeSecretItemsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeSecretItemsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeSecretItemsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeSecretItemsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeSecretItemsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeSecretItemsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeSecretItemsOutputReference)SetKey(val *string) {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeSecretItemsOutputReference) SetKey(val *string) {
 	if err := j.validateSetKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeSecretItemsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeSecretItemsOutputReference)SetMode(val *string) {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeSecretItemsOutputReference) SetMode(val *string) {
 	if err := j.validateSetModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeSecretItemsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeSecretItemsOutputReference)SetPath(val *string) {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeSecretItemsOutputReference) SetPath(val *string) {
 	if err := j.validateSetPathParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeSecretItemsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeSecretItemsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeSecretItemsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeSecretItemsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeSecretItemsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeSecretItemsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeSecretItemsOutputReference) C
 	return returns
 }
 
-func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeSecretItemsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeSecretItemsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeSecretItemsOutputReference) G
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeSecretItemsOutputReference) G
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeSecretItemsOutputReference) G
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeSecretItemsOutputReference) G
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeSecretItemsOutputReference) G
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeSecretItemsOutputReference) G
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeSecretItemsOutputReference) G
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeSecretItemsOutputReference) G
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeSecretItemsOutputReference) I
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeSecretItemsOutputReference) R
 	)
 }
 
-func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeSecretItemsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeSecretItemsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeSecretItemsOutputReference) T
 
 	return returns
 }
-

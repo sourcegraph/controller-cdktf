@@ -1,6 +1,5 @@
 package statefulsetv1
 
-
 type StatefulSetV1SpecTemplateSpecContainerLivenessProbeHttpGet struct {
 	// Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 	//
@@ -9,7 +8,7 @@ type StatefulSetV1SpecTemplateSpecContainerLivenessProbeHttpGet struct {
 	// http_header block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/stateful_set_v1#http_header StatefulSetV1#http_header}
-	HttpHeader interface{} `field:"optional" json:"httpHeader" yaml:"httpHeader"`
+	HttpHeader any `field:"optional" json:"httpHeader" yaml:"httpHeader"`
 	// Path to access on the HTTP server.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/stateful_set_v1#path StatefulSetV1#path}
@@ -25,4 +24,3 @@ type StatefulSetV1SpecTemplateSpecContainerLivenessProbeHttpGet struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/stateful_set_v1#scheme StatefulSetV1#scheme}
 	Scheme *string `field:"optional" json:"scheme" yaml:"scheme"`
 }
-

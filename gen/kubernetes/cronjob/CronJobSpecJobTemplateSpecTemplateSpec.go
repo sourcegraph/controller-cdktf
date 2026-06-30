@@ -1,6 +1,5 @@
 package cronjob
 
-
 type CronJobSpecJobTemplateSpecTemplateSpec struct {
 	// Optional duration in seconds the pod may be active on the node relative to StartTime before the system will actively try to mark it failed and kill associated containers.
 	//
@@ -15,11 +14,11 @@ type CronJobSpecJobTemplateSpecTemplateSpec struct {
 	// AutomountServiceAccountToken indicates whether a service account token should be automatically mounted.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/cron_job#automount_service_account_token CronJob#automount_service_account_token}
-	AutomountServiceAccountToken interface{} `field:"optional" json:"automountServiceAccountToken" yaml:"automountServiceAccountToken"`
+	AutomountServiceAccountToken any `field:"optional" json:"automountServiceAccountToken" yaml:"automountServiceAccountToken"`
 	// container block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/cron_job#container CronJob#container}
-	Container interface{} `field:"optional" json:"container" yaml:"container"`
+	Container any `field:"optional" json:"container" yaml:"container"`
 	// dns_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/cron_job#dns_config CronJob#dns_config}
@@ -33,15 +32,15 @@ type CronJobSpecJobTemplateSpecTemplateSpec struct {
 	// Enables generating environment variables for service discovery. Defaults to true.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/cron_job#enable_service_links CronJob#enable_service_links}
-	EnableServiceLinks interface{} `field:"optional" json:"enableServiceLinks" yaml:"enableServiceLinks"`
+	EnableServiceLinks any `field:"optional" json:"enableServiceLinks" yaml:"enableServiceLinks"`
 	// host_aliases block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/cron_job#host_aliases CronJob#host_aliases}
-	HostAliases interface{} `field:"optional" json:"hostAliases" yaml:"hostAliases"`
+	HostAliases any `field:"optional" json:"hostAliases" yaml:"hostAliases"`
 	// Use the host's ipc namespace. Optional: Defaults to false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/cron_job#host_ipc CronJob#host_ipc}
-	HostIpc interface{} `field:"optional" json:"hostIpc" yaml:"hostIpc"`
+	HostIpc any `field:"optional" json:"hostIpc" yaml:"hostIpc"`
 	// Specifies the hostname of the Pod If not specified, the pod's hostname will be set to a system-defined value.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/cron_job#hostname CronJob#hostname}
@@ -51,19 +50,19 @@ type CronJobSpecJobTemplateSpecTemplateSpec struct {
 	// Use the host's network namespace. If this option is set, the ports that will be used must be specified.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/cron_job#host_network CronJob#host_network}
-	HostNetwork interface{} `field:"optional" json:"hostNetwork" yaml:"hostNetwork"`
+	HostNetwork any `field:"optional" json:"hostNetwork" yaml:"hostNetwork"`
 	// Use the host's pid namespace.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/cron_job#host_pid CronJob#host_pid}
-	HostPid interface{} `field:"optional" json:"hostPid" yaml:"hostPid"`
+	HostPid any `field:"optional" json:"hostPid" yaml:"hostPid"`
 	// image_pull_secrets block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/cron_job#image_pull_secrets CronJob#image_pull_secrets}
-	ImagePullSecrets interface{} `field:"optional" json:"imagePullSecrets" yaml:"imagePullSecrets"`
+	ImagePullSecrets any `field:"optional" json:"imagePullSecrets" yaml:"imagePullSecrets"`
 	// init_container block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/cron_job#init_container CronJob#init_container}
-	InitContainer interface{} `field:"optional" json:"initContainer" yaml:"initContainer"`
+	InitContainer any `field:"optional" json:"initContainer" yaml:"initContainer"`
 	// NodeName is a request to schedule this pod onto a specific node.
 	//
 	// If it is non-empty, the scheduler simply schedules this pod onto that node, assuming that it fits resource requirements.
@@ -85,7 +84,7 @@ type CronJobSpecJobTemplateSpecTemplateSpec struct {
 	// readiness_gate block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/cron_job#readiness_gate CronJob#readiness_gate}
-	ReadinessGate interface{} `field:"optional" json:"readinessGate" yaml:"readinessGate"`
+	ReadinessGate any `field:"optional" json:"readinessGate" yaml:"readinessGate"`
 	// Restart policy for all containers within the pod. One of Always, OnFailure, Never. More info: http://kubernetes.io/docs/user-guide/pod-states#restartpolicy.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/cron_job#restart_policy CronJob#restart_policy}
@@ -103,7 +102,7 @@ type CronJobSpecJobTemplateSpecTemplateSpec struct {
 	// When this is set containers will be able to view and signal processes from other containers in the same pod, and the first process in each container will not be assigned PID 1. HostPID and ShareProcessNamespace cannot both be set. Optional: Defaults to false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/cron_job#share_process_namespace CronJob#share_process_namespace}
-	ShareProcessNamespace interface{} `field:"optional" json:"shareProcessNamespace" yaml:"shareProcessNamespace"`
+	ShareProcessNamespace any `field:"optional" json:"shareProcessNamespace" yaml:"shareProcessNamespace"`
 	// If specified, the fully qualified Pod hostname will be "...svc.". If not specified, the pod will not have a domainname at all..
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/cron_job#subdomain CronJob#subdomain}
@@ -117,14 +116,13 @@ type CronJobSpecJobTemplateSpecTemplateSpec struct {
 	// toleration block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/cron_job#toleration CronJob#toleration}
-	Toleration interface{} `field:"optional" json:"toleration" yaml:"toleration"`
+	Toleration any `field:"optional" json:"toleration" yaml:"toleration"`
 	// topology_spread_constraint block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/cron_job#topology_spread_constraint CronJob#topology_spread_constraint}
-	TopologySpreadConstraint interface{} `field:"optional" json:"topologySpreadConstraint" yaml:"topologySpreadConstraint"`
+	TopologySpreadConstraint any `field:"optional" json:"topologySpreadConstraint" yaml:"topologySpreadConstraint"`
 	// volume block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/cron_job#volume CronJob#volume}
-	Volume interface{} `field:"optional" json:"volume" yaml:"volume"`
+	Volume any `field:"optional" json:"volume" yaml:"volume"`
 }
-

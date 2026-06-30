@@ -12,9 +12,9 @@ type DaemonsetSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference inter
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -43,7 +43,7 @@ type DaemonsetSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference inter
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -67,7 +67,7 @@ type DaemonsetSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference inter
 	ResetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,8 +80,8 @@ type jsiiProxy_DaemonsetSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputRefer
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -170,7 +170,6 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputR
 	return returns
 }
 
-
 func NewDaemonsetSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DaemonsetSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference {
 	_init_.Initialize()
 
@@ -181,7 +180,7 @@ func NewDaemonsetSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference(te
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -193,12 +192,12 @@ func NewDaemonsetSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference_Ov
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -209,7 +208,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputR
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -220,7 +219,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputR
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference)SetInternalValue(val *DaemonsetSpecTemplateSpecVolumeCsiNodePublishSecretRef) {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference) SetInternalValue(val *DaemonsetSpecTemplateSpecVolumeCsiNodePublishSecretRef) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputR
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference)SetName(val *string) {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputR
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputR
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,16 +276,16 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputR
 	return returns
 }
 
-func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -302,7 +301,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputR
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -318,7 +317,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputR
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -334,7 +333,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputR
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -350,7 +349,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputR
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -366,7 +365,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputR
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -382,7 +381,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputR
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -398,7 +397,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputR
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -414,7 +413,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputR
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputR
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -458,16 +457,16 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputR
 	)
 }
 
-func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -486,4 +485,3 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputR
 
 	return returns
 }
-

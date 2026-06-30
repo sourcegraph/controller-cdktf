@@ -307,7 +307,7 @@ func (p *jsiiProxy_PersistentVolumeV1SpecPersistentVolumeSourceOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_PersistentVolumeV1SpecPersistentVolumeSourceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PersistentVolumeV1SpecPersistentVolumeSourceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -407,4 +407,3 @@ func validateNewPersistentVolumeV1SpecPersistentVolumeSourceOutputReferenceParam
 
 	return nil
 }
-

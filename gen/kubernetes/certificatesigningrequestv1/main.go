@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.certificateSigningRequestV1.CertificateSigningRequestV1",
-		reflect.TypeOf((*CertificateSigningRequestV1)(nil)).Elem(),
+		reflect.TypeFor[CertificateSigningRequestV1](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,7 +70,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CertificateSigningRequestV1{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -78,15 +78,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.certificateSigningRequestV1.CertificateSigningRequestV1Config",
-		reflect.TypeOf((*CertificateSigningRequestV1Config)(nil)).Elem(),
+		reflect.TypeFor[CertificateSigningRequestV1Config](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.certificateSigningRequestV1.CertificateSigningRequestV1Metadata",
-		reflect.TypeOf((*CertificateSigningRequestV1Metadata)(nil)).Elem(),
+		reflect.TypeFor[CertificateSigningRequestV1Metadata](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.certificateSigningRequestV1.CertificateSigningRequestV1MetadataOutputReference",
-		reflect.TypeOf((*CertificateSigningRequestV1MetadataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CertificateSigningRequestV1MetadataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
 			_jsii_.MemberProperty{JsiiProperty: "annotationsInput", GoGetter: "AnnotationsInput"},
@@ -125,7 +125,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CertificateSigningRequestV1MetadataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -133,11 +133,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.certificateSigningRequestV1.CertificateSigningRequestV1Spec",
-		reflect.TypeOf((*CertificateSigningRequestV1Spec)(nil)).Elem(),
+		reflect.TypeFor[CertificateSigningRequestV1Spec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.certificateSigningRequestV1.CertificateSigningRequestV1SpecOutputReference",
-		reflect.TypeOf((*CertificateSigningRequestV1SpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CertificateSigningRequestV1SpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -168,7 +168,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "usages", GoGetter: "Usages"},
 			_jsii_.MemberProperty{JsiiProperty: "usagesInput", GoGetter: "UsagesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CertificateSigningRequestV1SpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -176,11 +176,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.certificateSigningRequestV1.CertificateSigningRequestV1Timeouts",
-		reflect.TypeOf((*CertificateSigningRequestV1Timeouts)(nil)).Elem(),
+		reflect.TypeFor[CertificateSigningRequestV1Timeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.certificateSigningRequestV1.CertificateSigningRequestV1TimeoutsOutputReference",
-		reflect.TypeOf((*CertificateSigningRequestV1TimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CertificateSigningRequestV1TimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -207,7 +207,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CertificateSigningRequestV1TimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

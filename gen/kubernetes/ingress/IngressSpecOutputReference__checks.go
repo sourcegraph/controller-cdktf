@@ -101,7 +101,7 @@ func (i *jsiiProxy_IngressSpecOutputReference) validatePutBackendParameters(valu
 	return nil
 }
 
-func (i *jsiiProxy_IngressSpecOutputReference) validatePutRuleParameters(value interface{}) error {
+func (i *jsiiProxy_IngressSpecOutputReference) validatePutRuleParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -132,7 +132,7 @@ func (i *jsiiProxy_IngressSpecOutputReference) validatePutRuleParameters(value i
 	return nil
 }
 
-func (i *jsiiProxy_IngressSpecOutputReference) validatePutTlsParameters(value interface{}) error {
+func (i *jsiiProxy_IngressSpecOutputReference) validatePutTlsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -171,7 +171,7 @@ func (i *jsiiProxy_IngressSpecOutputReference) validateResolveParameters(_contex
 	return nil
 }
 
-func (j *jsiiProxy_IngressSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IngressSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -279,4 +279,3 @@ func validateNewIngressSpecOutputReferenceParameters(terraformResource cdktf.IIn
 
 	return nil
 }
-

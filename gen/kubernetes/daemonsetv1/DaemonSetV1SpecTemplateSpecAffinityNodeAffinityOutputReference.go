@@ -12,9 +12,9 @@ type DaemonSetV1SpecTemplateSpecAffinityNodeAffinityOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,7 +30,7 @@ type DaemonSetV1SpecTemplateSpecAffinityNodeAffinityOutputReference interface {
 	InternalValue() *DaemonSetV1SpecTemplateSpecAffinityNodeAffinity
 	SetInternalValue(val *DaemonSetV1SpecTemplateSpecAffinityNodeAffinity)
 	PreferredDuringSchedulingIgnoredDuringExecution() DaemonSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionList
-	PreferredDuringSchedulingIgnoredDuringExecutionInput() interface{}
+	PreferredDuringSchedulingIgnoredDuringExecutionInput() any
 	RequiredDuringSchedulingIgnoredDuringExecution() DaemonSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference
 	RequiredDuringSchedulingIgnoredDuringExecutionInput() *DaemonSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution
 	// Experimental.
@@ -44,7 +44,7 @@ type DaemonSetV1SpecTemplateSpecAffinityNodeAffinityOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -65,13 +65,13 @@ type DaemonSetV1SpecTemplateSpecAffinityNodeAffinityOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutPreferredDuringSchedulingIgnoredDuringExecution(value interface{})
+	PutPreferredDuringSchedulingIgnoredDuringExecution(value any)
 	PutRequiredDuringSchedulingIgnoredDuringExecution(value *DaemonSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution)
 	ResetPreferredDuringSchedulingIgnoredDuringExecution()
 	ResetRequiredDuringSchedulingIgnoredDuringExecution()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_DaemonSetV1SpecTemplateSpecAffinityNodeAffinityOutputReference st
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecAffinityNodeAffinityOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecAffinityNodeAffinityOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -144,8 +144,8 @@ func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecAffinityNodeAffinityOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecAffinityNodeAffinityOutputReference) PreferredDuringSchedulingIgnoredDuringExecutionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecAffinityNodeAffinityOutputReference) PreferredDuringSchedulingIgnoredDuringExecutionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"preferredDuringSchedulingIgnoredDuringExecutionInput",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecAffinityNodeAffinityOutputReferenc
 	return returns
 }
 
-
 func NewDaemonSetV1SpecTemplateSpecAffinityNodeAffinityOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecAffinityNodeAffinityOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewDaemonSetV1SpecTemplateSpecAffinityNodeAffinityOutputReference(terraform
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityNodeAffinityOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewDaemonSetV1SpecTemplateSpecAffinityNodeAffinityOutputReference_Override(
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityNodeAffinityOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecAffinityNodeAffinityOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecAffinityNodeAffinityOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecAffinityNodeAffinityOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecAffinityNodeAffinityOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecAffinityNodeAffinityOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecAffinityNodeAffinityOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecAffinityNodeAffinityOutputReference)SetInternalValue(val *DaemonSetV1SpecTemplateSpecAffinityNodeAffinity) {
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecAffinityNodeAffinityOutputReference) SetInternalValue(val *DaemonSetV1SpecTemplateSpecAffinityNodeAffinity) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecAffinityNodeAffinityOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecAffinityNodeAffinityOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecAffinityNodeAffinityOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecAffinityNodeAffinityOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecAffinityNodeAffinityOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecAffinityNodeAffinityOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,16 +289,16 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecAffinityNodeAffinityOutputReferenc
 	return returns
 }
 
-func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecAffinityNodeAffinityOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecAffinityNodeAffinityOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -315,7 +314,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecAffinityNodeAffinityOutputReferenc
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -331,7 +330,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecAffinityNodeAffinityOutputReferenc
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -347,7 +346,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecAffinityNodeAffinityOutputReferenc
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -363,7 +362,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecAffinityNodeAffinityOutputReferenc
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -379,7 +378,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecAffinityNodeAffinityOutputReferenc
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -395,7 +394,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecAffinityNodeAffinityOutputReferenc
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -411,7 +410,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecAffinityNodeAffinityOutputReferenc
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -427,7 +426,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecAffinityNodeAffinityOutputReferenc
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -456,21 +455,21 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecAffinityNodeAffinityOutputReferenc
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecAffinityNodeAffinityOutputReference) PutPreferredDuringSchedulingIgnoredDuringExecution(value interface{}) {
+func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecAffinityNodeAffinityOutputReference) PutPreferredDuringSchedulingIgnoredDuringExecution(value any) {
 	if err := d.validatePutPreferredDuringSchedulingIgnoredDuringExecutionParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putPreferredDuringSchedulingIgnoredDuringExecution",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -481,7 +480,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecAffinityNodeAffinityOutputReferenc
 	_jsii_.InvokeVoid(
 		d,
 		"putRequiredDuringSchedulingIgnoredDuringExecution",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -501,16 +500,16 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecAffinityNodeAffinityOutputReferenc
 	)
 }
 
-func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecAffinityNodeAffinityOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecAffinityNodeAffinityOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecAffinityNodeAffinityOutputReferenc
 
 	return returns
 }
-

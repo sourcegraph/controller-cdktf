@@ -34,7 +34,7 @@ func (d *jsiiProxy_DefaultServiceAccountSecretList) validateResolveParameters(_c
 	return nil
 }
 
-func (j *jsiiProxy_DefaultServiceAccountSecretList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DefaultServiceAccountSecretList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDefaultServiceAccountSecretListParameters(terraformResource cdkt
 
 	return nil
 }
-

@@ -106,7 +106,7 @@ func (j *jsiiProxy_PodSecurityPolicyMetadataOutputReference) validateSetAnnotati
 	return nil
 }
 
-func (j *jsiiProxy_PodSecurityPolicyMetadataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodSecurityPolicyMetadataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewPodSecurityPolicyMetadataOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

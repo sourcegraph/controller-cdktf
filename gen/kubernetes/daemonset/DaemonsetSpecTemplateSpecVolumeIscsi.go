@@ -1,6 +1,5 @@
 package daemonset
 
-
 type DaemonsetSpecTemplateSpecVolumeIscsi struct {
 	// Target iSCSI Qualified Name.
 	//
@@ -29,6 +28,5 @@ type DaemonsetSpecTemplateSpecVolumeIscsi struct {
 	// Whether to force the read-only setting in VolumeMounts. Defaults to false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/daemonset#read_only Daemonset#read_only}
-	ReadOnly interface{} `field:"optional" json:"readOnly" yaml:"readOnly"`
+	ReadOnly any `field:"optional" json:"readOnly" yaml:"readOnly"`
 }
-

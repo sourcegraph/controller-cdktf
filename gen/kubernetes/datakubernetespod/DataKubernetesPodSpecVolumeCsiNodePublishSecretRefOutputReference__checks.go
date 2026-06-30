@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataKubernetesPodSpecVolumeCsiNodePublishSecretRefOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesPodSpecVolumeCsiNodePublishSecretRefOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataKubernetesPodSpecVolumeCsiNodePublishSecretRefOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataKubernetesPodSpecVolumeCsiNodePublishSecretRefOutputReferenc
 
 	return nil
 }
-

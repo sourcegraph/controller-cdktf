@@ -106,7 +106,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeDownwardApiItemsFieldRefOutpu
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeDownwardApiItemsFieldRefOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeDownwardApiItemsFieldRefOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewDeploymentSpecTemplateSpecVolumeDownwardApiItemsFieldRefOutputRe
 
 	return nil
 }
-

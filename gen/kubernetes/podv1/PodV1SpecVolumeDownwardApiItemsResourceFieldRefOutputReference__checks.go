@@ -98,7 +98,7 @@ func (p *jsiiProxy_PodV1SpecVolumeDownwardApiItemsResourceFieldRefOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeDownwardApiItemsResourceFieldRefOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodV1SpecVolumeDownwardApiItemsResourceFieldRefOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewPodV1SpecVolumeDownwardApiItemsResourceFieldRefOutputReferencePa
 
 	return nil
 }
-

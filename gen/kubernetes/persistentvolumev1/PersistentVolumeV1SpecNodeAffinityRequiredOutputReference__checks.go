@@ -90,7 +90,7 @@ func (p *jsiiProxy_PersistentVolumeV1SpecNodeAffinityRequiredOutputReference) va
 	return nil
 }
 
-func (p *jsiiProxy_PersistentVolumeV1SpecNodeAffinityRequiredOutputReference) validatePutNodeSelectorTermParameters(value interface{}) error {
+func (p *jsiiProxy_PersistentVolumeV1SpecNodeAffinityRequiredOutputReference) validatePutNodeSelectorTermParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (p *jsiiProxy_PersistentVolumeV1SpecNodeAffinityRequiredOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_PersistentVolumeV1SpecNodeAffinityRequiredOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PersistentVolumeV1SpecNodeAffinityRequiredOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewPersistentVolumeV1SpecNodeAffinityRequiredOutputReferenceParamet
 
 	return nil
 }
-

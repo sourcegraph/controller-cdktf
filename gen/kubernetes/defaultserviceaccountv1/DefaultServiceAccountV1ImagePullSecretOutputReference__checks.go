@@ -98,7 +98,7 @@ func (d *jsiiProxy_DefaultServiceAccountV1ImagePullSecretOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_DefaultServiceAccountV1ImagePullSecretOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DefaultServiceAccountV1ImagePullSecretOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DefaultServiceAccountV1ImagePullSecretOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_DefaultServiceAccountV1ImagePullSecretOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DefaultServiceAccountV1ImagePullSecretOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewDefaultServiceAccountV1ImagePullSecretOutputReferenceParameters(
 
 	return nil
 }
-

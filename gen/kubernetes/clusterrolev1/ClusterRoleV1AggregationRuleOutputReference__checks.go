@@ -90,7 +90,7 @@ func (c *jsiiProxy_ClusterRoleV1AggregationRuleOutputReference) validateInterpol
 	return nil
 }
 
-func (c *jsiiProxy_ClusterRoleV1AggregationRuleOutputReference) validatePutClusterRoleSelectorsParameters(value interface{}) error {
+func (c *jsiiProxy_ClusterRoleV1AggregationRuleOutputReference) validatePutClusterRoleSelectorsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (c *jsiiProxy_ClusterRoleV1AggregationRuleOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_ClusterRoleV1AggregationRuleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ClusterRoleV1AggregationRuleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewClusterRoleV1AggregationRuleOutputReferenceParameters(terraformR
 
 	return nil
 }
-

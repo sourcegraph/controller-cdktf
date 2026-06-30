@@ -90,7 +90,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecContainerOutputReference) validateIn
 	return nil
 }
 
-func (d *jsiiProxy_DaemonsetSpecTemplateSpecContainerOutputReference) validatePutEnvParameters(value interface{}) error {
+func (d *jsiiProxy_DaemonsetSpecTemplateSpecContainerOutputReference) validatePutEnvParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecContainerOutputReference) validatePu
 	return nil
 }
 
-func (d *jsiiProxy_DaemonsetSpecTemplateSpecContainerOutputReference) validatePutEnvFromParameters(value interface{}) error {
+func (d *jsiiProxy_DaemonsetSpecTemplateSpecContainerOutputReference) validatePutEnvFromParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -174,7 +174,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecContainerOutputReference) validatePu
 	return nil
 }
 
-func (d *jsiiProxy_DaemonsetSpecTemplateSpecContainerOutputReference) validatePutPortParameters(value interface{}) error {
+func (d *jsiiProxy_DaemonsetSpecTemplateSpecContainerOutputReference) validatePutPortParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -249,7 +249,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecContainerOutputReference) validatePu
 	return nil
 }
 
-func (d *jsiiProxy_DaemonsetSpecTemplateSpecContainerOutputReference) validatePutVolumeMountParameters(value interface{}) error {
+func (d *jsiiProxy_DaemonsetSpecTemplateSpecContainerOutputReference) validatePutVolumeMountParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -304,7 +304,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecContainerOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecContainerOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecContainerOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -385,7 +385,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecContainerOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecContainerOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecContainerOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -417,7 +417,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecContainerOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecContainerOutputReference) validateSetStdinParameters(val interface{}) error {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecContainerOutputReference) validateSetStdinParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -437,7 +437,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecContainerOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecContainerOutputReference) validateSetStdinOnceParameters(val interface{}) error {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecContainerOutputReference) validateSetStdinOnceParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -489,7 +489,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecContainerOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecContainerOutputReference) validateSetTtyParameters(val interface{}) error {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecContainerOutputReference) validateSetTtyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -536,4 +536,3 @@ func validateNewDaemonsetSpecTemplateSpecContainerOutputReferenceParameters(terr
 
 	return nil
 }
-

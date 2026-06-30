@@ -1,6 +1,5 @@
 package ingressclassv1
 
-
 type IngressClassV1Spec struct {
 	// Controller refers to the name of the controller that should handle this class.
 	//
@@ -11,6 +10,5 @@ type IngressClassV1Spec struct {
 	// parameters block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/ingress_class_v1#parameters IngressClassV1#parameters}
-	Parameters interface{} `field:"optional" json:"parameters" yaml:"parameters"`
+	Parameters any `field:"optional" json:"parameters" yaml:"parameters"`
 }
-

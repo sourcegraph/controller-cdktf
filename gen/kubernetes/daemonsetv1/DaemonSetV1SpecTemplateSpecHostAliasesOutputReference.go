@@ -12,9 +12,9 @@ type DaemonSetV1SpecTemplateSpecHostAliasesOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,8 +30,8 @@ type DaemonSetV1SpecTemplateSpecHostAliasesOutputReference interface {
 	Hostnames() *[]*string
 	SetHostnames(val *[]*string)
 	HostnamesInput() *[]*string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Ip() *string
 	SetIp(val *string)
 	IpInput() *string
@@ -46,7 +46,7 @@ type DaemonSetV1SpecTemplateSpecHostAliasesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,7 +69,7 @@ type DaemonSetV1SpecTemplateSpecHostAliasesOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,8 +82,8 @@ type jsiiProxy_DaemonSetV1SpecTemplateSpecHostAliasesOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecHostAliasesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecHostAliasesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -142,8 +142,8 @@ func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecHostAliasesOutputReference) Hostna
 	return returns
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecHostAliasesOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecHostAliasesOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -192,7 +192,6 @@ func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecHostAliasesOutputReference) Terraf
 	return returns
 }
 
-
 func NewDaemonSetV1SpecTemplateSpecHostAliasesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecHostAliasesOutputReference {
 	_init_.Initialize()
 
@@ -203,7 +202,7 @@ func NewDaemonSetV1SpecTemplateSpecHostAliasesOutputReference(terraformResource 
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecHostAliasesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -215,12 +214,12 @@ func NewDaemonSetV1SpecTemplateSpecHostAliasesOutputReference_Override(d DaemonS
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecHostAliasesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecHostAliasesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecHostAliasesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecHostAliasesOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecHostAliasesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecHostAliasesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecHostAliasesOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecHostAliasesOutputReference)SetHostnames(val *[]*string) {
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecHostAliasesOutputReference) SetHostnames(val *[]*string) {
 	if err := j.validateSetHostnamesParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecHostAliasesOutputReference)SetHost
 	)
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecHostAliasesOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecHostAliasesOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,7 +263,7 @@ func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecHostAliasesOutputReference)SetInte
 	)
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecHostAliasesOutputReference)SetIp(val *string) {
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecHostAliasesOutputReference) SetIp(val *string) {
 	if err := j.validateSetIpParameters(val); err != nil {
 		panic(err)
 	}
@@ -275,7 +274,7 @@ func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecHostAliasesOutputReference)SetIp(v
 	)
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecHostAliasesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecHostAliasesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -286,7 +285,7 @@ func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecHostAliasesOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecHostAliasesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecHostAliasesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,16 +309,16 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecHostAliasesOutputReference) Comput
 	return returns
 }
 
-func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecHostAliasesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecHostAliasesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -335,7 +334,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecHostAliasesOutputReference) GetBoo
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -351,7 +350,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecHostAliasesOutputReference) GetBoo
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -367,7 +366,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecHostAliasesOutputReference) GetLis
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -383,7 +382,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecHostAliasesOutputReference) GetNum
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -399,7 +398,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecHostAliasesOutputReference) GetNum
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -415,7 +414,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecHostAliasesOutputReference) GetNum
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -431,7 +430,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecHostAliasesOutputReference) GetStr
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -447,7 +446,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecHostAliasesOutputReference) GetStr
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,23 +475,23 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecHostAliasesOutputReference) Interp
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecHostAliasesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecHostAliasesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -511,4 +510,3 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecHostAliasesOutputReference) ToStri
 
 	return returns
 }
-

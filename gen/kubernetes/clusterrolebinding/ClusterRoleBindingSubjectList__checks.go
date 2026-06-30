@@ -34,7 +34,7 @@ func (c *jsiiProxy_ClusterRoleBindingSubjectList) validateResolveParameters(_con
 	return nil
 }
 
-func (j *jsiiProxy_ClusterRoleBindingSubjectList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ClusterRoleBindingSubjectList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewClusterRoleBindingSubjectListParameters(terraformResource cdktf.
 
 	return nil
 }
-

@@ -17,8 +17,8 @@ type HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelectorList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelectorList interface {
 	Get(index *float64) HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelectorOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelectorLis
 	return returns
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelectorList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelectorList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelectorLis
 	return returns
 }
 
-
 func NewHorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelectorList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelectorList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewHorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelectorList(terraform
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelectorList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewHorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelectorList_Override(
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2Beta2.HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelectorList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		h,
 	)
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelectorList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelectorList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelectorLis
 	)
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelectorList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelectorList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelectorLis
 	)
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelectorList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelectorList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelectorLis
 	)
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelectorList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelectorList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (h *jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelectorLis
 	_jsii_.Invoke(
 		h,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (h *jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelectorLis
 	_jsii_.Invoke(
 		h,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (h *jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelectorList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (h *jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelectorList) Resolve(_context cdktf.IResolveContext) any {
 	if err := h.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		h,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (h *jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelectorLis
 
 	return returns
 }
-

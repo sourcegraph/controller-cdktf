@@ -90,7 +90,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraint
 	return nil
 }
 
-func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraintLabelSelectorOutputReference) validatePutMatchExpressionsParameters(value interface{}) error {
+func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraintLabelSelectorOutputReference) validatePutMatchExpressionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraint
 	return nil
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraintLabelSelectorOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraintLabelSelectorOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraint
 	return nil
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraintLabelSelectorOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraintLabelSelectorOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -261,4 +261,3 @@ func validateNewReplicationControllerSpecTemplateSpecTopologySpreadConstraintLab
 
 	return nil
 }
-

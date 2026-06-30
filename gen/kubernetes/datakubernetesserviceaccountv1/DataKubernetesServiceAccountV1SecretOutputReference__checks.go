@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataKubernetesServiceAccountV1SecretOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesServiceAccountV1SecretOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataKubernetesServiceAccountV1SecretOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataKubernetesServiceAccountV1SecretOutputReferenceParameters(te
 
 	return nil
 }
-

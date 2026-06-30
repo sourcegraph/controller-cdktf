@@ -12,9 +12,9 @@ type PodSpecSecurityContextOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -35,9 +35,9 @@ type PodSpecSecurityContextOutputReference interface {
 	RunAsGroup() *string
 	SetRunAsGroup(val *string)
 	RunAsGroupInput() *string
-	RunAsNonRoot() interface{}
-	SetRunAsNonRoot(val interface{})
-	RunAsNonRootInput() interface{}
+	RunAsNonRoot() any
+	SetRunAsNonRoot(val any)
+	RunAsNonRootInput() any
 	RunAsUser() *string
 	SetRunAsUser(val *string)
 	RunAsUserInput() *string
@@ -49,7 +49,7 @@ type PodSpecSecurityContextOutputReference interface {
 	SetSupplementalGroups(val *[]*float64)
 	SupplementalGroupsInput() *[]*float64
 	Sysctl() PodSpecSecurityContextSysctlList
-	SysctlInput() interface{}
+	SysctlInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -61,7 +61,7 @@ type PodSpecSecurityContextOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -84,7 +84,7 @@ type PodSpecSecurityContextOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutSeccompProfile(value *PodSpecSecurityContextSeccompProfile)
 	PutSeLinuxOptions(value *PodSpecSecurityContextSeLinuxOptions)
-	PutSysctl(value interface{})
+	PutSysctl(value any)
 	ResetFsGroup()
 	ResetRunAsGroup()
 	ResetRunAsNonRoot()
@@ -95,7 +95,7 @@ type PodSpecSecurityContextOutputReference interface {
 	ResetSysctl()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -108,8 +108,8 @@ type jsiiProxy_PodSpecSecurityContextOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_PodSpecSecurityContextOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSpecSecurityContextOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -198,8 +198,8 @@ func (j *jsiiProxy_PodSpecSecurityContextOutputReference) RunAsGroupInput() *str
 	return returns
 }
 
-func (j *jsiiProxy_PodSpecSecurityContextOutputReference) RunAsNonRoot() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSpecSecurityContextOutputReference) RunAsNonRoot() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"runAsNonRoot",
@@ -208,8 +208,8 @@ func (j *jsiiProxy_PodSpecSecurityContextOutputReference) RunAsNonRoot() interfa
 	return returns
 }
 
-func (j *jsiiProxy_PodSpecSecurityContextOutputReference) RunAsNonRootInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSpecSecurityContextOutputReference) RunAsNonRootInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"runAsNonRootInput",
@@ -308,8 +308,8 @@ func (j *jsiiProxy_PodSpecSecurityContextOutputReference) Sysctl() PodSpecSecuri
 	return returns
 }
 
-func (j *jsiiProxy_PodSpecSecurityContextOutputReference) SysctlInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSpecSecurityContextOutputReference) SysctlInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sysctlInput",
@@ -338,7 +338,6 @@ func (j *jsiiProxy_PodSpecSecurityContextOutputReference) TerraformResource() cd
 	return returns
 }
 
-
 func NewPodSpecSecurityContextOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PodSpecSecurityContextOutputReference {
 	_init_.Initialize()
 
@@ -349,7 +348,7 @@ func NewPodSpecSecurityContextOutputReference(terraformResource cdktf.IInterpola
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.pod.PodSpecSecurityContextOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -361,12 +360,12 @@ func NewPodSpecSecurityContextOutputReference_Override(p PodSpecSecurityContextO
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.pod.PodSpecSecurityContextOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PodSpecSecurityContextOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PodSpecSecurityContextOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -377,7 +376,7 @@ func (j *jsiiProxy_PodSpecSecurityContextOutputReference)SetComplexObjectIndex(v
 	)
 }
 
-func (j *jsiiProxy_PodSpecSecurityContextOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PodSpecSecurityContextOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -388,7 +387,7 @@ func (j *jsiiProxy_PodSpecSecurityContextOutputReference)SetComplexObjectIsFromS
 	)
 }
 
-func (j *jsiiProxy_PodSpecSecurityContextOutputReference)SetFsGroup(val *string) {
+func (j *jsiiProxy_PodSpecSecurityContextOutputReference) SetFsGroup(val *string) {
 	if err := j.validateSetFsGroupParameters(val); err != nil {
 		panic(err)
 	}
@@ -399,7 +398,7 @@ func (j *jsiiProxy_PodSpecSecurityContextOutputReference)SetFsGroup(val *string)
 	)
 }
 
-func (j *jsiiProxy_PodSpecSecurityContextOutputReference)SetInternalValue(val *PodSpecSecurityContext) {
+func (j *jsiiProxy_PodSpecSecurityContextOutputReference) SetInternalValue(val *PodSpecSecurityContext) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -410,7 +409,7 @@ func (j *jsiiProxy_PodSpecSecurityContextOutputReference)SetInternalValue(val *P
 	)
 }
 
-func (j *jsiiProxy_PodSpecSecurityContextOutputReference)SetRunAsGroup(val *string) {
+func (j *jsiiProxy_PodSpecSecurityContextOutputReference) SetRunAsGroup(val *string) {
 	if err := j.validateSetRunAsGroupParameters(val); err != nil {
 		panic(err)
 	}
@@ -421,7 +420,7 @@ func (j *jsiiProxy_PodSpecSecurityContextOutputReference)SetRunAsGroup(val *stri
 	)
 }
 
-func (j *jsiiProxy_PodSpecSecurityContextOutputReference)SetRunAsNonRoot(val interface{}) {
+func (j *jsiiProxy_PodSpecSecurityContextOutputReference) SetRunAsNonRoot(val any) {
 	if err := j.validateSetRunAsNonRootParameters(val); err != nil {
 		panic(err)
 	}
@@ -432,7 +431,7 @@ func (j *jsiiProxy_PodSpecSecurityContextOutputReference)SetRunAsNonRoot(val int
 	)
 }
 
-func (j *jsiiProxy_PodSpecSecurityContextOutputReference)SetRunAsUser(val *string) {
+func (j *jsiiProxy_PodSpecSecurityContextOutputReference) SetRunAsUser(val *string) {
 	if err := j.validateSetRunAsUserParameters(val); err != nil {
 		panic(err)
 	}
@@ -443,7 +442,7 @@ func (j *jsiiProxy_PodSpecSecurityContextOutputReference)SetRunAsUser(val *strin
 	)
 }
 
-func (j *jsiiProxy_PodSpecSecurityContextOutputReference)SetSupplementalGroups(val *[]*float64) {
+func (j *jsiiProxy_PodSpecSecurityContextOutputReference) SetSupplementalGroups(val *[]*float64) {
 	if err := j.validateSetSupplementalGroupsParameters(val); err != nil {
 		panic(err)
 	}
@@ -454,7 +453,7 @@ func (j *jsiiProxy_PodSpecSecurityContextOutputReference)SetSupplementalGroups(v
 	)
 }
 
-func (j *jsiiProxy_PodSpecSecurityContextOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PodSpecSecurityContextOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -465,7 +464,7 @@ func (j *jsiiProxy_PodSpecSecurityContextOutputReference)SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_PodSpecSecurityContextOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PodSpecSecurityContextOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,16 +488,16 @@ func (p *jsiiProxy_PodSpecSecurityContextOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (p *jsiiProxy_PodSpecSecurityContextOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PodSpecSecurityContextOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -514,7 +513,7 @@ func (p *jsiiProxy_PodSpecSecurityContextOutputReference) GetBooleanAttribute(te
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -530,7 +529,7 @@ func (p *jsiiProxy_PodSpecSecurityContextOutputReference) GetBooleanMapAttribute
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -546,7 +545,7 @@ func (p *jsiiProxy_PodSpecSecurityContextOutputReference) GetListAttribute(terra
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -562,7 +561,7 @@ func (p *jsiiProxy_PodSpecSecurityContextOutputReference) GetNumberAttribute(ter
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -578,7 +577,7 @@ func (p *jsiiProxy_PodSpecSecurityContextOutputReference) GetNumberListAttribute
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -594,7 +593,7 @@ func (p *jsiiProxy_PodSpecSecurityContextOutputReference) GetNumberMapAttribute(
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -610,7 +609,7 @@ func (p *jsiiProxy_PodSpecSecurityContextOutputReference) GetStringAttribute(ter
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -626,7 +625,7 @@ func (p *jsiiProxy_PodSpecSecurityContextOutputReference) GetStringMapAttribute(
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -655,7 +654,7 @@ func (p *jsiiProxy_PodSpecSecurityContextOutputReference) InterpolationForAttrib
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -669,7 +668,7 @@ func (p *jsiiProxy_PodSpecSecurityContextOutputReference) PutSeccompProfile(valu
 	_jsii_.InvokeVoid(
 		p,
 		"putSeccompProfile",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -680,18 +679,18 @@ func (p *jsiiProxy_PodSpecSecurityContextOutputReference) PutSeLinuxOptions(valu
 	_jsii_.InvokeVoid(
 		p,
 		"putSeLinuxOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (p *jsiiProxy_PodSpecSecurityContextOutputReference) PutSysctl(value interface{}) {
+func (p *jsiiProxy_PodSpecSecurityContextOutputReference) PutSysctl(value any) {
 	if err := p.validatePutSysctlParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"putSysctl",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -759,16 +758,16 @@ func (p *jsiiProxy_PodSpecSecurityContextOutputReference) ResetSysctl() {
 	)
 }
 
-func (p *jsiiProxy_PodSpecSecurityContextOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PodSpecSecurityContextOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -787,4 +786,3 @@ func (p *jsiiProxy_PodSpecSecurityContextOutputReference) ToString() *string {
 
 	return returns
 }
-

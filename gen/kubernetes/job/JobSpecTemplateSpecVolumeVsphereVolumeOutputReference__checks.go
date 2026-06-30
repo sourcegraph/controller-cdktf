@@ -98,7 +98,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeVsphereVolumeOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeVsphereVolumeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeVsphereVolumeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewJobSpecTemplateSpecVolumeVsphereVolumeOutputReferenceParameters(
 
 	return nil
 }
-

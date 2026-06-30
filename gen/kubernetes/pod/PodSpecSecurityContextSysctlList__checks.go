@@ -34,7 +34,7 @@ func (p *jsiiProxy_PodSpecSecurityContextSysctlList) validateResolveParameters(_
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecSecurityContextSysctlList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecSecurityContextSysctlList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewPodSpecSecurityContextSysctlListParameters(terraformResource cdk
 
 	return nil
 }
-

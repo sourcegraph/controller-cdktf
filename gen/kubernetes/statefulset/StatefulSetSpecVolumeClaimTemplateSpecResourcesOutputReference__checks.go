@@ -98,7 +98,7 @@ func (s *jsiiProxy_StatefulSetSpecVolumeClaimTemplateSpecResourcesOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetSpecVolumeClaimTemplateSpecResourcesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StatefulSetSpecVolumeClaimTemplateSpecResourcesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewStatefulSetSpecVolumeClaimTemplateSpecResourcesOutputReferencePa
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DeploymentV1SpecSelectorMatchExpressionsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentV1SpecSelectorMatchExpressionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentV1SpecSelectorMatchExpressionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DeploymentV1SpecSelectorMatchExpressionsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentV1SpecSelectorMatchExpressionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentV1SpecSelectorMatchExpressionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewDeploymentV1SpecSelectorMatchExpressionsOutputReferenceParameter
 
 	return nil
 }
-

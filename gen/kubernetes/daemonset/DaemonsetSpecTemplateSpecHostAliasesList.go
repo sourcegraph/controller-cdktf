@@ -17,8 +17,8 @@ type DaemonsetSpecTemplateSpecHostAliasesList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type DaemonsetSpecTemplateSpecHostAliasesList interface {
 	Get(index *float64) DaemonsetSpecTemplateSpecHostAliasesOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecHostAliasesList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecHostAliasesList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecHostAliasesList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecHostAliasesList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewDaemonsetSpecTemplateSpecHostAliasesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonsetSpecTemplateSpecHostAliasesList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewDaemonsetSpecTemplateSpecHostAliasesList(terraformResource cdktf.IInterp
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecHostAliasesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewDaemonsetSpecTemplateSpecHostAliasesList_Override(d DaemonsetSpecTemplat
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecHostAliasesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecHostAliasesList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecHostAliasesList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecHostAliasesList)SetInternalValue(val
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecHostAliasesList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecHostAliasesList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecHostAliasesList)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecHostAliasesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecHostAliasesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecHostAliasesList)SetTerraformResource
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecHostAliasesList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecHostAliasesList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecHostAliasesList) AllWithMapKey(mapKe
 	_jsii_.Invoke(
 		d,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecHostAliasesList) Get(index *float64)
 	_jsii_.Invoke(
 		d,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DaemonsetSpecTemplateSpecHostAliasesList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DaemonsetSpecTemplateSpecHostAliasesList) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecHostAliasesList) ToString() *string 
 
 	return returns
 }
-

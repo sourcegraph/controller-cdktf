@@ -106,7 +106,7 @@ func (j *jsiiProxy_DefaultServiceAccountMetadataOutputReference) validateSetAnno
 	return nil
 }
 
-func (j *jsiiProxy_DefaultServiceAccountMetadataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DefaultServiceAccountMetadataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewDefaultServiceAccountMetadataOutputReferenceParameters(terraform
 
 	return nil
 }
-

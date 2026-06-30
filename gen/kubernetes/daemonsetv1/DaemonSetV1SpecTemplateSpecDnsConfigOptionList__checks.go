@@ -34,7 +34,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecDnsConfigOptionList) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecDnsConfigOptionList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecDnsConfigOptionList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDaemonSetV1SpecTemplateSpecDnsConfigOptionListParameters(terrafo
 
 	return nil
 }
-

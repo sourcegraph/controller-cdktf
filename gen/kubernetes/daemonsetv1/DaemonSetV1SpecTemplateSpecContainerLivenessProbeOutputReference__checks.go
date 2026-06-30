@@ -112,7 +112,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecContainerLivenessProbeOutputRefere
 	return nil
 }
 
-func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecContainerLivenessProbeOutputReference) validatePutTcpSocketParameters(value interface{}) error {
+func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecContainerLivenessProbeOutputReference) validatePutTcpSocketParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecContainerLivenessProbeOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecContainerLivenessProbeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecContainerLivenessProbeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -291,4 +291,3 @@ func validateNewDaemonSetV1SpecTemplateSpecContainerLivenessProbeOutputReference
 
 	return nil
 }
-

@@ -142,7 +142,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerEnvValueFro
 	return nil
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -242,4 +242,3 @@ func validateNewReplicationControllerSpecTemplateSpecInitContainerEnvValueFromOu
 
 	return nil
 }
-

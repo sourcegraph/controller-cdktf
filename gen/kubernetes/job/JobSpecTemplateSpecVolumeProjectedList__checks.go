@@ -34,7 +34,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedList) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewJobSpecTemplateSpecVolumeProjectedListParameters(terraformResour
 
 	return nil
 }
-

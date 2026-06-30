@@ -12,9 +12,9 @@ type ResourceQuotaSpecOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -48,7 +48,7 @@ type ResourceQuotaSpecOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type ResourceQuotaSpecOutputReference interface {
 	ResetScopeSelector()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_ResourceQuotaSpecOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ResourceQuotaSpecOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ResourceQuotaSpecOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_ResourceQuotaSpecOutputReference) TerraformResource() cdktf.I
 	return returns
 }
 
-
 func NewResourceQuotaSpecOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ResourceQuotaSpecOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewResourceQuotaSpecOutputReference(terraformResource cdktf.IInterpolatingP
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.resourceQuota.ResourceQuotaSpecOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewResourceQuotaSpecOutputReference_Override(r ResourceQuotaSpecOutputRefer
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.resourceQuota.ResourceQuotaSpecOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		r,
 	)
 }
 
-func (j *jsiiProxy_ResourceQuotaSpecOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ResourceQuotaSpecOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_ResourceQuotaSpecOutputReference)SetComplexObjectIndex(val in
 	)
 }
 
-func (j *jsiiProxy_ResourceQuotaSpecOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ResourceQuotaSpecOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_ResourceQuotaSpecOutputReference)SetComplexObjectIsFromSet(va
 	)
 }
 
-func (j *jsiiProxy_ResourceQuotaSpecOutputReference)SetHard(val *map[string]*string) {
+func (j *jsiiProxy_ResourceQuotaSpecOutputReference) SetHard(val *map[string]*string) {
 	if err := j.validateSetHardParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_ResourceQuotaSpecOutputReference)SetHard(val *map[string]*str
 	)
 }
 
-func (j *jsiiProxy_ResourceQuotaSpecOutputReference)SetInternalValue(val *ResourceQuotaSpec) {
+func (j *jsiiProxy_ResourceQuotaSpecOutputReference) SetInternalValue(val *ResourceQuotaSpec) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_ResourceQuotaSpecOutputReference)SetInternalValue(val *Resour
 	)
 }
 
-func (j *jsiiProxy_ResourceQuotaSpecOutputReference)SetScopes(val *[]*string) {
+func (j *jsiiProxy_ResourceQuotaSpecOutputReference) SetScopes(val *[]*string) {
 	if err := j.validateSetScopesParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_ResourceQuotaSpecOutputReference)SetScopes(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ResourceQuotaSpecOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ResourceQuotaSpecOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_ResourceQuotaSpecOutputReference)SetTerraformAttribute(val *s
 	)
 }
 
-func (j *jsiiProxy_ResourceQuotaSpecOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ResourceQuotaSpecOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,16 +335,16 @@ func (r *jsiiProxy_ResourceQuotaSpecOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (r *jsiiProxy_ResourceQuotaSpecOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_ResourceQuotaSpecOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -361,7 +360,7 @@ func (r *jsiiProxy_ResourceQuotaSpecOutputReference) GetBooleanAttribute(terrafo
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -377,7 +376,7 @@ func (r *jsiiProxy_ResourceQuotaSpecOutputReference) GetBooleanMapAttribute(terr
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -393,7 +392,7 @@ func (r *jsiiProxy_ResourceQuotaSpecOutputReference) GetListAttribute(terraformA
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -409,7 +408,7 @@ func (r *jsiiProxy_ResourceQuotaSpecOutputReference) GetNumberAttribute(terrafor
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -425,7 +424,7 @@ func (r *jsiiProxy_ResourceQuotaSpecOutputReference) GetNumberListAttribute(terr
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -441,7 +440,7 @@ func (r *jsiiProxy_ResourceQuotaSpecOutputReference) GetNumberMapAttribute(terra
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -457,7 +456,7 @@ func (r *jsiiProxy_ResourceQuotaSpecOutputReference) GetStringAttribute(terrafor
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -473,7 +472,7 @@ func (r *jsiiProxy_ResourceQuotaSpecOutputReference) GetStringMapAttribute(terra
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -502,7 +501,7 @@ func (r *jsiiProxy_ResourceQuotaSpecOutputReference) InterpolationForAttribute(p
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -516,7 +515,7 @@ func (r *jsiiProxy_ResourceQuotaSpecOutputReference) PutScopeSelector(value *Res
 	_jsii_.InvokeVoid(
 		r,
 		"putScopeSelector",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -544,16 +543,16 @@ func (r *jsiiProxy_ResourceQuotaSpecOutputReference) ResetScopeSelector() {
 	)
 }
 
-func (r *jsiiProxy_ResourceQuotaSpecOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_ResourceQuotaSpecOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := r.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (r *jsiiProxy_ResourceQuotaSpecOutputReference) ToString() *string {
 
 	return returns
 }
-

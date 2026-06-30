@@ -15,9 +15,9 @@ type DeploymentMetadataOutputReference interface {
 	AnnotationsInput() *map[string]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -58,7 +58,7 @@ type DeploymentMetadataOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -86,7 +86,7 @@ type DeploymentMetadataOutputReference interface {
 	ResetNamespace()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -119,8 +119,8 @@ func (j *jsiiProxy_DeploymentMetadataOutputReference) AnnotationsInput() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_DeploymentMetadataOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DeploymentMetadataOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -299,7 +299,6 @@ func (j *jsiiProxy_DeploymentMetadataOutputReference) Uid() *string {
 	return returns
 }
 
-
 func NewDeploymentMetadataOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DeploymentMetadataOutputReference {
 	_init_.Initialize()
 
@@ -310,7 +309,7 @@ func NewDeploymentMetadataOutputReference(terraformResource cdktf.IInterpolating
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.deployment.DeploymentMetadataOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -322,12 +321,12 @@ func NewDeploymentMetadataOutputReference_Override(d DeploymentMetadataOutputRef
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.deployment.DeploymentMetadataOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DeploymentMetadataOutputReference)SetAnnotations(val *map[string]*string) {
+func (j *jsiiProxy_DeploymentMetadataOutputReference) SetAnnotations(val *map[string]*string) {
 	if err := j.validateSetAnnotationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_DeploymentMetadataOutputReference)SetAnnotations(val *map[str
 	)
 }
 
-func (j *jsiiProxy_DeploymentMetadataOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DeploymentMetadataOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_DeploymentMetadataOutputReference)SetComplexObjectIndex(val i
 	)
 }
 
-func (j *jsiiProxy_DeploymentMetadataOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DeploymentMetadataOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_DeploymentMetadataOutputReference)SetComplexObjectIsFromSet(v
 	)
 }
 
-func (j *jsiiProxy_DeploymentMetadataOutputReference)SetGenerateName(val *string) {
+func (j *jsiiProxy_DeploymentMetadataOutputReference) SetGenerateName(val *string) {
 	if err := j.validateSetGenerateNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_DeploymentMetadataOutputReference)SetGenerateName(val *string
 	)
 }
 
-func (j *jsiiProxy_DeploymentMetadataOutputReference)SetInternalValue(val *DeploymentMetadata) {
+func (j *jsiiProxy_DeploymentMetadataOutputReference) SetInternalValue(val *DeploymentMetadata) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_DeploymentMetadataOutputReference)SetInternalValue(val *Deplo
 	)
 }
 
-func (j *jsiiProxy_DeploymentMetadataOutputReference)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_DeploymentMetadataOutputReference) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_DeploymentMetadataOutputReference)SetLabels(val *map[string]*
 	)
 }
 
-func (j *jsiiProxy_DeploymentMetadataOutputReference)SetName(val *string) {
+func (j *jsiiProxy_DeploymentMetadataOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -404,7 +403,7 @@ func (j *jsiiProxy_DeploymentMetadataOutputReference)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DeploymentMetadataOutputReference)SetNamespace(val *string) {
+func (j *jsiiProxy_DeploymentMetadataOutputReference) SetNamespace(val *string) {
 	if err := j.validateSetNamespaceParameters(val); err != nil {
 		panic(err)
 	}
@@ -415,7 +414,7 @@ func (j *jsiiProxy_DeploymentMetadataOutputReference)SetNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DeploymentMetadataOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DeploymentMetadataOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -426,7 +425,7 @@ func (j *jsiiProxy_DeploymentMetadataOutputReference)SetTerraformAttribute(val *
 	)
 }
 
-func (j *jsiiProxy_DeploymentMetadataOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DeploymentMetadataOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -450,16 +449,16 @@ func (d *jsiiProxy_DeploymentMetadataOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DeploymentMetadataOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DeploymentMetadataOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -475,7 +474,7 @@ func (d *jsiiProxy_DeploymentMetadataOutputReference) GetBooleanAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -491,7 +490,7 @@ func (d *jsiiProxy_DeploymentMetadataOutputReference) GetBooleanMapAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -507,7 +506,7 @@ func (d *jsiiProxy_DeploymentMetadataOutputReference) GetListAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -523,7 +522,7 @@ func (d *jsiiProxy_DeploymentMetadataOutputReference) GetNumberAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -539,7 +538,7 @@ func (d *jsiiProxy_DeploymentMetadataOutputReference) GetNumberListAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -555,7 +554,7 @@ func (d *jsiiProxy_DeploymentMetadataOutputReference) GetNumberMapAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -571,7 +570,7 @@ func (d *jsiiProxy_DeploymentMetadataOutputReference) GetStringAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -587,7 +586,7 @@ func (d *jsiiProxy_DeploymentMetadataOutputReference) GetStringMapAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -616,7 +615,7 @@ func (d *jsiiProxy_DeploymentMetadataOutputReference) InterpolationForAttribute(
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -663,16 +662,16 @@ func (d *jsiiProxy_DeploymentMetadataOutputReference) ResetNamespace() {
 	)
 }
 
-func (d *jsiiProxy_DeploymentMetadataOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DeploymentMetadataOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -691,4 +690,3 @@ func (d *jsiiProxy_DeploymentMetadataOutputReference) ToString() *string {
 
 	return returns
 }
-

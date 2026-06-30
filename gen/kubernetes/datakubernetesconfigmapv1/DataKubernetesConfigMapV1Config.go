@@ -6,9 +6,9 @@ import (
 
 type DataKubernetesConfigMapV1Config struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type DataKubernetesConfigMapV1Config struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// metadata block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/data-sources/config_map_v1#metadata DataKubernetesConfigMapV1#metadata}
@@ -33,6 +33,5 @@ type DataKubernetesConfigMapV1Config struct {
 	// If not set to true, the field can be modified at any time. Defaulted to nil.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/data-sources/config_map_v1#immutable DataKubernetesConfigMapV1#immutable}
-	Immutable interface{} `field:"optional" json:"immutable" yaml:"immutable"`
+	Immutable any `field:"optional" json:"immutable" yaml:"immutable"`
 }
-

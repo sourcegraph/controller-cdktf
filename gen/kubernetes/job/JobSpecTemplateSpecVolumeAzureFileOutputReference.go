@@ -12,9 +12,9 @@ type JobSpecTemplateSpecVolumeAzureFileOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -29,9 +29,9 @@ type JobSpecTemplateSpecVolumeAzureFileOutputReference interface {
 	Fqn() *string
 	InternalValue() *JobSpecTemplateSpecVolumeAzureFile
 	SetInternalValue(val *JobSpecTemplateSpecVolumeAzureFile)
-	ReadOnly() interface{}
-	SetReadOnly(val interface{})
-	ReadOnlyInput() interface{}
+	ReadOnly() any
+	SetReadOnly(val any)
+	ReadOnlyInput() any
 	SecretName() *string
 	SetSecretName(val *string)
 	SecretNameInput() *string
@@ -52,7 +52,7 @@ type JobSpecTemplateSpecVolumeAzureFileOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -77,7 +77,7 @@ type JobSpecTemplateSpecVolumeAzureFileOutputReference interface {
 	ResetSecretNamespace()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -90,8 +90,8 @@ type jsiiProxy_JobSpecTemplateSpecVolumeAzureFileOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureFileOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureFileOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -140,8 +140,8 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureFileOutputReference) InternalVa
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureFileOutputReference) ReadOnly() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureFileOutputReference) ReadOnly() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"readOnly",
@@ -150,8 +150,8 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureFileOutputReference) ReadOnly()
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureFileOutputReference) ReadOnlyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureFileOutputReference) ReadOnlyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"readOnlyInput",
@@ -240,7 +240,6 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureFileOutputReference) TerraformR
 	return returns
 }
 
-
 func NewJobSpecTemplateSpecVolumeAzureFileOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) JobSpecTemplateSpecVolumeAzureFileOutputReference {
 	_init_.Initialize()
 
@@ -251,7 +250,7 @@ func NewJobSpecTemplateSpecVolumeAzureFileOutputReference(terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecVolumeAzureFileOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -263,12 +262,12 @@ func NewJobSpecTemplateSpecVolumeAzureFileOutputReference_Override(j JobSpecTemp
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecVolumeAzureFileOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		j,
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureFileOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureFileOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureFileOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureFileOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureFileOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureFileOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureFileOutputReference)SetInternalValue(val *JobSpecTemplateSpecVolumeAzureFile) {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureFileOutputReference) SetInternalValue(val *JobSpecTemplateSpecVolumeAzureFile) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureFileOutputReference)SetInternal
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureFileOutputReference)SetReadOnly(val interface{}) {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureFileOutputReference) SetReadOnly(val any) {
 	if err := j.validateSetReadOnlyParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureFileOutputReference)SetReadOnly
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureFileOutputReference)SetSecretName(val *string) {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureFileOutputReference) SetSecretName(val *string) {
 	if err := j.validateSetSecretNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureFileOutputReference)SetSecretNa
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureFileOutputReference)SetSecretNamespace(val *string) {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureFileOutputReference) SetSecretNamespace(val *string) {
 	if err := j.validateSetSecretNamespaceParameters(val); err != nil {
 		panic(err)
 	}
@@ -334,7 +333,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureFileOutputReference)SetSecretNa
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureFileOutputReference)SetShareName(val *string) {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureFileOutputReference) SetShareName(val *string) {
 	if err := j.validateSetShareNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,7 +344,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureFileOutputReference)SetShareNam
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureFileOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureFileOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -356,7 +355,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureFileOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureFileOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureFileOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -380,16 +379,16 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureFileOutputReference) ComputeFqn
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureFileOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureFileOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := j.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		j,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -405,7 +404,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureFileOutputReference) GetBoolean
 	_jsii_.Invoke(
 		j,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -421,7 +420,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureFileOutputReference) GetBoolean
 	_jsii_.Invoke(
 		j,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -437,7 +436,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureFileOutputReference) GetListAtt
 	_jsii_.Invoke(
 		j,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -453,7 +452,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureFileOutputReference) GetNumberA
 	_jsii_.Invoke(
 		j,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -469,7 +468,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureFileOutputReference) GetNumberL
 	_jsii_.Invoke(
 		j,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -485,7 +484,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureFileOutputReference) GetNumberM
 	_jsii_.Invoke(
 		j,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -501,7 +500,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureFileOutputReference) GetStringA
 	_jsii_.Invoke(
 		j,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -517,7 +516,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureFileOutputReference) GetStringM
 	_jsii_.Invoke(
 		j,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -546,7 +545,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureFileOutputReference) Interpolat
 	_jsii_.Invoke(
 		j,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -569,16 +568,16 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureFileOutputReference) ResetSecre
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureFileOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureFileOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := j.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		j,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -597,4 +596,3 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureFileOutputReference) ToString()
 
 	return returns
 }
-

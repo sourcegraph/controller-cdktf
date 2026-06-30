@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataKubernetesPersistentVolumeClaimV1SpecSelectorList) valida
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesPersistentVolumeClaimV1SpecSelectorList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataKubernetesPersistentVolumeClaimV1SpecSelectorList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDataKubernetesPersistentVolumeClaimV1SpecSelectorListParameters(
 
 	return nil
 }
-

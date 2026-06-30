@@ -34,7 +34,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecSecurityContextSysctlList) validateR
 	return nil
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecSecurityContextSysctlList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecSecurityContextSysctlList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDaemonsetSpecTemplateSpecSecurityContextSysctlListParameters(ter
 
 	return nil
 }
-

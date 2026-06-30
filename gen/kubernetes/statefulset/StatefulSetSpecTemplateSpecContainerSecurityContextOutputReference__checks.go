@@ -131,7 +131,7 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecContainerSecurityContextOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetSpecTemplateSpecContainerSecurityContextOutputReference) validateSetAllowPrivilegeEscalationParameters(val interface{}) error {
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecContainerSecurityContextOutputReference) validateSetAllowPrivilegeEscalationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func (j *jsiiProxy_StatefulSetSpecTemplateSpecContainerSecurityContextOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetSpecTemplateSpecContainerSecurityContextOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecContainerSecurityContextOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -224,7 +224,7 @@ func (j *jsiiProxy_StatefulSetSpecTemplateSpecContainerSecurityContextOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetSpecTemplateSpecContainerSecurityContextOutputReference) validateSetPrivilegedParameters(val interface{}) error {
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecContainerSecurityContextOutputReference) validateSetPrivilegedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func (j *jsiiProxy_StatefulSetSpecTemplateSpecContainerSecurityContextOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetSpecTemplateSpecContainerSecurityContextOutputReference) validateSetReadOnlyRootFilesystemParameters(val interface{}) error {
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecContainerSecurityContextOutputReference) validateSetReadOnlyRootFilesystemParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -272,7 +272,7 @@ func (j *jsiiProxy_StatefulSetSpecTemplateSpecContainerSecurityContextOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetSpecTemplateSpecContainerSecurityContextOutputReference) validateSetRunAsNonRootParameters(val interface{}) error {
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecContainerSecurityContextOutputReference) validateSetRunAsNonRootParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -327,4 +327,3 @@ func validateNewStatefulSetSpecTemplateSpecContainerSecurityContextOutputReferen
 
 	return nil
 }
-

@@ -36,7 +36,7 @@ type ServiceV1StatusLoadBalancerList interface {
 	Get(index *float64) ServiceV1StatusLoadBalancerOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_ServiceV1StatusLoadBalancerList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewServiceV1StatusLoadBalancerList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServiceV1StatusLoadBalancerList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewServiceV1StatusLoadBalancerList(terraformResource cdktf.IInterpolatingPa
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.serviceV1.ServiceV1StatusLoadBalancerList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewServiceV1StatusLoadBalancerList_Override(s ServiceV1StatusLoadBalancerLi
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.serviceV1.ServiceV1StatusLoadBalancerList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)
 }
 
-func (j *jsiiProxy_ServiceV1StatusLoadBalancerList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ServiceV1StatusLoadBalancerList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_ServiceV1StatusLoadBalancerList)SetTerraformAttribute(val *st
 	)
 }
 
-func (j *jsiiProxy_ServiceV1StatusLoadBalancerList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ServiceV1StatusLoadBalancerList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_ServiceV1StatusLoadBalancerList)SetTerraformResource(val cdkt
 	)
 }
 
-func (j *jsiiProxy_ServiceV1StatusLoadBalancerList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ServiceV1StatusLoadBalancerList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (s *jsiiProxy_ServiceV1StatusLoadBalancerList) AllWithMapKey(mapKeyAttribut
 	_jsii_.Invoke(
 		s,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (s *jsiiProxy_ServiceV1StatusLoadBalancerList) Get(index *float64) ServiceV
 	_jsii_.Invoke(
 		s,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_ServiceV1StatusLoadBalancerList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_ServiceV1StatusLoadBalancerList) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (s *jsiiProxy_ServiceV1StatusLoadBalancerList) ToString() *string {
 
 	return returns
 }
-

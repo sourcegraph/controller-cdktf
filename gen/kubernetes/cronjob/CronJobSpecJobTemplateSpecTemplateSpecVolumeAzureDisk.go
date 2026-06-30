@@ -1,6 +1,5 @@
 package cronjob
 
-
 type CronJobSpecJobTemplateSpecTemplateSpecVolumeAzureDisk struct {
 	// Host Caching mode: None, Read Only, Read Write.
 	//
@@ -27,6 +26,5 @@ type CronJobSpecJobTemplateSpecTemplateSpecVolumeAzureDisk struct {
 	// Whether to force the read-only setting in VolumeMounts. Defaults to false (read/write).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/cron_job#read_only CronJob#read_only}
-	ReadOnly interface{} `field:"optional" json:"readOnly" yaml:"readOnly"`
+	ReadOnly any `field:"optional" json:"readOnly" yaml:"readOnly"`
 }
-

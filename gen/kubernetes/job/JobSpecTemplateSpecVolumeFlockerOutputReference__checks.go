@@ -98,7 +98,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeFlockerOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeFlockerOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeFlockerOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewJobSpecTemplateSpecVolumeFlockerOutputReferenceParameters(terraf
 
 	return nil
 }
-

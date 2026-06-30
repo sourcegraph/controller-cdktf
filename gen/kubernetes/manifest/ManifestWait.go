@@ -1,11 +1,10 @@
 package manifest
 
-
 type ManifestWait struct {
 	// condition block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/manifest#condition Manifest#condition}
-	Condition interface{} `field:"optional" json:"condition" yaml:"condition"`
+	Condition any `field:"optional" json:"condition" yaml:"condition"`
 	// A map of paths to fields to wait for a specific field value.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/manifest#fields Manifest#fields}
@@ -13,6 +12,5 @@ type ManifestWait struct {
 	// Wait for rollout to complete on resources that support `kubectl rollout status`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/manifest#rollout Manifest#rollout}
-	Rollout interface{} `field:"optional" json:"rollout" yaml:"rollout"`
+	Rollout any `field:"optional" json:"rollout" yaml:"rollout"`
 }
-

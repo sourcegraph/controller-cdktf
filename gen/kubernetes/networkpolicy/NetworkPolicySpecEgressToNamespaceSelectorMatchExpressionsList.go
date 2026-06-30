@@ -17,8 +17,8 @@ type NetworkPolicySpecEgressToNamespaceSelectorMatchExpressionsList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type NetworkPolicySpecEgressToNamespaceSelectorMatchExpressionsList interface {
 	Get(index *float64) NetworkPolicySpecEgressToNamespaceSelectorMatchExpressionsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_NetworkPolicySpecEgressToNamespaceSelectorMatchExpressionsLis
 	return returns
 }
 
-func (j *jsiiProxy_NetworkPolicySpecEgressToNamespaceSelectorMatchExpressionsList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkPolicySpecEgressToNamespaceSelectorMatchExpressionsList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_NetworkPolicySpecEgressToNamespaceSelectorMatchExpressionsLis
 	return returns
 }
 
-
 func NewNetworkPolicySpecEgressToNamespaceSelectorMatchExpressionsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkPolicySpecEgressToNamespaceSelectorMatchExpressionsList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewNetworkPolicySpecEgressToNamespaceSelectorMatchExpressionsList(terraform
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecEgressToNamespaceSelectorMatchExpressionsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewNetworkPolicySpecEgressToNamespaceSelectorMatchExpressionsList_Override(
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecEgressToNamespaceSelectorMatchExpressionsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetworkPolicySpecEgressToNamespaceSelectorMatchExpressionsList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_NetworkPolicySpecEgressToNamespaceSelectorMatchExpressionsList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_NetworkPolicySpecEgressToNamespaceSelectorMatchExpressionsLis
 	)
 }
 
-func (j *jsiiProxy_NetworkPolicySpecEgressToNamespaceSelectorMatchExpressionsList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NetworkPolicySpecEgressToNamespaceSelectorMatchExpressionsList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_NetworkPolicySpecEgressToNamespaceSelectorMatchExpressionsLis
 	)
 }
 
-func (j *jsiiProxy_NetworkPolicySpecEgressToNamespaceSelectorMatchExpressionsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NetworkPolicySpecEgressToNamespaceSelectorMatchExpressionsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_NetworkPolicySpecEgressToNamespaceSelectorMatchExpressionsLis
 	)
 }
 
-func (j *jsiiProxy_NetworkPolicySpecEgressToNamespaceSelectorMatchExpressionsList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_NetworkPolicySpecEgressToNamespaceSelectorMatchExpressionsList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (n *jsiiProxy_NetworkPolicySpecEgressToNamespaceSelectorMatchExpressionsLis
 	_jsii_.Invoke(
 		n,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (n *jsiiProxy_NetworkPolicySpecEgressToNamespaceSelectorMatchExpressionsLis
 	_jsii_.Invoke(
 		n,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NetworkPolicySpecEgressToNamespaceSelectorMatchExpressionsList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (n *jsiiProxy_NetworkPolicySpecEgressToNamespaceSelectorMatchExpressionsList) Resolve(_context cdktf.IResolveContext) any {
 	if err := n.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (n *jsiiProxy_NetworkPolicySpecEgressToNamespaceSelectorMatchExpressionsLis
 
 	return returns
 }
-

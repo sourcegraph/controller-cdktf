@@ -142,7 +142,7 @@ func (p *jsiiProxy_PodSpecContainerEnvValueFromOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecContainerEnvValueFromOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecContainerEnvValueFromOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -242,4 +242,3 @@ func validateNewPodSpecContainerEnvValueFromOutputReferenceParameters(terraformR
 
 	return nil
 }
-

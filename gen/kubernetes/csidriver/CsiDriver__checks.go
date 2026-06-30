@@ -19,7 +19,7 @@ func (c *jsiiProxy_CsiDriver) validateAddMoveTargetParameters(moveTarget *string
 	return nil
 }
 
-func (c *jsiiProxy_CsiDriver) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_CsiDriver) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_CsiDriver) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CsiDriver) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_CsiDriver) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateCsiDriver_GenerateConfigForImportParameters(scope constructs.Constr
 	return nil
 }
 
-func validateCsiDriver_IsConstructParameters(x interface{}) error {
+func validateCsiDriver_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateCsiDriver_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateCsiDriver_IsTerraformElementParameters(x interface{}) error {
+func validateCsiDriver_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateCsiDriver_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateCsiDriver_IsTerraformResourceParameters(x interface{}) error {
+func validateCsiDriver_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateCsiDriver_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_CsiDriver) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_CsiDriver) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_CsiDriver) validateSetConnectionParameters(val interface{}) e
 	return nil
 }
 
-func (j *jsiiProxy_CsiDriver) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_CsiDriver) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -372,7 +372,7 @@ func (j *jsiiProxy_CsiDriver) validateSetLifecycleParameters(val *cdktf.Terrafor
 	return nil
 }
 
-func (j *jsiiProxy_CsiDriver) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_CsiDriver) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -436,4 +436,3 @@ func validateNewCsiDriverParameters(scope constructs.Construct, id *string, conf
 
 	return nil
 }
-

@@ -106,7 +106,7 @@ func (j *jsiiProxy_ClusterRoleBindingV1MetadataOutputReference) validateSetAnnot
 	return nil
 }
 
-func (j *jsiiProxy_ClusterRoleBindingV1MetadataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ClusterRoleBindingV1MetadataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewClusterRoleBindingV1MetadataOutputReferenceParameters(terraformR
 
 	return nil
 }
-

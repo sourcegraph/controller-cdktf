@@ -106,7 +106,7 @@ func (j *jsiiProxy_StatefulSetV1MetadataOutputReference) validateSetAnnotationsP
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetV1MetadataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StatefulSetV1MetadataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewStatefulSetV1MetadataOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

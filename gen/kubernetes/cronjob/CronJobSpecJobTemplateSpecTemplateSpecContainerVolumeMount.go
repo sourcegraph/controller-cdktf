@@ -1,6 +1,5 @@
 package cronjob
 
-
 type CronJobSpecJobTemplateSpecTemplateSpecContainerVolumeMount struct {
 	// Path within the container at which the volume should be mounted. Must not contain ':'.
 	//
@@ -19,10 +18,9 @@ type CronJobSpecJobTemplateSpecTemplateSpecContainerVolumeMount struct {
 	// Mounted read-only if true, read-write otherwise (false or unspecified). Defaults to false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/cron_job#read_only CronJob#read_only}
-	ReadOnly interface{} `field:"optional" json:"readOnly" yaml:"readOnly"`
+	ReadOnly any `field:"optional" json:"readOnly" yaml:"readOnly"`
 	// Path within the volume from which the container's volume should be mounted. Defaults to "" (volume's root).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/cron_job#sub_path CronJob#sub_path}
 	SubPath *string `field:"optional" json:"subPath" yaml:"subPath"`
 }
-

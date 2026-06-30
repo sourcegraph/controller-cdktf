@@ -15,15 +15,15 @@ type PriorityClassV1 interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -39,9 +39,9 @@ type PriorityClassV1 interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	GlobalDefault() interface{}
-	SetGlobalDefault(val interface{})
-	GlobalDefaultInput() interface{}
+	GlobalDefault() any
+	SetGlobalDefault(val any)
+	GlobalDefaultInput() any
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -61,15 +61,15 @@ type PriorityClassV1 interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Value() *float64
@@ -79,9 +79,9 @@ type PriorityClassV1 interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -99,7 +99,7 @@ type PriorityClassV1 interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -111,7 +111,7 @@ type PriorityClassV1 interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -126,17 +126,17 @@ type PriorityClassV1 interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPreemptionPolicy()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for PriorityClassV1
@@ -154,8 +154,8 @@ func (j *jsiiProxy_PriorityClassV1) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_PriorityClassV1) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PriorityClassV1) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_PriorityClassV1) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PriorityClassV1) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_PriorityClassV1) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -174,8 +174,8 @@ func (j *jsiiProxy_PriorityClassV1) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_PriorityClassV1) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PriorityClassV1) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -244,8 +244,8 @@ func (j *jsiiProxy_PriorityClassV1) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_PriorityClassV1) GlobalDefault() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PriorityClassV1) GlobalDefault() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"globalDefault",
@@ -254,8 +254,8 @@ func (j *jsiiProxy_PriorityClassV1) GlobalDefault() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PriorityClassV1) GlobalDefaultInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PriorityClassV1) GlobalDefaultInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"globalDefaultInput",
@@ -354,8 +354,8 @@ func (j *jsiiProxy_PriorityClassV1) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_PriorityClassV1) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_PriorityClassV1) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -364,8 +364,8 @@ func (j *jsiiProxy_PriorityClassV1) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PriorityClassV1) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PriorityClassV1) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -384,8 +384,8 @@ func (j *jsiiProxy_PriorityClassV1) TerraformGeneratorMetadata() *cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_PriorityClassV1) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_PriorityClassV1) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -424,7 +424,6 @@ func (j *jsiiProxy_PriorityClassV1) ValueInput() *float64 {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/priority_class_v1 kubernetes_priority_class_v1} Resource.
 func NewPriorityClassV1(scope constructs.Construct, id *string, config *PriorityClassV1Config) PriorityClassV1 {
 	_init_.Initialize()
@@ -436,7 +435,7 @@ func NewPriorityClassV1(scope constructs.Construct, id *string, config *Priority
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.priorityClassV1.PriorityClassV1",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -449,12 +448,12 @@ func NewPriorityClassV1_Override(p PriorityClassV1, scope constructs.Construct, 
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.priorityClassV1.PriorityClassV1",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PriorityClassV1)SetConnection(val interface{}) {
+func (j *jsiiProxy_PriorityClassV1) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -465,7 +464,7 @@ func (j *jsiiProxy_PriorityClassV1)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PriorityClassV1)SetCount(val interface{}) {
+func (j *jsiiProxy_PriorityClassV1) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,7 +475,7 @@ func (j *jsiiProxy_PriorityClassV1)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PriorityClassV1)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_PriorityClassV1) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -484,7 +483,7 @@ func (j *jsiiProxy_PriorityClassV1)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_PriorityClassV1)SetDescription(val *string) {
+func (j *jsiiProxy_PriorityClassV1) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -495,7 +494,7 @@ func (j *jsiiProxy_PriorityClassV1)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PriorityClassV1)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_PriorityClassV1) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -503,7 +502,7 @@ func (j *jsiiProxy_PriorityClassV1)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_PriorityClassV1)SetGlobalDefault(val interface{}) {
+func (j *jsiiProxy_PriorityClassV1) SetGlobalDefault(val any) {
 	if err := j.validateSetGlobalDefaultParameters(val); err != nil {
 		panic(err)
 	}
@@ -514,7 +513,7 @@ func (j *jsiiProxy_PriorityClassV1)SetGlobalDefault(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PriorityClassV1)SetId(val *string) {
+func (j *jsiiProxy_PriorityClassV1) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -525,7 +524,7 @@ func (j *jsiiProxy_PriorityClassV1)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PriorityClassV1)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_PriorityClassV1) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -536,7 +535,7 @@ func (j *jsiiProxy_PriorityClassV1)SetLifecycle(val *cdktf.TerraformResourceLife
 	)
 }
 
-func (j *jsiiProxy_PriorityClassV1)SetPreemptionPolicy(val *string) {
+func (j *jsiiProxy_PriorityClassV1) SetPreemptionPolicy(val *string) {
 	if err := j.validateSetPreemptionPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -547,7 +546,7 @@ func (j *jsiiProxy_PriorityClassV1)SetPreemptionPolicy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PriorityClassV1)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_PriorityClassV1) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -555,7 +554,7 @@ func (j *jsiiProxy_PriorityClassV1)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_PriorityClassV1)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_PriorityClassV1) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -566,7 +565,7 @@ func (j *jsiiProxy_PriorityClassV1)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PriorityClassV1)SetValue(val *float64) {
+func (j *jsiiProxy_PriorityClassV1) SetValue(val *float64) {
 	if err := j.validateSetValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -589,7 +588,7 @@ func PriorityClassV1_GenerateConfigForImport(scope constructs.Construct, importT
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.priorityClassV1.PriorityClassV1",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -613,7 +612,7 @@ func PriorityClassV1_GenerateConfigForImport(scope constructs.Construct, importT
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func PriorityClassV1_IsConstruct(x interface{}) *bool {
+func PriorityClassV1_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePriorityClassV1_IsConstructParameters(x); err != nil {
@@ -624,7 +623,7 @@ func PriorityClassV1_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.priorityClassV1.PriorityClassV1",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -632,7 +631,7 @@ func PriorityClassV1_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func PriorityClassV1_IsTerraformElement(x interface{}) *bool {
+func PriorityClassV1_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePriorityClassV1_IsTerraformElementParameters(x); err != nil {
@@ -643,7 +642,7 @@ func PriorityClassV1_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.priorityClassV1.PriorityClassV1",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -651,7 +650,7 @@ func PriorityClassV1_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func PriorityClassV1_IsTerraformResource(x interface{}) *bool {
+func PriorityClassV1_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePriorityClassV1_IsTerraformResourceParameters(x); err != nil {
@@ -662,7 +661,7 @@ func PriorityClassV1_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.priorityClassV1.PriorityClassV1",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -687,31 +686,31 @@ func (p *jsiiProxy_PriorityClassV1) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (p *jsiiProxy_PriorityClassV1) AddOverride(path *string, value interface{}) {
+func (p *jsiiProxy_PriorityClassV1) AddOverride(path *string, value any) {
 	if err := p.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (p *jsiiProxy_PriorityClassV1) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PriorityClassV1) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -727,7 +726,7 @@ func (p *jsiiProxy_PriorityClassV1) GetBooleanAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -743,7 +742,7 @@ func (p *jsiiProxy_PriorityClassV1) GetBooleanMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -759,7 +758,7 @@ func (p *jsiiProxy_PriorityClassV1) GetListAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -775,7 +774,7 @@ func (p *jsiiProxy_PriorityClassV1) GetNumberAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -791,7 +790,7 @@ func (p *jsiiProxy_PriorityClassV1) GetNumberListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -807,7 +806,7 @@ func (p *jsiiProxy_PriorityClassV1) GetNumberMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -823,7 +822,7 @@ func (p *jsiiProxy_PriorityClassV1) GetStringAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -839,15 +838,15 @@ func (p *jsiiProxy_PriorityClassV1) GetStringMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_PriorityClassV1) HasResourceMove() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PriorityClassV1) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -866,7 +865,7 @@ func (p *jsiiProxy_PriorityClassV1) ImportFrom(id *string, provider cdktf.Terraf
 	_jsii_.InvokeVoid(
 		p,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -879,7 +878,7 @@ func (p *jsiiProxy_PriorityClassV1) InterpolationForAttribute(terraformAttribute
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -893,18 +892,18 @@ func (p *jsiiProxy_PriorityClassV1) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (p *jsiiProxy_PriorityClassV1) MoveTo(moveTarget *string, index interface{}) {
+func (p *jsiiProxy_PriorityClassV1) MoveTo(moveTarget *string, index any) {
 	if err := p.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -915,7 +914,7 @@ func (p *jsiiProxy_PriorityClassV1) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -926,7 +925,7 @@ func (p *jsiiProxy_PriorityClassV1) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -937,7 +936,7 @@ func (p *jsiiProxy_PriorityClassV1) PutMetadata(value *PriorityClassV1Metadata) 
 	_jsii_.InvokeVoid(
 		p,
 		"putMetadata",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -981,8 +980,8 @@ func (p *jsiiProxy_PriorityClassV1) ResetPreemptionPolicy() {
 	)
 }
 
-func (p *jsiiProxy_PriorityClassV1) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_PriorityClassV1) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -994,8 +993,8 @@ func (p *jsiiProxy_PriorityClassV1) SynthesizeAttributes() *map[string]interface
 	return returns
 }
 
-func (p *jsiiProxy_PriorityClassV1) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_PriorityClassV1) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -1007,8 +1006,8 @@ func (p *jsiiProxy_PriorityClassV1) SynthesizeHclAttributes() *map[string]interf
 	return returns
 }
 
-func (p *jsiiProxy_PriorityClassV1) ToHclTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PriorityClassV1) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1020,8 +1019,8 @@ func (p *jsiiProxy_PriorityClassV1) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_PriorityClassV1) ToMetadata() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PriorityClassV1) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1046,8 +1045,8 @@ func (p *jsiiProxy_PriorityClassV1) ToString() *string {
 	return returns
 }
 
-func (p *jsiiProxy_PriorityClassV1) ToTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PriorityClassV1) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1058,4 +1057,3 @@ func (p *jsiiProxy_PriorityClassV1) ToTerraform() interface{} {
 
 	return returns
 }
-

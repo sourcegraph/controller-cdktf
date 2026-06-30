@@ -98,7 +98,7 @@ func (p *jsiiProxy_PodV1SpecReadinessGateOutputReference) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_PodV1SpecReadinessGateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodV1SpecReadinessGateOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_PodV1SpecReadinessGateOutputReference) validateSetConditionTy
 	return nil
 }
 
-func (j *jsiiProxy_PodV1SpecReadinessGateOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PodV1SpecReadinessGateOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewPodV1SpecReadinessGateOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

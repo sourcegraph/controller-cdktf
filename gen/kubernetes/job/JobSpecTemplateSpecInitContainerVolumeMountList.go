@@ -17,8 +17,8 @@ type JobSpecTemplateSpecInitContainerVolumeMountList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type JobSpecTemplateSpecInitContainerVolumeMountList interface {
 	Get(index *float64) JobSpecTemplateSpecInitContainerVolumeMountOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_JobSpecTemplateSpecInitContainerVolumeMountList) Fqn() *strin
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecInitContainerVolumeMountList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobSpecTemplateSpecInitContainerVolumeMountList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_JobSpecTemplateSpecInitContainerVolumeMountList) WrapsSet() *
 	return returns
 }
 
-
 func NewJobSpecTemplateSpecInitContainerVolumeMountList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) JobSpecTemplateSpecInitContainerVolumeMountList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewJobSpecTemplateSpecInitContainerVolumeMountList(terraformResource cdktf.
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecInitContainerVolumeMountList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewJobSpecTemplateSpecInitContainerVolumeMountList_Override(j JobSpecTempla
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecInitContainerVolumeMountList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		j,
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecInitContainerVolumeMountList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_JobSpecTemplateSpecInitContainerVolumeMountList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecInitContainerVolumeMountList)SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecInitContainerVolumeMountList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_JobSpecTemplateSpecInitContainerVolumeMountList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecInitContainerVolumeMountList)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecInitContainerVolumeMountList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_JobSpecTemplateSpecInitContainerVolumeMountList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecInitContainerVolumeMountList)SetTerraformR
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecInitContainerVolumeMountList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_JobSpecTemplateSpecInitContainerVolumeMountList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecInitContainerVolumeMountList) AllWithMapKe
 	_jsii_.Invoke(
 		j,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (j *jsiiProxy_JobSpecTemplateSpecInitContainerVolumeMountList) Get(index *f
 	_jsii_.Invoke(
 		j,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecInitContainerVolumeMountList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (j *jsiiProxy_JobSpecTemplateSpecInitContainerVolumeMountList) Resolve(_context cdktf.IResolveContext) any {
 	if err := j.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		j,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (j *jsiiProxy_JobSpecTemplateSpecInitContainerVolumeMountList) ToString() *
 
 	return returns
 }
-

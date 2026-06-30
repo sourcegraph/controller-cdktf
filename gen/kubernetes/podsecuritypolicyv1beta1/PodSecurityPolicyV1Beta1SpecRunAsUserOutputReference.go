@@ -12,9 +12,9 @@ type PodSecurityPolicyV1Beta1SpecRunAsUserOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,7 +30,7 @@ type PodSecurityPolicyV1Beta1SpecRunAsUserOutputReference interface {
 	InternalValue() *PodSecurityPolicyV1Beta1SpecRunAsUser
 	SetInternalValue(val *PodSecurityPolicyV1Beta1SpecRunAsUser)
 	Range() PodSecurityPolicyV1Beta1SpecRunAsUserRangeList
-	RangeInput() interface{}
+	RangeInput() any
 	Rule() *string
 	SetRule(val *string)
 	RuleInput() *string
@@ -45,7 +45,7 @@ type PodSecurityPolicyV1Beta1SpecRunAsUserOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,11 +66,11 @@ type PodSecurityPolicyV1Beta1SpecRunAsUserOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutRange(value interface{})
+	PutRange(value any)
 	ResetRange()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_PodSecurityPolicyV1Beta1SpecRunAsUserOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecRunAsUserOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecRunAsUserOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -143,8 +143,8 @@ func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecRunAsUserOutputReference) Range()
 	return returns
 }
 
-func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecRunAsUserOutputReference) RangeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecRunAsUserOutputReference) RangeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rangeInput",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecRunAsUserOutputReference) Terrafo
 	return returns
 }
 
-
 func NewPodSecurityPolicyV1Beta1SpecRunAsUserOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PodSecurityPolicyV1Beta1SpecRunAsUserOutputReference {
 	_init_.Initialize()
 
@@ -204,7 +203,7 @@ func NewPodSecurityPolicyV1Beta1SpecRunAsUserOutputReference(terraformResource c
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.podSecurityPolicyV1Beta1.PodSecurityPolicyV1Beta1SpecRunAsUserOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewPodSecurityPolicyV1Beta1SpecRunAsUserOutputReference_Override(p PodSecur
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.podSecurityPolicyV1Beta1.PodSecurityPolicyV1Beta1SpecRunAsUserOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecRunAsUserOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecRunAsUserOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecRunAsUserOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecRunAsUserOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecRunAsUserOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecRunAsUserOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecRunAsUserOutputReference)SetInternalValue(val *PodSecurityPolicyV1Beta1SpecRunAsUser) {
+func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecRunAsUserOutputReference) SetInternalValue(val *PodSecurityPolicyV1Beta1SpecRunAsUser) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecRunAsUserOutputReference)SetInter
 	)
 }
 
-func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecRunAsUserOutputReference)SetRule(val *string) {
+func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecRunAsUserOutputReference) SetRule(val *string) {
 	if err := j.validateSetRuleParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecRunAsUserOutputReference)SetRule(
 	)
 }
 
-func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecRunAsUserOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecRunAsUserOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecRunAsUserOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecRunAsUserOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecRunAsUserOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,16 +299,16 @@ func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecRunAsUserOutputReference) Compute
 	return returns
 }
 
-func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecRunAsUserOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecRunAsUserOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -325,7 +324,7 @@ func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecRunAsUserOutputReference) GetBool
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -341,7 +340,7 @@ func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecRunAsUserOutputReference) GetBool
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -357,7 +356,7 @@ func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecRunAsUserOutputReference) GetList
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -373,7 +372,7 @@ func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecRunAsUserOutputReference) GetNumb
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -389,7 +388,7 @@ func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecRunAsUserOutputReference) GetNumb
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -405,7 +404,7 @@ func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecRunAsUserOutputReference) GetNumb
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -421,7 +420,7 @@ func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecRunAsUserOutputReference) GetStri
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -437,7 +436,7 @@ func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecRunAsUserOutputReference) GetStri
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,21 +465,21 @@ func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecRunAsUserOutputReference) Interpo
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecRunAsUserOutputReference) PutRange(value interface{}) {
+func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecRunAsUserOutputReference) PutRange(value any) {
 	if err := p.validatePutRangeParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"putRange",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -492,16 +491,16 @@ func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecRunAsUserOutputReference) ResetRa
 	)
 }
 
-func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecRunAsUserOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecRunAsUserOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecRunAsUserOutputReference) ToStrin
 
 	return returns
 }
-

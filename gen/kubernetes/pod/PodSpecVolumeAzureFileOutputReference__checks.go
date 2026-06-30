@@ -98,7 +98,7 @@ func (p *jsiiProxy_PodSpecVolumeAzureFileOutputReference) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecVolumeAzureFileOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecVolumeAzureFileOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_PodSpecVolumeAzureFileOutputReference) validateSetInternalVal
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecVolumeAzureFileOutputReference) validateSetReadOnlyParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecVolumeAzureFileOutputReference) validateSetReadOnlyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -242,4 +242,3 @@ func validateNewPodSpecVolumeAzureFileOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

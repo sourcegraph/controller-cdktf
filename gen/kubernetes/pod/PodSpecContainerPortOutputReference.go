@@ -12,9 +12,9 @@ type PodSpecContainerPortOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -36,8 +36,8 @@ type PodSpecContainerPortOutputReference interface {
 	HostPort() *float64
 	SetHostPort(val *float64)
 	HostPortInput() *float64
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -55,7 +55,7 @@ type PodSpecContainerPortOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -82,7 +82,7 @@ type PodSpecContainerPortOutputReference interface {
 	ResetProtocol()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -95,8 +95,8 @@ type jsiiProxy_PodSpecContainerPortOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_PodSpecContainerPortOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSpecContainerPortOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -195,8 +195,8 @@ func (j *jsiiProxy_PodSpecContainerPortOutputReference) HostPortInput() *float64
 	return returns
 }
 
-func (j *jsiiProxy_PodSpecContainerPortOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSpecContainerPortOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -265,7 +265,6 @@ func (j *jsiiProxy_PodSpecContainerPortOutputReference) TerraformResource() cdkt
 	return returns
 }
 
-
 func NewPodSpecContainerPortOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) PodSpecContainerPortOutputReference {
 	_init_.Initialize()
 
@@ -276,7 +275,7 @@ func NewPodSpecContainerPortOutputReference(terraformResource cdktf.IInterpolati
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.pod.PodSpecContainerPortOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -288,12 +287,12 @@ func NewPodSpecContainerPortOutputReference_Override(p PodSpecContainerPortOutpu
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.pod.PodSpecContainerPortOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PodSpecContainerPortOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PodSpecContainerPortOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -304,7 +303,7 @@ func (j *jsiiProxy_PodSpecContainerPortOutputReference)SetComplexObjectIndex(val
 	)
 }
 
-func (j *jsiiProxy_PodSpecContainerPortOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PodSpecContainerPortOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -315,7 +314,7 @@ func (j *jsiiProxy_PodSpecContainerPortOutputReference)SetComplexObjectIsFromSet
 	)
 }
 
-func (j *jsiiProxy_PodSpecContainerPortOutputReference)SetContainerPort(val *float64) {
+func (j *jsiiProxy_PodSpecContainerPortOutputReference) SetContainerPort(val *float64) {
 	if err := j.validateSetContainerPortParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,7 +325,7 @@ func (j *jsiiProxy_PodSpecContainerPortOutputReference)SetContainerPort(val *flo
 	)
 }
 
-func (j *jsiiProxy_PodSpecContainerPortOutputReference)SetHostIp(val *string) {
+func (j *jsiiProxy_PodSpecContainerPortOutputReference) SetHostIp(val *string) {
 	if err := j.validateSetHostIpParameters(val); err != nil {
 		panic(err)
 	}
@@ -337,7 +336,7 @@ func (j *jsiiProxy_PodSpecContainerPortOutputReference)SetHostIp(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PodSpecContainerPortOutputReference)SetHostPort(val *float64) {
+func (j *jsiiProxy_PodSpecContainerPortOutputReference) SetHostPort(val *float64) {
 	if err := j.validateSetHostPortParameters(val); err != nil {
 		panic(err)
 	}
@@ -348,7 +347,7 @@ func (j *jsiiProxy_PodSpecContainerPortOutputReference)SetHostPort(val *float64)
 	)
 }
 
-func (j *jsiiProxy_PodSpecContainerPortOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_PodSpecContainerPortOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -359,7 +358,7 @@ func (j *jsiiProxy_PodSpecContainerPortOutputReference)SetInternalValue(val inte
 	)
 }
 
-func (j *jsiiProxy_PodSpecContainerPortOutputReference)SetName(val *string) {
+func (j *jsiiProxy_PodSpecContainerPortOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -370,7 +369,7 @@ func (j *jsiiProxy_PodSpecContainerPortOutputReference)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PodSpecContainerPortOutputReference)SetProtocol(val *string) {
+func (j *jsiiProxy_PodSpecContainerPortOutputReference) SetProtocol(val *string) {
 	if err := j.validateSetProtocolParameters(val); err != nil {
 		panic(err)
 	}
@@ -381,7 +380,7 @@ func (j *jsiiProxy_PodSpecContainerPortOutputReference)SetProtocol(val *string) 
 	)
 }
 
-func (j *jsiiProxy_PodSpecContainerPortOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PodSpecContainerPortOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -392,7 +391,7 @@ func (j *jsiiProxy_PodSpecContainerPortOutputReference)SetTerraformAttribute(val
 	)
 }
 
-func (j *jsiiProxy_PodSpecContainerPortOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PodSpecContainerPortOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -416,16 +415,16 @@ func (p *jsiiProxy_PodSpecContainerPortOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (p *jsiiProxy_PodSpecContainerPortOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PodSpecContainerPortOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -441,7 +440,7 @@ func (p *jsiiProxy_PodSpecContainerPortOutputReference) GetBooleanAttribute(terr
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -457,7 +456,7 @@ func (p *jsiiProxy_PodSpecContainerPortOutputReference) GetBooleanMapAttribute(t
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -473,7 +472,7 @@ func (p *jsiiProxy_PodSpecContainerPortOutputReference) GetListAttribute(terrafo
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -489,7 +488,7 @@ func (p *jsiiProxy_PodSpecContainerPortOutputReference) GetNumberAttribute(terra
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -505,7 +504,7 @@ func (p *jsiiProxy_PodSpecContainerPortOutputReference) GetNumberListAttribute(t
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -521,7 +520,7 @@ func (p *jsiiProxy_PodSpecContainerPortOutputReference) GetNumberMapAttribute(te
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -537,7 +536,7 @@ func (p *jsiiProxy_PodSpecContainerPortOutputReference) GetStringAttribute(terra
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -553,7 +552,7 @@ func (p *jsiiProxy_PodSpecContainerPortOutputReference) GetStringMapAttribute(te
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -582,7 +581,7 @@ func (p *jsiiProxy_PodSpecContainerPortOutputReference) InterpolationForAttribut
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -621,16 +620,16 @@ func (p *jsiiProxy_PodSpecContainerPortOutputReference) ResetProtocol() {
 	)
 }
 
-func (p *jsiiProxy_PodSpecContainerPortOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PodSpecContainerPortOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -649,4 +648,3 @@ func (p *jsiiProxy_PodSpecContainerPortOutputReference) ToString() *string {
 
 	return returns
 }
-

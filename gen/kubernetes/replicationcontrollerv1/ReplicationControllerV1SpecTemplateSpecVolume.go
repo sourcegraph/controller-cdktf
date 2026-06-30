@@ -1,6 +1,5 @@
 package replicationcontrollerv1
 
-
 type ReplicationControllerV1SpecTemplateSpecVolume struct {
 	// aws_elastic_block_store block.
 	//
@@ -93,7 +92,7 @@ type ReplicationControllerV1SpecTemplateSpecVolume struct {
 	// projected block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/replication_controller_v1#projected ReplicationControllerV1#projected}
-	Projected interface{} `field:"optional" json:"projected" yaml:"projected"`
+	Projected any `field:"optional" json:"projected" yaml:"projected"`
 	// quobyte block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/replication_controller_v1#quobyte ReplicationControllerV1#quobyte}
@@ -111,4 +110,3 @@ type ReplicationControllerV1SpecTemplateSpecVolume struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/replication_controller_v1#vsphere_volume ReplicationControllerV1#vsphere_volume}
 	VsphereVolume *ReplicationControllerV1SpecTemplateSpecVolumeVsphereVolume `field:"optional" json:"vsphereVolume" yaml:"vsphereVolume"`
 }
-

@@ -19,7 +19,7 @@ func (e *jsiiProxy_Endpoints) validateAddMoveTargetParameters(moveTarget *string
 	return nil
 }
 
-func (e *jsiiProxy_Endpoints) validateAddOverrideParameters(path *string, value interface{}) error {
+func (e *jsiiProxy_Endpoints) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (e *jsiiProxy_Endpoints) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_Endpoints) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (e *jsiiProxy_Endpoints) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (e *jsiiProxy_Endpoints) validatePutMetadataParameters(value *EndpointsMeta
 	return nil
 }
 
-func (e *jsiiProxy_Endpoints) validatePutSubsetParameters(value interface{}) error {
+func (e *jsiiProxy_Endpoints) validatePutSubsetParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -262,7 +262,7 @@ func validateEndpoints_GenerateConfigForImportParameters(scope constructs.Constr
 	return nil
 }
 
-func validateEndpoints_IsConstructParameters(x interface{}) error {
+func validateEndpoints_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func validateEndpoints_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateEndpoints_IsTerraformElementParameters(x interface{}) error {
+func validateEndpoints_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func validateEndpoints_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateEndpoints_IsTerraformResourceParameters(x interface{}) error {
+func validateEndpoints_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -286,7 +286,7 @@ func validateEndpoints_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_Endpoints) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_Endpoints) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -319,7 +319,7 @@ func (j *jsiiProxy_Endpoints) validateSetConnectionParameters(val interface{}) e
 	return nil
 }
 
-func (j *jsiiProxy_Endpoints) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_Endpoints) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -392,7 +392,7 @@ func (j *jsiiProxy_Endpoints) validateSetLifecycleParameters(val *cdktf.Terrafor
 	return nil
 }
 
-func (j *jsiiProxy_Endpoints) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_Endpoints) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -456,4 +456,3 @@ func validateNewEndpointsParameters(scope constructs.Construct, id *string, conf
 
 	return nil
 }
-

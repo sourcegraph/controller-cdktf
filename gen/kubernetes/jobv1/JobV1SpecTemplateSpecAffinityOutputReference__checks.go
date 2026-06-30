@@ -131,7 +131,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecAffinityOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecAffinityOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecAffinityOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -231,4 +231,3 @@ func validateNewJobV1SpecTemplateSpecAffinityOutputReferenceParameters(terraform
 
 	return nil
 }
-

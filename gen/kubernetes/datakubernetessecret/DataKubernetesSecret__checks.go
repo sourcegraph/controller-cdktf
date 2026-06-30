@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataKubernetesSecret) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataKubernetesSecret) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -138,7 +138,7 @@ func validateDataKubernetesSecret_GenerateConfigForImportParameters(scope constr
 	return nil
 }
 
-func validateDataKubernetesSecret_IsConstructParameters(x interface{}) error {
+func validateDataKubernetesSecret_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -146,7 +146,7 @@ func validateDataKubernetesSecret_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDataKubernetesSecret_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataKubernetesSecret_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -154,7 +154,7 @@ func validateDataKubernetesSecret_IsTerraformDataSourceParameters(x interface{})
 	return nil
 }
 
-func validateDataKubernetesSecret_IsTerraformElementParameters(x interface{}) error {
+func validateDataKubernetesSecret_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -170,7 +170,7 @@ func (j *jsiiProxy_DataKubernetesSecret) validateSetBinaryDataParameters(val *ma
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesSecret) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataKubernetesSecret) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -261,4 +261,3 @@ func validateNewDataKubernetesSecretParameters(scope constructs.Construct, id *s
 
 	return nil
 }
-

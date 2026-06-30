@@ -106,7 +106,7 @@ func (j *jsiiProxy_PodSpecVolumeAzureDiskOutputReference) validateSetCachingMode
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecVolumeAzureDiskOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecVolumeAzureDiskOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -211,7 +211,7 @@ func (j *jsiiProxy_PodSpecVolumeAzureDiskOutputReference) validateSetKindParamet
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecVolumeAzureDiskOutputReference) validateSetReadOnlyParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecVolumeAzureDiskOutputReference) validateSetReadOnlyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -258,4 +258,3 @@ func validateNewPodSpecVolumeAzureDiskOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

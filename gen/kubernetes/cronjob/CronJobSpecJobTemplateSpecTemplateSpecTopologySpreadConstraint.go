@@ -1,11 +1,10 @@
 package cronjob
 
-
 type CronJobSpecJobTemplateSpecTemplateSpecTopologySpreadConstraint struct {
 	// label_selector block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/cron_job#label_selector CronJob#label_selector}
-	LabelSelector interface{} `field:"optional" json:"labelSelector" yaml:"labelSelector"`
+	LabelSelector any `field:"optional" json:"labelSelector" yaml:"labelSelector"`
 	// describes the degree to which pods may be unevenly distributed.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/cron_job#max_skew CronJob#max_skew}
@@ -21,4 +20,3 @@ type CronJobSpecJobTemplateSpecTemplateSpecTopologySpreadConstraint struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/cron_job#when_unsatisfiable CronJob#when_unsatisfiable}
 	WhenUnsatisfiable *string `field:"optional" json:"whenUnsatisfiable" yaml:"whenUnsatisfiable"`
 }
-

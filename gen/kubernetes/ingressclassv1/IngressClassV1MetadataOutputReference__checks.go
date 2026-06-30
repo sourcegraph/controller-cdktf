@@ -106,7 +106,7 @@ func (j *jsiiProxy_IngressClassV1MetadataOutputReference) validateSetAnnotations
 	return nil
 }
 
-func (j *jsiiProxy_IngressClassV1MetadataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IngressClassV1MetadataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewIngressClassV1MetadataOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

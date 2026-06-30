@@ -12,9 +12,9 @@ type DataKubernetesStorageClassV1AllowedTopologiesOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,7 +30,7 @@ type DataKubernetesStorageClassV1AllowedTopologiesOutputReference interface {
 	InternalValue() *DataKubernetesStorageClassV1AllowedTopologies
 	SetInternalValue(val *DataKubernetesStorageClassV1AllowedTopologies)
 	MatchLabelExpressions() DataKubernetesStorageClassV1AllowedTopologiesMatchLabelExpressionsList
-	MatchLabelExpressionsInput() interface{}
+	MatchLabelExpressionsInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -42,7 +42,7 @@ type DataKubernetesStorageClassV1AllowedTopologiesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -63,11 +63,11 @@ type DataKubernetesStorageClassV1AllowedTopologiesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutMatchLabelExpressions(value interface{})
+	PutMatchLabelExpressions(value any)
 	ResetMatchLabelExpressions()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,8 +80,8 @@ type jsiiProxy_DataKubernetesStorageClassV1AllowedTopologiesOutputReference stru
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataKubernetesStorageClassV1AllowedTopologiesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataKubernetesStorageClassV1AllowedTopologiesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -140,8 +140,8 @@ func (j *jsiiProxy_DataKubernetesStorageClassV1AllowedTopologiesOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_DataKubernetesStorageClassV1AllowedTopologiesOutputReference) MatchLabelExpressionsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataKubernetesStorageClassV1AllowedTopologiesOutputReference) MatchLabelExpressionsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"matchLabelExpressionsInput",
@@ -170,7 +170,6 @@ func (j *jsiiProxy_DataKubernetesStorageClassV1AllowedTopologiesOutputReference)
 	return returns
 }
 
-
 func NewDataKubernetesStorageClassV1AllowedTopologiesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataKubernetesStorageClassV1AllowedTopologiesOutputReference {
 	_init_.Initialize()
 
@@ -181,7 +180,7 @@ func NewDataKubernetesStorageClassV1AllowedTopologiesOutputReference(terraformRe
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.dataKubernetesStorageClassV1.DataKubernetesStorageClassV1AllowedTopologiesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -193,12 +192,12 @@ func NewDataKubernetesStorageClassV1AllowedTopologiesOutputReference_Override(d 
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.dataKubernetesStorageClassV1.DataKubernetesStorageClassV1AllowedTopologiesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataKubernetesStorageClassV1AllowedTopologiesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataKubernetesStorageClassV1AllowedTopologiesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -209,7 +208,7 @@ func (j *jsiiProxy_DataKubernetesStorageClassV1AllowedTopologiesOutputReference)
 	)
 }
 
-func (j *jsiiProxy_DataKubernetesStorageClassV1AllowedTopologiesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataKubernetesStorageClassV1AllowedTopologiesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -220,7 +219,7 @@ func (j *jsiiProxy_DataKubernetesStorageClassV1AllowedTopologiesOutputReference)
 	)
 }
 
-func (j *jsiiProxy_DataKubernetesStorageClassV1AllowedTopologiesOutputReference)SetInternalValue(val *DataKubernetesStorageClassV1AllowedTopologies) {
+func (j *jsiiProxy_DataKubernetesStorageClassV1AllowedTopologiesOutputReference) SetInternalValue(val *DataKubernetesStorageClassV1AllowedTopologies) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_DataKubernetesStorageClassV1AllowedTopologiesOutputReference)
 	)
 }
 
-func (j *jsiiProxy_DataKubernetesStorageClassV1AllowedTopologiesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataKubernetesStorageClassV1AllowedTopologiesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_DataKubernetesStorageClassV1AllowedTopologiesOutputReference)
 	)
 }
 
-func (j *jsiiProxy_DataKubernetesStorageClassV1AllowedTopologiesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataKubernetesStorageClassV1AllowedTopologiesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,16 +265,16 @@ func (d *jsiiProxy_DataKubernetesStorageClassV1AllowedTopologiesOutputReference)
 	return returns
 }
 
-func (d *jsiiProxy_DataKubernetesStorageClassV1AllowedTopologiesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataKubernetesStorageClassV1AllowedTopologiesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -291,7 +290,7 @@ func (d *jsiiProxy_DataKubernetesStorageClassV1AllowedTopologiesOutputReference)
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -307,7 +306,7 @@ func (d *jsiiProxy_DataKubernetesStorageClassV1AllowedTopologiesOutputReference)
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -323,7 +322,7 @@ func (d *jsiiProxy_DataKubernetesStorageClassV1AllowedTopologiesOutputReference)
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -339,7 +338,7 @@ func (d *jsiiProxy_DataKubernetesStorageClassV1AllowedTopologiesOutputReference)
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -355,7 +354,7 @@ func (d *jsiiProxy_DataKubernetesStorageClassV1AllowedTopologiesOutputReference)
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -371,7 +370,7 @@ func (d *jsiiProxy_DataKubernetesStorageClassV1AllowedTopologiesOutputReference)
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -387,7 +386,7 @@ func (d *jsiiProxy_DataKubernetesStorageClassV1AllowedTopologiesOutputReference)
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (d *jsiiProxy_DataKubernetesStorageClassV1AllowedTopologiesOutputReference)
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,21 +431,21 @@ func (d *jsiiProxy_DataKubernetesStorageClassV1AllowedTopologiesOutputReference)
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataKubernetesStorageClassV1AllowedTopologiesOutputReference) PutMatchLabelExpressions(value interface{}) {
+func (d *jsiiProxy_DataKubernetesStorageClassV1AllowedTopologiesOutputReference) PutMatchLabelExpressions(value any) {
 	if err := d.validatePutMatchLabelExpressionsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putMatchLabelExpressions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -458,16 +457,16 @@ func (d *jsiiProxy_DataKubernetesStorageClassV1AllowedTopologiesOutputReference)
 	)
 }
 
-func (d *jsiiProxy_DataKubernetesStorageClassV1AllowedTopologiesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataKubernetesStorageClassV1AllowedTopologiesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -486,4 +485,3 @@ func (d *jsiiProxy_DataKubernetesStorageClassV1AllowedTopologiesOutputReference)
 
 	return returns
 }
-

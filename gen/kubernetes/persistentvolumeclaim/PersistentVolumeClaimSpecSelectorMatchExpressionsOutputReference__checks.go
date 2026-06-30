@@ -98,7 +98,7 @@ func (p *jsiiProxy_PersistentVolumeClaimSpecSelectorMatchExpressionsOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_PersistentVolumeClaimSpecSelectorMatchExpressionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PersistentVolumeClaimSpecSelectorMatchExpressionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_PersistentVolumeClaimSpecSelectorMatchExpressionsOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_PersistentVolumeClaimSpecSelectorMatchExpressionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PersistentVolumeClaimSpecSelectorMatchExpressionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewPersistentVolumeClaimSpecSelectorMatchExpressionsOutputReference
 
 	return nil
 }
-

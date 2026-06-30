@@ -98,7 +98,7 @@ func (p *jsiiProxy_PersistentVolumeV1TimeoutsOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_PersistentVolumeV1TimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PersistentVolumeV1TimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_PersistentVolumeV1TimeoutsOutputReference) validateSetCreateP
 	return nil
 }
 
-func (j *jsiiProxy_PersistentVolumeV1TimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PersistentVolumeV1TimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewPersistentVolumeV1TimeoutsOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

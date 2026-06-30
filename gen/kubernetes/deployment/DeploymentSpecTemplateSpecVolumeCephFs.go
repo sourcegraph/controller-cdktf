@@ -1,6 +1,5 @@
 package deployment
 
-
 type DeploymentSpecTemplateSpecVolumeCephFs struct {
 	// Monitors is a collection of Ceph monitors More info: http://releases.k8s.io/HEAD/examples/volumes/cephfs/README.md#how-to-use-it.
 	//
@@ -13,7 +12,7 @@ type DeploymentSpecTemplateSpecVolumeCephFs struct {
 	// Whether to force the read-only setting in VolumeMounts. Defaults to `false` (read/write). More info: http://releases.k8s.io/HEAD/examples/volumes/cephfs/README.md#how-to-use-it.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/deployment#read_only Deployment#read_only}
-	ReadOnly interface{} `field:"optional" json:"readOnly" yaml:"readOnly"`
+	ReadOnly any `field:"optional" json:"readOnly" yaml:"readOnly"`
 	// The path to key ring for User, default is /etc/ceph/user.secret More info: http://releases.k8s.io/HEAD/examples/volumes/cephfs/README.md#how-to-use-it.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/deployment#secret_file Deployment#secret_file}
@@ -27,4 +26,3 @@ type DeploymentSpecTemplateSpecVolumeCephFs struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/deployment#user Deployment#user}
 	User *string `field:"optional" json:"user" yaml:"user"`
 }
-

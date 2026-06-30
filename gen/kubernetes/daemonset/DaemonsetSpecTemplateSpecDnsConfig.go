@@ -1,6 +1,5 @@
 package daemonset
 
-
 type DaemonsetSpecTemplateSpecDnsConfig struct {
 	// A list of DNS name server IP addresses.
 	//
@@ -11,7 +10,7 @@ type DaemonsetSpecTemplateSpecDnsConfig struct {
 	// option block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/daemonset#option Daemonset#option}
-	Option interface{} `field:"optional" json:"option" yaml:"option"`
+	Option any `field:"optional" json:"option" yaml:"option"`
 	// A list of DNS search domains for host-name lookup.
 	//
 	// This will be appended to the base search paths generated from DNSPolicy. Duplicated search paths will be removed.
@@ -19,4 +18,3 @@ type DaemonsetSpecTemplateSpecDnsConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/daemonset#searches Daemonset#searches}
 	Searches *[]*string `field:"optional" json:"searches" yaml:"searches"`
 }
-

@@ -15,9 +15,9 @@ type PodDisruptionBudgetV1MetadataOutputReference interface {
 	AnnotationsInput() *map[string]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -58,7 +58,7 @@ type PodDisruptionBudgetV1MetadataOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -86,7 +86,7 @@ type PodDisruptionBudgetV1MetadataOutputReference interface {
 	ResetNamespace()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -119,8 +119,8 @@ func (j *jsiiProxy_PodDisruptionBudgetV1MetadataOutputReference) AnnotationsInpu
 	return returns
 }
 
-func (j *jsiiProxy_PodDisruptionBudgetV1MetadataOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodDisruptionBudgetV1MetadataOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -299,7 +299,6 @@ func (j *jsiiProxy_PodDisruptionBudgetV1MetadataOutputReference) Uid() *string {
 	return returns
 }
 
-
 func NewPodDisruptionBudgetV1MetadataOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PodDisruptionBudgetV1MetadataOutputReference {
 	_init_.Initialize()
 
@@ -310,7 +309,7 @@ func NewPodDisruptionBudgetV1MetadataOutputReference(terraformResource cdktf.IIn
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.podDisruptionBudgetV1.PodDisruptionBudgetV1MetadataOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -322,12 +321,12 @@ func NewPodDisruptionBudgetV1MetadataOutputReference_Override(p PodDisruptionBud
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.podDisruptionBudgetV1.PodDisruptionBudgetV1MetadataOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PodDisruptionBudgetV1MetadataOutputReference)SetAnnotations(val *map[string]*string) {
+func (j *jsiiProxy_PodDisruptionBudgetV1MetadataOutputReference) SetAnnotations(val *map[string]*string) {
 	if err := j.validateSetAnnotationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_PodDisruptionBudgetV1MetadataOutputReference)SetAnnotations(v
 	)
 }
 
-func (j *jsiiProxy_PodDisruptionBudgetV1MetadataOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PodDisruptionBudgetV1MetadataOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_PodDisruptionBudgetV1MetadataOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_PodDisruptionBudgetV1MetadataOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PodDisruptionBudgetV1MetadataOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_PodDisruptionBudgetV1MetadataOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_PodDisruptionBudgetV1MetadataOutputReference)SetGenerateName(val *string) {
+func (j *jsiiProxy_PodDisruptionBudgetV1MetadataOutputReference) SetGenerateName(val *string) {
 	if err := j.validateSetGenerateNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_PodDisruptionBudgetV1MetadataOutputReference)SetGenerateName(
 	)
 }
 
-func (j *jsiiProxy_PodDisruptionBudgetV1MetadataOutputReference)SetInternalValue(val *PodDisruptionBudgetV1Metadata) {
+func (j *jsiiProxy_PodDisruptionBudgetV1MetadataOutputReference) SetInternalValue(val *PodDisruptionBudgetV1Metadata) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_PodDisruptionBudgetV1MetadataOutputReference)SetInternalValue
 	)
 }
 
-func (j *jsiiProxy_PodDisruptionBudgetV1MetadataOutputReference)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_PodDisruptionBudgetV1MetadataOutputReference) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_PodDisruptionBudgetV1MetadataOutputReference)SetLabels(val *m
 	)
 }
 
-func (j *jsiiProxy_PodDisruptionBudgetV1MetadataOutputReference)SetName(val *string) {
+func (j *jsiiProxy_PodDisruptionBudgetV1MetadataOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -404,7 +403,7 @@ func (j *jsiiProxy_PodDisruptionBudgetV1MetadataOutputReference)SetName(val *str
 	)
 }
 
-func (j *jsiiProxy_PodDisruptionBudgetV1MetadataOutputReference)SetNamespace(val *string) {
+func (j *jsiiProxy_PodDisruptionBudgetV1MetadataOutputReference) SetNamespace(val *string) {
 	if err := j.validateSetNamespaceParameters(val); err != nil {
 		panic(err)
 	}
@@ -415,7 +414,7 @@ func (j *jsiiProxy_PodDisruptionBudgetV1MetadataOutputReference)SetNamespace(val
 	)
 }
 
-func (j *jsiiProxy_PodDisruptionBudgetV1MetadataOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PodDisruptionBudgetV1MetadataOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -426,7 +425,7 @@ func (j *jsiiProxy_PodDisruptionBudgetV1MetadataOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_PodDisruptionBudgetV1MetadataOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PodDisruptionBudgetV1MetadataOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -450,16 +449,16 @@ func (p *jsiiProxy_PodDisruptionBudgetV1MetadataOutputReference) ComputeFqn() *s
 	return returns
 }
 
-func (p *jsiiProxy_PodDisruptionBudgetV1MetadataOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PodDisruptionBudgetV1MetadataOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -475,7 +474,7 @@ func (p *jsiiProxy_PodDisruptionBudgetV1MetadataOutputReference) GetBooleanAttri
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -491,7 +490,7 @@ func (p *jsiiProxy_PodDisruptionBudgetV1MetadataOutputReference) GetBooleanMapAt
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -507,7 +506,7 @@ func (p *jsiiProxy_PodDisruptionBudgetV1MetadataOutputReference) GetListAttribut
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -523,7 +522,7 @@ func (p *jsiiProxy_PodDisruptionBudgetV1MetadataOutputReference) GetNumberAttrib
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -539,7 +538,7 @@ func (p *jsiiProxy_PodDisruptionBudgetV1MetadataOutputReference) GetNumberListAt
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -555,7 +554,7 @@ func (p *jsiiProxy_PodDisruptionBudgetV1MetadataOutputReference) GetNumberMapAtt
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -571,7 +570,7 @@ func (p *jsiiProxy_PodDisruptionBudgetV1MetadataOutputReference) GetStringAttrib
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -587,7 +586,7 @@ func (p *jsiiProxy_PodDisruptionBudgetV1MetadataOutputReference) GetStringMapAtt
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -616,7 +615,7 @@ func (p *jsiiProxy_PodDisruptionBudgetV1MetadataOutputReference) InterpolationFo
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -663,16 +662,16 @@ func (p *jsiiProxy_PodDisruptionBudgetV1MetadataOutputReference) ResetNamespace(
 	)
 }
 
-func (p *jsiiProxy_PodDisruptionBudgetV1MetadataOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PodDisruptionBudgetV1MetadataOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -691,4 +690,3 @@ func (p *jsiiProxy_PodDisruptionBudgetV1MetadataOutputReference) ToString() *str
 
 	return returns
 }
-

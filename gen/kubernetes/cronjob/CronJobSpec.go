@@ -1,6 +1,5 @@
 package cronjob
 
-
 type CronJobSpec struct {
 	// job_template block.
 	//
@@ -33,6 +32,5 @@ type CronJobSpec struct {
 	// Defaults to false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/cron_job#suspend CronJob#suspend}
-	Suspend interface{} `field:"optional" json:"suspend" yaml:"suspend"`
+	Suspend any `field:"optional" json:"suspend" yaml:"suspend"`
 }
-

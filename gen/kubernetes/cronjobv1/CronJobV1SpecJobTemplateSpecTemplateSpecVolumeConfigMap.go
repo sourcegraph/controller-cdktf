@@ -1,6 +1,5 @@
 package cronjobv1
 
-
 type CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMap struct {
 	// Optional: mode bits to use on created files by default.
 	//
@@ -11,7 +10,7 @@ type CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMap struct {
 	// items block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/cron_job_v1#items CronJobV1#items}
-	Items interface{} `field:"optional" json:"items" yaml:"items"`
+	Items any `field:"optional" json:"items" yaml:"items"`
 	// Name of the referent. More info: http://kubernetes.io/docs/user-guide/identifiers#names.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/cron_job_v1#name CronJobV1#name}
@@ -19,6 +18,5 @@ type CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMap struct {
 	// Optional: Specify whether the ConfigMap or its keys must be defined.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/cron_job_v1#optional CronJobV1#optional}
-	Optional interface{} `field:"optional" json:"optional" yaml:"optional"`
+	Optional any `field:"optional" json:"optional" yaml:"optional"`
 }
-

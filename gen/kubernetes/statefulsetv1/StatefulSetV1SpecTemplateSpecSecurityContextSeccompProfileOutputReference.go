@@ -12,9 +12,9 @@ type StatefulSetV1SpecTemplateSpecSecurityContextSeccompProfileOutputReference i
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -46,7 +46,7 @@ type StatefulSetV1SpecTemplateSpecSecurityContextSeccompProfileOutputReference i
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type StatefulSetV1SpecTemplateSpecSecurityContextSeccompProfileOutputReference i
 	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextSeccompProfileOutputR
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextSeccompProfileOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextSeccompProfileOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextSeccompProfileOut
 	return returns
 }
 
-
 func NewStatefulSetV1SpecTemplateSpecSecurityContextSeccompProfileOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) StatefulSetV1SpecTemplateSpecSecurityContextSeccompProfileOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewStatefulSetV1SpecTemplateSpecSecurityContextSeccompProfileOutputReferenc
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecSecurityContextSeccompProfileOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewStatefulSetV1SpecTemplateSpecSecurityContextSeccompProfileOutputReferenc
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecSecurityContextSeccompProfileOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		s,
 	)
 }
 
-func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextSeccompProfileOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextSeccompProfileOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextSeccompProfileOut
 	)
 }
 
-func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextSeccompProfileOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextSeccompProfileOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextSeccompProfileOut
 	)
 }
 
-func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextSeccompProfileOutputReference)SetInternalValue(val *StatefulSetV1SpecTemplateSpecSecurityContextSeccompProfile) {
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextSeccompProfileOutputReference) SetInternalValue(val *StatefulSetV1SpecTemplateSpecSecurityContextSeccompProfile) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextSeccompProfileOut
 	)
 }
 
-func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextSeccompProfileOutputReference)SetLocalhostProfile(val *string) {
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextSeccompProfileOutputReference) SetLocalhostProfile(val *string) {
 	if err := j.validateSetLocalhostProfileParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextSeccompProfileOut
 	)
 }
 
-func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextSeccompProfileOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextSeccompProfileOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextSeccompProfileOut
 	)
 }
 
-func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextSeccompProfileOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextSeccompProfileOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextSeccompProfileOut
 	)
 }
 
-func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextSeccompProfileOutputReference)SetType(val *string) {
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextSeccompProfileOutputReference) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextSeccompProfileOut
 	return returns
 }
 
-func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextSeccompProfileOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextSeccompProfileOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextSeccompProfileOut
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextSeccompProfileOut
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextSeccompProfileOut
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextSeccompProfileOut
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextSeccompProfileOut
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextSeccompProfileOut
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextSeccompProfileOut
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextSeccompProfileOut
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextSeccompProfileOut
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextSeccompProfileOut
 	)
 }
 
-func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextSeccompProfileOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextSeccompProfileOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextSeccompProfileOut
 
 	return returns
 }
-

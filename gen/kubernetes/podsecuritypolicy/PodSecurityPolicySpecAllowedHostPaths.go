@@ -1,6 +1,5 @@
 package podsecuritypolicy
 
-
 type PodSecurityPolicySpecAllowedHostPaths struct {
 	// pathPrefix is the path prefix that the host volume must match.
 	//
@@ -13,6 +12,5 @@ type PodSecurityPolicySpecAllowedHostPaths struct {
 	// when set to true, will allow host volumes matching the pathPrefix only if all volume mounts are readOnly.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/pod_security_policy#read_only PodSecurityPolicy#read_only}
-	ReadOnly interface{} `field:"optional" json:"readOnly" yaml:"readOnly"`
+	ReadOnly any `field:"optional" json:"readOnly" yaml:"readOnly"`
 }
-
