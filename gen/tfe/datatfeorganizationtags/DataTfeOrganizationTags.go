@@ -15,11 +15,11 @@ type DataTfeOrganizationTags interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -49,18 +49,18 @@ type DataTfeOrganizationTags interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() DataTfeOrganizationTagsTagsList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -87,18 +87,18 @@ type DataTfeOrganizationTags interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataTfeOrganizationTags
@@ -116,8 +116,8 @@ func (j *jsiiProxy_DataTfeOrganizationTags) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataTfeOrganizationTags) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataTfeOrganizationTags) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -126,8 +126,8 @@ func (j *jsiiProxy_DataTfeOrganizationTags) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_DataTfeOrganizationTags) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataTfeOrganizationTags) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -246,8 +246,8 @@ func (j *jsiiProxy_DataTfeOrganizationTags) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataTfeOrganizationTags) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataTfeOrganizationTags) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -276,8 +276,8 @@ func (j *jsiiProxy_DataTfeOrganizationTags) TerraformGeneratorMetadata() *cdktf.
 	return returns
 }
 
-func (j *jsiiProxy_DataTfeOrganizationTags) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataTfeOrganizationTags) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -296,7 +296,6 @@ func (j *jsiiProxy_DataTfeOrganizationTags) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/organization_tags tfe_organization_tags} Data Source.
 func NewDataTfeOrganizationTags(scope constructs.Construct, id *string, config *DataTfeOrganizationTagsConfig) DataTfeOrganizationTags {
 	_init_.Initialize()
@@ -308,7 +307,7 @@ func NewDataTfeOrganizationTags(scope constructs.Construct, id *string, config *
 
 	_jsii_.Create(
 		"@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTags",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -321,12 +320,12 @@ func NewDataTfeOrganizationTags_Override(d DataTfeOrganizationTags, scope constr
 
 	_jsii_.Create(
 		"@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTags",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataTfeOrganizationTags)SetCount(val interface{}) {
+func (j *jsiiProxy_DataTfeOrganizationTags) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -337,7 +336,7 @@ func (j *jsiiProxy_DataTfeOrganizationTags)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataTfeOrganizationTags)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataTfeOrganizationTags) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -345,7 +344,7 @@ func (j *jsiiProxy_DataTfeOrganizationTags)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataTfeOrganizationTags)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataTfeOrganizationTags) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -353,7 +352,7 @@ func (j *jsiiProxy_DataTfeOrganizationTags)SetForEach(val cdktf.ITerraformIterat
 	)
 }
 
-func (j *jsiiProxy_DataTfeOrganizationTags)SetId(val *string) {
+func (j *jsiiProxy_DataTfeOrganizationTags) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -364,7 +363,7 @@ func (j *jsiiProxy_DataTfeOrganizationTags)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataTfeOrganizationTags)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataTfeOrganizationTags) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -375,7 +374,7 @@ func (j *jsiiProxy_DataTfeOrganizationTags)SetLifecycle(val *cdktf.TerraformReso
 	)
 }
 
-func (j *jsiiProxy_DataTfeOrganizationTags)SetOrganization(val *string) {
+func (j *jsiiProxy_DataTfeOrganizationTags) SetOrganization(val *string) {
 	if err := j.validateSetOrganizationParameters(val); err != nil {
 		panic(err)
 	}
@@ -386,7 +385,7 @@ func (j *jsiiProxy_DataTfeOrganizationTags)SetOrganization(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataTfeOrganizationTags)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataTfeOrganizationTags) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -406,7 +405,7 @@ func DataTfeOrganizationTags_GenerateConfigForImport(scope constructs.Construct,
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTags",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -430,7 +429,7 @@ func DataTfeOrganizationTags_GenerateConfigForImport(scope constructs.Construct,
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataTfeOrganizationTags_IsConstruct(x interface{}) *bool {
+func DataTfeOrganizationTags_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataTfeOrganizationTags_IsConstructParameters(x); err != nil {
@@ -441,7 +440,7 @@ func DataTfeOrganizationTags_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTags",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func DataTfeOrganizationTags_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataTfeOrganizationTags_IsTerraformDataSource(x interface{}) *bool {
+func DataTfeOrganizationTags_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataTfeOrganizationTags_IsTerraformDataSourceParameters(x); err != nil {
@@ -460,7 +459,7 @@ func DataTfeOrganizationTags_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTags",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func DataTfeOrganizationTags_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataTfeOrganizationTags_IsTerraformElement(x interface{}) *bool {
+func DataTfeOrganizationTags_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataTfeOrganizationTags_IsTerraformElementParameters(x); err != nil {
@@ -479,7 +478,7 @@ func DataTfeOrganizationTags_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTags",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -497,27 +496,27 @@ func DataTfeOrganizationTags_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataTfeOrganizationTags) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataTfeOrganizationTags) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataTfeOrganizationTags) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataTfeOrganizationTags) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -533,7 +532,7 @@ func (d *jsiiProxy_DataTfeOrganizationTags) GetBooleanAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -549,7 +548,7 @@ func (d *jsiiProxy_DataTfeOrganizationTags) GetBooleanMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -565,7 +564,7 @@ func (d *jsiiProxy_DataTfeOrganizationTags) GetListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -581,7 +580,7 @@ func (d *jsiiProxy_DataTfeOrganizationTags) GetNumberAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -597,7 +596,7 @@ func (d *jsiiProxy_DataTfeOrganizationTags) GetNumberListAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -613,7 +612,7 @@ func (d *jsiiProxy_DataTfeOrganizationTags) GetNumberMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -629,7 +628,7 @@ func (d *jsiiProxy_DataTfeOrganizationTags) GetStringAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -645,7 +644,7 @@ func (d *jsiiProxy_DataTfeOrganizationTags) GetStringMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -661,7 +660,7 @@ func (d *jsiiProxy_DataTfeOrganizationTags) InterpolationForAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -675,7 +674,7 @@ func (d *jsiiProxy_DataTfeOrganizationTags) OverrideLogicalId(newLogicalId *stri
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -703,8 +702,8 @@ func (d *jsiiProxy_DataTfeOrganizationTags) ResetOverrideLogicalId() {
 	)
 }
 
-func (d *jsiiProxy_DataTfeOrganizationTags) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataTfeOrganizationTags) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -716,8 +715,8 @@ func (d *jsiiProxy_DataTfeOrganizationTags) SynthesizeAttributes() *map[string]i
 	return returns
 }
 
-func (d *jsiiProxy_DataTfeOrganizationTags) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataTfeOrganizationTags) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -729,8 +728,8 @@ func (d *jsiiProxy_DataTfeOrganizationTags) SynthesizeHclAttributes() *map[strin
 	return returns
 }
 
-func (d *jsiiProxy_DataTfeOrganizationTags) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataTfeOrganizationTags) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -742,8 +741,8 @@ func (d *jsiiProxy_DataTfeOrganizationTags) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataTfeOrganizationTags) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataTfeOrganizationTags) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -768,8 +767,8 @@ func (d *jsiiProxy_DataTfeOrganizationTags) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataTfeOrganizationTags) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataTfeOrganizationTags) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -780,4 +779,3 @@ func (d *jsiiProxy_DataTfeOrganizationTags) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (r *jsiiProxy_RegistryModuleVcsRepoOutputReference) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_RegistryModuleVcsRepoOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RegistryModuleVcsRepoOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewRegistryModuleVcsRepoOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

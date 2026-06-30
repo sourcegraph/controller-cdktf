@@ -15,11 +15,11 @@ type DataTfeWorkspaceIds interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -57,20 +57,20 @@ type DataTfeWorkspaceIds interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	TagNames() *[]*string
 	SetTagNames(val *[]*string)
 	TagNamesInput() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -100,18 +100,18 @@ type DataTfeWorkspaceIds interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTagNames()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataTfeWorkspaceIds
@@ -129,8 +129,8 @@ func (j *jsiiProxy_DataTfeWorkspaceIds) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataTfeWorkspaceIds) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataTfeWorkspaceIds) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -139,8 +139,8 @@ func (j *jsiiProxy_DataTfeWorkspaceIds) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_DataTfeWorkspaceIds) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataTfeWorkspaceIds) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -319,8 +319,8 @@ func (j *jsiiProxy_DataTfeWorkspaceIds) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataTfeWorkspaceIds) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataTfeWorkspaceIds) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -359,8 +359,8 @@ func (j *jsiiProxy_DataTfeWorkspaceIds) TerraformGeneratorMetadata() *cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_DataTfeWorkspaceIds) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataTfeWorkspaceIds) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -379,7 +379,6 @@ func (j *jsiiProxy_DataTfeWorkspaceIds) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/workspace_ids tfe_workspace_ids} Data Source.
 func NewDataTfeWorkspaceIds(scope constructs.Construct, id *string, config *DataTfeWorkspaceIdsConfig) DataTfeWorkspaceIds {
 	_init_.Initialize()
@@ -391,7 +390,7 @@ func NewDataTfeWorkspaceIds(scope constructs.Construct, id *string, config *Data
 
 	_jsii_.Create(
 		"@cdktf/provider-tfe.dataTfeWorkspaceIds.DataTfeWorkspaceIds",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -404,12 +403,12 @@ func NewDataTfeWorkspaceIds_Override(d DataTfeWorkspaceIds, scope constructs.Con
 
 	_jsii_.Create(
 		"@cdktf/provider-tfe.dataTfeWorkspaceIds.DataTfeWorkspaceIds",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataTfeWorkspaceIds)SetCount(val interface{}) {
+func (j *jsiiProxy_DataTfeWorkspaceIds) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -420,7 +419,7 @@ func (j *jsiiProxy_DataTfeWorkspaceIds)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataTfeWorkspaceIds)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataTfeWorkspaceIds) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -428,7 +427,7 @@ func (j *jsiiProxy_DataTfeWorkspaceIds)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataTfeWorkspaceIds)SetExcludeTags(val *[]*string) {
+func (j *jsiiProxy_DataTfeWorkspaceIds) SetExcludeTags(val *[]*string) {
 	if err := j.validateSetExcludeTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -439,7 +438,7 @@ func (j *jsiiProxy_DataTfeWorkspaceIds)SetExcludeTags(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataTfeWorkspaceIds)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataTfeWorkspaceIds) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -447,7 +446,7 @@ func (j *jsiiProxy_DataTfeWorkspaceIds)SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_DataTfeWorkspaceIds)SetId(val *string) {
+func (j *jsiiProxy_DataTfeWorkspaceIds) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -458,7 +457,7 @@ func (j *jsiiProxy_DataTfeWorkspaceIds)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataTfeWorkspaceIds)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataTfeWorkspaceIds) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -469,7 +468,7 @@ func (j *jsiiProxy_DataTfeWorkspaceIds)SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_DataTfeWorkspaceIds)SetNames(val *[]*string) {
+func (j *jsiiProxy_DataTfeWorkspaceIds) SetNames(val *[]*string) {
 	if err := j.validateSetNamesParameters(val); err != nil {
 		panic(err)
 	}
@@ -480,7 +479,7 @@ func (j *jsiiProxy_DataTfeWorkspaceIds)SetNames(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataTfeWorkspaceIds)SetOrganization(val *string) {
+func (j *jsiiProxy_DataTfeWorkspaceIds) SetOrganization(val *string) {
 	if err := j.validateSetOrganizationParameters(val); err != nil {
 		panic(err)
 	}
@@ -491,7 +490,7 @@ func (j *jsiiProxy_DataTfeWorkspaceIds)SetOrganization(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataTfeWorkspaceIds)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataTfeWorkspaceIds) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -499,7 +498,7 @@ func (j *jsiiProxy_DataTfeWorkspaceIds)SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_DataTfeWorkspaceIds)SetTagNames(val *[]*string) {
+func (j *jsiiProxy_DataTfeWorkspaceIds) SetTagNames(val *[]*string) {
 	if err := j.validateSetTagNamesParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,7 +521,7 @@ func DataTfeWorkspaceIds_GenerateConfigForImport(scope constructs.Construct, imp
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tfe.dataTfeWorkspaceIds.DataTfeWorkspaceIds",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -546,7 +545,7 @@ func DataTfeWorkspaceIds_GenerateConfigForImport(scope constructs.Construct, imp
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataTfeWorkspaceIds_IsConstruct(x interface{}) *bool {
+func DataTfeWorkspaceIds_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataTfeWorkspaceIds_IsConstructParameters(x); err != nil {
@@ -557,7 +556,7 @@ func DataTfeWorkspaceIds_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tfe.dataTfeWorkspaceIds.DataTfeWorkspaceIds",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -565,7 +564,7 @@ func DataTfeWorkspaceIds_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataTfeWorkspaceIds_IsTerraformDataSource(x interface{}) *bool {
+func DataTfeWorkspaceIds_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataTfeWorkspaceIds_IsTerraformDataSourceParameters(x); err != nil {
@@ -576,7 +575,7 @@ func DataTfeWorkspaceIds_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tfe.dataTfeWorkspaceIds.DataTfeWorkspaceIds",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -584,7 +583,7 @@ func DataTfeWorkspaceIds_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataTfeWorkspaceIds_IsTerraformElement(x interface{}) *bool {
+func DataTfeWorkspaceIds_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataTfeWorkspaceIds_IsTerraformElementParameters(x); err != nil {
@@ -595,7 +594,7 @@ func DataTfeWorkspaceIds_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tfe.dataTfeWorkspaceIds.DataTfeWorkspaceIds",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -613,27 +612,27 @@ func DataTfeWorkspaceIds_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataTfeWorkspaceIds) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataTfeWorkspaceIds) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataTfeWorkspaceIds) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataTfeWorkspaceIds) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -649,7 +648,7 @@ func (d *jsiiProxy_DataTfeWorkspaceIds) GetBooleanAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -665,7 +664,7 @@ func (d *jsiiProxy_DataTfeWorkspaceIds) GetBooleanMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -681,7 +680,7 @@ func (d *jsiiProxy_DataTfeWorkspaceIds) GetListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -697,7 +696,7 @@ func (d *jsiiProxy_DataTfeWorkspaceIds) GetNumberAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -713,7 +712,7 @@ func (d *jsiiProxy_DataTfeWorkspaceIds) GetNumberListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -729,7 +728,7 @@ func (d *jsiiProxy_DataTfeWorkspaceIds) GetNumberMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -745,7 +744,7 @@ func (d *jsiiProxy_DataTfeWorkspaceIds) GetStringAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -761,7 +760,7 @@ func (d *jsiiProxy_DataTfeWorkspaceIds) GetStringMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -777,7 +776,7 @@ func (d *jsiiProxy_DataTfeWorkspaceIds) InterpolationForAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -791,7 +790,7 @@ func (d *jsiiProxy_DataTfeWorkspaceIds) OverrideLogicalId(newLogicalId *string) 
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -843,8 +842,8 @@ func (d *jsiiProxy_DataTfeWorkspaceIds) ResetTagNames() {
 	)
 }
 
-func (d *jsiiProxy_DataTfeWorkspaceIds) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataTfeWorkspaceIds) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -856,8 +855,8 @@ func (d *jsiiProxy_DataTfeWorkspaceIds) SynthesizeAttributes() *map[string]inter
 	return returns
 }
 
-func (d *jsiiProxy_DataTfeWorkspaceIds) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataTfeWorkspaceIds) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -869,8 +868,8 @@ func (d *jsiiProxy_DataTfeWorkspaceIds) SynthesizeHclAttributes() *map[string]in
 	return returns
 }
 
-func (d *jsiiProxy_DataTfeWorkspaceIds) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataTfeWorkspaceIds) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -882,8 +881,8 @@ func (d *jsiiProxy_DataTfeWorkspaceIds) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataTfeWorkspaceIds) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataTfeWorkspaceIds) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -908,8 +907,8 @@ func (d *jsiiProxy_DataTfeWorkspaceIds) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataTfeWorkspaceIds) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataTfeWorkspaceIds) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -920,4 +919,3 @@ func (d *jsiiProxy_DataTfeWorkspaceIds) ToTerraform() interface{} {
 
 	return returns
 }
-

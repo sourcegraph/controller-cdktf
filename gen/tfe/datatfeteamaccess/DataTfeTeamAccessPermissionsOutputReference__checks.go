@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataTfeTeamAccessPermissionsOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_DataTfeTeamAccessPermissionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataTfeTeamAccessPermissionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataTfeTeamAccessPermissionsOutputReferenceParameters(terraformR
 
 	return nil
 }
-

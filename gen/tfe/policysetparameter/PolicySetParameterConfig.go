@@ -6,9 +6,9 @@ import (
 
 type PolicySetParameterConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type PolicySetParameterConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/policy_set_parameter#key PolicySetParameter#key}.
 	Key *string `field:"required" json:"key" yaml:"key"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/policy_set_parameter#policy_set_id PolicySetParameter#policy_set_id}.
@@ -29,8 +29,7 @@ type PolicySetParameterConfig struct {
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/policy_set_parameter#sensitive PolicySetParameter#sensitive}.
-	Sensitive interface{} `field:"optional" json:"sensitive" yaml:"sensitive"`
+	Sensitive any `field:"optional" json:"sensitive" yaml:"sensitive"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/policy_set_parameter#value PolicySetParameter#value}.
 	Value *string `field:"optional" json:"value" yaml:"value"`
 }
-

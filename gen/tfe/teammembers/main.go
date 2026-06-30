@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.teamMembers.TeamMembers",
-		reflect.TypeOf((*TeamMembers)(nil)).Elem(),
+		reflect.TypeFor[TeamMembers](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,7 +60,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "usernames", GoGetter: "Usernames"},
 			_jsii_.MemberProperty{JsiiProperty: "usernamesInput", GoGetter: "UsernamesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TeamMembers{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -68,6 +68,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tfe.teamMembers.TeamMembersConfig",
-		reflect.TypeOf((*TeamMembersConfig)(nil)).Elem(),
+		reflect.TypeFor[TeamMembersConfig](),
 	)
 }

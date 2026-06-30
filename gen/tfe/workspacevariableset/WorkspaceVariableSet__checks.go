@@ -19,7 +19,7 @@ func (w *jsiiProxy_WorkspaceVariableSet) validateAddMoveTargetParameters(moveTar
 	return nil
 }
 
-func (w *jsiiProxy_WorkspaceVariableSet) validateAddOverrideParameters(path *string, value interface{}) error {
+func (w *jsiiProxy_WorkspaceVariableSet) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (w *jsiiProxy_WorkspaceVariableSet) validateMoveFromIdParameters(id *string
 	return nil
 }
 
-func (w *jsiiProxy_WorkspaceVariableSet) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (w *jsiiProxy_WorkspaceVariableSet) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateWorkspaceVariableSet_GenerateConfigForImportParameters(scope constr
 	return nil
 }
 
-func validateWorkspaceVariableSet_IsConstructParameters(x interface{}) error {
+func validateWorkspaceVariableSet_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateWorkspaceVariableSet_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateWorkspaceVariableSet_IsTerraformElementParameters(x interface{}) error {
+func validateWorkspaceVariableSet_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateWorkspaceVariableSet_IsTerraformElementParameters(x interface{}) er
 	return nil
 }
 
-func validateWorkspaceVariableSet_IsTerraformResourceParameters(x interface{}) error {
+func validateWorkspaceVariableSet_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateWorkspaceVariableSet_IsTerraformResourceParameters(x interface{}) e
 	return nil
 }
 
-func (j *jsiiProxy_WorkspaceVariableSet) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_WorkspaceVariableSet) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_WorkspaceVariableSet) validateSetConnectionParameters(val int
 	return nil
 }
 
-func (j *jsiiProxy_WorkspaceVariableSet) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_WorkspaceVariableSet) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -350,7 +350,7 @@ func (j *jsiiProxy_WorkspaceVariableSet) validateSetLifecycleParameters(val *cdk
 	return nil
 }
 
-func (j *jsiiProxy_WorkspaceVariableSet) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_WorkspaceVariableSet) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -430,4 +430,3 @@ func validateNewWorkspaceVariableSetParameters(scope constructs.Construct, id *s
 
 	return nil
 }
-

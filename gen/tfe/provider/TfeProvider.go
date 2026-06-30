@@ -18,7 +18,7 @@ type TfeProvider interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -27,17 +27,17 @@ type TfeProvider interface {
 	SetHostname(val *string)
 	HostnameInput() *string
 	// Experimental.
-	MetaAttributes() *map[string]interface{}
+	MetaAttributes() *map[string]any
 	// The tree node.
 	Node() constructs.Node
 	Organization() *string
 	SetOrganization(val *string)
 	OrganizationInput() *string
 	// Experimental.
-	RawOverrides() interface{}
-	SslSkipVerify() interface{}
-	SetSslSkipVerify(val interface{})
-	SslSkipVerifyInput() interface{}
+	RawOverrides() any
+	SslSkipVerify() any
+	SetSslSkipVerify(val any)
+	SslSkipVerifyInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -48,7 +48,7 @@ type TfeProvider interface {
 	SetToken(val *string)
 	TokenInput() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -60,17 +60,17 @@ type TfeProvider interface {
 	ResetOverrideLogicalId()
 	ResetSslSkipVerify()
 	ResetToken()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for TfeProvider
@@ -108,8 +108,8 @@ func (j *jsiiProxy_TfeProvider) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_TfeProvider) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_TfeProvider) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -158,8 +158,8 @@ func (j *jsiiProxy_TfeProvider) HostnameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_TfeProvider) MetaAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_TfeProvider) MetaAttributes() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"metaAttributes",
@@ -198,8 +198,8 @@ func (j *jsiiProxy_TfeProvider) OrganizationInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_TfeProvider) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TfeProvider) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -208,8 +208,8 @@ func (j *jsiiProxy_TfeProvider) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_TfeProvider) SslSkipVerify() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TfeProvider) SslSkipVerify() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sslSkipVerify",
@@ -218,8 +218,8 @@ func (j *jsiiProxy_TfeProvider) SslSkipVerify() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_TfeProvider) SslSkipVerifyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TfeProvider) SslSkipVerifyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sslSkipVerifyInput",
@@ -278,7 +278,6 @@ func (j *jsiiProxy_TfeProvider) TokenInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs tfe} Resource.
 func NewTfeProvider(scope constructs.Construct, id *string, config *TfeProviderConfig) TfeProvider {
 	_init_.Initialize()
@@ -290,7 +289,7 @@ func NewTfeProvider(scope constructs.Construct, id *string, config *TfeProviderC
 
 	_jsii_.Create(
 		"@cdktf/provider-tfe.provider.TfeProvider",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -303,12 +302,12 @@ func NewTfeProvider_Override(t TfeProvider, scope constructs.Construct, id *stri
 
 	_jsii_.Create(
 		"@cdktf/provider-tfe.provider.TfeProvider",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		t,
 	)
 }
 
-func (j *jsiiProxy_TfeProvider)SetAlias(val *string) {
+func (j *jsiiProxy_TfeProvider) SetAlias(val *string) {
 	_jsii_.Set(
 		j,
 		"alias",
@@ -316,7 +315,7 @@ func (j *jsiiProxy_TfeProvider)SetAlias(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TfeProvider)SetHostname(val *string) {
+func (j *jsiiProxy_TfeProvider) SetHostname(val *string) {
 	_jsii_.Set(
 		j,
 		"hostname",
@@ -324,7 +323,7 @@ func (j *jsiiProxy_TfeProvider)SetHostname(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TfeProvider)SetOrganization(val *string) {
+func (j *jsiiProxy_TfeProvider) SetOrganization(val *string) {
 	_jsii_.Set(
 		j,
 		"organization",
@@ -332,7 +331,7 @@ func (j *jsiiProxy_TfeProvider)SetOrganization(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TfeProvider)SetSslSkipVerify(val interface{}) {
+func (j *jsiiProxy_TfeProvider) SetSslSkipVerify(val any) {
 	if err := j.validateSetSslSkipVerifyParameters(val); err != nil {
 		panic(err)
 	}
@@ -343,7 +342,7 @@ func (j *jsiiProxy_TfeProvider)SetSslSkipVerify(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TfeProvider)SetToken(val *string) {
+func (j *jsiiProxy_TfeProvider) SetToken(val *string) {
 	_jsii_.Set(
 		j,
 		"token",
@@ -363,7 +362,7 @@ func TfeProvider_GenerateConfigForImport(scope constructs.Construct, importToId 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tfe.provider.TfeProvider",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -387,7 +386,7 @@ func TfeProvider_GenerateConfigForImport(scope constructs.Construct, importToId 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func TfeProvider_IsConstruct(x interface{}) *bool {
+func TfeProvider_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateTfeProvider_IsConstructParameters(x); err != nil {
@@ -398,7 +397,7 @@ func TfeProvider_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tfe.provider.TfeProvider",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func TfeProvider_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func TfeProvider_IsTerraformElement(x interface{}) *bool {
+func TfeProvider_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateTfeProvider_IsTerraformElementParameters(x); err != nil {
@@ -417,7 +416,7 @@ func TfeProvider_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tfe.provider.TfeProvider",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -425,7 +424,7 @@ func TfeProvider_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func TfeProvider_IsTerraformProvider(x interface{}) *bool {
+func TfeProvider_IsTerraformProvider(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateTfeProvider_IsTerraformProviderParameters(x); err != nil {
@@ -436,7 +435,7 @@ func TfeProvider_IsTerraformProvider(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tfe.provider.TfeProvider",
 		"isTerraformProvider",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -454,14 +453,14 @@ func TfeProvider_TfResourceType() *string {
 	return returns
 }
 
-func (t *jsiiProxy_TfeProvider) AddOverride(path *string, value interface{}) {
+func (t *jsiiProxy_TfeProvider) AddOverride(path *string, value any) {
 	if err := t.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		t,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
@@ -472,7 +471,7 @@ func (t *jsiiProxy_TfeProvider) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		t,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -524,8 +523,8 @@ func (t *jsiiProxy_TfeProvider) ResetToken() {
 	)
 }
 
-func (t *jsiiProxy_TfeProvider) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (t *jsiiProxy_TfeProvider) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
@@ -537,8 +536,8 @@ func (t *jsiiProxy_TfeProvider) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (t *jsiiProxy_TfeProvider) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (t *jsiiProxy_TfeProvider) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
@@ -550,8 +549,8 @@ func (t *jsiiProxy_TfeProvider) SynthesizeHclAttributes() *map[string]interface{
 	return returns
 }
 
-func (t *jsiiProxy_TfeProvider) ToHclTerraform() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TfeProvider) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -563,8 +562,8 @@ func (t *jsiiProxy_TfeProvider) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (t *jsiiProxy_TfeProvider) ToMetadata() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TfeProvider) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -589,8 +588,8 @@ func (t *jsiiProxy_TfeProvider) ToString() *string {
 	return returns
 }
 
-func (t *jsiiProxy_TfeProvider) ToTerraform() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TfeProvider) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -601,4 +600,3 @@ func (t *jsiiProxy_TfeProvider) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings",
-		reflect.TypeOf((*AdminOrganizationSettings)(nil)).Elem(),
+		reflect.TypeFor[AdminOrganizationSettings](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessBetaTools", GoGetter: "AccessBetaTools"},
 			_jsii_.MemberProperty{JsiiProperty: "accessBetaToolsInput", GoGetter: "AccessBetaToolsInput"},
@@ -72,7 +72,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workspaceLimit", GoGetter: "WorkspaceLimit"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceLimitInput", GoGetter: "WorkspaceLimitInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AdminOrganizationSettings{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -80,6 +80,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettingsConfig",
-		reflect.TypeOf((*AdminOrganizationSettingsConfig)(nil)).Elem(),
+		reflect.TypeFor[AdminOrganizationSettingsConfig](),
 	)
 }

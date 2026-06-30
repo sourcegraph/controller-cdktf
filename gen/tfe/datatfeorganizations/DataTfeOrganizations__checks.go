@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataTfeOrganizations) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataTfeOrganizations) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataTfeOrganizations_GenerateConfigForImportParameters(scope constr
 	return nil
 }
 
-func validateDataTfeOrganizations_IsConstructParameters(x interface{}) error {
+func validateDataTfeOrganizations_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataTfeOrganizations_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDataTfeOrganizations_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataTfeOrganizations_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataTfeOrganizations_IsTerraformDataSourceParameters(x interface{})
 	return nil
 }
 
-func validateDataTfeOrganizations_IsTerraformElementParameters(x interface{}) error {
+func validateDataTfeOrganizations_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataTfeOrganizations_IsTerraformElementParameters(x interface{}) er
 	return nil
 }
 
-func (j *jsiiProxy_DataTfeOrganizations) validateSetAdminParameters(val interface{}) error {
+func (j *jsiiProxy_DataTfeOrganizations) validateSetAdminParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -171,7 +171,7 @@ func (j *jsiiProxy_DataTfeOrganizations) validateSetAdminParameters(val interfac
 	return nil
 }
 
-func (j *jsiiProxy_DataTfeOrganizations) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataTfeOrganizations) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -259,4 +259,3 @@ func validateNewDataTfeOrganizationsParameters(scope constructs.Construct, id *s
 
 	return nil
 }
-

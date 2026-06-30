@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.dataTfeVariableSet.DataTfeVariableSet",
-		reflect.TypeOf((*DataTfeVariableSet)(nil)).Elem(),
+		reflect.TypeFor[DataTfeVariableSet](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -61,7 +61,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workspaceIds", GoGetter: "WorkspaceIds"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceIdsInput", GoGetter: "WorkspaceIdsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataTfeVariableSet{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -69,6 +69,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tfe.dataTfeVariableSet.DataTfeVariableSetConfig",
-		reflect.TypeOf((*DataTfeVariableSetConfig)(nil)).Elem(),
+		reflect.TypeFor[DataTfeVariableSetConfig](),
 	)
 }

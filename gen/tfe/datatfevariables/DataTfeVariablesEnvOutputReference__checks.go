@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataTfeVariablesEnvOutputReference) validateResolveParameters
 	return nil
 }
 
-func (j *jsiiProxy_DataTfeVariablesEnvOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataTfeVariablesEnvOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataTfeVariablesEnvOutputReferenceParameters(terraformResource c
 
 	return nil
 }
-

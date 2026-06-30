@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataTfePolicySet) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataTfePolicySet) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataTfePolicySet_GenerateConfigForImportParameters(scope constructs
 	return nil
 }
 
-func validateDataTfePolicySet_IsConstructParameters(x interface{}) error {
+func validateDataTfePolicySet_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataTfePolicySet_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDataTfePolicySet_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataTfePolicySet_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataTfePolicySet_IsTerraformDataSourceParameters(x interface{}) err
 	return nil
 }
 
-func validateDataTfePolicySet_IsTerraformElementParameters(x interface{}) error {
+func validateDataTfePolicySet_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataTfePolicySet_IsTerraformElementParameters(x interface{}) error 
 	return nil
 }
 
-func (j *jsiiProxy_DataTfePolicySet) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataTfePolicySet) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -248,7 +248,7 @@ func (j *jsiiProxy_DataTfePolicySet) validateSetOrganizationParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_DataTfePolicySet) validateSetOverridableParameters(val interface{}) error {
+func (j *jsiiProxy_DataTfePolicySet) validateSetOverridableParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -286,4 +286,3 @@ func validateNewDataTfePolicySetParameters(scope constructs.Construct, id *strin
 
 	return nil
 }
-

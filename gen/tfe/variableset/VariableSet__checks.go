@@ -19,7 +19,7 @@ func (v *jsiiProxy_VariableSet) validateAddMoveTargetParameters(moveTarget *stri
 	return nil
 }
 
-func (v *jsiiProxy_VariableSet) validateAddOverrideParameters(path *string, value interface{}) error {
+func (v *jsiiProxy_VariableSet) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (v *jsiiProxy_VariableSet) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VariableSet) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (v *jsiiProxy_VariableSet) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateVariableSet_GenerateConfigForImportParameters(scope constructs.Cons
 	return nil
 }
 
-func validateVariableSet_IsConstructParameters(x interface{}) error {
+func validateVariableSet_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateVariableSet_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateVariableSet_IsTerraformElementParameters(x interface{}) error {
+func validateVariableSet_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateVariableSet_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateVariableSet_IsTerraformResourceParameters(x interface{}) error {
+func validateVariableSet_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateVariableSet_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_VariableSet) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_VariableSet) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_VariableSet) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
-func (j *jsiiProxy_VariableSet) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_VariableSet) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -342,7 +342,7 @@ func (j *jsiiProxy_VariableSet) validateSetDescriptionParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_VariableSet) validateSetGlobalParameters(val interface{}) error {
+func (j *jsiiProxy_VariableSet) validateSetGlobalParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -394,7 +394,7 @@ func (j *jsiiProxy_VariableSet) validateSetOrganizationParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_VariableSet) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_VariableSet) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -466,4 +466,3 @@ func validateNewVariableSetParameters(scope constructs.Construct, id *string, co
 
 	return nil
 }
-

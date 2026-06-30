@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTags",
-		reflect.TypeOf((*DataTfeOrganizationTags)(nil)).Elem(),
+		reflect.TypeFor[DataTfeOrganizationTags](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -52,7 +52,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataTfeOrganizationTags{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -60,15 +60,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTagsConfig",
-		reflect.TypeOf((*DataTfeOrganizationTagsConfig)(nil)).Elem(),
+		reflect.TypeFor[DataTfeOrganizationTagsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTagsTags",
-		reflect.TypeOf((*DataTfeOrganizationTagsTags)(nil)).Elem(),
+		reflect.TypeFor[DataTfeOrganizationTagsTags](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTagsTagsList",
-		reflect.TypeOf((*DataTfeOrganizationTagsTagsList)(nil)).Elem(),
+		reflect.TypeFor[DataTfeOrganizationTagsTagsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -81,7 +81,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataTfeOrganizationTagsTagsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -89,7 +89,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTagsTagsOutputReference",
-		reflect.TypeOf((*DataTfeOrganizationTagsTagsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataTfeOrganizationTagsTagsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceCount", GoGetter: "WorkspaceCount"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataTfeOrganizationTagsTagsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
